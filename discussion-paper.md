@@ -72,7 +72,8 @@ In addition, it would enable any data provider to easily encode, also non-common
 
 ### Linked data-aware SRS registries
 
-Many CRS reqist
+Many CRS reqistries allow the definition of own types of coordinate reference systems. While these registries allow to access these resources for example in WKT, they usually do not support sharing these kinds of data in a linked data compatible way, i.e. as a SPARQL endpoint or as an RDF dump which could be referred to.
+One reason for this might be that
 
 ### Federated queries and unknown coordinate reference systems
 
@@ -88,6 +89,8 @@ Many CRS reqist
 ## GOM
 
 ## ISO 19111 Abstract Spec
+
+## Datalift Project
 
 # Next Steps
 

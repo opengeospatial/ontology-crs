@@ -17,7 +17,7 @@ ex:mypolygon rdf:type sf:Polygon .
 ex:mypolygon geo:asWKT "<http://www.opengis.net/def/crs/OGC/1.3/CRS84> Polygon((-83.6 34.1, -83.2 34.1, -83.2 34.5, -83.6 34.5, -83.6 34.1))"^^geo:wktLiteral .
 ```
 The coordinate reference system of this geometry is described inside the literal description using a URI.
-This kind of serialization work for the purposes of GeoSPARQL 1.0, i.e. to allow comparisons between geometry representations, but overly complicate certain seemingly simple queries:
+This kind of serialization works for the purposes of GeoSPARQL 1.0, i.e. to allow comparisons between geometry representations, but overly complicate certain seemingly simple queries:
 * **Give me all WKT geometries encoded in a specific coordinate reference system**
 ```sparql
 SELECT ?geom_wkt WHERE {
@@ -68,12 +68,16 @@ The representation of coordinate reference systems in this way comes with certai
 
 A better solution for triple store implementers would be to encode coordinate reference systems directly in RDF.
 Not only could they be saved in e.g. a special named graph of coordinate reference system definitions, but also they could be shared to other triple stores in a federated query scenario.
-In addition, 
-
+In addition, it would enable any data provider to easily encode, also non-commonly used coordinate reference system definitions (e.g. along with their data in an RDF graph).
 
 ### Linked data-aware SRS registries
 
+Many CRS reqist
+
 ### Federated queries and unknown coordinate reference systems
+
+
+## Representation of coordinate systems for non-georeferenced data
 
 
 

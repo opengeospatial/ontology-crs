@@ -57,7 +57,18 @@ The second representation has many advantages compared to the first representati
 * It even allows the filtering of geometries by CRS in a simple SPARQL 1.0 query engine which does not support GeoSPARQL
 
 ### Representation of CRS systems within geospatial-aware triple stores 
-In almost all triple store implementations nowadays, proper CRS support is not 
+In probably all geospatial-aware triple store implementations nowadays, proper CRS support is not achieved by encoding CRS definitions in an RDF graph, but rather by keeping an additional database of CRS definitions (such as the EPSG database) along with the triples store implementation.
+This additional database is merely used to deference the URIs found in literal types to a Well-Known Text representation of the given coordinate reference system.
+In essence, this can be seen as a relict of relational geospatial databases such as PostGIS in which a special database table is used to store coordinate reference system definitions.
+
+The representation of coordinate reference systems in this way comes with certain disadvantages:
+* Only a selected amount of coordinate reference systems can be included in the given triple store, courtesy of the triple store developer
+* It is usually impossible or requires special knowledge to add new coordinate reference system definitions to the additional database shipped with the triple store
+* Federated queries on geospatial data are only possible if the local database of CRS systems includes the CRS system definition of the encoded geometries
+
+A better solution for triple store implementers would be to encode coordinate reference systems directly in RDF.
+Not only could they be saved in e.g. a special named graph of coordinate reference system definitions, but also they could be shared to other triple stores in a federated query scenario.
+In addition, 
 
 
 ### Linked data-aware SRS registries

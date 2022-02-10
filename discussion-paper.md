@@ -18,7 +18,8 @@ ex:mypolygon geo:asWKT "<http://www.opengis.net/def/crs/OGC/1.3/CRS84> Polygon((
 ```
 The coordinate reference system of this geometry is described inside the literal description using a URI.
 This kind of serialization works for the purposes of GeoSPARQL 1.0, i.e. to allow comparisons between geometry representations, but overly complicate certain seemingly simple queries:
-* **Give me all WKT geometries encoded in a specific coordinate reference system**
+
+**Give me all WKT geometries encoded in a specific coordinate reference system**
 ```sparql
 SELECT ?geom_wkt WHERE {
   ?item geo:hasGeometry ?geom .
@@ -29,7 +30,8 @@ SELECT ?geom_wkt WHERE {
 While this query works for WKT literals with a URI for CRS84 as stated here, it might not work with equivalent representations of the same URI and would need to be adjusted with filter statements for other defined literal types if needed.
 
 While this first example may be simply seen as an inconvenience, the next example is currently not possible with GeoSPARQL 1.0:
-* **Check whether all geometries in the given knowledge graph are in their respective CRS area of use**
+
+**Check whether all geometries in the given knowledge graph are in their respective CRS area of use**
 
 This query might be resolved in at least the two following ways:
 * Definition of a new query function for the GeoSPARQL query language which returns the area of use of a CRS
@@ -73,13 +75,15 @@ In addition, it would enable any data provider to easily encode, also non-common
 ### Linked data-aware SRS registries
 
 Many CRS reqistries allow the definition of own types of coordinate reference systems. While these registries allow to access these resources for example in WKT, they usually do not support sharing these kinds of data in a linked data compatible way, i.e. as a SPARQL endpoint or as an RDF dump which could be referred to.
-One reason for this might be that
+One reason for this might be that no vocabulary in RDF exists to share CRS definitions. 
+This does not necessarily warrant the definition of a CRS RDF vocabulary, one could simply share coordinate reference system definitions as simple RDF graphs with WKT literals.  
 
 ### Federated queries and unknown coordinate reference systems
 
 
 ## Representation of coordinate systems for non-georeferenced data
 
+Increasingly, 3D models are subject to be shared online
 
 
 ## Proposed Use Case 2
@@ -90,7 +94,15 @@ One reason for this might be that
 
 ## ISO 19111 Abstract Spec
 
+https://docs.opengeospatial.org/as/18-005r4/18-005r4.html
+
+### Software libraries implementing CRS support according to ISO 19111
+
+PROJ: https://proj.org
+
 ## Datalift Project
+
+https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.708.2684&rep=rep1&type=pdf
 
 # Next Steps
 

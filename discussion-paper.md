@@ -84,9 +84,11 @@ This does not necessarily warrant the definition of a CRS RDF vocabulary, one co
 ## Representation of coordinate systems for non-georeferenced data
 
 Increasingly, 3D models are subject to be shared in online repositories, such as [heidICON](https://heidicon.ub.uni-heidelberg.de/).
-To filter and describe 3D models and their provenance, vocabularies have been defined recently [Homburg et.al.](http://doi.org/10.1186/s40494-021-00561-w) which capture the measurement process, scanners and people involved in creating the respective scan.
+To filter and describe 3D models and their provenance, vocabularies have been defined recently [(Homburg et.al., 2021)](http://doi.org/10.1186/s40494-021-00561-w) which capture the measurement process, scanners and people involved in creating the respective scan.
+
 This representation necessarily also contains a description of the coordinate system in WKT in which the 3D model has been defined, a property often absent even in 3D sharing formats such as PLY or OBJ.
 Yet, a WKT string can only serve as a description of the whole coordinate system and not expose its attributes.
+
 Queries such as:
 **Give me all 3D models which are encode in coordinate systems defined in millimeters**
 are unnecessarily complex and could be simplified in a representation of coordinate systems in RDF.
@@ -111,7 +113,7 @@ PROJ: https://proj.org
 
 ## Datalift Project
 
-The first ontology to describe spatial reference systems was created in the datalift project (https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.708.2684&rep=rep1&type=pdf).
+The first ontology to describe spatial reference systems was created in the datalift project ([Troncy et.al ](https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.708.2684&rep=rep1&type=pdf)).
 This ontology was used as a proof of concept to refer to coordinate reference systems using more general 
 
 # Next Steps

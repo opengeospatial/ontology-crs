@@ -19,7 +19,7 @@ ex:mypolygon geo:asWKT "<http://www.opengis.net/def/crs/OGC/1.3/CRS84> Polygon((
 The coordinate reference system of this geometry is described inside the literal description using a URI.
 This kind of serialization works for the purposes of GeoSPARQL 1.0, i.e. to allow comparisons between geometry representations, but overly complicate certain seemingly simple queries:
 
-**Give me all WKT geometries encoded in a specific coordinate reference system**
+**Query 1: Give me all WKT geometries encoded in a specific coordinate reference system**
 ```sparql
 SELECT ?geom_wkt WHERE {
   ?item geo:hasGeometry ?geom .
@@ -31,7 +31,7 @@ While this query works for WKT literals with a URI for CRS84 as stated here, it 
 
 While this first example may be simply seen as an inconvenience, the next example is currently not possible with GeoSPARQL 1.0:
 
-**Check whether all geometries in the given knowledge graph are in their respective CRS area of use**
+**Query 2: Check whether all geometries in the given knowledge graph are in their respective CRS area of use**
 
 This query might be resolved in at least the two following ways:
 * Definition of a new query function for the GeoSPARQL query language which returns the area of use of a CRS

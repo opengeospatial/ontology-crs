@@ -59,8 +59,8 @@ The second representation has many advantages compared to the first representati
 * It even allows the filtering of geometries by CRS in a simple SPARQL 1.0 query engine which does not support GeoSPARQL
 
 ### Representation of CRS systems within geospatial-aware triple stores 
-In probably all geospatial-aware triple store implementations nowadays, proper CRS support is not achieved by encoding CRS definitions in an RDF graph, but rather by keeping an additional database of CRS definitions (such as the EPSG database) along with the triples store implementation.
-This additional database is merely used to deference the URIs found in literal types to a Well-Known Text representation of the given coordinate reference system.
+In probably all geospatial-aware triple store implementations nowadays, proper CRS support is not achieved by encoding CRS definitions in an RDF graph, but rather by keeping an additional database of CRS definitions (such as the [EPSG database](https://epsg.org/)) along with the triples store implementation.
+This additional database is merely used to dereference the URIs found in literal types to a Well-Known Text representation of the given coordinate reference system.
 In essence, this can be seen as a relict of relational geospatial databases such as PostGIS in which a special database table is used to store coordinate reference system definitions.
 
 The representation of coordinate reference systems in this way comes with certain disadvantages:
@@ -107,9 +107,7 @@ https://docs.opengeospatial.org/as/18-005r4/18-005r4.html
 
 ### Software libraries implementing CRS support according to ISO 19111
 
-
-
-PROJ: https://proj.org
+Several software libraries have implementated support for ISO 19111 defintions of coordinate reference systems. One of the most promiment software libraries it the [PROJ library](https://proj.org), which has implementations in [Java (Proj4J)](https://github.com/locationtech/proj4j), [Python (PyProj)](https://github.com/pyproj4/pyproj)
 
 ## Datalift Project
 

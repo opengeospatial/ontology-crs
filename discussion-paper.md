@@ -80,6 +80,11 @@ This does not necessarily warrant the definition of a CRS RDF vocabulary, one co
 
 ### Federated queries and unknown coordinate reference systems
 
+Federated queries in the semantic web using the SPARQL query language allow for the execution on SPARQL queries on different semantic web resources, hosted in different SPARQL endpoints. For example, it might be possible to query the triple store of a national mapping agency and the triple store of the national bureau of statistics in order to retrieve building data and statistics on these individual buildings.
+For this purpose, both triple stores might host geospatial data in different coordinate reference systems and the receiving triple store needs to be able to interpret even coordinate reference system definitions which are not hosted in its own database.
+If every triple store implementation can be expected to include an EPSG database one could assume that geospatial queries using these CRS identifiers will work. 
+In practice, custom CRS definitions make this assumption not a reality and currently, there is not defined way of expressing customized coordinate references systems in RDF, potentially rendering federated queries to triple stores with such definitions unresolvable.
+
 
 ## Representation of coordinate systems for non-georeferenced data
 

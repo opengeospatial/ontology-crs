@@ -1,6 +1,6 @@
 # CRS Ontology
 
-This repository is being used to work toward the development of a CRS ontology.
+This repository is being used to work toward the development of an official OGC CRS ontology.
 
 At present, we're simply working on documenting the benefits of a CRS ontology, but we're hoping that more will come as people determine value in the work.
 

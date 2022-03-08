@@ -44,3 +44,5 @@ The national geographic institute of France (IGN France) has published an ISO-19
 ## Who is best placed to create the ontology
 
 ## Which groups must be consulted/involved
+
+## Should the ontology be modular? If so, how?

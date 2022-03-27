@@ -146,6 +146,12 @@ The national geographic institute of France (IGN France) has published an ISO-19
 
 ## proj4rdf
 
+The proj4rdf project tried to extract an RDF vocabulary from existing libraries which implement and extend the ISO 19111 model.
+Several extensions of the ISO 19111 ontology are part of proj4rdf:
+- Integration of a class hierarchy of projections
+- Integration of interstellar bodies and links to spheroids
+- 
+
 https://docs.opengeospatial.org/as/18-005r4/18-005r4.html
 
 ### Software libraries implementing CRS support according to ISO 19111

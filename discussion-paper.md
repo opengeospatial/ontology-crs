@@ -141,8 +141,8 @@ Some shortcomings of the ISO 19111 ontologies that can be observered:
 . Blank nodes with an unclear meaning were generated
 . Existing applicable web ontologies are not used (e.g. OWL Time, GeoSPARQL)
 
-## IGNF CRS ontology
-The national geographic institute of France (IGN France) has published an ISO-19111 based web ontology for CRS: http://data.ign.fr/def/ignf 
+## IGNF CRS ontology and CRS registry
+The national geographic institute of France (IGN France) has published an ISO-19111 based web ontology for CRS: http://data.ign.fr/def/ignf. A CRS registry that is based on the CRS ontology is also published:  http://data.ign.fr/set/ignf/20140409.trig.
 
 ## proj4rdf
 

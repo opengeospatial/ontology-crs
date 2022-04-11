@@ -1,6 +1,24 @@
 # Intro
 
+Coordinate reference systems are an integral part of any representation of geospatial data. Coordinate reference systems help to relate coordinates of given geometry representations with actual positions on Earth or any other referencable planetoid.
+Over the centuries, countries and mapping agencies have created hundreds of different coordinate reference system types which vary be their area of validity, their types (2D, 3D), their projections and various other parameters.
+
+## Definition
+
+Essential elements of a coordinate reference system include:
+* The coordinate system in which the coordinates are defined
+* A reference to e.g. planetoid to which the coordinates are related
+
+## Coordinate reference system identifiers and registries
+
+Definitions of coordinate reference systems are often assigned identifiers and registered in specialized registry portals such as the EPSG repository.
+The actual defintions of CRS behind such registries, e.g. the EPSG database is often used in software libraries and database implementations to allow for conversions between geospatial data served in different coordinate reference system definitions. 
+For linked data based databases, but also spatial relational databases such as PostGIS, the EPSG database as either a relational database table or as a separate provided database are state of the art tools to allow a conversions between geometries.
+
 # Benefits of an Ontology
+This section outlines benefits of an ontology in general, but with particular focus on coordinate reference systems.
+Ontologies are the standard way of describing semantic data on the web, i.e. a way for semantically described data to be machine-accessible and human-accessible at the same time.
+
 ## Authoritative CRS registries as Web data
 The main interest of publishing authoritative CRS registries as Web data is to allow applications that implement GeoSPARQL, especially triplestores, to be able to manipulate coordinates defined in any CRS, as long as its definition is accessible through its URI. For the moment, triplestores only handle a limited number of hard-coded coordinate systems. For users, this means that there is very little choice as to which CRS to use, and it must be chosen before transforming the data into GeoSPARQL because the possibilities of transforming from one CRS to another are very limited or non-existent.
 
@@ -161,13 +179,27 @@ Several software libraries have implementated support for ISO 19111 defintions o
 ## Datalift Project
 
 The first ontology to describe spatial reference systems was created in the datalift project ([Troncy et.al ](https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.708.2684&rep=rep1&type=pdf)).
-This ontology was used as a proof of concept to refer to coordinate reference systems using more general 
+This ontology was used as a proof of concept to refer to coordinate reference systems using more commonly understood identifiers than EPSG codes.
+However, it did not encode every parameters which is usually found in a coordinate reference system definition.
 
 
 # Next Steps
+In this section we will outline the next steps we think the community needs to be taking towards the creation of a CRS ontology.
 
 ## Who is best placed to create the ontology
+We believe that a CRS ontology should at best be created with an organization which is recognized as an authority in at least one of the following communities:
+* GIS community
+* Semantic Web Community
+Typical organizations which create standards for these communities are the Open Geospatial Consortium (OGC) and the World Wide Web Consortium (W3C). Both organizations share a joined interest group, the OGC GeoSemanticsDWG and the W3C Spatial Data On The Web Working Group.
 
 ## Which groups must be consulted/involved
 
 ## Should the ontology be modular? If so, how?
+While this publication mainly focused on coordinate reference systems which describe positions on Earth, there are other forms of coordinate reference system types which one could consider.
+Coordinate refefence systems might relate to other planets in the solar system, such as Mars Rover positions on planet Mars. 
+Also, coordinates are used in coordinate systems which describe interstellar positions, not necessarily with a plantoid to relate to.
+
+Finally, there are forms of spatial references which do not rely on coordinates, i.e. cannot be represented as coordinate reference systems. These more general spatial reference systems my use geocoding approaches, addresses or other forms of spatial references which might need to be considered in the ontology model, but do not form the core of what a coordinate reference system ontology aims to represent.
+
+For all of these aforementioned reasons it might make sense to create a modular ontology model which may be used to represent these further items and which might be ready for further extensions.
+

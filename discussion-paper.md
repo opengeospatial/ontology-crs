@@ -1,13 +1,30 @@
 # Intro
 
 Coordinate reference systems are an integral part of any representation of geospatial data. Coordinate reference systems help to relate coordinates of given geometry representations with actual positions on Earth or any other referencable planetoid.
-Over the centuries, countries and mapping agencies have created hundreds of different coordinate reference system types which vary be their area of validity, their types (2D, 3D), their projections and various other parameters.
+Over the centuries, countries and mapping agencies have created hundreds of different coordinate reference system types which vary be their area of validity, their types (2D, 3D), their projections and various other parameters which are in common use on many map projections. 
 
 ## Definition
 
 Essential elements of a coordinate reference system include:
 * The coordinate system in which the coordinates are defined
 * A reference to e.g. planetoid to which the coordinates are related
+
+## Serializations of coordinate reference systems
+
+The parameters of coordinate reference systems can be serialized in data formats such as Well-Known Text (WKT) or proj4.
+
+```
+GEOGCS["WGS 84",
+    DATUM["WGS_1984",
+        SPHEROID["WGS 84",6378137,298.257223563,
+            AUTHORITY["EPSG","7030"]],
+        AUTHORITY["EPSG","6326"]],
+    PRIMEM["Greenwich",0,
+        AUTHORITY["EPSG","8901"]],
+    UNIT["degree",0.0174532925199433,
+        AUTHORITY["EPSG","9122"]],
+    AUTHORITY["EPSG","4326"]]
+```
 
 ## Coordinate reference system identifiers and registries
 
@@ -24,6 +41,7 @@ The main interest of publishing authoritative CRS registries as Web data is to a
 
 ## Publishing custom CRS as Web data
 From the 18th century onwards, old maps were based on coordinate reference systems defined by the cartographers of the time (e.g. the Cassini map). Various works in digital humanities or in the history of science are trying to find the parameters of these coordinate systems in order to make the georeferencing of old data, geolocated in these coordinate systems easier (e.g. hydrographic surveys or church tower positions) and their integration into a modern coordinate reference system possible. Publishing these CRS as Web data, according to a standard ontology, would allow their reuse by a large community.
+
 # Use cases
 
 ## Linking a local CRS to a broader CRS
@@ -40,6 +58,8 @@ The main CRS supported by the triplestores implementing GeoSPARQL is WGS84. In G
 Choosing a suitable coordinate system requires expertise. Indeed, depending on the area covered by the data and the applications for which they are intended (precision spatial measurements, spatial statistics, cartography, etc.), different choices are possible and some are better than others. Publishing CRS descriptions as Web data could foster the development of application-specific and location-specific CRS recommendation systems.
 
 ## Proposed Use Case: GeoSPARQL and Triple Store Integration
+
+This section describes how a CRS ontology can be integrated to be used in the GeoSPARQL query language.
 
 ### Integration of CRS into the GeoSPARQL query language
 
@@ -96,7 +116,7 @@ The second representation has many advantages compared to the first representati
 * It even allows the filtering of geometries by CRS in a simple SPARQL 1.0 query engine which does not support GeoSPARQL
 
 ### Representation of CRS systems within geospatial-aware triple stores 
-In probably all geospatial-aware triple store implementations nowadays, proper CRS support is not achieved by encoding CRS definitions in an RDF graph, but rather by keeping an additional database of CRS definitions (such as the [EPSG database](https://epsg.org/)) along with the triples store implementation.
+In probably all geospatial-aware triple store implementations nowadays, proper CRS support is not achieved by encoding CRS definitions in an RDF graph, but rather by keeping an additional database of CRS definitions (such as the [EPSG database](https://epsg.org/)) along with the triple store implementation.
 This additional database is merely used to dereference the URIs found in literal types to a Well-Known Text representation of the given coordinate reference system.
 In essence, this can be seen as a relict of relational geospatial databases such as PostGIS in which a special database table is used to store coordinate reference system definitions.
 
@@ -138,6 +158,8 @@ This would allow the sharing of metadata of 3D objects in linked data repositori
 
 
 # Prior Art
+
+Prior to this publication, there have been several authoritative and not authoritative approaches to create an ontology model for coordinate reference systems. Authoritative approaches have been derived from official specification from ISO or OGC and non-authoriative approaches have been the work of research projects of of software libraries which implemented converters from EPSG databases to RDF.
 
 ## GOM
 

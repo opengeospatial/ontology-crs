@@ -44,8 +44,10 @@ From the 18th century onwards, old maps were based on coordinate reference syste
 
 # Use cases
 
+This section wants to highlight possible use cases for a CRS ontology which are currently not possible using semantic web technologies.
+
 ## Linking a local CRS to a broader CRS
-Coordinates within a building or an archaeological site can be expressed as (cartesian) coordinates with respect to a local origin. It may be useful to have those coordinates available with respect to a broader CRS, for example a global or national CRS.
+Coordinates within a building or an archaeological site can be expressed as (cartesian) coordinates with respect to a local origin. It may be useful to have those coordinates available with respect to a broader CRS, for example a global or national CRS. The same case can be made for building information management (BIM) approaches.
 
 ## Coordinate transformation
 When coordinate based spatial data are available from multiple sources, chances are that not all data use the same CRS.

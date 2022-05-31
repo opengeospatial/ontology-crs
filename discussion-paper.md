@@ -1,7 +1,7 @@
 # Intro
 
 Coordinate reference systems are an integral part of any representation of geospatial data. Coordinate reference systems help to relate coordinates of given geometry representations with actual positions on Earth or any other referencable planetoid.
-Over the centuries, countries and mapping agencies have created hundreds of different coordinate reference system types which vary be their area of validity, their types (2D, 3D), their projections and various other parameters which are in common use on many map projections. 
+Over the centuries, countries and mapping agencies have created hundreds of different coordinate reference system types which vary by their area of validity, their types (2D, 3D), their projections and various other parameters which are in common use on many map projections. 
 
 ## Definition
 
@@ -28,9 +28,60 @@ GEOGCS["WGS 84",
 
 ## Coordinate reference system identifiers and registries
 
-Definitions of coordinate reference systems are often assigned identifiers and registered in specialized registry portals such as the EPSG repository.
-The actual defintions of CRS behind such registries, e.g. the EPSG database is often used in software libraries and database implementations to allow for conversions between geospatial data served in different coordinate reference system definitions. 
+The INSPIRE[^1] coordinate system specification assigns identifiers to the reference coordinate systems that it recommends to use [INS 09]. 
+Its corresponding implementation specification [INS 14] recommends to implement a registry for the dissemination of CRS identifiers and their associated descriptions. 
+In the ISO TC-211 series of standards for geographic information, a registry is an "information system on which a register is maintained"; 
+a register is defined as "set of files containing identifiers assigned to items with descriptions of the associated items" [ISO 15]. 
+The INSPIRE implementation specification therefore advises that the URIs proposed by OGC (Open Geospatial Consortium, see section "Who is best placed to create the ontology") should be used as identifiers for coordinate reference systems - examples of such URI can be found in the GeoSPARQL standard [OGC 2012].
+
+### URIs to identify coordinate reference systems on the Web of data 
+
+In order to be consistent with the Web of Data best practices, the coordinate reference system identifiers should be dereferenceable URIs, as stated in GeoSPARQL standard [OGC 12]. 
+To foster the adoption of this practice, the OGC proposes URIs to identify the most commonly used reference coordinate systems on the Web, including WGS84 and the coordinate reference systems recommended by the INSPIRE Directive.
+These redirect to descriptions of the corresponding reference coordinate systems extracted from the EPSG geodetic parameters registry, compliant with the ISO 19111 standard on spatial referencing by coordinates [ISO 07]. 
+The ISO 19111 standard provides a conceptual model for the description of reference coordinate systems and the geodetic objects that compose them.
+Thus the URI http://www.opengis.net/def/crs/EPSG/0/4326 returns the GML [OGC 07] description of the WGS84 coordinate reference system as provided by the EPSG.
+However, this initiative does not cover all existing coordinate reference systems and the descriptions returned are not provided in RDF but in GML. 
+Furthermore, the URIs proposed by OGC are based on the reference coordinate system identifiers of the EPSG registry. 
+These identifiers are well known to the geographic information science community, but remain completely non-transparent to the non-experts. 
+An example is the identifier "4326" which refers to the WGS84 reference coordinate system in the EPSG registry.
+
+### State-of-the-art of CRS registries
+
+Several Web services give access to much more comprehensive registries of coordinate reference systems. 
+These include the EPSG Geodetic Parameter Registry, EPSG.io, Coordinates Reference Systems in Europe and SpatialReference.org.  
+
+The **EPSG Geodetic Parameter Registry**[^2] is maintained by the Geomatics Committee of the International Association of Oil and Gas Producers[^3]. 
+It allows queries to be made on a dataset describing the geodetic parameters of several thousand reference coordinate systems. 
+The available coordinate reference systems can be retrieved by name, code, type or area covered and their descriptions are displayed directly on the service's Web page and can be exported either in WKT or in GML format.
+However, no direct access by URI dereferencing and content negotiation is possible.
+
+In contrast, the **EPSG.io service**[^4] provides access to the descriptions of the coordinate reference systems stored in the EPSG dataset using dereferenceable URIs. 
+These URIs are defined based on the original identifiers of the coordinate reference systems in the EPSG register. 
+Thus the description of WGS84 is provided following the URI: http://epsg.io/4326.
+It can be downloaded in many different formats, but no RDF description is available for now: OGC WKT, ESRI WKT, GML, PROJ.4, USGS, GeoServer, MapServer, PostGIS, etc. 
+
+The **European Reference Coordinate System Service**[^5] provides access to ISO 19111 compliant descriptions of the main European coordinate reference systems. 
+It has the same limitations of use as the EPSG Geodetic Parameter Register: access to the data by dereferencing URIs is not possible, users have to retrieve the CRS they are interested in by means of a cartographic interface or html links. Descriptions are provided only in HTML, no other format seems to be availble. 
+
+Finally, the **SpatialReference.org**[^6] registry also provides access to the description of many coordinate reference systems by dereferencing their URIs. 
+Its underlying register has the particularity of being populated by the registry users, who can contribute to its content. 
+However, like the URIs proposed by the OGC, those used by this registry remain totally opaque, including for geographic information scientists. 
+As an example, the URI for the Lambert93 projected coordinate reference system within this register is written as follows: http://spatialreference.org/ref/sr-org/7527/.
+Its description can also be downloaded in many different formats, but no RDF description is available for now: OGC WKT, ESRI WKT, GML, .PRJ, JSON, GeoServer, USGS, PostGIS, etc. 
+
+[//]: # Definitions of coordinate reference systems are often assigned identifiers and registered in specialized registry portals such as the EPSG repository.
+The descriptions of the parameters of the various coordinate reference systems can be downloaded in many formats commonly used in the field of geographic information (WKT, GML, XML, GeoServer, *.PRJ, etc.), except on the European Reference Coordinate System service. 
+None of these registries, however, provide the coordinate reference system descriptions in the RDF model. Accessing the coordinate reference system descriptions provided by these services using SPARQL queries is therefore impossible.
+The actual definitions of CRS behind such registries, e.g. the EPSG database is often used in software libraries and database implementations to allow for conversions between geospatial data served in different coordinate reference system definitions. 
 For linked data based databases, but also spatial relational databases such as PostGIS, the EPSG database as either a relational database table or as a separate provided database are state of the art tools to allow a conversions between geometries.
+
+[^1] See https://inspire.ec.europa.eu/inspire-directive/2 for a description of the INSPIRE European Directive.
+[^2] https://epsg.org/
+[^3] https://www.iogp.org/our-committees/geomatics/
+[^4] https://epsg.io/ 
+[^5] http://www.crs-geo.eu/
+[^6] https://spatialreference.org/
 
 # Benefits of an Ontology
 This section outlines benefits of an ontology in general, but with particular focus on coordinate reference systems.
@@ -57,7 +108,7 @@ An official CRS ontology and related CRS registry could help making the paramate
 The main CRS supported by the triplestores implementing GeoSPARQL is WGS84. In GIS software, there are different functions to perform spatial calculations like distance or area, depending on the type of coordinates used in the data (geographic ou plane coordinates): it is up to the user to be careful to use the right function. But often, in the implementations of GeoSPARQL, there is only one function, and it is sometimes difficult to know if you can really use it without risk of error with WGS84 coordinates. Allowing applications implementing GeoSPARQL to decide which function to apply depending on the type of CRS used would remove this difficulty for users.
 
 ## Application-specific and location-specific coordinate system recommendations
-Choosing a suitable coordinate system requires expertise. Indeed, depending on the area covered by the data and the applications for which they are intended (precision spatial measurements, spatial statistics, cartography, etc.), different choices are possible and some are better than others. Publishing CRS descriptions as Web data could foster the development of application-specific and location-specific CRS recommendation systems.
+Choosing a suitable coordinate system requires expertise. Indeed, depending on the area covered by the data and the applications for which they are intended (precision spatial measurements, spatial statistics, cartography, etc.), different choices are possible and some are better than others. For example, when working with geographical data on a European scale, the INSPIRE Directive recommends different reference coordinate systems depending on their intended use: for analyses requiring exact surface representations, the ETRS89-LAEA system is recommended, while pan-European mapping applications at scales smaller than 1: 500,000 should use the ETRS89-LCC projected coordinate system and those at scales larger than 1:500,000 should use the ETRS89-TMzn Transverse Mercator projected coordinate system, where "zn" is the projection area number. [INS 09] Publishing CRS descriptions as Web data could foster the development of application-specific and location-specific CRS recommendation systems.
 
 ## Proposed Use Case: GeoSPARQL and Triple Store Integration
 
@@ -184,7 +235,28 @@ Some shortcomings of the ISO 19111 ontologies that can be observered:
 . Existing applicable web ontologies are not used (e.g. OWL Time, GeoSPARQL)
 
 ## IGNF CRS ontology and CRS registry
-The national geographic institute of France (IGN France) has published an ISO-19111 based web ontology for CRS: http://data.ign.fr/def/ignf. A CRS registry that is based on the CRS ontology is also published: http://data.ign.fr/id/ignf/.
+[\\] # The national geographic institute of France (IGN France) has published an ISO-19111 based web ontology for CRS: http://data.ign.fr/def/ignf. A CRS registry that is based on the CRS ontology is also published: http://data.ign.fr/id/ignf/.
+
+Consistently with the INSPIRE Directive requirements, the French national mapping agency, namely IGN France, publishes a register of reference coordinate systems defined and maintained by the agency. 
+In this register, coordinate reference systems are identified by URIs that use short names rather than numerical codes to designate geodetic resources. 
+For example, the "Lambert 2 étendu" projected coordinate reference system, which is based on the NTF (Nouvelle Triangulation Française) geodetic reference system, is identified by the URI: https://registre.ign.fr/ign/IGNF/crs/IGNF/NTFLAMB2E. 
+The description of geodetic resources is structured according to the ISO 19111 model and provided in XML format. 
+The equivalence relations between the geodetic resources described by the IGN and those provided by the EPSG register are explicitly stated in the dataset by using EPSG identifiers. 
+This register is regularly updated and the way it is published has evolved over the last few years: originally available in the form of a single XML file that could be downloaded from the geodesie.ign.fr Website, its content is now directly accessible by dereferencing the URIs identifying the described geodetic resources (the whole register can also be accessed here: https://registre.ign.fr/ign/IGNF/IGNF/). 
+However, these descriptions are still provided in XML format, which makes it impossible to query them using SPARQL queries.
+
+As part of the Datalift project (funded by the French National Research Agency under grant number ANR-10-CORD-009), two main vocabularies, compatible with GeoSPARQL, have been proposed to publish geographic vector data on the Web. 
+They have been designed to represent structured geometries on the Web, to associate them with any coordinate reference system identified by a URI and to describe this coordinate reference system in RDF. 
+The former vocabulary is thus dedicated to structured geometries (http://data.ign.fr/def/geometrie#) and the later to geodetic resources (http://data.ign.fr/def/ignf#). 
+This vocabulary adopts the main concepts of the ISO 19111 model to describe geodetic resources and uses, as much as possible, concepts and properties from other vocabularies for the less specialised aspects of the description of these resources such as units of measurement.
+
+As a use case, they have been used to publish IGN France's reference data on French administrative units and IGN's register of reference coordinate systems according to the good practices of the Web of Data. 
+The interest in publishing this register of coordinate reference systems is twofold. 
+Firstly, it makes it possible to identify the French coordinate reference systems defined and maintained by the IGN, some of which, although old, are still used for very specific applications, or cover very small areas, and do not necessarily appear in the general registries presented in section "State-of-the-art of CRS registries" in order to associate them with the geometries of vector geographic data published on the Web of data. 
+In addition, it allows this register to be queried using SPARQL queries and thus to access its contents without having to process the original XML files. 
+
+The register data was converted into RDF and published using the Datalift platform. Some changes have been introduced to avoid any confusion between the official IGN France coordinate reference system register and this version published as a use case of a research project: the original URIs of the geodetic resources were replaced by URIs in http://data.ign.fr/id/ignf/. 
+Thus, the entire register is now searchable via a SPARQL access point. As an example, the following URI provides access to the RDF description of the "Lambert 2 étendu" projected coordinate reference system: http://data.ign.fr/id/ignf/crs/NTFLAMB2E. 
 
 ## proj4rdf
 
@@ -201,6 +273,8 @@ https://docs.opengeospatial.org/as/18-005r4/18-005r4.html
 Several software libraries have implementated support for ISO 19111 defintions of coordinate reference systems. One of the most promiment software libraries it the [PROJ library](https://proj.org), which has implementations in [Java (Proj4J)](https://github.com/locationtech/proj4j), [Python (PyProj)](https://github.com/pyproj4/pyproj)
 
 ## Datalift Project
+
+Actually, this work has been carried out on the CRS register published by IGN France : it is the same work as described in section "IGNF CRS ontology and CRS registry". I suggest to group both descriptions and to delete this section.
 
 The first ontology to describe spatial reference systems was created in the datalift project ([Troncy et.al ](https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.708.2684&rep=rep1&type=pdf)).
 This ontology was used as a proof of concept to refer to coordinate reference systems using more commonly understood identifiers than EPSG codes.
@@ -223,7 +297,26 @@ While this publication mainly focused on coordinate reference systems which desc
 Coordinate refefence systems might relate to other planets in the solar system, such as Mars Rover positions on planet Mars. 
 Also, coordinates are used in coordinate systems which describe interstellar positions, not necessarily with a plantoid to relate to.
 
-Finally, there are forms of spatial references which do not rely on coordinates, i.e. cannot be represented as coordinate reference systems. These more general spatial reference systems my use geocoding approaches, addresses or other forms of spatial references which might need to be considered in the ontology model, but do not form the core of what a coordinate reference system ontology aims to represent.
+Finally, there are forms of spatial references which do not rely on coordinates, i.e. cannot be represented as coordinate reference systems. These more general spatial reference systems [ISO 03] may use geocoding approaches, addresses or other forms of spatial references which might need to be considered in the ontology model, but do not form the core of what a coordinate reference system ontology aims to represent.
 
 For all of these aforementioned reasons it might make sense to create a modular ontology model which may be used to represent these further items and which might be ready for further extensions.
+
+# References
+
+[INS 09] INSPIRE Thematic Working Group on Coordinate Reference Systems & Geographical Grid Systems. Guidelines INSPIRE Specification on Coordinate Reference Systems [online]
+http://inspire.ec.europa.eu/documents/Data_Specifications/INSPIRE_Specification_CRS_v3.0.pdf. Accessed on 31/05/22. 2009.
+
+[INS 14] INSPIRE Thematic Working Group Coordinate Reference Systems & Geographical Grid Systems. D2.8.I.1 Data Specification on Coordinate Reference Systems – Technical Guidelines. [online] 
+http://inspire.ec.europa.eu/documents/Data_Specifications/INSPIRE_DataSpecification_RS_v3.2.pdf. Accessed on 31/05/22. 2014.
+
+[ISO 03] International Organization for Standardization. ISO 19112. Geographic information - Spatial referencing by geographic identifiers. International Standard. February 1st, 2019.
+
+[ISO 07] International Organization for Standardization. ISO 19111. Geographic information - Referencing by coordinates. International Standard. January 1st, 2019.
+
+[ISO 15] International Organization for Standardization. ISO 19135-1. Geographic information — Procedures for item registration — Part 1: Fundamentals. International Standard. First edition. October 1st, 2015.
+
+[OGC 07] Open Geospatial Consortium. OGC 07-036. OpenGIS Geography Markup Language (GML) Encoding Standard. Version 3.2.1., 2007.
+
+[OGC 12] Open Geospatial Consortium. OGC 11-052r4. OGC GeoSPARQL - A Geographic Query Language for RDF Data. Version 1.0., 2012.
+
 

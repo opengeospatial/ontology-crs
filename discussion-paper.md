@@ -247,7 +247,7 @@ Some shortcomings of the ISO 19111 ontologies that can be observered:
 ## The CRS ontology and CRS registry of IGN France
 
 As part of the **Datalift** project[^8], two main vocabularies, compliant with GeoSPARQL, have been proposed to publish geographic vector data on the Web. 
-They have been designed to represent structured geometries on the Web [HAM 14], to associate them with any coordinate reference system identified by a URI and to describe this coordinate reference system in RDF. 
+They have been designed to represent structured geometries on the Web [HAM 14], to associate them with any coordinate reference system identified by a URI and to describe this coordinate reference system in RDF [TRO_14].
 The former vocabulary is thus dedicated to structured geometries (http://data.ign.fr/def/geometrie#) and the latter to geodetic resources (http://data.ign.fr/def/ignf#). 
 This latter vocabulary adopts the main concepts of the ISO 19111 model to describe geodetic resources and uses, as much as possible, concepts and properties from other well-known vocabularies for the less specialised aspects of the description of these resources such as units of measure.
 However, as it has been designed to publish IGN France geodetic register, only the concepts and properties useful to represent this register data have been included in the vocabulary. 
@@ -278,15 +278,6 @@ https://docs.opengeospatial.org/as/18-005r4/18-005r4.html
 
 Several software libraries have implementated support for ISO 19111 defintions of coordinate reference systems. One of the most promiment software libraries it the [PROJ library](https://proj.org), which has implementations in [Java (Proj4J)](https://github.com/locationtech/proj4j), [Python (PyProj)](https://github.com/pyproj4/pyproj)
 
-## Datalift Project
-
-Actually, this work has been carried out on the CRS register published by IGN France : it is the same work as described in section "IGNF CRS ontology and CRS registry". I suggest to group both descriptions and to delete this section.
-
-The first ontology to describe spatial reference systems was created in the datalift project ([Troncy et.al ](https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.708.2684&rep=rep1&type=pdf)).
-This ontology was used as a proof of concept to refer to coordinate reference systems using more commonly understood identifiers than EPSG codes.
-However, it did not encode every parameters which is usually found in a coordinate reference system definition.
-
-
 # Next Steps
 In this section we will outline the next steps we think the community needs to be taking towards the creation of a CRS ontology.
 
@@ -312,6 +303,8 @@ For all of these aforementioned reasons it might make sense to create a modular 
 [ATE 14] Ghislain Auguste Atemezing, Nathalie Abadie, Raphaël Troncy and Bénédicte Bucher. Publishing Reference Geodata on the Web : Opportunities and Challenges for IGN France. Terra Cognita 2014, 6th International Workshop on the Foundations, Technologies and Applications of the Geospatial Web. 2014, Riva del Garda, Italy.
 
 [HAM 14] Fayçal Hamdi, Nathalie Abadie, Bénédicte Bucher, Abdelfettah Feliachi. GeomRDF: A Geodata Converter with a Fine-Grained Structured Representation of Geometry in the Web. 1st International Workshop on Geospatial Linked Data (GeoLD 2014). In Conjunction with the 10th International Conference on Semantic Systems, 2014, Leipzig, Germany.
+
+[TRO_14] Troncy, Raphaël, Ghislain Auguste Atemezing, and Nathalie Abadie. "Modeling geometry and reference systems on the web of data." Linking Geospatial Data Workshop. 2014.
 
 [INS 09] INSPIRE Thematic Working Group on Coordinate Reference Systems & Geographical Grid Systems. Guidelines INSPIRE Specification on Coordinate Reference Systems [online]
 http://inspire.ec.europa.eu/documents/Data_Specifications/INSPIRE_Specification_CRS_v3.0.pdf. Accessed on 31/05/22. 2009.

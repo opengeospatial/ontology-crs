@@ -11,7 +11,7 @@ Essential elements of a coordinate reference system include:
 
 ## Serializations of coordinate reference systems
 
-The parameters of coordinate reference systems can be serialized in data formats such as Well-Known Text (WKT) or proj4.
+The parameters of coordinate reference systems can be serialized in data formats such as Well-Known Text (WKT) [OGC WKTCRS] or proj4.
 
 ```
 GEOGCS["WGS 84",
@@ -205,7 +205,7 @@ This representation necessarily also contains a description of the coordinate sy
 Yet, a WKT string can only serve as a description of the whole coordinate system and not expose its attributes.
 
 Queries such as:
-**Give me all 3D models which are encode in coordinate systems defined in millimeters**
+**Give me all 3D models which are encoded in coordinate systems defined in millimeters**
 are unnecessarily complex and could be simplified in a representation of coordinate systems in RDF.
 This would allow the sharing of metadata of 3D objects in linked data repositories as backends of 3D model online repositories with extended filter capabilities.
 
@@ -218,7 +218,7 @@ Prior to this publication, there have been several authoritative and not authori
 
 ## ISO 19111 Abstract Spec
 
-The ISO 19111 UML model has been automatically converted to OWL ontologies. They are available at https://def.isotc211.org/ontologies/iso19111/.
+The ISO 19111 UML model [ISO 07] has been automatically converted to OWL ontologies. They are available at https://def.isotc211.org/ontologies/iso19111/.
 
 ### shortcomings of the ISO 19111 ontologies
 Some shortcomings of the ISO 19111 ontologies that can be observered:
@@ -232,7 +232,7 @@ Some shortcomings of the ISO 19111 ontologies that can be observered:
 . Notes are not separate resources (and are not preceded by a space)
 . Not all terms have definitions
 . Blank nodes with an unclear meaning were generated
-. Existing applicable web ontologies are not used (e.g. OWL Time, GeoSPARQL)
+. Existing applicable web ontologies are not used (e.g. OWL Time [OWL_TIME], GeoSPARQL)
 
 ## IGNF CRS ontology and CRS registry
 [\\] # The national geographic institute of France (IGN France) has published an ISO-19111 based web ontology for CRS: http://data.ign.fr/def/ignf. A CRS registry that is based on the CRS ontology is also published: http://data.ign.fr/id/ignf/.
@@ -288,7 +288,7 @@ In this section we will outline the next steps we think the community needs to b
 We believe that a CRS ontology should at best be created with an organization which is recognized as an authority in at least one of the following communities:
 * GIS community
 * Semantic Web Community
-Typical organizations which create standards for these communities are the Open Geospatial Consortium (OGC) and the World Wide Web Consortium (W3C). Both organizations share a joined interest group, the OGC GeoSemanticsDWG and the W3C Spatial Data On The Web Working Group.
+Typical organizations which create standards for these communities are the [Open Geospatial Consortium (OGC)](https://www.ogc.org) and the [World Wide Web Consortium (W3C)](https://www.w3c.org). Both organizations share a joined interest group, the OGC GeoSemanticsDWG and the W3C Spatial Data On The Web Working Group.
 
 ## Which groups must be consulted/involved
 
@@ -318,5 +318,9 @@ http://inspire.ec.europa.eu/documents/Data_Specifications/INSPIRE_DataSpecificat
 [OGC 07] Open Geospatial Consortium. OGC 07-036. OpenGIS Geography Markup Language (GML) Encoding Standard. Version 3.2.1., 2007.
 
 [OGC 12] Open Geospatial Consortium. OGC 11-052r4. OGC GeoSPARQL - A Geographic Query Language for RDF Data. Version 1.0., 2012.
+
+[OGC WKTCRS] Open Geospatial Consortium. OGC 18-010r7. Geographic information — Well-known text representation of coordinate reference systems., 2018.
+
+[OWL_TIME] World Wide Web Consortium. W3C Canidate Recommendation and OGC 16-071r3. Time Ontology in OWL., 2020.
 
 

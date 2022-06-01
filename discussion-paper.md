@@ -70,18 +70,18 @@ However, like the URIs proposed by the OGC, those used by this registry remain t
 As an example, the URI for the Lambert93 projected coordinate reference system within this register is written as follows: http://spatialreference.org/ref/sr-org/7527/.
 Its description can also be downloaded in many different formats, but no RDF description is available for now: OGC WKT, ESRI WKT, GML, .PRJ, JSON, GeoServer, USGS, PostGIS, etc. 
 
-[//]: # Definitions of coordinate reference systems are often assigned identifiers and registered in specialized registry portals such as the EPSG repository.
+Definitions of coordinate reference systems are often assigned identifiers and registered in specialized registry portals such as the EPSG repository.
 The descriptions of the parameters of the various coordinate reference systems can be downloaded in many formats commonly used in the field of geographic information (WKT, GML, XML, GeoServer, *.PRJ, etc.), except on the European Reference Coordinate System service. 
 None of these registries, however, provide the coordinate reference system descriptions in the RDF model. Accessing the coordinate reference system descriptions provided by these services using SPARQL queries is therefore impossible.
 The actual definitions of CRS behind such registries, e.g. the EPSG database is often used in software libraries and database implementations to allow for conversions between geospatial data served in different coordinate reference system definitions. 
 For linked data based databases, but also spatial relational databases such as PostGIS, the EPSG database as either a relational database table or as a separate provided database are state of the art tools to allow a conversions between geometries.
 
-[^1] See https://inspire.ec.europa.eu/inspire-directive/2 for a description of the INSPIRE European Directive.
-[^2] https://epsg.org/
-[^3] https://www.iogp.org/our-committees/geomatics/
-[^4] https://epsg.io/ 
-[^5] http://www.crs-geo.eu/
-[^6] https://spatialreference.org/
+[^1]: See https://inspire.ec.europa.eu/inspire-directive/2 for a description of the INSPIRE European Directive.
+[^2]: https://epsg.org/
+[^3]: https://www.iogp.org/our-committees/geomatics/
+[^4]: https://epsg.io/ 
+[^5]: http://www.crs-geo.eu/
+[^6]: https://spatialreference.org/
 
 # Benefits of an Ontology
 This section outlines benefits of an ontology in general, but with particular focus on coordinate reference systems.
@@ -235,7 +235,7 @@ Some shortcomings of the ISO 19111 ontologies that can be observered:
 . Existing applicable web ontologies are not used (e.g. OWL Time [OWL_TIME], GeoSPARQL)
 
 ## IGNF CRS ontology and CRS registry
-[\\] # The national geographic institute of France (IGN France) has published an ISO-19111 based web ontology for CRS: http://data.ign.fr/def/ignf. A CRS registry that is based on the CRS ontology is also published: http://data.ign.fr/id/ignf/.
+_The national geographic institute of France (IGN France) has published an ISO-19111 based web ontology for CRS: http://data.ign.fr/def/ignf. A CRS registry that is based on the CRS ontology is also published: http://data.ign.fr/id/ignf/.
 
 Consistently with the INSPIRE Directive requirements, the French national mapping agency, namely IGN France, publishes a register of reference coordinate systems defined and maintained by the agency. 
 In this register, coordinate reference systems are identified by URIs that use short names rather than numerical codes to designate geodetic resources. 

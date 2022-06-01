@@ -294,7 +294,7 @@ In this section we will outline the next steps we think the community needs to b
 We believe that a CRS ontology should at best be created with an organization which is recognized as an authority in at least one of the following communities:
 * GIS community
 * Semantic Web Community
-Typical organizations which create standards for these communities are the [Open Geospatial Consortium (OGC)](https://www.ogc.org) and the [World Wide Web Consortium (W3C)](https://www.w3c.org). Both organizations share a joined interest group, the OGC GeoSemanticsDWG and the W3C Spatial Data On The Web Working Group.
+Typical organizations which create standards for these communities are the [Open Geospatial Consortium (OGC)](https://www.ogc.org) and the [World Wide Web Consortium (W3C)](https://www.w3c.org). Both organizations share a joined interest group, the [OGC GeoSemanticsDWG](https://www.ogc.org/projects/groups/semantics) and the [W3C Spatial Data On The Web Working Group](https://www.w3.org/groups/wg/sdw).
 
 ## Which groups must be consulted/involved
 

@@ -228,7 +228,7 @@ Some shortcomings of the ISO 19111 ontologies that can be observered:
 . Language tags for text literals are missing
 . Content negotiation does not seem supported
 . Separation in multiple ontologies seems unnecessary
-. UML constraints are not translated (to SHACL, for example)
+. UML constraints are not translated (to SHACL [SHACL_SPEC], for example)
 . Notes are not separate resources (and are not preceded by a space)
 . Not all terms have definitions
 . Blank nodes with an unclear meaning were generated
@@ -321,6 +321,9 @@ http://inspire.ec.europa.eu/documents/Data_Specifications/INSPIRE_DataSpecificat
 
 [OGC WKTCRS] Open Geospatial Consortium. OGC 18-010r7. Geographic information — Well-known text representation of coordinate reference systems., 2018.
 
-[OWL_TIME] World Wide Web Consortium. W3C Canidate Recommendation and OGC 16-071r3. Time Ontology in OWL., 2020.
+[OWL_TIME] World Wide Web Consortium. W3C Canidate Recommendation and OGC 16-071r3. Time Ontology in OWL., 2020. [online]
+https://www.w3.org/TR/owl-time/
 
+[SHACL_SPEC] Shapes Constraint Language (SHACL). W3C Recommendation, 2017. [online]
+https://www.w3.org/TR/shacl/
 

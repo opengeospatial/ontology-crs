@@ -41,7 +41,7 @@ To foster the adoption of this practice, the OGC proposes URIs to identify the m
 These redirect to descriptions of the corresponding reference coordinate systems extracted from the EPSG geodetic parameters registry, compliant with the ISO 19111 standard on spatial referencing by coordinates [ISO 07]. 
 The ISO 19111 standard provides a conceptual model for the description of reference coordinate systems and the geodetic objects that compose them.
 Thus the URI http://www.opengis.net/def/crs/EPSG/0/4326 returns the GML [OGC 07] description of the WGS84 coordinate reference system as provided by the EPSG.
-However, this initiative does not cover all existing coordinate reference systems and the descriptions returned are not provided in RDF but in GML. 
+However, this initiative does not cover all existing coordinate reference systems and the descriptions returned are not provided in RDF [RDF_SPEC] but in GML. 
 Furthermore, the URIs proposed by OGC are based on the reference coordinate system identifiers of the EPSG registry. 
 These identifiers are well known to the geographic information science community, but remain completely non-transparent to the non-experts. 
 An example is the identifier "4326" which refers to the WGS84 reference coordinate system in the EPSG registry.
@@ -118,7 +118,7 @@ An official CRS ontology and related CRS registry could help making the paramate
 The main CRS supported by the triplestores implementing GeoSPARQL is WGS84. In GIS software, there are different functions to perform spatial calculations like distance or area, depending on the type of coordinates used in the data (geographic ou plane coordinates): it is up to the user to be careful to use the right function. But often, in the implementations of GeoSPARQL, there is only one function, and it is sometimes difficult to know if you can really use it without risk of error with WGS84 coordinates. Allowing applications implementing GeoSPARQL to decide which function to apply depending on the type of CRS used would remove this difficulty for users.
 
 ## Application-specific and location-specific coordinate system recommendations
-Choosing a suitable coordinate system requires expertise. Indeed, depending on the area covered by the data and the applications for which they are intended (precision spatial measurements, spatial statistics, cartography, etc.), different choices are possible and some are better than others. For example, when working with geographical data on a European scale, the INSPIRE Directive recommends different reference coordinate systems depending on their intended use: for analyses requiring exact surface representations, the ETRS89-LAEA system is recommended, while pan-European mapping applications at scales smaller than 1: 500,000 should use the ETRS89-LCC projected coordinate system and those at scales larger than 1:500,000 should use the ETRS89-TMzn Transverse Mercator projected coordinate system, where "zn" is the projection area number. [INS 09] Publishing CRS descriptions as Web data could foster the development of application-specific and location-specific CRS recommendation systems.
+Choosing a suitable coordinate system requires expertise. Indeed, depending on the area covered by the data and the applications for which they are intended (precision spatial measurements, spatial statistics, cartography, etc.), different choices are possible and some are better than others. For example, when working with geographical data on a European scale, the INSPIRE Directive recommends different reference coordinate systems depending on their intended use: for analyses requiring exact surface representations, the (https://spatialreference.org/ref/epsg/3035/)[ETRS89-LAEA] system is recommended, while pan-European mapping applications at scales smaller than 1: 500,000 should use the (https://spatialreference.org/ref/epsg/3034/)[ETRS89-LCC] projected coordinate system and those at scales larger than 1:500,000 should use the ETRS89-TMzn Transverse Mercator projected coordinate system, where "zn" is the projection area number. [INS 09] Publishing CRS descriptions as Web data could foster the development of application-specific and location-specific CRS recommendation systems.
 
 ## Proposed Use Case: GeoSPARQL and Triple Store Integration
 
@@ -333,6 +333,9 @@ http://inspire.ec.europa.eu/documents/Data_Specifications/INSPIRE_DataSpecificat
 
 [OWL_TIME] World Wide Web Consortium. W3C Canidate Recommendation and OGC 16-071r3. Time Ontology in OWL., 2020. [online]
 https://www.w3.org/TR/owl-time/
+
+[RDF_SPEC] RDF 1.1 Concepts and Abstract Syntax. W3C Recommendation, 2014. [online]
+https://www.w3.org/TR/rdf11-concepts/
 
 [SHACL_SPEC] Shapes Constraint Language (SHACL). W3C Recommendation, 2017. [online]
 https://www.w3.org/TR/shacl/

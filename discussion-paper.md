@@ -70,8 +70,17 @@ However, like the URIs proposed by the OGC, those used by this registry remain t
 As an example, the URI for the Lambert93 projected coordinate reference system within this register is written as follows: http://spatialreference.org/ref/sr-org/7527/.
 Its description can also be downloaded in many different formats, but no RDF description is available for now: OGC WKT, ESRI WKT, GML, .PRJ, JSON, GeoServer, USGS, PostGIS, etc. 
 
+The **French national mapping agency (IGN France) registry**[^7].
+Consistently with the requirements of the INSPIRE Directive, IGN France publishes a register of coordinate reference systems defined and maintained by the agency. 
+In this register, coordinate reference systems are identified by URIs that use short names rather than numerical codes to designate geodetic resources, i.e. coordinate reference systems, datums, ellipsoids, axes, meridians, etc.. 
+For example, the "Lambert 2 étendu" projected coordinate reference system, which is based on the NTF (Nouvelle Triangulation Française) geodetic coordinate reference system, is identified by the URI: https://registre.ign.fr/ign/IGNF/crs/IGNF/NTFLAMB2E. 
+The description of geodetic resources is structured according to the ISO 19111 model and provided in XML format. 
+The equivalence relations between the geodetic resources described by the IGN and those provided by the EPSG register are explicitly stated in the dataset by using EPSG identifiers. 
+This register is regularly updated and the way it is published has evolved over the last few years: originally available in the form of a single XML file that could be downloaded from the geodesie.ign.fr Website, its content is now directly accessible by dereferencing the URIs identifying the described geodetic resources. 
+However, these descriptions are still provided in XML format, which makes it impossible to query them using SPARQL queries.
+
 Definitions of coordinate reference systems are often assigned identifiers and registered in specialized registry portals such as the EPSG repository.
-The descriptions of the parameters of the various coordinate reference systems can be downloaded in many formats commonly used in the field of geographic information (WKT, GML, XML, GeoServer, *.PRJ, etc.), except on the European Reference Coordinate System service. 
+The descriptions of the parameters of the various coordinate reference systems can be downloaded in many formats commonly used in the field of geographic information (WKT, GML, XML, GeoServer, \*.PRJ, etc.), except on the European Reference Coordinate System service. 
 None of these registries, however, provide the coordinate reference system descriptions in the RDF model. Accessing the coordinate reference system descriptions provided by these services using SPARQL queries is therefore impossible.
 The actual definitions of CRS behind such registries, e.g. the EPSG database is often used in software libraries and database implementations to allow for conversions between geospatial data served in different coordinate reference system definitions. 
 For linked data based databases, but also spatial relational databases such as PostGIS, the EPSG database as either a relational database table or as a separate provided database are state of the art tools to allow a conversions between geometries.
@@ -82,6 +91,7 @@ For linked data based databases, but also spatial relational databases such as P
 [^4]: https://epsg.io/ 
 [^5]: http://www.crs-geo.eu/
 [^6]: https://spatialreference.org/
+[^7]: https://registre.ign.fr/ign/IGNF/IGNF/
 
 # Benefits of an Ontology
 This section outlines benefits of an ontology in general, but with particular focus on coordinate reference systems.
@@ -234,29 +244,25 @@ Some shortcomings of the ISO 19111 ontologies that can be observered:
 . Blank nodes with an unclear meaning were generated
 . Existing applicable web ontologies are not used (e.g. OWL Time [OWL_TIME], GeoSPARQL)
 
-## IGNF CRS ontology and CRS registry
-_The national geographic institute of France (IGN France) has published an ISO-19111 based web ontology for CRS: http://data.ign.fr/def/ignf. A CRS registry that is based on the CRS ontology is also published: http://data.ign.fr/id/ignf/.
+## The CRS ontology and CRS registry of IGN France
 
-Consistently with the INSPIRE Directive requirements, the French national mapping agency, namely IGN France, publishes a register of reference coordinate systems defined and maintained by the agency. 
-In this register, coordinate reference systems are identified by URIs that use short names rather than numerical codes to designate geodetic resources. 
-For example, the "Lambert 2 étendu" projected coordinate reference system, which is based on the NTF (Nouvelle Triangulation Française) geodetic reference system, is identified by the URI: https://registre.ign.fr/ign/IGNF/crs/IGNF/NTFLAMB2E. 
-The description of geodetic resources is structured according to the ISO 19111 model and provided in XML format. 
-The equivalence relations between the geodetic resources described by the IGN and those provided by the EPSG register are explicitly stated in the dataset by using EPSG identifiers. 
-This register is regularly updated and the way it is published has evolved over the last few years: originally available in the form of a single XML file that could be downloaded from the geodesie.ign.fr Website, its content is now directly accessible by dereferencing the URIs identifying the described geodetic resources (the whole register can also be accessed here: https://registre.ign.fr/ign/IGNF/IGNF/). 
-However, these descriptions are still provided in XML format, which makes it impossible to query them using SPARQL queries.
+As part of the **Datalift** project[^8], two main vocabularies, compliant with GeoSPARQL, have been proposed to publish geographic vector data on the Web. 
+They have been designed to represent structured geometries on the Web [HAM 14], to associate them with any coordinate reference system identified by a URI and to describe this coordinate reference system in RDF. 
+The former vocabulary is thus dedicated to structured geometries (http://data.ign.fr/def/geometrie#) and the latter to geodetic resources (http://data.ign.fr/def/ignf#). 
+This latter vocabulary adopts the main concepts of the ISO 19111 model to describe geodetic resources and uses, as much as possible, concepts and properties from other well-known vocabularies for the less specialised aspects of the description of these resources such as units of measure.
+However, as it has been designed to publish IGN France geodetic register, only the concepts and properties useful to represent this register data have been included in the vocabulary. 
+As an example, the concept of "Engineering coordinate reference system", which is part of ISO 19111 model but not used in IGN France geodetic register, is not included in the vocabulary yet.
 
-As part of the Datalift project (funded by the French National Research Agency under grant number ANR-10-CORD-009), two main vocabularies, compatible with GeoSPARQL, have been proposed to publish geographic vector data on the Web. 
-They have been designed to represent structured geometries on the Web, to associate them with any coordinate reference system identified by a URI and to describe this coordinate reference system in RDF. 
-The former vocabulary is thus dedicated to structured geometries (http://data.ign.fr/def/geometrie#) and the later to geodetic resources (http://data.ign.fr/def/ignf#). 
-This vocabulary adopts the main concepts of the ISO 19111 model to describe geodetic resources and uses, as much as possible, concepts and properties from other vocabularies for the less specialised aspects of the description of these resources such as units of measurement.
-
-As a use case, they have been used to publish IGN France's reference data on French administrative units and IGN's register of reference coordinate systems according to the good practices of the Web of Data. 
+As a use case, these two vocabularies have been used to publish IGN France's reference data on French administrative units and IGN's register of reference coordinate systems according to the good practices of the Web of Data [ATE 14]. 
 The interest in publishing this register of coordinate reference systems is twofold. 
 Firstly, it makes it possible to identify the French coordinate reference systems defined and maintained by the IGN, some of which, although old, are still used for very specific applications, or cover very small areas, and do not necessarily appear in the general registries presented in section "State-of-the-art of CRS registries" in order to associate them with the geometries of vector geographic data published on the Web of data. 
 In addition, it allows this register to be queried using SPARQL queries and thus to access its contents without having to process the original XML files. 
 
 The register data was converted into RDF and published using the Datalift platform. Some changes have been introduced to avoid any confusion between the official IGN France coordinate reference system register and this version published as a use case of a research project: the original URIs of the geodetic resources were replaced by URIs in http://data.ign.fr/id/ignf/. 
-Thus, the entire register is now searchable via a SPARQL access point. As an example, the following URI provides access to the RDF description of the "Lambert 2 étendu" projected coordinate reference system: http://data.ign.fr/id/ignf/crs/NTFLAMB2E. 
+Thus, the entire register is now acessible in the following named graph : http://data.ign.fr/id/ignf/ It is also directly queryable via this SPARQL endpoint: http://data.ign.fr/id/sparql. As an example, the following URI provides access to the RDF description of the "Lambert 2 étendu" projected coordinate reference system: http://data.ign.fr/id/ignf/crs/NTFLAMB2E. 
+
+
+[^8]: funded by the French National Research Agency under grant number ANR-10-CORD-009
 
 ## proj4rdf
 
@@ -302,6 +308,10 @@ Finally, there are forms of spatial references which do not rely on coordinates,
 For all of these aforementioned reasons it might make sense to create a modular ontology model which may be used to represent these further items and which might be ready for further extensions.
 
 # References
+
+[ATE 14] Ghislain Auguste Atemezing, Nathalie Abadie, Raphaël Troncy and Bénédicte Bucher. Publishing Reference Geodata on the Web : Opportunities and Challenges for IGN France. Terra Cognita 2014, 6th International Workshop on the Foundations, Technologies and Applications of the Geospatial Web. 2014, Riva del Garda, Italy.
+
+[HAM 14] Fayçal Hamdi, Nathalie Abadie, Bénédicte Bucher, Abdelfettah Feliachi. GeomRDF: A Geodata Converter with a Fine-Grained Structured Representation of Geometry in the Web. 1st International Workshop on Geospatial Linked Data (GeoLD 2014). In Conjunction with the 10th International Conference on Semantic Systems, 2014, Leipzig, Germany.
 
 [INS 09] INSPIRE Thematic Working Group on Coordinate Reference Systems & Geographical Grid Systems. Guidelines INSPIRE Specification on Coordinate Reference Systems [online]
 http://inspire.ec.europa.eu/documents/Data_Specifications/INSPIRE_Specification_CRS_v3.0.pdf. Accessed on 31/05/22. 2009.

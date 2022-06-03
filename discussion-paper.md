@@ -9,6 +9,12 @@ Essential elements of a coordinate reference system include:
 * The coordinate system in which the coordinates are defined
 * A reference to e.g. planetoid to which the coordinates are related
 
+Each of the aforementioned definitions entails important information which is reflected in the coordinates of the respective geometry encoded in the coordinate reference system.
+A coordinate reference system might for example give information about:
+* The unit which is expressed by the coordinates of the coordinate reference system
+* Capabilities of the coordinate reference system to cope with 2D or 3D coordinates 
+* A possible projection type and the properties of this projection (e.g. equal-area projection)
+
 ## Serializations of coordinate reference systems
 
 The parameters of coordinate reference systems can be serialized in data formats such as Well-Known Text (WKT) [OGC WKTCRS] or proj4.

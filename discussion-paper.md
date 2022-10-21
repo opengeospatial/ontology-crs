@@ -14,10 +14,16 @@ A coordinate reference system might for example give information about:
 * The unit which is expressed by the coordinates of the coordinate reference system
 * Capabilities of the coordinate reference system to cope with 2D or 3D coordinates 
 * A possible projection type and the properties of this projection (e.g. equal-area projection)
+* The number, purpose and order of coordinate system axis
+* The intended purposes the coordinate system was created for (e.g. for Nautical Charts, Surveying etc.)
+* The area of validity of the coordinate reference system, i.e. where the coordinate reference system is defined and guarantees to provide values according to its specification
+* Coordinate operations performed during the application of the coordinate reference system to a geospatial object e.g. a projection of coordinate values
+
+Each of these parts of information which comprised a coordinate reference system included their own semantics which, using semantic web technologies can be made explicit and be queried directly.
 
 ## Serializations of coordinate reference systems
 
-The parameters of coordinate reference systems can be serialized in data formats such as Well-Known Text (WKT) [OGC WKTCRS] or proj4.
+The parameters of coordinate reference systems can be serialized in data formats such as Well-Known Text (WKT) [OGC WKTCRS], a proj string or a PROJJSON definition.
 
 ```
 GEOGCS["WGS 84",
@@ -31,6 +37,7 @@ GEOGCS["WGS 84",
         AUTHORITY["EPSG","9122"]],
     AUTHORITY["EPSG","4326"]]
 ```
+These serializations contain the data points mentioned in the previous section, e.g. the definition of the coordinate system and its coordinate application, but do not expose each element of the coordinate reference system as its own URI - the most common way that data is shared in a semantic web environment.
 
 ## Coordinate reference system identifiers and registries
 
@@ -43,8 +50,8 @@ The INSPIRE implementation specification therefore advises that the URIs propose
 ### URIs to identify coordinate reference systems on the Web of data 
 
 In order to be consistent with the Web of Data best practices, the coordinate reference system identifiers should be dereferenceable URIs, as stated in GeoSPARQL standard [OGC 12]. 
-To foster the adoption of this practice, the OGC proposes URIs to identify the most commonly used reference coordinate systems on the Web, including WGS84 and the coordinate reference systems recommended by the INSPIRE Directive.
-These redirect to descriptions of the corresponding reference coordinate systems extracted from the EPSG geodetic parameters registry, compliant with the ISO 19111 standard on spatial referencing by coordinates [ISO 07]. 
+To foster the adoption of this practice, the OGC proposes URIs to identify the most commonly used coordinate reference systems on the Web, including WGS84 and the coordinate reference systems recommended by the INSPIRE Directive.
+These redirect to descriptions of the corresponding coordinate reference systems extracted from the EPSG geodetic parameters registry, compliant with the ISO 19111 standard on spatial referencing by coordinates [ISO 07]. 
 The ISO 19111 standard provides a conceptual model for the description of reference coordinate systems and the geodetic objects that compose them.
 Thus the URI http://www.opengis.net/def/crs/EPSG/0/4326 returns the GML [OGC 07] description of the WGS84 coordinate reference system as provided by the EPSG.
 However, this initiative does not cover all existing coordinate reference systems and the descriptions returned are not provided in RDF [RDF_SPEC] but in GML. 
@@ -55,7 +62,7 @@ An example is the identifier "4326" which refers to the WGS84 reference coordina
 ### State-of-the-art of CRS registries
 
 Several Web services give access to much more comprehensive registries of coordinate reference systems. 
-These include the EPSG Geodetic Parameter Registry, EPSG.io, Coordinates Reference Systems in Europe and SpatialReference.org.  
+These include the EPSG Geodetic Parameter Registry, [EPSG.io](https://epsg.io), Coordinates Reference Systems in Europe and [SpatialReference.org](https://spatialreference.org).  
 
 The **EPSG Geodetic Parameter Registry**[^2] is maintained by the Geomatics Committee of the International Association of Oil and Gas Producers[^3]. 
 It allows queries to be made on a dataset describing the geodetic parameters of several thousand reference coordinate systems. 
@@ -202,7 +209,7 @@ In addition, it would enable any data provider to easily encode, also non-common
 
 Many CRS reqistries allow the definition of own types of coordinate reference systems. While these registries allow to access these resources for example in WKT, they usually do not support sharing these kinds of data in a linked data compatible way, i.e. as a SPARQL endpoint or as an RDF dump which could be referred to.
 One reason for this might be that no vocabulary in RDF exists to share CRS definitions. 
-This does not necessarily warrant the definition of a CRS RDF vocabulary, one could simply share coordinate reference system definitions as simple RDF graphs with WKT literals.  
+This does not necessarily warrant the definition of a CRS RDF vocabulary, one could simply share coordinate reference system definitions as simple RDF graphs with WKT literals, but defining a CRS vocabulary would improve the accessibility to retrieve attributes of the given CRS.
 
 ### Federated queries and unknown coordinate reference systems
 
@@ -274,11 +281,18 @@ Thus, the entire register is now acessible in the following named graph : http:/
 
 The proj4rdf project tried to extract an RDF vocabulary from existing libraries which implement and extend the ISO 19111 model.
 Several extensions of the ISO 19111 ontology are part of proj4rdf:
-- Integration of a class hierarchy of projections
+- Integration of a class hierarchy of projections (as subclasses of coordinate operations)
 - Integration of interstellar bodies and links to spheroids
-- 
+- Integration of a class hierarchy of application types
+- Extensions of the class hierarchy 
 
-https://docs.opengeospatial.org/as/18-005r4/18-005r4.html
+The vocabulary was tested on an export of the EPSG database and converted all coordinate reference system and can be discovered on Gihub https://situx.github.io/proj4rdf/ont/crs/AlbersEqualAreaProjection/index.html
+
+The repository also features a JSON-LD context for PROJJSON, which could be a simple way to reuse one already existing format for the representation of coordinate reference system data and upgrade it to serve as a linked data format.
+
+https://github.com/situx/proj4rdf/blob/main/projjsoncontext/projjsoncontext.json
+
+Using a JSON-LD context, every PROJJSON document can be extended with a linked data reference and stored in CRS registries similar to the current practices.
 
 ### Software libraries implementing CRS support according to ISO 19111
 

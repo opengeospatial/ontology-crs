@@ -18,17 +18,20 @@ A coordinate reference system (CRS) is a coordinate system that is related to an
 **CRS registry:** A CRS registry is a collection of descriptions of coordinate reference systems.
 
 ## Scope
-A CRS web ontology should be usable for all kinds of data that use numerical spatial coordinates, in one, two or three spatial dimensions. It should be applicable to irrespective of location or scale of the datum. For instance, coordinates could be relative to Earth, Mars, the solar system, a construction site, a book page or a computer screen. 
+A CRS web ontology should be usable for all kinds of data that use numerical spatial coordinates, in one, two or three spatial dimensions. It should be applicable to irrespective of location or scale of the datum. For instance, coordinates could be relative to Earth, Mars, the solar system, an archeological site, a book page, or a computer screen. 
 
 ## Benefits
-
+- An official CRS ontology will enable the specification of coordinate reference systems on the Semantic Web and make the OGC CRS model available to web developers.
 - An official CRS ontology will allow CRS registries to be made available on the Web.
-  - CRS registries on the web will allow direct lookups of relevant CRS data by both human users and machine algorithms.
-- An official CRS ontology will make the OGC CRS model available to web developers.
-- An official CRS ontology allows publication of standard OGC CRS registry as Web data.
+  - CRS registries on the Web will allow direct lookups of relevant CRS data by both human users and machine algorithms; spatial data can have a seamless link to data that specify how coordinates should be interpreted.
+- An official CRS ontology allows publication of a standard OGC CRS registry as Web data.
   - An official OGC CRS registry allows existing Web practices to be underpinned with shared semantics (for example: [HTML5 Geolocation](https://www.w3.org/TR/geolocation/), [W3C basic geo](https://www.w3.org/2003/01/geo/), [schema.org GeoCoordinates](https://schema.org/GeoCoordinates)).
+  - A standard CRS registry can provide well-known CRS IRIs to be used as an alternative to EPSG codes. These IRIs provide direct access to CRS descriptions that can be presented in human readable form or machine readable form.
+  - A standard CRS registry providing well-known CRS IRIs can help finding and filtering spatial data on the web by means of the CRS used.
 - A CRS Ontology will allow custom CRSs to be published on the Web with proper semantic foundation.
   - Users of data stores that support GeoSPARQL are now limited to a limited collection of CRSs supported by the data store.
 - Stand-alone systems that do not publish data on the Web can benefit from access to up-to-data CRS data, without the need for local copies that run the risk of being outdated.
 - An official CRS ontology based on [OGC Abstract Specification Topic 2: Referencing by coordinates](https://docs.opengeospatial.org/as/18-005r4/18-005r4.html), which only covers geography, will allow ontological extensions to be published. Extensions to the model could provide means to define extraterrestial CRSs, or other CRSs that do not have a direct connection with the Earth's surface.
+- An official CRS ontology will enable development of coordinate validation tools, for example based on [SHACL](https://www.w3.org/TR/shacl).
+- An official CRS ontology can help linking a local CRS to a global CRS, for example georeferencing a construction site.
 

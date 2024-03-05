@@ -1,9 +1,9 @@
-# Intro
+# Introduction
 
 Coordinate reference systems are an integral part of any representation of geospatial data. Coordinate reference systems help to relate coordinates of given geometry representations with actual positions on Earth or any other referencable planetoid.
 Over the centuries, countries and mapping agencies have created hundreds of different coordinate reference system types which vary by their area of validity, their types (2D, 3D), their projections and various other parameters which are in common use on many map projections. 
 
-## Definition
+## Definitions
 
 Essential elements of a coordinate reference system include:
 * The coordinate system in which the coordinates are defined
@@ -101,7 +101,7 @@ For linked data based databases, but also spatial relational databases such as P
 
 # Benefits of an Ontology
 This section outlines benefits of an ontology in general, but with particular focus on coordinate reference systems.
-Ontologies are the standard way of describing semantic data on the web, i.e. a way for semantically described data to be machine-accessible and human-accessible at the same time.
+An ontology is often defined as a formal, explicit representation of a shared conceptualization. Ontologies are the standard way of describing semantic data on the web, i.e. a way for semantically described data to be machine-accessible and human-accessible at the same time. They are great ingredients to generate RDF knowledge graph.
 
 ## Authoritative CRS registries as Web data
 The main interest of publishing authoritative CRS registries as Web data is to allow applications that implement GeoSPARQL, especially triplestores, to be able to manipulate coordinates defined in any CRS, as long as its definition is accessible through its URI. For the moment, triplestores only handle a limited number of hard-coded coordinate systems. For users, this means that there is very little choice as to which CRS to use, and it must be chosen before transforming the data into GeoSPARQL because the possibilities of transforming from one CRS to another are very limited or non-existent.
@@ -253,19 +253,31 @@ Some shortcomings of the ISO 19111 ontologies that can be observered:
 ## The CRS ontology and CRS registry of IGN France
 
 As part of the **Datalift** project[^8], two main vocabularies, compliant with GeoSPARQL, have been proposed to publish geographic vector data on the Web. 
-They have been designed to represent structured geometries on the Web [HAM 14], to associate them with any coordinate reference system identified by a URI and to describe this coordinate reference system in RDF [TRO_14].
+They have been designed to represent structured geometries on the Web [HAM_14], to associate them with any coordinate reference system identified by a URI and to describe this coordinate reference system in RDF [TRO_14].
 The former vocabulary is thus dedicated to structured geometries (http://data.ign.fr/def/geometrie#) and the latter to geodetic resources (http://data.ign.fr/def/ignf#). 
 This latter vocabulary adopts the main concepts of the ISO 19111 model to describe geodetic resources and uses, as much as possible, concepts and properties from other well-known vocabularies for the less specialised aspects of the description of these resources such as units of measure.
 However, as it has been designed to publish IGN France geodetic register, only the concepts and properties useful to represent this register data have been included in the vocabulary. 
 As an example, the concept of "Engineering coordinate reference system", which is part of ISO 19111 model but not used in IGN France geodetic register, is not included in the vocabulary yet.
 
-As a use case, these two vocabularies have been used to publish IGN France's reference data on French administrative units and IGN's register of reference coordinate systems according to the good practices of the Web of Data [ATE 14]. 
+As a use case, these two vocabularies have been used to publish IGN France's reference data on French administrative units and IGN's register of reference coordinate systems according to the good practices of the Web of Data [ATE_14]. 
 The interest in publishing this register of coordinate reference systems is twofold. 
 Firstly, it makes it possible to identify the French coordinate reference systems defined and maintained by the IGN, some of which, although old, are still used for very specific applications, or cover very small areas, and do not necessarily appear in the general registries presented in section "State-of-the-art of CRS registries" in order to associate them with the geometries of vector geographic data published on the Web of data. 
 In addition, it allows this register to be queried using SPARQL queries and thus to access its contents without having to process the original XML files. 
 
 The register data was converted into RDF and published using the Datalift platform. Some changes have been introduced to avoid any confusion between the official IGN France coordinate reference system register and this version published as a use case of a research project: the original URIs of the geodetic resources were replaced by URIs in http://data.ign.fr/id/ignf/. 
-Thus, the entire register is now acessible in the following named graph : http://data.ign.fr/id/ignf/ It is also directly queryable via this SPARQL endpoint: http://data.ign.fr/id/sparql. As an example, the following URI provides access to the RDF description of the "Lambert 2 étendu" projected coordinate reference system: http://data.ign.fr/id/ignf/crs/NTFLAMB2E. 
+Thus, the entire register is now acessible in the following named graph : http://data.ign.fr/id/ignf/. It is also directly queryable via this SPARQL endpoint: http://data.ign.fr/id/sparql. As an example, the following URI provides access to the RDF description of the "Lambert 2 étendu" projected coordinate reference system: http://data.ign.fr/id/ignf/crs/NTFLAMB2E. 
+
+The following SPARQL query gives the projected CRS defines as the coordinate reference system derived from a two-dimensional geodetic coordinate reference system by applying a map projection
+```turtle
+PREFIX ignf: <http://data.ign.fr/def/ignf#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT distinct ?projectedCRS ?label WHERE {
+  ?projectedCRS a ignf:ProjectedCRS;
+    rdfs:label ?label.
+} 
+```
 
 
 [^8]: funded by the French National Research Agency under grant number ANR-10-CORD-009
@@ -306,9 +318,9 @@ For all of these aforementioned reasons it might make sense to create a modular 
 
 # References
 
-[ATE 14] Ghislain Auguste Atemezing, Nathalie Abadie, Raphaël Troncy and Bénédicte Bucher. Publishing Reference Geodata on the Web : Opportunities and Challenges for IGN France. Terra Cognita 2014, 6th International Workshop on the Foundations, Technologies and Applications of the Geospatial Web. 2014, Riva del Garda, Italy.
+[ATE_14] Ghislain Auguste Atemezing, Nathalie Abadie, Raphaël Troncy and Bénédicte Bucher. Publishing Reference Geodata on the Web : Opportunities and Challenges for IGN France. Terra Cognita 2014, 6th International Workshop on the Foundations, Technologies and Applications of the Geospatial Web. 2014, Riva del Garda, Italy.
 
-[HAM 14] Fayçal Hamdi, Nathalie Abadie, Bénédicte Bucher, Abdelfettah Feliachi. GeomRDF: A Geodata Converter with a Fine-Grained Structured Representation of Geometry in the Web. 1st International Workshop on Geospatial Linked Data (GeoLD 2014). In Conjunction with the 10th International Conference on Semantic Systems, 2014, Leipzig, Germany.
+[HAM_14] Fayçal Hamdi, Nathalie Abadie, Bénédicte Bucher, Abdelfettah Feliachi. GeomRDF: A Geodata Converter with a Fine-Grained Structured Representation of Geometry in the Web. 1st International Workshop on Geospatial Linked Data (GeoLD 2014). In Conjunction with the 10th International Conference on Semantic Systems, 2014, Leipzig, Germany.
 
 [TRO_14] Troncy, Raphaël, Ghislain Auguste Atemezing, and Nathalie Abadie. "Modeling geometry and reference systems on the web of data." Linking Geospatial Data Workshop. 2014.
 

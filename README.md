@@ -34,4 +34,5 @@ A CRS web ontology should be usable for all kinds of data that use numerical spa
 - An official CRS ontology based on [OGC Abstract Specification Topic 2: Referencing by coordinates](https://docs.opengeospatial.org/as/18-005r4/18-005r4.html), which only covers geography, will allow ontological extensions to be published. Extensions to the model could provide means to define extraterrestial CRSs, or other CRSs that do not have a direct connection with the Earth's surface.
 - An official CRS ontology will enable development of coordinate validation tools, for example based on [SHACL](https://www.w3.org/TR/shacl).
 - An official CRS ontology can help linking a local CRS to a global CRS, for example georeferencing a construction site.
+- An official CRS ontology can help interoperability between all knowledge domains that use coordinate based spatial data.
 

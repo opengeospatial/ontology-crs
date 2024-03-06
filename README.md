@@ -30,6 +30,7 @@ A CRS web ontology should be usable for all kinds of data that use numerical spa
   - A standard CRS registry providing well-known CRS IRIs can help finding and filtering spatial data on the web by means of the CRS used.
 - A CRS Ontology will allow custom CRSs to be published on the Web with proper semantic foundation.
   - Users of data stores that support GeoSPARQL are now limited to a limited collection of CRSs supported by the data store.
+- Semantics for spatial data on the Web, [GeoSPARQL](https://www.ogc.org/standard/geosparql/) for example, are incomplete at the moment, because there is no official web ontology for interpreting the coordinates of geometry. 
 - Stand-alone systems that do not publish data on the Web can benefit from access to up-to-data CRS data, without the need for local copies that run the risk of being outdated.
 - An official CRS ontology based on [OGC Abstract Specification Topic 2: Referencing by coordinates](https://docs.opengeospatial.org/as/18-005r4/18-005r4.html), which only covers geography, will allow ontological extensions to be published. Extensions to the model could provide means to define extraterrestial CRSs, or other CRSs that do not have a direct connection with the Earth's surface.
 - An official CRS ontology will enable development of coordinate validation tools, for example based on [SHACL](https://www.w3.org/TR/shacl).

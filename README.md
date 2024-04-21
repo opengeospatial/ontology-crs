@@ -98,6 +98,5 @@ modern CRSs. For example, the CRS parameters of the Verniquet map, a large-scale
 of Paris produced on the eve of the French Revolution, could be published in RDF [ 19 ].
 This would make the CRS available to the scientific community for geo-referencing with
 subsequent plans of Paris, which were based on the CRS created by Edme Verniquet for
-the purposes of surveying his ma
-
+the purposes of surveying
 

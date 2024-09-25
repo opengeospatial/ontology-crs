@@ -1,0 +1,27 @@
+@prefix geosrs: <http://www.opengis.net/ont/srs/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+geosrs:geosrs a owl:Ontology ;
+    rdfs:label "SRS Ontology"@en ;
+    vann:preferredNamespacePrefix "geosrs"^^xsd:string ;
+    vann:preferredNamespaceUri "http://www.opengis.net/ont/srs/"^^xsd:anyURI .
+
+<http://www.opengis.net/ont/srs/geosrs:CRS> a owl:Class ;
+    rdfs:label "Coordinate Reference System"@en .
+
+<http://www.opengis.net/ont/srs/geosrs:ReferenceSystem> a owl:Class ;
+    rdfs:label "Reference System"@en .
+
+<http://www.opengis.net/ont/srs/geosrs:SpatialReferenceSystem> a owl:Class ;
+    rdfs:label "Spatial Reference System"@en .
+
+<http://www.opengis.net/ont/srs/geosrs:axis> a owl:ObjectProperty ;
+    rdfs:label "axis"@en ;
+    rdfs:domain geosrs:CoordinateSystem ;
+    rdfs:range geosrs:Axis ;
+    skos:definition "Coordinate System Axis"@en .
+

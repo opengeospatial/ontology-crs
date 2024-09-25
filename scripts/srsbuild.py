@@ -1,5 +1,5 @@
 from rdflib import Graph, URIRef, Literal
-from rdflib.namespace import RDF, RDFS, OWL, SKOS
+from rdflib.namespace import RDF, RDFS, OWL, SKOS, VANN, XSD
 import csv
 import os
 
@@ -7,7 +7,12 @@ g = Graph()
 g.bind("geosrs", "http://www.opengis.net/ont/srs/") 
 g.bind("skos","http://www.w3.org/2004/02/skos/core#")
 
-geocrsNS="http://www.opengis.net/ont/crs/"
+g.add((URIRef("http://www.opengis.net/ont/srs/geosrs"),RDF.type,OWL.Ontology))
+g.add((URIRef("http://www.opengis.net/ont/srs/geosrs"),RDFS.label,Literal("SRS Ontology",lang="en")))
+g.add((URIRef("http://www.opengis.net/ont/srs/geosrs"),VANN.preferredNamespacePrefix,Literal("geosrs",datatype=XSD.string)))
+g.add((URIRef("http://www.opengis.net/ont/srs/geosrs"),VANN.preferredNamespaceUri,Literal("http://www.opengis.net/ont/srs/",datatype=XSD.anyURI)))
+
+geocrsNS="http://www.opengis.net/ont/srs/"
 
 dirname = os.path.dirname(__file__)
 abspath = os.path.join(dirname, '../csv/class/')

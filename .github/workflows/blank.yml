@@ -19,7 +19,7 @@ jobs:
          sudo pip3 install wheel pylode==2.13.2
     - name: Create Ontology Documentation 🔧
       run: |
-         python3 scripts/buildsrs.py
+         python3 scripts/srsbuild.py
          mkdir docs
          cd docs
          pylode -o index.html -i geosrs.ttl

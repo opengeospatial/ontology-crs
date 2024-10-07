@@ -23,7 +23,7 @@ jobs:
          mkdir docs
          mv geosrs.ttl docs/
          cd docs
-         pylode -o index.html -i geosrs.ttl
+         pylode -o index.html -i index.ttl
     - name: Deploy 🚀
       uses: JamesIves/github-pages-deploy-action@v4.3.3
       with:

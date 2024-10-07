@@ -5,23 +5,23 @@
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-geosrs:geosrs a owl:Ontology ;
-    rdfs:label "SRS Ontology"@en ;
-    vann:preferredNamespacePrefix "geosrs"^^xsd:string ;
-    vann:preferredNamespaceUri "http://www.opengis.net/ont/srs/"^^xsd:anyURI .
-
-<http://www.opengis.net/ont/srs/geosrs:CRS> a owl:Class ;
+geosrs:CRS a owl:Class ;
     rdfs:label "Coordinate Reference System"@en .
 
-<http://www.opengis.net/ont/srs/geosrs:ReferenceSystem> a owl:Class ;
+geosrs:ReferenceSystem a owl:Class ;
     rdfs:label "Reference System"@en .
 
-<http://www.opengis.net/ont/srs/geosrs:SpatialReferenceSystem> a owl:Class ;
+geosrs:SpatialReferenceSystem a owl:Class ;
     rdfs:label "Spatial Reference System"@en .
 
-<http://www.opengis.net/ont/srs/geosrs:axis> a owl:ObjectProperty ;
+geosrs:axis a owl:ObjectProperty ;
     rdfs:label "axis"@en ;
     rdfs:domain geosrs:CoordinateSystem ;
     rdfs:range geosrs:Axis ;
     skos:definition "Coordinate System Axis"@en .
+
+geosrs:geosrs a owl:Ontology ;
+    rdfs:label "SRS Ontology"@en ;
+    vann:preferredNamespacePrefix "geosrs"^^xsd:string ;
+    vann:preferredNamespaceUri "http://www.opengis.net/ont/srs/"^^xsd:anyURI .
 

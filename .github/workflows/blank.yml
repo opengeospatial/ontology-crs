@@ -21,7 +21,7 @@ jobs:
       run: |
          python3 scripts/srsbuild.py
          mkdir docs
-         mv geosrs.ttl docs/
+         mv *.ttl docs/
          cd docs
          pylode -o index.html -i index.ttl
     - name: Deploy 🚀

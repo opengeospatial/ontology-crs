@@ -34,13 +34,13 @@ for file in os.listdir(directory):
             reader = csv.DictReader(csvfile)
             for row in reader:
                 if "Concept" in row and row["Concept"]!="":
-                    g.add((URIRef(geocrsNS+row["Concept"]),RDF.type,OWL.Class))
+                    g.add((URIRef(row["Concept"].replace("geosrs:",geocrsNS)),RDF.type,OWL.Class))
                     if "Label" in row and row["Label"]!="":
-                        g.add((URIRef(geocrsNS+row["Concept"]),RDFS.label,Literal(row["Label"],lang="en")))
+                        g.add((URIRef(row["Concept"].replace("geosrs:",geocrsNS)),RDFS.label,Literal(row["Label"],lang="en")))
                     if "Definition" in row and row["Definition"]!="":
-                        g.add((URIRef(geocrsNS+row["Concept"]),SKOS.definition,Literal(row["Definition"],lang="en")))
+                        g.add((URIRef(row["Concept"].replace("geosrs:",geocrsNS)),SKOS.definition,Literal(row["Definition"],lang="en")))
                     if "SubClass" in row and row["SubClass"]!="":
-                        g.add((URIRef(geocrsNS+row["Concept"]),RDFS.subClassOf,URIRef(row["SubClass"].replace("geosrs:",geocrsNS))))
+                        g.add((URIRef(row["Concept"].replace("geosrs:",geocrsNS)),RDFS.subClassOf,URIRef(row["SubClass"].replace("geosrs:",geocrsNS))))
     else:
         continue
 
@@ -59,17 +59,17 @@ for file in os.listdir(directory):
             for row in reader:
                 if "Concept" in row and row["Concept"]!="":
                     if objprop:
-                        g.add((URIRef(geocrsNS+row["Concept"]),RDF.type,OWL.ObjectProperty))
+                        g.add((URIRef(row["Concept"].replace("geosrs:",geocrsNS)),RDF.type,OWL.ObjectProperty))
                     else:
-                        g.add((URIRef(geocrsNS+row["Concept"]),RDF.type,OWL.DatatypeProperty))
+                        g.add((URIRef(row["Concept"].replace("geosrs:",geocrsNS)),RDF.type,OWL.DatatypeProperty))
                     if "Label" in row and row["Label"]!="":
-                        g.add((URIRef(geocrsNS+row["Concept"]),RDFS.label,Literal(row["Label"],lang="en")))
+                        g.add((URIRef(row["Concept"].replace("geosrs:",geocrsNS)),RDFS.label,Literal(row["Label"],lang="en")))
                     if "Definition" in row and row["Definition"]!="":
-                        g.add((URIRef(geocrsNS+row["Concept"]),SKOS.definition,Literal(row["Definition"],lang="en")))
+                        g.add((URIRef(row["Concept"].replace("geosrs:",geocrsNS)),SKOS.definition,Literal(row["Definition"],lang="en")))
                     if "Range" in row and row["Range"]!="":
-                        g.add((URIRef(geocrsNS+row["Concept"]),RDFS.range,URIRef(row["Range"].replace("geosrs:",geocrsNS))))
+                        g.add((URIRef(row["Concept"].replace("geosrs:",geocrsNS)),RDFS.range,URIRef(row["Range"].replace("geosrs:",geocrsNS))))
                     if "Domain" in row and row["Domain"]!="":
-                        g.add((URIRef(geocrsNS+row["Concept"]),RDFS.domain,URIRef(row["Domain"].replace("geosrs:",geocrsNS))))
+                        g.add((URIRef(row["Concept"].replace("geosrs:",geocrsNS)),RDFS.domain,URIRef(row["Domain"].replace("geosrs:",geocrsNS))))
     else:
         continue
 

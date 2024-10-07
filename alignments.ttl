@@ -1,0 +1,12 @@
+@prefix geosrs: <http://www.opengis.net/ont/srs/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+geosrs:CoordinateSystem owl:equivalentClass <http://www.opengis.net/ont/srs/http://data.ign.fr/def/ignf#CoordinateSystem>,
+        <http://www.opengis.net/ont/srs/iso19111:CoordinateSystem> .
+
+geosrs:Datum owl:equivalentClass <http://www.opengis.net/ont/srs/http://data.ign.fr/def/ignf#Datum>,
+        <http://www.opengis.net/ont/srs/iso19111:Datum> .
+
+geosrs:Ellipsoid owl:equivalentClass <http://www.opengis.net/ont/srs/http://data.ign.fr/def/ignf#Ellipsoid>,
+        <http://www.opengis.net/ont/srs/iso19111:Ellipsoid> .
+

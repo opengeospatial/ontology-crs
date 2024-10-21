@@ -8,6 +8,16 @@
 geosrs:CRS a owl:Class ;
     rdfs:label "Coordinate Reference System"@en .
 
+geosrs:CoordinateOperation a owl:Class ;
+    rdfs:label "coordinate operation"@en .
+
+geosrs:Datum a owl:Class ;
+    rdfs:label "Datum"@en .
+
+geosrs:Ellipsoid a owl:Class .
+
+geosrs:PrimeMeridian a owl:Class .
+
 geosrs:ReferenceSystem a owl:Class ;
     rdfs:label "Reference System"@en .
 
@@ -24,4 +34,7 @@ geosrs:geosrs a owl:Ontology ;
     rdfs:label "SRS Ontology"@en ;
     vann:preferredNamespacePrefix "geosrs"^^xsd:string ;
     vann:preferredNamespaceUri "http://www.opengis.net/ont/srs/"^^xsd:anyURI .
+
+geosrs:CoordinateSystem a owl:Class ;
+    rdfs:label "coordinate system"@en .
 

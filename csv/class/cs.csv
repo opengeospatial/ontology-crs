@@ -1,0 +1,56 @@
+Concept,SuperClass,Label,Definition,ISO 19111,IGN 2019,Proj4RDF,GeoSPARQL,,Definition 1 IGN,Definition 2 ISO
+,,,,,,geocrs:1DCS,,,,
+,,,,,,geocrs:3DCS,,,,
+geosrs:CoordinateSystem,,coordinate system,,iso19111:CoordinateSystem,ign:CoordinateSystem,geocrs:CoordinateSystem,,Core Ontology,"Set of axes that spans a given coordinate space and of mathematical rules for specifying how coordinates are to be assigned to points. Cf. ISO 19111:2007:2007-07, part 9.2, table 17 and annex B.2.",set of mathematical rules for specifying how coordinates are to be assigned to points
+,,,,iso19111:AffineCS,,geocrs:AffineCoordinateSystem,,,,coordinate system in Euclidean space with straight axes that are not necessarily mutually perpendicular
+,,,,iso19111:AxisDirection,,,,,,
+,,,,iso19111:AxisDirectionCollection,,,,,,
+,,,,,,geocrs:BarycentricCoordinateSystem,,,,
+,,,,iso19111:CartesianCS,ign:CartesianCS,geocrs:CartesianCS,,Core Ontology,"Coordinate system which gives the position of points relative to n mutually perpendicular axes. Cf. ISO 19111:2007:2007-07, tables 15 and 18.",coordinate system in Euclidean space which gives the position of points relative to n mutually perpendicular straight axes all having the same unit of measure
+,,,,,,geocrs:CelestialCS,,,,
+,,,,,,geocrs:ConicalCoordinateSystem,,,,
+,,,,,,geocrs:CurvilinearCoordinateSystem,,,,
+,,,,iso19111:CylindricalCS,,geocrs:CylindricalCoordinateSystem,,,,three-dimensional coordinate system in Euclidean space in which position is specified by two linear coordinates and one angular coordinate
+,,,,,,geocrs:DerivedProjectedCS,,,,
+,,,,,,geocrs:EclipticCS,,,,
+,,,,iso19111:EllipsoidalCS,ign:EllipsoidalCS,geocrs:EllipsoidalCS,,Core Ontology,"Coordinate system which gives the position is specified by geodetic latitude, geodetic longitude and (in the three-dimensional case) ellipsoidal height. Cf. ISO 19111:2007:2007-07, tables 15 and 20.",
+,,,,,,geocrs:EngineeringCS,,,,
+,,,,,,geocrs:EquatorialCS,,,,
+,,,,,,geocrs:GalacticCS,,,,
+,,,,,,geocrs:GeodeticCS,,,,
+,,,,,,geocrs:GeographicCS,,,,
+,,,,,,geocrs:GridCS,,,,
+,,,,,,geocrs:HexagonalCS,,,,
+,,,,,,geocrs:HomogeneousCoordinateSystem,,,,
+,,,,,,geocrs:HorizontalCS,,,,
+,,,,iso19111:LinearCS,,geocrs:LinearCS,,Core Ontology,,one-dimensional coordinate system in which a linear feature forms the axis
+,,,,,,geocrs:LocalCoordinateSystem,,,,
+,,,,,,geocrs:ObliqueCS,,,,
+,,,,iso19111:OrdinalCS,,geocrs:OrdinalCS,,Core Ontology,,
+,,,,,,geocrs:OrthogonalCoordinateSystem,,,,
+,,,,iso19111:ParametricCS,,geocrs:ParametricCoordinateSystem,,Core Ontology,,one-dimensional coordinate system where the axis units are parameter values which are not inherently spatial
+,,,,,,geocrs:PerifocalCS,,,,
+,,,,,,geocrs:PlanarCS,,,,
+,,,,iso19111:PolarCS,,geocrs:PolarCoordinateSystem,,Core Ontology,,
+,,,,,,geocrs:ProjectedCS,,,,
+,,,,,,geocrs:ReferenceSystem,,,,
+,,,,,,geocrs:SkewCoordinateSystem,,,,
+,,,,iso19111:SphericalCS,,geocrs:SphericalCoordinateSystem,,Core Ontology,,three-dimensional coordinate system in Euclidean space in which position is specified by one distance coordinate and two angular coordinates
+,,,,,,geocrs:StereographicCS,,,,
+,,,,iso19111:DateTimeTemporalCS,,geocrs:DateTimeTemporalCoordinateSystem,,,,
+,,,,iso19111:TemporalCountCS,,geocrs:TemporalCountCoordinateSystem,,,,
+,,,,iso19111:TemporalCS,,geocrs:TemporalCoordinateSystem,,,,one-dimensional coordinate system where the axis is time
+,,,,iso19111:TemporalMeasureCS,,geocrs:TemporalMeasureCoordinateSystem,,,,
+,,,,,,geocrs:TemporalReferenceSystem,,,,
+,,,,,,geocrs:SuperGalacticCS,,,,
+,,,,,,geocrs:UnknownCS,,,,
+,,,,iso19111:VerticalCS,ign:VerticalCS,geocrs:VerticalCoordinateSystem,,Core Ontology,"One-dimensional coordinate system used for gravity related height or depth measurements. Cf. ISO 19111:2007:2007-07, tables 15 and 25.",one-dimensional coordinate system used for gravity-related height or depth measurements
+,,,,iso19111:uAffineCS,,,,,,
+,,,,iso19111:uCartesianCS,,,,,,
+,,,,iso19111:uCylindricalCS,,,,,,
+,,,,iso19111:uOrdinalCS,,,,,,
+,,,,iso19111:uPolarCS,,,,,,two-dimensional coordinate system in Euclidean space in which position is specified by one distance coordinate and one angular coordinate
+,,,,iso19111:uSphericalCS,,,,,,
+,,,,iso19111:uLinearCS,,,,,,
+,,,,iso19111:uEllipsoidalCS,,,,,,
+,,,,iso19111:CoordinateSystemAxis,ign:CoordinateSystemAxis,geocrs:CoordinateSystemAxis,,Core Ontology,"Axis relative to which a coordinate of a point is specified in a coordinate system. See ISO 19111:2007:2007-07, part 9.3, table 27 and annex B.2.2.",

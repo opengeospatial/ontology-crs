@@ -19,9 +19,11 @@ jobs:
          sudo pip3 install wheel pylode==2.13.2
     - name: Create Ontology Documentation 🔧
       run: |
+         python3 scripts/srsbuild.py
          mkdir docs
+         mv *.ttl docs/
          cd docs
-         pylode -o index.html -i ../crsdraft.ttl
+         pylode -o index.html -i index.ttl
     - name: Deploy 🚀
       uses: JamesIves/github-pages-deploy-action@v4.3.3
       with:

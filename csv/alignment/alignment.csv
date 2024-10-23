@@ -1,0 +1,7 @@
+Concept source,Property,Concept target
+geosrs:CoordinateSystem,owl:equivalentClass,ign:CoordinateSystem
+geosrs:CoordinateSystem,owl:equivalentClass,iso19111:CoordinateSystem
+geosrs:Datum,owl:equivalentClass,iso19111:Datum
+geosrs:Datum,owl:equivalentClass,ign:Datum
+geosrs:Ellipsoid,owl:equivalentClass,iso19111:Ellipsoid
+geosrs:Ellipsoid,owl:equivalentClass,ign:Ellipsoid

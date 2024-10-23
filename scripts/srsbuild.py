@@ -10,15 +10,15 @@ extontmapping={
 }
 
 g = Graph()
-g.bind("geosrs", "http://www.opengis.net/ont/srs/") 
+g.bind("geosrs", "https://w3id.org/geosrs#") 
 g.bind("skos","http://www.w3.org/2004/02/skos/core#")
 
-g.add((URIRef("http://www.opengis.net/ont/srs/geosrs"),RDF.type,OWL.Ontology))
-g.add((URIRef("http://www.opengis.net/ont/srs/geosrs"),RDFS.label,Literal("SRS Ontology",lang="en")))
-g.add((URIRef("http://www.opengis.net/ont/srs/geosrs"),VANN.preferredNamespacePrefix,Literal("geosrs",datatype=XSD.string)))
-g.add((URIRef("http://www.opengis.net/ont/srs/geosrs"),VANN.preferredNamespaceUri,Literal("http://www.opengis.net/ont/srs/",datatype=XSD.anyURI)))
+g.add((URIRef("https://w3id.org/geosrs"),RDF.type,OWL.Ontology))
+g.add((URIRef("https://w3id.org/geosrs"),RDFS.label,Literal("SRS Ontology",lang="en")))
+g.add((URIRef("https://w3id.org/geosrs"),VANN.preferredNamespacePrefix,Literal("geosrs",datatype=XSD.string)))
+g.add((URIRef("https://w3id.org/geosrs"),VANN.preferredNamespaceUri,Literal("https://w3id.org/geosrs#",datatype=XSD.anyURI)))
 
-geocrsNS="http://www.opengis.net/ont/srs/"
+geocrsNS="https://w3id.org/geosrs#"
 
 dirname = os.path.dirname(__file__)
 abspath = os.path.join(dirname, '../csv/class/')
@@ -79,7 +79,7 @@ g.serialize(destination="index.ttl")
 g=Graph() 
 g.bind("ign","http://data.ign.fr/def/ignf#")      
 g.bind("iso19112","http://def.isotc211.org/iso19112/2019/SpatialReferencingByGeographicIdentifier#")   
-g.bind("geosrs", "http://www.opengis.net/ont/srs/")  
+g.bind("geosrs", "https://w3id.org/geosrs#")  
 dirname = os.path.dirname(__file__)
 abspath = os.path.join(dirname, '../csv/alignment/')
 directory = os.fsencode(abspath)

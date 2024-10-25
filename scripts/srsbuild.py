@@ -51,7 +51,7 @@ for file in os.listdir(directory):
                             gcore.add((URIRef(row["Concept"].replace(curprefix+":",curns)),RDFS.label,Literal(row["Label"],lang="en")))
                         if "Definition" in row and row["Definition"]!="":
                             gcore.add((URIRef(row["Concept"].replace(curprefix+":",curns)),SKOS.definition,Literal(row["Definition"],lang="en")))
-                        if "SubClass" in row and row["SuperClass"]!="":
+                        if "SuperClass" in row and row["SuperClass"]!="":
                             gcore.add((URIRef(row["Concept"].replace(curprefix+":",curns)),RDFS.subClassOf,URIRef(row["SuperClass"].replace("geosrs:",geocrsNS))))
                     else:
                         g.add((URIRef(row["Concept"].replace(curprefix+":",curns)),RDF.type,OWL.Class))
@@ -59,7 +59,7 @@ for file in os.listdir(directory):
                             g.add((URIRef(row["Concept"].replace(curprefix+":",curns)),RDFS.label,Literal(row["Label"],lang="en")))
                         if "Definition" in row and row["Definition"]!="":
                             g.add((URIRef(row["Concept"].replace(curprefix+":",curns)),SKOS.definition,Literal(row["Definition"],lang="en")))
-                        if "SubClass" in row and row["SuperClass"]!="":
+                        if "SuperClass" in row and row["SuperClass"]!="":
                             g.add((URIRef(row["Concept"].replace(curprefix+":",curns)),RDFS.subClassOf,URIRef(row["SuperClass"].replace("geosrs:",geocrsNS))))                     
     else:
         continue
@@ -120,15 +120,13 @@ for file in os.listdir(directory):
                                     exont[row["Core Property?"].lower()].add((URIRef(row["Concept"].replace(curprefix+":",curns)),RDFS.range,URIRef(row["Range"].replace("geosrs:",geocrsNS))))
                                 if "Domain" in row and row["Domain"]!="":
                                     exont[row["Core Property?"].lower()].add((URIRef(row["Concept"].replace(curprefix+":",curns)),RDFS.domain,URIRef(row["Domain"].replace("geosrs:",geocrsNS))))
-            os.mkdir(filename.replace(".csv",""))
-            g.serialize(destination=filename.replace(".csv","")+"/"+filename.replace(".csv","")+".ttl") 
+            g.serialize(destination=filename.replace(".csv","")+".ttl") 
     else:
         continue
 
 print(len(g))
 for item in exont:
-    os.mkdir(item)
-    exont[item].serialize(destination=item+"/"+item+".ttl") 
+    exont[item].serialize(destination=item+".ttl") 
 gcore.serialize(destination="index.ttl")
        
 g=Graph() 

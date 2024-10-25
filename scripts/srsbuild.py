@@ -64,8 +64,8 @@ for file in os.listdir(directory):
                         if "Definition" in row and row["Definition"]!="":
                             g.add((URIRef(row["Concept"].replace(curprefix+":",curns)),SKOS.definition,Literal(row["Definition"],lang="en")))
                         if "SuperClass" in row and row["SuperClass"]!="":
-                            if " " in row["SuperClass"].split(" "):
-                                for spl in row["SuperClass"]:
+                            if " " in row["SuperClass"]:
+                                for spl in row["SuperClass"].split(" "):
                                     g.add((URIRef(row["Concept"].replace(curprefix+":",curns)),RDFS.subClassOf,URIRef(spl.replace(curprefix+":",curns))))
                             else:
                                 g.add((URIRef(row["Concept"].replace(curprefix+":",curns)),RDFS.subClassOf,URIRef(row["SuperClass"].replace(curprefix+":",curns))))                     

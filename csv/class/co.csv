@@ -1,4 +1,4 @@
-Concept,SuperClass,Label,Definition,ISO 19111,IGN 2019,Proj4RDF,GeoSPARQL,,Who?,Definition IGN,Definition ISO
+Concept,SuperClass,Label,Definition,ISO 19111,IGN 2019,Proj4RDF,GeoSPARQL,Core Class?,Who?,Definition IGN,Definition ISO
 geosrs:CoordinateOperation,,coordinate operation,,iso19111:CoordinateOperation,ign:CoordinateOperation,,,Core Ontology,suggested by Ghislain,"Mathematical operation on coordinates, based on one-to-one relationship, that changes coordinates from one coordinate reference system to another. Cf. ISO 19111:2007:2007-07, part 11.1, table 42 and annex B.4.","process using a mathematical model, based on a one-to-one relationship, that changes coordinates in a source coordinate reference system to coordinates in a target coordinate reference system, or that changes coordinates at a source coordinate epoch to coordinates at a target coordinate epoch within the same coordinate reference system"
 ,,,,iso19111:PassThroughOperation,,,,,,,
 ,,,,iso19111:ConcatenatedOperation,,,,,,,coordinate operation consisting of the sequential application of multiple coordinate operations

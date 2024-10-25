@@ -1,4 +1,4 @@
-Concept,SuperClass,Label,Definition,ISO 19111,IGN 2019,Proj4RDF,GeoSPARQL,,Definition IGN,Definition ISO
+Concept,SuperClass,Label,Definition,ISO 19111,IGN 2019,Proj4RDF,GeoSPARQL,Core Class?,Definition IGN,Definition ISO
 geosrs:Datum,,Datum,,iso19111:Datum,ign:Datum,geocrs:Datum,,Core Ontology,"Parameter or set of parameters that define the position of the origin, the scale and the orientation of a coordinate system. Cf. ISO 19111:2007:2007-07, part 10.1, table 33 and annex B.3.","parameter or set of parameters that realize the position of the origin, the scale, and the orientation of a coordinate system"
 ,,,,iso19111:GeodeticReferenceFrame,ign:GeodeticDatum,geocrs:GeodeticReferenceFrame,,Core Ontology,"Datum describing the relation of a two- or three-dimensional coordinate system to the Earth. Cf. ISO 19111:2007:2007-07, part 10.2, table 34 and annex B.3.2.",reference frame or datum describing the relationship of a two- or three-dimensional coordinate system to the Earth
 ,,,,iso19111:DynamicGeodeticReferenceFrame,,geocrs:DynamicGeodeticReferenceFrame,,,,

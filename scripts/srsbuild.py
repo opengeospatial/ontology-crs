@@ -52,7 +52,11 @@ for file in os.listdir(directory):
                         if "Definition" in row and row["Definition"]!="":
                             gcore.add((URIRef(row["Concept"].replace(curprefix+":",curns)),SKOS.definition,Literal(row["Definition"],lang="en")))
                         if "SuperClass" in row and row["SuperClass"]!="":
-                            gcore.add((URIRef(row["Concept"].replace(curprefix+":",curns)),RDFS.subClassOf,URIRef(row["SuperClass"].replace("geosrs:",geocrsNS))))
+                            if " " in row["SuperClass"]:
+                                for spl in row["SuperClass"]:
+                                    gcore.add((URIRef(row["Concept"].replace(curprefix+":",curns)),RDFS.subClassOf,URIRef(spl.replace("geosrs:",geocrsNS))))
+                            else:
+                                gcore.add((URIRef(row["Concept"].replace(curprefix+":",curns)),RDFS.subClassOf,URIRef(row["SuperClass"].replace("geosrs:",geocrsNS))))
                     else:
                         g.add((URIRef(row["Concept"].replace(curprefix+":",curns)),RDF.type,OWL.Class))
                         if "Label" in row and row["Label"]!="":
@@ -60,7 +64,11 @@ for file in os.listdir(directory):
                         if "Definition" in row and row["Definition"]!="":
                             g.add((URIRef(row["Concept"].replace(curprefix+":",curns)),SKOS.definition,Literal(row["Definition"],lang="en")))
                         if "SuperClass" in row and row["SuperClass"]!="":
-                            g.add((URIRef(row["Concept"].replace(curprefix+":",curns)),RDFS.subClassOf,URIRef(row["SuperClass"].replace(curprefix+":",curns))))                     
+                            if " " in row["SuperClass"]:
+                                for spl in row["SuperClass"]:
+                                    g.add((URIRef(row["Concept"].replace(curprefix+":",curns)),RDFS.subClassOf,URIRef(spl.replace(curprefix+":",curns))))
+                            else:
+                                g.add((URIRef(row["Concept"].replace(curprefix+":",curns)),RDFS.subClassOf,URIRef(row["SuperClass"].replace(curprefix+":",curns))))                     
     else:
         continue
  

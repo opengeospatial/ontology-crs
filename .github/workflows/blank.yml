@@ -23,17 +23,23 @@ jobs:
          mkdir docs
          mv *.ttl docs/
          cd docs
+         mkdir application
          pylode -o application/index.html -i application.ttl
          mv application.ttl application/
          pylode -o index.html -i index.ttl
+         mkdir co
          pylode -o co/index.html -i co.ttl
          mv co.ttl co/
+         mkdir cs
          pylode -o cs/index.html -i cs.ttl
          mv cs.ttl cs/
+         mkdir datum
          pylode -o datum/index.html -i datum.ttl
          mv datum.ttl datum/
+         mkdir planet
          pylode -o planet/index.html -i planet.ttl
          mv planet.ttl planet/
+         mkdir projection
          pylode -o projection/index.html -i projection.ttl
          mv projection.ttl projection/
     - name: Deploy 🚀

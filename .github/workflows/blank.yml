@@ -23,10 +23,7 @@ jobs:
          mkdir docs
          mv *.ttl docs/
          cd docs
-         rm crsdraft.ttl
-         mkdir alignments
-         pylode -o alignments/index.html -i alignments.ttl
-         mv alignments.ttl alignments/
+         rm crsdraft.ttl geosrs.ttl
          mkdir application
          pylode -o application/index.html -i application.ttl
          mv application.ttl application/

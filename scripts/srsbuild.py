@@ -35,7 +35,7 @@ for file in os.listdir(directory):
     g.bind("skos","http://www.w3.org/2004/02/skos/core#")
 
     g.add((URIRef("http://www.opengis.net/ont/srs/geosrs/"+filename.replace(".csv","")),RDF.type,OWL.Ontology))
-    g.add((URIRef("http://www.opengis.net/ont/srs/geosrs/"+filename.replace(".csv","")),RDFS.label,Literal("SRS Ontology"+curprefix.capitalize(),lang="en")))
+    g.add((URIRef("http://www.opengis.net/ont/srs/geosrs/"+filename.replace(".csv","")),RDFS.label,Literal("SRS Ontology: "+curprefix.capitalize(),lang="en")))
     g.add((URIRef("http://www.opengis.net/ont/srs/geosrs/"+filename.replace(".csv","")),VANN.preferredNamespacePrefix,Literal(curprefix,datatype=XSD.string)))
     g.add((URIRef("http://www.opengis.net/ont/srs/geosrs/"+filename.replace(".csv","")),VANN.preferredNamespaceUri,Literal("http://www.opengis.net/ont/srs/"+filename.replace(".csv","")+"/",datatype=XSD.anyURI)))
     if filename.endswith(".csv"): 

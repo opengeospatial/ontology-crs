@@ -60,7 +60,7 @@ for file in os.listdir(directory):
                         if "Definition" in row and row["Definition"]!="":
                             g.add((URIRef(row["Concept"].replace(curprefix+":",curns)),SKOS.definition,Literal(row["Definition"],lang="en")))
                         if "SuperClass" in row and row["SuperClass"]!="":
-                            g.add((URIRef(row["Concept"].replace(curprefix+":",curns)),RDFS.subClassOf,URIRef(row["SuperClass"].replace("geosrs:",geocrsNS))))                     
+                            g.add((URIRef(row["Concept"].replace(curprefix+":",curns)),RDFS.subClassOf,URIRef(row["SuperClass"].replace(curprefix+":",curns))))                     
     else:
         continue
  

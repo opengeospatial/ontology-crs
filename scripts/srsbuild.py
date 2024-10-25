@@ -87,7 +87,7 @@ for file in os.listdir(directory):
 
 
     g.add((URIRef("http://www.opengis.net/ont/srs/geosrs/"+filename.replace(".csv","")),RDF.type,OWL.Ontology))
-    g.add((URIRef("http://www.opengis.net/ont/srs/geosrs/"+filename.replace(".csv","")),RDFS.label,Literal("SRS Ontology",lang="en")))
+    g.add((URIRef("http://www.opengis.net/ont/srs/geosrs/"+filename.replace(".csv","")),RDFS.label,Literal("SRS Ontology: "+curprefix.capitalize(),lang="en")))
     g.add((URIRef("http://www.opengis.net/ont/srs/geosrs/"+filename.replace(".csv","")),VANN.preferredNamespacePrefix,Literal(curprefix,datatype=XSD.string)))
     g.add((URIRef("http://www.opengis.net/ont/srs/geosrs/"+filename.replace(".csv","")),VANN.preferredNamespaceUri,Literal(curns,datatype=XSD.anyURI)))
     if filename.endswith(".csv"): 

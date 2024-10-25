@@ -23,13 +23,19 @@ jobs:
          mkdir docs
          mv *.ttl docs/
          cd docs
-         pylode -o application.html -i application.ttl
+         mkdir application
+         pylode -o application/index.html -i application.ttl
          pylode -o index.html -i index.ttl
-         pylode -o co.html -i co.ttl
-         pylode -o cs.html -i cs.ttl
-         pylode -o datum.html -i datum.ttl
-         pylode -o planet.html -i planet.ttl
-         pylode -o projection.html -i projection.ttl
+         mkdir co
+         pylode -o co/index.html -i co.ttl
+         mkdir cs
+         pylode -o cs/index.html -i cs.ttl
+         mkdir datum
+         pylode -o datum/index.html -i datum.ttl
+         mkdir planet
+         pylode -o planet/index.html -i planet.ttl
+         mkdir projection
+         pylode -o projection/index.html -i projection.ttl
     - name: Deploy 🚀
       uses: JamesIves/github-pages-deploy-action@v4.3.3
       with:

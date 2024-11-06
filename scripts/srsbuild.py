@@ -104,17 +104,17 @@ for file in os.listdir(directory):
                         if row["Core Property?"]=="Core Ontology":
                             core=True
                             if objprop:
-                                gcore.add((URIRef(row["Concept"].replace(curprefix+":",curns)),RDF.type,OWL.ObjectProperty))
+                                gcore.add((URIRef(row["Concept"].replace(coreprefix+":",geocrsNS)),RDF.type,OWL.ObjectProperty))
                             else:
-                                gcore.add((URIRef(row["Concept"].replace(curprefix+":",curns)),RDF.type,OWL.DatatypeProperty))
+                                gcore.add((URIRef(row["Concept"].replace(coreprefix+":",geocrsNS)),RDF.type,OWL.DatatypeProperty))
                             if "Label" in row and row["Label"]!="":
-                                gcore.add((URIRef(row["Concept"].replace(curprefix+":",curns)),RDFS.label,Literal(row["Label"],lang="en")))
+                                gcore.add((URIRef(row["Concept"].replace(coreprefix+":",geocrsNS)),RDFS.label,Literal(row["Label"],lang="en")))
                             if "Definition" in row and row["Definition"]!="":
-                                gcore.add((URIRef(row["Concept"].replace(curprefix+":",curns)),SKOS.definition,Literal(row["Definition"],lang="en")))
+                                gcore.add((URIRef(row["Concept"].replace(coreprefix+":",geocrsNS)),SKOS.definition,Literal(row["Definition"],lang="en")))
                             if "Range" in row and row["Range"]!="":
-                                gcore.add((URIRef(row["Concept"].replace(curprefix+":",curns)),RDFS.range,URIRef(row["Range"].replace("geosrs:",geocrsNS))))
+                                gcore.add((URIRef(row["Concept"].replace(coreprefix+":",geocrsNS)),RDFS.range,URIRef(row["Range"].replace("geosrs:",geocrsNS))))
                             if "Domain" in row and row["Domain"]!="":
-                                gcore.add((URIRef(row["Concept"].replace(curprefix+":",curns)),RDFS.domain,URIRef(row["Domain"].replace("geosrs:",geocrsNS))))
+                                gcore.add((URIRef(row["Concept"].replace(coreprefix+":",geocrsNS)),RDFS.domain,URIRef(row["Domain"].replace("geosrs:",geocrsNS))))
                         else:
                             if row["Core Property?"].lower() in exont:
                                 if objprop:

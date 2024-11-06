@@ -22,8 +22,6 @@ coreprefix="geosrs"
 dirname = os.path.dirname(__file__)
 abspath = os.path.join(dirname, '../csv/class/')
 
-
-
 directory = os.fsencode(abspath)
     
 for file in os.listdir(directory):
@@ -136,7 +134,7 @@ for file in os.listdir(directory):
 print(len(g))
 for item in exont:
     exont[item].serialize(destination=item+".ttl") 
-gcore.serialize(destination="index.ttl")
+gcore.serialize(destination="core/index.ttl")
        
 g=Graph() 
 g.bind("ign","http://data.ign.fr/def/ignf#")      

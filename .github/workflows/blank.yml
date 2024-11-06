@@ -24,7 +24,6 @@ jobs:
          mv *.ttl docs/
          mv index.html docs/
          cd docs
-         rm crsdraft.ttl geosrs.ttl
          mkdir application
          pylode -o application/index.html -i application.ttl
          mv application.ttl application/

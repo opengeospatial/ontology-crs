@@ -1,0 +1,56 @@
+@prefix geosrs: <http://www.opengis.net/ont/srs/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+geosrs:CoordinateOperation a owl:Class ;
+    rdfs:label "coordinate operation"@en .
+
+geosrs:Ellipsoid a owl:Class .
+
+geosrs:PrimeMeridian a owl:Class .
+
+geosrs:axis a owl:ObjectProperty ;
+    rdfs:label "axis"@en ;
+    rdfs:domain geosrs:CoordinateSystem ;
+    rdfs:range geosrs:Axis ;
+    skos:definition "The property relates a coordinate system to one of its axis"@en .
+
+geosrs:axisDirection a owl:ObjectProperty ;
+    rdfs:label "axisdirection"@en ;
+    rdfs:domain geosrs:Axis ;
+    skos:definition "The property relates a coordinate system axis to its axis direction"@en .
+
+geosrs:coordinateSystem a owl:ObjectProperty ;
+    rdfs:label "coordinate system"@en ;
+    rdfs:domain geosrs:CRS ;
+    rdfs:range geosrs:CoordinateSystem ;
+    skos:definition "The property relates a coordinate reference system to its coordinate system"@en .
+
+geosrs:datum a owl:ObjectProperty ;
+    rdfs:label "datum"@en ;
+    rdfs:domain geosrs:CRS ;
+    rdfs:range geosrs:Datum ;
+    skos:definition "The property relates a coordinate reference system to a datum"@en .
+
+geosrs:geosrs a owl:Ontology ;
+    rdfs:label "SRS Ontology"@en ;
+    vann:preferredNamespacePrefix "geosrs"^^xsd:string ;
+    vann:preferredNamespaceUri "http://www.opengis.net/ont/srs/"^^xsd:anyURI .
+
+geosrs:Datum a owl:Class ;
+    rdfs:label "Datum"@en .
+
+geosrs:SpatialReferenceSystem a owl:Class ;
+    rdfs:label "Spatial Reference System"@en ;
+    rdfs:subClassOf geosrs:ReferenceSystem .
+
+geosrs:CRS a owl:Class ;
+    rdfs:label "Coordinate Reference System"@en ;
+    rdfs:subClassOf geosrs:SpatialReferenceSystem .
+
+geosrs:CoordinateSystem a owl:Class ;
+    rdfs:label "coordinate system"@en .
+

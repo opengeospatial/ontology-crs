@@ -1,0 +1,18 @@
+@prefix geosrs: <http://www.opengis.net/ont/srs/> .
+@prefix ign: <http://data.ign.fr/def/ignf#> .
+@prefix iso19111: <http://def.isotc211.org/iso19112/2019/SpatialReferencingByGeographicIdentifier#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+geosrs:CoordinateSystem owl:equivalentClass ign:CoordinateSystem,
+        iso19111:CoordinateSystem .
+
+geosrs:Datum owl:equivalentClass ign:Datum,
+        iso19111:Datum .
+
+geosrs:Ellipsoid owl:equivalentClass ign:Ellipsoid,
+        iso19111:Ellipsoid .
+
+<http://www.opengis.net/ont/srs/geosrs/alignments/> a owl:Ontology ;
+    rdfs:label "SRS Ontology Alignments"@en .
+

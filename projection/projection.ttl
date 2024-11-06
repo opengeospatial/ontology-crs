@@ -1,0 +1,1091 @@
+@prefix geoprojection: <http://www.opengis.net/ont/srs/projection/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.opengis.net/ont/srs/geosrs/projection> a owl:Ontology ;
+    rdfs:label "SRS Ontology: Geoprojection"@en ;
+    vann:preferredNamespacePrefix "geoprojection"^^xsd:string ;
+    vann:preferredNamespaceUri "http://www.opengis.net/ont/srs/projection/"^^xsd:anyURI .
+
+geoprojection:A4Projection a owl:Class ;
+    rdfs:label "A4 Projection"@en ;
+    rdfs:subClassOf geoprojection:LenticularProjection .
+
+geoprojection:AdamsProjection a owl:Class ;
+    rdfs:label "Adams Projection"@en ;
+    rdfs:subClassOf geoprojection:ConformalProjection .
+
+geoprojection:AdamsWorldInASquareIIProjection a owl:Class ;
+    rdfs:label "Adams World In A Square II Projection"@en ;
+    rdfs:subClassOf geoprojection:ConformalProjection .
+
+geoprojection:AdamsWorldInASquareIProjection a owl:Class ;
+    rdfs:label "Adams World In A Square I Projection"@en ;
+    rdfs:subClassOf geoprojection:ConformalProjection .
+
+geoprojection:AiryProjection a owl:Class ;
+    rdfs:label "Airy Projection"@en ;
+    rdfs:subClassOf geoprojection:MinimumErrorProjection .
+
+geoprojection:AitoffObliqueProjection a owl:Class ;
+    rdfs:label "Aitoff Oblique Projection"@en ;
+    rdfs:subClassOf geoprojection:PseudoAzimuthalProjection .
+
+geoprojection:AitoffProjection a owl:Class ;
+    rdfs:label "Aitoff Projection"@en ;
+    rdfs:subClassOf geoprojection:PseudoAzimuthalProjection .
+
+geoprojection:AlbersEqualAreaProjection a owl:Class ;
+    rdfs:label "Albers Equal Area Projection"@en ;
+    rdfs:subClassOf geoprojection:EqualAreaProjection .
+
+geoprojection:AmericanPolyconicProjection a owl:Class ;
+    rdfs:label "American Polyconic Projection"@en ;
+    rdfs:subClassOf geoprojection:PseudoConicalProjection .
+
+geoprojection:ApianGlobularIProjection a owl:Class ;
+    rdfs:label "Apian Globular I Projection"@en ;
+    rdfs:subClassOf geoprojection:GlobularProjection .
+
+geoprojection:ApianIIProjection a owl:Class ;
+    rdfs:label "Apian II Projection"@en ;
+    rdfs:subClassOf geoprojection:PseudoCylindricalProjection .
+
+geoprojection:ArdenCloseProjection a owl:Class ;
+    rdfs:label "Arden Close Projection"@en ;
+    rdfs:subClassOf geoprojection:CylindricalProjection .
+
+geoprojection:ArmadilloProjection a owl:Class ;
+    rdfs:label "Armadillo Projection"@en ;
+    rdfs:subClassOf geoprojection:CompromiseProjection .
+
+geoprojection:AtlantisProjection a owl:Class ;
+    rdfs:label "Atlantis Projection"@en ;
+    rdfs:subClassOf geoprojection:PseudoCylindricalProjection .
+
+geoprojection:AugustEpicycloidalProjection a owl:Class ;
+    rdfs:label "August Epicycloidal Projection"@en ;
+    rdfs:subClassOf geoprojection:ConformalProjection ;
+    skos:definition "A projection in which every angle between two curves that crosss each other on a celestical body is preserved in the image of the projection"@en .
+
+geoprojection:AuthaGraphProjection a owl:Class ;
+    rdfs:label "Autha Graph Projection"@en ;
+    rdfs:subClassOf geoprojection:PolyhedralProjection .
+
+geoprojection:AzimuthalEqualAreaProjection a owl:Class ;
+    rdfs:label "Azimutal Equal Area Projection"@en ;
+    rdfs:subClassOf geoprojection:EqualAreaProjection .
+
+geoprojection:AzimuthalEquidistantProjection a owl:Class ;
+    rdfs:label "Azimuthal Equidistant Projection"@en ;
+    rdfs:subClassOf geoprojection:EquidistantProjection .
+
+geoprojection:BSAMCylindricalProjection a owl:Class ;
+    rdfs:label "BSAM Cylindrical Projection"@en ;
+    rdfs:subClassOf geoprojection:CylindricalStereographicProjection .
+
+geoprojection:BaconGlobularProjection a owl:Class ;
+    rdfs:label "Bacon Globular Projection"@en ;
+    rdfs:subClassOf geoprojection:GlobularProjection .
+
+geoprojection:BakerDinomicProjection a owl:Class ;
+    rdfs:label "Baker Dinomic Projection"@en ;
+    rdfs:subClassOf geoprojection:CompromiseProjection .
+
+geoprojection:BalthasartProjection a owl:Class ;
+    rdfs:label "Balthasart Projection"@en ;
+    rdfs:subClassOf geoprojection:CylindricalEqualArea .
+
+geoprojection:BaranyiIIIProjection a owl:Class ;
+    rdfs:label "Baranyi III Projection"@en ;
+    rdfs:subClassOf geoprojection:PseudoCylindricalProjection .
+
+geoprojection:BaranyiIIProjection a owl:Class ;
+    rdfs:label "Baranyi II Projection"@en ;
+    rdfs:subClassOf geoprojection:PseudoCylindricalProjection .
+
+geoprojection:BaranyiIProjection a owl:Class ;
+    rdfs:label "Baranyi I Projection"@en ;
+    rdfs:subClassOf geoprojection:PseudoCylindricalProjection .
+
+geoprojection:BaranyiIVProjection a owl:Class ;
+    rdfs:label "Baranyi IV Projection"@en ;
+    rdfs:subClassOf geoprojection:PseudoCylindricalProjection .
+
+geoprojection:BartholomewProjection a owl:Class ;
+    rdfs:label "Batholomew Projection"@en ;
+    rdfs:subClassOf geoprojection:WinkelTripelProjection .
+
+geoprojection:BehrmannProjection a owl:Class ;
+    rdfs:label "Behrmann Projection"@en ;
+    rdfs:subClassOf geoprojection:CylindricalEqualArea .
+
+geoprojection:BerghausStarProjection a owl:Class ;
+    rdfs:label "Berghaus Star Projection"@en ;
+    rdfs:subClassOf geoprojection:EquidistantProjection .
+
+geoprojection:BertinProjection a owl:Class ;
+    rdfs:label "Bertin Projection"@en ;
+    rdfs:subClassOf geoprojection:CompromiseProjection .
+
+geoprojection:BipolarObliqueConicConformalProjection a owl:Class ;
+    rdfs:label "Bipolar Oblique Conic Conformal Projection"@en ;
+    rdfs:subClassOf geoprojection:ConicalProjection .
+
+geoprojection:BoggsEumorphicProjection a owl:Class ;
+    rdfs:label "Boggs Eumorphic Projection"@en ;
+    rdfs:subClassOf geoprojection:PseudoCylindricalProjection .
+
+geoprojection:BottomleyProjection a owl:Class ;
+    rdfs:label "Bottomley Projection"@en ;
+    rdfs:subClassOf geoprojection:PseudoConicalProjection .
+
+geoprojection:BraunPerspectiveProjection a owl:Class ;
+    rdfs:label "Braun Perspective Projection"@en ;
+    rdfs:subClassOf geoprojection:CylindricalProjection .
+
+geoprojection:BraunStereographicProjection a owl:Class ;
+    rdfs:label "Braun Stereographic Projection"@en ;
+    rdfs:subClassOf geoprojection:CylindricalStereographicProjection .
+
+geoprojection:BreusingGeometricProjection a owl:Class ;
+    rdfs:label "Breusing Geometric Projection"@en ;
+    rdfs:subClassOf geoprojection:AzimuthalProjection .
+
+geoprojection:BreusingHarmonicProjection a owl:Class ;
+    rdfs:label "Breusing Harmonic Projection"@en ;
+    rdfs:subClassOf geoprojection:AzimuthalProjection .
+
+geoprojection:BriesemeisterProjection a owl:Class ;
+    rdfs:label "Briesemeister Projection"@en ;
+    rdfs:subClassOf geoprojection:LenticularProjection .
+
+geoprojection:BromleyProjection a owl:Class ;
+    rdfs:label "Bromley Projection"@en ;
+    rdfs:subClassOf geoprojection:PseudoCylindricalProjection .
+
+geoprojection:CabotProjection a owl:Class ;
+    rdfs:label "Cabot Projection"@en ;
+    rdfs:subClassOf geoprojection:PseudoCylindricalProjection .
+
+geoprojection:CahillKeyesProjection a owl:Class ;
+    rdfs:label "Cahill Keyes Projection"@en ;
+    rdfs:subClassOf geoprojection:PolyhedralProjection .
+
+geoprojection:CassiniProjection a owl:Class ;
+    rdfs:label "Cassini Projection"@en ;
+    rdfs:subClassOf geoprojection:EquidistantProjection .
+
+geoprojection:CentralConicProjection a owl:Class ;
+    rdfs:label "Central Conic Projection"@en ;
+    rdfs:subClassOf geoprojection:ConicalProjection .
+
+geoprojection:CentralCylindricalProjection a owl:Class ;
+    rdfs:label "Central Cylindrical Projection"@en ;
+    rdfs:subClassOf geoprojection:PerspectiveProjection .
+
+geoprojection:ChamberlinTrimetricProjection a owl:Class ;
+    rdfs:label "Chamberlin Trimetric Projection"@en ;
+    rdfs:subClassOf geoprojection:CompromiseProjection .
+
+geoprojection:CiricIProjection a owl:Class ;
+    rdfs:label "Ciric I Projection"@en ;
+    rdfs:subClassOf geoprojection:LenticularProjection .
+
+geoprojection:CollignonButterflyProjection a owl:Class ;
+    rdfs:label "Collignon Butterfly Projection"@en ;
+    rdfs:subClassOf geoprojection:PolyhedralProjection .
+
+geoprojection:CollignonProjection a owl:Class ;
+    rdfs:label "Collignon Projection"@en ;
+    rdfs:subClassOf geoprojection:PseudoCylindricalProjection .
+
+geoprojection:ColombiaUrbanProjection a owl:Class ;
+    rdfs:label "Colombia Urban Projection"@en .
+
+geoprojection:CompactMillerProjection a owl:Class ;
+    rdfs:label "Compact Miller Projection"@en ;
+    rdfs:subClassOf geoprojection:CylindricalProjection .
+
+geoprojection:CordiformProjection a owl:Class ;
+    rdfs:label "Cordiform Projection"@en .
+
+geoprojection:CoxConformalProjection a owl:Class ;
+    rdfs:label "Cox Conformal Projection"@en ;
+    rdfs:subClassOf geoprojection:ConformalProjection .
+
+geoprojection:CraigRetroazimuthalProjection a owl:Class ;
+    rdfs:label "Craig Retroazimuthal Projection"@en ;
+    rdfs:subClassOf geoprojection:RetroazimuthalProjection .
+
+geoprojection:CrasterParabolicProjection a owl:Class ;
+    rdfs:label "Craster Parabolic Projection"@en ;
+    rdfs:subClassOf geoprojection:PseudoCylindricalProjection .
+
+geoprojection:CupolaProjection a owl:Class ;
+    rdfs:label "Cupola Projection"@en ;
+    rdfs:subClassOf geoprojection:LenticularProjection .
+
+geoprojection:DeakinMinimumErrorProjection a owl:Class ;
+    rdfs:label "Deakin Minimum Error Projection"@en ;
+    rdfs:subClassOf geoprojection:PseudoCylindricalProjection .
+
+geoprojection:DedistortProjection a owl:Class ;
+    rdfs:label "Dedistort Projection"@en ;
+    rdfs:subClassOf geoprojection:LenticularProjection .
+
+geoprojection:DenoyerSemiEllipticalProjection a owl:Class ;
+    rdfs:label "Denoyer Semi Elliptical Projection"@en ;
+    rdfs:subClassOf geoprojection:CompromiseProjection .
+
+geoprojection:DietrichKitadaProjection a owl:Class ;
+    rdfs:label "Dietrich Kitada Projection"@en ;
+    rdfs:subClassOf geoprojection:LenticularProjection .
+
+geoprojection:DodecahedralProjection a owl:Class ;
+    rdfs:label "Dodecahedral Projection"@en ;
+    rdfs:subClassOf geoprojection:PolyhedralProjection .
+
+geoprojection:DymaxionProjection a owl:Class ;
+    rdfs:label "Dymaxion Projection"@en ;
+    rdfs:subClassOf geoprojection:PolyhedralProjection .
+
+geoprojection:Eckert1Projection a owl:Class ;
+    rdfs:label "Eckert 1 Projection"@en ;
+    rdfs:subClassOf geoprojection:PseudoCylindricalProjection .
+
+geoprojection:Eckert2Projection a owl:Class ;
+    rdfs:label "Eckert 2 Projection"@en ;
+    rdfs:subClassOf geoprojection:PseudoCylindricalProjection .
+
+geoprojection:Eckert3Projection a owl:Class ;
+    rdfs:label "Eckert 3 Projection"@en ;
+    rdfs:subClassOf geoprojection:PseudoCylindricalProjection .
+
+geoprojection:Eckert4Projection a owl:Class ;
+    rdfs:label "Eckert 4 Projection"@en ;
+    rdfs:subClassOf geoprojection:PseudoCylindricalProjection .
+
+geoprojection:Eckert5Projection a owl:Class ;
+    rdfs:label "Eckert 5 Projection"@en ;
+    rdfs:subClassOf geoprojection:PseudoCylindricalProjection .
+
+geoprojection:Eckert6Projection a owl:Class ;
+    rdfs:label "Eckert 6 Projection"@en ;
+    rdfs:subClassOf geoprojection:PseudoCylindricalProjection .
+
+geoprojection:EisenlohrProjection a owl:Class ;
+    rdfs:label "Eisenlohr Projection"@en ;
+    rdfs:subClassOf geoprojection:ConformalProjection .
+
+geoprojection:EqualEarthProjection a owl:Class ;
+    rdfs:label "Equal Earth Projection"@en ;
+    rdfs:subClassOf geoprojection:PseudoCylindricalProjection .
+
+geoprojection:EquallySpacedParallelsProjection a owl:Class ;
+    rdfs:label "Equally-Spaced Parallels Projection"@en .
+
+geoprojection:EquidistantConicProjection a owl:Class ;
+    rdfs:label "Equidistant Conic Projection"@en ;
+    rdfs:subClassOf geoprojection:EquidistantProjection .
+
+geoprojection:EquidistantCylindricalProjection a owl:Class ;
+    rdfs:label "Equidistant Cylindrical Projection"@en ;
+    rdfs:subClassOf geoprojection:EquidistantProjection .
+
+geoprojection:EquirectangularProjection a owl:Class ;
+    rdfs:label "Equirectangular Projection"@en ;
+    rdfs:subClassOf geoprojection:EquidistantProjection .
+
+geoprojection:FaheyProjection a owl:Class ;
+    rdfs:label "Fahey Projection"@en ;
+    rdfs:subClassOf geoprojection:PseudoCylindricalProjection .
+
+geoprojection:FairgrieveProjection a owl:Class ;
+    rdfs:label "Fairgrieve Projection"@en ;
+    rdfs:subClassOf geoprojection:CompromiseProjection .
+
+geoprojection:FoucautProjection a owl:Class ;
+    rdfs:label "Foucaut Projection"@en ;
+    rdfs:subClassOf geoprojection:PseudoCylindricalProjection .
+
+geoprojection:FoucautSinusoidalProjection a owl:Class ;
+    rdfs:label "Foucaut Sinusoidal Projection"@en ;
+    rdfs:subClassOf geoprojection:PseudoCylindricalProjection .
+
+geoprojection:FournierGlobularIProjection a owl:Class ;
+    rdfs:label "Fournier Globular I Projection"@en ;
+    rdfs:subClassOf geoprojection:GlobularProjection .
+
+geoprojection:FournierIIProjection a owl:Class ;
+    rdfs:label "Fournier II Projection"@en ;
+    rdfs:subClassOf geoprojection:PseudoCylindricalProjection .
+
+geoprojection:FranculaIIIProjection a owl:Class ;
+    rdfs:label "Francula III Projection"@en ;
+    rdfs:subClassOf geoprojection:LenticularProjection .
+
+geoprojection:FranculaIVProjection a owl:Class ;
+    rdfs:label "Francula IV Projection"@en ;
+    rdfs:subClassOf geoprojection:LenticularProjection .
+
+geoprojection:FranculaIXProjection a owl:Class ;
+    rdfs:label "Francula IX Projection"@en ;
+    rdfs:subClassOf geoprojection:LenticularProjection .
+
+geoprojection:FranculaVIIIProjection a owl:Class ;
+    rdfs:label "Francula VIII Projection"@en ;
+    rdfs:subClassOf geoprojection:LenticularProjection .
+
+geoprojection:FranculaVProjection a owl:Class ;
+    rdfs:label "Francula V Projection"@en ;
+    rdfs:subClassOf geoprojection:LenticularProjection .
+
+geoprojection:FranculaXIIIProjection a owl:Class ;
+    rdfs:label "Francula XIII Projection"@en ;
+    rdfs:subClassOf geoprojection:LenticularProjection .
+
+geoprojection:FranculaXIIProjection a owl:Class ;
+    rdfs:label "Francula XII Projection"@en ;
+    rdfs:subClassOf geoprojection:LenticularProjection .
+
+geoprojection:FranculaXIVProjection a owl:Class ;
+    rdfs:label "Francula XIV Projection"@en ;
+    rdfs:subClassOf geoprojection:LenticularProjection .
+
+geoprojection:GS50Projection a owl:Class ;
+    rdfs:label "GS50 Projection"@en ;
+    rdfs:subClassOf geoprojection:ConformalProjection .
+
+geoprojection:GallIsographicProjection a owl:Class ;
+    rdfs:label "Gall Isographic Projection"@en .
+
+geoprojection:GallPetersProjection a owl:Class ;
+    rdfs:label "Gall Peters Projection"@en ;
+    rdfs:subClassOf geoprojection:EqualAreaProjection .
+
+geoprojection:GaussKruegerProjection a owl:Class ;
+    rdfs:label "Gauss Krueger Projection"@en ;
+    rdfs:subClassOf geoprojection:TransverseMercatorProjection .
+
+geoprojection:GeneralVerticalPerspectiveProjection a owl:Class ;
+    rdfs:label "General Vertical Perspective Projection"@en ;
+    rdfs:subClassOf geoprojection:PerspectiveProjection .
+
+geoprojection:GilbertTwoWorldPerspectiveProjection a owl:Class ;
+    rdfs:label "Gilbert Two World Perspective Projection"@en ;
+    rdfs:subClassOf geoprojection:PerspectiveProjection .
+
+geoprojection:GingeryProjection a owl:Class ;
+    rdfs:label "Gingery Projection"@en .
+
+geoprojection:GinzburgIIProjection a owl:Class ;
+    rdfs:label "Ginzburg II Projection"@en ;
+    rdfs:subClassOf geoprojection:AzimuthalProjection .
+
+geoprojection:GinzburgIProjection a owl:Class ;
+    rdfs:label "Ginzburg I Projection"@en ;
+    rdfs:subClassOf geoprojection:AzimuthalProjection .
+
+geoprojection:GinzburgIVProjection a owl:Class ;
+    rdfs:label "Ginzburg IV Projection"@en ;
+    rdfs:subClassOf geoprojection:PolyconicProjection .
+
+geoprojection:GinzburgIXProjection a owl:Class ;
+    rdfs:label "Ginzburg IX Projection"@en ;
+    rdfs:subClassOf geoprojection:PolyconicProjection .
+
+geoprojection:GinzburgVIIIProjection a owl:Class ;
+    rdfs:label "Ginzburg VIII Projection"@en ;
+    rdfs:subClassOf geoprojection:PseudoCylindricalProjection .
+
+geoprojection:GinzburgVIProjection a owl:Class ;
+    rdfs:label "Ginzburg VI Projection"@en ;
+    rdfs:subClassOf geoprojection:PolyconicProjection .
+
+geoprojection:GinzburgVProjection a owl:Class ;
+    rdfs:label "Ginzburg V Projection"@en ;
+    rdfs:subClassOf geoprojection:PolyconicProjection .
+
+geoprojection:GnomonicButterflyProjection a owl:Class ;
+    rdfs:label "Gnomonic Butterfly Projection"@en ;
+    rdfs:subClassOf geoprojection:PolyhedralProjection .
+
+geoprojection:GnomonicCubedSphereProjection a owl:Class ;
+    rdfs:label "Gnomonic Cubed Sphere Projection"@en ;
+    rdfs:subClassOf geoprojection:PolyhedralProjection .
+
+geoprojection:GnomonicIcosahedronProjection a owl:Class ;
+    rdfs:label "Gnomonic Icosahedron Projection"@en ;
+    rdfs:subClassOf geoprojection:PolyhedralProjection .
+
+geoprojection:GnomonicProjection a owl:Class ;
+    rdfs:label "Gnomonic Projection"@en ;
+    rdfs:subClassOf geoprojection:AzimuthalProjection .
+
+geoprojection:GoodeHomolosineProjection a owl:Class ;
+    rdfs:label "Goode Homolosine Projection"@en ;
+    rdfs:subClassOf geoprojection:PseudoCylindricalProjection .
+
+geoprojection:GottWagnerProjection a owl:Class ;
+    rdfs:label "Gott-Wagner Projection"@en ;
+    rdfs:subClassOf geoprojection:PolyconicProjection .
+
+geoprojection:GringortenProjection a owl:Class ;
+    rdfs:label "Gringorten Projection"@en ;
+    rdfs:subClassOf geoprojection:ConformalProjection,
+        geoprojection:EqualAreaProjection .
+
+geoprojection:GringortenQuincuncialProjection a owl:Class ;
+    rdfs:label "Gringorten Quincuncial Projection"@en .
+
+geoprojection:GuyouProjection a owl:Class ;
+    rdfs:label "Guyou Projection"@en ;
+    rdfs:subClassOf geoprojection:PolyhedralProjection .
+
+geoprojection:HEALPixProjection a owl:Class ;
+    rdfs:label "HEALPix Projection"@en ;
+    rdfs:subClassOf geoprojection:PseudoCylindricalProjection .
+
+geoprojection:HammerProjection a owl:Class ;
+    rdfs:label "Hammer Projection"@en ;
+    rdfs:subClassOf geoprojection:PseudoAzimuthalProjection .
+
+geoprojection:HammerRetroazimuthalProjection a owl:Class ;
+    rdfs:label "Hammer Retroazimuthal Projection"@en ;
+    rdfs:subClassOf geoprojection:RetroazimuthalProjection .
+
+geoprojection:HamusoidalProjection a owl:Class ;
+    rdfs:label "Hamusoidal Projection"@en ;
+    rdfs:subClassOf geoprojection:LenticularProjection .
+
+geoprojection:HatanoAsymmetricalEqualAreaProjection a owl:Class ;
+    rdfs:label "Hatano Asymmetrical Equalarea Projection"@en ;
+    rdfs:subClassOf geoprojection:PseudoCylindricalProjection .
+
+geoprojection:HerschelConformalConicProjection a owl:Class ;
+    rdfs:label "Herschel Conformal Conic Projection"@en ;
+    rdfs:subClassOf geoprojection:ConicalProjection .
+
+geoprojection:HillEucyclicProjection a owl:Class ;
+    rdfs:label "Hill Eucyclic Projection"@en ;
+    rdfs:subClassOf geoprojection:PolyconicProjection .
+
+geoprojection:HoboDyerProjection a owl:Class ;
+    rdfs:label "Hobo Dyer Projection"@en ;
+    rdfs:subClassOf geoprojection:EqualAreaProjection .
+
+geoprojection:HufnagelIIIProjection a owl:Class ;
+    rdfs:label "Hufnagel III Projection"@en .
+
+geoprojection:HufnagelIIProjection a owl:Class ;
+    rdfs:label "Hufnagel II Projection"@en .
+
+geoprojection:HufnagelIProjection a owl:Class ;
+    rdfs:label "Hufnagel I Projection"@en .
+
+geoprojection:HufnagelIVProjection a owl:Class ;
+    rdfs:label "Hufnagel IV Projection"@en .
+
+geoprojection:HufnagelIXProjection a owl:Class ;
+    rdfs:label "Hufnagel IX Projection"@en .
+
+geoprojection:HufnagelProjection a owl:Class ;
+    rdfs:label "Hufnagel Projection"@en ;
+    rdfs:subClassOf geoprojection:PseudoCylindricalProjection .
+
+geoprojection:HufnagelVIIIProjection a owl:Class ;
+    rdfs:label "Hufnagel VIII Projection"@en .
+
+geoprojection:HufnagelVIIProjection a owl:Class ;
+    rdfs:label "Hufnagel VII Projection"@en .
+
+geoprojection:HufnagelVIProjection a owl:Class ;
+    rdfs:label "Hufnagel VI Projection"@en .
+
+geoprojection:HufnagelVProjection a owl:Class ;
+    rdfs:label "Hufnagel IV Projection"@en .
+
+geoprojection:HufnagelXIIProjection a owl:Class ;
+    rdfs:label "Hufnagel XII Projection"@en .
+
+geoprojection:HufnagelXIProjection a owl:Class ;
+    rdfs:label "Hufnagel XI Projection"@en .
+
+geoprojection:HufnagelXProjection a owl:Class ;
+    rdfs:label "Hufnagel X Projection"@en .
+
+geoprojection:IcosahedralProjection a owl:Class ;
+    rdfs:label "Icosahedral Projection"@en ;
+    rdfs:subClassOf geoprojection:PolyhedralProjection .
+
+geoprojection:InterruptedGoodeHomolosineOceanicViewProjection a owl:Class ;
+    rdfs:label "Interrupted Goode Homolosine Oceanic View Projection"@en .
+
+geoprojection:InterruptedGoodeHomolosineProjection a owl:Class ;
+    rdfs:label "Interrupted Goode Homolosine Projection"@en .
+
+geoprojection:InterruptedQuarticAuthalicProjection a owl:Class ;
+    rdfs:label "Interrupted Quartic Authalic Projection"@en ;
+    rdfs:subClassOf geoprojection:QuarticAuthalicProjection .
+
+geoprojection:JamesAzimuthalProjection a owl:Class ;
+    rdfs:label "James Azimuthal Projection"@en ;
+    rdfs:subClassOf geoprojection:AzimuthalProjection .
+
+geoprojection:KamenetskiyIProjection a owl:Class ;
+    rdfs:label "Kamenetskiy I Projection"@en ;
+    rdfs:subClassOf geoprojection:GallStereographicProjection .
+
+geoprojection:KarchenkoShabanovaProjection a owl:Class ;
+    rdfs:label "Karchenko Shabanova Projection"@en ;
+    rdfs:subClassOf geoprojection:CylindricalProjection .
+
+geoprojection:Kavrayskiy7Projection a owl:Class ;
+    rdfs:label "Kavrayskiy 7 Projection"@en ;
+    rdfs:subClassOf geoprojection:PseudoCylindricalProjection .
+
+geoprojection:KissProjection a owl:Class ;
+    rdfs:label "Kiss Projection"@en ;
+    rdfs:subClassOf geoprojection:LenticularProjection .
+
+geoprojection:Krovak a owl:Class ;
+    rdfs:label "Krovak Projection"@en ;
+    rdfs:subClassOf geoprojection:ConicalProjection .
+
+geoprojection:LaHireProjection a owl:Class ;
+    rdfs:label "La Hire Projection"@en ;
+    rdfs:subClassOf geoprojection:PerspectiveProjection .
+
+geoprojection:LabordeProjection a owl:Class ;
+    rdfs:label "Laborde Projection"@en ;
+    rdfs:subClassOf geoprojection:CylindricalProjection .
+
+geoprojection:LagrangeProjection a owl:Class ;
+    rdfs:label "Lagrange Projection"@en ;
+    rdfs:subClassOf geoprojection:PolyconicProjection .
+
+geoprojection:LambertAzimuthalEqualArea a owl:Class ;
+    rdfs:label "Lambert Azimuthal Equal Area Projection"@en ;
+    rdfs:subClassOf geoprojection:EqualAreaProjection .
+
+geoprojection:LambertConformalConicProjection a owl:Class ;
+    rdfs:label "Lambert Conformal Conic Projection"@en ;
+    rdfs:subClassOf geoprojection:ConicalProjection .
+
+geoprojection:LambertCylindricalEqualAreaProjection a owl:Class ;
+    rdfs:label "Lambert Cylindrical Equal Area Projection"@en ;
+    rdfs:subClassOf geoprojection:CylindricalEqualArea .
+
+geoprojection:LarriveeProjection a owl:Class ;
+    rdfs:label "Larrivee Projection"@en ;
+    rdfs:subClassOf geoprojection:CompromiseProjection .
+
+geoprojection:LaskowskiProjection a owl:Class ;
+    rdfs:label "Laskowski Projection"@en ;
+    rdfs:subClassOf geoprojection:PolyconicProjection .
+
+geoprojection:LatLonProjection a owl:Class ;
+    rdfs:label "Lat Lon Projection"@en .
+
+geoprojection:LeeProjection a owl:Class ;
+    rdfs:label "Lee Projection"@en ;
+    rdfs:subClassOf geoprojection:PolyhedralProjection .
+
+geoprojection:LittrowProjection a owl:Class ;
+    rdfs:label "Littrow Projection"@en ;
+    rdfs:subClassOf geoprojection:RetroazimuthalProjection .
+
+geoprojection:LonLatProjection a owl:Class ;
+    rdfs:label "Lon Lat Projection"@en .
+
+geoprojection:LorgnaProjection a owl:Class ;
+    rdfs:label "Lorgna Projection"@en ;
+    rdfs:subClassOf geoprojection:PerspectiveProjection .
+
+geoprojection:LowryProjection a owl:Class ;
+    rdfs:label "Lowry Projection"@en ;
+    rdfs:subClassOf geoprojection:PerspectiveProjection .
+
+geoprojection:LoximuthalProjection a owl:Class ;
+    rdfs:label "Loximuthal Projection"@en ;
+    rdfs:subClassOf geoprojection:PseudoCylindricalProjection .
+
+geoprojection:MaurerNo73Projection a owl:Class ;
+    rdfs:label "Maurer No73 Projection"@en .
+
+geoprojection:MayrProjection a owl:Class ;
+    rdfs:label "Mayr Projection"@en ;
+    rdfs:subClassOf geoprojection:PseudoCylindricalProjection .
+
+geoprojection:McBrydeThomasFlatPolarParabolicProjection a owl:Class ;
+    rdfs:label "McBryde Thomas Flat Polar Parabolic Projection"@en ;
+    rdfs:subClassOf geoprojection:PseudoCylindricalProjection .
+
+geoprojection:McBrydeThomasFlatPolarQuarticProjection a owl:Class ;
+    rdfs:label "McBryde Thomas Flat Polar Quartic Projection"@en ;
+    rdfs:subClassOf geoprojection:PseudoCylindricalProjection .
+
+geoprojection:McBrydeThomasFlatPolarSinusoidalProjection a owl:Class ;
+    rdfs:label "McBryde Thomas Flat Polar Sinusoidal Projection"@en ;
+    rdfs:subClassOf geoprojection:PseudoCylindricalProjection .
+
+geoprojection:McBrydeThomasIIProjection a owl:Class ;
+    rdfs:label "McBryde Thomas II Projection"@en ;
+    rdfs:subClassOf geoprojection:PseudoCylindricalProjection .
+
+geoprojection:McBrydeThomasIProjection a owl:Class ;
+    rdfs:label "McBryde Thomas I Projection"@en ;
+    rdfs:subClassOf geoprojection:PseudoCylindricalProjection .
+
+geoprojection:MillerOblatedStereographicProjection a owl:Class ;
+    rdfs:label "Miller Oblated Stereographic Projection"@en ;
+    rdfs:subClassOf geoprojection:StereographicProjection .
+
+geoprojection:MillerProjection a owl:Class ;
+    rdfs:label "Miller Projection"@en ;
+    rdfs:subClassOf geoprojection:CylindricalProjection .
+
+geoprojection:MollweideProjection a owl:Class ;
+    rdfs:label "Mollweide Projection"@en ;
+    rdfs:subClassOf geoprojection:EqualAreaProjection,
+        geoprojection:PseudoCylindricalProjection .
+
+geoprojection:MollweideWagnerProjection a owl:Class ;
+    rdfs:label "Mollweide Wagner Projection"@en .
+
+geoprojection:MurdochIIIProjection a owl:Class ;
+    rdfs:label "Murdoch III Projection"@en ;
+    rdfs:subClassOf geoprojection:ConicalProjection .
+
+geoprojection:MurdochIIProjection a owl:Class ;
+    rdfs:label "Murdoch II Projection"@en ;
+    rdfs:subClassOf geoprojection:ConicalProjection .
+
+geoprojection:MurdochIProjection a owl:Class ;
+    rdfs:label "Murdoch I Projection"@en ;
+    rdfs:subClassOf geoprojection:ConicalProjection .
+
+geoprojection:MyrahedalProjection a owl:Class ;
+    rdfs:label "Myrahedal Projection"@en ;
+    rdfs:subClassOf geoprojection:PolyhedralProjection .
+
+geoprojection:NaturalEarth2Projection a owl:Class ;
+    rdfs:label "Natural Earth 2 Projection"@en ;
+    rdfs:subClassOf geoprojection:PseudoCylindricalProjection .
+
+geoprojection:NaturalEarthProjection a owl:Class ;
+    rdfs:label "Natural Earth Projection"@en ;
+    rdfs:subClassOf geoprojection:PseudoCylindricalProjection .
+
+geoprojection:NellHammerProjection a owl:Class ;
+    rdfs:label "Nell-Hammer Projection"@en ;
+    rdfs:subClassOf geoprojection:PseudoCylindricalProjection .
+
+geoprojection:NellProjection a owl:Class ;
+    rdfs:label "Nell Projection"@en ;
+    rdfs:subClassOf geoprojection:PseudoCylindricalProjection .
+
+geoprojection:NicolosiGlobularProjection a owl:Class ;
+    rdfs:label "Nicolosi Globular Projection"@en ;
+    rdfs:subClassOf geoprojection:PseudoConicalProjection .
+
+geoprojection:NordicProjection a owl:Class ;
+    rdfs:label "Nordic Projection"@en ;
+    rdfs:subClassOf geoprojection:ObliqueProjection .
+
+geoprojection:ObliqueCylindricalEqualAreaProjection a owl:Class ;
+    rdfs:label "Oblique Cylindrical Equal Area Projection"@en ;
+    rdfs:subClassOf geoprojection:CylindricalEqualArea .
+
+geoprojection:ObliqueMercatorProjection a owl:Class ;
+    rdfs:label "Oblique Mercator Projection"@en ;
+    rdfs:subClassOf geoprojection:ObliqueProjection .
+
+geoprojection:ObliquePlateCarreeProjection a owl:Class ;
+    rdfs:label "Oblique Plate Carree Projection"@en ;
+    rdfs:subClassOf geoprojection:EquidistantProjection .
+
+geoprojection:ObliqueStereographicProjection a owl:Class ;
+    rdfs:label "Oblique Stereographic Projection"@en ;
+    rdfs:subClassOf geoprojection:ObliqueProjection .
+
+geoprojection:OctantProjection a owl:Class ;
+    rdfs:label "Octant Projection"@en ;
+    rdfs:subClassOf geoprojection:PolyhedralProjection .
+
+geoprojection:OrteliusOvalProjection a owl:Class ;
+    rdfs:label "Ortelius Oval Projection"@en ;
+    rdfs:subClassOf geoprojection:PseudoCylindricalProjection .
+
+geoprojection:OrthographicProjection a owl:Class ;
+    rdfs:label "Orthographic Projection"@en ;
+    rdfs:subClassOf geoprojection:PerspectiveProjection .
+
+geoprojection:OvalProjection a owl:Class ;
+    rdfs:label "Oval Projection"@en .
+
+geoprojection:PattersonCylindricalProjection a owl:Class ;
+    rdfs:label "Patterson Cylindrical Projection"@en ;
+    rdfs:subClassOf geoprojection:CylindricalProjection .
+
+geoprojection:PavlovProjection a owl:Class ;
+    rdfs:label "Pavlov Projection"@en ;
+    rdfs:subClassOf geoprojection:CylindricalProjection .
+
+geoprojection:PeirceQuincuncialProjection a owl:Class ;
+    rdfs:label "Peirce Quincuncial Projection"@en ;
+    rdfs:subClassOf geoprojection:ConformalProjection .
+
+geoprojection:PerspectiveConicProjection a owl:Class ;
+    rdfs:label "Perspective Conic Projection"@en ;
+    rdfs:subClassOf geoprojection:PerspectiveProjection .
+
+geoprojection:PetermannStarProjection a owl:Class ;
+    rdfs:label "Petermann Star Projection"@en ;
+    rdfs:subClassOf geoprojection:CompromiseProjection .
+
+geoprojection:PlateCarreeProjection a owl:Class ;
+    rdfs:label "Plate Carree Projection"@en ;
+    rdfs:subClassOf geoprojection:EquidistantProjection .
+
+geoprojection:PoleLineProjection a owl:Class ;
+    rdfs:label "Pole Line Projection"@en .
+
+geoprojection:Projection a owl:Class ;
+    rdfs:label "Projection"@en ;
+    rdfs:subClassOf <geosrs:Conversion> .
+
+geoprojection:PseudoOrthographicProjection a owl:Class ;
+    rdfs:label "Pseudo-Orthographic Projection"@en .
+
+geoprojection:PtolemyIIProjection a owl:Class ;
+    rdfs:label "Ptolemy II Projection"@en ;
+    rdfs:subClassOf geoprojection:PseudoConicalProjection .
+
+geoprojection:PtolemyIProjection a owl:Class ;
+    rdfs:label "Ptolemy I Projection"@en ;
+    rdfs:subClassOf geoprojection:ArchaicProjection .
+
+geoprojection:PutninsP1Projection a owl:Class ;
+    rdfs:label "Putnins P1 Projection"@en ;
+    rdfs:subClassOf geoprojection:PseudoCylindricalProjection .
+
+geoprojection:PutninsP2Projection a owl:Class ;
+    rdfs:label "Putnins P2 Projection"@en ;
+    rdfs:subClassOf geoprojection:PseudoCylindricalProjection .
+
+<http://www.opengis.net/ont/srs/projection/PutninsP3'Projection> a owl:Class ;
+    rdfs:label "PutninsP3'Projection"@en ;
+    rdfs:subClassOf geoprojection:PseudoCylindricalProjection .
+
+geoprojection:PutninsP3Projection a owl:Class ;
+    rdfs:label "Putnins P3 Projection"@en ;
+    rdfs:subClassOf geoprojection:PseudoCylindricalProjection .
+
+<http://www.opengis.net/ont/srs/projection/PutninsP4'Projection> a owl:Class ;
+    rdfs:label "PutninsP4'Projection"@en ;
+    rdfs:subClassOf geoprojection:PseudoCylindricalProjection .
+
+<http://www.opengis.net/ont/srs/projection/PutninsP5'Projection> a owl:Class ;
+    rdfs:label "PutninsP5'Projection"@en ;
+    rdfs:subClassOf geoprojection:PseudoCylindricalProjection .
+
+geoprojection:PutninsP5Projection a owl:Class ;
+    rdfs:label "Putnins P5 Projection"@en ;
+    rdfs:subClassOf geoprojection:PseudoCylindricalProjection .
+
+<http://www.opengis.net/ont/srs/projection/PutninsP6'Projection> a owl:Class ;
+    rdfs:label "PutninsP6'Projection"@en ;
+    rdfs:subClassOf geoprojection:PseudoCylindricalProjection .
+
+geoprojection:PutninsP6Projection a owl:Class ;
+    rdfs:label "Putnins P6 Projection"@en ;
+    rdfs:subClassOf geoprojection:PseudoCylindricalProjection .
+
+geoprojection:QuadrilateralizedSphericalCubeProjection a owl:Class ;
+    rdfs:label "Quadrilateralized Spherical Cube Projection"@en ;
+    rdfs:subClassOf geoprojection:PolyhedralProjection .
+
+geoprojection:RectangularPolyconicProjection a owl:Class ;
+    rdfs:label "Rectangular Polyconic Projection"@en ;
+    rdfs:subClassOf geoprojection:PolyconicProjection .
+
+geoprojection:RobinsonProjection a owl:Class ;
+    rdfs:label "Robinson Projection"@en ;
+    rdfs:subClassOf geoprojection:PseudoCylindricalProjection .
+
+geoprojection:RoussilheProjection a owl:Class ;
+    rdfs:label "Roussilhe Projection"@en ;
+    rdfs:subClassOf geoprojection:StereographicProjection .
+
+geoprojection:SchjerningIProjection a owl:Class ;
+    rdfs:label "Schjerning I Projection"@en ;
+    rdfs:subClassOf geoprojection:ConicalProjection .
+
+geoprojection:SinusoidalProjection a owl:Class ;
+    rdfs:label "Sinusoidal Projection"@en ;
+    rdfs:subClassOf geoprojection:PseudoCylindricalProjection .
+
+geoprojection:SmythEqualSurfaceProjection a owl:Class ;
+    rdfs:label "Smyth Equal Surface Projection"@en ;
+    rdfs:subClassOf geoprojection:CylindricalEqualArea .
+
+geoprojection:SpaceObliqueMercatorProjection a owl:Class ;
+    rdfs:label "Space Oblique Mercator Projection"@en .
+
+geoprojection:SpilhausOceanicProjection a owl:Class ;
+    rdfs:label "Spilhaus Oceanic Projection"@en ;
+    rdfs:subClassOf geoprojection:CompromiseProjection .
+
+geoprojection:StabiusWernerIIIProjection a owl:Class ;
+    rdfs:label "Stabius Werner III Projection"@en ;
+    rdfs:subClassOf geoprojection:PolyconicProjection .
+
+geoprojection:StabiusWernerIIProjection a owl:Class ;
+    rdfs:label "Stabius Werner II Projection"@en ;
+    rdfs:subClassOf geoprojection:BonneProjection .
+
+geoprojection:StabiusWernerIProjection a owl:Class ;
+    rdfs:label "Stabius Werner I Projection"@en ;
+    rdfs:subClassOf geoprojection:PolyconicProjection .
+
+geoprojection:Strebe1995Projection a owl:Class ;
+    rdfs:label "Strebe 1995 Projection"@en ;
+    rdfs:subClassOf geoprojection:PseudoAzimuthalProjection .
+
+geoprojection:TheTimesProjection a owl:Class ;
+    rdfs:label "The Times Projection"@en ;
+    rdfs:subClassOf geoprojection:PseudoCylindricalProjection .
+
+geoprojection:TiltedPerspectiveProjection a owl:Class ;
+    rdfs:label "Tilted Perspective Projection"@en ;
+    rdfs:subClassOf geoprojection:PerspectiveProjection .
+
+geoprojection:ToblerCylindricalIIProjection a owl:Class ;
+    rdfs:label "Tobler Cylindrical III Projection"@en ;
+    rdfs:subClassOf geoprojection:CylindricalProjection .
+
+geoprojection:ToblerCylindricalIProjection a owl:Class ;
+    rdfs:label "Tobler Cylindrical II Projection"@en ;
+    rdfs:subClassOf geoprojection:CylindricalProjection .
+
+geoprojection:ToblerG1Projection a owl:Class ;
+    rdfs:label "Tobler G1 Projection"@en ;
+    rdfs:subClassOf geoprojection:PseudoCylindricalProjection .
+
+geoprojection:ToblerHyperellipticalProjection a owl:Class ;
+    rdfs:label "Tobler Hyperelliptical Projection"@en ;
+    rdfs:subClassOf geoprojection:PseudoCylindricalProjection .
+
+geoprojection:ToblerWorldInASquareProjection a owl:Class ;
+    rdfs:label "Tobler World In A Square Projection"@en ;
+    rdfs:subClassOf geoprojection:CylindricalEqualArea .
+
+geoprojection:TransverseCylindricalEqualAreaProjection a owl:Class ;
+    rdfs:label "Transverse Cylindrical Equal Area Projection"@en ;
+    rdfs:subClassOf geoprojection:CylindricalEqualArea .
+
+geoprojection:TrystanEdwardsProjection a owl:Class ;
+    rdfs:label "Trystan Edwards Projection"@en ;
+    rdfs:subClassOf geoprojection:EqualAreaProjection .
+
+geoprojection:TwoPointEquidistantProjection a owl:Class ;
+    rdfs:label "Two Point Equidistant Projection"@en ;
+    rdfs:subClassOf geoprojection:EquidistantProjection .
+
+geoprojection:UniversalTransverseMercatorProjection a owl:Class ;
+    rdfs:label "Universal Transverse Mercator Projection"@en .
+
+geoprojection:UrmayevIIIProjection a owl:Class ;
+    rdfs:label "Urmayev III Projection"@en ;
+    rdfs:subClassOf geoprojection:CylindricalProjection .
+
+geoprojection:VanDerGrintenIIIProjection a owl:Class ;
+    rdfs:label "Van Der Grinten III Projection"@en ;
+    rdfs:subClassOf geoprojection:CompromiseProjection .
+
+geoprojection:VanDerGrintenIIProjection a owl:Class ;
+    rdfs:label "Van Der Grinten II Projection"@en ;
+    rdfs:subClassOf geoprojection:PolyconicProjection .
+
+geoprojection:VanDerGrintenIProjection a owl:Class ;
+    rdfs:label "Van Der Grinten I Projection"@en ;
+    rdfs:subClassOf geoprojection:PolyconicProjection .
+
+geoprojection:VanDerGrintenIVProjection a owl:Class ;
+    rdfs:label "Van Der Grinten IV Projection"@en ;
+    rdfs:subClassOf geoprojection:PolyconicProjection .
+
+geoprojection:VerticalPerspectiveProjection a owl:Class ;
+    rdfs:label "Vertical Perspective Projection"@en ;
+    rdfs:subClassOf geoprojection:PerspectiveProjection .
+
+geoprojection:VitkovskyIProjection a owl:Class ;
+    rdfs:label "Vitkovsky I Projection"@en ;
+    rdfs:subClassOf geoprojection:ConicalProjection .
+
+geoprojection:WagnerIIIProjection a owl:Class ;
+    rdfs:label "Wagner III Projection"@en ;
+    rdfs:subClassOf geoprojection:PseudoCylindricalProjection .
+
+geoprojection:WagnerIIProjection a owl:Class ;
+    rdfs:label "Wagner II Projection"@en ;
+    rdfs:subClassOf geoprojection:PseudoCylindricalProjection .
+
+geoprojection:WagnerIProjection a owl:Class ;
+    rdfs:label "Wagner I Projection"@en ;
+    rdfs:subClassOf geoprojection:PseudoCylindricalProjection .
+
+geoprojection:WagnerIVProjection a owl:Class ;
+    rdfs:label "Wagner IV Projection"@en ;
+    rdfs:subClassOf geoprojection:PseudoCylindricalProjection .
+
+geoprojection:WagnerIXProjection a owl:Class ;
+    rdfs:label "Wagner IX Projection"@en ;
+    rdfs:subClassOf geoprojection:PolyconicProjection .
+
+geoprojection:WagnerVIIIProjection a owl:Class ;
+    rdfs:label "Wagner VIII Projection"@en ;
+    rdfs:subClassOf geoprojection:PolyconicProjection .
+
+geoprojection:WagnerVIIProjection a owl:Class ;
+    rdfs:label "Wagner VII Projection"@en ;
+    rdfs:subClassOf geoprojection:PolyconicProjection .
+
+geoprojection:WagnerVIProjection a owl:Class ;
+    rdfs:label "Wagner VI Projection"@en ;
+    rdfs:subClassOf geoprojection:PseudoCylindricalProjection .
+
+geoprojection:WagnerVProjection a owl:Class ;
+    rdfs:label "Wagner V Projection"@en ;
+    rdfs:subClassOf geoprojection:PseudoCylindricalProjection .
+
+geoprojection:WatermanButterflyProjection a owl:Class ;
+    rdfs:label "Waterman Butterfly Projection"@en ;
+    rdfs:subClassOf geoprojection:PolyhedralProjection .
+
+geoprojection:WebMercatorProjection a owl:Class ;
+    rdfs:label "Web Mercator Projection"@en ;
+    rdfs:subClassOf geoprojection:CylindricalProjection .
+
+geoprojection:WerenskioldIProjection a owl:Class ;
+    rdfs:label "Werenskiold I Projection"@en ;
+    rdfs:subClassOf geoprojection:PseudoCylindricalProjection .
+
+geoprojection:WernerProjection a owl:Class ;
+    rdfs:label "Werner Projection"@en ;
+    rdfs:subClassOf geoprojection:PseudoConicalProjection .
+
+geoprojection:WiechelProjection a owl:Class ;
+    rdfs:label "Wiechel Projection"@en ;
+    rdfs:subClassOf geoprojection:EqualAreaProjection .
+
+geoprojection:WinkelIIProjection a owl:Class ;
+    rdfs:label "Winkel II Projection"@en ;
+    rdfs:subClassOf geoprojection:CompromiseProjection .
+
+geoprojection:WinkelIProjection a owl:Class ;
+    rdfs:label "Winkel I Projection"@en ;
+    rdfs:subClassOf geoprojection:CompromiseProjection .
+
+geoprojection:WinkelSnyderProjection a owl:Class ;
+    rdfs:label "Winkel Snyder Projection"@en ;
+    rdfs:subClassOf geoprojection:CompromiseProjection .
+
+geoprojection:ArchaicProjection a owl:Class ;
+    rdfs:label "Archaic Projection"@en .
+
+geoprojection:BonneProjection a owl:Class ;
+    rdfs:label "Bonne Projection"@en ;
+    rdfs:subClassOf geoprojection:PseudoConicalProjection .
+
+geoprojection:GallStereographicProjection a owl:Class ;
+    rdfs:label "Gall Stereographic Projection"@en ;
+    rdfs:subClassOf geoprojection:StereographicProjection .
+
+geoprojection:MercatorProjection a owl:Class ;
+    rdfs:label "Mercator Projection"@en ;
+    rdfs:subClassOf geoprojection:CylindricalProjection .
+
+geoprojection:MinimumErrorProjection a owl:Class ;
+    rdfs:label "Minimum Error Projection"@en .
+
+geoprojection:QuarticAuthalicProjection a owl:Class ;
+    rdfs:label "Quartic Authalic Projection"@en ;
+    rdfs:subClassOf geoprojection:PseudoCylindricalProjection .
+
+geoprojection:TransverseMercatorProjection a owl:Class ;
+    rdfs:label "Transverse Mercator Projection"@en ;
+    rdfs:subClassOf geoprojection:MercatorProjection .
+
+geoprojection:WinkelTripelProjection a owl:Class ;
+    rdfs:label "Winkel Tripel Projection"@en ;
+    rdfs:subClassOf geoprojection:PseudoAzimuthalProjection .
+
+geoprojection:CylindricalStereographicProjection a owl:Class ;
+    rdfs:label "Cylindrical Stereographic Projection"@en ;
+    rdfs:subClassOf geoprojection:CylindricalProjection .
+
+geoprojection:GlobularProjection a owl:Class ;
+    rdfs:label "Globular Projection"@en .
+
+geoprojection:ObliqueProjection a owl:Class ;
+    rdfs:label "Oblique Projection"@en .
+
+geoprojection:RetroazimuthalProjection a owl:Class ;
+    rdfs:label "Retroazimuthal Projection"@en .
+
+geoprojection:StereographicProjection a owl:Class ;
+    rdfs:label "Stereographic Projection"@en ;
+    rdfs:subClassOf geoprojection:ConformalProjection .
+
+geoprojection:PseudoAzimuthalProjection a owl:Class ;
+    rdfs:label "Pseudo-Azimuthal Projection"@en .
+
+geoprojection:AzimuthalProjection a owl:Class ;
+    rdfs:label "Azimuthal Projection"@en .
+
+geoprojection:PseudoConicalProjection a owl:Class ;
+    rdfs:label "Pseudo-Conical Projection"@en .
+
+geoprojection:CylindricalEqualArea a owl:Class ;
+    rdfs:label "Cylindrical Equal Area Projection"@en ;
+    rdfs:subClassOf geoprojection:EqualAreaProjection .
+
+geoprojection:EquidistantProjection a owl:Class ;
+    rdfs:label "Equidistant Projection"@en .
+
+geoprojection:ConformalProjection a owl:Class ;
+    rdfs:label "Conformal Projection"@en .
+
+geoprojection:ConicalProjection a owl:Class ;
+    rdfs:label "Conical Projection"@en .
+
+geoprojection:EqualAreaProjection a owl:Class ;
+    rdfs:label "Equal Area Projection"@en .
+
+geoprojection:PerspectiveProjection a owl:Class ;
+    rdfs:label "Perspective Projection"@en .
+
+geoprojection:CompromiseProjection a owl:Class ;
+    rdfs:label "Compromise Projection"@en .
+
+geoprojection:CylindricalProjection a owl:Class ;
+    rdfs:label "Cylindrical Projection"@en .
+
+geoprojection:PolyhedralProjection a owl:Class ;
+    rdfs:label "Polyhedral Projection"@en .
+
+geoprojection:LenticularProjection a owl:Class ;
+    rdfs:label "Lenticular Projection"@en .
+
+geoprojection:PolyconicProjection a owl:Class ;
+    rdfs:label "Polyconic Projection"@en .
+
+geoprojection:PseudoCylindricalProjection a owl:Class ;
+    rdfs:label "Pseudo-Cylindrical Projection"@en .
+

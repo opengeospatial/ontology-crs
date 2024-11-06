@@ -1,0 +1,10 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.opengis.net/ont/srs/geosrs/co> a owl:Ontology ;
+    rdfs:label "SRS Ontology: Geoco"@en ;
+    vann:preferredNamespacePrefix "geoco"^^xsd:string ;
+    vann:preferredNamespaceUri "http://www.opengis.net/ont/srs/co/"^^xsd:anyURI .
+

@@ -1,0 +1,14 @@
+@prefix geosrs: <http://www.opengis.net/ont/srs/srs/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.opengis.net/ont/srs/geosrs/srs> a owl:Ontology ;
+    rdfs:label "SRS Ontology: Geosrs"@en ;
+    vann:preferredNamespacePrefix "geosrs"^^xsd:string ;
+    vann:preferredNamespaceUri "http://www.opengis.net/ont/srs/srs/"^^xsd:anyURI .
+
+geosrs:ReferenceSystem a owl:Class ;
+    rdfs:label "Reference System"@en .
+

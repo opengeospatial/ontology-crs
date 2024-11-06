@@ -134,7 +134,7 @@ for file in os.listdir(directory):
 print(len(g))
 for item in exont:
     exont[item].serialize(destination=item+".ttl") 
-gcore.serialize(destination="core/index.ttl")
+gcore.serialize(destination="index.ttl")
        
 g=Graph() 
 g.bind("ign","http://data.ign.fr/def/ignf#")      

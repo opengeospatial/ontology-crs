@@ -17,6 +17,7 @@ gcore.add((URIRef("http://www.opengis.net/ont/srs/geosrs"),VANN.preferredNamespa
 
 
 geocrsNS="http://www.opengis.net/ont/srs/"
+coreprefix="geosrs"
 
 dirname = os.path.dirname(__file__)
 abspath = os.path.join(dirname, '../csv/class/')
@@ -46,17 +47,17 @@ for file in os.listdir(directory):
                     core=False
                     if "Core Class?" in row and row["Core Class?"]=="Core Ontology":
                         core=True
-                        gcore.add((URIRef(row["Concept"].replace(curprefix+":",curns)),RDF.type,OWL.Class))
+                        gcore.add((URIRef(row["Concept"].replace(coreprefix+":",geocrsNS)),RDF.type,OWL.Class))
                         if "Label" in row and row["Label"]!="":
-                            gcore.add((URIRef(row["Concept"].replace(curprefix+":",curns)),RDFS.label,Literal(row["Label"],lang="en")))
+                            gcore.add((URIRef(row["Concept"].replace(coreprefix+":",geocrsNS)),RDFS.label,Literal(row["Label"],lang="en")))
                         if "Definition" in row and row["Definition"]!="":
-                            gcore.add((URIRef(row["Concept"].replace(curprefix+":",curns)),SKOS.definition,Literal(row["Definition"],lang="en")))
+                            gcore.add((URIRef(row["Concept"].replace(coreprefix+":",geocrsNS)),SKOS.definition,Literal(row["Definition"],lang="en")))
                         if "SuperClass" in row and row["SuperClass"]!="":
                             if " " in row["SuperClass"]:
                                 for spl in row["SuperClass"].split(" "):
-                                    gcore.add((URIRef(row["Concept"].replace(curprefix+":",curns)),RDFS.subClassOf,URIRef(spl.replace("geosrs:",geocrsNS))))
+                                    gcore.add((URIRef(row["Concept"].replace(coreprefix+":",geocrsNS)),RDFS.subClassOf,URIRef(spl.replace("geosrs:",geocrsNS))))
                             else:
-                                gcore.add((URIRef(row["Concept"].replace(curprefix+":",curns)),RDFS.subClassOf,URIRef(row["SuperClass"].replace("geosrs:",geocrsNS))))
+                                gcore.add((URIRef(row["Concept"].replace(coreprefix+":",geocrsNS)),RDFS.subClassOf,URIRef(row["SuperClass"].replace("geosrs:",geocrsNS))))
                     else:
                         g.add((URIRef(row["Concept"].replace(curprefix+":",curns)),RDF.type,OWL.Class))
                         if "Label" in row and row["Label"]!="":

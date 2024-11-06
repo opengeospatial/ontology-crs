@@ -155,7 +155,9 @@ for file in os.listdir(directory):
                 objprop=True
             for row in reader:
                 if "Concept source" in row and row["Concept source"]!="" and "Concept target" in row and row["Concept target"]!="" and "Property" in row and row["Property"]!="":
-                    g.add((URIRef(row["Concept source"].replace("geosrs:",geocrsNS).replace("ign:","http://data.ign.fr/def/ignf#").replace("iso19112:","http://def.isotc211.org/iso19112/2019/SpatialReferencingByGeographicIdentifier#")),URIRef(row["Property"].replace("owl:","http://www.w3.org/2002/07/owl#").replace("rdfs:","http://www.w3.org/2000/01/rdf-schema#")),URIRef(geocrsNS+row["Concept target"].replace("geosrs:",geocrsNS).replace("ign:","http://data.ign.fr/def/ignf#").replace("iso19112:","http://def.isotc211.org/iso19112/2019/SpatialReferencingByGeographicIdentifier#"))))
+                    g.add((URIRef(row["Concept source"].replace("geosrs:",geocrsNS).replace("ign:","http://data.ign.fr/def/ignf#").replace("iso19112:","http://def.isotc211.org/iso19112/2019/SpatialReferencingByGeographicIdentifier#")),
+                           URIRef(row["Property"].replace("owl:","http://www.w3.org/2002/07/owl#").replace("rdfs:","http://www.w3.org/2000/01/rdf-schema#")),
+                           URIRef(row["Concept target"].replace("geosrs:",geocrsNS).replace("ign:","http://data.ign.fr/def/ignf#").replace("iso19112:","http://def.isotc211.org/iso19112/2019/SpatialReferencingByGeographicIdentifier#"))))
     else:
         continue
 

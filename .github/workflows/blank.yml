@@ -22,6 +22,7 @@ jobs:
          python3 scripts/srsbuild.py
          mkdir docs
          mv *.ttl docs/
+         mv index.html docs/
          cd docs
          rm crsdraft.ttl geosrs.ttl
          mkdir application

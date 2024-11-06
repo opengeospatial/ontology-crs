@@ -28,6 +28,9 @@ jobs:
          mkdir application
          pylode -o application/index.html -i application.ttl
          mv application.ttl application/
+         mkdir alignments
+         pylode -o alignments/index.html -i alignments.ttl
+         mv alignments.ttl alignments/
          mkdir core
          mv index.ttl core/
          cd core
@@ -48,6 +51,7 @@ jobs:
          mkdir projection
          pylode -o projection/index.html -i projection.ttl
          mv projection.ttl projection/
+         rm objprop.ttl datatypeprop.ttl 
     - name: Deploy 🚀
       uses: JamesIves/github-pages-deploy-action@v4.3.3
       with:

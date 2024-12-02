@@ -3,7 +3,7 @@ Concept,Domain,Range,Label,Definition,Comment,ISO 19111,IGN 2019,Proj4RDF,GeoSPA
 ,,,,,,,,geocrs:area_of_use,,,,
 geosrs:axis,geosrs:CoordinateSystem,geosrs:Axis,axis,The property relates a coordinate system to one of its axis,,iso19111:axis,ign:axis,geocrs:axis,,Core Ontology,"An axis used by some ellipsoidal or cartesian coordinate system. Cf. ISO 19111:2007:2007-07, table 17, association role axis.",
 ,,,,,,iso19111:axisUnitID,,,,,,
-,,,,,,iso19111:baseCRS,ign:baseCRS,,,Core Ontology,"The geodetic coordinate reference system on which a projected coordinate reference system is based. Cf. ISO 19111:2007:2007-07, table 11, association role baseCRS.",
+geosrs:baseCRS,geosrs:CRS,geosrs:CRS,base CRS,"The geodetic coordinate reference system on which a projected coordinate reference system is based. Cf. ISO 19111:2007:2007-07, table 11, association role baseCRS.",,iso19111:baseCRS,ign:baseCRS,,,Core Ontology,"The geodetic coordinate reference system on which a projected coordinate reference system is based. Cf. ISO 19111:2007:2007-07, table 11, association role baseCRS.",
 ,,,,,,iso19111:calendar,,,,,,
 ,,,,,,iso19111:cartesianCS,ign:cartesianCS,,,,"The cartesian coordinate system used by some geodetic or projected coordinate reference system. Cf. ISO 19111:2007:2007-07, tables 10 et 11, association roles coordinateSystem.",
 ,,,,,,,ign:conversion,,,,"The conversion used to define a projected coordinate reference system. Cf. ISO 19111:2007:2007-07, table 7, named association Definition.",
@@ -17,9 +17,9 @@ geosrs:datum,geosrs:CRS,geosrs:Datum,datum,The property relates a coordinate ref
 ,,,,,,iso19111:datumDefiningParameter,,,,,,
 ,,,,,,iso19111:datumEnsemble,,,,,,
 ,,,,,,iso19111:derivingConversion,,,,,,
-geosrs:axisDirection,geosrs:Axis,,axisdirection,The property relates a coordinate system axis to its axis direction,,iso19111:axisDirection,,geocrs:direction,,Core Ontology,,
+geosrs:axisDirection,geosrs:Axis,geosrs:AxisDirection,axisdirection,The property relates a coordinate system axis to its axis direction,,iso19111:axisDirection,,geocrs:direction,,Core Ontology,,
 ,,,,,,,ign:domainOfValidity,,,,"Geographic area or time interval in which the referring object is valid. Cf. ISO 19111:2007:2007-07, tables 4, 33 and 42, attribute domainOfValidity.",
-geosrs:ellipsoid,geosrs:Datum,geosrs:Ellipsoid,ellipsoid,The properties relates a datum to its ellipsoid definition,,iso19111:ellipsoid,ign:ellipsoid,,,,"The ellipsoid used by a geodetic datum. Cf. ISO 19111:2007:2007-07, table 34, association role ellipsoid.",
+geosrs:ellipsoid,geosrs:Datum,geosrs:Ellipsoid,ellipsoid,The properties relates a datum to its ellipsoid definition,,iso19111:ellipsoid,ign:ellipsoid,,,Core Ontology,"The ellipsoid used by a geodetic datum. Cf. ISO 19111:2007:2007-07, table 34, association role ellipsoid.",
 ,,,,,,iso19111:ellipsoidalCS,ign:ellipsoidalCS,,,,"The ellipsoidal coordinate system used by a geodetic coordinate reference system. Cf. ISO 19111:2007:2007-07, table 10, named association CoordinateSystem.",
 ,,,,,,iso19111:ensembleAccuracy,,,,,,
 ,,,,,,iso19111:frameReferenceEpoch,,,,,,epoch of coordinates that define a dynamic reference frame
@@ -37,14 +37,14 @@ geosrs:ellipsoid,geosrs:Datum,geosrs:Ellipsoid,ellipsoid,The properties relates 
 ,,,,,,iso19111:ordinalCS,,,,,,
 ,,,,,,,ign:parameter,,,,"The parameter associated to a given value. Cf. ISO 19111:2007:2007-07, table 55, association role parameter.",
 ,,,,,,iso19111:parameterValue,,,,,,
-,,,,,,iso19111:primeMeridian,ign:primeMeridian,,,,"The prime meridian used by a geodetic datum. Cf. ISO 19111:2007:2007-07, table 34, association role primeMeridian.",
+geosrs:primeMeridian,geosrs:Datum,geosrs:PrimeMeridian,prime meridian,"The prime meridian used by a geodetic datum. Cf. ISO 19111:2007:2007-07, table 34, association role primeMeridian.",,iso19111:primeMeridian,ign:primeMeridian,,,,"The prime meridian used by a geodetic datum. Cf. ISO 19111:2007:2007-07, table 34, association role primeMeridian.",
 ,,,,,,iso19111:polarCS,,,,,,
 ,,,,,,iso19111:semiMedianAxis,,,,,,
-,,,,,,iso19111:semiMajorAxis,ign:semiMajorAxis,,,,"Indicates the length of the semi major axis of an ellipsoid. Cf. ISO 19111:2007:2007-07, table 36, attribute length of semi-major axis.",semi-diameter of the longest axis of an ellipsoid
-,,,,,,iso19111:semiMinorAxis,ign:semiMinorAxis,,,,"Indicates the length of the semi minor axis of an ellipsoid. Cf. ISO 19111:2007:2007-07, table 37, attribute length of semi-minor axis.",semi-diameter of the shortest axis of an ellipsoid
+geosrs:semiMajorAxis,geosrs:Ellipsoid,geosrs:Axis,semi major axis,"Indicates the length of the semi major axis of an ellipsoid. Cf. ISO 19111:2007:2007-07, table 36, attribute length of semi-major axis.",,iso19111:semiMajorAxis,ign:semiMajorAxis,,,Core Ontology,"Indicates the length of the semi major axis of an ellipsoid. Cf. ISO 19111:2007:2007-07, table 36, attribute length of semi-major axis.",semi-diameter of the longest axis of an ellipsoid
+geosrs:semiMinorAxis,geosrs:Ellipsoid,geosrs:Axis,semi minor axis,"Indicates the length of the semi minor axis of an ellipsoid. Cf. ISO 19111:2007:2007-07, table 37, attribute length of semi-minor axis.",,iso19111:semiMinorAxis,ign:semiMinorAxis,,,Core Ontology,"Indicates the length of the semi minor axis of an ellipsoid. Cf. ISO 19111:2007:2007-07, table 37, attribute length of semi-minor axis.",semi-diameter of the shortest axis of an ellipsoid
 ,,,,,,iso19111:sphericalCS,,,,,,
-,,,,,,,ign:sourceCRS,geocrs:sourceCRS,,Core Ontology,"The coordinate reference system associated to the data used as input of a given operation. Cf. ISO 19111:2007:2007-07, table 42, named association Source.",
-,,,,,,,ign:targetCRS,geocrs:targetCRS,,Core Ontology,"The coordinate reference system associated to the data obtained as output of a given operation. Cf. ISO 19111:2007:2007-07, table 42, named association Target.",
+geosrs:sourceCRS,geosrs:CRS,geosrs:CRS,source CRS,"The coordinate reference system associated to the data used as input of a given operation. Cf. ISO 19111:2007:2007-07, table 42, named association Source.",,,ign:sourceCRS,geocrs:sourceCRS,,Core Ontology,"The coordinate reference system associated to the data used as input of a given operation. Cf. ISO 19111:2007:2007-07, table 42, named association Source.",
+geosrs:targetCRS,geosrs:CRS,geosrs:CRS,target CRS,"The coordinate reference system associated to the data obtained as output of a given operation. Cf. ISO 19111:2007:2007-07, table 42, named association Target.",,,ign:targetCRS,geocrs:targetCRS,,Core Ontology,"The coordinate reference system associated to the data obtained as output of a given operation. Cf. ISO 19111:2007:2007-07, table 42, named association Target.",
 ,,,,,,,ign:usesMethod,,,,"The method used by an operation on coordinates. Cf. ISO 19111:2007:2007-07, table 43, association role method.",
 ,,,,,,,ign:usesParameter,,,,"A parameter used by a method to perform an operation on coordinates. Cf. ISO 19111:2007:2007-07, table 48, association role parameter.",
 ,,,,,,,ign:usesValue,,,,"A value used by an operation on coordinates. Cf. ISO 19111:2007:2007-07, table 43, association role parameterValue.",

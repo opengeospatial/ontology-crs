@@ -8,8 +8,6 @@
 geosrs:CoordinateOperation a owl:Class ;
     rdfs:label "coordinate operation"@en .
 
-geosrs:Ellipsoid a owl:Class .
-
 geosrs:PrimeMeridian a owl:Class .
 
 geosrs:axis a owl:ObjectProperty ;
@@ -21,7 +19,14 @@ geosrs:axis a owl:ObjectProperty ;
 geosrs:axisDirection a owl:ObjectProperty ;
     rdfs:label "axisdirection"@en ;
     rdfs:domain geosrs:Axis ;
+    rdfs:range geosrs:AxisDirection ;
     skos:definition "The property relates a coordinate system axis to its axis direction"@en .
+
+geosrs:baseCRS a owl:ObjectProperty ;
+    rdfs:label "base CRS"@en ;
+    rdfs:domain geosrs:CRS ;
+    rdfs:range geosrs:CRS ;
+    skos:definition "The geodetic coordinate reference system on which a projected coordinate reference system is based. Cf. ISO 19111:2007:2007-07, table 11, association role baseCRS."@en .
 
 geosrs:coordinateSystem a owl:ObjectProperty ;
     rdfs:label "coordinate system"@en ;
@@ -35,22 +40,54 @@ geosrs:datum a owl:ObjectProperty ;
     rdfs:range geosrs:Datum ;
     skos:definition "The property relates a coordinate reference system to a datum"@en .
 
+geosrs:ellipsoid a owl:ObjectProperty ;
+    rdfs:label "ellipsoid"@en ;
+    rdfs:domain geosrs:Datum ;
+    rdfs:range geosrs:Ellipsoid ;
+    skos:definition "The properties relates a datum to its ellipsoid definition"@en .
+
 geosrs:geosrs a owl:Ontology ;
     rdfs:label "SRS Ontology"@en ;
     vann:preferredNamespacePrefix "geosrs"^^xsd:string ;
     vann:preferredNamespaceUri "http://www.opengis.net/ont/srs/"^^xsd:anyURI .
 
-geosrs:Datum a owl:Class ;
-    rdfs:label "Datum"@en .
+geosrs:semiMajorAxis a owl:ObjectProperty ;
+    rdfs:label "semi major axis"@en ;
+    rdfs:domain geosrs:Ellipsoid ;
+    rdfs:range geosrs:Axis ;
+    skos:definition "Indicates the length of the semi major axis of an ellipsoid. Cf. ISO 19111:2007:2007-07, table 36, attribute length of semi-major axis."@en .
+
+geosrs:semiMinorAxis a owl:ObjectProperty ;
+    rdfs:label "semi minor axis"@en ;
+    rdfs:domain geosrs:Ellipsoid ;
+    rdfs:range geosrs:Axis ;
+    skos:definition "Indicates the length of the semi minor axis of an ellipsoid. Cf. ISO 19111:2007:2007-07, table 37, attribute length of semi-minor axis."@en .
+
+geosrs:sourceCRS a owl:ObjectProperty ;
+    rdfs:label "source CRS"@en ;
+    rdfs:domain geosrs:CRS ;
+    rdfs:range geosrs:CRS ;
+    skos:definition "The coordinate reference system associated to the data used as input of a given operation. Cf. ISO 19111:2007:2007-07, table 42, named association Source."@en .
+
+geosrs:targetCRS a owl:ObjectProperty ;
+    rdfs:label "target CRS"@en ;
+    rdfs:domain geosrs:CRS ;
+    rdfs:range geosrs:CRS ;
+    skos:definition "The coordinate reference system associated to the data obtained as output of a given operation. Cf. ISO 19111:2007:2007-07, table 42, named association Target."@en .
 
 geosrs:SpatialReferenceSystem a owl:Class ;
     rdfs:label "Spatial Reference System"@en ;
     rdfs:subClassOf geosrs:ReferenceSystem .
 
+geosrs:CoordinateSystem a owl:Class ;
+    rdfs:label "coordinate system"@en .
+
+geosrs:Datum a owl:Class ;
+    rdfs:label "Datum"@en .
+
+geosrs:Ellipsoid a owl:Class .
+
 geosrs:CRS a owl:Class ;
     rdfs:label "Coordinate Reference System"@en ;
     rdfs:subClassOf geosrs:SpatialReferenceSystem .
-
-geosrs:CoordinateSystem a owl:Class ;
-    rdfs:label "coordinate system"@en .
 

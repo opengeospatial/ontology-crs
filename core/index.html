@@ -266,8 +266,19 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             <tr>
                 <th>In domain of</th>
                 <td>
-                    <a href="#datum">datum</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#sourceCRS">source CRS</a><sup class="sup-op" title="object property">op</sup><br/>
                     <a href="#coordinatesystem">coordinate system</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#datum">datum</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#targetCRS">target CRS</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#baseCRS">base CRS</a><sup class="sup-op" title="object property">op</sup><br/>
+                </td>
+            </tr>
+            <tr>
+                <th>In range of</th>
+                <td>
+                    <a href="#targetCRS">target CRS</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#baseCRS">base CRS</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#sourceCRS">source CRS</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
         </table>
@@ -319,6 +330,12 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
                 <td><code>http://www.opengis.net/ont/srs/Datum</code></td>
             </tr>
             <tr>
+                <th>In domain of</th>
+                <td>
+                    <a href="#ellipsoid">ellipsoid</a><sup class="sup-op" title="object property">op</sup><br/>
+                </td>
+            </tr>
+            <tr>
                 <th>In range of</th>
                 <td>
                     <a href="#datum">datum</a><sup class="sup-op" title="object property">op</sup><br/>
@@ -335,6 +352,19 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             <tr>
                 <th>URI</th>
                 <td><code>http://www.opengis.net/ont/srs/Ellipsoid</code></td>
+            </tr>
+            <tr>
+                <th>In domain of</th>
+                <td>
+                    <a href="#semimajoraxis">semi major axis</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#semiminoraxis">semi minor axis</a><sup class="sup-op" title="object property">op</sup><br/>
+                </td>
+            </tr>
+            <tr>
+                <th>In range of</th>
+                <td>
+                    <a href="#ellipsoid">ellipsoid</a><sup class="sup-op" title="object property">op</sup><br/>
+                </td>
             </tr>
         </table>
     </div>
@@ -380,8 +410,14 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
     <ul class="hlist">
         <li><a href="#axis">axis</a></li>
         <li><a href="#axisdirection">axisdirection</a></li>
+        <li><a href="#baseCRS">base CRS</a></li>
         <li><a href="#coordinatesystem">coordinate system</a></li>
         <li><a href="#datum">datum</a></li>
+        <li><a href="#ellipsoid">ellipsoid</a></li>
+        <li><a href="#semimajoraxis">semi major axis</a></li>
+        <li><a href="#semiminoraxis">semi minor axis</a></li>
+        <li><a href="#sourceCRS">source CRS</a></li>
+        <li><a href="#targetCRS">target CRS</a></li>
     </ul>
     <div class="entity property" id="axis">
         <h3>axis<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
@@ -431,6 +467,41 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
                 <th>Domain(s)</th>
                 <td>
                     <a href="http://www.opengis.net/ont/srs/Axis">geosrs:Axis</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+            <tr>
+                <th>Range(s)</th>
+                <td>
+                    <a href="http://www.opengis.net/ont/srs/AxisDirection">geosrs:AxisDirection</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity property" id="baseCRS">
+        <h3>base CRS<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#baseCRS" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>http://www.opengis.net/ont/srs/baseCRS</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>The geodetic coordinate reference system on which a projected coordinate reference system is based. Cf. ISO 19111:2007:2007-07, table 11, association role baseCRS.</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Domain(s)</th>
+                <td>
+                    <a href="#CoordinateReferenceSystem">Coordinate Reference System</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+            <tr>
+                <th>Range(s)</th>
+                <td>
+                    <a href="http://www.opengis.net/ont/srs/CRS">geosrs:CRS</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
         </table>
@@ -489,6 +560,151 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
                 <th>Range(s)</th>
                 <td>
                     <a href="http://www.opengis.net/ont/srs/Datum">geosrs:Datum</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity property" id="ellipsoid">
+        <h3>ellipsoid<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#ellipsoid" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>http://www.opengis.net/ont/srs/ellipsoid</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>The properties relates a datum to its ellipsoid definition</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Domain(s)</th>
+                <td>
+                    <a href="#Datum">Datum</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+            <tr>
+                <th>Range(s)</th>
+                <td>
+                    <a href="http://www.opengis.net/ont/srs/Ellipsoid">geosrs:Ellipsoid</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity property" id="semimajoraxis">
+        <h3>semi major axis<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#semimajoraxis" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>http://www.opengis.net/ont/srs/semiMajorAxis</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>Indicates the length of the semi major axis of an ellipsoid. Cf. ISO 19111:2007:2007-07, table 36, attribute length of semi-major axis.</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Domain(s)</th>
+                <td>
+                    <a href="#Ellipsoid">Ellipsoid</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+            <tr>
+                <th>Range(s)</th>
+                <td>
+                    <a href="http://www.opengis.net/ont/srs/Axis">geosrs:Axis</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity property" id="semiminoraxis">
+        <h3>semi minor axis<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#semiminoraxis" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>http://www.opengis.net/ont/srs/semiMinorAxis</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>Indicates the length of the semi minor axis of an ellipsoid. Cf. ISO 19111:2007:2007-07, table 37, attribute length of semi-minor axis.</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Domain(s)</th>
+                <td>
+                    <a href="#Ellipsoid">Ellipsoid</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+            <tr>
+                <th>Range(s)</th>
+                <td>
+                    <a href="http://www.opengis.net/ont/srs/Axis">geosrs:Axis</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity property" id="sourceCRS">
+        <h3>source CRS<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#sourceCRS" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>http://www.opengis.net/ont/srs/sourceCRS</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>The coordinate reference system associated to the data used as input of a given operation. Cf. ISO 19111:2007:2007-07, table 42, named association Source.</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Domain(s)</th>
+                <td>
+                    <a href="#CoordinateReferenceSystem">Coordinate Reference System</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+            <tr>
+                <th>Range(s)</th>
+                <td>
+                    <a href="http://www.opengis.net/ont/srs/CRS">geosrs:CRS</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity property" id="targetCRS">
+        <h3>target CRS<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#targetCRS" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>http://www.opengis.net/ont/srs/targetCRS</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>The coordinate reference system associated to the data obtained as output of a given operation. Cf. ISO 19111:2007:2007-07, table 42, named association Target.</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Domain(s)</th>
+                <td>
+                    <a href="#CoordinateReferenceSystem">Coordinate Reference System</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+            <tr>
+                <th>Range(s)</th>
+                <td>
+                    <a href="http://www.opengis.net/ont/srs/CRS">geosrs:CRS</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
         </table>

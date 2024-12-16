@@ -20,7 +20,7 @@ geosrs:CRS,geosrs:SpatialReferenceSystem,Coordinate Reference System,,iso19111:C
 ,,,,,,geocrs:SelenographicCRS,,,,,
 geosrs:ReferenceSystem,,Reference System,,,,geocrs:ReferenceSystem,,,,,
 ,,,,iso19111:SingleCRS,ign:SingleCRS,geocrs:SingleCRS,,Core Ontology,"Coordinate reference system consisting of one coordinate system and one datum. Cf. ISO 19111:2007:2007-07, table 5.",,
-geosrs:SpatialReferenceSystem,geosrs:ReferenceSystem,Spatial Reference System,,,,geocrs:SpatialReferenceSystem,,Core Ontology,,,
+geosrs:SpatialReferenceSystem,geosrs:ReferenceSystem,Spatial Reference System,,,,geocrs:SpatialReferenceSystem,,Core Ontology,,A reference system allowing the description of a position.,
 ,,,,,,geocrs:SpatioParametricCompoundCRS,,,,,
 ,,,,,,geocrs:SpatioParametricTemporalCompoundCRS,,,,,
 ,,,,,,geocrs:SpatioTemporalCompoundCRS,,,,,

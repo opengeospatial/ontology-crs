@@ -241,16 +241,31 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
     <ul class="hlist">
       <li><a href="geosrs :EngineeringCRS">geosrs :EngineeringCRS</a></li>
       <li><a href="#CoordinateReferenceSystem">Coordinate Reference System</a></li>
+      <li><a href="#cartesiancoordinatesystem">cartesian coordinate system</a></li>
       <li><a href="#coordinateoperation">coordinate operation</a></li>
       <li><a href="#CoordinateSystem">coordinate system</a></li>
+      <li><a href="#coordinatesystemaxis">coordinate system axis</a></li>
       <li><a href="#Datum">Datum</a></li>
       <li><a href="#Ellipsoid">Ellipsoid</a></li>
+      <li><a href="#ellipsoidalcoordinatesystem">ellipsoidal coordinate system</a></li>
       <li><a href="#GeodeticCoordinateReferenceSystem">Geodetic Coordinate Reference System</a></li>
       <li><a href="#GeographicCoordinateReferenceSystem">Geographic Coordinate Reference System</a></li>
+      <li><a href="#linearcoordinatesystem">linear coordinate system</a></li>
+      <li><a href="#operationmethod">operation method</a></li>
+      <li><a href="#operationparameter">operation parameter</a></li>
+      <li><a href="#operationparametervalue">operation parameter value</a></li>
+      <li><a href="#ordinalcoordinatesystem">ordinal coordinate system</a></li>
+      <li><a href="#parametriccoordinatesystem">parametric coordinate system</a></li>
+      <li><a href="#polarcoordinatesystem">polar coordinate system</a></li>
       <li><a href="#Primemeridian">Prime meridian</a></li>
       <li><a href="#ProjectedCoordinateReferenceSystem">Projected Coordinate Reference System</a></li>
       <li><a href="#SingleCoordinateReferenceSystem">Single Coordinate Reference System</a></li>
+      <li><a href="#singleoperation">single operation</a></li>
       <li><a href="#SpatialReferenceSystem">Spatial Reference System</a></li>
+      <li><a href="#sphericalcoordinatesystem">spherical coordinate system</a></li>
+      <li><a href="#transformation">transformation</a></li>
+      <li><a href="#verticalcoordinatesystem">vertical coordinate system</a></li>
+      <li><a href="#conversion">conversion</a></li>
     </ul>
     <div class="entity class" id="EngineeringCoordinateReferenceSystem">
         <h3>
@@ -289,19 +304,37 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             <tr>
                 <th>In domain of</th>
                 <td>
+                    <a href="#datum">datum</a><sup class="sup-op" title="object property">op</sup><br/>
                     <a href="#coordinatesystem">coordinate system</a><sup class="sup-op" title="object property">op</sup><br/>
                     <a href="#sourceCRS">source CRS</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="#targetCRS">target CRS</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="#datum">datum</a><sup class="sup-op" title="object property">op</sup><br/>
                     <a href="#baseCRS">base CRS</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#targetCRS">target CRS</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>In range of</th>
                 <td>
                     <a href="#sourceCRS">source CRS</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="#targetCRS">target CRS</a><sup class="sup-op" title="object property">op</sup><br/>
                     <a href="#baseCRS">base CRS</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#targetCRS">target CRS</a><sup class="sup-op" title="object property">op</sup><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="cartesiancoordinatesystem">
+        <h3>
+          cartesian coordinate system<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#cartesiancoordinatesystem" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>http://www.opengis.net/ont/srs/CartesianCS</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>Coordinate system which gives the position of points relative to n mutually perpendicular axes. Cf. ISO 19111:2007:2007-07, tables 15 and 18.</p>
                 </td>
             </tr>
         </table>
@@ -315,6 +348,12 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             <tr>
                 <th>URI</th>
                 <td><code>http://www.opengis.net/ont/srs/CoordinateOperation</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>Mathematical operation on coordinates, based on one-to-one relationship, that changes coordinates from one coordinate reference system to another. Cf. ISO 19111:2007:2007-07, part 11.1, table 42 and annex B.4.</p>
+                </td>
             </tr>
         </table>
     </div>
@@ -344,6 +383,24 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
                 <th>In range of</th>
                 <td>
                     <a href="#coordinatesystem">coordinate system</a><sup class="sup-op" title="object property">op</sup><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="coordinatesystemaxis">
+        <h3>
+          coordinate system axis<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#coordinatesystemaxis" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>http://www.opengis.net/ont/srs/CoordinateSystemAxis</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>Axis relative to which a coordinate of a point is specified in a coordinate system. See ISO 19111:2007:2007-07, part 9.3, table 27 and annex B.2.2.</p>
                 </td>
             </tr>
         </table>
@@ -397,6 +454,24 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             </tr>
         </table>
     </div>
+    <div class="entity class" id="ellipsoidalcoordinatesystem">
+        <h3>
+          ellipsoidal coordinate system<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#ellipsoidalcoordinatesystem" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>http://www.opengis.net/ont/srs/EllipsoidalCS</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>Coordinate system which gives the position is specified by geodetic latitude, geodetic longitude and (in the three-dimensional case) ellipsoidal height. Cf. ISO 19111:2007:2007-07, tables 15 and 20.</p>
+                </td>
+            </tr>
+        </table>
+    </div>
     <div class="entity class" id="GeodeticCoordinateReferenceSystem">
         <h3>
           Geodetic Coordinate Reference System<sup title="class" class="sup-c">c</sup>
@@ -424,6 +499,108 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             <tr>
                 <th>URI</th>
                 <td><code>http://www.opengis.net/ont/srs/GeographicCRS</code></td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="linearcoordinatesystem">
+        <h3>
+          linear coordinate system<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#linearcoordinatesystem" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>http://www.opengis.net/ont/srs/LinearCS</code></td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="operationmethod">
+        <h3>
+          operation method<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#operationmethod" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>http://www.opengis.net/ont/srs/OperationMethod</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>Method used to perform an operation on coordinates. See ISO 19111:2007:2007-07, table 48 and annex B.4.5.</p>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="operationparameter">
+        <h3>
+          operation parameter<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#operationparameter" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>http://www.opengis.net/ont/srs/OperationParameter</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>Parameter used by a method to perform an operation on coordinates. See ISO 19111:2007:2007-07, table 52 and annex B.4.5.</p>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="operationparametervalue">
+        <h3>
+          operation parameter value<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#operationparametervalue" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>http://www.opengis.net/ont/srs/OperationParameterValue</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>Value of a parameter used by a method to perform an operation on coordinates. See ISO 19111:2007:2007-07, table 55.</p>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="ordinalcoordinatesystem">
+        <h3>
+          ordinal coordinate system<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#ordinalcoordinatesystem" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>http://www.opengis.net/ont/srs/OrdinalCS</code></td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="parametriccoordinatesystem">
+        <h3>
+          parametric coordinate system<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#parametriccoordinatesystem" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>http://www.opengis.net/ont/srs/ParametricCS</code></td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="polarcoordinatesystem">
+        <h3>
+          polar coordinate system<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#polarcoordinatesystem" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>http://www.opengis.net/ont/srs/PolarCS</code></td>
             </tr>
         </table>
     </div>
@@ -475,6 +652,24 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             </tr>
         </table>
     </div>
+    <div class="entity class" id="singleoperation">
+        <h3>
+          single operation<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#singleoperation" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>http://www.opengis.net/ont/srs/SingleOperation</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>A non concatenated coordinate operation. Cf. ISO 19111:2007:2007-07, table 43.</p>
+                </td>
+            </tr>
+        </table>
+    </div>
     <div class="entity class" id="SpatialReferenceSystem">
         <h3>
           Spatial Reference System<sup title="class" class="sup-c">c</sup>
@@ -501,6 +696,72 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
                 <th>Sub-classes</th>
                 <td>
                     <a href="#CoordinateReferenceSystem">Coordinate Reference System</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="sphericalcoordinatesystem">
+        <h3>
+          spherical coordinate system<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#sphericalcoordinatesystem" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>http://www.opengis.net/ont/srs/SphericalCS</code></td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="transformation">
+        <h3>
+          transformation<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#transformation" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>http://www.opengis.net/ont/srs/Transformation</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>Coordinate operation in which the two coordinate reference systems are based on different datums. Cf. ISO 19111:2007:2007-07, table 44.</p>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="verticalcoordinatesystem">
+        <h3>
+          vertical coordinate system<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#verticalcoordinatesystem" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>http://www.opengis.net/ont/srs/VerticalCS</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>One-dimensional coordinate system used for gravity related height or depth measurements. Cf. ISO 19111:2007:2007-07, tables 15 and 25.</p>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="conversion">
+        <h3>
+          conversion<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#conversion" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>http://www.opengis.net/ont/srs/conversion</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>Coordinate operation in which both coordinate reference systems are based on the same datum. Cf. ISO 19111:2007:2007-07, table 45 and annex B.4.2.</p>
                 </td>
             </tr>
         </table>

@@ -1,7 +1,7 @@
 Concept,SuperClass,Label,Definition,ISO 19111,IGN 2019,Proj4RDF,GeoSPARQL,Core Class?,Definition 1 IGN,Definition 2 ISO
 ,,,,,,geocrs:1DCS,,,,
 ,,,,,,geocrs:3DCS,,,,
-geosrs:CoordinateSystem,,coordinate system,,iso19111:CoordinateSystem,ign:CoordinateSystem,geocrs:CoordinateSystem,,Core Ontology,"Set of axes that spans a given coordinate space and of mathematical rules for specifying how coordinates are to be assigned to points. Cf. ISO 19111:2007:2007-07, part 9.2, table 17 and annex B.2.",set of mathematical rules for specifying how coordinates are to be assigned to points
+geosrs:CoordinateSystem,,coordinate system,"Set of axes that spans a given coordinate space and of mathematical rules for specifying how coordinates are to be assigned to points. Cf. ISO 19111:2007:2007-07, part 9.2, table 17 and annex B.2.",iso19111:CoordinateSystem,ign:CoordinateSystem,geocrs:CoordinateSystem,,Core Ontology,"Set of axes that spans a given coordinate space and of mathematical rules for specifying how coordinates are to be assigned to points. Cf. ISO 19111:2007:2007-07, part 9.2, table 17 and annex B.2.",set of mathematical rules for specifying how coordinates are to be assigned to points
 ,,,,iso19111:AffineCS,,geocrs:AffineCoordinateSystem,,,,coordinate system in Euclidean space with straight axes that are not necessarily mutually perpendicular
 ,,,,iso19111:AxisDirection,,,,,,
 ,,,,iso19111:AxisDirectionCollection,,,,,,

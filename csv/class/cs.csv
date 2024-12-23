@@ -6,14 +6,14 @@ geosrs:CoordinateSystem,,coordinate system,"Set of axes that spans a given coord
 ,,,,iso19111:AxisDirection,,,,,,
 ,,,,iso19111:AxisDirectionCollection,,,,,,
 ,,,,,,geocrs:BarycentricCoordinateSystem,,,,
-,,,,iso19111:CartesianCS,ign:CartesianCS,geocrs:CartesianCS,,Core Ontology,"Coordinate system which gives the position of points relative to n mutually perpendicular axes. Cf. ISO 19111:2007:2007-07, tables 15 and 18.",coordinate system in Euclidean space which gives the position of points relative to n mutually perpendicular straight axes all having the same unit of measure
+geosrs:CartesianCS,,cartesian coordinate system,"Coordinate system which gives the position of points relative to n mutually perpendicular axes. Cf. ISO 19111:2007:2007-07, tables 15 and 18.",iso19111:CartesianCS,ign:CartesianCS,geocrs:CartesianCS,,Core Ontology,"Coordinate system which gives the position of points relative to n mutually perpendicular axes. Cf. ISO 19111:2007:2007-07, tables 15 and 18.",coordinate system in Euclidean space which gives the position of points relative to n mutually perpendicular straight axes all having the same unit of measure
 ,,,,,,geocrs:CelestialCS,,,,
 ,,,,,,geocrs:ConicalCoordinateSystem,,,,
 ,,,,,,geocrs:CurvilinearCoordinateSystem,,,,
 ,,,,iso19111:CylindricalCS,,geocrs:CylindricalCoordinateSystem,,,,three-dimensional coordinate system in Euclidean space in which position is specified by two linear coordinates and one angular coordinate
 ,,,,,,geocrs:DerivedProjectedCS,,,,
 ,,,,,,geocrs:EclipticCS,,,,
-,,,,iso19111:EllipsoidalCS,ign:EllipsoidalCS,geocrs:EllipsoidalCS,,Core Ontology,"Coordinate system which gives the position is specified by geodetic latitude, geodetic longitude and (in the three-dimensional case) ellipsoidal height. Cf. ISO 19111:2007:2007-07, tables 15 and 20.",
+geosrs:EllipsoidalCS,,ellipsoidal coordinate system,"Coordinate system which gives the position is specified by geodetic latitude, geodetic longitude and (in the three-dimensional case) ellipsoidal height. Cf. ISO 19111:2007:2007-07, tables 15 and 20.",iso19111:EllipsoidalCS,ign:EllipsoidalCS,geocrs:EllipsoidalCS,,Core Ontology,"Coordinate system which gives the position is specified by geodetic latitude, geodetic longitude and (in the three-dimensional case) ellipsoidal height. Cf. ISO 19111:2007:2007-07, tables 15 and 20.",
 ,,,,,,geocrs:EngineeringCS,,,,
 ,,,,,,geocrs:EquatorialCS,,,,
 ,,,,,,geocrs:GalacticCS,,,,
@@ -23,19 +23,19 @@ geosrs:CoordinateSystem,,coordinate system,"Set of axes that spans a given coord
 ,,,,,,geocrs:HexagonalCS,,,,
 ,,,,,,geocrs:HomogeneousCoordinateSystem,,,,
 ,,,,,,geocrs:HorizontalCS,,,,
-,,,,iso19111:LinearCS,,geocrs:LinearCS,,Core Ontology,,one-dimensional coordinate system in which a linear feature forms the axis
+geosrs:LinearCS,,linear coordinate system,,iso19111:LinearCS,,geocrs:LinearCS,,Core Ontology,,one-dimensional coordinate system in which a linear feature forms the axis
 ,,,,,,geocrs:LocalCoordinateSystem,,,,
 ,,,,,,geocrs:ObliqueCS,,,,
-,,,,iso19111:OrdinalCS,,geocrs:OrdinalCS,,Core Ontology,,
+geosrs:OrdinalCS,,ordinal coordinate system,,iso19111:OrdinalCS,,geocrs:OrdinalCS,,Core Ontology,,
 ,,,,,,geocrs:OrthogonalCoordinateSystem,,,,
-,,,,iso19111:ParametricCS,,geocrs:ParametricCoordinateSystem,,Core Ontology,,one-dimensional coordinate system where the axis units are parameter values which are not inherently spatial
+geosrs:ParametricCS,,parametric coordinate system,,iso19111:ParametricCS,,geocrs:ParametricCoordinateSystem,,Core Ontology,,one-dimensional coordinate system where the axis units are parameter values which are not inherently spatial
 ,,,,,,geocrs:PerifocalCS,,,,
 ,,,,,,geocrs:PlanarCS,,,,
-,,,,iso19111:PolarCS,,geocrs:PolarCoordinateSystem,,Core Ontology,,
+geosrs:PolarCS,,polar coordinate system,,iso19111:PolarCS,,geocrs:PolarCoordinateSystem,,Core Ontology,,
 ,,,,,,geocrs:ProjectedCS,,,,
 ,,,,,,geocrs:ReferenceSystem,,,,
 ,,,,,,geocrs:SkewCoordinateSystem,,,,
-,,,,iso19111:SphericalCS,,geocrs:SphericalCoordinateSystem,,Core Ontology,,three-dimensional coordinate system in Euclidean space in which position is specified by one distance coordinate and two angular coordinates
+geosrs:SphericalCS,,spherical coordinate system,,iso19111:SphericalCS,,geocrs:SphericalCoordinateSystem,,Core Ontology,,three-dimensional coordinate system in Euclidean space in which position is specified by one distance coordinate and two angular coordinates
 ,,,,,,geocrs:StereographicCS,,,,
 ,,,,iso19111:DateTimeTemporalCS,,geocrs:DateTimeTemporalCoordinateSystem,,,,
 ,,,,iso19111:TemporalCountCS,,geocrs:TemporalCountCoordinateSystem,,,,
@@ -44,7 +44,7 @@ geosrs:CoordinateSystem,,coordinate system,"Set of axes that spans a given coord
 ,,,,,,geocrs:TemporalReferenceSystem,,,,
 ,,,,,,geocrs:SuperGalacticCS,,,,
 ,,,,,,geocrs:UnknownCS,,,,
-,,,,iso19111:VerticalCS,ign:VerticalCS,geocrs:VerticalCoordinateSystem,,Core Ontology,"One-dimensional coordinate system used for gravity related height or depth measurements. Cf. ISO 19111:2007:2007-07, tables 15 and 25.",one-dimensional coordinate system used for gravity-related height or depth measurements
+geosrs:VerticalCS,,vertical coordinate system,"One-dimensional coordinate system used for gravity related height or depth measurements. Cf. ISO 19111:2007:2007-07, tables 15 and 25.",iso19111:VerticalCS,ign:VerticalCS,geocrs:VerticalCoordinateSystem,,Core Ontology,"One-dimensional coordinate system used for gravity related height or depth measurements. Cf. ISO 19111:2007:2007-07, tables 15 and 25.",one-dimensional coordinate system used for gravity-related height or depth measurements
 ,,,,iso19111:uAffineCS,,,,,,
 ,,,,iso19111:uCartesianCS,,,,,,
 ,,,,iso19111:uCylindricalCS,,,,,,
@@ -53,4 +53,4 @@ geosrs:CoordinateSystem,,coordinate system,"Set of axes that spans a given coord
 ,,,,iso19111:uSphericalCS,,,,,,
 ,,,,iso19111:uLinearCS,,,,,,
 ,,,,iso19111:uEllipsoidalCS,,,,,,
-,,,,iso19111:CoordinateSystemAxis,ign:CoordinateSystemAxis,geocrs:CoordinateSystemAxis,,Core Ontology,"Axis relative to which a coordinate of a point is specified in a coordinate system. See ISO 19111:2007:2007-07, part 9.3, table 27 and annex B.2.2.",
+geosrs:CoordinateSystemAxis,,coordinate system axis,"Axis relative to which a coordinate of a point is specified in a coordinate system. See ISO 19111:2007:2007-07, part 9.3, table 27 and annex B.2.2.",iso19111:CoordinateSystemAxis,ign:CoordinateSystemAxis,geocrs:CoordinateSystemAxis,,Core Ontology,"Axis relative to which a coordinate of a point is specified in a coordinate system. See ISO 19111:2007:2007-07, part 9.3, table 27 and annex B.2.2.",

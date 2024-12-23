@@ -78,7 +78,8 @@ geosrs:targetCRS a owl:ObjectProperty ;
 
 geosrs:SpatialReferenceSystem a owl:Class ;
     rdfs:label "Spatial Reference System"@en ;
-    rdfs:subClassOf geosrs:ReferenceSystem .
+    rdfs:subClassOf geosrs:ReferenceSystem ;
+    skos:definition "A reference system allowing the description of a position."@en .
 
 geosrs:CoordinateSystem a owl:Class ;
     rdfs:label "coordinate system"@en ;
@@ -92,5 +93,6 @@ geosrs:Ellipsoid a owl:Class ;
 
 geosrs:CRS a owl:Class ;
     rdfs:label "Coordinate Reference System"@en ;
-    rdfs:subClassOf geosrs:SpatialReferenceSystem .
+    rdfs:subClassOf geosrs:SpatialReferenceSystem ;
+    skos:definition "Depending on the spatial dimension of coordinates (1D, 2D, 3D), this piece of metadata is used for specifying the elements of definition associated to a given set of coordinates: its datum, its ellipsoid, its prime meridian, the type of coordinates (geocentric, geographic, projected,...), the coordinates units of measure, when appropriate the cartographic projection used, the vertical coordinate reference system."@en .
 

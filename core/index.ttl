@@ -80,7 +80,8 @@ geosrs:SpatialReferenceSystem a owl:Class ;
     rdfs:subClassOf geosrs:ReferenceSystem .
 
 geosrs:CoordinateSystem a owl:Class ;
-    rdfs:label "coordinate system"@en .
+    rdfs:label "coordinate system"@en ;
+    skos:definition "Set of axes that spans a given coordinate space and of mathematical rules for specifying how coordinates are to be assigned to points. Cf. ISO 19111:2007:2007-07, part 9.2, table 17 and annex B.2."@en .
 
 geosrs:Datum a owl:Class ;
     rdfs:label "Datum"@en .

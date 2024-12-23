@@ -5,11 +5,29 @@
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+<geosrs :EngineeringCRS> a owl:Class ;
+    rdfs:label "Engineering Coordinate Reference System"@en .
+
 geosrs:CoordinateOperation a owl:Class ;
     rdfs:label "coordinate operation"@en .
 
+geosrs:GeodeticCRS a owl:Class ;
+    rdfs:label "Geodetic Coordinate Reference System"@en ;
+    skos:definition "Coordinate reference system associated with a geodetic datum. Cf. ISO 19111:2007:2007-07, part 8.2.2.a, table 10 and annex B.1.2.1.a."@en .
+
+geosrs:GeographicCRS a owl:Class ;
+    rdfs:label "Geographic Coordinate Reference System"@en .
+
 geosrs:PrimeMeridian a owl:Class ;
     rdfs:label "Prime meridian"@en .
+
+geosrs:ProjectedCRS a owl:Class ;
+    rdfs:label "Projected Coordinate Reference System"@en ;
+    skos:definition "Coordinate reference system derived from a two-dimensional geodetic coordinate reference system by applying a map projection. Cf. ISO 19111:2007:2007-07, part 8.2.3.b, table 11 and annex B.1.2.3."@en .
+
+geosrs:SingleCRS a owl:Class ;
+    rdfs:label "Single Coordinate Reference System"@en ;
+    skos:definition "Coordinate reference system consisting of one coordinate system and one datum. Cf. ISO 19111:2007:2007-07, table 5."@en .
 
 geosrs:axis a owl:ObjectProperty ;
     rdfs:label "axis"@en ;

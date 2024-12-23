@@ -239,14 +239,31 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
   <section id="classes">
     <h2>Classes <span style="float:right; font-size:smaller;"><a href="">&uparrow;</a></span></h2>
     <ul class="hlist">
+      <li><a href="geosrs :EngineeringCRS">geosrs :EngineeringCRS</a></li>
       <li><a href="#CoordinateReferenceSystem">Coordinate Reference System</a></li>
       <li><a href="#coordinateoperation">coordinate operation</a></li>
       <li><a href="#CoordinateSystem">coordinate system</a></li>
       <li><a href="#Datum">Datum</a></li>
       <li><a href="#Ellipsoid">Ellipsoid</a></li>
+      <li><a href="#GeodeticCoordinateReferenceSystem">Geodetic Coordinate Reference System</a></li>
+      <li><a href="#GeographicCoordinateReferenceSystem">Geographic Coordinate Reference System</a></li>
       <li><a href="#Primemeridian">Prime meridian</a></li>
+      <li><a href="#ProjectedCoordinateReferenceSystem">Projected Coordinate Reference System</a></li>
+      <li><a href="#SingleCoordinateReferenceSystem">Single Coordinate Reference System</a></li>
       <li><a href="#SpatialReferenceSystem">Spatial Reference System</a></li>
     </ul>
+    <div class="entity class" id="EngineeringCoordinateReferenceSystem">
+        <h3>
+          Engineering Coordinate Reference System<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#EngineeringCoordinateReferenceSystem" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>geosrs :EngineeringCRS</code></td>
+            </tr>
+        </table>
+    </div>
     <div class="entity class" id="CoordinateReferenceSystem">
         <h3>
           Coordinate Reference System<sup title="class" class="sup-c">c</sup>
@@ -273,18 +290,18 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
                 <th>In domain of</th>
                 <td>
                     <a href="#coordinatesystem">coordinate system</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="#targetCRS">target CRS</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="#baseCRS">base CRS</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="#datum">datum</a><sup class="sup-op" title="object property">op</sup><br/>
                     <a href="#sourceCRS">source CRS</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#targetCRS">target CRS</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#datum">datum</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#baseCRS">base CRS</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>In range of</th>
                 <td>
-                    <a href="#baseCRS">base CRS</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="#targetCRS">target CRS</a><sup class="sup-op" title="object property">op</sup><br/>
                     <a href="#sourceCRS">source CRS</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#targetCRS">target CRS</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#baseCRS">base CRS</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
         </table>
@@ -380,6 +397,36 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             </tr>
         </table>
     </div>
+    <div class="entity class" id="GeodeticCoordinateReferenceSystem">
+        <h3>
+          Geodetic Coordinate Reference System<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#GeodeticCoordinateReferenceSystem" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>http://www.opengis.net/ont/srs/GeodeticCRS</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>Coordinate reference system associated with a geodetic datum. Cf. ISO 19111:2007:2007-07, part 8.2.2.a, table 10 and annex B.1.2.1.a.</p>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="GeographicCoordinateReferenceSystem">
+        <h3>
+          Geographic Coordinate Reference System<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#GeographicCoordinateReferenceSystem" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>http://www.opengis.net/ont/srs/GeographicCRS</code></td>
+            </tr>
+        </table>
+    </div>
     <div class="entity class" id="Primemeridian">
         <h3>
           Prime meridian<sup title="class" class="sup-c">c</sup>
@@ -389,6 +436,42 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             <tr>
                 <th>URI</th>
                 <td><code>http://www.opengis.net/ont/srs/PrimeMeridian</code></td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="ProjectedCoordinateReferenceSystem">
+        <h3>
+          Projected Coordinate Reference System<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#ProjectedCoordinateReferenceSystem" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>http://www.opengis.net/ont/srs/ProjectedCRS</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>Coordinate reference system derived from a two-dimensional geodetic coordinate reference system by applying a map projection. Cf. ISO 19111:2007:2007-07, part 8.2.3.b, table 11 and annex B.1.2.3.</p>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="SingleCoordinateReferenceSystem">
+        <h3>
+          Single Coordinate Reference System<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#SingleCoordinateReferenceSystem" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>http://www.opengis.net/ont/srs/SingleCRS</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>Coordinate reference system consisting of one coordinate system and one datum. Cf. ISO 19111:2007:2007-07, table 5.</p>
+                </td>
             </tr>
         </table>
     </div>

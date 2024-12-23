@@ -8,7 +8,8 @@
 geosrs:CoordinateOperation a owl:Class ;
     rdfs:label "coordinate operation"@en .
 
-geosrs:PrimeMeridian a owl:Class .
+geosrs:PrimeMeridian a owl:Class ;
+    rdfs:label "Prime meridian"@en .
 
 geosrs:axis a owl:ObjectProperty ;
     rdfs:label "axis"@en ;
@@ -86,7 +87,8 @@ geosrs:CoordinateSystem a owl:Class ;
 geosrs:Datum a owl:Class ;
     rdfs:label "Datum"@en .
 
-geosrs:Ellipsoid a owl:Class .
+geosrs:Ellipsoid a owl:Class ;
+    rdfs:label "Ellipsoid"@en .
 
 geosrs:CRS a owl:Class ;
     rdfs:label "Coordinate Reference System"@en ;

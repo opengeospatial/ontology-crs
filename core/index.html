@@ -239,7 +239,6 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
   <section id="classes">
     <h2>Classes <span style="float:right; font-size:smaller;"><a href="">&uparrow;</a></span></h2>
     <ul class="hlist">
-      <li><a href="geosrs :EngineeringCRS">geosrs :EngineeringCRS</a></li>
       <li><a href="#CoordinateReferenceSystem">Coordinate Reference System</a></li>
       <li><a href="#cartesiancoordinatesystem">cartesian coordinate system</a></li>
       <li><a href="#coordinateoperation">coordinate operation</a></li>
@@ -248,6 +247,7 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
       <li><a href="#Datum">Datum</a></li>
       <li><a href="#Ellipsoid">Ellipsoid</a></li>
       <li><a href="#ellipsoidalcoordinatesystem">ellipsoidal coordinate system</a></li>
+      <li><a href="#EngineeringCoordinateReferenceSystem">Engineering Coordinate Reference System</a></li>
       <li><a href="#GeodeticCoordinateReferenceSystem">Geodetic Coordinate Reference System</a></li>
       <li><a href="#GeodeticDatum">Geodetic Datum</a></li>
       <li><a href="#GeographicCoordinateReferenceSystem">Geographic Coordinate Reference System</a></li>
@@ -269,18 +269,6 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
       <li><a href="#VerticalDatum">Vertical Datum</a></li>
       <li><a href="#conversion">conversion</a></li>
     </ul>
-    <div class="entity class" id="EngineeringCoordinateReferenceSystem">
-        <h3>
-          Engineering Coordinate Reference System<sup title="class" class="sup-c">c</sup>
-          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#EngineeringCoordinateReferenceSystem" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
-        </h3>
-        <table>
-            <tr>
-                <th>URI</th>
-                <td><code>geosrs :EngineeringCRS</code></td>
-            </tr>
-        </table>
-    </div>
     <div class="entity class" id="CoordinateReferenceSystem">
         <h3>
           Coordinate Reference System<sup title="class" class="sup-c">c</sup>
@@ -306,19 +294,19 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             <tr>
                 <th>In domain of</th>
                 <td>
-                    <a href="#targetCRS">target CRS</a><sup class="sup-op" title="object property">op</sup><br/>
                     <a href="#sourceCRS">source CRS</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="#baseCRS">base CRS</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#targetCRS">target CRS</a><sup class="sup-op" title="object property">op</sup><br/>
                     <a href="#coordinatesystem">coordinate system</a><sup class="sup-op" title="object property">op</sup><br/>
                     <a href="#datum">datum</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#baseCRS">base CRS</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>In range of</th>
                 <td>
-                    <a href="#sourceCRS">source CRS</a><sup class="sup-op" title="object property">op</sup><br/>
                     <a href="#targetCRS">target CRS</a><sup class="sup-op" title="object property">op</sup><br/>
                     <a href="#baseCRS">base CRS</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#sourceCRS">source CRS</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
         </table>
@@ -483,6 +471,18 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
                 <td>
                     <p>Coordinate system which gives the position is specified by geodetic latitude, geodetic longitude and (in the three-dimensional case) ellipsoidal height. Cf. ISO 19111:2007:2007-07, tables 15 and 20.</p>
                 </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="EngineeringCoordinateReferenceSystem">
+        <h3>
+          Engineering Coordinate Reference System<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#EngineeringCoordinateReferenceSystem" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://w3id.org/geosrs#EngineeringCRS</code></td>
             </tr>
         </table>
     </div>

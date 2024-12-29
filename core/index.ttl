@@ -5,9 +5,6 @@
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<geosrs :EngineeringCRS> a owl:Class ;
-    rdfs:label "Engineering Coordinate Reference System"@en .
-
 <https://w3id.org/geosrs> a owl:Ontology ;
     rdfs:label "SRS Ontology"@en ;
     vann:preferredNamespacePrefix "geosrs"^^xsd:string ;
@@ -28,6 +25,9 @@ geosrs:CoordinateSystemAxis a owl:Class ;
 geosrs:EllipsoidalCS a owl:Class ;
     rdfs:label "ellipsoidal coordinate system"@en ;
     skos:definition "Coordinate system which gives the position is specified by geodetic latitude, geodetic longitude and (in the three-dimensional case) ellipsoidal height. Cf. ISO 19111:2007:2007-07, tables 15 and 20."@en .
+
+geosrs:EngineeringCRS a owl:Class ;
+    rdfs:label "Engineering Coordinate Reference System"@en .
 
 geosrs:GeodeticCRS a owl:Class ;
     rdfs:label "Geodetic Coordinate Reference System"@en ;

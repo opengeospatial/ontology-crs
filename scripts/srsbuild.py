@@ -5,6 +5,9 @@ import os
 
 exont={}
 
+prefixtoClasses={"geosrs":[]}
+classToPrefix={}
+
 gcore = Graph()
 gcore.bind("geosrs", "https://w3id.org/geosrs#") 
 gcore.bind("skos","http://www.w3.org/2004/02/skos/core#")
@@ -14,10 +17,18 @@ gcore.add((URIRef("https://w3id.org/geosrs"),RDFS.label,Literal("SRS Ontology",l
 gcore.add((URIRef("https://w3id.org/geosrs"),VANN.preferredNamespacePrefix,Literal("geosrs",datatype=XSD.string)))
 gcore.add((URIRef("https://w3id.org/geosrs"),VANN.preferredNamespaceUri,Literal("https://w3id.org/geosrs#",datatype=XSD.anyURI)))
 
-
-
 geocrsNS="https://w3id.org/geosrs#"
 coreprefix="geosrs"
+
+def getPrefixForClass(cls,prefixmap):
+    if cls in prefixmap:
+        return prefixmap[cls]["prefix"]
+    return coreprefix
+
+def getNSForClass(cls,prefixmap):
+    if cls in prefixmap:
+        return prefixmap[cls]["ns"]
+    return geocrsNS
 
 dirname = os.path.dirname(__file__)
 abspath = os.path.join(dirname, '../csv/class/')
@@ -32,6 +43,7 @@ for file in os.listdir(directory):
     curns="http://www.opengis.net/ont/srs/"+filename.replace(".csv","")+"/"
     g.bind(curprefix,curns) 
     g.bind("skos","http://www.w3.org/2004/02/skos/core#")
+    g.bind(curprefix,curns)
 
     g.add((URIRef("https://w3id.org/geosrs/"+filename.replace(".csv","")),RDF.type,OWL.Ontology))
     g.add((URIRef("https://w3id.org/geosrs/"+filename.replace(".csv","")),RDFS.label,Literal("SRS Ontology: "+curprefix.capitalize(),lang="en")))
@@ -46,6 +58,8 @@ for file in os.listdir(directory):
                     if "Core Class?" in row and row["Core Class?"]=="Core Ontology":
                         core=True
                         gcore.add((URIRef(row["Concept"].replace(coreprefix+":",geocrsNS)),RDF.type,OWL.Class))
+                        prefixtoclasses[coreprefix].append(row["Concept"].replace(coreprefix+":",geocrsNS))
+                        classToPrefix[row["Concept"]]={"prefix":coreprefix, "ns":geocrsNS}
                         if "Label" in row and row["Label"]!="":
                             gcore.add((URIRef(row["Concept"].replace(coreprefix+":",geocrsNS)),RDFS.label,Literal(row["Label"],lang="en")))
                         if "Definition" in row and row["Definition"]!="":
@@ -58,6 +72,8 @@ for file in os.listdir(directory):
                                 gcore.add((URIRef(row["Concept"].replace(coreprefix+":",geocrsNS)),RDFS.subClassOf,URIRef(row["SuperClass"].replace("geosrs:",geocrsNS))))
                     else:
                         g.add((URIRef(row["Concept"].replace(curprefix+":",curns)),RDF.type,OWL.Class))
+                        prefixtoclasses[curprefix].append(row["Concept"].replace(curprefix+":",curns))
+                        classToPrefix[row["Concept"]]={"prefix":curprefix, "ns":curns}
                         if "Label" in row and row["Label"]!="":
                             g.add((URIRef(row["Concept"].replace(curprefix+":",curns)),RDFS.label,Literal(row["Label"],lang="en")))
                         if "Definition" in row and row["Definition"]!="":
@@ -71,7 +87,8 @@ for file in os.listdir(directory):
     else:
         continue
  
-
+print(prefixestoclasses)
+print(classToPrefix)
 dirname = os.path.dirname(__file__)
 abspath = os.path.join(dirname, '../csv/prop/')
 directory = os.fsencode(abspath)
@@ -110,9 +127,9 @@ for file in os.listdir(directory):
                             if "Definition" in row and row["Definition"]!="":
                                 gcore.add((URIRef(row["Concept"].replace(coreprefix+":",geocrsNS)),SKOS.definition,Literal(row["Definition"],lang="en")))
                             if "Range" in row and row["Range"]!="":
-                                gcore.add((URIRef(row["Concept"].replace(coreprefix+":",geocrsNS)),RDFS.range,URIRef(row["Range"].replace("geosrs:",geocrsNS))))
+                                gcore.add((URIRef(row["Concept"].replace(coreprefix+":",geocrsNS)),RDFS.range,URIRef(row["Range"].replace("geosrs:", getNSForClass(row["Range"],classToPrefix)))))
                             if "Domain" in row and row["Domain"]!="":
-                                gcore.add((URIRef(row["Concept"].replace(coreprefix+":",geocrsNS)),RDFS.domain,URIRef(row["Domain"].replace("geosrs:",geocrsNS))))
+                                gcore.add((URIRef(row["Concept"].replace(coreprefix+":",geocrsNS)),RDFS.domain,URIRef(row["Domain"].replace("geosrs:",getNSForClass(row["Domain"],classToPrefix)))))
                         else:
                             if row["Core Property?"].lower() in exont:
                                 if objprop:
@@ -124,9 +141,9 @@ for file in os.listdir(directory):
                                 if "Definition" in row and row["Definition"]!="":
                                     exont[row["Core Property?"].lower()].add((URIRef(row["Concept"].replace(curprefix+":",curns)),SKOS.definition,Literal(row["Definition"],lang="en")))
                                 if "Range" in row and row["Range"]!="":
-                                    exont[row["Core Property?"].lower()].add((URIRef(row["Concept"].replace(curprefix+":",curns)),RDFS.range,URIRef(row["Range"].replace("geosrs:",geocrsNS))))
+                                    exont[row["Core Property?"].lower()].add((URIRef(row["Concept"].replace(curprefix+":",curns)),RDFS.range,URIRef(row["Range"].replace("geosrs:",getNSForClass(row["Range"],classToPrefix)))))
                                 if "Domain" in row and row["Domain"]!="":
-                                    exont[row["Core Property?"].lower()].add((URIRef(row["Concept"].replace(curprefix+":",curns)),RDFS.domain,URIRef(row["Domain"].replace("geosrs:",geocrsNS))))
+                                    exont[row["Core Property?"].lower()].add((URIRef(row["Concept"].replace(curprefix+":",curns)),RDFS.domain,URIRef(row["Domain"].replace("geosrs:",getNSForClass(row["Domain"],classToPrefix)))))
             g.serialize(destination=filename.replace(".csv","")+".ttl") 
     else:
         continue

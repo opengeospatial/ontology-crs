@@ -5,7 +5,7 @@ import os
 
 exont={}
 
-prefixtoClasses={"geosrs":[]}
+prefixtoclasses={"geosrs":[]}
 classToPrefix={}
 
 gcore = Graph()

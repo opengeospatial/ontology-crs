@@ -11,7 +11,7 @@ geosrs:CRS,geosrs:SpatialReferenceSystem,Coordinate Reference System,"Depending 
 ,,,,iso19111:DerivedProjectedCRS,,,,,,,
 ,,,,iso19111:DerivedTemporalCRS,,,,,,,
 ,,,,iso19111:DerivedVerticalCRS,,,,,,,
-geosrs :EngineeringCRS,,Engineering Coordinate Reference System,,iso19111:EngineeringCRS,,geocrs:EngineeringCRS,,Core Ontology,,coordinate reference system based on an engineering datum,
+geosrs:EngineeringCRS,,Engineering Coordinate Reference System,,iso19111:EngineeringCRS,,geocrs:EngineeringCRS,,Core Ontology,,coordinate reference system based on an engineering datum,
 ,,,,,,geocrs:GeocentricCRS,,,,,
 geosrs:GeodeticCRS,,Geodetic Coordinate Reference System,"Coordinate reference system associated with a geodetic datum. Cf. ISO 19111:2007:2007-07, part 8.2.2.a, table 10 and annex B.1.2.1.a.",iso19111:GeodeticCRS,ign:GeodeticCRS,geocrs:GeodeticCRS,,Core Ontology,"Coordinate reference system associated with a geodetic datum. Cf. ISO 19111:2007:2007-07, part 8.2.2.a, table 10 and annex B.1.2.1.a.",three-dimensional coordinate reference system based on a geodetic reference frame and having either a three-dimensional Cartesian or a spherical coordinate system,
 geosrs:GeographicCRS,,Geographic Coordinate Reference System,,iso19111:GeographicCRS,,geocrs:GeographicCRS,,Core Ontology,,coordinate reference system that has a geodetic reference frame and an ellipsoidal coordinate system,

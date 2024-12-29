@@ -89,7 +89,7 @@ for file in os.listdir(directory):
     else:
         continue
  
-print(prefixestoclasses)
+print(prefixtoclasses)
 print(classToPrefix)
 dirname = os.path.dirname(__file__)
 abspath = os.path.join(dirname, '../csv/prop/')

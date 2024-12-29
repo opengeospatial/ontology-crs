@@ -3,7 +3,7 @@
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://www.opengis.net/ont/srs/geosrs/planet> a owl:Ontology ;
+<https://w3id.org/geosrs/planet> a owl:Ontology ;
     rdfs:label "SRS Ontology: Geoplanet"@en ;
     vann:preferredNamespacePrefix "geoplanet"^^xsd:string ;
     vann:preferredNamespaceUri "http://www.opengis.net/ont/srs/planet/"^^xsd:anyURI .

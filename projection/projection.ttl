@@ -5,11 +5,6 @@
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://www.opengis.net/ont/srs/geosrs/projection> a owl:Ontology ;
-    rdfs:label "SRS Ontology: Geoprojection"@en ;
-    vann:preferredNamespacePrefix "geoprojection"^^xsd:string ;
-    vann:preferredNamespaceUri "http://www.opengis.net/ont/srs/projection/"^^xsd:anyURI .
-
 geoprojection:A4Projection a owl:Class ;
     rdfs:label "A4 Projection"@en ;
     rdfs:subClassOf geoprojection:LenticularProjection .
@@ -995,6 +990,11 @@ geoprojection:WinkelIProjection a owl:Class ;
 geoprojection:WinkelSnyderProjection a owl:Class ;
     rdfs:label "Winkel Snyder Projection"@en ;
     rdfs:subClassOf geoprojection:CompromiseProjection .
+
+<https://w3id.org/geosrs/projection> a owl:Ontology ;
+    rdfs:label "SRS Ontology: Geoprojection"@en ;
+    vann:preferredNamespacePrefix "geoprojection"^^xsd:string ;
+    vann:preferredNamespaceUri "http://www.opengis.net/ont/srs/projection/"^^xsd:anyURI .
 
 geoprojection:ArchaicProjection a owl:Class ;
     rdfs:label "Archaic Projection"@en .

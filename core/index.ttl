@@ -1,4 +1,4 @@
-@prefix geosrs: <http://www.opengis.net/ont/srs/> .
+@prefix geosrs: <https://w3id.org/geosrs#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
@@ -7,6 +7,11 @@
 
 <geosrs :EngineeringCRS> a owl:Class ;
     rdfs:label "Engineering Coordinate Reference System"@en .
+
+<https://w3id.org/geosrs> a owl:Ontology ;
+    rdfs:label "SRS Ontology"@en ;
+    vann:preferredNamespacePrefix "geosrs"^^xsd:string ;
+    vann:preferredNamespaceUri "https://w3id.org/geosrs#"^^xsd:anyURI .
 
 geosrs:CartesianCS a owl:Class ;
     rdfs:label "cartesian coordinate system"@en ;
@@ -129,11 +134,6 @@ geosrs:ellipsoid a owl:ObjectProperty ;
     rdfs:domain geosrs:Datum ;
     rdfs:range geosrs:Ellipsoid ;
     skos:definition "The properties relates a datum to its ellipsoid definition"@en .
-
-geosrs:geosrs a owl:Ontology ;
-    rdfs:label "SRS Ontology"@en ;
-    vann:preferredNamespacePrefix "geosrs"^^xsd:string ;
-    vann:preferredNamespaceUri "http://www.opengis.net/ont/srs/"^^xsd:anyURI .
 
 geosrs:semiMajorAxis a owl:ObjectProperty ;
     rdfs:label "semi major axis"@en ;

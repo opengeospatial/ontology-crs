@@ -3,7 +3,7 @@
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://www.opengis.net/ont/srs/geosrs/cs> a owl:Ontology ;
+<https://w3id.org/geosrs/cs> a owl:Ontology ;
     rdfs:label "SRS Ontology: Geocs"@en ;
     vann:preferredNamespacePrefix "geocs"^^xsd:string ;
     vann:preferredNamespaceUri "http://www.opengis.net/ont/srs/cs/"^^xsd:anyURI .

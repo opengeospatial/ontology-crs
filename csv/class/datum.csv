@@ -7,10 +7,10 @@ geosrs:Ellipsoid,,Ellipsoid,"Surface formed by the rotation of an ellipse about 
 ,,,,,,geocrs:TriaxialEllipsoid,,,,
 ,,,,iso19111:uInverseFlattening,,,,,,inverse flattening value of the ellipsoid
 ,,,,iso19111:uSemiMinorAxis,,,,,length of the semi-minor axis of the ellipsoid
-,,,,iso19111:uIsSphere,,,,,ellipsoid is degenerate and is actually a sphere. Note: The sphere is completely defined by the semi-major axis, which is the radius of the sphere. This attribute has the value “true” if the figure is a sphere.
+,,,,iso19111:uIsSphere,,,,,ellipsoid is degenerate and is actually a sphere. Note: The sphere is completely defined by the semi-major axis which is the radius of the sphere. This attribute has the value “true” if the figure is a sphere.
 geosrs:VerticalDatum,,Vertical Datum,"Datum describing the relation of gravity-related heights or depths to the Earth. Cf. ISO 19111:2007:2007-07, table 41 and annex B.3.3.",iso19111:VerticalReferenceFrame,ign:VerticalDatum,,,,Core Ontology,"Datum describing the relation of gravity-related heights or depths to the Earth. Cf. ISO 19111:2007:2007-07, table 41 and annex B.3.3.",reference frame describing the relation of gravity-related heights or depths to the Earth
-,,,,iso19111:DynamicVerticalReferenceFrame,,,,,,
-,,,,iso19111:ParametricDatum,,geocrs:ParametricDatum,,,,
+,,,,iso19111:DynamicVerticalReferenceFrame,,,,,,vertical reference frame in which some of the defining parameters have time dependencyExample: Defining station heights have velocity to account for post-glacial isostatic rebound motion.
+,,,,iso19111:ParametricDatum,,geocrs:ParametricDatum,,,,textual description and.sl.or a set of parameters identifying a particular reference surface used as the origin of a parametric coordinate system, including its position with respect to the Earth
 ,,,,iso19111:DefiningParameter,,,,,,
 ,,,,iso19111:EngineeringDatum,,geocrs:EngineeringDatum,,,,datum describing the relationship of a coordinate system to a local reference
 ,,,,iso19111:TemporalDatum,,,,,,datum describing the relationship of a temporal coordinate system to an object

@@ -5,7 +5,7 @@ geoprojection:AdamsWorldInASquareIIProjection,geoprojection:ConformalProjection,
 geoprojection:AdamsWorldInASquareIProjection,geoprojection:ConformalProjection,Adams World In A Square I Projection,,,,geocrs:AdamsWorldInASquareIProjection,,Extension
 geoprojection:AiryProjection,geoprojection:MinimumErrorProjection,Airy Projection,,,,geocrs:AiryProjection,,Extension
 geoprojection:AitoffObliqueProjection,geoprojection:PseudoAzimuthalProjection,Aitoff Oblique Projection,,,,geocrs:AitoffObliqueProjection,,Extension
-geoprojection:AitoffProjection,geoprojection:PseudoAzimuthalProjection,Aitoff Projection,,,,geocrs:AitoffProjection,,Extension
+geoprojection:AitoffProjection,geoprojection:PseudoAzimuthalProjection,Aitoff Projection,A modified azimuthal projection whose graticule takes the form of an ellipse,,,geocrs:AitoffProjection,,Extension
 geoprojection:AlbersEqualAreaProjection,geoprojection:EqualAreaProjection,Albers Equal Area Projection,,,,geocrs:AlbersEqualAreaProjection,,Extension
 geoprojection:AmericanPolyconicProjection,geoprojection:PseudoConicalProjection,American Polyconic Projection,,,,geocrs:AmericanPolyconicProjection,,Extension
 geoprojection:ApianGlobularIProjection,geoprojection:GlobularProjection,Apian Globular I Projection,,,,geocrs:ApianGlobularIProjection,,Extension

@@ -31,8 +31,7 @@ geoprojection:AitoffObliqueProjection a owl:Class ;
 
 geoprojection:AitoffProjection a owl:Class ;
     rdfs:label "Aitoff Projection"@en ;
-    rdfs:subClassOf geoprojection:PseudoAzimuthalProjection ;
-    skos:definition "A modified azimuthal projection whose graticule takes the form of an ellipse"@en .
+    rdfs:subClassOf geoprojection:PseudoAzimuthalProjection .
 
 geoprojection:AlbersEqualAreaProjection a owl:Class ;
     rdfs:label "Albers Equal Area Projection"@en ;

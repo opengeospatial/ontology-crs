@@ -91,6 +91,11 @@ geosrs:VerticalCS a owl:Class ;
     rdfs:label "vertical coordinate system"@en ;
     skos:definition "One-dimensional coordinate system used for gravity related height or depth measurements. Cf. ISO 19111:2007:2007-07, tables 15 and 25."@en .
 
+geosrs:VerticalDatum a owl:Class ;
+    rdfs:label "Vertical Datum"@en ;
+    rdfs:subClassOf geosrs:Datum ;
+    skos:definition "Datum describing the relation of gravity-related heights or depths to the Earth. Cf. ISO 19111:2007:2007-07, table 41 and annex B.3.3."@en .
+
 geosrs:axis a owl:ObjectProperty ;
     rdfs:label "axis"@en ;
     rdfs:domain geosrs:CoordinateSystem ;

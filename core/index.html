@@ -266,6 +266,7 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
       <li><a href="#sphericalcoordinatesystem">spherical coordinate system</a></li>
       <li><a href="#transformation">transformation</a></li>
       <li><a href="#verticalcoordinatesystem">vertical coordinate system</a></li>
+      <li><a href="#VerticalDatum">Vertical Datum</a></li>
       <li><a href="#conversion">conversion</a></li>
     </ul>
     <div class="entity class" id="CoordinateReferenceSystem">
@@ -293,19 +294,19 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             <tr>
                 <th>In domain of</th>
                 <td>
-                    <a href="#datum">datum</a><sup class="sup-op" title="object property">op</sup><br/>
                     <a href="#coordinatesystem">coordinate system</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="#baseCRS">base CRS</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="#sourceCRS">source CRS</a><sup class="sup-op" title="object property">op</sup><br/>
                     <a href="#targetCRS">target CRS</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#baseCRS">base CRS</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#datum">datum</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#sourceCRS">source CRS</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>In range of</th>
                 <td>
+                    <a href="#sourceCRS">source CRS</a><sup class="sup-op" title="object property">op</sup><br/>
                     <a href="#targetCRS">target CRS</a><sup class="sup-op" title="object property">op</sup><br/>
                     <a href="#baseCRS">base CRS</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="#sourceCRS">source CRS</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
         </table>
@@ -408,6 +409,12 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
                 <th>Description</th>
                 <td>
                     <p>Parameter or set of parameters that define the position of the origin, the scale and the orientation of a coordinate system. Cf. ISO 19111:2007:2007-07, part 10.1, table 33 and annex B.3.</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Sub-classes</th>
+                <td>
+                    <a href="#VerticalDatum">Vertical Datum</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
@@ -781,6 +788,30 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
                 <th>Description</th>
                 <td>
                     <p>One-dimensional coordinate system used for gravity related height or depth measurements. Cf. ISO 19111:2007:2007-07, tables 15 and 25.</p>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="VerticalDatum">
+        <h3>
+          Vertical Datum<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#VerticalDatum" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://w3id.org/geosrs#VerticalDatum</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>Datum describing the relation of gravity-related heights or depths to the Earth. Cf. ISO 19111:2007:2007-07, table 41 and annex B.3.3.</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Super-classes</th>
+                <td>
+                    <a href="#Datum">Datum</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>

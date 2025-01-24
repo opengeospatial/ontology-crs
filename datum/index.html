@@ -238,22 +238,161 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
   <section id="classes">
     <h2>Classes <span style="float:right; font-size:smaller;"><a href="">&uparrow;</a></span></h2>
     <ul class="hlist">
-      <li><a href="geosrs:VerticalDatum">geosrs:VerticalDatum</a></li>
+      <li><a href="geosrs:DatumEnsemble">geosrs:DatumEnsemble</a></li>
+      <li><a href="geosrs:DefiningParameter">geosrs:DefiningParameter</a></li>
+      <li><a href="geosrs:DynamicVerticalDatum">geosrs:DynamicVerticalDatum</a></li>
+      <li><a href="geosrs:EngineeringDatum">geosrs:EngineeringDatum</a></li>
+      <li><a href="geosrs:ParametricDatum">geosrs:ParametricDatum</a></li>
+      <li><a href="geosrs:TemporalDatum">geosrs:TemporalDatum</a></li>
+      <li><a href="geosrs:TriaxialEllipsoid">geosrs:TriaxialEllipsoid</a></li>
     </ul>
-    <div class="entity class" id="VerticalDatum">
+    <div class="entity class" id="DatumEnsemble">
         <h3>
-          Vertical Datum<sup title="class" class="sup-c">c</sup>
-          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#VerticalDatum" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+          Datum Ensemble<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#DatumEnsemble" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
         </h3>
         <table>
             <tr>
                 <th>URI</th>
-                <td><code>geosrs:VerticalDatum</code></td>
+                <td><code>geosrs:DatumEnsemble</code></td>
             </tr>
             <tr>
                 <th>Description</th>
                 <td>
-                    <p>Datum describing the relation of gravity-related heights or depths to the Earth. Cf. ISO 19111:2007:2007-07, table 41 and annex B.3.3.</p>
+                    <p>A collection of two or more datums (or if geodetic or vertical, a collection of two or more reference frames) that are realizations of one Conventional Reference System and which for all but the highest accuracy requirements may be considered to be insignificantly different from each other. Note: Within the datum ensemble every frame or datum is constrained to be a realization of the same reference system. Cf. ISO 19111:2019
+Geographic information — Referencing by coordinates.</p>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="DefiningParameter">
+        <h3>
+          Defining Parameter<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#DefiningParameter" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>geosrs:DefiningParameter</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>Parameter value, an ordered sequence of values, or a reference to a file of parameter values that define a paramtric datum. Cf. ISO 19111:2019 Geographic information — Referencing by coordinates.</p>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="DynamicVerticalDatum">
+        <h3>
+          Dynamic Vertical Datum<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#DynamicVerticalDatum" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>geosrs:DynamicVerticalDatum</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>Vertical reference frame in which some of the defining parameters have time dependencyExample: Defining station heights have velocity to account for post-glacial isostatic rebound motion. Cf. ISO 19111:2019 Geographic information — Referencing by coordinates.</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Super-classes</th>
+                <td>
+                    <a href="geosrs:VerticalDatum">geosrs:VerticalDatum</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="EngineeringDatum">
+        <h3>
+          Engineering Datum<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#EngineeringDatum" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>geosrs:EngineeringDatum</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>Definition of the origin and orientation of an engineering coordinate reference systemNote: The origin can be fixed with respect to the Earth (such as a defined point at a construction site), or be a defined point on a moving vehicle (such as on a ship or satellite), or a defined point of an image. Cf. ISO 19111:2019 Geographic information — Referencing by coordinates.</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Super-classes</th>
+                <td>
+                    <a href="geosrs:Datum">geosrs:Datum</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="ParametricDatum">
+        <h3>
+          Parametric Datum<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#ParametricDatum" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>geosrs:ParametricDatum</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>Textual description and/or a set of parameters identifying a particular reference surface used as the origin of a parametric coordinate system, including its position with respect to the Earth. Cf. ISO 19111:2019 Geographic information — Referencing by coordinates.</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Super-classes</th>
+                <td>
+                    <a href="geosrs:Datum">geosrs:Datum</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="TemporalDatum">
+        <h3>
+          Temporal Datum<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#TemporalDatum" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>geosrs:TemporalDatum</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>Definition of the relationship of a temporal coordinate system to an objectNote: The object is normally time on the Earth. Cf. ISO 19111:2019 Geographic information — Referencing by coordinates.</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Super-classes</th>
+                <td>
+                    <a href="geosrs:Datum">geosrs:Datum</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="TriaxialEllipsoid">
+        <h3>
+          Triaxial Ellipsoid<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#TriaxialEllipsoid" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>geosrs:TriaxialEllipsoid</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>Surface of an analytic ellipsoid defined by three axes of different length. Also referred as scalene ellipsoid.</p>
                 </td>
             </tr>
         </table>

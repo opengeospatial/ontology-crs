@@ -119,7 +119,8 @@ geoprojection:BartholomewProjection a owl:Class ;
 
 geoprojection:BehrmannProjection a owl:Class ;
     rdfs:label "Behrmann Projection"@en ;
-    rdfs:subClassOf geoprojection:CylindricalEqualArea .
+    rdfs:subClassOf geoprojection:CylindricalEqualArea ;
+    skos:definition "A cylindrical equal-area map projection with standard parallels set at 30° north and south"@en .
 
 geoprojection:BerghausStarProjection a owl:Class ;
     rdfs:label "Berghaus Star Projection"@en ;

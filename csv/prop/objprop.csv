@@ -12,7 +12,7 @@ geosrs:baseCRS,geosrs:CRS,geosrs:CRS,base CRS,"The geodetic coordinate reference
 ,,,,,,iso19111:coordinateOperationAccuracy,,,,,,
 geosrs:coordinateSystem,geosrs:CRS,geosrs:CoordinateSystem,coordinate system,The property relates a coordinate reference system to its coordinate system,,iso19111:coordinateSystem,ign:coordinateSystem,geocrs:coordinateSystem,,Core Ontology,"The coordinate system used by a coordinate reference system. Cf. ISO 19111:2007:2007-07, table 5, named association CoordinateSystem.",
 ,,,,,,iso19111:coordinateType,,,,,,
-geosrs:cylindricalCS,geosrs:CRS,geosrs:CS,Links a coordinate reference system to a cylindrical coordinate system,,,iso19111:cylindricalCS,,,,CS,,
+geosrs:cylindricalCS,geosrs:CRS,geosrs:CS,cylindrical cs,Links a coordinate reference system to a cylindrical coordinate system,,iso19111:cylindricalCS,,,,CS,,
 geosrs:datum,geosrs:CRS,geosrs:Datum,datum,The property relates a coordinate reference system to a datum,,iso19111:datum,ign:datum,geocrs:datum,,Core Ontology,"The datum used by a single coordinate reference system. Cf. ISO 19111:2007:2007-07, table 5, named association DefiningDatum.",
 ,,,,,,iso19111:datumDefiningParameter,,,,,,parameter used to define the parametric datum
 ,,,,,,iso19111:datumEnsemble,,,,,,

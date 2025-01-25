@@ -14,8 +14,8 @@ geosrs:coordinateSystem,geosrs:CRS,geosrs:CoordinateSystem,coordinate system,The
 ,,,,,,iso19111:coordinateType,,,,,,
 geosrs:cylindricalCS,geosrs:CRS,geosrs:CS,cylindrical cs,Links a coordinate reference system to a cylindrical coordinate system,,iso19111:cylindricalCS,,,,CS,,
 geosrs:datum,geosrs:CRS,geosrs:Datum,datum,The property relates a coordinate reference system to a datum,,iso19111:datum,ign:datum,geocrs:datum,,Core Ontology,"The datum used by a single coordinate reference system. Cf. ISO 19111:2007:2007-07, table 5, named association DefiningDatum.",
-,,,,,,iso19111:datumDefiningParameter,,,,,,parameter used to define the parametric datum
-,,,,,,iso19111:datumEnsemble,,,,,,
+,,,,,,iso19111:datumDefiningParameter,,,,Datum,,parameter used to define the parametric datum
+,,,,,,iso19111:datumEnsemble,,,,Datum,,
 ,,,,,,iso19111:derivingConversion,,,,,,
 geosrs:axisDirection,geosrs:Axis,geosrs:AxisDirection,axisdirection,The property relates a coordinate system axis to its axis direction,,iso19111:axisDirection,,geocrs:direction,,Core Ontology,,
 ,,,,,,,ign:domainOfValidity,,,,"Geographic area or time interval in which the referring object is valid. Cf. ISO 19111:2007:2007-07, tables 4, 33 and 42, attribute domainOfValidity.",

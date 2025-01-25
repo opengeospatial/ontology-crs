@@ -23,7 +23,8 @@ geoprojection:AdamsWorldInASquareIProjection a owl:Class ;
 
 geoprojection:AiryProjection a owl:Class ;
     rdfs:label "Airy Projection"@en ;
-    rdfs:subClassOf geoprojection:MinimumErrorProjection .
+    rdfs:subClassOf geoprojection:MinimumErrorProjection ;
+    skos:definition "An azimuthal minimum error projection for the region within the small or great circle defined by an angular distance, from the tangency point of the plane"@en .
 
 geoprojection:AitoffObliqueProjection a owl:Class ;
     rdfs:label "Aitoff Oblique Projection"@en ;
@@ -93,7 +94,8 @@ geoprojection:BakerDinomicProjection a owl:Class ;
 
 geoprojection:BalthasartProjection a owl:Class ;
     rdfs:label "Balthasart Projection"@en ;
-    rdfs:subClassOf geoprojection:CylindricalEqualArea .
+    rdfs:subClassOf geoprojection:CylindricalEqualArea ;
+    skos:definition "A cylindrical equal-area projection that uses a standard parallel of phi_s=50 degrees"@en .
 
 geoprojection:BaranyiIIIProjection a owl:Class ;
     rdfs:label "Baranyi III Projection"@en ;
@@ -112,7 +114,7 @@ geoprojection:BaranyiIVProjection a owl:Class ;
     rdfs:subClassOf geoprojection:PseudoCylindricalProjection .
 
 geoprojection:BartholomewProjection a owl:Class ;
-    rdfs:label "Batholomew Projection"@en ;
+    rdfs:label "Bartholomew Projection"@en ;
     rdfs:subClassOf geoprojection:WinkelTripelProjection .
 
 geoprojection:BehrmannProjection a owl:Class ;
@@ -173,7 +175,8 @@ geoprojection:CahillKeyesProjection a owl:Class ;
 
 geoprojection:CassiniProjection a owl:Class ;
     rdfs:label "Cassini Projection"@en ;
-    rdfs:subClassOf geoprojection:EquidistantProjection .
+    rdfs:subClassOf geoprojection:EquidistantProjection ;
+    skos:definition "A map projection first described in an approximate form by César-François Cassini de Thury in 1745"@en .
 
 geoprojection:CentralConicProjection a owl:Class ;
     rdfs:label "Central Conic Projection"@en ;
@@ -197,7 +200,8 @@ geoprojection:CollignonButterflyProjection a owl:Class ;
 
 geoprojection:CollignonProjection a owl:Class ;
     rdfs:label "Collignon Projection"@en ;
-    rdfs:subClassOf geoprojection:PseudoCylindricalProjection .
+    rdfs:subClassOf geoprojection:PseudoCylindricalProjection ;
+    skos:definition "An equal-area pseudocylindrical projection that maps the sphere onto a triangle or diamond"@en .
 
 geoprojection:ColombiaUrbanProjection a owl:Class ;
     rdfs:label "Colombia Urban Projection"@en .

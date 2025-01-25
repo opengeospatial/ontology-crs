@@ -28,7 +28,7 @@ geoprojection:BaranyiIIProjection,geoprojection:PseudoCylindricalProjection,Bara
 geoprojection:BaranyiIProjection,geoprojection:PseudoCylindricalProjection,Baranyi I Projection,,,,geocrs:BaranyiIProjection,,Extension
 geoprojection:BaranyiIVProjection,geoprojection:PseudoCylindricalProjection,Baranyi IV Projection,,,,geocrs:BaranyiIVProjection,,Extension
 geoprojection:BartholomewProjection,geoprojection:WinkelTripelProjection,Bartholomew Projection,,,,geocrs:BartholomewProjection,,Extension
-geoprojection:BehrmannProjection,geoprojection:CylindricalEqualArea,Behrmann Projection,,,,geocrs:BehrmannProjection,,Extension
+geoprojection:BehrmannProjection,geoprojection:CylindricalEqualArea,Behrmann Projection,"A cylindrical equal-area map projection with standard parallels set at 30° north and south",,,geocrs:BehrmannProjection,,Extension
 geoprojection:BerghausStarProjection,geoprojection:EquidistantProjection,Berghaus Star Projection,,,,geocrs:BerghausStarProjection,,Extension
 geoprojection:BertinProjection,geoprojection:CompromiseProjection,Bertin Projection,,,,geocrs:BertinProjection,,Extension
 geoprojection:BipolarObliqueConicConformalProjection,geoprojection:ConicalProjection,Bipolar Oblique Conic Conformal Projection,,,,geocrs:BipolarObliqueConicConformalProjection,,Extension

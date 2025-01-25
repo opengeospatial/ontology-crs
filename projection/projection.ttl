@@ -679,7 +679,8 @@ geoprojection:NaturalEarth2Projection a owl:Class ;
 
 geoprojection:NaturalEarthProjection a owl:Class ;
     rdfs:label "Natural Earth Projection"@en ;
-    rdfs:subClassOf geoprojection:PseudoCylindricalProjection .
+    rdfs:subClassOf geoprojection:PseudoCylindricalProjection ;
+    skos:definition "A pseudocylindrical map projection designed by Tom Patterson and introduced in 2008"@en .
 
 geoprojection:NellHammerProjection a owl:Class ;
     rdfs:label "Nell-Hammer Projection"@en ;

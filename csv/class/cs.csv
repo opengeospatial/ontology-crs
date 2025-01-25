@@ -11,13 +11,13 @@ geosrs:CartesianCS,,cartesian coordinate system,"Coordinate system which gives t
 ,,,,,,geocrs:ConicalCoordinateSystem,,,,
 ,,,,,,geocrs:CurvilinearCoordinateSystem,,,,
 ,,,,iso19111:CylindricalCS,,geocrs:CylindricalCoordinateSystem,,,,three-dimensional coordinate system in Euclidean space in which position is specified by two linear coordinates and one angular coordinate
-,,,,,,geocrs:DerivedProjectedCS,,,,
+,,,,,,geocrs:DerivedProjectedCS,,,,coordinate system used by a DerivedProjected CRS, one of an affine coordinate system, a Cartesian coordinate system, a cylindrical coordinate system, an ordinal coordinate system, a polar coordinate system or a spherical coordinate system
 ,,,,,,geocrs:EclipticCS,,,,
 geosrs:EllipsoidalCS,,ellipsoidal coordinate system,"Coordinate system which gives the position is specified by geodetic latitude, geodetic longitude and (in the three-dimensional case) ellipsoidal height. Cf. ISO 19111:2007:2007-07, tables 15 and 20.",iso19111:EllipsoidalCS,ign:EllipsoidalCS,geocrs:EllipsoidalCS,,Core Ontology,"Coordinate system which gives the position is specified by geodetic latitude, geodetic longitude and (in the three-dimensional case) ellipsoidal height. Cf. ISO 19111:2007:2007-07, tables 15 and 20.",
-,,,,,,geocrs:EngineeringCS,,,,
+,,,,,,geocrs:EngineeringCS,,,,coordinate system used by an engineering coordinate reference system, one of an affine coordinate system, a Cartesian coordinate system, a cylindrical coordinate system, a linear coordinate sytem, an ordinal coordinate system, a polar coordinate system or a spherical coordinate system
 ,,,,,,geocrs:EquatorialCS,,,,
 ,,,,,,geocrs:GalacticCS,,,,
-,,,,,,geocrs:GeodeticCS,,,,
+,,,,,,geocrs:GeodeticCS,,,,coordinate system used by a Geodetic CRS, one of a Cartesian coordinate system or a spherical coordinate system
 ,,,,,,geocrs:GeographicCS,,,,
 ,,,,,,geocrs:GridCS,,,,
 ,,,,,,geocrs:HexagonalCS,,,,

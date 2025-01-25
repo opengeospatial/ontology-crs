@@ -1,12 +1,14 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <geosrs:cylindricalCS> a owl:ObjectProperty ;
-    rdfs:label "Links a coordinate reference system to a cylindrical coordinate system"@en ;
+    rdfs:label "cylindrical cs"@en ;
     rdfs:domain <https://w3id.org/geosrs#CRS> ;
-    rdfs:range <https://w3id.org/geosrs#CS> .
+    rdfs:range <https://w3id.org/geosrs#CS> ;
+    skos:definition "Links a coordinate reference system to a cylindrical coordinate system"@en .
 
 <https://w3id.org/geosrs/cs> a owl:Ontology ;
     rdfs:label "SRS Ontology: Geocs"@en ;

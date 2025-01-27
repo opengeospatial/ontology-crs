@@ -29,7 +29,7 @@ for file in os.listdir(directory):
     filename = os.fsdecode(file)
     g = Graph()
     exont[filename.replace(".csv","")]=g
-    curprefix="geo"+filename.replace(".csv","")
+    curprefix=filename.replace(".csv","")
     curns="http://www.opengis.net/ont/srs/"+filename.replace(".csv","")+"/"
     g.bind(curprefix,curns) 
     g.bind("skos","http://www.w3.org/2004/02/skos/core#")
@@ -80,7 +80,7 @@ print(abspath)
 for file in os.listdir(directory):
     filename = os.fsdecode(file)
     g = Graph()
-    curprefix="geo"+filename.replace(".csv","")
+    curprefix=filename.replace(".csv","")
     curns="http://www.opengis.net/ont/srs/"+filename.replace(".csv","")+"/"
     g.bind(curprefix, curns) 
     g.bind("skos","http://www.w3.org/2004/02/skos/core#")

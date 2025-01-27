@@ -1,59 +1,70 @@
-= GeoSPARQL 3d White Paper
-:doctype: white-paper
-:language: en
-:status: swg-draft
-:committee: technical
-:workgroup: Geosemantics DWG
-:draft: 1.0
-:external-id: http://www.opengis.net/doc/WP/geosparql3d
-:comment: ### Internal reference number; mandatory
-:docnumber: YY-999
-:received-date: 2029-03-30
-:comment: ### Date on which the standard was approved by the issuing authority; mandatory
-:issued-date: 2029-03-30
-:comment: ### Date on which the standard was published; mandatory
-:published-date: 2029-03-30
-:fullname: Editor One
-:fullname_2: Editor Two
-:role: editor
-:keywords: OGC, GeoSPARQL, 3D
-:submitting-organizations: Organization one; Organization two; Organization three
-:mn-document-class: ogc
-:mn-output-extensions: html,pdf
-:local-cache-only:
-:pdf-uri: ./document.pdf
+= OGC document title
+:comment: ### Document type; mandatory. Visit: https://www.metanorma.org/author/ogc/authoring/ for permitted types
+:doctype: community-standard
+:comment: ### Version number; optional. Dot-delimited, preferably with this structure <version number>.<minor version number>.<patch version number>
 :edition: 1.0
-:toc:
-:toc-placement: left
-:toclevels: 4
-:numbered:
-:sectanchors:
+:comment: ### Language of the document; mandatory. Specified in two-letter code: "en" for English, "fr" for French
+:language: en
+:comment: ### Document status/stage; mandatory. Visit: https://www.metanorma.org/author/ogc/authoring/ for permitted types
+:status: approved
+:comment: ### Relevant committee; mandatory. The permitted types are: technical, planning, and strategic-member-advisory
+:committee: technical
+:comment: ### External link referencing the document; optional. If not provided, a default value is created following this structure: "http://www.opengis.net/doc/{abbrevation of doctype}/{abbrev}/{version}",
+:external-id: http://www.opengis.net/docs/CS/3DTiles/1.0
+:comment: ### Internal reference number; mandatory
+:docnumber: 18-053r2
+:comment: ### Date on which the standard was updated; mandatory
+:received-date: 2018-06-04
+:comment: ### Date on which the standard was approved by the issuing authority; mandatory
+:issued-date: 2018-12-14
+:comment: ### Date on which the standard was published; mandatory
+:published-date: 2019-01-31
+:comment: ### Author one
+:fullname: Patrick Cozzi
+:comment: ### Author two
+:fullname_2: Sean Lilley
+:comment: ### Author three
+:fullanme_3: Gabby Getz
+:comment: ### Role of the authors; mandatory
+:role: editor
+:comment: ### Comma delimited keywords; mandatory
+:keywords: keyword_1, keyword_2, keyword_3, etc.
+:comment: ### Metanorma flavor; mandatory
+:mn-document-class: ogc
+:comment: ### Desired output formats; mandatory
+:mn-output-extensions: xml,html,doc,pdf
+:comment: ### Enable local relaton cache for quick inclusion of prefetched references; optional. For further information, visit: https://www.metanorma.org/author/ref/document-attributes/#caches, https://www.metanorma.org/author/topics/building/reference-lookup/#lookup-result-caching
+:local-cache-only:
+:comment: ### Directory name used as prefix for the location of image files; optional
+:imagesdir: images
+:comment: ### URI to which the PDF version of this standard is published; optional
+:pdf-uri: ./document.pdf
+:comment: ### URI to which the XML version of this standard is published; optional
+:xml-uri: ./document.xml
+:comment: ### URI to which the DOC version of this standard is published; optional
+:doc-uri: ./document.doc
 
-:sectnums!:
 
-include::sections/01-front_material.adoc[]
+// Clauses
+include::sections/00-preface.adoc[]
+include::sections/01-scope.adoc[]
+include::sections/02-conformance.adoc[]
+include::sections/03-references.adoc[]
+include::sections/04-terms_and_definitions.adoc[]
+include::sections/05-conventions.adoc[]
 
-include::sections/02-preamble.adoc[]
+// add clause files as needed
+include::sections/07-other-clauses.adoc[]
 
-:sectnums:
-
-include::sections/03-introduction.adoc[]
-
-include::sections/04-benefits.adoc[]
-
-include::sections/05-curcapabilities.adoc[]
-
-include::sections/06-geosparql3D.adoc[]
-
-:sectnums!:
-
-//use annexes as needed
-include::sections/97-annex-n.adoc[]
+////
+Annexes
+(add annex files as needed)
+////
+include::sections/aa-annexA.adoc[]
 
 ////
 Revision History should be the last annex before the Bibliography
 Bibliography should be the last annex
 ////
-include::sections/98-annex-history.adoc[]
-
-include::sections/99-annex-bibliography.adoc[]
+include::sections/ah-history.adoc[]
+include::sections/az-bibliography.adoc[]

@@ -1,0 +1,29 @@
+
+[bibliography]
+== References
+The following normative documents contain provisions that, through reference in this text, constitute provisions of this document. For dated references, subsequent amendments to, or revisions of, any of these publications do not apply. For undated references, the latest edition of the normative document referred to applies.
+
+[NOTE]
+====
+If there are no references, leave this section empty.
+
+References are to follow the Springer LNCS style, with the exception that optional information may be appended to references: DOIs are added after the date and web resource references may include an access date at the end of the reference in parentheses. See examples from Springer and OGC below.
+====
+
+* [[[Smith81,Identification of Common Molecular Subsequences]]],
+_Identification of Common Molecular Subsequences_.
+Smith, T.F., Waterman, M.S., J. Mol. Biol. 147, 195–197 (1981)
+
+* [[[May06,ZIB Structure Prediction Pipeline]]],
+_ZIB Structure Prediction Pipeline: Composing a Complex Biological Workflow through Web Services_.
+May, P., Ehrlich, H.C., Steinke, T. In: Nagel, W.E., Walter,
+W.V., Lehner, W. (eds.) Euro-Par 2006. LNCS, vol. 4128, pp. 1148–1158. Springer,
+Heidelberg (2006)
+
+* [[[Grid,The Grid]]], _The Grid: Blueprint for a New Computing Infrastructure._,
+Foster, I., Kesselman, C.. Morgan Kaufmann, San Francisco (1999).
+
+* [[[Czajkowski01,Grid Information Services for Distributed Resource Sharing]]],
+_Grid Information Services for Distributed Resource Sharing._
+Czajkowski, K., Fitzgerald, S., Foster, I., Kesselman, C. In: 10th IEEE International Symposium on High
+Performance Distributed Computing, pp. 181–184. IEEE Press, New York (2001)

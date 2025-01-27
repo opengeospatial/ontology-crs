@@ -1,0 +1,32 @@
+
+[bibliography]
+== Bibliography
+
+[NOTE]
+.Example Bibliography (Delete this note).
+====
+The TC has approved Springer LNCS as the official document citation type.
+Springer LNCS is widely used in technical and computer science journals and other publications
+For citations in the text please use square brackets and consecutive numbers: [1], [2], [3]
+Actual References:
+[n] Journal: Author Surname, A.: Title. Publication Title. Volume number, Issue number, Pages Used (Year Published)
+[n] Web: Author Surname, A.: Title, http://Website-Url
+====
+
+// Reference samples
+
+* [[[yaml,YAML]]], Ben-Kiki, O., Evans, C., Ingy döt Net: *YAML Ain’t Markup Language,* https://yaml.org/
+
+* [[[rfc3986,RFC3986]]], Berners-Lee, T., Fielding, R., Masinter, L.: *IETF RFC 3986 - Uniform Resource Identifier (URI): Generic Syntax,* http://tools.ietf.org/rfc/rfc3986.txt
+
+* [[[link_relations,Link Relation Types]]], IANA: *Link Relation Types,* https://www.iana.org/assignments/link-relations/link-relations.xml
+
+* [[[iso19142,ISO 19142]]], ISO: *ISO 19142:2010 - Geographic information - Web Feature Service* https://www.iso.org/standard/42136.html
+
+* [[[wfs20,WFS 2.0]]], OGC: *Web Feature Service 2.0,* http://docs.opengeospatial.org/is/09-025r2/09-025r2.html
+
+* [[[spatial_data_wbp,SDWBP]]], W3C/OGC: *Spatial Data on the Web Best Practices,* W3C Working Group Note 28 September 2017, https://www.w3.org/TR/sdw-bp/
+
+* [[[dwbp,WBP]]], W3C: *Data on the Web Best Practices,* W3C Recommendation 31 January 2017, https://www.w3.org/TR/dwbp/
+
+* [[[dcat,DCAT]]], W3C: *Data Catalog Vocabulary,* W3C Recommendation 16 January 2014, https://www.w3.org/TR/vocab-dcat/

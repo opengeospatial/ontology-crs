@@ -38,7 +38,7 @@ Geographic information — Referencing by coordinates."""@en .
     skos:definition "Surface of an analytic ellipsoid defined by three axes of different length. Also referred as scalene ellipsoid."@en .
 
 <https://w3id.org/geosrs/datum> a owl:Ontology ;
-    rdfs:label "SRS Ontology: Geodatum"@en ;
-    vann:preferredNamespacePrefix "geodatum"^^xsd:string ;
+    rdfs:label "SRS Ontology: Datum"@en ;
+    vann:preferredNamespacePrefix "datum"^^xsd:string ;
     vann:preferredNamespaceUri "http://www.opengis.net/ont/srs/datum/"^^xsd:anyURI .
 

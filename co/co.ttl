@@ -4,7 +4,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://w3id.org/geosrs/co> a owl:Ontology ;
-    rdfs:label "SRS Ontology: Geoco"@en ;
-    vann:preferredNamespacePrefix "geoco"^^xsd:string ;
+    rdfs:label "SRS Ontology: Co"@en ;
+    vann:preferredNamespacePrefix "co"^^xsd:string ;
     vann:preferredNamespaceUri "http://www.opengis.net/ont/srs/co/"^^xsd:anyURI .
 

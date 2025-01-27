@@ -11,7 +11,7 @@
     skos:definition "Links a coordinate reference system to a cylindrical coordinate system"@en .
 
 <https://w3id.org/geosrs/cs> a owl:Ontology ;
-    rdfs:label "SRS Ontology: Geocs"@en ;
-    vann:preferredNamespacePrefix "geocs"^^xsd:string ;
+    rdfs:label "SRS Ontology: Cs"@en ;
+    vann:preferredNamespacePrefix "cs"^^xsd:string ;
     vann:preferredNamespaceUri "http://www.opengis.net/ont/srs/cs/"^^xsd:anyURI .
 

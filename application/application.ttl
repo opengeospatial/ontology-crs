@@ -4,7 +4,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://w3id.org/geosrs/application> a owl:Ontology ;
-    rdfs:label "SRS Ontology: Geoapplication"@en ;
-    vann:preferredNamespacePrefix "geoapplication"^^xsd:string ;
+    rdfs:label "SRS Ontology: Application"@en ;
+    vann:preferredNamespacePrefix "application"^^xsd:string ;
     vann:preferredNamespaceUri "http://www.opengis.net/ont/srs/application/"^^xsd:anyURI .
 

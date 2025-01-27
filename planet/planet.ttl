@@ -4,7 +4,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://w3id.org/geosrs/planet> a owl:Ontology ;
-    rdfs:label "SRS Ontology: Geoplanet"@en ;
-    vann:preferredNamespacePrefix "geoplanet"^^xsd:string ;
+    rdfs:label "SRS Ontology: Planet"@en ;
+    vann:preferredNamespacePrefix "planet"^^xsd:string ;
     vann:preferredNamespaceUri "http://www.opengis.net/ont/srs/planet/"^^xsd:anyURI .
 

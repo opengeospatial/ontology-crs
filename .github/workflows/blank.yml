@@ -20,6 +20,8 @@ jobs:
     
     - name: Run Metanorma 🔧
       run: |
+         sudo apt-get update 
+         sudo apt-get install asciidoctor
          mkdir site
          mkdir site/spec
          mkdir site/respec

@@ -22,7 +22,9 @@ jobs:
       run: |
          mkdir site
          mkdir site/spec
-         metanorma site generate --agree-to-terms -o site/spec/     
+         mkdir site/respec
+         metanorma site generate --agree-to-terms -o site/spec/
+         asciidoctor documents/document.adoc
     - name: Deploy 🚀
       uses: JamesIves/github-pages-deploy-action@releases/v4
       with:

@@ -1,0 +1,84 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.min.js"></script>
+</head>
+<body>
+<header style="position:fixed;width:100%" id="topNav">
+  <nav>
+    <a href="https://opengeospatial.github.io/ontology-crs/core/">Core Ontology</a>
+    <a href="https://opengeospatial.github.io/ontology-crs/cs/">Coordinate System Module</a>
+    <a href="https://opengeospatial.github.io/ontology-crs/co/">Coordinate Operations Module</a>
+    <a href="https://opengeospatial.github.io/ontology-crs/datum/">Datum Module</a>
+    <a href="https://opengeospatial.github.io/ontology-crs/application/">SRS Application Module</a>
+    <a href="https://opengeospatial.github.io/ontology-crs/planet/">Planet Module</a>
+    <a href="https://opengeospatial.github.io/ontology-crs/projection/">Projections Module</a>
+    <a href="https://opengeospatial.github.io/ontology-crs/alignments/">Alignments</a>
+</nav>
+<h3>CRS Ontology documentation</h3>
+</header>
+<div class="content">
+  <br/><br/>
+    <h3 id="geosparql10">CRS Ontology</h3>
+  In this repository we specify vocabularies to describe coordinate and spatial reference systems and their components.<br>
+  The vocabularies will be more fleshed out as time goes by and are until a release to be considered work in progress.<br>
+  Current anticipated vocabularies are:
+  <ul> 
+    <li>Alignments: Alignments of the vocabulary to other vocabularies representing CRS</li>
+    <li>Application Module: Capturing typical applications of defined SRS</li>
+    <li>Core Ontology: Representing core parts for the specification of a CRS</li>
+    <li>Coordinate System Module: Representing coordinate system types and their parameters</li>
+    <li>Coordinate Operation Module: Representing operations on coordinates</li>
+    <li>Datum Module: Representing datum types and their parameters</li>
+    <li>Projection Module: Representing common projections and their parameters</li>
+    <li>Planet Module: Representing planets and their approximations e.g. as Ellipsoids</li>
+  </ul>
+</div>
+  <h3>Related Work</h3>
+  <ul>
+    <li><a href="https://data.ign.fr/def/ignf/20190213.en.htm">IGN CRS Ontology</a></li>
+    <li><a href="https://www.iso.org/standard/74039.html">ISO 19111:2019 Spatial Referencing By Coordinates</a></li>
+    <li><a href="https://github.com/situx/proj4rdf">Proj4RDF Projekt</a></li>
+  </ul>
+<footer class="site-footer">
+
+  <div class="wrapper">
+
+    <h5 class="footer-heading">CRS Ontology Working Group Github Page</h5>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list" style="list-style-type:none;">
+          <li>CRS ontology working Group Github Page</li>
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2">
+        <!--<ul class="social-media-list" style="list-style-type:none;">
+          <li>
+            <a href="https://opengeospatial.github.io/ogc-geosparql/blog/">Meeting Notes</a>
+          </li>
+        </ul>-->
+      </div>
+
+      <div class="footer-col footer-col-3">
+        <p>Rescources and development versions of the CRS ontology group</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+<script>
+$( document ).ready(function() {
+var topHeight = $('#topNav').height();
+//var bottomHeight = $('#bottomNav').height();
+$('.content').css({ paddingTop : topHeight + 5 + 'px' });
+//$('body').css({ paddingBottom : bottomHeight + 5 + 'px' });
+});
+</script>
+</html>

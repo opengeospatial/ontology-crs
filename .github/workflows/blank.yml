@@ -3,7 +3,36 @@ name: Ontology Documentation CI
 on: [push]
 
 jobs:
-     
+ 
+  buildspec:
+    name: Build Metanorma Standard
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    
+    - uses: actions/cache@v3
+      with:
+        path: ~/.fontist
+        key: fontist-ubuntu-latest
+        restore-keys: fontist-ubuntu-latest
+
+    - uses: actions-mn/setup@main
+    
+    - name: Run Metanorma 🔧
+      run: |
+         mkdir site
+         mkdir site/spec
+         metanorma site generate --agree-to-terms -o site/spec/     
+    - name: Deploy 🚀
+      uses: JamesIves/github-pages-deploy-action@releases/v4
+      with:
+         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+         BRANCH: gh-pages
+         clean: false
+         FOLDER: site/  
+  
+  
+  
   build:
 
     runs-on: ubuntu-latest
@@ -22,12 +51,19 @@ jobs:
          python3 scripts/srsbuild.py
          mkdir docs
          mv *.ttl docs/
+         mv index.html docs/
          cd docs
-         rm crsdraft.ttl geosrs.ttl
          mkdir application
          pylode -o application/index.html -i application.ttl
          mv application.ttl application/
+         mkdir alignments
+         pylode -o alignments/index.html -i alignments.ttl
+         mv alignments.ttl alignments/
+         mkdir core
+         mv index.ttl core/
+         cd core
          pylode -o index.html -i index.ttl
+         cd ..
          mkdir co
          pylode -o co/index.html -i co.ttl
          mv co.ttl co/
@@ -43,6 +79,7 @@ jobs:
          mkdir projection
          pylode -o projection/index.html -i projection.ttl
          mv projection.ttl projection/
+         rm objprop.ttl datatypeprop.ttl 
     - name: Deploy 🚀
       uses: JamesIves/github-pages-deploy-action@v4.3.3
       with:

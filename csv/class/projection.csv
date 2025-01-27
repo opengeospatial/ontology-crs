@@ -3,9 +3,9 @@ geoprojection:A4Projection,geoprojection:LenticularProjection,A4 Projection,,,,g
 geoprojection:AdamsProjection,geoprojection:ConformalProjection,Adams Projection,,,,geocrs:AdamsProjection,,Extension
 geoprojection:AdamsWorldInASquareIIProjection,geoprojection:ConformalProjection,Adams World In A Square II Projection,,,,geocrs:AdamsWorldInASquareIIProjection,,Extension
 geoprojection:AdamsWorldInASquareIProjection,geoprojection:ConformalProjection,Adams World In A Square I Projection,,,,geocrs:AdamsWorldInASquareIProjection,,Extension
-geoprojection:AiryProjection,geoprojection:MinimumErrorProjection,Airy Projection,,,,geocrs:AiryProjection,,Extension
+geoprojection:AiryProjection,geoprojection:MinimumErrorProjection,Airy Projection,"An azimuthal minimum error projection for the region within the small or great circle defined by an angular distance, from the tangency point of the plane",,,geocrs:AiryProjection,,Extension
 geoprojection:AitoffObliqueProjection,geoprojection:PseudoAzimuthalProjection,Aitoff Oblique Projection,,,,geocrs:AitoffObliqueProjection,,Extension
-geoprojection:AitoffProjection,geoprojection:PseudoAzimuthalProjection,Aitoff Projection,,,,geocrs:AitoffProjection,,Extension
+geoprojection:AitoffProjection,geoprojection:PseudoAzimuthalProjection,Aitoff Projection,A modified azimuthal projection whose graticule takes the form of an ellipse,,,geocrs:AitoffProjection,,Extension
 geoprojection:AlbersEqualAreaProjection,geoprojection:EqualAreaProjection,Albers Equal Area Projection,,,,geocrs:AlbersEqualAreaProjection,,Extension
 geoprojection:AmericanPolyconicProjection,geoprojection:PseudoConicalProjection,American Polyconic Projection,,,,geocrs:AmericanPolyconicProjection,,Extension
 geoprojection:ApianGlobularIProjection,geoprojection:GlobularProjection,Apian Globular I Projection,,,,geocrs:ApianGlobularIProjection,,Extension
@@ -22,13 +22,13 @@ geoprojection:AzimuthalProjection,,Azimuthal Projection,,,,geocrs:AzimuthalProje
 geoprojection:BSAMCylindricalProjection,geoprojection:CylindricalStereographicProjection,BSAM Cylindrical Projection,,,,geocrs:BSAMCylindricalProjection,,Extension
 geoprojection:BaconGlobularProjection,geoprojection:GlobularProjection,Bacon Globular Projection,,,,geocrs:BaconGlobularProjection,,Extension
 geoprojection:BakerDinomicProjection,geoprojection:CompromiseProjection,Baker Dinomic Projection,,,,geocrs:BakerDinomicProjection,,Extension
-geoprojection:BalthasartProjection,geoprojection:CylindricalEqualArea,Balthasart Projection,,,,geocrs:BalthasartProjection,,Extension
+geoprojection:BalthasartProjection,geoprojection:CylindricalEqualArea,Balthasart Projection,"A cylindrical equal-area projection that uses a standard parallel of phi_s=50 degrees",,,geocrs:BalthasartProjection,,Extension
 geoprojection:BaranyiIIIProjection,geoprojection:PseudoCylindricalProjection,Baranyi III Projection,,,,geocrs:BaranyiIIIProjection,,Extension
 geoprojection:BaranyiIIProjection,geoprojection:PseudoCylindricalProjection,Baranyi II Projection,,,,geocrs:BaranyiIIProjection,,Extension
 geoprojection:BaranyiIProjection,geoprojection:PseudoCylindricalProjection,Baranyi I Projection,,,,geocrs:BaranyiIProjection,,Extension
 geoprojection:BaranyiIVProjection,geoprojection:PseudoCylindricalProjection,Baranyi IV Projection,,,,geocrs:BaranyiIVProjection,,Extension
-geoprojection:BartholomewProjection,geoprojection:WinkelTripelProjection,Batholomew Projection,,,,geocrs:BartholomewProjection,,Extension
-geoprojection:BehrmannProjection,geoprojection:CylindricalEqualArea,Behrmann Projection,,,,geocrs:BehrmannProjection,,Extension
+geoprojection:BartholomewProjection,geoprojection:WinkelTripelProjection,Bartholomew Projection,,,,geocrs:BartholomewProjection,,Extension
+geoprojection:BehrmannProjection,geoprojection:CylindricalEqualArea,Behrmann Projection,"A cylindrical equal-area map projection with standard parallels set at 30° north and south",,,geocrs:BehrmannProjection,,Extension
 geoprojection:BerghausStarProjection,geoprojection:EquidistantProjection,Berghaus Star Projection,,,,geocrs:BerghausStarProjection,,Extension
 geoprojection:BertinProjection,geoprojection:CompromiseProjection,Bertin Projection,,,,geocrs:BertinProjection,,Extension
 geoprojection:BipolarObliqueConicConformalProjection,geoprojection:ConicalProjection,Bipolar Oblique Conic Conformal Projection,,,,geocrs:BipolarObliqueConicConformalProjection,,Extension
@@ -43,13 +43,13 @@ geoprojection:BriesemeisterProjection,geoprojection:LenticularProjection,Briesem
 geoprojection:BromleyProjection,geoprojection:PseudoCylindricalProjection,Bromley Projection,,,,geocrs:BromleyProjection,,Extension
 geoprojection:CabotProjection,geoprojection:PseudoCylindricalProjection,Cabot Projection,,,,geocrs:CabotProjection,,Extension
 geoprojection:CahillKeyesProjection,geoprojection:PolyhedralProjection,Cahill Keyes Projection,,,,geocrs:CahillKeyesProjection,,Extension
-geoprojection:CassiniProjection,geoprojection:EquidistantProjection,Cassini Projection,,,,geocrs:CassiniProjection,,Extension
+geoprojection:CassiniProjection,geoprojection:EquidistantProjection,Cassini Projection,"A map projection first described in an approximate form by César-François Cassini de Thury in 1745",,,geocrs:CassiniProjection,,Extension
 geoprojection:CentralConicProjection,geoprojection:ConicalProjection,Central Conic Projection,,,,geocrs:CentralConicProjection,,Extension
 geoprojection:CentralCylindricalProjection,geoprojection:PerspectiveProjection,Central Cylindrical Projection,,,,geocrs:CentralCylindricalProjection,,Extension
 geoprojection:ChamberlinTrimetricProjection,geoprojection:CompromiseProjection,Chamberlin Trimetric Projection,,,,geocrs:ChamberlinTrimetricProjection,,Extension
 geoprojection:CiricIProjection,geoprojection:LenticularProjection,Ciric I Projection,,,,geocrs:CiricIProjection,,Extension
 geoprojection:CollignonButterflyProjection,geoprojection:PolyhedralProjection,Collignon Butterfly Projection,,,,geocrs:CollignonButterflyProjection,,Extension
-geoprojection:CollignonProjection,geoprojection:PseudoCylindricalProjection,Collignon Projection,,,,geocrs:CollignonProjection,,Extension
+geoprojection:CollignonProjection,geoprojection:PseudoCylindricalProjection,Collignon Projection,"An equal-area pseudocylindrical projection that maps the sphere onto a triangle or diamond",,,geocrs:CollignonProjection,,Extension
 geoprojection:ColombiaUrbanProjection,,Colombia Urban Projection,,,,geocrs:ColombiaUrbanProjection,,Extension
 geoprojection:CompactMillerProjection,geoprojection:CylindricalProjection,Compact Miller Projection,,,,geocrs:CompactMillerProjection,,Extension
 geoprojection:CompromiseProjection,,Compromise Projection,,,,geocrs:CompromiseProjection,,Extension
@@ -186,7 +186,7 @@ geoprojection:MurdochIIProjection,geoprojection:ConicalProjection,Murdoch II Pro
 geoprojection:MurdochIProjection,geoprojection:ConicalProjection,Murdoch I Projection,,,,geocrs:MurdochIProjection,,Extension
 geoprojection:MyrahedalProjection,geoprojection:PolyhedralProjection,Myrahedal Projection,,,,geocrs:MyrahedalProjection,,Extension
 geoprojection:NaturalEarth2Projection,geoprojection:PseudoCylindricalProjection,Natural Earth 2 Projection,,,,geocrs:NaturalEarth2Projection,,Extension
-geoprojection:NaturalEarthProjection,geoprojection:PseudoCylindricalProjection,Natural Earth Projection,,,,geocrs:NaturalEarthProjection,,Extension
+geoprojection:NaturalEarthProjection,geoprojection:PseudoCylindricalProjection,Natural Earth Projection,"A pseudocylindrical map projection designed by Tom Patterson and introduced in 2008",,,geocrs:NaturalEarthProjection,,Extension
 geoprojection:NellHammerProjection,geoprojection:PseudoCylindricalProjection,Nell-Hammer Projection,,,,geocrs:NellHammerProjection,,Extension
 geoprojection:NellProjection,geoprojection:PseudoCylindricalProjection,Nell Projection,,,,geocrs:NellProjection,,Extension
 geoprojection:NicolosiGlobularProjection,geoprojection:PseudoConicalProjection,Nicolosi Globular Projection,,,,geocrs:NicolosiGlobularProjection,,Extension

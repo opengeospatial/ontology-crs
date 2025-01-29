@@ -14,7 +14,7 @@
 - else
   %section{:class=>["sect#{slevel}", role]}
     - snum = @numbered && @caption.nil? && slevel <= (@document.attr 'sectnumlevels', 3).to_i ? %(#{sectnum} ) : nil
-    - # %span{:id=>@id}=%(#{anchor}#{link}#{snum}#{captioned_title}#{link && '</a>'})
+    - haml_tag "h#{slevel + 1}##{@id}", %(#{anchor}#{link}#{snum}#{captioned_title}#{link && '</a>'})
     - if slevel == 1
       .sectionbody
         =content

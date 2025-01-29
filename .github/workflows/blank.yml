@@ -22,7 +22,8 @@ jobs:
       run: |
          sudo apt-get update 
          sudo apt-get install asciidoctor
-         sudo gem install tilt haml thread_safe concurrent-ruby
+         sudo gem install tilt thread_safe concurrent-ruby
+         sudo gem install haml -v 5.2.2
          mkdir site
          mkdir site/spec
          mkdir site/respec

@@ -65,7 +65,7 @@
   %body{:id => @id, :class=>[doctype, ((attr? 'toc-class') && (attr? :toc) && (attr? 'toc-placement', 'auto') ? "#{attr 'toc-class'} toc-#{attr 'toc-position', 'left'}" : nil)], :style=>("max-width: #{attr 'max-width'};" if (attr? 'max-width'))}
     - unless noheader
       -# AsciiDoc leaves an empty header div even if there's no doctitle
-      #header
+      %section{:id=> "header"}
         - if has_header?
           - unless notitle
             %h1=@header.title

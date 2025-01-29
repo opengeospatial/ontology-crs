@@ -94,7 +94,7 @@
           #toc{:class=>(attr 'toc-class', 'toc')}
             #toctitle=attr 'toc-title'
             =converter.convert self, 'outline'
-    #content
+    %section
       =content
     - unless !footnotes? || attr?(:nofootnotes)
       #footnotes

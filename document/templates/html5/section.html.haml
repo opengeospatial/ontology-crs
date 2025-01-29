@@ -12,7 +12,7 @@
   %h1{:id=>@id, :class=>"sect0"}=%(#{anchor}#{link}#{title}#{link && '</a>'})
   =content
 - else
-  %section{:class=>["sect#{slevel}", role]}
+  %section{:class=>["sect#{slevel}", role],:id=>@id}
     - snum = @numbered && @caption.nil? && slevel <= (@document.attr 'sectnumlevels', 3).to_i ? %(#{sectnum} ) : nil
     - haml_tag "h#{slevel + 1}##{@id}", %(#{anchor}#{link}#{snum}#{captioned_title}#{link && '</a>'})
     - if slevel == 1

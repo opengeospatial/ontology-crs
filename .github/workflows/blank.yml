@@ -22,11 +22,11 @@ jobs:
       run: |
          sudo apt-get update 
          sudo apt-get install asciidoctor
+         sudo gem install tilt haml thread_safe
          mkdir site
          mkdir site/spec
          mkdir site/respec
          metanorma site generate --agree-to-terms -o site/spec/
-         gem install tilt haml thread_safe
          asciidoctor document/document.adoc -T document/templates/html5/ -o site/respec/index.html
     - name: Deploy 🚀
       uses: JamesIves/github-pages-deploy-action@releases/v4

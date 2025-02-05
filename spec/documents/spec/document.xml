@@ -155,26 +155,46 @@
 
 <clause id="_other_conventions" obligation="normative">
 <title>Other conventions</title>
-<p id="_efd68226-e78c-3993-433c-46819e5f3856"><Place/>other convention needed with its corresponding title&gt; == Core</p>
-
-<p id="core">This clause establishes the <strong>Core</strong> Requirements class, with IRI <tt>/req/core</tt>, which has a corresponding Conformance Class, <strong>Core</strong>, with IRI <tt>/conf/core</tt>. == Coordinate Operation Module</p>
-
-<p id="co">This clause establishes the <strong>Co</strong> Requirements class, with IRI <tt>/req/co</tt>, which has a corresponding Conformance Class, <strong>Co</strong>, with IRI <tt>/conf/co</tt>.</p>
+<p id="_cdd60544-063c-69ac-3de3-c2b828251e39">&lt;Place any other convention needed with its corresponding title&gt;</p>
 </clause>
+</clause>
+
+<clause id="_core" obligation="normative">
+<title>Core</title>
+<p id="core">This clause establishes the <strong>Core</strong> Requirements class, with IRI <tt>/req/core</tt>, which has a corresponding Conformance Class, <strong>Core</strong>, with IRI <tt>/conf/core</tt>.</p>
+</clause>
+
+<clause id="_coordinate_operation_module" obligation="normative">
+<title>Coordinate Operation Module</title>
+<p id="co">This clause establishes the <strong>Co</strong> Requirements class, with IRI <tt>/req/co</tt>, which has a corresponding Conformance Class, <strong>Co</strong>, with IRI <tt>/conf/co</tt>.</p>
 </clause>
 
 <clause id="_coordinate_system_module" obligation="normative">
 <title>Coordinate System Module</title>
-<p id="cs">This clause establishes the <strong>CS</strong> Requirements class, with IRI <tt>/req/cs</tt>, which has a corresponding Conformance Class, <strong>CS</strong>, with IRI <tt>/conf/cs</tt>. == Datum Module</p>
+<p id="cs">This clause establishes the <strong>CS</strong> Requirements class, with IRI <tt>/req/cs</tt>, which has a corresponding Conformance Class, <strong>CS</strong>, with IRI <tt>/conf/cs</tt>.</p>
+</clause>
 
-<p id="datum">This clause establishes the <strong>Datum</strong> Requirements class, with IRI <tt>/req/datum</tt>, which has a corresponding Conformance Class, <strong>Datum</strong>, with IRI <tt>/conf/datum</tt>. == SRS Application Module</p>
+<clause id="_datum_module" obligation="normative">
+<title>Datum Module</title>
+<p id="datum">This clause establishes the <strong>Datum</strong> Requirements class, with IRI <tt>/req/datum</tt>, which has a corresponding Conformance Class, <strong>Datum</strong>, with IRI <tt>/conf/datum</tt>.</p>
+</clause>
 
-<p id="srsapp">This clause establishes the <strong>SRSAPP</strong> Requirements class, with IRI <tt>/req/srsapp</tt>, which has a corresponding Conformance Class, <strong>SRSAPP</strong>, with IRI <tt>/conf/srsapp</tt>. == Projections Module</p>
+<clause id="_srs_application_module" obligation="normative">
+<title>SRS Application Module</title>
+<p id="srsapp">This clause establishes the <strong>SRSAPP</strong> Requirements class, with IRI <tt>/req/srsapp</tt>, which has a corresponding Conformance Class, <strong>SRSAPP</strong>, with IRI <tt>/conf/srsapp</tt>.</p>
+</clause>
 
-<p id="proj">This clause establishes the <strong>PROJ</strong> Requirements class, with IRI <tt>/req/proj</tt>, which has a corresponding Conformance Class, <strong>PROJ</strong>, with IRI <tt>/conf/proj</tt>. == Plant Module</p>
+<clause id="_projections_module" obligation="normative">
+<title>Projections Module</title>
+<p id="proj">This clause establishes the <strong>PROJ</strong> Requirements class, with IRI <tt>/req/proj</tt>, which has a corresponding Conformance Class, <strong>PROJ</strong>, with IRI <tt>/conf/proj</tt>.</p>
+</clause>
 
+<clause id="_planet_module" obligation="normative">
+<title>Planet Module</title>
 <p id="planet">This clause establishes the <strong>PLANET</strong> Requirements class, with IRI <tt>/req/planet</tt>, which has a corresponding Conformance Class, <strong>PLANET</strong>, with IRI <tt>/conf/planet</tt>.</p>
 </clause>
+
+
 
 
 
@@ -273,9 +293,11 @@
 </tr></tbody>
 </table>
 </clause>
-</annex><annex id="_revision_history" obligation="informative">
+</annex><annex id="_shacl_shapes" obligation="informative">
+<title>SHACL Shapes</title>
+<floating-title id="_overview_2" depth="2" type="floating-title">Overview</floating-title></annex><annex id="_revision_history" obligation="informative">
 <title>Revision History</title>
-<table id="_27fe853d-4d2e-5610-29a4-b2d9e56d202d" unnumbered="true" width="90%"><thead><tr><th valign="middle" align="left">Date</th>
+<table id="_b6b59374-daa1-595c-c188-3a2639006243" unnumbered="true" width="90%"><thead><tr><th valign="middle" align="left">Date</th>
 <th valign="middle" align="left">Release</th>
 <th valign="middle" align="left">Author</th>
 <th valign="middle" align="left">Primary clauses modified</th>

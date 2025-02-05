@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ogc-standard xmlns="https://www.metanorma.org/ns/ogc" type="semantic" version="2.6.9" schema-version="v1.4.1">
+<bibdata type="standard">
+<title language="en" format="text/plain">OGC document title</title>
+<uri type="xml">./document.xml</uri><uri type="pdf">./document.pdf</uri><uri type="doc">./document.doc</uri><docidentifier type="ogc-external">http://www.opengis.net/docs/CS/3DTiles/1.0</docidentifier><docidentifier type="ogc-internal" primary="true">18-053r2</docidentifier><docnumber>18-053r2</docnumber><date type="published"><on>2019-01-31</on></date><date type="issued"><on>2018-12-14</on></date><date type="received"><on>2018-06-04</on></date><contributor><role type="editor"/><person>
+<name><completename>Patrick Cozzi</completename></name>
+</person></contributor><contributor><role type="editor"/><person>
+<name><completename>Sean Lilley</completename></name>
+</person></contributor><contributor><role type="publisher"/><organization>
+<name>Open Geospatial Consortium</name>
+<abbreviation>OGC</abbreviation></organization></contributor><edition>1.0</edition><language>en</language><script>Latn</script><abstract><p>&lt;Insert Abstract Text here&gt;</p>
+</abstract><status><stage>approved</stage></status><copyright><from>2025</from><owner><organization>
+<name>Open Geospatial Consortium</name>
+<abbreviation>OGC</abbreviation></organization></owner></copyright><keyword>keyword_1</keyword><keyword>keyword_2</keyword><keyword>keyword_3</keyword><keyword>etc.</keyword><ext><doctype>community-standard</doctype><flavor>ogc</flavor><editorialgroup><committee>technical</committee></editorialgroup></ext></bibdata><metanorma-extension><presentation-metadata><name>color-admonition-caution</name><value>rgb(79, 129, 189)</value></presentation-metadata><presentation-metadata><name>color-admonition-editor</name><value>rgb(79, 129, 189)</value></presentation-metadata><presentation-metadata><name>color-admonition-important</name><value>rgb(79, 129, 189)</value></presentation-metadata><presentation-metadata><name>color-admonition-note</name><value>rgb(79, 129, 189)</value></presentation-metadata><presentation-metadata><name>color-admonition-safety-precaution</name><value>rgb(79, 129, 189)</value></presentation-metadata><presentation-metadata><name>color-admonition-tip</name><value>rgb(79, 129, 189)</value></presentation-metadata><presentation-metadata><name>color-admonition-todo</name><value>rgb(79, 129, 189)</value></presentation-metadata><presentation-metadata><name>color-admonition-warning</name><value>rgb(79, 129, 189)</value></presentation-metadata><presentation-metadata><name>color-background-definition-description</name><value>rgb(242, 251, 255)</value></presentation-metadata><presentation-metadata><name>color-background-definition-term</name><value>rgb(215, 243, 255)</value></presentation-metadata><presentation-metadata><name>color-background-page</name><value>rgb(33, 55, 92)</value></presentation-metadata><presentation-metadata><name>color-background-table-header</name><value>rgb(33, 55, 92)</value></presentation-metadata><presentation-metadata><name>color-background-table-row-even</name><value>rgb(252, 246, 222)</value></presentation-metadata><presentation-metadata><name>color-background-table-row-odd</name><value>rgb(254, 252, 245)</value></presentation-metadata><presentation-metadata><name>color-background-term-admitted-label</name><value>rgb(223, 236, 249)</value></presentation-metadata><presentation-metadata><name>color-background-term-deprecated-label</name><value>rgb(237, 237, 238)</value></presentation-metadata><presentation-metadata><name>color-background-term-preferred-label</name><value>rgb(249, 235, 187)</value></presentation-metadata><presentation-metadata><name>color-background-text-label-legacy</name><value>rgb(33, 60, 107)</value></presentation-metadata><presentation-metadata><name>color-secondary-shade-1</name><value>rgb(237, 193, 35)</value></presentation-metadata><presentation-metadata><name>color-secondary-shade-2</name><value>rgb(246, 223, 140)</value></presentation-metadata><presentation-metadata><name>color-text</name><value>rgb(88, 89, 91)</value></presentation-metadata><presentation-metadata><name>color-text-title</name><value>rgb(33, 55, 92)</value></presentation-metadata><presentation-metadata><name>TOC Heading Levels</name><value>2</value></presentation-metadata><presentation-metadata><name>HTML TOC Heading Levels</name><value>2</value></presentation-metadata><presentation-metadata><name>DOC TOC Heading Levels</name><value>2</value></presentation-metadata><presentation-metadata><name>PDF TOC Heading Levels</name><value>2</value></presentation-metadata></metanorma-extension>
+<boilerplate><copyright-statement>
+
+<clause id="_copyright_notice" obligation="normative">
+<title>Copyright notice</title>
+<p id="_09cc624e-08fe-4298-0e48-fd64aab88de3" align="center">Copyright © 2025 Open Geospatial Consortium<br/> To obtain additional rights of use, visit<link target="https://www.ogc.org/legal"/></p>
+</clause>
+
+<clause id="_note" obligation="normative">
+<title>Note</title>
+<p id="_11e88dba-9912-1a89-a82d-7291bf232191" align="left">Attention is drawn to the possibility that some of the elements of this document may be the subject of patent rights. The Open Geospatial Consortium shall not be held responsible for identifying any or all such patent rights.</p>
+
+<p id="_15067213-c07b-cba0-7e18-395ab2e00ab3" align="left">Recipients of this document are requested to submit, with their comments, notification of any relevant patent claims or other intellectual property rights of which they may be aware that might be infringed by any implementation of the standard set forth in this document, and to provide supporting documentation.</p>
+</clause>
+</copyright-statement>
+
+<license-statement>
+
+<clause id="_license_agreement" obligation="normative">
+<title>License Agreement</title>
+<p id="_f5fe34fd-12e2-2bb7-8cd6-9d4cffa96538">Use of this document is subject to the license agreement at <link target="https://www.ogc.org/license"/></p>
+</clause>
+</license-statement>
+
+<legal-statement>
+
+<clause id="_notice" obligation="normative">
+<title>Notice</title>
+<p id="_2089b793-3e73-2e15-8674-d26cb3c9e594">This document is an OGC Member approved international standard. This document is available on a royalty free, non-discriminatory basis. Recipients of this document are invited to submit, with their comments, notification of any relevant patent rights of which they are aware and to provide supporting documentation.</p>
+</clause>
+</legal-statement>
+
+<feedback-statement>
+
+</feedback-statement>
+</boilerplate><preface><abstract id="_abstract"><title>Abstract</title><p id="_ea8b918b-259f-ad32-41cd-bf6720709423">&lt;Insert Abstract Text here&gt;</p>
+</abstract><foreword id="_b7a5d91c-6d74-27e2-768e-ba54cb48ed08" obligation="informative">
+<title>Preface</title>
+<note id="_32582aeb-afff-179b-bda3-c706a3248239"><p id="_a5a99d13-b6ed-45b3-383e-20c82abc3168">Insert Preface Text here. Give OGC specific commentary: describe the technical content, reason for document, history of the document and precursors, and plans for future work.</p>
+
+<p id="_f5454b55-d902-bc24-7869-c785e952bc3f">There are two ways to specify the Preface: “simple clause” or “full clasuse”</p>
+
+<p id="_11855748-67bd-7cce-f691-b076770e1545">If the Preface does not contain subclauses, it is considered a simple preface clause. This one is entered as text after the <tt>.Preface</tt> label and must be placed between the AsciiDoc document attributes and the first AsciiDoc section title. It should not be give a section title of its own.</p>
+
+<p id="_f2bb641d-c955-c74f-18a8-6233a00a9a84">If the Preface contains subclauses, it needs to be encoded as a full preface clause. This one is recognized as a full Metanorma AsciiDoc section with te title “Preface”, i.e. <tt>== Preface</tt>. (Simple preface content can also be encoded like full preface.)</p>
+</note>
+</foreword><clause id="_source_of_the_content_for_this_ogc_document" obligation="informative">
+<title>Source of the content for this OGC document</title>
+</clause><clause id="_validity_of_content" obligation="informative">
+<title>Validity of content</title>
+</clause><clause id="_future_work" obligation="informative">
+<title>Future work</title>
+<note id="_834e04a4-b415-8288-780b-bbc700cde5b7"><p id="_7417f55b-d58a-c349-5c8f-a0bdc3dc49d7">If you need to place any further sections in the preface area use the  <tt>[.preface]</tt> attribute.</p>
+</note>
+</clause><clause id="_security_considerations" type="security" obligation="informative">
+<title>Security Considerations</title>
+<p id="_f9c81896-dad2-6e63-55d0-39af8ddf94a4">No security considerations have been made for this Standard.</p>
+</clause><submitters id="_submitters">
+<title>Submitters</title>
+<p id="_c4485abb-cbc5-a7e8-5e00-c9c58a531cc9">All questions regarding this submission should be directed to the editor or the submitters:</p>
+
+<table id="_1cb9b8d3-e3bc-7fbe-a61b-e12e19da9c3f" unnumbered="true"><thead><tr><th valign="middle" align="left">Name</th>
+<th valign="middle" align="left">Affiliation</th>
+<th valign="middle" align="left">OGC member</th>
+</tr></thead>
+<tbody><tr><td valign="middle" align="left">Steve Liang</td>
+<td valign="middle" align="left">University of Calgary, Canada / SensorUp Inc.</td>
+<td valign="middle" align="left">Yes</td>
+</tr></tbody>
+</table>
+</submitters><submitters id="_contributors" type="contributors">
+<title>Contributors</title>
+<p id="_621c4f5b-26a9-89f7-0840-938819089a27">Additional contributors to this Standard include the following:</p>
+
+<p id="_45f943af-cadd-6488-bff5-c1c1376f2096">Individual name(s), Organization</p>
+</submitters></preface><sections>
+
+
+
+
+
+
+
+
+
+
+
+<clause id="_scope" type="scope" obligation="normative">
+<title>Scope</title>
+<p id="_03b9a7d3-051b-0e6f-c7a5-b657ca454854">&lt;Insert Scope text here&gt;<note id="_4be83c66-85a6-3e88-4704-7b65aeeff11c"><p id="_30ac8acc-75f8-0a6e-0cef-e15bd1fec3ef">Give the subject of the document and the aspects of that scope covered by the document.</p>
+</note></p>
+
+
+</clause>
+
+<clause id="_conformance" type="conformance" obligation="normative">
+<title>Conformance</title>
+<p id="_673687f0-e120-ec8b-8ff4-36fa2248dc0a">&lt;Insert conformance content here&gt;<note id="_caebfb69-e4f0-2575-128f-e19010271323"><p id="_d3629a04-c8a0-852a-0004-908058a1fd43">Provide a short description of the content approached in subsequent sections and the main subject of the document</p>
+</note></p>
+
+
+</clause>
+
+
+
+<terms id="_terms_and_definitions" obligation="normative">
+<title>Terms and definitions</title><p id="_7fe04b5b-db41-5d9b-ebe1-463b3a0c16c9">This document uses the terms defined in <link target="https://portal.ogc.org/public_ogc/directives/directives.php">OGC Policy Directive 49</link>, which is based on the ISO/IEC Directives, Part 2, Rules for the structure and drafting of International Standards. In particular, the word “shall” (not “must”) is the verb form used to indicate a requirement to be strictly followed to conform to this document and OGC documents do not use the equivalent phrases in the ISO/IEC Directives, Part 2.</p>
+
+<p id="_e0235fe8-8273-26b4-faeb-a580ad58929f">This document also uses terms defined in the OGC Standard for Modular specifications (<link target="https://portal.opengeospatial.org/files/?artifact_id=34762">OGC 08-131r3</link>), also known as the ‘ModSpec’. The definitions of terms such as standard, specification, requirement, and conformance test are provided in the ModSpec.</p>
+
+<p id="_1448dc16-8929-d666-6525-0249826c75e3">For the purposes of this document, the following additional terms and definitions apply.</p>
+
+<term id="term-example-term"><preferred><expression>
+<name>example term</name>
+</expression>
+</preferred>
+<definition><verbal-definition><p id="_06db0da1-214c-7f57-bd34-fd4f77edb6ed">term used for exemplary purposes</p></verbal-definition></definition>
+
+
+
+
+
+
+ <termnote id="_dba7a326-d460-4fd2-c200-c18e257c490b"><p id="_bfac9a8e-f9a1-75c6-e31d-dca8dc62be58">An example note.</p>
+</termnote><termexample id="_6e5e388f-3384-3fe0-1387-5c648e5561e6"><p id="_2d45db5a-97c4-2358-7890-3aa696c4b809">Here’s an example of an example term.</p>
+</termexample><termsource status="identical" type="authoritative"><origin bibitemid="ISO19101-1" type="inline" citeas=""/></termsource></term>
+</terms>
+
+<clause id="_conventions" obligation="normative">
+<title>Conventions</title>
+<note id="_7b9e461f-b2ef-0e2e-0a14-e6b02a0518cd"><p id="_76880d8e-7493-978d-e608-43521088e07b">This section provides details and examples for any conventions used in the document. Examples of conventions are symbols, abbreviations, use of XML schema, or special notes regarding how to read the document.</p>
+</note>
+
+<clause id="_identifiers" obligation="normative">
+<title>Identifiers</title>
+<p id="_695d051b-6fef-c0b6-5aa8-0fe8fff41091">The normative provisions in this standard are denoted by the URI</p>
+
+<p id="_80aba301-e72e-2d54-7021-ae07ebfcd4ac"><tt><link target="http://www.opengis.net/spec/{standard}/{m.n}"/></tt></p>
+
+<p id="_b80ef2b5-9c5a-dd3d-fe61-4d67ca3270e7">All requirements and conformance tests that appear in this document are denoted by partial URIs which are relative to this base.</p>
+</clause>
+
+<clause id="_other_conventions" obligation="normative">
+<title>Other conventions</title>
+<p id="_efd68226-e78c-3993-433c-46819e5f3856"><Place/>other convention needed with its corresponding title&gt; == Core</p>
+
+<p id="core">This clause establishes the <strong>Core</strong> Requirements class, with IRI <tt>/req/core</tt>, which has a corresponding Conformance Class, <strong>Core</strong>, with IRI <tt>/conf/core</tt>. == Coordinate Operation Module</p>
+
+<p id="co">This clause establishes the <strong>Co</strong> Requirements class, with IRI <tt>/req/co</tt>, which has a corresponding Conformance Class, <strong>Co</strong>, with IRI <tt>/conf/co</tt>.</p>
+</clause>
+</clause>
+
+<clause id="_coordinate_system_module" obligation="normative">
+<title>Coordinate System Module</title>
+<p id="cs">This clause establishes the <strong>CS</strong> Requirements class, with IRI <tt>/req/cs</tt>, which has a corresponding Conformance Class, <strong>CS</strong>, with IRI <tt>/conf/cs</tt>. == Datum Module</p>
+
+<p id="datum">This clause establishes the <strong>Datum</strong> Requirements class, with IRI <tt>/req/datum</tt>, which has a corresponding Conformance Class, <strong>Datum</strong>, with IRI <tt>/conf/datum</tt>. == SRS Application Module</p>
+
+<p id="srsapp">This clause establishes the <strong>SRSAPP</strong> Requirements class, with IRI <tt>/req/srsapp</tt>, which has a corresponding Conformance Class, <strong>SRSAPP</strong>, with IRI <tt>/conf/srsapp</tt>. == Projections Module</p>
+
+<p id="proj">This clause establishes the <strong>PROJ</strong> Requirements class, with IRI <tt>/req/proj</tt>, which has a corresponding Conformance Class, <strong>PROJ</strong>, with IRI <tt>/conf/proj</tt>. == Plant Module</p>
+
+<p id="planet">This clause establishes the <strong>PLANET</strong> Requirements class, with IRI <tt>/req/planet</tt>, which has a corresponding Conformance Class, <strong>PLANET</strong>, with IRI <tt>/conf/planet</tt>.</p>
+</clause>
+
+
+
+
+
+
+</sections><annex id="_alignments" obligation="informative">
+<title>Alignments</title>
+<floating-title id="_overview" depth="2" type="floating-title">Overview</floating-title>
+<p id="_a26b1278-6ec4-b483-762b-7ca96d4574c3">The prefixes used for the ontologies mapped to in all following sections are given in the following table.</p>
+
+<table id="_844caddc-c001-4654-f05e-127e524d7027"><colgroup><col width="14.2857%"/><col width="85.7143%"/></colgroup>
+<name>Alignment: Namespaces</name>
+<tbody><tr><td valign="middle" align="left">ign:</td>
+<td valign="middle" align="left"><link target="http://data.ign.fr/def/ignf#"/></td>
+</tr><tr><td valign="middle" align="left">iso19111:</td>
+<td valign="middle" align="left"><link target="http://def.isotc211.org/iso19112/2019/SpatialReferencingByGeographicIdentifier#"/></td>
+</tr><tr><td valign="middle" align="left">geosrs:</td>
+<td valign="middle" align="left"><link target="http://www.opengis.net/ont/geosparql#"/></td>
+</tr><tr><td valign="middle" align="left">ifc:</td>
+<td valign="middle" align="left"><link target="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL/"/></td>
+</tr><tr><td valign="middle" align="left">owl:</td>
+<td valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#"/></td>
+</tr><tr><td valign="middle" align="left">prov:</td>
+<td valign="middle" align="left"><link target="http://www.w3.org/ns/prov#"/></td>
+</tr><tr><td valign="middle" align="left">rdf:</td>
+<td valign="middle" align="left"><link target="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/></td>
+</tr><tr><td valign="middle" align="left">rdfs:</td>
+<td valign="middle" align="left"><link target="http://www.w3.org/2000/01/rdf-schema#"/></td>
+</tr></tbody>
+</table>
+
+<clause id="_ign_crs_ontology" obligation="informative">
+<title>IGN CRS Ontology</title>
+<table id="_17ff0440-523f-66b7-9e86-b9c165b458f9">
+<name>Alignment: IGN CRS Ontology</name>
+<thead><tr><th valign="middle" align="left">From Element</th>
+<th valign="middle" align="left">Mapping relation</th>
+<th valign="middle" align="left">To Element</th>
+<th valign="middle" align="left">Notes</th>
+</tr></thead>
+<tbody><tr><td valign="middle" align="left"><eref bibitemid="Class__geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>CoordinateSystem</referenceFrom></locality></localityStack>geosrs:CoordinateSystem</eref></td>
+<td valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#equivalentClass"><tt>owl:equivalentClass</tt></link></td>
+<td valign="middle" align="left"><link target="http://data.ign.fr/def/ignf#CoordinateSystem"><tt>ign:CoordinateSystem</tt></link></td>
+<td valign="middle" align="left">-</td>
+</tr><tr><td valign="middle" align="left"><eref bibitemid="Class__geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>Datum</referenceFrom></locality></localityStack>geosrs:Datum</eref></td>
+<td valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#equivalentClass"><tt>owl:equivalentClass</tt></link></td>
+<td valign="middle" align="left"><link target="http://data.ign.fr/def/ignf#Datum"><tt>ign:Datum</tt></link></td>
+<td valign="middle" align="left">-</td>
+</tr><tr><td valign="middle" align="left"><eref bibitemid="Class__geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>Ellipsoid</referenceFrom></locality></localityStack>geosrs:Ellipsoid</eref></td>
+<td valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#equivalentClass"><tt>owl:equivalentClass</tt></link></td>
+<td valign="middle" align="left"><link target="http://data.ign.fr/def/ignf#Ellipsoid"><tt>ign:Ellipsoid</tt></link></td>
+<td valign="middle" align="left">-</td>
+</tr></tbody>
+</table>
+</clause>
+
+<clause id="_iso_19111_ontology" obligation="informative">
+<title>ISO 19111 Ontology</title>
+<table id="_611182ae-f060-c56d-fa39-e8bf9e8f325d">
+<name>Alignment: ISO 19111 Ontology</name>
+<thead><tr><th valign="middle" align="left">From Element</th>
+<th valign="middle" align="left">Mapping relation</th>
+<th valign="middle" align="left">To Element</th>
+<th valign="middle" align="left">Notes</th>
+</tr></thead>
+<tbody><tr><td valign="middle" align="left"><eref bibitemid="Class__geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>CoordinateSystem</referenceFrom></locality></localityStack>geosrs:CoordinateSystem</eref></td>
+<td valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#equivalentClass"><tt>owl:equivalentClass</tt></link></td>
+<td valign="middle" align="left"><link target="http://def.isotc211.org/iso19112/2019/SpatialReferencingByGeographicIdentifier#CoordinateSystem"><tt>iso19111:CoordinateSystem</tt></link></td>
+<td valign="middle" align="left">-</td>
+</tr><tr><td valign="middle" align="left"><eref bibitemid="Class__geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>Datum</referenceFrom></locality></localityStack>geosrs:Datum</eref></td>
+<td valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#equivalentClass"><tt>owl:equivalentClass</tt></link></td>
+<td valign="middle" align="left"><link target="http://def.isotc211.org/iso19112/2019/SpatialReferencingByGeographicIdentifier#Datum"><tt>iso19111:Datum</tt></link></td>
+<td valign="middle" align="left">-</td>
+</tr><tr><td valign="middle" align="left"><eref bibitemid="Class__geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>Ellipsoid</referenceFrom></locality></localityStack>geosrs:Ellipsoid</eref></td>
+<td valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#equivalentClass"><tt>owl:equivalentClass</tt></link></td>
+<td valign="middle" align="left"><link target="http://def.isotc211.org/iso19112/2019/SpatialReferencingByGeographicIdentifier#Ellipsoid"><tt>iso19111:Ellipsoid</tt></link></td>
+<td valign="middle" align="left">-</td>
+</tr></tbody>
+</table>
+</clause>
+
+<clause id="_ifcowl_ontology" obligation="informative">
+<title>IFCOWL Ontology</title>
+<table id="_630955a7-0ed4-d10c-caea-1b747a29414e">
+<name>Alignment: IFCOWL Ontology</name>
+<thead><tr><th valign="middle" align="left">From Element</th>
+<th valign="middle" align="left">Mapping relation</th>
+<th valign="middle" align="left">To Element</th>
+<th valign="middle" align="left">Notes</th>
+</tr></thead>
+<tbody><tr><td valign="middle" align="left"><eref bibitemid="Class__geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>CRS</referenceFrom></locality></localityStack>geosrs:CRS</eref></td>
+<td valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#equivalentClass"><tt>owl:equivalentClass</tt></link></td>
+<td valign="middle" align="left"><link target="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL/CoordinateReferenceSystem"><tt>ifc:CoordinateReferenceSystem</tt></link></td>
+<td valign="middle" align="left">-</td>
+</tr></tbody>
+</table>
+</clause>
+</annex><annex id="_revision_history" obligation="informative">
+<title>Revision History</title>
+<table id="_27fe853d-4d2e-5610-29a4-b2d9e56d202d" unnumbered="true" width="90%"><thead><tr><th valign="middle" align="left">Date</th>
+<th valign="middle" align="left">Release</th>
+<th valign="middle" align="left">Author</th>
+<th valign="middle" align="left">Primary clauses modified</th>
+<th valign="middle" align="left">Description</th>
+</tr></thead>
+<tbody><tr><td valign="middle" align="left">2016-04-28</td>
+<td valign="middle" align="left">0.1</td>
+<td valign="middle" align="left">G. Editor</td>
+<td valign="middle" align="left">all</td>
+<td valign="middle" align="left">initial version</td>
+</tr></tbody>
+</table>
+</annex><bibliography><references id="_references" normative="true" obligation="informative">
+<title>Normative references</title><p id="_307b20e2-9e40-db56-abbf-2822ab2941cc">The following documents are referred to in the text in such a way that some or all of their content constitutes requirements of this document. For dated references, only the edition cited applies. For undated references, the latest edition of the referenced document (including any amendments) applies.</p>
+
+
+
+
+
+<bibitem id="Smith81"><formattedref format="application/x-isodoc+xml"><em>Identification of Common Molecular Subsequences</em>.
+Smith, T.F., Waterman, M.S., J. Mol. Biol. 147, 195–197 (1981)</formattedref><docidentifier>Identification of Common Molecular Subsequences</docidentifier></bibitem>
+<bibitem id="May06"><formattedref format="application/x-isodoc+xml"><em>ZIB Structure Prediction Pipeline: Composing a Complex Biological Workflow through Web Services</em>.
+May, P., Ehrlich, H.C., Steinke, T. In: Nagel, W.E., Walter,
+W.V., Lehner, W. (eds.) Euro-Par 2006. LNCS, vol. 4128, pp. 1148–1158. Springer,
+Heidelberg (2006)</formattedref><docidentifier>ZIB Structure Prediction Pipeline</docidentifier></bibitem>
+<bibitem id="Grid"><formattedref format="application/x-isodoc+xml"><em>The Grid: Blueprint for a New Computing Infrastructure.</em>,
+Foster, I., Kesselman, C.. Morgan Kaufmann, San Francisco (1999).</formattedref><docidentifier>The Grid</docidentifier></bibitem>
+<bibitem id="Czajkowski01"><formattedref format="application/x-isodoc+xml"><em>Grid Information Services for Distributed Resource Sharing.</em> 
+Czajkowski, K., Fitzgerald, S., Foster, I., Kesselman, C. In: 10th IEEE International Symposium on High
+Performance Distributed Computing, pp. 181–184. IEEE Press, New York (2001)</formattedref><docidentifier>Grid Information Services for Distributed Resource Sharing</docidentifier></bibitem>
+</references><references id="_bibliography" normative="false" obligation="informative">
+<title>Bibliography</title>
+<note id="_155a708c-216d-5804-50a7-1a2723619850"><p id="_9702179a-71de-0d11-425d-60a89a0feed8">The TC has approved Springer LNCS as the official document citation type. Springer LNCS is widely used in technical and computer science journals and other publications For citations in the text please use square brackets and consecutive numbers: [1], [2], [3] Actual References: [n] Journal: Author Surname, A.: Title. Publication Title. Volume number, Issue number, Pages Used (Year Published)</p>
+</note><bibitem id="iso19142" type="standard" schema-version="v1.2.9">
+  <fetched>2025-02-05</fetched>
+  
+<title type="title-intro" format="text/plain" language="en" script="Latn">Geographic information</title>
+
+  
+<title type="title-main" format="text/plain" language="en" script="Latn">Web Feature Service</title>
+
+  
+<title type="main" format="text/plain" language="en" script="Latn">Geographic information — Web Feature Service</title>
+
+  <uri type="src">https://www.iso.org/standard/42136.html</uri>
+  <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:42136:en</uri>
+  <uri type="rss">https://www.iso.org/contents/data/standard/04/21/42136.detail.rss</uri>
+  <docidentifier type="ISO" primary="true">ISO 19142</docidentifier>
+  <docidentifier type="iso-reference">ISO 19142(E)</docidentifier>
+  <docidentifier type="URN">urn:iso:std:iso:19142:stage-90.93</docidentifier>
+  <docnumber>19142</docnumber>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      
+<name>International Organization for Standardization</name>
+
+      <abbreviation>ISO</abbreviation>
+      <uri>www.iso.org</uri>
+    </organization>
+  </contributor>
+  <edition>1</edition>
+  <language>en</language>
+  <language>fr</language>
+  <script>Latn</script>
+  <status>
+    <stage>90</stage>
+    <substage>93</substage>
+  </status>
+  <copyright>
+    <from>2010</from>
+    <owner>
+      <organization>
+        
+<name>ISO</name>
+
+      </organization>
+    </owner>
+  </copyright>
+  <relation type="instanceOf">
+    <bibitem type="standard">
+      <fetched>2025-02-05</fetched>
+      
+<title type="title-intro" format="text/plain" language="en" script="Latn">Geographic information</title>
+
+      
+<title type="title-main" format="text/plain" language="en" script="Latn">Web Feature Service</title>
+
+      
+<title type="main" format="text/plain" language="en" script="Latn">Geographic information — Web Feature Service</title>
+
+      <uri type="src">https://www.iso.org/standard/42136.html</uri>
+      <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:42136:en</uri>
+      <uri type="rss">https://www.iso.org/contents/data/standard/04/21/42136.detail.rss</uri>
+      <docidentifier type="ISO" primary="true">ISO 19142:2010</docidentifier>
+      <docidentifier type="iso-reference">ISO 19142:2010(E)</docidentifier>
+      <docidentifier type="URN">urn:iso:std:iso:19142:stage-90.93</docidentifier>
+      <docnumber>19142</docnumber>
+      <date type="published">
+        <on>2010-12</on>
+      </date>
+      <contributor>
+        <role type="publisher"/>
+        <organization>
+          
+<name>International Organization for Standardization</name>
+
+          <abbreviation>ISO</abbreviation>
+          <uri>www.iso.org</uri>
+        </organization>
+      </contributor>
+      <edition>1</edition>
+      <language>en</language>
+      <language>fr</language>
+      <script>Latn</script>
+      <abstract format="text/plain" language="en" script="Latn">ISO 19142:2010 specifies the behaviour of a web feature service that provides transactions on and access to geographic features in a manner independent of the underlying data store. It specifies discovery operations, query operations, locking operations, transaction operations and operations to manage stored parameterized query expressions.</abstract>
+      <status>
+        <stage>90</stage>
+        <substage>93</substage>
+      </status>
+      <copyright>
+        <from>2010</from>
+        <owner>
+          <organization>
+            
+<name>ISO</name>
+
+          </organization>
+        </owner>
+      </copyright>
+      <place>Geneva</place>
+    </bibitem>
+
+  </relation>
+  <place>Geneva</place>
+</bibitem><bibitem id="dcat">
+  <formattedref format="application/x-isodoc+xml">W3C: <strong>Data Catalog Vocabulary,</strong> W3C Recommendation 16 January 2014, <link target="https://www.w3.org/TR/vocab-dcat/"/></formattedref>
+  <docidentifier>DCAT</docidentifier>
+  
+</bibitem><bibitem id="link_relations">
+  <formattedref format="application/x-isodoc+xml">IANA: <strong>Link Relation Types,</strong> <link target="https://www.iana.org/assignments/link-relations/link-relations.xml"/></formattedref>
+  <docidentifier>Link Relation Types</docidentifier>
+  
+</bibitem><bibitem id="spatial_data_wbp">
+  <formattedref format="application/x-isodoc+xml">W3C/OGC: <strong>Spatial Data on the Web Best Practices,</strong> W3C Working Group Note 28 September 2017, <link target="https://www.w3.org/TR/sdw-bp/"/></formattedref>
+  <docidentifier>SDWBP</docidentifier>
+  
+</bibitem><bibitem id="dwbp">
+  <formattedref format="application/x-isodoc+xml">W3C: <strong>Data on the Web Best Practices,</strong> W3C Recommendation 31 January 2017, <link target="https://www.w3.org/TR/dwbp/"/></formattedref>
+  <docidentifier>WBP</docidentifier>
+  
+</bibitem><bibitem id="yaml">
+  <formattedref format="application/x-isodoc+xml">Ben-Kiki, O., Evans, C., Ingy döt Net: <strong>YAML Ain’t Markup Language,</strong> <link target="https://yaml.org/"/></formattedref>
+  <docidentifier>YAML</docidentifier>
+  
+</bibitem><bibitem id="wfs20">
+  <formattedref format="application/x-isodoc+xml">OGC: <strong>Web Feature Service 2.0,</strong> <link target="http://docs.opengeospatial.org/is/09-025r2/09-025r2.html"/></formattedref>
+  <docidentifier>WFS 2.0</docidentifier>
+  <docnumber>2.0</docnumber>
+</bibitem><bibitem id="rfc3986">
+  <formattedref format="application/x-isodoc+xml">Berners-Lee, T., Fielding, R., Masinter, L.: <strong>IETF RFC 3986 — Uniform Resource Identifier (URI): Generic Syntax,</strong> <link target="http://tools.ietf.org/rfc/rfc3986.txt"/></formattedref>
+  <docidentifier>RFC3986</docidentifier>
+  <docnumber>3986</docnumber>
+</bibitem>
+
+
+
+
+
+
+
+
+
+</references><references hidden="true" normative="false"><bibitem id="Class__geosrs" type="internal">
+<docidentifier type="repository">Class/ geosrs</docidentifier>
+</bibitem>
+</references></bibliography>
+</ogc-standard>

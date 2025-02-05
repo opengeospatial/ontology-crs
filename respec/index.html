@@ -301,53 +301,199 @@ Here&#8217;s an example of an example term.
 <section class="sect2">
 <h3 id="_other_conventions">Other conventions</h3>
 <p class="paragraph">
-<p>&lt;Place any other convention needed with its corresponding title&gt;</p>
+<p>&lt;Place any other convention needed with its corresponding title&gt;
+== Core</p>
+</p>
+<p class="paragraph" id="core">
+<p>This clause establishes the <strong>Core</strong> Requirements class, with IRI <code>/req/core</code>, which has a corresponding Conformance Class, <strong>Core</strong>, with IRI <code>/conf/core</code>.
+== Coordinate Operation Module</p>
+</p>
+<p class="paragraph" id="co">
+<p>This clause establishes the <strong>Co</strong> Requirements class, with IRI <code>/req/co</code>, which has a corresponding Conformance Class, <strong>Co</strong>, with IRI <code>/conf/co</code>.</p>
 </p>
 </section>
 </div>
 </section>
 <section class="sect1">
-<h2 id="_other_clauses">Other clauses</h2>
+<h2 id="_coordinate_system_module">Coordinate System Module</h2>
 <div class="sectionbody">
-<p class="paragraph">
-<p>&lt;Insert clause content here&gt;</p>
+<p class="paragraph" id="cs">
+<p>This clause establishes the <strong>CS</strong> Requirements class, with IRI <code>/req/cs</code>, which has a corresponding Conformance Class, <strong>CS</strong>, with IRI <code>/conf/cs</code>.
+== Datum Module</p>
 </p>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<div class="title"></div>
-</td>
-<td class="content">
-<p class="paragraph">
-<p>Add any other clauses as needed</p>
+<p class="paragraph" id="datum">
+<p>This clause establishes the <strong>Datum</strong> Requirements class, with IRI <code>/req/datum</code>, which has a corresponding Conformance Class, <strong>Datum</strong>, with IRI <code>/conf/datum</code>.
+== SRS Application Module</p>
 </p>
-</td>
-</tr>
-</table>
-</div>
+<p class="paragraph" id="srsapp">
+<p>This clause establishes the <strong>SRSAPP</strong> Requirements class, with IRI <code>/req/srsapp</code>, which has a corresponding Conformance Class, <strong>SRSAPP</strong>, with IRI <code>/conf/srsapp</code>.
+== Projections Module</p>
+</p>
+<p class="paragraph" id="proj">
+<p>This clause establishes the <strong>PROJ</strong> Requirements class, with IRI <code>/req/proj</code>, which has a corresponding Conformance Class, <strong>PROJ</strong>, with IRI <code>/conf/proj</code>.
+== Plant Module</p>
+</p>
+<p class="paragraph" id="planet">
+<p>This clause establishes the <strong>PLANET</strong> Requirements class, with IRI <code>/req/planet</code>, which has a corresponding Conformance Class, <strong>PLANET</strong>, with IRI <code>/conf/planet</code>.</p>
+</p>
 </div>
 </section>
 <section class="sect1">
-<h2 id="_annex_title">Appendix A: Annex Title</h2>
+<h2 id="_alignments">Appendix A: Alignments</h2>
 <div class="sectionbody">
+<h3 class="discrete" id="_overview">Overview</h3>
 <p class="paragraph">
-<p>&lt;Insert annex content here&gt;</p>
+<p>The prefixes used for the ontologies mapped to in all following sections are given in the following table.</p>
 </p>
-<div class="admonitionblock note">
-<table>
+<table class="tableblock frame-none grid-none spread">
+<caption class="title">Table 1. Alignment: Namespaces</caption>
+<colgroup>
+<col style="width: 14.2857%;">
+<col style="width: 85.7143%;">
+</colgroup>
+<tbody>
 <tr>
-<td class="icon">
-<div class="title"></div>
-</td>
-<td class="content">
-<p class="paragraph">
-<p>Place annex material in sequential order and set <code>obligation</code> attribute as "normative" (default) or "informative" according to the case.</p>
-</p>
-</td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">ign:</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="http://data.ign.fr/def/ignf#">http://data.ign.fr/def/ignf#</a></p></td>
 </tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">iso19111:</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="http://def.isotc211.org/iso19112/2019/SpatialReferencingByGeographicIdentifier#">http://def.isotc211.org/iso19112/2019/SpatialReferencingByGeographicIdentifier#</a></p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">geosrs:</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="http://www.opengis.net/ont/geosparql#">http://www.opengis.net/ont/geosparql#</a></p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">ifc:</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL/">https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL/</a></p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">owl:</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="http://www.w3.org/2002/07/owl#">http://www.w3.org/2002/07/owl#</a></p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">prov:</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="http://www.w3.org/ns/prov#">http://www.w3.org/ns/prov#</a></p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">rdf:</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="http://www.w3.org/1999/02/22-rdf-syntax-ns#">http://www.w3.org/1999/02/22-rdf-syntax-ns#</a></p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">rdfs:</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="http://www.w3.org/2000/01/rdf-schema#">http://www.w3.org/2000/01/rdf-schema#</a></p></td>
+</tr>
+</tbody>
 </table>
-</div>
+<section class="sect2">
+<h3 id="_ign_crs_ontology">IGN CRS Ontology</h3>
+<table class="tableblock frame-all grid-all">
+<caption class="title">Table 2. Alignment: IGN CRS Ontology</caption>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+  <th class="tableblock halign-left valign-top">From Element</th>
+  <th class="tableblock halign-left valign-top">Mapping relation</th>
+  <th class="tableblock halign-left valign-top">To Element</th>
+  <th class="tableblock halign-left valign-top">Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Class: geosrs:CoordinateSystem"><code>geosrs:CoordinateSystem</code></a></p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://www.w3.org/2002/07/owl#equivalentClass"><code>owl:equivalentClass</code></a></p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://data.ign.fr/def/ignf#CoordinateSystem"><code>ign:CoordinateSystem</code></a></p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Class: geosrs:Datum"><code>geosrs:Datum</code></a></p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://www.w3.org/2002/07/owl#equivalentClass"><code>owl:equivalentClass</code></a></p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://data.ign.fr/def/ignf#Datum"><code>ign:Datum</code></a></p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Class: geosrs:Ellipsoid"><code>geosrs:Ellipsoid</code></a></p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://www.w3.org/2002/07/owl#equivalentClass"><code>owl:equivalentClass</code></a></p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://data.ign.fr/def/ignf#Ellipsoid"><code>ign:Ellipsoid</code></a></p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sect2">
+<h3 id="_iso_19111_ontology">ISO 19111 Ontology</h3>
+<table class="tableblock frame-all grid-all">
+<caption class="title">Table 3. Alignment: ISO 19111 Ontology</caption>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+  <th class="tableblock halign-left valign-top">From Element</th>
+  <th class="tableblock halign-left valign-top">Mapping relation</th>
+  <th class="tableblock halign-left valign-top">To Element</th>
+  <th class="tableblock halign-left valign-top">Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Class: geosrs:CoordinateSystem"><code>geosrs:CoordinateSystem</code></a></p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://www.w3.org/2002/07/owl#equivalentClass"><code>owl:equivalentClass</code></a></p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://def.isotc211.org/iso19112/2019/SpatialReferencingByGeographicIdentifier#CoordinateSystem"><code>iso19111:CoordinateSystem</code></a></p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Class: geosrs:Datum"><code>geosrs:Datum</code></a></p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://www.w3.org/2002/07/owl#equivalentClass"><code>owl:equivalentClass</code></a></p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://def.isotc211.org/iso19112/2019/SpatialReferencingByGeographicIdentifier#Datum"><code>iso19111:Datum</code></a></p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Class: geosrs:Ellipsoid"><code>geosrs:Ellipsoid</code></a></p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://www.w3.org/2002/07/owl#equivalentClass"><code>owl:equivalentClass</code></a></p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://def.isotc211.org/iso19112/2019/SpatialReferencingByGeographicIdentifier#Ellipsoid"><code>iso19111:Ellipsoid</code></a></p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sect2">
+<h3 id="_ifcowl_ontology">IFCOWL Ontology</h3>
+<table class="tableblock frame-all grid-all">
+<caption class="title">Table 4. Alignment: IFCOWL Ontology</caption>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+  <th class="tableblock halign-left valign-top">From Element</th>
+  <th class="tableblock halign-left valign-top">Mapping relation</th>
+  <th class="tableblock halign-left valign-top">To Element</th>
+  <th class="tableblock halign-left valign-top">Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Class: geosrs:CRS"><code>geosrs:CRS</code></a></p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://www.w3.org/2002/07/owl#equivalentClass"><code>owl:equivalentClass</code></a></p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL/CoordinateReferenceSystem"><code>ifc:CoordinateReferenceSystem</code></a></p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+</tr>
+</tbody>
+</table>
+</section>
 </div>
 </section>
 <section class="sect1">
@@ -437,7 +583,7 @@ Actual References:
 </section>
 <div id="footer">
 <div id="footer-text">
-Last updated 2025-01-29 14:55:05 UTC
+Last updated 2025-02-05 03:06:05 UTC
 </div>
 </div>
 </body>

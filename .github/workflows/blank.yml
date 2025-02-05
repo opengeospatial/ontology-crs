@@ -28,7 +28,7 @@ jobs:
          mkdir site/spec
          mkdir site/respec
          metanorma site generate --agree-to-terms -o site/spec/
-         asciidoctor document/document.adoc -T document/templates/html5/ -o site/respec/index.html
+         asciidoctor spec/document.adoc -T spec/templates/html5/ -o site/respec/index.html
     - name: Deploy 🚀
       uses: JamesIves/github-pages-deploy-action@releases/v4
       with:

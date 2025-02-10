@@ -34,23 +34,23 @@ geocrs:PlanarCoordinateSystem,geosrs:CoordinateSystem,Planar Coordinate System,"
 geosrs:PolarCoordinateSystem,geocrs:PlanarCoordinateSystem,Polar Coordinate System,Two-dimensional coordinate system in Euclidean space in which position is specified by one distance coordinate and one angular coordinate.,iso19111:PolarCS,,geocrs:PolarCoordinateSystem,,Core Ontology,,two-dimensional coordinate system in Euclidean space in which position is specified by the distance from the origin and the angle between the line from the origin to a point and a reference directionNote: A PolarCS shall have two axis associations.
 ,,,,,,geocrs:ProjectedCS,,Extension,,
 ,,,,,,geocrs:ReferenceSystem,,Is this class necessary?,,
-,,,,,,geocrs:SkewCoordinateSystem,,Extension,,
-geosrs:SphericalCoordinateSystem,,Spherical Coordinate System,,iso19111:SphericalCS,,geocrs:SphericalCoordinateSystem,,Core Ontology,,three-dimensional coordinate system in Euclidean space in which position is specified by one distance coordinate and two angular coordinates
-,,,,,,geocrs:StereographicCS,,Extension,,
-,,,,iso19111:DateTimeTemporalCS,,geocrs:DateTimeTemporalCoordinateSystem,,Extension,,
-,,,,iso19111:TemporalCountCS,,geocrs:TemporalCountCoordinateSystem,,Extension,,one-dimensional coordinate system used to record time as an integer countNote: A TemporalCountCS shall have one axis association.
-,,,,iso19111:TemporalCS,,geocrs:TemporalCoordinateSystem,,Extension,,one-dimensional coordinate system where the axis is time
-,,,,iso19111:TemporalMeasureCS,,geocrs:TemporalMeasureCoordinateSystem,,Extension,,one-dimensional coordinate system used to record a time as a real numberNote: A TemporalMeasureCS shall have one axis association.
+geosrs:SkewCoordinateSystem,geosrs:CurvilinearCoordinateSystem,Skew Coordinate System,A skew coordinate system is a system of curvilinear coordinates in which each family of surfaces intersects the others at angles other than right angles.,,,geocrs:SkewCoordinateSystem,,Extension,,
+geosrs:SphericalCoordinateSystem,geosrs:3DCoordinateSystem,Spherical Coordinate System,Three-dimensional coordinate system in Euclidean space with one distance measured from the origin and two angular coordinates,iso19111:SphericalCS,,geocrs:SphericalCoordinateSystem,,Core Ontology,,three-dimensional coordinate system in Euclidean space in which position is specified by one distance coordinate and two angular coordinates
+,,,,,,geocrs:StereographicCS,,Definition not found,,
+geosrs:DateTimeTemporalCoordinateSystem,geosrs:TemporalCoordinateSystem,DateTime Temporal Coordinate System,One-dimensional coordinate system used to record time in dateTime representation as defined in ISO 8601.,iso19111:DateTimeTemporalCS,,geocrs:DateTimeTemporalCoordinateSystem,,Extension,,
+geosrs:TemporalCountCoordinateSystem,geosrs:TemporalCoordinateSystem,Temporal Count Coordinate System,One-dimensional coordinate system used to record time as an integer count.,iso19111:TemporalCountCS,,geocrs:TemporalCountCoordinateSystem,,Extension,,one-dimensional coordinate system used to record time as an integer countNote: A TemporalCountCS shall have one axis association.
+geosrs:TemporalCoordinateSystem,geosrs:1DCoordinateSystem,Temporal Coordinate System,One-dimensionalcoordinate system where the axis is time.,iso19111:TemporalCS,,geocrs:TemporalCoordinateSystem,,Extension,,one-dimensional coordinate system where the axis is time
+geosrs:TemporalMeasureCoordinateSystem,geosrs:TemporalCoordinateSystem,Temporal Measure Coordinate System,One-dimensional coordinate system used to record a time as a real number.,iso19111:TemporalMeasureCS,,geocrs:TemporalMeasureCoordinateSystem,,Extension,,one-dimensional coordinate system used to record a time as a real numberNote: A TemporalMeasureCS shall have one axis association.
 ,,,,,,geocrs:TemporalReferenceSystem,,Extension,,
-,,,,,,geocrs:SuperGalacticCS,,Extension,,
+geosrs:SuperGalacticCS,geosrs:CelestialCoordinateSystem; geosrs:3DCoordinateSystem ,Super Galactic Coordinate System,"A reference frame for the supercluster of galaxies that contains the Milky Way galaxy, referenced to a local relatively flat collection of galaxy clusters used to define the supergalactic plane.",,,geocrs:SuperGalacticCS,,Extension,,
 ,,,,,,geocrs:UnknownCS,,,,
-geosrs:VerticalCoordinateSystem,,Vertical Coordinate System,"One-dimensional coordinate system used for gravity related height or depth measurements. Cf. ISO 19111:2007:2007-07, tables 15 and 25.",iso19111:VerticalCS,ign:VerticalCS,geocrs:VerticalCoordinateSystem,,Core Ontology,"One-dimensional coordinate system used for gravity related height or depth measurements. Cf. ISO 19111:2007:2007-07, tables 15 and 25.",one-dimensional coordinate system used for gravity-related height or depth measurements
-,,,,iso19111:uAffineCS,,,,,,
-,,,,iso19111:uCartesianCS,,,,,,
-,,,,iso19111:uCylindricalCS,,,,,,
-,,,,iso19111:uOrdinalCS,,,,,,
-,,,,iso19111:uPolarCS,,,,,,two-dimensional coordinate system in Euclidean space in which position is specified by one distance coordinate and one angular coordinate
-,,,,iso19111:uSphericalCS,,,,,,
-,,,,iso19111:uLinearCS,,,,,,
-,,,,iso19111:uEllipsoidalCS,,,,,,
+geosrs:VerticalCoordinateSystem,geosrs:CoordinateSystem,Vertical Coordinate System,"One-dimensional coordinate system used for gravity related height or depth measurements. Cf. ISO 19111:2007:2007-07, tables 15 and 25.",iso19111:VerticalCS,ign:VerticalCS,geocrs:VerticalCoordinateSystem,,Core Ontology,"One-dimensional coordinate system used for gravity related height or depth measurements. Cf. ISO 19111:2007:2007-07, tables 15 and 25.",one-dimensional coordinate system used for gravity-related height or depth measurements
+,,,,iso19111:uAffineCS,,,,Definition not found,,
+,,,,iso19111:uCartesianCS,,,,Definition not found,,
+,,,,iso19111:uCylindricalCS,,,,Definition not found,,
+,,,,iso19111:uOrdinalCS,,,,Definition not found,,
+,,,,iso19111:uPolarCS,,,,Definition not found,,two-dimensional coordinate system in Euclidean space in which position is specified by one distance coordinate and one angular coordinate
+,,,,iso19111:uSphericalCS,,,,Definition not found,,
+,,,,iso19111:uLinearCS,,,,Definition not found,,
+,,,,iso19111:uEllipsoidalCS,,,,Definition not found,,
 geosrs:CoordinateSystemAxis,,Coordinate System Axis,"Axis relative to which a coordinate of a point is specified in a coordinate system. See ISO 19111:2007:2007-07, part 9.3, table 27 and annex B.2.2.",iso19111:CoordinateSystemAxis,ign:CoordinateSystemAxis,geocrs:CoordinateSystemAxis,,Core Ontology,"Axis relative to which a coordinate of a point is specified in a coordinate system. See ISO 19111:2007:2007-07, part 9.3, table 27 and annex B.2.2.",

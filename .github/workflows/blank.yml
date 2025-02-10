@@ -3,7 +3,42 @@ name: Ontology Documentation CI
 on: [push]
 
 jobs:
-     
+ 
+  buildspec:
+    name: Build Metanorma Standard
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    
+    - uses: actions/cache@v3
+      with:
+        path: ~/.fontist
+        key: fontist-ubuntu-latest
+        restore-keys: fontist-ubuntu-latest
+
+    - uses: actions-mn/setup@main
+    
+    - name: Run Metanorma 🔧
+      run: |
+         sudo apt-get update 
+         sudo apt-get install asciidoctor
+         sudo gem install tilt thread_safe concurrent-ruby
+         sudo gem install haml -v 5.2.2
+         mkdir site
+         mkdir site/spec
+         mkdir site/respec
+         metanorma site generate --agree-to-terms -o site/spec/
+         asciidoctor document/document.adoc -T document/templates/html5/ -o site/respec/index.html
+    - name: Deploy 🚀
+      uses: JamesIves/github-pages-deploy-action@releases/v4
+      with:
+         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+         BRANCH: gh-pages
+         clean: false
+         FOLDER: site/  
+  
+  
+  
   build:
 
     runs-on: ubuntu-latest

@@ -6,7 +6,7 @@ import json
 
 exont={}
 
-ldcontext={"@context":{"geosrs":"https://w3id.org/geosrs#"},"type":{"@id":"rdf:type","@type":"@vocab"},"unit":{"@id":"om:hasUnit","@type":"@vocab"}}
+ldcontext={"@context":{"geosrs":"https://w3id.org/geosrs#","type":{"@id":"rdf:type","@type":"@vocab"},"unit":{"@id":"om:hasUnit","@type":"@vocab"}}}
 
 prefixtoclasses={"geosrs":[]}
 prefixtoproperties={"geosrs":[],"CS":[],"CO":[],"DATUM":[],"projection":[]}

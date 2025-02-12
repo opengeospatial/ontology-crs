@@ -2,8 +2,11 @@ from rdflib import Graph, URIRef, Literal
 from rdflib.namespace import RDF, RDFS, OWL, SKOS, VANN, XSD
 import csv
 import os
+import json
 
 exont={}
+
+ldcontext={"@context":{"geosrs":"https://w3id.org/geosrs#"}}
 
 prefixtoclasses={"geosrs":[]}
 classToPrefix={}
@@ -39,7 +42,7 @@ for file in os.listdir(directory):
     filename = os.fsdecode(file)
     g = Graph()
     exont[filename.replace(".csv","")]=g
-    curprefix=filename.replace(".csv","")
+    curprefix="geosrs_"+filename.replace(".csv","")
     curns="http://www.opengis.net/ont/srs/"+filename.replace(".csv","")+"/"
     g.bind(curprefix,curns) 
     g.bind("skos","http://www.w3.org/2004/02/skos/core#")
@@ -74,7 +77,7 @@ for file in os.listdir(directory):
                                 gcore.add((URIRef(row["Concept"].replace(coreprefix+":",geocrsNS)),RDFS.subClassOf,URIRef(row["SuperClass"].replace("geosrs:",geocrsNS))))
                     else:
                         g.add((URIRef(row["Concept"].replace(curprefix+":",curns)),RDF.type,OWL.Class))
-                        prefixtoclasses[curprefix].append(row["Concept"].replace(curprefix+":",curns))
+                        prefixtoclasses[curprefix].append(row["Concept"].replace(curprefix+":",curns).replace("geosrs:","").replace("geoprojection:",""))
                         classToPrefix[row["Concept"]]={"prefix":curprefix, "ns":curns}
                         if "Label" in row and row["Label"]!="":
                             g.add((URIRef(row["Concept"].replace(curprefix+":",curns)),RDFS.label,Literal(row["Label"],lang="en")))
@@ -109,7 +112,7 @@ for file in os.listdir(directory):
     g.add((URIRef("https://w3id.org/geosrs/"+filename.replace(".csv","")),VANN.preferredNamespacePrefix,Literal(curprefix,datatype=XSD.string)))
     g.add((URIRef("https://w3id.org/geosrs/"+filename.replace(".csv","")),VANN.preferredNamespaceUri,Literal(curns,datatype=XSD.anyURI)))
     if filename.endswith(".csv"): 
-        with open(abspath+filename, newline='') as csvfile:
+        with open(abspath+filename, newline='',encoding="utf-8") as csvfile:
             reader = csv.DictReader(csvfile)
             objprop=False
             if "obj" in filename:
@@ -183,3 +186,12 @@ for file in os.listdir(directory):
         continue
 
 g.serialize(destination="alignments.ttl")
+
+for pref in prefixtoclasses:
+    ldcontext["@context"][pref]=geocrsNS[:-1]+"/"+pref+"#"
+    for cls in prefixtoclasses[pref]:
+        ldcontext["@context"][cls[cls.rfind('#')+1:]]=pref+":"+cls[cls.rfind('#')+1:]
+print(prefixtoclasses)
+
+with open('geosrs-context.json', 'w',encoding="utf-8") as f:
+    json.dump(ldcontext, f,indent=2,sort_keys=True)

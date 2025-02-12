@@ -192,7 +192,8 @@ for file in os.listdir(directory):
 g.serialize(destination="alignments.ttl")
 
 for pref in prefixtoclasses:
-    ldcontext["@context"][pref]=geocrsNS[:-1]+"/"+pref.replace("geosrs_","")+"#"
+    if pref!="geosrs_srs":
+        ldcontext["@context"][pref]=geocrsNS[:-1]+"/"+pref.replace("geosrs_","")+"#"
     for cls in prefixtoclasses[pref]:
         ldcontext["@context"][cls[cls.rfind('#')+1:]]=pref+":"+cls[cls.rfind('#')+1:]
     if pref in prefixtoproperties:

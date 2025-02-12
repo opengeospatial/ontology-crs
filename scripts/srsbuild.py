@@ -9,6 +9,7 @@ exont={}
 ldcontext={"@context":{"geosrs":"https://w3id.org/geosrs#"}}
 
 prefixtoclasses={"geosrs":[]}
+prefixtoproperties={"geosrs":[],"CS":[],"CO":[],"DATUM":[],"projection":[]}
 classToPrefix={}
 
 gcore = Graph()
@@ -123,6 +124,7 @@ for file in os.listdir(directory):
                     if "Core Property?" in row:
                         if row["Core Property?"]=="Core Ontology":
                             core=True
+                            prefixtoproperties["geosrs"].append(row["Concept"].replace(curprefix+":",curns).replace("geosrs:","").replace("geoprojection:",""))
                             if objprop:
                                 gcore.add((URIRef(row["Concept"].replace(coreprefix+":",geocrsNS)),RDF.type,OWL.ObjectProperty))
                             else:
@@ -137,6 +139,8 @@ for file in os.listdir(directory):
                                 gcore.add((URIRef(row["Concept"].replace(coreprefix+":",geocrsNS)),RDFS.domain,URIRef(row["Domain"].replace("geosrs:",getNSForClass(row["Domain"],classToPrefix)))))
                         else:
                             if row["Core Property?"].lower() in exont:
+                                if row["Core Property?"]!="":
+                                    prefixtoproperties[row["Core Property?"]].append(row["Concept"].replace(curprefix+":",curns).replace("geosrs:","").replace("geoprojection:",""))
                                 if objprop:
                                     exont[row["Core Property?"].lower()].add((URIRef(row["Concept"].replace(curprefix+":",curns)),RDF.type,OWL.ObjectProperty))
                                 else:
@@ -191,7 +195,10 @@ for pref in prefixtoclasses:
     ldcontext["@context"][pref]=geocrsNS[:-1]+"/"+pref+"#"
     for cls in prefixtoclasses[pref]:
         ldcontext["@context"][cls[cls.rfind('#')+1:]]=pref+":"+cls[cls.rfind('#')+1:]
-print(prefixtoclasses)
+    if pref in prefixtoproperties:
+        for cls in prefixtoproperties[pref]:
+            ldcontext["@context"][cls[cls.rfind('#')+1:]]=pref+":"+cls[cls.rfind('#')+1:]
+print(prefixtoproperties)
 os.mkdir("context")
 with open('context/geosrs-context.json', 'w',encoding="utf-8") as f:
     json.dump(ldcontext, f,indent=2,sort_keys=True)

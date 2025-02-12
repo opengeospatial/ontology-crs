@@ -192,6 +192,6 @@ for pref in prefixtoclasses:
     for cls in prefixtoclasses[pref]:
         ldcontext["@context"][cls[cls.rfind('#')+1:]]=pref+":"+cls[cls.rfind('#')+1:]
 print(prefixtoclasses)
-
-with open('geosrs-context.json', 'w',encoding="utf-8") as f:
+os.mkdir("context")
+with open('context/geosrs-context.json', 'w',encoding="utf-8") as f:
     json.dump(ldcontext, f,indent=2,sort_keys=True)

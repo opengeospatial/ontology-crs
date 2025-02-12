@@ -4,16 +4,6 @@
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<geocrs:PerifocalCoordinateSystem> a owl:Class ;
-    rdfs:label "Perifocal Coordinate System"@en ;
-    rdfs:subClassOf <geosrs:CelestialCoordinateSystem> ;
-    skos:definition "A frame of reference centered at the focus of the orbit, i.e. the celestial body about which the orbit is centered. "@en .
-
-<geocrs:PlanarCoordinateSystem> a owl:Class ;
-    rdfs:label "Planar Coordinate System"@en ;
-    rdfs:subClassOf <geosrs:CoordinateSystem> ;
-    skos:definition "A two-dimensional measurement system that locates features on a plane based on their distance from an origin (0,0) along two perpendicular axes."@en .
-
 <geosrs:AffineCoordinateSystem> a owl:Class ;
     rdfs:label "Affine Coordinate System"@en ;
     rdfs:subClassOf <geosrs:CoordinateSystem> ;
@@ -85,6 +75,16 @@
     rdfs:label "Oblique Coordinate System"@en ;
     rdfs:subClassOf <geosrs:CoordinateSystem> ;
     skos:definition "A plane coordinate system whose axes are not perpendicular."@en .
+
+<geosrs:PerifocalCoordinateSystem> a owl:Class ;
+    rdfs:label "Perifocal Coordinate System"@en ;
+    rdfs:subClassOf <geosrs:CelestialCoordinateSystem> ;
+    skos:definition "A frame of reference centered at the focus of the orbit, i.e. the celestial body about which the orbit is centered. "@en .
+
+<geosrs:PlanarCoordinateSystem> a owl:Class ;
+    rdfs:label "Planar Coordinate System"@en ;
+    rdfs:subClassOf <geosrs:CoordinateSystem> ;
+    skos:definition "A two-dimensional measurement system that locates features on a plane based on their distance from an origin (0,0) along two perpendicular axes."@en .
 
 <geosrs:SkewCoordinateSystem> a owl:Class ;
     rdfs:label "Skew Coordinate System"@en ;

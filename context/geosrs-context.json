@@ -359,6 +359,10 @@
     "geosrs_datum": "https://w3id.org/geosrs/datum#",
     "geosrs_planet": "https://w3id.org/geosrs/planet#",
     "geosrs_projection": "https://w3id.org/geosrs/projection#",
+    "name": "rdfs:label",
+    "om": "http://www.ontology-of-units-of-measure.org/resource/om-2/",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
     "semiMajorAxis": "geosrs:semiMajorAxis",
     "semiMinorAxis": "geosrs:semiMinorAxis",
     "sourceCRS": "geosrs:sourceCRS",
@@ -370,6 +374,7 @@
     "unit": {
       "@id": "om:hasUnit",
       "@type": "@vocab"
-    }
+    },
+    "value": "rdf:value"
   }
 }

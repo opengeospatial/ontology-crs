@@ -353,16 +353,24 @@
     "geocrs:PerifocalCoordinateSystem": "geosrs_cs:geocrs:PerifocalCoordinateSystem",
     "geocrs:PlanarCoordinateSystem": "geosrs_cs:geocrs:PlanarCoordinateSystem",
     "geosrs": "https://w3id.org/geosrs/geosrs#",
-    "geosrs_application": "https://w3id.org/geosrs/geosrs_application#",
-    "geosrs_co": "https://w3id.org/geosrs/geosrs_co#",
-    "geosrs_cs": "https://w3id.org/geosrs/geosrs_cs#",
-    "geosrs_datum": "https://w3id.org/geosrs/geosrs_datum#",
-    "geosrs_planet": "https://w3id.org/geosrs/geosrs_planet#",
-    "geosrs_projection": "https://w3id.org/geosrs/geosrs_projection#",
-    "geosrs_srs": "https://w3id.org/geosrs/geosrs_srs#",
+    "geosrs_application": "https://w3id.org/geosrs/application#",
+    "geosrs_co": "https://w3id.org/geosrs/co#",
+    "geosrs_cs": "https://w3id.org/geosrs/cs#",
+    "geosrs_datum": "https://w3id.org/geosrs/datum#",
+    "geosrs_planet": "https://w3id.org/geosrs/planet#",
+    "geosrs_projection": "https://w3id.org/geosrs/projection#",
+    "geosrs_srs": "https://w3id.org/geosrs/srs#",
     "semiMajorAxis": "geosrs:semiMajorAxis",
     "semiMinorAxis": "geosrs:semiMinorAxis",
     "sourceCRS": "geosrs:sourceCRS",
     "targetCRS": "geosrs:targetCRS"
+  },
+  "type": {
+    "@id": "rdf:type",
+    "@type": "@vocab"
+  },
+  "unit": {
+    "@id": "om:hasUnit",
+    "@type": "@vocab"
   }
 }

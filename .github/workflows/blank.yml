@@ -57,6 +57,7 @@ jobs:
          python3 scripts/srsbuild.py
          mkdir docs
          mv *.ttl docs/
+         mv context docs/
          mv index.html docs/
          cd docs
          mkdir application

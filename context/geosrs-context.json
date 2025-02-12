@@ -362,14 +362,14 @@
     "semiMajorAxis": "geosrs:semiMajorAxis",
     "semiMinorAxis": "geosrs:semiMinorAxis",
     "sourceCRS": "geosrs:sourceCRS",
-    "targetCRS": "geosrs:targetCRS"
-  },
-  "type": {
-    "@id": "rdf:type",
-    "@type": "@vocab"
-  },
-  "unit": {
-    "@id": "om:hasUnit",
-    "@type": "@vocab"
+    "targetCRS": "geosrs:targetCRS",
+    "type": {
+      "@id": "rdf:type",
+      "@type": "@vocab"
+    },
+    "unit": {
+      "@id": "om:hasUnit",
+      "@type": "@vocab"
+    }
   }
 }

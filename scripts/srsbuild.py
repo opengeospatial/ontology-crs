@@ -198,7 +198,7 @@ for pref in prefixtoclasses:
         ldcontext["@context"][cls[cls.rfind('#')+1:]]=pref+":"+cls[cls.rfind('#')+1:]
     if pref in prefixtoproperties:
         for cls in prefixtoproperties[pref]:
-            ldcontext["@context"][cls[cls.rfind('#')+1:]]=pref+":"+cls[cls.rfind('#')+1:]
+            ldcontext["@context"][cls[cls.rfind('#')+1:]]=pref.replace("geosrs_srs","geosrs")+":"+cls[cls.rfind('#')+1:]
 print(prefixtoproperties)
 os.mkdir("context")
 with open('context/geosrs-context.json', 'w',encoding="utf-8") as f:

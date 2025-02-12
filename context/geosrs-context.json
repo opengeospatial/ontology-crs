@@ -343,7 +343,13 @@
     "WinkelIProjection": "geosrs_projection:WinkelIProjection",
     "WinkelSnyderProjection": "geosrs_projection:WinkelSnyderProjection",
     "WinkelTripelProjection": "geosrs_projection:WinkelTripelProjection",
+    "axis": "geosrs:axis",
+    "axisDirection": "geosrs:axisDirection",
+    "baseCRS": "geosrs:baseCRS",
     "conversion": "geosrs:conversion",
+    "coordinateSystem": "geosrs:coordinateSystem",
+    "datum": "geosrs:datum",
+    "ellipsoid": "geosrs:ellipsoid",
     "geocrs:PerifocalCoordinateSystem": "geosrs_cs:geocrs:PerifocalCoordinateSystem",
     "geocrs:PlanarCoordinateSystem": "geosrs_cs:geocrs:PlanarCoordinateSystem",
     "geosrs": "https://w3id.org/geosrs/geosrs#",
@@ -353,6 +359,10 @@
     "geosrs_datum": "https://w3id.org/geosrs/geosrs_datum#",
     "geosrs_planet": "https://w3id.org/geosrs/geosrs_planet#",
     "geosrs_projection": "https://w3id.org/geosrs/geosrs_projection#",
-    "geosrs_srs": "https://w3id.org/geosrs/geosrs_srs#"
+    "geosrs_srs": "https://w3id.org/geosrs/geosrs_srs#",
+    "semiMajorAxis": "geosrs:semiMajorAxis",
+    "semiMinorAxis": "geosrs:semiMinorAxis",
+    "sourceCRS": "geosrs:sourceCRS",
+    "targetCRS": "geosrs:targetCRS"
   }
 }

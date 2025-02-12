@@ -6,7 +6,13 @@ import json
 
 exont={}
 
-ldcontext={"@context":{"geosrs":"https://w3id.org/geosrs#","type":{"@id":"rdf:type","@type":"@vocab"},"unit":{"@id":"om:hasUnit","@type":"@vocab"}}}
+ldcontext={"@context":{"rdfs":"http://www.w3.org/2000/01/rdf-schema#","rdf":"http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+                        "om": "http://www.ontology-of-units-of-measure.org/resource/om-2/","geosrs":"https://w3id.org/geosrs#",
+                       "name":"rdfs:label", "value":"rdf:value",
+                       "type":{"@id":"rdf:type","@type":"@vocab"},
+                       "unit":{"@id":"om:hasUnit","@type":"@vocab"}
+            }
+}
 
 prefixtoclasses={"geosrs":[]}
 prefixtoproperties={"geosrs":[],"CS":[],"CO":[],"DATUM":[],"projection":[]}

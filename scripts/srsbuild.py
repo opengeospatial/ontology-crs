@@ -195,7 +195,7 @@ for pref in prefixtoclasses:
     if pref!="geosrs_srs":
         ldcontext["@context"][pref]=geocrsNS[:-1]+"/"+pref.replace("geosrs_","")+"#"
     for cls in prefixtoclasses[pref]:
-        ldcontext["@context"][cls[cls.rfind('#')+1:]]=pref+":"+cls[cls.rfind('#')+1:]
+        ldcontext["@context"][cls[cls.rfind('#')+1:]]=pref.replace("geosrs_srs","geosrs")+":"+cls[cls.rfind('#')+1:]
     if pref in prefixtoproperties:
         for cls in prefixtoproperties[pref]:
             ldcontext["@context"][cls[cls.rfind('#')+1:]]=pref.replace("geosrs_srs","geosrs")+":"+cls[cls.rfind('#')+1:]

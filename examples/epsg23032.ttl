@@ -23,7 +23,7 @@
                             geosrs:semiMajorAxis 6378388 ] ] ] ;
     geosrs:conversion [ rdfs:label "UTM zone 32N" ;
             geosrs:coordinateOperation [ rdfs:label "Transverse Mercator" ] ] ;
-    geosrs:coordinateSystem [ a <file:///home/runner/work/ontology-crs/ontology-crs/examples/Cartesian> ;
+    geosrs:coordinateSystem [ a geosrs:CartesianCoordinateSystem ;
             geosrs:axis [ rdfs:label "Northing" ;
                     om:hasUnit om:metre ;
                     skos:altLabel "N" ;

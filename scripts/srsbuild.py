@@ -7,7 +7,7 @@ import json
 
 pattern = re.compile(r'(?<!^)(?=[A-Z])')
 
-def convertCamelToSnakeAndReplacements(strr):
+def convertCamelToSnake(strr):
  return pattern.sub('_', strr).lower()
 
 exont={}
@@ -216,7 +216,7 @@ for pref in prefixtoclasses:
     if pref!="geosrs_srs":
         ldcontext["@context"][pref]=geocrsNS[:-1]+"/"+pref.replace("geosrs_","")+"#"
     for cls in prefixtoclasses[pref]:
-        ldcontext["@context"][convertCamelToSnake(cls[cls.rfind('#')+1:])]=pref.replace("geosrs_srs","geosrs")+":"+cls[cls.rfind('#')+1:]
+        ldcontext["@context"][cls[cls.rfind('#')+1:]]=pref.replace("geosrs_srs","geosrs")+":"+cls[cls.rfind('#')+1:]
     if pref in prefixtoproperties:
         for cls in prefixtoproperties[pref]:
             ldcontext["@context"][convertCamelToSnake(cls[cls.rfind('#')+1:])]=pref.replace("geosrs_srs","geosrs")+":"+cls[cls.rfind('#')+1:]

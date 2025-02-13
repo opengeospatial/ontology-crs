@@ -2,8 +2,9 @@
 @prefix om: <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-[] a geosrs:ProjectedCRS ;
+[] a <file:///home/runner/work/ontology-crs/ontology-crs/examples/ProjectedCRS> ;
     rdfs:label "ED50 / UTM zone 32N" ;
     skos:scopeNote "Engineering survey, topographic mapping." ;
     geosrs:baseCRS [ rdfs:label "ED50" ;
@@ -18,16 +19,17 @@
                             geosrs:axisDirection "north" ] ] ;
             geosrs:datum [ a <file:///home/runner/work/ontology-crs/ontology-crs/examples/GeodeticReferenceFrame> ;
                     rdfs:label "European Datum 1950" ;
-                    geosrs:ellipsoid [ rdfs:label "International 1924" ] ] ] ;
+                    geosrs:ellipsoid [ rdfs:label "International 1924" ;
+                            geosrs:semiMajorAxis 6378388 ] ] ] ;
     geosrs:conversion [ rdfs:label "UTM zone 32N" ;
             geosrs:coordinateOperation [ rdfs:label "Transverse Mercator" ] ] ;
     geosrs:coordinateSystem [ a <file:///home/runner/work/ontology-crs/ontology-crs/examples/Cartesian> ;
-            geosrs:axis [ rdfs:label "Easting" ;
-                    om:hasUnit om:metre ;
-                    skos:altLabel "E" ;
-                    geosrs:axisDirection "east" ],
-                [ rdfs:label "Northing" ;
+            geosrs:axis [ rdfs:label "Northing" ;
                     om:hasUnit om:metre ;
                     skos:altLabel "N" ;
-                    geosrs:axisDirection "north" ] ] .
+                    geosrs:axisDirection "north" ],
+                [ rdfs:label "Easting" ;
+                    om:hasUnit om:metre ;
+                    skos:altLabel "E" ;
+                    geosrs:axisDirection "east" ] ] .
 

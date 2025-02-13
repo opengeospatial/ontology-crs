@@ -4,19 +4,19 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-[] a <file:///home/runner/work/ontology-crs/ontology-crs/examples/ProjectedCRS> ;
+[] a geosrs:ProjectedCRS ;
     rdfs:label "ED50 / UTM zone 32N" ;
     skos:scopeNote "Engineering survey, topographic mapping." ;
     geosrs:baseCRS [ rdfs:label "ED50" ;
-            geosrs:coordinateSystem [ a <file:///home/runner/work/ontology-crs/ontology-crs/examples/ellipsoidal> ;
-                    geosrs:axis [ rdfs:label "Geodetic longitude" ;
-                            om:hasUnit om:degree ;
-                            skos:altLabel "Lon" ;
-                            geosrs:axisDirection "east" ],
-                        [ rdfs:label "Geodetic latitude" ;
+            geosrs:coordinateSystem [ a geosrs:EllipsoidalCoordinateSystem ;
+                    geosrs:axis [ rdfs:label "Geodetic latitude" ;
                             om:hasUnit om:degree ;
                             skos:altLabel "Lat" ;
-                            geosrs:axisDirection "north" ] ] ;
+                            geosrs:axisDirection "north" ],
+                        [ rdfs:label "Geodetic longitude" ;
+                            om:hasUnit om:degree ;
+                            skos:altLabel "Lon" ;
+                            geosrs:axisDirection "east" ] ] ;
             geosrs:datum [ a <file:///home/runner/work/ontology-crs/ontology-crs/examples/GeodeticReferenceFrame> ;
                     rdfs:label "European Datum 1950" ;
                     geosrs:ellipsoid [ rdfs:label "International 1924" ;

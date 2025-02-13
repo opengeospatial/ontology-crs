@@ -6,20 +6,21 @@
 
 <https://w3id.org/geosrs#AxisDirection> owl:equivalentClass ifc:IfcDirection .
 
-<https://w3id.org/geosrs#CRS> owl:equivalentClass ifc:IfcCoordinateReferenceSystem .
-
 <https://w3id.org/geosrs#CoordinateOperation> owl:equivalentClass ifc:IfcCoordinateOperation .
 
 <https://w3id.org/geosrs#CoordinateSystem> owl:equivalentClass ign:CoordinateSystem,
         iso19111:CoordinateSystem .
 
-<https://w3id.org/geosrs#Datum> owl:equivalentClass ign:Datum,
+<https://w3id.org/geosrs#Datum> owl:disjointWith <https://w3id.org/geosrs#CRS> ;
+    owl:equivalentClass ign:Datum,
         iso19111:Datum .
 
 <https://w3id.org/geosrs#Ellipsoid> owl:equivalentClass ign:Ellipsoid,
         iso19111:Ellipsoid .
 
 <https://w3id.org/geosrs#ProjectedCRS> owl:equivalentClass ifc:IfcProjectedCRS .
+
+<https://w3id.org/geosrs#VerticalCoordinateSystem> owl:disjointWith <https://w3id.org/geosrs#OrdinalCoordinateSystem> .
 
 <https://w3id.org/geosrs#axis> owl:equivalentProperty ifc:axis_IfcAxis1Placement .
 
@@ -29,4 +30,6 @@
 
 <https://w3id.org/geosrs/alignments/> a owl:Ontology ;
     rdfs:label "SRS Ontology Alignments"@en .
+
+<https://w3id.org/geosrs#CRS> owl:equivalentClass ifc:IfcCoordinateReferenceSystem .
 

@@ -87,9 +87,31 @@ jobs:
          pylode -o projection/index.html -i projection.ttl
          mv projection.ttl projection/
          rm objprop.ttl datatypeprop.ttl 
+         mkdir examples
+         cp ../examples/* examples/
     - name: Deploy 🚀
       uses: JamesIves/github-pages-deploy-action@v4.3.3
       with:
          BRANCH: gh-pages
          FOLDER: docs/
          clean: false
+
+  #ontdoc: 
+    # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+  #  uses: sparqlunicorn/sparqlunicornGoesGIS-ontdoc/.github/workflows/udoc.yml@main
+  #  with: 
+  #      version: v018
+  #     rdffilepath: examples/epsg23032.ttl
+  #      docpath: docs
+  #      prefixns: http://lod.squirrel.link/data/limes/
+  #     prefixnsshort: ex
+  #      indexpages: true
+  #      ckan: false
+  #      metadatatable: true
+  #      offlinecompat: false
+  #      exports: cypher graphml nt n3 tlp tgf json ttl
+  #      createcollections: true
+  #      createnonNSPages: true
+  #      createVOWL: true
+  #      preferredlang: en
+  #      ghpages: true

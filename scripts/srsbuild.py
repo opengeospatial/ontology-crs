@@ -218,3 +218,7 @@ print(prefixtoproperties)
 os.mkdir("context")
 with open('context/geosrs-context.json', 'w',encoding="utf-8") as f:
     json.dump(ldcontext, f,indent=2,sort_keys=True)
+
+gr = Graph()
+gr.parse(location="examples/epsg23032.json", format='json-ld')
+gr.serialize(destination='examples/epsg23032.ttl', format='turtle')

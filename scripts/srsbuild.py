@@ -4,6 +4,10 @@ import csv
 import os
 import json
 
+function convertCamelToSnake(str){
+ return str.replace(/([a-zA-Z])(?=[A-Z])/g,'$1_').toLowerCase()
+}
+
 exont={}
 
 ldcontext={"@context":{"rdfs":"http://www.w3.org/2000/01/rdf-schema#","rdf":"http://www.w3.org/1999/02/22-rdf-syntax-ns#",
@@ -210,10 +214,10 @@ for pref in prefixtoclasses:
     if pref!="geosrs_srs":
         ldcontext["@context"][pref]=geocrsNS[:-1]+"/"+pref.replace("geosrs_","")+"#"
     for cls in prefixtoclasses[pref]:
-        ldcontext["@context"][cls[cls.rfind('#')+1:]]=pref.replace("geosrs_srs","geosrs")+":"+cls[cls.rfind('#')+1:]
+        ldcontext["@context"][convertCamelToSnake(cls[cls.rfind('#')+1:])]=pref.replace("geosrs_srs","geosrs")+":"+cls[cls.rfind('#')+1:]
     if pref in prefixtoproperties:
         for cls in prefixtoproperties[pref]:
-            ldcontext["@context"][cls[cls.rfind('#')+1:]]=pref.replace("geosrs_srs","geosrs")+":"+cls[cls.rfind('#')+1:]
+            ldcontext["@context"][convertCamelToSnake(cls[cls.rfind('#')+1:])]=pref.replace("geosrs_srs","geosrs")+":"+cls[cls.rfind('#')+1:]
 print(prefixtoproperties)
 os.mkdir("context")
 with open('context/geosrs-context.json', 'w',encoding="utf-8") as f:

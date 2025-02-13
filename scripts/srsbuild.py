@@ -2,6 +2,7 @@ from rdflib import Graph, URIRef, Literal
 from rdflib.namespace import RDF, RDFS, OWL, SKOS, VANN, XSD
 import csv
 import os
+import re
 import json
 
 pattern = re.compile(r'(?<!^)(?=[A-Z])')

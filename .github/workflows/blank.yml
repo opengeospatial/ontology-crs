@@ -89,6 +89,7 @@ jobs:
          rm objprop.ttl datatypeprop.ttl 
          mkdir examples
          cp ../examples/* examples/
+         python3 scripts/htmlpostprocessing.py
     - name: Deploy 🚀
       uses: JamesIves/github-pages-deploy-action@v4.3.3
       with:

@@ -351,6 +351,7 @@
     "conversion": "geosrs:conversion",
     "coordinateSystem": "geosrs:coordinateSystem",
     "datum": "geosrs:datum",
+    "datum_ensemble": "geosrs:datum",
     "ellipsoid": "geosrs:ellipsoid",
     "geosrs": "https://w3id.org/geosrs/geosrs#",
     "geosrs_application": "https://w3id.org/geosrs/application#",
@@ -363,8 +364,10 @@
     "om": "http://www.ontology-of-units-of-measure.org/resource/om-2/",
     "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "scope": "skos:scopeNote",
     "semiMajorAxis": "geosrs:semiMajorAxis",
     "semiMinorAxis": "geosrs:semiMinorAxis",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
     "sourceCRS": "geosrs:sourceCRS",
     "targetCRS": "geosrs:targetCRS",
     "type": {

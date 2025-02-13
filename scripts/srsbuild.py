@@ -11,7 +11,9 @@ ldcontext={"@context":{"rdfs":"http://www.w3.org/2000/01/rdf-schema#","rdf":"htt
                        "skos":"http://www.w3.org/2004/02/skos/core#",
                        "name":"rdfs:label", "value":"rdf:value",
                        "scope":"skos:scopeNote",
+                       "coordinate_system":"geosrs:coordinateSystem",
                        "datum_ensemble":"geosrs:datum",
+                       "subtype":{"@id":"rdf:type","@type":"@vocab"},
                        "type":{"@id":"rdf:type","@type":"@vocab"},
                        "unit":{"@id":"om:hasUnit","@type":"@vocab"}
             }

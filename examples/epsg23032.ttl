@@ -9,14 +9,14 @@
     skos:scopeNote "Engineering survey, topographic mapping." ;
     geosrs:baseCRS [ rdfs:label "ED50" ;
             geosrs:coordinateSystem [ a geosrs:EllipsoidalCoordinateSystem ;
-                    geosrs:axis [ rdfs:label "Geodetic longitude" ;
-                            om:hasUnit om:degree ;
-                            skos:altLabel "Lon" ;
-                            geosrs:axisDirection "east" ],
-                        [ rdfs:label "Geodetic latitude" ;
+                    geosrs:axis [ rdfs:label "Geodetic latitude" ;
                             om:hasUnit om:degree ;
                             skos:altLabel "Lat" ;
-                            geosrs:axisDirection "north" ] ] ;
+                            geosrs:axisDirection "north" ],
+                        [ rdfs:label "Geodetic longitude" ;
+                            om:hasUnit om:degree ;
+                            skos:altLabel "Lon" ;
+                            geosrs:axisDirection "east" ] ] ;
             geosrs:datum [ a geosrs:GeodeticDatum ;
                     rdfs:label "European Datum 1950" ;
                     geosrs:ellipsoid [ rdfs:label "International 1924" ;
@@ -24,12 +24,12 @@
     geosrs:conversion [ rdfs:label "UTM zone 32N" ;
             geosrs:coordinateOperation [ rdfs:label "Transverse Mercator" ] ] ;
     geosrs:coordinateSystem [ a geosrs:CartesianCoordinateSystem ;
-            geosrs:axis [ rdfs:label "Northing" ;
-                    om:hasUnit om:metre ;
-                    skos:altLabel "N" ;
-                    geosrs:axisDirection "north" ],
-                [ rdfs:label "Easting" ;
+            geosrs:axis [ rdfs:label "Easting" ;
                     om:hasUnit om:metre ;
                     skos:altLabel "E" ;
-                    geosrs:axisDirection "east" ] ] .
+                    geosrs:axisDirection "east" ],
+                [ rdfs:label "Northing" ;
+                    om:hasUnit om:metre ;
+                    skos:altLabel "N" ;
+                    geosrs:axisDirection "north" ] ] .
 

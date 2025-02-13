@@ -8,7 +8,10 @@ exont={}
 
 ldcontext={"@context":{"rdfs":"http://www.w3.org/2000/01/rdf-schema#","rdf":"http://www.w3.org/1999/02/22-rdf-syntax-ns#",
                         "om": "http://www.ontology-of-units-of-measure.org/resource/om-2/","geosrs":"https://w3id.org/geosrs#",
+                       "skos":"http://www.w3.org/2004/02/skos/core#",
                        "name":"rdfs:label", "value":"rdf:value",
+                       "scope":"skos:scopeNote",
+                       "datum_ensemble":"geosrs:datum",
                        "type":{"@id":"rdf:type","@type":"@vocab"},
                        "unit":{"@id":"om:hasUnit","@type":"@vocab"}
             }

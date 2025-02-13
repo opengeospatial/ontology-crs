@@ -18,6 +18,6 @@ for img in imglist:
     basename=filename[0:filename.rfind('.')]
     print("Exists? "+basename+"/index.html")
     if os.path.exists(basename+"/index.html"):
-        replaceTextInFile(basename+"/index.html","Pictures say 1,000 words","<img src=\"images/"+filename+"\"/>")
+        replaceTextInFile(basename+"/index.html","Pictures say 1,000 words","<img src=\"../images/"+filename+"\"/>")
     
     

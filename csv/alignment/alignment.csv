@@ -12,3 +12,5 @@ geosrs:ProjectedCRS,owl:equivalentClass,ifc:IfcProjectedCRS
 geosrs:axis,owl:equivalentProperty,ifc:axis_IfcAxis1Placement
 geosrs:sourceCRS,owl:equivalentProperty,ifc:sourceCRS
 geosrs:targetCRS,owl:equivalentProperty,ifc:targetCRS
+geosrs:VerticalCoordinateSystem,owl:disjointWith,geosrs:OrdinalCoordinateSystem
+geosrs:Datum,owl:disjointWith,geosrs:CRS

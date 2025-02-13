@@ -2,7 +2,7 @@ import os
 
 def replaceTextInFile(filepath,text="Pictures say 1,000 words",replacement=""):
     print("Replacement of "+str(text)+" to "+str(replacement)+" in "+str(filepath))
-    with open(fikepath, 'r') as file:
+    with open(filepath, 'r') as file:
         filedata = file.read()
     filedata = filedata.replace(text, replacement)
     with open(filepath, 'w') as file:

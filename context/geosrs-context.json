@@ -350,6 +350,7 @@
     "baseCRS": "geosrs:baseCRS",
     "conversion": "geosrs:conversion",
     "coordinateSystem": "geosrs:coordinateSystem",
+    "coordinate_system": "geosrs:coordinateSystem",
     "datum": "geosrs:datum",
     "datum_ensemble": "geosrs:datum",
     "ellipsoid": "geosrs:ellipsoid",
@@ -369,6 +370,10 @@
     "semiMinorAxis": "geosrs:semiMinorAxis",
     "skos": "http://www.w3.org/2004/02/skos/core#",
     "sourceCRS": "geosrs:sourceCRS",
+    "subtype": {
+      "@id": "rdf:type",
+      "@type": "@vocab"
+    },
     "targetCRS": "geosrs:targetCRS",
     "type": {
       "@id": "rdf:type",

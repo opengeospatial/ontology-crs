@@ -4,9 +4,10 @@ import csv
 import os
 import json
 
-def convertCamelToSnake(str){
- return str.replace(/([a-zA-Z])(?=[A-Z])/g,'$1_').toLowerCase()
-}
+pattern = re.compile(r'(?<!^)(?=[A-Z])')
+
+def convertCamelToSnake(strr):
+ return pattern.sub('_', strr).lower()
 
 exont={}
 

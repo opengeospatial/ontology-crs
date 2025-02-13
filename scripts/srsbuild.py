@@ -4,7 +4,7 @@ import csv
 import os
 import json
 
-function convertCamelToSnake(str){
+def convertCamelToSnake(str){
  return str.replace(/([a-zA-Z])(?=[A-Z])/g,'$1_').toLowerCase()
 }
 

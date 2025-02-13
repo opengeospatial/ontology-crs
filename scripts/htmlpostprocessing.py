@@ -14,7 +14,7 @@ directory = os.fsencode(abspath)
 imglist = os.listdir(directory)
 for img in imglist:
     print(img)
-    filename=str(img)
+    filename= os.fsdecode(img)
     basename=filename[0:filename.rfind('.')]
     print("Exists? "+basename+"/index.html")
     if os.path.exists(basename+"/index.html"):

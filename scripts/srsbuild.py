@@ -14,7 +14,7 @@ ldcontext={"@context":{"rdfs":"http://www.w3.org/2000/01/rdf-schema#","rdf":"htt
                        "down:":"geosrs:down","down:":"geosrs:up","north:":"geosrs:north","south:":"geosrs:south",
                        "centimetre":"om:centimetre", "millimetre":"om:millimetre",
                        "kilometre":"om:kilometre", "degree":"om:degree",
-                       "metre":"om:metre","radian":"om:radian",
+                       "metre":"om:metre","radian":"om:radian","base_crs":"geosrs:baseCRS",
                        "coordinate_system":"geosrs:coordinateSystem",
                        "datum_ensemble":"geosrs:datum",
                        "subtype":{"@id":"rdf:type","@type":"@vocab"},

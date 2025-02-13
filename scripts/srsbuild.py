@@ -114,12 +114,12 @@ for file in os.listdir(directory):
     else:
         continue
  
-print(prefixtoclasses)
-print(classToPrefix)
+#print(prefixtoclasses)
+#print(classToPrefix)
 dirname = os.path.dirname(__file__)
 abspath = os.path.join(dirname, '../csv/prop/')
 directory = os.fsencode(abspath)
-print(abspath)    
+#print(abspath)    
 for file in os.listdir(directory):
     filename = os.fsdecode(file)
     g = Graph()
@@ -229,7 +229,8 @@ dirname = os.path.dirname(__file__)
 abspath = os.path.join(dirname, '../examples/')
 directory = os.fsencode(abspath)  
 for file in os.listdir(directory):
-    if file.endswith(".json"):
+    filename = os.fsdecode(file)
+    if filename.endswith(".json"):
        gr = Graph()
        gr.parse(location=abspath+filename, format='json-ld')
        gr.serialize(destination=abspath+filename.replace(".json",".ttl"), format='turtle')

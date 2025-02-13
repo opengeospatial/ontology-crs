@@ -22,7 +22,7 @@ ldcontext={"@context":{"rdfs":"http://www.w3.org/2000/01/rdf-schema#","rdf":"htt
                        "kilometre":"om:kilometre", "degree":"om:degree",
                        "metre":"om:metre","radian":"om:radian","base_crs":"geosrs:baseCRS",
                        "coordinate_system":"geosrs:coordinateSystem","ellipsoidal":"EllipsoidalCoordinateSystem",
-                       "Cartesian":"geosrs:CartesianCoordinateSystem",
+                       "Cartesian":"geosrs:CartesianCoordinateSystem","GeodeticReferenceFrame":"geosrs:GeodeticDatum",
                        "datum_ensemble":"geosrs:datum",
                        "subtype":{"@id":"rdf:type","@type":"@vocab"},
                        "type":{"@id":"rdf:type","@type":"@vocab"},

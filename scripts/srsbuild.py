@@ -8,7 +8,7 @@ import json
 pattern = re.compile(r'(?<!^)(?=[A-Z])')
 
 def convertCamelToSnakeAndReplacements(strr):
- return pattern.sub('_', strr).lower().replace("CoordinateSystem","")
+ return pattern.sub('_', strr).lower()
 
 exont={}
 
@@ -21,7 +21,7 @@ ldcontext={"@context":{"rdfs":"http://www.w3.org/2000/01/rdf-schema#","rdf":"htt
                        "centimetre":"om:centimetre", "millimetre":"om:millimetre",
                        "kilometre":"om:kilometre", "degree":"om:degree",
                        "metre":"om:metre","radian":"om:radian","base_crs":"geosrs:baseCRS",
-                       "coordinate_system":"geosrs:coordinateSystem",
+                       "coordinate_system":"geosrs:coordinateSystem","ellipsoidal":"EllipsoidalCoordinateSystem",
                        "datum_ensemble":"geosrs:datum",
                        "subtype":{"@id":"rdf:type","@type":"@vocab"},
                        "type":{"@id":"rdf:type","@type":"@vocab"},

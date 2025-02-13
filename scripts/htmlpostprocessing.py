@@ -1,6 +1,7 @@
 import os
 
 def replaceTextInFile(filepath,text="Pictures say 1,000 words",replacement=""):
+    print("Replacement of "+str(text)+" to "+str(replacement)+" in "+str(filepath))
     with open(fikepath, 'r') as file:
         filedata = file.read()
     filedata = filedata.replace(text, replacement)
@@ -15,7 +16,7 @@ for img in imglist:
     print(img)
     filename=str(img)
     basename=filename[0:filename.rfind('.')]
-    if os.path.exists(basename+"/"+basename+".html"):
+    if os.path.exists(basename+"/index.html"):
         replaceTextInFile(basename+"/"+basename+".html","Pictures say 1,000 words","<img src=\"images/"+img+"/>")
     
     

@@ -1,0 +1,21 @@
+@prefix geosrs: <https://w3id.org/geosrs/geosrs#> .
+@prefix ns1: <geocrs:> .
+@prefix om: <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+[] a geosrs:ProjectedCRS ;
+    rdfs:label "ED50 / UTM zone 32N" ;
+    skos:scopeNote "Engineering survey, topographic mapping." ;
+    geosrs:conversion [ rdfs:label "UTM zone 32N" ;
+            ns1:coordinateOperation [ rdfs:label "Transverse Mercator" ] ] ;
+    geosrs:coordinateSystem [ a <file:///home/runner/work/ontology-crs/ontology-crs/examples/Cartesian> ;
+            geosrs:axis [ rdfs:label "Easting" ;
+                    om:hasUnit om:metre ;
+                    skos:altLabel "E" ;
+                    geosrs:axisDirection "east" ],
+                [ rdfs:label "Northing" ;
+                    om:hasUnit om:metre ;
+                    skos:altLabel "N" ;
+                    geosrs:axisDirection "north" ] ] .
+

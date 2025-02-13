@@ -225,6 +225,11 @@ os.mkdir("context")
 with open('context/geosrs-context.json', 'w',encoding="utf-8") as f:
     json.dump(ldcontext, f,indent=2,sort_keys=True)
 
-gr = Graph()
-gr.parse(location="examples/epsg23032.json", format='json-ld')
-gr.serialize(destination='examples/epsg23032.ttl', format='turtle')
+dirname = os.path.dirname(__file__)
+abspath = os.path.join(dirname, '../examples/')
+directory = os.fsencode(abspath)  
+for file in os.listdir(directory):
+    if file.endswith(".json"):
+       gr = Graph()
+       gr.parse(location=abspath+filename, format='json-ld')
+       gr.serialize(destination=abspath+filename.replace(".json",".ttl"), format='turtle')

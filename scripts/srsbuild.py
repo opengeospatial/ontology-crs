@@ -7,8 +7,8 @@ import json
 
 pattern = re.compile(r'(?<!^)(?=[A-Z])')
 
-def convertCamelToSnake(strr):
- return pattern.sub('_', strr).lower()
+def convertCamelToSnakeAndReplacements(strr):
+ return pattern.sub('_', strr).lower().replace("CoordinateSystem","")
 
 exont={}
 

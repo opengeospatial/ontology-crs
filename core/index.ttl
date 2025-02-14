@@ -144,6 +144,18 @@ geosrs:ellipsoid a owl:ObjectProperty ;
     rdfs:range geosrs:Ellipsoid ;
     skos:definition "The properties relates a datum to its ellipsoid definition"@en .
 
+geosrs:semiMajorAxis a owl:DatatypeProperty ;
+    rdfs:label "semi major axis"@en ;
+    rdfs:domain geosrs:Ellipsoid ;
+    rdfs:range <xsd:double> ;
+    skos:definition "Indicates the length of the semi major axis of an ellipsoid. Cf. ISO 19111:2007:2007-07, table 36, attribute length of semi-major axis."@en .
+
+geosrs:semiMinorAxis a owl:DatatypeProperty ;
+    rdfs:label "semi minor axis"@en ;
+    rdfs:domain geosrs:Ellipsoid ;
+    rdfs:range <xsd:double> ;
+    skos:definition "Indicates the length of the semi minor axis of an ellipsoid. Cf. ISO 19111:2007:2007-07, table 37, attribute length of semi-minor axis."@en .
+
 geosrs:sourceCRS a owl:ObjectProperty ;
     rdfs:label "source CRS"@en ;
     rdfs:domain geosrs:CRS ;
@@ -155,10 +167,6 @@ geosrs:targetCRS a owl:ObjectProperty ;
     rdfs:domain geosrs:CRS ;
     rdfs:range geosrs:CRS ;
     skos:definition "The coordinate reference system associated to the data obtained as output of a given operation. Cf. ISO 19111:2007:2007-07, table 42, named association Target."@en .
-
-geosrs:Ellipsoid a owl:Class ;
-    rdfs:label "Ellipsoid"@en ;
-    skos:definition "Surface formed by the rotation of an ellipse about its minor axis, defined by a semi-major axis and a flattening parameter and fairly geocentric. NB : It is a mathematical model of the geoid, i.e. the Earth without its relief. Many geodetic ellipsoids exist. Cf. ISO 19111:2007:2007-07, part 10.2.2, table 36 and annex B.3.2.3."@en .
 
 geosrs:SingleCRS a owl:Class ;
     rdfs:label "Single Coordinate Reference System"@en ;
@@ -172,6 +180,10 @@ geosrs:SpatialReferenceSystem a owl:Class ;
 geosrs:Datum a owl:Class ;
     rdfs:label "Datum"@en ;
     skos:definition "Parameter or set of parameters that define the position of the origin, the scale and the orientation of a coordinate system. Cf. ISO 19111:2007:2007-07, part 10.1, table 33 and annex B.3."@en .
+
+geosrs:Ellipsoid a owl:Class ;
+    rdfs:label "Ellipsoid"@en ;
+    skos:definition "Surface formed by the rotation of an ellipse about its minor axis, defined by a semi-major axis and a flattening parameter and fairly geocentric. NB : It is a mathematical model of the geoid, i.e. the Earth without its relief. Many geodetic ellipsoids exist. Cf. ISO 19111:2007:2007-07, part 10.2.2, table 36 and annex B.3.2.3."@en .
 
 geosrs:CoordinateSystem a owl:Class ;
     rdfs:label "Coordinate System"@en ;

@@ -25,7 +25,7 @@ geosrs:CoordinateSystemAxis a owl:Class ;
 
 geosrs:EllipsoidalCoordinateSystem a owl:Class ;
     rdfs:label "Ellipsoidal Coordinate System"@en ;
-    rdfs:subClassOf geosrs:OrthogonalCoordinateSystem ;
+    rdfs:subClassOf <https://w3id.org/geosrs/cs/OrthogonalCoordinateSystem> ;
     skos:definition "Coordinate system which gives the position is specified by geodetic latitude, geodetic longitude and (in the three-dimensional case) ellipsoidal height. Cf. ISO 19111:2007:2007-07, tables 15 and 20."@en .
 
 geosrs:EngineeringCRS a owl:Class ;
@@ -65,12 +65,12 @@ geosrs:OrdinalCoordinateSystem a owl:Class ;
 
 geosrs:ParametricCoordinateSystem a owl:Class ;
     rdfs:label "Parametric Coordinate System"@en ;
-    rdfs:subClassOf geosrs:1DCoordinateSystem ;
+    rdfs:subClassOf <https://w3id.org/geosrs/cs/1DCoordinateSystem> ;
     skos:definition "One-dimensional coordinate system where the axis units are parameter values which are not inherently spatial."@en .
 
 geosrs:PolarCoordinateSystem a owl:Class ;
     rdfs:label "Polar Coordinate System"@en ;
-    rdfs:subClassOf geosrs:PlanarCoordinateSystem ;
+    rdfs:subClassOf <https://w3id.org/geosrs/cs/PlanarCoordinateSystem> ;
     skos:definition "Two-dimensional coordinate system in Euclidean space in which position is specified by one distance coordinate and one angular coordinate."@en .
 
 geosrs:PrimeMeridian a owl:Class ;
@@ -87,7 +87,7 @@ geosrs:SingleOperation a owl:Class ;
 
 geosrs:SphericalCoordinateSystem a owl:Class ;
     rdfs:label "Spherical Coordinate System"@en ;
-    rdfs:subClassOf geosrs:3DCoordinateSystem ;
+    rdfs:subClassOf <https://w3id.org/geosrs/cs/3DCoordinateSystem> ;
     skos:definition "Three-dimensional coordinate system in Euclidean space with one distance measured from the origin and two angular coordinates"@en .
 
 geosrs:Transformation a owl:Class ;
@@ -174,7 +174,7 @@ geosrs:SingleCRS a owl:Class ;
 
 geosrs:SpatialReferenceSystem a owl:Class ;
     rdfs:label "Spatial Reference System"@en ;
-    rdfs:subClassOf geosrs:ReferenceSystem ;
+    rdfs:subClassOf <https://w3id.org/geosrs/srs/ReferenceSystem> ;
     skos:definition "A reference system allowing the description of a position."@en .
 
 geosrs:Datum a owl:Class ;

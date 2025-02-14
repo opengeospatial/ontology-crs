@@ -58,11 +58,6 @@ geosrs:OperationParameterValue a owl:Class ;
     rdfs:label "operation parameter value"@en ;
     skos:definition "Value of a parameter used by a method to perform an operation on coordinates. See ISO 19111:2007:2007-07, table 55."@en .
 
-geosrs:OrdinalCoordinateSystem a owl:Class ;
-    rdfs:label "Ordinal Coordinate System"@en ;
-    rdfs:subClassOf geosrs:CoordinateSystem ;
-    skos:definition "n-dimensional coordinate system in which every axis uses integers."@en .
-
 geosrs:ParametricCoordinateSystem a owl:Class ;
     rdfs:label "Parametric Coordinate System"@en ;
     rdfs:subClassOf <https://w3id.org/geosrs/cs/1DCoordinateSystem> ;
@@ -96,7 +91,8 @@ geosrs:Transformation a owl:Class ;
 
 geosrs:VerticalCoordinateSystem a owl:Class ;
     rdfs:label "Vertical Coordinate System"@en ;
-    rdfs:subClassOf geosrs:CoordinateSystem ;
+    rdfs:subClassOf geosrs:CoordinateSystem,
+        geosrs:OrdinalCoordinateSystem ;
     skos:definition "One-dimensional coordinate system used for gravity related height or depth measurements. Cf. ISO 19111:2007:2007-07, tables 15 and 25."@en .
 
 geosrs:VerticalDatum a owl:Class ;
@@ -168,6 +164,11 @@ geosrs:targetCRS a owl:ObjectProperty ;
     rdfs:range geosrs:CRS ;
     skos:definition "The coordinate reference system associated to the data obtained as output of a given operation. Cf. ISO 19111:2007:2007-07, table 42, named association Target."@en .
 
+geosrs:OrdinalCoordinateSystem a owl:Class ;
+    rdfs:label "Ordinal Coordinate System"@en ;
+    rdfs:subClassOf geosrs:CoordinateSystem ;
+    skos:definition "n-dimensional coordinate system in which every axis uses integers."@en .
+
 geosrs:SingleCRS a owl:Class ;
     rdfs:label "Single Coordinate Reference System"@en ;
     skos:definition "Coordinate reference system consisting of one coordinate system and one datum. Cf. ISO 19111:2007:2007-07, table 5."@en .
@@ -177,10 +178,6 @@ geosrs:SpatialReferenceSystem a owl:Class ;
     rdfs:subClassOf <https://w3id.org/geosrs/srs/ReferenceSystem> ;
     skos:definition "A reference system allowing the description of a position."@en .
 
-geosrs:Datum a owl:Class ;
-    rdfs:label "Datum"@en ;
-    skos:definition "Parameter or set of parameters that define the position of the origin, the scale and the orientation of a coordinate system. Cf. ISO 19111:2007:2007-07, part 10.1, table 33 and annex B.3."@en .
-
 geosrs:Ellipsoid a owl:Class ;
     rdfs:label "Ellipsoid"@en ;
     skos:definition "Surface formed by the rotation of an ellipse about its minor axis, defined by a semi-major axis and a flattening parameter and fairly geocentric. NB : It is a mathematical model of the geoid, i.e. the Earth without its relief. Many geodetic ellipsoids exist. Cf. ISO 19111:2007:2007-07, part 10.2.2, table 36 and annex B.3.2.3."@en .
@@ -189,8 +186,13 @@ geosrs:CoordinateSystem a owl:Class ;
     rdfs:label "Coordinate System"@en ;
     skos:definition "Set of axes that spans a given coordinate space and of mathematical rules for specifying how coordinates are to be assigned to points. Cf. ISO 19111:2007:2007-07, part 9.2, table 17 and annex B.2."@en .
 
+geosrs:Datum a owl:Class ;
+    rdfs:label "Datum"@en ;
+    skos:definition "Parameter or set of parameters that define the position of the origin, the scale and the orientation of a coordinate system. Cf. ISO 19111:2007:2007-07, part 10.1, table 33 and annex B.3."@en .
+
 geosrs:CRS a owl:Class ;
     rdfs:label "Coordinate Reference System"@en ;
-    rdfs:subClassOf geosrs:SpatialReferenceSystem ;
+    rdfs:subClassOf geosrs:Datum,
+        geosrs:SpatialReferenceSystem ;
     skos:definition "Depending on the spatial dimension of coordinates (1D, 2D, 3D), this piece of metadata is used for specifying the elements of definition associated to a given set of coordinates: its datum, its ellipsoid, its prime meridian, the type of coordinates (geocentric, geographic, projected,...), the coordinates units of measure, when appropriate the cartographic projection used, the vertical coordinate reference system."@en .
 

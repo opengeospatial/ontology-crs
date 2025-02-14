@@ -35,7 +35,7 @@ prefixtoproperties={"geosrs":[],"CS":[],"CO":[],"DATUM":[],"projection":[]}
 classToPrefix={}
 
 gcore = Graph()
-gcore.bind("geosrs", "https://w3id.org/geosrs#") 
+gcore.bind("geosrs", "https://w3id.org/geosrs/") 
 gcore.bind("skos","http://www.w3.org/2004/02/skos/core#")
 
 gcore.add((URIRef("https://w3id.org/geosrs"),RDF.type,OWL.Ontology))
@@ -64,6 +64,7 @@ directory = os.fsencode(abspath)
 for file in os.listdir(directory):
     filename = os.fsdecode(file)
     g = Graph()
+    g.bind("geosrs", "https://w3id.org/geosrs/") 
     exont[filename.replace(".csv","")]=g
     curprefix="geosrs_"+filename.replace(".csv","")
     curns="https://w3id.org/geosrs/"+filename.replace(".csv","")+"/"
@@ -139,6 +140,7 @@ for file in os.listdir(directory):
     curprefix="geosrs_"+filename.replace(".csv","")
     curns="https://w3id.org/geosrs/"
     g.bind(curprefix, curns) 
+    g.bind("geosrs", "https://w3id.org/geosrs/") 
     g.bind("skos","http://www.w3.org/2004/02/skos/core#")
 
 

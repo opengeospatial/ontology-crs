@@ -1,3 +1,4 @@
+@prefix geosrs: <https://w3id.org/geosrs/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
@@ -758,7 +759,7 @@
 
 <geoprojection:Projection> a owl:Class ;
     rdfs:label "Projection"@en ;
-    rdfs:subClassOf <https://w3id.org/geosrs/Conversion> .
+    rdfs:subClassOf geosrs:Conversion .
 
 <geoprojection:PseudoOrthographicProjection> a owl:Class ;
     rdfs:label "Pseudo-Orthographic Projection"@en .
@@ -997,7 +998,7 @@
     rdfs:label "Winkel Snyder Projection"@en ;
     rdfs:subClassOf <geoprojection:CompromiseProjection> .
 
-<https://w3id.org/geosrs/projection> a owl:Ontology ;
+geosrs:projection a owl:Ontology ;
     rdfs:label "SRS Ontology: Geosrs_projection"@en ;
     vann:preferredNamespacePrefix "geosrs_projection"^^xsd:string ;
     vann:preferredNamespaceUri "https://w3id.org/geosrs/projection/"^^xsd:anyURI .

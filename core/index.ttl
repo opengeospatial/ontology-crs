@@ -91,8 +91,8 @@ geosrs:Transformation a owl:Class ;
 
 geosrs:VerticalCoordinateSystem a owl:Class ;
     rdfs:label "Vertical Coordinate System"@en ;
-    rdfs:subClassOf geosrs:CoordinateSystem,
-        geosrs:OrdinalCoordinateSystem ;
+    rdfs:subClassOf geosrs:CoordinateSystem ;
+    owl:disjointWith geosrs:OrdinalCoordinateSystem ;
     skos:definition "One-dimensional coordinate system used for gravity related height or depth measurements. Cf. ISO 19111:2007:2007-07, tables 15 and 25."@en .
 
 geosrs:VerticalDatum a owl:Class ;
@@ -192,7 +192,7 @@ geosrs:Datum a owl:Class ;
 
 geosrs:CRS a owl:Class ;
     rdfs:label "Coordinate Reference System"@en ;
-    rdfs:subClassOf geosrs:Datum,
-        geosrs:SpatialReferenceSystem ;
+    rdfs:subClassOf geosrs:SpatialReferenceSystem ;
+    owl:disjointWith geosrs:Datum ;
     skos:definition "Depending on the spatial dimension of coordinates (1D, 2D, 3D), this piece of metadata is used for specifying the elements of definition associated to a given set of coordinates: its datum, its ellipsoid, its prime meridian, the type of coordinates (geocentric, geographic, projected,...), the coordinates units of measure, when appropriate the cartographic projection used, the vertical coordinate reference system."@en .
 

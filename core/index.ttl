@@ -8,7 +8,7 @@
 <https://w3id.org/geosrs> a owl:Ontology ;
     rdfs:label "SRS Ontology"@en ;
     vann:preferredNamespacePrefix "geosrs"^^xsd:string ;
-    vann:preferredNamespaceUri "https://w3id.org/geosrs#"^^xsd:anyURI .
+    vann:preferredNamespaceUri "https://w3id.org/geosrs/"^^xsd:anyURI .
 
 geosrs:CartesianCoordinateSystem a owl:Class ;
     rdfs:label "Cartesian Coordinate System"@en ;

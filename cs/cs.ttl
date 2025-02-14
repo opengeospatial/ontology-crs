@@ -114,7 +114,8 @@
     rdfs:range <https://w3id.org/geosrs#CS> ;
     skos:definition "Links a coordinate reference system to a cylindrical coordinate system"@en .
 
-<geosrs:down> rdfs:label "down"@en ;
+<geosrs:down> a <geosrs:AxisDirection> ;
+    rdfs:label "down"@en ;
     skos:definition "Downwards axis direction"@en .
 
 <https://w3id.org/geosrs/cs> a owl:Ontology ;

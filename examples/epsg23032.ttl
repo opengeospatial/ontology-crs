@@ -24,12 +24,12 @@
     geosrs:conversion [ rdfs:label "UTM zone 32N" ;
             geosrs:coordinateOperation [ rdfs:label "Transverse Mercator" ] ] ;
     geosrs:coordinateSystem [ a geosrs:CartesianCoordinateSystem ;
-            geosrs:axis [ rdfs:label "Northing" ;
-                    om:hasUnit om:metre ;
-                    skos:altLabel "N" ;
-                    geosrs:axisDirection "north" ],
-                [ rdfs:label "Easting" ;
+            geosrs:axis [ rdfs:label "Easting" ;
                     om:hasUnit om:metre ;
                     skos:altLabel "E" ;
-                    geosrs:axisDirection "east" ] ] .
+                    geosrs:axisDirection "east" ],
+                [ rdfs:label "Northing" ;
+                    om:hasUnit om:metre ;
+                    skos:altLabel "N" ;
+                    geosrs:axisDirection "north" ] ] .
 

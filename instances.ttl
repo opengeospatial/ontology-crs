@@ -4,7 +4,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://w3id.org/geosrs/datatypeprop> a owl:Ontology ;
-    rdfs:label "SRS Ontology: Geodatatypeprop"@en ;
-    vann:preferredNamespacePrefix "geodatatypeprop"^^xsd:string ;
+    rdfs:label "SRS Ontology: Geosrs_datatypeprop"@en ;
+    vann:preferredNamespacePrefix "geosrs_datatypeprop"^^xsd:string ;
     vann:preferredNamespaceUri "https://w3id.org/geosrs/datatypeprop/"^^xsd:anyURI .
 

@@ -138,8 +138,6 @@ geosrs:datum a owl:ObjectProperty ;
     rdfs:range geosrs:Datum ;
     skos:definition "The property relates a coordinate reference system to a datum"@en .
 
-geosrs:down a geosrs:AxisDirection .
-
 geosrs:ellipsoid a owl:ObjectProperty ;
     rdfs:label "ellipsoid"@en ;
     rdfs:domain geosrs:Datum ;

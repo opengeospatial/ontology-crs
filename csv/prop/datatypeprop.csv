@@ -1,4 +1,4 @@
-Concept,Domain,Range,Label,Definition,Comment,Core Property?,ISO 19111,IGN 2019,Proj4RDF,GeoSPARQL,,IGN Definition,ISO Definition
+Concept,Domain,Range,Label,Definition,Comment,ISO 19111,IGN 2019,Proj4RDF,GeoSPARQL,Core Property?,IGN Definition,ISO Definition
 ,,,Axis abbreviation,"The abbreviation used to identify an axis. Cf. ISO 19111:2007:2007-07, table 27, attribute coordinate system axis abbreviation.",,,,ign:axisAbbrev,geocrs:abbreviation,,,"The abbreviation used to identify an axis. Cf. ISO 19111:2007:2007-07, table 27, attribute coordinate system axis abbreviation.",
 ,,geosrs:proj4Literal,PROJ4 string,PROJ4 string defining a CRS. Note: this paradigm is ambiguous and presently considered outdated.,,,,,geocrs:asProj4,,,,
 ,,geosrs:projJSONLiteral,PROJ JSON definition,CRS definition encoded as a JSON object interpretable by PROJ4.,,,,,geocrs:asProjJSON,,,,

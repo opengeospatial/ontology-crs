@@ -124,7 +124,7 @@ directory = os.fsencode(abspath)
 for file in os.listdir(directory):
     filename = os.fsdecode(file)
     g = Graph()
-    curprefix="geo"+filename.replace(".csv","")
+    curprefix="geosrs_"+filename.replace(".csv","")
     curns="https://w3id.org/geosrs/"+filename.replace(".csv","")+"/"
     g.bind(curprefix, curns) 
     g.bind("skos","http://www.w3.org/2004/02/skos/core#")
@@ -196,7 +196,7 @@ for file in os.listdir(directory):
                     if "Module" in row:
                         if row["Module"]=="Core Ontology":
                             core=True
-                            prefixtoproperties["geosrs"].append(row["Concept"].replace(curprefix+":",curns).replace("geosrs:","").replace("geoprojection:",""))
+                            prefixtoproperties["geosrs"].append(row["Concept"].replace(coreprefix+":",geocrsNS).replace("geoprojection:",""))
                             if "Type" in row and row["Type"]!="":
                                 gcore.add((URIRef(row["Concept"].replace(coreprefix+":",geocrsNS)),RDF.type,URIRef(row["Type"].replace(coreprefix+":",geocrsNS))))
                             else:
@@ -210,9 +210,9 @@ for file in os.listdir(directory):
                                 if row["Module"]!="":
                                     prefixtoproperties[row["Module"]].append(row["Concept"].replace(curprefix+":",curns).replace("geosrs:","").replace("geoprojection:",""))
                                 if "Type" in row and row["Type"]!="":
-                                    gcore.add((URIRef(row["Concept"].replace(coreprefix+":",geocrsNS)),RDF.type,URIRef(row["Type"].replace(coreprefix+":",geocrsNS))))
+                                    exont[row["Module"].lower()].add((URIRef(row["Concept"].replace(curprefix+":",geocrsNS)),RDF.type,URIRef(row["Type"].replace(curprefix+":",geocrsNS))))
                                 else:
-                                    gcore.add((URIRef(row["Concept"].replace(coreprefix+":",geocrsNS)),RDF.type,OWL.NamedIndividual))
+                                    exont[row["Module"].lower()].add((URIRef(row["Concept"].replace(curprefix+":",geocrsNS)),RDF.type,OWL.NamedIndividual))
                                 if "Label" in row and row["Label"]!="":
                                     exont[row["Module"].lower()].add((URIRef(row["Concept"].replace(curprefix+":",curns)),RDFS.label,Literal(row["Label"],lang="en")))
                                 if "Definition" in row and row["Definition"]!="":

@@ -88,10 +88,10 @@ for file in os.listdir(directory):
 
     if curprefix not in prefixtoclasses:
         prefixtoclasses[curprefix]=[]
-    g.add((URIRef("https://w3id.org/geosrs/"+filename.replace(".csv","")),RDF.type,OWL.Ontology))
-    g.add((URIRef("https://w3id.org/geosrs/"+filename.replace(".csv","")),RDFS.label,Literal("SRS Ontology: "+curprefix.capitalize(),lang="en")))
-    g.add((URIRef("https://w3id.org/geosrs/"+filename.replace(".csv","")),VANN.preferredNamespacePrefix,Literal(curprefix,datatype=XSD.string)))
-    g.add((URIRef("https://w3id.org/geosrs/"+filename.replace(".csv","")),VANN.preferredNamespaceUri,Literal("https://w3id.org/geosrs/"+filename.replace(".csv","")+"/",datatype=XSD.anyURI)))
+    g.add((URIRef("https://w3id.org/geosrs/"+filename.replace(".csv","")+filename.replace(".csv","")),RDF.type,OWL.Ontology))
+    g.add((URIRef("https://w3id.org/geosrs/"+filename.replace(".csv","")+filename.replace(".csv","")),RDFS.label,Literal("SRS Ontology: "+curprefix.capitalize(),lang="en")))
+    g.add((URIRef("https://w3id.org/geosrs/"+filename.replace(".csv","")+filename.replace(".csv","")),VANN.preferredNamespacePrefix,Literal(curprefix,datatype=XSD.string)))
+    g.add((URIRef("https://w3id.org/geosrs/"+filename.replace(".csv","")+filename.replace(".csv","")),VANN.preferredNamespaceUri,Literal("https://w3id.org/geosrs/"+filename.replace(".csv","")+"/",datatype=XSD.anyURI)))
     if filename.endswith(".csv"): 
         with open(abspath+filename, newline='') as csvfile:
             reader = csv.DictReader(csvfile)

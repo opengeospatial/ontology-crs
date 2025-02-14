@@ -1,4 +1,3 @@
-@prefix geosrs_projection: <https://w3id.org/geosrs/projection/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
@@ -759,7 +758,7 @@
 
 <geoprojection:Projection> a owl:Class ;
     rdfs:label "Projection"@en ;
-    rdfs:subClassOf geosrs_projection:Conversion .
+    rdfs:subClassOf <geosrs:Conversion> .
 
 <geoprojection:PseudoOrthographicProjection> a owl:Class ;
     rdfs:label "Pseudo-Orthographic Projection"@en .

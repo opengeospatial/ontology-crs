@@ -10,107 +10,147 @@
     vann:preferredNamespacePrefix "geosrs_cs"^^xsd:string ;
     vann:preferredNamespaceUri "https://w3id.org/geosrs/cs/"^^xsd:anyURI .
 
+geosrs_cs:1DCoordinateSystem a owl:Class ;
+    rdfs:label "1D Coordinate System"@en ;
+    rdfs:subClassOf <geosrs:CoordinateSystem> ;
+    skos:definition "Non-repeating sequence of coordinate system axes that spans a given coordinate space in one dimension"@en .
+
+geosrs_cs:3DCoordinateSystem a owl:Class ;
+    rdfs:label "3D Coordinate System"@en ;
+    rdfs:subClassOf <geosrs:CoordinateSystem> ;
+    skos:definition "Non-repeating sequence of coordinate system axes that spans a given coordinate space in three dimensions"@en .
+
 geosrs_cs:AffineCoordinateSystem a owl:Class ;
     rdfs:label "Affine Coordinate System"@en ;
-    rdfs:subClassOf geosrs_cs:CoordinateSystem ;
+    rdfs:subClassOf <geosrs:CoordinateSystem> ;
     skos:definition "Coordinate system in Euclidean space with straight axes that are not necessarily mutually perpendicular"@en .
 
 geosrs_cs:BarycentricCoordinateSystem a owl:Class ;
     rdfs:label "Barycentric Coordinate System"@en ;
-    rdfs:subClassOf geosrs_cs:CoordinateSystem ;
+    rdfs:subClassOf <geosrs:CoordinateSystem> ;
     skos:definition "A coordinate system in which the location of a point is specified by reference to a simplex (a triangle for points in a plane, a tetrahedron for points in three-dimensional space, etc.)"@en .
+
+geosrs_cs:CelestialCoordinateSystem a owl:Class ;
+    rdfs:label "Celestial Coordinate System"@en ;
+    rdfs:subClassOf <geosrs:CoordinateSystem> ;
+    skos:definition "A coordinate system for specifying positions of celestial objects relative to physical reference points"@en .
 
 geosrs_cs:ConicalCoordinateSystem a owl:Class ;
     rdfs:label "Conical Coordinate System"@en ;
-    rdfs:subClassOf geosrs_cs:OrthogonalCoordinateSystem ;
+    rdfs:subClassOf <geosrs:OrthogonalCoordinateSystem> ;
     skos:definition "A conical coordinate system is a three-dimensional orthogonal coordinate system consisting of concentric spheres (described by their radius r) and by two families of perpendicular cones, aligned along the z- and x-axes, respectively"@en .
+
+geosrs_cs:CurvilinearCoordinateSystem a owl:Class ;
+    rdfs:label "Curvilinear Coordinate System"@en ;
+    rdfs:subClassOf <geosrs:CoordinateSystem> ;
+    skos:definition "A coordinate system for the Euclidean space in which the coordinate lines may be curved"@en .
 
 geosrs_cs:CylindricalCoordinateSystem a owl:Class ;
     rdfs:label "Cylindrical Coordinate System"@en ;
-    rdfs:subClassOf geosrs_cs:3DCoordinateSystem ;
+    rdfs:subClassOf <geosrs:3DCoordinateSystem> ;
     skos:definition "Three-dimensional coordinate system in Euclidean space in which position is specified by two linear coordinates and one angular coordinate"@en .
 
 geosrs_cs:DateTimeTemporalCoordinateSystem a owl:Class ;
     rdfs:label "DateTime Temporal Coordinate System"@en ;
-    rdfs:subClassOf geosrs_cs:TemporalCoordinateSystem ;
+    rdfs:subClassOf <geosrs:TemporalCoordinateSystem> ;
     skos:definition "One-dimensional coordinate system used to record time in dateTime representation as defined in ISO 8601."@en .
 
 geosrs_cs:EclipticCoordinateSystem a owl:Class ;
     rdfs:label "Ecliptic Coordinate System"@en ;
-    rdfs:subClassOf geosrs_cs:CelestialCoordinateSystem ;
+    rdfs:subClassOf <geosrs:CelestialCoordinateSystem> ;
     skos:definition "An ecliptic coordinate system is used for representing the apparent positions and orbits of solar system objects."@en .
 
 geosrs_cs:EngineeringCoordinateSystem a owl:Class ;
     rdfs:label "Engineering Coordinate System"@en ;
-    rdfs:subClassOf geosrs_cs:CoordinateSystem ;
+    rdfs:subClassOf <geosrs:CoordinateSystem> ;
     skos:definition "Coordinate system used by an engineering coordinate reference system, one of an affine coordinate system, a Cartesian coordinate system, a cylindrical coordinate system, a linear coordinate sytem, an ordinal coordinate system, a polar coordinate system or a spherical coordinate system"@en .
 
 geosrs_cs:EquatorialCoordinateSystem a owl:Class ;
     rdfs:label "Equatorial Coordinate System"@en ;
-    rdfs:subClassOf geosrs_cs:CelestialCoordinateSystem ;
+    rdfs:subClassOf <geosrs:CelestialCoordinateSystem> ;
     skos:definition "A celestial coordinate system in which an object's position on the celestial sphere is described in terms of its north-south declination and east-west right ascension, measured relative to the celestial equator and vernal equinox, respectively."@en .
 
 geosrs_cs:GalacticCoordinateSystem a owl:Class ;
     rdfs:label "Galactic Coordinate System"@en ;
-    rdfs:subClassOf geosrs_cs:3DCoordinateSystem,
-        geosrs_cs:CelestialCoordinateSystem ;
+    rdfs:subClassOf <geosrs:3DCoordinateSystem>,
+        <geosrs:CelestialCoordinateSystem> ;
     skos:definition "A coordinate system with the Sun as its center, the primary direction aligned with the approximate center of the Milky Way Galaxy, and the fundamental plane parallel to an approximation of the galactic plane but offset to its north."@en .
+
+geosrs_cs:GeodeticCoordinateSystem a owl:Class ;
+    rdfs:label "Geodetic Coordinate System"@en ;
+    rdfs:subClassOf <geosrs:CoordinateSystem> ;
+    skos:definition "Coordinate system used by a Geodetic CRS, one of a Cartesian coordinate system or a spherical coordinate system."@en .
 
 geosrs_cs:GeographicalCoordinateSystem a owl:Class ;
     rdfs:label "Geographic Coordinate System"@en ;
-    rdfs:subClassOf geosrs_cs:GeodeticCoordinateSystem,
-        geosrs_cs:SphericalCoordinateSystem ;
+    rdfs:subClassOf <geosrs:GeodeticCoordinateSystem>,
+        <geosrs:SphericalCoordinateSystem> ;
     skos:definition "Spherical or geodetic coordinate system for measuring and communicating positions directly on Earth as latitude and longitude."@en .
+
+geosrs_cs:GridCoordinateSystem a owl:Class ;
+    rdfs:label "Grid Coordinate System"@en ;
+    rdfs:subClassOf <geosrs:CoordinateSystem> ;
+    skos:definition "A grid coordinate system identifies areas within a grid."@en .
 
 geosrs_cs:HexagonalCoordinateSystem a owl:Class ;
     rdfs:label "Hexagonal Coordinate System"@en ;
-    rdfs:subClassOf geosrs_cs:GridCoordinateSystem ;
+    rdfs:subClassOf <geosrs:GridCoordinateSystem> ;
     skos:definition "A hexagonal coordinate system identifies areas within a hexagonal lattice."@en .
 
 geosrs_cs:HorizontalCoordinateSystem a owl:Class ;
     rdfs:label "Horizontal Coordinate System"@en ;
-    rdfs:subClassOf geosrs_cs:CelestialCoordinateSystem ;
+    rdfs:subClassOf <geosrs:CelestialCoordinateSystem> ;
     skos:definition "A horizontal coordinate system is a celestial coordinate system that uses the observer's local horizon as the fundamental plane."@en .
 
 geosrs_cs:LocalCoordinateSystem a owl:Class ;
     rdfs:label "Local Coordinate System"@en ;
-    rdfs:subClassOf geosrs_cs:CoordinateSystem ;
+    rdfs:subClassOf <geosrs:CoordinateSystem> ;
     skos:definition "Coordinate system with a point of local reference."@en .
 
 geosrs_cs:ObliqueCoordinateSystem a owl:Class ;
     rdfs:label "Oblique Coordinate System"@en ;
-    rdfs:subClassOf geosrs_cs:CoordinateSystem ;
+    rdfs:subClassOf <geosrs:CoordinateSystem> ;
     skos:definition "A plane coordinate system whose axes are not perpendicular."@en .
+
+geosrs_cs:OrthogonalCoordinateSystem a owl:Class ;
+    rdfs:label "Orthogonal Coordinate System"@en ;
+    rdfs:subClassOf <geosrs:CurvilinearCoordinateSystem> ;
+    skos:definition "A orthogonal coordinate system is a system of curvilinear coordinates in which each family of surfaces intersects the others at right angles."@en .
 
 geosrs_cs:PerifocalCoordinateSystem a owl:Class ;
     rdfs:label "Perifocal Coordinate System"@en ;
-    rdfs:subClassOf geosrs_cs:CelestialCoordinateSystem ;
+    rdfs:subClassOf <geosrs:CelestialCoordinateSystem> ;
     skos:definition "A frame of reference centered at the focus of the orbit, i.e. the celestial body about which the orbit is centered. "@en .
 
 geosrs_cs:PlanarCoordinateSystem a owl:Class ;
     rdfs:label "Planar Coordinate System"@en ;
-    rdfs:subClassOf geosrs_cs:CoordinateSystem ;
+    rdfs:subClassOf <geosrs:CoordinateSystem> ;
     skos:definition "A two-dimensional measurement system that locates features on a plane based on their distance from an origin (0,0) along two perpendicular axes."@en .
 
 geosrs_cs:SkewCoordinateSystem a owl:Class ;
     rdfs:label "Skew Coordinate System"@en ;
-    rdfs:subClassOf geosrs_cs:CurvilinearCoordinateSystem ;
+    rdfs:subClassOf <geosrs:CurvilinearCoordinateSystem> ;
     skos:definition "A skew coordinate system is a system of curvilinear coordinates in which each family of surfaces intersects the others at angles other than right angles."@en .
 
 geosrs_cs:SuperGalacticCS a owl:Class ;
     rdfs:label "Super Galactic Coordinate System"@en ;
-    rdfs:subClassOf geosrs_cs:3DCoordinateSystem,
-        geosrs_cs:CelestialCoordinateSystem ;
+    rdfs:subClassOf <geosrs:3DCoordinateSystem>,
+        <geosrs:CelestialCoordinateSystem> ;
     skos:definition "A reference frame for the supercluster of galaxies that contains the Milky Way galaxy, referenced to a local relatively flat collection of galaxy clusters used to define the supergalactic plane."@en .
+
+geosrs_cs:TemporalCoordinateSystem a owl:Class ;
+    rdfs:label "Temporal Coordinate System"@en ;
+    rdfs:subClassOf <geosrs:1DCoordinateSystem> ;
+    skos:definition "One-dimensionalcoordinate system where the axis is time."@en .
 
 geosrs_cs:TemporalCountCoordinateSystem a owl:Class ;
     rdfs:label "Temporal Count Coordinate System"@en ;
-    rdfs:subClassOf geosrs_cs:TemporalCoordinateSystem ;
+    rdfs:subClassOf <geosrs:TemporalCoordinateSystem> ;
     skos:definition "One-dimensional coordinate system used to record time as an integer count."@en .
 
 geosrs_cs:TemporalMeasureCoordinateSystem a owl:Class ;
     rdfs:label "Temporal Measure Coordinate System"@en ;
-    rdfs:subClassOf geosrs_cs:TemporalCoordinateSystem ;
+    rdfs:subClassOf <geosrs:TemporalCoordinateSystem> ;
     skos:definition "One-dimensional coordinate system used to record a time as a real number."@en .
 
 geosrs_cs:cylindricalCS a owl:ObjectProperty ;
@@ -122,44 +162,4 @@ geosrs_cs:cylindricalCS a owl:ObjectProperty ;
 geosrs_cs:down a <geosrs:AxisDirection> ;
     rdfs:label "down"@en ;
     skos:definition "Downwards axis direction"@en .
-
-geosrs_cs:1DCoordinateSystem a owl:Class ;
-    rdfs:label "1D Coordinate System"@en ;
-    rdfs:subClassOf geosrs_cs:CoordinateSystem ;
-    skos:definition "Non-repeating sequence of coordinate system axes that spans a given coordinate space in one dimension"@en .
-
-geosrs_cs:GeodeticCoordinateSystem a owl:Class ;
-    rdfs:label "Geodetic Coordinate System"@en ;
-    rdfs:subClassOf geosrs_cs:CoordinateSystem ;
-    skos:definition "Coordinate system used by a Geodetic CRS, one of a Cartesian coordinate system or a spherical coordinate system."@en .
-
-geosrs_cs:GridCoordinateSystem a owl:Class ;
-    rdfs:label "Grid Coordinate System"@en ;
-    rdfs:subClassOf geosrs_cs:CoordinateSystem ;
-    skos:definition "A grid coordinate system identifies areas within a grid."@en .
-
-geosrs_cs:OrthogonalCoordinateSystem a owl:Class ;
-    rdfs:label "Orthogonal Coordinate System"@en ;
-    rdfs:subClassOf geosrs_cs:CurvilinearCoordinateSystem ;
-    skos:definition "A orthogonal coordinate system is a system of curvilinear coordinates in which each family of surfaces intersects the others at right angles."@en .
-
-geosrs_cs:CurvilinearCoordinateSystem a owl:Class ;
-    rdfs:label "Curvilinear Coordinate System"@en ;
-    rdfs:subClassOf geosrs_cs:CoordinateSystem ;
-    skos:definition "A coordinate system for the Euclidean space in which the coordinate lines may be curved"@en .
-
-geosrs_cs:3DCoordinateSystem a owl:Class ;
-    rdfs:label "3D Coordinate System"@en ;
-    rdfs:subClassOf geosrs_cs:CoordinateSystem ;
-    skos:definition "Non-repeating sequence of coordinate system axes that spans a given coordinate space in three dimensions"@en .
-
-geosrs_cs:TemporalCoordinateSystem a owl:Class ;
-    rdfs:label "Temporal Coordinate System"@en ;
-    rdfs:subClassOf geosrs_cs:1DCoordinateSystem ;
-    skos:definition "One-dimensionalcoordinate system where the axis is time."@en .
-
-geosrs_cs:CelestialCoordinateSystem a owl:Class ;
-    rdfs:label "Celestial Coordinate System"@en ;
-    rdfs:subClassOf geosrs_cs:CoordinateSystem ;
-    skos:definition "A coordinate system for specifying positions of celestial objects relative to physical reference points"@en .
 

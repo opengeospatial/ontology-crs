@@ -120,6 +120,11 @@ geosrs_cs:down a owl:NamedIndividual,
     rdfs:label "down"@en ;
     skos:definition "Downwards axis direction"@en .
 
+geosrs_cs:east a owl:NamedIndividual,
+        geosrs:AxisDirection ;
+    rdfs:label "east"@en ;
+    skos:definition "east axis direction"@en .
+
 geosrs:cscs a owl:Ontology ;
     rdfs:label "SRS Ontology: Geosrs_cs"@en ;
     vann:preferredNamespacePrefix "geosrs_cs"^^xsd:string ;

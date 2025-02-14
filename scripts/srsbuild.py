@@ -119,9 +119,9 @@ for file in os.listdir(directory):
                         if "DisjointClass" in row and row["DisjointClass"]!="":
                             if " " in row["DisjointClass"]:
                                 for spl in row["DisjointClass"].split(" "):
-                                    gcore.add((URIRef(row["Concept"].replace(coreprefix+":",geocrsNS)),RDFS.subClassOf,URIRef(spl.replace("geosrs:", getNSForClass(spl,classToPrefix)))))
+                                    gcore.add((URIRef(row["Concept"].replace(coreprefix+":",geocrsNS)),OWL.disjointWith,URIRef(spl.replace("geosrs:", getNSForClass(spl,classToPrefix)))))
                             else:
-                                gcore.add((URIRef(row["Concept"].replace(coreprefix+":",geocrsNS)),RDFS.subClassOf,URIRef(row["DisjointClass"].replace("geosrs:", getNSForClass(row["DisjointClass"],classToPrefix)))))
+                                gcore.add((URIRef(row["Concept"].replace(coreprefix+":",geocrsNS)),OWL.disjointWith,URIRef(row["DisjointClass"].replace("geosrs:", getNSForClass(row["DisjointClass"],classToPrefix)))))
                     else:
                         g.add((URIRef(row["Concept"].replace(coreprefix+":",curns)),RDF.type,OWL.Class))
                         prefixtoclasses[curprefix].append(row["Concept"].replace(curprefix+":",curns).replace("geosrs:","").replace("geoprojection:",""))

@@ -66,7 +66,7 @@ for file in os.listdir(directory):
     g = Graph()
     exont[filename.replace(".csv","")]=g
     curprefix="geosrs_"+filename.replace(".csv","")
-    curns="http://www.opengis.net/ont/srs/"+filename.replace(".csv","")+"/"
+    curns="https://w3id.org/geosrs/"+filename.replace(".csv","")+"/"
     g.bind(curprefix,curns) 
     g.bind("skos","http://www.w3.org/2004/02/skos/core#")
     g.bind(curprefix,curns)
@@ -76,7 +76,7 @@ for file in os.listdir(directory):
     g.add((URIRef("https://w3id.org/geosrs/"+filename.replace(".csv","")),RDF.type,OWL.Ontology))
     g.add((URIRef("https://w3id.org/geosrs/"+filename.replace(".csv","")),RDFS.label,Literal("SRS Ontology: "+curprefix.capitalize(),lang="en")))
     g.add((URIRef("https://w3id.org/geosrs/"+filename.replace(".csv","")),VANN.preferredNamespacePrefix,Literal(curprefix,datatype=XSD.string)))
-    g.add((URIRef("https://w3id.org/geosrs/"+filename.replace(".csv","")),VANN.preferredNamespaceUri,Literal("http://www.opengis.net/ont/srs/"+filename.replace(".csv","")+"/",datatype=XSD.anyURI)))
+    g.add((URIRef("https://w3id.org/geosrs/"+filename.replace(".csv","")),VANN.preferredNamespaceUri,Literal("https://w3id.org/geosrs/"+filename.replace(".csv","")+"/",datatype=XSD.anyURI)))
     if filename.endswith(".csv"): 
         with open(abspath+filename, newline='') as csvfile:
             reader = csv.DictReader(csvfile)
@@ -245,7 +245,7 @@ g=Graph()
 g.bind("ign","http://data.ign.fr/def/ignf#")  
 g.bind("ifc","https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL/")  
 g.bind("iso19111","http://def.isotc211.org/iso19112/2019/SpatialReferencingByGeographicIdentifier#")   
-g.bind("geosrs", "http://www.opengis.net/ont/srs/")  
+g.bind("geosrs", "https://w3id.org/geosrs/")  
 g.add((URIRef("https://w3id.org/geosrs/alignments/"),RDF.type,OWL.Ontology))
 g.add((URIRef("https://w3id.org/geosrs/alignments/"),RDFS.label,Literal("SRS Ontology Alignments",lang="en")))
 dirname = os.path.dirname(__file__)

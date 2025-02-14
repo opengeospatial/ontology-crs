@@ -51,7 +51,7 @@ def getPrefixForClass(cls,prefixmap):
         return prefixmap[cls]["prefix"]
     return coreprefix
 
-def getNSForClass(cls,prefixmap):
+def getNSForClass(cls,prefixmap,g=None):
     if cls in prefixmap:
         return prefixmap[cls]["ns"]
     return geocrsNS

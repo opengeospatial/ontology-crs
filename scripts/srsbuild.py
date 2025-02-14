@@ -62,6 +62,7 @@ abspath = os.path.join(dirname, '../csv/class/')
 directory = os.fsencode(abspath)
 
 for file in os.listdir(directory):
+    filename = os.fsdecode(file)
     if filename.endswith(".csv"):
         with open(abspath+filename, newline='') as csvfile:
             reader = csv.DictReader(csvfile)

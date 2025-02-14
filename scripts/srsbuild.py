@@ -229,6 +229,7 @@ for file in os.listdir(directory):
                             prefixtoproperties["geosrs"].append(row["Concept"].replace(coreprefix+":",geocrsNS).replace("geoprojection:",""))
                             if "Type" in row and row["Type"]!="":
                                 gcore.add((URIRef(row["Concept"].replace(coreprefix+":",geocrsNS)),RDF.type,URIRef(row["Type"].replace(coreprefix+":",geocrsNS))))
+                                gcore.add((URIRef(row["Concept"].replace(coreprefix+":",geocrsNS)),RDF.type,OWL.NamedIndividual))
                             else:
                                 gcore.add((URIRef(row["Concept"].replace(coreprefix+":",geocrsNS)),RDF.type,OWL.NamedIndividual))
                             if "Label" in row and row["Label"]!="":
@@ -241,6 +242,7 @@ for file in os.listdir(directory):
                                     prefixtoproperties[row["Module"]].append(row["Concept"].replace(coreprefix+":",curns+str(row["Module"]).lower()+"/").replace("geosrs:","").replace("geoprojection:",""))
                                 if "Type" in row and row["Type"]!="":
                                     exont[row["Module"].lower()].add((URIRef(row["Concept"].replace(coreprefix+":",curns+str(row["Module"]).lower()+"/")),RDF.type,URIRef(row["Type"].replace("geosrs:",getNSForClass(row["Type"],classToPrefix)))))
+                                    exont[row["Module"].lower()].add((URIRef(row["Concept"].replace(coreprefix+":",curns+str(row["Module"]).lower()+"/")),RDF.type,OWL.NamedIndividual))
                                 else:
                                     exont[row["Module"].lower()].add((URIRef(row["Concept"].replace(coreprefix+":",curns+str(row["Module"]).lower()+"/")),RDF.type,OWL.NamedIndividual))
                                 if "Label" in row and row["Label"]!="":

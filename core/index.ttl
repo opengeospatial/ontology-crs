@@ -70,7 +70,7 @@ geosrs:ParametricCoordinateSystem a owl:Class ;
 
 geosrs:PolarCoordinateSystem a owl:Class ;
     rdfs:label "Polar Coordinate System"@en ;
-    rdfs:subClassOf <geocrs:PlanarCoordinateSystem> ;
+    rdfs:subClassOf geosrs:PlanarCoordinateSystem ;
     skos:definition "Two-dimensional coordinate system in Euclidean space in which position is specified by one distance coordinate and one angular coordinate."@en .
 
 geosrs:PrimeMeridian a owl:Class ;

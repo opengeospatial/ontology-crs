@@ -63,6 +63,8 @@ directory = os.fsencode(abspath)
 
 for file in os.listdir(directory):
     filename = os.fsdecode(file)
+    curprefix="geosrs_"+filename.replace(".csv","")
+    curns="https://w3id.org/geosrs/"+filename.replace(".csv","")+"/"
     if filename.endswith(".csv"):
         with open(abspath+filename, newline='') as csvfile:
             reader = csv.DictReader(csvfile)

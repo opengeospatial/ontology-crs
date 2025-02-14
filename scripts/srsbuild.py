@@ -60,7 +60,18 @@ dirname = os.path.dirname(__file__)
 abspath = os.path.join(dirname, '../csv/class/')
 
 directory = os.fsencode(abspath)
-    
+
+for file in os.listdir(directory):
+    if filename.endswith(".csv"):
+        with open(abspath+filename, newline='') as csvfile:
+            reader = csv.DictReader(csvfile)
+            for row in reader:
+                if "Concept" in row and row["Concept"]!="":
+                    if "Core Class?" in row and row["Core Class?"]=="Core Ontology":
+                        classToPrefix[row["Concept"]]={"prefix":coreprefix, "ns":geocrsNS}
+                    else:
+                        classToPrefix[row["Concept"]]={"prefix":curprefix, "ns":curns}
+
 for file in os.listdir(directory):
     filename = os.fsdecode(file)
     g = Graph()
@@ -96,19 +107,19 @@ for file in os.listdir(directory):
                         if "SuperClass" in row and row["SuperClass"]!="":
                             if " " in row["SuperClass"]:
                                 for spl in row["SuperClass"].split(" "):
-                                    gcore.add((URIRef(row["Concept"].replace(coreprefix+":",geocrsNS)),RDFS.subClassOf,URIRef(spl.replace("geosrs:",geocrsNS))))
+                                    gcore.add((URIRef(row["Concept"].replace(coreprefix+":",geocrsNS)),RDFS.subClassOf,URIRef(spl.replace("geosrs:", getNSForClass(spl,classToPrefix)))))
                             else:
-                                gcore.add((URIRef(row["Concept"].replace(coreprefix+":",geocrsNS)),RDFS.subClassOf,URIRef(row["SuperClass"].replace("geosrs:",geocrsNS))))
+                                gcore.add((URIRef(row["Concept"].replace(coreprefix+":",geocrsNS)),RDFS.subClassOf,URIRef(row["SuperClass"].replace("geosrs:", getNSForClass(row["SuperClass"],classToPrefix)))))
                         if "DisjointClass" in row and row["DisjointClass"]!="":
                             if " " in row["DisjointClass"]:
                                 for spl in row["DisjointClass"].split(" "):
-                                    gcore.add((URIRef(row["Concept"].replace(coreprefix+":",geocrsNS)),RDFS.subClassOf,URIRef(spl.replace("geosrs:",geocrsNS))))
+                                    gcore.add((URIRef(row["Concept"].replace(coreprefix+":",geocrsNS)),RDFS.subClassOf,URIRef(spl.replace("geosrs:", getNSForClass(spl,classToPrefix)))))
                             else:
-                                gcore.add((URIRef(row["Concept"].replace(coreprefix+":",geocrsNS)),RDFS.subClassOf,URIRef(row["DisjointClass"].replace("geosrs:",geocrsNS))))
+                                gcore.add((URIRef(row["Concept"].replace(coreprefix+":",geocrsNS)),RDFS.subClassOf,URIRef(row["DisjointClass"].replace("geosrs:", getNSForClass(row["DisjointClass"],classToPrefix)))))
                     else:
                         g.add((URIRef(row["Concept"].replace(coreprefix+":",curns)),RDF.type,OWL.Class))
                         prefixtoclasses[curprefix].append(row["Concept"].replace(curprefix+":",curns).replace("geosrs:","").replace("geoprojection:",""))
-                        classToPrefix[row["Concept"]]={"prefix":coreprefix, "ns":curns}
+                        classToPrefix[row["Concept"]]={"prefix":curprefix, "ns":curns}
                         if "Label" in row and row["Label"]!="":
                             g.add((URIRef(row["Concept"].replace(coreprefix+":",curns)),RDFS.label,Literal(row["Label"],lang="en")))
                         if "Definition" in row and row["Definition"]!="":
@@ -116,15 +127,15 @@ for file in os.listdir(directory):
                         if "SuperClass" in row and row["SuperClass"]!="":
                             if " " in row["SuperClass"]:
                                 for spl in row["SuperClass"].split(" "):
-                                    g.add((URIRef(row["Concept"].replace(coreprefix+":",curns)),RDFS.subClassOf,URIRef(spl.replace(curprefix+":",curns).replace("geosrs:",geocrsNS))))
+                                    g.add((URIRef(row["Concept"].replace(coreprefix+":",curns)),RDFS.subClassOf,URIRef(spl.replace("geosrs:", getNSForClass(spl,classToPrefix)))))
                             else:
-                                g.add((URIRef(row["Concept"].replace(coreprefix+":",curns)),RDFS.subClassOf,URIRef(row["SuperClass"].replace(curprefix+":",curns).replace("geosrs:",geocrsNS))))
+                                g.add((URIRef(row["Concept"].replace(coreprefix+":",curns)),RDFS.subClassOf,URIRef(row["SuperClass"].replace("geosrs:", getNSForClass(row["SuperClass"],classToPrefix)))))
                         if "DisjointClass" in row and row["DisjointClass"]!="":
                             if " " in row["DisjointClass"]:
                                 for spl in row["DisjointClass"].split(" "):
-                                    g.add((URIRef(row["Concept"].replace(coreprefix+":",curns)),OWL.disjointWith,URIRef(spl.replace(curprefix+":",curns).replace("geosrs:",geocrsNS))))
+                                    g.add((URIRef(row["Concept"].replace(coreprefix+":",curns)),OWL.disjointWith,URIRef(spl.replace("geosrs:", getNSForClass(spl,classToPrefix)))))
                             else:
-                                g.add((URIRef(row["Concept"].replace(coreprefix+":",curns)),OWL.disjointWith,URIRef(row["SuperClass"].replace(curprefix+":",curns).replace("geosrs:",geocrsNS))))                       
+                                g.add((URIRef(row["Concept"].replace(coreprefix+":",curns)),OWL.disjointWith,URIRef(row["DisjointClass"].replace("geosrs:", getNSForClass(row["DisjointClass"],classToPrefix)))))                      
     else:
         continue
  

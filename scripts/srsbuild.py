@@ -137,7 +137,7 @@ for file in os.listdir(directory):
     filename = os.fsdecode(file)
     g = Graph()
     curprefix="geosrs_"+filename.replace(".csv","")
-    curns="https://w3id.org/geosrs/"+filename.replace(".csv","")+"/"
+    curns="https://w3id.org/geosrs/"
     g.bind(curprefix, curns) 
     g.bind("skos","http://www.w3.org/2004/02/skos/core#")
 
@@ -175,19 +175,19 @@ for file in os.listdir(directory):
                         else:
                             if row["Core Property?"].lower() in exont:
                                 if row["Core Property?"]!="":
-                                    prefixtoproperties[row["Core Property?"]].append(row["Concept"].replace(coreprefix+":",curns).replace("geosrs:","").replace("geoprojection:",""))
+                                    prefixtoproperties[row["Core Property?"]].append(row["Concept"].replace(coreprefix+":",curns+str(row["Core Property?"]).lower()+"#").replace("geosrs:","").replace("geoprojection:",""))
                                 if objprop:
-                                    exont[row["Core Property?"].lower()].add((URIRef(row["Concept"].replace(coreprefix+":",curns)),RDF.type,OWL.ObjectProperty))
+                                    exont[row["Core Property?"].lower()].add((URIRef(row["Concept"].replace(coreprefix+":",curns+str(row["Core Property?"]).lower()+"#")),RDF.type,OWL.ObjectProperty))
                                 else:
-                                    exont[row["Core Property?"].lower()].add((URIRef(row["Concept"].replace(coreprefix+":",curns)),RDF.type,OWL.DatatypeProperty))
+                                    exont[row["Core Property?"].lower()].add((URIRef(row["Concept"].replace(coreprefix+":",curns+str(row["Core Property?"]).lower()+"#")),RDF.type,OWL.DatatypeProperty))
                                 if "Label" in row and row["Label"]!="":
-                                    exont[row["Core Property?"].lower()].add((URIRef(row["Concept"].replace(coreprefix+":",curns)),RDFS.label,Literal(row["Label"],lang="en")))
+                                    exont[row["Core Property?"].lower()].add((URIRef(row["Concept"].replace(coreprefix+":",curns+str(row["Core Property?"]).lower()+"#")),RDFS.label,Literal(row["Label"],lang="en")))
                                 if "Definition" in row and row["Definition"]!="":
-                                    exont[row["Core Property?"].lower()].add((URIRef(row["Concept"].replace(coreprefix+":",curns)),SKOS.definition,Literal(row["Definition"],lang="en")))
+                                    exont[row["Core Property?"].lower()].add((URIRef(row["Concept"].replace(coreprefix+":",curns+str(row["Core Property?"]).lower()+"#")),SKOS.definition,Literal(row["Definition"],lang="en")))
                                 if "Range" in row and row["Range"]!="":
-                                    exont[row["Core Property?"].lower()].add((URIRef(row["Concept"].replace(coreprefix+":",curns)),RDFS.range,URIRef(row["Range"].replace("geosrs:",getNSForClass(row["Range"],classToPrefix)))))
+                                    exont[row["Core Property?"].lower()].add((URIRef(row["Concept"].replace(coreprefix+":",curns+str(row["Core Property?"]).lower()+"#")),RDFS.range,URIRef(row["Range"].replace("geosrs:",getNSForClass(row["Range"],classToPrefix)))))
                                 if "Domain" in row and row["Domain"]!="":
-                                    exont[row["Core Property?"].lower()].add((URIRef(row["Concept"].replace(coreprefix+":",curns)),RDFS.domain,URIRef(row["Domain"].replace("geosrs:",getNSForClass(row["Domain"],classToPrefix)))))
+                                    exont[row["Core Property?"].lower()].add((URIRef(row["Concept"].replace(coreprefix+":",curns+str(row["Core Property?"]).lower()+"#")),RDFS.domain,URIRef(row["Domain"].replace("geosrs:",getNSForClass(row["Domain"],classToPrefix)))))
             g.serialize(destination=filename.replace(".csv","")+".ttl") 
     else:
         continue
@@ -197,6 +197,8 @@ dirname = os.path.dirname(__file__)
 abspath = os.path.join(dirname, '../csv/instance/')
 directory = os.fsencode(abspath)
 print(abspath)    
+curprefix="geosrs_"+filename.replace(".csv","")
+curns="https://w3id.org/geosrs/"
 for file in os.listdir(directory):
     filename = os.fsdecode(file)
     if filename.endswith(".csv"): 
@@ -220,15 +222,15 @@ for file in os.listdir(directory):
                         else:
                             if row["Module"].lower() in exont:
                                 if row["Module"]!="":
-                                    prefixtoproperties[row["Module"]].append(row["Concept"].replace(coreprefix+":",curns).replace("geosrs:","").replace("geoprojection:",""))
+                                    prefixtoproperties[row["Module"]].append(row["Concept"].replace(coreprefix+":",curns+str(row["Core Property?"]).lower()+"#").replace("geosrs:","").replace("geoprojection:",""))
                                 if "Type" in row and row["Type"]!="":
-                                    exont[row["Module"].lower()].add((URIRef(row["Concept"].replace(coreprefix+":",geocrsNS)),RDF.type,URIRef(row["Type"].replace(curprefix+":",geocrsNS))))
+                                    exont[row["Module"].lower()].add((URIRef(row["Concept"].replace(coreprefix+":",curns+str(row["Core Property?"]).lower()+"#")),RDF.type,URIRef(row["Type"].replace(curprefix+":",geocrsNS))))
                                 else:
-                                    exont[row["Module"].lower()].add((URIRef(row["Concept"].replace(coreprefix+":",geocrsNS)),RDF.type,OWL.NamedIndividual))
+                                    exont[row["Module"].lower()].add((URIRef(row["Concept"].replace(coreprefix+":",curns+str(row["Core Property?"]).lower()+"#")),RDF.type,OWL.NamedIndividual))
                                 if "Label" in row and row["Label"]!="":
-                                    exont[row["Module"].lower()].add((URIRef(row["Concept"].replace(coreprefix+":",curns)),RDFS.label,Literal(row["Label"],lang="en")))
+                                    exont[row["Module"].lower()].add((URIRef(row["Concept"].replace(coreprefix+":",curns+str(row["Core Property?"]).lower()+"#")),RDFS.label,Literal(row["Label"],lang="en")))
                                 if "Definition" in row and row["Definition"]!="":
-                                    exont[row["Module"].lower()].add((URIRef(row["Concept"].replace(coreprefix+":",curns)),SKOS.definition,Literal(row["Definition"],lang="en")))
+                                    exont[row["Module"].lower()].add((URIRef(row["Concept"].replace(coreprefix+":",curns+str(row["Core Property?"]).lower()+"#")),SKOS.definition,Literal(row["Definition"],lang="en")))
             g.serialize(destination=filename.replace(".csv","")+".ttl") 
     else:
         continue

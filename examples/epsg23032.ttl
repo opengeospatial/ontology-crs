@@ -9,14 +9,14 @@
     skos:scopeNote "Engineering survey, topographic mapping." ;
     geosrs:baseCRS [ rdfs:label "ED50" ;
             geosrs:coordinateSystem [ a geosrs:EllipsoidalCoordinateSystem ;
-                    geosrs:axis [ rdfs:label "Geodetic latitude" ;
-                            om:hasUnit om:degree ;
-                            skos:altLabel "Lat" ;
-                            geosrs:axisDirection "north" ],
-                        [ rdfs:label "Geodetic longitude" ;
+                    geosrs:axis [ rdfs:label "Geodetic longitude" ;
                             om:hasUnit om:degree ;
                             skos:altLabel "Lon" ;
-                            geosrs:axisDirection "east" ] ] ;
+                            geosrs:axisDirection "east" ],
+                        [ rdfs:label "Geodetic latitude" ;
+                            om:hasUnit om:degree ;
+                            skos:altLabel "Lat" ;
+                            geosrs:axisDirection "north" ] ] ;
             geosrs:datum [ a geosrs:GeodeticDatum ;
                     rdfs:label "European Datum 1950" ;
                     geosrs:ellipsoid [ rdfs:label "International 1924" ;

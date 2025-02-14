@@ -1,39 +1,40 @@
+@prefix geosrs_datum: <http://www.opengis.net/ont/srs/datum#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<geosrs:DatumEnsemble> a owl:Class ;
+geosrs_datum:DatumEnsemble a owl:Class ;
     rdfs:label "Datum Ensemble"@en ;
     skos:definition """A collection of two or more datums (or if geodetic or vertical, a collection of two or more reference frames) that are realizations of one Conventional Reference System and which for all but the highest accuracy requirements may be considered to be insignificantly different from each other. Note: Within the datum ensemble every frame or datum is constrained to be a realization of the same reference system. Cf. ISO 19111:2019
 Geographic information — Referencing by coordinates."""@en .
 
-<geosrs:DefiningParameter> a owl:Class ;
+geosrs_datum:DefiningParameter a owl:Class ;
     rdfs:label "Defining Parameter"@en ;
     skos:definition "Parameter value, an ordered sequence of values, or a reference to a file of parameter values that define a paramtric datum. Cf. ISO 19111:2019 Geographic information — Referencing by coordinates."@en .
 
-<geosrs:DynamicVerticalDatum> a owl:Class ;
+geosrs_datum:DynamicVerticalDatum a owl:Class ;
     rdfs:label "Dynamic Vertical Datum"@en ;
-    rdfs:subClassOf <geosrs:VerticalDatum> ;
+    rdfs:subClassOf geosrs_datum:VerticalDatum ;
     skos:definition "Vertical reference frame in which some of the defining parameters have time dependencyExample: Defining station heights have velocity to account for post-glacial isostatic rebound motion. Cf. ISO 19111:2019 Geographic information — Referencing by coordinates."@en .
 
-<geosrs:EngineeringDatum> a owl:Class ;
+geosrs_datum:EngineeringDatum a owl:Class ;
     rdfs:label "Engineering Datum"@en ;
-    rdfs:subClassOf <geosrs:Datum> ;
+    rdfs:subClassOf geosrs_datum:Datum ;
     skos:definition "Definition of the origin and orientation of an engineering coordinate reference systemNote: The origin can be fixed with respect to the Earth (such as a defined point at a construction site), or be a defined point on a moving vehicle (such as on a ship or satellite), or a defined point of an image. Cf. ISO 19111:2019 Geographic information — Referencing by coordinates."@en .
 
-<geosrs:ParametricDatum> a owl:Class ;
+geosrs_datum:ParametricDatum a owl:Class ;
     rdfs:label "Parametric Datum"@en ;
-    rdfs:subClassOf <geosrs:Datum> ;
+    rdfs:subClassOf geosrs_datum:Datum ;
     skos:definition "Textual description and/or a set of parameters identifying a particular reference surface used as the origin of a parametric coordinate system, including its position with respect to the Earth. Cf. ISO 19111:2019 Geographic information — Referencing by coordinates."@en .
 
-<geosrs:TemporalDatum> a owl:Class ;
+geosrs_datum:TemporalDatum a owl:Class ;
     rdfs:label "Temporal Datum"@en ;
-    rdfs:subClassOf <geosrs:Datum> ;
+    rdfs:subClassOf geosrs_datum:Datum ;
     skos:definition "Definition of the relationship of a temporal coordinate system to an objectNote: The object is normally time on the Earth. Cf. ISO 19111:2019 Geographic information — Referencing by coordinates."@en .
 
-<geosrs:TriaxialEllipsoid> a owl:Class ;
+geosrs_datum:TriaxialEllipsoid a owl:Class ;
     rdfs:label "Triaxial Ellipsoid"@en ;
     skos:definition "Surface of an analytic ellipsoid defined by three axes of different length. Also referred as scalene ellipsoid."@en .
 

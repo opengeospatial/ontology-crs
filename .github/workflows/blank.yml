@@ -61,30 +61,30 @@ jobs:
          mv index.html docs/
          cd docs
          mkdir application
-         pylode -o application/index.html application.ttl
+         sudo pylode -o application/index.html application.ttl
          mv application.ttl application/
          mkdir alignments
-         pylode -o alignments/index.html alignments.ttl
+         sudo pylode -o alignments/index.html alignments.ttl
          mv alignments.ttl alignments/
          mkdir core
          mv index.ttl core/
          cd core
-         pylode -o index.html index.ttl
+         sudo pylode -o index.html index.ttl
          cd ..
          mkdir co
-         pylode -o co/index.html co.ttl
+         sudo pylode -o co/index.html co.ttl
          mv co.ttl co/
          mkdir cs
-         pylode -o cs/index.html cs.ttl
+         sudo pylode -o cs/index.html cs.ttl
          mv cs.ttl cs/
          mkdir datum
-         pylode -o datum/index.html datum.ttl
+         sudo pylode -o datum/index.html datum.ttl
          mv datum.ttl datum/
          mkdir planet
-         pylode -o planet/index.html planet.ttl
+         sudo pylode -o planet/index.html planet.ttl
          mv planet.ttl planet/
          mkdir projection
-         pylode -o projection/index.html projection.ttl
+         sudo pylode -o projection/index.html projection.ttl
          mv projection.ttl projection/
          rm objprop.ttl datatypeprop.ttl 
          mkdir examples

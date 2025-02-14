@@ -117,13 +117,33 @@ geosrs_cs:cylindricalCS a owl:ObjectProperty ;
 
 geosrs_cs:down a owl:NamedIndividual,
         geosrs:AxisDirection ;
-    rdfs:label "down"@en ;
+    rdfs:label "Down"@en ;
     skos:definition "Downwards axis direction"@en .
 
 geosrs_cs:east a owl:NamedIndividual,
         geosrs:AxisDirection ;
-    rdfs:label "east"@en ;
+    rdfs:label "East"@en ;
     skos:definition "east axis direction"@en .
+
+geosrs_cs:north a owl:NamedIndividual,
+        geosrs:AxisDirection ;
+    rdfs:label "North"@en ;
+    skos:definition "North axis direction"@en .
+
+geosrs_cs:south a owl:NamedIndividual,
+        geosrs:AxisDirection ;
+    rdfs:label "South"@en ;
+    skos:definition "South axis direction"@en .
+
+geosrs_cs:up a owl:NamedIndividual,
+        geosrs:AxisDirection ;
+    rdfs:label "Up"@en ;
+    skos:definition "Up axis direction"@en .
+
+geosrs_cs:west a owl:NamedIndividual,
+        geosrs:AxisDirection ;
+    rdfs:label "West"@en ;
+    skos:definition "West axis direction"@en .
 
 geosrs:cscs a owl:Ontology ;
     rdfs:label "SRS Ontology: Geosrs_cs"@en ;

@@ -43,7 +43,7 @@ gcore.add((URIRef("https://w3id.org/geosrs"),RDFS.label,Literal("SRS Ontology",l
 gcore.add((URIRef("https://w3id.org/geosrs"),VANN.preferredNamespacePrefix,Literal("geosrs",datatype=XSD.string)))
 gcore.add((URIRef("https://w3id.org/geosrs"),VANN.preferredNamespaceUri,Literal("https://w3id.org/geosrs#",datatype=XSD.anyURI)))
 
-geocrsNS="https://w3id.org/geosrs#"
+geocrsNS="https://w3id.org/geosrs/"
 coreprefix="geosrs"
 
 def getPrefixForClass(cls,prefixmap):
@@ -115,15 +115,15 @@ for file in os.listdir(directory):
                         if "SuperClass" in row and row["SuperClass"]!="":
                             if " " in row["SuperClass"]:
                                 for spl in row["SuperClass"].split(" "):
-                                    g.add((URIRef(row["Concept"].replace(coreprefix+":",curns)),RDFS.subClassOf,URIRef(spl.replace(curprefix+":",curns))))
+                                    g.add((URIRef(row["Concept"].replace(coreprefix+":",curns)),RDFS.subClassOf,URIRef(spl.replace(curprefix+":",curns).replace("geosrs:",geocrsNS))))
                             else:
-                                g.add((URIRef(row["Concept"].replace(coreprefix+":",curns)),RDFS.subClassOf,URIRef(row["SuperClass"].replace(curprefix+":",curns))))
+                                g.add((URIRef(row["Concept"].replace(coreprefix+":",curns)),RDFS.subClassOf,URIRef(row["SuperClass"].replace(curprefix+":",curns).replace("geosrs:",geocrsNS))))
                         if "DisjointClass" in row and row["DisjointClass"]!="":
                             if " " in row["DisjointClass"]:
                                 for spl in row["DisjointClass"].split(" "):
-                                    g.add((URIRef(row["Concept"].replace(coreprefix+":",curns)),OWL.disjointWith,URIRef(spl.replace(curprefix+":",curns))))
+                                    g.add((URIRef(row["Concept"].replace(coreprefix+":",curns)),OWL.disjointWith,URIRef(spl.replace(curprefix+":",curns).replace("geosrs:",geocrsNS))))
                             else:
-                                g.add((URIRef(row["Concept"].replace(coreprefix+":",curns)),OWL.disjointWith,URIRef(row["SuperClass"].replace(curprefix+":",curns))))                       
+                                g.add((URIRef(row["Concept"].replace(coreprefix+":",curns)),OWL.disjointWith,URIRef(row["SuperClass"].replace(curprefix+":",curns).replace("geosrs:",geocrsNS))))                       
     else:
         continue
  

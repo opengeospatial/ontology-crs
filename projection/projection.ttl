@@ -1,4 +1,4 @@
-@prefix geosrs_projection: <http://www.opengis.net/ont/srs/projection/> .
+@prefix geosrs_projection: <https://w3id.org/geosrs/projection/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
@@ -1001,7 +1001,7 @@
 <https://w3id.org/geosrs/projection> a owl:Ontology ;
     rdfs:label "SRS Ontology: Geosrs_projection"@en ;
     vann:preferredNamespacePrefix "geosrs_projection"^^xsd:string ;
-    vann:preferredNamespaceUri "http://www.opengis.net/ont/srs/projection/"^^xsd:anyURI .
+    vann:preferredNamespaceUri "https://w3id.org/geosrs/projection/"^^xsd:anyURI .
 
 <geoprojection:ArchaicProjection> a owl:Class ;
     rdfs:label "Archaic Projection"@en .

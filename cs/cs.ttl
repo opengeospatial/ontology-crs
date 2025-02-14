@@ -1,9 +1,14 @@
-@prefix geosrs_cs: <http://www.opengis.net/ont/srs/cs/> .
+@prefix geosrs_cs: <https://w3id.org/geosrs/cs/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/geosrs/cs> a owl:Ontology ;
+    rdfs:label "SRS Ontology: Geosrs_cs"@en ;
+    vann:preferredNamespacePrefix "geosrs_cs"^^xsd:string ;
+    vann:preferredNamespaceUri "https://w3id.org/geosrs/cs/"^^xsd:anyURI .
 
 geosrs_cs:AffineCoordinateSystem a owl:Class ;
     rdfs:label "Affine Coordinate System"@en ;
@@ -108,18 +113,13 @@ geosrs_cs:TemporalMeasureCoordinateSystem a owl:Class ;
     rdfs:subClassOf geosrs_cs:TemporalCoordinateSystem ;
     skos:definition "One-dimensional coordinate system used to record a time as a real number."@en .
 
-<https://w3id.org/geosrs/cs> a owl:Ontology ;
-    rdfs:label "SRS Ontology: Geosrs_cs"@en ;
-    vann:preferredNamespacePrefix "geosrs_cs"^^xsd:string ;
-    vann:preferredNamespaceUri "http://www.opengis.net/ont/srs/cs/"^^xsd:anyURI .
-
-<https://w3id.org/geosrs/cs/cylindricalCS> a owl:ObjectProperty ;
+geosrs_cs:cylindricalCS a owl:ObjectProperty ;
     rdfs:label "cylindrical cs"@en ;
     rdfs:domain <https://w3id.org/geosrs#CRS> ;
     rdfs:range <https://w3id.org/geosrs#CS> ;
     skos:definition "Links a coordinate reference system to a cylindrical coordinate system"@en .
 
-<https://w3id.org/geosrs/cs/down> a <geosrs:AxisDirection> ;
+geosrs_cs:down a <geosrs:AxisDirection> ;
     rdfs:label "down"@en ;
     skos:definition "Downwards axis direction"@en .
 

@@ -1,9 +1,14 @@
-@prefix geosrs_datum: <http://www.opengis.net/ont/srs/datum/> .
+@prefix geosrs_datum: <https://w3id.org/geosrs/datum/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/geosrs/datum> a owl:Ontology ;
+    rdfs:label "SRS Ontology: Geosrs_datum"@en ;
+    vann:preferredNamespacePrefix "geosrs_datum"^^xsd:string ;
+    vann:preferredNamespaceUri "https://w3id.org/geosrs/datum/"^^xsd:anyURI .
 
 geosrs_datum:DatumEnsemble a owl:Class ;
     rdfs:label "Datum Ensemble"@en ;
@@ -37,9 +42,4 @@ geosrs_datum:TemporalDatum a owl:Class ;
 geosrs_datum:TriaxialEllipsoid a owl:Class ;
     rdfs:label "Triaxial Ellipsoid"@en ;
     skos:definition "Surface of an analytic ellipsoid defined by three axes of different length. Also referred as scalene ellipsoid."@en .
-
-<https://w3id.org/geosrs/datum> a owl:Ontology ;
-    rdfs:label "SRS Ontology: Geosrs_datum"@en ;
-    vann:preferredNamespacePrefix "geosrs_datum"^^xsd:string ;
-    vann:preferredNamespaceUri "http://www.opengis.net/ont/srs/datum/"^^xsd:anyURI .
 

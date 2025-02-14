@@ -51,7 +51,7 @@ jobs:
          sudo apt-get install gcc libpq-dev -y
          sudo apt-get install doxygen graphviz -y
          sudo apt-get install python3-venv python3-wheel -y
-         sudo pip3 install wheel pylode==2.13.2
+         sudo pip3 install wheel pylode
     - name: Create Ontology Documentation 🔧
       run: |
          python3 scripts/srsbuild.py
@@ -61,30 +61,30 @@ jobs:
          mv index.html docs/
          cd docs
          mkdir application
-         pylode -o application/index.html -i application.ttl
+         pylode -o application/index.html application.ttl
          mv application.ttl application/
          mkdir alignments
-         pylode -o alignments/index.html -i alignments.ttl
+         pylode -o alignments/index.html alignments.ttl
          mv alignments.ttl alignments/
          mkdir core
          mv index.ttl core/
          cd core
-         pylode -o index.html -i index.ttl
+         pylode -o index.html index.ttl
          cd ..
          mkdir co
-         pylode -o co/index.html -i co.ttl
+         pylode -o co/index.html co.ttl
          mv co.ttl co/
          mkdir cs
-         pylode -o cs/index.html -i cs.ttl
+         pylode -o cs/index.html cs.ttl
          mv cs.ttl cs/
          mkdir datum
-         pylode -o datum/index.html -i datum.ttl
+         pylode -o datum/index.html datum.ttl
          mv datum.ttl datum/
          mkdir planet
-         pylode -o planet/index.html -i planet.ttl
+         pylode -o planet/index.html planet.ttl
          mv planet.ttl planet/
          mkdir projection
-         pylode -o projection/index.html -i projection.ttl
+         pylode -o projection/index.html projection.ttl
          mv projection.ttl projection/
          rm objprop.ttl datatypeprop.ttl 
          mkdir examples

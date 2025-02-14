@@ -1,36 +1,36 @@
 Concept,Domain,Range,Label,Definition,Comment,ISO 19111,IGN 2019,Proj4RDF,GeoSPARQL,Core Property?,IGN Definition,ISO Definition
-,,,Axis abbreviation,"The abbreviation used to identify an axis. Cf. ISO 19111:2007:2007-07, table 27, attribute coordinate system axis abbreviation.",,,,ign:axisAbbrev,geocrs:abbreviation,,,"The abbreviation used to identify an axis. Cf. ISO 19111:2007:2007-07, table 27, attribute coordinate system axis abbreviation.",
-,,geosrs:proj4Literal,PROJ4 string,PROJ4 string defining a CRS. Note: this paradigm is ambiguous and presently considered outdated.,,,,,geocrs:asProj4,,,,
-,,geosrs:projJSONLiteral,PROJ JSON definition,CRS definition encoded as a JSON object interpretable by PROJ4.,,,,,geocrs:asProjJSON,,,,
-,,geosrs:wktLiteral,WKT definition,CRS definition encoded according to the Well Known Text structure. Cf. ISO 19162:2019. ,,,,,geocrs:asWKT,gsp:asWKT,,,
-,,,Anchor definition,,,,iso19111:anchorDefinition,,,,,,
-,,geosrs:Axis,Axis direction,"The direction of an axis. Cf. ISO 19111:2007:2007-07, table 27, attribute coordinate system axis direction.",,,,ign:axisDirection,,,,"The direction of an axis. Cf. ISO 19111:2007:2007-07, table 27, attribute coordinate system axis direction.",
-,,,Code space,"Rule or authority for a code, name, term or category.",,,,ign:codeSpace,,,,"Rule or authority for a code, name, term or category.",
-,,,Coordinate Epoch,,,,,,geocrs:coordinateEpoch,,,,
-,,,East Bound Longitude,"Indicates the east bound longitude of a bounding box. Cf. ISO 19115-1:2014:2014-04, part 6.6.1 and table B.15.1 line 346.",,,,ign:eastBoundLongitude,,,,"Indicates the east bound longitude of a bounding box. Cf. ISO 19115-1:2014:2014-04, part 6.6.1 and table B.15.1 line 346.",
-,,xsd:string,EPSG code,Identifier of this resource in the EPSG Geodetic Parameter Dataset.,,,,ign:epsgID,geocrs:epsgCode,,,The EPSG identifier of the resource.,
-geosrs:eccentricity,geosrs:Ellipsoid,xsd:double,Eccentricity,A measure of how much an ellipse deviates from a perfect circle.,,,,,geocrs:eccentricity,,,,
-,,,Formula,,,,iso19111:formula,,,,,,
-,,,Formula citation,,,,iso19111:formulaCitation,,,,,,
-,,,Is bound,,,,,,geocrs:isBound,,,,
-,,,Is deprecated,Indicates whether the subject resource is deprecated.,,,,,geocrs:isDeprecated,,,,
-,,,Is geocentric,Indicates whether the subject resource id geocentric.,,,,,geocrs:isGeocentric,,,,
-,,,Is geographic,"Indicates whether the subject CRS strictly comprises a geodetic datum, without map function to the Cartesian plane.",,,,,geocrs:isGeographic,,,,
-,,,Is projected,Indicates whether the subject CRS includes a map projection mapping points on the datum surface to the Cartesian plane.,,,,,geocrs:isProjected,,,,
-,,,Is a sphere,"Indicates whether the ellipsoid is a sphere. Cf. ISO 19111:2007:2007-07, table 37, attribute ellipsoid=sphere indicator.",,,iso19111:isSphere,ign:isSphere,geocrs:isSphere,,,"Indicates whether the ellipsoid is a sphere. Cf. ISO 19111:2007:2007-07, table 37, attribute ellipsoid=sphere indicator.",
-,,,,,,,,,geocrs:isVertical,,,,
-,,,,,,,iso19111:maximumOccurs,,,,,,
-,,,Method formula,"The formula used by a method to perform an operation on coordinates. Cf. ISO 19111:2007:2007-07, table 48, attribute coordinate operation method formula reference.",,,,ign:methodFormula,,,,"The formula used by a method to perform an operation on coordinates. Cf. ISO 19111:2007:2007-07, table 48, attribute coordinate operation method formula reference.",
-,,,,,,,iso19111:minimumOccurs,,,,,,
-geosrs:semiMajorAxis,geosrs:Ellipsoid,xsd:double,semi major axis,"Indicates the length of the semi major axis of an ellipsoid. Cf. ISO 19111:2007:2007-07, table 36, attribute length of semi-major axis.",,iso19111:semiMajorAxis,ign:semiMajorAxis,,,Core Ontology,"Indicates the length of the semi major axis of an ellipsoid. Cf. ISO 19111:2007:2007-07, table 36, attribute length of semi-major axis.",semi-diameter of the longest axis of an ellipsoid,
-geosrs:semiMinorAxis,geosrs:Ellipsoid,xsd:double,semi minor axis,"Indicates the length of the semi minor axis of an ellipsoid. Cf. ISO 19111:2007:2007-07, table 37, attribute length of semi-minor axis.",,iso19111:semiMinorAxis,ign:semiMinorAxis,,,Core Ontology,"Indicates the length of the semi minor axis of an ellipsoid. Cf. ISO 19111:2007:2007-07, table 37, attribute length of semi-minor axis.",semi-diameter of the shortest axis of an ellipsoid,
-,,,North bound latitude,"Indicates the north bound longitude of a bounding box. Cf. ISO 19115-1:2014:2014-04, part 6.6.1 and table B.15.1 line 348.",,,,ign:northBoundLatitude,,,,"Indicates the north bound longitude of a bounding box. Cf. ISO 19115-1:2014:2014-04, part 6.6.1 and table B.15.1 line 348.",
-,,,Operation version,"The version of an operation performed on coordinates. Cf. ISO 19111:2007:2007-07, table 42, attribute coordinate operation version.",,,iso19111:operationVersion,ign:operationVersion,,,,"The version of an operation performed on coordinates. Cf. ISO 19111:2007:2007-07, table 42, attribute coordinate operation version.",
-,,,Parameter value,,,,iso19111:parameterValue,,,,,,
-,,,Publication date,,,,iso19111:publicationDate,,,,,,
-,,,Realisation method,,,,iso19111:realizationMethod,,,,,,
-,,,Scope,"The scope of the referring object. Cf. ISO 19111:2007:2007-07, tables 4, 33 et 42, attribute scope.",,,,ign:scope,geocrs:scope,,,"The scope of the referring object. Cf. ISO 19111:2007:2007-07, tables 4, 33 et 42, attribute scope.",
-,,,Source dimension,"The dimension of the coordinate reference system associated with the data used as input of an operation. Cf. ISO 19111:2007:2007-07, table 48, attribute dimension of source CRS.",,,,ign:sourceDimension,,,,"The dimension of the coordinate reference system associated with the data used as input of an operation. Cf. ISO 19111:2007:2007-07, table 48, attribute dimension of source CRS.",
-,,,South bound latitude,"Indicates the south bound latitude of a bounding box. Cf. ISO 19115-1:2014:2014-04, part 6.6.1 and table B.15.1 line 347.",,,,ign:southBoundLatitude,,,,"Indicates the south bound latitude of a bounding box. Cf. ISO 19115-1:2014:2014-04, part 6.6.1 and table B.15.1 line 347.",
-,,,Target dimension,"The dimension of the coordinate reference system associated with the data obtained as output of an operation. Cf. ISO 19111:2007:2007-07, table 48, attribute dimension of target CRS.",,,,ign:targetDimension,,,,"The dimension of the coordinate reference system associated with the data obtained as output of an operation. Cf. ISO 19111:2007:2007-07, table 48, attribute dimension of target CRS.",
-,,,West bound longitude,"Indicates the west bound longitude of a bounding box. Cf. ISO 19115-1:2014:2014-04, part 6.6.1 and table B.15.1 line 345.",,,,ign:westBoundLongitude,,,,"Indicates the west bound longitude of a bounding box. Cf. ISO 19115-1:2014:2014-04, part 6.6.1 and table B.15.1 line 345.",
+,,,Axis abbreviation,"The abbreviation used to identify an axis. Cf. ISO 19111:2007:2007-07, table 27, attribute coordinate system axis abbreviation.",,,ign:axisAbbrev,geocrs:abbreviation,,,,"The abbreviation used to identify an axis. Cf. ISO 19111:2007:2007-07, table 27, attribute coordinate system axis abbreviation."
+,,geosrs:proj4Literal,PROJ4 string,PROJ4 string defining a CRS. Note: this paradigm is ambiguous and presently considered outdated.,,,,geocrs:asProj4,,,,
+,,geosrs:projJSONLiteral,PROJ JSON definition,CRS definition encoded as a JSON object interpretable by PROJ4.,,,,geocrs:asProjJSON,,,,
+,,geosrs:wktLiteral,WKT definition,CRS definition encoded according to the Well Known Text structure. Cf. ISO 19162:2019. ,,,,geocrs:asWKT,gsp:asWKT,,,
+,,,Anchor definition,,,iso19111:anchorDefinition,,,,,,
+,,geosrs:Axis,Axis direction,"The direction of an axis. Cf. ISO 19111:2007:2007-07, table 27, attribute coordinate system axis direction.",,,ign:axisDirection,,,,,"The direction of an axis. Cf. ISO 19111:2007:2007-07, table 27, attribute coordinate system axis direction."
+,,,Code space,"Rule or authority for a code, name, term or category.",,,ign:codeSpace,,,,,"Rule or authority for a code, name, term or category."
+,,,Coordinate Epoch,,,,,geocrs:coordinateEpoch,,,,
+,,,East Bound Longitude,"Indicates the east bound longitude of a bounding box. Cf. ISO 19115-1:2014:2014-04, part 6.6.1 and table B.15.1 line 346.",,,ign:eastBoundLongitude,,,,,"Indicates the east bound longitude of a bounding box. Cf. ISO 19115-1:2014:2014-04, part 6.6.1 and table B.15.1 line 346."
+,,xsd:string,EPSG code,Identifier of this resource in the EPSG Geodetic Parameter Dataset.,,,ign:epsgID,geocrs:epsgCode,,,,The EPSG identifier of the resource.
+geosrs:eccentricity,geosrs:Ellipsoid,xsd:double,Eccentricity,A measure of how much an ellipse deviates from a perfect circle.,,,,geocrs:eccentricity,,,,
+,,,Formula,,,iso19111:formula,,,,,,
+,,,Formula citation,,,iso19111:formulaCitation,,,,,,
+,,,Is bound,,,,,geocrs:isBound,,,,
+,,,Is deprecated,Indicates whether the subject resource is deprecated.,,,,geocrs:isDeprecated,,,,
+,,,Is geocentric,Indicates whether the subject resource id geocentric.,,,,geocrs:isGeocentric,,,,
+,,,Is geographic,"Indicates whether the subject CRS strictly comprises a geodetic datum, without map function to the Cartesian plane.",,,,geocrs:isGeographic,,,,
+,,,Is projected,Indicates whether the subject CRS includes a map projection mapping points on the datum surface to the Cartesian plane.,,,,geocrs:isProjected,,,,
+,,,Is a sphere,"Indicates whether the ellipsoid is a sphere. Cf. ISO 19111:2007:2007-07, table 37, attribute ellipsoid=sphere indicator.",,iso19111:isSphere,ign:isSphere,geocrs:isSphere,,,,"Indicates whether the ellipsoid is a sphere. Cf. ISO 19111:2007:2007-07, table 37, attribute ellipsoid=sphere indicator."
+,,,,,,,,geocrs:isVertical,,,,
+,,,,,,iso19111:maximumOccurs,,,,,,
+,,,Method formula,"The formula used by a method to perform an operation on coordinates. Cf. ISO 19111:2007:2007-07, table 48, attribute coordinate operation method formula reference.",,,ign:methodFormula,,,,,"The formula used by a method to perform an operation on coordinates. Cf. ISO 19111:2007:2007-07, table 48, attribute coordinate operation method formula reference."
+,,,,,,iso19111:minimumOccurs,,,,,,
+geosrs:semiMajorAxis,geosrs:Ellipsoid,xsd:double,semi major axis,"Indicates the length of the semi major axis of an ellipsoid. Cf. ISO 19111:2007:2007-07, table 36, attribute length of semi-major axis.",,iso19111:semiMajorAxis,ign:semiMajorAxis,,,Core Ontology,"Indicates the length of the semi major axis of an ellipsoid. Cf. ISO 19111:2007:2007-07, table 36, attribute length of semi-major axis.",semi-diameter of the longest axis of an ellipsoid
+geosrs:semiMinorAxis,geosrs:Ellipsoid,xsd:double,semi minor axis,"Indicates the length of the semi minor axis of an ellipsoid. Cf. ISO 19111:2007:2007-07, table 37, attribute length of semi-minor axis.",,iso19111:semiMinorAxis,ign:semiMinorAxis,,,Core Ontology,"Indicates the length of the semi minor axis of an ellipsoid. Cf. ISO 19111:2007:2007-07, table 37, attribute length of semi-minor axis.",semi-diameter of the shortest axis of an ellipsoid
+,,,North bound latitude,"Indicates the north bound longitude of a bounding box. Cf. ISO 19115-1:2014:2014-04, part 6.6.1 and table B.15.1 line 348.",,,ign:northBoundLatitude,,,,,"Indicates the north bound longitude of a bounding box. Cf. ISO 19115-1:2014:2014-04, part 6.6.1 and table B.15.1 line 348."
+,,,Operation version,"The version of an operation performed on coordinates. Cf. ISO 19111:2007:2007-07, table 42, attribute coordinate operation version.",,iso19111:operationVersion,ign:operationVersion,,,,,"The version of an operation performed on coordinates. Cf. ISO 19111:2007:2007-07, table 42, attribute coordinate operation version."
+,,,Parameter value,,,iso19111:parameterValue,,,,,,
+,,,Publication date,,,iso19111:publicationDate,,,,,,
+,,,Realisation method,,,iso19111:realizationMethod,,,,,,
+,,,Scope,"The scope of the referring object. Cf. ISO 19111:2007:2007-07, tables 4, 33 et 42, attribute scope.",,,ign:scope,geocrs:scope,,,,"The scope of the referring object. Cf. ISO 19111:2007:2007-07, tables 4, 33 et 42, attribute scope."
+,,,Source dimension,"The dimension of the coordinate reference system associated with the data used as input of an operation. Cf. ISO 19111:2007:2007-07, table 48, attribute dimension of source CRS.",,,ign:sourceDimension,,,,,"The dimension of the coordinate reference system associated with the data used as input of an operation. Cf. ISO 19111:2007:2007-07, table 48, attribute dimension of source CRS."
+,,,South bound latitude,"Indicates the south bound latitude of a bounding box. Cf. ISO 19115-1:2014:2014-04, part 6.6.1 and table B.15.1 line 347.",,,ign:southBoundLatitude,,,,,"Indicates the south bound latitude of a bounding box. Cf. ISO 19115-1:2014:2014-04, part 6.6.1 and table B.15.1 line 347."
+,,,Target dimension,"The dimension of the coordinate reference system associated with the data obtained as output of an operation. Cf. ISO 19111:2007:2007-07, table 48, attribute dimension of target CRS.",,,ign:targetDimension,,,,,"The dimension of the coordinate reference system associated with the data obtained as output of an operation. Cf. ISO 19111:2007:2007-07, table 48, attribute dimension of target CRS."
+,,,West bound longitude,"Indicates the west bound longitude of a bounding box. Cf. ISO 19115-1:2014:2014-04, part 6.6.1 and table B.15.1 line 345.",,,ign:westBoundLongitude,,,,,"Indicates the west bound longitude of a bounding box. Cf. ISO 19115-1:2014:2014-04, part 6.6.1 and table B.15.1 line 345."

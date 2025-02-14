@@ -41,7 +41,7 @@ gcore.bind("skos","http://www.w3.org/2004/02/skos/core#")
 gcore.add((URIRef("https://w3id.org/geosrs"),RDF.type,OWL.Ontology))
 gcore.add((URIRef("https://w3id.org/geosrs"),RDFS.label,Literal("SRS Ontology",lang="en")))
 gcore.add((URIRef("https://w3id.org/geosrs"),VANN.preferredNamespacePrefix,Literal("geosrs",datatype=XSD.string)))
-gcore.add((URIRef("https://w3id.org/geosrs"),VANN.preferredNamespaceUri,Literal("https://w3id.org/geosrs#",datatype=XSD.anyURI)))
+gcore.add((URIRef("https://w3id.org/geosrs"),VANN.preferredNamespaceUri,Literal("https://w3id.org/geosrs/",datatype=XSD.anyURI)))
 
 geocrsNS="https://w3id.org/geosrs/"
 coreprefix="geosrs"

@@ -39,6 +39,12 @@ geosrs_datum:TriaxialEllipsoid a owl:Class ;
     rdfs:label "Triaxial Ellipsoid"@en ;
     skos:definition "Surface of an analytic ellipsoid defined by three axes of different length. Also referred as scalene ellipsoid."@en .
 
+geosrs_datum:inverseFlattening a owl:DatatypeProperty ;
+    rdfs:label "inverse flattening"@en ;
+    rdfs:domain geosrs:Ellipsoid ;
+    rdfs:range <xsd:double> ;
+    skos:definition "Indicates the inverse flattening value of an ellipsoid, expressed as a number or a ratio (percentage rate, parts per million, etc.). Cf. ISO 19111:2007:2007-07, table 37, attribute inverse flattening"@en .
+
 geosrs:datumdatum a owl:Ontology ;
     rdfs:label "SRS Ontology: Geosrs_datum"@en ;
     vann:preferredNamespacePrefix "geosrs_datum"^^xsd:string ;

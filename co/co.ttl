@@ -4,7 +4,7 @@
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-geosrs:co a owl:Ontology ;
+geosrs:coco a owl:Ontology ;
     rdfs:label "SRS Ontology: Geosrs_co"@en ;
     vann:preferredNamespacePrefix "geosrs_co"^^xsd:string ;
     vann:preferredNamespaceUri "https://w3id.org/geosrs/co/"^^xsd:anyURI .

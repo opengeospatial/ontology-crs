@@ -23,7 +23,7 @@ geosrs:ProjectedCRS owl:equivalentClass ifc:IfcProjectedCRS .
 
 geosrs:VerticalCoordinateSystem owl:disjointWith geosrs:OrdinalCoordinateSystem .
 
-<https://w3id.org/geosrs/alignments/> a owl:Ontology ;
+<https://w3id.org/geosrs/alignments/alignments> a owl:Ontology ;
     rdfs:label "SRS Ontology Alignments"@en .
 
 geosrs:axis owl:equivalentProperty ifc:axis_IfcAxis1Placement .

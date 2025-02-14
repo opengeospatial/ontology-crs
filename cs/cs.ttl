@@ -6,11 +6,6 @@
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-geosrs:cs a owl:Ontology ;
-    rdfs:label "SRS Ontology: Geosrs_cs"@en ;
-    vann:preferredNamespacePrefix "geosrs_cs"^^xsd:string ;
-    vann:preferredNamespaceUri "https://w3id.org/geosrs/cs/"^^xsd:anyURI .
-
 geosrs_cs:AffineCoordinateSystem a owl:Class ;
     rdfs:label "Affine Coordinate System"@en ;
     rdfs:subClassOf geosrs:CoordinateSystem ;
@@ -123,6 +118,11 @@ geosrs_cs:cylindricalCS a owl:ObjectProperty ;
 geosrs_cs:down a geosrs:AxisDirection ;
     rdfs:label "down"@en ;
     skos:definition "Downwards axis direction"@en .
+
+geosrs:cscs a owl:Ontology ;
+    rdfs:label "SRS Ontology: Geosrs_cs"@en ;
+    vann:preferredNamespacePrefix "geosrs_cs"^^xsd:string ;
+    vann:preferredNamespaceUri "https://w3id.org/geosrs/cs/"^^xsd:anyURI .
 
 geosrs_cs:1DCoordinateSystem a owl:Class ;
     rdfs:label "1D Coordinate System"@en ;

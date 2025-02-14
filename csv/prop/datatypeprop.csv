@@ -12,6 +12,7 @@ Concept,Domain,Range,Label,Definition,Comment,ISO 19111,IGN 2019,Proj4RDF,GeoSPA
 geosrs:eccentricity,geosrs:Ellipsoid,xsd:double,Eccentricity,A measure of how much an ellipse deviates from a perfect circle.,,,,geocrs:eccentricity,,,,
 ,,,Formula,,,iso19111:formula,,,,,,
 ,,,Formula citation,,,iso19111:formulaCitation,,,,,,
+geosrs:inverseFlattening,geosrs:Ellipsoid,xsd:double,inverse flattening,"Indicates the inverse flattening value of an ellipsoid, expressed as a number or a ratio (percentage rate, parts per million, etc.). Cf. ISO 19111:2007:2007-07, table 37, attribute inverse flattening",,iso19111:inverseFlattening,ign:inverseFlattening,,,Datum,"Indicates the inverse flattening value of an ellipsoid, expressed as a number or a ratio (percentage rate, parts per million, etc.). Cf. ISO 19111:2007:2007-07, table 37, attribute inverse flattening",
 ,,,Is bound,,,,,geocrs:isBound,,,,
 ,,,Is deprecated,Indicates whether the subject resource is deprecated.,,,,geocrs:isDeprecated,,,,
 ,,,Is geocentric,Indicates whether the subject resource id geocentric.,,,,geocrs:isGeocentric,,,,

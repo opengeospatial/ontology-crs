@@ -21,22 +21,22 @@ geosrs_datum:DefiningParameter a owl:Class ;
 
 geosrs_datum:DynamicVerticalDatum a owl:Class ;
     rdfs:label "Dynamic Vertical Datum"@en ;
-    rdfs:subClassOf <geosrs:VerticalDatum> ;
+    rdfs:subClassOf <https://w3id.org/geosrs/VerticalDatum> ;
     skos:definition "Vertical reference frame in which some of the defining parameters have time dependencyExample: Defining station heights have velocity to account for post-glacial isostatic rebound motion. Cf. ISO 19111:2019 Geographic information — Referencing by coordinates."@en .
 
 geosrs_datum:EngineeringDatum a owl:Class ;
     rdfs:label "Engineering Datum"@en ;
-    rdfs:subClassOf <geosrs:Datum> ;
+    rdfs:subClassOf <https://w3id.org/geosrs/Datum> ;
     skos:definition "Definition of the origin and orientation of an engineering coordinate reference systemNote: The origin can be fixed with respect to the Earth (such as a defined point at a construction site), or be a defined point on a moving vehicle (such as on a ship or satellite), or a defined point of an image. Cf. ISO 19111:2019 Geographic information — Referencing by coordinates."@en .
 
 geosrs_datum:ParametricDatum a owl:Class ;
     rdfs:label "Parametric Datum"@en ;
-    rdfs:subClassOf <geosrs:Datum> ;
+    rdfs:subClassOf <https://w3id.org/geosrs/Datum> ;
     skos:definition "Textual description and/or a set of parameters identifying a particular reference surface used as the origin of a parametric coordinate system, including its position with respect to the Earth. Cf. ISO 19111:2019 Geographic information — Referencing by coordinates."@en .
 
 geosrs_datum:TemporalDatum a owl:Class ;
     rdfs:label "Temporal Datum"@en ;
-    rdfs:subClassOf <geosrs:Datum> ;
+    rdfs:subClassOf <https://w3id.org/geosrs/Datum> ;
     skos:definition "Definition of the relationship of a temporal coordinate system to an objectNote: The object is normally time on the Earth. Cf. ISO 19111:2019 Geographic information — Referencing by coordinates."@en .
 
 geosrs_datum:TriaxialEllipsoid a owl:Class ;

@@ -1,35 +1,36 @@
+@prefix geosrs: <https://w3id.org/geosrs/> .
 @prefix ifc: <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL/> .
 @prefix ign: <http://data.ign.fr/def/ignf#> .
 @prefix iso19111: <http://def.isotc211.org/iso19112/2019/SpatialReferencingByGeographicIdentifier#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://w3id.org/geosrs#AxisDirection> owl:equivalentClass ifc:IfcDirection .
+geosrs:AxisDirection owl:equivalentClass ifc:IfcDirection .
 
-<https://w3id.org/geosrs#CoordinateOperation> owl:equivalentClass ifc:IfcCoordinateOperation .
+geosrs:CoordinateOperation owl:equivalentClass ifc:IfcCoordinateOperation .
 
-<https://w3id.org/geosrs#CoordinateSystem> owl:equivalentClass ign:CoordinateSystem,
+geosrs:CoordinateSystem owl:equivalentClass ign:CoordinateSystem,
         iso19111:CoordinateSystem .
 
-<https://w3id.org/geosrs#Datum> owl:disjointWith <https://w3id.org/geosrs#CRS> ;
+geosrs:Datum owl:disjointWith geosrs:CRS ;
     owl:equivalentClass ign:Datum,
         iso19111:Datum .
 
-<https://w3id.org/geosrs#Ellipsoid> owl:equivalentClass ign:Ellipsoid,
+geosrs:Ellipsoid owl:equivalentClass ign:Ellipsoid,
         iso19111:Ellipsoid .
 
-<https://w3id.org/geosrs#ProjectedCRS> owl:equivalentClass ifc:IfcProjectedCRS .
+geosrs:ProjectedCRS owl:equivalentClass ifc:IfcProjectedCRS .
 
-<https://w3id.org/geosrs#VerticalCoordinateSystem> owl:disjointWith <https://w3id.org/geosrs#OrdinalCoordinateSystem> .
-
-<https://w3id.org/geosrs#axis> owl:equivalentProperty ifc:axis_IfcAxis1Placement .
-
-<https://w3id.org/geosrs#sourceCRS> owl:equivalentProperty ifc:sourceCRS .
-
-<https://w3id.org/geosrs#targetCRS> owl:equivalentProperty ifc:targetCRS .
+geosrs:VerticalCoordinateSystem owl:disjointWith geosrs:OrdinalCoordinateSystem .
 
 <https://w3id.org/geosrs/alignments/> a owl:Ontology ;
     rdfs:label "SRS Ontology Alignments"@en .
 
-<https://w3id.org/geosrs#CRS> owl:equivalentClass ifc:IfcCoordinateReferenceSystem .
+geosrs:axis owl:equivalentProperty ifc:axis_IfcAxis1Placement .
+
+geosrs:sourceCRS owl:equivalentProperty ifc:sourceCRS .
+
+geosrs:targetCRS owl:equivalentProperty ifc:targetCRS .
+
+geosrs:CRS owl:equivalentClass ifc:IfcCoordinateReferenceSystem .
 

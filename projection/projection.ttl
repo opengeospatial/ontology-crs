@@ -758,7 +758,7 @@
 
 <geoprojection:Projection> a owl:Class ;
     rdfs:label "Projection"@en ;
-    rdfs:subClassOf <geosrs:Conversion> .
+    rdfs:subClassOf <https://w3id.org/geosrs/Conversion> .
 
 <geoprojection:PseudoOrthographicProjection> a owl:Class ;
     rdfs:label "Pseudo-Orthographic Projection"@en .

@@ -180,6 +180,48 @@ for file in os.listdir(directory):
     else:
         continue
 
+
+dirname = os.path.dirname(__file__)
+abspath = os.path.join(dirname, '../csv/instance/')
+directory = os.fsencode(abspath)
+print(abspath)    
+for file in os.listdir(directory):
+    filename = os.fsdecode(file)
+    if filename.endswith(".csv"): 
+        with open(abspath+filename, newline='') as csvfile:
+            reader = csv.DictReader(csvfile)
+            for row in reader:
+                print(row)
+                if "Concept" in row and row["Concept"]!="":
+                    if "Module" in row:
+                        if row["Module"]=="Core Ontology":
+                            core=True
+                            prefixtoproperties["geosrs"].append(row["Concept"].replace(curprefix+":",curns).replace("geosrs:","").replace("geoprojection:",""))
+                            if "Type" in row and row["Type"]!="":
+                                gcore.add((URIRef(row["Concept"].replace(coreprefix+":",geocrsNS)),RDF.type,URIRef(row["Type"].replace(coreprefix+":",geocrsNS))))
+                            else:
+                                gcore.add((URIRef(row["Concept"].replace(coreprefix+":",geocrsNS)),RDF.type,OWL.NamedIndividual))
+                            if "Label" in row and row["Label"]!="":
+                                gcore.add((URIRef(row["Concept"].replace(coreprefix+":",geocrsNS)),RDFS.label,Literal(row["Label"],lang="en")))
+                            if "Definition" in row and row["Definition"]!="":
+                                gcore.add((URIRef(row["Concept"].replace(coreprefix+":",geocrsNS)),SKOS.definition,Literal(row["Definition"],lang="en")))
+                        else:
+                            if row["Module"].lower() in exont:
+                                if row["Module"]!="":
+                                    prefixtoproperties[row["Module"]].append(row["Concept"].replace(curprefix+":",curns).replace("geosrs:","").replace("geoprojection:",""))
+                                if "Type" in row and row["Type"]!="":
+                                    gcore.add((URIRef(row["Concept"].replace(coreprefix+":",geocrsNS)),RDF.type,URIRef(row["Type"].replace(coreprefix+":",geocrsNS))))
+                                else:
+                                    gcore.add((URIRef(row["Concept"].replace(coreprefix+":",geocrsNS)),RDF.type,OWL.NamedIndividual))
+                                if "Label" in row and row["Label"]!="":
+                                    exont[row["Module"].lower()].add((URIRef(row["Concept"].replace(curprefix+":",curns)),RDFS.label,Literal(row["Label"],lang="en")))
+                                if "Definition" in row and row["Definition"]!="":
+                                    exont[row["Module"].lower()].add((URIRef(row["Concept"].replace(curprefix+":",curns)),SKOS.definition,Literal(row["Definition"],lang="en")))
+            g.serialize(destination=filename.replace(".csv","")+".ttl") 
+    else:
+        continue
+
+
 print(len(g))
 for item in exont:
     exont[item].serialize(destination=item+".ttl") 
@@ -195,7 +237,7 @@ g.add((URIRef("https://w3id.org/geosrs/alignments/"),RDFS.label,Literal("SRS Ont
 dirname = os.path.dirname(__file__)
 abspath = os.path.join(dirname, '../csv/alignment/')
 directory = os.fsencode(abspath)
-print(abspath)    
+print(abspath)      
 for file in os.listdir(directory):
     filename = os.fsdecode(file)
     if filename.endswith(".csv"): 

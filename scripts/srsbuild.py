@@ -15,15 +15,16 @@ exont={}
 ldcontext={"@context":{"rdfs":"http://www.w3.org/2000/01/rdf-schema#","rdf":"http://www.w3.org/1999/02/22-rdf-syntax-ns#",
                         "om": "http://www.ontology-of-units-of-measure.org/resource/om-2/","geosrs":"https://w3id.org/geosrs#",
                        "skos":"http://www.w3.org/2004/02/skos/core#",
-                       "name":"rdfs:label", "value":"rdf:value","method":"geosrs:coordinateOperation",
-                       "scope":"skos:scopeNote","direction":"geosrs:axisDirection","abbreviation":"skos:altLabel",
-                       "down:":"geosrs:down","down:":"geosrs:up","north:":"geosrs:north","south:":"geosrs:south",
+                       "name":"rdfs:label", "value":"rdf:value",#"method":"geosrs:coordinateOperation",
+                       "scope":"skos:scopeNote",#"direction":"geosrs:axisDirection",
+                       "abbreviation":"skos:altLabel",
+                       #"down:":"geosrs:down","down:":"geosrs:up","north:":"geosrs:north","south:":"geosrs:south",
                        "centimetre":"om:centimetre", "millimetre":"om:millimetre","unity":"om:unity",
                        "kilometre":"om:kilometre", "degree":"om:degree","parameters":"geosrs:OperationParameter",
-                       "metre":"om:metre","radian":"om:radian","base_crs":"geosrs:baseCRS",
-                       "coordinate_system":"geosrs:CoordinateSystem","ellipsoidal":"EllipsoidalCoordinateSystem",
-                       "Cartesian":"geosrs:CartesianCoordinateSystem","GeodeticReferenceFrame":"geosrs:GeodeticDatum",
-                       "datum_ensemble":"geosrs:datum",
+                       "metre":"om:metre","radian":"om:radian",#"base_crs":"geosrs:baseCRS",
+                       #"coordinate_system":"geosrs:CoordinateSystem","ellipsoidal":"geosrs:EllipsoidalCoordinateSystem",
+                       #"Cartesian":"geosrs:CartesianCoordinateSystem","GeodeticReferenceFrame":"geosrs:GeodeticDatum",
+                       #"datum_ensemble":"geosrs:datum",
                        "subtype":{"@id":"rdf:type","@type":"@vocab"},
                        "type":{"@id":"rdf:type","@type":"@vocab"},
                        "unit":{"@id":"om:hasUnit","@type":"@vocab"}
@@ -107,6 +108,8 @@ for file in os.listdir(directory):
                             gcore.add((URIRef(row["Concept"].replace(coreprefix+":",geocrsNS)),RDFS.label,Literal(row["Label"],lang="en")))
                         if "Definition" in row and row["Definition"]!="":
                             gcore.add((URIRef(row["Concept"].replace(coreprefix+":",geocrsNS)),SKOS.definition,Literal(row["Definition"],lang="en")))
+                        if "PROJJSON" in row and row["PROJJSON"]!="":
+                            ldcontext["@context"][row["PROJJSON"]]=row["Concept"]
                         if "SuperClass" in row and row["SuperClass"]!="":
                             if " " in row["SuperClass"]:
                                 for spl in row["SuperClass"].split(" "):
@@ -127,6 +130,8 @@ for file in os.listdir(directory):
                             g.add((URIRef(row["Concept"].replace(coreprefix+":",curns)),RDFS.label,Literal(row["Label"],lang="en")))
                         if "Definition" in row and row["Definition"]!="":
                             g.add((URIRef(row["Concept"].replace(coreprefix+":",curns)),SKOS.definition,Literal(row["Definition"],lang="en")))
+                        if "PROJJSON" in row and row["PROJJSON"]!="":
+                            ldcontext["@context"][row["PROJJSON"]]=row["Concept"]
                         if "SuperClass" in row and row["SuperClass"]!="":
                             if " " in row["SuperClass"]:
                                 for spl in row["SuperClass"].split(" "):
@@ -188,6 +193,8 @@ for file in os.listdir(directory):
                                 gcore.add((URIRef(row["Concept"].replace(coreprefix+":",geocrsNS)),RDFS.range,URIRef(row["Range"].replace("geosrs:", getNSForClass(row["Range"],classToPrefix)))))
                             if "Domain" in row and row["Domain"]!="":
                                 gcore.add((URIRef(row["Concept"].replace(coreprefix+":",geocrsNS)),RDFS.domain,URIRef(row["Domain"].replace("geosrs:",getNSForClass(row["Domain"],classToPrefix)))))
+                            if "PROJJSON" in row and row["PROJJSON"]!="":
+                                ldcontext["@context"][row["PROJJSON"]]=row["Concept"]
                         else:
                             if row["Core Property?"].lower() in exont:
                                 if row["Core Property?"]!="":
@@ -204,6 +211,8 @@ for file in os.listdir(directory):
                                     exont[row["Core Property?"].lower()].add((URIRef(row["Concept"].replace(coreprefix+":",curns+str(row["Core Property?"]).lower()+"/")),RDFS.range,URIRef(row["Range"].replace("geosrs:",getNSForClass(row["Range"],classToPrefix)))))
                                 if "Domain" in row and row["Domain"]!="":
                                     exont[row["Core Property?"].lower()].add((URIRef(row["Concept"].replace(coreprefix+":",curns+str(row["Core Property?"]).lower()+"/")),RDFS.domain,URIRef(row["Domain"].replace("geosrs:",getNSForClass(row["Domain"],classToPrefix)))))
+                                if "PROJJSON" in row and row["PROJJSON"]!="":
+                                    ldcontext["@context"][row["PROJJSON"]]=row["Concept"]
             g.serialize(destination=filename.replace(".csv","")+".ttl") 
     else:
         continue
@@ -236,6 +245,8 @@ for file in os.listdir(directory):
                                 gcore.add((URIRef(row["Concept"].replace(coreprefix+":",geocrsNS)),RDFS.label,Literal(row["Label"],lang="en")))
                             if "Definition" in row and row["Definition"]!="":
                                 gcore.add((URIRef(row["Concept"].replace(coreprefix+":",geocrsNS)),SKOS.definition,Literal(row["Definition"],lang="en")))
+                            if "PROJJSON" in row and row["PROJJSON"]!="":
+                                ldcontext["@context"][row["PROJJSON"]]=row["Concept"]
                         else:
                             if row["Module"].lower() in exont:
                                 if row["Module"]!="":
@@ -249,6 +260,8 @@ for file in os.listdir(directory):
                                     exont[row["Module"].lower()].add((URIRef(row["Concept"].replace(coreprefix+":",curns+str(row["Module"]).lower()+"/")),RDFS.label,Literal(row["Label"],lang="en")))
                                 if "Definition" in row and row["Definition"]!="":
                                     exont[row["Module"].lower()].add((URIRef(row["Concept"].replace(coreprefix+":",curns+str(row["Module"]).lower()+"/")),SKOS.definition,Literal(row["Definition"],lang="en")))
+                                if "PROJJSON" in row and row["PROJJSON"]!="":
+                                    ldcontext["@context"][row["PROJJSON"]]=row["Concept"]
             g.serialize(destination=filename.replace(".csv","")+".ttl") 
     else:
         continue

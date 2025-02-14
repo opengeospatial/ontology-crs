@@ -115,7 +115,8 @@ geosrs_cs:cylindricalCS a owl:ObjectProperty ;
     rdfs:range geosrs:CS ;
     skos:definition "Links a coordinate reference system to a cylindrical coordinate system"@en .
 
-geosrs_cs:down a geosrs:AxisDirection ;
+geosrs_cs:down a owl:NamedIndividual,
+        geosrs:AxisDirection ;
     rdfs:label "down"@en ;
     skos:definition "Downwards axis direction"@en .
 

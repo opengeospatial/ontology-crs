@@ -47,8 +47,11 @@ jobs:
     - name: Install dependencies
       run: | 
          sudo apt-get update
-         sudo apt-get install python3 python3-setuptools python3-pip -y
-         sudo pip3 install pylode
+         sudo apt-get install python3 python3-setuptools python3-pip python3-dev  -y
+         sudo apt-get install gcc libpq-dev -y
+         sudo apt-get install doxygen graphviz -y
+         sudo apt-get install python3-venv python3-wheel -y
+         sudo pip3 install wheel pylode==2.13.2
     - name: Create Ontology Documentation 🔧
       run: |
          python3 scripts/srsbuild.py
@@ -58,30 +61,30 @@ jobs:
          mv index.html docs/
          cd docs
          mkdir application
-         sudo pylode -o application/index.html application.ttl
+         pylode -o application/index.html -i application.ttl
          mv application.ttl application/
          mkdir alignments
-         sudo pylode -o alignments/index.html alignments.ttl
+         pylode -o alignments/index.html -i alignments.ttl
          mv alignments.ttl alignments/
          mkdir core
          mv index.ttl core/
          cd core
-         sudo pylode -o index.html index.ttl
+         pylode -o index.html -i index.ttl
          cd ..
          mkdir co
-         sudo pylode -o co/index.html co.ttl
+         pylode -o co/index.html -i co.ttl
          mv co.ttl co/
          mkdir cs
-         sudo pylode -o cs/index.html cs.ttl
+         pylode -o cs/index.html -i cs.ttl
          mv cs.ttl cs/
          mkdir datum
-         sudo pylode -o datum/index.html datum.ttl
+         pylode -o datum/index.html -i datum.ttl
          mv datum.ttl datum/
          mkdir planet
-         sudo pylode -o planet/index.html planet.ttl
+         pylode -o planet/index.html -i planet.ttl
          mv planet.ttl planet/
          mkdir projection
-         sudo pylode -o projection/index.html projection.ttl
+         pylode -o projection/index.html -i projection.ttl
          mv projection.ttl projection/
          rm objprop.ttl datatypeprop.ttl 
          mkdir examples

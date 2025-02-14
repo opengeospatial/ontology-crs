@@ -272,12 +272,12 @@ g.serialize(destination="alignments.ttl")
 
 for pref in prefixtoclasses:
     if pref!="geosrs_srs":
-        ldcontext["@context"][pref]=geocrsNS[:-1]+"/"+pref.replace("geosrs_","")+"#"
+        ldcontext["@context"][pref]=geocrsNS[:-1]+"/"+pref.replace("geosrs_","")+"/"
     for cls in prefixtoclasses[pref]:
-        ldcontext["@context"][cls[cls.rfind('#')+1:]]=pref.replace("geosrs_srs","geosrs")+":"+cls[cls.rfind('#')+1:]
+        ldcontext["@context"][cls[cls.rfind('/')+1:]]=pref.replace("geosrs_srs","geosrs")+":"+cls[cls.rfind('/')+1:]
     if pref in prefixtoproperties:
         for cls in prefixtoproperties[pref]:
-            ldcontext["@context"][convertCamelToSnake(cls[cls.rfind('#')+1:])]=pref.replace("geosrs_srs","geosrs")+":"+cls[cls.rfind('#')+1:]
+            ldcontext["@context"][convertCamelToSnake(cls[cls.rfind('/')+1:])]=pref.replace("geosrs_srs","geosrs")+":"+cls[cls.rfind('/')+1:]
 print(prefixtoproperties)
 os.mkdir("context")
 with open('context/geosrs-context.json', 'w',encoding="utf-8") as f:

@@ -30,7 +30,6 @@ geosrs:ellipsoid,geosrs:Datum,geosrs:Ellipsoid,ellipsoid,The properties relates 
 ,,,,,,,ign:greenwichLongitude,,,,"Indicates the longitude from Greenwich meridian. Cf. ISO 19111:2007:2007-07, table 35, attribute prime meridian Greenwich longitude.",
 ,,,,,,,ign:includesSingleCRS,,,,"Indicates the single coordinate reference systems used by a compound coordinate reference system. Cf. ISO 19111:2007:2007-07, table 6, association role componentReferenceSystem.",
 ,,,,,,,,geocrs:includesSRS,,,,
-,,,,,,iso19111:inverseFlattening,ign:inverseFlattening,,,,"Indicates the inverse flattening value of an ellipsoid, expressed as a number or a ratio (percentage rate, parts per million, etc.). Cf. ISO 19111:2007:2007-07, table 37, attribute inverse flattening",
 ,,,,,,iso19111:linearCS,,,,CS,,
 ,,,,,,iso19111:modifiedCoordinate,,,,,,
 ,,,,,,iso19111:origin,,,,,,

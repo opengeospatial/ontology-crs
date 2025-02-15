@@ -77,6 +77,27 @@ for file in os.listdir(directory):
                     else:
                         classToPrefix[row["Concept"]]={"prefix":curprefix, "ns":curns}
 
+dirname = os.path.dirname(__file__)
+abspath = os.path.join(dirname, '../csv/instance/')
+
+directory = os.fsencode(abspath)
+
+for file in os.listdir(directory):
+    filename = os.fsdecode(file)
+    curprefix="geosrs_"+filename.replace(".csv","")
+    curns="https://w3id.org/geosrs/"+filename.replace(".csv","")+"/"
+    if filename.endswith(".csv"):
+        with open(abspath+filename, newline='') as csvfile:
+            reader = csv.DictReader(csvfile)
+            for row in reader:
+                if "Concept" in row and row["Concept"]!="":
+                    if "Module" in row and row["Module"]=="Core Ontology":
+                        classToPrefix[row["Concept"]]={"prefix":coreprefix, "ns":geocrsNS}
+                    elif "Module" in row:
+                        classToPrefix[row["Concept"]]={"prefix":"geosrs_"+str(row["Module"]).lower(), "ns":"https://w3id.org/geosrs/"+str(row["Module"]).lower()+"/"}
+                    else:
+                        classToPrefix[row["Concept"]]={"prefix":curprefix, "ns":curns}
+
 for file in os.listdir(directory):
     filename = os.fsdecode(file)
     g = Graph()

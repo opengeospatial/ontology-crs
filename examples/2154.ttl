@@ -1,7 +1,10 @@
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix geosrs: <https://w3id.org/geosrs/geosrs/> .
+@prefix om: <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 [] a geosrs:ProjectedCRS ;
     rdfs:label "RGF93 v1 / Lambert-93" ;
@@ -9,5 +12,36 @@
     skos:altLabel "FR_RGF93",
         "LAMB93",
         "Lambert-93",
-        "RGF93" .
+        "RGF93" ;
+    geosrs:baseCRS [ a geosrs:GeographicCRS ;
+            rdfs:label "RGF93 v1" ;
+            dc:identifier "EPSG:4171" ;
+            geosrs:coordinateSystem [ a geosrs:EllipsoidalCoordinateSystem ;
+                    rdfs:label "Ellipsoidal 2D CS. Axes: latitude, longitude. Orientations: north, east. UoM: degreeOpen" ;
+                    geosrs:axis [ a geosrs:CoordinateSystemAxis ;
+                            rdfs:label "Geodetic longitude" ;
+                            om:hasUnit om:degree ;
+                            geosrs:axisDirection geosrs:east ],
+                        [ a geosrs:CoordinateSystemAxis ;
+                            rdfs:label "Geodetic latitude" ;
+                            om:hasUnit om:degree ;
+                            geosrs:axisDirection geosrs:north ] ] ;
+            geosrs:datum [ a geosrs:GeodeticDatum ;
+                    rdfs:label "Reseau Geodesique Francais 1993 v1" ;
+                    geosrs:ellipsoid [ a geosrs:Ellipsoid ;
+                            rdfs:label "GRS 1980" ;
+                            geosrs:semiMajorAxis [ om:hasUnit om:metre ;
+                                    rdf:value 6378137 ] ] ;
+                    geosrs:primeMeridian [ a geosrs:PrimeMeridian ;
+                            rdfs:label "Greenwich" ] ] ] ;
+    geosrs:coordinateSystem [ a geosrs:CartesianCoordinateSystem ;
+            rdfs:label "Cartesian 2D CS. Axes: easting, northing (X,Y). Orientations: east, north. UoM: m" ;
+            geosrs:axis [ a geosrs:CoordinateSystemAxis ;
+                    rdfs:label "Easting" ;
+                    om:hasUnit om:metre ;
+                    geosrs:axisDirection geosrs:east ],
+                [ a geosrs:CoordinateSystemAxis ;
+                    rdfs:label "Northing" ;
+                    om:hasUnit om:metre ;
+                    geosrs:axisDirection geosrs:north ] ] .
 

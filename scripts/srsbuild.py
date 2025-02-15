@@ -98,6 +98,11 @@ for file in os.listdir(directory):
                     else:
                         classToPrefix[row["Concept"]]={"prefix":curprefix, "ns":curns}
 
+dirname = os.path.dirname(__file__)
+abspath = os.path.join(dirname, '../csv/class/')
+
+directory = os.fsencode(abspath)
+
 for file in os.listdir(directory):
     filename = os.fsdecode(file)
     g = Graph()
@@ -325,8 +330,8 @@ g.bind("ign","http://data.ign.fr/def/ignf#")
 g.bind("ifc","https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL/")  
 g.bind("iso19111","http://def.isotc211.org/iso19112/2019/SpatialReferencingByGeographicIdentifier#")   
 g.bind("geosrs", "https://w3id.org/geosrs/")  
-g.add((URIRef("https://w3id.org/geosrs/alignments/alignments"),RDF.type,OWL.Ontology))
-g.add((URIRef("https://w3id.org/geosrs/alignments/alignments"),RDFS.label,Literal("SRS Ontology Alignments",lang="en")))
+g.add((URIRef("https://w3id.org/geosrs/alignments/"),RDF.type,OWL.Ontology))
+g.add((URIRef("https://w3id.org/geosrs/alignments/"),RDFS.label,Literal("SRS Ontology Alignments",lang="en")))
 dirname = os.path.dirname(__file__)
 abspath = os.path.join(dirname, '../csv/alignment/')
 directory = os.fsencode(abspath)

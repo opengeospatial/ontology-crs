@@ -1,6 +1,31 @@
 @prefix geosrs: <https://w3id.org/geosrs/geosrs/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 [] a geosrs:ProjectedCRS ;
-    rdfs:label "RGF93 v1 / Lambert-93" .
+    rdfs:label "RGF93 v1 / Lambert-93" ;
+    geosrs:baseCRS [ a geosrs:GeographicCRS ;
+            rdfs:label "RGF93 v1" ;
+            geosrs:coordinateSystem [ a <file:///home/runner/work/ontology-crs/ontology-crs/examples/EllipsoidalCS> ;
+                    rdfs:label "Ellipsoidal 2D CS. Axes: latitude, longitude. Orientations: north, east. UoM: degreeOpen" ;
+                    geosrs:axis [ a geosrs:CoordinateSystemAxis ;
+                            rdfs:label "Geodetic latitude" ;
+                            geosrs:axisDirection "north" ],
+                        [ a geosrs:CoordinateSystemAxis ;
+                            rdfs:label "Geodetic longitude" ;
+                            geosrs:axisDirection "east" ] ] ;
+            geosrs:datum [ a geosrs:GeodeticDatum ;
+                    rdfs:label "Reseau Geodesique Francais 1993 v1" ;
+                    geosrs:ellipsoid [ a geosrs:Ellipsoid ;
+                            rdfs:label "GRS 1980" ;
+                            geosrs:semiMajorAxis [ rdf:value 6378137 ] ] ] ] ;
+    geosrs:coordinateSystem [ a <file:///home/runner/work/ontology-crs/ontology-crs/examples/CartesianCS> ;
+            rdfs:label "Cartesian 2D CS. Axes: easting, northing (X,Y). Orientations: east, north. UoM: m" ;
+            geosrs:axis [ a geosrs:CoordinateSystemAxis ;
+                    rdfs:label "Northing" ;
+                    geosrs:axisDirection "north" ],
+                [ a geosrs:CoordinateSystemAxis ;
+                    rdfs:label "Easting" ;
+                    geosrs:axisDirection "east" ] ] .
 

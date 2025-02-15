@@ -387,7 +387,6 @@
       "@id": "om:hasUnit",
       "@type": "@vocab"
     },
-    "axis_direction": "geosrs:axisDirection",
     "baseCRS": {
       "@id": "geosrs:baseCRS",
       "@type": "@vocab"
@@ -460,6 +459,10 @@
     "loxim": "geosrs_projection:LoximuthalProjection",
     "m": "om:metre",
     "merc": "geosrs_projection:MercatorProjection",
+    "method": {
+      "@id": "geosrs:method",
+      "@type": "@vocab"
+    },
     "metre": "om:metre",
     "mill": "geosrs_projection:MillerProjection",
     "millimetre": "om:millimetre",

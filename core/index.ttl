@@ -106,12 +106,6 @@ geosrs:axis a owl:ObjectProperty ;
     rdfs:range geosrs:Axis ;
     skos:definition "The property relates a coordinate system to one of its axis"@en .
 
-geosrs:axisDirection a owl:ObjectProperty ;
-    rdfs:label "axisdirection"@en ;
-    rdfs:domain geosrs:Axis ;
-    rdfs:range geosrs:AxisDirection ;
-    skos:definition "The property relates a coordinate system axis to its axis direction"@en .
-
 geosrs:baseCRS a owl:ObjectProperty ;
     rdfs:label "base CRS"@en ;
     rdfs:domain geosrs:CRS ;

@@ -378,11 +378,19 @@
     "alias": "skos:altLabel",
     "aust_SA": "geosrs:AustralianNationalSpheroid",
     "axis": "geosrs:axis",
+    "axisDirection": {
+      "@id": "geosrs:axisDirection",
+      "@type": "@vocab"
+    },
     "axisUnitID": {
       "@id": "om:hasUnit",
       "@type": "@vocab"
     },
     "axis_direction": "geosrs:axisDirection",
+    "baseCRS": {
+      "@id": "geosrs:baseCRS",
+      "@type": "@vocab"
+    },
     "base_c_r_s": "geosrs:baseCRS",
     "base_crs": {
       "@id": "geosrs:baseCRS",
@@ -397,6 +405,10 @@
     "col_urban": "geosrs:ColombiaUrbanProjection",
     "collg": "geosrs:CollignonProjection",
     "conversion": "geosrs:conversion",
+    "coordinateSystem": {
+      "@id": "geosrs:coordinateSystem",
+      "@type": "@vocab"
+    },
     "coordinate_system": "geosrs:coordinateSystem",
     "datum": "geosrs:datum",
     "dc": "http://purl.org/dc/elements/1.1/",
@@ -453,6 +465,10 @@
     "ortho": "geosrs:OrthographicProjection",
     "parameters": "geosrs:OperationParameter",
     "poly": "geosrs:AmericanPolyconicProjection",
+    "primeMeridian": {
+      "@id": "geosrs:primeMeridian",
+      "@type": "@vocab"
+    },
     "prime_meridian": {
       "@id": "geosrs:primeMeridian",
       "@type": "@vocab"
@@ -469,6 +485,10 @@
     "semi_minor_axis": "geosrs:semiMinorAxis",
     "sinu": "geosrs:SinusoidalProjection",
     "skos": "http://www.w3.org/2004/02/skos/core#",
+    "sourceCRS": {
+      "@id": "geosrs:sourceCRS",
+      "@type": "@vocab"
+    },
     "source_c_r_s": "geosrs:sourceCRS",
     "source_crs": {
       "@id": "geosrs:sourceCRS",
@@ -479,6 +499,10 @@
     "sterea": "geosrs:ObliqueStereographicProjection",
     "subtype": {
       "@id": "rdf:type",
+      "@type": "@vocab"
+    },
+    "targetCRS": {
+      "@id": "geosrs:targetCRS",
       "@type": "@vocab"
     },
     "target_c_r_s": "geosrs:targetCRS",

@@ -20,13 +20,13 @@
             geosrs:coordinateSystem [ a geosrs:EllipsoidalCoordinateSystem ;
                     rdfs:label "Ellipsoidal 2D CS. Axes: latitude, longitude. Orientations: north, east. UoM: degreeOpen" ;
                     geosrs:axis [ a geosrs:CoordinateSystemAxis ;
-                            rdfs:label "Geodetic longitude" ;
-                            om:hasUnit om:degree ;
-                            geosrs:axisDirection geosrs_cs:east ],
-                        [ a geosrs:CoordinateSystemAxis ;
                             rdfs:label "Geodetic latitude" ;
                             om:hasUnit om:degree ;
-                            geosrs:axisDirection geosrs_cs:north ] ] ;
+                            geosrs:axisDirection geosrs_cs:north ],
+                        [ a geosrs:CoordinateSystemAxis ;
+                            rdfs:label "Geodetic longitude" ;
+                            om:hasUnit om:degree ;
+                            geosrs:axisDirection geosrs_cs:east ] ] ;
             geosrs:datum [ a geosrs:GeodeticDatum ;
                     rdfs:label "Reseau Geodesique Francais 1993 v1" ;
                     geosrs:ellipsoid [ a geosrs:Ellipsoid ;
@@ -38,11 +38,11 @@
     geosrs:coordinateSystem [ a geosrs:CartesianCoordinateSystem ;
             rdfs:label "Cartesian 2D CS. Axes: easting, northing (X,Y). Orientations: east, north. UoM: m" ;
             geosrs:axis [ a geosrs:CoordinateSystemAxis ;
-                    rdfs:label "Northing" ;
-                    om:hasUnit om:metre ;
-                    geosrs:axisDirection geosrs_cs:north ],
-                [ a geosrs:CoordinateSystemAxis ;
                     rdfs:label "Easting" ;
                     om:hasUnit om:metre ;
-                    geosrs:axisDirection geosrs_cs:east ] ] .
+                    geosrs:axisDirection geosrs_cs:east ],
+                [ a geosrs:CoordinateSystemAxis ;
+                    rdfs:label "Northing" ;
+                    om:hasUnit om:metre ;
+                    geosrs:axisDirection geosrs_cs:north ] ] .
 

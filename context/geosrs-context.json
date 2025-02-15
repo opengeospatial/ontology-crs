@@ -72,6 +72,7 @@
     "ConformalProjection": "geosrs_projection:ConformalProjection",
     "ConicalCoordinateSystem": "geosrs_cs:ConicalCoordinateSystem",
     "ConicalProjection": "geosrs_projection:ConicalProjection",
+    "Conversion": "geosrs:conversion",
     "CoordinateOperation": "geosrs:CoordinateOperation",
     "CoordinateSystem": "geosrs:CoordinateSystem",
     "CoordinateSystemAxis": "geosrs:CoordinateSystemAxis",
@@ -514,6 +515,7 @@
       "@type": "@vocab"
     },
     "tmerc": "geosrs_projection:TransverseMercatorProjection",
+    "transformation": "geosrs:Transformation",
     "type": {
       "@id": "rdf:type",
       "@type": "@vocab"

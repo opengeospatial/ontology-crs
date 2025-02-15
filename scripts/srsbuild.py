@@ -25,6 +25,7 @@ ldcontext={"@context":{"rdfs":"http://www.w3.org/2000/01/rdf-schema#","rdf":"htt
                        #"coordinate_system":"geosrs:CoordinateSystem","ellipsoidal":"geosrs:EllipsoidalCoordinateSystem",
                        #"Cartesian":"geosrs:CartesianCoordinateSystem","GeodeticReferenceFrame":"geosrs:GeodeticDatum",
                        #"datum_ensemble":"geosrs:datum",
+                       "entityType":{"@id":"rdf:type","@type":"@vocab"},
                        "subtype":{"@id":"rdf:type","@type":"@vocab"},
                        "type":{"@id":"rdf:type","@type":"@vocab"},
                        "unit":{"@id":"om:hasUnit","@type":"@vocab"}

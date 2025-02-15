@@ -100,6 +100,12 @@ geosrs_datum:inverseFlattening a owl:DatatypeProperty ;
     rdfs:range <xsd:double> ;
     skos:definition "Indicates the inverse flattening value of an ellipsoid, expressed as a number or a ratio (percentage rate, parts per million, etc.). Cf. ISO 19111:2007:2007-07, table 37, attribute inverse flattening"@en .
 
+geosrs_datum:primeMeridian a owl:ObjectProperty ;
+    rdfs:label "prime meridian"@en ;
+    rdfs:domain geosrs:Datum ;
+    rdfs:range geosrs:PrimeMeridian ;
+    skos:definition "The prime meridian used by a geodetic datum. Cf. ISO 19111:2007:2007-07, table 34, association role primeMeridian."@en .
+
 geosrs:datumdatum a owl:Ontology ;
     rdfs:label "SRS Ontology: Geosrs_datum"@en ;
     vann:preferredNamespacePrefix "geosrs_datum"^^xsd:string ;

@@ -1,4 +1,5 @@
 @prefix geosrs: <https://w3id.org/geosrs/geosrs/> .
+@prefix geosrs_cs: <https://w3id.org/geosrs/cs/> .
 @prefix om: <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -10,42 +11,42 @@
     skos:scopeNote "Engineering survey, topographic mapping." ;
     geosrs:baseCRS [ rdfs:label "ED50" ;
             geosrs:coordinateSystem [ a geosrs:EllipsoidalCoordinateSystem ;
-                    geosrs:axis [ rdfs:label "Geodetic longitude" ;
-                            om:hasUnit om:degree ;
-                            skos:altLabel "Lon" ;
-                            geosrs:axisDirection geosrs:east ],
-                        [ rdfs:label "Geodetic latitude" ;
+                    geosrs:axis [ rdfs:label "Geodetic latitude" ;
                             om:hasUnit om:degree ;
                             skos:altLabel "Lat" ;
-                            geosrs:axisDirection geosrs:north ] ] ;
+                            geosrs:axisDirection geosrs_cs:north ],
+                        [ rdfs:label "Geodetic longitude" ;
+                            om:hasUnit om:degree ;
+                            skos:altLabel "Lon" ;
+                            geosrs:axisDirection geosrs_cs:east ] ] ;
             geosrs:datum [ a geosrs:GeodeticDatum ;
                     rdfs:label "European Datum 1950" ;
                     geosrs:ellipsoid [ rdfs:label "International 1924" ;
                             geosrs:inverseFlattening 297 ;
                             geosrs:semiMajorAxis 6378388 ] ] ] ;
     geosrs:conversion [ rdfs:label "UTM zone 32N" ;
-            geosrs:OperationParameter [ rdfs:label "Longitude of natural origin" ;
-                    om:hasUnit om:degree ;
-                    rdf:value 9 ],
+            geosrs:OperationParameter [ rdfs:label "Scale factor at natural origin" ;
+                    om:hasUnit om:unity ;
+                    rdf:value 9.996e-01 ],
                 [ rdfs:label "False northing" ;
                     om:hasUnit om:metre ;
                     rdf:value 0 ],
-                [ rdfs:label "False easting" ;
-                    om:hasUnit om:metre ;
-                    rdf:value 500000 ],
+                [ rdfs:label "Longitude of natural origin" ;
+                    om:hasUnit om:degree ;
+                    rdf:value 9 ],
                 [ rdfs:label "Latitude of natural origin" ;
                     om:hasUnit om:degree ;
                     rdf:value 0 ],
-                [ rdfs:label "Scale factor at natural origin" ;
-                    om:hasUnit om:unity ;
-                    rdf:value 9.996e-01 ] ] ;
+                [ rdfs:label "False easting" ;
+                    om:hasUnit om:metre ;
+                    rdf:value 500000 ] ] ;
     geosrs:coordinateSystem [ a geosrs:CartesianCoordinateSystem ;
             geosrs:axis [ rdfs:label "Northing" ;
                     om:hasUnit om:metre ;
                     skos:altLabel "N" ;
-                    geosrs:axisDirection geosrs:north ],
+                    geosrs:axisDirection geosrs_cs:north ],
                 [ rdfs:label "Easting" ;
                     om:hasUnit om:metre ;
                     skos:altLabel "E" ;
-                    geosrs:axisDirection geosrs:east ] ] .
+                    geosrs:axisDirection geosrs_cs:east ] ] .
 

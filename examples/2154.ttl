@@ -1,5 +1,6 @@
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix geosrs: <https://w3id.org/geosrs/geosrs/> .
+@prefix geosrs_cs: <https://w3id.org/geosrs/cs/> .
 @prefix om: <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -21,11 +22,11 @@
                     geosrs:axis [ a geosrs:CoordinateSystemAxis ;
                             rdfs:label "Geodetic longitude" ;
                             om:hasUnit om:degree ;
-                            geosrs:axisDirection geosrs:east ],
+                            geosrs:axisDirection geosrs_cs:east ],
                         [ a geosrs:CoordinateSystemAxis ;
                             rdfs:label "Geodetic latitude" ;
                             om:hasUnit om:degree ;
-                            geosrs:axisDirection geosrs:north ] ] ;
+                            geosrs:axisDirection geosrs_cs:north ] ] ;
             geosrs:datum [ a geosrs:GeodeticDatum ;
                     rdfs:label "Reseau Geodesique Francais 1993 v1" ;
                     geosrs:ellipsoid [ a geosrs:Ellipsoid ;
@@ -39,9 +40,9 @@
             geosrs:axis [ a geosrs:CoordinateSystemAxis ;
                     rdfs:label "Easting" ;
                     om:hasUnit om:metre ;
-                    geosrs:axisDirection geosrs:east ],
+                    geosrs:axisDirection geosrs_cs:east ],
                 [ a geosrs:CoordinateSystemAxis ;
                     rdfs:label "Northing" ;
                     om:hasUnit om:metre ;
-                    geosrs:axisDirection geosrs:north ] ] .
+                    geosrs:axisDirection geosrs_cs:north ] ] .
 

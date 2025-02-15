@@ -37,11 +37,11 @@
     geosrs:coordinateSystem [ a <file:///home/runner/work/ontology-crs/ontology-crs/examples/CartesianCS> ;
             rdfs:label "Cartesian 2D CS. Axes: easting, northing (X,Y). Orientations: east, north. UoM: m" ;
             geosrs:axis [ a geosrs:CoordinateSystemAxis ;
-                    rdfs:label "Northing" ;
-                    om:hasUnit om:metre ;
-                    geosrs:axisDirection "north" ],
-                [ a geosrs:CoordinateSystemAxis ;
                     rdfs:label "Easting" ;
                     om:hasUnit om:metre ;
-                    geosrs:axisDirection "east" ] ] .
+                    geosrs:axisDirection "east" ],
+                [ a geosrs:CoordinateSystemAxis ;
+                    rdfs:label "Northing" ;
+                    om:hasUnit om:metre ;
+                    geosrs:axisDirection "north" ] ] .
 

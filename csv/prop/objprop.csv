@@ -36,7 +36,7 @@ geosrs:method,geosrs:CRS,geosrs:CoordinateOperation,method,,,iso19111:method,,,,
 ,,,,,,iso19111:origin,,,,,,,,
 ,,,,,,iso19111:ordinalCS,,,,,,CS,,
 ,,,,,,,ign:parameter,,,,,,"The parameter associated to a given value. Cf. ISO 19111:2007:2007-07, table 55, association role parameter.",
-,,,,,,iso19111:parameterValue,,,,,,,,
+geosrs:parameter,geosrs:Conversion,geosrs:OperationParameter,parameter,,,iso19111:parameterValue,ign:parameter,,,parameter,parameterValue,CO,,
 geosrs:primeMeridian,geosrs:Datum,geosrs:PrimeMeridian,prime meridian,"The prime meridian used by a geodetic datum. Cf. ISO 19111:2007:2007-07, table 34, association role primeMeridian.",,iso19111:primeMeridian,ign:primeMeridian,,,prime_meridian,primeMeridian,DATUM,"The prime meridian used by a geodetic datum. Cf. ISO 19111:2007:2007-07, table 34, association role primeMeridian.",
 ,,,,,,iso19111:polarCS,,,,,,,,
 ,,,,,,iso19111:semiMedianAxis,,,,,,,,length of the semi-median axis of a triaxial ellipsoidNote: This parameter is not required for a biaxial ellipsoid.

@@ -205,7 +205,7 @@ for file in os.listdir(directory):
                                     ldcontext["@context"][row["PROJJSON"]]=row["Concept"]
                             if "OGCJSON" in row and row["OGCJSON"]!="":
                                 if objprop:
-                                    ldcontext["@context"][row["PROJJSON"]]={"@id":row["Concept"],"@type":"@vocab"}
+                                    ldcontext["@context"][row["OGCJSON"]]={"@id":row["Concept"],"@type":"@vocab"}
                                 else:
                                     ldcontext["@context"][row["OGCJSON"]]=row["Concept"]
                         else:
@@ -231,7 +231,7 @@ for file in os.listdir(directory):
                                         ldcontext["@context"][row["PROJJSON"]]=row["Concept"]
                                 if "OGCJSON" in row and row["OGCJSON"]!="":
                                     if objprop:
-                                        ldcontext["@context"][row["PROJJSON"]]={"@id":row["Concept"],"@type":"@vocab"}
+                                        ldcontext["@context"][row["OGCJSON"]]={"@id":row["Concept"],"@type":"@vocab"}
                                     else:
                                         ldcontext["@context"][row["OGCJSON"]]=row["Concept"]
             g.serialize(destination=filename.replace(".csv","")+".ttl") 

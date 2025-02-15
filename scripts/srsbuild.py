@@ -110,9 +110,9 @@ for file in os.listdir(directory):
                         if "Definition" in row and row["Definition"]!="":
                             gcore.add((URIRef(row["Concept"].replace(coreprefix+":",geocrsNS)),SKOS.definition,Literal(row["Definition"],lang="en")))
                         if "PROJJSON" in row and row["PROJJSON"]!="":
-                            ldcontext["@context"][row["PROJJSON"]]=row["Concept"]
+                            ldcontext["@context"][row["PROJJSON"]]=row["Concept"].replace("geosrs:", getPrefixForClass(spl,classToPrefix)+":")
                         if "OGCJSON" in row and row["OGCJSON"]!="":
-                            ldcontext["@context"][row["OGCJSON"]]=row["Concept"]
+                            ldcontext["@context"][row["OGCJSON"]]=row["Concept"].replace("geosrs:", getPrefixForClass(spl,classToPrefix)+":")
                         if "SuperClass" in row and row["SuperClass"]!="":
                             if " " in row["SuperClass"]:
                                 for spl in row["SuperClass"].split(" "):
@@ -134,9 +134,9 @@ for file in os.listdir(directory):
                         if "Definition" in row and row["Definition"]!="":
                             g.add((URIRef(row["Concept"].replace(coreprefix+":",curns)),SKOS.definition,Literal(row["Definition"],lang="en")))
                         if "PROJJSON" in row and row["PROJJSON"]!="":
-                            ldcontext["@context"][row["PROJJSON"]]=row["Concept"]
+                            ldcontext["@context"][row["PROJJSON"]]=row["Concept"].replace("geosrs:", getPrefixForClass(spl,classToPrefix)+":")
                         if "OGCJSON" in row and row["OGCJSON"]!="":
-                            ldcontext["@context"][row["OGCJSON"]]=row["Concept"]
+                            ldcontext["@context"][row["OGCJSON"]]=row["Concept"].replace("geosrs:", getPrefixForClass(spl,classToPrefix)+":")
                         if "SuperClass" in row and row["SuperClass"]!="":
                             if " " in row["SuperClass"]:
                                 for spl in row["SuperClass"].split(" "):
@@ -164,6 +164,7 @@ for file in os.listdir(directory):
     curprefix="geosrs_"+filename.replace(".csv","")
     curns="https://w3id.org/geosrs/"
     g.bind(curprefix, curns) 
+    ldcontext["@context"][curprefix]=curns
     g.bind("geosrs", "https://w3id.org/geosrs/") 
     g.bind("skos","http://www.w3.org/2004/02/skos/core#")
 
@@ -200,14 +201,14 @@ for file in os.listdir(directory):
                                 gcore.add((URIRef(row["Concept"].replace(coreprefix+":",geocrsNS)),RDFS.domain,URIRef(row["Domain"].replace("geosrs:",getNSForClass(row["Domain"],classToPrefix)))))
                             if "PROJJSON" in row and row["PROJJSON"]!="":
                                 if objprop:
-                                    ldcontext["@context"][row["PROJJSON"]]={"@id":row["Concept"],"@type":"@vocab"}
+                                    ldcontext["@context"][row["PROJJSON"]]={"@id":row["Concept"].replace("geosrs:", getPrefixForClass(spl,classToPrefix)+":"),"@type":"@vocab"}
                                 else:
-                                    ldcontext["@context"][row["PROJJSON"]]=row["Concept"]
+                                    ldcontext["@context"][row["PROJJSON"]]=row["Concept"].replace("geosrs:", getPrefixForClass(spl,classToPrefix)+":")
                             if "OGCJSON" in row and row["OGCJSON"]!="":
                                 if objprop:
-                                    ldcontext["@context"][row["OGCJSON"]]={"@id":row["Concept"],"@type":"@vocab"}
+                                    ldcontext["@context"][row["OGCJSON"]]={"@id":row["Concept"].replace("geosrs:", getPrefixForClass(spl,classToPrefix)+":"),"@type":"@vocab"}
                                 else:
-                                    ldcontext["@context"][row["OGCJSON"]]=row["Concept"]
+                                    ldcontext["@context"][row["OGCJSON"]]=row["Concept"].replace("geosrs:", getPrefixForClass(spl,classToPrefix)+":")
                         else:
                             if row["Core Property?"].lower() in exont:
                                 if row["Core Property?"]!="":
@@ -226,14 +227,14 @@ for file in os.listdir(directory):
                                     exont[row["Core Property?"].lower()].add((URIRef(row["Concept"].replace(coreprefix+":",curns+str(row["Core Property?"]).lower()+"/")),RDFS.domain,URIRef(row["Domain"].replace("geosrs:",getNSForClass(row["Domain"],classToPrefix)))))
                                 if "PROJJSON" in row and row["PROJJSON"]!="":
                                     if objprop:
-                                        ldcontext["@context"][row["PROJJSON"]]={"@id":row["Concept"],"@type":"@vocab"}
+                                        ldcontext["@context"][row["PROJJSON"]]={"@id":row["Concept"].replace("geosrs:", getPrefixForClass(spl,classToPrefix)+":"),"@type":"@vocab"}
                                     else:
-                                        ldcontext["@context"][row["PROJJSON"]]=row["Concept"]
+                                        ldcontext["@context"][row["PROJJSON"]]=row["Concept"].replace("geosrs:", getPrefixForClass(spl,classToPrefix)+":")
                                 if "OGCJSON" in row and row["OGCJSON"]!="":
                                     if objprop:
-                                        ldcontext["@context"][row["OGCJSON"]]={"@id":row["Concept"],"@type":"@vocab"}
+                                        ldcontext["@context"][row["OGCJSON"]]={"@id":row["Concept"].replace("geosrs:", getPrefixForClass(spl,classToPrefix)+":"),"@type":"@vocab"}
                                     else:
-                                        ldcontext["@context"][row["OGCJSON"]]=row["Concept"]
+                                        ldcontext["@context"][row["OGCJSON"]]=row["Concept"].replace("geosrs:", getPrefixForClass(spl,classToPrefix)+":")
             g.serialize(destination=filename.replace(".csv","")+".ttl") 
     else:
         continue

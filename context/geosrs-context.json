@@ -415,6 +415,10 @@
     "dc": "http://purl.org/dc/elements/1.1/",
     "deg": "om:degree",
     "degree": "om:degree",
+    "derivingConversion": {
+      "@id": "geosrs:derivingConversion",
+      "@type": "@vocab"
+    },
     "direction": {
       "@id": "geosrs:axisDirection",
       "@type": "@vocab"

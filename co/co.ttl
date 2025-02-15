@@ -15,6 +15,11 @@ geosrs_co:method a owl:ObjectProperty ;
     rdfs:domain geosrs:CRS ;
     rdfs:range geosrs:CoordinateOperation .
 
+geosrs_co:parameter a owl:ObjectProperty ;
+    rdfs:label "parameter"@en ;
+    rdfs:domain geosrs:Conversion ;
+    rdfs:range geosrs:OperationParameter .
+
 geosrs:coco a owl:Ontology ;
     rdfs:label "SRS Ontology: Geosrs_co"@en ;
     vann:preferredNamespacePrefix "geosrs_co"^^xsd:string ;

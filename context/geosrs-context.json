@@ -474,7 +474,15 @@
     "om": "http://www.ontology-of-units-of-measure.org/resource/om-2/",
     "omerc": "geosrs_projection:ObliqueMercatorProjection",
     "ortho": "geosrs_projection:OrthographicProjection",
-    "parameters": "geosrs:OperationParameter",
+    "parameter": {
+      "@id": "geosrs:parameter",
+      "@type": "@vocab"
+    },
+    "parameterValue": {
+      "@id": "geosrs:parameter",
+      "@type": "@vocab"
+    },
+    "parameters": "geosrs:operationParameter",
     "poly": "geosrs_projection:AmericanPolyconicProjection",
     "primeMeridian": {
       "@id": "geosrs:primeMeridian",
@@ -490,6 +498,7 @@
     "robin": "geosrs_projection:RobinsonProjection",
     "rpoly": "geosrs_projection:RectangularPolyconicProjection",
     "scope": "skos:scopeNote",
+    "secondDefiningParameter": "geosrs:operationParameter",
     "semiMajorAxis": "geosrs:semiMajorAxis",
     "semiMinorAxis": "geosrs:semiMinorAxis",
     "semi_major_axis": "geosrs:semiMajorAxis",

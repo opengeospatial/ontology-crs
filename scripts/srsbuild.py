@@ -110,9 +110,9 @@ for file in os.listdir(directory):
                         if "Definition" in row and row["Definition"]!="":
                             gcore.add((URIRef(row["Concept"].replace(coreprefix+":",geocrsNS)),SKOS.definition,Literal(row["Definition"],lang="en")))
                         if "PROJJSON" in row and row["PROJJSON"]!="":
-                            ldcontext["@context"][row["PROJJSON"]]={"@id":row["Concept"],"@type":"@vocab"},
+                            ldcontext["@context"][row["PROJJSON"]]=row["Concept"]
                         if "OGCJSON" in row and row["OGCJSON"]!="":
-                            ldcontext["@context"][row["OGCJSON"]]={"@id":row["Concept"],"@type":"@vocab"},
+                            ldcontext["@context"][row["OGCJSON"]]=row["Concept"]
                         if "SuperClass" in row and row["SuperClass"]!="":
                             if " " in row["SuperClass"]:
                                 for spl in row["SuperClass"].split(" "):
@@ -134,9 +134,9 @@ for file in os.listdir(directory):
                         if "Definition" in row and row["Definition"]!="":
                             g.add((URIRef(row["Concept"].replace(coreprefix+":",curns)),SKOS.definition,Literal(row["Definition"],lang="en")))
                         if "PROJJSON" in row and row["PROJJSON"]!="":
-                            ldcontext["@context"][row["PROJJSON"]]={"@id":row["Concept"],"@type":"@vocab"},
+                            ldcontext["@context"][row["PROJJSON"]]=row["Concept"]
                         if "OGCJSON" in row and row["OGCJSON"]!="":
-                            ldcontext["@context"][row["OGCJSON"]]={"@id":row["Concept"],"@type":"@vocab"},
+                            ldcontext["@context"][row["OGCJSON"]]=row["Concept"]
                         if "SuperClass" in row and row["SuperClass"]!="":
                             if " " in row["SuperClass"]:
                                 for spl in row["SuperClass"].split(" "):
@@ -199,9 +199,15 @@ for file in os.listdir(directory):
                             if "Domain" in row and row["Domain"]!="":
                                 gcore.add((URIRef(row["Concept"].replace(coreprefix+":",geocrsNS)),RDFS.domain,URIRef(row["Domain"].replace("geosrs:",getNSForClass(row["Domain"],classToPrefix)))))
                             if "PROJJSON" in row and row["PROJJSON"]!="":
-                                ldcontext["@context"][row["PROJJSON"]]=row["Concept"]
+                                if objprop:
+                                    ldcontext["@context"][row["PROJJSON"]]={"@id":row["Concept"],"@type":"@vocab"}
+                                else:
+                                    ldcontext["@context"][row["PROJJSON"]]=row["Concept"]
                             if "OGCJSON" in row and row["OGCJSON"]!="":
-                                ldcontext["@context"][row["OGCJSON"]]=row["Concept"]
+                                if objprop:
+                                    ldcontext["@context"][row["PROJJSON"]]={"@id":row["Concept"],"@type":"@vocab"}
+                                else:
+                                    ldcontext["@context"][row["OGCJSON"]]=row["Concept"]
                         else:
                             if row["Core Property?"].lower() in exont:
                                 if row["Core Property?"]!="":
@@ -219,9 +225,15 @@ for file in os.listdir(directory):
                                 if "Domain" in row and row["Domain"]!="":
                                     exont[row["Core Property?"].lower()].add((URIRef(row["Concept"].replace(coreprefix+":",curns+str(row["Core Property?"]).lower()+"/")),RDFS.domain,URIRef(row["Domain"].replace("geosrs:",getNSForClass(row["Domain"],classToPrefix)))))
                                 if "PROJJSON" in row and row["PROJJSON"]!="":
-                                    ldcontext["@context"][row["PROJJSON"]]=row["Concept"]
+                                    if objprop:
+                                        ldcontext["@context"][row["PROJJSON"]]={"@id":row["Concept"],"@type":"@vocab"}
+                                    else:
+                                        ldcontext["@context"][row["PROJJSON"]]=row["Concept"]
                                 if "OGCJSON" in row and row["OGCJSON"]!="":
-                                    ldcontext["@context"][row["OGCJSON"]]=row["Concept"]
+                                    if objprop:
+                                        ldcontext["@context"][row["PROJJSON"]]={"@id":row["Concept"],"@type":"@vocab"}
+                                    else:
+                                        ldcontext["@context"][row["OGCJSON"]]=row["Concept"]
             g.serialize(destination=filename.replace(".csv","")+".ttl") 
     else:
         continue

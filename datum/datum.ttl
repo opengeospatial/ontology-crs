@@ -55,16 +55,6 @@ geosrs_datum:Everest1930 a owl:NamedIndividual,
     rdfs:label "Everest 1930"@en ;
     skos:definition "Everest 1930 Spheroid"@en .
 
-geosrs_datum:GRS1980 a owl:NamedIndividual,
-        geosrs:Ellipsoid ;
-    rdfs:label "GRS 1980"@en ;
-    skos:definition "GRS 1980 Ellipsoid"@en .
-
-geosrs_datum:GRS67 a owl:NamedIndividual,
-        geosrs:Ellipsoid ;
-    rdfs:label "GRS 67"@en ;
-    skos:definition "GRS 67 Ellipsoid"@en .
-
 geosrs_datum:IAG1975 a owl:NamedIndividual,
         geosrs:Ellipsoid ;
     rdfs:label "IAG 1975"@en ;

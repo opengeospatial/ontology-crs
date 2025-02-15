@@ -130,8 +130,6 @@
     "FranculaXIIIProjection": "geosrs_projection:FranculaXIIIProjection",
     "FranculaXIIProjection": "geosrs_projection:FranculaXIIProjection",
     "FranculaXIVProjection": "geosrs_projection:FranculaXIVProjection",
-    "GRS67; GRS 1967": "geosrs:GRS67",
-    "GRS80; GRS 80; GRS 1980": "geosrs:GRS1980",
     "GS50Projection": "geosrs_projection:GS50Projection",
     "GalacticCoordinateSystem": "geosrs_cs:GalacticCoordinateSystem",
     "GallIsographicProjection": "geosrs_projection:GallIsographicProjection",
@@ -392,6 +390,8 @@
     "deg": "om:degree",
     "degree": "om:degree",
     "direction": "geosrs:axisDirection",
+    "down": "geosrs:down",
+    "east": "geosrs:east",
     "ellipsoid": "geosrs:ellipsoid",
     "ellipsoidal": "geosrs:EllipsoidalCoordinateSystem",
     "entityType": {
@@ -430,6 +430,7 @@
     "name": "rdfs:label",
     "natearth": "geosrs:NaturalEarthProjection",
     "nicol": "geosrs:NicolosiGlobularProjection",
+    "north": "geosrs:north",
     "om": "http://www.ontology-of-units-of-measure.org/resource/om-2/",
     "omerc": "geosrs:ObliqueMercatorProjection",
     "ortho": "geosrs:OrthographicProjection",
@@ -450,6 +451,7 @@
     "sourceCRS": "geosrs:sourceCRS",
     "source_c_r_s": "geosrs:sourceCRS",
     "source_crs": "geosrs:sourceCRS",
+    "south": "geosrs:south",
     "stere": "geosrs:StereographicProjection",
     "sterea": "geosrs:ObliqueStereographicProjection",
     "subtype": {
@@ -470,8 +472,10 @@
     },
     "unity": "om:unity",
     "uom": "om:hasUnit",
+    "up": "geosrs:up",
     "utm": "geosrs:UniversalTransverseMercatorProjection",
     "value": "rdf:value",
-    "vertical": "geosrs:VerticalCoordinateSystem"
+    "vertical": "geosrs:VerticalCoordinateSystem",
+    "west": "geosrs:west"
   }
 }

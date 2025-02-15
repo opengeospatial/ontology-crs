@@ -23,10 +23,10 @@ ldcontext={"@context":{"rdfs":"http://www.w3.org/2000/01/rdf-schema#","rdf":"htt
                        "kilometre":"om:kilometre", "deg":"om:degree","degree":"om:degree","parameters":"geosrs:OperationParameter",
                        "m":"om:metre","metre":"om:metre","radian":"om:radian",
                        "identifier":"dc:identifier",
-                       "uom":"om:hasUnit",
                        "entityType":{"@id":"rdf:type","@type":"@vocab"},
                        "subtype":{"@id":"rdf:type","@type":"@vocab"},
                        "type":{"@id":"rdf:type","@type":"@vocab"},
+                       "uom":{"@id":"om:hasUnit","@type":"@vocab"},
                        "axisUnitID":{"@id":"om:hasUnit","@type":"@vocab"},
                        "unit":{"@id":"om:hasUnit","@type":"@vocab"}
             }
@@ -110,9 +110,9 @@ for file in os.listdir(directory):
                         if "Definition" in row and row["Definition"]!="":
                             gcore.add((URIRef(row["Concept"].replace(coreprefix+":",geocrsNS)),SKOS.definition,Literal(row["Definition"],lang="en")))
                         if "PROJJSON" in row and row["PROJJSON"]!="":
-                            ldcontext["@context"][row["PROJJSON"]]=row["Concept"]
+                            ldcontext["@context"][row["PROJJSON"]]={"@id":row["Concept"],"@type":"@vocab"},
                         if "OGCJSON" in row and row["OGCJSON"]!="":
-                            ldcontext["@context"][row["OGCJSON"]]=row["Concept"]
+                            ldcontext["@context"][row["OGCJSON"]]={"@id":row["Concept"],"@type":"@vocab"},
                         if "SuperClass" in row and row["SuperClass"]!="":
                             if " " in row["SuperClass"]:
                                 for spl in row["SuperClass"].split(" "):
@@ -134,9 +134,9 @@ for file in os.listdir(directory):
                         if "Definition" in row and row["Definition"]!="":
                             g.add((URIRef(row["Concept"].replace(coreprefix+":",curns)),SKOS.definition,Literal(row["Definition"],lang="en")))
                         if "PROJJSON" in row and row["PROJJSON"]!="":
-                            ldcontext["@context"][row["PROJJSON"]]=row["Concept"]
+                            ldcontext["@context"][row["PROJJSON"]]={"@id":row["Concept"],"@type":"@vocab"},
                         if "OGCJSON" in row and row["OGCJSON"]!="":
-                            ldcontext["@context"][row["OGCJSON"]]=row["Concept"]
+                            ldcontext["@context"][row["OGCJSON"]]={"@id":row["Concept"],"@type":"@vocab"},
                         if "SuperClass" in row and row["SuperClass"]!="":
                             if " " in row["SuperClass"]:
                                 for spl in row["SuperClass"].split(" "):

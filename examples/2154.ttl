@@ -19,27 +19,29 @@
             geosrs:coordinateSystem [ a geosrs:EllipsoidalCoordinateSystem ;
                     rdfs:label "Ellipsoidal 2D CS. Axes: latitude, longitude. Orientations: north, east. UoM: degreeOpen" ;
                     geosrs:axis [ a geosrs:CoordinateSystemAxis ;
-                            rdfs:label "Geodetic longitude" ;
-                            om:hasUnit om:degree ;
-                            geosrs:axisDirection "east" ],
-                        [ a geosrs:CoordinateSystemAxis ;
                             rdfs:label "Geodetic latitude" ;
                             om:hasUnit om:degree ;
-                            geosrs:axisDirection "north" ] ] ;
+                            geosrs:axisDirection "north" ],
+                        [ a geosrs:CoordinateSystemAxis ;
+                            rdfs:label "Geodetic longitude" ;
+                            om:hasUnit om:degree ;
+                            geosrs:axisDirection "east" ] ] ;
             geosrs:datum [ a geosrs:GeodeticDatum ;
                     rdfs:label "Reseau Geodesique Francais 1993 v1" ;
                     geosrs:ellipsoid [ a geosrs:Ellipsoid ;
                             rdfs:label "GRS 1980" ;
                             geosrs:semiMajorAxis [ om:hasUnit "m" ;
-                                    rdf:value 6378137 ] ] ] ] ;
+                                    rdf:value 6378137 ] ] ;
+                    geosrs:primeMeridian [ a geosrs:PrimeMeridian ;
+                            rdfs:label "Greenwich" ] ] ] ;
     geosrs:coordinateSystem [ a geosrs:CartesianCoordinateSystem ;
             rdfs:label "Cartesian 2D CS. Axes: easting, northing (X,Y). Orientations: east, north. UoM: m" ;
             geosrs:axis [ a geosrs:CoordinateSystemAxis ;
-                    rdfs:label "Easting" ;
-                    om:hasUnit om:metre ;
-                    geosrs:axisDirection "east" ],
-                [ a geosrs:CoordinateSystemAxis ;
                     rdfs:label "Northing" ;
                     om:hasUnit om:metre ;
-                    geosrs:axisDirection "north" ] ] .
+                    geosrs:axisDirection "north" ],
+                [ a geosrs:CoordinateSystemAxis ;
+                    rdfs:label "Easting" ;
+                    om:hasUnit om:metre ;
+                    geosrs:axisDirection "east" ] ] .
 

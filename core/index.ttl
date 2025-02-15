@@ -15,10 +15,6 @@ geosrs:CartesianCoordinateSystem a owl:Class ;
     rdfs:subClassOf geosrs:SingleCRS ;
     skos:definition "Coordinate system which gives the position of points relative to n mutually perpendicular axes. Cf. ISO 19111:2007:2007-07, tables 15 and 18."@en .
 
-geosrs:CoordinateOperation a owl:Class ;
-    rdfs:label "coordinate operation"@en ;
-    skos:definition "Mathematical operation on coordinates, based on one-to-one relationship, that changes coordinates from one coordinate reference system to another. Cf. ISO 19111:2007:2007-07, part 11.1, table 42 and annex B.4."@en .
-
 geosrs:CoordinateSystemAxis a owl:Class ;
     rdfs:label "Coordinate System Axis"@en ;
     skos:definition "Axis relative to which a coordinate of a point is specified in a coordinate system. See ISO 19111:2007:2007-07, part 9.3, table 27 and annex B.2.2."@en .
@@ -45,10 +41,6 @@ geosrs:GeographicCRS a owl:Class ;
 geosrs:LinearCoordinateSystem a owl:Class ;
     rdfs:label "Linear Coordinate System"@en ;
     skos:definition "One-dimensional coordinate system in which a linear feature forms the axis."@en .
-
-geosrs:OperationMethod a owl:Class ;
-    rdfs:label "operation method"@en ;
-    skos:definition "Method used to perform an operation on coordinates. See ISO 19111:2007:2007-07, table 48 and annex B.4.5."@en .
 
 geosrs:OperationParameter a owl:Class ;
     rdfs:label "operation parameter"@en ;
@@ -78,6 +70,7 @@ geosrs:ProjectedCRS a owl:Class ;
 
 geosrs:SingleOperation a owl:Class ;
     rdfs:label "single operation"@en ;
+    rdfs:subClassOf geosrs:CoordinateOperation ;
     skos:definition "A non concatenated coordinate operation. Cf. ISO 19111:2007:2007-07, table 43."@en .
 
 geosrs:SphericalCoordinateSystem a owl:Class ;
@@ -87,6 +80,7 @@ geosrs:SphericalCoordinateSystem a owl:Class ;
 
 geosrs:Transformation a owl:Class ;
     rdfs:label "transformation"@en ;
+    rdfs:subClassOf geosrs:Conversion ;
     skos:definition "Coordinate operation in which the two coordinate reference systems are based on different datums. Cf. ISO 19111:2007:2007-07, table 44."@en .
 
 geosrs:VerticalCoordinateSystem a owl:Class ;
@@ -111,10 +105,6 @@ geosrs:baseCRS a owl:ObjectProperty ;
     rdfs:domain geosrs:CRS ;
     rdfs:range geosrs:CRS ;
     skos:definition "The geodetic coordinate reference system on which a projected coordinate reference system is based. Cf. ISO 19111:2007:2007-07, table 11, association role baseCRS."@en .
-
-geosrs:conversion a owl:Class ;
-    rdfs:label "conversion"@en ;
-    skos:definition "Coordinate operation in which both coordinate reference systems are based on the same datum. Cf. ISO 19111:2007:2007-07, table 45 and annex B.4.2."@en .
 
 geosrs:coordinateSystem a owl:ObjectProperty ;
     rdfs:label "coordinate system"@en ;
@@ -158,6 +148,15 @@ geosrs:targetCRS a owl:ObjectProperty ;
     rdfs:range geosrs:CRS ;
     skos:definition "The coordinate reference system associated to the data obtained as output of a given operation. Cf. ISO 19111:2007:2007-07, table 42, named association Target."@en .
 
+geosrs:Conversion a owl:Class ;
+    rdfs:label "Conversion"@en ;
+    rdfs:subClassOf geosrs:CoordinateOperation ;
+    skos:definition "Coordinate operation in which both coordinate reference systems are based on the same datum. Cf. ISO 19111:2007:2007-07, table 45 and annex B.4.2."@en .
+
+geosrs:OperationMethod a owl:Class ;
+    rdfs:label "operation method"@en ;
+    skos:definition "Method used to perform an operation on coordinates. See ISO 19111:2007:2007-07, table 48 and annex B.4.5."@en .
+
 geosrs:OrdinalCoordinateSystem a owl:Class ;
     rdfs:label "Ordinal Coordinate System"@en ;
     rdfs:subClassOf geosrs:CoordinateSystem ;
@@ -171,6 +170,11 @@ geosrs:SpatialReferenceSystem a owl:Class ;
     rdfs:label "Spatial Reference System"@en ;
     rdfs:subClassOf <https://w3id.org/geosrs/srs/ReferenceSystem> ;
     skos:definition "A reference system allowing the description of a position."@en .
+
+geosrs:CoordinateOperation a owl:Class ;
+    rdfs:label "coordinate operation"@en ;
+    rdfs:subClassOf geosrs:OperationMethod ;
+    skos:definition "Mathematical operation on coordinates, based on one-to-one relationship, that changes coordinates from one coordinate reference system to another. Cf. ISO 19111:2007:2007-07, part 11.1, table 42 and annex B.4."@en .
 
 geosrs:Ellipsoid a owl:Class ;
     rdfs:label "Ellipsoid"@en ;

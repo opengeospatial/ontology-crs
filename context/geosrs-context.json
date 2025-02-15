@@ -72,7 +72,7 @@
     "ConformalProjection": "geosrs_projection:ConformalProjection",
     "ConicalCoordinateSystem": "geosrs_cs:ConicalCoordinateSystem",
     "ConicalProjection": "geosrs_projection:ConicalProjection",
-    "Conversion": "geosrs:conversion",
+    "Conversion": "geosrs:Conversion",
     "CoordinateOperation": "geosrs:CoordinateOperation",
     "CoordinateSystem": "geosrs:CoordinateSystem",
     "CoordinateSystemAxis": "geosrs:CoordinateSystemAxis",
@@ -404,7 +404,7 @@
     "clrk80ign": "geosrs_datum:Clarke1880IGN",
     "col_urban": "geosrs_projection:ColombiaUrbanProjection",
     "collg": "geosrs_projection:CollignonProjection",
-    "conversion": "geosrs:conversion",
+    "conversion": "geosrs:Conversion",
     "coordinateSystem": {
       "@id": "geosrs:coordinateSystem",
       "@type": "@vocab"

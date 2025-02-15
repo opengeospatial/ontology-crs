@@ -1,4 +1,4 @@
-# CRS Ontology
+# CRS Ontology 
   
 ## Introduction
 This repository is used to work toward the development of an official OGC web ontology for coordinate reference systems (CRS). 

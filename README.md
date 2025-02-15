@@ -9,7 +9,7 @@ At present, we're simply working on documenting the benefits of a CRS ontology, 
 
 **coordinate system:** A coordinate system is a set of mathematical rules for specifying how coordinates are to be assigned to points.
 
-**datum:**    
+**datum:**     
 A datum is a parameter or set of parameters that define the position of the origin, the scale, and the orientation of a coordinate system.
 
 **coordinate reference system:**

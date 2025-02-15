@@ -1,1 +1,6 @@
+@prefix geosrs: <https://w3id.org/geosrs/geosrs/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+[] a geosrs:ProjectedCRS ;
+    rdfs:label "RGF93 v1 / Lambert-93" .
 

@@ -21,10 +21,25 @@ geosrs_datum:AustralianNationalSpheroid a owl:NamedIndividual,
     rdfs:label "Australian National Spheroid"@en ;
     skos:definition "Australian National Spheroid"@en .
 
+geosrs_datum:CGCS2000 a owl:NamedIndividual,
+        geosrs:Ellipsoid ;
+    rdfs:label "CGCS2000"@en ;
+    skos:definition "CGCS2000 Spheroid"@en .
+
+geosrs_datum:Clarke1858 a owl:NamedIndividual,
+        geosrs:Ellipsoid ;
+    rdfs:label "Clarke 1858"@en ;
+    skos:definition "Clarke 1858 Spheroid"@en .
+
 geosrs_datum:Clarke1866 a owl:NamedIndividual,
         geosrs:Ellipsoid ;
     rdfs:label "Clarke 1866"@en ;
     skos:definition "Clarke 1866 Spheroid"@en .
+
+geosrs_datum:Clarke1880 a owl:NamedIndividual,
+        geosrs:Ellipsoid ;
+    rdfs:label "Clarke 1880"@en ;
+    skos:definition "Clarke 1880 Spheroid"@en .
 
 geosrs_datum:Danish1876 a owl:NamedIndividual,
         geosrs:Ellipsoid ;
@@ -54,6 +69,26 @@ geosrs_datum:Everest1930 a owl:NamedIndividual,
         geosrs:Ellipsoid ;
     rdfs:label "Everest 1930"@en ;
     skos:definition "Everest 1930 Spheroid"@en .
+
+geosrs_datum:GRS1980 a owl:NamedIndividual,
+        geosrs:Ellipsoid ;
+    rdfs:label "GRS 1980"@en ;
+    skos:definition "GRS 1980 Ellipsoid"@en .
+
+geosrs_datum:GRS67 a owl:NamedIndividual,
+        geosrs:Ellipsoid ;
+    rdfs:label "GRS 67"@en ;
+    skos:definition "GRS 67 Ellipsoid"@en .
+
+geosrs_datum:GSK-2011 a owl:NamedIndividual,
+        geosrs:Ellipsoid ;
+    rdfs:label "GSK-2011"@en ;
+    skos:definition "GSK-2011 Spheroid"@en .
+
+geosrs_datum:Helmert1906 a owl:NamedIndividual,
+        geosrs:Ellipsoid ;
+    rdfs:label "Helmert 1906"@en ;
+    skos:definition "Helmert 1906 Spheroid"@en .
 
 geosrs_datum:IAG1975 a owl:NamedIndividual,
         geosrs:Ellipsoid ;
@@ -93,6 +128,11 @@ geosrs_datum:TemporalDatum a owl:Class ;
 geosrs_datum:TriaxialEllipsoid a owl:Class ;
     rdfs:label "Triaxial Ellipsoid"@en ;
     skos:definition "Surface of an analytic ellipsoid defined by three axes of different length. Also referred as scalene ellipsoid."@en .
+
+geosrs_datum:Zach1812 a owl:NamedIndividual,
+        geosrs:Ellipsoid ;
+    rdfs:label "Zach 1812"@en ;
+    skos:definition "Zach 1812 Spheroid"@en .
 
 geosrs_datum:inverseFlattening a owl:DatatypeProperty ;
     rdfs:label "inverse flattening"@en ;

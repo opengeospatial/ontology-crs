@@ -17,17 +17,18 @@ ldcontext={"@context":{"rdfs":"http://www.w3.org/2000/01/rdf-schema#","rdf":"htt
                        "skos":"http://www.w3.org/2004/02/skos/core#",
                        "name":"rdfs:label", "value":"rdf:value",#"method":"geosrs:coordinateOperation",
                        "scope":"skos:scopeNote",#"direction":"geosrs:axisDirection",
-                       "abbreviation":"skos:altLabel",
+                       "abbreviation":"skos:altLabel","alias":"skos:altLabel",
                        #"down:":"geosrs:down","down:":"geosrs:up","north:":"geosrs:north","south:":"geosrs:south",
                        "centimetre":"om:centimetre", "millimetre":"om:millimetre","unity":"om:unity",
-                       "kilometre":"om:kilometre", "degree":"om:degree","parameters":"geosrs:OperationParameter",
-                       "metre":"om:metre","radian":"om:radian",#"base_crs":"geosrs:baseCRS",
+                       "kilometre":"om:kilometre", "deg":"om:degree","degree":"om:degree","parameters":"geosrs:OperationParameter",
+                       "m":"om:metre","metre":"om:metre","radian":"om:radian",#"base_crs":"geosrs:baseCRS",
                        #"coordinate_system":"geosrs:CoordinateSystem","ellipsoidal":"geosrs:EllipsoidalCoordinateSystem",
                        #"Cartesian":"geosrs:CartesianCoordinateSystem","GeodeticReferenceFrame":"geosrs:GeodeticDatum",
                        #"datum_ensemble":"geosrs:datum",
                        "entityType":{"@id":"rdf:type","@type":"@vocab"},
                        "subtype":{"@id":"rdf:type","@type":"@vocab"},
                        "type":{"@id":"rdf:type","@type":"@vocab"},
+                       "axisUnitID":{"@id":"om:hasUnit","@type":"@vocab"},
                        "unit":{"@id":"om:hasUnit","@type":"@vocab"}
             }
 }

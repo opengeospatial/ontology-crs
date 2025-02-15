@@ -6,7 +6,7 @@ geosrs:axis,geosrs:CoordinateSystem,geosrs:Axis,axis,The property relates a coor
 geosrs:baseCRS,geosrs:CRS,geosrs:CRS,base CRS,"The geodetic coordinate reference system on which a projected coordinate reference system is based. Cf. ISO 19111:2007:2007-07, table 11, association role baseCRS.",,iso19111:baseCRS,ign:baseCRS,,,base_crs,baseCRS,Core Ontology,"The geodetic coordinate reference system on which a projected coordinate reference system is based. Cf. ISO 19111:2007:2007-07, table 11, association role baseCRS.",
 ,,,,,,iso19111:calendar,,,,,,,,
 ,,,,,,iso19111:cartesianCS,ign:cartesianCS,,,,,,"The cartesian coordinate system used by some geodetic or projected coordinate reference system. Cf. ISO 19111:2007:2007-07, tables 10 et 11, association roles coordinateSystem.",
-,,,,,,,ign:conversion,,,,,,"The conversion used to define a projected coordinate reference system. Cf. ISO 19111:2007:2007-07, table 7, named association Definition.",
+,,,,,,,ign:conversion,,,conversion,derivingConversion,,"The conversion used to define a projected coordinate reference system. Cf. ISO 19111:2007:2007-07, table 7, named association Definition.",
 ,,,,,,iso19111:componentReferenceSystem,,,,,,,,
 ,,,,,,iso19111:conventionalRS,,,,,,,,
 ,,,,,,iso19111:coordinateOperationAccuracy,,,,,,,,

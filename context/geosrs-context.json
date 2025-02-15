@@ -381,6 +381,10 @@
     "direction": "geosrs:axisDirection",
     "ellipsoid": "geosrs:ellipsoid",
     "ellipsoidal": "geosrs:EllipsoidalCoordinateSystem",
+    "entityType": {
+      "@id": "rdf:type",
+      "@type": "@vocab"
+    },
     "eqdc": "geosrs:EquidistantConicProjection",
     "eqearth": "geosrs:EqualEarthProjection",
     "evrst30": "geosrs:Everest1930",

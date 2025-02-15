@@ -73,6 +73,7 @@
     "CiricIProjection": "geosrs_projection:CiricIProjection",
     "Clarke 1858": "geosrs:Clarke1858",
     "Clarke 1880": "geosrs:Clarke1880",
+    "Clarke 1880 (Arc)": "geosrs:Clarke1880ARC",
     "CollignonButterflyProjection": "geosrs_projection:CollignonButterflyProjection",
     "CollignonProjection": "geosrs_projection:CollignonProjection",
     "ColombiaUrbanProjection": "geosrs_projection:ColombiaUrbanProjection",
@@ -389,6 +390,9 @@
     "VerticalDatum": "geosrs:VerticalDatum",
     "VerticalPerspectiveProjection": "geosrs_projection:VerticalPerspectiveProjection",
     "VitkovskyIProjection": "geosrs_projection:VitkovskyIProjection",
+    "WGS66": "geosrs:WGS66",
+    "WGS72": "geosrs:WGS72",
+    "WGS84": "geosrs:WGS84",
     "WagnerIIIProjection": "geosrs_projection:WagnerIIIProjection",
     "WagnerIIProjection": "geosrs_projection:WagnerIIProjection",
     "WagnerIProjection": "geosrs_projection:WagnerIProjection",
@@ -453,6 +457,7 @@
     ],
     "centimetre": "om:centimetre",
     "clrk66": "geosrs:Clarke1866",
+    "clrk80ign": "geosrs:Clarke1880IGN",
     "col_urban": [
       {
         "@id": "geosrs:ColombiaUrbanProjection",
@@ -517,6 +522,7 @@
     "inverseFlattening": "geosrs:inverseFlattening",
     "inverse_flattening": "geosrs:inverseFlattening",
     "kilometre": "om:kilometre",
+    "krass\"": "geosrs:Krassowsky1940",
     "krovak": [
       {
         "@id": "geosrs:Krovak",

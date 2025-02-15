@@ -41,6 +41,16 @@ geosrs_datum:Clarke1880 a owl:NamedIndividual,
     rdfs:label "Clarke 1880"@en ;
     skos:definition "Clarke 1880 Spheroid"@en .
 
+geosrs_datum:Clarke1880ARC a owl:NamedIndividual,
+        geosrs:Ellipsoid ;
+    rdfs:label "Clarke 1880 (Arc)"@en ;
+    skos:definition "Clarke 1880 (Arc) Spheroid"@en .
+
+geosrs_datum:Clarke1880IGN a owl:NamedIndividual,
+        geosrs:Ellipsoid ;
+    rdfs:label "Clarke 1880 (Ign)"@en ;
+    skos:definition "Clarke 1880 (Ing) Spheroid"@en .
+
 geosrs_datum:Danish1876 a owl:NamedIndividual,
         geosrs:Ellipsoid ;
     rdfs:label "Danish 1876"@en ;
@@ -100,6 +110,11 @@ geosrs_datum:International1924 a owl:NamedIndividual,
     rdfs:label "International 1924"@en ;
     skos:definition "International 1924 Ellipsoid"@en .
 
+geosrs_datum:Krassowsky1940 a owl:NamedIndividual,
+        geosrs:Ellipsoid ;
+    rdfs:label "Krassowsky 1940"@en ;
+    skos:definition "Krassowsky 1940 Spheroid"@en .
+
 geosrs_datum:PZ90 a owl:NamedIndividual,
         geosrs:Ellipsoid ;
     rdfs:label "PS 90"@en ;
@@ -128,6 +143,21 @@ geosrs_datum:TemporalDatum a owl:Class ;
 geosrs_datum:TriaxialEllipsoid a owl:Class ;
     rdfs:label "Triaxial Ellipsoid"@en ;
     skos:definition "Surface of an analytic ellipsoid defined by three axes of different length. Also referred as scalene ellipsoid."@en .
+
+geosrs_datum:WGS66 a owl:NamedIndividual,
+        geosrs:Ellipsoid ;
+    rdfs:label "WGS 66"@en ;
+    skos:definition "WGS 66 Spheroid"@en .
+
+geosrs_datum:WGS72 a owl:NamedIndividual,
+        geosrs:Ellipsoid ;
+    rdfs:label "WGS 72"@en ;
+    skos:definition "WGS 72 Spheroid"@en .
+
+geosrs_datum:WGS84 a owl:NamedIndividual,
+        geosrs:Ellipsoid ;
+    rdfs:label "WGS 84"@en ;
+    skos:definition "WGS 84 Spheroid"@en .
 
 geosrs_datum:Zach1812 a owl:NamedIndividual,
         geosrs:Ellipsoid ;

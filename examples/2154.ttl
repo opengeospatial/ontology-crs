@@ -16,32 +16,32 @@
     geosrs:baseCRS [ a geosrs:GeographicCRS ;
             rdfs:label "RGF93 v1" ;
             dc:identifier "EPSG:4171" ;
-            geosrs:coordinateSystem [ a geosrs:EllipsoidalCoordinateSystem ;
+            geosrs:coordinateSystem [ a <file:///home/runner/work/ontology-crs/ontology-crs/examples/EllipsoidalCS> ;
                     rdfs:label "Ellipsoidal 2D CS. Axes: latitude, longitude. Orientations: north, east. UoM: degreeOpen" ;
                     geosrs:axis [ a geosrs:CoordinateSystemAxis ;
-                            rdfs:label "Geodetic longitude" ;
-                            om:hasUnit om:degree ;
-                            geosrs:axisDirection "east" ],
-                        [ a geosrs:CoordinateSystemAxis ;
                             rdfs:label "Geodetic latitude" ;
                             om:hasUnit om:degree ;
-                            geosrs:axisDirection "north" ] ] ;
-            geosrs:datum [ a geosrs:GeodeticDatum ;
+                            geosrs:axisDirection "north" ],
+                        [ a geosrs:CoordinateSystemAxis ;
+                            rdfs:label "Geodetic longitude" ;
+                            om:hasUnit om:degree ;
+                            geosrs:axisDirection "east" ] ] ;
+            geosrs:datum [ a <file:///home/runner/work/ontology-crs/ontology-crs/examples/GeodeticReferenceFrame> ;
                     rdfs:label "Reseau Geodesique Francais 1993 v1" ;
                     geosrs:ellipsoid [ a geosrs:Ellipsoid ;
                             rdfs:label "GRS 1980" ;
-                            geosrs:semiMajorAxis [ om:hasUnit "m" ;
+                            geosrs:semiMajorAxis [ om:hasUnit om:metre ;
                                     rdf:value 6378137 ] ] ;
                     geosrs:primeMeridian [ a geosrs:PrimeMeridian ;
                             rdfs:label "Greenwich" ] ] ] ;
-    geosrs:coordinateSystem [ a geosrs:CartesianCoordinateSystem ;
+    geosrs:coordinateSystem [ a <file:///home/runner/work/ontology-crs/ontology-crs/examples/CartesianCS> ;
             rdfs:label "Cartesian 2D CS. Axes: easting, northing (X,Y). Orientations: east, north. UoM: m" ;
             geosrs:axis [ a geosrs:CoordinateSystemAxis ;
-                    rdfs:label "Northing" ;
-                    om:hasUnit om:metre ;
-                    geosrs:axisDirection "north" ],
-                [ a geosrs:CoordinateSystemAxis ;
                     rdfs:label "Easting" ;
                     om:hasUnit om:metre ;
-                    geosrs:axisDirection "east" ] ] .
+                    geosrs:axisDirection "east" ],
+                [ a geosrs:CoordinateSystemAxis ;
+                    rdfs:label "Northing" ;
+                    om:hasUnit om:metre ;
+                    geosrs:axisDirection "north" ] ] .
 

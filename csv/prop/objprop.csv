@@ -2,7 +2,7 @@ Concept,Domain,Range,Label,Definition,Comment,ISO 19111,IGN 2019,Proj4RDF,GeoSPA
 ,,,,,,iso19111:affineCS,,,,,,,,
 ,,,,,,,,geocrs:area_of_use,,,,,,
 geosrs:axis,geosrs:CoordinateSystem,geosrs:Axis,axis,The property relates a coordinate system to one of its axis,,iso19111:axis,ign:axis,geocrs:axis,,axis,axis,Core Ontology,"An axis used by some ellipsoidal or cartesian coordinate system. Cf. ISO 19111:2007:2007-07, table 17, association role axis.",
-geosrs:axisDirection,geosrs:Axis,Axis direction,"The direction of an axis. Cf. ISO 19111:2007:2007-07, table 27, attribute coordinate system axis direction.",,,ign:axisDirection,,,axis_direction,axisDirection,CS,,"The direction of an axis. Cf. ISO 19111:2007:2007-07, table 27, attribute coordinate system axis direction."
+geosrs:axisDirection,geosrs:Axis,Axis direction,"The direction of an axis. Cf. ISO 19111:2007:2007-07, table 27, attribute coordinate system axis direction.",,,,ign:axisDirection,,,axis_direction,axisDirection,CS,,"The direction of an axis. Cf. ISO 19111:2007:2007-07, table 27, attribute coordinate system axis direction."
 ,,,,,,iso19111:axisUnitID,,,,,,,,
 geosrs:baseCRS,geosrs:CRS,geosrs:CRS,base CRS,"The geodetic coordinate reference system on which a projected coordinate reference system is based. Cf. ISO 19111:2007:2007-07, table 11, association role baseCRS.",,iso19111:baseCRS,ign:baseCRS,,,base_crs,baseCRS,Core Ontology,"The geodetic coordinate reference system on which a projected coordinate reference system is based. Cf. ISO 19111:2007:2007-07, table 11, association role baseCRS.",
 ,,,,,,iso19111:calendar,,,,,,,,

@@ -2,7 +2,7 @@ Concept,Domain,Range,Label,Definition,Comment,ISO 19111,IGN 2019,Proj4RDF,GeoSPA
 ,,,,,,iso19111:affineCS,,,,,,,,
 ,,,,,,,,geocrs:area_of_use,,,,,,
 geosrs:axis,geosrs:CoordinateSystem,geosrs:Axis,axis,The property relates a coordinate system to one of its axis,,iso19111:axis,ign:axis,geocrs:axis,,axis,axis,Core Ontology,"An axis used by some ellipsoidal or cartesian coordinate system. Cf. ISO 19111:2007:2007-07, table 17, association role axis.",
-geosrs:axisDirection,geosrs:Axis,geosrs:AxisDirection,Axis direction,"The direction of an axis. Cf. ISO 19111:2007:2007-07, table 27, attribute coordinate system axis direction.",,,ign:axisDirection,,,axis_direction,axisDirection,CS,,"The direction of an axis. Cf. ISO 19111:2007:2007-07, table 27, attribute coordinate system axis direction."
+geosrs:axisDirection,geosrs:Axis,geosrs:AxisDirection,Axis direction,"The direction of an axis. Cf. ISO 19111:2007:2007-07, table 27, attribute coordinate system axis direction.",,,ign:axisDirection,geocrs:direction,,direction,axisDirection,CS,,"The direction of an axis. Cf. ISO 19111:2007:2007-07, table 27, attribute coordinate system axis direction."
 ,,,,,,iso19111:axisUnitID,,,,,,,,
 geosrs:baseCRS,geosrs:CRS,geosrs:CRS,base CRS,"The geodetic coordinate reference system on which a projected coordinate reference system is based. Cf. ISO 19111:2007:2007-07, table 11, association role baseCRS.",,iso19111:baseCRS,ign:baseCRS,,,base_crs,baseCRS,Core Ontology,"The geodetic coordinate reference system on which a projected coordinate reference system is based. Cf. ISO 19111:2007:2007-07, table 11, association role baseCRS.",
 ,,,,,,iso19111:calendar,,,,,,,,
@@ -18,7 +18,6 @@ geosrs:datum,geosrs:CRS,geosrs:Datum,datum,The property relates a coordinate ref
 ,,,,,,iso19111:datumDefiningParameter,,,,,,Datum,,parameter used to define the parametric datum
 ,,,,,,iso19111:datumEnsemble,,,,datum_ensemble,datumEnsemble,Datum,,
 geosrs:derivingConversion,geosrs:CRS,geosrs:CRS,deriving conversion,,,iso19111:derivingConversion,,,,,derivingConversion,CO,,
-geosrs:axisDirection,geosrs:Axis,geosrs:AxisDirection,axisdirection,The property relates a coordinate system axis to its axis direction,,iso19111:axisDirection,,geocrs:direction,,direction,axisDirection,Core Ontology,,
 ,,,,,,,ign:domainOfValidity,,,,,,"Geographic area or time interval in which the referring object is valid. Cf. ISO 19111:2007:2007-07, tables 4, 33 and 42, attribute domainOfValidity.",
 geosrs:ellipsoid,geosrs:Datum,geosrs:Ellipsoid,ellipsoid,The properties relates a datum to its ellipsoid definition,,iso19111:ellipsoid,ign:ellipsoid,,,ellipsoid,ellipsoid,Core Ontology,"The ellipsoid used by a geodetic datum. Cf. ISO 19111:2007:2007-07, table 34, association role ellipsoid.",
 ,,,,,,iso19111:ellipsoidalCS,ign:ellipsoidalCS,,,,,,"The ellipsoidal coordinate system used by a geodetic coordinate reference system. Cf. ISO 19111:2007:2007-07, table 10, named association CoordinateSystem.",
@@ -32,6 +31,7 @@ geosrs:ellipsoid,geosrs:Datum,geosrs:Ellipsoid,ellipsoid,The properties relates 
 ,,,,,,,ign:includesSingleCRS,,,,,,"Indicates the single coordinate reference systems used by a compound coordinate reference system. Cf. ISO 19111:2007:2007-07, table 6, association role componentReferenceSystem.",
 ,,,,,,,,geocrs:includesSRS,,,,,,
 ,,,,,,iso19111:linearCS,,,,,,CS,,
+geosrs:method,geosrs:CRS,geosrs:CoordinateOperation,method,,,iso19111:method,,,,method,method,CO,,
 ,,,,,,iso19111:modifiedCoordinate,,,,,,,,
 ,,,,,,iso19111:origin,,,,,,,,
 ,,,,,,iso19111:ordinalCS,,,,,,CS,,

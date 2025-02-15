@@ -295,9 +295,9 @@ for file in os.listdir(directory):
                             if "Definition" in row and row["Definition"]!="":
                                 gcore.add((URIRef(row["Concept"].replace(coreprefix+":",geocrsNS)),SKOS.definition,Literal(row["Definition"],lang="en")))
                             if "PROJJSON" in row and row["PROJJSON"]!="":
-                                ldcontext["@context"][row["PROJJSON"]]=row["Concept"]
+                                ldcontext["@context"][row["PROJJSON"]]=row["Concept"].replace("geosrs:", getPrefixForClass(row["Concept"],classToPrefix)+":")
                             if "OGCJSON" in row and row["OGCJSON"]!="":
-                                ldcontext["@context"][row["OGCJSON"]]=row["Concept"]
+                                ldcontext["@context"][row["OGCJSON"]]=row["Concept"].replace("geosrs:", getPrefixForClass(row["Concept"],classToPrefix)+":")
                         else:
                             if row["Module"].lower() in exont:
                                 if row["Module"]!="":
@@ -312,9 +312,9 @@ for file in os.listdir(directory):
                                 if "Definition" in row and row["Definition"]!="":
                                     exont[row["Module"].lower()].add((URIRef(row["Concept"].replace(coreprefix+":",curns+str(row["Module"]).lower()+"/")),SKOS.definition,Literal(row["Definition"],lang="en")))
                                 if "PROJJSON" in row and row["PROJJSON"]!="":
-                                    ldcontext["@context"][row["PROJJSON"]]=row["Concept"]
+                                    ldcontext["@context"][row["PROJJSON"]]=row["Concept"].replace("geosrs:", getPrefixForClass(row["Concept"],classToPrefix)+":")
                                 if "OGCJSON" in row and row["OGCJSON"]!="":
-                                    ldcontext["@context"][row["OGCJSON"]]=row["Concept"]
+                                    ldcontext["@context"][row["OGCJSON"]]=row["Concept"].replace("geosrs:", getPrefixForClass(row["Concept"],classToPrefix)+":")
             g.serialize(destination=filename.replace(".csv","")+".ttl") 
     else:
         continue

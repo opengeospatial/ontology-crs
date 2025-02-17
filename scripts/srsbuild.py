@@ -14,11 +14,11 @@ exont={}
 
 ldcontext={"@context":{"rdfs":"http://www.w3.org/2000/01/rdf-schema#","rdf":"http://www.w3.org/1999/02/22-rdf-syntax-ns#",
                         "om": "http://www.ontology-of-units-of-measure.org/resource/om-2/","geosrs":"https://w3id.org/geosrs#",
-                       "skos":"http://www.w3.org/2004/02/skos/core#",
+                       "skos":"http://www.w3.org/2004/02/skos/core#","geo":"http://www.opengis.net/ont/geosparql#",
                        "dc":"http://purl.org/dc/elements/1.1/",
                        "name":"rdfs:label", "value":"rdf:value",
                        "scope":"skos:scopeNote","secondDefiningParameter":"geosrs:operationParameter",
-                       "abbreviation":"skos:altLabel","alias":"skos:altLabel",
+                       "abbreviation":"skos:altLabel","alias":"skos:altLabel","geographicElement":"geo:hasGeometry",
                        "centimetre":"om:centimetre", "millimetre":"om:millimetre","unity":"om:unity",
                        "kilometre":"om:kilometre", "deg":"om:degree","degree":"om:degree","parameters":"geosrs:operationParameter",
                        "m":"om:metre","metre":"om:metre","radian":"om:radian",

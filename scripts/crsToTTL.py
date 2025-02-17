@@ -400,6 +400,7 @@ print(args)
 mapp=pyproj.list.get_proj_operations_map()
 if str(args.input).startswith("EPSG"):
     curcrs=CRS.from_epsg(int(str(args.input).replace("EPSG:","")))
+    print(curcrs.area_of_use)
 if args.outputformat=="wkt":
     thewkt=curcrs.to_wkt()
     f = open(str(args.input).replace(":","_")+".wkt", "a")

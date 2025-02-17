@@ -118,6 +118,12 @@ geosrs:datum a owl:ObjectProperty ;
     rdfs:range geosrs:Datum ;
     skos:definition "The property relates a coordinate reference system to a datum"@en .
 
+geosrs:domainOfValidity a owl:ObjectProperty ;
+    rdfs:label "domain of validity"@en ;
+    rdfs:domain geosrs:CRS ;
+    rdfs:range geosrs:AreaOfUse ;
+    skos:definition "Geographic area or time interval in which the referring object is valid. Cf. ISO 19111:2007:2007-07, tables 4, 33 and 42, attribute domainOfValidity."@en .
+
 geosrs:ellipsoid a owl:ObjectProperty ;
     rdfs:label "ellipsoid"@en ;
     rdfs:domain geosrs:Datum ;
@@ -147,6 +153,9 @@ geosrs:targetCRS a owl:ObjectProperty ;
     rdfs:domain geosrs:CRS ;
     rdfs:range geosrs:CRS ;
     skos:definition "The coordinate reference system associated to the data obtained as output of a given operation. Cf. ISO 19111:2007:2007-07, table 42, named association Target."@en .
+
+geosrs:AreaOfUse a owl:Class ;
+    rdfs:label "Area of Use"@en .
 
 geosrs:Conversion a owl:Class ;
     rdfs:label "Conversion"@en ;

@@ -18,6 +18,7 @@
     "ApianIIProjection": "geosrs_projection:ApianIIProjection",
     "ArchaicProjection": "geosrs_projection:ArchaicProjection",
     "ArdenCloseProjection": "geosrs_projection:ArdenCloseProjection",
+    "AreaOfUse": "geosrs:AreaOfUse",
     "ArmadilloProjection": "geosrs_projection:ArmadilloProjection",
     "AtlantisProjection": "geosrs_projection:AtlantisProjection",
     "AugustEpicycloidalProjection": "geosrs_projection:AugustEpicycloidalProjection",
@@ -248,6 +249,7 @@
     "NellProjection": "geosrs_projection:NellProjection",
     "NicolosiGlobularProjection": "geosrs_projection:NicolosiGlobularProjection",
     "NordicProjection": "geosrs_projection:NordicProjection",
+    "ObjectDomain": "geosrs:AreaOfUse",
     "ObliqueCoordinateSystem": "geosrs_cs:ObliqueCoordinateSystem",
     "ObliqueCylindricalEqualAreaProjection": "geosrs_projection:ObliqueCylindricalEqualAreaProjection",
     "ObliqueMercatorProjection": "geosrs_projection:ObliqueMercatorProjection",
@@ -377,6 +379,10 @@
     "aea": "geosrs_projection:AlbersEqualAreaProjection",
     "aitoff": "geosrs_projection:AitoffProjection",
     "alias": "skos:altLabel",
+    "area_of_use": {
+      "@id": "geosrs:domainOfValidity",
+      "@type": "@vocab"
+    },
     "aust_SA": "geosrs_datum:AustralianNationalSpheroid",
     "axis": "geosrs:axis",
     "axisDirection": {
@@ -422,6 +428,11 @@
       "@id": "geosrs:axisDirection",
       "@type": "@vocab"
     },
+    "domain": {
+      "@id": "geosrs:domainOfValidity",
+      "@type": "@vocab"
+    },
+    "domain_of_validity": "geosrs:domainOfValidity",
     "down": "geosrs_cs:down",
     "east": "geosrs_cs:east",
     "ellipsoid": "geosrs:ellipsoid",
@@ -433,6 +444,8 @@
     "eqdc": "geosrs_projection:EquidistantConicProjection",
     "eqearth": "geosrs_projection:EqualEarthProjection",
     "evrst30": "geosrs_datum:Everest1930",
+    "geo": "http://www.opengis.net/ont/geosparql#",
+    "geographicElement": "geo:hasGeometry",
     "geosrs": "https://w3id.org/geosrs/geosrs/",
     "geosrs_application": "https://w3id.org/geosrs/application/",
     "geosrs_co": "https://w3id.org/geosrs/co/",

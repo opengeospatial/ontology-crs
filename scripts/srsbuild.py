@@ -16,7 +16,7 @@ ldcontext={"@context":{"rdfs":"http://www.w3.org/2000/01/rdf-schema#","rdf":"htt
                         "om": "http://www.ontology-of-units-of-measure.org/resource/om-2/","geosrs":"https://w3id.org/geosrs#",
                        "skos":"http://www.w3.org/2004/02/skos/core#","geo":"http://www.opengis.net/ont/geosparql#",
                        "dc":"http://purl.org/dc/elements/1.1/","sf":"http://www.opengis.net/ont/sf#",
-                       "name":"rdfs:label", "value":"rdf:value","
+                       "name":"rdfs:label", "value":"rdf:value",
                        "scope":"skos:scopeNote","secondDefiningParameter":"geosrs:operationParameter",
                        "abbreviation":"skos:altLabel","alias":"skos:altLabel","geographicElement":"geo:hasBoundingBox","GeographicBoundingBox":"sf:Polygon",
                        "centimetre":"om:centimetre", "millimetre":"om:millimetre","unity":"om:unity",

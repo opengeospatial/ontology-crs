@@ -246,9 +246,9 @@ for file in os.listdir(directory):
                                 if objprop:
                                     if " " in row["PROJJSON"].strip():
                                         for spl in row["PROJJSON"].strip().split(" "):
-                                            ldcontext["@context"][spl]={"@id":row["Concept"].replace("geosrs:", getPrefixForClass(row["Concept"],classToPrefix)+":"),"@type":"@vocab","@context":{"name":"@id"}}
+                                            ldcontext["@context"][spl]={"@id":row["Concept"].replace("geosrs:", getPrefixForClass(row["Concept"],classToPrefix)+":"),"@type":"@vocab"}
                                     else:
-                                       ldcontext["@context"][row["PROJJSON"]]={"@id":row["Concept"].replace("geosrs:", getPrefixForClass(row["Concept"],classToPrefix)+":"),"@type":"@vocab","@context":{"name":"@id"}}                                                                       
+                                       ldcontext["@context"][row["PROJJSON"]]={"@id":row["Concept"].replace("geosrs:", getPrefixForClass(row["Concept"],classToPrefix)+":"),"@type":"@vocab"}                                                                       
                                 else:                                   
                                     if " " in row["PROJJSON"].strip():
                                         for spl in row["PROJJSON"].strip().split(" "):
@@ -259,9 +259,9 @@ for file in os.listdir(directory):
                                 if objprop:
                                     if " " in row["OGCJSON"].strip():
                                         for spl in row["OGCJSON"].strip().split(" "):
-                                            ldcontext["@context"][spl]={"@id":row["Concept"].replace("geosrs:", getPrefixForClass(row["Concept"],classToPrefix)+":"),"@type":"@vocab","@context":{"name":"@id"}}
+                                            ldcontext["@context"][spl]={"@id":row["Concept"].replace("geosrs:", getPrefixForClass(row["Concept"],classToPrefix)+":"),"@type":"@vocab"}
                                     else:
-                                       ldcontext["@context"][row["OGCJSON"]]={"@id":row["Concept"].replace("geosrs:", getPrefixForClass(row["Concept"],classToPrefix)+":"),"@type":"@vocab","@context":{"name":"@id"}}  
+                                       ldcontext["@context"][row["OGCJSON"]]={"@id":row["Concept"].replace("geosrs:", getPrefixForClass(row["Concept"],classToPrefix)+":"),"@type":"@vocab"}  
                                 else:
                                     if " " in row["OGCJSON"].strip():
                                         for spl in row["OGCJSON"].strip().split(" "):
@@ -288,9 +288,9 @@ for file in os.listdir(directory):
                                     if objprop:
                                         if " " in row["PROJJSON"].strip():
                                             for spl in row["PROJJSON"].strip().split(" "):
-                                                ldcontext["@context"][spl]={"@id":row["Concept"].replace("geosrs:", getPrefixForClass(row["Concept"],classToPrefix)+":"),"@type":"@vocab","@context":{"name":"@id"}}
+                                                ldcontext["@context"][spl]={"@id":row["Concept"].replace("geosrs:", getPrefixForClass(row["Concept"],classToPrefix)+":"),"@type":"@vocab"}
                                         else:
-                                           ldcontext["@context"][row["PROJJSON"]]={"@id":row["Concept"].replace("geosrs:", getPrefixForClass(row["Concept"],classToPrefix)+":"),"@type":"@vocab","@context":{"name":"@id"}}                                                                       
+                                           ldcontext["@context"][row["PROJJSON"]]={"@id":row["Concept"].replace("geosrs:", getPrefixForClass(row["Concept"],classToPrefix)+":"),"@type":"@vocab"}                                                                       
                                     else:                                   
                                         if " " in row["PROJJSON"].strip():
                                             for spl in row["PROJJSON"].strip().split(" "):
@@ -301,9 +301,9 @@ for file in os.listdir(directory):
                                     if objprop:
                                         if " " in row["OGCJSON"].strip():
                                             for spl in row["OGCJSON"].strip().split(" "):
-                                                ldcontext["@context"][spl]={"@id":row["Concept"].replace("geosrs:", getPrefixForClass(row["Concept"],classToPrefix)+":"),"@type":"@vocab","@context":{"name":"@id"}}
+                                                ldcontext["@context"][spl]={"@id":row["Concept"].replace("geosrs:", getPrefixForClass(row["Concept"],classToPrefix)+":"),"@type":"@vocab"}
                                         else:
-                                           ldcontext["@context"][row["OGCJSON"]]={"@id":row["Concept"].replace("geosrs:", getPrefixForClass(row["Concept"],classToPrefix)+":"),"@type":"@vocab","@context":{"name":"@id"}}  
+                                           ldcontext["@context"][row["OGCJSON"]]={"@id":row["Concept"].replace("geosrs:", getPrefixForClass(row["Concept"],classToPrefix)+":"),"@type":"@vocab"} #"@context":{"name":"@id"}  
                                     else:
                                         if " " in row["OGCJSON"].strip():
                                             for spl in row["OGCJSON"].strip().split(" "):

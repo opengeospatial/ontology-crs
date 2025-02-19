@@ -395,18 +395,12 @@
     "aitoff": "geosrs_projection:AitoffProjection",
     "alias": "skos:altLabel",
     "area_of_use": {
-      "@context": {
-        "name": "@id"
-      },
       "@id": "geosrs:domainOfValidity",
       "@type": "@vocab"
     },
     "aust_SA": "geosrs_datum:AustralianNationalSpheroid",
     "axis": "geosrs:axis",
     "axisDirection": {
-      "@context": {
-        "name": "@id"
-      },
       "@id": "geosrs:axisDirection",
       "@type": "@vocab"
     },
@@ -415,17 +409,11 @@
       "@type": "@vocab"
     },
     "baseCRS": {
-      "@context": {
-        "name": "@id"
-      },
       "@id": "geosrs:baseCRS",
       "@type": "@vocab"
     },
     "base_c_r_s": "geosrs:baseCRS",
     "base_crs": {
-      "@context": {
-        "name": "@id"
-      },
       "@id": "geosrs:baseCRS",
       "@type": "@vocab"
     },
@@ -439,9 +427,6 @@
     "collg": "geosrs_projection:CollignonProjection",
     "conversion": "geosrs:Conversion",
     "coordinateSystem": {
-      "@context": {
-        "name": "@id"
-      },
       "@id": "geosrs:coordinateSystem",
       "@type": "@vocab"
     },
@@ -451,30 +436,18 @@
     "deg": "om:degree",
     "degree": "om:degree",
     "derivingConversion": {
-      "@context": {
-        "name": "@id"
-      },
       "@id": "geosrs:derivingConversion",
       "@type": "@vocab"
     },
     "direction": {
-      "@context": {
-        "name": "@id"
-      },
       "@id": "geosrs:axisDirection",
       "@type": "@vocab"
     },
     "domain": {
-      "@context": {
-        "name": "@id"
-      },
       "@id": "geosrs:domainOfValidity",
       "@type": "@vocab"
     },
     "domainOfValidity": {
-      "@context": {
-        "name": "@id"
-      },
       "@id": "geosrs:domainOfValidity",
       "@type": "@vocab"
     },
@@ -519,9 +492,6 @@
     "m": "om:metre",
     "merc": "geosrs_projection:MercatorProjection",
     "method": {
-      "@context": {
-        "name": "@id"
-      },
       "@id": "geosrs:method",
       "@type": "@vocab"
     },
@@ -537,32 +507,20 @@
     "omerc": "geosrs_projection:ObliqueMercatorProjection",
     "ortho": "geosrs_projection:OrthographicProjection",
     "parameter": {
-      "@context": {
-        "name": "@id"
-      },
       "@id": "geosrs:parameter",
       "@type": "@vocab"
     },
     "parameterValue": {
-      "@context": {
-        "name": "@id"
-      },
       "@id": "geosrs:parameter",
       "@type": "@vocab"
     },
     "parameters": "geosrs:operationParameter",
     "poly": "geosrs_projection:AmericanPolyconicProjection",
     "primeMeridian": {
-      "@context": {
-        "name": "@id"
-      },
       "@id": "geosrs:primeMeridian",
       "@type": "@vocab"
     },
     "prime_meridian": {
-      "@context": {
-        "name": "@id"
-      },
       "@id": "geosrs:primeMeridian",
       "@type": "@vocab"
     },
@@ -581,17 +539,11 @@
     "sinu": "geosrs_projection:SinusoidalProjection",
     "skos": "http://www.w3.org/2004/02/skos/core#",
     "sourceCRS": {
-      "@context": {
-        "name": "@id"
-      },
       "@id": "geosrs:sourceCRS",
       "@type": "@vocab"
     },
     "source_c_r_s": "geosrs:sourceCRS",
     "source_crs": {
-      "@context": {
-        "name": "@id"
-      },
       "@id": "geosrs:sourceCRS",
       "@type": "@vocab"
     },
@@ -603,17 +555,11 @@
       "@type": "@vocab"
     },
     "targetCRS": {
-      "@context": {
-        "name": "@id"
-      },
       "@id": "geosrs:targetCRS",
       "@type": "@vocab"
     },
     "target_c_r_s": "geosrs:targetCRS",
     "target_crs": {
-      "@context": {
-        "name": "@id"
-      },
       "@id": "geosrs:targetCRS",
       "@type": "@vocab"
     },

@@ -10,23 +10,23 @@
 
 <file:///home/runner/work/ontology-crs/ontology-crs/examples/Lambert-93> a geosrs:Conversion ;
     geosrs:parameter [ a geosrs:OperationParameterValue ;
-            geosrs:parameter [ rdf:value [ om:hasUnit om:degree ;
-                            rdf:value 4.65e+01 ] ] ],
-        [ a geosrs:OperationParameterValue ;
             geosrs:parameter [ rdf:value [ om:hasUnit om:metre ;
                             rdf:value 700000 ] ] ],
         [ a geosrs:OperationParameterValue ;
             geosrs:parameter [ rdf:value [ om:hasUnit om:degree ;
-                            rdf:value 44 ] ] ],
-        [ a geosrs:OperationParameterValue ;
-            geosrs:parameter [ rdf:value [ om:hasUnit om:metre ;
-                            rdf:value 6600000 ] ] ],
+                            rdf:value 4.65e+01 ] ] ],
         [ a geosrs:OperationParameterValue ;
             geosrs:parameter [ rdf:value [ om:hasUnit om:degree ;
                             rdf:value 3 ] ] ],
         [ a geosrs:OperationParameterValue ;
             geosrs:parameter [ rdf:value [ om:hasUnit om:degree ;
-                            rdf:value 49 ] ] ] .
+                            rdf:value 44 ] ] ],
+        [ a geosrs:OperationParameterValue ;
+            geosrs:parameter [ rdf:value [ om:hasUnit om:degree ;
+                            rdf:value 49 ] ] ],
+        [ a geosrs:OperationParameterValue ;
+            geosrs:parameter [ rdf:value [ om:hasUnit om:metre ;
+                            rdf:value 6600000 ] ] ] .
 
 [] a geosrs:ProjectedCRS ;
     rdfs:label "RGF93 v1 / Lambert-93" ;

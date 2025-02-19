@@ -10,24 +10,24 @@
     rdfs:label "RGF93 v1 / Lambert-93" ;
     skos:scopeNote "Engineering survey, topographic mapping." ;
     geosrs:Conversion [ rdfs:label "Lambert-93" ;
-            geosrs:operationParameter [ rdfs:label "Easting at false origin" ;
-                    om:hasUnit om:metre ;
-                    rdf:value 700000 ],
+            geosrs:operationParameter [ rdfs:label "Latitude of 2nd standard parallel" ;
+                    om:hasUnit om:degree ;
+                    rdf:value 44 ],
                 [ rdfs:label "Longitude of false origin" ;
                     om:hasUnit om:degree ;
                     rdf:value 3 ],
+                [ rdfs:label "Latitude of false origin" ;
+                    om:hasUnit om:degree ;
+                    rdf:value 4.65e+01 ],
                 [ rdfs:label "Latitude of 1st standard parallel" ;
                     om:hasUnit om:degree ;
                     rdf:value 49 ],
-                [ rdfs:label "Latitude of 2nd standard parallel" ;
-                    om:hasUnit om:degree ;
-                    rdf:value 44 ],
+                [ rdfs:label "Easting at false origin" ;
+                    om:hasUnit om:metre ;
+                    rdf:value 700000 ],
                 [ rdfs:label "Northing at false origin" ;
                     om:hasUnit om:metre ;
-                    rdf:value 6600000 ],
-                [ rdfs:label "Latitude of false origin" ;
-                    om:hasUnit om:degree ;
-                    rdf:value 4.65e+01 ] ] ;
+                    rdf:value 6600000 ] ] ;
     geosrs:coordinateSystem [ a geosrs:CartesianCoordinateSystem ;
             geosrs:axis [ rdfs:label "Easting" ;
                     om:hasUnit om:metre ;

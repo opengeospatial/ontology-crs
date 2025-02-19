@@ -6,16 +6,12 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<file:///home/runner/work/ontology-crs/ontology-crs/examples/ED50> geosrs:coordinateSystem [ a geosrs:EllipsoidalCoordinateSystem ] .
-
 [] a geosrs:ProjectedCRS ;
     rdfs:label "ED50 / UTM zone 32N" ;
     skos:scopeNote "Engineering survey, topographic mapping." ;
     geosrs:Conversion [ rdfs:label "UTM zone 32N" ;
-            geosrs:operationParameter [ rdfs:label "Longitude of natural origin" ;
-                    om:hasUnit om:degree ;
-                    rdf:value 9 ],
-                [ rdfs:label "Latitude of natural origin" ;
+            geosrs:method [ rdfs:label "Transverse Mercator" ] ;
+            geosrs:operationParameter [ rdfs:label "Latitude of natural origin" ;
                     om:hasUnit om:degree ;
                     rdf:value 0 ],
                 [ rdfs:label "False northing" ;
@@ -24,17 +20,34 @@
                 [ rdfs:label "Scale factor at natural origin" ;
                     om:hasUnit om:unity ;
                     rdf:value 9.996e-01 ],
+                [ rdfs:label "Longitude of natural origin" ;
+                    om:hasUnit om:degree ;
+                    rdf:value 9 ],
                 [ rdfs:label "False easting" ;
                     om:hasUnit om:metre ;
                     rdf:value 500000 ] ] ;
-    geosrs:baseCRS <file:///home/runner/work/ontology-crs/ontology-crs/examples/ED50> ;
+    geosrs:baseCRS [ rdfs:label "ED50" ;
+            geosrs:coordinateSystem [ a geosrs:EllipsoidalCoordinateSystem ;
+                    geosrs:axis [ rdfs:label "Geodetic latitude" ;
+                            om:hasUnit om:degree ;
+                            skos:altLabel "Lat" ;
+                            geosrs:axisDirection geosrs_cs:north ],
+                        [ rdfs:label "Geodetic longitude" ;
+                            om:hasUnit om:degree ;
+                            skos:altLabel "Lon" ;
+                            geosrs:axisDirection geosrs_cs:east ] ] ;
+            geosrs:datum [ a geosrs:GeodeticDatum ;
+                    rdfs:label "European Datum 1950" ;
+                    geosrs:ellipsoid [ rdfs:label "International 1924" ;
+                            geosrs:inverseFlattening 297 ;
+                            geosrs:semiMajorAxis 6378388 ] ] ] ;
     geosrs:coordinateSystem [ a geosrs:CartesianCoordinateSystem ;
-            geosrs:axis [ rdfs:label "Northing" ;
-                    om:hasUnit om:metre ;
-                    skos:altLabel "N" ;
-                    geosrs:axisDirection geosrs_cs:north ],
-                [ rdfs:label "Easting" ;
+            geosrs:axis [ rdfs:label "Easting" ;
                     om:hasUnit om:metre ;
                     skos:altLabel "E" ;
-                    geosrs:axisDirection geosrs_cs:east ] ] .
+                    geosrs:axisDirection geosrs_cs:east ],
+                [ rdfs:label "Northing" ;
+                    om:hasUnit om:metre ;
+                    skos:altLabel "N" ;
+                    geosrs:axisDirection geosrs_cs:north ] ] .
 

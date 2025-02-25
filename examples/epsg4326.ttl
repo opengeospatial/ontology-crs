@@ -1,0 +1,19 @@
+@prefix geosrs: <https://w3id.org/geosrs/geosrs/> .
+@prefix geosrs_cs: <https://w3id.org/geosrs/cs/> .
+@prefix om: <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+[] a geosrs:GeographicCRS ;
+    rdfs:label "WGS 84" ;
+    skos:scopeNote "Horizontal component of 3D system." ;
+    geosrs:coordinateSystem [ a geosrs:EllipsoidalCoordinateSystem ;
+            geosrs:axis [ rdfs:label "Geodetic latitude" ;
+                    om:hasUnit om:degree ;
+                    skos:altLabel "Lat" ;
+                    geosrs:axisDirection geosrs_cs:north ],
+                [ rdfs:label "Geodetic longitude" ;
+                    om:hasUnit om:degree ;
+                    skos:altLabel "Lon" ;
+                    geosrs:axisDirection geosrs_cs:east ] ] .
+

@@ -223,6 +223,7 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
 <section id="toc">
     <h2>Table of Contents</h2>
     <ol>
+        <li><a href="#classes">Classes</a></li>
         <li><a href="#namespaces">Namespaces</a></li>
         <li><a href="#legend">Legend</a></li>
     </ol>
@@ -237,7 +238,161 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
   <section id="classes">
     <h2>Classes <span style="float:right; font-size:smaller;"><a href="">&uparrow;</a></span></h2>
     <ul class="hlist">
+      <li><a href="#CadastreMap">Cadastre Map</a></li>
+      <li><a href="#NauticalChart">Nautical Chart</a></li>
+      <li><a href="#SRSApplication">SRS Application</a></li>
+      <li><a href="#ThematicMap">Thematic Map</a></li>
+      <li><a href="#TopographicMap">Topographic Map</a></li>
+      <li><a href="#WeatherMap">Weather Map</a></li>
     </ul>
+    <div class="entity class" id="CadastreMap">
+        <h3>
+          Cadastre Map<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#CadastreMap" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://w3id.org/geosrs/application/CadastreMap</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>A map displaying a cadastre.</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Super-classes</th>
+                <td>
+                    <a href="#SRSApplication">SRS Application</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="NauticalChart">
+        <h3>
+          Nautical Chart<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#NauticalChart" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://w3id.org/geosrs/application/NauticalChart</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>A graphic representation of a sea area and adjacent coastal regions.</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Super-classes</th>
+                <td>
+                    <a href="#SRSApplication">SRS Application</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="SRSApplication">
+        <h3>
+          SRS Application<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#SRSApplication" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://w3id.org/geosrs/application/SRSApplication</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>An application for which a spatial reference system is used.</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Sub-classes</th>
+                <td>
+                    <a href="#NauticalChart">Nautical Chart</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#TopographicMap">Topographic Map</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#WeatherMap">Weather Map</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#ThematicMap">Thematic Map</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#CadastreMap">Cadastre Map</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="ThematicMap">
+        <h3>
+          Thematic Map<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#ThematicMap" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://w3id.org/geosrs/application/ThematicMap</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>A map used to highlight a specific phenomenon.</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Super-classes</th>
+                <td>
+                    <a href="#SRSApplication">SRS Application</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="TopographicMap">
+        <h3>
+          Topographic Map<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#TopographicMap" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://w3id.org/geosrs/application/TopographicMap</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>A type of map characterized by large-scale detail and quantitative representation of relief.</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Super-classes</th>
+                <td>
+                    <a href="#SRSApplication">SRS Application</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="WeatherMap">
+        <h3>
+          Weather Map<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#WeatherMap" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://w3id.org/geosrs/application/WeatherMap</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>A map for showing the local direction in which weather systems are moving.</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Super-classes</th>
+                <td>
+                    <a href="#SRSApplication">SRS Application</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
 </section>
   
   <section id="namespaces">

@@ -1,11 +1,42 @@
 @prefix geosrs: <https://w3id.org/geosrs/> .
+@prefix geosrs_application: <https://w3id.org/geosrs/application/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+geosrs_application:CadastreMap a owl:Class ;
+    rdfs:label "Cadastre Map"@en ;
+    rdfs:subClassOf geosrs_application:SRSApplication ;
+    skos:definition "A map displaying a cadastre."@en .
+
+geosrs_application:NauticalChart a owl:Class ;
+    rdfs:label "Nautical Chart"@en ;
+    rdfs:subClassOf geosrs_application:SRSApplication ;
+    skos:definition "A graphic representation of a sea area and adjacent coastal regions."@en .
+
+geosrs_application:ThematicMap a owl:Class ;
+    rdfs:label "Thematic Map"@en ;
+    rdfs:subClassOf geosrs_application:SRSApplication ;
+    skos:definition "A map used to highlight a specific phenomenon."@en .
+
+geosrs_application:TopographicMap a owl:Class ;
+    rdfs:label "Topographic Map"@en ;
+    rdfs:subClassOf geosrs_application:SRSApplication ;
+    skos:definition "A type of map characterized by large-scale detail and quantitative representation of relief."@en .
+
+geosrs_application:WeatherMap a owl:Class ;
+    rdfs:label "Weather Map"@en ;
+    rdfs:subClassOf geosrs_application:SRSApplication ;
+    skos:definition "A map for showing the local direction in which weather systems are moving."@en .
 
 geosrs:applicationapplication a owl:Ontology ;
     rdfs:label "SRS Ontology: Geosrs_application"@en ;
     vann:preferredNamespacePrefix "geosrs_application"^^xsd:string ;
     vann:preferredNamespaceUri "https://w3id.org/geosrs/application/"^^xsd:anyURI .
+
+geosrs_application:SRSApplication a owl:Class ;
+    rdfs:label "SRS Application"@en ;
+    skos:definition "An application for which a spatial reference system is used."@en .
 

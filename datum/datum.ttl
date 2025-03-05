@@ -65,6 +65,11 @@ geosrs_datum:DefiningParameter a owl:Class ;
     rdfs:label "Defining Parameter"@en ;
     skos:definition "Parameter value, an ordered sequence of values, or a reference to a file of parameter values that define a paramtric datum. Cf. ISO 19111:2019 Geographic information — Referencing by coordinates."@en .
 
+geosrs_datum:DynamicGeodeticReferenceFrame a owl:Class ;
+    rdfs:label "Dynamic Geodetic Reference Frame"@en ;
+    rdfs:subClassOf geosrs:GeodeticDatum ;
+    skos:definition "Geodetic reference frame in which some of the parameters describe time evolution of defining station coordinatesExample: defining station coordinates having linear velocities to account for crustal motion."@en .
+
 geosrs_datum:DynamicVerticalDatum a owl:Class ;
     rdfs:label "Dynamic Vertical Datum"@en ;
     rdfs:subClassOf geosrs:VerticalDatum ;

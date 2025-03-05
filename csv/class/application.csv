@@ -1,7 +1,7 @@
-Concept,SuperClass,Label,Definition,ISO 19111,IGN 2019,Proj4RDF,GeoSPARQL,Core Class?
-geosrs:SRSApplication,,SRS Application,An application for which a spatial reference system is used.,,,geocrs:SRSApplication,,Extension
-geosrs:CadastreMap,geosrs:SRSApplication,Cadastre Map,A map displaying a cadastre.,,,geocrs:CadastreMap,,Extension
-geosrs:NauticalChart,geosrs:SRSApplication,Nautical Chart,A graphic representation of a sea area and adjacent coastal regions.,,,geocrs:NauticalChart,,Extension
-geosrs:ThematicMap,geosrs:SRSApplication,Thematic Map,A map used to highlight a specific phenomenon.,,,geocrs:ThematicMap,,Extension
-geosrs:TopographicMap,geosrs:SRSApplication,Topographic Map,A type of map characterized by large-scale detail and quantitative representation of relief.,,,geocrs:TopographicMap,,Extension
-geosrs:WeatherMap,geosrs:SRSApplication,Weather Map,A map for showing the local direction in which weather systems are moving.,,,geocrs:WeatherMap,,Extension
+Concept,SuperClass,DisjointClass,Label,Definition,ISO 19111,IGN 2019,Proj4RDF,GeoSPARQL,Core Class?
+geosrs:SRSApplication,,,SRS Application,An application for which a spatial reference system is used.,,,geocrs:SRSApplication,,Extension
+geosrs:CadastreMap,geosrs:SRSApplication,,Cadastre Map,A map displaying a cadastre.,,,geocrs:CadastreMap,,Extension
+geosrs:NauticalChart,geosrs:SRSApplication,,Nautical Chart,A graphic representation of a sea area and adjacent coastal regions.,,,geocrs:NauticalChart,,Extension
+geosrs:ThematicMap,geosrs:SRSApplication,,Thematic Map,A map used to highlight a specific phenomenon.,,,geocrs:ThematicMap,,Extension
+geosrs:TopographicMap,geosrs:SRSApplication,,Topographic Map,A type of map characterized by large-scale detail and quantitative representation of relief.,,,geocrs:TopographicMap,,Extension
+geosrs:WeatherMap,geosrs:SRSApplication,,Weather Map,A map for showing the local direction in which weather systems are moving.,,,geocrs:WeatherMap,,Extension

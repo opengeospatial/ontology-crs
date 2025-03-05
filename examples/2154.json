@@ -1,0 +1,215 @@
+{
+    "@context": "https://opengeospatial.github.io/ontology-crs/context/geosrs-context.json",
+    "entityType": "ProjectedCRS", 
+    "name": "RGF93 v1 / Lambert-93",
+    "identifier": [
+      "EPSG:2154"
+    ],
+    "alias": [
+      "FR_RGF93",
+      "LAMB93",
+      "RGF93",
+      "Lambert-93"
+    ],
+    "baseCRS": {
+      "entityType": "GeographicCRS",
+      "name": "RGF93 v1",
+      "identifier": [
+        "EPSG:4171"
+      ],
+      "datum": {
+        "entityType": "GeodeticReferenceFrame",
+        "name": "Reseau Geodesique Francais 1993 v1",
+        "ellipsoid": {
+          "entityType": "Ellipsoid",
+          "name": "GRS 1980",
+          "semiMajorAxis": {
+            "value": 6378137,
+            "uom": "m"
+          },
+          "secondDefiningParameter": {
+            "inverseFlattening": {
+              "value": 298.257222101,
+              "uom": "tbd"
+            }
+          }
+        },
+        "primeMeridian": {
+          "entityType": "PrimeMeridian",
+          "name": "Greenwich",
+          "greenwichLongitude": {
+            "value": 0,
+            "uom": "deg"
+          }
+        }
+      },
+      "coordinateSystem": {
+        "entityType": "EllipsoidalCS",
+        "name": "Ellipsoidal 2D CS. Axes: latitude, longitude. Orientations: north, east. UoM: degreeOpen",
+        "axis": [
+          {
+            "entityType": "CoordinateSystemAxis",
+            "name": "Geodetic latitude",
+            "axisAbbrev": "Lat",
+            "axisDirection": "north",
+            "axisUnitID": "deg"
+          },
+          {
+            "entityType": "CoordinateSystemAxis",
+            "name": "Geodetic longitude",
+            "axisAbbrev": "Lon",
+            "axisDirection": "east",
+            "axisUnitID": "deg"
+          }
+        ]
+      }
+    },
+    "derivingConversion": {
+      "entityType": "Conversion",
+      "name": "Lambert-93",
+      "method": {
+        "entityType": "OperationMethod",
+        "name": "Lambert Conic Conformal (2SP)",
+        "formulaReference": {
+          "formula": "tbd"
+        }
+      },
+      "parameterValue": [
+        {
+          "entityType": "OperationParameterValue",
+          "parameter": {
+            "entityType": "OperationParameter",
+            "name": "Latitude of false origin",
+            "identifier": [
+              "EPSG:8821"
+            ]
+          },
+          "parameterValue": {
+            "value": {
+              "value": 46.5,
+              "uom": "deg"
+            }
+          }
+        },
+        {
+          "entityType": "OperationParameterValue",
+          "parameter": {
+            "entityType": "OperationParameter",
+            "name": "Longitude of false origin",
+            "identifier": [
+              "EPSG:8822"
+            ]
+          },
+          "parameterValue": {
+            "value": {
+              "value": 3,
+              "uom": "deg"
+            }
+          }
+        },
+        {
+          "entityType": "OperationParameterValue",
+          "parameter": {
+            "entityType": "OperationParameter",
+            "name": "Latitude of 1st standard parallel",
+            "identifier": [
+              "EPSG:8823"
+            ]
+          },
+          "parameterValue": {
+            "value": {
+              "value": 49,
+              "uom": "deg"
+            }
+          }
+        },
+        {
+          "entityType": "OperationParameterValue",
+          "parameter": {
+            "entityType": "OperationParameter",
+            "name": "Latitude of 2nd standard parallel",
+            "identifier": [
+              "EPSG:8824"
+            ]
+          },
+          "parameterValue": {
+            "value": {
+              "value": 44,
+              "uom": "deg"
+            }
+          }
+        },
+        {
+          "entityType": "OperationParameterValue",
+          "parameter": {
+            "entityType": "OperationParameter",
+            "name": "Easting at false origin",
+            "identifier": [
+              "EPSG:8826"
+            ]
+          },
+          "parameterValue": {
+            "value": {
+              "value": 700000,
+              "uom": "m"
+            }
+          }
+        },
+        {
+          "entityType": "OperationParameterValue",
+          "parameter": {
+            "entityType": "OperationParameter",
+            "name": "Northing at false origin",
+            "identifier": [
+              "EPSG:8827"
+            ]
+          },
+          "parameterValue": {
+            "value": {
+              "value": 6600000,
+              "uom": "m"
+            }
+          }
+        }
+      ]
+    },
+    "coordinateSystem": {
+      "entityType": "CartesianCS",
+      "name": "Cartesian 2D CS. Axes: easting, northing (X,Y). Orientations: east, north. UoM: m",
+      "axis": [
+        {
+          "entityType": "CoordinateSystemAxis",
+          "name": "Easting",
+          "axisAbbrev": "X",
+          "axisDirection": "east",
+          "axisUnitID": "m"
+        },
+        {
+          "entityType": "CoordinateSystemAxis",
+          "name": "Northing",
+          "axisAbbrev": "Y",
+          "axisDirection": "north",
+          "axisUnitID": "m"
+        }
+      ]
+    },
+    "domain": [
+      {
+        "entityType": "ObjectDomain",
+        "scope": "Engineering survey, topographic mapping.",
+        "domainOfValidity": {
+          "x-comment": "unrestricted content, due to lack of JSON Schema definition for EX_Extent",
+          "description": "France - onshore and offshore, mainland and Corsica (France métropolitaine including Corsica).",
+          "geographicElement": [
+            {
+              "entityType": "GeographicBoundingBox",
+              "southBoundLatitude": 41.15,
+              "westBoundLongitude": -9.86,
+              "northBoundLatitude": 51.56,
+              "eastBoundLongitude": 10.38
+            }
+          ]
+        }
+      }
+    ]
+  }

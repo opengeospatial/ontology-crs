@@ -1,0 +1,58 @@
+[appendix,obligation=informative]
+
+== Alignments
+
+[discrete]
+=== Overview
+
+The prefixes used for the ontologies mapped to in all following sections are given in the following table.
+
+.Alignment: Namespaces
+[frame=none, grid=none, cols="1, 6"]
+|===
+| ign: | http://data.ign.fr/def/ignf#
+| iso19111: | http://def.isotc211.org/iso19112/2019/SpatialReferencingByGeographicIdentifier#
+| geosrs: | http://www.opengis.net/ont/geosparql#
+| ifc: | https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL/
+| owl: | http://www.w3.org/2002/07/owl#
+| prov: | http://www.w3.org/ns/prov#
+| rdf: | http://www.w3.org/1999/02/22-rdf-syntax-ns# 
+| rdfs: | http://www.w3.org/2000/01/rdf-schema#
+|===
+
+=== IGN CRS Ontology
+
+
+.Alignment: IGN CRS Ontology
+[%autowidth]
+|===
+| From Element | Mapping relation | To Element | Notes
+
+| <<Class: geosrs:CoordinateSystem, `geosrs:CoordinateSystem`>> | http://www.w3.org/2002/07/owl#equivalentClass[`owl:equivalentClass`] | http://data.ign.fr/def/ignf#CoordinateSystem[`ign:CoordinateSystem`] |  -
+| <<Class: geosrs:Datum, `geosrs:Datum`>> | http://www.w3.org/2002/07/owl#equivalentClass[`owl:equivalentClass`] | http://data.ign.fr/def/ignf#Datum[`ign:Datum`] |  -
+| <<Class: geosrs:Ellipsoid, `geosrs:Ellipsoid`>> | http://www.w3.org/2002/07/owl#equivalentClass[`owl:equivalentClass`] | http://data.ign.fr/def/ignf#Ellipsoid[`ign:Ellipsoid`] |  -
+|===
+
+=== ISO 19111 Ontology
+
+
+.Alignment: ISO 19111 Ontology
+[%autowidth]
+|===
+| From Element | Mapping relation | To Element | Notes
+
+| <<Class: geosrs:CoordinateSystem, `geosrs:CoordinateSystem`>> | http://www.w3.org/2002/07/owl#equivalentClass[`owl:equivalentClass`] | http://def.isotc211.org/iso19112/2019/SpatialReferencingByGeographicIdentifier#CoordinateSystem[`iso19111:CoordinateSystem`] | - 
+| <<Class: geosrs:Datum, `geosrs:Datum`>> | http://www.w3.org/2002/07/owl#equivalentClass[`owl:equivalentClass`] | http://def.isotc211.org/iso19112/2019/SpatialReferencingByGeographicIdentifier#Datum[`iso19111:Datum`] | - 
+| <<Class: geosrs:Ellipsoid, `geosrs:Ellipsoid`>> | http://www.w3.org/2002/07/owl#equivalentClass[`owl:equivalentClass`] | http://def.isotc211.org/iso19112/2019/SpatialReferencingByGeographicIdentifier#Ellipsoid[`iso19111:Ellipsoid`] | -
+|===
+
+=== IFCOWL Ontology
+
+
+.Alignment: IFCOWL Ontology
+[%autowidth]
+|===
+| From Element | Mapping relation | To Element | Notes
+
+| <<Class: geosrs:CRS, `geosrs:CRS`>> | http://www.w3.org/2002/07/owl#equivalentClass[`owl:equivalentClass`] | https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL/CoordinateReferenceSystem[`ifc:CoordinateReferenceSystem`] |  -
+|===

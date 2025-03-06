@@ -437,9 +437,11 @@
       "@type": "@vocab"
     },
     "bonne": "geosrs_projection:BonneProjection",
+    "cadastre": "geosrs_application:CadastreMap",
     "cass": "geosrs_projection:CassiniProjection",
     "cea": "geosrs_projection:CylindricalEqualArea",
     "centimetre": "om:centimetre",
+    "charting": "geosrs_application:NauticalChart",
     "clrk66": "geosrs_datum:Clarke1866",
     "clrk80ign": "geosrs_datum:Clarke1880IGN",
     "col_urban": "geosrs_projection:ColombiaUrbanProjection",
@@ -524,6 +526,7 @@
     "longlat": "geosrs_projection:LonLatProjection",
     "loxim": "geosrs_projection:LoximuthalProjection",
     "m": "om:metre",
+    "mapping": "geosrs_application:TopographicMap",
     "merc": "geosrs_projection:MercatorProjection",
     "method": {
       "@context": {
@@ -538,6 +541,7 @@
     "moll": "geosrs_projection:MollweideProjection",
     "name": "rdfs:label",
     "natearth": "geosrs_projection:NaturalEarthProjection",
+    "nautical": "geosrs_application:NauticalChart",
     "nicol": "geosrs_projection:NicolosiGlobularProjection",
     "north": "geosrs_cs:north",
     "om": "http://www.ontology-of-units-of-measure.org/resource/om-2/",
@@ -625,6 +629,7 @@
       "@type": "@vocab"
     },
     "tmerc": "geosrs_projection:TransverseMercatorProjection",
+    "topographic": "geosrs_application:TopographicMap",
     "transformation": "geosrs:Transformation",
     "type": {
       "@id": "rdf:type",

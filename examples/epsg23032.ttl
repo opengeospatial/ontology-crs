@@ -28,26 +28,26 @@
                     rdf:value 9 ] ] ;
     geosrs:baseCRS [ rdfs:label "ED50" ;
             geosrs:coordinateSystem [ a geosrs:EllipsoidalCoordinateSystem ;
-                    geosrs:axis [ rdfs:label "Geodetic longitude" ;
-                            om:hasUnit om:degree ;
-                            skos:altLabel "Lon" ;
-                            geosrs:axisDirection geosrs_cs:east ],
-                        [ rdfs:label "Geodetic latitude" ;
+                    geosrs:axis [ rdfs:label "Geodetic latitude" ;
                             om:hasUnit om:degree ;
                             skos:altLabel "Lat" ;
-                            geosrs:axisDirection geosrs_cs:north ] ] ;
-            geosrs:datum [ a geosrs:GeodeticDatum ;
+                            geosrs:axisDirection geosrs_cs:north ],
+                        [ rdfs:label "Geodetic longitude" ;
+                            om:hasUnit om:degree ;
+                            skos:altLabel "Lon" ;
+                            geosrs:axisDirection geosrs_cs:east ] ] ;
+            geosrs:datum [ a <file:///home/runner/work/ontology-crs/ontology-crs/examples/GeodeticReferenceFrame> ;
                     rdfs:label "European Datum 1950" ;
                     geosrs:ellipsoid [ rdfs:label "International 1924" ;
                             geosrs:inverseFlattening 297 ;
                             geosrs:semiMajorAxis 6378388 ] ] ] ;
     geosrs:coordinateSystem [ a geosrs:CartesianCoordinateSystem ;
-            geosrs:axis [ rdfs:label "Northing" ;
-                    om:hasUnit om:metre ;
-                    skos:altLabel "N" ;
-                    geosrs:axisDirection geosrs_cs:north ],
-                [ rdfs:label "Easting" ;
+            geosrs:axis [ rdfs:label "Easting" ;
                     om:hasUnit om:metre ;
                     skos:altLabel "E" ;
-                    geosrs:axisDirection geosrs_cs:east ] ] .
+                    geosrs:axisDirection geosrs_cs:east ],
+                [ rdfs:label "Northing" ;
+                    om:hasUnit om:metre ;
+                    skos:altLabel "N" ;
+                    geosrs:axisDirection geosrs_cs:north ] ] .
 

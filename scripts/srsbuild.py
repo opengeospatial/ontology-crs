@@ -161,7 +161,7 @@ for file in os.listdir(directory):
                                     gcore.add((URIRef(row["Concept"].replace(coreprefix+":",geocrsNS)),OWL.disjointWith,URIRef(spl.replace("geosrs:", getNSForClass(spl,classToPrefix)))))
                             else:
                                 gcore.add((URIRef(row["Concept"].replace(coreprefix+":",geocrsNS)),OWL.disjointWith,URIRef(row["DisjointClass"].replace("geosrs:", getNSForClass(row["DisjointClass"],classToPrefix)))))
-                        moduleToAdoc["06-core.adoc"].append("==== Class: "+str(coreprefix)+":"+str(row["Concept"])+"\nThe class https://w3id.org/geosrs/"+str(row["Concept"])"+[`"+str(coreprefix)+":"+str(row["Concept"])+"`] is defined by the following:")
+                        moduleToAdoc["06-core.adoc"].append("==== Class: "+str(coreprefix)+":"+str(row["Concept"])+"\nThe class https://w3id.org/geosrs/"+str(row["Concept"])+"[`"+str(coreprefix)+":"+str(row["Concept"])+"`] is defined by the following:")
                     else:
                         g.add((URIRef(row["Concept"].replace(coreprefix+":",curns)),RDF.type,OWL.Class))
                         prefixtoclasses[curprefix].append(row["Concept"].replace(curprefix+":",curns).replace("geosrs:","").replace("geoprojection:",""))

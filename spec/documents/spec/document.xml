@@ -163,154 +163,208 @@
 <title>Core</title>
 <p id="core">This clause establishes the <strong>Core</strong> Requirements class, with IRI <tt>/req/core</tt>, which has a corresponding Conformance Class, <strong>Core</strong>, with IRI <tt>/conf/core</tt>.</p>
 
-<clause id="_class_geosrsgeosrscoordinatesystem" obligation="normative">
-<title>Class: geosrs:geosrs:CoordinateSystem</title>
-<p id="_5c4f6495-25ca-e198-cfb8-4c9397f7c7de">The class <link target="https://w3id.org/geosrs/geosrs:CoordinateSystem"><tt>geosrs:geosrs:CoordinateSystem</tt></link> is defined by the following:</p>
+<clause id="_class_geosrscoordinatesystem" obligation="normative">
+<title>Class: geosrs:CoordinateSystem</title>
+<p id="_a16877cc-a238-adfa-4d03-fc262c67f135">The class <link target="https://w3id.org/geosrs/geosrs:CoordinateSystem"><tt>geosrs:geosrs:CoordinateSystem</tt></link> is defined by the following:</p>
+
+<p id="_b5d661db-9f38-89e9-b3ad-7431bc6db238">Set of axes that spans a given coordinate space and of mathematical rules for specifying how coordinates are to be assigned to points. Cf. ISO 19111:2007:2007-07, part 9.2, table 17 and annex B.2.</p>
 </clause>
 
-<clause id="_class_geosrsgeosrscartesiancoordinatesystem" obligation="normative">
-<title>Class: geosrs:geosrs:CartesianCoordinateSystem</title>
-<p id="_393c4098-29c7-e4c6-35b2-2ce63a439b95">The class <link target="https://w3id.org/geosrs/geosrs:CartesianCoordinateSystem"><tt>geosrs:geosrs:CartesianCoordinateSystem</tt></link> is defined by the following:</p>
+<clause id="_class_geosrscartesiancoordinatesystem" obligation="normative">
+<title>Class: geosrs:CartesianCoordinateSystem</title>
+<p id="_64b262e7-90bc-7bd7-ce5e-340a2889646d">The class <link target="https://w3id.org/geosrs/geosrs:CartesianCoordinateSystem"><tt>geosrs:geosrs:CartesianCoordinateSystem</tt></link> is defined by the following:</p>
+
+<p id="_f488b7c3-19d3-bae4-b616-c7b0b87a0a60">Coordinate system which gives the position of points relative to n mutually perpendicular axes. Cf. ISO 19111:2007:2007-07, tables 15 and 18.</p>
 </clause>
 
-<clause id="_class_geosrsgeosrsellipsoidalcoordinatesystem" obligation="normative">
-<title>Class: geosrs:geosrs:EllipsoidalCoordinateSystem</title>
-<p id="_a042c64b-eed2-739c-e9ca-674fb0d14579">The class <link target="https://w3id.org/geosrs/geosrs:EllipsoidalCoordinateSystem"><tt>geosrs:geosrs:EllipsoidalCoordinateSystem</tt></link> is defined by the following:</p>
+<clause id="_class_geosrsellipsoidalcoordinatesystem" obligation="normative">
+<title>Class: geosrs:EllipsoidalCoordinateSystem</title>
+<p id="_0a3a6e12-4faa-7f22-1b86-95903fec30df">The class <link target="https://w3id.org/geosrs/geosrs:EllipsoidalCoordinateSystem"><tt>geosrs:geosrs:EllipsoidalCoordinateSystem</tt></link> is defined by the following:</p>
+
+<p id="_7ab0c7c0-632d-edca-6672-21c59d640a18">Coordinate system which gives the position is specified by geodetic latitude, geodetic longitude and (in the three-dimensional case) ellipsoidal height. Cf. ISO 19111:2007:2007-07, tables 15 and 20.</p>
 </clause>
 
-<clause id="_class_geosrsgeosrslinearcoordinatesystem" obligation="normative">
-<title>Class: geosrs:geosrs:LinearCoordinateSystem</title>
-<p id="_97fa80c3-b412-8a45-0fd0-1fa24ec4b74f">The class <link target="https://w3id.org/geosrs/geosrs:LinearCoordinateSystem"><tt>geosrs:geosrs:LinearCoordinateSystem</tt></link> is defined by the following:</p>
+<clause id="_class_geosrslinearcoordinatesystem" obligation="normative">
+<title>Class: geosrs:LinearCoordinateSystem</title>
+<p id="_42832f7b-eaa6-fab5-b12e-b3630e62246b">The class <link target="https://w3id.org/geosrs/geosrs:LinearCoordinateSystem"><tt>geosrs:geosrs:LinearCoordinateSystem</tt></link> is defined by the following:</p>
+
+<p id="_1ac285f8-d4d8-83ef-abc7-74626f566143">One-dimensional coordinate system in which a linear feature forms the axis.</p>
 </clause>
 
-<clause id="_class_geosrsgeosrsordinalcoordinatesystem" obligation="normative">
-<title>Class: geosrs:geosrs:OrdinalCoordinateSystem</title>
-<p id="_632520fc-0978-3b0f-b344-5487f15d8b65">The class <link target="https://w3id.org/geosrs/geosrs:OrdinalCoordinateSystem"><tt>geosrs:geosrs:OrdinalCoordinateSystem</tt></link> is defined by the following:</p>
+<clause id="_class_geosrsordinalcoordinatesystem" obligation="normative">
+<title>Class: geosrs:OrdinalCoordinateSystem</title>
+<p id="_95103d0f-24f1-ce6c-db5f-9c4195beddfa">The class <link target="https://w3id.org/geosrs/geosrs:OrdinalCoordinateSystem"><tt>geosrs:geosrs:OrdinalCoordinateSystem</tt></link> is defined by the following:</p>
+
+<p id="_d382fca6-8cb5-ee28-b784-b7247b0a3828">n-dimensional coordinate system in which every axis uses integers.</p>
 </clause>
 
-<clause id="_class_geosrsgeosrsparametriccoordinatesystem" obligation="normative">
-<title>Class: geosrs:geosrs:ParametricCoordinateSystem</title>
-<p id="_305e8a65-44de-fd51-feb6-ce160a8f2ae5">The class <link target="https://w3id.org/geosrs/geosrs:ParametricCoordinateSystem"><tt>geosrs:geosrs:ParametricCoordinateSystem</tt></link> is defined by the following:</p>
+<clause id="_class_geosrsparametriccoordinatesystem" obligation="normative">
+<title>Class: geosrs:ParametricCoordinateSystem</title>
+<p id="_155d6cd7-4d71-9ef3-d1dc-7e53b1c39b07">The class <link target="https://w3id.org/geosrs/geosrs:ParametricCoordinateSystem"><tt>geosrs:geosrs:ParametricCoordinateSystem</tt></link> is defined by the following:</p>
+
+<p id="_88b062f9-afa3-b866-d5e5-868305a6760a">One-dimensional coordinate system where the axis units are parameter values which are not inherently spatial.</p>
 </clause>
 
-<clause id="_class_geosrsgeosrspolarcoordinatesystem" obligation="normative">
-<title>Class: geosrs:geosrs:PolarCoordinateSystem</title>
-<p id="_892bc5b5-9322-c466-30b7-40ea548d084b">The class <link target="https://w3id.org/geosrs/geosrs:PolarCoordinateSystem"><tt>geosrs:geosrs:PolarCoordinateSystem</tt></link> is defined by the following:</p>
+<clause id="_class_geosrspolarcoordinatesystem" obligation="normative">
+<title>Class: geosrs:PolarCoordinateSystem</title>
+<p id="_baf815ca-182c-6787-afd9-b9a02ccbc2a3">The class <link target="https://w3id.org/geosrs/geosrs:PolarCoordinateSystem"><tt>geosrs:geosrs:PolarCoordinateSystem</tt></link> is defined by the following:</p>
+
+<p id="_92c228b0-2c44-fcbd-fdd4-f563ad813636">Two-dimensional coordinate system in Euclidean space in which position is specified by one distance coordinate and one angular coordinate.</p>
 </clause>
 
-<clause id="_class_geosrsgeosrssphericalcoordinatesystem" obligation="normative">
-<title>Class: geosrs:geosrs:SphericalCoordinateSystem</title>
-<p id="_b5524e57-7eea-7f85-7d7d-5275d29cb28a">The class <link target="https://w3id.org/geosrs/geosrs:SphericalCoordinateSystem"><tt>geosrs:geosrs:SphericalCoordinateSystem</tt></link> is defined by the following:</p>
+<clause id="_class_geosrssphericalcoordinatesystem" obligation="normative">
+<title>Class: geosrs:SphericalCoordinateSystem</title>
+<p id="_332e0cf5-1bdc-1c6c-085e-85edcbf8299f">The class <link target="https://w3id.org/geosrs/geosrs:SphericalCoordinateSystem"><tt>geosrs:geosrs:SphericalCoordinateSystem</tt></link> is defined by the following:</p>
+
+<p id="_b88b4f3b-09b2-cea1-0572-0505d976753d">Three-dimensional coordinate system in Euclidean space with one distance measured from the origin and two angular coordinates</p>
 </clause>
 
-<clause id="_class_geosrsgeosrsverticalcoordinatesystem" obligation="normative">
-<title>Class: geosrs:geosrs:VerticalCoordinateSystem</title>
-<p id="_cf1a51aa-3e61-2a29-414b-a795695a276f">The class <link target="https://w3id.org/geosrs/geosrs:VerticalCoordinateSystem"><tt>geosrs:geosrs:VerticalCoordinateSystem</tt></link> is defined by the following:</p>
+<clause id="_class_geosrsverticalcoordinatesystem" obligation="normative">
+<title>Class: geosrs:VerticalCoordinateSystem</title>
+<p id="_1885da82-f4eb-c4c1-1d8b-b92aa0034e63">The class <link target="https://w3id.org/geosrs/geosrs:VerticalCoordinateSystem"><tt>geosrs:geosrs:VerticalCoordinateSystem</tt></link> is defined by the following:</p>
+
+<p id="_8df16d16-2046-533a-3b86-323618e3f7e9">One-dimensional coordinate system used for gravity related height or depth measurements. Cf. ISO 19111:2007:2007-07, tables 15 and 25.</p>
 </clause>
 
-<clause id="_class_geosrsgeosrscoordinatesystemaxis" obligation="normative">
-<title>Class: geosrs:geosrs:CoordinateSystemAxis</title>
-<p id="_6bd56116-8ac1-a73e-0a49-aefe9c5a2b36">The class <link target="https://w3id.org/geosrs/geosrs:CoordinateSystemAxis"><tt>geosrs:geosrs:CoordinateSystemAxis</tt></link> is defined by the following:</p>
+<clause id="_class_geosrscoordinatesystemaxis" obligation="normative">
+<title>Class: geosrs:CoordinateSystemAxis</title>
+<p id="_9a63054f-071e-47cc-c652-c834bcfda83a">The class <link target="https://w3id.org/geosrs/geosrs:CoordinateSystemAxis"><tt>geosrs:geosrs:CoordinateSystemAxis</tt></link> is defined by the following:</p>
+
+<p id="_c44e181a-35c6-4a3a-2a69-4215a08566c1">Axis relative to which a coordinate of a point is specified in a coordinate system. See ISO 19111:2007:2007-07, part 9.3, table 27 and annex B.2.2.</p>
 </clause>
 
-<clause id="_class_geosrsgeosrsareaofuse" obligation="normative">
-<title>Class: geosrs:geosrs:AreaOfUse</title>
+<clause id="_class_geosrsareaofuse" obligation="normative">
+<title>Class: geosrs:AreaOfUse</title>
 <p id="_b0372464-3ebc-d0f3-6bf5-9d6ea2317971">The class <link target="https://w3id.org/geosrs/geosrs:AreaOfUse"><tt>geosrs:geosrs:AreaOfUse</tt></link> is defined by the following:</p>
 </clause>
 
-<clause id="_class_geosrsgeosrscrs" obligation="normative">
-<title>Class: geosrs:geosrs:CRS</title>
-<p id="_d00651f5-57c5-57f0-ce5d-9afe4ecdb0cc">The class <link target="https://w3id.org/geosrs/geosrs:CRS"><tt>geosrs:geosrs:CRS</tt></link> is defined by the following:</p>
+<clause id="_class_geosrscrs" obligation="normative">
+<title>Class: geosrs:CRS</title>
+<p id="_440b6966-b81b-5f1a-f2c3-c0df3372d40b">The class <link target="https://w3id.org/geosrs/geosrs:CRS"><tt>geosrs:geosrs:CRS</tt></link> is defined by the following:</p>
+
+<p id="_e5f1983f-5101-2600-43c7-cef0fe7e5eed">Depending on the spatial dimension of coordinates (1D, 2D, 3D), this piece of metadata is used for specifying the elements of definition associated to a given set of coordinates: its datum, its ellipsoid, its prime meridian, the type of coordinates (geocentric, geographic, projected,…​), the coordinates units of measure, when appropriate the cartographic projection used, the vertical coordinate reference system.</p>
 </clause>
 
-<clause id="_class_geosrsgeosrsengineeringcrs" obligation="normative">
-<title>Class: geosrs:geosrs:EngineeringCRS</title>
+<clause id="_class_geosrsengineeringcrs" obligation="normative">
+<title>Class: geosrs:EngineeringCRS</title>
 <p id="_a68f5359-ad2c-a1ae-f1e8-278f1610ba6d">The class <link target="https://w3id.org/geosrs/geosrs:EngineeringCRS"><tt>geosrs:geosrs:EngineeringCRS</tt></link> is defined by the following:</p>
 </clause>
 
-<clause id="_class_geosrsgeosrsgeodeticcrs" obligation="normative">
-<title>Class: geosrs:geosrs:GeodeticCRS</title>
-<p id="_90d9cfd9-0a47-3717-24a1-5d6aec5dbbcd">The class <link target="https://w3id.org/geosrs/geosrs:GeodeticCRS"><tt>geosrs:geosrs:GeodeticCRS</tt></link> is defined by the following:</p>
+<clause id="_class_geosrsgeodeticcrs" obligation="normative">
+<title>Class: geosrs:GeodeticCRS</title>
+<p id="_8c7c38b5-7c66-5f5a-33f9-3cbc3220d5b5">The class <link target="https://w3id.org/geosrs/geosrs:GeodeticCRS"><tt>geosrs:geosrs:GeodeticCRS</tt></link> is defined by the following:</p>
+
+<p id="_a4a4eb55-3521-f468-7fe9-ab9ed7876f96">Coordinate reference system associated with a geodetic datum. Cf. ISO 19111:2007:2007-07, part 8.2.2.a, table 10 and annex B.1.2.1.a.</p>
 </clause>
 
-<clause id="_class_geosrsgeosrsgeographiccrs" obligation="normative">
-<title>Class: geosrs:geosrs:GeographicCRS</title>
+<clause id="_class_geosrsgeographiccrs" obligation="normative">
+<title>Class: geosrs:GeographicCRS</title>
 <p id="_1c1a7f26-0f45-d015-c329-378538845044">The class <link target="https://w3id.org/geosrs/geosrs:GeographicCRS"><tt>geosrs:geosrs:GeographicCRS</tt></link> is defined by the following:</p>
 </clause>
 
-<clause id="_class_geosrsgeosrsprojectedcrs" obligation="normative">
-<title>Class: geosrs:geosrs:ProjectedCRS</title>
-<p id="_e20ab7ec-0d80-d7e0-c986-d3d4a0bca56f">The class <link target="https://w3id.org/geosrs/geosrs:ProjectedCRS"><tt>geosrs:geosrs:ProjectedCRS</tt></link> is defined by the following:</p>
+<clause id="_class_geosrsprojectedcrs" obligation="normative">
+<title>Class: geosrs:ProjectedCRS</title>
+<p id="_de032c6a-d811-4781-6ff6-4afc939bae05">The class <link target="https://w3id.org/geosrs/geosrs:ProjectedCRS"><tt>geosrs:geosrs:ProjectedCRS</tt></link> is defined by the following:</p>
+
+<p id="_2fe6c2e8-72f3-c371-b788-20f24b3f9e2f">Coordinate reference system derived from a two-dimensional geodetic coordinate reference system by applying a map projection. Cf. ISO 19111:2007:2007-07, part 8.2.3.b, table 11 and annex B.1.2.3.</p>
 </clause>
 
-<clause id="_class_geosrsgeosrssinglecrs" obligation="normative">
-<title>Class: geosrs:geosrs:SingleCRS</title>
-<p id="_39a81407-bbaf-be1e-51fe-577a6bb1fa7f">The class <link target="https://w3id.org/geosrs/geosrs:SingleCRS"><tt>geosrs:geosrs:SingleCRS</tt></link> is defined by the following:</p>
+<clause id="_class_geosrssinglecrs" obligation="normative">
+<title>Class: geosrs:SingleCRS</title>
+<p id="_87a0cca1-2bc8-78ab-6bad-10e093cfad7b">The class <link target="https://w3id.org/geosrs/geosrs:SingleCRS"><tt>geosrs:geosrs:SingleCRS</tt></link> is defined by the following:</p>
+
+<p id="_915210a4-6b8f-437c-8d51-c7adb0012f77">Coordinate reference system consisting of one coordinate system and one datum. Cf. ISO 19111:2007:2007-07, table 5.</p>
 </clause>
 
-<clause id="_class_geosrsgeosrsspatialreferencesystem" obligation="normative">
-<title>Class: geosrs:geosrs:SpatialReferenceSystem</title>
-<p id="_a061dd71-ca33-9a29-8c39-5cc17dd76caf">The class <link target="https://w3id.org/geosrs/geosrs:SpatialReferenceSystem"><tt>geosrs:geosrs:SpatialReferenceSystem</tt></link> is defined by the following:</p>
+<clause id="_class_geosrsspatialreferencesystem" obligation="normative">
+<title>Class: geosrs:SpatialReferenceSystem</title>
+<p id="_cd76ce1f-6738-93d8-82c4-36f86bfe2d42">The class <link target="https://w3id.org/geosrs/geosrs:SpatialReferenceSystem"><tt>geosrs:geosrs:SpatialReferenceSystem</tt></link> is defined by the following:</p>
+
+<p id="_c89c08f2-00c9-684c-c576-d49502bd9792">A reference system allowing the description of a position.</p>
 </clause>
 
-<clause id="_class_geosrsgeosrscoordinateoperation" obligation="normative">
-<title>Class: geosrs:geosrs:CoordinateOperation</title>
-<p id="_2814a67b-830e-7c87-2937-dc5359851b96">The class <link target="https://w3id.org/geosrs/geosrs:CoordinateOperation"><tt>geosrs:geosrs:CoordinateOperation</tt></link> is defined by the following:</p>
+<clause id="_class_geosrscoordinateoperation" obligation="normative">
+<title>Class: geosrs:CoordinateOperation</title>
+<p id="_c38f8535-adb4-a2cd-13c7-4de508156679">The class <link target="https://w3id.org/geosrs/geosrs:CoordinateOperation"><tt>geosrs:geosrs:CoordinateOperation</tt></link> is defined by the following:</p>
+
+<p id="_b2899a20-1273-d892-38b4-4c2b8e81e364">Mathematical operation on coordinates, based on one-to-one relationship, that changes coordinates from one coordinate reference system to another. Cf. ISO 19111:2007:2007-07, part 11.1, table 42 and annex B.4.</p>
 </clause>
 
-<clause id="_class_geosrsgeosrssingleoperation" obligation="normative">
-<title>Class: geosrs:geosrs:SingleOperation</title>
-<p id="_d3db6542-897b-4293-4e66-64a35bf5ba54">The class <link target="https://w3id.org/geosrs/geosrs:SingleOperation"><tt>geosrs:geosrs:SingleOperation</tt></link> is defined by the following:</p>
+<clause id="_class_geosrssingleoperation" obligation="normative">
+<title>Class: geosrs:SingleOperation</title>
+<p id="_d8a05490-d1f1-17be-4ee7-f99814c1ab94">The class <link target="https://w3id.org/geosrs/geosrs:SingleOperation"><tt>geosrs:geosrs:SingleOperation</tt></link> is defined by the following:</p>
+
+<p id="_d49cdce5-fbc5-9cb0-a934-247f1f2c64e8">A non concatenated coordinate operation. Cf. ISO 19111:2007:2007-07, table 43.</p>
 </clause>
 
-<clause id="_class_geosrsgeosrstransformation" obligation="normative">
-<title>Class: geosrs:geosrs:Transformation</title>
-<p id="_37649eda-0cca-6340-b4f4-843a2bb513aa">The class <link target="https://w3id.org/geosrs/geosrs:Transformation"><tt>geosrs:geosrs:Transformation</tt></link> is defined by the following:</p>
+<clause id="_class_geosrstransformation" obligation="normative">
+<title>Class: geosrs:Transformation</title>
+<p id="_60264e5b-a0bc-13c8-90c1-68d223a580e1">The class <link target="https://w3id.org/geosrs/geosrs:Transformation"><tt>geosrs:geosrs:Transformation</tt></link> is defined by the following:</p>
+
+<p id="_5f123822-425f-ccd9-9d04-709930cbb1f5">Coordinate operation in which the two coordinate reference systems are based on different datums. Cf. ISO 19111:2007:2007-07, table 44.</p>
 </clause>
 
-<clause id="_class_geosrsgeosrsconversion" obligation="normative">
-<title>Class: geosrs:geosrs:Conversion</title>
-<p id="_9a971dac-b91b-1ae2-2c99-763487873e67">The class <link target="https://w3id.org/geosrs/geosrs:Conversion"><tt>geosrs:geosrs:Conversion</tt></link> is defined by the following:</p>
+<clause id="_class_geosrsconversion" obligation="normative">
+<title>Class: geosrs:Conversion</title>
+<p id="_f2970ee8-f7cb-1e52-22ce-0af637a99956">The class <link target="https://w3id.org/geosrs/geosrs:Conversion"><tt>geosrs:geosrs:Conversion</tt></link> is defined by the following:</p>
+
+<p id="_7f9fea6b-6a81-5a66-5788-a353d764fe9f">Coordinate operation in which both coordinate reference systems are based on the same datum. Cf. ISO 19111:2007:2007-07, table 45 and annex B.4.2.</p>
 </clause>
 
-<clause id="_class_geosrsgeosrsoperationmethod" obligation="normative">
-<title>Class: geosrs:geosrs:OperationMethod</title>
-<p id="_a0a665f7-f870-0092-ad4e-396a08358723">The class <link target="https://w3id.org/geosrs/geosrs:OperationMethod"><tt>geosrs:geosrs:OperationMethod</tt></link> is defined by the following:</p>
+<clause id="_class_geosrsoperationmethod" obligation="normative">
+<title>Class: geosrs:OperationMethod</title>
+<p id="_0c7a7bbe-c2cf-a527-727e-b8837a8efa16">The class <link target="https://w3id.org/geosrs/geosrs:OperationMethod"><tt>geosrs:geosrs:OperationMethod</tt></link> is defined by the following:</p>
+
+<p id="_3f49b666-3ab1-77ff-8ef0-2d025b3e3164">Method used to perform an operation on coordinates. See ISO 19111:2007:2007-07, table 48 and annex B.4.5.</p>
 </clause>
 
-<clause id="_class_geosrsgeosrsoperationparameter" obligation="normative">
-<title>Class: geosrs:geosrs:OperationParameter</title>
-<p id="_786ad69c-b6a8-f264-ba92-bbb476b4ba12">The class <link target="https://w3id.org/geosrs/geosrs:OperationParameter"><tt>geosrs:geosrs:OperationParameter</tt></link> is defined by the following:</p>
+<clause id="_class_geosrsoperationparameter" obligation="normative">
+<title>Class: geosrs:OperationParameter</title>
+<p id="_a10bccde-be92-5e5d-52a0-de2f7d4186d0">The class <link target="https://w3id.org/geosrs/geosrs:OperationParameter"><tt>geosrs:geosrs:OperationParameter</tt></link> is defined by the following:</p>
+
+<p id="_9ec1589b-bd48-cbd0-b2ee-01ecef89ad9f">Parameter used by a method to perform an operation on coordinates. See ISO 19111:2007:2007-07, table 52 and annex B.4.5.</p>
 </clause>
 
-<clause id="_class_geosrsgeosrsoperationparametervalue" obligation="normative">
-<title>Class: geosrs:geosrs:OperationParameterValue</title>
-<p id="_d087efc4-55ba-7622-5586-7ea7611c30f6">The class <link target="https://w3id.org/geosrs/geosrs:OperationParameterValue"><tt>geosrs:geosrs:OperationParameterValue</tt></link> is defined by the following:</p>
+<clause id="_class_geosrsoperationparametervalue" obligation="normative">
+<title>Class: geosrs:OperationParameterValue</title>
+<p id="_ba976577-b685-ce2e-1747-1f33212719ac">The class <link target="https://w3id.org/geosrs/geosrs:OperationParameterValue"><tt>geosrs:geosrs:OperationParameterValue</tt></link> is defined by the following:</p>
+
+<p id="_fdf9ac4c-a03e-3707-e914-cfa2afd38530">Value of a parameter used by a method to perform an operation on coordinates. See ISO 19111:2007:2007-07, table 55.</p>
 </clause>
 
-<clause id="_class_geosrsgeosrsdatum" obligation="normative">
-<title>Class: geosrs:geosrs:Datum</title>
-<p id="_b20ee0e2-afec-99fc-f61e-f1850530d816">The class <link target="https://w3id.org/geosrs/geosrs:Datum"><tt>geosrs:geosrs:Datum</tt></link> is defined by the following:</p>
+<clause id="_class_geosrsdatum" obligation="normative">
+<title>Class: geosrs:Datum</title>
+<p id="_e798f2bf-7427-c775-1078-e35b4627ea2d">The class <link target="https://w3id.org/geosrs/geosrs:Datum"><tt>geosrs:geosrs:Datum</tt></link> is defined by the following:</p>
+
+<p id="_d2cee695-f9d0-58b7-51bb-9e9f6eeaaa9b">Parameter or set of parameters that define the position of the origin, the scale and the orientation of a coordinate system. Cf. ISO 19111:2007:2007-07, part 10.1, table 33 and annex B.3.</p>
 </clause>
 
-<clause id="_class_geosrsgeosrsgeodeticdatum" obligation="normative">
-<title>Class: geosrs:geosrs:GeodeticDatum</title>
-<p id="_277c4f74-8862-5741-38da-8f26eb016612">The class <link target="https://w3id.org/geosrs/geosrs:GeodeticDatum"><tt>geosrs:geosrs:GeodeticDatum</tt></link> is defined by the following:</p>
+<clause id="_class_geosrsgeodeticdatum" obligation="normative">
+<title>Class: geosrs:GeodeticDatum</title>
+<p id="_63c19125-7aa2-d4fd-c0e9-6683391f7e92">The class <link target="https://w3id.org/geosrs/geosrs:GeodeticDatum"><tt>geosrs:geosrs:GeodeticDatum</tt></link> is defined by the following:</p>
+
+<p id="_37ebe9f0-3ce0-f803-b5ef-f74f4b6cf8f8">Datum describing the relation of a two- or three-dimensional coordinate system to the Earth. Cf. ISO 19111:2007:2007-07, part 10.2, table 34 and annex B.3.2.</p>
 </clause>
 
-<clause id="_class_geosrsgeosrsprimemeridian" obligation="normative">
-<title>Class: geosrs:geosrs:PrimeMeridian</title>
-<p id="_21643d30-a6c3-c432-fc2d-0521f44f2d11">The class <link target="https://w3id.org/geosrs/geosrs:PrimeMeridian"><tt>geosrs:geosrs:PrimeMeridian</tt></link> is defined by the following:</p>
+<clause id="_class_geosrsprimemeridian" obligation="normative">
+<title>Class: geosrs:PrimeMeridian</title>
+<p id="_06a95c63-898f-3b6c-b793-c6e289f91524">The class <link target="https://w3id.org/geosrs/geosrs:PrimeMeridian"><tt>geosrs:geosrs:PrimeMeridian</tt></link> is defined by the following:</p>
+
+<p id="_a034a3e0-0fbd-68b0-314f-034f9ffd4107">Meridian from which the longitudes of other meridians are quantified. Cf. ISO 19111:2007:2007-07, part 10.2.1, table 35 and annex B.3.2.2.</p>
 </clause>
 
-<clause id="_class_geosrsgeosrsellipsoid" obligation="normative">
-<title>Class: geosrs:geosrs:Ellipsoid</title>
-<p id="_84149d33-6d82-b0c7-90ee-03153ca34d3f">The class <link target="https://w3id.org/geosrs/geosrs:Ellipsoid"><tt>geosrs:geosrs:Ellipsoid</tt></link> is defined by the following:</p>
+<clause id="_class_geosrsellipsoid" obligation="normative">
+<title>Class: geosrs:Ellipsoid</title>
+<p id="_e55567ff-3725-b2d2-e452-84930653fda9">The class <link target="https://w3id.org/geosrs/geosrs:Ellipsoid"><tt>geosrs:geosrs:Ellipsoid</tt></link> is defined by the following:</p>
+
+<p id="_963e3e02-23b5-44a9-b0fb-e2aa977d183c">Surface formed by the rotation of an ellipse about its minor axis, defined by a semi-major axis and a flattening parameter and fairly geocentric. NB : It is a mathematical model of the geoid, i.e. the Earth without its relief. Many geodetic ellipsoids exist. Cf. ISO 19111:2007:2007-07, part 10.2.2, table 36 and annex B.3.2.3.</p>
 </clause>
 
-<clause id="_class_geosrsgeosrsverticaldatum" obligation="normative">
-<title>Class: geosrs:geosrs:VerticalDatum</title>
-<p id="_a70c2b7d-cbb3-e55c-f868-ea95f1264e54">The class <link target="https://w3id.org/geosrs/geosrs:VerticalDatum"><tt>geosrs:geosrs:VerticalDatum</tt></link> is defined by the following:</p>
+<clause id="_class_geosrsverticaldatum" obligation="normative">
+<title>Class: geosrs:VerticalDatum</title>
+<p id="_1a047d20-2dbf-8f39-62c1-92ad0c8f922c">The class <link target="https://w3id.org/geosrs/geosrs:VerticalDatum"><tt>geosrs:geosrs:VerticalDatum</tt></link> is defined by the following:</p>
+
+<p id="_03ee7d6f-8a8d-fbf6-e49b-f6129ef3b1bc">Datum describing the relation of gravity-related heights or depths to the Earth. Cf. ISO 19111:2007:2007-07, table 41 and annex B.3.3.</p>
 </clause>
 </clause>
 
@@ -379,22 +433,22 @@
 
 <clause id="_ign_crs_ontology" obligation="informative">
 <title>IGN CRS Ontology</title>
-<table id="_17ff0440-523f-66b7-9e86-b9c165b458f9">
+<table id="_783d5419-6dfa-d1ce-131c-392864775238">
 <name>Alignment: IGN CRS Ontology</name>
 <thead><tr><th valign="middle" align="left">From Element</th>
 <th valign="middle" align="left">Mapping relation</th>
 <th valign="middle" align="left">To Element</th>
 <th valign="middle" align="left">Notes</th>
 </tr></thead>
-<tbody><tr><td valign="middle" align="left"><eref bibitemid="Class__geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>CoordinateSystem</referenceFrom></locality></localityStack>geosrs:CoordinateSystem</eref></td>
+<tbody><tr><td valign="middle" align="left"><xref target="_class_geosrscoordinatesystem"><tt>geosrs:CoordinateSystem</tt></xref></td>
 <td valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#equivalentClass"><tt>owl:equivalentClass</tt></link></td>
 <td valign="middle" align="left"><link target="http://data.ign.fr/def/ignf#CoordinateSystem"><tt>ign:CoordinateSystem</tt></link></td>
 <td valign="middle" align="left">-</td>
-</tr><tr><td valign="middle" align="left"><eref bibitemid="Class__geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>Datum</referenceFrom></locality></localityStack>geosrs:Datum</eref></td>
+</tr><tr><td valign="middle" align="left"><xref target="_class_geosrsdatum"><tt>geosrs:Datum</tt></xref></td>
 <td valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#equivalentClass"><tt>owl:equivalentClass</tt></link></td>
 <td valign="middle" align="left"><link target="http://data.ign.fr/def/ignf#Datum"><tt>ign:Datum</tt></link></td>
 <td valign="middle" align="left">-</td>
-</tr><tr><td valign="middle" align="left"><eref bibitemid="Class__geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>Ellipsoid</referenceFrom></locality></localityStack>geosrs:Ellipsoid</eref></td>
+</tr><tr><td valign="middle" align="left"><xref target="_class_geosrsellipsoid"><tt>geosrs:Ellipsoid</tt></xref></td>
 <td valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#equivalentClass"><tt>owl:equivalentClass</tt></link></td>
 <td valign="middle" align="left"><link target="http://data.ign.fr/def/ignf#Ellipsoid"><tt>ign:Ellipsoid</tt></link></td>
 <td valign="middle" align="left">-</td>
@@ -404,22 +458,22 @@
 
 <clause id="_iso_19111_ontology" obligation="informative">
 <title>ISO 19111 Ontology</title>
-<table id="_611182ae-f060-c56d-fa39-e8bf9e8f325d">
+<table id="_802f1dec-9dbe-1b1f-1c6d-65ad4fddeece">
 <name>Alignment: ISO 19111 Ontology</name>
 <thead><tr><th valign="middle" align="left">From Element</th>
 <th valign="middle" align="left">Mapping relation</th>
 <th valign="middle" align="left">To Element</th>
 <th valign="middle" align="left">Notes</th>
 </tr></thead>
-<tbody><tr><td valign="middle" align="left"><eref bibitemid="Class__geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>CoordinateSystem</referenceFrom></locality></localityStack>geosrs:CoordinateSystem</eref></td>
+<tbody><tr><td valign="middle" align="left"><xref target="_class_geosrscoordinatesystem"><tt>geosrs:CoordinateSystem</tt></xref></td>
 <td valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#equivalentClass"><tt>owl:equivalentClass</tt></link></td>
 <td valign="middle" align="left"><link target="http://def.isotc211.org/iso19112/2019/SpatialReferencingByGeographicIdentifier#CoordinateSystem"><tt>iso19111:CoordinateSystem</tt></link></td>
 <td valign="middle" align="left">-</td>
-</tr><tr><td valign="middle" align="left"><eref bibitemid="Class__geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>Datum</referenceFrom></locality></localityStack>geosrs:Datum</eref></td>
+</tr><tr><td valign="middle" align="left"><xref target="_class_geosrsdatum"><tt>geosrs:Datum</tt></xref></td>
 <td valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#equivalentClass"><tt>owl:equivalentClass</tt></link></td>
 <td valign="middle" align="left"><link target="http://def.isotc211.org/iso19112/2019/SpatialReferencingByGeographicIdentifier#Datum"><tt>iso19111:Datum</tt></link></td>
 <td valign="middle" align="left">-</td>
-</tr><tr><td valign="middle" align="left"><eref bibitemid="Class__geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>Ellipsoid</referenceFrom></locality></localityStack>geosrs:Ellipsoid</eref></td>
+</tr><tr><td valign="middle" align="left"><xref target="_class_geosrsellipsoid"><tt>geosrs:Ellipsoid</tt></xref></td>
 <td valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#equivalentClass"><tt>owl:equivalentClass</tt></link></td>
 <td valign="middle" align="left"><link target="http://def.isotc211.org/iso19112/2019/SpatialReferencingByGeographicIdentifier#Ellipsoid"><tt>iso19111:Ellipsoid</tt></link></td>
 <td valign="middle" align="left">-</td>
@@ -429,14 +483,14 @@
 
 <clause id="_ifcowl_ontology" obligation="informative">
 <title>IFCOWL Ontology</title>
-<table id="_630955a7-0ed4-d10c-caea-1b747a29414e">
+<table id="_71db8d5e-63c1-2c0f-96fd-986457044383">
 <name>Alignment: IFCOWL Ontology</name>
 <thead><tr><th valign="middle" align="left">From Element</th>
 <th valign="middle" align="left">Mapping relation</th>
 <th valign="middle" align="left">To Element</th>
 <th valign="middle" align="left">Notes</th>
 </tr></thead>
-<tbody><tr><td valign="middle" align="left"><eref bibitemid="Class__geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>CRS</referenceFrom></locality></localityStack>geosrs:CRS</eref></td>
+<tbody><tr><td valign="middle" align="left"><xref target="_class_geosrscrs"><tt>geosrs:CRS</tt></xref></td>
 <td valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#equivalentClass"><tt>owl:equivalentClass</tt></link></td>
 <td valign="middle" align="left"><link target="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL/CoordinateReferenceSystem"><tt>ifc:CoordinateReferenceSystem</tt></link></td>
 <td valign="middle" align="left">-</td>
@@ -621,8 +675,5 @@ Performance Distributed Computing, pp. 181–184. IEEE Press, New York (2001)</f
 
 
 
-</references><references hidden="true" normative="false"><bibitem id="Class__geosrs" type="internal">
-<docidentifier type="repository">Class/ geosrs</docidentifier>
-</bibitem>
 </references></bibliography>
 </ogc-standard>

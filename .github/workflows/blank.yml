@@ -29,12 +29,11 @@ jobs:
     - name: Create Ontology Documentation 🔧
       run: |
          python3 scripts/srsbuild.py
-         mkdir site
-         mkdir site/spec
-         mkdir site/respec
-         metanorma site generate --agree-to-terms -o site/spec/
-         asciidoctor spec/document.adoc --trace -T spec/templates/html5/ -o site/respec/index.html
          mkdir docs
+         mkdir docs/spec
+         mkdir docs/respec
+         metanorma site generate --agree-to-terms -o docs/spec/
+         asciidoctor spec/document.adoc --trace -T spec/templates/html5/ -o docs/respec/index.html
          mv *.ttl docs/
          mv context docs/
          mv index.html docs/
@@ -77,13 +76,6 @@ jobs:
          BRANCH: gh-pages
          FOLDER: docs/
          clean: false
-    - name: Deploy 🚀
-      uses: JamesIves/github-pages-deploy-action@releases/v4
-      with:
-         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-         BRANCH: gh-pages
-         clean: false
-         FOLDER: site/  
   #ontdoc: 
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
   #  uses: sparqlunicorn/sparqlunicornGoesGIS-ontdoc/.github/workflows/udoc.yml@main

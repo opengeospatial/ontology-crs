@@ -161,7 +161,154 @@
 
 <clause id="_core" obligation="normative">
 <title>Core</title>
-<p id="core">This clause establishes the <strong>Core</strong> Requirements class, with IRI <tt>/req/core</tt>, which has a corresponding Conformance Class, <strong>Core</strong>, with IRI <tt>/conf/core</tt>. ==== Class: geosrs:geosrs:CoordinateSystem The class  <link target="https://w3id.org/geosrs/geosrs:CoordinateSystem"><tt>geosrs:geosrs:CoordinateSystem</tt></link> is defined by the following:==== Class: geosrs:geosrs:CartesianCoordinateSystem The class  <link target="https://w3id.org/geosrs/geosrs:CartesianCoordinateSystem"><tt>geosrs:geosrs:CartesianCoordinateSystem</tt></link> is defined by the following:==== Class: geosrs:geosrs:EllipsoidalCoordinateSystem The class  <link target="https://w3id.org/geosrs/geosrs:EllipsoidalCoordinateSystem"><tt>geosrs:geosrs:EllipsoidalCoordinateSystem</tt></link> is defined by the following:==== Class: geosrs:geosrs:LinearCoordinateSystem The class  <link target="https://w3id.org/geosrs/geosrs:LinearCoordinateSystem"><tt>geosrs:geosrs:LinearCoordinateSystem</tt></link> is defined by the following:==== Class: geosrs:geosrs:OrdinalCoordinateSystem The class  <link target="https://w3id.org/geosrs/geosrs:OrdinalCoordinateSystem"><tt>geosrs:geosrs:OrdinalCoordinateSystem</tt></link> is defined by the following:==== Class: geosrs:geosrs:ParametricCoordinateSystem The class  <link target="https://w3id.org/geosrs/geosrs:ParametricCoordinateSystem"><tt>geosrs:geosrs:ParametricCoordinateSystem</tt></link> is defined by the following:==== Class: geosrs:geosrs:PolarCoordinateSystem The class  <link target="https://w3id.org/geosrs/geosrs:PolarCoordinateSystem"><tt>geosrs:geosrs:PolarCoordinateSystem</tt></link> is defined by the following:==== Class: geosrs:geosrs:SphericalCoordinateSystem The class  <link target="https://w3id.org/geosrs/geosrs:SphericalCoordinateSystem"><tt>geosrs:geosrs:SphericalCoordinateSystem</tt></link> is defined by the following:==== Class: geosrs:geosrs:VerticalCoordinateSystem The class  <link target="https://w3id.org/geosrs/geosrs:VerticalCoordinateSystem"><tt>geosrs:geosrs:VerticalCoordinateSystem</tt></link> is defined by the following:==== Class: geosrs:geosrs:CoordinateSystemAxis The class  <link target="https://w3id.org/geosrs/geosrs:CoordinateSystemAxis"><tt>geosrs:geosrs:CoordinateSystemAxis</tt></link> is defined by the following:==== Class: geosrs:geosrs:AreaOfUse The class  <link target="https://w3id.org/geosrs/geosrs:AreaOfUse"><tt>geosrs:geosrs:AreaOfUse</tt></link> is defined by the following:==== Class: geosrs:geosrs:CRS The class  <link target="https://w3id.org/geosrs/geosrs:CRS"><tt>geosrs:geosrs:CRS</tt></link> is defined by the following:==== Class: geosrs:geosrs:EngineeringCRS The class  <link target="https://w3id.org/geosrs/geosrs:EngineeringCRS"><tt>geosrs:geosrs:EngineeringCRS</tt></link> is defined by the following:==== Class: geosrs:geosrs:GeodeticCRS The class  <link target="https://w3id.org/geosrs/geosrs:GeodeticCRS"><tt>geosrs:geosrs:GeodeticCRS</tt></link> is defined by the following:==== Class: geosrs:geosrs:GeographicCRS The class  <link target="https://w3id.org/geosrs/geosrs:GeographicCRS"><tt>geosrs:geosrs:GeographicCRS</tt></link> is defined by the following:==== Class: geosrs:geosrs:ProjectedCRS The class  <link target="https://w3id.org/geosrs/geosrs:ProjectedCRS"><tt>geosrs:geosrs:ProjectedCRS</tt></link> is defined by the following:==== Class: geosrs:geosrs:SingleCRS The class  <link target="https://w3id.org/geosrs/geosrs:SingleCRS"><tt>geosrs:geosrs:SingleCRS</tt></link> is defined by the following:==== Class: geosrs:geosrs:SpatialReferenceSystem The class  <link target="https://w3id.org/geosrs/geosrs:SpatialReferenceSystem"><tt>geosrs:geosrs:SpatialReferenceSystem</tt></link> is defined by the following:==== Class: geosrs:geosrs:CoordinateOperation The class  <link target="https://w3id.org/geosrs/geosrs:CoordinateOperation"><tt>geosrs:geosrs:CoordinateOperation</tt></link> is defined by the following:==== Class: geosrs:geosrs:SingleOperation The class  <link target="https://w3id.org/geosrs/geosrs:SingleOperation"><tt>geosrs:geosrs:SingleOperation</tt></link> is defined by the following:==== Class: geosrs:geosrs:Transformation The class  <link target="https://w3id.org/geosrs/geosrs:Transformation"><tt>geosrs:geosrs:Transformation</tt></link> is defined by the following:==== Class: geosrs:geosrs:Conversion The class  <link target="https://w3id.org/geosrs/geosrs:Conversion"><tt>geosrs:geosrs:Conversion</tt></link> is defined by the following:==== Class: geosrs:geosrs:OperationMethod The class  <link target="https://w3id.org/geosrs/geosrs:OperationMethod"><tt>geosrs:geosrs:OperationMethod</tt></link> is defined by the following:==== Class: geosrs:geosrs:OperationParameter The class  <link target="https://w3id.org/geosrs/geosrs:OperationParameter"><tt>geosrs:geosrs:OperationParameter</tt></link> is defined by the following:==== Class: geosrs:geosrs:OperationParameterValue The class  <link target="https://w3id.org/geosrs/geosrs:OperationParameterValue"><tt>geosrs:geosrs:OperationParameterValue</tt></link> is defined by the following:==== Class: geosrs:geosrs:Datum The class  <link target="https://w3id.org/geosrs/geosrs:Datum"><tt>geosrs:geosrs:Datum</tt></link> is defined by the following:==== Class: geosrs:geosrs:GeodeticDatum The class  <link target="https://w3id.org/geosrs/geosrs:GeodeticDatum"><tt>geosrs:geosrs:GeodeticDatum</tt></link> is defined by the following:==== Class: geosrs:geosrs:PrimeMeridian The class  <link target="https://w3id.org/geosrs/geosrs:PrimeMeridian"><tt>geosrs:geosrs:PrimeMeridian</tt></link> is defined by the following:==== Class: geosrs:geosrs:Ellipsoid The class  <link target="https://w3id.org/geosrs/geosrs:Ellipsoid"><tt>geosrs:geosrs:Ellipsoid</tt></link> is defined by the following:==== Class: geosrs:geosrs:VerticalDatum The class  <link target="https://w3id.org/geosrs/geosrs:VerticalDatum"><tt>geosrs:geosrs:VerticalDatum</tt></link> is defined by the following:</p>
+<p id="core">This clause establishes the <strong>Core</strong> Requirements class, with IRI <tt>/req/core</tt>, which has a corresponding Conformance Class, <strong>Core</strong>, with IRI <tt>/conf/core</tt>. ==== Class: geosrs:geosrs:CoordinateSystem</p>
+
+<p id="_7c4a042b-9460-32de-a070-11c21921eddd">The class <link target="https://w3id.org/geosrs/geosrs:CoordinateSystem"><tt>geosrs:geosrs:CoordinateSystem</tt></link> is defined by the following:</p>
+
+<clause id="_class_geosrsgeosrscartesiancoordinatesystem" obligation="normative">
+<title>Class: geosrs:geosrs:CartesianCoordinateSystem</title>
+<p id="_c0cc02ff-3dd3-13b2-5eea-b638d5495514">The class <link target="https://w3id.org/geosrs/geosrs:CartesianCoordinateSystem"><tt>geosrs:geosrs:CartesianCoordinateSystem</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsgeosrsellipsoidalcoordinatesystem" obligation="normative">
+<title>Class: geosrs:geosrs:EllipsoidalCoordinateSystem</title>
+<p id="_f2d0a3c6-ce72-1a26-fdfd-78d8fe5c2052">The class <link target="https://w3id.org/geosrs/geosrs:EllipsoidalCoordinateSystem"><tt>geosrs:geosrs:EllipsoidalCoordinateSystem</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsgeosrslinearcoordinatesystem" obligation="normative">
+<title>Class: geosrs:geosrs:LinearCoordinateSystem</title>
+<p id="_a398934b-6d52-3f20-7fde-7108045cb1d0">The class <link target="https://w3id.org/geosrs/geosrs:LinearCoordinateSystem"><tt>geosrs:geosrs:LinearCoordinateSystem</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsgeosrsordinalcoordinatesystem" obligation="normative">
+<title>Class: geosrs:geosrs:OrdinalCoordinateSystem</title>
+<p id="_b24520cc-6ae4-e278-d080-e0b8a66c70a6">The class <link target="https://w3id.org/geosrs/geosrs:OrdinalCoordinateSystem"><tt>geosrs:geosrs:OrdinalCoordinateSystem</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsgeosrsparametriccoordinatesystem" obligation="normative">
+<title>Class: geosrs:geosrs:ParametricCoordinateSystem</title>
+<p id="_67433e4f-b2de-88e1-1290-73209af4b8e2">The class <link target="https://w3id.org/geosrs/geosrs:ParametricCoordinateSystem"><tt>geosrs:geosrs:ParametricCoordinateSystem</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsgeosrspolarcoordinatesystem" obligation="normative">
+<title>Class: geosrs:geosrs:PolarCoordinateSystem</title>
+<p id="_3385ae98-f6e4-e53c-7c0b-ef5d44148e38">The class <link target="https://w3id.org/geosrs/geosrs:PolarCoordinateSystem"><tt>geosrs:geosrs:PolarCoordinateSystem</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsgeosrssphericalcoordinatesystem" obligation="normative">
+<title>Class: geosrs:geosrs:SphericalCoordinateSystem</title>
+<p id="_7da6c1f7-610b-5e03-1653-174a6a31249c">The class <link target="https://w3id.org/geosrs/geosrs:SphericalCoordinateSystem"><tt>geosrs:geosrs:SphericalCoordinateSystem</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsgeosrsverticalcoordinatesystem" obligation="normative">
+<title>Class: geosrs:geosrs:VerticalCoordinateSystem</title>
+<p id="_cd4f9a04-86a8-eeac-d18d-3a221bbaf6df">The class <link target="https://w3id.org/geosrs/geosrs:VerticalCoordinateSystem"><tt>geosrs:geosrs:VerticalCoordinateSystem</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsgeosrscoordinatesystemaxis" obligation="normative">
+<title>Class: geosrs:geosrs:CoordinateSystemAxis</title>
+<p id="_275be097-0305-88cd-f359-362b5f2d04b1">The class <link target="https://w3id.org/geosrs/geosrs:CoordinateSystemAxis"><tt>geosrs:geosrs:CoordinateSystemAxis</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsgeosrsareaofuse" obligation="normative">
+<title>Class: geosrs:geosrs:AreaOfUse</title>
+<p id="_d1b913e7-386d-fd62-6025-1766e2b79cd7">The class <link target="https://w3id.org/geosrs/geosrs:AreaOfUse"><tt>geosrs:geosrs:AreaOfUse</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsgeosrscrs" obligation="normative">
+<title>Class: geosrs:geosrs:CRS</title>
+<p id="_618c3b40-6c2a-b632-9ba1-bc3f4c7943e2">The class <link target="https://w3id.org/geosrs/geosrs:CRS"><tt>geosrs:geosrs:CRS</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsgeosrsengineeringcrs" obligation="normative">
+<title>Class: geosrs:geosrs:EngineeringCRS</title>
+<p id="_07113b87-b6dc-e8c3-9cc4-db89f67c549b">The class <link target="https://w3id.org/geosrs/geosrs:EngineeringCRS"><tt>geosrs:geosrs:EngineeringCRS</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsgeosrsgeodeticcrs" obligation="normative">
+<title>Class: geosrs:geosrs:GeodeticCRS</title>
+<p id="_5e66394b-1198-c83e-314a-fe174ef293d9">The class <link target="https://w3id.org/geosrs/geosrs:GeodeticCRS"><tt>geosrs:geosrs:GeodeticCRS</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsgeosrsgeographiccrs" obligation="normative">
+<title>Class: geosrs:geosrs:GeographicCRS</title>
+<p id="_2391a94c-d3d1-a921-f0b4-775b0b4b0c1a">The class <link target="https://w3id.org/geosrs/geosrs:GeographicCRS"><tt>geosrs:geosrs:GeographicCRS</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsgeosrsprojectedcrs" obligation="normative">
+<title>Class: geosrs:geosrs:ProjectedCRS</title>
+<p id="_f859818b-b141-c7d9-406b-1ddb35db344e">The class <link target="https://w3id.org/geosrs/geosrs:ProjectedCRS"><tt>geosrs:geosrs:ProjectedCRS</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsgeosrssinglecrs" obligation="normative">
+<title>Class: geosrs:geosrs:SingleCRS</title>
+<p id="_5124d040-4435-df71-24c0-4538154de5c7">The class <link target="https://w3id.org/geosrs/geosrs:SingleCRS"><tt>geosrs:geosrs:SingleCRS</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsgeosrsspatialreferencesystem" obligation="normative">
+<title>Class: geosrs:geosrs:SpatialReferenceSystem</title>
+<p id="_afc10680-44cd-962f-09c4-b4a647474e15">The class <link target="https://w3id.org/geosrs/geosrs:SpatialReferenceSystem"><tt>geosrs:geosrs:SpatialReferenceSystem</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsgeosrscoordinateoperation" obligation="normative">
+<title>Class: geosrs:geosrs:CoordinateOperation</title>
+<p id="_ba9d143a-606e-1f9e-5676-50c9e41a7ac0">The class <link target="https://w3id.org/geosrs/geosrs:CoordinateOperation"><tt>geosrs:geosrs:CoordinateOperation</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsgeosrssingleoperation" obligation="normative">
+<title>Class: geosrs:geosrs:SingleOperation</title>
+<p id="_d9e9a82e-70c7-6ac3-e3a3-d57bfebb3888">The class <link target="https://w3id.org/geosrs/geosrs:SingleOperation"><tt>geosrs:geosrs:SingleOperation</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsgeosrstransformation" obligation="normative">
+<title>Class: geosrs:geosrs:Transformation</title>
+<p id="_c0e4fdb9-1eb3-a628-d4de-1cdeeb401b5b">The class <link target="https://w3id.org/geosrs/geosrs:Transformation"><tt>geosrs:geosrs:Transformation</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsgeosrsconversion" obligation="normative">
+<title>Class: geosrs:geosrs:Conversion</title>
+<p id="_e9d6e57f-745e-05b3-e478-63a781db3452">The class <link target="https://w3id.org/geosrs/geosrs:Conversion"><tt>geosrs:geosrs:Conversion</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsgeosrsoperationmethod" obligation="normative">
+<title>Class: geosrs:geosrs:OperationMethod</title>
+<p id="_4de012c7-a8d6-1fb6-98c3-2bd8cc955798">The class <link target="https://w3id.org/geosrs/geosrs:OperationMethod"><tt>geosrs:geosrs:OperationMethod</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsgeosrsoperationparameter" obligation="normative">
+<title>Class: geosrs:geosrs:OperationParameter</title>
+<p id="_f2b65954-cb20-4d45-4e80-8f7b75ea201a">The class <link target="https://w3id.org/geosrs/geosrs:OperationParameter"><tt>geosrs:geosrs:OperationParameter</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsgeosrsoperationparametervalue" obligation="normative">
+<title>Class: geosrs:geosrs:OperationParameterValue</title>
+<p id="_473d39b0-717d-e8cd-ee06-4f6488c452ce">The class <link target="https://w3id.org/geosrs/geosrs:OperationParameterValue"><tt>geosrs:geosrs:OperationParameterValue</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsgeosrsdatum" obligation="normative">
+<title>Class: geosrs:geosrs:Datum</title>
+<p id="_9d87ca16-fbdd-c264-a0f9-aaa78c942b43">The class <link target="https://w3id.org/geosrs/geosrs:Datum"><tt>geosrs:geosrs:Datum</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsgeosrsgeodeticdatum" obligation="normative">
+<title>Class: geosrs:geosrs:GeodeticDatum</title>
+<p id="_c4e29aef-3f72-873f-3598-62f901dd06cc">The class <link target="https://w3id.org/geosrs/geosrs:GeodeticDatum"><tt>geosrs:geosrs:GeodeticDatum</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsgeosrsprimemeridian" obligation="normative">
+<title>Class: geosrs:geosrs:PrimeMeridian</title>
+<p id="_88f66ab8-acbe-e285-d96c-b56af23e87c1">The class <link target="https://w3id.org/geosrs/geosrs:PrimeMeridian"><tt>geosrs:geosrs:PrimeMeridian</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsgeosrsellipsoid" obligation="normative">
+<title>Class: geosrs:geosrs:Ellipsoid</title>
+<p id="_1b5fc606-a22f-73b3-010f-8d8440272c10">The class <link target="https://w3id.org/geosrs/geosrs:Ellipsoid"><tt>geosrs:geosrs:Ellipsoid</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsgeosrsverticaldatum" obligation="normative">
+<title>Class: geosrs:geosrs:VerticalDatum</title>
+<p id="_057625e9-4147-f8ee-4945-07b44d7d3947">The class <link target="https://w3id.org/geosrs/geosrs:VerticalDatum"><tt>geosrs:geosrs:VerticalDatum</tt></link> is defined by the following:</p>
+</clause>
 </clause>
 
 <clause id="_coordinate_operation_module" obligation="normative">

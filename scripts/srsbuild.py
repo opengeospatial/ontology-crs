@@ -35,7 +35,7 @@ ldcontext={"@context":{"rdfs":"http://www.w3.org/2000/01/rdf-schema#","rdf":"htt
 prefixtoclasses={"geosrs":[]}
 prefixtoproperties={"geosrs":[],"CS":[],"CO":[],"DATUM":[],"projection":[]}
 classToPrefix={}
-moduleToAdoc={"06-core.adoc":[],"07-co_extension.adoc":[],"08-cs_extension.adoc":[],"09-datum_extension.adoc":[],"10-srsapplication.adoc":[],"11-projections_extension.adoc":[],"12-planet_extension.adoc":[]}
+moduleToAdoc={"06-core.adoc":["\n\n"],"07-co_extension.adoc":[],"08-cs_extension.adoc":[],"09-datum_extension.adoc":[],"10-srsapplication.adoc":[],"11-projections_extension.adoc":[],"12-planet_extension.adoc":[]}
 
 gcore = Graph()
 gcore.bind("geosrs", "https://w3id.org/geosrs/") 
@@ -207,7 +207,7 @@ with open("spec/document.adoc", 'r',encoding="utf-8") as f:
     doc=f.read()
 
 for ad in moduleToAdoc:
-    doc=doc.replace("include::sections/"+str(ad)+"[]","include::sections/"+str(ad)+"[]\ninclude::sections/"+str(ad.replace(".adoc","_classes.adoc"))+"[]\n")
+    doc=doc.replace("include::sections/"+str(ad)+"[]","include::sections/"+str(ad)+"[]\n\ninclude::sections/"+str(ad.replace(".adoc","_classes.adoc"))+"[]\n")
 with open("spec/document.adoc", 'w',encoding="utf-8") as f:
     f.write(doc)
 

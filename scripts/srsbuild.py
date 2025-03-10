@@ -35,6 +35,7 @@ ldcontext={"@context":{"rdfs":"http://www.w3.org/2000/01/rdf-schema#","rdf":"htt
 prefixtoclasses={"geosrs":[]}
 prefixtoproperties={"geosrs":[],"CS":[],"CO":[],"DATUM":[],"projection":[]}
 classToPrefix={}
+moduleToAdoc={"06-core.adoc":[],"07-co_extension.adoc":[],"08-cs_extension.adoc":[],"09-datum_extension.adoc":[],"10-srsapplication.adoc":[],"11-projections_extension.adoc":[],"12-planet_extension.adoc":[]}
 
 gcore = Graph()
 gcore.bind("geosrs", "https://w3id.org/geosrs/") 
@@ -160,6 +161,7 @@ for file in os.listdir(directory):
                                     gcore.add((URIRef(row["Concept"].replace(coreprefix+":",geocrsNS)),OWL.disjointWith,URIRef(spl.replace("geosrs:", getNSForClass(spl,classToPrefix)))))
                             else:
                                 gcore.add((URIRef(row["Concept"].replace(coreprefix+":",geocrsNS)),OWL.disjointWith,URIRef(row["DisjointClass"].replace("geosrs:", getNSForClass(row["DisjointClass"],classToPrefix)))))
+                        moduleToAdoc["06-core.adoc"].append("==== Class: "+str(coreprefix)+":"+str(row["Concept"])+"\nThe class https://w3id.org/geosrs/"+str(row["Concept"])"+[`"+str(coreprefix)+":"+str(row["Concept"])+"`] is defined by the following:")
                     else:
                         g.add((URIRef(row["Concept"].replace(coreprefix+":",curns)),RDF.type,OWL.Class))
                         prefixtoclasses[curprefix].append(row["Concept"].replace(curprefix+":",curns).replace("geosrs:","").replace("geoprojection:",""))
@@ -194,7 +196,9 @@ for file in os.listdir(directory):
                                 g.add((URIRef(row["Concept"].replace(coreprefix+":",curns)),OWL.disjointWith,URIRef(row["DisjointClass"].replace("geosrs:", getNSForClass(row["DisjointClass"],classToPrefix)))))                      
     else:
         continue
- 
+
+
+
 #print(prefixtoclasses)
 #print(classToPrefix)
 dirname = os.path.dirname(__file__)

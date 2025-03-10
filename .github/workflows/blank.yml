@@ -2,48 +2,19 @@ name: Ontology Documentation CI
 
 on: [push]
 
-jobs:
- 
-  buildspec:
-    name: Build Metanorma Standard
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@v1
-    
-    - uses: actions/cache@v3
-      with:
-        path: ~/.fontist
-        key: fontist-ubuntu-latest
-        restore-keys: fontist-ubuntu-latest
-
-    - uses: actions-mn/setup@main
-    
-    - name: Run Metanorma 🔧
-      run: |
-         sudo apt-get update 
-         sudo apt-get install asciidoctor
-         sudo gem install tilt thread_safe concurrent-ruby
-         sudo gem install haml -v 5.2.2
-         mkdir site
-         mkdir site/spec
-         mkdir site/respec
-         metanorma site generate --agree-to-terms -o site/spec/
-         asciidoctor spec/document.adoc --trace -T spec/templates/html5/ -o site/respec/index.html
-    - name: Deploy 🚀
-      uses: JamesIves/github-pages-deploy-action@releases/v4
-      with:
-         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-         BRANCH: gh-pages
-         clean: false
-         FOLDER: site/  
-  
-  
+jobs:  
   
   build:
 
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
+    - uses: actions/cache@v3
+      with:
+        path: ~/.fontist
+        key: fontist-ubuntu-latest
+        restore-keys: fontist-ubuntu-latest
+    - uses: actions-mn/setup@main
     - name: Install dependencies
       run: | 
          sudo apt-get update
@@ -52,9 +23,17 @@ jobs:
          sudo apt-get install doxygen graphviz -y
          sudo apt-get install python3-venv python3-wheel -y
          sudo pip3 install wheel pylode==2.13.2
+         sudo apt-get install asciidoctor
+         sudo gem install tilt thread_safe concurrent-ruby
+         sudo gem install haml -v 5.2.2
     - name: Create Ontology Documentation 🔧
       run: |
          python3 scripts/srsbuild.py
+         mkdir site
+         mkdir site/spec
+         mkdir site/respec
+         metanorma site generate --agree-to-terms -o site/spec/
+         asciidoctor spec/document.adoc --trace -T spec/templates/html5/ -o site/respec/index.html
          mkdir docs
          mv *.ttl docs/
          mv context docs/
@@ -98,7 +77,13 @@ jobs:
          BRANCH: gh-pages
          FOLDER: docs/
          clean: false
-
+    - name: Deploy 🚀
+      uses: JamesIves/github-pages-deploy-action@releases/v4
+      with:
+         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+         BRANCH: gh-pages
+         clean: false
+         FOLDER: site/  
   #ontdoc: 
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
   #  uses: sparqlunicorn/sparqlunicornGoesGIS-ontdoc/.github/workflows/udoc.yml@main

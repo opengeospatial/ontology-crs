@@ -198,6 +198,18 @@ for file in os.listdir(directory):
         continue
 
 
+for ad in moduleToAdoc:
+    with open("spec/sections/"+ad.replace(".adoc","_classes.adoc"), 'w',encoding="utf-8") as f:
+        for part in moduleToAdoc[ad]:
+            f.write(part)
+doc=""
+with open("spec/document.adoc", 'r',encoding="utf-8") as f:
+    doc=f.read()
+
+for ad in moduleToAdoc:
+    doc=doc.replace("include::sections/"+str(ad)+"[]","include::sections/"+str(ad)+"[]\ninclude::sections/"+str(ad.replace(".adoc","_classes.adoc"))+"[]\n")
+with open("spec/document.adoc", 'w',encoding="utf-8") as f:
+    f.write(doc)
 
 #print(prefixtoclasses)
 #print(classToPrefix)

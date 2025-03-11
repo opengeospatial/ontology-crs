@@ -131,7 +131,7 @@ for file in os.listdir(directory):
                 if "Concept" in row and row["Concept"]!="":
                     core=False
                     if "Core Class?" in row and row["Core Class?"]=="Core Ontology":
-                        adocdef="==== Class: "+str(row["Concept"])+"\n\n[cols="1,1"]\n|===\n"
+                        adocdef="==== Class: "+str(row["Concept"])+"\n\n[cols=\"1,1\"]\n|===\n"
                         adocdef+="|URI,"+str(row["Concept"].replace(coreprefix+":",curns))+"\n"
                         core=True
                         gcore.add((URIRef(row["Concept"].replace(coreprefix+":",geocrsNS)),RDF.type,OWL.Class))
@@ -172,7 +172,7 @@ for file in os.listdir(directory):
                         moduleToAdoc["06-core.adoc"].append(adocdef+"\n\n")
                     else:
                         g.add((URIRef(row["Concept"].replace(coreprefix+":",curns)),RDF.type,OWL.Class))
-                        adocdef="==== Class: "+str(row["Concept"])+"\n\n[cols="1,1"]\n|===\n"
+                        adocdef="==== Class: "+str(row["Concept"])+"\n\n[cols=\"1,1\"]\n|===\n"
                         adocdef+="|URI,"+str(row["Concept"].replace(coreprefix+":",curns))+"[]\n"
                         prefixtoclasses[curprefix].append(row["Concept"].replace(curprefix+":",curns).replace("geosrs:","").replace("geoprojection:",""))
                         classToPrefix[row["Concept"]]={"prefix":curprefix, "ns":curns}

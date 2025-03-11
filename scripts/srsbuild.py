@@ -163,13 +163,14 @@ for file in os.listdir(directory):
                             else:
                                 gcore.add((URIRef(row["Concept"].replace(coreprefix+":",geocrsNS)),RDFS.subClassOf,URIRef(row["SuperClass"].replace("geosrs:", getNSForClass(row["SuperClass"],classToPrefix)))))
                                 adocdef+=URIRef(spl.replace("geosrs:", getNSForClass(spl,classToPrefix)))+"[] "
+                            adocdef+="\n"
                         if "DisjointClass" in row and row["DisjointClass"]!="":
                             if " " in row["DisjointClass"]:
                                 for spl in row["DisjointClass"].split(" "):
                                     gcore.add((URIRef(row["Concept"].replace(coreprefix+":",geocrsNS)),OWL.disjointWith,URIRef(spl.replace("geosrs:", getNSForClass(spl,classToPrefix)))))
                             else:
                                 gcore.add((URIRef(row["Concept"].replace(coreprefix+":",geocrsNS)),OWL.disjointWith,URIRef(row["DisjointClass"].replace("geosrs:", getNSForClass(row["DisjointClass"],classToPrefix)))))
-                        moduleToAdoc["06-core.adoc"].append(adocdef+"\n\n")
+                        moduleToAdoc["06-core.adoc"].append(adocdef+"|===\n\n")
                     else:
                         g.add((URIRef(row["Concept"].replace(coreprefix+":",curns)),RDF.type,OWL.Class))
                         adocdef="==== Class: "+str(row["Concept"])+"\n\n[cols=\"1,1\"]\n|===\n"
@@ -198,10 +199,11 @@ for file in os.listdir(directory):
                             if " " in row["SuperClass"]:
                                 for spl in row["SuperClass"].split(" "):
                                     g.add((URIRef(row["Concept"].replace(coreprefix+":",curns)),RDFS.subClassOf,URIRef(spl.replace("geosrs:", getNSForClass(spl,classToPrefix)))))
-                                    adocdef+=URIRef(spl.replace("geosrs:", getNSForClass(spl,classToPrefix)))+"[] \n"
+                                    adocdef+=URIRef(spl.replace("geosrs:", getNSForClass(spl,classToPrefix)))+"[] "
                             else:
                                 g.add((URIRef(row["Concept"].replace(coreprefix+":",curns)),RDFS.subClassOf,URIRef(row["SuperClass"].replace("geosrs:", getNSForClass(row["SuperClass"],classToPrefix)))))
-                                adocdef+=URIRef(row["Concept"].replace(coreprefix+":",curns))+"[] \n"
+                                adocdef+=URIRef(row["Concept"].replace(coreprefix+":",curns))+"[] "
+                            adocdef+="\n"
                         if "DisjointClass" in row and row["DisjointClass"]!="":
                             if " " in row["DisjointClass"]:
                                 for spl in row["DisjointClass"].split(" "):
@@ -209,7 +211,7 @@ for file in os.listdir(directory):
                             else:
                                 g.add((URIRef(row["Concept"].replace(coreprefix+":",curns)),OWL.disjointWith,URIRef(row["DisjointClass"].replace("geosrs:", getNSForClass(row["DisjointClass"],classToPrefix)))))                      
                         if nsprefix in prefixToModule: 
-                            moduleToAdoc[prefixToModule[nsprefix]].append(adocdef+"\n\n")
+                            moduleToAdoc[prefixToModule[nsprefix]].append(adocdef+"|===\n\n")
 
     else:
         continue

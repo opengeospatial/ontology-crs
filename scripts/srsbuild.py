@@ -194,13 +194,14 @@ for file in os.listdir(directory):
                             else:
                                 ldcontext["@context"][row["OGCJSON"]]=row["Concept"].replace("geosrs:", getPrefixForClass(row["Concept"],classToPrefix)+":")
                         if "SuperClass" in row and row["SuperClass"]!="":
+                            adocdef+="|Super-classes,"
                             if " " in row["SuperClass"]:
                                 for spl in row["SuperClass"].split(" "):
                                     g.add((URIRef(row["Concept"].replace(coreprefix+":",curns)),RDFS.subClassOf,URIRef(spl.replace("geosrs:", getNSForClass(spl,classToPrefix)))))
-                                    adocdef+=URIRef(spl.replace("geosrs:", getNSForClass(spl,classToPrefix)))+"[] "
+                                    adocdef+=URIRef(spl.replace("geosrs:", getNSForClass(spl,classToPrefix)))+"[] \n"
                             else:
                                 g.add((URIRef(row["Concept"].replace(coreprefix+":",curns)),RDFS.subClassOf,URIRef(row["SuperClass"].replace("geosrs:", getNSForClass(row["SuperClass"],classToPrefix)))))
-                                adocdef+=URIRef(row["Concept"].replace(coreprefix+":",curns))+"[] "
+                                adocdef+=URIRef(row["Concept"].replace(coreprefix+":",curns))+"[] \n"
                         if "DisjointClass" in row and row["DisjointClass"]!="":
                             if " " in row["DisjointClass"]:
                                 for spl in row["DisjointClass"].split(" "):

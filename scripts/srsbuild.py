@@ -476,7 +476,7 @@ for prefix in alignmentadoc:
     alignments+="=== "+str(prefix).upper()+" Ontology\n\n.Alignment: "+str(prefix).upper()+" Ontology\n[%autowidth]\n|===\n| From Element | Mapping relation | To Element | Notes\n\n"
     for aligns in alignmentadoc[prefix]:
         alignments+=aligns
-    alignments+="|==="
+    alignments+="|===\n\n"
 
 with open("spec/sections/aa-alignments.adoc", 'r',encoding="utf-8") as f:
     alignmentdoc=f.read()

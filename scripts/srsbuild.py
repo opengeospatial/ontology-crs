@@ -470,11 +470,11 @@ directory = os.fsencode(abspath)
 for file in os.listdir(directory):
     print(file)
     filename = os.fsdecode(file)
-    for mod in moduleToModuleDoc:
+    for mod in moduleToAdoc:
         if mod in filename:
             content=""
             with open(abspath+filename,"r") as docfile:
                 content=docfile.read()
-            docfile+=moduleToModuleDoc[mod]
+            docfile+=moduleToAdoc[mod]
             with open(abspath+filename,"w") as dfile:
                 dfile.write(docfile)

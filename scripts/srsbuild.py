@@ -473,7 +473,7 @@ for file in os.listdir(directory):
 
 alignments=""
 for prefix in alignmentadoc:
-    alignments+="=== "+str(prefix).upper()+" Ontology\n\n.Alignment: "+str(prefix).upper()+" Ontology\n[%autowidth]|===\n| From Element | Mapping relation | To Element | Notes\n\n"
+    alignments+="=== "+str(prefix).upper()+" Ontology\n\n.Alignment: "+str(prefix).upper()+" Ontology\n[%autowidth]\n|===\n| From Element | Mapping relation | To Element | Notes\n\n"
     for aligns in alignmentadoc[prefix]:
         alignments+=aligns
     alignments+="|==="

@@ -14,43 +14,43 @@
             geosrs:operationParameter [ rdfs:label "Longitude of false origin" ;
                     om:hasUnit om:degree ;
                     rdf:value 3 ],
-                [ rdfs:label "Latitude of 1st standard parallel" ;
-                    om:hasUnit om:degree ;
-                    rdf:value 49 ],
-                [ rdfs:label "Northing at false origin" ;
-                    om:hasUnit om:metre ;
-                    rdf:value 6600000 ],
                 [ rdfs:label "Latitude of 2nd standard parallel" ;
                     om:hasUnit om:degree ;
                     rdf:value 44 ],
+                [ rdfs:label "Easting at false origin" ;
+                    om:hasUnit om:metre ;
+                    rdf:value 700000 ],
                 [ rdfs:label "Latitude of false origin" ;
                     om:hasUnit om:degree ;
                     rdf:value 4.65e+01 ],
-                [ rdfs:label "Easting at false origin" ;
+                [ rdfs:label "Northing at false origin" ;
                     om:hasUnit om:metre ;
-                    rdf:value 700000 ] ] ;
+                    rdf:value 6600000 ],
+                [ rdfs:label "Latitude of 1st standard parallel" ;
+                    om:hasUnit om:degree ;
+                    rdf:value 49 ] ] ;
     geosrs:baseCRS [ rdfs:label "RGF93 v1" ;
             geosrs:coordinateSystem [ a geosrs:EllipsoidalCoordinateSystem ;
-                    geosrs:axis [ rdfs:label "Geodetic latitude" ;
-                            om:hasUnit om:degree ;
-                            skos:altLabel "Lat" ;
-                            geosrs:axisDirection geosrs_cs:north ],
-                        [ rdfs:label "Geodetic longitude" ;
+                    geosrs:axis [ rdfs:label "Geodetic longitude" ;
                             om:hasUnit om:degree ;
                             skos:altLabel "Lon" ;
-                            geosrs:axisDirection geosrs_cs:east ] ] ;
+                            geosrs:axisDirection geosrs_cs:east ],
+                        [ rdfs:label "Geodetic latitude" ;
+                            om:hasUnit om:degree ;
+                            skos:altLabel "Lat" ;
+                            geosrs:axisDirection geosrs_cs:north ] ] ;
             geosrs:datum [ a geosrs:GeodeticDatum ;
                     rdfs:label "Reseau Geodesique Francais 1993 v1" ;
                     geosrs:ellipsoid [ rdfs:label "GRS 1980" ;
                             geosrs:inverseFlattening 2.982572e+02 ;
                             geosrs:semiMajorAxis 6378137 ] ] ] ;
     geosrs:coordinateSystem [ a geosrs:CartesianCoordinateSystem ;
-            geosrs:axis [ rdfs:label "Northing" ;
-                    om:hasUnit om:metre ;
-                    skos:altLabel "Y" ;
-                    geosrs:axisDirection geosrs_cs:north ],
-                [ rdfs:label "Easting" ;
+            geosrs:axis [ rdfs:label "Easting" ;
                     om:hasUnit om:metre ;
                     skos:altLabel "X" ;
-                    geosrs:axisDirection geosrs_cs:east ] ] .
+                    geosrs:axisDirection geosrs_cs:east ],
+                [ rdfs:label "Northing" ;
+                    om:hasUnit om:metre ;
+                    skos:altLabel "Y" ;
+                    geosrs:axisDirection geosrs_cs:north ] ] .
 

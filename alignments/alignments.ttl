@@ -7,21 +7,20 @@
 
 geosrs:AxisDirection owl:equivalentClass ifc:IfcDirection .
 
+geosrs:CRS owl:equivalentClass ifc:IfcCoordinateReferenceSystem .
+
 geosrs:CoordinateOperation owl:equivalentClass ifc:IfcCoordinateOperation .
 
 geosrs:CoordinateSystem owl:equivalentClass ign:CoordinateSystem,
         iso19111:CoordinateSystem .
 
-geosrs:Datum owl:disjointWith geosrs:CRS ;
-    owl:equivalentClass ign:Datum,
+geosrs:Datum owl:equivalentClass ign:Datum,
         iso19111:Datum .
 
 geosrs:Ellipsoid owl:equivalentClass ign:Ellipsoid,
         iso19111:Ellipsoid .
 
 geosrs:ProjectedCRS owl:equivalentClass ifc:IfcProjectedCRS .
-
-geosrs:VerticalCoordinateSystem owl:disjointWith geosrs:OrdinalCoordinateSystem .
 
 <https://w3id.org/geosrs/alignments/> a owl:Ontology ;
     rdfs:label "SRS Ontology Alignments"@en .
@@ -31,6 +30,4 @@ geosrs:axis owl:equivalentProperty ifc:axis_IfcAxis1Placement .
 geosrs:sourceCRS owl:equivalentProperty ifc:sourceCRS .
 
 geosrs:targetCRS owl:equivalentProperty ifc:targetCRS .
-
-geosrs:CRS owl:equivalentClass ifc:IfcCoordinateReferenceSystem .
 

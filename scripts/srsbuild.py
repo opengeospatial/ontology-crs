@@ -195,6 +195,9 @@ for file in os.listdir(directory):
                                     g.add((URIRef(row["Concept"].replace(coreprefix+":",curns)),OWL.disjointWith,URIRef(spl.replace("geosrs:", getNSForClass(spl,classToPrefix)))))
                             else:
                                 g.add((URIRef(row["Concept"].replace(coreprefix+":",curns)),OWL.disjointWith,URIRef(row["DisjointClass"].replace("geosrs:", getNSForClass(row["DisjointClass"],classToPrefix)))))                      
+                        if row["Core Property?"].lower() in prefixToModule: 
+                            moduleToAdoc[prefixToModule[row["Core Property?"].lower()]].append("==== Class: "+str(row["Concept"])+"\n\nThe class https://w3id.org/geosrs/"+str(row["Concept"])+"[`"+str(coreprefix)+":"+str(row["Concept"])+"`] is defined by the following:\n\n"+row["Definition"]+"\n\n")
+
     else:
         continue
 
@@ -328,8 +331,8 @@ for file in os.listdir(directory):
                                                 ldcontext["@context"][spl]=row["Concept"].replace("geosrs:", getPrefixForClass(row["Concept"],classToPrefix)+":") 
                                         else:
                                            ldcontext["@context"][row["OGCJSON"]]=row["Concept"].replace("geosrs:", getPrefixForClass(row["Concept"],classToPrefix)+":")  
-                                #if 
-                                #moduleToAdoc["06-core.adoc"].append("==== Property: "+str(row["Concept"])+"\n\nThe class https://w3id.org/geosrs/"+str(row["Concept"])+"[`"+str(coreprefix)+":"+str(row["Concept"])+"`] is defined by the following:\n\n"+row["Definition"]+"\n\n")
+                                if row["Core Property?"].lower() in prefixToModule: 
+                                    moduleToAdoc[prefixToModule[row["Core Property?"].lower()]].append("==== Property: "+str(row["Concept"])+"\n\nThe class https://w3id.org/geosrs/"+str(row["Concept"])+"[`"+str(coreprefix)+":"+str(row["Concept"])+"`] is defined by the following:\n\n"+row["Definition"]+"\n\n")
             g.serialize(destination=filename.replace(".csv","")+".ttl") 
     else:
         continue

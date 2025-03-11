@@ -200,7 +200,7 @@ for file in os.listdir(directory):
                                     adocdef+=URIRef(spl.replace("geosrs:", getNSForClass(spl,classToPrefix)))+"[] "
                             else:
                                 g.add((URIRef(row["Concept"].replace(coreprefix+":",curns)),RDFS.subClassOf,URIRef(row["SuperClass"].replace("geosrs:", getNSForClass(row["SuperClass"],classToPrefix)))))
-                                adocdef+=URIRef(spl.replace("geosrs:", getNSForClass(spl,classToPrefix)))+"[] "
+                                adocdef+=URIRef(row["Concept"].replace(coreprefix+":",curns))+"[] "
                         if "DisjointClass" in row and row["DisjointClass"]!="":
                             if " " in row["DisjointClass"]:
                                 for spl in row["DisjointClass"].split(" "):

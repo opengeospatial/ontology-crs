@@ -4761,7 +4761,7 @@
 
 <clause id="_ign_ontology" obligation="informative">
 <title>IGN Ontology</title>
-<table id="_cd01f2e5-9da4-fe88-7621-96de04aa7534">
+<table id="_6e2379e7-b27a-89bc-ddec-6c534d821900">
 <name>Alignment: IGN Ontology</name>
 <thead><tr><th valign="middle" align="left">From Element</th>
 <th valign="middle" align="left">Mapping relation</th>
@@ -4778,18 +4778,32 @@
 <td valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#equivalentClass">owl:equivalentClass</link></td>
 </tr></tbody>
 </table>
+</clause>
 
-<p id="_f0ac6714-5b15-b734-72c1-e7f6964bd8ee">| From Element | Mapping relation | To Element | Notes</p>
+<clause id="_iso19111_ontology" obligation="informative">
+<title>ISO19111 Ontology</title>
+<table id="_9824260c-45d0-a6f3-417d-91496d1d72d1">
+<name>Alignment: ISO19111 Ontology</name>
+<thead><tr><th valign="middle" align="left">From Element</th>
+<th valign="middle" align="left">Mapping relation</th>
+<th valign="middle" align="left">To Element</th>
+<th valign="middle" align="left">Notes</th>
+</tr></thead>
+<tbody><tr><td valign="middle" align="left"><link target="https://w3id.org/geosrs/CoordinateSystem">geosrs:CoordinateSystem</link></td>
+<td valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#equivalentClass">owl:equivalentClass</link></td>
+<td valign="middle" align="left"><link target="http://def.isotc211.org/iso19112/2019/SpatialReferencingByGeographicIdentifier#CoordinateSystem"/>[geosrs:CoordinateSystem</td>
+<td valign="middle" align="left"><link target="https://w3id.org/geosrs/Datum">geosrs:Datum</link></td>
+</tr><tr><td valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#equivalentClass">owl:equivalentClass</link></td>
+<td valign="middle" align="left"><link target="http://def.isotc211.org/iso19112/2019/SpatialReferencingByGeographicIdentifier#Datum"/>[geosrs:Datum</td>
+<td valign="middle" align="left"><link target="https://w3id.org/geosrs/Ellipsoid">geosrs:Ellipsoid</link></td>
+<td valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#equivalentClass">owl:equivalentClass</link></td>
+</tr></tbody>
+</table>
+</clause>
 
-<p id="_8d881f32-64f9-20d4-5619-0db5a69619c1">|https://w3id.org/geosrs/CoordinateSystem[geosrs:CoordinateSystem] |http://www.w3.org/2002/07/owl#equivalentClass[owl:equivalentClass] |http://def.isotc211.org/iso19112/2019/SpatialReferencingByGeographicIdentifier#CoordinateSystem[geosrs:CoordinateSystem</p>
-
-<p id="_e1c6e3eb-4c7a-49cf-8fcf-cde5201098ff">|https://w3id.org/geosrs/Datum[geosrs:Datum] |http://www.w3.org/2002/07/owl#equivalentClass[owl:equivalentClass] |http://def.isotc211.org/iso19112/2019/SpatialReferencingByGeographicIdentifier#Datum[geosrs:Datum</p>
-
-<p id="_b73089bc-72f6-a64c-4b45-298d0d06adcc">|https://w3id.org/geosrs/Ellipsoid[geosrs:Ellipsoid] |http://www.w3.org/2002/07/owl#equivalentClass[owl:equivalentClass] |http://def.isotc211.org/iso19112/2019/SpatialReferencingByGeographicIdentifier#Ellipsoid[geosrs:Ellipsoid</p>
-
-<p id="_97d43e36-079a-7a0b-ddee-8adb7c3a3b09">|====== IFC Ontology</p>
-
-<table id="_750e44c0-952e-ced9-23b8-9b388757637b">
+<clause id="_ifc_ontology" obligation="informative">
+<title>IFC Ontology</title>
+<table id="_c2214fa1-1cda-ac4d-1f96-67abe7e12426">
 <name>Alignment: IFC Ontology</name>
 <thead><tr><th valign="middle" align="left">From Element</th>
 <th valign="middle" align="left">Mapping relation</th>

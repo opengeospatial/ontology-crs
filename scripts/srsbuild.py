@@ -131,7 +131,7 @@ for file in os.listdir(directory):
                 if "Concept" in row and row["Concept"]!="":
                     core=False
                     if "Core Class?" in row and row["Core Class?"]=="Core Ontology":
-                        adocdef="==== Class: "+str(row["Concept"])+"\n\n[cols=\"1,1\"]\n|===\n"
+                        adocdef="==== Class: "+str(row["Concept"])+"\n\n."+str(row["Concept"])+"\n[cols=\"1,1\"]\n|===\n"
                         adocdef+="|URI\n|"+str(row["Concept"].replace(coreprefix+":",curns))+"\n\n"
                         core=True
                         gcore.add((URIRef(row["Concept"].replace(coreprefix+":",geocrsNS)),RDF.type,OWL.Class))
@@ -159,10 +159,12 @@ for file in os.listdir(directory):
                             if " " in row["SuperClass"]:
                                 for spl in row["SuperClass"].split(" "):
                                     gcore.add((URIRef(row["Concept"].replace(coreprefix+":",geocrsNS)),RDFS.subClassOf,URIRef(spl.replace("geosrs:", getNSForClass(spl,classToPrefix)))))
-                                    adocdef+=URIRef(spl.replace("geosrs:", getNSForClass(spl,classToPrefix)))+"[] "
+                                    clsuri=row["Concept"].replace(coreprefix+":",geocrsNS)
+                                    adocdef+=clsuri+"["+clsuri[clsuri.rfind("/")+1]+"] "
                             else:
                                 gcore.add((URIRef(row["Concept"].replace(coreprefix+":",geocrsNS)),RDFS.subClassOf,URIRef(row["SuperClass"].replace("geosrs:", getNSForClass(row["SuperClass"],classToPrefix)))))
-                                adocdef+=URIRef(spl.replace("geosrs:", getNSForClass(spl,classToPrefix)))+"[] "
+                                clsuri=spl.replace("geosrs:", getNSForClass(spl,classToPrefix))
+                                adocdef+=clsuri+"["+clsuri[clsuri.rfind("/")+1]+"] "
                             adocdef+="\n\n"
                         if "DisjointClass" in row and row["DisjointClass"]!="":
                             if " " in row["DisjointClass"]:
@@ -173,7 +175,7 @@ for file in os.listdir(directory):
                         moduleToAdoc["06-core.adoc"].append(adocdef+"|===\n\n")
                     else:
                         g.add((URIRef(row["Concept"].replace(coreprefix+":",curns)),RDF.type,OWL.Class))
-                        adocdef="==== Class: "+str(row["Concept"])+"\n\n[cols=\"1,1\"]\n|===\n"
+                        adocdef="==== Class: "+str(row["Concept"])+"\n\n."+str(row["Concept"])+"\n[cols=\"1,1\"]\n|===\n"
                         adocdef+="|URI\n|"+str(row["Concept"].replace(coreprefix+":",curns))+"[]\n\n"
                         prefixtoclasses[curprefix].append(row["Concept"].replace(curprefix+":",curns).replace("geosrs:","").replace("geoprojection:",""))
                         classToPrefix[row["Concept"]]={"prefix":curprefix, "ns":curns}
@@ -199,10 +201,12 @@ for file in os.listdir(directory):
                             if " " in row["SuperClass"]:
                                 for spl in row["SuperClass"].split(" "):
                                     g.add((URIRef(row["Concept"].replace(coreprefix+":",curns)),RDFS.subClassOf,URIRef(spl.replace("geosrs:", getNSForClass(spl,classToPrefix)))))
-                                    adocdef+=URIRef(spl.replace("geosrs:", getNSForClass(spl,classToPrefix)))+"[] "
+                                    clsuri=spl.replace("geosrs:", getNSForClass(spl,classToPrefix))
+                                    adocdef+=clsuri+"["+clsuri[clsuri.rfind("/")+1]+"] "
                             else:
                                 g.add((URIRef(row["Concept"].replace(coreprefix+":",curns)),RDFS.subClassOf,URIRef(row["SuperClass"].replace("geosrs:", getNSForClass(row["SuperClass"],classToPrefix)))))
-                                adocdef+=URIRef(row["Concept"].replace(coreprefix+":",curns))+"[] "
+                                clsuri=row["Concept"].replace(coreprefix+":",curns)
+                                adocdef+=clsuri+"["+clsuri[clsuri.rfind("/")+1]+"] "
                             adocdef+="\n\n"
                         if "DisjointClass" in row and row["DisjointClass"]!="":
                             if " " in row["DisjointClass"]:

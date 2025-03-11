@@ -132,6 +132,7 @@ for file in os.listdir(directory):
                     core=False
                     if "Core Class?" in row and row["Core Class?"]=="Core Ontology":
                         adocdef="==== Class: "+str(row["Concept"])+"\n\n."+str(row["Concept"])+"\n[cols=\"1,1\"]\n|===\n"
+                        adocdef+="|Type\n|http://www.w3.org/2002/07/owl#Class[owl:Class]\n\n"
                         adocdef+="|URI\n|"+str(row["Concept"].replace(coreprefix+":",curns))+"\n\n"
                         core=True
                         gcore.add((URIRef(row["Concept"].replace(coreprefix+":",geocrsNS)),RDF.type,OWL.Class))
@@ -254,20 +255,29 @@ for file in os.listdir(directory):
                 if "Concept" in row and row["Concept"]!="":
                     if "Core Property?" in row:
                         if row["Core Property?"]=="Core Ontology":
+                            adocdef="==== Property: "+str(row["Concept"])+"\n\n."+str(row["Concept"])+"\n[cols=\"1,1\"]\n|===\n"
+                            adocdef+="|URI\n|"+str(row["Concept"].replace(coreprefix+":",curns))+"\n\n"
                             core=True
                             prefixtoproperties["geosrs"].append(row["Concept"].replace(curprefix+":",curns).replace("geosrs:","").replace("geoprojection:",""))
                             if objprop:
                                 gcore.add((URIRef(row["Concept"].replace(coreprefix+":",geocrsNS)),RDF.type,OWL.ObjectProperty))
+                                adocdef+="|Type\n|http://www.w3.org/2002/07/owl#ObjectProperty[owl:ObjectProperty]\n\n"
                             else:
                                 gcore.add((URIRef(row["Concept"].replace(coreprefix+":",geocrsNS)),RDF.type,OWL.DatatypeProperty))
+                                adocdef+="|Type\n|http://www.w3.org/2002/07/owl#DatatypeProperty[owl:DatatypeProperty]\n\n"
                             if "Label" in row and row["Label"]!="":
                                 gcore.add((URIRef(row["Concept"].replace(coreprefix+":",geocrsNS)),RDFS.label,Literal(row["Label"],lang="en")))
                             if "Definition" in row and row["Definition"]!="":
                                 gcore.add((URIRef(row["Concept"].replace(coreprefix+":",geocrsNS)),SKOS.definition,Literal(row["Definition"],lang="en")))
+                                adocdef+="|Definition\n|"+str(row["Definition"])+"\n\n"
                             if "Range" in row and row["Range"]!="":
                                 gcore.add((URIRef(row["Concept"].replace(coreprefix+":",geocrsNS)),RDFS.range,URIRef(row["Range"].replace("geosrs:", getNSForClass(row["Range"],classToPrefix)))))
+                                propref=row["Range"].replace("geosrs:", getNSForClass(row["Range"],classToPrefix))
+                                adocdef+="|Range\n|"+propref+"["+propref[propref.rfind("/")+1:]+"]\n\n"
                             if "Domain" in row and row["Domain"]!="":
                                 gcore.add((URIRef(row["Concept"].replace(coreprefix+":",geocrsNS)),RDFS.domain,URIRef(row["Domain"].replace("geosrs:",getNSForClass(row["Domain"],classToPrefix)))))
+                                propref=row["Domain"].replace("geosrs:",getNSForClass(row["Domain"],classToPrefix))
+                                adocdef+="|Domain\n|"+propref+"["+propref[propref.rfind("/")+1:]+"]\n\n"
                             if "PROJJSON" in row and row["PROJJSON"]!="":
                                 if objprop:
                                     if " " in row["PROJJSON"].strip():
@@ -294,23 +304,32 @@ for file in os.listdir(directory):
                                             ldcontext["@context"][spl]=row["Concept"].replace("geosrs:", getPrefixForClass(row["Concept"],classToPrefix)+":") 
                                     else:
                                        ldcontext["@context"][row["OGCJSON"]]=row["Concept"].replace("geosrs:", getPrefixForClass(row["Concept"],classToPrefix)+":")  
-                            moduleToAdoc["06-core.adoc"].append("==== Property: "+str(row["Concept"])+"\n\nThe class https://w3id.org/geosrs/"+str(row["Concept"])+"[`"+str(coreprefix)+":"+str(row["Concept"])+"`] is defined by the following:\n\n"+row["Definition"]+"\n\n")
+                            moduleToAdoc["06-core.adoc"].append(adocdef+"|===\n\n")
                         else:
                             if row["Core Property?"].lower() in exont:
+                                adocdef="==== Property: "+str(row["Concept"])+"\n\n."+str(row["Concept"])+"\n[cols=\"1,1\"]\n|===\n"
+                                adocdef+="|URI\n|"+row["Concept"].replace(coreprefix+":",curns+str(row["Core Property?"]).lower()+"/")+"\n\n"
                                 if row["Core Property?"]!="":
                                     prefixtoproperties[row["Core Property?"]].append(row["Concept"].replace(coreprefix+":",curns+str(row["Core Property?"]).lower()+"/").replace("geosrs:","").replace("geoprojection:",""))
                                 if objprop:
                                     exont[row["Core Property?"].lower()].add((URIRef(row["Concept"].replace(coreprefix+":",curns+str(row["Core Property?"]).lower()+"/")),RDF.type,OWL.ObjectProperty))
+                                    adocdef+="|Type\n|http://www.w3.org/2002/07/owl#ObjectProperty[owl:ObjectProperty]\n\n"
                                 else:
                                     exont[row["Core Property?"].lower()].add((URIRef(row["Concept"].replace(coreprefix+":",curns+str(row["Core Property?"]).lower()+"/")),RDF.type,OWL.DatatypeProperty))
+                                    adocdef+="|Type\n|http://www.w3.org/2002/07/owl#DatatypeProperty[owl:DatatypeProperty]\n\n"
                                 if "Label" in row and row["Label"]!="":
                                     exont[row["Core Property?"].lower()].add((URIRef(row["Concept"].replace(coreprefix+":",curns+str(row["Core Property?"]).lower()+"/")),RDFS.label,Literal(row["Label"],lang="en")))
                                 if "Definition" in row and row["Definition"]!="":
                                     exont[row["Core Property?"].lower()].add((URIRef(row["Concept"].replace(coreprefix+":",curns+str(row["Core Property?"]).lower()+"/")),SKOS.definition,Literal(row["Definition"],lang="en")))
+                                    adocdef+="|Definition\n|"+str(row["Definition"])+"\n\n"
                                 if "Range" in row and row["Range"]!="":
                                     exont[row["Core Property?"].lower()].add((URIRef(row["Concept"].replace(coreprefix+":",curns+str(row["Core Property?"]).lower()+"/")),RDFS.range,URIRef(row["Range"].replace("geosrs:",getNSForClass(row["Range"],classToPrefix)))))
+                                    propref=row["Range"].replace("geosrs:", getNSForClass(row["Range"],classToPrefix))
+                                    adocdef+="|Range\n|"+propref+"["+propref[propref.rfind("/")+1:]+"]\n\n"
                                 if "Domain" in row and row["Domain"]!="":
                                     exont[row["Core Property?"].lower()].add((URIRef(row["Concept"].replace(coreprefix+":",curns+str(row["Core Property?"]).lower()+"/")),RDFS.domain,URIRef(row["Domain"].replace("geosrs:",getNSForClass(row["Domain"],classToPrefix)))))
+                                    propref=row["Domain"].replace("geosrs:",getNSForClass(row["Domain"],classToPrefix))
+                                    adocdef+="|Domain\n|"+propref+"["+propref[propref.rfind("/")+1:]+"]\n\n"
                                 if "PROJJSON" in row and row["PROJJSON"]!="":
                                     if objprop:
                                         if " " in row["PROJJSON"].strip():
@@ -338,7 +357,7 @@ for file in os.listdir(directory):
                                         else:
                                            ldcontext["@context"][row["OGCJSON"]]=row["Concept"].replace("geosrs:", getPrefixForClass(row["Concept"],classToPrefix)+":")  
                                 if row["Core Property?"].lower() in prefixToModule: 
-                                    moduleToAdoc[prefixToModule[row["Core Property?"].lower()]].append("==== Property: "+str(row["Concept"])+"\n\nThe class https://w3id.org/geosrs/"+str(row["Concept"])+"[`"+str(coreprefix)+":"+str(row["Concept"])+"`] is defined by the following:\n\n"+row["Definition"]+"\n\n")
+                                    moduleToAdoc[prefixToModule[row["Core Property?"].lower()]].append(adocdef+"|===\n\n")
             g.serialize(destination=filename.replace(".csv","")+".ttl") 
     else:
         continue

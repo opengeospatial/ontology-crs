@@ -467,7 +467,7 @@ for file in os.listdir(directory):
                            URIRef(cpropuri),
                            URIRef(ctargeturi)))
                     if targetprefix in alignmentadoc:
-                        alignmentadoc[targetprefix.append("|"+str(csourceuri)+"["+row["Concept source"]+"]\n|"+str(cpropuri)+"["+row["Property"]+"]\n|"+str(cstargeturi)+"["+row["Concept source"]+"\n\n")
+                        alignmentadoc[targetprefix].append("|"+str(csourceuri)+"["+row["Concept source"]+"]\n|"+str(cpropuri)+"["+row["Property"]+"]\n|"+str(cstargeturi)+"["+row["Concept source"]+"\n\n")
             if os.path.exists(with open("spec/sections/"+ad.replace(".adoc","_classes.adoc"), 'w',encoding="utf-8") as f:)
     else:
         continue

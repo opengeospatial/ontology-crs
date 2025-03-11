@@ -366,21 +366,134 @@
 
 <p id="_03ee7d6f-8a8d-fbf6-e49b-f6129ef3b1bc">Datum describing the relation of gravity-related heights or depths to the Earth. Cf. ISO 19111:2007:2007-07, table 41 and annex B.3.3.</p>
 </clause>
+
+<clause id="_property_geosrssemimajoraxis" obligation="normative">
+<title>Property: geosrs:semiMajorAxis</title>
+<p id="_acad7155-7eb9-86ab-f0e4-ad34f2cb75d2">The class <link target="https://w3id.org/geosrs/geosrs:semiMajorAxis"><tt>geosrs:geosrs:semiMajorAxis</tt></link> is defined by the following:</p>
+
+<p id="_a36813d0-52c4-41cf-3b27-692915bb3880">Indicates the length of the semi major axis of an ellipsoid. Cf. ISO 19111:2007:2007-07, table 36, attribute length of semi-major axis.</p>
+</clause>
+
+<clause id="_property_geosrssemiminoraxis" obligation="normative">
+<title>Property: geosrs:semiMinorAxis</title>
+<p id="_81e37527-acad-3310-5af2-6043a1b65e4e">The class <link target="https://w3id.org/geosrs/geosrs:semiMinorAxis"><tt>geosrs:geosrs:semiMinorAxis</tt></link> is defined by the following:</p>
+
+<p id="_da07907f-a5ba-cf9a-fb59-a430b5c19892">Indicates the length of the semi minor axis of an ellipsoid. Cf. ISO 19111:2007:2007-07, table 37, attribute length of semi-minor axis.</p>
+</clause>
+
+<clause id="_property_geosrsaxis" obligation="normative">
+<title>Property: geosrs:axis</title>
+<p id="_8432694c-8c38-ab69-8834-26555fbdd654">The class <link target="https://w3id.org/geosrs/geosrs:axis"><tt>geosrs:geosrs:axis</tt></link> is defined by the following:</p>
+
+<p id="_9b00c486-de46-a8f7-795f-28c64d8a74ef">The property relates a coordinate system to one of its axis</p>
+</clause>
+
+<clause id="_property_geosrsbasecrs" obligation="normative">
+<title>Property: geosrs:baseCRS</title>
+<p id="_ae2d9004-3990-c537-eb67-1e76c6bd4efe">The class <link target="https://w3id.org/geosrs/geosrs:baseCRS"><tt>geosrs:geosrs:baseCRS</tt></link> is defined by the following:</p>
+
+<p id="_5f3bc5ae-8224-1bb2-2ece-63318b92987d">The geodetic coordinate reference system on which a projected coordinate reference system is based. Cf. ISO 19111:2007:2007-07, table 11, association role baseCRS.</p>
+</clause>
+
+<clause id="_property_geosrscoordinatesystem" obligation="normative">
+<title>Property: geosrs:coordinateSystem</title>
+<p id="_188fd007-e72a-b9ff-d086-9c5cccdefe15">The class <link target="https://w3id.org/geosrs/geosrs:coordinateSystem"><tt>geosrs:geosrs:coordinateSystem</tt></link> is defined by the following:</p>
+
+<p id="_522ff631-f9e6-2508-94db-7d0863f232fa">The property relates a coordinate reference system to its coordinate system</p>
+</clause>
+
+<clause id="_property_geosrsdatum" obligation="normative">
+<title>Property: geosrs:datum</title>
+<p id="_1e13bd5a-6849-c57f-2fd5-7db3e73d154a">The class <link target="https://w3id.org/geosrs/geosrs:datum"><tt>geosrs:geosrs:datum</tt></link> is defined by the following:</p>
+
+<p id="_4f712f87-04d5-2089-1bb5-3886e5a0f404">The property relates a coordinate reference system to a datum</p>
+</clause>
+
+<clause id="_property_geosrsdomainofvalidity" obligation="normative">
+<title>Property: geosrs:domainOfValidity</title>
+<p id="_8085181c-8c0f-6ce9-c96e-03a02ec98a3d">The class <link target="https://w3id.org/geosrs/geosrs:domainOfValidity"><tt>geosrs:geosrs:domainOfValidity</tt></link> is defined by the following:</p>
+
+<p id="_40bc6298-7dac-b8ae-5205-0b5745619f48">Geographic area or time interval in which the referring object is valid. Cf. ISO 19111:2007:2007-07, tables 4, 33 and 42, attribute domainOfValidity.</p>
+</clause>
+
+<clause id="_property_geosrsellipsoid" obligation="normative">
+<title>Property: geosrs:ellipsoid</title>
+<p id="_cda492d2-33ae-86ed-9403-55f6467a9c2e">The class <link target="https://w3id.org/geosrs/geosrs:ellipsoid"><tt>geosrs:geosrs:ellipsoid</tt></link> is defined by the following:</p>
+
+<p id="_4c99d6f0-52eb-d94c-d0de-e72aef9685e4">The properties relates a datum to its ellipsoid definition</p>
+</clause>
+
+<clause id="_property_geosrssourcecrs" obligation="normative">
+<title>Property: geosrs:sourceCRS</title>
+<p id="_e0884060-b23e-c308-e4cf-2c27aa3c782e">The class <link target="https://w3id.org/geosrs/geosrs:sourceCRS"><tt>geosrs:geosrs:sourceCRS</tt></link> is defined by the following:</p>
+
+<p id="_060cdcde-78aa-fcf4-017c-0c3baf903fad">The coordinate reference system associated to the data used as input of a given operation. Cf. ISO 19111:2007:2007-07, table 42, named association Source.</p>
+</clause>
+
+<clause id="_property_geosrstargetcrs" obligation="normative">
+<title>Property: geosrs:targetCRS</title>
+<p id="_8f5df569-f1ca-7ca8-4edf-3ed1369ccd99">The class <link target="https://w3id.org/geosrs/geosrs:targetCRS"><tt>geosrs:geosrs:targetCRS</tt></link> is defined by the following:</p>
+
+<p id="_ba2c1f29-6db5-ebfd-955a-007d6dd4ee41">The coordinate reference system associated to the data obtained as output of a given operation. Cf. ISO 19111:2007:2007-07, table 42, named association Target.</p>
+</clause>
 </clause>
 
 <clause id="_coordinate_operation_module" obligation="normative">
 <title>Coordinate Operation Module</title>
 <p id="co">This clause establishes the <strong>Co</strong> Requirements class, with IRI <tt>/req/co</tt>, which has a corresponding Conformance Class, <strong>Co</strong>, with IRI <tt>/conf/co</tt>.</p>
+
+<clause id="_property_geosrsderivingconversion" obligation="normative">
+<title>Property: geosrs:derivingConversion</title>
+<p id="_f6915a20-d46d-f1c4-70a2-854fd5843db4">The class <link target="https://w3id.org/geosrs/geosrs:derivingConversion"><tt>geosrs:geosrs:derivingConversion</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_property_geosrsmethod" obligation="normative">
+<title>Property: geosrs:method</title>
+<p id="_477907e6-a76c-db03-af6f-ba26c84d05bb">The class <link target="https://w3id.org/geosrs/geosrs:method"><tt>geosrs:geosrs:method</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_property_geosrsparameter" obligation="normative">
+<title>Property: geosrs:parameter</title>
+<p id="_dea2e4e3-e465-974c-564f-413d8387d8fd">The class <link target="https://w3id.org/geosrs/geosrs:parameter"><tt>geosrs:geosrs:parameter</tt></link> is defined by the following:</p>
+</clause>
 </clause>
 
 <clause id="_coordinate_system_module" obligation="normative">
 <title>Coordinate System Module</title>
 <p id="cs">This clause establishes the <strong>CS</strong> Requirements class, with IRI <tt>/req/cs</tt>, which has a corresponding Conformance Class, <strong>CS</strong>, with IRI <tt>/conf/cs</tt>.</p>
+
+<clause id="_property_geosrsaxisdirection" obligation="normative">
+<title>Property: geosrs:axisDirection</title>
+<p id="_34df0605-6e53-02bf-a9ed-2628759153a1">The class <link target="https://w3id.org/geosrs/geosrs:axisDirection"><tt>geosrs:geosrs:axisDirection</tt></link> is defined by the following:</p>
+
+<p id="_8190c893-f219-15ba-cce2-57073c7688b5">The direction of an axis. Cf. ISO 19111:2007:2007-07, table 27, attribute coordinate system axis direction.</p>
+</clause>
+
+<clause id="_property_geosrscylindricalcs" obligation="normative">
+<title>Property: geosrs:cylindricalCS</title>
+<p id="_3b91feca-578e-1748-94fe-e9bded942286">The class <link target="https://w3id.org/geosrs/geosrs:cylindricalCS"><tt>geosrs:geosrs:cylindricalCS</tt></link> is defined by the following:</p>
+
+<p id="_42a81001-596a-72e2-61f0-7f0ae25e95d9">Links a coordinate reference system to a cylindrical coordinate system</p>
+</clause>
 </clause>
 
 <clause id="_datum_module" obligation="normative">
 <title>Datum Module</title>
 <p id="datum">This clause establishes the <strong>Datum</strong> Requirements class, with IRI <tt>/req/datum</tt>, which has a corresponding Conformance Class, <strong>Datum</strong>, with IRI <tt>/conf/datum</tt>.</p>
+
+<clause id="_property_geosrsinverseflattening" obligation="normative">
+<title>Property: geosrs:inverseFlattening</title>
+<p id="_81e7554d-4524-7410-ca46-c9fe621ea270">The class <link target="https://w3id.org/geosrs/geosrs:inverseFlattening"><tt>geosrs:geosrs:inverseFlattening</tt></link> is defined by the following:</p>
+
+<p id="_ac38b877-15b1-da8a-5c70-ccc0607c3eac">Indicates the inverse flattening value of an ellipsoid, expressed as a number or a ratio (percentage rate, parts per million, etc.). Cf. ISO 19111:2007:2007-07, table 37, attribute inverse flattening</p>
+</clause>
+
+<clause id="_property_geosrsprimemeridian" obligation="normative">
+<title>Property: geosrs:primeMeridian</title>
+<p id="_ea4bd68f-483d-d509-0d37-50bae0fa1d21">The class <link target="https://w3id.org/geosrs/geosrs:primeMeridian"><tt>geosrs:geosrs:primeMeridian</tt></link> is defined by the following:</p>
+
+<p id="_36e17e9e-532b-ba56-fc11-16e3a398ec33">The prime meridian used by a geodetic datum. Cf. ISO 19111:2007:2007-07, table 34, association role primeMeridian.</p>
+</clause>
 </clause>
 
 <clause id="_srs_application_module" obligation="normative">
@@ -536,7 +649,7 @@ Performance Distributed Computing, pp. 181–184. IEEE Press, New York (2001)</f
 <title>Bibliography</title>
 <note id="_155a708c-216d-5804-50a7-1a2723619850"><p id="_9702179a-71de-0d11-425d-60a89a0feed8">The TC has approved Springer LNCS as the official document citation type. Springer LNCS is widely used in technical and computer science journals and other publications For citations in the text please use square brackets and consecutive numbers: [1], [2], [3] Actual References: [n] Journal: Author Surname, A.: Title. Publication Title. Volume number, Issue number, Pages Used (Year Published)</p>
 </note><bibitem id="iso19142" type="standard" schema-version="v1.2.9">
-  <fetched>2025-03-10</fetched>
+  <fetched>2025-03-11</fetched>
   
 <title type="title-intro" format="text/plain" language="en" script="Latn">Geographic information</title>
 
@@ -583,7 +696,7 @@ Performance Distributed Computing, pp. 181–184. IEEE Press, New York (2001)</f
   </copyright>
   <relation type="instanceOf">
     <bibitem type="standard">
-      <fetched>2025-03-10</fetched>
+      <fetched>2025-03-11</fetched>
       
 <title type="title-intro" format="text/plain" language="en" script="Latn">Geographic information</title>
 

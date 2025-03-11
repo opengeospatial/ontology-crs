@@ -394,21 +394,134 @@ For the purposes of this document, the terms and definitions given in % and the 
 
 <semantic__p id="semantic___03ee7d6f-8a8d-fbf6-e49b-f6129ef3b1bc">Datum describing the relation of gravity-related heights or depths to the Earth. Cf. ISO 19111:2007:2007-07, table 41 and annex B.3.3.</semantic__p>
 </semantic__clause>
+
+<semantic__clause id="semantic___property_geosrssemimajoraxis" obligation="normative">
+<semantic__title>Property: geosrs:semiMajorAxis</semantic__title>
+<semantic__p id="semantic___acad7155-7eb9-86ab-f0e4-ad34f2cb75d2">The class <semantic__link target="https://w3id.org/geosrs/geosrs:semiMajorAxis"><semantic__tt>geosrs:geosrs:semiMajorAxis</semantic__tt></semantic__link> is defined by the following:</semantic__p>
+
+<semantic__p id="semantic___a36813d0-52c4-41cf-3b27-692915bb3880">Indicates the length of the semi major axis of an ellipsoid. Cf. ISO 19111:2007:2007-07, table 36, attribute length of semi-major axis.</semantic__p>
+</semantic__clause>
+
+<semantic__clause id="semantic___property_geosrssemiminoraxis" obligation="normative">
+<semantic__title>Property: geosrs:semiMinorAxis</semantic__title>
+<semantic__p id="semantic___81e37527-acad-3310-5af2-6043a1b65e4e">The class <semantic__link target="https://w3id.org/geosrs/geosrs:semiMinorAxis"><semantic__tt>geosrs:geosrs:semiMinorAxis</semantic__tt></semantic__link> is defined by the following:</semantic__p>
+
+<semantic__p id="semantic___da07907f-a5ba-cf9a-fb59-a430b5c19892">Indicates the length of the semi minor axis of an ellipsoid. Cf. ISO 19111:2007:2007-07, table 37, attribute length of semi-minor axis.</semantic__p>
+</semantic__clause>
+
+<semantic__clause id="semantic___property_geosrsaxis" obligation="normative">
+<semantic__title>Property: geosrs:axis</semantic__title>
+<semantic__p id="semantic___8432694c-8c38-ab69-8834-26555fbdd654">The class <semantic__link target="https://w3id.org/geosrs/geosrs:axis"><semantic__tt>geosrs:geosrs:axis</semantic__tt></semantic__link> is defined by the following:</semantic__p>
+
+<semantic__p id="semantic___9b00c486-de46-a8f7-795f-28c64d8a74ef">The property relates a coordinate system to one of its axis</semantic__p>
+</semantic__clause>
+
+<semantic__clause id="semantic___property_geosrsbasecrs" obligation="normative">
+<semantic__title>Property: geosrs:baseCRS</semantic__title>
+<semantic__p id="semantic___ae2d9004-3990-c537-eb67-1e76c6bd4efe">The class <semantic__link target="https://w3id.org/geosrs/geosrs:baseCRS"><semantic__tt>geosrs:geosrs:baseCRS</semantic__tt></semantic__link> is defined by the following:</semantic__p>
+
+<semantic__p id="semantic___5f3bc5ae-8224-1bb2-2ece-63318b92987d">The geodetic coordinate reference system on which a projected coordinate reference system is based. Cf. ISO 19111:2007:2007-07, table 11, association role baseCRS.</semantic__p>
+</semantic__clause>
+
+<semantic__clause id="semantic___property_geosrscoordinatesystem" obligation="normative">
+<semantic__title>Property: geosrs:coordinateSystem</semantic__title>
+<semantic__p id="semantic___188fd007-e72a-b9ff-d086-9c5cccdefe15">The class <semantic__link target="https://w3id.org/geosrs/geosrs:coordinateSystem"><semantic__tt>geosrs:geosrs:coordinateSystem</semantic__tt></semantic__link> is defined by the following:</semantic__p>
+
+<semantic__p id="semantic___522ff631-f9e6-2508-94db-7d0863f232fa">The property relates a coordinate reference system to its coordinate system</semantic__p>
+</semantic__clause>
+
+<semantic__clause id="semantic___property_geosrsdatum" obligation="normative">
+<semantic__title>Property: geosrs:datum</semantic__title>
+<semantic__p id="semantic___1e13bd5a-6849-c57f-2fd5-7db3e73d154a">The class <semantic__link target="https://w3id.org/geosrs/geosrs:datum"><semantic__tt>geosrs:geosrs:datum</semantic__tt></semantic__link> is defined by the following:</semantic__p>
+
+<semantic__p id="semantic___4f712f87-04d5-2089-1bb5-3886e5a0f404">The property relates a coordinate reference system to a datum</semantic__p>
+</semantic__clause>
+
+<semantic__clause id="semantic___property_geosrsdomainofvalidity" obligation="normative">
+<semantic__title>Property: geosrs:domainOfValidity</semantic__title>
+<semantic__p id="semantic___8085181c-8c0f-6ce9-c96e-03a02ec98a3d">The class <semantic__link target="https://w3id.org/geosrs/geosrs:domainOfValidity"><semantic__tt>geosrs:geosrs:domainOfValidity</semantic__tt></semantic__link> is defined by the following:</semantic__p>
+
+<semantic__p id="semantic___40bc6298-7dac-b8ae-5205-0b5745619f48">Geographic area or time interval in which the referring object is valid. Cf. ISO 19111:2007:2007-07, tables 4, 33 and 42, attribute domainOfValidity.</semantic__p>
+</semantic__clause>
+
+<semantic__clause id="semantic___property_geosrsellipsoid" obligation="normative">
+<semantic__title>Property: geosrs:ellipsoid</semantic__title>
+<semantic__p id="semantic___cda492d2-33ae-86ed-9403-55f6467a9c2e">The class <semantic__link target="https://w3id.org/geosrs/geosrs:ellipsoid"><semantic__tt>geosrs:geosrs:ellipsoid</semantic__tt></semantic__link> is defined by the following:</semantic__p>
+
+<semantic__p id="semantic___4c99d6f0-52eb-d94c-d0de-e72aef9685e4">The properties relates a datum to its ellipsoid definition</semantic__p>
+</semantic__clause>
+
+<semantic__clause id="semantic___property_geosrssourcecrs" obligation="normative">
+<semantic__title>Property: geosrs:sourceCRS</semantic__title>
+<semantic__p id="semantic___e0884060-b23e-c308-e4cf-2c27aa3c782e">The class <semantic__link target="https://w3id.org/geosrs/geosrs:sourceCRS"><semantic__tt>geosrs:geosrs:sourceCRS</semantic__tt></semantic__link> is defined by the following:</semantic__p>
+
+<semantic__p id="semantic___060cdcde-78aa-fcf4-017c-0c3baf903fad">The coordinate reference system associated to the data used as input of a given operation. Cf. ISO 19111:2007:2007-07, table 42, named association Source.</semantic__p>
+</semantic__clause>
+
+<semantic__clause id="semantic___property_geosrstargetcrs" obligation="normative">
+<semantic__title>Property: geosrs:targetCRS</semantic__title>
+<semantic__p id="semantic___8f5df569-f1ca-7ca8-4edf-3ed1369ccd99">The class <semantic__link target="https://w3id.org/geosrs/geosrs:targetCRS"><semantic__tt>geosrs:geosrs:targetCRS</semantic__tt></semantic__link> is defined by the following:</semantic__p>
+
+<semantic__p id="semantic___ba2c1f29-6db5-ebfd-955a-007d6dd4ee41">The coordinate reference system associated to the data obtained as output of a given operation. Cf. ISO 19111:2007:2007-07, table 42, named association Target.</semantic__p>
+</semantic__clause>
 </semantic__clause>
 
 <semantic__clause id="semantic___coordinate_operation_module" obligation="normative">
 <semantic__title>Coordinate Operation Module</semantic__title>
 <semantic__p id="semantic__co">This clause establishes the <semantic__strong>Co</semantic__strong> Requirements class, with IRI <semantic__tt>/req/co</semantic__tt>, which has a corresponding Conformance Class, <semantic__strong>Co</semantic__strong>, with IRI <semantic__tt>/conf/co</semantic__tt>.</semantic__p>
+
+<semantic__clause id="semantic___property_geosrsderivingconversion" obligation="normative">
+<semantic__title>Property: geosrs:derivingConversion</semantic__title>
+<semantic__p id="semantic___f6915a20-d46d-f1c4-70a2-854fd5843db4">The class <semantic__link target="https://w3id.org/geosrs/geosrs:derivingConversion"><semantic__tt>geosrs:geosrs:derivingConversion</semantic__tt></semantic__link> is defined by the following:</semantic__p>
+</semantic__clause>
+
+<semantic__clause id="semantic___property_geosrsmethod" obligation="normative">
+<semantic__title>Property: geosrs:method</semantic__title>
+<semantic__p id="semantic___477907e6-a76c-db03-af6f-ba26c84d05bb">The class <semantic__link target="https://w3id.org/geosrs/geosrs:method"><semantic__tt>geosrs:geosrs:method</semantic__tt></semantic__link> is defined by the following:</semantic__p>
+</semantic__clause>
+
+<semantic__clause id="semantic___property_geosrsparameter" obligation="normative">
+<semantic__title>Property: geosrs:parameter</semantic__title>
+<semantic__p id="semantic___dea2e4e3-e465-974c-564f-413d8387d8fd">The class <semantic__link target="https://w3id.org/geosrs/geosrs:parameter"><semantic__tt>geosrs:geosrs:parameter</semantic__tt></semantic__link> is defined by the following:</semantic__p>
+</semantic__clause>
 </semantic__clause>
 
 <semantic__clause id="semantic___coordinate_system_module" obligation="normative">
 <semantic__title>Coordinate System Module</semantic__title>
 <semantic__p id="semantic__cs">This clause establishes the <semantic__strong>CS</semantic__strong> Requirements class, with IRI <semantic__tt>/req/cs</semantic__tt>, which has a corresponding Conformance Class, <semantic__strong>CS</semantic__strong>, with IRI <semantic__tt>/conf/cs</semantic__tt>.</semantic__p>
+
+<semantic__clause id="semantic___property_geosrsaxisdirection" obligation="normative">
+<semantic__title>Property: geosrs:axisDirection</semantic__title>
+<semantic__p id="semantic___34df0605-6e53-02bf-a9ed-2628759153a1">The class <semantic__link target="https://w3id.org/geosrs/geosrs:axisDirection"><semantic__tt>geosrs:geosrs:axisDirection</semantic__tt></semantic__link> is defined by the following:</semantic__p>
+
+<semantic__p id="semantic___8190c893-f219-15ba-cce2-57073c7688b5">The direction of an axis. Cf. ISO 19111:2007:2007-07, table 27, attribute coordinate system axis direction.</semantic__p>
+</semantic__clause>
+
+<semantic__clause id="semantic___property_geosrscylindricalcs" obligation="normative">
+<semantic__title>Property: geosrs:cylindricalCS</semantic__title>
+<semantic__p id="semantic___3b91feca-578e-1748-94fe-e9bded942286">The class <semantic__link target="https://w3id.org/geosrs/geosrs:cylindricalCS"><semantic__tt>geosrs:geosrs:cylindricalCS</semantic__tt></semantic__link> is defined by the following:</semantic__p>
+
+<semantic__p id="semantic___42a81001-596a-72e2-61f0-7f0ae25e95d9">Links a coordinate reference system to a cylindrical coordinate system</semantic__p>
+</semantic__clause>
 </semantic__clause>
 
 <semantic__clause id="semantic___datum_module" obligation="normative">
 <semantic__title>Datum Module</semantic__title>
 <semantic__p id="semantic__datum">This clause establishes the <semantic__strong>Datum</semantic__strong> Requirements class, with IRI <semantic__tt>/req/datum</semantic__tt>, which has a corresponding Conformance Class, <semantic__strong>Datum</semantic__strong>, with IRI <semantic__tt>/conf/datum</semantic__tt>.</semantic__p>
+
+<semantic__clause id="semantic___property_geosrsinverseflattening" obligation="normative">
+<semantic__title>Property: geosrs:inverseFlattening</semantic__title>
+<semantic__p id="semantic___81e7554d-4524-7410-ca46-c9fe621ea270">The class <semantic__link target="https://w3id.org/geosrs/geosrs:inverseFlattening"><semantic__tt>geosrs:geosrs:inverseFlattening</semantic__tt></semantic__link> is defined by the following:</semantic__p>
+
+<semantic__p id="semantic___ac38b877-15b1-da8a-5c70-ccc0607c3eac">Indicates the inverse flattening value of an ellipsoid, expressed as a number or a ratio (percentage rate, parts per million, etc.). Cf. ISO 19111:2007:2007-07, table 37, attribute inverse flattening</semantic__p>
+</semantic__clause>
+
+<semantic__clause id="semantic___property_geosrsprimemeridian" obligation="normative">
+<semantic__title>Property: geosrs:primeMeridian</semantic__title>
+<semantic__p id="semantic___ea4bd68f-483d-d509-0d37-50bae0fa1d21">The class <semantic__link target="https://w3id.org/geosrs/geosrs:primeMeridian"><semantic__tt>geosrs:geosrs:primeMeridian</semantic__tt></semantic__link> is defined by the following:</semantic__p>
+
+<semantic__p id="semantic___36e17e9e-532b-ba56-fc11-16e3a398ec33">The prime meridian used by a geodetic datum. Cf. ISO 19111:2007:2007-07, table 34, association role primeMeridian.</semantic__p>
+</semantic__clause>
 </semantic__clause>
 
 <semantic__clause id="semantic___srs_application_module" obligation="normative">
@@ -564,7 +677,7 @@ Performance Distributed Computing, pp. 181–184. IEEE Press, New York (2001)</s
 <semantic__title>Bibliography</semantic__title>
 <semantic__note id="semantic___155a708c-216d-5804-50a7-1a2723619850"><semantic__p id="semantic___9702179a-71de-0d11-425d-60a89a0feed8">The TC has approved Springer LNCS as the official document citation type. Springer LNCS is widely used in technical and computer science journals and other publications For citations in the text please use square brackets and consecutive numbers: [1], [2], [3] Actual References: [n] Journal: Author Surname, A.: Title. Publication Title. Volume number, Issue number, Pages Used (Year Published)</semantic__p>
 </semantic__note><semantic__bibitem id="semantic__iso19142" type="standard" schema-version="v1.2.9">
-  <semantic__fetched>2025-03-10</semantic__fetched>
+  <semantic__fetched>2025-03-11</semantic__fetched>
   
 <semantic__title type="title-intro" format="text/plain" language="en" script="Latn">Geographic information</semantic__title>
 
@@ -611,7 +724,7 @@ Performance Distributed Computing, pp. 181–184. IEEE Press, New York (2001)</s
   </semantic__copyright>
   <semantic__relation type="instanceOf">
     <semantic__bibitem type="standard">
-      <semantic__fetched>2025-03-10</semantic__fetched>
+      <semantic__fetched>2025-03-11</semantic__fetched>
       
 <semantic__title type="title-intro" format="text/plain" language="en" script="Latn">Geographic information</semantic__title>
 
@@ -746,12 +859,12 @@ sourcecode .nt {
 <boilerplate><copyright-statement>
 
 <clause id="_copyright_notice" obligation="normative">
-<title id="_5f6c68f7-b3fd-4b20-b482-174d5f92c82c">Copyright notice</title><fmt-title depth="1"><semx element="title" source="_5f6c68f7-b3fd-4b20-b482-174d5f92c82c">Copyright notice</semx></fmt-title>
+<title id="_41ff15fd-0b21-4880-b5ae-8f622716efc3">Copyright notice</title><fmt-title depth="1"><semx element="title" source="_41ff15fd-0b21-4880-b5ae-8f622716efc3">Copyright notice</semx></fmt-title>
 <p id="_09cc624e-08fe-4298-0e48-fd64aab88de3" align="center">Copyright © 2025 Open Geospatial Consortium<br/> To obtain additional rights of use, visit<link target="https://www.ogc.org/legal"/></p>
 </clause>
 
 <clause id="_note" obligation="normative">
-<title id="_1edf4af2-7396-4b92-9488-58c8132bf012">Note</title><fmt-title depth="1"><semx element="title" source="_1edf4af2-7396-4b92-9488-58c8132bf012">Note</semx></fmt-title>
+<title id="_ae6c5e2f-1932-4155-8404-86d088489037">Note</title><fmt-title depth="1"><semx element="title" source="_ae6c5e2f-1932-4155-8404-86d088489037">Note</semx></fmt-title>
 <p id="_11e88dba-9912-1a89-a82d-7291bf232191" align="left">Attention is drawn to the possibility that some of the elements of this document may be the subject of patent rights. The Open Geospatial Consortium shall not be held responsible for identifying any or all such patent rights.</p>
 
 <p id="_15067213-c07b-cba0-7e18-395ab2e00ab3" align="left">Recipients of this document are requested to submit, with their comments, notification of any relevant patent claims or other intellectual property rights of which they may be aware that might be infringed by any implementation of the standard set forth in this document, and to provide supporting documentation.</p>
@@ -761,7 +874,7 @@ sourcecode .nt {
 <license-statement>
 
 <clause id="_license_agreement" obligation="normative">
-<title id="_009c0078-4634-442d-abf7-7f64e7f4d4e3">License Agreement</title><fmt-title depth="1"><semx element="title" source="_009c0078-4634-442d-abf7-7f64e7f4d4e3">License Agreement</semx></fmt-title>
+<title id="_6b3b6cf2-dc81-49f9-8769-42bc420b6261">License Agreement</title><fmt-title depth="1"><semx element="title" source="_6b3b6cf2-dc81-49f9-8769-42bc420b6261">License Agreement</semx></fmt-title>
 <p id="_f5fe34fd-12e2-2bb7-8cd6-9d4cffa96538">Use of this document is subject to the license agreement at <link target="https://www.ogc.org/license"/></p>
 </clause>
 </license-statement>
@@ -769,7 +882,7 @@ sourcecode .nt {
 <legal-statement>
 
 <clause id="_notice" obligation="normative">
-<title id="_b31034f6-670a-4710-8c54-bf8e1c8408ff">Notice</title><fmt-title depth="1"><semx element="title" source="_b31034f6-670a-4710-8c54-bf8e1c8408ff">Notice</semx></fmt-title>
+<title id="_bb5677fa-8a49-41b8-bb71-eafd37a75c9c">Notice</title><fmt-title depth="1"><semx element="title" source="_bb5677fa-8a49-41b8-bb71-eafd37a75c9c">Notice</semx></fmt-title>
 <p id="_2089b793-3e73-2e15-8674-d26cb3c9e594">This document is an OGC Member approved international standard. This document is available on a royalty free, non-discriminatory basis. Recipients of this document are invited to submit, with their comments, notification of any relevant patent rights of which they are aware and to provide supporting documentation.</p>
 </clause>
 </legal-statement>
@@ -777,14 +890,14 @@ sourcecode .nt {
 <feedback-statement>
 
 </feedback-statement>
-</boilerplate><preface><clause type="toc" id="_589031f7-8829-4ea4-be4c-dd61f05e4c3a" displayorder="1"><fmt-title depth="1">Contents</fmt-title></clause>
-<abstract id="_abstract" displayorder="2"><title id="_2eca568c-4684-4ef3-8b84-46fd2d4c82e1">Abstract</title><fmt-title depth="1"><span class="fmt-caption-label"><semx element="autonum" source="_abstract">I</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_2eca568c-4684-4ef3-8b84-46fd2d4c82e1">Abstract</semx></fmt-title><fmt-xref-label><semx element="title" source="_abstract">Abstract</semx></fmt-xref-label><p id="_ea8b918b-259f-ad32-41cd-bf6720709423">&#x3c;Insert Abstract Text here&#x3e;</p>
-</abstract><clause id="_03f96dc4-68a1-4c51-b27b-b7c5028d4d16" type="keywords" displayorder="3">
-<title id="_c4a1d849-a147-4834-8ac8-70b8316fd3e7">Keywords</title><fmt-title depth="1"><span class="fmt-caption-label"><semx element="autonum" source="_03f96dc4-68a1-4c51-b27b-b7c5028d4d16">II</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_c4a1d849-a147-4834-8ac8-70b8316fd3e7">Keywords</semx></fmt-title><fmt-xref-label><semx element="title" source="_03f96dc4-68a1-4c51-b27b-b7c5028d4d16">Keywords</semx></fmt-xref-label>
+</boilerplate><preface><clause type="toc" id="_063aa2a1-c023-4b94-b5b7-89c88ede64f1" displayorder="1"><fmt-title depth="1">Contents</fmt-title></clause>
+<abstract id="_abstract" displayorder="2"><title id="_bd7de8fa-d1b6-46d1-90f5-1876735068f6">Abstract</title><fmt-title depth="1"><span class="fmt-caption-label"><semx element="autonum" source="_abstract">I</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_bd7de8fa-d1b6-46d1-90f5-1876735068f6">Abstract</semx></fmt-title><fmt-xref-label><semx element="title" source="_abstract">Abstract</semx></fmt-xref-label><p id="_ea8b918b-259f-ad32-41cd-bf6720709423">&#x3c;Insert Abstract Text here&#x3e;</p>
+</abstract><clause id="_9fda539a-615d-443f-8386-5b94ac32e673" type="keywords" displayorder="3">
+<title id="_104a3d32-335a-4a26-a106-26da8031bf7a">Keywords</title><fmt-title depth="1"><span class="fmt-caption-label"><semx element="autonum" source="_9fda539a-615d-443f-8386-5b94ac32e673">II</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_104a3d32-335a-4a26-a106-26da8031bf7a">Keywords</semx></fmt-title><fmt-xref-label><semx element="title" source="_9fda539a-615d-443f-8386-5b94ac32e673">Keywords</semx></fmt-xref-label>
 <p>The following are keywords to be used by search engines and document catalogues.</p>
 <p>keyword_1, keyword_2, keyword_3, etc.</p></clause>
 <foreword id="_b7a5d91c-6d74-27e2-768e-ba54cb48ed08" obligation="informative" displayorder="4">
-<title id="_35fa103e-fb0d-4fbc-a951-5e48c006cb0e">Preface</title><fmt-title depth="1"><span class="fmt-caption-label"><semx element="autonum" source="_b7a5d91c-6d74-27e2-768e-ba54cb48ed08">III</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_35fa103e-fb0d-4fbc-a951-5e48c006cb0e">Preface</semx></fmt-title><fmt-xref-label><semx element="title" source="_b7a5d91c-6d74-27e2-768e-ba54cb48ed08">Preface</semx></fmt-xref-label>
+<title id="_89aaf19a-f145-4a88-ad61-760adcbb0ff2">Preface</title><fmt-title depth="1"><span class="fmt-caption-label"><semx element="autonum" source="_b7a5d91c-6d74-27e2-768e-ba54cb48ed08">III</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_89aaf19a-f145-4a88-ad61-760adcbb0ff2">Preface</semx></fmt-title><fmt-xref-label><semx element="title" source="_b7a5d91c-6d74-27e2-768e-ba54cb48ed08">Preface</semx></fmt-xref-label>
 <note id="_32582aeb-afff-179b-bda3-c706a3248239" autonum=""><fmt-name><span class="fmt-caption-label"><span class="fmt-element-name">NOTE</span></span><span class="fmt-label-delim">:<tab/></span></fmt-name><fmt-xref-label><span class="fmt-element-name">Note</span></fmt-xref-label><fmt-xref-label container="_b7a5d91c-6d74-27e2-768e-ba54cb48ed08"><span class="fmt-xref-container"><semx element="title" source="_b7a5d91c-6d74-27e2-768e-ba54cb48ed08">Preface</semx></span><span class="fmt-comma">,</span> <span class="fmt-element-name">Note</span></fmt-xref-label><p id="_a5a99d13-b6ed-45b3-383e-20c82abc3168">Insert Preface Text here. Give OGC specific commentary: describe the technical content, reason for document, history of the document and precursors, and plans for future work.</p>
 
 <p id="_f5454b55-d902-bc24-7869-c785e952bc3f">There are two ways to specify the Preface: “simple clause” or “full clasuse”</p>
@@ -794,10 +907,10 @@ sourcecode .nt {
 <p id="_f2bb641d-c955-c74f-18a8-6233a00a9a84">If the Preface contains subclauses, it needs to be encoded as a full preface clause. This one is recognized as a full Metanorma AsciiDoc section with te title “Preface”, i.e. <tt>== Preface</tt>. (Simple preface content can also be encoded like full preface.)</p>
 </note>
 </foreword><clause id="_security_considerations" type="security" obligation="informative" displayorder="5">
-<title id="_8c0a6bf1-9c8b-45a0-8901-94563a9fea6a">Security Considerations</title><fmt-title depth="1"><span class="fmt-caption-label"><semx element="autonum" source="_security_considerations">IV</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_8c0a6bf1-9c8b-45a0-8901-94563a9fea6a">Security Considerations</semx></fmt-title><fmt-xref-label><semx element="title" source="_security_considerations">Security Considerations</semx></fmt-xref-label>
+<title id="_75d9300f-2768-4f4a-92f0-b4ba1533199c">Security Considerations</title><fmt-title depth="1"><span class="fmt-caption-label"><semx element="autonum" source="_security_considerations">IV</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_75d9300f-2768-4f4a-92f0-b4ba1533199c">Security Considerations</semx></fmt-title><fmt-xref-label><semx element="title" source="_security_considerations">Security Considerations</semx></fmt-xref-label>
 <p id="_f9c81896-dad2-6e63-55d0-39af8ddf94a4">No security considerations have been made for this Standard.</p>
 </clause><submitters id="_submitters" displayorder="6">
-<title id="_07a5d258-6e12-4388-8b86-13990531ee2d">Submitters</title><fmt-title depth="1"><span class="fmt-caption-label"><semx element="autonum" source="_submitters">V</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_07a5d258-6e12-4388-8b86-13990531ee2d">Submitters</semx></fmt-title><fmt-xref-label><semx element="title" source="_submitters">Submitters</semx></fmt-xref-label>
+<title id="_c545ed82-7308-4415-8cad-f3863a61e3d3">Submitters</title><fmt-title depth="1"><span class="fmt-caption-label"><semx element="autonum" source="_submitters">V</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_c545ed82-7308-4415-8cad-f3863a61e3d3">Submitters</semx></fmt-title><fmt-xref-label><semx element="title" source="_submitters">Submitters</semx></fmt-xref-label>
 <p id="_c4485abb-cbc5-a7e8-5e00-c9c58a531cc9">All questions regarding this submission should be directed to the editor or the submitters:</p>
 
 <table id="_1cb9b8d3-e3bc-7fbe-a61b-e12e19da9c3f" unnumbered="true"><thead><tr><th valign="middle" align="left">Name</th>
@@ -810,15 +923,15 @@ sourcecode .nt {
 </tr></tbody>
 </table>
 </submitters><clause id="_source_of_the_content_for_this_ogc_document" obligation="informative" displayorder="7">
-<title id="_cb7ecb6b-de31-4cd6-a107-9809d40a9ef2">Source of the content for this OGC document</title><fmt-title depth="1"><span class="fmt-caption-label"><semx element="autonum" source="_source_of_the_content_for_this_ogc_document">VI</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_cb7ecb6b-de31-4cd6-a107-9809d40a9ef2">Source of the content for this OGC document</semx></fmt-title><fmt-xref-label><semx element="title" source="_source_of_the_content_for_this_ogc_document">Source of the content for this OGC document</semx></fmt-xref-label>
+<title id="_c7f67959-a275-4473-8ff1-05577caeab7c">Source of the content for this OGC document</title><fmt-title depth="1"><span class="fmt-caption-label"><semx element="autonum" source="_source_of_the_content_for_this_ogc_document">VI</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_c7f67959-a275-4473-8ff1-05577caeab7c">Source of the content for this OGC document</semx></fmt-title><fmt-xref-label><semx element="title" source="_source_of_the_content_for_this_ogc_document">Source of the content for this OGC document</semx></fmt-xref-label>
 </clause><clause id="_validity_of_content" obligation="informative" displayorder="8">
-<title id="_0af13e30-a4bd-44e4-8082-d9ad6e5aaba1">Validity of content</title><fmt-title depth="1"><span class="fmt-caption-label"><semx element="autonum" source="_validity_of_content">VII</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_0af13e30-a4bd-44e4-8082-d9ad6e5aaba1">Validity of content</semx></fmt-title><fmt-xref-label><semx element="title" source="_validity_of_content">Validity of content</semx></fmt-xref-label>
+<title id="_b0b3abbb-9842-4fdc-8ef0-b27fec8bc033">Validity of content</title><fmt-title depth="1"><span class="fmt-caption-label"><semx element="autonum" source="_validity_of_content">VII</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_b0b3abbb-9842-4fdc-8ef0-b27fec8bc033">Validity of content</semx></fmt-title><fmt-xref-label><semx element="title" source="_validity_of_content">Validity of content</semx></fmt-xref-label>
 </clause><clause id="_future_work" obligation="informative" displayorder="9">
-<title id="_340fc303-3437-4298-b835-6179fc7b5f1c">Future work</title><fmt-title depth="1"><span class="fmt-caption-label"><semx element="autonum" source="_future_work">VIII</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_340fc303-3437-4298-b835-6179fc7b5f1c">Future work</semx></fmt-title><fmt-xref-label><semx element="title" source="_future_work">Future work</semx></fmt-xref-label>
+<title id="_e8177392-7d21-4b4e-b67e-1d0cff7b41a0">Future work</title><fmt-title depth="1"><span class="fmt-caption-label"><semx element="autonum" source="_future_work">VIII</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_e8177392-7d21-4b4e-b67e-1d0cff7b41a0">Future work</semx></fmt-title><fmt-xref-label><semx element="title" source="_future_work">Future work</semx></fmt-xref-label>
 <note id="_834e04a4-b415-8288-780b-bbc700cde5b7" autonum=""><fmt-name><span class="fmt-caption-label"><span class="fmt-element-name">NOTE</span></span><span class="fmt-label-delim">:<tab/></span></fmt-name><fmt-xref-label><span class="fmt-element-name">Note</span></fmt-xref-label><fmt-xref-label container="_future_work"><span class="fmt-xref-container"><semx element="title" source="_future_work">Future work</semx></span><span class="fmt-comma">,</span> <span class="fmt-element-name">Note</span></fmt-xref-label><p id="_7417f55b-d58a-c349-5c8f-a0bdc3dc49d7">If you need to place any further sections in the preface area use the  <tt>[.preface]</tt> attribute.</p>
 </note>
 </clause><submitters id="_contributors" type="contributors" displayorder="10">
-<title id="_907936a3-0d9c-4d34-afea-3a8a1d40150c">Contributors</title><fmt-title depth="1"><span class="fmt-caption-label"><semx element="autonum" source="_contributors">IX</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_907936a3-0d9c-4d34-afea-3a8a1d40150c">Contributors</semx></fmt-title><fmt-xref-label><semx element="title" source="_contributors">Contributors</semx></fmt-xref-label>
+<title id="_045649e7-7735-4ea0-b21d-ed170093880f">Contributors</title><fmt-title depth="1"><span class="fmt-caption-label"><semx element="autonum" source="_contributors">IX</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_045649e7-7735-4ea0-b21d-ed170093880f">Contributors</semx></fmt-title><fmt-xref-label><semx element="title" source="_contributors">Contributors</semx></fmt-xref-label>
 <p id="_621c4f5b-26a9-89f7-0840-938819089a27">Additional contributors to this Standard include the following:</p>
 
 <p id="_45f943af-cadd-6488-bff5-c1c1376f2096">Individual name(s), Organization</p>
@@ -835,7 +948,7 @@ sourcecode .nt {
 
 
 <clause id="_scope" type="scope" obligation="normative" displayorder="11">
-<title id="_f643a736-9ccf-4505-8027-34cea401d0bb">Scope</title><fmt-title depth="1"><span class="fmt-caption-label"><semx element="autonum" source="_scope">1</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_f643a736-9ccf-4505-8027-34cea401d0bb">Scope</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_scope">1</semx></fmt-xref-label>
+<title id="_787a9364-9968-40b0-9f56-c4880c5eb08f">Scope</title><fmt-title depth="1"><span class="fmt-caption-label"><semx element="autonum" source="_scope">1</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_787a9364-9968-40b0-9f56-c4880c5eb08f">Scope</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_scope">1</semx></fmt-xref-label>
 <p id="_03b9a7d3-051b-0e6f-c7a5-b657ca454854">&#x3c;Insert Scope text here&#x3e;<note id="_4be83c66-85a6-3e88-4704-7b65aeeff11c" autonum=""><fmt-name><span class="fmt-caption-label"><span class="fmt-element-name">NOTE</span></span><span class="fmt-label-delim">:<tab/></span></fmt-name><fmt-xref-label><span class="fmt-element-name">Note</span></fmt-xref-label><fmt-xref-label container="_scope"><span class="fmt-xref-container"><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_scope">1</semx></span><span class="fmt-comma">,</span> <span class="fmt-element-name">Note</span></fmt-xref-label><p id="_30ac8acc-75f8-0a6e-0cef-e15bd1fec3ef">Give the subject of the document and the aspects of that scope covered by the document.</p>
 </note></p>
 
@@ -843,7 +956,7 @@ sourcecode .nt {
 </clause>
 
 <clause id="_conformance" type="conformance" obligation="normative" displayorder="12">
-<title id="_63aaf1e6-01e3-47d5-9ab6-c1a3629a84af">Conformance</title><fmt-title depth="1"><span class="fmt-caption-label"><semx element="autonum" source="_conformance">2</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_63aaf1e6-01e3-47d5-9ab6-c1a3629a84af">Conformance</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_conformance">2</semx></fmt-xref-label>
+<title id="_879dcb05-a60a-47b0-9e59-ba36ef9d998c">Conformance</title><fmt-title depth="1"><span class="fmt-caption-label"><semx element="autonum" source="_conformance">2</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_879dcb05-a60a-47b0-9e59-ba36ef9d998c">Conformance</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_conformance">2</semx></fmt-xref-label>
 <p id="_673687f0-e120-ec8b-8ff4-36fa2248dc0a">&#x3c;Insert conformance content here&#x3e;<note id="_caebfb69-e4f0-2575-128f-e19010271323" autonum=""><fmt-name><span class="fmt-caption-label"><span class="fmt-element-name">NOTE</span></span><span class="fmt-label-delim">:<tab/></span></fmt-name><fmt-xref-label><span class="fmt-element-name">Note</span></fmt-xref-label><fmt-xref-label container="_conformance"><span class="fmt-xref-container"><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_conformance">2</semx></span><span class="fmt-comma">,</span> <span class="fmt-element-name">Note</span></fmt-xref-label><p id="_d3629a04-c8a0-852a-0004-908058a1fd43">Provide a short description of the content approached in subsequent sections and the main subject of the document</p>
 </note></p>
 
@@ -853,7 +966,7 @@ sourcecode .nt {
 
 
 <terms id="_terms_and_definitions" obligation="normative" displayorder="14">
-<title id="_f802a9e9-9885-47bd-aba5-2250bfdd6310">Terms and definitions</title><fmt-title depth="1"><span class="fmt-caption-label"><semx element="autonum" source="_terms_and_definitions">4</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_f802a9e9-9885-47bd-aba5-2250bfdd6310">Terms and definitions</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_terms_and_definitions">4</semx></fmt-xref-label><p id="_7fe04b5b-db41-5d9b-ebe1-463b3a0c16c9">This document uses the terms defined in <link target="https://portal.ogc.org/public_ogc/directives/directives.php">OGC Policy Directive 49</link>, which is based on the ISO/IEC Directives, Part 2, Rules for the structure and drafting of International Standards. In particular, the word “shall” (not “must”) is the verb form used to indicate a requirement to be strictly followed to conform to this document and OGC documents do not use the equivalent phrases in the ISO/IEC Directives, Part 2.</p>
+<title id="_d0ff2ef8-789d-492c-a355-99f728bd3a32">Terms and definitions</title><fmt-title depth="1"><span class="fmt-caption-label"><semx element="autonum" source="_terms_and_definitions">4</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_d0ff2ef8-789d-492c-a355-99f728bd3a32">Terms and definitions</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_terms_and_definitions">4</semx></fmt-xref-label><p id="_7fe04b5b-db41-5d9b-ebe1-463b3a0c16c9">This document uses the terms defined in <link target="https://portal.ogc.org/public_ogc/directives/directives.php">OGC Policy Directive 49</link>, which is based on the ISO/IEC Directives, Part 2, Rules for the structure and drafting of International Standards. In particular, the word “shall” (not “must”) is the verb form used to indicate a requirement to be strictly followed to conform to this document and OGC documents do not use the equivalent phrases in the ISO/IEC Directives, Part 2.</p>
 
 <p id="_e0235fe8-8273-26b4-faeb-a580ad58929f">This document also uses terms defined in the OGC Standard for Modular specifications (<link target="https://portal.opengeospatial.org/files/?artifact_id=34762">OGC 08-131r3</link>), also known as the ‘ModSpec’. The definitions of terms such as standard, specification, requirement, and conformance test are provided in the ModSpec.</p>
 
@@ -873,12 +986,12 @@ sourcecode .nt {
 </terms>
 
 <clause id="_conventions" obligation="normative" displayorder="15">
-<title id="_b4711c28-0ee1-42c5-b23e-1ef2f1a08ec0">Conventions</title><fmt-title depth="1"><span class="fmt-caption-label"><semx element="autonum" source="_conventions">5</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_b4711c28-0ee1-42c5-b23e-1ef2f1a08ec0">Conventions</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_conventions">5</semx></fmt-xref-label>
+<title id="_2606d7a4-2466-44e8-bc48-15ab1bae13bc">Conventions</title><fmt-title depth="1"><span class="fmt-caption-label"><semx element="autonum" source="_conventions">5</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_2606d7a4-2466-44e8-bc48-15ab1bae13bc">Conventions</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_conventions">5</semx></fmt-xref-label>
 <note id="_7b9e461f-b2ef-0e2e-0a14-e6b02a0518cd" autonum=""><fmt-name><span class="fmt-caption-label"><span class="fmt-element-name">NOTE</span></span><span class="fmt-label-delim">:<tab/></span></fmt-name><fmt-xref-label><span class="fmt-element-name">Note</span></fmt-xref-label><fmt-xref-label container="_conventions"><span class="fmt-xref-container"><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_conventions">5</semx></span><span class="fmt-comma">,</span> <span class="fmt-element-name">Note</span></fmt-xref-label><p id="_76880d8e-7493-978d-e608-43521088e07b">This section provides details and examples for any conventions used in the document. Examples of conventions are symbols, abbreviations, use of XML schema, or special notes regarding how to read the document.</p>
 </note>
 
 <clause id="_identifiers" obligation="normative">
-<title id="_4bbc8312-39d6-4cc9-be76-aacd53572448">Identifiers</title><fmt-title depth="2"><span class="fmt-caption-label"><semx element="autonum" source="_conventions">5</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_identifiers">1</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_4bbc8312-39d6-4cc9-be76-aacd53572448">Identifiers</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_conventions">5</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_identifiers">1</semx></fmt-xref-label>
+<title id="_dc5bde54-ce8c-4645-a89e-983bc4e59229">Identifiers</title><fmt-title depth="2"><span class="fmt-caption-label"><semx element="autonum" source="_conventions">5</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_identifiers">1</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_dc5bde54-ce8c-4645-a89e-983bc4e59229">Identifiers</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_conventions">5</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_identifiers">1</semx></fmt-xref-label>
 <p id="_695d051b-6fef-c0b6-5aa8-0fe8fff41091">The normative provisions in this standard are denoted by the URI</p>
 
 <p id="_80aba301-e72e-2d54-7021-ae07ebfcd4ac"><tt><link target="http://www.opengis.net/spec/{standard}/{m.n}"/></tt></p>
@@ -887,247 +1000,360 @@ sourcecode .nt {
 </clause>
 
 <clause id="_other_conventions" obligation="normative">
-<title id="_04049513-d3fe-45f0-a5a9-48aedd3e20c0">Other conventions</title><fmt-title depth="2"><span class="fmt-caption-label"><semx element="autonum" source="_conventions">5</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_other_conventions">2</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_04049513-d3fe-45f0-a5a9-48aedd3e20c0">Other conventions</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_conventions">5</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_other_conventions">2</semx></fmt-xref-label>
+<title id="_2a971cbd-f9a6-4279-bfdd-40f849e7cfb6">Other conventions</title><fmt-title depth="2"><span class="fmt-caption-label"><semx element="autonum" source="_conventions">5</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_other_conventions">2</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_2a971cbd-f9a6-4279-bfdd-40f849e7cfb6">Other conventions</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_conventions">5</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_other_conventions">2</semx></fmt-xref-label>
 <p id="_cdd60544-063c-69ac-3de3-c2b828251e39">&#x3c;Place any other convention needed with its corresponding title&#x3e;</p>
 </clause>
 </clause>
 
 <clause id="_core" obligation="normative" displayorder="16">
-<title id="_6f89b2c0-7f3a-4847-8009-abdc2161242c">Core</title><fmt-title depth="1"><span class="fmt-caption-label"><semx element="autonum" source="_core">6</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_6f89b2c0-7f3a-4847-8009-abdc2161242c">Core</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_core">6</semx></fmt-xref-label>
+<title id="_ea6b5bcb-58b9-4bc6-9961-66780ff444b9">Core</title><fmt-title depth="1"><span class="fmt-caption-label"><semx element="autonum" source="_core">6</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_ea6b5bcb-58b9-4bc6-9961-66780ff444b9">Core</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_core">6</semx></fmt-xref-label>
 <p id="core">This clause establishes the <strong>Core</strong> Requirements class, with IRI <tt>/req/core</tt>, which has a corresponding Conformance Class, <strong>Core</strong>, with IRI <tt>/conf/core</tt>.</p>
 
 <clause id="_class_geosrscoordinatesystem" obligation="normative">
-<title id="_841fea7c-2074-4b39-9320-fe1431b1837a">Class: geosrs:CoordinateSystem</title><fmt-title depth="2"><span class="fmt-caption-label"><semx element="autonum" source="_core">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_class_geosrscoordinatesystem">1</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_841fea7c-2074-4b39-9320-fe1431b1837a">Class: geosrs:CoordinateSystem</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_core">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_class_geosrscoordinatesystem">1</semx></fmt-xref-label>
+<title id="_5e23a6d5-fceb-4647-9d58-b5ad469575e8">Class: geosrs:CoordinateSystem</title><fmt-title depth="2"><span class="fmt-caption-label"><semx element="autonum" source="_core">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_class_geosrscoordinatesystem">1</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_5e23a6d5-fceb-4647-9d58-b5ad469575e8">Class: geosrs:CoordinateSystem</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_core">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_class_geosrscoordinatesystem">1</semx></fmt-xref-label>
 <p id="_a16877cc-a238-adfa-4d03-fc262c67f135">The class <link target="https://w3id.org/geosrs/geosrs:CoordinateSystem"><tt>geosrs:geosrs:CoordinateSystem</tt></link> is defined by the following:</p>
 
 <p id="_b5d661db-9f38-89e9-b3ad-7431bc6db238">Set of axes that spans a given coordinate space and of mathematical rules for specifying how coordinates are to be assigned to points. Cf. ISO 19111:2007:2007-07, part 9.2, table 17 and annex B.2.</p>
 </clause>
 
 <clause id="_class_geosrscartesiancoordinatesystem" obligation="normative">
-<title id="_3a45c4c1-081f-418c-beb9-d372575435f5">Class: geosrs:CartesianCoordinateSystem</title><fmt-title depth="2"><span class="fmt-caption-label"><semx element="autonum" source="_core">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_class_geosrscartesiancoordinatesystem">2</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_3a45c4c1-081f-418c-beb9-d372575435f5">Class: geosrs:CartesianCoordinateSystem</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_core">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_class_geosrscartesiancoordinatesystem">2</semx></fmt-xref-label>
+<title id="_0ce8d79b-9c04-4b93-b3e7-abb702d6478e">Class: geosrs:CartesianCoordinateSystem</title><fmt-title depth="2"><span class="fmt-caption-label"><semx element="autonum" source="_core">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_class_geosrscartesiancoordinatesystem">2</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_0ce8d79b-9c04-4b93-b3e7-abb702d6478e">Class: geosrs:CartesianCoordinateSystem</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_core">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_class_geosrscartesiancoordinatesystem">2</semx></fmt-xref-label>
 <p id="_64b262e7-90bc-7bd7-ce5e-340a2889646d">The class <link target="https://w3id.org/geosrs/geosrs:CartesianCoordinateSystem"><tt>geosrs:geosrs:CartesianCoordinateSystem</tt></link> is defined by the following:</p>
 
 <p id="_f488b7c3-19d3-bae4-b616-c7b0b87a0a60">Coordinate system which gives the position of points relative to n mutually perpendicular axes. Cf. ISO 19111:2007:2007-07, tables 15 and 18.</p>
 </clause>
 
 <clause id="_class_geosrsellipsoidalcoordinatesystem" obligation="normative">
-<title id="_f59dbc0d-3497-42b3-8f7f-003a90285ebe">Class: geosrs:EllipsoidalCoordinateSystem</title><fmt-title depth="2"><span class="fmt-caption-label"><semx element="autonum" source="_core">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_class_geosrsellipsoidalcoordinatesystem">3</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_f59dbc0d-3497-42b3-8f7f-003a90285ebe">Class: geosrs:EllipsoidalCoordinateSystem</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_core">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_class_geosrsellipsoidalcoordinatesystem">3</semx></fmt-xref-label>
+<title id="_0c0394d4-7a7c-4909-acee-503a5bde0080">Class: geosrs:EllipsoidalCoordinateSystem</title><fmt-title depth="2"><span class="fmt-caption-label"><semx element="autonum" source="_core">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_class_geosrsellipsoidalcoordinatesystem">3</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_0c0394d4-7a7c-4909-acee-503a5bde0080">Class: geosrs:EllipsoidalCoordinateSystem</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_core">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_class_geosrsellipsoidalcoordinatesystem">3</semx></fmt-xref-label>
 <p id="_0a3a6e12-4faa-7f22-1b86-95903fec30df">The class <link target="https://w3id.org/geosrs/geosrs:EllipsoidalCoordinateSystem"><tt>geosrs:geosrs:EllipsoidalCoordinateSystem</tt></link> is defined by the following:</p>
 
 <p id="_7ab0c7c0-632d-edca-6672-21c59d640a18">Coordinate system which gives the position is specified by geodetic latitude, geodetic longitude and (in the three-dimensional case) ellipsoidal height. Cf. ISO 19111:2007:2007-07, tables 15 and 20.</p>
 </clause>
 
 <clause id="_class_geosrslinearcoordinatesystem" obligation="normative">
-<title id="_91d6f4b1-93b0-4673-8006-f0df01454346">Class: geosrs:LinearCoordinateSystem</title><fmt-title depth="2"><span class="fmt-caption-label"><semx element="autonum" source="_core">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_class_geosrslinearcoordinatesystem">4</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_91d6f4b1-93b0-4673-8006-f0df01454346">Class: geosrs:LinearCoordinateSystem</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_core">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_class_geosrslinearcoordinatesystem">4</semx></fmt-xref-label>
+<title id="_0370bfee-2b33-444d-a91a-44d525262924">Class: geosrs:LinearCoordinateSystem</title><fmt-title depth="2"><span class="fmt-caption-label"><semx element="autonum" source="_core">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_class_geosrslinearcoordinatesystem">4</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_0370bfee-2b33-444d-a91a-44d525262924">Class: geosrs:LinearCoordinateSystem</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_core">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_class_geosrslinearcoordinatesystem">4</semx></fmt-xref-label>
 <p id="_42832f7b-eaa6-fab5-b12e-b3630e62246b">The class <link target="https://w3id.org/geosrs/geosrs:LinearCoordinateSystem"><tt>geosrs:geosrs:LinearCoordinateSystem</tt></link> is defined by the following:</p>
 
 <p id="_1ac285f8-d4d8-83ef-abc7-74626f566143">One-dimensional coordinate system in which a linear feature forms the axis.</p>
 </clause>
 
 <clause id="_class_geosrsordinalcoordinatesystem" obligation="normative">
-<title id="_310ab923-6a77-4656-b1c2-9efdd8aee33c">Class: geosrs:OrdinalCoordinateSystem</title><fmt-title depth="2"><span class="fmt-caption-label"><semx element="autonum" source="_core">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_class_geosrsordinalcoordinatesystem">5</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_310ab923-6a77-4656-b1c2-9efdd8aee33c">Class: geosrs:OrdinalCoordinateSystem</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_core">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_class_geosrsordinalcoordinatesystem">5</semx></fmt-xref-label>
+<title id="_03416833-76e9-4f0c-9f68-c9477f1b1081">Class: geosrs:OrdinalCoordinateSystem</title><fmt-title depth="2"><span class="fmt-caption-label"><semx element="autonum" source="_core">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_class_geosrsordinalcoordinatesystem">5</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_03416833-76e9-4f0c-9f68-c9477f1b1081">Class: geosrs:OrdinalCoordinateSystem</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_core">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_class_geosrsordinalcoordinatesystem">5</semx></fmt-xref-label>
 <p id="_95103d0f-24f1-ce6c-db5f-9c4195beddfa">The class <link target="https://w3id.org/geosrs/geosrs:OrdinalCoordinateSystem"><tt>geosrs:geosrs:OrdinalCoordinateSystem</tt></link> is defined by the following:</p>
 
 <p id="_d382fca6-8cb5-ee28-b784-b7247b0a3828">n-dimensional coordinate system in which every axis uses integers.</p>
 </clause>
 
 <clause id="_class_geosrsparametriccoordinatesystem" obligation="normative">
-<title id="_e3f42e9d-b502-4293-ae7d-4e942cbfdbc0">Class: geosrs:ParametricCoordinateSystem</title><fmt-title depth="2"><span class="fmt-caption-label"><semx element="autonum" source="_core">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_class_geosrsparametriccoordinatesystem">6</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_e3f42e9d-b502-4293-ae7d-4e942cbfdbc0">Class: geosrs:ParametricCoordinateSystem</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_core">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_class_geosrsparametriccoordinatesystem">6</semx></fmt-xref-label>
+<title id="_cd8fca46-6c7e-45e2-a613-73b625dc6ace">Class: geosrs:ParametricCoordinateSystem</title><fmt-title depth="2"><span class="fmt-caption-label"><semx element="autonum" source="_core">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_class_geosrsparametriccoordinatesystem">6</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_cd8fca46-6c7e-45e2-a613-73b625dc6ace">Class: geosrs:ParametricCoordinateSystem</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_core">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_class_geosrsparametriccoordinatesystem">6</semx></fmt-xref-label>
 <p id="_155d6cd7-4d71-9ef3-d1dc-7e53b1c39b07">The class <link target="https://w3id.org/geosrs/geosrs:ParametricCoordinateSystem"><tt>geosrs:geosrs:ParametricCoordinateSystem</tt></link> is defined by the following:</p>
 
 <p id="_88b062f9-afa3-b866-d5e5-868305a6760a">One-dimensional coordinate system where the axis units are parameter values which are not inherently spatial.</p>
 </clause>
 
 <clause id="_class_geosrspolarcoordinatesystem" obligation="normative">
-<title id="_cb6271ad-e74e-4f4c-934d-5afb146dc9e4">Class: geosrs:PolarCoordinateSystem</title><fmt-title depth="2"><span class="fmt-caption-label"><semx element="autonum" source="_core">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_class_geosrspolarcoordinatesystem">7</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_cb6271ad-e74e-4f4c-934d-5afb146dc9e4">Class: geosrs:PolarCoordinateSystem</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_core">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_class_geosrspolarcoordinatesystem">7</semx></fmt-xref-label>
+<title id="_be386815-9c44-4dc3-9283-cb94267af09d">Class: geosrs:PolarCoordinateSystem</title><fmt-title depth="2"><span class="fmt-caption-label"><semx element="autonum" source="_core">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_class_geosrspolarcoordinatesystem">7</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_be386815-9c44-4dc3-9283-cb94267af09d">Class: geosrs:PolarCoordinateSystem</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_core">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_class_geosrspolarcoordinatesystem">7</semx></fmt-xref-label>
 <p id="_baf815ca-182c-6787-afd9-b9a02ccbc2a3">The class <link target="https://w3id.org/geosrs/geosrs:PolarCoordinateSystem"><tt>geosrs:geosrs:PolarCoordinateSystem</tt></link> is defined by the following:</p>
 
 <p id="_92c228b0-2c44-fcbd-fdd4-f563ad813636">Two-dimensional coordinate system in Euclidean space in which position is specified by one distance coordinate and one angular coordinate.</p>
 </clause>
 
 <clause id="_class_geosrssphericalcoordinatesystem" obligation="normative">
-<title id="_82c1cf78-e0e6-4fd9-804f-b07280dfa4d1">Class: geosrs:SphericalCoordinateSystem</title><fmt-title depth="2"><span class="fmt-caption-label"><semx element="autonum" source="_core">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_class_geosrssphericalcoordinatesystem">8</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_82c1cf78-e0e6-4fd9-804f-b07280dfa4d1">Class: geosrs:SphericalCoordinateSystem</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_core">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_class_geosrssphericalcoordinatesystem">8</semx></fmt-xref-label>
+<title id="_f0edc8c2-e702-47be-9465-7ca180a013cb">Class: geosrs:SphericalCoordinateSystem</title><fmt-title depth="2"><span class="fmt-caption-label"><semx element="autonum" source="_core">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_class_geosrssphericalcoordinatesystem">8</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_f0edc8c2-e702-47be-9465-7ca180a013cb">Class: geosrs:SphericalCoordinateSystem</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_core">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_class_geosrssphericalcoordinatesystem">8</semx></fmt-xref-label>
 <p id="_332e0cf5-1bdc-1c6c-085e-85edcbf8299f">The class <link target="https://w3id.org/geosrs/geosrs:SphericalCoordinateSystem"><tt>geosrs:geosrs:SphericalCoordinateSystem</tt></link> is defined by the following:</p>
 
 <p id="_b88b4f3b-09b2-cea1-0572-0505d976753d">Three-dimensional coordinate system in Euclidean space with one distance measured from the origin and two angular coordinates</p>
 </clause>
 
 <clause id="_class_geosrsverticalcoordinatesystem" obligation="normative">
-<title id="_bd4551aa-c57b-474c-8e10-d34033880f57">Class: geosrs:VerticalCoordinateSystem</title><fmt-title depth="2"><span class="fmt-caption-label"><semx element="autonum" source="_core">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_class_geosrsverticalcoordinatesystem">9</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_bd4551aa-c57b-474c-8e10-d34033880f57">Class: geosrs:VerticalCoordinateSystem</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_core">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_class_geosrsverticalcoordinatesystem">9</semx></fmt-xref-label>
+<title id="_60cf26cd-4038-47fb-9364-e8410b47a862">Class: geosrs:VerticalCoordinateSystem</title><fmt-title depth="2"><span class="fmt-caption-label"><semx element="autonum" source="_core">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_class_geosrsverticalcoordinatesystem">9</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_60cf26cd-4038-47fb-9364-e8410b47a862">Class: geosrs:VerticalCoordinateSystem</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_core">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_class_geosrsverticalcoordinatesystem">9</semx></fmt-xref-label>
 <p id="_1885da82-f4eb-c4c1-1d8b-b92aa0034e63">The class <link target="https://w3id.org/geosrs/geosrs:VerticalCoordinateSystem"><tt>geosrs:geosrs:VerticalCoordinateSystem</tt></link> is defined by the following:</p>
 
 <p id="_8df16d16-2046-533a-3b86-323618e3f7e9">One-dimensional coordinate system used for gravity related height or depth measurements. Cf. ISO 19111:2007:2007-07, tables 15 and 25.</p>
 </clause>
 
 <clause id="_class_geosrscoordinatesystemaxis" obligation="normative">
-<title id="_ea9389f1-a3d8-43dc-805a-b1bc81a5a9a2">Class: geosrs:CoordinateSystemAxis</title><fmt-title depth="2"><span class="fmt-caption-label"><semx element="autonum" source="_core">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_class_geosrscoordinatesystemaxis">10</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_ea9389f1-a3d8-43dc-805a-b1bc81a5a9a2">Class: geosrs:CoordinateSystemAxis</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_core">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_class_geosrscoordinatesystemaxis">10</semx></fmt-xref-label>
+<title id="_82163810-d260-4a79-817f-a552dc211d93">Class: geosrs:CoordinateSystemAxis</title><fmt-title depth="2"><span class="fmt-caption-label"><semx element="autonum" source="_core">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_class_geosrscoordinatesystemaxis">10</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_82163810-d260-4a79-817f-a552dc211d93">Class: geosrs:CoordinateSystemAxis</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_core">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_class_geosrscoordinatesystemaxis">10</semx></fmt-xref-label>
 <p id="_9a63054f-071e-47cc-c652-c834bcfda83a">The class <link target="https://w3id.org/geosrs/geosrs:CoordinateSystemAxis"><tt>geosrs:geosrs:CoordinateSystemAxis</tt></link> is defined by the following:</p>
 
 <p id="_c44e181a-35c6-4a3a-2a69-4215a08566c1">Axis relative to which a coordinate of a point is specified in a coordinate system. See ISO 19111:2007:2007-07, part 9.3, table 27 and annex B.2.2.</p>
 </clause>
 
 <clause id="_class_geosrsareaofuse" obligation="normative">
-<title id="_e9c01e95-505b-4f38-baea-02510af25681">Class: geosrs:AreaOfUse</title><fmt-title depth="2"><span class="fmt-caption-label"><semx element="autonum" source="_core">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_class_geosrsareaofuse">11</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_e9c01e95-505b-4f38-baea-02510af25681">Class: geosrs:AreaOfUse</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_core">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_class_geosrsareaofuse">11</semx></fmt-xref-label>
+<title id="_36e1b489-e235-4922-ba01-7d44f00a3765">Class: geosrs:AreaOfUse</title><fmt-title depth="2"><span class="fmt-caption-label"><semx element="autonum" source="_core">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_class_geosrsareaofuse">11</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_36e1b489-e235-4922-ba01-7d44f00a3765">Class: geosrs:AreaOfUse</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_core">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_class_geosrsareaofuse">11</semx></fmt-xref-label>
 <p id="_b0372464-3ebc-d0f3-6bf5-9d6ea2317971">The class <link target="https://w3id.org/geosrs/geosrs:AreaOfUse"><tt>geosrs:geosrs:AreaOfUse</tt></link> is defined by the following:</p>
 </clause>
 
 <clause id="_class_geosrscrs" obligation="normative">
-<title id="_eda54fe3-44a2-4a94-9b8c-d29bb8210eea">Class: geosrs:CRS</title><fmt-title depth="2"><span class="fmt-caption-label"><semx element="autonum" source="_core">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_class_geosrscrs">12</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_eda54fe3-44a2-4a94-9b8c-d29bb8210eea">Class: geosrs:CRS</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_core">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_class_geosrscrs">12</semx></fmt-xref-label>
+<title id="_d3fc1e88-05c3-499b-a48a-852e6a3b8589">Class: geosrs:CRS</title><fmt-title depth="2"><span class="fmt-caption-label"><semx element="autonum" source="_core">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_class_geosrscrs">12</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_d3fc1e88-05c3-499b-a48a-852e6a3b8589">Class: geosrs:CRS</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_core">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_class_geosrscrs">12</semx></fmt-xref-label>
 <p id="_440b6966-b81b-5f1a-f2c3-c0df3372d40b">The class <link target="https://w3id.org/geosrs/geosrs:CRS"><tt>geosrs:geosrs:CRS</tt></link> is defined by the following:</p>
 
 <p id="_e5f1983f-5101-2600-43c7-cef0fe7e5eed">Depending on the spatial dimension of coordinates (1D, 2D, 3D), this piece of metadata is used for specifying the elements of definition associated to a given set of coordinates: its datum, its ellipsoid, its prime meridian, the type of coordinates (geocentric, geographic, projected,…​), the coordinates units of measure, when appropriate the cartographic projection used, the vertical coordinate reference system.</p>
 </clause>
 
 <clause id="_class_geosrsengineeringcrs" obligation="normative">
-<title id="_274415bf-cac9-49d3-a00e-6abc534f106b">Class: geosrs:EngineeringCRS</title><fmt-title depth="2"><span class="fmt-caption-label"><semx element="autonum" source="_core">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_class_geosrsengineeringcrs">13</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_274415bf-cac9-49d3-a00e-6abc534f106b">Class: geosrs:EngineeringCRS</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_core">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_class_geosrsengineeringcrs">13</semx></fmt-xref-label>
+<title id="_8fecec31-fea7-43c4-b4ac-b03a961d1547">Class: geosrs:EngineeringCRS</title><fmt-title depth="2"><span class="fmt-caption-label"><semx element="autonum" source="_core">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_class_geosrsengineeringcrs">13</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_8fecec31-fea7-43c4-b4ac-b03a961d1547">Class: geosrs:EngineeringCRS</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_core">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_class_geosrsengineeringcrs">13</semx></fmt-xref-label>
 <p id="_a68f5359-ad2c-a1ae-f1e8-278f1610ba6d">The class <link target="https://w3id.org/geosrs/geosrs:EngineeringCRS"><tt>geosrs:geosrs:EngineeringCRS</tt></link> is defined by the following:</p>
 </clause>
 
 <clause id="_class_geosrsgeodeticcrs" obligation="normative">
-<title id="_aa765ec5-ff99-4c2d-aa60-c97baa2aa744">Class: geosrs:GeodeticCRS</title><fmt-title depth="2"><span class="fmt-caption-label"><semx element="autonum" source="_core">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_class_geosrsgeodeticcrs">14</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_aa765ec5-ff99-4c2d-aa60-c97baa2aa744">Class: geosrs:GeodeticCRS</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_core">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_class_geosrsgeodeticcrs">14</semx></fmt-xref-label>
+<title id="_8d9e7bd9-293d-4097-bfc6-30e1d0439306">Class: geosrs:GeodeticCRS</title><fmt-title depth="2"><span class="fmt-caption-label"><semx element="autonum" source="_core">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_class_geosrsgeodeticcrs">14</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_8d9e7bd9-293d-4097-bfc6-30e1d0439306">Class: geosrs:GeodeticCRS</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_core">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_class_geosrsgeodeticcrs">14</semx></fmt-xref-label>
 <p id="_8c7c38b5-7c66-5f5a-33f9-3cbc3220d5b5">The class <link target="https://w3id.org/geosrs/geosrs:GeodeticCRS"><tt>geosrs:geosrs:GeodeticCRS</tt></link> is defined by the following:</p>
 
 <p id="_a4a4eb55-3521-f468-7fe9-ab9ed7876f96">Coordinate reference system associated with a geodetic datum. Cf. ISO 19111:2007:2007-07, part 8.2.2.a, table 10 and annex B.1.2.1.a.</p>
 </clause>
 
 <clause id="_class_geosrsgeographiccrs" obligation="normative">
-<title id="_70da1905-0d6b-4ff0-8cc3-575e8296a7c5">Class: geosrs:GeographicCRS</title><fmt-title depth="2"><span class="fmt-caption-label"><semx element="autonum" source="_core">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_class_geosrsgeographiccrs">15</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_70da1905-0d6b-4ff0-8cc3-575e8296a7c5">Class: geosrs:GeographicCRS</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_core">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_class_geosrsgeographiccrs">15</semx></fmt-xref-label>
+<title id="_4c2c5633-a2d2-4660-ade4-2170d3c15c11">Class: geosrs:GeographicCRS</title><fmt-title depth="2"><span class="fmt-caption-label"><semx element="autonum" source="_core">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_class_geosrsgeographiccrs">15</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_4c2c5633-a2d2-4660-ade4-2170d3c15c11">Class: geosrs:GeographicCRS</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_core">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_class_geosrsgeographiccrs">15</semx></fmt-xref-label>
 <p id="_1c1a7f26-0f45-d015-c329-378538845044">The class <link target="https://w3id.org/geosrs/geosrs:GeographicCRS"><tt>geosrs:geosrs:GeographicCRS</tt></link> is defined by the following:</p>
 </clause>
 
 <clause id="_class_geosrsprojectedcrs" obligation="normative">
-<title id="_19f426c3-4151-4162-aa38-5afd99769ab5">Class: geosrs:ProjectedCRS</title><fmt-title depth="2"><span class="fmt-caption-label"><semx element="autonum" source="_core">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_class_geosrsprojectedcrs">16</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_19f426c3-4151-4162-aa38-5afd99769ab5">Class: geosrs:ProjectedCRS</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_core">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_class_geosrsprojectedcrs">16</semx></fmt-xref-label>
+<title id="_c9203bde-3c1a-45f3-a97e-6135899c3f30">Class: geosrs:ProjectedCRS</title><fmt-title depth="2"><span class="fmt-caption-label"><semx element="autonum" source="_core">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_class_geosrsprojectedcrs">16</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_c9203bde-3c1a-45f3-a97e-6135899c3f30">Class: geosrs:ProjectedCRS</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_core">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_class_geosrsprojectedcrs">16</semx></fmt-xref-label>
 <p id="_de032c6a-d811-4781-6ff6-4afc939bae05">The class <link target="https://w3id.org/geosrs/geosrs:ProjectedCRS"><tt>geosrs:geosrs:ProjectedCRS</tt></link> is defined by the following:</p>
 
 <p id="_2fe6c2e8-72f3-c371-b788-20f24b3f9e2f">Coordinate reference system derived from a two-dimensional geodetic coordinate reference system by applying a map projection. Cf. ISO 19111:2007:2007-07, part 8.2.3.b, table 11 and annex B.1.2.3.</p>
 </clause>
 
 <clause id="_class_geosrssinglecrs" obligation="normative">
-<title id="_438fa843-3951-4852-bd97-70b01fa3428e">Class: geosrs:SingleCRS</title><fmt-title depth="2"><span class="fmt-caption-label"><semx element="autonum" source="_core">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_class_geosrssinglecrs">17</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_438fa843-3951-4852-bd97-70b01fa3428e">Class: geosrs:SingleCRS</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_core">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_class_geosrssinglecrs">17</semx></fmt-xref-label>
+<title id="_8d7d3326-7bea-4ce3-8de3-6b25dde8576c">Class: geosrs:SingleCRS</title><fmt-title depth="2"><span class="fmt-caption-label"><semx element="autonum" source="_core">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_class_geosrssinglecrs">17</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_8d7d3326-7bea-4ce3-8de3-6b25dde8576c">Class: geosrs:SingleCRS</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_core">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_class_geosrssinglecrs">17</semx></fmt-xref-label>
 <p id="_87a0cca1-2bc8-78ab-6bad-10e093cfad7b">The class <link target="https://w3id.org/geosrs/geosrs:SingleCRS"><tt>geosrs:geosrs:SingleCRS</tt></link> is defined by the following:</p>
 
 <p id="_915210a4-6b8f-437c-8d51-c7adb0012f77">Coordinate reference system consisting of one coordinate system and one datum. Cf. ISO 19111:2007:2007-07, table 5.</p>
 </clause>
 
 <clause id="_class_geosrsspatialreferencesystem" obligation="normative">
-<title id="_9093eb3c-e6ac-4236-a561-d535d99f1309">Class: geosrs:SpatialReferenceSystem</title><fmt-title depth="2"><span class="fmt-caption-label"><semx element="autonum" source="_core">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_class_geosrsspatialreferencesystem">18</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_9093eb3c-e6ac-4236-a561-d535d99f1309">Class: geosrs:SpatialReferenceSystem</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_core">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_class_geosrsspatialreferencesystem">18</semx></fmt-xref-label>
+<title id="_8989a6e4-32bd-420c-a97c-942d30c387cc">Class: geosrs:SpatialReferenceSystem</title><fmt-title depth="2"><span class="fmt-caption-label"><semx element="autonum" source="_core">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_class_geosrsspatialreferencesystem">18</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_8989a6e4-32bd-420c-a97c-942d30c387cc">Class: geosrs:SpatialReferenceSystem</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_core">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_class_geosrsspatialreferencesystem">18</semx></fmt-xref-label>
 <p id="_cd76ce1f-6738-93d8-82c4-36f86bfe2d42">The class <link target="https://w3id.org/geosrs/geosrs:SpatialReferenceSystem"><tt>geosrs:geosrs:SpatialReferenceSystem</tt></link> is defined by the following:</p>
 
 <p id="_c89c08f2-00c9-684c-c576-d49502bd9792">A reference system allowing the description of a position.</p>
 </clause>
 
 <clause id="_class_geosrscoordinateoperation" obligation="normative">
-<title id="_e4e7fb06-16b7-4d24-9599-3aba5bbd9008">Class: geosrs:CoordinateOperation</title><fmt-title depth="2"><span class="fmt-caption-label"><semx element="autonum" source="_core">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_class_geosrscoordinateoperation">19</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_e4e7fb06-16b7-4d24-9599-3aba5bbd9008">Class: geosrs:CoordinateOperation</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_core">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_class_geosrscoordinateoperation">19</semx></fmt-xref-label>
+<title id="_e29ce494-31fa-43d0-a057-b272483a6ab6">Class: geosrs:CoordinateOperation</title><fmt-title depth="2"><span class="fmt-caption-label"><semx element="autonum" source="_core">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_class_geosrscoordinateoperation">19</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_e29ce494-31fa-43d0-a057-b272483a6ab6">Class: geosrs:CoordinateOperation</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_core">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_class_geosrscoordinateoperation">19</semx></fmt-xref-label>
 <p id="_c38f8535-adb4-a2cd-13c7-4de508156679">The class <link target="https://w3id.org/geosrs/geosrs:CoordinateOperation"><tt>geosrs:geosrs:CoordinateOperation</tt></link> is defined by the following:</p>
 
 <p id="_b2899a20-1273-d892-38b4-4c2b8e81e364">Mathematical operation on coordinates, based on one-to-one relationship, that changes coordinates from one coordinate reference system to another. Cf. ISO 19111:2007:2007-07, part 11.1, table 42 and annex B.4.</p>
 </clause>
 
 <clause id="_class_geosrssingleoperation" obligation="normative">
-<title id="_5ebbc436-8552-4dc4-9d94-c3ab4e5f2924">Class: geosrs:SingleOperation</title><fmt-title depth="2"><span class="fmt-caption-label"><semx element="autonum" source="_core">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_class_geosrssingleoperation">20</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_5ebbc436-8552-4dc4-9d94-c3ab4e5f2924">Class: geosrs:SingleOperation</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_core">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_class_geosrssingleoperation">20</semx></fmt-xref-label>
+<title id="_ce10a451-d6e5-477d-8944-6e73ad11c0b2">Class: geosrs:SingleOperation</title><fmt-title depth="2"><span class="fmt-caption-label"><semx element="autonum" source="_core">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_class_geosrssingleoperation">20</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_ce10a451-d6e5-477d-8944-6e73ad11c0b2">Class: geosrs:SingleOperation</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_core">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_class_geosrssingleoperation">20</semx></fmt-xref-label>
 <p id="_d8a05490-d1f1-17be-4ee7-f99814c1ab94">The class <link target="https://w3id.org/geosrs/geosrs:SingleOperation"><tt>geosrs:geosrs:SingleOperation</tt></link> is defined by the following:</p>
 
 <p id="_d49cdce5-fbc5-9cb0-a934-247f1f2c64e8">A non concatenated coordinate operation. Cf. ISO 19111:2007:2007-07, table 43.</p>
 </clause>
 
 <clause id="_class_geosrstransformation" obligation="normative">
-<title id="_e1741b9e-7c3c-4182-9933-6d752cfd2212">Class: geosrs:Transformation</title><fmt-title depth="2"><span class="fmt-caption-label"><semx element="autonum" source="_core">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_class_geosrstransformation">21</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_e1741b9e-7c3c-4182-9933-6d752cfd2212">Class: geosrs:Transformation</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_core">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_class_geosrstransformation">21</semx></fmt-xref-label>
+<title id="_88e997f7-1d9d-4389-bba7-3ad40718f2f3">Class: geosrs:Transformation</title><fmt-title depth="2"><span class="fmt-caption-label"><semx element="autonum" source="_core">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_class_geosrstransformation">21</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_88e997f7-1d9d-4389-bba7-3ad40718f2f3">Class: geosrs:Transformation</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_core">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_class_geosrstransformation">21</semx></fmt-xref-label>
 <p id="_60264e5b-a0bc-13c8-90c1-68d223a580e1">The class <link target="https://w3id.org/geosrs/geosrs:Transformation"><tt>geosrs:geosrs:Transformation</tt></link> is defined by the following:</p>
 
 <p id="_5f123822-425f-ccd9-9d04-709930cbb1f5">Coordinate operation in which the two coordinate reference systems are based on different datums. Cf. ISO 19111:2007:2007-07, table 44.</p>
 </clause>
 
 <clause id="_class_geosrsconversion" obligation="normative">
-<title id="_50ab93b8-46a4-40ac-aee0-6c8c2f11a82a">Class: geosrs:Conversion</title><fmt-title depth="2"><span class="fmt-caption-label"><semx element="autonum" source="_core">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_class_geosrsconversion">22</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_50ab93b8-46a4-40ac-aee0-6c8c2f11a82a">Class: geosrs:Conversion</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_core">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_class_geosrsconversion">22</semx></fmt-xref-label>
+<title id="_473f96c6-f229-4bf1-b5e1-56d36043f6de">Class: geosrs:Conversion</title><fmt-title depth="2"><span class="fmt-caption-label"><semx element="autonum" source="_core">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_class_geosrsconversion">22</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_473f96c6-f229-4bf1-b5e1-56d36043f6de">Class: geosrs:Conversion</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_core">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_class_geosrsconversion">22</semx></fmt-xref-label>
 <p id="_f2970ee8-f7cb-1e52-22ce-0af637a99956">The class <link target="https://w3id.org/geosrs/geosrs:Conversion"><tt>geosrs:geosrs:Conversion</tt></link> is defined by the following:</p>
 
 <p id="_7f9fea6b-6a81-5a66-5788-a353d764fe9f">Coordinate operation in which both coordinate reference systems are based on the same datum. Cf. ISO 19111:2007:2007-07, table 45 and annex B.4.2.</p>
 </clause>
 
 <clause id="_class_geosrsoperationmethod" obligation="normative">
-<title id="_b52a3a64-3327-4021-95e0-6dabe6ea1cb8">Class: geosrs:OperationMethod</title><fmt-title depth="2"><span class="fmt-caption-label"><semx element="autonum" source="_core">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_class_geosrsoperationmethod">23</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_b52a3a64-3327-4021-95e0-6dabe6ea1cb8">Class: geosrs:OperationMethod</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_core">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_class_geosrsoperationmethod">23</semx></fmt-xref-label>
+<title id="_4694a599-99f6-4988-bda2-11473c3ed723">Class: geosrs:OperationMethod</title><fmt-title depth="2"><span class="fmt-caption-label"><semx element="autonum" source="_core">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_class_geosrsoperationmethod">23</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_4694a599-99f6-4988-bda2-11473c3ed723">Class: geosrs:OperationMethod</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_core">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_class_geosrsoperationmethod">23</semx></fmt-xref-label>
 <p id="_0c7a7bbe-c2cf-a527-727e-b8837a8efa16">The class <link target="https://w3id.org/geosrs/geosrs:OperationMethod"><tt>geosrs:geosrs:OperationMethod</tt></link> is defined by the following:</p>
 
 <p id="_3f49b666-3ab1-77ff-8ef0-2d025b3e3164">Method used to perform an operation on coordinates. See ISO 19111:2007:2007-07, table 48 and annex B.4.5.</p>
 </clause>
 
 <clause id="_class_geosrsoperationparameter" obligation="normative">
-<title id="_3e3b0c46-4d80-47bd-8ad9-62b2f00c8c60">Class: geosrs:OperationParameter</title><fmt-title depth="2"><span class="fmt-caption-label"><semx element="autonum" source="_core">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_class_geosrsoperationparameter">24</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_3e3b0c46-4d80-47bd-8ad9-62b2f00c8c60">Class: geosrs:OperationParameter</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_core">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_class_geosrsoperationparameter">24</semx></fmt-xref-label>
+<title id="_f9c2b883-8910-4fc8-850d-5b1c812f8164">Class: geosrs:OperationParameter</title><fmt-title depth="2"><span class="fmt-caption-label"><semx element="autonum" source="_core">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_class_geosrsoperationparameter">24</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_f9c2b883-8910-4fc8-850d-5b1c812f8164">Class: geosrs:OperationParameter</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_core">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_class_geosrsoperationparameter">24</semx></fmt-xref-label>
 <p id="_a10bccde-be92-5e5d-52a0-de2f7d4186d0">The class <link target="https://w3id.org/geosrs/geosrs:OperationParameter"><tt>geosrs:geosrs:OperationParameter</tt></link> is defined by the following:</p>
 
 <p id="_9ec1589b-bd48-cbd0-b2ee-01ecef89ad9f">Parameter used by a method to perform an operation on coordinates. See ISO 19111:2007:2007-07, table 52 and annex B.4.5.</p>
 </clause>
 
 <clause id="_class_geosrsoperationparametervalue" obligation="normative">
-<title id="_71108968-bc87-4088-93b7-3d1f799d03fb">Class: geosrs:OperationParameterValue</title><fmt-title depth="2"><span class="fmt-caption-label"><semx element="autonum" source="_core">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_class_geosrsoperationparametervalue">25</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_71108968-bc87-4088-93b7-3d1f799d03fb">Class: geosrs:OperationParameterValue</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_core">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_class_geosrsoperationparametervalue">25</semx></fmt-xref-label>
+<title id="_b33b4594-684a-408e-b567-5c3fe4206cd9">Class: geosrs:OperationParameterValue</title><fmt-title depth="2"><span class="fmt-caption-label"><semx element="autonum" source="_core">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_class_geosrsoperationparametervalue">25</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_b33b4594-684a-408e-b567-5c3fe4206cd9">Class: geosrs:OperationParameterValue</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_core">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_class_geosrsoperationparametervalue">25</semx></fmt-xref-label>
 <p id="_ba976577-b685-ce2e-1747-1f33212719ac">The class <link target="https://w3id.org/geosrs/geosrs:OperationParameterValue"><tt>geosrs:geosrs:OperationParameterValue</tt></link> is defined by the following:</p>
 
 <p id="_fdf9ac4c-a03e-3707-e914-cfa2afd38530">Value of a parameter used by a method to perform an operation on coordinates. See ISO 19111:2007:2007-07, table 55.</p>
 </clause>
 
 <clause id="_class_geosrsdatum" obligation="normative">
-<title id="_adb9843d-c666-4a90-9df6-114d5c461895">Class: geosrs:Datum</title><fmt-title depth="2"><span class="fmt-caption-label"><semx element="autonum" source="_core">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_class_geosrsdatum">26</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_adb9843d-c666-4a90-9df6-114d5c461895">Class: geosrs:Datum</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_core">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_class_geosrsdatum">26</semx></fmt-xref-label>
+<title id="_61a9bd2f-0cdc-4713-b408-bdce6d489de1">Class: geosrs:Datum</title><fmt-title depth="2"><span class="fmt-caption-label"><semx element="autonum" source="_core">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_class_geosrsdatum">26</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_61a9bd2f-0cdc-4713-b408-bdce6d489de1">Class: geosrs:Datum</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_core">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_class_geosrsdatum">26</semx></fmt-xref-label>
 <p id="_e798f2bf-7427-c775-1078-e35b4627ea2d">The class <link target="https://w3id.org/geosrs/geosrs:Datum"><tt>geosrs:geosrs:Datum</tt></link> is defined by the following:</p>
 
 <p id="_d2cee695-f9d0-58b7-51bb-9e9f6eeaaa9b">Parameter or set of parameters that define the position of the origin, the scale and the orientation of a coordinate system. Cf. ISO 19111:2007:2007-07, part 10.1, table 33 and annex B.3.</p>
 </clause>
 
 <clause id="_class_geosrsgeodeticdatum" obligation="normative">
-<title id="_62cc163f-2848-4e99-ab88-3196ca40f901">Class: geosrs:GeodeticDatum</title><fmt-title depth="2"><span class="fmt-caption-label"><semx element="autonum" source="_core">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_class_geosrsgeodeticdatum">27</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_62cc163f-2848-4e99-ab88-3196ca40f901">Class: geosrs:GeodeticDatum</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_core">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_class_geosrsgeodeticdatum">27</semx></fmt-xref-label>
+<title id="_17f490a6-048a-4705-aa9a-6c6b6c46cda7">Class: geosrs:GeodeticDatum</title><fmt-title depth="2"><span class="fmt-caption-label"><semx element="autonum" source="_core">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_class_geosrsgeodeticdatum">27</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_17f490a6-048a-4705-aa9a-6c6b6c46cda7">Class: geosrs:GeodeticDatum</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_core">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_class_geosrsgeodeticdatum">27</semx></fmt-xref-label>
 <p id="_63c19125-7aa2-d4fd-c0e9-6683391f7e92">The class <link target="https://w3id.org/geosrs/geosrs:GeodeticDatum"><tt>geosrs:geosrs:GeodeticDatum</tt></link> is defined by the following:</p>
 
 <p id="_37ebe9f0-3ce0-f803-b5ef-f74f4b6cf8f8">Datum describing the relation of a two- or three-dimensional coordinate system to the Earth. Cf. ISO 19111:2007:2007-07, part 10.2, table 34 and annex B.3.2.</p>
 </clause>
 
 <clause id="_class_geosrsprimemeridian" obligation="normative">
-<title id="_15d2472b-23de-450a-b11f-7ab3beb79c92">Class: geosrs:PrimeMeridian</title><fmt-title depth="2"><span class="fmt-caption-label"><semx element="autonum" source="_core">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_class_geosrsprimemeridian">28</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_15d2472b-23de-450a-b11f-7ab3beb79c92">Class: geosrs:PrimeMeridian</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_core">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_class_geosrsprimemeridian">28</semx></fmt-xref-label>
+<title id="_3db79cbb-582f-48f6-9dde-5a15de63f89f">Class: geosrs:PrimeMeridian</title><fmt-title depth="2"><span class="fmt-caption-label"><semx element="autonum" source="_core">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_class_geosrsprimemeridian">28</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_3db79cbb-582f-48f6-9dde-5a15de63f89f">Class: geosrs:PrimeMeridian</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_core">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_class_geosrsprimemeridian">28</semx></fmt-xref-label>
 <p id="_06a95c63-898f-3b6c-b793-c6e289f91524">The class <link target="https://w3id.org/geosrs/geosrs:PrimeMeridian"><tt>geosrs:geosrs:PrimeMeridian</tt></link> is defined by the following:</p>
 
 <p id="_a034a3e0-0fbd-68b0-314f-034f9ffd4107">Meridian from which the longitudes of other meridians are quantified. Cf. ISO 19111:2007:2007-07, part 10.2.1, table 35 and annex B.3.2.2.</p>
 </clause>
 
 <clause id="_class_geosrsellipsoid" obligation="normative">
-<title id="_94b4e01f-f94d-4fa8-a1c8-a2ab69ae4c9e">Class: geosrs:Ellipsoid</title><fmt-title depth="2"><span class="fmt-caption-label"><semx element="autonum" source="_core">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_class_geosrsellipsoid">29</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_94b4e01f-f94d-4fa8-a1c8-a2ab69ae4c9e">Class: geosrs:Ellipsoid</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_core">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_class_geosrsellipsoid">29</semx></fmt-xref-label>
+<title id="_2fe9a673-1484-41f6-ac28-a5d99398c4ad">Class: geosrs:Ellipsoid</title><fmt-title depth="2"><span class="fmt-caption-label"><semx element="autonum" source="_core">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_class_geosrsellipsoid">29</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_2fe9a673-1484-41f6-ac28-a5d99398c4ad">Class: geosrs:Ellipsoid</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_core">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_class_geosrsellipsoid">29</semx></fmt-xref-label>
 <p id="_e55567ff-3725-b2d2-e452-84930653fda9">The class <link target="https://w3id.org/geosrs/geosrs:Ellipsoid"><tt>geosrs:geosrs:Ellipsoid</tt></link> is defined by the following:</p>
 
 <p id="_963e3e02-23b5-44a9-b0fb-e2aa977d183c">Surface formed by the rotation of an ellipse about its minor axis, defined by a semi-major axis and a flattening parameter and fairly geocentric. NB : It is a mathematical model of the geoid, i.e. the Earth without its relief. Many geodetic ellipsoids exist. Cf. ISO 19111:2007:2007-07, part 10.2.2, table 36 and annex B.3.2.3.</p>
 </clause>
 
 <clause id="_class_geosrsverticaldatum" obligation="normative">
-<title id="_0e40d854-11b2-483e-94c9-837a458f1a3d">Class: geosrs:VerticalDatum</title><fmt-title depth="2"><span class="fmt-caption-label"><semx element="autonum" source="_core">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_class_geosrsverticaldatum">30</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_0e40d854-11b2-483e-94c9-837a458f1a3d">Class: geosrs:VerticalDatum</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_core">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_class_geosrsverticaldatum">30</semx></fmt-xref-label>
+<title id="_70b5f785-492e-4ae5-aa8f-d8bb0bf8607c">Class: geosrs:VerticalDatum</title><fmt-title depth="2"><span class="fmt-caption-label"><semx element="autonum" source="_core">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_class_geosrsverticaldatum">30</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_70b5f785-492e-4ae5-aa8f-d8bb0bf8607c">Class: geosrs:VerticalDatum</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_core">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_class_geosrsverticaldatum">30</semx></fmt-xref-label>
 <p id="_1a047d20-2dbf-8f39-62c1-92ad0c8f922c">The class <link target="https://w3id.org/geosrs/geosrs:VerticalDatum"><tt>geosrs:geosrs:VerticalDatum</tt></link> is defined by the following:</p>
 
 <p id="_03ee7d6f-8a8d-fbf6-e49b-f6129ef3b1bc">Datum describing the relation of gravity-related heights or depths to the Earth. Cf. ISO 19111:2007:2007-07, table 41 and annex B.3.3.</p>
 </clause>
+
+<clause id="_property_geosrssemimajoraxis" obligation="normative">
+<title id="_05aa51ea-5dad-4aae-90f7-bc60f5169888">Property: geosrs:semiMajorAxis</title><fmt-title depth="2"><span class="fmt-caption-label"><semx element="autonum" source="_core">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_property_geosrssemimajoraxis">31</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_05aa51ea-5dad-4aae-90f7-bc60f5169888">Property: geosrs:semiMajorAxis</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_core">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_property_geosrssemimajoraxis">31</semx></fmt-xref-label>
+<p id="_acad7155-7eb9-86ab-f0e4-ad34f2cb75d2">The class <link target="https://w3id.org/geosrs/geosrs:semiMajorAxis"><tt>geosrs:geosrs:semiMajorAxis</tt></link> is defined by the following:</p>
+
+<p id="_a36813d0-52c4-41cf-3b27-692915bb3880">Indicates the length of the semi major axis of an ellipsoid. Cf. ISO 19111:2007:2007-07, table 36, attribute length of semi-major axis.</p>
+</clause>
+
+<clause id="_property_geosrssemiminoraxis" obligation="normative">
+<title id="_a3d921da-472f-4042-9206-6c0ee8b4d5f9">Property: geosrs:semiMinorAxis</title><fmt-title depth="2"><span class="fmt-caption-label"><semx element="autonum" source="_core">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_property_geosrssemiminoraxis">32</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_a3d921da-472f-4042-9206-6c0ee8b4d5f9">Property: geosrs:semiMinorAxis</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_core">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_property_geosrssemiminoraxis">32</semx></fmt-xref-label>
+<p id="_81e37527-acad-3310-5af2-6043a1b65e4e">The class <link target="https://w3id.org/geosrs/geosrs:semiMinorAxis"><tt>geosrs:geosrs:semiMinorAxis</tt></link> is defined by the following:</p>
+
+<p id="_da07907f-a5ba-cf9a-fb59-a430b5c19892">Indicates the length of the semi minor axis of an ellipsoid. Cf. ISO 19111:2007:2007-07, table 37, attribute length of semi-minor axis.</p>
+</clause>
+
+<clause id="_property_geosrsaxis" obligation="normative">
+<title id="_2f09b74a-473e-4f26-a84f-bb53cbe47d89">Property: geosrs:axis</title><fmt-title depth="2"><span class="fmt-caption-label"><semx element="autonum" source="_core">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_property_geosrsaxis">33</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_2f09b74a-473e-4f26-a84f-bb53cbe47d89">Property: geosrs:axis</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_core">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_property_geosrsaxis">33</semx></fmt-xref-label>
+<p id="_8432694c-8c38-ab69-8834-26555fbdd654">The class <link target="https://w3id.org/geosrs/geosrs:axis"><tt>geosrs:geosrs:axis</tt></link> is defined by the following:</p>
+
+<p id="_9b00c486-de46-a8f7-795f-28c64d8a74ef">The property relates a coordinate system to one of its axis</p>
+</clause>
+
+<clause id="_property_geosrsbasecrs" obligation="normative">
+<title id="_f2db35d3-631c-4b4d-9da3-526d13247338">Property: geosrs:baseCRS</title><fmt-title depth="2"><span class="fmt-caption-label"><semx element="autonum" source="_core">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_property_geosrsbasecrs">34</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_f2db35d3-631c-4b4d-9da3-526d13247338">Property: geosrs:baseCRS</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_core">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_property_geosrsbasecrs">34</semx></fmt-xref-label>
+<p id="_ae2d9004-3990-c537-eb67-1e76c6bd4efe">The class <link target="https://w3id.org/geosrs/geosrs:baseCRS"><tt>geosrs:geosrs:baseCRS</tt></link> is defined by the following:</p>
+
+<p id="_5f3bc5ae-8224-1bb2-2ece-63318b92987d">The geodetic coordinate reference system on which a projected coordinate reference system is based. Cf. ISO 19111:2007:2007-07, table 11, association role baseCRS.</p>
+</clause>
+
+<clause id="_property_geosrscoordinatesystem" obligation="normative">
+<title id="_7291d21e-3397-478e-a946-19e4d900be01">Property: geosrs:coordinateSystem</title><fmt-title depth="2"><span class="fmt-caption-label"><semx element="autonum" source="_core">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_property_geosrscoordinatesystem">35</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_7291d21e-3397-478e-a946-19e4d900be01">Property: geosrs:coordinateSystem</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_core">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_property_geosrscoordinatesystem">35</semx></fmt-xref-label>
+<p id="_188fd007-e72a-b9ff-d086-9c5cccdefe15">The class <link target="https://w3id.org/geosrs/geosrs:coordinateSystem"><tt>geosrs:geosrs:coordinateSystem</tt></link> is defined by the following:</p>
+
+<p id="_522ff631-f9e6-2508-94db-7d0863f232fa">The property relates a coordinate reference system to its coordinate system</p>
+</clause>
+
+<clause id="_property_geosrsdatum" obligation="normative">
+<title id="_66d1b7e8-e2c7-4499-a986-36ff9eb16800">Property: geosrs:datum</title><fmt-title depth="2"><span class="fmt-caption-label"><semx element="autonum" source="_core">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_property_geosrsdatum">36</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_66d1b7e8-e2c7-4499-a986-36ff9eb16800">Property: geosrs:datum</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_core">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_property_geosrsdatum">36</semx></fmt-xref-label>
+<p id="_1e13bd5a-6849-c57f-2fd5-7db3e73d154a">The class <link target="https://w3id.org/geosrs/geosrs:datum"><tt>geosrs:geosrs:datum</tt></link> is defined by the following:</p>
+
+<p id="_4f712f87-04d5-2089-1bb5-3886e5a0f404">The property relates a coordinate reference system to a datum</p>
+</clause>
+
+<clause id="_property_geosrsdomainofvalidity" obligation="normative">
+<title id="_d0cf0ff0-70e6-46ab-9e7a-eaae97e463b7">Property: geosrs:domainOfValidity</title><fmt-title depth="2"><span class="fmt-caption-label"><semx element="autonum" source="_core">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_property_geosrsdomainofvalidity">37</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_d0cf0ff0-70e6-46ab-9e7a-eaae97e463b7">Property: geosrs:domainOfValidity</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_core">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_property_geosrsdomainofvalidity">37</semx></fmt-xref-label>
+<p id="_8085181c-8c0f-6ce9-c96e-03a02ec98a3d">The class <link target="https://w3id.org/geosrs/geosrs:domainOfValidity"><tt>geosrs:geosrs:domainOfValidity</tt></link> is defined by the following:</p>
+
+<p id="_40bc6298-7dac-b8ae-5205-0b5745619f48">Geographic area or time interval in which the referring object is valid. Cf. ISO 19111:2007:2007-07, tables 4, 33 and 42, attribute domainOfValidity.</p>
+</clause>
+
+<clause id="_property_geosrsellipsoid" obligation="normative">
+<title id="_a9fe192c-8179-4f4d-8063-cdda8f0e7f36">Property: geosrs:ellipsoid</title><fmt-title depth="2"><span class="fmt-caption-label"><semx element="autonum" source="_core">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_property_geosrsellipsoid">38</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_a9fe192c-8179-4f4d-8063-cdda8f0e7f36">Property: geosrs:ellipsoid</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_core">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_property_geosrsellipsoid">38</semx></fmt-xref-label>
+<p id="_cda492d2-33ae-86ed-9403-55f6467a9c2e">The class <link target="https://w3id.org/geosrs/geosrs:ellipsoid"><tt>geosrs:geosrs:ellipsoid</tt></link> is defined by the following:</p>
+
+<p id="_4c99d6f0-52eb-d94c-d0de-e72aef9685e4">The properties relates a datum to its ellipsoid definition</p>
+</clause>
+
+<clause id="_property_geosrssourcecrs" obligation="normative">
+<title id="_6eeeb114-1773-4d98-b6ac-1dbb6f4be35b">Property: geosrs:sourceCRS</title><fmt-title depth="2"><span class="fmt-caption-label"><semx element="autonum" source="_core">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_property_geosrssourcecrs">39</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_6eeeb114-1773-4d98-b6ac-1dbb6f4be35b">Property: geosrs:sourceCRS</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_core">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_property_geosrssourcecrs">39</semx></fmt-xref-label>
+<p id="_e0884060-b23e-c308-e4cf-2c27aa3c782e">The class <link target="https://w3id.org/geosrs/geosrs:sourceCRS"><tt>geosrs:geosrs:sourceCRS</tt></link> is defined by the following:</p>
+
+<p id="_060cdcde-78aa-fcf4-017c-0c3baf903fad">The coordinate reference system associated to the data used as input of a given operation. Cf. ISO 19111:2007:2007-07, table 42, named association Source.</p>
+</clause>
+
+<clause id="_property_geosrstargetcrs" obligation="normative">
+<title id="_be20675d-339b-40d3-b8fa-0c6f8d9288aa">Property: geosrs:targetCRS</title><fmt-title depth="2"><span class="fmt-caption-label"><semx element="autonum" source="_core">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_property_geosrstargetcrs">40</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_be20675d-339b-40d3-b8fa-0c6f8d9288aa">Property: geosrs:targetCRS</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_core">6</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_property_geosrstargetcrs">40</semx></fmt-xref-label>
+<p id="_8f5df569-f1ca-7ca8-4edf-3ed1369ccd99">The class <link target="https://w3id.org/geosrs/geosrs:targetCRS"><tt>geosrs:geosrs:targetCRS</tt></link> is defined by the following:</p>
+
+<p id="_ba2c1f29-6db5-ebfd-955a-007d6dd4ee41">The coordinate reference system associated to the data obtained as output of a given operation. Cf. ISO 19111:2007:2007-07, table 42, named association Target.</p>
+</clause>
 </clause>
 
 <clause id="_coordinate_operation_module" obligation="normative" displayorder="17">
-<title id="_83a9e220-05d9-41df-98ef-46a30e2fc48e">Coordinate Operation Module</title><fmt-title depth="1"><span class="fmt-caption-label"><semx element="autonum" source="_coordinate_operation_module">7</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_83a9e220-05d9-41df-98ef-46a30e2fc48e">Coordinate Operation Module</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_coordinate_operation_module">7</semx></fmt-xref-label>
+<title id="_d87e6945-6bd0-48d5-be1b-a6ccde07010b">Coordinate Operation Module</title><fmt-title depth="1"><span class="fmt-caption-label"><semx element="autonum" source="_coordinate_operation_module">7</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_d87e6945-6bd0-48d5-be1b-a6ccde07010b">Coordinate Operation Module</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_coordinate_operation_module">7</semx></fmt-xref-label>
 <p id="co">This clause establishes the <strong>Co</strong> Requirements class, with IRI <tt>/req/co</tt>, which has a corresponding Conformance Class, <strong>Co</strong>, with IRI <tt>/conf/co</tt>.</p>
+
+<clause id="_property_geosrsderivingconversion" obligation="normative">
+<title id="_4dd1ac21-eff2-4016-a184-c737541b03ef">Property: geosrs:derivingConversion</title><fmt-title depth="2"><span class="fmt-caption-label"><semx element="autonum" source="_coordinate_operation_module">7</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_property_geosrsderivingconversion">1</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_4dd1ac21-eff2-4016-a184-c737541b03ef">Property: geosrs:derivingConversion</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_coordinate_operation_module">7</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_property_geosrsderivingconversion">1</semx></fmt-xref-label>
+<p id="_f6915a20-d46d-f1c4-70a2-854fd5843db4">The class <link target="https://w3id.org/geosrs/geosrs:derivingConversion"><tt>geosrs:geosrs:derivingConversion</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_property_geosrsmethod" obligation="normative">
+<title id="_ec2779f5-7ffe-4144-b728-e91a254dcd0a">Property: geosrs:method</title><fmt-title depth="2"><span class="fmt-caption-label"><semx element="autonum" source="_coordinate_operation_module">7</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_property_geosrsmethod">2</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_ec2779f5-7ffe-4144-b728-e91a254dcd0a">Property: geosrs:method</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_coordinate_operation_module">7</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_property_geosrsmethod">2</semx></fmt-xref-label>
+<p id="_477907e6-a76c-db03-af6f-ba26c84d05bb">The class <link target="https://w3id.org/geosrs/geosrs:method"><tt>geosrs:geosrs:method</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_property_geosrsparameter" obligation="normative">
+<title id="_f3df381a-b074-4220-bafa-45275fc4b199">Property: geosrs:parameter</title><fmt-title depth="2"><span class="fmt-caption-label"><semx element="autonum" source="_coordinate_operation_module">7</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_property_geosrsparameter">3</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_f3df381a-b074-4220-bafa-45275fc4b199">Property: geosrs:parameter</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_coordinate_operation_module">7</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_property_geosrsparameter">3</semx></fmt-xref-label>
+<p id="_dea2e4e3-e465-974c-564f-413d8387d8fd">The class <link target="https://w3id.org/geosrs/geosrs:parameter"><tt>geosrs:geosrs:parameter</tt></link> is defined by the following:</p>
+</clause>
 </clause>
 
 <clause id="_coordinate_system_module" obligation="normative" displayorder="18">
-<title id="_b4ea335f-d7d3-4ea3-b965-651135135049">Coordinate System Module</title><fmt-title depth="1"><span class="fmt-caption-label"><semx element="autonum" source="_coordinate_system_module">8</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_b4ea335f-d7d3-4ea3-b965-651135135049">Coordinate System Module</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_coordinate_system_module">8</semx></fmt-xref-label>
+<title id="_83f2d4c7-ca42-4a94-9914-2c7fc5c50c59">Coordinate System Module</title><fmt-title depth="1"><span class="fmt-caption-label"><semx element="autonum" source="_coordinate_system_module">8</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_83f2d4c7-ca42-4a94-9914-2c7fc5c50c59">Coordinate System Module</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_coordinate_system_module">8</semx></fmt-xref-label>
 <p id="cs">This clause establishes the <strong>CS</strong> Requirements class, with IRI <tt>/req/cs</tt>, which has a corresponding Conformance Class, <strong>CS</strong>, with IRI <tt>/conf/cs</tt>.</p>
+
+<clause id="_property_geosrsaxisdirection" obligation="normative">
+<title id="_156d7e1c-4a91-4314-bb72-10280877c97b">Property: geosrs:axisDirection</title><fmt-title depth="2"><span class="fmt-caption-label"><semx element="autonum" source="_coordinate_system_module">8</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_property_geosrsaxisdirection">1</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_156d7e1c-4a91-4314-bb72-10280877c97b">Property: geosrs:axisDirection</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_coordinate_system_module">8</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_property_geosrsaxisdirection">1</semx></fmt-xref-label>
+<p id="_34df0605-6e53-02bf-a9ed-2628759153a1">The class <link target="https://w3id.org/geosrs/geosrs:axisDirection"><tt>geosrs:geosrs:axisDirection</tt></link> is defined by the following:</p>
+
+<p id="_8190c893-f219-15ba-cce2-57073c7688b5">The direction of an axis. Cf. ISO 19111:2007:2007-07, table 27, attribute coordinate system axis direction.</p>
+</clause>
+
+<clause id="_property_geosrscylindricalcs" obligation="normative">
+<title id="_a8afa6cd-166e-4452-8f89-93e53e6c90c6">Property: geosrs:cylindricalCS</title><fmt-title depth="2"><span class="fmt-caption-label"><semx element="autonum" source="_coordinate_system_module">8</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_property_geosrscylindricalcs">2</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_a8afa6cd-166e-4452-8f89-93e53e6c90c6">Property: geosrs:cylindricalCS</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_coordinate_system_module">8</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_property_geosrscylindricalcs">2</semx></fmt-xref-label>
+<p id="_3b91feca-578e-1748-94fe-e9bded942286">The class <link target="https://w3id.org/geosrs/geosrs:cylindricalCS"><tt>geosrs:geosrs:cylindricalCS</tt></link> is defined by the following:</p>
+
+<p id="_42a81001-596a-72e2-61f0-7f0ae25e95d9">Links a coordinate reference system to a cylindrical coordinate system</p>
+</clause>
 </clause>
 
 <clause id="_datum_module" obligation="normative" displayorder="19">
-<title id="_8544484b-d2bc-4ac4-b4c1-48be8d2e4616">Datum Module</title><fmt-title depth="1"><span class="fmt-caption-label"><semx element="autonum" source="_datum_module">9</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_8544484b-d2bc-4ac4-b4c1-48be8d2e4616">Datum Module</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_datum_module">9</semx></fmt-xref-label>
+<title id="_71a09989-02f5-4dd9-9bb5-54e2199ce483">Datum Module</title><fmt-title depth="1"><span class="fmt-caption-label"><semx element="autonum" source="_datum_module">9</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_71a09989-02f5-4dd9-9bb5-54e2199ce483">Datum Module</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_datum_module">9</semx></fmt-xref-label>
 <p id="datum">This clause establishes the <strong>Datum</strong> Requirements class, with IRI <tt>/req/datum</tt>, which has a corresponding Conformance Class, <strong>Datum</strong>, with IRI <tt>/conf/datum</tt>.</p>
+
+<clause id="_property_geosrsinverseflattening" obligation="normative">
+<title id="_ab94fedf-cbe9-4d5f-93b0-a9832a6471df">Property: geosrs:inverseFlattening</title><fmt-title depth="2"><span class="fmt-caption-label"><semx element="autonum" source="_datum_module">9</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_property_geosrsinverseflattening">1</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_ab94fedf-cbe9-4d5f-93b0-a9832a6471df">Property: geosrs:inverseFlattening</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_datum_module">9</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_property_geosrsinverseflattening">1</semx></fmt-xref-label>
+<p id="_81e7554d-4524-7410-ca46-c9fe621ea270">The class <link target="https://w3id.org/geosrs/geosrs:inverseFlattening"><tt>geosrs:geosrs:inverseFlattening</tt></link> is defined by the following:</p>
+
+<p id="_ac38b877-15b1-da8a-5c70-ccc0607c3eac">Indicates the inverse flattening value of an ellipsoid, expressed as a number or a ratio (percentage rate, parts per million, etc.). Cf. ISO 19111:2007:2007-07, table 37, attribute inverse flattening</p>
+</clause>
+
+<clause id="_property_geosrsprimemeridian" obligation="normative">
+<title id="_bfc9e80a-f374-42a5-801e-12d52917fbfc">Property: geosrs:primeMeridian</title><fmt-title depth="2"><span class="fmt-caption-label"><semx element="autonum" source="_datum_module">9</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_property_geosrsprimemeridian">2</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_bfc9e80a-f374-42a5-801e-12d52917fbfc">Property: geosrs:primeMeridian</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_datum_module">9</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_property_geosrsprimemeridian">2</semx></fmt-xref-label>
+<p id="_ea4bd68f-483d-d509-0d37-50bae0fa1d21">The class <link target="https://w3id.org/geosrs/geosrs:primeMeridian"><tt>geosrs:geosrs:primeMeridian</tt></link> is defined by the following:</p>
+
+<p id="_36e17e9e-532b-ba56-fc11-16e3a398ec33">The prime meridian used by a geodetic datum. Cf. ISO 19111:2007:2007-07, table 34, association role primeMeridian.</p>
+</clause>
 </clause>
 
 <clause id="_srs_application_module" obligation="normative" displayorder="20">
-<title id="_5b8d14a4-fcce-4c60-9fa7-465f6a5f857e">SRS Application Module</title><fmt-title depth="1"><span class="fmt-caption-label"><semx element="autonum" source="_srs_application_module">10</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_5b8d14a4-fcce-4c60-9fa7-465f6a5f857e">SRS Application Module</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_srs_application_module">10</semx></fmt-xref-label>
+<title id="_4e5bc9da-bb90-451e-97d9-04e9de9cd266">SRS Application Module</title><fmt-title depth="1"><span class="fmt-caption-label"><semx element="autonum" source="_srs_application_module">10</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_4e5bc9da-bb90-451e-97d9-04e9de9cd266">SRS Application Module</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_srs_application_module">10</semx></fmt-xref-label>
 <p id="srsapp">This clause establishes the <strong>SRSAPP</strong> Requirements class, with IRI <tt>/req/srsapp</tt>, which has a corresponding Conformance Class, <strong>SRSAPP</strong>, with IRI <tt>/conf/srsapp</tt>.</p>
 </clause>
 
 <clause id="_projections_module" obligation="normative" displayorder="21">
-<title id="_27dcfa35-8575-4c41-8fde-4e365140797c">Projections Module</title><fmt-title depth="1"><span class="fmt-caption-label"><semx element="autonum" source="_projections_module">11</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_27dcfa35-8575-4c41-8fde-4e365140797c">Projections Module</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_projections_module">11</semx></fmt-xref-label>
+<title id="_77a9ab04-a582-49d1-83f6-48f656d877ae">Projections Module</title><fmt-title depth="1"><span class="fmt-caption-label"><semx element="autonum" source="_projections_module">11</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_77a9ab04-a582-49d1-83f6-48f656d877ae">Projections Module</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_projections_module">11</semx></fmt-xref-label>
 <p id="proj">This clause establishes the <strong>PROJ</strong> Requirements class, with IRI <tt>/req/proj</tt>, which has a corresponding Conformance Class, <strong>PROJ</strong>, with IRI <tt>/conf/proj</tt>.</p>
 </clause>
 
 <clause id="_planet_module" obligation="normative" displayorder="22">
-<title id="_d2772f03-decf-4a4e-8b6c-225e8419b94e">Planet Module</title><fmt-title depth="1"><span class="fmt-caption-label"><semx element="autonum" source="_planet_module">12</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_d2772f03-decf-4a4e-8b6c-225e8419b94e">Planet Module</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_planet_module">12</semx></fmt-xref-label>
+<title id="_b803c315-dd7f-472d-a9a1-0f34633804fc">Planet Module</title><fmt-title depth="1"><span class="fmt-caption-label"><semx element="autonum" source="_planet_module">12</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_b803c315-dd7f-472d-a9a1-0f34633804fc">Planet Module</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_planet_module">12</semx></fmt-xref-label>
 <p id="planet">This clause establishes the <strong>PLANET</strong> Requirements class, with IRI <tt>/req/planet</tt>, which has a corresponding Conformance Class, <strong>PLANET</strong>, with IRI <tt>/conf/planet</tt>.</p>
 </clause>
 
@@ -1139,7 +1365,7 @@ sourcecode .nt {
 
 
 <references id="_references" normative="true" obligation="informative" displayorder="13">
-<title id="_759d9a19-5c02-492b-80b3-894958c19042">Normative references</title><fmt-title depth="1"><span class="fmt-caption-label"><semx element="autonum" source="_references">3</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_759d9a19-5c02-492b-80b3-894958c19042">Normative references</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_references">3</semx></fmt-xref-label><p id="_307b20e2-9e40-db56-abbf-2822ab2941cc">The following documents are referred to in the text in such a way that some or all of their content constitutes requirements of this document. For dated references, only the edition cited applies. For undated references, the latest edition of the referenced document (including any amendments) applies.</p>
+<title id="_e7722c16-e807-44c7-b961-d5eab1543317">Normative references</title><fmt-title depth="1"><span class="fmt-caption-label"><semx element="autonum" source="_references">3</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_e7722c16-e807-44c7-b961-d5eab1543317">Normative references</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Clause</span> <semx element="autonum" source="_references">3</semx></fmt-xref-label><p id="_307b20e2-9e40-db56-abbf-2822ab2941cc">The following documents are referred to in the text in such a way that some or all of their content constitutes requirements of this document. For dated references, only the edition cited applies. For undated references, the latest edition of the referenced document (including any amendments) applies.</p>
 
 
 
@@ -1157,12 +1383,12 @@ Foster, I., Kesselman, C.. Morgan Kaufmann, San Francisco (1999).</formattedref>
 Czajkowski, K., Fitzgerald, S., Foster, I., Kesselman, C. In: 10th IEEE International Symposium on High
 Performance Distributed Computing, pp. 181–184. IEEE Press, New York (2001)</formattedref><docidentifier>Grid Information Services for Distributed Resource Sharing</docidentifier><docidentifier scope="biblio-tag">Grid Information Services for Distributed Resource Sharing</docidentifier><biblio-tag/></bibitem>
 </references></sections><annex id="_alignments" obligation="informative" autonum="A" displayorder="23">
-<title id="_03ec9aed-0f5c-40fd-8bbd-48bb83981d8b"><strong>Alignments</strong></title><fmt-title><strong><span class="fmt-caption-label"><span class="fmt-element-name">Annex</span> <semx element="autonum" source="_alignments">A</semx></span></strong><br/><span class="fmt-obligation">(informative)</span><span class="fmt-caption-delim"><br/></span><semx element="title" source="_03ec9aed-0f5c-40fd-8bbd-48bb83981d8b"><strong>Alignments</strong></semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Annex</span> <semx element="autonum" source="_alignments">A</semx></fmt-xref-label>
+<title id="_0a1c3878-535a-49c0-8a10-a80266dfa3fb"><strong>Alignments</strong></title><fmt-title><strong><span class="fmt-caption-label"><span class="fmt-element-name">Annex</span> <semx element="autonum" source="_alignments">A</semx></span></strong><br/><span class="fmt-obligation">(informative)</span><span class="fmt-caption-delim"><br/></span><semx element="title" source="_0a1c3878-535a-49c0-8a10-a80266dfa3fb"><strong>Alignments</strong></semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Annex</span> <semx element="autonum" source="_alignments">A</semx></fmt-xref-label>
 <floating-title depth="2" type="floating-title" original-id="_overview">Overview</floating-title><p id="_overview" depth="2" type="floating-title"><semx element="floating-title" source="_overview">Overview</semx></p>
 <p id="_a26b1278-6ec4-b483-762b-7ca96d4574c3">The prefixes used for the ontologies mapped to in all following sections are given in the following table.</p>
 
 <table id="_844caddc-c001-4654-f05e-127e524d7027" autonum="A.1"><colgroup><col width="14.2857%"/><col width="85.7143%"/></colgroup>
-<name id="_79d8d78b-a3c2-4583-b986-580251b66d79">Alignment: Namespaces</name><fmt-name><span class="fmt-caption-label"><span class="fmt-element-name">Table</span> <semx element="autonum" source="_alignments">A</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_844caddc-c001-4654-f05e-127e524d7027">1</semx></span><span class="fmt-caption-delim"> — </span><semx element="name" source="_79d8d78b-a3c2-4583-b986-580251b66d79">Alignment: Namespaces</semx></fmt-name><fmt-xref-label><span class="fmt-element-name">Table</span> <semx element="autonum" source="_alignments">A</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_844caddc-c001-4654-f05e-127e524d7027">1</semx></fmt-xref-label>
+<name id="_dac43af7-00cd-4d0b-aa06-87a35d79811d">Alignment: Namespaces</name><fmt-name><span class="fmt-caption-label"><span class="fmt-element-name">Table</span> <semx element="autonum" source="_alignments">A</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_844caddc-c001-4654-f05e-127e524d7027">1</semx></span><span class="fmt-caption-delim"> — </span><semx element="name" source="_dac43af7-00cd-4d0b-aa06-87a35d79811d">Alignment: Namespaces</semx></fmt-name><fmt-xref-label><span class="fmt-element-name">Table</span> <semx element="autonum" source="_alignments">A</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_844caddc-c001-4654-f05e-127e524d7027">1</semx></fmt-xref-label>
 <tbody><tr><td valign="middle" align="left">ign:</td>
 <td valign="middle" align="left"><link target="http://data.ign.fr/def/ignf#"/></td>
 </tr><tr><td valign="middle" align="left">iso19111:</td>
@@ -1183,9 +1409,9 @@ Performance Distributed Computing, pp. 181–184. IEEE Press, New York (2001)</f
 </table>
 
 <clause id="_ign_crs_ontology" obligation="informative" autonum="A.1">
-<title id="_40ee4bd5-ab83-421f-b5c8-0ab2ad817f7d">IGN CRS Ontology</title><fmt-title depth="2"><span class="fmt-caption-label"><semx element="autonum" source="_alignments">A</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_ign_crs_ontology">1</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_40ee4bd5-ab83-421f-b5c8-0ab2ad817f7d">IGN CRS Ontology</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Annex</span> <semx element="autonum" source="_alignments">A</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_ign_crs_ontology">1</semx></fmt-xref-label>
+<title id="_068858a7-1125-40ec-ad74-0602508bcc2f">IGN CRS Ontology</title><fmt-title depth="2"><span class="fmt-caption-label"><semx element="autonum" source="_alignments">A</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_ign_crs_ontology">1</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_068858a7-1125-40ec-ad74-0602508bcc2f">IGN CRS Ontology</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Annex</span> <semx element="autonum" source="_alignments">A</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_ign_crs_ontology">1</semx></fmt-xref-label>
 <table id="_783d5419-6dfa-d1ce-131c-392864775238" autonum="A.2">
-<name id="_01293b23-ebcb-4300-b720-bbf6823686bc">Alignment: IGN CRS Ontology</name><fmt-name><span class="fmt-caption-label"><span class="fmt-element-name">Table</span> <semx element="autonum" source="_alignments">A</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_783d5419-6dfa-d1ce-131c-392864775238">2</semx></span><span class="fmt-caption-delim"> — </span><semx element="name" source="_01293b23-ebcb-4300-b720-bbf6823686bc">Alignment: IGN CRS Ontology</semx></fmt-name><fmt-xref-label><span class="fmt-element-name">Table</span> <semx element="autonum" source="_alignments">A</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_783d5419-6dfa-d1ce-131c-392864775238">2</semx></fmt-xref-label>
+<name id="_210b6ca4-8394-43af-8ffa-7af7033ca17e">Alignment: IGN CRS Ontology</name><fmt-name><span class="fmt-caption-label"><span class="fmt-element-name">Table</span> <semx element="autonum" source="_alignments">A</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_783d5419-6dfa-d1ce-131c-392864775238">2</semx></span><span class="fmt-caption-delim"> — </span><semx element="name" source="_210b6ca4-8394-43af-8ffa-7af7033ca17e">Alignment: IGN CRS Ontology</semx></fmt-name><fmt-xref-label><span class="fmt-element-name">Table</span> <semx element="autonum" source="_alignments">A</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_783d5419-6dfa-d1ce-131c-392864775238">2</semx></fmt-xref-label>
 <thead><tr><th valign="middle" align="left">From Element</th>
 <th valign="middle" align="left">Mapping relation</th>
 <th valign="middle" align="left">To Element</th>
@@ -1208,9 +1434,9 @@ Performance Distributed Computing, pp. 181–184. IEEE Press, New York (2001)</f
 </clause>
 
 <clause id="_iso_19111_ontology" obligation="informative" autonum="A.2">
-<title id="_ee088256-b744-48bf-8a0b-4e51ab45b9ad">ISO 19111 Ontology</title><fmt-title depth="2"><span class="fmt-caption-label"><semx element="autonum" source="_alignments">A</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_iso_19111_ontology">2</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_ee088256-b744-48bf-8a0b-4e51ab45b9ad">ISO 19111 Ontology</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Annex</span> <semx element="autonum" source="_alignments">A</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_iso_19111_ontology">2</semx></fmt-xref-label>
+<title id="_9a8ffe2d-8141-4ce9-9971-359fff7db878">ISO 19111 Ontology</title><fmt-title depth="2"><span class="fmt-caption-label"><semx element="autonum" source="_alignments">A</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_iso_19111_ontology">2</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_9a8ffe2d-8141-4ce9-9971-359fff7db878">ISO 19111 Ontology</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Annex</span> <semx element="autonum" source="_alignments">A</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_iso_19111_ontology">2</semx></fmt-xref-label>
 <table id="_802f1dec-9dbe-1b1f-1c6d-65ad4fddeece" autonum="A.3">
-<name id="_bc700f1b-6a66-4439-937a-c997ee76c0a2">Alignment: ISO 19111 Ontology</name><fmt-name><span class="fmt-caption-label"><span class="fmt-element-name">Table</span> <semx element="autonum" source="_alignments">A</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_802f1dec-9dbe-1b1f-1c6d-65ad4fddeece">3</semx></span><span class="fmt-caption-delim"> — </span><semx element="name" source="_bc700f1b-6a66-4439-937a-c997ee76c0a2">Alignment: ISO 19111 Ontology</semx></fmt-name><fmt-xref-label><span class="fmt-element-name">Table</span> <semx element="autonum" source="_alignments">A</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_802f1dec-9dbe-1b1f-1c6d-65ad4fddeece">3</semx></fmt-xref-label>
+<name id="_a613c89b-f65a-4cab-a353-dfba75e9767b">Alignment: ISO 19111 Ontology</name><fmt-name><span class="fmt-caption-label"><span class="fmt-element-name">Table</span> <semx element="autonum" source="_alignments">A</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_802f1dec-9dbe-1b1f-1c6d-65ad4fddeece">3</semx></span><span class="fmt-caption-delim"> — </span><semx element="name" source="_a613c89b-f65a-4cab-a353-dfba75e9767b">Alignment: ISO 19111 Ontology</semx></fmt-name><fmt-xref-label><span class="fmt-element-name">Table</span> <semx element="autonum" source="_alignments">A</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_802f1dec-9dbe-1b1f-1c6d-65ad4fddeece">3</semx></fmt-xref-label>
 <thead><tr><th valign="middle" align="left">From Element</th>
 <th valign="middle" align="left">Mapping relation</th>
 <th valign="middle" align="left">To Element</th>
@@ -1233,9 +1459,9 @@ Performance Distributed Computing, pp. 181–184. IEEE Press, New York (2001)</f
 </clause>
 
 <clause id="_ifcowl_ontology" obligation="informative" autonum="A.3">
-<title id="_7401fdf2-5ae7-4446-8d74-df26d02b18b7">IFCOWL Ontology</title><fmt-title depth="2"><span class="fmt-caption-label"><semx element="autonum" source="_alignments">A</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_ifcowl_ontology">3</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_7401fdf2-5ae7-4446-8d74-df26d02b18b7">IFCOWL Ontology</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Annex</span> <semx element="autonum" source="_alignments">A</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_ifcowl_ontology">3</semx></fmt-xref-label>
+<title id="_3b62694e-fd46-4aab-aeb0-a21cc2b51195">IFCOWL Ontology</title><fmt-title depth="2"><span class="fmt-caption-label"><semx element="autonum" source="_alignments">A</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_ifcowl_ontology">3</semx><span class="fmt-autonum-delim">.</span></span><span class="fmt-caption-delim"><tab/></span><semx element="title" source="_3b62694e-fd46-4aab-aeb0-a21cc2b51195">IFCOWL Ontology</semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Annex</span> <semx element="autonum" source="_alignments">A</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_ifcowl_ontology">3</semx></fmt-xref-label>
 <table id="_71db8d5e-63c1-2c0f-96fd-986457044383" autonum="A.4">
-<name id="_2aa61ffd-b37f-4e0a-923a-9da0b0506bcc">Alignment: IFCOWL Ontology</name><fmt-name><span class="fmt-caption-label"><span class="fmt-element-name">Table</span> <semx element="autonum" source="_alignments">A</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_71db8d5e-63c1-2c0f-96fd-986457044383">4</semx></span><span class="fmt-caption-delim"> — </span><semx element="name" source="_2aa61ffd-b37f-4e0a-923a-9da0b0506bcc">Alignment: IFCOWL Ontology</semx></fmt-name><fmt-xref-label><span class="fmt-element-name">Table</span> <semx element="autonum" source="_alignments">A</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_71db8d5e-63c1-2c0f-96fd-986457044383">4</semx></fmt-xref-label>
+<name id="_2dce0cae-6679-4639-a90d-1ee7a6f43294">Alignment: IFCOWL Ontology</name><fmt-name><span class="fmt-caption-label"><span class="fmt-element-name">Table</span> <semx element="autonum" source="_alignments">A</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_71db8d5e-63c1-2c0f-96fd-986457044383">4</semx></span><span class="fmt-caption-delim"> — </span><semx element="name" source="_2dce0cae-6679-4639-a90d-1ee7a6f43294">Alignment: IFCOWL Ontology</semx></fmt-name><fmt-xref-label><span class="fmt-element-name">Table</span> <semx element="autonum" source="_alignments">A</semx><span class="fmt-autonum-delim">.</span><semx element="autonum" source="_71db8d5e-63c1-2c0f-96fd-986457044383">4</semx></fmt-xref-label>
 <thead><tr><th valign="middle" align="left">From Element</th>
 <th valign="middle" align="left">Mapping relation</th>
 <th valign="middle" align="left">To Element</th>
@@ -1249,9 +1475,9 @@ Performance Distributed Computing, pp. 181–184. IEEE Press, New York (2001)</f
 </table>
 </clause>
 </annex><annex id="_shacl_shapes" obligation="informative" autonum="B" displayorder="24">
-<title id="_7150923d-acf1-4cab-b30d-091a9924e4b7"><strong>SHACL Shapes</strong></title><fmt-title><strong><span class="fmt-caption-label"><span class="fmt-element-name">Annex</span> <semx element="autonum" source="_shacl_shapes">B</semx></span></strong><br/><span class="fmt-obligation">(informative)</span><span class="fmt-caption-delim"><br/></span><semx element="title" source="_7150923d-acf1-4cab-b30d-091a9924e4b7"><strong>SHACL Shapes</strong></semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Annex</span> <semx element="autonum" source="_shacl_shapes">B</semx></fmt-xref-label>
+<title id="_d1627900-d450-42c5-9335-79e0d3e4978c"><strong>SHACL Shapes</strong></title><fmt-title><strong><span class="fmt-caption-label"><span class="fmt-element-name">Annex</span> <semx element="autonum" source="_shacl_shapes">B</semx></span></strong><br/><span class="fmt-obligation">(informative)</span><span class="fmt-caption-delim"><br/></span><semx element="title" source="_d1627900-d450-42c5-9335-79e0d3e4978c"><strong>SHACL Shapes</strong></semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Annex</span> <semx element="autonum" source="_shacl_shapes">B</semx></fmt-xref-label>
 <floating-title depth="2" type="floating-title" original-id="_overview_2">Overview</floating-title><p id="_overview_2" depth="2" type="floating-title"><semx element="floating-title" source="_overview_2">Overview</semx></p></annex><annex id="_revision_history" obligation="informative" autonum="C" displayorder="25">
-<title id="_d732da40-5bbe-4ddb-b700-21b3eca93acc"><strong>Revision History</strong></title><fmt-title><strong><span class="fmt-caption-label"><span class="fmt-element-name">Annex</span> <semx element="autonum" source="_revision_history">C</semx></span></strong><br/><span class="fmt-obligation">(informative)</span><span class="fmt-caption-delim"><br/></span><semx element="title" source="_d732da40-5bbe-4ddb-b700-21b3eca93acc"><strong>Revision History</strong></semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Annex</span> <semx element="autonum" source="_revision_history">C</semx></fmt-xref-label>
+<title id="_8711f6fc-4cbe-4bb7-bf62-56821df74e07"><strong>Revision History</strong></title><fmt-title><strong><span class="fmt-caption-label"><span class="fmt-element-name">Annex</span> <semx element="autonum" source="_revision_history">C</semx></span></strong><br/><span class="fmt-obligation">(informative)</span><span class="fmt-caption-delim"><br/></span><semx element="title" source="_8711f6fc-4cbe-4bb7-bf62-56821df74e07"><strong>Revision History</strong></semx></fmt-title><fmt-xref-label><span class="fmt-element-name">Annex</span> <semx element="autonum" source="_revision_history">C</semx></fmt-xref-label>
 <table id="_b6b59374-daa1-595c-c188-3a2639006243" unnumbered="true" width="90%"><thead><tr><th valign="middle" align="left">Date</th>
 <th valign="middle" align="left">Release</th>
 <th valign="middle" align="left">Author</th>
@@ -1266,7 +1492,7 @@ Performance Distributed Computing, pp. 181–184. IEEE Press, New York (2001)</f
 </tr></tbody>
 </table>
 </annex><bibliography><references id="_bibliography" normative="false" obligation="informative" displayorder="26">
-<title id="_821a7384-34a7-4ccc-a7f7-6c9f30cefdca">Bibliography</title><fmt-title depth="1"><semx element="title" source="_821a7384-34a7-4ccc-a7f7-6c9f30cefdca">Bibliography</semx></fmt-title>
+<title id="_cd51ae27-538e-4dc0-b9ae-5b2750cc71b6">Bibliography</title><fmt-title depth="1"><semx element="title" source="_cd51ae27-538e-4dc0-b9ae-5b2750cc71b6">Bibliography</semx></fmt-title>
 <note id="_155a708c-216d-5804-50a7-1a2723619850" autonum=""><fmt-name><span class="fmt-caption-label"><span class="fmt-element-name">NOTE</span></span><span class="fmt-label-delim">:<tab/></span></fmt-name><fmt-xref-label><span class="fmt-element-name">Note</span></fmt-xref-label><fmt-xref-label container="_bibliography"><span class="fmt-xref-container"><semx element="references" source="_bibliography">Bibliography</semx></span><span class="fmt-comma">,</span> <span class="fmt-element-name">Note</span></fmt-xref-label><p id="_9702179a-71de-0d11-425d-60a89a0feed8">The TC has approved Springer LNCS as the official document citation type. Springer LNCS is widely used in technical and computer science journals and other publications For citations in the text please use square brackets and consecutive numbers: [1], [2], [3] Actual References: [n] Journal: Author Surname, A.: Title. Publication Title. Volume number, Issue number, Pages Used (Year Published)</p>
 </note><bibitem id="iso19142" type="standard" schema-version="v1.2.9"><formattedref>ISO: ISO 19142, <em>Geographic information — Web Feature Service</em>. International Organization for Standardization, Geneva <link target="https://www.iso.org/standard/42136.html">https://www.iso.org/standard/42136.html</link>.</formattedref><uri type="src">https://www.iso.org/standard/42136.html</uri><uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:42136:en</uri><uri type="rss">https://www.iso.org/contents/data/standard/04/21/42136.detail.rss</uri><docidentifier type="metanorma-ordinal">[1]</docidentifier><docidentifier type="ISO" primary="true">ISO 19142</docidentifier><docidentifier type="iso-reference">iso-reference ISO 19142(E)</docidentifier><docidentifier type="URN">URN urn:iso:std:iso:19142:stage-90.93</docidentifier><docidentifier scope="biblio-tag">ISO 19142</docidentifier><status>
     <stage>90</stage>

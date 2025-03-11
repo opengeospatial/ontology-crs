@@ -462,18 +462,214 @@
 <title>Coordinate System Module</title>
 <p id="cs">This clause establishes the <strong>CS</strong> Requirements class, with IRI <tt>/req/cs</tt>, which has a corresponding Conformance Class, <strong>CS</strong>, with IRI <tt>/conf/cs</tt>.</p>
 
+<clause id="_class_geosrs1dcoordinatesystem" obligation="normative">
+<title>Class: geosrs:1DCoordinateSystem</title>
+<p id="_0aac4a8a-c717-528e-dc47-dd932efcdf4c">The class <link target="https://w3id.org/geosrs/geosrs:1DCoordinateSystem"><tt>geosrs:geosrs:1DCoordinateSystem</tt></link> is defined by the following:</p>
+
+<p id="_1edce044-f6d4-6193-55cc-1b707599ae28">Non-repeating sequence of coordinate system axes that spans a given coordinate space in one dimension</p>
+</clause>
+
+<clause id="_class_geosrs3dcoordinatesystem" obligation="normative">
+<title>Class: geosrs:3DCoordinateSystem</title>
+<p id="_f474df0c-36fb-17f5-3c76-0f72e751cff1">The class <link target="https://w3id.org/geosrs/geosrs:3DCoordinateSystem"><tt>geosrs:geosrs:3DCoordinateSystem</tt></link> is defined by the following:</p>
+
+<p id="_807d9057-b61f-538d-38ba-ee74f1aa63f8">Non-repeating sequence of coordinate system axes that spans a given coordinate space in three dimensions</p>
+</clause>
+
+<clause id="_class_geosrsaffinecoordinatesystem" obligation="normative">
+<title>Class: geosrs:AffineCoordinateSystem</title>
+<p id="_9f049ac0-f0b9-b462-3be2-a819abd88163">The class <link target="https://w3id.org/geosrs/geosrs:AffineCoordinateSystem"><tt>geosrs:geosrs:AffineCoordinateSystem</tt></link> is defined by the following:</p>
+
+<p id="_fa365718-5718-4995-3276-dfd8cca9cae0">Coordinate system in Euclidean space with straight axes that are not necessarily mutually perpendicular</p>
+</clause>
+
+<clause id="_class_geosrsbarycentriccoordinatesystem" obligation="normative">
+<title>Class: geosrs:BarycentricCoordinateSystem</title>
+<p id="_9f7c045e-a471-57fe-1554-cd490ba59837">The class <link target="https://w3id.org/geosrs/geosrs:BarycentricCoordinateSystem"><tt>geosrs:geosrs:BarycentricCoordinateSystem</tt></link> is defined by the following:</p>
+
+<p id="_2cdf95b3-fd54-d399-b98c-1ef70eca2561">A coordinate system in which the location of a point is specified by reference to a simplex (a triangle for points in a plane, a tetrahedron for points in three-dimensional space, etc.)</p>
+</clause>
+
+<clause id="_class_geosrscelestialcoordinatesystem" obligation="normative">
+<title>Class: geosrs:CelestialCoordinateSystem</title>
+<p id="_8b41d825-3cc7-4eb3-8716-39b540902cc8">The class <link target="https://w3id.org/geosrs/geosrs:CelestialCoordinateSystem"><tt>geosrs:geosrs:CelestialCoordinateSystem</tt></link> is defined by the following:</p>
+
+<p id="_ba3b1335-755b-572c-e84c-7bc29c5ff647">A coordinate system for specifying positions of celestial objects relative to physical reference points</p>
+</clause>
+
+<clause id="_class_geosrsconicalcoordinatesystem" obligation="normative">
+<title>Class: geosrs:ConicalCoordinateSystem</title>
+<p id="_25ac081d-b372-e409-872a-66f3a2718ff8">The class <link target="https://w3id.org/geosrs/geosrs:ConicalCoordinateSystem"><tt>geosrs:geosrs:ConicalCoordinateSystem</tt></link> is defined by the following:</p>
+
+<p id="_b04b0fd4-fea0-815e-d861-cb5beecb53fc">A conical coordinate system is a three-dimensional orthogonal coordinate system consisting of concentric spheres (described by their radius r) and by two families of perpendicular cones, aligned along the z- and x-axes, respectively</p>
+</clause>
+
+<clause id="_class_geosrscurvilinearcoordinatesystem" obligation="normative">
+<title>Class: geosrs:CurvilinearCoordinateSystem</title>
+<p id="_c1437488-b289-bbef-9ca1-5a64029170d7">The class <link target="https://w3id.org/geosrs/geosrs:CurvilinearCoordinateSystem"><tt>geosrs:geosrs:CurvilinearCoordinateSystem</tt></link> is defined by the following:</p>
+
+<p id="_0a59f614-9a05-31c7-d81c-5f8e1dc0fe82">A coordinate system for the Euclidean space in which the coordinate lines may be curved</p>
+</clause>
+
+<clause id="_class_geosrscylindricalcoordinatesystem" obligation="normative">
+<title>Class: geosrs:CylindricalCoordinateSystem</title>
+<p id="_bedd8ebc-b6b2-1bd9-bbac-36d0f3b7efc9">The class <link target="https://w3id.org/geosrs/geosrs:CylindricalCoordinateSystem"><tt>geosrs:geosrs:CylindricalCoordinateSystem</tt></link> is defined by the following:</p>
+
+<p id="_359f89ec-9731-789c-23c3-19594d484ecd">Three-dimensional coordinate system in Euclidean space in which position is specified by two linear coordinates and one angular coordinate</p>
+</clause>
+
+<clause id="_class_geosrseclipticcoordinatesystem" obligation="normative">
+<title>Class: geosrs:EclipticCoordinateSystem</title>
+<p id="_96d27492-34a0-0bba-10d7-673f64cd7d02">The class <link target="https://w3id.org/geosrs/geosrs:EclipticCoordinateSystem"><tt>geosrs:geosrs:EclipticCoordinateSystem</tt></link> is defined by the following:</p>
+
+<p id="_238b19fa-4ab1-e45b-6935-7d89d639af39">An ecliptic coordinate system is used for representing the apparent positions and orbits of solar system objects.</p>
+</clause>
+
+<clause id="_class_geosrsengineeringcoordinatesystem" obligation="normative">
+<title>Class: geosrs:EngineeringCoordinateSystem</title>
+<p id="_5d1238d7-3f9e-03be-9e70-89782cf3d27c">The class <link target="https://w3id.org/geosrs/geosrs:EngineeringCoordinateSystem"><tt>geosrs:geosrs:EngineeringCoordinateSystem</tt></link> is defined by the following:</p>
+
+<p id="_7e30e23a-5efb-6ef1-98dd-1a14a26762e1">Coordinate system used by an engineering coordinate reference system, one of an affine coordinate system, a Cartesian coordinate system, a cylindrical coordinate system, a linear coordinate sytem, an ordinal coordinate system, a polar coordinate system or a spherical coordinate system</p>
+</clause>
+
+<clause id="_class_geosrsequatorialcoordinatesystem" obligation="normative">
+<title>Class: geosrs:EquatorialCoordinateSystem</title>
+<p id="_ff3f0051-c9d8-3878-5440-b0aae4d514f2">The class <link target="https://w3id.org/geosrs/geosrs:EquatorialCoordinateSystem"><tt>geosrs:geosrs:EquatorialCoordinateSystem</tt></link> is defined by the following:</p>
+
+<p id="_f155a8b4-7af6-2bfb-b6e4-4d73758ff237">A celestial coordinate system in which an object’s position on the celestial sphere is described in terms of its north-south declination and east-west right ascension, measured relative to the celestial equator and vernal equinox, respectively.</p>
+</clause>
+
+<clause id="_class_geosrsgalacticcoordinatesystem" obligation="normative">
+<title>Class: geosrs:GalacticCoordinateSystem</title>
+<p id="_03c50631-da8d-1ae2-5d3d-23a3d88fd799">The class <link target="https://w3id.org/geosrs/geosrs:GalacticCoordinateSystem"><tt>geosrs:geosrs:GalacticCoordinateSystem</tt></link> is defined by the following:</p>
+
+<p id="_a6f041a6-7755-48e4-209c-f1005623e7a0">A coordinate system with the Sun as its center, the primary direction aligned with the approximate center of the Milky Way Galaxy, and the fundamental plane parallel to an approximation of the galactic plane but offset to its north.</p>
+</clause>
+
+<clause id="_class_geosrsgeodeticcoordinatesystem" obligation="normative">
+<title>Class: geosrs:GeodeticCoordinateSystem</title>
+<p id="_75a9a580-eaa2-9aa9-1b80-e0ce5dca83cb">The class <link target="https://w3id.org/geosrs/geosrs:GeodeticCoordinateSystem"><tt>geosrs:geosrs:GeodeticCoordinateSystem</tt></link> is defined by the following:</p>
+
+<p id="_f126cc23-8196-a050-84fa-d033bdd9bbf5">Coordinate system used by a Geodetic CRS, one of a Cartesian coordinate system or a spherical coordinate system.</p>
+</clause>
+
+<clause id="_class_geosrsgeographicalcoordinatesystem" obligation="normative">
+<title>Class: geosrs:GeographicalCoordinateSystem</title>
+<p id="_3d2eb7b1-656c-8c05-b805-cda6aae0f2a8">The class <link target="https://w3id.org/geosrs/geosrs:GeographicalCoordinateSystem"><tt>geosrs:geosrs:GeographicalCoordinateSystem</tt></link> is defined by the following:</p>
+
+<p id="_736babf2-9d6b-f65f-981f-ccb8d198c4de">Spherical or geodetic coordinate system for measuring and communicating positions directly on Earth as latitude and longitude.</p>
+</clause>
+
+<clause id="_class_geosrsgridcoordinatesystem" obligation="normative">
+<title>Class: geosrs:GridCoordinateSystem</title>
+<p id="_4074cbf4-f428-ece5-a7d4-ed44c1153f95">The class <link target="https://w3id.org/geosrs/geosrs:GridCoordinateSystem"><tt>geosrs:geosrs:GridCoordinateSystem</tt></link> is defined by the following:</p>
+
+<p id="_f20552cc-5e03-6729-28b5-fa6b82b85f27">A grid coordinate system identifies areas within a grid.</p>
+</clause>
+
+<clause id="_class_geosrshexagonalcoordinatesystem" obligation="normative">
+<title>Class: geosrs:HexagonalCoordinateSystem</title>
+<p id="_8a37486f-0b15-dbe8-c66d-c3d89126c237">The class <link target="https://w3id.org/geosrs/geosrs:HexagonalCoordinateSystem"><tt>geosrs:geosrs:HexagonalCoordinateSystem</tt></link> is defined by the following:</p>
+
+<p id="_8ea67151-79d2-7791-5de9-6e9bc2215e50">A hexagonal coordinate system identifies areas within a hexagonal lattice.</p>
+</clause>
+
+<clause id="_class_geosrshorizontalcoordinatesystem" obligation="normative">
+<title>Class: geosrs:HorizontalCoordinateSystem</title>
+<p id="_7d5c615d-f839-c97f-87b5-8d681531a94f">The class <link target="https://w3id.org/geosrs/geosrs:HorizontalCoordinateSystem"><tt>geosrs:geosrs:HorizontalCoordinateSystem</tt></link> is defined by the following:</p>
+
+<p id="_b5f65d07-c9ee-20b2-a106-12b275ae734b">A horizontal coordinate system is a celestial coordinate system that uses the observer’s local horizon as the fundamental plane.</p>
+</clause>
+
+<clause id="_class_geosrslocalcoordinatesystem" obligation="normative">
+<title>Class: geosrs:LocalCoordinateSystem</title>
+<p id="_a421dcb6-d3d1-99b0-0831-6f552e52cca8">The class <link target="https://w3id.org/geosrs/geosrs:LocalCoordinateSystem"><tt>geosrs:geosrs:LocalCoordinateSystem</tt></link> is defined by the following:</p>
+
+<p id="_e5af6a11-42d7-a056-c104-8efac8285bd3">Coordinate system with a point of local reference.</p>
+</clause>
+
+<clause id="_class_geosrsobliquecoordinatesystem" obligation="normative">
+<title>Class: geosrs:ObliqueCoordinateSystem</title>
+<p id="_e025f4d6-a5e2-805b-d28d-af25309d622d">The class <link target="https://w3id.org/geosrs/geosrs:ObliqueCoordinateSystem"><tt>geosrs:geosrs:ObliqueCoordinateSystem</tt></link> is defined by the following:</p>
+
+<p id="_889d6dd2-0fba-8862-0381-942e1fc0a520">A plane coordinate system whose axes are not perpendicular.</p>
+</clause>
+
+<clause id="_class_geosrsorthogonalcoordinatesystem" obligation="normative">
+<title>Class: geosrs:OrthogonalCoordinateSystem</title>
+<p id="_a30e2558-59a7-42e6-51c2-0fb771c92adb">The class <link target="https://w3id.org/geosrs/geosrs:OrthogonalCoordinateSystem"><tt>geosrs:geosrs:OrthogonalCoordinateSystem</tt></link> is defined by the following:</p>
+
+<p id="_ef6ce990-a2b7-560c-e50c-4ae88aa4c81f">A orthogonal coordinate system is a system of curvilinear coordinates in which each family of surfaces intersects the others at right angles.</p>
+</clause>
+
+<clause id="_class_geosrsperifocalcoordinatesystem" obligation="normative">
+<title>Class: geosrs:PerifocalCoordinateSystem</title>
+<p id="_58380b1d-c6f3-1c37-5320-a3cc123beb76">The class <link target="https://w3id.org/geosrs/geosrs:PerifocalCoordinateSystem"><tt>geosrs:geosrs:PerifocalCoordinateSystem</tt></link> is defined by the following:</p>
+
+<p id="_2a56967b-1d4a-bb4a-5c7e-9c51e2d78d5d">A frame of reference centered at the focus of the orbit, i.e. the celestial body about which the orbit is centered.</p>
+</clause>
+
+<clause id="_class_geosrsplanarcoordinatesystem" obligation="normative">
+<title>Class: geosrs:PlanarCoordinateSystem</title>
+<p id="_33a3a5f9-9da5-d87f-de99-6e969176e665">The class <link target="https://w3id.org/geosrs/geosrs:PlanarCoordinateSystem"><tt>geosrs:geosrs:PlanarCoordinateSystem</tt></link> is defined by the following:</p>
+
+<p id="_6813ac33-1407-8938-c87a-7c4a18545e83">A two-dimensional measurement system that locates features on a plane based on their distance from an origin (0,0) along two perpendicular axes.</p>
+</clause>
+
+<clause id="_class_geosrsskewcoordinatesystem" obligation="normative">
+<title>Class: geosrs:SkewCoordinateSystem</title>
+<p id="_ceee9c4e-aab9-8e11-5a5a-920dd10de9d3">The class <link target="https://w3id.org/geosrs/geosrs:SkewCoordinateSystem"><tt>geosrs:geosrs:SkewCoordinateSystem</tt></link> is defined by the following:</p>
+
+<p id="_2e0f50b5-e889-b1c7-8cf0-ea97723fd2ac">A skew coordinate system is a system of curvilinear coordinates in which each family of surfaces intersects the others at angles other than right angles.</p>
+</clause>
+
+<clause id="_class_geosrsdatetimetemporalcoordinatesystem" obligation="normative">
+<title>Class: geosrs:DateTimeTemporalCoordinateSystem</title>
+<p id="_bed6fa6d-7e47-1240-1b4c-19e279780800">The class <link target="https://w3id.org/geosrs/geosrs:DateTimeTemporalCoordinateSystem"><tt>geosrs:geosrs:DateTimeTemporalCoordinateSystem</tt></link> is defined by the following:</p>
+
+<p id="_f21cd853-9502-5859-57d2-3d33394f26da">One-dimensional coordinate system used to record time in dateTime representation as defined in ISO 8601.</p>
+</clause>
+
+<clause id="_class_geosrstemporalcountcoordinatesystem" obligation="normative">
+<title>Class: geosrs:TemporalCountCoordinateSystem</title>
+<p id="_e4d7d0b6-a3ac-fb86-2ce5-2d5eac2eb7a7">The class <link target="https://w3id.org/geosrs/geosrs:TemporalCountCoordinateSystem"><tt>geosrs:geosrs:TemporalCountCoordinateSystem</tt></link> is defined by the following:</p>
+
+<p id="_96ca314c-dc57-31f1-f5d6-a2b6e52cea5b">One-dimensional coordinate system used to record time as an integer count.</p>
+</clause>
+
+<clause id="_class_geosrstemporalcoordinatesystem" obligation="normative">
+<title>Class: geosrs:TemporalCoordinateSystem</title>
+<p id="_a0b7e3f7-0813-6dc6-8c42-d65c66f181b5">The class <link target="https://w3id.org/geosrs/geosrs:TemporalCoordinateSystem"><tt>geosrs:geosrs:TemporalCoordinateSystem</tt></link> is defined by the following:</p>
+
+<p id="_d3d82cc0-e365-ec90-ca0e-3f0ac1c56eea">One-dimensionalcoordinate system where the axis is time.</p>
+</clause>
+
+<clause id="_class_geosrstemporalmeasurecoordinatesystem" obligation="normative">
+<title>Class: geosrs:TemporalMeasureCoordinateSystem</title>
+<p id="_780dcc5c-2b17-7dd0-c4ac-c8e3ecab0bb7">The class <link target="https://w3id.org/geosrs/geosrs:TemporalMeasureCoordinateSystem"><tt>geosrs:geosrs:TemporalMeasureCoordinateSystem</tt></link> is defined by the following:</p>
+
+<p id="_f4847e51-066f-17e2-9111-01ab219fdc4e">One-dimensional coordinate system used to record a time as a real number.</p>
+</clause>
+
+<clause id="_class_geosrssupergalacticcs" obligation="normative">
+<title>Class: geosrs:SuperGalacticCS</title>
+<p id="_db98405c-5556-a34b-ca8a-f95a5dcdc01d">The class <link target="https://w3id.org/geosrs/geosrs:SuperGalacticCS"><tt>geosrs:geosrs:SuperGalacticCS</tt></link> is defined by the following:</p>
+
+<p id="_3f73f6c9-e903-c76e-bb0a-edef8a1831ae">A reference frame for the supercluster of galaxies that contains the Milky Way galaxy, referenced to a local relatively flat collection of galaxy clusters used to define the supergalactic plane.</p>
+</clause>
+
 <clause id="_property_geosrsaxisdirection" obligation="normative">
 <title>Property: geosrs:axisDirection</title>
-<p id="_34df0605-6e53-02bf-a9ed-2628759153a1">The class <link target="https://w3id.org/geosrs/geosrs:axisDirection"><tt>geosrs:geosrs:axisDirection</tt></link> is defined by the following:</p>
+<p id="_fdf6e3dd-3270-b3d1-dc01-1f1b1028d9c4">The class <link target="https://w3id.org/geosrs/geosrs:axisDirection"><tt>geosrs:geosrs:axisDirection</tt></link> is defined by the following:</p>
 
-<p id="_8190c893-f219-15ba-cce2-57073c7688b5">The direction of an axis. Cf. ISO 19111:2007:2007-07, table 27, attribute coordinate system axis direction.</p>
+<p id="_f6dc9bf6-84c7-faa3-17f6-2e9b0db53c5e">The direction of an axis. Cf. ISO 19111:2007:2007-07, table 27, attribute coordinate system axis direction.</p>
 </clause>
 
 <clause id="_property_geosrscylindricalcs" obligation="normative">
 <title>Property: geosrs:cylindricalCS</title>
-<p id="_3b91feca-578e-1748-94fe-e9bded942286">The class <link target="https://w3id.org/geosrs/geosrs:cylindricalCS"><tt>geosrs:geosrs:cylindricalCS</tt></link> is defined by the following:</p>
+<p id="_3421ef0a-cb08-33d0-c164-be8fc190faef">The class <link target="https://w3id.org/geosrs/geosrs:cylindricalCS"><tt>geosrs:geosrs:cylindricalCS</tt></link> is defined by the following:</p>
 
-<p id="_42a81001-596a-72e2-61f0-7f0ae25e95d9">Links a coordinate reference system to a cylindrical coordinate system</p>
+<p id="_773433d3-0652-0d9c-7f34-54f1b348a030">Links a coordinate reference system to a cylindrical coordinate system</p>
 </clause>
 </clause>
 
@@ -481,18 +677,74 @@
 <title>Datum Module</title>
 <p id="datum">This clause establishes the <strong>Datum</strong> Requirements class, with IRI <tt>/req/datum</tt>, which has a corresponding Conformance Class, <strong>Datum</strong>, with IRI <tt>/conf/datum</tt>.</p>
 
+<clause id="_class_geosrsdynamicgeodeticreferenceframe" obligation="normative">
+<title>Class: geosrs:DynamicGeodeticReferenceFrame</title>
+<p id="_c7c532c7-f6fc-75b1-0a7c-5ca716ecc408">The class <link target="https://w3id.org/geosrs/geosrs:DynamicGeodeticReferenceFrame"><tt>geosrs:geosrs:DynamicGeodeticReferenceFrame</tt></link> is defined by the following:</p>
+
+<p id="_b075f4a2-1c07-aef3-b1f0-98032b90ff5e">Geodetic reference frame in which some of the parameters describe time evolution of defining station coordinatesExample: defining station coordinates having linear velocities to account for crustal motion.</p>
+</clause>
+
+<clause id="_class_geosrstriaxialellipsoid" obligation="normative">
+<title>Class: geosrs:TriaxialEllipsoid</title>
+<p id="_21dfcb42-1744-b7eb-0ddc-abac27702b78">The class <link target="https://w3id.org/geosrs/geosrs:TriaxialEllipsoid"><tt>geosrs:geosrs:TriaxialEllipsoid</tt></link> is defined by the following:</p>
+
+<p id="_1c4531f0-4791-e177-32f1-085e1a8f8293">Surface of an analytic ellipsoid defined by three axes of different length. Also referred as scalene ellipsoid.</p>
+</clause>
+
+<clause id="_class_geosrsdynamicverticaldatum" obligation="normative">
+<title>Class: geosrs:DynamicVerticalDatum</title>
+<p id="_332f31eb-6c48-bda3-30ef-5d61cc5078f4">The class <link target="https://w3id.org/geosrs/geosrs:DynamicVerticalDatum"><tt>geosrs:geosrs:DynamicVerticalDatum</tt></link> is defined by the following:</p>
+
+<p id="_0e8df378-95df-2790-6023-b5e3ebe32f67">Vertical reference frame in which some of the defining parameters have time dependencyExample: Defining station heights have velocity to account for post-glacial isostatic rebound motion. Cf. ISO 19111:2019 Geographic information — Referencing by coordinates.</p>
+</clause>
+
+<clause id="_class_geosrsparametricdatum" obligation="normative">
+<title>Class: geosrs:ParametricDatum</title>
+<p id="_3d693281-8ba0-5138-6bbe-6323cc08d38b">The class <link target="https://w3id.org/geosrs/geosrs:ParametricDatum"><tt>geosrs:geosrs:ParametricDatum</tt></link> is defined by the following:</p>
+
+<p id="_78d8f267-67d6-d4e4-9c47-797bc6b15872">Textual description and/or a set of parameters identifying a particular reference surface used as the origin of a parametric coordinate system, including its position with respect to the Earth. Cf. ISO 19111:2019 Geographic information — Referencing by coordinates.</p>
+</clause>
+
+<clause id="_class_geosrsdefiningparameter" obligation="normative">
+<title>Class: geosrs:DefiningParameter</title>
+<p id="_bb641330-0f72-5e3f-ebee-11eff04b09b3">The class <link target="https://w3id.org/geosrs/geosrs:DefiningParameter"><tt>geosrs:geosrs:DefiningParameter</tt></link> is defined by the following:</p>
+
+<p id="_c5f37898-f273-92b3-b6a9-2d0774858058">Parameter value, an ordered sequence of values, or a reference to a file of parameter values that define a paramtric datum. Cf. ISO 19111:2019 Geographic information — Referencing by coordinates.</p>
+</clause>
+
+<clause id="_class_geosrsengineeringdatum" obligation="normative">
+<title>Class: geosrs:EngineeringDatum</title>
+<p id="_ed004d1c-4ede-6e7a-4e4d-e15d42b82f75">The class <link target="https://w3id.org/geosrs/geosrs:EngineeringDatum"><tt>geosrs:geosrs:EngineeringDatum</tt></link> is defined by the following:</p>
+
+<p id="_46fc3db9-4918-b565-3ade-32eb1cdde598">Definition of the origin and orientation of an engineering coordinate reference systemNote: The origin can be fixed with respect to the Earth (such as a defined point at a construction site), or be a defined point on a moving vehicle (such as on a ship or satellite), or a defined point of an image. Cf. ISO 19111:2019 Geographic information — Referencing by coordinates.</p>
+</clause>
+
+<clause id="_class_geosrstemporaldatum" obligation="normative">
+<title>Class: geosrs:TemporalDatum</title>
+<p id="_2fca3480-ed8d-e3e9-3870-7632f2210208">The class <link target="https://w3id.org/geosrs/geosrs:TemporalDatum"><tt>geosrs:geosrs:TemporalDatum</tt></link> is defined by the following:</p>
+
+<p id="_ff8c136d-598c-07b9-db84-b933c672b83d">Definition of the relationship of a temporal coordinate system to an objectNote: The object is normally time on the Earth. Cf. ISO 19111:2019 Geographic information — Referencing by coordinates.</p>
+</clause>
+
+<clause id="_class_geosrsdatumensemble" obligation="normative">
+<title>Class: geosrs:DatumEnsemble</title>
+<p id="_19b9891b-f6a9-4d33-46ff-ae72e6834311">The class <link target="https://w3id.org/geosrs/geosrs:DatumEnsemble"><tt>geosrs:geosrs:DatumEnsemble</tt></link> is defined by the following:</p>
+
+<p id="_640bfdbc-2105-057e-5844-df811d669b8b">A collection of two or more datums (or if geodetic or vertical, a collection of two or more reference frames) that are realizations of one Conventional Reference System and which for all but the highest accuracy requirements may be considered to be insignificantly different from each other. Note: Within the datum ensemble every frame or datum is constrained to be a realization of the same reference system. Cf. ISO 19111:2019 Geographic information — Referencing by coordinates.</p>
+</clause>
+
 <clause id="_property_geosrsinverseflattening" obligation="normative">
 <title>Property: geosrs:inverseFlattening</title>
-<p id="_81e7554d-4524-7410-ca46-c9fe621ea270">The class <link target="https://w3id.org/geosrs/geosrs:inverseFlattening"><tt>geosrs:geosrs:inverseFlattening</tt></link> is defined by the following:</p>
+<p id="_c64aef9d-b020-580b-3576-3a55264fa4bb">The class <link target="https://w3id.org/geosrs/geosrs:inverseFlattening"><tt>geosrs:geosrs:inverseFlattening</tt></link> is defined by the following:</p>
 
-<p id="_ac38b877-15b1-da8a-5c70-ccc0607c3eac">Indicates the inverse flattening value of an ellipsoid, expressed as a number or a ratio (percentage rate, parts per million, etc.). Cf. ISO 19111:2007:2007-07, table 37, attribute inverse flattening</p>
+<p id="_b534f0e6-3025-92b8-d79d-efb5ed925190">Indicates the inverse flattening value of an ellipsoid, expressed as a number or a ratio (percentage rate, parts per million, etc.). Cf. ISO 19111:2007:2007-07, table 37, attribute inverse flattening</p>
 </clause>
 
 <clause id="_property_geosrsprimemeridian" obligation="normative">
 <title>Property: geosrs:primeMeridian</title>
-<p id="_ea4bd68f-483d-d509-0d37-50bae0fa1d21">The class <link target="https://w3id.org/geosrs/geosrs:primeMeridian"><tt>geosrs:geosrs:primeMeridian</tt></link> is defined by the following:</p>
+<p id="_3e3abe89-e3f5-beea-e10f-6cfa6fc41a4a">The class <link target="https://w3id.org/geosrs/geosrs:primeMeridian"><tt>geosrs:geosrs:primeMeridian</tt></link> is defined by the following:</p>
 
-<p id="_36e17e9e-532b-ba56-fc11-16e3a398ec33">The prime meridian used by a geodetic datum. Cf. ISO 19111:2007:2007-07, table 34, association role primeMeridian.</p>
+<p id="_86dbcf3c-22f3-9625-e3de-121fcfa2159c">The prime meridian used by a geodetic datum. Cf. ISO 19111:2007:2007-07, table 34, association role primeMeridian.</p>
 </clause>
 </clause>
 
@@ -504,6 +756,1427 @@
 <clause id="_projections_module" obligation="normative">
 <title>Projections Module</title>
 <p id="proj">This clause establishes the <strong>PROJ</strong> Requirements class, with IRI <tt>/req/proj</tt>, which has a corresponding Conformance Class, <strong>PROJ</strong>, with IRI <tt>/conf/proj</tt>.</p>
+
+<clause id="_class_geosrsa4projection" obligation="normative">
+<title>Class: geosrs:A4Projection</title>
+<p id="_daf14b29-fadd-5fe2-7795-ef3fb36d220a">The class <link target="https://w3id.org/geosrs/geosrs:A4Projection"><tt>geosrs:geosrs:A4Projection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsadamsprojection" obligation="normative">
+<title>Class: geosrs:AdamsProjection</title>
+<p id="_0eb24cf8-0fb3-e74c-4f1a-0065e1060d8b">The class <link target="https://w3id.org/geosrs/geosrs:AdamsProjection"><tt>geosrs:geosrs:AdamsProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsadamsworldinasquareiiprojection" obligation="normative">
+<title>Class: geosrs:AdamsWorldInASquareIIProjection</title>
+<p id="_4213cdb5-64d7-df53-7252-0a98656ad779">The class <link target="https://w3id.org/geosrs/geosrs:AdamsWorldInASquareIIProjection"><tt>geosrs:geosrs:AdamsWorldInASquareIIProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsadamsworldinasquareiprojection" obligation="normative">
+<title>Class: geosrs:AdamsWorldInASquareIProjection</title>
+<p id="_3768877f-68ff-f5b0-d93d-43698c28d62e">The class <link target="https://w3id.org/geosrs/geosrs:AdamsWorldInASquareIProjection"><tt>geosrs:geosrs:AdamsWorldInASquareIProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsairyprojection" obligation="normative">
+<title>Class: geosrs:AiryProjection</title>
+<p id="_2368bd92-31db-0bfc-37bc-c97e025a302f">The class <link target="https://w3id.org/geosrs/geosrs:AiryProjection"><tt>geosrs:geosrs:AiryProjection</tt></link> is defined by the following:</p>
+
+<p id="_e9268f7b-a705-d3db-5321-523c153579a3">An azimuthal minimum error projection for the region within the small or great circle defined by an angular distance, from the tangency point of the plane</p>
+</clause>
+
+<clause id="_class_geosrsaitoffobliqueprojection" obligation="normative">
+<title>Class: geosrs:AitoffObliqueProjection</title>
+<p id="_30722ccf-f415-5923-e34b-e19704ad7dc0">The class <link target="https://w3id.org/geosrs/geosrs:AitoffObliqueProjection"><tt>geosrs:geosrs:AitoffObliqueProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsaitoffprojection" obligation="normative">
+<title>Class: geosrs:AitoffProjection</title>
+<p id="_9a4512d8-b3d1-e6e7-e40b-5aabcaa1415e">The class <link target="https://w3id.org/geosrs/geosrs:AitoffProjection"><tt>geosrs:geosrs:AitoffProjection</tt></link> is defined by the following:</p>
+
+<p id="_4ae383df-9495-12f7-be79-04178e83ebed">A modified azimuthal projection whose graticule takes the form of an ellipse</p>
+</clause>
+
+<clause id="_class_geosrsalbersequalareaprojection" obligation="normative">
+<title>Class: geosrs:AlbersEqualAreaProjection</title>
+<p id="_3fe0df05-6a06-ae0a-fa1e-ecaf1a375c95">The class <link target="https://w3id.org/geosrs/geosrs:AlbersEqualAreaProjection"><tt>geosrs:geosrs:AlbersEqualAreaProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsamericanpolyconicprojection" obligation="normative">
+<title>Class: geosrs:AmericanPolyconicProjection</title>
+<p id="_9829a700-ecd2-04de-9468-02c2a7ef397f">The class <link target="https://w3id.org/geosrs/geosrs:AmericanPolyconicProjection"><tt>geosrs:geosrs:AmericanPolyconicProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsapianglobulariprojection" obligation="normative">
+<title>Class: geosrs:ApianGlobularIProjection</title>
+<p id="_22abcdbe-b745-7f04-d91e-029351315da6">The class <link target="https://w3id.org/geosrs/geosrs:ApianGlobularIProjection"><tt>geosrs:geosrs:ApianGlobularIProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsapianiiprojection" obligation="normative">
+<title>Class: geosrs:ApianIIProjection</title>
+<p id="_1c99181a-ab1a-63dd-9253-93fad7e51563">The class <link target="https://w3id.org/geosrs/geosrs:ApianIIProjection"><tt>geosrs:geosrs:ApianIIProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsarchaicprojection" obligation="normative">
+<title>Class: geosrs:ArchaicProjection</title>
+<p id="_fd20ebb2-a8f9-cc53-cc76-10fba65d4c04">The class <link target="https://w3id.org/geosrs/geosrs:ArchaicProjection"><tt>geosrs:geosrs:ArchaicProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsardencloseprojection" obligation="normative">
+<title>Class: geosrs:ArdenCloseProjection</title>
+<p id="_16cc5a85-5f78-313b-3746-dac7ef4dc953">The class <link target="https://w3id.org/geosrs/geosrs:ArdenCloseProjection"><tt>geosrs:geosrs:ArdenCloseProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsarmadilloprojection" obligation="normative">
+<title>Class: geosrs:ArmadilloProjection</title>
+<p id="_edfe0255-069f-ae04-baa3-143ab5d7abf5">The class <link target="https://w3id.org/geosrs/geosrs:ArmadilloProjection"><tt>geosrs:geosrs:ArmadilloProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsatlantisprojection" obligation="normative">
+<title>Class: geosrs:AtlantisProjection</title>
+<p id="_e0aefcbc-71ac-f196-1137-2188c14502c9">The class <link target="https://w3id.org/geosrs/geosrs:AtlantisProjection"><tt>geosrs:geosrs:AtlantisProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsaugustepicycloidalprojection" obligation="normative">
+<title>Class: geosrs:AugustEpicycloidalProjection</title>
+<p id="_3fca9a90-5b7c-e8f1-b2e2-3dde030a0198">The class <link target="https://w3id.org/geosrs/geosrs:AugustEpicycloidalProjection"><tt>geosrs:geosrs:AugustEpicycloidalProjection</tt></link> is defined by the following:</p>
+
+<p id="_bfa98587-29cf-e442-575a-7f36275ccda9">A projection in which every angle between two curves that crosss each other on a celestical body is preserved in the image of the projection</p>
+</clause>
+
+<clause id="_class_geosrsauthagraphprojection" obligation="normative">
+<title>Class: geosrs:AuthaGraphProjection</title>
+<p id="_5983c131-318a-b939-7fdb-5f86bc3f0fbd">The class <link target="https://w3id.org/geosrs/geosrs:AuthaGraphProjection"><tt>geosrs:geosrs:AuthaGraphProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsazimuthalequalareaprojection" obligation="normative">
+<title>Class: geosrs:AzimuthalEqualAreaProjection</title>
+<p id="_e9436c82-6a53-c135-4830-68f055f6ae0d">The class <link target="https://w3id.org/geosrs/geosrs:AzimuthalEqualAreaProjection"><tt>geosrs:geosrs:AzimuthalEqualAreaProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsazimuthalequidistantprojection" obligation="normative">
+<title>Class: geosrs:AzimuthalEquidistantProjection</title>
+<p id="_ec6dcfe9-e993-ac1b-f7ef-34645ad9673f">The class <link target="https://w3id.org/geosrs/geosrs:AzimuthalEquidistantProjection"><tt>geosrs:geosrs:AzimuthalEquidistantProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsazimuthalprojection" obligation="normative">
+<title>Class: geosrs:AzimuthalProjection</title>
+<p id="_430d1baf-2658-2d61-91b0-aa9d230ef285">The class <link target="https://w3id.org/geosrs/geosrs:AzimuthalProjection"><tt>geosrs:geosrs:AzimuthalProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsbsamcylindricalprojection" obligation="normative">
+<title>Class: geosrs:BSAMCylindricalProjection</title>
+<p id="_0cd1cae5-e8a0-c87c-699f-2a41180066bc">The class <link target="https://w3id.org/geosrs/geosrs:BSAMCylindricalProjection"><tt>geosrs:geosrs:BSAMCylindricalProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsbaconglobularprojection" obligation="normative">
+<title>Class: geosrs:BaconGlobularProjection</title>
+<p id="_d99a7d9c-ebb1-3f5f-6729-83fd3e642696">The class <link target="https://w3id.org/geosrs/geosrs:BaconGlobularProjection"><tt>geosrs:geosrs:BaconGlobularProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsbakerdinomicprojection" obligation="normative">
+<title>Class: geosrs:BakerDinomicProjection</title>
+<p id="_5c856051-98d4-1ec8-3e3d-191b7807f30c">The class <link target="https://w3id.org/geosrs/geosrs:BakerDinomicProjection"><tt>geosrs:geosrs:BakerDinomicProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsbalthasartprojection" obligation="normative">
+<title>Class: geosrs:BalthasartProjection</title>
+<p id="_854b7f0e-f08f-94a3-fa19-66cc05aeae57">The class <link target="https://w3id.org/geosrs/geosrs:BalthasartProjection"><tt>geosrs:geosrs:BalthasartProjection</tt></link> is defined by the following:</p>
+
+<p id="_e1f5bdc5-caa2-8333-b570-fc9ba96c30ca">A cylindrical equal-area projection that uses a standard parallel of phi_s=50 degrees</p>
+</clause>
+
+<clause id="_class_geosrsbaranyiiiiprojection" obligation="normative">
+<title>Class: geosrs:BaranyiIIIProjection</title>
+<p id="_a963f6fb-da0b-8366-2730-276bd4df4956">The class <link target="https://w3id.org/geosrs/geosrs:BaranyiIIIProjection"><tt>geosrs:geosrs:BaranyiIIIProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsbaranyiiiprojection" obligation="normative">
+<title>Class: geosrs:BaranyiIIProjection</title>
+<p id="_3c9d6261-e72f-18ae-956b-0f16fd20b211">The class <link target="https://w3id.org/geosrs/geosrs:BaranyiIIProjection"><tt>geosrs:geosrs:BaranyiIIProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsbaranyiiprojection" obligation="normative">
+<title>Class: geosrs:BaranyiIProjection</title>
+<p id="_839f256f-9586-8002-0b7f-b5f62a712604">The class <link target="https://w3id.org/geosrs/geosrs:BaranyiIProjection"><tt>geosrs:geosrs:BaranyiIProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsbaranyiivprojection" obligation="normative">
+<title>Class: geosrs:BaranyiIVProjection</title>
+<p id="_9a036056-a905-0fbf-6b62-860681c41be5">The class <link target="https://w3id.org/geosrs/geosrs:BaranyiIVProjection"><tt>geosrs:geosrs:BaranyiIVProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsbartholomewprojection" obligation="normative">
+<title>Class: geosrs:BartholomewProjection</title>
+<p id="_20b81451-403b-0d27-366a-642119cd80d7">The class <link target="https://w3id.org/geosrs/geosrs:BartholomewProjection"><tt>geosrs:geosrs:BartholomewProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsbehrmannprojection" obligation="normative">
+<title>Class: geosrs:BehrmannProjection</title>
+<p id="_3c9d4902-71c8-1492-09f8-17c57e966d6a">The class <link target="https://w3id.org/geosrs/geosrs:BehrmannProjection"><tt>geosrs:geosrs:BehrmannProjection</tt></link> is defined by the following:</p>
+
+<p id="_3ea8d0df-34b2-3f64-9981-dc8c38fb6ee8">A cylindrical equal-area map projection with standard parallels set at 30° north and south</p>
+</clause>
+
+<clause id="_class_geosrsberghausstarprojection" obligation="normative">
+<title>Class: geosrs:BerghausStarProjection</title>
+<p id="_b276648c-1b8e-7571-3b32-f4453a2b539a">The class <link target="https://w3id.org/geosrs/geosrs:BerghausStarProjection"><tt>geosrs:geosrs:BerghausStarProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsbertinprojection" obligation="normative">
+<title>Class: geosrs:BertinProjection</title>
+<p id="_38c1fd03-1a91-1572-0b31-10630278ce01">The class <link target="https://w3id.org/geosrs/geosrs:BertinProjection"><tt>geosrs:geosrs:BertinProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsbipolarobliqueconicconformalprojection" obligation="normative">
+<title>Class: geosrs:BipolarObliqueConicConformalProjection</title>
+<p id="_87b1e7ab-d051-7a16-f3f1-c35cc9b005e7">The class <link target="https://w3id.org/geosrs/geosrs:BipolarObliqueConicConformalProjection"><tt>geosrs:geosrs:BipolarObliqueConicConformalProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsboggseumorphicprojection" obligation="normative">
+<title>Class: geosrs:BoggsEumorphicProjection</title>
+<p id="_0826c690-c420-a6d1-8cf1-7f136e229e3d">The class <link target="https://w3id.org/geosrs/geosrs:BoggsEumorphicProjection"><tt>geosrs:geosrs:BoggsEumorphicProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsbonneprojection" obligation="normative">
+<title>Class: geosrs:BonneProjection</title>
+<p id="_6b0a89e2-4a0d-0bd5-fe57-784e40792516">The class <link target="https://w3id.org/geosrs/geosrs:BonneProjection"><tt>geosrs:geosrs:BonneProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsbottomleyprojection" obligation="normative">
+<title>Class: geosrs:BottomleyProjection</title>
+<p id="_49c79828-87e5-2254-683b-aedadb9a1168">The class <link target="https://w3id.org/geosrs/geosrs:BottomleyProjection"><tt>geosrs:geosrs:BottomleyProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsbraunperspectiveprojection" obligation="normative">
+<title>Class: geosrs:BraunPerspectiveProjection</title>
+<p id="_008e97ec-9615-7e82-4c70-f0bbfb27c4a6">The class <link target="https://w3id.org/geosrs/geosrs:BraunPerspectiveProjection"><tt>geosrs:geosrs:BraunPerspectiveProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsbraunstereographicprojection" obligation="normative">
+<title>Class: geosrs:BraunStereographicProjection</title>
+<p id="_8d4e11d9-e0d2-0800-cf26-d1bdaf03666b">The class <link target="https://w3id.org/geosrs/geosrs:BraunStereographicProjection"><tt>geosrs:geosrs:BraunStereographicProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsbreusinggeometricprojection" obligation="normative">
+<title>Class: geosrs:BreusingGeometricProjection</title>
+<p id="_c70709d3-3145-213c-08cc-10f905f3ab70">The class <link target="https://w3id.org/geosrs/geosrs:BreusingGeometricProjection"><tt>geosrs:geosrs:BreusingGeometricProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsbreusingharmonicprojection" obligation="normative">
+<title>Class: geosrs:BreusingHarmonicProjection</title>
+<p id="_563f2e04-9d35-e65a-d5ea-9551d1f84c3e">The class <link target="https://w3id.org/geosrs/geosrs:BreusingHarmonicProjection"><tt>geosrs:geosrs:BreusingHarmonicProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsbriesemeisterprojection" obligation="normative">
+<title>Class: geosrs:BriesemeisterProjection</title>
+<p id="_e3309705-b3d4-54cf-8020-71655f30d870">The class <link target="https://w3id.org/geosrs/geosrs:BriesemeisterProjection"><tt>geosrs:geosrs:BriesemeisterProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsbromleyprojection" obligation="normative">
+<title>Class: geosrs:BromleyProjection</title>
+<p id="_66eed6b1-34dd-d45b-3e47-e18614844897">The class <link target="https://w3id.org/geosrs/geosrs:BromleyProjection"><tt>geosrs:geosrs:BromleyProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrscabotprojection" obligation="normative">
+<title>Class: geosrs:CabotProjection</title>
+<p id="_6239d5ae-3690-7853-039e-56a1fe56451d">The class <link target="https://w3id.org/geosrs/geosrs:CabotProjection"><tt>geosrs:geosrs:CabotProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrscahillkeyesprojection" obligation="normative">
+<title>Class: geosrs:CahillKeyesProjection</title>
+<p id="_7fab9dd9-a45b-7c2a-9742-8abd7f7c986c">The class <link target="https://w3id.org/geosrs/geosrs:CahillKeyesProjection"><tt>geosrs:geosrs:CahillKeyesProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrscassiniprojection" obligation="normative">
+<title>Class: geosrs:CassiniProjection</title>
+<p id="_0e66b4f6-1ddb-b6a4-646e-053798308764">The class <link target="https://w3id.org/geosrs/geosrs:CassiniProjection"><tt>geosrs:geosrs:CassiniProjection</tt></link> is defined by the following:</p>
+
+<p id="_7341b90e-6b60-c8d5-17f1-6f101d79f568">A map projection first described in an approximate form by César-François Cassini de Thury in 1745</p>
+</clause>
+
+<clause id="_class_geosrscentralconicprojection" obligation="normative">
+<title>Class: geosrs:CentralConicProjection</title>
+<p id="_92a7ac3a-575a-3720-9dd9-82500ad8b767">The class <link target="https://w3id.org/geosrs/geosrs:CentralConicProjection"><tt>geosrs:geosrs:CentralConicProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrscentralcylindricalprojection" obligation="normative">
+<title>Class: geosrs:CentralCylindricalProjection</title>
+<p id="_392e4047-9c9e-4841-f5e4-e63568ee3f06">The class <link target="https://w3id.org/geosrs/geosrs:CentralCylindricalProjection"><tt>geosrs:geosrs:CentralCylindricalProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrschamberlintrimetricprojection" obligation="normative">
+<title>Class: geosrs:ChamberlinTrimetricProjection</title>
+<p id="_3ca6fad3-6707-fb95-50a2-009d95232fa1">The class <link target="https://w3id.org/geosrs/geosrs:ChamberlinTrimetricProjection"><tt>geosrs:geosrs:ChamberlinTrimetricProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsciriciprojection" obligation="normative">
+<title>Class: geosrs:CiricIProjection</title>
+<p id="_9d86e66c-ac82-0443-d10c-14a5a447718d">The class <link target="https://w3id.org/geosrs/geosrs:CiricIProjection"><tt>geosrs:geosrs:CiricIProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrscollignonbutterflyprojection" obligation="normative">
+<title>Class: geosrs:CollignonButterflyProjection</title>
+<p id="_d0accddc-2071-ca8f-9a86-ef0a54156feb">The class <link target="https://w3id.org/geosrs/geosrs:CollignonButterflyProjection"><tt>geosrs:geosrs:CollignonButterflyProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrscollignonprojection" obligation="normative">
+<title>Class: geosrs:CollignonProjection</title>
+<p id="_b1ec9be8-1c2b-2e17-f588-d8647d84cffc">The class <link target="https://w3id.org/geosrs/geosrs:CollignonProjection"><tt>geosrs:geosrs:CollignonProjection</tt></link> is defined by the following:</p>
+
+<p id="_d4d8c93e-eae3-3411-7b45-5d6252f58a15">An equal-area pseudocylindrical projection that maps the sphere onto a triangle or diamond</p>
+</clause>
+
+<clause id="_class_geosrscolombiaurbanprojection" obligation="normative">
+<title>Class: geosrs:ColombiaUrbanProjection</title>
+<p id="_22d0d335-3fa1-2941-cc5c-e359fb5a0df5">The class <link target="https://w3id.org/geosrs/geosrs:ColombiaUrbanProjection"><tt>geosrs:geosrs:ColombiaUrbanProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrscompactmillerprojection" obligation="normative">
+<title>Class: geosrs:CompactMillerProjection</title>
+<p id="_da32ef8f-3b26-f8df-f52b-4b0b575d1002">The class <link target="https://w3id.org/geosrs/geosrs:CompactMillerProjection"><tt>geosrs:geosrs:CompactMillerProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrscompromiseprojection" obligation="normative">
+<title>Class: geosrs:CompromiseProjection</title>
+<p id="_719b960f-278b-cf4f-59d6-2e8b13e9371c">The class <link target="https://w3id.org/geosrs/geosrs:CompromiseProjection"><tt>geosrs:geosrs:CompromiseProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsconformalprojection" obligation="normative">
+<title>Class: geosrs:ConformalProjection</title>
+<p id="_91044139-cb89-d47c-a717-0025e5545587">The class <link target="https://w3id.org/geosrs/geosrs:ConformalProjection"><tt>geosrs:geosrs:ConformalProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsconicalprojection" obligation="normative">
+<title>Class: geosrs:ConicalProjection</title>
+<p id="_e0bbaa75-cf52-369d-942d-5e1242f15255">The class <link target="https://w3id.org/geosrs/geosrs:ConicalProjection"><tt>geosrs:geosrs:ConicalProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrscordiformprojection" obligation="normative">
+<title>Class: geosrs:CordiformProjection</title>
+<p id="_aa9ad900-de28-b2d3-bf47-d711e20a5ead">The class <link target="https://w3id.org/geosrs/geosrs:CordiformProjection"><tt>geosrs:geosrs:CordiformProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrscoxconformalprojection" obligation="normative">
+<title>Class: geosrs:CoxConformalProjection</title>
+<p id="_48296ebe-7d12-15f9-c0aa-cab2367caf77">The class <link target="https://w3id.org/geosrs/geosrs:CoxConformalProjection"><tt>geosrs:geosrs:CoxConformalProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrscraigretroazimuthalprojection" obligation="normative">
+<title>Class: geosrs:CraigRetroazimuthalProjection</title>
+<p id="_ca8115e0-9b61-5792-05a7-fbfac95f184c">The class <link target="https://w3id.org/geosrs/geosrs:CraigRetroazimuthalProjection"><tt>geosrs:geosrs:CraigRetroazimuthalProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrscrasterparabolicprojection" obligation="normative">
+<title>Class: geosrs:CrasterParabolicProjection</title>
+<p id="_ec7ec07f-33c4-ad2c-2212-cb6feeca7f28">The class <link target="https://w3id.org/geosrs/geosrs:CrasterParabolicProjection"><tt>geosrs:geosrs:CrasterParabolicProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrscupolaprojection" obligation="normative">
+<title>Class: geosrs:CupolaProjection</title>
+<p id="_345d5976-45fd-c5aa-fbb8-168a60bc1524">The class <link target="https://w3id.org/geosrs/geosrs:CupolaProjection"><tt>geosrs:geosrs:CupolaProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrscylindricalequalarea" obligation="normative">
+<title>Class: geosrs:CylindricalEqualArea</title>
+<p id="_f59290ab-f18f-1a33-68ca-a63fe309f0ec">The class <link target="https://w3id.org/geosrs/geosrs:CylindricalEqualArea"><tt>geosrs:geosrs:CylindricalEqualArea</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrscylindricalprojection" obligation="normative">
+<title>Class: geosrs:CylindricalProjection</title>
+<p id="_e16d2532-611a-e373-4806-2aba2650804f">The class <link target="https://w3id.org/geosrs/geosrs:CylindricalProjection"><tt>geosrs:geosrs:CylindricalProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrscylindricalstereographicprojection" obligation="normative">
+<title>Class: geosrs:CylindricalStereographicProjection</title>
+<p id="_c498feda-6ed3-39a5-1419-008dc61c0506">The class <link target="https://w3id.org/geosrs/geosrs:CylindricalStereographicProjection"><tt>geosrs:geosrs:CylindricalStereographicProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsdeakinminimumerrorprojection" obligation="normative">
+<title>Class: geosrs:DeakinMinimumErrorProjection</title>
+<p id="_00cb713e-cbcc-fb9c-87c9-ee5b5660e007">The class <link target="https://w3id.org/geosrs/geosrs:DeakinMinimumErrorProjection"><tt>geosrs:geosrs:DeakinMinimumErrorProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsdedistortprojection" obligation="normative">
+<title>Class: geosrs:DedistortProjection</title>
+<p id="_3e3e3704-78d0-910d-7cc9-b2d3a0bf34b7">The class <link target="https://w3id.org/geosrs/geosrs:DedistortProjection"><tt>geosrs:geosrs:DedistortProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsdenoyersemiellipticalprojection" obligation="normative">
+<title>Class: geosrs:DenoyerSemiEllipticalProjection</title>
+<p id="_7614c12d-b663-d37e-1c1b-a50494b88814">The class <link target="https://w3id.org/geosrs/geosrs:DenoyerSemiEllipticalProjection"><tt>geosrs:geosrs:DenoyerSemiEllipticalProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsdietrichkitadaprojection" obligation="normative">
+<title>Class: geosrs:DietrichKitadaProjection</title>
+<p id="_c444069d-ed14-dfb5-e42d-65f1b0139415">The class <link target="https://w3id.org/geosrs/geosrs:DietrichKitadaProjection"><tt>geosrs:geosrs:DietrichKitadaProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsdodecahedralprojection" obligation="normative">
+<title>Class: geosrs:DodecahedralProjection</title>
+<p id="_9abae370-a66c-dda3-0cbc-e3e5adf350cc">The class <link target="https://w3id.org/geosrs/geosrs:DodecahedralProjection"><tt>geosrs:geosrs:DodecahedralProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsdymaxionprojection" obligation="normative">
+<title>Class: geosrs:DymaxionProjection</title>
+<p id="_a5c15b9f-36b9-f73c-21b3-b26544bccf1f">The class <link target="https://w3id.org/geosrs/geosrs:DymaxionProjection"><tt>geosrs:geosrs:DymaxionProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrseckert1projection" obligation="normative">
+<title>Class: geosrs:Eckert1Projection</title>
+<p id="_b4d3b86b-c707-3f44-f6ab-0006ba0abe6b">The class <link target="https://w3id.org/geosrs/geosrs:Eckert1Projection"><tt>geosrs:geosrs:Eckert1Projection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrseckert2projection" obligation="normative">
+<title>Class: geosrs:Eckert2Projection</title>
+<p id="_79a1b615-f769-fa5b-c05e-65c22ee15150">The class <link target="https://w3id.org/geosrs/geosrs:Eckert2Projection"><tt>geosrs:geosrs:Eckert2Projection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrseckert3projection" obligation="normative">
+<title>Class: geosrs:Eckert3Projection</title>
+<p id="_de55f248-ef5f-1228-d71b-826f705f914c">The class <link target="https://w3id.org/geosrs/geosrs:Eckert3Projection"><tt>geosrs:geosrs:Eckert3Projection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrseckert4projection" obligation="normative">
+<title>Class: geosrs:Eckert4Projection</title>
+<p id="_de3a1fc4-708b-308e-5111-8ed629fce9e4">The class <link target="https://w3id.org/geosrs/geosrs:Eckert4Projection"><tt>geosrs:geosrs:Eckert4Projection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrseckert5projection" obligation="normative">
+<title>Class: geosrs:Eckert5Projection</title>
+<p id="_f6e7848f-cd5f-5f44-899c-288185ef6291">The class <link target="https://w3id.org/geosrs/geosrs:Eckert5Projection"><tt>geosrs:geosrs:Eckert5Projection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrseckert6projection" obligation="normative">
+<title>Class: geosrs:Eckert6Projection</title>
+<p id="_6fa474f6-9e43-1edd-8f24-491f0fa395ad">The class <link target="https://w3id.org/geosrs/geosrs:Eckert6Projection"><tt>geosrs:geosrs:Eckert6Projection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrseisenlohrprojection" obligation="normative">
+<title>Class: geosrs:EisenlohrProjection</title>
+<p id="_6a32c0ca-9711-8b6b-f236-b0b049f09306">The class <link target="https://w3id.org/geosrs/geosrs:EisenlohrProjection"><tt>geosrs:geosrs:EisenlohrProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsequalareaprojection" obligation="normative">
+<title>Class: geosrs:EqualAreaProjection</title>
+<p id="_d7934e91-ac19-9bb0-6153-5962ba5d940d">The class <link target="https://w3id.org/geosrs/geosrs:EqualAreaProjection"><tt>geosrs:geosrs:EqualAreaProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsequalearthprojection" obligation="normative">
+<title>Class: geosrs:EqualEarthProjection</title>
+<p id="_98dea9c8-f62a-862b-97aa-d747f67144f3">The class <link target="https://w3id.org/geosrs/geosrs:EqualEarthProjection"><tt>geosrs:geosrs:EqualEarthProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsequallyspacedparallelsprojection" obligation="normative">
+<title>Class: geosrs:EquallySpacedParallelsProjection</title>
+<p id="_abd6b39d-1b36-48e0-5714-d37753a88383">The class <link target="https://w3id.org/geosrs/geosrs:EquallySpacedParallelsProjection"><tt>geosrs:geosrs:EquallySpacedParallelsProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsequidistantconicprojection" obligation="normative">
+<title>Class: geosrs:EquidistantConicProjection</title>
+<p id="_888917d8-178a-0956-7ad4-3e02661967ad">The class <link target="https://w3id.org/geosrs/geosrs:EquidistantConicProjection"><tt>geosrs:geosrs:EquidistantConicProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsequidistantcylindricalprojection" obligation="normative">
+<title>Class: geosrs:EquidistantCylindricalProjection</title>
+<p id="_f55844ee-886a-c9b8-0e54-fa3a7e1ea33e">The class <link target="https://w3id.org/geosrs/geosrs:EquidistantCylindricalProjection"><tt>geosrs:geosrs:EquidistantCylindricalProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsequidistantprojection" obligation="normative">
+<title>Class: geosrs:EquidistantProjection</title>
+<p id="_45dbd51d-bf1b-7fb8-c704-11502d81e4ad">The class <link target="https://w3id.org/geosrs/geosrs:EquidistantProjection"><tt>geosrs:geosrs:EquidistantProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsequirectangularprojection" obligation="normative">
+<title>Class: geosrs:EquirectangularProjection</title>
+<p id="_fb3959d9-bebf-64e8-c3f6-2ab356c3786e">The class <link target="https://w3id.org/geosrs/geosrs:EquirectangularProjection"><tt>geosrs:geosrs:EquirectangularProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsfaheyprojection" obligation="normative">
+<title>Class: geosrs:FaheyProjection</title>
+<p id="_9239bea5-722f-c36b-afd0-1a420376ba05">The class <link target="https://w3id.org/geosrs/geosrs:FaheyProjection"><tt>geosrs:geosrs:FaheyProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsfairgrieveprojection" obligation="normative">
+<title>Class: geosrs:FairgrieveProjection</title>
+<p id="_dd5e8a7a-d6c7-09e7-f621-92ac410e8004">The class <link target="https://w3id.org/geosrs/geosrs:FairgrieveProjection"><tt>geosrs:geosrs:FairgrieveProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsfoucautprojection" obligation="normative">
+<title>Class: geosrs:FoucautProjection</title>
+<p id="_48c8d13e-45c3-bb66-f6a9-e9f96a33f3d5">The class <link target="https://w3id.org/geosrs/geosrs:FoucautProjection"><tt>geosrs:geosrs:FoucautProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsfoucautsinusoidalprojection" obligation="normative">
+<title>Class: geosrs:FoucautSinusoidalProjection</title>
+<p id="_72530d2c-47a1-86ba-4f36-ea3d3c3d777c">The class <link target="https://w3id.org/geosrs/geosrs:FoucautSinusoidalProjection"><tt>geosrs:geosrs:FoucautSinusoidalProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsfournierglobulariprojection" obligation="normative">
+<title>Class: geosrs:FournierGlobularIProjection</title>
+<p id="_e56f30ba-0288-4075-369f-a6b2ff1e8eda">The class <link target="https://w3id.org/geosrs/geosrs:FournierGlobularIProjection"><tt>geosrs:geosrs:FournierGlobularIProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsfournieriiprojection" obligation="normative">
+<title>Class: geosrs:FournierIIProjection</title>
+<p id="_70447c26-a7bb-8f3a-0688-057bc753337d">The class <link target="https://w3id.org/geosrs/geosrs:FournierIIProjection"><tt>geosrs:geosrs:FournierIIProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsfranculaiiiprojection" obligation="normative">
+<title>Class: geosrs:FranculaIIIProjection</title>
+<p id="_3df7c4b1-5f90-ef9d-5f6c-b118a2624dea">The class <link target="https://w3id.org/geosrs/geosrs:FranculaIIIProjection"><tt>geosrs:geosrs:FranculaIIIProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsfranculaivprojection" obligation="normative">
+<title>Class: geosrs:FranculaIVProjection</title>
+<p id="_b78a4621-5daa-88a3-1cf5-b849841fddff">The class <link target="https://w3id.org/geosrs/geosrs:FranculaIVProjection"><tt>geosrs:geosrs:FranculaIVProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsfranculaixprojection" obligation="normative">
+<title>Class: geosrs:FranculaIXProjection</title>
+<p id="_1af4ee00-666f-6a18-b624-3a9fd9425fa3">The class <link target="https://w3id.org/geosrs/geosrs:FranculaIXProjection"><tt>geosrs:geosrs:FranculaIXProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsfranculaviiiprojection" obligation="normative">
+<title>Class: geosrs:FranculaVIIIProjection</title>
+<p id="_ee292b35-d798-6ee3-6bf1-e036903cd658">The class <link target="https://w3id.org/geosrs/geosrs:FranculaVIIIProjection"><tt>geosrs:geosrs:FranculaVIIIProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsfranculavprojection" obligation="normative">
+<title>Class: geosrs:FranculaVProjection</title>
+<p id="_a698a57a-76f0-728f-bb5c-975355567ebd">The class <link target="https://w3id.org/geosrs/geosrs:FranculaVProjection"><tt>geosrs:geosrs:FranculaVProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsfranculaxiiiprojection" obligation="normative">
+<title>Class: geosrs:FranculaXIIIProjection</title>
+<p id="_78efac1f-490c-9911-1b50-f5e252b2667c">The class <link target="https://w3id.org/geosrs/geosrs:FranculaXIIIProjection"><tt>geosrs:geosrs:FranculaXIIIProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsfranculaxiiprojection" obligation="normative">
+<title>Class: geosrs:FranculaXIIProjection</title>
+<p id="_c77a31aa-56df-aea6-1f44-3ed59dc7bac2">The class <link target="https://w3id.org/geosrs/geosrs:FranculaXIIProjection"><tt>geosrs:geosrs:FranculaXIIProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsfranculaxivprojection" obligation="normative">
+<title>Class: geosrs:FranculaXIVProjection</title>
+<p id="_59070ca8-2cad-00d7-3018-2abffacf4b7a">The class <link target="https://w3id.org/geosrs/geosrs:FranculaXIVProjection"><tt>geosrs:geosrs:FranculaXIVProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsgs50projection" obligation="normative">
+<title>Class: geosrs:GS50Projection</title>
+<p id="_407cc8fc-1e46-7369-6c08-9b11848b36f3">The class <link target="https://w3id.org/geosrs/geosrs:GS50Projection"><tt>geosrs:geosrs:GS50Projection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsgallisographicprojection" obligation="normative">
+<title>Class: geosrs:GallIsographicProjection</title>
+<p id="_299bd0c8-988b-c333-074f-4a3c2b32b92e">The class <link target="https://w3id.org/geosrs/geosrs:GallIsographicProjection"><tt>geosrs:geosrs:GallIsographicProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsgallpetersprojection" obligation="normative">
+<title>Class: geosrs:GallPetersProjection</title>
+<p id="_f317781b-c57b-dd4c-6a7f-66757f4eb4ef">The class <link target="https://w3id.org/geosrs/geosrs:GallPetersProjection"><tt>geosrs:geosrs:GallPetersProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsgallstereographicprojection" obligation="normative">
+<title>Class: geosrs:GallStereographicProjection</title>
+<p id="_780b5ca1-99ba-b6b0-ce59-960be25cac4c">The class <link target="https://w3id.org/geosrs/geosrs:GallStereographicProjection"><tt>geosrs:geosrs:GallStereographicProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsgausskruegerprojection" obligation="normative">
+<title>Class: geosrs:GaussKruegerProjection</title>
+<p id="_89235874-5cb5-d6c4-5db1-f120023a9784">The class <link target="https://w3id.org/geosrs/geosrs:GaussKruegerProjection"><tt>geosrs:geosrs:GaussKruegerProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsgeneralverticalperspectiveprojection" obligation="normative">
+<title>Class: geosrs:GeneralVerticalPerspectiveProjection</title>
+<p id="_4c101301-7768-aff8-ff2c-f8e225bf01dd">The class <link target="https://w3id.org/geosrs/geosrs:GeneralVerticalPerspectiveProjection"><tt>geosrs:geosrs:GeneralVerticalPerspectiveProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsgilberttwoworldperspectiveprojection" obligation="normative">
+<title>Class: geosrs:GilbertTwoWorldPerspectiveProjection</title>
+<p id="_0882aef7-5323-69dc-3160-55fd4709196f">The class <link target="https://w3id.org/geosrs/geosrs:GilbertTwoWorldPerspectiveProjection"><tt>geosrs:geosrs:GilbertTwoWorldPerspectiveProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsgingeryprojection" obligation="normative">
+<title>Class: geosrs:GingeryProjection</title>
+<p id="_377b75f3-7eec-521e-9454-a498241fe3ac">The class <link target="https://w3id.org/geosrs/geosrs:GingeryProjection"><tt>geosrs:geosrs:GingeryProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsginzburgiiprojection" obligation="normative">
+<title>Class: geosrs:GinzburgIIProjection</title>
+<p id="_b5f77292-9016-9f8a-8ad5-5d120a54aa93">The class <link target="https://w3id.org/geosrs/geosrs:GinzburgIIProjection"><tt>geosrs:geosrs:GinzburgIIProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsginzburgiprojection" obligation="normative">
+<title>Class: geosrs:GinzburgIProjection</title>
+<p id="_bcdbfdd4-b37a-304d-4243-f6e7d0ee1739">The class <link target="https://w3id.org/geosrs/geosrs:GinzburgIProjection"><tt>geosrs:geosrs:GinzburgIProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsginzburgivprojection" obligation="normative">
+<title>Class: geosrs:GinzburgIVProjection</title>
+<p id="_ba8ac37f-51a0-d271-f2e8-5436d24e1163">The class <link target="https://w3id.org/geosrs/geosrs:GinzburgIVProjection"><tt>geosrs:geosrs:GinzburgIVProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsginzburgixprojection" obligation="normative">
+<title>Class: geosrs:GinzburgIXProjection</title>
+<p id="_b9f50cd0-4885-7a93-e33e-b94c39a6163c">The class <link target="https://w3id.org/geosrs/geosrs:GinzburgIXProjection"><tt>geosrs:geosrs:GinzburgIXProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsginzburgviiiprojection" obligation="normative">
+<title>Class: geosrs:GinzburgVIIIProjection</title>
+<p id="_9fd5ad8a-4d81-da8b-d7e3-bc3e225eb30b">The class <link target="https://w3id.org/geosrs/geosrs:GinzburgVIIIProjection"><tt>geosrs:geosrs:GinzburgVIIIProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsginzburgviprojection" obligation="normative">
+<title>Class: geosrs:GinzburgVIProjection</title>
+<p id="_670ad15b-7d77-41b8-1121-a5572f9a7b3b">The class <link target="https://w3id.org/geosrs/geosrs:GinzburgVIProjection"><tt>geosrs:geosrs:GinzburgVIProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsginzburgvprojection" obligation="normative">
+<title>Class: geosrs:GinzburgVProjection</title>
+<p id="_47d54cac-ed19-4190-ac0c-26691ba5670d">The class <link target="https://w3id.org/geosrs/geosrs:GinzburgVProjection"><tt>geosrs:geosrs:GinzburgVProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsglobularprojection" obligation="normative">
+<title>Class: geosrs:GlobularProjection</title>
+<p id="_aae22b03-838c-9be9-eeff-c4159d056f12">The class <link target="https://w3id.org/geosrs/geosrs:GlobularProjection"><tt>geosrs:geosrs:GlobularProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsgnomonicbutterflyprojection" obligation="normative">
+<title>Class: geosrs:GnomonicButterflyProjection</title>
+<p id="_cfd713d1-3bab-5d5e-4c76-6b48709f4a9a">The class <link target="https://w3id.org/geosrs/geosrs:GnomonicButterflyProjection"><tt>geosrs:geosrs:GnomonicButterflyProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsgnomoniccubedsphereprojection" obligation="normative">
+<title>Class: geosrs:GnomonicCubedSphereProjection</title>
+<p id="_42e50ed8-18eb-06fe-62c5-cbce44308564">The class <link target="https://w3id.org/geosrs/geosrs:GnomonicCubedSphereProjection"><tt>geosrs:geosrs:GnomonicCubedSphereProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsgnomonicicosahedronprojection" obligation="normative">
+<title>Class: geosrs:GnomonicIcosahedronProjection</title>
+<p id="_cebffc8e-fba0-3653-9963-092cc29a7899">The class <link target="https://w3id.org/geosrs/geosrs:GnomonicIcosahedronProjection"><tt>geosrs:geosrs:GnomonicIcosahedronProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsgnomonicprojection" obligation="normative">
+<title>Class: geosrs:GnomonicProjection</title>
+<p id="_aee62957-5d54-a3fd-c12f-badf5d119fc3">The class <link target="https://w3id.org/geosrs/geosrs:GnomonicProjection"><tt>geosrs:geosrs:GnomonicProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsgoodehomolosineprojection" obligation="normative">
+<title>Class: geosrs:GoodeHomolosineProjection</title>
+<p id="_2edf3933-aff9-a8b8-2cc0-38b7f1927cc9">The class <link target="https://w3id.org/geosrs/geosrs:GoodeHomolosineProjection"><tt>geosrs:geosrs:GoodeHomolosineProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsgottwagnerprojection" obligation="normative">
+<title>Class: geosrs:GottWagnerProjection</title>
+<p id="_6a3cce09-0658-4e7b-b371-56bb294b05f3">The class <link target="https://w3id.org/geosrs/geosrs:GottWagnerProjection"><tt>geosrs:geosrs:GottWagnerProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsgringortenprojection" obligation="normative">
+<title>Class: geosrs:GringortenProjection</title>
+<p id="_cab354ab-8e12-d761-700b-09794c2f5819">The class <link target="https://w3id.org/geosrs/geosrs:GringortenProjection"><tt>geosrs:geosrs:GringortenProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsgringortenquincuncialprojection" obligation="normative">
+<title>Class: geosrs:GringortenQuincuncialProjection</title>
+<p id="_89624b3b-5d82-807c-2214-c4ac30fc230e">The class <link target="https://w3id.org/geosrs/geosrs:GringortenQuincuncialProjection"><tt>geosrs:geosrs:GringortenQuincuncialProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsguyouprojection" obligation="normative">
+<title>Class: geosrs:GuyouProjection</title>
+<p id="_418bac65-14c1-2bb8-2221-0d0c51cb330c">The class <link target="https://w3id.org/geosrs/geosrs:GuyouProjection"><tt>geosrs:geosrs:GuyouProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrshealpixprojection" obligation="normative">
+<title>Class: geosrs:HEALPixProjection</title>
+<p id="_18c45541-fa0c-aaf9-9386-828cb57d976f">The class <link target="https://w3id.org/geosrs/geosrs:HEALPixProjection"><tt>geosrs:geosrs:HEALPixProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrshammerprojection" obligation="normative">
+<title>Class: geosrs:HammerProjection</title>
+<p id="_44cbe6ff-7a90-c1e4-372c-3b4851942d8d">The class <link target="https://w3id.org/geosrs/geosrs:HammerProjection"><tt>geosrs:geosrs:HammerProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrshammerretroazimuthalprojection" obligation="normative">
+<title>Class: geosrs:HammerRetroazimuthalProjection</title>
+<p id="_5eb24025-a38e-7e62-6cfc-890d861dfa08">The class <link target="https://w3id.org/geosrs/geosrs:HammerRetroazimuthalProjection"><tt>geosrs:geosrs:HammerRetroazimuthalProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrshamusoidalprojection" obligation="normative">
+<title>Class: geosrs:HamusoidalProjection</title>
+<p id="_cf247b77-eab6-28e4-7a2a-1ba4fd88a140">The class <link target="https://w3id.org/geosrs/geosrs:HamusoidalProjection"><tt>geosrs:geosrs:HamusoidalProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrshatanoasymmetricalequalareaprojection" obligation="normative">
+<title>Class: geosrs:HatanoAsymmetricalEqualAreaProjection</title>
+<p id="_5efbf866-c2e8-daaf-50bc-c58e2c162bcb">The class <link target="https://w3id.org/geosrs/geosrs:HatanoAsymmetricalEqualAreaProjection"><tt>geosrs:geosrs:HatanoAsymmetricalEqualAreaProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsherschelconformalconicprojection" obligation="normative">
+<title>Class: geosrs:HerschelConformalConicProjection</title>
+<p id="_cd896654-5581-5967-297b-a8a6b38e98fd">The class <link target="https://w3id.org/geosrs/geosrs:HerschelConformalConicProjection"><tt>geosrs:geosrs:HerschelConformalConicProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrshilleucyclicprojection" obligation="normative">
+<title>Class: geosrs:HillEucyclicProjection</title>
+<p id="_c9ce7bae-c021-45ec-ae86-af6168767a75">The class <link target="https://w3id.org/geosrs/geosrs:HillEucyclicProjection"><tt>geosrs:geosrs:HillEucyclicProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrshobodyerprojection" obligation="normative">
+<title>Class: geosrs:HoboDyerProjection</title>
+<p id="_4f877968-d551-1fd5-6d31-fcc83baf86b6">The class <link target="https://w3id.org/geosrs/geosrs:HoboDyerProjection"><tt>geosrs:geosrs:HoboDyerProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrshufnageliiiprojection" obligation="normative">
+<title>Class: geosrs:HufnagelIIIProjection</title>
+<p id="_cf66382e-f9e1-3e62-2fe8-4695dbd3b10e">The class <link target="https://w3id.org/geosrs/geosrs:HufnagelIIIProjection"><tt>geosrs:geosrs:HufnagelIIIProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrshufnageliiprojection" obligation="normative">
+<title>Class: geosrs:HufnagelIIProjection</title>
+<p id="_ebacbd03-0c5c-5f0a-bfd4-ae686481d187">The class <link target="https://w3id.org/geosrs/geosrs:HufnagelIIProjection"><tt>geosrs:geosrs:HufnagelIIProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrshufnageliprojection" obligation="normative">
+<title>Class: geosrs:HufnagelIProjection</title>
+<p id="_3233c4a5-462d-72ff-4282-efa3ee4acc2b">The class <link target="https://w3id.org/geosrs/geosrs:HufnagelIProjection"><tt>geosrs:geosrs:HufnagelIProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrshufnagelivprojection" obligation="normative">
+<title>Class: geosrs:HufnagelIVProjection</title>
+<p id="_5c2dacd8-7d2b-1006-826f-e665a09e96dc">The class <link target="https://w3id.org/geosrs/geosrs:HufnagelIVProjection"><tt>geosrs:geosrs:HufnagelIVProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrshufnagelixprojection" obligation="normative">
+<title>Class: geosrs:HufnagelIXProjection</title>
+<p id="_f9c2f5ce-e857-6ecd-3712-418748984fdd">The class <link target="https://w3id.org/geosrs/geosrs:HufnagelIXProjection"><tt>geosrs:geosrs:HufnagelIXProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrshufnagelprojection" obligation="normative">
+<title>Class: geosrs:HufnagelProjection</title>
+<p id="_47241fde-8b6d-cede-44df-a5d8aafd03ca">The class <link target="https://w3id.org/geosrs/geosrs:HufnagelProjection"><tt>geosrs:geosrs:HufnagelProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrshufnagelviiiprojection" obligation="normative">
+<title>Class: geosrs:HufnagelVIIIProjection</title>
+<p id="_d20105bd-01a6-91f8-8ca5-83bb5aaf83c5">The class <link target="https://w3id.org/geosrs/geosrs:HufnagelVIIIProjection"><tt>geosrs:geosrs:HufnagelVIIIProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrshufnagelviiprojection" obligation="normative">
+<title>Class: geosrs:HufnagelVIIProjection</title>
+<p id="_3347e208-bfed-dfac-25a1-081c8cc37d38">The class <link target="https://w3id.org/geosrs/geosrs:HufnagelVIIProjection"><tt>geosrs:geosrs:HufnagelVIIProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrshufnagelviprojection" obligation="normative">
+<title>Class: geosrs:HufnagelVIProjection</title>
+<p id="_77df550f-6e4c-6088-35d2-c492677b49a0">The class <link target="https://w3id.org/geosrs/geosrs:HufnagelVIProjection"><tt>geosrs:geosrs:HufnagelVIProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrshufnagelvprojection" obligation="normative">
+<title>Class: geosrs:HufnagelVProjection</title>
+<p id="_ebdb1387-a60a-9270-3ea7-0f95876974e7">The class <link target="https://w3id.org/geosrs/geosrs:HufnagelVProjection"><tt>geosrs:geosrs:HufnagelVProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrshufnagelxiiprojection" obligation="normative">
+<title>Class: geosrs:HufnagelXIIProjection</title>
+<p id="_fac486b6-ccf1-02f8-6b38-463ce746e7cd">The class <link target="https://w3id.org/geosrs/geosrs:HufnagelXIIProjection"><tt>geosrs:geosrs:HufnagelXIIProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrshufnagelxiprojection" obligation="normative">
+<title>Class: geosrs:HufnagelXIProjection</title>
+<p id="_d97c0120-92ae-094c-6c78-75e7bc5f3ded">The class <link target="https://w3id.org/geosrs/geosrs:HufnagelXIProjection"><tt>geosrs:geosrs:HufnagelXIProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrshufnagelxprojection" obligation="normative">
+<title>Class: geosrs:HufnagelXProjection</title>
+<p id="_cad002a1-1ad4-8567-8237-f047ae51e941">The class <link target="https://w3id.org/geosrs/geosrs:HufnagelXProjection"><tt>geosrs:geosrs:HufnagelXProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsicosahedralprojection" obligation="normative">
+<title>Class: geosrs:IcosahedralProjection</title>
+<p id="_0a7a3b2c-98a8-5c64-8fa0-e1f089372320">The class <link target="https://w3id.org/geosrs/geosrs:IcosahedralProjection"><tt>geosrs:geosrs:IcosahedralProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsinterruptedgoodehomolosineoceanicviewprojection" obligation="normative">
+<title>Class: geosrs:InterruptedGoodeHomolosineOceanicViewProjection</title>
+<p id="_ee097686-5776-cd5a-1f14-47a1b02332c5">The class <link target="https://w3id.org/geosrs/geosrs:InterruptedGoodeHomolosineOceanicViewProjection"><tt>geosrs:geosrs:InterruptedGoodeHomolosineOceanicViewProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsinterruptedgoodehomolosineprojection" obligation="normative">
+<title>Class: geosrs:InterruptedGoodeHomolosineProjection</title>
+<p id="_ff36f910-a183-ea5b-8b40-af7c626b2ef3">The class <link target="https://w3id.org/geosrs/geosrs:InterruptedGoodeHomolosineProjection"><tt>geosrs:geosrs:InterruptedGoodeHomolosineProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsinterruptedquarticauthalicprojection" obligation="normative">
+<title>Class: geosrs:InterruptedQuarticAuthalicProjection</title>
+<p id="_37bf63aa-b645-54e3-5f3f-e4f117022bd6">The class <link target="https://w3id.org/geosrs/geosrs:InterruptedQuarticAuthalicProjection"><tt>geosrs:geosrs:InterruptedQuarticAuthalicProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsjamesazimuthalprojection" obligation="normative">
+<title>Class: geosrs:JamesAzimuthalProjection</title>
+<p id="_1bcbc15b-54d2-df30-e13c-e6d5a784eb2a">The class <link target="https://w3id.org/geosrs/geosrs:JamesAzimuthalProjection"><tt>geosrs:geosrs:JamesAzimuthalProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrskamenetskiyiprojection" obligation="normative">
+<title>Class: geosrs:KamenetskiyIProjection</title>
+<p id="_d7ddc3f9-a56f-20b7-0a6f-101eaa02e161">The class <link target="https://w3id.org/geosrs/geosrs:KamenetskiyIProjection"><tt>geosrs:geosrs:KamenetskiyIProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrskarchenkoshabanovaprojection" obligation="normative">
+<title>Class: geosrs:KarchenkoShabanovaProjection</title>
+<p id="_70b50cb4-74cd-a7ae-70b6-e0ba4c3c60e0">The class <link target="https://w3id.org/geosrs/geosrs:KarchenkoShabanovaProjection"><tt>geosrs:geosrs:KarchenkoShabanovaProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrskavrayskiy7projection" obligation="normative">
+<title>Class: geosrs:Kavrayskiy7Projection</title>
+<p id="_f1ca91f7-7e81-6864-7700-824c6e4a1793">The class <link target="https://w3id.org/geosrs/geosrs:Kavrayskiy7Projection"><tt>geosrs:geosrs:Kavrayskiy7Projection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrskissprojection" obligation="normative">
+<title>Class: geosrs:KissProjection</title>
+<p id="_faa334c7-59e3-7269-96ab-40f672490c34">The class <link target="https://w3id.org/geosrs/geosrs:KissProjection"><tt>geosrs:geosrs:KissProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrskrovak" obligation="normative">
+<title>Class: geosrs:Krovak</title>
+<p id="_7b0afd5e-40d9-0a0b-5a51-eba0e606fb82">The class <link target="https://w3id.org/geosrs/geosrs:Krovak"><tt>geosrs:geosrs:Krovak</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrslahireprojection" obligation="normative">
+<title>Class: geosrs:LaHireProjection</title>
+<p id="_756fe483-d1ea-8aaf-3d99-12dff0655982">The class <link target="https://w3id.org/geosrs/geosrs:LaHireProjection"><tt>geosrs:geosrs:LaHireProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrslabordeprojection" obligation="normative">
+<title>Class: geosrs:LabordeProjection</title>
+<p id="_ff866bfb-6b29-9416-e424-add962d3832b">The class <link target="https://w3id.org/geosrs/geosrs:LabordeProjection"><tt>geosrs:geosrs:LabordeProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrslagrangeprojection" obligation="normative">
+<title>Class: geosrs:LagrangeProjection</title>
+<p id="_dcb61ee3-7312-f68a-3e72-abf6e031b6da">The class <link target="https://w3id.org/geosrs/geosrs:LagrangeProjection"><tt>geosrs:geosrs:LagrangeProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrslambertazimuthalequalarea" obligation="normative">
+<title>Class: geosrs:LambertAzimuthalEqualArea</title>
+<p id="_8988e3e5-8e7d-c33f-3b35-de1021e9dbc9">The class <link target="https://w3id.org/geosrs/geosrs:LambertAzimuthalEqualArea"><tt>geosrs:geosrs:LambertAzimuthalEqualArea</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrslambertconformalconicprojection" obligation="normative">
+<title>Class: geosrs:LambertConformalConicProjection</title>
+<p id="_e867e9a4-fe47-2379-32a2-2666cf3fc608">The class <link target="https://w3id.org/geosrs/geosrs:LambertConformalConicProjection"><tt>geosrs:geosrs:LambertConformalConicProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrslambertcylindricalequalareaprojection" obligation="normative">
+<title>Class: geosrs:LambertCylindricalEqualAreaProjection</title>
+<p id="_0c8253e3-6876-dc99-82fb-ad2f67edae65">The class <link target="https://w3id.org/geosrs/geosrs:LambertCylindricalEqualAreaProjection"><tt>geosrs:geosrs:LambertCylindricalEqualAreaProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrslarriveeprojection" obligation="normative">
+<title>Class: geosrs:LarriveeProjection</title>
+<p id="_967027f8-b15e-3b2b-a64c-dcbc79bb97d5">The class <link target="https://w3id.org/geosrs/geosrs:LarriveeProjection"><tt>geosrs:geosrs:LarriveeProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrslaskowskiprojection" obligation="normative">
+<title>Class: geosrs:LaskowskiProjection</title>
+<p id="_eda17bd9-90ea-3bc0-c201-3ad03336b853">The class <link target="https://w3id.org/geosrs/geosrs:LaskowskiProjection"><tt>geosrs:geosrs:LaskowskiProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrslatlonprojection" obligation="normative">
+<title>Class: geosrs:LatLonProjection</title>
+<p id="_4ac09684-041d-159a-ab32-fb23ae0c5d69">The class <link target="https://w3id.org/geosrs/geosrs:LatLonProjection"><tt>geosrs:geosrs:LatLonProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsleeprojection" obligation="normative">
+<title>Class: geosrs:LeeProjection</title>
+<p id="_5a849e8a-2f3c-faf7-e11a-7e652c86b54b">The class <link target="https://w3id.org/geosrs/geosrs:LeeProjection"><tt>geosrs:geosrs:LeeProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrslenticularprojection" obligation="normative">
+<title>Class: geosrs:LenticularProjection</title>
+<p id="_6a51c40d-130f-96db-bbc9-b1cbd528c093">The class <link target="https://w3id.org/geosrs/geosrs:LenticularProjection"><tt>geosrs:geosrs:LenticularProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrslittrowprojection" obligation="normative">
+<title>Class: geosrs:LittrowProjection</title>
+<p id="_45533117-d89c-ed7a-1ff7-17b8bdd11b0f">The class <link target="https://w3id.org/geosrs/geosrs:LittrowProjection"><tt>geosrs:geosrs:LittrowProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrslonlatprojection" obligation="normative">
+<title>Class: geosrs:LonLatProjection</title>
+<p id="_8c63443b-255a-7941-9da4-256f7248a017">The class <link target="https://w3id.org/geosrs/geosrs:LonLatProjection"><tt>geosrs:geosrs:LonLatProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrslorgnaprojection" obligation="normative">
+<title>Class: geosrs:LorgnaProjection</title>
+<p id="_2a452f42-8e9a-8ee7-11ca-e0ca8f03562b">The class <link target="https://w3id.org/geosrs/geosrs:LorgnaProjection"><tt>geosrs:geosrs:LorgnaProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrslowryprojection" obligation="normative">
+<title>Class: geosrs:LowryProjection</title>
+<p id="_740bccac-f1c9-8f13-360d-46bcae195328">The class <link target="https://w3id.org/geosrs/geosrs:LowryProjection"><tt>geosrs:geosrs:LowryProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsloximuthalprojection" obligation="normative">
+<title>Class: geosrs:LoximuthalProjection</title>
+<p id="_e51d3857-d1c4-f0ed-fec9-86f6e25cfd22">The class <link target="https://w3id.org/geosrs/geosrs:LoximuthalProjection"><tt>geosrs:geosrs:LoximuthalProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsmaurerno73projection" obligation="normative">
+<title>Class: geosrs:MaurerNo73Projection</title>
+<p id="_8b16fb8e-29f0-428b-ded3-aa4d029cb747">The class <link target="https://w3id.org/geosrs/geosrs:MaurerNo73Projection"><tt>geosrs:geosrs:MaurerNo73Projection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsmayrprojection" obligation="normative">
+<title>Class: geosrs:MayrProjection</title>
+<p id="_d77f73c1-afe5-cddc-1cff-babbdc280020">The class <link target="https://w3id.org/geosrs/geosrs:MayrProjection"><tt>geosrs:geosrs:MayrProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsmcbrydethomasflatpolarparabolicprojection" obligation="normative">
+<title>Class: geosrs:McBrydeThomasFlatPolarParabolicProjection</title>
+<p id="_77b5d00d-bc09-4155-ed3a-c7a603c2b0fc">The class <link target="https://w3id.org/geosrs/geosrs:McBrydeThomasFlatPolarParabolicProjection"><tt>geosrs:geosrs:McBrydeThomasFlatPolarParabolicProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsmcbrydethomasflatpolarquarticprojection" obligation="normative">
+<title>Class: geosrs:McBrydeThomasFlatPolarQuarticProjection</title>
+<p id="_642a6636-43ec-d097-d748-64e123539ec4">The class <link target="https://w3id.org/geosrs/geosrs:McBrydeThomasFlatPolarQuarticProjection"><tt>geosrs:geosrs:McBrydeThomasFlatPolarQuarticProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsmcbrydethomasflatpolarsinusoidalprojection" obligation="normative">
+<title>Class: geosrs:McBrydeThomasFlatPolarSinusoidalProjection</title>
+<p id="_3a29ccbb-bd4b-d47c-8861-d83466ac9632">The class <link target="https://w3id.org/geosrs/geosrs:McBrydeThomasFlatPolarSinusoidalProjection"><tt>geosrs:geosrs:McBrydeThomasFlatPolarSinusoidalProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsmcbrydethomasiiprojection" obligation="normative">
+<title>Class: geosrs:McBrydeThomasIIProjection</title>
+<p id="_6d75ed83-3812-3a31-a0af-6b16342cf239">The class <link target="https://w3id.org/geosrs/geosrs:McBrydeThomasIIProjection"><tt>geosrs:geosrs:McBrydeThomasIIProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsmcbrydethomasiprojection" obligation="normative">
+<title>Class: geosrs:McBrydeThomasIProjection</title>
+<p id="_7c73435e-38ae-f549-99a6-cff053bf62be">The class <link target="https://w3id.org/geosrs/geosrs:McBrydeThomasIProjection"><tt>geosrs:geosrs:McBrydeThomasIProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsmercatorprojection" obligation="normative">
+<title>Class: geosrs:MercatorProjection</title>
+<p id="_b5bda5fc-db8e-b5c5-cac5-ab0b2b8badab">The class <link target="https://w3id.org/geosrs/geosrs:MercatorProjection"><tt>geosrs:geosrs:MercatorProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsmilleroblatedstereographicprojection" obligation="normative">
+<title>Class: geosrs:MillerOblatedStereographicProjection</title>
+<p id="_3e644b5a-b167-2500-5c59-2d0870b29552">The class <link target="https://w3id.org/geosrs/geosrs:MillerOblatedStereographicProjection"><tt>geosrs:geosrs:MillerOblatedStereographicProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsmillerprojection" obligation="normative">
+<title>Class: geosrs:MillerProjection</title>
+<p id="_46d61f22-3fbf-aed2-7e2b-78fd51e4da63">The class <link target="https://w3id.org/geosrs/geosrs:MillerProjection"><tt>geosrs:geosrs:MillerProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsminimumerrorprojection" obligation="normative">
+<title>Class: geosrs:MinimumErrorProjection</title>
+<p id="_99b257ae-2a7e-76e7-58ce-437b9af63094">The class <link target="https://w3id.org/geosrs/geosrs:MinimumErrorProjection"><tt>geosrs:geosrs:MinimumErrorProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsmollweideprojection" obligation="normative">
+<title>Class: geosrs:MollweideProjection</title>
+<p id="_9aebad8b-10dc-ab56-6edb-8d166340e05a">The class <link target="https://w3id.org/geosrs/geosrs:MollweideProjection"><tt>geosrs:geosrs:MollweideProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsmurdochiiiprojection" obligation="normative">
+<title>Class: geosrs:MurdochIIIProjection</title>
+<p id="_85c0ce92-5c08-8b02-67ce-e039476e962a">The class <link target="https://w3id.org/geosrs/geosrs:MurdochIIIProjection"><tt>geosrs:geosrs:MurdochIIIProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsmurdochiiprojection" obligation="normative">
+<title>Class: geosrs:MurdochIIProjection</title>
+<p id="_8da26327-76eb-e202-8a0a-bc930ca3aa5b">The class <link target="https://w3id.org/geosrs/geosrs:MurdochIIProjection"><tt>geosrs:geosrs:MurdochIIProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsmurdochiprojection" obligation="normative">
+<title>Class: geosrs:MurdochIProjection</title>
+<p id="_10fce32c-bccb-8001-506a-36762b9727ce">The class <link target="https://w3id.org/geosrs/geosrs:MurdochIProjection"><tt>geosrs:geosrs:MurdochIProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsmyrahedalprojection" obligation="normative">
+<title>Class: geosrs:MyrahedalProjection</title>
+<p id="_3da78482-e95d-b959-518f-78a04ad65ecc">The class <link target="https://w3id.org/geosrs/geosrs:MyrahedalProjection"><tt>geosrs:geosrs:MyrahedalProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsnaturalearth2projection" obligation="normative">
+<title>Class: geosrs:NaturalEarth2Projection</title>
+<p id="_98077c48-0654-f9f4-1782-2ef025d10868">The class <link target="https://w3id.org/geosrs/geosrs:NaturalEarth2Projection"><tt>geosrs:geosrs:NaturalEarth2Projection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsnaturalearthprojection" obligation="normative">
+<title>Class: geosrs:NaturalEarthProjection</title>
+<p id="_5e7c37d8-0332-a64e-160e-65693df7bfea">The class <link target="https://w3id.org/geosrs/geosrs:NaturalEarthProjection"><tt>geosrs:geosrs:NaturalEarthProjection</tt></link> is defined by the following:</p>
+
+<p id="_ac5b6342-868e-8bc9-d000-5df8dc772ca7">A pseudocylindrical map projection designed by Tom Patterson and introduced in 2008</p>
+</clause>
+
+<clause id="_class_geosrsnellhammerprojection" obligation="normative">
+<title>Class: geosrs:NellHammerProjection</title>
+<p id="_db89b685-0e31-d6e2-e57c-9d71fdca9082">The class <link target="https://w3id.org/geosrs/geosrs:NellHammerProjection"><tt>geosrs:geosrs:NellHammerProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsnellprojection" obligation="normative">
+<title>Class: geosrs:NellProjection</title>
+<p id="_718b7ef3-3fee-be6a-eb96-1f7a820909d0">The class <link target="https://w3id.org/geosrs/geosrs:NellProjection"><tt>geosrs:geosrs:NellProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsnicolosiglobularprojection" obligation="normative">
+<title>Class: geosrs:NicolosiGlobularProjection</title>
+<p id="_042b44cc-4451-0674-70c4-7750bb5b781a">The class <link target="https://w3id.org/geosrs/geosrs:NicolosiGlobularProjection"><tt>geosrs:geosrs:NicolosiGlobularProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsnordicprojection" obligation="normative">
+<title>Class: geosrs:NordicProjection</title>
+<p id="_4332c125-887b-4726-e3ca-5db118fd3999">The class <link target="https://w3id.org/geosrs/geosrs:NordicProjection"><tt>geosrs:geosrs:NordicProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsobliquecylindricalequalareaprojection" obligation="normative">
+<title>Class: geosrs:ObliqueCylindricalEqualAreaProjection</title>
+<p id="_724ed75c-4b6e-3d55-c731-15b0421751bd">The class <link target="https://w3id.org/geosrs/geosrs:ObliqueCylindricalEqualAreaProjection"><tt>geosrs:geosrs:ObliqueCylindricalEqualAreaProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsobliquemercatorprojection" obligation="normative">
+<title>Class: geosrs:ObliqueMercatorProjection</title>
+<p id="_d68b4359-a6df-ee93-5758-a81c0cf4ab7f">The class <link target="https://w3id.org/geosrs/geosrs:ObliqueMercatorProjection"><tt>geosrs:geosrs:ObliqueMercatorProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsobliqueplatecarreeprojection" obligation="normative">
+<title>Class: geosrs:ObliquePlateCarreeProjection</title>
+<p id="_ebe18a8b-4201-157a-02d6-916b2bd61285">The class <link target="https://w3id.org/geosrs/geosrs:ObliquePlateCarreeProjection"><tt>geosrs:geosrs:ObliquePlateCarreeProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsobliqueprojection" obligation="normative">
+<title>Class: geosrs:ObliqueProjection</title>
+<p id="_2e76ad2f-8c18-c3e2-66d2-ade58265f0e8">The class <link target="https://w3id.org/geosrs/geosrs:ObliqueProjection"><tt>geosrs:geosrs:ObliqueProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsobliquestereographicprojection" obligation="normative">
+<title>Class: geosrs:ObliqueStereographicProjection</title>
+<p id="_76bfb11f-ccc1-6b5e-215c-9e065ee00f14">The class <link target="https://w3id.org/geosrs/geosrs:ObliqueStereographicProjection"><tt>geosrs:geosrs:ObliqueStereographicProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsoctantprojection" obligation="normative">
+<title>Class: geosrs:OctantProjection</title>
+<p id="_1c4429db-47a4-4a35-c12e-b484b48a3999">The class <link target="https://w3id.org/geosrs/geosrs:OctantProjection"><tt>geosrs:geosrs:OctantProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsorteliusovalprojection" obligation="normative">
+<title>Class: geosrs:OrteliusOvalProjection</title>
+<p id="_d1c1610e-8997-5455-6205-bd45334ebfd0">The class <link target="https://w3id.org/geosrs/geosrs:OrteliusOvalProjection"><tt>geosrs:geosrs:OrteliusOvalProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsorthographicprojection" obligation="normative">
+<title>Class: geosrs:OrthographicProjection</title>
+<p id="_bd0d0c49-5f7b-27e9-62aa-0469a18cdc4c">The class <link target="https://w3id.org/geosrs/geosrs:OrthographicProjection"><tt>geosrs:geosrs:OrthographicProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsovalprojection" obligation="normative">
+<title>Class: geosrs:OvalProjection</title>
+<p id="_dce55072-5b80-0b39-7ffe-3f16428ce7dc">The class <link target="https://w3id.org/geosrs/geosrs:OvalProjection"><tt>geosrs:geosrs:OvalProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrspattersoncylindricalprojection" obligation="normative">
+<title>Class: geosrs:PattersonCylindricalProjection</title>
+<p id="_b953bb57-8c60-83cc-fad6-961939bdf3ee">The class <link target="https://w3id.org/geosrs/geosrs:PattersonCylindricalProjection"><tt>geosrs:geosrs:PattersonCylindricalProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrspavlovprojection" obligation="normative">
+<title>Class: geosrs:PavlovProjection</title>
+<p id="_e67e8d72-cf36-ca10-5144-3a243437766a">The class <link target="https://w3id.org/geosrs/geosrs:PavlovProjection"><tt>geosrs:geosrs:PavlovProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrspeircequincuncialprojection" obligation="normative">
+<title>Class: geosrs:PeirceQuincuncialProjection</title>
+<p id="_d2c6efa4-d697-af90-50a1-79aa07b95aab">The class <link target="https://w3id.org/geosrs/geosrs:PeirceQuincuncialProjection"><tt>geosrs:geosrs:PeirceQuincuncialProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsperspectiveconicprojection" obligation="normative">
+<title>Class: geosrs:PerspectiveConicProjection</title>
+<p id="_017ade8f-9471-31b0-8500-d21db97faedb">The class <link target="https://w3id.org/geosrs/geosrs:PerspectiveConicProjection"><tt>geosrs:geosrs:PerspectiveConicProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsperspectiveprojection" obligation="normative">
+<title>Class: geosrs:PerspectiveProjection</title>
+<p id="_323189e4-e60e-e1db-fc71-17dd64fb8a1b">The class <link target="https://w3id.org/geosrs/geosrs:PerspectiveProjection"><tt>geosrs:geosrs:PerspectiveProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrspetermannstarprojection" obligation="normative">
+<title>Class: geosrs:PetermannStarProjection</title>
+<p id="_0cc46ea0-f65a-fd77-481c-00e260ee245a">The class <link target="https://w3id.org/geosrs/geosrs:PetermannStarProjection"><tt>geosrs:geosrs:PetermannStarProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsplatecarreeprojection" obligation="normative">
+<title>Class: geosrs:PlateCarreeProjection</title>
+<p id="_27341dce-1296-d44d-878b-12a3f79c7a6d">The class <link target="https://w3id.org/geosrs/geosrs:PlateCarreeProjection"><tt>geosrs:geosrs:PlateCarreeProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrspolelineprojection" obligation="normative">
+<title>Class: geosrs:PoleLineProjection</title>
+<p id="_4a75fa16-1127-e5a7-935d-4958b2b591fc">The class <link target="https://w3id.org/geosrs/geosrs:PoleLineProjection"><tt>geosrs:geosrs:PoleLineProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrspolyconicprojection" obligation="normative">
+<title>Class: geosrs:PolyconicProjection</title>
+<p id="_b19f880d-43df-90a6-4ddb-c73dcbdf0cb8">The class <link target="https://w3id.org/geosrs/geosrs:PolyconicProjection"><tt>geosrs:geosrs:PolyconicProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrspolyhedralprojection" obligation="normative">
+<title>Class: geosrs:PolyhedralProjection</title>
+<p id="_2f9f05ae-5d4d-43d7-24c3-021384868a42">The class <link target="https://w3id.org/geosrs/geosrs:PolyhedralProjection"><tt>geosrs:geosrs:PolyhedralProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsprojection" obligation="normative">
+<title>Class: geosrs:Projection</title>
+<p id="_bbd30748-62d8-863c-8a9c-c2fb6d962848">The class <link target="https://w3id.org/geosrs/geosrs:Projection"><tt>geosrs:geosrs:Projection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrspseudoazimuthalprojection" obligation="normative">
+<title>Class: geosrs:PseudoAzimuthalProjection</title>
+<p id="_1fe69c27-9df4-c05b-5916-820f782fe4d1">The class <link target="https://w3id.org/geosrs/geosrs:PseudoAzimuthalProjection"><tt>geosrs:geosrs:PseudoAzimuthalProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrspseudoconicalprojection" obligation="normative">
+<title>Class: geosrs:PseudoConicalProjection</title>
+<p id="_03e0d25b-17f9-4042-9f28-8b9832e1d523">The class <link target="https://w3id.org/geosrs/geosrs:PseudoConicalProjection"><tt>geosrs:geosrs:PseudoConicalProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrspseudocylindricalprojection" obligation="normative">
+<title>Class: geosrs:PseudoCylindricalProjection</title>
+<p id="_ca760aae-48eb-cbc5-a300-a02d17295842">The class <link target="https://w3id.org/geosrs/geosrs:PseudoCylindricalProjection"><tt>geosrs:geosrs:PseudoCylindricalProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrspseudoorthographicprojection" obligation="normative">
+<title>Class: geosrs:PseudoOrthographicProjection</title>
+<p id="_a9c8bebb-cde2-dab3-3019-aa9ac184ff55">The class <link target="https://w3id.org/geosrs/geosrs:PseudoOrthographicProjection"><tt>geosrs:geosrs:PseudoOrthographicProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsptolemyiiprojection" obligation="normative">
+<title>Class: geosrs:PtolemyIIProjection</title>
+<p id="_5c31665e-32a1-3808-24ba-05bc4466796b">The class <link target="https://w3id.org/geosrs/geosrs:PtolemyIIProjection"><tt>geosrs:geosrs:PtolemyIIProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsptolemyiprojection" obligation="normative">
+<title>Class: geosrs:PtolemyIProjection</title>
+<p id="_e2968244-9f93-fed0-7f83-0bcb446e9dfc">The class <link target="https://w3id.org/geosrs/geosrs:PtolemyIProjection"><tt>geosrs:geosrs:PtolemyIProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsputninsp1projection" obligation="normative">
+<title>Class: geosrs:PutninsP1Projection</title>
+<p id="_52822481-7538-4038-b555-e0026ce710a6">The class <link target="https://w3id.org/geosrs/geosrs:PutninsP1Projection"><tt>geosrs:geosrs:PutninsP1Projection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsputninsp2projection" obligation="normative">
+<title>Class: geosrs:PutninsP2Projection</title>
+<p id="_973fd18b-eed8-f05c-5729-a740a26a395c">The class <link target="https://w3id.org/geosrs/geosrs:PutninsP2Projection"><tt>geosrs:geosrs:PutninsP2Projection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsputninsp3projection" obligation="normative">
+<title>Class: geosrs:PutninsP3Projection</title>
+<p id="_3bd6754b-21a2-fd27-b1e2-48ec10a276a2">The class <link target="https://w3id.org/geosrs/geosrs:PutninsP3Projection"><tt>geosrs:geosrs:PutninsP3Projection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsputninsp5projection" obligation="normative">
+<title>Class: geosrs:PutninsP5Projection</title>
+<p id="_c40b9b88-c18a-b6ed-5ad3-2d4b0500291e">The class <link target="https://w3id.org/geosrs/geosrs:PutninsP5Projection"><tt>geosrs:geosrs:PutninsP5Projection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsputninsp6projection" obligation="normative">
+<title>Class: geosrs:PutninsP6Projection</title>
+<p id="_a5382627-34cf-3892-d5ea-6f1e7ce0f2d6">The class <link target="https://w3id.org/geosrs/geosrs:PutninsP6Projection"><tt>geosrs:geosrs:PutninsP6Projection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsquadrilateralizedsphericalcubeprojection" obligation="normative">
+<title>Class: geosrs:QuadrilateralizedSphericalCubeProjection</title>
+<p id="_86c042da-1308-ba20-aeb1-2a48533eb19f">The class <link target="https://w3id.org/geosrs/geosrs:QuadrilateralizedSphericalCubeProjection"><tt>geosrs:geosrs:QuadrilateralizedSphericalCubeProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsquarticauthalicprojection" obligation="normative">
+<title>Class: geosrs:QuarticAuthalicProjection</title>
+<p id="_b7f8b154-1147-334f-8550-20baafabda13">The class <link target="https://w3id.org/geosrs/geosrs:QuarticAuthalicProjection"><tt>geosrs:geosrs:QuarticAuthalicProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsrectangularpolyconicprojection" obligation="normative">
+<title>Class: geosrs:RectangularPolyconicProjection</title>
+<p id="_f88598f4-cc77-560f-2800-fdca144fdb26">The class <link target="https://w3id.org/geosrs/geosrs:RectangularPolyconicProjection"><tt>geosrs:geosrs:RectangularPolyconicProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsretroazimuthalprojection" obligation="normative">
+<title>Class: geosrs:RetroazimuthalProjection</title>
+<p id="_3a16cc01-363d-30b2-fbcb-c031865f144a">The class <link target="https://w3id.org/geosrs/geosrs:RetroazimuthalProjection"><tt>geosrs:geosrs:RetroazimuthalProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsrobinsonprojection" obligation="normative">
+<title>Class: geosrs:RobinsonProjection</title>
+<p id="_01e1337e-6f74-7643-182f-a2e93412dd14">The class <link target="https://w3id.org/geosrs/geosrs:RobinsonProjection"><tt>geosrs:geosrs:RobinsonProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsroussilheprojection" obligation="normative">
+<title>Class: geosrs:RoussilheProjection</title>
+<p id="_b5ab97ca-61ee-0987-b3e7-1e165c95b109">The class <link target="https://w3id.org/geosrs/geosrs:RoussilheProjection"><tt>geosrs:geosrs:RoussilheProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsschjerningiprojection" obligation="normative">
+<title>Class: geosrs:SchjerningIProjection</title>
+<p id="_38aa6103-0d4f-bc53-1319-a78d7f9a44d6">The class <link target="https://w3id.org/geosrs/geosrs:SchjerningIProjection"><tt>geosrs:geosrs:SchjerningIProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrssinusoidalprojection" obligation="normative">
+<title>Class: geosrs:SinusoidalProjection</title>
+<p id="_1c9277ba-a341-9259-e491-4fa4cc1f4227">The class <link target="https://w3id.org/geosrs/geosrs:SinusoidalProjection"><tt>geosrs:geosrs:SinusoidalProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrssmythequalsurfaceprojection" obligation="normative">
+<title>Class: geosrs:SmythEqualSurfaceProjection</title>
+<p id="_091408e6-8b7e-2ddc-5e67-bf2113d38227">The class <link target="https://w3id.org/geosrs/geosrs:SmythEqualSurfaceProjection"><tt>geosrs:geosrs:SmythEqualSurfaceProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsspaceobliquemercatorprojection" obligation="normative">
+<title>Class: geosrs:SpaceObliqueMercatorProjection</title>
+<p id="_054f43cc-8e86-acee-e638-048b65269c04">The class <link target="https://w3id.org/geosrs/geosrs:SpaceObliqueMercatorProjection"><tt>geosrs:geosrs:SpaceObliqueMercatorProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsspilhausoceanicprojection" obligation="normative">
+<title>Class: geosrs:SpilhausOceanicProjection</title>
+<p id="_f817fbba-ce9d-5863-d491-4e9ef9885ee4">The class <link target="https://w3id.org/geosrs/geosrs:SpilhausOceanicProjection"><tt>geosrs:geosrs:SpilhausOceanicProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsstabiuswerneriiiprojection" obligation="normative">
+<title>Class: geosrs:StabiusWernerIIIProjection</title>
+<p id="_8fa10c0d-dbd8-1917-28ff-14aeaa2361df">The class <link target="https://w3id.org/geosrs/geosrs:StabiusWernerIIIProjection"><tt>geosrs:geosrs:StabiusWernerIIIProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsstabiuswerneriiprojection" obligation="normative">
+<title>Class: geosrs:StabiusWernerIIProjection</title>
+<p id="_44917f91-c59a-4e54-cbd1-42e4c9c1f67d">The class <link target="https://w3id.org/geosrs/geosrs:StabiusWernerIIProjection"><tt>geosrs:geosrs:StabiusWernerIIProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsstabiuswerneriprojection" obligation="normative">
+<title>Class: geosrs:StabiusWernerIProjection</title>
+<p id="_a604a27f-8596-0d9a-f3d7-bf6fb3060262">The class <link target="https://w3id.org/geosrs/geosrs:StabiusWernerIProjection"><tt>geosrs:geosrs:StabiusWernerIProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsstereographicprojection" obligation="normative">
+<title>Class: geosrs:StereographicProjection</title>
+<p id="_5f16269d-d0b0-9184-a299-88cf036550e4">The class <link target="https://w3id.org/geosrs/geosrs:StereographicProjection"><tt>geosrs:geosrs:StereographicProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsstrebe1995projection" obligation="normative">
+<title>Class: geosrs:Strebe1995Projection</title>
+<p id="_dcd854aa-0a60-b2ce-f41c-21499e2c56a4">The class <link target="https://w3id.org/geosrs/geosrs:Strebe1995Projection"><tt>geosrs:geosrs:Strebe1995Projection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsthetimesprojection" obligation="normative">
+<title>Class: geosrs:TheTimesProjection</title>
+<p id="_abbef6fd-d945-a6a0-cfd7-05c764212116">The class <link target="https://w3id.org/geosrs/geosrs:TheTimesProjection"><tt>geosrs:geosrs:TheTimesProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrstiltedperspectiveprojection" obligation="normative">
+<title>Class: geosrs:TiltedPerspectiveProjection</title>
+<p id="_7d5158cd-e364-fdea-d247-820d9c0caca5">The class <link target="https://w3id.org/geosrs/geosrs:TiltedPerspectiveProjection"><tt>geosrs:geosrs:TiltedPerspectiveProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrstoblercylindricaliiprojection" obligation="normative">
+<title>Class: geosrs:ToblerCylindricalIIProjection</title>
+<p id="_0c8bfbe1-f9eb-f3ab-b416-2659ba73d045">The class <link target="https://w3id.org/geosrs/geosrs:ToblerCylindricalIIProjection"><tt>geosrs:geosrs:ToblerCylindricalIIProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrstoblercylindricaliprojection" obligation="normative">
+<title>Class: geosrs:ToblerCylindricalIProjection</title>
+<p id="_99afd6bb-c8dc-e5b2-ea74-a20bb1c129fa">The class <link target="https://w3id.org/geosrs/geosrs:ToblerCylindricalIProjection"><tt>geosrs:geosrs:ToblerCylindricalIProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrstoblerg1projection" obligation="normative">
+<title>Class: geosrs:ToblerG1Projection</title>
+<p id="_d581e18a-a955-f48f-d37a-509060eac199">The class <link target="https://w3id.org/geosrs/geosrs:ToblerG1Projection"><tt>geosrs:geosrs:ToblerG1Projection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrstoblerhyperellipticalprojection" obligation="normative">
+<title>Class: geosrs:ToblerHyperellipticalProjection</title>
+<p id="_d8b8665f-cc83-19d8-8d0a-dfc521e0be40">The class <link target="https://w3id.org/geosrs/geosrs:ToblerHyperellipticalProjection"><tt>geosrs:geosrs:ToblerHyperellipticalProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrstoblerworldinasquareprojection" obligation="normative">
+<title>Class: geosrs:ToblerWorldInASquareProjection</title>
+<p id="_2607a38e-e32d-682a-a947-1685074454c2">The class <link target="https://w3id.org/geosrs/geosrs:ToblerWorldInASquareProjection"><tt>geosrs:geosrs:ToblerWorldInASquareProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrstransversecylindricalequalareaprojection" obligation="normative">
+<title>Class: geosrs:TransverseCylindricalEqualAreaProjection</title>
+<p id="_1448cdde-2663-e787-78b2-128e5e1fec5f">The class <link target="https://w3id.org/geosrs/geosrs:TransverseCylindricalEqualAreaProjection"><tt>geosrs:geosrs:TransverseCylindricalEqualAreaProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrstransversemercatorprojection" obligation="normative">
+<title>Class: geosrs:TransverseMercatorProjection</title>
+<p id="_f582c499-5d92-ce98-18b4-29c2eb339448">The class <link target="https://w3id.org/geosrs/geosrs:TransverseMercatorProjection"><tt>geosrs:geosrs:TransverseMercatorProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrstrystanedwardsprojection" obligation="normative">
+<title>Class: geosrs:TrystanEdwardsProjection</title>
+<p id="_fbb4c6e1-84c8-d2f8-389f-7714eaa14f7c">The class <link target="https://w3id.org/geosrs/geosrs:TrystanEdwardsProjection"><tt>geosrs:geosrs:TrystanEdwardsProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrstwopointequidistantprojection" obligation="normative">
+<title>Class: geosrs:TwoPointEquidistantProjection</title>
+<p id="_50b9e3d1-f3e1-d937-e73c-891629385c89">The class <link target="https://w3id.org/geosrs/geosrs:TwoPointEquidistantProjection"><tt>geosrs:geosrs:TwoPointEquidistantProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsuniversaltransversemercatorprojection" obligation="normative">
+<title>Class: geosrs:UniversalTransverseMercatorProjection</title>
+<p id="_0561cebd-f46b-cd67-cffa-13b78d615930">The class <link target="https://w3id.org/geosrs/geosrs:UniversalTransverseMercatorProjection"><tt>geosrs:geosrs:UniversalTransverseMercatorProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsurmayeviiiprojection" obligation="normative">
+<title>Class: geosrs:UrmayevIIIProjection</title>
+<p id="_10062cdb-640a-eb1a-6a3a-0b399bc44560">The class <link target="https://w3id.org/geosrs/geosrs:UrmayevIIIProjection"><tt>geosrs:geosrs:UrmayevIIIProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsvandergrinteniiiprojection" obligation="normative">
+<title>Class: geosrs:VanDerGrintenIIIProjection</title>
+<p id="_573d4eb2-6895-4459-b7cf-9302849d9dd7">The class <link target="https://w3id.org/geosrs/geosrs:VanDerGrintenIIIProjection"><tt>geosrs:geosrs:VanDerGrintenIIIProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsvandergrinteniiprojection" obligation="normative">
+<title>Class: geosrs:VanDerGrintenIIProjection</title>
+<p id="_2813101e-34d6-1a2b-ca49-074e4193bf05">The class <link target="https://w3id.org/geosrs/geosrs:VanDerGrintenIIProjection"><tt>geosrs:geosrs:VanDerGrintenIIProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsvandergrinteniprojection" obligation="normative">
+<title>Class: geosrs:VanDerGrintenIProjection</title>
+<p id="_66437212-3f77-119f-971f-670695ff4265">The class <link target="https://w3id.org/geosrs/geosrs:VanDerGrintenIProjection"><tt>geosrs:geosrs:VanDerGrintenIProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsvandergrintenivprojection" obligation="normative">
+<title>Class: geosrs:VanDerGrintenIVProjection</title>
+<p id="_f95321c7-20c2-8169-7c72-9ccd58a5204e">The class <link target="https://w3id.org/geosrs/geosrs:VanDerGrintenIVProjection"><tt>geosrs:geosrs:VanDerGrintenIVProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsverticalperspectiveprojection" obligation="normative">
+<title>Class: geosrs:VerticalPerspectiveProjection</title>
+<p id="_ca7bc4fe-8b91-cba0-9d5f-043d3320afda">The class <link target="https://w3id.org/geosrs/geosrs:VerticalPerspectiveProjection"><tt>geosrs:geosrs:VerticalPerspectiveProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsvitkovskyiprojection" obligation="normative">
+<title>Class: geosrs:VitkovskyIProjection</title>
+<p id="_8c9c01fc-1b47-f8e4-d05e-070601e016ff">The class <link target="https://w3id.org/geosrs/geosrs:VitkovskyIProjection"><tt>geosrs:geosrs:VitkovskyIProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrswagneriiiprojection" obligation="normative">
+<title>Class: geosrs:WagnerIIIProjection</title>
+<p id="_071edd02-07b7-c3b6-d8eb-54684703c033">The class <link target="https://w3id.org/geosrs/geosrs:WagnerIIIProjection"><tt>geosrs:geosrs:WagnerIIIProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrswagneriiprojection" obligation="normative">
+<title>Class: geosrs:WagnerIIProjection</title>
+<p id="_da170f72-dadc-409b-f09c-2a0e26bb6ea8">The class <link target="https://w3id.org/geosrs/geosrs:WagnerIIProjection"><tt>geosrs:geosrs:WagnerIIProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrswagneriprojection" obligation="normative">
+<title>Class: geosrs:WagnerIProjection</title>
+<p id="_c86fdd6c-10c8-1b06-a02c-dad67dc4b917">The class <link target="https://w3id.org/geosrs/geosrs:WagnerIProjection"><tt>geosrs:geosrs:WagnerIProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrswagnerivprojection" obligation="normative">
+<title>Class: geosrs:WagnerIVProjection</title>
+<p id="_165551bb-84ce-e643-b97d-ab715fd603f2">The class <link target="https://w3id.org/geosrs/geosrs:WagnerIVProjection"><tt>geosrs:geosrs:WagnerIVProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrswagnerixprojection" obligation="normative">
+<title>Class: geosrs:WagnerIXProjection</title>
+<p id="_6e7a129b-89a0-4716-8662-2d9dcb227df1">The class <link target="https://w3id.org/geosrs/geosrs:WagnerIXProjection"><tt>geosrs:geosrs:WagnerIXProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrswagnerviiiprojection" obligation="normative">
+<title>Class: geosrs:WagnerVIIIProjection</title>
+<p id="_3b5a299f-48a6-0f70-25db-811c91e758ce">The class <link target="https://w3id.org/geosrs/geosrs:WagnerVIIIProjection"><tt>geosrs:geosrs:WagnerVIIIProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrswagnerviiprojection" obligation="normative">
+<title>Class: geosrs:WagnerVIIProjection</title>
+<p id="_26764ac5-3410-6889-1f7e-480956a687a9">The class <link target="https://w3id.org/geosrs/geosrs:WagnerVIIProjection"><tt>geosrs:geosrs:WagnerVIIProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrswagnerviprojection" obligation="normative">
+<title>Class: geosrs:WagnerVIProjection</title>
+<p id="_ba26100a-0f62-c6cf-3410-cbe6903476a3">The class <link target="https://w3id.org/geosrs/geosrs:WagnerVIProjection"><tt>geosrs:geosrs:WagnerVIProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrswagnervprojection" obligation="normative">
+<title>Class: geosrs:WagnerVProjection</title>
+<p id="_22083d7c-0c3d-304c-fb83-5ec54aaaa7e7">The class <link target="https://w3id.org/geosrs/geosrs:WagnerVProjection"><tt>geosrs:geosrs:WagnerVProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrswatermanbutterflyprojection" obligation="normative">
+<title>Class: geosrs:WatermanButterflyProjection</title>
+<p id="_655894bf-3510-6661-de41-1edde0268fd5">The class <link target="https://w3id.org/geosrs/geosrs:WatermanButterflyProjection"><tt>geosrs:geosrs:WatermanButterflyProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrswebmercatorprojection" obligation="normative">
+<title>Class: geosrs:WebMercatorProjection</title>
+<p id="_56d083db-5277-ae0c-0893-c2a44beb55c9">The class <link target="https://w3id.org/geosrs/geosrs:WebMercatorProjection"><tt>geosrs:geosrs:WebMercatorProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrswerenskioldiprojection" obligation="normative">
+<title>Class: geosrs:WerenskioldIProjection</title>
+<p id="_fe273f58-05ea-d68d-82d6-3fd71f7d649f">The class <link target="https://w3id.org/geosrs/geosrs:WerenskioldIProjection"><tt>geosrs:geosrs:WerenskioldIProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrswernerprojection" obligation="normative">
+<title>Class: geosrs:WernerProjection</title>
+<p id="_bd34851e-022e-47fd-235a-bde14ef5d6a6">The class <link target="https://w3id.org/geosrs/geosrs:WernerProjection"><tt>geosrs:geosrs:WernerProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrswiechelprojection" obligation="normative">
+<title>Class: geosrs:WiechelProjection</title>
+<p id="_82766bba-2100-9dff-872e-26f57050b002">The class <link target="https://w3id.org/geosrs/geosrs:WiechelProjection"><tt>geosrs:geosrs:WiechelProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrswinkeliiprojection" obligation="normative">
+<title>Class: geosrs:WinkelIIProjection</title>
+<p id="_57d16c47-653d-8342-1231-2477e93d1a8b">The class <link target="https://w3id.org/geosrs/geosrs:WinkelIIProjection"><tt>geosrs:geosrs:WinkelIIProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrswinkeliprojection" obligation="normative">
+<title>Class: geosrs:WinkelIProjection</title>
+<p id="_e10d30d3-c42a-cbb7-210c-1355add93006">The class <link target="https://w3id.org/geosrs/geosrs:WinkelIProjection"><tt>geosrs:geosrs:WinkelIProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrswinkelsnyderprojection" obligation="normative">
+<title>Class: geosrs:WinkelSnyderProjection</title>
+<p id="_bdcae7cd-fa2e-72fc-5228-de7caf03febe">The class <link target="https://w3id.org/geosrs/geosrs:WinkelSnyderProjection"><tt>geosrs:geosrs:WinkelSnyderProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrswinkeltripelprojection" obligation="normative">
+<title>Class: geosrs:WinkelTripelProjection</title>
+<p id="_6f2784c9-0048-3854-3cf2-7cacbdde4db6">The class <link target="https://w3id.org/geosrs/geosrs:WinkelTripelProjection"><tt>geosrs:geosrs:WinkelTripelProjection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsputninsp3projection_2" obligation="normative">
+<title>Class: geosrs:PutninsP3’Projection</title>
+<p id="_49c05f2d-3d28-9ed2-546b-6ae249aeaada">The class <link target="https://w3id.org/geosrs/geosrs:PutninsP3'Projection"><tt>geosrs:geosrs:PutninsP3’Projection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsputninsp4projection" obligation="normative">
+<title>Class: geosrs:PutninsP4’Projection</title>
+<p id="_dbfb981f-b9f2-97eb-da36-29f50a4f5fc6">The class <link target="https://w3id.org/geosrs/geosrs:PutninsP4'Projection"><tt>geosrs:geosrs:PutninsP4’Projection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsputninsp5projection_2" obligation="normative">
+<title>Class: geosrs:PutninsP5’Projection</title>
+<p id="_8f8b8844-25ed-910f-381b-798db374b382">The class <link target="https://w3id.org/geosrs/geosrs:PutninsP5'Projection"><tt>geosrs:geosrs:PutninsP5’Projection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsputninsp6projection_2" obligation="normative">
+<title>Class: geosrs:PutninsP6’Projection</title>
+<p id="_565bdec1-952d-e28c-2138-70fab598277d">The class <link target="https://w3id.org/geosrs/geosrs:PutninsP6'Projection"><tt>geosrs:geosrs:PutninsP6’Projection</tt></link> is defined by the following:</p>
+</clause>
+
+<clause id="_class_geosrsmollweidewagnerprojection" obligation="normative">
+<title>Class: geosrs:MollweideWagnerProjection</title>
+<p id="_d057a30f-77d6-067d-5f4a-97e18b760e7f">The class <link target="https://w3id.org/geosrs/geosrs:MollweideWagnerProjection"><tt>geosrs:geosrs:MollweideWagnerProjection</tt></link> is defined by the following:</p>
+</clause>
 </clause>
 
 <clause id="_planet_module" obligation="normative">

@@ -448,7 +448,7 @@ dirname = os.path.dirname(__file__)
 abspath = os.path.join(dirname, '../csv/alignment/')
 directory = os.fsencode(abspath)
 print(abspath)      
-alignmentadoc=""
+alignmentadoc={"ign":[],"iso19111":[],"ifc":[]}
 for file in os.listdir(directory):
     filename = os.fsdecode(file)
     if filename.endswith(".csv"): 
@@ -459,11 +459,31 @@ for file in os.listdir(directory):
                 objprop=True
             for row in reader:
                 if "Concept source" in row and row["Concept source"]!="" and "Concept target" in row and row["Concept target"]!="" and "Property" in row and row["Property"]!="":
-                    g.add((URIRef(row["Concept source"].replace("geosrs:",geocrsNS).replace("ign:","http://data.ign.fr/def/ignf#").replace("iso19111:","http://def.isotc211.org/iso19112/2019/SpatialReferencingByGeographicIdentifier#").replace("ifc:","https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL/")),
-                           URIRef(row["Property"].replace("owl:","http://www.w3.org/2002/07/owl#").replace("rdfs:","http://www.w3.org/2000/01/rdf-schema#")),
-                           URIRef(row["Concept target"].replace("geosrs:",geocrsNS).replace("ign:","http://data.ign.fr/def/ignf#").replace("iso19111:","http://def.isotc211.org/iso19112/2019/SpatialReferencingByGeographicIdentifier#").replace("ifc:","https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL/"))))
+                    csourceuri=row["Concept source"].replace("geosrs:",geocrsNS).replace("ign:","http://data.ign.fr/def/ignf#").replace("iso19111:","http://def.isotc211.org/iso19112/2019/SpatialReferencingByGeographicIdentifier#").replace("ifc:","https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL/")
+                    ctargeturi=row["Concept target"].replace("geosrs:",geocrsNS).replace("ign:","http://data.ign.fr/def/ignf#").replace("iso19111:","http://def.isotc211.org/iso19112/2019/SpatialReferencingByGeographicIdentifier#").replace("ifc:","https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL/")
+                    cpropuri=row["Property"].replace("owl:","http://www.w3.org/2002/07/owl#").replace("rdfs:","http://www.w3.org/2000/01/rdf-schema#")
+                    targetprefix=row["Concept target"][0:row["Concept target"].rfind(":")]
+                    g.add((URIRef(csourceuri),
+                           URIRef(cpropuri),
+                           URIRef(ctargeturi)))
+                    if targetprefix in alignmentadoc:
+                        alignmentadoc[targetprefix.append("|"+str(csourceuri)+"["+row["Concept source"]+"]\n|"+str(cpropuri)+"["+row["Property"]+"]\n|"+str(cstargeturi)+"["+row["Concept source"]"\n\n")
+            if os.path.exists(with open("spec/sections/"+ad.replace(".adoc","_classes.adoc"), 'w',encoding="utf-8") as f:)
     else:
         continue
+
+alignments=""
+for prefix in alignmentadoc:
+    alignments+="=== "+str(prefix).upper()+" Ontology\n\n.Alignment: "+str(prefix).upper()+" Ontology\n[%autowidth]|===\n| From Element | Mapping relation | To Element | Notes\n\n"
+    for aligns in alignmentadoc[prefix]:
+        alignments+=aligns
+    alignments+="|==="
+
+with open("spec/sections/aa-alignments.adoc", 'r',encoding="utf-8") as f:
+    alignmentdoc=f.read()
+
+with open("spec/sections/aa-alignments.adoc", 'w',encoding="utf-8") as f:
+    f.write(alignmentdoc[0:"=== IGN CRS Ontology"]+alignments)
 
 g.serialize(destination="alignments.ttl")
 

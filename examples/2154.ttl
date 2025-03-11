@@ -22,13 +22,13 @@
             geosrs:coordinateSystem [ a geosrs:EllipsoidalCoordinateSystem ;
                     rdfs:label "Ellipsoidal 2D CS. Axes: latitude, longitude. Orientations: north, east. UoM: degreeOpen" ;
                     geosrs:axis [ a geosrs:CoordinateSystemAxis ;
-                            rdfs:label "Geodetic longitude" ;
-                            om:hasUnit om:degree ;
-                            geosrs:axisDirection geosrs_cs:east ],
-                        [ a geosrs:CoordinateSystemAxis ;
                             rdfs:label "Geodetic latitude" ;
                             om:hasUnit om:degree ;
-                            geosrs:axisDirection geosrs_cs:north ] ] ;
+                            geosrs:axisDirection geosrs_cs:north ],
+                        [ a geosrs:CoordinateSystemAxis ;
+                            rdfs:label "Geodetic longitude" ;
+                            om:hasUnit om:degree ;
+                            geosrs:axisDirection geosrs_cs:east ] ] ;
             geosrs:datum [ a geosrs:GeodeticDatum ;
                     rdfs:label "Reseau Geodesique Francais 1993 v1" ;
                     geosrs:ellipsoid [ a geosrs:Ellipsoid ;
@@ -54,12 +54,6 @@
             geosrs:method [ a geosrs:OperationMethod ;
                     rdfs:label "Lambert Conic Conformal (2SP)" ] ;
             geosrs:parameter [ a geosrs:OperationParameterValue ;
-                    geosrs:parameter [ a geosrs:OperationParameter ;
-                            rdfs:label "Latitude of 1st standard parallel" ;
-                            dc:identifier "EPSG:8823" ],
-                        [ rdf:value [ om:hasUnit om:degree ;
-                                    rdf:value 49 ] ] ],
-                [ a geosrs:OperationParameterValue ;
                     geosrs:parameter [ rdf:value [ om:hasUnit om:degree ;
                                     rdf:value 3 ] ],
                         [ a geosrs:OperationParameter ;
@@ -67,10 +61,16 @@
                             dc:identifier "EPSG:8822" ] ],
                 [ a geosrs:OperationParameterValue ;
                     geosrs:parameter [ rdf:value [ om:hasUnit om:degree ;
-                                    rdf:value 44 ] ],
+                                    rdf:value 49 ] ],
                         [ a geosrs:OperationParameter ;
+                            rdfs:label "Latitude of 1st standard parallel" ;
+                            dc:identifier "EPSG:8823" ] ],
+                [ a geosrs:OperationParameterValue ;
+                    geosrs:parameter [ a geosrs:OperationParameter ;
                             rdfs:label "Latitude of 2nd standard parallel" ;
-                            dc:identifier "EPSG:8824" ] ],
+                            dc:identifier "EPSG:8824" ],
+                        [ rdf:value [ om:hasUnit om:degree ;
+                                    rdf:value 44 ] ] ],
                 [ a geosrs:OperationParameterValue ;
                     geosrs:parameter [ rdf:value [ om:hasUnit om:metre ;
                                     rdf:value 700000 ] ],

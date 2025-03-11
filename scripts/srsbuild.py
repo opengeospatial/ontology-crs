@@ -35,6 +35,7 @@ ldcontext={"@context":{"rdfs":"http://www.w3.org/2000/01/rdf-schema#","rdf":"htt
 prefixtoclasses={"geosrs":[]}
 prefixtoproperties={"geosrs":[],"CS":[],"CO":[],"DATUM":[],"projection":[]}
 classToPrefix={}
+prefixToModule={"core":"06-core.adoc","co":"07-co_extension.adoc","cs":"08_cs_extension.adoc","datum":"09-datum_extension.adoc","srsapplication":"10-srsapplication.adoc","projection":"11-projections_extension","planet":"12-planet_extension.adoc"}
 moduleToAdoc={"06-core.adoc":["\n\n"],"07-co_extension.adoc":[],"08-cs_extension.adoc":[],"09-datum_extension.adoc":[],"10-srsapplication.adoc":[],"11-projections_extension.adoc":[],"12-planet_extension.adoc":[]}
 
 gcore = Graph()
@@ -284,6 +285,7 @@ for file in os.listdir(directory):
                                             ldcontext["@context"][spl]=row["Concept"].replace("geosrs:", getPrefixForClass(row["Concept"],classToPrefix)+":") 
                                     else:
                                        ldcontext["@context"][row["OGCJSON"]]=row["Concept"].replace("geosrs:", getPrefixForClass(row["Concept"],classToPrefix)+":")  
+                              moduleToAdoc["06-core.adoc"].append("==== Property: "+str(row["Concept"])+"\n\nThe class https://w3id.org/geosrs/"+str(row["Concept"])+"[`"+str(coreprefix)+":"+str(row["Concept"])+"`] is defined by the following:\n\n"+row["Definition"]+"\n\n")
                         else:
                             if row["Core Property?"].lower() in exont:
                                 if row["Core Property?"]!="":
@@ -326,6 +328,8 @@ for file in os.listdir(directory):
                                                 ldcontext["@context"][spl]=row["Concept"].replace("geosrs:", getPrefixForClass(row["Concept"],classToPrefix)+":") 
                                         else:
                                            ldcontext["@context"][row["OGCJSON"]]=row["Concept"].replace("geosrs:", getPrefixForClass(row["Concept"],classToPrefix)+":")  
+                                #if 
+                                #moduleToAdoc["06-core.adoc"].append("==== Property: "+str(row["Concept"])+"\n\nThe class https://w3id.org/geosrs/"+str(row["Concept"])+"[`"+str(coreprefix)+":"+str(row["Concept"])+"`] is defined by the following:\n\n"+row["Definition"]+"\n\n")
             g.serialize(destination=filename.replace(".csv","")+".ttl") 
     else:
         continue

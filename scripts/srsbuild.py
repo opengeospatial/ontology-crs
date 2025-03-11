@@ -35,7 +35,7 @@ ldcontext={"@context":{"rdfs":"http://www.w3.org/2000/01/rdf-schema#","rdf":"htt
 prefixtoclasses={"geosrs":[]}
 prefixtoproperties={"geosrs":[],"CS":[],"CO":[],"DATUM":[],"projection":[]}
 classToPrefix={}
-prefixToModule={"core":"06-core.adoc","co":"07-co_extension.adoc","cs":"08-cs_extension.adoc","datum":"09-datum_extension.adoc","srsapplication":"10-srsapplication.adoc","projection":"11-projections_extension","planet":"12-planet_extension.adoc"}
+prefixToModule={"core":"06-core.adoc","co":"07-co_extension.adoc","cs":"08-cs_extension.adoc","datum":"09-datum_extension.adoc","srsapplication":"10-srsapplication.adoc","projection":"11-projections_extension.adoc","planet":"12-planet_extension.adoc"}
 moduleToAdoc={"06-core.adoc":["\n\n"],"07-co_extension.adoc":[],"08-cs_extension.adoc":[],"09-datum_extension.adoc":[],"10-srsapplication.adoc":[],"11-projections_extension.adoc":[],"12-planet_extension.adoc":[]}
 
 gcore = Graph()

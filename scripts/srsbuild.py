@@ -195,7 +195,7 @@ for file in os.listdir(directory):
                                     g.add((URIRef(row["Concept"].replace(coreprefix+":",curns)),OWL.disjointWith,URIRef(spl.replace("geosrs:", getNSForClass(spl,classToPrefix)))))
                             else:
                                 g.add((URIRef(row["Concept"].replace(coreprefix+":",curns)),OWL.disjointWith,URIRef(row["DisjointClass"].replace("geosrs:", getNSForClass(row["DisjointClass"],classToPrefix)))))                      
-                        if row["Core Property?"].lower() in prefixToModule: 
+                        if row["Core Class?"].lower() in prefixToModule: 
                             moduleToAdoc[prefixToModule[row["Core Property?"].lower()]].append("==== Class: "+str(row["Concept"])+"\n\nThe class https://w3id.org/geosrs/"+str(row["Concept"])+"[`"+str(coreprefix)+":"+str(row["Concept"])+"`] is defined by the following:\n\n"+row["Definition"]+"\n\n")
 
     else:

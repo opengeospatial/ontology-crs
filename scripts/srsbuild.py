@@ -467,7 +467,7 @@ for file in os.listdir(directory):
                            URIRef(cpropuri),
                            URIRef(ctargeturi)))
                     if targetprefix in alignmentadoc:
-                        alignmentadoc[targetprefix].append("|"+str(csourceuri)+"["+row["Concept source"]+"]\n|"+str(cpropuri)+"["+row["Property"]+"]\n|"+str(cstargeturi)+"["+row["Concept source"]+"\n\n")
+                        alignmentadoc[targetprefix].append("|"+str(csourceuri)+"["+row["Concept source"]+"]\n|"+str(cpropuri)+"["+row["Property"]+"]\n|"+str(ctargeturi)+"["+row["Concept source"]+"\n\n")
     else:
         continue
 

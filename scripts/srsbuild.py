@@ -285,7 +285,7 @@ for file in os.listdir(directory):
                                             ldcontext["@context"][spl]=row["Concept"].replace("geosrs:", getPrefixForClass(row["Concept"],classToPrefix)+":") 
                                     else:
                                        ldcontext["@context"][row["OGCJSON"]]=row["Concept"].replace("geosrs:", getPrefixForClass(row["Concept"],classToPrefix)+":")  
-                              moduleToAdoc["06-core.adoc"].append("==== Property: "+str(row["Concept"])+"\n\nThe class https://w3id.org/geosrs/"+str(row["Concept"])+"[`"+str(coreprefix)+":"+str(row["Concept"])+"`] is defined by the following:\n\n"+row["Definition"]+"\n\n")
+                            moduleToAdoc["06-core.adoc"].append("==== Property: "+str(row["Concept"])+"\n\nThe class https://w3id.org/geosrs/"+str(row["Concept"])+"[`"+str(coreprefix)+":"+str(row["Concept"])+"`] is defined by the following:\n\n"+row["Definition"]+"\n\n")
                         else:
                             if row["Core Property?"].lower() in exont:
                                 if row["Core Property?"]!="":
@@ -460,3 +460,18 @@ for file in os.listdir(directory):
        gr = Graph()
        gr.parse(location=abspath+filename, format='json-ld')
        gr.serialize(destination=abspath+filename.replace(".json",".ttl"), format='turtle')
+
+dirname = os.path.dirname(__file__)
+abspath = os.path.join(dirname, '../spec/sections/')
+directory = os.fsencode(abspath)  
+for file in os.listdir(directory):
+    print(file)
+    filename = os.fsdecode(file)
+    for mod in moduleToModuleDoc:
+        if mod in filename:
+            content=""
+            with open(abspath+filename,"r") as docfile:
+                content=docfile.read()
+            docfile+=moduleToModuleDoc[mod]
+            with open(abspath+filename,"w") as dfile:
+                dfile.write(docfile)

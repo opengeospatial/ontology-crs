@@ -4761,7 +4761,7 @@
 
 <clause id="_ign_ontology" obligation="informative">
 <title>IGN Ontology</title>
-<table id="_1aebe649-cc79-a77d-dcf7-cbfa6dbf4595">
+<table id="_c5df4eb0-1416-44a8-0903-1f01ebe6543d">
 <name>Alignment: IGN Ontology</name>
 <thead><tr><th valign="middle" align="left">From Element</th>
 <th valign="middle" align="left">Mapping relation</th>
@@ -4770,15 +4770,15 @@
 </tr></thead>
 <tbody><tr><td valign="middle" align="left"><link target="https://w3id.org/geosrs/CoordinateSystem">geosrs:CoordinateSystem</link></td>
 <td valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#equivalentClass">owl:equivalentClass</link></td>
-<td valign="middle" align="left"><link target="http://data.ign.fr/def/ignf#CoordinateSystem">geosrs:CoordinateSystem</link></td>
+<td valign="middle" align="left"><link target="http://data.ign.fr/def/ignf#CoordinateSystem">ign:CoordinateSystem</link></td>
 <td valign="middle" align="left">-</td>
 </tr><tr><td valign="middle" align="left"><link target="https://w3id.org/geosrs/Datum">geosrs:Datum</link></td>
 <td valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#equivalentClass">owl:equivalentClass</link></td>
-<td valign="middle" align="left"><link target="http://data.ign.fr/def/ignf#Datum">geosrs:Datum</link></td>
+<td valign="middle" align="left"><link target="http://data.ign.fr/def/ignf#Datum">ign:Datum</link></td>
 <td valign="middle" align="left">-</td>
 </tr><tr><td valign="middle" align="left"><link target="https://w3id.org/geosrs/Ellipsoid">geosrs:Ellipsoid</link></td>
 <td valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#equivalentClass">owl:equivalentClass</link></td>
-<td valign="middle" align="left"><link target="http://data.ign.fr/def/ignf#Ellipsoid">geosrs:Ellipsoid</link></td>
+<td valign="middle" align="left"><link target="http://data.ign.fr/def/ignf#Ellipsoid">ign:Ellipsoid</link></td>
 <td valign="middle" align="left">-</td>
 </tr></tbody>
 </table>
@@ -4786,7 +4786,7 @@
 
 <clause id="_iso19111_ontology" obligation="informative">
 <title>ISO19111 Ontology</title>
-<table id="_2efa76d9-e615-5dd6-f434-97341307167e">
+<table id="_1ea8645e-ddef-0630-a161-2f6fca9d17e5">
 <name>Alignment: ISO19111 Ontology</name>
 <thead><tr><th valign="middle" align="left">From Element</th>
 <th valign="middle" align="left">Mapping relation</th>
@@ -4795,15 +4795,15 @@
 </tr></thead>
 <tbody><tr><td valign="middle" align="left"><link target="https://w3id.org/geosrs/CoordinateSystem">geosrs:CoordinateSystem</link></td>
 <td valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#equivalentClass">owl:equivalentClass</link></td>
-<td valign="middle" align="left"><link target="http://def.isotc211.org/iso19112/2019/SpatialReferencingByGeographicIdentifier#CoordinateSystem">geosrs:CoordinateSystem</link></td>
+<td valign="middle" align="left"><link target="http://def.isotc211.org/iso19112/2019/SpatialReferencingByGeographicIdentifier#CoordinateSystem">iso19111:CoordinateSystem</link></td>
 <td valign="middle" align="left">-</td>
 </tr><tr><td valign="middle" align="left"><link target="https://w3id.org/geosrs/Datum">geosrs:Datum</link></td>
 <td valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#equivalentClass">owl:equivalentClass</link></td>
-<td valign="middle" align="left"><link target="http://def.isotc211.org/iso19112/2019/SpatialReferencingByGeographicIdentifier#Datum">geosrs:Datum</link></td>
+<td valign="middle" align="left"><link target="http://def.isotc211.org/iso19112/2019/SpatialReferencingByGeographicIdentifier#Datum">iso19111:Datum</link></td>
 <td valign="middle" align="left">-</td>
 </tr><tr><td valign="middle" align="left"><link target="https://w3id.org/geosrs/Ellipsoid">geosrs:Ellipsoid</link></td>
 <td valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#equivalentClass">owl:equivalentClass</link></td>
-<td valign="middle" align="left"><link target="http://def.isotc211.org/iso19112/2019/SpatialReferencingByGeographicIdentifier#Ellipsoid">geosrs:Ellipsoid</link></td>
+<td valign="middle" align="left"><link target="http://def.isotc211.org/iso19112/2019/SpatialReferencingByGeographicIdentifier#Ellipsoid">iso19111:Ellipsoid</link></td>
 <td valign="middle" align="left">-</td>
 </tr></tbody>
 </table>
@@ -4811,7 +4811,7 @@
 
 <clause id="_ifc_ontology" obligation="informative">
 <title>IFC Ontology</title>
-<table id="_7acce526-a8ac-31bb-0bef-58d9840c86a0">
+<table id="_8bfa0f06-9a08-16be-2bbc-cbc9040ae321">
 <name>Alignment: IFC Ontology</name>
 <thead><tr><th valign="middle" align="left">From Element</th>
 <th valign="middle" align="left">Mapping relation</th>
@@ -4820,31 +4820,31 @@
 </tr></thead>
 <tbody><tr><td valign="middle" align="left"><link target="https://w3id.org/geosrs/CRS">geosrs:CRS</link></td>
 <td valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#equivalentClass">owl:equivalentClass</link></td>
-<td valign="middle" align="left"><link target="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL/IfcCoordinateReferenceSystem">geosrs:CRS</link></td>
+<td valign="middle" align="left"><link target="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL/IfcCoordinateReferenceSystem">ifc:IfcCoordinateReferenceSystem</link></td>
 <td valign="middle" align="left">-</td>
 </tr><tr><td valign="middle" align="left"><link target="https://w3id.org/geosrs/CoordinateOperation">geosrs:CoordinateOperation</link></td>
 <td valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#equivalentClass">owl:equivalentClass</link></td>
-<td valign="middle" align="left"><link target="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL/IfcCoordinateOperation">geosrs:CoordinateOperation</link></td>
+<td valign="middle" align="left"><link target="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL/IfcCoordinateOperation">ifc:IfcCoordinateOperation</link></td>
 <td valign="middle" align="left">-</td>
 </tr><tr><td valign="middle" align="left"><link target="https://w3id.org/geosrs/AxisDirection">geosrs:AxisDirection</link></td>
 <td valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#equivalentClass">owl:equivalentClass</link></td>
-<td valign="middle" align="left"><link target="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL/IfcDirection">geosrs:AxisDirection</link></td>
+<td valign="middle" align="left"><link target="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL/IfcDirection">ifc:IfcDirection</link></td>
 <td valign="middle" align="left">-</td>
 </tr><tr><td valign="middle" align="left"><link target="https://w3id.org/geosrs/ProjectedCRS">geosrs:ProjectedCRS</link></td>
 <td valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#equivalentClass">owl:equivalentClass</link></td>
-<td valign="middle" align="left"><link target="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL/IfcProjectedCRS">geosrs:ProjectedCRS</link></td>
+<td valign="middle" align="left"><link target="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL/IfcProjectedCRS">ifc:IfcProjectedCRS</link></td>
 <td valign="middle" align="left">-</td>
 </tr><tr><td valign="middle" align="left"><link target="https://w3id.org/geosrs/axis">geosrs:axis</link></td>
 <td valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#equivalentProperty">owl:equivalentProperty</link></td>
-<td valign="middle" align="left"><link target="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL/axis_IfcAxis1Placement">geosrs:axis</link></td>
+<td valign="middle" align="left"><link target="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL/axis_IfcAxis1Placement">ifc:axis_IfcAxis1Placement</link></td>
 <td valign="middle" align="left">-</td>
 </tr><tr><td valign="middle" align="left"><link target="https://w3id.org/geosrs/sourceCRS">geosrs:sourceCRS</link></td>
 <td valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#equivalentProperty">owl:equivalentProperty</link></td>
-<td valign="middle" align="left"><link target="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL/sourceCRS">geosrs:sourceCRS</link></td>
+<td valign="middle" align="left"><link target="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL/sourceCRS">ifc:sourceCRS</link></td>
 <td valign="middle" align="left">-</td>
 </tr><tr><td valign="middle" align="left"><link target="https://w3id.org/geosrs/targetCRS">geosrs:targetCRS</link></td>
 <td valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#equivalentProperty">owl:equivalentProperty</link></td>
-<td valign="middle" align="left"><link target="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL/targetCRS">geosrs:targetCRS</link></td>
+<td valign="middle" align="left"><link target="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL/targetCRS">ifc:targetCRS</link></td>
 <td valign="middle" align="left">-</td>
 </tr></tbody>
 </table>

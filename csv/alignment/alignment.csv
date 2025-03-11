@@ -1,16 +1,16 @@
-Concept source,Property,Concept target
-geosrs:CoordinateSystem,owl:equivalentClass,ign:CoordinateSystem
-geosrs:CoordinateSystem,owl:equivalentClass,iso19111:CoordinateSystem
-geosrs:Datum,owl:equivalentClass,iso19111:Datum
-geosrs:Datum,owl:equivalentClass,ign:Datum
-geosrs:Ellipsoid,owl:equivalentClass,iso19111:Ellipsoid
-geosrs:Ellipsoid,owl:equivalentClass,ign:Ellipsoid
-geosrs:CRS,owl:equivalentClass,ifc:IfcCoordinateReferenceSystem
-geosrs:CoordinateOperation,owl:equivalentClass,ifc:IfcCoordinateOperation
-geosrs:AxisDirection,owl:equivalentClass,ifc:IfcDirection
-geosrs:ProjectedCRS,owl:equivalentClass,ifc:IfcProjectedCRS
-geosrs:axis,owl:equivalentProperty,ifc:axis_IfcAxis1Placement
-geosrs:sourceCRS,owl:equivalentProperty,ifc:sourceCRS
-geosrs:targetCRS,owl:equivalentProperty,ifc:targetCRS
-geosrs:VerticalCoordinateSystem,owl:disjointWith,geosrs:OrdinalCoordinateSystem
-geosrs:Datum,owl:disjointWith,geosrs:CRS
+Concept source,Property,Concept target,Comment
+geosrs:CoordinateSystem,owl:equivalentClass,ign:CoordinateSystem,
+geosrs:CoordinateSystem,owl:equivalentClass,iso19111:CoordinateSystem,
+geosrs:Datum,owl:equivalentClass,iso19111:Datum,
+geosrs:Datum,owl:equivalentClass,ign:Datum,
+geosrs:Ellipsoid,owl:equivalentClass,iso19111:Ellipsoid,
+geosrs:Ellipsoid,owl:equivalentClass,ign:Ellipsoid,
+geosrs:CRS,owl:equivalentClass,ifc:IfcCoordinateReferenceSystem,
+geosrs:CoordinateOperation,owl:equivalentClass,ifc:IfcCoordinateOperation,
+geosrs:AxisDirection,owl:equivalentClass,ifc:IfcDirection,
+geosrs:ProjectedCRS,owl:equivalentClass,ifc:IfcProjectedCRS,
+geosrs:axis,owl:equivalentProperty,ifc:axis_IfcAxis1Placement,
+geosrs:sourceCRS,owl:equivalentProperty,ifc:sourceCRS,
+geosrs:targetCRS,owl:equivalentProperty,ifc:targetCRS,
+geosrs:VerticalCoordinateSystem,owl:disjointWith,geosrs:OrdinalCoordinateSystem,
+geosrs:Datum,owl:disjointWith,geosrs:CRS,

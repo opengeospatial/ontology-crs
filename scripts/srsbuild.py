@@ -448,6 +448,7 @@ dirname = os.path.dirname(__file__)
 abspath = os.path.join(dirname, '../csv/alignment/')
 directory = os.fsencode(abspath)
 print(abspath)      
+alignmentadoc=""
 for file in os.listdir(directory):
     filename = os.fsdecode(file)
     if filename.endswith(".csv"): 
@@ -503,3 +504,4 @@ for ad in moduleToAdoc:
     doc=doc.replace("include::sections/"+str(ad)+"[]","include::sections/"+str(ad)+"[]\n\ninclude::sections/"+str(ad.replace(".adoc","_classes.adoc"))+"[]\n")
 with open("spec/document.adoc", 'w',encoding="utf-8") as f:
     f.write(doc)
+

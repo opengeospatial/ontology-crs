@@ -202,19 +202,6 @@ for file in os.listdir(directory):
         continue
 
 
-for ad in moduleToAdoc:
-    with open("spec/sections/"+ad.replace(".adoc","_classes.adoc"), 'w',encoding="utf-8") as f:
-        for part in moduleToAdoc[ad]:
-            f.write(part)
-doc=""
-with open("spec/document.adoc", 'r',encoding="utf-8") as f:
-    doc=f.read()
-
-for ad in moduleToAdoc:
-    doc=doc.replace("include::sections/"+str(ad)+"[]","include::sections/"+str(ad)+"[]\n\ninclude::sections/"+str(ad.replace(".adoc","_classes.adoc"))+"[]\n")
-with open("spec/document.adoc", 'w',encoding="utf-8") as f:
-    f.write(doc)
-
 #print(prefixtoclasses)
 #print(classToPrefix)
 dirname = os.path.dirname(__file__)
@@ -464,17 +451,15 @@ for file in os.listdir(directory):
        gr.parse(location=abspath+filename, format='json-ld')
        gr.serialize(destination=abspath+filename.replace(".json",".ttl"), format='turtle')
 
-dirname = os.path.dirname(__file__)
-abspath = os.path.join(dirname, '../spec/sections/')
-directory = os.fsencode(abspath)  
-for file in os.listdir(directory):
-    print(file)
-    filename = os.fsdecode(file)
-    for mod in moduleToAdoc:
-        if mod in filename:
-            content=""
-            with open(abspath+filename,"r") as docfile:
-                content=docfile.read()
-            docfile+=moduleToAdoc[mod]
-            with open(abspath+filename,"w") as dfile:
-                dfile.write(docfile)
+for ad in moduleToAdoc:
+    with open("spec/sections/"+ad.replace(".adoc","_classes.adoc"), 'w',encoding="utf-8") as f:
+        for part in moduleToAdoc[ad]:
+            f.write(part)
+doc=""
+with open("spec/document.adoc", 'r',encoding="utf-8") as f:
+    doc=f.read()
+
+for ad in moduleToAdoc:
+    doc=doc.replace("include::sections/"+str(ad)+"[]","include::sections/"+str(ad)+"[]\n\ninclude::sections/"+str(ad.replace(".adoc","_classes.adoc"))+"[]\n")
+with open("spec/document.adoc", 'w',encoding="utf-8") as f:
+    f.write(doc)

@@ -470,7 +470,7 @@ for file in os.listdir(directory):
                         comment=row["Comment"]
                         if comment==None:
                             comment=" "
-                        alignmentadoc[targetprefix].append("|"+str(csourceuri)+"["+row["Concept source"]+"]\n|"+str(cpropuri)+"["+row["Property"]+"]\n|"+str(ctargeturi)+"["+row["Concept source"]+"]\n|\n\n")
+                        alignmentadoc[targetprefix].append("|"+str(csourceuri)+"["+row["Concept source"]+"]\n|"+str(cpropuri)+"["+row["Property"]+"]\n|"+str(ctargeturi)+"["+row["Concept source"]+"]\n| -\n\n")
     else:
         continue
 

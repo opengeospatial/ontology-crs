@@ -482,7 +482,7 @@ with open("spec/sections/aa-alignments.adoc", 'r',encoding="utf-8") as f:
     alignmentdoc=f.read()
 
 with open("spec/sections/aa-alignments.adoc", 'w',encoding="utf-8") as f:
-    f.write(alignmentdoc[0:"=== IGN CRS Ontology"]+alignments)
+    f.write(alignmentdoc[0:alignmentdoc.find("=== IGN CRS Ontology")]+alignments)
 
 g.serialize(destination="alignments.ttl")
 

@@ -451,6 +451,8 @@ for file in os.listdir(directory):
        gr.parse(location=abspath+filename, format='json-ld')
        gr.serialize(destination=abspath+filename.replace(".json",".ttl"), format='turtle')
 
+print(moduleToAdoc)
+
 for ad in moduleToAdoc:
     with open("spec/sections/"+ad.replace(".adoc","_classes.adoc"), 'w',encoding="utf-8") as f:
         for part in moduleToAdoc[ad]:

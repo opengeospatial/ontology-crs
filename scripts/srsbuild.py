@@ -160,11 +160,11 @@ for file in os.listdir(directory):
                                 for spl in row["SuperClass"].split(" "):
                                     gcore.add((URIRef(row["Concept"].replace(coreprefix+":",geocrsNS)),RDFS.subClassOf,URIRef(spl.replace("geosrs:", getNSForClass(spl,classToPrefix)))))
                                     clsuri=row["Concept"].replace(coreprefix+":",geocrsNS)
-                                    adocdef+=clsuri+"["+clsuri[clsuri.rfind("/")+1]+"] "
+                                    adocdef+=clsuri+"["+clsuri[clsuri.rfind("/")+1:]+"] "
                             else:
                                 gcore.add((URIRef(row["Concept"].replace(coreprefix+":",geocrsNS)),RDFS.subClassOf,URIRef(row["SuperClass"].replace("geosrs:", getNSForClass(row["SuperClass"],classToPrefix)))))
                                 clsuri=spl.replace("geosrs:", getNSForClass(spl,classToPrefix))
-                                adocdef+=clsuri+"["+clsuri[clsuri.rfind("/")+1]+"] "
+                                adocdef+=clsuri+"["+clsuri[clsuri.rfind("/")+1:]+"] "
                             adocdef+="\n\n"
                         if "DisjointClass" in row and row["DisjointClass"]!="":
                             if " " in row["DisjointClass"]:
@@ -202,11 +202,11 @@ for file in os.listdir(directory):
                                 for spl in row["SuperClass"].split(" "):
                                     g.add((URIRef(row["Concept"].replace(coreprefix+":",curns)),RDFS.subClassOf,URIRef(spl.replace("geosrs:", getNSForClass(spl,classToPrefix)))))
                                     clsuri=spl.replace("geosrs:", getNSForClass(spl,classToPrefix))
-                                    adocdef+=clsuri+"["+clsuri[clsuri.rfind("/")+1]+"] "
+                                    adocdef+=clsuri+"["+clsuri[clsuri.rfind("/")+1:]+"] "
                             else:
                                 g.add((URIRef(row["Concept"].replace(coreprefix+":",curns)),RDFS.subClassOf,URIRef(row["SuperClass"].replace("geosrs:", getNSForClass(row["SuperClass"],classToPrefix)))))
                                 clsuri=row["Concept"].replace(coreprefix+":",curns)
-                                adocdef+=clsuri+"["+clsuri[clsuri.rfind("/")+1]+"] "
+                                adocdef+=clsuri+"["+clsuri[clsuri.rfind("/")+1:]+"] "
                             adocdef+="\n\n"
                         if "DisjointClass" in row and row["DisjointClass"]!="":
                             if " " in row["DisjointClass"]:

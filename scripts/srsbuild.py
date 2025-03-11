@@ -469,8 +469,8 @@ for file in os.listdir(directory):
                     if targetprefix in alignmentadoc:
                         comment=row["Comment"]
                         if comment==None:
-                            comment=" "
-                        alignmentadoc[targetprefix].append("|"+str(csourceuri)+"["+row["Concept source"]+"]\n|"+str(cpropuri)+"["+row["Property"]+"]\n|"+str(ctargeturi)+"["+row["Concept source"]+"]\n| -\n\n")
+                            comment=" - "
+                        alignmentadoc[targetprefix].append("|"+str(csourceuri)+"["+row["Concept source"]+"]\n|"+str(cpropuri)+"["+row["Property"]+"]\n|"+str(ctargeturi)+"["+row["Concept source"]+"]\n|"+str(comment)+"\n\n")
     else:
         continue
 

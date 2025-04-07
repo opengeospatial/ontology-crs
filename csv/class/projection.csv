@@ -1,282 +1,282 @@
-Concept,SuperClass,Label,Definition,ISO 19111,IGN 2019,Proj4RDF,GeoSPARQL,Core Class?
-geoprojection:A4Projection,geoprojection:LenticularProjection,A4 Projection,,,,geocrs:A4Projection,,Extension
-geoprojection:AdamsProjection,geoprojection:ConformalProjection,Adams Projection,,,,geocrs:AdamsProjection,,Extension
-geoprojection:AdamsWorldInASquareIIProjection,geoprojection:ConformalProjection,Adams World In A Square II Projection,,,,geocrs:AdamsWorldInASquareIIProjection,,Extension
-geoprojection:AdamsWorldInASquareIProjection,geoprojection:ConformalProjection,Adams World In A Square I Projection,,,,geocrs:AdamsWorldInASquareIProjection,,Extension
-geoprojection:AiryProjection,geoprojection:MinimumErrorProjection,Airy Projection,,,,geocrs:AiryProjection,,Extension
-geoprojection:AitoffObliqueProjection,geoprojection:PseudoAzimuthalProjection,Aitoff Oblique Projection,,,,geocrs:AitoffObliqueProjection,,Extension
-geoprojection:AitoffProjection,geoprojection:PseudoAzimuthalProjection,Aitoff Projection,,,,geocrs:AitoffProjection,,Extension
-geoprojection:AlbersEqualAreaProjection,geoprojection:EqualAreaProjection,Albers Equal Area Projection,,,,geocrs:AlbersEqualAreaProjection,,Extension
-geoprojection:AmericanPolyconicProjection,geoprojection:PseudoConicalProjection,American Polyconic Projection,,,,geocrs:AmericanPolyconicProjection,,Extension
-geoprojection:ApianGlobularIProjection,geoprojection:GlobularProjection,Apian Globular I Projection,,,,geocrs:ApianGlobularIProjection,,Extension
-geoprojection:ApianIIProjection,geoprojection:PseudoCylindricalProjection,Apian II Projection,,,,geocrs:ApianIIProjection,,Extension
-geoprojection:ArchaicProjection,,Archaic Projection,,,,geocrs:ArchaicProjection,,Extension
-geoprojection:ArdenCloseProjection,geoprojection:CylindricalProjection,Arden Close Projection,,,,geocrs:ArdenCloseProjection,,Extension
-geoprojection:ArmadilloProjection,geoprojection:CompromiseProjection,Armadillo Projection,,,,geocrs:ArmadilloProjection,,Extension
-geoprojection:AtlantisProjection,geoprojection:PseudoCylindricalProjection,Atlantis Projection,,,,geocrs:AtlantisProjection,,Extension
-geoprojection:AugustEpicycloidalProjection,geoprojection:ConformalProjection,August Epicycloidal Projection,A projection in which every angle between two curves that crosss each other on a celestical body is preserved in the image of the projection,,,geocrs:AugustEpicycloidalProjection,,Extension
-geoprojection:AuthaGraphProjection,geoprojection:PolyhedralProjection,Autha Graph Projection,,,,geocrs:AuthaGraphProjection,,Extension
-geoprojection:AzimuthalEqualAreaProjection,geoprojection:EqualAreaProjection,Azimutal Equal Area Projection,,,,geocrs:AzimuthalEqualAreaProjection,,Extension
-geoprojection:AzimuthalEquidistantProjection,geoprojection:EquidistantProjection,Azimuthal Equidistant Projection,,,,geocrs:AzimuthalEquidistantProjection,,Extension
-geoprojection:AzimuthalProjection,,Azimuthal Projection,,,,geocrs:AzimuthalProjection,,Extension
-geoprojection:BSAMCylindricalProjection,geoprojection:CylindricalStereographicProjection,BSAM Cylindrical Projection,,,,geocrs:BSAMCylindricalProjection,,Extension
-geoprojection:BaconGlobularProjection,geoprojection:GlobularProjection,Bacon Globular Projection,,,,geocrs:BaconGlobularProjection,,Extension
-geoprojection:BakerDinomicProjection,geoprojection:CompromiseProjection,Baker Dinomic Projection,,,,geocrs:BakerDinomicProjection,,Extension
-geoprojection:BalthasartProjection,geoprojection:CylindricalEqualArea,Balthasart Projection,,,,geocrs:BalthasartProjection,,Extension
-geoprojection:BaranyiIIIProjection,geoprojection:PseudoCylindricalProjection,Baranyi III Projection,,,,geocrs:BaranyiIIIProjection,,Extension
-geoprojection:BaranyiIIProjection,geoprojection:PseudoCylindricalProjection,Baranyi II Projection,,,,geocrs:BaranyiIIProjection,,Extension
-geoprojection:BaranyiIProjection,geoprojection:PseudoCylindricalProjection,Baranyi I Projection,,,,geocrs:BaranyiIProjection,,Extension
-geoprojection:BaranyiIVProjection,geoprojection:PseudoCylindricalProjection,Baranyi IV Projection,,,,geocrs:BaranyiIVProjection,,Extension
-geoprojection:BartholomewProjection,geoprojection:WinkelTripelProjection,Batholomew Projection,,,,geocrs:BartholomewProjection,,Extension
-geoprojection:BehrmannProjection,geoprojection:CylindricalEqualArea,Behrmann Projection,,,,geocrs:BehrmannProjection,,Extension
-geoprojection:BerghausStarProjection,geoprojection:EquidistantProjection,Berghaus Star Projection,,,,geocrs:BerghausStarProjection,,Extension
-geoprojection:BertinProjection,geoprojection:CompromiseProjection,Bertin Projection,,,,geocrs:BertinProjection,,Extension
-geoprojection:BipolarObliqueConicConformalProjection,geoprojection:ConicalProjection,Bipolar Oblique Conic Conformal Projection,,,,geocrs:BipolarObliqueConicConformalProjection,,Extension
-geoprojection:BoggsEumorphicProjection,geoprojection:PseudoCylindricalProjection,Boggs Eumorphic Projection,,,,geocrs:BoggsEumorphicProjection,,Extension
-geoprojection:BonneProjection,geoprojection:PseudoConicalProjection,Bonne Projection,,,,geocrs:BonneProjection,,Extension
-geoprojection:BottomleyProjection,geoprojection:PseudoConicalProjection,Bottomley Projection,,,,geocrs:BottomleyProjection,,Extension
-geoprojection:BraunPerspectiveProjection,geoprojection:CylindricalProjection,Braun Perspective Projection,,,,geocrs:BraunPerspectiveProjection,,Extension
-geoprojection:BraunStereographicProjection,geoprojection:CylindricalStereographicProjection,Braun Stereographic Projection,,,,geocrs:BraunStereographicProjection,,Extension
-geoprojection:BreusingGeometricProjection,geoprojection:AzimuthalProjection,Breusing Geometric Projection,,,,geocrs:BreusingGeometricProjection,,Extension
-geoprojection:BreusingHarmonicProjection,geoprojection:AzimuthalProjection,Breusing Harmonic Projection,,,,geocrs:BreusingHarmonicProjection,,Extension
-geoprojection:BriesemeisterProjection,geoprojection:LenticularProjection,Briesemeister Projection,,,,geocrs:BriesemeisterProjection,,Extension
-geoprojection:BromleyProjection,geoprojection:PseudoCylindricalProjection,Bromley Projection,,,,geocrs:BromleyProjection,,Extension
-geoprojection:CabotProjection,geoprojection:PseudoCylindricalProjection,Cabot Projection,,,,geocrs:CabotProjection,,Extension
-geoprojection:CahillKeyesProjection,geoprojection:PolyhedralProjection,Cahill Keyes Projection,,,,geocrs:CahillKeyesProjection,,Extension
-geoprojection:CassiniProjection,geoprojection:EquidistantProjection,Cassini Projection,,,,geocrs:CassiniProjection,,Extension
-geoprojection:CentralConicProjection,geoprojection:ConicalProjection,Central Conic Projection,,,,geocrs:CentralConicProjection,,Extension
-geoprojection:CentralCylindricalProjection,geoprojection:PerspectiveProjection,Central Cylindrical Projection,,,,geocrs:CentralCylindricalProjection,,Extension
-geoprojection:ChamberlinTrimetricProjection,geoprojection:CompromiseProjection,Chamberlin Trimetric Projection,,,,geocrs:ChamberlinTrimetricProjection,,Extension
-geoprojection:CiricIProjection,geoprojection:LenticularProjection,Ciric I Projection,,,,geocrs:CiricIProjection,,Extension
-geoprojection:CollignonButterflyProjection,geoprojection:PolyhedralProjection,Collignon Butterfly Projection,,,,geocrs:CollignonButterflyProjection,,Extension
-geoprojection:CollignonProjection,geoprojection:PseudoCylindricalProjection,Collignon Projection,,,,geocrs:CollignonProjection,,Extension
-geoprojection:ColombiaUrbanProjection,,Colombia Urban Projection,,,,geocrs:ColombiaUrbanProjection,,Extension
-geoprojection:CompactMillerProjection,geoprojection:CylindricalProjection,Compact Miller Projection,,,,geocrs:CompactMillerProjection,,Extension
-geoprojection:CompromiseProjection,,Compromise Projection,,,,geocrs:CompromiseProjection,,Extension
-geoprojection:ConformalProjection,,Conformal Projection,,,,geocrs:ConformalProjection,,Extension
-geoprojection:ConicalProjection,,Conical Projection,,,,geocrs:ConicalProjection,,Extension
-geoprojection:CordiformProjection,,Cordiform Projection,,,,geocrs:CordiformProjection,,Extension
-geoprojection:CoxConformalProjection,geoprojection:ConformalProjection,Cox Conformal Projection,,,,geocrs:CoxConformalProjection,,Extension
-geoprojection:CraigRetroazimuthalProjection,geoprojection:RetroazimuthalProjection,Craig Retroazimuthal Projection,,,,geocrs:CraigRetroazimuthalProjection,,Extension
-geoprojection:CrasterParabolicProjection,geoprojection:PseudoCylindricalProjection,Craster Parabolic Projection,,,,geocrs:CrasterParabolicProjection,,Extension
-geoprojection:CupolaProjection,geoprojection:LenticularProjection,Cupola Projection,,,,geocrs:CupolaProjection,,Extension
-geoprojection:CylindricalEqualArea,geoprojection:EqualAreaProjection,Cylindrical Equal Area Projection,,,,geocrs:CylindricalEqualArea,,Extension
-geoprojection:CylindricalProjection,,Cylindrical Projection,,,,geocrs:CylindricalProjection,,Extension
-geoprojection:CylindricalStereographicProjection,geoprojection:CylindricalProjection,Cylindrical Stereographic Projection,,,,geocrs:CylindricalStereographicProjection,,Extension
-geoprojection:DeakinMinimumErrorProjection,geoprojection:PseudoCylindricalProjection,Deakin Minimum Error Projection,,,,geocrs:DeakinMinimumErrorProjection,,Extension
-geoprojection:DedistortProjection,geoprojection:LenticularProjection,Dedistort Projection,,,,geocrs:DedistortProjection,,Extension
-geoprojection:DenoyerSemiEllipticalProjection,geoprojection:CompromiseProjection,Denoyer Semi Elliptical Projection,,,,geocrs:DenoyerSemiEllipticalProjection,,Extension
-geoprojection:DietrichKitadaProjection,geoprojection:LenticularProjection,Dietrich Kitada Projection,,,,geocrs:DietrichKitadaProjection,,Extension
-geoprojection:DodecahedralProjection,geoprojection:PolyhedralProjection,Dodecahedral Projection,,,,geocrs:DodecahedralProjection,,Extension
-geoprojection:DymaxionProjection,geoprojection:PolyhedralProjection,Dymaxion Projection,,,,geocrs:DymaxionProjection,,Extension
-geoprojection:Eckert1Projection,geoprojection:PseudoCylindricalProjection,Eckert 1 Projection,,,,geocrs:Eckert1Projection,,Extension
-geoprojection:Eckert2Projection,geoprojection:PseudoCylindricalProjection,Eckert 2 Projection,,,,geocrs:Eckert2Projection,,Extension
-geoprojection:Eckert3Projection,geoprojection:PseudoCylindricalProjection,Eckert 3 Projection,,,,geocrs:Eckert3Projection,,Extension
-geoprojection:Eckert4Projection,geoprojection:PseudoCylindricalProjection,Eckert 4 Projection,,,,geocrs:Eckert4Projection,,Extension
-geoprojection:Eckert5Projection,geoprojection:PseudoCylindricalProjection,Eckert 5 Projection,,,,geocrs:Eckert5Projection,,Extension
-geoprojection:Eckert6Projection,geoprojection:PseudoCylindricalProjection,Eckert 6 Projection,,,,geocrs:Eckert6Projection,,Extension
-geoprojection:EisenlohrProjection,geoprojection:ConformalProjection,Eisenlohr Projection,,,,geocrs:EisenlohrProjection,,Extension
-geoprojection:EqualAreaProjection,,Equal Area Projection,,,,geocrs:EqualAreaProjection,,Extension
-geoprojection:EqualEarthProjection,geoprojection:PseudoCylindricalProjection,Equal Earth Projection,,,,geocrs:EqualEarthProjection,,Extension
-geoprojection:EquallySpacedParallelsProjection,,Equally-Spaced Parallels Projection,,,,geocrs:EquallySpacedParallelsProjection,,Extension
-geoprojection:EquidistantConicProjection,geoprojection:EquidistantProjection,Equidistant Conic Projection,,,,geocrs:EquidistantConicProjection,,Extension
-geoprojection:EquidistantCylindricalProjection,geoprojection:EquidistantProjection,Equidistant Cylindrical Projection,,,,geocrs:EquidistantCylindricalProjection,,Extension
-geoprojection:EquidistantProjection,,Equidistant Projection,,,,geocrs:EquidistantProjection,,Extension
-geoprojection:EquirectangularProjection,geoprojection:EquidistantProjection,Equirectangular Projection,,,,geocrs:EquirectangularProjection,,Extension
-geoprojection:FaheyProjection,geoprojection:PseudoCylindricalProjection,Fahey Projection,,,,geocrs:FaheyProjection,,Extension
-geoprojection:FairgrieveProjection,geoprojection:CompromiseProjection,Fairgrieve Projection,,,,geocrs:FairgrieveProjection,,Extension
-geoprojection:FoucautProjection,geoprojection:PseudoCylindricalProjection,Foucaut Projection,,,,geocrs:FoucautProjection,,Extension
-geoprojection:FoucautSinusoidalProjection,geoprojection:PseudoCylindricalProjection,Foucaut Sinusoidal Projection,,,,geocrs:FoucautSinusoidalProjection,,Extension
-geoprojection:FournierGlobularIProjection,geoprojection:GlobularProjection,Fournier Globular I Projection,,,,geocrs:FournierGlobularIProjection,,Extension
-geoprojection:FournierIIProjection,geoprojection:PseudoCylindricalProjection,Fournier II Projection,,,,geocrs:FournierIIProjection,,Extension
-geoprojection:FranculaIIIProjection,geoprojection:LenticularProjection,Francula III Projection,,,,geocrs:FranculaIIIProjection,,Extension
-geoprojection:FranculaIVProjection,geoprojection:LenticularProjection,Francula IV Projection,,,,geocrs:FranculaIVProjection,,Extension
-geoprojection:FranculaIXProjection,geoprojection:LenticularProjection,Francula IX Projection,,,,geocrs:FranculaIXProjection,,Extension
-geoprojection:FranculaVIIIProjection,geoprojection:LenticularProjection,Francula VIII Projection,,,,geocrs:FranculaVIIIProjection,,Extension
-geoprojection:FranculaVProjection,geoprojection:LenticularProjection,Francula V Projection,,,,geocrs:FranculaVProjection,,Extension
-geoprojection:FranculaXIIIProjection,geoprojection:LenticularProjection,Francula XIII Projection,,,,geocrs:FranculaXIIIProjection,,Extension
-geoprojection:FranculaXIIProjection,geoprojection:LenticularProjection,Francula XII Projection,,,,geocrs:FranculaXIIProjection,,Extension
-geoprojection:FranculaXIVProjection,geoprojection:LenticularProjection,Francula XIV Projection,,,,geocrs:FranculaXIVProjection,,Extension
-geoprojection:GS50Projection,geoprojection:ConformalProjection,GS50 Projection,,,,geocrs:GS50Projection,,Extension
-geoprojection:GallIsographicProjection,,Gall Isographic Projection,,,,geocrs:GallIsographicProjection,,Extension
-geoprojection:GallPetersProjection,geoprojection:EqualAreaProjection,Gall Peters Projection,,,,geocrs:GallPetersProjection,,Extension
-geoprojection:GallStereographicProjection,geoprojection:StereographicProjection,Gall Stereographic Projection,,,,geocrs:GallStereographicProjection,,Extension
-geoprojection:GaussKruegerProjection,geoprojection:TransverseMercatorProjection,Gauss Krueger Projection,,,,geocrs:GaussKruegerProjection,,Extension
-geoprojection:GeneralVerticalPerspectiveProjection,geoprojection:PerspectiveProjection,General Vertical Perspective Projection,,,,geocrs:GeneralVerticalPerspectiveProjection,,Extension
-geoprojection:GilbertTwoWorldPerspectiveProjection,geoprojection:PerspectiveProjection,Gilbert Two World Perspective Projection,,,,geocrs:GilbertTwoWorldPerspectiveProjection,,Extension
-geoprojection:GingeryProjection,,Gingery Projection,,,,geocrs:GingeryProjection,,Extension
-geoprojection:GinzburgIIProjection,geoprojection:AzimuthalProjection,Ginzburg II Projection,,,,geocrs:GinzburgIIProjection,,Extension
-geoprojection:GinzburgIProjection,geoprojection:AzimuthalProjection,Ginzburg I Projection,,,,geocrs:GinzburgIProjection,,Extension
-geoprojection:GinzburgIVProjection,geoprojection:PolyconicProjection,Ginzburg IV Projection,,,,geocrs:GinzburgIVProjection,,Extension
-geoprojection:GinzburgIXProjection,geoprojection:PolyconicProjection,Ginzburg IX Projection,,,,geocrs:GinzburgIXProjection,,Extension
-geoprojection:GinzburgVIIIProjection,geoprojection:PseudoCylindricalProjection,Ginzburg VIII Projection,,,,geocrs:GinzburgVIIIProjection,,Extension
-geoprojection:GinzburgVIProjection,geoprojection:PolyconicProjection,Ginzburg VI Projection,,,,geocrs:GinzburgVIProjection,,Extension
-geoprojection:GinzburgVProjection,geoprojection:PolyconicProjection,Ginzburg V Projection,,,,geocrs:GinzburgVProjection,,Extension
-geoprojection:GlobularProjection,,Globular Projection,,,,geocrs:GlobularProjection,,Extension
-geoprojection:GnomonicButterflyProjection,geoprojection:PolyhedralProjection,Gnomonic Butterfly Projection,,,,geocrs:GnomonicButterflyProjection,,Extension
-geoprojection:GnomonicCubedSphereProjection,geoprojection:PolyhedralProjection,Gnomonic Cubed Sphere Projection,,,,geocrs:GnomonicCubedSphereProjection,,Extension
-geoprojection:GnomonicIcosahedronProjection,geoprojection:PolyhedralProjection,Gnomonic Icosahedron Projection,,,,geocrs:GnomonicIcosahedronProjection,,Extension
-geoprojection:GnomonicProjection,geoprojection:AzimuthalProjection,Gnomonic Projection,,,,geocrs:GnomonicProjection,,Extension
-geoprojection:GoodeHomolosineProjection,geoprojection:PseudoCylindricalProjection,Goode Homolosine Projection,,,,geocrs:GoodeHomolosineProjection,,Extension
-geoprojection:GottWagnerProjection,geoprojection:PolyconicProjection,Gott-Wagner Projection,,,,geocrs:GottWagnerProjection,,Extension
-geoprojection:GringortenProjection,geoprojection:ConformalProjection geoprojection:EqualAreaProjection,Gringorten Projection,,,,geocrs:GringortenProjection,,Extension
-geoprojection:GringortenQuincuncialProjection,,Gringorten Quincuncial Projection,,,,geocrs:GringortenQuincuncialProjection,,Extension
-geoprojection:GuyouProjection,geoprojection:PolyhedralProjection,Guyou Projection,,,,geocrs:GuyouProjection,,Extension
-geoprojection:HEALPixProjection,geoprojection:PseudoCylindricalProjection,HEALPix Projection,,,,geocrs:HEALPixProjection,,Extension
-geoprojection:HammerProjection,geoprojection:PseudoAzimuthalProjection,Hammer Projection,,,,geocrs:HammerProjection,,Extension
-geoprojection:HammerRetroazimuthalProjection,geoprojection:RetroazimuthalProjection,Hammer Retroazimuthal Projection,,,,geocrs:HammerRetroazimuthalProjection,,Extension
-geoprojection:HamusoidalProjection,geoprojection:LenticularProjection,Hamusoidal Projection,,,,geocrs:HamusoidalProjection,,Extension
-geoprojection:HatanoAsymmetricalEqualAreaProjection,geoprojection:PseudoCylindricalProjection,Hatano Asymmetrical Equalarea Projection,,,,geocrs:HatanoAsymmetricalEqualAreaProjection,,Extension
-geoprojection:HerschelConformalConicProjection,geoprojection:ConicalProjection,Herschel Conformal Conic Projection,,,,geocrs:HerschelConformalConicProjection,,Extension
-geoprojection:HillEucyclicProjection,geoprojection:PolyconicProjection,Hill Eucyclic Projection,,,,geocrs:HillEucyclicProjection,,Extension
-geoprojection:HoboDyerProjection,geoprojection:EqualAreaProjection,Hobo Dyer Projection,,,,geocrs:HoboDyerProjection,,Extension
-geoprojection:HufnagelIIIProjection,,Hufnagel III Projection,,,,geocrs:HufnagelIIIProjection,,Extension
-geoprojection:HufnagelIIProjection,,Hufnagel II Projection,,,,geocrs:HufnagelIIProjection,,Extension
-geoprojection:HufnagelIProjection,,Hufnagel I Projection,,,,geocrs:HufnagelIProjection,,Extension
-geoprojection:HufnagelIVProjection,,Hufnagel IV Projection,,,,geocrs:HufnagelIVProjection,,Extension
-geoprojection:HufnagelIXProjection,,Hufnagel IX Projection,,,,geocrs:HufnagelIXProjection,,Extension
-geoprojection:HufnagelProjection,geoprojection:PseudoCylindricalProjection,Hufnagel Projection,,,,geocrs:HufnagelProjection,,Extension
-geoprojection:HufnagelVIIIProjection,,Hufnagel VIII Projection,,,,geocrs:HufnagelVIIIProjection,,Extension
-geoprojection:HufnagelVIIProjection,,Hufnagel VII Projection,,,,geocrs:HufnagelVIIProjection,,Extension
-geoprojection:HufnagelVIProjection,,Hufnagel VI Projection,,,,geocrs:HufnagelVIProjection,,Extension
-geoprojection:HufnagelVProjection,,Hufnagel IV Projection,,,,geocrs:HufnagelVProjection,,Extension
-geoprojection:HufnagelXIIProjection,,Hufnagel XII Projection,,,,geocrs:HufnagelXIIProjection,,Extension
-geoprojection:HufnagelXIProjection,,Hufnagel XI Projection,,,,geocrs:HufnagelXIProjection,,Extension
-geoprojection:HufnagelXProjection,,Hufnagel X Projection,,,,geocrs:HufnagelXProjection,,Extension
-geoprojection:IcosahedralProjection,geoprojection:PolyhedralProjection,Icosahedral Projection,,,,geocrs:IcosahedralProjection,,Extension
-geoprojection:InterruptedGoodeHomolosineOceanicViewProjection,,Interrupted Goode Homolosine Oceanic View Projection,,,,geocrs:InterruptedGoodeHomolosineOceanicViewProjection,,Extension
-geoprojection:InterruptedGoodeHomolosineProjection,,Interrupted Goode Homolosine Projection,,,,geocrs:InterruptedGoodeHomolosineProjection,,Extension
-geoprojection:InterruptedQuarticAuthalicProjection,geoprojection:QuarticAuthalicProjection,Interrupted Quartic Authalic Projection,,,,geocrs:InterruptedQuarticAuthalicProjection,,Extension
-geoprojection:JamesAzimuthalProjection,geoprojection:AzimuthalProjection,James Azimuthal Projection,,,,geocrs:JamesAzimuthalProjection,,Extension
-geoprojection:KamenetskiyIProjection,geoprojection:GallStereographicProjection,Kamenetskiy I Projection,,,,geocrs:KamenetskiyIProjection,,Extension
-geoprojection:KarchenkoShabanovaProjection,geoprojection:CylindricalProjection,Karchenko Shabanova Projection,,,,geocrs:KarchenkoShabanovaProjection,,Extension
-geoprojection:Kavrayskiy7Projection,geoprojection:PseudoCylindricalProjection,Kavrayskiy 7 Projection,,,,geocrs:Kavrayskiy7Projection,,Extension
-geoprojection:KissProjection,geoprojection:LenticularProjection,Kiss Projection,,,,geocrs:KissProjection,,Extension
-geoprojection:Krovak,geoprojection:ConicalProjection,Krovak Projection,,,,geocrs:Krovak,,Extension
-geoprojection:LaHireProjection,geoprojection:PerspectiveProjection,La Hire Projection,,,,geocrs:LaHireProjection,,Extension
-geoprojection:LabordeProjection,geoprojection:CylindricalProjection,Laborde Projection,,,,geocrs:LabordeProjection,,Extension
-geoprojection:LagrangeProjection,geoprojection:PolyconicProjection,Lagrange Projection,,,,geocrs:LagrangeProjection,,Extension
-geoprojection:LambertAzimuthalEqualArea,geoprojection:EqualAreaProjection,Lambert Azimuthal Equal Area Projection,,,,geocrs:LambertAzimuthalEqualArea,,Extension
-geoprojection:LambertConformalConicProjection,geoprojection:ConicalProjection,Lambert Conformal Conic Projection,,,,geocrs:LambertConformalConicProjection,,Extension
-geoprojection:LambertCylindricalEqualAreaProjection,geoprojection:CylindricalEqualArea,Lambert Cylindrical Equal Area Projection,,,,geocrs:LambertCylindricalEqualAreaProjection,,Extension
-geoprojection:LarriveeProjection,geoprojection:CompromiseProjection,Larrivee Projection,,,,geocrs:LarriveeProjection,,Extension
-geoprojection:LaskowskiProjection,geoprojection:PolyconicProjection,Laskowski Projection,,,,geocrs:LaskowskiProjection,,Extension
-geoprojection:LatLonProjection,,Lat Lon Projection,,,,geocrs:LatLonProjection,,Extension
-geoprojection:LeeProjection,geoprojection:PolyhedralProjection,Lee Projection,,,,geocrs:LeeProjection,,Extension
-geoprojection:LenticularProjection,,Lenticular Projection,,,,geocrs:LenticularProjection,,Extension
-geoprojection:LittrowProjection,geoprojection:RetroazimuthalProjection,Littrow Projection,,,,geocrs:LittrowProjection,,Extension
-geoprojection:LonLatProjection,,Lon Lat Projection,,,,geocrs:LonLatProjection,,Extension
-geoprojection:LorgnaProjection,geoprojection:PerspectiveProjection,Lorgna Projection,,,,geocrs:LorgnaProjection,,Extension
-geoprojection:LowryProjection,geoprojection:PerspectiveProjection,Lowry Projection,,,,geocrs:LowryProjection,,Extension
-geoprojection:LoximuthalProjection,geoprojection:PseudoCylindricalProjection,Loximuthal Projection,,,,geocrs:LoximuthalProjection,,Extension
-geoprojection:MaurerNo73Projection,,Maurer No73 Projection,,,,geocrs:MaurerNo73Projection,,Extension
-geoprojection:MayrProjection,geoprojection:PseudoCylindricalProjection,Mayr Projection,,,,geocrs:MayrProjection,,Extension
-geoprojection:McBrydeThomasFlatPolarParabolicProjection,geoprojection:PseudoCylindricalProjection,McBryde Thomas Flat Polar Parabolic Projection,,,,geocrs:McBrydeThomasFlatPolarParabolicProjection,,Extension
-geoprojection:McBrydeThomasFlatPolarQuarticProjection,geoprojection:PseudoCylindricalProjection,McBryde Thomas Flat Polar Quartic Projection,,,,geocrs:McBrydeThomasFlatPolarQuarticProjection,,Extension
-geoprojection:McBrydeThomasFlatPolarSinusoidalProjection,geoprojection:PseudoCylindricalProjection,McBryde Thomas Flat Polar Sinusoidal Projection,,,,geocrs:McBrydeThomasFlatPolarSinusoidalProjection,,Extension
-geoprojection:McBrydeThomasIIProjection,geoprojection:PseudoCylindricalProjection,McBryde Thomas II Projection,,,,geocrs:McBrydeThomasIIProjection,,Extension
-geoprojection:McBrydeThomasIProjection,geoprojection:PseudoCylindricalProjection,McBryde Thomas I Projection,,,,geocrs:McBrydeThomasIProjection,,Extension
-geoprojection:MercatorProjection,geoprojection:CylindricalProjection,Mercator Projection,,,,geocrs:MercatorProjection,,Extension
-geoprojection:MillerOblatedStereographicProjection,geoprojection:StereographicProjection,Miller Oblated Stereographic Projection,,,,geocrs:MillerOblatedStereographicProjection,,Extension
-geoprojection:MillerProjection,geoprojection:CylindricalProjection,Miller Projection,,,,geocrs:MillerProjection,,Extension
-geoprojection:MinimumErrorProjection,,Minimum Error Projection,,,,geocrs:MinimumErrorProjection,,Extension
-geoprojection:MollweideProjection,geoprojection:EqualAreaProjection geoprojection:PseudoCylindricalProjection,Mollweide Projection,,,,geocrs:MollweideProjection,,Extension
-geoprojection:MurdochIIIProjection,geoprojection:ConicalProjection,Murdoch III Projection,,,,geocrs:MurdochIIIProjection,,Extension
-geoprojection:MurdochIIProjection,geoprojection:ConicalProjection,Murdoch II Projection,,,,geocrs:MurdochIIProjection,,Extension
-geoprojection:MurdochIProjection,geoprojection:ConicalProjection,Murdoch I Projection,,,,geocrs:MurdochIProjection,,Extension
-geoprojection:MyrahedalProjection,geoprojection:PolyhedralProjection,Myrahedal Projection,,,,geocrs:MyrahedalProjection,,Extension
-geoprojection:NaturalEarth2Projection,geoprojection:PseudoCylindricalProjection,Natural Earth 2 Projection,,,,geocrs:NaturalEarth2Projection,,Extension
-geoprojection:NaturalEarthProjection,geoprojection:PseudoCylindricalProjection,Natural Earth Projection,,,,geocrs:NaturalEarthProjection,,Extension
-geoprojection:NellHammerProjection,geoprojection:PseudoCylindricalProjection,Nell-Hammer Projection,,,,geocrs:NellHammerProjection,,Extension
-geoprojection:NellProjection,geoprojection:PseudoCylindricalProjection,Nell Projection,,,,geocrs:NellProjection,,Extension
-geoprojection:NicolosiGlobularProjection,geoprojection:PseudoConicalProjection,Nicolosi Globular Projection,,,,geocrs:NicolosiGlobularProjection,,Extension
-geoprojection:NordicProjection,geoprojection:ObliqueProjection,Nordic Projection,,,,geocrs:NordicProjection,,Extension
-geoprojection:ObliqueCylindricalEqualAreaProjection,geoprojection:CylindricalEqualArea,Oblique Cylindrical Equal Area Projection,,,,geocrs:ObliqueCylindricalEqualAreaProjection,,Extension
-geoprojection:ObliqueMercatorProjection,geoprojection:ObliqueProjection,Oblique Mercator Projection,,,,geocrs:ObliqueMercatorProjection,,Extension
-geoprojection:ObliquePlateCarreeProjection,geoprojection:EquidistantProjection,Oblique Plate Carree Projection,,,,geocrs:ObliquePlateCarreeProjection,,Extension
-geoprojection:ObliqueProjection,,Oblique Projection,,,,geocrs:ObliqueProjection,,Extension
-geoprojection:ObliqueStereographicProjection,geoprojection:ObliqueProjection,Oblique Stereographic Projection,,,,geocrs:ObliqueStereographicProjection,,Extension
-geoprojection:OctantProjection,geoprojection:PolyhedralProjection,Octant Projection,,,,geocrs:OctantProjection,,Extension
-geoprojection:OrteliusOvalProjection,geoprojection:PseudoCylindricalProjection,Ortelius Oval Projection,,,,geocrs:OrteliusOvalProjection,,Extension
-geoprojection:OrthographicProjection,geoprojection:PerspectiveProjection,Orthographic Projection,,,,geocrs:OrthographicProjection,,Extension
-geoprojection:OvalProjection,,Oval Projection,,,,geocrs:OvalProjection,,Extension
-geoprojection:PattersonCylindricalProjection,geoprojection:CylindricalProjection,Patterson Cylindrical Projection,,,,geocrs:PattersonCylindricalProjection,,Extension
-geoprojection:PavlovProjection,geoprojection:CylindricalProjection,Pavlov Projection,,,,geocrs:PavlovProjection,,Extension
-geoprojection:PeirceQuincuncialProjection,geoprojection:ConformalProjection,Peirce Quincuncial Projection,,,,geocrs:PeirceQuincuncialProjection,,Extension
-geoprojection:PerspectiveConicProjection,geoprojection:PerspectiveProjection,Perspective Conic Projection,,,,geocrs:PerspectiveConicProjection,,Extension
-geoprojection:PerspectiveProjection,,Perspective Projection,,,,geocrs:PerspectiveProjection,,Extension
-geoprojection:PetermannStarProjection,geoprojection:CompromiseProjection,Petermann Star Projection,,,,geocrs:PetermannStarProjection,,Extension
-geoprojection:PlateCarreeProjection,geoprojection:EquidistantProjection,Plate Carree Projection,,,,geocrs:PlateCarreeProjection,,Extension
-geoprojection:PoleLineProjection,,Pole Line Projection,,,,geocrs:PoleLineProjection,,Extension
-geoprojection:PolyconicProjection,,Polyconic Projection,,,,geocrs:PolyconicProjection,,Extension
-geoprojection:PolyhedralProjection,,Polyhedral Projection,,,,geocrs:PolyhedralProjection,,Extension
-geoprojection:Projection,geosrs:Conversion,Projection,,,,geocrs:Projection,,Extension
-geoprojection:PseudoAzimuthalProjection,,Pseudo-Azimuthal Projection,,,,geocrs:PseudoAzimuthalProjection,,Extension
-geoprojection:PseudoConicalProjection,,Pseudo-Conical Projection,,,,geocrs:PseudoConicalProjection,,Extension
-geoprojection:PseudoCylindricalProjection,,Pseudo-Cylindrical Projection,,,,geocrs:PseudoCylindricalProjection,,Extension
-geoprojection:PseudoOrthographicProjection,,Pseudo-Orthographic Projection,,,,geocrs:PseudoOrthographicProjection,,Extension
-geoprojection:PtolemyIIProjection,geoprojection:PseudoConicalProjection,Ptolemy II Projection,,,,geocrs:PtolemyIIProjection,,Extension
-geoprojection:PtolemyIProjection,geoprojection:ArchaicProjection,Ptolemy I Projection,,,,geocrs:PtolemyIProjection,,Extension
-geoprojection:PutninsP1Projection,geoprojection:PseudoCylindricalProjection,Putnins P1 Projection,,,,geocrs:PutninsP1Projection,,Extension
-geoprojection:PutninsP2Projection,geoprojection:PseudoCylindricalProjection,Putnins P2 Projection,,,,geocrs:PutninsP2Projection,,Extension
-geoprojection:PutninsP3Projection,geoprojection:PseudoCylindricalProjection,Putnins P3 Projection,,,,geocrs:PutninsP3Projection,,Extension
-geoprojection:PutninsP5Projection,geoprojection:PseudoCylindricalProjection,Putnins P5 Projection,,,,geocrs:PutninsP5Projection,,Extension
-geoprojection:PutninsP6Projection,geoprojection:PseudoCylindricalProjection,Putnins P6 Projection,,,,geocrs:PutninsP6Projection,,Extension
-geoprojection:QuadrilateralizedSphericalCubeProjection,geoprojection:PolyhedralProjection,Quadrilateralized Spherical Cube Projection,,,,geocrs:QuadrilateralizedSphericalCubeProjection,,Extension
-geoprojection:QuarticAuthalicProjection,geoprojection:PseudoCylindricalProjection,Quartic Authalic Projection,,,,geocrs:QuarticAuthalicProjection,,Extension
-geoprojection:RectangularPolyconicProjection,geoprojection:PolyconicProjection,Rectangular Polyconic Projection,,,,geocrs:RectangularPolyconicProjection,,Extension
-geoprojection:RetroazimuthalProjection,,Retroazimuthal Projection,,,,geocrs:RetroazimuthalProjection,,Extension
-geoprojection:RobinsonProjection,geoprojection:PseudoCylindricalProjection,Robinson Projection,,,,geocrs:RobinsonProjection,,Extension
-geoprojection:RoussilheProjection,geoprojection:StereographicProjection,Roussilhe Projection,,,,geocrs:RoussilheProjection,,Extension
-geoprojection:SchjerningIProjection,geoprojection:ConicalProjection,Schjerning I Projection,,,,geocrs:SchjerningIProjection,,Extension
-geoprojection:SinusoidalProjection,geoprojection:PseudoCylindricalProjection,Sinusoidal Projection,,,,geocrs:SinusoidalProjection,,Extension
-geoprojection:SmythEqualSurfaceProjection,geoprojection:CylindricalEqualArea,Smyth Equal Surface Projection,,,,geocrs:SmythEqualSurfaceProjection,,Extension
-geoprojection:SpaceObliqueMercatorProjection,,Space Oblique Mercator Projection,,,,geocrs:SpaceObliqueMercatorProjection,,Extension
-geoprojection:SpilhausOceanicProjection,geoprojection:CompromiseProjection,Spilhaus Oceanic Projection,,,,geocrs:SpilhausOceanicProjection,,Extension
-geoprojection:StabiusWernerIIIProjection,geoprojection:PolyconicProjection,Stabius Werner III Projection,,,,geocrs:StabiusWernerIIIProjection,,Extension
-geoprojection:StabiusWernerIIProjection,geoprojection:BonneProjection,Stabius Werner II Projection,,,,geocrs:StabiusWernerIIProjection,,Extension
-geoprojection:StabiusWernerIProjection,geoprojection:PolyconicProjection,Stabius Werner I Projection,,,,geocrs:StabiusWernerIProjection,,Extension
-geoprojection:StereographicProjection,geoprojection:ConformalProjection,Stereographic Projection,,,,geocrs:StereographicProjection,,Extension
-geoprojection:Strebe1995Projection,geoprojection:PseudoAzimuthalProjection,Strebe 1995 Projection,,,,geocrs:Strebe1995Projection,,Extension
-geoprojection:TheTimesProjection,geoprojection:PseudoCylindricalProjection,The Times Projection,,,,geocrs:TheTimesProjection,,Extension
-geoprojection:TiltedPerspectiveProjection,geoprojection:PerspectiveProjection,Tilted Perspective Projection,,,,geocrs:TiltedPerspectiveProjection,,Extension
-geoprojection:ToblerCylindricalIIProjection,geoprojection:CylindricalProjection,Tobler Cylindrical III Projection,,,,geocrs:ToblerCylindricalIIProjection,,Extension
-geoprojection:ToblerCylindricalIProjection,geoprojection:CylindricalProjection,Tobler Cylindrical II Projection,,,,geocrs:ToblerCylindricalIProjection,,Extension
-geoprojection:ToblerG1Projection,geoprojection:PseudoCylindricalProjection,Tobler G1 Projection,,,,geocrs:ToblerG1Projection,,Extension
-geoprojection:ToblerHyperellipticalProjection,geoprojection:PseudoCylindricalProjection,Tobler Hyperelliptical Projection,,,,geocrs:ToblerHyperellipticalProjection,,Extension
-geoprojection:ToblerWorldInASquareProjection,geoprojection:CylindricalEqualArea,Tobler World In A Square Projection,,,,geocrs:ToblerWorldInASquareProjection,,Extension
-geoprojection:TransverseCylindricalEqualAreaProjection,geoprojection:CylindricalEqualArea,Transverse Cylindrical Equal Area Projection,,,,geocrs:TransverseCylindricalEqualAreaProjection,,Extension
-geoprojection:TransverseMercatorProjection,geoprojection:MercatorProjection,Transverse Mercator Projection,,,,geocrs:TransverseMercatorProjection,,Extension
-geoprojection:TrystanEdwardsProjection,geoprojection:EqualAreaProjection,Trystan Edwards Projection,,,,geocrs:TrystanEdwardsProjection,,Extension
-geoprojection:TwoPointEquidistantProjection,geoprojection:EquidistantProjection,Two Point Equidistant Projection,,,,geocrs:TwoPointEquidistantProjection,,Extension
-geoprojection:UniversalTransverseMercatorProjection,,Universal Transverse Mercator Projection,,,,geocrs:UniversalTransverseMercatorProjection,,Extension
-geoprojection:UrmayevIIIProjection,geoprojection:CylindricalProjection,Urmayev III Projection,,,,geocrs:UrmayevIIIProjection,,Extension
-geoprojection:VanDerGrintenIIIProjection,geoprojection:CompromiseProjection,Van Der Grinten III Projection,,,,geocrs:VanDerGrintenIIIProjection,,Extension
-geoprojection:VanDerGrintenIIProjection,geoprojection:PolyconicProjection,Van Der Grinten II Projection,,,,geocrs:VanDerGrintenIIProjection,,Extension
-geoprojection:VanDerGrintenIProjection,geoprojection:PolyconicProjection,Van Der Grinten I Projection,,,,geocrs:VanDerGrintenIProjection,,Extension
-geoprojection:VanDerGrintenIVProjection,geoprojection:PolyconicProjection,Van Der Grinten IV Projection,,,,geocrs:VanDerGrintenIVProjection,,Extension
-geoprojection:VerticalPerspectiveProjection,geoprojection:PerspectiveProjection,Vertical Perspective Projection,,,,geocrs:VerticalPerspectiveProjection,,Extension
-geoprojection:VitkovskyIProjection,geoprojection:ConicalProjection,Vitkovsky I Projection,,,,geocrs:VitkovskyIProjection,,Extension
-geoprojection:WagnerIIIProjection,geoprojection:PseudoCylindricalProjection,Wagner III Projection,,,,geocrs:WagnerIIIProjection,,Extension
-geoprojection:WagnerIIProjection,geoprojection:PseudoCylindricalProjection,Wagner II Projection,,,,geocrs:WagnerIIProjection,,Extension
-geoprojection:WagnerIProjection,geoprojection:PseudoCylindricalProjection,Wagner I Projection,,,,geocrs:WagnerIProjection,,Extension
-geoprojection:WagnerIVProjection,geoprojection:PseudoCylindricalProjection,Wagner IV Projection,,,,geocrs:WagnerIVProjection,,Extension
-geoprojection:WagnerIXProjection,geoprojection:PolyconicProjection,Wagner IX Projection,,,,geocrs:WagnerIXProjection,,Extension
-geoprojection:WagnerVIIIProjection,geoprojection:PolyconicProjection,Wagner VIII Projection,,,,geocrs:WagnerVIIIProjection,,Extension
-geoprojection:WagnerVIIProjection,geoprojection:PolyconicProjection,Wagner VII Projection,,,,geocrs:WagnerVIIProjection,,Extension
-geoprojection:WagnerVIProjection,geoprojection:PseudoCylindricalProjection,Wagner VI Projection,,,,geocrs:WagnerVIProjection,,Extension
-geoprojection:WagnerVProjection,geoprojection:PseudoCylindricalProjection,Wagner V Projection,,,,geocrs:WagnerVProjection,,Extension
-geoprojection:WatermanButterflyProjection,geoprojection:PolyhedralProjection,Waterman Butterfly Projection,,,,geocrs:WatermanButterflyProjection,,Extension
-geoprojection:WebMercatorProjection,geoprojection:CylindricalProjection,Web Mercator Projection,,,,geocrs:WebMercatorProjection,,Extension
-geoprojection:WerenskioldIProjection,geoprojection:PseudoCylindricalProjection,Werenskiold I Projection,,,,geocrs:WerenskioldIProjection,,Extension
-geoprojection:WernerProjection,geoprojection:PseudoConicalProjection,Werner Projection,,,,geocrs:WernerProjection,,Extension
-geoprojection:WiechelProjection,geoprojection:EqualAreaProjection,Wiechel Projection,,,,geocrs:WiechelProjection,,Extension
-geoprojection:WinkelIIProjection,geoprojection:CompromiseProjection,Winkel II Projection,,,,geocrs:WinkelIIProjection,,Extension
-geoprojection:WinkelIProjection,geoprojection:CompromiseProjection,Winkel I Projection,,,,geocrs:WinkelIProjection,,Extension
-geoprojection:WinkelSnyderProjection,geoprojection:CompromiseProjection,Winkel Snyder Projection,,,,geocrs:WinkelSnyderProjection,,Extension
-geoprojection:WinkelTripelProjection,geoprojection:PseudoAzimuthalProjection,Winkel Tripel Projection,,,,geocrs:WinkelTripelProjection,,Extension
-geoprojection:PutninsP3'Projection,geoprojection:PseudoCylindricalProjection,PutninsP3'Projection,,,,geocrs:ProjectionOntology#PutninsP3'Projection,,Extension
-geoprojection:PutninsP4'Projection,geoprojection:PseudoCylindricalProjection,PutninsP4'Projection,,,,geocrs:ProjectionOntology#PutninsP4'Projection,,Extension
-geoprojection:PutninsP5'Projection,geoprojection:PseudoCylindricalProjection,PutninsP5'Projection,,,,geocrs:ProjectionOntology#PutninsP5'Projection,,Extension
-geoprojection:PutninsP6'Projection,geoprojection:PseudoCylindricalProjection,PutninsP6'Projection,,,,geocrs:ProjectionOntology#PutninsP6'Projection,,Extension
-geoprojection:MollweideWagnerProjection,,Mollweide Wagner Projection,,,,geocrs:MollweideWagnerProjection,,Extension
+Concept,SuperClass,DisjointClass,Label,Definition,ISO 19111,IGN 2019,Proj4RDF,GeoSPARQL,PROJJSON,Core Class?
+geosrs:A4Projection,geosrs:LenticularProjection,,A4 Projection,,,,geocrs:A4Projection,,,Extension
+geosrs:AdamsProjection,geosrs:ConformalProjection,,Adams Projection,,,,geocrs:AdamsProjection,,,Extension
+geosrs:AdamsWorldInASquareIIProjection,geosrs:ConformalProjection,,Adams World In A Square II Projection,,,,geocrs:AdamsWorldInASquareIIProjection,,,Extension
+geosrs:AdamsWorldInASquareIProjection,geosrs:ConformalProjection,,Adams World In A Square I Projection,,,,geocrs:AdamsWorldInASquareIProjection,,,Extension
+geosrs:AiryProjection,geosrs:MinimumErrorProjection,,Airy Projection,"An azimuthal minimum error projection for the region within the small or great circle defined by an angular distance, from the tangency point of the plane",,,geocrs:AiryProjection,,,Extension
+geosrs:AitoffObliqueProjection,geosrs:PseudoAzimuthalProjection,,Aitoff Oblique Projection,,,,geocrs:AitoffObliqueProjection,,,Extension
+geosrs:AitoffProjection,geosrs:PseudoAzimuthalProjection,,Aitoff Projection,A modified azimuthal projection whose graticule takes the form of an ellipse,,,geocrs:AitoffProjection,,aitoff,Extension
+geosrs:AlbersEqualAreaProjection,geosrs:EqualAreaProjection,,Albers Equal Area Projection,,,,geocrs:AlbersEqualAreaProjection,,aea,Extension
+geosrs:AmericanPolyconicProjection,geosrs:PseudoConicalProjection,,American Polyconic Projection,,,,geocrs:AmericanPolyconicProjection,,poly,Extension
+geosrs:ApianGlobularIProjection,geosrs:GlobularProjection,,Apian Globular I Projection,,,,geocrs:ApianGlobularIProjection,,,Extension
+geosrs:ApianIIProjection,geosrs:PseudoCylindricalProjection,,Apian II Projection,,,,geocrs:ApianIIProjection,,,Extension
+geosrs:ArchaicProjection,,,Archaic Projection,,,,geocrs:ArchaicProjection,,,Extension
+geosrs:ArdenCloseProjection,geosrs:CylindricalProjection,,Arden Close Projection,,,,geocrs:ArdenCloseProjection,,,Extension
+geosrs:ArmadilloProjection,geosrs:CompromiseProjection,,Armadillo Projection,,,,geocrs:ArmadilloProjection,,,Extension
+geosrs:AtlantisProjection,geosrs:PseudoCylindricalProjection,,Atlantis Projection,,,,geocrs:AtlantisProjection,,,Extension
+geosrs:AugustEpicycloidalProjection,geosrs:ConformalProjection,,August Epicycloidal Projection,A projection in which every angle between two curves that crosss each other on a celestical body is preserved in the image of the projection,,,geocrs:AugustEpicycloidalProjection,,,Extension
+geosrs:AuthaGraphProjection,geosrs:PolyhedralProjection,,Autha Graph Projection,,,,geocrs:AuthaGraphProjection,,,Extension
+geosrs:AzimuthalEqualAreaProjection,geosrs:EqualAreaProjection,,Azimutal Equal Area Projection,"In this projection, the radial scale is adjusted so that areas are everywhere correctly represented. The only consideration, therefore, is tha areas shall be strictly comparable over the entire projection. In the process of adjustment, shape and distance may both become distorded. (ref. George P. Kellaway, Map projections. Methuen &co Ltd. London, UK, 1970.)",,,geocrs:AzimuthalEqualAreaProjection,,,Extension
+geosrs:AzimuthalEquidistantProjection,geosrs:EquidistantProjection,,Azimuthal Equidistant Projection,"In this projection, the radial scale is adjusted so that every point on the projection lies at its correct distance from the center of the plane. The scale along the meridians that is, radially from the center, is everywhere correct and it is in respect of this propperty that the projection is said to be equidistant.(ref. George P. Kellaway, Map projections. Methuen &co Ltd. London, UK, 1970.) ",,,geocrs:AzimuthalEquidistantProjection,,,Extension
+geosrs:AzimuthalProjection,,,Azimuthal Projection,,,,geocrs:AzimuthalProjection,,,Extension
+geosrs:BSAMCylindricalProjection,geosrs:CylindricalStereographicProjection,,BSAM Cylindrical Projection,,,,geocrs:BSAMCylindricalProjection,,,Extension
+geosrs:BaconGlobularProjection,geosrs:GlobularProjection,,Bacon Globular Projection,,,,geocrs:BaconGlobularProjection,,,Extension
+geosrs:BakerDinomicProjection,geosrs:CompromiseProjection,,Baker Dinomic Projection,,,,geocrs:BakerDinomicProjection,,,Extension
+geosrs:BalthasartProjection,geosrs:CylindricalEqualArea,,Balthasart Projection,A cylindrical equal-area projection that uses a standard parallel of phi_s=50 degrees,,,geocrs:BalthasartProjection,,,Extension
+geosrs:BaranyiIIIProjection,geosrs:PseudoCylindricalProjection,,Baranyi III Projection,,,,geocrs:BaranyiIIIProjection,,,Extension
+geosrs:BaranyiIIProjection,geosrs:PseudoCylindricalProjection,,Baranyi II Projection,,,,geocrs:BaranyiIIProjection,,,Extension
+geosrs:BaranyiIProjection,geosrs:PseudoCylindricalProjection,,Baranyi I Projection,,,,geocrs:BaranyiIProjection,,,Extension
+geosrs:BaranyiIVProjection,geosrs:PseudoCylindricalProjection,,Baranyi IV Projection,,,,geocrs:BaranyiIVProjection,,,Extension
+geosrs:BartholomewProjection,geosrs:WinkelTripelProjection,,Bartholomew Projection,,,,geocrs:BartholomewProjection,,,Extension
+geosrs:BehrmannProjection,geosrs:CylindricalEqualArea,,Behrmann Projection,A cylindrical equal-area map projection with standard parallels set at 30° north and south,,,geocrs:BehrmannProjection,,,Extension
+geosrs:BerghausStarProjection,geosrs:EquidistantProjection,,Berghaus Star Projection,,,,geocrs:BerghausStarProjection,,,Extension
+geosrs:BertinProjection,geosrs:CompromiseProjection,,Bertin Projection,,,,geocrs:BertinProjection,,,Extension
+geosrs:BipolarObliqueConicConformalProjection,geosrs:ConicalProjection,,Bipolar Oblique Conic Conformal Projection,,,,geocrs:BipolarObliqueConicConformalProjection,,,Extension
+geosrs:BoggsEumorphicProjection,geosrs:PseudoCylindricalProjection,,Boggs Eumorphic Projection,,,,geocrs:BoggsEumorphicProjection,,,Extension
+geosrs:BonneProjection,geosrs:PseudoConicalProjection,,Bonne Projection,,,,geocrs:BonneProjection,,bonne,Extension
+geosrs:BottomleyProjection,geosrs:PseudoConicalProjection,,Bottomley Projection,,,,geocrs:BottomleyProjection,,,Extension
+geosrs:BraunPerspectiveProjection,geosrs:CylindricalProjection,,Braun Perspective Projection,,,,geocrs:BraunPerspectiveProjection,,,Extension
+geosrs:BraunStereographicProjection,geosrs:CylindricalStereographicProjection,,Braun Stereographic Projection,,,,geocrs:BraunStereographicProjection,,,Extension
+geosrs:BreusingGeometricProjection,geosrs:AzimuthalProjection,,Breusing Geometric Projection,,,,geocrs:BreusingGeometricProjection,,,Extension
+geosrs:BreusingHarmonicProjection,geosrs:AzimuthalProjection,,Breusing Harmonic Projection,,,,geocrs:BreusingHarmonicProjection,,,Extension
+geosrs:BriesemeisterProjection,geosrs:LenticularProjection,,Briesemeister Projection,,,,geocrs:BriesemeisterProjection,,,Extension
+geosrs:BromleyProjection,geosrs:PseudoCylindricalProjection,,Bromley Projection,,,,geocrs:BromleyProjection,,,Extension
+geosrs:CabotProjection,geosrs:PseudoCylindricalProjection,,Cabot Projection,,,,geocrs:CabotProjection,,,Extension
+geosrs:CahillKeyesProjection,geosrs:PolyhedralProjection,,Cahill Keyes Projection,,,,geocrs:CahillKeyesProjection,,,Extension
+geosrs:CassiniProjection,geosrs:EquidistantProjection,,Cassini Projection,A map projection first described in an approximate form by César-François Cassini de Thury in 1745,,,geocrs:CassiniProjection,,cass,Extension
+geosrs:CentralConicProjection,geosrs:ConicalProjection,,Central Conic Projection,,,,geocrs:CentralConicProjection,,,Extension
+geosrs:CentralCylindricalProjection,geosrs:PerspectiveProjection,,Central Cylindrical Projection,,,,geocrs:CentralCylindricalProjection,,,Extension
+geosrs:ChamberlinTrimetricProjection,geosrs:CompromiseProjection,,Chamberlin Trimetric Projection,,,,geocrs:ChamberlinTrimetricProjection,,,Extension
+geosrs:CiricIProjection,geosrs:LenticularProjection,,Ciric I Projection,,,,geocrs:CiricIProjection,,,Extension
+geosrs:CollignonButterflyProjection,geosrs:PolyhedralProjection,,Collignon Butterfly Projection,,,,geocrs:CollignonButterflyProjection,,,Extension
+geosrs:CollignonProjection,geosrs:PseudoCylindricalProjection,,Collignon Projection,An equal-area pseudocylindrical projection that maps the sphere onto a triangle or diamond,,,geocrs:CollignonProjection,,collg,Extension
+geosrs:ColombiaUrbanProjection,,,Colombia Urban Projection,,,,geocrs:ColombiaUrbanProjection,,col_urban,Extension
+geosrs:CompactMillerProjection,geosrs:CylindricalProjection,,Compact Miller Projection,,,,geocrs:CompactMillerProjection,,,Extension
+geosrs:CompromiseProjection,,,Compromise Projection,,,,geocrs:CompromiseProjection,,,Extension
+geosrs:ConformalProjection,,,Conformal Projection,,,,geocrs:ConformalProjection,,,Extension
+geosrs:ConicalProjection,,,Conical Projection,,,,geocrs:ConicalProjection,,,Extension
+geosrs:CordiformProjection,,,Cordiform Projection,,,,geocrs:CordiformProjection,,,Extension
+geosrs:CoxConformalProjection,geosrs:ConformalProjection,,Cox Conformal Projection,,,,geocrs:CoxConformalProjection,,,Extension
+geosrs:CraigRetroazimuthalProjection,geosrs:RetroazimuthalProjection,,Craig Retroazimuthal Projection,,,,geocrs:CraigRetroazimuthalProjection,,,Extension
+geosrs:CrasterParabolicProjection,geosrs:PseudoCylindricalProjection,,Craster Parabolic Projection,,,,geocrs:CrasterParabolicProjection,,,Extension
+geosrs:CupolaProjection,geosrs:LenticularProjection,,Cupola Projection,,,,geocrs:CupolaProjection,,,Extension
+geosrs:CylindricalEqualArea,geosrs:EqualAreaProjection,,Cylindrical Equal Area Projection,,,,geocrs:CylindricalEqualArea,,cea,Extension
+geosrs:CylindricalProjection,,,Cylindrical Projection,,,,geocrs:CylindricalProjection,,,Extension
+geosrs:CylindricalStereographicProjection,geosrs:CylindricalProjection,,Cylindrical Stereographic Projection,,,,geocrs:CylindricalStereographicProjection,,,Extension
+geosrs:DeakinMinimumErrorProjection,geosrs:PseudoCylindricalProjection,,Deakin Minimum Error Projection,,,,geocrs:DeakinMinimumErrorProjection,,,Extension
+geosrs:DedistortProjection,geosrs:LenticularProjection,,Dedistort Projection,,,,geocrs:DedistortProjection,,,Extension
+geosrs:DenoyerSemiEllipticalProjection,geosrs:CompromiseProjection,,Denoyer Semi Elliptical Projection,,,,geocrs:DenoyerSemiEllipticalProjection,,,Extension
+geosrs:DietrichKitadaProjection,geosrs:LenticularProjection,,Dietrich Kitada Projection,,,,geocrs:DietrichKitadaProjection,,,Extension
+geosrs:DodecahedralProjection,geosrs:PolyhedralProjection,,Dodecahedral Projection,,,,geocrs:DodecahedralProjection,,,Extension
+geosrs:DymaxionProjection,geosrs:PolyhedralProjection,,Dymaxion Projection,,,,geocrs:DymaxionProjection,,,Extension
+geosrs:Eckert1Projection,geosrs:PseudoCylindricalProjection,,Eckert 1 Projection,,,,geocrs:Eckert1Projection,,,Extension
+geosrs:Eckert2Projection,geosrs:PseudoCylindricalProjection,,Eckert 2 Projection,,,,geocrs:Eckert2Projection,,,Extension
+geosrs:Eckert3Projection,geosrs:PseudoCylindricalProjection,,Eckert 3 Projection,,,,geocrs:Eckert3Projection,,,Extension
+geosrs:Eckert4Projection,geosrs:PseudoCylindricalProjection,,Eckert 4 Projection,,,,geocrs:Eckert4Projection,,,Extension
+geosrs:Eckert5Projection,geosrs:PseudoCylindricalProjection,,Eckert 5 Projection,,,,geocrs:Eckert5Projection,,,Extension
+geosrs:Eckert6Projection,geosrs:PseudoCylindricalProjection,,Eckert 6 Projection,,,,geocrs:Eckert6Projection,,,Extension
+geosrs:EisenlohrProjection,geosrs:ConformalProjection,,Eisenlohr Projection,,,,geocrs:EisenlohrProjection,,,Extension
+geosrs:EqualAreaProjection,,,Equal Area Projection,,,,geocrs:EqualAreaProjection,,,Extension
+geosrs:EqualEarthProjection,geosrs:PseudoCylindricalProjection,,Equal Earth Projection,,,,geocrs:EqualEarthProjection,,eqearth,Extension
+geosrs:EquallySpacedParallelsProjection,,,Equally-Spaced Parallels Projection,,,,geocrs:EquallySpacedParallelsProjection,,,Extension
+geosrs:EquidistantConicProjection,geosrs:EquidistantProjection,,Equidistant Conic Projection,,,,geocrs:EquidistantConicProjection,,eqdc,Extension
+geosrs:EquidistantCylindricalProjection,geosrs:EquidistantProjection,,Equidistant Cylindrical Projection,,,,geocrs:EquidistantCylindricalProjection,,,Extension
+geosrs:EquidistantProjection,,,Equidistant Projection,,,,geocrs:EquidistantProjection,,,Extension
+geosrs:EquirectangularProjection,geosrs:EquidistantProjection,,Equirectangular Projection,,,,geocrs:EquirectangularProjection,,,Extension
+geosrs:FaheyProjection,geosrs:PseudoCylindricalProjection,,Fahey Projection,,,,geocrs:FaheyProjection,,,Extension
+geosrs:FairgrieveProjection,geosrs:CompromiseProjection,,Fairgrieve Projection,,,,geocrs:FairgrieveProjection,,,Extension
+geosrs:FoucautProjection,geosrs:PseudoCylindricalProjection,,Foucaut Projection,,,,geocrs:FoucautProjection,,,Extension
+geosrs:FoucautSinusoidalProjection,geosrs:PseudoCylindricalProjection,,Foucaut Sinusoidal Projection,,,,geocrs:FoucautSinusoidalProjection,,,Extension
+geosrs:FournierGlobularIProjection,geosrs:GlobularProjection,,Fournier Globular I Projection,,,,geocrs:FournierGlobularIProjection,,,Extension
+geosrs:FournierIIProjection,geosrs:PseudoCylindricalProjection,,Fournier II Projection,,,,geocrs:FournierIIProjection,,,Extension
+geosrs:FranculaIIIProjection,geosrs:LenticularProjection,,Francula III Projection,,,,geocrs:FranculaIIIProjection,,,Extension
+geosrs:FranculaIVProjection,geosrs:LenticularProjection,,Francula IV Projection,,,,geocrs:FranculaIVProjection,,,Extension
+geosrs:FranculaIXProjection,geosrs:LenticularProjection,,Francula IX Projection,,,,geocrs:FranculaIXProjection,,,Extension
+geosrs:FranculaVIIIProjection,geosrs:LenticularProjection,,Francula VIII Projection,,,,geocrs:FranculaVIIIProjection,,,Extension
+geosrs:FranculaVProjection,geosrs:LenticularProjection,,Francula V Projection,,,,geocrs:FranculaVProjection,,,Extension
+geosrs:FranculaXIIIProjection,geosrs:LenticularProjection,,Francula XIII Projection,,,,geocrs:FranculaXIIIProjection,,,Extension
+geosrs:FranculaXIIProjection,geosrs:LenticularProjection,,Francula XII Projection,,,,geocrs:FranculaXIIProjection,,,Extension
+geosrs:FranculaXIVProjection,geosrs:LenticularProjection,,Francula XIV Projection,,,,geocrs:FranculaXIVProjection,,,Extension
+geosrs:GS50Projection,geosrs:ConformalProjection,,GS50 Projection,,,,geocrs:GS50Projection,,,Extension
+geosrs:GallIsographicProjection,,,Gall Isographic Projection,,,,geocrs:GallIsographicProjection,,,Extension
+geosrs:GallPetersProjection,geosrs:EqualAreaProjection,,Gall Peters Projection,,,,geocrs:GallPetersProjection,,,Extension
+geosrs:GallStereographicProjection,geosrs:StereographicProjection,,Gall Stereographic Projection,,,,geocrs:GallStereographicProjection,,,Extension
+geosrs:GaussKruegerProjection,geosrs:TransverseMercatorProjection,,Gauss Krueger Projection,,,,geocrs:GaussKruegerProjection,,,Extension
+geosrs:GeneralVerticalPerspectiveProjection,geosrs:PerspectiveProjection,,General Vertical Perspective Projection,,,,geocrs:GeneralVerticalPerspectiveProjection,,,Extension
+geosrs:GilbertTwoWorldPerspectiveProjection,geosrs:PerspectiveProjection,,Gilbert Two World Perspective Projection,,,,geocrs:GilbertTwoWorldPerspectiveProjection,,,Extension
+geosrs:GingeryProjection,,,Gingery Projection,,,,geocrs:GingeryProjection,,,Extension
+geosrs:GinzburgIIProjection,geosrs:AzimuthalProjection,,Ginzburg II Projection,,,,geocrs:GinzburgIIProjection,,,Extension
+geosrs:GinzburgIProjection,geosrs:AzimuthalProjection,,Ginzburg I Projection,,,,geocrs:GinzburgIProjection,,,Extension
+geosrs:GinzburgIVProjection,geosrs:PolyconicProjection,,Ginzburg IV Projection,,,,geocrs:GinzburgIVProjection,,,Extension
+geosrs:GinzburgIXProjection,geosrs:PolyconicProjection,,Ginzburg IX Projection,,,,geocrs:GinzburgIXProjection,,,Extension
+geosrs:GinzburgVIIIProjection,geosrs:PseudoCylindricalProjection,,Ginzburg VIII Projection,,,,geocrs:GinzburgVIIIProjection,,,Extension
+geosrs:GinzburgVIProjection,geosrs:PolyconicProjection,,Ginzburg VI Projection,,,,geocrs:GinzburgVIProjection,,,Extension
+geosrs:GinzburgVProjection,geosrs:PolyconicProjection,,Ginzburg V Projection,,,,geocrs:GinzburgVProjection,,,Extension
+geosrs:GlobularProjection,,,Globular Projection,,,,geocrs:GlobularProjection,,,Extension
+geosrs:GnomonicButterflyProjection,geosrs:PolyhedralProjection,,Gnomonic Butterfly Projection,,,,geocrs:GnomonicButterflyProjection,,,Extension
+geosrs:GnomonicCubedSphereProjection,geosrs:PolyhedralProjection,,Gnomonic Cubed Sphere Projection,,,,geocrs:GnomonicCubedSphereProjection,,,Extension
+geosrs:GnomonicIcosahedronProjection,geosrs:PolyhedralProjection,,Gnomonic Icosahedron Projection,,,,geocrs:GnomonicIcosahedronProjection,,,Extension
+geosrs:GnomonicProjection,geosrs:AzimuthalProjection,,Stereographic Projection,"The projection is made from the center of the globe onto a plane which is tangential to the generating globe. When the plane is tangential at either of the two poles, the resulting projection is referred to as the polar case ; when the plane is tangential at some point on the equator, as the equatorail case ; when the plane is tangential elsewhere, as the oblique case. (ref. George P. Kellaway, Map projections. Methuen &co Ltd. London, UK, 1970.)",,,geocrs:GnomonicProjection,,gnom,Extension
+geosrs:GoodeHomolosineProjection,geosrs:PseudoCylindricalProjection,,Goode Homolosine Projection,,,,geocrs:GoodeHomolosineProjection,,,Extension
+geosrs:GottWagnerProjection,geosrs:PolyconicProjection,,Gott-Wagner Projection,,,,geocrs:GottWagnerProjection,,,Extension
+geosrs:GringortenProjection,geosrs:ConformalProjection geosrs:EqualAreaProjection,,Gringorten Projection,,,,geocrs:GringortenProjection,,,Extension
+geosrs:GringortenQuincuncialProjection,,,Gringorten Quincuncial Projection,,,,geocrs:GringortenQuincuncialProjection,,,Extension
+geosrs:GuyouProjection,geosrs:PolyhedralProjection,,Guyou Projection,,,,geocrs:GuyouProjection,,,Extension
+geosrs:HEALPixProjection,geosrs:PseudoCylindricalProjection,,HEALPix Projection,,,,geocrs:HEALPixProjection,,,Extension
+geosrs:HammerProjection,geosrs:PseudoAzimuthalProjection,,Hammer Projection,,,,geocrs:HammerProjection,,,Extension
+geosrs:HammerRetroazimuthalProjection,geosrs:RetroazimuthalProjection,,Hammer Retroazimuthal Projection,,,,geocrs:HammerRetroazimuthalProjection,,,Extension
+geosrs:HamusoidalProjection,geosrs:LenticularProjection,,Hamusoidal Projection,,,,geocrs:HamusoidalProjection,,,Extension
+geosrs:HatanoAsymmetricalEqualAreaProjection,geosrs:PseudoCylindricalProjection,,Hatano Asymmetrical Equalarea Projection,,,,geocrs:HatanoAsymmetricalEqualAreaProjection,,,Extension
+geosrs:HerschelConformalConicProjection,geosrs:ConicalProjection,,Herschel Conformal Conic Projection,,,,geocrs:HerschelConformalConicProjection,,,Extension
+geosrs:HillEucyclicProjection,geosrs:PolyconicProjection,,Hill Eucyclic Projection,,,,geocrs:HillEucyclicProjection,,,Extension
+geosrs:HoboDyerProjection,geosrs:EqualAreaProjection,,Hobo Dyer Projection,,,,geocrs:HoboDyerProjection,,,Extension
+geosrs:HufnagelIIIProjection,,,Hufnagel III Projection,,,,geocrs:HufnagelIIIProjection,,,Extension
+geosrs:HufnagelIIProjection,,,Hufnagel II Projection,,,,geocrs:HufnagelIIProjection,,,Extension
+geosrs:HufnagelIProjection,,,Hufnagel I Projection,,,,geocrs:HufnagelIProjection,,,Extension
+geosrs:HufnagelIVProjection,,,Hufnagel IV Projection,,,,geocrs:HufnagelIVProjection,,,Extension
+geosrs:HufnagelIXProjection,,,Hufnagel IX Projection,,,,geocrs:HufnagelIXProjection,,,Extension
+geosrs:HufnagelProjection,geosrs:PseudoCylindricalProjection,,Hufnagel Projection,,,,geocrs:HufnagelProjection,,,Extension
+geosrs:HufnagelVIIIProjection,,,Hufnagel VIII Projection,,,,geocrs:HufnagelVIIIProjection,,,Extension
+geosrs:HufnagelVIIProjection,,,Hufnagel VII Projection,,,,geocrs:HufnagelVIIProjection,,,Extension
+geosrs:HufnagelVIProjection,,,Hufnagel VI Projection,,,,geocrs:HufnagelVIProjection,,,Extension
+geosrs:HufnagelVProjection,,,Hufnagel IV Projection,,,,geocrs:HufnagelVProjection,,,Extension
+geosrs:HufnagelXIIProjection,,,Hufnagel XII Projection,,,,geocrs:HufnagelXIIProjection,,,Extension
+geosrs:HufnagelXIProjection,,,Hufnagel XI Projection,,,,geocrs:HufnagelXIProjection,,,Extension
+geosrs:HufnagelXProjection,,,Hufnagel X Projection,,,,geocrs:HufnagelXProjection,,,Extension
+geosrs:IcosahedralProjection,geosrs:PolyhedralProjection,,Icosahedral Projection,,,,geocrs:IcosahedralProjection,,,Extension
+geosrs:InterruptedGoodeHomolosineOceanicViewProjection,,,Interrupted Goode Homolosine Oceanic View Projection,,,,geocrs:InterruptedGoodeHomolosineOceanicViewProjection,,,Extension
+geosrs:InterruptedGoodeHomolosineProjection,,,Interrupted Goode Homolosine Projection,,,,geocrs:InterruptedGoodeHomolosineProjection,,,Extension
+geosrs:InterruptedQuarticAuthalicProjection,geosrs:QuarticAuthalicProjection,,Interrupted Quartic Authalic Projection,,,,geocrs:InterruptedQuarticAuthalicProjection,,,Extension
+geosrs:JamesAzimuthalProjection,geosrs:AzimuthalProjection,,James Azimuthal Projection,,,,geocrs:JamesAzimuthalProjection,,,Extension
+geosrs:KamenetskiyIProjection,geosrs:GallStereographicProjection,,Kamenetskiy I Projection,,,,geocrs:KamenetskiyIProjection,,,Extension
+geosrs:KarchenkoShabanovaProjection,geosrs:CylindricalProjection,,Karchenko Shabanova Projection,,,,geocrs:KarchenkoShabanovaProjection,,,Extension
+geosrs:Kavrayskiy7Projection,geosrs:PseudoCylindricalProjection,,Kavrayskiy 7 Projection,,,,geocrs:Kavrayskiy7Projection,,,Extension
+geosrs:KissProjection,geosrs:LenticularProjection,,Kiss Projection,,,,geocrs:KissProjection,,,Extension
+geosrs:Krovak,geosrs:ConicalProjection,,Krovak Projection,,,,geocrs:Krovak,,krovak,Extension
+geosrs:LaHireProjection,geosrs:PerspectiveProjection,,La Hire Projection,,,,geocrs:LaHireProjection,,,Extension
+geosrs:LabordeProjection,geosrs:CylindricalProjection,,Laborde Projection,,,,geocrs:LabordeProjection,,labrd,Extension
+geosrs:LagrangeProjection,geosrs:PolyconicProjection,,Lagrange Projection,,,,geocrs:LagrangeProjection,,,Extension
+geosrs:LambertAzimuthalEqualArea,geosrs:EqualAreaProjection,,Lambert Azimuthal Equal Area Projection,,,,geocrs:LambertAzimuthalEqualArea,,laea,Extension
+geosrs:LambertConformalConicProjection,geosrs:ConicalProjection,,Lambert Conformal Conic Projection,,,,geocrs:LambertConformalConicProjection,,lcc,Extension
+geosrs:LambertCylindricalEqualAreaProjection,geosrs:CylindricalEqualArea,,Lambert Cylindrical Equal Area Projection,,,,geocrs:LambertCylindricalEqualAreaProjection,,,Extension
+geosrs:LarriveeProjection,geosrs:CompromiseProjection,,Larrivee Projection,,,,geocrs:LarriveeProjection,,,Extension
+geosrs:LaskowskiProjection,geosrs:PolyconicProjection,,Laskowski Projection,,,,geocrs:LaskowskiProjection,,,Extension
+geosrs:LatLonProjection,,,Lat Lon Projection,,,,geocrs:LatLonProjection,,latlong,Extension
+geosrs:LeeProjection,geosrs:PolyhedralProjection,,Lee Projection,,,,geocrs:LeeProjection,,,Extension
+geosrs:LenticularProjection,,,Lenticular Projection,,,,geocrs:LenticularProjection,,,Extension
+geosrs:LittrowProjection,geosrs:RetroazimuthalProjection,,Littrow Projection,,,,geocrs:LittrowProjection,,,Extension
+geosrs:LonLatProjection,,,Lon Lat Projection,,,,geocrs:LonLatProjection,,longlat,Extension
+geosrs:LorgnaProjection,geosrs:PerspectiveProjection,,Lorgna Projection,,,,geocrs:LorgnaProjection,,,Extension
+geosrs:LowryProjection,geosrs:PerspectiveProjection,,Lowry Projection,,,,geocrs:LowryProjection,,,Extension
+geosrs:LoximuthalProjection,geosrs:PseudoCylindricalProjection,,Loximuthal Projection,,,,geocrs:LoximuthalProjection,,loxim,Extension
+geosrs:MaurerNo73Projection,,,Maurer No73 Projection,,,,geocrs:MaurerNo73Projection,,,Extension
+geosrs:MayrProjection,geosrs:PseudoCylindricalProjection,,Mayr Projection,,,,geocrs:MayrProjection,,,Extension
+geosrs:McBrydeThomasFlatPolarParabolicProjection,geosrs:PseudoCylindricalProjection,,McBryde Thomas Flat Polar Parabolic Projection,,,,geocrs:McBrydeThomasFlatPolarParabolicProjection,,,Extension
+geosrs:McBrydeThomasFlatPolarQuarticProjection,geosrs:PseudoCylindricalProjection,,McBryde Thomas Flat Polar Quartic Projection,,,,geocrs:McBrydeThomasFlatPolarQuarticProjection,,,Extension
+geosrs:McBrydeThomasFlatPolarSinusoidalProjection,geosrs:PseudoCylindricalProjection,,McBryde Thomas Flat Polar Sinusoidal Projection,,,,geocrs:McBrydeThomasFlatPolarSinusoidalProjection,,,Extension
+geosrs:McBrydeThomasIIProjection,geosrs:PseudoCylindricalProjection,,McBryde Thomas II Projection,,,,geocrs:McBrydeThomasIIProjection,,,Extension
+geosrs:McBrydeThomasIProjection,geosrs:PseudoCylindricalProjection,,McBryde Thomas I Projection,,,,geocrs:McBrydeThomasIProjection,,,Extension
+geosrs:MercatorProjection,geosrs:CylindricalProjection,,Mercator Projection,,,,geocrs:MercatorProjection,,merc,Extension
+geosrs:MillerOblatedStereographicProjection,geosrs:StereographicProjection,,Miller Oblated Stereographic Projection,,,,geocrs:MillerOblatedStereographicProjection,,,Extension
+geosrs:MillerProjection,geosrs:CylindricalProjection,,Miller Projection,,,,geocrs:MillerProjection,,mill,Extension
+geosrs:MinimumErrorProjection,,,Minimum Error Projection,,,,geocrs:MinimumErrorProjection,,,Extension
+geosrs:MollweideProjection,geosrs:EqualAreaProjection geosrs:PseudoCylindricalProjection,,Mollweide Projection,,,,geocrs:MollweideProjection,,moll,Extension
+geosrs:MurdochIIIProjection,geosrs:ConicalProjection,,Murdoch III Projection,,,,geocrs:MurdochIIIProjection,,,Extension
+geosrs:MurdochIIProjection,geosrs:ConicalProjection,,Murdoch II Projection,,,,geocrs:MurdochIIProjection,,,Extension
+geosrs:MurdochIProjection,geosrs:ConicalProjection,,Murdoch I Projection,,,,geocrs:MurdochIProjection,,,Extension
+geosrs:MyrahedalProjection,geosrs:PolyhedralProjection,,Myrahedal Projection,,,,geocrs:MyrahedalProjection,,,Extension
+geosrs:NaturalEarth2Projection,geosrs:PseudoCylindricalProjection,,Natural Earth 2 Projection,,,,geocrs:NaturalEarth2Projection,,,Extension
+geosrs:NaturalEarthProjection,geosrs:PseudoCylindricalProjection,,Natural Earth Projection,A pseudocylindrical map projection designed by Tom Patterson and introduced in 2008,,,geocrs:NaturalEarthProjection,,natearth,Extension
+geosrs:NellHammerProjection,geosrs:PseudoCylindricalProjection,,Nell-Hammer Projection,,,,geocrs:NellHammerProjection,,,Extension
+geosrs:NellProjection,geosrs:PseudoCylindricalProjection,,Nell Projection,,,,geocrs:NellProjection,,,Extension
+geosrs:NicolosiGlobularProjection,geosrs:PseudoConicalProjection,,Nicolosi Globular Projection,,,,geocrs:NicolosiGlobularProjection,,nicol,Extension
+geosrs:NordicProjection,geosrs:ObliqueProjection,,Nordic Projection,,,,geocrs:NordicProjection,,,Extension
+geosrs:ObliqueCylindricalEqualAreaProjection,geosrs:CylindricalEqualArea,,Oblique Cylindrical Equal Area Projection,,,,geocrs:ObliqueCylindricalEqualAreaProjection,,,Extension
+geosrs:ObliqueMercatorProjection,geosrs:ObliqueProjection,,Oblique Mercator Projection,,,,geocrs:ObliqueMercatorProjection,,omerc,Extension
+geosrs:ObliquePlateCarreeProjection,geosrs:EquidistantProjection,,Oblique Plate Carree Projection,,,,geocrs:ObliquePlateCarreeProjection,,,Extension
+geosrs:ObliqueProjection,,,Oblique Projection,,,,geocrs:ObliqueProjection,,,Extension
+geosrs:ObliqueStereographicProjection,geosrs:ObliqueProjection,,Oblique Stereographic Projection,,,,geocrs:ObliqueStereographicProjection,,sterea,Extension
+geosrs:OctantProjection,geosrs:PolyhedralProjection,,Octant Projection,,,,geocrs:OctantProjection,,,Extension
+geosrs:OrteliusOvalProjection,geosrs:PseudoCylindricalProjection,,Ortelius Oval Projection,,,,geocrs:OrteliusOvalProjection,,,Extension
+geosrs:OrthographicProjection,geosrs:PerspectiveProjection,,Orthographic Projection,"The point of origin is at infinity , and the plane of projection is tangential in any desired position ; so polar, equatorial and oblique case are all possible. The resulting projection is, as it were, a photographic view of a distant globe. (ref. George P. Kellaway, Map projections. Methuen &co Ltd. London, UK, 1970.)",,,geocrs:OrthographicProjection,,ortho,Extension
+geosrs:OvalProjection,,,Oval Projection,,,,geocrs:OvalProjection,,,Extension
+geosrs:PattersonCylindricalProjection,geosrs:CylindricalProjection,,Patterson Cylindrical Projection,,,,geocrs:PattersonCylindricalProjection,,,Extension
+geosrs:PavlovProjection,geosrs:CylindricalProjection,,Pavlov Projection,,,,geocrs:PavlovProjection,,,Extension
+geosrs:PeirceQuincuncialProjection,geosrs:ConformalProjection,,Peirce Quincuncial Projection,,,,geocrs:PeirceQuincuncialProjection,,,Extension
+geosrs:PerspectiveConicProjection,geosrs:PerspectiveProjection,,Perspective Conic Projection,,,,geocrs:PerspectiveConicProjection,,,Extension
+geosrs:PerspectiveProjection,,,Perspective Projection,,,,geocrs:PerspectiveProjection,,,Extension
+geosrs:PetermannStarProjection,geosrs:CompromiseProjection,,Petermann Star Projection,,,,geocrs:PetermannStarProjection,,,Extension
+geosrs:PlateCarreeProjection,geosrs:EquidistantProjection,,Plate Carree Projection,"This is a simple non perspective cylindrical projection. The equator is projected as a straight line, of correct length, and accurately divided for the points of intersection with the meridians, which are projected as straight lines, also of correct lentgh and perpendicular to the equator. The meridians are correctly divided for the points of intersection with the parallels, which are therefore straight lines, parallel to the equator.  (ref. George P. Kellaway, Map projections. Methuen &co Ltd. London, UK, 1970.)",,,geocrs:PlateCarreeProjection,,,Extension
+geosrs:PoleLineProjection,,,Pole Line Projection,,,,geocrs:PoleLineProjection,,,Extension
+geosrs:PolyconicProjection,,,Polyconic Projection,,,,geocrs:PolyconicProjection,,,Extension
+geosrs:PolyhedralProjection,,,Polyhedral Projection,,,,geocrs:PolyhedralProjection,,,Extension
+geosrs:Projection,geosrs:Conversion,,Projection,,,,geocrs:Projection,,,Extension
+geosrs:PseudoAzimuthalProjection,,,Pseudo-Azimuthal Projection,,,,geocrs:PseudoAzimuthalProjection,,,Extension
+geosrs:PseudoConicalProjection,,,Pseudo-Conical Projection,,,,geocrs:PseudoConicalProjection,,,Extension
+geosrs:PseudoCylindricalProjection,,,Pseudo-Cylindrical Projection,,,,geocrs:PseudoCylindricalProjection,,,Extension
+geosrs:PseudoOrthographicProjection,,,Pseudo-Orthographic Projection,,,,geocrs:PseudoOrthographicProjection,,,Extension
+geosrs:PtolemyIIProjection,geosrs:PseudoConicalProjection,,Ptolemy II Projection,,,,geocrs:PtolemyIIProjection,,,Extension
+geosrs:PtolemyIProjection,geosrs:ArchaicProjection,,Ptolemy I Projection,,,,geocrs:PtolemyIProjection,,,Extension
+geosrs:PutninsP1Projection,geosrs:PseudoCylindricalProjection,,Putnins P1 Projection,,,,geocrs:PutninsP1Projection,,,Extension
+geosrs:PutninsP2Projection,geosrs:PseudoCylindricalProjection,,Putnins P2 Projection,,,,geocrs:PutninsP2Projection,,,Extension
+geosrs:PutninsP3Projection,geosrs:PseudoCylindricalProjection,,Putnins P3 Projection,,,,geocrs:PutninsP3Projection,,,Extension
+geosrs:PutninsP5Projection,geosrs:PseudoCylindricalProjection,,Putnins P5 Projection,,,,geocrs:PutninsP5Projection,,,Extension
+geosrs:PutninsP6Projection,geosrs:PseudoCylindricalProjection,,Putnins P6 Projection,,,,geocrs:PutninsP6Projection,,,Extension
+geosrs:QuadrilateralizedSphericalCubeProjection,geosrs:PolyhedralProjection,,Quadrilateralized Spherical Cube Projection,,,,geocrs:QuadrilateralizedSphericalCubeProjection,,,Extension
+geosrs:QuarticAuthalicProjection,geosrs:PseudoCylindricalProjection,,Quartic Authalic Projection,,,,geocrs:QuarticAuthalicProjection,,,Extension
+geosrs:RectangularPolyconicProjection,geosrs:PolyconicProjection,,Rectangular Polyconic Projection,,,,geocrs:RectangularPolyconicProjection,,rpoly,Extension
+geosrs:RetroazimuthalProjection,,,Retroazimuthal Projection,,,,geocrs:RetroazimuthalProjection,,,Extension
+geosrs:RobinsonProjection,geosrs:PseudoCylindricalProjection,,Robinson Projection,,,,geocrs:RobinsonProjection,,robin,Extension
+geosrs:RoussilheProjection,geosrs:StereographicProjection,,Roussilhe Projection,,,,geocrs:RoussilheProjection,,,Extension
+geosrs:SchjerningIProjection,geosrs:ConicalProjection,,Schjerning I Projection,,,,geocrs:SchjerningIProjection,,,Extension
+geosrs:SinusoidalProjection,geosrs:PseudoCylindricalProjection,,Sinusoidal Projection,,,,geocrs:SinusoidalProjection,,sinu,Extension
+geosrs:SmythEqualSurfaceProjection,geosrs:CylindricalEqualArea,,Smyth Equal Surface Projection,,,,geocrs:SmythEqualSurfaceProjection,,,Extension
+geosrs:SpaceObliqueMercatorProjection,,,Space Oblique Mercator Projection,,,,geocrs:SpaceObliqueMercatorProjection,,,Extension
+geosrs:SpilhausOceanicProjection,geosrs:CompromiseProjection,,Spilhaus Oceanic Projection,,,,geocrs:SpilhausOceanicProjection,,,Extension
+geosrs:StabiusWernerIIIProjection,geosrs:PolyconicProjection,,Stabius Werner III Projection,,,,geocrs:StabiusWernerIIIProjection,,,Extension
+geosrs:StabiusWernerIIProjection,geosrs:BonneProjection,,Stabius Werner II Projection,,,,geocrs:StabiusWernerIIProjection,,,Extension
+geosrs:StabiusWernerIProjection,geosrs:PolyconicProjection,,Stabius Werner I Projection,,,,geocrs:StabiusWernerIProjection,,,Extension
+geosrs:StereographicProjection,geosrs:ConformalProjection,,Stereographic Projection,"The projection is made from the end of the diameter which is opposite the point of contact of the plane of projection ; so polar, equatorial and oblique case are all possible. (ref. George P. Kellaway, Map projections. Methuen &co Ltd. London, UK, 1970.)",,,geocrs:StereographicProjection,,stere,Extension
+geosrs:Strebe1995Projection,geosrs:PseudoAzimuthalProjection,,Strebe 1995 Projection,,,,geocrs:Strebe1995Projection,,,Extension
+geosrs:TheTimesProjection,geosrs:PseudoCylindricalProjection,,The Times Projection,,,,geocrs:TheTimesProjection,,,Extension
+geosrs:TiltedPerspectiveProjection,geosrs:PerspectiveProjection,,Tilted Perspective Projection,,,,geocrs:TiltedPerspectiveProjection,,,Extension
+geosrs:ToblerCylindricalIIProjection,geosrs:CylindricalProjection,,Tobler Cylindrical III Projection,,,,geocrs:ToblerCylindricalIIProjection,,,Extension
+geosrs:ToblerCylindricalIProjection,geosrs:CylindricalProjection,,Tobler Cylindrical II Projection,,,,geocrs:ToblerCylindricalIProjection,,,Extension
+geosrs:ToblerG1Projection,geosrs:PseudoCylindricalProjection,,Tobler G1 Projection,,,,geocrs:ToblerG1Projection,,,Extension
+geosrs:ToblerHyperellipticalProjection,geosrs:PseudoCylindricalProjection,,Tobler Hyperelliptical Projection,,,,geocrs:ToblerHyperellipticalProjection,,,Extension
+geosrs:ToblerWorldInASquareProjection,geosrs:CylindricalEqualArea,,Tobler World In A Square Projection,,,,geocrs:ToblerWorldInASquareProjection,,,Extension
+geosrs:TransverseCylindricalEqualAreaProjection,geosrs:CylindricalEqualArea,,Transverse Cylindrical Equal Area Projection,,,,geocrs:TransverseCylindricalEqualAreaProjection,,,Extension
+geosrs:TransverseMercatorProjection,geosrs:MercatorProjection,,Transverse Mercator Projection,,,,geocrs:TransverseMercatorProjection,,tmerc,Extension
+geosrs:TrystanEdwardsProjection,geosrs:EqualAreaProjection,,Trystan Edwards Projection,,,,geocrs:TrystanEdwardsProjection,,,Extension
+geosrs:TwoPointEquidistantProjection,geosrs:EquidistantProjection,,Two Point Equidistant Projection,,,,geocrs:TwoPointEquidistantProjection,,,Extension
+geosrs:UniversalTransverseMercatorProjection,,,Universal Transverse Mercator Projection,,,,geocrs:UniversalTransverseMercatorProjection,,utm,Extension
+geosrs:UrmayevIIIProjection,geosrs:CylindricalProjection,,Urmayev III Projection,,,,geocrs:UrmayevIIIProjection,,,Extension
+geosrs:VanDerGrintenIIIProjection,geosrs:CompromiseProjection,,Van Der Grinten III Projection,,,,geocrs:VanDerGrintenIIIProjection,,,Extension
+geosrs:VanDerGrintenIIProjection,geosrs:PolyconicProjection,,Van Der Grinten II Projection,,,,geocrs:VanDerGrintenIIProjection,,,Extension
+geosrs:VanDerGrintenIProjection,geosrs:PolyconicProjection,,Van Der Grinten I Projection,,,,geocrs:VanDerGrintenIProjection,,,Extension
+geosrs:VanDerGrintenIVProjection,geosrs:PolyconicProjection,,Van Der Grinten IV Projection,,,,geocrs:VanDerGrintenIVProjection,,,Extension
+geosrs:VerticalPerspectiveProjection,geosrs:PerspectiveProjection,,Vertical Perspective Projection,,,,geocrs:VerticalPerspectiveProjection,,,Extension
+geosrs:VitkovskyIProjection,geosrs:ConicalProjection,,Vitkovsky I Projection,,,,geocrs:VitkovskyIProjection,,,Extension
+geosrs:WagnerIIIProjection,geosrs:PseudoCylindricalProjection,,Wagner III Projection,,,,geocrs:WagnerIIIProjection,,,Extension
+geosrs:WagnerIIProjection,geosrs:PseudoCylindricalProjection,,Wagner II Projection,,,,geocrs:WagnerIIProjection,,,Extension
+geosrs:WagnerIProjection,geosrs:PseudoCylindricalProjection,,Wagner I Projection,,,,geocrs:WagnerIProjection,,,Extension
+geosrs:WagnerIVProjection,geosrs:PseudoCylindricalProjection,,Wagner IV Projection,,,,geocrs:WagnerIVProjection,,,Extension
+geosrs:WagnerIXProjection,geosrs:PolyconicProjection,,Wagner IX Projection,,,,geocrs:WagnerIXProjection,,,Extension
+geosrs:WagnerVIIIProjection,geosrs:PolyconicProjection,,Wagner VIII Projection,,,,geocrs:WagnerVIIIProjection,,,Extension
+geosrs:WagnerVIIProjection,geosrs:PolyconicProjection,,Wagner VII Projection,,,,geocrs:WagnerVIIProjection,,,Extension
+geosrs:WagnerVIProjection,geosrs:PseudoCylindricalProjection,,Wagner VI Projection,,,,geocrs:WagnerVIProjection,,,Extension
+geosrs:WagnerVProjection,geosrs:PseudoCylindricalProjection,,Wagner V Projection,,,,geocrs:WagnerVProjection,,,Extension
+geosrs:WatermanButterflyProjection,geosrs:PolyhedralProjection,,Waterman Butterfly Projection,,,,geocrs:WatermanButterflyProjection,,,Extension
+geosrs:WebMercatorProjection,geosrs:CylindricalProjection,,Web Mercator Projection,,,,geocrs:WebMercatorProjection,,,Extension
+geosrs:WerenskioldIProjection,geosrs:PseudoCylindricalProjection,,Werenskiold I Projection,,,,geocrs:WerenskioldIProjection,,,Extension
+geosrs:WernerProjection,geosrs:PseudoConicalProjection,,Werner Projection,,,,geocrs:WernerProjection,,,Extension
+geosrs:WiechelProjection,geosrs:EqualAreaProjection,,Wiechel Projection,,,,geocrs:WiechelProjection,,,Extension
+geosrs:WinkelIIProjection,geosrs:CompromiseProjection,,Winkel II Projection,,,,geocrs:WinkelIIProjection,,,Extension
+geosrs:WinkelIProjection,geosrs:CompromiseProjection,,Winkel I Projection,,,,geocrs:WinkelIProjection,,,Extension
+geosrs:WinkelSnyderProjection,geosrs:CompromiseProjection,,Winkel Snyder Projection,,,,geocrs:WinkelSnyderProjection,,,Extension
+geosrs:WinkelTripelProjection,geosrs:PseudoAzimuthalProjection,,Winkel Tripel Projection,,,,geocrs:WinkelTripelProjection,,,Extension
+geosrs:PutninsP3'Projection,geosrs:PseudoCylindricalProjection,,PutninsP3'Projection,,,,geocrs:ProjectionOntology#PutninsP3'Projection,,,Extension
+geosrs:PutninsP4'Projection,geosrs:PseudoCylindricalProjection,,PutninsP4'Projection,,,,geocrs:ProjectionOntology#PutninsP4'Projection,,,Extension
+geosrs:PutninsP5'Projection,geosrs:PseudoCylindricalProjection,,PutninsP5'Projection,,,,geocrs:ProjectionOntology#PutninsP5'Projection,,,Extension
+geosrs:PutninsP6'Projection,geosrs:PseudoCylindricalProjection,,PutninsP6'Projection,,,,geocrs:ProjectionOntology#PutninsP6'Projection,,,Extension
+geosrs:MollweideWagnerProjection,,,Mollweide Wagner Projection,,,,geocrs:MollweideWagnerProjection,,,Extension

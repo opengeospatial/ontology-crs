@@ -11,34 +11,34 @@
     skos:scopeNote "Engineering survey, topographic mapping." ;
     geosrs:Conversion [ rdfs:label "Lambert-93" ;
             geosrs:method [ rdfs:label "Lambert Conic Conformal (2SP)" ] ;
-            geosrs:operationParameter [ rdfs:label "Northing at false origin" ;
-                    om:hasUnit om:metre ;
-                    rdf:value 6600000 ],
+            geosrs:operationParameter [ rdfs:label "Latitude of 1st standard parallel" ;
+                    om:hasUnit om:degree ;
+                    rdf:value 49 ],
                 [ rdfs:label "Latitude of false origin" ;
                     om:hasUnit om:degree ;
                     rdf:value 4.65e+01 ],
-                [ rdfs:label "Latitude of 1st standard parallel" ;
+                [ rdfs:label "Longitude of false origin" ;
                     om:hasUnit om:degree ;
-                    rdf:value 49 ],
+                    rdf:value 3 ],
                 [ rdfs:label "Latitude of 2nd standard parallel" ;
                     om:hasUnit om:degree ;
                     rdf:value 44 ],
+                [ rdfs:label "Northing at false origin" ;
+                    om:hasUnit om:metre ;
+                    rdf:value 6600000 ],
                 [ rdfs:label "Easting at false origin" ;
                     om:hasUnit om:metre ;
-                    rdf:value 700000 ],
-                [ rdfs:label "Longitude of false origin" ;
-                    om:hasUnit om:degree ;
-                    rdf:value 3 ] ] ;
+                    rdf:value 700000 ] ] ;
     geosrs:baseCRS [ rdfs:label "RGF93 v1" ;
             geosrs:coordinateSystem [ a geosrs:EllipsoidalCoordinateSystem ;
-                    geosrs:axis [ rdfs:label "Geodetic longitude" ;
-                            om:hasUnit om:degree ;
-                            skos:altLabel "Lon" ;
-                            geosrs:axisDirection geosrs_cs:east ],
-                        [ rdfs:label "Geodetic latitude" ;
+                    geosrs:axis [ rdfs:label "Geodetic latitude" ;
                             om:hasUnit om:degree ;
                             skos:altLabel "Lat" ;
-                            geosrs:axisDirection geosrs_cs:north ] ] ;
+                            geosrs:axisDirection geosrs_cs:north ],
+                        [ rdfs:label "Geodetic longitude" ;
+                            om:hasUnit om:degree ;
+                            skos:altLabel "Lon" ;
+                            geosrs:axisDirection geosrs_cs:east ] ] ;
             geosrs:datum [ a geosrs:GeodeticDatum ;
                     rdfs:label "Reseau Geodesique Francais 1993 v1" ;
                     geosrs:ellipsoid [ rdfs:label "GRS 1980" ;

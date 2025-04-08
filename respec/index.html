@@ -581,29 +581,9 @@ Here&#8217;s an example of an example term.
 </table>
 </section>
 <section class="sect3">
-<h4 id="_class_geosrsareaofuse">Class: geosrs:AreaOfUse</h4>
-<table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 11. geosrs:AreaOfUse</caption>
-<colgroup>
-<col style="width: 50%;">
-<col style="width: 50%;">
-</colgroup>
-<tbody>
-<tr>
-  <td class="tableblock halign-left valign-top"><p class="tableblock">Type</p></td>
-  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://www.w3.org/2002/07/owl#Class">owl:Class</a></p></td>
-</tr>
-<tr>
-  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
-  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/srs/AreaOfUse">https://w3id.org/geosrs/srs/AreaOfUse</a></p></td>
-</tr>
-</tbody>
-</table>
-</section>
-<section class="sect3">
 <h4 id="_class_geosrscrs">Class: geosrs:CRS</h4>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 12. geosrs:CRS</caption>
+<caption class="title">Table 11. geosrs:CRS</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -623,7 +603,7 @@ Here&#8217;s an example of an example term.
 </tr>
 <tr>
   <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
-  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/cs/3DCoordinateSystem">3DCoordinateSystem</a></p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">CRS[CRS]</p></td>
 </tr>
 </tbody>
 </table>
@@ -631,7 +611,7 @@ Here&#8217;s an example of an example term.
 <section class="sect3">
 <h4 id="_class_geosrsengineeringcrs">Class: geosrs:EngineeringCRS</h4>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 13. geosrs:EngineeringCRS</caption>
+<caption class="title">Table 12. geosrs:EngineeringCRS</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -645,13 +625,21 @@ Here&#8217;s an example of an example term.
   <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
   <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/srs/EngineeringCRS">https://w3id.org/geosrs/srs/EngineeringCRS</a></p></td>
 </tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Definition</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">A contextually local coordinate reference system which can be divided into two broad categories: - earth-fixed systems applied to engineering activities on or near the surface of the earth; - CRSs on moving platforms such as road vehicles, vessels, aircraft or spacecraft.</p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">CRS[CRS]</p></td>
+</tr>
 </tbody>
 </table>
 </section>
 <section class="sect3">
 <h4 id="_class_geosrsgeodeticcrs">Class: geosrs:GeodeticCRS</h4>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 14. geosrs:GeodeticCRS</caption>
+<caption class="title">Table 13. geosrs:GeodeticCRS</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -667,7 +655,11 @@ Here&#8217;s an example of an example term.
 </tr>
 <tr>
   <td class="tableblock halign-left valign-top"><p class="tableblock">Definition</p></td>
-  <td class="tableblock halign-left valign-top"><p class="tableblock">Coordinate reference system associated with a geodetic datum. Cf. ISO 19111:2007:2007-07, part 8.2.2.a, table 10 and annex B.1.2.1.a.</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Coordinate Reference System associated with a geodetic datum. Cf. ISO 19111:2007:2007-07, part 8.2.2.a, table 10 and annex B.1.2.1.a.</p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">CRS[CRS]</p></td>
 </tr>
 </tbody>
 </table>
@@ -675,7 +667,7 @@ Here&#8217;s an example of an example term.
 <section class="sect3">
 <h4 id="_class_geosrsgeographiccrs">Class: geosrs:GeographicCRS</h4>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 15. geosrs:GeographicCRS</caption>
+<caption class="title">Table 14. geosrs:GeographicCRS</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -689,13 +681,21 @@ Here&#8217;s an example of an example term.
   <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
   <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/srs/GeographicCRS">https://w3id.org/geosrs/srs/GeographicCRS</a></p></td>
 </tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Definition</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Coordinate Reference System that has a geodetic reference frame and an ellipsoidal coordinate system</p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">CRS[CRS]</p></td>
+</tr>
 </tbody>
 </table>
 </section>
 <section class="sect3">
 <h4 id="_class_geosrsprojectedcrs">Class: geosrs:ProjectedCRS</h4>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 16. geosrs:ProjectedCRS</caption>
+<caption class="title">Table 15. geosrs:ProjectedCRS</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -711,7 +711,35 @@ Here&#8217;s an example of an example term.
 </tr>
 <tr>
   <td class="tableblock halign-left valign-top"><p class="tableblock">Definition</p></td>
-  <td class="tableblock halign-left valign-top"><p class="tableblock">Coordinate reference system derived from a two-dimensional geodetic coordinate reference system by applying a map projection. Cf. ISO 19111:2007:2007-07, part 8.2.3.b, table 11 and annex B.1.2.3.</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Coordinate Reference System derived from a two-dimensional geodetic coordinate reference system by applying a map projection. Cf. ISO 19111:2007:2007-07, part 8.2.3.b, table 11 and annex B.1.2.3.</p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">CRS[CRS]</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sect3">
+<h4 id="_class_geosrsreferencesystem">Class: geosrs:ReferenceSystem</h4>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Table 16. geosrs:ReferenceSystem</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Type</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://www.w3.org/2002/07/owl#Class">owl:Class</a></p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/srs/ReferenceSystem">https://w3id.org/geosrs/srs/ReferenceSystem</a></p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Definition</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">An abstract coordinate system, whose origin, orientation and scale are specified in physical space. It is based on a set of reference points, defined as geometric points whose position is identified physically and mathematically.</p></td>
 </tr>
 </tbody>
 </table>
@@ -737,6 +765,10 @@ Here&#8217;s an example of an example term.
   <td class="tableblock halign-left valign-top"><p class="tableblock">Definition</p></td>
   <td class="tableblock halign-left valign-top"><p class="tableblock">Coordinate reference system consisting of one coordinate system and one datum. Cf. ISO 19111:2007:2007-07, table 5.</p></td>
 </tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">CRS[CRS]</p></td>
+</tr>
 </tbody>
 </table>
 </section>
@@ -759,7 +791,7 @@ Here&#8217;s an example of an example term.
 </tr>
 <tr>
   <td class="tableblock halign-left valign-top"><p class="tableblock">Definition</p></td>
-  <td class="tableblock halign-left valign-top"><p class="tableblock">A reference system allowing the description of a position.</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">A spatial reference system (SRS) is a system for establishing spatial position. A spatial reference system can use geographic identifiers (place names, for example), coordinates (in which case it is a coordinate reference system), or identifiers with structured geometry (in which case it is a discrete global grid system).</p></td>
 </tr>
 <tr>
   <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
@@ -1291,7 +1323,7 @@ Here&#8217;s an example of an example term.
 </tr>
 <tr>
   <td class="tableblock halign-left valign-top"><p class="tableblock">Range</p></td>
-  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/AreaOfUse">AreaOfUse</a></p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/srs/AreaOfUse">AreaOfUse</a></p></td>
 </tr>
 <tr>
   <td class="tableblock halign-left valign-top"><p class="tableblock">Domain</p></td>
@@ -8258,7 +8290,7 @@ Actual References:
 </section>
 <div id="footer">
 <div id="footer-text">
-Last updated 2025-03-11 19:32:08 UTC
+Last updated 2025-04-08 14:16:32 UTC
 </div>
 </div>
 </body>

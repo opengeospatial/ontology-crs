@@ -1,10 +1,27 @@
+@prefix geosrs: <https://w3id.org/geosrs/> .
+@prefix geosrs_co: <https://w3id.org/geosrs/co/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://www.opengis.net/ont/srs/geosrs/co> a owl:Ontology ;
-    rdfs:label "SRS Ontology: Geoco"@en ;
-    vann:preferredNamespacePrefix "geoco"^^xsd:string ;
-    vann:preferredNamespaceUri "http://www.opengis.net/ont/srs/co/"^^xsd:anyURI .
+geosrs_co:derivingConversion a owl:ObjectProperty ;
+    rdfs:label "deriving conversion"@en ;
+    rdfs:domain geosrs:CRS ;
+    rdfs:range geosrs:CRS .
+
+geosrs_co:method a owl:ObjectProperty ;
+    rdfs:label "method"@en ;
+    rdfs:domain geosrs:CRS ;
+    rdfs:range geosrs:CoordinateOperation .
+
+geosrs_co:parameter a owl:ObjectProperty ;
+    rdfs:label "parameter"@en ;
+    rdfs:domain geosrs:Conversion ;
+    rdfs:range geosrs:OperationParameter .
+
+geosrs:coco a owl:Ontology ;
+    rdfs:label "SRS Ontology: Geosrs_co"@en ;
+    vann:preferredNamespacePrefix "geosrs_co"^^xsd:string ;
+    vann:preferredNamespaceUri "https://w3id.org/geosrs/co/"^^xsd:anyURI .
 

@@ -1,8 +1,15 @@
-@prefix geosrs: <http://www.opengis.net/ont/srs/> .
+@prefix geosrs: <https://w3id.org/geosrs/> .
+@prefix ifc: <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL/> .
 @prefix ign: <http://data.ign.fr/def/ignf#> .
 @prefix iso19111: <http://def.isotc211.org/iso19112/2019/SpatialReferencingByGeographicIdentifier#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+geosrs:AxisDirection owl:equivalentClass ifc:IfcDirection .
+
+geosrs:CRS owl:equivalentClass ifc:IfcCoordinateReferenceSystem .
+
+geosrs:CoordinateOperation owl:equivalentClass ifc:IfcCoordinateOperation .
 
 geosrs:CoordinateSystem owl:equivalentClass ign:CoordinateSystem,
         iso19111:CoordinateSystem .
@@ -13,6 +20,14 @@ geosrs:Datum owl:equivalentClass ign:Datum,
 geosrs:Ellipsoid owl:equivalentClass ign:Ellipsoid,
         iso19111:Ellipsoid .
 
-<http://www.opengis.net/ont/srs/geosrs/alignments/> a owl:Ontology ;
+geosrs:ProjectedCRS owl:equivalentClass ifc:IfcProjectedCRS .
+
+<https://w3id.org/geosrs/alignments/> a owl:Ontology ;
     rdfs:label "SRS Ontology Alignments"@en .
+
+geosrs:axis owl:equivalentProperty ifc:axis_IfcAxis1Placement .
+
+geosrs:sourceCRS owl:equivalentProperty ifc:sourceCRS .
+
+geosrs:targetCRS owl:equivalentProperty ifc:targetCRS .
 

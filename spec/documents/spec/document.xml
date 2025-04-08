@@ -317,21 +317,9 @@
 </table>
 </clause>
 
-<clause id="_class_geosrsareaofuse" obligation="normative">
-<title>Class: geosrs:AreaOfUse</title>
-<table id="_f07082e4-58f9-1793-1eea-30cab76b49ca"><colgroup><col width="50%"/><col width="50%"/></colgroup>
-<name>geosrs:AreaOfUse</name>
-<tbody><tr><td valign="middle" align="left">Type</td>
-<td valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#Class">owl:Class</link></td>
-</tr><tr><td valign="middle" align="left">URI</td>
-<td valign="middle" align="left"><link target="https://w3id.org/geosrs/srs/AreaOfUse"/></td>
-</tr></tbody>
-</table>
-</clause>
-
 <clause id="_class_geosrscrs" obligation="normative">
 <title>Class: geosrs:CRS</title>
-<table id="_a075f8c6-e83b-0ff8-69b3-7ed4719222a6"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<table id="_41b8a40b-9b9a-3fbd-05bf-7e1fa7fafc3d"><colgroup><col width="50%"/><col width="50%"/></colgroup>
 <name>geosrs:CRS</name>
 <tbody><tr><td valign="middle" align="left">Type</td>
 <td valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#Class">owl:Class</link></td>
@@ -340,66 +328,92 @@
 </tr><tr><td valign="middle" align="left">Definition</td>
 <td valign="middle" align="left">Depending on the spatial dimension of coordinates (1D, 2D, 3D), this piece of metadata is used for specifying the elements of definition associated to a given set of coordinates: its datum, its ellipsoid, its prime meridian, the type of coordinates (geocentric, geographic, projected,…​), the coordinates units of measure, when appropriate the cartographic projection used, the vertical coordinate reference system.</td>
 </tr><tr><td valign="middle" align="left">Super-classes</td>
-<td valign="middle" align="left"><link target="https://w3id.org/geosrs/cs/3DCoordinateSystem">3DCoordinateSystem</link></td>
+<td valign="middle" align="left">CRS[CRS]</td>
 </tr></tbody>
 </table>
 </clause>
 
 <clause id="_class_geosrsengineeringcrs" obligation="normative">
 <title>Class: geosrs:EngineeringCRS</title>
-<table id="_1163714b-8c91-105b-a838-9dc4c44edec2"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<table id="_5872670c-a098-6e9c-0b09-ca3759e2c0dd"><colgroup><col width="50%"/><col width="50%"/></colgroup>
 <name>geosrs:EngineeringCRS</name>
 <tbody><tr><td valign="middle" align="left">Type</td>
 <td valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#Class">owl:Class</link></td>
 </tr><tr><td valign="middle" align="left">URI</td>
 <td valign="middle" align="left"><link target="https://w3id.org/geosrs/srs/EngineeringCRS"/></td>
+</tr><tr><td valign="middle" align="left">Definition</td>
+<td valign="middle" align="left">A contextually local coordinate reference system which can be divided into two broad categories: — earth-fixed systems applied to engineering activities on or near the surface of the earth; — CRSs on moving platforms such as road vehicles, vessels, aircraft or spacecraft.</td>
+</tr><tr><td valign="middle" align="left">Super-classes</td>
+<td valign="middle" align="left">CRS[CRS]</td>
 </tr></tbody>
 </table>
 </clause>
 
 <clause id="_class_geosrsgeodeticcrs" obligation="normative">
 <title>Class: geosrs:GeodeticCRS</title>
-<table id="_be2ffc86-63b1-5807-b694-47a11b803dd4"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<table id="_9c4cd756-dfff-c4bb-dfab-9fbdc21e2c11"><colgroup><col width="50%"/><col width="50%"/></colgroup>
 <name>geosrs:GeodeticCRS</name>
 <tbody><tr><td valign="middle" align="left">Type</td>
 <td valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#Class">owl:Class</link></td>
 </tr><tr><td valign="middle" align="left">URI</td>
 <td valign="middle" align="left"><link target="https://w3id.org/geosrs/srs/GeodeticCRS"/></td>
 </tr><tr><td valign="middle" align="left">Definition</td>
-<td valign="middle" align="left">Coordinate reference system associated with a geodetic datum. Cf. ISO 19111:2007:2007-07, part 8.2.2.a, table 10 and annex B.1.2.1.a.</td>
+<td valign="middle" align="left">Coordinate Reference System associated with a geodetic datum. Cf. ISO 19111:2007:2007-07, part 8.2.2.a, table 10 and annex B.1.2.1.a.</td>
+</tr><tr><td valign="middle" align="left">Super-classes</td>
+<td valign="middle" align="left">CRS[CRS]</td>
 </tr></tbody>
 </table>
 </clause>
 
 <clause id="_class_geosrsgeographiccrs" obligation="normative">
 <title>Class: geosrs:GeographicCRS</title>
-<table id="_1c31e16f-0383-50f8-8dc9-251828e47ab2"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<table id="_f2af8b8e-f533-cc4c-1670-fa66187fedc5"><colgroup><col width="50%"/><col width="50%"/></colgroup>
 <name>geosrs:GeographicCRS</name>
 <tbody><tr><td valign="middle" align="left">Type</td>
 <td valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#Class">owl:Class</link></td>
 </tr><tr><td valign="middle" align="left">URI</td>
 <td valign="middle" align="left"><link target="https://w3id.org/geosrs/srs/GeographicCRS"/></td>
+</tr><tr><td valign="middle" align="left">Definition</td>
+<td valign="middle" align="left">Coordinate Reference System that has a geodetic reference frame and an ellipsoidal coordinate system</td>
+</tr><tr><td valign="middle" align="left">Super-classes</td>
+<td valign="middle" align="left">CRS[CRS]</td>
 </tr></tbody>
 </table>
 </clause>
 
 <clause id="_class_geosrsprojectedcrs" obligation="normative">
 <title>Class: geosrs:ProjectedCRS</title>
-<table id="_94110f46-8613-df58-6d6c-8dad0d0922d8"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<table id="_f07a7b46-b2ce-9846-bbf6-63ed1ca45510"><colgroup><col width="50%"/><col width="50%"/></colgroup>
 <name>geosrs:ProjectedCRS</name>
 <tbody><tr><td valign="middle" align="left">Type</td>
 <td valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#Class">owl:Class</link></td>
 </tr><tr><td valign="middle" align="left">URI</td>
 <td valign="middle" align="left"><link target="https://w3id.org/geosrs/srs/ProjectedCRS"/></td>
 </tr><tr><td valign="middle" align="left">Definition</td>
-<td valign="middle" align="left">Coordinate reference system derived from a two-dimensional geodetic coordinate reference system by applying a map projection. Cf. ISO 19111:2007:2007-07, part 8.2.3.b, table 11 and annex B.1.2.3.</td>
+<td valign="middle" align="left">Coordinate Reference System derived from a two-dimensional geodetic coordinate reference system by applying a map projection. Cf. ISO 19111:2007:2007-07, part 8.2.3.b, table 11 and annex B.1.2.3.</td>
+</tr><tr><td valign="middle" align="left">Super-classes</td>
+<td valign="middle" align="left">CRS[CRS]</td>
+</tr></tbody>
+</table>
+</clause>
+
+<clause id="_class_geosrsreferencesystem" obligation="normative">
+<title>Class: geosrs:ReferenceSystem</title>
+<table id="_333256f2-83bb-7d7a-cbb5-9f110fba73f2"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<name>geosrs:ReferenceSystem</name>
+<tbody><tr><td valign="middle" align="left">Type</td>
+<td valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#Class">owl:Class</link></td>
+</tr><tr><td valign="middle" align="left">URI</td>
+<td valign="middle" align="left"><link target="https://w3id.org/geosrs/srs/ReferenceSystem"/></td>
+</tr><tr><td valign="middle" align="left">Definition</td>
+<td valign="middle" align="left">An abstract coordinate system, whose origin, orientation and scale are specified in physical space. It is based on a set of reference points, defined as geometric points whose position is identified physically and mathematically.</td>
 </tr></tbody>
 </table>
 </clause>
 
 <clause id="_class_geosrssinglecrs" obligation="normative">
 <title>Class: geosrs:SingleCRS</title>
-<table id="_53d47dcb-0aad-a53e-123d-c12512e4b088"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<table id="_33e8fbdf-7754-d1d7-cb0d-7c9956dbab51"><colgroup><col width="50%"/><col width="50%"/></colgroup>
 <name>geosrs:SingleCRS</name>
 <tbody><tr><td valign="middle" align="left">Type</td>
 <td valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#Class">owl:Class</link></td>
@@ -407,20 +421,22 @@
 <td valign="middle" align="left"><link target="https://w3id.org/geosrs/srs/SingleCRS"/></td>
 </tr><tr><td valign="middle" align="left">Definition</td>
 <td valign="middle" align="left">Coordinate reference system consisting of one coordinate system and one datum. Cf. ISO 19111:2007:2007-07, table 5.</td>
+</tr><tr><td valign="middle" align="left">Super-classes</td>
+<td valign="middle" align="left">CRS[CRS]</td>
 </tr></tbody>
 </table>
 </clause>
 
 <clause id="_class_geosrsspatialreferencesystem" obligation="normative">
 <title>Class: geosrs:SpatialReferenceSystem</title>
-<table id="_c19b03a6-793e-a915-0f3b-bd283ad7f645"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<table id="_27f5ea57-a4f8-483f-0aaf-99fb8acf076e"><colgroup><col width="50%"/><col width="50%"/></colgroup>
 <name>geosrs:SpatialReferenceSystem</name>
 <tbody><tr><td valign="middle" align="left">Type</td>
 <td valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#Class">owl:Class</link></td>
 </tr><tr><td valign="middle" align="left">URI</td>
 <td valign="middle" align="left"><link target="https://w3id.org/geosrs/srs/SpatialReferenceSystem"/></td>
 </tr><tr><td valign="middle" align="left">Definition</td>
-<td valign="middle" align="left">A reference system allowing the description of a position.</td>
+<td valign="middle" align="left">A spatial reference system (SRS) is a system for establishing spatial position. A spatial reference system can use geographic identifiers (place names, for example), coordinates (in which case it is a coordinate reference system), or identifiers with structured geometry (in which case it is a discrete global grid system).</td>
 </tr><tr><td valign="middle" align="left">Super-classes</td>
 <td valign="middle" align="left">CRS[CRS]</td>
 </tr></tbody>
@@ -724,7 +740,7 @@
 </tr><tr><td valign="middle" align="left">Definition</td>
 <td valign="middle" align="left">Geographic area or time interval in which the referring object is valid. Cf. ISO 19111:2007:2007-07, tables 4, 33 and 42, attribute domainOfValidity.</td>
 </tr><tr><td valign="middle" align="left">Range</td>
-<td valign="middle" align="left"><link target="https://w3id.org/geosrs/AreaOfUse">AreaOfUse</link></td>
+<td valign="middle" align="left"><link target="https://w3id.org/geosrs/srs/AreaOfUse">AreaOfUse</link></td>
 </tr><tr><td valign="middle" align="left">Domain</td>
 <td valign="middle" align="left"><link target="https://w3id.org/geosrs/CRS">CRS</link></td>
 </tr></tbody>
@@ -4888,7 +4904,7 @@ Performance Distributed Computing, pp. 181–184. IEEE Press, New York (2001)</f
 <title>Bibliography</title>
 <note id="_155a708c-216d-5804-50a7-1a2723619850"><p id="_9702179a-71de-0d11-425d-60a89a0feed8">The TC has approved Springer LNCS as the official document citation type. Springer LNCS is widely used in technical and computer science journals and other publications For citations in the text please use square brackets and consecutive numbers: [1], [2], [3] Actual References: [n] Journal: Author Surname, A.: Title. Publication Title. Volume number, Issue number, Pages Used (Year Published)</p>
 </note><bibitem id="iso19142" type="standard" schema-version="v1.2.9">
-  <fetched>2025-03-11</fetched>
+  <fetched>2025-04-08</fetched>
   
 <title type="title-intro" format="text/plain" language="en" script="Latn">Geographic information</title>
 
@@ -4935,7 +4951,7 @@ Performance Distributed Computing, pp. 181–184. IEEE Press, New York (2001)</f
   </copyright>
   <relation type="instanceOf">
     <bibitem type="standard">
-      <fetched>2025-03-11</fetched>
+      <fetched>2025-04-08</fetched>
       
 <title type="title-intro" format="text/plain" language="en" script="Latn">Geographic information</title>
 

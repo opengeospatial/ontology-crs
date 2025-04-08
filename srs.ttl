@@ -1,14 +1,87 @@
-@prefix geosrs: <http://www.opengis.net/ont/srs/srs/> .
+@prefix geosrs: <https://w3id.org/geosrs/> .
+@prefix geosrs_srs: <https://w3id.org/geosrs/srs/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://www.opengis.net/ont/srs/geosrs/srs> a owl:Ontology ;
-    rdfs:label "SRS Ontology: Geosrs"@en ;
-    vann:preferredNamespacePrefix "geosrs"^^xsd:string ;
-    vann:preferredNamespaceUri "http://www.opengis.net/ont/srs/srs/"^^xsd:anyURI .
+geosrs_srs:AreaOfUse a owl:Class ;
+    rdfs:label "Area of use"@en ;
+    skos:definition "Area within which a coordinate operation may be used."@en .
 
-geosrs:ReferenceSystem a owl:Class ;
-    rdfs:label "Reference System"@en .
+geosrs_srs:AxesList a owl:Class ;
+    rdfs:label "Axes List"@en ;
+    skos:definition "Ordered list of coordinate system axes."@en .
+
+geosrs_srs:BoundCRS a owl:Class ;
+    rdfs:label "Bound Coordinate Reference System"@en ;
+    rdfs:subClassOf geosrs:CRS .
+
+geosrs_srs:Extent a owl:Class ;
+    rdfs:label "Extent"@en ;
+    skos:definition "Geographic area or time interval in which the referring object is valid. Cf. ISO 19115-1:2014:2014-04, part 6.6.1 and table B.15 line 335."@en .
+
+geosrs_srs:GeocentricCRS a owl:Class ;
+    rdfs:label "Geocentric Coordinate Reference System"@en ;
+    rdfs:subClassOf geosrs:CRS ;
+    skos:definition "A cartesian coordinate reference system that represents locations in the vicinity of the Earth (including its surface, interior, atmosphere, and surrounding outer space) as X, Y, and Z measurements from its center of mass. Commonly used to track the orbits of satellites. "@en .
+
+geosrs_srs:GeographicBoundingBox a owl:Class ;
+    rdfs:label "Geographic Bounding Box"@en ;
+    skos:definition "Frame delimiting an area of interest. See ISO 19115-1:2014:2014-04, part 6.6.1 and table B.15.1 line 344."@en .
+
+geosrs_srs:ParametricCRS a owl:Class ;
+    rdfs:label "Parametric Coordinate Reference System"@en ;
+    rdfs:subClassOf geosrs:CRS ;
+    skos:definition "Coordinate Reference System based on a parametric datum"@en .
+
+geosrs_srs:SelenographicCRS a owl:Class ;
+    rdfs:label "Selenographic CRS"@en ;
+    rdfs:subClassOf geosrs:CRS ;
+    skos:definition "Coordinate Reference System to refer locations on the surface of the Earth’s Moon."@en .
+
+geosrs_srs:SingleCRSList a owl:Class ;
+    rdfs:label "Single CRS List"@en ;
+    skos:definition "Ordered list of simple reference coordinate systems."@en .
+
+geosrs_srs:SpatioParametricTemporalCompoundCRS a owl:Class ;
+    rdfs:label "Spatio-Parametric Temporal Compound Coordinate Reference System"@en ;
+    rdfs:subClassOf geosrs_srs:SpatioParametricCompoundCRS ;
+    skos:definition "Coordinate reference system combining a spatio-parametric reference system with at least one temporal reference system"@en .
+
+geosrs_srs:SpatioTemporalCompoundCRS a owl:Class ;
+    rdfs:label "Spatio-Parametric Compound Coordinate Reference System"@en ;
+    rdfs:subClassOf geosrs_srs:CompoundCRS ;
+    skos:definition "Coordinate reference system combining a spatial reference system with at least one temporal reference system"@en .
+
+geosrs_srs:StaticCRS a owl:Class ;
+    rdfs:label "Static CRS"@en ;
+    rdfs:subClassOf geosrs:CRS ;
+    skos:definition "Coordinate Reference System that has a static reference frame"@en .
+
+geosrs_srs:TemporalCRS a owl:Class ;
+    rdfs:label "Temporal CRS"@en ;
+    rdfs:subClassOf geosrs:CRS ;
+    skos:definition "Coordinate Reference System based on a temporal datum"@en .
+
+geosrs_srs:VerticalCRS a owl:Class ;
+    rdfs:label "Vertical CRS"@en ;
+    rdfs:subClassOf geosrs:CRS ;
+    skos:definition "One-dimensional coordinate reference system associated with a vertical datum and used for recording heights or depths.Ellipsoidal heights are not captured in a vertical coordinate reference system but as part of a 3D coordinates tuple defined in a geodetic 3D coordinate reference system. Cf. ISO 19111:2007:2007-07, parts 8.2.2.b, table 14 and annex B.1.2.1.b."@en .
+
+geosrs:srssrs a owl:Ontology ;
+    rdfs:label "SRS Ontology: Geosrs_srs"@en ;
+    vann:preferredNamespacePrefix "geosrs_srs"^^xsd:string ;
+    vann:preferredNamespaceUri "https://w3id.org/geosrs/srs/"^^xsd:anyURI .
+
+geosrs_srs:SpatioParametricCompoundCRS a owl:Class ;
+    rdfs:label "Spatio Parametric Compound Coordinate Reference System"@en ;
+    rdfs:subClassOf geosrs_srs:CompoundCRS ;
+    skos:definition "A spatio-parametric coordinate reference system is a compound CRS in which one component is a geographic 2D, projected 2D or engineering 2D CRS, supplemented by a parametric CRS to create a three-dimensional CRS"@en .
+
+geosrs_srs:CompoundCRS a owl:Class ;
+    rdfs:label "Compound Coordinate Reference System"@en ;
+    rdfs:subClassOf geosrs:CRS ;
+    skos:definition "Coordinate reference system using at least two independent single coordinate reference systems. Cf. ISO 19111:2007:2007-07, parts 8.2.3.c, 8.2.4, table 6 and annex B.1.2.4."@en .
 

@@ -4777,88 +4777,32 @@
 
 <clause id="_ign_ontology" obligation="informative">
 <title>IGN Ontology</title>
-<table id="_938c03e7-c6b8-36ba-6123-948c38ac1f4a">
+<table id="_6d670d8f-db9e-f620-2330-fa48e3cfa0bd">
 <name>Alignment: IGN Ontology</name>
 <thead><tr><th valign="middle" align="left">From Element</th>
 <th valign="middle" align="left">Mapping relation</th>
 <th valign="middle" align="left">To Element</th>
 <th valign="middle" align="left">Notes</th>
 </tr></thead>
-<tbody><tr><td valign="middle" align="left"><link target="https://w3id.org/geosrs/cs/CoordinateSystem">geosrs:CoordinateSystem</link></td>
+<tbody><tr><td valign="middle" align="left"><link target="https://w3id.org/geosrs/CoordinateSystem">geosrs:CoordinateSystem</link></td>
 <td valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#equivalentClass">owl:equivalentClass</link></td>
 <td valign="middle" align="left"><link target="http://data.ign.fr/def/ignf#CoordinateSystem">ign:CoordinateSystem</link></td>
 <td valign="middle" align="left">-</td>
-</tr><tr><td valign="middle" align="left"><link target="https://w3id.org/geosrs/cs/CartesianCoordinateSystem">geosrs:CartesianCoordinateSystem</link></td>
+</tr><tr><td valign="middle" align="left"><link target="https://w3id.org/geosrs/Datum">geosrs:Datum</link></td>
 <td valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#equivalentClass">owl:equivalentClass</link></td>
-<td valign="middle" align="left"><link target="http://data.ign.fr/def/ignf#CartesianCS">ign:CartesianCS</link></td>
+<td valign="middle" align="left"><link target="http://data.ign.fr/def/ignf#Datum">ign:Datum</link></td>
 <td valign="middle" align="left">-</td>
-</tr><tr><td valign="middle" align="left"><link target="https://w3id.org/geosrs/cs/EllipsoidalCoordinateSystem">geosrs:EllipsoidalCoordinateSystem</link></td>
+</tr><tr><td valign="middle" align="left"><link target="https://w3id.org/geosrs/Ellipsoid">geosrs:Ellipsoid</link></td>
 <td valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#equivalentClass">owl:equivalentClass</link></td>
-<td valign="middle" align="left"><link target="http://data.ign.fr/def/ignf#EllipsoidalCS">ign:EllipsoidalCS</link></td>
-<td valign="middle" align="left">-</td>
-</tr><tr><td valign="middle" align="left"><link target="https://w3id.org/geosrs/cs/VerticalCoordinateSystem">geosrs:VerticalCoordinateSystem</link></td>
-<td valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#equivalentClass">owl:equivalentClass</link></td>
-<td valign="middle" align="left"><link target="http://data.ign.fr/def/ignf#VerticalCS">ign:VerticalCS</link></td>
-<td valign="middle" align="left">-</td>
-</tr><tr><td valign="middle" align="left"><link target="https://w3id.org/geosrs/cs/CoordinateSystemAxis">geosrs:CoordinateSystemAxis</link></td>
-<td valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#equivalentClass">owl:equivalentClass</link></td>
-<td valign="middle" align="left"><link target="http://data.ign.fr/def/ignf#CoordinateSystemAxis">ign:CoordinateSystemAxis</link></td>
-<td valign="middle" align="left">-</td>
-</tr><tr><td valign="middle" align="left"><link target="https://w3id.org/geosrs/srs/CompoundCRS">geosrs:CompoundCRS</link></td>
-<td valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#equivalentClass">owl:equivalentClass</link></td>
-<td valign="middle" align="left"><link target="http://data.ign.fr/def/ignf#CompoundCRS">ign:CompoundCRS</link></td>
-<td valign="middle" align="left">-</td>
-</tr><tr><td valign="middle" align="left"><link target="https://w3id.org/geosrs/srs/CRS">geosrs:CRS</link></td>
-<td valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#equivalentClass">owl:equivalentClass</link></td>
-<td valign="middle" align="left"><link target="http://data.ign.fr/def/ignf#CRS">ign:CRS</link></td>
-<td valign="middle" align="left">-</td>
-</tr><tr><td valign="middle" align="left"><link target="https://w3id.org/geosrs/srs/GeodeticCRS">geosrs:GeodeticCRS</link></td>
-<td valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#equivalentClass">owl:equivalentClass</link></td>
-<td valign="middle" align="left"><link target="http://data.ign.fr/def/ignf#GeodeticCRS">ign:GeodeticCRS</link></td>
-<td valign="middle" align="left">-</td>
-</tr><tr><td valign="middle" align="left"><link target="https://w3id.org/geosrs/srs/ProjectedCRS">geosrs:ProjectedCRS</link></td>
-<td valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#equivalentClass">owl:equivalentClass</link></td>
-<td valign="middle" align="left"><link target="http://data.ign.fr/def/ignf#ProjectedCRS">ign:ProjectedCRS</link></td>
-<td valign="middle" align="left">-</td>
-</tr><tr><td valign="middle" align="left"><link target="https://w3id.org/geosrs/srs/SingleCRS">geosrs:SingleCRS</link></td>
-<td valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#equivalentClass">owl:equivalentClass</link></td>
-<td valign="middle" align="left"><link target="http://data.ign.fr/def/ignf#SingleCRS">ign:SingleCRS</link></td>
-<td valign="middle" align="left">-</td>
-</tr><tr><td valign="middle" align="left"><link target="https://w3id.org/geosrs/srs/VerticalCRS">geosrs:VerticalCRS</link></td>
-<td valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#equivalentClass">owl:equivalentClass</link></td>
-<td valign="middle" align="left"><link target="http://data.ign.fr/def/ignf#VerticalCRS">ign:VerticalCRS</link></td>
-<td valign="middle" align="left">-</td>
-</tr><tr><td valign="middle" align="left"><link target="https://w3id.org/geosrs/srs/Extent">geosrs:Extent</link></td>
-<td valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#equivalentClass">owl:equivalentClass</link></td>
-<td valign="middle" align="left"><link target="http://data.ign.fr/def/ignf#Extent">ign:Extent</link></td>
-<td valign="middle" align="left">-</td>
-</tr><tr><td valign="middle" align="left"><link target="https://w3id.org/geosrs/srs/GeographicBoundingBox">geosrs:GeographicBoundingBox</link></td>
-<td valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#equivalentClass">owl:equivalentClass</link></td>
-<td valign="middle" align="left"><link target="http://data.ign.fr/def/ignf#GeographicBoundingBox">ign:GeographicBoundingBox</link></td>
-<td valign="middle" align="left">-</td>
-</tr><tr><td valign="middle" align="left"><link target="https://w3id.org/geosrs/srs/AxesList">geosrs:AxesList</link></td>
-<td valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#equivalentClass">owl:equivalentClass</link></td>
-<td valign="middle" align="left"><link target="http://data.ign.fr/def/ignf#AxesList">ign:AxesList</link></td>
-<td valign="middle" align="left">-</td>
-</tr><tr><td valign="middle" align="left"><link target="https://w3id.org/geosrs/srs/SingleCRSList">geosrs:SingleCRSList</link></td>
-<td valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#equivalentClass">owl:equivalentClass</link></td>
-<td valign="middle" align="left"><link target="http://data.ign.fr/def/ignf#SingleCRSList">ign:SingleCRSList</link></td>
-<td valign="middle" align="left">-</td>
-</tr><tr><td valign="middle" align="left"><link target="https://w3id.org/geosrs/co/CoordinateOperation">geosrs:CoordinateOperation</link></td>
-<td valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#equivalentClass">owl:equivalentClass</link></td>
-<td valign="middle" align="left"><link target="http://data.ign.fr/def/ignf#CoordinateOperation">ign:CoordinateOperation</link></td>
-<td valign="middle" align="left">-</td>
-</tr><tr><td valign="middle" align="left"><link target="https://w3id.org/geosrs/co/SingleOperation">geosrs:SingleOperation</link></td>
-<td valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#equivalentClass">owl:equivalentClass</link></td>
-<td valign="middle" align="left"><link target="http://data.ign.fr/def/ignf#SingleOperation">ign:SingleOperation</link></td>
-<td valign="middle" align="left">-</td>
-</tr><tr><td valign="middle" align="left"><link target="https://w3id.org/geosrs/co/Transformation">geosrs:Transformation</link></td>
-<td valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#equivalentClass">owl:equivalentClass</link></td>
-<td valign="middle" align="left"><link target="http://data.ign.fr/def/ignf#Transformation">ign:Transformation</link></td>
+<td valign="middle" align="left"><link target="http://data.ign.fr/def/ignf#Ellipsoid">ign:Ellipsoid</link></td>
 <td valign="middle" align="left">-</td>
 </tr><tr><td valign="middle" align="left"><link target="https://w3id.org/geosrs/co/Conversion">geosrs:Conversion</link></td>
 <td valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#equivalentClass">owl:equivalentClass</link></td>
 <td valign="middle" align="left"><link target="http://data.ign.fr/def/ignf#Conversion">ign:Conversion</link></td>
+<td valign="middle" align="left">-</td>
+</tr><tr><td valign="middle" align="left"><link target="https://w3id.org/geosrs/co/CoordinateOperation">geosrs:CoordinateOperation</link></td>
+<td valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#equivalentClass">owl:equivalentClass</link></td>
+<td valign="middle" align="left"><link target="http://data.ign.fr/def/ignf#CoordinateOperation">ign:CoordinateOperation</link></td>
 <td valign="middle" align="left">-</td>
 </tr><tr><td valign="middle" align="left"><link target="https://w3id.org/geosrs/co/OperationMethod">geosrs:OperationMethod</link></td>
 <td valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#equivalentClass">owl:equivalentClass</link></td>
@@ -4872,9 +4816,41 @@
 <td valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#equivalentClass">owl:equivalentClass</link></td>
 <td valign="middle" align="left"><link target="http://data.ign.fr/def/ignf#OperationParameterValue">ign:OperationParameterValue</link></td>
 <td valign="middle" align="left">-</td>
+</tr><tr><td valign="middle" align="left"><link target="https://w3id.org/geosrs/co/SingleOperation">geosrs:SingleOperation</link></td>
+<td valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#equivalentClass">owl:equivalentClass</link></td>
+<td valign="middle" align="left"><link target="http://data.ign.fr/def/ignf#SingleOperation">ign:SingleOperation</link></td>
+<td valign="middle" align="left">-</td>
+</tr><tr><td valign="middle" align="left"><link target="https://w3id.org/geosrs/co/Transformation">geosrs:Transformation</link></td>
+<td valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#equivalentClass">owl:equivalentClass</link></td>
+<td valign="middle" align="left"><link target="http://data.ign.fr/def/ignf#Transformation">ign:Transformation</link></td>
+<td valign="middle" align="left">-</td>
+</tr><tr><td valign="middle" align="left"><link target="https://w3id.org/geosrs/cs/CartesianCoordinateSystem">geosrs:CartesianCoordinateSystem</link></td>
+<td valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#equivalentClass">owl:equivalentClass</link></td>
+<td valign="middle" align="left"><link target="http://data.ign.fr/def/ignf#CartesianCS">ign:CartesianCS</link></td>
+<td valign="middle" align="left">-</td>
+</tr><tr><td valign="middle" align="left"><link target="https://w3id.org/geosrs/cs/CoordinateSystem">geosrs:CoordinateSystem</link></td>
+<td valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#equivalentClass">owl:equivalentClass</link></td>
+<td valign="middle" align="left"><link target="http://data.ign.fr/def/ignf#CoordinateSystem">ign:CoordinateSystem</link></td>
+<td valign="middle" align="left">-</td>
+</tr><tr><td valign="middle" align="left"><link target="https://w3id.org/geosrs/cs/CoordinateSystemAxis">geosrs:CoordinateSystemAxis</link></td>
+<td valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#equivalentClass">owl:equivalentClass</link></td>
+<td valign="middle" align="left"><link target="http://data.ign.fr/def/ignf#CoordinateSystemAxis">ign:CoordinateSystemAxis</link></td>
+<td valign="middle" align="left">-</td>
+</tr><tr><td valign="middle" align="left"><link target="https://w3id.org/geosrs/cs/EllipsoidalCoordinateSystem">geosrs:EllipsoidalCoordinateSystem</link></td>
+<td valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#equivalentClass">owl:equivalentClass</link></td>
+<td valign="middle" align="left"><link target="http://data.ign.fr/def/ignf#EllipsoidalCS">ign:EllipsoidalCS</link></td>
+<td valign="middle" align="left">-</td>
+</tr><tr><td valign="middle" align="left"><link target="https://w3id.org/geosrs/cs/VerticalCoordinateSystem">geosrs:VerticalCoordinateSystem</link></td>
+<td valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#equivalentClass">owl:equivalentClass</link></td>
+<td valign="middle" align="left"><link target="http://data.ign.fr/def/ignf#VerticalCS">ign:VerticalCS</link></td>
+<td valign="middle" align="left">-</td>
 </tr><tr><td valign="middle" align="left"><link target="https://w3id.org/geosrs/datum/Datum">geosrs:Datum</link></td>
 <td valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#equivalentClass">owl:equivalentClass</link></td>
 <td valign="middle" align="left"><link target="http://data.ign.fr/def/ignf#Datum">ign:Datum</link></td>
+<td valign="middle" align="left">-</td>
+</tr><tr><td valign="middle" align="left"><link target="https://w3id.org/geosrs/datum/Ellipsoid">geosrs:Ellipsoid</link></td>
+<td valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#equivalentClass">owl:equivalentClass</link></td>
+<td valign="middle" align="left"><link target="http://data.ign.fr/def/ignf#Ellipsoid">ign:Ellipsoid</link></td>
 <td valign="middle" align="left">-</td>
 </tr><tr><td valign="middle" align="left"><link target="https://w3id.org/geosrs/datum/GeodeticDatum">geosrs:GeodeticDatum</link></td>
 <td valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#equivalentClass">owl:equivalentClass</link></td>
@@ -4884,25 +4860,49 @@
 <td valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#equivalentClass">owl:equivalentClass</link></td>
 <td valign="middle" align="left"><link target="http://data.ign.fr/def/ignf#PrimeMeridian">ign:PrimeMeridian</link></td>
 <td valign="middle" align="left">-</td>
-</tr><tr><td valign="middle" align="left"><link target="https://w3id.org/geosrs/datum/Ellipsoid">geosrs:Ellipsoid</link></td>
-<td valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#equivalentClass">owl:equivalentClass</link></td>
-<td valign="middle" align="left"><link target="http://data.ign.fr/def/ignf#Ellipsoid">ign:Ellipsoid</link></td>
-<td valign="middle" align="left">-</td>
 </tr><tr><td valign="middle" align="left"><link target="https://w3id.org/geosrs/datum/VerticalDatum">geosrs:VerticalDatum</link></td>
 <td valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#equivalentClass">owl:equivalentClass</link></td>
 <td valign="middle" align="left"><link target="http://data.ign.fr/def/ignf#VerticalDatum">ign:VerticalDatum</link></td>
 <td valign="middle" align="left">-</td>
-</tr><tr><td valign="middle" align="left"><link target="https://w3id.org/geosrs/CoordinateSystem">geosrs:CoordinateSystem</link></td>
+</tr><tr><td valign="middle" align="left"><link target="https://w3id.org/geosrs/srs/AxesList">geosrs:AxesList</link></td>
 <td valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#equivalentClass">owl:equivalentClass</link></td>
-<td valign="middle" align="left"><link target="http://data.ign.fr/def/ignf#CoordinateSystem">ign:CoordinateSystem</link></td>
+<td valign="middle" align="left"><link target="http://data.ign.fr/def/ignf#AxesList">ign:AxesList</link></td>
 <td valign="middle" align="left">-</td>
-</tr><tr><td valign="middle" align="left"><link target="https://w3id.org/geosrs/Datum">geosrs:Datum</link></td>
+</tr><tr><td valign="middle" align="left"><link target="https://w3id.org/geosrs/srs/CRS">geosrs:CRS</link></td>
 <td valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#equivalentClass">owl:equivalentClass</link></td>
-<td valign="middle" align="left"><link target="http://data.ign.fr/def/ignf#Datum">ign:Datum</link></td>
+<td valign="middle" align="left"><link target="http://data.ign.fr/def/ignf#CRS">ign:CRS</link></td>
 <td valign="middle" align="left">-</td>
-</tr><tr><td valign="middle" align="left"><link target="https://w3id.org/geosrs/Ellipsoid">geosrs:Ellipsoid</link></td>
+</tr><tr><td valign="middle" align="left"><link target="https://w3id.org/geosrs/srs/CompoundCRS">geosrs:CompoundCRS</link></td>
 <td valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#equivalentClass">owl:equivalentClass</link></td>
-<td valign="middle" align="left"><link target="http://data.ign.fr/def/ignf#Ellipsoid">ign:Ellipsoid</link></td>
+<td valign="middle" align="left"><link target="http://data.ign.fr/def/ignf#CompoundCRS">ign:CompoundCRS</link></td>
+<td valign="middle" align="left">-</td>
+</tr><tr><td valign="middle" align="left"><link target="https://w3id.org/geosrs/srs/Extent">geosrs:Extent</link></td>
+<td valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#equivalentClass">owl:equivalentClass</link></td>
+<td valign="middle" align="left"><link target="http://data.ign.fr/def/ignf#Extent">ign:Extent</link></td>
+<td valign="middle" align="left">-</td>
+</tr><tr><td valign="middle" align="left"><link target="https://w3id.org/geosrs/srs/GeodeticCRS">geosrs:GeodeticCRS</link></td>
+<td valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#equivalentClass">owl:equivalentClass</link></td>
+<td valign="middle" align="left"><link target="http://data.ign.fr/def/ignf#GeodeticCRS">ign:GeodeticCRS</link></td>
+<td valign="middle" align="left">-</td>
+</tr><tr><td valign="middle" align="left"><link target="https://w3id.org/geosrs/srs/GeographicBoundingBox">geosrs:GeographicBoundingBox</link></td>
+<td valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#equivalentClass">owl:equivalentClass</link></td>
+<td valign="middle" align="left"><link target="http://data.ign.fr/def/ignf#GeographicBoundingBox">ign:GeographicBoundingBox</link></td>
+<td valign="middle" align="left">-</td>
+</tr><tr><td valign="middle" align="left"><link target="https://w3id.org/geosrs/srs/ProjectedCRS">geosrs:ProjectedCRS</link></td>
+<td valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#equivalentClass">owl:equivalentClass</link></td>
+<td valign="middle" align="left"><link target="http://data.ign.fr/def/ignf#ProjectedCRS">ign:ProjectedCRS</link></td>
+<td valign="middle" align="left">-</td>
+</tr><tr><td valign="middle" align="left"><link target="https://w3id.org/geosrs/srs/SingleCRS">geosrs:SingleCRS</link></td>
+<td valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#equivalentClass">owl:equivalentClass</link></td>
+<td valign="middle" align="left"><link target="http://data.ign.fr/def/ignf#SingleCRS">ign:SingleCRS</link></td>
+<td valign="middle" align="left">-</td>
+</tr><tr><td valign="middle" align="left"><link target="https://w3id.org/geosrs/srs/SingleCRSList">geosrs:SingleCRSList</link></td>
+<td valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#equivalentClass">owl:equivalentClass</link></td>
+<td valign="middle" align="left"><link target="http://data.ign.fr/def/ignf#SingleCRSList">ign:SingleCRSList</link></td>
+<td valign="middle" align="left">-</td>
+</tr><tr><td valign="middle" align="left"><link target="https://w3id.org/geosrs/srs/VerticalCRS">geosrs:VerticalCRS</link></td>
+<td valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#equivalentClass">owl:equivalentClass</link></td>
+<td valign="middle" align="left"><link target="http://data.ign.fr/def/ignf#VerticalCRS">ign:VerticalCRS</link></td>
 <td valign="middle" align="left">-</td>
 </tr></tbody>
 </table>
@@ -4910,20 +4910,32 @@
 
 <clause id="_iso19111_ontology" obligation="informative">
 <title>ISO19111 Ontology</title>
-<table id="_ccc18d56-bb05-b637-fcf9-e12cb0905d77">
+<table id="_917a8370-4eef-0604-554e-c97bed6ed3b8">
 <name>Alignment: ISO19111 Ontology</name>
 <thead><tr><th valign="middle" align="left">From Element</th>
 <th valign="middle" align="left">Mapping relation</th>
 <th valign="middle" align="left">To Element</th>
 <th valign="middle" align="left">Notes</th>
 </tr></thead>
-<tbody><tr><td valign="middle" align="left"><link target="https://w3id.org/geosrs/srs/CompoundCRS">geosrs:CompoundCRS</link></td>
+<tbody><tr><td valign="middle" align="left"><link target="https://w3id.org/geosrs/CoordinateSystem">geosrs:CoordinateSystem</link></td>
 <td valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#equivalentClass">owl:equivalentClass</link></td>
-<td valign="middle" align="left"><link target="http://def.isotc211.org/iso19112/2019/SpatialReferencingByGeographicIdentifier#CompoundCRS">iso19111:CompoundCRS</link></td>
+<td valign="middle" align="left"><link target="http://def.isotc211.org/iso19112/2019/SpatialReferencingByGeographicIdentifier#CoordinateSystem">iso19111:CoordinateSystem</link></td>
+<td valign="middle" align="left">-</td>
+</tr><tr><td valign="middle" align="left"><link target="https://w3id.org/geosrs/Datum">geosrs:Datum</link></td>
+<td valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#equivalentClass">owl:equivalentClass</link></td>
+<td valign="middle" align="left"><link target="http://def.isotc211.org/iso19112/2019/SpatialReferencingByGeographicIdentifier#Datum">iso19111:Datum</link></td>
+<td valign="middle" align="left">-</td>
+</tr><tr><td valign="middle" align="left"><link target="https://w3id.org/geosrs/Ellipsoid">geosrs:Ellipsoid</link></td>
+<td valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#equivalentClass">owl:equivalentClass</link></td>
+<td valign="middle" align="left"><link target="http://def.isotc211.org/iso19112/2019/SpatialReferencingByGeographicIdentifier#Ellipsoid">iso19111:Ellipsoid</link></td>
 <td valign="middle" align="left">-</td>
 </tr><tr><td valign="middle" align="left"><link target="https://w3id.org/geosrs/srs/CRS">geosrs:CRS</link></td>
 <td valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#equivalentClass">owl:equivalentClass</link></td>
 <td valign="middle" align="left"><link target="http://def.isotc211.org/iso19112/2019/SpatialReferencingByGeographicIdentifier#CRS">iso19111:CRS</link></td>
+<td valign="middle" align="left">-</td>
+</tr><tr><td valign="middle" align="left"><link target="https://w3id.org/geosrs/srs/CompoundCRS">geosrs:CompoundCRS</link></td>
+<td valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#equivalentClass">owl:equivalentClass</link></td>
+<td valign="middle" align="left"><link target="http://def.isotc211.org/iso19112/2019/SpatialReferencingByGeographicIdentifier#CompoundCRS">iso19111:CompoundCRS</link></td>
 <td valign="middle" align="left">-</td>
 </tr><tr><td valign="middle" align="left"><link target="https://w3id.org/geosrs/srs/EngineeringCRS">geosrs:EngineeringCRS</link></td>
 <td valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#equivalentClass">owl:equivalentClass</link></td>
@@ -4957,42 +4969,30 @@
 <td valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#equivalentClass">owl:equivalentClass</link></td>
 <td valign="middle" align="left"><link target="http://def.isotc211.org/iso19112/2019/SpatialReferencingByGeographicIdentifier#VerticalCRS">iso19111:VerticalCRS</link></td>
 <td valign="middle" align="left">-</td>
-</tr><tr><td valign="middle" align="left"><link target="https://w3id.org/geosrs/CoordinateSystem">geosrs:CoordinateSystem</link></td>
-<td valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#equivalentClass">owl:equivalentClass</link></td>
-<td valign="middle" align="left"><link target="http://def.isotc211.org/iso19112/2019/SpatialReferencingByGeographicIdentifier#CoordinateSystem">iso19111:CoordinateSystem</link></td>
-<td valign="middle" align="left">-</td>
-</tr><tr><td valign="middle" align="left"><link target="https://w3id.org/geosrs/Datum">geosrs:Datum</link></td>
-<td valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#equivalentClass">owl:equivalentClass</link></td>
-<td valign="middle" align="left"><link target="http://def.isotc211.org/iso19112/2019/SpatialReferencingByGeographicIdentifier#Datum">iso19111:Datum</link></td>
-<td valign="middle" align="left">-</td>
-</tr><tr><td valign="middle" align="left"><link target="https://w3id.org/geosrs/Ellipsoid">geosrs:Ellipsoid</link></td>
-<td valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#equivalentClass">owl:equivalentClass</link></td>
-<td valign="middle" align="left"><link target="http://def.isotc211.org/iso19112/2019/SpatialReferencingByGeographicIdentifier#Ellipsoid">iso19111:Ellipsoid</link></td>
-<td valign="middle" align="left">-</td>
 </tr></tbody>
 </table>
 </clause>
 
 <clause id="_ifc_ontology" obligation="informative">
 <title>IFC Ontology</title>
-<table id="_8bfa0f06-9a08-16be-2bbc-cbc9040ae321">
+<table id="_a9091c3c-b88e-5b80-9fec-52f3f1b4ba34">
 <name>Alignment: IFC Ontology</name>
 <thead><tr><th valign="middle" align="left">From Element</th>
 <th valign="middle" align="left">Mapping relation</th>
 <th valign="middle" align="left">To Element</th>
 <th valign="middle" align="left">Notes</th>
 </tr></thead>
-<tbody><tr><td valign="middle" align="left"><link target="https://w3id.org/geosrs/CRS">geosrs:CRS</link></td>
+<tbody><tr><td valign="middle" align="left"><link target="https://w3id.org/geosrs/AxisDirection">geosrs:AxisDirection</link></td>
+<td valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#equivalentClass">owl:equivalentClass</link></td>
+<td valign="middle" align="left"><link target="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL/IfcDirection">ifc:IfcDirection</link></td>
+<td valign="middle" align="left">-</td>
+</tr><tr><td valign="middle" align="left"><link target="https://w3id.org/geosrs/CRS">geosrs:CRS</link></td>
 <td valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#equivalentClass">owl:equivalentClass</link></td>
 <td valign="middle" align="left"><link target="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL/IfcCoordinateReferenceSystem">ifc:IfcCoordinateReferenceSystem</link></td>
 <td valign="middle" align="left">-</td>
 </tr><tr><td valign="middle" align="left"><link target="https://w3id.org/geosrs/CoordinateOperation">geosrs:CoordinateOperation</link></td>
 <td valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#equivalentClass">owl:equivalentClass</link></td>
 <td valign="middle" align="left"><link target="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL/IfcCoordinateOperation">ifc:IfcCoordinateOperation</link></td>
-<td valign="middle" align="left">-</td>
-</tr><tr><td valign="middle" align="left"><link target="https://w3id.org/geosrs/AxisDirection">geosrs:AxisDirection</link></td>
-<td valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#equivalentClass">owl:equivalentClass</link></td>
-<td valign="middle" align="left"><link target="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL/IfcDirection">ifc:IfcDirection</link></td>
 <td valign="middle" align="left">-</td>
 </tr><tr><td valign="middle" align="left"><link target="https://w3id.org/geosrs/ProjectedCRS">geosrs:ProjectedCRS</link></td>
 <td valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#equivalentClass">owl:equivalentClass</link></td>

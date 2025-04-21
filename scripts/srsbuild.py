@@ -145,9 +145,9 @@ for file in os.listdir(directory):
                             gcore.add((URIRef(row["Concept"].replace(coreprefix+":",geocrsNS)),SKOS.definition,Literal(row["Definition"],lang="en")))
                             adocdef+="|Definition\n|"+str(row["Definition"])+"\n"
                         if "ISO 2019" in row and row["ISO 2019"]!="":
-                            alignmentadoc["iso19111"][row["Concept"].replace(coreprefix+":",curns)]="|"+str(row["Concept"].replace(coreprefix+":",curns))+"["+row["Concept"]+"]\n|http://www.w3.org/2002/07/owl#equivalentClass[owl:equivalentClass]\n|"+str(row["ISO 2019"].replace("iso19111:","http://def.isotc211.org/iso19112/2019/SpatialReferencingByGeographicIdentifier#"))+"["+row["ISO 2019"]+"]\n|\n\n"
+                            alignmentadoc["iso19111"][row["Concept"].replace(coreprefix+":",curns)]="|"+str(row["Concept"].replace(coreprefix+":",curns))+"["+row["Concept"]+"]\n|http://www.w3.org/2002/07/owl#equivalentClass[owl:equivalentClass]\n|"+str(row["ISO 2019"].replace("iso19111:","http://def.isotc211.org/iso19112/2019/SpatialReferencingByGeographicIdentifier#"))+"["+row["ISO 2019"]+"]\n| - \n\n"
                         if "IGN 2019" in row and row["IGN 2019"]!="":
-                            alignmentadoc["ign"][row["Concept"].replace(coreprefix+":",curns)]="|"+str(row["Concept"].replace(coreprefix+":",curns))+"["+row["Concept"]+"]\n|http://www.w3.org/2002/07/owl#equivalentClass[owl:equivalentClass]\n|"+str(row["IGN 2019"].replace("ign:","http://data.ign.fr/def/ignf#"))+"["+row["IGN 2019"]+"]\n|\n\n"
+                            alignmentadoc["ign"][row["Concept"].replace(coreprefix+":",curns)]="|"+str(row["Concept"].replace(coreprefix+":",curns))+"["+row["Concept"]+"]\n|http://www.w3.org/2002/07/owl#equivalentClass[owl:equivalentClass]\n|"+str(row["IGN 2019"].replace("ign:","http://data.ign.fr/def/ignf#"))+"["+row["IGN 2019"]+"]\n| - \n\n"
                         if "PROJJSON" in row and row["PROJJSON"]!="":
                             if " " in row["PROJJSON"].strip():
                                 for spl in row["PROJJSON"].strip().split(" "):
@@ -191,9 +191,9 @@ for file in os.listdir(directory):
                             g.add((URIRef(row["Concept"].replace(coreprefix+":",curns)),SKOS.definition,Literal(row["Definition"],lang="en")))
                             adocdef+="|Definition\n|"+str(row["Definition"])+"\n\n"
                         if "ISO 2019" in row and row["ISO 2019"]!="":
-                            alignmentadoc["iso19111"][row["Concept"].replace(coreprefix+":",curns)]="|"+str(row["Concept"].replace(coreprefix+":",curns))+"["+row["Concept"]+"]\n|http://www.w3.org/2002/07/owl#equivalentClass[owl:equivalentClass]\n|"+str(row["ISO 2019"].replace("iso19111:","http://def.isotc211.org/iso19112/2019/SpatialReferencingByGeographicIdentifier#"))+"["+row["ISO 2019"]+"]\n|\n\n"
+                            alignmentadoc["iso19111"][row["Concept"].replace(coreprefix+":",curns)]="|"+str(row["Concept"].replace(coreprefix+":",curns))+"["+row["Concept"]+"]\n|http://www.w3.org/2002/07/owl#equivalentClass[owl:equivalentClass]\n|"+str(row["ISO 2019"].replace("iso19111:","http://def.isotc211.org/iso19112/2019/SpatialReferencingByGeographicIdentifier#"))+"["+row["ISO 2019"]+"]\n| - \n\n"
                         if "IGN 2019" in row and row["IGN 2019"]!="":
-                            alignmentadoc["ign"][row["Concept"].replace(coreprefix+":",curns)]="|"+str(row["Concept"].replace(coreprefix+":",curns))+"["+row["Concept"]+"]\n|http://www.w3.org/2002/07/owl#equivalentClass[owl:equivalentClass]\n|"+str(row["IGN 2019"].replace("ign:","http://data.ign.fr/def/ignf#"))+"["+row["IGN 2019"]+"]\n|\n\n"
+                            alignmentadoc["ign"][row["Concept"].replace(coreprefix+":",curns)]="|"+str(row["Concept"].replace(coreprefix+":",curns))+"["+row["Concept"]+"]\n|http://www.w3.org/2002/07/owl#equivalentClass[owl:equivalentClass]\n|"+str(row["IGN 2019"].replace("ign:","http://data.ign.fr/def/ignf#"))+"["+row["IGN 2019"]+"]\n| - \n\n"
                         if "PROJJSON" in row and row["PROJJSON"]!="":
                             if " " in row["PROJJSON"].strip():
                                 for spl in row["PROJJSON"].strip().split(" "):

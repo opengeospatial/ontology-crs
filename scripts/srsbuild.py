@@ -33,11 +33,20 @@ ldcontext={"@context":{"rdfs":"http://www.w3.org/2000/01/rdf-schema#","rdf":"htt
 }
 
 alignmentadoc={"ign":{},"iso19111":{},"ifc":{}}
+moduleToRequirements={"core":{},"co":{},"cs":{},"datum":{},"srsapplication":{},"projection":{},"planet":{}}
 prefixtoclasses={"geosrs":[]}
 prefixtoproperties={"geosrs":[],"CS":[],"CO":[],"DATUM":[],"projection":[]}
 classToPrefix={}
 prefixToModule={"core":"06-core.adoc","co":"07-co_extension.adoc","cs":"08-cs_extension.adoc","datum":"09-datum_extension.adoc","srsapplication":"10-srsapplication.adoc","projection":"11-projections_extension.adoc","planet":"12-planet_extension.adoc"}
 moduleToAdoc={"06-core.adoc":["\n\n"],"07-co_extension.adoc":[],"08-cs_extension.adoc":[],"09-datum_extension.adoc":[],"10-srsapplication.adoc":[],"11-projections_extension.adoc":[],"12-planet_extension.adoc":[]}
+
+galigns=Graph() 
+galigns.bind("ign","http://data.ign.fr/def/ignf#")  
+galigns.bind("ifc","https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL/")  
+galigns.bind("iso19111","http://def.isotc211.org/iso19112/2019/SpatialReferencingByGeographicIdentifier#")   
+galigns.bind("geosrs", "https://w3id.org/geosrs/")  
+galigns.add((URIRef("https://w3id.org/geosrs/alignments/"),RDF.type,OWL.Ontology))
+galigns.add((URIRef("https://w3id.org/geosrs/alignments/"),RDFS.label,Literal("SRS Ontology Alignments",lang="en")))
 
 gcore = Graph()
 gcore.bind("geosrs", "https://w3id.org/geosrs/") 
@@ -141,13 +150,19 @@ for file in os.listdir(directory):
                         classToPrefix[row["Concept"]]={"prefix":coreprefix, "ns":geocrsNS}
                         if "Label" in row and row["Label"]!="":
                             gcore.add((URIRef(row["Concept"].replace(coreprefix+":",geocrsNS)),RDFS.label,Literal(row["Label"],lang="en")))
+                        if "Requirement" in row and row["Requirement"]!="":
+                            if row["Requirement"] not in moduleToRequirements["core"]:
+                                moduleToRequirements["core"][row["Requirement"]]=[]
+                            moduleToRequirements["core"][row["Requirement"]].append(row["Concept"])
                         if "Definition" in row and row["Definition"]!="":
                             gcore.add((URIRef(row["Concept"].replace(coreprefix+":",geocrsNS)),SKOS.definition,Literal(row["Definition"],lang="en")))
                             adocdef+="|Definition\n|"+str(row["Definition"])+"\n"
                         if "ISO 2019" in row and row["ISO 2019"]!="":
                             alignmentadoc["iso19111"][row["Concept"].replace(coreprefix+":",curns)]="|"+str(row["Concept"].replace(coreprefix+":",curns))+"["+row["Concept"]+"]\n|http://www.w3.org/2002/07/owl#equivalentClass[owl:equivalentClass]\n|"+str(row["ISO 2019"].replace("iso19111:","http://def.isotc211.org/iso19112/2019/SpatialReferencingByGeographicIdentifier#"))+"["+row["ISO 2019"]+"]\n| - \n\n"
+                            galigns.add((URIRef(row["Concept"].replace(coreprefix+":",curns))),URIRef("http://www.w3.org/2002/07/owl#equivalentClass"),URIRef(str(row["ISO 2019"].replace("iso19111:","http://def.isotc211.org/iso19112/2019/SpatialReferencingByGeographicIdentifier#"))))
                         if "IGN 2019" in row and row["IGN 2019"]!="":
                             alignmentadoc["ign"][row["Concept"].replace(coreprefix+":",curns)]="|"+str(row["Concept"].replace(coreprefix+":",curns))+"["+row["Concept"]+"]\n|http://www.w3.org/2002/07/owl#equivalentClass[owl:equivalentClass]\n|"+str(row["IGN 2019"].replace("ign:","http://data.ign.fr/def/ignf#"))+"["+row["IGN 2019"]+"]\n| - \n\n"
+                            galigns.add((URIRef(row["Concept"].replace(coreprefix+":",curns))),URIRef("http://www.w3.org/2002/07/owl#equivalentClass"),URIRef(str(row["IGN 2019"].replace("ign:","http://data.ign.fr/def/ignf#"))))
                         if "PROJJSON" in row and row["PROJJSON"]!="":
                             if " " in row["PROJJSON"].strip():
                                 for spl in row["PROJJSON"].strip().split(" "):
@@ -185,6 +200,10 @@ for file in os.listdir(directory):
                         adocdef+="|URI\n|"+str(row["Concept"].replace(coreprefix+":",curns))+"[]\n\n"
                         prefixtoclasses[curprefix].append(row["Concept"].replace(curprefix+":",curns).replace("geosrs:","").replace("geoprojection:",""))
                         classToPrefix[row["Concept"]]={"prefix":curprefix, "ns":curns}
+                        if "Requirement" in row and row["Requirement"]!="":
+                            if row["Requirement"] not in moduleToRequirements["core"]:
+                                moduleToRequirements["core"][row["Requirement"]]=[]
+                            moduleToRequirements["core"][row["Requirement"]].append(row["Concept"])
                         if "Label" in row and row["Label"]!="":
                             g.add((URIRef(row["Concept"].replace(coreprefix+":",curns)),RDFS.label,Literal(row["Label"],lang="en")))
                         if "Definition" in row and row["Definition"]!="":
@@ -192,8 +211,10 @@ for file in os.listdir(directory):
                             adocdef+="|Definition\n|"+str(row["Definition"])+"\n\n"
                         if "ISO 2019" in row and row["ISO 2019"]!="":
                             alignmentadoc["iso19111"][row["Concept"].replace(coreprefix+":",curns)]="|"+str(row["Concept"].replace(coreprefix+":",curns))+"["+row["Concept"]+"]\n|http://www.w3.org/2002/07/owl#equivalentClass[owl:equivalentClass]\n|"+str(row["ISO 2019"].replace("iso19111:","http://def.isotc211.org/iso19112/2019/SpatialReferencingByGeographicIdentifier#"))+"["+row["ISO 2019"]+"]\n| - \n\n"
+                            galigns.add((URIRef(row["Concept"].replace(coreprefix+":",curns))),URIRef("http://www.w3.org/2002/07/owl#equivalentClass"),URIRef(str(row["ISO 2019"].replace("iso19111:","http://def.isotc211.org/iso19112/2019/SpatialReferencingByGeographicIdentifier#"))))
                         if "IGN 2019" in row and row["IGN 2019"]!="":
                             alignmentadoc["ign"][row["Concept"].replace(coreprefix+":",curns)]="|"+str(row["Concept"].replace(coreprefix+":",curns))+"["+row["Concept"]+"]\n|http://www.w3.org/2002/07/owl#equivalentClass[owl:equivalentClass]\n|"+str(row["IGN 2019"].replace("ign:","http://data.ign.fr/def/ignf#"))+"["+row["IGN 2019"]+"]\n| - \n\n"
+                            galigns.add((URIRef(row["Concept"].replace(coreprefix+":",curns))),URIRef("http://www.w3.org/2002/07/owl#equivalentClass"),URIRef(str(row["IGN 2019"].replace("ign:","http://data.ign.fr/def/ignf#"))))
                         if "PROJJSON" in row and row["PROJJSON"]!="":
                             if " " in row["PROJJSON"].strip():
                                 for spl in row["PROJJSON"].strip().split(" "):
@@ -446,13 +467,7 @@ for item in exont:
     exont[item].serialize(destination=item+".ttl") 
 gcore.serialize(destination="index.ttl")
        
-g=Graph() 
-g.bind("ign","http://data.ign.fr/def/ignf#")  
-g.bind("ifc","https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL/")  
-g.bind("iso19111","http://def.isotc211.org/iso19112/2019/SpatialReferencingByGeographicIdentifier#")   
-g.bind("geosrs", "https://w3id.org/geosrs/")  
-g.add((URIRef("https://w3id.org/geosrs/alignments/"),RDF.type,OWL.Ontology))
-g.add((URIRef("https://w3id.org/geosrs/alignments/"),RDFS.label,Literal("SRS Ontology Alignments",lang="en")))
+
 dirname = os.path.dirname(__file__)
 abspath = os.path.join(dirname, '../csv/alignment/')
 directory = os.fsencode(abspath)
@@ -472,7 +487,7 @@ for file in os.listdir(directory):
                     ctargeturi=row["Concept target"].replace("geosrs:",geocrsNS).replace("ign:","http://data.ign.fr/def/ignf#").replace("iso19111:","http://def.isotc211.org/iso19112/2019/SpatialReferencingByGeographicIdentifier#").replace("ifc:","https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL/")
                     cpropuri=row["Property"].replace("owl:","http://www.w3.org/2002/07/owl#").replace("rdfs:","http://www.w3.org/2000/01/rdf-schema#")
                     targetprefix=row["Concept target"][0:row["Concept target"].rfind(":")]
-                    g.add((URIRef(csourceuri),
+                    galigns.add((URIRef(csourceuri),
                            URIRef(cpropuri),
                            URIRef(ctargeturi)))
                     if targetprefix in alignmentadoc:

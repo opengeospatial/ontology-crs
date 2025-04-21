@@ -32,6 +32,7 @@ ldcontext={"@context":{"rdfs":"http://www.w3.org/2000/01/rdf-schema#","rdf":"htt
             }
 }
 
+alignmentadoc={"ign":{},"iso19111":{},"ifc":{}}
 prefixtoclasses={"geosrs":[]}
 prefixtoproperties={"geosrs":[],"CS":[],"CO":[],"DATUM":[],"projection":[]}
 classToPrefix={}
@@ -143,6 +144,10 @@ for file in os.listdir(directory):
                         if "Definition" in row and row["Definition"]!="":
                             gcore.add((URIRef(row["Concept"].replace(coreprefix+":",geocrsNS)),SKOS.definition,Literal(row["Definition"],lang="en")))
                             adocdef+="|Definition\n|"+str(row["Definition"])+"\n"
+                        if "ISO 2019" in row and row["ISO 2019"]!="":
+                            alignmentadoc["iso19111"][row["Concept"].replace(coreprefix+":",curns)]="|"+str(row["Concept"].replace(coreprefix+":",curns))+"["+row["Concept"]+"]\n|http://www.w3.org/2002/07/owl#equivalentClass[owl:equivalentClass]\n|"+str(row["ISO 2019"].replace("iso19111:","http://def.isotc211.org/iso19112/2019/SpatialReferencingByGeographicIdentifier#"))+"["+row["ISO 2019"]+"]\n|\n\n"
+                        if "IGN 2019" in row and row["IGN 2019"]!="":
+                            alignmentadoc["ign"][row["Concept"].replace(coreprefix+":",curns)]="|"+str(row["Concept"].replace(coreprefix+":",curns))+"["+row["Concept"]+"]\n|http://www.w3.org/2002/07/owl#equivalentClass[owl:equivalentClass]\n|"+str(row["IGN 2019"].replace("ign:","http://data.ign.fr/def/ignf#""))+"["+row["IGN 2019"]+"]\n|\n\n"
                         if "PROJJSON" in row and row["PROJJSON"]!="":
                             if " " in row["PROJJSON"].strip():
                                 for spl in row["PROJJSON"].strip().split(" "):
@@ -185,6 +190,10 @@ for file in os.listdir(directory):
                         if "Definition" in row and row["Definition"]!="":
                             g.add((URIRef(row["Concept"].replace(coreprefix+":",curns)),SKOS.definition,Literal(row["Definition"],lang="en")))
                             adocdef+="|Definition\n|"+str(row["Definition"])+"\n\n"
+                        if "ISO 2019" in row and row["ISO 2019"]!="":
+                            alignmentadoc["iso19111"][row["Concept"].replace(coreprefix+":",curns)]="|"+str(row["Concept"].replace(coreprefix+":",curns))+"["+row["Concept"]+"]\n|http://www.w3.org/2002/07/owl#equivalentClass[owl:equivalentClass]\n|"+str(row["ISO 2019"].replace("iso19111:","http://def.isotc211.org/iso19112/2019/SpatialReferencingByGeographicIdentifier#"))+"["+row["ISO 2019"]+"]\n|\n\n"
+                        if "IGN 2019" in row and row["IGN 2019"]!="":
+                            alignmentadoc["ign"][row["Concept"].replace(coreprefix+":",curns)]="|"+str(row["Concept"].replace(coreprefix+":",curns))+"["+row["Concept"]+"]\n|http://www.w3.org/2002/07/owl#equivalentClass[owl:equivalentClass]\n|"+str(row["IGN 2019"].replace("ign:","http://data.ign.fr/def/ignf#""))+"["+row["IGN 2019"]+"]\n|\n\n"
                         if "PROJJSON" in row and row["PROJJSON"]!="":
                             if " " in row["PROJJSON"].strip():
                                 for spl in row["PROJJSON"].strip().split(" "):
@@ -448,7 +457,7 @@ dirname = os.path.dirname(__file__)
 abspath = os.path.join(dirname, '../csv/alignment/')
 directory = os.fsencode(abspath)
 print(abspath)      
-alignmentadoc={"ign":[],"iso19111":[],"ifc":[]}
+#alignmentadoc={"ign":[],"iso19111":[],"ifc":[]}
 for file in os.listdir(directory):
     filename = os.fsdecode(file)
     if filename.endswith(".csv"): 
@@ -470,7 +479,7 @@ for file in os.listdir(directory):
                         comment=row["Comment"]
                         if comment==None or str(comment).strip()=="":
                             comment=" - "
-                        alignmentadoc[targetprefix].append("|"+str(csourceuri)+"["+row["Concept source"]+"]\n|"+str(cpropuri)+"["+row["Property"]+"]\n|"+str(ctargeturi)+"["+row["Concept target"]+"]\n|"+str(comment)+"\n\n")
+                        alignmentadoc[targetprefix][cssourceuri]="|"+str(csourceuri)+"["+row["Concept source"]+"]\n|"+str(cpropuri)+"["+row["Property"]+"]\n|"+str(ctargeturi)+"["+row["Concept target"]+"]\n|"+str(comment)+"\n\n"
     else:
         continue
 

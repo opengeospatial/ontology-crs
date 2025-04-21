@@ -32,6 +32,8 @@ ldcontext={"@context":{"rdfs":"http://www.w3.org/2000/01/rdf-schema#","rdf":"htt
             }
 }
 
+moduleToModuleDoc={"core":""}
+
 prefixtoclasses={"geosrs":[]}
 prefixtoproperties={"geosrs":[],"CS":[],"CO":[],"DATUM":[],"projection":[]}
 classToPrefix={}
@@ -114,7 +116,6 @@ for file in os.listdir(directory):
     ldcontext["@context"][curprefix]=curns
     g.bind("skos","http://www.w3.org/2004/02/skos/core#")
     g.bind(curprefix,curns)
-
     if curprefix not in prefixtoclasses:
         prefixtoclasses[curprefix]=[]
     g.add((URIRef("https://w3id.org/geosrs/"+filename.replace(".csv","")+filename.replace(".csv","")),RDF.type,OWL.Ontology))
@@ -136,6 +137,10 @@ for file in os.listdir(directory):
                             gcore.add((URIRef(row["Concept"].replace(coreprefix+":",geocrsNS)),RDFS.label,Literal(row["Label"],lang="en")))
                         if "Definition" in row and row["Definition"]!="":
                             gcore.add((URIRef(row["Concept"].replace(coreprefix+":",geocrsNS)),SKOS.definition,Literal(row["Definition"],lang="en")))
+                        if "Label" in row and "Definition" in row:
+                            if "core" not in moduleToModuleDoc:
+                                moduleToModuleDoc["core"]=""
+                            moduleToModuleDoc["core"]+="==== Class "+row["Concept"]+"\n\n"+str(row["Definition"])+"\n\n"
                         if "PROJJSON" in row and row["PROJJSON"]!="":
                             if " " in row["PROJJSON"].strip():
                                 for spl in row["PROJJSON"].strip().split(" "):
@@ -168,6 +173,10 @@ for file in os.listdir(directory):
                             g.add((URIRef(row["Concept"].replace(coreprefix+":",curns)),RDFS.label,Literal(row["Label"],lang="en")))
                         if "Definition" in row and row["Definition"]!="":
                             g.add((URIRef(row["Concept"].replace(coreprefix+":",curns)),SKOS.definition,Literal(row["Definition"],lang="en")))
+                        if "Label" in row and "Definition" in row:
+                            if curns not in moduleToModuleDoc:
+                                moduleToModuleDoc[curns]=""
+                            moduleToModuleDoc[curns]+="==== Class "+row["Concept"]+"\n\n"+str(row["Definition"])+"\n\n"
                         if "PROJJSON" in row and row["PROJJSON"]!="":
                             if " " in row["PROJJSON"].strip():
                                 for spl in row["PROJJSON"].strip().split(" "):
@@ -440,3 +449,19 @@ for file in os.listdir(directory):
        gr = Graph()
        gr.parse(location=abspath+filename, format='json-ld')
        gr.serialize(destination=abspath+filename.replace(".json",".ttl"), format='turtle')
+
+dirname = os.path.dirname(__file__)
+abspath = os.path.join(dirname, '../spec/sections/')
+directory = os.fsencode(abspath)  
+for file in os.listdir(directory):
+    print(file)
+    filename = os.fsdecode(file)
+    for mod in moduleToModuleDoc:
+        if mod in filename:
+            content=""
+            with open(abspath+filename,"r") as docfile:
+                content=docfile.read()
+            docfile+=moduleToModuleDoc[mod]
+            with open(abspath+filename,"w") as dfile:
+                dfile.write(docfile)
+            

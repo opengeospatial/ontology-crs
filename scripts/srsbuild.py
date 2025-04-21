@@ -487,7 +487,7 @@ alignments=""
 for prefix in alignmentadoc:
     alignments+="=== "+str(prefix).upper()+" Ontology\n\n.Alignment: "+str(prefix).upper()+" Ontology\n[%autowidth]\n|===\n| From Element | Mapping relation | To Element | Notes\n\n"
     prefixdict=alignmentadoc[prefix]
-    for aligns in sorted(prefixdict.items()):
+    for aligns in sorted(prefixdict.keys()):
         alignments+=prefixdict[aligns]
     alignments+="|===\n\n"
 

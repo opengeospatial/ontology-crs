@@ -4743,18 +4743,12 @@
 </clause>
 
 
-
-
-
-
-
-
 </sections><annex id="_alignments" obligation="informative">
 <title>Alignments</title>
 <floating-title id="_overview" depth="2" type="floating-title">Overview</floating-title>
-<p id="_a26b1278-6ec4-b483-762b-7ca96d4574c3">The prefixes used for the ontologies mapped to in all following sections are given in the following table.</p>
+<p id="_5ad5fc87-adb4-42ce-0420-89fc4c3e41ec">The prefixes used for the ontologies mapped to in all following sections are given in the following table.</p>
 
-<table id="_844caddc-c001-4654-f05e-127e524d7027"><colgroup><col width="14.2857%"/><col width="85.7143%"/></colgroup>
+<table id="_94879cd7-ad8f-cf36-62dd-e394c269c4ae"><colgroup><col width="14.2857%"/><col width="85.7143%"/></colgroup>
 <name>Alignment: Namespaces</name>
 <tbody><tr><td valign="middle" align="left">ign:</td>
 <td valign="middle" align="left"><link target="http://data.ign.fr/def/ignf#"/></td>
@@ -4777,113 +4771,41 @@
 
 <clause id="_ign_ontology" obligation="informative">
 <title>IGN Ontology</title>
-<table id="_c5df4eb0-1416-44a8-0903-1f01ebe6543d">
+<table id="_4d185507-a25d-287c-a708-b1d7e3da5ecc">
 <name>Alignment: IGN Ontology</name>
-<thead><tr><th valign="middle" align="left">From Element</th>
-<th valign="middle" align="left">Mapping relation</th>
-<th valign="middle" align="left">To Element</th>
-<th valign="middle" align="left">Notes</th>
-</tr></thead>
-<tbody><tr><td valign="middle" align="left"><link target="https://w3id.org/geosrs/CoordinateSystem">geosrs:CoordinateSystem</link></td>
-<td valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#equivalentClass">owl:equivalentClass</link></td>
-<td valign="middle" align="left"><link target="http://data.ign.fr/def/ignf#CoordinateSystem">ign:CoordinateSystem</link></td>
-<td valign="middle" align="left">-</td>
-</tr><tr><td valign="middle" align="left"><link target="https://w3id.org/geosrs/Datum">geosrs:Datum</link></td>
-<td valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#equivalentClass">owl:equivalentClass</link></td>
-<td valign="middle" align="left"><link target="http://data.ign.fr/def/ignf#Datum">ign:Datum</link></td>
-<td valign="middle" align="left">-</td>
-</tr><tr><td valign="middle" align="left"><link target="https://w3id.org/geosrs/Ellipsoid">geosrs:Ellipsoid</link></td>
-<td valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#equivalentClass">owl:equivalentClass</link></td>
-<td valign="middle" align="left"><link target="http://data.ign.fr/def/ignf#Ellipsoid">ign:Ellipsoid</link></td>
-<td valign="middle" align="left">-</td>
+<tbody><tr><td valign="middle" align="left">From Element</td>
+<td valign="middle" align="left">Mapping relation</td>
+<td valign="middle" align="left">To Element</td>
+<td valign="middle" align="left">Notes  link:++https://w3id.org/geosrs/cs/CoordinateSystemhttps://w3id.org/geosrs/cs/CartesianCoordinateSystemhttps://w3id.org/geosrs/cs/EllipsoidalCoordinateSystemhttps://w3id.org/geosrs/cs/VerticalCoordinateSystemhttps://w3id.org/geosrs/cs/CoordinateSystemAxishttps://w3id.org/geosrs/srs/CompoundCRShttps://w3id.org/geosrs/srs/CRShttps://w3id.org/geosrs/srs/GeodeticCRShttps://w3id.org/geosrs/srs/ProjectedCRShttps://w3id.org/geosrs/srs/SingleCRShttps://w3id.org/geosrs/srs/VerticalCRShttps://w3id.org/geosrs/srs/Extenthttps://w3id.org/geosrs/srs/GeographicBoundingBoxhttps://w3id.org/geosrs/srs/AxesListhttps://w3id.org/geosrs/srs/SingleCRSListhttps://w3id.org/geosrs/co/CoordinateOperationhttps://w3id.org/geosrs/co/SingleOperationhttps://w3id.org/geosrs/co/Transformationhttps://w3id.org/geosrs/co/Conversionhttps://w3id.org/geosrs/co/OperationMethodhttps://w3id.org/geosrs/co/OperationParameterhttps://w3id.org/geosrs/co/OperationParameterValuehttps://w3id.org/geosrs/datum/Datumhttps://w3id.org/geosrs/datum/GeodeticDatumhttps://w3id.org/geosrs/datum/PrimeMeridianhttps://w3id.org/geosrs/datum/Ellipsoidhttps://w3id.org/geosrs/datum/VerticalDatumhttps://w3id.org/geosrs/CoordinateSystemhttps://w3id.org/geosrs/Datumhttps://w3id.org/geosrs/Ellipsoid</td>
+<td valign="middle" align="left">===++[]  === ISO19111 Ontology  .Alignment: ISO19111 Ontology [%autowidth]</td>
 </tr></tbody>
 </table>
-</clause>
 
-<clause id="_iso19111_ontology" obligation="informative">
-<title>ISO19111 Ontology</title>
-<table id="_1ea8645e-ddef-0630-a161-2f6fca9d17e5">
-<name>Alignment: ISO19111 Ontology</name>
-<thead><tr><th valign="middle" align="left">From Element</th>
-<th valign="middle" align="left">Mapping relation</th>
-<th valign="middle" align="left">To Element</th>
-<th valign="middle" align="left">Notes</th>
-</tr></thead>
-<tbody><tr><td valign="middle" align="left"><link target="https://w3id.org/geosrs/CoordinateSystem">geosrs:CoordinateSystem</link></td>
-<td valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#equivalentClass">owl:equivalentClass</link></td>
-<td valign="middle" align="left"><link target="http://def.isotc211.org/iso19112/2019/SpatialReferencingByGeographicIdentifier#CoordinateSystem">iso19111:CoordinateSystem</link></td>
-<td valign="middle" align="left">-</td>
-</tr><tr><td valign="middle" align="left"><link target="https://w3id.org/geosrs/Datum">geosrs:Datum</link></td>
-<td valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#equivalentClass">owl:equivalentClass</link></td>
-<td valign="middle" align="left"><link target="http://def.isotc211.org/iso19112/2019/SpatialReferencingByGeographicIdentifier#Datum">iso19111:Datum</link></td>
-<td valign="middle" align="left">-</td>
-</tr><tr><td valign="middle" align="left"><link target="https://w3id.org/geosrs/Ellipsoid">geosrs:Ellipsoid</link></td>
-<td valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#equivalentClass">owl:equivalentClass</link></td>
-<td valign="middle" align="left"><link target="http://def.isotc211.org/iso19112/2019/SpatialReferencingByGeographicIdentifier#Ellipsoid">iso19111:Ellipsoid</link></td>
-<td valign="middle" align="left">-</td>
-</tr></tbody>
-</table>
+<p id="_43bf1f9b-ad59-e5ef-6673-62fb1726046e">| From Element | Mapping relation | To Element | Notes</p>
+
+<p id="_fce75d93-d8e4-022c-5fe2-29d0d68bc0d6"><link target="https://w3id.org/geosrs/srs/CompoundCRShttps://w3id.org/geosrs/srs/CRShttps://w3id.org/geosrs/srs/EngineeringCRShttps://w3id.org/geosrs/srs/GeodeticCRShttps://w3id.org/geosrs/srs/GeographicCRShttps://w3id.org/geosrs/srs/ParametricCRShttps://w3id.org/geosrs/srs/ProjectedCRShttps://w3id.org/geosrs/srs/SingleCRShttps://w3id.org/geosrs/srs/TemporalCRShttps://w3id.org/geosrs/srs/VerticalCRShttps://w3id.org/geosrs/CoordinateSystemhttps://w3id.org/geosrs/Datumhttps://w3id.org/geosrs/Ellipsoid|==="/></p>
 </clause>
 
 <clause id="_ifc_ontology" obligation="informative">
 <title>IFC Ontology</title>
-<table id="_8bfa0f06-9a08-16be-2bbc-cbc9040ae321">
+<table id="_b178ea8d-6e32-8609-1ba4-646b6bf6c3b7">
 <name>Alignment: IFC Ontology</name>
-<thead><tr><th valign="middle" align="left">From Element</th>
-<th valign="middle" align="left">Mapping relation</th>
-<th valign="middle" align="left">To Element</th>
-<th valign="middle" align="left">Notes</th>
-</tr></thead>
-<tbody><tr><td valign="middle" align="left"><link target="https://w3id.org/geosrs/CRS">geosrs:CRS</link></td>
-<td valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#equivalentClass">owl:equivalentClass</link></td>
-<td valign="middle" align="left"><link target="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL/IfcCoordinateReferenceSystem">ifc:IfcCoordinateReferenceSystem</link></td>
-<td valign="middle" align="left">-</td>
-</tr><tr><td valign="middle" align="left"><link target="https://w3id.org/geosrs/CoordinateOperation">geosrs:CoordinateOperation</link></td>
-<td valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#equivalentClass">owl:equivalentClass</link></td>
-<td valign="middle" align="left"><link target="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL/IfcCoordinateOperation">ifc:IfcCoordinateOperation</link></td>
-<td valign="middle" align="left">-</td>
-</tr><tr><td valign="middle" align="left"><link target="https://w3id.org/geosrs/AxisDirection">geosrs:AxisDirection</link></td>
-<td valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#equivalentClass">owl:equivalentClass</link></td>
-<td valign="middle" align="left"><link target="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL/IfcDirection">ifc:IfcDirection</link></td>
-<td valign="middle" align="left">-</td>
-</tr><tr><td valign="middle" align="left"><link target="https://w3id.org/geosrs/ProjectedCRS">geosrs:ProjectedCRS</link></td>
-<td valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#equivalentClass">owl:equivalentClass</link></td>
-<td valign="middle" align="left"><link target="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL/IfcProjectedCRS">ifc:IfcProjectedCRS</link></td>
-<td valign="middle" align="left">-</td>
-</tr><tr><td valign="middle" align="left"><link target="https://w3id.org/geosrs/axis">geosrs:axis</link></td>
-<td valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#equivalentProperty">owl:equivalentProperty</link></td>
-<td valign="middle" align="left"><link target="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL/axis_IfcAxis1Placement">ifc:axis_IfcAxis1Placement</link></td>
-<td valign="middle" align="left">-</td>
-</tr><tr><td valign="middle" align="left"><link target="https://w3id.org/geosrs/sourceCRS">geosrs:sourceCRS</link></td>
-<td valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#equivalentProperty">owl:equivalentProperty</link></td>
-<td valign="middle" align="left"><link target="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL/sourceCRS">ifc:sourceCRS</link></td>
-<td valign="middle" align="left">-</td>
-</tr><tr><td valign="middle" align="left"><link target="https://w3id.org/geosrs/targetCRS">geosrs:targetCRS</link></td>
-<td valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#equivalentProperty">owl:equivalentProperty</link></td>
-<td valign="middle" align="left"><link target="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL/targetCRS">ifc:targetCRS</link></td>
-<td valign="middle" align="left">-</td>
+<tbody><tr><td valign="middle" align="left">From Element</td>
+<td valign="middle" align="left">Mapping relation</td>
+<td valign="middle" align="left">To Element</td>
+<td valign="middle" align="left">Notes  link:++https://w3id.org/geosrs/CRShttps://w3id.org/geosrs/CoordinateOperationhttps://w3id.org/geosrs/AxisDirectionhttps://w3id.org/geosrs/ProjectedCRShttps://w3id.org/geosrs/axishttps://w3id.org/geosrs/sourceCRShttps://w3id.org/geosrs/targetCRS</td>
+<td valign="middle" align="left">===++[]   [appendix,obligation=informative] == SHACL Shapes  [discrete] === Overview  //// Revision History should be the last annex before the Bibliography Bibliography should be the last annex ////  [appendix,obligation=”informative”] == Revision History  [%unnumbered] [width=”90%”,options=”header”]</td>
+</tr></tbody>
+</table>
+
+<p id="_a3377211-90c9-53ff-536d-43f9e61f479a">|Date |Release |Author | Primary clauses modified |Description |2016-04-28 |0.1 |G. Editor |all |initial version</p>
+
+<table id="_7fe84f78-2524-b948-344b-ea69a6eb19a3"><tbody><tr><td valign="middle" align="left">[bibliography] == Bibliography  [NOTE] .Example Bibliography (Delete this note). ==== The TC has approved Springer LNCS as the official document citation type. Springer LNCS is widely used in technical and computer science journals and other publications For citations in the text please use square brackets and consecutive numbers: [1], [2], [3] Actual References: [n] Journal: Author Surname, A.: Title. Publication Title. Volume number, Issue number, Pages Used (Year Published) [n] Web: Author Surname, A.: Title,  <link target="http://Website-Url"/> ====   * [ <bookmark id="yaml"/>], Ben-Kiki, O., Evans, C., Ingy döt Net: <strong>YAML Ain’t Markup Language,</strong> <link target="https://yaml.org/"/>  * [ <bookmark id="rfc3986"/>], Berners-Lee, T., Fielding, R., Masinter, L.: <strong>IETF RFC 3986 — Uniform Resource Identifier (URI): Generic Syntax,</strong> <link target="http://tools.ietf.org/rfc/rfc3986.txt"/>  * [ <bookmark id="link_relations"/>], IANA: <strong>Link Relation Types,</strong> <link target="https://www.iana.org/assignments/link-relations/link-relations.xml"/>  * [ <bookmark id="iso19142"/>], ISO: <strong>ISO 19142:2010 — Geographic information — Web Feature Service</strong> <link target="https://www.iso.org/standard/42136.html"/>  * [ <bookmark id="wfs20"/>], OGC: <strong>Web Feature Service 2.0,</strong> <link target="http://docs.opengeospatial.org/is/09-025r2/09-025r2.html"/>  * [ <bookmark id="spatial_data_wbp"/>], W3C/OGC: <strong>Spatial Data on the Web Best Practices,</strong> W3C Working Group Note 28 September 2017, <link target="https://www.w3.org/TR/sdw-bp/"/>  * [ <bookmark id="dwbp"/>], W3C: <strong>Data on the Web Best Practices,</strong> W3C Recommendation 31 January 2017, <link target="https://www.w3.org/TR/dwbp/"/>  * [ <bookmark id="dcat"/>], W3C: <strong>Data Catalog Vocabulary,</strong> W3C Recommendation 16 January 2014, <link target="https://www.w3.org/TR/vocab-dcat/"/></td>
 </tr></tbody>
 </table>
 </clause>
-</annex><annex id="_shacl_shapes" obligation="informative">
-<title>SHACL Shapes</title>
-<floating-title id="_overview_2" depth="2" type="floating-title">Overview</floating-title></annex><annex id="_revision_history" obligation="informative">
-<title>Revision History</title>
-<table id="_b6b59374-daa1-595c-c188-3a2639006243" unnumbered="true" width="90%"><thead><tr><th valign="middle" align="left">Date</th>
-<th valign="middle" align="left">Release</th>
-<th valign="middle" align="left">Author</th>
-<th valign="middle" align="left">Primary clauses modified</th>
-<th valign="middle" align="left">Description</th>
-</tr></thead>
-<tbody><tr><td valign="middle" align="left">2016-04-28</td>
-<td valign="middle" align="left">0.1</td>
-<td valign="middle" align="left">G. Editor</td>
-<td valign="middle" align="left">all</td>
-<td valign="middle" align="left">initial version</td>
-</tr></tbody>
-</table>
 </annex><bibliography><references id="_references" normative="true" obligation="informative">
-<title>Normative references</title><p id="_307b20e2-9e40-db56-abbf-2822ab2941cc">The following documents are referred to in the text in such a way that some or all of their content constitutes requirements of this document. For dated references, only the edition cited applies. For undated references, the latest edition of the referenced document (including any amendments) applies.</p>
+<title>Normative references</title><p id="_cdc64d2a-a937-72f4-1261-c3b19cc626b1">The following documents are referred to in the text in such a way that some or all of their content constitutes requirements of this document. For dated references, only the edition cited applies. For undated references, the latest edition of the referenced document (including any amendments) applies.</p>
 
 
 
@@ -4900,148 +4822,5 @@ Foster, I., Kesselman, C.. Morgan Kaufmann, San Francisco (1999).</formattedref>
 <bibitem id="Czajkowski01"><formattedref format="application/x-isodoc+xml"><em>Grid Information Services for Distributed Resource Sharing.</em> 
 Czajkowski, K., Fitzgerald, S., Foster, I., Kesselman, C. In: 10th IEEE International Symposium on High
 Performance Distributed Computing, pp. 181–184. IEEE Press, New York (2001)</formattedref><docidentifier>Grid Information Services for Distributed Resource Sharing</docidentifier></bibitem>
-</references><references id="_bibliography" normative="false" obligation="informative">
-<title>Bibliography</title>
-<note id="_155a708c-216d-5804-50a7-1a2723619850"><p id="_9702179a-71de-0d11-425d-60a89a0feed8">The TC has approved Springer LNCS as the official document citation type. Springer LNCS is widely used in technical and computer science journals and other publications For citations in the text please use square brackets and consecutive numbers: [1], [2], [3] Actual References: [n] Journal: Author Surname, A.: Title. Publication Title. Volume number, Issue number, Pages Used (Year Published)</p>
-</note><bibitem id="iso19142" type="standard" schema-version="v1.2.9">
-  <fetched>2025-04-08</fetched>
-  
-<title type="title-intro" format="text/plain" language="en" script="Latn">Geographic information</title>
-
-  
-<title type="title-main" format="text/plain" language="en" script="Latn">Web Feature Service</title>
-
-  
-<title type="main" format="text/plain" language="en" script="Latn">Geographic information — Web Feature Service</title>
-
-  <uri type="src">https://www.iso.org/standard/42136.html</uri>
-  <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:42136:en</uri>
-  <uri type="rss">https://www.iso.org/contents/data/standard/04/21/42136.detail.rss</uri>
-  <docidentifier type="ISO" primary="true">ISO 19142</docidentifier>
-  <docidentifier type="iso-reference">ISO 19142(E)</docidentifier>
-  <docidentifier type="URN">urn:iso:std:iso:19142:stage-90.93</docidentifier>
-  <docnumber>19142</docnumber>
-  <contributor>
-    <role type="publisher"/>
-    <organization>
-      
-<name>International Organization for Standardization</name>
-
-      <abbreviation>ISO</abbreviation>
-      <uri>www.iso.org</uri>
-    </organization>
-  </contributor>
-  <edition>1</edition>
-  <language>en</language>
-  <language>fr</language>
-  <script>Latn</script>
-  <status>
-    <stage>90</stage>
-    <substage>93</substage>
-  </status>
-  <copyright>
-    <from>2010</from>
-    <owner>
-      <organization>
-        
-<name>ISO</name>
-
-      </organization>
-    </owner>
-  </copyright>
-  <relation type="instanceOf">
-    <bibitem type="standard">
-      <fetched>2025-04-08</fetched>
-      
-<title type="title-intro" format="text/plain" language="en" script="Latn">Geographic information</title>
-
-      
-<title type="title-main" format="text/plain" language="en" script="Latn">Web Feature Service</title>
-
-      
-<title type="main" format="text/plain" language="en" script="Latn">Geographic information — Web Feature Service</title>
-
-      <uri type="src">https://www.iso.org/standard/42136.html</uri>
-      <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:42136:en</uri>
-      <uri type="rss">https://www.iso.org/contents/data/standard/04/21/42136.detail.rss</uri>
-      <docidentifier type="ISO" primary="true">ISO 19142:2010</docidentifier>
-      <docidentifier type="iso-reference">ISO 19142:2010(E)</docidentifier>
-      <docidentifier type="URN">urn:iso:std:iso:19142:stage-90.93</docidentifier>
-      <docnumber>19142</docnumber>
-      <date type="published">
-        <on>2010-12</on>
-      </date>
-      <contributor>
-        <role type="publisher"/>
-        <organization>
-          
-<name>International Organization for Standardization</name>
-
-          <abbreviation>ISO</abbreviation>
-          <uri>www.iso.org</uri>
-        </organization>
-      </contributor>
-      <edition>1</edition>
-      <language>en</language>
-      <language>fr</language>
-      <script>Latn</script>
-      <abstract format="text/plain" language="en" script="Latn">ISO 19142:2010 specifies the behaviour of a web feature service that provides transactions on and access to geographic features in a manner independent of the underlying data store. It specifies discovery operations, query operations, locking operations, transaction operations and operations to manage stored parameterized query expressions.</abstract>
-      <status>
-        <stage>90</stage>
-        <substage>93</substage>
-      </status>
-      <copyright>
-        <from>2010</from>
-        <owner>
-          <organization>
-            
-<name>ISO</name>
-
-          </organization>
-        </owner>
-      </copyright>
-      <place>Geneva</place>
-    </bibitem>
-
-  </relation>
-  <place>Geneva</place>
-</bibitem><bibitem id="dcat">
-  <formattedref format="application/x-isodoc+xml">W3C: <strong>Data Catalog Vocabulary,</strong> W3C Recommendation 16 January 2014, <link target="https://www.w3.org/TR/vocab-dcat/"/></formattedref>
-  <docidentifier>DCAT</docidentifier>
-  
-</bibitem><bibitem id="link_relations">
-  <formattedref format="application/x-isodoc+xml">IANA: <strong>Link Relation Types,</strong> <link target="https://www.iana.org/assignments/link-relations/link-relations.xml"/></formattedref>
-  <docidentifier>Link Relation Types</docidentifier>
-  
-</bibitem><bibitem id="spatial_data_wbp">
-  <formattedref format="application/x-isodoc+xml">W3C/OGC: <strong>Spatial Data on the Web Best Practices,</strong> W3C Working Group Note 28 September 2017, <link target="https://www.w3.org/TR/sdw-bp/"/></formattedref>
-  <docidentifier>SDWBP</docidentifier>
-  
-</bibitem><bibitem id="dwbp">
-  <formattedref format="application/x-isodoc+xml">W3C: <strong>Data on the Web Best Practices,</strong> W3C Recommendation 31 January 2017, <link target="https://www.w3.org/TR/dwbp/"/></formattedref>
-  <docidentifier>WBP</docidentifier>
-  
-</bibitem><bibitem id="yaml">
-  <formattedref format="application/x-isodoc+xml">Ben-Kiki, O., Evans, C., Ingy döt Net: <strong>YAML Ain’t Markup Language,</strong> <link target="https://yaml.org/"/></formattedref>
-  <docidentifier>YAML</docidentifier>
-  
-</bibitem><bibitem id="wfs20">
-  <formattedref format="application/x-isodoc+xml">OGC: <strong>Web Feature Service 2.0,</strong> <link target="http://docs.opengeospatial.org/is/09-025r2/09-025r2.html"/></formattedref>
-  <docidentifier>WFS 2.0</docidentifier>
-  <docnumber>2.0</docnumber>
-</bibitem><bibitem id="rfc3986">
-  <formattedref format="application/x-isodoc+xml">Berners-Lee, T., Fielding, R., Masinter, L.: <strong>IETF RFC 3986 — Uniform Resource Identifier (URI): Generic Syntax,</strong> <link target="http://tools.ietf.org/rfc/rfc3986.txt"/></formattedref>
-  <docidentifier>RFC3986</docidentifier>
-  <docnumber>3986</docnumber>
-</bibitem>
-
-
-
-
-
-
-
-
-
 </references></bibliography>
 </ogc-standard>

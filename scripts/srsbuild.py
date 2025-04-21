@@ -486,8 +486,9 @@ for file in os.listdir(directory):
 alignments=""
 for prefix in alignmentadoc:
     alignments+="=== "+str(prefix).upper()+" Ontology\n\n.Alignment: "+str(prefix).upper()+" Ontology\n[%autowidth]\n|===\n| From Element | Mapping relation | To Element | Notes\n\n"
-    for aligns in alignmentadoc[prefix]:
-        alignments+=alignmentadoc[prefix][aligns]
+    prefixdict=alignmentadoc[prefix]
+    for aligns in sorted(prefixdict.items()):
+        alignments+=prefixdict[aligns]
     alignments+="|===\n\n"
 
 with open("spec/sections/aa-alignments.adoc", 'r',encoding="utf-8") as f:

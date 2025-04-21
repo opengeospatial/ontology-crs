@@ -545,10 +545,10 @@ for ad in moduleToAdoc:
         if len(reqs)>0:
             f.write("[requirements_class,identifier=\"/req/"+str(ad)+"\",subject=\"Implementation Specification\"]\n."+str(ad)+" Extension\n\n====\n")
             for req in moduleToRequirements[ad]:
-                f.write("requirement:: /req/"+str(ad)+"\n")
+                f.write("requirement:: /req/"+str(req)+"\n")
             f.write("====\n")
             for req in moduleToRequirements[ad]:
-                f.write("[requirement,identifier=\"/req/"+str(ad)+"\"]\n.Requirement "+str(req)+"\n====\nRequirement Text\n====\n")
+                f.write("[requirement,identifier=\"/req/"+str(req)+"\"]\n.Requirement "+str(req)+"\n====\nRequirement Text\n====\n")
         for part in moduleToAdoc[ad]:
             f.write(part)
 doc=""

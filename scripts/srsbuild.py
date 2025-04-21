@@ -151,9 +151,9 @@ for file in os.listdir(directory):
                         if "Label" in row and row["Label"]!="":
                             gcore.add((URIRef(row["Concept"].replace(coreprefix+":",geocrsNS)),RDFS.label,Literal(row["Label"],lang="en")))
                         if "Requirement" in row and row["Requirement"]!="":
-                            if row["Requirement"] not in moduleToRequirements["core"]:
-                                moduleToRequirements["core"][row["Requirement"]]=[]
-                            moduleToRequirements["core"][row["Requirement"]].append(row["Concept"])
+                            if row["Requirement"] not in moduleToRequirements["06-core.adoc"]:
+                                moduleToRequirements["06-core.adoc"][row["Requirement"]]=[]
+                            moduleToRequirements["06-core.adoc"][row["Requirement"]].append(row["Concept"])
                         if "Definition" in row and row["Definition"]!="":
                             gcore.add((URIRef(row["Concept"].replace(coreprefix+":",geocrsNS)),SKOS.definition,Literal(row["Definition"],lang="en")))
                             adocdef+="|Definition\n|"+str(row["Definition"])+"\n"
@@ -201,9 +201,9 @@ for file in os.listdir(directory):
                         prefixtoclasses[curprefix].append(row["Concept"].replace(curprefix+":",curns).replace("geosrs:","").replace("geoprojection:",""))
                         classToPrefix[row["Concept"]]={"prefix":curprefix, "ns":curns}
                         if "Requirement" in row and row["Requirement"]!="":
-                            if row["Requirement"] not in moduleToRequirements["core"]:
-                                moduleToRequirements["core"][row["Requirement"]]=[]
-                            moduleToRequirements["core"][row["Requirement"]].append(row["Concept"])
+                            if row["Requirement"] not in moduleToRequirements[prefixToModule[nsprefix]]:
+                                moduleToRequirements[prefixToModule[nsprefix]][row["Requirement"]]=[]
+                            moduleToRequirements[prefixToModule[nsprefix]][row["Requirement"]].append(row["Concept"])
                         if "Label" in row and row["Label"]!="":
                             g.add((URIRef(row["Concept"].replace(coreprefix+":",curns)),RDFS.label,Literal(row["Label"],lang="en")))
                         if "Definition" in row and row["Definition"]!="":

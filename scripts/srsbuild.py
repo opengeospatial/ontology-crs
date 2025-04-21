@@ -479,7 +479,7 @@ for file in os.listdir(directory):
                         comment=row["Comment"]
                         if comment==None or str(comment).strip()=="":
                             comment=" - "
-                        alignmentadoc[targetprefix][cssourceuri]="|"+str(csourceuri)+"["+row["Concept source"]+"]\n|"+str(cpropuri)+"["+row["Property"]+"]\n|"+str(ctargeturi)+"["+row["Concept target"]+"]\n|"+str(comment)+"\n\n"
+                        alignmentadoc[targetprefix][csourceuri]="|"+str(csourceuri)+"["+row["Concept source"]+"]\n|"+str(cpropuri)+"["+row["Property"]+"]\n|"+str(ctargeturi)+"["+row["Concept target"]+"]\n|"+str(comment)+"\n\n"
     else:
         continue
 

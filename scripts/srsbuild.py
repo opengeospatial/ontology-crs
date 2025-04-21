@@ -512,7 +512,7 @@ with open("spec/sections/aa-alignments.adoc", 'r',encoding="utf-8") as f:
 with open("spec/sections/aa-alignments.adoc", 'w',encoding="utf-8") as f:
     f.write(alignmentdoc[0:alignmentdoc.find("=== IGN CRS Ontology")]+alignments)
 
-g.serialize(destination="alignments.ttl")
+galigns.serialize(destination="alignments.ttl")
 
 for pref in prefixtoclasses:
     if pref!="geosrs_srs":

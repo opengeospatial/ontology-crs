@@ -1,15 +1,8 @@
-@prefix geosrs: <https://w3id.org/geosrs/> .
-@prefix ifc: <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL/> .
+@prefix geosrs: <http://www.opengis.net/ont/srs/> .
 @prefix ign: <http://data.ign.fr/def/ignf#> .
 @prefix iso19111: <http://def.isotc211.org/iso19112/2019/SpatialReferencingByGeographicIdentifier#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-geosrs:AxisDirection owl:equivalentClass ifc:IfcDirection .
-
-geosrs:CRS owl:equivalentClass ifc:IfcCoordinateReferenceSystem .
-
-geosrs:CoordinateOperation owl:equivalentClass ifc:IfcCoordinateOperation .
 
 geosrs:CoordinateSystem owl:equivalentClass ign:CoordinateSystem,
         iso19111:CoordinateSystem .
@@ -20,82 +13,6 @@ geosrs:Datum owl:equivalentClass ign:Datum,
 geosrs:Ellipsoid owl:equivalentClass ign:Ellipsoid,
         iso19111:Ellipsoid .
 
-geosrs:ProjectedCRS owl:equivalentClass ifc:IfcProjectedCRS .
-
-<https://w3id.org/geosrs/alignments/> a owl:Ontology ;
+<http://www.opengis.net/ont/srs/geosrs/alignments/> a owl:Ontology ;
     rdfs:label "SRS Ontology Alignments"@en .
-
-geosrs:axis owl:equivalentProperty ifc:axis_IfcAxis1Placement .
-
-<https://w3id.org/geosrs/co/Conversion> owl:equivalentClass ign:Conversion .
-
-<https://w3id.org/geosrs/co/CoordinateOperation> owl:equivalentClass ign:CoordinateOperation .
-
-<https://w3id.org/geosrs/co/OperationMethod> owl:equivalentClass ign:OperationMethod .
-
-<https://w3id.org/geosrs/co/OperationParameter> owl:equivalentClass ign:OperationParameter .
-
-<https://w3id.org/geosrs/co/OperationParameterValue> owl:equivalentClass ign:OperationParameterValue .
-
-<https://w3id.org/geosrs/co/SingleOperation> owl:equivalentClass ign:SingleOperation .
-
-<https://w3id.org/geosrs/co/Transformation> owl:equivalentClass ign:Transformation .
-
-<https://w3id.org/geosrs/cs/CartesianCoordinateSystem> owl:equivalentClass ign:CartesianCS .
-
-<https://w3id.org/geosrs/cs/CoordinateSystem> owl:equivalentClass ign:CoordinateSystem .
-
-<https://w3id.org/geosrs/cs/CoordinateSystemAxis> owl:equivalentClass ign:CoordinateSystemAxis .
-
-<https://w3id.org/geosrs/cs/EllipsoidalCoordinateSystem> owl:equivalentClass ign:EllipsoidalCS .
-
-<https://w3id.org/geosrs/cs/VerticalCoordinateSystem> owl:equivalentClass ign:VerticalCS .
-
-<https://w3id.org/geosrs/datum/Datum> owl:equivalentClass ign:Datum .
-
-<https://w3id.org/geosrs/datum/Ellipsoid> owl:equivalentClass ign:Ellipsoid .
-
-<https://w3id.org/geosrs/datum/GeodeticDatum> owl:equivalentClass ign:GeodeticDatum .
-
-<https://w3id.org/geosrs/datum/PrimeMeridian> owl:equivalentClass ign:PrimeMeridian .
-
-<https://w3id.org/geosrs/datum/VerticalDatum> owl:equivalentClass ign:VerticalDatum .
-
-geosrs:sourceCRS owl:equivalentProperty ifc:sourceCRS .
-
-<https://w3id.org/geosrs/srs/AxesList> owl:equivalentClass ign:AxesList .
-
-<https://w3id.org/geosrs/srs/CRS> owl:equivalentClass ign:CRS,
-        iso19111:CRS .
-
-<https://w3id.org/geosrs/srs/CompoundCRS> owl:equivalentClass ign:CompoundCRS,
-        iso19111:CompoundCRS .
-
-<https://w3id.org/geosrs/srs/EngineeringCRS> owl:equivalentClass iso19111:EngineeringCRS .
-
-<https://w3id.org/geosrs/srs/Extent> owl:equivalentClass ign:Extent .
-
-<https://w3id.org/geosrs/srs/GeodeticCRS> owl:equivalentClass ign:GeodeticCRS,
-        iso19111:GeodeticCRS .
-
-<https://w3id.org/geosrs/srs/GeographicBoundingBox> owl:equivalentClass ign:GeographicBoundingBox .
-
-<https://w3id.org/geosrs/srs/GeographicCRS> owl:equivalentClass iso19111:GeographicCRS .
-
-<https://w3id.org/geosrs/srs/ParametricCRS> owl:equivalentClass iso19111:ParametricCRS .
-
-<https://w3id.org/geosrs/srs/ProjectedCRS> owl:equivalentClass ign:ProjectedCRS,
-        iso19111:ProjectedCRS .
-
-<https://w3id.org/geosrs/srs/SingleCRS> owl:equivalentClass ign:SingleCRS,
-        iso19111:SingleCRS .
-
-<https://w3id.org/geosrs/srs/SingleCRSList> owl:equivalentClass ign:SingleCRSList .
-
-<https://w3id.org/geosrs/srs/TemporalCRS> owl:equivalentClass iso19111:TemporalCRS .
-
-<https://w3id.org/geosrs/srs/VerticalCRS> owl:equivalentClass ign:VerticalCRS,
-        iso19111:VerticalCRS .
-
-geosrs:targetCRS owl:equivalentProperty ifc:targetCRS .
 

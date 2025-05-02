@@ -556,13 +556,13 @@ for ad in moduleToAdoc:
 	with open("spec/sections/"+ad.replace(".adoc","_classes.adoc"), 'w',encoding="utf-8") as f:
 		reqs=moduleToRequirements[ad]
 		print(reqs)
-        #if len(reqs)>0:
-        #    f.write("[requirements_class,identifier=\"/req/"+str(ad)+"\",subject=\"Implementation Specification\"]\n."+str(ad)+" Extension\n\n====\n")
-        #    for req in moduleToRequirements[ad]:
-        #       f.write("requirement:: /req/"+str(req)+"\n")
-        #    f.write("====\n")
-        #    for req in moduleToRequirements[ad]:
-        #        f.write("[requirement,identifier=\"/req/"+str(req)+"\"]\n.Requirement "+str(req)+"\n====\nRequirement Text\n====\n")
+	        if len(reqs)>0:
+	            f.write("[requirements_class,identifier=\"/req/"+str(ad)+"\",subject=\"Implementation Specification\"]\n."+str(ad)+" Extension\n\n====\n")
+	            for req in moduleToRequirements[ad]:
+	               f.write("requirement:: /req/"+str(req)+"\n")
+	            f.write("====\n")
+	        #    for req in moduleToRequirements[ad]:
+	        #        f.write("[requirement,identifier=\"/req/"+str(req)+"\"]\n.Requirement "+str(req)+"\n====\nRequirement Text\n====\n")
 		for part in moduleToAdoc[ad]:
 			f.write(moduleToAdoc[ad][part])     
 doc=""

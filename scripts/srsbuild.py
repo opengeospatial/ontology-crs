@@ -566,8 +566,8 @@ for ad in moduleToAdoc:
         #    f.write("====\n")
         #    for req in moduleToRequirements[ad]:
         #        f.write("[requirement,identifier=\"/req/"+str(req)+"\"]\n.Requirement "+str(req)+"\n====\nRequirement Text\n====\n")
-        for part in moduleToAdoc[ad]:
-            f.write(moduleToAdoc[ad][part])     
+		for part in moduleToAdoc[ad]:
+			f.write(moduleToAdoc[ad][part])     
 doc=""
 with open("spec/document.adoc", 'r',encoding="utf-8") as f:
     doc=f.read()

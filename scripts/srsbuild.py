@@ -36,7 +36,7 @@ ldcontext={"@context":{"rdfs":"http://www.w3.org/2000/01/rdf-schema#","rdf":"htt
 }
 
 alignmentadoc={"ign":{},"iso19111":{},"ifc":{}}
-moduleToRequirements={"06-core.adoc":{},"07-co_extension.adoc":{},"08-cs_extension.adoc":{},"09-datum_extension.adoc":{},"10-srsapplication.adoc":{},"11-projections_extension.adoc":{},"12-planet_extension.adoc":{}}
+moduleToRequirements={"06-core.adoc":{},"07-co_extension.adoc":{},"08-cs_extension.adoc":{},"09-datum_extension.adoc":{},"10-srsapplication_extension.adoc":{},"11-projections_extension.adoc":{},"12-planet_extension.adoc":{}}
 prefixtoclasses={"geosrs":[]}
 prefixtoproperties={"geosrs":[],"CS":[],"CO":[],"DATUM":[],"projection":[]}
 classToPrefix={}

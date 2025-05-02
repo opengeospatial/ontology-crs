@@ -502,6 +502,8 @@ for file in os.listdir(directory):
     else:
         continue
 
+# Generate alignments
+
 alignments=""
 for prefix in alignmentadoc:
     alignments+="=== "+str(prefix).upper()+" Ontology\n\n.Alignment: "+str(prefix).upper()+" Ontology\n[%autowidth]\n|===\n| From Element | Mapping relation | To Element | Notes\n\n"
@@ -543,7 +545,7 @@ for file in os.listdir(directory):
 
 print(moduleToAdoc)
 
-
+# Generate modspec elements
 
 for ad in moduleToAdoc:
 	content=""
@@ -562,7 +564,7 @@ for ad in moduleToAdoc:
 			for req in moduleToRequirements[ad]:
 				f.write("requirement:: /req/"+str(req).replace(" ","_")+"\n")
 			f.write("====\n")
-			for req in moduleToRequirements[ad]:
+			for req in sorted(moduleToRequirements[ad].keys()):
 				reqtext="Implementations shall allow the RDFS classes "
 				last=None
 				for cls in moduleToRequirements[ad][req]:
@@ -576,9 +578,7 @@ for ad in moduleToAdoc:
 				print(moduleToRequirements[ad][req])
 				for cls in moduleToRequirements[ad][req]:
 					if cls.replace("geosrs:","") in moduleToAdoc[ad]:
-						f.write(moduleToAdoc[ad][cls.replace("geosrs:","")])
-		#for part in moduleToAdoc[ad]:
-		#	f.write(moduleToAdoc[ad][part])     
+						f.write(moduleToAdoc[ad][cls.replace("geosrs:","")]) 
 doc=""
 with open("spec/document.adoc", 'r',encoding="utf-8") as f:
     doc=f.read()

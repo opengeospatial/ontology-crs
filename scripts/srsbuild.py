@@ -38,6 +38,7 @@ ldcontext={"@context":{"rdfs":"http://www.w3.org/2000/01/rdf-schema#","rdf":"htt
 alignmentadoc={"ign":{},"iso19111":{},"ifc":{}}
 moduleToRequirements={"06-core.adoc":{},"07-co_extension.adoc":{},"08-cs_extension.adoc":{},"09-datum_extension.adoc":{},"10-srsapplication_extension.adoc":{},"11-projections_extension.adoc":{},"12-planet_extension.adoc":{}}
 prefixtoclasses={"geosrs":[]}
+requirementsToClasses={}
 prefixtoproperties={"geosrs":[],"CS":[],"CO":[],"DATUM":[],"projection":[]}
 classToPrefix={}
 prefixToModule={"srs":"06-core.adoc","core":"06-core.adoc","co":"07-co_extension.adoc","cs":"08-cs_extension.adoc","datum":"09-datum_extension.adoc","srsapplication":"10-srsapplication_extension.adoc","projection":"11-projections_extension.adoc","planet":"12-planet_extension.adoc"}
@@ -561,10 +562,13 @@ for ad in moduleToAdoc:
 			for req in moduleToRequirements[ad]:
 				f.write("requirement:: /req/"+str(req)+"\n")
 			f.write("====\n")
-			#for req in moduleToRequirements[ad]:
-			#	f.write("[requirement,identifier=\"/req/"+str(req)+"\"]\n.Requirement "+str(req)+"\n====\nRequirement Text\n====\n")
-		for part in moduleToAdoc[ad]:
-			f.write(moduleToAdoc[ad][part])     
+			for req in moduleToRequirements[ad]:
+				f.write("[[req_"+str(req)+"]]\n[requirement,identifier=\"/req/"+str(req)+"\"]\n\n.Requirement "+str(req)+"\n====\nRequirement Text\n====\n\n")
+				for cls in moduleToRequirements[ad][req]:
+					if cls in moduleToAdoc[ad]:
+						f.write(moduleToAdoc[ad][cls])
+		#for part in moduleToAdoc[ad]:
+		#	f.write(moduleToAdoc[ad][part])     
 doc=""
 with open("spec/document.adoc", 'r',encoding="utf-8") as f:
     doc=f.read()

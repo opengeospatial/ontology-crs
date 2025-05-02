@@ -7,6 +7,9 @@ import json
 
 pattern = re.compile(r'(?<!^)(?=[A-Z])')
 
+opentag="{{"
+closetag="}}"
+
 def convertCamelToSnake(strr):
  return pattern.sub('_', strr).lower()
 
@@ -193,7 +196,7 @@ for file in os.listdir(directory):
                                     gcore.add((URIRef(row["Concept"].replace(coreprefix+":",geocrsNS)),OWL.disjointWith,URIRef(spl.replace("geosrs:", getNSForClass(spl,classToPrefix)))))
                             else:
                                 gcore.add((URIRef(row["Concept"].replace(coreprefix+":",geocrsNS)),OWL.disjointWith,URIRef(row["DisjointClass"].replace("geosrs:", getNSForClass(row["DisjointClass"],classToPrefix)))))
-                        moduleToAdoc["06-core.adoc"].append(adocdef+"|===\n\n")
+                        moduleToAdoc["06-core.adoc"][row["Concept"].replace(coreprefix+":",geocrsNS)]=adocdef+"|===\n\n"
                     else:
                         g.add((URIRef(row["Concept"].replace(coreprefix+":",curns)),RDF.type,OWL.Class))
                         adocdef="==== Class: "+str(row["Concept"])+"\n\n."+str(row["Concept"])+"\n[cols=\"1,1\"]\n|===\n"
@@ -246,7 +249,7 @@ for file in os.listdir(directory):
                             else:
                                 g.add((URIRef(row["Concept"].replace(coreprefix+":",curns)),OWL.disjointWith,URIRef(row["DisjointClass"].replace("geosrs:", getNSForClass(row["DisjointClass"],classToPrefix)))))                      
                         if nsprefix in prefixToModule: 
-                            moduleToAdoc[prefixToModule[nsprefix]].append(adocdef+"|===\n\n")
+                            moduleToAdoc[prefixToModule[nsprefix]][row["Concept"].replace(curprefix+":",curns).replace("geosrs:","").replace("geoprojection:","")]=adocdef+"|===\n\n"
 
     else:
         continue
@@ -334,7 +337,7 @@ for file in os.listdir(directory):
                                             ldcontext["@context"][spl]=row["Concept"].replace("geosrs:", getPrefixForClass(row["Concept"],classToPrefix)+":") 
                                     else:
                                        ldcontext["@context"][row["OGCJSON"]]=row["Concept"].replace("geosrs:", getPrefixForClass(row["Concept"],classToPrefix)+":")  
-                            moduleToAdoc["06-core.adoc"].append(adocdef+"|===\n\n")
+                            moduleToAdoc["06-core.adoc"][row["Concept"].replace(coreprefix+":",curns)]=adocdef+"|===\n\n"
                         else:
                             if row["Core Property?"].lower() in exont:
                                 adocdef="==== Property: "+str(row["Concept"])+"\n\n."+str(row["Concept"])+"\n[cols=\"1,1\"]\n|===\n"
@@ -387,7 +390,7 @@ for file in os.listdir(directory):
                                         else:
                                            ldcontext["@context"][row["OGCJSON"]]=row["Concept"].replace("geosrs:", getPrefixForClass(row["Concept"],classToPrefix)+":")  
                                 if row["Core Property?"].lower() in prefixToModule: 
-                                    moduleToAdoc[prefixToModule[row["Core Property?"].lower()]].append(adocdef+"|===\n\n")
+                                    moduleToAdoc[prefixToModule[row["Core Property?"].lower()]][row["Core Property?"].lower()]=adocdef+"|===\n\n"
             g.serialize(destination=filename.replace(".csv","")+".ttl") 
     else:
         continue
@@ -539,7 +542,20 @@ for file in os.listdir(directory):
 
 print(moduleToAdoc)
 
+
+
 for ad in moduleToAdoc:
+   content=""
+   with open(ad,"r") as file:
+       content=file.read()
+   with open("spec/sections/"+ad, 'w',encoding="utf-8") as f:
+        reqs=moduleToRequirements[ad]
+        print(reqs)
+        for tag in re.findall(opentag+"(.+?)"+closetag,content): 
+            if tag in moduleToAdoc[ad]:
+               content.replace(tag,moduleToAdoc[ad][tag]
+    with open(ad,"w") as file:
+       file.write(content)             
     with open("spec/sections/"+ad.replace(".adoc","_classes.adoc"), 'w',encoding="utf-8") as f:
         reqs=moduleToRequirements[ad]
         print(reqs)
@@ -551,7 +567,7 @@ for ad in moduleToAdoc:
         #    for req in moduleToRequirements[ad]:
         #        f.write("[requirement,identifier=\"/req/"+str(req)+"\"]\n.Requirement "+str(req)+"\n====\nRequirement Text\n====\n")
         for part in moduleToAdoc[ad]:
-            f.write(part)
+            f.write(moduleToAdoc[ad][part])     
 doc=""
 with open("spec/document.adoc", 'r',encoding="utf-8") as f:
     doc=f.read()

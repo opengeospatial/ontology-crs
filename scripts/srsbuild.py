@@ -563,7 +563,7 @@ for ad in moduleToAdoc:
 				f.write("requirement:: /req/"+str(req).replace(" ","_")+"\n")
 			f.write("====\n")
 			for req in moduleToRequirements[ad]:
-				f.write("===== "+str(req)\n\n[requirement,identifier=\"/req/"+str(req).replace(" ","_")+"\"]\n\n.Requirement "+str(req)+"\n====\nRequirement Text\n====\n\n")
+				f.write("===== "+str(req)+"\n\n[requirement,identifier=\"/req/"+str(req).replace(" ","_")+"\"]\n\n.Requirement "+str(req)+"\n====\nRequirement Text\n====\n\n")
 				print(moduleToRequirements[ad][req])
 				for cls in moduleToRequirements[ad][req]:
 					if cls.replace("geosrs:","") in moduleToAdoc[ad]:

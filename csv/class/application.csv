@@ -1,6 +1,16 @@
-Concept,SuperClass,DisjointClass,Label,Definition,ISO 19111,IGN 2019,Proj4RDF,GeoSPARQL
-,,,,,,,geocrs:CadastreMap,
-,,,,,,,geocrs:NauticalChart,
-,,,,,,,geocrs:ThematicMap,
-,,,,,,,geocrs:TopographicMap,
-,,,,,,,geocrs:WeatherMap,
+Concept,SuperClass,DisjointClass,Label,Definition,ISO 19111,IGN 2019,Proj4RDF,PROJJSON,GeoSPARQL,Core Class?
+geosrs:SRSApplication,,,SRS Application,An application for which a spatial reference system is used.,,,geocrs:SRSApplication,,,Extension
+geosrs:CadastreMap,geosrs:SRSApplication,,Cadastre Map,A map displaying a cadastre.,,,geocrs:CadastreMap,cadastre,,Extension
+geosrs:NauticalChart,geosrs:SRSApplication,,Nautical Chart,A graphic representation of a sea area and adjacent coastal regions.,,,geocrs:NauticalChart,"nautical charting",,Extension
+geosrs:ThematicMap,geosrs:SRSApplication,,Thematic Map,A map used to highlight a specific phenomenon.,,,geocrs:ThematicMap,,,Extension
+geosrs:TopographicMap,geosrs:SRSApplication,,Topographic Map,A type of map characterized by large-scale detail and quantitative representation of relief.,,,geocrs:TopographicMap,"topographic mapping",,Extension
+geosrs:WeatherMap,geosrs:SRSApplication,,Weather Map,A map for showing the local direction in which weather systems are moving.,,,geocrs:WeatherMap,,,Extension
+,,,,,,,geocrs:SpatialReferencing,"spatial referencing",,Extension
+,,,,,,,geocrs:EngineeringSurvey,"engineering survey",,Extension
+,,,,,,,geocrs:SatelliteSurvey,"satellite survey",,Extension
+,,,,,,,geocrs:SatelliteNavigation,"satellite navigation",,Extension
+,,,,,,,geocrs:CoastalHydrography,"coastal hydrography",,Extension
+,,,,,,,geocrs:OffshoreEngineering,"offshore engineering",,Extension
+,,,,,,,geocrs:Hydrography,"hydrography",,Extension
+,,,,,,,geocrs:Drilling,"drilling",,Extension
+,,,,,,,geocrs:OilAndGasExploration,"oil and gas exploration",,Extension

@@ -41,7 +41,7 @@ prefixtoclasses={"geosrs":[]}
 prefixtoproperties={"geosrs":[],"CS":[],"CO":[],"DATUM":[],"projection":[]}
 classToPrefix={}
 prefixToModule={"srs":"06-core.adoc","core":"06-core.adoc","co":"07-co_extension.adoc","cs":"08-cs_extension.adoc","datum":"09-datum_extension.adoc","srsapplication":"10-srsapplication.adoc","projection":"11-projections_extension.adoc","planet":"12-planet_extension.adoc"}
-moduleToAdoc={"06-core.adoc":["\n\n"],"07-co_extension.adoc":[],"08-cs_extension.adoc":[],"09-datum_extension.adoc":[],"10-srsapplication.adoc":[],"11-projections_extension.adoc":[],"12-planet_extension.adoc":[]}
+moduleToAdoc={"06-core.adoc":{},"07-co_extension.adoc":{},"08-cs_extension.adoc":{},"09-datum_extension.adoc":{},"10-srsapplication.adoc":{},"11-projections_extension.adoc":{},"12-planet_extension.adoc":{}}
 
 galigns=Graph() 
 galigns.bind("ign","http://data.ign.fr/def/ignf#")  

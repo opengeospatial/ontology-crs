@@ -545,7 +545,7 @@ print(moduleToAdoc)
 
 
 for ad in moduleToAdoc:
-   content=""
+	content=""
 	with open(ad,"r") as file:
 		content=file.read()
 	with open("spec/sections/"+ad, 'w',encoding="utf-8") as f:

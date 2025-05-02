@@ -526,7 +526,7 @@ for pref in prefixtoclasses:
     if pref in prefixtoproperties:
         for cls in prefixtoproperties[pref]:
             ldcontext["@context"][convertCamelToSnake(cls[cls.rfind('/')+1:])]=pref.replace("geosrs_srs","geosrs")+":"+cls[cls.rfind('/')+1:]
-print(prefixtoproperties)
+#print(prefixtoproperties)
 os.mkdir("context")
 with open('context/geosrs-context.json', 'w',encoding="utf-8") as f:
     json.dump(ldcontext, f,indent=2,sort_keys=True)
@@ -556,14 +556,15 @@ for ad in moduleToAdoc:
 		file.write(content)             
 	with open("spec/sections/"+ad.replace(".adoc","_classes.adoc"), 'w',encoding="utf-8") as f:
 		reqs=moduleToRequirements[ad]
-		print(reqs)
+		#print(reqs)
 		if len(reqs)>0:
 			f.write("[requirements_class,identifier=\"/req/"+str(ad)+"\",subject=\"Implementation Specification\"]\n."+str(ad)+" Extension\n\n====\n")
 			for req in moduleToRequirements[ad]:
-				f.write("requirement:: /req/"+str(req)+"\n")
+				f.write("requirement:: /req/"+str(req).replace(" ","_")+"\n")
 			f.write("====\n")
 			for req in moduleToRequirements[ad]:
-				f.write("[[req_"+str(req)+"]]\n[requirement,identifier=\"/req/"+str(req)+"\"]\n\n.Requirement "+str(req)+"\n====\nRequirement Text\n====\n\n")
+				f.write("[[req_"+str(req).replace(" ","_")+"]]\n[requirement,identifier=\"/req/"+str(req).replace(" ","_")+"\"]\n\n.Requirement "+str(req)+"\n====\nRequirement Text\n====\n\n")
+				print(moduleToRequirements[ad][req])
 				for cls in moduleToRequirements[ad][req]:
 					if cls in moduleToAdoc[ad]:
 						f.write(moduleToAdoc[ad][cls])

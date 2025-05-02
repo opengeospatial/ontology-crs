@@ -566,8 +566,8 @@ for ad in moduleToAdoc:
 				f.write("[[req_"+str(req).replace(" ","_")+"]]\n[requirement,identifier=\"/req/"+str(req).replace(" ","_")+"\"]\n\n.Requirement "+str(req)+"\n====\nRequirement Text\n====\n\n")
 				print(moduleToRequirements[ad][req])
 				for cls in moduleToRequirements[ad][req]:
-					if cls in moduleToAdoc[ad]:
-						f.write(moduleToAdoc[ad][cls])
+					if cls.replace("geosrs:","") in moduleToAdoc[ad]:
+						f.write(moduleToAdoc[ad][cls.replace("geosrs:","")])
 		#for part in moduleToAdoc[ad]:
 		#	f.write(moduleToAdoc[ad][part])     
 doc=""

@@ -553,7 +553,7 @@ for ad in moduleToAdoc:
         print(reqs)
         for tag in re.findall(opentag+"(.+?)"+closetag,content): 
             if tag in moduleToAdoc[ad]:
-               content.replace(tag,moduleToAdoc[ad][tag]
+               content.replace(tag,moduleToAdoc[ad][tag])
     with open(ad,"w") as file:
        file.write(content)             
     with open("spec/sections/"+ad.replace(".adoc","_classes.adoc"), 'w',encoding="utf-8") as f:

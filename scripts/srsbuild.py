@@ -564,9 +564,13 @@ for ad in moduleToAdoc:
 			f.write("====\n")
 			for req in moduleToRequirements[ad]:
 				reqtext="Implementations shall allow the RDFS classes "
+				last=None
 				for cls in moduleToRequirements[ad][req]:
-					reqtext+=cls+", "
+					reqtext+="<<Class: "+str(cls)+",`"+str(cls)+"`>> "
+					last=cls
 				reqtext=reqtext[0:-2]
+				if len(moduleToRequirements[ad][req])>0:
+					reqtext=reqtext.replace(", "+str(last), " and "+str(last))
 				reqtext+=" to be used in SPARQL graph patterns."
 				f.write("==== "+str(req)+"\n\n[requirement,identifier=\"/req/"+str(req).replace(" ","_")+"\"]\n\n."+str(req)+"\n====\n"+str(reqtext)+"\n====\n\n")
 				print(moduleToRequirements[ad][req])

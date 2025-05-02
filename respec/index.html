@@ -319,16 +319,16 @@ Here&#8217;s an example of an example term.
 <dl>
 <dt class="hdlist1">requirement</dt>
 <dd>
-<p>/req/CRSTypes</p>
+<p>/req/Coordinate_Reference_System_Types</p>
 </dd>
 </dl>
 </div>
 </div>
 </aside>
 <section class="sect3">
-<h4 id="_crstypes">CRSTypes</h4>
+<h4 id="_coordinate_reference_system_types">Coordinate Reference System Types</h4>
 <aside class="example">
-<div class="title">Example 2. CRSTypes</div>
+<div class="title">Example 2. Coordinate Reference System Types</div>
 <div class="content">
 <p class="paragraph">
 <p>Implementations shall allow the RDFS classes <a href="#_class_geosrsboundcrs"><code>geosrs:BoundCRS</code></a>, <a href="#_class_geosrscompoundcrs"><code>geosrs:CompoundCRS</code></a>, <a href="#Class: geosrs:EngineeringCRS"><code>geosrs:EngineeringCRS</code></a>, <a href="#_class_geosrsgeocentriccrs"><code>geosrs:GeocentricCRS</code></a>, <a href="#Class: geosrs:GeodeticCRS"><code>geosrs:GeodeticCRS</code></a>, <a href="#Class: geosrs:GeographicCRS"><code>geosrs:GeographicCRS</code></a>, <a href="#_class_geosrsparametriccrs"><code>geosrs:ParametricCRS</code></a>, <a href="#Class: geosrs:ProjectedCRS"><code>geosrs:ProjectedCRS</code></a>, <a href="#_class_geosrsselenographiccrs"><code>geosrs:SelenographicCRS</code></a>, <a href="#_class_geosrsspatioparametriccompoundcrs"><code>geosrs:SpatioParametricCompoundCRS</code></a>, <a href="#_class_geosrsspatioparametrictemporalcompoundcrs"><code>geosrs:SpatioParametricTemporalCompoundCRS</code></a>, <a href="#_class_geosrsspatiotemporalcompoundcrs"><code>geosrs:SpatioTemporalCompoundCRS</code></a>, <a href="#_class_geosrsstaticcrs"><code>geosrs:StaticCRS</code></a>, <a href="#_class_geosrstemporalcrs"><code>geosrs:TemporalCRS</code></a>, <a href="#_class_geosrsverticalcrs"><code>geosrs:VerticalCRS</code></a> to be used in SPARQL graph patterns.</p>
@@ -619,7 +619,7 @@ Here&#8217;s an example of an example term.
 <dl>
 <dt class="hdlist1">requirement</dt>
 <dd>
-<p>/req/CSTypes</p>
+<p>/req/Coordinate_System_Types</p>
 </dd>
 <dt class="hdlist1">requirement</dt>
 <dd>
@@ -634,9 +634,9 @@ Here&#8217;s an example of an example term.
 </div>
 </aside>
 <section class="sect3">
-<h4 id="_cstypes">CSTypes</h4>
+<h4 id="_coordinate_system_types">Coordinate System Types</h4>
 <aside class="example">
-<div class="title">Example 4. CSTypes</div>
+<div class="title">Example 4. Coordinate System Types</div>
 <div class="content">
 <p class="paragraph">
 <p>Implementations shall allow the RDFS classes <a href="#_class_geosrs1dcoordinatesystem"><code>geosrs:1DCoordinateSystem</code></a>, <a href="#_class_geosrs3dcoordinatesystem"><code>geosrs:3DCoordinateSystem</code></a>, <a href="#_class_geosrsaffinecoordinatesystem"><code>geosrs:AffineCoordinateSystem</code></a>, <a href="#_class_geosrsbarycentriccoordinatesystem"><code>geosrs:BarycentricCoordinateSystem</code></a>, <a href="#Class: geosrs:CartesianCoordinateSystem"><code>geosrs:CartesianCoordinateSystem</code></a>, <a href="#_class_geosrscelestialcoordinatesystem"><code>geosrs:CelestialCoordinateSystem</code></a>, <a href="#_class_geosrscurvilinearcoordinatesystem"><code>geosrs:CurvilinearCoordinateSystem</code></a>, <a href="#_class_geosrsgeodeticcoordinatesystem"><code>geosrs:GeodeticCoordinateSystem</code></a>, <a href="#_class_geosrsgridcoordinatesystem"><code>geosrs:GridCoordinateSystem</code></a>, <a href="#_class_geosrslocalcoordinatesystem"><code>geosrs:LocalCoordinateSystem</code></a>, <a href="#_class_geosrsobliquecoordinatesystem"><code>geosrs:ObliqueCoordinateSystem</code></a>, <a href="#Class: geosrs:OrdinalCoordinateSystem"><code>geosrs:OrdinalCoordinateSystem</code></a>, <a href="#_class_geosrsplanarcoordinatesystem"><code>geosrs:PlanarCoordinateSystem</code></a> to be used in SPARQL graph patterns.</p>
@@ -1306,7 +1306,27 @@ Here&#8217;s an example of an example term.
 </dd>
 <dt class="hdlist1">requirement</dt>
 <dd>
+<p>/req/Pseudo_Azimuthal_Projections</p>
+</dd>
+<dt class="hdlist1">requirement</dt>
+<dd>
 <p>/req/Equal_Area_Projections</p>
+</dd>
+<dt class="hdlist1">requirement</dt>
+<dd>
+<p>/req/Pseudo_Conical_Projections</p>
+</dd>
+<dt class="hdlist1">requirement</dt>
+<dd>
+<p>/req/Globular_Projections</p>
+</dd>
+<dt class="hdlist1">requirement</dt>
+<dd>
+<p>/req/Pseudo_Cylindrical_Projections</p>
+</dd>
+<dt class="hdlist1">requirement</dt>
+<dd>
+<p>/req/Cylindrical_Projections</p>
 </dd>
 <dt class="hdlist1">requirement</dt>
 <dd>
@@ -1326,11 +1346,11 @@ Here&#8217;s an example of an example term.
 </dd>
 <dt class="hdlist1">requirement</dt>
 <dd>
-<p>/req/Cylindrical_Projections</p>
+<p>/req/Azimuthal_Projections</p>
 </dd>
 <dt class="hdlist1">requirement</dt>
 <dd>
-<p>/req/Azimuthal_Projections</p>
+<p>/req/Perspective_Projections</p>
 </dd>
 <dt class="hdlist1">requirement</dt>
 <dd>
@@ -1906,9 +1926,124 @@ Here&#8217;s an example of an example term.
 </section>
 </section>
 <section class="sect3">
+<h4 id="_pseudo_azimuthal_projections">Pseudo Azimuthal Projections</h4>
+<aside class="example">
+<div class="title">Example 13. Pseudo Azimuthal Projections</div>
+<div class="content">
+<p class="paragraph">
+<p>Implementations shall allow the RDFS classes <a href="#_class_geosrsaitoffobliqueprojection"><code>geosrs:AitoffObliqueProjection</code></a>, <a href="#_class_geosrsaitoffprojection"><code>geosrs:AitoffProjection</code></a>, <a href="#_class_geosrshammerprojection"><code>geosrs:HammerProjection</code></a>, <a href="#_class_geosrsstrebe1995projection"><code>geosrs:Strebe1995Projection</code></a>, <a href="#_class_geosrswinkeltripelprojection"><code>geosrs:WinkelTripelProjection</code></a> to be used in SPARQL graph patterns.</p>
+</p>
+</div>
+</aside>
+<section class="sect4">
+<h5 id="_class_geosrsaitoffobliqueprojection">Class: geosrs:AitoffObliqueProjection</h5>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Table 62. geosrs:AitoffObliqueProjection</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/projection/AitoffObliqueProjection">https://w3id.org/geosrs/projection/AitoffObliqueProjection</a></p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/projection/AitoffObliqueProjection">AitoffObliqueProjection</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sect4">
+<h5 id="_class_geosrsaitoffprojection">Class: geosrs:AitoffProjection</h5>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Table 63. geosrs:AitoffProjection</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/projection/AitoffProjection">https://w3id.org/geosrs/projection/AitoffProjection</a></p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Definition</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">A modified azimuthal projection whose graticule takes the form of an ellipse</p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/projection/AitoffProjection">AitoffProjection</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sect4">
+<h5 id="_class_geosrshammerprojection">Class: geosrs:HammerProjection</h5>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Table 64. geosrs:HammerProjection</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/projection/HammerProjection">https://w3id.org/geosrs/projection/HammerProjection</a></p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/projection/HammerProjection">HammerProjection</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sect4">
+<h5 id="_class_geosrsstrebe1995projection">Class: geosrs:Strebe1995Projection</h5>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Table 65. geosrs:Strebe1995Projection</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/projection/Strebe1995Projection">https://w3id.org/geosrs/projection/Strebe1995Projection</a></p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/projection/Strebe1995Projection">Strebe1995Projection</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sect4">
+<h5 id="_class_geosrswinkeltripelprojection">Class: geosrs:WinkelTripelProjection</h5>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Table 66. geosrs:WinkelTripelProjection</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/projection/WinkelTripelProjection">https://w3id.org/geosrs/projection/WinkelTripelProjection</a></p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/projection/WinkelTripelProjection">WinkelTripelProjection</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section class="sect3">
 <h4 id="_equal_area_projections">Equal Area Projections</h4>
 <aside class="example">
-<div class="title">Example 13. Equal Area Projections</div>
+<div class="title">Example 14. Equal Area Projections</div>
 <div class="content">
 <p class="paragraph">
 <p>Implementations shall allow the RDFS classes <a href="#_class_geosrsalbersequalareaprojection"><code>geosrs:AlbersEqualAreaProjection</code></a>, <a href="#_class_geosrsazimuthalequalareaprojection"><code>geosrs:AzimuthalEqualAreaProjection</code></a>, <a href="#_class_geosrscylindricalequalarea"><code>geosrs:CylindricalEqualArea</code></a>, <a href="#_class_geosrsgallpetersprojection"><code>geosrs:GallPetersProjection</code></a>, <a href="#_class_geosrshobodyerprojection"><code>geosrs:HoboDyerProjection</code></a>, <a href="#_class_geosrslambertazimuthalequalarea"><code>geosrs:LambertAzimuthalEqualArea</code></a>, <a href="#_class_geosrstrystanedwardsprojection"><code>geosrs:TrystanEdwardsProjection</code></a>, <a href="#_class_geosrswiechelprojection"><code>geosrs:WiechelProjection</code></a> to be used in SPARQL graph patterns.</p>
@@ -1918,7 +2053,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsalbersequalareaprojection">Class: geosrs:AlbersEqualAreaProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 62. geosrs:AlbersEqualAreaProjection</caption>
+<caption class="title">Table 67. geosrs:AlbersEqualAreaProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -1938,7 +2073,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsazimuthalequalareaprojection">Class: geosrs:AzimuthalEqualAreaProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 63. geosrs:AzimuthalEqualAreaProjection</caption>
+<caption class="title">Table 68. geosrs:AzimuthalEqualAreaProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -1958,7 +2093,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrscylindricalequalarea">Class: geosrs:CylindricalEqualArea</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 64. geosrs:CylindricalEqualArea</caption>
+<caption class="title">Table 69. geosrs:CylindricalEqualArea</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -1978,7 +2113,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsgallpetersprojection">Class: geosrs:GallPetersProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 65. geosrs:GallPetersProjection</caption>
+<caption class="title">Table 70. geosrs:GallPetersProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -1998,7 +2133,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrshobodyerprojection">Class: geosrs:HoboDyerProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 66. geosrs:HoboDyerProjection</caption>
+<caption class="title">Table 71. geosrs:HoboDyerProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -2018,7 +2153,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrslambertazimuthalequalarea">Class: geosrs:LambertAzimuthalEqualArea</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 67. geosrs:LambertAzimuthalEqualArea</caption>
+<caption class="title">Table 72. geosrs:LambertAzimuthalEqualArea</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -2038,7 +2173,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrstrystanedwardsprojection">Class: geosrs:TrystanEdwardsProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 68. geosrs:TrystanEdwardsProjection</caption>
+<caption class="title">Table 73. geosrs:TrystanEdwardsProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -2058,7 +2193,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrswiechelprojection">Class: geosrs:WiechelProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 69. geosrs:WiechelProjection</caption>
+<caption class="title">Table 74. geosrs:WiechelProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -2077,9 +2212,1761 @@ Here&#8217;s an example of an example term.
 </section>
 </section>
 <section class="sect3">
+<h4 id="_pseudo_conical_projections">Pseudo Conical Projections</h4>
+<aside class="example">
+<div class="title">Example 15. Pseudo Conical Projections</div>
+<div class="content">
+<p class="paragraph">
+<p>Implementations shall allow the RDFS classes <a href="#_class_geosrsamericanpolyconicprojection"><code>geosrs:AmericanPolyconicProjection</code></a>, <a href="#_class_geosrsbonneprojection"><code>geosrs:BonneProjection</code></a>, <a href="#_class_geosrsbottomleyprojection"><code>geosrs:BottomleyProjection</code></a>, <a href="#_class_geosrsnicolosiglobularprojection"><code>geosrs:NicolosiGlobularProjection</code></a>, <a href="#_class_geosrsptolemyiiprojection"><code>geosrs:PtolemyIIProjection</code></a>, <a href="#_class_geosrswernerprojection"><code>geosrs:WernerProjection</code></a> to be used in SPARQL graph patterns.</p>
+</p>
+</div>
+</aside>
+<section class="sect4">
+<h5 id="_class_geosrsamericanpolyconicprojection">Class: geosrs:AmericanPolyconicProjection</h5>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Table 75. geosrs:AmericanPolyconicProjection</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/projection/AmericanPolyconicProjection">https://w3id.org/geosrs/projection/AmericanPolyconicProjection</a></p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/projection/AmericanPolyconicProjection">AmericanPolyconicProjection</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sect4">
+<h5 id="_class_geosrsbonneprojection">Class: geosrs:BonneProjection</h5>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Table 76. geosrs:BonneProjection</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/projection/BonneProjection">https://w3id.org/geosrs/projection/BonneProjection</a></p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/projection/BonneProjection">BonneProjection</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sect4">
+<h5 id="_class_geosrsbottomleyprojection">Class: geosrs:BottomleyProjection</h5>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Table 77. geosrs:BottomleyProjection</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/projection/BottomleyProjection">https://w3id.org/geosrs/projection/BottomleyProjection</a></p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/projection/BottomleyProjection">BottomleyProjection</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sect4">
+<h5 id="_class_geosrsnicolosiglobularprojection">Class: geosrs:NicolosiGlobularProjection</h5>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Table 78. geosrs:NicolosiGlobularProjection</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/projection/NicolosiGlobularProjection">https://w3id.org/geosrs/projection/NicolosiGlobularProjection</a></p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/projection/NicolosiGlobularProjection">NicolosiGlobularProjection</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sect4">
+<h5 id="_class_geosrsptolemyiiprojection">Class: geosrs:PtolemyIIProjection</h5>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Table 79. geosrs:PtolemyIIProjection</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/projection/PtolemyIIProjection">https://w3id.org/geosrs/projection/PtolemyIIProjection</a></p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/projection/PtolemyIIProjection">PtolemyIIProjection</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sect4">
+<h5 id="_class_geosrswernerprojection">Class: geosrs:WernerProjection</h5>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Table 80. geosrs:WernerProjection</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/projection/WernerProjection">https://w3id.org/geosrs/projection/WernerProjection</a></p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/projection/WernerProjection">WernerProjection</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section class="sect3">
+<h4 id="_globular_projections">Globular Projections</h4>
+<aside class="example">
+<div class="title">Example 16. Globular Projections</div>
+<div class="content">
+<p class="paragraph">
+<p>Implementations shall allow the RDFS classes <a href="#_class_geosrsapianglobulariprojection"><code>geosrs:ApianGlobularIProjection</code></a>, <a href="#_class_geosrsbaconglobularprojection"><code>geosrs:BaconGlobularProjection</code></a>, <a href="#_class_geosrsfournierglobulariprojection"><code>geosrs:FournierGlobularIProjection</code></a> to be used in SPARQL graph patterns.</p>
+</p>
+</div>
+</aside>
+<section class="sect4">
+<h5 id="_class_geosrsapianglobulariprojection">Class: geosrs:ApianGlobularIProjection</h5>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Table 81. geosrs:ApianGlobularIProjection</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/projection/ApianGlobularIProjection">https://w3id.org/geosrs/projection/ApianGlobularIProjection</a></p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/projection/ApianGlobularIProjection">ApianGlobularIProjection</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sect4">
+<h5 id="_class_geosrsbaconglobularprojection">Class: geosrs:BaconGlobularProjection</h5>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Table 82. geosrs:BaconGlobularProjection</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/projection/BaconGlobularProjection">https://w3id.org/geosrs/projection/BaconGlobularProjection</a></p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/projection/BaconGlobularProjection">BaconGlobularProjection</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sect4">
+<h5 id="_class_geosrsfournierglobulariprojection">Class: geosrs:FournierGlobularIProjection</h5>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Table 83. geosrs:FournierGlobularIProjection</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/projection/FournierGlobularIProjection">https://w3id.org/geosrs/projection/FournierGlobularIProjection</a></p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/projection/FournierGlobularIProjection">FournierGlobularIProjection</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section class="sect3">
+<h4 id="_pseudo_cylindrical_projections">Pseudo Cylindrical Projections</h4>
+<aside class="example">
+<div class="title">Example 17. Pseudo Cylindrical Projections</div>
+<div class="content">
+<p class="paragraph">
+<p>Implementations shall allow the RDFS classes <a href="#_class_geosrsapianiiprojection"><code>geosrs:ApianIIProjection</code></a>, <a href="#_class_geosrsatlantisprojection"><code>geosrs:AtlantisProjection</code></a>, <a href="#_class_geosrsbaranyiiiiprojection"><code>geosrs:BaranyiIIIProjection</code></a>, <a href="#_class_geosrsbaranyiiiprojection"><code>geosrs:BaranyiIIProjection</code></a>, <a href="#_class_geosrsbaranyiiprojection"><code>geosrs:BaranyiIProjection</code></a>, <a href="#_class_geosrsbaranyiivprojection"><code>geosrs:BaranyiIVProjection</code></a>, <a href="#_class_geosrsboggseumorphicprojection"><code>geosrs:BoggsEumorphicProjection</code></a>, <a href="#_class_geosrsbromleyprojection"><code>geosrs:BromleyProjection</code></a>, <a href="#_class_geosrscabotprojection"><code>geosrs:CabotProjection</code></a>, <a href="#_class_geosrscollignonprojection"><code>geosrs:CollignonProjection</code></a>, <a href="#_class_geosrscrasterparabolicprojection"><code>geosrs:CrasterParabolicProjection</code></a>, <a href="#_class_geosrsdeakinminimumerrorprojection"><code>geosrs:DeakinMinimumErrorProjection</code></a>, <a href="#_class_geosrseckert1projection"><code>geosrs:Eckert1Projection</code></a>, <a href="#_class_geosrseckert2projection"><code>geosrs:Eckert2Projection</code></a>, <a href="#_class_geosrseckert3projection"><code>geosrs:Eckert3Projection</code></a>, <a href="#_class_geosrseckert4projection"><code>geosrs:Eckert4Projection</code></a>, <a href="#_class_geosrseckert5projection"><code>geosrs:Eckert5Projection</code></a>, <a href="#_class_geosrseckert6projection"><code>geosrs:Eckert6Projection</code></a>, <a href="#_class_geosrsequalearthprojection"><code>geosrs:EqualEarthProjection</code></a>, <a href="#_class_geosrsfaheyprojection"><code>geosrs:FaheyProjection</code></a>, <a href="#_class_geosrsfoucautprojection"><code>geosrs:FoucautProjection</code></a>, <a href="#_class_geosrsfoucautsinusoidalprojection"><code>geosrs:FoucautSinusoidalProjection</code></a>, <a href="#_class_geosrsfournieriiprojection"><code>geosrs:FournierIIProjection</code></a>, <a href="#_class_geosrsginzburgviiiprojection"><code>geosrs:GinzburgVIIIProjection</code></a>, <a href="#_class_geosrsgoodehomolosineprojection"><code>geosrs:GoodeHomolosineProjection</code></a>, <a href="#_class_geosrshealpixprojection"><code>geosrs:HEALPixProjection</code></a>, <a href="#_class_geosrshufnagelprojection"><code>geosrs:HufnagelProjection</code></a>, <a href="#_class_geosrskavrayskiy7projection"><code>geosrs:Kavrayskiy7Projection</code></a>, <a href="#_class_geosrsloximuthalprojection"><code>geosrs:LoximuthalProjection</code></a>, <a href="#_class_geosrsmayrprojection"><code>geosrs:MayrProjection</code></a>, <a href="#_class_geosrsmcbrydethomasflatpolarparabolicprojection"><code>geosrs:McBrydeThomasFlatPolarParabolicProjection</code></a>, <a href="#_class_geosrsmcbrydethomasflatpolarquarticprojection"><code>geosrs:McBrydeThomasFlatPolarQuarticProjection</code></a>, <a href="#_class_geosrsmcbrydethomasflatpolarsinusoidalprojection"><code>geosrs:McBrydeThomasFlatPolarSinusoidalProjection</code></a>, <a href="#_class_geosrsmcbrydethomasiiprojection"><code>geosrs:McBrydeThomasIIProjection</code></a>, <a href="#_class_geosrsmcbrydethomasiprojection"><code>geosrs:McBrydeThomasIProjection</code></a>, <a href="#_class_geosrsnaturalearth2projection"><code>geosrs:NaturalEarth2Projection</code></a>, <a href="#_class_geosrsnaturalearthprojection"><code>geosrs:NaturalEarthProjection</code></a>, <a href="#_class_geosrsnellhammerprojection"><code>geosrs:NellHammerProjection</code></a>, <a href="#_class_geosrsnellprojection"><code>geosrs:NellProjection</code></a>, <a href="#_class_geosrsorteliusovalprojection"><code>geosrs:OrteliusOvalProjection</code></a>, <a href="#_class_geosrsputninsp1projection"><code>geosrs:PutninsP1Projection</code></a>, <a href="#_class_geosrsputninsp2projection"><code>geosrs:PutninsP2Projection</code></a>, <a href="#_class_geosrsputninsp3projection"><code>geosrs:PutninsP3Projection</code></a>, <a href="#_class_geosrsputninsp5projection"><code>geosrs:PutninsP5Projection</code></a>, <a href="#_class_geosrsputninsp6projection"><code>geosrs:PutninsP6Projection</code></a>, <a href="#_class_geosrsquarticauthalicprojection"><code>geosrs:QuarticAuthalicProjection</code></a>, <a href="#_class_geosrsrobinsonprojection"><code>geosrs:RobinsonProjection</code></a>, <a href="#_class_geosrssinusoidalprojection"><code>geosrs:SinusoidalProjection</code></a>, <a href="#_class_geosrsthetimesprojection"><code>geosrs:TheTimesProjection</code></a>, <a href="#_class_geosrstoblerg1projection"><code>geosrs:ToblerG1Projection</code></a>, <a href="#_class_geosrstoblerhyperellipticalprojection"><code>geosrs:ToblerHyperellipticalProjection</code></a>, <a href="#_class_geosrswagneriiiprojection"><code>geosrs:WagnerIIIProjection</code></a>, <a href="#_class_geosrswagneriiprojection"><code>geosrs:WagnerIIProjection</code></a>, <a href="#_class_geosrswagneriprojection"><code>geosrs:WagnerIProjection</code></a>, <a href="#_class_geosrswagnerivprojection"><code>geosrs:WagnerIVProjection</code></a>, <a href="#_class_geosrswagnerviprojection"><code>geosrs:WagnerVIProjection</code></a>, <a href="#_class_geosrswagnervprojection"><code>geosrs:WagnerVProjection</code></a>, <a href="#_class_geosrswerenskioldiprojection"><code>geosrs:WerenskioldIProjection</code></a>, <a href="#_class_geosrsputninsp3projection_2"><code>geosrs:PutninsP3&#8217;Projection</code></a>, <a href="#_class_geosrsputninsp4projection"><code>geosrs:PutninsP4&#8217;Projection</code></a>, <a href="#_class_geosrsputninsp5projection_2"><code>geosrs:PutninsP5&#8217;Projection</code></a>, <a href="#_class_geosrsputninsp6projection_2"><code>geosrs:PutninsP6&#8217;Projection</code></a> to be used in SPARQL graph patterns.</p>
+</p>
+</div>
+</aside>
+<section class="sect4">
+<h5 id="_class_geosrsapianiiprojection">Class: geosrs:ApianIIProjection</h5>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Table 84. geosrs:ApianIIProjection</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/projection/ApianIIProjection">https://w3id.org/geosrs/projection/ApianIIProjection</a></p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/projection/ApianIIProjection">ApianIIProjection</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sect4">
+<h5 id="_class_geosrsatlantisprojection">Class: geosrs:AtlantisProjection</h5>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Table 85. geosrs:AtlantisProjection</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/projection/AtlantisProjection">https://w3id.org/geosrs/projection/AtlantisProjection</a></p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/projection/AtlantisProjection">AtlantisProjection</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sect4">
+<h5 id="_class_geosrsbaranyiiiiprojection">Class: geosrs:BaranyiIIIProjection</h5>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Table 86. geosrs:BaranyiIIIProjection</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/projection/BaranyiIIIProjection">https://w3id.org/geosrs/projection/BaranyiIIIProjection</a></p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/projection/BaranyiIIIProjection">BaranyiIIIProjection</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sect4">
+<h5 id="_class_geosrsbaranyiiiprojection">Class: geosrs:BaranyiIIProjection</h5>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Table 87. geosrs:BaranyiIIProjection</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/projection/BaranyiIIProjection">https://w3id.org/geosrs/projection/BaranyiIIProjection</a></p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/projection/BaranyiIIProjection">BaranyiIIProjection</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sect4">
+<h5 id="_class_geosrsbaranyiiprojection">Class: geosrs:BaranyiIProjection</h5>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Table 88. geosrs:BaranyiIProjection</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/projection/BaranyiIProjection">https://w3id.org/geosrs/projection/BaranyiIProjection</a></p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/projection/BaranyiIProjection">BaranyiIProjection</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sect4">
+<h5 id="_class_geosrsbaranyiivprojection">Class: geosrs:BaranyiIVProjection</h5>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Table 89. geosrs:BaranyiIVProjection</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/projection/BaranyiIVProjection">https://w3id.org/geosrs/projection/BaranyiIVProjection</a></p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/projection/BaranyiIVProjection">BaranyiIVProjection</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sect4">
+<h5 id="_class_geosrsboggseumorphicprojection">Class: geosrs:BoggsEumorphicProjection</h5>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Table 90. geosrs:BoggsEumorphicProjection</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/projection/BoggsEumorphicProjection">https://w3id.org/geosrs/projection/BoggsEumorphicProjection</a></p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/projection/BoggsEumorphicProjection">BoggsEumorphicProjection</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sect4">
+<h5 id="_class_geosrsbromleyprojection">Class: geosrs:BromleyProjection</h5>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Table 91. geosrs:BromleyProjection</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/projection/BromleyProjection">https://w3id.org/geosrs/projection/BromleyProjection</a></p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/projection/BromleyProjection">BromleyProjection</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sect4">
+<h5 id="_class_geosrscabotprojection">Class: geosrs:CabotProjection</h5>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Table 92. geosrs:CabotProjection</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/projection/CabotProjection">https://w3id.org/geosrs/projection/CabotProjection</a></p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/projection/CabotProjection">CabotProjection</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sect4">
+<h5 id="_class_geosrscollignonprojection">Class: geosrs:CollignonProjection</h5>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Table 93. geosrs:CollignonProjection</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/projection/CollignonProjection">https://w3id.org/geosrs/projection/CollignonProjection</a></p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Definition</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">An equal-area pseudocylindrical projection that maps the sphere onto a triangle or diamond</p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/projection/CollignonProjection">CollignonProjection</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sect4">
+<h5 id="_class_geosrscrasterparabolicprojection">Class: geosrs:CrasterParabolicProjection</h5>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Table 94. geosrs:CrasterParabolicProjection</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/projection/CrasterParabolicProjection">https://w3id.org/geosrs/projection/CrasterParabolicProjection</a></p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/projection/CrasterParabolicProjection">CrasterParabolicProjection</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sect4">
+<h5 id="_class_geosrsdeakinminimumerrorprojection">Class: geosrs:DeakinMinimumErrorProjection</h5>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Table 95. geosrs:DeakinMinimumErrorProjection</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/projection/DeakinMinimumErrorProjection">https://w3id.org/geosrs/projection/DeakinMinimumErrorProjection</a></p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/projection/DeakinMinimumErrorProjection">DeakinMinimumErrorProjection</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sect4">
+<h5 id="_class_geosrseckert1projection">Class: geosrs:Eckert1Projection</h5>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Table 96. geosrs:Eckert1Projection</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/projection/Eckert1Projection">https://w3id.org/geosrs/projection/Eckert1Projection</a></p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/projection/Eckert1Projection">Eckert1Projection</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sect4">
+<h5 id="_class_geosrseckert2projection">Class: geosrs:Eckert2Projection</h5>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Table 97. geosrs:Eckert2Projection</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/projection/Eckert2Projection">https://w3id.org/geosrs/projection/Eckert2Projection</a></p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/projection/Eckert2Projection">Eckert2Projection</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sect4">
+<h5 id="_class_geosrseckert3projection">Class: geosrs:Eckert3Projection</h5>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Table 98. geosrs:Eckert3Projection</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/projection/Eckert3Projection">https://w3id.org/geosrs/projection/Eckert3Projection</a></p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/projection/Eckert3Projection">Eckert3Projection</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sect4">
+<h5 id="_class_geosrseckert4projection">Class: geosrs:Eckert4Projection</h5>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Table 99. geosrs:Eckert4Projection</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/projection/Eckert4Projection">https://w3id.org/geosrs/projection/Eckert4Projection</a></p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/projection/Eckert4Projection">Eckert4Projection</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sect4">
+<h5 id="_class_geosrseckert5projection">Class: geosrs:Eckert5Projection</h5>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Table 100. geosrs:Eckert5Projection</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/projection/Eckert5Projection">https://w3id.org/geosrs/projection/Eckert5Projection</a></p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/projection/Eckert5Projection">Eckert5Projection</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sect4">
+<h5 id="_class_geosrseckert6projection">Class: geosrs:Eckert6Projection</h5>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Table 101. geosrs:Eckert6Projection</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/projection/Eckert6Projection">https://w3id.org/geosrs/projection/Eckert6Projection</a></p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/projection/Eckert6Projection">Eckert6Projection</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sect4">
+<h5 id="_class_geosrsequalearthprojection">Class: geosrs:EqualEarthProjection</h5>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Table 102. geosrs:EqualEarthProjection</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/projection/EqualEarthProjection">https://w3id.org/geosrs/projection/EqualEarthProjection</a></p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/projection/EqualEarthProjection">EqualEarthProjection</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sect4">
+<h5 id="_class_geosrsfaheyprojection">Class: geosrs:FaheyProjection</h5>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Table 103. geosrs:FaheyProjection</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/projection/FaheyProjection">https://w3id.org/geosrs/projection/FaheyProjection</a></p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/projection/FaheyProjection">FaheyProjection</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sect4">
+<h5 id="_class_geosrsfoucautprojection">Class: geosrs:FoucautProjection</h5>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Table 104. geosrs:FoucautProjection</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/projection/FoucautProjection">https://w3id.org/geosrs/projection/FoucautProjection</a></p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/projection/FoucautProjection">FoucautProjection</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sect4">
+<h5 id="_class_geosrsfoucautsinusoidalprojection">Class: geosrs:FoucautSinusoidalProjection</h5>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Table 105. geosrs:FoucautSinusoidalProjection</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/projection/FoucautSinusoidalProjection">https://w3id.org/geosrs/projection/FoucautSinusoidalProjection</a></p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/projection/FoucautSinusoidalProjection">FoucautSinusoidalProjection</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sect4">
+<h5 id="_class_geosrsfournieriiprojection">Class: geosrs:FournierIIProjection</h5>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Table 106. geosrs:FournierIIProjection</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/projection/FournierIIProjection">https://w3id.org/geosrs/projection/FournierIIProjection</a></p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/projection/FournierIIProjection">FournierIIProjection</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sect4">
+<h5 id="_class_geosrsginzburgviiiprojection">Class: geosrs:GinzburgVIIIProjection</h5>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Table 107. geosrs:GinzburgVIIIProjection</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/projection/GinzburgVIIIProjection">https://w3id.org/geosrs/projection/GinzburgVIIIProjection</a></p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/projection/GinzburgVIIIProjection">GinzburgVIIIProjection</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sect4">
+<h5 id="_class_geosrsgoodehomolosineprojection">Class: geosrs:GoodeHomolosineProjection</h5>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Table 108. geosrs:GoodeHomolosineProjection</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/projection/GoodeHomolosineProjection">https://w3id.org/geosrs/projection/GoodeHomolosineProjection</a></p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/projection/GoodeHomolosineProjection">GoodeHomolosineProjection</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sect4">
+<h5 id="_class_geosrshealpixprojection">Class: geosrs:HEALPixProjection</h5>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Table 109. geosrs:HEALPixProjection</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/projection/HEALPixProjection">https://w3id.org/geosrs/projection/HEALPixProjection</a></p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/projection/HEALPixProjection">HEALPixProjection</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sect4">
+<h5 id="_class_geosrshufnagelprojection">Class: geosrs:HufnagelProjection</h5>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Table 110. geosrs:HufnagelProjection</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/projection/HufnagelProjection">https://w3id.org/geosrs/projection/HufnagelProjection</a></p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/projection/HufnagelProjection">HufnagelProjection</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sect4">
+<h5 id="_class_geosrskavrayskiy7projection">Class: geosrs:Kavrayskiy7Projection</h5>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Table 111. geosrs:Kavrayskiy7Projection</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/projection/Kavrayskiy7Projection">https://w3id.org/geosrs/projection/Kavrayskiy7Projection</a></p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/projection/Kavrayskiy7Projection">Kavrayskiy7Projection</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sect4">
+<h5 id="_class_geosrsloximuthalprojection">Class: geosrs:LoximuthalProjection</h5>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Table 112. geosrs:LoximuthalProjection</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/projection/LoximuthalProjection">https://w3id.org/geosrs/projection/LoximuthalProjection</a></p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/projection/LoximuthalProjection">LoximuthalProjection</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sect4">
+<h5 id="_class_geosrsmayrprojection">Class: geosrs:MayrProjection</h5>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Table 113. geosrs:MayrProjection</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/projection/MayrProjection">https://w3id.org/geosrs/projection/MayrProjection</a></p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/projection/MayrProjection">MayrProjection</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sect4">
+<h5 id="_class_geosrsmcbrydethomasflatpolarparabolicprojection">Class: geosrs:McBrydeThomasFlatPolarParabolicProjection</h5>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Table 114. geosrs:McBrydeThomasFlatPolarParabolicProjection</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/projection/McBrydeThomasFlatPolarParabolicProjection">https://w3id.org/geosrs/projection/McBrydeThomasFlatPolarParabolicProjection</a></p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/projection/McBrydeThomasFlatPolarParabolicProjection">McBrydeThomasFlatPolarParabolicProjection</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sect4">
+<h5 id="_class_geosrsmcbrydethomasflatpolarquarticprojection">Class: geosrs:McBrydeThomasFlatPolarQuarticProjection</h5>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Table 115. geosrs:McBrydeThomasFlatPolarQuarticProjection</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/projection/McBrydeThomasFlatPolarQuarticProjection">https://w3id.org/geosrs/projection/McBrydeThomasFlatPolarQuarticProjection</a></p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/projection/McBrydeThomasFlatPolarQuarticProjection">McBrydeThomasFlatPolarQuarticProjection</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sect4">
+<h5 id="_class_geosrsmcbrydethomasflatpolarsinusoidalprojection">Class: geosrs:McBrydeThomasFlatPolarSinusoidalProjection</h5>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Table 116. geosrs:McBrydeThomasFlatPolarSinusoidalProjection</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/projection/McBrydeThomasFlatPolarSinusoidalProjection">https://w3id.org/geosrs/projection/McBrydeThomasFlatPolarSinusoidalProjection</a></p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/projection/McBrydeThomasFlatPolarSinusoidalProjection">McBrydeThomasFlatPolarSinusoidalProjection</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sect4">
+<h5 id="_class_geosrsmcbrydethomasiiprojection">Class: geosrs:McBrydeThomasIIProjection</h5>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Table 117. geosrs:McBrydeThomasIIProjection</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/projection/McBrydeThomasIIProjection">https://w3id.org/geosrs/projection/McBrydeThomasIIProjection</a></p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/projection/McBrydeThomasIIProjection">McBrydeThomasIIProjection</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sect4">
+<h5 id="_class_geosrsmcbrydethomasiprojection">Class: geosrs:McBrydeThomasIProjection</h5>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Table 118. geosrs:McBrydeThomasIProjection</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/projection/McBrydeThomasIProjection">https://w3id.org/geosrs/projection/McBrydeThomasIProjection</a></p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/projection/McBrydeThomasIProjection">McBrydeThomasIProjection</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sect4">
+<h5 id="_class_geosrsnaturalearth2projection">Class: geosrs:NaturalEarth2Projection</h5>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Table 119. geosrs:NaturalEarth2Projection</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/projection/NaturalEarth2Projection">https://w3id.org/geosrs/projection/NaturalEarth2Projection</a></p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/projection/NaturalEarth2Projection">NaturalEarth2Projection</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sect4">
+<h5 id="_class_geosrsnaturalearthprojection">Class: geosrs:NaturalEarthProjection</h5>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Table 120. geosrs:NaturalEarthProjection</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/projection/NaturalEarthProjection">https://w3id.org/geosrs/projection/NaturalEarthProjection</a></p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Definition</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">A pseudocylindrical map projection designed by Tom Patterson and introduced in 2008</p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/projection/NaturalEarthProjection">NaturalEarthProjection</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sect4">
+<h5 id="_class_geosrsnellhammerprojection">Class: geosrs:NellHammerProjection</h5>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Table 121. geosrs:NellHammerProjection</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/projection/NellHammerProjection">https://w3id.org/geosrs/projection/NellHammerProjection</a></p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/projection/NellHammerProjection">NellHammerProjection</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sect4">
+<h5 id="_class_geosrsnellprojection">Class: geosrs:NellProjection</h5>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Table 122. geosrs:NellProjection</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/projection/NellProjection">https://w3id.org/geosrs/projection/NellProjection</a></p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/projection/NellProjection">NellProjection</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sect4">
+<h5 id="_class_geosrsorteliusovalprojection">Class: geosrs:OrteliusOvalProjection</h5>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Table 123. geosrs:OrteliusOvalProjection</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/projection/OrteliusOvalProjection">https://w3id.org/geosrs/projection/OrteliusOvalProjection</a></p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/projection/OrteliusOvalProjection">OrteliusOvalProjection</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sect4">
+<h5 id="_class_geosrsputninsp1projection">Class: geosrs:PutninsP1Projection</h5>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Table 124. geosrs:PutninsP1Projection</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/projection/PutninsP1Projection">https://w3id.org/geosrs/projection/PutninsP1Projection</a></p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/projection/PutninsP1Projection">PutninsP1Projection</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sect4">
+<h5 id="_class_geosrsputninsp2projection">Class: geosrs:PutninsP2Projection</h5>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Table 125. geosrs:PutninsP2Projection</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/projection/PutninsP2Projection">https://w3id.org/geosrs/projection/PutninsP2Projection</a></p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/projection/PutninsP2Projection">PutninsP2Projection</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sect4">
+<h5 id="_class_geosrsputninsp3projection">Class: geosrs:PutninsP3Projection</h5>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Table 126. geosrs:PutninsP3Projection</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/projection/PutninsP3Projection">https://w3id.org/geosrs/projection/PutninsP3Projection</a></p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/projection/PutninsP3Projection">PutninsP3Projection</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sect4">
+<h5 id="_class_geosrsputninsp5projection">Class: geosrs:PutninsP5Projection</h5>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Table 127. geosrs:PutninsP5Projection</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/projection/PutninsP5Projection">https://w3id.org/geosrs/projection/PutninsP5Projection</a></p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/projection/PutninsP5Projection">PutninsP5Projection</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sect4">
+<h5 id="_class_geosrsputninsp6projection">Class: geosrs:PutninsP6Projection</h5>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Table 128. geosrs:PutninsP6Projection</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/projection/PutninsP6Projection">https://w3id.org/geosrs/projection/PutninsP6Projection</a></p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/projection/PutninsP6Projection">PutninsP6Projection</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sect4">
+<h5 id="_class_geosrsquarticauthalicprojection">Class: geosrs:QuarticAuthalicProjection</h5>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Table 129. geosrs:QuarticAuthalicProjection</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/projection/QuarticAuthalicProjection">https://w3id.org/geosrs/projection/QuarticAuthalicProjection</a></p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/projection/QuarticAuthalicProjection">QuarticAuthalicProjection</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sect4">
+<h5 id="_class_geosrsrobinsonprojection">Class: geosrs:RobinsonProjection</h5>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Table 130. geosrs:RobinsonProjection</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/projection/RobinsonProjection">https://w3id.org/geosrs/projection/RobinsonProjection</a></p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/projection/RobinsonProjection">RobinsonProjection</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sect4">
+<h5 id="_class_geosrssinusoidalprojection">Class: geosrs:SinusoidalProjection</h5>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Table 131. geosrs:SinusoidalProjection</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/projection/SinusoidalProjection">https://w3id.org/geosrs/projection/SinusoidalProjection</a></p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/projection/SinusoidalProjection">SinusoidalProjection</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sect4">
+<h5 id="_class_geosrsthetimesprojection">Class: geosrs:TheTimesProjection</h5>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Table 132. geosrs:TheTimesProjection</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/projection/TheTimesProjection">https://w3id.org/geosrs/projection/TheTimesProjection</a></p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/projection/TheTimesProjection">TheTimesProjection</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sect4">
+<h5 id="_class_geosrstoblerg1projection">Class: geosrs:ToblerG1Projection</h5>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Table 133. geosrs:ToblerG1Projection</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/projection/ToblerG1Projection">https://w3id.org/geosrs/projection/ToblerG1Projection</a></p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/projection/ToblerG1Projection">ToblerG1Projection</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sect4">
+<h5 id="_class_geosrstoblerhyperellipticalprojection">Class: geosrs:ToblerHyperellipticalProjection</h5>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Table 134. geosrs:ToblerHyperellipticalProjection</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/projection/ToblerHyperellipticalProjection">https://w3id.org/geosrs/projection/ToblerHyperellipticalProjection</a></p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/projection/ToblerHyperellipticalProjection">ToblerHyperellipticalProjection</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sect4">
+<h5 id="_class_geosrswagneriiiprojection">Class: geosrs:WagnerIIIProjection</h5>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Table 135. geosrs:WagnerIIIProjection</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/projection/WagnerIIIProjection">https://w3id.org/geosrs/projection/WagnerIIIProjection</a></p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/projection/WagnerIIIProjection">WagnerIIIProjection</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sect4">
+<h5 id="_class_geosrswagneriiprojection">Class: geosrs:WagnerIIProjection</h5>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Table 136. geosrs:WagnerIIProjection</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/projection/WagnerIIProjection">https://w3id.org/geosrs/projection/WagnerIIProjection</a></p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/projection/WagnerIIProjection">WagnerIIProjection</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sect4">
+<h5 id="_class_geosrswagneriprojection">Class: geosrs:WagnerIProjection</h5>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Table 137. geosrs:WagnerIProjection</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/projection/WagnerIProjection">https://w3id.org/geosrs/projection/WagnerIProjection</a></p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/projection/WagnerIProjection">WagnerIProjection</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sect4">
+<h5 id="_class_geosrswagnerivprojection">Class: geosrs:WagnerIVProjection</h5>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Table 138. geosrs:WagnerIVProjection</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/projection/WagnerIVProjection">https://w3id.org/geosrs/projection/WagnerIVProjection</a></p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/projection/WagnerIVProjection">WagnerIVProjection</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sect4">
+<h5 id="_class_geosrswagnerviprojection">Class: geosrs:WagnerVIProjection</h5>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Table 139. geosrs:WagnerVIProjection</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/projection/WagnerVIProjection">https://w3id.org/geosrs/projection/WagnerVIProjection</a></p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/projection/WagnerVIProjection">WagnerVIProjection</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sect4">
+<h5 id="_class_geosrswagnervprojection">Class: geosrs:WagnerVProjection</h5>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Table 140. geosrs:WagnerVProjection</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/projection/WagnerVProjection">https://w3id.org/geosrs/projection/WagnerVProjection</a></p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/projection/WagnerVProjection">WagnerVProjection</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sect4">
+<h5 id="_class_geosrswerenskioldiprojection">Class: geosrs:WerenskioldIProjection</h5>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Table 141. geosrs:WerenskioldIProjection</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/projection/WerenskioldIProjection">https://w3id.org/geosrs/projection/WerenskioldIProjection</a></p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/projection/WerenskioldIProjection">WerenskioldIProjection</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sect4">
+<h5 id="_class_geosrsputninsp3projection_2">Class: geosrs:PutninsP3&#8217;Projection</h5>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Table 142. geosrs:PutninsP3&#8217;Projection</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/projection/PutninsP3&#8217;Projection">https://w3id.org/geosrs/projection/PutninsP3&#8217;Projection</a></p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/projection/PutninsP3&#8217;Projection">PutninsP3&#8217;Projection</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sect4">
+<h5 id="_class_geosrsputninsp4projection">Class: geosrs:PutninsP4&#8217;Projection</h5>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Table 143. geosrs:PutninsP4&#8217;Projection</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/projection/PutninsP4&#8217;Projection">https://w3id.org/geosrs/projection/PutninsP4&#8217;Projection</a></p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/projection/PutninsP4&#8217;Projection">PutninsP4&#8217;Projection</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sect4">
+<h5 id="_class_geosrsputninsp5projection_2">Class: geosrs:PutninsP5&#8217;Projection</h5>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Table 144. geosrs:PutninsP5&#8217;Projection</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/projection/PutninsP5&#8217;Projection">https://w3id.org/geosrs/projection/PutninsP5&#8217;Projection</a></p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/projection/PutninsP5&#8217;Projection">PutninsP5&#8217;Projection</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sect4">
+<h5 id="_class_geosrsputninsp6projection_2">Class: geosrs:PutninsP6&#8217;Projection</h5>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Table 145. geosrs:PutninsP6&#8217;Projection</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/projection/PutninsP6&#8217;Projection">https://w3id.org/geosrs/projection/PutninsP6&#8217;Projection</a></p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/projection/PutninsP6&#8217;Projection">PutninsP6&#8217;Projection</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section class="sect3">
+<h4 id="_cylindrical_projections">Cylindrical Projections</h4>
+<aside class="example">
+<div class="title">Example 18. Cylindrical Projections</div>
+<div class="content">
+<p class="paragraph">
+<p>Implementations shall allow the RDFS classes <a href="#_class_geosrsardencloseprojection"><code>geosrs:ArdenCloseProjection</code></a>, <a href="#_class_geosrsbraunperspectiveprojection"><code>geosrs:BraunPerspectiveProjection</code></a>, <a href="#_class_geosrscompactmillerprojection"><code>geosrs:CompactMillerProjection</code></a>, <a href="#_class_geosrscylindricalstereographicprojection"><code>geosrs:CylindricalStereographicProjection</code></a>, <a href="#_class_geosrskarchenkoshabanovaprojection"><code>geosrs:KarchenkoShabanovaProjection</code></a>, <a href="#_class_geosrslabordeprojection"><code>geosrs:LabordeProjection</code></a>, <a href="#_class_geosrsmercatorprojection"><code>geosrs:MercatorProjection</code></a>, <a href="#_class_geosrsmillerprojection"><code>geosrs:MillerProjection</code></a>, <a href="#_class_geosrspattersoncylindricalprojection"><code>geosrs:PattersonCylindricalProjection</code></a>, <a href="#_class_geosrspavlovprojection"><code>geosrs:PavlovProjection</code></a>, <a href="#_class_geosrstoblercylindricaliiprojection"><code>geosrs:ToblerCylindricalIIProjection</code></a>, <a href="#_class_geosrstoblercylindricaliprojection"><code>geosrs:ToblerCylindricalIProjection</code></a>, <a href="#_class_geosrsurmayeviiiprojection"><code>geosrs:UrmayevIIIProjection</code></a>, <a href="#_class_geosrswebmercatorprojection"><code>geosrs:WebMercatorProjection</code></a> to be used in SPARQL graph patterns.</p>
+</p>
+</div>
+</aside>
+<section class="sect4">
+<h5 id="_class_geosrsardencloseprojection">Class: geosrs:ArdenCloseProjection</h5>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Table 146. geosrs:ArdenCloseProjection</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/projection/ArdenCloseProjection">https://w3id.org/geosrs/projection/ArdenCloseProjection</a></p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/projection/ArdenCloseProjection">ArdenCloseProjection</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sect4">
+<h5 id="_class_geosrsbraunperspectiveprojection">Class: geosrs:BraunPerspectiveProjection</h5>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Table 147. geosrs:BraunPerspectiveProjection</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/projection/BraunPerspectiveProjection">https://w3id.org/geosrs/projection/BraunPerspectiveProjection</a></p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/projection/BraunPerspectiveProjection">BraunPerspectiveProjection</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sect4">
+<h5 id="_class_geosrscompactmillerprojection">Class: geosrs:CompactMillerProjection</h5>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Table 148. geosrs:CompactMillerProjection</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/projection/CompactMillerProjection">https://w3id.org/geosrs/projection/CompactMillerProjection</a></p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/projection/CompactMillerProjection">CompactMillerProjection</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sect4">
+<h5 id="_class_geosrscylindricalstereographicprojection">Class: geosrs:CylindricalStereographicProjection</h5>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Table 149. geosrs:CylindricalStereographicProjection</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/projection/CylindricalStereographicProjection">https://w3id.org/geosrs/projection/CylindricalStereographicProjection</a></p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/projection/CylindricalStereographicProjection">CylindricalStereographicProjection</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sect4">
+<h5 id="_class_geosrskarchenkoshabanovaprojection">Class: geosrs:KarchenkoShabanovaProjection</h5>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Table 150. geosrs:KarchenkoShabanovaProjection</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/projection/KarchenkoShabanovaProjection">https://w3id.org/geosrs/projection/KarchenkoShabanovaProjection</a></p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/projection/KarchenkoShabanovaProjection">KarchenkoShabanovaProjection</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sect4">
+<h5 id="_class_geosrslabordeprojection">Class: geosrs:LabordeProjection</h5>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Table 151. geosrs:LabordeProjection</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/projection/LabordeProjection">https://w3id.org/geosrs/projection/LabordeProjection</a></p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/projection/LabordeProjection">LabordeProjection</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sect4">
+<h5 id="_class_geosrsmercatorprojection">Class: geosrs:MercatorProjection</h5>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Table 152. geosrs:MercatorProjection</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/projection/MercatorProjection">https://w3id.org/geosrs/projection/MercatorProjection</a></p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/projection/MercatorProjection">MercatorProjection</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sect4">
+<h5 id="_class_geosrsmillerprojection">Class: geosrs:MillerProjection</h5>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Table 153. geosrs:MillerProjection</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/projection/MillerProjection">https://w3id.org/geosrs/projection/MillerProjection</a></p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/projection/MillerProjection">MillerProjection</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sect4">
+<h5 id="_class_geosrspattersoncylindricalprojection">Class: geosrs:PattersonCylindricalProjection</h5>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Table 154. geosrs:PattersonCylindricalProjection</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/projection/PattersonCylindricalProjection">https://w3id.org/geosrs/projection/PattersonCylindricalProjection</a></p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/projection/PattersonCylindricalProjection">PattersonCylindricalProjection</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sect4">
+<h5 id="_class_geosrspavlovprojection">Class: geosrs:PavlovProjection</h5>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Table 155. geosrs:PavlovProjection</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/projection/PavlovProjection">https://w3id.org/geosrs/projection/PavlovProjection</a></p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/projection/PavlovProjection">PavlovProjection</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sect4">
+<h5 id="_class_geosrstoblercylindricaliiprojection">Class: geosrs:ToblerCylindricalIIProjection</h5>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Table 156. geosrs:ToblerCylindricalIIProjection</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/projection/ToblerCylindricalIIProjection">https://w3id.org/geosrs/projection/ToblerCylindricalIIProjection</a></p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/projection/ToblerCylindricalIIProjection">ToblerCylindricalIIProjection</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sect4">
+<h5 id="_class_geosrstoblercylindricaliprojection">Class: geosrs:ToblerCylindricalIProjection</h5>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Table 157. geosrs:ToblerCylindricalIProjection</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/projection/ToblerCylindricalIProjection">https://w3id.org/geosrs/projection/ToblerCylindricalIProjection</a></p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/projection/ToblerCylindricalIProjection">ToblerCylindricalIProjection</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sect4">
+<h5 id="_class_geosrsurmayeviiiprojection">Class: geosrs:UrmayevIIIProjection</h5>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Table 158. geosrs:UrmayevIIIProjection</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/projection/UrmayevIIIProjection">https://w3id.org/geosrs/projection/UrmayevIIIProjection</a></p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/projection/UrmayevIIIProjection">UrmayevIIIProjection</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sect4">
+<h5 id="_class_geosrswebmercatorprojection">Class: geosrs:WebMercatorProjection</h5>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Table 159. geosrs:WebMercatorProjection</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/projection/WebMercatorProjection">https://w3id.org/geosrs/projection/WebMercatorProjection</a></p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/projection/WebMercatorProjection">WebMercatorProjection</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section class="sect3">
 <h4 id="_compromise_projections">Compromise Projections</h4>
 <aside class="example">
-<div class="title">Example 14. Compromise Projections</div>
+<div class="title">Example 19. Compromise Projections</div>
 <div class="content">
 <p class="paragraph">
 <p>Implementations shall allow the RDFS classes <a href="#_class_geosrsarmadilloprojection"><code>geosrs:ArmadilloProjection</code></a>, <a href="#_class_geosrsbakerdinomicprojection"><code>geosrs:BakerDinomicProjection</code></a>, <a href="#_class_geosrsbertinprojection"><code>geosrs:BertinProjection</code></a>, <a href="#_class_geosrschamberlintrimetricprojection"><code>geosrs:ChamberlinTrimetricProjection</code></a>, <a href="#_class_geosrsdenoyersemiellipticalprojection"><code>geosrs:DenoyerSemiEllipticalProjection</code></a>, <a href="#_class_geosrsfairgrieveprojection"><code>geosrs:FairgrieveProjection</code></a>, <a href="#_class_geosrslarriveeprojection"><code>geosrs:LarriveeProjection</code></a>, <a href="#_class_geosrspetermannstarprojection"><code>geosrs:PetermannStarProjection</code></a>, <a href="#_class_geosrsspilhausoceanicprojection"><code>geosrs:SpilhausOceanicProjection</code></a>, <a href="#_class_geosrsvandergrinteniiiprojection"><code>geosrs:VanDerGrintenIIIProjection</code></a>, <a href="#_class_geosrswinkeliiprojection"><code>geosrs:WinkelIIProjection</code></a>, <a href="#_class_geosrswinkeliprojection"><code>geosrs:WinkelIProjection</code></a>, <a href="#_class_geosrswinkelsnyderprojection"><code>geosrs:WinkelSnyderProjection</code></a> to be used in SPARQL graph patterns.</p>
@@ -2089,7 +3976,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsarmadilloprojection">Class: geosrs:ArmadilloProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 70. geosrs:ArmadilloProjection</caption>
+<caption class="title">Table 160. geosrs:ArmadilloProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -2109,7 +3996,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsbakerdinomicprojection">Class: geosrs:BakerDinomicProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 71. geosrs:BakerDinomicProjection</caption>
+<caption class="title">Table 161. geosrs:BakerDinomicProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -2129,7 +4016,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsbertinprojection">Class: geosrs:BertinProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 72. geosrs:BertinProjection</caption>
+<caption class="title">Table 162. geosrs:BertinProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -2149,7 +4036,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrschamberlintrimetricprojection">Class: geosrs:ChamberlinTrimetricProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 73. geosrs:ChamberlinTrimetricProjection</caption>
+<caption class="title">Table 163. geosrs:ChamberlinTrimetricProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -2169,7 +4056,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsdenoyersemiellipticalprojection">Class: geosrs:DenoyerSemiEllipticalProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 74. geosrs:DenoyerSemiEllipticalProjection</caption>
+<caption class="title">Table 164. geosrs:DenoyerSemiEllipticalProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -2189,7 +4076,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsfairgrieveprojection">Class: geosrs:FairgrieveProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 75. geosrs:FairgrieveProjection</caption>
+<caption class="title">Table 165. geosrs:FairgrieveProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -2209,7 +4096,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrslarriveeprojection">Class: geosrs:LarriveeProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 76. geosrs:LarriveeProjection</caption>
+<caption class="title">Table 166. geosrs:LarriveeProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -2229,7 +4116,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrspetermannstarprojection">Class: geosrs:PetermannStarProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 77. geosrs:PetermannStarProjection</caption>
+<caption class="title">Table 167. geosrs:PetermannStarProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -2249,7 +4136,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsspilhausoceanicprojection">Class: geosrs:SpilhausOceanicProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 78. geosrs:SpilhausOceanicProjection</caption>
+<caption class="title">Table 168. geosrs:SpilhausOceanicProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -2269,7 +4156,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsvandergrinteniiiprojection">Class: geosrs:VanDerGrintenIIIProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 79. geosrs:VanDerGrintenIIIProjection</caption>
+<caption class="title">Table 169. geosrs:VanDerGrintenIIIProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -2289,7 +4176,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrswinkeliiprojection">Class: geosrs:WinkelIIProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 80. geosrs:WinkelIIProjection</caption>
+<caption class="title">Table 170. geosrs:WinkelIIProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -2309,7 +4196,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrswinkeliprojection">Class: geosrs:WinkelIProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 81. geosrs:WinkelIProjection</caption>
+<caption class="title">Table 171. geosrs:WinkelIProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -2329,7 +4216,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrswinkelsnyderprojection">Class: geosrs:WinkelSnyderProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 82. geosrs:WinkelSnyderProjection</caption>
+<caption class="title">Table 172. geosrs:WinkelSnyderProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -2350,7 +4237,7 @@ Here&#8217;s an example of an example term.
 <section class="sect3">
 <h4 id="_polyhedral_projections">Polyhedral Projections</h4>
 <aside class="example">
-<div class="title">Example 15. Polyhedral Projections</div>
+<div class="title">Example 20. Polyhedral Projections</div>
 <div class="content">
 <p class="paragraph">
 <p>Implementations shall allow the RDFS classes <a href="#_class_geosrsauthagraphprojection"><code>geosrs:AuthaGraphProjection</code></a>, <a href="#_class_geosrscahillkeyesprojection"><code>geosrs:CahillKeyesProjection</code></a>, <a href="#_class_geosrscollignonbutterflyprojection"><code>geosrs:CollignonButterflyProjection</code></a>, <a href="#_class_geosrsdodecahedralprojection"><code>geosrs:DodecahedralProjection</code></a>, <a href="#_class_geosrsdymaxionprojection"><code>geosrs:DymaxionProjection</code></a>, <a href="#_class_geosrsgnomonicbutterflyprojection"><code>geosrs:GnomonicButterflyProjection</code></a>, <a href="#_class_geosrsgnomoniccubedsphereprojection"><code>geosrs:GnomonicCubedSphereProjection</code></a>, <a href="#_class_geosrsgnomonicicosahedronprojection"><code>geosrs:GnomonicIcosahedronProjection</code></a>, <a href="#_class_geosrsguyouprojection"><code>geosrs:GuyouProjection</code></a>, <a href="#_class_geosrsicosahedralprojection"><code>geosrs:IcosahedralProjection</code></a>, <a href="#_class_geosrsleeprojection"><code>geosrs:LeeProjection</code></a>, <a href="#_class_geosrsmyrahedalprojection"><code>geosrs:MyrahedalProjection</code></a>, <a href="#_class_geosrsoctantprojection"><code>geosrs:OctantProjection</code></a>, <a href="#_class_geosrsquadrilateralizedsphericalcubeprojection"><code>geosrs:QuadrilateralizedSphericalCubeProjection</code></a>, <a href="#_class_geosrswatermanbutterflyprojection"><code>geosrs:WatermanButterflyProjection</code></a> to be used in SPARQL graph patterns.</p>
@@ -2360,7 +4247,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsauthagraphprojection">Class: geosrs:AuthaGraphProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 83. geosrs:AuthaGraphProjection</caption>
+<caption class="title">Table 173. geosrs:AuthaGraphProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -2380,7 +4267,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrscahillkeyesprojection">Class: geosrs:CahillKeyesProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 84. geosrs:CahillKeyesProjection</caption>
+<caption class="title">Table 174. geosrs:CahillKeyesProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -2400,7 +4287,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrscollignonbutterflyprojection">Class: geosrs:CollignonButterflyProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 85. geosrs:CollignonButterflyProjection</caption>
+<caption class="title">Table 175. geosrs:CollignonButterflyProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -2420,7 +4307,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsdodecahedralprojection">Class: geosrs:DodecahedralProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 86. geosrs:DodecahedralProjection</caption>
+<caption class="title">Table 176. geosrs:DodecahedralProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -2440,7 +4327,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsdymaxionprojection">Class: geosrs:DymaxionProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 87. geosrs:DymaxionProjection</caption>
+<caption class="title">Table 177. geosrs:DymaxionProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -2460,7 +4347,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsgnomonicbutterflyprojection">Class: geosrs:GnomonicButterflyProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 88. geosrs:GnomonicButterflyProjection</caption>
+<caption class="title">Table 178. geosrs:GnomonicButterflyProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -2480,7 +4367,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsgnomoniccubedsphereprojection">Class: geosrs:GnomonicCubedSphereProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 89. geosrs:GnomonicCubedSphereProjection</caption>
+<caption class="title">Table 179. geosrs:GnomonicCubedSphereProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -2500,7 +4387,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsgnomonicicosahedronprojection">Class: geosrs:GnomonicIcosahedronProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 90. geosrs:GnomonicIcosahedronProjection</caption>
+<caption class="title">Table 180. geosrs:GnomonicIcosahedronProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -2520,7 +4407,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsguyouprojection">Class: geosrs:GuyouProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 91. geosrs:GuyouProjection</caption>
+<caption class="title">Table 181. geosrs:GuyouProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -2540,7 +4427,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsicosahedralprojection">Class: geosrs:IcosahedralProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 92. geosrs:IcosahedralProjection</caption>
+<caption class="title">Table 182. geosrs:IcosahedralProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -2560,7 +4447,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsleeprojection">Class: geosrs:LeeProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 93. geosrs:LeeProjection</caption>
+<caption class="title">Table 183. geosrs:LeeProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -2580,7 +4467,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsmyrahedalprojection">Class: geosrs:MyrahedalProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 94. geosrs:MyrahedalProjection</caption>
+<caption class="title">Table 184. geosrs:MyrahedalProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -2600,7 +4487,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsoctantprojection">Class: geosrs:OctantProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 95. geosrs:OctantProjection</caption>
+<caption class="title">Table 185. geosrs:OctantProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -2620,7 +4507,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsquadrilateralizedsphericalcubeprojection">Class: geosrs:QuadrilateralizedSphericalCubeProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 96. geosrs:QuadrilateralizedSphericalCubeProjection</caption>
+<caption class="title">Table 186. geosrs:QuadrilateralizedSphericalCubeProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -2640,7 +4527,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrswatermanbutterflyprojection">Class: geosrs:WatermanButterflyProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 97. geosrs:WatermanButterflyProjection</caption>
+<caption class="title">Table 187. geosrs:WatermanButterflyProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -2661,7 +4548,7 @@ Here&#8217;s an example of an example term.
 <section class="sect3">
 <h4 id="_equidistant_projections">Equidistant Projections</h4>
 <aside class="example">
-<div class="title">Example 16. Equidistant Projections</div>
+<div class="title">Example 21. Equidistant Projections</div>
 <div class="content">
 <p class="paragraph">
 <p>Implementations shall allow the RDFS classes <a href="#_class_geosrsazimuthalequidistantprojection"><code>geosrs:AzimuthalEquidistantProjection</code></a>, <a href="#_class_geosrsberghausstarprojection"><code>geosrs:BerghausStarProjection</code></a>, <a href="#_class_geosrscassiniprojection"><code>geosrs:CassiniProjection</code></a>, <a href="#_class_geosrsequidistantconicprojection"><code>geosrs:EquidistantConicProjection</code></a>, <a href="#_class_geosrsequidistantcylindricalprojection"><code>geosrs:EquidistantCylindricalProjection</code></a>, <a href="#_class_geosrsequirectangularprojection"><code>geosrs:EquirectangularProjection</code></a>, <a href="#_class_geosrsobliqueplatecarreeprojection"><code>geosrs:ObliquePlateCarreeProjection</code></a>, <a href="#_class_geosrsplatecarreeprojection"><code>geosrs:PlateCarreeProjection</code></a>, <a href="#_class_geosrstwopointequidistantprojection"><code>geosrs:TwoPointEquidistantProjection</code></a> to be used in SPARQL graph patterns.</p>
@@ -2671,7 +4558,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsazimuthalequidistantprojection">Class: geosrs:AzimuthalEquidistantProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 98. geosrs:AzimuthalEquidistantProjection</caption>
+<caption class="title">Table 188. geosrs:AzimuthalEquidistantProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -2691,7 +4578,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsberghausstarprojection">Class: geosrs:BerghausStarProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 99. geosrs:BerghausStarProjection</caption>
+<caption class="title">Table 189. geosrs:BerghausStarProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -2711,7 +4598,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrscassiniprojection">Class: geosrs:CassiniProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 100. geosrs:CassiniProjection</caption>
+<caption class="title">Table 190. geosrs:CassiniProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -2735,7 +4622,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsequidistantconicprojection">Class: geosrs:EquidistantConicProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 101. geosrs:EquidistantConicProjection</caption>
+<caption class="title">Table 191. geosrs:EquidistantConicProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -2755,7 +4642,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsequidistantcylindricalprojection">Class: geosrs:EquidistantCylindricalProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 102. geosrs:EquidistantCylindricalProjection</caption>
+<caption class="title">Table 192. geosrs:EquidistantCylindricalProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -2775,7 +4662,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsequirectangularprojection">Class: geosrs:EquirectangularProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 103. geosrs:EquirectangularProjection</caption>
+<caption class="title">Table 193. geosrs:EquirectangularProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -2795,7 +4682,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsobliqueplatecarreeprojection">Class: geosrs:ObliquePlateCarreeProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 104. geosrs:ObliquePlateCarreeProjection</caption>
+<caption class="title">Table 194. geosrs:ObliquePlateCarreeProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -2815,7 +4702,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsplatecarreeprojection">Class: geosrs:PlateCarreeProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 105. geosrs:PlateCarreeProjection</caption>
+<caption class="title">Table 195. geosrs:PlateCarreeProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -2835,7 +4722,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrstwopointequidistantprojection">Class: geosrs:TwoPointEquidistantProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 106. geosrs:TwoPointEquidistantProjection</caption>
+<caption class="title">Table 196. geosrs:TwoPointEquidistantProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -2856,7 +4743,7 @@ Here&#8217;s an example of an example term.
 <section class="sect3">
 <h4 id="_conical_projections">Conical Projections</h4>
 <aside class="example">
-<div class="title">Example 17. Conical Projections</div>
+<div class="title">Example 22. Conical Projections</div>
 <div class="content">
 <p class="paragraph">
 <p>Implementations shall allow the RDFS classes <a href="#_class_geosrsbipolarobliqueconicconformalprojection"><code>geosrs:BipolarObliqueConicConformalProjection</code></a>, <a href="#_class_geosrscentralconicprojection"><code>geosrs:CentralConicProjection</code></a>, <a href="#_class_geosrsherschelconformalconicprojection"><code>geosrs:HerschelConformalConicProjection</code></a>, <a href="#_class_geosrskrovak"><code>geosrs:Krovak</code></a>, <a href="#_class_geosrslambertconformalconicprojection"><code>geosrs:LambertConformalConicProjection</code></a>, <a href="#_class_geosrsmurdochiiiprojection"><code>geosrs:MurdochIIIProjection</code></a>, <a href="#_class_geosrsmurdochiiprojection"><code>geosrs:MurdochIIProjection</code></a>, <a href="#_class_geosrsmurdochiprojection"><code>geosrs:MurdochIProjection</code></a>, <a href="#_class_geosrsschjerningiprojection"><code>geosrs:SchjerningIProjection</code></a>, <a href="#_class_geosrsvitkovskyiprojection"><code>geosrs:VitkovskyIProjection</code></a> to be used in SPARQL graph patterns.</p>
@@ -2866,7 +4753,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsbipolarobliqueconicconformalprojection">Class: geosrs:BipolarObliqueConicConformalProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 107. geosrs:BipolarObliqueConicConformalProjection</caption>
+<caption class="title">Table 197. geosrs:BipolarObliqueConicConformalProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -2886,7 +4773,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrscentralconicprojection">Class: geosrs:CentralConicProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 108. geosrs:CentralConicProjection</caption>
+<caption class="title">Table 198. geosrs:CentralConicProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -2906,7 +4793,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsherschelconformalconicprojection">Class: geosrs:HerschelConformalConicProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 109. geosrs:HerschelConformalConicProjection</caption>
+<caption class="title">Table 199. geosrs:HerschelConformalConicProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -2926,7 +4813,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrskrovak">Class: geosrs:Krovak</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 110. geosrs:Krovak</caption>
+<caption class="title">Table 200. geosrs:Krovak</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -2946,7 +4833,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrslambertconformalconicprojection">Class: geosrs:LambertConformalConicProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 111. geosrs:LambertConformalConicProjection</caption>
+<caption class="title">Table 201. geosrs:LambertConformalConicProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -2966,7 +4853,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsmurdochiiiprojection">Class: geosrs:MurdochIIIProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 112. geosrs:MurdochIIIProjection</caption>
+<caption class="title">Table 202. geosrs:MurdochIIIProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -2986,7 +4873,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsmurdochiiprojection">Class: geosrs:MurdochIIProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 113. geosrs:MurdochIIProjection</caption>
+<caption class="title">Table 203. geosrs:MurdochIIProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -3006,7 +4893,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsmurdochiprojection">Class: geosrs:MurdochIProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 114. geosrs:MurdochIProjection</caption>
+<caption class="title">Table 204. geosrs:MurdochIProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -3026,7 +4913,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsschjerningiprojection">Class: geosrs:SchjerningIProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 115. geosrs:SchjerningIProjection</caption>
+<caption class="title">Table 205. geosrs:SchjerningIProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -3046,7 +4933,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsvitkovskyiprojection">Class: geosrs:VitkovskyIProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 116. geosrs:VitkovskyIProjection</caption>
+<caption class="title">Table 206. geosrs:VitkovskyIProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -3065,280 +4952,9 @@ Here&#8217;s an example of an example term.
 </section>
 </section>
 <section class="sect3">
-<h4 id="_cylindrical_projections">Cylindrical Projections</h4>
-<aside class="example">
-<div class="title">Example 18. Cylindrical Projections</div>
-<div class="content">
-<p class="paragraph">
-<p>Implementations shall allow the RDFS classes <a href="#_class_geosrsbraunperspectiveprojection"><code>geosrs:BraunPerspectiveProjection</code></a>, <a href="#_class_geosrscompactmillerprojection"><code>geosrs:CompactMillerProjection</code></a>, <a href="#_class_geosrscylindricalstereographicprojection"><code>geosrs:CylindricalStereographicProjection</code></a>, <a href="#_class_geosrskarchenkoshabanovaprojection"><code>geosrs:KarchenkoShabanovaProjection</code></a>, <a href="#_class_geosrslabordeprojection"><code>geosrs:LabordeProjection</code></a>, <a href="#_class_geosrsmercatorprojection"><code>geosrs:MercatorProjection</code></a>, <a href="#_class_geosrsmillerprojection"><code>geosrs:MillerProjection</code></a>, <a href="#_class_geosrspattersoncylindricalprojection"><code>geosrs:PattersonCylindricalProjection</code></a>, <a href="#_class_geosrspavlovprojection"><code>geosrs:PavlovProjection</code></a>, <a href="#_class_geosrstoblercylindricaliiprojection"><code>geosrs:ToblerCylindricalIIProjection</code></a>, <a href="#_class_geosrstoblercylindricaliprojection"><code>geosrs:ToblerCylindricalIProjection</code></a>, <a href="#_class_geosrsurmayeviiiprojection"><code>geosrs:UrmayevIIIProjection</code></a>, <a href="#_class_geosrswebmercatorprojection"><code>geosrs:WebMercatorProjection</code></a> to be used in SPARQL graph patterns.</p>
-</p>
-</div>
-</aside>
-<section class="sect4">
-<h5 id="_class_geosrsbraunperspectiveprojection">Class: geosrs:BraunPerspectiveProjection</h5>
-<table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 117. geosrs:BraunPerspectiveProjection</caption>
-<colgroup>
-<col style="width: 50%;">
-<col style="width: 50%;">
-</colgroup>
-<tbody>
-<tr>
-  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
-  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/projection/BraunPerspectiveProjection">https://w3id.org/geosrs/projection/BraunPerspectiveProjection</a></p></td>
-</tr>
-<tr>
-  <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
-  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/projection/BraunPerspectiveProjection">BraunPerspectiveProjection</a></p></td>
-</tr>
-</tbody>
-</table>
-</section>
-<section class="sect4">
-<h5 id="_class_geosrscompactmillerprojection">Class: geosrs:CompactMillerProjection</h5>
-<table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 118. geosrs:CompactMillerProjection</caption>
-<colgroup>
-<col style="width: 50%;">
-<col style="width: 50%;">
-</colgroup>
-<tbody>
-<tr>
-  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
-  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/projection/CompactMillerProjection">https://w3id.org/geosrs/projection/CompactMillerProjection</a></p></td>
-</tr>
-<tr>
-  <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
-  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/projection/CompactMillerProjection">CompactMillerProjection</a></p></td>
-</tr>
-</tbody>
-</table>
-</section>
-<section class="sect4">
-<h5 id="_class_geosrscylindricalstereographicprojection">Class: geosrs:CylindricalStereographicProjection</h5>
-<table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 119. geosrs:CylindricalStereographicProjection</caption>
-<colgroup>
-<col style="width: 50%;">
-<col style="width: 50%;">
-</colgroup>
-<tbody>
-<tr>
-  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
-  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/projection/CylindricalStereographicProjection">https://w3id.org/geosrs/projection/CylindricalStereographicProjection</a></p></td>
-</tr>
-<tr>
-  <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
-  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/projection/CylindricalStereographicProjection">CylindricalStereographicProjection</a></p></td>
-</tr>
-</tbody>
-</table>
-</section>
-<section class="sect4">
-<h5 id="_class_geosrskarchenkoshabanovaprojection">Class: geosrs:KarchenkoShabanovaProjection</h5>
-<table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 120. geosrs:KarchenkoShabanovaProjection</caption>
-<colgroup>
-<col style="width: 50%;">
-<col style="width: 50%;">
-</colgroup>
-<tbody>
-<tr>
-  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
-  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/projection/KarchenkoShabanovaProjection">https://w3id.org/geosrs/projection/KarchenkoShabanovaProjection</a></p></td>
-</tr>
-<tr>
-  <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
-  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/projection/KarchenkoShabanovaProjection">KarchenkoShabanovaProjection</a></p></td>
-</tr>
-</tbody>
-</table>
-</section>
-<section class="sect4">
-<h5 id="_class_geosrslabordeprojection">Class: geosrs:LabordeProjection</h5>
-<table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 121. geosrs:LabordeProjection</caption>
-<colgroup>
-<col style="width: 50%;">
-<col style="width: 50%;">
-</colgroup>
-<tbody>
-<tr>
-  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
-  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/projection/LabordeProjection">https://w3id.org/geosrs/projection/LabordeProjection</a></p></td>
-</tr>
-<tr>
-  <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
-  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/projection/LabordeProjection">LabordeProjection</a></p></td>
-</tr>
-</tbody>
-</table>
-</section>
-<section class="sect4">
-<h5 id="_class_geosrsmercatorprojection">Class: geosrs:MercatorProjection</h5>
-<table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 122. geosrs:MercatorProjection</caption>
-<colgroup>
-<col style="width: 50%;">
-<col style="width: 50%;">
-</colgroup>
-<tbody>
-<tr>
-  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
-  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/projection/MercatorProjection">https://w3id.org/geosrs/projection/MercatorProjection</a></p></td>
-</tr>
-<tr>
-  <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
-  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/projection/MercatorProjection">MercatorProjection</a></p></td>
-</tr>
-</tbody>
-</table>
-</section>
-<section class="sect4">
-<h5 id="_class_geosrsmillerprojection">Class: geosrs:MillerProjection</h5>
-<table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 123. geosrs:MillerProjection</caption>
-<colgroup>
-<col style="width: 50%;">
-<col style="width: 50%;">
-</colgroup>
-<tbody>
-<tr>
-  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
-  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/projection/MillerProjection">https://w3id.org/geosrs/projection/MillerProjection</a></p></td>
-</tr>
-<tr>
-  <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
-  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/projection/MillerProjection">MillerProjection</a></p></td>
-</tr>
-</tbody>
-</table>
-</section>
-<section class="sect4">
-<h5 id="_class_geosrspattersoncylindricalprojection">Class: geosrs:PattersonCylindricalProjection</h5>
-<table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 124. geosrs:PattersonCylindricalProjection</caption>
-<colgroup>
-<col style="width: 50%;">
-<col style="width: 50%;">
-</colgroup>
-<tbody>
-<tr>
-  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
-  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/projection/PattersonCylindricalProjection">https://w3id.org/geosrs/projection/PattersonCylindricalProjection</a></p></td>
-</tr>
-<tr>
-  <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
-  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/projection/PattersonCylindricalProjection">PattersonCylindricalProjection</a></p></td>
-</tr>
-</tbody>
-</table>
-</section>
-<section class="sect4">
-<h5 id="_class_geosrspavlovprojection">Class: geosrs:PavlovProjection</h5>
-<table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 125. geosrs:PavlovProjection</caption>
-<colgroup>
-<col style="width: 50%;">
-<col style="width: 50%;">
-</colgroup>
-<tbody>
-<tr>
-  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
-  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/projection/PavlovProjection">https://w3id.org/geosrs/projection/PavlovProjection</a></p></td>
-</tr>
-<tr>
-  <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
-  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/projection/PavlovProjection">PavlovProjection</a></p></td>
-</tr>
-</tbody>
-</table>
-</section>
-<section class="sect4">
-<h5 id="_class_geosrstoblercylindricaliiprojection">Class: geosrs:ToblerCylindricalIIProjection</h5>
-<table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 126. geosrs:ToblerCylindricalIIProjection</caption>
-<colgroup>
-<col style="width: 50%;">
-<col style="width: 50%;">
-</colgroup>
-<tbody>
-<tr>
-  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
-  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/projection/ToblerCylindricalIIProjection">https://w3id.org/geosrs/projection/ToblerCylindricalIIProjection</a></p></td>
-</tr>
-<tr>
-  <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
-  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/projection/ToblerCylindricalIIProjection">ToblerCylindricalIIProjection</a></p></td>
-</tr>
-</tbody>
-</table>
-</section>
-<section class="sect4">
-<h5 id="_class_geosrstoblercylindricaliprojection">Class: geosrs:ToblerCylindricalIProjection</h5>
-<table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 127. geosrs:ToblerCylindricalIProjection</caption>
-<colgroup>
-<col style="width: 50%;">
-<col style="width: 50%;">
-</colgroup>
-<tbody>
-<tr>
-  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
-  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/projection/ToblerCylindricalIProjection">https://w3id.org/geosrs/projection/ToblerCylindricalIProjection</a></p></td>
-</tr>
-<tr>
-  <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
-  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/projection/ToblerCylindricalIProjection">ToblerCylindricalIProjection</a></p></td>
-</tr>
-</tbody>
-</table>
-</section>
-<section class="sect4">
-<h5 id="_class_geosrsurmayeviiiprojection">Class: geosrs:UrmayevIIIProjection</h5>
-<table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 128. geosrs:UrmayevIIIProjection</caption>
-<colgroup>
-<col style="width: 50%;">
-<col style="width: 50%;">
-</colgroup>
-<tbody>
-<tr>
-  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
-  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/projection/UrmayevIIIProjection">https://w3id.org/geosrs/projection/UrmayevIIIProjection</a></p></td>
-</tr>
-<tr>
-  <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
-  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/projection/UrmayevIIIProjection">UrmayevIIIProjection</a></p></td>
-</tr>
-</tbody>
-</table>
-</section>
-<section class="sect4">
-<h5 id="_class_geosrswebmercatorprojection">Class: geosrs:WebMercatorProjection</h5>
-<table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 129. geosrs:WebMercatorProjection</caption>
-<colgroup>
-<col style="width: 50%;">
-<col style="width: 50%;">
-</colgroup>
-<tbody>
-<tr>
-  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
-  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/projection/WebMercatorProjection">https://w3id.org/geosrs/projection/WebMercatorProjection</a></p></td>
-</tr>
-<tr>
-  <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
-  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/projection/WebMercatorProjection">WebMercatorProjection</a></p></td>
-</tr>
-</tbody>
-</table>
-</section>
-</section>
-<section class="sect3">
 <h4 id="_azimuthal_projections">Azimuthal Projections</h4>
 <aside class="example">
-<div class="title">Example 19. Azimuthal Projections</div>
+<div class="title">Example 23. Azimuthal Projections</div>
 <div class="content">
 <p class="paragraph">
 <p>Implementations shall allow the RDFS classes <a href="#_class_geosrsbreusinggeometricprojection"><code>geosrs:BreusingGeometricProjection</code></a>, <a href="#_class_geosrsbreusingharmonicprojection"><code>geosrs:BreusingHarmonicProjection</code></a>, <a href="#_class_geosrsginzburgiiprojection"><code>geosrs:GinzburgIIProjection</code></a>, <a href="#_class_geosrsginzburgiprojection"><code>geosrs:GinzburgIProjection</code></a>, <a href="#_class_geosrsgnomonicprojection"><code>geosrs:GnomonicProjection</code></a>, <a href="#_class_geosrsjamesazimuthalprojection"><code>geosrs:JamesAzimuthalProjection</code></a> to be used in SPARQL graph patterns.</p>
@@ -3348,7 +4964,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsbreusinggeometricprojection">Class: geosrs:BreusingGeometricProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 130. geosrs:BreusingGeometricProjection</caption>
+<caption class="title">Table 207. geosrs:BreusingGeometricProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -3368,7 +4984,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsbreusingharmonicprojection">Class: geosrs:BreusingHarmonicProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 131. geosrs:BreusingHarmonicProjection</caption>
+<caption class="title">Table 208. geosrs:BreusingHarmonicProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -3388,7 +5004,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsginzburgiiprojection">Class: geosrs:GinzburgIIProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 132. geosrs:GinzburgIIProjection</caption>
+<caption class="title">Table 209. geosrs:GinzburgIIProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -3408,7 +5024,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsginzburgiprojection">Class: geosrs:GinzburgIProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 133. geosrs:GinzburgIProjection</caption>
+<caption class="title">Table 210. geosrs:GinzburgIProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -3428,7 +5044,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsgnomonicprojection">Class: geosrs:GnomonicProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 134. geosrs:GnomonicProjection</caption>
+<caption class="title">Table 211. geosrs:GnomonicProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -3448,7 +5064,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsjamesazimuthalprojection">Class: geosrs:JamesAzimuthalProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 135. geosrs:JamesAzimuthalProjection</caption>
+<caption class="title">Table 212. geosrs:JamesAzimuthalProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -3467,9 +5083,220 @@ Here&#8217;s an example of an example term.
 </section>
 </section>
 <section class="sect3">
+<h4 id="_perspective_projections">Perspective Projections</h4>
+<aside class="example">
+<div class="title">Example 24. Perspective Projections</div>
+<div class="content">
+<p class="paragraph">
+<p>Implementations shall allow the RDFS classes <a href="#_class_geosrscentralcylindricalprojection"><code>geosrs:CentralCylindricalProjection</code></a>, <a href="#_class_geosrsgeneralverticalperspectiveprojection"><code>geosrs:GeneralVerticalPerspectiveProjection</code></a>, <a href="#_class_geosrsgilberttwoworldperspectiveprojection"><code>geosrs:GilbertTwoWorldPerspectiveProjection</code></a>, <a href="#_class_geosrslahireprojection"><code>geosrs:LaHireProjection</code></a>, <a href="#_class_geosrslorgnaprojection"><code>geosrs:LorgnaProjection</code></a>, <a href="#_class_geosrslowryprojection"><code>geosrs:LowryProjection</code></a>, <a href="#_class_geosrsorthographicprojection"><code>geosrs:OrthographicProjection</code></a>, <a href="#_class_geosrsperspectiveconicprojection"><code>geosrs:PerspectiveConicProjection</code></a>, <a href="#_class_geosrstiltedperspectiveprojection"><code>geosrs:TiltedPerspectiveProjection</code></a>, <a href="#_class_geosrsverticalperspectiveprojection"><code>geosrs:VerticalPerspectiveProjection</code></a> to be used in SPARQL graph patterns.</p>
+</p>
+</div>
+</aside>
+<section class="sect4">
+<h5 id="_class_geosrscentralcylindricalprojection">Class: geosrs:CentralCylindricalProjection</h5>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Table 213. geosrs:CentralCylindricalProjection</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/projection/CentralCylindricalProjection">https://w3id.org/geosrs/projection/CentralCylindricalProjection</a></p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/projection/CentralCylindricalProjection">CentralCylindricalProjection</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sect4">
+<h5 id="_class_geosrsgeneralverticalperspectiveprojection">Class: geosrs:GeneralVerticalPerspectiveProjection</h5>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Table 214. geosrs:GeneralVerticalPerspectiveProjection</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/projection/GeneralVerticalPerspectiveProjection">https://w3id.org/geosrs/projection/GeneralVerticalPerspectiveProjection</a></p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/projection/GeneralVerticalPerspectiveProjection">GeneralVerticalPerspectiveProjection</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sect4">
+<h5 id="_class_geosrsgilberttwoworldperspectiveprojection">Class: geosrs:GilbertTwoWorldPerspectiveProjection</h5>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Table 215. geosrs:GilbertTwoWorldPerspectiveProjection</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/projection/GilbertTwoWorldPerspectiveProjection">https://w3id.org/geosrs/projection/GilbertTwoWorldPerspectiveProjection</a></p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/projection/GilbertTwoWorldPerspectiveProjection">GilbertTwoWorldPerspectiveProjection</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sect4">
+<h5 id="_class_geosrslahireprojection">Class: geosrs:LaHireProjection</h5>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Table 216. geosrs:LaHireProjection</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/projection/LaHireProjection">https://w3id.org/geosrs/projection/LaHireProjection</a></p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/projection/LaHireProjection">LaHireProjection</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sect4">
+<h5 id="_class_geosrslorgnaprojection">Class: geosrs:LorgnaProjection</h5>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Table 217. geosrs:LorgnaProjection</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/projection/LorgnaProjection">https://w3id.org/geosrs/projection/LorgnaProjection</a></p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/projection/LorgnaProjection">LorgnaProjection</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sect4">
+<h5 id="_class_geosrslowryprojection">Class: geosrs:LowryProjection</h5>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Table 218. geosrs:LowryProjection</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/projection/LowryProjection">https://w3id.org/geosrs/projection/LowryProjection</a></p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/projection/LowryProjection">LowryProjection</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sect4">
+<h5 id="_class_geosrsorthographicprojection">Class: geosrs:OrthographicProjection</h5>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Table 219. geosrs:OrthographicProjection</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/projection/OrthographicProjection">https://w3id.org/geosrs/projection/OrthographicProjection</a></p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/projection/OrthographicProjection">OrthographicProjection</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sect4">
+<h5 id="_class_geosrsperspectiveconicprojection">Class: geosrs:PerspectiveConicProjection</h5>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Table 220. geosrs:PerspectiveConicProjection</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/projection/PerspectiveConicProjection">https://w3id.org/geosrs/projection/PerspectiveConicProjection</a></p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/projection/PerspectiveConicProjection">PerspectiveConicProjection</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sect4">
+<h5 id="_class_geosrstiltedperspectiveprojection">Class: geosrs:TiltedPerspectiveProjection</h5>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Table 221. geosrs:TiltedPerspectiveProjection</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/projection/TiltedPerspectiveProjection">https://w3id.org/geosrs/projection/TiltedPerspectiveProjection</a></p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/projection/TiltedPerspectiveProjection">TiltedPerspectiveProjection</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sect4">
+<h5 id="_class_geosrsverticalperspectiveprojection">Class: geosrs:VerticalPerspectiveProjection</h5>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Table 222. geosrs:VerticalPerspectiveProjection</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/projection/VerticalPerspectiveProjection">https://w3id.org/geosrs/projection/VerticalPerspectiveProjection</a></p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/projection/VerticalPerspectiveProjection">VerticalPerspectiveProjection</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section class="sect3">
 <h4 id="_polyconic_projections">Polyconic Projections</h4>
 <aside class="example">
-<div class="title">Example 20. Polyconic Projections</div>
+<div class="title">Example 25. Polyconic Projections</div>
 <div class="content">
 <p class="paragraph">
 <p>Implementations shall allow the RDFS classes <a href="#_class_geosrsginzburgivprojection"><code>geosrs:GinzburgIVProjection</code></a>, <a href="#_class_geosrsginzburgixprojection"><code>geosrs:GinzburgIXProjection</code></a>, <a href="#_class_geosrsginzburgviprojection"><code>geosrs:GinzburgVIProjection</code></a>, <a href="#_class_geosrsginzburgvprojection"><code>geosrs:GinzburgVProjection</code></a>, <a href="#_class_geosrsgottwagnerprojection"><code>geosrs:GottWagnerProjection</code></a>, <a href="#_class_geosrshilleucyclicprojection"><code>geosrs:HillEucyclicProjection</code></a>, <a href="#_class_geosrslagrangeprojection"><code>geosrs:LagrangeProjection</code></a>, <a href="#_class_geosrslaskowskiprojection"><code>geosrs:LaskowskiProjection</code></a>, <a href="#_class_geosrsrectangularpolyconicprojection"><code>geosrs:RectangularPolyconicProjection</code></a>, <a href="#_class_geosrsstabiuswerneriiiprojection"><code>geosrs:StabiusWernerIIIProjection</code></a>, <a href="#_class_geosrsstabiuswerneriprojection"><code>geosrs:StabiusWernerIProjection</code></a>, <a href="#_class_geosrsvandergrinteniiprojection"><code>geosrs:VanDerGrintenIIProjection</code></a>, <a href="#_class_geosrsvandergrinteniprojection"><code>geosrs:VanDerGrintenIProjection</code></a>, <a href="#_class_geosrsvandergrintenivprojection"><code>geosrs:VanDerGrintenIVProjection</code></a>, <a href="#_class_geosrswagnerixprojection"><code>geosrs:WagnerIXProjection</code></a>, <a href="#_class_geosrswagnerviiiprojection"><code>geosrs:WagnerVIIIProjection</code></a>, <a href="#_class_geosrswagnerviiprojection"><code>geosrs:WagnerVIIProjection</code></a> to be used in SPARQL graph patterns.</p>
@@ -3479,7 +5306,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsginzburgivprojection">Class: geosrs:GinzburgIVProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 136. geosrs:GinzburgIVProjection</caption>
+<caption class="title">Table 223. geosrs:GinzburgIVProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -3499,7 +5326,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsginzburgixprojection">Class: geosrs:GinzburgIXProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 137. geosrs:GinzburgIXProjection</caption>
+<caption class="title">Table 224. geosrs:GinzburgIXProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -3519,7 +5346,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsginzburgviprojection">Class: geosrs:GinzburgVIProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 138. geosrs:GinzburgVIProjection</caption>
+<caption class="title">Table 225. geosrs:GinzburgVIProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -3539,7 +5366,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsginzburgvprojection">Class: geosrs:GinzburgVProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 139. geosrs:GinzburgVProjection</caption>
+<caption class="title">Table 226. geosrs:GinzburgVProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -3559,7 +5386,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsgottwagnerprojection">Class: geosrs:GottWagnerProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 140. geosrs:GottWagnerProjection</caption>
+<caption class="title">Table 227. geosrs:GottWagnerProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -3579,7 +5406,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrshilleucyclicprojection">Class: geosrs:HillEucyclicProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 141. geosrs:HillEucyclicProjection</caption>
+<caption class="title">Table 228. geosrs:HillEucyclicProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -3599,7 +5426,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrslagrangeprojection">Class: geosrs:LagrangeProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 142. geosrs:LagrangeProjection</caption>
+<caption class="title">Table 229. geosrs:LagrangeProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -3619,7 +5446,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrslaskowskiprojection">Class: geosrs:LaskowskiProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 143. geosrs:LaskowskiProjection</caption>
+<caption class="title">Table 230. geosrs:LaskowskiProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -3639,7 +5466,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsrectangularpolyconicprojection">Class: geosrs:RectangularPolyconicProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 144. geosrs:RectangularPolyconicProjection</caption>
+<caption class="title">Table 231. geosrs:RectangularPolyconicProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -3659,7 +5486,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsstabiuswerneriiiprojection">Class: geosrs:StabiusWernerIIIProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 145. geosrs:StabiusWernerIIIProjection</caption>
+<caption class="title">Table 232. geosrs:StabiusWernerIIIProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -3679,7 +5506,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsstabiuswerneriprojection">Class: geosrs:StabiusWernerIProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 146. geosrs:StabiusWernerIProjection</caption>
+<caption class="title">Table 233. geosrs:StabiusWernerIProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -3699,7 +5526,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsvandergrinteniiprojection">Class: geosrs:VanDerGrintenIIProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 147. geosrs:VanDerGrintenIIProjection</caption>
+<caption class="title">Table 234. geosrs:VanDerGrintenIIProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -3719,7 +5546,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsvandergrinteniprojection">Class: geosrs:VanDerGrintenIProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 148. geosrs:VanDerGrintenIProjection</caption>
+<caption class="title">Table 235. geosrs:VanDerGrintenIProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -3739,7 +5566,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsvandergrintenivprojection">Class: geosrs:VanDerGrintenIVProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 149. geosrs:VanDerGrintenIVProjection</caption>
+<caption class="title">Table 236. geosrs:VanDerGrintenIVProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -3759,7 +5586,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrswagnerixprojection">Class: geosrs:WagnerIXProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 150. geosrs:WagnerIXProjection</caption>
+<caption class="title">Table 237. geosrs:WagnerIXProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -3779,7 +5606,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrswagnerviiiprojection">Class: geosrs:WagnerVIIIProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 151. geosrs:WagnerVIIIProjection</caption>
+<caption class="title">Table 238. geosrs:WagnerVIIIProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -3799,7 +5626,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrswagnerviiprojection">Class: geosrs:WagnerVIIProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 152. geosrs:WagnerVIIProjection</caption>
+<caption class="title">Table 239. geosrs:WagnerVIIProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -3820,7 +5647,7 @@ Here&#8217;s an example of an example term.
 <section class="sect3">
 <h4 id="_stereographic_projections">Stereographic Projections</h4>
 <aside class="example">
-<div class="title">Example 21. Stereographic Projections</div>
+<div class="title">Example 26. Stereographic Projections</div>
 <div class="content">
 <p class="paragraph">
 <p>Implementations shall allow the RDFS classes <a href="#_class_geosrsmilleroblatedstereographicprojection"><code>geosrs:MillerOblatedStereographicProjection</code></a>, <a href="#_class_geosrsroussilheprojection"><code>geosrs:RoussilheProjection</code></a> to be used in SPARQL graph patterns.</p>
@@ -3830,7 +5657,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsmilleroblatedstereographicprojection">Class: geosrs:MillerOblatedStereographicProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 153. geosrs:MillerOblatedStereographicProjection</caption>
+<caption class="title">Table 240. geosrs:MillerOblatedStereographicProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -3850,7 +5677,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsroussilheprojection">Class: geosrs:RoussilheProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 154. geosrs:RoussilheProjection</caption>
+<caption class="title">Table 241. geosrs:RoussilheProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -3886,7 +5713,7 @@ Here&#8217;s an example of an example term.
 <p>The prefixes used for the ontologies mapped to in all following sections are given in the following table.</p>
 </p>
 <table class="tableblock frame-none grid-none spread">
-<caption class="title">Table 155. Alignment: Namespaces</caption>
+<caption class="title">Table 242. Alignment: Namespaces</caption>
 <colgroup>
 <col style="width: 14.2857%;">
 <col style="width: 85.7143%;">
@@ -3929,7 +5756,7 @@ Here&#8217;s an example of an example term.
 <section class="sect2">
 <h3 id="_ign_ontology">IGN Ontology</h3>
 <table class="tableblock frame-all grid-all">
-<caption class="title">Table 156. Alignment: IGN Ontology</caption>
+<caption class="title">Table 243. Alignment: IGN Ontology</caption>
 <colgroup>
 <col>
 <col>
@@ -4131,7 +5958,7 @@ Here&#8217;s an example of an example term.
 <section class="sect2">
 <h3 id="_iso19111_ontology">ISO19111 Ontology</h3>
 <table class="tableblock frame-all grid-all">
-<caption class="title">Table 157. Alignment: ISO19111 Ontology</caption>
+<caption class="title">Table 244. Alignment: ISO19111 Ontology</caption>
 <colgroup>
 <col>
 <col>
@@ -4231,7 +6058,7 @@ Here&#8217;s an example of an example term.
 <section class="sect2">
 <h3 id="_ifc_ontology">IFC Ontology</h3>
 <table class="tableblock frame-all grid-all">
-<caption class="title">Table 158. Alignment: IFC Ontology</caption>
+<caption class="title">Table 245. Alignment: IFC Ontology</caption>
 <colgroup>
 <col>
 <col>
@@ -4387,7 +6214,7 @@ Actual References:
 </section>
 <div id="footer">
 <div id="footer-text">
-Last updated 2025-05-02 18:36:28 UTC
+Last updated 2025-05-02 19:04:29 UTC
 </div>
 </div>
 </body>

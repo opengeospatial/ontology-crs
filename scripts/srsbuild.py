@@ -556,7 +556,7 @@ for ad in moduleToAdoc:
 				content.replace(tag,moduleToAdoc[ad][tag])
 	with open(ad,"w") as file:
 		file.write(content)             
-    with open("spec/sections/"+ad.replace(".adoc","_classes.adoc"), 'w',encoding="utf-8") as f:
+	with open("spec/sections/"+ad.replace(".adoc","_classes.adoc"), 'w',encoding="utf-8") as f:
 		reqs=moduleToRequirements[ad]
 		print(reqs)
         #if len(reqs)>0:

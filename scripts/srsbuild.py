@@ -145,7 +145,7 @@ for file in os.listdir(directory):
                 if "Concept" in row and row["Concept"]!="":
                     core=False
                     if "Core Class?" in row and row["Core Class?"]=="Core Ontology":
-                        adocdef="==== Class: "+str(row["Concept"])+"\n\n."+str(row["Concept"])+"\n[cols=\"1,1\"]\n|===\n"
+                        adocdef="===== Class: "+str(row["Concept"])+"\n\n."+str(row["Concept"])+"\n[cols=\"1,1\"]\n|===\n"
                         adocdef+="|Type\n|http://www.w3.org/2002/07/owl#Class[owl:Class]\n\n"
                         adocdef+="|URI\n|"+str(row["Concept"].replace(coreprefix+":",curns))+"\n\n"
                         core=True
@@ -200,7 +200,7 @@ for file in os.listdir(directory):
                         moduleToAdoc["06-core.adoc"][row["Concept"].replace(coreprefix+":",geocrsNS)]=adocdef+"|===\n\n"
                     else:
                         g.add((URIRef(row["Concept"].replace(coreprefix+":",curns)),RDF.type,OWL.Class))
-                        adocdef="==== Class: "+str(row["Concept"])+"\n\n."+str(row["Concept"])+"\n[cols=\"1,1\"]\n|===\n"
+                        adocdef="===== Class: "+str(row["Concept"])+"\n\n."+str(row["Concept"])+"\n[cols=\"1,1\"]\n|===\n"
                         adocdef+="|URI\n|"+str(row["Concept"].replace(coreprefix+":",curns))+"[]\n\n"
                         prefixtoclasses[curprefix].append(row["Concept"].replace(curprefix+":",curns).replace("geosrs:","").replace("geoprojection:",""))
                         classToPrefix[row["Concept"]]={"prefix":curprefix, "ns":curns}
@@ -289,7 +289,7 @@ for file in os.listdir(directory):
                 if "Concept" in row and row["Concept"]!="":
                     if "Core Property?" in row:
                         if row["Core Property?"]=="Core Ontology":
-                            adocdef="==== Property: "+str(row["Concept"])+"\n\n."+str(row["Concept"])+"\n[cols=\"1,1\"]\n|===\n"
+                            adocdef="===== Property: "+str(row["Concept"])+"\n\n."+str(row["Concept"])+"\n[cols=\"1,1\"]\n|===\n"
                             adocdef+="|URI\n|"+str(row["Concept"].replace(coreprefix+":",curns))+"\n\n"
                             core=True
                             prefixtoproperties["geosrs"].append(row["Concept"].replace(curprefix+":",curns).replace("geosrs:","").replace("geoprojection:",""))
@@ -341,7 +341,7 @@ for file in os.listdir(directory):
                             moduleToAdoc["06-core.adoc"][row["Concept"].replace(coreprefix+":",curns)]=adocdef+"|===\n\n"
                         else:
                             if row["Core Property?"].lower() in exont:
-                                adocdef="==== Property: "+str(row["Concept"])+"\n\n."+str(row["Concept"])+"\n[cols=\"1,1\"]\n|===\n"
+                                adocdef="===== Property: "+str(row["Concept"])+"\n\n."+str(row["Concept"])+"\n[cols=\"1,1\"]\n|===\n"
                                 adocdef+="|URI\n|"+row["Concept"].replace(coreprefix+":",curns+str(row["Core Property?"]).lower()+"/")+"\n\n"
                                 if row["Core Property?"]!="":
                                     prefixtoproperties[row["Core Property?"]].append(row["Concept"].replace(coreprefix+":",curns+str(row["Core Property?"]).lower()+"/").replace("geosrs:","").replace("geoprojection:",""))
@@ -563,7 +563,7 @@ for ad in moduleToAdoc:
 				f.write("requirement:: /req/"+str(req).replace(" ","_")+"\n")
 			f.write("====\n")
 			for req in moduleToRequirements[ad]:
-				f.write("[[req_"+str(req).replace(" ","_")+"]]\n[requirement,identifier=\"/req/"+str(req).replace(" ","_")+"\"]\n\n.Requirement "+str(req)+"\n====\nRequirement Text\n====\n\n")
+				f.write("===== "+str(req)\n\n[requirement,identifier=\"/req/"+str(req).replace(" ","_")+"\"]\n\n.Requirement "+str(req)+"\n====\nRequirement Text\n====\n\n")
 				print(moduleToRequirements[ad][req])
 				for cls in moduleToRequirements[ad][req]:
 					if cls.replace("geosrs:","") in moduleToAdoc[ad]:

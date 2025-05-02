@@ -192,7 +192,7 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
     <script type="application/ld+json">
       [
   {
-    "@id": "http://www.opengis.net/ont/srs/geosrs",
+    "@id": "https://w3id.org/geosrs",
     "@type": [
       "https://schema.org/DefinedTermSet"
     ],
@@ -215,7 +215,7 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
     <h2 style="display:none;">Metadata</h2>
     <dl>
         <dt>URI</dt>
-        <dd><code>http://www.opengis.net/ont/srs/geosrs</code></dd>
+        <dd><code>https://w3id.org/geosrs</code></dd>
         <dt>Ontology RDF</dt>
         <dd><a href="index.ttl">RDF (turtle)</a></dd>
     </dl>
@@ -225,6 +225,7 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
     <ol>
         <li><a href="#classes">Classes</a></li>
         <li><a href="#objectproperties">Object Properties</a></li>
+        <li><a href="#datatypeproperties">Datatype Properties</a></li>
         <li><a href="#namespaces">Namespaces</a></li>
         <li><a href="#legend">Legend</a></li>
     </ol>
@@ -232,55 +233,44 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
 <section id="overview">
     <h2>Overview</h2>
     <div class="figure">
-        <div style="width:500px; height:50px; background-color: lightgrey; border:solid 2px grey; padding:10px;margin-bottom:5px; text-align:center;">Pictures say 1,000 words</div>
+        <div style="background-color: lightgrey; border:solid 2px grey; padding:10px;margin-bottom:5px; text-align:center;"><img src="../images/core.png"/></div>
         <div class="caption"><strong>Figure 1:</strong> Ontology overview</div>
     </div>
 </section>
   <section id="classes">
     <h2>Classes <span style="float:right; font-size:smaller;"><a href="">&uparrow;</a></span></h2>
     <ul class="hlist">
-      <li><a href="geosrs :EngineeringCRS">geosrs :EngineeringCRS</a></li>
       <li><a href="#CoordinateReferenceSystem">Coordinate Reference System</a></li>
-      <li><a href="#cartesiancoordinatesystem">cartesian coordinate system</a></li>
+      <li><a href="#CartesianCoordinateSystem">Cartesian Coordinate System</a></li>
+      <li><a href="#Conversion">Conversion</a></li>
       <li><a href="#coordinateoperation">coordinate operation</a></li>
-      <li><a href="#CoordinateSystem">coordinate system</a></li>
-      <li><a href="#coordinatesystemaxis">coordinate system axis</a></li>
+      <li><a href="#CoordinateSystem">Coordinate System</a></li>
+      <li><a href="#CoordinateSystemAxis">Coordinate System Axis</a></li>
       <li><a href="#Datum">Datum</a></li>
       <li><a href="#Ellipsoid">Ellipsoid</a></li>
-      <li><a href="#ellipsoidalcoordinatesystem">ellipsoidal coordinate system</a></li>
+      <li><a href="#EllipsoidalCoordinateSystem">Ellipsoidal Coordinate System</a></li>
+      <li><a href="#EngineeringCoordinateReferenceSystem">Engineering Coordinate Reference System</a></li>
       <li><a href="#GeodeticCoordinateReferenceSystem">Geodetic Coordinate Reference System</a></li>
       <li><a href="#GeodeticDatum">Geodetic Datum</a></li>
       <li><a href="#GeographicCoordinateReferenceSystem">Geographic Coordinate Reference System</a></li>
-      <li><a href="#linearcoordinatesystem">linear coordinate system</a></li>
+      <li><a href="#LinearCoordinateSystem">Linear Coordinate System</a></li>
       <li><a href="#operationmethod">operation method</a></li>
       <li><a href="#operationparameter">operation parameter</a></li>
       <li><a href="#operationparametervalue">operation parameter value</a></li>
-      <li><a href="#ordinalcoordinatesystem">ordinal coordinate system</a></li>
-      <li><a href="#parametriccoordinatesystem">parametric coordinate system</a></li>
-      <li><a href="#polarcoordinatesystem">polar coordinate system</a></li>
+      <li><a href="#OrdinalCoordinateSystem">Ordinal Coordinate System</a></li>
+      <li><a href="#ParametricCoordinateSystem">Parametric Coordinate System</a></li>
+      <li><a href="#PolarCoordinateSystem">Polar Coordinate System</a></li>
       <li><a href="#Primemeridian">Prime meridian</a></li>
       <li><a href="#ProjectedCoordinateReferenceSystem">Projected Coordinate Reference System</a></li>
+      <li><a href="#ReferenceSystem">Reference System</a></li>
       <li><a href="#SingleCoordinateReferenceSystem">Single Coordinate Reference System</a></li>
       <li><a href="#singleoperation">single operation</a></li>
       <li><a href="#SpatialReferenceSystem">Spatial Reference System</a></li>
-      <li><a href="#sphericalcoordinatesystem">spherical coordinate system</a></li>
+      <li><a href="#SphericalCoordinateSystem">Spherical Coordinate System</a></li>
       <li><a href="#transformation">transformation</a></li>
-      <li><a href="#verticalcoordinatesystem">vertical coordinate system</a></li>
+      <li><a href="#VerticalCoordinateSystem">Vertical Coordinate System</a></li>
       <li><a href="#VerticalDatum">Vertical Datum</a></li>
-      <li><a href="#conversion">conversion</a></li>
     </ul>
-    <div class="entity class" id="EngineeringCoordinateReferenceSystem">
-        <h3>
-          Engineering Coordinate Reference System<sup title="class" class="sup-c">c</sup>
-          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#EngineeringCoordinateReferenceSystem" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
-        </h3>
-        <table>
-            <tr>
-                <th>URI</th>
-                <td><code>geosrs :EngineeringCRS</code></td>
-            </tr>
-        </table>
-    </div>
     <div class="entity class" id="CoordinateReferenceSystem">
         <h3>
           Coordinate Reference System<sup title="class" class="sup-c">c</sup>
@@ -289,7 +279,7 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
         <table>
             <tr>
                 <th>URI</th>
-                <td><code>http://www.opengis.net/ont/srs/CRS</code></td>
+                <td><code>https://w3id.org/geosrs/CRS</code></td>
             </tr>
             <tr>
                 <th>Description</th>
@@ -304,39 +294,86 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
                 </td>
             </tr>
             <tr>
+                <th>Sub-classes</th>
+                <td>
+                    <a href="#GeodeticCoordinateReferenceSystem">Geodetic Coordinate Reference System</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#SingleCoordinateReferenceSystem">Single Coordinate Reference System</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#ProjectedCoordinateReferenceSystem">Projected Coordinate Reference System</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#GeographicCoordinateReferenceSystem">Geographic Coordinate Reference System</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#EngineeringCoordinateReferenceSystem">Engineering Coordinate Reference System</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+            <tr>
                 <th>In domain of</th>
                 <td>
-                    <a href="#targetCRS">target CRS</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#sourceCRS">source CRS</a><sup class="sup-op" title="object property">op</sup><br/>
                     <a href="#baseCRS">base CRS</a><sup class="sup-op" title="object property">op</sup><br/>
                     <a href="#coordinatesystem">coordinate system</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="#sourceCRS">source CRS</a><sup class="sup-op" title="object property">op</sup><br/>
                     <a href="#datum">datum</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#targetCRS">target CRS</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#domainofvalidity">domain of validity</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>In range of</th>
                 <td>
-                    <a href="#targetCRS">target CRS</a><sup class="sup-op" title="object property">op</sup><br/>
                     <a href="#baseCRS">base CRS</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#targetCRS">target CRS</a><sup class="sup-op" title="object property">op</sup><br/>
                     <a href="#sourceCRS">source CRS</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
         </table>
     </div>
-    <div class="entity class" id="cartesiancoordinatesystem">
+    <div class="entity class" id="CartesianCoordinateSystem">
         <h3>
-          cartesian coordinate system<sup title="class" class="sup-c">c</sup>
-          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#cartesiancoordinatesystem" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+          Cartesian Coordinate System<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#CartesianCoordinateSystem" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
         </h3>
         <table>
             <tr>
                 <th>URI</th>
-                <td><code>http://www.opengis.net/ont/srs/CartesianCS</code></td>
+                <td><code>https://w3id.org/geosrs/CartesianCoordinateSystem</code></td>
             </tr>
             <tr>
                 <th>Description</th>
                 <td>
                     <p>Coordinate system which gives the position of points relative to n mutually perpendicular axes. Cf. ISO 19111:2007:2007-07, tables 15 and 18.</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Super-classes</th>
+                <td>
+                    <a href="#SingleCoordinateReferenceSystem">Single Coordinate Reference System</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="Conversion">
+        <h3>
+          Conversion<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#Conversion" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://w3id.org/geosrs/Conversion</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>Coordinate operation in which both coordinate reference systems are based on the same datum. Cf. ISO 19111:2007:2007-07, table 45 and annex B.4.2.</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Super-classes</th>
+                <td>
+                    <a href="#coordinateoperation">coordinate operation</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+            <tr>
+                <th>Sub-classes</th>
+                <td>
+                    <a href="#transformation">transformation</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -349,7 +386,7 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
         <table>
             <tr>
                 <th>URI</th>
-                <td><code>http://www.opengis.net/ont/srs/CoordinateOperation</code></td>
+                <td><code>https://w3id.org/geosrs/CoordinateOperation</code></td>
             </tr>
             <tr>
                 <th>Description</th>
@@ -357,22 +394,42 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
                     <p>Mathematical operation on coordinates, based on one-to-one relationship, that changes coordinates from one coordinate reference system to another. Cf. ISO 19111:2007:2007-07, part 11.1, table 42 and annex B.4.</p>
                 </td>
             </tr>
+            <tr>
+                <th>Super-classes</th>
+                <td>
+                    <a href="#operationmethod">operation method</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+            <tr>
+                <th>Sub-classes</th>
+                <td>
+                    <a href="#Conversion">Conversion</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#singleoperation">single operation</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
         </table>
     </div>
     <div class="entity class" id="CoordinateSystem">
         <h3>
-          coordinate system<sup title="class" class="sup-c">c</sup>
+          Coordinate System<sup title="class" class="sup-c">c</sup>
           <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#CoordinateSystem" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
         </h3>
         <table>
             <tr>
                 <th>URI</th>
-                <td><code>http://www.opengis.net/ont/srs/CoordinateSystem</code></td>
+                <td><code>https://w3id.org/geosrs/CoordinateSystem</code></td>
             </tr>
             <tr>
                 <th>Description</th>
                 <td>
                     <p>Set of axes that spans a given coordinate space and of mathematical rules for specifying how coordinates are to be assigned to points. Cf. ISO 19111:2007:2007-07, part 9.2, table 17 and annex B.2.</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Sub-classes</th>
+                <td>
+                    <a href="#OrdinalCoordinateSystem">Ordinal Coordinate System</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#VerticalCoordinateSystem">Vertical Coordinate System</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
@@ -389,15 +446,15 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             </tr>
         </table>
     </div>
-    <div class="entity class" id="coordinatesystemaxis">
+    <div class="entity class" id="CoordinateSystemAxis">
         <h3>
-          coordinate system axis<sup title="class" class="sup-c">c</sup>
-          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#coordinatesystemaxis" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+          Coordinate System Axis<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#CoordinateSystemAxis" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
         </h3>
         <table>
             <tr>
                 <th>URI</th>
-                <td><code>http://www.opengis.net/ont/srs/CoordinateSystemAxis</code></td>
+                <td><code>https://w3id.org/geosrs/CoordinateSystemAxis</code></td>
             </tr>
             <tr>
                 <th>Description</th>
@@ -415,12 +472,18 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
         <table>
             <tr>
                 <th>URI</th>
-                <td><code>http://www.opengis.net/ont/srs/Datum</code></td>
+                <td><code>https://w3id.org/geosrs/Datum</code></td>
             </tr>
             <tr>
                 <th>Description</th>
                 <td>
                     <p>Parameter or set of parameters that define the position of the origin, the scale and the orientation of a coordinate system. Cf. ISO 19111:2007:2007-07, part 10.1, table 33 and annex B.3.</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Sub-classes</th>
+                <td>
+                    <a href="#VerticalDatum">Vertical Datum</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
@@ -445,7 +508,7 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
         <table>
             <tr>
                 <th>URI</th>
-                <td><code>http://www.opengis.net/ont/srs/Ellipsoid</code></td>
+                <td><code>https://w3id.org/geosrs/Ellipsoid</code></td>
             </tr>
             <tr>
                 <th>Description</th>
@@ -456,8 +519,8 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             <tr>
                 <th>In domain of</th>
                 <td>
-                    <a href="#semimajoraxis">semi major axis</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="#semiminoraxis">semi minor axis</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#semiminoraxis">semi minor axis</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="#semimajoraxis">semi major axis</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
                 </td>
             </tr>
             <tr>
@@ -468,20 +531,50 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             </tr>
         </table>
     </div>
-    <div class="entity class" id="ellipsoidalcoordinatesystem">
+    <div class="entity class" id="EllipsoidalCoordinateSystem">
         <h3>
-          ellipsoidal coordinate system<sup title="class" class="sup-c">c</sup>
-          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#ellipsoidalcoordinatesystem" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+          Ellipsoidal Coordinate System<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#EllipsoidalCoordinateSystem" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
         </h3>
         <table>
             <tr>
                 <th>URI</th>
-                <td><code>http://www.opengis.net/ont/srs/EllipsoidalCS</code></td>
+                <td><code>https://w3id.org/geosrs/EllipsoidalCoordinateSystem</code></td>
             </tr>
             <tr>
                 <th>Description</th>
                 <td>
                     <p>Coordinate system which gives the position is specified by geodetic latitude, geodetic longitude and (in the three-dimensional case) ellipsoidal height. Cf. ISO 19111:2007:2007-07, tables 15 and 20.</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Super-classes</th>
+                <td>
+                    <a href="https://w3id.org/geosrs/cs/OrthogonalCoordinateSystem">https://w3id.org/geosrs/cs/OrthogonalCoordinateSystem</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="EngineeringCoordinateReferenceSystem">
+        <h3>
+          Engineering Coordinate Reference System<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#EngineeringCoordinateReferenceSystem" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://w3id.org/geosrs/EngineeringCRS</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>A contextually local coordinate reference system which can be divided into two broad categories: - earth-fixed systems applied to engineering activities on or near the surface of the earth; - CRSs on moving platforms such as road vehicles, vessels, aircraft or spacecraft.</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Super-classes</th>
+                <td>
+                    <a href="#CoordinateReferenceSystem">Coordinate Reference System</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -494,12 +587,18 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
         <table>
             <tr>
                 <th>URI</th>
-                <td><code>http://www.opengis.net/ont/srs/GeodeticCRS</code></td>
+                <td><code>https://w3id.org/geosrs/GeodeticCRS</code></td>
             </tr>
             <tr>
                 <th>Description</th>
                 <td>
-                    <p>Coordinate reference system associated with a geodetic datum. Cf. ISO 19111:2007:2007-07, part 8.2.2.a, table 10 and annex B.1.2.1.a.</p>
+                    <p>Coordinate Reference System associated with a geodetic datum. Cf. ISO 19111:2007:2007-07, part 8.2.2.a, table 10 and annex B.1.2.1.a.</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Super-classes</th>
+                <td>
+                    <a href="#CoordinateReferenceSystem">Coordinate Reference System</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -512,7 +611,7 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
         <table>
             <tr>
                 <th>URI</th>
-                <td><code>http://www.opengis.net/ont/srs/GeodeticDatum</code></td>
+                <td><code>https://w3id.org/geosrs/GeodeticDatum</code></td>
             </tr>
             <tr>
                 <th>Description</th>
@@ -530,19 +629,37 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
         <table>
             <tr>
                 <th>URI</th>
-                <td><code>http://www.opengis.net/ont/srs/GeographicCRS</code></td>
+                <td><code>https://w3id.org/geosrs/GeographicCRS</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>Coordinate Reference System that has a geodetic reference frame and an ellipsoidal coordinate system</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Super-classes</th>
+                <td>
+                    <a href="#CoordinateReferenceSystem">Coordinate Reference System</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
             </tr>
         </table>
     </div>
-    <div class="entity class" id="linearcoordinatesystem">
+    <div class="entity class" id="LinearCoordinateSystem">
         <h3>
-          linear coordinate system<sup title="class" class="sup-c">c</sup>
-          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#linearcoordinatesystem" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+          Linear Coordinate System<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#LinearCoordinateSystem" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
         </h3>
         <table>
             <tr>
                 <th>URI</th>
-                <td><code>http://www.opengis.net/ont/srs/LinearCS</code></td>
+                <td><code>https://w3id.org/geosrs/LinearCoordinateSystem</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>One-dimensional coordinate system in which a linear feature forms the axis.</p>
+                </td>
             </tr>
         </table>
     </div>
@@ -554,12 +671,18 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
         <table>
             <tr>
                 <th>URI</th>
-                <td><code>http://www.opengis.net/ont/srs/OperationMethod</code></td>
+                <td><code>https://w3id.org/geosrs/OperationMethod</code></td>
             </tr>
             <tr>
                 <th>Description</th>
                 <td>
                     <p>Method used to perform an operation on coordinates. See ISO 19111:2007:2007-07, table 48 and annex B.4.5.</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Sub-classes</th>
+                <td>
+                    <a href="#coordinateoperation">coordinate operation</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -572,7 +695,7 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
         <table>
             <tr>
                 <th>URI</th>
-                <td><code>http://www.opengis.net/ont/srs/OperationParameter</code></td>
+                <td><code>https://w3id.org/geosrs/OperationParameter</code></td>
             </tr>
             <tr>
                 <th>Description</th>
@@ -590,7 +713,7 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
         <table>
             <tr>
                 <th>URI</th>
-                <td><code>http://www.opengis.net/ont/srs/OperationParameterValue</code></td>
+                <td><code>https://w3id.org/geosrs/OperationParameterValue</code></td>
             </tr>
             <tr>
                 <th>Description</th>
@@ -600,39 +723,75 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             </tr>
         </table>
     </div>
-    <div class="entity class" id="ordinalcoordinatesystem">
+    <div class="entity class" id="OrdinalCoordinateSystem">
         <h3>
-          ordinal coordinate system<sup title="class" class="sup-c">c</sup>
-          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#ordinalcoordinatesystem" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+          Ordinal Coordinate System<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#OrdinalCoordinateSystem" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
         </h3>
         <table>
             <tr>
                 <th>URI</th>
-                <td><code>http://www.opengis.net/ont/srs/OrdinalCS</code></td>
+                <td><code>https://w3id.org/geosrs/OrdinalCoordinateSystem</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>n-dimensional coordinate system in which every axis uses integers.</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Super-classes</th>
+                <td>
+                    <a href="#CoordinateSystem">Coordinate System</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
             </tr>
         </table>
     </div>
-    <div class="entity class" id="parametriccoordinatesystem">
+    <div class="entity class" id="ParametricCoordinateSystem">
         <h3>
-          parametric coordinate system<sup title="class" class="sup-c">c</sup>
-          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#parametriccoordinatesystem" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+          Parametric Coordinate System<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#ParametricCoordinateSystem" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
         </h3>
         <table>
             <tr>
                 <th>URI</th>
-                <td><code>http://www.opengis.net/ont/srs/ParametricCS</code></td>
+                <td><code>https://w3id.org/geosrs/ParametricCoordinateSystem</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>One-dimensional coordinate system where the axis units are parameter values which are not inherently spatial.</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Super-classes</th>
+                <td>
+                    <a href="https://w3id.org/geosrs/cs/1DCoordinateSystem">https://w3id.org/geosrs/cs/1DCoordinateSystem</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
             </tr>
         </table>
     </div>
-    <div class="entity class" id="polarcoordinatesystem">
+    <div class="entity class" id="PolarCoordinateSystem">
         <h3>
-          polar coordinate system<sup title="class" class="sup-c">c</sup>
-          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#polarcoordinatesystem" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+          Polar Coordinate System<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#PolarCoordinateSystem" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
         </h3>
         <table>
             <tr>
                 <th>URI</th>
-                <td><code>http://www.opengis.net/ont/srs/PolarCS</code></td>
+                <td><code>https://w3id.org/geosrs/PolarCoordinateSystem</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>Two-dimensional coordinate system in Euclidean space in which position is specified by one distance coordinate and one angular coordinate.</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Super-classes</th>
+                <td>
+                    <a href="https://w3id.org/geosrs/cs/PlanarCoordinateSystem">https://w3id.org/geosrs/cs/PlanarCoordinateSystem</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
             </tr>
         </table>
     </div>
@@ -644,7 +803,7 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
         <table>
             <tr>
                 <th>URI</th>
-                <td><code>http://www.opengis.net/ont/srs/PrimeMeridian</code></td>
+                <td><code>https://w3id.org/geosrs/PrimeMeridian</code></td>
             </tr>
             <tr>
                 <th>Description</th>
@@ -662,12 +821,42 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
         <table>
             <tr>
                 <th>URI</th>
-                <td><code>http://www.opengis.net/ont/srs/ProjectedCRS</code></td>
+                <td><code>https://w3id.org/geosrs/ProjectedCRS</code></td>
             </tr>
             <tr>
                 <th>Description</th>
                 <td>
-                    <p>Coordinate reference system derived from a two-dimensional geodetic coordinate reference system by applying a map projection. Cf. ISO 19111:2007:2007-07, part 8.2.3.b, table 11 and annex B.1.2.3.</p>
+                    <p>Coordinate Reference System derived from a two-dimensional geodetic coordinate reference system by applying a map projection. Cf. ISO 19111:2007:2007-07, part 8.2.3.b, table 11 and annex B.1.2.3.</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Super-classes</th>
+                <td>
+                    <a href="#CoordinateReferenceSystem">Coordinate Reference System</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="ReferenceSystem">
+        <h3>
+          Reference System<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#ReferenceSystem" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://w3id.org/geosrs/ReferenceSystem</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>An abstract coordinate system, whose origin, orientation and scale are specified in physical space. It is based on a set of reference points, defined as geometric points whose position is identified physically and mathematically.</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Sub-classes</th>
+                <td>
+                    <a href="#SpatialReferenceSystem">Spatial Reference System</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -680,12 +869,24 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
         <table>
             <tr>
                 <th>URI</th>
-                <td><code>http://www.opengis.net/ont/srs/SingleCRS</code></td>
+                <td><code>https://w3id.org/geosrs/SingleCRS</code></td>
             </tr>
             <tr>
                 <th>Description</th>
                 <td>
                     <p>Coordinate reference system consisting of one coordinate system and one datum. Cf. ISO 19111:2007:2007-07, table 5.</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Super-classes</th>
+                <td>
+                    <a href="#CoordinateReferenceSystem">Coordinate Reference System</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+            <tr>
+                <th>Sub-classes</th>
+                <td>
+                    <a href="#CartesianCoordinateSystem">Cartesian Coordinate System</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -698,12 +899,18 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
         <table>
             <tr>
                 <th>URI</th>
-                <td><code>http://www.opengis.net/ont/srs/SingleOperation</code></td>
+                <td><code>https://w3id.org/geosrs/SingleOperation</code></td>
             </tr>
             <tr>
                 <th>Description</th>
                 <td>
                     <p>A non concatenated coordinate operation. Cf. ISO 19111:2007:2007-07, table 43.</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Super-classes</th>
+                <td>
+                    <a href="#coordinateoperation">coordinate operation</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -716,18 +923,18 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
         <table>
             <tr>
                 <th>URI</th>
-                <td><code>http://www.opengis.net/ont/srs/SpatialReferenceSystem</code></td>
+                <td><code>https://w3id.org/geosrs/SpatialReferenceSystem</code></td>
             </tr>
             <tr>
                 <th>Description</th>
                 <td>
-                    <p>A reference system allowing the description of a position.</p>
+                    <p>A spatial reference system (SRS) is a system for establishing spatial position. A spatial reference system can use geographic identifiers (place names, for example), coordinates (in which case it is a coordinate reference system), or identifiers with structured geometry (in which case it is a discrete global grid system).</p>
                 </td>
             </tr>
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="http://www.opengis.net/ont/srs/ReferenceSystem">geosrs:ReferenceSystem</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#ReferenceSystem">Reference System</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
@@ -738,15 +945,27 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             </tr>
         </table>
     </div>
-    <div class="entity class" id="sphericalcoordinatesystem">
+    <div class="entity class" id="SphericalCoordinateSystem">
         <h3>
-          spherical coordinate system<sup title="class" class="sup-c">c</sup>
-          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#sphericalcoordinatesystem" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+          Spherical Coordinate System<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#SphericalCoordinateSystem" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
         </h3>
         <table>
             <tr>
                 <th>URI</th>
-                <td><code>http://www.opengis.net/ont/srs/SphericalCS</code></td>
+                <td><code>https://w3id.org/geosrs/SphericalCoordinateSystem</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>Three-dimensional coordinate system in Euclidean space with one distance measured from the origin and two angular coordinates</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Super-classes</th>
+                <td>
+                    <a href="https://w3id.org/geosrs/cs/3DCoordinateSystem">https://w3id.org/geosrs/cs/3DCoordinateSystem</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
             </tr>
         </table>
     </div>
@@ -758,7 +977,7 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
         <table>
             <tr>
                 <th>URI</th>
-                <td><code>http://www.opengis.net/ont/srs/Transformation</code></td>
+                <td><code>https://w3id.org/geosrs/Transformation</code></td>
             </tr>
             <tr>
                 <th>Description</th>
@@ -766,22 +985,34 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
                     <p>Coordinate operation in which the two coordinate reference systems are based on different datums. Cf. ISO 19111:2007:2007-07, table 44.</p>
                 </td>
             </tr>
+            <tr>
+                <th>Super-classes</th>
+                <td>
+                    <a href="#Conversion">Conversion</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
         </table>
     </div>
-    <div class="entity class" id="verticalcoordinatesystem">
+    <div class="entity class" id="VerticalCoordinateSystem">
         <h3>
-          vertical coordinate system<sup title="class" class="sup-c">c</sup>
-          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#verticalcoordinatesystem" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+          Vertical Coordinate System<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#VerticalCoordinateSystem" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
         </h3>
         <table>
             <tr>
                 <th>URI</th>
-                <td><code>http://www.opengis.net/ont/srs/VerticalCS</code></td>
+                <td><code>https://w3id.org/geosrs/VerticalCoordinateSystem</code></td>
             </tr>
             <tr>
                 <th>Description</th>
                 <td>
                     <p>One-dimensional coordinate system used for gravity related height or depth measurements. Cf. ISO 19111:2007:2007-07, tables 15 and 25.</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Super-classes</th>
+                <td>
+                    <a href="#CoordinateSystem">Coordinate System</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -794,7 +1025,7 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
         <table>
             <tr>
                 <th>URI</th>
-                <td><code>http://www.opengis.net/ont/srs/VerticalDatum</code></td>
+                <td><code>https://w3id.org/geosrs/VerticalDatum</code></td>
             </tr>
             <tr>
                 <th>Description</th>
@@ -802,22 +1033,10 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
                     <p>Datum describing the relation of gravity-related heights or depths to the Earth. Cf. ISO 19111:2007:2007-07, table 41 and annex B.3.3.</p>
                 </td>
             </tr>
-        </table>
-    </div>
-    <div class="entity class" id="conversion">
-        <h3>
-          conversion<sup title="class" class="sup-c">c</sup>
-          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#conversion" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
-        </h3>
-        <table>
             <tr>
-                <th>URI</th>
-                <td><code>http://www.opengis.net/ont/srs/conversion</code></td>
-            </tr>
-            <tr>
-                <th>Description</th>
+                <th>Super-classes</th>
                 <td>
-                    <p>Coordinate operation in which both coordinate reference systems are based on the same datum. Cf. ISO 19111:2007:2007-07, table 45 and annex B.4.2.</p>
+                    <a href="#Datum">Datum</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -827,13 +1046,11 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
     <h2>Object Properties <span style="float:right; font-size:smaller;"><a href="">&uparrow;</a></span></h2>
     <ul class="hlist">
         <li><a href="#axis">axis</a></li>
-        <li><a href="#axisdirection">axisdirection</a></li>
         <li><a href="#baseCRS">base CRS</a></li>
         <li><a href="#coordinatesystem">coordinate system</a></li>
         <li><a href="#datum">datum</a></li>
+        <li><a href="#domainofvalidity">domain of validity</a></li>
         <li><a href="#ellipsoid">ellipsoid</a></li>
-        <li><a href="#semimajoraxis">semi major axis</a></li>
-        <li><a href="#semiminoraxis">semi minor axis</a></li>
         <li><a href="#sourceCRS">source CRS</a></li>
         <li><a href="#targetCRS">target CRS</a></li>
     </ul>
@@ -844,7 +1061,7 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
         <table>
             <tr>
                 <th>URI</th>
-                <td><code>http://www.opengis.net/ont/srs/axis</code></td>
+                <td><code>https://w3id.org/geosrs/axis</code></td>
             </tr>
             <tr>
                 <th>Description</th>
@@ -855,42 +1072,13 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             <tr>
                 <th>Domain(s)</th>
                 <td>
-                    <a href="#CoordinateSystem">coordinate system</a><sup class="sup-c" title="class">c</sup>
+                    <a href="#CoordinateSystem">Coordinate System</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
             <tr>
                 <th>Range(s)</th>
                 <td>
-                    <a href="http://www.opengis.net/ont/srs/Axis">geosrs:Axis</a><sup class="sup-c" title="class">c</sup>
-                </td>
-            </tr>
-        </table>
-    </div>
-    <div class="entity property" id="axisdirection">
-        <h3>axisdirection<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
-            <a href="#axisdirection" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
-        </h3>
-        <table>
-            <tr>
-                <th>URI</th>
-                <td><code>http://www.opengis.net/ont/srs/axisDirection</code></td>
-            </tr>
-            <tr>
-                <th>Description</th>
-                <td>
-                    <p>The property relates a coordinate system axis to its axis direction</p>
-                </td>
-            </tr>
-            <tr>
-                <th>Domain(s)</th>
-                <td>
-                    <a href="http://www.opengis.net/ont/srs/Axis">geosrs:Axis</a><sup class="sup-c" title="class">c</sup>
-                </td>
-            </tr>
-            <tr>
-                <th>Range(s)</th>
-                <td>
-                    <a href="http://www.opengis.net/ont/srs/AxisDirection">geosrs:AxisDirection</a><sup class="sup-c" title="class">c</sup>
+                    <a href="https://w3id.org/geosrs/Axis">geosrs:Axis</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
         </table>
@@ -902,7 +1090,7 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
         <table>
             <tr>
                 <th>URI</th>
-                <td><code>http://www.opengis.net/ont/srs/baseCRS</code></td>
+                <td><code>https://w3id.org/geosrs/baseCRS</code></td>
             </tr>
             <tr>
                 <th>Description</th>
@@ -919,7 +1107,7 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             <tr>
                 <th>Range(s)</th>
                 <td>
-                    <a href="http://www.opengis.net/ont/srs/CRS">geosrs:CRS</a><sup class="sup-c" title="class">c</sup>
+                    <a href="https://w3id.org/geosrs/CRS">geosrs:CRS</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
         </table>
@@ -931,7 +1119,7 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
         <table>
             <tr>
                 <th>URI</th>
-                <td><code>http://www.opengis.net/ont/srs/coordinateSystem</code></td>
+                <td><code>https://w3id.org/geosrs/coordinateSystem</code></td>
             </tr>
             <tr>
                 <th>Description</th>
@@ -948,7 +1136,7 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             <tr>
                 <th>Range(s)</th>
                 <td>
-                    <a href="http://www.opengis.net/ont/srs/CoordinateSystem">geosrs:CoordinateSystem</a><sup class="sup-c" title="class">c</sup>
+                    <a href="https://w3id.org/geosrs/CoordinateSystem">geosrs:CoordinateSystem</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
         </table>
@@ -960,7 +1148,7 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
         <table>
             <tr>
                 <th>URI</th>
-                <td><code>http://www.opengis.net/ont/srs/datum</code></td>
+                <td><code>https://w3id.org/geosrs/datum</code></td>
             </tr>
             <tr>
                 <th>Description</th>
@@ -977,7 +1165,36 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             <tr>
                 <th>Range(s)</th>
                 <td>
-                    <a href="http://www.opengis.net/ont/srs/Datum">geosrs:Datum</a><sup class="sup-c" title="class">c</sup>
+                    <a href="https://w3id.org/geosrs/Datum">geosrs:Datum</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity property" id="domainofvalidity">
+        <h3>domain of validity<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#domainofvalidity" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://w3id.org/geosrs/domainOfValidity</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>Geographic area or time interval in which the referring object is valid. Cf. ISO 19111:2007:2007-07, tables 4, 33 and 42, attribute domainOfValidity.</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Domain(s)</th>
+                <td>
+                    <a href="#CoordinateReferenceSystem">Coordinate Reference System</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+            <tr>
+                <th>Range(s)</th>
+                <td>
+                    <a href="https://w3id.org/geosrs/srs/AreaOfUse">https://w3id.org/geosrs/srs/AreaOfUse</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
         </table>
@@ -989,7 +1206,7 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
         <table>
             <tr>
                 <th>URI</th>
-                <td><code>http://www.opengis.net/ont/srs/ellipsoid</code></td>
+                <td><code>https://w3id.org/geosrs/ellipsoid</code></td>
             </tr>
             <tr>
                 <th>Description</th>
@@ -1006,65 +1223,7 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             <tr>
                 <th>Range(s)</th>
                 <td>
-                    <a href="http://www.opengis.net/ont/srs/Ellipsoid">geosrs:Ellipsoid</a><sup class="sup-c" title="class">c</sup>
-                </td>
-            </tr>
-        </table>
-    </div>
-    <div class="entity property" id="semimajoraxis">
-        <h3>semi major axis<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
-            <a href="#semimajoraxis" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
-        </h3>
-        <table>
-            <tr>
-                <th>URI</th>
-                <td><code>http://www.opengis.net/ont/srs/semiMajorAxis</code></td>
-            </tr>
-            <tr>
-                <th>Description</th>
-                <td>
-                    <p>Indicates the length of the semi major axis of an ellipsoid. Cf. ISO 19111:2007:2007-07, table 36, attribute length of semi-major axis.</p>
-                </td>
-            </tr>
-            <tr>
-                <th>Domain(s)</th>
-                <td>
-                    <a href="#Ellipsoid">Ellipsoid</a><sup class="sup-c" title="class">c</sup>
-                </td>
-            </tr>
-            <tr>
-                <th>Range(s)</th>
-                <td>
-                    <a href="http://www.opengis.net/ont/srs/Axis">geosrs:Axis</a><sup class="sup-c" title="class">c</sup>
-                </td>
-            </tr>
-        </table>
-    </div>
-    <div class="entity property" id="semiminoraxis">
-        <h3>semi minor axis<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
-            <a href="#semiminoraxis" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
-        </h3>
-        <table>
-            <tr>
-                <th>URI</th>
-                <td><code>http://www.opengis.net/ont/srs/semiMinorAxis</code></td>
-            </tr>
-            <tr>
-                <th>Description</th>
-                <td>
-                    <p>Indicates the length of the semi minor axis of an ellipsoid. Cf. ISO 19111:2007:2007-07, table 37, attribute length of semi-minor axis.</p>
-                </td>
-            </tr>
-            <tr>
-                <th>Domain(s)</th>
-                <td>
-                    <a href="#Ellipsoid">Ellipsoid</a><sup class="sup-c" title="class">c</sup>
-                </td>
-            </tr>
-            <tr>
-                <th>Range(s)</th>
-                <td>
-                    <a href="http://www.opengis.net/ont/srs/Axis">geosrs:Axis</a><sup class="sup-c" title="class">c</sup>
+                    <a href="https://w3id.org/geosrs/Ellipsoid">geosrs:Ellipsoid</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
         </table>
@@ -1076,7 +1235,7 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
         <table>
             <tr>
                 <th>URI</th>
-                <td><code>http://www.opengis.net/ont/srs/sourceCRS</code></td>
+                <td><code>https://w3id.org/geosrs/sourceCRS</code></td>
             </tr>
             <tr>
                 <th>Description</th>
@@ -1093,7 +1252,7 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             <tr>
                 <th>Range(s)</th>
                 <td>
-                    <a href="http://www.opengis.net/ont/srs/CRS">geosrs:CRS</a><sup class="sup-c" title="class">c</sup>
+                    <a href="https://w3id.org/geosrs/CRS">geosrs:CRS</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
         </table>
@@ -1105,7 +1264,7 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
         <table>
             <tr>
                 <th>URI</th>
-                <td><code>http://www.opengis.net/ont/srs/targetCRS</code></td>
+                <td><code>https://w3id.org/geosrs/targetCRS</code></td>
             </tr>
             <tr>
                 <th>Description</th>
@@ -1122,7 +1281,73 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             <tr>
                 <th>Range(s)</th>
                 <td>
-                    <a href="http://www.opengis.net/ont/srs/CRS">geosrs:CRS</a><sup class="sup-c" title="class">c</sup>
+                    <a href="https://w3id.org/geosrs/CRS">geosrs:CRS</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+        </table>
+    </div>
+</section>
+
+<section id="datatypeproperties">
+    <h2>Datatype Properties <span style="float:right; font-size:smaller;"><a href="">&uparrow;</a></span></h2>
+    <ul class="hlist">
+        <li><a href="#semimajoraxis">semi major axis</a></li>
+        <li><a href="#semiminoraxis">semi minor axis</a></li>
+    </ul>
+    <div class="entity property" id="semimajoraxis">
+        <h3>semi major axis<sup title="datatype property" class="sup-dp">dp</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#semimajoraxis" title="fragment link to here">#</a>&nbsp;<a href="#datatypeproperties" title="Datatype Properties Index">DPs</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://w3id.org/geosrs/semiMajorAxis</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>Indicates the length of the semi major axis of an ellipsoid. Cf. ISO 19111:2007:2007-07, table 36, attribute length of semi-major axis.</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Domain(s)</th>
+                <td>
+                    <a href="#Ellipsoid">Ellipsoid</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+            <tr>
+                <th>Range(s)</th>
+                <td>
+                    <a href="xsd:double">xsd:double</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity property" id="semiminoraxis">
+        <h3>semi minor axis<sup title="datatype property" class="sup-dp">dp</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#semiminoraxis" title="fragment link to here">#</a>&nbsp;<a href="#datatypeproperties" title="Datatype Properties Index">DPs</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://w3id.org/geosrs/semiMinorAxis</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>Indicates the length of the semi minor axis of an ellipsoid. Cf. ISO 19111:2007:2007-07, table 37, attribute length of semi-minor axis.</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Domain(s)</th>
+                <td>
+                    <a href="#Ellipsoid">Ellipsoid</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+            <tr>
+                <th>Range(s)</th>
+                <td>
+                    <a href="xsd:double">xsd:double</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
         </table>
@@ -1134,7 +1359,7 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
     <h2>Namespaces <span style="float:right; font-size:smaller;"><a href="">&uparrow;</a></span></h2>
     <dl>
         <dt>default (geosrs)</dt>
-        <dd><code>http://www.opengis.net/ont/srs/</code></dd>
+        <dd><code>https://w3id.org/geosrs/</code></dd>
         <dt>brick</dt>
         <dd><code>https://brickschema.org/schema/Brick#</code></dd>
         <dt>csvw</dt>

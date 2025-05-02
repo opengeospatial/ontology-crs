@@ -1,10 +1,188 @@
+@prefix geosrs: <https://w3id.org/geosrs/> .
+@prefix geosrs_datum: <https://w3id.org/geosrs/datum/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://www.opengis.net/ont/srs/geosrs/datum> a owl:Ontology ;
-    rdfs:label "SRS Ontology: Geodatum"@en ;
-    vann:preferredNamespacePrefix "geodatum"^^xsd:string ;
-    vann:preferredNamespaceUri "http://www.opengis.net/ont/srs/datum/"^^xsd:anyURI .
+geosrs_datum:Airy1830 a owl:NamedIndividual,
+        geosrs:Ellipsoid ;
+    rdfs:label "Airy 1830"@en ;
+    skos:definition "Airy 1830 Ellipsoid"@en .
+
+geosrs_datum:AiryModified1849 a owl:NamedIndividual,
+        geosrs:Ellipsoid ;
+    rdfs:label "Ariy Modified 1849"@en ;
+    skos:definition "Airy 1849 Modified Ellipsoid"@en .
+
+geosrs_datum:AustralianNationalSpheroid a owl:NamedIndividual,
+        geosrs:Ellipsoid ;
+    rdfs:label "Australian National Spheroid"@en ;
+    skos:definition "Australian National Spheroid"@en .
+
+geosrs_datum:CGCS2000 a owl:NamedIndividual,
+        geosrs:Ellipsoid ;
+    rdfs:label "CGCS2000"@en ;
+    skos:definition "CGCS2000 Spheroid"@en .
+
+geosrs_datum:Clarke1858 a owl:NamedIndividual,
+        geosrs:Ellipsoid ;
+    rdfs:label "Clarke 1858"@en ;
+    skos:definition "Clarke 1858 Spheroid"@en .
+
+geosrs_datum:Clarke1866 a owl:NamedIndividual,
+        geosrs:Ellipsoid ;
+    rdfs:label "Clarke 1866"@en ;
+    skos:definition "Clarke 1866 Spheroid"@en .
+
+geosrs_datum:Clarke1880 a owl:NamedIndividual,
+        geosrs:Ellipsoid ;
+    rdfs:label "Clarke 1880"@en ;
+    skos:definition "Clarke 1880 Spheroid"@en .
+
+geosrs_datum:Clarke1880ARC a owl:NamedIndividual,
+        geosrs:Ellipsoid ;
+    rdfs:label "Clarke 1880 (Arc)"@en ;
+    skos:definition "Clarke 1880 (Arc) Spheroid"@en .
+
+geosrs_datum:Clarke1880IGN a owl:NamedIndividual,
+        geosrs:Ellipsoid ;
+    rdfs:label "Clarke 1880 (Ign)"@en ;
+    skos:definition "Clarke 1880 (Ing) Spheroid"@en .
+
+geosrs_datum:Danish1876 a owl:NamedIndividual,
+        geosrs:Ellipsoid ;
+    rdfs:label "Danish 1876"@en ;
+    skos:definition "Danish 1876 Spheroid"@en .
+
+geosrs_datum:DatumEnsemble a owl:Class ;
+    rdfs:label "Datum Ensemble"@en ;
+    skos:definition """A collection of two or more datums (or if geodetic or vertical, a collection of two or more reference frames) that are realizations of one Conventional Reference System and which for all but the highest accuracy requirements may be considered to be insignificantly different from each other. Note: Within the datum ensemble every frame or datum is constrained to be a realization of the same reference system. Cf. ISO 19111:2019
+Geographic information — Referencing by coordinates."""@en .
+
+geosrs_datum:DefiningParameter a owl:Class ;
+    rdfs:label "Defining Parameter"@en ;
+    skos:definition "Parameter value, an ordered sequence of values, or a reference to a file of parameter values that define a paramtric datum. Cf. ISO 19111:2019 Geographic information — Referencing by coordinates."@en .
+
+geosrs_datum:DynamicGeodeticReferenceFrame a owl:Class ;
+    rdfs:label "Dynamic Geodetic Reference Frame"@en ;
+    rdfs:subClassOf geosrs:GeodeticDatum ;
+    skos:definition "Geodetic reference frame in which some of the parameters describe time evolution of defining station coordinatesExample: defining station coordinates having linear velocities to account for crustal motion."@en .
+
+geosrs_datum:DynamicVerticalDatum a owl:Class ;
+    rdfs:label "Dynamic Vertical Datum"@en ;
+    rdfs:subClassOf geosrs:VerticalDatum ;
+    skos:definition "Vertical reference frame in which some of the defining parameters have time dependencyExample: Defining station heights have velocity to account for post-glacial isostatic rebound motion. Cf. ISO 19111:2019 Geographic information — Referencing by coordinates."@en .
+
+geosrs_datum:EngineeringDatum a owl:Class ;
+    rdfs:label "Engineering Datum"@en ;
+    rdfs:subClassOf geosrs:Datum ;
+    skos:definition "Definition of the origin and orientation of an engineering coordinate reference systemNote: The origin can be fixed with respect to the Earth (such as a defined point at a construction site), or be a defined point on a moving vehicle (such as on a ship or satellite), or a defined point of an image. Cf. ISO 19111:2019 Geographic information — Referencing by coordinates."@en .
+
+geosrs_datum:Everest1930 a owl:NamedIndividual,
+        geosrs:Ellipsoid ;
+    rdfs:label "Everest 1930"@en ;
+    skos:definition "Everest 1930 Spheroid"@en .
+
+geosrs_datum:GRS1980 a owl:NamedIndividual,
+        geosrs:Ellipsoid ;
+    rdfs:label "GRS 1980"@en ;
+    skos:definition "GRS 1980 Ellipsoid"@en .
+
+geosrs_datum:GRS67 a owl:NamedIndividual,
+        geosrs:Ellipsoid ;
+    rdfs:label "GRS 67"@en ;
+    skos:definition "GRS 67 Ellipsoid"@en .
+
+geosrs_datum:GSK-2011 a owl:NamedIndividual,
+        geosrs:Ellipsoid ;
+    rdfs:label "GSK-2011"@en ;
+    skos:definition "GSK-2011 Spheroid"@en .
+
+geosrs_datum:Helmert1906 a owl:NamedIndividual,
+        geosrs:Ellipsoid ;
+    rdfs:label "Helmert 1906"@en ;
+    skos:definition "Helmert 1906 Spheroid"@en .
+
+geosrs_datum:IAG1975 a owl:NamedIndividual,
+        geosrs:Ellipsoid ;
+    rdfs:label "IAG 1975"@en ;
+    skos:definition "IAG 1975 Spheroid"@en .
+
+geosrs_datum:International1924 a owl:NamedIndividual,
+        geosrs:Ellipsoid ;
+    rdfs:label "International 1924"@en ;
+    skos:definition "International 1924 Ellipsoid"@en .
+
+geosrs_datum:Krassowsky1940 a owl:NamedIndividual,
+        geosrs:Ellipsoid ;
+    rdfs:label "Krassowsky 1940"@en ;
+    skos:definition "Krassowsky 1940 Spheroid"@en .
+
+geosrs_datum:PZ90 a owl:NamedIndividual,
+        geosrs:Ellipsoid ;
+    rdfs:label "PS 90"@en ;
+    skos:definition "PZ 90 Ellipsoid"@en .
+
+geosrs_datum:ParametricDatum a owl:Class ;
+    rdfs:label "Parametric Datum"@en ;
+    rdfs:subClassOf geosrs:Datum ;
+    skos:definition "Textual description and/or a set of parameters identifying a particular reference surface used as the origin of a parametric coordinate system, including its position with respect to the Earth. Cf. ISO 19111:2019 Geographic information — Referencing by coordinates."@en .
+
+geosrs_datum:Plessis1817 a owl:NamedIndividual,
+        geosrs:Ellipsoid ;
+    rdfs:label "Plessis 1817"@en ;
+    skos:definition "Plessis 1817 Spheroid"@en .
+
+geosrs_datum:Struve1860 a owl:NamedIndividual,
+        geosrs:Ellipsoid ;
+    rdfs:label "Struve 1860"@en ;
+    skos:definition "Struve 1860 Spheroid"@en .
+
+geosrs_datum:TemporalDatum a owl:Class ;
+    rdfs:label "Temporal Datum"@en ;
+    rdfs:subClassOf geosrs:Datum ;
+    skos:definition "Definition of the relationship of a temporal coordinate system to an objectNote: The object is normally time on the Earth. Cf. ISO 19111:2019 Geographic information — Referencing by coordinates."@en .
+
+geosrs_datum:TriaxialEllipsoid a owl:Class ;
+    rdfs:label "Triaxial Ellipsoid"@en ;
+    skos:definition "Surface of an analytic ellipsoid defined by three axes of different length. Also referred as scalene ellipsoid."@en .
+
+geosrs_datum:WGS66 a owl:NamedIndividual,
+        geosrs:Ellipsoid ;
+    rdfs:label "WGS 66"@en ;
+    skos:definition "WGS 66 Spheroid"@en .
+
+geosrs_datum:WGS72 a owl:NamedIndividual,
+        geosrs:Ellipsoid ;
+    rdfs:label "WGS 72"@en ;
+    skos:definition "WGS 72 Spheroid"@en .
+
+geosrs_datum:WGS84 a owl:NamedIndividual,
+        geosrs:Ellipsoid ;
+    rdfs:label "WGS 84"@en ;
+    skos:definition "WGS 84 Spheroid"@en .
+
+geosrs_datum:Zach1812 a owl:NamedIndividual,
+        geosrs:Ellipsoid ;
+    rdfs:label "Zach 1812"@en ;
+    skos:definition "Zach 1812 Spheroid"@en .
+
+geosrs_datum:inverseFlattening a owl:DatatypeProperty ;
+    rdfs:label "inverse flattening"@en ;
+    rdfs:domain geosrs:Ellipsoid ;
+    rdfs:range <xsd:double> ;
+    skos:definition "Indicates the inverse flattening value of an ellipsoid, expressed as a number or a ratio (percentage rate, parts per million, etc.). Cf. ISO 19111:2007:2007-07, table 37, attribute inverse flattening"@en .
+
+geosrs_datum:primeMeridian a owl:ObjectProperty ;
+    rdfs:label "prime meridian"@en ;
+    rdfs:domain geosrs:Datum ;
+    rdfs:range geosrs:PrimeMeridian ;
+    skos:definition "The prime meridian used by a geodetic datum. Cf. ISO 19111:2007:2007-07, table 34, association role primeMeridian."@en .
+
+geosrs:datumdatum a owl:Ontology ;
+    rdfs:label "SRS Ontology: Geosrs_datum"@en ;
+    vann:preferredNamespacePrefix "geosrs_datum"^^xsd:string ;
+    vann:preferredNamespaceUri "https://w3id.org/geosrs/datum/"^^xsd:anyURI .
 

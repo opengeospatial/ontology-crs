@@ -163,163 +163,9 @@
 <title>Core</title>
 <p id="core">This clause establishes the <strong>Core</strong> Requirements class, with IRI <tt>/req/core</tt>, which has a corresponding Conformance Class, <strong>Core</strong>, with IRI <tt>/conf/core</tt>.</p>
 
-<clause id="_class_geosrscoordinatesystem" obligation="normative">
-<title>Class: geosrs:CoordinateSystem</title>
-<table id="_76f2c69e-dadd-6752-f6bb-e12e257928b3"><colgroup><col width="50%"/><col width="50%"/></colgroup>
-<name>geosrs:CoordinateSystem</name>
-<tbody><tr><td valign="middle" align="left">Type</td>
-<td valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#Class">owl:Class</link></td>
-</tr><tr><td valign="middle" align="left">URI</td>
-<td valign="middle" align="left"><link target="https://w3id.org/geosrs/cs/CoordinateSystem"/></td>
-</tr><tr><td valign="middle" align="left">Definition</td>
-<td valign="middle" align="left">Set of axes that spans a given coordinate space and of mathematical rules for specifying how coordinates are to be assigned to points. Cf. ISO 19111:2007:2007-07, part 9.2, table 17 and annex B.2.</td>
-</tr></tbody>
-</table>
-</clause>
-
-<clause id="_class_geosrscartesiancoordinatesystem" obligation="normative">
-<title>Class: geosrs:CartesianCoordinateSystem</title>
-<table id="_8726e49d-6258-6841-4c90-38f2f7dddff2"><colgroup><col width="50%"/><col width="50%"/></colgroup>
-<name>geosrs:CartesianCoordinateSystem</name>
-<tbody><tr><td valign="middle" align="left">Type</td>
-<td valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#Class">owl:Class</link></td>
-</tr><tr><td valign="middle" align="left">URI</td>
-<td valign="middle" align="left"><link target="https://w3id.org/geosrs/cs/CartesianCoordinateSystem"/></td>
-</tr><tr><td valign="middle" align="left">Definition</td>
-<td valign="middle" align="left">Coordinate system which gives the position of points relative to n mutually perpendicular axes. Cf. ISO 19111:2007:2007-07, tables 15 and 18.</td>
-</tr><tr><td valign="middle" align="left">Super-classes</td>
-<td valign="middle" align="left"><link target="https://w3id.org/geosrs/projection/PseudoCylindricalProjection">PseudoCylindricalProjection</link></td>
-</tr></tbody>
-</table>
-</clause>
-
-<clause id="_class_geosrsellipsoidalcoordinatesystem" obligation="normative">
-<title>Class: geosrs:EllipsoidalCoordinateSystem</title>
-<table id="_31899a7b-5737-8ffe-810d-3cc6bc3d6d05"><colgroup><col width="50%"/><col width="50%"/></colgroup>
-<name>geosrs:EllipsoidalCoordinateSystem</name>
-<tbody><tr><td valign="middle" align="left">Type</td>
-<td valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#Class">owl:Class</link></td>
-</tr><tr><td valign="middle" align="left">URI</td>
-<td valign="middle" align="left"><link target="https://w3id.org/geosrs/cs/EllipsoidalCoordinateSystem"/></td>
-</tr><tr><td valign="middle" align="left">Definition</td>
-<td valign="middle" align="left">Coordinate system which gives the position is specified by geodetic latitude, geodetic longitude and (in the three-dimensional case) ellipsoidal height. Cf. ISO 19111:2007:2007-07, tables 15 and 20.</td>
-</tr><tr><td valign="middle" align="left">Super-classes</td>
-<td valign="middle" align="left"><link target="https://w3id.org/geosrs/projection/PseudoCylindricalProjection">PseudoCylindricalProjection</link></td>
-</tr></tbody>
-</table>
-</clause>
-
-<clause id="_class_geosrslinearcoordinatesystem" obligation="normative">
-<title>Class: geosrs:LinearCoordinateSystem</title>
-<table id="_7d0ed2ff-ef9e-8ee0-39c5-06978f651674"><colgroup><col width="50%"/><col width="50%"/></colgroup>
-<name>geosrs:LinearCoordinateSystem</name>
-<tbody><tr><td valign="middle" align="left">Type</td>
-<td valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#Class">owl:Class</link></td>
-</tr><tr><td valign="middle" align="left">URI</td>
-<td valign="middle" align="left"><link target="https://w3id.org/geosrs/cs/LinearCoordinateSystem"/></td>
-</tr><tr><td valign="middle" align="left">Definition</td>
-<td valign="middle" align="left">One-dimensional coordinate system in which a linear feature forms the axis.</td>
-</tr></tbody>
-</table>
-</clause>
-
-<clause id="_class_geosrsordinalcoordinatesystem" obligation="normative">
-<title>Class: geosrs:OrdinalCoordinateSystem</title>
-<table id="_92051eef-869d-d63f-402a-c0379e97f064"><colgroup><col width="50%"/><col width="50%"/></colgroup>
-<name>geosrs:OrdinalCoordinateSystem</name>
-<tbody><tr><td valign="middle" align="left">Type</td>
-<td valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#Class">owl:Class</link></td>
-</tr><tr><td valign="middle" align="left">URI</td>
-<td valign="middle" align="left"><link target="https://w3id.org/geosrs/cs/OrdinalCoordinateSystem"/></td>
-</tr><tr><td valign="middle" align="left">Definition</td>
-<td valign="middle" align="left">n-dimensional coordinate system in which every axis uses integers.</td>
-</tr><tr><td valign="middle" align="left">Super-classes</td>
-<td valign="middle" align="left"><link target="https://w3id.org/geosrs/cs/GeodeticCoordinateSystem">GeodeticCoordinateSystem</link></td>
-</tr></tbody>
-</table>
-</clause>
-
-<clause id="_class_geosrsparametriccoordinatesystem" obligation="normative">
-<title>Class: geosrs:ParametricCoordinateSystem</title>
-<table id="_7412bee1-f519-6333-c8d6-fc69059a41fe"><colgroup><col width="50%"/><col width="50%"/></colgroup>
-<name>geosrs:ParametricCoordinateSystem</name>
-<tbody><tr><td valign="middle" align="left">Type</td>
-<td valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#Class">owl:Class</link></td>
-</tr><tr><td valign="middle" align="left">URI</td>
-<td valign="middle" align="left"><link target="https://w3id.org/geosrs/cs/ParametricCoordinateSystem"/></td>
-</tr><tr><td valign="middle" align="left">Definition</td>
-<td valign="middle" align="left">One-dimensional coordinate system where the axis units are parameter values which are not inherently spatial.</td>
-</tr><tr><td valign="middle" align="left">Super-classes</td>
-<td valign="middle" align="left"><link target="https://w3id.org/geosrs/cs/GeodeticCoordinateSystem">GeodeticCoordinateSystem</link></td>
-</tr></tbody>
-</table>
-</clause>
-
-<clause id="_class_geosrspolarcoordinatesystem" obligation="normative">
-<title>Class: geosrs:PolarCoordinateSystem</title>
-<table id="_39d96f86-8526-3560-c10e-4f2764ea53af"><colgroup><col width="50%"/><col width="50%"/></colgroup>
-<name>geosrs:PolarCoordinateSystem</name>
-<tbody><tr><td valign="middle" align="left">Type</td>
-<td valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#Class">owl:Class</link></td>
-</tr><tr><td valign="middle" align="left">URI</td>
-<td valign="middle" align="left"><link target="https://w3id.org/geosrs/cs/PolarCoordinateSystem"/></td>
-</tr><tr><td valign="middle" align="left">Definition</td>
-<td valign="middle" align="left">Two-dimensional coordinate system in Euclidean space in which position is specified by one distance coordinate and one angular coordinate.</td>
-</tr><tr><td valign="middle" align="left">Super-classes</td>
-<td valign="middle" align="left"><link target="https://w3id.org/geosrs/cs/GeodeticCoordinateSystem">GeodeticCoordinateSystem</link></td>
-</tr></tbody>
-</table>
-</clause>
-
-<clause id="_class_geosrssphericalcoordinatesystem" obligation="normative">
-<title>Class: geosrs:SphericalCoordinateSystem</title>
-<table id="_4a3a03c2-5e9e-2eb0-c781-6faf7ac2cbf6"><colgroup><col width="50%"/><col width="50%"/></colgroup>
-<name>geosrs:SphericalCoordinateSystem</name>
-<tbody><tr><td valign="middle" align="left">Type</td>
-<td valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#Class">owl:Class</link></td>
-</tr><tr><td valign="middle" align="left">URI</td>
-<td valign="middle" align="left"><link target="https://w3id.org/geosrs/cs/SphericalCoordinateSystem"/></td>
-</tr><tr><td valign="middle" align="left">Definition</td>
-<td valign="middle" align="left">Three-dimensional coordinate system in Euclidean space with one distance measured from the origin and two angular coordinates</td>
-</tr><tr><td valign="middle" align="left">Super-classes</td>
-<td valign="middle" align="left"><link target="https://w3id.org/geosrs/cs/GeodeticCoordinateSystem">GeodeticCoordinateSystem</link></td>
-</tr></tbody>
-</table>
-</clause>
-
-<clause id="_class_geosrsverticalcoordinatesystem" obligation="normative">
-<title>Class: geosrs:VerticalCoordinateSystem</title>
-<table id="_1dd28f57-42da-648e-ef83-9bb52aef8c42"><colgroup><col width="50%"/><col width="50%"/></colgroup>
-<name>geosrs:VerticalCoordinateSystem</name>
-<tbody><tr><td valign="middle" align="left">Type</td>
-<td valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#Class">owl:Class</link></td>
-</tr><tr><td valign="middle" align="left">URI</td>
-<td valign="middle" align="left"><link target="https://w3id.org/geosrs/cs/VerticalCoordinateSystem"/></td>
-</tr><tr><td valign="middle" align="left">Definition</td>
-<td valign="middle" align="left">One-dimensional coordinate system used for gravity related height or depth measurements. Cf. ISO 19111:2007:2007-07, tables 15 and 25.</td>
-</tr><tr><td valign="middle" align="left">Super-classes</td>
-<td valign="middle" align="left"><link target="https://w3id.org/geosrs/cs/3DCoordinateSystem">3DCoordinateSystem</link></td>
-</tr></tbody>
-</table>
-</clause>
-
-<clause id="_class_geosrscoordinatesystemaxis" obligation="normative">
-<title>Class: geosrs:CoordinateSystemAxis</title>
-<table id="_324af55c-46dc-b083-2bb0-671fe40240ed"><colgroup><col width="50%"/><col width="50%"/></colgroup>
-<name>geosrs:CoordinateSystemAxis</name>
-<tbody><tr><td valign="middle" align="left">Type</td>
-<td valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#Class">owl:Class</link></td>
-</tr><tr><td valign="middle" align="left">URI</td>
-<td valign="middle" align="left"><link target="https://w3id.org/geosrs/cs/CoordinateSystemAxis"/></td>
-</tr><tr><td valign="middle" align="left">Definition</td>
-<td valign="middle" align="left">Axis relative to which a coordinate of a point is specified in a coordinate system. See ISO 19111:2007:2007-07, part 9.3, table 27 and annex B.2.2.</td>
-</tr></tbody>
-</table>
-</clause>
-
 <clause id="_class_geosrsareaofuse" obligation="normative">
 <title>Class: geosrs:AreaOfUse</title>
-<table id="_afda879b-66f0-ecba-c70d-68844eb43752"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<table id="_369f74eb-cca5-c7dd-e846-82293e9feb55"><colgroup><col width="50%"/><col width="50%"/></colgroup>
 <name>geosrs:AreaOfUse</name>
 <tbody><tr><td valign="middle" align="left">URI</td>
 <td valign="middle" align="left"><link target="https://w3id.org/geosrs/srs/AreaOfUse"/></td>
@@ -331,7 +177,7 @@
 
 <clause id="_class_geosrsboundcrs" obligation="normative">
 <title>Class: geosrs:BoundCRS</title>
-<table id="_1e6eade0-9ca1-8d70-13f6-10abf78586cd"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<table id="_74a16868-4767-d7a8-97b1-fb0e9e46f18d"><colgroup><col width="50%"/><col width="50%"/></colgroup>
 <name>geosrs:BoundCRS</name>
 <tbody><tr><td valign="middle" align="left">URI</td>
 <td valign="middle" align="left"><link target="https://w3id.org/geosrs/srs/BoundCRS"/></td>
@@ -343,7 +189,7 @@
 
 <clause id="_class_geosrscompoundcrs" obligation="normative">
 <title>Class: geosrs:CompoundCRS</title>
-<table id="_01781cea-64a0-f0f1-646d-924655861dc1"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<table id="_067c9704-b254-afba-c2d2-36deaba44031"><colgroup><col width="50%"/><col width="50%"/></colgroup>
 <name>geosrs:CompoundCRS</name>
 <tbody><tr><td valign="middle" align="left">URI</td>
 <td valign="middle" align="left"><link target="https://w3id.org/geosrs/srs/CompoundCRS"/></td>
@@ -357,7 +203,7 @@
 
 <clause id="_class_geosrscrs" obligation="normative">
 <title>Class: geosrs:CRS</title>
-<table id="_29208ea2-0a5e-5796-cdc2-20c286497bf8"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<table id="_a8c0ecab-9f76-5bdd-0d2c-4feb3f9cb6a3"><colgroup><col width="50%"/><col width="50%"/></colgroup>
 <name>geosrs:CRS</name>
 <tbody><tr><td valign="middle" align="left">Type</td>
 <td valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#Class">owl:Class</link></td>
@@ -373,7 +219,7 @@
 
 <clause id="_class_geosrsengineeringcrs" obligation="normative">
 <title>Class: geosrs:EngineeringCRS</title>
-<table id="_7f8b7dd2-f292-62f4-11d0-13ec96ad98ad"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<table id="_1869fd7a-ef6f-3a9a-10bf-4586ad114d19"><colgroup><col width="50%"/><col width="50%"/></colgroup>
 <name>geosrs:EngineeringCRS</name>
 <tbody><tr><td valign="middle" align="left">Type</td>
 <td valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#Class">owl:Class</link></td>
@@ -389,7 +235,7 @@
 
 <clause id="_class_geosrsgeocentriccrs" obligation="normative">
 <title>Class: geosrs:GeocentricCRS</title>
-<table id="_94f3f954-14e1-a1bb-152a-12fe0621d1e9"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<table id="_46642fa5-b255-5185-7d90-6d3fde662f8f"><colgroup><col width="50%"/><col width="50%"/></colgroup>
 <name>geosrs:GeocentricCRS</name>
 <tbody><tr><td valign="middle" align="left">URI</td>
 <td valign="middle" align="left"><link target="https://w3id.org/geosrs/srs/GeocentricCRS"/></td>
@@ -403,7 +249,7 @@
 
 <clause id="_class_geosrsgeodeticcrs" obligation="normative">
 <title>Class: geosrs:GeodeticCRS</title>
-<table id="_b6ffc319-e322-e92b-49c9-e71a104b7be9"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<table id="_73a5fbbd-1ba2-6ad5-b7dc-d93ad93dd683"><colgroup><col width="50%"/><col width="50%"/></colgroup>
 <name>geosrs:GeodeticCRS</name>
 <tbody><tr><td valign="middle" align="left">Type</td>
 <td valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#Class">owl:Class</link></td>
@@ -419,7 +265,7 @@
 
 <clause id="_class_geosrsgeographiccrs" obligation="normative">
 <title>Class: geosrs:GeographicCRS</title>
-<table id="_4ba5a1da-1096-b325-4ed4-cda0560af419"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<table id="_a9943b08-dfde-b2ca-4d00-9dd5219281bf"><colgroup><col width="50%"/><col width="50%"/></colgroup>
 <name>geosrs:GeographicCRS</name>
 <tbody><tr><td valign="middle" align="left">Type</td>
 <td valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#Class">owl:Class</link></td>
@@ -435,7 +281,7 @@
 
 <clause id="_class_geosrsparametriccrs" obligation="normative">
 <title>Class: geosrs:ParametricCRS</title>
-<table id="_32a559fa-90d3-8691-27c1-5806387f2a49"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<table id="_68c9af51-4673-f2c4-b14c-896354058e2e"><colgroup><col width="50%"/><col width="50%"/></colgroup>
 <name>geosrs:ParametricCRS</name>
 <tbody><tr><td valign="middle" align="left">URI</td>
 <td valign="middle" align="left"><link target="https://w3id.org/geosrs/srs/ParametricCRS"/></td>
@@ -449,7 +295,7 @@
 
 <clause id="_class_geosrsprojectedcrs" obligation="normative">
 <title>Class: geosrs:ProjectedCRS</title>
-<table id="_5dc9219a-669f-61c7-dd02-c1c0f155093f"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<table id="_77796b4f-da43-ce9c-bdf9-d820ac2a07d0"><colgroup><col width="50%"/><col width="50%"/></colgroup>
 <name>geosrs:ProjectedCRS</name>
 <tbody><tr><td valign="middle" align="left">Type</td>
 <td valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#Class">owl:Class</link></td>
@@ -465,7 +311,7 @@
 
 <clause id="_class_geosrsselenographiccrs" obligation="normative">
 <title>Class: geosrs:SelenographicCRS</title>
-<table id="_ec0d1e57-3156-cead-6d2f-b6714d2e211e"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<table id="_a89518ac-394d-b2ae-97c3-acdd9fc9e576"><colgroup><col width="50%"/><col width="50%"/></colgroup>
 <name>geosrs:SelenographicCRS</name>
 <tbody><tr><td valign="middle" align="left">URI</td>
 <td valign="middle" align="left"><link target="https://w3id.org/geosrs/srs/SelenographicCRS"/></td>
@@ -479,7 +325,7 @@
 
 <clause id="_class_geosrsreferencesystem" obligation="normative">
 <title>Class: geosrs:ReferenceSystem</title>
-<table id="_372fe7d4-3ed9-a14a-5488-4532b25ee26b"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<table id="_a8289a62-51b2-5c6d-53b2-7c502cc4f2f6"><colgroup><col width="50%"/><col width="50%"/></colgroup>
 <name>geosrs:ReferenceSystem</name>
 <tbody><tr><td valign="middle" align="left">Type</td>
 <td valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#Class">owl:Class</link></td>
@@ -493,7 +339,7 @@
 
 <clause id="_class_geosrssinglecrs" obligation="normative">
 <title>Class: geosrs:SingleCRS</title>
-<table id="_e0e896d0-2ccb-5825-3f24-609d026f2194"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<table id="_6d89332f-ab68-cea1-780b-bfb753a09316"><colgroup><col width="50%"/><col width="50%"/></colgroup>
 <name>geosrs:SingleCRS</name>
 <tbody><tr><td valign="middle" align="left">Type</td>
 <td valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#Class">owl:Class</link></td>
@@ -509,7 +355,7 @@
 
 <clause id="_class_geosrsspatialreferencesystem" obligation="normative">
 <title>Class: geosrs:SpatialReferenceSystem</title>
-<table id="_b5cae0ec-6c42-8feb-b098-152ecd7f1545"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<table id="_8723a416-0dc3-dc34-4c07-a3882101839f"><colgroup><col width="50%"/><col width="50%"/></colgroup>
 <name>geosrs:SpatialReferenceSystem</name>
 <tbody><tr><td valign="middle" align="left">Type</td>
 <td valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#Class">owl:Class</link></td>
@@ -525,7 +371,7 @@
 
 <clause id="_class_geosrsspatioparametriccompoundcrs" obligation="normative">
 <title>Class: geosrs:SpatioParametricCompoundCRS</title>
-<table id="_fe4b17f1-0014-a3c0-ce49-cb8614beb164"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<table id="_e853dfdc-5703-c5ca-a5b9-d6f3f16f9b25"><colgroup><col width="50%"/><col width="50%"/></colgroup>
 <name>geosrs:SpatioParametricCompoundCRS</name>
 <tbody><tr><td valign="middle" align="left">URI</td>
 <td valign="middle" align="left"><link target="https://w3id.org/geosrs/srs/SpatioParametricCompoundCRS"/></td>
@@ -539,7 +385,7 @@
 
 <clause id="_class_geosrsspatioparametrictemporalcompoundcrs" obligation="normative">
 <title>Class: geosrs:SpatioParametricTemporalCompoundCRS</title>
-<table id="_e56281b1-8889-757f-5919-687f21b65fa0"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<table id="_72e34daf-adf6-79f2-833d-f23fa4df6fdc"><colgroup><col width="50%"/><col width="50%"/></colgroup>
 <name>geosrs:SpatioParametricTemporalCompoundCRS</name>
 <tbody><tr><td valign="middle" align="left">URI</td>
 <td valign="middle" align="left"><link target="https://w3id.org/geosrs/srs/SpatioParametricTemporalCompoundCRS"/></td>
@@ -553,7 +399,7 @@
 
 <clause id="_class_geosrsspatiotemporalcompoundcrs" obligation="normative">
 <title>Class: geosrs:SpatioTemporalCompoundCRS</title>
-<table id="_60713eb5-0610-9f41-9584-54343778227c"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<table id="_2bf2ef2b-2dfb-271a-deef-f5b4723bd5d1"><colgroup><col width="50%"/><col width="50%"/></colgroup>
 <name>geosrs:SpatioTemporalCompoundCRS</name>
 <tbody><tr><td valign="middle" align="left">URI</td>
 <td valign="middle" align="left"><link target="https://w3id.org/geosrs/srs/SpatioTemporalCompoundCRS"/></td>
@@ -567,7 +413,7 @@
 
 <clause id="_class_geosrsstaticcrs" obligation="normative">
 <title>Class: geosrs:StaticCRS</title>
-<table id="_89442162-bafd-bdbc-c7e4-d4454bf58200"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<table id="_2eb09349-f94b-7a2a-c3ba-96baf24b95ff"><colgroup><col width="50%"/><col width="50%"/></colgroup>
 <name>geosrs:StaticCRS</name>
 <tbody><tr><td valign="middle" align="left">URI</td>
 <td valign="middle" align="left"><link target="https://w3id.org/geosrs/srs/StaticCRS"/></td>
@@ -581,7 +427,7 @@
 
 <clause id="_class_geosrstemporalcrs" obligation="normative">
 <title>Class: geosrs:TemporalCRS</title>
-<table id="_be03c2f0-74c9-496f-e73b-4b5b43eab463"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<table id="_3d03e32a-7617-e478-7589-8291ef01459a"><colgroup><col width="50%"/><col width="50%"/></colgroup>
 <name>geosrs:TemporalCRS</name>
 <tbody><tr><td valign="middle" align="left">URI</td>
 <td valign="middle" align="left"><link target="https://w3id.org/geosrs/srs/TemporalCRS"/></td>
@@ -595,7 +441,7 @@
 
 <clause id="_class_geosrsverticalcrs" obligation="normative">
 <title>Class: geosrs:VerticalCRS</title>
-<table id="_a8562a3e-d215-38d2-1662-fc4e97e2247f"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<table id="_d2bf6900-f62a-2d24-643b-c5c67229299c"><colgroup><col width="50%"/><col width="50%"/></colgroup>
 <name>geosrs:VerticalCRS</name>
 <tbody><tr><td valign="middle" align="left">URI</td>
 <td valign="middle" align="left"><link target="https://w3id.org/geosrs/srs/VerticalCRS"/></td>
@@ -609,7 +455,7 @@
 
 <clause id="_class_geosrsextent" obligation="normative">
 <title>Class: geosrs:Extent</title>
-<table id="_2d70b74f-ed8f-a3d7-5456-309fb3b12e3c"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<table id="_0437d845-ceaf-d205-1e8a-85edab7fedfa"><colgroup><col width="50%"/><col width="50%"/></colgroup>
 <name>geosrs:Extent</name>
 <tbody><tr><td valign="middle" align="left">URI</td>
 <td valign="middle" align="left"><link target="https://w3id.org/geosrs/srs/Extent"/></td>
@@ -621,7 +467,7 @@
 
 <clause id="_class_geosrsgeographicboundingbox" obligation="normative">
 <title>Class: geosrs:GeographicBoundingBox</title>
-<table id="_b46df878-b4c5-a052-5aa0-4a7e979151cb"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<table id="_199e254e-b3a2-3cf3-3e52-5fd30a2f8ac0"><colgroup><col width="50%"/><col width="50%"/></colgroup>
 <name>geosrs:GeographicBoundingBox</name>
 <tbody><tr><td valign="middle" align="left">URI</td>
 <td valign="middle" align="left"><link target="https://w3id.org/geosrs/srs/GeographicBoundingBox"/></td>
@@ -633,7 +479,7 @@
 
 <clause id="_class_geosrsaxeslist" obligation="normative">
 <title>Class: geosrs:AxesList</title>
-<table id="_5e1813d1-e52d-2386-ea1f-8d76de0dafd4"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<table id="_e70505d0-c4e2-7326-8673-606e3b055de0"><colgroup><col width="50%"/><col width="50%"/></colgroup>
 <name>geosrs:AxesList</name>
 <tbody><tr><td valign="middle" align="left">URI</td>
 <td valign="middle" align="left"><link target="https://w3id.org/geosrs/srs/AxesList"/></td>
@@ -645,7 +491,7 @@
 
 <clause id="_class_geosrssinglecrslist" obligation="normative">
 <title>Class: geosrs:SingleCRSList</title>
-<table id="_55f0ebef-52fa-3985-0a5e-332ca56f4466"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<table id="_e0656206-1f85-48f8-2d77-79922cbe6469"><colgroup><col width="50%"/><col width="50%"/></colgroup>
 <name>geosrs:SingleCRSList</name>
 <tbody><tr><td valign="middle" align="left">URI</td>
 <td valign="middle" align="left"><link target="https://w3id.org/geosrs/srs/SingleCRSList"/></td>
@@ -657,7 +503,7 @@
 
 <clause id="_class_geosrscoordinateoperation" obligation="normative">
 <title>Class: geosrs:CoordinateOperation</title>
-<table id="_5c52a736-b9fb-5f7e-6c24-2c1ee41d5a8e"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<table id="_abd2d19b-f9a7-3f64-1231-6f553db5da12"><colgroup><col width="50%"/><col width="50%"/></colgroup>
 <name>geosrs:CoordinateOperation</name>
 <tbody><tr><td valign="middle" align="left">Type</td>
 <td valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#Class">owl:Class</link></td>
@@ -666,14 +512,14 @@
 </tr><tr><td valign="middle" align="left">Definition</td>
 <td valign="middle" align="left">Mathematical operation on coordinates, based on one-to-one relationship, that changes coordinates from one coordinate reference system to another. Cf. ISO 19111:2007:2007-07, part 11.1, table 42 and annex B.4.</td>
 </tr><tr><td valign="middle" align="left">Super-classes</td>
-<td valign="middle" align="left">CRS[CRS]</td>
+<td valign="middle" align="left">mapping[mapping]</td>
 </tr></tbody>
 </table>
 </clause>
 
 <clause id="_class_geosrssingleoperation" obligation="normative">
 <title>Class: geosrs:SingleOperation</title>
-<table id="_05760774-7be2-38de-f9d7-487732550578"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<table id="_7094b9e9-232a-4d8a-0c8a-e707de0046bc"><colgroup><col width="50%"/><col width="50%"/></colgroup>
 <name>geosrs:SingleOperation</name>
 <tbody><tr><td valign="middle" align="left">Type</td>
 <td valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#Class">owl:Class</link></td>
@@ -682,14 +528,14 @@
 </tr><tr><td valign="middle" align="left">Definition</td>
 <td valign="middle" align="left">A non concatenated coordinate operation. Cf. ISO 19111:2007:2007-07, table 43.</td>
 </tr><tr><td valign="middle" align="left">Super-classes</td>
-<td valign="middle" align="left">CRS[CRS]</td>
+<td valign="middle" align="left">mapping[mapping]</td>
 </tr></tbody>
 </table>
 </clause>
 
 <clause id="_class_geosrstransformation" obligation="normative">
 <title>Class: geosrs:Transformation</title>
-<table id="_dc8df6c8-178f-ca69-ceb9-d3944d2bc26f"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<table id="_7d4606f4-b162-eabc-6f33-c7c9cc63d0f7"><colgroup><col width="50%"/><col width="50%"/></colgroup>
 <name>geosrs:Transformation</name>
 <tbody><tr><td valign="middle" align="left">Type</td>
 <td valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#Class">owl:Class</link></td>
@@ -698,14 +544,14 @@
 </tr><tr><td valign="middle" align="left">Definition</td>
 <td valign="middle" align="left">Coordinate operation in which the two coordinate reference systems are based on different datums. Cf. ISO 19111:2007:2007-07, table 44.</td>
 </tr><tr><td valign="middle" align="left">Super-classes</td>
-<td valign="middle" align="left">CRS[CRS]</td>
+<td valign="middle" align="left">mapping[mapping]</td>
 </tr></tbody>
 </table>
 </clause>
 
 <clause id="_class_geosrsconversion" obligation="normative">
 <title>Class: geosrs:Conversion</title>
-<table id="_288206cd-9074-2c40-9e85-8cd628d7090c"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<table id="_b7b9d5f2-1053-2365-037c-5a0591d6b987"><colgroup><col width="50%"/><col width="50%"/></colgroup>
 <name>geosrs:Conversion</name>
 <tbody><tr><td valign="middle" align="left">Type</td>
 <td valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#Class">owl:Class</link></td>
@@ -714,14 +560,14 @@
 </tr><tr><td valign="middle" align="left">Definition</td>
 <td valign="middle" align="left">Coordinate operation in which both coordinate reference systems are based on the same datum. Cf. ISO 19111:2007:2007-07, table 45 and annex B.4.2.</td>
 </tr><tr><td valign="middle" align="left">Super-classes</td>
-<td valign="middle" align="left">CRS[CRS]</td>
+<td valign="middle" align="left">mapping[mapping]</td>
 </tr></tbody>
 </table>
 </clause>
 
 <clause id="_class_geosrsoperationmethod" obligation="normative">
 <title>Class: geosrs:OperationMethod</title>
-<table id="_5c6146ee-98ce-cf0a-1e8c-e56363abfe86"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<table id="_aac3ba96-60bb-c6c7-0f9f-fdd1b161ca44"><colgroup><col width="50%"/><col width="50%"/></colgroup>
 <name>geosrs:OperationMethod</name>
 <tbody><tr><td valign="middle" align="left">Type</td>
 <td valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#Class">owl:Class</link></td>
@@ -735,7 +581,7 @@
 
 <clause id="_class_geosrsoperationparameter" obligation="normative">
 <title>Class: geosrs:OperationParameter</title>
-<table id="_53cb938b-c5d8-8e9b-aaf7-6f69c23cd0e6"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<table id="_98ecf116-9212-526c-a0a2-c78565a041cd"><colgroup><col width="50%"/><col width="50%"/></colgroup>
 <name>geosrs:OperationParameter</name>
 <tbody><tr><td valign="middle" align="left">Type</td>
 <td valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#Class">owl:Class</link></td>
@@ -749,7 +595,7 @@
 
 <clause id="_class_geosrsoperationparametervalue" obligation="normative">
 <title>Class: geosrs:OperationParameterValue</title>
-<table id="_c8678e9a-60f1-edc3-3258-4f906b451ecc"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<table id="_3adced56-c32b-095d-5fb2-4c0c36bb89ae"><colgroup><col width="50%"/><col width="50%"/></colgroup>
 <name>geosrs:OperationParameterValue</name>
 <tbody><tr><td valign="middle" align="left">Type</td>
 <td valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#Class">owl:Class</link></td>
@@ -757,6 +603,160 @@
 <td valign="middle" align="left"><link target="https://w3id.org/geosrs/co/OperationParameterValue"/></td>
 </tr><tr><td valign="middle" align="left">Definition</td>
 <td valign="middle" align="left">Value of a parameter used by a method to perform an operation on coordinates. See ISO 19111:2007:2007-07, table 55.</td>
+</tr></tbody>
+</table>
+</clause>
+
+<clause id="_class_geosrscoordinatesystem" obligation="normative">
+<title>Class: geosrs:CoordinateSystem</title>
+<table id="_95cb09eb-e117-a57e-b3f7-f072289f5a86"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<name>geosrs:CoordinateSystem</name>
+<tbody><tr><td valign="middle" align="left">Type</td>
+<td valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#Class">owl:Class</link></td>
+</tr><tr><td valign="middle" align="left">URI</td>
+<td valign="middle" align="left"><link target="https://w3id.org/geosrs/cs/CoordinateSystem"/></td>
+</tr><tr><td valign="middle" align="left">Definition</td>
+<td valign="middle" align="left">Set of axes that spans a given coordinate space and of mathematical rules for specifying how coordinates are to be assigned to points. Cf. ISO 19111:2007:2007-07, part 9.2, table 17 and annex B.2.</td>
+</tr></tbody>
+</table>
+</clause>
+
+<clause id="_class_geosrscartesiancoordinatesystem" obligation="normative">
+<title>Class: geosrs:CartesianCoordinateSystem</title>
+<table id="_17b8fd1e-d85d-86df-ec45-13ba427bec6a"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<name>geosrs:CartesianCoordinateSystem</name>
+<tbody><tr><td valign="middle" align="left">Type</td>
+<td valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#Class">owl:Class</link></td>
+</tr><tr><td valign="middle" align="left">URI</td>
+<td valign="middle" align="left"><link target="https://w3id.org/geosrs/cs/CartesianCoordinateSystem"/></td>
+</tr><tr><td valign="middle" align="left">Definition</td>
+<td valign="middle" align="left">Coordinate system which gives the position of points relative to n mutually perpendicular axes. Cf. ISO 19111:2007:2007-07, tables 15 and 18.</td>
+</tr><tr><td valign="middle" align="left">Super-classes</td>
+<td valign="middle" align="left">mapping[mapping]</td>
+</tr></tbody>
+</table>
+</clause>
+
+<clause id="_class_geosrsellipsoidalcoordinatesystem" obligation="normative">
+<title>Class: geosrs:EllipsoidalCoordinateSystem</title>
+<table id="_885debb0-d14c-ce33-704c-b619327db42e"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<name>geosrs:EllipsoidalCoordinateSystem</name>
+<tbody><tr><td valign="middle" align="left">Type</td>
+<td valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#Class">owl:Class</link></td>
+</tr><tr><td valign="middle" align="left">URI</td>
+<td valign="middle" align="left"><link target="https://w3id.org/geosrs/cs/EllipsoidalCoordinateSystem"/></td>
+</tr><tr><td valign="middle" align="left">Definition</td>
+<td valign="middle" align="left">Coordinate system which gives the position is specified by geodetic latitude, geodetic longitude and (in the three-dimensional case) ellipsoidal height. Cf. ISO 19111:2007:2007-07, tables 15 and 20.</td>
+</tr><tr><td valign="middle" align="left">Super-classes</td>
+<td valign="middle" align="left">mapping[mapping]</td>
+</tr></tbody>
+</table>
+</clause>
+
+<clause id="_class_geosrslinearcoordinatesystem" obligation="normative">
+<title>Class: geosrs:LinearCoordinateSystem</title>
+<table id="_0833ea50-5116-461d-ab3e-ca35c1b97ec2"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<name>geosrs:LinearCoordinateSystem</name>
+<tbody><tr><td valign="middle" align="left">Type</td>
+<td valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#Class">owl:Class</link></td>
+</tr><tr><td valign="middle" align="left">URI</td>
+<td valign="middle" align="left"><link target="https://w3id.org/geosrs/cs/LinearCoordinateSystem"/></td>
+</tr><tr><td valign="middle" align="left">Definition</td>
+<td valign="middle" align="left">One-dimensional coordinate system in which a linear feature forms the axis.</td>
+</tr></tbody>
+</table>
+</clause>
+
+<clause id="_class_geosrsordinalcoordinatesystem" obligation="normative">
+<title>Class: geosrs:OrdinalCoordinateSystem</title>
+<table id="_7ccac6af-5ef4-4163-ac57-98ed98c357c5"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<name>geosrs:OrdinalCoordinateSystem</name>
+<tbody><tr><td valign="middle" align="left">Type</td>
+<td valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#Class">owl:Class</link></td>
+</tr><tr><td valign="middle" align="left">URI</td>
+<td valign="middle" align="left"><link target="https://w3id.org/geosrs/cs/OrdinalCoordinateSystem"/></td>
+</tr><tr><td valign="middle" align="left">Definition</td>
+<td valign="middle" align="left">n-dimensional coordinate system in which every axis uses integers.</td>
+</tr><tr><td valign="middle" align="left">Super-classes</td>
+<td valign="middle" align="left"><link target="https://w3id.org/geosrs/cs/GeodeticCoordinateSystem">GeodeticCoordinateSystem</link></td>
+</tr></tbody>
+</table>
+</clause>
+
+<clause id="_class_geosrsparametriccoordinatesystem" obligation="normative">
+<title>Class: geosrs:ParametricCoordinateSystem</title>
+<table id="_9af435f0-bf09-3ac4-5475-8a6b1c9826f5"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<name>geosrs:ParametricCoordinateSystem</name>
+<tbody><tr><td valign="middle" align="left">Type</td>
+<td valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#Class">owl:Class</link></td>
+</tr><tr><td valign="middle" align="left">URI</td>
+<td valign="middle" align="left"><link target="https://w3id.org/geosrs/cs/ParametricCoordinateSystem"/></td>
+</tr><tr><td valign="middle" align="left">Definition</td>
+<td valign="middle" align="left">One-dimensional coordinate system where the axis units are parameter values which are not inherently spatial.</td>
+</tr><tr><td valign="middle" align="left">Super-classes</td>
+<td valign="middle" align="left"><link target="https://w3id.org/geosrs/cs/GeodeticCoordinateSystem">GeodeticCoordinateSystem</link></td>
+</tr></tbody>
+</table>
+</clause>
+
+<clause id="_class_geosrspolarcoordinatesystem" obligation="normative">
+<title>Class: geosrs:PolarCoordinateSystem</title>
+<table id="_44453a22-b852-afe7-84ef-016b2d64b567"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<name>geosrs:PolarCoordinateSystem</name>
+<tbody><tr><td valign="middle" align="left">Type</td>
+<td valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#Class">owl:Class</link></td>
+</tr><tr><td valign="middle" align="left">URI</td>
+<td valign="middle" align="left"><link target="https://w3id.org/geosrs/cs/PolarCoordinateSystem"/></td>
+</tr><tr><td valign="middle" align="left">Definition</td>
+<td valign="middle" align="left">Two-dimensional coordinate system in Euclidean space in which position is specified by one distance coordinate and one angular coordinate.</td>
+</tr><tr><td valign="middle" align="left">Super-classes</td>
+<td valign="middle" align="left"><link target="https://w3id.org/geosrs/cs/GeodeticCoordinateSystem">GeodeticCoordinateSystem</link></td>
+</tr></tbody>
+</table>
+</clause>
+
+<clause id="_class_geosrssphericalcoordinatesystem" obligation="normative">
+<title>Class: geosrs:SphericalCoordinateSystem</title>
+<table id="_73e39cc1-dd09-75a2-5029-d5eedc51ef8c"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<name>geosrs:SphericalCoordinateSystem</name>
+<tbody><tr><td valign="middle" align="left">Type</td>
+<td valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#Class">owl:Class</link></td>
+</tr><tr><td valign="middle" align="left">URI</td>
+<td valign="middle" align="left"><link target="https://w3id.org/geosrs/cs/SphericalCoordinateSystem"/></td>
+</tr><tr><td valign="middle" align="left">Definition</td>
+<td valign="middle" align="left">Three-dimensional coordinate system in Euclidean space with one distance measured from the origin and two angular coordinates</td>
+</tr><tr><td valign="middle" align="left">Super-classes</td>
+<td valign="middle" align="left"><link target="https://w3id.org/geosrs/cs/GeodeticCoordinateSystem">GeodeticCoordinateSystem</link></td>
+</tr></tbody>
+</table>
+</clause>
+
+<clause id="_class_geosrsverticalcoordinatesystem" obligation="normative">
+<title>Class: geosrs:VerticalCoordinateSystem</title>
+<table id="_5e65b813-5a15-cc34-360e-c63b73290bd8"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<name>geosrs:VerticalCoordinateSystem</name>
+<tbody><tr><td valign="middle" align="left">Type</td>
+<td valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#Class">owl:Class</link></td>
+</tr><tr><td valign="middle" align="left">URI</td>
+<td valign="middle" align="left"><link target="https://w3id.org/geosrs/cs/VerticalCoordinateSystem"/></td>
+</tr><tr><td valign="middle" align="left">Definition</td>
+<td valign="middle" align="left">One-dimensional coordinate system used for gravity related height or depth measurements. Cf. ISO 19111:2007:2007-07, tables 15 and 25.</td>
+</tr><tr><td valign="middle" align="left">Super-classes</td>
+<td valign="middle" align="left"><link target="https://w3id.org/geosrs/cs/3DCoordinateSystem">3DCoordinateSystem</link></td>
+</tr></tbody>
+</table>
+</clause>
+
+<clause id="_class_geosrscoordinatesystemaxis" obligation="normative">
+<title>Class: geosrs:CoordinateSystemAxis</title>
+<table id="_bf357602-eba8-f7f7-f32c-671db6bbcc5e"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<name>geosrs:CoordinateSystemAxis</name>
+<tbody><tr><td valign="middle" align="left">Type</td>
+<td valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#Class">owl:Class</link></td>
+</tr><tr><td valign="middle" align="left">URI</td>
+<td valign="middle" align="left"><link target="https://w3id.org/geosrs/cs/CoordinateSystemAxis"/></td>
+</tr><tr><td valign="middle" align="left">Definition</td>
+<td valign="middle" align="left">Axis relative to which a coordinate of a point is specified in a coordinate system. See ISO 19111:2007:2007-07, part 9.3, table 27 and annex B.2.2.</td>
 </tr></tbody>
 </table>
 </clause>
@@ -833,45 +833,9 @@
 </table>
 </clause>
 
-<clause id="_property_geosrssemimajoraxis" obligation="normative">
-<title>Property: geosrs:semiMajorAxis</title>
-<table id="_fce1836b-d4ba-850a-8a1f-d283275380b2"><colgroup><col width="50%"/><col width="50%"/></colgroup>
-<name>geosrs:semiMajorAxis</name>
-<tbody><tr><td valign="middle" align="left">URI</td>
-<td valign="middle" align="left"><link target="https://w3id.org/geosrs/semiMajorAxis"/></td>
-</tr><tr><td valign="middle" align="left">Type</td>
-<td valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#DatatypeProperty">owl:DatatypeProperty</link></td>
-</tr><tr><td valign="middle" align="left">Definition</td>
-<td valign="middle" align="left">Indicates the length of the semi major axis of an ellipsoid. Cf. ISO 19111:2007:2007-07, table 36, attribute length of semi-major axis.</td>
-</tr><tr><td valign="middle" align="left">Range</td>
-<td valign="middle" align="left">xsd:double[xsd:double]</td>
-</tr><tr><td valign="middle" align="left">Domain</td>
-<td valign="middle" align="left"><link target="https://w3id.org/geosrs/Ellipsoid">Ellipsoid</link></td>
-</tr></tbody>
-</table>
-</clause>
-
-<clause id="_property_geosrssemiminoraxis" obligation="normative">
-<title>Property: geosrs:semiMinorAxis</title>
-<table id="_794c8f81-5429-7133-b6b3-12c240826592"><colgroup><col width="50%"/><col width="50%"/></colgroup>
-<name>geosrs:semiMinorAxis</name>
-<tbody><tr><td valign="middle" align="left">URI</td>
-<td valign="middle" align="left"><link target="https://w3id.org/geosrs/semiMinorAxis"/></td>
-</tr><tr><td valign="middle" align="left">Type</td>
-<td valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#DatatypeProperty">owl:DatatypeProperty</link></td>
-</tr><tr><td valign="middle" align="left">Definition</td>
-<td valign="middle" align="left">Indicates the length of the semi minor axis of an ellipsoid. Cf. ISO 19111:2007:2007-07, table 37, attribute length of semi-minor axis.</td>
-</tr><tr><td valign="middle" align="left">Range</td>
-<td valign="middle" align="left">xsd:double[xsd:double]</td>
-</tr><tr><td valign="middle" align="left">Domain</td>
-<td valign="middle" align="left"><link target="https://w3id.org/geosrs/Ellipsoid">Ellipsoid</link></td>
-</tr></tbody>
-</table>
-</clause>
-
 <clause id="_property_geosrsaxis" obligation="normative">
 <title>Property: geosrs:axis</title>
-<table id="_9f6cb2a1-4bf7-c7b9-8b33-85df92029bbf"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<table id="_d65d347e-6861-4f6c-427d-4cbb5b6502b0"><colgroup><col width="50%"/><col width="50%"/></colgroup>
 <name>geosrs:axis</name>
 <tbody><tr><td valign="middle" align="left">URI</td>
 <td valign="middle" align="left"><link target="https://w3id.org/geosrs/axis"/></td>
@@ -889,7 +853,7 @@
 
 <clause id="_property_geosrsbasecrs" obligation="normative">
 <title>Property: geosrs:baseCRS</title>
-<table id="_70b204d9-61f2-141b-8e7c-7a0d60769994"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<table id="_6ada706a-27fb-6039-e259-33132e8e7a9c"><colgroup><col width="50%"/><col width="50%"/></colgroup>
 <name>geosrs:baseCRS</name>
 <tbody><tr><td valign="middle" align="left">URI</td>
 <td valign="middle" align="left"><link target="https://w3id.org/geosrs/baseCRS"/></td>
@@ -907,7 +871,7 @@
 
 <clause id="_property_geosrscoordinatesystem" obligation="normative">
 <title>Property: geosrs:coordinateSystem</title>
-<table id="_157152c1-537c-192e-842b-1df916fd86e3"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<table id="_6cde0c97-dc51-a44c-bc19-cd39bca3d4d4"><colgroup><col width="50%"/><col width="50%"/></colgroup>
 <name>geosrs:coordinateSystem</name>
 <tbody><tr><td valign="middle" align="left">URI</td>
 <td valign="middle" align="left"><link target="https://w3id.org/geosrs/coordinateSystem"/></td>
@@ -925,7 +889,7 @@
 
 <clause id="_property_geosrsdatum" obligation="normative">
 <title>Property: geosrs:datum</title>
-<table id="_a81bb3e9-cb06-70bb-ce56-43d5e5dbbe80"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<table id="_c03dc418-ec55-c2be-01fc-44b6e1baeab3"><colgroup><col width="50%"/><col width="50%"/></colgroup>
 <name>geosrs:datum</name>
 <tbody><tr><td valign="middle" align="left">URI</td>
 <td valign="middle" align="left"><link target="https://w3id.org/geosrs/datum"/></td>
@@ -943,7 +907,7 @@
 
 <clause id="_property_geosrsdomainofvalidity" obligation="normative">
 <title>Property: geosrs:domainOfValidity</title>
-<table id="_6f017e03-f83e-dcd6-b30d-1da2694d167a"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<table id="_bd381579-efab-362d-9555-f6cb6aa6a75b"><colgroup><col width="50%"/><col width="50%"/></colgroup>
 <name>geosrs:domainOfValidity</name>
 <tbody><tr><td valign="middle" align="left">URI</td>
 <td valign="middle" align="left"><link target="https://w3id.org/geosrs/domainOfValidity"/></td>
@@ -961,7 +925,7 @@
 
 <clause id="_property_geosrsellipsoid" obligation="normative">
 <title>Property: geosrs:ellipsoid</title>
-<table id="_56a2c99d-ac6e-defc-782d-1fd299f578ee"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<table id="_4dccb19e-7ed4-79e9-f0d2-c1672e76db52"><colgroup><col width="50%"/><col width="50%"/></colgroup>
 <name>geosrs:ellipsoid</name>
 <tbody><tr><td valign="middle" align="left">URI</td>
 <td valign="middle" align="left"><link target="https://w3id.org/geosrs/ellipsoid"/></td>
@@ -979,7 +943,7 @@
 
 <clause id="_property_geosrssourcecrs" obligation="normative">
 <title>Property: geosrs:sourceCRS</title>
-<table id="_9822437c-de40-f621-dafa-eec12453e670"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<table id="_8e457f8a-63ad-7e9d-518d-556b1062fdb8"><colgroup><col width="50%"/><col width="50%"/></colgroup>
 <name>geosrs:sourceCRS</name>
 <tbody><tr><td valign="middle" align="left">URI</td>
 <td valign="middle" align="left"><link target="https://w3id.org/geosrs/sourceCRS"/></td>
@@ -997,7 +961,7 @@
 
 <clause id="_property_geosrstargetcrs" obligation="normative">
 <title>Property: geosrs:targetCRS</title>
-<table id="_25daa994-a0e6-e70e-81b4-86e272efe0f6"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<table id="_c72577a4-c6bd-9533-a18d-e2ec2c606a19"><colgroup><col width="50%"/><col width="50%"/></colgroup>
 <name>geosrs:targetCRS</name>
 <tbody><tr><td valign="middle" align="left">URI</td>
 <td valign="middle" align="left"><link target="https://w3id.org/geosrs/targetCRS"/></td>
@@ -1012,47 +976,51 @@
 </tr></tbody>
 </table>
 </clause>
+
+<clause id="_property_geosrssemimajoraxis" obligation="normative">
+<title>Property: geosrs:semiMajorAxis</title>
+<table id="_bdc53f78-cd28-9a5a-1ab7-150b6b1f66f8"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<name>geosrs:semiMajorAxis</name>
+<tbody><tr><td valign="middle" align="left">URI</td>
+<td valign="middle" align="left"><link target="https://w3id.org/geosrs/semiMajorAxis"/></td>
+</tr><tr><td valign="middle" align="left">Type</td>
+<td valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#DatatypeProperty">owl:DatatypeProperty</link></td>
+</tr><tr><td valign="middle" align="left">Definition</td>
+<td valign="middle" align="left">Indicates the length of the semi major axis of an ellipsoid. Cf. ISO 19111:2007:2007-07, table 36, attribute length of semi-major axis.</td>
+</tr><tr><td valign="middle" align="left">Range</td>
+<td valign="middle" align="left">xsd:double[xsd:double]</td>
+</tr><tr><td valign="middle" align="left">Domain</td>
+<td valign="middle" align="left"><link target="https://w3id.org/geosrs/Ellipsoid">Ellipsoid</link></td>
+</tr></tbody>
+</table>
+</clause>
+
+<clause id="_property_geosrssemiminoraxis" obligation="normative">
+<title>Property: geosrs:semiMinorAxis</title>
+<table id="_42b9542e-a9ab-af1a-57c8-8acb6b4300ef"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<name>geosrs:semiMinorAxis</name>
+<tbody><tr><td valign="middle" align="left">URI</td>
+<td valign="middle" align="left"><link target="https://w3id.org/geosrs/semiMinorAxis"/></td>
+</tr><tr><td valign="middle" align="left">Type</td>
+<td valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#DatatypeProperty">owl:DatatypeProperty</link></td>
+</tr><tr><td valign="middle" align="left">Definition</td>
+<td valign="middle" align="left">Indicates the length of the semi minor axis of an ellipsoid. Cf. ISO 19111:2007:2007-07, table 37, attribute length of semi-minor axis.</td>
+</tr><tr><td valign="middle" align="left">Range</td>
+<td valign="middle" align="left">xsd:double[xsd:double]</td>
+</tr><tr><td valign="middle" align="left">Domain</td>
+<td valign="middle" align="left"><link target="https://w3id.org/geosrs/Ellipsoid">Ellipsoid</link></td>
+</tr></tbody>
+</table>
+</clause>
 </clause>
 
 <clause id="_coordinate_operation_module" obligation="normative">
 <title>Coordinate Operation Module</title>
 <p id="co">This clause establishes the <strong>Co</strong> Requirements class, with IRI <tt>/req/co</tt>, which has a corresponding Conformance Class, <strong>Co</strong>, with IRI <tt>/conf/co</tt>.</p>
 
-<clause id="_property_geosrsderivingconversion" obligation="normative">
-<title>Property: geosrs:derivingConversion</title>
-<table id="_ec863368-ea8e-3816-9fd8-76078313b41c"><colgroup><col width="50%"/><col width="50%"/></colgroup>
-<name>geosrs:derivingConversion</name>
-<tbody><tr><td valign="middle" align="left">URI</td>
-<td valign="middle" align="left"><link target="https://w3id.org/geosrs/co/derivingConversion"/></td>
-</tr><tr><td valign="middle" align="left">Type</td>
-<td valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#ObjectProperty">owl:ObjectProperty</link></td>
-</tr><tr><td valign="middle" align="left">Range</td>
-<td valign="middle" align="left"><link target="https://w3id.org/geosrs/CRS">CRS</link></td>
-</tr><tr><td valign="middle" align="left">Domain</td>
-<td valign="middle" align="left"><link target="https://w3id.org/geosrs/CRS">CRS</link></td>
-</tr></tbody>
-</table>
-</clause>
-
-<clause id="_property_geosrsmethod" obligation="normative">
-<title>Property: geosrs:method</title>
-<table id="_8161b0ad-cc8b-befb-7486-2f71d9e0c4e8"><colgroup><col width="50%"/><col width="50%"/></colgroup>
-<name>geosrs:method</name>
-<tbody><tr><td valign="middle" align="left">URI</td>
-<td valign="middle" align="left"><link target="https://w3id.org/geosrs/co/method"/></td>
-</tr><tr><td valign="middle" align="left">Type</td>
-<td valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#ObjectProperty">owl:ObjectProperty</link></td>
-</tr><tr><td valign="middle" align="left">Range</td>
-<td valign="middle" align="left"><link target="https://w3id.org/geosrs/CoordinateOperation">CoordinateOperation</link></td>
-</tr><tr><td valign="middle" align="left">Domain</td>
-<td valign="middle" align="left"><link target="https://w3id.org/geosrs/CRS">CRS</link></td>
-</tr></tbody>
-</table>
-</clause>
-
 <clause id="_property_geosrsparameter" obligation="normative">
 <title>Property: geosrs:parameter</title>
-<table id="_0b09b466-cc5a-32fe-c575-6a98d35ea1a0"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<table id="_60ad258e-8c31-1ae5-ecba-94726a369f48"><colgroup><col width="50%"/><col width="50%"/></colgroup>
 <name>geosrs:parameter</name>
 <tbody><tr><td valign="middle" align="left">URI</td>
 <td valign="middle" align="left"><link target="https://w3id.org/geosrs/co/parameter"/></td>
@@ -1463,27 +1431,9 @@
 </table>
 </clause>
 
-<clause id="_property_geosrsaxisdirection" obligation="normative">
-<title>Property: geosrs:axisDirection</title>
-<table id="_a7ee9f73-4ca8-4a3d-7fe7-ffa8f40cfadf"><colgroup><col width="50%"/><col width="50%"/></colgroup>
-<name>geosrs:axisDirection</name>
-<tbody><tr><td valign="middle" align="left">URI</td>
-<td valign="middle" align="left"><link target="https://w3id.org/geosrs/cs/axisDirection"/></td>
-</tr><tr><td valign="middle" align="left">Type</td>
-<td valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#ObjectProperty">owl:ObjectProperty</link></td>
-</tr><tr><td valign="middle" align="left">Definition</td>
-<td valign="middle" align="left">The direction of an axis. Cf. ISO 19111:2007:2007-07, table 27, attribute coordinate system axis direction.</td>
-</tr><tr><td valign="middle" align="left">Range</td>
-<td valign="middle" align="left"><link target="https://w3id.org/geosrs/AxisDirection">AxisDirection</link></td>
-</tr><tr><td valign="middle" align="left">Domain</td>
-<td valign="middle" align="left"><link target="https://w3id.org/geosrs/Axis">Axis</link></td>
-</tr></tbody>
-</table>
-</clause>
-
 <clause id="_property_geosrscylindricalcs" obligation="normative">
 <title>Property: geosrs:cylindricalCS</title>
-<table id="_d312d74f-445e-c614-8346-f422313ac977"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<table id="_1337d6f1-01d4-d152-a95e-91603450b0bb"><colgroup><col width="50%"/><col width="50%"/></colgroup>
 <name>geosrs:cylindricalCS</name>
 <tbody><tr><td valign="middle" align="left">URI</td>
 <td valign="middle" align="left"><link target="https://w3id.org/geosrs/cs/cylindricalCS"/></td>
@@ -1624,24 +1574,6 @@
 <td valign="middle" align="left">xsd:double[xsd:double]</td>
 </tr><tr><td valign="middle" align="left">Domain</td>
 <td valign="middle" align="left"><link target="https://w3id.org/geosrs/Ellipsoid">Ellipsoid</link></td>
-</tr></tbody>
-</table>
-</clause>
-
-<clause id="_property_geosrsprimemeridian" obligation="normative">
-<title>Property: geosrs:primeMeridian</title>
-<table id="_7fc65f9d-79e8-6167-c845-815d5031606e"><colgroup><col width="50%"/><col width="50%"/></colgroup>
-<name>geosrs:primeMeridian</name>
-<tbody><tr><td valign="middle" align="left">URI</td>
-<td valign="middle" align="left"><link target="https://w3id.org/geosrs/datum/primeMeridian"/></td>
-</tr><tr><td valign="middle" align="left">Type</td>
-<td valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#ObjectProperty">owl:ObjectProperty</link></td>
-</tr><tr><td valign="middle" align="left">Definition</td>
-<td valign="middle" align="left">The prime meridian used by a geodetic datum. Cf. ISO 19111:2007:2007-07, table 34, association role primeMeridian.</td>
-</tr><tr><td valign="middle" align="left">Range</td>
-<td valign="middle" align="left"><link target="https://w3id.org/geosrs/PrimeMeridian">PrimeMeridian</link></td>
-</tr><tr><td valign="middle" align="left">Domain</td>
-<td valign="middle" align="left"><link target="https://w3id.org/geosrs/Datum">Datum</link></td>
 </tr></tbody>
 </table>
 </clause>
@@ -5264,7 +5196,7 @@ Performance Distributed Computing, pp. 181–184. IEEE Press, New York (2001)</f
 <title>Bibliography</title>
 <note id="_155a708c-216d-5804-50a7-1a2723619850"><p id="_9702179a-71de-0d11-425d-60a89a0feed8">The TC has approved Springer LNCS as the official document citation type. Springer LNCS is widely used in technical and computer science journals and other publications For citations in the text please use square brackets and consecutive numbers: [1], [2], [3] Actual References: [n] Journal: Author Surname, A.: Title. Publication Title. Volume number, Issue number, Pages Used (Year Published)</p>
 </note><bibitem id="iso19142" type="standard" schema-version="v1.2.9">
-  <fetched>2025-04-21</fetched>
+  <fetched>2025-05-02</fetched>
   
 <title type="title-intro" format="text/plain" language="en" script="Latn">Geographic information</title>
 
@@ -5311,7 +5243,7 @@ Performance Distributed Computing, pp. 181–184. IEEE Press, New York (2001)</f
   </copyright>
   <relation type="instanceOf">
     <bibitem type="standard">
-      <fetched>2025-04-21</fetched>
+      <fetched>2025-05-02</fetched>
       
 <title type="title-intro" format="text/plain" language="en" script="Latn">Geographic information</title>
 

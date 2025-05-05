@@ -55,10 +55,10 @@
                     rdfs:label "Lambert Conic Conformal (2SP)" ] ;
             geosrs:parameter [ a geosrs:OperationParameterValue ;
                     geosrs:parameter [ a geosrs:OperationParameter ;
-                            rdfs:label "Northing at false origin" ;
-                            dc:identifier "EPSG:8827" ],
-                        [ rdf:value [ om:hasUnit om:metre ;
-                                    rdf:value 6600000 ] ] ],
+                            rdfs:label "Longitude of false origin" ;
+                            dc:identifier "EPSG:8822" ],
+                        [ rdf:value [ om:hasUnit om:degree ;
+                                    rdf:value 3 ] ] ],
                 [ a geosrs:OperationParameterValue ;
                     geosrs:parameter [ rdf:value [ om:hasUnit om:degree ;
                                     rdf:value 44 ] ],
@@ -66,17 +66,17 @@
                             rdfs:label "Latitude of 2nd standard parallel" ;
                             dc:identifier "EPSG:8824" ] ],
                 [ a geosrs:OperationParameterValue ;
-                    geosrs:parameter [ rdf:value [ om:hasUnit om:degree ;
-                                    rdf:value 3 ] ],
+                    geosrs:parameter [ rdf:value [ om:hasUnit om:metre ;
+                                    rdf:value 700000 ] ],
                         [ a geosrs:OperationParameter ;
-                            rdfs:label "Longitude of false origin" ;
-                            dc:identifier "EPSG:8822" ] ],
-                [ a geosrs:OperationParameterValue ;
-                    geosrs:parameter [ a geosrs:OperationParameter ;
                             rdfs:label "Easting at false origin" ;
-                            dc:identifier "EPSG:8826" ],
-                        [ rdf:value [ om:hasUnit om:metre ;
-                                    rdf:value 700000 ] ] ],
+                            dc:identifier "EPSG:8826" ] ],
+                [ a geosrs:OperationParameterValue ;
+                    geosrs:parameter [ rdf:value [ om:hasUnit om:degree ;
+                                    rdf:value 4.65e+01 ] ],
+                        [ a geosrs:OperationParameter ;
+                            rdfs:label "Latitude of false origin" ;
+                            dc:identifier "EPSG:8821" ] ],
                 [ a geosrs:OperationParameterValue ;
                     geosrs:parameter [ a geosrs:OperationParameter ;
                             rdfs:label "Latitude of 1st standard parallel" ;
@@ -84,11 +84,11 @@
                         [ rdf:value [ om:hasUnit om:degree ;
                                     rdf:value 49 ] ] ],
                 [ a geosrs:OperationParameterValue ;
-                    geosrs:parameter [ rdf:value [ om:hasUnit om:degree ;
-                                    rdf:value 4.65e+01 ] ],
+                    geosrs:parameter [ rdf:value [ om:hasUnit om:metre ;
+                                    rdf:value 6600000 ] ],
                         [ a geosrs:OperationParameter ;
-                            rdfs:label "Latitude of false origin" ;
-                            dc:identifier "EPSG:8821" ] ] ] ;
+                            rdfs:label "Northing at false origin" ;
+                            dc:identifier "EPSG:8827" ] ] ] ;
     geosrs:domainOfValidity [ a geosrs_srs:AreaOfUse ;
             skos:scopeNote "Engineering survey, topographic mapping." ;
             geosrs:domainOfValidity [ geo:hasBoundingBox [ a geosrs:GeographicBoundingBox ] ] ] .

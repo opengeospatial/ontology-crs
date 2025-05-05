@@ -48,11 +48,13 @@ geosrs:LinearCoordinateSystem a owl:Class ;
     skos:definition "One-dimensional coordinate system in which a linear feature forms the axis."@en .
 
 geosrs:OperationParameter a owl:Class ;
-    rdfs:label "operation parameter"@en ;
-    skos:definition "Parameter used by a method to perform an operation on coordinates. See ISO 19111:2007:2007-07, table 52 and annex B.4.5."@en .
+    rdfs:label "Operation Parameter"@en ;
+    rdfs:subClassOf geosrs:GeneralOperationParameter ;
+    skos:definition "Parameter used by a method to perform an operation on coordinates. Note: Most parameter values are numeric, but other types of parameter values are possible. See ISO 19111:2007:2007-07, table 52 and annex B.4.5."@en .
 
 geosrs:OperationParameterValue a owl:Class ;
-    rdfs:label "operation parameter value"@en ;
+    rdfs:label "Operation Parameter Value"@en ;
+    rdfs:subClassOf geosrs:GeneralParameterValue ;
     skos:definition "Value of a parameter used by a method to perform an operation on coordinates. See ISO 19111:2007:2007-07, table 55."@en .
 
 geosrs:ParametricCoordinateSystem a owl:Class ;
@@ -75,7 +77,7 @@ geosrs:ProjectedCRS a owl:Class ;
     skos:definition "Coordinate Reference System derived from a two-dimensional geodetic coordinate reference system by applying a map projection. Cf. ISO 19111:2007:2007-07, part 8.2.3.b, table 11 and annex B.1.2.3."@en .
 
 geosrs:SingleOperation a owl:Class ;
-    rdfs:label "single operation"@en ;
+    rdfs:label "Single Operation"@en ;
     rdfs:subClassOf geosrs:CoordinateOperation ;
     skos:definition "A non concatenated coordinate operation. Cf. ISO 19111:2007:2007-07, table 43."@en .
 
@@ -85,7 +87,7 @@ geosrs:SphericalCoordinateSystem a owl:Class ;
     skos:definition "Three-dimensional coordinate system in Euclidean space with one distance measured from the origin and two angular coordinates"@en .
 
 geosrs:Transformation a owl:Class ;
-    rdfs:label "transformation"@en ;
+    rdfs:label "Transformation"@en ;
     rdfs:subClassOf geosrs:Conversion ;
     skos:definition "Coordinate operation in which the two coordinate reference systems are based on different datums. Cf. ISO 19111:2007:2007-07, table 44."@en .
 
@@ -165,8 +167,16 @@ geosrs:Conversion a owl:Class ;
     rdfs:subClassOf geosrs:CoordinateOperation ;
     skos:definition "Coordinate operation in which both coordinate reference systems are based on the same datum. Cf. ISO 19111:2007:2007-07, table 45 and annex B.4.2."@en .
 
+geosrs:GeneralOperationParameter a owl:Class ;
+    rdfs:label "General Operation Parameter"@en ;
+    skos:definition "Definition of a parameter or group of parameters used by a coordinate operation method."@en .
+
+geosrs:GeneralParameterValue a owl:Class ;
+    rdfs:label "General Parameter Value"@en ;
+    skos:definition "Parameter value or group of parameter values"@en .
+
 geosrs:OperationMethod a owl:Class ;
-    rdfs:label "operation method"@en ;
+    rdfs:label "Operation Method"@en ;
     skos:definition "Method used to perform an operation on coordinates. See ISO 19111:2007:2007-07, table 48 and annex B.4.5."@en .
 
 geosrs:OrdinalCoordinateSystem a owl:Class ;
@@ -189,7 +199,7 @@ geosrs:SpatialReferenceSystem a owl:Class ;
     skos:definition "A spatial reference system (SRS) is a system for establishing spatial position. A spatial reference system can use geographic identifiers (place names, for example), coordinates (in which case it is a coordinate reference system), or identifiers with structured geometry (in which case it is a discrete global grid system)."@en .
 
 geosrs:CoordinateOperation a owl:Class ;
-    rdfs:label "coordinate operation"@en ;
+    rdfs:label "Coordinate Operation"@en ;
     rdfs:subClassOf geosrs:OperationMethod ;
     skos:definition "Mathematical operation on coordinates, based on one-to-one relationship, that changes coordinates from one coordinate reference system to another. Cf. ISO 19111:2007:2007-07, part 11.1, table 42 and annex B.4."@en .
 

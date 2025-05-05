@@ -243,20 +243,22 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
       <li><a href="#CoordinateReferenceSystem">Coordinate Reference System</a></li>
       <li><a href="#CartesianCoordinateSystem">Cartesian Coordinate System</a></li>
       <li><a href="#Conversion">Conversion</a></li>
-      <li><a href="#coordinateoperation">coordinate operation</a></li>
+      <li><a href="#CoordinateOperation">Coordinate Operation</a></li>
       <li><a href="#CoordinateSystem">Coordinate System</a></li>
       <li><a href="#CoordinateSystemAxis">Coordinate System Axis</a></li>
       <li><a href="#Datum">Datum</a></li>
       <li><a href="#Ellipsoid">Ellipsoid</a></li>
       <li><a href="#EllipsoidalCoordinateSystem">Ellipsoidal Coordinate System</a></li>
       <li><a href="#EngineeringCoordinateReferenceSystem">Engineering Coordinate Reference System</a></li>
+      <li><a href="#GeneralOperationParameter">General Operation Parameter</a></li>
+      <li><a href="#GeneralParameterValue">General Parameter Value</a></li>
       <li><a href="#GeodeticCoordinateReferenceSystem">Geodetic Coordinate Reference System</a></li>
       <li><a href="#GeodeticDatum">Geodetic Datum</a></li>
       <li><a href="#GeographicCoordinateReferenceSystem">Geographic Coordinate Reference System</a></li>
       <li><a href="#LinearCoordinateSystem">Linear Coordinate System</a></li>
-      <li><a href="#operationmethod">operation method</a></li>
-      <li><a href="#operationparameter">operation parameter</a></li>
-      <li><a href="#operationparametervalue">operation parameter value</a></li>
+      <li><a href="#OperationMethod">Operation Method</a></li>
+      <li><a href="#OperationParameter">Operation Parameter</a></li>
+      <li><a href="#OperationParameterValue">Operation Parameter Value</a></li>
       <li><a href="#OrdinalCoordinateSystem">Ordinal Coordinate System</a></li>
       <li><a href="#ParametricCoordinateSystem">Parametric Coordinate System</a></li>
       <li><a href="#PolarCoordinateSystem">Polar Coordinate System</a></li>
@@ -264,10 +266,10 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
       <li><a href="#ProjectedCoordinateReferenceSystem">Projected Coordinate Reference System</a></li>
       <li><a href="#ReferenceSystem">Reference System</a></li>
       <li><a href="#SingleCoordinateReferenceSystem">Single Coordinate Reference System</a></li>
-      <li><a href="#singleoperation">single operation</a></li>
+      <li><a href="#SingleOperation">Single Operation</a></li>
       <li><a href="#SpatialReferenceSystem">Spatial Reference System</a></li>
       <li><a href="#SphericalCoordinateSystem">Spherical Coordinate System</a></li>
-      <li><a href="#transformation">transformation</a></li>
+      <li><a href="#Transformation">Transformation</a></li>
       <li><a href="#VerticalCoordinateSystem">Vertical Coordinate System</a></li>
       <li><a href="#VerticalDatum">Vertical Datum</a></li>
     </ul>
@@ -296,30 +298,30 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             <tr>
                 <th>Sub-classes</th>
                 <td>
-                    <a href="#GeographicCoordinateReferenceSystem">Geographic Coordinate Reference System</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="#EngineeringCoordinateReferenceSystem">Engineering Coordinate Reference System</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#ProjectedCoordinateReferenceSystem">Projected Coordinate Reference System</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#SingleCoordinateReferenceSystem">Single Coordinate Reference System</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="#GeodeticCoordinateReferenceSystem">Geodetic Coordinate Reference System</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#GeographicCoordinateReferenceSystem">Geographic Coordinate Reference System</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#SingleCoordinateReferenceSystem">Single Coordinate Reference System</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#ProjectedCoordinateReferenceSystem">Projected Coordinate Reference System</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>In domain of</th>
                 <td>
-                    <a href="#domainofvalidity">domain of validity</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="#coordinatesystem">coordinate system</a><sup class="sup-op" title="object property">op</sup><br/>
                     <a href="#sourceCRS">source CRS</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="#datum">datum</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#coordinatesystem">coordinate system</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#domainofvalidity">domain of validity</a><sup class="sup-op" title="object property">op</sup><br/>
                     <a href="#targetCRS">target CRS</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#datum">datum</a><sup class="sup-op" title="object property">op</sup><br/>
                     <a href="#baseCRS">base CRS</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>In range of</th>
                 <td>
-                    <a href="#targetCRS">target CRS</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="#baseCRS">base CRS</a><sup class="sup-op" title="object property">op</sup><br/>
                     <a href="#sourceCRS">source CRS</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#baseCRS">base CRS</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#targetCRS">target CRS</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
         </table>
@@ -367,21 +369,21 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="#coordinateoperation">coordinate operation</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#CoordinateOperation">Coordinate Operation</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>Sub-classes</th>
                 <td>
-                    <a href="#transformation">transformation</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#Transformation">Transformation</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
     </div>
-    <div class="entity class" id="coordinateoperation">
+    <div class="entity class" id="CoordinateOperation">
         <h3>
-          coordinate operation<sup title="class" class="sup-c">c</sup>
-          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#coordinateoperation" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+          Coordinate Operation<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#CoordinateOperation" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
         </h3>
         <table>
             <tr>
@@ -397,13 +399,13 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="#operationmethod">operation method</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#OperationMethod">Operation Method</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>Sub-classes</th>
                 <td>
-                    <a href="#singleoperation">single operation</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#SingleOperation">Single Operation</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="#Conversion">Conversion</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
@@ -579,6 +581,54 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             </tr>
         </table>
     </div>
+    <div class="entity class" id="GeneralOperationParameter">
+        <h3>
+          General Operation Parameter<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#GeneralOperationParameter" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://w3id.org/geosrs/GeneralOperationParameter</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>Definition of a parameter or group of parameters used by a coordinate operation method.</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Sub-classes</th>
+                <td>
+                    <a href="#OperationParameter">Operation Parameter</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="GeneralParameterValue">
+        <h3>
+          General Parameter Value<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#GeneralParameterValue" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://w3id.org/geosrs/GeneralParameterValue</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>Parameter value or group of parameter values</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Sub-classes</th>
+                <td>
+                    <a href="#OperationParameterValue">Operation Parameter Value</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
     <div class="entity class" id="GeodeticCoordinateReferenceSystem">
         <h3>
           Geodetic Coordinate Reference System<sup title="class" class="sup-c">c</sup>
@@ -663,10 +713,10 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             </tr>
         </table>
     </div>
-    <div class="entity class" id="operationmethod">
+    <div class="entity class" id="OperationMethod">
         <h3>
-          operation method<sup title="class" class="sup-c">c</sup>
-          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#operationmethod" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+          Operation Method<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#OperationMethod" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
         </h3>
         <table>
             <tr>
@@ -682,15 +732,15 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             <tr>
                 <th>Sub-classes</th>
                 <td>
-                    <a href="#coordinateoperation">coordinate operation</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#CoordinateOperation">Coordinate Operation</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
     </div>
-    <div class="entity class" id="operationparameter">
+    <div class="entity class" id="OperationParameter">
         <h3>
-          operation parameter<sup title="class" class="sup-c">c</sup>
-          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#operationparameter" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+          Operation Parameter<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#OperationParameter" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
         </h3>
         <table>
             <tr>
@@ -700,15 +750,21 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             <tr>
                 <th>Description</th>
                 <td>
-                    <p>Parameter used by a method to perform an operation on coordinates. See ISO 19111:2007:2007-07, table 52 and annex B.4.5.</p>
+                    <p>Parameter used by a method to perform an operation on coordinates. Note: Most parameter values are numeric, but other types of parameter values are possible. See ISO 19111:2007:2007-07, table 52 and annex B.4.5.</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Super-classes</th>
+                <td>
+                    <a href="#GeneralOperationParameter">General Operation Parameter</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
     </div>
-    <div class="entity class" id="operationparametervalue">
+    <div class="entity class" id="OperationParameterValue">
         <h3>
-          operation parameter value<sup title="class" class="sup-c">c</sup>
-          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#operationparametervalue" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+          Operation Parameter Value<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#OperationParameterValue" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
         </h3>
         <table>
             <tr>
@@ -719,6 +775,12 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
                 <th>Description</th>
                 <td>
                     <p>Value of a parameter used by a method to perform an operation on coordinates. See ISO 19111:2007:2007-07, table 55.</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Super-classes</th>
+                <td>
+                    <a href="#GeneralParameterValue">General Parameter Value</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -891,10 +953,10 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             </tr>
         </table>
     </div>
-    <div class="entity class" id="singleoperation">
+    <div class="entity class" id="SingleOperation">
         <h3>
-          single operation<sup title="class" class="sup-c">c</sup>
-          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#singleoperation" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+          Single Operation<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#SingleOperation" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
         </h3>
         <table>
             <tr>
@@ -910,7 +972,7 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="#coordinateoperation">coordinate operation</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#CoordinateOperation">Coordinate Operation</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -969,10 +1031,10 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             </tr>
         </table>
     </div>
-    <div class="entity class" id="transformation">
+    <div class="entity class" id="Transformation">
         <h3>
-          transformation<sup title="class" class="sup-c">c</sup>
-          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#transformation" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+          Transformation<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#Transformation" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
         </h3>
         <table>
             <tr>

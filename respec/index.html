@@ -604,6 +604,392 @@ Here&#8217;s an example of an example term.
 <p class="paragraph" id="co">
 <p>This clause establishes the <strong>Co</strong> Requirements class, with IRI <code>/req/co</code>, which has a corresponding Conformance Class, <strong>Co</strong>, with IRI <code>/conf/co</code>.</p>
 </p>
+<aside class="example">
+<div class="title">Example 3. 07-co_extension.adoc Extension</div>
+<div class="content">
+<div class="dlist">
+<dl>
+<dt class="hdlist1">requirement</dt>
+<dd>
+<p>/req/Coordinate_operation_methods</p>
+</dd>
+<dt class="hdlist1">requirement</dt>
+<dd>
+<p>/req/Coordinate_operation_parameters</p>
+</dd>
+<dt class="hdlist1">requirement</dt>
+<dd>
+<p>/req/Coordinate_operation_categories</p>
+</dd>
+</dl>
+</div>
+</div>
+</aside>
+<section class="sect3">
+<h4 id="_coordinate_operation_categories">Coordinate operation categories</h4>
+<aside class="example">
+<div class="title">Example 4. Coordinate operation categories</div>
+<div class="content">
+<p class="paragraph">
+<p>Implementations shall allow the RDFS classes <a href="#_class_geosrsgeographicobject"><code>geosrs:GeographicObject</code></a>, <a href="#_class_geosrsregisteroperations"><code>geosrs:RegisterOperations</code></a>, <a href="#_class_geosrsscaleoperation"><code>geosrs:ScaleOperation</code></a>, <a href="#_class_geosrsrotationoperation"><code>geosrs:RotationOperation</code></a>, <a href="#_class_geosrsidentityoperation"><code>geosrs:IdentityOperation</code></a>, <a href="#_class_geosrsshearoperation"><code>geosrs:ShearOperation</code></a>, <a href="#_class_geosrstranslationoperation"><code>geosrs:TranslationOperation</code></a>, <a href="#_class_geosrsaffinetransformationoperation"><code>geosrs:AffineTransformationOperation</code></a>, <a href="#_class_geocrscoordinatetransformationoperation"><code>geocrs:CoordinateTransformationOperation</code></a> to be used in SPARQL graph patterns.</p>
+</p>
+</div>
+</aside>
+<section class="sect4">
+<h5 id="_class_geosrsgeographicobject">Class: geosrs:GeographicObject</h5>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Table 12. geosrs:GeographicObject</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/co/GeographicObject">https://w3id.org/geosrs/co/GeographicObject</a></p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Definition</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Identifier of a geographic feature of which the coordinates are used as operation parameters.</p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/co/GeographicObject">GeographicObject</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sect4">
+<h5 id="_class_geosrsregisteroperations">Class: geosrs:RegisterOperations</h5>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Table 13. geosrs:RegisterOperations</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/co/RegisterOperations">https://w3id.org/geosrs/co/RegisterOperations</a></p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Definition</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Operations supported in the Coordinate Operations package.</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sect4">
+<h5 id="_class_geosrsscaleoperation">Class: geosrs:ScaleOperation</h5>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Table 14. geosrs:ScaleOperation</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/co/ScaleOperation">https://w3id.org/geosrs/co/ScaleOperation</a></p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Definition</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Scale transformation operation</p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/co/ScaleOperation">ScaleOperation</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sect4">
+<h5 id="_class_geosrsrotationoperation">Class: geosrs:RotationOperation</h5>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Table 15. geosrs:RotationOperation</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/co/RotationOperation">https://w3id.org/geosrs/co/RotationOperation</a></p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Definition</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Rotation transformation operation</p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/co/RotationOperation">RotationOperation</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sect4">
+<h5 id="_class_geosrsidentityoperation">Class: geosrs:IdentityOperation</h5>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Table 16. geosrs:IdentityOperation</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/co/IdentityOperation">https://w3id.org/geosrs/co/IdentityOperation</a></p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Definition</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Identity transformation operation</p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/co/IdentityOperation">IdentityOperation</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sect4">
+<h5 id="_class_geosrsshearoperation">Class: geosrs:ShearOperation</h5>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Table 17. geosrs:ShearOperation</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/co/ShearOperation">https://w3id.org/geosrs/co/ShearOperation</a></p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Definition</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Shear transformation operation</p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/co/ShearOperation">ShearOperation</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sect4">
+<h5 id="_class_geosrstranslationoperation">Class: geosrs:TranslationOperation</h5>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Table 18. geosrs:TranslationOperation</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/co/TranslationOperation">https://w3id.org/geosrs/co/TranslationOperation</a></p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Definition</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Translation transformation operation</p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/co/TranslationOperation">TranslationOperation</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sect4">
+<h5 id="_class_geosrsaffinetransformationoperation">Class: geosrs:AffineTransformationOperation</h5>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Table 19. geosrs:AffineTransformationOperation</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/co/AffineTransformationOperation">https://w3id.org/geosrs/co/AffineTransformationOperation</a></p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Definition</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Affine coordinate transformation operation</p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/CoordinateTransformationOperation">CoordinateTransformationOperation</a> []</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sect4">
+<h5 id="_class_geocrscoordinatetransformationoperation">Class: geocrs:CoordinateTransformationOperation</h5>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Table 20. geocrs:CoordinateTransformationOperation</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">geocrs:CoordinateTransformationOperation[]</p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Definition</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Coordinate operation in which the two coordinate reference systems are based on different datums.</p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">geocrs:CoordinateTransformationOperation[geocrs:CoordinateTransformationOperation]</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section class="sect3">
+<h4 id="_coordinate_operation_methods">Coordinate operation methods</h4>
+<aside class="example">
+<div class="title">Example 5. Coordinate operation methods</div>
+<div class="content">
+<p class="paragraph">
+<p>Implementations shall allow the RDFS classes <a href="#Class: geosrs:CoordinateOperation"><code>geosrs:CoordinateOperation</code></a>, <a href="#_class_geosrspassthroughoperation"><code>geosrs:PassThroughOperation</code></a>, <a href="#_class_geosrsconcatenatedoperation"><code>geosrs:ConcatenatedOperation</code></a>, <a href="#Class: geosrs:SingleOperation"><code>geosrs:SingleOperation</code></a>, <a href="#Class: geosrs:Transformation"><code>geosrs:Transformation</code></a>, <a href="#Class: geosrs:Conversion"><code>geosrs:Conversion</code></a>, <a href="#_class_geosrspointmotionoperation"><code>geosrs:PointMotionOperation</code></a>, <a href="#Class: geosrs:OperationMethod"><code>geosrs:OperationMethod</code></a> to be used in SPARQL graph patterns.</p>
+</p>
+</div>
+</aside>
+<section class="sect4">
+<h5 id="_class_geosrspassthroughoperation">Class: geosrs:PassThroughOperation</h5>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Table 21. geosrs:PassThroughOperation</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/co/PassThroughOperation">https://w3id.org/geosrs/co/PassThroughOperation</a></p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Definition</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Specification of a subset of coordinate tuples that is subject to a coordinate operation</p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/co/PassThroughOperation">PassThroughOperation</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sect4">
+<h5 id="_class_geosrsconcatenatedoperation">Class: geosrs:ConcatenatedOperation</h5>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Table 22. geosrs:ConcatenatedOperation</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/co/ConcatenatedOperation">https://w3id.org/geosrs/co/ConcatenatedOperation</a></p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Definition</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Ordered sequence of two or more single coordinate operations. Note: The sequence of coordinate operations is constrained by the requirement that the source coordinate reference system of step (n + 1) shall be the same as the target coordinate reference system of step (n). The source coordinate reference system of the first step and the target coordinate reference system of the last step are the source and target coordinate reference system associated with the concatenated coordinate operation. For a concatenated coordinate operation sequence of n coordinate operations:     source CRS (concatenated coordinate operation) .eq. source CRS (coordinate operation step 1)     target CRS (coordinate operation step i) .eq. source CRS (coordinate operation step i + 1); i .eq. 1 &#8230;&#8203;(n - 1)     target CRS (concatenated coordinate operation) .eq. target CRS (coordinate operation step n) Instead of a forward coordinate operation, an inverse coordinate operation may be used for one or more of the coordinate operation steps mentioned above, if the inverse coordinate operation is uniquely defined by the forward coordinate operation method.</p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/co/ConcatenatedOperation">ConcatenatedOperation</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sect4">
+<h5 id="_class_geosrspointmotionoperation">Class: geosrs:PointMotionOperation</h5>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Table 23. geosrs:PointMotionOperation</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/co/PointMotionOperation">https://w3id.org/geosrs/co/PointMotionOperation</a></p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Definition</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Mathematical operation that decribes the change of coordinate values within one coordinate reference system due to the motion of the point between one coordinate epoch and another coordinate epoch Note: In this document the motion is due to tectonic plate movement or deformation.</p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/co/PointMotionOperation">PointMotionOperation</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section class="sect3">
+<h4 id="_coordinate_operation_parameters">Coordinate operation parameters</h4>
+<aside class="example">
+<div class="title">Example 6. Coordinate operation parameters</div>
+<div class="content">
+<p class="paragraph">
+<p>Implementations shall allow the RDFS classes <a href="#Class: geosrs:GeneralOperationParameter"><code>geosrs:GeneralOperationParameter</code></a>, <a href="#_class_geosrsoperationparametergroup"><code>geosrs:OperationParameterGroup</code></a>, <a href="#Class: geosrs:OperationParameter"><code>geosrs:OperationParameter</code></a>, <a href="#Class: geosrs:GeneralParameterValue"><code>geosrs:GeneralParameterValue</code></a>, <a href="#_class_geosrsparametervaluegroup"><code>geosrs:ParameterValueGroup</code></a>, <a href="#Class: geosrs:OperationParameterValue"><code>geosrs:OperationParameterValue</code></a> to be used in SPARQL graph patterns.</p>
+</p>
+</div>
+</aside>
+<section class="sect4">
+<h5 id="_class_geosrsoperationparametergroup">Class: geosrs:OperationParameterGroup</h5>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Table 24. geosrs:OperationParameterGroup</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/co/OperationParameterGroup">https://w3id.org/geosrs/co/OperationParameterGroup</a></p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Definition</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Definition of a group of related parameters used by a coordinate operation method.</p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/co/OperationParameterGroup">OperationParameterGroup</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sect4">
+<h5 id="_class_geosrsparametervaluegroup">Class: geosrs:ParameterValueGroup</h5>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Table 25. geosrs:ParameterValueGroup</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/co/ParameterValueGroup">https://w3id.org/geosrs/co/ParameterValueGroup</a></p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Definition</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Group of related parameter values. Note: The same group can be repeated more than once in a coordinate operation or higher level ParameterValueGroup, if those instances contain different values of one or more ParameterValues which suitably distinguish among those groups.</p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/co/ParameterValueGroup">ParameterValueGroup</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
 </div>
 </section>
 <section class="sect1">
@@ -613,7 +999,7 @@ Here&#8217;s an example of an example term.
 <p>This clause establishes the <strong>CS</strong> Requirements class, with IRI <code>/req/cs</code>, which has a corresponding Conformance Class, <strong>CS</strong>, with IRI <code>/conf/cs</code>.</p>
 </p>
 <aside class="example">
-<div class="title">Example 3. 08-cs_extension.adoc Extension</div>
+<div class="title">Example 7. 08-cs_extension.adoc Extension</div>
 <div class="content">
 <div class="dlist">
 <dl>
@@ -636,7 +1022,7 @@ Here&#8217;s an example of an example term.
 <section class="sect3">
 <h4 id="_celestial_coordinate_systems">Celestial Coordinate Systems</h4>
 <aside class="example">
-<div class="title">Example 4. Celestial Coordinate Systems</div>
+<div class="title">Example 8. Celestial Coordinate Systems</div>
 <div class="content">
 <p class="paragraph">
 <p>Implementations shall allow the RDFS classes <a href="#_class_geosrseclipticcoordinatesystem"><code>geosrs:EclipticCoordinateSystem</code></a>, <a href="#_class_geosrsequatorialcoordinatesystem"><code>geosrs:EquatorialCoordinateSystem</code></a>, <a href="#_class_geosrsgalacticcoordinatesystem"><code>geosrs:GalacticCoordinateSystem</code></a>, <a href="#_class_geosrshorizontalcoordinatesystem"><code>geosrs:HorizontalCoordinateSystem</code></a>, <a href="#_class_geosrsperifocalcoordinatesystem"><code>geosrs:PerifocalCoordinateSystem</code></a>, <a href="#_class_geosrssupergalacticcs"><code>geosrs:SuperGalacticCS</code></a> to be used in SPARQL graph patterns.</p>
@@ -646,7 +1032,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrseclipticcoordinatesystem">Class: geosrs:EclipticCoordinateSystem</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 12. geosrs:EclipticCoordinateSystem</caption>
+<caption class="title">Table 26. geosrs:EclipticCoordinateSystem</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -670,7 +1056,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsequatorialcoordinatesystem">Class: geosrs:EquatorialCoordinateSystem</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 13. geosrs:EquatorialCoordinateSystem</caption>
+<caption class="title">Table 27. geosrs:EquatorialCoordinateSystem</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -694,7 +1080,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsgalacticcoordinatesystem">Class: geosrs:GalacticCoordinateSystem</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 14. geosrs:GalacticCoordinateSystem</caption>
+<caption class="title">Table 28. geosrs:GalacticCoordinateSystem</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -718,7 +1104,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrshorizontalcoordinatesystem">Class: geosrs:HorizontalCoordinateSystem</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 15. geosrs:HorizontalCoordinateSystem</caption>
+<caption class="title">Table 29. geosrs:HorizontalCoordinateSystem</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -742,7 +1128,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsperifocalcoordinatesystem">Class: geosrs:PerifocalCoordinateSystem</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 16. geosrs:PerifocalCoordinateSystem</caption>
+<caption class="title">Table 30. geosrs:PerifocalCoordinateSystem</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -766,7 +1152,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrssupergalacticcs">Class: geosrs:SuperGalacticCS</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 17. geosrs:SuperGalacticCS</caption>
+<caption class="title">Table 31. geosrs:SuperGalacticCS</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -791,7 +1177,7 @@ Here&#8217;s an example of an example term.
 <section class="sect3">
 <h4 id="_coordinate_system_types">Coordinate System Types</h4>
 <aside class="example">
-<div class="title">Example 5. Coordinate System Types</div>
+<div class="title">Example 9. Coordinate System Types</div>
 <div class="content">
 <p class="paragraph">
 <p>Implementations shall allow the RDFS classes <a href="#_class_geosrs1dcoordinatesystem"><code>geosrs:1DCoordinateSystem</code></a>, <a href="#_class_geosrs3dcoordinatesystem"><code>geosrs:3DCoordinateSystem</code></a>, <a href="#_class_geosrsaffinecoordinatesystem"><code>geosrs:AffineCoordinateSystem</code></a>, <a href="#_class_geosrsbarycentriccoordinatesystem"><code>geosrs:BarycentricCoordinateSystem</code></a>, <a href="#Class: geosrs:CartesianCoordinateSystem"><code>geosrs:CartesianCoordinateSystem</code></a>, <a href="#_class_geosrscelestialcoordinatesystem"><code>geosrs:CelestialCoordinateSystem</code></a>, <a href="#_class_geosrscurvilinearcoordinatesystem"><code>geosrs:CurvilinearCoordinateSystem</code></a>, <a href="#_class_geosrsgeodeticcoordinatesystem"><code>geosrs:GeodeticCoordinateSystem</code></a>, <a href="#_class_geosrsgridcoordinatesystem"><code>geosrs:GridCoordinateSystem</code></a>, <a href="#_class_geosrslocalcoordinatesystem"><code>geosrs:LocalCoordinateSystem</code></a>, <a href="#_class_geosrsobliquecoordinatesystem"><code>geosrs:ObliqueCoordinateSystem</code></a>, <a href="#Class: geosrs:OrdinalCoordinateSystem"><code>geosrs:OrdinalCoordinateSystem</code></a>, <a href="#_class_geosrsplanarcoordinatesystem"><code>geosrs:PlanarCoordinateSystem</code></a> to be used in SPARQL graph patterns.</p>
@@ -801,7 +1187,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrs1dcoordinatesystem">Class: geosrs:1DCoordinateSystem</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 18. geosrs:1DCoordinateSystem</caption>
+<caption class="title">Table 32. geosrs:1DCoordinateSystem</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -825,7 +1211,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrs3dcoordinatesystem">Class: geosrs:3DCoordinateSystem</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 19. geosrs:3DCoordinateSystem</caption>
+<caption class="title">Table 33. geosrs:3DCoordinateSystem</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -849,7 +1235,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsaffinecoordinatesystem">Class: geosrs:AffineCoordinateSystem</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 20. geosrs:AffineCoordinateSystem</caption>
+<caption class="title">Table 34. geosrs:AffineCoordinateSystem</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -873,7 +1259,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsbarycentriccoordinatesystem">Class: geosrs:BarycentricCoordinateSystem</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 21. geosrs:BarycentricCoordinateSystem</caption>
+<caption class="title">Table 35. geosrs:BarycentricCoordinateSystem</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -897,7 +1283,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrscelestialcoordinatesystem">Class: geosrs:CelestialCoordinateSystem</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 22. geosrs:CelestialCoordinateSystem</caption>
+<caption class="title">Table 36. geosrs:CelestialCoordinateSystem</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -921,7 +1307,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrscurvilinearcoordinatesystem">Class: geosrs:CurvilinearCoordinateSystem</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 23. geosrs:CurvilinearCoordinateSystem</caption>
+<caption class="title">Table 37. geosrs:CurvilinearCoordinateSystem</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -945,7 +1331,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsgeodeticcoordinatesystem">Class: geosrs:GeodeticCoordinateSystem</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 24. geosrs:GeodeticCoordinateSystem</caption>
+<caption class="title">Table 38. geosrs:GeodeticCoordinateSystem</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -969,7 +1355,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsgridcoordinatesystem">Class: geosrs:GridCoordinateSystem</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 25. geosrs:GridCoordinateSystem</caption>
+<caption class="title">Table 39. geosrs:GridCoordinateSystem</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -993,7 +1379,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrslocalcoordinatesystem">Class: geosrs:LocalCoordinateSystem</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 26. geosrs:LocalCoordinateSystem</caption>
+<caption class="title">Table 40. geosrs:LocalCoordinateSystem</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -1017,7 +1403,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsobliquecoordinatesystem">Class: geosrs:ObliqueCoordinateSystem</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 27. geosrs:ObliqueCoordinateSystem</caption>
+<caption class="title">Table 41. geosrs:ObliqueCoordinateSystem</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -1041,7 +1427,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsplanarcoordinatesystem">Class: geosrs:PlanarCoordinateSystem</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 28. geosrs:PlanarCoordinateSystem</caption>
+<caption class="title">Table 42. geosrs:PlanarCoordinateSystem</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -1066,7 +1452,7 @@ Here&#8217;s an example of an example term.
 <section class="sect3">
 <h4 id="_orthogonal_coordinate_systems">Orthogonal Coordinate Systems</h4>
 <aside class="example">
-<div class="title">Example 6. Orthogonal Coordinate Systems</div>
+<div class="title">Example 10. Orthogonal Coordinate Systems</div>
 <div class="content">
 <p class="paragraph">
 <p>Implementations shall allow the RDFS classes <a href="#_class_geosrsconicalcoordinatesystem"><code>geosrs:ConicalCoordinateSystem</code></a>, <a href="#Class: geosrs:EllipsoidalCoordinateSystem"><code>geosrs:EllipsoidalCoordinateSystem</code></a> to be used in SPARQL graph patterns.</p>
@@ -1076,7 +1462,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsconicalcoordinatesystem">Class: geosrs:ConicalCoordinateSystem</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 29. geosrs:ConicalCoordinateSystem</caption>
+<caption class="title">Table 43. geosrs:ConicalCoordinateSystem</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -1107,7 +1493,7 @@ Here&#8217;s an example of an example term.
 <p>This clause establishes the <strong>Datum</strong> Requirements class, with IRI <code>/req/datum</code>, which has a corresponding Conformance Class, <strong>Datum</strong>, with IRI <code>/conf/datum</code>.</p>
 </p>
 <aside class="example">
-<div class="title">Example 7. 09-datum_extension.adoc Extension</div>
+<div class="title">Example 11. 09-datum_extension.adoc Extension</div>
 <div class="content">
 <div class="dlist">
 <dl>
@@ -1122,7 +1508,7 @@ Here&#8217;s an example of an example term.
 <section class="sect3">
 <h4 id="_datumtypes">DatumTypes</h4>
 <aside class="example">
-<div class="title">Example 8. DatumTypes</div>
+<div class="title">Example 12. DatumTypes</div>
 <div class="content">
 <p class="paragraph">
 <p>Implementations shall allow the RDFS classes <a href="#Class: geosrs:GeodeticDatum"><code>geosrs:GeodeticDatum</code></a>, <a href="#_class_geosrsdynamicgeodeticreferenceframe"><code>geosrs:DynamicGeodeticReferenceFrame</code></a>, <a href="#Class: geosrs:VerticalDatum"><code>geosrs:VerticalDatum</code></a>, <a href="#_class_geosrsdynamicverticaldatum"><code>geosrs:DynamicVerticalDatum</code></a>, <a href="#_class_geosrsparametricdatum"><code>geosrs:ParametricDatum</code></a>, <a href="#_class_geosrsengineeringdatum"><code>geosrs:EngineeringDatum</code></a>, <a href="#_class_geosrstemporaldatum"><code>geosrs:TemporalDatum</code></a>, <a href="#_class_geosrsdatumensemble"><code>geosrs:DatumEnsemble</code></a> to be used in SPARQL graph patterns.</p>
@@ -1132,7 +1518,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsdynamicgeodeticreferenceframe">Class: geosrs:DynamicGeodeticReferenceFrame</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 30. geosrs:DynamicGeodeticReferenceFrame</caption>
+<caption class="title">Table 44. geosrs:DynamicGeodeticReferenceFrame</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -1156,7 +1542,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsdynamicverticaldatum">Class: geosrs:DynamicVerticalDatum</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 31. geosrs:DynamicVerticalDatum</caption>
+<caption class="title">Table 45. geosrs:DynamicVerticalDatum</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -1180,7 +1566,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsparametricdatum">Class: geosrs:ParametricDatum</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 32. geosrs:ParametricDatum</caption>
+<caption class="title">Table 46. geosrs:ParametricDatum</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -1204,7 +1590,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsengineeringdatum">Class: geosrs:EngineeringDatum</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 33. geosrs:EngineeringDatum</caption>
+<caption class="title">Table 47. geosrs:EngineeringDatum</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -1228,7 +1614,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrstemporaldatum">Class: geosrs:TemporalDatum</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 34. geosrs:TemporalDatum</caption>
+<caption class="title">Table 48. geosrs:TemporalDatum</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -1252,7 +1638,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsdatumensemble">Class: geosrs:DatumEnsemble</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 35. geosrs:DatumEnsemble</caption>
+<caption class="title">Table 49. geosrs:DatumEnsemble</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -1288,7 +1674,7 @@ Here&#8217;s an example of an example term.
 <p>This clause establishes the <strong>PROJ</strong> Requirements class, with IRI <code>/req/proj</code>, which has a corresponding Conformance Class, <strong>PROJ</strong>, with IRI <code>/conf/proj</code>.</p>
 </p>
 <aside class="example">
-<div class="title">Example 9. 11-projections_extension.adoc Extension</div>
+<div class="title">Example 13. 11-projections_extension.adoc Extension</div>
 <div class="content">
 <div class="dlist">
 <dl>
@@ -1367,7 +1753,7 @@ Here&#8217;s an example of an example term.
 <section class="sect3">
 <h4 id="_azimuthal_projections">Azimuthal Projections</h4>
 <aside class="example">
-<div class="title">Example 10. Azimuthal Projections</div>
+<div class="title">Example 14. Azimuthal Projections</div>
 <div class="content">
 <p class="paragraph">
 <p>Implementations shall allow the RDFS classes <a href="#_class_geosrsbreusinggeometricprojection"><code>geosrs:BreusingGeometricProjection</code></a>, <a href="#_class_geosrsbreusingharmonicprojection"><code>geosrs:BreusingHarmonicProjection</code></a>, <a href="#_class_geosrsginzburgiiprojection"><code>geosrs:GinzburgIIProjection</code></a>, <a href="#_class_geosrsginzburgiprojection"><code>geosrs:GinzburgIProjection</code></a>, <a href="#_class_geosrsgnomonicprojection"><code>geosrs:GnomonicProjection</code></a>, <a href="#_class_geosrsjamesazimuthalprojection"><code>geosrs:JamesAzimuthalProjection</code></a> to be used in SPARQL graph patterns.</p>
@@ -1377,7 +1763,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsbreusinggeometricprojection">Class: geosrs:BreusingGeometricProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 36. geosrs:BreusingGeometricProjection</caption>
+<caption class="title">Table 50. geosrs:BreusingGeometricProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -1397,7 +1783,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsbreusingharmonicprojection">Class: geosrs:BreusingHarmonicProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 37. geosrs:BreusingHarmonicProjection</caption>
+<caption class="title">Table 51. geosrs:BreusingHarmonicProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -1417,7 +1803,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsginzburgiiprojection">Class: geosrs:GinzburgIIProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 38. geosrs:GinzburgIIProjection</caption>
+<caption class="title">Table 52. geosrs:GinzburgIIProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -1437,7 +1823,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsginzburgiprojection">Class: geosrs:GinzburgIProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 39. geosrs:GinzburgIProjection</caption>
+<caption class="title">Table 53. geosrs:GinzburgIProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -1457,7 +1843,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsgnomonicprojection">Class: geosrs:GnomonicProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 40. geosrs:GnomonicProjection</caption>
+<caption class="title">Table 54. geosrs:GnomonicProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -1477,7 +1863,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsjamesazimuthalprojection">Class: geosrs:JamesAzimuthalProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 41. geosrs:JamesAzimuthalProjection</caption>
+<caption class="title">Table 55. geosrs:JamesAzimuthalProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -1498,7 +1884,7 @@ Here&#8217;s an example of an example term.
 <section class="sect3">
 <h4 id="_compromise_projections">Compromise Projections</h4>
 <aside class="example">
-<div class="title">Example 11. Compromise Projections</div>
+<div class="title">Example 15. Compromise Projections</div>
 <div class="content">
 <p class="paragraph">
 <p>Implementations shall allow the RDFS classes <a href="#_class_geosrsarmadilloprojection"><code>geosrs:ArmadilloProjection</code></a>, <a href="#_class_geosrsbakerdinomicprojection"><code>geosrs:BakerDinomicProjection</code></a>, <a href="#_class_geosrsbertinprojection"><code>geosrs:BertinProjection</code></a>, <a href="#_class_geosrschamberlintrimetricprojection"><code>geosrs:ChamberlinTrimetricProjection</code></a>, <a href="#_class_geosrsdenoyersemiellipticalprojection"><code>geosrs:DenoyerSemiEllipticalProjection</code></a>, <a href="#_class_geosrsfairgrieveprojection"><code>geosrs:FairgrieveProjection</code></a>, <a href="#_class_geosrslarriveeprojection"><code>geosrs:LarriveeProjection</code></a>, <a href="#_class_geosrspetermannstarprojection"><code>geosrs:PetermannStarProjection</code></a>, <a href="#_class_geosrsspilhausoceanicprojection"><code>geosrs:SpilhausOceanicProjection</code></a>, <a href="#_class_geosrsvandergrinteniiiprojection"><code>geosrs:VanDerGrintenIIIProjection</code></a>, <a href="#_class_geosrswinkeliiprojection"><code>geosrs:WinkelIIProjection</code></a>, <a href="#_class_geosrswinkeliprojection"><code>geosrs:WinkelIProjection</code></a>, <a href="#_class_geosrswinkelsnyderprojection"><code>geosrs:WinkelSnyderProjection</code></a> to be used in SPARQL graph patterns.</p>
@@ -1508,7 +1894,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsarmadilloprojection">Class: geosrs:ArmadilloProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 42. geosrs:ArmadilloProjection</caption>
+<caption class="title">Table 56. geosrs:ArmadilloProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -1528,7 +1914,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsbakerdinomicprojection">Class: geosrs:BakerDinomicProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 43. geosrs:BakerDinomicProjection</caption>
+<caption class="title">Table 57. geosrs:BakerDinomicProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -1548,7 +1934,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsbertinprojection">Class: geosrs:BertinProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 44. geosrs:BertinProjection</caption>
+<caption class="title">Table 58. geosrs:BertinProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -1568,7 +1954,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrschamberlintrimetricprojection">Class: geosrs:ChamberlinTrimetricProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 45. geosrs:ChamberlinTrimetricProjection</caption>
+<caption class="title">Table 59. geosrs:ChamberlinTrimetricProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -1588,7 +1974,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsdenoyersemiellipticalprojection">Class: geosrs:DenoyerSemiEllipticalProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 46. geosrs:DenoyerSemiEllipticalProjection</caption>
+<caption class="title">Table 60. geosrs:DenoyerSemiEllipticalProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -1608,7 +1994,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsfairgrieveprojection">Class: geosrs:FairgrieveProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 47. geosrs:FairgrieveProjection</caption>
+<caption class="title">Table 61. geosrs:FairgrieveProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -1628,7 +2014,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrslarriveeprojection">Class: geosrs:LarriveeProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 48. geosrs:LarriveeProjection</caption>
+<caption class="title">Table 62. geosrs:LarriveeProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -1648,7 +2034,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrspetermannstarprojection">Class: geosrs:PetermannStarProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 49. geosrs:PetermannStarProjection</caption>
+<caption class="title">Table 63. geosrs:PetermannStarProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -1668,7 +2054,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsspilhausoceanicprojection">Class: geosrs:SpilhausOceanicProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 50. geosrs:SpilhausOceanicProjection</caption>
+<caption class="title">Table 64. geosrs:SpilhausOceanicProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -1688,7 +2074,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsvandergrinteniiiprojection">Class: geosrs:VanDerGrintenIIIProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 51. geosrs:VanDerGrintenIIIProjection</caption>
+<caption class="title">Table 65. geosrs:VanDerGrintenIIIProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -1708,7 +2094,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrswinkeliiprojection">Class: geosrs:WinkelIIProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 52. geosrs:WinkelIIProjection</caption>
+<caption class="title">Table 66. geosrs:WinkelIIProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -1728,7 +2114,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrswinkeliprojection">Class: geosrs:WinkelIProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 53. geosrs:WinkelIProjection</caption>
+<caption class="title">Table 67. geosrs:WinkelIProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -1748,7 +2134,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrswinkelsnyderprojection">Class: geosrs:WinkelSnyderProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 54. geosrs:WinkelSnyderProjection</caption>
+<caption class="title">Table 68. geosrs:WinkelSnyderProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -1769,7 +2155,7 @@ Here&#8217;s an example of an example term.
 <section class="sect3">
 <h4 id="_conformal_projections">Conformal Projections</h4>
 <aside class="example">
-<div class="title">Example 12. Conformal Projections</div>
+<div class="title">Example 16. Conformal Projections</div>
 <div class="content">
 <p class="paragraph">
 <p>Implementations shall allow the RDFS classes <a href="#_class_geosrsadamsprojection"><code>geosrs:AdamsProjection</code></a>, <a href="#_class_geosrsadamsworldinasquareiiprojection"><code>geosrs:AdamsWorldInASquareIIProjection</code></a>, <a href="#_class_geosrsadamsworldinasquareiprojection"><code>geosrs:AdamsWorldInASquareIProjection</code></a>, <a href="#_class_geosrsaugustepicycloidalprojection"><code>geosrs:AugustEpicycloidalProjection</code></a>, <a href="#_class_geosrscoxconformalprojection"><code>geosrs:CoxConformalProjection</code></a>, <a href="#_class_geosrseisenlohrprojection"><code>geosrs:EisenlohrProjection</code></a>, <a href="#_class_geosrsgs50projection"><code>geosrs:GS50Projection</code></a>, <a href="#_class_geosrspeircequincuncialprojection"><code>geosrs:PeirceQuincuncialProjection</code></a>, <a href="#_class_geosrsstereographicprojection"><code>geosrs:StereographicProjection</code></a> to be used in SPARQL graph patterns.</p>
@@ -1779,7 +2165,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsadamsprojection">Class: geosrs:AdamsProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 55. geosrs:AdamsProjection</caption>
+<caption class="title">Table 69. geosrs:AdamsProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -1799,7 +2185,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsadamsworldinasquareiiprojection">Class: geosrs:AdamsWorldInASquareIIProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 56. geosrs:AdamsWorldInASquareIIProjection</caption>
+<caption class="title">Table 70. geosrs:AdamsWorldInASquareIIProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -1819,7 +2205,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsadamsworldinasquareiprojection">Class: geosrs:AdamsWorldInASquareIProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 57. geosrs:AdamsWorldInASquareIProjection</caption>
+<caption class="title">Table 71. geosrs:AdamsWorldInASquareIProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -1839,7 +2225,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsaugustepicycloidalprojection">Class: geosrs:AugustEpicycloidalProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 58. geosrs:AugustEpicycloidalProjection</caption>
+<caption class="title">Table 72. geosrs:AugustEpicycloidalProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -1863,7 +2249,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrscoxconformalprojection">Class: geosrs:CoxConformalProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 59. geosrs:CoxConformalProjection</caption>
+<caption class="title">Table 73. geosrs:CoxConformalProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -1883,7 +2269,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrseisenlohrprojection">Class: geosrs:EisenlohrProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 60. geosrs:EisenlohrProjection</caption>
+<caption class="title">Table 74. geosrs:EisenlohrProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -1903,7 +2289,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsgs50projection">Class: geosrs:GS50Projection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 61. geosrs:GS50Projection</caption>
+<caption class="title">Table 75. geosrs:GS50Projection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -1923,7 +2309,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrspeircequincuncialprojection">Class: geosrs:PeirceQuincuncialProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 62. geosrs:PeirceQuincuncialProjection</caption>
+<caption class="title">Table 76. geosrs:PeirceQuincuncialProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -1943,7 +2329,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsstereographicprojection">Class: geosrs:StereographicProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 63. geosrs:StereographicProjection</caption>
+<caption class="title">Table 77. geosrs:StereographicProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -1964,7 +2350,7 @@ Here&#8217;s an example of an example term.
 <section class="sect3">
 <h4 id="_conical_projections">Conical Projections</h4>
 <aside class="example">
-<div class="title">Example 13. Conical Projections</div>
+<div class="title">Example 17. Conical Projections</div>
 <div class="content">
 <p class="paragraph">
 <p>Implementations shall allow the RDFS classes <a href="#_class_geosrsbipolarobliqueconicconformalprojection"><code>geosrs:BipolarObliqueConicConformalProjection</code></a>, <a href="#_class_geosrscentralconicprojection"><code>geosrs:CentralConicProjection</code></a>, <a href="#_class_geosrsherschelconformalconicprojection"><code>geosrs:HerschelConformalConicProjection</code></a>, <a href="#_class_geosrskrovak"><code>geosrs:Krovak</code></a>, <a href="#_class_geosrslambertconformalconicprojection"><code>geosrs:LambertConformalConicProjection</code></a>, <a href="#_class_geosrsmurdochiiiprojection"><code>geosrs:MurdochIIIProjection</code></a>, <a href="#_class_geosrsmurdochiiprojection"><code>geosrs:MurdochIIProjection</code></a>, <a href="#_class_geosrsmurdochiprojection"><code>geosrs:MurdochIProjection</code></a>, <a href="#_class_geosrsschjerningiprojection"><code>geosrs:SchjerningIProjection</code></a>, <a href="#_class_geosrsvitkovskyiprojection"><code>geosrs:VitkovskyIProjection</code></a> to be used in SPARQL graph patterns.</p>
@@ -1974,7 +2360,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsbipolarobliqueconicconformalprojection">Class: geosrs:BipolarObliqueConicConformalProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 64. geosrs:BipolarObliqueConicConformalProjection</caption>
+<caption class="title">Table 78. geosrs:BipolarObliqueConicConformalProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -1994,7 +2380,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrscentralconicprojection">Class: geosrs:CentralConicProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 65. geosrs:CentralConicProjection</caption>
+<caption class="title">Table 79. geosrs:CentralConicProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -2014,7 +2400,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsherschelconformalconicprojection">Class: geosrs:HerschelConformalConicProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 66. geosrs:HerschelConformalConicProjection</caption>
+<caption class="title">Table 80. geosrs:HerschelConformalConicProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -2034,7 +2420,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrskrovak">Class: geosrs:Krovak</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 67. geosrs:Krovak</caption>
+<caption class="title">Table 81. geosrs:Krovak</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -2054,7 +2440,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrslambertconformalconicprojection">Class: geosrs:LambertConformalConicProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 68. geosrs:LambertConformalConicProjection</caption>
+<caption class="title">Table 82. geosrs:LambertConformalConicProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -2074,7 +2460,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsmurdochiiiprojection">Class: geosrs:MurdochIIIProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 69. geosrs:MurdochIIIProjection</caption>
+<caption class="title">Table 83. geosrs:MurdochIIIProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -2094,7 +2480,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsmurdochiiprojection">Class: geosrs:MurdochIIProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 70. geosrs:MurdochIIProjection</caption>
+<caption class="title">Table 84. geosrs:MurdochIIProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -2114,7 +2500,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsmurdochiprojection">Class: geosrs:MurdochIProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 71. geosrs:MurdochIProjection</caption>
+<caption class="title">Table 85. geosrs:MurdochIProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -2134,7 +2520,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsschjerningiprojection">Class: geosrs:SchjerningIProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 72. geosrs:SchjerningIProjection</caption>
+<caption class="title">Table 86. geosrs:SchjerningIProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -2154,7 +2540,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsvitkovskyiprojection">Class: geosrs:VitkovskyIProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 73. geosrs:VitkovskyIProjection</caption>
+<caption class="title">Table 87. geosrs:VitkovskyIProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -2175,7 +2561,7 @@ Here&#8217;s an example of an example term.
 <section class="sect3">
 <h4 id="_cylindrical_projections">Cylindrical Projections</h4>
 <aside class="example">
-<div class="title">Example 14. Cylindrical Projections</div>
+<div class="title">Example 18. Cylindrical Projections</div>
 <div class="content">
 <p class="paragraph">
 <p>Implementations shall allow the RDFS classes <a href="#_class_geosrsardencloseprojection"><code>geosrs:ArdenCloseProjection</code></a>, <a href="#_class_geosrsbraunperspectiveprojection"><code>geosrs:BraunPerspectiveProjection</code></a>, <a href="#_class_geosrscompactmillerprojection"><code>geosrs:CompactMillerProjection</code></a>, <a href="#_class_geosrscylindricalstereographicprojection"><code>geosrs:CylindricalStereographicProjection</code></a>, <a href="#_class_geosrskarchenkoshabanovaprojection"><code>geosrs:KarchenkoShabanovaProjection</code></a>, <a href="#_class_geosrslabordeprojection"><code>geosrs:LabordeProjection</code></a>, <a href="#_class_geosrsmercatorprojection"><code>geosrs:MercatorProjection</code></a>, <a href="#_class_geosrsmillerprojection"><code>geosrs:MillerProjection</code></a>, <a href="#_class_geosrspattersoncylindricalprojection"><code>geosrs:PattersonCylindricalProjection</code></a>, <a href="#_class_geosrspavlovprojection"><code>geosrs:PavlovProjection</code></a>, <a href="#_class_geosrstoblercylindricaliiprojection"><code>geosrs:ToblerCylindricalIIProjection</code></a>, <a href="#_class_geosrstoblercylindricaliprojection"><code>geosrs:ToblerCylindricalIProjection</code></a>, <a href="#_class_geosrsurmayeviiiprojection"><code>geosrs:UrmayevIIIProjection</code></a>, <a href="#_class_geosrswebmercatorprojection"><code>geosrs:WebMercatorProjection</code></a> to be used in SPARQL graph patterns.</p>
@@ -2185,7 +2571,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsardencloseprojection">Class: geosrs:ArdenCloseProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 74. geosrs:ArdenCloseProjection</caption>
+<caption class="title">Table 88. geosrs:ArdenCloseProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -2205,7 +2591,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsbraunperspectiveprojection">Class: geosrs:BraunPerspectiveProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 75. geosrs:BraunPerspectiveProjection</caption>
+<caption class="title">Table 89. geosrs:BraunPerspectiveProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -2225,7 +2611,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrscompactmillerprojection">Class: geosrs:CompactMillerProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 76. geosrs:CompactMillerProjection</caption>
+<caption class="title">Table 90. geosrs:CompactMillerProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -2245,7 +2631,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrscylindricalstereographicprojection">Class: geosrs:CylindricalStereographicProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 77. geosrs:CylindricalStereographicProjection</caption>
+<caption class="title">Table 91. geosrs:CylindricalStereographicProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -2265,7 +2651,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrskarchenkoshabanovaprojection">Class: geosrs:KarchenkoShabanovaProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 78. geosrs:KarchenkoShabanovaProjection</caption>
+<caption class="title">Table 92. geosrs:KarchenkoShabanovaProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -2285,7 +2671,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrslabordeprojection">Class: geosrs:LabordeProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 79. geosrs:LabordeProjection</caption>
+<caption class="title">Table 93. geosrs:LabordeProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -2305,7 +2691,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsmercatorprojection">Class: geosrs:MercatorProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 80. geosrs:MercatorProjection</caption>
+<caption class="title">Table 94. geosrs:MercatorProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -2325,7 +2711,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsmillerprojection">Class: geosrs:MillerProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 81. geosrs:MillerProjection</caption>
+<caption class="title">Table 95. geosrs:MillerProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -2345,7 +2731,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrspattersoncylindricalprojection">Class: geosrs:PattersonCylindricalProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 82. geosrs:PattersonCylindricalProjection</caption>
+<caption class="title">Table 96. geosrs:PattersonCylindricalProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -2365,7 +2751,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrspavlovprojection">Class: geosrs:PavlovProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 83. geosrs:PavlovProjection</caption>
+<caption class="title">Table 97. geosrs:PavlovProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -2385,7 +2771,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrstoblercylindricaliiprojection">Class: geosrs:ToblerCylindricalIIProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 84. geosrs:ToblerCylindricalIIProjection</caption>
+<caption class="title">Table 98. geosrs:ToblerCylindricalIIProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -2405,7 +2791,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrstoblercylindricaliprojection">Class: geosrs:ToblerCylindricalIProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 85. geosrs:ToblerCylindricalIProjection</caption>
+<caption class="title">Table 99. geosrs:ToblerCylindricalIProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -2425,7 +2811,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsurmayeviiiprojection">Class: geosrs:UrmayevIIIProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 86. geosrs:UrmayevIIIProjection</caption>
+<caption class="title">Table 100. geosrs:UrmayevIIIProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -2445,7 +2831,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrswebmercatorprojection">Class: geosrs:WebMercatorProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 87. geosrs:WebMercatorProjection</caption>
+<caption class="title">Table 101. geosrs:WebMercatorProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -2466,7 +2852,7 @@ Here&#8217;s an example of an example term.
 <section class="sect3">
 <h4 id="_equal_area_projections">Equal Area Projections</h4>
 <aside class="example">
-<div class="title">Example 15. Equal Area Projections</div>
+<div class="title">Example 19. Equal Area Projections</div>
 <div class="content">
 <p class="paragraph">
 <p>Implementations shall allow the RDFS classes <a href="#_class_geosrsalbersequalareaprojection"><code>geosrs:AlbersEqualAreaProjection</code></a>, <a href="#_class_geosrsazimuthalequalareaprojection"><code>geosrs:AzimuthalEqualAreaProjection</code></a>, <a href="#_class_geosrscylindricalequalarea"><code>geosrs:CylindricalEqualArea</code></a>, <a href="#_class_geosrsgallpetersprojection"><code>geosrs:GallPetersProjection</code></a>, <a href="#_class_geosrshobodyerprojection"><code>geosrs:HoboDyerProjection</code></a>, <a href="#_class_geosrslambertazimuthalequalarea"><code>geosrs:LambertAzimuthalEqualArea</code></a>, <a href="#_class_geosrstrystanedwardsprojection"><code>geosrs:TrystanEdwardsProjection</code></a>, <a href="#_class_geosrswiechelprojection"><code>geosrs:WiechelProjection</code></a> to be used in SPARQL graph patterns.</p>
@@ -2476,7 +2862,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsalbersequalareaprojection">Class: geosrs:AlbersEqualAreaProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 88. geosrs:AlbersEqualAreaProjection</caption>
+<caption class="title">Table 102. geosrs:AlbersEqualAreaProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -2496,7 +2882,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsazimuthalequalareaprojection">Class: geosrs:AzimuthalEqualAreaProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 89. geosrs:AzimuthalEqualAreaProjection</caption>
+<caption class="title">Table 103. geosrs:AzimuthalEqualAreaProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -2516,7 +2902,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrscylindricalequalarea">Class: geosrs:CylindricalEqualArea</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 90. geosrs:CylindricalEqualArea</caption>
+<caption class="title">Table 104. geosrs:CylindricalEqualArea</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -2536,7 +2922,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsgallpetersprojection">Class: geosrs:GallPetersProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 91. geosrs:GallPetersProjection</caption>
+<caption class="title">Table 105. geosrs:GallPetersProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -2556,7 +2942,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrshobodyerprojection">Class: geosrs:HoboDyerProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 92. geosrs:HoboDyerProjection</caption>
+<caption class="title">Table 106. geosrs:HoboDyerProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -2576,7 +2962,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrslambertazimuthalequalarea">Class: geosrs:LambertAzimuthalEqualArea</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 93. geosrs:LambertAzimuthalEqualArea</caption>
+<caption class="title">Table 107. geosrs:LambertAzimuthalEqualArea</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -2596,7 +2982,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrstrystanedwardsprojection">Class: geosrs:TrystanEdwardsProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 94. geosrs:TrystanEdwardsProjection</caption>
+<caption class="title">Table 108. geosrs:TrystanEdwardsProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -2616,7 +3002,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrswiechelprojection">Class: geosrs:WiechelProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 95. geosrs:WiechelProjection</caption>
+<caption class="title">Table 109. geosrs:WiechelProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -2637,7 +3023,7 @@ Here&#8217;s an example of an example term.
 <section class="sect3">
 <h4 id="_equidistant_projections">Equidistant Projections</h4>
 <aside class="example">
-<div class="title">Example 16. Equidistant Projections</div>
+<div class="title">Example 20. Equidistant Projections</div>
 <div class="content">
 <p class="paragraph">
 <p>Implementations shall allow the RDFS classes <a href="#_class_geosrsazimuthalequidistantprojection"><code>geosrs:AzimuthalEquidistantProjection</code></a>, <a href="#_class_geosrsberghausstarprojection"><code>geosrs:BerghausStarProjection</code></a>, <a href="#_class_geosrscassiniprojection"><code>geosrs:CassiniProjection</code></a>, <a href="#_class_geosrsequidistantconicprojection"><code>geosrs:EquidistantConicProjection</code></a>, <a href="#_class_geosrsequidistantcylindricalprojection"><code>geosrs:EquidistantCylindricalProjection</code></a>, <a href="#_class_geosrsequirectangularprojection"><code>geosrs:EquirectangularProjection</code></a>, <a href="#_class_geosrsobliqueplatecarreeprojection"><code>geosrs:ObliquePlateCarreeProjection</code></a>, <a href="#_class_geosrsplatecarreeprojection"><code>geosrs:PlateCarreeProjection</code></a>, <a href="#_class_geosrstwopointequidistantprojection"><code>geosrs:TwoPointEquidistantProjection</code></a> to be used in SPARQL graph patterns.</p>
@@ -2647,7 +3033,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsazimuthalequidistantprojection">Class: geosrs:AzimuthalEquidistantProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 96. geosrs:AzimuthalEquidistantProjection</caption>
+<caption class="title">Table 110. geosrs:AzimuthalEquidistantProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -2667,7 +3053,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsberghausstarprojection">Class: geosrs:BerghausStarProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 97. geosrs:BerghausStarProjection</caption>
+<caption class="title">Table 111. geosrs:BerghausStarProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -2687,7 +3073,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrscassiniprojection">Class: geosrs:CassiniProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 98. geosrs:CassiniProjection</caption>
+<caption class="title">Table 112. geosrs:CassiniProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -2711,7 +3097,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsequidistantconicprojection">Class: geosrs:EquidistantConicProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 99. geosrs:EquidistantConicProjection</caption>
+<caption class="title">Table 113. geosrs:EquidistantConicProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -2731,7 +3117,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsequidistantcylindricalprojection">Class: geosrs:EquidistantCylindricalProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 100. geosrs:EquidistantCylindricalProjection</caption>
+<caption class="title">Table 114. geosrs:EquidistantCylindricalProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -2751,7 +3137,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsequirectangularprojection">Class: geosrs:EquirectangularProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 101. geosrs:EquirectangularProjection</caption>
+<caption class="title">Table 115. geosrs:EquirectangularProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -2771,7 +3157,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsobliqueplatecarreeprojection">Class: geosrs:ObliquePlateCarreeProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 102. geosrs:ObliquePlateCarreeProjection</caption>
+<caption class="title">Table 116. geosrs:ObliquePlateCarreeProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -2791,7 +3177,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsplatecarreeprojection">Class: geosrs:PlateCarreeProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 103. geosrs:PlateCarreeProjection</caption>
+<caption class="title">Table 117. geosrs:PlateCarreeProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -2811,7 +3197,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrstwopointequidistantprojection">Class: geosrs:TwoPointEquidistantProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 104. geosrs:TwoPointEquidistantProjection</caption>
+<caption class="title">Table 118. geosrs:TwoPointEquidistantProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -2832,7 +3218,7 @@ Here&#8217;s an example of an example term.
 <section class="sect3">
 <h4 id="_globular_projections">Globular Projections</h4>
 <aside class="example">
-<div class="title">Example 17. Globular Projections</div>
+<div class="title">Example 21. Globular Projections</div>
 <div class="content">
 <p class="paragraph">
 <p>Implementations shall allow the RDFS classes <a href="#_class_geosrsapianglobulariprojection"><code>geosrs:ApianGlobularIProjection</code></a>, <a href="#_class_geosrsbaconglobularprojection"><code>geosrs:BaconGlobularProjection</code></a>, <a href="#_class_geosrsfournierglobulariprojection"><code>geosrs:FournierGlobularIProjection</code></a> to be used in SPARQL graph patterns.</p>
@@ -2842,7 +3228,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsapianglobulariprojection">Class: geosrs:ApianGlobularIProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 105. geosrs:ApianGlobularIProjection</caption>
+<caption class="title">Table 119. geosrs:ApianGlobularIProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -2862,7 +3248,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsbaconglobularprojection">Class: geosrs:BaconGlobularProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 106. geosrs:BaconGlobularProjection</caption>
+<caption class="title">Table 120. geosrs:BaconGlobularProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -2882,7 +3268,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsfournierglobulariprojection">Class: geosrs:FournierGlobularIProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 107. geosrs:FournierGlobularIProjection</caption>
+<caption class="title">Table 121. geosrs:FournierGlobularIProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -2903,7 +3289,7 @@ Here&#8217;s an example of an example term.
 <section class="sect3">
 <h4 id="_lenticular_projections">Lenticular Projections</h4>
 <aside class="example">
-<div class="title">Example 18. Lenticular Projections</div>
+<div class="title">Example 22. Lenticular Projections</div>
 <div class="content">
 <p class="paragraph">
 <p>Implementations shall allow the RDFS classes <a href="#_class_geosrsa4projection"><code>geosrs:A4Projection</code></a>, <a href="#_class_geosrsbriesemeisterprojection"><code>geosrs:BriesemeisterProjection</code></a>, <a href="#_class_geosrsciriciprojection"><code>geosrs:CiricIProjection</code></a>, <a href="#_class_geosrscupolaprojection"><code>geosrs:CupolaProjection</code></a>, <a href="#_class_geosrsdedistortprojection"><code>geosrs:DedistortProjection</code></a>, <a href="#_class_geosrsdietrichkitadaprojection"><code>geosrs:DietrichKitadaProjection</code></a>, <a href="#_class_geosrsfranculaiiiprojection"><code>geosrs:FranculaIIIProjection</code></a>, <a href="#_class_geosrsfranculaivprojection"><code>geosrs:FranculaIVProjection</code></a>, <a href="#_class_geosrsfranculaixprojection"><code>geosrs:FranculaIXProjection</code></a>, <a href="#_class_geosrsfranculaviiiprojection"><code>geosrs:FranculaVIIIProjection</code></a>, <a href="#_class_geosrsfranculavprojection"><code>geosrs:FranculaVProjection</code></a>, <a href="#_class_geosrsfranculaxiiiprojection"><code>geosrs:FranculaXIIIProjection</code></a>, <a href="#_class_geosrsfranculaxiiprojection"><code>geosrs:FranculaXIIProjection</code></a>, <a href="#_class_geosrsfranculaxivprojection"><code>geosrs:FranculaXIVProjection</code></a>, <a href="#_class_geosrshamusoidalprojection"><code>geosrs:HamusoidalProjection</code></a>, <a href="#_class_geosrskissprojection"><code>geosrs:KissProjection</code></a> to be used in SPARQL graph patterns.</p>
@@ -2913,7 +3299,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsa4projection">Class: geosrs:A4Projection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 108. geosrs:A4Projection</caption>
+<caption class="title">Table 122. geosrs:A4Projection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -2933,7 +3319,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsbriesemeisterprojection">Class: geosrs:BriesemeisterProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 109. geosrs:BriesemeisterProjection</caption>
+<caption class="title">Table 123. geosrs:BriesemeisterProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -2953,7 +3339,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsciriciprojection">Class: geosrs:CiricIProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 110. geosrs:CiricIProjection</caption>
+<caption class="title">Table 124. geosrs:CiricIProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -2973,7 +3359,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrscupolaprojection">Class: geosrs:CupolaProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 111. geosrs:CupolaProjection</caption>
+<caption class="title">Table 125. geosrs:CupolaProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -2993,7 +3379,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsdedistortprojection">Class: geosrs:DedistortProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 112. geosrs:DedistortProjection</caption>
+<caption class="title">Table 126. geosrs:DedistortProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -3013,7 +3399,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsdietrichkitadaprojection">Class: geosrs:DietrichKitadaProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 113. geosrs:DietrichKitadaProjection</caption>
+<caption class="title">Table 127. geosrs:DietrichKitadaProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -3033,7 +3419,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsfranculaiiiprojection">Class: geosrs:FranculaIIIProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 114. geosrs:FranculaIIIProjection</caption>
+<caption class="title">Table 128. geosrs:FranculaIIIProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -3053,7 +3439,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsfranculaivprojection">Class: geosrs:FranculaIVProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 115. geosrs:FranculaIVProjection</caption>
+<caption class="title">Table 129. geosrs:FranculaIVProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -3073,7 +3459,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsfranculaixprojection">Class: geosrs:FranculaIXProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 116. geosrs:FranculaIXProjection</caption>
+<caption class="title">Table 130. geosrs:FranculaIXProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -3093,7 +3479,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsfranculaviiiprojection">Class: geosrs:FranculaVIIIProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 117. geosrs:FranculaVIIIProjection</caption>
+<caption class="title">Table 131. geosrs:FranculaVIIIProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -3113,7 +3499,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsfranculavprojection">Class: geosrs:FranculaVProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 118. geosrs:FranculaVProjection</caption>
+<caption class="title">Table 132. geosrs:FranculaVProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -3133,7 +3519,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsfranculaxiiiprojection">Class: geosrs:FranculaXIIIProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 119. geosrs:FranculaXIIIProjection</caption>
+<caption class="title">Table 133. geosrs:FranculaXIIIProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -3153,7 +3539,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsfranculaxiiprojection">Class: geosrs:FranculaXIIProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 120. geosrs:FranculaXIIProjection</caption>
+<caption class="title">Table 134. geosrs:FranculaXIIProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -3173,7 +3559,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsfranculaxivprojection">Class: geosrs:FranculaXIVProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 121. geosrs:FranculaXIVProjection</caption>
+<caption class="title">Table 135. geosrs:FranculaXIVProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -3193,7 +3579,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrshamusoidalprojection">Class: geosrs:HamusoidalProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 122. geosrs:HamusoidalProjection</caption>
+<caption class="title">Table 136. geosrs:HamusoidalProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -3213,7 +3599,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrskissprojection">Class: geosrs:KissProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 123. geosrs:KissProjection</caption>
+<caption class="title">Table 137. geosrs:KissProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -3234,7 +3620,7 @@ Here&#8217;s an example of an example term.
 <section class="sect3">
 <h4 id="_minimum_error_projections">Minimum Error Projections</h4>
 <aside class="example">
-<div class="title">Example 19. Minimum Error Projections</div>
+<div class="title">Example 23. Minimum Error Projections</div>
 <div class="content">
 <p class="paragraph">
 <p>Implementations shall allow the RDFS classes <a href="#_class_geosrsairyprojection"><code>geosrs:AiryProjection</code></a> to be used in SPARQL graph patterns.</p>
@@ -3244,7 +3630,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsairyprojection">Class: geosrs:AiryProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 124. geosrs:AiryProjection</caption>
+<caption class="title">Table 138. geosrs:AiryProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -3269,7 +3655,7 @@ Here&#8217;s an example of an example term.
 <section class="sect3">
 <h4 id="_perspective_projections">Perspective Projections</h4>
 <aside class="example">
-<div class="title">Example 20. Perspective Projections</div>
+<div class="title">Example 24. Perspective Projections</div>
 <div class="content">
 <p class="paragraph">
 <p>Implementations shall allow the RDFS classes <a href="#_class_geosrscentralcylindricalprojection"><code>geosrs:CentralCylindricalProjection</code></a>, <a href="#_class_geosrsgeneralverticalperspectiveprojection"><code>geosrs:GeneralVerticalPerspectiveProjection</code></a>, <a href="#_class_geosrsgilberttwoworldperspectiveprojection"><code>geosrs:GilbertTwoWorldPerspectiveProjection</code></a>, <a href="#_class_geosrslahireprojection"><code>geosrs:LaHireProjection</code></a>, <a href="#_class_geosrslorgnaprojection"><code>geosrs:LorgnaProjection</code></a>, <a href="#_class_geosrslowryprojection"><code>geosrs:LowryProjection</code></a>, <a href="#_class_geosrsorthographicprojection"><code>geosrs:OrthographicProjection</code></a>, <a href="#_class_geosrsperspectiveconicprojection"><code>geosrs:PerspectiveConicProjection</code></a>, <a href="#_class_geosrstiltedperspectiveprojection"><code>geosrs:TiltedPerspectiveProjection</code></a>, <a href="#_class_geosrsverticalperspectiveprojection"><code>geosrs:VerticalPerspectiveProjection</code></a> to be used in SPARQL graph patterns.</p>
@@ -3279,7 +3665,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrscentralcylindricalprojection">Class: geosrs:CentralCylindricalProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 125. geosrs:CentralCylindricalProjection</caption>
+<caption class="title">Table 139. geosrs:CentralCylindricalProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -3299,7 +3685,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsgeneralverticalperspectiveprojection">Class: geosrs:GeneralVerticalPerspectiveProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 126. geosrs:GeneralVerticalPerspectiveProjection</caption>
+<caption class="title">Table 140. geosrs:GeneralVerticalPerspectiveProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -3319,7 +3705,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsgilberttwoworldperspectiveprojection">Class: geosrs:GilbertTwoWorldPerspectiveProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 127. geosrs:GilbertTwoWorldPerspectiveProjection</caption>
+<caption class="title">Table 141. geosrs:GilbertTwoWorldPerspectiveProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -3339,7 +3725,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrslahireprojection">Class: geosrs:LaHireProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 128. geosrs:LaHireProjection</caption>
+<caption class="title">Table 142. geosrs:LaHireProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -3359,7 +3745,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrslorgnaprojection">Class: geosrs:LorgnaProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 129. geosrs:LorgnaProjection</caption>
+<caption class="title">Table 143. geosrs:LorgnaProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -3379,7 +3765,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrslowryprojection">Class: geosrs:LowryProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 130. geosrs:LowryProjection</caption>
+<caption class="title">Table 144. geosrs:LowryProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -3399,7 +3785,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsorthographicprojection">Class: geosrs:OrthographicProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 131. geosrs:OrthographicProjection</caption>
+<caption class="title">Table 145. geosrs:OrthographicProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -3419,7 +3805,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsperspectiveconicprojection">Class: geosrs:PerspectiveConicProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 132. geosrs:PerspectiveConicProjection</caption>
+<caption class="title">Table 146. geosrs:PerspectiveConicProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -3439,7 +3825,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrstiltedperspectiveprojection">Class: geosrs:TiltedPerspectiveProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 133. geosrs:TiltedPerspectiveProjection</caption>
+<caption class="title">Table 147. geosrs:TiltedPerspectiveProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -3459,7 +3845,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsverticalperspectiveprojection">Class: geosrs:VerticalPerspectiveProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 134. geosrs:VerticalPerspectiveProjection</caption>
+<caption class="title">Table 148. geosrs:VerticalPerspectiveProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -3480,7 +3866,7 @@ Here&#8217;s an example of an example term.
 <section class="sect3">
 <h4 id="_polyconic_projections">Polyconic Projections</h4>
 <aside class="example">
-<div class="title">Example 21. Polyconic Projections</div>
+<div class="title">Example 25. Polyconic Projections</div>
 <div class="content">
 <p class="paragraph">
 <p>Implementations shall allow the RDFS classes <a href="#_class_geosrsginzburgivprojection"><code>geosrs:GinzburgIVProjection</code></a>, <a href="#_class_geosrsginzburgixprojection"><code>geosrs:GinzburgIXProjection</code></a>, <a href="#_class_geosrsginzburgviprojection"><code>geosrs:GinzburgVIProjection</code></a>, <a href="#_class_geosrsginzburgvprojection"><code>geosrs:GinzburgVProjection</code></a>, <a href="#_class_geosrsgottwagnerprojection"><code>geosrs:GottWagnerProjection</code></a>, <a href="#_class_geosrshilleucyclicprojection"><code>geosrs:HillEucyclicProjection</code></a>, <a href="#_class_geosrslagrangeprojection"><code>geosrs:LagrangeProjection</code></a>, <a href="#_class_geosrslaskowskiprojection"><code>geosrs:LaskowskiProjection</code></a>, <a href="#_class_geosrsrectangularpolyconicprojection"><code>geosrs:RectangularPolyconicProjection</code></a>, <a href="#_class_geosrsstabiuswerneriiiprojection"><code>geosrs:StabiusWernerIIIProjection</code></a>, <a href="#_class_geosrsstabiuswerneriprojection"><code>geosrs:StabiusWernerIProjection</code></a>, <a href="#_class_geosrsvandergrinteniiprojection"><code>geosrs:VanDerGrintenIIProjection</code></a>, <a href="#_class_geosrsvandergrinteniprojection"><code>geosrs:VanDerGrintenIProjection</code></a>, <a href="#_class_geosrsvandergrintenivprojection"><code>geosrs:VanDerGrintenIVProjection</code></a>, <a href="#_class_geosrswagnerixprojection"><code>geosrs:WagnerIXProjection</code></a>, <a href="#_class_geosrswagnerviiiprojection"><code>geosrs:WagnerVIIIProjection</code></a>, <a href="#_class_geosrswagnerviiprojection"><code>geosrs:WagnerVIIProjection</code></a> to be used in SPARQL graph patterns.</p>
@@ -3490,7 +3876,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsginzburgivprojection">Class: geosrs:GinzburgIVProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 135. geosrs:GinzburgIVProjection</caption>
+<caption class="title">Table 149. geosrs:GinzburgIVProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -3510,7 +3896,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsginzburgixprojection">Class: geosrs:GinzburgIXProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 136. geosrs:GinzburgIXProjection</caption>
+<caption class="title">Table 150. geosrs:GinzburgIXProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -3530,7 +3916,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsginzburgviprojection">Class: geosrs:GinzburgVIProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 137. geosrs:GinzburgVIProjection</caption>
+<caption class="title">Table 151. geosrs:GinzburgVIProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -3550,7 +3936,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsginzburgvprojection">Class: geosrs:GinzburgVProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 138. geosrs:GinzburgVProjection</caption>
+<caption class="title">Table 152. geosrs:GinzburgVProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -3570,7 +3956,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsgottwagnerprojection">Class: geosrs:GottWagnerProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 139. geosrs:GottWagnerProjection</caption>
+<caption class="title">Table 153. geosrs:GottWagnerProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -3590,7 +3976,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrshilleucyclicprojection">Class: geosrs:HillEucyclicProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 140. geosrs:HillEucyclicProjection</caption>
+<caption class="title">Table 154. geosrs:HillEucyclicProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -3610,7 +3996,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrslagrangeprojection">Class: geosrs:LagrangeProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 141. geosrs:LagrangeProjection</caption>
+<caption class="title">Table 155. geosrs:LagrangeProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -3630,7 +4016,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrslaskowskiprojection">Class: geosrs:LaskowskiProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 142. geosrs:LaskowskiProjection</caption>
+<caption class="title">Table 156. geosrs:LaskowskiProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -3650,7 +4036,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsrectangularpolyconicprojection">Class: geosrs:RectangularPolyconicProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 143. geosrs:RectangularPolyconicProjection</caption>
+<caption class="title">Table 157. geosrs:RectangularPolyconicProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -3670,7 +4056,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsstabiuswerneriiiprojection">Class: geosrs:StabiusWernerIIIProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 144. geosrs:StabiusWernerIIIProjection</caption>
+<caption class="title">Table 158. geosrs:StabiusWernerIIIProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -3690,7 +4076,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsstabiuswerneriprojection">Class: geosrs:StabiusWernerIProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 145. geosrs:StabiusWernerIProjection</caption>
+<caption class="title">Table 159. geosrs:StabiusWernerIProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -3710,7 +4096,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsvandergrinteniiprojection">Class: geosrs:VanDerGrintenIIProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 146. geosrs:VanDerGrintenIIProjection</caption>
+<caption class="title">Table 160. geosrs:VanDerGrintenIIProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -3730,7 +4116,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsvandergrinteniprojection">Class: geosrs:VanDerGrintenIProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 147. geosrs:VanDerGrintenIProjection</caption>
+<caption class="title">Table 161. geosrs:VanDerGrintenIProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -3750,7 +4136,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsvandergrintenivprojection">Class: geosrs:VanDerGrintenIVProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 148. geosrs:VanDerGrintenIVProjection</caption>
+<caption class="title">Table 162. geosrs:VanDerGrintenIVProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -3770,7 +4156,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrswagnerixprojection">Class: geosrs:WagnerIXProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 149. geosrs:WagnerIXProjection</caption>
+<caption class="title">Table 163. geosrs:WagnerIXProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -3790,7 +4176,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrswagnerviiiprojection">Class: geosrs:WagnerVIIIProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 150. geosrs:WagnerVIIIProjection</caption>
+<caption class="title">Table 164. geosrs:WagnerVIIIProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -3810,7 +4196,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrswagnerviiprojection">Class: geosrs:WagnerVIIProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 151. geosrs:WagnerVIIProjection</caption>
+<caption class="title">Table 165. geosrs:WagnerVIIProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -3831,7 +4217,7 @@ Here&#8217;s an example of an example term.
 <section class="sect3">
 <h4 id="_polyhedral_projections">Polyhedral Projections</h4>
 <aside class="example">
-<div class="title">Example 22. Polyhedral Projections</div>
+<div class="title">Example 26. Polyhedral Projections</div>
 <div class="content">
 <p class="paragraph">
 <p>Implementations shall allow the RDFS classes <a href="#_class_geosrsauthagraphprojection"><code>geosrs:AuthaGraphProjection</code></a>, <a href="#_class_geosrscahillkeyesprojection"><code>geosrs:CahillKeyesProjection</code></a>, <a href="#_class_geosrscollignonbutterflyprojection"><code>geosrs:CollignonButterflyProjection</code></a>, <a href="#_class_geosrsdodecahedralprojection"><code>geosrs:DodecahedralProjection</code></a>, <a href="#_class_geosrsdymaxionprojection"><code>geosrs:DymaxionProjection</code></a>, <a href="#_class_geosrsgnomonicbutterflyprojection"><code>geosrs:GnomonicButterflyProjection</code></a>, <a href="#_class_geosrsgnomoniccubedsphereprojection"><code>geosrs:GnomonicCubedSphereProjection</code></a>, <a href="#_class_geosrsgnomonicicosahedronprojection"><code>geosrs:GnomonicIcosahedronProjection</code></a>, <a href="#_class_geosrsguyouprojection"><code>geosrs:GuyouProjection</code></a>, <a href="#_class_geosrsicosahedralprojection"><code>geosrs:IcosahedralProjection</code></a>, <a href="#_class_geosrsleeprojection"><code>geosrs:LeeProjection</code></a>, <a href="#_class_geosrsmyrahedalprojection"><code>geosrs:MyrahedalProjection</code></a>, <a href="#_class_geosrsoctantprojection"><code>geosrs:OctantProjection</code></a>, <a href="#_class_geosrsquadrilateralizedsphericalcubeprojection"><code>geosrs:QuadrilateralizedSphericalCubeProjection</code></a>, <a href="#_class_geosrswatermanbutterflyprojection"><code>geosrs:WatermanButterflyProjection</code></a> to be used in SPARQL graph patterns.</p>
@@ -3841,7 +4227,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsauthagraphprojection">Class: geosrs:AuthaGraphProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 152. geosrs:AuthaGraphProjection</caption>
+<caption class="title">Table 166. geosrs:AuthaGraphProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -3861,7 +4247,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrscahillkeyesprojection">Class: geosrs:CahillKeyesProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 153. geosrs:CahillKeyesProjection</caption>
+<caption class="title">Table 167. geosrs:CahillKeyesProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -3881,7 +4267,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrscollignonbutterflyprojection">Class: geosrs:CollignonButterflyProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 154. geosrs:CollignonButterflyProjection</caption>
+<caption class="title">Table 168. geosrs:CollignonButterflyProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -3901,7 +4287,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsdodecahedralprojection">Class: geosrs:DodecahedralProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 155. geosrs:DodecahedralProjection</caption>
+<caption class="title">Table 169. geosrs:DodecahedralProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -3921,7 +4307,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsdymaxionprojection">Class: geosrs:DymaxionProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 156. geosrs:DymaxionProjection</caption>
+<caption class="title">Table 170. geosrs:DymaxionProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -3941,7 +4327,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsgnomonicbutterflyprojection">Class: geosrs:GnomonicButterflyProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 157. geosrs:GnomonicButterflyProjection</caption>
+<caption class="title">Table 171. geosrs:GnomonicButterflyProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -3961,7 +4347,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsgnomoniccubedsphereprojection">Class: geosrs:GnomonicCubedSphereProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 158. geosrs:GnomonicCubedSphereProjection</caption>
+<caption class="title">Table 172. geosrs:GnomonicCubedSphereProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -3981,7 +4367,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsgnomonicicosahedronprojection">Class: geosrs:GnomonicIcosahedronProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 159. geosrs:GnomonicIcosahedronProjection</caption>
+<caption class="title">Table 173. geosrs:GnomonicIcosahedronProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -4001,7 +4387,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsguyouprojection">Class: geosrs:GuyouProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 160. geosrs:GuyouProjection</caption>
+<caption class="title">Table 174. geosrs:GuyouProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -4021,7 +4407,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsicosahedralprojection">Class: geosrs:IcosahedralProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 161. geosrs:IcosahedralProjection</caption>
+<caption class="title">Table 175. geosrs:IcosahedralProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -4041,7 +4427,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsleeprojection">Class: geosrs:LeeProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 162. geosrs:LeeProjection</caption>
+<caption class="title">Table 176. geosrs:LeeProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -4061,7 +4447,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsmyrahedalprojection">Class: geosrs:MyrahedalProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 163. geosrs:MyrahedalProjection</caption>
+<caption class="title">Table 177. geosrs:MyrahedalProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -4081,7 +4467,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsoctantprojection">Class: geosrs:OctantProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 164. geosrs:OctantProjection</caption>
+<caption class="title">Table 178. geosrs:OctantProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -4101,7 +4487,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsquadrilateralizedsphericalcubeprojection">Class: geosrs:QuadrilateralizedSphericalCubeProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 165. geosrs:QuadrilateralizedSphericalCubeProjection</caption>
+<caption class="title">Table 179. geosrs:QuadrilateralizedSphericalCubeProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -4121,7 +4507,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrswatermanbutterflyprojection">Class: geosrs:WatermanButterflyProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 166. geosrs:WatermanButterflyProjection</caption>
+<caption class="title">Table 180. geosrs:WatermanButterflyProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -4142,7 +4528,7 @@ Here&#8217;s an example of an example term.
 <section class="sect3">
 <h4 id="_pseudo_azimuthal_projections">Pseudo Azimuthal Projections</h4>
 <aside class="example">
-<div class="title">Example 23. Pseudo Azimuthal Projections</div>
+<div class="title">Example 27. Pseudo Azimuthal Projections</div>
 <div class="content">
 <p class="paragraph">
 <p>Implementations shall allow the RDFS classes <a href="#_class_geosrsaitoffobliqueprojection"><code>geosrs:AitoffObliqueProjection</code></a>, <a href="#_class_geosrsaitoffprojection"><code>geosrs:AitoffProjection</code></a>, <a href="#_class_geosrshammerprojection"><code>geosrs:HammerProjection</code></a>, <a href="#_class_geosrsstrebe1995projection"><code>geosrs:Strebe1995Projection</code></a>, <a href="#_class_geosrswinkeltripelprojection"><code>geosrs:WinkelTripelProjection</code></a> to be used in SPARQL graph patterns.</p>
@@ -4152,7 +4538,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsaitoffobliqueprojection">Class: geosrs:AitoffObliqueProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 167. geosrs:AitoffObliqueProjection</caption>
+<caption class="title">Table 181. geosrs:AitoffObliqueProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -4172,7 +4558,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsaitoffprojection">Class: geosrs:AitoffProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 168. geosrs:AitoffProjection</caption>
+<caption class="title">Table 182. geosrs:AitoffProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -4196,7 +4582,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrshammerprojection">Class: geosrs:HammerProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 169. geosrs:HammerProjection</caption>
+<caption class="title">Table 183. geosrs:HammerProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -4216,7 +4602,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsstrebe1995projection">Class: geosrs:Strebe1995Projection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 170. geosrs:Strebe1995Projection</caption>
+<caption class="title">Table 184. geosrs:Strebe1995Projection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -4236,7 +4622,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrswinkeltripelprojection">Class: geosrs:WinkelTripelProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 171. geosrs:WinkelTripelProjection</caption>
+<caption class="title">Table 185. geosrs:WinkelTripelProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -4257,7 +4643,7 @@ Here&#8217;s an example of an example term.
 <section class="sect3">
 <h4 id="_pseudo_conical_projections">Pseudo Conical Projections</h4>
 <aside class="example">
-<div class="title">Example 24. Pseudo Conical Projections</div>
+<div class="title">Example 28. Pseudo Conical Projections</div>
 <div class="content">
 <p class="paragraph">
 <p>Implementations shall allow the RDFS classes <a href="#_class_geosrsamericanpolyconicprojection"><code>geosrs:AmericanPolyconicProjection</code></a>, <a href="#_class_geosrsbonneprojection"><code>geosrs:BonneProjection</code></a>, <a href="#_class_geosrsbottomleyprojection"><code>geosrs:BottomleyProjection</code></a>, <a href="#_class_geosrsnicolosiglobularprojection"><code>geosrs:NicolosiGlobularProjection</code></a>, <a href="#_class_geosrsptolemyiiprojection"><code>geosrs:PtolemyIIProjection</code></a>, <a href="#_class_geosrswernerprojection"><code>geosrs:WernerProjection</code></a> to be used in SPARQL graph patterns.</p>
@@ -4267,7 +4653,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsamericanpolyconicprojection">Class: geosrs:AmericanPolyconicProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 172. geosrs:AmericanPolyconicProjection</caption>
+<caption class="title">Table 186. geosrs:AmericanPolyconicProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -4287,7 +4673,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsbonneprojection">Class: geosrs:BonneProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 173. geosrs:BonneProjection</caption>
+<caption class="title">Table 187. geosrs:BonneProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -4307,7 +4693,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsbottomleyprojection">Class: geosrs:BottomleyProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 174. geosrs:BottomleyProjection</caption>
+<caption class="title">Table 188. geosrs:BottomleyProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -4327,7 +4713,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsnicolosiglobularprojection">Class: geosrs:NicolosiGlobularProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 175. geosrs:NicolosiGlobularProjection</caption>
+<caption class="title">Table 189. geosrs:NicolosiGlobularProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -4347,7 +4733,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsptolemyiiprojection">Class: geosrs:PtolemyIIProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 176. geosrs:PtolemyIIProjection</caption>
+<caption class="title">Table 190. geosrs:PtolemyIIProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -4367,7 +4753,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrswernerprojection">Class: geosrs:WernerProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 177. geosrs:WernerProjection</caption>
+<caption class="title">Table 191. geosrs:WernerProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -4388,7 +4774,7 @@ Here&#8217;s an example of an example term.
 <section class="sect3">
 <h4 id="_pseudo_cylindrical_projections">Pseudo Cylindrical Projections</h4>
 <aside class="example">
-<div class="title">Example 25. Pseudo Cylindrical Projections</div>
+<div class="title">Example 29. Pseudo Cylindrical Projections</div>
 <div class="content">
 <p class="paragraph">
 <p>Implementations shall allow the RDFS classes <a href="#_class_geosrsapianiiprojection"><code>geosrs:ApianIIProjection</code></a>, <a href="#_class_geosrsatlantisprojection"><code>geosrs:AtlantisProjection</code></a>, <a href="#_class_geosrsbaranyiiiiprojection"><code>geosrs:BaranyiIIIProjection</code></a>, <a href="#_class_geosrsbaranyiiiprojection"><code>geosrs:BaranyiIIProjection</code></a>, <a href="#_class_geosrsbaranyiiprojection"><code>geosrs:BaranyiIProjection</code></a>, <a href="#_class_geosrsbaranyiivprojection"><code>geosrs:BaranyiIVProjection</code></a>, <a href="#_class_geosrsboggseumorphicprojection"><code>geosrs:BoggsEumorphicProjection</code></a>, <a href="#_class_geosrsbromleyprojection"><code>geosrs:BromleyProjection</code></a>, <a href="#_class_geosrscabotprojection"><code>geosrs:CabotProjection</code></a>, <a href="#_class_geosrscollignonprojection"><code>geosrs:CollignonProjection</code></a>, <a href="#_class_geosrscrasterparabolicprojection"><code>geosrs:CrasterParabolicProjection</code></a>, <a href="#_class_geosrsdeakinminimumerrorprojection"><code>geosrs:DeakinMinimumErrorProjection</code></a>, <a href="#_class_geosrseckert1projection"><code>geosrs:Eckert1Projection</code></a>, <a href="#_class_geosrseckert2projection"><code>geosrs:Eckert2Projection</code></a>, <a href="#_class_geosrseckert3projection"><code>geosrs:Eckert3Projection</code></a>, <a href="#_class_geosrseckert4projection"><code>geosrs:Eckert4Projection</code></a>, <a href="#_class_geosrseckert5projection"><code>geosrs:Eckert5Projection</code></a>, <a href="#_class_geosrseckert6projection"><code>geosrs:Eckert6Projection</code></a>, <a href="#_class_geosrsequalearthprojection"><code>geosrs:EqualEarthProjection</code></a>, <a href="#_class_geosrsfaheyprojection"><code>geosrs:FaheyProjection</code></a>, <a href="#_class_geosrsfoucautprojection"><code>geosrs:FoucautProjection</code></a>, <a href="#_class_geosrsfoucautsinusoidalprojection"><code>geosrs:FoucautSinusoidalProjection</code></a>, <a href="#_class_geosrsfournieriiprojection"><code>geosrs:FournierIIProjection</code></a>, <a href="#_class_geosrsginzburgviiiprojection"><code>geosrs:GinzburgVIIIProjection</code></a>, <a href="#_class_geosrsgoodehomolosineprojection"><code>geosrs:GoodeHomolosineProjection</code></a>, <a href="#_class_geosrshealpixprojection"><code>geosrs:HEALPixProjection</code></a>, <a href="#_class_geosrshufnagelprojection"><code>geosrs:HufnagelProjection</code></a>, <a href="#_class_geosrskavrayskiy7projection"><code>geosrs:Kavrayskiy7Projection</code></a>, <a href="#_class_geosrsloximuthalprojection"><code>geosrs:LoximuthalProjection</code></a>, <a href="#_class_geosrsmayrprojection"><code>geosrs:MayrProjection</code></a>, <a href="#_class_geosrsmcbrydethomasflatpolarparabolicprojection"><code>geosrs:McBrydeThomasFlatPolarParabolicProjection</code></a>, <a href="#_class_geosrsmcbrydethomasflatpolarquarticprojection"><code>geosrs:McBrydeThomasFlatPolarQuarticProjection</code></a>, <a href="#_class_geosrsmcbrydethomasflatpolarsinusoidalprojection"><code>geosrs:McBrydeThomasFlatPolarSinusoidalProjection</code></a>, <a href="#_class_geosrsmcbrydethomasiiprojection"><code>geosrs:McBrydeThomasIIProjection</code></a>, <a href="#_class_geosrsmcbrydethomasiprojection"><code>geosrs:McBrydeThomasIProjection</code></a>, <a href="#_class_geosrsnaturalearth2projection"><code>geosrs:NaturalEarth2Projection</code></a>, <a href="#_class_geosrsnaturalearthprojection"><code>geosrs:NaturalEarthProjection</code></a>, <a href="#_class_geosrsnellhammerprojection"><code>geosrs:NellHammerProjection</code></a>, <a href="#_class_geosrsnellprojection"><code>geosrs:NellProjection</code></a>, <a href="#_class_geosrsorteliusovalprojection"><code>geosrs:OrteliusOvalProjection</code></a>, <a href="#_class_geosrsputninsp1projection"><code>geosrs:PutninsP1Projection</code></a>, <a href="#_class_geosrsputninsp2projection"><code>geosrs:PutninsP2Projection</code></a>, <a href="#_class_geosrsputninsp3projection"><code>geosrs:PutninsP3Projection</code></a>, <a href="#_class_geosrsputninsp5projection"><code>geosrs:PutninsP5Projection</code></a>, <a href="#_class_geosrsputninsp6projection"><code>geosrs:PutninsP6Projection</code></a>, <a href="#_class_geosrsquarticauthalicprojection"><code>geosrs:QuarticAuthalicProjection</code></a>, <a href="#_class_geosrsrobinsonprojection"><code>geosrs:RobinsonProjection</code></a>, <a href="#_class_geosrssinusoidalprojection"><code>geosrs:SinusoidalProjection</code></a>, <a href="#_class_geosrsthetimesprojection"><code>geosrs:TheTimesProjection</code></a>, <a href="#_class_geosrstoblerg1projection"><code>geosrs:ToblerG1Projection</code></a>, <a href="#_class_geosrstoblerhyperellipticalprojection"><code>geosrs:ToblerHyperellipticalProjection</code></a>, <a href="#_class_geosrswagneriiiprojection"><code>geosrs:WagnerIIIProjection</code></a>, <a href="#_class_geosrswagneriiprojection"><code>geosrs:WagnerIIProjection</code></a>, <a href="#_class_geosrswagneriprojection"><code>geosrs:WagnerIProjection</code></a>, <a href="#_class_geosrswagnerivprojection"><code>geosrs:WagnerIVProjection</code></a>, <a href="#_class_geosrswagnerviprojection"><code>geosrs:WagnerVIProjection</code></a>, <a href="#_class_geosrswagnervprojection"><code>geosrs:WagnerVProjection</code></a>, <a href="#_class_geosrswerenskioldiprojection"><code>geosrs:WerenskioldIProjection</code></a>, <a href="#_class_geosrsputninsp3projection_2"><code>geosrs:PutninsP3&#8217;Projection</code></a>, <a href="#_class_geosrsputninsp4projection"><code>geosrs:PutninsP4&#8217;Projection</code></a>, <a href="#_class_geosrsputninsp5projection_2"><code>geosrs:PutninsP5&#8217;Projection</code></a>, <a href="#_class_geosrsputninsp6projection_2"><code>geosrs:PutninsP6&#8217;Projection</code></a> to be used in SPARQL graph patterns.</p>
@@ -4398,7 +4784,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsapianiiprojection">Class: geosrs:ApianIIProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 178. geosrs:ApianIIProjection</caption>
+<caption class="title">Table 192. geosrs:ApianIIProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -4418,7 +4804,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsatlantisprojection">Class: geosrs:AtlantisProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 179. geosrs:AtlantisProjection</caption>
+<caption class="title">Table 193. geosrs:AtlantisProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -4438,7 +4824,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsbaranyiiiiprojection">Class: geosrs:BaranyiIIIProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 180. geosrs:BaranyiIIIProjection</caption>
+<caption class="title">Table 194. geosrs:BaranyiIIIProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -4458,7 +4844,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsbaranyiiiprojection">Class: geosrs:BaranyiIIProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 181. geosrs:BaranyiIIProjection</caption>
+<caption class="title">Table 195. geosrs:BaranyiIIProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -4478,7 +4864,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsbaranyiiprojection">Class: geosrs:BaranyiIProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 182. geosrs:BaranyiIProjection</caption>
+<caption class="title">Table 196. geosrs:BaranyiIProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -4498,7 +4884,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsbaranyiivprojection">Class: geosrs:BaranyiIVProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 183. geosrs:BaranyiIVProjection</caption>
+<caption class="title">Table 197. geosrs:BaranyiIVProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -4518,7 +4904,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsboggseumorphicprojection">Class: geosrs:BoggsEumorphicProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 184. geosrs:BoggsEumorphicProjection</caption>
+<caption class="title">Table 198. geosrs:BoggsEumorphicProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -4538,7 +4924,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsbromleyprojection">Class: geosrs:BromleyProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 185. geosrs:BromleyProjection</caption>
+<caption class="title">Table 199. geosrs:BromleyProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -4558,7 +4944,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrscabotprojection">Class: geosrs:CabotProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 186. geosrs:CabotProjection</caption>
+<caption class="title">Table 200. geosrs:CabotProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -4578,7 +4964,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrscollignonprojection">Class: geosrs:CollignonProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 187. geosrs:CollignonProjection</caption>
+<caption class="title">Table 201. geosrs:CollignonProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -4602,7 +4988,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrscrasterparabolicprojection">Class: geosrs:CrasterParabolicProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 188. geosrs:CrasterParabolicProjection</caption>
+<caption class="title">Table 202. geosrs:CrasterParabolicProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -4622,7 +5008,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsdeakinminimumerrorprojection">Class: geosrs:DeakinMinimumErrorProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 189. geosrs:DeakinMinimumErrorProjection</caption>
+<caption class="title">Table 203. geosrs:DeakinMinimumErrorProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -4642,7 +5028,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrseckert1projection">Class: geosrs:Eckert1Projection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 190. geosrs:Eckert1Projection</caption>
+<caption class="title">Table 204. geosrs:Eckert1Projection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -4662,7 +5048,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrseckert2projection">Class: geosrs:Eckert2Projection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 191. geosrs:Eckert2Projection</caption>
+<caption class="title">Table 205. geosrs:Eckert2Projection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -4682,7 +5068,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrseckert3projection">Class: geosrs:Eckert3Projection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 192. geosrs:Eckert3Projection</caption>
+<caption class="title">Table 206. geosrs:Eckert3Projection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -4702,7 +5088,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrseckert4projection">Class: geosrs:Eckert4Projection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 193. geosrs:Eckert4Projection</caption>
+<caption class="title">Table 207. geosrs:Eckert4Projection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -4722,7 +5108,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrseckert5projection">Class: geosrs:Eckert5Projection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 194. geosrs:Eckert5Projection</caption>
+<caption class="title">Table 208. geosrs:Eckert5Projection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -4742,7 +5128,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrseckert6projection">Class: geosrs:Eckert6Projection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 195. geosrs:Eckert6Projection</caption>
+<caption class="title">Table 209. geosrs:Eckert6Projection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -4762,7 +5148,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsequalearthprojection">Class: geosrs:EqualEarthProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 196. geosrs:EqualEarthProjection</caption>
+<caption class="title">Table 210. geosrs:EqualEarthProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -4782,7 +5168,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsfaheyprojection">Class: geosrs:FaheyProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 197. geosrs:FaheyProjection</caption>
+<caption class="title">Table 211. geosrs:FaheyProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -4802,7 +5188,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsfoucautprojection">Class: geosrs:FoucautProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 198. geosrs:FoucautProjection</caption>
+<caption class="title">Table 212. geosrs:FoucautProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -4822,7 +5208,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsfoucautsinusoidalprojection">Class: geosrs:FoucautSinusoidalProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 199. geosrs:FoucautSinusoidalProjection</caption>
+<caption class="title">Table 213. geosrs:FoucautSinusoidalProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -4842,7 +5228,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsfournieriiprojection">Class: geosrs:FournierIIProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 200. geosrs:FournierIIProjection</caption>
+<caption class="title">Table 214. geosrs:FournierIIProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -4862,7 +5248,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsginzburgviiiprojection">Class: geosrs:GinzburgVIIIProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 201. geosrs:GinzburgVIIIProjection</caption>
+<caption class="title">Table 215. geosrs:GinzburgVIIIProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -4882,7 +5268,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsgoodehomolosineprojection">Class: geosrs:GoodeHomolosineProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 202. geosrs:GoodeHomolosineProjection</caption>
+<caption class="title">Table 216. geosrs:GoodeHomolosineProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -4902,7 +5288,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrshealpixprojection">Class: geosrs:HEALPixProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 203. geosrs:HEALPixProjection</caption>
+<caption class="title">Table 217. geosrs:HEALPixProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -4922,7 +5308,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrshufnagelprojection">Class: geosrs:HufnagelProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 204. geosrs:HufnagelProjection</caption>
+<caption class="title">Table 218. geosrs:HufnagelProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -4942,7 +5328,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrskavrayskiy7projection">Class: geosrs:Kavrayskiy7Projection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 205. geosrs:Kavrayskiy7Projection</caption>
+<caption class="title">Table 219. geosrs:Kavrayskiy7Projection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -4962,7 +5348,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsloximuthalprojection">Class: geosrs:LoximuthalProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 206. geosrs:LoximuthalProjection</caption>
+<caption class="title">Table 220. geosrs:LoximuthalProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -4982,7 +5368,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsmayrprojection">Class: geosrs:MayrProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 207. geosrs:MayrProjection</caption>
+<caption class="title">Table 221. geosrs:MayrProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -5002,7 +5388,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsmcbrydethomasflatpolarparabolicprojection">Class: geosrs:McBrydeThomasFlatPolarParabolicProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 208. geosrs:McBrydeThomasFlatPolarParabolicProjection</caption>
+<caption class="title">Table 222. geosrs:McBrydeThomasFlatPolarParabolicProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -5022,7 +5408,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsmcbrydethomasflatpolarquarticprojection">Class: geosrs:McBrydeThomasFlatPolarQuarticProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 209. geosrs:McBrydeThomasFlatPolarQuarticProjection</caption>
+<caption class="title">Table 223. geosrs:McBrydeThomasFlatPolarQuarticProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -5042,7 +5428,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsmcbrydethomasflatpolarsinusoidalprojection">Class: geosrs:McBrydeThomasFlatPolarSinusoidalProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 210. geosrs:McBrydeThomasFlatPolarSinusoidalProjection</caption>
+<caption class="title">Table 224. geosrs:McBrydeThomasFlatPolarSinusoidalProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -5062,7 +5448,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsmcbrydethomasiiprojection">Class: geosrs:McBrydeThomasIIProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 211. geosrs:McBrydeThomasIIProjection</caption>
+<caption class="title">Table 225. geosrs:McBrydeThomasIIProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -5082,7 +5468,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsmcbrydethomasiprojection">Class: geosrs:McBrydeThomasIProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 212. geosrs:McBrydeThomasIProjection</caption>
+<caption class="title">Table 226. geosrs:McBrydeThomasIProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -5102,7 +5488,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsnaturalearth2projection">Class: geosrs:NaturalEarth2Projection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 213. geosrs:NaturalEarth2Projection</caption>
+<caption class="title">Table 227. geosrs:NaturalEarth2Projection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -5122,7 +5508,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsnaturalearthprojection">Class: geosrs:NaturalEarthProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 214. geosrs:NaturalEarthProjection</caption>
+<caption class="title">Table 228. geosrs:NaturalEarthProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -5146,7 +5532,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsnellhammerprojection">Class: geosrs:NellHammerProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 215. geosrs:NellHammerProjection</caption>
+<caption class="title">Table 229. geosrs:NellHammerProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -5166,7 +5552,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsnellprojection">Class: geosrs:NellProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 216. geosrs:NellProjection</caption>
+<caption class="title">Table 230. geosrs:NellProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -5186,7 +5572,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsorteliusovalprojection">Class: geosrs:OrteliusOvalProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 217. geosrs:OrteliusOvalProjection</caption>
+<caption class="title">Table 231. geosrs:OrteliusOvalProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -5206,7 +5592,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsputninsp1projection">Class: geosrs:PutninsP1Projection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 218. geosrs:PutninsP1Projection</caption>
+<caption class="title">Table 232. geosrs:PutninsP1Projection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -5226,7 +5612,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsputninsp2projection">Class: geosrs:PutninsP2Projection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 219. geosrs:PutninsP2Projection</caption>
+<caption class="title">Table 233. geosrs:PutninsP2Projection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -5246,7 +5632,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsputninsp3projection">Class: geosrs:PutninsP3Projection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 220. geosrs:PutninsP3Projection</caption>
+<caption class="title">Table 234. geosrs:PutninsP3Projection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -5266,7 +5652,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsputninsp5projection">Class: geosrs:PutninsP5Projection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 221. geosrs:PutninsP5Projection</caption>
+<caption class="title">Table 235. geosrs:PutninsP5Projection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -5286,7 +5672,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsputninsp6projection">Class: geosrs:PutninsP6Projection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 222. geosrs:PutninsP6Projection</caption>
+<caption class="title">Table 236. geosrs:PutninsP6Projection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -5306,7 +5692,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsquarticauthalicprojection">Class: geosrs:QuarticAuthalicProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 223. geosrs:QuarticAuthalicProjection</caption>
+<caption class="title">Table 237. geosrs:QuarticAuthalicProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -5326,7 +5712,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsrobinsonprojection">Class: geosrs:RobinsonProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 224. geosrs:RobinsonProjection</caption>
+<caption class="title">Table 238. geosrs:RobinsonProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -5346,7 +5732,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrssinusoidalprojection">Class: geosrs:SinusoidalProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 225. geosrs:SinusoidalProjection</caption>
+<caption class="title">Table 239. geosrs:SinusoidalProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -5366,7 +5752,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsthetimesprojection">Class: geosrs:TheTimesProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 226. geosrs:TheTimesProjection</caption>
+<caption class="title">Table 240. geosrs:TheTimesProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -5386,7 +5772,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrstoblerg1projection">Class: geosrs:ToblerG1Projection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 227. geosrs:ToblerG1Projection</caption>
+<caption class="title">Table 241. geosrs:ToblerG1Projection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -5406,7 +5792,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrstoblerhyperellipticalprojection">Class: geosrs:ToblerHyperellipticalProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 228. geosrs:ToblerHyperellipticalProjection</caption>
+<caption class="title">Table 242. geosrs:ToblerHyperellipticalProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -5426,7 +5812,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrswagneriiiprojection">Class: geosrs:WagnerIIIProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 229. geosrs:WagnerIIIProjection</caption>
+<caption class="title">Table 243. geosrs:WagnerIIIProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -5446,7 +5832,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrswagneriiprojection">Class: geosrs:WagnerIIProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 230. geosrs:WagnerIIProjection</caption>
+<caption class="title">Table 244. geosrs:WagnerIIProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -5466,7 +5852,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrswagneriprojection">Class: geosrs:WagnerIProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 231. geosrs:WagnerIProjection</caption>
+<caption class="title">Table 245. geosrs:WagnerIProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -5486,7 +5872,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrswagnerivprojection">Class: geosrs:WagnerIVProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 232. geosrs:WagnerIVProjection</caption>
+<caption class="title">Table 246. geosrs:WagnerIVProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -5506,7 +5892,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrswagnerviprojection">Class: geosrs:WagnerVIProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 233. geosrs:WagnerVIProjection</caption>
+<caption class="title">Table 247. geosrs:WagnerVIProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -5526,7 +5912,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrswagnervprojection">Class: geosrs:WagnerVProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 234. geosrs:WagnerVProjection</caption>
+<caption class="title">Table 248. geosrs:WagnerVProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -5546,7 +5932,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrswerenskioldiprojection">Class: geosrs:WerenskioldIProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 235. geosrs:WerenskioldIProjection</caption>
+<caption class="title">Table 249. geosrs:WerenskioldIProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -5566,7 +5952,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsputninsp3projection_2">Class: geosrs:PutninsP3&#8217;Projection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 236. geosrs:PutninsP3&#8217;Projection</caption>
+<caption class="title">Table 250. geosrs:PutninsP3&#8217;Projection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -5586,7 +5972,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsputninsp4projection">Class: geosrs:PutninsP4&#8217;Projection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 237. geosrs:PutninsP4&#8217;Projection</caption>
+<caption class="title">Table 251. geosrs:PutninsP4&#8217;Projection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -5606,7 +5992,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsputninsp5projection_2">Class: geosrs:PutninsP5&#8217;Projection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 238. geosrs:PutninsP5&#8217;Projection</caption>
+<caption class="title">Table 252. geosrs:PutninsP5&#8217;Projection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -5626,7 +6012,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsputninsp6projection_2">Class: geosrs:PutninsP6&#8217;Projection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 239. geosrs:PutninsP6&#8217;Projection</caption>
+<caption class="title">Table 253. geosrs:PutninsP6&#8217;Projection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -5647,7 +6033,7 @@ Here&#8217;s an example of an example term.
 <section class="sect3">
 <h4 id="_stereographic_projections">Stereographic Projections</h4>
 <aside class="example">
-<div class="title">Example 26. Stereographic Projections</div>
+<div class="title">Example 30. Stereographic Projections</div>
 <div class="content">
 <p class="paragraph">
 <p>Implementations shall allow the RDFS classes <a href="#_class_geosrsmilleroblatedstereographicprojection"><code>geosrs:MillerOblatedStereographicProjection</code></a>, <a href="#_class_geosrsroussilheprojection"><code>geosrs:RoussilheProjection</code></a> to be used in SPARQL graph patterns.</p>
@@ -5657,7 +6043,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsmilleroblatedstereographicprojection">Class: geosrs:MillerOblatedStereographicProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 240. geosrs:MillerOblatedStereographicProjection</caption>
+<caption class="title">Table 254. geosrs:MillerOblatedStereographicProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -5677,7 +6063,7 @@ Here&#8217;s an example of an example term.
 <section class="sect4">
 <h5 id="_class_geosrsroussilheprojection">Class: geosrs:RoussilheProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 241. geosrs:RoussilheProjection</caption>
+<caption class="title">Table 255. geosrs:RoussilheProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -5713,7 +6099,7 @@ Here&#8217;s an example of an example term.
 <p>The prefixes used for the ontologies mapped to in all following sections are given in the following table.</p>
 </p>
 <table class="tableblock frame-none grid-none spread">
-<caption class="title">Table 242. Alignment: Namespaces</caption>
+<caption class="title">Table 256. Alignment: Namespaces</caption>
 <colgroup>
 <col style="width: 14.2857%;">
 <col style="width: 85.7143%;">
@@ -5756,7 +6142,7 @@ Here&#8217;s an example of an example term.
 <section class="sect2">
 <h3 id="_ign_ontology">IGN Ontology</h3>
 <table class="tableblock frame-all grid-all">
-<caption class="title">Table 243. Alignment: IGN Ontology</caption>
+<caption class="title">Table 257. Alignment: IGN Ontology</caption>
 <colgroup>
 <col>
 <col>
@@ -5958,7 +6344,7 @@ Here&#8217;s an example of an example term.
 <section class="sect2">
 <h3 id="_iso19111_ontology">ISO19111 Ontology</h3>
 <table class="tableblock frame-all grid-all">
-<caption class="title">Table 244. Alignment: ISO19111 Ontology</caption>
+<caption class="title">Table 258. Alignment: ISO19111 Ontology</caption>
 <colgroup>
 <col>
 <col>
@@ -6058,7 +6444,7 @@ Here&#8217;s an example of an example term.
 <section class="sect2">
 <h3 id="_ifc_ontology">IFC Ontology</h3>
 <table class="tableblock frame-all grid-all">
-<caption class="title">Table 245. Alignment: IFC Ontology</caption>
+<caption class="title">Table 259. Alignment: IFC Ontology</caption>
 <colgroup>
 <col>
 <col>
@@ -6214,7 +6600,7 @@ Actual References:
 </section>
 <div id="footer">
 <div id="footer-text">
-Last updated 2025-05-05 22:57:06 UTC
+Last updated 2025-05-19 10:32:35 UTC
 </div>
 </div>
 </body>

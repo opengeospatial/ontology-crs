@@ -8,12 +8,12 @@
     rdfs:label "WGS 84" ;
     skos:scopeNote "Horizontal component of 3D system." ;
     geosrs:coordinateSystem [ a geosrs:EllipsoidalCoordinateSystem ;
-            geosrs:axis [ rdfs:label "Geodetic latitude" ;
-                    om:hasUnit om:degree ;
-                    skos:altLabel "Lat" ;
-                    geosrs:axisDirection geosrs_cs:north ],
-                [ rdfs:label "Geodetic longitude" ;
+            geosrs:axis [ rdfs:label "Geodetic longitude" ;
                     om:hasUnit om:degree ;
                     skos:altLabel "Lon" ;
-                    geosrs:axisDirection geosrs_cs:east ] ] .
+                    geosrs:axisDirection geosrs_cs:east ],
+                [ rdfs:label "Geodetic latitude" ;
+                    om:hasUnit om:degree ;
+                    skos:altLabel "Lat" ;
+                    geosrs:axisDirection geosrs_cs:north ] ] .
 

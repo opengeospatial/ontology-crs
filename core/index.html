@@ -242,12 +242,12 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
     <ul class="hlist">
       <li><a href="#CoordinateReferenceSystem">Coordinate Reference System</a></li>
       <li><a href="#CartesianCoordinateSystem">Cartesian Coordinate System</a></li>
-      <li><a href="#Conversion">Conversion</a></li>
+      <li><a href="#Conversion1">Conversion</a></li>
       <li><a href="#CoordinateOperation">Coordinate Operation</a></li>
       <li><a href="#CoordinateSystem">Coordinate System</a></li>
       <li><a href="#CoordinateSystemAxis">Coordinate System Axis</a></li>
-      <li><a href="#Datum">Datum</a></li>
-      <li><a href="#Ellipsoid">Ellipsoid</a></li>
+      <li><a href="#Datum1">Datum</a></li>
+      <li><a href="#Ellipsoid1">Ellipsoid</a></li>
       <li><a href="#EllipsoidalCoordinateSystem">Ellipsoidal Coordinate System</a></li>
       <li><a href="#EngineeringCoordinateReferenceSystem">Engineering Coordinate Reference System</a></li>
       <li><a href="#GeneralOperationParameter">General Operation Parameter</a></li>
@@ -298,30 +298,27 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             <tr>
                 <th>Sub-classes</th>
                 <td>
-                    <a href="#ProjectedCoordinateReferenceSystem">Projected Coordinate Reference System</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#GeographicCoordinateReferenceSystem">Geographic Coordinate Reference System</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="#SingleCoordinateReferenceSystem">Single Coordinate Reference System</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#GeographicCoordinateReferenceSystem">Geographic Coordinate Reference System</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="#EngineeringCoordinateReferenceSystem">Engineering Coordinate Reference System</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="#GeodeticCoordinateReferenceSystem">Geodetic Coordinate Reference System</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#ProjectedCoordinateReferenceSystem">Projected Coordinate Reference System</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>In domain of</th>
                 <td>
-                    <a href="#coordinatesystem">coordinate system</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="#baseCRS">base CRS</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="#datum">datum</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="#sourceCRS">source CRS</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="#targetCRS">target CRS</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="#domainofvalidity">domain of validity</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#Domainofvalidity">Domain of validity</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#Conversion">Conversion</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#Datum">Datum</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#Coordinatesystem">Coordinate system</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>In range of</th>
                 <td>
-                    <a href="#baseCRS">base CRS</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="#sourceCRS">source CRS</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="#targetCRS">target CRS</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#TargetCRS">Target CRS</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#SourceCRS">Source CRS</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
         </table>
@@ -350,10 +347,10 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             </tr>
         </table>
     </div>
-    <div class="entity class" id="Conversion">
+    <div class="entity class" id="Conversion1">
         <h3>
           Conversion<sup title="class" class="sup-c">c</sup>
-          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#Conversion" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#Conversion1" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
         </h3>
         <table>
             <tr>
@@ -376,6 +373,12 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
                 <th>Sub-classes</th>
                 <td>
                     <a href="#Transformation">Transformation</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+            <tr>
+                <th>In range of</th>
+                <td>
+                    <a href="#Conversion">Conversion</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
         </table>
@@ -406,7 +409,14 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
                 <th>Sub-classes</th>
                 <td>
                     <a href="#SingleOperation">Single Operation</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#Conversion">Conversion</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#Conversion1">Conversion</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+            <tr>
+                <th>In domain of</th>
+                <td>
+                    <a href="#TargetCRS">Target CRS</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#SourceCRS">Source CRS</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
         </table>
@@ -437,13 +447,13 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             <tr>
                 <th>In domain of</th>
                 <td>
-                    <a href="#axis">axis</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#Axis">Axis</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>In range of</th>
                 <td>
-                    <a href="#coordinatesystem">coordinate system</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#Coordinatesystem">Coordinate system</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
         </table>
@@ -466,10 +476,10 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             </tr>
         </table>
     </div>
-    <div class="entity class" id="Datum">
+    <div class="entity class" id="Datum1">
         <h3>
           Datum<sup title="class" class="sup-c">c</sup>
-          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#Datum" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#Datum1" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
         </h3>
         <table>
             <tr>
@@ -491,21 +501,21 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             <tr>
                 <th>In domain of</th>
                 <td>
-                    <a href="#ellipsoid">ellipsoid</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#Ellipsoid">Ellipsoid</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>In range of</th>
                 <td>
-                    <a href="#datum">datum</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#Datum">Datum</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
         </table>
     </div>
-    <div class="entity class" id="Ellipsoid">
+    <div class="entity class" id="Ellipsoid1">
         <h3>
           Ellipsoid<sup title="class" class="sup-c">c</sup>
-          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#Ellipsoid" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#Ellipsoid1" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
         </h3>
         <table>
             <tr>
@@ -521,14 +531,14 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             <tr>
                 <th>In domain of</th>
                 <td>
-                    <a href="#semiminoraxis">semi minor axis</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
                     <a href="#semimajoraxis">semi major axis</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="#semiminoraxis">semi minor axis</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>In range of</th>
                 <td>
-                    <a href="#ellipsoid">ellipsoid</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#Ellipsoid">Ellipsoid</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
         </table>
@@ -649,6 +659,12 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
                 <th>Super-classes</th>
                 <td>
                     <a href="#CoordinateReferenceSystem">Coordinate Reference System</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+            <tr>
+                <th>In range of</th>
+                <td>
+                    <a href="#BaseCRS">Base CRS</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
         </table>
@@ -897,6 +913,12 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
                     <a href="#CoordinateReferenceSystem">Coordinate Reference System</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
+            <tr>
+                <th>In domain of</th>
+                <td>
+                    <a href="#BaseCRS">Base CRS</a><sup class="sup-op" title="object property">op</sup><br/>
+                </td>
+            </tr>
         </table>
     </div>
     <div class="entity class" id="ReferenceSystem">
@@ -1050,7 +1072,7 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="#Conversion">Conversion</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#Conversion1">Conversion</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -1098,7 +1120,7 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="#Datum">Datum</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#Datum1">Datum</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -1107,18 +1129,19 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
 <section id="objectproperties">
     <h2>Object Properties <span style="float:right; font-size:smaller;"><a href="">&uparrow;</a></span></h2>
     <ul class="hlist">
-        <li><a href="#axis">axis</a></li>
-        <li><a href="#baseCRS">base CRS</a></li>
-        <li><a href="#coordinatesystem">coordinate system</a></li>
-        <li><a href="#datum">datum</a></li>
-        <li><a href="#domainofvalidity">domain of validity</a></li>
-        <li><a href="#ellipsoid">ellipsoid</a></li>
-        <li><a href="#sourceCRS">source CRS</a></li>
-        <li><a href="#targetCRS">target CRS</a></li>
+        <li><a href="#Axis">Axis</a></li>
+        <li><a href="#BaseCRS">Base CRS</a></li>
+        <li><a href="#Conversion">Conversion</a></li>
+        <li><a href="#Coordinatesystem">Coordinate system</a></li>
+        <li><a href="#Datum">Datum</a></li>
+        <li><a href="#Domainofvalidity">Domain of validity</a></li>
+        <li><a href="#Ellipsoid">Ellipsoid</a></li>
+        <li><a href="#SourceCRS">Source CRS</a></li>
+        <li><a href="#TargetCRS">Target CRS</a></li>
     </ul>
-    <div class="entity property" id="axis">
-        <h3>axis<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
-            <a href="#axis" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
+    <div class="entity property" id="Axis">
+        <h3>Axis<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#Axis" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
         </h3>
         <table>
             <tr>
@@ -1145,9 +1168,9 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             </tr>
         </table>
     </div>
-    <div class="entity property" id="baseCRS">
-        <h3>base CRS<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
-            <a href="#baseCRS" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
+    <div class="entity property" id="BaseCRS">
+        <h3>Base CRS<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#BaseCRS" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
         </h3>
         <table>
             <tr>
@@ -1163,20 +1186,43 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             <tr>
                 <th>Domain(s)</th>
                 <td>
+                    <a href="#ProjectedCoordinateReferenceSystem">Projected Coordinate Reference System</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+            <tr>
+                <th>Range(s)</th>
+                <td>
+                    <a href="https://w3id.org/geosrs/GeodeticCRS">geosrs:GeodeticCRS</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity property" id="Conversion">
+        <h3>Conversion<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#Conversion" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://w3id.org/geosrs/conversion</code></td>
+            </tr>
+            <tr>
+                <th>Domain(s)</th>
+                <td>
                     <a href="#CoordinateReferenceSystem">Coordinate Reference System</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
             <tr>
                 <th>Range(s)</th>
                 <td>
-                    <a href="https://w3id.org/geosrs/CRS">geosrs:CRS</a><sup class="sup-c" title="class">c</sup>
+                    <a href="https://w3id.org/geosrs/Conversion">geosrs:Conversion</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
         </table>
     </div>
-    <div class="entity property" id="coordinatesystem">
-        <h3>coordinate system<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
-            <a href="#coordinatesystem" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
+    <div class="entity property" id="Coordinatesystem">
+        <h3>Coordinate system<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#Coordinatesystem" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
         </h3>
         <table>
             <tr>
@@ -1203,9 +1249,9 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             </tr>
         </table>
     </div>
-    <div class="entity property" id="datum">
-        <h3>datum<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
-            <a href="#datum" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
+    <div class="entity property" id="Datum">
+        <h3>Datum<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#Datum" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
         </h3>
         <table>
             <tr>
@@ -1232,9 +1278,9 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             </tr>
         </table>
     </div>
-    <div class="entity property" id="domainofvalidity">
-        <h3>domain of validity<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
-            <a href="#domainofvalidity" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
+    <div class="entity property" id="Domainofvalidity">
+        <h3>Domain of validity<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#Domainofvalidity" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
         </h3>
         <table>
             <tr>
@@ -1261,9 +1307,9 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             </tr>
         </table>
     </div>
-    <div class="entity property" id="ellipsoid">
-        <h3>ellipsoid<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
-            <a href="#ellipsoid" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
+    <div class="entity property" id="Ellipsoid">
+        <h3>Ellipsoid<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#Ellipsoid" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
         </h3>
         <table>
             <tr>
@@ -1279,7 +1325,7 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             <tr>
                 <th>Domain(s)</th>
                 <td>
-                    <a href="#Datum">Datum</a><sup class="sup-c" title="class">c</sup>
+                    <a href="#Datum1">Datum</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
             <tr>
@@ -1290,9 +1336,9 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             </tr>
         </table>
     </div>
-    <div class="entity property" id="sourceCRS">
-        <h3>source CRS<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
-            <a href="#sourceCRS" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
+    <div class="entity property" id="SourceCRS">
+        <h3>Source CRS<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#SourceCRS" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
         </h3>
         <table>
             <tr>
@@ -1308,7 +1354,7 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             <tr>
                 <th>Domain(s)</th>
                 <td>
-                    <a href="#CoordinateReferenceSystem">Coordinate Reference System</a><sup class="sup-c" title="class">c</sup>
+                    <a href="#CoordinateOperation">Coordinate Operation</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
             <tr>
@@ -1319,9 +1365,9 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             </tr>
         </table>
     </div>
-    <div class="entity property" id="targetCRS">
-        <h3>target CRS<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
-            <a href="#targetCRS" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
+    <div class="entity property" id="TargetCRS">
+        <h3>Target CRS<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#TargetCRS" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
         </h3>
         <table>
             <tr>
@@ -1337,7 +1383,7 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             <tr>
                 <th>Domain(s)</th>
                 <td>
-                    <a href="#CoordinateReferenceSystem">Coordinate Reference System</a><sup class="sup-c" title="class">c</sup>
+                    <a href="#CoordinateOperation">Coordinate Operation</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
             <tr>
@@ -1353,9 +1399,33 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
 <section id="datatypeproperties">
     <h2>Datatype Properties <span style="float:right; font-size:smaller;"><a href="">&uparrow;</a></span></h2>
     <ul class="hlist">
+        <li><a href="#EPSGcode">EPSG code</a></li>
         <li><a href="#semimajoraxis">semi major axis</a></li>
         <li><a href="#semiminoraxis">semi minor axis</a></li>
     </ul>
+    <div class="entity property" id="EPSGcode">
+        <h3>EPSG code<sup title="datatype property" class="sup-dp">dp</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#EPSGcode" title="fragment link to here">#</a>&nbsp;<a href="#datatypeproperties" title="Datatype Properties Index">DPs</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://w3id.org/geosrs/EPSGcode</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>Identifier of this resource in the EPSG Geodetic Parameter Dataset.</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Range(s)</th>
+                <td>
+                    <a href="xsd:string">xsd:string</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+        </table>
+    </div>
     <div class="entity property" id="semimajoraxis">
         <h3>semi major axis<sup title="datatype property" class="sup-dp">dp</sup><span style="float:right; margin-right:10px; font-size:smaller;">
             <a href="#semimajoraxis" title="fragment link to here">#</a>&nbsp;<a href="#datatypeproperties" title="Datatype Properties Index">DPs</a></span>
@@ -1374,7 +1444,7 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             <tr>
                 <th>Domain(s)</th>
                 <td>
-                    <a href="#Ellipsoid">Ellipsoid</a><sup class="sup-c" title="class">c</sup>
+                    <a href="#Ellipsoid1">Ellipsoid</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
             <tr>
@@ -1403,7 +1473,7 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             <tr>
                 <th>Domain(s)</th>
                 <td>
-                    <a href="#Ellipsoid">Ellipsoid</a><sup class="sup-c" title="class">c</sup>
+                    <a href="#Ellipsoid1">Ellipsoid</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
             <tr>

@@ -478,7 +478,7 @@
     "clrk80ign": "geosrs_datum:Clarke1880IGN",
     "col_urban": "geosrs_projection:ColombiaUrbanProjection",
     "collg": "geosrs_projection:CollignonProjection",
-    "conversion": "geosrs:Conversion",
+    "conversion": "geosrs:conversion",
     "coordinateSystem": {
       "@context": {
         "@id": "coordinateSystem"
@@ -488,6 +488,20 @@
     },
     "coordinate_system": "geosrs:coordinateSystem",
     "datum": "geosrs:datum",
+    "datumEnsemble": {
+      "@context": {
+        "@id": "datumEnsemble"
+      },
+      "@id": "geosrs:datumEnsemble",
+      "@type": "@vocab"
+    },
+    "datum_ensemble": {
+      "@context": {
+        "@id": "datumEnsemble"
+      },
+      "@id": "geosrs:datumEnsemble",
+      "@type": "@vocab"
+    },
     "dc": "http://purl.org/dc/elements/1.1/",
     "deg": "om:degree",
     "degree": "om:degree",
@@ -521,6 +535,7 @@
     },
     "domain_of_validity": "geosrs:domainOfValidity",
     "down": "geosrs_cs:down",
+    "e_p_s_gcode": "geosrs:EPSGcode",
     "east": "geosrs_cs:east",
     "ellipsoid": "geosrs:ellipsoid",
     "ellipsoidal": "geosrs:EllipsoidalCoordinateSystem",

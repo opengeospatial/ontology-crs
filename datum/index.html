@@ -241,7 +241,7 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
   <section id="classes">
     <h2>Classes <span style="float:right; font-size:smaller;"><a href="">&uparrow;</a></span></h2>
     <ul class="hlist">
-      <li><a href="#DatumEnsemble">Datum Ensemble</a></li>
+      <li><a href="#DatumEnsemble1">Datum Ensemble</a></li>
       <li><a href="#DefiningParameter">Defining Parameter</a></li>
       <li><a href="#DynamicGeodeticReferenceFrame">Dynamic Geodetic Reference Frame</a></li>
       <li><a href="#DynamicVerticalDatum">Dynamic Vertical Datum</a></li>
@@ -250,10 +250,10 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
       <li><a href="#TemporalDatum">Temporal Datum</a></li>
       <li><a href="#TriaxialEllipsoid">Triaxial Ellipsoid</a></li>
     </ul>
-    <div class="entity class" id="DatumEnsemble">
+    <div class="entity class" id="DatumEnsemble1">
         <h3>
           Datum Ensemble<sup title="class" class="sup-c">c</sup>
-          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#DatumEnsemble" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#DatumEnsemble1" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
         </h3>
         <table>
             <tr>
@@ -265,6 +265,12 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
                 <td>
                     <p>A collection of two or more datums (or if geodetic or vertical, a collection of two or more reference frames) that are realizations of one Conventional Reference System and which for all but the highest accuracy requirements may be considered to be insignificantly different from each other. Note: Within the datum ensemble every frame or datum is constrained to be a realization of the same reference system. Cf. ISO 19111:2019
 Geographic information — Referencing by coordinates.</p>
+                </td>
+            </tr>
+            <tr>
+                <th>In range of</th>
+                <td>
+                    <a href="#DatumEnsemble">Datum Ensemble</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
         </table>
@@ -283,6 +289,12 @@ Geographic information — Referencing by coordinates.</p>
                 <th>Description</th>
                 <td>
                     <p>Parameter value, an ordered sequence of values, or a reference to a file of parameter values that define a paramtric datum. Cf. ISO 19111:2019 Geographic information — Referencing by coordinates.</p>
+                </td>
+            </tr>
+            <tr>
+                <th>In range of</th>
+                <td>
+                    <a href="#Datumdefiningparameter">Datum defining parameter</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
         </table>
@@ -381,6 +393,12 @@ Geographic information — Referencing by coordinates.</p>
                     <a href="https://w3id.org/geosrs/Datum">geosrs:Datum</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
+            <tr>
+                <th>In domain of</th>
+                <td>
+                    <a href="#Datumdefiningparameter">Datum defining parameter</a><sup class="sup-op" title="object property">op</sup><br/>
+                </td>
+            </tr>
         </table>
     </div>
     <div class="entity class" id="TemporalDatum">
@@ -429,11 +447,65 @@ Geographic information — Referencing by coordinates.</p>
 <section id="objectproperties">
     <h2>Object Properties <span style="float:right; font-size:smaller;"><a href="">&uparrow;</a></span></h2>
     <ul class="hlist">
-        <li><a href="#primemeridian">prime meridian</a></li>
+        <li><a href="#Datumdefiningparameter">Datum defining parameter</a></li>
+        <li><a href="#DatumEnsemble">Datum Ensemble</a></li>
+        <li><a href="#Primemeridian">Prime meridian</a></li>
     </ul>
-    <div class="entity property" id="primemeridian">
-        <h3>prime meridian<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
-            <a href="#primemeridian" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
+    <div class="entity property" id="Datumdefiningparameter">
+        <h3>Datum defining parameter<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#Datumdefiningparameter" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://w3id.org/geosrs/datum/datumDefiningParameter</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>Parameter used to define the parametric datum</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Domain(s)</th>
+                <td>
+                    <a href="#ParametricDatum">Parametric Datum</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+            <tr>
+                <th>Range(s)</th>
+                <td>
+                    <a href="https://w3id.org/geosrs/datum/DefiningParameter">geosrs_datum:DefiningParameter</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity property" id="DatumEnsemble">
+        <h3>Datum Ensemble<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#DatumEnsemble" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://w3id.org/geosrs/datum/datumEnsemble</code></td>
+            </tr>
+            <tr>
+                <th>Domain(s)</th>
+                <td>
+                    <a href="https://w3id.org/geosrs/SingleCRS">geosrs:SingleCRS</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+            <tr>
+                <th>Range(s)</th>
+                <td>
+                    <a href="https://w3id.org/geosrs/datum/DatumEnsemble">geosrs_datum:DatumEnsemble</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity property" id="Primemeridian">
+        <h3>Prime meridian<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#Primemeridian" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
         </h3>
         <table>
             <tr>
@@ -466,6 +538,7 @@ Geographic information — Referencing by coordinates.</p>
     <h2>Datatype Properties <span style="float:right; font-size:smaller;"><a href="">&uparrow;</a></span></h2>
     <ul class="hlist">
         <li><a href="#inverseflattening">inverse flattening</a></li>
+        <li><a href="#Isasphere">Is a sphere</a></li>
     </ul>
     <div class="entity property" id="inverseflattening">
         <h3>inverse flattening<sup title="datatype property" class="sup-dp">dp</sup><span style="float:right; margin-right:10px; font-size:smaller;">
@@ -492,6 +565,35 @@ Geographic information — Referencing by coordinates.</p>
                 <th>Range(s)</th>
                 <td>
                     <a href="xsd:double">xsd:double</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity property" id="Isasphere">
+        <h3>Is a sphere<sup title="datatype property" class="sup-dp">dp</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#Isasphere" title="fragment link to here">#</a>&nbsp;<a href="#datatypeproperties" title="Datatype Properties Index">DPs</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://w3id.org/geosrs/datum/isSphere</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>Indicates whether the ellipsoid is a sphere. Cf. ISO 19111:2007:2007-07, table 37, attribute ellipsoid=sphere indicator.</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Domain(s)</th>
+                <td>
+                    <a href="https://w3id.org/geosrs/Ellipsoid">geosrs:Ellipsoid</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+            <tr>
+                <th>Range(s)</th>
+                <td>
+                    <a href="xsd:boolean">xsd:boolean</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
         </table>

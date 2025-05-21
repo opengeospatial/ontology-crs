@@ -71,17 +71,17 @@ geosrs_co:TranslationOperation a owl:Class ;
     skos:definition "Translation transformation operation"@en .
 
 geosrs_co:derivingConversion a owl:ObjectProperty ;
-    rdfs:label "deriving conversion"@en ;
-    rdfs:domain geosrs:CRS ;
-    rdfs:range geosrs:CRS .
+    rdfs:label "Deriving conversion"@en ;
+    rdfs:domain geosrs:DerivedCRS ;
+    rdfs:range geosrs:Conversion .
 
 geosrs_co:method a owl:ObjectProperty ;
-    rdfs:label "method"@en ;
+    rdfs:label "Method"@en ;
     rdfs:domain geosrs:CRS ;
     rdfs:range geosrs:CoordinateOperation .
 
 geosrs_co:parameter a owl:ObjectProperty ;
-    rdfs:label "parameter"@en ;
+    rdfs:label "Parameter"@en ;
     rdfs:domain geosrs:Conversion ;
     rdfs:range geosrs:OperationParameter .
 

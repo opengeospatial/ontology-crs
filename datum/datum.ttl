@@ -56,15 +56,6 @@ geosrs_datum:Danish1876 a owl:NamedIndividual,
     rdfs:label "Danish 1876"@en ;
     skos:definition "Danish 1876 Spheroid"@en .
 
-geosrs_datum:DatumEnsemble a owl:Class ;
-    rdfs:label "Datum Ensemble"@en ;
-    skos:definition """A collection of two or more datums (or if geodetic or vertical, a collection of two or more reference frames) that are realizations of one Conventional Reference System and which for all but the highest accuracy requirements may be considered to be insignificantly different from each other. Note: Within the datum ensemble every frame or datum is constrained to be a realization of the same reference system. Cf. ISO 19111:2019
-Geographic information — Referencing by coordinates."""@en .
-
-geosrs_datum:DefiningParameter a owl:Class ;
-    rdfs:label "Defining Parameter"@en ;
-    skos:definition "Parameter value, an ordered sequence of values, or a reference to a file of parameter values that define a paramtric datum. Cf. ISO 19111:2019 Geographic information — Referencing by coordinates."@en .
-
 geosrs_datum:DynamicGeodeticReferenceFrame a owl:Class ;
     rdfs:label "Dynamic Geodetic Reference Frame"@en ;
     rdfs:subClassOf geosrs:GeodeticDatum ;
@@ -125,11 +116,6 @@ geosrs_datum:PZ90 a owl:NamedIndividual,
     rdfs:label "PS 90"@en ;
     skos:definition "PZ 90 Ellipsoid"@en .
 
-geosrs_datum:ParametricDatum a owl:Class ;
-    rdfs:label "Parametric Datum"@en ;
-    rdfs:subClassOf geosrs:Datum ;
-    skos:definition "Textual description and/or a set of parameters identifying a particular reference surface used as the origin of a parametric coordinate system, including its position with respect to the Earth. Cf. ISO 19111:2019 Geographic information — Referencing by coordinates."@en .
-
 geosrs_datum:Plessis1817 a owl:NamedIndividual,
         geosrs:Ellipsoid ;
     rdfs:label "Plessis 1817"@en ;
@@ -169,14 +155,31 @@ geosrs_datum:Zach1812 a owl:NamedIndividual,
     rdfs:label "Zach 1812"@en ;
     skos:definition "Zach 1812 Spheroid"@en .
 
+geosrs_datum:datumDefiningParameter a owl:ObjectProperty ;
+    rdfs:label "Datum defining parameter"@en ;
+    rdfs:domain geosrs_datum:ParametricDatum ;
+    rdfs:range geosrs_datum:DefiningParameter ;
+    skos:definition "Parameter used to define the parametric datum"@en .
+
+geosrs_datum:datumEnsemble a owl:ObjectProperty ;
+    rdfs:label "Datum Ensemble"@en ;
+    rdfs:domain geosrs:SingleCRS ;
+    rdfs:range geosrs_datum:DatumEnsemble .
+
 geosrs_datum:inverseFlattening a owl:DatatypeProperty ;
     rdfs:label "inverse flattening"@en ;
     rdfs:domain geosrs:Ellipsoid ;
     rdfs:range <xsd:double> ;
     skos:definition "Indicates the inverse flattening value of an ellipsoid, expressed as a number or a ratio (percentage rate, parts per million, etc.). Cf. ISO 19111:2007:2007-07, table 37, attribute inverse flattening"@en .
 
+geosrs_datum:isSphere a owl:DatatypeProperty ;
+    rdfs:label "Is a sphere"@en ;
+    rdfs:domain geosrs:Ellipsoid ;
+    rdfs:range <xsd:boolean> ;
+    skos:definition "Indicates whether the ellipsoid is a sphere. Cf. ISO 19111:2007:2007-07, table 37, attribute ellipsoid=sphere indicator."@en .
+
 geosrs_datum:primeMeridian a owl:ObjectProperty ;
-    rdfs:label "prime meridian"@en ;
+    rdfs:label "Prime meridian"@en ;
     rdfs:domain geosrs:Datum ;
     rdfs:range geosrs:PrimeMeridian ;
     skos:definition "The prime meridian used by a geodetic datum. Cf. ISO 19111:2007:2007-07, table 34, association role primeMeridian."@en .
@@ -185,4 +188,18 @@ geosrs:datumdatum a owl:Ontology ;
     rdfs:label "SRS Ontology: Geosrs_datum"@en ;
     vann:preferredNamespacePrefix "geosrs_datum"^^xsd:string ;
     vann:preferredNamespaceUri "https://w3id.org/geosrs/datum/"^^xsd:anyURI .
+
+geosrs_datum:DatumEnsemble a owl:Class ;
+    rdfs:label "Datum Ensemble"@en ;
+    skos:definition """A collection of two or more datums (or if geodetic or vertical, a collection of two or more reference frames) that are realizations of one Conventional Reference System and which for all but the highest accuracy requirements may be considered to be insignificantly different from each other. Note: Within the datum ensemble every frame or datum is constrained to be a realization of the same reference system. Cf. ISO 19111:2019
+Geographic information — Referencing by coordinates."""@en .
+
+geosrs_datum:DefiningParameter a owl:Class ;
+    rdfs:label "Defining Parameter"@en ;
+    skos:definition "Parameter value, an ordered sequence of values, or a reference to a file of parameter values that define a paramtric datum. Cf. ISO 19111:2019 Geographic information — Referencing by coordinates."@en .
+
+geosrs_datum:ParametricDatum a owl:Class ;
+    rdfs:label "Parametric Datum"@en ;
+    rdfs:subClassOf geosrs:Datum ;
+    skos:definition "Textual description and/or a set of parameters identifying a particular reference surface used as the origin of a parametric coordinate system, including its position with respect to the Earth. Cf. ISO 19111:2019 Geographic information — Referencing by coordinates."@en .
 

@@ -115,12 +115,6 @@ geosrs_cs:axisDirection a owl:ObjectProperty ;
     rdfs:range geosrs:AxisDirection ;
     skos:definition "The direction of an axis. Cf. ISO 19111:2007:2007-07, table 27, attribute coordinate system axis direction."@en .
 
-geosrs_cs:cylindricalCS a owl:ObjectProperty ;
-    rdfs:label "cylindrical cs"@en ;
-    rdfs:domain geosrs:CRS ;
-    rdfs:range geosrs:CS ;
-    skos:definition "Links a coordinate reference system to a cylindrical coordinate system"@en .
-
 geosrs_cs:down a owl:NamedIndividual,
         geosrs:AxisDirection ;
     rdfs:label "Down"@en ;

@@ -1,16 +1,16 @@
 Concept,SuperClass,DisjointClass,Label,Definition,ISO 19111,IGN 2019,Proj4RDF,PROJJSON,GeoSPARQL,Core Class?
 geosrs:SRSApplication,,,SRS Application,An application for which a spatial reference system is used.,,,geocrs:SRSApplication,,,Extension
 geosrs:CadastreMap,geosrs:SRSApplication,,Cadastre Map,A map displaying a cadastre.,,,geocrs:CadastreMap,cadastre,,Extension
-geosrs:NauticalChart,geosrs:SRSApplication,,Nautical Chart,A graphic representation of a sea area and adjacent coastal regions.,,,geocrs:NauticalChart,"nautical charting",,Extension
+geosrs:NauticalChart,geosrs:SRSApplication,,Nautical Chart,A graphic representation of a sea area and adjacent coastal regions.,,,geocrs:NauticalChart,nautical charting,,Extension
 geosrs:ThematicMap,geosrs:SRSApplication,,Thematic Map,A map used to highlight a specific phenomenon.,,,geocrs:ThematicMap,,,Extension
-geosrs:TopographicMap,geosrs:SRSApplication,,Topographic Map,A type of map characterized by large-scale detail and quantitative representation of relief.,,,geocrs:TopographicMap,"topographic mapping",,Extension
+geosrs:TopographicMap,geosrs:SRSApplication,,Topographic Map,A type of map characterized by large-scale detail and quantitative representation of relief.,,,geocrs:TopographicMap,topographic mapping,,Extension
 geosrs:WeatherMap,geosrs:SRSApplication,,Weather Map,A map for showing the local direction in which weather systems are moving.,,,geocrs:WeatherMap,,,Extension
-,,,,,,,geocrs:SpatialReferencing,"spatial referencing",,Extension
-,,,,,,,geocrs:EngineeringSurvey,"engineering survey",,Extension
-,,,,,,,geocrs:SatelliteSurvey,"satellite survey",,Extension
-,,,,,,,geocrs:SatelliteNavigation,"satellite navigation",,Extension
-,,,,,,,geocrs:CoastalHydrography,"coastal hydrography",,Extension
-,,,,,,,geocrs:OffshoreEngineering,"offshore engineering",,Extension
-,,,,,,,geocrs:Hydrography,"hydrography",,Extension
-,,,,,,,geocrs:Drilling,"drilling",,Extension
-,,,,,,,geocrs:OilAndGasExploration,"oil and gas exploration",,Extension
+geosrs:SpatialReferencing,geosrs:SRSApplication,,Spatial Referencing,,,,geocrs:SpatialReferencing,spatial referencing,,Extension
+geosrs:EngineeringSurvey,geosrs:SRSApplication,,engineering survey,,,,geocrs:EngineeringSurvey,engineering survey,,Extension
+geosrs:SatelliteSurvey,geosrs:SRSApplication,,satellite survey,,,,geocrs:SatelliteSurvey,satellite survey,,Extension
+geosrs:SatelliteNavigation,geosrs:SRSApplication,,satellite navigation,,,,geocrs:SatelliteNavigation,satellite navigation,,Extension
+geosrs:CoastalHydrography,geosrs:SRSApplication,,coastal hydrography,,,,geocrs:CoastalHydrography,coastal hydrography,,Extension
+geosrs:OffshoreEngineering,geosrs:SRSApplication,,offshore engineering,,,,geocrs:OffshoreEngineering,offshore engineering,,Extension
+geosrs:Hydrography,geosrs:SRSApplication,,hydrography,,,,geocrs:Hydrography,hydrography,,Extension
+geosrs:Drilling,geosrs:SRSApplication,,drilling,,,,geocrs:Drilling,drilling,,Extension
+geosrs:OilAndGasExploration,geosrs:SRSApplication,,oil and gas exploration,,,,geocrs:OilAndGasExploration,oil and gas exploration,,Extension

@@ -24,7 +24,7 @@ geosrs:OperationParameterValue,geosrs:GeneralParameterValue,,Coordinate operatio
 ,,,,,,iso19111:uValueFile,,,,,,,,,
 ,,,,,,iso19111:uValueFileCitation,,,,,,,,,
 ,,,,,,iso19111:uGeographicObject,,,,,,,,,
-geosrs:GeographicObject,iso19107:Geometry,,Coordinate operation categories,Geographic Object,Identifier of a geographic feature of which the coordinates are used as operation parameters.,iso19111:GeographicObject,,,,,,,,,
+geosrs:GeographicObject,iso19107:Geometry,,Coordinate operation categories,Geographic Object,Identifier of a geographic feature of which the coordinates are used as operation parameters.,iso19111:GeographicObject,,,,,,Extension,,,
 geosrs:RegisterOperations,,,Coordinate operation categories,Register Operations,Operations supported in the Coordinate Operations package.,iso19111:RegisterOperations,,,,,,Extension,,,
 geosrs:ScaleOperation,geosrs:AffineTransformationOperation,,Coordinate operation categories,Scale Operation,Scale transformation operation,,,geocrs:ScaleOperation,,,,Extension,,,
 geosrs:RotationOperation,geosrs:AffineTransformationOperation,,Coordinate operation categories,Rotation Operation,Rotation transformation operation,,,geocrs:RotationOperation,,,,Extension,,,

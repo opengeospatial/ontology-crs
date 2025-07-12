@@ -188,7 +188,7 @@ for file in os.listdir(directory):
                                     adocdef+=clsuri+"["+clsuri[clsuri.rfind("/")+1:]+"] "
                             else:
                                 gcore.add((URIRef(row["Concept"].replace(coreprefix+":",geocrsNS)),RDFS.subClassOf,URIRef(row["SuperClass"].replace("geosrs:", getNSForClass(row["SuperClass"],classToPrefix)))))
-                                clsuri=spl.replace("geosrs:", getNSForClass(spl,classToPrefix))
+                                clsuri=row["Concept"].replace("geosrs:", getNSForClass(row["Concept"],classToPrefix))
                                 adocdef+=clsuri+"["+clsuri[clsuri.rfind("/")+1:]+"] "
                             adocdef+="\n\n"
                         if "DisjointClass" in row and row["DisjointClass"]!="":

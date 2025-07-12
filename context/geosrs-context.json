@@ -80,6 +80,7 @@
     "ChamberlinTrimetricProjection": "geosrs_projection:ChamberlinTrimetricProjection",
     "CiricIProjection": "geosrs_projection:CiricIProjection",
     "Clarke": "geosrs_datum:Clarke1880ARC",
+    "CoastalHydrography": "geosrs_application:CoastalHydrography",
     "CollignonButterflyProjection": "geosrs_projection:CollignonButterflyProjection",
     "CollignonProjection": "geosrs_projection:CollignonProjection",
     "ColombiaUrbanProjection": "geosrs_projection:ColombiaUrbanProjection",
@@ -115,6 +116,7 @@
     "DenoyerSemiEllipticalProjection": "geosrs_projection:DenoyerSemiEllipticalProjection",
     "DietrichKitadaProjection": "geosrs_projection:DietrichKitadaProjection",
     "DodecahedralProjection": "geosrs_projection:DodecahedralProjection",
+    "Drilling": "geosrs_application:Drilling",
     "DymaxionProjection": "geosrs_projection:DymaxionProjection",
     "Dynamic": "geosrs_datum:DynamicVerticalDatum",
     "DynamicGeodeticReferenceFrame": "geosrs_datum:DynamicGeodeticReferenceFrame",
@@ -133,6 +135,7 @@
     "EngineeringCRS": "geosrs:EngineeringCRS",
     "EngineeringCoordinateSystem": "geosrs_cs:EngineeringCoordinateSystem",
     "EngineeringDatum": "geosrs_datum:EngineeringDatum",
+    "EngineeringSurvey": "geosrs_application:EngineeringSurvey",
     "EqualAreaProjection": "geosrs_projection:EqualAreaProjection",
     "EqualEarthProjection": "geosrs_projection:EqualEarthProjection",
     "EquallySpacedParallelsProjection": "geosrs_projection:EquallySpacedParallelsProjection",
@@ -224,6 +227,7 @@
     "HufnagelXIIProjection": "geosrs_projection:HufnagelXIIProjection",
     "HufnagelXIProjection": "geosrs_projection:HufnagelXIProjection",
     "HufnagelXProjection": "geosrs_projection:HufnagelXProjection",
+    "Hydrography": "geosrs_application:Hydrography",
     "IAG": "geosrs_datum:IAG1975",
     "IcosahedralProjection": "geosrs_projection:IcosahedralProjection",
     "IdentityOperation": "geosrs_co:IdentityOperation",
@@ -288,6 +292,8 @@
     "ObliqueProjection": "geosrs_projection:ObliqueProjection",
     "ObliqueStereographicProjection": "geosrs_projection:ObliqueStereographicProjection",
     "OctantProjection": "geosrs_projection:OctantProjection",
+    "OffshoreEngineering": "geosrs_application:OffshoreEngineering",
+    "OilAndGasExploration": "geosrs_application:OilAndGasExploration",
     "OperationMethod": "geosrs:OperationMethod",
     "OperationParameter": "geosrs:OperationParameter",
     "OperationParameterGroup": "geosrs_co:OperationParameterGroup",
@@ -348,6 +354,8 @@
     "RotationOperation": "geosrs_co:RotationOperation",
     "RoussilheProjection": "geosrs_projection:RoussilheProjection",
     "SRSApplication": "geosrs_application:SRSApplication",
+    "SatelliteNavigation": "geosrs_application:SatelliteNavigation",
+    "SatelliteSurvey": "geosrs_application:SatelliteSurvey",
     "ScaleOperation": "geosrs_co:ScaleOperation",
     "SchjerningIProjection": "geosrs_projection:SchjerningIProjection",
     "SelenographicCRS": "geosrs:SelenographicCRS",
@@ -360,6 +368,7 @@
     "SmythEqualSurfaceProjection": "geosrs_projection:SmythEqualSurfaceProjection",
     "SpaceObliqueMercatorProjection": "geosrs_projection:SpaceObliqueMercatorProjection",
     "SpatialReferenceSystem": "geosrs:SpatialReferenceSystem",
+    "SpatialReferencing": "geosrs_application:SpatialReferencing",
     "SpatioParametricCompoundCRS": "geosrs:SpatioParametricCompoundCRS",
     "SpatioParametricTemporalCompoundCRS": "geosrs:SpatioParametricTemporalCompoundCRS",
     "SpatioTemporalCompoundCRS": "geosrs:SpatioTemporalCompoundCRS",
@@ -433,6 +442,7 @@
     "aea": "geosrs_projection:AlbersEqualAreaProjection",
     "aitoff": "geosrs_projection:AitoffProjection",
     "alias": "skos:altLabel",
+    "and": "geosrs_application:OilAndGasExploration",
     "area_of_use": {
       "@context": {
         "@id": "domainOfValidity"
@@ -476,9 +486,16 @@
     "charting": "geosrs_application:NauticalChart",
     "clrk66": "geosrs_datum:Clarke1866",
     "clrk80ign": "geosrs_datum:Clarke1880IGN",
+    "coastal": "geosrs_application:CoastalHydrography",
     "col_urban": "geosrs_projection:ColombiaUrbanProjection",
     "collg": "geosrs_projection:CollignonProjection",
-    "conversion": "geosrs:conversion",
+    "conversion": {
+      "@context": {
+        "@id": "conversion"
+      },
+      "@id": "geosrs:conversion",
+      "@type": "@vocab"
+    },
     "coordinateSystem": {
       "@context": {
         "@id": "coordinateSystem"
@@ -535,10 +552,13 @@
     },
     "domain_of_validity": "geosrs:domainOfValidity",
     "down": "geosrs_cs:down",
+    "drilling": "geosrs_application:Drilling",
     "e_p_s_gcode": "geosrs:EPSGcode",
     "east": "geosrs_cs:east",
+    "eccentricity": "geosrs:eccentricity",
     "ellipsoid": "geosrs:ellipsoid",
     "ellipsoidal": "geosrs:EllipsoidalCoordinateSystem",
+    "engineering": "geosrs_application:OffshoreEngineering",
     "entityType": {
       "@id": "rdf:type",
       "@type": "@vocab"
@@ -546,6 +566,8 @@
     "eqdc": "geosrs_projection:EquidistantConicProjection",
     "eqearth": "geosrs_projection:EqualEarthProjection",
     "evrst30": "geosrs_datum:Everest1930",
+    "exploration": "geosrs_application:OilAndGasExploration",
+    "gas": "geosrs_application:OilAndGasExploration",
     "geo": "http://www.opengis.net/ont/geosparql#",
     "geocrs:CoordinateTransformationOperation": "geosrs_co:geocrs:CoordinateTransformationOperation",
     "geographicElement": "geo:hasBoundingBox",
@@ -560,6 +582,7 @@
     "geosrs_projection": "https://w3id.org/geosrs/projection/",
     "geosrs_srs": "https://w3id.org/geosrs/srs/",
     "gnom": "geosrs_projection:GnomonicProjection",
+    "hydrography": "geosrs_application:Hydrography",
     "identifier": "dc:identifier",
     "intl": "geosrs_datum:International1924",
     "inverseFlattening": "geosrs:inverseFlattening",
@@ -590,8 +613,11 @@
     "name": "rdfs:label",
     "natearth": "geosrs_projection:NaturalEarthProjection",
     "nautical": "geosrs_application:NauticalChart",
+    "navigation": "geosrs_application:SatelliteNavigation",
     "nicol": "geosrs_projection:NicolosiGlobularProjection",
     "north": "geosrs_cs:north",
+    "offshore": "geosrs_application:OffshoreEngineering",
+    "oil": "geosrs_application:OilAndGasExploration",
     "om": "http://www.ontology-of-units-of-measure.org/resource/om-2/",
     "omerc": "geosrs_projection:ObliqueMercatorProjection",
     "ortho": "geosrs_projection:OrthographicProjection",
@@ -628,8 +654,10 @@
     "radian": "om:radian",
     "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "referencing": "geosrs_application:SpatialReferencing",
     "robin": "geosrs_projection:RobinsonProjection",
     "rpoly": "geosrs_projection:RectangularPolyconicProjection",
+    "satellite": "geosrs_application:SatelliteNavigation",
     "scope": "skos:scopeNote",
     "secondDefiningParameter": "geosrs:operationParameter",
     "semiMajorAxis": "geosrs:semiMajorAxis",
@@ -655,12 +683,14 @@
       "@type": "@vocab"
     },
     "south": "geosrs_cs:south",
+    "spatial": "geosrs_application:SpatialReferencing",
     "stere": "geosrs_projection:StereographicProjection",
     "sterea": "geosrs_projection:ObliqueStereographicProjection",
     "subtype": {
       "@id": "rdf:type",
       "@type": "@vocab"
     },
+    "survey": "geosrs_application:SatelliteSurvey",
     "targetCRS": {
       "@context": {
         "@id": "targetCRS"

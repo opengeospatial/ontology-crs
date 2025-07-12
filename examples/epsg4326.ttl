@@ -3,6 +3,7 @@
 @prefix om: <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 [] a geosrs:GeographicCRS ;
     rdfs:label "WGS 84" ;
@@ -15,5 +16,9 @@
                 [ rdfs:label "Geodetic longitude" ;
                     om:hasUnit om:degree ;
                     skos:altLabel "Lon" ;
-                    geosrs:axisDirection geosrs_cs:east ] ] .
+                    geosrs:axisDirection geosrs_cs:east ] ] ;
+    geosrs:datumEnsemble [ rdfs:label "World Geodetic System 1984 ensemble" ;
+            geosrs:ellipsoid [ rdfs:label "WGS 84" ;
+                    geosrs:inverseFlattening 2.982572e+02 ;
+                    geosrs:semiMajorAxis 6378137 ] ] .
 

@@ -8,6 +8,12 @@ Keywords inserted here automatically by Metanorma
 
 .Preface
 
+This document establishes the OGC CRS ontology and its submodules.
+The definition of elements of coordinate reference systems is an essential part of geospatial data provision.
+However, until now, coordinate reference systems and their components could not be represented in an OGC-standardized semantic web vocabulary.
+This document introduces the ontology model, its classes and properties, application examples and can serve as the foundation of a semantic web based coordinate system registry at OGC.
+Special attention is given to the compatibility of the CRS Ontology vocabulary to other OGC-endorsed Semantic Web standards such as GeoSPARQL and alignments to other data standards are provided as part of this specification.
+
 [NOTE]
 ====
 Insert Preface Text here. Give OGC specific commentary: describe the technical content, reason for document, history of the document and precursors, and plans for future work.
@@ -81,7 +87,10 @@ All questions regarding this submission should be directed to the editor or the 
 |===
 |Name |Affiliation |OGC member
 
-|Steve Liang | University of Calgary, Canada / SensorUp Inc. | Yes
+|Luís Moreira de Sousa | Instituto Superior Técnico: Lisbon, PT | Yes
+|Timo Homburg | Mainz University Of Applied Sciences | No
+|Nathalie Abadie | IGN France | Yes
+|Ghislain Atemezing | European Union Agency for Railways (ERA) | Yes
 |===
 
 

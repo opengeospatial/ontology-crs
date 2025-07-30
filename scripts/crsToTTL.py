@@ -398,7 +398,7 @@ parser.add_argument("outputformat", type=str, nargs='?',default="projjson", help
 args = parser.parse_args()
 print(args)
 mapp=pyproj.list.get_proj_operations_map()
-if(args.input==None)):
+if args.input==None:
 	for x in list(range(2000,10000))+list(range(20000,30000)):
 		try:
 			curcrs=CRS.from_epsg(x)

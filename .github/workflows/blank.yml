@@ -80,7 +80,7 @@ jobs:
     uses: sparqlunicorn/sparqlunicornGoesGIS-ontdoc/.github/workflows/udoc.yml@main
     with: 
         version: v018
-        rdffilepath: docs/result.ttl
+        rdffilepath: result.ttl
         docpath: docs/
         prefixns: http://www.opengis.net/
         prefixnsshort: geoepsg

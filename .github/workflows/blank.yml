@@ -19,10 +19,7 @@ jobs:
       run: | 
          sudo apt-get update
          sudo apt-get install python3 python3-setuptools python3-pip python3-dev  -y
-         sudo apt-get install gcc libpq-dev -y
-         sudo apt-get install doxygen graphviz -y
-         sudo apt-get install python3-venv python3-wheel -y
-         sudo pip3 install wheel pylode==2.13.2 pyproj
+         sudo pip3 install wheel pylode==2.13.2 pyproj shapely
          sudo apt-get install asciidoctor
          sudo gem install tilt thread_safe concurrent-ruby
          sudo gem install haml -v 5.2.2

@@ -74,22 +74,24 @@ jobs:
          BRANCH: gh-pages
          FOLDER: docs/
          clean: false
-  #ontdoc: 
-    # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-  #  uses: sparqlunicorn/sparqlunicornGoesGIS-ontdoc/.github/workflows/udoc.yml@main
-  #  with: 
-  #      version: v018
-  #     rdffilepath: examples/epsg23032.ttl
-  #      docpath: docs
-  #      prefixns: http://lod.squirrel.link/data/limes/
-  #     prefixnsshort: ex
-  #      indexpages: true
-  #      ckan: false
-  #      metadatatable: true
-  #      offlinecompat: false
-  #      exports: cypher graphml nt n3 tlp tgf json ttl
-  #      createcollections: true
-  #      createnonNSPages: true
-  #      createVOWL: true
-  #      preferredlang: en
-  #      ghpages: true
+  ontdoc: 
+  # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+    needs: build
+    uses: sparqlunicorn/sparqlunicornGoesGIS-ontdoc/.github/workflows/udoc.yml@main
+    with: 
+        version: v018
+        rdffilepath: docs/result.ttl
+        docpath: docs/
+        prefixns: http://www.opengis.net/
+        prefixnsshort: geoepsg
+        indexpages: true
+        ckan: false
+        metadatatable: true
+        offlinecompat: false
+        exports: cypher graphml nt n3 tlp tgf json ttl
+        createcollections: true
+        createnonNSPages: true
+        createVOWL: true
+        preferredlang: en
+        ghpages: true
+        ghpagesfolder: data/

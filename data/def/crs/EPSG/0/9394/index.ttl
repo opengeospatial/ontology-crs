@@ -1,13 +1,13 @@
-@prefix ns1: <http://www.opengis.net/ont/crs/> .
+@prefix ns1: <https://w3id.org/geosrs/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix void: <http://rdfs.org/ns/void#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://www.opengis.net/def/crs/EPSG/0/9394> a ns1:VerticalCRS,
-        owl:NamedIndividual,
+<http://www.opengis.net/def/crs/EPSG/0/9394> a owl:NamedIndividual,
         <http://www.w3.org/ns/ldp#Resource>,
         <http://www.w3.org/ns/prov-o/Entity>,
+        ns1:VerticalCRS,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Ibiza height"@en ;
     void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
@@ -16,7 +16,7 @@
     ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'VerticalCRS','name':'Ibiza height','datum':{'type':'VerticalReferenceFrame','name':'Ibiza'},'coordinate_system':{'subtype':'vertical','axis':[{'name':'Gravity-related height','abbreviation':'H','direction':'up','unit':'metre'}]},'scope':'Geodesy, engineering survey, topographic mapping.','area':'Spain - Balearic Islands - Ibiza - onshore.','bbox':{'south_latitude':38.77,'west_longitude':1.12,'north_latitude':39.17,'east_longitude':1.68},'id':{'authority':'EPSG','code':9394}}"^^xsd:string ;
     ns1:asWKT "VERTCRS['Ibiza height',VDATUM['Ibiza'],CS[vertical,1],AXIS['gravity-related height (H)',up,LENGTHUNIT['metre',1]],USAGE[SCOPE['Geodesy, engineering survey, topographic mapping.'],AREA['Spain - Balearic Islands - Ibiza - onshore.'],BBOX[38.77,1.12,39.17,1.68]],ID['EPSG',9394]]"^^ns1:wktLiteral ;
     ns1:coordinateSystem <http://www.opengis.net/def/crs/EPSG/0/9394_cs> ;
-    ns1:datum <http://www.opengis.net/ont/crs/datum/Ibiza> ;
+    ns1:datum <https://w3id.org/geosrs/datum/Ibiza> ;
     ns1:epsgCode "EPSG:9394"^^xsd:string ;
     ns1:isApplicableTo <http://www.opengis.net/ont/crs/isbody/Earth> ;
     ns1:isBound false ;

@@ -1,13 +1,13 @@
-@prefix ns1: <http://www.opengis.net/ont/crs/> .
+@prefix ns1: <https://w3id.org/geosrs/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix void: <http://rdfs.org/ns/void#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://www.opengis.net/def/crs/EPSG/0/7842> a ns1:GeocentricCRS,
-        owl:NamedIndividual,
+<http://www.opengis.net/def/crs/EPSG/0/7842> a owl:NamedIndividual,
         <http://www.w3.org/ns/ldp#Resource>,
         <http://www.w3.org/ns/prov-o/Entity>,
+        ns1:GeocentricCRS,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "GDA2020"@en ;
     void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
@@ -16,7 +16,7 @@
     ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'GeodeticCRS','name':'GDA2020','datum':{'type':'GeodeticReferenceFrame','name':'Geocentric Datum of Australia 2020','ellipsoid':{'name':'GRS 1980','semi_major_axis':6378137,'inverse_flattening':298.257222101}},'coordinate_system':{'subtype':'Cartesian','axis':[{'name':'Geocentric X','abbreviation':'X','direction':'geocentricX','unit':'metre'},{'name':'Geocentric Y','abbreviation':'Y','direction':'geocentricY','unit':'metre'},{'name':'Geocentric Z','abbreviation':'Z','direction':'geocentricZ','unit':'metre'}]},'scope':'Geodesy, cadastre, engineering survey, topographic mapping.','area':'Australia including Lord Howe Island, Macquarie Island, Ashmore and Cartier Islands, Christmas Island, Cocos (Keeling) Islands, Norfolk Island. All onshore and offshore.','bbox':{'south_latitude':-60.55,'west_longitude':93.41,'north_latitude':-8.47,'east_longitude':173.34},'id':{'authority':'EPSG','code':7842}}"^^xsd:string ;
     ns1:asWKT "GEODCRS['GDA2020',DATUM['Geocentric Datum of Australia 2020',ELLIPSOID['GRS 1980',6378137,298.257222101,LENGTHUNIT['metre',1]]],PRIMEM['Greenwich',0,ANGLEUNIT['degree',0.0174532925199433]],CS[Cartesian,3],AXIS['(X)',geocentricX,ORDER[1],LENGTHUNIT['metre',1]],AXIS['(Y)',geocentricY,ORDER[2],LENGTHUNIT['metre',1]],AXIS['(Z)',geocentricZ,ORDER[3],LENGTHUNIT['metre',1]],USAGE[SCOPE['Geodesy, cadastre, engineering survey, topographic mapping.'],AREA['Australia including Lord Howe Island, Macquarie Island, Ashmore and Cartier Islands, Christmas Island, Cocos (Keeling) Islands, Norfolk Island. All onshore and offshore.'],BBOX[-60.55,93.41,-8.47,173.34]],ID['EPSG',7842]]"^^ns1:wktLiteral ;
     ns1:coordinateSystem <http://www.opengis.net/def/crs/EPSG/0/7842_cs> ;
-    ns1:datum <http://www.opengis.net/ont/crs/datum/Geocentric_Datum_of_Australia_2020> ;
+    ns1:datum <https://w3id.org/geosrs/datum/Geocentric_Datum_of_Australia_2020> ;
     ns1:epsgCode "EPSG:7842"^^xsd:string ;
     ns1:isApplicableTo <http://www.opengis.net/ont/crs/isbody/Earth> ;
     ns1:isBound false ;

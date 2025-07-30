@@ -1,13 +1,13 @@
-@prefix ns1: <http://www.opengis.net/ont/crs/> .
+@prefix ns1: <https://w3id.org/geosrs/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix void: <http://rdfs.org/ns/void#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://www.opengis.net/def/crs/EPSG/0/5765> a ns1:VerticalCRS,
-        owl:NamedIndividual,
+<http://www.opengis.net/def/crs/EPSG/0/5765> a owl:NamedIndividual,
         <http://www.w3.org/ns/ldp#Resource>,
         <http://www.w3.org/ns/prov-o/Entity>,
+        ns1:VerticalCRS,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Napier 1962 height"@en ;
     void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
@@ -16,7 +16,7 @@
     ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'VerticalCRS','name':'Napier 1962 height','datum':{'type':'VerticalReferenceFrame','name':'Napier 1962'},'coordinate_system':{'subtype':'vertical','axis':[{'name':'Gravity-related height','abbreviation':'H','direction':'up','unit':'metre'}]},'scope':'Geodesy, engineering survey, topographic mapping.','area':'New Zealand - North Island - Hawkes Bay meridional circuit and Napier vertical crs area.','bbox':{'south_latitude':-40.57,'west_longitude':175.8,'north_latitude':-38.87,'east_longitude':178.07},'id':{'authority':'EPSG','code':5765}}"^^xsd:string ;
     ns1:asWKT "VERTCRS['Napier 1962 height',VDATUM['Napier 1962'],CS[vertical,1],AXIS['gravity-related height (H)',up,LENGTHUNIT['metre',1]],USAGE[SCOPE['Geodesy, engineering survey, topographic mapping.'],AREA['New Zealand - North Island - Hawkes Bay meridional circuit and Napier vertical crs area.'],BBOX[-40.57,175.8,-38.87,178.07]],ID['EPSG',5765]]"^^ns1:wktLiteral ;
     ns1:coordinateSystem <http://www.opengis.net/def/crs/EPSG/0/5765_cs> ;
-    ns1:datum <http://www.opengis.net/ont/crs/datum/Napier_1962> ;
+    ns1:datum <https://w3id.org/geosrs/datum/Napier_1962> ;
     ns1:epsgCode "EPSG:5765"^^xsd:string ;
     ns1:isApplicableTo <http://www.opengis.net/ont/crs/isbody/Earth> ;
     ns1:isBound false ;

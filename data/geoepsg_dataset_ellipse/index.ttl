@@ -6,6 +6,6 @@
         <http://www.w3.org/ns/ldp#Resource>,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Property Partition: ellipse"@en ;
-    void:property <http://www.opengis.net/ont/crs/ellipse> ;
+    void:property <https://w3id.org/geosrs/ellipse> ;
     void:triples 611 .
 

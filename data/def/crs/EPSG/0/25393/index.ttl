@@ -1,13 +1,13 @@
-@prefix ns1: <http://www.opengis.net/ont/crs/> .
+@prefix ns1: <https://w3id.org/geosrs/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix void: <http://rdfs.org/ns/void#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://www.opengis.net/def/crs/EPSG/0/25393> a ns1:ProjectedCRS,
-        owl:NamedIndividual,
+<http://www.opengis.net/def/crs/EPSG/0/25393> a owl:NamedIndividual,
         <http://www.w3.org/ns/ldp#Resource>,
         <http://www.w3.org/ns/prov-o/Entity>,
+        ns1:ProjectedCRS,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Luzon 1911 / Philippines zone III"@en ;
     void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
@@ -15,9 +15,9 @@
     ns1:asProj4 "+proj=tmerc +lat_0=0 +lon_0=121 +k=0.99995 +x_0=500000 +y_0=0 +ellps=clrk66 +units=m +no_defs +type=crs"^^xsd:string ;
     ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'ProjectedCRS','name':'Luzon 1911 / Philippines zone III','base_crs':{'name':'Luzon 1911','datum':{'type':'GeodeticReferenceFrame','name':'Luzon 1911','ellipsoid':{'name':'Clarke 1866','semi_major_axis':6378206.4,'semi_minor_axis':6356583.8}},'coordinate_system':{'subtype':'ellipsoidal','axis':[{'name':'Geodetic latitude','abbreviation':'Lat','direction':'north','unit':'degree'},{'name':'Geodetic longitude','abbreviation':'Lon','direction':'east','unit':'degree'}]},'id':{'authority':'EPSG','code':4253}},'conversion':{'name':'Philippines zone III','method':{'name':'Transverse Mercator','id':{'authority':'EPSG','code':9807}},'parameters':[{'name':'Latitude of natural origin','value':0,'unit':'degree','id':{'authority':'EPSG','code':8801}},{'name':'Longitude of natural origin','value':121,'unit':'degree','id':{'authority':'EPSG','code':8802}},{'name':'Scale factor at natural origin','value':0.99995,'unit':'unity','id':{'authority':'EPSG','code':8805}},{'name':'False easting','value':500000,'unit':'metre','id':{'authority':'EPSG','code':8806}},{'name':'False northing','value':0,'unit':'metre','id':{'authority':'EPSG','code':8807}}]},'coordinate_system':{'subtype':'Cartesian','axis':[{'name':'Easting','abbreviation':'X','direction':'east','unit':'metre'},{'name':'Northing','abbreviation':'Y','direction':'north','unit':'metre'}]},'scope':'Engineering survey, topographic mapping.','area':'Philippines - onshore approximately between 120°E and 122°E. Luzon (west of 122°E); Mindoro.','bbox':{'south_latitude':4.99,'west_longitude':119.7,'north_latitude':19.45,'east_longitude':122.21},'id':{'authority':'EPSG','code':25393}}"^^xsd:string ;
     ns1:asWKT "PROJCRS['Luzon 1911 / Philippines zone III',BASEGEOGCRS['Luzon 1911',DATUM['Luzon 1911',ELLIPSOID['Clarke 1866',6378206.4,294.978698213898,LENGTHUNIT['metre',1]]],PRIMEM['Greenwich',0,ANGLEUNIT['degree',0.0174532925199433]],ID['EPSG',4253]],CONVERSION['Philippines zone III',METHOD['Transverse Mercator',ID['EPSG',9807]],PARAMETER['Latitude of natural origin',0,ANGLEUNIT['degree',0.0174532925199433],ID['EPSG',8801]],PARAMETER['Longitude of natural origin',121,ANGLEUNIT['degree',0.0174532925199433],ID['EPSG',8802]],PARAMETER['Scale factor at natural origin',0.99995,SCALEUNIT['unity',1],ID['EPSG',8805]],PARAMETER['False easting',500000,LENGTHUNIT['metre',1],ID['EPSG',8806]],PARAMETER['False northing',0,LENGTHUNIT['metre',1],ID['EPSG',8807]]],CS[Cartesian,2],AXIS['easting (X)',east,ORDER[1],LENGTHUNIT['metre',1]],AXIS['northing (Y)',north,ORDER[2],LENGTHUNIT['metre',1]],USAGE[SCOPE['Engineering survey, topographic mapping.'],AREA['Philippines - onshore approximately between 120°E and 122°E. Luzon (west of 122°E); Mindoro.'],BBOX[4.99,119.7,19.45,122.21]],ID['EPSG',25393]]"^^ns1:wktLiteral ;
-    ns1:coordinateOperation <http://www.opengis.net/ont/crs/operation/Philippines_zone_III> ;
+    ns1:coordinateOperation <https://w3id.org/geosrs/operation/Philippines_zone_III> ;
     ns1:coordinateSystem <http://www.opengis.net/def/crs/EPSG/0/25393_cs> ;
-    ns1:datum <http://www.opengis.net/ont/crs/datum/Luzon_1911> ;
+    ns1:datum <https://w3id.org/geosrs/datum/Luzon_1911> ;
     ns1:epsgCode "EPSG:25393"^^xsd:string ;
     ns1:isApplicableTo <http://www.opengis.net/ont/crs/isbody/Earth> ;
     ns1:isBound false ;

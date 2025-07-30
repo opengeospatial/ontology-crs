@@ -1,13 +1,13 @@
-@prefix ns1: <http://www.opengis.net/ont/crs/> .
+@prefix ns1: <https://w3id.org/geosrs/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix void: <http://rdfs.org/ns/void#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://www.opengis.net/def/crs/EPSG/0/9303> a ns1:VerticalCRS,
-        owl:NamedIndividual,
+<http://www.opengis.net/def/crs/EPSG/0/9303> a owl:NamedIndividual,
         <http://www.w3.org/ns/ldp#Resource>,
         <http://www.w3.org/ns/prov-o/Entity>,
+        ns1:VerticalCRS,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "HS2-VRF height"@en ;
     void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
@@ -16,7 +16,7 @@
     ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'VerticalCRS','name':'HS2-VRF height','datum':{'type':'VerticalReferenceFrame','name':'HS2 Vertical Reference Frame'},'coordinate_system':{'subtype':'vertical','axis':[{'name':'Gravity-related height','abbreviation':'H','direction':'up','unit':'metre'}]},'scope':'Engineering survey for HS2 project phases 1 and 2a.','area':'United Kingdom (UK) - HS2 phases 1 and 2a railway corridor from London to Birmingham, Lichfield and Crewe.','bbox':{'south_latitude':51.45,'west_longitude':-2.75,'north_latitude':53.3,'east_longitude':0},'id':{'authority':'EPSG','code':9303}}"^^xsd:string ;
     ns1:asWKT "VERTCRS['HS2-VRF height',VDATUM['HS2 Vertical Reference Frame'],CS[vertical,1],AXIS['gravity-related height (H)',up,LENGTHUNIT['metre',1]],USAGE[SCOPE['Engineering survey for HS2 project phases 1 and 2a.'],AREA['United Kingdom (UK) - HS2 phases 1 and 2a railway corridor from London to Birmingham, Lichfield and Crewe.'],BBOX[51.45,-2.75,53.3,0]],ID['EPSG',9303]]"^^ns1:wktLiteral ;
     ns1:coordinateSystem <http://www.opengis.net/def/crs/EPSG/0/9303_cs> ;
-    ns1:datum <http://www.opengis.net/ont/crs/datum/HS2_Vertical_Reference_Frame> ;
+    ns1:datum <https://w3id.org/geosrs/datum/HS2_Vertical_Reference_Frame> ;
     ns1:epsgCode "EPSG:9303"^^xsd:string ;
     ns1:isApplicableTo <http://www.opengis.net/ont/crs/isbody/Earth> ;
     ns1:isBound false ;

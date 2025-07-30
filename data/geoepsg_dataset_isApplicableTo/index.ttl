@@ -6,6 +6,6 @@
         <http://www.w3.org/ns/ldp#Resource>,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Property Partition: isApplicableTo"@en ;
-    void:property <http://www.opengis.net/ont/crs/isApplicableTo> ;
+    void:property <https://w3id.org/geosrs/isApplicableTo> ;
     void:triples 6654 .
 

@@ -6,6 +6,6 @@
         <http://www.w3.org/ns/ldp#Resource>,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Property Partition: latitudeOf1StStandardParallel"@en ;
-    void:property <http://www.opengis.net/ont/crs/latitudeOf1StStandardParallel> ;
+    void:property <https://w3id.org/geosrs/latitudeOf1StStandardParallel> ;
     void:triples 450 .
 

@@ -6,6 +6,6 @@
         <http://www.w3.org/ns/ldp#Resource>,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Property Partition: flatteningParameter"@en ;
-    void:property <http://www.opengis.net/ont/crs/flatteningParameter> ;
+    void:property <https://w3id.org/geosrs/flatteningParameter> ;
     void:triples 54 .
 

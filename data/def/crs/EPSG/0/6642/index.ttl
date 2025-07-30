@@ -1,13 +1,13 @@
-@prefix ns1: <http://www.opengis.net/ont/crs/> .
+@prefix ns1: <https://w3id.org/geosrs/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix void: <http://rdfs.org/ns/void#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://www.opengis.net/def/crs/EPSG/0/6642> a ns1:VerticalCRS,
-        owl:NamedIndividual,
+<http://www.opengis.net/def/crs/EPSG/0/6642> a owl:NamedIndividual,
         <http://www.w3.org/ns/ldp#Resource>,
         <http://www.w3.org/ns/prov-o/Entity>,
+        ns1:VerticalCRS,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "VIVD09 height"@en ;
     void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
@@ -16,7 +16,7 @@
     ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'VerticalCRS','name':'VIVD09 height','datum':{'type':'VerticalReferenceFrame','name':'Virgin Islands Vertical Datum of 2009'},'coordinate_system':{'subtype':'vertical','axis':[{'name':'Gravity-related height','abbreviation':'H','direction':'up','unit':'metre'}]},'scope':'Geodesy, engineering survey, topographic mapping.','area':'US Virgin Islands - onshore - St Croix, St John, and St Thomas.','bbox':{'south_latitude':17.62,'west_longitude':-65.09,'north_latitude':18.44,'east_longitude':-64.51},'id':{'authority':'EPSG','code':6642}}"^^xsd:string ;
     ns1:asWKT "VERTCRS['VIVD09 height',VDATUM['Virgin Islands Vertical Datum of 2009'],CS[vertical,1],AXIS['gravity-related height (H)',up,LENGTHUNIT['metre',1]],USAGE[SCOPE['Geodesy, engineering survey, topographic mapping.'],AREA['US Virgin Islands - onshore - St Croix, St John, and St Thomas.'],BBOX[17.62,-65.09,18.44,-64.51]],ID['EPSG',6642]]"^^ns1:wktLiteral ;
     ns1:coordinateSystem <http://www.opengis.net/def/crs/EPSG/0/6642_cs> ;
-    ns1:datum <http://www.opengis.net/ont/crs/datum/Virgin_Islands_Vertical_Datum_of_2009> ;
+    ns1:datum <https://w3id.org/geosrs/datum/Virgin_Islands_Vertical_Datum_of_2009> ;
     ns1:epsgCode "EPSG:6642"^^xsd:string ;
     ns1:isApplicableTo <http://www.opengis.net/ont/crs/isbody/Earth> ;
     ns1:isBound false ;

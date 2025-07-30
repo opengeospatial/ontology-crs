@@ -1,13 +1,13 @@
-@prefix ns1: <http://www.opengis.net/ont/crs/> .
+@prefix ns1: <https://w3id.org/geosrs/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix void: <http://rdfs.org/ns/void#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://www.opengis.net/def/crs/EPSG/0/5758> a ns1:VerticalCRS,
-        owl:NamedIndividual,
+<http://www.opengis.net/def/crs/EPSG/0/5758> a owl:NamedIndividual,
         <http://www.w3.org/ns/ldp#Resource>,
         <http://www.w3.org/ns/prov-o/Entity>,
+        ns1:VerticalCRS,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Reunion 1989 height"@en ;
     void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
@@ -16,7 +16,7 @@
     ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'VerticalCRS','name':'Reunion 1989 height','datum':{'type':'VerticalReferenceFrame','name':'Reunion 1989'},'coordinate_system':{'subtype':'vertical','axis':[{'name':'Gravity-related height','abbreviation':'H','direction':'up','unit':'metre'}]},'scope':'Geodesy, engineering survey, topographic mapping.','area':'Reunion - onshore.','bbox':{'south_latitude':-21.42,'west_longitude':55.16,'north_latitude':-20.81,'east_longitude':55.91},'id':{'authority':'EPSG','code':5758}}"^^xsd:string ;
     ns1:asWKT "VERTCRS['Reunion 1989 height',VDATUM['Reunion 1989'],CS[vertical,1],AXIS['gravity-related height (H)',up,LENGTHUNIT['metre',1]],USAGE[SCOPE['Geodesy, engineering survey, topographic mapping.'],AREA['Reunion - onshore.'],BBOX[-21.42,55.16,-20.81,55.91]],ID['EPSG',5758]]"^^ns1:wktLiteral ;
     ns1:coordinateSystem <http://www.opengis.net/def/crs/EPSG/0/5758_cs> ;
-    ns1:datum <http://www.opengis.net/ont/crs/datum/Reunion_1989> ;
+    ns1:datum <https://w3id.org/geosrs/datum/Reunion_1989> ;
     ns1:epsgCode "EPSG:5758"^^xsd:string ;
     ns1:isApplicableTo <http://www.opengis.net/ont/crs/isbody/Earth> ;
     ns1:isBound false ;

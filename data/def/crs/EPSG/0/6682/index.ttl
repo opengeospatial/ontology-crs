@@ -1,13 +1,13 @@
-@prefix ns1: <http://www.opengis.net/ont/crs/> .
+@prefix ns1: <https://w3id.org/geosrs/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix void: <http://rdfs.org/ns/void#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://www.opengis.net/def/crs/EPSG/0/6682> a ns1:ProjectedCRS,
-        owl:NamedIndividual,
+<http://www.opengis.net/def/crs/EPSG/0/6682> a owl:NamedIndividual,
         <http://www.w3.org/ns/ldp#Resource>,
         <http://www.w3.org/ns/prov-o/Entity>,
+        ns1:ProjectedCRS,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "JGD2011 / Japan Plane Rectangular CS XIV"@en ;
     void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
@@ -15,9 +15,9 @@
     ns1:asProj4 "+proj=tmerc +lat_0=26 +lon_0=142 +k=0.9999 +x_0=0 +y_0=0 +ellps=GRS80 +units=m +no_defs +type=crs"^^xsd:string ;
     ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'ProjectedCRS','name':'JGD2011 / Japan Plane Rectangular CS XIV','base_crs':{'name':'JGD2011','datum':{'type':'GeodeticReferenceFrame','name':'Japanese Geodetic Datum 2011','ellipsoid':{'name':'GRS 1980','semi_major_axis':6378137,'inverse_flattening':298.257222101}},'coordinate_system':{'subtype':'ellipsoidal','axis':[{'name':'Geodetic latitude','abbreviation':'Lat','direction':'north','unit':'degree'},{'name':'Geodetic longitude','abbreviation':'Lon','direction':'east','unit':'degree'}]},'id':{'authority':'EPSG','code':6668}},'conversion':{'name':'Japan Plane Rectangular CS zone XIV','method':{'name':'Transverse Mercator','id':{'authority':'EPSG','code':9807}},'parameters':[{'name':'Latitude of natural origin','value':26,'unit':'degree','id':{'authority':'EPSG','code':8801}},{'name':'Longitude of natural origin','value':142,'unit':'degree','id':{'authority':'EPSG','code':8802}},{'name':'Scale factor at natural origin','value':0.9999,'unit':'unity','id':{'authority':'EPSG','code':8805}},{'name':'False easting','value':0,'unit':'metre','id':{'authority':'EPSG','code':8806}},{'name':'False northing','value':0,'unit':'metre','id':{'authority':'EPSG','code':8807}}]},'coordinate_system':{'subtype':'Cartesian','axis':[{'name':'Northing','abbreviation':'X','direction':'north','unit':'metre'},{'name':'Easting','abbreviation':'Y','direction':'east','unit':'metre'}]},'scope':'Cadastre, engineering survey, topographic mapping (large and medium scale).','area':'Japan - onshore - Tokyo-to south of 28°N and between 140°30'E and 143°E.','bbox':{'south_latitude':24.67,'west_longitude':141.2,'north_latitude':27.8,'east_longitude':142.33},'id':{'authority':'EPSG','code':6682}}"^^xsd:string ;
     ns1:asWKT "PROJCRS['JGD2011 / Japan Plane Rectangular CS XIV',BASEGEOGCRS['JGD2011',DATUM['Japanese Geodetic Datum 2011',ELLIPSOID['GRS 1980',6378137,298.257222101,LENGTHUNIT['metre',1]]],PRIMEM['Greenwich',0,ANGLEUNIT['degree',0.0174532925199433]],ID['EPSG',6668]],CONVERSION['Japan Plane Rectangular CS zone XIV',METHOD['Transverse Mercator',ID['EPSG',9807]],PARAMETER['Latitude of natural origin',26,ANGLEUNIT['degree',0.0174532925199433],ID['EPSG',8801]],PARAMETER['Longitude of natural origin',142,ANGLEUNIT['degree',0.0174532925199433],ID['EPSG',8802]],PARAMETER['Scale factor at natural origin',0.9999,SCALEUNIT['unity',1],ID['EPSG',8805]],PARAMETER['False easting',0,LENGTHUNIT['metre',1],ID['EPSG',8806]],PARAMETER['False northing',0,LENGTHUNIT['metre',1],ID['EPSG',8807]]],CS[Cartesian,2],AXIS['northing (X)',north,ORDER[1],LENGTHUNIT['metre',1]],AXIS['easting (Y)',east,ORDER[2],LENGTHUNIT['metre',1]],USAGE[SCOPE['Cadastre, engineering survey, topographic mapping (large and medium scale).'],AREA['Japan - onshore - Tokyo-to south of 28°N and between 140°30'E and 143°E.'],BBOX[24.67,141.2,27.8,142.33]],ID['EPSG',6682]]"^^ns1:wktLiteral ;
-    ns1:coordinateOperation <http://www.opengis.net/ont/crs/operation/Japan_Plane_Rectangular_CS_zone_XIV> ;
+    ns1:coordinateOperation <https://w3id.org/geosrs/operation/Japan_Plane_Rectangular_CS_zone_XIV> ;
     ns1:coordinateSystem <http://www.opengis.net/def/crs/EPSG/0/6682_cs> ;
-    ns1:datum <http://www.opengis.net/ont/crs/datum/Japanese_Geodetic_Datum_2011> ;
+    ns1:datum <https://w3id.org/geosrs/datum/Japanese_Geodetic_Datum_2011> ;
     ns1:epsgCode "EPSG:6682"^^xsd:string ;
     ns1:isApplicableTo <http://www.opengis.net/ont/crs/isbody/Earth> ;
     ns1:isBound false ;

@@ -1,13 +1,13 @@
-@prefix ns1: <http://www.opengis.net/ont/crs/> .
+@prefix ns1: <https://w3id.org/geosrs/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix void: <http://rdfs.org/ns/void#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://www.opengis.net/def/crs/EPSG/0/5466> a ns1:ProjectedCRS,
-        owl:NamedIndividual,
+<http://www.opengis.net/def/crs/EPSG/0/5466> a owl:NamedIndividual,
         <http://www.w3.org/ns/ldp#Resource>,
         <http://www.w3.org/ns/prov-o/Entity>,
+        ns1:ProjectedCRS,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Sibun Gorge 1922 / Colony Grid"@en ;
     void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
@@ -15,9 +15,9 @@
     ns1:asProj4 "+proj=tmerc +lat_0=17.0612419444444 +lon_0=-88.6318575 +k=1 +x_0=66220.0283308276 +y_0=135779.50998853 +a=6378293.64520876 +b=6356617.98767984 +units=m +no_defs +type=crs"^^xsd:string ;
     ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'ProjectedCRS','name':'Sibun Gorge 1922 / Colony Grid','base_crs':{'name':'Sibun Gorge 1922','datum':{'type':'GeodeticReferenceFrame','name':'Sibun Gorge 1922','ellipsoid':{'name':'Clarke 1858','semi_major_axis':{'value':20926348,'unit':{'type':'LinearUnit','name':'Clarke's foot','conversion_factor':0.3047972654}},'semi_minor_axis':{'value':20855233,'unit':{'type':'LinearUnit','name':'Clarke's foot','conversion_factor':0.3047972654}}}},'coordinate_system':{'subtype':'ellipsoidal','axis':[{'name':'Geodetic latitude','abbreviation':'Lat','direction':'north','unit':'degree'},{'name':'Geodetic longitude','abbreviation':'Lon','direction':'east','unit':'degree'}]},'id':{'authority':'EPSG','code':5464}},'conversion':{'name':'Belize Colony Grid','method':{'name':'Transverse Mercator','id':{'authority':'EPSG','code':9807}},'parameters':[{'name':'Latitude of natural origin','value':17.0612419444444,'unit':'degree','id':{'authority':'EPSG','code':8801}},{'name':'Longitude of natural origin','value':-88.6318575,'unit':'degree','id':{'authority':'EPSG','code':8802}},{'name':'Scale factor at natural origin','value':1,'unit':'unity','id':{'authority':'EPSG','code':8805}},{'name':'False easting','value':217259.26,'unit':{'type':'LinearUnit','name':'Clarke's foot','conversion_factor':0.3047972654},'id':{'authority':'EPSG','code':8806}},{'name':'False northing','value':445474.83,'unit':{'type':'LinearUnit','name':'Clarke's foot','conversion_factor':0.3047972654},'id':{'authority':'EPSG','code':8807}}]},'coordinate_system':{'subtype':'Cartesian','axis':[{'name':'Easting','abbreviation':'X','direction':'east','unit':'metre'},{'name':'Northing','abbreviation':'Y','direction':'north','unit':'metre'}]},'scope':'Engineering survey, topographic mapping.','area':'Belize - onshore.','bbox':{'south_latitude':15.88,'west_longitude':-89.22,'north_latitude':18.49,'east_longitude':-87.72},'id':{'authority':'EPSG','code':5466}}"^^xsd:string ;
     ns1:asWKT "PROJCRS['Sibun Gorge 1922 / Colony Grid',BASEGEOGCRS['Sibun Gorge 1922',DATUM['Sibun Gorge 1922',ELLIPSOID['Clarke 1858',20926348,294.260676369261,LENGTHUNIT['Clarke's foot',0.3047972654]]],PRIMEM['Greenwich',0,ANGLEUNIT['degree',0.0174532925199433]],ID['EPSG',5464]],CONVERSION['Belize Colony Grid',METHOD['Transverse Mercator',ID['EPSG',9807]],PARAMETER['Latitude of natural origin',17.0612419444444,ANGLEUNIT['degree',0.0174532925199433],ID['EPSG',8801]],PARAMETER['Longitude of natural origin',-88.6318575,ANGLEUNIT['degree',0.0174532925199433],ID['EPSG',8802]],PARAMETER['Scale factor at natural origin',1,SCALEUNIT['unity',1],ID['EPSG',8805]],PARAMETER['False easting',217259.26,LENGTHUNIT['Clarke's foot',0.3047972654],ID['EPSG',8806]],PARAMETER['False northing',445474.83,LENGTHUNIT['Clarke's foot',0.3047972654],ID['EPSG',8807]]],CS[Cartesian,2],AXIS['easting (X)',east,ORDER[1],LENGTHUNIT['metre',1]],AXIS['northing (Y)',north,ORDER[2],LENGTHUNIT['metre',1]],USAGE[SCOPE['Engineering survey, topographic mapping.'],AREA['Belize - onshore.'],BBOX[15.88,-89.22,18.49,-87.72]],ID['EPSG',5466]]"^^ns1:wktLiteral ;
-    ns1:coordinateOperation <http://www.opengis.net/ont/crs/operation/Belize_Colony_Grid> ;
+    ns1:coordinateOperation <https://w3id.org/geosrs/operation/Belize_Colony_Grid> ;
     ns1:coordinateSystem <http://www.opengis.net/def/crs/EPSG/0/5466_cs> ;
-    ns1:datum <http://www.opengis.net/ont/crs/datum/Sibun_Gorge_1922> ;
+    ns1:datum <https://w3id.org/geosrs/datum/Sibun_Gorge_1922> ;
     ns1:epsgCode "EPSG:5466"^^xsd:string ;
     ns1:isApplicableTo <http://www.opengis.net/ont/crs/isbody/Earth> ;
     ns1:isBound false ;

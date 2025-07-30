@@ -6,6 +6,6 @@
         <http://www.w3.org/ns/ldp#Resource>,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Property Partition: asProj4"@en ;
-    void:property <http://www.opengis.net/ont/crs/asProj4> ;
+    void:property <https://w3id.org/geosrs/asProj4> ;
     void:triples 9479 .
 

@@ -1,13 +1,13 @@
-@prefix ns1: <http://www.opengis.net/ont/crs/> .
+@prefix ns1: <https://w3id.org/geosrs/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix void: <http://rdfs.org/ns/void#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://www.opengis.net/def/crs/EPSG/0/9430> a ns1:CompoundCRS,
-        owl:NamedIndividual,
+<http://www.opengis.net/def/crs/EPSG/0/9430> a owl:NamedIndividual,
         <http://www.w3.org/ns/ldp#Resource>,
         <http://www.w3.org/ns/prov-o/Entity>,
+        ns1:CompoundCRS,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "ETRS89 + St. Marys height"@en ;
     void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
@@ -15,7 +15,7 @@
     ns1:asProj4 "+proj=longlat +ellps=GRS80 +vunits=m +no_defs +type=crs"^^xsd:string ;
     ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'CompoundCRS','name':'ETRS89 + St. Marys height','components':[{'type':'GeographicCRS','name':'ETRS89','datum_ensemble':{'name':'European Terrestrial Reference System 1989 ensemble','members':[{'name':'European Terrestrial Reference Frame 1989','id':{'authority':'EPSG','code':1178}},{'name':'European Terrestrial Reference Frame 1990','id':{'authority':'EPSG','code':1179}},{'name':'European Terrestrial Reference Frame 1991','id':{'authority':'EPSG','code':1180}},{'name':'European Terrestrial Reference Frame 1992','id':{'authority':'EPSG','code':1181}},{'name':'European Terrestrial Reference Frame 1993','id':{'authority':'EPSG','code':1182}},{'name':'European Terrestrial Reference Frame 1994','id':{'authority':'EPSG','code':1183}},{'name':'European Terrestrial Reference Frame 1996','id':{'authority':'EPSG','code':1184}},{'name':'European Terrestrial Reference Frame 1997','id':{'authority':'EPSG','code':1185}},{'name':'European Terrestrial Reference Frame 2000','id':{'authority':'EPSG','code':1186}},{'name':'European Terrestrial Reference Frame 2005','id':{'authority':'EPSG','code':1204}},{'name':'European Terrestrial Reference Frame 2014','id':{'authority':'EPSG','code':1206}},{'name':'European Terrestrial Reference Frame 2020','id':{'authority':'EPSG','code':1382}}],'ellipsoid':{'name':'GRS 1980','semi_major_axis':6378137,'inverse_flattening':298.257222101},'accuracy':'0.1','id':{'authority':'EPSG','code':6258}},'coordinate_system':{'subtype':'ellipsoidal','axis':[{'name':'Geodetic latitude','abbreviation':'Lat','direction':'north','unit':'degree'},{'name':'Geodetic longitude','abbreviation':'Lon','direction':'east','unit':'degree'}]}},{'type':'VerticalCRS','name':'St. Marys height','datum':{'type':'VerticalReferenceFrame','name':'St. Marys'},'coordinate_system':{'subtype':'vertical','axis':[{'name':'Gravity-related height','abbreviation':'H','direction':'up','unit':'metre'}]}}],'scope':'Spatial referencing.','area':'United Kingdom (UK) - Great Britain - England - Isles of Scilly onshore.','bbox':{'south_latitude':49.86,'west_longitude':-6.41,'north_latitude':49.99,'east_longitude':-6.23},'id':{'authority':'EPSG','code':9430}}"^^xsd:string ;
     ns1:asWKT "COMPOUNDCRS['ETRS89 + St. Marys height',GEOGCRS['ETRS89',ENSEMBLE['European Terrestrial Reference System 1989 ensemble',MEMBER['European Terrestrial Reference Frame 1989'],MEMBER['European Terrestrial Reference Frame 1990'],MEMBER['European Terrestrial Reference Frame 1991'],MEMBER['European Terrestrial Reference Frame 1992'],MEMBER['European Terrestrial Reference Frame 1993'],MEMBER['European Terrestrial Reference Frame 1994'],MEMBER['European Terrestrial Reference Frame 1996'],MEMBER['European Terrestrial Reference Frame 1997'],MEMBER['European Terrestrial Reference Frame 2000'],MEMBER['European Terrestrial Reference Frame 2005'],MEMBER['European Terrestrial Reference Frame 2014'],MEMBER['European Terrestrial Reference Frame 2020'],ELLIPSOID['GRS 1980',6378137,298.257222101,LENGTHUNIT['metre',1]],ENSEMBLEACCURACY[0.1]],PRIMEM['Greenwich',0,ANGLEUNIT['degree',0.0174532925199433]],CS[ellipsoidal,2],AXIS['geodetic latitude (Lat)',north,ORDER[1],ANGLEUNIT['degree',0.0174532925199433]],AXIS['geodetic longitude (Lon)',east,ORDER[2],ANGLEUNIT['degree',0.0174532925199433]]],VERTCRS['St. Marys height',VDATUM['St. Marys'],CS[vertical,1],AXIS['gravity-related height (H)',up,LENGTHUNIT['metre',1]]],USAGE[SCOPE['Spatial referencing.'],AREA['United Kingdom (UK) - Great Britain - England - Isles of Scilly onshore.'],BBOX[49.86,-6.41,49.99,-6.23]],ID['EPSG',9430]]"^^ns1:wktLiteral ;
-    ns1:datum <http://www.opengis.net/ont/crs/datum/European_Terrestrial_Reference_System_1989_ensemble> ;
+    ns1:datum <https://w3id.org/geosrs/datum/European_Terrestrial_Reference_System_1989_ensemble> ;
     ns1:ellipsoid <http://www.opengis.net/ont/crs/geod/1> ;
     ns1:epsgCode "EPSG:9430"^^xsd:string ;
     ns1:includesSRS <http://www.opengis.net/def/crs/EPSG/0/4258>,

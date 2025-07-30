@@ -75,33 +75,49 @@
     rdfs:label "Occurrences of vocabulary http://www.opengis.net/ont/geosparql# in geoepsg_dataset" ;
     voaf:inDataset <http://www.opengis.net/geoepsg_dataset> .
 
+<http://www.opengis.net/geoepsg_dataset_w3id.org_geosrs_> a void:Linkset ;
+    rdfs:label "Linkset: geoepsg_dataset - geosrs:"@en ;
+    void:linkPredicate rdf:type,
+        <https://w3id.org/geosrs/direction> ;
+    void:objectsTarget <https://w3id.org/geosrs/> ;
+    void:subjectsTarget <http://www.opengis.net/geoepsg_dataset> ;
+    void:triples 56,
+        27973 .
+
+<http://www.opengis.net/geoepsg_dataset_w3id.org_geosrs_datum_> a void:Linkset ;
+    rdfs:label "Linkset: geoepsg_dataset - geosrsdatum:"@en ;
+    void:linkPredicate <https://w3id.org/geosrs/datum> ;
+    void:objectsTarget <https://w3id.org/geosrs/datum/> ;
+    void:subjectsTarget <http://www.opengis.net/geoepsg_dataset> ;
+    void:triples 6652 .
+
+<http://www.opengis.net/geoepsg_dataset_w3id.org_geosrs_operation_> a void:Linkset ;
+    rdfs:label "Linkset: geoepsg_dataset - geosrsoperation:"@en ;
+    void:linkPredicate <https://w3id.org/geosrs/coordinateOperation> ;
+    void:objectsTarget <https://w3id.org/geosrs/operation/> ;
+    void:subjectsTarget <http://www.opengis.net/geoepsg_dataset> ;
+    void:triples 4909 .
+
 <http://www.opengis.net/geoepsg_dataset_www.ontology-of-units-of-measure.org_resource_om-2_> a void:Linkset ;
     rdfs:label "Linkset: geoepsg_dataset - Ontology of Units of Measurement (om:)"@en ;
-    void:linkPredicate <http://www.opengis.net/ont/crs/unit> ;
+    void:linkPredicate <https://w3id.org/geosrs/unit> ;
     void:objectsTarget <http://www.ontology-of-units-of-measure.org/resource/om-2/> ;
     void:subjectsTarget <http://www.opengis.net/geoepsg_dataset> ;
     void:triples 32 .
-
-<http://www.opengis.net/geoepsg_dataset_www.w3.org_2001_XMLSchema_> a void:Linkset ;
-    rdfs:label "Linkset: geoepsg_dataset - XML Schema (xmls:)"@en ;
-    void:linkPredicate rdfs:range ;
-    void:objectsTarget xsd: ;
-    void:subjectsTarget <http://www.opengis.net/geoepsg_dataset> ;
-    void:triples 25 .
 
 <http://www.opengis.net/geoepsg_dataset_www.w3.org_2002_07_owl_> a void:Linkset ;
     rdfs:label "Linkset: geoepsg_dataset - Web Ontology Language 2 Vocabulary (owl:)"@en ;
     void:linkPredicate rdf:type ;
     void:objectsTarget owl: ;
     void:subjectsTarget <http://www.opengis.net/geoepsg_dataset> ;
-    void:triples 6679 .
+    void:triples 6654 .
 
 <http://www.opengis.net/geoepsg_dataset_www.w3.org_2004_02_skos_core_> a void:Linkset ;
     rdfs:label "Linkset: geoepsg_dataset - skos:"@en ;
     void:linkPredicate rdf:type ;
     void:objectsTarget skos: ;
     void:subjectsTarget <http://www.opengis.net/geoepsg_dataset> ;
-    void:triples 41 .
+    void:triples 19 .
 
 <http://www.opengis.net/geoepsg_dataset_www.w3.org_ns_prov-o_> a void:Linkset ;
     rdfs:label "Linkset: geoepsg_dataset - prov1:"@en ;
@@ -121,7 +137,7 @@
 <http://www.opengis.net/owl_geoepsg_dataset_occ> a voaf:DatasetOccurrence ;
     rdfs:label "Occurrences of vocabulary http://www.w3.org/2002/07/owl# in geoepsg_dataset" ;
     voaf:inDataset <http://www.opengis.net/geoepsg_dataset> ;
-    voaf:occurrences 13358 .
+    voaf:occurrences 13308 .
 
 <http://www.opengis.net/prof_geoepsg_dataset_occ> a voaf:DatasetOccurrence ;
     rdfs:label "Occurrences of vocabulary http://www.w3.org/ns/dx/prof/ in geoepsg_dataset" ;
@@ -154,7 +170,7 @@
 <http://www.opengis.net/skos_geoepsg_dataset_occ> a voaf:DatasetOccurrence ;
     rdfs:label "Occurrences of vocabulary http://www.w3.org/2004/02/skos/core# in geoepsg_dataset" ;
     voaf:inDataset <http://www.opengis.net/geoepsg_dataset> ;
-    voaf:occurrences 82 .
+    voaf:occurrences 38 .
 
 <http://www.opengis.net/sosa_geoepsg_dataset_occ> a voaf:DatasetOccurrence ;
     rdfs:label "Occurrences of vocabulary http://www.w3.org/ns/sosa/ in geoepsg_dataset" ;
@@ -194,8 +210,7 @@
 
 <http://www.opengis.net/xsd_geoepsg_dataset_occ> a voaf:DatasetOccurrence ;
     rdfs:label "Occurrences of vocabulary http://www.w3.org/2001/XMLSchema# in geoepsg_dataset" ;
-    voaf:inDataset <http://www.opengis.net/geoepsg_dataset> ;
-    voaf:occurrences 50 .
+    voaf:inDataset <http://www.opengis.net/geoepsg_dataset> .
 
 <https://github.com/opengeospatial/ontology-crs> a adms:AssetRepository ;
     rdfs:label "Repository for geoepsg_dataset"@en ;
@@ -270,87 +285,79 @@ doap: a voaf:Vocabulary ;
 
 <http://www.opengis.net/geoepsg_dataset_3DCoordinateSystem> a void:Dataset ;
     rdfs:label "Class Partition: 3DCoordinateSystem"@en ;
-    void:class <http://www.opengis.net/ont/crs/3DCoordinateSystem> ;
+    void:class <https://w3id.org/geosrs/3DCoordinateSystem> ;
     void:entities 475 .
 
 <http://www.opengis.net/geoepsg_dataset_AlbersEqualAreaProjection> a void:Dataset ;
     rdfs:label "Class Partition: AlbersEqualAreaProjection"@en ;
-    void:class <http://www.opengis.net/ont/crs/AlbersEqualAreaProjection> ;
-    void:entities 29 .
+    void:class <https://w3id.org/geosrs/AlbersEqualAreaProjection> .
 
 <http://www.opengis.net/geoepsg_dataset_AmericanPolyconicProjection> a void:Dataset ;
     rdfs:label "Class Partition: AmericanPolyconicProjection"@en ;
-    void:class <http://www.opengis.net/ont/crs/AmericanPolyconicProjection> ;
-    void:entities 2 .
+    void:class <https://w3id.org/geosrs/AmericanPolyconicProjection> .
 
 <http://www.opengis.net/geoepsg_dataset_AreaOfUse> a void:Dataset ;
     rdfs:label "Class Partition: AreaOfUse"@en ;
-    void:class <http://www.opengis.net/ont/crs/AreaOfUse> ;
+    void:class <https://w3id.org/geosrs/AreaOfUse> ;
     void:entities 8916 .
 
 <http://www.opengis.net/geoepsg_dataset_AxisDirection> a void:Dataset ;
     rdfs:label "Class Partition: AxisDirection"@en ;
-    void:class <http://www.opengis.net/ont/crs/AxisDirection> ;
+    void:class <https://w3id.org/geosrs/AxisDirection> ;
     void:entities 9 .
 
 <http://www.opengis.net/geoepsg_dataset_CartesianCoordinateSystem> a void:Dataset ;
     rdfs:label "Class Partition: CartesianCoordinateSystem"@en ;
-    void:class <http://www.opengis.net/ont/crs/CartesianCoordinateSystem> ;
+    void:class <https://w3id.org/geosrs/CartesianCoordinateSystem> ;
     void:entities 5145 .
 
 <http://www.opengis.net/geoepsg_dataset_CassiniProjection> a void:Dataset ;
     rdfs:label "Class Partition: CassiniProjection"@en ;
-    void:class <http://www.opengis.net/ont/crs/CassiniProjection> ;
-    void:entities 30 .
+    void:class <https://w3id.org/geosrs/CassiniProjection> .
 
 <http://www.opengis.net/geoepsg_dataset_Collection> a void:Dataset ;
     rdfs:label "Class Partition: Collection"@en ;
     void:class skos:Collection ;
-    void:entities 41 .
+    void:entities 19 .
 
 <http://www.opengis.net/geoepsg_dataset_ColombiaUrbanProjection> a void:Dataset ;
     rdfs:label "Class Partition: ColombiaUrbanProjection"@en ;
-    void:class <http://www.opengis.net/ont/crs/ColombiaUrbanProjection> ;
-    void:entities 32 .
+    void:class <https://w3id.org/geosrs/ColombiaUrbanProjection> .
 
 <http://www.opengis.net/geoepsg_dataset_CompoundCRS> a void:Dataset ;
     rdfs:label "Class Partition: CompoundCRS"@en ;
-    void:class <http://www.opengis.net/ont/crs/CompoundCRS> ;
+    void:class <https://w3id.org/geosrs/CompoundCRS> ;
     void:entities 390 .
 
 <http://www.opengis.net/geoepsg_dataset_CoordinateConversionOperation> a void:Dataset ;
     rdfs:label "Class Partition: CoordinateConversionOperation"@en ;
-    void:class <http://www.opengis.net/ont/crs/CoordinateConversionOperation> ;
-    void:entities 34 .
+    void:class <https://w3id.org/geosrs/CoordinateConversionOperation> .
 
 <http://www.opengis.net/geoepsg_dataset_CoordinateSystemAxis> a void:Dataset ;
     rdfs:label "Class Partition: CoordinateSystemAxis"@en ;
-    void:class <http://www.opengis.net/ont/crs/CoordinateSystemAxis> ;
+    void:class <https://w3id.org/geosrs/CoordinateSystemAxis> ;
     void:entities 56 .
 
 <http://www.opengis.net/geoepsg_dataset_CylindricalEqualArea> a void:Dataset ;
     rdfs:label "Class Partition: CylindricalEqualArea"@en ;
-    void:class <http://www.opengis.net/ont/crs/CylindricalEqualArea> ;
-    void:entities 2 .
+    void:class <https://w3id.org/geosrs/CylindricalEqualArea> .
 
 <http://www.opengis.net/geoepsg_dataset_Datum> a void:Dataset ;
     rdfs:label "Class Partition: Datum"@en ;
-    void:class <http://www.opengis.net/ont/crs/Datum> ;
-    void:entities 2 .
+    void:class <https://w3id.org/geosrs/Datum> .
 
 <http://www.opengis.net/geoepsg_dataset_DynamicVerticalReferenceFrame> a void:Dataset ;
     rdfs:label "Class Partition: DynamicVerticalReferenceFrame"@en ;
-    void:class <http://www.opengis.net/ont/crs/DynamicVerticalReferenceFrame> ;
-    void:entities 2 .
+    void:class <https://w3id.org/geosrs/DynamicVerticalReferenceFrame> .
 
 <http://www.opengis.net/geoepsg_dataset_Ellipsoid> a void:Dataset ;
     rdfs:label "Class Partition: Ellipsoid"@en ;
-    void:class <http://www.opengis.net/ont/crs/Ellipsoid> ;
+    void:class <https://w3id.org/geosrs/Ellipsoid> ;
     void:entities 32 .
 
 <http://www.opengis.net/geoepsg_dataset_EllipsoidalCoordinateSystem> a void:Dataset ;
     rdfs:label "Class Partition: EllipsoidalCoordinateSystem"@en ;
-    void:class <http://www.opengis.net/ont/crs/EllipsoidalCoordinateSystem> ;
+    void:class <https://w3id.org/geosrs/EllipsoidalCoordinateSystem> ;
     void:entities 861 .
 
 <http://www.opengis.net/geoepsg_dataset_Entity> a void:Dataset ;
@@ -360,93 +367,82 @@ doap: a voaf:Vocabulary ;
 
 <http://www.opengis.net/geoepsg_dataset_EqualEarthProjection> a void:Dataset ;
     rdfs:label "Class Partition: EqualEarthProjection"@en ;
-    void:class <http://www.opengis.net/ont/crs/EqualEarthProjection> ;
-    void:entities 3 .
+    void:class <https://w3id.org/geosrs/EqualEarthProjection> .
 
 <http://www.opengis.net/geoepsg_dataset_EquidistantCylindricalProjection> a void:Dataset ;
     rdfs:label "Class Partition: EquidistantCylindricalProjection"@en ;
-    void:class <http://www.opengis.net/ont/crs/EquidistantCylindricalProjection> ;
-    void:entities 2 .
+    void:class <https://w3id.org/geosrs/EquidistantCylindricalProjection> .
 
 <http://www.opengis.net/geoepsg_dataset_GeocentricCRS> a void:Dataset ;
     rdfs:label "Class Partition: GeocentricCRS"@en ;
-    void:class <http://www.opengis.net/ont/crs/GeocentricCRS> ;
+    void:class <https://w3id.org/geosrs/GeocentricCRS> ;
     void:entities 236 .
 
 <http://www.opengis.net/geoepsg_dataset_GeodeticReferenceFrame> a void:Dataset ;
     rdfs:label "Class Partition: GeodeticReferenceFrame"@en ;
-    void:class <http://www.opengis.net/ont/crs/GeodeticReferenceFrame> ;
-    void:entities 604 .
+    void:class <https://w3id.org/geosrs/GeodeticReferenceFrame> .
 
 <http://www.opengis.net/geoepsg_dataset_GeographicCRS> a void:Dataset ;
     rdfs:label "Class Partition: GeographicCRS"@en ;
-    void:class <http://www.opengis.net/ont/crs/GeographicCRS> ;
+    void:class <https://w3id.org/geosrs/GeographicCRS> ;
     void:entities 861 .
 
 <http://www.opengis.net/geoepsg_dataset_Geoid> a void:Dataset ;
     rdfs:label "Class Partition: Geoid"@en ;
-    void:class <http://www.opengis.net/ont/crs/Geoid> ;
+    void:class <https://w3id.org/geosrs/Geoid> ;
     void:entities 17 .
 
 <http://www.opengis.net/geoepsg_dataset_Krovak> a void:Dataset ;
     rdfs:label "Class Partition: Krovak"@en ;
-    void:class <http://www.opengis.net/ont/crs/Krovak> ;
-    void:entities 8 .
+    void:class <https://w3id.org/geosrs/Krovak> .
 
 <http://www.opengis.net/geoepsg_dataset_LabordeProjection> a void:Dataset ;
     rdfs:label "Class Partition: LabordeProjection"@en ;
-    void:class <http://www.opengis.net/ont/crs/LabordeProjection> ;
-    void:entities 2 .
+    void:class <https://w3id.org/geosrs/LabordeProjection> .
 
 <http://www.opengis.net/geoepsg_dataset_LambertConformalConicProjection> a void:Dataset ;
     rdfs:label "Class Partition: LambertConformalConicProjection"@en ;
-    void:class <http://www.opengis.net/ont/crs/LambertConformalConicProjection> ;
-    void:entities 601 .
+    void:class <https://w3id.org/geosrs/LambertConformalConicProjection> .
 
 <http://www.opengis.net/geoepsg_dataset_MercatorProjection> a void:Dataset ;
     rdfs:label "Class Partition: MercatorProjection"@en ;
-    void:class <http://www.opengis.net/ont/crs/MercatorProjection> ;
-    void:entities 9 .
+    void:class <https://w3id.org/geosrs/MercatorProjection> .
 
 <http://www.opengis.net/geoepsg_dataset_ObliqueMercatorProjection> a void:Dataset ;
     rdfs:label "Class Partition: ObliqueMercatorProjection"@en ;
-    void:class <http://www.opengis.net/ont/crs/ObliqueMercatorProjection> ;
-    void:entities 25 .
+    void:class <https://w3id.org/geosrs/ObliqueMercatorProjection> .
 
 <http://www.opengis.net/geoepsg_dataset_ObliqueStereographicProjection> a void:Dataset ;
     rdfs:label "Class Partition: ObliqueStereographicProjection"@en ;
-    void:class <http://www.opengis.net/ont/crs/ObliqueStereographicProjection> ;
-    void:entities 14 .
+    void:class <https://w3id.org/geosrs/ObliqueStereographicProjection> .
 
 <http://www.opengis.net/geoepsg_dataset_PlanarCoordinateSystem> a void:Dataset ;
     rdfs:label "Class Partition: PlanarCoordinateSystem"@en ;
-    void:class <http://www.opengis.net/ont/crs/PlanarCoordinateSystem> ;
+    void:class <https://w3id.org/geosrs/PlanarCoordinateSystem> ;
     void:entities 5531 .
 
 <http://www.opengis.net/geoepsg_dataset_PrimeMeridian> a void:Dataset ;
     rdfs:label "Class Partition: PrimeMeridian"@en ;
-    void:class <http://www.opengis.net/ont/crs/PrimeMeridian> ;
+    void:class <https://w3id.org/geosrs/PrimeMeridian> ;
     void:entities 14 .
 
 <http://www.opengis.net/geoepsg_dataset_ProjectedCRS> a void:Dataset ;
     rdfs:label "Class Partition: ProjectedCRS"@en ;
-    void:class <http://www.opengis.net/ont/crs/ProjectedCRS> ;
+    void:class <https://w3id.org/geosrs/ProjectedCRS> ;
     void:entities 4909 .
 
 <http://www.opengis.net/geoepsg_dataset_Sphere> a void:Dataset ;
     rdfs:label "Class Partition: Sphere"@en ;
-    void:class <http://www.opengis.net/ont/crs/Sphere> ;
+    void:class <https://w3id.org/geosrs/Sphere> ;
     void:entities 5 .
 
 <http://www.opengis.net/geoepsg_dataset_StereographicProjection> a void:Dataset ;
     rdfs:label "Class Partition: StereographicProjection"@en ;
-    void:class <http://www.opengis.net/ont/crs/StereographicProjection> ;
-    void:entities 35 .
+    void:class <https://w3id.org/geosrs/StereographicProjection> .
 
 <http://www.opengis.net/geoepsg_dataset_TransverseMercatorProjection> a void:Dataset ;
     rdfs:label "Class Partition: TransverseMercatorProjection"@en ;
-    void:class <http://www.opengis.net/ont/crs/TransverseMercatorProjection> ;
-    void:entities 1296 .
+    void:class <https://w3id.org/geosrs/TransverseMercatorProjection> .
 
 <http://www.opengis.net/geoepsg_dataset_Unit> a void:Dataset ;
     rdfs:label "Class Partition: Unit"@en ;
@@ -454,77 +450,75 @@ doap: a voaf:Vocabulary ;
 
 <http://www.opengis.net/geoepsg_dataset_UniversalTransverseMercatorProjection> a void:Dataset ;
     rdfs:label "Class Partition: UniversalTransverseMercatorProjection"@en ;
-    void:class <http://www.opengis.net/ont/crs/UniversalTransverseMercatorProjection> ;
-    void:entities 139 .
+    void:class <https://w3id.org/geosrs/UniversalTransverseMercatorProjection> .
 
 <http://www.opengis.net/geoepsg_dataset_VerticalCRS> a void:Dataset ;
     rdfs:label "Class Partition: VerticalCRS"@en ;
-    void:class <http://www.opengis.net/ont/crs/VerticalCRS> ;
+    void:class <https://w3id.org/geosrs/VerticalCRS> ;
     void:entities 258 .
 
 <http://www.opengis.net/geoepsg_dataset_VerticalCoordinateSystem> a void:Dataset ;
     rdfs:label "Class Partition: VerticalCoordinateSystem"@en ;
-    void:class <http://www.opengis.net/ont/crs/VerticalCoordinateSystem> ;
+    void:class <https://w3id.org/geosrs/VerticalCoordinateSystem> ;
     void:entities 258 .
 
 <http://www.opengis.net/geoepsg_dataset_VerticalReferenceFrame> a void:Dataset ;
     rdfs:label "Class Partition: VerticalReferenceFrame"@en ;
-    void:class <http://www.opengis.net/ont/crs/VerticalReferenceFrame> ;
-    void:entities 231 .
+    void:class <https://w3id.org/geosrs/VerticalReferenceFrame> .
 
 <http://www.opengis.net/geoepsg_dataset_abbreviation> a void:Dataset ;
     rdfs:label "Property Partition: abbreviation"@en ;
-    void:property <http://www.opengis.net/ont/crs/abbreviation> ;
+    void:property <https://w3id.org/geosrs/abbreviation> ;
     void:triples 80 .
 
 <http://www.opengis.net/geoepsg_dataset_accuracy> a void:Dataset ;
     rdfs:label "Property Partition: accuracy"@en ;
-    void:property <http://www.opengis.net/ont/crs/accuracy> ;
+    void:property <https://w3id.org/geosrs/accuracy> ;
     void:triples 2262 .
 
 <http://www.opengis.net/geoepsg_dataset_angleFromRectifiedToSkewGrid> a void:Dataset ;
     rdfs:label "Property Partition: angleFromRectifiedToSkewGrid"@en ;
-    void:property <http://www.opengis.net/ont/crs/angleFromRectifiedToSkewGrid> ;
+    void:property <https://w3id.org/geosrs/angleFromRectifiedToSkewGrid> ;
     void:triples 25 .
 
 <http://www.opengis.net/geoepsg_dataset_approximates> a void:Dataset ;
     rdfs:label "Property Partition: approximates"@en ;
-    void:property <http://www.opengis.net/ont/crs/approximates> ;
+    void:property <https://w3id.org/geosrs/approximates> ;
     void:triples 54 .
 
 <http://www.opengis.net/geoepsg_dataset_area_of_use> a void:Dataset ;
     rdfs:label "Property Partition: area_of_use"@en ;
-    void:property <http://www.opengis.net/ont/crs/area_of_use> ;
+    void:property <https://w3id.org/geosrs/area_of_use> ;
     void:triples 8916 .
 
 <http://www.opengis.net/geoepsg_dataset_asProj4> a void:Dataset ;
     rdfs:label "Property Partition: asProj4"@en ;
-    void:property <http://www.opengis.net/ont/crs/asProj4> ;
+    void:property <https://w3id.org/geosrs/asProj4> ;
     void:triples 9479 .
 
 <http://www.opengis.net/geoepsg_dataset_asProjJSON> a void:Dataset ;
     rdfs:label "Property Partition: asProjJSON"@en ;
-    void:property <http://www.opengis.net/ont/crs/asProjJSON> ;
+    void:property <https://w3id.org/geosrs/asProjJSON> ;
     void:triples 15243 .
 
 <http://www.opengis.net/geoepsg_dataset_asWKT> a void:Dataset ;
     rdfs:label "Property Partition: asWKT"@en ;
-    void:property <http://www.opengis.net/ont/crs/asWKT> ;
+    void:property <https://w3id.org/geosrs/asWKT> ;
     void:triples 15243 .
 
 <http://www.opengis.net/geoepsg_dataset_axis> a void:Dataset ;
     rdfs:label "Property Partition: axis"@en ;
-    void:property <http://www.opengis.net/ont/crs/axis> ;
+    void:property <https://w3id.org/geosrs/axis> ;
     void:triples 12745 .
 
 <http://www.opengis.net/geoepsg_dataset_azimuthAtProjectionCentre> a void:Dataset ;
     rdfs:label "Property Partition: azimuthAtProjectionCentre"@en ;
-    void:property <http://www.opengis.net/ont/crs/azimuthAtProjectionCentre> ;
+    void:property <https://w3id.org/geosrs/azimuthAtProjectionCentre> ;
     void:triples 27 .
 
 <http://www.opengis.net/geoepsg_dataset_co-LatitudeOfConeAxis> a void:Dataset ;
     rdfs:label "Property Partition: co-LatitudeOfConeAxis"@en ;
-    void:property <http://www.opengis.net/ont/crs/co-LatitudeOfConeAxis> ;
+    void:property <https://w3id.org/geosrs/co-LatitudeOfConeAxis> ;
     void:triples 8 .
 
 <http://www.opengis.net/geoepsg_dataset_comment> a void:Dataset ;
@@ -534,17 +528,17 @@ doap: a voaf:Vocabulary ;
 
 <http://www.opengis.net/geoepsg_dataset_coordinateOperation> a void:Dataset ;
     rdfs:label "Property Partition: coordinateOperation"@en ;
-    void:property <http://www.opengis.net/ont/crs/coordinateOperation> ;
+    void:property <https://w3id.org/geosrs/coordinateOperation> ;
     void:triples 4909 .
 
 <http://www.opengis.net/geoepsg_dataset_coordinateSystem> a void:Dataset ;
     rdfs:label "Property Partition: coordinateSystem"@en ;
-    void:property <http://www.opengis.net/ont/crs/coordinateSystem> ;
+    void:property <https://w3id.org/geosrs/coordinateSystem> ;
     void:triples 6264 .
 
 <http://www.opengis.net/geoepsg_dataset_datum> a void:Dataset ;
     rdfs:label "Property Partition: datum"@en ;
-    void:property <http://www.opengis.net/ont/crs/datum> ;
+    void:property <https://w3id.org/geosrs/datum> ;
     void:triples 6652 .
 
 <http://www.opengis.net/geoepsg_dataset_definition> a void:Dataset ;
@@ -554,7 +548,7 @@ doap: a voaf:Vocabulary ;
 
 <http://www.opengis.net/geoepsg_dataset_direction> a void:Dataset ;
     rdfs:label "Property Partition: direction"@en ;
-    void:property <http://www.opengis.net/ont/crs/direction> ;
+    void:property <https://w3id.org/geosrs/direction> ;
     void:triples 56 .
 
 <http://www.opengis.net/geoepsg_dataset_dist_ttl> a adms:AssetDistribution ;
@@ -569,207 +563,207 @@ doap: a voaf:Vocabulary ;
 
 <http://www.opengis.net/geoepsg_dataset_eastingAtFalseOrigin> a void:Dataset ;
     rdfs:label "Property Partition: eastingAtFalseOrigin"@en ;
-    void:property <http://www.opengis.net/ont/crs/eastingAtFalseOrigin> ;
+    void:property <https://w3id.org/geosrs/eastingAtFalseOrigin> ;
     void:triples 446 .
 
 <http://www.opengis.net/geoepsg_dataset_eastingAtProjectionCentre> a void:Dataset ;
     rdfs:label "Property Partition: eastingAtProjectionCentre"@en ;
-    void:property <http://www.opengis.net/ont/crs/eastingAtProjectionCentre> ;
+    void:property <https://w3id.org/geosrs/eastingAtProjectionCentre> ;
     void:triples 12 .
 
 <http://www.opengis.net/geoepsg_dataset_eccentricity> a void:Dataset ;
     rdfs:label "Property Partition: eccentricity"@en ;
-    void:property <http://www.opengis.net/ont/crs/eccentricity> ;
+    void:property <https://w3id.org/geosrs/eccentricity> ;
     void:triples 54 .
 
 <http://www.opengis.net/geoepsg_dataset_ellipse> a void:Dataset ;
     rdfs:label "Property Partition: ellipse"@en ;
-    void:property <http://www.opengis.net/ont/crs/ellipse> ;
+    void:property <https://w3id.org/geosrs/ellipse> ;
     void:triples 611 .
 
 <http://www.opengis.net/geoepsg_dataset_ellipsoid> a void:Dataset ;
     rdfs:label "Property Partition: ellipsoid"@en ;
-    void:property <http://www.opengis.net/ont/crs/ellipsoid> ;
+    void:property <https://w3id.org/geosrs/ellipsoid> ;
     void:triples 502 .
 
 <http://www.opengis.net/geoepsg_dataset_ellipsoidScalingFactor> a void:Dataset ;
     rdfs:label "Property Partition: ellipsoidScalingFactor"@en ;
-    void:property <http://www.opengis.net/ont/crs/ellipsoidScalingFactor> ;
+    void:property <https://w3id.org/geosrs/ellipsoidScalingFactor> ;
     void:triples 3 .
 
 <http://www.opengis.net/geoepsg_dataset_epsgCode> a void:Dataset ;
     rdfs:label "Property Partition: epsgCode"@en ;
-    void:property <http://www.opengis.net/ont/crs/epsgCode> ;
+    void:property <https://w3id.org/geosrs/epsgCode> ;
     void:triples 6654 .
 
 <http://www.opengis.net/geoepsg_dataset_extent> a void:Dataset ;
     rdfs:label "Property Partition: extent"@en ;
-    void:property <http://www.opengis.net/ont/crs/extent> ;
+    void:property <https://w3id.org/geosrs/extent> ;
     void:triples 8919 .
 
 <http://www.opengis.net/geoepsg_dataset_falseEasting> a void:Dataset ;
     rdfs:label "Property Partition: falseEasting"@en ;
-    void:property <http://www.opengis.net/ont/crs/falseEasting> ;
+    void:property <https://w3id.org/geosrs/falseEasting> ;
     void:triples 1811 .
 
 <http://www.opengis.net/geoepsg_dataset_falseNorthing> a void:Dataset ;
     rdfs:label "Property Partition: falseNorthing"@en ;
-    void:property <http://www.opengis.net/ont/crs/falseNorthing> ;
+    void:property <https://w3id.org/geosrs/falseNorthing> ;
     void:triples 1812 .
 
 <http://www.opengis.net/geoepsg_dataset_flatteningParameter> a void:Dataset ;
     rdfs:label "Property Partition: flatteningParameter"@en ;
-    void:property <http://www.opengis.net/ont/crs/flatteningParameter> ;
+    void:property <https://w3id.org/geosrs/flatteningParameter> ;
     void:triples 54 .
 
 <http://www.opengis.net/geoepsg_dataset_has_ballpark_transformation> a void:Dataset ;
     rdfs:label "Property Partition: has_ballpark_transformation"@en ;
-    void:property <http://www.opengis.net/ont/crs/has_ballpark_transformation> ;
+    void:property <https://w3id.org/geosrs/has_ballpark_transformation> ;
     void:triples 2262 .
 
 <http://www.opengis.net/geoepsg_dataset_includesSRS> a void:Dataset ;
     rdfs:label "Property Partition: includesSRS"@en ;
-    void:property <http://www.opengis.net/ont/crs/includesSRS> ;
+    void:property <https://w3id.org/geosrs/includesSRS> ;
     void:triples 780 .
 
 <http://www.opengis.net/geoepsg_dataset_inverse_flattening> a void:Dataset ;
     rdfs:label "Property Partition: inverse_flattening"@en ;
-    void:property <http://www.opengis.net/ont/crs/inverse_flattening> ;
+    void:property <https://w3id.org/geosrs/inverse_flattening> ;
     void:triples 32 .
 
 <http://www.opengis.net/geoepsg_dataset_isApplicableTo> a void:Dataset ;
     rdfs:label "Property Partition: isApplicableTo"@en ;
-    void:property <http://www.opengis.net/ont/crs/isApplicableTo> ;
+    void:property <https://w3id.org/geosrs/isApplicableTo> ;
     void:triples 6654 .
 
 <http://www.opengis.net/geoepsg_dataset_isBound> a void:Dataset ;
     rdfs:label "Property Partition: isBound"@en ;
-    void:property <http://www.opengis.net/ont/crs/isBound> ;
+    void:property <https://w3id.org/geosrs/isBound> ;
     void:triples 6654 .
 
 <http://www.opengis.net/geoepsg_dataset_isGeocentric> a void:Dataset ;
     rdfs:label "Property Partition: isGeocentric"@en ;
-    void:property <http://www.opengis.net/ont/crs/isGeocentric> ;
+    void:property <https://w3id.org/geosrs/isGeocentric> ;
     void:triples 6654 .
 
 <http://www.opengis.net/geoepsg_dataset_isGeographic> a void:Dataset ;
     rdfs:label "Property Partition: isGeographic"@en ;
-    void:property <http://www.opengis.net/ont/crs/isGeographic> ;
+    void:property <https://w3id.org/geosrs/isGeographic> ;
     void:triples 6654 .
 
 <http://www.opengis.net/geoepsg_dataset_isProjected> a void:Dataset ;
     rdfs:label "Property Partition: isProjected"@en ;
-    void:property <http://www.opengis.net/ont/crs/isProjected> ;
+    void:property <https://w3id.org/geosrs/isProjected> ;
     void:triples 6654 .
 
 <http://www.opengis.net/geoepsg_dataset_isSphere> a void:Dataset ;
     rdfs:label "Property Partition: isSphere"@en ;
-    void:property <http://www.opengis.net/ont/crs/isSphere> ;
+    void:property <https://w3id.org/geosrs/isSphere> ;
     void:triples 54 .
 
 <http://www.opengis.net/geoepsg_dataset_isVertical> a void:Dataset ;
     rdfs:label "Property Partition: isVertical"@en ;
-    void:property <http://www.opengis.net/ont/crs/isVertical> ;
+    void:property <https://w3id.org/geosrs/isVertical> ;
     void:triples 6654 .
 
 <http://www.opengis.net/geoepsg_dataset_is_semi_minor_computed> a void:Dataset ;
     rdfs:label "Property Partition: is_semi_minor_computed"@en ;
-    void:property <http://www.opengis.net/ont/crs/is_semi_minor_computed> ;
+    void:property <https://w3id.org/geosrs/is_semi_minor_computed> ;
     void:triples 32 .
 
 <http://www.opengis.net/geoepsg_dataset_label> a void:Dataset ;
     rdfs:label "Property Partition: label"@en ;
     void:property rdfs:label ;
-    void:triples 25134 .
+    void:triples 25112 .
 
 <http://www.opengis.net/geoepsg_dataset_latitudeOf1StStandardParallel> a void:Dataset ;
     rdfs:label "Property Partition: latitudeOf1StStandardParallel"@en ;
-    void:property <http://www.opengis.net/ont/crs/latitudeOf1StStandardParallel> ;
+    void:property <https://w3id.org/geosrs/latitudeOf1StStandardParallel> ;
     void:triples 450 .
 
 <http://www.opengis.net/geoepsg_dataset_latitudeOf2NdStandardParallel> a void:Dataset ;
     rdfs:label "Property Partition: latitudeOf2NdStandardParallel"@en ;
-    void:property <http://www.opengis.net/ont/crs/latitudeOf2NdStandardParallel> ;
+    void:property <https://w3id.org/geosrs/latitudeOf2NdStandardParallel> ;
     void:triples 443 .
 
 <http://www.opengis.net/geoepsg_dataset_latitudeOfFalseOrigin> a void:Dataset ;
     rdfs:label "Property Partition: latitudeOfFalseOrigin"@en ;
-    void:property <http://www.opengis.net/ont/crs/latitudeOfFalseOrigin> ;
+    void:property <https://w3id.org/geosrs/latitudeOfFalseOrigin> ;
     void:triples 447 .
 
 <http://www.opengis.net/geoepsg_dataset_latitudeOfNaturalOrigin> a void:Dataset ;
     rdfs:label "Property Partition: latitudeOfNaturalOrigin"@en ;
-    void:property <http://www.opengis.net/ont/crs/latitudeOfNaturalOrigin> ;
+    void:property <https://w3id.org/geosrs/latitudeOfNaturalOrigin> ;
     void:triples 1775 .
 
 <http://www.opengis.net/geoepsg_dataset_latitudeOfProjectionCentre> a void:Dataset ;
     rdfs:label "Property Partition: latitudeOfProjectionCentre"@en ;
-    void:property <http://www.opengis.net/ont/crs/latitudeOfProjectionCentre> ;
+    void:property <https://w3id.org/geosrs/latitudeOfProjectionCentre> ;
     void:triples 35 .
 
 <http://www.opengis.net/geoepsg_dataset_latitudeOfPseudoStandardParallel> a void:Dataset ;
     rdfs:label "Property Partition: latitudeOfPseudoStandardParallel"@en ;
-    void:property <http://www.opengis.net/ont/crs/latitudeOfPseudoStandardParallel> ;
+    void:property <https://w3id.org/geosrs/latitudeOfPseudoStandardParallel> ;
     void:triples 8 .
 
 <http://www.opengis.net/geoepsg_dataset_latitudeOfStandardParallel> a void:Dataset ;
     rdfs:label "Property Partition: latitudeOfStandardParallel"@en ;
-    void:property <http://www.opengis.net/ont/crs/latitudeOfStandardParallel> ;
+    void:property <https://w3id.org/geosrs/latitudeOfStandardParallel> ;
     void:triples 28 .
 
 <http://www.opengis.net/geoepsg_dataset_longitude> a void:Dataset ;
     rdfs:label "Property Partition: longitude"@en ;
-    void:property <http://www.opengis.net/ont/crs/longitude> ;
+    void:property <https://w3id.org/geosrs/longitude> ;
     void:triples 14 .
 
 <http://www.opengis.net/geoepsg_dataset_longitudeOfFalseOrigin> a void:Dataset ;
     rdfs:label "Property Partition: longitudeOfFalseOrigin"@en ;
-    void:property <http://www.opengis.net/ont/crs/longitudeOfFalseOrigin> ;
+    void:property <https://w3id.org/geosrs/longitudeOfFalseOrigin> ;
     void:triples 446 .
 
 <http://www.opengis.net/geoepsg_dataset_longitudeOfNaturalOrigin> a void:Dataset ;
     rdfs:label "Property Partition: longitudeOfNaturalOrigin"@en ;
-    void:property <http://www.opengis.net/ont/crs/longitudeOfNaturalOrigin> ;
+    void:property <https://w3id.org/geosrs/longitudeOfNaturalOrigin> ;
     void:triples 1758 .
 
 <http://www.opengis.net/geoepsg_dataset_longitudeOfOrigin> a void:Dataset ;
     rdfs:label "Property Partition: longitudeOfOrigin"@en ;
-    void:property <http://www.opengis.net/ont/crs/longitudeOfOrigin> ;
+    void:property <https://w3id.org/geosrs/longitudeOfOrigin> ;
     void:triples 36 .
 
 <http://www.opengis.net/geoepsg_dataset_longitudeOfProjectionCentre> a void:Dataset ;
     rdfs:label "Property Partition: longitudeOfProjectionCentre"@en ;
-    void:property <http://www.opengis.net/ont/crs/longitudeOfProjectionCentre> ;
+    void:property <https://w3id.org/geosrs/longitudeOfProjectionCentre> ;
     void:triples 27 .
 
 <http://www.opengis.net/geoepsg_dataset_member> a void:Dataset ;
     rdfs:label "Property Partition: member"@en ;
     void:property rdfs:member ;
-    void:triples 44408 .
+    void:triples 41281 .
 
 <http://www.opengis.net/geoepsg_dataset_method_name> a void:Dataset ;
     rdfs:label "Property Partition: method_name"@en ;
-    void:property <http://www.opengis.net/ont/crs/method_name> ;
+    void:property <https://w3id.org/geosrs/method_name> ;
     void:triples 2268 .
 
 <http://www.opengis.net/geoepsg_dataset_northingAtFalseOrigin> a void:Dataset ;
     rdfs:label "Property Partition: northingAtFalseOrigin"@en ;
-    void:property <http://www.opengis.net/ont/crs/northingAtFalseOrigin> ;
+    void:property <https://w3id.org/geosrs/northingAtFalseOrigin> ;
     void:triples 447 .
 
 <http://www.opengis.net/geoepsg_dataset_northingAtProjectionCentre> a void:Dataset ;
     rdfs:label "Property Partition: northingAtProjectionCentre"@en ;
-    void:property <http://www.opengis.net/ont/crs/northingAtProjectionCentre> ;
+    void:property <https://w3id.org/geosrs/northingAtProjectionCentre> ;
     void:triples 12 .
 
 <http://www.opengis.net/geoepsg_dataset_primeMeridian> a void:Dataset ;
     rdfs:label "Property Partition: primeMeridian"@en ;
-    void:property <http://www.opengis.net/ont/crs/primeMeridian> ;
+    void:property <https://w3id.org/geosrs/primeMeridian> ;
     void:triples 606 .
 
 <http://www.opengis.net/geoepsg_dataset_projectionPlaneOriginHeight> a void:Dataset ;
     rdfs:label "Property Partition: projectionPlaneOriginHeight"@en ;
-    void:property <http://www.opengis.net/ont/crs/projectionPlaneOriginHeight> ;
+    void:property <https://w3id.org/geosrs/projectionPlaneOriginHeight> ;
     void:triples 32 .
 
 <http://www.opengis.net/geoepsg_dataset_range> a void:Dataset ;
@@ -779,37 +773,37 @@ doap: a voaf:Vocabulary ;
 
 <http://www.opengis.net/geoepsg_dataset_scaleFactorAtNaturalOrigin> a void:Dataset ;
     rdfs:label "Property Partition: scaleFactorAtNaturalOrigin"@en ;
-    void:property <http://www.opengis.net/ont/crs/scaleFactorAtNaturalOrigin> ;
+    void:property <https://w3id.org/geosrs/scaleFactorAtNaturalOrigin> ;
     void:triples 1659 .
 
 <http://www.opengis.net/geoepsg_dataset_scaleFactorAtProjectionCentre> a void:Dataset ;
     rdfs:label "Property Partition: scaleFactorAtProjectionCentre"@en ;
-    void:property <http://www.opengis.net/ont/crs/scaleFactorAtProjectionCentre> ;
+    void:property <https://w3id.org/geosrs/scaleFactorAtProjectionCentre> ;
     void:triples 27 .
 
 <http://www.opengis.net/geoepsg_dataset_scaleFactorOnPseudoStandardParallel> a void:Dataset ;
     rdfs:label "Property Partition: scaleFactorOnPseudoStandardParallel"@en ;
-    void:property <http://www.opengis.net/ont/crs/scaleFactorOnPseudoStandardParallel> ;
+    void:property <https://w3id.org/geosrs/scaleFactorOnPseudoStandardParallel> ;
     void:triples 8 .
 
 <http://www.opengis.net/geoepsg_dataset_scope> a void:Dataset ;
     rdfs:label "Property Partition: scope"@en ;
-    void:property <http://www.opengis.net/ont/crs/scope> ;
+    void:property <https://w3id.org/geosrs/scope> ;
     void:triples 3104 .
 
 <http://www.opengis.net/geoepsg_dataset_semiMajorAxis> a void:Dataset ;
     rdfs:label "Property Partition: semiMajorAxis"@en ;
-    void:property <http://www.opengis.net/ont/crs/semiMajorAxis> ;
+    void:property <https://w3id.org/geosrs/semiMajorAxis> ;
     void:triples 54 .
 
 <http://www.opengis.net/geoepsg_dataset_semiMinorAxis> a void:Dataset ;
     rdfs:label "Property Partition: semiMinorAxis"@en ;
-    void:property <http://www.opengis.net/ont/crs/semiMinorAxis> ;
+    void:property <https://w3id.org/geosrs/semiMinorAxis> ;
     void:triples 55 .
 
 <http://www.opengis.net/geoepsg_dataset_sourceCRS> a void:Dataset ;
     rdfs:label "Property Partition: sourceCRS"@en ;
-    void:property <http://www.opengis.net/ont/crs/sourceCRS> ;
+    void:property <https://w3id.org/geosrs/sourceCRS> ;
     void:triples 4909 .
 
 <http://www.opengis.net/geoepsg_dataset_subClassOf> a void:Dataset ;
@@ -820,36 +814,36 @@ doap: a voaf:Vocabulary ;
 <http://www.opengis.net/geoepsg_dataset_type> a void:Dataset ;
     rdfs:label "Property Partition: type"@en ;
     void:property rdf:type ;
-    void:triples 44450 .
+    void:triples 44428 .
 
 <http://www.opengis.net/geoepsg_dataset_unit> a void:Dataset ;
     rdfs:label "Property Partition: unit"@en ;
-    void:property <http://www.opengis.net/ont/crs/unit> ;
+    void:property <https://w3id.org/geosrs/unit> ;
     void:triples 70 .
 
 <http://www.opengis.net/geoepsg_dataset_unit_auth_code> a void:Dataset ;
     rdfs:label "Property Partition: unit_auth_code"@en ;
-    void:property <http://www.opengis.net/ont/crs/unit_auth_code> ;
+    void:property <https://w3id.org/geosrs/unit_auth_code> ;
     void:triples 56 .
 
 <http://www.opengis.net/geoepsg_dataset_unit_code> a void:Dataset ;
     rdfs:label "Property Partition: unit_code"@en ;
-    void:property <http://www.opengis.net/ont/crs/unit_code> ;
+    void:property <https://w3id.org/geosrs/unit_code> ;
     void:triples 56 .
 
 <http://www.opengis.net/geoepsg_dataset_unit_conversion_factor> a void:Dataset ;
     rdfs:label "Property Partition: unit_conversion_factor"@en ;
-    void:property <http://www.opengis.net/ont/crs/unit_conversion_factor> ;
+    void:property <https://w3id.org/geosrs/unit_conversion_factor> ;
     void:triples 56 .
 
 <http://www.opengis.net/geoepsg_dataset_usage> a void:Dataset ;
     rdfs:label "Property Partition: usage"@en ;
-    void:property <http://www.opengis.net/ont/crs/usage> ;
+    void:property <https://w3id.org/geosrs/usage> ;
     void:triples 978 .
 
 <http://www.opengis.net/geoepsg_dataset_utm_zone> a void:Dataset ;
     rdfs:label "Property Partition: utm_zone"@en ;
-    void:property <http://www.opengis.net/ont/crs/utm_zone> ;
+    void:property <https://w3id.org/geosrs/utm_zone> ;
     void:triples 807 .
 
 geo: a voaf:Vocabulary ;
@@ -869,6 +863,12 @@ rdfs: a voaf:Vocabulary ;
     vann:preferredNamespacePrefix "rdfs"^^xsd:string ;
     vann:preferredNamespaceUri "http://www.w3.org/2000/01/rdf-schema#"^^xsd:anyURI ;
     voaf:usageInDataset rdfs:_geoepsg_dataset_occ .
+
+xsd: a voaf:Vocabulary ;
+    rdfs:label "XML Schema"@en ;
+    vann:preferredNamespacePrefix "xsd"^^xsd:string ;
+    vann:preferredNamespaceUri "http://www.w3.org/2001/XMLSchema#"^^xsd:anyURI ;
+    voaf:usageInDataset xsd:_geoepsg_dataset_occ .
 
 time: a voaf:Vocabulary ;
     rdfs:label "time Vocabulary"@en ;
@@ -970,12 +970,6 @@ wgs: a voaf:Vocabulary ;
     vann:preferredNamespaceUri "https://www.w3.org/2003/01/geo/wgs84_pos#"^^xsd:anyURI ;
     voaf:usageInDataset wgs:_geoepsg_dataset_occ .
 
-xsd: a voaf:Vocabulary ;
-    rdfs:label "XML Schema"@en ;
-    vann:preferredNamespacePrefix "xsd"^^xsd:string ;
-    vann:preferredNamespaceUri "http://www.w3.org/2001/XMLSchema#"^^xsd:anyURI ;
-    voaf:usageInDataset xsd:_geoepsg_dataset_occ .
-
 owl: a voaf:Vocabulary ;
     rdfs:label "Web Ontology Language 2 Vocabulary"@en ;
     vann:preferredNamespacePrefix "owl"^^xsd:string ;
@@ -992,18 +986,18 @@ skos: a voaf:Vocabulary ;
         adms:Asset ;
     rdfs:label "geoepsg_dataset"@en ;
     vext:averageLiteralLength 0 ;
-    vext:averageObjectIRILength 122 ;
-    vext:averagePropertyIRILength 46 ;
-    vext:averageSubjectIRILength 52 ;
+    vext:averageObjectIRILength 124 ;
+    vext:averagePropertyIRILength 40 ;
+    vext:averageSubjectIRILength 50 ;
     vext:datatypes 0 ;
     vext:distinctBlankNodes 0 ;
-    vext:distinctIRIReferences 106581 ;
+    vext:distinctIRIReferences 106512 ;
     vext:distinctLiterals 0 ;
-    vext:distinctRDFNodes 106581 ;
+    vext:distinctRDFNodes 106512 ;
     vext:languages 0 ;
     vext:propertyClasses 0 ;
     dc:language <http://www.lexvo.org/page/iso639-1/en> ;
-    dcterms:modified "2025-07-30T01:54:28"^^xsd:dateTime ;
+    dcterms:modified "2025-07-30T02:10:20"^^xsd:dateTime ;
     dcterms:subject <http://dbpedia.org/resource/Location>,
         <http://dbpedia.org/resource/OGC_GeoSPARQL>,
         <http://dbpedia.org/resource/Time>,
@@ -1055,9 +1049,9 @@ skos: a voaf:Vocabulary ;
         <http://www.opengis.net/geoepsg_dataset_VerticalReferenceFrame> ;
     void:classes 41 ;
     void:dataDump <https://opengeospatial.github.io/ontology-crs/data//index.ttl> ;
-    void:distinctObjects 81362 ;
-    void:distinctSubjects 25144 ;
-    void:entities 25144 ;
+    void:distinctObjects 81315 ;
+    void:distinctSubjects 25122 ;
+    void:entities 21988 ;
     void:feature <http://www.w3.org/ns/formats/RDFa>,
         <http://www.w3.org/ns/formats/Turtle> ;
     void:properties 75 ;
@@ -1136,7 +1130,7 @@ skos: a voaf:Vocabulary ;
         <http://www.opengis.net/geoepsg_dataset_unit_conversion_factor>,
         <http://www.opengis.net/geoepsg_dataset_usage>,
         <http://www.opengis.net/geoepsg_dataset_utm_zone> ;
-    void:triples 307468 ;
+    void:triples 301141 ;
     void:uriSpace "http://www.opengis.net/"^^xsd:string ;
     void:vocabulary vext:,
         dcam:,

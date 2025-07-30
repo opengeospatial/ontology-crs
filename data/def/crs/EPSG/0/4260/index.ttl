@@ -1,13 +1,13 @@
-@prefix ns1: <http://www.opengis.net/ont/crs/> .
+@prefix ns1: <https://w3id.org/geosrs/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix void: <http://rdfs.org/ns/void#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://www.opengis.net/def/crs/EPSG/0/4260> a ns1:GeographicCRS,
-        owl:NamedIndividual,
+<http://www.opengis.net/def/crs/EPSG/0/4260> a owl:NamedIndividual,
         <http://www.w3.org/ns/ldp#Resource>,
         <http://www.w3.org/ns/prov-o/Entity>,
+        ns1:GeographicCRS,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Manoca"@en ;
     void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
@@ -16,7 +16,7 @@
     ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'GeographicCRS','name':'Manoca','datum':{'type':'GeodeticReferenceFrame','name':'Manoca','ellipsoid':{'name':'Clarke 1880 (RGS)','semi_major_axis':6378249.145,'inverse_flattening':293.465}},'coordinate_system':{'subtype':'ellipsoidal','axis':[{'name':'Geodetic latitude','abbreviation':'Lat','direction':'north','unit':{'type':'AngularUnit','name':'degree minute second hemisphere','conversion_factor':0.0174532925199433}},{'name':'Geodetic longitude','abbreviation':'Long','direction':'east','unit':{'type':'AngularUnit','name':'degree minute second hemisphere','conversion_factor':0.0174532925199433}}]},'scope':'Geodesy.','area':'Cameroon - onshore and offshore.','bbox':{'south_latitude':1.65,'west_longitude':8.32,'north_latitude':13.09,'east_longitude':16.21},'id':{'authority':'EPSG','code':4260}}"^^xsd:string ;
     ns1:asWKT "GEOGCRS['Manoca',DATUM['Manoca',ELLIPSOID['Clarke 1880 (RGS)',6378249.145,293.465,LENGTHUNIT['metre',1]]],PRIMEM['Greenwich',0,ANGLEUNIT['degree',0.0174532925199433]],CS[ellipsoidal,2],AXIS['geodetic latitude (Lat)',north,ORDER[1],ANGLEUNIT['degree minute second hemisphere',0.0174532925199433]],AXIS['geodetic longitude (Long)',east,ORDER[2],ANGLEUNIT['degree minute second hemisphere',0.0174532925199433]],USAGE[SCOPE['Geodesy.'],AREA['Cameroon - onshore and offshore.'],BBOX[1.65,8.32,13.09,16.21]],ID['EPSG',4260]]"^^ns1:wktLiteral ;
     ns1:coordinateSystem <http://www.opengis.net/def/crs/EPSG/0/4260_cs> ;
-    ns1:datum <http://www.opengis.net/ont/crs/datum/Manoca> ;
+    ns1:datum <https://w3id.org/geosrs/datum/Manoca> ;
     ns1:epsgCode "EPSG:4260"^^xsd:string ;
     ns1:isApplicableTo <http://www.opengis.net/ont/crs/isbody/Earth> ;
     ns1:isBound false ;

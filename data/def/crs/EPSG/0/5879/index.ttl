@@ -1,13 +1,13 @@
-@prefix ns1: <http://www.opengis.net/ont/crs/> .
+@prefix ns1: <https://w3id.org/geosrs/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix void: <http://rdfs.org/ns/void#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://www.opengis.net/def/crs/EPSG/0/5879> a ns1:ProjectedCRS,
-        owl:NamedIndividual,
+<http://www.opengis.net/def/crs/EPSG/0/5879> a owl:NamedIndividual,
         <http://www.w3.org/ns/ldp#Resource>,
         <http://www.w3.org/ns/prov-o/Entity>,
+        ns1:ProjectedCRS,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Cadastre 1997 / UTM zone 38S"@en ;
     void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
@@ -15,9 +15,9 @@
     ns1:asProj4 "+proj=utm +zone=38 +south +ellps=intl +units=m +no_defs +type=crs"^^xsd:string ;
     ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'ProjectedCRS','name':'Cadastre 1997 / UTM zone 38S','base_crs':{'name':'Cadastre 1997','datum':{'type':'GeodeticReferenceFrame','name':'Cadastre 1997','ellipsoid':{'name':'International 1924','semi_major_axis':6378388,'inverse_flattening':297}},'coordinate_system':{'subtype':'ellipsoidal','axis':[{'name':'Geodetic latitude','abbreviation':'Lat','direction':'north','unit':'degree'},{'name':'Geodetic longitude','abbreviation':'Lon','direction':'east','unit':'degree'}]},'id':{'authority':'EPSG','code':4475}},'conversion':{'name':'UTM zone 38S','method':{'name':'Transverse Mercator','id':{'authority':'EPSG','code':9807}},'parameters':[{'name':'Latitude of natural origin','value':0,'unit':'degree','id':{'authority':'EPSG','code':8801}},{'name':'Longitude of natural origin','value':45,'unit':'degree','id':{'authority':'EPSG','code':8802}},{'name':'Scale factor at natural origin','value':0.9996,'unit':'unity','id':{'authority':'EPSG','code':8805}},{'name':'False easting','value':500000,'unit':'metre','id':{'authority':'EPSG','code':8806}},{'name':'False northing','value':10000000,'unit':'metre','id':{'authority':'EPSG','code':8807}}]},'coordinate_system':{'subtype':'Cartesian','axis':[{'name':'Easting','abbreviation':'E','direction':'east','unit':'metre'},{'name':'Northing','abbreviation':'N','direction':'north','unit':'metre'}]},'scope':'Cadastre.','area':'Mayotte - onshore.','bbox':{'south_latitude':-13.05,'west_longitude':44.98,'north_latitude':-12.61,'east_longitude':45.35},'id':{'authority':'EPSG','code':5879}}"^^xsd:string ;
     ns1:asWKT "PROJCRS['Cadastre 1997 / UTM zone 38S',BASEGEOGCRS['Cadastre 1997',DATUM['Cadastre 1997',ELLIPSOID['International 1924',6378388,297,LENGTHUNIT['metre',1]]],PRIMEM['Greenwich',0,ANGLEUNIT['degree',0.0174532925199433]],ID['EPSG',4475]],CONVERSION['UTM zone 38S',METHOD['Transverse Mercator',ID['EPSG',9807]],PARAMETER['Latitude of natural origin',0,ANGLEUNIT['degree',0.0174532925199433],ID['EPSG',8801]],PARAMETER['Longitude of natural origin',45,ANGLEUNIT['degree',0.0174532925199433],ID['EPSG',8802]],PARAMETER['Scale factor at natural origin',0.9996,SCALEUNIT['unity',1],ID['EPSG',8805]],PARAMETER['False easting',500000,LENGTHUNIT['metre',1],ID['EPSG',8806]],PARAMETER['False northing',10000000,LENGTHUNIT['metre',1],ID['EPSG',8807]]],CS[Cartesian,2],AXIS['(E)',east,ORDER[1],LENGTHUNIT['metre',1]],AXIS['(N)',north,ORDER[2],LENGTHUNIT['metre',1]],USAGE[SCOPE['Cadastre.'],AREA['Mayotte - onshore.'],BBOX[-13.05,44.98,-12.61,45.35]],ID['EPSG',5879]]"^^ns1:wktLiteral ;
-    ns1:coordinateOperation <http://www.opengis.net/ont/crs/operation/UTM_zone_38S> ;
+    ns1:coordinateOperation <https://w3id.org/geosrs/operation/UTM_zone_38S> ;
     ns1:coordinateSystem <http://www.opengis.net/def/crs/EPSG/0/5879_cs> ;
-    ns1:datum <http://www.opengis.net/ont/crs/datum/Cadastre_1997> ;
+    ns1:datum <https://w3id.org/geosrs/datum/Cadastre_1997> ;
     ns1:epsgCode "EPSG:5879"^^xsd:string ;
     ns1:isApplicableTo <http://www.opengis.net/ont/crs/isbody/Earth> ;
     ns1:isBound false ;

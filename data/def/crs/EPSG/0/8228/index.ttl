@@ -1,13 +1,13 @@
-@prefix ns1: <http://www.opengis.net/ont/crs/> .
+@prefix ns1: <https://w3id.org/geosrs/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix void: <http://rdfs.org/ns/void#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://www.opengis.net/def/crs/EPSG/0/8228> a ns1:VerticalCRS,
-        owl:NamedIndividual,
+<http://www.opengis.net/def/crs/EPSG/0/8228> a owl:NamedIndividual,
         <http://www.w3.org/ns/ldp#Resource>,
         <http://www.w3.org/ns/prov-o/Entity>,
+        ns1:VerticalCRS,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "NAVD88 height (ft)"@en ;
     void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
@@ -16,7 +16,7 @@
     ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'VerticalCRS','name':'NAVD88 height (ft)','datum':{'type':'VerticalReferenceFrame','name':'North American Vertical Datum 1988'},'coordinate_system':{'subtype':'vertical','axis':[{'name':'Gravity-related height','abbreviation':'H','direction':'up','unit':{'type':'LinearUnit','name':'foot','conversion_factor':0.3048}}]},'scope':'Engineering survey, GIS, topographic mapping.','area':'United States (USA) - onshore - Arizona; Michigan; Montana; North Dakota; Oregon; South Carolina.','bbox':{'south_latitude':31.33,'west_longitude':-124.6,'north_latitude':49.01,'east_longitude':-78.52},'id':{'authority':'EPSG','code':8228}}"^^xsd:string ;
     ns1:asWKT "VERTCRS['NAVD88 height (ft)',VDATUM['North American Vertical Datum 1988'],CS[vertical,1],AXIS['gravity-related height (H)',up,LENGTHUNIT['foot',0.3048]],USAGE[SCOPE['Engineering survey, GIS, topographic mapping.'],AREA['United States (USA) - onshore - Arizona; Michigan; Montana; North Dakota; Oregon; South Carolina.'],BBOX[31.33,-124.6,49.01,-78.52]],ID['EPSG',8228]]"^^ns1:wktLiteral ;
     ns1:coordinateSystem <http://www.opengis.net/def/crs/EPSG/0/8228_cs> ;
-    ns1:datum <http://www.opengis.net/ont/crs/datum/North_American_Vertical_Datum_1988> ;
+    ns1:datum <https://w3id.org/geosrs/datum/North_American_Vertical_Datum_1988> ;
     ns1:epsgCode "EPSG:8228"^^xsd:string ;
     ns1:isApplicableTo <http://www.opengis.net/ont/crs/isbody/Earth> ;
     ns1:isBound false ;

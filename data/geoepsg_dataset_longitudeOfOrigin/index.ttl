@@ -6,6 +6,6 @@
         <http://www.w3.org/ns/ldp#Resource>,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Property Partition: longitudeOfOrigin"@en ;
-    void:property <http://www.opengis.net/ont/crs/longitudeOfOrigin> ;
+    void:property <https://w3id.org/geosrs/longitudeOfOrigin> ;
     void:triples 36 .
 

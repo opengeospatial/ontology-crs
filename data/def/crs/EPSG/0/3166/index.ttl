@@ -1,13 +1,13 @@
-@prefix ns1: <http://www.opengis.net/ont/crs/> .
+@prefix ns1: <https://w3id.org/geosrs/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix void: <http://rdfs.org/ns/void#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://www.opengis.net/def/crs/EPSG/0/3166> a ns1:ProjectedCRS,
-        owl:NamedIndividual,
+<http://www.opengis.net/def/crs/EPSG/0/3166> a owl:NamedIndividual,
         <http://www.w3.org/ns/ldp#Resource>,
         <http://www.w3.org/ns/prov-o/Entity>,
+        ns1:ProjectedCRS,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "NEA74 Noumea / Noumea Lambert 2"@en ;
     void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
@@ -15,9 +15,9 @@
     ns1:asProj4 "+proj=lcc +lat_0=-22.2697222222222 +lon_0=166.4425 +lat_1=-22.2447222222222 +lat_2=-22.2947222222222 +x_0=8.313 +y_0=-2.354 +ellps=intl +units=m +no_defs +type=crs"^^xsd:string ;
     ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'ProjectedCRS','name':'NEA74 Noumea / Noumea Lambert 2','base_crs':{'name':'NEA74 Noumea','datum':{'type':'GeodeticReferenceFrame','name':'NEA74 Noumea','ellipsoid':{'name':'International 1924','semi_major_axis':6378388,'inverse_flattening':297}},'coordinate_system':{'subtype':'ellipsoidal','axis':[{'name':'Geodetic latitude','abbreviation':'Lat','direction':'north','unit':'degree'},{'name':'Geodetic longitude','abbreviation':'Lon','direction':'east','unit':'degree'}]},'id':{'authority':'EPSG','code':4644}},'conversion':{'name':'Noumea Lambert 2','method':{'name':'Lambert Conic Conformal (2SP)','id':{'authority':'EPSG','code':9802}},'parameters':[{'name':'Latitude of false origin','value':-22.2697222222222,'unit':'degree','id':{'authority':'EPSG','code':8821}},{'name':'Longitude of false origin','value':166.4425,'unit':'degree','id':{'authority':'EPSG','code':8822}},{'name':'Latitude of 1st standard parallel','value':-22.2447222222222,'unit':'degree','id':{'authority':'EPSG','code':8823}},{'name':'Latitude of 2nd standard parallel','value':-22.2947222222222,'unit':'degree','id':{'authority':'EPSG','code':8824}},{'name':'Easting at false origin','value':8.313,'unit':'metre','id':{'authority':'EPSG','code':8826}},{'name':'Northing at false origin','value':-2.354,'unit':'metre','id':{'authority':'EPSG','code':8827}}]},'coordinate_system':{'subtype':'Cartesian','axis':[{'name':'Easting','abbreviation':'X','direction':'east','unit':'metre'},{'name':'Northing','abbreviation':'Y','direction':'north','unit':'metre'}]},'scope':'Engineering survey, topographic mapping.','area':'New Caledonia - Grande Terre - Noumea district.','bbox':{'south_latitude':-22.37,'west_longitude':166.35,'north_latitude':-22.19,'east_longitude':166.54},'id':{'authority':'EPSG','code':3166}}"^^xsd:string ;
     ns1:asWKT "PROJCRS['NEA74 Noumea / Noumea Lambert 2',BASEGEOGCRS['NEA74 Noumea',DATUM['NEA74 Noumea',ELLIPSOID['International 1924',6378388,297,LENGTHUNIT['metre',1]]],PRIMEM['Greenwich',0,ANGLEUNIT['degree',0.0174532925199433]],ID['EPSG',4644]],CONVERSION['Noumea Lambert 2',METHOD['Lambert Conic Conformal (2SP)',ID['EPSG',9802]],PARAMETER['Latitude of false origin',-22.2697222222222,ANGLEUNIT['degree',0.0174532925199433],ID['EPSG',8821]],PARAMETER['Longitude of false origin',166.4425,ANGLEUNIT['degree',0.0174532925199433],ID['EPSG',8822]],PARAMETER['Latitude of 1st standard parallel',-22.2447222222222,ANGLEUNIT['degree',0.0174532925199433],ID['EPSG',8823]],PARAMETER['Latitude of 2nd standard parallel',-22.2947222222222,ANGLEUNIT['degree',0.0174532925199433],ID['EPSG',8824]],PARAMETER['Easting at false origin',8.313,LENGTHUNIT['metre',1],ID['EPSG',8826]],PARAMETER['Northing at false origin',-2.354,LENGTHUNIT['metre',1],ID['EPSG',8827]]],CS[Cartesian,2],AXIS['easting (X)',east,ORDER[1],LENGTHUNIT['metre',1]],AXIS['northing (Y)',north,ORDER[2],LENGTHUNIT['metre',1]],USAGE[SCOPE['Engineering survey, topographic mapping.'],AREA['New Caledonia - Grande Terre - Noumea district.'],BBOX[-22.37,166.35,-22.19,166.54]],ID['EPSG',3166]]"^^ns1:wktLiteral ;
-    ns1:coordinateOperation <http://www.opengis.net/ont/crs/operation/Noumea_Lambert_2> ;
+    ns1:coordinateOperation <https://w3id.org/geosrs/operation/Noumea_Lambert_2> ;
     ns1:coordinateSystem <http://www.opengis.net/def/crs/EPSG/0/3166_cs> ;
-    ns1:datum <http://www.opengis.net/ont/crs/datum/NEA74_Noumea> ;
+    ns1:datum <https://w3id.org/geosrs/datum/NEA74_Noumea> ;
     ns1:epsgCode "EPSG:3166"^^xsd:string ;
     ns1:isApplicableTo <http://www.opengis.net/ont/crs/isbody/Earth> ;
     ns1:isBound false ;

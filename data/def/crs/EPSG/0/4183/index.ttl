@@ -1,13 +1,13 @@
-@prefix ns1: <http://www.opengis.net/ont/crs/> .
+@prefix ns1: <https://w3id.org/geosrs/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix void: <http://rdfs.org/ns/void#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://www.opengis.net/def/crs/EPSG/0/4183> a ns1:GeographicCRS,
-        owl:NamedIndividual,
+<http://www.opengis.net/def/crs/EPSG/0/4183> a owl:NamedIndividual,
         <http://www.w3.org/ns/ldp#Resource>,
         <http://www.w3.org/ns/prov-o/Entity>,
+        ns1:GeographicCRS,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Azores Central 1948"@en ;
     void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
@@ -16,7 +16,7 @@
     ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'GeographicCRS','name':'Azores Central 1948','datum':{'type':'GeodeticReferenceFrame','name':'Azores Central Islands 1948','ellipsoid':{'name':'International 1924','semi_major_axis':6378388,'inverse_flattening':297}},'coordinate_system':{'subtype':'ellipsoidal','axis':[{'name':'Geodetic latitude','abbreviation':'Lat','direction':'north','unit':'degree'},{'name':'Geodetic longitude','abbreviation':'Lon','direction':'east','unit':'degree'}]},'scope':'Geodesy.','area':'Portugal - central Azores onshore - Faial, Graciosa, Pico, Sao Jorge, Terceira.','bbox':{'south_latitude':38.32,'west_longitude':-28.9,'north_latitude':39.14,'east_longitude':-26.97},'id':{'authority':'EPSG','code':4183}}"^^xsd:string ;
     ns1:asWKT "GEOGCRS['Azores Central 1948',DATUM['Azores Central Islands 1948',ELLIPSOID['International 1924',6378388,297,LENGTHUNIT['metre',1]]],PRIMEM['Greenwich',0,ANGLEUNIT['degree',0.0174532925199433]],CS[ellipsoidal,2],AXIS['geodetic latitude (Lat)',north,ORDER[1],ANGLEUNIT['degree',0.0174532925199433]],AXIS['geodetic longitude (Lon)',east,ORDER[2],ANGLEUNIT['degree',0.0174532925199433]],USAGE[SCOPE['Geodesy.'],AREA['Portugal - central Azores onshore - Faial, Graciosa, Pico, Sao Jorge, Terceira.'],BBOX[38.32,-28.9,39.14,-26.97]],ID['EPSG',4183]]"^^ns1:wktLiteral ;
     ns1:coordinateSystem <http://www.opengis.net/def/crs/EPSG/0/4183_cs> ;
-    ns1:datum <http://www.opengis.net/ont/crs/datum/Azores_Central_Islands_1948> ;
+    ns1:datum <https://w3id.org/geosrs/datum/Azores_Central_Islands_1948> ;
     ns1:epsgCode "EPSG:4183"^^xsd:string ;
     ns1:isApplicableTo <http://www.opengis.net/ont/crs/isbody/Earth> ;
     ns1:isBound false ;

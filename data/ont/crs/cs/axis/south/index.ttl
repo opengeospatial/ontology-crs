@@ -1,7 +1,7 @@
 @prefix void: <http://rdfs.org/ns/void#> .
 
-<http://www.opengis.net/ont/crs/cs/axis/south> a <http://www.opengis.net/ont/crs/AxisDirection>,
-        <http://www.w3.org/ns/ldp#Resource>,
+<http://www.opengis.net/ont/crs/cs/axis/south> a <http://www.w3.org/ns/ldp#Resource>,
+        <https://w3id.org/geosrs/AxisDirection>,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     void:inDataset <http://www.opengis.net/geoepsg_dataset> .
 

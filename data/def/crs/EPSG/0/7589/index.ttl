@@ -1,13 +1,13 @@
-@prefix ns1: <http://www.opengis.net/ont/crs/> .
+@prefix ns1: <https://w3id.org/geosrs/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix void: <http://rdfs.org/ns/void#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://www.opengis.net/def/crs/EPSG/0/7589> a ns1:ProjectedCRS,
-        owl:NamedIndividual,
+<http://www.opengis.net/def/crs/EPSG/0/7589> a owl:NamedIndividual,
         <http://www.w3.org/ns/ldp#Resource>,
         <http://www.w3.org/ns/prov-o/Entity>,
+        ns1:ProjectedCRS,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "NAD83(2011) / WISCRS Barron (ftUS)"@en ;
     void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
@@ -15,9 +15,9 @@
     ns1:asProj4 "+proj=tmerc +lat_0=45.1333333333333 +lon_0=-91.85 +k=1.0000486665 +x_0=93150 +y_0=0.00304800609601219 +ellps=GRS80 +units=us-ft +no_defs +type=crs"^^xsd:string ;
     ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'ProjectedCRS','name':'NAD83(2011) / WISCRS Barron (ftUS)','base_crs':{'name':'NAD83(2011)','datum':{'type':'GeodeticReferenceFrame','name':'NAD83 (National Spatial Reference System 2011)','ellipsoid':{'name':'GRS 1980','semi_major_axis':6378137,'inverse_flattening':298.257222101}},'coordinate_system':{'subtype':'ellipsoidal','axis':[{'name':'Geodetic latitude','abbreviation':'Lat','direction':'north','unit':'degree'},{'name':'Geodetic longitude','abbreviation':'Lon','direction':'east','unit':'degree'}]},'id':{'authority':'EPSG','code':6318}},'conversion':{'name':'WISCRS Barron County (ftUS)','method':{'name':'Transverse Mercator','id':{'authority':'EPSG','code':9807}},'parameters':[{'name':'Latitude of natural origin','value':45.1333333333333,'unit':'degree','id':{'authority':'EPSG','code':8801}},{'name':'Longitude of natural origin','value':-91.85,'unit':'degree','id':{'authority':'EPSG','code':8802}},{'name':'Scale factor at natural origin','value':1.0000486665,'unit':'unity','id':{'authority':'EPSG','code':8805}},{'name':'False easting','value':305609.625,'unit':{'type':'LinearUnit','name':'US survey foot','conversion_factor':0.304800609601219},'id':{'authority':'EPSG','code':8806}},{'name':'False northing','value':0.01,'unit':{'type':'LinearUnit','name':'US survey foot','conversion_factor':0.304800609601219},'id':{'authority':'EPSG','code':8807}}]},'coordinate_system':{'subtype':'Cartesian','axis':[{'name':'Easting','abbreviation':'X','direction':'east','unit':{'type':'LinearUnit','name':'US survey foot','conversion_factor':0.304800609601219}},{'name':'Northing','abbreviation':'Y','direction':'north','unit':{'type':'LinearUnit','name':'US survey foot','conversion_factor':0.304800609601219}}]},'scope':'Engineering survey.','area':'United States (USA) - Wisconsin - Barron county.','bbox':{'south_latitude':45.2,'west_longitude':-92.16,'north_latitude':45.65,'east_longitude':-91.53},'id':{'authority':'EPSG','code':7589}}"^^xsd:string ;
     ns1:asWKT "PROJCRS['NAD83(2011) / WISCRS Barron (ftUS)',BASEGEOGCRS['NAD83(2011)',DATUM['NAD83 (National Spatial Reference System 2011)',ELLIPSOID['GRS 1980',6378137,298.257222101,LENGTHUNIT['metre',1]]],PRIMEM['Greenwich',0,ANGLEUNIT['degree',0.0174532925199433]],ID['EPSG',6318]],CONVERSION['WISCRS Barron County (ftUS)',METHOD['Transverse Mercator',ID['EPSG',9807]],PARAMETER['Latitude of natural origin',45.1333333333333,ANGLEUNIT['degree',0.0174532925199433],ID['EPSG',8801]],PARAMETER['Longitude of natural origin',-91.85,ANGLEUNIT['degree',0.0174532925199433],ID['EPSG',8802]],PARAMETER['Scale factor at natural origin',1.0000486665,SCALEUNIT['unity',1],ID['EPSG',8805]],PARAMETER['False easting',305609.625,LENGTHUNIT['US survey foot',0.304800609601219],ID['EPSG',8806]],PARAMETER['False northing',0.01,LENGTHUNIT['US survey foot',0.304800609601219],ID['EPSG',8807]]],CS[Cartesian,2],AXIS['easting (X)',east,ORDER[1],LENGTHUNIT['US survey foot',0.304800609601219]],AXIS['northing (Y)',north,ORDER[2],LENGTHUNIT['US survey foot',0.304800609601219]],USAGE[SCOPE['Engineering survey.'],AREA['United States (USA) - Wisconsin - Barron county.'],BBOX[45.2,-92.16,45.65,-91.53]],ID['EPSG',7589]]"^^ns1:wktLiteral ;
-    ns1:coordinateOperation <http://www.opengis.net/ont/crs/operation/WISCRS_Barron_County__ftUS_> ;
+    ns1:coordinateOperation <https://w3id.org/geosrs/operation/WISCRS_Barron_County__ftUS_> ;
     ns1:coordinateSystem <http://www.opengis.net/def/crs/EPSG/0/7589_cs> ;
-    ns1:datum <http://www.opengis.net/ont/crs/datum/NAD83__National_Spatial_Reference_System_2011_> ;
+    ns1:datum <https://w3id.org/geosrs/datum/NAD83__National_Spatial_Reference_System_2011_> ;
     ns1:epsgCode "EPSG:7589"^^xsd:string ;
     ns1:isApplicableTo <http://www.opengis.net/ont/crs/isbody/Earth> ;
     ns1:isBound false ;

@@ -1,13 +1,13 @@
-@prefix ns1: <http://www.opengis.net/ont/crs/> .
+@prefix ns1: <https://w3id.org/geosrs/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix void: <http://rdfs.org/ns/void#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://www.opengis.net/def/crs/EPSG/0/22293> a ns1:ProjectedCRS,
-        owl:NamedIndividual,
+<http://www.opengis.net/def/crs/EPSG/0/22293> a owl:NamedIndividual,
         <http://www.w3.org/ns/ldp#Resource>,
         <http://www.w3.org/ns/prov-o/Entity>,
+        ns1:ProjectedCRS,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Cape / Lo33"@en ;
     void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
@@ -15,9 +15,9 @@
     ns1:asProj4 "+proj=tmerc +axis=wsu +lat_0=0 +lon_0=33 +k=1 +x_0=0 +y_0=0 +a=6378249.145 +rf=293.4663077 +units=m +no_defs +type=crs"^^xsd:string ;
     ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'ProjectedCRS','name':'Cape / Lo33','base_crs':{'name':'Cape','datum':{'type':'GeodeticReferenceFrame','name':'Cape','ellipsoid':{'name':'Clarke 1880 (Arc)','semi_major_axis':6378249.145,'inverse_flattening':293.4663077}},'coordinate_system':{'subtype':'ellipsoidal','axis':[{'name':'Geodetic latitude','abbreviation':'Lat','direction':'north','unit':'degree'},{'name':'Geodetic longitude','abbreviation':'Lon','direction':'east','unit':'degree'}]},'id':{'authority':'EPSG','code':4222}},'conversion':{'name':'South African Survey Grid zone 33','method':{'name':'Transverse Mercator (South Orientated)','id':{'authority':'EPSG','code':9808}},'parameters':[{'name':'Latitude of natural origin','value':0,'unit':'degree','id':{'authority':'EPSG','code':8801}},{'name':'Longitude of natural origin','value':33,'unit':'degree','id':{'authority':'EPSG','code':8802}},{'name':'Scale factor at natural origin','value':1,'unit':'unity','id':{'authority':'EPSG','code':8805}},{'name':'False easting','value':0,'unit':'metre','id':{'authority':'EPSG','code':8806}},{'name':'False northing','value':0,'unit':'metre','id':{'authority':'EPSG','code':8807}}]},'coordinate_system':{'subtype':'Cartesian','axis':[{'name':'Westing','abbreviation':'Y','direction':'west','unit':'metre'},{'name':'Southing','abbreviation':'X','direction':'south','unit':'metre'}]},'scope':'Cadastre, engineering survey, topographic mapping (large and medium scale).','area':'South Africa - east of 32°E.','bbox':{'south_latitude':-28.94,'west_longitude':31.95,'north_latitude':-26.8,'east_longitude':32.95},'id':{'authority':'EPSG','code':22293}}"^^xsd:string ;
     ns1:asWKT "PROJCRS['Cape / Lo33',BASEGEOGCRS['Cape',DATUM['Cape',ELLIPSOID['Clarke 1880 (Arc)',6378249.145,293.4663077,LENGTHUNIT['metre',1]]],PRIMEM['Greenwich',0,ANGLEUNIT['degree',0.0174532925199433]],ID['EPSG',4222]],CONVERSION['South African Survey Grid zone 33',METHOD['Transverse Mercator (South Orientated)',ID['EPSG',9808]],PARAMETER['Latitude of natural origin',0,ANGLEUNIT['degree',0.0174532925199433],ID['EPSG',8801]],PARAMETER['Longitude of natural origin',33,ANGLEUNIT['degree',0.0174532925199433],ID['EPSG',8802]],PARAMETER['Scale factor at natural origin',1,SCALEUNIT['unity',1],ID['EPSG',8805]],PARAMETER['False easting',0,LENGTHUNIT['metre',1],ID['EPSG',8806]],PARAMETER['False northing',0,LENGTHUNIT['metre',1],ID['EPSG',8807]]],CS[Cartesian,2],AXIS['westing (Y)',west,ORDER[1],LENGTHUNIT['metre',1]],AXIS['southing (X)',south,ORDER[2],LENGTHUNIT['metre',1]],USAGE[SCOPE['Cadastre, engineering survey, topographic mapping (large and medium scale).'],AREA['South Africa - east of 32°E.'],BBOX[-28.94,31.95,-26.8,32.95]],ID['EPSG',22293]]"^^ns1:wktLiteral ;
-    ns1:coordinateOperation <http://www.opengis.net/ont/crs/operation/South_African_Survey_Grid_zone_33> ;
+    ns1:coordinateOperation <https://w3id.org/geosrs/operation/South_African_Survey_Grid_zone_33> ;
     ns1:coordinateSystem <http://www.opengis.net/def/crs/EPSG/0/22293_cs> ;
-    ns1:datum <http://www.opengis.net/ont/crs/datum/Cape> ;
+    ns1:datum <https://w3id.org/geosrs/datum/Cape> ;
     ns1:epsgCode "EPSG:22293"^^xsd:string ;
     ns1:isApplicableTo <http://www.opengis.net/ont/crs/isbody/Earth> ;
     ns1:isBound false ;

@@ -6,6 +6,6 @@
         <http://www.w3.org/ns/ldp#Resource>,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Property Partition: asWKT"@en ;
-    void:property <http://www.opengis.net/ont/crs/asWKT> ;
+    void:property <https://w3id.org/geosrs/asWKT> ;
     void:triples 15243 .
 

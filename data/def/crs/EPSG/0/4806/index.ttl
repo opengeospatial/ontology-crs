@@ -1,13 +1,13 @@
-@prefix ns1: <http://www.opengis.net/ont/crs/> .
+@prefix ns1: <https://w3id.org/geosrs/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix void: <http://rdfs.org/ns/void#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://www.opengis.net/def/crs/EPSG/0/4806> a ns1:GeographicCRS,
-        owl:NamedIndividual,
+<http://www.opengis.net/def/crs/EPSG/0/4806> a owl:NamedIndividual,
         <http://www.w3.org/ns/ldp#Resource>,
         <http://www.w3.org/ns/prov-o/Entity>,
+        ns1:GeographicCRS,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Monte Mario (Rome)"@en ;
     void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
@@ -16,7 +16,7 @@
     ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'GeographicCRS','name':'Monte Mario (Rome)','datum':{'type':'GeodeticReferenceFrame','name':'Monte Mario (Rome)','ellipsoid':{'name':'International 1924','semi_major_axis':6378388,'inverse_flattening':297},'prime_meridian':{'name':'Rome','longitude':12.4523333333333}},'coordinate_system':{'subtype':'ellipsoidal','axis':[{'name':'Geodetic latitude','abbreviation':'Lat','direction':'north','unit':'degree'},{'name':'Geodetic longitude','abbreviation':'Lon','direction':'east','unit':'degree'}]},'scope':'Geodesy, onshore minerals management.','area':'Italy - onshore and offshore; San Marino, Vatican City State.','bbox':{'south_latitude':34.76,'west_longitude':5.93,'north_latitude':47.1,'east_longitude':18.99},'id':{'authority':'EPSG','code':4806}}"^^xsd:string ;
     ns1:asWKT "GEOGCRS['Monte Mario (Rome)',DATUM['Monte Mario (Rome)',ELLIPSOID['International 1924',6378388,297,LENGTHUNIT['metre',1]]],PRIMEM['Rome',12.4523333333333,ANGLEUNIT['degree',0.0174532925199433]],CS[ellipsoidal,2],AXIS['geodetic latitude (Lat)',north,ORDER[1],ANGLEUNIT['degree',0.0174532925199433]],AXIS['geodetic longitude (Lon)',east,ORDER[2],ANGLEUNIT['degree',0.0174532925199433]],USAGE[SCOPE['Geodesy, onshore minerals management.'],AREA['Italy - onshore and offshore; San Marino, Vatican City State.'],BBOX[34.76,5.93,47.1,18.99]],ID['EPSG',4806]]"^^ns1:wktLiteral ;
     ns1:coordinateSystem <http://www.opengis.net/def/crs/EPSG/0/4806_cs> ;
-    ns1:datum <http://www.opengis.net/ont/crs/datum/Monte_Mario__Rome_> ;
+    ns1:datum <https://w3id.org/geosrs/datum/Monte_Mario__Rome_> ;
     ns1:epsgCode "EPSG:4806"^^xsd:string ;
     ns1:isApplicableTo <http://www.opengis.net/ont/crs/isbody/Earth> ;
     ns1:isBound false ;

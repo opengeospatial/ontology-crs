@@ -1,13 +1,13 @@
-@prefix ns1: <http://www.opengis.net/ont/crs/> .
+@prefix ns1: <https://w3id.org/geosrs/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix void: <http://rdfs.org/ns/void#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://www.opengis.net/def/crs/EPSG/0/9245> a ns1:VerticalCRS,
-        owl:NamedIndividual,
+<http://www.opengis.net/def/crs/EPSG/0/9245> a owl:NamedIndividual,
         <http://www.w3.org/ns/ldp#Resource>,
         <http://www.w3.org/ns/prov-o/Entity>,
+        ns1:VerticalCRS,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "CGVD2013a(2010) height"@en ;
     void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
@@ -16,7 +16,7 @@
     ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'VerticalCRS','name':'CGVD2013a(2010) height','datum':{'type':'VerticalReferenceFrame','name':'Canadian Geodetic Vertical Datum of 2013 (CGG2013a) epoch 2010','anchor_epoch':2010},'coordinate_system':{'subtype':'vertical','axis':[{'name':'Gravity-related height','abbreviation':'H','direction':'up','unit':'metre'}]},'scope':'Geodesy, topographic mapping.','area':'Canada - onshore and offshore - Alberta; British Columbia; Manitoba; New Brunswick; Newfoundland and Labrador; Northwest Territories; Nova Scotia; Nunavut; Ontario; Prince Edward Island; Quebec; Saskatchewan; Yukon.','bbox':{'south_latitude':38.21,'west_longitude':-141.01,'north_latitude':86.46,'east_longitude':-40.73},'id':{'authority':'EPSG','code':9245}}"^^xsd:string ;
     ns1:asWKT "VERTCRS['CGVD2013a(2010) height',VDATUM['Canadian Geodetic Vertical Datum of 2013 (CGG2013a) epoch 2010',ANCHOREPOCH[2010]],CS[vertical,1],AXIS['gravity-related height (H)',up,LENGTHUNIT['metre',1]],USAGE[SCOPE['Geodesy, topographic mapping.'],AREA['Canada - onshore and offshore - Alberta; British Columbia; Manitoba; New Brunswick; Newfoundland and Labrador; Northwest Territories; Nova Scotia; Nunavut; Ontario; Prince Edward Island; Quebec; Saskatchewan; Yukon.'],BBOX[38.21,-141.01,86.46,-40.73]],ID['EPSG',9245]]"^^ns1:wktLiteral ;
     ns1:coordinateSystem <http://www.opengis.net/def/crs/EPSG/0/9245_cs> ;
-    ns1:datum <http://www.opengis.net/ont/crs/datum/Canadian_Geodetic_Vertical_Datum_of_2013__CGG2013a__epoch_2010> ;
+    ns1:datum <https://w3id.org/geosrs/datum/Canadian_Geodetic_Vertical_Datum_of_2013__CGG2013a__epoch_2010> ;
     ns1:epsgCode "EPSG:9245"^^xsd:string ;
     ns1:isApplicableTo <http://www.opengis.net/ont/crs/isbody/Earth> ;
     ns1:isBound false ;

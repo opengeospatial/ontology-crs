@@ -1,13 +1,13 @@
-@prefix ns1: <http://www.opengis.net/ont/crs/> .
+@prefix ns1: <https://w3id.org/geosrs/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix void: <http://rdfs.org/ns/void#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://www.opengis.net/def/crs/EPSG/0/8888> a ns1:GeographicCRS,
-        owl:NamedIndividual,
+<http://www.opengis.net/def/crs/EPSG/0/8888> a owl:NamedIndividual,
         <http://www.w3.org/ns/ldp#Resource>,
         <http://www.w3.org/ns/prov-o/Entity>,
+        ns1:GeographicCRS,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "WGS 84 (Transit)"@en ;
     void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
@@ -16,7 +16,7 @@
     ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'GeographicCRS','name':'WGS 84 (Transit)','datum':{'type':'DynamicGeodeticReferenceFrame','name':'World Geodetic System 1984 (Transit)','frame_reference_epoch':1984,'ellipsoid':{'name':'WGS 84','semi_major_axis':6378137,'inverse_flattening':298.257223563}},'coordinate_system':{'subtype':'ellipsoidal','axis':[{'name':'Geodetic latitude','abbreviation':'Lat','direction':'north','unit':'degree'},{'name':'Geodetic longitude','abbreviation':'Lon','direction':'east','unit':'degree'}]},'scope':'Geodesy. Navigation and positioning using GPS satellite system.','area':'World.','bbox':{'south_latitude':-90,'west_longitude':-180,'north_latitude':90,'east_longitude':180},'id':{'authority':'EPSG','code':8888}}"^^xsd:string ;
     ns1:asWKT "GEOGCRS['WGS 84 (Transit)',DYNAMIC[FRAMEEPOCH[1984]],DATUM['World Geodetic System 1984 (Transit)',ELLIPSOID['WGS 84',6378137,298.257223563,LENGTHUNIT['metre',1]]],PRIMEM['Greenwich',0,ANGLEUNIT['degree',0.0174532925199433]],CS[ellipsoidal,2],AXIS['geodetic latitude (Lat)',north,ORDER[1],ANGLEUNIT['degree',0.0174532925199433]],AXIS['geodetic longitude (Lon)',east,ORDER[2],ANGLEUNIT['degree',0.0174532925199433]],USAGE[SCOPE['Geodesy. Navigation and positioning using GPS satellite system.'],AREA['World.'],BBOX[-90,-180,90,180]],ID['EPSG',8888]]"^^ns1:wktLiteral ;
     ns1:coordinateSystem <http://www.opengis.net/def/crs/EPSG/0/8888_cs> ;
-    ns1:datum <http://www.opengis.net/ont/crs/datum/World_Geodetic_System_1984__Transit_> ;
+    ns1:datum <https://w3id.org/geosrs/datum/World_Geodetic_System_1984__Transit_> ;
     ns1:epsgCode "EPSG:8888"^^xsd:string ;
     ns1:isApplicableTo <http://www.opengis.net/ont/crs/isbody/Earth> ;
     ns1:isBound false ;

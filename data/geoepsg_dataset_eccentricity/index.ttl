@@ -6,6 +6,6 @@
         <http://www.w3.org/ns/ldp#Resource>,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Property Partition: eccentricity"@en ;
-    void:property <http://www.opengis.net/ont/crs/eccentricity> ;
+    void:property <https://w3id.org/geosrs/eccentricity> ;
     void:triples 54 .
 

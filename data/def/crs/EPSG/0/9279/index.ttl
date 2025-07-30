@@ -1,13 +1,13 @@
-@prefix ns1: <http://www.opengis.net/ont/crs/> .
+@prefix ns1: <https://w3id.org/geosrs/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix void: <http://rdfs.org/ns/void#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://www.opengis.net/def/crs/EPSG/0/9279> a ns1:VerticalCRS,
-        owl:NamedIndividual,
+<http://www.opengis.net/def/crs/EPSG/0/9279> a owl:NamedIndividual,
         <http://www.w3.org/ns/ldp#Resource>,
         <http://www.w3.org/ns/prov-o/Entity>,
+        ns1:VerticalCRS,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "SA LLD height"@en ;
     void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
@@ -16,7 +16,7 @@
     ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'VerticalCRS','name':'SA LLD height','datum':{'type':'VerticalReferenceFrame','name':'South Africa Land Levelling Datum'},'coordinate_system':{'subtype':'vertical','axis':[{'name':'Gravity-related height','abbreviation':'H','direction':'up','unit':'metre'}]},'scope':'Geodesy, engineering survey, topographic mapping.','area':'South Africa - mainland onshore.','bbox':{'south_latitude':-34.88,'west_longitude':16.45,'north_latitude':-22.13,'east_longitude':32.95},'id':{'authority':'EPSG','code':9279}}"^^xsd:string ;
     ns1:asWKT "VERTCRS['SA LLD height',VDATUM['South Africa Land Levelling Datum'],CS[vertical,1],AXIS['gravity-related height (H)',up,LENGTHUNIT['metre',1]],USAGE[SCOPE['Geodesy, engineering survey, topographic mapping.'],AREA['South Africa - mainland onshore.'],BBOX[-34.88,16.45,-22.13,32.95]],ID['EPSG',9279]]"^^ns1:wktLiteral ;
     ns1:coordinateSystem <http://www.opengis.net/def/crs/EPSG/0/9279_cs> ;
-    ns1:datum <http://www.opengis.net/ont/crs/datum/South_Africa_Land_Levelling_Datum> ;
+    ns1:datum <https://w3id.org/geosrs/datum/South_Africa_Land_Levelling_Datum> ;
     ns1:epsgCode "EPSG:9279"^^xsd:string ;
     ns1:isApplicableTo <http://www.opengis.net/ont/crs/isbody/Earth> ;
     ns1:isBound false ;

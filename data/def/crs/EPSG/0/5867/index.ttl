@@ -1,13 +1,13 @@
-@prefix ns1: <http://www.opengis.net/ont/crs/> .
+@prefix ns1: <https://w3id.org/geosrs/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix void: <http://rdfs.org/ns/void#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://www.opengis.net/def/crs/EPSG/0/5867> a ns1:VerticalCRS,
-        owl:NamedIndividual,
+<http://www.opengis.net/def/crs/EPSG/0/5867> a owl:NamedIndividual,
         <http://www.w3.org/ns/ldp#Resource>,
         <http://www.w3.org/ns/prov-o/Entity>,
+        ns1:VerticalCRS,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "MLW depth"@en ;
     void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
@@ -16,7 +16,7 @@
     ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'VerticalCRS','name':'MLW depth','datum':{'type':'VerticalReferenceFrame','name':'Mean Low Water'},'coordinate_system':{'subtype':'vertical','axis':[{'name':'Depth','abbreviation':'D','direction':'down','unit':'metre'}]},'scope':'Hydrography and nautical charting.','area':'World.','bbox':{'south_latitude':-90,'west_longitude':-180,'north_latitude':90,'east_longitude':180},'id':{'authority':'EPSG','code':5867}}"^^xsd:string ;
     ns1:asWKT "VERTCRS['MLW depth',VDATUM['Mean Low Water'],CS[vertical,1],AXIS['depth (D)',down,LENGTHUNIT['metre',1]],USAGE[SCOPE['Hydrography and nautical charting.'],AREA['World.'],BBOX[-90,-180,90,180]],ID['EPSG',5867]]"^^ns1:wktLiteral ;
     ns1:coordinateSystem <http://www.opengis.net/def/crs/EPSG/0/5867_cs> ;
-    ns1:datum <http://www.opengis.net/ont/crs/datum/Mean_Low_Water> ;
+    ns1:datum <https://w3id.org/geosrs/datum/Mean_Low_Water> ;
     ns1:epsgCode "EPSG:5867"^^xsd:string ;
     ns1:isApplicableTo <http://www.opengis.net/ont/crs/isbody/Earth> ;
     ns1:isBound false ;

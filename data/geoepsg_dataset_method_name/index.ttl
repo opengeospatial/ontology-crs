@@ -6,6 +6,6 @@
         <http://www.w3.org/ns/ldp#Resource>,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Property Partition: method_name"@en ;
-    void:property <http://www.opengis.net/ont/crs/method_name> ;
+    void:property <https://w3id.org/geosrs/method_name> ;
     void:triples 2268 .
 

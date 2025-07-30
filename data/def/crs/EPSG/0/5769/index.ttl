@@ -1,13 +1,13 @@
-@prefix ns1: <http://www.opengis.net/ont/crs/> .
+@prefix ns1: <https://w3id.org/geosrs/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix void: <http://rdfs.org/ns/void#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://www.opengis.net/def/crs/EPSG/0/5769> a ns1:VerticalCRS,
-        owl:NamedIndividual,
+<http://www.opengis.net/def/crs/EPSG/0/5769> a owl:NamedIndividual,
         <http://www.w3.org/ns/ldp#Resource>,
         <http://www.w3.org/ns/prov-o/Entity>,
+        ns1:VerticalCRS,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Taranaki 1970 height"@en ;
     void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
@@ -16,7 +16,7 @@
     ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'VerticalCRS','name':'Taranaki 1970 height','datum':{'type':'VerticalReferenceFrame','name':'Taranaki 1970'},'coordinate_system':{'subtype':'vertical','axis':[{'name':'Gravity-related height','abbreviation':'H','direction':'up','unit':'metre'}]},'scope':'Geodesy, engineering survey, topographic mapping.','area':'New Zealand - North Island - Taranaki vertical CRS area.','bbox':{'south_latitude':-39.92,'west_longitude':173.68,'north_latitude':-38.41,'east_longitude':174.95},'id':{'authority':'EPSG','code':5769}}"^^xsd:string ;
     ns1:asWKT "VERTCRS['Taranaki 1970 height',VDATUM['Taranaki 1970'],CS[vertical,1],AXIS['gravity-related height (H)',up,LENGTHUNIT['metre',1]],USAGE[SCOPE['Geodesy, engineering survey, topographic mapping.'],AREA['New Zealand - North Island - Taranaki vertical CRS area.'],BBOX[-39.92,173.68,-38.41,174.95]],ID['EPSG',5769]]"^^ns1:wktLiteral ;
     ns1:coordinateSystem <http://www.opengis.net/def/crs/EPSG/0/5769_cs> ;
-    ns1:datum <http://www.opengis.net/ont/crs/datum/Taranaki_1970> ;
+    ns1:datum <https://w3id.org/geosrs/datum/Taranaki_1970> ;
     ns1:epsgCode "EPSG:5769"^^xsd:string ;
     ns1:isApplicableTo <http://www.opengis.net/ont/crs/isbody/Earth> ;
     ns1:isBound false ;

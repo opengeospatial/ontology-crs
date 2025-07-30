@@ -1,10 +1,10 @@
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
-@prefix ns1: <http://www.opengis.net/ont/crs/> .
+@prefix ns1: <https://w3id.org/geosrs/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix void: <http://rdfs.org/ns/void#> .
 
-<http://www.opengis.net/ont/crs/areaofuse/Maine_CS2000_East_zone__meter__area_of_use> a ns1:AreaOfUse,
-        <http://www.w3.org/ns/ldp#Resource>,
+<http://www.opengis.net/ont/crs/areaofuse/Maine_CS2000_East_zone__meter__area_of_use> a <http://www.w3.org/ns/ldp#Resource>,
+        ns1:AreaOfUse,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "United States (USA) - Maine east of approximately 68°25'W. The area is bounded by the following: Beginning at the point determined by the intersection of the Maine State line and the Fort Kent - Frenchville town line, thence continuing easterly and then southerly along the state line to the boundary of the State of Maine as determined by Maritime law, thence following the State boundary westerly to the intersection of the Knox and Hancock County line, thence northerly along the easterly boundary of the Maine 2000 Central Zone, as defined, to the point of beginning."@en ;
     void:inDataset <http://www.opengis.net/geoepsg_dataset> ;

@@ -6,6 +6,6 @@
         <http://www.w3.org/ns/ldp#Resource>,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Property Partition: primeMeridian"@en ;
-    void:property <http://www.opengis.net/ont/crs/primeMeridian> ;
+    void:property <https://w3id.org/geosrs/primeMeridian> ;
     void:triples 606 .
 

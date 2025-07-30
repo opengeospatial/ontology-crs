@@ -1,22 +1,22 @@
-@prefix ns1: <http://www.opengis.net/ont/crs/> .
+@prefix ns1: <https://w3id.org/geosrs/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix void: <http://rdfs.org/ns/void#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://www.opengis.net/def/crs/EPSG/0/2297> a ns1:ProjectedCRS,
-        owl:NamedIndividual,
+<http://www.opengis.net/def/crs/EPSG/0/2297> a owl:NamedIndividual,
         <http://www.w3.org/ns/ldp#Resource>,
         <http://www.w3.org/ns/prov-o/Entity>,
+        ns1:ProjectedCRS,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Qornoq 1927 / Greenland zone 1 east"@en ;
     void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
     ns1:area_of_use <http://www.opengis.net/def/crs/EPSG/0/2297_area_of_use> ;
     ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'ProjectedCRS','name':'Qornoq 1927 / Greenland zone 1 east','base_crs':{'name':'Qornoq 1927','datum':{'type':'GeodeticReferenceFrame','name':'Qornoq 1927','ellipsoid':{'name':'International 1924','semi_major_axis':6378388,'inverse_flattening':297}},'coordinate_system':{'subtype':'ellipsoidal','axis':[{'name':'Geodetic latitude','abbreviation':'Lat','direction':'north','unit':'degree'},{'name':'Geodetic longitude','abbreviation':'Lon','direction':'east','unit':'degree'}]},'id':{'authority':'EPSG','code':4194}},'conversion':{'name':'Greenland zone 1 east','method':{'name':'Lambert Conic Conformal (West Orientated)','id':{'authority':'EPSG','code':9826}},'parameters':[{'name':'Latitude of natural origin','value':82.5,'unit':'degree','id':{'authority':'EPSG','code':8801}},{'name':'Longitude of natural origin','value':-40,'unit':'degree','id':{'authority':'EPSG','code':8802}},{'name':'Scale factor at natural origin','value':1,'unit':'unity','id':{'authority':'EPSG','code':8805}},{'name':'False easting','value':0,'unit':'metre','id':{'authority':'EPSG','code':8806}},{'name':'False northing','value':0,'unit':'metre','id':{'authority':'EPSG','code':8807}}]},'coordinate_system':{'subtype':'Cartesian','axis':[{'name':'Northing','abbreviation':'N','direction':'north','unit':'metre'},{'name':'Westing','abbreviation':'E','direction':'west','unit':'metre'}]},'scope':'Topographic mapping.','area':'Greenland - onshore north of 81°N.','bbox':{'south_latitude':81,'west_longitude':-65.06,'north_latitude':83.67,'east_longitude':-11.81},'id':{'authority':'EPSG','code':2297}}"^^xsd:string ;
     ns1:asWKT "PROJCRS['Qornoq 1927 / Greenland zone 1 east',BASEGEOGCRS['Qornoq 1927',DATUM['Qornoq 1927',ELLIPSOID['International 1924',6378388,297,LENGTHUNIT['metre',1]]],PRIMEM['Greenwich',0,ANGLEUNIT['degree',0.0174532925199433]],ID['EPSG',4194]],CONVERSION['Greenland zone 1 east',METHOD['Lambert Conic Conformal (West Orientated)',ID['EPSG',9826]],PARAMETER['Latitude of natural origin',82.5,ANGLEUNIT['degree',0.0174532925199433],ID['EPSG',8801]],PARAMETER['Longitude of natural origin',-40,ANGLEUNIT['degree',0.0174532925199433],ID['EPSG',8802]],PARAMETER['Scale factor at natural origin',1,SCALEUNIT['unity',1],ID['EPSG',8805]],PARAMETER['False easting',0,LENGTHUNIT['metre',1],ID['EPSG',8806]],PARAMETER['False northing',0,LENGTHUNIT['metre',1],ID['EPSG',8807]]],CS[Cartesian,2],AXIS['northing (N)',north,ORDER[1],LENGTHUNIT['metre',1]],AXIS['westing (E)',west,ORDER[2],LENGTHUNIT['metre',1]],USAGE[SCOPE['Topographic mapping.'],AREA['Greenland - onshore north of 81°N.'],BBOX[81,-65.06,83.67,-11.81]],ID['EPSG',2297]]"^^ns1:wktLiteral ;
-    ns1:coordinateOperation <http://www.opengis.net/ont/crs/operation/Greenland_zone_1_east> ;
+    ns1:coordinateOperation <https://w3id.org/geosrs/operation/Greenland_zone_1_east> ;
     ns1:coordinateSystem <http://www.opengis.net/def/crs/EPSG/0/2297_cs> ;
-    ns1:datum <http://www.opengis.net/ont/crs/datum/Qornoq_1927> ;
+    ns1:datum <https://w3id.org/geosrs/datum/Qornoq_1927> ;
     ns1:epsgCode "EPSG:2297"^^xsd:string ;
     ns1:isApplicableTo <http://www.opengis.net/ont/crs/isbody/Earth> ;
     ns1:isBound false ;

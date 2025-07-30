@@ -1,10 +1,10 @@
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
-@prefix ns1: <http://www.opengis.net/ont/crs/> .
+@prefix ns1: <https://w3id.org/geosrs/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix void: <http://rdfs.org/ns/void#> .
 
-<http://www.opengis.net/def/crs/EPSG/0/26860_area_of_use> a ns1:AreaOfUse,
-        <http://www.w3.org/ns/ldp#Resource>,
+<http://www.opengis.net/def/crs/EPSG/0/26860_area_of_use> a <http://www.w3.org/ns/ldp#Resource>,
+        ns1:AreaOfUse,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "United States (USA) - Nebraska - counties of Adams; Antelope; Arthur; Banner; Blaine; Boone; Box Butte; Boyd; Brown; Buffalo; Burt; Butler; Cass; Cedar; Chase; Cherry; Cheyenne; Clay; Colfax; Cuming; Custer; Dakota; Dawes; Dawson; Deuel; Dixon; Dodge; Douglas; Dundy; Fillmore; Franklin; Frontier; Furnas; Gage; Garden; Garfield; Gosper; Grant; Greeley; Hall; Hamilton; Harlan; Hayes; Hitchcock; Holt; Hooker; Howard; Jefferson; Johnson; Kearney; Keith; Keya Paha; Kimball; Knox; Lancaster; Lincoln; Logan; Loup; Madison; McPherson; Merrick; Morrill; Nance; Nemaha; Nuckolls; Otoe; Pawnee; Perkins; Phelps; Pierce; Platte; Polk; Red Willow; Richardson; Rock; Saline; Sarpy; Saunders; Scotts Bluff; Seward; Sheridan; Sherman; Sioux; Stanton; Thayer; Thomas; Thurston; Valley; Washington; Wayne; Webster; Wheeler; York."@en ;
     void:inDataset <http://www.opengis.net/geoepsg_dataset> ;

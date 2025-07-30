@@ -1,14 +1,15 @@
-@prefix ns1: <http://www.opengis.net/ont/crs/> .
+@prefix ns1: <https://w3id.org/geosrs/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix void: <http://rdfs.org/ns/void#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://www.opengis.net/ont/crs/geod/Helmert1906> a ns1:Ellipsoid,
-        <http://www.w3.org/ns/ldp#Resource>,
+<http://www.opengis.net/ont/crs/geod/Helmert1906> a <http://www.w3.org/ns/ldp#Resource>,
+        ns1:Ellipsoid,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Helmert 1906"@en ;
     void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
+    skos:definition "+a=6378200.0 +f=0.0033523298692592074"^^xsd:string ;
     ns1:approximates <http://www.opengis.net/ont/crs/isbody/Earth> ;
     ns1:eccentricity 6.693422e-03 ;
     ns1:flatteningParameter 3.35233e-03 ;
@@ -16,6 +17,5 @@
     ns1:isSphere false ;
     ns1:is_semi_minor_computed true ;
     ns1:semiMajorAxis "6378200.0"^^xsd:string ;
-    ns1:semiMinorAxis "6356818.169627891"^^xsd:string ;
-    skos:definition "+a=6378200.0 +f=0.0033523298692592074"^^xsd:string .
+    ns1:semiMinorAxis "6356818.169627891"^^xsd:string .
 

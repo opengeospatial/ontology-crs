@@ -1,13 +1,13 @@
-@prefix ns1: <http://www.opengis.net/ont/crs/> .
+@prefix ns1: <https://w3id.org/geosrs/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix void: <http://rdfs.org/ns/void#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://www.opengis.net/def/crs/EPSG/0/8246> a ns1:GeographicCRS,
-        owl:NamedIndividual,
+<http://www.opengis.net/def/crs/EPSG/0/8246> a owl:NamedIndividual,
         <http://www.w3.org/ns/ldp#Resource>,
         <http://www.w3.org/ns/prov-o/Entity>,
+        ns1:GeographicCRS,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "NAD83(CSRS)v4"@en ;
     void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
@@ -16,7 +16,7 @@
     ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'GeographicCRS','name':'NAD83(CSRS)v4','datum':{'type':'GeodeticReferenceFrame','name':'North American Datum of 1983 (CSRS) version 4','anchor_epoch':2002,'ellipsoid':{'name':'GRS 1980','semi_major_axis':6378137,'inverse_flattening':298.257222101}},'coordinate_system':{'subtype':'ellipsoidal','axis':[{'name':'Geodetic latitude','abbreviation':'Lat','direction':'north','unit':'degree'},{'name':'Geodetic longitude','abbreviation':'Lon','direction':'east','unit':'degree'}]},'scope':'Horizontal component of 3D system.','area':'Canada - onshore and offshore - Alberta; British Columbia; Manitoba; New Brunswick; Newfoundland and Labrador; Northwest Territories; Nova Scotia; Nunavut; Ontario; Prince Edward Island; Quebec; Saskatchewan; Yukon.','bbox':{'south_latitude':38.21,'west_longitude':-141.01,'north_latitude':86.46,'east_longitude':-40.73},'id':{'authority':'EPSG','code':8246}}"^^xsd:string ;
     ns1:asWKT "GEOGCRS['NAD83(CSRS)v4',DATUM['North American Datum of 1983 (CSRS) version 4',ELLIPSOID['GRS 1980',6378137,298.257222101,LENGTHUNIT['metre',1]],ANCHOREPOCH[2002]],PRIMEM['Greenwich',0,ANGLEUNIT['degree',0.0174532925199433]],CS[ellipsoidal,2],AXIS['geodetic latitude (Lat)',north,ORDER[1],ANGLEUNIT['degree',0.0174532925199433]],AXIS['geodetic longitude (Lon)',east,ORDER[2],ANGLEUNIT['degree',0.0174532925199433]],USAGE[SCOPE['Horizontal component of 3D system.'],AREA['Canada - onshore and offshore - Alberta; British Columbia; Manitoba; New Brunswick; Newfoundland and Labrador; Northwest Territories; Nova Scotia; Nunavut; Ontario; Prince Edward Island; Quebec; Saskatchewan; Yukon.'],BBOX[38.21,-141.01,86.46,-40.73]],ID['EPSG',8246]]"^^ns1:wktLiteral ;
     ns1:coordinateSystem <http://www.opengis.net/def/crs/EPSG/0/8246_cs> ;
-    ns1:datum <http://www.opengis.net/ont/crs/datum/North_American_Datum_of_1983__CSRS__version_4> ;
+    ns1:datum <https://w3id.org/geosrs/datum/North_American_Datum_of_1983__CSRS__version_4> ;
     ns1:epsgCode "EPSG:8246"^^xsd:string ;
     ns1:isApplicableTo <http://www.opengis.net/ont/crs/isbody/Earth> ;
     ns1:isBound false ;

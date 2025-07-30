@@ -1,13 +1,13 @@
-@prefix ns1: <http://www.opengis.net/ont/crs/> .
+@prefix ns1: <https://w3id.org/geosrs/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix void: <http://rdfs.org/ns/void#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://www.opengis.net/def/crs/EPSG/0/6596> a ns1:ProjectedCRS,
-        owl:NamedIndividual,
+<http://www.opengis.net/def/crs/EPSG/0/6596> a owl:NamedIndividual,
         <http://www.w3.org/ns/ldp#Resource>,
         <http://www.w3.org/ns/prov-o/Entity>,
+        ns1:ProjectedCRS,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "NAD83(2011) / Washington North"@en ;
     void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
@@ -15,9 +15,9 @@
     ns1:asProj4 "+proj=lcc +lat_0=47 +lon_0=-120.833333333333 +lat_1=48.7333333333333 +lat_2=47.5 +x_0=500000 +y_0=0 +ellps=GRS80 +units=m +no_defs +type=crs"^^xsd:string ;
     ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'ProjectedCRS','name':'NAD83(2011) / Washington North','base_crs':{'name':'NAD83(2011)','datum':{'type':'GeodeticReferenceFrame','name':'NAD83 (National Spatial Reference System 2011)','ellipsoid':{'name':'GRS 1980','semi_major_axis':6378137,'inverse_flattening':298.257222101}},'coordinate_system':{'subtype':'ellipsoidal','axis':[{'name':'Geodetic latitude','abbreviation':'Lat','direction':'north','unit':'degree'},{'name':'Geodetic longitude','abbreviation':'Lon','direction':'east','unit':'degree'}]},'id':{'authority':'EPSG','code':6318}},'conversion':{'name':'SPCS83 Washington North zone (meter)','method':{'name':'Lambert Conic Conformal (2SP)','id':{'authority':'EPSG','code':9802}},'parameters':[{'name':'Latitude of false origin','value':47,'unit':'degree','id':{'authority':'EPSG','code':8821}},{'name':'Longitude of false origin','value':-120.833333333333,'unit':'degree','id':{'authority':'EPSG','code':8822}},{'name':'Latitude of 1st standard parallel','value':48.7333333333333,'unit':'degree','id':{'authority':'EPSG','code':8823}},{'name':'Latitude of 2nd standard parallel','value':47.5,'unit':'degree','id':{'authority':'EPSG','code':8824}},{'name':'Easting at false origin','value':500000,'unit':'metre','id':{'authority':'EPSG','code':8826}},{'name':'Northing at false origin','value':0,'unit':'metre','id':{'authority':'EPSG','code':8827}}]},'coordinate_system':{'subtype':'Cartesian','axis':[{'name':'Easting','abbreviation':'X','direction':'east','unit':'metre'},{'name':'Northing','abbreviation':'Y','direction':'north','unit':'metre'}]},'scope':'Engineering survey, topographic mapping.','area':'United States (USA) - Washington - counties of Chelan; Clallam; Douglas; Ferry; Grant north of approximately 47°30'N; Island; Jefferson; King; Kitsap; Lincoln; Okanogan; Pend Oreille; San Juan; Skagit; Snohomish; Spokane; Stevens; Whatcom.','bbox':{'south_latitude':47.08,'west_longitude':-124.79,'north_latitude':49.05,'east_longitude':-117.02},'id':{'authority':'EPSG','code':6596}}"^^xsd:string ;
     ns1:asWKT "PROJCRS['NAD83(2011) / Washington North',BASEGEOGCRS['NAD83(2011)',DATUM['NAD83 (National Spatial Reference System 2011)',ELLIPSOID['GRS 1980',6378137,298.257222101,LENGTHUNIT['metre',1]]],PRIMEM['Greenwich',0,ANGLEUNIT['degree',0.0174532925199433]],ID['EPSG',6318]],CONVERSION['SPCS83 Washington North zone (meter)',METHOD['Lambert Conic Conformal (2SP)',ID['EPSG',9802]],PARAMETER['Latitude of false origin',47,ANGLEUNIT['degree',0.0174532925199433],ID['EPSG',8821]],PARAMETER['Longitude of false origin',-120.833333333333,ANGLEUNIT['degree',0.0174532925199433],ID['EPSG',8822]],PARAMETER['Latitude of 1st standard parallel',48.7333333333333,ANGLEUNIT['degree',0.0174532925199433],ID['EPSG',8823]],PARAMETER['Latitude of 2nd standard parallel',47.5,ANGLEUNIT['degree',0.0174532925199433],ID['EPSG',8824]],PARAMETER['Easting at false origin',500000,LENGTHUNIT['metre',1],ID['EPSG',8826]],PARAMETER['Northing at false origin',0,LENGTHUNIT['metre',1],ID['EPSG',8827]]],CS[Cartesian,2],AXIS['easting (X)',east,ORDER[1],LENGTHUNIT['metre',1]],AXIS['northing (Y)',north,ORDER[2],LENGTHUNIT['metre',1]],USAGE[SCOPE['Engineering survey, topographic mapping.'],AREA['United States (USA) - Washington - counties of Chelan; Clallam; Douglas; Ferry; Grant north of approximately 47°30'N; Island; Jefferson; King; Kitsap; Lincoln; Okanogan; Pend Oreille; San Juan; Skagit; Snohomish; Spokane; Stevens; Whatcom.'],BBOX[47.08,-124.79,49.05,-117.02]],ID['EPSG',6596]]"^^ns1:wktLiteral ;
-    ns1:coordinateOperation <http://www.opengis.net/ont/crs/operation/SPCS83_Washington_North_zone__meter_> ;
+    ns1:coordinateOperation <https://w3id.org/geosrs/operation/SPCS83_Washington_North_zone__meter_> ;
     ns1:coordinateSystem <http://www.opengis.net/def/crs/EPSG/0/6596_cs> ;
-    ns1:datum <http://www.opengis.net/ont/crs/datum/NAD83__National_Spatial_Reference_System_2011_> ;
+    ns1:datum <https://w3id.org/geosrs/datum/NAD83__National_Spatial_Reference_System_2011_> ;
     ns1:epsgCode "EPSG:6596"^^xsd:string ;
     ns1:isApplicableTo <http://www.opengis.net/ont/crs/isbody/Earth> ;
     ns1:isBound false ;

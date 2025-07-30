@@ -1,4 +1,4 @@
-@prefix ns1: <http://www.opengis.net/ont/crs/> .
+@prefix ns1: <https://w3id.org/geosrs/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix void: <http://rdfs.org/ns/void#> .
@@ -8,13 +8,13 @@
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Geoid 1"@en ;
     void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
+    skos:definition "+a=6378137.0 +f=0.0033528106647475126"^^xsd:string,
+        "+a=6378137.0 +f=0.0033528106811822724"^^xsd:string ;
     ns1:approximates <http://www.opengis.net/ont/crs/isbody/Earth> ;
     ns1:eccentricity 6.69438e-03 ;
     ns1:flatteningParameter 3.352811e-03 ;
     ns1:isSphere false ;
     ns1:semiMajorAxis "6378137.0"^^xsd:string ;
     ns1:semiMinorAxis "6356752.314140356"^^xsd:string,
-        "6356752.314245179"^^xsd:string ;
-    skos:definition "+a=6378137.0 +f=0.0033528106647475126"^^xsd:string,
-        "+a=6378137.0 +f=0.0033528106811822724"^^xsd:string .
+        "6356752.314245179"^^xsd:string .
 

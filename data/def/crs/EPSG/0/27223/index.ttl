@@ -1,13 +1,13 @@
-@prefix ns1: <http://www.opengis.net/ont/crs/> .
+@prefix ns1: <https://w3id.org/geosrs/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix void: <http://rdfs.org/ns/void#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://www.opengis.net/def/crs/EPSG/0/27223> a ns1:ProjectedCRS,
-        owl:NamedIndividual,
+<http://www.opengis.net/def/crs/EPSG/0/27223> a owl:NamedIndividual,
         <http://www.w3.org/ns/ldp#Resource>,
         <http://www.w3.org/ns/prov-o/Entity>,
+        ns1:ProjectedCRS,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "NZGD49 / Jacksons Bay Circuit"@en ;
     void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
@@ -15,9 +15,9 @@
     ns1:asProj4 "+proj=tmerc +lat_0=-43.9778028888889 +lon_0=168.606267 +k=1 +x_0=300000 +y_0=700000 +ellps=intl +units=m +no_defs +type=crs"^^xsd:string ;
     ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'ProjectedCRS','name':'NZGD49 / Jacksons Bay Circuit','base_crs':{'name':'NZGD49','datum':{'type':'GeodeticReferenceFrame','name':'New Zealand Geodetic Datum 1949','ellipsoid':{'name':'International 1924','semi_major_axis':6378388,'inverse_flattening':297}},'coordinate_system':{'subtype':'ellipsoidal','axis':[{'name':'Geodetic latitude','abbreviation':'Lat','direction':'north','unit':'degree'},{'name':'Geodetic longitude','abbreviation':'Lon','direction':'east','unit':'degree'}]},'id':{'authority':'EPSG','code':4272}},'conversion':{'name':'Jacksons Bay Circuit','method':{'name':'Transverse Mercator','id':{'authority':'EPSG','code':9807}},'parameters':[{'name':'Latitude of natural origin','value':-43.9778028888889,'unit':'degree','id':{'authority':'EPSG','code':8801}},{'name':'Longitude of natural origin','value':168.606267,'unit':'degree','id':{'authority':'EPSG','code':8802}},{'name':'Scale factor at natural origin','value':1,'unit':'unity','id':{'authority':'EPSG','code':8805}},{'name':'False easting','value':300000,'unit':'metre','id':{'authority':'EPSG','code':8806}},{'name':'False northing','value':700000,'unit':'metre','id':{'authority':'EPSG','code':8807}}]},'coordinate_system':{'subtype':'Cartesian','axis':[{'name':'Northing','abbreviation':'N','direction':'north','unit':'metre'},{'name':'Easting','abbreviation':'E','direction':'east','unit':'metre'}]},'scope':'Cadastre.','area':'New Zealand - South Island - Jacksons Bay meridional circuit area.','bbox':{'south_latitude':-44.4,'west_longitude':168.02,'north_latitude':-43.67,'east_longitude':170.01},'id':{'authority':'EPSG','code':27223}}"^^xsd:string ;
     ns1:asWKT "PROJCRS['NZGD49 / Jacksons Bay Circuit',BASEGEOGCRS['NZGD49',DATUM['New Zealand Geodetic Datum 1949',ELLIPSOID['International 1924',6378388,297,LENGTHUNIT['metre',1]]],PRIMEM['Greenwich',0,ANGLEUNIT['degree',0.0174532925199433]],ID['EPSG',4272]],CONVERSION['Jacksons Bay Circuit',METHOD['Transverse Mercator',ID['EPSG',9807]],PARAMETER['Latitude of natural origin',-43.9778028888889,ANGLEUNIT['degree',0.0174532925199433],ID['EPSG',8801]],PARAMETER['Longitude of natural origin',168.606267,ANGLEUNIT['degree',0.0174532925199433],ID['EPSG',8802]],PARAMETER['Scale factor at natural origin',1,SCALEUNIT['unity',1],ID['EPSG',8805]],PARAMETER['False easting',300000,LENGTHUNIT['metre',1],ID['EPSG',8806]],PARAMETER['False northing',700000,LENGTHUNIT['metre',1],ID['EPSG',8807]]],CS[Cartesian,2],AXIS['northing (N)',north,ORDER[1],LENGTHUNIT['metre',1]],AXIS['easting (E)',east,ORDER[2],LENGTHUNIT['metre',1]],USAGE[SCOPE['Cadastre.'],AREA['New Zealand - South Island - Jacksons Bay meridional circuit area.'],BBOX[-44.4,168.02,-43.67,170.01]],ID['EPSG',27223]]"^^ns1:wktLiteral ;
-    ns1:coordinateOperation <http://www.opengis.net/ont/crs/operation/Jacksons_Bay_Circuit> ;
+    ns1:coordinateOperation <https://w3id.org/geosrs/operation/Jacksons_Bay_Circuit> ;
     ns1:coordinateSystem <http://www.opengis.net/def/crs/EPSG/0/27223_cs> ;
-    ns1:datum <http://www.opengis.net/ont/crs/datum/New_Zealand_Geodetic_Datum_1949> ;
+    ns1:datum <https://w3id.org/geosrs/datum/New_Zealand_Geodetic_Datum_1949> ;
     ns1:epsgCode "EPSG:27223"^^xsd:string ;
     ns1:isApplicableTo <http://www.opengis.net/ont/crs/isbody/Earth> ;
     ns1:isBound false ;

@@ -1,13 +1,13 @@
-@prefix ns1: <http://www.opengis.net/ont/crs/> .
+@prefix ns1: <https://w3id.org/geosrs/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix void: <http://rdfs.org/ns/void#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://www.opengis.net/def/crs/EPSG/0/4000> a ns1:GeocentricCRS,
-        owl:NamedIndividual,
+<http://www.opengis.net/def/crs/EPSG/0/4000> a owl:NamedIndividual,
         <http://www.w3.org/ns/ldp#Resource>,
         <http://www.w3.org/ns/prov-o/Entity>,
+        ns1:GeocentricCRS,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "MOLDREF99"@en ;
     void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
@@ -16,7 +16,7 @@
     ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'GeodeticCRS','name':'MOLDREF99','datum':{'type':'GeodeticReferenceFrame','name':'MOLDREF99','ellipsoid':{'name':'GRS 1980','semi_major_axis':6378137,'inverse_flattening':298.257222101}},'coordinate_system':{'subtype':'Cartesian','axis':[{'name':'Geocentric X','abbreviation':'X','direction':'geocentricX','unit':'metre'},{'name':'Geocentric Y','abbreviation':'Y','direction':'geocentricY','unit':'metre'},{'name':'Geocentric Z','abbreviation':'Z','direction':'geocentricZ','unit':'metre'}]},'scope':'Geodesy.','area':'Moldova.','bbox':{'south_latitude':45.44,'west_longitude':26.63,'north_latitude':48.47,'east_longitude':30.13},'id':{'authority':'EPSG','code':4000}}"^^xsd:string ;
     ns1:asWKT "GEODCRS['MOLDREF99',DATUM['MOLDREF99',ELLIPSOID['GRS 1980',6378137,298.257222101,LENGTHUNIT['metre',1]]],PRIMEM['Greenwich',0,ANGLEUNIT['degree',0.0174532925199433]],CS[Cartesian,3],AXIS['(X)',geocentricX,ORDER[1],LENGTHUNIT['metre',1]],AXIS['(Y)',geocentricY,ORDER[2],LENGTHUNIT['metre',1]],AXIS['(Z)',geocentricZ,ORDER[3],LENGTHUNIT['metre',1]],USAGE[SCOPE['Geodesy.'],AREA['Moldova.'],BBOX[45.44,26.63,48.47,30.13]],ID['EPSG',4000]]"^^ns1:wktLiteral ;
     ns1:coordinateSystem <http://www.opengis.net/def/crs/EPSG/0/4000_cs> ;
-    ns1:datum <http://www.opengis.net/ont/crs/datum/MOLDREF99> ;
+    ns1:datum <https://w3id.org/geosrs/datum/MOLDREF99> ;
     ns1:epsgCode "EPSG:4000"^^xsd:string ;
     ns1:isApplicableTo <http://www.opengis.net/ont/crs/isbody/Earth> ;
     ns1:isBound false ;

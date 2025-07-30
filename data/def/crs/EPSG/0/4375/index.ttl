@@ -1,13 +1,13 @@
-@prefix ns1: <http://www.opengis.net/ont/crs/> .
+@prefix ns1: <https://w3id.org/geosrs/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix void: <http://rdfs.org/ns/void#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://www.opengis.net/def/crs/EPSG/0/4375> a ns1:GeographicCRS,
-        owl:NamedIndividual,
+<http://www.opengis.net/def/crs/EPSG/0/4375> a owl:NamedIndividual,
         <http://www.w3.org/ns/ldp#Resource>,
         <http://www.w3.org/ns/prov-o/Entity>,
+        ns1:GeographicCRS,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "SIRGAS (3D)"@en ;
     void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
@@ -16,7 +16,7 @@
     ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'GeographicCRS','name':'SIRGAS (3D)','datum':{'type':'GeodeticReferenceFrame','name':'Sistema de Referencia Geocentrico para America del Sur 1995','ellipsoid':{'name':'GRS 1980','semi_major_axis':6378137,'inverse_flattening':298.257222101}},'coordinate_system':{'subtype':'ellipsoidal','axis':[{'name':'Geodetic latitude','abbreviation':'Lat','direction':'north','unit':{'type':'AngularUnit','name':'degree minute second hemisphere','conversion_factor':0.0174532925199433}},{'name':'Geodetic longitude','abbreviation':'Long','direction':'east','unit':{'type':'AngularUnit','name':'degree minute second hemisphere','conversion_factor':0.0174532925199433}},{'name':'Ellipsoidal height','abbreviation':'h','direction':'up','unit':'metre'}]},'scope':'Geodesy.','area':'South America - Argentina, Brazil, Bolivia, Chile, Colombia, Ecuador, French Guiana, Guyana, Paraguay, Peru, Suriname, Uruguay, Venezuela.','bbox':{'south_latitude':-56.15,'west_longitude':-82,'north_latitude':13,'east_longitude':-34},'id':{'authority':'EPSG','code':4375}}"^^xsd:string ;
     ns1:asWKT "GEOGCRS['SIRGAS (3D)',DATUM['Sistema de Referencia Geocentrico para America del Sur 1995',ELLIPSOID['GRS 1980',6378137,298.257222101,LENGTHUNIT['metre',1]]],PRIMEM['Greenwich',0,ANGLEUNIT['degree',0.0174532925199433]],CS[ellipsoidal,3],AXIS['geodetic latitude (Lat)',north,ORDER[1],ANGLEUNIT['degree minute second hemisphere',0.0174532925199433]],AXIS['geodetic longitude (Long)',east,ORDER[2],ANGLEUNIT['degree minute second hemisphere',0.0174532925199433]],AXIS['ellipsoidal height (h)',up,ORDER[3],LENGTHUNIT['metre',1]],USAGE[SCOPE['Geodesy.'],AREA['South America - Argentina, Brazil, Bolivia, Chile, Colombia, Ecuador, French Guiana, Guyana, Paraguay, Peru, Suriname, Uruguay, Venezuela.'],BBOX[-56.15,-82,13,-34]],ID['EPSG',4375]]"^^ns1:wktLiteral ;
     ns1:coordinateSystem <http://www.opengis.net/def/crs/EPSG/0/4375_cs> ;
-    ns1:datum <http://www.opengis.net/ont/crs/datum/Sistema_de_Referencia_Geocentrico_para_America_del_Sur_1995> ;
+    ns1:datum <https://w3id.org/geosrs/datum/Sistema_de_Referencia_Geocentrico_para_America_del_Sur_1995> ;
     ns1:epsgCode "EPSG:4375"^^xsd:string ;
     ns1:isApplicableTo <http://www.opengis.net/ont/crs/isbody/Earth> ;
     ns1:isBound false ;

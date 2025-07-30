@@ -6,6 +6,6 @@
         <http://www.w3.org/ns/ldp#Resource>,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Property Partition: ellipsoid"@en ;
-    void:property <http://www.opengis.net/ont/crs/ellipsoid> ;
+    void:property <https://w3id.org/geosrs/ellipsoid> ;
     void:triples 502 .
 

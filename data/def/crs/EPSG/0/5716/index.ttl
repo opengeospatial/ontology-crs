@@ -1,13 +1,13 @@
-@prefix ns1: <http://www.opengis.net/ont/crs/> .
+@prefix ns1: <https://w3id.org/geosrs/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix void: <http://rdfs.org/ns/void#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://www.opengis.net/def/crs/EPSG/0/5716> a ns1:VerticalCRS,
-        owl:NamedIndividual,
+<http://www.opengis.net/def/crs/EPSG/0/5716> a owl:NamedIndividual,
         <http://www.w3.org/ns/ldp#Resource>,
         <http://www.w3.org/ns/prov-o/Entity>,
+        ns1:VerticalCRS,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Piraeus height"@en ;
     void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
@@ -16,7 +16,7 @@
     ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'VerticalCRS','name':'Piraeus height','datum':{'type':'VerticalReferenceFrame','name':'Piraeus Harbour 1986'},'coordinate_system':{'subtype':'vertical','axis':[{'name':'Gravity-related height','abbreviation':'H','direction':'up','unit':'metre'}]},'scope':'Geodesy, engineering survey.','area':'Greece - onshore.','bbox':{'south_latitude':34.88,'west_longitude':19.57,'north_latitude':41.75,'east_longitude':28.3},'id':{'authority':'EPSG','code':5716}}"^^xsd:string ;
     ns1:asWKT "VERTCRS['Piraeus height',VDATUM['Piraeus Harbour 1986'],CS[vertical,1],AXIS['gravity-related height (H)',up,LENGTHUNIT['metre',1]],USAGE[SCOPE['Geodesy, engineering survey.'],AREA['Greece - onshore.'],BBOX[34.88,19.57,41.75,28.3]],ID['EPSG',5716]]"^^ns1:wktLiteral ;
     ns1:coordinateSystem <http://www.opengis.net/def/crs/EPSG/0/5716_cs> ;
-    ns1:datum <http://www.opengis.net/ont/crs/datum/Piraeus_Harbour_1986> ;
+    ns1:datum <https://w3id.org/geosrs/datum/Piraeus_Harbour_1986> ;
     ns1:epsgCode "EPSG:5716"^^xsd:string ;
     ns1:isApplicableTo <http://www.opengis.net/ont/crs/isbody/Earth> ;
     ns1:isBound false ;

@@ -1,13 +1,13 @@
-@prefix ns1: <http://www.opengis.net/ont/crs/> .
+@prefix ns1: <https://w3id.org/geosrs/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix void: <http://rdfs.org/ns/void#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://www.opengis.net/def/crs/EPSG/0/9530> a ns1:CompoundCRS,
-        owl:NamedIndividual,
+<http://www.opengis.net/def/crs/EPSG/0/9530> a owl:NamedIndividual,
         <http://www.w3.org/ns/ldp#Resource>,
         <http://www.w3.org/ns/prov-o/Entity>,
+        ns1:CompoundCRS,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "RGFG95 + NGG1977 height"@en ;
     void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
@@ -15,7 +15,7 @@
     ns1:asProj4 "+proj=longlat +ellps=GRS80 +vunits=m +no_defs +type=crs"^^xsd:string ;
     ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'CompoundCRS','name':'RGFG95 + NGG1977 height','components':[{'type':'GeographicCRS','name':'RGFG95','datum':{'type':'GeodeticReferenceFrame','name':'Reseau Geodesique Francais Guyane 1995','ellipsoid':{'name':'GRS 1980','semi_major_axis':6378137,'inverse_flattening':298.257222101}},'coordinate_system':{'subtype':'ellipsoidal','axis':[{'name':'Geodetic latitude','abbreviation':'Lat','direction':'north','unit':'degree'},{'name':'Geodetic longitude','abbreviation':'Lon','direction':'east','unit':'degree'}]}},{'type':'VerticalCRS','name':'NGG1977 height','datum':{'type':'VerticalReferenceFrame','name':'Nivellement General Guyanais 1977'},'coordinate_system':{'subtype':'vertical','axis':[{'name':'Gravity-related height','abbreviation':'H','direction':'up','unit':'metre'}]}}],'scope':'Spatial referencing.','area':'French Guiana - onshore.','bbox':{'south_latitude':2.11,'west_longitude':-54.61,'north_latitude':5.81,'east_longitude':-51.61},'id':{'authority':'EPSG','code':9530}}"^^xsd:string ;
     ns1:asWKT "COMPOUNDCRS['RGFG95 + NGG1977 height',GEOGCRS['RGFG95',DATUM['Reseau Geodesique Francais Guyane 1995',ELLIPSOID['GRS 1980',6378137,298.257222101,LENGTHUNIT['metre',1]]],PRIMEM['Greenwich',0,ANGLEUNIT['degree',0.0174532925199433]],CS[ellipsoidal,2],AXIS['geodetic latitude (Lat)',north,ORDER[1],ANGLEUNIT['degree',0.0174532925199433]],AXIS['geodetic longitude (Lon)',east,ORDER[2],ANGLEUNIT['degree',0.0174532925199433]]],VERTCRS['NGG1977 height',VDATUM['Nivellement General Guyanais 1977'],CS[vertical,1],AXIS['gravity-related height (H)',up,LENGTHUNIT['metre',1]]],USAGE[SCOPE['Spatial referencing.'],AREA['French Guiana - onshore.'],BBOX[2.11,-54.61,5.81,-51.61]],ID['EPSG',9530]]"^^ns1:wktLiteral ;
-    ns1:datum <http://www.opengis.net/ont/crs/datum/Reseau_Geodesique_Francais_Guyane_1995> ;
+    ns1:datum <https://w3id.org/geosrs/datum/Reseau_Geodesique_Francais_Guyane_1995> ;
     ns1:epsgCode "EPSG:9530"^^xsd:string ;
     ns1:includesSRS <http://www.opengis.net/def/crs/EPSG/0/4624>,
         <http://www.opengis.net/def/crs/EPSG/0/5755> ;

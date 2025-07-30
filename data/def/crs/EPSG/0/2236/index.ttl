@@ -1,13 +1,13 @@
-@prefix ns1: <http://www.opengis.net/ont/crs/> .
+@prefix ns1: <https://w3id.org/geosrs/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix void: <http://rdfs.org/ns/void#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://www.opengis.net/def/crs/EPSG/0/2236> a ns1:ProjectedCRS,
-        owl:NamedIndividual,
+<http://www.opengis.net/def/crs/EPSG/0/2236> a owl:NamedIndividual,
         <http://www.w3.org/ns/ldp#Resource>,
         <http://www.w3.org/ns/prov-o/Entity>,
+        ns1:ProjectedCRS,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "NAD83 / Florida East (ftUS)"@en ;
     void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
@@ -15,9 +15,9 @@
     ns1:asProj4 "+proj=tmerc +lat_0=24.3333333333333 +lon_0=-81 +k=0.999941177 +x_0=200000.0001016 +y_0=0 +datum=NAD83 +units=us-ft +no_defs +type=crs"^^xsd:string ;
     ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'ProjectedCRS','name':'NAD83 / Florida East (ftUS)','base_crs':{'name':'NAD83','datum':{'type':'GeodeticReferenceFrame','name':'North American Datum 1983','ellipsoid':{'name':'GRS 1980','semi_major_axis':6378137,'inverse_flattening':298.257222101}},'coordinate_system':{'subtype':'ellipsoidal','axis':[{'name':'Geodetic latitude','abbreviation':'Lat','direction':'north','unit':'degree'},{'name':'Geodetic longitude','abbreviation':'Lon','direction':'east','unit':'degree'}]},'id':{'authority':'EPSG','code':4269}},'conversion':{'name':'SPCS83 Florida East zone (US survey foot)','method':{'name':'Transverse Mercator','id':{'authority':'EPSG','code':9807}},'parameters':[{'name':'Latitude of natural origin','value':24.3333333333333,'unit':'degree','id':{'authority':'EPSG','code':8801}},{'name':'Longitude of natural origin','value':-81,'unit':'degree','id':{'authority':'EPSG','code':8802}},{'name':'Scale factor at natural origin','value':0.999941177,'unit':'unity','id':{'authority':'EPSG','code':8805}},{'name':'False easting','value':656166.667,'unit':{'type':'LinearUnit','name':'US survey foot','conversion_factor':0.304800609601219},'id':{'authority':'EPSG','code':8806}},{'name':'False northing','value':0,'unit':{'type':'LinearUnit','name':'US survey foot','conversion_factor':0.304800609601219},'id':{'authority':'EPSG','code':8807}}]},'coordinate_system':{'subtype':'Cartesian','axis':[{'name':'Easting','abbreviation':'X','direction':'east','unit':{'type':'LinearUnit','name':'US survey foot','conversion_factor':0.304800609601219}},{'name':'Northing','abbreviation':'Y','direction':'north','unit':{'type':'LinearUnit','name':'US survey foot','conversion_factor':0.304800609601219}}]},'scope':'Engineering survey, topographic mapping.','area':'United States (USA) - Florida - counties of Brevard; Broward; Clay; Collier; Dade; Duval; Flagler; Glades; Hendry; Highlands; Indian River; Lake; Martin; Monroe; Nassau; Okeechobee; Orange; Osceola; Palm Beach; Putnam; Seminole; St Johns; St Lucie; Volusia.','bbox':{'south_latitude':24.41,'west_longitude':-82.33,'north_latitude':30.83,'east_longitude':-79.97},'id':{'authority':'EPSG','code':2236}}"^^xsd:string ;
     ns1:asWKT "PROJCRS['NAD83 / Florida East (ftUS)',BASEGEOGCRS['NAD83',DATUM['North American Datum 1983',ELLIPSOID['GRS 1980',6378137,298.257222101,LENGTHUNIT['metre',1]]],PRIMEM['Greenwich',0,ANGLEUNIT['degree',0.0174532925199433]],ID['EPSG',4269]],CONVERSION['SPCS83 Florida East zone (US survey foot)',METHOD['Transverse Mercator',ID['EPSG',9807]],PARAMETER['Latitude of natural origin',24.3333333333333,ANGLEUNIT['degree',0.0174532925199433],ID['EPSG',8801]],PARAMETER['Longitude of natural origin',-81,ANGLEUNIT['degree',0.0174532925199433],ID['EPSG',8802]],PARAMETER['Scale factor at natural origin',0.999941177,SCALEUNIT['unity',1],ID['EPSG',8805]],PARAMETER['False easting',656166.667,LENGTHUNIT['US survey foot',0.304800609601219],ID['EPSG',8806]],PARAMETER['False northing',0,LENGTHUNIT['US survey foot',0.304800609601219],ID['EPSG',8807]]],CS[Cartesian,2],AXIS['easting (X)',east,ORDER[1],LENGTHUNIT['US survey foot',0.304800609601219]],AXIS['northing (Y)',north,ORDER[2],LENGTHUNIT['US survey foot',0.304800609601219]],USAGE[SCOPE['Engineering survey, topographic mapping.'],AREA['United States (USA) - Florida - counties of Brevard; Broward; Clay; Collier; Dade; Duval; Flagler; Glades; Hendry; Highlands; Indian River; Lake; Martin; Monroe; Nassau; Okeechobee; Orange; Osceola; Palm Beach; Putnam; Seminole; St Johns; St Lucie; Volusia.'],BBOX[24.41,-82.33,30.83,-79.97]],ID['EPSG',2236]]"^^ns1:wktLiteral ;
-    ns1:coordinateOperation <http://www.opengis.net/ont/crs/operation/SPCS83_Florida_East_zone__US_survey_foot_> ;
+    ns1:coordinateOperation <https://w3id.org/geosrs/operation/SPCS83_Florida_East_zone__US_survey_foot_> ;
     ns1:coordinateSystem <http://www.opengis.net/def/crs/EPSG/0/2236_cs> ;
-    ns1:datum <http://www.opengis.net/ont/crs/datum/North_American_Datum_1983> ;
+    ns1:datum <https://w3id.org/geosrs/datum/North_American_Datum_1983> ;
     ns1:epsgCode "EPSG:2236"^^xsd:string ;
     ns1:isApplicableTo <http://www.opengis.net/ont/crs/isbody/Earth> ;
     ns1:isBound false ;

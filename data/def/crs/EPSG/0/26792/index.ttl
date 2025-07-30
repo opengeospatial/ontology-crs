@@ -1,13 +1,13 @@
-@prefix ns1: <http://www.opengis.net/ont/crs/> .
+@prefix ns1: <https://w3id.org/geosrs/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix void: <http://rdfs.org/ns/void#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://www.opengis.net/def/crs/EPSG/0/26792> a ns1:ProjectedCRS,
-        owl:NamedIndividual,
+<http://www.opengis.net/def/crs/EPSG/0/26792> a owl:NamedIndividual,
         <http://www.w3.org/ns/ldp#Resource>,
         <http://www.w3.org/ns/prov-o/Entity>,
+        ns1:ProjectedCRS,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "NAD27 / Minnesota Central"@en ;
     void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
@@ -15,9 +15,9 @@
     ns1:asProj4 "+proj=lcc +lat_0=45 +lon_0=-94.25 +lat_1=45.6166666666667 +lat_2=47.05 +x_0=609601.219202438 +y_0=0 +datum=NAD27 +units=us-ft +no_defs +type=crs"^^xsd:string ;
     ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'ProjectedCRS','name':'NAD27 / Minnesota Central','base_crs':{'name':'NAD27','datum':{'type':'GeodeticReferenceFrame','name':'North American Datum 1927','ellipsoid':{'name':'Clarke 1866','semi_major_axis':6378206.4,'semi_minor_axis':6356583.8}},'coordinate_system':{'subtype':'ellipsoidal','axis':[{'name':'Geodetic latitude','abbreviation':'Lat','direction':'north','unit':'degree'},{'name':'Geodetic longitude','abbreviation':'Lon','direction':'east','unit':'degree'}]},'id':{'authority':'EPSG','code':4267}},'conversion':{'name':'Minnesota CS27 Central zone','method':{'name':'Lambert Conic Conformal (2SP)','id':{'authority':'EPSG','code':9802}},'parameters':[{'name':'Latitude of false origin','value':45,'unit':'degree','id':{'authority':'EPSG','code':8821}},{'name':'Longitude of false origin','value':-94.25,'unit':'degree','id':{'authority':'EPSG','code':8822}},{'name':'Latitude of 1st standard parallel','value':45.6166666666667,'unit':'degree','id':{'authority':'EPSG','code':8823}},{'name':'Latitude of 2nd standard parallel','value':47.05,'unit':'degree','id':{'authority':'EPSG','code':8824}},{'name':'Easting at false origin','value':2000000,'unit':{'type':'LinearUnit','name':'US survey foot','conversion_factor':0.304800609601219},'id':{'authority':'EPSG','code':8826}},{'name':'Northing at false origin','value':0,'unit':{'type':'LinearUnit','name':'US survey foot','conversion_factor':0.304800609601219},'id':{'authority':'EPSG','code':8827}}]},'coordinate_system':{'subtype':'Cartesian','axis':[{'name':'Easting','abbreviation':'X','direction':'east','unit':{'type':'LinearUnit','name':'US survey foot','conversion_factor':0.304800609601219}},{'name':'Northing','abbreviation':'Y','direction':'north','unit':{'type':'LinearUnit','name':'US survey foot','conversion_factor':0.304800609601219}}]},'scope':'Engineering survey, topographic mapping.','area':'United States (USA) - Minnesota - counties of Aitkin; Becker; Benton; Carlton; Cass; Chisago; Clay; Crow Wing; Douglas; Grant; Hubbard; Isanti; Kanabec; Mille Lacs; Morrison; Otter Tail; Pine; Pope; Stearns; Stevens; Todd; Traverse; Wadena; Wilkin.','bbox':{'south_latitude':45.28,'west_longitude':-96.86,'north_latitude':47.48,'east_longitude':-92.29},'id':{'authority':'EPSG','code':26792}}"^^xsd:string ;
     ns1:asWKT "PROJCRS['NAD27 / Minnesota Central',BASEGEOGCRS['NAD27',DATUM['North American Datum 1927',ELLIPSOID['Clarke 1866',6378206.4,294.978698213898,LENGTHUNIT['metre',1]]],PRIMEM['Greenwich',0,ANGLEUNIT['degree',0.0174532925199433]],ID['EPSG',4267]],CONVERSION['Minnesota CS27 Central zone',METHOD['Lambert Conic Conformal (2SP)',ID['EPSG',9802]],PARAMETER['Latitude of false origin',45,ANGLEUNIT['degree',0.0174532925199433],ID['EPSG',8821]],PARAMETER['Longitude of false origin',-94.25,ANGLEUNIT['degree',0.0174532925199433],ID['EPSG',8822]],PARAMETER['Latitude of 1st standard parallel',45.6166666666667,ANGLEUNIT['degree',0.0174532925199433],ID['EPSG',8823]],PARAMETER['Latitude of 2nd standard parallel',47.05,ANGLEUNIT['degree',0.0174532925199433],ID['EPSG',8824]],PARAMETER['Easting at false origin',2000000,LENGTHUNIT['US survey foot',0.304800609601219],ID['EPSG',8826]],PARAMETER['Northing at false origin',0,LENGTHUNIT['US survey foot',0.304800609601219],ID['EPSG',8827]]],CS[Cartesian,2],AXIS['easting (X)',east,ORDER[1],LENGTHUNIT['US survey foot',0.304800609601219]],AXIS['northing (Y)',north,ORDER[2],LENGTHUNIT['US survey foot',0.304800609601219]],USAGE[SCOPE['Engineering survey, topographic mapping.'],AREA['United States (USA) - Minnesota - counties of Aitkin; Becker; Benton; Carlton; Cass; Chisago; Clay; Crow Wing; Douglas; Grant; Hubbard; Isanti; Kanabec; Mille Lacs; Morrison; Otter Tail; Pine; Pope; Stearns; Stevens; Todd; Traverse; Wadena; Wilkin.'],BBOX[45.28,-96.86,47.48,-92.29]],ID['EPSG',26792]]"^^ns1:wktLiteral ;
-    ns1:coordinateOperation <http://www.opengis.net/ont/crs/operation/Minnesota_CS27_Central_zone> ;
+    ns1:coordinateOperation <https://w3id.org/geosrs/operation/Minnesota_CS27_Central_zone> ;
     ns1:coordinateSystem <http://www.opengis.net/def/crs/EPSG/0/26792_cs> ;
-    ns1:datum <http://www.opengis.net/ont/crs/datum/North_American_Datum_1927> ;
+    ns1:datum <https://w3id.org/geosrs/datum/North_American_Datum_1927> ;
     ns1:epsgCode "EPSG:26792"^^xsd:string ;
     ns1:isApplicableTo <http://www.opengis.net/ont/crs/isbody/Earth> ;
     ns1:isBound false ;

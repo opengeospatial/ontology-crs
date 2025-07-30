@@ -1,9 +1,9 @@
-@prefix ns1: <http://www.opengis.net/ont/crs/> .
+@prefix ns1: <https://w3id.org/geosrs/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix void: <http://rdfs.org/ns/void#> .
 
-<http://www.opengis.net/def/crs/EPSG/0/5701_cs> a ns1:VerticalCoordinateSystem,
-        <http://www.w3.org/ns/ldp#Resource>,
+<http://www.opengis.net/def/crs/EPSG/0/5701_cs> a <http://www.w3.org/ns/ldp#Resource>,
+        ns1:VerticalCoordinateSystem,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "EPSG:5701 CS: vertical" ;
     void:inDataset <http://www.opengis.net/geoepsg_dataset> ;

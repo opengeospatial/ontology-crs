@@ -1,13 +1,13 @@
-@prefix ns1: <http://www.opengis.net/ont/crs/> .
+@prefix ns1: <https://w3id.org/geosrs/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix void: <http://rdfs.org/ns/void#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://www.opengis.net/def/crs/EPSG/0/2378> a ns1:ProjectedCRS,
-        owl:NamedIndividual,
+<http://www.opengis.net/def/crs/EPSG/0/2378> a owl:NamedIndividual,
         <http://www.w3.org/ns/ldp#Resource>,
         <http://www.w3.org/ns/prov-o/Entity>,
+        ns1:ProjectedCRS,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Xian 1980 / 3-degree Gauss-Kruger CM 99E"@en ;
     void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
@@ -15,9 +15,9 @@
     ns1:asProj4 "+proj=tmerc +lat_0=0 +lon_0=99 +k=1 +x_0=500000 +y_0=0 +ellps=IAU76 +units=m +no_defs +type=crs"^^xsd:string ;
     ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'ProjectedCRS','name':'Xian 1980 / 3-degree Gauss-Kruger CM 99E','base_crs':{'name':'Xian 1980','datum':{'type':'GeodeticReferenceFrame','name':'Xian 1980','ellipsoid':{'name':'IAG 1975','semi_major_axis':6378140,'inverse_flattening':298.257}},'coordinate_system':{'subtype':'ellipsoidal','axis':[{'name':'Geodetic latitude','abbreviation':'Lat','direction':'north','unit':'degree'},{'name':'Geodetic longitude','abbreviation':'Lon','direction':'east','unit':'degree'}]},'id':{'authority':'EPSG','code':4610}},'conversion':{'name':'Gauss-Kruger CM 99E','method':{'name':'Transverse Mercator','id':{'authority':'EPSG','code':9807}},'parameters':[{'name':'Latitude of natural origin','value':0,'unit':'degree','id':{'authority':'EPSG','code':8801}},{'name':'Longitude of natural origin','value':99,'unit':'degree','id':{'authority':'EPSG','code':8802}},{'name':'Scale factor at natural origin','value':1,'unit':'unity','id':{'authority':'EPSG','code':8805}},{'name':'False easting','value':500000,'unit':'metre','id':{'authority':'EPSG','code':8806}},{'name':'False northing','value':0,'unit':'metre','id':{'authority':'EPSG','code':8807}}]},'coordinate_system':{'subtype':'Cartesian','axis':[{'name':'Northing','abbreviation':'X','direction':'north','unit':'metre'},{'name':'Easting','abbreviation':'Y','direction':'east','unit':'metre'}]},'scope':'Cadastre, engineering survey, topographic mapping (large scale).','area':'China - between 97°30'E and 100°30'E.','bbox':{'south_latitude':21.43,'west_longitude':97.5,'north_latitude':42.76,'east_longitude':100.5},'id':{'authority':'EPSG','code':2378}}"^^xsd:string ;
     ns1:asWKT "PROJCRS['Xian 1980 / 3-degree Gauss-Kruger CM 99E',BASEGEOGCRS['Xian 1980',DATUM['Xian 1980',ELLIPSOID['IAG 1975',6378140,298.257,LENGTHUNIT['metre',1]]],PRIMEM['Greenwich',0,ANGLEUNIT['degree',0.0174532925199433]],ID['EPSG',4610]],CONVERSION['Gauss-Kruger CM 99E',METHOD['Transverse Mercator',ID['EPSG',9807]],PARAMETER['Latitude of natural origin',0,ANGLEUNIT['degree',0.0174532925199433],ID['EPSG',8801]],PARAMETER['Longitude of natural origin',99,ANGLEUNIT['degree',0.0174532925199433],ID['EPSG',8802]],PARAMETER['Scale factor at natural origin',1,SCALEUNIT['unity',1],ID['EPSG',8805]],PARAMETER['False easting',500000,LENGTHUNIT['metre',1],ID['EPSG',8806]],PARAMETER['False northing',0,LENGTHUNIT['metre',1],ID['EPSG',8807]]],CS[Cartesian,2],AXIS['northing (X)',north,ORDER[1],LENGTHUNIT['metre',1]],AXIS['easting (Y)',east,ORDER[2],LENGTHUNIT['metre',1]],USAGE[SCOPE['Cadastre, engineering survey, topographic mapping (large scale).'],AREA['China - between 97°30'E and 100°30'E.'],BBOX[21.43,97.5,42.76,100.5]],ID['EPSG',2378]]"^^ns1:wktLiteral ;
-    ns1:coordinateOperation <http://www.opengis.net/ont/crs/operation/Gauss-Kruger_CM_99E> ;
+    ns1:coordinateOperation <https://w3id.org/geosrs/operation/Gauss-Kruger_CM_99E> ;
     ns1:coordinateSystem <http://www.opengis.net/def/crs/EPSG/0/2378_cs> ;
-    ns1:datum <http://www.opengis.net/ont/crs/datum/Xian_1980> ;
+    ns1:datum <https://w3id.org/geosrs/datum/Xian_1980> ;
     ns1:epsgCode "EPSG:2378"^^xsd:string ;
     ns1:isApplicableTo <http://www.opengis.net/ont/crs/isbody/Earth> ;
     ns1:isBound false ;

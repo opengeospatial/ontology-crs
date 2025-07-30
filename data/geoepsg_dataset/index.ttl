@@ -35,18 +35,18 @@
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "geoepsg_dataset"@en ;
     ns1:averageLiteralLength 0 ;
-    ns1:averageObjectIRILength 122 ;
-    ns1:averagePropertyIRILength 46 ;
-    ns1:averageSubjectIRILength 52 ;
+    ns1:averageObjectIRILength 124 ;
+    ns1:averagePropertyIRILength 40 ;
+    ns1:averageSubjectIRILength 50 ;
     ns1:datatypes 0 ;
     ns1:distinctBlankNodes 0 ;
-    ns1:distinctIRIReferences 106581 ;
+    ns1:distinctIRIReferences 106512 ;
     ns1:distinctLiterals 0 ;
-    ns1:distinctRDFNodes 106581 ;
+    ns1:distinctRDFNodes 106512 ;
     ns1:languages 0 ;
     ns1:propertyClasses 0 ;
     dc:language <http://www.lexvo.org/page/iso639-1/en> ;
-    dcterms:modified "2025-07-30T01:54:28"^^xsd:dateTime ;
+    dcterms:modified "2025-07-30T02:10:20"^^xsd:dateTime ;
     dcterms:subject <http://dbpedia.org/resource/Location>,
         <http://dbpedia.org/resource/OGC_GeoSPARQL>,
         <http://dbpedia.org/resource/Time>,
@@ -98,9 +98,9 @@
         <http://www.opengis.net/geoepsg_dataset_VerticalReferenceFrame> ;
     void:classes 41 ;
     void:dataDump <https://opengeospatial.github.io/ontology-crs/data//index.ttl> ;
-    void:distinctObjects 81362 ;
-    void:distinctSubjects 25144 ;
-    void:entities 25144 ;
+    void:distinctObjects 81315 ;
+    void:distinctSubjects 25122 ;
+    void:entities 21988 ;
     void:feature <http://www.w3.org/ns/formats/RDFa>,
         <http://www.w3.org/ns/formats/Turtle> ;
     void:properties 75 ;
@@ -179,7 +179,7 @@
         <http://www.opengis.net/geoepsg_dataset_unit_conversion_factor>,
         <http://www.opengis.net/geoepsg_dataset_usage>,
         <http://www.opengis.net/geoepsg_dataset_utm_zone> ;
-    void:triples 307468 ;
+    void:triples 301141 ;
     void:uriSpace "http://www.opengis.net/"^^xsd:string ;
     void:vocabulary ns1:,
         dcam:,

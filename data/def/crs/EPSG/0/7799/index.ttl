@@ -1,13 +1,13 @@
-@prefix ns1: <http://www.opengis.net/ont/crs/> .
+@prefix ns1: <https://w3id.org/geosrs/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix void: <http://rdfs.org/ns/void#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://www.opengis.net/def/crs/EPSG/0/7799> a ns1:ProjectedCRS,
-        owl:NamedIndividual,
+<http://www.opengis.net/def/crs/EPSG/0/7799> a owl:NamedIndividual,
         <http://www.w3.org/ns/ldp#Resource>,
         <http://www.w3.org/ns/prov-o/Entity>,
+        ns1:ProjectedCRS,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "BGS2005 / UTM zone 34N (N-E)"@en ;
     void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
@@ -15,9 +15,9 @@
     ns1:asProj4 "+proj=utm +zone=34 +ellps=GRS80 +units=m +no_defs +type=crs"^^xsd:string ;
     ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'ProjectedCRS','name':'BGS2005 / UTM zone 34N (N-E)','base_crs':{'name':'BGS2005','datum':{'type':'GeodeticReferenceFrame','name':'Bulgaria Geodetic System 2005','ellipsoid':{'name':'GRS 1980','semi_major_axis':6378137,'inverse_flattening':298.257222101}},'coordinate_system':{'subtype':'ellipsoidal','axis':[{'name':'Geodetic latitude','abbreviation':'Lat','direction':'north','unit':'degree'},{'name':'Geodetic longitude','abbreviation':'Lon','direction':'east','unit':'degree'}]},'id':{'authority':'EPSG','code':7798}},'conversion':{'name':'UTM zone 34N','method':{'name':'Transverse Mercator','id':{'authority':'EPSG','code':9807}},'parameters':[{'name':'Latitude of natural origin','value':0,'unit':'degree','id':{'authority':'EPSG','code':8801}},{'name':'Longitude of natural origin','value':21,'unit':'degree','id':{'authority':'EPSG','code':8802}},{'name':'Scale factor at natural origin','value':0.9996,'unit':'unity','id':{'authority':'EPSG','code':8805}},{'name':'False easting','value':500000,'unit':'metre','id':{'authority':'EPSG','code':8806}},{'name':'False northing','value':0,'unit':'metre','id':{'authority':'EPSG','code':8807}}]},'coordinate_system':{'subtype':'Cartesian','axis':[{'name':'Northing','abbreviation':'x','direction':'north','unit':'metre'},{'name':'Easting','abbreviation':'y','direction':'east','unit':'metre'}]},'scope':'Topographic mapping (medium and small scale).','area':'Bulgaria - west of 24°E.','bbox':{'south_latitude':41.32,'west_longitude':22.36,'north_latitude':44.23,'east_longitude':24},'id':{'authority':'EPSG','code':7799}}"^^xsd:string ;
     ns1:asWKT "PROJCRS['BGS2005 / UTM zone 34N (N-E)',BASEGEOGCRS['BGS2005',DATUM['Bulgaria Geodetic System 2005',ELLIPSOID['GRS 1980',6378137,298.257222101,LENGTHUNIT['metre',1]]],PRIMEM['Greenwich',0,ANGLEUNIT['degree',0.0174532925199433]],ID['EPSG',7798]],CONVERSION['UTM zone 34N',METHOD['Transverse Mercator',ID['EPSG',9807]],PARAMETER['Latitude of natural origin',0,ANGLEUNIT['degree',0.0174532925199433],ID['EPSG',8801]],PARAMETER['Longitude of natural origin',21,ANGLEUNIT['degree',0.0174532925199433],ID['EPSG',8802]],PARAMETER['Scale factor at natural origin',0.9996,SCALEUNIT['unity',1],ID['EPSG',8805]],PARAMETER['False easting',500000,LENGTHUNIT['metre',1],ID['EPSG',8806]],PARAMETER['False northing',0,LENGTHUNIT['metre',1],ID['EPSG',8807]]],CS[Cartesian,2],AXIS['northing (x)',north,ORDER[1],LENGTHUNIT['metre',1]],AXIS['easting (y)',east,ORDER[2],LENGTHUNIT['metre',1]],USAGE[SCOPE['Topographic mapping (medium and small scale).'],AREA['Bulgaria - west of 24°E.'],BBOX[41.32,22.36,44.23,24]],ID['EPSG',7799]]"^^ns1:wktLiteral ;
-    ns1:coordinateOperation <http://www.opengis.net/ont/crs/operation/UTM_zone_34N> ;
+    ns1:coordinateOperation <https://w3id.org/geosrs/operation/UTM_zone_34N> ;
     ns1:coordinateSystem <http://www.opengis.net/def/crs/EPSG/0/7799_cs> ;
-    ns1:datum <http://www.opengis.net/ont/crs/datum/Bulgaria_Geodetic_System_2005> ;
+    ns1:datum <https://w3id.org/geosrs/datum/Bulgaria_Geodetic_System_2005> ;
     ns1:epsgCode "EPSG:7799"^^xsd:string ;
     ns1:isApplicableTo <http://www.opengis.net/ont/crs/isbody/Earth> ;
     ns1:isBound false ;

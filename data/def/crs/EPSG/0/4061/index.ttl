@@ -1,13 +1,13 @@
-@prefix ns1: <http://www.opengis.net/ont/crs/> .
+@prefix ns1: <https://w3id.org/geosrs/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix void: <http://rdfs.org/ns/void#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://www.opengis.net/def/crs/EPSG/0/4061> a ns1:ProjectedCRS,
-        owl:NamedIndividual,
+<http://www.opengis.net/def/crs/EPSG/0/4061> a owl:NamedIndividual,
         <http://www.w3.org/ns/ldp#Resource>,
         <http://www.w3.org/ns/prov-o/Entity>,
+        ns1:ProjectedCRS,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "RGRDC 2005 / UTM zone 33S"@en ;
     void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
@@ -15,9 +15,9 @@
     ns1:asProj4 "+proj=utm +zone=33 +south +ellps=GRS80 +units=m +no_defs +type=crs"^^xsd:string ;
     ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'ProjectedCRS','name':'RGRDC 2005 / UTM zone 33S','base_crs':{'name':'RGRDC 2005','datum':{'type':'GeodeticReferenceFrame','name':'Reseau Geodesique de la RDC 2005','ellipsoid':{'name':'GRS 1980','semi_major_axis':6378137,'inverse_flattening':298.257222101}},'coordinate_system':{'subtype':'ellipsoidal','axis':[{'name':'Geodetic latitude','abbreviation':'Lat','direction':'north','unit':'degree'},{'name':'Geodetic longitude','abbreviation':'Lon','direction':'east','unit':'degree'}]},'id':{'authority':'EPSG','code':4046}},'conversion':{'name':'UTM zone 33S','method':{'name':'Transverse Mercator','id':{'authority':'EPSG','code':9807}},'parameters':[{'name':'Latitude of natural origin','value':0,'unit':'degree','id':{'authority':'EPSG','code':8801}},{'name':'Longitude of natural origin','value':15,'unit':'degree','id':{'authority':'EPSG','code':8802}},{'name':'Scale factor at natural origin','value':0.9996,'unit':'unity','id':{'authority':'EPSG','code':8805}},{'name':'False easting','value':500000,'unit':'metre','id':{'authority':'EPSG','code':8806}},{'name':'False northing','value':10000000,'unit':'metre','id':{'authority':'EPSG','code':8807}}]},'coordinate_system':{'subtype':'Cartesian','axis':[{'name':'Easting','abbreviation':'X','direction':'east','unit':'metre'},{'name':'Northing','abbreviation':'Y','direction':'north','unit':'metre'}]},'scope':'Topographic mapping.','area':'The Democratic Republic of the Congo (Zaire) - onshore and offshore south of a line through Bandundu, Seke and Pweto and between 12°E and 18°E.','bbox':{'south_latitude':-8.11,'west_longitude':12,'north_latitude':-3.41,'east_longitude':18.01},'id':{'authority':'EPSG','code':4061}}"^^xsd:string ;
     ns1:asWKT "PROJCRS['RGRDC 2005 / UTM zone 33S',BASEGEOGCRS['RGRDC 2005',DATUM['Reseau Geodesique de la RDC 2005',ELLIPSOID['GRS 1980',6378137,298.257222101,LENGTHUNIT['metre',1]]],PRIMEM['Greenwich',0,ANGLEUNIT['degree',0.0174532925199433]],ID['EPSG',4046]],CONVERSION['UTM zone 33S',METHOD['Transverse Mercator',ID['EPSG',9807]],PARAMETER['Latitude of natural origin',0,ANGLEUNIT['degree',0.0174532925199433],ID['EPSG',8801]],PARAMETER['Longitude of natural origin',15,ANGLEUNIT['degree',0.0174532925199433],ID['EPSG',8802]],PARAMETER['Scale factor at natural origin',0.9996,SCALEUNIT['unity',1],ID['EPSG',8805]],PARAMETER['False easting',500000,LENGTHUNIT['metre',1],ID['EPSG',8806]],PARAMETER['False northing',10000000,LENGTHUNIT['metre',1],ID['EPSG',8807]]],CS[Cartesian,2],AXIS['easting (X)',east,ORDER[1],LENGTHUNIT['metre',1]],AXIS['northing (Y)',north,ORDER[2],LENGTHUNIT['metre',1]],USAGE[SCOPE['Topographic mapping.'],AREA['The Democratic Republic of the Congo (Zaire) - onshore and offshore south of a line through Bandundu, Seke and Pweto and between 12°E and 18°E.'],BBOX[-8.11,12,-3.41,18.01]],ID['EPSG',4061]]"^^ns1:wktLiteral ;
-    ns1:coordinateOperation <http://www.opengis.net/ont/crs/operation/UTM_zone_33S> ;
+    ns1:coordinateOperation <https://w3id.org/geosrs/operation/UTM_zone_33S> ;
     ns1:coordinateSystem <http://www.opengis.net/def/crs/EPSG/0/4061_cs> ;
-    ns1:datum <http://www.opengis.net/ont/crs/datum/Reseau_Geodesique_de_la_RDC_2005> ;
+    ns1:datum <https://w3id.org/geosrs/datum/Reseau_Geodesique_de_la_RDC_2005> ;
     ns1:epsgCode "EPSG:4061"^^xsd:string ;
     ns1:isApplicableTo <http://www.opengis.net/ont/crs/isbody/Earth> ;
     ns1:isBound false ;

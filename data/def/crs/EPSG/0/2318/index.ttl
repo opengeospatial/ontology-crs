@@ -1,13 +1,13 @@
-@prefix ns1: <http://www.opengis.net/ont/crs/> .
+@prefix ns1: <https://w3id.org/geosrs/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix void: <http://rdfs.org/ns/void#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://www.opengis.net/def/crs/EPSG/0/2318> a ns1:ProjectedCRS,
-        owl:NamedIndividual,
+<http://www.opengis.net/def/crs/EPSG/0/2318> a owl:NamedIndividual,
         <http://www.w3.org/ns/ldp#Resource>,
         <http://www.w3.org/ns/prov-o/Entity>,
+        ns1:ProjectedCRS,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Ain el Abd / Aramco Lambert"@en ;
     void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
@@ -15,9 +15,9 @@
     ns1:asProj4 "+proj=lcc +lat_0=25.08951 +lon_0=48 +lat_1=17 +lat_2=33 +x_0=0 +y_0=0 +ellps=intl +units=m +no_defs +type=crs"^^xsd:string ;
     ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'ProjectedCRS','name':'Ain el Abd / Aramco Lambert','base_crs':{'name':'Ain el Abd','datum':{'type':'GeodeticReferenceFrame','name':'Ain el Abd 1970','ellipsoid':{'name':'International 1924','semi_major_axis':6378388,'inverse_flattening':297}},'coordinate_system':{'subtype':'ellipsoidal','axis':[{'name':'Geodetic latitude','abbreviation':'Lat','direction':'north','unit':'degree'},{'name':'Geodetic longitude','abbreviation':'Lon','direction':'east','unit':'degree'}]},'id':{'authority':'EPSG','code':4204}},'conversion':{'name':'Aramco Lambert','method':{'name':'Lambert Conic Conformal (2SP)','id':{'authority':'EPSG','code':9802}},'parameters':[{'name':'Latitude of false origin','value':25.08951,'unit':'degree','id':{'authority':'EPSG','code':8821}},{'name':'Longitude of false origin','value':48,'unit':'degree','id':{'authority':'EPSG','code':8822}},{'name':'Latitude of 1st standard parallel','value':17,'unit':'degree','id':{'authority':'EPSG','code':8823}},{'name':'Latitude of 2nd standard parallel','value':33,'unit':'degree','id':{'authority':'EPSG','code':8824}},{'name':'Easting at false origin','value':0,'unit':'metre','id':{'authority':'EPSG','code':8826}},{'name':'Northing at false origin','value':0,'unit':'metre','id':{'authority':'EPSG','code':8827}}]},'coordinate_system':{'subtype':'Cartesian','axis':[{'name':'Easting','abbreviation':'E','direction':'east','unit':'metre'},{'name':'Northing','abbreviation':'N','direction':'north','unit':'metre'}]},'scope':'Oil and gas exploration and production.','area':'Saudi Arabia - onshore.','bbox':{'south_latitude':16.37,'west_longitude':34.51,'north_latitude':32.16,'east_longitude':55.67},'id':{'authority':'EPSG','code':2318}}"^^xsd:string ;
     ns1:asWKT "PROJCRS['Ain el Abd / Aramco Lambert',BASEGEOGCRS['Ain el Abd',DATUM['Ain el Abd 1970',ELLIPSOID['International 1924',6378388,297,LENGTHUNIT['metre',1]]],PRIMEM['Greenwich',0,ANGLEUNIT['degree',0.0174532925199433]],ID['EPSG',4204]],CONVERSION['Aramco Lambert',METHOD['Lambert Conic Conformal (2SP)',ID['EPSG',9802]],PARAMETER['Latitude of false origin',25.08951,ANGLEUNIT['degree',0.0174532925199433],ID['EPSG',8821]],PARAMETER['Longitude of false origin',48,ANGLEUNIT['degree',0.0174532925199433],ID['EPSG',8822]],PARAMETER['Latitude of 1st standard parallel',17,ANGLEUNIT['degree',0.0174532925199433],ID['EPSG',8823]],PARAMETER['Latitude of 2nd standard parallel',33,ANGLEUNIT['degree',0.0174532925199433],ID['EPSG',8824]],PARAMETER['Easting at false origin',0,LENGTHUNIT['metre',1],ID['EPSG',8826]],PARAMETER['Northing at false origin',0,LENGTHUNIT['metre',1],ID['EPSG',8827]]],CS[Cartesian,2],AXIS['(E)',east,ORDER[1],LENGTHUNIT['metre',1]],AXIS['(N)',north,ORDER[2],LENGTHUNIT['metre',1]],USAGE[SCOPE['Oil and gas exploration and production.'],AREA['Saudi Arabia - onshore.'],BBOX[16.37,34.51,32.16,55.67]],ID['EPSG',2318]]"^^ns1:wktLiteral ;
-    ns1:coordinateOperation <http://www.opengis.net/ont/crs/operation/Aramco_Lambert> ;
+    ns1:coordinateOperation <https://w3id.org/geosrs/operation/Aramco_Lambert> ;
     ns1:coordinateSystem <http://www.opengis.net/def/crs/EPSG/0/2318_cs> ;
-    ns1:datum <http://www.opengis.net/ont/crs/datum/Ain_el_Abd_1970> ;
+    ns1:datum <https://w3id.org/geosrs/datum/Ain_el_Abd_1970> ;
     ns1:epsgCode "EPSG:2318"^^xsd:string ;
     ns1:isApplicableTo <http://www.opengis.net/ont/crs/isbody/Earth> ;
     ns1:isBound false ;

@@ -1,13 +1,13 @@
-@prefix ns1: <http://www.opengis.net/ont/crs/> .
+@prefix ns1: <https://w3id.org/geosrs/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix void: <http://rdfs.org/ns/void#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://www.opengis.net/def/crs/EPSG/0/8881> a ns1:VerticalCRS,
-        owl:NamedIndividual,
+<http://www.opengis.net/def/crs/EPSG/0/8881> a owl:NamedIndividual,
         <http://www.w3.org/ns/ldp#Resource>,
         <http://www.w3.org/ns/prov-o/Entity>,
+        ns1:VerticalCRS,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Vienna height"@en ;
     void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
@@ -16,7 +16,7 @@
     ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'VerticalCRS','name':'Vienna height','datum':{'type':'VerticalReferenceFrame','name':'Wiener Null'},'coordinate_system':{'subtype':'vertical','axis':[{'name':'Gravity-related height','abbreviation':'H','direction':'up','unit':'metre'}]},'scope':'Municipal spatial referencing.','area':'Austria - Vienna city state.','bbox':{'south_latitude':48.12,'west_longitude':16.18,'north_latitude':48.34,'east_longitude':16.59},'id':{'authority':'EPSG','code':8881}}"^^xsd:string ;
     ns1:asWKT "VERTCRS['Vienna height',VDATUM['Wiener Null'],CS[vertical,1],AXIS['gravity-related height (H)',up,LENGTHUNIT['metre',1]],USAGE[SCOPE['Municipal spatial referencing.'],AREA['Austria - Vienna city state.'],BBOX[48.12,16.18,48.34,16.59]],ID['EPSG',8881]]"^^ns1:wktLiteral ;
     ns1:coordinateSystem <http://www.opengis.net/def/crs/EPSG/0/8881_cs> ;
-    ns1:datum <http://www.opengis.net/ont/crs/datum/Wiener_Null> ;
+    ns1:datum <https://w3id.org/geosrs/datum/Wiener_Null> ;
     ns1:epsgCode "EPSG:8881"^^xsd:string ;
     ns1:isApplicableTo <http://www.opengis.net/ont/crs/isbody/Earth> ;
     ns1:isBound false ;

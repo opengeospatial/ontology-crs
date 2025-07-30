@@ -6,6 +6,6 @@
         <http://www.w3.org/ns/ldp#Resource>,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Property Partition: sourceCRS"@en ;
-    void:property <http://www.opengis.net/ont/crs/sourceCRS> ;
+    void:property <https://w3id.org/geosrs/sourceCRS> ;
     void:triples 4909 .
 

@@ -1,13 +1,13 @@
-@prefix ns1: <http://www.opengis.net/ont/crs/> .
+@prefix ns1: <https://w3id.org/geosrs/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix void: <http://rdfs.org/ns/void#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://www.opengis.net/def/crs/EPSG/0/4807> a ns1:GeographicCRS,
-        owl:NamedIndividual,
+<http://www.opengis.net/def/crs/EPSG/0/4807> a owl:NamedIndividual,
         <http://www.w3.org/ns/ldp#Resource>,
         <http://www.w3.org/ns/prov-o/Entity>,
+        ns1:GeographicCRS,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "NTF (Paris)"@en ;
     void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
@@ -16,7 +16,7 @@
     ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'GeographicCRS','name':'NTF (Paris)','datum':{'type':'GeodeticReferenceFrame','name':'Nouvelle Triangulation Francaise (Paris)','ellipsoid':{'name':'Clarke 1880 (IGN)','semi_major_axis':6378249.2,'semi_minor_axis':6356515},'prime_meridian':{'name':'Paris','longitude':{'value':2.5969213,'unit':{'type':'AngularUnit','name':'grad','conversion_factor':0.0157079632679489}}}},'coordinate_system':{'subtype':'ellipsoidal','axis':[{'name':'Geodetic latitude','abbreviation':'Lat','direction':'north','unit':{'type':'AngularUnit','name':'grad','conversion_factor':0.0157079632679489}},{'name':'Geodetic longitude','abbreviation':'Lon','direction':'east','unit':{'type':'AngularUnit','name':'grad','conversion_factor':0.0157079632679489}}]},'scope':'Geodesy.','area':'France - onshore - mainland and Corsica.','bbox':{'south_latitude':41.31,'west_longitude':-4.87,'north_latitude':51.14,'east_longitude':9.63},'id':{'authority':'EPSG','code':4807}}"^^xsd:string ;
     ns1:asWKT "GEOGCRS['NTF (Paris)',DATUM['Nouvelle Triangulation Francaise (Paris)',ELLIPSOID['Clarke 1880 (IGN)',6378249.2,293.466021293627,LENGTHUNIT['metre',1]]],PRIMEM['Paris',2.5969213,ANGLEUNIT['grad',0.0157079632679489]],CS[ellipsoidal,2],AXIS['geodetic latitude (Lat)',north,ORDER[1],ANGLEUNIT['grad',0.0157079632679489]],AXIS['geodetic longitude (Lon)',east,ORDER[2],ANGLEUNIT['grad',0.0157079632679489]],USAGE[SCOPE['Geodesy.'],AREA['France - onshore - mainland and Corsica.'],BBOX[41.31,-4.87,51.14,9.63]],ID['EPSG',4807]]"^^ns1:wktLiteral ;
     ns1:coordinateSystem <http://www.opengis.net/def/crs/EPSG/0/4807_cs> ;
-    ns1:datum <http://www.opengis.net/ont/crs/datum/Nouvelle_Triangulation_Francaise__Paris_> ;
+    ns1:datum <https://w3id.org/geosrs/datum/Nouvelle_Triangulation_Francaise__Paris_> ;
     ns1:epsgCode "EPSG:4807"^^xsd:string ;
     ns1:isApplicableTo <http://www.opengis.net/ont/crs/isbody/Earth> ;
     ns1:isBound false ;

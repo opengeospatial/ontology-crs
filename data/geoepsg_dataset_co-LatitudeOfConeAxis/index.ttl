@@ -6,6 +6,6 @@
         <http://www.w3.org/ns/ldp#Resource>,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Property Partition: co-LatitudeOfConeAxis"@en ;
-    void:property <http://www.opengis.net/ont/crs/co-LatitudeOfConeAxis> ;
+    void:property <https://w3id.org/geosrs/co-LatitudeOfConeAxis> ;
     void:triples 8 .
 

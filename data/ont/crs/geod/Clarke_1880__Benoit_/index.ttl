@@ -1,19 +1,19 @@
-@prefix ns1: <http://www.opengis.net/ont/crs/> .
+@prefix ns1: <https://w3id.org/geosrs/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix void: <http://rdfs.org/ns/void#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://www.opengis.net/ont/crs/geod/Clarke_1880__Benoit_> a ns1:Geoid,
-        <http://www.w3.org/ns/ldp#Resource>,
+<http://www.opengis.net/ont/crs/geod/Clarke_1880__Benoit_> a <http://www.w3.org/ns/ldp#Resource>,
+        ns1:Geoid,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Clarke 1880 (Benoit)"@en ;
     void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
+    skos:definition "+a=6378300.789 +f=0.003407546103420411"^^xsd:string ;
     ns1:approximates <http://www.opengis.net/ont/crs/isbody/Earth> ;
     ns1:eccentricity 6.803481e-03 ;
     ns1:flatteningParameter 3.407546e-03 ;
     ns1:isSphere false ;
     ns1:semiMajorAxis "6378300.789"^^xsd:string ;
-    ns1:semiMinorAxis "6356566.435"^^xsd:string ;
-    skos:definition "+a=6378300.789 +f=0.003407546103420411"^^xsd:string .
+    ns1:semiMinorAxis "6356566.435"^^xsd:string .
 

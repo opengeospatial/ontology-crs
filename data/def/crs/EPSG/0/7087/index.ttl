@@ -1,13 +1,13 @@
-@prefix ns1: <http://www.opengis.net/ont/crs/> .
+@prefix ns1: <https://w3id.org/geosrs/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix void: <http://rdfs.org/ns/void#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://www.opengis.net/def/crs/EPSG/0/7087> a ns1:GeographicCRS,
-        owl:NamedIndividual,
+<http://www.opengis.net/def/crs/EPSG/0/7087> a owl:NamedIndividual,
         <http://www.w3.org/ns/ldp#Resource>,
         <http://www.w3.org/ns/prov-o/Entity>,
+        ns1:GeographicCRS,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "RGTAAF07 (lon-lat)"@en ;
     void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
@@ -16,7 +16,7 @@
     ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'GeographicCRS','name':'RGTAAF07 (lon-lat)','datum':{'type':'GeodeticReferenceFrame','name':'Reseau Geodesique des Terres Australes et Antarctiques Francaises 2007','ellipsoid':{'name':'GRS 1980','semi_major_axis':6378137,'inverse_flattening':298.257222101}},'coordinate_system':{'subtype':'ellipsoidal','axis':[{'name':'Geodetic longitude','abbreviation':'Lon','direction':'east','unit':'degree'},{'name':'Geodetic latitude','abbreviation':'Lat','direction':'north','unit':'degree'},{'name':'Ellipsoidal height','abbreviation':'h','direction':'up','unit':'metre'}]},'scope':'GIS.','area':'French Southern Territories - onshore and offshore: Amsterdam and St Paul, Crozet, Europa and Kerguelen. Antarctica - Adelie Land coastal area.','bbox':{'south_latitude':-67.13,'west_longitude':37.98,'north_latitude':-20.91,'east_longitude':142},'id':{'authority':'EPSG','code':7087}}"^^xsd:string ;
     ns1:asWKT "GEOGCRS['RGTAAF07 (lon-lat)',DATUM['Reseau Geodesique des Terres Australes et Antarctiques Francaises 2007',ELLIPSOID['GRS 1980',6378137,298.257222101,LENGTHUNIT['metre',1]]],PRIMEM['Greenwich',0,ANGLEUNIT['degree',0.0174532925199433]],CS[ellipsoidal,3],AXIS['geodetic longitude (Lon)',east,ORDER[1],ANGLEUNIT['degree',0.0174532925199433]],AXIS['geodetic latitude (Lat)',north,ORDER[2],ANGLEUNIT['degree',0.0174532925199433]],AXIS['ellipsoidal height (h)',up,ORDER[3],LENGTHUNIT['metre',1]],USAGE[SCOPE['GIS.'],AREA['French Southern Territories - onshore and offshore: Amsterdam and St Paul, Crozet, Europa and Kerguelen. Antarctica - Adelie Land coastal area.'],BBOX[-67.13,37.98,-20.91,142]],ID['EPSG',7087]]"^^ns1:wktLiteral ;
     ns1:coordinateSystem <http://www.opengis.net/def/crs/EPSG/0/7087_cs> ;
-    ns1:datum <http://www.opengis.net/ont/crs/datum/Reseau_Geodesique_des_Terres_Australes_et_Antarctiques_Francaises_2007> ;
+    ns1:datum <https://w3id.org/geosrs/datum/Reseau_Geodesique_des_Terres_Australes_et_Antarctiques_Francaises_2007> ;
     ns1:epsgCode "EPSG:7087"^^xsd:string ;
     ns1:isApplicableTo <http://www.opengis.net/ont/crs/isbody/Earth> ;
     ns1:isBound false ;

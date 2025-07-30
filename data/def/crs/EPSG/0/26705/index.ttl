@@ -1,13 +1,13 @@
-@prefix ns1: <http://www.opengis.net/ont/crs/> .
+@prefix ns1: <https://w3id.org/geosrs/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix void: <http://rdfs.org/ns/void#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://www.opengis.net/def/crs/EPSG/0/26705> a ns1:ProjectedCRS,
-        owl:NamedIndividual,
+<http://www.opengis.net/def/crs/EPSG/0/26705> a owl:NamedIndividual,
         <http://www.w3.org/ns/ldp#Resource>,
         <http://www.w3.org/ns/prov-o/Entity>,
+        ns1:ProjectedCRS,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "NAD27 / UTM zone 5N"@en ;
     void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
@@ -15,9 +15,9 @@
     ns1:asProj4 "+proj=utm +zone=5 +datum=NAD27 +units=m +no_defs +type=crs"^^xsd:string ;
     ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'ProjectedCRS','name':'NAD27 / UTM zone 5N','base_crs':{'name':'NAD27','datum':{'type':'GeodeticReferenceFrame','name':'North American Datum 1927','ellipsoid':{'name':'Clarke 1866','semi_major_axis':6378206.4,'semi_minor_axis':6356583.8}},'coordinate_system':{'subtype':'ellipsoidal','axis':[{'name':'Geodetic latitude','abbreviation':'Lat','direction':'north','unit':'degree'},{'name':'Geodetic longitude','abbreviation':'Lon','direction':'east','unit':'degree'}]},'id':{'authority':'EPSG','code':4267}},'conversion':{'name':'UTM zone 5N','method':{'name':'Transverse Mercator','id':{'authority':'EPSG','code':9807}},'parameters':[{'name':'Latitude of natural origin','value':0,'unit':'degree','id':{'authority':'EPSG','code':8801}},{'name':'Longitude of natural origin','value':-153,'unit':'degree','id':{'authority':'EPSG','code':8802}},{'name':'Scale factor at natural origin','value':0.9996,'unit':'unity','id':{'authority':'EPSG','code':8805}},{'name':'False easting','value':500000,'unit':'metre','id':{'authority':'EPSG','code':8806}},{'name':'False northing','value':0,'unit':'metre','id':{'authority':'EPSG','code':8807}}]},'coordinate_system':{'subtype':'Cartesian','axis':[{'name':'Easting','abbreviation':'E','direction':'east','unit':'metre'},{'name':'Northing','abbreviation':'N','direction':'north','unit':'metre'}]},'scope':'Engineering survey, topographic mapping.','area':'United States (USA) - between 156°W and 150°W - Alaska and offshore continental shelf (OCS).','bbox':{'south_latitude':52.15,'west_longitude':-156,'north_latitude':74.71,'east_longitude':-149.99},'id':{'authority':'EPSG','code':26705}}"^^xsd:string ;
     ns1:asWKT "PROJCRS['NAD27 / UTM zone 5N',BASEGEOGCRS['NAD27',DATUM['North American Datum 1927',ELLIPSOID['Clarke 1866',6378206.4,294.978698213898,LENGTHUNIT['metre',1]]],PRIMEM['Greenwich',0,ANGLEUNIT['degree',0.0174532925199433]],ID['EPSG',4267]],CONVERSION['UTM zone 5N',METHOD['Transverse Mercator',ID['EPSG',9807]],PARAMETER['Latitude of natural origin',0,ANGLEUNIT['degree',0.0174532925199433],ID['EPSG',8801]],PARAMETER['Longitude of natural origin',-153,ANGLEUNIT['degree',0.0174532925199433],ID['EPSG',8802]],PARAMETER['Scale factor at natural origin',0.9996,SCALEUNIT['unity',1],ID['EPSG',8805]],PARAMETER['False easting',500000,LENGTHUNIT['metre',1],ID['EPSG',8806]],PARAMETER['False northing',0,LENGTHUNIT['metre',1],ID['EPSG',8807]]],CS[Cartesian,2],AXIS['(E)',east,ORDER[1],LENGTHUNIT['metre',1]],AXIS['(N)',north,ORDER[2],LENGTHUNIT['metre',1]],USAGE[SCOPE['Engineering survey, topographic mapping.'],AREA['United States (USA) - between 156°W and 150°W - Alaska and offshore continental shelf (OCS).'],BBOX[52.15,-156,74.71,-149.99]],ID['EPSG',26705]]"^^ns1:wktLiteral ;
-    ns1:coordinateOperation <http://www.opengis.net/ont/crs/operation/UTM_zone_5N> ;
+    ns1:coordinateOperation <https://w3id.org/geosrs/operation/UTM_zone_5N> ;
     ns1:coordinateSystem <http://www.opengis.net/def/crs/EPSG/0/26705_cs> ;
-    ns1:datum <http://www.opengis.net/ont/crs/datum/North_American_Datum_1927> ;
+    ns1:datum <https://w3id.org/geosrs/datum/North_American_Datum_1927> ;
     ns1:epsgCode "EPSG:26705"^^xsd:string ;
     ns1:isApplicableTo <http://www.opengis.net/ont/crs/isbody/Earth> ;
     ns1:isBound false ;

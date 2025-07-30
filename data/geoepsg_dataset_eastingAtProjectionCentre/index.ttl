@@ -6,6 +6,6 @@
         <http://www.w3.org/ns/ldp#Resource>,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Property Partition: eastingAtProjectionCentre"@en ;
-    void:property <http://www.opengis.net/ont/crs/eastingAtProjectionCentre> ;
+    void:property <https://w3id.org/geosrs/eastingAtProjectionCentre> ;
     void:triples 12 .
 

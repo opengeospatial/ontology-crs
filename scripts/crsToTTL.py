@@ -406,12 +406,12 @@ if args.input==None:
 		except:
 			continue	
 		crsToTTL(ttl,curcrs,x,geodcounter,None)
-	f = open("docs/result.nt", "w", encoding="utf-8")
+	f = open("result.nt", "w", encoding="utf-8")
 	f.write(ttlhead+"".join(ttl))
 	f.close()
 	graph2 = Graph()
 	graph2.parse(data = ttlhead+"".join(ttl), format='n3')
-	graph2.serialize(destination='docs/result.ttl', format='turtle')
+	graph2.serialize(destination='result.ttl', format='turtle')
 else:
 	if str(args.input).startswith("EPSG"):
 		curcrs=CRS.from_epsg(int(str(args.input).replace("EPSG:","")))

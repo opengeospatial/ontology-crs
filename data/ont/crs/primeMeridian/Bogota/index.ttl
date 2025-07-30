@@ -1,0 +1,15 @@
+@prefix ns1: <http://www.opengis.net/ont/crs/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.opengis.net/ont/crs/primeMeridian/Bogota> a ns1:PrimeMeridian,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
+    rdfs:label "Bogota"@en ;
+    void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
+    ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'PrimeMeridian','name':'Bogota','longitude':-74.0809166666667,'id':{'authority':'EPSG','code':8904}}" ;
+    ns1:asWKT "PRIMEM['Bogota',-74.0809166666667,ANGLEUNIT['degree',0.0174532925199433],ID['EPSG',8904]]" ;
+    ns1:longitude -7.408092e+01 ;
+    ns1:unit <http://www.ontology-of-units-of-measure.org/resource/om-2/om:degree> .
+

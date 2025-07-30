@@ -1,0 +1,19 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+
+<http://www.opengis.net/AxisDirection_collection> a skos:Collection,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
+    rdfs:label "AxisDirection Instances Collection"@en ;
+    void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
+    rdfs:member <http://www.opengis.net/ont/crs/cs/axis/down>,
+        <http://www.opengis.net/ont/crs/cs/axis/east>,
+        <http://www.opengis.net/ont/crs/cs/axis/geocentricX>,
+        <http://www.opengis.net/ont/crs/cs/axis/geocentricY>,
+        <http://www.opengis.net/ont/crs/cs/axis/geocentricZ>,
+        <http://www.opengis.net/ont/crs/cs/axis/north>,
+        <http://www.opengis.net/ont/crs/cs/axis/south>,
+        <http://www.opengis.net/ont/crs/cs/axis/up>,
+        <http://www.opengis.net/ont/crs/cs/axis/west> .
+

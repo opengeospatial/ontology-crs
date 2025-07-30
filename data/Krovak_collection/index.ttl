@@ -1,0 +1,18 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+
+<http://www.opengis.net/Krovak_collection> a skos:Collection,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
+    rdfs:label "Krovak Instances Collection"@en ;
+    void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
+    rdfs:member <http://www.opengis.net/ont/crs/operation/Krovak>,
+        <http://www.opengis.net/ont/crs/operation/Krovak_East_North>,
+        <http://www.opengis.net/ont/crs/operation/Krovak_East_North__Greenwich_>,
+        <http://www.opengis.net/ont/crs/operation/Krovak__Greenwich_>,
+        <http://www.opengis.net/ont/crs/operation/Modified_Krovak>,
+        <http://www.opengis.net/ont/crs/operation/Modified_Krovak_East_North>,
+        <http://www.opengis.net/ont/crs/operation/Modified_Krovak_East_North__Greenwich_>,
+        <http://www.opengis.net/ont/crs/operation/Modified_Krovak__Greenwich_> .
+

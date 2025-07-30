@@ -1,0 +1,13 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.opengis.net/geoepsg_dataset_www.ontology-of-units-of-measure.org_resource_om-2_> a void:Linkset,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
+    rdfs:label "Linkset: geoepsg_dataset - Ontology of Units of Measurement (om:)"@en ;
+    void:linkPredicate <http://www.opengis.net/ont/crs/unit> ;
+    void:objectsTarget <http://www.ontology-of-units-of-measure.org/resource/om-2/> ;
+    void:subjectsTarget <http://www.opengis.net/geoepsg_dataset> ;
+    void:triples 32 .
+

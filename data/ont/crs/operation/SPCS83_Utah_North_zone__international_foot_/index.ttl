@@ -1,0 +1,27 @@
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix ns1: <http://www.opengis.net/ont/crs/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.opengis.net/ont/crs/operation/SPCS83_Utah_North_zone__international_foot_> a ns1:LambertConformalConicProjection,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
+    rdfs:label "SPCS83 Utah North zone (international foot): Lambert Conic Conformal (2SP)"@en ;
+    void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
+    ns1:accuracy -1e+00 ;
+    ns1:area_of_use <http://www.opengis.net/ont/crs/areaofuse/SPCS83_Utah_North_zone__international_foot__area_of_use> ;
+    ns1:asProj4 "+proj=pipeline +step +proj=axisswap +order=2,1 +step +proj=unitconvert +xy_in=deg +xy_out=rad +step +proj=lcc +lat_0=40.3333333333333 +lon_0=-111.5 +lat_1=41.7833333333333 +lat_2=40.7166666666667 +x_0=500000.0001504 +y_0=999999.999996 +ellps=GRS80 +step +proj=unitconvert +xy_in=m +xy_out=ft" ;
+    ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'Conversion','name':'SPCS83 Utah North zone (international foot)','method':{'name':'Lambert Conic Conformal (2SP)','id':{'authority':'EPSG','code':9802}},'parameters':[{'name':'Latitude of false origin','value':40.3333333333333,'unit':'degree','id':{'authority':'EPSG','code':8821}},{'name':'Longitude of false origin','value':-111.5,'unit':'degree','id':{'authority':'EPSG','code':8822}},{'name':'Latitude of 1st standard parallel','value':41.7833333333333,'unit':'degree','id':{'authority':'EPSG','code':8823}},{'name':'Latitude of 2nd standard parallel','value':40.7166666666667,'unit':'degree','id':{'authority':'EPSG','code':8824}},{'name':'Easting at false origin','value':1640419.948,'unit':{'type':'LinearUnit','name':'foot','conversion_factor':0.3048},'id':{'authority':'EPSG','code':8826}},{'name':'Northing at false origin','value':3280839.895,'unit':{'type':'LinearUnit','name':'foot','conversion_factor':0.3048},'id':{'authority':'EPSG','code':8827}}],'id':{'authority':'EPSG','code':15362}}" ;
+    ns1:asWKT "CONVERSION['SPCS83 Utah North zone (international foot)',METHOD['Lambert Conic Conformal (2SP)',ID['EPSG',9802]],PARAMETER['Latitude of false origin',40.3333333333333,ANGLEUNIT['degree',0.0174532925199433],ID['EPSG',8821]],PARAMETER['Longitude of false origin',-111.5,ANGLEUNIT['degree',0.0174532925199433],ID['EPSG',8822]],PARAMETER['Latitude of 1st standard parallel',41.7833333333333,ANGLEUNIT['degree',0.0174532925199433],ID['EPSG',8823]],PARAMETER['Latitude of 2nd standard parallel',40.7166666666667,ANGLEUNIT['degree',0.0174532925199433],ID['EPSG',8824]],PARAMETER['Easting at false origin',1640419.948,LENGTHUNIT['foot',0.3048],ID['EPSG',8826]],PARAMETER['Northing at false origin',3280839.895,LENGTHUNIT['foot',0.3048],ID['EPSG',8827]],ID['EPSG',15362]]"^^geo:wktLiteral ;
+    ns1:eastingAtFalseOrigin 1.64042e+06 ;
+    ns1:has_ballpark_transformation false ;
+    ns1:latitudeOf1StStandardParallel 4.178333e+01 ;
+    ns1:latitudeOf2NdStandardParallel 4.071667e+01 ;
+    ns1:latitudeOfFalseOrigin 4.033333e+01 ;
+    ns1:longitudeOfFalseOrigin -1.115e+02 ;
+    ns1:method_name "Lambert Conic Conformal (2SP)" ;
+    ns1:northingAtFalseOrigin 3.28084e+06 ;
+    ns1:scope "Engineering survey, topographic mapping."^^xsd:string ;
+    rdfs:comment "State law defining grid unit as International feet (note: not US Survey feet) has been withdrawn. For equivalent metric Federal definition see code 14331. For equivalent US Survey foot definition see code 15297."^^xsd:string .
+

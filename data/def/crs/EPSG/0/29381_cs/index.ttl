@@ -1,0 +1,15 @@
+@prefix ns1: <http://www.opengis.net/ont/crs/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+
+<http://www.opengis.net/def/crs/EPSG/0/29381_cs> a ns1:CartesianCoordinateSystem,
+        ns1:PlanarCoordinateSystem,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
+    rdfs:label "EPSG:29381 CS: cartesian" ;
+    void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
+    ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'CoordinateSystem','subtype':'Cartesian','axis':[{'name':'Westing','abbreviation':'Y','direction':'west','unit':{'type':'LinearUnit','name':'German legal metre','conversion_factor':1.0000135965}},{'name':'Southing','abbreviation':'X','direction':'south','unit':{'type':'LinearUnit','name':'German legal metre','conversion_factor':1.0000135965}}],'id':{'authority':'EPSG','code':6502}}" ;
+    ns1:asWKT "CS[Cartesian,2],AXIS['westing (Y)',west,ORDER[1],LENGTHUNIT['German legal metre',1.0000135965,ID['EPSG',9031]]],AXIS['southing (X)',south,ORDER[2],LENGTHUNIT['German legal metre',1.0000135965,ID['EPSG',9031]]]" ;
+    ns1:axis <http://www.opengis.net/ont/crs/cs/axis/Southing_German_legal_metre_south>,
+        <http://www.opengis.net/ont/crs/cs/axis/Westing_German_legal_metre_west> .
+

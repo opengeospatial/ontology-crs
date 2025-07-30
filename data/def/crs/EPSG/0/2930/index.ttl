@@ -1,0 +1,29 @@
+@prefix ns1: <http://www.opengis.net/ont/crs/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.opengis.net/def/crs/EPSG/0/2930> a ns1:ProjectedCRS,
+        owl:NamedIndividual,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <http://www.w3.org/ns/prov-o/Entity>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
+    rdfs:label "NAD83(HARN) / Wisconsin South (ftUS)"@en ;
+    void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
+    ns1:area_of_use <http://www.opengis.net/def/crs/EPSG/0/2930_area_of_use> ;
+    ns1:asProj4 "+proj=lcc +lat_0=42 +lon_0=-90 +lat_1=44.0666666666667 +lat_2=42.7333333333333 +x_0=600000 +y_0=0 +ellps=GRS80 +units=us-ft +no_defs +type=crs"^^xsd:string ;
+    ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'ProjectedCRS','name':'NAD83(HARN) / Wisconsin South (ftUS)','base_crs':{'name':'NAD83(HARN)','datum':{'type':'GeodeticReferenceFrame','name':'NAD83 (High Accuracy Reference Network)','ellipsoid':{'name':'GRS 1980','semi_major_axis':6378137,'inverse_flattening':298.257222101}},'coordinate_system':{'subtype':'ellipsoidal','axis':[{'name':'Geodetic latitude','abbreviation':'Lat','direction':'north','unit':'degree'},{'name':'Geodetic longitude','abbreviation':'Lon','direction':'east','unit':'degree'}]},'id':{'authority':'EPSG','code':4152}},'conversion':{'name':'SPCS83 Wisconsin South zone (US survey foot)','method':{'name':'Lambert Conic Conformal (2SP)','id':{'authority':'EPSG','code':9802}},'parameters':[{'name':'Latitude of false origin','value':42,'unit':'degree','id':{'authority':'EPSG','code':8821}},{'name':'Longitude of false origin','value':-90,'unit':'degree','id':{'authority':'EPSG','code':8822}},{'name':'Latitude of 1st standard parallel','value':44.0666666666667,'unit':'degree','id':{'authority':'EPSG','code':8823}},{'name':'Latitude of 2nd standard parallel','value':42.7333333333333,'unit':'degree','id':{'authority':'EPSG','code':8824}},{'name':'Easting at false origin','value':1968500,'unit':{'type':'LinearUnit','name':'US survey foot','conversion_factor':0.304800609601219},'id':{'authority':'EPSG','code':8826}},{'name':'Northing at false origin','value':0,'unit':{'type':'LinearUnit','name':'US survey foot','conversion_factor':0.304800609601219},'id':{'authority':'EPSG','code':8827}}]},'coordinate_system':{'subtype':'Cartesian','axis':[{'name':'Easting','abbreviation':'X','direction':'east','unit':{'type':'LinearUnit','name':'US survey foot','conversion_factor':0.304800609601219}},{'name':'Northing','abbreviation':'Y','direction':'north','unit':{'type':'LinearUnit','name':'US survey foot','conversion_factor':0.304800609601219}}]},'scope':'Engineering survey, topographic mapping.','area':'United States (USA) - Wisconsin - counties of Adams; Calumet; Columbia; Crawford; Dane; Dodge; Fond Du Lac; Grant; Green; Green Lake; Iowa; Jefferson; Juneau; Kenosha; La Crosse; Lafayette; Manitowoc; Marquette; Milwaukee; Monroe; Ozaukee; Racine; Richland; Rock; Sauk; Sheboygan; Vernon; Walworth; Washington; Waukesha; Waushara; Winnebago.','bbox':{'south_latitude':42.48,'west_longitude':-91.43,'north_latitude':44.33,'east_longitude':-86.95},'id':{'authority':'EPSG','code':2930}}"^^xsd:string ;
+    ns1:asWKT "PROJCRS['NAD83(HARN) / Wisconsin South (ftUS)',BASEGEOGCRS['NAD83(HARN)',DATUM['NAD83 (High Accuracy Reference Network)',ELLIPSOID['GRS 1980',6378137,298.257222101,LENGTHUNIT['metre',1]]],PRIMEM['Greenwich',0,ANGLEUNIT['degree',0.0174532925199433]],ID['EPSG',4152]],CONVERSION['SPCS83 Wisconsin South zone (US survey foot)',METHOD['Lambert Conic Conformal (2SP)',ID['EPSG',9802]],PARAMETER['Latitude of false origin',42,ANGLEUNIT['degree',0.0174532925199433],ID['EPSG',8821]],PARAMETER['Longitude of false origin',-90,ANGLEUNIT['degree',0.0174532925199433],ID['EPSG',8822]],PARAMETER['Latitude of 1st standard parallel',44.0666666666667,ANGLEUNIT['degree',0.0174532925199433],ID['EPSG',8823]],PARAMETER['Latitude of 2nd standard parallel',42.7333333333333,ANGLEUNIT['degree',0.0174532925199433],ID['EPSG',8824]],PARAMETER['Easting at false origin',1968500,LENGTHUNIT['US survey foot',0.304800609601219],ID['EPSG',8826]],PARAMETER['Northing at false origin',0,LENGTHUNIT['US survey foot',0.304800609601219],ID['EPSG',8827]]],CS[Cartesian,2],AXIS['easting (X)',east,ORDER[1],LENGTHUNIT['US survey foot',0.304800609601219]],AXIS['northing (Y)',north,ORDER[2],LENGTHUNIT['US survey foot',0.304800609601219]],USAGE[SCOPE['Engineering survey, topographic mapping.'],AREA['United States (USA) - Wisconsin - counties of Adams; Calumet; Columbia; Crawford; Dane; Dodge; Fond Du Lac; Grant; Green; Green Lake; Iowa; Jefferson; Juneau; Kenosha; La Crosse; Lafayette; Manitowoc; Marquette; Milwaukee; Monroe; Ozaukee; Racine; Richland; Rock; Sauk; Sheboygan; Vernon; Walworth; Washington; Waukesha; Waushara; Winnebago.'],BBOX[42.48,-91.43,44.33,-86.95]],ID['EPSG',2930]]"^^ns1:wktLiteral ;
+    ns1:coordinateOperation <http://www.opengis.net/ont/crs/operation/SPCS83_Wisconsin_South_zone__US_survey_foot_> ;
+    ns1:coordinateSystem <http://www.opengis.net/def/crs/EPSG/0/2930_cs> ;
+    ns1:datum <http://www.opengis.net/ont/crs/datum/NAD83__High_Accuracy_Reference_Network_> ;
+    ns1:epsgCode "EPSG:2930"^^xsd:string ;
+    ns1:isApplicableTo <http://www.opengis.net/ont/crs/isbody/Earth> ;
+    ns1:isBound false ;
+    ns1:isGeocentric false ;
+    ns1:isGeographic false ;
+    ns1:isProjected true ;
+    ns1:isVertical false ;
+    ns1:sourceCRS <http://www.opengis.net/def/crs/EPSG/0/4152> .
+

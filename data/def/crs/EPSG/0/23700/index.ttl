@@ -1,0 +1,29 @@
+@prefix ns1: <http://www.opengis.net/ont/crs/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.opengis.net/def/crs/EPSG/0/23700> a ns1:ProjectedCRS,
+        owl:NamedIndividual,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <http://www.w3.org/ns/prov-o/Entity>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
+    rdfs:label "HD72 / EOV"@en ;
+    void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
+    ns1:area_of_use <http://www.opengis.net/def/crs/EPSG/0/23700_area_of_use> ;
+    ns1:asProj4 "+proj=somerc +lat_0=47.1443937222222 +lon_0=19.0485717777778 +k_0=0.99993 +x_0=650000 +y_0=200000 +ellps=GRS67 +units=m +no_defs +type=crs"^^xsd:string ;
+    ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'ProjectedCRS','name':'HD72 / EOV','base_crs':{'name':'HD72','datum':{'type':'GeodeticReferenceFrame','name':'Hungarian Datum 1972','ellipsoid':{'name':'GRS 1967','semi_major_axis':6378160,'inverse_flattening':298.247167427}},'coordinate_system':{'subtype':'ellipsoidal','axis':[{'name':'Geodetic latitude','abbreviation':'Lat','direction':'north','unit':'degree'},{'name':'Geodetic longitude','abbreviation':'Lon','direction':'east','unit':'degree'}]},'id':{'authority':'EPSG','code':4237}},'conversion':{'name':'Egyseges Orszagos Vetuleti','method':{'name':'Hotine Oblique Mercator (variant B)','id':{'authority':'EPSG','code':9815}},'parameters':[{'name':'Latitude of projection centre','value':47.1443937222222,'unit':'degree','id':{'authority':'EPSG','code':8811}},{'name':'Longitude of projection centre','value':19.0485717777778,'unit':'degree','id':{'authority':'EPSG','code':8812}},{'name':'Azimuth at projection centre','value':90,'unit':'degree','id':{'authority':'EPSG','code':8813}},{'name':'Angle from Rectified to Skew Grid','value':90,'unit':'degree','id':{'authority':'EPSG','code':8814}},{'name':'Scale factor at projection centre','value':0.99993,'unit':'unity','id':{'authority':'EPSG','code':8815}},{'name':'Easting at projection centre','value':650000,'unit':'metre','id':{'authority':'EPSG','code':8816}},{'name':'Northing at projection centre','value':200000,'unit':'metre','id':{'authority':'EPSG','code':8817}}]},'coordinate_system':{'subtype':'Cartesian','axis':[{'name':'Easting','abbreviation':'Y','direction':'east','unit':'metre'},{'name':'Northing','abbreviation':'X','direction':'north','unit':'metre'}]},'scope':'Engineering survey, topographic mapping.','area':'Hungary.','bbox':{'south_latitude':45.74,'west_longitude':16.11,'north_latitude':48.58,'east_longitude':22.9},'id':{'authority':'EPSG','code':23700}}"^^xsd:string ;
+    ns1:asWKT "PROJCRS['HD72 / EOV',BASEGEOGCRS['HD72',DATUM['Hungarian Datum 1972',ELLIPSOID['GRS 1967',6378160,298.247167427,LENGTHUNIT['metre',1]]],PRIMEM['Greenwich',0,ANGLEUNIT['degree',0.0174532925199433]],ID['EPSG',4237]],CONVERSION['Egyseges Orszagos Vetuleti',METHOD['Hotine Oblique Mercator (variant B)',ID['EPSG',9815]],PARAMETER['Latitude of projection centre',47.1443937222222,ANGLEUNIT['degree',0.0174532925199433],ID['EPSG',8811]],PARAMETER['Longitude of projection centre',19.0485717777778,ANGLEUNIT['degree',0.0174532925199433],ID['EPSG',8812]],PARAMETER['Azimuth at projection centre',90,ANGLEUNIT['degree',0.0174532925199433],ID['EPSG',8813]],PARAMETER['Angle from Rectified to Skew Grid',90,ANGLEUNIT['degree',0.0174532925199433],ID['EPSG',8814]],PARAMETER['Scale factor at projection centre',0.99993,SCALEUNIT['unity',1],ID['EPSG',8815]],PARAMETER['Easting at projection centre',650000,LENGTHUNIT['metre',1],ID['EPSG',8816]],PARAMETER['Northing at projection centre',200000,LENGTHUNIT['metre',1],ID['EPSG',8817]]],CS[Cartesian,2],AXIS['easting (Y)',east,ORDER[1],LENGTHUNIT['metre',1]],AXIS['northing (X)',north,ORDER[2],LENGTHUNIT['metre',1]],USAGE[SCOPE['Engineering survey, topographic mapping.'],AREA['Hungary.'],BBOX[45.74,16.11,48.58,22.9]],ID['EPSG',23700]]"^^ns1:wktLiteral ;
+    ns1:coordinateOperation <http://www.opengis.net/ont/crs/operation/Egyseges_Orszagos_Vetuleti> ;
+    ns1:coordinateSystem <http://www.opengis.net/def/crs/EPSG/0/23700_cs> ;
+    ns1:datum <http://www.opengis.net/ont/crs/datum/Hungarian_Datum_1972> ;
+    ns1:epsgCode "EPSG:23700"^^xsd:string ;
+    ns1:isApplicableTo <http://www.opengis.net/ont/crs/isbody/Earth> ;
+    ns1:isBound false ;
+    ns1:isGeocentric false ;
+    ns1:isGeographic false ;
+    ns1:isProjected true ;
+    ns1:isVertical false ;
+    ns1:sourceCRS <http://www.opengis.net/def/crs/EPSG/0/4237> .
+

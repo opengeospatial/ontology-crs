@@ -1,0 +1,28 @@
+@prefix ns1: <http://www.opengis.net/ont/crs/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.opengis.net/def/crs/EPSG/0/8350> a ns1:CompoundCRS,
+        owl:NamedIndividual,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <http://www.w3.org/ns/prov-o/Entity>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
+    rdfs:label "GR96 + GVR2016 height"@en ;
+    void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
+    ns1:area_of_use <http://www.opengis.net/def/crs/EPSG/0/8350_area_of_use> ;
+    ns1:asProj4 "+proj=longlat +ellps=GRS80 +vunits=m +no_defs +type=crs"^^xsd:string ;
+    ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'CompoundCRS','name':'GR96 + GVR2016 height','components':[{'type':'GeographicCRS','name':'GR96','datum':{'type':'GeodeticReferenceFrame','name':'Greenland 1996','ellipsoid':{'name':'GRS 1980','semi_major_axis':6378137,'inverse_flattening':298.257222101}},'coordinate_system':{'subtype':'ellipsoidal','axis':[{'name':'Geodetic latitude','abbreviation':'Lat','direction':'north','unit':'degree'},{'name':'Geodetic longitude','abbreviation':'Lon','direction':'east','unit':'degree'}]}},{'type':'VerticalCRS','name':'GVR2016 height','datum':{'type':'VerticalReferenceFrame','name':'Greenland Vertical Reference 2016'},'coordinate_system':{'subtype':'vertical','axis':[{'name':'Gravity-related height','abbreviation':'H','direction':'up','unit':'metre'}]}}],'scope':'Topographic mapping.','area':'Greenland - onshore and offshore between 58°N and 85°N and west of 7°W.','bbox':{'south_latitude':58,'west_longitude':-75,'north_latitude':85.01,'east_longitude':-6.99},'id':{'authority':'EPSG','code':8350}}"^^xsd:string ;
+    ns1:asWKT "COMPOUNDCRS['GR96 + GVR2016 height',GEOGCRS['GR96',DATUM['Greenland 1996',ELLIPSOID['GRS 1980',6378137,298.257222101,LENGTHUNIT['metre',1]]],PRIMEM['Greenwich',0,ANGLEUNIT['degree',0.0174532925199433]],CS[ellipsoidal,2],AXIS['geodetic latitude (Lat)',north,ORDER[1],ANGLEUNIT['degree',0.0174532925199433]],AXIS['geodetic longitude (Lon)',east,ORDER[2],ANGLEUNIT['degree',0.0174532925199433]]],VERTCRS['GVR2016 height',VDATUM['Greenland Vertical Reference 2016'],CS[vertical,1],AXIS['gravity-related height (H)',up,LENGTHUNIT['metre',1]]],USAGE[SCOPE['Topographic mapping.'],AREA['Greenland - onshore and offshore between 58°N and 85°N and west of 7°W.'],BBOX[58,-75,85.01,-6.99]],ID['EPSG',8350]]"^^ns1:wktLiteral ;
+    ns1:datum <http://www.opengis.net/ont/crs/datum/Greenland_1996> ;
+    ns1:epsgCode "EPSG:8350"^^xsd:string ;
+    ns1:includesSRS <http://www.opengis.net/def/crs/EPSG/0/4747>,
+        <http://www.opengis.net/def/crs/EPSG/0/8267> ;
+    ns1:isApplicableTo <http://www.opengis.net/ont/crs/isbody/Earth> ;
+    ns1:isBound false ;
+    ns1:isGeocentric false ;
+    ns1:isGeographic true ;
+    ns1:isProjected false ;
+    ns1:isVertical true .
+

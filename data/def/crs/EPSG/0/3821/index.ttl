@@ -1,0 +1,27 @@
+@prefix ns1: <http://www.opengis.net/ont/crs/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.opengis.net/def/crs/EPSG/0/3821> a ns1:GeographicCRS,
+        owl:NamedIndividual,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <http://www.w3.org/ns/prov-o/Entity>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
+    rdfs:label "TWD67"@en ;
+    void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
+    ns1:area_of_use <http://www.opengis.net/def/crs/EPSG/0/3821_area_of_use> ;
+    ns1:asProj4 "+proj=longlat +ellps=aust_SA +no_defs +type=crs"^^xsd:string ;
+    ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'GeographicCRS','name':'TWD67','datum':{'type':'GeodeticReferenceFrame','name':'Taiwan Datum 1967','ellipsoid':{'name':'GRS 1967 Modified','semi_major_axis':6378160,'inverse_flattening':298.25}},'coordinate_system':{'subtype':'ellipsoidal','axis':[{'name':'Geodetic latitude','abbreviation':'Lat','direction':'north','unit':'degree'},{'name':'Geodetic longitude','abbreviation':'Lon','direction':'east','unit':'degree'}]},'scope':'Geodesy.','area':'Taiwan, Republic of China - onshore - Taiwan Island, Penghu (Pescadores) Islands.','bbox':{'south_latitude':21.87,'west_longitude':119.25,'north_latitude':25.34,'east_longitude':122.06},'id':{'authority':'EPSG','code':3821}}"^^xsd:string ;
+    ns1:asWKT "GEOGCRS['TWD67',DATUM['Taiwan Datum 1967',ELLIPSOID['GRS 1967 Modified',6378160,298.25,LENGTHUNIT['metre',1]]],PRIMEM['Greenwich',0,ANGLEUNIT['degree',0.0174532925199433]],CS[ellipsoidal,2],AXIS['geodetic latitude (Lat)',north,ORDER[1],ANGLEUNIT['degree',0.0174532925199433]],AXIS['geodetic longitude (Lon)',east,ORDER[2],ANGLEUNIT['degree',0.0174532925199433]],USAGE[SCOPE['Geodesy.'],AREA['Taiwan, Republic of China - onshore - Taiwan Island, Penghu (Pescadores) Islands.'],BBOX[21.87,119.25,25.34,122.06]],ID['EPSG',3821]]"^^ns1:wktLiteral ;
+    ns1:coordinateSystem <http://www.opengis.net/def/crs/EPSG/0/3821_cs> ;
+    ns1:datum <http://www.opengis.net/ont/crs/datum/Taiwan_Datum_1967> ;
+    ns1:epsgCode "EPSG:3821"^^xsd:string ;
+    ns1:isApplicableTo <http://www.opengis.net/ont/crs/isbody/Earth> ;
+    ns1:isBound false ;
+    ns1:isGeocentric false ;
+    ns1:isGeographic true ;
+    ns1:isProjected false ;
+    ns1:isVertical false .
+

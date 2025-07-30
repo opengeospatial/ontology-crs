@@ -1,0 +1,29 @@
+@prefix ns1: <http://www.opengis.net/ont/crs/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.opengis.net/def/crs/EPSG/0/3786> a ns1:ProjectedCRS,
+        owl:NamedIndividual,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <http://www.w3.org/ns/prov-o/Entity>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
+    rdfs:label "World Equidistant Cylindrical (Sphere)"@en ;
+    void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
+    ns1:area_of_use <http://www.opengis.net/def/crs/EPSG/0/3786_area_of_use> ;
+    ns1:asProj4 "+proj=eqc +lat_ts=0 +lat_0=0 +lon_0=0 +x_0=0 +y_0=0 +R=6371007 +units=m +no_defs +type=crs"^^xsd:string ;
+    ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'ProjectedCRS','name':'World Equidistant Cylindrical (Sphere)','base_crs':{'name':'Unspecified datum based upon the GRS 1980 Authalic Sphere','datum':{'type':'GeodeticReferenceFrame','name':'Not specified (based on GRS 1980 Authalic Sphere)','ellipsoid':{'name':'GRS 1980 Authalic Sphere','radius':6371007}},'coordinate_system':{'subtype':'ellipsoidal','axis':[{'name':'Geodetic latitude','abbreviation':'Lat','direction':'north','unit':'degree'},{'name':'Geodetic longitude','abbreviation':'Lon','direction':'east','unit':'degree'}]},'id':{'authority':'EPSG','code':4047}},'conversion':{'name':'World Equidistant Cylindrical (Sphere)','method':{'name':'Equidistant Cylindrical (Spherical)','id':{'authority':'EPSG','code':9823}},'parameters':[{'name':'Latitude of natural origin','value':0,'unit':'degree','id':{'authority':'EPSG','code':8801}},{'name':'Longitude of natural origin','value':0,'unit':'degree','id':{'authority':'EPSG','code':8802}},{'name':'False easting','value':0,'unit':'metre','id':{'authority':'EPSG','code':8806}},{'name':'False northing','value':0,'unit':'metre','id':{'authority':'EPSG','code':8807}}]},'coordinate_system':{'subtype':'Cartesian','axis':[{'name':'Easting','abbreviation':'X','direction':'east','unit':'metre'},{'name':'Northing','abbreviation':'Y','direction':'north','unit':'metre'}]},'scope':'Web mapping and visualisation.','area':'World.','bbox':{'south_latitude':-90,'west_longitude':-180,'north_latitude':90,'east_longitude':180},'id':{'authority':'EPSG','code':3786}}"^^xsd:string ;
+    ns1:asWKT "PROJCRS['World Equidistant Cylindrical (Sphere)',BASEGEOGCRS['Unspecified datum based upon the GRS 1980 Authalic Sphere',DATUM['Not specified (based on GRS 1980 Authalic Sphere)',ELLIPSOID['GRS 1980 Authalic Sphere',6371007,0,LENGTHUNIT['metre',1]]],PRIMEM['Greenwich',0,ANGLEUNIT['degree',0.0174532925199433]],ID['EPSG',4047]],CONVERSION['World Equidistant Cylindrical (Sphere)',METHOD['Equidistant Cylindrical (Spherical)',ID['EPSG',9823]],PARAMETER['Latitude of natural origin',0,ANGLEUNIT['degree',0.0174532925199433],ID['EPSG',8801]],PARAMETER['Longitude of natural origin',0,ANGLEUNIT['degree',0.0174532925199433],ID['EPSG',8802]],PARAMETER['False easting',0,LENGTHUNIT['metre',1],ID['EPSG',8806]],PARAMETER['False northing',0,LENGTHUNIT['metre',1],ID['EPSG',8807]]],CS[Cartesian,2],AXIS['easting (X)',east,ORDER[1],LENGTHUNIT['metre',1]],AXIS['northing (Y)',north,ORDER[2],LENGTHUNIT['metre',1]],USAGE[SCOPE['Web mapping and visualisation.'],AREA['World.'],BBOX[-90,-180,90,180]],ID['EPSG',3786]]"^^ns1:wktLiteral ;
+    ns1:coordinateOperation <http://www.opengis.net/ont/crs/operation/World_Equidistant_Cylindrical__Sphere_> ;
+    ns1:coordinateSystem <http://www.opengis.net/def/crs/EPSG/0/3786_cs> ;
+    ns1:datum <http://www.opengis.net/ont/crs/datum/Not_specified__based_on_GRS_1980_Authalic_Sphere_> ;
+    ns1:epsgCode "EPSG:3786"^^xsd:string ;
+    ns1:isApplicableTo <http://www.opengis.net/ont/crs/isbody/Earth> ;
+    ns1:isBound false ;
+    ns1:isGeocentric false ;
+    ns1:isGeographic false ;
+    ns1:isProjected true ;
+    ns1:isVertical false ;
+    ns1:sourceCRS <http://www.opengis.net/def/crs/EPSG/0/4047> .
+

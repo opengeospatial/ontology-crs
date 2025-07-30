@@ -1,0 +1,14 @@
+@prefix ns1: <http://www.opengis.net/ont/crs/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.opengis.net/ont/crs/datum/Not_specified__based_on_Clarke_1866_Michigan_ellipsoid_> a ns1:GeodeticReferenceFrame,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
+    rdfs:label "Datum: Not specified (based on Clarke 1866 Michigan ellipsoid)"@en ;
+    void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
+    ns1:ellipse "Clarke 1866 Michigan" ;
+    ns1:primeMeridian <http://www.opengis.net/ont/crs/primeMeridian/Greenwich> ;
+    ns1:scope "Not a valid datum."^^xsd:string .
+

@@ -1,0 +1,30 @@
+@prefix ns1: <http://www.opengis.net/ont/crs/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.opengis.net/def/crs/EPSG/0/9680> a ns1:ProjectedCRS,
+        owl:NamedIndividual,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <http://www.w3.org/ns/prov-o/Entity>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
+    rdfs:label "WGS 84 / TM 90 NE"@en ;
+    void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
+    ns1:area_of_use <http://www.opengis.net/def/crs/EPSG/0/9680_area_of_use> ;
+    ns1:asProj4 "+proj=tmerc +lat_0=0 +lon_0=90 +k=0.9996 +x_0=500000 +y_0=0 +datum=WGS84 +units=m +no_defs +type=crs"^^xsd:string ;
+    ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'ProjectedCRS','name':'WGS 84 / TM 90 NE','base_crs':{'name':'WGS 84','datum_ensemble':{'name':'World Geodetic System 1984 ensemble','members':[{'name':'World Geodetic System 1984 (Transit)','id':{'authority':'EPSG','code':1166}},{'name':'World Geodetic System 1984 (G730)','id':{'authority':'EPSG','code':1152}},{'name':'World Geodetic System 1984 (G873)','id':{'authority':'EPSG','code':1153}},{'name':'World Geodetic System 1984 (G1150)','id':{'authority':'EPSG','code':1154}},{'name':'World Geodetic System 1984 (G1674)','id':{'authority':'EPSG','code':1155}},{'name':'World Geodetic System 1984 (G1762)','id':{'authority':'EPSG','code':1156}},{'name':'World Geodetic System 1984 (G2139)','id':{'authority':'EPSG','code':1309}},{'name':'World Geodetic System 1984 (G2296)','id':{'authority':'EPSG','code':1383}}],'ellipsoid':{'name':'WGS 84','semi_major_axis':6378137,'inverse_flattening':298.257223563},'accuracy':'2.0','id':{'authority':'EPSG','code':6326}},'coordinate_system':{'subtype':'ellipsoidal','axis':[{'name':'Geodetic latitude','abbreviation':'Lat','direction':'north','unit':'degree'},{'name':'Geodetic longitude','abbreviation':'Lon','direction':'east','unit':'degree'}]},'id':{'authority':'EPSG','code':4326}},'conversion':{'name':'TM 90 NE','method':{'name':'Transverse Mercator','id':{'authority':'EPSG','code':9807}},'parameters':[{'name':'Latitude of natural origin','value':0,'unit':'degree','id':{'authority':'EPSG','code':8801}},{'name':'Longitude of natural origin','value':90,'unit':'degree','id':{'authority':'EPSG','code':8802}},{'name':'Scale factor at natural origin','value':0.9996,'unit':'unity','id':{'authority':'EPSG','code':8805}},{'name':'False easting','value':500000,'unit':'metre','id':{'authority':'EPSG','code':8806}},{'name':'False northing','value':0,'unit':'metre','id':{'authority':'EPSG','code':8807}}]},'coordinate_system':{'subtype':'Cartesian','axis':[{'name':'Easting','abbreviation':'E','direction':'east','unit':'metre'},{'name':'Northing','abbreviation':'N','direction':'north','unit':'metre'}]},'scope':'Engineering survey, topographic mapping.','area':'Bangladesh - onshore and offshore.','bbox':{'south_latitude':18.56,'west_longitude':88.01,'north_latitude':26.64,'east_longitude':92.67},'id':{'authority':'EPSG','code':9680}}"^^xsd:string ;
+    ns1:asWKT "PROJCRS['WGS 84 / TM 90 NE',BASEGEOGCRS['WGS 84',ENSEMBLE['World Geodetic System 1984 ensemble',MEMBER['World Geodetic System 1984 (Transit)'],MEMBER['World Geodetic System 1984 (G730)'],MEMBER['World Geodetic System 1984 (G873)'],MEMBER['World Geodetic System 1984 (G1150)'],MEMBER['World Geodetic System 1984 (G1674)'],MEMBER['World Geodetic System 1984 (G1762)'],MEMBER['World Geodetic System 1984 (G2139)'],MEMBER['World Geodetic System 1984 (G2296)'],ELLIPSOID['WGS 84',6378137,298.257223563,LENGTHUNIT['metre',1]],ENSEMBLEACCURACY[2.0]],PRIMEM['Greenwich',0,ANGLEUNIT['degree',0.0174532925199433]],ID['EPSG',4326]],CONVERSION['TM 90 NE',METHOD['Transverse Mercator',ID['EPSG',9807]],PARAMETER['Latitude of natural origin',0,ANGLEUNIT['degree',0.0174532925199433],ID['EPSG',8801]],PARAMETER['Longitude of natural origin',90,ANGLEUNIT['degree',0.0174532925199433],ID['EPSG',8802]],PARAMETER['Scale factor at natural origin',0.9996,SCALEUNIT['unity',1],ID['EPSG',8805]],PARAMETER['False easting',500000,LENGTHUNIT['metre',1],ID['EPSG',8806]],PARAMETER['False northing',0,LENGTHUNIT['metre',1],ID['EPSG',8807]]],CS[Cartesian,2],AXIS['(E)',east,ORDER[1],LENGTHUNIT['metre',1]],AXIS['(N)',north,ORDER[2],LENGTHUNIT['metre',1]],USAGE[SCOPE['Engineering survey, topographic mapping.'],AREA['Bangladesh - onshore and offshore.'],BBOX[18.56,88.01,26.64,92.67]],ID['EPSG',9680]]"^^ns1:wktLiteral ;
+    ns1:coordinateOperation <http://www.opengis.net/ont/crs/operation/TM_90_NE> ;
+    ns1:coordinateSystem <http://www.opengis.net/def/crs/EPSG/0/9680_cs> ;
+    ns1:datum <http://www.opengis.net/ont/crs/datum/World_Geodetic_System_1984_ensemble> ;
+    ns1:ellipsoid <http://www.opengis.net/ont/crs/geod/1> ;
+    ns1:epsgCode "EPSG:9680"^^xsd:string ;
+    ns1:isApplicableTo <http://www.opengis.net/ont/crs/isbody/Earth> ;
+    ns1:isBound false ;
+    ns1:isGeocentric false ;
+    ns1:isGeographic false ;
+    ns1:isProjected true ;
+    ns1:isVertical false ;
+    ns1:sourceCRS <http://www.opengis.net/def/crs/EPSG/0/4326> .
+

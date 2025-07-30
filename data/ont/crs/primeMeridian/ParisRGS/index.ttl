@@ -1,0 +1,15 @@
+@prefix ns1: <http://www.opengis.net/ont/crs/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.opengis.net/ont/crs/primeMeridian/ParisRGS> a ns1:PrimeMeridian,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
+    rdfs:label "Paris RGS"@en ;
+    void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
+    ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'PrimeMeridian','name':'Paris RGS','longitude':2.33720833333333,'id':{'authority':'EPSG','code':8914}}" ;
+    ns1:asWKT "PRIMEM['Paris RGS',2.33720833333333,ANGLEUNIT['degree',0.0174532925199433],ID['EPSG',8914]]" ;
+    ns1:longitude 2.337208e+00 ;
+    ns1:unit <http://www.ontology-of-units-of-measure.org/resource/om-2/om:degree> .
+

@@ -1,0 +1,14 @@
+@prefix ns1: <http://www.opengis.net/ont/crs/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.opengis.net/ont/crs/datum/EWR2_Intermediate_Reference_Frame> a ns1:GeodeticReferenceFrame,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
+    rdfs:label "Datum: EWR2 Intermediate Reference Frame"@en ;
+    void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
+    ns1:ellipse <http://www.opengis.net/ont/crs/geod/GRS1980> ;
+    ns1:primeMeridian <http://www.opengis.net/ont/crs/primeMeridian/Greenwich> ;
+    ns1:scope "Engineering survey and topographic mapping for railway applications."^^xsd:string .
+

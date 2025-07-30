@@ -1,0 +1,27 @@
+@prefix ns1: <http://www.opengis.net/ont/crs/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.opengis.net/def/crs/EPSG/0/4157> a ns1:GeographicCRS,
+        owl:NamedIndividual,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <http://www.w3.org/ns/prov-o/Entity>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
+    rdfs:label "Mount Dillon"@en ;
+    void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
+    ns1:area_of_use <http://www.opengis.net/def/crs/EPSG/0/4157_area_of_use> ;
+    ns1:asProj4 "+proj=longlat +a=6378293.64520876 +b=6356617.98767984 +no_defs +type=crs"^^xsd:string ;
+    ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'GeographicCRS','name':'Mount Dillon','datum':{'type':'GeodeticReferenceFrame','name':'Mount Dillon','ellipsoid':{'name':'Clarke 1858','semi_major_axis':{'value':20926348,'unit':{'type':'LinearUnit','name':'Clarke's foot','conversion_factor':0.3047972654}},'semi_minor_axis':{'value':20855233,'unit':{'type':'LinearUnit','name':'Clarke's foot','conversion_factor':0.3047972654}}}},'coordinate_system':{'subtype':'ellipsoidal','axis':[{'name':'Geodetic latitude','abbreviation':'Lat','direction':'north','unit':'degree'},{'name':'Geodetic longitude','abbreviation':'Lon','direction':'east','unit':'degree'}]},'scope':'Geodesy.','area':'Trinidad and Tobago - Tobago - onshore.','bbox':{'south_latitude':11.08,'west_longitude':-60.9,'north_latitude':11.41,'east_longitude':-60.44},'id':{'authority':'EPSG','code':4157}}"^^xsd:string ;
+    ns1:asWKT "GEOGCRS['Mount Dillon',DATUM['Mount Dillon',ELLIPSOID['Clarke 1858',20926348,294.260676369261,LENGTHUNIT['Clarke's foot',0.3047972654]]],PRIMEM['Greenwich',0,ANGLEUNIT['degree',0.0174532925199433]],CS[ellipsoidal,2],AXIS['geodetic latitude (Lat)',north,ORDER[1],ANGLEUNIT['degree',0.0174532925199433]],AXIS['geodetic longitude (Lon)',east,ORDER[2],ANGLEUNIT['degree',0.0174532925199433]],USAGE[SCOPE['Geodesy.'],AREA['Trinidad and Tobago - Tobago - onshore.'],BBOX[11.08,-60.9,11.41,-60.44]],ID['EPSG',4157]]"^^ns1:wktLiteral ;
+    ns1:coordinateSystem <http://www.opengis.net/def/crs/EPSG/0/4157_cs> ;
+    ns1:datum <http://www.opengis.net/ont/crs/datum/Mount_Dillon> ;
+    ns1:epsgCode "EPSG:4157"^^xsd:string ;
+    ns1:isApplicableTo <http://www.opengis.net/ont/crs/isbody/Earth> ;
+    ns1:isBound false ;
+    ns1:isGeocentric false ;
+    ns1:isGeographic true ;
+    ns1:isProjected false ;
+    ns1:isVertical false .
+

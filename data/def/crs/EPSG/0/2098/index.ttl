@@ -1,0 +1,29 @@
+@prefix ns1: <http://www.opengis.net/ont/crs/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.opengis.net/def/crs/EPSG/0/2098> a ns1:ProjectedCRS,
+        owl:NamedIndividual,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <http://www.w3.org/ns/prov-o/Entity>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
+    rdfs:label "Korean 1985 / West Belt"@en ;
+    void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
+    ns1:area_of_use <http://www.opengis.net/def/crs/EPSG/0/2098_area_of_use> ;
+    ns1:asProj4 "+proj=tmerc +lat_0=38 +lon_0=125 +k=1 +x_0=200000 +y_0=500000 +ellps=bessel +units=m +no_defs +type=crs"^^xsd:string ;
+    ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'ProjectedCRS','name':'Korean 1985 / West Belt','base_crs':{'name':'Korean 1985','datum':{'type':'GeodeticReferenceFrame','name':'Korean Datum 1985','ellipsoid':{'name':'Bessel 1841','semi_major_axis':6377397.155,'inverse_flattening':299.1528128}},'coordinate_system':{'subtype':'ellipsoidal','axis':[{'name':'Geodetic latitude','abbreviation':'Lat','direction':'north','unit':'degree'},{'name':'Geodetic longitude','abbreviation':'Lon','direction':'east','unit':'degree'}]},'id':{'authority':'EPSG','code':4162}},'conversion':{'name':'Korea West Belt','method':{'name':'Transverse Mercator','id':{'authority':'EPSG','code':9807}},'parameters':[{'name':'Latitude of natural origin','value':38,'unit':'degree','id':{'authority':'EPSG','code':8801}},{'name':'Longitude of natural origin','value':125,'unit':'degree','id':{'authority':'EPSG','code':8802}},{'name':'Scale factor at natural origin','value':1,'unit':'unity','id':{'authority':'EPSG','code':8805}},{'name':'False easting','value':200000,'unit':'metre','id':{'authority':'EPSG','code':8806}},{'name':'False northing','value':500000,'unit':'metre','id':{'authority':'EPSG','code':8807}}]},'coordinate_system':{'subtype':'Cartesian','axis':[{'name':'Northing','abbreviation':'X','direction':'north','unit':'metre'},{'name':'Easting','abbreviation':'Y','direction':'east','unit':'metre'}]},'scope':'Engineering survey, topographic mapping.','area':'Republic of Korea (South Korea) - onshore between 124°E and 126°E.','bbox':{'south_latitude':33.99,'west_longitude':124.53,'north_latitude':38.04,'east_longitude':126},'id':{'authority':'EPSG','code':2098}}"^^xsd:string ;
+    ns1:asWKT "PROJCRS['Korean 1985 / West Belt',BASEGEOGCRS['Korean 1985',DATUM['Korean Datum 1985',ELLIPSOID['Bessel 1841',6377397.155,299.1528128,LENGTHUNIT['metre',1]]],PRIMEM['Greenwich',0,ANGLEUNIT['degree',0.0174532925199433]],ID['EPSG',4162]],CONVERSION['Korea West Belt',METHOD['Transverse Mercator',ID['EPSG',9807]],PARAMETER['Latitude of natural origin',38,ANGLEUNIT['degree',0.0174532925199433],ID['EPSG',8801]],PARAMETER['Longitude of natural origin',125,ANGLEUNIT['degree',0.0174532925199433],ID['EPSG',8802]],PARAMETER['Scale factor at natural origin',1,SCALEUNIT['unity',1],ID['EPSG',8805]],PARAMETER['False easting',200000,LENGTHUNIT['metre',1],ID['EPSG',8806]],PARAMETER['False northing',500000,LENGTHUNIT['metre',1],ID['EPSG',8807]]],CS[Cartesian,2],AXIS['northing (X)',north,ORDER[1],LENGTHUNIT['metre',1]],AXIS['easting (Y)',east,ORDER[2],LENGTHUNIT['metre',1]],USAGE[SCOPE['Engineering survey, topographic mapping.'],AREA['Republic of Korea (South Korea) - onshore between 124°E and 126°E.'],BBOX[33.99,124.53,38.04,126]],ID['EPSG',2098]]"^^ns1:wktLiteral ;
+    ns1:coordinateOperation <http://www.opengis.net/ont/crs/operation/Korea_West_Belt> ;
+    ns1:coordinateSystem <http://www.opengis.net/def/crs/EPSG/0/2098_cs> ;
+    ns1:datum <http://www.opengis.net/ont/crs/datum/Korean_Datum_1985> ;
+    ns1:epsgCode "EPSG:2098"^^xsd:string ;
+    ns1:isApplicableTo <http://www.opengis.net/ont/crs/isbody/Earth> ;
+    ns1:isBound false ;
+    ns1:isGeocentric false ;
+    ns1:isGeographic false ;
+    ns1:isProjected true ;
+    ns1:isVertical false ;
+    ns1:sourceCRS <http://www.opengis.net/def/crs/EPSG/0/4162> .
+

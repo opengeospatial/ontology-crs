@@ -1,0 +1,24 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+
+<http://www.opengis.net/PrimeMeridian_collection> a skos:Collection,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
+    rdfs:label "PrimeMeridian Instances Collection"@en ;
+    void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
+    rdfs:member <http://www.opengis.net/ont/crs/primeMeridian/Athens>,
+        <http://www.opengis.net/ont/crs/primeMeridian/Bern>,
+        <http://www.opengis.net/ont/crs/primeMeridian/Bogota>,
+        <http://www.opengis.net/ont/crs/primeMeridian/Brussels>,
+        <http://www.opengis.net/ont/crs/primeMeridian/Ferro>,
+        <http://www.opengis.net/ont/crs/primeMeridian/Greenwich>,
+        <http://www.opengis.net/ont/crs/primeMeridian/Jakarta>,
+        <http://www.opengis.net/ont/crs/primeMeridian/Lisbon>,
+        <http://www.opengis.net/ont/crs/primeMeridian/Madrid>,
+        <http://www.opengis.net/ont/crs/primeMeridian/Oslo>,
+        <http://www.opengis.net/ont/crs/primeMeridian/Paris>,
+        <http://www.opengis.net/ont/crs/primeMeridian/ParisRGS>,
+        <http://www.opengis.net/ont/crs/primeMeridian/Rome>,
+        <http://www.opengis.net/ont/crs/primeMeridian/Stockholm> .
+

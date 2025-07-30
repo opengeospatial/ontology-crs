@@ -1,0 +1,15 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+
+<http://www.opengis.net/Sphere_collection> a skos:Collection,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
+    rdfs:label "Sphere Instances Collection"@en ;
+    void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
+    rdfs:member <http://www.opengis.net/ont/crs/geod/Clarke_1866_Authalic_Sphere>,
+        <http://www.opengis.net/ont/crs/geod/GRS_1980_Authalic_Sphere>,
+        <http://www.opengis.net/ont/crs/geod/International_1924_Authalic_Sphere>,
+        <http://www.opengis.net/ont/crs/geod/Popular_Visualisation_Sphere>,
+        <http://www.opengis.net/ont/crs/geod/Sphere> .
+

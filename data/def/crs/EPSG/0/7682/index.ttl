@@ -1,0 +1,27 @@
+@prefix ns1: <http://www.opengis.net/ont/crs/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.opengis.net/def/crs/EPSG/0/7682> a ns1:GeographicCRS,
+        owl:NamedIndividual,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <http://www.w3.org/ns/prov-o/Entity>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
+    rdfs:label "GSK-2011"@en ;
+    void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
+    ns1:area_of_use <http://www.opengis.net/def/crs/EPSG/0/7682_area_of_use> ;
+    ns1:asProj4 "+proj=longlat +ellps=GSK2011 +no_defs +type=crs"^^xsd:string ;
+    ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'GeographicCRS','name':'GSK-2011','datum':{'type':'GeodeticReferenceFrame','name':'Geodezicheskaya Sistema Koordinat 2011','ellipsoid':{'name':'GSK-2011','semi_major_axis':6378136.5,'inverse_flattening':298.2564151}},'coordinate_system':{'subtype':'ellipsoidal','axis':[{'name':'Geodetic latitude','abbreviation':'Lat','direction':'north','unit':'degree'},{'name':'Geodetic longitude','abbreviation':'Lon','direction':'east','unit':'degree'},{'name':'Ellipsoidal height','abbreviation':'h','direction':'up','unit':'metre'}]},'scope':'Geodesy.','area':'Russian Federation - onshore and offshore.','bbox':{'south_latitude':39.87,'west_longitude':18.92,'north_latitude':85.19,'east_longitude':-168.97},'id':{'authority':'EPSG','code':7682}}"^^xsd:string ;
+    ns1:asWKT "GEOGCRS['GSK-2011',DATUM['Geodezicheskaya Sistema Koordinat 2011',ELLIPSOID['GSK-2011',6378136.5,298.2564151,LENGTHUNIT['metre',1]]],PRIMEM['Greenwich',0,ANGLEUNIT['degree',0.0174532925199433]],CS[ellipsoidal,3],AXIS['geodetic latitude (Lat)',north,ORDER[1],ANGLEUNIT['degree',0.0174532925199433]],AXIS['geodetic longitude (Lon)',east,ORDER[2],ANGLEUNIT['degree',0.0174532925199433]],AXIS['ellipsoidal height (h)',up,ORDER[3],LENGTHUNIT['metre',1]],USAGE[SCOPE['Geodesy.'],AREA['Russian Federation - onshore and offshore.'],BBOX[39.87,18.92,85.19,-168.97]],ID['EPSG',7682]]"^^ns1:wktLiteral ;
+    ns1:coordinateSystem <http://www.opengis.net/def/crs/EPSG/0/7682_cs> ;
+    ns1:datum <http://www.opengis.net/ont/crs/datum/Geodezicheskaya_Sistema_Koordinat_2011> ;
+    ns1:epsgCode "EPSG:7682"^^xsd:string ;
+    ns1:isApplicableTo <http://www.opengis.net/ont/crs/isbody/Earth> ;
+    ns1:isBound false ;
+    ns1:isGeocentric false ;
+    ns1:isGeographic true ;
+    ns1:isProjected false ;
+    ns1:isVertical false .
+

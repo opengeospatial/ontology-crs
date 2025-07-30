@@ -1,0 +1,19 @@
+@prefix ns1: <http://www.opengis.net/ont/crs/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.opengis.net/ont/crs/geod/Everest_1830__1937_Adjustment_> a ns1:Geoid,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
+    rdfs:label "Everest 1830 (1937 Adjustment)"@en ;
+    void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
+    ns1:approximates <http://www.opengis.net/ont/crs/isbody/Earth> ;
+    ns1:eccentricity 6.637847e-03 ;
+    ns1:flatteningParameter 3.324449e-03 ;
+    ns1:isSphere false ;
+    ns1:semiMajorAxis "6377276.345"^^xsd:string ;
+    ns1:semiMinorAxis "6356075.41314024"^^xsd:string ;
+    skos:definition "+a=6377276.345 +f=0.003324449296662808"^^xsd:string .
+

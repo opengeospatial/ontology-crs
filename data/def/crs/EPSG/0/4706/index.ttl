@@ -1,0 +1,27 @@
+@prefix ns1: <http://www.opengis.net/ont/crs/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.opengis.net/def/crs/EPSG/0/4706> a ns1:GeographicCRS,
+        owl:NamedIndividual,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <http://www.w3.org/ns/prov-o/Entity>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
+    rdfs:label "Egypt Gulf of Suez S-650 TL"@en ;
+    void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
+    ns1:area_of_use <http://www.opengis.net/def/crs/EPSG/0/4706_area_of_use> ;
+    ns1:asProj4 "+proj=longlat +ellps=helmert +no_defs +type=crs"^^xsd:string ;
+    ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'GeographicCRS','name':'Egypt Gulf of Suez S-650 TL','datum':{'type':'GeodeticReferenceFrame','name':'Egypt Gulf of Suez S-650 TL','ellipsoid':{'name':'Helmert 1906','semi_major_axis':6378200,'inverse_flattening':298.3}},'coordinate_system':{'subtype':'ellipsoidal','axis':[{'name':'Geodetic latitude','abbreviation':'Lat','direction':'north','unit':'degree'},{'name':'Geodetic longitude','abbreviation':'Lon','direction':'east','unit':'degree'}]},'scope':'Oil and gas exploration and production.','area':'Egypt - Gulf of Suez.','bbox':{'south_latitude':27.19,'west_longitude':32.34,'north_latitude':30.01,'east_longitude':34.27},'id':{'authority':'EPSG','code':4706}}"^^xsd:string ;
+    ns1:asWKT "GEOGCRS['Egypt Gulf of Suez S-650 TL',DATUM['Egypt Gulf of Suez S-650 TL',ELLIPSOID['Helmert 1906',6378200,298.3,LENGTHUNIT['metre',1]]],PRIMEM['Greenwich',0,ANGLEUNIT['degree',0.0174532925199433]],CS[ellipsoidal,2],AXIS['geodetic latitude (Lat)',north,ORDER[1],ANGLEUNIT['degree',0.0174532925199433]],AXIS['geodetic longitude (Lon)',east,ORDER[2],ANGLEUNIT['degree',0.0174532925199433]],USAGE[SCOPE['Oil and gas exploration and production.'],AREA['Egypt - Gulf of Suez.'],BBOX[27.19,32.34,30.01,34.27]],ID['EPSG',4706]]"^^ns1:wktLiteral ;
+    ns1:coordinateSystem <http://www.opengis.net/def/crs/EPSG/0/4706_cs> ;
+    ns1:datum <http://www.opengis.net/ont/crs/datum/Egypt_Gulf_of_Suez_S-650_TL> ;
+    ns1:epsgCode "EPSG:4706"^^xsd:string ;
+    ns1:isApplicableTo <http://www.opengis.net/ont/crs/isbody/Earth> ;
+    ns1:isBound false ;
+    ns1:isGeocentric false ;
+    ns1:isGeographic true ;
+    ns1:isProjected false ;
+    ns1:isVertical false .
+

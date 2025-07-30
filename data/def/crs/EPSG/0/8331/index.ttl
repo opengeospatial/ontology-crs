@@ -1,0 +1,29 @@
+@prefix ns1: <http://www.opengis.net/ont/crs/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.opengis.net/def/crs/EPSG/0/8331> a ns1:ProjectedCRS,
+        owl:NamedIndividual,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <http://www.w3.org/ns/prov-o/Entity>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
+    rdfs:label "NAD83(2011) / Oregon Owyhee zone (m)"@en ;
+    void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
+    ns1:area_of_use <http://www.opengis.net/def/crs/EPSG/0/8331_area_of_use> ;
+    ns1:asProj4 "+proj=tmerc +lat_0=41.75 +lon_0=-117.583333333333 +k=1.00018 +x_0=70000 +y_0=0 +ellps=GRS80 +units=m +no_defs +type=crs"^^xsd:string ;
+    ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'ProjectedCRS','name':'NAD83(2011) / Oregon Owyhee zone (m)','base_crs':{'name':'NAD83(2011)','datum':{'type':'GeodeticReferenceFrame','name':'NAD83 (National Spatial Reference System 2011)','ellipsoid':{'name':'GRS 1980','semi_major_axis':6378137,'inverse_flattening':298.257222101}},'coordinate_system':{'subtype':'ellipsoidal','axis':[{'name':'Geodetic latitude','abbreviation':'Lat','direction':'north','unit':'degree'},{'name':'Geodetic longitude','abbreviation':'Lon','direction':'east','unit':'degree'}]},'id':{'authority':'EPSG','code':6318}},'conversion':{'name':'Oregon Owyhee zone (meter)','method':{'name':'Transverse Mercator','id':{'authority':'EPSG','code':9807}},'parameters':[{'name':'Latitude of natural origin','value':41.75,'unit':'degree','id':{'authority':'EPSG','code':8801}},{'name':'Longitude of natural origin','value':-117.583333333333,'unit':'degree','id':{'authority':'EPSG','code':8802}},{'name':'Scale factor at natural origin','value':1.00018,'unit':'unity','id':{'authority':'EPSG','code':8805}},{'name':'False easting','value':70000,'unit':'metre','id':{'authority':'EPSG','code':8806}},{'name':'False northing','value':0,'unit':'metre','id':{'authority':'EPSG','code':8807}}]},'coordinate_system':{'subtype':'Cartesian','axis':[{'name':'Easting','abbreviation':'X','direction':'east','unit':'metre'},{'name':'Northing','abbreviation':'Y','direction':'north','unit':'metre'}]},'scope':'Engineering survey.','area':'United States (USA) - Oregon - Owyhee area.','bbox':{'south_latitude':41.88,'west_longitude':-118.14,'north_latitude':43.54,'east_longitude':-116.85},'id':{'authority':'EPSG','code':8331}}"^^xsd:string ;
+    ns1:asWKT "PROJCRS['NAD83(2011) / Oregon Owyhee zone (m)',BASEGEOGCRS['NAD83(2011)',DATUM['NAD83 (National Spatial Reference System 2011)',ELLIPSOID['GRS 1980',6378137,298.257222101,LENGTHUNIT['metre',1]]],PRIMEM['Greenwich',0,ANGLEUNIT['degree',0.0174532925199433]],ID['EPSG',6318]],CONVERSION['Oregon Owyhee zone (meter)',METHOD['Transverse Mercator',ID['EPSG',9807]],PARAMETER['Latitude of natural origin',41.75,ANGLEUNIT['degree',0.0174532925199433],ID['EPSG',8801]],PARAMETER['Longitude of natural origin',-117.583333333333,ANGLEUNIT['degree',0.0174532925199433],ID['EPSG',8802]],PARAMETER['Scale factor at natural origin',1.00018,SCALEUNIT['unity',1],ID['EPSG',8805]],PARAMETER['False easting',70000,LENGTHUNIT['metre',1],ID['EPSG',8806]],PARAMETER['False northing',0,LENGTHUNIT['metre',1],ID['EPSG',8807]]],CS[Cartesian,2],AXIS['easting (X)',east,ORDER[1],LENGTHUNIT['metre',1]],AXIS['northing (Y)',north,ORDER[2],LENGTHUNIT['metre',1]],USAGE[SCOPE['Engineering survey.'],AREA['United States (USA) - Oregon - Owyhee area.'],BBOX[41.88,-118.14,43.54,-116.85]],ID['EPSG',8331]]"^^ns1:wktLiteral ;
+    ns1:coordinateOperation <http://www.opengis.net/ont/crs/operation/Oregon_Owyhee_zone__meter_> ;
+    ns1:coordinateSystem <http://www.opengis.net/def/crs/EPSG/0/8331_cs> ;
+    ns1:datum <http://www.opengis.net/ont/crs/datum/NAD83__National_Spatial_Reference_System_2011_> ;
+    ns1:epsgCode "EPSG:8331"^^xsd:string ;
+    ns1:isApplicableTo <http://www.opengis.net/ont/crs/isbody/Earth> ;
+    ns1:isBound false ;
+    ns1:isGeocentric false ;
+    ns1:isGeographic false ;
+    ns1:isProjected true ;
+    ns1:isVertical false ;
+    ns1:sourceCRS <http://www.opengis.net/def/crs/EPSG/0/6318> .
+

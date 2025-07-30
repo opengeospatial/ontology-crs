@@ -1,0 +1,29 @@
+@prefix ns1: <http://www.opengis.net/ont/crs/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.opengis.net/def/crs/EPSG/0/3535> a ns1:ProjectedCRS,
+        owl:NamedIndividual,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <http://www.w3.org/ns/prov-o/Entity>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
+    rdfs:label "NAD83(NSRS2007) / Indiana West (ftUS)"@en ;
+    void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
+    ns1:area_of_use <http://www.opengis.net/def/crs/EPSG/0/3535_area_of_use> ;
+    ns1:asProj4 "+proj=tmerc +lat_0=37.5 +lon_0=-87.0833333333333 +k=0.999966667 +x_0=900000 +y_0=249999.9998984 +ellps=GRS80 +units=us-ft +no_defs +type=crs"^^xsd:string ;
+    ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'ProjectedCRS','name':'NAD83(NSRS2007) / Indiana West (ftUS)','base_crs':{'name':'NAD83(NSRS2007)','datum':{'type':'GeodeticReferenceFrame','name':'NAD83 (National Spatial Reference System 2007)','ellipsoid':{'name':'GRS 1980','semi_major_axis':6378137,'inverse_flattening':298.257222101}},'coordinate_system':{'subtype':'ellipsoidal','axis':[{'name':'Geodetic latitude','abbreviation':'Lat','direction':'north','unit':'degree'},{'name':'Geodetic longitude','abbreviation':'Lon','direction':'east','unit':'degree'}]},'id':{'authority':'EPSG','code':4759}},'conversion':{'name':'SPCS83 Indiana West zone (US survey foot)','method':{'name':'Transverse Mercator','id':{'authority':'EPSG','code':9807}},'parameters':[{'name':'Latitude of natural origin','value':37.5,'unit':'degree','id':{'authority':'EPSG','code':8801}},{'name':'Longitude of natural origin','value':-87.0833333333333,'unit':'degree','id':{'authority':'EPSG','code':8802}},{'name':'Scale factor at natural origin','value':0.999966667,'unit':'unity','id':{'authority':'EPSG','code':8805}},{'name':'False easting','value':2952750,'unit':{'type':'LinearUnit','name':'US survey foot','conversion_factor':0.304800609601219},'id':{'authority':'EPSG','code':8806}},{'name':'False northing','value':820208.333,'unit':{'type':'LinearUnit','name':'US survey foot','conversion_factor':0.304800609601219},'id':{'authority':'EPSG','code':8807}}]},'coordinate_system':{'subtype':'Cartesian','axis':[{'name':'Easting','abbreviation':'X','direction':'east','unit':{'type':'LinearUnit','name':'US survey foot','conversion_factor':0.304800609601219}},{'name':'Northing','abbreviation':'Y','direction':'north','unit':{'type':'LinearUnit','name':'US survey foot','conversion_factor':0.304800609601219}}]},'scope':'Engineering survey, topographic mapping.','area':'United States (USA) - Indiana - counties of Benton; Boone; Carroll; Clay; Clinton; Crawford; Daviess; Dubois; Fountain; Gibson; Greene; Hendricks; Jasper; Knox; La Porte; Lake; Lawrence; Martin; Monroe; Montgomery; Morgan; Newton; Orange; Owen; Parke; Perry; Pike; Porter; Posey; Pulaski; Putnam; Spencer; Starke; Sullivan; Tippecanoe; Vanderburgh; Vermillion; Vigo; Warren; Warrick; White.','bbox':{'south_latitude':37.77,'west_longitude':-88.1,'north_latitude':41.77,'east_longitude':-86.24},'id':{'authority':'EPSG','code':3535}}"^^xsd:string ;
+    ns1:asWKT "PROJCRS['NAD83(NSRS2007) / Indiana West (ftUS)',BASEGEOGCRS['NAD83(NSRS2007)',DATUM['NAD83 (National Spatial Reference System 2007)',ELLIPSOID['GRS 1980',6378137,298.257222101,LENGTHUNIT['metre',1]]],PRIMEM['Greenwich',0,ANGLEUNIT['degree',0.0174532925199433]],ID['EPSG',4759]],CONVERSION['SPCS83 Indiana West zone (US survey foot)',METHOD['Transverse Mercator',ID['EPSG',9807]],PARAMETER['Latitude of natural origin',37.5,ANGLEUNIT['degree',0.0174532925199433],ID['EPSG',8801]],PARAMETER['Longitude of natural origin',-87.0833333333333,ANGLEUNIT['degree',0.0174532925199433],ID['EPSG',8802]],PARAMETER['Scale factor at natural origin',0.999966667,SCALEUNIT['unity',1],ID['EPSG',8805]],PARAMETER['False easting',2952750,LENGTHUNIT['US survey foot',0.304800609601219],ID['EPSG',8806]],PARAMETER['False northing',820208.333,LENGTHUNIT['US survey foot',0.304800609601219],ID['EPSG',8807]]],CS[Cartesian,2],AXIS['easting (X)',east,ORDER[1],LENGTHUNIT['US survey foot',0.304800609601219]],AXIS['northing (Y)',north,ORDER[2],LENGTHUNIT['US survey foot',0.304800609601219]],USAGE[SCOPE['Engineering survey, topographic mapping.'],AREA['United States (USA) - Indiana - counties of Benton; Boone; Carroll; Clay; Clinton; Crawford; Daviess; Dubois; Fountain; Gibson; Greene; Hendricks; Jasper; Knox; La Porte; Lake; Lawrence; Martin; Monroe; Montgomery; Morgan; Newton; Orange; Owen; Parke; Perry; Pike; Porter; Posey; Pulaski; Putnam; Spencer; Starke; Sullivan; Tippecanoe; Vanderburgh; Vermillion; Vigo; Warren; Warrick; White.'],BBOX[37.77,-88.1,41.77,-86.24]],ID['EPSG',3535]]"^^ns1:wktLiteral ;
+    ns1:coordinateOperation <http://www.opengis.net/ont/crs/operation/SPCS83_Indiana_West_zone__US_survey_foot_> ;
+    ns1:coordinateSystem <http://www.opengis.net/def/crs/EPSG/0/3535_cs> ;
+    ns1:datum <http://www.opengis.net/ont/crs/datum/NAD83__National_Spatial_Reference_System_2007_> ;
+    ns1:epsgCode "EPSG:3535"^^xsd:string ;
+    ns1:isApplicableTo <http://www.opengis.net/ont/crs/isbody/Earth> ;
+    ns1:isBound false ;
+    ns1:isGeocentric false ;
+    ns1:isGeographic false ;
+    ns1:isProjected true ;
+    ns1:isVertical false ;
+    ns1:sourceCRS <http://www.opengis.net/def/crs/EPSG/0/4759> .
+

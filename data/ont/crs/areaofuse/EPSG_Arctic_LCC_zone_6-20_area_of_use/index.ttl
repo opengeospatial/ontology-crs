@@ -1,0 +1,12 @@
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix ns1: <http://www.opengis.net/ont/crs/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+
+<http://www.opengis.net/ont/crs/areaofuse/EPSG_Arctic_LCC_zone_6-20_area_of_use> a ns1:AreaOfUse,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
+    rdfs:label "Arctic - between 71°10'N and 66°10'N, approximately 122°W to approximately 103°W. May be extended westwards or eastwards within the latitude limits."@en ;
+    void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
+    ns1:extent "<http://www.opengis.net/def/crs/OGC/1.3/CRS84> POLYGON ((-103 66.16, -103 71.17, -122 71.17, -122 66.16, -103 66.16))"^^geo:wktLiteral .
+

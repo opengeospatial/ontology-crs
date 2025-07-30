@@ -1,0 +1,12 @@
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix ns1: <http://www.opengis.net/ont/crs/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+
+<http://www.opengis.net/ont/crs/areaofuse/Kansas_regional_zone_16_Pratt__ftUS__area_of_use> a ns1:AreaOfUse,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
+    rdfs:label "United States (USA) - Kansas - counties of Barber; Pratt; Stafford."@en ;
+    void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
+    ns1:extent "<http://www.opengis.net/def/crs/OGC/1.3/CRS84> POLYGON ((-98.34 36.99, -98.34 38.27, -99.03 38.27, -99.03 36.99, -98.34 36.99))"^^geo:wktLiteral .
+

@@ -1,0 +1,27 @@
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix ns1: <http://www.opengis.net/ont/crs/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.opengis.net/ont/crs/operation/EPSG_Arctic_LCC_zone_4-12> a ns1:LambertConformalConicProjection,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
+    rdfs:label "EPSG Arctic LCC zone 4-12: Lambert Conic Conformal (2SP)"@en ;
+    void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
+    ns1:accuracy -1e+00 ;
+    ns1:area_of_use <http://www.opengis.net/ont/crs/areaofuse/EPSG_Arctic_LCC_zone_4-12_area_of_use> ;
+    ns1:asProj4 "+proj=pipeline +step +proj=axisswap +order=2,1 +step +proj=unitconvert +xy_in=deg +xy_out=rad +step +proj=lcc +lat_0=75.3644033055556 +lon_0=-155 +lat_1=77 +lat_2=73.6666666666667 +x_0=12500000 +y_0=4500000 +ellps=WGS84" ;
+    ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'Conversion','name':'EPSG Arctic LCC zone 4-12','method':{'name':'Lambert Conic Conformal (2SP)','id':{'authority':'EPSG','code':9802}},'parameters':[{'name':'Latitude of false origin','value':75.3644033055556,'unit':'degree','id':{'authority':'EPSG','code':8821}},{'name':'Longitude of false origin','value':-155,'unit':'degree','id':{'authority':'EPSG','code':8822}},{'name':'Latitude of 1st standard parallel','value':77,'unit':'degree','id':{'authority':'EPSG','code':8823}},{'name':'Latitude of 2nd standard parallel','value':73.6666666666667,'unit':'degree','id':{'authority':'EPSG','code':8824}},{'name':'Easting at false origin','value':12500000,'unit':'metre','id':{'authority':'EPSG','code':8826}},{'name':'Northing at false origin','value':4500000,'unit':'metre','id':{'authority':'EPSG','code':8827}}],'id':{'authority':'EPSG','code':6005}}" ;
+    ns1:asWKT "CONVERSION['EPSG Arctic LCC zone 4-12',METHOD['Lambert Conic Conformal (2SP)',ID['EPSG',9802]],PARAMETER['Latitude of false origin',75.3644033055556,ANGLEUNIT['degree',0.0174532925199433],ID['EPSG',8821]],PARAMETER['Longitude of false origin',-155,ANGLEUNIT['degree',0.0174532925199433],ID['EPSG',8822]],PARAMETER['Latitude of 1st standard parallel',77,ANGLEUNIT['degree',0.0174532925199433],ID['EPSG',8823]],PARAMETER['Latitude of 2nd standard parallel',73.6666666666667,ANGLEUNIT['degree',0.0174532925199433],ID['EPSG',8824]],PARAMETER['Easting at false origin',12500000,LENGTHUNIT['metre',1],ID['EPSG',8826]],PARAMETER['Northing at false origin',4500000,LENGTHUNIT['metre',1],ID['EPSG',8827]],ID['EPSG',6005]]"^^geo:wktLiteral ;
+    ns1:eastingAtFalseOrigin 1.25e+07 ;
+    ns1:has_ballpark_transformation false ;
+    ns1:latitudeOf1StStandardParallel 7.7e+01 ;
+    ns1:latitudeOf2NdStandardParallel 7.366667e+01 ;
+    ns1:latitudeOfFalseOrigin 7.53644e+01 ;
+    ns1:longitudeOfFalseOrigin -1.55e+02 ;
+    ns1:method_name "Lambert Conic Conformal (2SP)" ;
+    ns1:northingAtFalseOrigin 4.5e+06 ;
+    ns1:scope "Exploration and development, mapping."^^xsd:string ;
+    rdfs:comment "May be defined using LCC (1SP) method (EPSG method code 9801) with value of latitude for natural origin as latitude at false origin here and scale factor = 0.9995765501."^^xsd:string .
+

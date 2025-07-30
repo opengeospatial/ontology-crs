@@ -1,0 +1,12 @@
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix ns1: <http://www.w3.org/ns/pim/space#> .
+@prefix ns2: <http://www.w3.org/ns/solid/terms#> .
+
+<docs//profile/card> a foaf:PersonalProfileDocument ;
+    foaf:primaryTopic <https://opengeospatial.github.io/ontology-crs/data//profile/card#> .
+
+<https://opengeospatial.github.io/ontology-crs/data//profile/card#> a foaf:Person ;
+    ns1:storage <https://opengeospatial.github.io/ontology-crs/data/geoepsg_dataset> ;
+    ns2:privateTypeIndex <https://opengeospatial.github.io/ontology-crs/data//settings/privateTypeIndex.ttl> ;
+    ns2:publicTypeIndex <https://opengeospatial.github.io/ontology-crs/data//settings/publicTypeIndex.ttl> .
+

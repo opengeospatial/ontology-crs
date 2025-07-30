@@ -1,0 +1,27 @@
+@prefix ns1: <http://www.opengis.net/ont/crs/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.opengis.net/def/crs/EPSG/0/5755> a ns1:VerticalCRS,
+        owl:NamedIndividual,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <http://www.w3.org/ns/prov-o/Entity>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
+    rdfs:label "NGG1977 height"@en ;
+    void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
+    ns1:area_of_use <http://www.opengis.net/def/crs/EPSG/0/5755_area_of_use> ;
+    ns1:asProj4 "+vunits=m +no_defs +type=crs"^^xsd:string ;
+    ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'VerticalCRS','name':'NGG1977 height','datum':{'type':'VerticalReferenceFrame','name':'Nivellement General Guyanais 1977'},'coordinate_system':{'subtype':'vertical','axis':[{'name':'Gravity-related height','abbreviation':'H','direction':'up','unit':'metre'}]},'scope':'Geodesy, engineering survey, topographic mapping.','area':'French Guiana - onshore.','bbox':{'south_latitude':2.11,'west_longitude':-54.61,'north_latitude':5.81,'east_longitude':-51.61},'id':{'authority':'EPSG','code':5755}}"^^xsd:string ;
+    ns1:asWKT "VERTCRS['NGG1977 height',VDATUM['Nivellement General Guyanais 1977'],CS[vertical,1],AXIS['gravity-related height (H)',up,LENGTHUNIT['metre',1]],USAGE[SCOPE['Geodesy, engineering survey, topographic mapping.'],AREA['French Guiana - onshore.'],BBOX[2.11,-54.61,5.81,-51.61]],ID['EPSG',5755]]"^^ns1:wktLiteral ;
+    ns1:coordinateSystem <http://www.opengis.net/def/crs/EPSG/0/5755_cs> ;
+    ns1:datum <http://www.opengis.net/ont/crs/datum/Nivellement_General_Guyanais_1977> ;
+    ns1:epsgCode "EPSG:5755"^^xsd:string ;
+    ns1:isApplicableTo <http://www.opengis.net/ont/crs/isbody/Earth> ;
+    ns1:isBound false ;
+    ns1:isGeocentric false ;
+    ns1:isGeographic false ;
+    ns1:isProjected false ;
+    ns1:isVertical true .
+

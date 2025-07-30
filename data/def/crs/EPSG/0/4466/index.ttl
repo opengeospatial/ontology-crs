@@ -1,0 +1,27 @@
+@prefix ns1: <http://www.opengis.net/ont/crs/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.opengis.net/def/crs/EPSG/0/4466> a ns1:GeographicCRS,
+        owl:NamedIndividual,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <http://www.w3.org/ns/prov-o/Entity>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
+    rdfs:label "RGSPM06"@en ;
+    void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
+    ns1:area_of_use <http://www.opengis.net/def/crs/EPSG/0/4466_area_of_use> ;
+    ns1:asProj4 "+proj=longlat +ellps=GRS80 +no_defs +type=crs"^^xsd:string ;
+    ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'GeographicCRS','name':'RGSPM06','datum':{'type':'GeodeticReferenceFrame','name':'Reseau Geodesique de Saint Pierre et Miquelon 2006','ellipsoid':{'name':'GRS 1980','semi_major_axis':6378137,'inverse_flattening':298.257222101}},'coordinate_system':{'subtype':'ellipsoidal','axis':[{'name':'Geodetic latitude','abbreviation':'Lat','direction':'north','unit':'degree'},{'name':'Geodetic longitude','abbreviation':'Lon','direction':'east','unit':'degree'},{'name':'Ellipsoidal height','abbreviation':'h','direction':'up','unit':'metre'}]},'scope':'Geodesy; air, land and sea navigation and safety of life purposes.','area':'St Pierre and Miquelon - onshore and offshore.','bbox':{'south_latitude':43.41,'west_longitude':-57.1,'north_latitude':47.37,'east_longitude':-55.9},'id':{'authority':'EPSG','code':4466}}"^^xsd:string ;
+    ns1:asWKT "GEOGCRS['RGSPM06',DATUM['Reseau Geodesique de Saint Pierre et Miquelon 2006',ELLIPSOID['GRS 1980',6378137,298.257222101,LENGTHUNIT['metre',1]]],PRIMEM['Greenwich',0,ANGLEUNIT['degree',0.0174532925199433]],CS[ellipsoidal,3],AXIS['geodetic latitude (Lat)',north,ORDER[1],ANGLEUNIT['degree',0.0174532925199433]],AXIS['geodetic longitude (Lon)',east,ORDER[2],ANGLEUNIT['degree',0.0174532925199433]],AXIS['ellipsoidal height (h)',up,ORDER[3],LENGTHUNIT['metre',1]],USAGE[SCOPE['Geodesy; air, land and sea navigation and safety of life purposes.'],AREA['St Pierre and Miquelon - onshore and offshore.'],BBOX[43.41,-57.1,47.37,-55.9]],ID['EPSG',4466]]"^^ns1:wktLiteral ;
+    ns1:coordinateSystem <http://www.opengis.net/def/crs/EPSG/0/4466_cs> ;
+    ns1:datum <http://www.opengis.net/ont/crs/datum/Reseau_Geodesique_de_Saint_Pierre_et_Miquelon_2006> ;
+    ns1:epsgCode "EPSG:4466"^^xsd:string ;
+    ns1:isApplicableTo <http://www.opengis.net/ont/crs/isbody/Earth> ;
+    ns1:isBound false ;
+    ns1:isGeocentric false ;
+    ns1:isGeographic true ;
+    ns1:isProjected false ;
+    ns1:isVertical false .
+

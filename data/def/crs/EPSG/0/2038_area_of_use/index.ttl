@@ -1,0 +1,12 @@
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix ns1: <http://www.opengis.net/ont/crs/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+
+<http://www.opengis.net/def/crs/EPSG/0/2038_area_of_use> a ns1:AreaOfUse,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
+    rdfs:label "Canada south of 60°N and between 66°W and 60°W - New Brunswick (NB), Labrador, Nova Scotia (NS), Prince Edward Island (PEI), Quebec."@en ;
+    void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
+    ns1:extent "<http://www.opengis.net/def/crs/OGC/1.3/CRS84> POLYGON ((-60 43.2, -60 60, -66 60, -66 43.2, -60 43.2))"^^geo:wktLiteral .
+

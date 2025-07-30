@@ -1,0 +1,15 @@
+@prefix ns1: <http://www.opengis.net/ont/crs/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.opengis.net/ont/crs/primeMeridian/Ferro> a ns1:PrimeMeridian,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
+    rdfs:label "Ferro"@en ;
+    void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
+    ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'PrimeMeridian','name':'Ferro','longitude':-17.6666666666667,'id':{'authority':'EPSG','code':8909}}" ;
+    ns1:asWKT "PRIMEM['Ferro',-17.6666666666667,ANGLEUNIT['degree',0.0174532925199433],ID['EPSG',8909]]" ;
+    ns1:longitude -1.766667e+01 ;
+    ns1:unit <http://www.ontology-of-units-of-measure.org/resource/om-2/om:degree> .
+

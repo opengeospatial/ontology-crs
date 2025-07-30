@@ -1,0 +1,25 @@
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix ns1: <http://www.opengis.net/ont/crs/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.opengis.net/ont/crs/operation/Portugal_Bonne_New> a ns1:CoordinateConversionOperation,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
+    rdfs:label "Portugal Bonne New: Bonne (South Orientated)"@en ;
+    void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
+    ns1:accuracy -1e+00 ;
+    ns1:area_of_use <http://www.opengis.net/ont/crs/areaofuse/Portugal_Bonne_New_area_of_use> ;
+    ns1:asProj4 "None" ;
+    ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'Conversion','name':'Portugal Bonne New','method':{'name':'Bonne (South Orientated)','id':{'authority':'EPSG','code':9828}},'parameters':[{'name':'Latitude of natural origin','value':39.6666666666667,'unit':'degree','id':{'authority':'EPSG','code':8801}},{'name':'Longitude of natural origin','value':-8.13190611111111,'unit':'degree','id':{'authority':'EPSG','code':8802}},{'name':'False easting','value':0,'unit':'metre','id':{'authority':'EPSG','code':8806}},{'name':'False northing','value':0,'unit':'metre','id':{'authority':'EPSG','code':8807}}],'id':{'authority':'EPSG','code':5019}}" ;
+    ns1:asWKT "CONVERSION['Portugal Bonne New',METHOD['Bonne (South Orientated)',ID['EPSG',9828]],PARAMETER['Latitude of natural origin',39.6666666666667,ANGLEUNIT['degree',0.0174532925199433],ID['EPSG',8801]],PARAMETER['Longitude of natural origin',-8.13190611111111,ANGLEUNIT['degree',0.0174532925199433],ID['EPSG',8802]],PARAMETER['False easting',0,LENGTHUNIT['metre',1],ID['EPSG',8806]],PARAMETER['False northing',0,LENGTHUNIT['metre',1],ID['EPSG',8807]],ID['EPSG',5019]]"^^geo:wktLiteral ;
+    ns1:falseEasting 0e+00 ;
+    ns1:falseNorthing 0e+00 ;
+    ns1:has_ballpark_transformation false ;
+    ns1:latitudeOfNaturalOrigin 3.966667e+01 ;
+    ns1:longitudeOfNaturalOrigin -8.131906e+00 ;
+    ns1:method_name "Bonne (South Orientated)" ;
+    ns1:scope "Topographic mapping (1:50,000)."^^xsd:string ;
+    rdfs:comment "Replaces original definition referenced to Lisbon meridian (proj code 19979)."^^xsd:string .
+

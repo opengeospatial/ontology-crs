@@ -1,0 +1,15 @@
+@prefix ns1: <http://www.opengis.net/ont/crs/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+
+<http://www.opengis.net/def/crs/EPSG/0/9850_cs> a ns1:CartesianCoordinateSystem,
+        ns1:PlanarCoordinateSystem,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
+    rdfs:label "EPSG:9850 CS: cartesian" ;
+    void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
+    ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'CoordinateSystem','subtype':'Cartesian','axis':[{'name':'Easting','abbreviation':'X','direction':'east','unit':'metre'},{'name':'Northing','abbreviation':'Y','direction':'north','unit':'metre'}],'id':{'authority':'EPSG','code':4499}}" ;
+    ns1:asWKT "CS[Cartesian,2],AXIS['easting (X)',east,ORDER[1],LENGTHUNIT['metre',1,ID['EPSG',9001]]],AXIS['northing (Y)',north,ORDER[2],LENGTHUNIT['metre',1,ID['EPSG',9001]]]" ;
+    ns1:axis <http://www.opengis.net/ont/crs/cs/axis/Easting_metre_east>,
+        <http://www.opengis.net/ont/crs/cs/axis/Northing_metre_north> .
+

@@ -1,0 +1,14 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.opengis.net/geoepsg_dataset_www.w3.org_ns_prov-o_> a void:Linkset,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
+    rdfs:label "Linkset: geoepsg_dataset - prov1:"@en ;
+    void:linkPredicate rdf:type ;
+    void:objectsTarget <http://www.w3.org/ns/prov-o/> ;
+    void:subjectsTarget <http://www.opengis.net/geoepsg_dataset> ;
+    void:triples 6654 .
+

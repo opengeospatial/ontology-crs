@@ -1,0 +1,26 @@
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix ns1: <http://www.opengis.net/ont/crs/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.opengis.net/ont/crs/operation/Statistics_Canada_Lambert> a ns1:LambertConformalConicProjection,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
+    rdfs:label "Statistics Canada Lambert: Lambert Conic Conformal (2SP)"@en ;
+    void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
+    ns1:accuracy -1e+00 ;
+    ns1:area_of_use <http://www.opengis.net/ont/crs/areaofuse/Statistics_Canada_Lambert_area_of_use> ;
+    ns1:asProj4 "+proj=pipeline +step +proj=axisswap +order=2,1 +step +proj=unitconvert +xy_in=deg +xy_out=rad +step +proj=lcc +lat_0=63.390675 +lon_0=-91.8666666666667 +lat_1=49 +lat_2=77 +x_0=6200000 +y_0=3000000 +ellps=GRS80" ;
+    ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'Conversion','name':'Statistics Canada Lambert','method':{'name':'Lambert Conic Conformal (2SP)','id':{'authority':'EPSG','code':9802}},'parameters':[{'name':'Latitude of false origin','value':63.390675,'unit':'degree','id':{'authority':'EPSG','code':8821}},{'name':'Longitude of false origin','value':-91.8666666666667,'unit':'degree','id':{'authority':'EPSG','code':8822}},{'name':'Latitude of 1st standard parallel','value':49,'unit':'degree','id':{'authority':'EPSG','code':8823}},{'name':'Latitude of 2nd standard parallel','value':77,'unit':'degree','id':{'authority':'EPSG','code':8824}},{'name':'Easting at false origin','value':6200000,'unit':'metre','id':{'authority':'EPSG','code':8826}},{'name':'Northing at false origin','value':3000000,'unit':'metre','id':{'authority':'EPSG','code':8827}}],'id':{'authority':'EPSG','code':19897}}" ;
+    ns1:asWKT "CONVERSION['Statistics Canada Lambert',METHOD['Lambert Conic Conformal (2SP)',ID['EPSG',9802]],PARAMETER['Latitude of false origin',63.390675,ANGLEUNIT['degree',0.0174532925199433],ID['EPSG',8821]],PARAMETER['Longitude of false origin',-91.8666666666667,ANGLEUNIT['degree',0.0174532925199433],ID['EPSG',8822]],PARAMETER['Latitude of 1st standard parallel',49,ANGLEUNIT['degree',0.0174532925199433],ID['EPSG',8823]],PARAMETER['Latitude of 2nd standard parallel',77,ANGLEUNIT['degree',0.0174532925199433],ID['EPSG',8824]],PARAMETER['Easting at false origin',6200000,LENGTHUNIT['metre',1],ID['EPSG',8826]],PARAMETER['Northing at false origin',3000000,LENGTHUNIT['metre',1],ID['EPSG',8827]],ID['EPSG',19897]]"^^geo:wktLiteral ;
+    ns1:eastingAtFalseOrigin 6.2e+06 ;
+    ns1:has_ballpark_transformation false ;
+    ns1:latitudeOf1StStandardParallel 4.9e+01 ;
+    ns1:latitudeOf2NdStandardParallel 7.7e+01 ;
+    ns1:latitudeOfFalseOrigin 6.339068e+01 ;
+    ns1:longitudeOfFalseOrigin -9.186667e+01 ;
+    ns1:method_name "Lambert Conic Conformal (2SP)" ;
+    ns1:northingAtFalseOrigin 3e+06 ;
+    ns1:scope "Topographic mapping (small scale)."^^xsd:string .
+

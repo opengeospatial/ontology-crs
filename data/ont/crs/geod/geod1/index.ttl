@@ -1,0 +1,7 @@
+@prefix void: <http://rdfs.org/ns/void#> .
+
+<http://www.opengis.net/ont/crs/geod/geod1> a <http://www.opengis.net/ont/crs/Geoid>,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
+    void:inDataset <http://www.opengis.net/geoepsg_dataset> .
+

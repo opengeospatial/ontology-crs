@@ -1,0 +1,15 @@
+@prefix ns1: <http://www.opengis.net/ont/crs/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.opengis.net/ont/crs/datum/Danger_1950> a ns1:VerticalReferenceFrame,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
+    rdfs:label "Datum: Danger 1950"@en ;
+    void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
+    ns1:scope "Geodesy, engineering survey, topographic mapping."^^xsd:string ;
+    ns1:usage ns1:EngineeringSurvey,
+        ns1:Geodesy,
+        ns1:TopographicMap .
+

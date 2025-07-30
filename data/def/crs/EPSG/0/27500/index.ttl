@@ -1,0 +1,29 @@
+@prefix ns1: <http://www.opengis.net/ont/crs/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.opengis.net/def/crs/EPSG/0/27500> a ns1:ProjectedCRS,
+        owl:NamedIndividual,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <http://www.w3.org/ns/prov-o/Entity>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
+    rdfs:label "ATF (Paris) / Nord de Guerre"@en ;
+    void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
+    ns1:area_of_use <http://www.opengis.net/def/crs/EPSG/0/27500_area_of_use> ;
+    ns1:asProj4 "+proj=lcc +lat_1=49.5 +lat_0=49.5 +lon_0=5.4 +k_0=0.99950908 +x_0=500000 +y_0=300000 +a=6376523 +rf=308.64 +pm=2.33720833333333 +units=m +no_defs +type=crs"^^xsd:string ;
+    ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'ProjectedCRS','name':'ATF (Paris) / Nord de Guerre','base_crs':{'name':'ATF (Paris)','datum':{'type':'GeodeticReferenceFrame','name':'Ancienne Triangulation Francaise (Paris)','ellipsoid':{'name':'Plessis 1817','semi_major_axis':6376523,'inverse_flattening':308.64},'prime_meridian':{'name':'Paris RGS','longitude':2.33720833333333}},'coordinate_system':{'subtype':'ellipsoidal','axis':[{'name':'Geodetic latitude','abbreviation':'Lat','direction':'north','unit':{'type':'AngularUnit','name':'grad','conversion_factor':0.0157079632679489}},{'name':'Geodetic longitude','abbreviation':'Lon','direction':'east','unit':{'type':'AngularUnit','name':'grad','conversion_factor':0.0157079632679489}}]},'id':{'authority':'EPSG','code':4901}},'conversion':{'name':'Nord de Guerre','method':{'name':'Lambert Conic Conformal (1SP)','id':{'authority':'EPSG','code':9801}},'parameters':[{'name':'Latitude of natural origin','value':55,'unit':{'type':'AngularUnit','name':'grad','conversion_factor':0.0157079632679489},'id':{'authority':'EPSG','code':8801}},{'name':'Longitude of natural origin','value':6,'unit':{'type':'AngularUnit','name':'grad','conversion_factor':0.0157079632679489},'id':{'authority':'EPSG','code':8802}},{'name':'Scale factor at natural origin','value':0.99950908,'unit':'unity','id':{'authority':'EPSG','code':8805}},{'name':'False easting','value':500000,'unit':'metre','id':{'authority':'EPSG','code':8806}},{'name':'False northing','value':300000,'unit':'metre','id':{'authority':'EPSG','code':8807}}]},'coordinate_system':{'subtype':'Cartesian','axis':[{'name':'Easting','abbreviation':'X','direction':'east','unit':'metre'},{'name':'Northing','abbreviation':'Y','direction':'north','unit':'metre'}]},'scope':'Engineering survey, topographic mapping.','area':'France - Alsace.','bbox':{'south_latitude':47.42,'west_longitude':6.84,'north_latitude':49.07,'east_longitude':8.23},'id':{'authority':'EPSG','code':27500}}"^^xsd:string ;
+    ns1:asWKT "PROJCRS['ATF (Paris) / Nord de Guerre',BASEGEOGCRS['ATF (Paris)',DATUM['Ancienne Triangulation Francaise (Paris)',ELLIPSOID['Plessis 1817',6376523,308.64,LENGTHUNIT['metre',1]]],PRIMEM['Paris RGS',2.33720833333333,ANGLEUNIT['degree',0.0174532925199433]],ID['EPSG',4901]],CONVERSION['Nord de Guerre',METHOD['Lambert Conic Conformal (1SP)',ID['EPSG',9801]],PARAMETER['Latitude of natural origin',55,ANGLEUNIT['grad',0.0157079632679489],ID['EPSG',8801]],PARAMETER['Longitude of natural origin',6,ANGLEUNIT['grad',0.0157079632679489],ID['EPSG',8802]],PARAMETER['Scale factor at natural origin',0.99950908,SCALEUNIT['unity',1],ID['EPSG',8805]],PARAMETER['False easting',500000,LENGTHUNIT['metre',1],ID['EPSG',8806]],PARAMETER['False northing',300000,LENGTHUNIT['metre',1],ID['EPSG',8807]]],CS[Cartesian,2],AXIS['easting (X)',east,ORDER[1],LENGTHUNIT['metre',1]],AXIS['northing (Y)',north,ORDER[2],LENGTHUNIT['metre',1]],USAGE[SCOPE['Engineering survey, topographic mapping.'],AREA['France - Alsace.'],BBOX[47.42,6.84,49.07,8.23]],ID['EPSG',27500]]"^^ns1:wktLiteral ;
+    ns1:coordinateOperation <http://www.opengis.net/ont/crs/operation/Nord_de_Guerre> ;
+    ns1:coordinateSystem <http://www.opengis.net/def/crs/EPSG/0/27500_cs> ;
+    ns1:datum <http://www.opengis.net/ont/crs/datum/Ancienne_Triangulation_Francaise__Paris_> ;
+    ns1:epsgCode "EPSG:27500"^^xsd:string ;
+    ns1:isApplicableTo <http://www.opengis.net/ont/crs/isbody/Earth> ;
+    ns1:isBound false ;
+    ns1:isGeocentric false ;
+    ns1:isGeographic false ;
+    ns1:isProjected true ;
+    ns1:isVertical false ;
+    ns1:sourceCRS <http://www.opengis.net/def/crs/EPSG/0/4901> .
+

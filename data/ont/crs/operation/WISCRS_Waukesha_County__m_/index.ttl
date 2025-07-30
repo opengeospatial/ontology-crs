@@ -1,0 +1,26 @@
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix ns1: <http://www.opengis.net/ont/crs/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.opengis.net/ont/crs/operation/WISCRS_Waukesha_County__m_> a ns1:TransverseMercatorProjection,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
+    rdfs:label "WISCRS Waukesha County (m): Transverse Mercator"@en ;
+    void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
+    ns1:accuracy -1e+00 ;
+    ns1:area_of_use <http://www.opengis.net/ont/crs/areaofuse/WISCRS_Waukesha_County__m__area_of_use> ;
+    ns1:asProj4 "+proj=pipeline +step +proj=axisswap +order=2,1 +step +proj=unitconvert +xy_in=deg +xy_out=rad +step +proj=tmerc +lat_0=42.5694444444444 +lon_0=-88.225 +k=1.0000346179 +x_0=208788.418 +y_0=0.0034 +ellps=GRS80" ;
+    ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'Conversion','name':'WISCRS Waukesha County (m)','method':{'name':'Transverse Mercator','id':{'authority':'EPSG','code':9807}},'parameters':[{'name':'Latitude of natural origin','value':42.5694444444444,'unit':'degree','id':{'authority':'EPSG','code':8801}},{'name':'Longitude of natural origin','value':-88.225,'unit':'degree','id':{'authority':'EPSG','code':8802}},{'name':'Scale factor at natural origin','value':1.0000346179,'unit':'unity','id':{'authority':'EPSG','code':8805}},{'name':'False easting','value':208788.418,'unit':'metre','id':{'authority':'EPSG','code':8806}},{'name':'False northing','value':0.0034,'unit':'metre','id':{'authority':'EPSG','code':8807}}],'id':{'authority':'EPSG','code':7524}}" ;
+    ns1:asWKT "CONVERSION['WISCRS Waukesha County (m)',METHOD['Transverse Mercator',ID['EPSG',9807]],PARAMETER['Latitude of natural origin',42.5694444444444,ANGLEUNIT['degree',0.0174532925199433],ID['EPSG',8801]],PARAMETER['Longitude of natural origin',-88.225,ANGLEUNIT['degree',0.0174532925199433],ID['EPSG',8802]],PARAMETER['Scale factor at natural origin',1.0000346179,SCALEUNIT['unity',1],ID['EPSG',8805]],PARAMETER['False easting',208788.418,LENGTHUNIT['metre',1],ID['EPSG',8806]],PARAMETER['False northing',0.0034,LENGTHUNIT['metre',1],ID['EPSG',8807]],ID['EPSG',7524]]"^^geo:wktLiteral ;
+    ns1:falseEasting 2.087884e+05 ;
+    ns1:falseNorthing 3.4e-03 ;
+    ns1:has_ballpark_transformation false ;
+    ns1:latitudeOfNaturalOrigin 4.256944e+01 ;
+    ns1:longitudeOfNaturalOrigin -8.8225e+01 ;
+    ns1:method_name "Transverse Mercator" ;
+    ns1:scaleFactorAtNaturalOrigin 1.000035e+00 ;
+    ns1:scope "Engineering survey."^^xsd:string ;
+    rdfs:comment "Replaces and emulates WCCS zone. For equivalent non-metric definition see proj code 7525."^^xsd:string .
+

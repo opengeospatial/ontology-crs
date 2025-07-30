@@ -1,0 +1,12 @@
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix ns1: <http://www.opengis.net/ont/crs/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+
+<http://www.opengis.net/ont/crs/areaofuse/Equi7_projection_-_North_America_area_of_use> a ns1:AreaOfUse,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
+    rdfs:label "North America including Greenland, the Caribbean and Central America, together with circum-polar area north of 83°40'N. Excluding the circum-polar area, the longitude extent is from 167.65° in west across the 180° meridian to 15.72° in east."@en ;
+    void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
+    ns1:extent "<http://www.opengis.net/def/crs/OGC/1.3/CRS84> POLYGON ((180 7.98, 180 90, -180 90, -180 7.98, 180 7.98))"^^geo:wktLiteral .
+

@@ -1,0 +1,13 @@
+@prefix ns1: <http://www.opengis.net/ont/crs/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+
+<http://www.opengis.net/def/crs/EPSG/0/5614_cs> a ns1:VerticalCoordinateSystem,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
+    rdfs:label "EPSG:5614 CS: vertical" ;
+    void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
+    ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'CoordinateSystem','subtype':'vertical','axis':[{'name':'Depth','abbreviation':'D','direction':'down','unit':{'type':'LinearUnit','name':'foot','conversion_factor':0.3048}}],'id':{'authority':'EPSG','code':6495}}" ;
+    ns1:asWKT "CS[vertical,1],AXIS['depth (D)',down,LENGTHUNIT['foot',0.3048,ID['EPSG',9002]]]" ;
+    ns1:axis <http://www.opengis.net/ont/crs/cs/axis/Depth_foot_down> .
+

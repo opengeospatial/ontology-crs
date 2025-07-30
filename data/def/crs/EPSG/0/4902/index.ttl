@@ -1,0 +1,27 @@
+@prefix ns1: <http://www.opengis.net/ont/crs/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.opengis.net/def/crs/EPSG/0/4902> a ns1:GeographicCRS,
+        owl:NamedIndividual,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <http://www.w3.org/ns/prov-o/Entity>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
+    rdfs:label "NDG (Paris)"@en ;
+    void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
+    ns1:area_of_use <http://www.opengis.net/def/crs/EPSG/0/4902_area_of_use> ;
+    ns1:asProj4 "+proj=longlat +a=6376523 +rf=308.64 +pm=paris +no_defs +type=crs"^^xsd:string ;
+    ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'GeographicCRS','name':'NDG (Paris)','datum':{'type':'GeodeticReferenceFrame','name':'Nord de Guerre (Paris)','ellipsoid':{'name':'Plessis 1817','semi_major_axis':6376523,'inverse_flattening':308.64},'prime_meridian':{'name':'Paris','longitude':{'value':2.5969213,'unit':{'type':'AngularUnit','name':'grad','conversion_factor':0.0157079632679489}}}},'coordinate_system':{'subtype':'ellipsoidal','axis':[{'name':'Geodetic latitude','abbreviation':'Lat','direction':'north','unit':{'type':'AngularUnit','name':'grad','conversion_factor':0.0157079632679489}},{'name':'Geodetic longitude','abbreviation':'Lon','direction':'east','unit':{'type':'AngularUnit','name':'grad','conversion_factor':0.0157079632679489}}]},'scope':'Geodesy.','area':'France - Alsace.','bbox':{'south_latitude':47.42,'west_longitude':6.84,'north_latitude':49.07,'east_longitude':8.23},'id':{'authority':'EPSG','code':4902}}"^^xsd:string ;
+    ns1:asWKT "GEOGCRS['NDG (Paris)',DATUM['Nord de Guerre (Paris)',ELLIPSOID['Plessis 1817',6376523,308.64,LENGTHUNIT['metre',1]]],PRIMEM['Paris',2.5969213,ANGLEUNIT['grad',0.0157079632679489]],CS[ellipsoidal,2],AXIS['geodetic latitude (Lat)',north,ORDER[1],ANGLEUNIT['grad',0.0157079632679489]],AXIS['geodetic longitude (Lon)',east,ORDER[2],ANGLEUNIT['grad',0.0157079632679489]],USAGE[SCOPE['Geodesy.'],AREA['France - Alsace.'],BBOX[47.42,6.84,49.07,8.23]],ID['EPSG',4902]]"^^ns1:wktLiteral ;
+    ns1:coordinateSystem <http://www.opengis.net/def/crs/EPSG/0/4902_cs> ;
+    ns1:datum <http://www.opengis.net/ont/crs/datum/Nord_de_Guerre__Paris_> ;
+    ns1:epsgCode "EPSG:4902"^^xsd:string ;
+    ns1:isApplicableTo <http://www.opengis.net/ont/crs/isbody/Earth> ;
+    ns1:isBound false ;
+    ns1:isGeocentric false ;
+    ns1:isGeographic true ;
+    ns1:isProjected false ;
+    ns1:isVertical false .
+

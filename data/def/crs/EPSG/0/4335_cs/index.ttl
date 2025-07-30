@@ -1,0 +1,16 @@
+@prefix ns1: <http://www.opengis.net/ont/crs/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+
+<http://www.opengis.net/def/crs/EPSG/0/4335_cs> a ns1:3DCoordinateSystem,
+        ns1:CartesianCoordinateSystem,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
+    rdfs:label "EPSG:4335 CS: cartesian" ;
+    void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
+    ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'CoordinateSystem','subtype':'Cartesian','axis':[{'name':'Geocentric X','abbreviation':'X','direction':'geocentricX','unit':'metre'},{'name':'Geocentric Y','abbreviation':'Y','direction':'geocentricY','unit':'metre'},{'name':'Geocentric Z','abbreviation':'Z','direction':'geocentricZ','unit':'metre'}],'id':{'authority':'EPSG','code':6500}}" ;
+    ns1:asWKT "CS[Cartesian,3],AXIS['(X)',geocentricX,ORDER[1],LENGTHUNIT['metre',1,ID['EPSG',9001]]],AXIS['(Y)',geocentricY,ORDER[2],LENGTHUNIT['metre',1,ID['EPSG',9001]]],AXIS['(Z)',geocentricZ,ORDER[3],LENGTHUNIT['metre',1,ID['EPSG',9001]]]" ;
+    ns1:axis <http://www.opengis.net/ont/crs/cs/axis/Geocentric_X_metre_geocentricX>,
+        <http://www.opengis.net/ont/crs/cs/axis/Geocentric_Y_metre_geocentricY>,
+        <http://www.opengis.net/ont/crs/cs/axis/Geocentric_Z_metre_geocentricZ> .
+

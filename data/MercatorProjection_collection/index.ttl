@@ -1,0 +1,19 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+
+<http://www.opengis.net/MercatorProjection_collection> a skos:Collection,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
+    rdfs:label "MercatorProjection Instances Collection"@en ;
+    void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
+    rdfs:member <http://www.opengis.net/ont/crs/operation/Caspian_Sea_Mercator>,
+        <http://www.opengis.net/ont/crs/operation/Mercator_41>,
+        <http://www.opengis.net/ont/crs/operation/Netherlands_East_Indies_Equatorial_Zone>,
+        <http://www.opengis.net/ont/crs/operation/Netherlands_East_Indies_Equatorial_Zone__Jkt_>,
+        <http://www.opengis.net/ont/crs/operation/Pacific_Disaster_Center_Mercator>,
+        <http://www.opengis.net/ont/crs/operation/Petrobras_Mercator>,
+        <http://www.opengis.net/ont/crs/operation/Popular_Visualisation_Mercator>,
+        <http://www.opengis.net/ont/crs/operation/Popular_Visualisation_Pseudo-Mercator>,
+        <http://www.opengis.net/ont/crs/operation/World_Mercator> .
+

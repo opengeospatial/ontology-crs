@@ -1,0 +1,26 @@
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix ns1: <http://www.opengis.net/ont/crs/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.opengis.net/ont/crs/operation/Himachal_Pradesh_NSF_LCC> a ns1:LambertConformalConicProjection,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
+    rdfs:label "Himachal Pradesh NSF LCC: Lambert Conic Conformal (2SP)"@en ;
+    void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
+    ns1:accuracy -1e+00 ;
+    ns1:area_of_use <http://www.opengis.net/ont/crs/areaofuse/Himachal_Pradesh_NSF_LCC_area_of_use> ;
+    ns1:asProj4 "+proj=pipeline +step +proj=axisswap +order=2,1 +step +proj=unitconvert +xy_in=deg +xy_out=rad +step +proj=lcc +lat_0=31.75183497 +lon_0=77.375 +lat_1=30.75 +lat_2=32.75 +x_0=1000000 +y_0=1000000 +ellps=WGS84" ;
+    ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'Conversion','name':'Himachal Pradesh NSF LCC','method':{'name':'Lambert Conic Conformal (2SP)','id':{'authority':'EPSG','code':9802}},'parameters':[{'name':'Latitude of false origin','value':31.75183497,'unit':'degree','id':{'authority':'EPSG','code':8821}},{'name':'Longitude of false origin','value':77.375,'unit':'degree','id':{'authority':'EPSG','code':8822}},{'name':'Latitude of 1st standard parallel','value':30.75,'unit':'degree','id':{'authority':'EPSG','code':8823}},{'name':'Latitude of 2nd standard parallel','value':32.75,'unit':'degree','id':{'authority':'EPSG','code':8824}},{'name':'Easting at false origin','value':1000000,'unit':'metre','id':{'authority':'EPSG','code':8826}},{'name':'Northing at false origin','value':1000000,'unit':'metre','id':{'authority':'EPSG','code':8827}}],'id':{'authority':'EPSG','code':7730}}" ;
+    ns1:asWKT "CONVERSION['Himachal Pradesh NSF LCC',METHOD['Lambert Conic Conformal (2SP)',ID['EPSG',9802]],PARAMETER['Latitude of false origin',31.75183497,ANGLEUNIT['degree',0.0174532925199433],ID['EPSG',8821]],PARAMETER['Longitude of false origin',77.375,ANGLEUNIT['degree',0.0174532925199433],ID['EPSG',8822]],PARAMETER['Latitude of 1st standard parallel',30.75,ANGLEUNIT['degree',0.0174532925199433],ID['EPSG',8823]],PARAMETER['Latitude of 2nd standard parallel',32.75,ANGLEUNIT['degree',0.0174532925199433],ID['EPSG',8824]],PARAMETER['Easting at false origin',1000000,LENGTHUNIT['metre',1],ID['EPSG',8826]],PARAMETER['Northing at false origin',1000000,LENGTHUNIT['metre',1],ID['EPSG',8827]],ID['EPSG',7730]]"^^geo:wktLiteral ;
+    ns1:eastingAtFalseOrigin 1e+06 ;
+    ns1:has_ballpark_transformation false ;
+    ns1:latitudeOf1StStandardParallel 3.075e+01 ;
+    ns1:latitudeOf2NdStandardParallel 3.275e+01 ;
+    ns1:latitudeOfFalseOrigin 3.175183e+01 ;
+    ns1:longitudeOfFalseOrigin 7.7375e+01 ;
+    ns1:method_name "Lambert Conic Conformal (2SP)" ;
+    ns1:northingAtFalseOrigin 1e+06 ;
+    ns1:scope "NNRMS National Spatial Framework (NSF) state resource database of medium resolution earth observation imagery and mapping."^^xsd:string .
+

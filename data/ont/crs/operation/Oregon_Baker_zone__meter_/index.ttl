@@ -1,0 +1,26 @@
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix ns1: <http://www.opengis.net/ont/crs/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.opengis.net/ont/crs/operation/Oregon_Baker_zone__meter_> a ns1:TransverseMercatorProjection,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
+    rdfs:label "Oregon Baker zone (meter): Transverse Mercator"@en ;
+    void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
+    ns1:accuracy -1e+00 ;
+    ns1:area_of_use <http://www.opengis.net/ont/crs/areaofuse/Oregon_Baker_zone__meter__area_of_use> ;
+    ns1:asProj4 "+proj=pipeline +step +proj=axisswap +order=2,1 +step +proj=unitconvert +xy_in=deg +xy_out=rad +step +proj=tmerc +lat_0=44.5 +lon_0=-117.833333333333 +k=1.00016 +x_0=40000 +y_0=0 +ellps=GRS80" ;
+    ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'Conversion','name':'Oregon Baker zone (meter)','method':{'name':'Transverse Mercator','id':{'authority':'EPSG','code':9807}},'parameters':[{'name':'Latitude of natural origin','value':44.5,'unit':'degree','id':{'authority':'EPSG','code':8801}},{'name':'Longitude of natural origin','value':-117.833333333333,'unit':'degree','id':{'authority':'EPSG','code':8802}},{'name':'Scale factor at natural origin','value':1.00016,'unit':'unity','id':{'authority':'EPSG','code':8805}},{'name':'False easting','value':40000,'unit':'metre','id':{'authority':'EPSG','code':8806}},{'name':'False northing','value':0,'unit':'metre','id':{'authority':'EPSG','code':8807}}],'id':{'authority':'EPSG','code':6741}}" ;
+    ns1:asWKT "CONVERSION['Oregon Baker zone (meter)',METHOD['Transverse Mercator',ID['EPSG',9807]],PARAMETER['Latitude of natural origin',44.5,ANGLEUNIT['degree',0.0174532925199433],ID['EPSG',8801]],PARAMETER['Longitude of natural origin',-117.833333333333,ANGLEUNIT['degree',0.0174532925199433],ID['EPSG',8802]],PARAMETER['Scale factor at natural origin',1.00016,SCALEUNIT['unity',1],ID['EPSG',8805]],PARAMETER['False easting',40000,LENGTHUNIT['metre',1],ID['EPSG',8806]],PARAMETER['False northing',0,LENGTHUNIT['metre',1],ID['EPSG',8807]],ID['EPSG',6741]]"^^geo:wktLiteral ;
+    ns1:falseEasting 4e+04 ;
+    ns1:falseNorthing 0e+00 ;
+    ns1:has_ballpark_transformation false ;
+    ns1:latitudeOfNaturalOrigin 4.45e+01 ;
+    ns1:longitudeOfNaturalOrigin -1.178333e+02 ;
+    ns1:method_name "Transverse Mercator" ;
+    ns1:scaleFactorAtNaturalOrigin 1.00016e+00 ;
+    ns1:scope "Engineering survey."^^xsd:string ;
+    rdfs:comment "See code 6742 for equivalent non-metric definition."^^xsd:string .
+

@@ -1,0 +1,24 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+
+<http://www.opengis.net/ObliqueStereographicProjection_collection> a skos:Collection,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
+    rdfs:label "ObliqueStereographicProjection Instances Collection"@en ;
+    void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
+    rdfs:member <http://www.opengis.net/ont/crs/operation/GUGiK-80>,
+        <http://www.opengis.net/ont/crs/operation/Levant_Stereographic>,
+        <http://www.opengis.net/ont/crs/operation/New_Brunswick_Stereographic__ATS77_>,
+        <http://www.opengis.net/ont/crs/operation/New_Brunswick_Stereographic__NAD27_>,
+        <http://www.opengis.net/ont/crs/operation/New_Brunswick_Stereographic__NAD83_>,
+        <http://www.opengis.net/ont/crs/operation/Poland_zone_I>,
+        <http://www.opengis.net/ont/crs/operation/Poland_zone_II>,
+        <http://www.opengis.net/ont/crs/operation/Poland_zone_III>,
+        <http://www.opengis.net/ont/crs/operation/Poland_zone_IV>,
+        <http://www.opengis.net/ont/crs/operation/Prince_Edward_Isl._Stereographic__NAD83_>,
+        <http://www.opengis.net/ont/crs/operation/Prince_Edward_Island_Stereographic__ATS77_>,
+        <http://www.opengis.net/ont/crs/operation/RD_New>,
+        <http://www.opengis.net/ont/crs/operation/RD_Old>,
+        <http://www.opengis.net/ont/crs/operation/Stereo_70> .
+

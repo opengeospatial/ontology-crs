@@ -1,0 +1,17 @@
+@prefix ns1: <http://www.opengis.net/ont/crs/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.opengis.net/ont/crs/cs/axis/Local_depth_metre_down> a ns1:CoordinateSystemAxis,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
+    rdfs:label "Local depth (om:metre)"@en ;
+    void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
+    ns1:abbreviation "d"^^xsd:string ;
+    ns1:direction ns1:down ;
+    ns1:unit <http://www.ontology-of-units-of-measure.org/resource/om-2/metre> ;
+    ns1:unit_auth_code "EPSG"^^xsd:string ;
+    ns1:unit_code "9001"^^xsd:string ;
+    ns1:unit_conversion_factor 1e+00 .
+

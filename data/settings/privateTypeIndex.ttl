@@ -1,0 +1,8 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://opengeospatial.github.io/ontology-crs/data//settings/privateTypeIndex.ttl> a <http://www.w3.org/ns/ldp#RDFResource>,
+        <http://www.w3.org/ns/solid/terms#ListedDocument>,
+        <http://www.w3.org/ns/solid/terms#TypeIndex> ;
+    rdfs:label "Private Type Index"@en ;
+    rdfs:comment "This Document contains a list of links to other Documents, along with the type of data that is to be included in those Documents"@en .
+

@@ -1,0 +1,225 @@
+@prefix brick: <https://brickschema.org/schema/Brick#> .
+@prefix csvw: <http://www.w3.org/ns/csvw#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcam: <http://purl.org/dc/dcam/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcmitype: <http://purl.org/dc/dcmitype/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix ns1: <http://ldf.fi/void-ext#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prof: <http://www.w3.org/ns/dx/prof/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sosa: <http://www.w3.org/ns/sosa/> .
+@prefix ssn: <http://www.w3.org/ns/ssn/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix wgs: <https://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.opengis.net/geoepsg_dataset> a void:Dataset,
+        <http://www.w3.org/ns/adms#Asset>,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
+    rdfs:label "geoepsg_dataset"@en ;
+    ns1:averageLiteralLength 0 ;
+    ns1:averageObjectIRILength 122 ;
+    ns1:averagePropertyIRILength 46 ;
+    ns1:averageSubjectIRILength 52 ;
+    ns1:datatypes 0 ;
+    ns1:distinctBlankNodes 0 ;
+    ns1:distinctIRIReferences 106581 ;
+    ns1:distinctLiterals 0 ;
+    ns1:distinctRDFNodes 106581 ;
+    ns1:languages 0 ;
+    ns1:propertyClasses 0 ;
+    dc:language <http://www.lexvo.org/page/iso639-1/en> ;
+    dcterms:modified "2025-07-30T01:15:22"^^xsd:dateTime ;
+    dcterms:subject <http://dbpedia.org/resource/Location>,
+        <http://dbpedia.org/resource/OGC_GeoSPARQL>,
+        <http://dbpedia.org/resource/Time>,
+        <http://www.wikidata.org/entity/Q121810372>,
+        foaf:Person ;
+    dcterms:title "geoepsg_dataset"@en ;
+    vann:preferredNamespacePrefix "geoepsg"^^xsd:string ;
+    vann:preferredNamespaceUri "http://www.opengis.net/"^^xsd:anyURI ;
+    void:classPartition <http://www.opengis.net/geoepsg_dataset_3DCoordinateSystem>,
+        <http://www.opengis.net/geoepsg_dataset_AlbersEqualAreaProjection>,
+        <http://www.opengis.net/geoepsg_dataset_AmericanPolyconicProjection>,
+        <http://www.opengis.net/geoepsg_dataset_AreaOfUse>,
+        <http://www.opengis.net/geoepsg_dataset_AxisDirection>,
+        <http://www.opengis.net/geoepsg_dataset_CartesianCoordinateSystem>,
+        <http://www.opengis.net/geoepsg_dataset_CassiniProjection>,
+        <http://www.opengis.net/geoepsg_dataset_Collection>,
+        <http://www.opengis.net/geoepsg_dataset_ColombiaUrbanProjection>,
+        <http://www.opengis.net/geoepsg_dataset_CompoundCRS>,
+        <http://www.opengis.net/geoepsg_dataset_CoordinateConversionOperation>,
+        <http://www.opengis.net/geoepsg_dataset_CoordinateSystemAxis>,
+        <http://www.opengis.net/geoepsg_dataset_CylindricalEqualArea>,
+        <http://www.opengis.net/geoepsg_dataset_Datum>,
+        <http://www.opengis.net/geoepsg_dataset_DynamicVerticalReferenceFrame>,
+        <http://www.opengis.net/geoepsg_dataset_Ellipsoid>,
+        <http://www.opengis.net/geoepsg_dataset_EllipsoidalCoordinateSystem>,
+        <http://www.opengis.net/geoepsg_dataset_Entity>,
+        <http://www.opengis.net/geoepsg_dataset_EqualEarthProjection>,
+        <http://www.opengis.net/geoepsg_dataset_EquidistantCylindricalProjection>,
+        <http://www.opengis.net/geoepsg_dataset_GeocentricCRS>,
+        <http://www.opengis.net/geoepsg_dataset_GeodeticReferenceFrame>,
+        <http://www.opengis.net/geoepsg_dataset_GeographicCRS>,
+        <http://www.opengis.net/geoepsg_dataset_Geoid>,
+        <http://www.opengis.net/geoepsg_dataset_Krovak>,
+        <http://www.opengis.net/geoepsg_dataset_LabordeProjection>,
+        <http://www.opengis.net/geoepsg_dataset_LambertConformalConicProjection>,
+        <http://www.opengis.net/geoepsg_dataset_MercatorProjection>,
+        <http://www.opengis.net/geoepsg_dataset_ObliqueMercatorProjection>,
+        <http://www.opengis.net/geoepsg_dataset_ObliqueStereographicProjection>,
+        <http://www.opengis.net/geoepsg_dataset_PlanarCoordinateSystem>,
+        <http://www.opengis.net/geoepsg_dataset_PrimeMeridian>,
+        <http://www.opengis.net/geoepsg_dataset_ProjectedCRS>,
+        <http://www.opengis.net/geoepsg_dataset_Sphere>,
+        <http://www.opengis.net/geoepsg_dataset_StereographicProjection>,
+        <http://www.opengis.net/geoepsg_dataset_TransverseMercatorProjection>,
+        <http://www.opengis.net/geoepsg_dataset_Unit>,
+        <http://www.opengis.net/geoepsg_dataset_UniversalTransverseMercatorProjection>,
+        <http://www.opengis.net/geoepsg_dataset_VerticalCRS>,
+        <http://www.opengis.net/geoepsg_dataset_VerticalCoordinateSystem>,
+        <http://www.opengis.net/geoepsg_dataset_VerticalReferenceFrame> ;
+    void:classes 41 ;
+    void:dataDump <https://opengeospatial.github.io/ontology-crs/data//index.ttl> ;
+    void:distinctObjects 81362 ;
+    void:distinctSubjects 25144 ;
+    void:entities 25144 ;
+    void:feature <http://www.w3.org/ns/formats/RDFa>,
+        <http://www.w3.org/ns/formats/Turtle> ;
+    void:properties 75 ;
+    void:propertyPartition <http://www.opengis.net/geoepsg_dataset_abbreviation>,
+        <http://www.opengis.net/geoepsg_dataset_accuracy>,
+        <http://www.opengis.net/geoepsg_dataset_angleFromRectifiedToSkewGrid>,
+        <http://www.opengis.net/geoepsg_dataset_approximates>,
+        <http://www.opengis.net/geoepsg_dataset_area_of_use>,
+        <http://www.opengis.net/geoepsg_dataset_asProj4>,
+        <http://www.opengis.net/geoepsg_dataset_asProjJSON>,
+        <http://www.opengis.net/geoepsg_dataset_asWKT>,
+        <http://www.opengis.net/geoepsg_dataset_axis>,
+        <http://www.opengis.net/geoepsg_dataset_azimuthAtProjectionCentre>,
+        <http://www.opengis.net/geoepsg_dataset_co-LatitudeOfConeAxis>,
+        <http://www.opengis.net/geoepsg_dataset_comment>,
+        <http://www.opengis.net/geoepsg_dataset_coordinateOperation>,
+        <http://www.opengis.net/geoepsg_dataset_coordinateSystem>,
+        <http://www.opengis.net/geoepsg_dataset_datum>,
+        <http://www.opengis.net/geoepsg_dataset_definition>,
+        <http://www.opengis.net/geoepsg_dataset_direction>,
+        <http://www.opengis.net/geoepsg_dataset_domain>,
+        <http://www.opengis.net/geoepsg_dataset_eastingAtFalseOrigin>,
+        <http://www.opengis.net/geoepsg_dataset_eastingAtProjectionCentre>,
+        <http://www.opengis.net/geoepsg_dataset_eccentricity>,
+        <http://www.opengis.net/geoepsg_dataset_ellipse>,
+        <http://www.opengis.net/geoepsg_dataset_ellipsoid>,
+        <http://www.opengis.net/geoepsg_dataset_ellipsoidScalingFactor>,
+        <http://www.opengis.net/geoepsg_dataset_epsgCode>,
+        <http://www.opengis.net/geoepsg_dataset_extent>,
+        <http://www.opengis.net/geoepsg_dataset_falseEasting>,
+        <http://www.opengis.net/geoepsg_dataset_falseNorthing>,
+        <http://www.opengis.net/geoepsg_dataset_flatteningParameter>,
+        <http://www.opengis.net/geoepsg_dataset_has_ballpark_transformation>,
+        <http://www.opengis.net/geoepsg_dataset_includesSRS>,
+        <http://www.opengis.net/geoepsg_dataset_inverse_flattening>,
+        <http://www.opengis.net/geoepsg_dataset_isApplicableTo>,
+        <http://www.opengis.net/geoepsg_dataset_isBound>,
+        <http://www.opengis.net/geoepsg_dataset_isGeocentric>,
+        <http://www.opengis.net/geoepsg_dataset_isGeographic>,
+        <http://www.opengis.net/geoepsg_dataset_isProjected>,
+        <http://www.opengis.net/geoepsg_dataset_isSphere>,
+        <http://www.opengis.net/geoepsg_dataset_isVertical>,
+        <http://www.opengis.net/geoepsg_dataset_is_semi_minor_computed>,
+        <http://www.opengis.net/geoepsg_dataset_label>,
+        <http://www.opengis.net/geoepsg_dataset_latitudeOf1StStandardParallel>,
+        <http://www.opengis.net/geoepsg_dataset_latitudeOf2NdStandardParallel>,
+        <http://www.opengis.net/geoepsg_dataset_latitudeOfFalseOrigin>,
+        <http://www.opengis.net/geoepsg_dataset_latitudeOfNaturalOrigin>,
+        <http://www.opengis.net/geoepsg_dataset_latitudeOfProjectionCentre>,
+        <http://www.opengis.net/geoepsg_dataset_latitudeOfPseudoStandardParallel>,
+        <http://www.opengis.net/geoepsg_dataset_latitudeOfStandardParallel>,
+        <http://www.opengis.net/geoepsg_dataset_longitude>,
+        <http://www.opengis.net/geoepsg_dataset_longitudeOfFalseOrigin>,
+        <http://www.opengis.net/geoepsg_dataset_longitudeOfNaturalOrigin>,
+        <http://www.opengis.net/geoepsg_dataset_longitudeOfOrigin>,
+        <http://www.opengis.net/geoepsg_dataset_longitudeOfProjectionCentre>,
+        <http://www.opengis.net/geoepsg_dataset_member>,
+        <http://www.opengis.net/geoepsg_dataset_method_name>,
+        <http://www.opengis.net/geoepsg_dataset_northingAtFalseOrigin>,
+        <http://www.opengis.net/geoepsg_dataset_northingAtProjectionCentre>,
+        <http://www.opengis.net/geoepsg_dataset_primeMeridian>,
+        <http://www.opengis.net/geoepsg_dataset_projectionPlaneOriginHeight>,
+        <http://www.opengis.net/geoepsg_dataset_range>,
+        <http://www.opengis.net/geoepsg_dataset_scaleFactorAtNaturalOrigin>,
+        <http://www.opengis.net/geoepsg_dataset_scaleFactorAtProjectionCentre>,
+        <http://www.opengis.net/geoepsg_dataset_scaleFactorOnPseudoStandardParallel>,
+        <http://www.opengis.net/geoepsg_dataset_scope>,
+        <http://www.opengis.net/geoepsg_dataset_semiMajorAxis>,
+        <http://www.opengis.net/geoepsg_dataset_semiMinorAxis>,
+        <http://www.opengis.net/geoepsg_dataset_sourceCRS>,
+        <http://www.opengis.net/geoepsg_dataset_subClassOf>,
+        <http://www.opengis.net/geoepsg_dataset_type>,
+        <http://www.opengis.net/geoepsg_dataset_unit>,
+        <http://www.opengis.net/geoepsg_dataset_unit_auth_code>,
+        <http://www.opengis.net/geoepsg_dataset_unit_code>,
+        <http://www.opengis.net/geoepsg_dataset_unit_conversion_factor>,
+        <http://www.opengis.net/geoepsg_dataset_usage>,
+        <http://www.opengis.net/geoepsg_dataset_utm_zone> ;
+    void:triples 307468 ;
+    void:uriSpace "http://www.opengis.net/"^^xsd:string ;
+    void:vocabulary ns1:,
+        dcam:,
+        dcmitype:,
+        dc:,
+        dcterms:,
+        qb:,
+        vann:,
+        <http://purl.org/vocommons/voaf#>,
+        void:,
+        doap:,
+        geo:,
+        rdf:,
+        rdfs:,
+        xsd:,
+        owl:,
+        skos:,
+        time:,
+        xml:,
+        <http://www.w3.org/ns/adms#>,
+        csvw:,
+        dcat:,
+        prof:,
+        odrl:,
+        org:,
+        prov:,
+        sh:,
+        sosa:,
+        ssn:,
+        foaf:,
+        brick:,
+        schema:,
+        wgs: ;
+    dcat:distribution <http://www.opengis.net/geoepsg_dataset_dist_ttl> ;
+    dcat:keyword "Location"@en,
+        "OGC GeoSPARQL"@en,
+        "Person"@en,
+        "Q121810372"@en,
+        "Time"@en ;
+    dcat:landingPage <https://opengeospatial.github.io/ontology-crs/data/> ;
+    foaf:homepage <https://opengeospatial.github.io/ontology-crs/data/> ;
+    foaf:page <https://opengeospatial.github.io/ontology-crs/data//index.html> .
+

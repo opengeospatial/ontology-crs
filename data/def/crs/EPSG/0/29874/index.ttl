@@ -1,0 +1,29 @@
+@prefix ns1: <http://www.opengis.net/ont/crs/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.opengis.net/def/crs/EPSG/0/29874> a ns1:ProjectedCRS,
+        owl:NamedIndividual,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <http://www.w3.org/ns/prov-o/Entity>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
+    rdfs:label "Timbalai 1948 / RSO Sarawak LSD (m)"@en ;
+    void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
+    ns1:area_of_use <http://www.opengis.net/def/crs/EPSG/0/29874_area_of_use> ;
+    ns1:asProj4 "+proj=omerc +no_uoff +lat_0=4 +lonc=115 +alpha=53.3158204722222 +gamma=53.1301023611111 +k=0.99984 +x_0=2000000 +y_0=5000000 +ellps=evrstSS +units=m +no_defs +type=crs"^^xsd:string ;
+    ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'ProjectedCRS','name':'Timbalai 1948 / RSO Sarawak LSD (m)','base_crs':{'name':'Timbalai 1948','datum':{'type':'GeodeticReferenceFrame','name':'Timbalai 1948','ellipsoid':{'name':'Everest 1830 (1967 Definition)','semi_major_axis':6377298.556,'inverse_flattening':300.8017}},'coordinate_system':{'subtype':'ellipsoidal','axis':[{'name':'Geodetic latitude','abbreviation':'Lat','direction':'north','unit':'degree'},{'name':'Geodetic longitude','abbreviation':'Lon','direction':'east','unit':'degree'}]},'id':{'authority':'EPSG','code':4298}},'conversion':{'name':'Rectified Skew Orthomorphic Sarawak LSD (metre)','method':{'name':'Hotine Oblique Mercator (variant A)','id':{'authority':'EPSG','code':9812}},'parameters':[{'name':'Latitude of projection centre','value':4,'unit':'degree','id':{'authority':'EPSG','code':8811}},{'name':'Longitude of projection centre','value':115,'unit':'degree','id':{'authority':'EPSG','code':8812}},{'name':'Azimuth at projection centre','value':53.3158204722222,'unit':'degree','id':{'authority':'EPSG','code':8813}},{'name':'Angle from Rectified to Skew Grid','value':53.1301023611111,'unit':'degree','id':{'authority':'EPSG','code':8814}},{'name':'Scale factor at projection centre','value':0.99984,'unit':'unity','id':{'authority':'EPSG','code':8815}},{'name':'False easting','value':2000000,'unit':'metre','id':{'authority':'EPSG','code':8806}},{'name':'False northing','value':5000000,'unit':'metre','id':{'authority':'EPSG','code':8807}}]},'coordinate_system':{'subtype':'Cartesian','axis':[{'name':'Easting','abbreviation':'E','direction':'east','unit':'metre'},{'name':'Northing','abbreviation':'N','direction':'north','unit':'metre'}]},'scope':'Engineering survey, topographic mapping.','area':'Malaysia - East Malaysia - Sarawak onshore.','bbox':{'south_latitude':0.85,'west_longitude':109.54,'north_latitude':5.03,'east_longitude':115.69},'id':{'authority':'EPSG','code':29874}}"^^xsd:string ;
+    ns1:asWKT "PROJCRS['Timbalai 1948 / RSO Sarawak LSD (m)',BASEGEOGCRS['Timbalai 1948',DATUM['Timbalai 1948',ELLIPSOID['Everest 1830 (1967 Definition)',6377298.556,300.8017,LENGTHUNIT['metre',1]]],PRIMEM['Greenwich',0,ANGLEUNIT['degree',0.0174532925199433]],ID['EPSG',4298]],CONVERSION['Rectified Skew Orthomorphic Sarawak LSD (metre)',METHOD['Hotine Oblique Mercator (variant A)',ID['EPSG',9812]],PARAMETER['Latitude of projection centre',4,ANGLEUNIT['degree',0.0174532925199433],ID['EPSG',8811]],PARAMETER['Longitude of projection centre',115,ANGLEUNIT['degree',0.0174532925199433],ID['EPSG',8812]],PARAMETER['Azimuth at projection centre',53.3158204722222,ANGLEUNIT['degree',0.0174532925199433],ID['EPSG',8813]],PARAMETER['Angle from Rectified to Skew Grid',53.1301023611111,ANGLEUNIT['degree',0.0174532925199433],ID['EPSG',8814]],PARAMETER['Scale factor at projection centre',0.99984,SCALEUNIT['unity',1],ID['EPSG',8815]],PARAMETER['False easting',2000000,LENGTHUNIT['metre',1],ID['EPSG',8806]],PARAMETER['False northing',5000000,LENGTHUNIT['metre',1],ID['EPSG',8807]]],CS[Cartesian,2],AXIS['(E)',east,ORDER[1],LENGTHUNIT['metre',1]],AXIS['(N)',north,ORDER[2],LENGTHUNIT['metre',1]],USAGE[SCOPE['Engineering survey, topographic mapping.'],AREA['Malaysia - East Malaysia - Sarawak onshore.'],BBOX[0.85,109.54,5.03,115.69]],ID['EPSG',29874]]"^^ns1:wktLiteral ;
+    ns1:coordinateOperation <http://www.opengis.net/ont/crs/operation/Rectified_Skew_Orthomorphic_Sarawak_LSD__metre_> ;
+    ns1:coordinateSystem <http://www.opengis.net/def/crs/EPSG/0/29874_cs> ;
+    ns1:datum <http://www.opengis.net/ont/crs/datum/Timbalai_1948> ;
+    ns1:epsgCode "EPSG:29874"^^xsd:string ;
+    ns1:isApplicableTo <http://www.opengis.net/ont/crs/isbody/Earth> ;
+    ns1:isBound false ;
+    ns1:isGeocentric false ;
+    ns1:isGeographic false ;
+    ns1:isProjected true ;
+    ns1:isVertical false ;
+    ns1:sourceCRS <http://www.opengis.net/def/crs/EPSG/0/4298> .
+

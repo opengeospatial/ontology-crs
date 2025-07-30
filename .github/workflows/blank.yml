@@ -70,6 +70,7 @@ jobs:
          mkdir images
          cp ../images/* images/
          python3 ../scripts/htmlpostprocessing.py
+         python3 ../scripts/crsToTTL.py
     - name: Deploy 🚀
       uses: JamesIves/github-pages-deploy-action@v4.3.3
       with:

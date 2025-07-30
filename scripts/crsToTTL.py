@@ -398,23 +398,38 @@ parser.add_argument("outputformat", type=str, nargs='?',default="projjson", help
 args = parser.parse_args()
 print(args)
 mapp=pyproj.list.get_proj_operations_map()
-if str(args.input).startswith("EPSG"):
-    curcrs=CRS.from_epsg(int(str(args.input).replace("EPSG:","")))
-    print(curcrs.area_of_use)
-if args.outputformat=="wkt":
-    thewkt=curcrs.to_wkt()
-    f = open(str(args.input).replace(":","_")+".wkt", "a")
-    f.write(thewkt)
-    f.close()
-if args.outputformat=="projjson":
-    thedict=curcrs.to_json_dict()
-    thedict["@context"]="https://opengeospatial.github.io/ontology-crs/context/geosrs-context.json"
-    print(thedict)
-    with open(str(args.input).replace(":","_")+".json", 'w') as f:
-        json.dump(thedict, f,indent=2,sort_keys=True)    
-if args.outputformat=="ttl":
-    crsToTTL(ttl,curcrs,int(str(args.input).replace("EPSG:","")),geodcounter,None)
-    graph2 = Graph()
-    graph2.parse(data = ttlhead+"".join(ttl), format='n3')
-    graph2.serialize(destination=str(args.input).replace(":","_")+".ttl", format='turtle')
+if(len(args)==0):
+	for x in list(range(2000,10000))+list(range(20000,30000)):
+		try:
+			curcrs=CRS.from_epsg(x)
+			print("EPSG: "+str(x))
+		except:
+			continue	
+		crsToTTL(ttl,curcrs,x,geodcounter,None)
+	f = open("docs/result.nt", "w", encoding="utf-8")
+	f.write(ttlhead+"".join(ttl))
+	f.close()
+	graph2 = Graph()
+	graph2.parse(data = ttlhead+"".join(ttl), format='n3')
+	graph2.serialize(destination='docs/result.ttl', format='turtle')
+else:
+	if str(args.input).startswith("EPSG"):
+		curcrs=CRS.from_epsg(int(str(args.input).replace("EPSG:","")))
+		print(curcrs.area_of_use)
+	if args.outputformat=="wkt":
+		thewkt=curcrs.to_wkt()
+		f = open(str(args.input).replace(":","_")+".wkt", "a")
+		f.write(thewkt)
+		f.close()
+	if args.outputformat=="projjson":
+		thedict=curcrs.to_json_dict()
+		thedict["@context"]="https://opengeospatial.github.io/ontology-crs/context/geosrs-context.json"
+		print(thedict)
+		with open(str(args.input).replace(":","_")+".json", 'w') as f:
+			json.dump(thedict, f,indent=2,sort_keys=True)    
+	if args.outputformat=="ttl":
+		crsToTTL(ttl,curcrs,int(str(args.input).replace("EPSG:","")),geodcounter,None)
+		graph2 = Graph()
+		graph2.parse(data = ttlhead+"".join(ttl), format='n3')
+		graph2.serialize(destination=str(args.input).replace(":","_")+".ttl", format='turtle')
 

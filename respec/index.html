@@ -29,6 +29,14 @@
 </section>
 <div id="preamble">
 <div class="sectionbody">
+<p class="paragraph">
+<div class="title">Preface</div>
+<p>This document establishes the OGC CRS ontology and its submodules.
+The definition of elements of coordinate reference systems is an essential part of geospatial data provision.
+However, until now, coordinate reference systems and their components could not be represented in an OGC-standardized semantic web vocabulary.
+This document introduces the ontology model, its classes and properties, application examples and can serve as the foundation of a semantic web based coordinate system registry at OGC.
+Special attention is given to the compatibility of the CRS Ontology vocabulary to other OGC-endorsed Semantic Web standards such as GeoSPARQL and alignments to other data standards are provided as part of this specification.</p>
+</p>
 <div class="admonitionblock note">
 <table>
 <tr>
@@ -36,7 +44,6 @@
 <div class="title"></div>
 </td>
 <td class="content">
-<div class="title">Preface</div>
 <p class="paragraph">
 <p>Insert Preface Text here. Give OGC specific commentary: describe the technical content, reason for document, history of the document and precursors, and plans for future work.</p>
 </p>
@@ -92,8 +99,23 @@
 </thead>
 <tbody>
 <tr>
-  <td class="tableblock halign-left valign-top"><p class="tableblock">Steve Liang</p></td>
-  <td class="tableblock halign-left valign-top"><p class="tableblock">University of Calgary, Canada / SensorUp Inc.</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Luís Moreira de Sousa</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Instituto Superior Técnico: Lisbon, PT</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Timo Homburg</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Mainz University Of Applied Sciences</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">No</p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Nathalie Abadie</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">IGN France</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Ghislain Atemezing</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">European Union Agency for Railways (ERA)</p></td>
   <td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
 </tr>
 </tbody>
@@ -311,6 +333,10 @@ Here&#8217;s an example of an example term.
 <div class="sectionbody">
 <p class="paragraph" id="core">
 <p>This clause establishes the <strong>Core</strong> Requirements class, with IRI <code>/req/core</code>, which has a corresponding Conformance Class, <strong>Core</strong>, with IRI <code>/conf/core</code>.</p>
+</p>
+<p class="paragraph">
+<p>The Core module establishes a set of classes and properties which define the building blocks of a spatial reference system definition.
+Some of the definitions are extended in specialized modules related to the Core module.</p>
 </p>
 <aside class="example">
 <div class="title">Example 1. 06-core.adoc Extension</div>
@@ -6600,7 +6626,7 @@ Actual References:
 </section>
 <div id="footer">
 <div id="footer-text">
-Last updated 2025-07-30 02:07:29 UTC
+Last updated 2025-08-06 21:57:09 UTC
 </div>
 </div>
 </body>

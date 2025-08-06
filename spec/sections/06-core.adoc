@@ -4,3 +4,6 @@
 [[core]]
 
 This clause establishes the *Core* Requirements class, with IRI `/req/core`, which has a corresponding Conformance Class, *Core*, with IRI `/conf/core`.
+
+The Core module establishes a set of classes and properties which define the building blocks of a spatial reference system definition.
+Some of the definitions are extended in specialized modules related to the Core module.

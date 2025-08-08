@@ -301,6 +301,10 @@ for file in os.listdir(directory):
                                 adocdef+="|Type\n|http://www.w3.org/2002/07/owl#DatatypeProperty[owl:DatatypeProperty]\n\n"
                             if "Label" in row and row["Label"]!="":
                                 gcore.add((URIRef(row["Concept"].replace(coreprefix+":",geocrsNS)),RDFS.label,Literal(row["Label"],lang="en")))
+                            if "Requirement" in row and row["Requirement"]!="":
+                                if row["Requirement"] not in moduleToRequirements[prefixToModule[nsprefix]]:
+                                    moduleToRequirements[prefixToModule[nsprefix]][row["Requirement"]]=[]
+                                moduleToRequirements[prefixToModule[nsprefix]][row["Requirement"]].append(row["Concept"])
                             if "Definition" in row and row["Definition"]!="":
                                 gcore.add((URIRef(row["Concept"].replace(coreprefix+":",geocrsNS)),SKOS.definition,Literal(row["Definition"],lang="en")))
                                 adocdef+="|Definition\n|"+str(row["Definition"])+"\n\n"
@@ -353,6 +357,10 @@ for file in os.listdir(directory):
                                     adocdef+="|Type\n|http://www.w3.org/2002/07/owl#DatatypeProperty[owl:DatatypeProperty]\n\n"
                                 if "Label" in row and row["Label"]!="":
                                     exont[row["Core Property?"].lower()].add((URIRef(row["Concept"].replace(coreprefix+":",curns+str(row["Core Property?"]).lower()+"/")),RDFS.label,Literal(row["Label"],lang="en")))
+                                if "Requirement" in row and row["Requirement"]!="":
+                                    if row["Requirement"] not in moduleToRequirements[prefixToModule[nsprefix]]:
+                                        moduleToRequirements[prefixToModule[nsprefix]][row["Requirement"]]=[]
+                                    moduleToRequirements[prefixToModule[nsprefix]][row["Requirement"]].append(row["Concept"])
                                 if "Definition" in row and row["Definition"]!="":
                                     exont[row["Core Property?"].lower()].add((URIRef(row["Concept"].replace(coreprefix+":",curns+str(row["Core Property?"]).lower()+"/")),SKOS.definition,Literal(row["Definition"],lang="en")))
                                     adocdef+="|Definition\n|"+str(row["Definition"])+"\n\n"

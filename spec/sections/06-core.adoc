@@ -4,3 +4,13 @@
 [[core]]
 
 This clause establishes the *Core* Requirements class, with IRI `/req/core`, which has a corresponding Conformance Class, *Core*, with IRI `/conf/core`.
+
+The Core module establishes a set of classes and properties which define the building blocks of a spatial reference system definition.
+Some of the definitions are extended in specialized modules related to the Core module.
+
+image::figures/core.png[]
+
+From a base class SpatialReferenceSystem, we define a class for a coordinate system, as the superclass of all spatial reference systems describing locations using coorindates.
+These SpatialReferenceSystems are described using a Datum and a coordinate system definitions with at least one coordinate axis.
+Together with several subtypes of coordnate reference system, these definitions complete the Core module.
+

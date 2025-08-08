@@ -452,4 +452,5 @@ else:
 		graph2 = Graph()
 		graph2.parse(data = ttlhead+"".join(ttl), format='n3')
 		graph2.serialize(destination=str(args.input).replace(":","_")+".ttl", format='turtle')
-
+examplefile.write(json.dumps(examples))
+examplefile.close()

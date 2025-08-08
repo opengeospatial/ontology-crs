@@ -9,6 +9,10 @@ from pyproj import CRS
 import urllib.request
 from shapely.geometry import box
 
+examples={}
+examplefile=open("examples.json","w")
+websitens="https://opengeospatial.github.io/ontology-crs/data/def/crs/EPSG/0/"
+
 def crsToTTL(ttl,curcrs,x,geodcounter,crsclass):
 	epsgcode=str(x)
 	wkt=curcrs.to_wkt().replace("\"","'").strip()
@@ -16,24 +20,33 @@ def crsToTTL(ttl,curcrs,x,geodcounter,crsclass):
 		ttl.add("geoepsg:"+epsgcode+" rdf:type "+crsclass+" .\n")
 	elif "Projected CRS" in curcrs.type_name:
 		ttl.add("geoepsg:"+epsgcode+" rdf:type geosrs:ProjectedCRS .\n")
+		examples["geosrs:ProjectedCRS"]=websitens+"/"+epsgcode
 	elif "Geographic 2D CRS" in curcrs.type_name:
 		ttl.add("geoepsg:"+epsgcode+" rdf:type geosrs:GeographicCRS .\n")
+		examples["geosrs:GeographicCRS"]=websitens+"/"+epsgcode
 	elif "Geographic 3D CRS" in curcrs.type_name:
 		ttl.add("geoepsg:"+epsgcode+" rdf:type geosrs:GeographicCRS .\n")
+		examples["geosrs:GeographicCRS"]=websitens+"/"+epsgcode
 	elif "Bound CRS" in curcrs.type_name:
 		ttl.add("geoepsg:"+epsgcode+" rdf:type geosrs:BoundCRS .\n")
+		examples["geosrs:BoundCRS"]=websitens+"/"+epsgcode
 	elif "Vertical CRS" in curcrs.type_name:
 		ttl.add("geoepsg:"+epsgcode+" rdf:type geosrs:VerticalCRS .\n")
+		examples["geosrs:VerticalCRS"]=websitens+"/"+epsgcode
 	elif "Geocentric CRS" in curcrs.type_name:
 		ttl.add("geoepsg:"+epsgcode+" rdf:type geosrs:GeocentricCRS .\n")
+		examples["geosrs:GeocentricCRS"]=websitens+"/"+epsgcode
 	elif "Geographic 3D CRS" in curcrs.type_name:
 		ttl.add("geoepsg:"+epsgcode+" rdf:type geosrs:GeographicCRS .\n")
+		examples["geosrs:GeographicCRS"]=websitens+"/"+epsgcode
 	elif "Compound CRS" in curcrs.type_name:
 		ttl.add("geoepsg:"+epsgcode+" rdf:type geosrs:CompoundCRS .\n")
+		examples["geosrs:CompoundCRS"]=websitens+"/"+epsgcode
 		for subcrs in curcrs.sub_crs_list:
 			ttl.add("geoepsg:"+epsgcode+" geosrs:includesSRS geoepsg:"+str(subcrs.to_epsg())+" .\n")			
 	else:
 		ttl.add("geoepsg:"+epsgcode+" rdf:type geosrs:CRS .\n")
+		examples["geosrs:CRS"]=websitens+"/"+epsgcode
 	ttl.add("geoepsg:"+epsgcode+" rdf:type prov:Entity. \n")
 	ttl.add("geoepsg:"+epsgcode+" geosrs:isApplicableTo geosrsisbody:Earth .\n")
 	ttl.add("geoepsg:"+epsgcode+" rdf:type owl:NamedIndividual .\n")
@@ -41,10 +54,13 @@ def crsToTTL(ttl,curcrs,x,geodcounter,crsclass):
 	ttl.add("geoepsg:"+epsgcode+" geosrs:isBound \""+str(curcrs.is_bound).lower()+"\"^^xsd:boolean . \n")
 	if curcrs.coordinate_system!=None and curcrs.coordinate_system.name in coordinatesystem:
 		ttl.add("geoepsg:"+epsgcode+"_cs rdf:type "+coordinatesystem[curcrs.coordinate_system.name]+" . \n")
+		examples[coordinatesystem[curcrs.coordinate_system.name]]=websitens+"/"+epsgcode+"_cs"	
 		if len(curcrs.coordinate_system.axis_list)==2:
 			ttl.add("geoepsg:"+epsgcode+"_cs rdf:type geosrs:PlanarCoordinateSystem . \n")
+			examples["geosrs:PlanarCoordinateSystem"]=websitens+"/"+epsgcode+"_cs"
 		elif len(curcrs.coordinate_system.axis_list)==3:
-			ttl.add("geoepsg:"+epsgcode+"_cs rdf:type geosrs:3DCoordinateSystem . \n")			
+			ttl.add("geoepsg:"+epsgcode+"_cs rdf:type geosrs:3DCoordinateSystem . \n")	
+			examples["geosrs:3DCoordinateSystem"]=websitens+"/"+epsgcode+"_cs"		
 		ttl.add("geoepsg:"+epsgcode+"_cs rdfs:label \"EPSG:"+epsgcode+" CS: "+curcrs.coordinate_system.name+"\" . \n")
 		if curcrs.coordinate_system.remarks!=None:
 			ttl.add("geoepsg:"+epsgcode+"_cs rdfs:comment \""+str(curcrs.coordinate_system.remarks)+"\"@en . \n")
@@ -59,7 +75,7 @@ def crsToTTL(ttl,curcrs,x,geodcounter,crsclass):
 			ttl.add("geosrsaxis:"+axisid+" geosrs:unit_conversion_factor \""+str(axis.unit_conversion_factor)+"\"^^xsd:double . \n")	
 			ttl.add("geosrsaxis:"+axisid+" geosrs:unit_auth_code \""+str(axis.unit_auth_code)+"\"^^xsd:string . \n")
 			ttl.add("geosrsaxis:"+axisid+" geosrs:unit_code \""+str(axis.unit_code)+"\"^^xsd:string . \n")					
-			ttl.add("geosrsaxis:"+axis.direction+" rdf:type geosrs:AxisDirection . \n")				
+			ttl.add("geosrsaxis:"+axis.direction+" rdf:type geosrs:AxisDirection . \n")					
 			if axis.unit_name in units:
 				ttl.add("geosrsaxis:"+axisid+" geosrs:unit "+units[axis.unit_name]+" . \n")
 				ttl.add("geosrsaxis:"+axisid+" rdfs:label \""+axis.name+" ("+str(units[axis.unit_name])+")\"@en . \n")						
@@ -81,6 +97,7 @@ def crsToTTL(ttl,curcrs,x,geodcounter,crsclass):
 		ttl.add("geoepsg:"+epsgcode+"_area_of_use"+" rdfs:label \""+str(curcrs.area_of_use.name).replace("\"","'")+"\"@en .\n")
 		b = box(curcrs.area_of_use.west, curcrs.area_of_use.south, curcrs.area_of_use.east, curcrs.area_of_use.north)
 		ttl.add("geoepsg:"+epsgcode+"_area_of_use"+" geosrs:extent   \"<http://www.opengis.net/def/crs/OGC/1.3/CRS84> "+str(b.wkt)+"\"^^geo:wktLiteral . \n")
+		examples["geosrs:AreaOfUse"]=websitens+"/"+epsgcode+"_area_of_use"	
 		#\"ENVELOPE("+str(curcrs.area_of_use.west)+" "+str(curcrs.area_of_use.south)+","+str(curcrs.area_of_use.east)+" "+str(curcrs.area_of_use.north)+")\"^^geo:wktLiteral . \n")
 	if curcrs.get_geod()!=None:
 		geoid="geosrsgeod:"+str(geodcounter)
@@ -90,11 +107,13 @@ def crsToTTL(ttl,curcrs,x,geodcounter,crsclass):
 				ttl.add(geoid+" rdf:type geosrs:Ellipsoid . \n")
 				ttl.add(geoid+" rdfs:label \""+curcrs.datum.ellipsoid.name+"\"@en . \n")
 				ttl.add(geoid+" geosrs:approximates geosrsisbody:Earth . \n")
+				examples["geosrs:Ellipsoid"]=websitens+"/"+epsgcode+"_cs"
 			elif curcrs.get_geod().sphere:
 				geoid="geosrsgeod:"+str(curcrs.datum.ellipsoid.name).replace(" ","_").replace("(","_").replace(")","_")
 				ttl.add(geoid+" rdf:type geosrs:Sphere . \n")
 				ttl.add(geoid+" rdfs:label \""+curcrs.datum.ellipsoid.name+"\"@en . \n")
 				ttl.add(geoid+" geosrs:approximates geosrsisbody:Earth . \n")
+				examples["geosrs:Sphere"]=websitens+"/"+epsgcode+"_cs"
 			else:
 				geoid="geosrsgeod:"+str(curcrs.datum.ellipsoid.name).replace(" ","_").replace("(","_").replace(")","_")
 				ttl.add(geoid+" rdf:type geosrs:Geoid . \n")
@@ -391,7 +410,8 @@ ttlhead+="@prefix wd: <http://www.wikidata.org/entity/> .\n"
 ttlhead+="@prefix om: <http://www.ontology-of-units-of-measure.org/resource/om-2/> .\n"
 geodcounter=1
 
-
+examplefile.write(json.dumps(examples))
+examplefile.close()
 parser = argparse.ArgumentParser()
 parser.add_argument("input", type=str,nargs='?',help="the input file to convert or an epsg code to convert")
 parser.add_argument("outputformat", type=str, nargs='?',default="projjson", help="output format",choices=['wkt', 'proj', 'projjson','ttl'])

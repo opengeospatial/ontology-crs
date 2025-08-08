@@ -410,8 +410,6 @@ ttlhead+="@prefix wd: <http://www.wikidata.org/entity/> .\n"
 ttlhead+="@prefix om: <http://www.ontology-of-units-of-measure.org/resource/om-2/> .\n"
 geodcounter=1
 
-examplefile.write(json.dumps(examples))
-examplefile.close()
 parser = argparse.ArgumentParser()
 parser.add_argument("input", type=str,nargs='?',help="the input file to convert or an epsg code to convert")
 parser.add_argument("outputformat", type=str, nargs='?',default="projjson", help="output format",choices=['wkt', 'proj', 'projjson','ttl'])

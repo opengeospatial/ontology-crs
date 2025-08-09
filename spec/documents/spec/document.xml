@@ -176,7 +176,7 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 </clause>
 </clause>
 
-<clause id="_fa572aa6-b3f3-a2bd-07b0-241381a9e0f8" obligation="normative">
+<clause id="_e72d41d0-6a98-a63f-8b81-3b4496bb070e" obligation="normative">
 <title id="_044942ca-9796-b4a6-70f4-4ab0218662d2">Core</title>
 <p id="_80d68486-bf75-c09f-fb55-52b4a4a52b90" anchor="core">This clause establishes the <strong>Core</strong> Requirements class, with IRI <tt>/req/core</tt>, which has a corresponding Conformance Class, <strong>Core</strong>, with IRI <tt>/conf/core</tt>.</p>
 
@@ -271,63 +271,203 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 </clause>
 </clause>
 
-<clause id="_2726f025-be8e-8266-7e90-a7535434372e" obligation="normative">
+<clause id="_4b851fec-aaf7-f018-4341-cf78f26cb84e" obligation="normative">
 <title id="_a8e93d19-cb1b-1bf1-156e-4c00beab7d3f">Coordinate Reference System Properties</title>
 <requirement id="_8ee87c59-9fd9-68bf-88da-4e16f1cd8bbf" model="ogc" anchor="/req/Coordinate_Reference_System_Properties">
 <title>Coordinate Reference System Properties</title> 
 <identifier>/req/Coordinate_Reference_System_Properties</identifier><description><p id="_5ba89fff-f079-c4bc-6b6c-17a8601135c2">Implementations shall allow the RDFS classes <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>baseCRS</referenceFrom></locality></localityStack><display-text>geosrs:baseCRS</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>conversion</referenceFrom></locality></localityStack><display-text>geosrs:conversion</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>coordinateSystem</referenceFrom></locality></localityStack><display-text>geosrs:coordinateSystem</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>datum</referenceFrom></locality></localityStack><display-text>geosrs:datum</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>datumEnsemble</referenceFrom></locality></localityStack><display-text>geosrs:datumEnsemble</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>domainOfValidity</referenceFrom></locality></localityStack><display-text>geosrs:domainOfValidity</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>method</referenceFrom></locality></localityStack><display-text>geosrs:method</display-text></eref>, <eref bibitemid="Class_ geocrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>asProj4</referenceFrom></locality></localityStack><display-text>geocrs:asProj4</display-text></eref>, <eref bibitemid="Class_ geocrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>asProjJSON</referenceFrom></locality></localityStack><display-text>geocrs:asProjJSON</display-text></eref>, <eref bibitemid="Class_ geocrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>asWKT</referenceFrom></locality></localityStack><display-text>geocrs:asWKT</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>EPSGcode</referenceFrom></locality></localityStack><display-text>geosrs:EPSGcode</display-text></eref> to be used in SPARQL graph patterns.</p></description>
 </requirement>
 
-<clause id="_b680a2a8-15e8-edea-6dde-2ad903a23f19" obligation="normative">
-<title id="_40cc26d8-652a-4d0a-419e-f435782a6624">Property: geocrs:asProj4</title>
-<table id="_467fc933-ae55-d1cc-e442-5fc3b599e310"><colgroup><col width="50%"/><col width="50%"/></colgroup>
-<name id="_0eccc577-700c-e5e3-4ff5-587903651a59">geocrs:asProj4</name>
-<tbody><tr id="_676b9b02-9e2f-6fc2-1870-8056afc8488f"><td id="_2e2e1ba4-e99a-3720-e259-0c542312323f" valign="middle" align="left">URI</td>
-<td id="_6c4ae53a-d4b1-0d08-72ed-e4f781a622c5" valign="middle" align="left">geocrs:asProj4</td>
-</tr><tr id="_9468ebf9-afed-c0c2-45ff-35bf3c6bda93"><td id="_76b1d2a6-3d5d-1a88-d83a-13f1c8f925bc" valign="middle" align="left">Type</td>
-<td id="_d1167d71-ee31-5f1e-7649-c6e580d46fca" valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#DatatypeProperty">owl:DatatypeProperty</link></td>
-</tr><tr id="_01673088-f5a0-6d2c-471c-1571050ed6a9"><td id="_07d12af6-eb52-bc01-4745-d71176b79c9f" valign="middle" align="left">Definition</td>
-<td id="_3621e8db-158f-a676-fe2c-dac748d5e330" valign="middle" align="left">PROJ4 string defining a CRS. Note: this paradigm is ambiguous and presently considered outdated.</td>
-</tr><tr id="_f8dd0b9f-e5ef-e408-3d07-4d99a3f8b3d0"><td id="_f1b4647a-e54a-442e-bde9-5038978e2dfb" valign="middle" align="left">Range</td>
-<td id="_17dfadea-b8c3-1495-73a7-58bcb166fe44" valign="middle" align="left"><link target="https://w3id.org/geosrs/proj4Literal">proj4Literal</link></td>
-</tr><tr id="_93e1cf44-27db-e200-515c-db516bc5a20c"><td id="_a740f9f8-15fa-2eb0-8d32-77c9720a46e2" valign="middle" align="left">Domain</td>
-<td id="_60a3ea06-91e8-a612-3f8b-5ec410602be4" valign="middle" align="left"><link target="https://w3id.org/geosrs/srs/CRS">CRS</link></td>
+<clause id="_86b92185-3fa7-a969-fec0-8d269797659a" obligation="normative">
+<title id="_f2a8d1bb-b2ee-5e4b-a922-e4b1530a3a0d">Property: geosrs:baseCRS</title>
+<table id="_88a5f049-ce04-83dc-c8ef-8f267a2fa9fe"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<name id="_06fe43e9-7da0-b613-2aa6-b6fd4460cbd4">geosrs:baseCRS</name>
+<tbody><tr id="_b941cdc3-aaab-feda-d4e1-a4811fd4cc1f"><td id="_2e2e1ba4-e99a-3720-e259-0c542312323f" valign="middle" align="left">URI</td>
+<td id="_9cefe66d-9359-91c7-1d20-03f45f660933" valign="middle" align="left"><link target="https://w3id.org/geosrs/srs/baseCRS"/></td>
+</tr><tr id="_9b19f4c7-1ba0-2cbd-2009-aebccc201656"><td id="_76b1d2a6-3d5d-1a88-d83a-13f1c8f925bc" valign="middle" align="left">Type</td>
+<td id="_82dd0604-30fa-4025-821e-9ce794005863" valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#ObjectProperty">owl:ObjectProperty</link></td>
+</tr><tr id="_b4f0c31e-2b33-141e-9aaa-7acf21864cc9"><td id="_07d12af6-eb52-bc01-4745-d71176b79c9f" valign="middle" align="left">Definition</td>
+<td id="_a74658c7-4110-f995-60b6-0126af2e30cd" valign="middle" align="left">The geodetic coordinate reference system on which a projected coordinate reference system is based. Cf. ISO 19111:2007:2007-07, table 11, association role baseCRS.</td>
+</tr><tr id="_14a4bee7-45d1-54d6-7bbb-a976624ca200"><td id="_f1b4647a-e54a-442e-bde9-5038978e2dfb" valign="middle" align="left">Range</td>
+<td id="_05747599-070d-b16c-b451-a4d7b8d8f0e5" valign="middle" align="left"><link target="https://w3id.org/geosrs/srs/GeodeticCRS">GeodeticCRS</link></td>
+</tr><tr id="_bd79d8ec-b023-0b19-e200-4bc68a96cb00"><td id="_a740f9f8-15fa-2eb0-8d32-77c9720a46e2" valign="middle" align="left">Domain</td>
+<td id="_1a899959-341a-d2cc-be42-2d55d21bb55f" valign="middle" align="left"><link target="https://w3id.org/geosrs/srs/ProjectedCRS">ProjectedCRS</link></td>
 </tr></tbody>
 </table>
 </clause>
 
-<clause id="_831e4b44-4730-fd87-a9e1-04e185b3f26c" obligation="normative">
-<title id="_5ceeff0e-605d-641c-4d11-604987c16b11">Property: geocrs:asProjJSON</title>
-<table id="_93231ba5-2d56-cb8c-0784-2a4e1e2ae323"><colgroup><col width="50%"/><col width="50%"/></colgroup>
-<name id="_2b4884c7-b0ca-b546-9c33-056c930fcd88">geocrs:asProjJSON</name>
-<tbody><tr id="_3e602464-6a01-5698-9491-ca8815eb571d"><td id="_890f8857-a1bc-271f-e15f-c143b462b717" valign="middle" align="left">URI</td>
-<td id="_b896039d-7c7f-82b7-f379-998d149ded38" valign="middle" align="left">geocrs:asProjJSON</td>
-</tr><tr id="_3f6630a7-4a55-9cb2-96e7-e40b9e41b372"><td id="_2a495ccd-df7e-a987-919e-8048b569a584" valign="middle" align="left">Type</td>
-<td id="_db4701a8-6c40-4b18-f935-bcc06351ff9a" valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#DatatypeProperty">owl:DatatypeProperty</link></td>
-</tr><tr id="_10dcf7b2-ce42-6aed-5f79-52ecaa9e154b"><td id="_fa821a4d-6ba9-0eba-36d9-f24a2436eb4a" valign="middle" align="left">Definition</td>
-<td id="_e121dcee-d71c-b845-3277-97d6fbf6752b" valign="middle" align="left">CRS definition encoded as a JSON object interpretable by PROJ4.</td>
-</tr><tr id="_72c36824-693b-63ae-c72c-d53d385102cc"><td id="_c40addc2-1a71-f3e9-a767-cf681ebc48d3" valign="middle" align="left">Range</td>
-<td id="_66388fc4-44e9-2b27-0824-675446dbf0e0" valign="middle" align="left"><link target="https://w3id.org/geosrs/projJSONLiteral">projJSONLiteral</link></td>
+<clause id="_8f74669a-9158-1e73-8a73-e333d8631fb5" obligation="normative">
+<title id="_7d203dd5-8879-5135-7159-ec365a670412">Property: geosrs:conversion</title>
+<table id="_77210599-f246-8e08-ff60-ef91ad1c405d"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<name id="_7f220bb3-9e7e-c59f-e273-cf9f483e3dab">geosrs:conversion</name>
+<tbody><tr id="_03678c2f-5541-184e-866a-5ce913056d79"><td id="_890f8857-a1bc-271f-e15f-c143b462b717" valign="middle" align="left">URI</td>
+<td id="_811ffb83-7852-19da-dbd0-a89ae4805a85" valign="middle" align="left"><link target="https://w3id.org/geosrs/srs/conversion"/></td>
+</tr><tr id="_94b2195b-f73b-c13f-8419-3be25849d0ec"><td id="_2a495ccd-df7e-a987-919e-8048b569a584" valign="middle" align="left">Type</td>
+<td id="_d3952a7e-3e60-5cfb-e613-2fbe0ebc40a8" valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#ObjectProperty">owl:ObjectProperty</link></td>
+</tr><tr id="_f06e583d-b878-c5c4-371b-b3dc9611d428"><td id="_fa821a4d-6ba9-0eba-36d9-f24a2436eb4a" valign="middle" align="left">Definition</td>
+<td id="_5993eca0-d8c1-0fdf-e8d9-ccc7dd1f69c9" valign="middle" align="left">The conversion used to define a projected coordinate reference system. Cf. ISO 19111:2007:2007-07, table 7, named association Definition.</td>
+</tr><tr id="_25bc2213-0a61-862c-9d56-9029283ee7a2"><td id="_c40addc2-1a71-f3e9-a767-cf681ebc48d3" valign="middle" align="left">Range</td>
+<td id="_5d396154-6bda-8731-441e-ac623810d072" valign="middle" align="left"><link target="https://w3id.org/geosrs/Conversion">Conversion</link></td>
 </tr><tr id="_3dbb2b09-fb58-bc14-60ab-1b35c40a32e2"><td id="_b999a0e9-585a-843a-cd9b-67cf627fab4d" valign="middle" align="left">Domain</td>
 <td id="_8a6bd1c1-ed76-56f6-8e22-f9bf9b23de28" valign="middle" align="left"><link target="https://w3id.org/geosrs/srs/CRS">CRS</link></td>
 </tr></tbody>
 </table>
 </clause>
 
-<clause id="_fae68b1b-08c6-8680-20ae-d08be847c55a" obligation="normative">
-<title id="_1835ada7-163e-4451-89b7-2cbcb6f74f1a">Property: geocrs:asWKT</title>
-<table id="_72cd11cb-c36f-c475-35cc-2dcfc6b3b219"><colgroup><col width="50%"/><col width="50%"/></colgroup>
-<name id="_81b0d10c-a6cd-54f2-fbec-0d78aea18530">geocrs:asWKT</name>
-<tbody><tr id="_f8bb8dfe-ecf1-aedf-c24d-bfb8efea6723"><td id="_3586bd9e-1937-180e-f2dd-d12d438a09b5" valign="middle" align="left">URI</td>
-<td id="_f3aba684-9488-d350-1e7b-75b7a9cf4ff2" valign="middle" align="left">geocrs:asWKT</td>
-</tr><tr id="_de67a691-5f9c-3d15-10bd-802ca2c7389c"><td id="_381f0f68-ae1a-2272-f859-f70672d39cdd" valign="middle" align="left">Type</td>
-<td id="_a81e5941-9318-111c-f3a5-d44fbd3c2487" valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#DatatypeProperty">owl:DatatypeProperty</link></td>
-</tr><tr id="_c7406e16-e3df-ba7f-3fec-1904dce3757b"><td id="_06e37db3-e4dd-ec44-d5d5-93915d26ba8d" valign="middle" align="left">Definition</td>
-<td id="_a8e5e157-d041-14c1-d96c-8f09f8e87703" valign="middle" align="left">CRS definition encoded according to the Well Known Text structure. Cf. ISO 19162:2019.</td>
-</tr><tr id="_3ad5249b-395d-b91a-cc58-8cf3aa0a5a09"><td id="_bf8e014c-b385-6017-99cf-70f2f6415506" valign="middle" align="left">Range</td>
-<td id="_d2196909-db4b-558a-dcd3-13f1abcc9d9e" valign="middle" align="left"><link target="https://w3id.org/geosrs/wktLiteral">wktLiteral</link></td>
+<clause id="_2a77bbbc-c4ca-04bb-079e-e1f4fc5a6c06" obligation="normative">
+<title id="_0c6c9ff1-195d-b7a9-5b18-7161afe85f75">Property: geosrs:coordinateSystem</title>
+<table id="_c57fb276-cdec-595e-43eb-76233249ad1c"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<name id="_572987fd-1784-4cc0-8b53-446be8569fd0">geosrs:coordinateSystem</name>
+<tbody><tr id="_bae29c97-9f60-5374-67b5-6817adc1ba9b"><td id="_3586bd9e-1937-180e-f2dd-d12d438a09b5" valign="middle" align="left">URI</td>
+<td id="_824947f8-eb7c-0a9e-f970-7cce8ae298c7" valign="middle" align="left"><link target="https://w3id.org/geosrs/srs/coordinateSystem"/></td>
+</tr><tr id="_0edbcba2-83d9-8838-1c18-bf0b480db15c"><td id="_381f0f68-ae1a-2272-f859-f70672d39cdd" valign="middle" align="left">Type</td>
+<td id="_e2763800-9865-3e6e-a0e9-e726f264499e" valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#ObjectProperty">owl:ObjectProperty</link></td>
+</tr><tr id="_714f0c56-e7d5-f494-4b32-6bd754728c27"><td id="_06e37db3-e4dd-ec44-d5d5-93915d26ba8d" valign="middle" align="left">Definition</td>
+<td id="_0c95baf1-ee71-b862-1507-9a04a3b8216c" valign="middle" align="left">The property relates a coordinate reference system to its coordinate system</td>
+</tr><tr id="_09e341b6-3e9a-f013-5c5e-4f5401805b54"><td id="_bf8e014c-b385-6017-99cf-70f2f6415506" valign="middle" align="left">Range</td>
+<td id="_71f4c08e-ff52-fdc1-12ec-1593769e9d77" valign="middle" align="left"><link target="https://w3id.org/geosrs/CoordinateSystem">CoordinateSystem</link></td>
 </tr><tr id="_50c50fd9-a9ce-fc0a-a8c1-5981587b7edd"><td id="_2a96f1cf-6297-3945-df67-a52a09db6c36" valign="middle" align="left">Domain</td>
 <td id="_ad632052-05f2-a8da-f19e-8318fc37174f" valign="middle" align="left"><link target="https://w3id.org/geosrs/srs/CRS">CRS</link></td>
+</tr></tbody>
+</table>
+</clause>
+
+<clause id="_32426f70-41e5-2555-fdb6-d7437fc34199" obligation="normative">
+<title id="_7eda7aac-823a-f57b-de69-36726b30eb0c">Property: geosrs:datum</title>
+<table id="_46d06693-7660-9c70-c4f8-fc20ceb116a8"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<name id="_abd5e792-815c-344b-641f-6776384bbbd5">geosrs:datum</name>
+<tbody><tr id="_09740b75-cb12-b00c-f118-f4b76492eb1d"><td id="_f2c6de8b-77f4-1e2c-5ffa-899181ed7d00" valign="middle" align="left">URI</td>
+<td id="_d8345065-06c7-d575-c576-af2423ed6217" valign="middle" align="left"><link target="https://w3id.org/geosrs/srs/datum"/></td>
+</tr><tr id="_e89c4d76-43e9-86ce-bca9-f90dd041fdb3"><td id="_6527d498-94f0-44fd-d391-fde4cc1594d9" valign="middle" align="left">Type</td>
+<td id="_21954618-1e60-cd02-d695-8f1e18788b8e" valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#ObjectProperty">owl:ObjectProperty</link></td>
+</tr><tr id="_572a4e6d-d3f2-f233-6b21-9ca59c6b0f62"><td id="_7225a52e-f857-8fd8-bc7a-1796165ee608" valign="middle" align="left">Definition</td>
+<td id="_3c714169-4243-ca25-0a41-b042f4bd5873" valign="middle" align="left">The property relates a coordinate reference system to a datum</td>
+</tr><tr id="_9110e4af-d16c-5d2c-6e64-087774778be1"><td id="_69a0e86d-f751-48df-6380-de8ee706f5f8" valign="middle" align="left">Range</td>
+<td id="_623ca2c0-5030-29ab-a85a-9ef18a350ba5" valign="middle" align="left"><link target="https://w3id.org/geosrs/Datum">Datum</link></td>
+</tr><tr id="_37ef9572-27eb-b68b-3f10-244f82d0a433"><td id="_39c58b34-81df-4b8d-3d50-e54dcbe76e2f" valign="middle" align="left">Domain</td>
+<td id="_191c5f3f-668e-1f26-c888-40f29fb7bdc6" valign="middle" align="left"><link target="https://w3id.org/geosrs/srs/CRS">CRS</link></td>
+</tr></tbody>
+</table>
+</clause>
+
+<clause id="_547eabd0-cba4-7cd4-ed30-4f3994adff53" obligation="normative">
+<title id="_8b7231b2-7eda-ee45-2f30-1a8adfb11957">Property: geosrs:datumEnsemble</title>
+<table id="_e170757d-f484-f7d0-1681-224edbe6757f"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<name id="_4650fefa-5fc6-c6f0-f49c-ccad225386db">geosrs:datumEnsemble</name>
+<tbody><tr id="_39d83dfe-0b1c-f7ce-788e-fc5b04093f86"><td id="_da6e9434-e2f8-3a46-cce6-70f83616067d" valign="middle" align="left">URI</td>
+<td id="_4e550289-0d38-25e8-c420-eb2630d32631" valign="middle" align="left"><link target="https://w3id.org/geosrs/srs/datumEnsemble"/></td>
+</tr><tr id="_a5fe85aa-4fc4-ef90-5506-ca9e0dad13d1"><td id="_f4b39f61-a496-66b2-833b-0e2034b9e9ae" valign="middle" align="left">Type</td>
+<td id="_11831eeb-c0b5-c0a3-c29d-cf13b8fe4eaf" valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#ObjectProperty">owl:ObjectProperty</link></td>
+</tr><tr id="_c0e88894-bc4d-23b5-e6ed-d0ca1d9f59f3"><td id="_62c48504-9335-7fcd-4461-dd87323093f7" valign="middle" align="left">Definition</td>
+<td id="_1f2d5621-dd1e-0e03-985a-87984198cef4" valign="middle" align="left">Indicates a single CRS referring to a collection of one or more datums (Datum Ensemble)</td>
+</tr><tr id="_526e64cb-1c28-2393-bb46-650bb3cc3b70"><td id="_81b771b0-8bd2-f60b-e003-6f2f402436bd" valign="middle" align="left">Range</td>
+<td id="_96361d32-24ed-88a9-cea6-583a8d505dfe" valign="middle" align="left"><link target="https://w3id.org/geosrs/datum/DatumEnsemble">DatumEnsemble</link></td>
+</tr><tr id="_72e96b5e-19d6-9152-7746-3f065e5f5294"><td id="_cd9f7d76-0f26-bcc2-3745-fb3d69b44109" valign="middle" align="left">Domain</td>
+<td id="_2deaae1d-6465-b32d-ff80-939e6f7b1ac6" valign="middle" align="left"><link target="https://w3id.org/geosrs/srs/SingleCRS">SingleCRS</link></td>
+</tr></tbody>
+</table>
+</clause>
+
+<clause id="_5e609475-886a-279b-2f4c-5ee48cb1e2ff" obligation="normative">
+<title id="_29b3b57f-faf4-2ce3-975d-712623282f09">Property: geosrs:domainOfValidity</title>
+<table id="_87fa8d57-a0c9-c41c-badd-1450d58a735e"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<name id="_013b40ca-a393-c274-73fd-20c300f4b781">geosrs:domainOfValidity</name>
+<tbody><tr id="_13dbb32b-7f41-751a-6513-2cc81882a624"><td id="_a36b5e36-f989-f3b2-6a7c-9d1176eeafb1" valign="middle" align="left">URI</td>
+<td id="_b993235a-8895-4f70-9617-3cfce2f2f0aa" valign="middle" align="left"><link target="https://w3id.org/geosrs/srs/domainOfValidity"/></td>
+</tr><tr id="_0ec467b8-7776-861f-0c19-d4aad1a62007"><td id="_756a3a5c-7c9c-8682-3ef4-0d5c9f9791a3" valign="middle" align="left">Type</td>
+<td id="_fabf63da-1922-10e4-ff28-b9ae0b13b144" valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#ObjectProperty">owl:ObjectProperty</link></td>
+</tr><tr id="_d94ff4e5-c85f-96fa-f68f-50fe4709f201"><td id="_c9bdf7a2-038d-130b-f413-79527e43bc85" valign="middle" align="left">Definition</td>
+<td id="_5ae42034-493b-726a-571a-3bea06191eea" valign="middle" align="left">Geographic area or time interval in which the referring object is valid. Cf. ISO 19111:2007:2007-07, tables 4, 33 and 42, attribute domainOfValidity.</td>
+</tr><tr id="_dc0a69b7-e376-733f-a519-82644fca00ee"><td id="_44561bca-f969-8294-6cac-b5015b59f33d" valign="middle" align="left">Range</td>
+<td id="_31c464f1-a005-f6a1-6d5d-4420bbb87889" valign="middle" align="left"><link target="https://w3id.org/geosrs/srs/AreaOfUse">AreaOfUse</link></td>
+</tr><tr id="_c9c0a80a-01e7-ddd5-f60e-c418dce3302d"><td id="_c6d489ed-2880-9fe3-370c-aa14c4a45cee" valign="middle" align="left">Domain</td>
+<td id="_e820130a-ed50-02fa-6079-d47d807fecc3" valign="middle" align="left"><link target="https://w3id.org/geosrs/srs/CRS">CRS</link></td>
+</tr></tbody>
+</table>
+</clause>
+
+<clause id="_89b2fc9e-683e-46cb-0b07-fbf5bce32f36" obligation="normative">
+<title id="_a610ee81-7fb7-2c42-3216-570b89ebe32f">Property: geosrs:method</title>
+<table id="_b930a641-648e-5842-7c9f-9f032db57351"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<name id="_b27ef4f9-5bcd-686b-a79b-ac59d0a12f42">geosrs:method</name>
+<tbody><tr id="_35e063c2-cd04-cd08-cc0a-d5b112631118"><td id="_a7c12722-18f4-9279-a5a7-a89c4308139f" valign="middle" align="left">URI</td>
+<td id="_a0463f48-e3f9-48f4-f251-844fb53b074e" valign="middle" align="left"><link target="https://w3id.org/geosrs/srs/method"/></td>
+</tr><tr id="_f66c1e0e-24c1-0272-ad21-f40774379b81"><td id="_b91449db-2cd8-d49e-44ac-b29d6b85fa9d" valign="middle" align="left">Type</td>
+<td id="_e9dba589-0f4e-64a5-d1a9-2bf47e7ebec1" valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#ObjectProperty">owl:ObjectProperty</link></td>
+</tr><tr id="_3e0a6ba3-02db-f36c-ef54-31a5a3228079"><td id="_c5178cd5-ac35-6094-cf3d-1922610b00b6" valign="middle" align="left">Range</td>
+<td id="_dc937d1a-a959-4314-4776-b377b7e5cb46" valign="middle" align="left"><link target="https://w3id.org/geosrs/CoordinateOperation">CoordinateOperation</link></td>
+</tr><tr id="_fe63e928-9765-4b39-2c2d-f341ae5d234b"><td id="_924708a3-c8ab-4d68-6b3c-b456a5c34cc6" valign="middle" align="left">Domain</td>
+<td id="_9adb58eb-f194-657c-72e6-b3c79d246370" valign="middle" align="left"><link target="https://w3id.org/geosrs/srs/CRS">CRS</link></td>
+</tr></tbody>
+</table>
+</clause>
+
+<clause id="_0f350b2e-f5c4-17d9-18f3-8f452421e6f6" obligation="normative">
+<title id="_34533c64-ab75-9f71-f297-4732d9d2b997">Property: geocrs:asProj4</title>
+<table id="_03d7aabf-e150-ee6a-bc7c-b07982f36ee3"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<name id="_7b7d3215-4a4a-0b72-66b6-a2d233536d0e">geocrs:asProj4</name>
+<tbody><tr id="_4e3d1247-d8f7-819b-a921-eee186613d42"><td id="_3bc91b2f-d3bc-dbbf-34e9-c2546df868c5" valign="middle" align="left">URI</td>
+<td id="_b6ac436f-0244-cfe2-57be-d3b442751232" valign="middle" align="left">geocrs:asProj4</td>
+</tr><tr id="_aff1a5ca-a81c-dc6f-b5bf-9f1bff014edf"><td id="_9304727b-5465-c2f7-412c-a1dc8ff2af30" valign="middle" align="left">Type</td>
+<td id="_5a5294b8-0cda-9ba7-7994-29becc72c3d8" valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#DatatypeProperty">owl:DatatypeProperty</link></td>
+</tr><tr id="_b0f6d801-51fb-dcb8-2587-0733136907a8"><td id="_787ee3ee-ee40-f991-8942-e11ccc9fcd52" valign="middle" align="left">Definition</td>
+<td id="_3388b8ea-32a0-5bf0-8c12-4754c0e82230" valign="middle" align="left">PROJ4 string defining a CRS. Note: this paradigm is ambiguous and presently considered outdated.</td>
+</tr><tr id="_f855c51d-4b48-d0b0-b340-8deca3987f04"><td id="_344e37a7-8e8b-f089-e96e-9cb3048302ae" valign="middle" align="left">Range</td>
+<td id="_944957c4-ae3e-987b-6904-7fe009ec27cd" valign="middle" align="left"><link target="https://w3id.org/geosrs/proj4Literal">proj4Literal</link></td>
+</tr><tr id="_d8892d37-def9-e56b-1971-b9826f7d9901"><td id="_abc8ca2f-c549-7e01-f1d4-a8a095ac1220" valign="middle" align="left">Domain</td>
+<td id="_faad1fde-ff26-681b-6c63-b2fd37b042ff" valign="middle" align="left"><link target="https://w3id.org/geosrs/srs/CRS">CRS</link></td>
+</tr></tbody>
+</table>
+</clause>
+
+<clause id="_b9725402-3f45-54e7-ef0b-21422b4b320e" obligation="normative">
+<title id="_2634c982-1feb-2334-857c-87ae4fd7f4eb">Property: geocrs:asProjJSON</title>
+<table id="_d717b446-b2fd-bf9f-8006-9cd13280613a"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<name id="_1d8038ac-56b3-4478-9299-82f565acef29">geocrs:asProjJSON</name>
+<tbody><tr id="_2f729bfa-e753-0e5d-c7d2-cd84bd954d94"><td id="_cd6fd2eb-0249-6539-e83b-4c8d18fe5ccd" valign="middle" align="left">URI</td>
+<td id="_9097b501-375a-8ecd-7674-90f95be6efb1" valign="middle" align="left">geocrs:asProjJSON</td>
+</tr><tr id="_89db2a77-487a-719a-6b6c-f704b551eb48"><td id="_25d2b2b7-4f0a-9cd6-3d09-cc15c3b9cdf5" valign="middle" align="left">Type</td>
+<td id="_6c44e834-4265-32f8-bf8e-36aebf91c0d9" valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#DatatypeProperty">owl:DatatypeProperty</link></td>
+</tr><tr id="_d6e59fdb-bf54-58e2-2155-91f367e667e7"><td id="_bf3ed8c7-c93e-2c38-38f4-8b5f8c7bb9d3" valign="middle" align="left">Definition</td>
+<td id="_0aa597b6-ae21-3a21-5f14-34c9a4c0d393" valign="middle" align="left">CRS definition encoded as a JSON object interpretable by PROJ4.</td>
+</tr><tr id="_1b49f222-325e-1d73-bd41-a18be1d8a4af"><td id="_43a6d21f-f7fc-ac40-1390-51be896164fb" valign="middle" align="left">Range</td>
+<td id="_534e6d48-0db5-47bb-758e-c67e65dbf36c" valign="middle" align="left"><link target="https://w3id.org/geosrs/projJSONLiteral">projJSONLiteral</link></td>
+</tr><tr id="_6cfd61ed-b7d8-cbef-fa93-15b75435e637"><td id="_e58e6be0-0624-c192-4e89-2c7b4da819db" valign="middle" align="left">Domain</td>
+<td id="_6424c56c-6552-08b2-f7b1-80c445af715d" valign="middle" align="left"><link target="https://w3id.org/geosrs/srs/CRS">CRS</link></td>
+</tr></tbody>
+</table>
+</clause>
+
+<clause id="_a5708680-5a1c-a04e-889f-2df9ec0e7431" obligation="normative">
+<title id="_ce3b44d0-daa3-4b1d-0d64-588144283646">Property: geocrs:asWKT</title>
+<table id="_caea8f8b-99e4-f992-24f7-3f322caae257"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<name id="_e34ea0d7-0369-bf95-4d2a-c4f6bc4df86c">geocrs:asWKT</name>
+<tbody><tr id="_ecfa8571-e751-2e5d-8cde-3b3a09afd235"><td id="_92088da3-bc93-7574-5fb3-91b3e4fc1ff4" valign="middle" align="left">URI</td>
+<td id="_8879d19a-eb98-3a47-0ed3-95e3b9f6a12c" valign="middle" align="left">geocrs:asWKT</td>
+</tr><tr id="_7c0ce474-a653-3cb9-687e-6d4dc0de5e5f"><td id="_d4d0d7a4-00c3-b8a2-8def-d36f8f01e509" valign="middle" align="left">Type</td>
+<td id="_33becac1-1c73-fdb2-0c0a-bfaf3f836bf8" valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#DatatypeProperty">owl:DatatypeProperty</link></td>
+</tr><tr id="_54de0a66-f2c0-a2c8-2adf-faa5dcc07624"><td id="_1bafc0e9-b50e-f684-1c13-28e9d829a895" valign="middle" align="left">Definition</td>
+<td id="_e58cb0a1-8e77-ae57-899a-2a986542c0a0" valign="middle" align="left">CRS definition encoded according to the Well Known Text structure. Cf. ISO 19162:2019.</td>
+</tr><tr id="_db89a6df-61e1-95a8-138b-81c8a105f06f"><td id="_3ebf42ce-d066-d501-1fdc-55aa0842e6e9" valign="middle" align="left">Range</td>
+<td id="_c4cd1c08-4c8b-40d2-0159-43c3c34dc698" valign="middle" align="left"><link target="https://w3id.org/geosrs/wktLiteral">wktLiteral</link></td>
+</tr><tr id="_179b7f4a-bd96-9b09-663c-6f9268c199cf"><td id="_f98cb6f6-e881-967e-f565-1e0002914b2b" valign="middle" align="left">Domain</td>
+<td id="_439a73be-c951-f57c-9c17-0b3cc7e5ce9e" valign="middle" align="left"><link target="https://w3id.org/geosrs/srs/CRS">CRS</link></td>
+</tr></tbody>
+</table>
+</clause>
+
+<clause id="_74b86aa8-a367-eb41-4839-591757ae5880" obligation="normative">
+<title id="_957664a8-3d28-6c95-b376-a0686a9a1dd3">Property: geosrs:EPSGcode</title>
+<table id="_853cc164-42a5-5bae-8510-0145f83db159"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<name id="_89a75827-a08a-1e13-e011-7a46705b8de6">geosrs:EPSGcode</name>
+<tbody><tr id="_7a3d5a83-bae4-58c1-950a-a54e976ca45a"><td id="_c2dbd90e-f626-1ae3-a64b-3d870ba9e3ab" valign="middle" align="left">URI</td>
+<td id="_dda67a58-005d-318b-73a8-aa42a18f3057" valign="middle" align="left"><link target="https://w3id.org/geosrs/srs/EPSGcode"/></td>
+</tr><tr id="_ae989dd2-be35-6c87-0e83-aced6480466a"><td id="_ca92ed1b-7899-71d0-36b7-86e592e4d05e" valign="middle" align="left">Type</td>
+<td id="_f4a84609-f342-f6b9-1e40-6add26f9133b" valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#DatatypeProperty">owl:DatatypeProperty</link></td>
+</tr><tr id="_a258030c-9369-debc-ec23-c0a1a1145f09"><td id="_70ebe963-e4d2-7dc9-990c-d80ca6b29bb5" valign="middle" align="left">Definition</td>
+<td id="_4c1d61af-173c-f576-6b46-0242831b8310" valign="middle" align="left">Identifier of this resource in the EPSG Geodetic Parameter Dataset.</td>
+</tr><tr id="_f9840ff8-ee59-12ca-37e0-47ce7b4d9c6c"><td id="_d82e8aa8-06c8-7432-606e-1488a6aac76b" valign="middle" align="left">Range</td>
+<td id="_19a866a4-ff5a-1fc3-a185-c7b296c57347" valign="middle" align="left">xsd:string[xsd:string]</td>
 </tr></tbody>
 </table>
 </clause>
@@ -614,7 +754,7 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 </clause>
 </clause>
 
-<clause id="_1572a419-e26f-a773-ef9a-963081619c2e" obligation="normative">
+<clause id="_576b3343-a2f3-ea78-bb9e-210ebc78c0da" obligation="normative">
 <title id="_f871b3bf-7ed3-bb16-c69e-db6ff0d3ff2b">Coordinate Operation Module</title>
 <p id="_0cde27cf-175d-05fd-b275-730257335201" anchor="co">This clause establishes the <strong>Co</strong> Requirements class, with IRI <tt>/req/co</tt>, which has a corresponding Conformance Class, <strong>Co</strong>, with IRI <tt>/conf/co</tt>.</p>
 
@@ -854,16 +994,88 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 </clause>
 </clause>
 
-<clause id="_72c26657-dcf4-a531-5cb5-6afb8adc961a" obligation="normative">
+<clause id="_0fc6fe5a-3818-357c-4fd6-d35e7b04f241" obligation="normative">
 <title id="_14bf9c7b-7486-53e1-40f1-d4e72e0b2fdb">Coordinate Operation Properties</title>
 <requirement id="_02c932f0-7ce3-10d0-d0f0-0430e444cc0e" model="ogc" anchor="/req/Coordinate_Operation_Properties">
 <title>Coordinate Operation Properties</title> 
 <identifier>/req/Coordinate_Operation_Properties</identifier><description><p id="_7b0a405a-6f81-edbf-f76c-184ba11bff03">Implementations shall allow the RDFS classes <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>derivingConversion</referenceFrom></locality></localityStack><display-text>geosrs:derivingConversion</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>parameter</referenceFrom></locality></localityStack><display-text>geosrs:parameter</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>sourceCRS</referenceFrom></locality></localityStack><display-text>geosrs:sourceCRS</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>targetCRS</referenceFrom></locality></localityStack><display-text>geosrs:targetCRS</display-text></eref> to be used in SPARQL graph patterns.</p></description>
 </requirement>
+
+<clause id="_8e796109-1e3f-4b87-4436-5ee88a5f4711" obligation="normative">
+<title id="_79b83c21-c15b-00e7-f7cc-f003363c0be5">Property: geosrs:derivingConversion</title>
+<table id="_0beeae25-83bd-e385-1056-20242a3dede7"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<name id="_2e4c8c58-68c7-8fad-3bd9-675e1b3818d6">geosrs:derivingConversion</name>
+<tbody><tr id="_3395568a-fa77-1df6-4314-3316cbd9af29"><td id="_85d5dfdb-5b3b-e686-e492-96b1954d4348" valign="middle" align="left">URI</td>
+<td id="_b3f0e4bb-857a-9cee-e2bd-03e3883375a6" valign="middle" align="left"><link target="https://w3id.org/geosrs/co/derivingConversion"/></td>
+</tr><tr id="_4bf7cea2-00e2-5228-c772-4a26f482de10"><td id="_3a54c9ff-eec8-0a09-c081-1aa54e8cd859" valign="middle" align="left">Type</td>
+<td id="_4cd73d72-2208-bc76-91e5-be5cc0628380" valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#ObjectProperty">owl:ObjectProperty</link></td>
+</tr><tr id="_5e6c5649-fdac-584e-dc10-7dd4c5ccbcc9"><td id="_b2dd69b9-df59-ca8b-a111-db298cada307" valign="middle" align="left">Definition</td>
+<td id="_b2f5121d-55c6-cc21-ce03-c957b50a4032" valign="middle" align="left">Relates a derived CRS to a conversion</td>
+</tr><tr id="_488b10e6-0e92-e1e1-18ba-90bfc84a511b"><td id="_d7ff2e26-d4e1-768c-1e7e-cb143203e41c" valign="middle" align="left">Range</td>
+<td id="_cf2a6e0f-1b64-8467-da50-48be0e7fcbf5" valign="middle" align="left"><link target="https://w3id.org/geosrs/Conversion">Conversion</link></td>
+</tr><tr id="_009f37c2-86ed-76a0-8432-af69c08c5039"><td id="_debb1fdd-0607-ba59-c4f2-723bbb161220" valign="middle" align="left">Domain</td>
+<td id="_47fc0b14-9e5c-a2f0-b04d-4b97d8f78748" valign="middle" align="left"><link target="https://w3id.org/geosrs/DerivedCRS">DerivedCRS</link></td>
+</tr></tbody>
+</table>
+</clause>
+
+<clause id="_21602038-f170-ab61-030d-4c2b9351b31b" obligation="normative">
+<title id="_d44a5827-0273-503e-49f0-790b3d62572b">Property: geosrs:parameter</title>
+<table id="_719b2867-ff1d-1d67-b7bb-6f217ca31446"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<name id="_1581cd05-e675-5d8b-f4e0-756d40d6c8ed">geosrs:parameter</name>
+<tbody><tr id="_b6846834-14b0-dd9a-6423-eeef0f6021db"><td id="_e42176ac-a9e0-3d8f-0071-7a3a57f9c2f1" valign="middle" align="left">URI</td>
+<td id="_40236fa9-aee3-427b-9d02-41dc131b2340" valign="middle" align="left"><link target="https://w3id.org/geosrs/co/parameter"/></td>
+</tr><tr id="_ee8b8bad-7ef9-bddc-ce69-ac891223f44b"><td id="_92a0bca9-e77f-2cf6-21fb-101d5fd6b2c1" valign="middle" align="left">Type</td>
+<td id="_54aaee3f-0b04-5ce9-8dc4-6052bddbd347" valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#ObjectProperty">owl:ObjectProperty</link></td>
+</tr><tr id="_a7e288da-2f20-62b4-2128-0f8d288fc37d"><td id="_c58e22c7-0949-e055-46bd-fcce66be48cd" valign="middle" align="left">Definition</td>
+<td id="_498ca6ca-c3e1-5f0d-39ac-25dc7175b8ac" valign="middle" align="left">Value of the datum-defining parameter</td>
+</tr><tr id="_b05ab9e5-8ebf-c7d9-3c39-22821bdb96d1"><td id="_8410e72a-33d2-3283-c395-2c392c0328ac" valign="middle" align="left">Range</td>
+<td id="_84373589-7e7f-89bd-182d-b8679680143e" valign="middle" align="left"><link target="https://w3id.org/geosrs/OperationParameter">OperationParameter</link></td>
+</tr><tr id="_fd7579cf-6e2d-a146-0711-050414d63a20"><td id="_571ff4a8-d05f-e5b9-851f-27168147856b" valign="middle" align="left">Domain</td>
+<td id="_f98b0e93-d28d-2664-a91e-6076c2133eb3" valign="middle" align="left"><link target="https://w3id.org/geosrs/Conversion">Conversion</link></td>
+</tr></tbody>
+</table>
+</clause>
+
+<clause id="_c3ae3be9-355c-101e-18a7-8a3e5fc67e6d" obligation="normative">
+<title id="_42574671-1d4e-e92f-72d7-fb63a54f98d6">Property: geosrs:sourceCRS</title>
+<table id="_21f1f7ed-35d1-018a-80af-3548ef5c1709"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<name id="_48bc6513-44c9-433e-4a10-18339af1f8d4">geosrs:sourceCRS</name>
+<tbody><tr id="_ba57e050-c3b4-317c-4c08-fd5c6d82eece"><td id="_8855c20a-b648-3e00-d751-77eb3135d691" valign="middle" align="left">URI</td>
+<td id="_9b7b9fd8-e504-9696-6db3-bc09c9f5ca48" valign="middle" align="left"><link target="https://w3id.org/geosrs/co/sourceCRS"/></td>
+</tr><tr id="_35bb74da-e2a7-01b4-b94d-bdf7ba922cec"><td id="_d3ccb720-e9d3-2075-f8c0-ef01c6d29b60" valign="middle" align="left">Type</td>
+<td id="_8924518c-584b-bb25-37cb-28ac97da1581" valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#ObjectProperty">owl:ObjectProperty</link></td>
+</tr><tr id="_697797f5-b713-2d77-068d-5ce87bf70529"><td id="_5d81ee7c-cfc5-f57c-f27b-f865d228799f" valign="middle" align="left">Definition</td>
+<td id="_b272e552-849e-65b6-76c3-cbe5ab366138" valign="middle" align="left">The coordinate reference system associated to the data used as input of a given operation. Cf. ISO 19111:2007:2007-07, table 42, named association Source.</td>
+</tr><tr id="_5ed1b296-e2ed-0c1d-58db-b0dfc88ac3e1"><td id="_301b3a07-6853-911c-f3c6-1891731927fc" valign="middle" align="left">Range</td>
+<td id="_bcc5422c-45a5-ee79-46b9-f96000911d9d" valign="middle" align="left"><link target="https://w3id.org/geosrs/srs/CRS">CRS</link></td>
+</tr><tr id="_d152e2e4-b2cc-406e-61a2-9d74a99d00cd"><td id="_2f4f9ab4-ea3e-6b95-17d0-456f4e2f77b8" valign="middle" align="left">Domain</td>
+<td id="_2a2b7814-ff62-4e0f-3331-28be52231056" valign="middle" align="left"><link target="https://w3id.org/geosrs/CoordinateOperation">CoordinateOperation</link></td>
+</tr></tbody>
+</table>
+</clause>
+
+<clause id="_628ae080-abcf-87d6-1eda-eee3512d19ae" obligation="normative">
+<title id="_c75c5f05-1986-a711-9b6f-1ba9c03e444a">Property: geosrs:targetCRS</title>
+<table id="_86a49f4e-b5dc-adc6-b201-a3719ea96cfe"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<name id="_5ecea60d-1fa5-a79f-1147-caa0b5ab06ee">geosrs:targetCRS</name>
+<tbody><tr id="_56a52a4c-d07a-0636-acf2-c68ab852beee"><td id="_fab1984c-099d-fd18-b1d3-7e007f38d2ac" valign="middle" align="left">URI</td>
+<td id="_fe7f0ea9-2e14-74ae-af9e-507c964f4f23" valign="middle" align="left"><link target="https://w3id.org/geosrs/co/targetCRS"/></td>
+</tr><tr id="_ad9dc4d4-735c-cd52-bb7f-13c998d172c8"><td id="_bdf9fca7-ad40-66d2-f0bb-47f6951d563a" valign="middle" align="left">Type</td>
+<td id="_15ce94e8-e699-11ca-3e98-1d1dfd143bec" valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#ObjectProperty">owl:ObjectProperty</link></td>
+</tr><tr id="_e476d85a-518e-a4b3-0cb2-9474b4979e44"><td id="_0afe3911-04fb-8eda-6441-550623cbf37b" valign="middle" align="left">Definition</td>
+<td id="_ba2a9daf-b921-315f-5697-676e5d145ed1" valign="middle" align="left">The coordinate reference system associated to the data obtained as output of a given operation. Cf. ISO 19111:2007:2007-07, table 42, named association Target.</td>
+</tr><tr id="_1bdb2ed7-c418-e542-9040-ff617590b0c9"><td id="_0ea4e0cc-bd48-8227-0e1b-f7bb2f0e3bb8" valign="middle" align="left">Range</td>
+<td id="_4ab0c830-28c2-e5cd-3cbb-b42b03343fd9" valign="middle" align="left"><link target="https://w3id.org/geosrs/srs/CRS">CRS</link></td>
+</tr><tr id="_5d9defc5-2536-9376-8a6b-6f23f5ee3771"><td id="_bc14529c-fa62-1d1b-6d1f-562dcb93daa5" valign="middle" align="left">Domain</td>
+<td id="_c555cdb4-f72a-9593-a192-367f9b2048a5" valign="middle" align="left"><link target="https://w3id.org/geosrs/CoordinateOperation">CoordinateOperation</link></td>
+</tr></tbody>
+</table>
+</clause>
 </clause>
 </clause>
 
-<clause id="_97a14643-a28f-da18-7c13-ba7ef75771ef" obligation="normative">
+<clause id="_3d3083c2-658a-ea4d-1537-c114ea8a5ad9" obligation="normative">
 <title id="_334fa507-f3b2-6884-54bf-23cf005995ec">Coordinate System Module</title>
 <p id="_0b1e9dfb-ceac-0f81-3e64-be8948e7efe0" anchor="cs">This clause establishes the <strong>CS</strong> Requirements class, with IRI <tt>/req/cs</tt>, which has a corresponding Conformance Class, <strong>CS</strong>, with IRI <tt>/conf/cs</tt>.</p>
 
@@ -1021,12 +1233,48 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 </clause>
 </clause>
 
-<clause id="_bee3a6b7-58a0-ba93-18d0-180dc72e2928" obligation="normative">
+<clause id="_341c325d-4313-3b1c-ae02-095efed495fb" obligation="normative">
 <title id="_e8f5c873-2ce5-7838-630f-c9023765ce04">Coordinate System Parameters</title>
 <requirement id="_131027bf-8df9-7295-ff4f-0c0147436dfd" model="ogc" anchor="/req/Coordinate_System_Parameters">
 <title>Coordinate System Parameters</title> 
 <identifier>/req/Coordinate_System_Parameters</identifier><description><p id="_f964fca9-f821-bc38-d862-0fc9a3bb364f">Implementations shall allow the RDFS classes <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>axis</referenceFrom></locality></localityStack><display-text>geosrs:axis</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>axisDirection</referenceFrom></locality></localityStack><display-text>geosrs:axisDirection</display-text></eref> to be used in SPARQL graph patterns.</p></description>
 </requirement>
+
+<clause id="_59898999-afe4-1589-4e23-035b2bdec748" obligation="normative">
+<title id="_804672fb-a1d3-7506-375b-9efb1ccfdc35">Property: geosrs:axis</title>
+<table id="_5cdc42c5-9944-a0f4-91ef-6d8f521766f2"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<name id="_e7a7cf9c-7fb2-bd2e-7dae-5120b4165519">geosrs:axis</name>
+<tbody><tr id="_914ea972-74cc-3490-1bdd-90bd2eb952ef"><td id="_d793a679-9d3b-f48f-9a34-f2bb90062714" valign="middle" align="left">URI</td>
+<td id="_00d289b5-592f-952f-ab42-57d9debbb558" valign="middle" align="left"><link target="https://w3id.org/geosrs/cs/axis"/></td>
+</tr><tr id="_e5b00d43-6bd1-c71b-45e0-8dc0496cafde"><td id="_ecdb38f8-c2a1-9ab2-4e09-88d9446e20e8" valign="middle" align="left">Type</td>
+<td id="_8d524153-af66-7309-4291-f738a514a36e" valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#ObjectProperty">owl:ObjectProperty</link></td>
+</tr><tr id="_480511ad-84c0-ec6e-ce94-24f966ac493d"><td id="_8a0ef046-a893-2fae-578c-99f465b8ac33" valign="middle" align="left">Definition</td>
+<td id="_f9dff425-bbfd-f12c-b479-2c7e0bd32232" valign="middle" align="left">The property relates a coordinate system to one of its axis</td>
+</tr><tr id="_60dbca72-dc4d-6ff4-324f-31bfa5f109dc"><td id="_c0c53cd5-8837-fc2a-2fba-8e97fdd948c7" valign="middle" align="left">Range</td>
+<td id="_9cef62bb-39c3-f794-d007-9565f4781c4b" valign="middle" align="left"><link target="https://w3id.org/geosrs/Axis">Axis</link></td>
+</tr><tr id="_818e1eee-5c08-5283-88fc-20f2b15281ab"><td id="_e367490f-e582-4107-2a30-f0b4e4d7fc18" valign="middle" align="left">Domain</td>
+<td id="_c6b445be-ea21-b13e-3820-472690f0d151" valign="middle" align="left"><link target="https://w3id.org/geosrs/CoordinateSystem">CoordinateSystem</link></td>
+</tr></tbody>
+</table>
+</clause>
+
+<clause id="_f179bdbb-cdbc-ae40-05c0-b2ae708a029a" obligation="normative">
+<title id="_0ac61ba1-88e4-9b07-a201-2d70cc8db446">Property: geosrs:axisDirection</title>
+<table id="_02477455-dae2-b3fe-1a1d-a08641aab6d6"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<name id="_ae5f17d1-ce46-812d-191a-50bed59ad8c3">geosrs:axisDirection</name>
+<tbody><tr id="_455d5cd2-933a-d732-a04a-3d254fe6bd2e"><td id="_48f83f03-ee86-268e-024b-5bde04f68558" valign="middle" align="left">URI</td>
+<td id="_bd807c1f-90d0-ecb4-0016-cdfe79cdd0c0" valign="middle" align="left"><link target="https://w3id.org/geosrs/cs/axisDirection"/></td>
+</tr><tr id="_1e3a26bb-5acf-faff-214f-b6be892599f9"><td id="_65aa0407-03cc-24c8-5651-988aef00a00e" valign="middle" align="left">Type</td>
+<td id="_bd1a5298-8a66-31d6-1a8f-9b94330038e5" valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#ObjectProperty">owl:ObjectProperty</link></td>
+</tr><tr id="_0d697abf-2207-d180-61db-dbfb3e5fdffa"><td id="_06cc3053-a1ce-0a03-bd22-6a30ffb298f2" valign="middle" align="left">Definition</td>
+<td id="_6454788b-4885-de58-228d-8aa651ceef89" valign="middle" align="left">The direction of an axis. Cf. ISO 19111:2007:2007-07, table 27, attribute coordinate system axis direction.</td>
+</tr><tr id="_e63d0204-cb14-2071-d814-c1b0385b7cf1"><td id="_d0dca321-3293-2774-1ec6-001fc5f71c6c" valign="middle" align="left">Range</td>
+<td id="_d1d78a8d-1391-cc87-dea3-61a778497be9" valign="middle" align="left"><link target="https://w3id.org/geosrs/AxisDirection">AxisDirection</link></td>
+</tr><tr id="_5b8b071e-c85f-bd12-e435-5bc719a71479"><td id="_890347ea-3875-5c8b-f67d-014278a390b1" valign="middle" align="left">Domain</td>
+<td id="_5fb497e1-7023-8ec6-05d2-6f1b75e9c85b" valign="middle" align="left"><link target="https://w3id.org/geosrs/Axis">Axis</link></td>
+</tr></tbody>
+</table>
+</clause>
 </clause>
 
 <clause id="_7390ea5f-bfb4-cbe7-bdbd-4c39e3748082" obligation="normative">
@@ -1296,7 +1544,7 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 </clause>
 </clause>
 
-<clause id="_8845d21f-8965-4c4f-b29c-20e226470a7a" obligation="normative">
+<clause id="_46188cf5-1637-61c4-61f3-554346519c11" obligation="normative">
 <title id="_4ab3059e-d1fe-d0e6-e6e0-fef2aded1f5e">Datum Module</title>
 <p id="_6ee5f6b9-ecce-9491-cb59-687aeb3ad204" anchor="datum">This clause establishes the <strong>Datum</strong> Requirements class, with IRI <tt>/req/datum</tt>, which has a corresponding Conformance Class, <strong>Datum</strong>, with IRI <tt>/conf/datum</tt>.</p>
 
@@ -1341,12 +1589,66 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 </clause>
 </clause>
 
-<clause id="_cac2df18-522a-905d-f093-8351b29daeb3" obligation="normative">
+<clause id="_29dfbe25-d6a2-13cd-d360-6445a47adc4a" obligation="normative">
 <title id="_4883375b-3cb9-6a79-ae0c-f9ea8beb7a1c">Datum Properties</title>
 <requirement id="_a459fecc-1088-fba9-1346-76cf1debd0a8" model="ogc" anchor="/req/Datum_Properties">
 <title>Datum Properties</title> 
 <identifier>/req/Datum_Properties</identifier><description><p id="_99254f58-9fe5-1498-66e4-e40ede3a2b94">Implementations shall allow the RDFS classes <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>datumDefiningParameter</referenceFrom></locality></localityStack><display-text>geosrs:datumDefiningParameter</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>ellipsoid</referenceFrom></locality></localityStack><display-text>geosrs:ellipsoid</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>primeMeridian</referenceFrom></locality></localityStack><display-text>geosrs:primeMeridian</display-text></eref> to be used in SPARQL graph patterns.</p></description>
 </requirement>
+
+<clause id="_d60f9851-10ec-04b8-9787-10d6c7344bd1" obligation="normative">
+<title id="_7f65a7a4-1ffa-4c70-cb43-f8823810c956">Property: geosrs:datumDefiningParameter</title>
+<table id="_db5148c5-9a20-ec9e-9338-a0e54f61edc6"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<name id="_06a4cf22-92ed-fde4-9b78-774a5c07e98d">geosrs:datumDefiningParameter</name>
+<tbody><tr id="_5e8a0a53-a3de-4392-acff-1e7b16881c74"><td id="_045c2ef5-6f1d-521d-0c17-b98af55e829b" valign="middle" align="left">URI</td>
+<td id="_c83008e1-92c1-0d46-50b9-57e24ccfbb7d" valign="middle" align="left"><link target="https://w3id.org/geosrs/datum/datumDefiningParameter"/></td>
+</tr><tr id="_4a3c161b-db54-9b33-dddb-883a3c16a832"><td id="_e4be493d-3bbb-36ad-7571-c97e1bd9be69" valign="middle" align="left">Type</td>
+<td id="_577422d9-bf95-ad50-9273-ce58279894b3" valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#ObjectProperty">owl:ObjectProperty</link></td>
+</tr><tr id="_5bb3ee2a-f728-f074-8834-24342304233b"><td id="_e80c245d-0f04-90f8-3713-228a6c4d7d43" valign="middle" align="left">Definition</td>
+<td id="_8645cb15-816d-6525-6628-fffee12886b9" valign="middle" align="left">Parameter used to define the parametric datum</td>
+</tr><tr id="_5d7eca06-fded-6d17-52e8-f129d0c99e45"><td id="_d5558f8f-b9a8-5439-311d-6fac6958fa34" valign="middle" align="left">Range</td>
+<td id="_1d739f4e-1e07-5411-b421-08e56ef9fd8f" valign="middle" align="left"><link target="https://w3id.org/geosrs/datum/DefiningParameter">DefiningParameter</link></td>
+</tr><tr id="_bb88fca4-a4b7-0ef7-bc59-0a2093ec5ba4"><td id="_86426750-1d02-2a7e-e02e-c114c11b7cfe" valign="middle" align="left">Domain</td>
+<td id="_da54b21a-dfb2-edbf-0ed1-c8744b709763" valign="middle" align="left"><link target="https://w3id.org/geosrs/datum/ParametricDatum">ParametricDatum</link></td>
+</tr></tbody>
+</table>
+</clause>
+
+<clause id="_5fbd9d1a-bffe-8c19-45c6-e89d1626d1cd" obligation="normative">
+<title id="_bc232ce8-cba6-75c7-3fc0-b01e08a9d30e">Property: geosrs:ellipsoid</title>
+<table id="_ed09a79a-68f7-4c4c-49ec-757d6fb531ba"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<name id="_271df554-16c2-8a67-8b6e-82d02490a537">geosrs:ellipsoid</name>
+<tbody><tr id="_d7fc3373-3c4b-c043-664b-67d9889fcef7"><td id="_6d430ed9-26a3-1064-b615-a7e2276f7406" valign="middle" align="left">URI</td>
+<td id="_b44a9eee-0c9e-6fe5-3079-72ac7d71baba" valign="middle" align="left"><link target="https://w3id.org/geosrs/datum/ellipsoid"/></td>
+</tr><tr id="_a3b9a635-3732-fba6-c4d7-781367f6f854"><td id="_72646ec3-9aca-eb5e-ab19-bcc6d6eafb40" valign="middle" align="left">Type</td>
+<td id="_d8f38384-b1cc-d0a7-b129-b23d74b61778" valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#ObjectProperty">owl:ObjectProperty</link></td>
+</tr><tr id="_5729a85e-5e39-5f7e-14fe-aaa6a40bc689"><td id="_8ffb8c24-d1f2-ea37-7583-519154092309" valign="middle" align="left">Definition</td>
+<td id="_5efc293b-961f-612c-cc99-0b21e2775b3e" valign="middle" align="left">The properties relates a datum to its ellipsoid definition</td>
+</tr><tr id="_f7c69fbf-1a7a-e916-6a29-c701197770d2"><td id="_0d89b64f-d30a-8590-5ade-ee9e1ebfef7a" valign="middle" align="left">Range</td>
+<td id="_aeb5f784-4184-5e11-23e0-7d3c869d0cfd" valign="middle" align="left"><link target="https://w3id.org/geosrs/Ellipsoid">Ellipsoid</link></td>
+</tr><tr id="_adb3d4c7-ec66-1059-d6ea-2bdf884f8eef"><td id="_f317eb89-334f-f030-e610-7a09d548a72e" valign="middle" align="left">Domain</td>
+<td id="_13a6ed5a-bdb8-bc47-ba48-76b18d11903e" valign="middle" align="left"><link target="https://w3id.org/geosrs/Datum">Datum</link></td>
+</tr></tbody>
+</table>
+</clause>
+
+<clause id="_09153fed-0834-5e17-e9b1-0027dad6e279" obligation="normative">
+<title id="_e27ab024-1a3b-a985-9363-666e5bfa69bc">Property: geosrs:primeMeridian</title>
+<table id="_ce7f5984-9dea-e752-2236-4d2f90547170"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<name id="_d492fc61-12f2-53e8-624a-95da900c8054">geosrs:primeMeridian</name>
+<tbody><tr id="_99122124-ca28-15e5-7944-74346d8b1bde"><td id="_7be6962b-4939-bd9d-e731-5d6a1694ea2c" valign="middle" align="left">URI</td>
+<td id="_6b6cee7c-c695-ffdd-62e0-fdeff3854167" valign="middle" align="left"><link target="https://w3id.org/geosrs/datum/primeMeridian"/></td>
+</tr><tr id="_36ad55f1-533c-f4bd-f636-aa4edebb459d"><td id="_caf36d78-d54d-82fc-8243-91212a327e4b" valign="middle" align="left">Type</td>
+<td id="_c7e411bd-03aa-899e-badd-213629af5f46" valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#ObjectProperty">owl:ObjectProperty</link></td>
+</tr><tr id="_90a85ee9-47ad-d174-c183-bad053db133d"><td id="_428d99a8-a9c6-7c2f-0f70-cbc59c51e880" valign="middle" align="left">Definition</td>
+<td id="_93f4ea68-177d-81e4-7247-59ff0611da87" valign="middle" align="left">The prime meridian used by a geodetic datum. Cf. ISO 19111:2007:2007-07, table 34, association role primeMeridian.</td>
+</tr><tr id="_2a1c0734-7d50-9483-c33c-aaf4f635dab8"><td id="_8d803027-c99d-78f1-4231-4a99a3d72993" valign="middle" align="left">Range</td>
+<td id="_a7a23703-2dba-f0a3-098f-d2ed5510acde" valign="middle" align="left"><link target="https://w3id.org/geosrs/PrimeMeridian">PrimeMeridian</link></td>
+</tr><tr id="_af7a313d-d53a-0bfb-b15c-ec8c78d86393"><td id="_441ab193-a81e-9005-140f-5bb36dd28ec5" valign="middle" align="left">Domain</td>
+<td id="_964bdd53-9312-deee-cbd0-8cb0e7f67b85" valign="middle" align="left"><link target="https://w3id.org/geosrs/Datum">Datum</link></td>
+</tr></tbody>
+</table>
+</clause>
 </clause>
 
 <clause id="_a9850199-3fae-4c59-c2fe-4e4a0a38efce" obligation="normative">
@@ -1439,12 +1741,102 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 </clause>
 </clause>
 
-<clause id="_646419ed-bf7d-a4ed-d572-661f67afe0b4" obligation="normative">
+<clause id="_057099e5-fe91-766c-4e6e-c41262a1f308" obligation="normative">
 <title id="_bf93b7db-acea-66ad-b6ed-943ac7afc963">Spheroid Properties</title>
 <requirement id="_d1f769f5-13a3-4984-7ff7-ad7862ef1858" model="ogc" anchor="/req/Spheroid_Properties">
 <title>Spheroid Properties</title> 
 <identifier>/req/Spheroid_Properties</identifier><description><p id="_70fbd053-6f69-e331-aac6-c5f46d0d9bcc">Implementations shall allow the RDFS classes <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>eccentricity</referenceFrom></locality></localityStack><display-text>geosrs:eccentricity</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>inverseFlattening</referenceFrom></locality></localityStack><display-text>geosrs:inverseFlattening</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>isSphere</referenceFrom></locality></localityStack><display-text>geosrs:isSphere</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>semiMajorAxis</referenceFrom></locality></localityStack><display-text>geosrs:semiMajorAxis</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>semiMinorAxis</referenceFrom></locality></localityStack><display-text>geosrs:semiMinorAxis</display-text></eref> to be used in SPARQL graph patterns.</p></description>
 </requirement>
+
+<clause id="_2545c29c-91e0-0602-8c4d-e0b838d230ec" obligation="normative">
+<title id="_7d5c1ed3-c638-c991-80bf-0592577d1405">Property: geosrs:eccentricity</title>
+<table id="_a2719b2d-5725-2bfa-bd50-2393ab35b852"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<name id="_59968bd1-b1fa-a151-ccb5-84b2a32b33a4">geosrs:eccentricity</name>
+<tbody><tr id="_c98ecf94-bc66-4aa3-c64a-c7fc41e39854"><td id="_0e3200dd-ffbc-cf69-31d6-1547410efed3" valign="middle" align="left">URI</td>
+<td id="_60585141-5041-f98b-e1e7-17617149b3f7" valign="middle" align="left"><link target="https://w3id.org/geosrs/datum/eccentricity"/></td>
+</tr><tr id="_24790b08-56dd-c1d9-c7e4-783b5a37e8dd"><td id="_c3cd2e7c-7fbb-8f34-a40f-88910ec2b01c" valign="middle" align="left">Type</td>
+<td id="_7d537712-dc6d-d03e-ce14-7a2598b9b7c8" valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#DatatypeProperty">owl:DatatypeProperty</link></td>
+</tr><tr id="_634f2b63-6738-f03d-02dc-f8ae1b047381"><td id="_179e388b-cbc3-079c-25f1-f37c4128b3c2" valign="middle" align="left">Definition</td>
+<td id="_afecbfae-e52e-2aca-965d-6c9055f82366" valign="middle" align="left">A measure of how much an ellipse deviates from a perfect circle.</td>
+</tr><tr id="_fe132f5f-e6eb-68bb-4d74-1269cefc2ff9"><td id="_81b0c7b1-7a9b-4e00-9e57-5d47677d779c" valign="middle" align="left">Range</td>
+<td id="_0a7ad827-a6e4-ca1f-3f55-aced1d28479a" valign="middle" align="left">xsd:double[xsd:double]</td>
+</tr><tr id="_8e868f89-ad74-185a-31e3-d07dae73ebcf"><td id="_9aaf57b8-6b7e-4b8a-59e2-f50a991821c9" valign="middle" align="left">Domain</td>
+<td id="_99f74e83-e666-15b6-27e3-d43b99568977" valign="middle" align="left"><link target="https://w3id.org/geosrs/Ellipsoid">Ellipsoid</link></td>
+</tr></tbody>
+</table>
+</clause>
+
+<clause id="_99483281-730b-55ea-ae94-d460db83e976" obligation="normative">
+<title id="_311096bd-edc8-c050-1313-9d6e5b70a85b">Property: geosrs:inverseFlattening</title>
+<table id="_ba8d8670-411f-4cf4-4fbb-cead4a2a1d8a"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<name id="_9838faee-1539-c23d-fb03-95630a9d28f6">geosrs:inverseFlattening</name>
+<tbody><tr id="_17959694-3105-fc5d-5445-788d83e4d2b3"><td id="_9d8842fa-a445-39cb-1bca-af9b79ff6b7e" valign="middle" align="left">URI</td>
+<td id="_67d0fe62-e492-ec1d-f80b-617dc03108e3" valign="middle" align="left"><link target="https://w3id.org/geosrs/datum/inverseFlattening"/></td>
+</tr><tr id="_ab40a0a2-eaec-f192-1084-ec9bb663a2b0"><td id="_39211f20-82e8-d12b-a19c-e28ca36d1a91" valign="middle" align="left">Type</td>
+<td id="_9a58109d-6353-d936-d0de-59fa88e7e922" valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#DatatypeProperty">owl:DatatypeProperty</link></td>
+</tr><tr id="_fbeaee75-6f42-23d6-9aed-3bce156c7325"><td id="_919f1cfa-0807-f975-5c25-80e00a32fa16" valign="middle" align="left">Definition</td>
+<td id="_b4761677-b649-3d00-ae56-8848ee48acd9" valign="middle" align="left">Indicates the inverse flattening value of an ellipsoid, expressed as a number or a ratio (percentage rate, parts per million, etc.). Cf. ISO 19111:2007:2007-07, table 37, attribute inverse flattening</td>
+</tr><tr id="_bc54f664-a5d4-356e-29c5-d0d0c69ccc88"><td id="_0d160575-7004-dc2d-36ab-2fb9eccd358a" valign="middle" align="left">Range</td>
+<td id="_e39d1b4d-5a3f-34c1-c5a5-2d9711226a48" valign="middle" align="left">xsd:double[xsd:double]</td>
+</tr><tr id="_94046a60-5fe4-025e-c93e-9a72adc8abf0"><td id="_47147d22-6a28-87c2-d914-7fee67dd8ce8" valign="middle" align="left">Domain</td>
+<td id="_3083c4ad-0b64-547b-c7bf-d759b697723d" valign="middle" align="left"><link target="https://w3id.org/geosrs/Ellipsoid">Ellipsoid</link></td>
+</tr></tbody>
+</table>
+</clause>
+
+<clause id="_7e1e7725-0835-10e1-7d5b-7502fa911946" obligation="normative">
+<title id="_4c079ac5-f0b5-06d7-c929-750bd8c159ed">Property: geosrs:isSphere</title>
+<table id="_f6ee1003-8d08-38a7-a9b1-9b0322206202"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<name id="_82bc08cc-9dee-039c-0fc6-0b6265432da2">geosrs:isSphere</name>
+<tbody><tr id="_b6224841-8925-b1de-2aca-d61d74053f4e"><td id="_0f9cae23-c848-c940-19e4-2cf3d0942886" valign="middle" align="left">URI</td>
+<td id="_d3e430ca-a84d-e1ee-7e6e-0e101098ad17" valign="middle" align="left"><link target="https://w3id.org/geosrs/datum/isSphere"/></td>
+</tr><tr id="_bed6dd1a-a9a7-d030-4022-0151506a153d"><td id="_b829cf9d-01d2-9431-d34c-47ab02a8f7c4" valign="middle" align="left">Type</td>
+<td id="_11e24b2c-4c78-ee3b-04a2-4397a590220b" valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#DatatypeProperty">owl:DatatypeProperty</link></td>
+</tr><tr id="_fa17f4c3-847f-6e89-448f-f830bd48c128"><td id="_e1863b40-96eb-e1e8-96e7-be444fd3cb0f" valign="middle" align="left">Definition</td>
+<td id="_25c27905-b8c8-50d4-338b-611c49ed1a4d" valign="middle" align="left">Indicates whether the ellipsoid is a sphere. Cf. ISO 19111:2007:2007-07, table 37, attribute ellipsoid=sphere indicator.</td>
+</tr><tr id="_5a568dc7-34b9-fdb2-1d53-7bb18a57bd04"><td id="_0458028b-3b8c-d3b6-834b-9d7ae3abcef1" valign="middle" align="left">Range</td>
+<td id="_a80bce5c-d9b4-c586-d729-728f0099727c" valign="middle" align="left">xsd:boolean[xsd:boolean]</td>
+</tr><tr id="_d2db190f-3631-e332-a47f-bc5f38ee6910"><td id="_deba7745-4207-a24f-790a-ffcc5103fe6b" valign="middle" align="left">Domain</td>
+<td id="_beeb36b1-49b1-5ca2-1517-3617c687cbaf" valign="middle" align="left"><link target="https://w3id.org/geosrs/Ellipsoid">Ellipsoid</link></td>
+</tr></tbody>
+</table>
+</clause>
+
+<clause id="_802528d5-a23c-0849-a3c5-7ffb597a8516" obligation="normative">
+<title id="_ea1bf7bd-75f1-6341-7658-be6633f968cf">Property: geosrs:semiMajorAxis</title>
+<table id="_c70f3573-b841-09e5-464b-6f17c4152434"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<name id="_af05c20a-0f9a-d04f-1237-a5848e74fa03">geosrs:semiMajorAxis</name>
+<tbody><tr id="_f518bb7b-a679-64af-6720-febd9e8f2c39"><td id="_5da81245-d65b-aeca-6df9-e7664084b687" valign="middle" align="left">URI</td>
+<td id="_8e2094d9-80d5-de42-01a5-4bcce4a8d393" valign="middle" align="left"><link target="https://w3id.org/geosrs/datum/semiMajorAxis"/></td>
+</tr><tr id="_92c64867-8e70-720f-34f3-26ae5c413636"><td id="_f76e2df4-abfc-d069-8979-7cd1e34f3963" valign="middle" align="left">Type</td>
+<td id="_552763a6-c867-2822-57ce-b4b6ba9ee829" valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#DatatypeProperty">owl:DatatypeProperty</link></td>
+</tr><tr id="_fb4fc703-987f-202e-c56d-83d8420f63e8"><td id="_8b6334bc-7faf-48fc-e53f-67ebf901457c" valign="middle" align="left">Definition</td>
+<td id="_98f4d679-b8e5-6e01-10d7-2380c20ade23" valign="middle" align="left">Indicates the length of the semi major axis of an ellipsoid. Cf. ISO 19111:2007:2007-07, table 36, attribute length of semi-major axis.</td>
+</tr><tr id="_5c65aae9-c35d-cec7-aafb-329237d6f28f"><td id="_0f73940f-36f4-4567-f9ea-079de2f60555" valign="middle" align="left">Range</td>
+<td id="_bd5d7a12-1450-122f-0033-71ab41a34d82" valign="middle" align="left">xsd:double[xsd:double]</td>
+</tr><tr id="_61412504-c343-9549-3bea-d7a1b82f752e"><td id="_e8e64b4c-7b36-3bb4-20bb-6b66371ee18e" valign="middle" align="left">Domain</td>
+<td id="_f7bb3e10-4eff-03c2-674d-7e05bd418dd0" valign="middle" align="left"><link target="https://w3id.org/geosrs/Ellipsoid">Ellipsoid</link></td>
+</tr></tbody>
+</table>
+</clause>
+
+<clause id="_f9ce8e8e-ef57-2709-b707-4b3ac3555944" obligation="normative">
+<title id="_e5cea6bc-22be-04b2-f43c-58b3bd93740d">Property: geosrs:semiMinorAxis</title>
+<table id="_42904257-ae5c-df07-031a-e67058b4b512"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<name id="_47c82c8b-860f-2d84-b020-0c21366a0bec">geosrs:semiMinorAxis</name>
+<tbody><tr id="_87dbc27e-6e56-d4c6-8164-e45813a46a04"><td id="_a126c4ba-da92-f13a-5c03-28af33a06809" valign="middle" align="left">URI</td>
+<td id="_bf9aae36-031b-644a-350a-2fe44bc19d40" valign="middle" align="left"><link target="https://w3id.org/geosrs/datum/semiMinorAxis"/></td>
+</tr><tr id="_c3fd4017-eebf-6e87-daae-a8ec32615487"><td id="_1c4b1cac-6400-fb70-83b4-063e8f8a7ec3" valign="middle" align="left">Type</td>
+<td id="_c1cf1ef2-1f5e-e2a9-64f4-ba9ebc88942f" valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#DatatypeProperty">owl:DatatypeProperty</link></td>
+</tr><tr id="_b39d6814-de0c-f0b1-9bd4-37231d393425"><td id="_367c0e26-8400-b7fa-2a50-d5a7aa6f07c2" valign="middle" align="left">Definition</td>
+<td id="_108541d4-d8e6-c591-1add-6e23e8c5b900" valign="middle" align="left">Indicates the length of the semi minor axis of an ellipsoid. Cf. ISO 19111:2007:2007-07, table 37, attribute length of semi-minor axis.</td>
+</tr><tr id="_a8da1828-2451-9d31-5344-9a885ae0b13e"><td id="_68221c16-5041-2fc9-eef9-ff660bb0dbb0" valign="middle" align="left">Range</td>
+<td id="_a9a83ca6-1b78-7603-2b30-75450d0885e8" valign="middle" align="left">xsd:double[xsd:double]</td>
+</tr><tr id="_45f078e5-2b1c-b434-e272-8e7db3d215c7"><td id="_e40cf19a-9cbb-944e-0466-b7585b7f2470" valign="middle" align="left">Domain</td>
+<td id="_a373ad32-d5f2-8fad-a1b5-32f5021367ab" valign="middle" align="left"><link target="https://w3id.org/geosrs/Ellipsoid">Ellipsoid</link></td>
+</tr></tbody>
+</table>
+</clause>
 </clause>
 
 <clause id="_4b99d98e-ecc2-0e9f-5043-c6cbdcfa0e9d" obligation="normative">

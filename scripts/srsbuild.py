@@ -586,18 +586,18 @@ for ad in moduleToAdoc:
 				f.write("requirement:: /req/"+str(req).replace(" ","_")+"\n")
 			f.write("====\n")
 			for req in sorted(moduleToRequirements[ad].keys()):
-                if "property" in req.lower():
-                    reqtext="Implementations shall allow the RDFS properties "
-                    last=None
-                    for cls in moduleToRequirements[ad][req]:
-                        reqtext+="<<Property: "+str(cls)+",`"+str(cls)+"`>>, "
-                        last=cls
-                else:
-				    reqtext="Implementations shall allow the RDFS classes "
-                    last=None
-                    for cls in moduleToRequirements[ad][req]:
-                        reqtext+="<<Class: "+str(cls)+",`"+str(cls)+"`>>, "
-                        last=cls
+				if "property" in req.lower():
+					reqtext="Implementations shall allow the RDFS properties "
+					last=None
+					for cls in moduleToRequirements[ad][req]:
+						reqtext+="<<Property: "+str(cls)+",`"+str(cls)+"`>>, "
+						last=cls
+				else:
+					reqtext="Implementations shall allow the RDFS classes "
+					last=None
+					for cls in moduleToRequirements[ad][req]:
+						reqtext+="<<Class: "+str(cls)+",`"+str(cls)+"`>>, "
+						last=cls
 				reqtext=reqtext[0:-2]
 				if len(moduleToRequirements[ad][req])>0:
 					reqtext=reqtext.replace(", <<"+str(last), " and <<"+str(last))

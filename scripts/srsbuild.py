@@ -35,6 +35,9 @@ ldcontext={"@context":{"rdfs":"http://www.w3.org/2000/01/rdf-schema#","rdf":"htt
             }
 }
 
+with open('examples.json', 'r') as file:
+    examples = json.load(file)
+
 alignmentadoc={"ign":{},"iso19111":{},"ifc":{}}
 moduleToRequirements={"06-core.adoc":{},"07-co_extension.adoc":{},"08-cs_extension.adoc":{},"09-datum_extension.adoc":{},"10-srsapplication_extension.adoc":{},"11-projections_extension.adoc":{},"12-planet_extension.adoc":{}}
 
@@ -302,9 +305,9 @@ for file in os.listdir(directory):
                             if "Label" in row and row["Label"]!="":
                                 gcore.add((URIRef(row["Concept"].replace(coreprefix+":",geocrsNS)),RDFS.label,Literal(row["Label"],lang="en")))
                             if "Requirement" in row and row["Requirement"]!="":
-                                if row["Requirement"] not in moduleToRequirements[prefixToModule[nsprefix]]:
-                                    moduleToRequirements[prefixToModule[nsprefix]][row["Requirement"]]=[]
-                                moduleToRequirements[prefixToModule[nsprefix]][row["Requirement"]].append(row["Concept"])
+                                if row["Requirement"] not in moduleToRequirements[prefixToModule[nsprefix]] and str(row["Core Property?"]).lower() in prefixToModule:
+                                    moduleToRequirements[prefixToModule[str(row["Core Property?"]).lower()]][row["Requirement"]]=[]
+                                moduleToRequirements[prefixToModule[str(row["Core Property?"]).lower()]][row["Requirement"]].append(row["Concept"])
                             if "Definition" in row and row["Definition"]!="":
                                 gcore.add((URIRef(row["Concept"].replace(coreprefix+":",geocrsNS)),SKOS.definition,Literal(row["Definition"],lang="en")))
                                 adocdef+="|Definition\n|"+str(row["Definition"])+"\n\n"
@@ -357,10 +360,10 @@ for file in os.listdir(directory):
                                     adocdef+="|Type\n|http://www.w3.org/2002/07/owl#DatatypeProperty[owl:DatatypeProperty]\n\n"
                                 if "Label" in row and row["Label"]!="":
                                     exont[row["Core Property?"].lower()].add((URIRef(row["Concept"].replace(coreprefix+":",curns+str(row["Core Property?"]).lower()+"/")),RDFS.label,Literal(row["Label"],lang="en")))
-                                if "Requirement" in row and row["Requirement"]!="":
-                                    if row["Requirement"] not in moduleToRequirements[prefixToModule[nsprefix]]:
-                                        moduleToRequirements[prefixToModule[nsprefix]][row["Requirement"]]=[]
-                                    moduleToRequirements[prefixToModule[nsprefix]][row["Requirement"]].append(row["Concept"])
+                                if "Requirement" in row and row["Requirement"]!="" and str(row["Core Property?"]).lower() in prefixToModule:
+                                    if row["Requirement"] not in moduleToRequirements[prefixToModule[str(row["Core Property?"]).lower()]]:
+                                        moduleToRequirements[prefixToModule[str(row["Core Property?"]).lower(]][row["Requirement"]]=[]
+                                    moduleToRequirements[prefixToModule[str(row["Core Property?"]).lower(]][row["Requirement"]].append(row["Concept"])
                                 if "Definition" in row and row["Definition"]!="":
                                     exont[row["Core Property?"].lower()].add((URIRef(row["Concept"].replace(coreprefix+":",curns+str(row["Core Property?"]).lower()+"/")),SKOS.definition,Literal(row["Definition"],lang="en")))
                                     adocdef+="|Definition\n|"+str(row["Definition"])+"\n\n"

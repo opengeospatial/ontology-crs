@@ -151,8 +151,8 @@ def crsToTTL(ttl,curcrs,x,geodcounter,crsclass):
 			b = box(curcrs.coordinate_operation.area_of_use.west, curcrs.coordinate_operation.area_of_use.south, curcrs.coordinate_operation.area_of_use.east, curcrs.coordinate_operation.area_of_use.north)
 			ttl.add("geosrsaou:"+str(coordoperationid)+"_area_of_use geosrs:extent \"<http://www.opengis.net/def/crs/OGC/1.3/CRS84> "+str(b.wkt)+"\"^^geo:wktLiteral . \n")
 			#ENVELOPE("+str(curcrs.coordinate_operation.area_of_use.west)+" "+str(curcrs.coordinate_operation.area_of_use.south)+","+str(curcrs.coordinate_operation.area_of_use.east)+" "+str(curcrs.coordinate_operation.area_of_use.north)+")\"^^geosrs:wktLiteral . \n")
-		if curcrs.coordinate_operation.towgs84!=None:
-			print(curcrs.coordinate_operation.towgs84)
+		#if curcrs.coordinate_operation.towgs84!=None:
+		#	print(curcrs.coordinate_operation.towgs84)
 		for par in curcrs.coordinate_operation.params:
 			ttl.add(" geosrs:"+str(par.name)[0].lower()+str(par.name).title().replace(" ","")[1:]+" rdf:type owl:DatatypeProperty . \n") 
 			ttl.add(" geosrs:"+str(par.name)[0].lower()+str(par.name).title().replace(" ","")[1:]+" rdfs:range xsd:double . \n") 
@@ -199,7 +199,7 @@ def crsToTTL(ttl,curcrs,x,geodcounter,crsclass):
 		elif "Vertical Reference Frame" in curcrs.datum.type_name:
 			ttl.add("geosrsdatum:"+str(datumid)+" rdf:type geosrs:VerticalReferenceFrame . \n")
 		else:
-			print(curcrs.datum.type_name)
+			#print(curcrs.datum.type_name)
 			ttl.add("geosrsdatum:"+str(datumid)+" rdf:type geosrs:Datum . \n")
 		ttl.add("geosrsdatum:"+str(datumid)+" rdfs:label \"Datum: "+curcrs.datum.name+"\"@en . \n")
 		if curcrs.datum.remarks!=None:
@@ -214,7 +214,7 @@ def crsToTTL(ttl,curcrs,x,geodcounter,crsclass):
 						ttl.add(scope[scp.lower().strip().replace(".","")]+" rdfs:subClassOf geosrs:SRSApplication . \n")
 					else:
 						ttl.add("geosrsdatum:"+str(datumid)+" geosrs:usage \""+str(curcrs.datum.scope)+"\"^^xsd:string . \n")
-			print(str(curcrs.datum.scope))
+			#print(str(curcrs.datum.scope))
 		if curcrs.datum.ellipsoid!=None and curcrs.datum.ellipsoid.name in spheroids:
 			ttl.add("geosrsdatum:"+str(datumid)+" geosrs:ellipse "+spheroids[curcrs.datum.ellipsoid.name]+" . \n")
 			ttl.add(spheroids[curcrs.datum.ellipsoid.name]+" rdfs:label \""+str(curcrs.datum.ellipsoid.name)+"\"@en . \n")
@@ -433,7 +433,7 @@ if args.input==None:
 else:
 	if str(args.input).startswith("EPSG"):
 		curcrs=CRS.from_epsg(int(str(args.input).replace("EPSG:","")))
-		print(curcrs.area_of_use)
+		#print(curcrs.area_of_use)
 	if args.outputformat=="wkt":
 		thewkt=curcrs.to_wkt()
 		f = open(str(args.input).replace(":","_")+".wkt", "a")
@@ -442,7 +442,7 @@ else:
 	if args.outputformat=="projjson":
 		thedict=curcrs.to_json_dict()
 		thedict["@context"]="https://opengeospatial.github.io/ontology-crs/context/geosrs-context.json"
-		print(thedict)
+		#print(thedict)
 		with open(str(args.input).replace(":","_")+".json", 'w') as f:
 			json.dump(thedict, f,indent=2,sort_keys=True)    
 	if args.outputformat=="ttl":

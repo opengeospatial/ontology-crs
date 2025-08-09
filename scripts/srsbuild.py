@@ -577,7 +577,7 @@ for ad in moduleToAdoc:
 		file.write(content)             
 	with open("spec/sections/"+ad.replace(".adoc","_classes.adoc"), 'w',encoding="utf-8") as f:
 		print(ad)
-		print(moduleToRequirements[ad])
+		#print(moduleToRequirements[ad])
 		reqs=moduleToRequirements[ad]
 		#print(reqs)
 		if len(reqs)>0:
@@ -598,7 +598,7 @@ for ad in moduleToAdoc:
 				f.write("==== "+str(req)+"\n\n[requirement,identifier=\"/req/"+str(req).replace(" ","_")+"\"]\n\n."+str(req)+"\n====\n"+str(reqtext)+"\n====\n\n")
 				print(moduleToRequirements[ad][req])
 				for cls in moduleToRequirements[ad][req]:
-					print(moduleToAdoc[ad])
+					#print(moduleToAdoc[ad])
 					if cls.replace("geosrs:","") in moduleToAdoc[ad]:
 						f.write(moduleToAdoc[ad][cls.replace("geosrs:","")]) 
 doc=""

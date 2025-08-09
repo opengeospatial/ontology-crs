@@ -288,7 +288,7 @@ for file in os.listdir(directory):
             if "obj" in filename:
                 objprop=True
             for row in reader:
-                print(row)
+                #print(row)
                 if "Concept" in row and row["Concept"]!="":
                     if "Core Property?" in row:
                         if row["Core Property?"]=="Core Ontology":
@@ -420,7 +420,7 @@ for file in os.listdir(directory):
         with open(abspath+filename, newline='') as csvfile:
             reader = csv.DictReader(csvfile)
             for row in reader:
-                print(row)
+                #print(row)
                 if "Concept" in row and row["Concept"]!="":
                     if "Module" in row:
                         if row["Module"]=="Core Ontology":
@@ -554,7 +554,7 @@ for file in os.listdir(directory):
        gr.parse(location=abspath+filename, format='json-ld')
        gr.serialize(destination=abspath+filename.replace(".json",".ttl"), format='turtle')
 
-print(moduleToAdoc)
+#print(moduleToAdoc)
 
 # Generate modspec elements
 
@@ -588,8 +588,9 @@ for ad in moduleToAdoc:
 					reqtext=reqtext.replace(", <<"+str(last), " and <<"+str(last))
 				reqtext+=" to be used in SPARQL graph patterns."
 				f.write("==== "+str(req)+"\n\n[requirement,identifier=\"/req/"+str(req).replace(" ","_")+"\"]\n\n."+str(req)+"\n====\n"+str(reqtext)+"\n====\n\n")
-				#print(moduleToRequirements[ad][req])
+				print(moduleToRequirements[ad][req])
 				for cls in moduleToRequirements[ad][req]:
+                    print(moduleToAdoc[ad])
 					if cls.replace("geosrs:","") in moduleToAdoc[ad]:
 						f.write(moduleToAdoc[ad][cls.replace("geosrs:","")]) 
 doc=""

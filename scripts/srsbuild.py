@@ -599,7 +599,7 @@ for ad in moduleToAdoc:
 				print(str(ad)+" - "+str(req))
 				print(moduleToRequirements[ad][req])
 				for cls in moduleToRequirements[ad][req]:
-					#print(moduleToAdoc[ad])
+					print(str(req)+" - "+str(cls)+" "+cls.replace("geosrs:","")+" "+str(cls.replace("geosrs:","") in moduleToAdoc[ad]))
 					if cls.replace("geosrs:","") in moduleToAdoc[ad]:
 						f.write(moduleToAdoc[ad][cls.replace("geosrs:","")]) 
 doc=""

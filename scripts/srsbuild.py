@@ -568,7 +568,7 @@ for ad in moduleToAdoc:
 	with open("spec/sections/"+ad,"w") as file:
 		file.write(content)             
 	with open("spec/sections/"+ad.replace(".adoc","_classes.adoc"), 'w',encoding="utf-8") as f:
-        print(ad)
+		print(ad)
 		print(moduleToRequirements[ad])
 		reqs=moduleToRequirements[ad]
 		#print(reqs)

@@ -194,6 +194,8 @@ for file in os.listdir(directory):
                                 clsuri=row["Concept"].replace("geosrs:", getNSForClass(row["Concept"],classToPrefix))
                                 adocdef+=clsuri+"["+clsuri[clsuri.rfind("/")+1:]+"] "
                             adocdef+="\n\n"
+                        if row["Concept"] in examples:
+                            adocdef+="|Example\n|"+row["Concept"]+"["+examples[row["Concept"]]+"] "
                         if "DisjointClass" in row and row["DisjointClass"]!="":
                             if " " in row["DisjointClass"]:
                                 for spl in row["DisjointClass"].split(" "):
@@ -246,6 +248,8 @@ for file in os.listdir(directory):
                                 clsuri=row["Concept"].replace(coreprefix+":",curns)
                                 adocdef+=clsuri+"["+clsuri[clsuri.rfind("/")+1:]+"] "
                             adocdef+="\n\n"
+                        if row["Concept"] in examples:
+                            adocdef+="|Example\n|"+row["Concept"]+"["+examples[row["Concept"]]+"] "
                         if "DisjointClass" in row and row["DisjointClass"]!="":
                             if " " in row["DisjointClass"]:
                                 for spl in row["DisjointClass"].split(" "):
@@ -319,6 +323,8 @@ for file in os.listdir(directory):
                                 gcore.add((URIRef(row["Concept"].replace(coreprefix+":",geocrsNS)),RDFS.domain,URIRef(row["Domain"].replace("geosrs:",getNSForClass(row["Domain"],classToPrefix)))))
                                 propref=row["Domain"].replace("geosrs:",getNSForClass(row["Domain"],classToPrefix))
                                 adocdef+="|Domain\n|"+propref+"["+propref[propref.rfind("/")+1:]+"]\n\n"
+                            if row["Concept"] in examples:
+                                adocdef+="|Example\n|"+row["Concept"]+"["+examples[row["Concept"]]+"] "
                             if "PROJJSON" in row and row["PROJJSON"]!="":
                                 if objprop:
                                     if " " in row["PROJJSON"].strip():
@@ -375,6 +381,8 @@ for file in os.listdir(directory):
                                     exont[row["Core Property?"].lower()].add((URIRef(row["Concept"].replace(coreprefix+":",curns+str(row["Core Property?"]).lower()+"/")),RDFS.domain,URIRef(row["Domain"].replace("geosrs:",getNSForClass(row["Domain"],classToPrefix)))))
                                     propref=row["Domain"].replace("geosrs:",getNSForClass(row["Domain"],classToPrefix))
                                     adocdef+="|Domain\n|"+propref+"["+propref[propref.rfind("/")+1:]+"]\n\n"
+                                if row["Concept"] in examples:
+                                    adocdef+="|Example\n|"+row["Concept"]+"["+examples[row["Concept"]]+"] "
                                 if "PROJJSON" in row and row["PROJJSON"]!="":
                                     if objprop:
                                         if " " in row["PROJJSON"].strip():

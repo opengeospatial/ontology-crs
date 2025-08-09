@@ -351,7 +351,7 @@ for file in os.listdir(directory):
                                             ldcontext["@context"][spl]=row["Concept"].replace("geosrs:", getPrefixForClass(row["Concept"],classToPrefix)+":") 
                                     else:
                                        ldcontext["@context"][row["OGCJSON"]]=row["Concept"].replace("geosrs:", getPrefixForClass(row["Concept"],classToPrefix)+":")  
-                            moduleToAdoc["06-core.adoc"][row["Concept"].replace(coreprefix+":",curns)]=adocdef+"|===\n\n"
+                            moduleToAdoc["06-core.adoc"][row["Concept"].replace(coreprefix+":","")]=adocdef+"|===\n\n"
                         else:
                             if row["Core Property?"].lower() in exont:
                                 adocdef="===== Property: "+str(row["Concept"])+"\n\n."+str(row["Concept"])+"\n[cols=\"1,1\"]\n|===\n"
@@ -410,7 +410,7 @@ for file in os.listdir(directory):
                                         else:
                                            ldcontext["@context"][row["OGCJSON"]]=row["Concept"].replace("geosrs:", getPrefixForClass(row["Concept"],classToPrefix)+":")  
                                 if row["Core Property?"].lower() in prefixToModule: 
-                                    moduleToAdoc[prefixToModule[row["Core Property?"].lower()]][row["Concept"].replace("geosrs:", getPrefixForClass(row["Concept"],classToPrefix))]=adocdef+"|===\n\n"
+                                    moduleToAdoc[prefixToModule[row["Core Property?"].lower()]][row["Concept"].replace("geosrs:", "")]=adocdef+"|===\n\n"
             g.serialize(destination=filename.replace(".csv","")+".ttl") 
     else:
         continue

@@ -176,7 +176,7 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 </clause>
 </clause>
 
-<clause id="_58b3885f-1821-8000-0a56-0ae0367feed8" obligation="normative">
+<clause id="_6bb8cf30-0ad9-ed65-ff27-46f3d8b5beec" obligation="normative">
 <title id="_044942ca-9796-b4a6-70f4-4ab0218662d2">Core</title>
 <p id="_80d68486-bf75-c09f-fb55-52b4a4a52b90" anchor="core">This clause establishes the <strong>Core</strong> Requirements class, with IRI <tt>/req/core</tt>, which has a corresponding Conformance Class, <strong>Core</strong>, with IRI <tt>/conf/core</tt>.</p>
 
@@ -269,12 +269,66 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 </clause>
 </clause>
 
-<clause id="_34f52fc9-4632-9d04-523a-bbda4994b0e1" obligation="normative">
+<clause id="_2726f025-be8e-8266-7e90-a7535434372e" obligation="normative">
 <title id="_a8e93d19-cb1b-1bf1-156e-4c00beab7d3f">Coordinate Reference System Properties</title>
 <requirement id="_8ee87c59-9fd9-68bf-88da-4e16f1cd8bbf" model="ogc" anchor="/req/Coordinate_Reference_System_Properties">
 <title>Coordinate Reference System Properties</title> 
 <identifier>/req/Coordinate_Reference_System_Properties</identifier><description><p id="_5ba89fff-f079-c4bc-6b6c-17a8601135c2">Implementations shall allow the RDFS classes <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>baseCRS</referenceFrom></locality></localityStack><display-text>geosrs:baseCRS</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>conversion</referenceFrom></locality></localityStack><display-text>geosrs:conversion</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>coordinateSystem</referenceFrom></locality></localityStack><display-text>geosrs:coordinateSystem</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>datum</referenceFrom></locality></localityStack><display-text>geosrs:datum</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>datumEnsemble</referenceFrom></locality></localityStack><display-text>geosrs:datumEnsemble</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>domainOfValidity</referenceFrom></locality></localityStack><display-text>geosrs:domainOfValidity</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>method</referenceFrom></locality></localityStack><display-text>geosrs:method</display-text></eref>, <eref bibitemid="Class_ geocrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>asProj4</referenceFrom></locality></localityStack><display-text>geocrs:asProj4</display-text></eref>, <eref bibitemid="Class_ geocrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>asProjJSON</referenceFrom></locality></localityStack><display-text>geocrs:asProjJSON</display-text></eref>, <eref bibitemid="Class_ geocrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>asWKT</referenceFrom></locality></localityStack><display-text>geocrs:asWKT</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>EPSGcode</referenceFrom></locality></localityStack><display-text>geosrs:EPSGcode</display-text></eref> to be used in SPARQL graph patterns.</p></description>
 </requirement>
+
+<clause id="_b680a2a8-15e8-edea-6dde-2ad903a23f19" obligation="normative">
+<title id="_40cc26d8-652a-4d0a-419e-f435782a6624">Property: geocrs:asProj4</title>
+<table id="_467fc933-ae55-d1cc-e442-5fc3b599e310"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<name id="_0eccc577-700c-e5e3-4ff5-587903651a59">geocrs:asProj4</name>
+<tbody><tr id="_676b9b02-9e2f-6fc2-1870-8056afc8488f"><td id="_2e2e1ba4-e99a-3720-e259-0c542312323f" valign="middle" align="left">URI</td>
+<td id="_6c4ae53a-d4b1-0d08-72ed-e4f781a622c5" valign="middle" align="left">geocrs:asProj4</td>
+</tr><tr id="_9468ebf9-afed-c0c2-45ff-35bf3c6bda93"><td id="_76b1d2a6-3d5d-1a88-d83a-13f1c8f925bc" valign="middle" align="left">Type</td>
+<td id="_d1167d71-ee31-5f1e-7649-c6e580d46fca" valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#DatatypeProperty">owl:DatatypeProperty</link></td>
+</tr><tr id="_01673088-f5a0-6d2c-471c-1571050ed6a9"><td id="_07d12af6-eb52-bc01-4745-d71176b79c9f" valign="middle" align="left">Definition</td>
+<td id="_3621e8db-158f-a676-fe2c-dac748d5e330" valign="middle" align="left">PROJ4 string defining a CRS. Note: this paradigm is ambiguous and presently considered outdated.</td>
+</tr><tr id="_f8dd0b9f-e5ef-e408-3d07-4d99a3f8b3d0"><td id="_f1b4647a-e54a-442e-bde9-5038978e2dfb" valign="middle" align="left">Range</td>
+<td id="_17dfadea-b8c3-1495-73a7-58bcb166fe44" valign="middle" align="left"><link target="https://w3id.org/geosrs/proj4Literal">proj4Literal</link></td>
+</tr><tr id="_93e1cf44-27db-e200-515c-db516bc5a20c"><td id="_a740f9f8-15fa-2eb0-8d32-77c9720a46e2" valign="middle" align="left">Domain</td>
+<td id="_60a3ea06-91e8-a612-3f8b-5ec410602be4" valign="middle" align="left"><link target="https://w3id.org/geosrs/srs/CRS">CRS</link></td>
+</tr></tbody>
+</table>
+</clause>
+
+<clause id="_831e4b44-4730-fd87-a9e1-04e185b3f26c" obligation="normative">
+<title id="_5ceeff0e-605d-641c-4d11-604987c16b11">Property: geocrs:asProjJSON</title>
+<table id="_93231ba5-2d56-cb8c-0784-2a4e1e2ae323"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<name id="_2b4884c7-b0ca-b546-9c33-056c930fcd88">geocrs:asProjJSON</name>
+<tbody><tr id="_3e602464-6a01-5698-9491-ca8815eb571d"><td id="_890f8857-a1bc-271f-e15f-c143b462b717" valign="middle" align="left">URI</td>
+<td id="_b896039d-7c7f-82b7-f379-998d149ded38" valign="middle" align="left">geocrs:asProjJSON</td>
+</tr><tr id="_3f6630a7-4a55-9cb2-96e7-e40b9e41b372"><td id="_2a495ccd-df7e-a987-919e-8048b569a584" valign="middle" align="left">Type</td>
+<td id="_db4701a8-6c40-4b18-f935-bcc06351ff9a" valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#DatatypeProperty">owl:DatatypeProperty</link></td>
+</tr><tr id="_10dcf7b2-ce42-6aed-5f79-52ecaa9e154b"><td id="_fa821a4d-6ba9-0eba-36d9-f24a2436eb4a" valign="middle" align="left">Definition</td>
+<td id="_e121dcee-d71c-b845-3277-97d6fbf6752b" valign="middle" align="left">CRS definition encoded as a JSON object interpretable by PROJ4.</td>
+</tr><tr id="_72c36824-693b-63ae-c72c-d53d385102cc"><td id="_c40addc2-1a71-f3e9-a767-cf681ebc48d3" valign="middle" align="left">Range</td>
+<td id="_66388fc4-44e9-2b27-0824-675446dbf0e0" valign="middle" align="left"><link target="https://w3id.org/geosrs/projJSONLiteral">projJSONLiteral</link></td>
+</tr><tr id="_3dbb2b09-fb58-bc14-60ab-1b35c40a32e2"><td id="_b999a0e9-585a-843a-cd9b-67cf627fab4d" valign="middle" align="left">Domain</td>
+<td id="_8a6bd1c1-ed76-56f6-8e22-f9bf9b23de28" valign="middle" align="left"><link target="https://w3id.org/geosrs/srs/CRS">CRS</link></td>
+</tr></tbody>
+</table>
+</clause>
+
+<clause id="_fae68b1b-08c6-8680-20ae-d08be847c55a" obligation="normative">
+<title id="_1835ada7-163e-4451-89b7-2cbcb6f74f1a">Property: geocrs:asWKT</title>
+<table id="_72cd11cb-c36f-c475-35cc-2dcfc6b3b219"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<name id="_81b0d10c-a6cd-54f2-fbec-0d78aea18530">geocrs:asWKT</name>
+<tbody><tr id="_f8bb8dfe-ecf1-aedf-c24d-bfb8efea6723"><td id="_3586bd9e-1937-180e-f2dd-d12d438a09b5" valign="middle" align="left">URI</td>
+<td id="_f3aba684-9488-d350-1e7b-75b7a9cf4ff2" valign="middle" align="left">geocrs:asWKT</td>
+</tr><tr id="_de67a691-5f9c-3d15-10bd-802ca2c7389c"><td id="_381f0f68-ae1a-2272-f859-f70672d39cdd" valign="middle" align="left">Type</td>
+<td id="_a81e5941-9318-111c-f3a5-d44fbd3c2487" valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#DatatypeProperty">owl:DatatypeProperty</link></td>
+</tr><tr id="_c7406e16-e3df-ba7f-3fec-1904dce3757b"><td id="_06e37db3-e4dd-ec44-d5d5-93915d26ba8d" valign="middle" align="left">Definition</td>
+<td id="_a8e5e157-d041-14c1-d96c-8f09f8e87703" valign="middle" align="left">CRS definition encoded according to the Well Known Text structure. Cf. ISO 19162:2019.</td>
+</tr><tr id="_3ad5249b-395d-b91a-cc58-8cf3aa0a5a09"><td id="_bf8e014c-b385-6017-99cf-70f2f6415506" valign="middle" align="left">Range</td>
+<td id="_d2196909-db4b-558a-dcd3-13f1abcc9d9e" valign="middle" align="left"><link target="https://w3id.org/geosrs/wktLiteral">wktLiteral</link></td>
+</tr><tr id="_50c50fd9-a9ce-fc0a-a8c1-5981587b7edd"><td id="_2a96f1cf-6297-3945-df67-a52a09db6c36" valign="middle" align="left">Domain</td>
+<td id="_ad632052-05f2-a8da-f19e-8318fc37174f" valign="middle" align="left"><link target="https://w3id.org/geosrs/srs/CRS">CRS</link></td>
+</tr></tbody>
+</table>
+</clause>
 </clause>
 
 <clause id="_db7c980c-c1b3-3ea5-caa7-00d439923b39" obligation="normative">
@@ -797,7 +851,7 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 </clause>
 </clause>
 
-<clause id="_49154481-2162-3c37-8ec5-5e4549ffa33d" obligation="normative">
+<clause id="_0b557cc4-4dd7-59a2-59fc-6a34a19d3b9b" obligation="normative">
 <title id="_334fa507-f3b2-6884-54bf-23cf005995ec">Coordinate System Module</title>
 <p id="_0b1e9dfb-ceac-0f81-3e64-be8948e7efe0" anchor="cs">This clause establishes the <strong>CS</strong> Requirements class, with IRI <tt>/req/cs</tt>, which has a corresponding Conformance Class, <strong>CS</strong>, with IRI <tt>/conf/cs</tt>.</p>
 
@@ -849,23 +903,23 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 </clause>
 </clause>
 
-<clause id="_1adb9f14-1539-d3d3-66d6-0968ff3921c7" obligation="normative">
+<clause id="_502ff970-fe7b-84cc-5496-cb9c576b69f4" obligation="normative">
 <title id="_44f81dae-472f-3361-aea9-52240b07d8c8">Celestial Coordinate Systems</title>
-<requirement id="_371e6bca-2c3b-10fa-6476-1aa85d4a9564" model="ogc" anchor="/req/Celestial_Coordinate_Systems">
+<requirement id="_3e61620e-058f-630a-e41e-99e12c3a7ec6" model="ogc" anchor="/req/Celestial_Coordinate_Systems">
 <title>Celestial Coordinate Systems</title> 
-<identifier>/req/Celestial_Coordinate_Systems</identifier><description><p id="_9f2808e9-552f-15f9-76ff-b6b3d39a8242">Implementations shall allow the RDFS classes <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>BarycentricCoordinateSystem</referenceFrom></locality></localityStack><display-text>geosrs:BarycentricCoordinateSystem</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>EclipticCoordinateSystem</referenceFrom></locality></localityStack><display-text>geosrs:EclipticCoordinateSystem</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>EquatorialCoordinateSystem</referenceFrom></locality></localityStack><display-text>geosrs:EquatorialCoordinateSystem</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>GalacticCoordinateSystem</referenceFrom></locality></localityStack><display-text>geosrs:GalacticCoordinateSystem</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>HorizontalCoordinateSystem</referenceFrom></locality></localityStack><display-text>geosrs:HorizontalCoordinateSystem</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>PerifocalCoordinateSystem</referenceFrom></locality></localityStack><display-text>geosrs:PerifocalCoordinateSystem</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>SuperGalacticCS</referenceFrom></locality></localityStack><display-text>geosrs:SuperGalacticCS</display-text></eref> to be used in SPARQL graph patterns.</p></description>
+<identifier>/req/Celestial_Coordinate_Systems</identifier><description><p id="_b4786bfe-dd1c-86dc-e8a4-cb98c025ce11">Implementations shall allow the RDFS classes <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>CelestialCoordinateSystem</referenceFrom></locality></localityStack><display-text>geosrs:CelestialCoordinateSystem</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>EclipticCoordinateSystem</referenceFrom></locality></localityStack><display-text>geosrs:EclipticCoordinateSystem</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>EquatorialCoordinateSystem</referenceFrom></locality></localityStack><display-text>geosrs:EquatorialCoordinateSystem</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>GalacticCoordinateSystem</referenceFrom></locality></localityStack><display-text>geosrs:GalacticCoordinateSystem</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>HorizontalCoordinateSystem</referenceFrom></locality></localityStack><display-text>geosrs:HorizontalCoordinateSystem</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>PerifocalCoordinateSystem</referenceFrom></locality></localityStack><display-text>geosrs:PerifocalCoordinateSystem</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>SuperGalacticCS</referenceFrom></locality></localityStack><display-text>geosrs:SuperGalacticCS</display-text></eref> to be used in SPARQL graph patterns.</p></description>
 </requirement>
 
-<clause id="_86a4943f-a0f7-cfe4-ab52-f7b4055cc659" obligation="normative">
-<title id="_8d7a667a-87d8-ce76-d445-129c169eb638">Class: geosrs:BarycentricCoordinateSystem</title>
-<table id="_a39b8397-97ec-bd3d-bf87-232e9a868406"><colgroup><col width="50%"/><col width="50%"/></colgroup>
-<name id="_20d2c5d9-aac0-0493-261f-2a29577bae62">geosrs:BarycentricCoordinateSystem</name>
+<clause id="_1d34c414-9d5a-d757-859c-462c988666ca" obligation="normative">
+<title id="_13251eb8-1574-c7dc-b78c-7792954732fb">Class: geosrs:CelestialCoordinateSystem</title>
+<table id="_58008161-34c5-ac5f-1849-481380ad34ed"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<name id="_7d8f52c6-ec40-41fc-a2fb-f4fe8db701a1">geosrs:CelestialCoordinateSystem</name>
 <tbody><tr id="_57ce399a-2e76-bdef-3b23-e61c59ea02b8"><td id="_e35c5a1b-9339-4a2e-8456-4c274f4d9b79" valign="middle" align="left">URI</td>
-<td id="_3403f429-8600-34aa-7bd9-f29bd99e550d" valign="middle" align="left"><link target="https://w3id.org/geosrs/cs/BarycentricCoordinateSystem"/></td>
-</tr><tr id="_4878608e-d1d9-3434-d60e-b425d4a2d3ba"><td id="_cabe605a-9e2e-dedc-32c0-ddcf48b05cd5" valign="middle" align="left">Definition</td>
-<td id="_9072ca79-0153-6a80-a0d8-353b076d081e" valign="middle" align="left">A coordinate system in which the location of a point is specified by reference to a simplex (a triangle for points in a plane, a tetrahedron for points in three-dimensional space, etc.)</td>
-</tr><tr id="_b29f2a55-f0f8-7d14-559b-68c9c32d84db"><td id="_041c03f0-a830-a702-db2d-fed5a7075037" valign="middle" align="left">Super-classes</td>
-<td id="_9568db46-3f67-d405-b21a-9bd2d6f25ef4" valign="middle" align="left"><link target="https://w3id.org/geosrs/cs/BarycentricCoordinateSystem">BarycentricCoordinateSystem</link></td>
+<td id="_3403f429-8600-34aa-7bd9-f29bd99e550d" valign="middle" align="left"><link target="https://w3id.org/geosrs/cs/CelestialCoordinateSystem"/></td>
+</tr><tr id="_e2e858d0-c181-6831-fda2-0ddaa9b2f560"><td id="_cabe605a-9e2e-dedc-32c0-ddcf48b05cd5" valign="middle" align="left">Definition</td>
+<td id="_33247f23-4df2-ede2-bb2e-f2d49089a686" valign="middle" align="left">A coordinate system for specifying positions of celestial objects relative to physical reference points</td>
+</tr><tr id="_d9ca9637-ae13-337f-e830-806e4c0a4cdd"><td id="_041c03f0-a830-a702-db2d-fed5a7075037" valign="middle" align="left">Super-classes</td>
+<td id="_4c998ebd-a17c-596b-a740-f52727af8abf" valign="middle" align="left"><link target="https://w3id.org/geosrs/cs/CelestialCoordinateSystem">CelestialCoordinateSystem</link></td>
 </tr></tbody>
 </table>
 </clause>
@@ -963,11 +1017,11 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 </requirement>
 </clause>
 
-<clause id="_44ab2a2a-d7e2-92fd-b05e-94b852979adb" obligation="normative">
+<clause id="_09037c82-b92f-5ed3-00d0-1d54262dec74" obligation="normative">
 <title id="_25f83602-46ac-c3ff-3188-2772a942dbc9">Coordinate System Types</title>
-<requirement id="_27bff5f8-dd9b-8b99-8f8e-617078d9d01c" model="ogc" anchor="/req/Coordinate_System_Types">
+<requirement id="_d077d1a5-7c86-9d2f-a382-99326c519c00" model="ogc" anchor="/req/Coordinate_System_Types">
 <title>Coordinate System Types</title> 
-<identifier>/req/Coordinate_System_Types</identifier><description><p id="_b1546420-686d-f21f-f992-964314eebe24">Implementations shall allow the RDFS classes <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>1DCoordinateSystem</referenceFrom></locality></localityStack><display-text>geosrs:1DCoordinateSystem</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>3DCoordinateSystem</referenceFrom></locality></localityStack><display-text>geosrs:3DCoordinateSystem</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>AffineCoordinateSystem</referenceFrom></locality></localityStack><display-text>geosrs:AffineCoordinateSystem</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>CartesianCoordinateSystem</referenceFrom></locality></localityStack><display-text>geosrs:CartesianCoordinateSystem</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>CelestialCoordinateSystem</referenceFrom></locality></localityStack><display-text>geosrs:CelestialCoordinateSystem</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>CurvilinearCoordinateSystem</referenceFrom></locality></localityStack><display-text>geosrs:CurvilinearCoordinateSystem</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>EngineeringCoordinateSystem</referenceFrom></locality></localityStack><display-text>geosrs:EngineeringCoordinateSystem</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>GeodeticCoordinateSystem</referenceFrom></locality></localityStack><display-text>geosrs:GeodeticCoordinateSystem</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>GridCoordinateSystem</referenceFrom></locality></localityStack><display-text>geosrs:GridCoordinateSystem</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>HexagonalCoordinateSystem</referenceFrom></locality></localityStack><display-text>geosrs:HexagonalCoordinateSystem</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>LocalCoordinateSystem</referenceFrom></locality></localityStack><display-text>geosrs:LocalCoordinateSystem</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>ObliqueCoordinateSystem</referenceFrom></locality></localityStack><display-text>geosrs:ObliqueCoordinateSystem</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>OrdinalCoordinateSystem</referenceFrom></locality></localityStack><display-text>geosrs:OrdinalCoordinateSystem</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>PlanarCoordinateSystem</referenceFrom></locality></localityStack><display-text>geosrs:PlanarCoordinateSystem</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>PolarCoordinateSystem</referenceFrom></locality></localityStack><display-text>geosrs:PolarCoordinateSystem</display-text></eref> to be used in SPARQL graph patterns.</p></description>
+<identifier>/req/Coordinate_System_Types</identifier><description><p id="_6020abc6-cd93-68e5-6fac-db979ca3fdcb">Implementations shall allow the RDFS classes <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>1DCoordinateSystem</referenceFrom></locality></localityStack><display-text>geosrs:1DCoordinateSystem</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>3DCoordinateSystem</referenceFrom></locality></localityStack><display-text>geosrs:3DCoordinateSystem</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>AffineCoordinateSystem</referenceFrom></locality></localityStack><display-text>geosrs:AffineCoordinateSystem</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>BarycentricCoordinateSystem</referenceFrom></locality></localityStack><display-text>geosrs:BarycentricCoordinateSystem</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>CartesianCoordinateSystem</referenceFrom></locality></localityStack><display-text>geosrs:CartesianCoordinateSystem</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>CurvilinearCoordinateSystem</referenceFrom></locality></localityStack><display-text>geosrs:CurvilinearCoordinateSystem</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>EngineeringCoordinateSystem</referenceFrom></locality></localityStack><display-text>geosrs:EngineeringCoordinateSystem</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>GeodeticCoordinateSystem</referenceFrom></locality></localityStack><display-text>geosrs:GeodeticCoordinateSystem</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>GridCoordinateSystem</referenceFrom></locality></localityStack><display-text>geosrs:GridCoordinateSystem</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>HexagonalCoordinateSystem</referenceFrom></locality></localityStack><display-text>geosrs:HexagonalCoordinateSystem</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>LocalCoordinateSystem</referenceFrom></locality></localityStack><display-text>geosrs:LocalCoordinateSystem</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>ObliqueCoordinateSystem</referenceFrom></locality></localityStack><display-text>geosrs:ObliqueCoordinateSystem</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>OrdinalCoordinateSystem</referenceFrom></locality></localityStack><display-text>geosrs:OrdinalCoordinateSystem</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>PlanarCoordinateSystem</referenceFrom></locality></localityStack><display-text>geosrs:PlanarCoordinateSystem</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>PolarCoordinateSystem</referenceFrom></locality></localityStack><display-text>geosrs:PolarCoordinateSystem</display-text></eref> to be used in SPARQL graph patterns.</p></description>
 </requirement>
 
 <clause id="_4eb199b9-93a0-5cf2-97b2-e6e2a7de6232" obligation="normative">
@@ -1012,16 +1066,16 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 </table>
 </clause>
 
-<clause id="_ee04aa7b-0060-3662-444f-711f0f2f9a26" obligation="normative">
-<title id="_c17eb180-c013-bca0-2b7b-306cb3f728c6">Class: geosrs:CelestialCoordinateSystem</title>
-<table id="_c1bf47ac-ddec-56cc-45b7-fecbe6d47786"><colgroup><col width="50%"/><col width="50%"/></colgroup>
-<name id="_cd97f381-0d0f-e436-19c5-e1acffb5dca9">geosrs:CelestialCoordinateSystem</name>
+<clause id="_c79ccbd9-c8e8-303c-70d2-7e214e2a6de9" obligation="normative">
+<title id="_02122599-5360-d68d-9d08-ad0325d5fdc7">Class: geosrs:BarycentricCoordinateSystem</title>
+<table id="_df61631d-45b6-a0a8-115e-c1c4b6e808d7"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<name id="_94f7cb92-d954-9419-794e-58bc58ab502c">geosrs:BarycentricCoordinateSystem</name>
 <tbody><tr id="_9bd8bb8d-26be-eeec-1531-e2f36f694405"><td id="_ea331725-ec40-55f9-7d8b-79aef907e482" valign="middle" align="left">URI</td>
-<td id="_71c794fd-8cc5-5e73-d028-621e4ad19869" valign="middle" align="left"><link target="https://w3id.org/geosrs/cs/CelestialCoordinateSystem"/></td>
-</tr><tr id="_5e758103-09e1-65d7-f880-db95319132a1"><td id="_e0a48c26-7abf-8f45-09eb-1b44cf9cc318" valign="middle" align="left">Definition</td>
-<td id="_c1ca9bff-e471-45db-e9c4-ce09deec262d" valign="middle" align="left">A coordinate system for specifying positions of celestial objects relative to physical reference points</td>
-</tr><tr id="_5b57a70e-1513-eb95-0ab3-56a58cac2c00"><td id="_ca02e7d6-f738-4962-16d2-25c09f86f7e3" valign="middle" align="left">Super-classes</td>
-<td id="_751b91f3-558c-7f7a-95dd-53a0e50867c4" valign="middle" align="left"><link target="https://w3id.org/geosrs/cs/CelestialCoordinateSystem">CelestialCoordinateSystem</link></td>
+<td id="_71c794fd-8cc5-5e73-d028-621e4ad19869" valign="middle" align="left"><link target="https://w3id.org/geosrs/cs/BarycentricCoordinateSystem"/></td>
+</tr><tr id="_4b052df2-0598-057c-2bf4-c03b534f941e"><td id="_e0a48c26-7abf-8f45-09eb-1b44cf9cc318" valign="middle" align="left">Definition</td>
+<td id="_8c1fff39-f432-fd53-9245-ee9e6f8a3dac" valign="middle" align="left">A coordinate system in which the location of a point is specified by reference to a simplex (a triangle for points in a plane, a tetrahedron for points in three-dimensional space, etc.)</td>
+</tr><tr id="_8812f5a6-d0f5-9a95-79c3-b0521ff62799"><td id="_ca02e7d6-f738-4962-16d2-25c09f86f7e3" valign="middle" align="left">Super-classes</td>
+<td id="_bb077819-8ea0-d838-7992-b3d10521dfb6" valign="middle" align="left"><link target="https://w3id.org/geosrs/cs/BarycentricCoordinateSystem">BarycentricCoordinateSystem</link></td>
 </tr></tbody>
 </table>
 </clause>

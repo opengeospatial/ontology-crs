@@ -420,7 +420,7 @@ if args.input==None:
 	for x in list(range(2000,10000))+list(range(20000,30000)):
 		try:
 			curcrs=CRS.from_epsg(x)
-			print("EPSG: "+str(x))
+			#print("EPSG: "+str(x))
 		except:
 			continue	
 		crsToTTL(ttl,curcrs,x,geodcounter,None)

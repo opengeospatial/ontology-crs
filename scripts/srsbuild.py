@@ -304,8 +304,8 @@ for file in os.listdir(directory):
                                 adocdef+="|Type\n|http://www.w3.org/2002/07/owl#DatatypeProperty[owl:DatatypeProperty]\n\n"
                             if "Label" in row and row["Label"]!="":
                                 gcore.add((URIRef(row["Concept"].replace(coreprefix+":",geocrsNS)),RDFS.label,Literal(row["Label"],lang="en")))
-                            if "Requirement" in row and row["Requirement"]!="":
-                                if row["Requirement"] not in moduleToRequirements[prefixToModule[nsprefix]] and str(row["Core Property?"]).lower() in prefixToModule:
+                            if "Requirement" in row and row["Requirement"]!="" and str(row["Core Property?"]).lower() in prefixToModule:
+                                if row["Requirement"] not in moduleToRequirements[prefixToModule[nsprefix]] :
                                     moduleToRequirements[prefixToModule[str(row["Core Property?"]).lower()]][row["Requirement"]]=[]
                                 moduleToRequirements[prefixToModule[str(row["Core Property?"]).lower()]][row["Requirement"]].append(row["Concept"])
                             if "Definition" in row and row["Definition"]!="":

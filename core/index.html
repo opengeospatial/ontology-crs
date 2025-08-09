@@ -224,8 +224,6 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
     <h2>Table of Contents</h2>
     <ol>
         <li><a href="#classes">Classes</a></li>
-        <li><a href="#objectproperties">Object Properties</a></li>
-        <li><a href="#datatypeproperties">Datatype Properties</a></li>
         <li><a href="#namespaces">Namespaces</a></li>
         <li><a href="#legend">Legend</a></li>
     </ol>
@@ -240,21 +238,17 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
   <section id="classes">
     <h2>Classes <span style="float:right; font-size:smaller;"><a href="">&uparrow;</a></span></h2>
     <ul class="hlist">
-      <li><a href="#CoordinateReferenceSystem">Coordinate Reference System</a></li>
       <li><a href="#CartesianCoordinateSystem">Cartesian Coordinate System</a></li>
       <li><a href="#Conversion">Conversion</a></li>
       <li><a href="#CoordinateOperation">Coordinate Operation</a></li>
       <li><a href="#CoordinateSystem">Coordinate System</a></li>
       <li><a href="#CoordinateSystemAxis">Coordinate System Axis</a></li>
-      <li><a href="#Datum1">Datum</a></li>
-      <li><a href="#Ellipsoid1">Ellipsoid</a></li>
+      <li><a href="#Datum">Datum</a></li>
+      <li><a href="#Ellipsoid">Ellipsoid</a></li>
       <li><a href="#EllipsoidalCoordinateSystem">Ellipsoidal Coordinate System</a></li>
-      <li><a href="#EngineeringCoordinateReferenceSystem">Engineering Coordinate Reference System</a></li>
       <li><a href="#GeneralOperationParameter">General Operation Parameter</a></li>
       <li><a href="#GeneralParameterValue">General Parameter Value</a></li>
-      <li><a href="#GeodeticCoordinateReferenceSystem">Geodetic Coordinate Reference System</a></li>
       <li><a href="#GeodeticDatum">Geodetic Datum</a></li>
-      <li><a href="#GeographicCoordinateReferenceSystem">Geographic Coordinate Reference System</a></li>
       <li><a href="#LinearCoordinateSystem">Linear Coordinate System</a></li>
       <li><a href="#OperationMethod">Operation Method</a></li>
       <li><a href="#OperationParameter">Operation Parameter</a></li>
@@ -263,65 +257,12 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
       <li><a href="#ParametricCoordinateSystem">Parametric Coordinate System</a></li>
       <li><a href="#PolarCoordinateSystem">Polar Coordinate System</a></li>
       <li><a href="#Primemeridian">Prime meridian</a></li>
-      <li><a href="#ProjectedCoordinateReferenceSystem">Projected Coordinate Reference System</a></li>
-      <li><a href="#ReferenceSystem">Reference System</a></li>
-      <li><a href="#SingleCoordinateReferenceSystem">Single Coordinate Reference System</a></li>
       <li><a href="#SingleOperation">Single Operation</a></li>
-      <li><a href="#SpatialReferenceSystem">Spatial Reference System</a></li>
       <li><a href="#SphericalCoordinateSystem">Spherical Coordinate System</a></li>
       <li><a href="#Transformation">Transformation</a></li>
       <li><a href="#VerticalCoordinateSystem">Vertical Coordinate System</a></li>
       <li><a href="#VerticalDatum">Vertical Datum</a></li>
     </ul>
-    <div class="entity class" id="CoordinateReferenceSystem">
-        <h3>
-          Coordinate Reference System<sup title="class" class="sup-c">c</sup>
-          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#CoordinateReferenceSystem" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
-        </h3>
-        <table>
-            <tr>
-                <th>URI</th>
-                <td><code>https://w3id.org/geosrs/CRS</code></td>
-            </tr>
-            <tr>
-                <th>Description</th>
-                <td>
-                    <p>Depending on the spatial dimension of coordinates (1D, 2D, 3D), this piece of metadata is used for specifying the elements of definition associated to a given set of coordinates: its datum, its ellipsoid, its prime meridian, the type of coordinates (geocentric, geographic, projected,...), the coordinates units of measure, when appropriate the cartographic projection used, the vertical coordinate reference system.</p>
-                </td>
-            </tr>
-            <tr>
-                <th>Super-classes</th>
-                <td>
-                    <a href="#SpatialReferenceSystem">Spatial Reference System</a><sup class="sup-c" title="class">c</sup><br/>
-                </td>
-            </tr>
-            <tr>
-                <th>Sub-classes</th>
-                <td>
-                    <a href="#EngineeringCoordinateReferenceSystem">Engineering Coordinate Reference System</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#SingleCoordinateReferenceSystem">Single Coordinate Reference System</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#GeographicCoordinateReferenceSystem">Geographic Coordinate Reference System</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#GeodeticCoordinateReferenceSystem">Geodetic Coordinate Reference System</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#ProjectedCoordinateReferenceSystem">Projected Coordinate Reference System</a><sup class="sup-c" title="class">c</sup><br/>
-                </td>
-            </tr>
-            <tr>
-                <th>In domain of</th>
-                <td>
-                    <a href="#Coordinatesystem">Coordinate system</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="#Datum">Datum</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="#Domainofvalidity">Domain of validity</a><sup class="sup-op" title="object property">op</sup><br/>
-                </td>
-            </tr>
-            <tr>
-                <th>In range of</th>
-                <td>
-                    <a href="#TargetCRS">Target CRS</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="#SourceCRS">Source CRS</a><sup class="sup-op" title="object property">op</sup><br/>
-                </td>
-            </tr>
-        </table>
-    </div>
     <div class="entity class" id="CartesianCoordinateSystem">
         <h3>
           Cartesian Coordinate System<sup title="class" class="sup-c">c</sup>
@@ -341,7 +282,7 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="#SingleCoordinateReferenceSystem">Single Coordinate Reference System</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="https://w3id.org/geosrs/srs/SingleCRS">https://w3id.org/geosrs/srs/SingleCRS</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -405,13 +346,6 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
                     <a href="#Conversion">Conversion</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
-            <tr>
-                <th>In domain of</th>
-                <td>
-                    <a href="#TargetCRS">Target CRS</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="#SourceCRS">Source CRS</a><sup class="sup-op" title="object property">op</sup><br/>
-                </td>
-            </tr>
         </table>
     </div>
     <div class="entity class" id="CoordinateSystem">
@@ -437,18 +371,6 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
                     <a href="#OrdinalCoordinateSystem">Ordinal Coordinate System</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
-            <tr>
-                <th>In domain of</th>
-                <td>
-                    <a href="#Axis">Axis</a><sup class="sup-op" title="object property">op</sup><br/>
-                </td>
-            </tr>
-            <tr>
-                <th>In range of</th>
-                <td>
-                    <a href="#Coordinatesystem">Coordinate system</a><sup class="sup-op" title="object property">op</sup><br/>
-                </td>
-            </tr>
         </table>
     </div>
     <div class="entity class" id="CoordinateSystemAxis">
@@ -469,10 +391,10 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             </tr>
         </table>
     </div>
-    <div class="entity class" id="Datum1">
+    <div class="entity class" id="Datum">
         <h3>
           Datum<sup title="class" class="sup-c">c</sup>
-          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#Datum1" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#Datum" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
         </h3>
         <table>
             <tr>
@@ -491,24 +413,12 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
                     <a href="#VerticalDatum">Vertical Datum</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
-            <tr>
-                <th>In domain of</th>
-                <td>
-                    <a href="#Ellipsoid">Ellipsoid</a><sup class="sup-op" title="object property">op</sup><br/>
-                </td>
-            </tr>
-            <tr>
-                <th>In range of</th>
-                <td>
-                    <a href="#Datum">Datum</a><sup class="sup-op" title="object property">op</sup><br/>
-                </td>
-            </tr>
         </table>
     </div>
-    <div class="entity class" id="Ellipsoid1">
+    <div class="entity class" id="Ellipsoid">
         <h3>
           Ellipsoid<sup title="class" class="sup-c">c</sup>
-          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#Ellipsoid1" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#Ellipsoid" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
         </h3>
         <table>
             <tr>
@@ -519,19 +429,6 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
                 <th>Description</th>
                 <td>
                     <p>Surface formed by the rotation of an ellipse about its minor axis, defined by a semi-major axis and a flattening parameter and fairly geocentric. NB : It is a mathematical model of the geoid, i.e. the Earth without its relief. Many geodetic ellipsoids exist. Cf. ISO 19111:2007:2007-07, part 10.2.2, table 36 and annex B.3.2.3.</p>
-                </td>
-            </tr>
-            <tr>
-                <th>In domain of</th>
-                <td>
-                    <a href="#semimajoraxis">semi major axis</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a href="#semiminoraxis">semi minor axis</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                </td>
-            </tr>
-            <tr>
-                <th>In range of</th>
-                <td>
-                    <a href="#Ellipsoid">Ellipsoid</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
         </table>
@@ -556,30 +453,6 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
                 <th>Super-classes</th>
                 <td>
                     <a href="https://w3id.org/geosrs/cs/OrthogonalCoordinateSystem">https://w3id.org/geosrs/cs/OrthogonalCoordinateSystem</a><sup class="sup-c" title="class">c</sup><br/>
-                </td>
-            </tr>
-        </table>
-    </div>
-    <div class="entity class" id="EngineeringCoordinateReferenceSystem">
-        <h3>
-          Engineering Coordinate Reference System<sup title="class" class="sup-c">c</sup>
-          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#EngineeringCoordinateReferenceSystem" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
-        </h3>
-        <table>
-            <tr>
-                <th>URI</th>
-                <td><code>https://w3id.org/geosrs/EngineeringCRS</code></td>
-            </tr>
-            <tr>
-                <th>Description</th>
-                <td>
-                    <p>A contextually local coordinate reference system which can be divided into two broad categories: - earth-fixed systems applied to engineering activities on or near the surface of the earth; - CRSs on moving platforms such as road vehicles, vessels, aircraft or spacecraft.</p>
-                </td>
-            </tr>
-            <tr>
-                <th>Super-classes</th>
-                <td>
-                    <a href="#CoordinateReferenceSystem">Coordinate Reference System</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -632,36 +505,6 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             </tr>
         </table>
     </div>
-    <div class="entity class" id="GeodeticCoordinateReferenceSystem">
-        <h3>
-          Geodetic Coordinate Reference System<sup title="class" class="sup-c">c</sup>
-          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#GeodeticCoordinateReferenceSystem" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
-        </h3>
-        <table>
-            <tr>
-                <th>URI</th>
-                <td><code>https://w3id.org/geosrs/GeodeticCRS</code></td>
-            </tr>
-            <tr>
-                <th>Description</th>
-                <td>
-                    <p>Coordinate Reference System associated with a geodetic datum. Cf. ISO 19111:2007:2007-07, part 8.2.2.a, table 10 and annex B.1.2.1.a.</p>
-                </td>
-            </tr>
-            <tr>
-                <th>Super-classes</th>
-                <td>
-                    <a href="#CoordinateReferenceSystem">Coordinate Reference System</a><sup class="sup-c" title="class">c</sup><br/>
-                </td>
-            </tr>
-            <tr>
-                <th>In range of</th>
-                <td>
-                    <a href="#BaseCRS">Base CRS</a><sup class="sup-op" title="object property">op</sup><br/>
-                </td>
-            </tr>
-        </table>
-    </div>
     <div class="entity class" id="GeodeticDatum">
         <h3>
           Geodetic Datum<sup title="class" class="sup-c">c</sup>
@@ -676,30 +519,6 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
                 <th>Description</th>
                 <td>
                     <p>Datum describing the relation of a two- or three-dimensional coordinate system to the Earth. Cf. ISO 19111:2007:2007-07, part 10.2, table 34 and annex B.3.2.</p>
-                </td>
-            </tr>
-        </table>
-    </div>
-    <div class="entity class" id="GeographicCoordinateReferenceSystem">
-        <h3>
-          Geographic Coordinate Reference System<sup title="class" class="sup-c">c</sup>
-          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#GeographicCoordinateReferenceSystem" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
-        </h3>
-        <table>
-            <tr>
-                <th>URI</th>
-                <td><code>https://w3id.org/geosrs/GeographicCRS</code></td>
-            </tr>
-            <tr>
-                <th>Description</th>
-                <td>
-                    <p>Coordinate Reference System that has a geodetic reference frame and an ellipsoidal coordinate system</p>
-                </td>
-            </tr>
-            <tr>
-                <th>Super-classes</th>
-                <td>
-                    <a href="#CoordinateReferenceSystem">Coordinate Reference System</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -884,90 +703,6 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             </tr>
         </table>
     </div>
-    <div class="entity class" id="ProjectedCoordinateReferenceSystem">
-        <h3>
-          Projected Coordinate Reference System<sup title="class" class="sup-c">c</sup>
-          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#ProjectedCoordinateReferenceSystem" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
-        </h3>
-        <table>
-            <tr>
-                <th>URI</th>
-                <td><code>https://w3id.org/geosrs/ProjectedCRS</code></td>
-            </tr>
-            <tr>
-                <th>Description</th>
-                <td>
-                    <p>Coordinate Reference System derived from a two-dimensional geodetic coordinate reference system by applying a map projection. Cf. ISO 19111:2007:2007-07, part 8.2.3.b, table 11 and annex B.1.2.3.</p>
-                </td>
-            </tr>
-            <tr>
-                <th>Super-classes</th>
-                <td>
-                    <a href="#CoordinateReferenceSystem">Coordinate Reference System</a><sup class="sup-c" title="class">c</sup><br/>
-                </td>
-            </tr>
-            <tr>
-                <th>In domain of</th>
-                <td>
-                    <a href="#BaseCRS">Base CRS</a><sup class="sup-op" title="object property">op</sup><br/>
-                </td>
-            </tr>
-        </table>
-    </div>
-    <div class="entity class" id="ReferenceSystem">
-        <h3>
-          Reference System<sup title="class" class="sup-c">c</sup>
-          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#ReferenceSystem" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
-        </h3>
-        <table>
-            <tr>
-                <th>URI</th>
-                <td><code>https://w3id.org/geosrs/ReferenceSystem</code></td>
-            </tr>
-            <tr>
-                <th>Description</th>
-                <td>
-                    <p>An abstract coordinate system, whose origin, orientation and scale are specified in physical space. It is based on a set of reference points, defined as geometric points whose position is identified physically and mathematically.</p>
-                </td>
-            </tr>
-            <tr>
-                <th>Sub-classes</th>
-                <td>
-                    <a href="#SpatialReferenceSystem">Spatial Reference System</a><sup class="sup-c" title="class">c</sup><br/>
-                </td>
-            </tr>
-        </table>
-    </div>
-    <div class="entity class" id="SingleCoordinateReferenceSystem">
-        <h3>
-          Single Coordinate Reference System<sup title="class" class="sup-c">c</sup>
-          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#SingleCoordinateReferenceSystem" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
-        </h3>
-        <table>
-            <tr>
-                <th>URI</th>
-                <td><code>https://w3id.org/geosrs/SingleCRS</code></td>
-            </tr>
-            <tr>
-                <th>Description</th>
-                <td>
-                    <p>Coordinate reference system consisting of one coordinate system and one datum. Cf. ISO 19111:2007:2007-07, table 5.</p>
-                </td>
-            </tr>
-            <tr>
-                <th>Super-classes</th>
-                <td>
-                    <a href="#CoordinateReferenceSystem">Coordinate Reference System</a><sup class="sup-c" title="class">c</sup><br/>
-                </td>
-            </tr>
-            <tr>
-                <th>Sub-classes</th>
-                <td>
-                    <a href="#CartesianCoordinateSystem">Cartesian Coordinate System</a><sup class="sup-c" title="class">c</sup><br/>
-                </td>
-            </tr>
-        </table>
-    </div>
     <div class="entity class" id="SingleOperation">
         <h3>
           Single Operation<sup title="class" class="sup-c">c</sup>
@@ -988,36 +723,6 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
                 <th>Super-classes</th>
                 <td>
                     <a href="#CoordinateOperation">Coordinate Operation</a><sup class="sup-c" title="class">c</sup><br/>
-                </td>
-            </tr>
-        </table>
-    </div>
-    <div class="entity class" id="SpatialReferenceSystem">
-        <h3>
-          Spatial Reference System<sup title="class" class="sup-c">c</sup>
-          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#SpatialReferenceSystem" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
-        </h3>
-        <table>
-            <tr>
-                <th>URI</th>
-                <td><code>https://w3id.org/geosrs/SpatialReferenceSystem</code></td>
-            </tr>
-            <tr>
-                <th>Description</th>
-                <td>
-                    <p>A spatial reference system (SRS) is a system for establishing spatial position. A spatial reference system can use geographic identifiers (place names, for example), coordinates (in which case it is a coordinate reference system), or identifiers with structured geometry (in which case it is a discrete global grid system).</p>
-                </td>
-            </tr>
-            <tr>
-                <th>Super-classes</th>
-                <td>
-                    <a href="#ReferenceSystem">Reference System</a><sup class="sup-c" title="class">c</sup><br/>
-                </td>
-            </tr>
-            <tr>
-                <th>Sub-classes</th>
-                <td>
-                    <a href="#CoordinateReferenceSystem">Coordinate Reference System</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -1113,348 +818,12 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="#Datum1">Datum</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#Datum">Datum</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
     </div>
 </section>
-<section id="objectproperties">
-    <h2>Object Properties <span style="float:right; font-size:smaller;"><a href="">&uparrow;</a></span></h2>
-    <ul class="hlist">
-        <li><a href="#Axis">Axis</a></li>
-        <li><a href="#BaseCRS">Base CRS</a></li>
-        <li><a href="#Coordinatesystem">Coordinate system</a></li>
-        <li><a href="#Datum">Datum</a></li>
-        <li><a href="#Domainofvalidity">Domain of validity</a></li>
-        <li><a href="#Ellipsoid">Ellipsoid</a></li>
-        <li><a href="#SourceCRS">Source CRS</a></li>
-        <li><a href="#TargetCRS">Target CRS</a></li>
-    </ul>
-    <div class="entity property" id="Axis">
-        <h3>Axis<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
-            <a href="#Axis" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
-        </h3>
-        <table>
-            <tr>
-                <th>URI</th>
-                <td><code>https://w3id.org/geosrs/axis</code></td>
-            </tr>
-            <tr>
-                <th>Description</th>
-                <td>
-                    <p>The property relates a coordinate system to one of its axis</p>
-                </td>
-            </tr>
-            <tr>
-                <th>Domain(s)</th>
-                <td>
-                    <a href="#CoordinateSystem">Coordinate System</a><sup class="sup-c" title="class">c</sup>
-                </td>
-            </tr>
-            <tr>
-                <th>Range(s)</th>
-                <td>
-                    <a href="https://w3id.org/geosrs/Axis">geosrs:Axis</a><sup class="sup-c" title="class">c</sup>
-                </td>
-            </tr>
-        </table>
-    </div>
-    <div class="entity property" id="BaseCRS">
-        <h3>Base CRS<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
-            <a href="#BaseCRS" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
-        </h3>
-        <table>
-            <tr>
-                <th>URI</th>
-                <td><code>https://w3id.org/geosrs/baseCRS</code></td>
-            </tr>
-            <tr>
-                <th>Description</th>
-                <td>
-                    <p>The geodetic coordinate reference system on which a projected coordinate reference system is based. Cf. ISO 19111:2007:2007-07, table 11, association role baseCRS.</p>
-                </td>
-            </tr>
-            <tr>
-                <th>Domain(s)</th>
-                <td>
-                    <a href="#ProjectedCoordinateReferenceSystem">Projected Coordinate Reference System</a><sup class="sup-c" title="class">c</sup>
-                </td>
-            </tr>
-            <tr>
-                <th>Range(s)</th>
-                <td>
-                    <a href="https://w3id.org/geosrs/GeodeticCRS">geosrs:GeodeticCRS</a><sup class="sup-c" title="class">c</sup>
-                </td>
-            </tr>
-        </table>
-    </div>
-    <div class="entity property" id="Coordinatesystem">
-        <h3>Coordinate system<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
-            <a href="#Coordinatesystem" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
-        </h3>
-        <table>
-            <tr>
-                <th>URI</th>
-                <td><code>https://w3id.org/geosrs/coordinateSystem</code></td>
-            </tr>
-            <tr>
-                <th>Description</th>
-                <td>
-                    <p>The property relates a coordinate reference system to its coordinate system</p>
-                </td>
-            </tr>
-            <tr>
-                <th>Domain(s)</th>
-                <td>
-                    <a href="#CoordinateReferenceSystem">Coordinate Reference System</a><sup class="sup-c" title="class">c</sup>
-                </td>
-            </tr>
-            <tr>
-                <th>Range(s)</th>
-                <td>
-                    <a href="https://w3id.org/geosrs/CoordinateSystem">geosrs:CoordinateSystem</a><sup class="sup-c" title="class">c</sup>
-                </td>
-            </tr>
-        </table>
-    </div>
-    <div class="entity property" id="Datum">
-        <h3>Datum<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
-            <a href="#Datum" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
-        </h3>
-        <table>
-            <tr>
-                <th>URI</th>
-                <td><code>https://w3id.org/geosrs/datum</code></td>
-            </tr>
-            <tr>
-                <th>Description</th>
-                <td>
-                    <p>The property relates a coordinate reference system to a datum</p>
-                </td>
-            </tr>
-            <tr>
-                <th>Domain(s)</th>
-                <td>
-                    <a href="#CoordinateReferenceSystem">Coordinate Reference System</a><sup class="sup-c" title="class">c</sup>
-                </td>
-            </tr>
-            <tr>
-                <th>Range(s)</th>
-                <td>
-                    <a href="https://w3id.org/geosrs/Datum">geosrs:Datum</a><sup class="sup-c" title="class">c</sup>
-                </td>
-            </tr>
-        </table>
-    </div>
-    <div class="entity property" id="Domainofvalidity">
-        <h3>Domain of validity<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
-            <a href="#Domainofvalidity" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
-        </h3>
-        <table>
-            <tr>
-                <th>URI</th>
-                <td><code>https://w3id.org/geosrs/domainOfValidity</code></td>
-            </tr>
-            <tr>
-                <th>Description</th>
-                <td>
-                    <p>Geographic area or time interval in which the referring object is valid. Cf. ISO 19111:2007:2007-07, tables 4, 33 and 42, attribute domainOfValidity.</p>
-                </td>
-            </tr>
-            <tr>
-                <th>Domain(s)</th>
-                <td>
-                    <a href="#CoordinateReferenceSystem">Coordinate Reference System</a><sup class="sup-c" title="class">c</sup>
-                </td>
-            </tr>
-            <tr>
-                <th>Range(s)</th>
-                <td>
-                    <a href="https://w3id.org/geosrs/srs/AreaOfUse">https://w3id.org/geosrs/srs/AreaOfUse</a><sup class="sup-c" title="class">c</sup>
-                </td>
-            </tr>
-        </table>
-    </div>
-    <div class="entity property" id="Ellipsoid">
-        <h3>Ellipsoid<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
-            <a href="#Ellipsoid" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
-        </h3>
-        <table>
-            <tr>
-                <th>URI</th>
-                <td><code>https://w3id.org/geosrs/ellipsoid</code></td>
-            </tr>
-            <tr>
-                <th>Description</th>
-                <td>
-                    <p>The properties relates a datum to its ellipsoid definition</p>
-                </td>
-            </tr>
-            <tr>
-                <th>Domain(s)</th>
-                <td>
-                    <a href="#Datum1">Datum</a><sup class="sup-c" title="class">c</sup>
-                </td>
-            </tr>
-            <tr>
-                <th>Range(s)</th>
-                <td>
-                    <a href="https://w3id.org/geosrs/Ellipsoid">geosrs:Ellipsoid</a><sup class="sup-c" title="class">c</sup>
-                </td>
-            </tr>
-        </table>
-    </div>
-    <div class="entity property" id="SourceCRS">
-        <h3>Source CRS<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
-            <a href="#SourceCRS" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
-        </h3>
-        <table>
-            <tr>
-                <th>URI</th>
-                <td><code>https://w3id.org/geosrs/sourceCRS</code></td>
-            </tr>
-            <tr>
-                <th>Description</th>
-                <td>
-                    <p>The coordinate reference system associated to the data used as input of a given operation. Cf. ISO 19111:2007:2007-07, table 42, named association Source.</p>
-                </td>
-            </tr>
-            <tr>
-                <th>Domain(s)</th>
-                <td>
-                    <a href="#CoordinateOperation">Coordinate Operation</a><sup class="sup-c" title="class">c</sup>
-                </td>
-            </tr>
-            <tr>
-                <th>Range(s)</th>
-                <td>
-                    <a href="https://w3id.org/geosrs/CRS">geosrs:CRS</a><sup class="sup-c" title="class">c</sup>
-                </td>
-            </tr>
-        </table>
-    </div>
-    <div class="entity property" id="TargetCRS">
-        <h3>Target CRS<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
-            <a href="#TargetCRS" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
-        </h3>
-        <table>
-            <tr>
-                <th>URI</th>
-                <td><code>https://w3id.org/geosrs/targetCRS</code></td>
-            </tr>
-            <tr>
-                <th>Description</th>
-                <td>
-                    <p>The coordinate reference system associated to the data obtained as output of a given operation. Cf. ISO 19111:2007:2007-07, table 42, named association Target.</p>
-                </td>
-            </tr>
-            <tr>
-                <th>Domain(s)</th>
-                <td>
-                    <a href="#CoordinateOperation">Coordinate Operation</a><sup class="sup-c" title="class">c</sup>
-                </td>
-            </tr>
-            <tr>
-                <th>Range(s)</th>
-                <td>
-                    <a href="https://w3id.org/geosrs/CRS">geosrs:CRS</a><sup class="sup-c" title="class">c</sup>
-                </td>
-            </tr>
-        </table>
-    </div>
-</section>
-
-<section id="datatypeproperties">
-    <h2>Datatype Properties <span style="float:right; font-size:smaller;"><a href="">&uparrow;</a></span></h2>
-    <ul class="hlist">
-        <li><a href="#EPSGcode">EPSG code</a></li>
-        <li><a href="#semimajoraxis">semi major axis</a></li>
-        <li><a href="#semiminoraxis">semi minor axis</a></li>
-    </ul>
-    <div class="entity property" id="EPSGcode">
-        <h3>EPSG code<sup title="datatype property" class="sup-dp">dp</sup><span style="float:right; margin-right:10px; font-size:smaller;">
-            <a href="#EPSGcode" title="fragment link to here">#</a>&nbsp;<a href="#datatypeproperties" title="Datatype Properties Index">DPs</a></span>
-        </h3>
-        <table>
-            <tr>
-                <th>URI</th>
-                <td><code>https://w3id.org/geosrs/EPSGcode</code></td>
-            </tr>
-            <tr>
-                <th>Description</th>
-                <td>
-                    <p>Identifier of this resource in the EPSG Geodetic Parameter Dataset.</p>
-                </td>
-            </tr>
-            <tr>
-                <th>Range(s)</th>
-                <td>
-                    <a href="xsd:string">xsd:string</a><sup class="sup-c" title="class">c</sup>
-                </td>
-            </tr>
-        </table>
-    </div>
-    <div class="entity property" id="semimajoraxis">
-        <h3>semi major axis<sup title="datatype property" class="sup-dp">dp</sup><span style="float:right; margin-right:10px; font-size:smaller;">
-            <a href="#semimajoraxis" title="fragment link to here">#</a>&nbsp;<a href="#datatypeproperties" title="Datatype Properties Index">DPs</a></span>
-        </h3>
-        <table>
-            <tr>
-                <th>URI</th>
-                <td><code>https://w3id.org/geosrs/semiMajorAxis</code></td>
-            </tr>
-            <tr>
-                <th>Description</th>
-                <td>
-                    <p>Indicates the length of the semi major axis of an ellipsoid. Cf. ISO 19111:2007:2007-07, table 36, attribute length of semi-major axis.</p>
-                </td>
-            </tr>
-            <tr>
-                <th>Domain(s)</th>
-                <td>
-                    <a href="#Ellipsoid1">Ellipsoid</a><sup class="sup-c" title="class">c</sup>
-                </td>
-            </tr>
-            <tr>
-                <th>Range(s)</th>
-                <td>
-                    <a href="xsd:double">xsd:double</a><sup class="sup-c" title="class">c</sup>
-                </td>
-            </tr>
-        </table>
-    </div>
-    <div class="entity property" id="semiminoraxis">
-        <h3>semi minor axis<sup title="datatype property" class="sup-dp">dp</sup><span style="float:right; margin-right:10px; font-size:smaller;">
-            <a href="#semiminoraxis" title="fragment link to here">#</a>&nbsp;<a href="#datatypeproperties" title="Datatype Properties Index">DPs</a></span>
-        </h3>
-        <table>
-            <tr>
-                <th>URI</th>
-                <td><code>https://w3id.org/geosrs/semiMinorAxis</code></td>
-            </tr>
-            <tr>
-                <th>Description</th>
-                <td>
-                    <p>Indicates the length of the semi minor axis of an ellipsoid. Cf. ISO 19111:2007:2007-07, table 37, attribute length of semi-minor axis.</p>
-                </td>
-            </tr>
-            <tr>
-                <th>Domain(s)</th>
-                <td>
-                    <a href="#Ellipsoid1">Ellipsoid</a><sup class="sup-c" title="class">c</sup>
-                </td>
-            </tr>
-            <tr>
-                <th>Range(s)</th>
-                <td>
-                    <a href="xsd:double">xsd:double</a><sup class="sup-c" title="class">c</sup>
-                </td>
-            </tr>
-        </table>
-    </div>
-</section>
-
   
   <section id="namespaces">
     <h2>Namespaces <span style="float:right; font-size:smaller;"><a href="">&uparrow;</a></span></h2>

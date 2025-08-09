@@ -56,6 +56,11 @@ geosrs_datum:Danish1876 a owl:NamedIndividual,
     rdfs:label "Danish 1876"@en ;
     skos:definition "Danish 1876 Spheroid"@en .
 
+geosrs_datum:DatumEnsemble a owl:Class ;
+    rdfs:label "Datum Ensemble"@en ;
+    skos:definition """A collection of two or more datums (or if geodetic or vertical, a collection of two or more reference frames) that are realizations of one Conventional Reference System and which for all but the highest accuracy requirements may be considered to be insignificantly different from each other. Note: Within the datum ensemble every frame or datum is constrained to be a realization of the same reference system. Cf. ISO 19111:2019
+Geographic information — Referencing by coordinates."""@en .
+
 geosrs_datum:DynamicGeodeticReferenceFrame a owl:Class ;
     rdfs:label "Dynamic Geodetic Reference Frame"@en ;
     rdfs:subClassOf geosrs:GeodeticDatum ;
@@ -161,17 +166,17 @@ geosrs_datum:datumDefiningParameter a owl:ObjectProperty ;
     rdfs:range geosrs_datum:DefiningParameter ;
     skos:definition "Parameter used to define the parametric datum"@en .
 
-geosrs_datum:datumEnsemble a owl:ObjectProperty ;
-    rdfs:label "Datum Ensemble"@en ;
-    rdfs:domain geosrs:SingleCRS ;
-    rdfs:range geosrs_datum:DatumEnsemble ;
-    skos:definition "Indicates a single CRS referring to a collection of one or more datums (Datum Ensemble)"@en .
-
 geosrs_datum:eccentricity a owl:DatatypeProperty ;
     rdfs:label "Eccentricity"@en ;
     rdfs:domain geosrs:Ellipsoid ;
     rdfs:range <xsd:double> ;
     skos:definition "A measure of how much an ellipse deviates from a perfect circle."@en .
+
+geosrs_datum:ellipsoid a owl:ObjectProperty ;
+    rdfs:label "Ellipsoid"@en ;
+    rdfs:domain geosrs:Datum ;
+    rdfs:range geosrs:Ellipsoid ;
+    skos:definition "The properties relates a datum to its ellipsoid definition"@en .
 
 geosrs_datum:inverseFlattening a owl:DatatypeProperty ;
     rdfs:label "inverse flattening"@en ;
@@ -191,15 +196,22 @@ geosrs_datum:primeMeridian a owl:ObjectProperty ;
     rdfs:range geosrs:PrimeMeridian ;
     skos:definition "The prime meridian used by a geodetic datum. Cf. ISO 19111:2007:2007-07, table 34, association role primeMeridian."@en .
 
+geosrs_datum:semiMajorAxis a owl:DatatypeProperty ;
+    rdfs:label "semi major axis"@en ;
+    rdfs:domain geosrs:Ellipsoid ;
+    rdfs:range <xsd:double> ;
+    skos:definition "Indicates the length of the semi major axis of an ellipsoid. Cf. ISO 19111:2007:2007-07, table 36, attribute length of semi-major axis."@en .
+
+geosrs_datum:semiMinorAxis a owl:DatatypeProperty ;
+    rdfs:label "semi minor axis"@en ;
+    rdfs:domain geosrs:Ellipsoid ;
+    rdfs:range <xsd:double> ;
+    skos:definition "Indicates the length of the semi minor axis of an ellipsoid. Cf. ISO 19111:2007:2007-07, table 37, attribute length of semi-minor axis."@en .
+
 geosrs:datumdatum a owl:Ontology ;
     rdfs:label "SRS Ontology: Geosrs_datum"@en ;
     vann:preferredNamespacePrefix "geosrs_datum"^^xsd:string ;
     vann:preferredNamespaceUri "https://w3id.org/geosrs/datum/"^^xsd:anyURI .
-
-geosrs_datum:DatumEnsemble a owl:Class ;
-    rdfs:label "Datum Ensemble"@en ;
-    skos:definition """A collection of two or more datums (or if geodetic or vertical, a collection of two or more reference frames) that are realizations of one Conventional Reference System and which for all but the highest accuracy requirements may be considered to be insignificantly different from each other. Note: Within the datum ensemble every frame or datum is constrained to be a realization of the same reference system. Cf. ISO 19111:2019
-Geographic information — Referencing by coordinates."""@en .
 
 geosrs_datum:DefiningParameter a owl:Class ;
     rdfs:label "Defining Parameter"@en ;

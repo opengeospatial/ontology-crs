@@ -109,6 +109,12 @@ geosrs_cs:TemporalMeasureCoordinateSystem a owl:Class ;
     rdfs:subClassOf geosrs_cs:TemporalCoordinateSystem ;
     skos:definition "One-dimensional coordinate system used to record a time as a real number."@en .
 
+geosrs_cs:axis a owl:ObjectProperty ;
+    rdfs:label "Axis"@en ;
+    rdfs:domain geosrs:CoordinateSystem ;
+    rdfs:range geosrs:Axis ;
+    skos:definition "The property relates a coordinate system to one of its axis"@en .
+
 geosrs_cs:axisDirection a owl:ObjectProperty ;
     rdfs:label "Axis direction"@en ;
     rdfs:domain geosrs:Axis ;

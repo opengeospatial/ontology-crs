@@ -76,16 +76,23 @@ geosrs_co:derivingConversion a owl:ObjectProperty ;
     rdfs:range geosrs:Conversion ;
     skos:definition "Relates a derived CRS to a conversion"@en .
 
-geosrs_co:method a owl:ObjectProperty ;
-    rdfs:label "Method"@en ;
-    rdfs:domain geosrs:CRS ;
-    rdfs:range geosrs:CoordinateOperation .
-
 geosrs_co:parameter a owl:ObjectProperty ;
     rdfs:label "Parameter"@en ;
     rdfs:domain geosrs:Conversion ;
     rdfs:range geosrs:OperationParameter ;
     skos:definition "Value of the datum-defining parameter"@en .
+
+geosrs_co:sourceCRS a owl:ObjectProperty ;
+    rdfs:label "Source CRS"@en ;
+    rdfs:domain geosrs:CoordinateOperation ;
+    rdfs:range <https://w3id.org/geosrs/srs/CRS> ;
+    skos:definition "The coordinate reference system associated to the data used as input of a given operation. Cf. ISO 19111:2007:2007-07, table 42, named association Source."@en .
+
+geosrs_co:targetCRS a owl:ObjectProperty ;
+    rdfs:label "Target CRS"@en ;
+    rdfs:domain geosrs:CoordinateOperation ;
+    rdfs:range <https://w3id.org/geosrs/srs/CRS> ;
+    skos:definition "The coordinate reference system associated to the data obtained as output of a given operation. Cf. ISO 19111:2007:2007-07, table 42, named association Target."@en .
 
 geosrs:coco a owl:Ontology ;
     rdfs:label "SRS Ontology: Geosrs_co"@en ;

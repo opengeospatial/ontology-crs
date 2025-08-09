@@ -12,36 +12,25 @@
 
 geosrs:CartesianCoordinateSystem a owl:Class ;
     rdfs:label "Cartesian Coordinate System"@en ;
-    rdfs:subClassOf geosrs:SingleCRS ;
+    rdfs:subClassOf <https://w3id.org/geosrs/srs/SingleCRS> ;
     skos:definition "Coordinate system which gives the position of points relative to n mutually perpendicular axes. Cf. ISO 19111:2007:2007-07, tables 15 and 18."@en .
 
 geosrs:CoordinateSystemAxis a owl:Class ;
     rdfs:label "Coordinate System Axis"@en ;
     skos:definition "Axis relative to which a coordinate of a point is specified in a coordinate system. See ISO 19111:2007:2007-07, part 9.3, table 27 and annex B.2.2."@en .
 
-geosrs:EPSGcode a owl:DatatypeProperty ;
-    rdfs:label "EPSG code"@en ;
-    rdfs:range <xsd:string> ;
-    skos:definition "Identifier of this resource in the EPSG Geodetic Parameter Dataset."@en .
+geosrs:Ellipsoid a owl:Class ;
+    rdfs:label "Ellipsoid"@en ;
+    skos:definition "Surface formed by the rotation of an ellipse about its minor axis, defined by a semi-major axis and a flattening parameter and fairly geocentric. NB : It is a mathematical model of the geoid, i.e. the Earth without its relief. Many geodetic ellipsoids exist. Cf. ISO 19111:2007:2007-07, part 10.2.2, table 36 and annex B.3.2.3."@en .
 
 geosrs:EllipsoidalCoordinateSystem a owl:Class ;
     rdfs:label "Ellipsoidal Coordinate System"@en ;
     rdfs:subClassOf <https://w3id.org/geosrs/cs/OrthogonalCoordinateSystem> ;
     skos:definition "Coordinate system which gives the position is specified by geodetic latitude, geodetic longitude and (in the three-dimensional case) ellipsoidal height. Cf. ISO 19111:2007:2007-07, tables 15 and 20."@en .
 
-geosrs:EngineeringCRS a owl:Class ;
-    rdfs:label "Engineering Coordinate Reference System"@en ;
-    rdfs:subClassOf geosrs:CRS ;
-    skos:definition "A contextually local coordinate reference system which can be divided into two broad categories: - earth-fixed systems applied to engineering activities on or near the surface of the earth; - CRSs on moving platforms such as road vehicles, vessels, aircraft or spacecraft."@en .
-
 geosrs:GeodeticDatum a owl:Class ;
     rdfs:label "Geodetic Datum"@en ;
     skos:definition "Datum describing the relation of a two- or three-dimensional coordinate system to the Earth. Cf. ISO 19111:2007:2007-07, part 10.2, table 34 and annex B.3.2."@en .
-
-geosrs:GeographicCRS a owl:Class ;
-    rdfs:label "Geographic Coordinate Reference System"@en ;
-    rdfs:subClassOf geosrs:CRS ;
-    skos:definition "Coordinate Reference System that has a geodetic reference frame and an ellipsoidal coordinate system"@en .
 
 geosrs:LinearCoordinateSystem a owl:Class ;
     rdfs:label "Linear Coordinate System"@en ;
@@ -97,70 +86,14 @@ geosrs:VerticalDatum a owl:Class ;
     rdfs:subClassOf geosrs:Datum ;
     skos:definition "Datum describing the relation of gravity-related heights or depths to the Earth. Cf. ISO 19111:2007:2007-07, table 41 and annex B.3.3."@en .
 
-geosrs:axis a owl:ObjectProperty ;
-    rdfs:label "Axis"@en ;
-    rdfs:domain geosrs:CoordinateSystem ;
-    rdfs:range geosrs:Axis ;
-    skos:definition "The property relates a coordinate system to one of its axis"@en .
-
-geosrs:baseCRS a owl:ObjectProperty ;
-    rdfs:label "Base CRS"@en ;
-    rdfs:domain geosrs:ProjectedCRS ;
-    rdfs:range geosrs:GeodeticCRS ;
-    skos:definition "The geodetic coordinate reference system on which a projected coordinate reference system is based. Cf. ISO 19111:2007:2007-07, table 11, association role baseCRS."@en .
-
-geosrs:coordinateSystem a owl:ObjectProperty ;
-    rdfs:label "Coordinate system"@en ;
-    rdfs:domain geosrs:CRS ;
-    rdfs:range geosrs:CoordinateSystem ;
-    skos:definition "The property relates a coordinate reference system to its coordinate system"@en .
-
-geosrs:datum a owl:ObjectProperty ;
-    rdfs:label "Datum"@en ;
-    rdfs:domain geosrs:CRS ;
-    rdfs:range geosrs:Datum ;
-    skos:definition "The property relates a coordinate reference system to a datum"@en .
-
-geosrs:domainOfValidity a owl:ObjectProperty ;
-    rdfs:label "Domain of validity"@en ;
-    rdfs:domain geosrs:CRS ;
-    rdfs:range <https://w3id.org/geosrs/srs/AreaOfUse> ;
-    skos:definition "Geographic area or time interval in which the referring object is valid. Cf. ISO 19111:2007:2007-07, tables 4, 33 and 42, attribute domainOfValidity."@en .
-
-geosrs:ellipsoid a owl:ObjectProperty ;
-    rdfs:label "Ellipsoid"@en ;
-    rdfs:domain geosrs:Datum ;
-    rdfs:range geosrs:Ellipsoid ;
-    skos:definition "The properties relates a datum to its ellipsoid definition"@en .
-
-geosrs:semiMajorAxis a owl:DatatypeProperty ;
-    rdfs:label "semi major axis"@en ;
-    rdfs:domain geosrs:Ellipsoid ;
-    rdfs:range <xsd:double> ;
-    skos:definition "Indicates the length of the semi major axis of an ellipsoid. Cf. ISO 19111:2007:2007-07, table 36, attribute length of semi-major axis."@en .
-
-geosrs:semiMinorAxis a owl:DatatypeProperty ;
-    rdfs:label "semi minor axis"@en ;
-    rdfs:domain geosrs:Ellipsoid ;
-    rdfs:range <xsd:double> ;
-    skos:definition "Indicates the length of the semi minor axis of an ellipsoid. Cf. ISO 19111:2007:2007-07, table 37, attribute length of semi-minor axis."@en .
-
-geosrs:sourceCRS a owl:ObjectProperty ;
-    rdfs:label "Source CRS"@en ;
-    rdfs:domain geosrs:CoordinateOperation ;
-    rdfs:range geosrs:CRS ;
-    skos:definition "The coordinate reference system associated to the data used as input of a given operation. Cf. ISO 19111:2007:2007-07, table 42, named association Source."@en .
-
-geosrs:targetCRS a owl:ObjectProperty ;
-    rdfs:label "Target CRS"@en ;
-    rdfs:domain geosrs:CoordinateOperation ;
-    rdfs:range geosrs:CRS ;
-    skos:definition "The coordinate reference system associated to the data obtained as output of a given operation. Cf. ISO 19111:2007:2007-07, table 42, named association Target."@en .
-
 geosrs:Conversion a owl:Class ;
     rdfs:label "Conversion"@en ;
     rdfs:subClassOf geosrs:CoordinateOperation ;
     skos:definition "Coordinate operation in which both coordinate reference systems are based on the same datum. Cf. ISO 19111:2007:2007-07, table 45 and annex B.4.2."@en .
+
+geosrs:Datum a owl:Class ;
+    rdfs:label "Datum"@en ;
+    skos:definition "Parameter or set of parameters that define the position of the origin, the scale and the orientation of a coordinate system. Cf. ISO 19111:2007:2007-07, part 10.1, table 33 and annex B.3."@en .
 
 geosrs:GeneralOperationParameter a owl:Class ;
     rdfs:label "General Operation Parameter"@en ;
@@ -169,11 +102,6 @@ geosrs:GeneralOperationParameter a owl:Class ;
 geosrs:GeneralParameterValue a owl:Class ;
     rdfs:label "General Parameter Value"@en ;
     skos:definition "Parameter value or group of parameter values"@en .
-
-geosrs:GeodeticCRS a owl:Class ;
-    rdfs:label "Geodetic Coordinate Reference System"@en ;
-    rdfs:subClassOf geosrs:CRS ;
-    skos:definition "Coordinate Reference System associated with a geodetic datum. Cf. ISO 19111:2007:2007-07, part 8.2.2.a, table 10 and annex B.1.2.1.a."@en .
 
 geosrs:OperationMethod a owl:Class ;
     rdfs:label "Operation Method"@en ;
@@ -184,29 +112,6 @@ geosrs:OrdinalCoordinateSystem a owl:Class ;
     rdfs:subClassOf geosrs:CoordinateSystem ;
     skos:definition "n-dimensional coordinate system in which every axis uses integers."@en .
 
-geosrs:ProjectedCRS a owl:Class ;
-    rdfs:label "Projected Coordinate Reference System"@en ;
-    rdfs:subClassOf geosrs:CRS ;
-    skos:definition "Coordinate Reference System derived from a two-dimensional geodetic coordinate reference system by applying a map projection. Cf. ISO 19111:2007:2007-07, part 8.2.3.b, table 11 and annex B.1.2.3."@en .
-
-geosrs:ReferenceSystem a owl:Class ;
-    rdfs:label "Reference System"@en ;
-    skos:definition "An abstract coordinate system, whose origin, orientation and scale are specified in physical space. It is based on a set of reference points, defined as geometric points whose position is identified physically and mathematically."@en .
-
-geosrs:SingleCRS a owl:Class ;
-    rdfs:label "Single Coordinate Reference System"@en ;
-    rdfs:subClassOf geosrs:CRS ;
-    skos:definition "Coordinate reference system consisting of one coordinate system and one datum. Cf. ISO 19111:2007:2007-07, table 5."@en .
-
-geosrs:SpatialReferenceSystem a owl:Class ;
-    rdfs:label "Spatial Reference System"@en ;
-    rdfs:subClassOf geosrs:ReferenceSystem ;
-    skos:definition "A spatial reference system (SRS) is a system for establishing spatial position. A spatial reference system can use geographic identifiers (place names, for example), coordinates (in which case it is a coordinate reference system), or identifiers with structured geometry (in which case it is a discrete global grid system)."@en .
-
-geosrs:Ellipsoid a owl:Class ;
-    rdfs:label "Ellipsoid"@en ;
-    skos:definition "Surface formed by the rotation of an ellipse about its minor axis, defined by a semi-major axis and a flattening parameter and fairly geocentric. NB : It is a mathematical model of the geoid, i.e. the Earth without its relief. Many geodetic ellipsoids exist. Cf. ISO 19111:2007:2007-07, part 10.2.2, table 36 and annex B.3.2.3."@en .
-
 geosrs:CoordinateOperation a owl:Class ;
     rdfs:label "Coordinate Operation"@en ;
     rdfs:subClassOf geosrs:OperationMethod ;
@@ -215,14 +120,4 @@ geosrs:CoordinateOperation a owl:Class ;
 geosrs:CoordinateSystem a owl:Class ;
     rdfs:label "Coordinate System"@en ;
     skos:definition "Set of axes that spans a given coordinate space and of mathematical rules for specifying how coordinates are to be assigned to points. Cf. ISO 19111:2007:2007-07, part 9.2, table 17 and annex B.2."@en .
-
-geosrs:Datum a owl:Class ;
-    rdfs:label "Datum"@en ;
-    skos:definition "Parameter or set of parameters that define the position of the origin, the scale and the orientation of a coordinate system. Cf. ISO 19111:2007:2007-07, part 10.1, table 33 and annex B.3."@en .
-
-geosrs:CRS a owl:Class ;
-    rdfs:label "Coordinate Reference System"@en ;
-    rdfs:subClassOf geosrs:SpatialReferenceSystem ;
-    owl:disjointWith geosrs:Datum ;
-    skos:definition "Depending on the spatial dimension of coordinates (1D, 2D, 3D), this piece of metadata is used for specifying the elements of definition associated to a given set of coordinates: its datum, its ellipsoid, its prime meridian, the type of coordinates (geocentric, geographic, projected,...), the coordinates units of measure, when appropriate the cartographic projection used, the vertical coordinate reference system."@en .
 

@@ -325,7 +325,7 @@
     "PolyconicProjection": "geosrs_projection:PolyconicProjection",
     "PolyhedralProjection": "geosrs_projection:PolyhedralProjection",
     "PrimeMeridian": "geosrs:PrimeMeridian",
-    "Projected": "geosrs:ProjectedCRS",
+    "Projected": "geosrs_srs:ProjectedCRS",
     "ProjectedCRS": "geosrs:ProjectedCRS",
     "Projection": "geosrs_projection:Projection",
     "PseudoAzimuthalProjection": "geosrs_projection:PseudoAzimuthalProjection",
@@ -451,7 +451,13 @@
       "@type": "@vocab"
     },
     "aust_SA": "geosrs_datum:AustralianNationalSpheroid",
-    "axis": "geosrs:axis",
+    "axis": {
+      "@context": {
+        "@id": "axis"
+      },
+      "@id": "geosrs:axis",
+      "@type": "@vocab"
+    },
     "axisDirection": {
       "@context": {
         "@id": "axisDirection"
@@ -470,7 +476,6 @@
       "@id": "geosrs:baseCRS",
       "@type": "@vocab"
     },
-    "base_c_r_s": "geosrs:baseCRS",
     "base_crs": {
       "@context": {
         "@id": "baseCRS"
@@ -503,8 +508,20 @@
       "@id": "geosrs:coordinateSystem",
       "@type": "@vocab"
     },
-    "coordinate_system": "geosrs:coordinateSystem",
-    "datum": "geosrs:datum",
+    "coordinate_system": {
+      "@context": {
+        "@id": "coordinateSystem"
+      },
+      "@id": "geosrs:coordinateSystem",
+      "@type": "@vocab"
+    },
+    "datum": {
+      "@context": {
+        "@id": "datum"
+      },
+      "@id": "geosrs:datum",
+      "@type": "@vocab"
+    },
     "datumEnsemble": {
       "@context": {
         "@id": "datumEnsemble"
@@ -550,13 +567,17 @@
       "@id": "geosrs:domainOfValidity",
       "@type": "@vocab"
     },
-    "domain_of_validity": "geosrs:domainOfValidity",
     "down": "geosrs_cs:down",
     "drilling": "geosrs_application:Drilling",
-    "e_p_s_gcode": "geosrs:EPSGcode",
     "east": "geosrs_cs:east",
     "eccentricity": "geosrs:eccentricity",
-    "ellipsoid": "geosrs:ellipsoid",
+    "ellipsoid": {
+      "@context": {
+        "@id": "ellipsoid"
+      },
+      "@id": "geosrs:ellipsoid",
+      "@type": "@vocab"
+    },
     "ellipsoidal": "geosrs:EllipsoidalCoordinateSystem",
     "engineering": "geosrs_application:OffshoreEngineering",
     "entityType": {
@@ -674,7 +695,6 @@
       "@id": "geosrs:sourceCRS",
       "@type": "@vocab"
     },
-    "source_c_r_s": "geosrs:sourceCRS",
     "source_crs": {
       "@context": {
         "@id": "sourceCRS"
@@ -698,7 +718,6 @@
       "@id": "geosrs:targetCRS",
       "@type": "@vocab"
     },
-    "target_c_r_s": "geosrs:targetCRS",
     "target_crs": {
       "@context": {
         "@id": "targetCRS"

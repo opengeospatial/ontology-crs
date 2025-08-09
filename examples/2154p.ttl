@@ -35,12 +35,12 @@
                 [ rdfs:label "Easting at false origin" ;
                     om:hasUnit om:metre ;
                     rdf:value 700000 ],
-                [ rdfs:label "Longitude of false origin" ;
-                    om:hasUnit om:degree ;
-                    rdf:value 3 ],
                 [ rdfs:label "Latitude of false origin" ;
                     om:hasUnit om:degree ;
                     rdf:value 4.65e+01 ],
+                [ rdfs:label "Longitude of false origin" ;
+                    om:hasUnit om:degree ;
+                    rdf:value 3 ],
                 [ rdfs:label "Northing at false origin" ;
                     om:hasUnit om:metre ;
                     rdf:value 6600000 ] ] ;

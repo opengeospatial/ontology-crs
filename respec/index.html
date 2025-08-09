@@ -1382,15 +1382,15 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 </dd>
 <dt class="hdlist1">requirement</dt>
 <dd>
+<p>/req/Celestial_Coordinate_Systems</p>
+</dd>
+<dt class="hdlist1">requirement</dt>
+<dd>
 <p>/req/Orthogonal_Coordinate_Systems</p>
 </dd>
 <dt class="hdlist1">requirement</dt>
 <dd>
 <p>/req/3D_Coordinate_Systems</p>
-</dd>
-<dt class="hdlist1">requirement</dt>
-<dd>
-<p>/req/Celestial_Coordinate_Systems</p>
 </dd>
 <dt class="hdlist1">requirement</dt>
 <dd>
@@ -1445,14 +1445,38 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <div class="title">Example 12. Celestial Coordinate Systems</div>
 <div class="content">
 <p class="paragraph">
-<p>Implementations shall allow the RDFS classes <a href="#_class_geosrseclipticcoordinatesystem"><code>geosrs:EclipticCoordinateSystem</code></a>, <a href="#_class_geosrsequatorialcoordinatesystem"><code>geosrs:EquatorialCoordinateSystem</code></a>, <a href="#_class_geosrsgalacticcoordinatesystem"><code>geosrs:GalacticCoordinateSystem</code></a>, <a href="#_class_geosrshorizontalcoordinatesystem"><code>geosrs:HorizontalCoordinateSystem</code></a>, <a href="#_class_geosrsperifocalcoordinatesystem"><code>geosrs:PerifocalCoordinateSystem</code></a>, <a href="#_class_geosrssupergalacticcs"><code>geosrs:SuperGalacticCS</code></a> to be used in SPARQL graph patterns.</p>
+<p>Implementations shall allow the RDFS classes <a href="#_class_geosrsbarycentriccoordinatesystem"><code>geosrs:BarycentricCoordinateSystem</code></a>, <a href="#_class_geosrseclipticcoordinatesystem"><code>geosrs:EclipticCoordinateSystem</code></a>, <a href="#_class_geosrsequatorialcoordinatesystem"><code>geosrs:EquatorialCoordinateSystem</code></a>, <a href="#_class_geosrsgalacticcoordinatesystem"><code>geosrs:GalacticCoordinateSystem</code></a>, <a href="#_class_geosrshorizontalcoordinatesystem"><code>geosrs:HorizontalCoordinateSystem</code></a>, <a href="#_class_geosrsperifocalcoordinatesystem"><code>geosrs:PerifocalCoordinateSystem</code></a>, <a href="#_class_geosrssupergalacticcs"><code>geosrs:SuperGalacticCS</code></a> to be used in SPARQL graph patterns.</p>
 </p>
 </div>
 </aside>
 <section class="sect4">
+<h5 id="_class_geosrsbarycentriccoordinatesystem">Class: geosrs:BarycentricCoordinateSystem</h5>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Table 40. geosrs:BarycentricCoordinateSystem</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/cs/BarycentricCoordinateSystem">https://w3id.org/geosrs/cs/BarycentricCoordinateSystem</a></p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Definition</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">A coordinate system in which the location of a point is specified by reference to a simplex (a triangle for points in a plane, a tetrahedron for points in three-dimensional space, etc.)</p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/cs/BarycentricCoordinateSystem">BarycentricCoordinateSystem</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sect4">
 <h5 id="_class_geosrseclipticcoordinatesystem">Class: geosrs:EclipticCoordinateSystem</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 40. geosrs:EclipticCoordinateSystem</caption>
+<caption class="title">Table 41. geosrs:EclipticCoordinateSystem</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -1476,7 +1500,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrsequatorialcoordinatesystem">Class: geosrs:EquatorialCoordinateSystem</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 41. geosrs:EquatorialCoordinateSystem</caption>
+<caption class="title">Table 42. geosrs:EquatorialCoordinateSystem</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -1500,7 +1524,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrsgalacticcoordinatesystem">Class: geosrs:GalacticCoordinateSystem</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 42. geosrs:GalacticCoordinateSystem</caption>
+<caption class="title">Table 43. geosrs:GalacticCoordinateSystem</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -1524,7 +1548,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrshorizontalcoordinatesystem">Class: geosrs:HorizontalCoordinateSystem</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 43. geosrs:HorizontalCoordinateSystem</caption>
+<caption class="title">Table 44. geosrs:HorizontalCoordinateSystem</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -1548,7 +1572,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrsperifocalcoordinatesystem">Class: geosrs:PerifocalCoordinateSystem</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 44. geosrs:PerifocalCoordinateSystem</caption>
+<caption class="title">Table 45. geosrs:PerifocalCoordinateSystem</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -1572,7 +1596,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrssupergalacticcs">Class: geosrs:SuperGalacticCS</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 45. geosrs:SuperGalacticCS</caption>
+<caption class="title">Table 46. geosrs:SuperGalacticCS</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -1611,14 +1635,14 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <div class="title">Example 14. Coordinate System Types</div>
 <div class="content">
 <p class="paragraph">
-<p>Implementations shall allow the RDFS classes <a href="#_class_geosrs1dcoordinatesystem"><code>geosrs:1DCoordinateSystem</code></a>, <a href="#_class_geosrs3dcoordinatesystem"><code>geosrs:3DCoordinateSystem</code></a>, <a href="#_class_geosrsaffinecoordinatesystem"><code>geosrs:AffineCoordinateSystem</code></a>, <a href="#_class_geosrsbarycentriccoordinatesystem"><code>geosrs:BarycentricCoordinateSystem</code></a>, <a href="#Class: geosrs:CartesianCoordinateSystem"><code>geosrs:CartesianCoordinateSystem</code></a>, <a href="#_class_geosrscelestialcoordinatesystem"><code>geosrs:CelestialCoordinateSystem</code></a>, <a href="#_class_geosrscurvilinearcoordinatesystem"><code>geosrs:CurvilinearCoordinateSystem</code></a>, <a href="#_class_geosrsengineeringcoordinatesystem"><code>geosrs:EngineeringCoordinateSystem</code></a>, <a href="#_class_geosrsgeodeticcoordinatesystem"><code>geosrs:GeodeticCoordinateSystem</code></a>, <a href="#_class_geosrsgridcoordinatesystem"><code>geosrs:GridCoordinateSystem</code></a>, <a href="#_class_geosrshexagonalcoordinatesystem"><code>geosrs:HexagonalCoordinateSystem</code></a>, <a href="#_class_geosrslocalcoordinatesystem"><code>geosrs:LocalCoordinateSystem</code></a>, <a href="#_class_geosrsobliquecoordinatesystem"><code>geosrs:ObliqueCoordinateSystem</code></a>, <a href="#Class: geosrs:OrdinalCoordinateSystem"><code>geosrs:OrdinalCoordinateSystem</code></a>, <a href="#_class_geosrsplanarcoordinatesystem"><code>geosrs:PlanarCoordinateSystem</code></a>, <a href="#Class: geosrs:PolarCoordinateSystem"><code>geosrs:PolarCoordinateSystem</code></a> to be used in SPARQL graph patterns.</p>
+<p>Implementations shall allow the RDFS classes <a href="#_class_geosrs1dcoordinatesystem"><code>geosrs:1DCoordinateSystem</code></a>, <a href="#_class_geosrs3dcoordinatesystem"><code>geosrs:3DCoordinateSystem</code></a>, <a href="#_class_geosrsaffinecoordinatesystem"><code>geosrs:AffineCoordinateSystem</code></a>, <a href="#Class: geosrs:CartesianCoordinateSystem"><code>geosrs:CartesianCoordinateSystem</code></a>, <a href="#_class_geosrscelestialcoordinatesystem"><code>geosrs:CelestialCoordinateSystem</code></a>, <a href="#_class_geosrscurvilinearcoordinatesystem"><code>geosrs:CurvilinearCoordinateSystem</code></a>, <a href="#_class_geosrsengineeringcoordinatesystem"><code>geosrs:EngineeringCoordinateSystem</code></a>, <a href="#_class_geosrsgeodeticcoordinatesystem"><code>geosrs:GeodeticCoordinateSystem</code></a>, <a href="#_class_geosrsgridcoordinatesystem"><code>geosrs:GridCoordinateSystem</code></a>, <a href="#_class_geosrshexagonalcoordinatesystem"><code>geosrs:HexagonalCoordinateSystem</code></a>, <a href="#_class_geosrslocalcoordinatesystem"><code>geosrs:LocalCoordinateSystem</code></a>, <a href="#_class_geosrsobliquecoordinatesystem"><code>geosrs:ObliqueCoordinateSystem</code></a>, <a href="#Class: geosrs:OrdinalCoordinateSystem"><code>geosrs:OrdinalCoordinateSystem</code></a>, <a href="#_class_geosrsplanarcoordinatesystem"><code>geosrs:PlanarCoordinateSystem</code></a>, <a href="#Class: geosrs:PolarCoordinateSystem"><code>geosrs:PolarCoordinateSystem</code></a> to be used in SPARQL graph patterns.</p>
 </p>
 </div>
 </aside>
 <section class="sect4">
 <h5 id="_class_geosrs1dcoordinatesystem">Class: geosrs:1DCoordinateSystem</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 46. geosrs:1DCoordinateSystem</caption>
+<caption class="title">Table 47. geosrs:1DCoordinateSystem</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -1642,7 +1666,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrs3dcoordinatesystem">Class: geosrs:3DCoordinateSystem</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 47. geosrs:3DCoordinateSystem</caption>
+<caption class="title">Table 48. geosrs:3DCoordinateSystem</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -1666,7 +1690,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrsaffinecoordinatesystem">Class: geosrs:AffineCoordinateSystem</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 48. geosrs:AffineCoordinateSystem</caption>
+<caption class="title">Table 49. geosrs:AffineCoordinateSystem</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -1683,30 +1707,6 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <tr>
   <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
   <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/cs/AffineCoordinateSystem">AffineCoordinateSystem</a></p></td>
-</tr>
-</tbody>
-</table>
-</section>
-<section class="sect4">
-<h5 id="_class_geosrsbarycentriccoordinatesystem">Class: geosrs:BarycentricCoordinateSystem</h5>
-<table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 49. geosrs:BarycentricCoordinateSystem</caption>
-<colgroup>
-<col style="width: 50%;">
-<col style="width: 50%;">
-</colgroup>
-<tbody>
-<tr>
-  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
-  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/cs/BarycentricCoordinateSystem">https://w3id.org/geosrs/cs/BarycentricCoordinateSystem</a></p></td>
-</tr>
-<tr>
-  <td class="tableblock halign-left valign-top"><p class="tableblock">Definition</p></td>
-  <td class="tableblock halign-left valign-top"><p class="tableblock">A coordinate system in which the location of a point is specified by reference to a simplex (a triangle for points in a plane, a tetrahedron for points in three-dimensional space, etc.)</p></td>
-</tr>
-<tr>
-  <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
-  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/cs/BarycentricCoordinateSystem">BarycentricCoordinateSystem</a></p></td>
 </tr>
 </tbody>
 </table>
@@ -7286,7 +7286,7 @@ Actual References:
 </section>
 <div id="footer">
 <div id="footer-text">
-Last updated 2025-08-09 15:51:25 UTC
+Last updated 2025-08-09 16:23:19 UTC
 </div>
 </div>
 </body>

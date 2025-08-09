@@ -596,6 +596,7 @@ for ad in moduleToAdoc:
 					reqtext=reqtext.replace(", <<"+str(last), " and <<"+str(last))
 				reqtext+=" to be used in SPARQL graph patterns."
 				f.write("==== "+str(req)+"\n\n[requirement,identifier=\"/req/"+str(req).replace(" ","_")+"\"]\n\n."+str(req)+"\n====\n"+str(reqtext)+"\n====\n\n")
+                print(str(ad)+" - "+str(req))
 				print(moduleToRequirements[ad][req])
 				for cls in moduleToRequirements[ad][req]:
 					#print(moduleToAdoc[ad])

@@ -4972,7 +4972,7 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 </clause>
 </clause>
 
-<clause id="_e637c86b-8309-01f7-4644-c35b6fc0b3ba" obligation="normative">
+<clause id="_29d1923b-d4fd-4ac7-652a-110c17848c11" obligation="normative">
 <title id="_7a3c0154-98ac-e836-4598-456590081406">Common Instances</title>
 <p id="_26e87688-b135-9dfb-a9bf-8702510fa98f" anchor="instances">This clause establishes common instances which are needed in CRS specifications as Requirement class <strong>INSTANCES</strong>, with IRI <tt>/req/instances</tt>, which has a corresponding Conformance Class, <strong>INSTANCES</strong>, with IRI <tt>/conf/instances</tt>.</p>
 
@@ -4988,327 +4988,451 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 </dl></description>
 </requirement>
 
-<clause id="_1afb5623-39a1-a97c-78e7-cef39d370d85" obligation="normative">
+<clause id="_35c452d2-383d-8c7b-0257-f3fe83c89038" obligation="normative">
 <title id="_5dd48741-84a1-0a61-50b9-1bb900b42efe">Coordinate System Axis</title>
 <requirement id="_88127acf-48c7-647c-3966-62440e3ccd41" model="ogc" anchor="/req/Coordinate_System_Axis">
 <title>Coordinate System Axis</title> 
 <identifier>/req/Coordinate_System_Axis</identifier><description><p id="_5b8e006e-adc3-f232-722f-b9d9a3c1e330">Implementations shall allow the RDFS classes <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>down</referenceFrom></locality></localityStack><display-text>geosrs:down</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>east</referenceFrom></locality></localityStack><display-text>geosrs:east</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>north</referenceFrom></locality></localityStack><display-text>geosrs:north</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>south</referenceFrom></locality></localityStack><display-text>geosrs:south</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>up</referenceFrom></locality></localityStack><display-text>geosrs:up</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>west</referenceFrom></locality></localityStack><display-text>geosrs:west</display-text></eref> to be used in SPARQL graph patterns.</p></description>
 </requirement>
 
-<clause id="_6970e570-3022-bd42-1d5a-8beff10095c1" obligation="normative">
+<clause id="_4087bfc9-1cd9-37c3-2d4a-d5953d33f3e2" obligation="normative">
 <title id="_287c2bbb-b13b-8b1b-fa6e-b5cc83ea3419">Instance: geosrs:down</title>
-<table id="_541674a8-8747-63f1-76da-bf718cacd7a2"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<table id="_77b86d18-a408-ab91-9246-c9b46806b13c"><colgroup><col width="50%"/><col width="50%"/></colgroup>
 <name id="_ce05317c-9f8b-3a5f-924b-05eef0b9a68f">geosrs:down</name>
-<tbody><tr id="_39777e82-9197-fcb7-7e0b-c8723b3aba69"><td id="_c306367e-ede3-f470-339d-7d26fdde1537" valign="middle" align="left">URI</td>
-<td id="_550db0bc-3b9f-2e7b-e331-7a9feb236a69" valign="middle" align="left"><link target="https://w3id.org/geosrs/down"/></td>
+<tbody><tr id="_6f6be3d7-2c69-325e-e2d9-f47af587097e"><td id="_8e12d529-5cb9-f37c-af8b-cfb0d579b473" valign="middle" align="left">URI</td>
+<td id="_3cd7da21-9df0-768e-e401-b893a8ae53d8" valign="middle" align="left"><link target="https://w3id.org/geosrs/down"/></td>
+</tr><tr id="_4da1d493-b406-504e-bd94-4b028fbe05a8"><td id="_77a83d31-e8c8-6783-c725-bebca1f7abc0" valign="middle" align="left">Type</td>
+<td id="_f645b913-dbf0-3266-4411-feb5be5bc41e" valign="middle" align="left"><link target="https://w3id.org/geosrs/AxisDirection">geosrs:AxisDirection</link></td>
+</tr><tr id="_b022cf83-7a40-1a41-b17a-761ee266059c"><td id="_57d3a046-e149-0e64-34e0-4b8396eda341" valign="middle" align="left">Definition</td>
+<td id="_c710ea1d-0a9a-1bd3-8c4d-385b13a89044" valign="middle" align="left">Downwards axis direction</td>
 </tr></tbody>
 </table>
 </clause>
 
-<clause id="_277bd5d5-a18f-7e4c-6d05-9ac8b0e8434f" obligation="normative">
+<clause id="_117f9282-a51f-b932-5478-e6cc727253e7" obligation="normative">
 <title id="_26fa6cac-4260-0a2f-b0b3-5d63982ef5bc">Instance: geosrs:east</title>
-<table id="_b8b758ff-a8b1-c2c2-1011-147c38050b94"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<table id="_6121ea81-5f37-4ea2-d328-9e1bd5722ab4"><colgroup><col width="50%"/><col width="50%"/></colgroup>
 <name id="_e876c716-5425-c18d-da2d-153b9baa9247">geosrs:east</name>
-<tbody><tr id="_d2dd01bb-e24e-2baf-3128-9c05263babbf"><td id="_8fdcb3a2-82d9-37d2-dde9-c5db5c5acb27" valign="middle" align="left">URI</td>
-<td id="_c7d35bc3-58a7-3986-8bf6-c65bae75d15e" valign="middle" align="left"><link target="https://w3id.org/geosrs/east"/></td>
+<tbody><tr id="_0825fc10-9e73-ef3a-3444-5f4da16115e5"><td id="_97514461-dee8-d68a-bc4b-605c6c459031" valign="middle" align="left">URI</td>
+<td id="_6064ce8d-2f52-0dee-a694-ccef1cc83835" valign="middle" align="left"><link target="https://w3id.org/geosrs/east"/></td>
+</tr><tr id="_3cfe55e9-b543-0cd1-f7ed-e1f35c4dea77"><td id="_7a3cd2ea-608f-c2e3-ed6e-952ebb703e86" valign="middle" align="left">Type</td>
+<td id="_5054efbe-1463-f880-8bf6-ebed339119d3" valign="middle" align="left"><link target="https://w3id.org/geosrs/AxisDirection">geosrs:AxisDirection</link></td>
+</tr><tr id="_a93cac2b-0164-0c21-c007-f22d9f2c496e"><td id="_f88648ae-620f-bfe4-7edd-ff71cc42dba0" valign="middle" align="left">Definition</td>
+<td id="_1c8bd52f-7d36-652b-0960-626e5ecdea31" valign="middle" align="left">east axis direction</td>
 </tr></tbody>
 </table>
 </clause>
 
-<clause id="_b7c66f24-42e6-2e72-446a-eec9369b69ca" obligation="normative">
+<clause id="_236573e2-7490-1551-83e0-97119cbeaa50" obligation="normative">
 <title id="_1ac82008-6831-6d7a-6abd-68e736a22bc8">Instance: geosrs:north</title>
-<table id="_44233c2c-f930-98d9-958c-9e065951906b"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<table id="_1bec244a-8a90-b97d-ab83-891e673636d6"><colgroup><col width="50%"/><col width="50%"/></colgroup>
 <name id="_a807ae33-094f-8c94-5486-509cc6768c4e">geosrs:north</name>
-<tbody><tr id="_7dbb3577-8919-7a85-b4cc-eb43437eb03a"><td id="_df6390d3-4064-40b6-79ec-3e2c6e0b9e33" valign="middle" align="left">URI</td>
-<td id="_f564622a-19a5-1445-3697-6f77c6a2c07b" valign="middle" align="left"><link target="https://w3id.org/geosrs/north"/></td>
+<tbody><tr id="_8a101547-f997-61d6-b76e-3248f5e1214e"><td id="_b4727f9b-e23f-40ec-c597-2713d04e6356" valign="middle" align="left">URI</td>
+<td id="_808b8e53-31ef-e6e0-f997-d51e1ab4da57" valign="middle" align="left"><link target="https://w3id.org/geosrs/north"/></td>
+</tr><tr id="_73a9e810-6235-b6d0-3566-68fc78ecebe9"><td id="_e39e78de-1bad-4fad-b7a7-8288397a5f91" valign="middle" align="left">Type</td>
+<td id="_756f6aea-dde6-fd52-840f-6415cfae241d" valign="middle" align="left"><link target="https://w3id.org/geosrs/AxisDirection">geosrs:AxisDirection</link></td>
+</tr><tr id="_0c4d33ed-047b-4569-34cd-863532b7af76"><td id="_6e39124a-80ed-796c-6793-8a93f02aa22a" valign="middle" align="left">Definition</td>
+<td id="_6cd1405c-7277-2c8c-9e07-b6ad27cae05e" valign="middle" align="left">North axis direction</td>
 </tr></tbody>
 </table>
 </clause>
 
-<clause id="_416e06cd-c1d2-c1d3-54dc-5ed0d8854d09" obligation="normative">
+<clause id="_e68e1199-65df-d31a-a2de-65346fe40821" obligation="normative">
 <title id="_966b95aa-e845-061d-e7cd-6e0b0f7e8c97">Instance: geosrs:south</title>
-<table id="_54e8a78a-02c4-106e-1d52-260706aae3de"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<table id="_0dcb561d-6e91-95a2-c281-309d62b00865"><colgroup><col width="50%"/><col width="50%"/></colgroup>
 <name id="_ee4de9c2-484f-a1d9-fe9e-df5e2c8eab32">geosrs:south</name>
-<tbody><tr id="_3d8b0901-502d-dcdb-1d5f-ec724e9d05ea"><td id="_fa5b2083-2e55-033e-0815-052ff05deb8c" valign="middle" align="left">URI</td>
-<td id="_2c43b7c0-2741-c963-09f9-c750fd31bdb3" valign="middle" align="left"><link target="https://w3id.org/geosrs/south"/></td>
+<tbody><tr id="_1b8dace0-8048-bbea-5828-e8acecd84dff"><td id="_fbbb1581-ccdc-0832-238d-1e034924944f" valign="middle" align="left">URI</td>
+<td id="_0356d454-9a98-119e-2194-95032bc85f8e" valign="middle" align="left"><link target="https://w3id.org/geosrs/south"/></td>
+</tr><tr id="_60d86219-846b-cb5d-821c-d51648ad63f2"><td id="_b3d288f8-0394-cff0-0515-171a79ba7527" valign="middle" align="left">Type</td>
+<td id="_8dd45b27-8e7e-fc15-3e68-9779b1312d19" valign="middle" align="left"><link target="https://w3id.org/geosrs/AxisDirection">geosrs:AxisDirection</link></td>
+</tr><tr id="_6ca78197-3d29-6b61-b572-aa2dc018330f"><td id="_195423db-a57b-ea3b-f0c9-1118c4162f64" valign="middle" align="left">Definition</td>
+<td id="_c5f25e5a-454c-bcee-e5bb-9e81747233cc" valign="middle" align="left">South axis direction</td>
 </tr></tbody>
 </table>
 </clause>
 
-<clause id="_d75ba65f-2223-9c27-2558-bb7d5c95a09e" obligation="normative">
+<clause id="_e4524140-704a-376b-a2fd-e46cfe824335" obligation="normative">
 <title id="_56c61896-1d64-e0ad-abf7-a12d95acbaa4">Instance: geosrs:up</title>
-<table id="_89164a1b-c14d-a1db-a0d4-e0cedfb48da7"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<table id="_f65e4921-0fbb-7ea5-0f9a-10dba3ca5a32"><colgroup><col width="50%"/><col width="50%"/></colgroup>
 <name id="_48ea224b-0c04-b1ae-320a-492370508229">geosrs:up</name>
-<tbody><tr id="_9a95169d-2894-bc3c-ce38-281f9b175912"><td id="_d26033a7-a829-1129-fa58-5551998a3262" valign="middle" align="left">URI</td>
-<td id="_92ef7d83-e949-0ffe-7fe0-e8c355e8ba5c" valign="middle" align="left"><link target="https://w3id.org/geosrs/up"/></td>
+<tbody><tr id="_e1a77abe-f6f7-7c64-dcc5-9697dd9a130c"><td id="_73e94372-6074-1cd5-a5ca-f4aae1f9a747" valign="middle" align="left">URI</td>
+<td id="_fed3901e-90ed-678a-d805-55c63f5b3c02" valign="middle" align="left"><link target="https://w3id.org/geosrs/up"/></td>
+</tr><tr id="_740cf0dc-11f4-0e30-8e73-48d6c312955e"><td id="_091b8ce6-d9dd-506c-4ee3-fd4243d634c9" valign="middle" align="left">Type</td>
+<td id="_d5c6aa7f-ffd3-b514-52cf-b4b78ae553d5" valign="middle" align="left"><link target="https://w3id.org/geosrs/AxisDirection">geosrs:AxisDirection</link></td>
+</tr><tr id="_b9a2ac7a-37a5-8d83-7509-6e32b8122522"><td id="_72fd32d1-e19a-b5d7-b507-688579d0ec0b" valign="middle" align="left">Definition</td>
+<td id="_1a2afb3b-1370-87f6-6b0f-ff4f6312d985" valign="middle" align="left">Up axis direction</td>
 </tr></tbody>
 </table>
 </clause>
 
-<clause id="_3910f30a-675b-d55f-4f99-871f8ff342a3" obligation="normative">
+<clause id="_cc0aa1c6-b6f4-9ed5-8153-cd9fff32b770" obligation="normative">
 <title id="_022a4c57-c85b-a929-8ddc-2a2108ed3590">Instance: geosrs:west</title>
-<table id="_9a0113b6-4f36-72b9-b002-d4ba0f28dfaf"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<table id="_af4046b7-f5a2-a5a8-718e-e65b5160bbcc"><colgroup><col width="50%"/><col width="50%"/></colgroup>
 <name id="_4785ecf5-3182-181d-cb9b-78f0b8e7c716">geosrs:west</name>
-<tbody><tr id="_24a86338-2ef1-8be8-d70a-d7c330c82082"><td id="_87174d69-8c68-93fe-e654-e107f1af7c2d" valign="middle" align="left">URI</td>
-<td id="_6b67252c-d032-c0e3-8d34-77a4ac2812fa" valign="middle" align="left"><link target="https://w3id.org/geosrs/west"/></td>
+<tbody><tr id="_1c2daba4-41be-f625-4ca2-d99c7de11a15"><td id="_54bcbfec-0632-5dd4-fcd5-3b5efd043fc2" valign="middle" align="left">URI</td>
+<td id="_ac4aeeb7-7040-ceeb-68dc-81eb1bd4837f" valign="middle" align="left"><link target="https://w3id.org/geosrs/west"/></td>
+</tr><tr id="_6b5f161b-f508-3a5a-c0f1-72d999beaae5"><td id="_9c1212cd-7d04-11cd-c9e0-ac38d190911b" valign="middle" align="left">Type</td>
+<td id="_dee311d1-7d70-3315-d98b-9e53952dadc9" valign="middle" align="left"><link target="https://w3id.org/geosrs/AxisDirection">geosrs:AxisDirection</link></td>
+</tr><tr id="_235dcc1d-6bfc-574f-9b96-9f6bf002d072"><td id="_2cd286e2-f267-c2c8-c673-a5bf261adffe" valign="middle" align="left">Definition</td>
+<td id="_86b8738d-cf58-e362-4cad-c8d0d3b0b294" valign="middle" align="left">West axis direction</td>
 </tr></tbody>
 </table>
 </clause>
 </clause>
 
-<clause id="_d5b16b96-4f93-fd19-0906-24a0e2edeee6" obligation="normative">
+<clause id="_79b72c30-1967-6e88-d28e-2120a8d8fe37" obligation="normative">
 <title id="_22e2ea1a-7a2b-e2cc-6115-792b989a1f7d">Spheroids</title>
 <requirement id="_9444f8a6-33b6-22eb-f1b0-2290b0cf1c37" model="ogc" anchor="/req/Spheroids">
 <title>Spheroids</title> 
 <identifier>/req/Spheroids</identifier><description><p id="_c0705ee9-a6d7-1914-b416-59505dd0fcb0">Implementations shall allow the RDFS classes <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>GRS1980</referenceFrom></locality></localityStack><display-text>geosrs:GRS1980</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>GRS67</referenceFrom></locality></localityStack><display-text>geosrs:GRS67</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>PZ90</referenceFrom></locality></localityStack><display-text>geosrs:PZ90</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>Airy1830</referenceFrom></locality></localityStack><display-text>geosrs:Airy1830</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>AiryModified1849</referenceFrom></locality></localityStack><display-text>geosrs:AiryModified1849</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>International1924</referenceFrom></locality></localityStack><display-text>geosrs:International1924</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>AustralianNationalSpheroid</referenceFrom></locality></localityStack><display-text>geosrs:AustralianNationalSpheroid</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>Everest1930</referenceFrom></locality></localityStack><display-text>geosrs:Everest1930</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>Clarke1866</referenceFrom></locality></localityStack><display-text>geosrs:Clarke1866</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>Plessis1817</referenceFrom></locality></localityStack><display-text>geosrs:Plessis1817</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>Danish1876</referenceFrom></locality></localityStack><display-text>geosrs:Danish1876</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>Struve1860</referenceFrom></locality></localityStack><display-text>geosrs:Struve1860</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>IAG1975</referenceFrom></locality></localityStack><display-text>geosrs:IAG1975</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>Clarke1858</referenceFrom></locality></localityStack><display-text>geosrs:Clarke1858</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>Clarke1880</referenceFrom></locality></localityStack><display-text>geosrs:Clarke1880</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>Helmert1906</referenceFrom></locality></localityStack><display-text>geosrs:Helmert1906</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>CGCS2000</referenceFrom></locality></localityStack><display-text>geosrs:CGCS2000</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>GSK-2011</referenceFrom></locality></localityStack><display-text>geosrs:GSK-2011</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>Zach1812</referenceFrom></locality></localityStack><display-text>geosrs:Zach1812</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>Clarke1880ARC</referenceFrom></locality></localityStack><display-text>geosrs:Clarke1880ARC</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>Clarke1880IGN</referenceFrom></locality></localityStack><display-text>geosrs:Clarke1880IGN</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>WGS66</referenceFrom></locality></localityStack><display-text>geosrs:WGS66</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>WGS72</referenceFrom></locality></localityStack><display-text>geosrs:WGS72</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>WGS84</referenceFrom></locality></localityStack><display-text>geosrs:WGS84</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>Krassowsky1940</referenceFrom></locality></localityStack><display-text>geosrs:Krassowsky1940</display-text></eref> to be used in SPARQL graph patterns.</p></description>
 </requirement>
 
-<clause id="_32363ca2-2f95-a071-b21c-820001bcb2df" obligation="normative">
+<clause id="_c997de1d-61d2-f359-d469-aa0683945c3a" obligation="normative">
 <title id="_774b65fa-7575-0c4f-8b04-a0e4781bf04e">Instance: geosrs:GRS1980</title>
-<table id="_0b0224c3-e357-6d41-1842-720a291c2174"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<table id="_a134b4e2-7d53-ee63-9348-877ab62c1e51"><colgroup><col width="50%"/><col width="50%"/></colgroup>
 <name id="_d4805dd2-5464-8f09-e97a-9591cfdeecc0">geosrs:GRS1980</name>
-<tbody><tr id="_0c671e88-9d01-20d1-24b1-81fdaff2bbbf"><td id="_ee9c1f31-121b-ae69-c4b9-59b7730e3d6a" valign="middle" align="left">URI</td>
-<td id="_05113a17-244b-4dea-2489-ae36bc5aa5c4" valign="middle" align="left"><link target="https://w3id.org/geosrs/GRS1980"/></td>
+<tbody><tr id="_4b345568-3fba-4e3b-859e-7ad3e5b5eea2"><td id="_f8619199-66d7-c3a8-784a-d586f8a8ca27" valign="middle" align="left">URI</td>
+<td id="_ccf45c53-434a-e3e9-228c-ba9bee20c202" valign="middle" align="left"><link target="https://w3id.org/geosrs/GRS1980"/></td>
+</tr><tr id="_08da63af-66d8-dc46-0993-3829d4807643"><td id="_0fd2d929-b7a6-a311-c52e-9c1c1ea7d571" valign="middle" align="left">Type</td>
+<td id="_53ae8d4f-e4c9-c062-3725-b3bbc1c8882c" valign="middle" align="left"><link target="https://w3id.org/geosrs/Ellipsoid">geosrs:Ellipsoid</link></td>
+</tr><tr id="_fed0a4da-4166-ecac-5de9-c34f92f9fb46"><td id="_8aad47b2-4abe-8e2f-2184-10a6257bce08" valign="middle" align="left">Definition</td>
+<td id="_4b12c014-36ec-8d52-82a4-b39cabb609a5" valign="middle" align="left">GRS 1980 Ellipsoid</td>
 </tr></tbody>
 </table>
 </clause>
 
-<clause id="_3bf70162-2a37-5513-c168-bec287416edc" obligation="normative">
+<clause id="_4dd40fce-84fa-8a60-a530-590c59fbd018" obligation="normative">
 <title id="_618630e3-7cc7-c207-80d5-e585500073b3">Instance: geosrs:GRS67</title>
-<table id="_ec17c277-f446-9a08-a2f0-151dd6ab1016"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<table id="_65e3e1dd-58bf-5cdc-6163-1f5fe74e77e8"><colgroup><col width="50%"/><col width="50%"/></colgroup>
 <name id="_2b6e29d2-1cc8-5520-673e-47bb98b39154">geosrs:GRS67</name>
-<tbody><tr id="_2239b81e-87ea-9f5d-ccfc-0175800808f4"><td id="_6253b76e-e45d-8593-9b13-53fea2ed4a4d" valign="middle" align="left">URI</td>
-<td id="_572ecc32-5dbb-d527-4b1f-a81b3069deb7" valign="middle" align="left"><link target="https://w3id.org/geosrs/GRS67"/></td>
+<tbody><tr id="_1666817d-966e-71ac-2021-282ac96f21b0"><td id="_8eda2a11-7a5d-7716-814c-b165d6659188" valign="middle" align="left">URI</td>
+<td id="_35317297-2ae0-6cb9-0774-1c5635c4e4c5" valign="middle" align="left"><link target="https://w3id.org/geosrs/GRS67"/></td>
+</tr><tr id="_32df3d4a-a4c4-45da-11e6-3cd119063b9a"><td id="_780e297c-68f1-603f-4674-78f425d105ad" valign="middle" align="left">Type</td>
+<td id="_b4784991-8578-e10c-2da4-5191d9fb4962" valign="middle" align="left"><link target="https://w3id.org/geosrs/Ellipsoid">geosrs:Ellipsoid</link></td>
+</tr><tr id="_a05396ee-e578-5605-cbbc-c7c467e2f028"><td id="_be1a2d1c-0a99-2d9a-0c0f-587753670d39" valign="middle" align="left">Definition</td>
+<td id="_839d719d-6097-8a26-cef6-f74302ba5690" valign="middle" align="left">GRS 67 Ellipsoid</td>
 </tr></tbody>
 </table>
 </clause>
 
-<clause id="_59bac531-6e50-bd55-ba9e-835b92dad24f" obligation="normative">
+<clause id="_5ca67af7-a0c2-181c-4bdb-094081ff5846" obligation="normative">
 <title id="_d797c3de-5341-a331-5f2c-50ce88c0ae1a">Instance: geosrs:PZ90</title>
-<table id="_43a11fe2-1df4-4d86-81df-65c6cb4ddb46"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<table id="_f5e6d969-47dc-5059-d34a-059cc6f2a03b"><colgroup><col width="50%"/><col width="50%"/></colgroup>
 <name id="_551a7178-e5d8-426d-19de-4891c2f80f9b">geosrs:PZ90</name>
-<tbody><tr id="_8f9b8d8d-c9fe-d260-dc71-07fffb03b06a"><td id="_525b1b64-d658-f154-617c-ddaed93c805f" valign="middle" align="left">URI</td>
-<td id="_027b3d05-161c-6ce6-210c-73cdd736fac3" valign="middle" align="left"><link target="https://w3id.org/geosrs/PZ90"/></td>
+<tbody><tr id="_061da832-cd2d-fd96-3299-11b74bc7a8f6"><td id="_986c6d75-bd2f-34fa-0047-f59c45fd6a8d" valign="middle" align="left">URI</td>
+<td id="_92054ec6-191b-6c2f-188b-e43d4b0aa044" valign="middle" align="left"><link target="https://w3id.org/geosrs/PZ90"/></td>
+</tr><tr id="_7f77bfc9-6d68-d1d8-435e-6fcc7ff46c16"><td id="_359e5f00-2e60-5194-112e-286a8bbcbea0" valign="middle" align="left">Type</td>
+<td id="_f2509a10-7b20-3315-55c5-b0fa3b1a46d8" valign="middle" align="left"><link target="https://w3id.org/geosrs/Ellipsoid">geosrs:Ellipsoid</link></td>
+</tr><tr id="_f7bbc5c0-742e-9c04-7dde-36266987fc24"><td id="_bb38be43-abf6-3209-1aa7-a70afd5b2025" valign="middle" align="left">Definition</td>
+<td id="_b7667751-daaf-f5cc-30c6-174013d2e93b" valign="middle" align="left">PZ 90 Ellipsoid</td>
 </tr></tbody>
 </table>
 </clause>
 
-<clause id="_88188839-908a-ba75-6396-a2846cc46698" obligation="normative">
+<clause id="_2102ebe0-d1c4-e7e7-4d23-601ed801e472" obligation="normative">
 <title id="_65bf2d40-491e-cd2c-2525-4ede8e7b745b">Instance: geosrs:Airy1830</title>
-<table id="_e1377809-0e37-9988-83de-d6a80a4f84bc"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<table id="_25315444-344d-9dd3-8db1-c593da783b7b"><colgroup><col width="50%"/><col width="50%"/></colgroup>
 <name id="_f0d7f738-0725-13d5-ce1e-0790c24494a8">geosrs:Airy1830</name>
-<tbody><tr id="_7d9b724e-b355-afef-3967-d20f7a9346e1"><td id="_b063bbef-8229-8a8f-d661-8e1b97904ac1" valign="middle" align="left">URI</td>
-<td id="_46cdc444-a17a-b3b1-aa9a-37005827ade6" valign="middle" align="left"><link target="https://w3id.org/geosrs/Airy1830"/></td>
+<tbody><tr id="_b4c4ffeb-d81a-f093-4e6f-b4699f48e795"><td id="_e6548b7f-afc2-a6d1-38f6-d37ec76e57c3" valign="middle" align="left">URI</td>
+<td id="_22cf2008-6b78-2110-5a38-21c8e8f959a3" valign="middle" align="left"><link target="https://w3id.org/geosrs/Airy1830"/></td>
+</tr><tr id="_d215a94c-abc1-4e16-74f3-05740c49b0b9"><td id="_9b4c5876-d156-8b43-eec1-d77821c49f7d" valign="middle" align="left">Type</td>
+<td id="_d9dc41c3-c8f6-814b-bb73-0f6001a3438e" valign="middle" align="left"><link target="https://w3id.org/geosrs/Ellipsoid">geosrs:Ellipsoid</link></td>
+</tr><tr id="_25fc8f81-5915-e8a2-64de-67e49c2aa9ea"><td id="_0133f96c-6209-8ac6-ef09-0c9237e0ecc2" valign="middle" align="left">Definition</td>
+<td id="_e90be8f1-9da6-8cd7-408c-c2930aee64c2" valign="middle" align="left">Airy 1830 Ellipsoid</td>
 </tr></tbody>
 </table>
 </clause>
 
-<clause id="_86d27560-76cc-9424-1fef-abda6efde281" obligation="normative">
+<clause id="_b1e7389e-e3b7-c0be-560e-3a343a96b8ab" obligation="normative">
 <title id="_d38ce201-b839-8c54-278c-a850a6ff6236">Instance: geosrs:AiryModified1849</title>
-<table id="_d21b8abe-7cb0-1122-2ffa-c272e14c1bd7"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<table id="_8e7ed4fa-fb8c-f648-60f2-b1795f3f574d"><colgroup><col width="50%"/><col width="50%"/></colgroup>
 <name id="_2d38a30e-6bf0-f10a-90b7-0d7ad3532827">geosrs:AiryModified1849</name>
-<tbody><tr id="_036a9be3-fda2-0055-4c5f-1d04d7d7f9b5"><td id="_eff0b922-63b8-ca04-fbea-c594ba97096a" valign="middle" align="left">URI</td>
-<td id="_e8dd2deb-b168-2431-26cc-3f1e335480bb" valign="middle" align="left"><link target="https://w3id.org/geosrs/AiryModified1849"/></td>
+<tbody><tr id="_c1436244-1c2e-520c-46c5-9709958c91e3"><td id="_ed8511e6-a976-3957-f590-27ee7861397f" valign="middle" align="left">URI</td>
+<td id="_52153272-663a-519e-9323-9868dbace36c" valign="middle" align="left"><link target="https://w3id.org/geosrs/AiryModified1849"/></td>
+</tr><tr id="_b39979e9-da68-b3a3-700d-90b7319d0073"><td id="_e83bf8b8-a451-1cdf-bc1c-5f779f6bafd7" valign="middle" align="left">Type</td>
+<td id="_e5cfc7d7-53ab-4907-3c71-627da58c7d95" valign="middle" align="left"><link target="https://w3id.org/geosrs/Ellipsoid">geosrs:Ellipsoid</link></td>
+</tr><tr id="_b0f94ff7-ad01-6bec-fcd3-f9ed1a437abb"><td id="_8d25c366-38bd-5acb-7b5c-7aaf48598d24" valign="middle" align="left">Definition</td>
+<td id="_c036b708-0590-fdf2-6e1a-536362162bbd" valign="middle" align="left">Airy 1849 Modified Ellipsoid</td>
 </tr></tbody>
 </table>
 </clause>
 
-<clause id="_7a4e6ff8-3f08-63cc-89ac-324475c172d4" obligation="normative">
+<clause id="_a12ac4ec-39ba-8571-93d9-f5f36579f602" obligation="normative">
 <title id="_f7bcab9f-1efe-343d-9cb4-71f52335d9ef">Instance: geosrs:International1924</title>
-<table id="_2ebe9a7a-9f11-5a48-ff44-74728096fdc0"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<table id="_4da6ee21-e9ae-d4f6-e348-7f879d38e35c"><colgroup><col width="50%"/><col width="50%"/></colgroup>
 <name id="_26239f33-c791-761d-08c2-3d2f0bbde288">geosrs:International1924</name>
-<tbody><tr id="_4a97534e-9adf-e284-d19a-5f676febb13f"><td id="_f752ad02-1207-5f26-dcd3-b0b6322e3409" valign="middle" align="left">URI</td>
-<td id="_2fe3cb25-4447-bb4f-a064-159e7e06fc52" valign="middle" align="left"><link target="https://w3id.org/geosrs/International1924"/></td>
+<tbody><tr id="_225e5cf5-deee-ae41-21f0-dfb8bd8a27bc"><td id="_b23d8cf6-081c-bf6a-83fc-4cded565e1aa" valign="middle" align="left">URI</td>
+<td id="_8803a213-98f7-a104-becf-28d2d9ab2c85" valign="middle" align="left"><link target="https://w3id.org/geosrs/International1924"/></td>
+</tr><tr id="_721ac3ae-f16e-af0b-98e2-e8f593cfdd2e"><td id="_23a47edb-bea2-f0ff-dd23-3212aa0b1055" valign="middle" align="left">Type</td>
+<td id="_9463e265-3dd6-a53c-6c5b-79793fb3421f" valign="middle" align="left"><link target="https://w3id.org/geosrs/Ellipsoid">geosrs:Ellipsoid</link></td>
+</tr><tr id="_34eed01d-5a37-a049-36d2-0b324314e006"><td id="_875f48b7-0839-0bb5-590e-686e41ff7fc3" valign="middle" align="left">Definition</td>
+<td id="_fe71a562-362d-3cbf-b2ec-acc8507c229e" valign="middle" align="left">International 1924 Ellipsoid</td>
 </tr></tbody>
 </table>
 </clause>
 
-<clause id="_3b61e16a-5db6-4a3b-9e1a-13e92790629a" obligation="normative">
+<clause id="_58e586c9-be59-b665-55ac-cfaf3fa97977" obligation="normative">
 <title id="_a09adcf9-9e4a-ede3-04fa-73c97b4724ea">Instance: geosrs:AustralianNationalSpheroid</title>
-<table id="_99001710-6053-6517-08fe-9b37975efb00"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<table id="_e6cd3892-0188-6b0d-ebca-1e57d9dddc46"><colgroup><col width="50%"/><col width="50%"/></colgroup>
 <name id="_9edc6f74-c240-c713-adaa-e9a9933b3bbd">geosrs:AustralianNationalSpheroid</name>
-<tbody><tr id="_09c22432-728f-14eb-064f-a74e2770187b"><td id="_88128ab4-c91c-1cb1-99a0-570871403ee6" valign="middle" align="left">URI</td>
-<td id="_052437da-8cae-908a-d5f7-e227c42df4db" valign="middle" align="left"><link target="https://w3id.org/geosrs/AustralianNationalSpheroid"/></td>
+<tbody><tr id="_20497694-ea77-d311-41df-4a474d63be4f"><td id="_b2b73a6b-b2f0-4cd0-a30a-0d5d2fbeb66e" valign="middle" align="left">URI</td>
+<td id="_e92ab12f-9f36-ebc0-21fc-c9a218340e38" valign="middle" align="left"><link target="https://w3id.org/geosrs/AustralianNationalSpheroid"/></td>
+</tr><tr id="_ae65b3a2-32b5-cb4d-4bd9-cc558b2d81fa"><td id="_41014d34-374a-498e-cf32-bfa6bd427893" valign="middle" align="left">Type</td>
+<td id="_b8c66c87-234f-dc09-9ab4-647523ad9c4b" valign="middle" align="left"><link target="https://w3id.org/geosrs/Ellipsoid">geosrs:Ellipsoid</link></td>
+</tr><tr id="_34ec9de5-e5b8-9488-9650-c22600076775"><td id="_7f235f6b-e542-7201-60b7-3880d0bdcef0" valign="middle" align="left">Definition</td>
+<td id="_6d93fb0c-bdfe-30ba-eaa7-356b55fa1c4b" valign="middle" align="left">Australian National Spheroid</td>
 </tr></tbody>
 </table>
 </clause>
 
-<clause id="_62bb2a8f-7083-2413-b3bc-69cabc46b08b" obligation="normative">
+<clause id="_2323d30e-c45b-6006-2144-f5714da53101" obligation="normative">
 <title id="_d7df05b9-7698-9cb8-e743-9c30149650e2">Instance: geosrs:Everest1930</title>
-<table id="_1fb4085e-f547-fc9f-20e8-3ef5ec406463"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<table id="_9ec22f56-5732-93cc-2a86-9599615c0b67"><colgroup><col width="50%"/><col width="50%"/></colgroup>
 <name id="_b829661c-99ac-15a6-140c-b9030cc2e479">geosrs:Everest1930</name>
-<tbody><tr id="_2bb60685-ecb6-fb54-59ac-8e72415725b1"><td id="_cf19f064-b5aa-94d2-619b-46e6f619ff59" valign="middle" align="left">URI</td>
-<td id="_67bc62b8-378d-86da-39cd-ac8b1e5e618d" valign="middle" align="left"><link target="https://w3id.org/geosrs/Everest1930"/></td>
+<tbody><tr id="_1dac8ec6-5267-6794-277a-8eabe2afca0a"><td id="_6fa51348-0061-136a-aa29-9f8eed4668a8" valign="middle" align="left">URI</td>
+<td id="_c56dbd7d-310f-5e7d-1afb-fa48d41f749a" valign="middle" align="left"><link target="https://w3id.org/geosrs/Everest1930"/></td>
+</tr><tr id="_a3a6edcf-50b0-2893-e0e6-0e6a71645ae9"><td id="_5ebc2192-89bf-981a-5489-5aacedfa646c" valign="middle" align="left">Type</td>
+<td id="_0e0869d8-e585-4cb5-244d-d3097a69906b" valign="middle" align="left"><link target="https://w3id.org/geosrs/Ellipsoid">geosrs:Ellipsoid</link></td>
+</tr><tr id="_c7e05b9f-f948-6c40-55ed-fb903d6624c4"><td id="_24162696-307f-e158-7387-cc554bb8220c" valign="middle" align="left">Definition</td>
+<td id="_61279cea-d935-4f0a-ca23-33cd2111d905" valign="middle" align="left">Everest 1930 Spheroid</td>
 </tr></tbody>
 </table>
 </clause>
 
-<clause id="_2a5a9788-fee6-00c9-f25e-46c0ff8bd5e3" obligation="normative">
+<clause id="_fa9de3bc-f37c-153b-2fb4-fca3c3f8fccc" obligation="normative">
 <title id="_913abae8-d376-d6bf-c392-f97276df3179">Instance: geosrs:Clarke1866</title>
-<table id="_f9a3e5ce-d272-8fd4-e632-78536a3e43da"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<table id="_c1971f6e-53d4-fb5b-20ef-716f2eed2336"><colgroup><col width="50%"/><col width="50%"/></colgroup>
 <name id="_16fbe9b7-8933-d627-12d5-b16370db99eb">geosrs:Clarke1866</name>
-<tbody><tr id="_7a09d846-83f3-622d-e173-bc9d5d76970b"><td id="_7d5c28d6-ed06-1c61-90c1-3c94c1c2bbbd" valign="middle" align="left">URI</td>
-<td id="_187c8f5d-a01e-ce3f-7059-b30f0f687df6" valign="middle" align="left"><link target="https://w3id.org/geosrs/Clarke1866"/></td>
+<tbody><tr id="_c29436a1-80bd-1c0c-7cdf-83cd68ee5333"><td id="_6494ca71-b74d-3dcc-ed1a-2bde87342de7" valign="middle" align="left">URI</td>
+<td id="_78d98239-bdce-1abb-c492-60826971471f" valign="middle" align="left"><link target="https://w3id.org/geosrs/Clarke1866"/></td>
+</tr><tr id="_b8211eb4-951d-9c77-9771-3faacb9148b0"><td id="_d1da1528-5b06-dcd8-ec43-e0bf63590c3e" valign="middle" align="left">Type</td>
+<td id="_413982e8-a1b6-942a-27ca-091e70ce3343" valign="middle" align="left"><link target="https://w3id.org/geosrs/Ellipsoid">geosrs:Ellipsoid</link></td>
+</tr><tr id="_63386313-ac4d-3b53-8a98-72ac09fc3397"><td id="_1103028e-6b93-a6de-4731-f1cb149f5eb9" valign="middle" align="left">Definition</td>
+<td id="_731ee176-bdd1-c785-acee-deda2e5c1069" valign="middle" align="left">Clarke 1866 Spheroid</td>
 </tr></tbody>
 </table>
 </clause>
 
-<clause id="_c046777d-2837-f252-9474-67c18dae3453" obligation="normative">
+<clause id="_2c11e617-7eef-ecce-b3c0-e1c7fd28ec97" obligation="normative">
 <title id="_76592039-17f4-6eb0-d6d9-4ea00725e919">Instance: geosrs:Plessis1817</title>
-<table id="_fc2498e6-f036-8c20-3997-88da62b0267a"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<table id="_5c986285-82b7-4f99-4437-ae0d66bae47c"><colgroup><col width="50%"/><col width="50%"/></colgroup>
 <name id="_3c5b05f4-9b52-beb7-1d4c-5053b27f79ae">geosrs:Plessis1817</name>
-<tbody><tr id="_d4bd76c2-18e7-8775-f89e-65ea2364585d"><td id="_c3d39177-3f17-a46e-40dd-d94146f70246" valign="middle" align="left">URI</td>
-<td id="_4a867d35-3329-a0d4-9399-ef80d1e81315" valign="middle" align="left"><link target="https://w3id.org/geosrs/Plessis1817"/></td>
+<tbody><tr id="_e06a3b23-bd3f-461b-9c98-857536d71eb0"><td id="_f2aef6d2-6e08-6e8a-ff81-ab232ebf3a95" valign="middle" align="left">URI</td>
+<td id="_7737dfaa-76a3-5e45-2617-5465a6fbef33" valign="middle" align="left"><link target="https://w3id.org/geosrs/Plessis1817"/></td>
+</tr><tr id="_d8a972a3-9dcc-c40e-5526-763817dbcde3"><td id="_fdc55680-5b2a-1850-d7a2-6cd8ad3a6e14" valign="middle" align="left">Type</td>
+<td id="_967e2c3f-d38b-eed8-0c1f-823a9e62a6a4" valign="middle" align="left"><link target="https://w3id.org/geosrs/Ellipsoid">geosrs:Ellipsoid</link></td>
+</tr><tr id="_3389571f-bc64-4698-98f0-7ebf916006f3"><td id="_048d13ea-29fc-a1c5-018b-2689c98f1b60" valign="middle" align="left">Definition</td>
+<td id="_a9f50cdf-14ab-c32b-7d32-0a97e18205c6" valign="middle" align="left">Plessis 1817 Spheroid</td>
 </tr></tbody>
 </table>
 </clause>
 
-<clause id="_68dfe570-ebe2-a4fe-0e21-a6b86fc65cc2" obligation="normative">
+<clause id="_73aa82b1-54ab-e454-0bca-e1aac8689321" obligation="normative">
 <title id="_2b5c346f-4c18-7c6c-1889-ab9cb1d27fb0">Instance: geosrs:Danish1876</title>
-<table id="_62c81117-b265-4aac-959e-f3f30d4bfa60"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<table id="_5837314f-aaec-163c-a529-37e0db19d1f0"><colgroup><col width="50%"/><col width="50%"/></colgroup>
 <name id="_a7c3585e-30fa-6c96-9aa9-787ad75802cd">geosrs:Danish1876</name>
-<tbody><tr id="_0ae05570-4d3a-92cf-7e3e-e0257387a647"><td id="_3682b7ff-fb18-531a-7775-39d0ca9d9cd1" valign="middle" align="left">URI</td>
-<td id="_bf54ca2c-8072-cc55-fe3d-44121c136948" valign="middle" align="left"><link target="https://w3id.org/geosrs/Danish1876"/></td>
+<tbody><tr id="_70ed25a1-512c-af52-e351-89e12cbb0b3f"><td id="_e7d8c560-c6d5-ce3a-2158-9ee21aa83e91" valign="middle" align="left">URI</td>
+<td id="_d231dbcd-31c9-30cb-dd7e-596a61eb97eb" valign="middle" align="left"><link target="https://w3id.org/geosrs/Danish1876"/></td>
+</tr><tr id="_0c524fd4-715b-8efd-bc09-cce9c9059af8"><td id="_baf8d0ed-d7bd-a950-d5be-75d867274a2a" valign="middle" align="left">Type</td>
+<td id="_833d68be-70e1-af2a-8bf0-b0281fcbce58" valign="middle" align="left"><link target="https://w3id.org/geosrs/Ellipsoid">geosrs:Ellipsoid</link></td>
+</tr><tr id="_9796b295-5ecf-08ea-bf20-532bcd697cd8"><td id="_4d03790c-7f74-99e0-c82b-4e2fb0794cfb" valign="middle" align="left">Definition</td>
+<td id="_4b44b45b-e740-26c7-79ce-cdbd949cd0e0" valign="middle" align="left">Danish 1876 Spheroid</td>
 </tr></tbody>
 </table>
 </clause>
 
-<clause id="_ce51b7df-0af0-e125-9633-4842c6a4c249" obligation="normative">
+<clause id="_2da59623-0c67-97bf-eb38-0d7e05b755e9" obligation="normative">
 <title id="_4b91110c-8d86-70f0-d876-316dd7dc1801">Instance: geosrs:Struve1860</title>
-<table id="_2ce8bd3b-41da-b183-9e3e-bbbfd490266f"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<table id="_52060242-878d-4de3-0db9-38fc9512e1b2"><colgroup><col width="50%"/><col width="50%"/></colgroup>
 <name id="_b7783b66-44a6-fd79-bf2a-9eee1ad2974b">geosrs:Struve1860</name>
-<tbody><tr id="_40135f4a-402d-d220-b08f-c739e9fb6915"><td id="_5af0f4d3-2ee6-68ae-7cd7-8b0d019b0c91" valign="middle" align="left">URI</td>
-<td id="_696dd669-e7a5-0fb1-c861-42183452e221" valign="middle" align="left"><link target="https://w3id.org/geosrs/Struve1860"/></td>
+<tbody><tr id="_ecf93952-d01c-dafd-2c8f-3321448823d0"><td id="_431063c0-20be-1b46-9b35-99a5c0b7f618" valign="middle" align="left">URI</td>
+<td id="_343571ef-ba82-6443-d6a9-975c18621f6b" valign="middle" align="left"><link target="https://w3id.org/geosrs/Struve1860"/></td>
+</tr><tr id="_ae62a3aa-8b1d-898b-feeb-20a2626cbd96"><td id="_7ef284be-9c84-36b0-3af5-6b90dbc890b3" valign="middle" align="left">Type</td>
+<td id="_6d578fc6-1286-83a7-ed79-0e01c4f2e3fb" valign="middle" align="left"><link target="https://w3id.org/geosrs/Ellipsoid">geosrs:Ellipsoid</link></td>
+</tr><tr id="_beeb6a43-c315-2090-860d-0e6b00277853"><td id="_756fc30e-9f77-2579-0a7d-13fcc834c0a6" valign="middle" align="left">Definition</td>
+<td id="_faad2811-5c7c-d8e5-65b5-9e67651b58be" valign="middle" align="left">Struve 1860 Spheroid</td>
 </tr></tbody>
 </table>
 </clause>
 
-<clause id="_d6b046eb-abad-342a-abea-f35bcf16c6f5" obligation="normative">
+<clause id="_7d376b9e-2a4e-ba97-944b-e20c479f8d84" obligation="normative">
 <title id="_8afda4b5-3482-e43b-e43f-0555216794fe">Instance: geosrs:IAG1975</title>
-<table id="_46488402-1fa5-2d03-66a2-4c39b78eb1b6"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<table id="_825845ac-1456-a2a3-67d0-e19c767fb8ae"><colgroup><col width="50%"/><col width="50%"/></colgroup>
 <name id="_7e84f706-5b66-320c-4a2e-4bebf1beb79c">geosrs:IAG1975</name>
-<tbody><tr id="_161a9210-bbc8-c0f5-c100-9d0eb1ffdf7f"><td id="_5642af4e-0b61-2df2-1218-e2c2772e7182" valign="middle" align="left">URI</td>
-<td id="_43bc08e2-c864-37f1-6b23-b945284f7a84" valign="middle" align="left"><link target="https://w3id.org/geosrs/IAG1975"/></td>
+<tbody><tr id="_f6cf4b38-9f5e-0909-f186-6d84dcb120b1"><td id="_917446f2-32cb-6eb0-3b5d-cd4dbac793a8" valign="middle" align="left">URI</td>
+<td id="_239593fd-0f80-cf23-a59b-7f96fff86ae0" valign="middle" align="left"><link target="https://w3id.org/geosrs/IAG1975"/></td>
+</tr><tr id="_5f11c5aa-02db-b8a4-9739-cbf1790b9047"><td id="_e70f70c0-f501-15bc-b9ba-9ade78d508a7" valign="middle" align="left">Type</td>
+<td id="_082d0b5e-1295-6949-c2bd-f3c9d06f555d" valign="middle" align="left"><link target="https://w3id.org/geosrs/Ellipsoid">geosrs:Ellipsoid</link></td>
+</tr><tr id="_710a77f3-799b-8612-92f5-058c378389ec"><td id="_998ae294-41d4-150d-b005-4a32cc8ea831" valign="middle" align="left">Definition</td>
+<td id="_2115bfd9-30b0-1121-9298-b96790062a67" valign="middle" align="left">IAG 1975 Spheroid</td>
 </tr></tbody>
 </table>
 </clause>
 
-<clause id="_88dfcf0e-a313-0c29-91e1-d2daa624553b" obligation="normative">
+<clause id="_c3ebfdf6-3be6-a066-4f16-203ce9c3a084" obligation="normative">
 <title id="_c1faec17-fa80-304f-15eb-f1cc9688c62e">Instance: geosrs:Clarke1858</title>
-<table id="_7bf42344-7096-e5c7-16dd-72983d1e02eb"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<table id="_735bcc2a-015c-eeda-33d4-8b9b36d294eb"><colgroup><col width="50%"/><col width="50%"/></colgroup>
 <name id="_2f4a9833-2187-7796-ac99-ecc2e069baab">geosrs:Clarke1858</name>
-<tbody><tr id="_eac83a41-d65e-5afa-f4ee-408ad3a18b75"><td id="_c42b99c3-da8d-c74b-e58f-924daa309eb0" valign="middle" align="left">URI</td>
-<td id="_142d7d3b-fed9-0cee-e2fe-a56c2d160890" valign="middle" align="left"><link target="https://w3id.org/geosrs/Clarke1858"/></td>
+<tbody><tr id="_8a393758-a7bf-70e8-4f15-eb381382a2ab"><td id="_80ca834a-5d80-b14f-96a7-7d6cd31b2ad4" valign="middle" align="left">URI</td>
+<td id="_90a029a1-e24c-d39b-8b62-5274156aa209" valign="middle" align="left"><link target="https://w3id.org/geosrs/Clarke1858"/></td>
+</tr><tr id="_d9d8875f-074e-ffcf-c7d9-3bad5f9dc673"><td id="_63a85430-7451-0f48-ff28-953aeaa049bd" valign="middle" align="left">Type</td>
+<td id="_27bf1ffb-0890-36e0-c7a4-5e10d64d61c3" valign="middle" align="left"><link target="https://w3id.org/geosrs/Ellipsoid">geosrs:Ellipsoid</link></td>
+</tr><tr id="_ce0087f7-9dde-8712-9f39-a33d4c04cf27"><td id="_7dcb078a-2b2f-d6ba-fa69-0df8b2886042" valign="middle" align="left">Definition</td>
+<td id="_196382a6-3233-0893-8514-026e551f0fbc" valign="middle" align="left">Clarke 1858 Spheroid</td>
 </tr></tbody>
 </table>
 </clause>
 
-<clause id="_9b670f90-2a85-a92f-086b-6f3eae95bbce" obligation="normative">
+<clause id="_f89614ca-bbb9-785f-a96b-dab0c4ecf9ec" obligation="normative">
 <title id="_4fb548ad-e21f-ad7c-375a-dcf78df6b8f3">Instance: geosrs:Clarke1880</title>
-<table id="_5a5bfbbb-843f-ba62-91c1-e9ef0e94a258"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<table id="_8a6e8775-3ae6-1ede-20c9-49a9c70d0075"><colgroup><col width="50%"/><col width="50%"/></colgroup>
 <name id="_ca34acad-6224-aa74-4253-033b76f26e36">geosrs:Clarke1880</name>
-<tbody><tr id="_37cf2b00-c360-d088-179e-0413eb19c2c0"><td id="_46751b87-e5de-b745-56d1-6282e0d928d7" valign="middle" align="left">URI</td>
-<td id="_6da4aa73-af95-c534-9f41-10e7356eaae0" valign="middle" align="left"><link target="https://w3id.org/geosrs/Clarke1880"/></td>
+<tbody><tr id="_845efc51-5ef4-c6d6-7226-6bea517a8cfd"><td id="_1fc34e6f-425f-d47e-bdc0-88db6ac06af7" valign="middle" align="left">URI</td>
+<td id="_351e9f74-752a-6b0e-03a3-f45cf36938ba" valign="middle" align="left"><link target="https://w3id.org/geosrs/Clarke1880"/></td>
+</tr><tr id="_1d656ae2-68df-bde3-beec-e777a0a521bc"><td id="_442f09b4-7695-207f-2b6f-9012cc35201c" valign="middle" align="left">Type</td>
+<td id="_75e5deb7-9757-49ed-5144-d035a588355b" valign="middle" align="left"><link target="https://w3id.org/geosrs/Ellipsoid">geosrs:Ellipsoid</link></td>
+</tr><tr id="_c4aa54e6-b2dd-e1e5-0245-4a3095b07caa"><td id="_2e6fba03-8b8f-3663-3e20-7076cb394b06" valign="middle" align="left">Definition</td>
+<td id="_7a775908-3905-1b35-0de9-c928ac0a7ab9" valign="middle" align="left">Clarke 1880 Spheroid</td>
 </tr></tbody>
 </table>
 </clause>
 
-<clause id="_58dee4bc-02ad-ebc1-e3df-94fc88789acb" obligation="normative">
+<clause id="_ddbc105e-445c-f63b-d2f9-5baf6edf9d44" obligation="normative">
 <title id="_351f8ae6-387e-5644-42ec-80508be924da">Instance: geosrs:Helmert1906</title>
-<table id="_6a85f17a-55f3-77f2-abf8-e5b3d5a832bb"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<table id="_30ec9ba8-549b-b1e7-4bdf-150a7d06a0b8"><colgroup><col width="50%"/><col width="50%"/></colgroup>
 <name id="_163a4233-d683-bb9b-09a0-eac4782b2180">geosrs:Helmert1906</name>
-<tbody><tr id="_a5f40654-3143-6008-b334-42bd558ddde6"><td id="_f8449d28-75b2-20b7-6827-adf9eff177a3" valign="middle" align="left">URI</td>
-<td id="_e10ce7b5-1370-a6bc-3ecc-81df241a9e07" valign="middle" align="left"><link target="https://w3id.org/geosrs/Helmert1906"/></td>
+<tbody><tr id="_c53d2a6c-d37b-9ed8-3f20-053970ca4096"><td id="_91f47cb0-0302-c5de-dd0b-d9017310affb" valign="middle" align="left">URI</td>
+<td id="_d04dd83f-f5f0-a5f2-fcf8-fdf40b855676" valign="middle" align="left"><link target="https://w3id.org/geosrs/Helmert1906"/></td>
+</tr><tr id="_86da813e-a021-2b1e-17da-f3f4da4e34d0"><td id="_c79ce19e-661d-80cc-b93a-a30f9b75f2be" valign="middle" align="left">Type</td>
+<td id="_e088b6cf-cfd4-b706-dafa-5c3e8c08fd1d" valign="middle" align="left"><link target="https://w3id.org/geosrs/Ellipsoid">geosrs:Ellipsoid</link></td>
+</tr><tr id="_054a018f-2351-eac4-2570-b895795f656a"><td id="_4a83ad1e-acba-e955-814d-bc3fd8315ce8" valign="middle" align="left">Definition</td>
+<td id="_0caeff96-3749-3d3a-4b7f-4a29f8d471c7" valign="middle" align="left">Helmert 1906 Spheroid</td>
 </tr></tbody>
 </table>
 </clause>
 
-<clause id="_12aed480-a6ca-c9dc-0d5d-f0018cd608ff" obligation="normative">
+<clause id="_70bbce9d-5215-991b-7e4e-853f176f8b9f" obligation="normative">
 <title id="_2ee54d81-582c-556f-19eb-4dc6fa09eb48">Instance: geosrs:CGCS2000</title>
-<table id="_f94cefc9-b57d-a301-faa4-90a0b00fe0ab"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<table id="_301669d9-7fc4-9229-7b25-1b598f6bdeb2"><colgroup><col width="50%"/><col width="50%"/></colgroup>
 <name id="_62ce19fc-51a2-d0c9-43b2-31c5afef2a63">geosrs:CGCS2000</name>
-<tbody><tr id="_b3b68241-50d1-c790-d058-54431c93506c"><td id="_d56aed0a-9a3e-547f-84a2-83ce02712e55" valign="middle" align="left">URI</td>
-<td id="_0b15adf0-4e91-e2b1-a1aa-19330275c80c" valign="middle" align="left"><link target="https://w3id.org/geosrs/CGCS2000"/></td>
+<tbody><tr id="_0f99d7f5-c4cd-5cc6-21c8-00c32d27ba7f"><td id="_c8c5a008-80df-a7c7-0bd0-7cb05ce1cf59" valign="middle" align="left">URI</td>
+<td id="_b63a6458-fabe-5b10-37dc-62dc2058e43f" valign="middle" align="left"><link target="https://w3id.org/geosrs/CGCS2000"/></td>
+</tr><tr id="_86a39879-a525-fa09-a66e-f8f9ad236919"><td id="_aa67c3a5-4ace-98c8-87d2-1ffea6ad6807" valign="middle" align="left">Type</td>
+<td id="_029262b6-6c2d-ee40-8e52-049bfe30a6f1" valign="middle" align="left"><link target="https://w3id.org/geosrs/Ellipsoid">geosrs:Ellipsoid</link></td>
+</tr><tr id="_0020baa5-0a4e-b5a2-ec39-f4f1d30c9dc9"><td id="_8b03d955-54d8-b62e-225f-dc0c06e85156" valign="middle" align="left">Definition</td>
+<td id="_768b626f-dcca-79de-0fc8-cda1329180bf" valign="middle" align="left">CGCS2000 Spheroid</td>
 </tr></tbody>
 </table>
 </clause>
 
-<clause id="_c7f87b7b-3184-bde2-d2de-4bb27b5106c1" obligation="normative">
+<clause id="_3106283c-d78b-344b-7673-3c26295a4308" obligation="normative">
 <title id="_40956f3f-b001-ff2d-2639-6b94128da543">Instance: geosrs:GSK-2011</title>
-<table id="_c1a07573-4c0b-0c41-77e9-595f92004807"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<table id="_7bb30457-3200-aae5-0001-b325f9e44a56"><colgroup><col width="50%"/><col width="50%"/></colgroup>
 <name id="_f068e21a-6cfb-7b47-bb87-d16a02dd43a7">geosrs:GSK-2011</name>
-<tbody><tr id="_9634747b-f27b-33bc-6da9-051375214525"><td id="_ece05936-2bfe-9352-081f-9031d4a84c59" valign="middle" align="left">URI</td>
-<td id="_656f807b-4fc0-9109-ce0e-8b7fe216587d" valign="middle" align="left"><link target="https://w3id.org/geosrs/GSK-2011"/></td>
+<tbody><tr id="_d664b3c9-7fab-6b9c-d5d5-60663ab5bef8"><td id="_a0536804-08ef-5b25-5d0f-4fe8b4a9cdcf" valign="middle" align="left">URI</td>
+<td id="_e08f330a-1a68-a78e-71cd-f5d6ddf08f27" valign="middle" align="left"><link target="https://w3id.org/geosrs/GSK-2011"/></td>
+</tr><tr id="_f8498b0a-6b16-1965-758a-7a6347de8cd7"><td id="_66088153-3384-c83a-b017-79f92e028f08" valign="middle" align="left">Type</td>
+<td id="_76bdc8fc-17de-0721-fe8f-ceabc4cecc58" valign="middle" align="left"><link target="https://w3id.org/geosrs/Ellipsoid">geosrs:Ellipsoid</link></td>
+</tr><tr id="_150df8ce-3c04-3946-de32-66fe7ec58bf4"><td id="_d9484531-6961-aa28-8582-ce357f5abeb0" valign="middle" align="left">Definition</td>
+<td id="_1446b7cc-be0f-cdb3-7573-f6f2a0f96108" valign="middle" align="left">GSK-2011 Spheroid</td>
 </tr></tbody>
 </table>
 </clause>
 
-<clause id="_b36e9d53-5f01-c067-a22a-5e075fef8db3" obligation="normative">
+<clause id="_6a95249c-54a1-30c6-d267-da4e48c4f6be" obligation="normative">
 <title id="_f317d615-ffe3-adb9-3caa-954b7935e535">Instance: geosrs:Zach1812</title>
-<table id="_89b790a3-bef8-664b-bf27-c290e97fb56c"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<table id="_63b6b89b-9d55-5913-d835-489c84351c51"><colgroup><col width="50%"/><col width="50%"/></colgroup>
 <name id="_665b3cd3-b4b6-5ace-f3ee-01b3951a75b0">geosrs:Zach1812</name>
-<tbody><tr id="_6a20a7ca-6272-0764-8ab2-a20a47e2a0c2"><td id="_44c233e6-8097-598b-f484-db86f9fd0344" valign="middle" align="left">URI</td>
-<td id="_0a288b9d-3914-c1f9-e9d0-89f712b1d4f4" valign="middle" align="left"><link target="https://w3id.org/geosrs/Zach1812"/></td>
+<tbody><tr id="_4e6c6168-1e07-aaec-4b9c-ce27cca49d5c"><td id="_a91f3d15-9190-afce-36de-62eeea263447" valign="middle" align="left">URI</td>
+<td id="_eead5543-1d45-1e21-d85c-74fb72d71786" valign="middle" align="left"><link target="https://w3id.org/geosrs/Zach1812"/></td>
+</tr><tr id="_77e5b604-232c-4fbb-8a6b-41ac47be14cd"><td id="_b0a786a7-eedf-3c1e-f3b2-391d35a8088d" valign="middle" align="left">Type</td>
+<td id="_f9423d9d-5051-c90f-3a6c-dc6cb5f3b484" valign="middle" align="left"><link target="https://w3id.org/geosrs/Ellipsoid">geosrs:Ellipsoid</link></td>
+</tr><tr id="_984d4ae3-3608-4aa1-53ab-e4a6d456def1"><td id="_8996add8-a37c-6e8b-fa7c-f4d973ff802a" valign="middle" align="left">Definition</td>
+<td id="_48bbdbd6-129d-cc44-7d3c-2fa59dc9170b" valign="middle" align="left">Zach 1812 Spheroid</td>
 </tr></tbody>
 </table>
 </clause>
 
-<clause id="_9f94bf0a-b780-2e00-2201-0164e9d1fa52" obligation="normative">
+<clause id="_46021e27-d3ea-b7b8-4b3a-bd4ec55302f9" obligation="normative">
 <title id="_958f8b38-4c54-65a8-29f0-0792611f737e">Instance: geosrs:Clarke1880ARC</title>
-<table id="_3d499242-8c50-c99a-6054-2640a9089b41"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<table id="_a79872fd-4e39-c251-96ac-e1d1a42c2400"><colgroup><col width="50%"/><col width="50%"/></colgroup>
 <name id="_8cfec070-e366-0134-bc0a-35396782ef4c">geosrs:Clarke1880ARC</name>
-<tbody><tr id="_90a28b2d-2ee1-53dc-ca51-f579f507d55b"><td id="_eab7797f-b396-720b-01b6-7d9aa223e927" valign="middle" align="left">URI</td>
-<td id="_0d70a3f4-c489-dcc2-f858-0e7fb19de8ad" valign="middle" align="left"><link target="https://w3id.org/geosrs/Clarke1880ARC"/></td>
+<tbody><tr id="_e18743e4-e36b-d2b7-f866-a88ba2aa6e1d"><td id="_6c928a91-331f-1463-2028-3de9ae37c4e5" valign="middle" align="left">URI</td>
+<td id="_90f8194d-15d8-120f-607a-61344a12a377" valign="middle" align="left"><link target="https://w3id.org/geosrs/Clarke1880ARC"/></td>
+</tr><tr id="_3e5b1a63-4d65-4aa0-599f-6a7e68557973"><td id="_437596ea-5f0a-704e-a228-099aac75dc84" valign="middle" align="left">Type</td>
+<td id="_b86f4a42-0739-8c14-21da-58a62b0f9f47" valign="middle" align="left"><link target="https://w3id.org/geosrs/Ellipsoid">geosrs:Ellipsoid</link></td>
+</tr><tr id="_ba58b6d9-8c28-e781-31d8-91da02d7d88b"><td id="_1fc2c935-a58c-1e13-0274-68efdde3e99c" valign="middle" align="left">Definition</td>
+<td id="_e4e9b724-b6fe-c795-e634-8069ad9ffc4e" valign="middle" align="left">Clarke 1880 (Arc) Spheroid</td>
 </tr></tbody>
 </table>
 </clause>
 
-<clause id="_707882c6-8246-e2c3-d53d-898e8be3d98e" obligation="normative">
+<clause id="_191777d1-7dfa-92d9-5040-af20603b2a7b" obligation="normative">
 <title id="_ab90a9b9-7cae-0111-3146-240efff756f6">Instance: geosrs:Clarke1880IGN</title>
-<table id="_381ffa55-d9b4-87be-044f-4607137cb0d4"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<table id="_b9bf7752-5268-3bfb-6917-1c5a18bc55fc"><colgroup><col width="50%"/><col width="50%"/></colgroup>
 <name id="_a5ea8c59-b9e4-2ebe-6e83-d5b496c2e6cc">geosrs:Clarke1880IGN</name>
-<tbody><tr id="_ac51ec3c-5747-7096-0f11-20f54e9baa9b"><td id="_90792081-f70f-b229-a798-fca926190071" valign="middle" align="left">URI</td>
-<td id="_0586e469-6363-fe7f-1b7f-8c7e9e35047b" valign="middle" align="left"><link target="https://w3id.org/geosrs/Clarke1880IGN"/></td>
+<tbody><tr id="_2f80338c-64f8-da0b-11ab-8a755688242b"><td id="_688664cb-450d-87a9-68d1-2f5f7d294cf7" valign="middle" align="left">URI</td>
+<td id="_426d23ae-d3ce-d9eb-642c-bbb68a33a255" valign="middle" align="left"><link target="https://w3id.org/geosrs/Clarke1880IGN"/></td>
+</tr><tr id="_1d4abcb5-5b41-d805-c4b9-564c1d85eadc"><td id="_20005215-26ec-1bf5-ead2-84c4459bca86" valign="middle" align="left">Type</td>
+<td id="_4996f552-677e-9b6f-c92a-2b9da6a9b1e4" valign="middle" align="left"><link target="https://w3id.org/geosrs/Ellipsoid">geosrs:Ellipsoid</link></td>
+</tr><tr id="_9a4f2cb9-03c3-d386-6fe0-a740ccbdeeb6"><td id="_1b61093c-9b49-fed6-cc6f-de6b2f2e177b" valign="middle" align="left">Definition</td>
+<td id="_f61c939f-1848-56ce-7286-0ce3c9d11fc1" valign="middle" align="left">Clarke 1880 (Ing) Spheroid</td>
 </tr></tbody>
 </table>
 </clause>
 
-<clause id="_16ee9fc7-e7cd-9d73-2ce4-3cff2cb26562" obligation="normative">
+<clause id="_eb9436bb-3fcf-071c-8309-845afcdf386c" obligation="normative">
 <title id="_91fe99a2-7fa8-fb75-2618-757cb6d049c9">Instance: geosrs:WGS66</title>
-<table id="_2924cd09-9134-2f24-3839-138a1bb03bfb"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<table id="_7deb0acb-580e-8a61-cbe2-523a7a11c47d"><colgroup><col width="50%"/><col width="50%"/></colgroup>
 <name id="_5d7c9a42-1b00-fb47-fad9-2aa6f15ece0d">geosrs:WGS66</name>
-<tbody><tr id="_a53e03c6-5b94-0689-e48c-f8f4774e19a8"><td id="_8ed3dd7e-d313-90dd-83d2-545b78996eb2" valign="middle" align="left">URI</td>
-<td id="_26760a98-f64d-ea14-20b5-3aa8096330f9" valign="middle" align="left"><link target="https://w3id.org/geosrs/WGS66"/></td>
+<tbody><tr id="_a366c7f0-63a8-c984-6ad6-7e3c289a17ea"><td id="_cbcb81c3-5bad-78dd-b72f-d553dc474ed1" valign="middle" align="left">URI</td>
+<td id="_8e595c77-cf9f-2f12-2ff8-217ecaac9a4e" valign="middle" align="left"><link target="https://w3id.org/geosrs/WGS66"/></td>
+</tr><tr id="_0a6a3b20-e4dd-eb94-6b39-14d30ee4976c"><td id="_18495863-f56f-501c-1581-45fe8f83e05b" valign="middle" align="left">Type</td>
+<td id="_4c1da381-1be2-6d14-dad0-87f7add8ae28" valign="middle" align="left"><link target="https://w3id.org/geosrs/Ellipsoid">geosrs:Ellipsoid</link></td>
+</tr><tr id="_93870c86-4237-cc5f-8e13-9c2476fbe7b4"><td id="_fe81bcfe-356e-3cb4-d792-0aae6d6ebdf0" valign="middle" align="left">Definition</td>
+<td id="_d6872dbe-3e8b-140a-78e3-b13003d38fb7" valign="middle" align="left">WGS 66 Spheroid</td>
 </tr></tbody>
 </table>
 </clause>
 
-<clause id="_1128b9c3-3e4a-57ee-1378-1c1044314590" obligation="normative">
+<clause id="_ec3efb0b-d9e0-1382-95d8-a6ad223c422c" obligation="normative">
 <title id="_abaaaa16-b78f-2aa1-e89b-0bb7304d972b">Instance: geosrs:WGS72</title>
-<table id="_ba5d4c16-1e14-a2f2-a709-a4bf633cfffc"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<table id="_dd73bd82-2612-eae5-7f31-1dd150234d0c"><colgroup><col width="50%"/><col width="50%"/></colgroup>
 <name id="_eb8176da-9c48-5160-70a2-df569ab3bdfd">geosrs:WGS72</name>
-<tbody><tr id="_69c3a008-305c-5b41-2dee-87ac443a89dd"><td id="_eaa48cb7-180a-3cea-0ad1-b345e5530c8b" valign="middle" align="left">URI</td>
-<td id="_5d7b6deb-b896-0f0d-ef1b-50ecbc71455a" valign="middle" align="left"><link target="https://w3id.org/geosrs/WGS72"/></td>
+<tbody><tr id="_0be5569d-9b04-414a-326e-b62457b47c90"><td id="_39a841f0-ef2f-ea02-6645-42cfa76928f6" valign="middle" align="left">URI</td>
+<td id="_09c2a449-0af8-f594-06c2-90f48c605589" valign="middle" align="left"><link target="https://w3id.org/geosrs/WGS72"/></td>
+</tr><tr id="_57b6e90e-c626-a626-9f2e-e73ce5e2c05e"><td id="_b332c9fe-7d48-90fa-9931-0beda82916a5" valign="middle" align="left">Type</td>
+<td id="_f6d368e7-ee6f-697e-1410-1c8f71cd879d" valign="middle" align="left"><link target="https://w3id.org/geosrs/Ellipsoid">geosrs:Ellipsoid</link></td>
+</tr><tr id="_eae61b0b-9977-f9de-d63f-6e8d0a996c88"><td id="_ab4b698d-d4d1-0703-828b-1cb929114a05" valign="middle" align="left">Definition</td>
+<td id="_f68247a3-dea5-31bd-fb19-c56d05435735" valign="middle" align="left">WGS 72 Spheroid</td>
 </tr></tbody>
 </table>
 </clause>
 
-<clause id="_680e64ce-a4a8-37b0-59d3-46e2be6a5a16" obligation="normative">
+<clause id="_9e0e843d-abce-4a14-cb8e-709a71b6ddd8" obligation="normative">
 <title id="_9a20668a-c83c-79c7-1ff3-260421d4c1e1">Instance: geosrs:WGS84</title>
-<table id="_d35c6df2-ffdc-89af-f87c-d738024aca35"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<table id="_d1854255-8c5c-98de-295e-79d992aef970"><colgroup><col width="50%"/><col width="50%"/></colgroup>
 <name id="_a2a052df-63e0-3b97-8adb-542f1ff9b8fe">geosrs:WGS84</name>
-<tbody><tr id="_d1db23e9-e5a4-fe92-4944-458c6a6c6302"><td id="_5965e57d-52ee-f2fc-a4ca-d96eb69bf227" valign="middle" align="left">URI</td>
-<td id="_6576dd8d-4f40-e8b0-2766-126af302e8c2" valign="middle" align="left"><link target="https://w3id.org/geosrs/WGS84"/></td>
+<tbody><tr id="_44ce12be-9857-28bd-b364-48190c5afadc"><td id="_a9ba8b58-df81-65b9-debd-e5b368b21c3d" valign="middle" align="left">URI</td>
+<td id="_4e9000b7-65ce-1148-0c7e-ed49fb561185" valign="middle" align="left"><link target="https://w3id.org/geosrs/WGS84"/></td>
+</tr><tr id="_0bb09c47-4e79-e27c-2e90-d249910a108f"><td id="_3cec0e1d-12e9-6fae-f7cb-771c8ded34ca" valign="middle" align="left">Type</td>
+<td id="_d49a277c-5073-0498-e7fe-31356587dc02" valign="middle" align="left"><link target="https://w3id.org/geosrs/Ellipsoid">geosrs:Ellipsoid</link></td>
+</tr><tr id="_f663f1fe-00fa-9627-c9f9-6eb5c704b639"><td id="_a51df5cf-ce4d-ed36-c658-b8a3334d0d50" valign="middle" align="left">Definition</td>
+<td id="_384628f7-2b59-644a-e054-05f1df0ac5b7" valign="middle" align="left">WGS 84 Spheroid</td>
 </tr></tbody>
 </table>
 </clause>
 
-<clause id="_72f2a3dc-5ee9-7297-d621-6579acc89904" obligation="normative">
+<clause id="_da8515e3-cc37-af91-55fa-f6b623445053" obligation="normative">
 <title id="_ad47045e-e488-2f99-42ee-ba54b9532be1">Instance: geosrs:Krassowsky1940</title>
-<table id="_61030142-a639-c1dc-2e51-d0029d0b58b2"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<table id="_a7c00a97-18b5-3d15-1a7b-18eb03ab4f3d"><colgroup><col width="50%"/><col width="50%"/></colgroup>
 <name id="_5ef8e9cb-53f8-6dba-0f7d-35450e2d9403">geosrs:Krassowsky1940</name>
-<tbody><tr id="_4164e4b9-e3bd-fa91-7b05-a3b55218de86"><td id="_aeb66de1-17d3-2015-df61-be521a3a1112" valign="middle" align="left">URI</td>
-<td id="_dcd00819-8a6c-3c38-cc5e-4b767d8960ff" valign="middle" align="left"><link target="https://w3id.org/geosrs/Krassowsky1940"/></td>
+<tbody><tr id="_566201ea-0586-af5b-1acf-0701b9740506"><td id="_066173bd-b237-8125-6c14-1d5507aa17c9" valign="middle" align="left">URI</td>
+<td id="_49531817-1a58-65dc-be18-a73144db1b50" valign="middle" align="left"><link target="https://w3id.org/geosrs/Krassowsky1940"/></td>
+</tr><tr id="_a4d5ae7c-1f7e-da2b-8479-f7981b227dff"><td id="_52950c7e-a6b9-9f40-4c74-172e8456f502" valign="middle" align="left">Type</td>
+<td id="_0a72aff4-5abe-3d7a-ff7f-c462d6838ca7" valign="middle" align="left"><link target="https://w3id.org/geosrs/Ellipsoid">geosrs:Ellipsoid</link></td>
+</tr><tr id="_b1f4c46f-0479-315d-514f-0034d240796a"><td id="_6f2a4d7c-67d3-e6c2-0520-8e2c54baa019" valign="middle" align="left">Definition</td>
+<td id="_89ba0e68-480f-2fdf-6088-e28d182eedf4" valign="middle" align="left">Krassowsky 1940 Spheroid</td>
 </tr></tbody>
 </table>
 </clause>

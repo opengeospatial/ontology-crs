@@ -1578,7 +1578,7 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 </clause>
 </clause>
 
-<clause id="_d8f63078-affe-e331-080c-2b82d3987d1d" obligation="normative">
+<clause id="_0019635b-fd7c-96d4-e3d8-0731d8f4e29b" obligation="normative">
 <title id="_4ab3059e-d1fe-d0e6-e6e0-fef2aded1f5e">Datum Module</title>
 <p id="_6ee5f6b9-ecce-9491-cb59-687aeb3ad204" anchor="datum">This clause establishes the <strong>Datum</strong> Requirements class, with IRI <tt>/req/datum</tt>, which has a corresponding Conformance Class, <strong>Datum</strong>, with IRI <tt>/conf/datum</tt>.</p>
 
@@ -1623,7 +1623,7 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 </clause>
 </clause>
 
-<clause id="_c50ea7fd-67ed-392f-c9e8-b41b16d72e5e" obligation="normative">
+<clause id="_4014808f-2f44-186a-9096-236726a68c90" obligation="normative">
 <title id="_4883375b-3cb9-6a79-ae0c-f9ea8beb7a1c">Datum Properties</title>
 <requirement id="_4abdc836-624f-8112-6df6-9e9c11d04a3d" model="ogc" anchor="/req/Datum_Properties">
 <title>Datum Properties</title> 
@@ -1648,9 +1648,9 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 </table>
 </clause>
 
-<clause id="_5fbd9d1a-bffe-8c19-45c6-e89d1626d1cd" obligation="normative">
+<clause id="_165c0e6b-2dad-6d6f-e450-b8d5152d8cac" obligation="normative">
 <title id="_bc232ce8-cba6-75c7-3fc0-b01e08a9d30e">Property: geosrs:ellipsoid</title>
-<table id="_ed09a79a-68f7-4c4c-49ec-757d6fb531ba"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<table id="_1359ef6c-2ce8-1a4f-5c92-a84888f53596"><colgroup><col width="50%"/><col width="50%"/></colgroup>
 <name id="_271df554-16c2-8a67-8b6e-82d02490a537">geosrs:ellipsoid</name>
 <tbody><tr id="_d7fc3373-3c4b-c043-664b-67d9889fcef7"><td id="_6d430ed9-26a3-1064-b615-a7e2276f7406" valign="middle" align="left">URI</td>
 <td id="_b44a9eee-0c9e-6fe5-3079-72ac7d71baba" valign="middle" align="left"><link target="https://w3id.org/geosrs/datum/ellipsoid"/></td>
@@ -1662,13 +1662,15 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 <td id="_aeb5f784-4184-5e11-23e0-7d3c869d0cfd" valign="middle" align="left"><link target="https://w3id.org/geosrs/Ellipsoid">Ellipsoid</link></td>
 </tr><tr id="_adb3d4c7-ec66-1059-d6ea-2bdf884f8eef"><td id="_f317eb89-334f-f030-e610-7a09d548a72e" valign="middle" align="left">Domain</td>
 <td id="_13a6ed5a-bdb8-bc47-ba48-76b18d11903e" valign="middle" align="left"><link target="https://w3id.org/geosrs/Datum">Datum</link></td>
+</tr><tr id="_7ce91657-2417-0be7-7628-b3c4a975f9c0"><td id="_4c31dac8-cce5-11dc-18d5-e8d18e06dd1c" valign="middle" align="left">Example</td>
+<td id="_a021e508-d7f1-ab0c-38a9-4d9c07eb6d92" valign="middle" align="left"><link target="https://opengeospatial.github.io/ontology-crs/data/ont/crs//datum/Timbalai_1948">geosrs:ellipsoid</link></td>
 </tr></tbody>
 </table>
 </clause>
 
-<clause id="_09153fed-0834-5e17-e9b1-0027dad6e279" obligation="normative">
+<clause id="_45c09537-7424-f1eb-52d1-997d0ff56a43" obligation="normative">
 <title id="_e27ab024-1a3b-a985-9363-666e5bfa69bc">Property: geosrs:primeMeridian</title>
-<table id="_ce7f5984-9dea-e752-2236-4d2f90547170"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<table id="_d6226436-699f-1342-91ac-b981aec114bd"><colgroup><col width="50%"/><col width="50%"/></colgroup>
 <name id="_d492fc61-12f2-53e8-624a-95da900c8054">geosrs:primeMeridian</name>
 <tbody><tr id="_99122124-ca28-15e5-7944-74346d8b1bde"><td id="_7be6962b-4939-bd9d-e731-5d6a1694ea2c" valign="middle" align="left">URI</td>
 <td id="_6b6cee7c-c695-ffdd-62e0-fdeff3854167" valign="middle" align="left"><link target="https://w3id.org/geosrs/datum/primeMeridian"/></td>
@@ -1680,6 +1682,8 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 <td id="_a7a23703-2dba-f0a3-098f-d2ed5510acde" valign="middle" align="left"><link target="https://w3id.org/geosrs/PrimeMeridian">PrimeMeridian</link></td>
 </tr><tr id="_af7a313d-d53a-0bfb-b15c-ec8c78d86393"><td id="_441ab193-a81e-9005-140f-5bb36dd28ec5" valign="middle" align="left">Domain</td>
 <td id="_964bdd53-9312-deee-cbd0-8cb0e7f67b85" valign="middle" align="left"><link target="https://w3id.org/geosrs/Datum">Datum</link></td>
+</tr><tr id="_e0e9916f-e046-4e02-8108-a4bfbd291353"><td id="_75f8fc6c-480e-74cf-a4aa-4c14db6225e6" valign="middle" align="left">Example</td>
+<td id="_19c50d8f-8f21-bcb2-1b79-8514da16633c" valign="middle" align="left"><link target="https://opengeospatial.github.io/ontology-crs/data/ont/crs//datum/Geodetic_Datum_of_1965">geosrs:primeMeridian</link></td>
 </tr></tbody>
 </table>
 </clause>
@@ -4961,7 +4965,7 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 </clause>
 </clause>
 
-<clause id="_29d1923b-d4fd-4ac7-652a-110c17848c11" obligation="normative">
+<clause id="_93fd7a42-e693-b269-52db-b07e7272029c" obligation="normative">
 <title id="_7a3c0154-98ac-e836-4598-456590081406">Common Instances</title>
 <p id="_26e87688-b135-9dfb-a9bf-8702510fa98f" anchor="instances">This clause establishes common instances which are needed in CRS specifications as Requirement class <strong>INSTANCES</strong>, with IRI <tt>/req/instances</tt>, which has a corresponding Conformance Class, <strong>INSTANCES</strong>, with IRI <tt>/conf/instances</tt>.</p>
 
@@ -4977,11 +4981,11 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 </dl></description>
 </requirement>
 
-<clause id="_35c452d2-383d-8c7b-0257-f3fe83c89038" obligation="normative">
+<clause id="_40b78fa2-0b5f-abb6-77d8-ed0f8e2e15ed" obligation="normative">
 <title id="_5dd48741-84a1-0a61-50b9-1bb900b42efe">Coordinate System Axis</title>
-<requirement id="_88127acf-48c7-647c-3966-62440e3ccd41" model="ogc" anchor="/req/Coordinate_System_Axis">
+<requirement id="_16dad3bc-97f0-e065-66a9-7d9065904dec" model="ogc" anchor="/req/Coordinate_System_Axis">
 <title>Coordinate System Axis</title> 
-<identifier>/req/Coordinate_System_Axis</identifier><description><p id="_5b8e006e-adc3-f232-722f-b9d9a3c1e330">Implementations shall allow the RDFS classes <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>down</referenceFrom></locality></localityStack><display-text>geosrs:down</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>east</referenceFrom></locality></localityStack><display-text>geosrs:east</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>north</referenceFrom></locality></localityStack><display-text>geosrs:north</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>south</referenceFrom></locality></localityStack><display-text>geosrs:south</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>up</referenceFrom></locality></localityStack><display-text>geosrs:up</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>west</referenceFrom></locality></localityStack><display-text>geosrs:west</display-text></eref> to be used in SPARQL graph patterns.</p></description>
+<identifier>/req/Coordinate_System_Axis</identifier><description><p id="_91276af8-6273-02a2-8b86-473d6fba0bb7">Implementations shall allow the RDFS instances <eref bibitemid="Instance_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>down</referenceFrom></locality></localityStack><display-text>geosrs:down</display-text></eref>, <eref bibitemid="Instance_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>east</referenceFrom></locality></localityStack><display-text>geosrs:east</display-text></eref>, <eref bibitemid="Instance_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>north</referenceFrom></locality></localityStack><display-text>geosrs:north</display-text></eref>, <eref bibitemid="Instance_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>south</referenceFrom></locality></localityStack><display-text>geosrs:south</display-text></eref>, <eref bibitemid="Instance_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>up</referenceFrom></locality></localityStack><display-text>geosrs:up</display-text></eref>, <eref bibitemid="Instance_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>west</referenceFrom></locality></localityStack><display-text>geosrs:west</display-text></eref> to be used in SPARQL graph patterns.</p></description>
 </requirement>
 
 <clause id="_4087bfc9-1cd9-37c3-2d4a-d5953d33f3e2" obligation="normative">
@@ -5069,11 +5073,11 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 </clause>
 </clause>
 
-<clause id="_79b72c30-1967-6e88-d28e-2120a8d8fe37" obligation="normative">
+<clause id="_2b2e71da-92fc-893d-416b-3f56409d51ba" obligation="normative">
 <title id="_22e2ea1a-7a2b-e2cc-6115-792b989a1f7d">Spheroids</title>
-<requirement id="_9444f8a6-33b6-22eb-f1b0-2290b0cf1c37" model="ogc" anchor="/req/Spheroids">
+<requirement id="_936f38df-96d1-d232-dfc6-bfd15da5c27b" model="ogc" anchor="/req/Spheroids">
 <title>Spheroids</title> 
-<identifier>/req/Spheroids</identifier><description><p id="_c0705ee9-a6d7-1914-b416-59505dd0fcb0">Implementations shall allow the RDFS classes <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>GRS1980</referenceFrom></locality></localityStack><display-text>geosrs:GRS1980</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>GRS67</referenceFrom></locality></localityStack><display-text>geosrs:GRS67</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>PZ90</referenceFrom></locality></localityStack><display-text>geosrs:PZ90</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>Airy1830</referenceFrom></locality></localityStack><display-text>geosrs:Airy1830</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>AiryModified1849</referenceFrom></locality></localityStack><display-text>geosrs:AiryModified1849</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>International1924</referenceFrom></locality></localityStack><display-text>geosrs:International1924</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>AustralianNationalSpheroid</referenceFrom></locality></localityStack><display-text>geosrs:AustralianNationalSpheroid</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>Everest1930</referenceFrom></locality></localityStack><display-text>geosrs:Everest1930</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>Clarke1866</referenceFrom></locality></localityStack><display-text>geosrs:Clarke1866</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>Plessis1817</referenceFrom></locality></localityStack><display-text>geosrs:Plessis1817</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>Danish1876</referenceFrom></locality></localityStack><display-text>geosrs:Danish1876</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>Struve1860</referenceFrom></locality></localityStack><display-text>geosrs:Struve1860</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>IAG1975</referenceFrom></locality></localityStack><display-text>geosrs:IAG1975</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>Clarke1858</referenceFrom></locality></localityStack><display-text>geosrs:Clarke1858</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>Clarke1880</referenceFrom></locality></localityStack><display-text>geosrs:Clarke1880</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>Helmert1906</referenceFrom></locality></localityStack><display-text>geosrs:Helmert1906</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>CGCS2000</referenceFrom></locality></localityStack><display-text>geosrs:CGCS2000</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>GSK-2011</referenceFrom></locality></localityStack><display-text>geosrs:GSK-2011</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>Zach1812</referenceFrom></locality></localityStack><display-text>geosrs:Zach1812</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>Clarke1880ARC</referenceFrom></locality></localityStack><display-text>geosrs:Clarke1880ARC</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>Clarke1880IGN</referenceFrom></locality></localityStack><display-text>geosrs:Clarke1880IGN</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>WGS66</referenceFrom></locality></localityStack><display-text>geosrs:WGS66</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>WGS72</referenceFrom></locality></localityStack><display-text>geosrs:WGS72</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>WGS84</referenceFrom></locality></localityStack><display-text>geosrs:WGS84</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>Krassowsky1940</referenceFrom></locality></localityStack><display-text>geosrs:Krassowsky1940</display-text></eref> to be used in SPARQL graph patterns.</p></description>
+<identifier>/req/Spheroids</identifier><description><p id="_1aa5f427-f1a1-2764-10bc-e9cbeb0c3e30">Implementations shall allow the RDFS instances <eref bibitemid="Instance_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>GRS1980</referenceFrom></locality></localityStack><display-text>geosrs:GRS1980</display-text></eref>, <eref bibitemid="Instance_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>GRS67</referenceFrom></locality></localityStack><display-text>geosrs:GRS67</display-text></eref>, <eref bibitemid="Instance_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>PZ90</referenceFrom></locality></localityStack><display-text>geosrs:PZ90</display-text></eref>, <eref bibitemid="Instance_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>Airy1830</referenceFrom></locality></localityStack><display-text>geosrs:Airy1830</display-text></eref>, <eref bibitemid="Instance_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>AiryModified1849</referenceFrom></locality></localityStack><display-text>geosrs:AiryModified1849</display-text></eref>, <eref bibitemid="Instance_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>International1924</referenceFrom></locality></localityStack><display-text>geosrs:International1924</display-text></eref>, <eref bibitemid="Instance_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>AustralianNationalSpheroid</referenceFrom></locality></localityStack><display-text>geosrs:AustralianNationalSpheroid</display-text></eref>, <eref bibitemid="Instance_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>Everest1930</referenceFrom></locality></localityStack><display-text>geosrs:Everest1930</display-text></eref>, <eref bibitemid="Instance_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>Clarke1866</referenceFrom></locality></localityStack><display-text>geosrs:Clarke1866</display-text></eref>, <eref bibitemid="Instance_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>Plessis1817</referenceFrom></locality></localityStack><display-text>geosrs:Plessis1817</display-text></eref>, <eref bibitemid="Instance_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>Danish1876</referenceFrom></locality></localityStack><display-text>geosrs:Danish1876</display-text></eref>, <eref bibitemid="Instance_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>Struve1860</referenceFrom></locality></localityStack><display-text>geosrs:Struve1860</display-text></eref>, <eref bibitemid="Instance_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>IAG1975</referenceFrom></locality></localityStack><display-text>geosrs:IAG1975</display-text></eref>, <eref bibitemid="Instance_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>Clarke1858</referenceFrom></locality></localityStack><display-text>geosrs:Clarke1858</display-text></eref>, <eref bibitemid="Instance_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>Clarke1880</referenceFrom></locality></localityStack><display-text>geosrs:Clarke1880</display-text></eref>, <eref bibitemid="Instance_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>Helmert1906</referenceFrom></locality></localityStack><display-text>geosrs:Helmert1906</display-text></eref>, <eref bibitemid="Instance_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>CGCS2000</referenceFrom></locality></localityStack><display-text>geosrs:CGCS2000</display-text></eref>, <eref bibitemid="Instance_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>GSK-2011</referenceFrom></locality></localityStack><display-text>geosrs:GSK-2011</display-text></eref>, <eref bibitemid="Instance_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>Zach1812</referenceFrom></locality></localityStack><display-text>geosrs:Zach1812</display-text></eref>, <eref bibitemid="Instance_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>Clarke1880ARC</referenceFrom></locality></localityStack><display-text>geosrs:Clarke1880ARC</display-text></eref>, <eref bibitemid="Instance_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>Clarke1880IGN</referenceFrom></locality></localityStack><display-text>geosrs:Clarke1880IGN</display-text></eref>, <eref bibitemid="Instance_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>WGS66</referenceFrom></locality></localityStack><display-text>geosrs:WGS66</display-text></eref>, <eref bibitemid="Instance_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>WGS72</referenceFrom></locality></localityStack><display-text>geosrs:WGS72</display-text></eref>, <eref bibitemid="Instance_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>WGS84</referenceFrom></locality></localityStack><display-text>geosrs:WGS84</display-text></eref>, <eref bibitemid="Instance_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>Krassowsky1940</referenceFrom></locality></localityStack><display-text>geosrs:Krassowsky1940</display-text></eref> to be used in SPARQL graph patterns.</p></description>
 </requirement>
 
 <clause id="_c997de1d-61d2-f359-d469-aa0683945c3a" obligation="normative">
@@ -5888,6 +5892,9 @@ Performance Distributed Computing, pp. 181–184. IEEE Press, New York (2001)</f
 </bibitem>
 <bibitem anchor="Property_ geocrs" id="_8c8050bb-15cf-bf3f-31a1-b7e9ccd417ac" type="internal">
 <docidentifier type="repository">Property/ geocrs</docidentifier>
+</bibitem>
+</references><references hidden="true" normative="false"><bibitem anchor="Instance_ geosrs" id="_0724fb76-a8ce-03b4-c276-0d2f633e3d07" type="internal">
+<docidentifier type="repository">Instance/ geosrs</docidentifier>
 </bibitem>
 </references></bibliography>
 </metanorma>

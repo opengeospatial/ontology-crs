@@ -223,344 +223,372 @@ var minivowlresult={
  ],
  "links": [
   {
-   "source": 4,
-   "target": 41,
-   "valueTo": "datum",
-   "propertyTo": "class",
-   "uriTo": "https://w3id.org/geosrs/datum"
-  },
-  {
-   "source": 4,
-   "target": 20,
-   "valueTo": "datum",
-   "propertyTo": "class",
-   "uriTo": "https://w3id.org/geosrs/datum"
-  },
-  {
-   "source": 4,
-   "target": 19,
-   "valueTo": "datum",
-   "propertyTo": "class",
-   "uriTo": "https://w3id.org/geosrs/datum"
-  },
-  {
-   "source": 4,
-   "target": 18,
-   "valueTo": "datum",
-   "propertyTo": "class",
-   "uriTo": "https://w3id.org/geosrs/datum"
-  },
-  {
-   "source": 3,
-   "target": 41,
-   "valueTo": "datum",
-   "propertyTo": "class",
-   "uriTo": "https://w3id.org/geosrs/datum"
-  },
-  {
-   "source": 3,
-   "target": 20,
-   "valueTo": "datum",
-   "propertyTo": "class",
-   "uriTo": "https://w3id.org/geosrs/datum"
-  },
-  {
-   "source": 3,
-   "target": 19,
-   "valueTo": "datum",
-   "propertyTo": "class",
-   "uriTo": "https://w3id.org/geosrs/datum"
-  },
-  {
-   "source": 3,
-   "target": 18,
-   "valueTo": "datum",
-   "propertyTo": "class",
-   "uriTo": "https://w3id.org/geosrs/datum"
-  },
-  {
-   "source": 2,
-   "target": 41,
-   "valueTo": "datum",
-   "propertyTo": "class",
-   "uriTo": "https://w3id.org/geosrs/datum"
-  },
-  {
-   "source": 2,
-   "target": 20,
-   "valueTo": "datum",
-   "propertyTo": "class",
-   "uriTo": "https://w3id.org/geosrs/datum"
-  },
-  {
-   "source": 2,
-   "target": 19,
-   "valueTo": "datum",
-   "propertyTo": "class",
-   "uriTo": "https://w3id.org/geosrs/datum"
-  },
-  {
-   "source": 2,
-   "target": 18,
-   "valueTo": "datum",
-   "propertyTo": "class",
-   "uriTo": "https://w3id.org/geosrs/datum"
-  },
-  {
-   "source": 5,
-   "target": 41,
-   "valueTo": "datum",
-   "propertyTo": "class",
-   "uriTo": "https://w3id.org/geosrs/datum"
-  },
-  {
-   "source": 5,
-   "target": 20,
-   "valueTo": "datum",
-   "propertyTo": "class",
-   "uriTo": "https://w3id.org/geosrs/datum"
-  },
-  {
-   "source": 5,
-   "target": 19,
-   "valueTo": "datum",
-   "propertyTo": "class",
-   "uriTo": "https://w3id.org/geosrs/datum"
-  },
-  {
-   "source": 5,
-   "target": 18,
-   "valueTo": "datum",
-   "propertyTo": "class",
-   "uriTo": "https://w3id.org/geosrs/datum"
-  },
-  {
    "source": 1,
-   "target": 41,
-   "valueTo": "datum",
-   "propertyTo": "class",
-   "uriTo": "https://w3id.org/geosrs/datum"
-  },
-  {
-   "source": 1,
-   "target": 20,
-   "valueTo": "datum",
-   "propertyTo": "class",
-   "uriTo": "https://w3id.org/geosrs/datum"
-  },
-  {
-   "source": 1,
-   "target": 19,
-   "valueTo": "datum",
-   "propertyTo": "class",
-   "uriTo": "https://w3id.org/geosrs/datum"
-  },
-  {
-   "source": 1,
-   "target": 18,
-   "valueTo": "datum",
-   "propertyTo": "class",
-   "uriTo": "https://w3id.org/geosrs/datum"
-  },
-  {
-   "source": 0,
-   "target": 41,
-   "valueTo": "datum",
-   "propertyTo": "class",
-   "uriTo": "https://w3id.org/geosrs/datum"
-  },
-  {
-   "source": 0,
-   "target": 20,
-   "valueTo": "datum",
-   "propertyTo": "class",
-   "uriTo": "https://w3id.org/geosrs/datum"
-  },
-  {
-   "source": 0,
-   "target": 19,
-   "valueTo": "datum",
-   "propertyTo": "class",
-   "uriTo": "https://w3id.org/geosrs/datum"
-  },
-  {
-   "source": 0,
-   "target": 18,
-   "valueTo": "datum",
-   "propertyTo": "class",
-   "uriTo": "https://w3id.org/geosrs/datum"
-  },
-  {
-   "source": 6,
-   "target": 41,
-   "valueTo": "datum",
-   "propertyTo": "class",
-   "uriTo": "https://w3id.org/geosrs/datum"
-  },
-  {
-   "source": 6,
-   "target": 20,
-   "valueTo": "datum",
-   "propertyTo": "class",
-   "uriTo": "https://w3id.org/geosrs/datum"
-  },
-  {
-   "source": 6,
-   "target": 19,
-   "valueTo": "datum",
-   "propertyTo": "class",
-   "uriTo": "https://w3id.org/geosrs/datum"
-  },
-  {
-   "source": 6,
-   "target": 18,
-   "valueTo": "datum",
-   "propertyTo": "class",
-   "uriTo": "https://w3id.org/geosrs/datum"
-  },
-  {
-   "source": 42,
-   "target": 4,
-   "valueTo": "member",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
-  },
-  {
-   "source": 42,
-   "target": 3,
-   "valueTo": "member",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
-  },
-  {
-   "source": 42,
-   "target": 2,
-   "valueTo": "member",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
-  },
-  {
-   "source": 42,
-   "target": 31,
-   "valueTo": "member",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
-  },
-  {
-   "source": 42,
    "target": 29,
-   "valueTo": "member",
+   "valueTo": "coordinateOperation",
    "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
+   "uriTo": "https://w3id.org/geosrs/coordinateOperation"
   },
   {
-   "source": 42,
+   "source": 1,
+   "target": 24,
+   "valueTo": "coordinateOperation",
+   "propertyTo": "class",
+   "uriTo": "https://w3id.org/geosrs/coordinateOperation"
+  },
+  {
+   "source": 1,
    "target": 35,
-   "valueTo": "member",
+   "valueTo": "coordinateOperation",
    "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
+   "uriTo": "https://w3id.org/geosrs/coordinateOperation"
   },
   {
-   "source": 42,
-   "target": 18,
-   "valueTo": "member",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
-  },
-  {
-   "source": 42,
-   "target": 25,
-   "valueTo": "member",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
-  },
-  {
-   "source": 42,
-   "target": 37,
-   "valueTo": "member",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
-  },
-  {
-   "source": 42,
-   "target": 14,
-   "valueTo": "member",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
-  },
-  {
-   "source": 42,
-   "target": 22,
-   "valueTo": "member",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
-  },
-  {
-   "source": 42,
-   "target": 13,
-   "valueTo": "member",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
-  },
-  {
-   "source": 42,
-   "target": 15,
-   "valueTo": "member",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
-  },
-  {
-   "source": 42,
-   "target": 6,
-   "valueTo": "member",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
-  },
-  {
-   "source": 42,
+   "source": 1,
    "target": 32,
-   "valueTo": "member",
+   "valueTo": "coordinateOperation",
    "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
+   "uriTo": "https://w3id.org/geosrs/coordinateOperation"
   },
   {
-   "source": 42,
+   "source": 1,
+   "target": 33,
+   "valueTo": "coordinateOperation",
+   "propertyTo": "class",
+   "uriTo": "https://w3id.org/geosrs/coordinateOperation"
+  },
+  {
+   "source": 1,
+   "target": 37,
+   "valueTo": "coordinateOperation",
+   "propertyTo": "class",
+   "uriTo": "https://w3id.org/geosrs/coordinateOperation"
+  },
+  {
+   "source": 1,
+   "target": 38,
+   "valueTo": "coordinateOperation",
+   "propertyTo": "class",
+   "uriTo": "https://w3id.org/geosrs/coordinateOperation"
+  },
+  {
+   "source": 1,
+   "target": 27,
+   "valueTo": "coordinateOperation",
+   "propertyTo": "class",
+   "uriTo": "https://w3id.org/geosrs/coordinateOperation"
+  },
+  {
+   "source": 1,
+   "target": 22,
+   "valueTo": "coordinateOperation",
+   "propertyTo": "class",
+   "uriTo": "https://w3id.org/geosrs/coordinateOperation"
+  },
+  {
+   "source": 1,
+   "target": 30,
+   "valueTo": "coordinateOperation",
+   "propertyTo": "class",
+   "uriTo": "https://w3id.org/geosrs/coordinateOperation"
+  },
+  {
+   "source": 1,
+   "target": 36,
+   "valueTo": "coordinateOperation",
+   "propertyTo": "class",
+   "uriTo": "https://w3id.org/geosrs/coordinateOperation"
+  },
+  {
+   "source": 1,
+   "target": 31,
+   "valueTo": "coordinateOperation",
+   "propertyTo": "class",
+   "uriTo": "https://w3id.org/geosrs/coordinateOperation"
+  },
+  {
+   "source": 1,
+   "target": 26,
+   "valueTo": "coordinateOperation",
+   "propertyTo": "class",
+   "uriTo": "https://w3id.org/geosrs/coordinateOperation"
+  },
+  {
+   "source": 1,
    "target": 28,
-   "valueTo": "member",
+   "valueTo": "coordinateOperation",
    "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
+   "uriTo": "https://w3id.org/geosrs/coordinateOperation"
   },
   {
-   "source": 42,
-   "target": 12,
-   "valueTo": "member",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
-  },
-  {
-   "source": 42,
-   "target": 16,
-   "valueTo": "member",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
-  },
-  {
-   "source": 42,
-   "target": 20,
-   "valueTo": "member",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
-  },
-  {
-   "source": 42,
-   "target": 19,
-   "valueTo": "member",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
-  },
-  {
-   "source": 42,
+   "source": 1,
    "target": 34,
+   "valueTo": "coordinateOperation",
+   "propertyTo": "class",
+   "uriTo": "https://w3id.org/geosrs/coordinateOperation"
+  },
+  {
+   "source": 1,
+   "target": 25,
+   "valueTo": "coordinateOperation",
+   "propertyTo": "class",
+   "uriTo": "https://w3id.org/geosrs/coordinateOperation"
+  },
+  {
+   "source": 1,
+   "target": 23,
+   "valueTo": "coordinateOperation",
+   "propertyTo": "class",
+   "uriTo": "https://w3id.org/geosrs/coordinateOperation"
+  },
+  {
+   "source": 0,
+   "target": 29,
+   "valueTo": "coordinateOperation",
+   "propertyTo": "class",
+   "uriTo": "https://w3id.org/geosrs/coordinateOperation"
+  },
+  {
+   "source": 0,
+   "target": 24,
+   "valueTo": "coordinateOperation",
+   "propertyTo": "class",
+   "uriTo": "https://w3id.org/geosrs/coordinateOperation"
+  },
+  {
+   "source": 0,
+   "target": 35,
+   "valueTo": "coordinateOperation",
+   "propertyTo": "class",
+   "uriTo": "https://w3id.org/geosrs/coordinateOperation"
+  },
+  {
+   "source": 0,
+   "target": 32,
+   "valueTo": "coordinateOperation",
+   "propertyTo": "class",
+   "uriTo": "https://w3id.org/geosrs/coordinateOperation"
+  },
+  {
+   "source": 0,
+   "target": 33,
+   "valueTo": "coordinateOperation",
+   "propertyTo": "class",
+   "uriTo": "https://w3id.org/geosrs/coordinateOperation"
+  },
+  {
+   "source": 0,
+   "target": 37,
+   "valueTo": "coordinateOperation",
+   "propertyTo": "class",
+   "uriTo": "https://w3id.org/geosrs/coordinateOperation"
+  },
+  {
+   "source": 0,
+   "target": 38,
+   "valueTo": "coordinateOperation",
+   "propertyTo": "class",
+   "uriTo": "https://w3id.org/geosrs/coordinateOperation"
+  },
+  {
+   "source": 0,
+   "target": 27,
+   "valueTo": "coordinateOperation",
+   "propertyTo": "class",
+   "uriTo": "https://w3id.org/geosrs/coordinateOperation"
+  },
+  {
+   "source": 0,
+   "target": 22,
+   "valueTo": "coordinateOperation",
+   "propertyTo": "class",
+   "uriTo": "https://w3id.org/geosrs/coordinateOperation"
+  },
+  {
+   "source": 0,
+   "target": 30,
+   "valueTo": "coordinateOperation",
+   "propertyTo": "class",
+   "uriTo": "https://w3id.org/geosrs/coordinateOperation"
+  },
+  {
+   "source": 0,
+   "target": 36,
+   "valueTo": "coordinateOperation",
+   "propertyTo": "class",
+   "uriTo": "https://w3id.org/geosrs/coordinateOperation"
+  },
+  {
+   "source": 0,
+   "target": 31,
+   "valueTo": "coordinateOperation",
+   "propertyTo": "class",
+   "uriTo": "https://w3id.org/geosrs/coordinateOperation"
+  },
+  {
+   "source": 0,
+   "target": 26,
+   "valueTo": "coordinateOperation",
+   "propertyTo": "class",
+   "uriTo": "https://w3id.org/geosrs/coordinateOperation"
+  },
+  {
+   "source": 0,
+   "target": 28,
+   "valueTo": "coordinateOperation",
+   "propertyTo": "class",
+   "uriTo": "https://w3id.org/geosrs/coordinateOperation"
+  },
+  {
+   "source": 0,
+   "target": 34,
+   "valueTo": "coordinateOperation",
+   "propertyTo": "class",
+   "uriTo": "https://w3id.org/geosrs/coordinateOperation"
+  },
+  {
+   "source": 0,
+   "target": 25,
+   "valueTo": "coordinateOperation",
+   "propertyTo": "class",
+   "uriTo": "https://w3id.org/geosrs/coordinateOperation"
+  },
+  {
+   "source": 0,
+   "target": 23,
+   "valueTo": "coordinateOperation",
+   "propertyTo": "class",
+   "uriTo": "https://w3id.org/geosrs/coordinateOperation"
+  },
+  {
+   "source": 2,
+   "target": 29,
+   "valueTo": "coordinateOperation",
+   "propertyTo": "class",
+   "uriTo": "https://w3id.org/geosrs/coordinateOperation"
+  },
+  {
+   "source": 2,
+   "target": 24,
+   "valueTo": "coordinateOperation",
+   "propertyTo": "class",
+   "uriTo": "https://w3id.org/geosrs/coordinateOperation"
+  },
+  {
+   "source": 2,
+   "target": 35,
+   "valueTo": "coordinateOperation",
+   "propertyTo": "class",
+   "uriTo": "https://w3id.org/geosrs/coordinateOperation"
+  },
+  {
+   "source": 2,
+   "target": 32,
+   "valueTo": "coordinateOperation",
+   "propertyTo": "class",
+   "uriTo": "https://w3id.org/geosrs/coordinateOperation"
+  },
+  {
+   "source": 2,
+   "target": 33,
+   "valueTo": "coordinateOperation",
+   "propertyTo": "class",
+   "uriTo": "https://w3id.org/geosrs/coordinateOperation"
+  },
+  {
+   "source": 2,
+   "target": 37,
+   "valueTo": "coordinateOperation",
+   "propertyTo": "class",
+   "uriTo": "https://w3id.org/geosrs/coordinateOperation"
+  },
+  {
+   "source": 2,
+   "target": 38,
+   "valueTo": "coordinateOperation",
+   "propertyTo": "class",
+   "uriTo": "https://w3id.org/geosrs/coordinateOperation"
+  },
+  {
+   "source": 2,
+   "target": 27,
+   "valueTo": "coordinateOperation",
+   "propertyTo": "class",
+   "uriTo": "https://w3id.org/geosrs/coordinateOperation"
+  },
+  {
+   "source": 2,
+   "target": 22,
+   "valueTo": "coordinateOperation",
+   "propertyTo": "class",
+   "uriTo": "https://w3id.org/geosrs/coordinateOperation"
+  },
+  {
+   "source": 2,
+   "target": 30,
+   "valueTo": "coordinateOperation",
+   "propertyTo": "class",
+   "uriTo": "https://w3id.org/geosrs/coordinateOperation"
+  },
+  {
+   "source": 2,
+   "target": 36,
+   "valueTo": "coordinateOperation",
+   "propertyTo": "class",
+   "uriTo": "https://w3id.org/geosrs/coordinateOperation"
+  },
+  {
+   "source": 2,
+   "target": 31,
+   "valueTo": "coordinateOperation",
+   "propertyTo": "class",
+   "uriTo": "https://w3id.org/geosrs/coordinateOperation"
+  },
+  {
+   "source": 2,
+   "target": 26,
+   "valueTo": "coordinateOperation",
+   "propertyTo": "class",
+   "uriTo": "https://w3id.org/geosrs/coordinateOperation"
+  },
+  {
+   "source": 2,
+   "target": 28,
+   "valueTo": "coordinateOperation",
+   "propertyTo": "class",
+   "uriTo": "https://w3id.org/geosrs/coordinateOperation"
+  },
+  {
+   "source": 2,
+   "target": 34,
+   "valueTo": "coordinateOperation",
+   "propertyTo": "class",
+   "uriTo": "https://w3id.org/geosrs/coordinateOperation"
+  },
+  {
+   "source": 2,
+   "target": 25,
+   "valueTo": "coordinateOperation",
+   "propertyTo": "class",
+   "uriTo": "https://w3id.org/geosrs/coordinateOperation"
+  },
+  {
+   "source": 2,
+   "target": 23,
+   "valueTo": "coordinateOperation",
+   "propertyTo": "class",
+   "uriTo": "https://w3id.org/geosrs/coordinateOperation"
+  },
+  {
+   "source": 42,
+   "target": 7,
+   "valueTo": "member",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
+  },
+  {
+   "source": 42,
+   "target": 5,
    "valueTo": "member",
    "propertyTo": "class",
    "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
@@ -574,77 +602,21 @@ var minivowlresult={
   },
   {
    "source": 42,
-   "target": 5,
+   "target": 28,
    "valueTo": "member",
    "propertyTo": "class",
    "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
   },
   {
    "source": 42,
-   "target": 9,
+   "target": 34,
    "valueTo": "member",
    "propertyTo": "class",
    "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
   },
   {
    "source": 42,
-   "target": 41,
-   "valueTo": "member",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
-  },
-  {
-   "source": 42,
-   "target": 1,
-   "valueTo": "member",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
-  },
-  {
-   "source": 42,
-   "target": 17,
-   "valueTo": "member",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
-  },
-  {
-   "source": 42,
-   "target": 8,
-   "valueTo": "member",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
-  },
-  {
-   "source": 42,
-   "target": 36,
-   "valueTo": "member",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
-  },
-  {
-   "source": 42,
-   "target": 33,
-   "valueTo": "member",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
-  },
-  {
-   "source": 42,
-   "target": 27,
-   "valueTo": "member",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
-  },
-  {
-   "source": 42,
-   "target": 11,
-   "valueTo": "member",
-   "propertyTo": "class",
-   "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
-  },
-  {
-   "source": 42,
-   "target": 24,
+   "target": 25,
    "valueTo": "member",
    "propertyTo": "class",
    "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
@@ -658,21 +630,35 @@ var minivowlresult={
   },
   {
    "source": 42,
-   "target": 26,
+   "target": 4,
    "valueTo": "member",
    "propertyTo": "class",
    "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
   },
   {
    "source": 42,
-   "target": 30,
+   "target": 41,
    "valueTo": "member",
    "propertyTo": "class",
    "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
   },
   {
    "source": 42,
-   "target": 7,
+   "target": 29,
+   "valueTo": "member",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
+  },
+  {
+   "source": 42,
+   "target": 37,
+   "valueTo": "member",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
+  },
+  {
+   "source": 42,
+   "target": 6,
    "valueTo": "member",
    "propertyTo": "class",
    "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
@@ -686,370 +672,188 @@ var minivowlresult={
   },
   {
    "source": 42,
+   "target": 14,
+   "valueTo": "member",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
+  },
+  {
+   "source": 42,
+   "target": 26,
+   "valueTo": "member",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
+  },
+  {
+   "source": 42,
+   "target": 11,
+   "valueTo": "member",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
+  },
+  {
+   "source": 42,
+   "target": 20,
+   "valueTo": "member",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
+  },
+  {
+   "source": 42,
+   "target": 13,
+   "valueTo": "member",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
+  },
+  {
+   "source": 42,
+   "target": 17,
+   "valueTo": "member",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
+  },
+  {
+   "source": 42,
+   "target": 30,
+   "valueTo": "member",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
+  },
+  {
+   "source": 42,
+   "target": 24,
+   "valueTo": "member",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
+  },
+  {
+   "source": 42,
+   "target": 19,
+   "valueTo": "member",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
+  },
+  {
+   "source": 42,
+   "target": 32,
+   "valueTo": "member",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
+  },
+  {
+   "source": 42,
+   "target": 27,
+   "valueTo": "member",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
+  },
+  {
+   "source": 42,
+   "target": 35,
+   "valueTo": "member",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
+  },
+  {
+   "source": 42,
+   "target": 12,
+   "valueTo": "member",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
+  },
+  {
+   "source": 42,
+   "target": 2,
+   "valueTo": "member",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
+  },
+  {
+   "source": 42,
+   "target": 3,
+   "valueTo": "member",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
+  },
+  {
+   "source": 42,
+   "target": 15,
+   "valueTo": "member",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
+  },
+  {
+   "source": 42,
+   "target": 8,
+   "valueTo": "member",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
+  },
+  {
+   "source": 42,
+   "target": 33,
+   "valueTo": "member",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
+  },
+  {
+   "source": 42,
+   "target": 16,
+   "valueTo": "member",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
+  },
+  {
+   "source": 42,
+   "target": 22,
+   "valueTo": "member",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
+  },
+  {
+   "source": 42,
+   "target": 9,
+   "valueTo": "member",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
+  },
+  {
+   "source": 42,
+   "target": 36,
+   "valueTo": "member",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
+  },
+  {
+   "source": 42,
+   "target": 31,
+   "valueTo": "member",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
+  },
+  {
+   "source": 42,
+   "target": 1,
+   "valueTo": "member",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
+  },
+  {
+   "source": 42,
+   "target": 18,
+   "valueTo": "member",
+   "propertyTo": "class",
+   "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
+  },
+  {
+   "source": 42,
    "target": 23,
    "valueTo": "member",
    "propertyTo": "class",
    "uriTo": "http://www.w3.org/2000/01/rdf-schema#member"
   },
   {
-   "source": 4,
-   "target": 12,
-   "valueTo": "coordinateSystem",
-   "propertyTo": "class",
-   "uriTo": "https://w3id.org/geosrs/coordinateSystem"
-  },
-  {
-   "source": 4,
-   "target": 16,
-   "valueTo": "coordinateSystem",
-   "propertyTo": "class",
-   "uriTo": "https://w3id.org/geosrs/coordinateSystem"
-  },
-  {
-   "source": 4,
-   "target": 14,
-   "valueTo": "coordinateSystem",
-   "propertyTo": "class",
-   "uriTo": "https://w3id.org/geosrs/coordinateSystem"
-  },
-  {
-   "source": 4,
-   "target": 13,
-   "valueTo": "coordinateSystem",
-   "propertyTo": "class",
-   "uriTo": "https://w3id.org/geosrs/coordinateSystem"
-  },
-  {
-   "source": 4,
-   "target": 15,
-   "valueTo": "coordinateSystem",
-   "propertyTo": "class",
-   "uriTo": "https://w3id.org/geosrs/coordinateSystem"
-  },
-  {
-   "source": 2,
-   "target": 12,
-   "valueTo": "coordinateSystem",
-   "propertyTo": "class",
-   "uriTo": "https://w3id.org/geosrs/coordinateSystem"
-  },
-  {
-   "source": 2,
-   "target": 16,
-   "valueTo": "coordinateSystem",
-   "propertyTo": "class",
-   "uriTo": "https://w3id.org/geosrs/coordinateSystem"
-  },
-  {
-   "source": 2,
-   "target": 14,
-   "valueTo": "coordinateSystem",
-   "propertyTo": "class",
-   "uriTo": "https://w3id.org/geosrs/coordinateSystem"
-  },
-  {
-   "source": 2,
-   "target": 13,
-   "valueTo": "coordinateSystem",
-   "propertyTo": "class",
-   "uriTo": "https://w3id.org/geosrs/coordinateSystem"
-  },
-  {
-   "source": 2,
-   "target": 15,
-   "valueTo": "coordinateSystem",
-   "propertyTo": "class",
-   "uriTo": "https://w3id.org/geosrs/coordinateSystem"
-  },
-  {
    "source": 5,
-   "target": 12,
-   "valueTo": "coordinateSystem",
-   "propertyTo": "class",
-   "uriTo": "https://w3id.org/geosrs/coordinateSystem"
-  },
-  {
-   "source": 5,
-   "target": 16,
-   "valueTo": "coordinateSystem",
-   "propertyTo": "class",
-   "uriTo": "https://w3id.org/geosrs/coordinateSystem"
-  },
-  {
-   "source": 5,
-   "target": 14,
-   "valueTo": "coordinateSystem",
-   "propertyTo": "class",
-   "uriTo": "https://w3id.org/geosrs/coordinateSystem"
-  },
-  {
-   "source": 5,
-   "target": 13,
-   "valueTo": "coordinateSystem",
-   "propertyTo": "class",
-   "uriTo": "https://w3id.org/geosrs/coordinateSystem"
-  },
-  {
-   "source": 5,
-   "target": 15,
-   "valueTo": "coordinateSystem",
-   "propertyTo": "class",
-   "uriTo": "https://w3id.org/geosrs/coordinateSystem"
-  },
-  {
-   "source": 1,
-   "target": 12,
-   "valueTo": "coordinateSystem",
-   "propertyTo": "class",
-   "uriTo": "https://w3id.org/geosrs/coordinateSystem"
-  },
-  {
-   "source": 1,
-   "target": 16,
-   "valueTo": "coordinateSystem",
-   "propertyTo": "class",
-   "uriTo": "https://w3id.org/geosrs/coordinateSystem"
-  },
-  {
-   "source": 1,
-   "target": 14,
-   "valueTo": "coordinateSystem",
-   "propertyTo": "class",
-   "uriTo": "https://w3id.org/geosrs/coordinateSystem"
-  },
-  {
-   "source": 1,
-   "target": 13,
-   "valueTo": "coordinateSystem",
-   "propertyTo": "class",
-   "uriTo": "https://w3id.org/geosrs/coordinateSystem"
-  },
-  {
-   "source": 1,
-   "target": 15,
-   "valueTo": "coordinateSystem",
-   "propertyTo": "class",
-   "uriTo": "https://w3id.org/geosrs/coordinateSystem"
-  },
-  {
-   "source": 0,
-   "target": 12,
-   "valueTo": "coordinateSystem",
-   "propertyTo": "class",
-   "uriTo": "https://w3id.org/geosrs/coordinateSystem"
-  },
-  {
-   "source": 0,
-   "target": 16,
-   "valueTo": "coordinateSystem",
-   "propertyTo": "class",
-   "uriTo": "https://w3id.org/geosrs/coordinateSystem"
-  },
-  {
-   "source": 0,
-   "target": 14,
-   "valueTo": "coordinateSystem",
-   "propertyTo": "class",
-   "uriTo": "https://w3id.org/geosrs/coordinateSystem"
-  },
-  {
-   "source": 0,
-   "target": 13,
-   "valueTo": "coordinateSystem",
-   "propertyTo": "class",
-   "uriTo": "https://w3id.org/geosrs/coordinateSystem"
-  },
-  {
-   "source": 0,
-   "target": 15,
-   "valueTo": "coordinateSystem",
-   "propertyTo": "class",
-   "uriTo": "https://w3id.org/geosrs/coordinateSystem"
-  },
-  {
-   "source": 6,
-   "target": 12,
-   "valueTo": "coordinateSystem",
-   "propertyTo": "class",
-   "uriTo": "https://w3id.org/geosrs/coordinateSystem"
-  },
-  {
-   "source": 6,
-   "target": 16,
-   "valueTo": "coordinateSystem",
-   "propertyTo": "class",
-   "uriTo": "https://w3id.org/geosrs/coordinateSystem"
-  },
-  {
-   "source": 6,
-   "target": 14,
-   "valueTo": "coordinateSystem",
-   "propertyTo": "class",
-   "uriTo": "https://w3id.org/geosrs/coordinateSystem"
-  },
-  {
-   "source": 6,
-   "target": 13,
-   "valueTo": "coordinateSystem",
-   "propertyTo": "class",
-   "uriTo": "https://w3id.org/geosrs/coordinateSystem"
-  },
-  {
-   "source": 6,
-   "target": 15,
-   "valueTo": "coordinateSystem",
-   "propertyTo": "class",
-   "uriTo": "https://w3id.org/geosrs/coordinateSystem"
-  },
-  {
-   "source": 12,
-   "target": 17,
-   "valueTo": "axis",
-   "propertyTo": "class",
-   "uriTo": "https://w3id.org/geosrs/axis"
-  },
-  {
-   "source": 16,
-   "target": 17,
-   "valueTo": "axis",
-   "propertyTo": "class",
-   "uriTo": "https://w3id.org/geosrs/axis"
-  },
-  {
-   "source": 14,
-   "target": 17,
-   "valueTo": "axis",
-   "propertyTo": "class",
-   "uriTo": "https://w3id.org/geosrs/axis"
-  },
-  {
-   "source": 13,
-   "target": 17,
-   "valueTo": "axis",
-   "propertyTo": "class",
-   "uriTo": "https://w3id.org/geosrs/axis"
-  },
-  {
-   "source": 15,
-   "target": 17,
-   "valueTo": "axis",
-   "propertyTo": "class",
-   "uriTo": "https://w3id.org/geosrs/axis"
-  },
-  {
-   "source": 0,
-   "target": 5,
-   "valueTo": "sourceCRS",
-   "propertyTo": "class",
-   "uriTo": "https://w3id.org/geosrs/sourceCRS"
-  },
-  {
-   "source": 0,
-   "target": 1,
-   "valueTo": "sourceCRS",
-   "propertyTo": "class",
-   "uriTo": "https://w3id.org/geosrs/sourceCRS"
-  },
-  {
-   "source": 1,
-   "target": 5,
-   "valueTo": "sourceCRS",
-   "propertyTo": "class",
-   "uriTo": "https://w3id.org/geosrs/sourceCRS"
-  },
-  {
-   "source": 1,
-   "target": 1,
-   "valueTo": "sourceCRS",
-   "propertyTo": "class",
-   "uriTo": "https://w3id.org/geosrs/sourceCRS"
-  },
-  {
-   "source": 2,
-   "target": 5,
-   "valueTo": "sourceCRS",
-   "propertyTo": "class",
-   "uriTo": "https://w3id.org/geosrs/sourceCRS"
-  },
-  {
-   "source": 2,
-   "target": 1,
-   "valueTo": "sourceCRS",
-   "propertyTo": "class",
-   "uriTo": "https://w3id.org/geosrs/sourceCRS"
-  },
-  {
-   "source": 4,
-   "target": 11,
-   "valueTo": "area_of_use",
-   "propertyTo": "class",
-   "uriTo": "https://w3id.org/geosrs/area_of_use"
-  },
-  {
-   "source": 3,
-   "target": 11,
-   "valueTo": "area_of_use",
-   "propertyTo": "class",
-   "uriTo": "https://w3id.org/geosrs/area_of_use"
-  },
-  {
-   "source": 2,
-   "target": 11,
-   "valueTo": "area_of_use",
-   "propertyTo": "class",
-   "uriTo": "https://w3id.org/geosrs/area_of_use"
-  },
-  {
-   "source": 31,
-   "target": 11,
-   "valueTo": "area_of_use",
-   "propertyTo": "class",
-   "uriTo": "https://w3id.org/geosrs/area_of_use"
-  },
-  {
-   "source": 29,
-   "target": 11,
-   "valueTo": "area_of_use",
-   "propertyTo": "class",
-   "uriTo": "https://w3id.org/geosrs/area_of_use"
-  },
-  {
-   "source": 35,
-   "target": 11,
-   "valueTo": "area_of_use",
-   "propertyTo": "class",
-   "uriTo": "https://w3id.org/geosrs/area_of_use"
-  },
-  {
-   "source": 37,
-   "target": 11,
-   "valueTo": "area_of_use",
-   "propertyTo": "class",
-   "uriTo": "https://w3id.org/geosrs/area_of_use"
-  },
-  {
-   "source": 25,
-   "target": 11,
-   "valueTo": "area_of_use",
-   "propertyTo": "class",
-   "uriTo": "https://w3id.org/geosrs/area_of_use"
-  },
-  {
-   "source": 22,
-   "target": 11,
-   "valueTo": "area_of_use",
-   "propertyTo": "class",
-   "uriTo": "https://w3id.org/geosrs/area_of_use"
-  },
-  {
-   "source": 6,
-   "target": 11,
-   "valueTo": "area_of_use",
-   "propertyTo": "class",
-   "uriTo": "https://w3id.org/geosrs/area_of_use"
-  },
-  {
-   "source": 32,
    "target": 11,
    "valueTo": "area_of_use",
    "propertyTo": "class",
@@ -1070,49 +874,7 @@ var minivowlresult={
    "uriTo": "https://w3id.org/geosrs/area_of_use"
   },
   {
-   "source": 5,
-   "target": 11,
-   "valueTo": "area_of_use",
-   "propertyTo": "class",
-   "uriTo": "https://w3id.org/geosrs/area_of_use"
-  },
-  {
-   "source": 1,
-   "target": 11,
-   "valueTo": "area_of_use",
-   "propertyTo": "class",
-   "uriTo": "https://w3id.org/geosrs/area_of_use"
-  },
-  {
-   "source": 0,
-   "target": 11,
-   "valueTo": "area_of_use",
-   "propertyTo": "class",
-   "uriTo": "https://w3id.org/geosrs/area_of_use"
-  },
-  {
-   "source": 36,
-   "target": 11,
-   "valueTo": "area_of_use",
-   "propertyTo": "class",
-   "uriTo": "https://w3id.org/geosrs/area_of_use"
-  },
-  {
-   "source": 33,
-   "target": 11,
-   "valueTo": "area_of_use",
-   "propertyTo": "class",
-   "uriTo": "https://w3id.org/geosrs/area_of_use"
-  },
-  {
-   "source": 27,
-   "target": 11,
-   "valueTo": "area_of_use",
-   "propertyTo": "class",
-   "uriTo": "https://w3id.org/geosrs/area_of_use"
-  },
-  {
-   "source": 24,
+   "source": 25,
    "target": 11,
    "valueTo": "area_of_use",
    "propertyTo": "class",
@@ -1120,6 +882,41 @@ var minivowlresult={
   },
   {
    "source": 38,
+   "target": 11,
+   "valueTo": "area_of_use",
+   "propertyTo": "class",
+   "uriTo": "https://w3id.org/geosrs/area_of_use"
+  },
+  {
+   "source": 4,
+   "target": 11,
+   "valueTo": "area_of_use",
+   "propertyTo": "class",
+   "uriTo": "https://w3id.org/geosrs/area_of_use"
+  },
+  {
+   "source": 29,
+   "target": 11,
+   "valueTo": "area_of_use",
+   "propertyTo": "class",
+   "uriTo": "https://w3id.org/geosrs/area_of_use"
+  },
+  {
+   "source": 37,
+   "target": 11,
+   "valueTo": "area_of_use",
+   "propertyTo": "class",
+   "uriTo": "https://w3id.org/geosrs/area_of_use"
+  },
+  {
+   "source": 6,
+   "target": 11,
+   "valueTo": "area_of_use",
+   "propertyTo": "class",
+   "uriTo": "https://w3id.org/geosrs/area_of_use"
+  },
+  {
+   "source": 0,
    "target": 11,
    "valueTo": "area_of_use",
    "propertyTo": "class",
@@ -1140,459 +937,88 @@ var minivowlresult={
    "uriTo": "https://w3id.org/geosrs/area_of_use"
   },
   {
-   "source": 23,
+   "source": 24,
    "target": 11,
    "valueTo": "area_of_use",
    "propertyTo": "class",
    "uriTo": "https://w3id.org/geosrs/area_of_use"
   },
   {
-   "source": 0,
-   "target": 33,
-   "valueTo": "coordinateOperation",
+   "source": 35,
+   "target": 11,
+   "valueTo": "area_of_use",
    "propertyTo": "class",
-   "uriTo": "https://w3id.org/geosrs/coordinateOperation"
+   "uriTo": "https://w3id.org/geosrs/area_of_use"
   },
   {
-   "source": 0,
-   "target": 34,
-   "valueTo": "coordinateOperation",
+   "source": 32,
+   "target": 11,
+   "valueTo": "area_of_use",
    "propertyTo": "class",
-   "uriTo": "https://w3id.org/geosrs/coordinateOperation"
+   "uriTo": "https://w3id.org/geosrs/area_of_use"
   },
   {
-   "source": 0,
-   "target": 32,
-   "valueTo": "coordinateOperation",
+   "source": 27,
+   "target": 11,
+   "valueTo": "area_of_use",
    "propertyTo": "class",
-   "uriTo": "https://w3id.org/geosrs/coordinateOperation"
-  },
-  {
-   "source": 0,
-   "target": 28,
-   "valueTo": "coordinateOperation",
-   "propertyTo": "class",
-   "uriTo": "https://w3id.org/geosrs/coordinateOperation"
-  },
-  {
-   "source": 0,
-   "target": 27,
-   "valueTo": "coordinateOperation",
-   "propertyTo": "class",
-   "uriTo": "https://w3id.org/geosrs/coordinateOperation"
-  },
-  {
-   "source": 0,
-   "target": 31,
-   "valueTo": "coordinateOperation",
-   "propertyTo": "class",
-   "uriTo": "https://w3id.org/geosrs/coordinateOperation"
-  },
-  {
-   "source": 0,
-   "target": 24,
-   "valueTo": "coordinateOperation",
-   "propertyTo": "class",
-   "uriTo": "https://w3id.org/geosrs/coordinateOperation"
-  },
-  {
-   "source": 0,
-   "target": 38,
-   "valueTo": "coordinateOperation",
-   "propertyTo": "class",
-   "uriTo": "https://w3id.org/geosrs/coordinateOperation"
-  },
-  {
-   "source": 0,
-   "target": 29,
-   "valueTo": "coordinateOperation",
-   "propertyTo": "class",
-   "uriTo": "https://w3id.org/geosrs/coordinateOperation"
-  },
-  {
-   "source": 0,
-   "target": 35,
-   "valueTo": "coordinateOperation",
-   "propertyTo": "class",
-   "uriTo": "https://w3id.org/geosrs/coordinateOperation"
-  },
-  {
-   "source": 0,
-   "target": 26,
-   "valueTo": "coordinateOperation",
-   "propertyTo": "class",
-   "uriTo": "https://w3id.org/geosrs/coordinateOperation"
-  },
-  {
-   "source": 0,
-   "target": 25,
-   "valueTo": "coordinateOperation",
-   "propertyTo": "class",
-   "uriTo": "https://w3id.org/geosrs/coordinateOperation"
-  },
-  {
-   "source": 0,
-   "target": 37,
-   "valueTo": "coordinateOperation",
-   "propertyTo": "class",
-   "uriTo": "https://w3id.org/geosrs/coordinateOperation"
-  },
-  {
-   "source": 0,
-   "target": 22,
-   "valueTo": "coordinateOperation",
-   "propertyTo": "class",
-   "uriTo": "https://w3id.org/geosrs/coordinateOperation"
-  },
-  {
-   "source": 0,
-   "target": 30,
-   "valueTo": "coordinateOperation",
-   "propertyTo": "class",
-   "uriTo": "https://w3id.org/geosrs/coordinateOperation"
-  },
-  {
-   "source": 0,
-   "target": 36,
-   "valueTo": "coordinateOperation",
-   "propertyTo": "class",
-   "uriTo": "https://w3id.org/geosrs/coordinateOperation"
-  },
-  {
-   "source": 0,
-   "target": 23,
-   "valueTo": "coordinateOperation",
-   "propertyTo": "class",
-   "uriTo": "https://w3id.org/geosrs/coordinateOperation"
-  },
-  {
-   "source": 1,
-   "target": 33,
-   "valueTo": "coordinateOperation",
-   "propertyTo": "class",
-   "uriTo": "https://w3id.org/geosrs/coordinateOperation"
-  },
-  {
-   "source": 1,
-   "target": 34,
-   "valueTo": "coordinateOperation",
-   "propertyTo": "class",
-   "uriTo": "https://w3id.org/geosrs/coordinateOperation"
-  },
-  {
-   "source": 1,
-   "target": 32,
-   "valueTo": "coordinateOperation",
-   "propertyTo": "class",
-   "uriTo": "https://w3id.org/geosrs/coordinateOperation"
-  },
-  {
-   "source": 1,
-   "target": 28,
-   "valueTo": "coordinateOperation",
-   "propertyTo": "class",
-   "uriTo": "https://w3id.org/geosrs/coordinateOperation"
-  },
-  {
-   "source": 1,
-   "target": 27,
-   "valueTo": "coordinateOperation",
-   "propertyTo": "class",
-   "uriTo": "https://w3id.org/geosrs/coordinateOperation"
-  },
-  {
-   "source": 1,
-   "target": 31,
-   "valueTo": "coordinateOperation",
-   "propertyTo": "class",
-   "uriTo": "https://w3id.org/geosrs/coordinateOperation"
-  },
-  {
-   "source": 1,
-   "target": 24,
-   "valueTo": "coordinateOperation",
-   "propertyTo": "class",
-   "uriTo": "https://w3id.org/geosrs/coordinateOperation"
-  },
-  {
-   "source": 1,
-   "target": 38,
-   "valueTo": "coordinateOperation",
-   "propertyTo": "class",
-   "uriTo": "https://w3id.org/geosrs/coordinateOperation"
-  },
-  {
-   "source": 1,
-   "target": 29,
-   "valueTo": "coordinateOperation",
-   "propertyTo": "class",
-   "uriTo": "https://w3id.org/geosrs/coordinateOperation"
-  },
-  {
-   "source": 1,
-   "target": 35,
-   "valueTo": "coordinateOperation",
-   "propertyTo": "class",
-   "uriTo": "https://w3id.org/geosrs/coordinateOperation"
-  },
-  {
-   "source": 1,
-   "target": 26,
-   "valueTo": "coordinateOperation",
-   "propertyTo": "class",
-   "uriTo": "https://w3id.org/geosrs/coordinateOperation"
-  },
-  {
-   "source": 1,
-   "target": 25,
-   "valueTo": "coordinateOperation",
-   "propertyTo": "class",
-   "uriTo": "https://w3id.org/geosrs/coordinateOperation"
-  },
-  {
-   "source": 1,
-   "target": 37,
-   "valueTo": "coordinateOperation",
-   "propertyTo": "class",
-   "uriTo": "https://w3id.org/geosrs/coordinateOperation"
-  },
-  {
-   "source": 1,
-   "target": 22,
-   "valueTo": "coordinateOperation",
-   "propertyTo": "class",
-   "uriTo": "https://w3id.org/geosrs/coordinateOperation"
-  },
-  {
-   "source": 1,
-   "target": 30,
-   "valueTo": "coordinateOperation",
-   "propertyTo": "class",
-   "uriTo": "https://w3id.org/geosrs/coordinateOperation"
-  },
-  {
-   "source": 1,
-   "target": 36,
-   "valueTo": "coordinateOperation",
-   "propertyTo": "class",
-   "uriTo": "https://w3id.org/geosrs/coordinateOperation"
-  },
-  {
-   "source": 1,
-   "target": 23,
-   "valueTo": "coordinateOperation",
-   "propertyTo": "class",
-   "uriTo": "https://w3id.org/geosrs/coordinateOperation"
+   "uriTo": "https://w3id.org/geosrs/area_of_use"
   },
   {
    "source": 2,
-   "target": 33,
-   "valueTo": "coordinateOperation",
+   "target": 11,
+   "valueTo": "area_of_use",
    "propertyTo": "class",
-   "uriTo": "https://w3id.org/geosrs/coordinateOperation"
-  },
-  {
-   "source": 2,
-   "target": 34,
-   "valueTo": "coordinateOperation",
-   "propertyTo": "class",
-   "uriTo": "https://w3id.org/geosrs/coordinateOperation"
-  },
-  {
-   "source": 2,
-   "target": 32,
-   "valueTo": "coordinateOperation",
-   "propertyTo": "class",
-   "uriTo": "https://w3id.org/geosrs/coordinateOperation"
-  },
-  {
-   "source": 2,
-   "target": 28,
-   "valueTo": "coordinateOperation",
-   "propertyTo": "class",
-   "uriTo": "https://w3id.org/geosrs/coordinateOperation"
-  },
-  {
-   "source": 2,
-   "target": 27,
-   "valueTo": "coordinateOperation",
-   "propertyTo": "class",
-   "uriTo": "https://w3id.org/geosrs/coordinateOperation"
-  },
-  {
-   "source": 2,
-   "target": 31,
-   "valueTo": "coordinateOperation",
-   "propertyTo": "class",
-   "uriTo": "https://w3id.org/geosrs/coordinateOperation"
-  },
-  {
-   "source": 2,
-   "target": 24,
-   "valueTo": "coordinateOperation",
-   "propertyTo": "class",
-   "uriTo": "https://w3id.org/geosrs/coordinateOperation"
-  },
-  {
-   "source": 2,
-   "target": 38,
-   "valueTo": "coordinateOperation",
-   "propertyTo": "class",
-   "uriTo": "https://w3id.org/geosrs/coordinateOperation"
-  },
-  {
-   "source": 2,
-   "target": 29,
-   "valueTo": "coordinateOperation",
-   "propertyTo": "class",
-   "uriTo": "https://w3id.org/geosrs/coordinateOperation"
-  },
-  {
-   "source": 2,
-   "target": 35,
-   "valueTo": "coordinateOperation",
-   "propertyTo": "class",
-   "uriTo": "https://w3id.org/geosrs/coordinateOperation"
-  },
-  {
-   "source": 2,
-   "target": 26,
-   "valueTo": "coordinateOperation",
-   "propertyTo": "class",
-   "uriTo": "https://w3id.org/geosrs/coordinateOperation"
-  },
-  {
-   "source": 2,
-   "target": 25,
-   "valueTo": "coordinateOperation",
-   "propertyTo": "class",
-   "uriTo": "https://w3id.org/geosrs/coordinateOperation"
-  },
-  {
-   "source": 2,
-   "target": 37,
-   "valueTo": "coordinateOperation",
-   "propertyTo": "class",
-   "uriTo": "https://w3id.org/geosrs/coordinateOperation"
-  },
-  {
-   "source": 2,
-   "target": 22,
-   "valueTo": "coordinateOperation",
-   "propertyTo": "class",
-   "uriTo": "https://w3id.org/geosrs/coordinateOperation"
-  },
-  {
-   "source": 2,
-   "target": 30,
-   "valueTo": "coordinateOperation",
-   "propertyTo": "class",
-   "uriTo": "https://w3id.org/geosrs/coordinateOperation"
-  },
-  {
-   "source": 2,
-   "target": 36,
-   "valueTo": "coordinateOperation",
-   "propertyTo": "class",
-   "uriTo": "https://w3id.org/geosrs/coordinateOperation"
-  },
-  {
-   "source": 2,
-   "target": 23,
-   "valueTo": "coordinateOperation",
-   "propertyTo": "class",
-   "uriTo": "https://w3id.org/geosrs/coordinateOperation"
-  },
-  {
-   "source": 18,
-   "target": 21,
-   "valueTo": "ellipse",
-   "propertyTo": "class",
-   "uriTo": "https://w3id.org/geosrs/ellipse"
-  },
-  {
-   "source": 0,
-   "target": 2,
-   "valueTo": "includesSRS",
-   "propertyTo": "class",
-   "uriTo": "https://w3id.org/geosrs/includesSRS"
-  },
-  {
-   "source": 0,
-   "target": 5,
-   "valueTo": "includesSRS",
-   "propertyTo": "class",
-   "uriTo": "https://w3id.org/geosrs/includesSRS"
-  },
-  {
-   "source": 0,
-   "target": 1,
-   "valueTo": "includesSRS",
-   "propertyTo": "class",
-   "uriTo": "https://w3id.org/geosrs/includesSRS"
-  },
-  {
-   "source": 0,
-   "target": 6,
-   "valueTo": "includesSRS",
-   "propertyTo": "class",
-   "uriTo": "https://w3id.org/geosrs/includesSRS"
-  },
-  {
-   "source": 1,
-   "target": 2,
-   "valueTo": "includesSRS",
-   "propertyTo": "class",
-   "uriTo": "https://w3id.org/geosrs/includesSRS"
-  },
-  {
-   "source": 1,
-   "target": 5,
-   "valueTo": "includesSRS",
-   "propertyTo": "class",
-   "uriTo": "https://w3id.org/geosrs/includesSRS"
-  },
-  {
-   "source": 1,
-   "target": 1,
-   "valueTo": "includesSRS",
-   "propertyTo": "class",
-   "uriTo": "https://w3id.org/geosrs/includesSRS"
-  },
-  {
-   "source": 1,
-   "target": 6,
-   "valueTo": "includesSRS",
-   "propertyTo": "class",
-   "uriTo": "https://w3id.org/geosrs/includesSRS"
+   "uriTo": "https://w3id.org/geosrs/area_of_use"
   },
   {
    "source": 3,
-   "target": 2,
-   "valueTo": "includesSRS",
+   "target": 11,
+   "valueTo": "area_of_use",
    "propertyTo": "class",
-   "uriTo": "https://w3id.org/geosrs/includesSRS"
+   "uriTo": "https://w3id.org/geosrs/area_of_use"
   },
   {
-   "source": 3,
-   "target": 5,
-   "valueTo": "includesSRS",
+   "source": 33,
+   "target": 11,
+   "valueTo": "area_of_use",
    "propertyTo": "class",
-   "uriTo": "https://w3id.org/geosrs/includesSRS"
+   "uriTo": "https://w3id.org/geosrs/area_of_use"
   },
   {
-   "source": 3,
-   "target": 1,
-   "valueTo": "includesSRS",
+   "source": 22,
+   "target": 11,
+   "valueTo": "area_of_use",
    "propertyTo": "class",
-   "uriTo": "https://w3id.org/geosrs/includesSRS"
+   "uriTo": "https://w3id.org/geosrs/area_of_use"
   },
   {
-   "source": 3,
-   "target": 6,
-   "valueTo": "includesSRS",
+   "source": 36,
+   "target": 11,
+   "valueTo": "area_of_use",
    "propertyTo": "class",
-   "uriTo": "https://w3id.org/geosrs/includesSRS"
+   "uriTo": "https://w3id.org/geosrs/area_of_use"
+  },
+  {
+   "source": 31,
+   "target": 11,
+   "valueTo": "area_of_use",
+   "propertyTo": "class",
+   "uriTo": "https://w3id.org/geosrs/area_of_use"
+  },
+  {
+   "source": 1,
+   "target": 11,
+   "valueTo": "area_of_use",
+   "propertyTo": "class",
+   "uriTo": "https://w3id.org/geosrs/area_of_use"
+  },
+  {
+   "source": 23,
+   "target": 11,
+   "valueTo": "area_of_use",
+   "propertyTo": "class",
+   "uriTo": "https://w3id.org/geosrs/area_of_use"
   },
   {
    "source": 41,
@@ -1609,14 +1035,588 @@ var minivowlresult={
    "uriTo": "https://w3id.org/geosrs/primeMeridian"
   },
   {
-   "source": 39,
+   "source": 18,
+   "target": 21,
+   "valueTo": "ellipse",
+   "propertyTo": "class",
+   "uriTo": "https://w3id.org/geosrs/ellipse"
+  },
+  {
+   "source": 1,
+   "target": 1,
+   "valueTo": "sourceCRS",
+   "propertyTo": "class",
+   "uriTo": "https://w3id.org/geosrs/sourceCRS"
+  },
+  {
+   "source": 1,
+   "target": 5,
+   "valueTo": "sourceCRS",
+   "propertyTo": "class",
+   "uriTo": "https://w3id.org/geosrs/sourceCRS"
+  },
+  {
+   "source": 0,
+   "target": 1,
+   "valueTo": "sourceCRS",
+   "propertyTo": "class",
+   "uriTo": "https://w3id.org/geosrs/sourceCRS"
+  },
+  {
+   "source": 0,
+   "target": 5,
+   "valueTo": "sourceCRS",
+   "propertyTo": "class",
+   "uriTo": "https://w3id.org/geosrs/sourceCRS"
+  },
+  {
+   "source": 2,
+   "target": 1,
+   "valueTo": "sourceCRS",
+   "propertyTo": "class",
+   "uriTo": "https://w3id.org/geosrs/sourceCRS"
+  },
+  {
+   "source": 2,
+   "target": 5,
+   "valueTo": "sourceCRS",
+   "propertyTo": "class",
+   "uriTo": "https://w3id.org/geosrs/sourceCRS"
+  },
+  {
+   "source": 13,
+   "target": 17,
+   "valueTo": "axis",
+   "propertyTo": "class",
+   "uriTo": "https://w3id.org/geosrs/axis"
+  },
+  {
+   "source": 12,
+   "target": 17,
+   "valueTo": "axis",
+   "propertyTo": "class",
+   "uriTo": "https://w3id.org/geosrs/axis"
+  },
+  {
+   "source": 14,
+   "target": 17,
+   "valueTo": "axis",
+   "propertyTo": "class",
+   "uriTo": "https://w3id.org/geosrs/axis"
+  },
+  {
+   "source": 16,
+   "target": 17,
+   "valueTo": "axis",
+   "propertyTo": "class",
+   "uriTo": "https://w3id.org/geosrs/axis"
+  },
+  {
+   "source": 15,
+   "target": 17,
+   "valueTo": "axis",
+   "propertyTo": "class",
+   "uriTo": "https://w3id.org/geosrs/axis"
+  },
+  {
+   "source": 6,
+   "target": 41,
+   "valueTo": "datum",
+   "propertyTo": "class",
+   "uriTo": "https://w3id.org/geosrs/datum"
+  },
+  {
+   "source": 6,
+   "target": 18,
+   "valueTo": "datum",
+   "propertyTo": "class",
+   "uriTo": "https://w3id.org/geosrs/datum"
+  },
+  {
+   "source": 6,
+   "target": 19,
+   "valueTo": "datum",
+   "propertyTo": "class",
+   "uriTo": "https://w3id.org/geosrs/datum"
+  },
+  {
+   "source": 6,
+   "target": 20,
+   "valueTo": "datum",
+   "propertyTo": "class",
+   "uriTo": "https://w3id.org/geosrs/datum"
+  },
+  {
+   "source": 0,
+   "target": 41,
+   "valueTo": "datum",
+   "propertyTo": "class",
+   "uriTo": "https://w3id.org/geosrs/datum"
+  },
+  {
+   "source": 0,
+   "target": 18,
+   "valueTo": "datum",
+   "propertyTo": "class",
+   "uriTo": "https://w3id.org/geosrs/datum"
+  },
+  {
+   "source": 0,
+   "target": 19,
+   "valueTo": "datum",
+   "propertyTo": "class",
+   "uriTo": "https://w3id.org/geosrs/datum"
+  },
+  {
+   "source": 0,
+   "target": 20,
+   "valueTo": "datum",
+   "propertyTo": "class",
+   "uriTo": "https://w3id.org/geosrs/datum"
+  },
+  {
+   "source": 5,
+   "target": 41,
+   "valueTo": "datum",
+   "propertyTo": "class",
+   "uriTo": "https://w3id.org/geosrs/datum"
+  },
+  {
+   "source": 5,
+   "target": 18,
+   "valueTo": "datum",
+   "propertyTo": "class",
+   "uriTo": "https://w3id.org/geosrs/datum"
+  },
+  {
+   "source": 5,
+   "target": 19,
+   "valueTo": "datum",
+   "propertyTo": "class",
+   "uriTo": "https://w3id.org/geosrs/datum"
+  },
+  {
+   "source": 5,
+   "target": 20,
+   "valueTo": "datum",
+   "propertyTo": "class",
+   "uriTo": "https://w3id.org/geosrs/datum"
+  },
+  {
+   "source": 1,
+   "target": 41,
+   "valueTo": "datum",
+   "propertyTo": "class",
+   "uriTo": "https://w3id.org/geosrs/datum"
+  },
+  {
+   "source": 1,
+   "target": 18,
+   "valueTo": "datum",
+   "propertyTo": "class",
+   "uriTo": "https://w3id.org/geosrs/datum"
+  },
+  {
+   "source": 1,
+   "target": 19,
+   "valueTo": "datum",
+   "propertyTo": "class",
+   "uriTo": "https://w3id.org/geosrs/datum"
+  },
+  {
+   "source": 1,
+   "target": 20,
+   "valueTo": "datum",
+   "propertyTo": "class",
+   "uriTo": "https://w3id.org/geosrs/datum"
+  },
+  {
+   "source": 2,
+   "target": 41,
+   "valueTo": "datum",
+   "propertyTo": "class",
+   "uriTo": "https://w3id.org/geosrs/datum"
+  },
+  {
+   "source": 2,
+   "target": 18,
+   "valueTo": "datum",
+   "propertyTo": "class",
+   "uriTo": "https://w3id.org/geosrs/datum"
+  },
+  {
+   "source": 2,
+   "target": 19,
+   "valueTo": "datum",
+   "propertyTo": "class",
+   "uriTo": "https://w3id.org/geosrs/datum"
+  },
+  {
+   "source": 2,
+   "target": 20,
+   "valueTo": "datum",
+   "propertyTo": "class",
+   "uriTo": "https://w3id.org/geosrs/datum"
+  },
+  {
+   "source": 3,
+   "target": 41,
+   "valueTo": "datum",
+   "propertyTo": "class",
+   "uriTo": "https://w3id.org/geosrs/datum"
+  },
+  {
+   "source": 3,
+   "target": 18,
+   "valueTo": "datum",
+   "propertyTo": "class",
+   "uriTo": "https://w3id.org/geosrs/datum"
+  },
+  {
+   "source": 3,
+   "target": 19,
+   "valueTo": "datum",
+   "propertyTo": "class",
+   "uriTo": "https://w3id.org/geosrs/datum"
+  },
+  {
+   "source": 3,
+   "target": 20,
+   "valueTo": "datum",
+   "propertyTo": "class",
+   "uriTo": "https://w3id.org/geosrs/datum"
+  },
+  {
+   "source": 4,
+   "target": 41,
+   "valueTo": "datum",
+   "propertyTo": "class",
+   "uriTo": "https://w3id.org/geosrs/datum"
+  },
+  {
+   "source": 4,
+   "target": 18,
+   "valueTo": "datum",
+   "propertyTo": "class",
+   "uriTo": "https://w3id.org/geosrs/datum"
+  },
+  {
+   "source": 4,
+   "target": 19,
+   "valueTo": "datum",
+   "propertyTo": "class",
+   "uriTo": "https://w3id.org/geosrs/datum"
+  },
+  {
+   "source": 4,
+   "target": 20,
+   "valueTo": "datum",
+   "propertyTo": "class",
+   "uriTo": "https://w3id.org/geosrs/datum"
+  },
+  {
+   "source": 6,
+   "target": 13,
+   "valueTo": "coordinateSystem",
+   "propertyTo": "class",
+   "uriTo": "https://w3id.org/geosrs/coordinateSystem"
+  },
+  {
+   "source": 6,
+   "target": 12,
+   "valueTo": "coordinateSystem",
+   "propertyTo": "class",
+   "uriTo": "https://w3id.org/geosrs/coordinateSystem"
+  },
+  {
+   "source": 6,
+   "target": 14,
+   "valueTo": "coordinateSystem",
+   "propertyTo": "class",
+   "uriTo": "https://w3id.org/geosrs/coordinateSystem"
+  },
+  {
+   "source": 6,
+   "target": 16,
+   "valueTo": "coordinateSystem",
+   "propertyTo": "class",
+   "uriTo": "https://w3id.org/geosrs/coordinateSystem"
+  },
+  {
+   "source": 6,
+   "target": 15,
+   "valueTo": "coordinateSystem",
+   "propertyTo": "class",
+   "uriTo": "https://w3id.org/geosrs/coordinateSystem"
+  },
+  {
+   "source": 0,
+   "target": 13,
+   "valueTo": "coordinateSystem",
+   "propertyTo": "class",
+   "uriTo": "https://w3id.org/geosrs/coordinateSystem"
+  },
+  {
+   "source": 0,
+   "target": 12,
+   "valueTo": "coordinateSystem",
+   "propertyTo": "class",
+   "uriTo": "https://w3id.org/geosrs/coordinateSystem"
+  },
+  {
+   "source": 0,
+   "target": 14,
+   "valueTo": "coordinateSystem",
+   "propertyTo": "class",
+   "uriTo": "https://w3id.org/geosrs/coordinateSystem"
+  },
+  {
+   "source": 0,
+   "target": 16,
+   "valueTo": "coordinateSystem",
+   "propertyTo": "class",
+   "uriTo": "https://w3id.org/geosrs/coordinateSystem"
+  },
+  {
+   "source": 0,
+   "target": 15,
+   "valueTo": "coordinateSystem",
+   "propertyTo": "class",
+   "uriTo": "https://w3id.org/geosrs/coordinateSystem"
+  },
+  {
+   "source": 5,
+   "target": 13,
+   "valueTo": "coordinateSystem",
+   "propertyTo": "class",
+   "uriTo": "https://w3id.org/geosrs/coordinateSystem"
+  },
+  {
+   "source": 5,
+   "target": 12,
+   "valueTo": "coordinateSystem",
+   "propertyTo": "class",
+   "uriTo": "https://w3id.org/geosrs/coordinateSystem"
+  },
+  {
+   "source": 5,
+   "target": 14,
+   "valueTo": "coordinateSystem",
+   "propertyTo": "class",
+   "uriTo": "https://w3id.org/geosrs/coordinateSystem"
+  },
+  {
+   "source": 5,
+   "target": 16,
+   "valueTo": "coordinateSystem",
+   "propertyTo": "class",
+   "uriTo": "https://w3id.org/geosrs/coordinateSystem"
+  },
+  {
+   "source": 5,
+   "target": 15,
+   "valueTo": "coordinateSystem",
+   "propertyTo": "class",
+   "uriTo": "https://w3id.org/geosrs/coordinateSystem"
+  },
+  {
+   "source": 1,
+   "target": 13,
+   "valueTo": "coordinateSystem",
+   "propertyTo": "class",
+   "uriTo": "https://w3id.org/geosrs/coordinateSystem"
+  },
+  {
+   "source": 1,
+   "target": 12,
+   "valueTo": "coordinateSystem",
+   "propertyTo": "class",
+   "uriTo": "https://w3id.org/geosrs/coordinateSystem"
+  },
+  {
+   "source": 1,
+   "target": 14,
+   "valueTo": "coordinateSystem",
+   "propertyTo": "class",
+   "uriTo": "https://w3id.org/geosrs/coordinateSystem"
+  },
+  {
+   "source": 1,
+   "target": 16,
+   "valueTo": "coordinateSystem",
+   "propertyTo": "class",
+   "uriTo": "https://w3id.org/geosrs/coordinateSystem"
+  },
+  {
+   "source": 1,
+   "target": 15,
+   "valueTo": "coordinateSystem",
+   "propertyTo": "class",
+   "uriTo": "https://w3id.org/geosrs/coordinateSystem"
+  },
+  {
+   "source": 2,
+   "target": 13,
+   "valueTo": "coordinateSystem",
+   "propertyTo": "class",
+   "uriTo": "https://w3id.org/geosrs/coordinateSystem"
+  },
+  {
+   "source": 2,
+   "target": 12,
+   "valueTo": "coordinateSystem",
+   "propertyTo": "class",
+   "uriTo": "https://w3id.org/geosrs/coordinateSystem"
+  },
+  {
+   "source": 2,
+   "target": 14,
+   "valueTo": "coordinateSystem",
+   "propertyTo": "class",
+   "uriTo": "https://w3id.org/geosrs/coordinateSystem"
+  },
+  {
+   "source": 2,
+   "target": 16,
+   "valueTo": "coordinateSystem",
+   "propertyTo": "class",
+   "uriTo": "https://w3id.org/geosrs/coordinateSystem"
+  },
+  {
+   "source": 2,
+   "target": 15,
+   "valueTo": "coordinateSystem",
+   "propertyTo": "class",
+   "uriTo": "https://w3id.org/geosrs/coordinateSystem"
+  },
+  {
+   "source": 4,
+   "target": 13,
+   "valueTo": "coordinateSystem",
+   "propertyTo": "class",
+   "uriTo": "https://w3id.org/geosrs/coordinateSystem"
+  },
+  {
+   "source": 4,
+   "target": 12,
+   "valueTo": "coordinateSystem",
+   "propertyTo": "class",
+   "uriTo": "https://w3id.org/geosrs/coordinateSystem"
+  },
+  {
+   "source": 4,
+   "target": 14,
+   "valueTo": "coordinateSystem",
+   "propertyTo": "class",
+   "uriTo": "https://w3id.org/geosrs/coordinateSystem"
+  },
+  {
+   "source": 4,
+   "target": 16,
+   "valueTo": "coordinateSystem",
+   "propertyTo": "class",
+   "uriTo": "https://w3id.org/geosrs/coordinateSystem"
+  },
+  {
+   "source": 4,
+   "target": 15,
+   "valueTo": "coordinateSystem",
+   "propertyTo": "class",
+   "uriTo": "https://w3id.org/geosrs/coordinateSystem"
+  },
+  {
+   "source": 1,
+   "target": 6,
+   "valueTo": "includesSRS",
+   "propertyTo": "class",
+   "uriTo": "https://w3id.org/geosrs/includesSRS"
+  },
+  {
+   "source": 1,
+   "target": 5,
+   "valueTo": "includesSRS",
+   "propertyTo": "class",
+   "uriTo": "https://w3id.org/geosrs/includesSRS"
+  },
+  {
+   "source": 1,
+   "target": 1,
+   "valueTo": "includesSRS",
+   "propertyTo": "class",
+   "uriTo": "https://w3id.org/geosrs/includesSRS"
+  },
+  {
+   "source": 1,
+   "target": 2,
+   "valueTo": "includesSRS",
+   "propertyTo": "class",
+   "uriTo": "https://w3id.org/geosrs/includesSRS"
+  },
+  {
+   "source": 0,
+   "target": 6,
+   "valueTo": "includesSRS",
+   "propertyTo": "class",
+   "uriTo": "https://w3id.org/geosrs/includesSRS"
+  },
+  {
+   "source": 0,
+   "target": 5,
+   "valueTo": "includesSRS",
+   "propertyTo": "class",
+   "uriTo": "https://w3id.org/geosrs/includesSRS"
+  },
+  {
+   "source": 0,
+   "target": 1,
+   "valueTo": "includesSRS",
+   "propertyTo": "class",
+   "uriTo": "https://w3id.org/geosrs/includesSRS"
+  },
+  {
+   "source": 0,
+   "target": 2,
+   "valueTo": "includesSRS",
+   "propertyTo": "class",
+   "uriTo": "https://w3id.org/geosrs/includesSRS"
+  },
+  {
+   "source": 3,
+   "target": 6,
+   "valueTo": "includesSRS",
+   "propertyTo": "class",
+   "uriTo": "https://w3id.org/geosrs/includesSRS"
+  },
+  {
+   "source": 3,
+   "target": 5,
+   "valueTo": "includesSRS",
+   "propertyTo": "class",
+   "uriTo": "https://w3id.org/geosrs/includesSRS"
+  },
+  {
+   "source": 3,
+   "target": 1,
+   "valueTo": "includesSRS",
+   "propertyTo": "class",
+   "uriTo": "https://w3id.org/geosrs/includesSRS"
+  },
+  {
+   "source": 3,
+   "target": 2,
+   "valueTo": "includesSRS",
+   "propertyTo": "class",
+   "uriTo": "https://w3id.org/geosrs/includesSRS"
+  },
+  {
+   "source": 17,
    "target": 40,
    "valueTo": "unit",
    "propertyTo": "class",
    "uriTo": "https://w3id.org/geosrs/unit"
   },
   {
-   "source": 17,
+   "source": 39,
    "target": 40,
    "valueTo": "unit",
    "propertyTo": "class",

@@ -586,7 +586,7 @@ for ad in moduleToAdoc:
 				f.write("requirement:: /req/"+str(req).replace(" ","_")+"\n")
 			f.write("====\n")
 			for req in sorted(moduleToRequirements[ad].keys()):
-				if "property" in req.lower():
+				if "property" in req.lower() or "properties" in req.lower():
 					reqtext="Implementations shall allow the RDFS properties "
 					last=None
 					for cls in moduleToRequirements[ad][req]:

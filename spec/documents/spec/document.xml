@@ -2083,7 +2083,7 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 </clause>
 </clause>
 
-<clause id="_d6f5d080-0dfa-ef9c-1018-06052e787d5d" obligation="normative">
+<clause id="_f82cc970-026e-553b-85e1-4521b046c900" obligation="normative">
 <title id="_245aa830-e9da-5127-2b5b-89bba3e2d371">Projections Module</title>
 <p id="_acbf12f6-604e-d105-25c5-e2c0592c55c6" anchor="proj">This clause establishes the <strong>PROJ</strong> Requirements class, with IRI <tt>/req/proj</tt>, which has a corresponding Conformance Class, <strong>PROJ</strong>, with IRI <tt>/conf/proj</tt>.</p>
 
@@ -2388,7 +2388,7 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 </clause>
 </clause>
 
-<clause id="_0dc53e2a-66d3-5e4c-cb69-1b3c9b51d3e9" obligation="normative">
+<clause id="_7fbe13e8-0bad-65e0-986f-cd6c9934394a" obligation="normative">
 <title id="_9de72c47-2119-4655-4e10-8cfa84db092e">Conformal Projections</title>
 <requirement id="_763eac27-b38d-9e48-c302-793190cf8c7b" model="ogc" anchor="/req/Conformal_Projections">
 <title>Conformal Projections</title> 
@@ -2493,20 +2493,22 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 </table>
 </clause>
 
-<clause id="_1a60fb9f-af23-687a-b31c-ece9c1940383" obligation="normative">
+<clause id="_44b24160-dc5a-55f3-1b90-039aa3993f6d" obligation="normative">
 <title id="_f2f57d74-775b-d48f-e497-9daf8af53a2c">Class: geosrs:StereographicProjection</title>
-<table id="_b1692d49-10c7-17a8-7af4-1932562dcf15"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<table id="_a4e3a37c-5636-9cc7-4932-ff95f3f18ce1"><colgroup><col width="50%"/><col width="50%"/></colgroup>
 <name id="_80ac4381-5a76-172b-e301-4cb050e795b2">geosrs:StereographicProjection</name>
 <tbody><tr id="_9a0599d0-80d7-2777-0c92-a4bee2f57098"><td id="_9140abda-69e8-4890-aa9e-feb0bb48048a" valign="middle" align="left">URI</td>
 <td id="_5d37ad7b-0adc-9982-d617-2707188d8ff5" valign="middle" align="left"><link target="https://w3id.org/geosrs/projection/StereographicProjection"/></td>
 </tr><tr id="_e5a3b985-919b-c4d2-b5cb-cac2008134d9"><td id="_e584f270-ff27-408e-8223-74aafe419fc9" valign="middle" align="left">Super-classes</td>
 <td id="_95e9e632-cc28-ed00-dfa6-4dac444938ac" valign="middle" align="left"><link target="https://w3id.org/geosrs/projection/StereographicProjection">StereographicProjection</link></td>
+</tr><tr id="_0c56d415-dc19-bea4-40ab-23b12e6e6146"><td id="_b5e2ca78-1076-fb32-b5d7-ceac602c6d7d" valign="middle" align="left">Example</td>
+<td id="_22292962-b4ba-4abf-d44f-fc47e7ff746d" valign="middle" align="left"><link target="https://w3id.org/geosrs/co/StereographicProjection">geosrs:StereographicProjection</link></td>
 </tr></tbody>
 </table>
 </clause>
 </clause>
 
-<clause id="_66ca5e43-8457-5fa4-c180-1795fd90901f" obligation="normative">
+<clause id="_e01049dc-d272-54ae-ce78-51e292616101" obligation="normative">
 <title id="_073466ea-d8da-c557-e839-2e40e5565ce0">Conical Projections</title>
 <requirement id="_ba73b569-72bb-dd63-3dcd-9bb9eb16eada" model="ogc" anchor="/req/Conical_Projections">
 <title>Conical Projections</title> 
@@ -2549,26 +2551,30 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 </table>
 </clause>
 
-<clause id="_1030f934-1423-c1c5-6295-92b452509f30" obligation="normative">
+<clause id="_f513b11f-cddf-11a7-d0ef-674f669092be" obligation="normative">
 <title id="_eafb3f6a-063b-bdbd-9b60-e924b2030241">Class: geosrs:Krovak</title>
-<table id="_603b9a5e-1076-af54-af58-374bf11a1fca"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<table id="_727bd90c-da36-7097-671f-e6526aa46c53"><colgroup><col width="50%"/><col width="50%"/></colgroup>
 <name id="_ea56699b-988e-fbb4-4b0d-a3c9536dd488">geosrs:Krovak</name>
 <tbody><tr id="_b7077be6-8e99-17be-f30b-986d79290be9"><td id="_00c7716d-08b8-f94b-4132-0eb1691e15ed" valign="middle" align="left">URI</td>
 <td id="_3ee30f6f-bda8-ec12-f7f9-6e6a4113aa5c" valign="middle" align="left"><link target="https://w3id.org/geosrs/projection/Krovak"/></td>
 </tr><tr id="_2e93c991-46f4-d9df-f4c5-5c0303af4322"><td id="_eb1a1b78-24fc-8e16-4b08-928d4495e8d1" valign="middle" align="left">Super-classes</td>
 <td id="_724c5039-a20e-e98d-61a5-b046c1c1076a" valign="middle" align="left"><link target="https://w3id.org/geosrs/projection/Krovak">Krovak</link></td>
+</tr><tr id="_c27468b1-9ce0-925a-52ed-ae5d1c283317"><td id="_67adebd4-b9fc-1aa5-245c-0bf3300e4bf8" valign="middle" align="left">Example</td>
+<td id="_c8ae96ce-1de7-856b-f61d-525fadd5bd0a" valign="middle" align="left"><link target="https://w3id.org/geosrs/co/Krovak">geosrs:Krovak</link></td>
 </tr></tbody>
 </table>
 </clause>
 
-<clause id="_441715b4-76fe-5ce8-ebcb-fcb612c62b57" obligation="normative">
+<clause id="_6e68df0d-f4a6-9904-0fb7-31983730f5f2" obligation="normative">
 <title id="_02371675-c18d-9a2d-756c-fcc7d8527a51">Class: geosrs:LambertConformalConicProjection</title>
-<table id="_87a2b0a4-ddae-485c-5667-9177c7484d38"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<table id="_71650084-f845-bc7b-33f5-2edd24f7ca56"><colgroup><col width="50%"/><col width="50%"/></colgroup>
 <name id="_8f4ada42-83da-5739-1a30-5724b4536776">geosrs:LambertConformalConicProjection</name>
 <tbody><tr id="_befd7269-8066-7d6e-6544-b5243b86d4ed"><td id="_4c75c82e-5eac-48ce-fbc2-4e85db6f6350" valign="middle" align="left">URI</td>
 <td id="_a08a1065-345b-faef-3349-7258ef6b34fe" valign="middle" align="left"><link target="https://w3id.org/geosrs/projection/LambertConformalConicProjection"/></td>
 </tr><tr id="_c228ad9f-e32b-c18b-bf18-0d7ba5cf2007"><td id="_9d22863d-fd9e-c72a-6953-552bcd496bb7" valign="middle" align="left">Super-classes</td>
 <td id="_c79574d4-9d46-b321-f6fa-3fdfa2ac6e9b" valign="middle" align="left"><link target="https://w3id.org/geosrs/projection/LambertConformalConicProjection">LambertConformalConicProjection</link></td>
+</tr><tr id="_da5f3df9-b762-c38e-50e0-0b1c7c930b07"><td id="_983a3e1f-7a8b-6701-dee3-6e08078cc461" valign="middle" align="left">Example</td>
+<td id="_522ae026-337f-ddbc-6492-16b5c4703eeb" valign="middle" align="left"><link target="https://w3id.org/geosrs/co/LambertConformalConicProjection">geosrs:LambertConformalConicProjection</link></td>
 </tr></tbody>
 </table>
 </clause>
@@ -2634,7 +2640,7 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 </clause>
 </clause>
 
-<clause id="_40396f48-0338-ea30-6893-e5cde73e6d63" obligation="normative">
+<clause id="_52fc8e2d-71cc-d5e9-a138-087f54d65ef3" obligation="normative">
 <title id="_7ebe207f-f474-c983-6129-53277d62d088">Cylindrical Projections</title>
 <requirement id="_c38b73a4-e446-f98b-a16b-2e8bd3a649d0" model="ogc" anchor="/req/Cylindrical_Projections">
 <title>Cylindrical Projections</title> 
@@ -2701,26 +2707,30 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 </table>
 </clause>
 
-<clause id="_b86d0765-5f7f-36c9-1240-7b641e3adc9e" obligation="normative">
+<clause id="_84833c94-c2fc-6895-72fb-bf5907cd5f48" obligation="normative">
 <title id="_063b4350-8ad3-11b3-1841-7cf873968dd0">Class: geosrs:LabordeProjection</title>
-<table id="_677e140b-0aa0-0fa2-6901-a02c882b817e"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<table id="_877777e8-5c61-a96f-46fb-00e76dab7d5d"><colgroup><col width="50%"/><col width="50%"/></colgroup>
 <name id="_fac0eadc-95f2-1884-222a-c1d95a8199eb">geosrs:LabordeProjection</name>
 <tbody><tr id="_1e675b5b-4ebe-81ff-1309-7fc175031799"><td id="_54368d7c-c5dc-3ad7-c8f3-3eec268805a4" valign="middle" align="left">URI</td>
 <td id="_9c29421f-4942-eb91-895e-129241958062" valign="middle" align="left"><link target="https://w3id.org/geosrs/projection/LabordeProjection"/></td>
 </tr><tr id="_98fbbddf-d0a7-6d43-0c7a-34a24d18508b"><td id="_92bd3ab9-906e-b67a-6adc-5a9445d83fee" valign="middle" align="left">Super-classes</td>
 <td id="_33f06521-7ec4-9ba2-6ca1-e8bdc34fdb75" valign="middle" align="left"><link target="https://w3id.org/geosrs/projection/LabordeProjection">LabordeProjection</link></td>
+</tr><tr id="_839b1fcd-ddf4-c486-46ff-7d133bc6ad12"><td id="_72a46b33-4601-9b5f-ac4b-151a899be033" valign="middle" align="left">Example</td>
+<td id="_ba71dd1e-b4ca-a76c-ddb9-5de264df2430" valign="middle" align="left"><link target="https://w3id.org/geosrs/co/LabordeProjection">geosrs:LabordeProjection</link></td>
 </tr></tbody>
 </table>
 </clause>
 
-<clause id="_a72fe87e-9d79-1dd8-f6a2-a1b135d12a80" obligation="normative">
+<clause id="_a9098fd5-5892-9aed-4a42-0ab3ee1b80d0" obligation="normative">
 <title id="_79600fc3-ad9c-d9af-c9ba-c6bf1f9493ed">Class: geosrs:MercatorProjection</title>
-<table id="_42eacb12-70b0-74e9-6248-dd47bcade1d1"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<table id="_d0f35c7d-7710-6973-b298-8ccd775a68f1"><colgroup><col width="50%"/><col width="50%"/></colgroup>
 <name id="_ebff003b-5583-0200-ec7f-b519d27a69f3">geosrs:MercatorProjection</name>
 <tbody><tr id="_47fd1265-9567-1cfb-a873-734c49130221"><td id="_4242de00-3730-c76f-de3a-6e24ace51513" valign="middle" align="left">URI</td>
 <td id="_f0d80f8c-6855-5d5c-bff5-99dc18fe85d8" valign="middle" align="left"><link target="https://w3id.org/geosrs/projection/MercatorProjection"/></td>
 </tr><tr id="_bba6aecc-14ca-8ad6-0d91-6c0d49b2e56b"><td id="_3b11278c-6994-2f7c-c627-b41b03b8530c" valign="middle" align="left">Super-classes</td>
 <td id="_382a0203-919a-0da1-6ca5-9a5e0376b7ac" valign="middle" align="left"><link target="https://w3id.org/geosrs/projection/MercatorProjection">MercatorProjection</link></td>
+</tr><tr id="_a8038e13-2495-edc9-6e3e-392ab9aab02a"><td id="_13196576-5ea7-5110-f436-ee67e8b6cee3" valign="middle" align="left">Example</td>
+<td id="_31112041-ecd0-ebe9-71ef-5c98b08e0d13" valign="middle" align="left"><link target="https://w3id.org/geosrs/co/MercatorProjection">geosrs:MercatorProjection</link></td>
 </tr></tbody>
 </table>
 </clause>
@@ -2810,21 +2820,23 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 </clause>
 </clause>
 
-<clause id="_e9d5ceed-2577-3fe7-618c-97f14ca667d7" obligation="normative">
+<clause id="_98a48e34-4a5b-8d77-b679-8250a67d83a4" obligation="normative">
 <title id="_5567df16-de69-9b12-7cc4-c01ef58562ca">Equal Area Projections</title>
 <requirement id="_d96c1275-ab10-47fd-708b-7d2d845f6dba" model="ogc" anchor="/req/Equal_Area_Projections">
 <title>Equal Area Projections</title> 
 <identifier>/req/Equal_Area_Projections</identifier><description><p id="_71897aa8-e990-0a6a-294a-56f25f8d5933">Implementations shall allow the RDFS classes <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>AlbersEqualAreaProjection</referenceFrom></locality></localityStack><display-text>geosrs:AlbersEqualAreaProjection</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>AzimuthalEqualAreaProjection</referenceFrom></locality></localityStack><display-text>geosrs:AzimuthalEqualAreaProjection</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>CylindricalEqualArea</referenceFrom></locality></localityStack><display-text>geosrs:CylindricalEqualArea</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>GallPetersProjection</referenceFrom></locality></localityStack><display-text>geosrs:GallPetersProjection</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>HoboDyerProjection</referenceFrom></locality></localityStack><display-text>geosrs:HoboDyerProjection</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>LambertAzimuthalEqualArea</referenceFrom></locality></localityStack><display-text>geosrs:LambertAzimuthalEqualArea</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>TrystanEdwardsProjection</referenceFrom></locality></localityStack><display-text>geosrs:TrystanEdwardsProjection</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>WiechelProjection</referenceFrom></locality></localityStack><display-text>geosrs:WiechelProjection</display-text></eref> to be used in SPARQL graph patterns.</p></description>
 </requirement>
 
-<clause id="_f2dce1fd-9f3f-897d-c2ab-558df46e5121" obligation="normative">
+<clause id="_8812f8a1-b226-f608-2291-1c5d38359e86" obligation="normative">
 <title id="_c3d72c1c-ff48-614c-d90a-f55f185e2c50">Class: geosrs:AlbersEqualAreaProjection</title>
-<table id="_52d57f6a-683d-8572-5c3e-c1804e4ac0b5"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<table id="_94d62067-2e6f-1953-898b-95cd813e5894"><colgroup><col width="50%"/><col width="50%"/></colgroup>
 <name id="_b60d6b87-2cc8-0284-fbdb-5ffb8e498261">geosrs:AlbersEqualAreaProjection</name>
 <tbody><tr id="_4a8ad6ee-c763-1dc8-9665-49c6812d10b1"><td id="_42301cf4-c770-b7a6-234b-698502e1e608" valign="middle" align="left">URI</td>
 <td id="_8887240c-e76c-3938-11a1-065153255f1a" valign="middle" align="left"><link target="https://w3id.org/geosrs/projection/AlbersEqualAreaProjection"/></td>
 </tr><tr id="_574720e5-b6d8-9d72-3afe-d7e761539509"><td id="_862370c3-9bc7-53a5-a2d3-58ff5a8d210a" valign="middle" align="left">Super-classes</td>
 <td id="_0a0c0116-5060-4401-5681-be385d7efead" valign="middle" align="left"><link target="https://w3id.org/geosrs/projection/AlbersEqualAreaProjection">AlbersEqualAreaProjection</link></td>
+</tr><tr id="_be5b41d5-8dda-bdea-07c4-9275a8a62fb8"><td id="_6429e27f-fea4-7301-3d87-285c9a292aa8" valign="middle" align="left">Example</td>
+<td id="_6e447dfc-fc4d-f554-2e7b-bdde509e43d8" valign="middle" align="left"><link target="https://w3id.org/geosrs/co/AlbersEqualAreaProjection">geosrs:AlbersEqualAreaProjection</link></td>
 </tr></tbody>
 </table>
 </clause>
@@ -2841,14 +2853,16 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 </table>
 </clause>
 
-<clause id="_e962f6ec-3d17-016e-f9ca-c94bd1f9c352" obligation="normative">
+<clause id="_0524df76-40be-eb98-2bf2-3c81e5700d69" obligation="normative">
 <title id="_c0450517-0d54-fee0-88a7-8ad3aa4778f9">Class: geosrs:CylindricalEqualArea</title>
-<table id="_0172d9d0-7b83-5aee-6c65-fab08a4017e0"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<table id="_7c9b722a-3e83-59a6-3439-38ef2d16c45f"><colgroup><col width="50%"/><col width="50%"/></colgroup>
 <name id="_f885deed-066a-4ea3-743c-181b631afef5">geosrs:CylindricalEqualArea</name>
 <tbody><tr id="_024f443a-1022-2afd-0234-8607160c6c02"><td id="_41857044-3f42-1519-2ea1-86fb4a72225d" valign="middle" align="left">URI</td>
 <td id="_10b4530c-92cd-78d6-4551-56c15ab10c9d" valign="middle" align="left"><link target="https://w3id.org/geosrs/projection/CylindricalEqualArea"/></td>
 </tr><tr id="_9bfcbc94-cfda-7fbe-c08d-0a57eec55975"><td id="_e9cec155-fd77-06e0-08f1-2407fc5eb6d7" valign="middle" align="left">Super-classes</td>
 <td id="_6c963bd0-99ca-1ba7-3d00-9565919fd5f5" valign="middle" align="left"><link target="https://w3id.org/geosrs/projection/CylindricalEqualArea">CylindricalEqualArea</link></td>
+</tr><tr id="_238651b5-3ed3-52df-f962-9a24f18fd52b"><td id="_7220ab87-1b7e-a647-8c8c-857097b324d8" valign="middle" align="left">Example</td>
+<td id="_279a4a91-1411-3864-c2c4-a361514fa096" valign="middle" align="left"><link target="https://w3id.org/geosrs/co/CylindricalEqualArea">geosrs:CylindricalEqualArea</link></td>
 </tr></tbody>
 </table>
 </clause>
@@ -2914,7 +2928,7 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 </clause>
 </clause>
 
-<clause id="_89702d1e-b130-6792-6d80-99fb6c6ffe75" obligation="normative">
+<clause id="_842e10c2-9bec-bda0-50a8-d2b19bff209f" obligation="normative">
 <title id="_5526f136-f9b1-6209-54bc-e5678d7a01a4">Equidistant Projections</title>
 <requirement id="_5c0cfb89-cd3e-53a4-6161-174a1d395d76" model="ogc" anchor="/req/Equidistant_Projections">
 <title>Equidistant Projections</title> 
@@ -2945,9 +2959,9 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 </table>
 </clause>
 
-<clause id="_49c6d3f8-e272-3a3c-7cb2-aa6fb09c87d5" obligation="normative">
+<clause id="_22ea9f59-05a6-48f3-ca09-8139d339eb49" obligation="normative">
 <title id="_894918c0-0012-9b9d-b8cf-fd59d0760f34">Class: geosrs:CassiniProjection</title>
-<table id="_86f24761-1c8c-212d-1edf-b002c1bf4ce3"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<table id="_efe718c1-b8eb-9c4f-0430-b749a9077f26"><colgroup><col width="50%"/><col width="50%"/></colgroup>
 <name id="_22d9cb04-4d72-d879-6ed4-6d644d641e41">geosrs:CassiniProjection</name>
 <tbody><tr id="_2f4c06c6-c8c9-a8e1-5236-572fbef5698e"><td id="_594a4050-182b-9dc2-5a7d-d8be3c624d9a" valign="middle" align="left">URI</td>
 <td id="_05967f5a-225a-94ee-a1a9-ca8f572f11bb" valign="middle" align="left"><link target="https://w3id.org/geosrs/projection/CassiniProjection"/></td>
@@ -2955,6 +2969,8 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 <td id="_da57f596-c5d3-7843-32d9-d62c3807c7e3" valign="middle" align="left">A map projection first described in an approximate form by César-François Cassini de Thury in 1745</td>
 </tr><tr id="_5d4cd0f6-8a4a-47bb-a01f-18510fea0b25"><td id="_2b46e649-fc85-911b-842a-0402df98bb61" valign="middle" align="left">Super-classes</td>
 <td id="_04878113-3d80-f619-9fb8-1d682f8965e7" valign="middle" align="left"><link target="https://w3id.org/geosrs/projection/CassiniProjection">CassiniProjection</link></td>
+</tr><tr id="_8f93840a-a6b1-62cb-76b4-24379f2d106a"><td id="_c1d55df0-164b-08fa-d100-0f7af275caa6" valign="middle" align="left">Example</td>
+<td id="_331fca56-8a0c-bd70-65cd-2b44d78c4004" valign="middle" align="left"><link target="https://w3id.org/geosrs/co/CassiniProjection">geosrs:CassiniProjection</link></td>
 </tr></tbody>
 </table>
 </clause>
@@ -2971,14 +2987,16 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 </table>
 </clause>
 
-<clause id="_f1bda255-6e4c-ac6b-4ad8-bac2ef6b5873" obligation="normative">
+<clause id="_1b6dc9aa-210e-45a4-5972-2a5d71e7fbe3" obligation="normative">
 <title id="_28675e57-305c-3483-216c-63be6ab8d409">Class: geosrs:EquidistantCylindricalProjection</title>
-<table id="_7eb744f0-6594-df07-2b0f-338f9fa5b8ce"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<table id="_eb33808b-7817-3c1b-fb98-544960ae80e1"><colgroup><col width="50%"/><col width="50%"/></colgroup>
 <name id="_39986c32-61d6-18bb-3975-1b948be6ba8e">geosrs:EquidistantCylindricalProjection</name>
 <tbody><tr id="_ce385f50-60a7-d207-1309-5d5106668262"><td id="_9ced1da9-615a-e240-58e5-cab847f8f386" valign="middle" align="left">URI</td>
 <td id="_e205369e-82e5-854b-89b7-3f2ceb3e3c96" valign="middle" align="left"><link target="https://w3id.org/geosrs/projection/EquidistantCylindricalProjection"/></td>
 </tr><tr id="_23bb272d-a55f-4c11-7902-641df5aaf601"><td id="_7a783098-c287-805a-f0a4-bfff8be22a2c" valign="middle" align="left">Super-classes</td>
 <td id="_01094d7d-8763-9521-cb47-053c9ec98c5e" valign="middle" align="left"><link target="https://w3id.org/geosrs/projection/EquidistantCylindricalProjection">EquidistantCylindricalProjection</link></td>
+</tr><tr id="_ee66b3c5-fb7b-f178-aee6-5083e5b6d4b6"><td id="_e393ad54-b362-5471-cf25-a0525fd8dbc5" valign="middle" align="left">Example</td>
+<td id="_ed9a25a5-258b-2e6c-14ca-0b8477cfb4d9" valign="middle" align="left"><link target="https://w3id.org/geosrs/co/EquidistantCylindricalProjection">geosrs:EquidistantCylindricalProjection</link></td>
 </tr></tbody>
 </table>
 </clause>
@@ -3896,21 +3914,23 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 </clause>
 </clause>
 
-<clause id="_4a7eccca-97ce-9b7e-a826-261ae6a85f33" obligation="normative">
+<clause id="_0f21f9cf-1276-184a-3983-8312237bc851" obligation="normative">
 <title id="_a52ae9a3-4109-725e-515b-d0b0e536b3e0">Pseudo Conical Projections</title>
 <requirement id="_e649e652-dbf7-8813-5856-0fc3f2badb74" model="ogc" anchor="/req/Pseudo_Conical_Projections">
 <title>Pseudo Conical Projections</title> 
 <identifier>/req/Pseudo_Conical_Projections</identifier><description><p id="_535c46ca-9709-748c-f7d9-c2d66a5a471a">Implementations shall allow the RDFS classes <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>AmericanPolyconicProjection</referenceFrom></locality></localityStack><display-text>geosrs:AmericanPolyconicProjection</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>BonneProjection</referenceFrom></locality></localityStack><display-text>geosrs:BonneProjection</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>BottomleyProjection</referenceFrom></locality></localityStack><display-text>geosrs:BottomleyProjection</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>NicolosiGlobularProjection</referenceFrom></locality></localityStack><display-text>geosrs:NicolosiGlobularProjection</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>PtolemyIIProjection</referenceFrom></locality></localityStack><display-text>geosrs:PtolemyIIProjection</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>WernerProjection</referenceFrom></locality></localityStack><display-text>geosrs:WernerProjection</display-text></eref> to be used in SPARQL graph patterns.</p></description>
 </requirement>
 
-<clause id="_a54bd523-bf0e-9e6e-d73d-03488bcba19f" obligation="normative">
+<clause id="_35048dc5-4aeb-57a9-4a8c-6d0ac9393558" obligation="normative">
 <title id="_24410fc7-ed5b-58b0-3508-3c27462a6661">Class: geosrs:AmericanPolyconicProjection</title>
-<table id="_0727aa74-5e5a-f894-0f5b-df7dc1c4b6ab"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<table id="_b2488867-a20c-1c31-64aa-6ad4b348efef"><colgroup><col width="50%"/><col width="50%"/></colgroup>
 <name id="_cd5f7829-cc3e-5c0d-7bfb-136a6c0d7e25">geosrs:AmericanPolyconicProjection</name>
 <tbody><tr id="_d17c905c-838f-dd70-bb1a-8de1c8b03e09"><td id="_e9229a39-bbe3-ec03-ffbe-dbe3d1e23065" valign="middle" align="left">URI</td>
 <td id="_e7141c1b-4ebd-5472-7265-b868ca07697a" valign="middle" align="left"><link target="https://w3id.org/geosrs/projection/AmericanPolyconicProjection"/></td>
 </tr><tr id="_5f238056-6ab3-0c84-672c-4f8c4e95099a"><td id="_7995a06f-8989-b345-afc2-87b621ce353f" valign="middle" align="left">Super-classes</td>
 <td id="_dfb83c7a-e5c2-57a6-44b7-77e84f0af77d" valign="middle" align="left"><link target="https://w3id.org/geosrs/projection/AmericanPolyconicProjection">AmericanPolyconicProjection</link></td>
+</tr><tr id="_8d4c80b2-6733-2126-7d89-f71c3bd69e8e"><td id="_ed7f13d0-affe-9cc7-3580-5aa106e0d2b8" valign="middle" align="left">Example</td>
+<td id="_b4df611d-e4c1-1804-df52-d9f2d97ca51f" valign="middle" align="left"><link target="https://w3id.org/geosrs/co/AmericanPolyconicProjection">geosrs:AmericanPolyconicProjection</link></td>
 </tr></tbody>
 </table>
 </clause>
@@ -3976,7 +3996,7 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 </clause>
 </clause>
 
-<clause id="_da61d497-ef08-8c12-74e6-2036c22f0e6b" obligation="normative">
+<clause id="_bcb2a75b-2588-de4b-e7cd-e546b77f735a" obligation="normative">
 <title id="_0123635b-8453-3894-bee5-c23215839b1b">Pseudo Cylindrical Projections</title>
 <requirement id="_b72670e6-c27b-a309-bf65-6f9dc00b9111" model="ogc" anchor="/req/Pseudo_Cylindrical_Projections">
 <title>Pseudo Cylindrical Projections</title> 
@@ -4201,14 +4221,16 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 </table>
 </clause>
 
-<clause id="_18156ff2-f9aa-e96e-2a06-46ff5c61e463" obligation="normative">
+<clause id="_01496ecc-2edf-d6b3-5bae-dca24565a2f5" obligation="normative">
 <title id="_04742ac8-9662-e759-d16a-3e55398d0633">Class: geosrs:EqualEarthProjection</title>
-<table id="_418c61c8-80d6-5133-9955-26b5ef9e0299"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<table id="_5d7e9fca-dc88-d26d-664d-ab7517ac9743"><colgroup><col width="50%"/><col width="50%"/></colgroup>
 <name id="_b4239778-b11d-f84e-15e9-06d29a67900b">geosrs:EqualEarthProjection</name>
 <tbody><tr id="_6be573db-5bf9-7942-0103-90a3ba6fc5d7"><td id="_0d3cc025-a3fe-ddc0-a877-0aebb4b1762b" valign="middle" align="left">URI</td>
 <td id="_9c38dcb6-5a04-bc05-a86a-28b4f7316eec" valign="middle" align="left"><link target="https://w3id.org/geosrs/projection/EqualEarthProjection"/></td>
 </tr><tr id="_23ac086c-e738-dcc1-70e9-52a133f5281a"><td id="_4c13a97f-b108-b9ef-05be-5b5d335c5235" valign="middle" align="left">Super-classes</td>
 <td id="_866813b7-5e22-9d78-d7e4-f9ed601cde2c" valign="middle" align="left"><link target="https://w3id.org/geosrs/projection/EqualEarthProjection">EqualEarthProjection</link></td>
+</tr><tr id="_b694b81e-30d2-5ee5-373b-cd4365189bd1"><td id="_af4296cd-c8a9-803d-0541-494998a0cb0f" valign="middle" align="left">Example</td>
+<td id="_2e4539b0-71fb-9688-d16d-acb795612716" valign="middle" align="left"><link target="https://w3id.org/geosrs/co/EqualEarthProjection">geosrs:EqualEarthProjection</link></td>
 </tr></tbody>
 </table>
 </clause>

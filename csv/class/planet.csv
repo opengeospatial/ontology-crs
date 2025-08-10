@@ -1,12 +1,12 @@
 Concept,SuperClass,DisjointClass,Label,Definition,Requirement,ISO 19111,IGN 2019,Proj4RDF,GeoSPARQL,Core Class?
-,,,,,,,,geocrs:ArtificialSatellite,,Astronomy
-,,,,,,,,geocrs:Asteroid,,Astronomy
-,,,,,,,,geocrs:Comet,,Astronomy
-,,,,,,,,geocrs:DwarfPlanet,,Astronomy
-,,,,,,,,geocrs:InterstellarBody,,Astronomy
-,,,,,,,,geocrs:Moon,,Astronomy
-,,,,,,,,geocrs:NaturalSatellite,,Astronomy
-,,,,,,,,geocrs:Planet,,Astronomy
-,,,,,,,,geocrs:PlanetStatus,,Astronomy
-,,,,,,,,geocrs:Plutoid,,Astronomy
-,,,,,,,,geocrs:Star,,Astronomy
+geosrs:ArtificialSatellite,,,Artificial Satellite,,Interstellar Body,,,geocrs:ArtificialSatellite,,Astronomy
+geosrs:Asteroid,,,Asteroid,,Interstellar Body,,,geocrs:Asteroid,,Astronomy
+geosrs:Comet,,,Comet,,Interstellar Body,,,geocrs:Comet,,Astronomy
+geosrs:DwarfPlanet,,,Dwarf Planet,,Interstellar Body,,,geocrs:DwarfPlanet,,Astronomy
+geosrs:InterstellarBody,,,Interstellar Body,,Interstellar Body,,,geocrs:InterstellarBody,,Astronomy
+geosrs:Moon,,,Moon,,Interstellar Body,,,geocrs:Moon,,Astronomy
+geosrs:NaturalSatellite,,,Natural Satellite,,Interstellar Body,,,geocrs:NaturalSatellite,,Astronomy
+geosrs:Planet,,,Planet,,Interstellar Body,,,geocrs:Planet,,Astronomy
+geosrs:PlanetStatus,,,Planet Status,,Interstellar Body,,,geocrs:PlanetStatus,,Astronomy
+geosrs:Plutoid,,,Plutoid,,Interstellar Body,,,geocrs:Plutoid,,Astronomy
+geosrs:Star,,Star,,,Interstellar Body,,,geocrs:Star,,Astronomy

@@ -439,12 +439,15 @@ for file in os.listdir(directory):
                             if "Type" in row and row["Type"]!="":
                                 gcore.add((URIRef(row["Concept"].replace(coreprefix+":",geocrsNS)),RDF.type,URIRef(row["Type"].replace(coreprefix+":",geocrsNS))))
                                 gcore.add((URIRef(row["Concept"].replace(coreprefix+":",geocrsNS)),RDF.type,OWL.NamedIndividual))
+                                adocdef+="|Type\n|"+row["Type"].replace(coreprefix+":",geocrsNS)+"["+str(row["Type"])+"]\n\n"
                             else:
                                 gcore.add((URIRef(row["Concept"].replace(coreprefix+":",geocrsNS)),RDF.type,OWL.NamedIndividual))
+                                adocdef+="|Type\n|http://www.w3.org/2002/07/owl#NamedIndividual[owl:NamedIndividual]\n\n"
                             if "Label" in row and row["Label"]!="":
                                 gcore.add((URIRef(row["Concept"].replace(coreprefix+":",geocrsNS)),RDFS.label,Literal(row["Label"],lang="en")))
                             if "Definition" in row and row["Definition"]!="":
                                 gcore.add((URIRef(row["Concept"].replace(coreprefix+":",geocrsNS)),SKOS.definition,Literal(row["Definition"],lang="en")))
+                                adocdef+="|Definition\n|"+str(row["Definition"])+"\n\n"
                             if "Requirement" in row and row["Requirement"]!="":
                                 if row["Requirement"] not in moduleToRequirements[prefixToModule["instances"]]:
                                     moduleToRequirements[prefixToModule["instances"]][row["Requirement"]]=[]
@@ -473,12 +476,15 @@ for file in os.listdir(directory):
                                 if "Type" in row and row["Type"]!="":
                                     exont[row["Module"].lower()].add((URIRef(row["Concept"].replace(coreprefix+":",curns+str(row["Module"]).lower()+"/")),RDF.type,URIRef(row["Type"].replace("geosrs:",getNSForClass(row["Type"],classToPrefix)))))
                                     exont[row["Module"].lower()].add((URIRef(row["Concept"].replace(coreprefix+":",curns+str(row["Module"]).lower()+"/")),RDF.type,OWL.NamedIndividual))
+                                    adocdef+="|Type\n|"+row["Type"].replace(coreprefix+":",geocrsNS)+"["+str(row["Type"])+"]\n\n"
                                 else:
                                     exont[row["Module"].lower()].add((URIRef(row["Concept"].replace(coreprefix+":",curns+str(row["Module"]).lower()+"/")),RDF.type,OWL.NamedIndividual))
+                                    adocdef+="|Type\n|http://www.w3.org/2002/07/owl#NamedIndividual[owl:NamedIndividual]\n\n"
                                 if "Label" in row and row["Label"]!="":
                                     exont[row["Module"].lower()].add((URIRef(row["Concept"].replace(coreprefix+":",curns+str(row["Module"]).lower()+"/")),RDFS.label,Literal(row["Label"],lang="en")))
                                 if "Definition" in row and row["Definition"]!="":
                                     exont[row["Module"].lower()].add((URIRef(row["Concept"].replace(coreprefix+":",curns+str(row["Module"]).lower()+"/")),SKOS.definition,Literal(row["Definition"],lang="en")))
+                                    adocdef+="|Definition\n|"+str(row["Definition"])+"\n\n"
                                 if "Requirement" in row and row["Requirement"]!="":
                                     if row["Requirement"] not in moduleToRequirements[prefixToModule["instances"]]:
                                         moduleToRequirements[prefixToModule["instances"]][row["Requirement"]]=[]

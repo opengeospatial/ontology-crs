@@ -587,6 +587,10 @@ Together with several subtypes of coordnate reference system, these definitions 
   <td class="tableblock halign-left valign-top"><p class="tableblock">Domain</p></td>
   <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/srs/CRS">CRS</a></p></td>
 </tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Example</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://opengeospatial.github.io/ontology-crs/data/def/crs/EPSG/0//29903_cs" target="_blank">geosrs:coordinateSystem</a></p></td>
+</tr>
 </tbody>
 </table>
 </section>
@@ -1894,7 +1898,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 </dd>
 <dt class="hdlist1">requirement</dt>
 <dd>
-<p>/req/Coordinate_System_Parameters</p>
+<p>/req/Coordinate_System_Properties</p>
 </dd>
 </dl>
 </div>
@@ -2115,12 +2119,12 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 </section>
 </section>
 <section class="sect3">
-<h4 id="_coordinate_system_parameters">Coordinate System Parameters</h4>
+<h4 id="_coordinate_system_properties">Coordinate System Properties</h4>
 <aside class="example">
-<div class="title">Example 13. Coordinate System Parameters</div>
+<div class="title">Example 13. Coordinate System Properties</div>
 <div class="content">
 <p class="paragraph">
-<p>Implementations shall allow the RDFS classes <a href="#Class: geosrs:axis"><code>geosrs:axis</code></a>, <a href="#Class: geosrs:axisDirection"><code>geosrs:axisDirection</code></a> to be used in SPARQL graph patterns.</p>
+<p>Implementations shall allow the RDFS properties <a href="#_property_geosrsaxis"><code>geosrs:axis</code></a>, <a href="#_property_geosrsaxisdirection"><code>geosrs:axisDirection</code></a> to be used in SPARQL graph patterns.</p>
 </p>
 </div>
 </aside>
@@ -2184,6 +2188,10 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <tr>
   <td class="tableblock halign-left valign-top"><p class="tableblock">Domain</p></td>
   <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/Axis">Axis</a></p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Example</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://opengeospatial.github.io/ontology-crs/data/def/crs/EPSG/0//cs/axis/north" target="_blank">geosrs:axisDirection</a></p></td>
 </tr>
 </tbody>
 </table>
@@ -8717,7 +8725,7 @@ Actual References:
 </section>
 <div id="footer">
 <div id="footer-text">
-Last updated 2025-08-10 15:47:50 UTC
+Last updated 2025-08-10 17:15:03 UTC
 </div>
 </div>
 </body>

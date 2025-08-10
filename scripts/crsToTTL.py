@@ -13,12 +13,18 @@ examples={}
 examplefile=open("examples.json","w")
 websitens="https://opengeospatial.github.io/ontology-crs/data/def/crs/EPSG/0/"
 websitensshort="https://opengeospatial.github.io/ontology-crs/data/ont/crs/"
+projectionscoll={}
+spheroidscoll={}
+crstypescoll={}
+scopescoll={}
 
 def crsToTTL(ttl,curcrs,x,geodcounter,crsclass):
 	epsgcode=str(x)
 	wkt=curcrs.to_wkt().replace("\"","'").strip()
+	crstypescoll[curcrs.type_name]=True
 	if crsclass!=None:
 		ttl.add("geoepsg:"+epsgcode+" rdf:type "+crsclass+" .\n")
+		examples[crsclass]=websitens+"/"+epsgcode
 	elif "Projected CRS" in curcrs.type_name:
 		ttl.add("geoepsg:"+epsgcode+" rdf:type geosrs:ProjectedCRS .\n")
 		examples["geosrs:ProjectedCRS"]=websitens+"/"+epsgcode
@@ -68,6 +74,7 @@ def crsToTTL(ttl,curcrs,x,geodcounter,crsclass):
 		if curcrs.coordinate_system.scope!=None:
 			ttl.add("geoepsg:"+epsgcode+"_cs geosrs:scope \""+str(curcrs.coordinate_system.scope)+"\" . \n")
 			examples["geosrs:"+str(curcrs.coordinate_system.scope).replace(" ","")]=websitensshort+"/"+str(curcrs.coordinate_system.scope).replace(" ","")
+			scopescoll[curcrs.coordinate_system.scope]=True
 		for axis in curcrs.coordinate_system.axis_list:
 			axisid=axis.name.replace(" ","_").replace("(","_").replace(")","_").replace("/","_").replace("'","_")+"_"+axis.unit_name.replace(" ","_").replace("(","_").replace(")","_").replace("/","_").replace("'","_")+"_"+axis.direction.replace(" ","_").replace("(","_").replace(")","_").replace("/","_").replace("'","_")
 			ttl.add("geoepsg:"+epsgcode+"_cs geosrs:axis geosrsaxis:"+axisid+" . \n")
@@ -190,6 +197,7 @@ def crsToTTL(ttl,curcrs,x,geodcounter,crsclass):
 			if curcrs.coordinate_operation.to_proj4()!=None:
 				proj4string=curcrs.coordinate_operation.to_proj4().strip().replace("\"","'").replace("\n","")
 				for prj in projections:
+					projectionscoll[prj]=True
 					if prj in proj4string:
 						ttl.add("geosrsoperation:"+str(coordoperationid)+" rdf:type "+projections[prj]+" . \n")
 						examples[projections[prj]]=websitensshort+"/crs/operation/"+str(coordoperationid)
@@ -239,18 +247,22 @@ def crsToTTL(ttl,curcrs,x,geodcounter,crsclass):
 						ttl.add("geosrsdatum:"+str(datumid)+" geosrs:usage \""+str(curcrs.datum.scope)+"\"^^xsd:string . \n")
 			#print(str(curcrs.datum.scope))
 		if curcrs.datum.ellipsoid!=None and curcrs.datum.ellipsoid.name in spheroids:
+			spheroidscoll[curcrs.datum.ellipsoid.name]=True
 			spheroidid=spheroids[curcrs.datum.ellipsoid.name]
 			ttl.add("geosrsdatum:"+str(datumid)+" geosrs:ellipse "+spheroidid+" . \n")
 			ttl.add(spheroidid+" rdfs:label \""+str(curcrs.datum.ellipsoid.name)+"\"@en . \n")
 			ttl.add(spheroidid+" rdf:type geosrs:Ellipsoid .\n")	
-			ttl.add(spheroidid+" geosrs:inverse_flattening \""+str(curcrs.datum.ellipsoid.inverse_flattening)+"\"^^xsd:double .\n")			
+			ttl.add(spheroidid+" geosrs:inverse_flattening \""+str(curcrs.datum.ellipsoid.inverse_flattening)+"\"^^xsd:double .\n")	
+			examples["geosrs:inverseFlattening"]=websitensshort+"/geod/"+str(spheroidid)		
 			if curcrs.datum.ellipsoid.remarks!=None:
 				ttl.add(spheroidid+" rdfs:comment \""+str(curcrs.datum.ellipsoid.remarks)+"\"^^xsd:string .\n")
 			ttl.add(spheroidid+" geosrs:is_semi_minor_computed \""+str(curcrs.datum.ellipsoid.is_semi_minor_computed).lower()+"\"^^xsd:boolean .\n")
 			examples["geosrs:Spheroid"]=websitensshort+"/geod/"+str(spheroidid)
+			examples[spheroidid]=websitensshort+"/geod/"+str(spheroidid)
 		elif curcrs.datum.ellipsoid!=None:	
 			ttl.add("geosrsdatum:"+str(datumid)+" geosrs:ellipse \""+curcrs.datum.ellipsoid.name+"\" . \n")
 			examples["geosrs:ellipsoid"]=websitensshort+"/datum/"+str(datumid)
+			spheroidid=spheroids[curcrs.datum.ellipsoid.name]
 		if curcrs.prime_meridian!=None:
 			meridianid=str(curcrs.prime_meridian.name.replace(" ",""))
 			ttl.add("geosrsdatum:"+str(datumid)+" geosrs:primeMeridian geosrsmeridian:"+meridianid+" . \n")
@@ -481,3 +493,7 @@ else:
 		graph2.serialize(destination=str(args.input).replace(":","_")+".ttl", format='turtle')
 examplefile.write(json.dumps(examples,indent=2,sort_keys=True))
 examplefile.close()
+print(scopescoll)
+print(crstypescoll)
+print(projectionscoll)
+print(spheroidscoll)

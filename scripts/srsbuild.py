@@ -318,7 +318,7 @@ for file in os.listdir(directory):
                             if "Range" in row and row["Range"]!="":
                                 gcore.add((URIRef(row["Concept"].replace(coreprefix+":",geocrsNS)),RDFS.range,URIRef(row["Range"].replace("geosrs:", getNSForClass(row["Range"],classToPrefix)))))
                                 propref=row["Range"].replace("geosrs:", getNSForClass(row["Range"],classToPrefix))
-                                adocdef+="|Range\n|"+propref+"["+propref[propref.rfind("/")+1:]+"]\n\n"
+                                adocdef+="|Range\n|"+propref.replace("xsd:","http://www.w3.org/2001/XMLSchema#")+"["+propref[propref.rfind("/")+1:]+"]\n\n"
                             if "Domain" in row and row["Domain"]!="":
                                 gcore.add((URIRef(row["Concept"].replace(coreprefix+":",geocrsNS)),RDFS.domain,URIRef(row["Domain"].replace("geosrs:",getNSForClass(row["Domain"],classToPrefix)))))
                                 propref=row["Domain"].replace("geosrs:",getNSForClass(row["Domain"],classToPrefix))
@@ -376,7 +376,7 @@ for file in os.listdir(directory):
                                 if "Range" in row and row["Range"]!="":
                                     exont[row["Core Property?"].lower()].add((URIRef(row["Concept"].replace(coreprefix+":",curns+str(row["Core Property?"]).lower()+"/")),RDFS.range,URIRef(row["Range"].replace("geosrs:",getNSForClass(row["Range"],classToPrefix)))))
                                     propref=row["Range"].replace("geosrs:", getNSForClass(row["Range"],classToPrefix))
-                                    adocdef+="|Range\n|"+propref+"["+propref[propref.rfind("/")+1:]+"]\n\n"
+                                    adocdef+="|Range\n|"+propref.replace("xsd:","http://www.w3.org/2001/XMLSchema#")+"["+propref[propref.rfind("/")+1:]+"]\n\n"
                                 if "Domain" in row and row["Domain"]!="":
                                     exont[row["Core Property?"].lower()].add((URIRef(row["Concept"].replace(coreprefix+":",curns+str(row["Core Property?"]).lower()+"/")),RDFS.domain,URIRef(row["Domain"].replace("geosrs:",getNSForClass(row["Domain"],classToPrefix)))))
                                     propref=row["Domain"].replace("geosrs:",getNSForClass(row["Domain"],classToPrefix))

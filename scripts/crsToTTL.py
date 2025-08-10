@@ -192,7 +192,7 @@ def crsToTTL(ttl,curcrs,x,geodcounter,crsclass):
 				for prj in projections:
 					if prj in proj4string:
 						ttl.add("geosrsoperation:"+str(coordoperationid)+" rdf:type "+projections[prj]+" . \n")
-						examples[projections[prj]]=websitensshort+"/proj/"+str(projections[prj]).replace("geosrs:","")
+						examples[projections[prj]]=websitensshort+"/crs/operation/"+str(coordoperationid)
 						found=True
 						break
 			if not found:

@@ -16,7 +16,7 @@
     ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'VerticalCRS','name':'Dunedin 1958 height','datum':{'type':'VerticalReferenceFrame','name':'Dunedin 1958'},'coordinate_system':{'subtype':'vertical','axis':[{'name':'Gravity-related height','abbreviation':'H','direction':'up','unit':'metre'}]},'scope':'Geodesy, engineering survey, topographic mapping.','area':'New Zealand - South Island - between approximately 44°S and 46°S - Dunedin vertical CRS area.','bbox':{'south_latitude':-46.4,'west_longitude':167.73,'north_latitude':-43.82,'east_longitude':171.28},'id':{'authority':'EPSG','code':5761}}"^^xsd:string ;
     ns1:asWKT "VERTCRS['Dunedin 1958 height',VDATUM['Dunedin 1958'],CS[vertical,1],AXIS['gravity-related height (H)',up,LENGTHUNIT['metre',1]],USAGE[SCOPE['Geodesy, engineering survey, topographic mapping.'],AREA['New Zealand - South Island - between approximately 44°S and 46°S - Dunedin vertical CRS area.'],BBOX[-46.4,167.73,-43.82,171.28]],ID['EPSG',5761]]"^^ns1:wktLiteral ;
     ns1:coordinateSystem <http://www.opengis.net/def/crs/EPSG/0/5761_cs> ;
-    ns1:datum <https://w3id.org/geosrs/datum/Dunedin_1958> ;
+    ns1:datum <http://www.opengis.net/ont/crs/datum/Dunedin_1958> ;
     ns1:epsgCode "EPSG:5761"^^xsd:string ;
     ns1:isApplicableTo <http://www.opengis.net/ont/crs/isbody/Earth> ;
     ns1:isBound false ;

@@ -1,14 +1,15 @@
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
-@prefix ns1: <http://www.opengis.net/ont/crs/> .
+@prefix ns1: <https://w3id.org/geosrs/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix void: <http://rdfs.org/ns/void#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://www.opengis.net/ont/crs/operation/Equi7_projection_-_Antarctica> a ns1:CoordinateConversionOperation,
-        <http://www.w3.org/ns/ldp#Resource>,
+<http://www.opengis.net/ont/crs/operation/Equi7_projection_-_Antarctica> a <http://www.w3.org/ns/ldp#Resource>,
+        ns1:CoordinateConversionOperation,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Equi7 projection - Antarctica: Azimuthal Equidistant"@en ;
     void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
+    rdfs:comment "Basis for the Equi7 grid for Antarctica. Designed in 2014 to efficiently handle the archiving, processing, and displaying of high resolution raster data over land while preserving geometric accuracy. The projection is neither conformal nor equal-area."^^xsd:string ;
     ns1:accuracy -1e+00 ;
     ns1:area_of_use <http://www.opengis.net/ont/crs/areaofuse/Equi7_projection_-_Antarctica_area_of_use> ;
     ns1:asProj4 "+proj=pipeline +step +proj=axisswap +order=2,1 +step +proj=unitconvert +xy_in=deg +xy_out=rad +step +proj=aeqd +lat_0=-90 +lon_0=0 +x_0=3714266.977 +y_0=3402016.506 +ellps=WGS84" ;
@@ -20,6 +21,5 @@
     ns1:latitudeOfNaturalOrigin -9e+01 ;
     ns1:longitudeOfNaturalOrigin 0e+00 ;
     ns1:method_name "Azimuthal Equidistant" ;
-    ns1:scope "Continental mapping of raster data."^^xsd:string ;
-    rdfs:comment "Basis for the Equi7 grid for Antarctica. Designed in 2014 to efficiently handle the archiving, processing, and displaying of high resolution raster data over land while preserving geometric accuracy. The projection is neither conformal nor equal-area."^^xsd:string .
+    ns1:scope "Continental mapping of raster data."^^xsd:string .
 

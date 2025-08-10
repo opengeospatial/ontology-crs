@@ -1,14 +1,15 @@
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
-@prefix ns1: <http://www.opengis.net/ont/crs/> .
+@prefix ns1: <https://w3id.org/geosrs/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix void: <http://rdfs.org/ns/void#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://www.opengis.net/ont/crs/operation/Rectified_Skew_Orthomorphic_Borneo_Grid__metre_> a ns1:ObliqueMercatorProjection,
-        <http://www.w3.org/ns/ldp#Resource>,
+<http://www.opengis.net/ont/crs/operation/Rectified_Skew_Orthomorphic_Borneo_Grid__metre_> a <http://www.w3.org/ns/ldp#Resource>,
+        ns1:ObliqueMercatorProjection,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Rectified Skew Orthomorphic Borneo Grid (metre): Hotine Oblique Mercator (variant B)"@en ;
     void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
+    rdfs:comment "See 19956 and 19957 for chains and feet versions. Uses Sear's 1922 British yard-metre ratio as given by Bomford as 39.370147 inches per metre. If using Hotine Oblique Mercator (variant A) method (code 9812) FE = FN = 0 m."^^xsd:string ;
     ns1:accuracy -1e+00 ;
     ns1:angleFromRectifiedToSkewGrid 5.31301e+01 ;
     ns1:area_of_use <http://www.opengis.net/ont/crs/areaofuse/Rectified_Skew_Orthomorphic_Borneo_Grid__metre__area_of_use> ;
@@ -23,6 +24,5 @@
     ns1:method_name "Hotine Oblique Mercator (variant B)" ;
     ns1:northingAtProjectionCentre 4.428577e+05 ;
     ns1:scaleFactorAtProjectionCentre 9.9984e-01 ;
-    ns1:scope "Engineering survey, topographic mapping."^^xsd:string ;
-    rdfs:comment "See 19956 and 19957 for chains and feet versions. Uses Sear's 1922 British yard-metre ratio as given by Bomford as 39.370147 inches per metre. If using Hotine Oblique Mercator (variant A) method (code 9812) FE = FN = 0 m."^^xsd:string .
+    ns1:scope "Engineering survey, topographic mapping."^^xsd:string .
 

@@ -16,7 +16,7 @@
     ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'GeographicCRS','name':'Kertau (RSO)','datum':{'type':'GeodeticReferenceFrame','name':'Kertau (RSO)','ellipsoid':{'name':'Everest 1830 (RSO 1969)','semi_major_axis':6377295.664,'inverse_flattening':300.8017}},'coordinate_system':{'subtype':'ellipsoidal','axis':[{'name':'Geodetic latitude','abbreviation':'Lat','direction':'north','unit':'degree'},{'name':'Geodetic longitude','abbreviation':'Lon','direction':'east','unit':'degree'}]},'scope':'Metrication of RSO grid.','area':'Malaysia - West Malaysia; Singapore.','bbox':{'south_latitude':1.13,'west_longitude':99.59,'north_latitude':6.72,'east_longitude':104.6},'id':{'authority':'EPSG','code':4751}}"^^xsd:string ;
     ns1:asWKT "GEOGCRS['Kertau (RSO)',DATUM['Kertau (RSO)',ELLIPSOID['Everest 1830 (RSO 1969)',6377295.664,300.8017,LENGTHUNIT['metre',1]]],PRIMEM['Greenwich',0,ANGLEUNIT['degree',0.0174532925199433]],CS[ellipsoidal,2],AXIS['geodetic latitude (Lat)',north,ORDER[1],ANGLEUNIT['degree',0.0174532925199433]],AXIS['geodetic longitude (Lon)',east,ORDER[2],ANGLEUNIT['degree',0.0174532925199433]],USAGE[SCOPE['Metrication of RSO grid.'],AREA['Malaysia - West Malaysia; Singapore.'],BBOX[1.13,99.59,6.72,104.6]],ID['EPSG',4751]]"^^ns1:wktLiteral ;
     ns1:coordinateSystem <http://www.opengis.net/def/crs/EPSG/0/4751_cs> ;
-    ns1:datum <https://w3id.org/geosrs/datum/Kertau__RSO_> ;
+    ns1:datum <http://www.opengis.net/ont/crs/datum/Kertau__RSO_> ;
     ns1:epsgCode "EPSG:4751"^^xsd:string ;
     ns1:isApplicableTo <http://www.opengis.net/ont/crs/isbody/Earth> ;
     ns1:isBound false ;

@@ -16,7 +16,7 @@
     ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'VerticalCRS','name':'Santa Cruz da Graciosa height','datum':{'type':'VerticalReferenceFrame','name':'Santa Cruz da Graciosa'},'coordinate_system':{'subtype':'vertical','axis':[{'name':'Gravity-related height','abbreviation':'H','direction':'up','unit':'metre'}]},'scope':'Geodesy, engineering survey, topographic mapping.','area':'Portugal - central Azores - Graciosa island onshore.','bbox':{'south_latitude':38.97,'west_longitude':-28.13,'north_latitude':39.14,'east_longitude':-27.88},'id':{'authority':'EPSG','code':6183}}"^^xsd:string ;
     ns1:asWKT "VERTCRS['Santa Cruz da Graciosa height',VDATUM['Santa Cruz da Graciosa'],CS[vertical,1],AXIS['gravity-related height (H)',up,LENGTHUNIT['metre',1]],USAGE[SCOPE['Geodesy, engineering survey, topographic mapping.'],AREA['Portugal - central Azores - Graciosa island onshore.'],BBOX[38.97,-28.13,39.14,-27.88]],ID['EPSG',6183]]"^^ns1:wktLiteral ;
     ns1:coordinateSystem <http://www.opengis.net/def/crs/EPSG/0/6183_cs> ;
-    ns1:datum <https://w3id.org/geosrs/datum/Santa_Cruz_da_Graciosa> ;
+    ns1:datum <http://www.opengis.net/ont/crs/datum/Santa_Cruz_da_Graciosa> ;
     ns1:epsgCode "EPSG:6183"^^xsd:string ;
     ns1:isApplicableTo <http://www.opengis.net/ont/crs/isbody/Earth> ;
     ns1:isBound false ;

@@ -1,14 +1,15 @@
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
-@prefix ns1: <http://www.opengis.net/ont/crs/> .
+@prefix ns1: <https://w3id.org/geosrs/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix void: <http://rdfs.org/ns/void#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://www.opengis.net/ont/crs/operation/Gusterberg_Grid> a ns1:CassiniProjection,
-        <http://www.w3.org/ns/ldp#Resource>,
+<http://www.opengis.net/ont/crs/operation/Gusterberg_Grid> a <http://www.w3.org/ns/ldp#Resource>,
+        ns1:CassiniProjection,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Gusterberg Grid: Cassini-Soldner"@en ;
     void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
+    rdfs:comment "Longitude is referenced to the Ferro meridian."^^xsd:string ;
     ns1:accuracy -1e+00 ;
     ns1:area_of_use <http://www.opengis.net/ont/crs/areaofuse/Gusterberg_Grid_area_of_use> ;
     ns1:asProj4 "+proj=pipeline +step +proj=axisswap +order=2,1 +step +proj=unitconvert +xy_in=deg +xy_out=rad +step +inv +proj=longlat +a=6376045 +rf=310 +pm=ferro +step +proj=cass +lat_0=48.0384638888889 +lon_0=31.8041805555556 +x_0=0 +y_0=0 +a=6376045 +rf=310 +pm=ferro +step +proj=axisswap +order=-2,-1" ;
@@ -20,6 +21,5 @@
     ns1:latitudeOfNaturalOrigin 4.803846e+01 ;
     ns1:longitudeOfNaturalOrigin 3.180418e+01 ;
     ns1:method_name "Cassini-Soldner" ;
-    ns1:scope "Cadastre."^^xsd:string ;
-    rdfs:comment "Longitude is referenced to the Ferro meridian."^^xsd:string .
+    ns1:scope "Cadastre."^^xsd:string .
 

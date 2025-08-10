@@ -1,14 +1,15 @@
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
-@prefix ns1: <http://www.opengis.net/ont/crs/> .
+@prefix ns1: <https://w3id.org/geosrs/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix void: <http://rdfs.org/ns/void#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://www.opengis.net/ont/crs/operation/Nakhl_e_Taqi_Oblique_Mercator> a ns1:ObliqueMercatorProjection,
-        <http://www.w3.org/ns/ldp#Resource>,
+<http://www.opengis.net/ont/crs/operation/Nakhl_e_Taqi_Oblique_Mercator> a <http://www.w3.org/ns/ldp#Resource>,
+        ns1:ObliqueMercatorProjection,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Nakhl e Taqi Oblique Mercator: Hotine Oblique Mercator (variant B)"@en ;
     void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
+    rdfs:comment "Used only for terminal site."^^xsd:string ;
     ns1:accuracy -1e+00 ;
     ns1:angleFromRectifiedToSkewGrid 5.716612e-01 ;
     ns1:area_of_use <http://www.opengis.net/ont/crs/areaofuse/Nakhl_e_Taqi_Oblique_Mercator_area_of_use> ;
@@ -23,6 +24,5 @@
     ns1:method_name "Hotine Oblique Mercator (variant B)" ;
     ns1:northingAtProjectionCentre 3.044969e+06 ;
     ns1:scaleFactorAtProjectionCentre 9.998959e-01 ;
-    ns1:scope "Engineering survey, topographic mapping."^^xsd:string ;
-    rdfs:comment "Used only for terminal site."^^xsd:string .
+    ns1:scope "Engineering survey, topographic mapping."^^xsd:string .
 

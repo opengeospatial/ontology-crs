@@ -16,7 +16,7 @@
     ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'GeographicCRS','name':'Kyrg-06','datum':{'type':'GeodeticReferenceFrame','name':'Kyrgyzstan Geodetic Datum 2006','ellipsoid':{'name':'GRS 1980','semi_major_axis':6378137,'inverse_flattening':298.257222101}},'coordinate_system':{'subtype':'ellipsoidal','axis':[{'name':'Geodetic latitude','abbreviation':'Lat','direction':'north','unit':'degree'},{'name':'Geodetic longitude','abbreviation':'Lon','direction':'east','unit':'degree'},{'name':'Ellipsoidal height','abbreviation':'h','direction':'up','unit':'metre'}]},'scope':'Geodesy.','area':'Kyrgyzstan.','bbox':{'south_latitude':39.19,'west_longitude':69.24,'north_latitude':43.22,'east_longitude':80.29},'id':{'authority':'EPSG','code':7685}}"^^xsd:string ;
     ns1:asWKT "GEOGCRS['Kyrg-06',DATUM['Kyrgyzstan Geodetic Datum 2006',ELLIPSOID['GRS 1980',6378137,298.257222101,LENGTHUNIT['metre',1]]],PRIMEM['Greenwich',0,ANGLEUNIT['degree',0.0174532925199433]],CS[ellipsoidal,3],AXIS['geodetic latitude (Lat)',north,ORDER[1],ANGLEUNIT['degree',0.0174532925199433]],AXIS['geodetic longitude (Lon)',east,ORDER[2],ANGLEUNIT['degree',0.0174532925199433]],AXIS['ellipsoidal height (h)',up,ORDER[3],LENGTHUNIT['metre',1]],USAGE[SCOPE['Geodesy.'],AREA['Kyrgyzstan.'],BBOX[39.19,69.24,43.22,80.29]],ID['EPSG',7685]]"^^ns1:wktLiteral ;
     ns1:coordinateSystem <http://www.opengis.net/def/crs/EPSG/0/7685_cs> ;
-    ns1:datum <https://w3id.org/geosrs/datum/Kyrgyzstan_Geodetic_Datum_2006> ;
+    ns1:datum <http://www.opengis.net/ont/crs/datum/Kyrgyzstan_Geodetic_Datum_2006> ;
     ns1:epsgCode "EPSG:7685"^^xsd:string ;
     ns1:isApplicableTo <http://www.opengis.net/ont/crs/isbody/Earth> ;
     ns1:isBound false ;

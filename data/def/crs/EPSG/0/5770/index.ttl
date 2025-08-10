@@ -16,7 +16,7 @@
     ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'VerticalCRS','name':'Wellington 1953 height','datum':{'type':'VerticalReferenceFrame','name':'Wellington 1953'},'coordinate_system':{'subtype':'vertical','axis':[{'name':'Gravity-related height','abbreviation':'H','direction':'up','unit':'metre'}]},'scope':'Geodesy, engineering survey, topographic mapping.','area':'New Zealand - North Island - Wellington vertical CRS area.','bbox':{'south_latitude':-41.67,'west_longitude':174.52,'north_latitude':-40.12,'east_longitude':176.55},'id':{'authority':'EPSG','code':5770}}"^^xsd:string ;
     ns1:asWKT "VERTCRS['Wellington 1953 height',VDATUM['Wellington 1953'],CS[vertical,1],AXIS['gravity-related height (H)',up,LENGTHUNIT['metre',1]],USAGE[SCOPE['Geodesy, engineering survey, topographic mapping.'],AREA['New Zealand - North Island - Wellington vertical CRS area.'],BBOX[-41.67,174.52,-40.12,176.55]],ID['EPSG',5770]]"^^ns1:wktLiteral ;
     ns1:coordinateSystem <http://www.opengis.net/def/crs/EPSG/0/5770_cs> ;
-    ns1:datum <https://w3id.org/geosrs/datum/Wellington_1953> ;
+    ns1:datum <http://www.opengis.net/ont/crs/datum/Wellington_1953> ;
     ns1:epsgCode "EPSG:5770"^^xsd:string ;
     ns1:isApplicableTo <http://www.opengis.net/ont/crs/isbody/Earth> ;
     ns1:isBound false ;

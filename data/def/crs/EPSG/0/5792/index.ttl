@@ -16,7 +16,7 @@
     ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'VerticalCRS','name':'Danger 1950 height','datum':{'type':'VerticalReferenceFrame','name':'Danger 1950'},'coordinate_system':{'subtype':'vertical','axis':[{'name':'Gravity-related height','abbreviation':'H','direction':'up','unit':'metre'}]},'scope':'Geodesy, engineering survey.','area':'St Pierre and Miquelon - onshore.','bbox':{'south_latitude':46.69,'west_longitude':-56.48,'north_latitude':47.19,'east_longitude':-56.07},'id':{'authority':'EPSG','code':5792}}"^^xsd:string ;
     ns1:asWKT "VERTCRS['Danger 1950 height',VDATUM['Danger 1950'],CS[vertical,1],AXIS['gravity-related height (H)',up,LENGTHUNIT['metre',1]],USAGE[SCOPE['Geodesy, engineering survey.'],AREA['St Pierre and Miquelon - onshore.'],BBOX[46.69,-56.48,47.19,-56.07]],ID['EPSG',5792]]"^^ns1:wktLiteral ;
     ns1:coordinateSystem <http://www.opengis.net/def/crs/EPSG/0/5792_cs> ;
-    ns1:datum <https://w3id.org/geosrs/datum/Danger_1950> ;
+    ns1:datum <http://www.opengis.net/ont/crs/datum/Danger_1950> ;
     ns1:epsgCode "EPSG:5792"^^xsd:string ;
     ns1:isApplicableTo <http://www.opengis.net/ont/crs/isbody/Earth> ;
     ns1:isBound false ;

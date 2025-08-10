@@ -16,7 +16,7 @@
     ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'VerticalCRS','name':'EH2000 height','datum':{'type':'VerticalReferenceFrame','name':'Estonian Height System 2000'},'coordinate_system':{'subtype':'vertical','axis':[{'name':'Gravity-related height','abbreviation':'H','direction':'up','unit':'metre'}]},'scope':'Geodesy, engineering survey, topographic mapping.','area':'Estonia - onshore.','bbox':{'south_latitude':57.52,'west_longitude':21.74,'north_latitude':59.75,'east_longitude':28.2},'id':{'authority':'EPSG','code':9663}}"^^xsd:string ;
     ns1:asWKT "VERTCRS['EH2000 height',VDATUM['Estonian Height System 2000'],CS[vertical,1],AXIS['gravity-related height (H)',up,LENGTHUNIT['metre',1]],USAGE[SCOPE['Geodesy, engineering survey, topographic mapping.'],AREA['Estonia - onshore.'],BBOX[57.52,21.74,59.75,28.2]],ID['EPSG',9663]]"^^ns1:wktLiteral ;
     ns1:coordinateSystem <http://www.opengis.net/def/crs/EPSG/0/9663_cs> ;
-    ns1:datum <https://w3id.org/geosrs/datum/Estonian_Height_System_2000> ;
+    ns1:datum <http://www.opengis.net/ont/crs/datum/Estonian_Height_System_2000> ;
     ns1:epsgCode "EPSG:9663"^^xsd:string ;
     ns1:isApplicableTo <http://www.opengis.net/ont/crs/isbody/Earth> ;
     ns1:isBound false ;

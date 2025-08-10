@@ -16,7 +16,7 @@
     ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'GeographicCRS','name':'RGFG95','datum':{'type':'GeodeticReferenceFrame','name':'Reseau Geodesique Francais Guyane 1995','ellipsoid':{'name':'GRS 1980','semi_major_axis':6378137,'inverse_flattening':298.257222101}},'coordinate_system':{'subtype':'ellipsoidal','axis':[{'name':'Geodetic latitude','abbreviation':'Lat','direction':'north','unit':'degree'},{'name':'Geodetic longitude','abbreviation':'Lon','direction':'east','unit':'degree'}]},'scope':'Horizontal component of 3D system.','area':'French Guiana - onshore and offshore.','bbox':{'south_latitude':2.11,'west_longitude':-54.61,'north_latitude':8.88,'east_longitude':-49.45},'id':{'authority':'EPSG','code':4624}}"^^xsd:string ;
     ns1:asWKT "GEOGCRS['RGFG95',DATUM['Reseau Geodesique Francais Guyane 1995',ELLIPSOID['GRS 1980',6378137,298.257222101,LENGTHUNIT['metre',1]]],PRIMEM['Greenwich',0,ANGLEUNIT['degree',0.0174532925199433]],CS[ellipsoidal,2],AXIS['geodetic latitude (Lat)',north,ORDER[1],ANGLEUNIT['degree',0.0174532925199433]],AXIS['geodetic longitude (Lon)',east,ORDER[2],ANGLEUNIT['degree',0.0174532925199433]],USAGE[SCOPE['Horizontal component of 3D system.'],AREA['French Guiana - onshore and offshore.'],BBOX[2.11,-54.61,8.88,-49.45]],ID['EPSG',4624]]"^^ns1:wktLiteral ;
     ns1:coordinateSystem <http://www.opengis.net/def/crs/EPSG/0/4624_cs> ;
-    ns1:datum <https://w3id.org/geosrs/datum/Reseau_Geodesique_Francais_Guyane_1995> ;
+    ns1:datum <http://www.opengis.net/ont/crs/datum/Reseau_Geodesique_Francais_Guyane_1995> ;
     ns1:epsgCode "EPSG:4624"^^xsd:string ;
     ns1:isApplicableTo <http://www.opengis.net/ont/crs/isbody/Earth> ;
     ns1:isBound false ;

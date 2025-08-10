@@ -16,7 +16,7 @@
     ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'VerticalCRS','name':'INAGeoid2020 v2 height','datum':{'type':'VerticalReferenceFrame','name':'Indonesian Geoid 2020 version 2'},'coordinate_system':{'subtype':'vertical','axis':[{'name':'Gravity-related height','abbreviation':'H','direction':'up','unit':'metre'}]},'scope':'Geodesy, engineering survey, topographic mapping.','area':'Indonesia - onshore and offshore.','bbox':{'south_latitude':-13.95,'west_longitude':92.01,'north_latitude':7.79,'east_longitude':141.46},'id':{'authority':'EPSG','code':20036}}"^^xsd:string ;
     ns1:asWKT "VERTCRS['INAGeoid2020 v2 height',VDATUM['Indonesian Geoid 2020 version 2'],CS[vertical,1],AXIS['gravity-related height (H)',up,LENGTHUNIT['metre',1]],USAGE[SCOPE['Geodesy, engineering survey, topographic mapping.'],AREA['Indonesia - onshore and offshore.'],BBOX[-13.95,92.01,7.79,141.46]],ID['EPSG',20036]]"^^ns1:wktLiteral ;
     ns1:coordinateSystem <http://www.opengis.net/def/crs/EPSG/0/20036_cs> ;
-    ns1:datum <https://w3id.org/geosrs/datum/Indonesian_Geoid_2020_version_2> ;
+    ns1:datum <http://www.opengis.net/ont/crs/datum/Indonesian_Geoid_2020_version_2> ;
     ns1:epsgCode "EPSG:20036"^^xsd:string ;
     ns1:isApplicableTo <http://www.opengis.net/ont/crs/isbody/Earth> ;
     ns1:isBound false ;

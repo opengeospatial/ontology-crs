@@ -16,7 +16,7 @@
     ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'VerticalCRS','name':'NZVD2009 height','datum':{'type':'VerticalReferenceFrame','name':'New Zealand Vertical Datum 2009'},'coordinate_system':{'subtype':'vertical','axis':[{'name':'Gravity-related height','abbreviation':'H','direction':'up','unit':'metre'}]},'scope':'Geodesy, engineering survey, topographic mapping.','area':'New Zealand - onshore and offshore. Includes Antipodes Islands, Auckland Islands, Bounty Islands, Chatham Islands, Cambell Island, Kermadec Islands, Raoul Island and Snares Islands.','bbox':{'south_latitude':-55.95,'west_longitude':160.6,'north_latitude':-25.88,'east_longitude':-171.2},'id':{'authority':'EPSG','code':4440}}"^^xsd:string ;
     ns1:asWKT "VERTCRS['NZVD2009 height',VDATUM['New Zealand Vertical Datum 2009'],CS[vertical,1],AXIS['gravity-related height (H)',up,LENGTHUNIT['metre',1]],USAGE[SCOPE['Geodesy, engineering survey, topographic mapping.'],AREA['New Zealand - onshore and offshore. Includes Antipodes Islands, Auckland Islands, Bounty Islands, Chatham Islands, Cambell Island, Kermadec Islands, Raoul Island and Snares Islands.'],BBOX[-55.95,160.6,-25.88,-171.2]],ID['EPSG',4440]]"^^ns1:wktLiteral ;
     ns1:coordinateSystem <http://www.opengis.net/def/crs/EPSG/0/4440_cs> ;
-    ns1:datum <https://w3id.org/geosrs/datum/New_Zealand_Vertical_Datum_2009> ;
+    ns1:datum <http://www.opengis.net/ont/crs/datum/New_Zealand_Vertical_Datum_2009> ;
     ns1:epsgCode "EPSG:4440"^^xsd:string ;
     ns1:isApplicableTo <http://www.opengis.net/ont/crs/isbody/Earth> ;
     ns1:isBound false ;

@@ -16,7 +16,7 @@
     ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'VerticalCRS','name':'St. Kilda height','datum':{'type':'VerticalReferenceFrame','name':'St. Kilda'},'coordinate_system':{'subtype':'vertical','axis':[{'name':'Gravity-related height','abbreviation':'H','direction':'up','unit':'metre'}]},'scope':'Geodesy, engineering survey.','area':'United Kingdom (UK) - Great Britain - Scotland - St Kilda onshore.','bbox':{'south_latitude':57.74,'west_longitude':-8.74,'north_latitude':57.93,'east_longitude':-8.41},'id':{'authority':'EPSG','code':5747}}"^^xsd:string ;
     ns1:asWKT "VERTCRS['St. Kilda height',VDATUM['St. Kilda'],CS[vertical,1],AXIS['gravity-related height (H)',up,LENGTHUNIT['metre',1]],USAGE[SCOPE['Geodesy, engineering survey.'],AREA['United Kingdom (UK) - Great Britain - Scotland - St Kilda onshore.'],BBOX[57.74,-8.74,57.93,-8.41]],ID['EPSG',5747]]"^^ns1:wktLiteral ;
     ns1:coordinateSystem <http://www.opengis.net/def/crs/EPSG/0/5747_cs> ;
-    ns1:datum <https://w3id.org/geosrs/datum/St._Kilda> ;
+    ns1:datum <http://www.opengis.net/ont/crs/datum/St._Kilda> ;
     ns1:epsgCode "EPSG:5747"^^xsd:string ;
     ns1:isApplicableTo <http://www.opengis.net/ont/crs/isbody/Earth> ;
     ns1:isBound false ;

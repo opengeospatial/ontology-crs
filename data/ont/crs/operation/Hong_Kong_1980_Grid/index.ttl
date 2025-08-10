@@ -1,14 +1,15 @@
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
-@prefix ns1: <http://www.opengis.net/ont/crs/> .
+@prefix ns1: <https://w3id.org/geosrs/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix void: <http://rdfs.org/ns/void#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://www.opengis.net/ont/crs/operation/Hong_Kong_1980_Grid> a ns1:TransverseMercatorProjection,
-        <http://www.w3.org/ns/ldp#Resource>,
+<http://www.opengis.net/ont/crs/operation/Hong_Kong_1980_Grid> a <http://www.w3.org/ns/ldp#Resource>,
+        ns1:TransverseMercatorProjection,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Hong Kong 1980 Grid: Transverse Mercator"@en ;
     void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
+    rdfs:comment "Grid origin is Partiridge Hill triangulation station (old trig '2')."^^xsd:string ;
     ns1:accuracy -1e+00 ;
     ns1:area_of_use <http://www.opengis.net/ont/crs/areaofuse/Hong_Kong_1980_Grid_area_of_use> ;
     ns1:asProj4 "+proj=pipeline +step +proj=axisswap +order=2,1 +step +proj=unitconvert +xy_in=deg +xy_out=rad +step +proj=tmerc +lat_0=22.3121333333333 +lon_0=114.178555555556 +k=1 +x_0=836694.05 +y_0=819069.8 +ellps=intl +step +proj=axisswap +order=2,1" ;
@@ -21,6 +22,5 @@
     ns1:longitudeOfNaturalOrigin 1.141786e+02 ;
     ns1:method_name "Transverse Mercator" ;
     ns1:scaleFactorAtNaturalOrigin 1e+00 ;
-    ns1:scope "Cadastre, engineering survey, topographic mapping (large scale)."^^xsd:string ;
-    rdfs:comment "Grid origin is Partiridge Hill triangulation station (old trig '2')."^^xsd:string .
+    ns1:scope "Cadastre, engineering survey, topographic mapping (large scale)."^^xsd:string .
 

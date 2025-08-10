@@ -16,7 +16,7 @@
     ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'VerticalCRS','name':'SRB_VRS12 height','datum':{'type':'VerticalReferenceFrame','name':'Serbian Vertical Reference System 2012'},'coordinate_system':{'subtype':'vertical','axis':[{'name':'Gravity-related height','abbreviation':'H','direction':'up','unit':'metre'}]},'scope':'Geodesy, engineering survey, topographic mapping.','area':'Serbia including Vojvodina.','bbox':{'south_latitude':42.23,'west_longitude':18.81,'north_latitude':46.19,'east_longitude':23.01},'id':{'authority':'EPSG','code':8691}}"^^xsd:string ;
     ns1:asWKT "VERTCRS['SRB_VRS12 height',VDATUM['Serbian Vertical Reference System 2012'],CS[vertical,1],AXIS['gravity-related height (H)',up,LENGTHUNIT['metre',1]],USAGE[SCOPE['Geodesy, engineering survey, topographic mapping.'],AREA['Serbia including Vojvodina.'],BBOX[42.23,18.81,46.19,23.01]],ID['EPSG',8691]]"^^ns1:wktLiteral ;
     ns1:coordinateSystem <http://www.opengis.net/def/crs/EPSG/0/8691_cs> ;
-    ns1:datum <https://w3id.org/geosrs/datum/Serbian_Vertical_Reference_System_2012> ;
+    ns1:datum <http://www.opengis.net/ont/crs/datum/Serbian_Vertical_Reference_System_2012> ;
     ns1:epsgCode "EPSG:8691"^^xsd:string ;
     ns1:isApplicableTo <http://www.opengis.net/ont/crs/isbody/Earth> ;
     ns1:isBound false ;

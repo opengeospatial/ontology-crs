@@ -16,7 +16,7 @@
     ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'GeographicCRS','name':'Nakhl-e Ghanem','datum':{'type':'GeodeticReferenceFrame','name':'Nakhl-e Ghanem','ellipsoid':{'name':'WGS 84','semi_major_axis':6378137,'inverse_flattening':298.257223563}},'coordinate_system':{'subtype':'ellipsoidal','axis':[{'name':'Geodetic latitude','abbreviation':'Lat','direction':'north','unit':'degree'},{'name':'Geodetic longitude','abbreviation':'Lon','direction':'east','unit':'degree'}]},'scope':'Engineering survey for onshore facilities for South Pars phase 11 and Pars LNG.','area':'Iran - Kangan district.','bbox':{'south_latitude':27.3,'west_longitude':51.8,'north_latitude':28.2,'east_longitude':53.01},'id':{'authority':'EPSG','code':4693}}"^^xsd:string ;
     ns1:asWKT "GEOGCRS['Nakhl-e Ghanem',DATUM['Nakhl-e Ghanem',ELLIPSOID['WGS 84',6378137,298.257223563,LENGTHUNIT['metre',1]]],PRIMEM['Greenwich',0,ANGLEUNIT['degree',0.0174532925199433]],CS[ellipsoidal,2],AXIS['geodetic latitude (Lat)',north,ORDER[1],ANGLEUNIT['degree',0.0174532925199433]],AXIS['geodetic longitude (Lon)',east,ORDER[2],ANGLEUNIT['degree',0.0174532925199433]],USAGE[SCOPE['Engineering survey for onshore facilities for South Pars phase 11 and Pars LNG.'],AREA['Iran - Kangan district.'],BBOX[27.3,51.8,28.2,53.01]],ID['EPSG',4693]]"^^ns1:wktLiteral ;
     ns1:coordinateSystem <http://www.opengis.net/def/crs/EPSG/0/4693_cs> ;
-    ns1:datum <https://w3id.org/geosrs/datum/Nakhl-e_Ghanem> ;
+    ns1:datum <http://www.opengis.net/ont/crs/datum/Nakhl-e_Ghanem> ;
     ns1:epsgCode "EPSG:4693"^^xsd:string ;
     ns1:isApplicableTo <http://www.opengis.net/ont/crs/isbody/Earth> ;
     ns1:isBound false ;

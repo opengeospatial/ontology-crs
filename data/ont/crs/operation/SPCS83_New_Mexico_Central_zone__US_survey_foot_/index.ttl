@@ -1,14 +1,15 @@
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
-@prefix ns1: <http://www.opengis.net/ont/crs/> .
+@prefix ns1: <https://w3id.org/geosrs/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix void: <http://rdfs.org/ns/void#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://www.opengis.net/ont/crs/operation/SPCS83_New_Mexico_Central_zone__US_survey_foot_> a ns1:TransverseMercatorProjection,
-        <http://www.w3.org/ns/ldp#Resource>,
+<http://www.opengis.net/ont/crs/operation/SPCS83_New_Mexico_Central_zone__US_survey_foot_> a <http://www.w3.org/ns/ldp#Resource>,
+        ns1:TransverseMercatorProjection,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "SPCS83 New Mexico Central zone (US survey foot): Transverse Mercator"@en ;
     void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
+    rdfs:comment "State law defines grid unit as US Survey feet. For equivalent metric Federal definition see code 13032."^^xsd:string ;
     ns1:accuracy -1e+00 ;
     ns1:area_of_use <http://www.opengis.net/ont/crs/areaofuse/SPCS83_New_Mexico_Central_zone__US_survey_foot__area_of_use> ;
     ns1:asProj4 "+proj=pipeline +step +proj=axisswap +order=2,1 +step +proj=unitconvert +xy_in=deg +xy_out=rad +step +proj=tmerc +lat_0=31 +lon_0=-106.25 +k=0.9999 +x_0=500000.0001016 +y_0=0 +ellps=GRS80 +step +proj=unitconvert +xy_in=m +xy_out=us-ft" ;
@@ -21,6 +22,5 @@
     ns1:longitudeOfNaturalOrigin -1.0625e+02 ;
     ns1:method_name "Transverse Mercator" ;
     ns1:scaleFactorAtNaturalOrigin 9.999e-01 ;
-    ns1:scope "Engineering survey, topographic mapping."^^xsd:string ;
-    rdfs:comment "State law defines grid unit as US Survey feet. For equivalent metric Federal definition see code 13032."^^xsd:string .
+    ns1:scope "Engineering survey, topographic mapping."^^xsd:string .
 

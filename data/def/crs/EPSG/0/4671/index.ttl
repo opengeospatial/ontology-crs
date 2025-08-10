@@ -16,7 +16,7 @@
     ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'GeographicCRS','name':'Voirol 1879','datum':{'type':'GeodeticReferenceFrame','name':'Voirol 1879','ellipsoid':{'name':'Clarke 1880 (IGN)','semi_major_axis':6378249.2,'semi_minor_axis':6356515}},'coordinate_system':{'subtype':'ellipsoidal','axis':[{'name':'Geodetic latitude','abbreviation':'Lat','direction':'north','unit':'degree'},{'name':'Geodetic longitude','abbreviation':'Lon','direction':'east','unit':'degree'}]},'scope':'Geodesy.','area':'Algeria - onshore north of 32°N.','bbox':{'south_latitude':31.99,'west_longitude':-2.95,'north_latitude':37.14,'east_longitude':9.09},'id':{'authority':'EPSG','code':4671}}"^^xsd:string ;
     ns1:asWKT "GEOGCRS['Voirol 1879',DATUM['Voirol 1879',ELLIPSOID['Clarke 1880 (IGN)',6378249.2,293.466021293627,LENGTHUNIT['metre',1]]],PRIMEM['Greenwich',0,ANGLEUNIT['degree',0.0174532925199433]],CS[ellipsoidal,2],AXIS['geodetic latitude (Lat)',north,ORDER[1],ANGLEUNIT['degree',0.0174532925199433]],AXIS['geodetic longitude (Lon)',east,ORDER[2],ANGLEUNIT['degree',0.0174532925199433]],USAGE[SCOPE['Geodesy.'],AREA['Algeria - onshore north of 32°N.'],BBOX[31.99,-2.95,37.14,9.09]],ID['EPSG',4671]]"^^ns1:wktLiteral ;
     ns1:coordinateSystem <http://www.opengis.net/def/crs/EPSG/0/4671_cs> ;
-    ns1:datum <https://w3id.org/geosrs/datum/Voirol_1879> ;
+    ns1:datum <http://www.opengis.net/ont/crs/datum/Voirol_1879> ;
     ns1:epsgCode "EPSG:4671"^^xsd:string ;
     ns1:isApplicableTo <http://www.opengis.net/ont/crs/isbody/Earth> ;
     ns1:isBound false ;

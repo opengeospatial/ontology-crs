@@ -1,14 +1,15 @@
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
-@prefix ns1: <http://www.opengis.net/ont/crs/> .
+@prefix ns1: <https://w3id.org/geosrs/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix void: <http://rdfs.org/ns/void#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://www.opengis.net/ont/crs/operation/Albania_LCC_2010> a ns1:LambertConformalConicProjection,
-        <http://www.w3.org/ns/ldp#Resource>,
+<http://www.opengis.net/ont/crs/operation/Albania_LCC_2010> a <http://www.w3.org/ns/ldp#Resource>,
+        ns1:LambertConformalConicProjection,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Albania LCC 2010: Lambert Conic Conformal (2SP)"@en ;
     void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
+    rdfs:comment "Albania TM 2010 projection (code 6869) used for applications at scales larger than 1:500,000."^^xsd:string ;
     ns1:accuracy -1e+00 ;
     ns1:area_of_use <http://www.opengis.net/ont/crs/areaofuse/Albania_LCC_2010_area_of_use> ;
     ns1:asProj4 "+proj=pipeline +step +proj=axisswap +order=2,1 +step +proj=unitconvert +xy_in=deg +xy_out=rad +step +proj=lcc +lat_0=41 +lon_0=20 +lat_1=39 +lat_2=43 +x_0=0 +y_0=0 +ellps=GRS80 +step +proj=axisswap +order=2,1" ;
@@ -22,6 +23,5 @@
     ns1:longitudeOfFalseOrigin 2e+01 ;
     ns1:method_name "Lambert Conic Conformal (2SP)" ;
     ns1:northingAtFalseOrigin 0e+00 ;
-    ns1:scope "Conformal mapping at scales of 1:500,000 and smaller."^^xsd:string ;
-    rdfs:comment "Albania TM 2010 projection (code 6869) used for applications at scales larger than 1:500,000."^^xsd:string .
+    ns1:scope "Conformal mapping at scales of 1:500,000 and smaller."^^xsd:string .
 

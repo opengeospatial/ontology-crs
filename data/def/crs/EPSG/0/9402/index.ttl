@@ -16,7 +16,7 @@
     ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'VerticalCRS','name':'Ceuta 2 height','datum':{'type':'VerticalReferenceFrame','name':'Ceuta 2'},'coordinate_system':{'subtype':'vertical','axis':[{'name':'Gravity-related height','abbreviation':'H','direction':'up','unit':'metre'}]},'scope':'Geodesy, engineering survey, topographic mapping.','area':'Spain - Ceuta onshore.','bbox':{'south_latitude':35.82,'west_longitude':-5.4,'north_latitude':35.97,'east_longitude':-5.24},'id':{'authority':'EPSG','code':9402}}"^^xsd:string ;
     ns1:asWKT "VERTCRS['Ceuta 2 height',VDATUM['Ceuta 2'],CS[vertical,1],AXIS['gravity-related height (H)',up,LENGTHUNIT['metre',1]],USAGE[SCOPE['Geodesy, engineering survey, topographic mapping.'],AREA['Spain - Ceuta onshore.'],BBOX[35.82,-5.4,35.97,-5.24]],ID['EPSG',9402]]"^^ns1:wktLiteral ;
     ns1:coordinateSystem <http://www.opengis.net/def/crs/EPSG/0/9402_cs> ;
-    ns1:datum <https://w3id.org/geosrs/datum/Ceuta_2> ;
+    ns1:datum <http://www.opengis.net/ont/crs/datum/Ceuta_2> ;
     ns1:epsgCode "EPSG:9402"^^xsd:string ;
     ns1:isApplicableTo <http://www.opengis.net/ont/crs/isbody/Earth> ;
     ns1:isBound false ;

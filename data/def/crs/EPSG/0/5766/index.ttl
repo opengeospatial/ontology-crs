@@ -16,7 +16,7 @@
     ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'VerticalCRS','name':'Nelson 1955 height','datum':{'type':'VerticalReferenceFrame','name':'Nelson 1955'},'coordinate_system':{'subtype':'vertical','axis':[{'name':'Gravity-related height','abbreviation':'H','direction':'up','unit':'metre'}]},'scope':'Geodesy, engineering survey, topographic mapping.','area':'New Zealand - South Island - north of approximately 42°20'S - Nelson vertical CRS area.','bbox':{'south_latitude':-42.44,'west_longitude':171.82,'north_latitude':-40.44,'east_longitude':174.46},'id':{'authority':'EPSG','code':5766}}"^^xsd:string ;
     ns1:asWKT "VERTCRS['Nelson 1955 height',VDATUM['Nelson 1955'],CS[vertical,1],AXIS['gravity-related height (H)',up,LENGTHUNIT['metre',1]],USAGE[SCOPE['Geodesy, engineering survey, topographic mapping.'],AREA['New Zealand - South Island - north of approximately 42°20'S - Nelson vertical CRS area.'],BBOX[-42.44,171.82,-40.44,174.46]],ID['EPSG',5766]]"^^ns1:wktLiteral ;
     ns1:coordinateSystem <http://www.opengis.net/def/crs/EPSG/0/5766_cs> ;
-    ns1:datum <https://w3id.org/geosrs/datum/Nelson_1955> ;
+    ns1:datum <http://www.opengis.net/ont/crs/datum/Nelson_1955> ;
     ns1:epsgCode "EPSG:5766"^^xsd:string ;
     ns1:isApplicableTo <http://www.opengis.net/ont/crs/isbody/Earth> ;
     ns1:isBound false ;

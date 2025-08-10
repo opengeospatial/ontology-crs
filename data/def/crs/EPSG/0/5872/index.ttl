@@ -16,7 +16,7 @@
     ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'VerticalCRS','name':'HAT height','datum':{'type':'VerticalReferenceFrame','name':'Highest Astronomical Tide'},'coordinate_system':{'subtype':'vertical','axis':[{'name':'Gravity-related height','abbreviation':'H','direction':'up','unit':'metre'}]},'scope':'Hydrography and nautical charting.','area':'World.','bbox':{'south_latitude':-90,'west_longitude':-180,'north_latitude':90,'east_longitude':180},'id':{'authority':'EPSG','code':5872}}"^^xsd:string ;
     ns1:asWKT "VERTCRS['HAT height',VDATUM['Highest Astronomical Tide'],CS[vertical,1],AXIS['gravity-related height (H)',up,LENGTHUNIT['metre',1]],USAGE[SCOPE['Hydrography and nautical charting.'],AREA['World.'],BBOX[-90,-180,90,180]],ID['EPSG',5872]]"^^ns1:wktLiteral ;
     ns1:coordinateSystem <http://www.opengis.net/def/crs/EPSG/0/5872_cs> ;
-    ns1:datum <https://w3id.org/geosrs/datum/Highest_Astronomical_Tide> ;
+    ns1:datum <http://www.opengis.net/ont/crs/datum/Highest_Astronomical_Tide> ;
     ns1:epsgCode "EPSG:5872"^^xsd:string ;
     ns1:isApplicableTo <http://www.opengis.net/ont/crs/isbody/Earth> ;
     ns1:isBound false ;

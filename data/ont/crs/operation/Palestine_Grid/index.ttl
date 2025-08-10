@@ -1,14 +1,15 @@
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
-@prefix ns1: <http://www.opengis.net/ont/crs/> .
+@prefix ns1: <https://w3id.org/geosrs/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix void: <http://rdfs.org/ns/void#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://www.opengis.net/ont/crs/operation/Palestine_Grid> a ns1:CassiniProjection,
-        <http://www.w3.org/ns/ldp#Resource>,
+<http://www.opengis.net/ont/crs/operation/Palestine_Grid> a <http://www.w3.org/ns/ldp#Resource>,
+        ns1:CassiniProjection,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Palestine Grid: Cassini-Soldner"@en ;
     void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
+    rdfs:comment "Replaced (i) in Israel by Israeli CS (proj code 18203) which adds 1 million to FN; (ii) for AMS by Palestine Belt (code18202) which adds 1 million to FN and changes method to TM. Also encountered as a TM projection without change to FN (see code 7141)."^^xsd:string ;
     ns1:accuracy -1e+00 ;
     ns1:area_of_use <http://www.opengis.net/ont/crs/areaofuse/Palestine_Grid_area_of_use> ;
     ns1:asProj4 "+proj=pipeline +step +proj=axisswap +order=2,1 +step +proj=unitconvert +xy_in=deg +xy_out=rad +step +proj=cass +lat_0=31.7340969444444 +lon_0=35.2120805555556 +x_0=170251.555 +y_0=126867.909 +a=6378300.789 +b=6356566.435" ;
@@ -20,6 +21,5 @@
     ns1:latitudeOfNaturalOrigin 3.17341e+01 ;
     ns1:longitudeOfNaturalOrigin 3.521208e+01 ;
     ns1:method_name "Cassini-Soldner" ;
-    ns1:scope "Engineering survey, topographic mapping."^^xsd:string ;
-    rdfs:comment "Replaced (i) in Israel by Israeli CS (proj code 18203) which adds 1 million to FN; (ii) for AMS by Palestine Belt (code18202) which adds 1 million to FN and changes method to TM. Also encountered as a TM projection without change to FN (see code 7141)."^^xsd:string .
+    ns1:scope "Engineering survey, topographic mapping."^^xsd:string .
 

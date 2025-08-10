@@ -16,7 +16,7 @@
     ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'GeographicCRS','name':'Deception Island','datum':{'type':'GeodeticReferenceFrame','name':'Deception Island','ellipsoid':{'name':'Clarke 1880 (RGS)','semi_major_axis':6378249.145,'inverse_flattening':293.465}},'coordinate_system':{'subtype':'ellipsoidal','axis':[{'name':'Geodetic latitude','abbreviation':'Lat','direction':'north','unit':'degree'},{'name':'Geodetic longitude','abbreviation':'Lon','direction':'east','unit':'degree'}]},'scope':'Military survey.','area':'Antarctica - South Shetland Islands - Deception Island.','bbox':{'south_latitude':-63.08,'west_longitude':-60.89,'north_latitude':-62.82,'east_longitude':-60.35},'id':{'authority':'EPSG','code':4736}}"^^xsd:string ;
     ns1:asWKT "GEOGCRS['Deception Island',DATUM['Deception Island',ELLIPSOID['Clarke 1880 (RGS)',6378249.145,293.465,LENGTHUNIT['metre',1]]],PRIMEM['Greenwich',0,ANGLEUNIT['degree',0.0174532925199433]],CS[ellipsoidal,2],AXIS['geodetic latitude (Lat)',north,ORDER[1],ANGLEUNIT['degree',0.0174532925199433]],AXIS['geodetic longitude (Lon)',east,ORDER[2],ANGLEUNIT['degree',0.0174532925199433]],USAGE[SCOPE['Military survey.'],AREA['Antarctica - South Shetland Islands - Deception Island.'],BBOX[-63.08,-60.89,-62.82,-60.35]],ID['EPSG',4736]]"^^ns1:wktLiteral ;
     ns1:coordinateSystem <http://www.opengis.net/def/crs/EPSG/0/4736_cs> ;
-    ns1:datum <https://w3id.org/geosrs/datum/Deception_Island> ;
+    ns1:datum <http://www.opengis.net/ont/crs/datum/Deception_Island> ;
     ns1:epsgCode "EPSG:4736"^^xsd:string ;
     ns1:isApplicableTo <http://www.opengis.net/ont/crs/isbody/Earth> ;
     ns1:isBound false ;

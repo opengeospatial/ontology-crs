@@ -16,7 +16,7 @@
     ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'VerticalCRS','name':'Hon Dau 1992 height','datum':{'type':'VerticalReferenceFrame','name':'Hon Dau 1992'},'coordinate_system':{'subtype':'vertical','axis':[{'name':'Gravity-related height','abbreviation':'H','direction':'up','unit':'metre'}]},'scope':'Geodesy, engineering survey.','area':'Vietnam - mainland onshore.','bbox':{'south_latitude':8.33,'west_longitude':102.14,'north_latitude':23.4,'east_longitude':109.53},'id':{'authority':'EPSG','code':5727}}"^^xsd:string ;
     ns1:asWKT "VERTCRS['Hon Dau 1992 height',VDATUM['Hon Dau 1992'],CS[vertical,1],AXIS['gravity-related height (H)',up,LENGTHUNIT['metre',1]],USAGE[SCOPE['Geodesy, engineering survey.'],AREA['Vietnam - mainland onshore.'],BBOX[8.33,102.14,23.4,109.53]],ID['EPSG',5727]]"^^ns1:wktLiteral ;
     ns1:coordinateSystem <http://www.opengis.net/def/crs/EPSG/0/5727_cs> ;
-    ns1:datum <https://w3id.org/geosrs/datum/Hon_Dau_1992> ;
+    ns1:datum <http://www.opengis.net/ont/crs/datum/Hon_Dau_1992> ;
     ns1:epsgCode "EPSG:5727"^^xsd:string ;
     ns1:isApplicableTo <http://www.opengis.net/ont/crs/isbody/Earth> ;
     ns1:isBound false ;

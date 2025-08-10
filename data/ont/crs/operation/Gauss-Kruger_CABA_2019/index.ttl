@@ -1,14 +1,15 @@
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
-@prefix ns1: <http://www.opengis.net/ont/crs/> .
+@prefix ns1: <https://w3id.org/geosrs/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix void: <http://rdfs.org/ns/void#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://www.opengis.net/ont/crs/operation/Gauss-Kruger_CABA_2019> a ns1:TransverseMercatorProjection,
-        <http://www.w3.org/ns/ldp#Resource>,
+<http://www.opengis.net/ont/crs/operation/Gauss-Kruger_CABA_2019> a <http://www.w3.org/ns/ldp#Resource>,
+        ns1:TransverseMercatorProjection,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Gauss-Kruger CABA 2019: Transverse Mercator"@en ;
     void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
+    rdfs:comment "Projection created in 2017 for the purpose of modernizing the city's cadastre and linking it to modern reference frames. Origin approximates the 1919 origin of the cross of the main tower of the San José de Flores church ('0 de Flores' plane grid)."^^xsd:string ;
     ns1:accuracy -1e+00 ;
     ns1:area_of_use <http://www.opengis.net/ont/crs/areaofuse/Gauss-Kruger_CABA_2019_area_of_use> ;
     ns1:asProj4 "+proj=pipeline +step +proj=axisswap +order=2,1 +step +proj=unitconvert +xy_in=deg +xy_out=rad +step +proj=tmerc +lat_0=-34.6292666666667 +lon_0=-58.4633083333333 +k=1 +x_0=20000 +y_0=70000 +ellps=WGS84 +step +proj=axisswap +order=2,1" ;
@@ -21,6 +22,5 @@
     ns1:longitudeOfNaturalOrigin -5.846331e+01 ;
     ns1:method_name "Transverse Mercator" ;
     ns1:scaleFactorAtNaturalOrigin 1e+00 ;
-    ns1:scope "Cadastre, engineering survey, topographic mapping."^^xsd:string ;
-    rdfs:comment "Projection created in 2017 for the purpose of modernizing the city's cadastre and linking it to modern reference frames. Origin approximates the 1919 origin of the cross of the main tower of the San José de Flores church ('0 de Flores' plane grid)."^^xsd:string .
+    ns1:scope "Cadastre, engineering survey, topographic mapping."^^xsd:string .
 

@@ -1,14 +1,15 @@
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
-@prefix ns1: <http://www.opengis.net/ont/crs/> .
+@prefix ns1: <https://w3id.org/geosrs/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix void: <http://rdfs.org/ns/void#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://www.opengis.net/ont/crs/operation/Michigan_Oblique_Mercator__meter_> a ns1:ObliqueMercatorProjection,
-        <http://www.w3.org/ns/ldp#Resource>,
+<http://www.opengis.net/ont/crs/operation/Michigan_Oblique_Mercator__meter_> a <http://www.w3.org/ns/ldp#Resource>,
+        ns1:ObliqueMercatorProjection,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Michigan Oblique Mercator (meter): Hotine Oblique Mercator (variant A)"@en ;
     void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
+    rdfs:comment "If using Hotine Oblique Mercator (variant B) method (code 9815), Ec=499840.252 m, Nc=528600.303 m."^^xsd:string ;
     ns1:accuracy -1e+00 ;
     ns1:angleFromRectifiedToSkewGrid 3.372556e+02 ;
     ns1:area_of_use <http://www.opengis.net/ont/crs/areaofuse/Michigan_Oblique_Mercator__meter__area_of_use> ;
@@ -23,6 +24,5 @@
     ns1:longitudeOfProjectionCentre -8.6e+01 ;
     ns1:method_name "Hotine Oblique Mercator (variant A)" ;
     ns1:scaleFactorAtProjectionCentre 9.996e-01 ;
-    ns1:scope "State-wide spatial data management."^^xsd:string ;
-    rdfs:comment "If using Hotine Oblique Mercator (variant B) method (code 9815), Ec=499840.252 m, Nc=528600.303 m."^^xsd:string .
+    ns1:scope "State-wide spatial data management."^^xsd:string .
 

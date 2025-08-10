@@ -16,7 +16,7 @@
     ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'VerticalCRS','name':'HVRS71 height','datum':{'type':'VerticalReferenceFrame','name':'Croatian Vertical Reference Datum 1971'},'coordinate_system':{'subtype':'vertical','axis':[{'name':'Gravity-related height','abbreviation':'H','direction':'up','unit':'metre'}]},'scope':'Geodesy, engineering survey, topographic mapping.','area':'Croatia - onshore.','bbox':{'south_latitude':42.34,'west_longitude':13.43,'north_latitude':46.54,'east_longitude':19.43},'id':{'authority':'EPSG','code':5610}}"^^xsd:string ;
     ns1:asWKT "VERTCRS['HVRS71 height',VDATUM['Croatian Vertical Reference Datum 1971'],CS[vertical,1],AXIS['gravity-related height (H)',up,LENGTHUNIT['metre',1]],USAGE[SCOPE['Geodesy, engineering survey, topographic mapping.'],AREA['Croatia - onshore.'],BBOX[42.34,13.43,46.54,19.43]],ID['EPSG',5610]]"^^ns1:wktLiteral ;
     ns1:coordinateSystem <http://www.opengis.net/def/crs/EPSG/0/5610_cs> ;
-    ns1:datum <https://w3id.org/geosrs/datum/Croatian_Vertical_Reference_Datum_1971> ;
+    ns1:datum <http://www.opengis.net/ont/crs/datum/Croatian_Vertical_Reference_Datum_1971> ;
     ns1:epsgCode "EPSG:5610"^^xsd:string ;
     ns1:isApplicableTo <http://www.opengis.net/ont/crs/isbody/Earth> ;
     ns1:isBound false ;

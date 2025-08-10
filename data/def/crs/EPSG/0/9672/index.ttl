@@ -16,7 +16,7 @@
     ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'VerticalCRS','name':'CD Norway depth','datum':{'type':'VerticalReferenceFrame','name':'Norwegian Chart Datum'},'coordinate_system':{'subtype':'vertical','axis':[{'name':'Depth','abbreviation':'D','direction':'down','unit':'metre'}]},'scope':'Hydrography and nautical charting.','area':'Norway (offshore) and Svalbard and Jan Mayen (offshore).','bbox':{'south_latitude':56.08,'west_longitude':-13.63,'north_latitude':84.73,'east_longitude':38.01},'id':{'authority':'EPSG','code':9672}}"^^xsd:string ;
     ns1:asWKT "VERTCRS['CD Norway depth',VDATUM['Norwegian Chart Datum'],CS[vertical,1],AXIS['depth (D)',down,LENGTHUNIT['metre',1]],USAGE[SCOPE['Hydrography and nautical charting.'],AREA['Norway (offshore) and Svalbard and Jan Mayen (offshore).'],BBOX[56.08,-13.63,84.73,38.01]],ID['EPSG',9672]]"^^ns1:wktLiteral ;
     ns1:coordinateSystem <http://www.opengis.net/def/crs/EPSG/0/9672_cs> ;
-    ns1:datum <https://w3id.org/geosrs/datum/Norwegian_Chart_Datum> ;
+    ns1:datum <http://www.opengis.net/ont/crs/datum/Norwegian_Chart_Datum> ;
     ns1:epsgCode "EPSG:9672"^^xsd:string ;
     ns1:isApplicableTo <http://www.opengis.net/ont/crs/isbody/Earth> ;
     ns1:isBound false ;

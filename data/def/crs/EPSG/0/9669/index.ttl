@@ -16,7 +16,7 @@
     ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'VerticalCRS','name':'BGS2005 height','datum':{'type':'VerticalReferenceFrame','name':'Bulgarian Height System 2005'},'coordinate_system':{'subtype':'vertical','axis':[{'name':'Gravity-related height','abbreviation':'H','direction':'up','unit':'metre'}]},'scope':'Geodesy, engineering survey, topographic mapping.','area':'Bulgaria - onshore.','bbox':{'south_latitude':41.24,'west_longitude':22.36,'north_latitude':44.23,'east_longitude':28.68},'id':{'authority':'EPSG','code':9669}}"^^xsd:string ;
     ns1:asWKT "VERTCRS['BGS2005 height',VDATUM['Bulgarian Height System 2005'],CS[vertical,1],AXIS['gravity-related height (H)',up,LENGTHUNIT['metre',1]],USAGE[SCOPE['Geodesy, engineering survey, topographic mapping.'],AREA['Bulgaria - onshore.'],BBOX[41.24,22.36,44.23,28.68]],ID['EPSG',9669]]"^^ns1:wktLiteral ;
     ns1:coordinateSystem <http://www.opengis.net/def/crs/EPSG/0/9669_cs> ;
-    ns1:datum <https://w3id.org/geosrs/datum/Bulgarian_Height_System_2005> ;
+    ns1:datum <http://www.opengis.net/ont/crs/datum/Bulgarian_Height_System_2005> ;
     ns1:epsgCode "EPSG:9669"^^xsd:string ;
     ns1:isApplicableTo <http://www.opengis.net/ont/crs/isbody/Earth> ;
     ns1:isBound false ;

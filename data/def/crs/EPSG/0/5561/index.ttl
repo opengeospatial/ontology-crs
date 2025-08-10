@@ -16,7 +16,7 @@
     ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'GeographicCRS','name':'UCS-2000','datum':{'type':'GeodeticReferenceFrame','name':'Ukraine 2000','ellipsoid':{'name':'Krassowsky 1940','semi_major_axis':6378245,'inverse_flattening':298.3}},'coordinate_system':{'subtype':'ellipsoidal','axis':[{'name':'Geodetic latitude','abbreviation':'Lat','direction':'north','unit':'degree'},{'name':'Geodetic longitude','abbreviation':'Lon','direction':'east','unit':'degree'}]},'scope':'Horizontal component of 3D system.','area':'Ukraine - onshore and offshore.','bbox':{'south_latitude':43.18,'west_longitude':22.15,'north_latitude':52.38,'east_longitude':40.18},'id':{'authority':'EPSG','code':5561}}"^^xsd:string ;
     ns1:asWKT "GEOGCRS['UCS-2000',DATUM['Ukraine 2000',ELLIPSOID['Krassowsky 1940',6378245,298.3,LENGTHUNIT['metre',1]]],PRIMEM['Greenwich',0,ANGLEUNIT['degree',0.0174532925199433]],CS[ellipsoidal,2],AXIS['geodetic latitude (Lat)',north,ORDER[1],ANGLEUNIT['degree',0.0174532925199433]],AXIS['geodetic longitude (Lon)',east,ORDER[2],ANGLEUNIT['degree',0.0174532925199433]],USAGE[SCOPE['Horizontal component of 3D system.'],AREA['Ukraine - onshore and offshore.'],BBOX[43.18,22.15,52.38,40.18]],ID['EPSG',5561]]"^^ns1:wktLiteral ;
     ns1:coordinateSystem <http://www.opengis.net/def/crs/EPSG/0/5561_cs> ;
-    ns1:datum <https://w3id.org/geosrs/datum/Ukraine_2000> ;
+    ns1:datum <http://www.opengis.net/ont/crs/datum/Ukraine_2000> ;
     ns1:epsgCode "EPSG:5561"^^xsd:string ;
     ns1:isApplicableTo <http://www.opengis.net/ont/crs/isbody/Earth> ;
     ns1:isBound false ;

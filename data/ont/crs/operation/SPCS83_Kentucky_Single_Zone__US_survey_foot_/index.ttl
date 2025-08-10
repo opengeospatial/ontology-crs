@@ -1,14 +1,15 @@
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
-@prefix ns1: <http://www.opengis.net/ont/crs/> .
+@prefix ns1: <https://w3id.org/geosrs/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix void: <http://rdfs.org/ns/void#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://www.opengis.net/ont/crs/operation/SPCS83_Kentucky_Single_Zone__US_survey_foot_> a ns1:LambertConformalConicProjection,
-        <http://www.w3.org/ns/ldp#Resource>,
+<http://www.opengis.net/ont/crs/operation/SPCS83_Kentucky_Single_Zone__US_survey_foot_> a <http://www.w3.org/ns/ldp#Resource>,
+        ns1:LambertConformalConicProjection,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "SPCS83 Kentucky Single Zone (US survey foot): Lambert Conic Conformal (2SP)"@en ;
     void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
+    rdfs:comment "State law defines grid unit as US Survey feet. For equivalent metric Federal definition see code 11630."^^xsd:string ;
     ns1:accuracy -1e+00 ;
     ns1:area_of_use <http://www.opengis.net/ont/crs/areaofuse/SPCS83_Kentucky_Single_Zone__US_survey_foot__area_of_use> ;
     ns1:asProj4 "+proj=pipeline +step +proj=axisswap +order=2,1 +step +proj=unitconvert +xy_in=deg +xy_out=rad +step +proj=lcc +lat_0=36.3333333333333 +lon_0=-85.75 +lat_1=37.0833333333333 +lat_2=38.6666666666667 +x_0=1500000 +y_0=999999.9998984 +ellps=GRS80 +step +proj=unitconvert +xy_in=m +xy_out=us-ft" ;
@@ -22,6 +23,5 @@
     ns1:longitudeOfFalseOrigin -8.575e+01 ;
     ns1:method_name "Lambert Conic Conformal (2SP)" ;
     ns1:northingAtFalseOrigin 3.280833e+06 ;
-    ns1:scope "State-wide spatial data management."^^xsd:string ;
-    rdfs:comment "State law defines grid unit as US Survey feet. For equivalent metric Federal definition see code 11630."^^xsd:string .
+    ns1:scope "State-wide spatial data management."^^xsd:string .
 

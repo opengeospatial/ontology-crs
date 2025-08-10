@@ -1,14 +1,15 @@
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
-@prefix ns1: <http://www.opengis.net/ont/crs/> .
+@prefix ns1: <https://w3id.org/geosrs/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix void: <http://rdfs.org/ns/void#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://www.opengis.net/ont/crs/operation/Illinois_Coordinate_System_of_1983_Joliet_zone__US_survey_foot_> a ns1:TransverseMercatorProjection,
-        <http://www.w3.org/ns/ldp#Resource>,
+<http://www.opengis.net/ont/crs/operation/Illinois_Coordinate_System_of_1983_Joliet_zone__US_survey_foot_> a <http://www.w3.org/ns/ldp#Resource>,
+        ns1:TransverseMercatorProjection,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Illinois Coordinate System of 1983 Joliet zone (US survey foot): Transverse Mercator"@en ;
     void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
+    rdfs:comment "Part of the ICS83 33-zone system. Longitude of origin also given by information source as 272°00'E. State law defines grid unit as US survey foot. No equivalent metric definition."^^xsd:string ;
     ns1:accuracy -1e+00 ;
     ns1:area_of_use <http://www.opengis.net/ont/crs/areaofuse/Illinois_Coordinate_System_of_1983_Joliet_zone__US_survey_foot__area_of_use> ;
     ns1:asProj4 "+proj=pipeline +step +proj=axisswap +order=2,1 +step +proj=unitconvert +xy_in=deg +xy_out=rad +step +proj=tmerc +lat_0=40.55 +lon_0=-88 +k=1.000022 +x_0=2649936.499873 +y_0=149961.8999238 +ellps=GRS80 +step +proj=unitconvert +xy_in=m +xy_out=us-ft +step +proj=axisswap +order=2,1" ;
@@ -21,6 +22,5 @@
     ns1:longitudeOfNaturalOrigin -8.8e+01 ;
     ns1:method_name "Transverse Mercator" ;
     ns1:scaleFactorAtNaturalOrigin 1.000022e+00 ;
-    ns1:scope "Engineering survey, topographic mapping (large and medium scale)."^^xsd:string ;
-    rdfs:comment "Part of the ICS83 33-zone system. Longitude of origin also given by information source as 272°00'E. State law defines grid unit as US survey foot. No equivalent metric definition."^^xsd:string .
+    ns1:scope "Engineering survey, topographic mapping (large and medium scale)."^^xsd:string .
 

@@ -16,7 +16,7 @@
     ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'VerticalCRS','name':'NGF-IGN69 height','datum':{'type':'VerticalReferenceFrame','name':'Nivellement General de la France - IGN69'},'coordinate_system':{'subtype':'vertical','axis':[{'name':'Gravity-related height','abbreviation':'H','direction':'up','unit':'metre'}]},'scope':'Geodesy, engineering survey.','area':'France - mainland onshore.','bbox':{'south_latitude':42.33,'west_longitude':-4.87,'north_latitude':51.14,'east_longitude':8.23},'id':{'authority':'EPSG','code':5720}}"^^xsd:string ;
     ns1:asWKT "VERTCRS['NGF-IGN69 height',VDATUM['Nivellement General de la France - IGN69'],CS[vertical,1],AXIS['gravity-related height (H)',up,LENGTHUNIT['metre',1]],USAGE[SCOPE['Geodesy, engineering survey.'],AREA['France - mainland onshore.'],BBOX[42.33,-4.87,51.14,8.23]],ID['EPSG',5720]]"^^ns1:wktLiteral ;
     ns1:coordinateSystem <http://www.opengis.net/def/crs/EPSG/0/5720_cs> ;
-    ns1:datum <https://w3id.org/geosrs/datum/Nivellement_General_de_la_France_-_IGN69> ;
+    ns1:datum <http://www.opengis.net/ont/crs/datum/Nivellement_General_de_la_France_-_IGN69> ;
     ns1:epsgCode "EPSG:5720"^^xsd:string ;
     ns1:isApplicableTo <http://www.opengis.net/ont/crs/isbody/Earth> ;
     ns1:isBound false ;

@@ -1,14 +1,15 @@
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
-@prefix ns1: <http://www.opengis.net/ont/crs/> .
+@prefix ns1: <https://w3id.org/geosrs/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix void: <http://rdfs.org/ns/void#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://www.opengis.net/ont/crs/operation/RT90_zone_2.5_gon_O_emulation> a ns1:TransverseMercatorProjection,
-        <http://www.w3.org/ns/ldp#Resource>,
+<http://www.opengis.net/ont/crs/operation/RT90_zone_2.5_gon_O_emulation> a <http://www.w3.org/ns/ldp#Resource>,
+        ns1:TransverseMercatorProjection,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "RT90 zone 2.5 gon O emulation: Transverse Mercator"@en ;
     void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
+    rdfs:comment "This projection embeds an approximation to 0.2m accuracy of the Sweref99 and WGS 84 to RT90 transformations (tfm codes 1895 and 1896)."^^xsd:string ;
     ns1:accuracy -1e+00 ;
     ns1:area_of_use <http://www.opengis.net/ont/crs/areaofuse/RT90_zone_2.5_gon_O_emulation_area_of_use> ;
     ns1:asProj4 "+proj=pipeline +step +proj=axisswap +order=2,1 +step +proj=unitconvert +xy_in=deg +xy_out=rad +step +proj=tmerc +lat_0=0 +lon_0=20.3063166666667 +k=1.0000052 +x_0=1500102.765 +y_0=-670.706 +ellps=GRS80 +step +proj=axisswap +order=2,1" ;
@@ -21,6 +22,5 @@
     ns1:longitudeOfNaturalOrigin 2.030632e+01 ;
     ns1:method_name "Transverse Mercator" ;
     ns1:scaleFactorAtNaturalOrigin 1.000005e+00 ;
-    ns1:scope "User-defined CRS in GPS receiver."^^xsd:string ;
-    rdfs:comment "This projection embeds an approximation to 0.2m accuracy of the Sweref99 and WGS 84 to RT90 transformations (tfm codes 1895 and 1896)."^^xsd:string .
+    ns1:scope "User-defined CRS in GPS receiver."^^xsd:string .
 

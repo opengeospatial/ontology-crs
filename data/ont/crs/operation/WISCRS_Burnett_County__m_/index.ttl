@@ -1,14 +1,15 @@
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
-@prefix ns1: <http://www.opengis.net/ont/crs/> .
+@prefix ns1: <https://w3id.org/geosrs/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix void: <http://rdfs.org/ns/void#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://www.opengis.net/ont/crs/operation/WISCRS_Burnett_County__m_> a ns1:LambertConformalConicProjection,
-        <http://www.w3.org/ns/ldp#Resource>,
+<http://www.opengis.net/ont/crs/operation/WISCRS_Burnett_County__m_> a <http://www.w3.org/ns/ldp#Resource>,
+        ns1:LambertConformalConicProjection,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "WISCRS Burnett County (m): Lambert Conic Conformal (1SP)"@en ;
     void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
+    rdfs:comment "Replaces and emulates WCCS zone. For equivalent non-metric definition see proj code 7383."^^xsd:string ;
     ns1:accuracy -1e+00 ;
     ns1:area_of_use <http://www.opengis.net/ont/crs/areaofuse/WISCRS_Burnett_County__m__area_of_use> ;
     ns1:asProj4 "+proj=pipeline +step +proj=axisswap +order=2,1 +step +proj=unitconvert +xy_in=deg +xy_out=rad +step +proj=lcc +lat_1=45.8987148658333 +lat_0=45.8987148658333 +lon_0=-92.4577777777778 +k_0=1.0000383841 +x_0=64008.1276 +y_0=59445.9043 +ellps=GRS80" ;
@@ -21,6 +22,5 @@
     ns1:longitudeOfNaturalOrigin -9.245778e+01 ;
     ns1:method_name "Lambert Conic Conformal (1SP)" ;
     ns1:scaleFactorAtNaturalOrigin 1.000038e+00 ;
-    ns1:scope "Engineering survey."^^xsd:string ;
-    rdfs:comment "Replaces and emulates WCCS zone. For equivalent non-metric definition see proj code 7383."^^xsd:string .
+    ns1:scope "Engineering survey."^^xsd:string .
 

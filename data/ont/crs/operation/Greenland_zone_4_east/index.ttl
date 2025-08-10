@@ -1,11 +1,11 @@
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
-@prefix ns1: <http://www.opengis.net/ont/crs/> .
+@prefix ns1: <https://w3id.org/geosrs/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix void: <http://rdfs.org/ns/void#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://www.opengis.net/ont/crs/operation/Greenland_zone_4_east> a ns1:CoordinateConversionOperation,
-        <http://www.w3.org/ns/ldp#Resource>,
+<http://www.opengis.net/ont/crs/operation/Greenland_zone_4_east> a <http://www.w3.org/ns/ldp#Resource>,
+        ns1:CoordinateConversionOperation,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Greenland zone 4 east: Lambert Conic Conformal (West Orientated)"@en ;
     void:inDataset <http://www.opengis.net/geoepsg_dataset> ;

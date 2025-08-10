@@ -16,7 +16,7 @@
     ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'GeographicCRS','name':'Observatario','datum':{'type':'GeodeticReferenceFrame','name':'Observatario','ellipsoid':{'name':'Clarke 1866','semi_major_axis':6378206.4,'semi_minor_axis':6356583.8}},'coordinate_system':{'subtype':'ellipsoidal','axis':[{'name':'Geodetic latitude','abbreviation':'Lat','direction':'north','unit':'degree'},{'name':'Geodetic longitude','abbreviation':'Lon','direction':'east','unit':'degree'}]},'scope':'Geodesy.','area':'Mozambique - south.','bbox':{'south_latitude':-26.87,'west_longitude':31.29,'north_latitude':-19.84,'east_longitude':35.65},'id':{'authority':'EPSG','code':4129}}"^^xsd:string ;
     ns1:asWKT "GEOGCRS['Observatario',DATUM['Observatario',ELLIPSOID['Clarke 1866',6378206.4,294.978698213898,LENGTHUNIT['metre',1]]],PRIMEM['Greenwich',0,ANGLEUNIT['degree',0.0174532925199433]],CS[ellipsoidal,2],AXIS['geodetic latitude (Lat)',north,ORDER[1],ANGLEUNIT['degree',0.0174532925199433]],AXIS['geodetic longitude (Lon)',east,ORDER[2],ANGLEUNIT['degree',0.0174532925199433]],USAGE[SCOPE['Geodesy.'],AREA['Mozambique - south.'],BBOX[-26.87,31.29,-19.84,35.65]],ID['EPSG',4129]]"^^ns1:wktLiteral ;
     ns1:coordinateSystem <http://www.opengis.net/def/crs/EPSG/0/4129_cs> ;
-    ns1:datum <https://w3id.org/geosrs/datum/Observatario> ;
+    ns1:datum <http://www.opengis.net/ont/crs/datum/Observatario> ;
     ns1:epsgCode "EPSG:4129"^^xsd:string ;
     ns1:isApplicableTo <http://www.opengis.net/ont/crs/isbody/Earth> ;
     ns1:isBound false ;

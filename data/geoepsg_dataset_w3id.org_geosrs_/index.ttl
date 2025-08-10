@@ -8,9 +8,11 @@
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Linkset: geoepsg_dataset - geosrs:"@en ;
     void:linkPredicate rdf:type,
-        <https://w3id.org/geosrs/direction> ;
+        <https://w3id.org/geosrs/direction>,
+        <https://w3id.org/geosrs/usage> ;
     void:objectsTarget <https://w3id.org/geosrs/> ;
     void:subjectsTarget <http://www.opengis.net/geoepsg_dataset> ;
     void:triples 56,
-        27973 .
+        968,
+        31075 .
 

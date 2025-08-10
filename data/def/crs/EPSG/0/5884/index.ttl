@@ -16,7 +16,7 @@
     ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'GeodeticCRS','name':'TGD2005','datum':{'type':'GeodeticReferenceFrame','name':'Tonga Geodetic Datum 2005','ellipsoid':{'name':'GRS 1980','semi_major_axis':6378137,'inverse_flattening':298.257222101}},'coordinate_system':{'subtype':'Cartesian','axis':[{'name':'Geocentric X','abbreviation':'X','direction':'geocentricX','unit':'metre'},{'name':'Geocentric Y','abbreviation':'Y','direction':'geocentricY','unit':'metre'},{'name':'Geocentric Z','abbreviation':'Z','direction':'geocentricZ','unit':'metre'}]},'scope':'Geodesy.','area':'Tonga - onshore and offshore.','bbox':{'south_latitude':-25.68,'west_longitude':-179.08,'north_latitude':-14.14,'east_longitude':-171.28},'id':{'authority':'EPSG','code':5884}}"^^xsd:string ;
     ns1:asWKT "GEODCRS['TGD2005',DATUM['Tonga Geodetic Datum 2005',ELLIPSOID['GRS 1980',6378137,298.257222101,LENGTHUNIT['metre',1]]],PRIMEM['Greenwich',0,ANGLEUNIT['degree',0.0174532925199433]],CS[Cartesian,3],AXIS['(X)',geocentricX,ORDER[1],LENGTHUNIT['metre',1]],AXIS['(Y)',geocentricY,ORDER[2],LENGTHUNIT['metre',1]],AXIS['(Z)',geocentricZ,ORDER[3],LENGTHUNIT['metre',1]],USAGE[SCOPE['Geodesy.'],AREA['Tonga - onshore and offshore.'],BBOX[-25.68,-179.08,-14.14,-171.28]],ID['EPSG',5884]]"^^ns1:wktLiteral ;
     ns1:coordinateSystem <http://www.opengis.net/def/crs/EPSG/0/5884_cs> ;
-    ns1:datum <https://w3id.org/geosrs/datum/Tonga_Geodetic_Datum_2005> ;
+    ns1:datum <http://www.opengis.net/ont/crs/datum/Tonga_Geodetic_Datum_2005> ;
     ns1:epsgCode "EPSG:5884"^^xsd:string ;
     ns1:isApplicableTo <http://www.opengis.net/ont/crs/isbody/Earth> ;
     ns1:isBound false ;

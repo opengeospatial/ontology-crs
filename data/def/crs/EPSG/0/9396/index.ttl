@@ -16,7 +16,7 @@
     ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'VerticalCRS','name':'Fuerteventura height','datum':{'type':'VerticalReferenceFrame','name':'Fuerteventura'},'coordinate_system':{'subtype':'vertical','axis':[{'name':'Gravity-related height','abbreviation':'H','direction':'up','unit':'metre'}]},'scope':'Geodesy, engineering survey, topographic mapping.','area':'Spain - Canary Islands - Fuerteventura onshore.','bbox':{'south_latitude':27.99,'west_longitude':-14.58,'north_latitude':28.81,'east_longitude':-13.75},'id':{'authority':'EPSG','code':9396}}"^^xsd:string ;
     ns1:asWKT "VERTCRS['Fuerteventura height',VDATUM['Fuerteventura'],CS[vertical,1],AXIS['gravity-related height (H)',up,LENGTHUNIT['metre',1]],USAGE[SCOPE['Geodesy, engineering survey, topographic mapping.'],AREA['Spain - Canary Islands - Fuerteventura onshore.'],BBOX[27.99,-14.58,28.81,-13.75]],ID['EPSG',9396]]"^^ns1:wktLiteral ;
     ns1:coordinateSystem <http://www.opengis.net/def/crs/EPSG/0/9396_cs> ;
-    ns1:datum <https://w3id.org/geosrs/datum/Fuerteventura> ;
+    ns1:datum <http://www.opengis.net/ont/crs/datum/Fuerteventura> ;
     ns1:epsgCode "EPSG:9396"^^xsd:string ;
     ns1:isApplicableTo <http://www.opengis.net/ont/crs/isbody/Earth> ;
     ns1:isBound false ;

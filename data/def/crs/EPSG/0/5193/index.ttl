@@ -16,7 +16,7 @@
     ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'VerticalCRS','name':'KVD1964 height','datum':{'type':'VerticalReferenceFrame','name':'Korean Vertical Datum 1964'},'coordinate_system':{'subtype':'vertical','axis':[{'name':'Gravity-related height','abbreviation':'H','direction':'up','unit':'metre'}]},'scope':'Geodesy, engineering survey.','area':'Republic of Korea (South Korea) - onshore.','bbox':{'south_latitude':33.14,'west_longitude':124.53,'north_latitude':38.64,'east_longitude':131.01},'id':{'authority':'EPSG','code':5193}}"^^xsd:string ;
     ns1:asWKT "VERTCRS['KVD1964 height',VDATUM['Korean Vertical Datum 1964'],CS[vertical,1],AXIS['gravity-related height (H)',up,LENGTHUNIT['metre',1]],USAGE[SCOPE['Geodesy, engineering survey.'],AREA['Republic of Korea (South Korea) - onshore.'],BBOX[33.14,124.53,38.64,131.01]],ID['EPSG',5193]]"^^ns1:wktLiteral ;
     ns1:coordinateSystem <http://www.opengis.net/def/crs/EPSG/0/5193_cs> ;
-    ns1:datum <https://w3id.org/geosrs/datum/Korean_Vertical_Datum_1964> ;
+    ns1:datum <http://www.opengis.net/ont/crs/datum/Korean_Vertical_Datum_1964> ;
     ns1:epsgCode "EPSG:5193"^^xsd:string ;
     ns1:isApplicableTo <http://www.opengis.net/ont/crs/isbody/Earth> ;
     ns1:isBound false ;

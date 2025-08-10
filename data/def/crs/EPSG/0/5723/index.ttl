@@ -16,7 +16,7 @@
     ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'VerticalCRS','name':'JSLD69 height','datum':{'type':'VerticalReferenceFrame','name':'Japanese Standard Levelling Datum 1969'},'coordinate_system':{'subtype':'vertical','axis':[{'name':'Gravity-related height','abbreviation':'H','direction':'up','unit':'metre'}]},'scope':'Geodesy, engineering survey.','area':'Japan - onshore mainland - Honshu, Shikoku, Kyushu.','bbox':{'south_latitude':30.94,'west_longitude':129.3,'north_latitude':41.58,'east_longitude':142.14},'id':{'authority':'EPSG','code':5723}}"^^xsd:string ;
     ns1:asWKT "VERTCRS['JSLD69 height',VDATUM['Japanese Standard Levelling Datum 1969'],CS[vertical,1],AXIS['gravity-related height (H)',up,LENGTHUNIT['metre',1]],USAGE[SCOPE['Geodesy, engineering survey.'],AREA['Japan - onshore mainland - Honshu, Shikoku, Kyushu.'],BBOX[30.94,129.3,41.58,142.14]],ID['EPSG',5723]]"^^ns1:wktLiteral ;
     ns1:coordinateSystem <http://www.opengis.net/def/crs/EPSG/0/5723_cs> ;
-    ns1:datum <https://w3id.org/geosrs/datum/Japanese_Standard_Levelling_Datum_1969> ;
+    ns1:datum <http://www.opengis.net/ont/crs/datum/Japanese_Standard_Levelling_Datum_1969> ;
     ns1:epsgCode "EPSG:5723"^^xsd:string ;
     ns1:isApplicableTo <http://www.opengis.net/ont/crs/isbody/Earth> ;
     ns1:isBound false ;

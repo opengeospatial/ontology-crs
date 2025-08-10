@@ -1,14 +1,15 @@
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
-@prefix ns1: <http://www.opengis.net/ont/crs/> .
+@prefix ns1: <https://w3id.org/geosrs/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix void: <http://rdfs.org/ns/void#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://www.opengis.net/ont/crs/operation/WISCRS_Sauk_County__ftUS_> a ns1:TransverseMercatorProjection,
-        <http://www.w3.org/ns/ldp#Resource>,
+<http://www.opengis.net/ont/crs/operation/WISCRS_Sauk_County__ftUS_> a <http://www.w3.org/ns/ldp#Resource>,
+        ns1:TransverseMercatorProjection,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "WISCRS Sauk County (ftUS): Transverse Mercator"@en ;
     void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
+    rdfs:comment "See proj code 7516 for authoritative metric definition. Replaces and emulates WCCS zone."^^xsd:string ;
     ns1:accuracy -1e+00 ;
     ns1:area_of_use <http://www.opengis.net/ont/crs/areaofuse/WISCRS_Sauk_County__ftUS__area_of_use> ;
     ns1:asProj4 "+proj=pipeline +step +proj=axisswap +order=2,1 +step +proj=unitconvert +xy_in=deg +xy_out=rad +step +proj=tmerc +lat_0=42.8194444444444 +lon_0=-89.9 +k=1.0000373868 +x_0=185623.571551943 +y_0=0.00518161036322073 +ellps=GRS80 +step +proj=unitconvert +xy_in=m +xy_out=us-ft" ;
@@ -21,6 +22,5 @@
     ns1:longitudeOfNaturalOrigin -8.99e+01 ;
     ns1:method_name "Transverse Mercator" ;
     ns1:scaleFactorAtNaturalOrigin 1.000037e+00 ;
-    ns1:scope "Engineering survey."^^xsd:string ;
-    rdfs:comment "See proj code 7516 for authoritative metric definition. Replaces and emulates WCCS zone."^^xsd:string .
+    ns1:scope "Engineering survey."^^xsd:string .
 

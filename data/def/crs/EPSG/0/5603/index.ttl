@@ -16,7 +16,7 @@
     ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'VerticalCRS','name':'Raiatea SAU 2001 height','datum':{'type':'VerticalReferenceFrame','name':'Raiatea SAU 2001'},'coordinate_system':{'subtype':'vertical','axis':[{'name':'Gravity-related height','abbreviation':'H','direction':'up','unit':'metre'}]},'scope':'Geodesy, engineering survey, topographic mapping.','area':'French Polynesia - Society Islands - Raiatea.','bbox':{'south_latitude':-16.96,'west_longitude':-151.55,'north_latitude':-16.68,'east_longitude':-151.3},'id':{'authority':'EPSG','code':5603}}"^^xsd:string ;
     ns1:asWKT "VERTCRS['Raiatea SAU 2001 height',VDATUM['Raiatea SAU 2001'],CS[vertical,1],AXIS['gravity-related height (H)',up,LENGTHUNIT['metre',1]],USAGE[SCOPE['Geodesy, engineering survey, topographic mapping.'],AREA['French Polynesia - Society Islands - Raiatea.'],BBOX[-16.96,-151.55,-16.68,-151.3]],ID['EPSG',5603]]"^^ns1:wktLiteral ;
     ns1:coordinateSystem <http://www.opengis.net/def/crs/EPSG/0/5603_cs> ;
-    ns1:datum <https://w3id.org/geosrs/datum/Raiatea_SAU_2001> ;
+    ns1:datum <http://www.opengis.net/ont/crs/datum/Raiatea_SAU_2001> ;
     ns1:epsgCode "EPSG:5603"^^xsd:string ;
     ns1:isApplicableTo <http://www.opengis.net/ont/crs/isbody/Earth> ;
     ns1:isBound false ;

@@ -16,7 +16,7 @@
     ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'VerticalCRS','name':'TWVD 2001 height','datum':{'type':'VerticalReferenceFrame','name':'Taiwan Vertical Datum 2001'},'coordinate_system':{'subtype':'vertical','axis':[{'name':'Gravity-related height','abbreviation':'H','direction':'up','unit':'metre'}]},'scope':'Geodesy, engineering survey, topographic mapping.','area':'Taiwan, Republic of China - onshore - Taiwan Island.','bbox':{'south_latitude':21.87,'west_longitude':119.99,'north_latitude':25.34,'east_longitude':122.06},'id':{'authority':'EPSG','code':8904}}"^^xsd:string ;
     ns1:asWKT "VERTCRS['TWVD 2001 height',VDATUM['Taiwan Vertical Datum 2001'],CS[vertical,1],AXIS['gravity-related height (H)',up,LENGTHUNIT['metre',1]],USAGE[SCOPE['Geodesy, engineering survey, topographic mapping.'],AREA['Taiwan, Republic of China - onshore - Taiwan Island.'],BBOX[21.87,119.99,25.34,122.06]],ID['EPSG',8904]]"^^ns1:wktLiteral ;
     ns1:coordinateSystem <http://www.opengis.net/def/crs/EPSG/0/8904_cs> ;
-    ns1:datum <https://w3id.org/geosrs/datum/Taiwan_Vertical_Datum_2001> ;
+    ns1:datum <http://www.opengis.net/ont/crs/datum/Taiwan_Vertical_Datum_2001> ;
     ns1:epsgCode "EPSG:8904"^^xsd:string ;
     ns1:isApplicableTo <http://www.opengis.net/ont/crs/isbody/Earth> ;
     ns1:isBound false ;

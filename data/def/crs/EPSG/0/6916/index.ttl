@@ -16,7 +16,7 @@
     ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'VerticalCRS','name':'SHD height','datum':{'type':'VerticalReferenceFrame','name':'Singapore Height Datum'},'coordinate_system':{'subtype':'vertical','axis':[{'name':'Gravity-related height','abbreviation':'H','direction':'up','unit':'metre'}]},'scope':'Engineering survey, GIS, topographic mapping.','area':'Singapore - onshore and offshore.','bbox':{'south_latitude':1.13,'west_longitude':103.59,'north_latitude':1.47,'east_longitude':104.07},'id':{'authority':'EPSG','code':6916}}"^^xsd:string ;
     ns1:asWKT "VERTCRS['SHD height',VDATUM['Singapore Height Datum'],CS[vertical,1],AXIS['gravity-related height (H)',up,LENGTHUNIT['metre',1]],USAGE[SCOPE['Engineering survey, GIS, topographic mapping.'],AREA['Singapore - onshore and offshore.'],BBOX[1.13,103.59,1.47,104.07]],ID['EPSG',6916]]"^^ns1:wktLiteral ;
     ns1:coordinateSystem <http://www.opengis.net/def/crs/EPSG/0/6916_cs> ;
-    ns1:datum <https://w3id.org/geosrs/datum/Singapore_Height_Datum> ;
+    ns1:datum <http://www.opengis.net/ont/crs/datum/Singapore_Height_Datum> ;
     ns1:epsgCode "EPSG:6916"^^xsd:string ;
     ns1:isApplicableTo <http://www.opengis.net/ont/crs/isbody/Earth> ;
     ns1:isBound false ;

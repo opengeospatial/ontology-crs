@@ -16,7 +16,7 @@
     ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'VerticalCRS','name':'HHWLT height','datum':{'type':'VerticalReferenceFrame','name':'Higher High Water Large Tide'},'coordinate_system':{'subtype':'vertical','axis':[{'name':'Gravity-related height','abbreviation':'H','direction':'up','unit':'metre'}]},'scope':'Hydrography and nautical charting.','area':'World.','bbox':{'south_latitude':-90,'west_longitude':-180,'north_latitude':90,'east_longitude':180},'id':{'authority':'EPSG','code':5871}}"^^xsd:string ;
     ns1:asWKT "VERTCRS['HHWLT height',VDATUM['Higher High Water Large Tide'],CS[vertical,1],AXIS['gravity-related height (H)',up,LENGTHUNIT['metre',1]],USAGE[SCOPE['Hydrography and nautical charting.'],AREA['World.'],BBOX[-90,-180,90,180]],ID['EPSG',5871]]"^^ns1:wktLiteral ;
     ns1:coordinateSystem <http://www.opengis.net/def/crs/EPSG/0/5871_cs> ;
-    ns1:datum <https://w3id.org/geosrs/datum/Higher_High_Water_Large_Tide> ;
+    ns1:datum <http://www.opengis.net/ont/crs/datum/Higher_High_Water_Large_Tide> ;
     ns1:epsgCode "EPSG:5871"^^xsd:string ;
     ns1:isApplicableTo <http://www.opengis.net/ont/crs/isbody/Earth> ;
     ns1:isBound false ;

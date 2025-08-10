@@ -16,7 +16,7 @@
     ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'GeographicCRS','name':'ATS77','datum':{'type':'GeodeticReferenceFrame','name':'Average Terrestrial System 1977','ellipsoid':{'name':'Average Terrestrial System 1977','semi_major_axis':6378135,'inverse_flattening':298.257}},'coordinate_system':{'subtype':'ellipsoidal','axis':[{'name':'Geodetic latitude','abbreviation':'Lat','direction':'north','unit':'degree'},{'name':'Geodetic longitude','abbreviation':'Lon','direction':'east','unit':'degree'}]},'scope':'Geodesy.','area':'Canada - New Brunswick; Nova Scotia; Prince Edward Island.','bbox':{'south_latitude':43.41,'west_longitude':-69.05,'north_latitude':48.07,'east_longitude':-59.73},'id':{'authority':'EPSG','code':4122}}"^^xsd:string ;
     ns1:asWKT "GEOGCRS['ATS77',DATUM['Average Terrestrial System 1977',ELLIPSOID['Average Terrestrial System 1977',6378135,298.257,LENGTHUNIT['metre',1]]],PRIMEM['Greenwich',0,ANGLEUNIT['degree',0.0174532925199433]],CS[ellipsoidal,2],AXIS['geodetic latitude (Lat)',north,ORDER[1],ANGLEUNIT['degree',0.0174532925199433]],AXIS['geodetic longitude (Lon)',east,ORDER[2],ANGLEUNIT['degree',0.0174532925199433]],USAGE[SCOPE['Geodesy.'],AREA['Canada - New Brunswick; Nova Scotia; Prince Edward Island.'],BBOX[43.41,-69.05,48.07,-59.73]],ID['EPSG',4122]]"^^ns1:wktLiteral ;
     ns1:coordinateSystem <http://www.opengis.net/def/crs/EPSG/0/4122_cs> ;
-    ns1:datum <https://w3id.org/geosrs/datum/Average_Terrestrial_System_1977> ;
+    ns1:datum <http://www.opengis.net/ont/crs/datum/Average_Terrestrial_System_1977> ;
     ns1:epsgCode "EPSG:4122"^^xsd:string ;
     ns1:isApplicableTo <http://www.opengis.net/ont/crs/isbody/Earth> ;
     ns1:isBound false ;

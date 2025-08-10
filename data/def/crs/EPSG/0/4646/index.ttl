@@ -16,7 +16,7 @@
     ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'GeographicCRS','name':'Grand Comoros','datum':{'type':'GeodeticReferenceFrame','name':'Grand Comoros','ellipsoid':{'name':'International 1924','semi_major_axis':6378388,'inverse_flattening':297}},'coordinate_system':{'subtype':'ellipsoidal','axis':[{'name':'Geodetic latitude','abbreviation':'Lat','direction':'north','unit':'degree'},{'name':'Geodetic longitude','abbreviation':'Lon','direction':'east','unit':'degree'}]},'scope':'Geodesy.','area':'Comoros - Njazidja (Grande Comore).','bbox':{'south_latitude':-11.99,'west_longitude':43.16,'north_latitude':-11.31,'east_longitude':43.55},'id':{'authority':'EPSG','code':4646}}"^^xsd:string ;
     ns1:asWKT "GEOGCRS['Grand Comoros',DATUM['Grand Comoros',ELLIPSOID['International 1924',6378388,297,LENGTHUNIT['metre',1]]],PRIMEM['Greenwich',0,ANGLEUNIT['degree',0.0174532925199433]],CS[ellipsoidal,2],AXIS['geodetic latitude (Lat)',north,ORDER[1],ANGLEUNIT['degree',0.0174532925199433]],AXIS['geodetic longitude (Lon)',east,ORDER[2],ANGLEUNIT['degree',0.0174532925199433]],USAGE[SCOPE['Geodesy.'],AREA['Comoros - Njazidja (Grande Comore).'],BBOX[-11.99,43.16,-11.31,43.55]],ID['EPSG',4646]]"^^ns1:wktLiteral ;
     ns1:coordinateSystem <http://www.opengis.net/def/crs/EPSG/0/4646_cs> ;
-    ns1:datum <https://w3id.org/geosrs/datum/Grand_Comoros> ;
+    ns1:datum <http://www.opengis.net/ont/crs/datum/Grand_Comoros> ;
     ns1:epsgCode "EPSG:4646"^^xsd:string ;
     ns1:isApplicableTo <http://www.opengis.net/ont/crs/isbody/Earth> ;
     ns1:isBound false ;

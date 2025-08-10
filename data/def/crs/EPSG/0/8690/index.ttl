@@ -16,7 +16,7 @@
     ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'VerticalCRS','name':'SVS2010 height','datum':{'type':'VerticalReferenceFrame','name':'Slovenian Vertical System 2010'},'coordinate_system':{'subtype':'vertical','axis':[{'name':'Gravity-related height','abbreviation':'H','direction':'up','unit':'metre'}]},'scope':'Geodesy, engineering survey, topographic mapping.','area':'Slovenia - onshore.','bbox':{'south_latitude':45.42,'west_longitude':13.38,'north_latitude':46.88,'east_longitude':16.61},'id':{'authority':'EPSG','code':8690}}"^^xsd:string ;
     ns1:asWKT "VERTCRS['SVS2010 height',VDATUM['Slovenian Vertical System 2010'],CS[vertical,1],AXIS['gravity-related height (H)',up,LENGTHUNIT['metre',1]],USAGE[SCOPE['Geodesy, engineering survey, topographic mapping.'],AREA['Slovenia - onshore.'],BBOX[45.42,13.38,46.88,16.61]],ID['EPSG',8690]]"^^ns1:wktLiteral ;
     ns1:coordinateSystem <http://www.opengis.net/def/crs/EPSG/0/8690_cs> ;
-    ns1:datum <https://w3id.org/geosrs/datum/Slovenian_Vertical_System_2010> ;
+    ns1:datum <http://www.opengis.net/ont/crs/datum/Slovenian_Vertical_System_2010> ;
     ns1:epsgCode "EPSG:8690"^^xsd:string ;
     ns1:isApplicableTo <http://www.opengis.net/ont/crs/isbody/Earth> ;
     ns1:isBound false ;

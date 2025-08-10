@@ -1,10 +1,10 @@
-@prefix ns1: <http://www.opengis.net/ont/crs/> .
+@prefix ns1: <https://w3id.org/geosrs/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix void: <http://rdfs.org/ns/void#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://www.opengis.net/ont/crs/datum/European_Terrestrial_Reference_System_1989_ensemble> a ns1:Datum,
-        <http://www.w3.org/ns/ldp#Resource>,
+<http://www.opengis.net/ont/crs/datum/European_Terrestrial_Reference_System_1989_ensemble> a <http://www.w3.org/ns/ldp#Resource>,
+        ns1:Datum,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Datum: European Terrestrial Reference System 1989 ensemble"@en ;
     void:inDataset <http://www.opengis.net/geoepsg_dataset> ;

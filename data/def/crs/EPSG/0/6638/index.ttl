@@ -16,7 +16,7 @@
     ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'VerticalCRS','name':'Tutuila 1962 height','datum':{'type':'VerticalReferenceFrame','name':'Tutuila Vertical Datum of 1962'},'coordinate_system':{'subtype':'vertical','axis':[{'name':'Gravity-related height','abbreviation':'H','direction':'up','unit':'metre'}]},'scope':'Geodesy, engineering survey, topographic mapping.','area':'American Samoa - Tutuila island.','bbox':{'south_latitude':-14.43,'west_longitude':-170.88,'north_latitude':-14.2,'east_longitude':-170.51},'id':{'authority':'EPSG','code':6638}}"^^xsd:string ;
     ns1:asWKT "VERTCRS['Tutuila 1962 height',VDATUM['Tutuila Vertical Datum of 1962'],CS[vertical,1],AXIS['gravity-related height (H)',up,LENGTHUNIT['metre',1]],USAGE[SCOPE['Geodesy, engineering survey, topographic mapping.'],AREA['American Samoa - Tutuila island.'],BBOX[-14.43,-170.88,-14.2,-170.51]],ID['EPSG',6638]]"^^ns1:wktLiteral ;
     ns1:coordinateSystem <http://www.opengis.net/def/crs/EPSG/0/6638_cs> ;
-    ns1:datum <https://w3id.org/geosrs/datum/Tutuila_Vertical_Datum_of_1962> ;
+    ns1:datum <http://www.opengis.net/ont/crs/datum/Tutuila_Vertical_Datum_of_1962> ;
     ns1:epsgCode "EPSG:6638"^^xsd:string ;
     ns1:isApplicableTo <http://www.opengis.net/ont/crs/isbody/Earth> ;
     ns1:isBound false ;

@@ -16,7 +16,7 @@
     ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'VerticalCRS','name':'Black Sea depth','datum':{'type':'VerticalReferenceFrame','name':'Black Sea'},'coordinate_system':{'subtype':'vertical','axis':[{'name':'Depth','abbreviation':'D','direction':'down','unit':'metre'}]},'scope':'Hydrography and nautical charting.','area':'Georgia - onshore and offshore.','bbox':{'south_latitude':41.04,'west_longitude':38.97,'north_latitude':43.59,'east_longitude':46.72},'id':{'authority':'EPSG','code':5336}}"^^xsd:string ;
     ns1:asWKT "VERTCRS['Black Sea depth',VDATUM['Black Sea'],CS[vertical,1],AXIS['depth (D)',down,LENGTHUNIT['metre',1]],USAGE[SCOPE['Hydrography and nautical charting.'],AREA['Georgia - onshore and offshore.'],BBOX[41.04,38.97,43.59,46.72]],ID['EPSG',5336]]"^^ns1:wktLiteral ;
     ns1:coordinateSystem <http://www.opengis.net/def/crs/EPSG/0/5336_cs> ;
-    ns1:datum <https://w3id.org/geosrs/datum/Black_Sea> ;
+    ns1:datum <http://www.opengis.net/ont/crs/datum/Black_Sea> ;
     ns1:epsgCode "EPSG:5336"^^xsd:string ;
     ns1:isApplicableTo <http://www.opengis.net/ont/crs/isbody/Earth> ;
     ns1:isBound false ;

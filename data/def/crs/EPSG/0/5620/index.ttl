@@ -16,7 +16,7 @@
     ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'VerticalCRS','name':'IGN 1988 SM height','datum':{'type':'VerticalReferenceFrame','name':'IGN 1988 SM'},'coordinate_system':{'subtype':'vertical','axis':[{'name':'Gravity-related height','abbreviation':'H','direction':'up','unit':'metre'}]},'scope':'Geodesy, engineering survey, topographic mapping.','area':'Guadeloupe - onshore - St Martin island.','bbox':{'south_latitude':18.01,'west_longitude':-63.21,'north_latitude':18.17,'east_longitude':-62.96},'id':{'authority':'EPSG','code':5620}}"^^xsd:string ;
     ns1:asWKT "VERTCRS['IGN 1988 SM height',VDATUM['IGN 1988 SM'],CS[vertical,1],AXIS['gravity-related height (H)',up,LENGTHUNIT['metre',1]],USAGE[SCOPE['Geodesy, engineering survey, topographic mapping.'],AREA['Guadeloupe - onshore - St Martin island.'],BBOX[18.01,-63.21,18.17,-62.96]],ID['EPSG',5620]]"^^ns1:wktLiteral ;
     ns1:coordinateSystem <http://www.opengis.net/def/crs/EPSG/0/5620_cs> ;
-    ns1:datum <https://w3id.org/geosrs/datum/IGN_1988_SM> ;
+    ns1:datum <http://www.opengis.net/ont/crs/datum/IGN_1988_SM> ;
     ns1:epsgCode "EPSG:5620"^^xsd:string ;
     ns1:isApplicableTo <http://www.opengis.net/ont/crs/isbody/Earth> ;
     ns1:isBound false ;

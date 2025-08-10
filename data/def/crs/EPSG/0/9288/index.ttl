@@ -16,7 +16,7 @@
     ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'VerticalCRS','name':'MSL NL depth','datum':{'type':'VerticalReferenceFrame','name':'Mean Sea Level Netherlands'},'coordinate_system':{'subtype':'vertical','axis':[{'name':'Depth','abbreviation':'D','direction':'down','unit':'metre'}]},'scope':'Hydrography, drilling, offshore engineering.','area':'Netherlands - offshore North Sea and nearshore.','bbox':{'south_latitude':51.32,'west_longitude':2.53,'north_latitude':55.77,'east_longitude':7.21},'id':{'authority':'EPSG','code':9288}}"^^xsd:string ;
     ns1:asWKT "VERTCRS['MSL NL depth',VDATUM['Mean Sea Level Netherlands'],CS[vertical,1],AXIS['depth (D)',down,LENGTHUNIT['metre',1]],USAGE[SCOPE['Hydrography, drilling, offshore engineering.'],AREA['Netherlands - offshore North Sea and nearshore.'],BBOX[51.32,2.53,55.77,7.21]],ID['EPSG',9288]]"^^ns1:wktLiteral ;
     ns1:coordinateSystem <http://www.opengis.net/def/crs/EPSG/0/9288_cs> ;
-    ns1:datum <https://w3id.org/geosrs/datum/Mean_Sea_Level_Netherlands> ;
+    ns1:datum <http://www.opengis.net/ont/crs/datum/Mean_Sea_Level_Netherlands> ;
     ns1:epsgCode "EPSG:9288"^^xsd:string ;
     ns1:isApplicableTo <http://www.opengis.net/ont/crs/isbody/Earth> ;
     ns1:isBound false ;

@@ -16,7 +16,7 @@
     ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'VerticalCRS','name':'RH2000 height','datum':{'type':'DynamicVerticalReferenceFrame','name':'Rikets hojdsystem 2000','frame_reference_epoch':2000},'coordinate_system':{'subtype':'vertical','axis':[{'name':'Gravity-related height','abbreviation':'H','direction':'up','unit':'metre'}]},'scope':'Geodesy, engineering survey.','area':'Sweden - onshore.','bbox':{'south_latitude':55.28,'west_longitude':10.93,'north_latitude':69.07,'east_longitude':24.17},'id':{'authority':'EPSG','code':5613}}"^^xsd:string ;
     ns1:asWKT "VERTCRS['RH2000 height',DYNAMIC[FRAMEEPOCH[2000]],VDATUM['Rikets hojdsystem 2000'],CS[vertical,1],AXIS['gravity-related height (H)',up,LENGTHUNIT['metre',1]],USAGE[SCOPE['Geodesy, engineering survey.'],AREA['Sweden - onshore.'],BBOX[55.28,10.93,69.07,24.17]],ID['EPSG',5613]]"^^ns1:wktLiteral ;
     ns1:coordinateSystem <http://www.opengis.net/def/crs/EPSG/0/5613_cs> ;
-    ns1:datum <https://w3id.org/geosrs/datum/Rikets_hojdsystem_2000> ;
+    ns1:datum <http://www.opengis.net/ont/crs/datum/Rikets_hojdsystem_2000> ;
     ns1:epsgCode "EPSG:5613"^^xsd:string ;
     ns1:isApplicableTo <http://www.opengis.net/ont/crs/isbody/Earth> ;
     ns1:isBound false ;

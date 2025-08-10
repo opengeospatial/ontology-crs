@@ -1,14 +1,15 @@
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
-@prefix ns1: <http://www.opengis.net/ont/crs/> .
+@prefix ns1: <https://w3id.org/geosrs/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix void: <http://rdfs.org/ns/void#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://www.opengis.net/ont/crs/operation/Pima_County_zone_1_East__ft_> a ns1:ObliqueMercatorProjection,
-        <http://www.w3.org/ns/ldp#Resource>,
+<http://www.opengis.net/ont/crs/operation/Pima_County_zone_1_East__ft_> a <http://www.w3.org/ns/ldp#Resource>,
+        ns1:ObliqueMercatorProjection,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Pima County zone 1 East (ft): Hotine Oblique Mercator (variant B)"@en ;
     void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
+    rdfs:comment "Grid unit is International feet (note: not US Survey feet)."^^xsd:string ;
     ns1:accuracy -1e+00 ;
     ns1:angleFromRectifiedToSkewGrid 4.5e+01 ;
     ns1:area_of_use <http://www.opengis.net/ont/crs/areaofuse/Pima_County_zone_1_East__ft__area_of_use> ;
@@ -23,6 +24,5 @@
     ns1:method_name "Hotine Oblique Mercator (variant B)" ;
     ns1:northingAtProjectionCentre 8e+05 ;
     ns1:scaleFactorAtProjectionCentre 1.00011e+00 ;
-    ns1:scope "Cadastre, topographic mapping (large scale)."^^xsd:string ;
-    rdfs:comment "Grid unit is International feet (note: not US Survey feet)."^^xsd:string .
+    ns1:scope "Cadastre, topographic mapping (large scale)."^^xsd:string .
 

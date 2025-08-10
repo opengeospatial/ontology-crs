@@ -16,7 +16,7 @@
     ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'GeographicCRS','name':'St. Paul Island','datum':{'type':'GeodeticReferenceFrame','name':'St. Paul Island','ellipsoid':{'name':'Clarke 1866','semi_major_axis':6378206.4,'semi_minor_axis':6356583.8}},'coordinate_system':{'subtype':'ellipsoidal','axis':[{'name':'Geodetic latitude','abbreviation':'Lat','direction':'north','unit':'degree'},{'name':'Geodetic longitude','abbreviation':'Lon','direction':'east','unit':'degree'}]},'scope':'Geodesy.','area':'United States (USA) - Alaska - Pribilof Islands - St Paul Island.','bbox':{'south_latitude':57.06,'west_longitude':-170.51,'north_latitude':57.28,'east_longitude':-170.04},'id':{'authority':'EPSG','code':4137}}"^^xsd:string ;
     ns1:asWKT "GEOGCRS['St. Paul Island',DATUM['St. Paul Island',ELLIPSOID['Clarke 1866',6378206.4,294.978698213898,LENGTHUNIT['metre',1]]],PRIMEM['Greenwich',0,ANGLEUNIT['degree',0.0174532925199433]],CS[ellipsoidal,2],AXIS['geodetic latitude (Lat)',north,ORDER[1],ANGLEUNIT['degree',0.0174532925199433]],AXIS['geodetic longitude (Lon)',east,ORDER[2],ANGLEUNIT['degree',0.0174532925199433]],USAGE[SCOPE['Geodesy.'],AREA['United States (USA) - Alaska - Pribilof Islands - St Paul Island.'],BBOX[57.06,-170.51,57.28,-170.04]],ID['EPSG',4137]]"^^ns1:wktLiteral ;
     ns1:coordinateSystem <http://www.opengis.net/def/crs/EPSG/0/4137_cs> ;
-    ns1:datum <https://w3id.org/geosrs/datum/St._Paul_Island> ;
+    ns1:datum <http://www.opengis.net/ont/crs/datum/St._Paul_Island> ;
     ns1:epsgCode "EPSG:4137"^^xsd:string ;
     ns1:isApplicableTo <http://www.opengis.net/ont/crs/isbody/Earth> ;
     ns1:isBound false ;

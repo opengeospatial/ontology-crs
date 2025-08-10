@@ -16,7 +16,7 @@
     ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'VerticalCRS','name':'Tararu 1952 height','datum':{'type':'VerticalReferenceFrame','name':'Tararu 1952'},'coordinate_system':{'subtype':'vertical','axis':[{'name':'Gravity-related height','abbreviation':'H','direction':'up','unit':'metre'}]},'scope':'Geodesy, engineering survey, topographic mapping.','area':'New Zealand - North Island - Tararu vertical CRS area.','bbox':{'south_latitude':-37.21,'west_longitude':175.44,'north_latitude':-36.78,'east_longitude':175.99},'id':{'authority':'EPSG','code':5768}}"^^xsd:string ;
     ns1:asWKT "VERTCRS['Tararu 1952 height',VDATUM['Tararu 1952'],CS[vertical,1],AXIS['gravity-related height (H)',up,LENGTHUNIT['metre',1]],USAGE[SCOPE['Geodesy, engineering survey, topographic mapping.'],AREA['New Zealand - North Island - Tararu vertical CRS area.'],BBOX[-37.21,175.44,-36.78,175.99]],ID['EPSG',5768]]"^^ns1:wktLiteral ;
     ns1:coordinateSystem <http://www.opengis.net/def/crs/EPSG/0/5768_cs> ;
-    ns1:datum <https://w3id.org/geosrs/datum/Tararu_1952> ;
+    ns1:datum <http://www.opengis.net/ont/crs/datum/Tararu_1952> ;
     ns1:epsgCode "EPSG:5768"^^xsd:string ;
     ns1:isApplicableTo <http://www.opengis.net/ont/crs/isbody/Earth> ;
     ns1:isBound false ;

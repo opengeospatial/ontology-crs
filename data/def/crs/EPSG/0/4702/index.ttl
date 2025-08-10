@@ -16,7 +16,7 @@
     ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'GeographicCRS','name':'Mauritania 1999','datum':{'type':'GeodeticReferenceFrame','name':'Mauritania 1999','ellipsoid':{'name':'GRS 1980','semi_major_axis':6378137,'inverse_flattening':298.257222101}},'coordinate_system':{'subtype':'ellipsoidal','axis':[{'name':'Geodetic latitude','abbreviation':'Lat','direction':'north','unit':'degree'},{'name':'Geodetic longitude','abbreviation':'Lon','direction':'east','unit':'degree'}]},'scope':'Horizontal component of 3D system.','area':'Mauritania - onshore and offshore.','bbox':{'south_latitude':14.72,'west_longitude':-20.04,'north_latitude':27.3,'east_longitude':-4.8},'id':{'authority':'EPSG','code':4702}}"^^xsd:string ;
     ns1:asWKT "GEOGCRS['Mauritania 1999',DATUM['Mauritania 1999',ELLIPSOID['GRS 1980',6378137,298.257222101,LENGTHUNIT['metre',1]]],PRIMEM['Greenwich',0,ANGLEUNIT['degree',0.0174532925199433]],CS[ellipsoidal,2],AXIS['geodetic latitude (Lat)',north,ORDER[1],ANGLEUNIT['degree',0.0174532925199433]],AXIS['geodetic longitude (Lon)',east,ORDER[2],ANGLEUNIT['degree',0.0174532925199433]],USAGE[SCOPE['Horizontal component of 3D system.'],AREA['Mauritania - onshore and offshore.'],BBOX[14.72,-20.04,27.3,-4.8]],ID['EPSG',4702]]"^^ns1:wktLiteral ;
     ns1:coordinateSystem <http://www.opengis.net/def/crs/EPSG/0/4702_cs> ;
-    ns1:datum <https://w3id.org/geosrs/datum/Mauritania_1999> ;
+    ns1:datum <http://www.opengis.net/ont/crs/datum/Mauritania_1999> ;
     ns1:epsgCode "EPSG:4702"^^xsd:string ;
     ns1:isApplicableTo <http://www.opengis.net/ont/crs/isbody/Earth> ;
     ns1:isBound false ;

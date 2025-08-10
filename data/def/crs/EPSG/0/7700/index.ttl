@@ -16,7 +16,7 @@
     ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'VerticalCRS','name':'Latvia 2000 height','datum':{'type':'VerticalReferenceFrame','name':'Latvian Height System 2000'},'coordinate_system':{'subtype':'vertical','axis':[{'name':'Gravity-related height','abbreviation':'H','direction':'up','unit':'metre'}]},'scope':'Geodesy, engineering survey, topographic mapping.','area':'Latvia - onshore.','bbox':{'south_latitude':55.67,'west_longitude':20.87,'north_latitude':58.09,'east_longitude':28.24},'id':{'authority':'EPSG','code':7700}}"^^xsd:string ;
     ns1:asWKT "VERTCRS['Latvia 2000 height',VDATUM['Latvian Height System 2000'],CS[vertical,1],AXIS['gravity-related height (H)',up,LENGTHUNIT['metre',1]],USAGE[SCOPE['Geodesy, engineering survey, topographic mapping.'],AREA['Latvia - onshore.'],BBOX[55.67,20.87,58.09,28.24]],ID['EPSG',7700]]"^^ns1:wktLiteral ;
     ns1:coordinateSystem <http://www.opengis.net/def/crs/EPSG/0/7700_cs> ;
-    ns1:datum <https://w3id.org/geosrs/datum/Latvian_Height_System_2000> ;
+    ns1:datum <http://www.opengis.net/ont/crs/datum/Latvian_Height_System_2000> ;
     ns1:epsgCode "EPSG:7700"^^xsd:string ;
     ns1:isApplicableTo <http://www.opengis.net/ont/crs/isbody/Earth> ;
     ns1:isBound false ;

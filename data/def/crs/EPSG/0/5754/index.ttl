@@ -16,7 +16,7 @@
     ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'VerticalCRS','name':'Poolbeg height (ft(Br36))','datum':{'type':'VerticalReferenceFrame','name':'Poolbeg'},'coordinate_system':{'subtype':'vertical','axis':[{'name':'Gravity-related height','abbreviation':'H','direction':'up','unit':{'type':'LinearUnit','name':'British foot (1936)','conversion_factor':0.3048007491}}]},'scope':'Topographic mapping.','area':'Ireland - onshore. United Kingdom (UK) - Northern Ireland (Ulster) - onshore.','bbox':{'south_latitude':51.39,'west_longitude':-10.56,'north_latitude':55.43,'east_longitude':-5.34},'id':{'authority':'EPSG','code':5754}}"^^xsd:string ;
     ns1:asWKT "VERTCRS['Poolbeg height (ft(Br36))',VDATUM['Poolbeg'],CS[vertical,1],AXIS['gravity-related height (H)',up,LENGTHUNIT['British foot (1936)',0.3048007491]],USAGE[SCOPE['Topographic mapping.'],AREA['Ireland - onshore. United Kingdom (UK) - Northern Ireland (Ulster) - onshore.'],BBOX[51.39,-10.56,55.43,-5.34]],ID['EPSG',5754]]"^^ns1:wktLiteral ;
     ns1:coordinateSystem <http://www.opengis.net/def/crs/EPSG/0/5754_cs> ;
-    ns1:datum <https://w3id.org/geosrs/datum/Poolbeg> ;
+    ns1:datum <http://www.opengis.net/ont/crs/datum/Poolbeg> ;
     ns1:epsgCode "EPSG:5754"^^xsd:string ;
     ns1:isApplicableTo <http://www.opengis.net/ont/crs/isbody/Earth> ;
     ns1:isBound false ;

@@ -16,7 +16,7 @@
     ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'VerticalCRS','name':'Ponta Delgada height','datum':{'type':'VerticalReferenceFrame','name':'Ponta Delgada'},'coordinate_system':{'subtype':'vertical','axis':[{'name':'Gravity-related height','abbreviation':'H','direction':'up','unit':'metre'}]},'scope':'Geodesy, engineering survey, topographic mapping.','area':'Portugal - eastern Azores - Sao Miguel island onshore.','bbox':{'south_latitude':37.65,'west_longitude':-25.92,'north_latitude':37.96,'east_longitude':-25.08},'id':{'authority':'EPSG','code':6187}}"^^xsd:string ;
     ns1:asWKT "VERTCRS['Ponta Delgada height',VDATUM['Ponta Delgada'],CS[vertical,1],AXIS['gravity-related height (H)',up,LENGTHUNIT['metre',1]],USAGE[SCOPE['Geodesy, engineering survey, topographic mapping.'],AREA['Portugal - eastern Azores - Sao Miguel island onshore.'],BBOX[37.65,-25.92,37.96,-25.08]],ID['EPSG',6187]]"^^ns1:wktLiteral ;
     ns1:coordinateSystem <http://www.opengis.net/def/crs/EPSG/0/6187_cs> ;
-    ns1:datum <https://w3id.org/geosrs/datum/Ponta_Delgada> ;
+    ns1:datum <http://www.opengis.net/ont/crs/datum/Ponta_Delgada> ;
     ns1:epsgCode "EPSG:6187"^^xsd:string ;
     ns1:isApplicableTo <http://www.opengis.net/ont/crs/isbody/Earth> ;
     ns1:isBound false ;

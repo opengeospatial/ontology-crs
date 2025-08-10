@@ -16,7 +16,7 @@
     ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'VerticalCRS','name':'Jamestown 1971 height','datum':{'type':'VerticalReferenceFrame','name':'Jamestown 1971'},'coordinate_system':{'subtype':'vertical','axis':[{'name':'Gravity-related height','abbreviation':'H','direction':'up','unit':'metre'}]},'scope':'Topographic mapping.','area':'St Helena, Ascension and Tristan da Cunha - St Helena Island - onshore.','bbox':{'south_latitude':-16.08,'west_longitude':-5.85,'north_latitude':-15.85,'east_longitude':-5.59},'id':{'authority':'EPSG','code':7888}}"^^xsd:string ;
     ns1:asWKT "VERTCRS['Jamestown 1971 height',VDATUM['Jamestown 1971'],CS[vertical,1],AXIS['gravity-related height (H)',up,LENGTHUNIT['metre',1]],USAGE[SCOPE['Topographic mapping.'],AREA['St Helena, Ascension and Tristan da Cunha - St Helena Island - onshore.'],BBOX[-16.08,-5.85,-15.85,-5.59]],ID['EPSG',7888]]"^^ns1:wktLiteral ;
     ns1:coordinateSystem <http://www.opengis.net/def/crs/EPSG/0/7888_cs> ;
-    ns1:datum <https://w3id.org/geosrs/datum/Jamestown_1971> ;
+    ns1:datum <http://www.opengis.net/ont/crs/datum/Jamestown_1971> ;
     ns1:epsgCode "EPSG:7888"^^xsd:string ;
     ns1:isApplicableTo <http://www.opengis.net/ont/crs/isbody/Earth> ;
     ns1:isBound false ;

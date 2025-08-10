@@ -1,10 +1,10 @@
-@prefix ns1: <http://www.opengis.net/ont/crs/> .
+@prefix ns1: <https://w3id.org/geosrs/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix void: <http://rdfs.org/ns/void#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://www.opengis.net/ont/crs/datum/International_Terrestrial_Reference_Frame_1992> a ns1:GeodeticReferenceFrame,
-        <http://www.w3.org/ns/ldp#Resource>,
+<http://www.opengis.net/ont/crs/datum/International_Terrestrial_Reference_Frame_1992> a <http://www.w3.org/ns/ldp#Resource>,
+        ns1:GeodeticReferenceFrame,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Datum: International Terrestrial Reference Frame 1992"@en ;
     void:inDataset <http://www.opengis.net/geoepsg_dataset> ;

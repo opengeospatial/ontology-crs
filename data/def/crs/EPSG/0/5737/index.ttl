@@ -16,7 +16,7 @@
     ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'VerticalCRS','name':'Yellow Sea 1985 height','datum':{'type':'VerticalReferenceFrame','name':'Yellow Sea 1985'},'coordinate_system':{'subtype':'vertical','axis':[{'name':'Gravity-related height','abbreviation':'H','direction':'up','unit':'metre'}]},'scope':'Geodesy, engineering survey.','area':'China - onshore.','bbox':{'south_latitude':18.11,'west_longitude':73.62,'north_latitude':53.56,'east_longitude':134.77},'id':{'authority':'EPSG','code':5737}}"^^xsd:string ;
     ns1:asWKT "VERTCRS['Yellow Sea 1985 height',VDATUM['Yellow Sea 1985'],CS[vertical,1],AXIS['gravity-related height (H)',up,LENGTHUNIT['metre',1]],USAGE[SCOPE['Geodesy, engineering survey.'],AREA['China - onshore.'],BBOX[18.11,73.62,53.56,134.77]],ID['EPSG',5737]]"^^ns1:wktLiteral ;
     ns1:coordinateSystem <http://www.opengis.net/def/crs/EPSG/0/5737_cs> ;
-    ns1:datum <https://w3id.org/geosrs/datum/Yellow_Sea_1985> ;
+    ns1:datum <http://www.opengis.net/ont/crs/datum/Yellow_Sea_1985> ;
     ns1:epsgCode "EPSG:5737"^^xsd:string ;
     ns1:isApplicableTo <http://www.opengis.net/ont/crs/isbody/Earth> ;
     ns1:isBound false ;

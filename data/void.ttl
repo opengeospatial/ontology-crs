@@ -78,25 +78,13 @@
 <http://www.opengis.net/geoepsg_dataset_w3id.org_geosrs_> a void:Linkset ;
     rdfs:label "Linkset: geoepsg_dataset - geosrs:"@en ;
     void:linkPredicate rdf:type,
-        <https://w3id.org/geosrs/direction> ;
+        <https://w3id.org/geosrs/direction>,
+        <https://w3id.org/geosrs/usage> ;
     void:objectsTarget <https://w3id.org/geosrs/> ;
     void:subjectsTarget <http://www.opengis.net/geoepsg_dataset> ;
     void:triples 56,
-        27973 .
-
-<http://www.opengis.net/geoepsg_dataset_w3id.org_geosrs_datum_> a void:Linkset ;
-    rdfs:label "Linkset: geoepsg_dataset - geosrsdatum:"@en ;
-    void:linkPredicate <https://w3id.org/geosrs/datum> ;
-    void:objectsTarget <https://w3id.org/geosrs/datum/> ;
-    void:subjectsTarget <http://www.opengis.net/geoepsg_dataset> ;
-    void:triples 6652 .
-
-<http://www.opengis.net/geoepsg_dataset_w3id.org_geosrs_operation_> a void:Linkset ;
-    rdfs:label "Linkset: geoepsg_dataset - geosrsoperation:"@en ;
-    void:linkPredicate <https://w3id.org/geosrs/coordinateOperation> ;
-    void:objectsTarget <https://w3id.org/geosrs/operation/> ;
-    void:subjectsTarget <http://www.opengis.net/geoepsg_dataset> ;
-    void:triples 4909 .
+        968,
+        31075 .
 
 <http://www.opengis.net/geoepsg_dataset_www.ontology-of-units-of-measure.org_resource_om-2_> a void:Linkset ;
     rdfs:label "Linkset: geoepsg_dataset - Ontology of Units of Measurement (om:)"@en ;
@@ -117,7 +105,7 @@
     void:linkPredicate rdf:type ;
     void:objectsTarget skos: ;
     void:subjectsTarget <http://www.opengis.net/geoepsg_dataset> ;
-    void:triples 19 .
+    void:triples 40 .
 
 <http://www.opengis.net/geoepsg_dataset_www.w3.org_ns_prov-o_> a void:Linkset ;
     rdfs:label "Linkset: geoepsg_dataset - prov1:"@en ;
@@ -170,7 +158,7 @@
 <http://www.opengis.net/skos_geoepsg_dataset_occ> a voaf:DatasetOccurrence ;
     rdfs:label "Occurrences of vocabulary http://www.w3.org/2004/02/skos/core# in geoepsg_dataset" ;
     voaf:inDataset <http://www.opengis.net/geoepsg_dataset> ;
-    voaf:occurrences 38 .
+    voaf:occurrences 80 .
 
 <http://www.opengis.net/sosa_geoepsg_dataset_occ> a voaf:DatasetOccurrence ;
     rdfs:label "Occurrences of vocabulary http://www.w3.org/ns/sosa/ in geoepsg_dataset" ;
@@ -290,11 +278,13 @@ doap: a voaf:Vocabulary ;
 
 <http://www.opengis.net/geoepsg_dataset_AlbersEqualAreaProjection> a void:Dataset ;
     rdfs:label "Class Partition: AlbersEqualAreaProjection"@en ;
-    void:class <https://w3id.org/geosrs/AlbersEqualAreaProjection> .
+    void:class <https://w3id.org/geosrs/AlbersEqualAreaProjection> ;
+    void:entities 29 .
 
 <http://www.opengis.net/geoepsg_dataset_AmericanPolyconicProjection> a void:Dataset ;
     rdfs:label "Class Partition: AmericanPolyconicProjection"@en ;
-    void:class <https://w3id.org/geosrs/AmericanPolyconicProjection> .
+    void:class <https://w3id.org/geosrs/AmericanPolyconicProjection> ;
+    void:entities 2 .
 
 <http://www.opengis.net/geoepsg_dataset_AreaOfUse> a void:Dataset ;
     rdfs:label "Class Partition: AreaOfUse"@en ;
@@ -313,16 +303,18 @@ doap: a voaf:Vocabulary ;
 
 <http://www.opengis.net/geoepsg_dataset_CassiniProjection> a void:Dataset ;
     rdfs:label "Class Partition: CassiniProjection"@en ;
-    void:class <https://w3id.org/geosrs/CassiniProjection> .
+    void:class <https://w3id.org/geosrs/CassiniProjection> ;
+    void:entities 30 .
 
 <http://www.opengis.net/geoepsg_dataset_Collection> a void:Dataset ;
     rdfs:label "Class Partition: Collection"@en ;
     void:class skos:Collection ;
-    void:entities 19 .
+    void:entities 40 .
 
 <http://www.opengis.net/geoepsg_dataset_ColombiaUrbanProjection> a void:Dataset ;
     rdfs:label "Class Partition: ColombiaUrbanProjection"@en ;
-    void:class <https://w3id.org/geosrs/ColombiaUrbanProjection> .
+    void:class <https://w3id.org/geosrs/ColombiaUrbanProjection> ;
+    void:entities 32 .
 
 <http://www.opengis.net/geoepsg_dataset_CompoundCRS> a void:Dataset ;
     rdfs:label "Class Partition: CompoundCRS"@en ;
@@ -331,7 +323,8 @@ doap: a voaf:Vocabulary ;
 
 <http://www.opengis.net/geoepsg_dataset_CoordinateConversionOperation> a void:Dataset ;
     rdfs:label "Class Partition: CoordinateConversionOperation"@en ;
-    void:class <https://w3id.org/geosrs/CoordinateConversionOperation> .
+    void:class <https://w3id.org/geosrs/CoordinateConversionOperation> ;
+    void:entities 34 .
 
 <http://www.opengis.net/geoepsg_dataset_CoordinateSystemAxis> a void:Dataset ;
     rdfs:label "Class Partition: CoordinateSystemAxis"@en ;
@@ -340,15 +333,18 @@ doap: a voaf:Vocabulary ;
 
 <http://www.opengis.net/geoepsg_dataset_CylindricalEqualArea> a void:Dataset ;
     rdfs:label "Class Partition: CylindricalEqualArea"@en ;
-    void:class <https://w3id.org/geosrs/CylindricalEqualArea> .
+    void:class <https://w3id.org/geosrs/CylindricalEqualArea> ;
+    void:entities 2 .
 
 <http://www.opengis.net/geoepsg_dataset_Datum> a void:Dataset ;
     rdfs:label "Class Partition: Datum"@en ;
-    void:class <https://w3id.org/geosrs/Datum> .
+    void:class <https://w3id.org/geosrs/Datum> ;
+    void:entities 2 .
 
 <http://www.opengis.net/geoepsg_dataset_DynamicVerticalReferenceFrame> a void:Dataset ;
     rdfs:label "Class Partition: DynamicVerticalReferenceFrame"@en ;
-    void:class <https://w3id.org/geosrs/DynamicVerticalReferenceFrame> .
+    void:class <https://w3id.org/geosrs/DynamicVerticalReferenceFrame> ;
+    void:entities 2 .
 
 <http://www.opengis.net/geoepsg_dataset_Ellipsoid> a void:Dataset ;
     rdfs:label "Class Partition: Ellipsoid"@en ;
@@ -367,11 +363,13 @@ doap: a voaf:Vocabulary ;
 
 <http://www.opengis.net/geoepsg_dataset_EqualEarthProjection> a void:Dataset ;
     rdfs:label "Class Partition: EqualEarthProjection"@en ;
-    void:class <https://w3id.org/geosrs/EqualEarthProjection> .
+    void:class <https://w3id.org/geosrs/EqualEarthProjection> ;
+    void:entities 3 .
 
 <http://www.opengis.net/geoepsg_dataset_EquidistantCylindricalProjection> a void:Dataset ;
     rdfs:label "Class Partition: EquidistantCylindricalProjection"@en ;
-    void:class <https://w3id.org/geosrs/EquidistantCylindricalProjection> .
+    void:class <https://w3id.org/geosrs/EquidistantCylindricalProjection> ;
+    void:entities 2 .
 
 <http://www.opengis.net/geoepsg_dataset_GeocentricCRS> a void:Dataset ;
     rdfs:label "Class Partition: GeocentricCRS"@en ;
@@ -380,7 +378,8 @@ doap: a voaf:Vocabulary ;
 
 <http://www.opengis.net/geoepsg_dataset_GeodeticReferenceFrame> a void:Dataset ;
     rdfs:label "Class Partition: GeodeticReferenceFrame"@en ;
-    void:class <https://w3id.org/geosrs/GeodeticReferenceFrame> .
+    void:class <https://w3id.org/geosrs/GeodeticReferenceFrame> ;
+    void:entities 604 .
 
 <http://www.opengis.net/geoepsg_dataset_GeographicCRS> a void:Dataset ;
     rdfs:label "Class Partition: GeographicCRS"@en ;
@@ -394,27 +393,33 @@ doap: a voaf:Vocabulary ;
 
 <http://www.opengis.net/geoepsg_dataset_Krovak> a void:Dataset ;
     rdfs:label "Class Partition: Krovak"@en ;
-    void:class <https://w3id.org/geosrs/Krovak> .
+    void:class <https://w3id.org/geosrs/Krovak> ;
+    void:entities 8 .
 
 <http://www.opengis.net/geoepsg_dataset_LabordeProjection> a void:Dataset ;
     rdfs:label "Class Partition: LabordeProjection"@en ;
-    void:class <https://w3id.org/geosrs/LabordeProjection> .
+    void:class <https://w3id.org/geosrs/LabordeProjection> ;
+    void:entities 2 .
 
 <http://www.opengis.net/geoepsg_dataset_LambertConformalConicProjection> a void:Dataset ;
     rdfs:label "Class Partition: LambertConformalConicProjection"@en ;
-    void:class <https://w3id.org/geosrs/LambertConformalConicProjection> .
+    void:class <https://w3id.org/geosrs/LambertConformalConicProjection> ;
+    void:entities 601 .
 
 <http://www.opengis.net/geoepsg_dataset_MercatorProjection> a void:Dataset ;
     rdfs:label "Class Partition: MercatorProjection"@en ;
-    void:class <https://w3id.org/geosrs/MercatorProjection> .
+    void:class <https://w3id.org/geosrs/MercatorProjection> ;
+    void:entities 9 .
 
 <http://www.opengis.net/geoepsg_dataset_ObliqueMercatorProjection> a void:Dataset ;
     rdfs:label "Class Partition: ObliqueMercatorProjection"@en ;
-    void:class <https://w3id.org/geosrs/ObliqueMercatorProjection> .
+    void:class <https://w3id.org/geosrs/ObliqueMercatorProjection> ;
+    void:entities 25 .
 
 <http://www.opengis.net/geoepsg_dataset_ObliqueStereographicProjection> a void:Dataset ;
     rdfs:label "Class Partition: ObliqueStereographicProjection"@en ;
-    void:class <https://w3id.org/geosrs/ObliqueStereographicProjection> .
+    void:class <https://w3id.org/geosrs/ObliqueStereographicProjection> ;
+    void:entities 14 .
 
 <http://www.opengis.net/geoepsg_dataset_PlanarCoordinateSystem> a void:Dataset ;
     rdfs:label "Class Partition: PlanarCoordinateSystem"@en ;
@@ -438,11 +443,13 @@ doap: a voaf:Vocabulary ;
 
 <http://www.opengis.net/geoepsg_dataset_StereographicProjection> a void:Dataset ;
     rdfs:label "Class Partition: StereographicProjection"@en ;
-    void:class <https://w3id.org/geosrs/StereographicProjection> .
+    void:class <https://w3id.org/geosrs/StereographicProjection> ;
+    void:entities 35 .
 
 <http://www.opengis.net/geoepsg_dataset_TransverseMercatorProjection> a void:Dataset ;
     rdfs:label "Class Partition: TransverseMercatorProjection"@en ;
-    void:class <https://w3id.org/geosrs/TransverseMercatorProjection> .
+    void:class <https://w3id.org/geosrs/TransverseMercatorProjection> ;
+    void:entities 1296 .
 
 <http://www.opengis.net/geoepsg_dataset_Unit> a void:Dataset ;
     rdfs:label "Class Partition: Unit"@en ;
@@ -450,7 +457,8 @@ doap: a voaf:Vocabulary ;
 
 <http://www.opengis.net/geoepsg_dataset_UniversalTransverseMercatorProjection> a void:Dataset ;
     rdfs:label "Class Partition: UniversalTransverseMercatorProjection"@en ;
-    void:class <https://w3id.org/geosrs/UniversalTransverseMercatorProjection> .
+    void:class <https://w3id.org/geosrs/UniversalTransverseMercatorProjection> ;
+    void:entities 139 .
 
 <http://www.opengis.net/geoepsg_dataset_VerticalCRS> a void:Dataset ;
     rdfs:label "Class Partition: VerticalCRS"@en ;
@@ -464,7 +472,8 @@ doap: a voaf:Vocabulary ;
 
 <http://www.opengis.net/geoepsg_dataset_VerticalReferenceFrame> a void:Dataset ;
     rdfs:label "Class Partition: VerticalReferenceFrame"@en ;
-    void:class <https://w3id.org/geosrs/VerticalReferenceFrame> .
+    void:class <https://w3id.org/geosrs/VerticalReferenceFrame> ;
+    void:entities 231 .
 
 <http://www.opengis.net/geoepsg_dataset_abbreviation> a void:Dataset ;
     rdfs:label "Property Partition: abbreviation"@en ;
@@ -674,7 +683,7 @@ doap: a voaf:Vocabulary ;
 <http://www.opengis.net/geoepsg_dataset_label> a void:Dataset ;
     rdfs:label "Property Partition: label"@en ;
     void:property rdfs:label ;
-    void:triples 25112 .
+    void:triples 25133 .
 
 <http://www.opengis.net/geoepsg_dataset_latitudeOf1StStandardParallel> a void:Dataset ;
     rdfs:label "Property Partition: latitudeOf1StStandardParallel"@en ;
@@ -739,7 +748,7 @@ doap: a voaf:Vocabulary ;
 <http://www.opengis.net/geoepsg_dataset_member> a void:Dataset ;
     rdfs:label "Property Partition: member"@en ;
     void:property rdfs:member ;
-    void:triples 41281 .
+    void:triples 44383 .
 
 <http://www.opengis.net/geoepsg_dataset_method_name> a void:Dataset ;
     rdfs:label "Property Partition: method_name"@en ;
@@ -814,7 +823,7 @@ doap: a voaf:Vocabulary ;
 <http://www.opengis.net/geoepsg_dataset_type> a void:Dataset ;
     rdfs:label "Property Partition: type"@en ;
     void:property rdf:type ;
-    void:triples 44428 .
+    void:triples 44449 .
 
 <http://www.opengis.net/geoepsg_dataset_unit> a void:Dataset ;
     rdfs:label "Property Partition: unit"@en ;
@@ -986,18 +995,18 @@ skos: a voaf:Vocabulary ;
         adms:Asset ;
     rdfs:label "geoepsg_dataset"@en ;
     vext:averageLiteralLength 0 ;
-    vext:averageObjectIRILength 124 ;
+    vext:averageObjectIRILength 121 ;
     vext:averagePropertyIRILength 40 ;
-    vext:averageSubjectIRILength 50 ;
+    vext:averageSubjectIRILength 52 ;
     vext:datatypes 0 ;
     vext:distinctBlankNodes 0 ;
-    vext:distinctIRIReferences 106512 ;
+    vext:distinctIRIReferences 106554 ;
     vext:distinctLiterals 0 ;
-    vext:distinctRDFNodes 106512 ;
+    vext:distinctRDFNodes 106554 ;
     vext:languages 0 ;
     vext:propertyClasses 0 ;
     dc:language <http://www.lexvo.org/page/iso639-1/en> ;
-    dcterms:modified "2025-08-10T14:22:30"^^xsd:dateTime ;
+    dcterms:modified "2025-08-10T14:37:50"^^xsd:dateTime ;
     dcterms:subject <http://dbpedia.org/resource/Location>,
         <http://dbpedia.org/resource/OGC_GeoSPARQL>,
         <http://dbpedia.org/resource/Time>,
@@ -1049,9 +1058,9 @@ skos: a voaf:Vocabulary ;
         <http://www.opengis.net/geoepsg_dataset_VerticalReferenceFrame> ;
     void:classes 41 ;
     void:dataDump <https://opengeospatial.github.io/ontology-crs/data//index.ttl> ;
-    void:distinctObjects 81315 ;
-    void:distinctSubjects 25122 ;
-    void:entities 21988 ;
+    void:distinctObjects 81336 ;
+    void:distinctSubjects 25143 ;
+    void:entities 25110 ;
     void:feature <http://www.w3.org/ns/formats/RDFa>,
         <http://www.w3.org/ns/formats/Turtle> ;
     void:properties 75 ;
@@ -1130,7 +1139,7 @@ skos: a voaf:Vocabulary ;
         <http://www.opengis.net/geoepsg_dataset_unit_conversion_factor>,
         <http://www.opengis.net/geoepsg_dataset_usage>,
         <http://www.opengis.net/geoepsg_dataset_utm_zone> ;
-    void:triples 301141 ;
+    void:triples 307407 ;
     void:uriSpace "http://www.opengis.net/"^^xsd:string ;
     void:vocabulary vext:,
         dcam:,

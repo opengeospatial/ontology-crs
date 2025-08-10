@@ -1,16 +1,17 @@
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
-@prefix ns1: <http://www.opengis.net/ont/crs/> .
+@prefix ns1: <https://w3id.org/geosrs/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix void: <http://rdfs.org/ns/void#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://www.opengis.net/ont/crs/operation/Mercator_41> a ns1:CoordinateConversionOperation,
+<http://www.opengis.net/ont/crs/operation/Mercator_41> a <http://www.w3.org/ns/ldp#Resource>,
+        ns1:CoordinateConversionOperation,
         ns1:MercatorProjection,
-        <http://www.w3.org/ns/ldp#Resource>,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Mercator 41: Mercator (variant A)"@en,
         "Mercator 41: Mercator (variant B)"@en ;
     void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
+    rdfs:comment "For projects extending within the 12 nautical mile line or onshore, NIWA recommends using NZCS2000 (projection code 17964). For offshore statistical analysis see NIWA Albers (projection code 9190)."^^xsd:string ;
     ns1:accuracy -1e+00 ;
     ns1:area_of_use <http://www.opengis.net/ont/crs/areaofuse/Mercator_41_area_of_use> ;
     ns1:asProj4 "+proj=pipeline +step +proj=axisswap +order=2,1 +step +proj=unitconvert +xy_in=deg +xy_out=rad +step +proj=merc +lat_ts=-41 +lon_0=100 +x_0=0 +y_0=0 +ellps=WGS84",
@@ -28,6 +29,5 @@
     ns1:method_name "Mercator (variant A)",
         "Mercator (variant B)" ;
     ns1:scaleFactorAtNaturalOrigin 1e+00 ;
-    ns1:scope "Topographic mapping (medium and small scale)."^^xsd:string ;
-    rdfs:comment "For projects extending within the 12 nautical mile line or onshore, NIWA recommends using NZCS2000 (projection code 17964). For offshore statistical analysis see NIWA Albers (projection code 9190)."^^xsd:string .
+    ns1:scope "Topographic mapping (medium and small scale)."^^xsd:string .
 

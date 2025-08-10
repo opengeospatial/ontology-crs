@@ -16,7 +16,7 @@
     ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'VerticalCRS','name':'PNG08 height','datum':{'type':'VerticalReferenceFrame','name':'PNG08'},'coordinate_system':{'subtype':'vertical','axis':[{'name':'Gravity-related height','abbreviation':'H','direction':'up','unit':'metre'}]},'scope':'Geodesy.','area':'Papua New Guinea - between 0°N and 12°S and 140°E and 158°E - onshore and offshore.','bbox':{'south_latitude':-12,'west_longitude':140,'north_latitude':0.01,'east_longitude':158.01},'id':{'authority':'EPSG','code':7447}}"^^xsd:string ;
     ns1:asWKT "VERTCRS['PNG08 height',VDATUM['PNG08'],CS[vertical,1],AXIS['gravity-related height (H)',up,LENGTHUNIT['metre',1]],USAGE[SCOPE['Geodesy.'],AREA['Papua New Guinea - between 0°N and 12°S and 140°E and 158°E - onshore and offshore.'],BBOX[-12,140,0.01,158.01]],ID['EPSG',7447]]"^^ns1:wktLiteral ;
     ns1:coordinateSystem <http://www.opengis.net/def/crs/EPSG/0/7447_cs> ;
-    ns1:datum <https://w3id.org/geosrs/datum/PNG08> ;
+    ns1:datum <http://www.opengis.net/ont/crs/datum/PNG08> ;
     ns1:epsgCode "EPSG:7447"^^xsd:string ;
     ns1:isApplicableTo <http://www.opengis.net/ont/crs/isbody/Earth> ;
     ns1:isBound false ;

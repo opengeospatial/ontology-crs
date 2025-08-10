@@ -1,14 +1,15 @@
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
-@prefix ns1: <http://www.opengis.net/ont/crs/> .
+@prefix ns1: <https://w3id.org/geosrs/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix void: <http://rdfs.org/ns/void#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://www.opengis.net/ont/crs/operation/Belge_Lambert_50> a ns1:LambertConformalConicProjection,
-        <http://www.w3.org/ns/ldp#Resource>,
+<http://www.opengis.net/ont/crs/operation/Belge_Lambert_50> a <http://www.w3.org/ns/ldp#Resource>,
+        ns1:LambertConformalConicProjection,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Belge Lambert 50: Lambert Conic Conformal (2SP)"@en ;
     void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
+    rdfs:comment "Longitude is referenced to the Brussels meridian. If software cannot handle latitude of false origin of 90°N, use latitude of false origin = 50°30'00.0'N with northing at false origin = 131983.890 m."^^xsd:string ;
     ns1:accuracy -1e+00 ;
     ns1:area_of_use <http://www.opengis.net/ont/crs/areaofuse/Belge_Lambert_50_area_of_use> ;
     ns1:asProj4 "+proj=pipeline +step +proj=axisswap +order=2,1 +step +proj=unitconvert +xy_in=deg +xy_out=rad +step +inv +proj=longlat +ellps=intl +pm=brussels +step +proj=lcc +lat_0=90 +lon_0=0 +lat_1=49.8333333333333 +lat_2=51.1666666666667 +x_0=150000 +y_0=5400000 +ellps=intl +pm=brussels" ;
@@ -22,6 +23,5 @@
     ns1:longitudeOfFalseOrigin 0e+00 ;
     ns1:method_name "Lambert Conic Conformal (2SP)" ;
     ns1:northingAtFalseOrigin 5.4e+06 ;
-    ns1:scope "Engineering survey, topographic mapping."^^xsd:string ;
-    rdfs:comment "Longitude is referenced to the Brussels meridian. If software cannot handle latitude of false origin of 90°N, use latitude of false origin = 50°30'00.0'N with northing at false origin = 131983.890 m."^^xsd:string .
+    ns1:scope "Engineering survey, topographic mapping."^^xsd:string .
 

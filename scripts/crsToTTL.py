@@ -12,7 +12,7 @@ from shapely.geometry import box
 examples={}
 examplefile=open("examples.json","w")
 websitens="https://opengeospatial.github.io/ontology-crs/data/def/crs/EPSG/0/"
-websitensshort="https://opengeospatial.github.io/ontology-crs/data/def/crs/"
+websitensshort="https://opengeospatial.github.io/ontology-crs/data/ont/crs/"
 
 def crsToTTL(ttl,curcrs,x,geodcounter,crsclass):
 	epsgcode=str(x)
@@ -102,7 +102,7 @@ def crsToTTL(ttl,curcrs,x,geodcounter,crsclass):
 		ttl.add("geoepsg:"+epsgcode+"_area_of_use"+" rdfs:label \""+str(curcrs.area_of_use.name).replace("\"","'")+"\"@en .\n")
 		b = box(curcrs.area_of_use.west, curcrs.area_of_use.south, curcrs.area_of_use.east, curcrs.area_of_use.north)
 		ttl.add("geoepsg:"+epsgcode+"_area_of_use"+" geosrs:extent   \"<http://www.opengis.net/def/crs/OGC/1.3/CRS84> "+str(b.wkt)+"\"^^geo:wktLiteral . \n")
-		examples["geosrs:AreaOfUse"]=websitens+"/"+epsgcode+"_area_of_use"	
+		examples["geosrs:AreaOfUse"]=websitensshort+"/areaofuse/"+epsgcode+"_area_of_use"	
 		#\"ENVELOPE("+str(curcrs.area_of_use.west)+" "+str(curcrs.area_of_use.south)+","+str(curcrs.area_of_use.east)+" "+str(curcrs.area_of_use.north)+")\"^^geo:wktLiteral . \n")
 	if curcrs.get_geod()!=None:
 		geoid="geosrsgeod:"+str(geodcounter)
@@ -190,16 +190,16 @@ def crsToTTL(ttl,curcrs,x,geodcounter,crsclass):
 						break
 			if not found:
 				ttl.add("geosrsoperation:"+str(coordoperationid)+" rdf:type geosrs:CoordinateConversionOperation . \n")
-				examples["geosrs:CoordinateConversionOperation"]=websitensshort+"/co/"+str(coordoperationid)
+				examples["geosrs:CoordinateConversionOperation"]=websitensshort+"/operation/"+str(coordoperationid)
 		elif curcrs.coordinate_operation.type_name=="Transformation":
 			ttl.add("geosrsoperation:"+str(coordoperationid)+" rdf:type geosrs:CoordinateTransformationOperation . \n")
-			examples["geosrs:CoordinateTransformationOperation"]=websitensshort+"/co/"+str(coordoperationid)
+			examples["geosrs:CoordinateTransformationOperation"]=websitensshort+"/operation/"+str(coordoperationid)
 		elif curcrs.coordinate_operation.type_name=="Concatenated Operation":
 			ttl.add("geosrsoperation:"+str(coordoperationid)+" rdf:type geosrs:CoordinateConcatenatedOperation . \n")
-			examples["geosrs:CoordinateConcatenatedOperation"]=websitensshort+"/co/"+str(coordoperationid)
+			examples["geosrs:CoordinateConcatenatedOperation"]=websitensshort+"/operation/"+str(coordoperationid)
 		elif curcrs.coordinate_operation.type_name=="Other Coordinate Operation":
 			ttl.add("geosrsoperation:"+str(coordoperationid)+" rdf:type geosrs:OtherCoordinateOperation . \n")
-			examples["geosrs:OtherCoordinateOperation"]=websitensshort+"/co/"+str(coordoperationid)
+			examples["geosrs:OtherCoordinateOperation"]=websitensshort+"/operation/"+str(coordoperationid)
 		ttl.add("geosrsoperation:"+str(coordoperationid)+" rdfs:label \""+curcrs.coordinate_operation.name+": "+curcrs.coordinate_operation.method_name+"\"@en . \n")
 	if curcrs.datum!=None:
 		datumid=str(curcrs.datum.name.replace(" ","_").replace("(","_").replace(")","_").replace("/","_").replace("'","_").replace("+","_plus").replace("[","_").replace("]","_"))

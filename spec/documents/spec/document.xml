@@ -176,7 +176,7 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 </clause>
 </clause>
 
-<clause id="_e72d41d0-6a98-a63f-8b81-3b4496bb070e" obligation="normative">
+<clause id="_cb57807b-01ba-31b4-1f95-5f8adefdebcb" obligation="normative">
 <title id="_044942ca-9796-b4a6-70f4-4ab0218662d2">Core</title>
 <p id="_80d68486-bf75-c09f-fb55-52b4a4a52b90" anchor="core">This clause establishes the <strong>Core</strong> Requirements class, with IRI <tt>/req/core</tt>, which has a corresponding Conformance Class, <strong>Core</strong>, with IRI <tt>/conf/core</tt>.</p>
 
@@ -271,11 +271,11 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 </clause>
 </clause>
 
-<clause id="_4b851fec-aaf7-f018-4341-cf78f26cb84e" obligation="normative">
+<clause id="_c8eab947-da80-345c-c3bc-bd73e54df7d6" obligation="normative">
 <title id="_a8e93d19-cb1b-1bf1-156e-4c00beab7d3f">Coordinate Reference System Properties</title>
-<requirement id="_8ee87c59-9fd9-68bf-88da-4e16f1cd8bbf" model="ogc" anchor="/req/Coordinate_Reference_System_Properties">
+<requirement id="_158cc79d-68a2-a2ad-649c-231059be1a25" model="ogc" anchor="/req/Coordinate_Reference_System_Properties">
 <title>Coordinate Reference System Properties</title> 
-<identifier>/req/Coordinate_Reference_System_Properties</identifier><description><p id="_5ba89fff-f079-c4bc-6b6c-17a8601135c2">Implementations shall allow the RDFS classes <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>baseCRS</referenceFrom></locality></localityStack><display-text>geosrs:baseCRS</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>conversion</referenceFrom></locality></localityStack><display-text>geosrs:conversion</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>coordinateSystem</referenceFrom></locality></localityStack><display-text>geosrs:coordinateSystem</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>datum</referenceFrom></locality></localityStack><display-text>geosrs:datum</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>datumEnsemble</referenceFrom></locality></localityStack><display-text>geosrs:datumEnsemble</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>domainOfValidity</referenceFrom></locality></localityStack><display-text>geosrs:domainOfValidity</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>method</referenceFrom></locality></localityStack><display-text>geosrs:method</display-text></eref>, <eref bibitemid="Class_ geocrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>asProj4</referenceFrom></locality></localityStack><display-text>geocrs:asProj4</display-text></eref>, <eref bibitemid="Class_ geocrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>asProjJSON</referenceFrom></locality></localityStack><display-text>geocrs:asProjJSON</display-text></eref>, <eref bibitemid="Class_ geocrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>asWKT</referenceFrom></locality></localityStack><display-text>geocrs:asWKT</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>EPSGcode</referenceFrom></locality></localityStack><display-text>geosrs:EPSGcode</display-text></eref> to be used in SPARQL graph patterns.</p></description>
+<identifier>/req/Coordinate_Reference_System_Properties</identifier><description><p id="_327de46b-688a-20e7-a91f-30f5e47046a0">Implementations shall allow the RDFS properties <eref bibitemid="Property_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>baseCRS</referenceFrom></locality></localityStack><display-text>geosrs:baseCRS</display-text></eref>, <eref bibitemid="Property_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>conversion</referenceFrom></locality></localityStack><display-text>geosrs:conversion</display-text></eref>, <eref bibitemid="Property_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>coordinateSystem</referenceFrom></locality></localityStack><display-text>geosrs:coordinateSystem</display-text></eref>, <eref bibitemid="Property_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>datum</referenceFrom></locality></localityStack><display-text>geosrs:datum</display-text></eref>, <eref bibitemid="Property_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>datumEnsemble</referenceFrom></locality></localityStack><display-text>geosrs:datumEnsemble</display-text></eref>, <eref bibitemid="Property_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>domainOfValidity</referenceFrom></locality></localityStack><display-text>geosrs:domainOfValidity</display-text></eref>, <eref bibitemid="Property_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>method</referenceFrom></locality></localityStack><display-text>geosrs:method</display-text></eref>, <eref bibitemid="Property_ geocrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>asProj4</referenceFrom></locality></localityStack><display-text>geocrs:asProj4</display-text></eref>, <eref bibitemid="Property_ geocrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>asProjJSON</referenceFrom></locality></localityStack><display-text>geocrs:asProjJSON</display-text></eref>, <eref bibitemid="Property_ geocrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>asWKT</referenceFrom></locality></localityStack><display-text>geocrs:asWKT</display-text></eref>, <eref bibitemid="Property_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>EPSGcode</referenceFrom></locality></localityStack><display-text>geosrs:EPSGcode</display-text></eref> to be used in SPARQL graph patterns.</p></description>
 </requirement>
 
 <clause id="_86b92185-3fa7-a969-fec0-8d269797659a" obligation="normative">
@@ -754,7 +754,7 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 </clause>
 </clause>
 
-<clause id="_576b3343-a2f3-ea78-bb9e-210ebc78c0da" obligation="normative">
+<clause id="_42cdf134-6515-b384-81db-e6fc5546c85f" obligation="normative">
 <title id="_f871b3bf-7ed3-bb16-c69e-db6ff0d3ff2b">Coordinate Operation Module</title>
 <p id="_0cde27cf-175d-05fd-b275-730257335201" anchor="co">This clause establishes the <strong>Co</strong> Requirements class, with IRI <tt>/req/co</tt>, which has a corresponding Conformance Class, <strong>Co</strong>, with IRI <tt>/conf/co</tt>.</p>
 
@@ -994,11 +994,11 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 </clause>
 </clause>
 
-<clause id="_0fc6fe5a-3818-357c-4fd6-d35e7b04f241" obligation="normative">
+<clause id="_94425e1f-fe91-b3cc-4a24-4554faec19a8" obligation="normative">
 <title id="_14bf9c7b-7486-53e1-40f1-d4e72e0b2fdb">Coordinate Operation Properties</title>
-<requirement id="_02c932f0-7ce3-10d0-d0f0-0430e444cc0e" model="ogc" anchor="/req/Coordinate_Operation_Properties">
+<requirement id="_b601aea0-9726-525e-2b68-dedadfcfcea2" model="ogc" anchor="/req/Coordinate_Operation_Properties">
 <title>Coordinate Operation Properties</title> 
-<identifier>/req/Coordinate_Operation_Properties</identifier><description><p id="_7b0a405a-6f81-edbf-f76c-184ba11bff03">Implementations shall allow the RDFS classes <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>derivingConversion</referenceFrom></locality></localityStack><display-text>geosrs:derivingConversion</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>parameter</referenceFrom></locality></localityStack><display-text>geosrs:parameter</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>sourceCRS</referenceFrom></locality></localityStack><display-text>geosrs:sourceCRS</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>targetCRS</referenceFrom></locality></localityStack><display-text>geosrs:targetCRS</display-text></eref> to be used in SPARQL graph patterns.</p></description>
+<identifier>/req/Coordinate_Operation_Properties</identifier><description><p id="_593bea29-81bf-8ec3-f71f-00deb4544e8e">Implementations shall allow the RDFS properties <eref bibitemid="Property_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>derivingConversion</referenceFrom></locality></localityStack><display-text>geosrs:derivingConversion</display-text></eref>, <eref bibitemid="Property_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>parameter</referenceFrom></locality></localityStack><display-text>geosrs:parameter</display-text></eref>, <eref bibitemid="Property_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>sourceCRS</referenceFrom></locality></localityStack><display-text>geosrs:sourceCRS</display-text></eref>, <eref bibitemid="Property_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>targetCRS</referenceFrom></locality></localityStack><display-text>geosrs:targetCRS</display-text></eref> to be used in SPARQL graph patterns.</p></description>
 </requirement>
 
 <clause id="_8e796109-1e3f-4b87-4436-5ee88a5f4711" obligation="normative">
@@ -1544,7 +1544,7 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 </clause>
 </clause>
 
-<clause id="_46188cf5-1637-61c4-61f3-554346519c11" obligation="normative">
+<clause id="_9d0d587e-0cdc-c36e-16e7-6bcf063d7e27" obligation="normative">
 <title id="_4ab3059e-d1fe-d0e6-e6e0-fef2aded1f5e">Datum Module</title>
 <p id="_6ee5f6b9-ecce-9491-cb59-687aeb3ad204" anchor="datum">This clause establishes the <strong>Datum</strong> Requirements class, with IRI <tt>/req/datum</tt>, which has a corresponding Conformance Class, <strong>Datum</strong>, with IRI <tt>/conf/datum</tt>.</p>
 
@@ -1589,11 +1589,11 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 </clause>
 </clause>
 
-<clause id="_29dfbe25-d6a2-13cd-d360-6445a47adc4a" obligation="normative">
+<clause id="_c50ea7fd-67ed-392f-c9e8-b41b16d72e5e" obligation="normative">
 <title id="_4883375b-3cb9-6a79-ae0c-f9ea8beb7a1c">Datum Properties</title>
-<requirement id="_a459fecc-1088-fba9-1346-76cf1debd0a8" model="ogc" anchor="/req/Datum_Properties">
+<requirement id="_4abdc836-624f-8112-6df6-9e9c11d04a3d" model="ogc" anchor="/req/Datum_Properties">
 <title>Datum Properties</title> 
-<identifier>/req/Datum_Properties</identifier><description><p id="_99254f58-9fe5-1498-66e4-e40ede3a2b94">Implementations shall allow the RDFS classes <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>datumDefiningParameter</referenceFrom></locality></localityStack><display-text>geosrs:datumDefiningParameter</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>ellipsoid</referenceFrom></locality></localityStack><display-text>geosrs:ellipsoid</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>primeMeridian</referenceFrom></locality></localityStack><display-text>geosrs:primeMeridian</display-text></eref> to be used in SPARQL graph patterns.</p></description>
+<identifier>/req/Datum_Properties</identifier><description><p id="_e2a08bcf-807d-b5d5-196e-7745c41e8ee7">Implementations shall allow the RDFS properties <eref bibitemid="Property_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>datumDefiningParameter</referenceFrom></locality></localityStack><display-text>geosrs:datumDefiningParameter</display-text></eref>, <eref bibitemid="Property_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>ellipsoid</referenceFrom></locality></localityStack><display-text>geosrs:ellipsoid</display-text></eref>, <eref bibitemid="Property_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>primeMeridian</referenceFrom></locality></localityStack><display-text>geosrs:primeMeridian</display-text></eref> to be used in SPARQL graph patterns.</p></description>
 </requirement>
 
 <clause id="_d60f9851-10ec-04b8-9787-10d6c7344bd1" obligation="normative">
@@ -1741,11 +1741,11 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 </clause>
 </clause>
 
-<clause id="_057099e5-fe91-766c-4e6e-c41262a1f308" obligation="normative">
+<clause id="_a3ab8e2e-b463-b2fb-fafc-5a66a1fd4341" obligation="normative">
 <title id="_bf93b7db-acea-66ad-b6ed-943ac7afc963">Spheroid Properties</title>
-<requirement id="_d1f769f5-13a3-4984-7ff7-ad7862ef1858" model="ogc" anchor="/req/Spheroid_Properties">
+<requirement id="_67d53e2f-0f5a-5691-089b-58bf32e40f00" model="ogc" anchor="/req/Spheroid_Properties">
 <title>Spheroid Properties</title> 
-<identifier>/req/Spheroid_Properties</identifier><description><p id="_70fbd053-6f69-e331-aac6-c5f46d0d9bcc">Implementations shall allow the RDFS classes <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>eccentricity</referenceFrom></locality></localityStack><display-text>geosrs:eccentricity</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>inverseFlattening</referenceFrom></locality></localityStack><display-text>geosrs:inverseFlattening</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>isSphere</referenceFrom></locality></localityStack><display-text>geosrs:isSphere</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>semiMajorAxis</referenceFrom></locality></localityStack><display-text>geosrs:semiMajorAxis</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>semiMinorAxis</referenceFrom></locality></localityStack><display-text>geosrs:semiMinorAxis</display-text></eref> to be used in SPARQL graph patterns.</p></description>
+<identifier>/req/Spheroid_Properties</identifier><description><p id="_75a0ae12-aaba-28a9-7afd-48796e61fe51">Implementations shall allow the RDFS properties <eref bibitemid="Property_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>eccentricity</referenceFrom></locality></localityStack><display-text>geosrs:eccentricity</display-text></eref>, <eref bibitemid="Property_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>inverseFlattening</referenceFrom></locality></localityStack><display-text>geosrs:inverseFlattening</display-text></eref>, <eref bibitemid="Property_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>isSphere</referenceFrom></locality></localityStack><display-text>geosrs:isSphere</display-text></eref>, <eref bibitemid="Property_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>semiMajorAxis</referenceFrom></locality></localityStack><display-text>geosrs:semiMajorAxis</display-text></eref>, <eref bibitemid="Property_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>semiMinorAxis</referenceFrom></locality></localityStack><display-text>geosrs:semiMinorAxis</display-text></eref> to be used in SPARQL graph patterns.</p></description>
 </requirement>
 
 <clause id="_2545c29c-91e0-0602-8c4d-e0b838d230ec" obligation="normative">
@@ -5373,6 +5373,12 @@ Performance Distributed Computing, pp. 181–184. IEEE Press, New York (2001)</f
 </bibitem>
 <bibitem anchor="Class_ geocrs" id="_8f1b8834-879a-a595-c405-840ad10e6897" type="internal">
 <docidentifier type="repository">Class/ geocrs</docidentifier>
+</bibitem>
+</references><references hidden="true" normative="false"><bibitem anchor="Property_ geosrs" id="_ef2fa4f4-87c6-6c3f-1752-0c9c7e015223" type="internal">
+<docidentifier type="repository">Property/ geosrs</docidentifier>
+</bibitem>
+<bibitem anchor="Property_ geocrs" id="_8c8050bb-15cf-bf3f-31a1-b7e9ccd417ac" type="internal">
+<docidentifier type="repository">Property/ geocrs</docidentifier>
 </bibitem>
 </references></bibliography>
 </metanorma>

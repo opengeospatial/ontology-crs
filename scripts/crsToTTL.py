@@ -250,9 +250,11 @@ def crsToTTL(ttl,curcrs,x,geodcounter,crsclass):
 			examples["geosrs:Spheroid"]=websitensshort+"/geod/"+str(spheroidid)
 		elif curcrs.datum.ellipsoid!=None:	
 			ttl.add("geosrsdatum:"+str(datumid)+" geosrs:ellipse \""+curcrs.datum.ellipsoid.name+"\" . \n")
+			examples["geosrs:ellipsoid"]=websitensshort+"/datum/"+str(datumid)
 		if curcrs.prime_meridian!=None:
 			meridianid=str(curcrs.prime_meridian.name.replace(" ",""))
 			ttl.add("geosrsdatum:"+str(datumid)+" geosrs:primeMeridian geosrsmeridian:"+meridianid+" . \n")
+			examples["geosrs:primeMeridian"]=websitensshort+"/datum/"+str(datumid)
 			ttl.add("geosrsmeridian:"+meridianid+" rdf:type geosrs:PrimeMeridian . \n")
 			ttl.add("geosrsmeridian:"+meridianid+" rdfs:label \""+curcrs.prime_meridian.name+"\"@en . \n")
 			ttl.add("geosrsmeridian:"+meridianid+" geosrs:longitude \""+str(curcrs.prime_meridian.longitude)+"\"^^xsd:double . \n")

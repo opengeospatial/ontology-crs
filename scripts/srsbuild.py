@@ -446,9 +446,9 @@ for file in os.listdir(directory):
                             if "Definition" in row and row["Definition"]!="":
                                 gcore.add((URIRef(row["Concept"].replace(coreprefix+":",geocrsNS)),SKOS.definition,Literal(row["Definition"],lang="en")))
                             if "Requirement" in row and row["Requirement"]!="":
-                                if row["Requirement"] not in moduleToRequirements[prefixToModule[nsprefix]]:
-                                    moduleToRequirements[prefixToModule[nsprefix]][row["Requirement"]]=[]
-                                moduleToRequirements[prefixToModule[nsprefix]][row["Requirement"]].append(row["Concept"])
+                                if row["Requirement"] not in moduleToRequirements[prefixToModule["instances"]]:
+                                    moduleToRequirements[prefixToModule["instances"]][row["Requirement"]]=[]
+                                moduleToRequirements[prefixToModule["instances"]][row["Requirement"]].append(row["Concept"])
                             if row["Concept"] in examples:
                                     adocdef+="|Example\n|"+examples[row["Concept"]]+"["+row["Concept"]+",window=_blank]\n\n"
                             if "PROJJSON" in row and row["PROJJSON"]!="":
@@ -480,9 +480,9 @@ for file in os.listdir(directory):
                                 if "Definition" in row and row["Definition"]!="":
                                     exont[row["Module"].lower()].add((URIRef(row["Concept"].replace(coreprefix+":",curns+str(row["Module"]).lower()+"/")),SKOS.definition,Literal(row["Definition"],lang="en")))
                                 if "Requirement" in row and row["Requirement"]!="":
-                                    if row["Requirement"] not in moduleToRequirements[prefixToModule[nsprefix]]:
-                                        moduleToRequirements[prefixToModule[nsprefix]][row["Requirement"]]=[]
-                                    moduleToRequirements[prefixToModule[nsprefix]][row["Requirement"]].append(row["Concept"])
+                                    if row["Requirement"] not in moduleToRequirements[prefixToModule["instances"]]:
+                                        moduleToRequirements[prefixToModule["instances"]][row["Requirement"]]=[]
+                                    moduleToRequirements[prefixToModule["instances"]][row["Requirement"]].append(row["Concept"])
                                 if row["Concept"] in examples:
                                     adocdef+="|Example\n|"+examples[row["Concept"]]+"["+row["Concept"]+",window=_blank]\n\n"
                                 if "PROJJSON" in row and row["PROJJSON"]!="":

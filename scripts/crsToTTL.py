@@ -12,6 +12,7 @@ from shapely.geometry import box
 examples={}
 examplefile=open("examples.json","w")
 websitens="https://opengeospatial.github.io/ontology-crs/data/def/crs/EPSG/0/"
+websitensshort="https://opengeospatial.github.io/ontology-crs/data/def/crs/"
 
 def crsToTTL(ttl,curcrs,x,geodcounter,crsclass):
 	epsgcode=str(x)
@@ -178,29 +179,38 @@ def crsToTTL(ttl,curcrs,x,geodcounter,crsclass):
 				for prj in projections:
 					if prj in proj4string:
 						ttl.add("geosrsoperation:"+str(coordoperationid)+" rdf:type "+projections[prj]+" . \n")
+						examples[projections[prj]]="https://w3id.org/geosrs/co/"+str(projections[prj]).replace("geosrs:","")
 						found=True
 						break
 			if not found:
 				ttl.add("geosrsoperation:"+str(coordoperationid)+" rdf:type geosrs:CoordinateConversionOperation . \n")
+				examples["geosrs:CoordinateConversionOperation"]=websitensshort+"/co/"+str(coordoperationid)
 		elif curcrs.coordinate_operation.type_name=="Transformation":
 			ttl.add("geosrsoperation:"+str(coordoperationid)+" rdf:type geosrs:CoordinateTransformationOperation . \n")
+			examples["geosrs:CoordinateTransformationOperation"]=websitensshort+"/co/"+str(coordoperationid)
 		elif curcrs.coordinate_operation.type_name=="Concatenated Operation":
 			ttl.add("geosrsoperation:"+str(coordoperationid)+" rdf:type geosrs:CoordinateConcatenatedOperation . \n")
+			examples["geosrs:CoordinateConcatenatedOperation"]=websitensshort+"/co/"+str(coordoperationid)
 		elif curcrs.coordinate_operation.type_name=="Other Coordinate Operation":
 			ttl.add("geosrsoperation:"+str(coordoperationid)+" rdf:type geosrs:OtherCoordinateOperation . \n")
+			examples["geosrs:OtherCoordinateOperation"]=websitensshort+"/co/"+str(coordoperationid)
 		ttl.add("geosrsoperation:"+str(coordoperationid)+" rdfs:label \""+curcrs.coordinate_operation.name+": "+curcrs.coordinate_operation.method_name+"\"@en . \n")
 	if curcrs.datum!=None:
 		datumid=str(curcrs.datum.name.replace(" ","_").replace("(","_").replace(")","_").replace("/","_").replace("'","_").replace("+","_plus").replace("[","_").replace("]","_"))
 		ttl.add("geoepsg:"+epsgcode+" geosrs:datum geosrsdatum:"+str(datumid)+" . \n")
 		if "Geodetic Reference Frame" in curcrs.datum.type_name:
 			ttl.add("geosrsdatum:"+str(datumid)+" rdf:type geosrs:GeodeticReferenceFrame . \n")
+			examples["geosrs:GeodeticReferenceFrame"]=websitensshort+"/datum/"+str(datumid)
 		elif "Dynamic Vertical Reference Frame" in curcrs.datum.type_name:
 			ttl.add("geosrsdatum:"+str(datumid)+" rdf:type geosrs:DynamicVerticalReferenceFrame . \n")
+			examples["geosrs:DynamicVerticalReferenceFrame"]=websitensshort+"/datum/"+str(datumid)
 		elif "Vertical Reference Frame" in curcrs.datum.type_name:
 			ttl.add("geosrsdatum:"+str(datumid)+" rdf:type geosrs:VerticalReferenceFrame . \n")
+			examples["geosrs:VerticalReferenceFrame"]=websitensshort+"/datum/"+str(datumid)
 		else:
 			#print(curcrs.datum.type_name)
 			ttl.add("geosrsdatum:"+str(datumid)+" rdf:type geosrs:Datum . \n")
+			examples["geosrs:Datum"]=websitensshort+"/datum/"+str(datumid)
 		ttl.add("geosrsdatum:"+str(datumid)+" rdfs:label \"Datum: "+curcrs.datum.name+"\"@en . \n")
 		if curcrs.datum.remarks!=None:
 			ttl.add("geosrsdatum:"+str(datumid)+" rdfs:comment \""+str(curcrs.datum.remarks)+"\"@en . \n")
@@ -395,7 +405,7 @@ ttlhead+="@prefix prov: <http://www.w3.org/ns/prov-o/> .\n"
 ttlhead+="@prefix geoepsg: <http://www.opengis.net/def/crs/EPSG/0/> .\n"
 ttlhead+="@prefix geo: <http://www.opengis.net/ont/geosparql#> .\n"
 ttlhead+="@prefix geosrs: <https://w3id.org/geosrs/> .\n"
-ttlhead+="@prefix geosrsdatum: <https://w3id.org/geosrs/datum/> .\n"
+ttlhead+="@prefix geosrsdatum: <http://www.opengis.net/ont/crs/datum/> .\n"
 ttlhead+="@prefix geosrsisbody: <http://www.opengis.net/ont/crs/isbody/> .\n"
 ttlhead+="@prefix geosrsgrid: <http://www.opengis.net/ont/crs/grid/> .\n"
 ttlhead+="@prefix geosrsproj: <http://www.opengis.net/ont/crs/proj/> .\n"
@@ -403,7 +413,7 @@ ttlhead+="@prefix geosrsaxis: <http://www.opengis.net/ont/crs/cs/axis/> .\n"
 ttlhead+="@prefix geosrsgeod: <http://www.opengis.net/ont/crs/geod/> .\n"
 ttlhead+="@prefix geosrsaou: <http://www.opengis.net/ont/crs/areaofuse/> .\n"
 ttlhead+="@prefix geosrsmeridian: <http://www.opengis.net/ont/crs/primeMeridian/> .\n"
-ttlhead+="@prefix geosrsoperation: <https://w3id.org/geosrs/operation/> .\n"
+ttlhead+="@prefix geosrsoperation: <http://www.opengis.net/ont/crs/operation/> .\n"
 ttlhead+="@prefix geocs: <https://w3id.org/geosrs/cs/> .\n"
 ttlhead+="@prefix dc: <http://purl.org/dc/elements/1.1/> .\n"
 ttlhead+="@prefix wd: <http://www.wikidata.org/entity/> .\n"

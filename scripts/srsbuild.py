@@ -432,6 +432,8 @@ for file in os.listdir(directory):
                 if "Concept" in row and row["Concept"]!="":
                     if "Module" in row:
                         if row["Module"]=="Core Ontology":
+                            adocdef="===== Instance: "+str(row["Concept"])+"\n\n."+str(row["Concept"])+"\n[cols=\"1,1\"]\n|===\n"
+                            adocdef+="|URI\n|"+str(row["Concept"].replace(coreprefix+":",curns))+"\n\n"
                             core=True
                             prefixtoproperties["geosrs"].append(row["Concept"].replace(coreprefix+":",geocrsNS).replace("geoprojection:",""))
                             if "Type" in row and row["Type"]!="":
@@ -443,6 +445,12 @@ for file in os.listdir(directory):
                                 gcore.add((URIRef(row["Concept"].replace(coreprefix+":",geocrsNS)),RDFS.label,Literal(row["Label"],lang="en")))
                             if "Definition" in row and row["Definition"]!="":
                                 gcore.add((URIRef(row["Concept"].replace(coreprefix+":",geocrsNS)),SKOS.definition,Literal(row["Definition"],lang="en")))
+                            if "Requirement" in row and row["Requirement"]!="":
+                                if row["Requirement"] not in moduleToRequirements[prefixToModule[nsprefix]]:
+                                    moduleToRequirements[prefixToModule[nsprefix]][row["Requirement"]]=[]
+                                moduleToRequirements[prefixToModule[nsprefix]][row["Requirement"]].append(row["Concept"])
+                            if row["Concept"] in examples:
+                                    adocdef+="|Example\n|"+examples[row["Concept"]]+"["+row["Concept"]+",window=_blank]\n\n"
                             if "PROJJSON" in row and row["PROJJSON"]!="":
                                 if " " in row["PROJJSON"].strip():
                                     for spl in row["PROJJSON"].strip().split(" "):
@@ -455,7 +463,10 @@ for file in os.listdir(directory):
                                         ldcontext["@context"][spl]=row["Concept"].replace("geosrs:", getPrefixForClass(row["Concept"],classToPrefix)+":")
                                 else:
                                     ldcontext["@context"][row["OGCJSON"]]=row["Concept"].replace("geosrs:", getPrefixForClass(row["Concept"],classToPrefix)+":")
+                            moduleToAdoc["13-instances.adoc"][row["Concept"].replace(coreprefix+":","")]=adocdef+"|===\n\n"
                         else:
+                            adocdef="===== Instance: "+str(row["Concept"])+"\n\n."+str(row["Concept"])+"\n[cols=\"1,1\"]\n|===\n"
+                            adocdef+="|URI\n|"+str(row["Concept"].replace(coreprefix+":",curns))+"\n\n"
                             if row["Module"].lower() in exont:
                                 if row["Module"]!="":
                                     prefixtoproperties[row["Module"]].append(row["Concept"].replace(coreprefix+":",curns+str(row["Module"]).lower()+"/").replace("geosrs:","").replace("geoprojection:",""))
@@ -468,6 +479,12 @@ for file in os.listdir(directory):
                                     exont[row["Module"].lower()].add((URIRef(row["Concept"].replace(coreprefix+":",curns+str(row["Module"]).lower()+"/")),RDFS.label,Literal(row["Label"],lang="en")))
                                 if "Definition" in row and row["Definition"]!="":
                                     exont[row["Module"].lower()].add((URIRef(row["Concept"].replace(coreprefix+":",curns+str(row["Module"]).lower()+"/")),SKOS.definition,Literal(row["Definition"],lang="en")))
+                                if "Requirement" in row and row["Requirement"]!="":
+                                    if row["Requirement"] not in moduleToRequirements[prefixToModule[nsprefix]]:
+                                        moduleToRequirements[prefixToModule[nsprefix]][row["Requirement"]]=[]
+                                    moduleToRequirements[prefixToModule[nsprefix]][row["Requirement"]].append(row["Concept"])
+                                if row["Concept"] in examples:
+                                    adocdef+="|Example\n|"+examples[row["Concept"]]+"["+row["Concept"]+",window=_blank]\n\n"
                                 if "PROJJSON" in row and row["PROJJSON"]!="":
                                     if " " in row["PROJJSON"].strip():
                                         for spl in row["PROJJSON"].strip().split(" "):
@@ -480,6 +497,7 @@ for file in os.listdir(directory):
                                             ldcontext["@context"][spl]=row["Concept"].replace("geosrs:", getPrefixForClass(row["Concept"],classToPrefix)+":")
                                     else:
                                         ldcontext["@context"][row["OGCJSON"]]=row["Concept"].replace("geosrs:", getPrefixForClass(row["Concept"],classToPrefix)+":")
+                                moduleToAdoc["13-instances.adoc"][row["Concept"].replace(coreprefix+":","")]=adocdef+"|===\n\n"
             g.serialize(destination=filename.replace(".csv","")+".ttl") 
     else:
         continue

@@ -115,13 +115,13 @@ def crsToTTL(ttl,curcrs,x,geodcounter,crsclass):
 				ttl.add(geoid+" rdf:type geosrs:Ellipsoid . \n")
 				ttl.add(geoid+" rdfs:label \""+curcrs.datum.ellipsoid.name+"\"@en . \n")
 				ttl.add(geoid+" geosrs:approximates geosrsisbody:Earth . \n")
-				examples["geosrs:Ellipsoid"]=websitens+"/geod/"+geoid.replace("geosrs:","")
+				examples["geosrs:Ellipsoid"]=websitensshort+"/geod/"+geoid.replace("geosrs:","")
 			elif curcrs.get_geod().sphere:
 				geoid="geosrsgeod:"+str(curcrs.datum.ellipsoid.name).replace(" ","_").replace("(","_").replace(")","_")
 				ttl.add(geoid+" rdf:type geosrs:Sphere . \n")
 				ttl.add(geoid+" rdfs:label \""+curcrs.datum.ellipsoid.name+"\"@en . \n")
 				ttl.add(geoid+" geosrs:approximates geosrsisbody:Earth . \n")
-				examples["geosrs:Sphere"]=websitens+"/geod/"+geoid.replace("geosrs:","")
+				examples["geosrs:Sphere"]=websitensshort+"/geod/"+geoid.replace("geosrs:","")
 			else:
 				geoid="geosrsgeod:"+str(curcrs.datum.ellipsoid.name).replace(" ","_").replace("(","_").replace(")","_")
 				ttl.add(geoid+" rdf:type geosrs:Geoid . \n")
@@ -134,14 +134,14 @@ def crsToTTL(ttl,curcrs,x,geodcounter,crsclass):
 			ttl.add(geoid+" geosrs:approximates geosrsisbody:Earth . \n")
 		ttl.add(geoid+" skos:definition \""+str(curcrs.get_geod().initstring)+"\"^^xsd:string . \n")
 		ttl.add(geoid+" geosrs:eccentricity \""+str(curcrs.get_geod().es)+"\"^^xsd:double . \n")
-		examples["geosrs:eccentricity"]=websitens+"/geod/"+geoid	
+		examples["geosrs:eccentricity"]=websitensshort+"/geod/"+geoid	
 		ttl.add(geoid+" geosrs:isSphere \""+str(curcrs.get_geod().sphere)+"\"^^xsd:boolean . \n")
 		ttl.add(geoid+" geosrs:semiMajorAxis \""+str(curcrs.get_geod().a)+"\"^^xsd:string . \n")
-		examples["geosrs:semiMajorAxis"]=websitens+"/geod/"+geoid	
+		examples["geosrs:semiMajorAxis"]=websitensshort+"/geod/"+geoid	
 		ttl.add(geoid+" geosrs:semiMinorAxis \""+str(curcrs.get_geod().b)+"\"^^xsd:string . \n")
-		examples["geosrs:semiMinorAxis"]=websitens+"/geod/"+geoid	
+		examples["geosrs:semiMinorAxis"]=websitensshort+"/geod/"+geoid	
 		ttl.add(geoid+" geosrs:flatteningParameter \""+str(curcrs.get_geod().f)+"\"^^xsd:double . \n")
-		examples["geosrs:flatteningParameter"]=websitens+"/geod/"+geoid	
+		examples["geosrs:flatteningParameter"]=websitensshort+"/geod/"+geoid	
 		geodcounter+=1
 	if curcrs.coordinate_operation!=None:
 		coordoperationid=curcrs.coordinate_operation.name.replace(" ","_").replace("(","_").replace(")","_").replace("/","_").replace("'","_").replace(",","_").replace("&","and").strip()

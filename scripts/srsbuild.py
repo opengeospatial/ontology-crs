@@ -616,7 +616,7 @@ for ad in moduleToAdoc:
 					for cls in moduleToRequirements[ad][req]:
 						reqtext+="<<Property: "+str(cls)+",`"+str(cls)+"`>>, "
 						last=cls
-				elif "instance" ad:
+				elif "instance" in ad:
 					reqtext="Implementations shall allow the RDFS instances "
 					last=None
 					for cls in moduleToRequirements[ad][req]:

@@ -73,7 +73,7 @@ def crsToTTL(ttl,curcrs,x,geodcounter,crsclass):
 			ttl.add("geoepsg:"+epsgcode+"_cs geosrs:axis geosrsaxis:"+axisid+" . \n")
 			ttl.add("geosrsaxis:"+axisid+" rdf:type geosrs:CoordinateSystemAxis . \n")
 			ttl.add("geosrsaxis:"+axisid+" geosrs:direction geosrs:"+axis.direction+" . \n")
-			examples["geosrs:direction"]=websitens+"/cs/axis/"+str(axisid)
+			examples["geosrs:axisDirection"]=websitens+"/cs/axis/"+str(axis.direction)
 			ttl.add("geosrsaxis:"+axisid+" geosrs:abbreviation \""+str(axis.abbrev).replace("\"","'")+"\"^^xsd:string . \n")				
 			ttl.add("geosrsaxis:"+axisid+" geosrs:unit_conversion_factor \""+str(axis.unit_conversion_factor)+"\"^^xsd:double . \n")	
 			ttl.add("geosrsaxis:"+axisid+" geosrs:unit_auth_code \""+str(axis.unit_auth_code)+"\"^^xsd:string . \n")
@@ -85,9 +85,11 @@ def crsToTTL(ttl,curcrs,x,geodcounter,crsclass):
 			else:
 				ttl.add("geosrsaxis:"+axisid+" geosrs:unit \""+axis.unit_name+"\" . \n")
 				ttl.add("geosrsaxis:"+axisid+" rdfs:label \""+axis.name+" ("+str(axis.unit_name)+")\"@en . \n")	
+			examples["geosrs:CoordinateSystemAxis"]=websitensshort+"/cs/axis/"+str(axisid)
 		ttl.add("geoepsg:"+epsgcode+"_cs geosrs:asWKT \""+str(curcrs.coordinate_system.to_wkt()).replace("\"","'").replace("\n","")+"\" . \n")
 		ttl.add("geoepsg:"+epsgcode+"_cs geosrs:asProjJSON \""+str(curcrs.coordinate_system.to_json()).replace("\"","'").replace("\n","")+"\" . \n")
-		ttl.add("geoepsg:"+epsgcode+" geosrs:coordinateSystem geoepsg:"+epsgcode+"_cs . \n")		
+		ttl.add("geoepsg:"+epsgcode+" geosrs:coordinateSystem geoepsg:"+epsgcode+"_cs . \n")
+		examples["geosrs:coordinateSystem"]=websitens+"/"+epsgcode+"_cs	
 	elif curcrs.coordinate_system!=None:
 		ttl.add("geoepsg:"+epsgcode+" geosrs:coordinateSystem \""+str(curcrs.coordinate_system)+"\"^^xsd:string . \n")
 	if curcrs.source_crs!=None:

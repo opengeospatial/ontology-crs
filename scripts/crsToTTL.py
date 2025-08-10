@@ -231,7 +231,7 @@ def crsToTTL(ttl,curcrs,x,geodcounter,crsclass):
 			#print(str(curcrs.datum.scope))
 		if curcrs.datum.ellipsoid!=None and curcrs.datum.ellipsoid.name in spheroids:
 			spheroidid=spheroids[curcrs.datum.ellipsoid.name]
-			ttl.add("geosrsdatum:"+str(datumid)+" geosrs:ellipse "+spheroidid" . \n")
+			ttl.add("geosrsdatum:"+str(datumid)+" geosrs:ellipse "+spheroidid+" . \n")
 			ttl.add(spheroidid" rdfs:label \""+str(curcrs.datum.ellipsoid.name)+"\"@en . \n")
 			ttl.add(spheroidid" rdf:type geosrs:Ellipsoid .\n")	
 			ttl.add(spheroidid" geosrs:inverse_flattening \""+str(curcrs.datum.ellipsoid.inverse_flattening)+"\"^^xsd:double .\n")			

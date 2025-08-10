@@ -232,12 +232,12 @@ def crsToTTL(ttl,curcrs,x,geodcounter,crsclass):
 		if curcrs.datum.ellipsoid!=None and curcrs.datum.ellipsoid.name in spheroids:
 			spheroidid=spheroids[curcrs.datum.ellipsoid.name]
 			ttl.add("geosrsdatum:"+str(datumid)+" geosrs:ellipse "+spheroidid+" . \n")
-			ttl.add(spheroidid" rdfs:label \""+str(curcrs.datum.ellipsoid.name)+"\"@en . \n")
-			ttl.add(spheroidid" rdf:type geosrs:Ellipsoid .\n")	
-			ttl.add(spheroidid" geosrs:inverse_flattening \""+str(curcrs.datum.ellipsoid.inverse_flattening)+"\"^^xsd:double .\n")			
+			ttl.add(spheroidid+" rdfs:label \""+str(curcrs.datum.ellipsoid.name)+"\"@en . \n")
+			ttl.add(spheroidid+" rdf:type geosrs:Ellipsoid .\n")	
+			ttl.add(spheroidid+" geosrs:inverse_flattening \""+str(curcrs.datum.ellipsoid.inverse_flattening)+"\"^^xsd:double .\n")			
 			if curcrs.datum.ellipsoid.remarks!=None:
-				ttl.add(spheroidid" rdfs:comment \""+str(curcrs.datum.ellipsoid.remarks)+"\"^^xsd:string .\n")
-			ttl.add(spheroidid" geosrs:is_semi_minor_computed \""+str(curcrs.datum.ellipsoid.is_semi_minor_computed).lower()+"\"^^xsd:boolean .\n")
+				ttl.add(spheroidid+" rdfs:comment \""+str(curcrs.datum.ellipsoid.remarks)+"\"^^xsd:string .\n")
+			ttl.add(spheroidid+" geosrs:is_semi_minor_computed \""+str(curcrs.datum.ellipsoid.is_semi_minor_computed).lower()+"\"^^xsd:boolean .\n")
 			examples["geosrs:Spheroid"]=websitensshort+"/geod/"+str(spheroidid)
 		elif curcrs.datum.ellipsoid!=None:	
 			ttl.add("geosrsdatum:"+str(datumid)+" geosrs:ellipse \""+curcrs.datum.ellipsoid.name+"\" . \n")

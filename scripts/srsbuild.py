@@ -622,7 +622,7 @@ for ad in moduleToAdoc:
 					for cls in moduleToRequirements[ad][req]:
 						reqtext+="<<Instance: "+str(cls)+",`"+str(cls)+"`>>, "
 						last=cls
-                else:
+				else:
 					reqtext="Implementations shall allow the RDFS classes "
 					last=None
 					for cls in moduleToRequirements[ad][req]:

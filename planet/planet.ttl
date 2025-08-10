@@ -1,8 +1,42 @@
 @prefix geosrs: <https://w3id.org/geosrs/> .
+@prefix geosrs_planet: <https://w3id.org/geosrs/planet/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+geosrs_planet:ArtificialSatellite a owl:Class ;
+    rdfs:label "Artificial Satellite"@en .
+
+geosrs_planet:Asteroid a owl:Class ;
+    rdfs:label "Asteroid"@en .
+
+geosrs_planet:Comet a owl:Class ;
+    rdfs:label "Comet"@en .
+
+geosrs_planet:DwarfPlanet a owl:Class ;
+    rdfs:label "Dwarf Planet"@en .
+
+geosrs_planet:InterstellarBody a owl:Class ;
+    rdfs:label "Interstellar Body"@en .
+
+geosrs_planet:Moon a owl:Class ;
+    rdfs:label "Moon"@en .
+
+geosrs_planet:NaturalSatellite a owl:Class ;
+    rdfs:label "Natural Satellite"@en .
+
+geosrs_planet:Planet a owl:Class ;
+    rdfs:label "Planet"@en .
+
+geosrs_planet:PlanetStatus a owl:Class ;
+    rdfs:label "Planet Status"@en .
+
+geosrs_planet:Plutoid a owl:Class ;
+    rdfs:label "Plutoid"@en .
+
+geosrs_planet:Star a owl:Class ;
+    rdfs:label "Star"@en .
 
 geosrs:planetplanet a owl:Ontology ;
     rdfs:label "SRS Ontology: Geosrs_planet"@en ;

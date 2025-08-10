@@ -3175,6 +3175,365 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <p class="paragraph" id="srsapp">
 <p>This clause establishes the <strong>SRSAPP</strong> Requirements class, with IRI <code>/req/srsapp</code>, which has a corresponding Conformance Class, <strong>SRSAPP</strong>, with IRI <code>/conf/srsapp</code>.</p>
 </p>
+<aside class="example">
+<div class="title">Example 23. 10-srsapplication_extension.adoc Extension</div>
+<div class="content">
+<div class="dlist">
+<dl>
+<dt class="hdlist1">requirement</dt>
+<dd>
+<p>/req/SRS_Application_Types</p>
+</dd>
+<dt class="hdlist1">requirement</dt>
+<dd>
+<p>/req/Map_Types</p>
+</dd>
+</dl>
+</div>
+</div>
+</aside>
+<section class="sect3">
+<h4 id="_map_types">Map Types</h4>
+<aside class="example">
+<div class="title">Example 24. Map Types</div>
+<div class="content">
+<p class="paragraph">
+<p>Implementations shall allow the RDFS classes <a href="#_class_geosrscadastremap"><code>geosrs:CadastreMap</code></a>, <a href="#_class_geosrsnauticalchart"><code>geosrs:NauticalChart</code></a>, <a href="#_class_geosrsthematicmap"><code>geosrs:ThematicMap</code></a>, <a href="#_class_geosrstopographicmap"><code>geosrs:TopographicMap</code></a>, <a href="#_class_geosrsweathermap"><code>geosrs:WeatherMap</code></a> to be used in SPARQL graph patterns.</p>
+</p>
+</div>
+</aside>
+<section class="sect4">
+<h5 id="_class_geosrscadastremap">Class: geosrs:CadastreMap</h5>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Table 97. geosrs:CadastreMap</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/application/CadastreMap">https://w3id.org/geosrs/application/CadastreMap</a></p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Definition</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">A map displaying a cadastre.</p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/application/CadastreMap">CadastreMap</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sect4">
+<h5 id="_class_geosrsnauticalchart">Class: geosrs:NauticalChart</h5>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Table 98. geosrs:NauticalChart</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/application/NauticalChart">https://w3id.org/geosrs/application/NauticalChart</a></p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Definition</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">A graphic representation of a sea area and adjacent coastal regions.</p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/application/NauticalChart">NauticalChart</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sect4">
+<h5 id="_class_geosrsthematicmap">Class: geosrs:ThematicMap</h5>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Table 99. geosrs:ThematicMap</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/application/ThematicMap">https://w3id.org/geosrs/application/ThematicMap</a></p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Definition</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">A map used to highlight a specific phenomenon.</p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/application/ThematicMap">ThematicMap</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sect4">
+<h5 id="_class_geosrstopographicmap">Class: geosrs:TopographicMap</h5>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Table 100. geosrs:TopographicMap</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/application/TopographicMap">https://w3id.org/geosrs/application/TopographicMap</a></p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Definition</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">A type of map characterized by large-scale detail and quantitative representation of relief.</p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/application/TopographicMap">TopographicMap</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sect4">
+<h5 id="_class_geosrsweathermap">Class: geosrs:WeatherMap</h5>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Table 101. geosrs:WeatherMap</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/application/WeatherMap">https://w3id.org/geosrs/application/WeatherMap</a></p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Definition</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">A map for showing the local direction in which weather systems are moving.</p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/application/WeatherMap">WeatherMap</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section class="sect3">
+<h4 id="_srs_application_types">SRS Application Types</h4>
+<aside class="example">
+<div class="title">Example 25. SRS Application Types</div>
+<div class="content">
+<p class="paragraph">
+<p>Implementations shall allow the RDFS classes <a href="#_class_geosrssrsapplication"><code>geosrs:SRSApplication</code></a>, <a href="#_class_geosrsspatialreferencing"><code>geosrs:SpatialReferencing</code></a>, <a href="#_class_geosrsengineeringsurvey"><code>geosrs:EngineeringSurvey</code></a>, <a href="#_class_geosrssatellitesurvey"><code>geosrs:SatelliteSurvey</code></a>, <a href="#_class_geosrssatellitenavigation"><code>geosrs:SatelliteNavigation</code></a>, <a href="#_class_geosrscoastalhydrography"><code>geosrs:CoastalHydrography</code></a>, <a href="#_class_geosrsoffshoreengineering"><code>geosrs:OffshoreEngineering</code></a>, <a href="#_class_geosrshydrography"><code>geosrs:Hydrography</code></a>, <a href="#_class_geosrsdrilling"><code>geosrs:Drilling</code></a>, <a href="#_class_geosrsoilandgasexploration"><code>geosrs:OilAndGasExploration</code></a> to be used in SPARQL graph patterns.</p>
+</p>
+</div>
+</aside>
+<section class="sect4">
+<h5 id="_class_geosrssrsapplication">Class: geosrs:SRSApplication</h5>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Table 102. geosrs:SRSApplication</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/application/SRSApplication">https://w3id.org/geosrs/application/SRSApplication</a></p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Definition</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">An application for which a spatial reference system is used.</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sect4">
+<h5 id="_class_geosrsspatialreferencing">Class: geosrs:SpatialReferencing</h5>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Table 103. geosrs:SpatialReferencing</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/application/SpatialReferencing">https://w3id.org/geosrs/application/SpatialReferencing</a></p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/application/SpatialReferencing">SpatialReferencing</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sect4">
+<h5 id="_class_geosrsengineeringsurvey">Class: geosrs:EngineeringSurvey</h5>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Table 104. geosrs:EngineeringSurvey</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/application/EngineeringSurvey">https://w3id.org/geosrs/application/EngineeringSurvey</a></p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/application/EngineeringSurvey">EngineeringSurvey</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sect4">
+<h5 id="_class_geosrssatellitesurvey">Class: geosrs:SatelliteSurvey</h5>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Table 105. geosrs:SatelliteSurvey</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/application/SatelliteSurvey">https://w3id.org/geosrs/application/SatelliteSurvey</a></p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/application/SatelliteSurvey">SatelliteSurvey</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sect4">
+<h5 id="_class_geosrssatellitenavigation">Class: geosrs:SatelliteNavigation</h5>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Table 106. geosrs:SatelliteNavigation</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/application/SatelliteNavigation">https://w3id.org/geosrs/application/SatelliteNavigation</a></p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/application/SatelliteNavigation">SatelliteNavigation</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sect4">
+<h5 id="_class_geosrscoastalhydrography">Class: geosrs:CoastalHydrography</h5>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Table 107. geosrs:CoastalHydrography</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/application/CoastalHydrography">https://w3id.org/geosrs/application/CoastalHydrography</a></p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/application/CoastalHydrography">CoastalHydrography</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sect4">
+<h5 id="_class_geosrsoffshoreengineering">Class: geosrs:OffshoreEngineering</h5>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Table 108. geosrs:OffshoreEngineering</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/application/OffshoreEngineering">https://w3id.org/geosrs/application/OffshoreEngineering</a></p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/application/OffshoreEngineering">OffshoreEngineering</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sect4">
+<h5 id="_class_geosrshydrography">Class: geosrs:Hydrography</h5>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Table 109. geosrs:Hydrography</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/application/Hydrography">https://w3id.org/geosrs/application/Hydrography</a></p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/application/Hydrography">Hydrography</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sect4">
+<h5 id="_class_geosrsdrilling">Class: geosrs:Drilling</h5>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Table 110. geosrs:Drilling</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/application/Drilling">https://w3id.org/geosrs/application/Drilling</a></p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/application/Drilling">Drilling</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sect4">
+<h5 id="_class_geosrsoilandgasexploration">Class: geosrs:OilAndGasExploration</h5>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Table 111. geosrs:OilAndGasExploration</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/application/OilAndGasExploration">https://w3id.org/geosrs/application/OilAndGasExploration</a></p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/application/OilAndGasExploration">OilAndGasExploration</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
 </div>
 </section>
 <section class="sect1">
@@ -3184,7 +3543,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <p>This clause establishes the <strong>PROJ</strong> Requirements class, with IRI <code>/req/proj</code>, which has a corresponding Conformance Class, <strong>PROJ</strong>, with IRI <code>/conf/proj</code>.</p>
 </p>
 <aside class="example">
-<div class="title">Example 23. 11-projections_extension.adoc Extension</div>
+<div class="title">Example 26. 11-projections_extension.adoc Extension</div>
 <div class="content">
 <div class="dlist">
 <dl>
@@ -3263,7 +3622,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect3">
 <h4 id="_azimuthal_projections">Azimuthal Projections</h4>
 <aside class="example">
-<div class="title">Example 24. Azimuthal Projections</div>
+<div class="title">Example 27. Azimuthal Projections</div>
 <div class="content">
 <p class="paragraph">
 <p>Implementations shall allow the RDFS classes <a href="#_class_geosrsbreusinggeometricprojection"><code>geosrs:BreusingGeometricProjection</code></a>, <a href="#_class_geosrsbreusingharmonicprojection"><code>geosrs:BreusingHarmonicProjection</code></a>, <a href="#_class_geosrsginzburgiiprojection"><code>geosrs:GinzburgIIProjection</code></a>, <a href="#_class_geosrsginzburgiprojection"><code>geosrs:GinzburgIProjection</code></a>, <a href="#_class_geosrsgnomonicprojection"><code>geosrs:GnomonicProjection</code></a>, <a href="#_class_geosrsjamesazimuthalprojection"><code>geosrs:JamesAzimuthalProjection</code></a> to be used in SPARQL graph patterns.</p>
@@ -3273,7 +3632,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrsbreusinggeometricprojection">Class: geosrs:BreusingGeometricProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 97. geosrs:BreusingGeometricProjection</caption>
+<caption class="title">Table 112. geosrs:BreusingGeometricProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -3293,7 +3652,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrsbreusingharmonicprojection">Class: geosrs:BreusingHarmonicProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 98. geosrs:BreusingHarmonicProjection</caption>
+<caption class="title">Table 113. geosrs:BreusingHarmonicProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -3313,7 +3672,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrsginzburgiiprojection">Class: geosrs:GinzburgIIProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 99. geosrs:GinzburgIIProjection</caption>
+<caption class="title">Table 114. geosrs:GinzburgIIProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -3333,7 +3692,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrsginzburgiprojection">Class: geosrs:GinzburgIProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 100. geosrs:GinzburgIProjection</caption>
+<caption class="title">Table 115. geosrs:GinzburgIProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -3353,7 +3712,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrsgnomonicprojection">Class: geosrs:GnomonicProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 101. geosrs:GnomonicProjection</caption>
+<caption class="title">Table 116. geosrs:GnomonicProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -3373,7 +3732,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrsjamesazimuthalprojection">Class: geosrs:JamesAzimuthalProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 102. geosrs:JamesAzimuthalProjection</caption>
+<caption class="title">Table 117. geosrs:JamesAzimuthalProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -3394,7 +3753,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect3">
 <h4 id="_compromise_projections">Compromise Projections</h4>
 <aside class="example">
-<div class="title">Example 25. Compromise Projections</div>
+<div class="title">Example 28. Compromise Projections</div>
 <div class="content">
 <p class="paragraph">
 <p>Implementations shall allow the RDFS classes <a href="#_class_geosrsarmadilloprojection"><code>geosrs:ArmadilloProjection</code></a>, <a href="#_class_geosrsbakerdinomicprojection"><code>geosrs:BakerDinomicProjection</code></a>, <a href="#_class_geosrsbertinprojection"><code>geosrs:BertinProjection</code></a>, <a href="#_class_geosrschamberlintrimetricprojection"><code>geosrs:ChamberlinTrimetricProjection</code></a>, <a href="#_class_geosrsdenoyersemiellipticalprojection"><code>geosrs:DenoyerSemiEllipticalProjection</code></a>, <a href="#_class_geosrsfairgrieveprojection"><code>geosrs:FairgrieveProjection</code></a>, <a href="#_class_geosrslarriveeprojection"><code>geosrs:LarriveeProjection</code></a>, <a href="#_class_geosrspetermannstarprojection"><code>geosrs:PetermannStarProjection</code></a>, <a href="#_class_geosrsspilhausoceanicprojection"><code>geosrs:SpilhausOceanicProjection</code></a>, <a href="#_class_geosrsvandergrinteniiiprojection"><code>geosrs:VanDerGrintenIIIProjection</code></a>, <a href="#_class_geosrswinkeliiprojection"><code>geosrs:WinkelIIProjection</code></a>, <a href="#_class_geosrswinkeliprojection"><code>geosrs:WinkelIProjection</code></a>, <a href="#_class_geosrswinkelsnyderprojection"><code>geosrs:WinkelSnyderProjection</code></a> to be used in SPARQL graph patterns.</p>
@@ -3404,7 +3763,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrsarmadilloprojection">Class: geosrs:ArmadilloProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 103. geosrs:ArmadilloProjection</caption>
+<caption class="title">Table 118. geosrs:ArmadilloProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -3424,7 +3783,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrsbakerdinomicprojection">Class: geosrs:BakerDinomicProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 104. geosrs:BakerDinomicProjection</caption>
+<caption class="title">Table 119. geosrs:BakerDinomicProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -3444,7 +3803,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrsbertinprojection">Class: geosrs:BertinProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 105. geosrs:BertinProjection</caption>
+<caption class="title">Table 120. geosrs:BertinProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -3464,7 +3823,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrschamberlintrimetricprojection">Class: geosrs:ChamberlinTrimetricProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 106. geosrs:ChamberlinTrimetricProjection</caption>
+<caption class="title">Table 121. geosrs:ChamberlinTrimetricProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -3484,7 +3843,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrsdenoyersemiellipticalprojection">Class: geosrs:DenoyerSemiEllipticalProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 107. geosrs:DenoyerSemiEllipticalProjection</caption>
+<caption class="title">Table 122. geosrs:DenoyerSemiEllipticalProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -3504,7 +3863,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrsfairgrieveprojection">Class: geosrs:FairgrieveProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 108. geosrs:FairgrieveProjection</caption>
+<caption class="title">Table 123. geosrs:FairgrieveProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -3524,7 +3883,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrslarriveeprojection">Class: geosrs:LarriveeProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 109. geosrs:LarriveeProjection</caption>
+<caption class="title">Table 124. geosrs:LarriveeProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -3544,7 +3903,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrspetermannstarprojection">Class: geosrs:PetermannStarProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 110. geosrs:PetermannStarProjection</caption>
+<caption class="title">Table 125. geosrs:PetermannStarProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -3564,7 +3923,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrsspilhausoceanicprojection">Class: geosrs:SpilhausOceanicProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 111. geosrs:SpilhausOceanicProjection</caption>
+<caption class="title">Table 126. geosrs:SpilhausOceanicProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -3584,7 +3943,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrsvandergrinteniiiprojection">Class: geosrs:VanDerGrintenIIIProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 112. geosrs:VanDerGrintenIIIProjection</caption>
+<caption class="title">Table 127. geosrs:VanDerGrintenIIIProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -3604,7 +3963,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrswinkeliiprojection">Class: geosrs:WinkelIIProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 113. geosrs:WinkelIIProjection</caption>
+<caption class="title">Table 128. geosrs:WinkelIIProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -3624,7 +3983,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrswinkeliprojection">Class: geosrs:WinkelIProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 114. geosrs:WinkelIProjection</caption>
+<caption class="title">Table 129. geosrs:WinkelIProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -3644,7 +4003,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrswinkelsnyderprojection">Class: geosrs:WinkelSnyderProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 115. geosrs:WinkelSnyderProjection</caption>
+<caption class="title">Table 130. geosrs:WinkelSnyderProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -3665,7 +4024,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect3">
 <h4 id="_conformal_projections">Conformal Projections</h4>
 <aside class="example">
-<div class="title">Example 26. Conformal Projections</div>
+<div class="title">Example 29. Conformal Projections</div>
 <div class="content">
 <p class="paragraph">
 <p>Implementations shall allow the RDFS classes <a href="#_class_geosrsadamsprojection"><code>geosrs:AdamsProjection</code></a>, <a href="#_class_geosrsadamsworldinasquareiiprojection"><code>geosrs:AdamsWorldInASquareIIProjection</code></a>, <a href="#_class_geosrsadamsworldinasquareiprojection"><code>geosrs:AdamsWorldInASquareIProjection</code></a>, <a href="#_class_geosrsaugustepicycloidalprojection"><code>geosrs:AugustEpicycloidalProjection</code></a>, <a href="#_class_geosrscoxconformalprojection"><code>geosrs:CoxConformalProjection</code></a>, <a href="#_class_geosrseisenlohrprojection"><code>geosrs:EisenlohrProjection</code></a>, <a href="#_class_geosrsgs50projection"><code>geosrs:GS50Projection</code></a>, <a href="#_class_geosrspeircequincuncialprojection"><code>geosrs:PeirceQuincuncialProjection</code></a>, <a href="#_class_geosrsstereographicprojection"><code>geosrs:StereographicProjection</code></a> to be used in SPARQL graph patterns.</p>
@@ -3675,7 +4034,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrsadamsprojection">Class: geosrs:AdamsProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 116. geosrs:AdamsProjection</caption>
+<caption class="title">Table 131. geosrs:AdamsProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -3695,7 +4054,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrsadamsworldinasquareiiprojection">Class: geosrs:AdamsWorldInASquareIIProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 117. geosrs:AdamsWorldInASquareIIProjection</caption>
+<caption class="title">Table 132. geosrs:AdamsWorldInASquareIIProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -3715,7 +4074,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrsadamsworldinasquareiprojection">Class: geosrs:AdamsWorldInASquareIProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 118. geosrs:AdamsWorldInASquareIProjection</caption>
+<caption class="title">Table 133. geosrs:AdamsWorldInASquareIProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -3735,7 +4094,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrsaugustepicycloidalprojection">Class: geosrs:AugustEpicycloidalProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 119. geosrs:AugustEpicycloidalProjection</caption>
+<caption class="title">Table 134. geosrs:AugustEpicycloidalProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -3759,7 +4118,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrscoxconformalprojection">Class: geosrs:CoxConformalProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 120. geosrs:CoxConformalProjection</caption>
+<caption class="title">Table 135. geosrs:CoxConformalProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -3779,7 +4138,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrseisenlohrprojection">Class: geosrs:EisenlohrProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 121. geosrs:EisenlohrProjection</caption>
+<caption class="title">Table 136. geosrs:EisenlohrProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -3799,7 +4158,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrsgs50projection">Class: geosrs:GS50Projection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 122. geosrs:GS50Projection</caption>
+<caption class="title">Table 137. geosrs:GS50Projection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -3819,7 +4178,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrspeircequincuncialprojection">Class: geosrs:PeirceQuincuncialProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 123. geosrs:PeirceQuincuncialProjection</caption>
+<caption class="title">Table 138. geosrs:PeirceQuincuncialProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -3839,7 +4198,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrsstereographicprojection">Class: geosrs:StereographicProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 124. geosrs:StereographicProjection</caption>
+<caption class="title">Table 139. geosrs:StereographicProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -3860,7 +4219,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect3">
 <h4 id="_conical_projections">Conical Projections</h4>
 <aside class="example">
-<div class="title">Example 27. Conical Projections</div>
+<div class="title">Example 30. Conical Projections</div>
 <div class="content">
 <p class="paragraph">
 <p>Implementations shall allow the RDFS classes <a href="#_class_geosrsbipolarobliqueconicconformalprojection"><code>geosrs:BipolarObliqueConicConformalProjection</code></a>, <a href="#_class_geosrscentralconicprojection"><code>geosrs:CentralConicProjection</code></a>, <a href="#_class_geosrsherschelconformalconicprojection"><code>geosrs:HerschelConformalConicProjection</code></a>, <a href="#_class_geosrskrovak"><code>geosrs:Krovak</code></a>, <a href="#_class_geosrslambertconformalconicprojection"><code>geosrs:LambertConformalConicProjection</code></a>, <a href="#_class_geosrsmurdochiiiprojection"><code>geosrs:MurdochIIIProjection</code></a>, <a href="#_class_geosrsmurdochiiprojection"><code>geosrs:MurdochIIProjection</code></a>, <a href="#_class_geosrsmurdochiprojection"><code>geosrs:MurdochIProjection</code></a>, <a href="#_class_geosrsschjerningiprojection"><code>geosrs:SchjerningIProjection</code></a>, <a href="#_class_geosrsvitkovskyiprojection"><code>geosrs:VitkovskyIProjection</code></a> to be used in SPARQL graph patterns.</p>
@@ -3870,7 +4229,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrsbipolarobliqueconicconformalprojection">Class: geosrs:BipolarObliqueConicConformalProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 125. geosrs:BipolarObliqueConicConformalProjection</caption>
+<caption class="title">Table 140. geosrs:BipolarObliqueConicConformalProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -3890,7 +4249,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrscentralconicprojection">Class: geosrs:CentralConicProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 126. geosrs:CentralConicProjection</caption>
+<caption class="title">Table 141. geosrs:CentralConicProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -3910,7 +4269,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrsherschelconformalconicprojection">Class: geosrs:HerschelConformalConicProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 127. geosrs:HerschelConformalConicProjection</caption>
+<caption class="title">Table 142. geosrs:HerschelConformalConicProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -3930,7 +4289,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrskrovak">Class: geosrs:Krovak</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 128. geosrs:Krovak</caption>
+<caption class="title">Table 143. geosrs:Krovak</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -3950,7 +4309,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrslambertconformalconicprojection">Class: geosrs:LambertConformalConicProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 129. geosrs:LambertConformalConicProjection</caption>
+<caption class="title">Table 144. geosrs:LambertConformalConicProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -3970,7 +4329,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrsmurdochiiiprojection">Class: geosrs:MurdochIIIProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 130. geosrs:MurdochIIIProjection</caption>
+<caption class="title">Table 145. geosrs:MurdochIIIProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -3990,7 +4349,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrsmurdochiiprojection">Class: geosrs:MurdochIIProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 131. geosrs:MurdochIIProjection</caption>
+<caption class="title">Table 146. geosrs:MurdochIIProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -4010,7 +4369,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrsmurdochiprojection">Class: geosrs:MurdochIProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 132. geosrs:MurdochIProjection</caption>
+<caption class="title">Table 147. geosrs:MurdochIProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -4030,7 +4389,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrsschjerningiprojection">Class: geosrs:SchjerningIProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 133. geosrs:SchjerningIProjection</caption>
+<caption class="title">Table 148. geosrs:SchjerningIProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -4050,7 +4409,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrsvitkovskyiprojection">Class: geosrs:VitkovskyIProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 134. geosrs:VitkovskyIProjection</caption>
+<caption class="title">Table 149. geosrs:VitkovskyIProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -4071,7 +4430,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect3">
 <h4 id="_cylindrical_projections">Cylindrical Projections</h4>
 <aside class="example">
-<div class="title">Example 28. Cylindrical Projections</div>
+<div class="title">Example 31. Cylindrical Projections</div>
 <div class="content">
 <p class="paragraph">
 <p>Implementations shall allow the RDFS classes <a href="#_class_geosrsardencloseprojection"><code>geosrs:ArdenCloseProjection</code></a>, <a href="#_class_geosrsbraunperspectiveprojection"><code>geosrs:BraunPerspectiveProjection</code></a>, <a href="#_class_geosrscompactmillerprojection"><code>geosrs:CompactMillerProjection</code></a>, <a href="#_class_geosrscylindricalstereographicprojection"><code>geosrs:CylindricalStereographicProjection</code></a>, <a href="#_class_geosrskarchenkoshabanovaprojection"><code>geosrs:KarchenkoShabanovaProjection</code></a>, <a href="#_class_geosrslabordeprojection"><code>geosrs:LabordeProjection</code></a>, <a href="#_class_geosrsmercatorprojection"><code>geosrs:MercatorProjection</code></a>, <a href="#_class_geosrsmillerprojection"><code>geosrs:MillerProjection</code></a>, <a href="#_class_geosrspattersoncylindricalprojection"><code>geosrs:PattersonCylindricalProjection</code></a>, <a href="#_class_geosrspavlovprojection"><code>geosrs:PavlovProjection</code></a>, <a href="#_class_geosrstoblercylindricaliiprojection"><code>geosrs:ToblerCylindricalIIProjection</code></a>, <a href="#_class_geosrstoblercylindricaliprojection"><code>geosrs:ToblerCylindricalIProjection</code></a>, <a href="#_class_geosrsurmayeviiiprojection"><code>geosrs:UrmayevIIIProjection</code></a>, <a href="#_class_geosrswebmercatorprojection"><code>geosrs:WebMercatorProjection</code></a> to be used in SPARQL graph patterns.</p>
@@ -4081,7 +4440,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrsardencloseprojection">Class: geosrs:ArdenCloseProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 135. geosrs:ArdenCloseProjection</caption>
+<caption class="title">Table 150. geosrs:ArdenCloseProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -4101,7 +4460,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrsbraunperspectiveprojection">Class: geosrs:BraunPerspectiveProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 136. geosrs:BraunPerspectiveProjection</caption>
+<caption class="title">Table 151. geosrs:BraunPerspectiveProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -4121,7 +4480,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrscompactmillerprojection">Class: geosrs:CompactMillerProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 137. geosrs:CompactMillerProjection</caption>
+<caption class="title">Table 152. geosrs:CompactMillerProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -4141,7 +4500,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrscylindricalstereographicprojection">Class: geosrs:CylindricalStereographicProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 138. geosrs:CylindricalStereographicProjection</caption>
+<caption class="title">Table 153. geosrs:CylindricalStereographicProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -4161,7 +4520,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrskarchenkoshabanovaprojection">Class: geosrs:KarchenkoShabanovaProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 139. geosrs:KarchenkoShabanovaProjection</caption>
+<caption class="title">Table 154. geosrs:KarchenkoShabanovaProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -4181,7 +4540,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrslabordeprojection">Class: geosrs:LabordeProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 140. geosrs:LabordeProjection</caption>
+<caption class="title">Table 155. geosrs:LabordeProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -4201,7 +4560,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrsmercatorprojection">Class: geosrs:MercatorProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 141. geosrs:MercatorProjection</caption>
+<caption class="title">Table 156. geosrs:MercatorProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -4221,7 +4580,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrsmillerprojection">Class: geosrs:MillerProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 142. geosrs:MillerProjection</caption>
+<caption class="title">Table 157. geosrs:MillerProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -4241,7 +4600,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrspattersoncylindricalprojection">Class: geosrs:PattersonCylindricalProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 143. geosrs:PattersonCylindricalProjection</caption>
+<caption class="title">Table 158. geosrs:PattersonCylindricalProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -4261,7 +4620,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrspavlovprojection">Class: geosrs:PavlovProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 144. geosrs:PavlovProjection</caption>
+<caption class="title">Table 159. geosrs:PavlovProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -4281,7 +4640,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrstoblercylindricaliiprojection">Class: geosrs:ToblerCylindricalIIProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 145. geosrs:ToblerCylindricalIIProjection</caption>
+<caption class="title">Table 160. geosrs:ToblerCylindricalIIProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -4301,7 +4660,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrstoblercylindricaliprojection">Class: geosrs:ToblerCylindricalIProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 146. geosrs:ToblerCylindricalIProjection</caption>
+<caption class="title">Table 161. geosrs:ToblerCylindricalIProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -4321,7 +4680,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrsurmayeviiiprojection">Class: geosrs:UrmayevIIIProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 147. geosrs:UrmayevIIIProjection</caption>
+<caption class="title">Table 162. geosrs:UrmayevIIIProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -4341,7 +4700,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrswebmercatorprojection">Class: geosrs:WebMercatorProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 148. geosrs:WebMercatorProjection</caption>
+<caption class="title">Table 163. geosrs:WebMercatorProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -4362,7 +4721,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect3">
 <h4 id="_equal_area_projections">Equal Area Projections</h4>
 <aside class="example">
-<div class="title">Example 29. Equal Area Projections</div>
+<div class="title">Example 32. Equal Area Projections</div>
 <div class="content">
 <p class="paragraph">
 <p>Implementations shall allow the RDFS classes <a href="#_class_geosrsalbersequalareaprojection"><code>geosrs:AlbersEqualAreaProjection</code></a>, <a href="#_class_geosrsazimuthalequalareaprojection"><code>geosrs:AzimuthalEqualAreaProjection</code></a>, <a href="#_class_geosrscylindricalequalarea"><code>geosrs:CylindricalEqualArea</code></a>, <a href="#_class_geosrsgallpetersprojection"><code>geosrs:GallPetersProjection</code></a>, <a href="#_class_geosrshobodyerprojection"><code>geosrs:HoboDyerProjection</code></a>, <a href="#_class_geosrslambertazimuthalequalarea"><code>geosrs:LambertAzimuthalEqualArea</code></a>, <a href="#_class_geosrstrystanedwardsprojection"><code>geosrs:TrystanEdwardsProjection</code></a>, <a href="#_class_geosrswiechelprojection"><code>geosrs:WiechelProjection</code></a> to be used in SPARQL graph patterns.</p>
@@ -4372,7 +4731,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrsalbersequalareaprojection">Class: geosrs:AlbersEqualAreaProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 149. geosrs:AlbersEqualAreaProjection</caption>
+<caption class="title">Table 164. geosrs:AlbersEqualAreaProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -4392,7 +4751,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrsazimuthalequalareaprojection">Class: geosrs:AzimuthalEqualAreaProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 150. geosrs:AzimuthalEqualAreaProjection</caption>
+<caption class="title">Table 165. geosrs:AzimuthalEqualAreaProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -4412,7 +4771,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrscylindricalequalarea">Class: geosrs:CylindricalEqualArea</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 151. geosrs:CylindricalEqualArea</caption>
+<caption class="title">Table 166. geosrs:CylindricalEqualArea</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -4432,7 +4791,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrsgallpetersprojection">Class: geosrs:GallPetersProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 152. geosrs:GallPetersProjection</caption>
+<caption class="title">Table 167. geosrs:GallPetersProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -4452,7 +4811,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrshobodyerprojection">Class: geosrs:HoboDyerProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 153. geosrs:HoboDyerProjection</caption>
+<caption class="title">Table 168. geosrs:HoboDyerProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -4472,7 +4831,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrslambertazimuthalequalarea">Class: geosrs:LambertAzimuthalEqualArea</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 154. geosrs:LambertAzimuthalEqualArea</caption>
+<caption class="title">Table 169. geosrs:LambertAzimuthalEqualArea</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -4492,7 +4851,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrstrystanedwardsprojection">Class: geosrs:TrystanEdwardsProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 155. geosrs:TrystanEdwardsProjection</caption>
+<caption class="title">Table 170. geosrs:TrystanEdwardsProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -4512,7 +4871,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrswiechelprojection">Class: geosrs:WiechelProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 156. geosrs:WiechelProjection</caption>
+<caption class="title">Table 171. geosrs:WiechelProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -4533,7 +4892,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect3">
 <h4 id="_equidistant_projections">Equidistant Projections</h4>
 <aside class="example">
-<div class="title">Example 30. Equidistant Projections</div>
+<div class="title">Example 33. Equidistant Projections</div>
 <div class="content">
 <p class="paragraph">
 <p>Implementations shall allow the RDFS classes <a href="#_class_geosrsazimuthalequidistantprojection"><code>geosrs:AzimuthalEquidistantProjection</code></a>, <a href="#_class_geosrsberghausstarprojection"><code>geosrs:BerghausStarProjection</code></a>, <a href="#_class_geosrscassiniprojection"><code>geosrs:CassiniProjection</code></a>, <a href="#_class_geosrsequidistantconicprojection"><code>geosrs:EquidistantConicProjection</code></a>, <a href="#_class_geosrsequidistantcylindricalprojection"><code>geosrs:EquidistantCylindricalProjection</code></a>, <a href="#_class_geosrsequirectangularprojection"><code>geosrs:EquirectangularProjection</code></a>, <a href="#_class_geosrsobliqueplatecarreeprojection"><code>geosrs:ObliquePlateCarreeProjection</code></a>, <a href="#_class_geosrsplatecarreeprojection"><code>geosrs:PlateCarreeProjection</code></a>, <a href="#_class_geosrstwopointequidistantprojection"><code>geosrs:TwoPointEquidistantProjection</code></a> to be used in SPARQL graph patterns.</p>
@@ -4543,7 +4902,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrsazimuthalequidistantprojection">Class: geosrs:AzimuthalEquidistantProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 157. geosrs:AzimuthalEquidistantProjection</caption>
+<caption class="title">Table 172. geosrs:AzimuthalEquidistantProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -4563,7 +4922,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrsberghausstarprojection">Class: geosrs:BerghausStarProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 158. geosrs:BerghausStarProjection</caption>
+<caption class="title">Table 173. geosrs:BerghausStarProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -4583,7 +4942,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrscassiniprojection">Class: geosrs:CassiniProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 159. geosrs:CassiniProjection</caption>
+<caption class="title">Table 174. geosrs:CassiniProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -4607,7 +4966,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrsequidistantconicprojection">Class: geosrs:EquidistantConicProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 160. geosrs:EquidistantConicProjection</caption>
+<caption class="title">Table 175. geosrs:EquidistantConicProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -4627,7 +4986,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrsequidistantcylindricalprojection">Class: geosrs:EquidistantCylindricalProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 161. geosrs:EquidistantCylindricalProjection</caption>
+<caption class="title">Table 176. geosrs:EquidistantCylindricalProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -4647,7 +5006,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrsequirectangularprojection">Class: geosrs:EquirectangularProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 162. geosrs:EquirectangularProjection</caption>
+<caption class="title">Table 177. geosrs:EquirectangularProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -4667,7 +5026,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrsobliqueplatecarreeprojection">Class: geosrs:ObliquePlateCarreeProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 163. geosrs:ObliquePlateCarreeProjection</caption>
+<caption class="title">Table 178. geosrs:ObliquePlateCarreeProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -4687,7 +5046,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrsplatecarreeprojection">Class: geosrs:PlateCarreeProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 164. geosrs:PlateCarreeProjection</caption>
+<caption class="title">Table 179. geosrs:PlateCarreeProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -4707,7 +5066,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrstwopointequidistantprojection">Class: geosrs:TwoPointEquidistantProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 165. geosrs:TwoPointEquidistantProjection</caption>
+<caption class="title">Table 180. geosrs:TwoPointEquidistantProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -4728,7 +5087,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect3">
 <h4 id="_globular_projections">Globular Projections</h4>
 <aside class="example">
-<div class="title">Example 31. Globular Projections</div>
+<div class="title">Example 34. Globular Projections</div>
 <div class="content">
 <p class="paragraph">
 <p>Implementations shall allow the RDFS classes <a href="#_class_geosrsapianglobulariprojection"><code>geosrs:ApianGlobularIProjection</code></a>, <a href="#_class_geosrsbaconglobularprojection"><code>geosrs:BaconGlobularProjection</code></a>, <a href="#_class_geosrsfournierglobulariprojection"><code>geosrs:FournierGlobularIProjection</code></a> to be used in SPARQL graph patterns.</p>
@@ -4738,7 +5097,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrsapianglobulariprojection">Class: geosrs:ApianGlobularIProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 166. geosrs:ApianGlobularIProjection</caption>
+<caption class="title">Table 181. geosrs:ApianGlobularIProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -4758,7 +5117,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrsbaconglobularprojection">Class: geosrs:BaconGlobularProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 167. geosrs:BaconGlobularProjection</caption>
+<caption class="title">Table 182. geosrs:BaconGlobularProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -4778,7 +5137,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrsfournierglobulariprojection">Class: geosrs:FournierGlobularIProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 168. geosrs:FournierGlobularIProjection</caption>
+<caption class="title">Table 183. geosrs:FournierGlobularIProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -4799,7 +5158,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect3">
 <h4 id="_lenticular_projections">Lenticular Projections</h4>
 <aside class="example">
-<div class="title">Example 32. Lenticular Projections</div>
+<div class="title">Example 35. Lenticular Projections</div>
 <div class="content">
 <p class="paragraph">
 <p>Implementations shall allow the RDFS classes <a href="#_class_geosrsa4projection"><code>geosrs:A4Projection</code></a>, <a href="#_class_geosrsbriesemeisterprojection"><code>geosrs:BriesemeisterProjection</code></a>, <a href="#_class_geosrsciriciprojection"><code>geosrs:CiricIProjection</code></a>, <a href="#_class_geosrscupolaprojection"><code>geosrs:CupolaProjection</code></a>, <a href="#_class_geosrsdedistortprojection"><code>geosrs:DedistortProjection</code></a>, <a href="#_class_geosrsdietrichkitadaprojection"><code>geosrs:DietrichKitadaProjection</code></a>, <a href="#_class_geosrsfranculaiiiprojection"><code>geosrs:FranculaIIIProjection</code></a>, <a href="#_class_geosrsfranculaivprojection"><code>geosrs:FranculaIVProjection</code></a>, <a href="#_class_geosrsfranculaixprojection"><code>geosrs:FranculaIXProjection</code></a>, <a href="#_class_geosrsfranculaviiiprojection"><code>geosrs:FranculaVIIIProjection</code></a>, <a href="#_class_geosrsfranculavprojection"><code>geosrs:FranculaVProjection</code></a>, <a href="#_class_geosrsfranculaxiiiprojection"><code>geosrs:FranculaXIIIProjection</code></a>, <a href="#_class_geosrsfranculaxiiprojection"><code>geosrs:FranculaXIIProjection</code></a>, <a href="#_class_geosrsfranculaxivprojection"><code>geosrs:FranculaXIVProjection</code></a>, <a href="#_class_geosrshamusoidalprojection"><code>geosrs:HamusoidalProjection</code></a>, <a href="#_class_geosrskissprojection"><code>geosrs:KissProjection</code></a> to be used in SPARQL graph patterns.</p>
@@ -4809,7 +5168,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrsa4projection">Class: geosrs:A4Projection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 169. geosrs:A4Projection</caption>
+<caption class="title">Table 184. geosrs:A4Projection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -4829,7 +5188,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrsbriesemeisterprojection">Class: geosrs:BriesemeisterProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 170. geosrs:BriesemeisterProjection</caption>
+<caption class="title">Table 185. geosrs:BriesemeisterProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -4849,7 +5208,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrsciriciprojection">Class: geosrs:CiricIProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 171. geosrs:CiricIProjection</caption>
+<caption class="title">Table 186. geosrs:CiricIProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -4869,7 +5228,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrscupolaprojection">Class: geosrs:CupolaProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 172. geosrs:CupolaProjection</caption>
+<caption class="title">Table 187. geosrs:CupolaProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -4889,7 +5248,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrsdedistortprojection">Class: geosrs:DedistortProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 173. geosrs:DedistortProjection</caption>
+<caption class="title">Table 188. geosrs:DedistortProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -4909,7 +5268,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrsdietrichkitadaprojection">Class: geosrs:DietrichKitadaProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 174. geosrs:DietrichKitadaProjection</caption>
+<caption class="title">Table 189. geosrs:DietrichKitadaProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -4929,7 +5288,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrsfranculaiiiprojection">Class: geosrs:FranculaIIIProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 175. geosrs:FranculaIIIProjection</caption>
+<caption class="title">Table 190. geosrs:FranculaIIIProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -4949,7 +5308,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrsfranculaivprojection">Class: geosrs:FranculaIVProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 176. geosrs:FranculaIVProjection</caption>
+<caption class="title">Table 191. geosrs:FranculaIVProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -4969,7 +5328,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrsfranculaixprojection">Class: geosrs:FranculaIXProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 177. geosrs:FranculaIXProjection</caption>
+<caption class="title">Table 192. geosrs:FranculaIXProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -4989,7 +5348,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrsfranculaviiiprojection">Class: geosrs:FranculaVIIIProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 178. geosrs:FranculaVIIIProjection</caption>
+<caption class="title">Table 193. geosrs:FranculaVIIIProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -5009,7 +5368,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrsfranculavprojection">Class: geosrs:FranculaVProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 179. geosrs:FranculaVProjection</caption>
+<caption class="title">Table 194. geosrs:FranculaVProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -5029,7 +5388,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrsfranculaxiiiprojection">Class: geosrs:FranculaXIIIProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 180. geosrs:FranculaXIIIProjection</caption>
+<caption class="title">Table 195. geosrs:FranculaXIIIProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -5049,7 +5408,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrsfranculaxiiprojection">Class: geosrs:FranculaXIIProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 181. geosrs:FranculaXIIProjection</caption>
+<caption class="title">Table 196. geosrs:FranculaXIIProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -5069,7 +5428,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrsfranculaxivprojection">Class: geosrs:FranculaXIVProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 182. geosrs:FranculaXIVProjection</caption>
+<caption class="title">Table 197. geosrs:FranculaXIVProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -5089,7 +5448,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrshamusoidalprojection">Class: geosrs:HamusoidalProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 183. geosrs:HamusoidalProjection</caption>
+<caption class="title">Table 198. geosrs:HamusoidalProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -5109,7 +5468,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrskissprojection">Class: geosrs:KissProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 184. geosrs:KissProjection</caption>
+<caption class="title">Table 199. geosrs:KissProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -5130,7 +5489,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect3">
 <h4 id="_minimum_error_projections">Minimum Error Projections</h4>
 <aside class="example">
-<div class="title">Example 33. Minimum Error Projections</div>
+<div class="title">Example 36. Minimum Error Projections</div>
 <div class="content">
 <p class="paragraph">
 <p>Implementations shall allow the RDFS classes <a href="#_class_geosrsairyprojection"><code>geosrs:AiryProjection</code></a> to be used in SPARQL graph patterns.</p>
@@ -5140,7 +5499,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrsairyprojection">Class: geosrs:AiryProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 185. geosrs:AiryProjection</caption>
+<caption class="title">Table 200. geosrs:AiryProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -5165,7 +5524,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect3">
 <h4 id="_perspective_projections">Perspective Projections</h4>
 <aside class="example">
-<div class="title">Example 34. Perspective Projections</div>
+<div class="title">Example 37. Perspective Projections</div>
 <div class="content">
 <p class="paragraph">
 <p>Implementations shall allow the RDFS classes <a href="#_class_geosrscentralcylindricalprojection"><code>geosrs:CentralCylindricalProjection</code></a>, <a href="#_class_geosrsgeneralverticalperspectiveprojection"><code>geosrs:GeneralVerticalPerspectiveProjection</code></a>, <a href="#_class_geosrsgilberttwoworldperspectiveprojection"><code>geosrs:GilbertTwoWorldPerspectiveProjection</code></a>, <a href="#_class_geosrslahireprojection"><code>geosrs:LaHireProjection</code></a>, <a href="#_class_geosrslorgnaprojection"><code>geosrs:LorgnaProjection</code></a>, <a href="#_class_geosrslowryprojection"><code>geosrs:LowryProjection</code></a>, <a href="#_class_geosrsorthographicprojection"><code>geosrs:OrthographicProjection</code></a>, <a href="#_class_geosrsperspectiveconicprojection"><code>geosrs:PerspectiveConicProjection</code></a>, <a href="#_class_geosrstiltedperspectiveprojection"><code>geosrs:TiltedPerspectiveProjection</code></a>, <a href="#_class_geosrsverticalperspectiveprojection"><code>geosrs:VerticalPerspectiveProjection</code></a> to be used in SPARQL graph patterns.</p>
@@ -5175,7 +5534,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrscentralcylindricalprojection">Class: geosrs:CentralCylindricalProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 186. geosrs:CentralCylindricalProjection</caption>
+<caption class="title">Table 201. geosrs:CentralCylindricalProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -5195,7 +5554,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrsgeneralverticalperspectiveprojection">Class: geosrs:GeneralVerticalPerspectiveProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 187. geosrs:GeneralVerticalPerspectiveProjection</caption>
+<caption class="title">Table 202. geosrs:GeneralVerticalPerspectiveProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -5215,7 +5574,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrsgilberttwoworldperspectiveprojection">Class: geosrs:GilbertTwoWorldPerspectiveProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 188. geosrs:GilbertTwoWorldPerspectiveProjection</caption>
+<caption class="title">Table 203. geosrs:GilbertTwoWorldPerspectiveProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -5235,7 +5594,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrslahireprojection">Class: geosrs:LaHireProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 189. geosrs:LaHireProjection</caption>
+<caption class="title">Table 204. geosrs:LaHireProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -5255,7 +5614,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrslorgnaprojection">Class: geosrs:LorgnaProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 190. geosrs:LorgnaProjection</caption>
+<caption class="title">Table 205. geosrs:LorgnaProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -5275,7 +5634,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrslowryprojection">Class: geosrs:LowryProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 191. geosrs:LowryProjection</caption>
+<caption class="title">Table 206. geosrs:LowryProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -5295,7 +5654,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrsorthographicprojection">Class: geosrs:OrthographicProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 192. geosrs:OrthographicProjection</caption>
+<caption class="title">Table 207. geosrs:OrthographicProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -5315,7 +5674,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrsperspectiveconicprojection">Class: geosrs:PerspectiveConicProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 193. geosrs:PerspectiveConicProjection</caption>
+<caption class="title">Table 208. geosrs:PerspectiveConicProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -5335,7 +5694,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrstiltedperspectiveprojection">Class: geosrs:TiltedPerspectiveProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 194. geosrs:TiltedPerspectiveProjection</caption>
+<caption class="title">Table 209. geosrs:TiltedPerspectiveProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -5355,7 +5714,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrsverticalperspectiveprojection">Class: geosrs:VerticalPerspectiveProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 195. geosrs:VerticalPerspectiveProjection</caption>
+<caption class="title">Table 210. geosrs:VerticalPerspectiveProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -5376,7 +5735,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect3">
 <h4 id="_polyconic_projections">Polyconic Projections</h4>
 <aside class="example">
-<div class="title">Example 35. Polyconic Projections</div>
+<div class="title">Example 38. Polyconic Projections</div>
 <div class="content">
 <p class="paragraph">
 <p>Implementations shall allow the RDFS classes <a href="#_class_geosrsginzburgivprojection"><code>geosrs:GinzburgIVProjection</code></a>, <a href="#_class_geosrsginzburgixprojection"><code>geosrs:GinzburgIXProjection</code></a>, <a href="#_class_geosrsginzburgviprojection"><code>geosrs:GinzburgVIProjection</code></a>, <a href="#_class_geosrsginzburgvprojection"><code>geosrs:GinzburgVProjection</code></a>, <a href="#_class_geosrsgottwagnerprojection"><code>geosrs:GottWagnerProjection</code></a>, <a href="#_class_geosrshilleucyclicprojection"><code>geosrs:HillEucyclicProjection</code></a>, <a href="#_class_geosrslagrangeprojection"><code>geosrs:LagrangeProjection</code></a>, <a href="#_class_geosrslaskowskiprojection"><code>geosrs:LaskowskiProjection</code></a>, <a href="#_class_geosrsrectangularpolyconicprojection"><code>geosrs:RectangularPolyconicProjection</code></a>, <a href="#_class_geosrsstabiuswerneriiiprojection"><code>geosrs:StabiusWernerIIIProjection</code></a>, <a href="#_class_geosrsstabiuswerneriprojection"><code>geosrs:StabiusWernerIProjection</code></a>, <a href="#_class_geosrsvandergrinteniiprojection"><code>geosrs:VanDerGrintenIIProjection</code></a>, <a href="#_class_geosrsvandergrinteniprojection"><code>geosrs:VanDerGrintenIProjection</code></a>, <a href="#_class_geosrsvandergrintenivprojection"><code>geosrs:VanDerGrintenIVProjection</code></a>, <a href="#_class_geosrswagnerixprojection"><code>geosrs:WagnerIXProjection</code></a>, <a href="#_class_geosrswagnerviiiprojection"><code>geosrs:WagnerVIIIProjection</code></a>, <a href="#_class_geosrswagnerviiprojection"><code>geosrs:WagnerVIIProjection</code></a> to be used in SPARQL graph patterns.</p>
@@ -5386,7 +5745,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrsginzburgivprojection">Class: geosrs:GinzburgIVProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 196. geosrs:GinzburgIVProjection</caption>
+<caption class="title">Table 211. geosrs:GinzburgIVProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -5406,7 +5765,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrsginzburgixprojection">Class: geosrs:GinzburgIXProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 197. geosrs:GinzburgIXProjection</caption>
+<caption class="title">Table 212. geosrs:GinzburgIXProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -5426,7 +5785,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrsginzburgviprojection">Class: geosrs:GinzburgVIProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 198. geosrs:GinzburgVIProjection</caption>
+<caption class="title">Table 213. geosrs:GinzburgVIProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -5446,7 +5805,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrsginzburgvprojection">Class: geosrs:GinzburgVProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 199. geosrs:GinzburgVProjection</caption>
+<caption class="title">Table 214. geosrs:GinzburgVProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -5466,7 +5825,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrsgottwagnerprojection">Class: geosrs:GottWagnerProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 200. geosrs:GottWagnerProjection</caption>
+<caption class="title">Table 215. geosrs:GottWagnerProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -5486,7 +5845,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrshilleucyclicprojection">Class: geosrs:HillEucyclicProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 201. geosrs:HillEucyclicProjection</caption>
+<caption class="title">Table 216. geosrs:HillEucyclicProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -5506,7 +5865,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrslagrangeprojection">Class: geosrs:LagrangeProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 202. geosrs:LagrangeProjection</caption>
+<caption class="title">Table 217. geosrs:LagrangeProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -5526,7 +5885,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrslaskowskiprojection">Class: geosrs:LaskowskiProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 203. geosrs:LaskowskiProjection</caption>
+<caption class="title">Table 218. geosrs:LaskowskiProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -5546,7 +5905,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrsrectangularpolyconicprojection">Class: geosrs:RectangularPolyconicProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 204. geosrs:RectangularPolyconicProjection</caption>
+<caption class="title">Table 219. geosrs:RectangularPolyconicProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -5566,7 +5925,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrsstabiuswerneriiiprojection">Class: geosrs:StabiusWernerIIIProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 205. geosrs:StabiusWernerIIIProjection</caption>
+<caption class="title">Table 220. geosrs:StabiusWernerIIIProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -5586,7 +5945,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrsstabiuswerneriprojection">Class: geosrs:StabiusWernerIProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 206. geosrs:StabiusWernerIProjection</caption>
+<caption class="title">Table 221. geosrs:StabiusWernerIProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -5606,7 +5965,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrsvandergrinteniiprojection">Class: geosrs:VanDerGrintenIIProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 207. geosrs:VanDerGrintenIIProjection</caption>
+<caption class="title">Table 222. geosrs:VanDerGrintenIIProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -5626,7 +5985,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrsvandergrinteniprojection">Class: geosrs:VanDerGrintenIProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 208. geosrs:VanDerGrintenIProjection</caption>
+<caption class="title">Table 223. geosrs:VanDerGrintenIProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -5646,7 +6005,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrsvandergrintenivprojection">Class: geosrs:VanDerGrintenIVProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 209. geosrs:VanDerGrintenIVProjection</caption>
+<caption class="title">Table 224. geosrs:VanDerGrintenIVProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -5666,7 +6025,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrswagnerixprojection">Class: geosrs:WagnerIXProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 210. geosrs:WagnerIXProjection</caption>
+<caption class="title">Table 225. geosrs:WagnerIXProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -5686,7 +6045,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrswagnerviiiprojection">Class: geosrs:WagnerVIIIProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 211. geosrs:WagnerVIIIProjection</caption>
+<caption class="title">Table 226. geosrs:WagnerVIIIProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -5706,7 +6065,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrswagnerviiprojection">Class: geosrs:WagnerVIIProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 212. geosrs:WagnerVIIProjection</caption>
+<caption class="title">Table 227. geosrs:WagnerVIIProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -5727,7 +6086,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect3">
 <h4 id="_polyhedral_projections">Polyhedral Projections</h4>
 <aside class="example">
-<div class="title">Example 36. Polyhedral Projections</div>
+<div class="title">Example 39. Polyhedral Projections</div>
 <div class="content">
 <p class="paragraph">
 <p>Implementations shall allow the RDFS classes <a href="#_class_geosrsauthagraphprojection"><code>geosrs:AuthaGraphProjection</code></a>, <a href="#_class_geosrscahillkeyesprojection"><code>geosrs:CahillKeyesProjection</code></a>, <a href="#_class_geosrscollignonbutterflyprojection"><code>geosrs:CollignonButterflyProjection</code></a>, <a href="#_class_geosrsdodecahedralprojection"><code>geosrs:DodecahedralProjection</code></a>, <a href="#_class_geosrsdymaxionprojection"><code>geosrs:DymaxionProjection</code></a>, <a href="#_class_geosrsgnomonicbutterflyprojection"><code>geosrs:GnomonicButterflyProjection</code></a>, <a href="#_class_geosrsgnomoniccubedsphereprojection"><code>geosrs:GnomonicCubedSphereProjection</code></a>, <a href="#_class_geosrsgnomonicicosahedronprojection"><code>geosrs:GnomonicIcosahedronProjection</code></a>, <a href="#_class_geosrsguyouprojection"><code>geosrs:GuyouProjection</code></a>, <a href="#_class_geosrsicosahedralprojection"><code>geosrs:IcosahedralProjection</code></a>, <a href="#_class_geosrsleeprojection"><code>geosrs:LeeProjection</code></a>, <a href="#_class_geosrsmyrahedalprojection"><code>geosrs:MyrahedalProjection</code></a>, <a href="#_class_geosrsoctantprojection"><code>geosrs:OctantProjection</code></a>, <a href="#_class_geosrsquadrilateralizedsphericalcubeprojection"><code>geosrs:QuadrilateralizedSphericalCubeProjection</code></a>, <a href="#_class_geosrswatermanbutterflyprojection"><code>geosrs:WatermanButterflyProjection</code></a> to be used in SPARQL graph patterns.</p>
@@ -5737,7 +6096,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrsauthagraphprojection">Class: geosrs:AuthaGraphProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 213. geosrs:AuthaGraphProjection</caption>
+<caption class="title">Table 228. geosrs:AuthaGraphProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -5757,7 +6116,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrscahillkeyesprojection">Class: geosrs:CahillKeyesProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 214. geosrs:CahillKeyesProjection</caption>
+<caption class="title">Table 229. geosrs:CahillKeyesProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -5777,7 +6136,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrscollignonbutterflyprojection">Class: geosrs:CollignonButterflyProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 215. geosrs:CollignonButterflyProjection</caption>
+<caption class="title">Table 230. geosrs:CollignonButterflyProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -5797,7 +6156,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrsdodecahedralprojection">Class: geosrs:DodecahedralProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 216. geosrs:DodecahedralProjection</caption>
+<caption class="title">Table 231. geosrs:DodecahedralProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -5817,7 +6176,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrsdymaxionprojection">Class: geosrs:DymaxionProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 217. geosrs:DymaxionProjection</caption>
+<caption class="title">Table 232. geosrs:DymaxionProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -5837,7 +6196,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrsgnomonicbutterflyprojection">Class: geosrs:GnomonicButterflyProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 218. geosrs:GnomonicButterflyProjection</caption>
+<caption class="title">Table 233. geosrs:GnomonicButterflyProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -5857,7 +6216,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrsgnomoniccubedsphereprojection">Class: geosrs:GnomonicCubedSphereProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 219. geosrs:GnomonicCubedSphereProjection</caption>
+<caption class="title">Table 234. geosrs:GnomonicCubedSphereProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -5877,7 +6236,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrsgnomonicicosahedronprojection">Class: geosrs:GnomonicIcosahedronProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 220. geosrs:GnomonicIcosahedronProjection</caption>
+<caption class="title">Table 235. geosrs:GnomonicIcosahedronProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -5897,7 +6256,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrsguyouprojection">Class: geosrs:GuyouProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 221. geosrs:GuyouProjection</caption>
+<caption class="title">Table 236. geosrs:GuyouProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -5917,7 +6276,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrsicosahedralprojection">Class: geosrs:IcosahedralProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 222. geosrs:IcosahedralProjection</caption>
+<caption class="title">Table 237. geosrs:IcosahedralProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -5937,7 +6296,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrsleeprojection">Class: geosrs:LeeProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 223. geosrs:LeeProjection</caption>
+<caption class="title">Table 238. geosrs:LeeProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -5957,7 +6316,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrsmyrahedalprojection">Class: geosrs:MyrahedalProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 224. geosrs:MyrahedalProjection</caption>
+<caption class="title">Table 239. geosrs:MyrahedalProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -5977,7 +6336,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrsoctantprojection">Class: geosrs:OctantProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 225. geosrs:OctantProjection</caption>
+<caption class="title">Table 240. geosrs:OctantProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -5997,7 +6356,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrsquadrilateralizedsphericalcubeprojection">Class: geosrs:QuadrilateralizedSphericalCubeProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 226. geosrs:QuadrilateralizedSphericalCubeProjection</caption>
+<caption class="title">Table 241. geosrs:QuadrilateralizedSphericalCubeProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -6017,7 +6376,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrswatermanbutterflyprojection">Class: geosrs:WatermanButterflyProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 227. geosrs:WatermanButterflyProjection</caption>
+<caption class="title">Table 242. geosrs:WatermanButterflyProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -6038,7 +6397,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect3">
 <h4 id="_pseudo_azimuthal_projections">Pseudo Azimuthal Projections</h4>
 <aside class="example">
-<div class="title">Example 37. Pseudo Azimuthal Projections</div>
+<div class="title">Example 40. Pseudo Azimuthal Projections</div>
 <div class="content">
 <p class="paragraph">
 <p>Implementations shall allow the RDFS classes <a href="#_class_geosrsaitoffobliqueprojection"><code>geosrs:AitoffObliqueProjection</code></a>, <a href="#_class_geosrsaitoffprojection"><code>geosrs:AitoffProjection</code></a>, <a href="#_class_geosrshammerprojection"><code>geosrs:HammerProjection</code></a>, <a href="#_class_geosrsstrebe1995projection"><code>geosrs:Strebe1995Projection</code></a>, <a href="#_class_geosrswinkeltripelprojection"><code>geosrs:WinkelTripelProjection</code></a> to be used in SPARQL graph patterns.</p>
@@ -6048,7 +6407,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrsaitoffobliqueprojection">Class: geosrs:AitoffObliqueProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 228. geosrs:AitoffObliqueProjection</caption>
+<caption class="title">Table 243. geosrs:AitoffObliqueProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -6068,7 +6427,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrsaitoffprojection">Class: geosrs:AitoffProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 229. geosrs:AitoffProjection</caption>
+<caption class="title">Table 244. geosrs:AitoffProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -6092,7 +6451,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrshammerprojection">Class: geosrs:HammerProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 230. geosrs:HammerProjection</caption>
+<caption class="title">Table 245. geosrs:HammerProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -6112,7 +6471,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrsstrebe1995projection">Class: geosrs:Strebe1995Projection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 231. geosrs:Strebe1995Projection</caption>
+<caption class="title">Table 246. geosrs:Strebe1995Projection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -6132,7 +6491,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrswinkeltripelprojection">Class: geosrs:WinkelTripelProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 232. geosrs:WinkelTripelProjection</caption>
+<caption class="title">Table 247. geosrs:WinkelTripelProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -6153,7 +6512,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect3">
 <h4 id="_pseudo_conical_projections">Pseudo Conical Projections</h4>
 <aside class="example">
-<div class="title">Example 38. Pseudo Conical Projections</div>
+<div class="title">Example 41. Pseudo Conical Projections</div>
 <div class="content">
 <p class="paragraph">
 <p>Implementations shall allow the RDFS classes <a href="#_class_geosrsamericanpolyconicprojection"><code>geosrs:AmericanPolyconicProjection</code></a>, <a href="#_class_geosrsbonneprojection"><code>geosrs:BonneProjection</code></a>, <a href="#_class_geosrsbottomleyprojection"><code>geosrs:BottomleyProjection</code></a>, <a href="#_class_geosrsnicolosiglobularprojection"><code>geosrs:NicolosiGlobularProjection</code></a>, <a href="#_class_geosrsptolemyiiprojection"><code>geosrs:PtolemyIIProjection</code></a>, <a href="#_class_geosrswernerprojection"><code>geosrs:WernerProjection</code></a> to be used in SPARQL graph patterns.</p>
@@ -6163,7 +6522,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrsamericanpolyconicprojection">Class: geosrs:AmericanPolyconicProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 233. geosrs:AmericanPolyconicProjection</caption>
+<caption class="title">Table 248. geosrs:AmericanPolyconicProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -6183,7 +6542,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrsbonneprojection">Class: geosrs:BonneProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 234. geosrs:BonneProjection</caption>
+<caption class="title">Table 249. geosrs:BonneProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -6203,7 +6562,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrsbottomleyprojection">Class: geosrs:BottomleyProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 235. geosrs:BottomleyProjection</caption>
+<caption class="title">Table 250. geosrs:BottomleyProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -6223,7 +6582,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrsnicolosiglobularprojection">Class: geosrs:NicolosiGlobularProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 236. geosrs:NicolosiGlobularProjection</caption>
+<caption class="title">Table 251. geosrs:NicolosiGlobularProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -6243,7 +6602,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrsptolemyiiprojection">Class: geosrs:PtolemyIIProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 237. geosrs:PtolemyIIProjection</caption>
+<caption class="title">Table 252. geosrs:PtolemyIIProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -6263,7 +6622,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrswernerprojection">Class: geosrs:WernerProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 238. geosrs:WernerProjection</caption>
+<caption class="title">Table 253. geosrs:WernerProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -6284,7 +6643,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect3">
 <h4 id="_pseudo_cylindrical_projections">Pseudo Cylindrical Projections</h4>
 <aside class="example">
-<div class="title">Example 39. Pseudo Cylindrical Projections</div>
+<div class="title">Example 42. Pseudo Cylindrical Projections</div>
 <div class="content">
 <p class="paragraph">
 <p>Implementations shall allow the RDFS classes <a href="#_class_geosrsapianiiprojection"><code>geosrs:ApianIIProjection</code></a>, <a href="#_class_geosrsatlantisprojection"><code>geosrs:AtlantisProjection</code></a>, <a href="#_class_geosrsbaranyiiiiprojection"><code>geosrs:BaranyiIIIProjection</code></a>, <a href="#_class_geosrsbaranyiiiprojection"><code>geosrs:BaranyiIIProjection</code></a>, <a href="#_class_geosrsbaranyiiprojection"><code>geosrs:BaranyiIProjection</code></a>, <a href="#_class_geosrsbaranyiivprojection"><code>geosrs:BaranyiIVProjection</code></a>, <a href="#_class_geosrsboggseumorphicprojection"><code>geosrs:BoggsEumorphicProjection</code></a>, <a href="#_class_geosrsbromleyprojection"><code>geosrs:BromleyProjection</code></a>, <a href="#_class_geosrscabotprojection"><code>geosrs:CabotProjection</code></a>, <a href="#_class_geosrscollignonprojection"><code>geosrs:CollignonProjection</code></a>, <a href="#_class_geosrscrasterparabolicprojection"><code>geosrs:CrasterParabolicProjection</code></a>, <a href="#_class_geosrsdeakinminimumerrorprojection"><code>geosrs:DeakinMinimumErrorProjection</code></a>, <a href="#_class_geosrseckert1projection"><code>geosrs:Eckert1Projection</code></a>, <a href="#_class_geosrseckert2projection"><code>geosrs:Eckert2Projection</code></a>, <a href="#_class_geosrseckert3projection"><code>geosrs:Eckert3Projection</code></a>, <a href="#_class_geosrseckert4projection"><code>geosrs:Eckert4Projection</code></a>, <a href="#_class_geosrseckert5projection"><code>geosrs:Eckert5Projection</code></a>, <a href="#_class_geosrseckert6projection"><code>geosrs:Eckert6Projection</code></a>, <a href="#_class_geosrsequalearthprojection"><code>geosrs:EqualEarthProjection</code></a>, <a href="#_class_geosrsfaheyprojection"><code>geosrs:FaheyProjection</code></a>, <a href="#_class_geosrsfoucautprojection"><code>geosrs:FoucautProjection</code></a>, <a href="#_class_geosrsfoucautsinusoidalprojection"><code>geosrs:FoucautSinusoidalProjection</code></a>, <a href="#_class_geosrsfournieriiprojection"><code>geosrs:FournierIIProjection</code></a>, <a href="#_class_geosrsginzburgviiiprojection"><code>geosrs:GinzburgVIIIProjection</code></a>, <a href="#_class_geosrsgoodehomolosineprojection"><code>geosrs:GoodeHomolosineProjection</code></a>, <a href="#_class_geosrshealpixprojection"><code>geosrs:HEALPixProjection</code></a>, <a href="#_class_geosrshufnagelprojection"><code>geosrs:HufnagelProjection</code></a>, <a href="#_class_geosrskavrayskiy7projection"><code>geosrs:Kavrayskiy7Projection</code></a>, <a href="#_class_geosrsloximuthalprojection"><code>geosrs:LoximuthalProjection</code></a>, <a href="#_class_geosrsmayrprojection"><code>geosrs:MayrProjection</code></a>, <a href="#_class_geosrsmcbrydethomasflatpolarparabolicprojection"><code>geosrs:McBrydeThomasFlatPolarParabolicProjection</code></a>, <a href="#_class_geosrsmcbrydethomasflatpolarquarticprojection"><code>geosrs:McBrydeThomasFlatPolarQuarticProjection</code></a>, <a href="#_class_geosrsmcbrydethomasflatpolarsinusoidalprojection"><code>geosrs:McBrydeThomasFlatPolarSinusoidalProjection</code></a>, <a href="#_class_geosrsmcbrydethomasiiprojection"><code>geosrs:McBrydeThomasIIProjection</code></a>, <a href="#_class_geosrsmcbrydethomasiprojection"><code>geosrs:McBrydeThomasIProjection</code></a>, <a href="#_class_geosrsnaturalearth2projection"><code>geosrs:NaturalEarth2Projection</code></a>, <a href="#_class_geosrsnaturalearthprojection"><code>geosrs:NaturalEarthProjection</code></a>, <a href="#_class_geosrsnellhammerprojection"><code>geosrs:NellHammerProjection</code></a>, <a href="#_class_geosrsnellprojection"><code>geosrs:NellProjection</code></a>, <a href="#_class_geosrsorteliusovalprojection"><code>geosrs:OrteliusOvalProjection</code></a>, <a href="#_class_geosrsputninsp1projection"><code>geosrs:PutninsP1Projection</code></a>, <a href="#_class_geosrsputninsp2projection"><code>geosrs:PutninsP2Projection</code></a>, <a href="#_class_geosrsputninsp3projection"><code>geosrs:PutninsP3Projection</code></a>, <a href="#_class_geosrsputninsp5projection"><code>geosrs:PutninsP5Projection</code></a>, <a href="#_class_geosrsputninsp6projection"><code>geosrs:PutninsP6Projection</code></a>, <a href="#_class_geosrsquarticauthalicprojection"><code>geosrs:QuarticAuthalicProjection</code></a>, <a href="#_class_geosrsrobinsonprojection"><code>geosrs:RobinsonProjection</code></a>, <a href="#_class_geosrssinusoidalprojection"><code>geosrs:SinusoidalProjection</code></a>, <a href="#_class_geosrsthetimesprojection"><code>geosrs:TheTimesProjection</code></a>, <a href="#_class_geosrstoblerg1projection"><code>geosrs:ToblerG1Projection</code></a>, <a href="#_class_geosrstoblerhyperellipticalprojection"><code>geosrs:ToblerHyperellipticalProjection</code></a>, <a href="#_class_geosrswagneriiiprojection"><code>geosrs:WagnerIIIProjection</code></a>, <a href="#_class_geosrswagneriiprojection"><code>geosrs:WagnerIIProjection</code></a>, <a href="#_class_geosrswagneriprojection"><code>geosrs:WagnerIProjection</code></a>, <a href="#_class_geosrswagnerivprojection"><code>geosrs:WagnerIVProjection</code></a>, <a href="#_class_geosrswagnerviprojection"><code>geosrs:WagnerVIProjection</code></a>, <a href="#_class_geosrswagnervprojection"><code>geosrs:WagnerVProjection</code></a>, <a href="#_class_geosrswerenskioldiprojection"><code>geosrs:WerenskioldIProjection</code></a>, <a href="#_class_geosrsputninsp3projection_2"><code>geosrs:PutninsP3&#8217;Projection</code></a>, <a href="#_class_geosrsputninsp4projection"><code>geosrs:PutninsP4&#8217;Projection</code></a>, <a href="#_class_geosrsputninsp5projection_2"><code>geosrs:PutninsP5&#8217;Projection</code></a>, <a href="#_class_geosrsputninsp6projection_2"><code>geosrs:PutninsP6&#8217;Projection</code></a> to be used in SPARQL graph patterns.</p>
@@ -6294,7 +6653,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrsapianiiprojection">Class: geosrs:ApianIIProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 239. geosrs:ApianIIProjection</caption>
+<caption class="title">Table 254. geosrs:ApianIIProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -6314,7 +6673,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrsatlantisprojection">Class: geosrs:AtlantisProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 240. geosrs:AtlantisProjection</caption>
+<caption class="title">Table 255. geosrs:AtlantisProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -6334,7 +6693,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrsbaranyiiiiprojection">Class: geosrs:BaranyiIIIProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 241. geosrs:BaranyiIIIProjection</caption>
+<caption class="title">Table 256. geosrs:BaranyiIIIProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -6354,7 +6713,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrsbaranyiiiprojection">Class: geosrs:BaranyiIIProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 242. geosrs:BaranyiIIProjection</caption>
+<caption class="title">Table 257. geosrs:BaranyiIIProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -6374,7 +6733,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrsbaranyiiprojection">Class: geosrs:BaranyiIProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 243. geosrs:BaranyiIProjection</caption>
+<caption class="title">Table 258. geosrs:BaranyiIProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -6394,7 +6753,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrsbaranyiivprojection">Class: geosrs:BaranyiIVProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 244. geosrs:BaranyiIVProjection</caption>
+<caption class="title">Table 259. geosrs:BaranyiIVProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -6414,7 +6773,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrsboggseumorphicprojection">Class: geosrs:BoggsEumorphicProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 245. geosrs:BoggsEumorphicProjection</caption>
+<caption class="title">Table 260. geosrs:BoggsEumorphicProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -6434,7 +6793,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrsbromleyprojection">Class: geosrs:BromleyProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 246. geosrs:BromleyProjection</caption>
+<caption class="title">Table 261. geosrs:BromleyProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -6454,7 +6813,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrscabotprojection">Class: geosrs:CabotProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 247. geosrs:CabotProjection</caption>
+<caption class="title">Table 262. geosrs:CabotProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -6474,7 +6833,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrscollignonprojection">Class: geosrs:CollignonProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 248. geosrs:CollignonProjection</caption>
+<caption class="title">Table 263. geosrs:CollignonProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -6498,7 +6857,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrscrasterparabolicprojection">Class: geosrs:CrasterParabolicProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 249. geosrs:CrasterParabolicProjection</caption>
+<caption class="title">Table 264. geosrs:CrasterParabolicProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -6518,7 +6877,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrsdeakinminimumerrorprojection">Class: geosrs:DeakinMinimumErrorProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 250. geosrs:DeakinMinimumErrorProjection</caption>
+<caption class="title">Table 265. geosrs:DeakinMinimumErrorProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -6538,7 +6897,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrseckert1projection">Class: geosrs:Eckert1Projection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 251. geosrs:Eckert1Projection</caption>
+<caption class="title">Table 266. geosrs:Eckert1Projection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -6558,7 +6917,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrseckert2projection">Class: geosrs:Eckert2Projection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 252. geosrs:Eckert2Projection</caption>
+<caption class="title">Table 267. geosrs:Eckert2Projection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -6578,7 +6937,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrseckert3projection">Class: geosrs:Eckert3Projection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 253. geosrs:Eckert3Projection</caption>
+<caption class="title">Table 268. geosrs:Eckert3Projection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -6598,7 +6957,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrseckert4projection">Class: geosrs:Eckert4Projection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 254. geosrs:Eckert4Projection</caption>
+<caption class="title">Table 269. geosrs:Eckert4Projection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -6618,7 +6977,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrseckert5projection">Class: geosrs:Eckert5Projection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 255. geosrs:Eckert5Projection</caption>
+<caption class="title">Table 270. geosrs:Eckert5Projection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -6638,7 +6997,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrseckert6projection">Class: geosrs:Eckert6Projection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 256. geosrs:Eckert6Projection</caption>
+<caption class="title">Table 271. geosrs:Eckert6Projection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -6658,7 +7017,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrsequalearthprojection">Class: geosrs:EqualEarthProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 257. geosrs:EqualEarthProjection</caption>
+<caption class="title">Table 272. geosrs:EqualEarthProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -6678,7 +7037,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrsfaheyprojection">Class: geosrs:FaheyProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 258. geosrs:FaheyProjection</caption>
+<caption class="title">Table 273. geosrs:FaheyProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -6698,7 +7057,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrsfoucautprojection">Class: geosrs:FoucautProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 259. geosrs:FoucautProjection</caption>
+<caption class="title">Table 274. geosrs:FoucautProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -6718,7 +7077,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrsfoucautsinusoidalprojection">Class: geosrs:FoucautSinusoidalProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 260. geosrs:FoucautSinusoidalProjection</caption>
+<caption class="title">Table 275. geosrs:FoucautSinusoidalProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -6738,7 +7097,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrsfournieriiprojection">Class: geosrs:FournierIIProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 261. geosrs:FournierIIProjection</caption>
+<caption class="title">Table 276. geosrs:FournierIIProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -6758,7 +7117,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrsginzburgviiiprojection">Class: geosrs:GinzburgVIIIProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 262. geosrs:GinzburgVIIIProjection</caption>
+<caption class="title">Table 277. geosrs:GinzburgVIIIProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -6778,7 +7137,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrsgoodehomolosineprojection">Class: geosrs:GoodeHomolosineProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 263. geosrs:GoodeHomolosineProjection</caption>
+<caption class="title">Table 278. geosrs:GoodeHomolosineProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -6798,7 +7157,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrshealpixprojection">Class: geosrs:HEALPixProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 264. geosrs:HEALPixProjection</caption>
+<caption class="title">Table 279. geosrs:HEALPixProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -6818,7 +7177,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrshufnagelprojection">Class: geosrs:HufnagelProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 265. geosrs:HufnagelProjection</caption>
+<caption class="title">Table 280. geosrs:HufnagelProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -6838,7 +7197,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrskavrayskiy7projection">Class: geosrs:Kavrayskiy7Projection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 266. geosrs:Kavrayskiy7Projection</caption>
+<caption class="title">Table 281. geosrs:Kavrayskiy7Projection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -6858,7 +7217,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrsloximuthalprojection">Class: geosrs:LoximuthalProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 267. geosrs:LoximuthalProjection</caption>
+<caption class="title">Table 282. geosrs:LoximuthalProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -6878,7 +7237,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrsmayrprojection">Class: geosrs:MayrProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 268. geosrs:MayrProjection</caption>
+<caption class="title">Table 283. geosrs:MayrProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -6898,7 +7257,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrsmcbrydethomasflatpolarparabolicprojection">Class: geosrs:McBrydeThomasFlatPolarParabolicProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 269. geosrs:McBrydeThomasFlatPolarParabolicProjection</caption>
+<caption class="title">Table 284. geosrs:McBrydeThomasFlatPolarParabolicProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -6918,7 +7277,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrsmcbrydethomasflatpolarquarticprojection">Class: geosrs:McBrydeThomasFlatPolarQuarticProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 270. geosrs:McBrydeThomasFlatPolarQuarticProjection</caption>
+<caption class="title">Table 285. geosrs:McBrydeThomasFlatPolarQuarticProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -6938,7 +7297,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrsmcbrydethomasflatpolarsinusoidalprojection">Class: geosrs:McBrydeThomasFlatPolarSinusoidalProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 271. geosrs:McBrydeThomasFlatPolarSinusoidalProjection</caption>
+<caption class="title">Table 286. geosrs:McBrydeThomasFlatPolarSinusoidalProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -6958,7 +7317,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrsmcbrydethomasiiprojection">Class: geosrs:McBrydeThomasIIProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 272. geosrs:McBrydeThomasIIProjection</caption>
+<caption class="title">Table 287. geosrs:McBrydeThomasIIProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -6978,7 +7337,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrsmcbrydethomasiprojection">Class: geosrs:McBrydeThomasIProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 273. geosrs:McBrydeThomasIProjection</caption>
+<caption class="title">Table 288. geosrs:McBrydeThomasIProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -6998,7 +7357,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrsnaturalearth2projection">Class: geosrs:NaturalEarth2Projection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 274. geosrs:NaturalEarth2Projection</caption>
+<caption class="title">Table 289. geosrs:NaturalEarth2Projection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -7018,7 +7377,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrsnaturalearthprojection">Class: geosrs:NaturalEarthProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 275. geosrs:NaturalEarthProjection</caption>
+<caption class="title">Table 290. geosrs:NaturalEarthProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -7042,7 +7401,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrsnellhammerprojection">Class: geosrs:NellHammerProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 276. geosrs:NellHammerProjection</caption>
+<caption class="title">Table 291. geosrs:NellHammerProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -7062,7 +7421,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrsnellprojection">Class: geosrs:NellProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 277. geosrs:NellProjection</caption>
+<caption class="title">Table 292. geosrs:NellProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -7082,7 +7441,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrsorteliusovalprojection">Class: geosrs:OrteliusOvalProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 278. geosrs:OrteliusOvalProjection</caption>
+<caption class="title">Table 293. geosrs:OrteliusOvalProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -7102,7 +7461,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrsputninsp1projection">Class: geosrs:PutninsP1Projection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 279. geosrs:PutninsP1Projection</caption>
+<caption class="title">Table 294. geosrs:PutninsP1Projection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -7122,7 +7481,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrsputninsp2projection">Class: geosrs:PutninsP2Projection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 280. geosrs:PutninsP2Projection</caption>
+<caption class="title">Table 295. geosrs:PutninsP2Projection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -7142,7 +7501,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrsputninsp3projection">Class: geosrs:PutninsP3Projection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 281. geosrs:PutninsP3Projection</caption>
+<caption class="title">Table 296. geosrs:PutninsP3Projection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -7162,7 +7521,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrsputninsp5projection">Class: geosrs:PutninsP5Projection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 282. geosrs:PutninsP5Projection</caption>
+<caption class="title">Table 297. geosrs:PutninsP5Projection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -7182,7 +7541,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrsputninsp6projection">Class: geosrs:PutninsP6Projection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 283. geosrs:PutninsP6Projection</caption>
+<caption class="title">Table 298. geosrs:PutninsP6Projection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -7202,7 +7561,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrsquarticauthalicprojection">Class: geosrs:QuarticAuthalicProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 284. geosrs:QuarticAuthalicProjection</caption>
+<caption class="title">Table 299. geosrs:QuarticAuthalicProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -7222,7 +7581,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrsrobinsonprojection">Class: geosrs:RobinsonProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 285. geosrs:RobinsonProjection</caption>
+<caption class="title">Table 300. geosrs:RobinsonProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -7242,7 +7601,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrssinusoidalprojection">Class: geosrs:SinusoidalProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 286. geosrs:SinusoidalProjection</caption>
+<caption class="title">Table 301. geosrs:SinusoidalProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -7262,7 +7621,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrsthetimesprojection">Class: geosrs:TheTimesProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 287. geosrs:TheTimesProjection</caption>
+<caption class="title">Table 302. geosrs:TheTimesProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -7282,7 +7641,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrstoblerg1projection">Class: geosrs:ToblerG1Projection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 288. geosrs:ToblerG1Projection</caption>
+<caption class="title">Table 303. geosrs:ToblerG1Projection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -7302,7 +7661,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrstoblerhyperellipticalprojection">Class: geosrs:ToblerHyperellipticalProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 289. geosrs:ToblerHyperellipticalProjection</caption>
+<caption class="title">Table 304. geosrs:ToblerHyperellipticalProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -7322,7 +7681,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrswagneriiiprojection">Class: geosrs:WagnerIIIProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 290. geosrs:WagnerIIIProjection</caption>
+<caption class="title">Table 305. geosrs:WagnerIIIProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -7342,7 +7701,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrswagneriiprojection">Class: geosrs:WagnerIIProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 291. geosrs:WagnerIIProjection</caption>
+<caption class="title">Table 306. geosrs:WagnerIIProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -7362,7 +7721,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrswagneriprojection">Class: geosrs:WagnerIProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 292. geosrs:WagnerIProjection</caption>
+<caption class="title">Table 307. geosrs:WagnerIProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -7382,7 +7741,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrswagnerivprojection">Class: geosrs:WagnerIVProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 293. geosrs:WagnerIVProjection</caption>
+<caption class="title">Table 308. geosrs:WagnerIVProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -7402,7 +7761,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrswagnerviprojection">Class: geosrs:WagnerVIProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 294. geosrs:WagnerVIProjection</caption>
+<caption class="title">Table 309. geosrs:WagnerVIProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -7422,7 +7781,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrswagnervprojection">Class: geosrs:WagnerVProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 295. geosrs:WagnerVProjection</caption>
+<caption class="title">Table 310. geosrs:WagnerVProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -7442,7 +7801,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrswerenskioldiprojection">Class: geosrs:WerenskioldIProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 296. geosrs:WerenskioldIProjection</caption>
+<caption class="title">Table 311. geosrs:WerenskioldIProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -7462,7 +7821,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrsputninsp3projection_2">Class: geosrs:PutninsP3&#8217;Projection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 297. geosrs:PutninsP3&#8217;Projection</caption>
+<caption class="title">Table 312. geosrs:PutninsP3&#8217;Projection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -7482,7 +7841,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrsputninsp4projection">Class: geosrs:PutninsP4&#8217;Projection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 298. geosrs:PutninsP4&#8217;Projection</caption>
+<caption class="title">Table 313. geosrs:PutninsP4&#8217;Projection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -7502,7 +7861,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrsputninsp5projection_2">Class: geosrs:PutninsP5&#8217;Projection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 299. geosrs:PutninsP5&#8217;Projection</caption>
+<caption class="title">Table 314. geosrs:PutninsP5&#8217;Projection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -7522,7 +7881,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrsputninsp6projection_2">Class: geosrs:PutninsP6&#8217;Projection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 300. geosrs:PutninsP6&#8217;Projection</caption>
+<caption class="title">Table 315. geosrs:PutninsP6&#8217;Projection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -7543,7 +7902,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect3">
 <h4 id="_stereographic_projections">Stereographic Projections</h4>
 <aside class="example">
-<div class="title">Example 40. Stereographic Projections</div>
+<div class="title">Example 43. Stereographic Projections</div>
 <div class="content">
 <p class="paragraph">
 <p>Implementations shall allow the RDFS classes <a href="#_class_geosrsmilleroblatedstereographicprojection"><code>geosrs:MillerOblatedStereographicProjection</code></a>, <a href="#_class_geosrsroussilheprojection"><code>geosrs:RoussilheProjection</code></a> to be used in SPARQL graph patterns.</p>
@@ -7553,7 +7912,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrsmilleroblatedstereographicprojection">Class: geosrs:MillerOblatedStereographicProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 301. geosrs:MillerOblatedStereographicProjection</caption>
+<caption class="title">Table 316. geosrs:MillerOblatedStereographicProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -7573,7 +7932,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrsroussilheprojection">Class: geosrs:RoussilheProjection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 302. geosrs:RoussilheProjection</caption>
+<caption class="title">Table 317. geosrs:RoussilheProjection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -7599,6 +7958,206 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <p class="paragraph" id="planet">
 <p>This clause establishes the <strong>PLANET</strong> Requirements class, with IRI <code>/req/planet</code>, which has a corresponding Conformance Class, <strong>PLANET</strong>, with IRI <code>/conf/planet</code>.</p>
 </p>
+<aside class="example">
+<div class="title">Example 44. 12-planet_extension.adoc Extension</div>
+<div class="content">
+<div class="dlist">
+<dl>
+<dt class="hdlist1">requirement</dt>
+<dd>
+<p>/req/Interstellar_Body</p>
+</dd>
+</dl>
+</div>
+</div>
+</aside>
+<section class="sect3">
+<h4 id="_interstellar_body">Interstellar Body</h4>
+<aside class="example">
+<div class="title">Example 45. Interstellar Body</div>
+<div class="content">
+<p class="paragraph">
+<p>Implementations shall allow the RDFS classes <a href="#_class_geosrsartificialsatellite"><code>geosrs:ArtificialSatellite</code></a>, <a href="#_class_geosrsasteroid"><code>geosrs:Asteroid</code></a>, <a href="#_class_geosrscomet"><code>geosrs:Comet</code></a>, <a href="#_class_geosrsdwarfplanet"><code>geosrs:DwarfPlanet</code></a>, <a href="#_class_geosrsinterstellarbody"><code>geosrs:InterstellarBody</code></a>, <a href="#_class_geosrsmoon"><code>geosrs:Moon</code></a>, <a href="#_class_geosrsnaturalsatellite"><code>geosrs:NaturalSatellite</code></a>, <a href="#_class_geosrsplanet"><code>geosrs:Planet</code></a>, <a href="#_class_geosrsplanetstatus"><code>geosrs:PlanetStatus</code></a>, <a href="#_class_geosrsplutoid"><code>geosrs:Plutoid</code></a>, <a href="#_class_geosrsstar"><code>geosrs:Star</code></a> to be used in SPARQL graph patterns.</p>
+</p>
+</div>
+</aside>
+<section class="sect4">
+<h5 id="_class_geosrsartificialsatellite">Class: geosrs:ArtificialSatellite</h5>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Table 318. geosrs:ArtificialSatellite</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/planet/ArtificialSatellite">https://w3id.org/geosrs/planet/ArtificialSatellite</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sect4">
+<h5 id="_class_geosrsasteroid">Class: geosrs:Asteroid</h5>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Table 319. geosrs:Asteroid</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/planet/Asteroid">https://w3id.org/geosrs/planet/Asteroid</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sect4">
+<h5 id="_class_geosrscomet">Class: geosrs:Comet</h5>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Table 320. geosrs:Comet</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/planet/Comet">https://w3id.org/geosrs/planet/Comet</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sect4">
+<h5 id="_class_geosrsdwarfplanet">Class: geosrs:DwarfPlanet</h5>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Table 321. geosrs:DwarfPlanet</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/planet/DwarfPlanet">https://w3id.org/geosrs/planet/DwarfPlanet</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sect4">
+<h5 id="_class_geosrsinterstellarbody">Class: geosrs:InterstellarBody</h5>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Table 322. geosrs:InterstellarBody</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/planet/InterstellarBody">https://w3id.org/geosrs/planet/InterstellarBody</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sect4">
+<h5 id="_class_geosrsmoon">Class: geosrs:Moon</h5>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Table 323. geosrs:Moon</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/planet/Moon">https://w3id.org/geosrs/planet/Moon</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sect4">
+<h5 id="_class_geosrsnaturalsatellite">Class: geosrs:NaturalSatellite</h5>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Table 324. geosrs:NaturalSatellite</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/planet/NaturalSatellite">https://w3id.org/geosrs/planet/NaturalSatellite</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sect4">
+<h5 id="_class_geosrsplanet">Class: geosrs:Planet</h5>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Table 325. geosrs:Planet</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/planet/Planet">https://w3id.org/geosrs/planet/Planet</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sect4">
+<h5 id="_class_geosrsplanetstatus">Class: geosrs:PlanetStatus</h5>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Table 326. geosrs:PlanetStatus</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/planet/PlanetStatus">https://w3id.org/geosrs/planet/PlanetStatus</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sect4">
+<h5 id="_class_geosrsplutoid">Class: geosrs:Plutoid</h5>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Table 327. geosrs:Plutoid</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/planet/Plutoid">https://w3id.org/geosrs/planet/Plutoid</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sect4">
+<h5 id="_class_geosrsstar">Class: geosrs:Star</h5>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Table 328. geosrs:Star</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/planet/Star">https://w3id.org/geosrs/planet/Star</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
 </div>
 </section>
 <section class="sect1">
@@ -7609,7 +8168,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <p>The prefixes used for the ontologies mapped to in all following sections are given in the following table.</p>
 </p>
 <table class="tableblock frame-none grid-none spread">
-<caption class="title">Table 303. Alignment: Namespaces</caption>
+<caption class="title">Table 329. Alignment: Namespaces</caption>
 <colgroup>
 <col style="width: 14.2857%;">
 <col style="width: 85.7143%;">
@@ -7652,7 +8211,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect2">
 <h3 id="_ign_ontology">IGN Ontology</h3>
 <table class="tableblock frame-all grid-all">
-<caption class="title">Table 304. Alignment: IGN Ontology</caption>
+<caption class="title">Table 330. Alignment: IGN Ontology</caption>
 <colgroup>
 <col>
 <col>
@@ -7854,7 +8413,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect2">
 <h3 id="_iso19111_ontology">ISO19111 Ontology</h3>
 <table class="tableblock frame-all grid-all">
-<caption class="title">Table 305. Alignment: ISO19111 Ontology</caption>
+<caption class="title">Table 331. Alignment: ISO19111 Ontology</caption>
 <colgroup>
 <col>
 <col>
@@ -7954,7 +8513,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect2">
 <h3 id="_ifc_ontology">IFC Ontology</h3>
 <table class="tableblock frame-all grid-all">
-<caption class="title">Table 306. Alignment: IFC Ontology</caption>
+<caption class="title">Table 332. Alignment: IFC Ontology</caption>
 <colgroup>
 <col>
 <col>
@@ -8110,7 +8669,7 @@ Actual References:
 </section>
 <div id="footer">
 <div id="footer-text">
-Last updated 2025-08-09 23:39:13 UTC
+Last updated 2025-08-10 12:21:29 UTC
 </div>
 </div>
 </body>

@@ -756,7 +756,7 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 </clause>
 </clause>
 
-<clause id="_42cdf134-6515-b384-81db-e6fc5546c85f" obligation="normative">
+<clause id="_1fcd1f20-6533-1410-dc26-c452a6f969c3" obligation="normative">
 <title id="_f871b3bf-7ed3-bb16-c69e-db6ff0d3ff2b">Coordinate Operation Module</title>
 <p id="_0cde27cf-175d-05fd-b275-730257335201" anchor="co">This clause establishes the <strong>Co</strong> Requirements class, with IRI <tt>/req/co</tt>, which has a corresponding Conformance Class, <strong>Co</strong>, with IRI <tt>/conf/co</tt>.</p>
 
@@ -996,7 +996,7 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 </clause>
 </clause>
 
-<clause id="_94425e1f-fe91-b3cc-4a24-4554faec19a8" obligation="normative">
+<clause id="_fbfe17c2-33a2-582a-fb09-9547416ea46d" obligation="normative">
 <title id="_14bf9c7b-7486-53e1-40f1-d4e72e0b2fdb">Coordinate Operation Properties</title>
 <requirement id="_b601aea0-9726-525e-2b68-dedadfcfcea2" model="ogc" anchor="/req/Coordinate_Operation_Properties">
 <title>Coordinate Operation Properties</title> 
@@ -1039,9 +1039,9 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 </table>
 </clause>
 
-<clause id="_c3ae3be9-355c-101e-18a7-8a3e5fc67e6d" obligation="normative">
+<clause id="_4c1f8401-89fc-bc18-7049-40465eae73b5" obligation="normative">
 <title id="_42574671-1d4e-e92f-72d7-fb63a54f98d6">Property: geosrs:sourceCRS</title>
-<table id="_21f1f7ed-35d1-018a-80af-3548ef5c1709"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<table id="_f3f08f12-10c1-03ab-c5ee-9c664cd0953d"><colgroup><col width="50%"/><col width="50%"/></colgroup>
 <name id="_48bc6513-44c9-433e-4a10-18339af1f8d4">geosrs:sourceCRS</name>
 <tbody><tr id="_ba57e050-c3b4-317c-4c08-fd5c6d82eece"><td id="_8855c20a-b648-3e00-d751-77eb3135d691" valign="middle" align="left">URI</td>
 <td id="_9b7b9fd8-e504-9696-6db3-bc09c9f5ca48" valign="middle" align="left"><link target="https://w3id.org/geosrs/co/sourceCRS"/></td>
@@ -1053,6 +1053,8 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 <td id="_bcc5422c-45a5-ee79-46b9-f96000911d9d" valign="middle" align="left"><link target="https://w3id.org/geosrs/srs/CRS">CRS</link></td>
 </tr><tr id="_d152e2e4-b2cc-406e-61a2-9d74a99d00cd"><td id="_2f4f9ab4-ea3e-6b95-17d0-456f4e2f77b8" valign="middle" align="left">Domain</td>
 <td id="_2a2b7814-ff62-4e0f-3331-28be52231056" valign="middle" align="left"><link target="https://w3id.org/geosrs/CoordinateOperation">CoordinateOperation</link></td>
+</tr><tr id="_2ec73916-0d67-ea0f-8c8d-b4fe14ba1bc4"><td id="_62659651-998b-292e-11a8-5c4595fd4e52" valign="middle" align="left">Example</td>
+<td id="_1bc0e164-cbe8-e5c8-eb2f-bf50b1cde770" valign="middle" align="left"><link target="https://opengeospatial.github.io/ontology-crs/data/def/crs/EPSG/0//29903">geosrs:sourceCRS</link></td>
 </tr></tbody>
 </table>
 </clause>
@@ -1587,7 +1589,7 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 </clause>
 </clause>
 
-<clause id="_6dd05f52-56bd-96ed-77f3-b2cc7204094a" obligation="normative">
+<clause id="_691095d7-5a9e-ea9d-e22e-ce1c24b5e5d3" obligation="normative">
 <title id="_4ab3059e-d1fe-d0e6-e6e0-fef2aded1f5e">Datum Module</title>
 <p id="_6ee5f6b9-ecce-9491-cb59-687aeb3ad204" anchor="datum">This clause establishes the <strong>Datum</strong> Requirements class, with IRI <tt>/req/datum</tt>, which has a corresponding Conformance Class, <strong>Datum</strong>, with IRI <tt>/conf/datum</tt>.</p>
 
@@ -1786,16 +1788,16 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 </clause>
 </clause>
 
-<clause id="_a3ab8e2e-b463-b2fb-fafc-5a66a1fd4341" obligation="normative">
+<clause id="_b498a5bf-5cc9-6d20-00f9-6c880fda135f" obligation="normative">
 <title id="_bf93b7db-acea-66ad-b6ed-943ac7afc963">Spheroid Properties</title>
 <requirement id="_67d53e2f-0f5a-5691-089b-58bf32e40f00" model="ogc" anchor="/req/Spheroid_Properties">
 <title>Spheroid Properties</title> 
 <identifier>/req/Spheroid_Properties</identifier><description><p id="_75a0ae12-aaba-28a9-7afd-48796e61fe51">Implementations shall allow the RDFS properties <eref bibitemid="Property_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>eccentricity</referenceFrom></locality></localityStack><display-text>geosrs:eccentricity</display-text></eref>, <eref bibitemid="Property_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>inverseFlattening</referenceFrom></locality></localityStack><display-text>geosrs:inverseFlattening</display-text></eref>, <eref bibitemid="Property_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>isSphere</referenceFrom></locality></localityStack><display-text>geosrs:isSphere</display-text></eref>, <eref bibitemid="Property_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>semiMajorAxis</referenceFrom></locality></localityStack><display-text>geosrs:semiMajorAxis</display-text></eref>, <eref bibitemid="Property_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>semiMinorAxis</referenceFrom></locality></localityStack><display-text>geosrs:semiMinorAxis</display-text></eref> to be used in SPARQL graph patterns.</p></description>
 </requirement>
 
-<clause id="_2545c29c-91e0-0602-8c4d-e0b838d230ec" obligation="normative">
+<clause id="_059b8228-4c2f-bc15-826f-3a373c9b5152" obligation="normative">
 <title id="_7d5c1ed3-c638-c991-80bf-0592577d1405">Property: geosrs:eccentricity</title>
-<table id="_a2719b2d-5725-2bfa-bd50-2393ab35b852"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<table id="_49fcba07-37ed-1d09-1eaa-9bec73f8c417"><colgroup><col width="50%"/><col width="50%"/></colgroup>
 <name id="_59968bd1-b1fa-a151-ccb5-84b2a32b33a4">geosrs:eccentricity</name>
 <tbody><tr id="_c98ecf94-bc66-4aa3-c64a-c7fc41e39854"><td id="_0e3200dd-ffbc-cf69-31d6-1547410efed3" valign="middle" align="left">URI</td>
 <td id="_60585141-5041-f98b-e1e7-17617149b3f7" valign="middle" align="left"><link target="https://w3id.org/geosrs/datum/eccentricity"/></td>
@@ -1807,6 +1809,8 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 <td id="_0a7ad827-a6e4-ca1f-3f55-aced1d28479a" valign="middle" align="left">xsd:double[xsd:double]</td>
 </tr><tr id="_8e868f89-ad74-185a-31e3-d07dae73ebcf"><td id="_9aaf57b8-6b7e-4b8a-59e2-f50a991821c9" valign="middle" align="left">Domain</td>
 <td id="_99f74e83-e666-15b6-27e3-d43b99568977" valign="middle" align="left"><link target="https://w3id.org/geosrs/Ellipsoid">Ellipsoid</link></td>
+</tr><tr id="_d578e142-6008-46e0-dd64-2e7ef92bf4ed"><td id="_46b58b3e-ddfd-aff7-092c-8b0a865bf487" valign="middle" align="left">Example</td>
+<td id="_df65626e-8a0c-9ce8-8f4b-9a56a5273764" valign="middle" align="left"><link target="https://opengeospatial.github.io/ontology-crs/data/def/crs/EPSG/0//geod/geosrsgeod:AiryModified1849">geosrs:eccentricity</link></td>
 </tr></tbody>
 </table>
 </clause>
@@ -1847,9 +1851,9 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 </table>
 </clause>
 
-<clause id="_802528d5-a23c-0849-a3c5-7ffb597a8516" obligation="normative">
+<clause id="_2af329d1-675a-66fc-fd9a-252f9d77bcf6" obligation="normative">
 <title id="_ea1bf7bd-75f1-6341-7658-be6633f968cf">Property: geosrs:semiMajorAxis</title>
-<table id="_c70f3573-b841-09e5-464b-6f17c4152434"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<table id="_4fc0352a-54df-7e97-70f4-0caaafc3178b"><colgroup><col width="50%"/><col width="50%"/></colgroup>
 <name id="_af05c20a-0f9a-d04f-1237-a5848e74fa03">geosrs:semiMajorAxis</name>
 <tbody><tr id="_f518bb7b-a679-64af-6720-febd9e8f2c39"><td id="_5da81245-d65b-aeca-6df9-e7664084b687" valign="middle" align="left">URI</td>
 <td id="_8e2094d9-80d5-de42-01a5-4bcce4a8d393" valign="middle" align="left"><link target="https://w3id.org/geosrs/datum/semiMajorAxis"/></td>
@@ -1861,13 +1865,15 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 <td id="_bd5d7a12-1450-122f-0033-71ab41a34d82" valign="middle" align="left">xsd:double[xsd:double]</td>
 </tr><tr id="_61412504-c343-9549-3bea-d7a1b82f752e"><td id="_e8e64b4c-7b36-3bb4-20bb-6b66371ee18e" valign="middle" align="left">Domain</td>
 <td id="_f7bb3e10-4eff-03c2-674d-7e05bd418dd0" valign="middle" align="left"><link target="https://w3id.org/geosrs/Ellipsoid">Ellipsoid</link></td>
+</tr><tr id="_f719c84b-448a-4c2d-2810-1903680ed0e2"><td id="_ec91d8ff-7b37-15b2-5319-1d51f9a3792e" valign="middle" align="left">Example</td>
+<td id="_3f031a7d-6315-5e34-5d3e-58965ec27eb7" valign="middle" align="left"><link target="https://opengeospatial.github.io/ontology-crs/data/def/crs/EPSG/0//geod/geosrsgeod:AiryModified1849">geosrs:semiMajorAxis</link></td>
 </tr></tbody>
 </table>
 </clause>
 
-<clause id="_f9ce8e8e-ef57-2709-b707-4b3ac3555944" obligation="normative">
+<clause id="_1e495fab-9089-dc3c-bfcb-976db0149974" obligation="normative">
 <title id="_e5cea6bc-22be-04b2-f43c-58b3bd93740d">Property: geosrs:semiMinorAxis</title>
-<table id="_42904257-ae5c-df07-031a-e67058b4b512"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<table id="_107121bb-9f24-580b-2816-30af2fb1d86e"><colgroup><col width="50%"/><col width="50%"/></colgroup>
 <name id="_47c82c8b-860f-2d84-b020-0c21366a0bec">geosrs:semiMinorAxis</name>
 <tbody><tr id="_87dbc27e-6e56-d4c6-8164-e45813a46a04"><td id="_a126c4ba-da92-f13a-5c03-28af33a06809" valign="middle" align="left">URI</td>
 <td id="_bf9aae36-031b-644a-350a-2fe44bc19d40" valign="middle" align="left"><link target="https://w3id.org/geosrs/datum/semiMinorAxis"/></td>
@@ -1879,6 +1885,8 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 <td id="_a9a83ca6-1b78-7603-2b30-75450d0885e8" valign="middle" align="left">xsd:double[xsd:double]</td>
 </tr><tr id="_45f078e5-2b1c-b434-e272-8e7db3d215c7"><td id="_e40cf19a-9cbb-944e-0466-b7585b7f2470" valign="middle" align="left">Domain</td>
 <td id="_a373ad32-d5f2-8fad-a1b5-32f5021367ab" valign="middle" align="left"><link target="https://w3id.org/geosrs/Ellipsoid">Ellipsoid</link></td>
+</tr><tr id="_d7a411c4-24bd-5941-a2ee-e5a27ecf22ea"><td id="_b201dfb1-3f03-c4a2-f3be-2402574871cb" valign="middle" align="left">Example</td>
+<td id="_1088cc43-dec6-e972-ba03-ede4c7b321e1" valign="middle" align="left"><link target="https://opengeospatial.github.io/ontology-crs/data/def/crs/EPSG/0//geod/geosrsgeod:AiryModified1849">geosrs:semiMinorAxis</link></td>
 </tr></tbody>
 </table>
 </clause>

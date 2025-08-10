@@ -217,7 +217,7 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 </tr><tr id="_10bbe609-51c7-a8bf-01ec-9c0c77e10c9f"><td id="_67f06b9d-2ab5-bfff-b38e-808ebd4a3d6c" valign="middle" align="left">Definition</td>
 <td id="_fc03ba14-9877-f6d6-73ec-2122e6241d4d" valign="middle" align="left">Area within which a coordinate operation may be used.</td>
 </tr><tr id="_14f53ff3-4b8d-db36-b119-3b4aaef2d9b4"><td id="_1e33bca4-aa99-2ba7-195e-05cd03b30b12" valign="middle" align="left">Example</td>
-<td id="_3ff36b05-de2c-57ed-0653-1638915b534f" valign="middle" align="left"><link target="https://opengeospatial.github.io/ontology-crs/data/def/crs/EPSG/0//29903_area_of_use">geosrs:AreaOfUse</link></td>
+<td id="_3ff36b05-de2c-57ed-0653-1638915b534f" valign="middle" align="left"><link target="https://opengeospatial.github.io/ontology-crs/data/def/crs//areaofuse/Irish_Grid_area_of_use">geosrs:AreaOfUse</link></td>
 </tr></tbody>
 </table>
 </clause>
@@ -1544,7 +1544,7 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 </clause>
 </clause>
 
-<clause id="_9d0d587e-0cdc-c36e-16e7-6bcf063d7e27" obligation="normative">
+<clause id="_6dd05f52-56bd-96ed-77f3-b2cc7204094a" obligation="normative">
 <title id="_4ab3059e-d1fe-d0e6-e6e0-fef2aded1f5e">Datum Module</title>
 <p id="_6ee5f6b9-ecce-9491-cb59-687aeb3ad204" anchor="datum">This clause establishes the <strong>Datum</strong> Requirements class, with IRI <tt>/req/datum</tt>, which has a corresponding Conformance Class, <strong>Datum</strong>, with IRI <tt>/conf/datum</tt>.</p>
 
@@ -1651,7 +1651,7 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 </clause>
 </clause>
 
-<clause id="_a9850199-3fae-4c59-c2fe-4e4a0a38efce" obligation="normative">
+<clause id="_b12015e8-d11c-4428-d7c1-f3ca13f47549" obligation="normative">
 <title id="_4b415edd-66e6-b482-035f-7eb167927904">Datum Types</title>
 <requirement id="_8b36cbe4-223a-be95-22f8-c20c2d2473fa" model="ogc" anchor="/req/Datum_Types">
 <title>Datum Types</title> 
@@ -1672,9 +1672,9 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 </table>
 </clause>
 
-<clause id="_1898fb85-e5c5-8a94-5c36-61e7570583d3" obligation="normative">
+<clause id="_775a18ef-d075-e1de-5850-5b532c628db6" obligation="normative">
 <title id="_817846e7-58f2-1d5c-035a-e4925bece644">Class: geosrs:DynamicVerticalDatum</title>
-<table id="_ca4683fa-e145-79f3-3e88-f2f0fd38aa38"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<table id="_c77c1856-5340-1624-db10-88e134d72ebf"><colgroup><col width="50%"/><col width="50%"/></colgroup>
 <name id="_91e68649-bf36-964c-4b20-ad70df7b6071">geosrs:DynamicVerticalDatum</name>
 <tbody><tr id="_b3fdb2e6-d668-49bf-912b-658689d8e8e6"><td id="_fc0fe0cc-73b8-a36d-e106-ba75f634a6ae" valign="middle" align="left">URI</td>
 <td id="_45c6d533-f914-7d2b-6679-5587a05af2f9" valign="middle" align="left"><link target="https://w3id.org/geosrs/datum/DynamicVerticalDatum"/></td>
@@ -1682,6 +1682,8 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 <td id="_7181fb99-d932-03bd-119e-fe975dd9e1b7" valign="middle" align="left">Vertical reference frame in which some of the defining parameters have time dependencyExample: Defining station heights have velocity to account for post-glacial isostatic rebound motion. Cf. ISO 19111:2019 Geographic information — Referencing by coordinates.</td>
 </tr><tr id="_02526dfd-016e-f5b3-2e13-9dec325c454b"><td id="_d70e29ee-3bbf-7c57-b3ef-d8533c436e4e" valign="middle" align="left">Super-classes</td>
 <td id="_62c22f4d-2a72-0a3c-91d4-43940c7a749f" valign="middle" align="left"><link target="https://w3id.org/geosrs/datum/DynamicVerticalDatum">DynamicVerticalDatum</link></td>
+</tr><tr id="_df05d907-f21a-4cc6-84de-009916f793b1"><td id="_fcce8950-a494-c05a-2c44-86197f5c5f75" valign="middle" align="left">Example</td>
+<td id="_083eefa6-2089-edc8-a38f-fdc41cc111a1" valign="middle" align="left"><link target="https://opengeospatial.github.io/ontology-crs/data/def/crs//datum/Norway_Normal_Null_2000">geosrs:DynamicVerticalDatum</link></td>
 </tr></tbody>
 </table>
 </clause>

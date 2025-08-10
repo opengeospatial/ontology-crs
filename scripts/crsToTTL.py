@@ -85,6 +85,7 @@ def crsToTTL(ttl,curcrs,x,geodcounter,crsclass):
 			else:
 				ttl.add("geosrsaxis:"+axisid+" geosrs:unit \""+axis.unit_name+"\" . \n")
 				ttl.add("geosrsaxis:"+axisid+" rdfs:label \""+axis.name+" ("+str(axis.unit_name)+")\"@en . \n")	
+			examples["geosrs:AxisDirection"]=websitensshort+"/cs/axis/direction/"+axis.direction	
 			examples["geosrs:CoordinateSystemAxis"]=websitensshort+"/cs/axis/"+str(axisid)
 		ttl.add("geoepsg:"+epsgcode+"_cs geosrs:asWKT \""+str(curcrs.coordinate_system.to_wkt()).replace("\"","'").replace("\n","")+"\" . \n")
 		ttl.add("geoepsg:"+epsgcode+"_cs geosrs:asProjJSON \""+str(curcrs.coordinate_system.to_json()).replace("\"","'").replace("\n","")+"\" . \n")
@@ -94,8 +95,10 @@ def crsToTTL(ttl,curcrs,x,geodcounter,crsclass):
 		ttl.add("geoepsg:"+epsgcode+" geosrs:coordinateSystem \""+str(curcrs.coordinate_system)+"\"^^xsd:string . \n")
 	if curcrs.source_crs!=None:
 		ttl.add("geoepsg:"+epsgcode+" geosrs:sourceCRS geoepsg:"+str(curcrs.source_crs.to_epsg())+" . \n")
+		examples["geosrs:sourceCRS"]=websitens+"/"+epsgcode	
 	if curcrs.target_crs!=None:
 		ttl.add("geoepsg:"+epsgcode+" geosrs:targetCRS geoepsg:"+str(curcrs.target_crs.to_epsg())+" . \n")
+		examples["geosrs:targetCRS"]=websitens+"/"+epsgcode	
 	if curcrs.area_of_use!=None:
 		ttl.add("geoepsg:"+epsgcode+" geosrs:area_of_use geoepsg:"+epsgcode+"_area_of_use . \n")
 		ttl.add("geoepsg:"+epsgcode+"_area_of_use"+" rdf:type geosrs:AreaOfUse .\n")
@@ -131,10 +134,14 @@ def crsToTTL(ttl,curcrs,x,geodcounter,crsclass):
 			ttl.add(geoid+" geosrs:approximates geosrsisbody:Earth . \n")
 		ttl.add(geoid+" skos:definition \""+str(curcrs.get_geod().initstring)+"\"^^xsd:string . \n")
 		ttl.add(geoid+" geosrs:eccentricity \""+str(curcrs.get_geod().es)+"\"^^xsd:double . \n")
+		examples["geosrs:eccentricity"]=websitens+"/geod/"+geoid	
 		ttl.add(geoid+" geosrs:isSphere \""+str(curcrs.get_geod().sphere)+"\"^^xsd:boolean . \n")
 		ttl.add(geoid+" geosrs:semiMajorAxis \""+str(curcrs.get_geod().a)+"\"^^xsd:string . \n")
+		examples["geosrs:semiMajorAxis"]=websitens+"/geod/"+geoid	
 		ttl.add(geoid+" geosrs:semiMinorAxis \""+str(curcrs.get_geod().b)+"\"^^xsd:string . \n")
+		examples["geosrs:semiMinorAxis"]=websitens+"/geod/"+geoid	
 		ttl.add(geoid+" geosrs:flatteningParameter \""+str(curcrs.get_geod().f)+"\"^^xsd:double . \n")
+		examples["geosrs:flatteningParameter"]=websitens+"/geod/"+geoid	
 		geodcounter+=1
 	if curcrs.coordinate_operation!=None:
 		coordoperationid=curcrs.coordinate_operation.name.replace(" ","_").replace("(","_").replace(")","_").replace("/","_").replace("'","_").replace(",","_").replace("&","and").strip()

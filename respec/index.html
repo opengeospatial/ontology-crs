@@ -1882,15 +1882,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <dl>
 <dt class="hdlist1">requirement</dt>
 <dd>
-<p>/req/Coordinate_System_Types</p>
-</dd>
-<dt class="hdlist1">requirement</dt>
-<dd>
-<p>/req/Celestial_Coordinate_Systems</p>
-</dd>
-<dt class="hdlist1">requirement</dt>
-<dd>
-<p>/req/Orthogonal_Coordinate_Systems</p>
+<p>/req/Temporal_Coordinate_Systems</p>
 </dd>
 <dt class="hdlist1">requirement</dt>
 <dd>
@@ -1898,7 +1890,11 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 </dd>
 <dt class="hdlist1">requirement</dt>
 <dd>
-<p>/req/Temporal_Coordinate_Systems</p>
+<p>/req/Coordinate_System_Types</p>
+</dd>
+<dt class="hdlist1">requirement</dt>
+<dd>
+<p>/req/Celestial_Coordinate_Systems</p>
 </dd>
 <dt class="hdlist1">requirement</dt>
 <dd>
@@ -1918,14 +1914,66 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <div class="title">Example 11. 3D Coordinate Systems</div>
 <div class="content">
 <p class="paragraph">
-<p>Implementations shall allow the RDFS classes <a href="#_class_geosrscylindricalcoordinatesystem"><code>geosrs:CylindricalCoordinateSystem</code></a>, <a href="#Class: geosrs:SphericalCoordinateSystem"><code>geosrs:SphericalCoordinateSystem</code></a> to be used in SPARQL graph patterns.</p>
+<p>Implementations shall allow the RDFS classes <a href="#_class_geosrs3dcoordinatesystem"><code>geosrs:3DCoordinateSystem</code></a>, <a href="#_class_geosrsconicalcoordinatesystem"><code>geosrs:ConicalCoordinateSystem</code></a>, <a href="#_class_geosrscylindricalcoordinatesystem"><code>geosrs:CylindricalCoordinateSystem</code></a>, <a href="#Class: geosrs:EllipsoidalCoordinateSystem"><code>geosrs:EllipsoidalCoordinateSystem</code></a>, <a href="#Class: geosrs:SphericalCoordinateSystem"><code>geosrs:SphericalCoordinateSystem</code></a> to be used in SPARQL graph patterns.</p>
 </p>
 </div>
 </aside>
 <section class="sect4">
+<h5 id="_class_geosrs3dcoordinatesystem">Class: geosrs:3DCoordinateSystem</h5>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Table 54. geosrs:3DCoordinateSystem</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/cs/3DCoordinateSystem">https://w3id.org/geosrs/cs/3DCoordinateSystem</a></p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Definition</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Non-repeating sequence of coordinate system axes that spans a given coordinate space in three dimensions</p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/cs/3DCoordinateSystem">3DCoordinateSystem</a></p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Example</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://opengeospatial.github.io/ontology-crs/data/def/crs/EPSG/0//20045_cs" target="_blank">geosrs:3DCoordinateSystem</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sect4">
+<h5 id="_class_geosrsconicalcoordinatesystem">Class: geosrs:ConicalCoordinateSystem</h5>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Table 55. geosrs:ConicalCoordinateSystem</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/cs/ConicalCoordinateSystem">https://w3id.org/geosrs/cs/ConicalCoordinateSystem</a></p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Definition</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">A conical coordinate system is a three-dimensional orthogonal coordinate system consisting of concentric spheres (described by their radius r) and by two families of perpendicular cones, aligned along the z- and x-axes, respectively</p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/cs/ConicalCoordinateSystem">ConicalCoordinateSystem</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sect4">
 <h5 id="_class_geosrscylindricalcoordinatesystem">Class: geosrs:CylindricalCoordinateSystem</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 54. geosrs:CylindricalCoordinateSystem</caption>
+<caption class="title">Table 56. geosrs:CylindricalCoordinateSystem</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -1960,7 +2008,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrscelestialcoordinatesystem">Class: geosrs:CelestialCoordinateSystem</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 55. geosrs:CelestialCoordinateSystem</caption>
+<caption class="title">Table 57. geosrs:CelestialCoordinateSystem</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -1984,7 +2032,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrseclipticcoordinatesystem">Class: geosrs:EclipticCoordinateSystem</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 56. geosrs:EclipticCoordinateSystem</caption>
+<caption class="title">Table 58. geosrs:EclipticCoordinateSystem</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -2008,7 +2056,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrsequatorialcoordinatesystem">Class: geosrs:EquatorialCoordinateSystem</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 57. geosrs:EquatorialCoordinateSystem</caption>
+<caption class="title">Table 59. geosrs:EquatorialCoordinateSystem</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -2032,7 +2080,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrsgalacticcoordinatesystem">Class: geosrs:GalacticCoordinateSystem</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 58. geosrs:GalacticCoordinateSystem</caption>
+<caption class="title">Table 60. geosrs:GalacticCoordinateSystem</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -2056,7 +2104,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrshorizontalcoordinatesystem">Class: geosrs:HorizontalCoordinateSystem</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 59. geosrs:HorizontalCoordinateSystem</caption>
+<caption class="title">Table 61. geosrs:HorizontalCoordinateSystem</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -2080,7 +2128,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrsperifocalcoordinatesystem">Class: geosrs:PerifocalCoordinateSystem</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 60. geosrs:PerifocalCoordinateSystem</caption>
+<caption class="title">Table 62. geosrs:PerifocalCoordinateSystem</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -2104,7 +2152,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_class_geosrssupergalacticcs">Class: geosrs:SuperGalacticCS</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 61. geosrs:SuperGalacticCS</caption>
+<caption class="title">Table 63. geosrs:SuperGalacticCS</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -2150,7 +2198,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_property_geosrsaxis">Property: geosrs:axis</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 62. geosrs:axis</caption>
+<caption class="title">Table 64. geosrs:axis</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -2182,7 +2230,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_property_geosrsaxisdirection">Property: geosrs:axisDirection</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 63. geosrs:axisDirection</caption>
+<caption class="title">Table 65. geosrs:axisDirection</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -2222,62 +2270,10 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <div class="title">Example 15. Coordinate System Types</div>
 <div class="content">
 <p class="paragraph">
-<p>Implementations shall allow the RDFS classes <a href="#_class_geosrs1dcoordinatesystem"><code>geosrs:1DCoordinateSystem</code></a>, <a href="#_class_geosrs3dcoordinatesystem"><code>geosrs:3DCoordinateSystem</code></a>, <a href="#Class: geosrs:CoordinateSystem"><code>geosrs:CoordinateSystem</code></a>, <a href="#_class_geosrsaffinecoordinatesystem"><code>geosrs:AffineCoordinateSystem</code></a>, <a href="#_class_geosrsbarycentriccoordinatesystem"><code>geosrs:BarycentricCoordinateSystem</code></a>, <a href="#Class: geosrs:CartesianCoordinateSystem"><code>geosrs:CartesianCoordinateSystem</code></a>, <a href="#_class_geosrscurvilinearcoordinatesystem"><code>geosrs:CurvilinearCoordinateSystem</code></a>, <a href="#_class_geosrsengineeringcoordinatesystem"><code>geosrs:EngineeringCoordinateSystem</code></a>, <a href="#_class_geosrsgeodeticcoordinatesystem"><code>geosrs:GeodeticCoordinateSystem</code></a>, <a href="#_class_geosrsgeographicalcoordinatesystem"><code>geosrs:GeographicalCoordinateSystem</code></a>, <a href="#_class_geosrsgridcoordinatesystem"><code>geosrs:GridCoordinateSystem</code></a>, <a href="#_class_geosrshexagonalcoordinatesystem"><code>geosrs:HexagonalCoordinateSystem</code></a>, <a href="#_class_geosrslocalcoordinatesystem"><code>geosrs:LocalCoordinateSystem</code></a>, <a href="#_class_geosrsobliquecoordinatesystem"><code>geosrs:ObliqueCoordinateSystem</code></a>, <a href="#Class: geosrs:OrdinalCoordinateSystem"><code>geosrs:OrdinalCoordinateSystem</code></a>, <a href="#_class_geosrsorthogonalcoordinatesystem"><code>geosrs:OrthogonalCoordinateSystem</code></a>, <a href="#Class: geosrs:ParametricCoordinateSystem"><code>geosrs:ParametricCoordinateSystem</code></a>, <a href="#_class_geosrsplanarcoordinatesystem"><code>geosrs:PlanarCoordinateSystem</code></a>, <a href="#Class: geosrs:PolarCoordinateSystem"><code>geosrs:PolarCoordinateSystem</code></a>, <a href="#Class: geosrs:VerticalCoordinateSystem"><code>geosrs:VerticalCoordinateSystem</code></a> to be used in SPARQL graph patterns.</p>
+<p>Implementations shall allow the RDFS classes <a href="#Class: geosrs:CoordinateSystem"><code>geosrs:CoordinateSystem</code></a>, <a href="#_class_geosrsaffinecoordinatesystem"><code>geosrs:AffineCoordinateSystem</code></a>, <a href="#_class_geosrsbarycentriccoordinatesystem"><code>geosrs:BarycentricCoordinateSystem</code></a>, <a href="#Class: geosrs:CartesianCoordinateSystem"><code>geosrs:CartesianCoordinateSystem</code></a>, <a href="#_class_geosrscurvilinearcoordinatesystem"><code>geosrs:CurvilinearCoordinateSystem</code></a>, <a href="#_class_geosrsengineeringcoordinatesystem"><code>geosrs:EngineeringCoordinateSystem</code></a>, <a href="#_class_geosrsgeodeticcoordinatesystem"><code>geosrs:GeodeticCoordinateSystem</code></a>, <a href="#_class_geosrsgeographicalcoordinatesystem"><code>geosrs:GeographicalCoordinateSystem</code></a>, <a href="#_class_geosrsgridcoordinatesystem"><code>geosrs:GridCoordinateSystem</code></a>, <a href="#_class_geosrshexagonalcoordinatesystem"><code>geosrs:HexagonalCoordinateSystem</code></a>, <a href="#_class_geosrslocalcoordinatesystem"><code>geosrs:LocalCoordinateSystem</code></a>, <a href="#_class_geosrsobliquecoordinatesystem"><code>geosrs:ObliqueCoordinateSystem</code></a>, <a href="#Class: geosrs:OrdinalCoordinateSystem"><code>geosrs:OrdinalCoordinateSystem</code></a>, <a href="#_class_geosrsorthogonalcoordinatesystem"><code>geosrs:OrthogonalCoordinateSystem</code></a>, <a href="#Class: geosrs:ParametricCoordinateSystem"><code>geosrs:ParametricCoordinateSystem</code></a>, <a href="#_class_geosrsplanarcoordinatesystem"><code>geosrs:PlanarCoordinateSystem</code></a>, <a href="#Class: geosrs:PolarCoordinateSystem"><code>geosrs:PolarCoordinateSystem</code></a>, <a href="#Class: geosrs:VerticalCoordinateSystem"><code>geosrs:VerticalCoordinateSystem</code></a> to be used in SPARQL graph patterns.</p>
 </p>
 </div>
 </aside>
-<section class="sect4">
-<h5 id="_class_geosrs1dcoordinatesystem">Class: geosrs:1DCoordinateSystem</h5>
-<table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 64. geosrs:1DCoordinateSystem</caption>
-<colgroup>
-<col style="width: 50%;">
-<col style="width: 50%;">
-</colgroup>
-<tbody>
-<tr>
-  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
-  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/cs/1DCoordinateSystem">https://w3id.org/geosrs/cs/1DCoordinateSystem</a></p></td>
-</tr>
-<tr>
-  <td class="tableblock halign-left valign-top"><p class="tableblock">Definition</p></td>
-  <td class="tableblock halign-left valign-top"><p class="tableblock">Non-repeating sequence of coordinate system axes that spans a given coordinate space in one dimension</p></td>
-</tr>
-<tr>
-  <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
-  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/cs/1DCoordinateSystem">1DCoordinateSystem</a></p></td>
-</tr>
-</tbody>
-</table>
-</section>
-<section class="sect4">
-<h5 id="_class_geosrs3dcoordinatesystem">Class: geosrs:3DCoordinateSystem</h5>
-<table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 65. geosrs:3DCoordinateSystem</caption>
-<colgroup>
-<col style="width: 50%;">
-<col style="width: 50%;">
-</colgroup>
-<tbody>
-<tr>
-  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
-  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/cs/3DCoordinateSystem">https://w3id.org/geosrs/cs/3DCoordinateSystem</a></p></td>
-</tr>
-<tr>
-  <td class="tableblock halign-left valign-top"><p class="tableblock">Definition</p></td>
-  <td class="tableblock halign-left valign-top"><p class="tableblock">Non-repeating sequence of coordinate system axes that spans a given coordinate space in three dimensions</p></td>
-</tr>
-<tr>
-  <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
-  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/cs/3DCoordinateSystem">3DCoordinateSystem</a></p></td>
-</tr>
-<tr>
-  <td class="tableblock halign-left valign-top"><p class="tableblock">Example</p></td>
-  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://opengeospatial.github.io/ontology-crs/data/def/crs/EPSG/0//20045_cs" target="_blank">geosrs:3DCoordinateSystem</a></p></td>
-</tr>
-</tbody>
-</table>
-</section>
 <section class="sect4">
 <h5 id="_class_geosrsaffinecoordinatesystem">Class: geosrs:AffineCoordinateSystem</h5>
 <table class="tableblock frame-all grid-all spread">
@@ -2572,19 +2568,19 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 </section>
 </section>
 <section class="sect3">
-<h4 id="_orthogonal_coordinate_systems">Orthogonal Coordinate Systems</h4>
+<h4 id="_temporal_coordinate_systems">Temporal Coordinate Systems</h4>
 <aside class="example">
-<div class="title">Example 16. Orthogonal Coordinate Systems</div>
+<div class="title">Example 16. Temporal Coordinate Systems</div>
 <div class="content">
 <p class="paragraph">
-<p>Implementations shall allow the RDFS classes <a href="#_class_geosrsconicalcoordinatesystem"><code>geosrs:ConicalCoordinateSystem</code></a>, <a href="#Class: geosrs:EllipsoidalCoordinateSystem"><code>geosrs:EllipsoidalCoordinateSystem</code></a> to be used in SPARQL graph patterns.</p>
+<p>Implementations shall allow the RDFS classes <a href="#_class_geosrs1dcoordinatesystem"><code>geosrs:1DCoordinateSystem</code></a>, <a href="#_class_geosrsdatetimetemporalcoordinatesystem"><code>geosrs:DateTimeTemporalCoordinateSystem</code></a>, <a href="#_class_geosrstemporalcountcoordinatesystem"><code>geosrs:TemporalCountCoordinateSystem</code></a>, <a href="#_class_geosrstemporalcoordinatesystem"><code>geosrs:TemporalCoordinateSystem</code></a>, <a href="#_class_geosrstemporalmeasurecoordinatesystem"><code>geosrs:TemporalMeasureCoordinateSystem</code></a> to be used in SPARQL graph patterns.</p>
 </p>
 </div>
 </aside>
 <section class="sect4">
-<h5 id="_class_geosrsconicalcoordinatesystem">Class: geosrs:ConicalCoordinateSystem</h5>
+<h5 id="_class_geosrs1dcoordinatesystem">Class: geosrs:1DCoordinateSystem</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 78. geosrs:ConicalCoordinateSystem</caption>
+<caption class="title">Table 78. geosrs:1DCoordinateSystem</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -2592,30 +2588,19 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <tbody>
 <tr>
   <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
-  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/cs/ConicalCoordinateSystem">https://w3id.org/geosrs/cs/ConicalCoordinateSystem</a></p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/cs/1DCoordinateSystem">https://w3id.org/geosrs/cs/1DCoordinateSystem</a></p></td>
 </tr>
 <tr>
   <td class="tableblock halign-left valign-top"><p class="tableblock">Definition</p></td>
-  <td class="tableblock halign-left valign-top"><p class="tableblock">A conical coordinate system is a three-dimensional orthogonal coordinate system consisting of concentric spheres (described by their radius r) and by two families of perpendicular cones, aligned along the z- and x-axes, respectively</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Non-repeating sequence of coordinate system axes that spans a given coordinate space in one dimension</p></td>
 </tr>
 <tr>
   <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
-  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/cs/ConicalCoordinateSystem">ConicalCoordinateSystem</a></p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/cs/1DCoordinateSystem">1DCoordinateSystem</a></p></td>
 </tr>
 </tbody>
 </table>
 </section>
-</section>
-<section class="sect3">
-<h4 id="_temporal_coordinate_systems">Temporal Coordinate Systems</h4>
-<aside class="example">
-<div class="title">Example 17. Temporal Coordinate Systems</div>
-<div class="content">
-<p class="paragraph">
-<p>Implementations shall allow the RDFS classes <a href="#_class_geosrsdatetimetemporalcoordinatesystem"><code>geosrs:DateTimeTemporalCoordinateSystem</code></a>, <a href="#_class_geosrstemporalcountcoordinatesystem"><code>geosrs:TemporalCountCoordinateSystem</code></a>, <a href="#_class_geosrstemporalcoordinatesystem"><code>geosrs:TemporalCoordinateSystem</code></a>, <a href="#_class_geosrstemporalmeasurecoordinatesystem"><code>geosrs:TemporalMeasureCoordinateSystem</code></a> to be used in SPARQL graph patterns.</p>
-</p>
-</div>
-</aside>
 <section class="sect4">
 <h5 id="_class_geosrsdatetimetemporalcoordinatesystem">Class: geosrs:DateTimeTemporalCoordinateSystem</h5>
 <table class="tableblock frame-all grid-all spread">
@@ -2722,7 +2707,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <p>This clause establishes the <strong>Datum</strong> Requirements class, with IRI <code>/req/datum</code>, which has a corresponding Conformance Class, <strong>Datum</strong>, with IRI <code>/conf/datum</code>.</p>
 </p>
 <aside class="example">
-<div class="title">Example 18. 09-datum_module.adoc Extension</div>
+<div class="title">Example 17. 09-datum_module.adoc Extension</div>
 <div class="content">
 <div class="dlist">
 <dl>
@@ -2753,7 +2738,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect3">
 <h4 id="_datum_parameters">Datum Parameters</h4>
 <aside class="example">
-<div class="title">Example 19. Datum Parameters</div>
+<div class="title">Example 18. Datum Parameters</div>
 <div class="content">
 <p class="paragraph">
 <p>Implementations shall allow the RDFS classes <a href="#Class: geosrs:PrimeMeridian"><code>geosrs:PrimeMeridian</code></a>, <a href="#_class_geosrsdefiningparameter"><code>geosrs:DefiningParameter</code></a> to be used in SPARQL graph patterns.</p>
@@ -2784,7 +2769,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect3">
 <h4 id="_datum_properties">Datum Properties</h4>
 <aside class="example">
-<div class="title">Example 20. Datum Properties</div>
+<div class="title">Example 19. Datum Properties</div>
 <div class="content">
 <p class="paragraph">
 <p>Implementations shall allow the RDFS properties <a href="#_property_geosrsdatumdefiningparameter"><code>geosrs:datumDefiningParameter</code></a>, <a href="#_property_geosrsellipsoid"><code>geosrs:ellipsoid</code></a>, <a href="#_property_geosrsprimemeridian"><code>geosrs:primeMeridian</code></a> to be used in SPARQL graph patterns.</p>
@@ -2891,7 +2876,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect3">
 <h4 id="_datum_types">Datum Types</h4>
 <aside class="example">
-<div class="title">Example 21. Datum Types</div>
+<div class="title">Example 20. Datum Types</div>
 <div class="content">
 <p class="paragraph">
 <p>Implementations shall allow the RDFS classes <a href="#Class: geosrs:Datum"><code>geosrs:Datum</code></a>, <a href="#Class: geosrs:GeodeticDatum"><code>geosrs:GeodeticDatum</code></a>, <a href="#_class_geosrsdynamicgeodeticreferenceframe"><code>geosrs:DynamicGeodeticReferenceFrame</code></a>, <a href="#Class: geosrs:VerticalDatum"><code>geosrs:VerticalDatum</code></a>, <a href="#_class_geosrsdynamicverticaldatum"><code>geosrs:DynamicVerticalDatum</code></a>, <a href="#_class_geosrsparametricdatum"><code>geosrs:ParametricDatum</code></a>, <a href="#_class_geosrsengineeringdatum"><code>geosrs:EngineeringDatum</code></a>, <a href="#_class_geosrstemporaldatum"><code>geosrs:TemporalDatum</code></a>, <a href="#_class_geosrsdatumensemble"><code>geosrs:DatumEnsemble</code></a> to be used in SPARQL graph patterns.</p>
@@ -3047,7 +3032,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect3">
 <h4 id="_spheroid_properties">Spheroid Properties</h4>
 <aside class="example">
-<div class="title">Example 22. Spheroid Properties</div>
+<div class="title">Example 21. Spheroid Properties</div>
 <div class="content">
 <p class="paragraph">
 <p>Implementations shall allow the RDFS properties <a href="#_property_geosrseccentricity"><code>geosrs:eccentricity</code></a>, <a href="#_property_geosrsinverseflattening"><code>geosrs:inverseFlattening</code></a>, <a href="#_property_geosrsissphere"><code>geosrs:isSphere</code></a>, <a href="#_property_geosrssemimajoraxis"><code>geosrs:semiMajorAxis</code></a>, <a href="#_property_geosrssemiminoraxis"><code>geosrs:semiMinorAxis</code></a> to be used in SPARQL graph patterns.</p>
@@ -3230,7 +3215,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect3">
 <h4 id="_spheroid_types">Spheroid Types</h4>
 <aside class="example">
-<div class="title">Example 23. Spheroid Types</div>
+<div class="title">Example 22. Spheroid Types</div>
 <div class="content">
 <p class="paragraph">
 <p>Implementations shall allow the RDFS classes <a href="#Class: geosrs:Ellipsoid"><code>geosrs:Ellipsoid</code></a>, <a href="#_class_geosrstriaxialellipsoid"><code>geosrs:TriaxialEllipsoid</code></a> to be used in SPARQL graph patterns.</p>
@@ -3267,7 +3252,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <p>This clause establishes the <strong>SRSAPP</strong> Requirements class, with IRI <code>/req/srsapp</code>, which has a corresponding Conformance Class, <strong>SRSAPP</strong>, with IRI <code>/conf/srsapp</code>.</p>
 </p>
 <aside class="example">
-<div class="title">Example 24. 10-srsapplication_module.adoc Extension</div>
+<div class="title">Example 23. 10-srsapplication_module.adoc Extension</div>
 <div class="content">
 <div class="dlist">
 <dl>
@@ -3286,7 +3271,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect3">
 <h4 id="_map_types">Map Types</h4>
 <aside class="example">
-<div class="title">Example 25. Map Types</div>
+<div class="title">Example 24. Map Types</div>
 <div class="content">
 <p class="paragraph">
 <p>Implementations shall allow the RDFS classes <a href="#_class_geosrscadastremap"><code>geosrs:CadastreMap</code></a>, <a href="#_class_geosrsnauticalchart"><code>geosrs:NauticalChart</code></a>, <a href="#_class_geosrsthematicmap"><code>geosrs:ThematicMap</code></a>, <a href="#_class_geosrstopographicmap"><code>geosrs:TopographicMap</code></a>, <a href="#_class_geosrsweathermap"><code>geosrs:WeatherMap</code></a> to be used in SPARQL graph patterns.</p>
@@ -3417,7 +3402,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect3">
 <h4 id="_srs_application_types">SRS Application Types</h4>
 <aside class="example">
-<div class="title">Example 26. SRS Application Types</div>
+<div class="title">Example 25. SRS Application Types</div>
 <div class="content">
 <p class="paragraph">
 <p>Implementations shall allow the RDFS classes <a href="#_class_geosrssrsapplication"><code>geosrs:SRSApplication</code></a>, <a href="#_class_geosrsspatialreferencing"><code>geosrs:SpatialReferencing</code></a>, <a href="#_class_geosrsengineeringsurvey"><code>geosrs:EngineeringSurvey</code></a>, <a href="#_class_geosrssatellitesurvey"><code>geosrs:SatelliteSurvey</code></a>, <a href="#_class_geosrssatellitenavigation"><code>geosrs:SatelliteNavigation</code></a>, <a href="#_class_geosrscoastalhydrography"><code>geosrs:CoastalHydrography</code></a>, <a href="#_class_geosrsoffshoreengineering"><code>geosrs:OffshoreEngineering</code></a>, <a href="#_class_geosrshydrography"><code>geosrs:Hydrography</code></a>, <a href="#_class_geosrsdrilling"><code>geosrs:Drilling</code></a>, <a href="#_class_geosrsoilandgasexploration"><code>geosrs:OilAndGasExploration</code></a> to be used in SPARQL graph patterns.</p>
@@ -3634,7 +3619,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <p>This clause establishes the <strong>PROJ</strong> Requirements class, with IRI <code>/req/proj</code>, which has a corresponding Conformance Class, <strong>PROJ</strong>, with IRI <code>/conf/proj</code>.</p>
 </p>
 <aside class="example">
-<div class="title">Example 27. 11-projections_module.adoc Extension</div>
+<div class="title">Example 26. 11-projections_module.adoc Extension</div>
 <div class="content">
 <div class="dlist">
 <dl>
@@ -3713,7 +3698,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect3">
 <h4 id="_azimuthal_projections">Azimuthal Projections</h4>
 <aside class="example">
-<div class="title">Example 28. Azimuthal Projections</div>
+<div class="title">Example 27. Azimuthal Projections</div>
 <div class="content">
 <p class="paragraph">
 <p>Implementations shall allow the RDFS classes <a href="#_class_geosrsbreusinggeometricprojection"><code>geosrs:BreusingGeometricProjection</code></a>, <a href="#_class_geosrsbreusingharmonicprojection"><code>geosrs:BreusingHarmonicProjection</code></a>, <a href="#_class_geosrsginzburgiiprojection"><code>geosrs:GinzburgIIProjection</code></a>, <a href="#_class_geosrsginzburgiprojection"><code>geosrs:GinzburgIProjection</code></a>, <a href="#_class_geosrsgnomonicprojection"><code>geosrs:GnomonicProjection</code></a>, <a href="#_class_geosrsjamesazimuthalprojection"><code>geosrs:JamesAzimuthalProjection</code></a> to be used in SPARQL graph patterns.</p>
@@ -3844,7 +3829,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect3">
 <h4 id="_compromise_projections">Compromise Projections</h4>
 <aside class="example">
-<div class="title">Example 29. Compromise Projections</div>
+<div class="title">Example 28. Compromise Projections</div>
 <div class="content">
 <p class="paragraph">
 <p>Implementations shall allow the RDFS classes <a href="#_class_geosrsarmadilloprojection"><code>geosrs:ArmadilloProjection</code></a>, <a href="#_class_geosrsbakerdinomicprojection"><code>geosrs:BakerDinomicProjection</code></a>, <a href="#_class_geosrsbertinprojection"><code>geosrs:BertinProjection</code></a>, <a href="#_class_geosrschamberlintrimetricprojection"><code>geosrs:ChamberlinTrimetricProjection</code></a>, <a href="#_class_geosrsdenoyersemiellipticalprojection"><code>geosrs:DenoyerSemiEllipticalProjection</code></a>, <a href="#_class_geosrsfairgrieveprojection"><code>geosrs:FairgrieveProjection</code></a>, <a href="#_class_geosrslarriveeprojection"><code>geosrs:LarriveeProjection</code></a>, <a href="#_class_geosrspetermannstarprojection"><code>geosrs:PetermannStarProjection</code></a>, <a href="#_class_geosrsspilhausoceanicprojection"><code>geosrs:SpilhausOceanicProjection</code></a>, <a href="#_class_geosrsvandergrinteniiiprojection"><code>geosrs:VanDerGrintenIIIProjection</code></a>, <a href="#_class_geosrswinkeliiprojection"><code>geosrs:WinkelIIProjection</code></a>, <a href="#_class_geosrswinkeliprojection"><code>geosrs:WinkelIProjection</code></a>, <a href="#_class_geosrswinkelsnyderprojection"><code>geosrs:WinkelSnyderProjection</code></a> to be used in SPARQL graph patterns.</p>
@@ -4115,7 +4100,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect3">
 <h4 id="_conformal_projections">Conformal Projections</h4>
 <aside class="example">
-<div class="title">Example 30. Conformal Projections</div>
+<div class="title">Example 29. Conformal Projections</div>
 <div class="content">
 <p class="paragraph">
 <p>Implementations shall allow the RDFS classes <a href="#_class_geosrsadamsprojection"><code>geosrs:AdamsProjection</code></a>, <a href="#_class_geosrsadamsworldinasquareiiprojection"><code>geosrs:AdamsWorldInASquareIIProjection</code></a>, <a href="#_class_geosrsadamsworldinasquareiprojection"><code>geosrs:AdamsWorldInASquareIProjection</code></a>, <a href="#_class_geosrsaugustepicycloidalprojection"><code>geosrs:AugustEpicycloidalProjection</code></a>, <a href="#_class_geosrscoxconformalprojection"><code>geosrs:CoxConformalProjection</code></a>, <a href="#_class_geosrseisenlohrprojection"><code>geosrs:EisenlohrProjection</code></a>, <a href="#_class_geosrsgs50projection"><code>geosrs:GS50Projection</code></a>, <a href="#_class_geosrspeircequincuncialprojection"><code>geosrs:PeirceQuincuncialProjection</code></a>, <a href="#_class_geosrsstereographicprojection"><code>geosrs:StereographicProjection</code></a> to be used in SPARQL graph patterns.</p>
@@ -4305,7 +4290,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 </tr>
 <tr>
   <td class="tableblock halign-left valign-top"><p class="tableblock">Example</p></td>
-  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://opengeospatial.github.io/ontology-crs/data/ont/crs//proj/StereographicProjection" target="_blank">geosrs:StereographicProjection</a></p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://opengeospatial.github.io/ontology-crs/data/ont/crs//crs/operation/IBCSO_Polar_Stereographic" target="_blank">geosrs:StereographicProjection</a></p></td>
 </tr>
 </tbody>
 </table>
@@ -4314,7 +4299,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect3">
 <h4 id="_conical_projections">Conical Projections</h4>
 <aside class="example">
-<div class="title">Example 31. Conical Projections</div>
+<div class="title">Example 30. Conical Projections</div>
 <div class="content">
 <p class="paragraph">
 <p>Implementations shall allow the RDFS classes <a href="#_class_geosrsbipolarobliqueconicconformalprojection"><code>geosrs:BipolarObliqueConicConformalProjection</code></a>, <a href="#_class_geosrscentralconicprojection"><code>geosrs:CentralConicProjection</code></a>, <a href="#_class_geosrsherschelconformalconicprojection"><code>geosrs:HerschelConformalConicProjection</code></a>, <a href="#_class_geosrskrovak"><code>geosrs:Krovak</code></a>, <a href="#_class_geosrslambertconformalconicprojection"><code>geosrs:LambertConformalConicProjection</code></a>, <a href="#_class_geosrsmurdochiiiprojection"><code>geosrs:MurdochIIIProjection</code></a>, <a href="#_class_geosrsmurdochiiprojection"><code>geosrs:MurdochIIProjection</code></a>, <a href="#_class_geosrsmurdochiprojection"><code>geosrs:MurdochIProjection</code></a>, <a href="#_class_geosrsschjerningiprojection"><code>geosrs:SchjerningIProjection</code></a>, <a href="#_class_geosrsvitkovskyiprojection"><code>geosrs:VitkovskyIProjection</code></a> to be used in SPARQL graph patterns.</p>
@@ -4400,7 +4385,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 </tr>
 <tr>
   <td class="tableblock halign-left valign-top"><p class="tableblock">Example</p></td>
-  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://opengeospatial.github.io/ontology-crs/data/ont/crs//proj/Krovak" target="_blank">geosrs:Krovak</a></p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://opengeospatial.github.io/ontology-crs/data/ont/crs//crs/operation/Krovak_East_North__Greenwich_" target="_blank">geosrs:Krovak</a></p></td>
 </tr>
 </tbody>
 </table>
@@ -4424,7 +4409,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 </tr>
 <tr>
   <td class="tableblock halign-left valign-top"><p class="tableblock">Example</p></td>
-  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://opengeospatial.github.io/ontology-crs/data/ont/crs//proj/LambertConformalConicProjection" target="_blank">geosrs:LambertConformalConicProjection</a></p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://opengeospatial.github.io/ontology-crs/data/ont/crs//crs/operation/Lambert_Corse" target="_blank">geosrs:LambertConformalConicProjection</a></p></td>
 </tr>
 </tbody>
 </table>
@@ -4533,7 +4518,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect3">
 <h4 id="_cylindrical_projections">Cylindrical Projections</h4>
 <aside class="example">
-<div class="title">Example 32. Cylindrical Projections</div>
+<div class="title">Example 31. Cylindrical Projections</div>
 <div class="content">
 <p class="paragraph">
 <p>Implementations shall allow the RDFS classes <a href="#_class_geosrsardencloseprojection"><code>geosrs:ArdenCloseProjection</code></a>, <a href="#_class_geosrsbraunperspectiveprojection"><code>geosrs:BraunPerspectiveProjection</code></a>, <a href="#_class_geosrscompactmillerprojection"><code>geosrs:CompactMillerProjection</code></a>, <a href="#_class_geosrscylindricalstereographicprojection"><code>geosrs:CylindricalStereographicProjection</code></a>, <a href="#_class_geosrskarchenkoshabanovaprojection"><code>geosrs:KarchenkoShabanovaProjection</code></a>, <a href="#_class_geosrslabordeprojection"><code>geosrs:LabordeProjection</code></a>, <a href="#_class_geosrsmercatorprojection"><code>geosrs:MercatorProjection</code></a>, <a href="#_class_geosrsmillerprojection"><code>geosrs:MillerProjection</code></a>, <a href="#_class_geosrspattersoncylindricalprojection"><code>geosrs:PattersonCylindricalProjection</code></a>, <a href="#_class_geosrspavlovprojection"><code>geosrs:PavlovProjection</code></a>, <a href="#_class_geosrstoblercylindricaliiprojection"><code>geosrs:ToblerCylindricalIIProjection</code></a>, <a href="#_class_geosrstoblercylindricaliprojection"><code>geosrs:ToblerCylindricalIProjection</code></a>, <a href="#_class_geosrsurmayeviiiprojection"><code>geosrs:UrmayevIIIProjection</code></a>, <a href="#_class_geosrswebmercatorprojection"><code>geosrs:WebMercatorProjection</code></a> to be used in SPARQL graph patterns.</p>
@@ -4659,7 +4644,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 </tr>
 <tr>
   <td class="tableblock halign-left valign-top"><p class="tableblock">Example</p></td>
-  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://opengeospatial.github.io/ontology-crs/data/ont/crs//proj/LabordeProjection" target="_blank">geosrs:LabordeProjection</a></p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://opengeospatial.github.io/ontology-crs/data/ont/crs//crs/operation/Laborde_Grid" target="_blank">geosrs:LabordeProjection</a></p></td>
 </tr>
 </tbody>
 </table>
@@ -4683,7 +4668,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 </tr>
 <tr>
   <td class="tableblock halign-left valign-top"><p class="tableblock">Example</p></td>
-  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://opengeospatial.github.io/ontology-crs/data/ont/crs//proj/MercatorProjection" target="_blank">geosrs:MercatorProjection</a></p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://opengeospatial.github.io/ontology-crs/data/ont/crs//crs/operation/Netherlands_East_Indies_Equatorial_Zone" target="_blank">geosrs:MercatorProjection</a></p></td>
 </tr>
 </tbody>
 </table>
@@ -4832,7 +4817,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect3">
 <h4 id="_equal_area_projections">Equal Area Projections</h4>
 <aside class="example">
-<div class="title">Example 33. Equal Area Projections</div>
+<div class="title">Example 32. Equal Area Projections</div>
 <div class="content">
 <p class="paragraph">
 <p>Implementations shall allow the RDFS classes <a href="#_class_geosrsalbersequalareaprojection"><code>geosrs:AlbersEqualAreaProjection</code></a>, <a href="#_class_geosrsazimuthalequalareaprojection"><code>geosrs:AzimuthalEqualAreaProjection</code></a>, <a href="#_class_geosrscylindricalequalarea"><code>geosrs:CylindricalEqualArea</code></a>, <a href="#_class_geosrsgallpetersprojection"><code>geosrs:GallPetersProjection</code></a>, <a href="#_class_geosrshobodyerprojection"><code>geosrs:HoboDyerProjection</code></a>, <a href="#_class_geosrslambertazimuthalequalarea"><code>geosrs:LambertAzimuthalEqualArea</code></a>, <a href="#_class_geosrstrystanedwardsprojection"><code>geosrs:TrystanEdwardsProjection</code></a>, <a href="#_class_geosrswiechelprojection"><code>geosrs:WiechelProjection</code></a> to be used in SPARQL graph patterns.</p>
@@ -4858,7 +4843,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 </tr>
 <tr>
   <td class="tableblock halign-left valign-top"><p class="tableblock">Example</p></td>
-  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://opengeospatial.github.io/ontology-crs/data/ont/crs//proj/AlbersEqualAreaProjection" target="_blank">geosrs:AlbersEqualAreaProjection</a></p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://opengeospatial.github.io/ontology-crs/data/ont/crs//crs/operation/Iceland_Lambert_Azimuthal_Equal_Area" target="_blank">geosrs:AlbersEqualAreaProjection</a></p></td>
 </tr>
 </tbody>
 </table>
@@ -4902,7 +4887,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 </tr>
 <tr>
   <td class="tableblock halign-left valign-top"><p class="tableblock">Example</p></td>
-  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://opengeospatial.github.io/ontology-crs/data/ont/crs//proj/CylindricalEqualArea" target="_blank">geosrs:CylindricalEqualArea</a></p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://opengeospatial.github.io/ontology-crs/data/ont/crs//crs/operation/US_NSIDC_EASE-Grid_2.0_Global" target="_blank">geosrs:CylindricalEqualArea</a></p></td>
 </tr>
 </tbody>
 </table>
@@ -5011,7 +4996,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect3">
 <h4 id="_equidistant_projections">Equidistant Projections</h4>
 <aside class="example">
-<div class="title">Example 34. Equidistant Projections</div>
+<div class="title">Example 33. Equidistant Projections</div>
 <div class="content">
 <p class="paragraph">
 <p>Implementations shall allow the RDFS classes <a href="#_class_geosrsazimuthalequidistantprojection"><code>geosrs:AzimuthalEquidistantProjection</code></a>, <a href="#_class_geosrsberghausstarprojection"><code>geosrs:BerghausStarProjection</code></a>, <a href="#_class_geosrscassiniprojection"><code>geosrs:CassiniProjection</code></a>, <a href="#_class_geosrsequidistantconicprojection"><code>geosrs:EquidistantConicProjection</code></a>, <a href="#_class_geosrsequidistantcylindricalprojection"><code>geosrs:EquidistantCylindricalProjection</code></a>, <a href="#_class_geosrsequirectangularprojection"><code>geosrs:EquirectangularProjection</code></a>, <a href="#_class_geosrsobliqueplatecarreeprojection"><code>geosrs:ObliquePlateCarreeProjection</code></a>, <a href="#_class_geosrsplatecarreeprojection"><code>geosrs:PlateCarreeProjection</code></a>, <a href="#_class_geosrstwopointequidistantprojection"><code>geosrs:TwoPointEquidistantProjection</code></a> to be used in SPARQL graph patterns.</p>
@@ -5081,7 +5066,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 </tr>
 <tr>
   <td class="tableblock halign-left valign-top"><p class="tableblock">Example</p></td>
-  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://opengeospatial.github.io/ontology-crs/data/ont/crs//proj/CassiniProjection" target="_blank">geosrs:CassiniProjection</a></p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://opengeospatial.github.io/ontology-crs/data/ont/crs//crs/operation/Israeli_CS" target="_blank">geosrs:CassiniProjection</a></p></td>
 </tr>
 </tbody>
 </table>
@@ -5125,7 +5110,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 </tr>
 <tr>
   <td class="tableblock halign-left valign-top"><p class="tableblock">Example</p></td>
-  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://opengeospatial.github.io/ontology-crs/data/ont/crs//proj/EquidistantCylindricalProjection" target="_blank">geosrs:EquidistantCylindricalProjection</a></p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://opengeospatial.github.io/ontology-crs/data/ont/crs//crs/operation/World_Equidistant_Cylindrical__Sphere_" target="_blank">geosrs:EquidistantCylindricalProjection</a></p></td>
 </tr>
 </tbody>
 </table>
@@ -5214,7 +5199,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect3">
 <h4 id="_globular_projections">Globular Projections</h4>
 <aside class="example">
-<div class="title">Example 35. Globular Projections</div>
+<div class="title">Example 34. Globular Projections</div>
 <div class="content">
 <p class="paragraph">
 <p>Implementations shall allow the RDFS classes <a href="#_class_geosrsapianglobulariprojection"><code>geosrs:ApianGlobularIProjection</code></a>, <a href="#_class_geosrsbaconglobularprojection"><code>geosrs:BaconGlobularProjection</code></a>, <a href="#_class_geosrsfournierglobulariprojection"><code>geosrs:FournierGlobularIProjection</code></a> to be used in SPARQL graph patterns.</p>
@@ -5285,7 +5270,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect3">
 <h4 id="_lenticular_projections">Lenticular Projections</h4>
 <aside class="example">
-<div class="title">Example 36. Lenticular Projections</div>
+<div class="title">Example 35. Lenticular Projections</div>
 <div class="content">
 <p class="paragraph">
 <p>Implementations shall allow the RDFS classes <a href="#_class_geosrsa4projection"><code>geosrs:A4Projection</code></a>, <a href="#_class_geosrsbriesemeisterprojection"><code>geosrs:BriesemeisterProjection</code></a>, <a href="#_class_geosrsciriciprojection"><code>geosrs:CiricIProjection</code></a>, <a href="#_class_geosrscupolaprojection"><code>geosrs:CupolaProjection</code></a>, <a href="#_class_geosrsdedistortprojection"><code>geosrs:DedistortProjection</code></a>, <a href="#_class_geosrsdietrichkitadaprojection"><code>geosrs:DietrichKitadaProjection</code></a>, <a href="#_class_geosrsfranculaiiiprojection"><code>geosrs:FranculaIIIProjection</code></a>, <a href="#_class_geosrsfranculaivprojection"><code>geosrs:FranculaIVProjection</code></a>, <a href="#_class_geosrsfranculaixprojection"><code>geosrs:FranculaIXProjection</code></a>, <a href="#_class_geosrsfranculaviiiprojection"><code>geosrs:FranculaVIIIProjection</code></a>, <a href="#_class_geosrsfranculavprojection"><code>geosrs:FranculaVProjection</code></a>, <a href="#_class_geosrsfranculaxiiiprojection"><code>geosrs:FranculaXIIIProjection</code></a>, <a href="#_class_geosrsfranculaxiiprojection"><code>geosrs:FranculaXIIProjection</code></a>, <a href="#_class_geosrsfranculaxivprojection"><code>geosrs:FranculaXIVProjection</code></a>, <a href="#_class_geosrshamusoidalprojection"><code>geosrs:HamusoidalProjection</code></a>, <a href="#_class_geosrskissprojection"><code>geosrs:KissProjection</code></a> to be used in SPARQL graph patterns.</p>
@@ -5616,7 +5601,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect3">
 <h4 id="_minimum_error_projections">Minimum Error Projections</h4>
 <aside class="example">
-<div class="title">Example 37. Minimum Error Projections</div>
+<div class="title">Example 36. Minimum Error Projections</div>
 <div class="content">
 <p class="paragraph">
 <p>Implementations shall allow the RDFS classes <a href="#_class_geosrsairyprojection"><code>geosrs:AiryProjection</code></a> to be used in SPARQL graph patterns.</p>
@@ -5651,7 +5636,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect3">
 <h4 id="_perspective_projections">Perspective Projections</h4>
 <aside class="example">
-<div class="title">Example 38. Perspective Projections</div>
+<div class="title">Example 37. Perspective Projections</div>
 <div class="content">
 <p class="paragraph">
 <p>Implementations shall allow the RDFS classes <a href="#_class_geosrscentralcylindricalprojection"><code>geosrs:CentralCylindricalProjection</code></a>, <a href="#_class_geosrsgeneralverticalperspectiveprojection"><code>geosrs:GeneralVerticalPerspectiveProjection</code></a>, <a href="#_class_geosrsgilberttwoworldperspectiveprojection"><code>geosrs:GilbertTwoWorldPerspectiveProjection</code></a>, <a href="#_class_geosrslahireprojection"><code>geosrs:LaHireProjection</code></a>, <a href="#_class_geosrslorgnaprojection"><code>geosrs:LorgnaProjection</code></a>, <a href="#_class_geosrslowryprojection"><code>geosrs:LowryProjection</code></a>, <a href="#_class_geosrsorthographicprojection"><code>geosrs:OrthographicProjection</code></a>, <a href="#_class_geosrsperspectiveconicprojection"><code>geosrs:PerspectiveConicProjection</code></a>, <a href="#_class_geosrstiltedperspectiveprojection"><code>geosrs:TiltedPerspectiveProjection</code></a>, <a href="#_class_geosrsverticalperspectiveprojection"><code>geosrs:VerticalPerspectiveProjection</code></a> to be used in SPARQL graph patterns.</p>
@@ -5862,7 +5847,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect3">
 <h4 id="_polyconic_projections">Polyconic Projections</h4>
 <aside class="example">
-<div class="title">Example 39. Polyconic Projections</div>
+<div class="title">Example 38. Polyconic Projections</div>
 <div class="content">
 <p class="paragraph">
 <p>Implementations shall allow the RDFS classes <a href="#_class_geosrsginzburgivprojection"><code>geosrs:GinzburgIVProjection</code></a>, <a href="#_class_geosrsginzburgixprojection"><code>geosrs:GinzburgIXProjection</code></a>, <a href="#_class_geosrsginzburgviprojection"><code>geosrs:GinzburgVIProjection</code></a>, <a href="#_class_geosrsginzburgvprojection"><code>geosrs:GinzburgVProjection</code></a>, <a href="#_class_geosrsgottwagnerprojection"><code>geosrs:GottWagnerProjection</code></a>, <a href="#_class_geosrshilleucyclicprojection"><code>geosrs:HillEucyclicProjection</code></a>, <a href="#_class_geosrslagrangeprojection"><code>geosrs:LagrangeProjection</code></a>, <a href="#_class_geosrslaskowskiprojection"><code>geosrs:LaskowskiProjection</code></a>, <a href="#_class_geosrsrectangularpolyconicprojection"><code>geosrs:RectangularPolyconicProjection</code></a>, <a href="#_class_geosrsstabiuswerneriiiprojection"><code>geosrs:StabiusWernerIIIProjection</code></a>, <a href="#_class_geosrsstabiuswerneriprojection"><code>geosrs:StabiusWernerIProjection</code></a>, <a href="#_class_geosrsvandergrinteniiprojection"><code>geosrs:VanDerGrintenIIProjection</code></a>, <a href="#_class_geosrsvandergrinteniprojection"><code>geosrs:VanDerGrintenIProjection</code></a>, <a href="#_class_geosrsvandergrintenivprojection"><code>geosrs:VanDerGrintenIVProjection</code></a>, <a href="#_class_geosrswagnerixprojection"><code>geosrs:WagnerIXProjection</code></a>, <a href="#_class_geosrswagnerviiiprojection"><code>geosrs:WagnerVIIIProjection</code></a>, <a href="#_class_geosrswagnerviiprojection"><code>geosrs:WagnerVIIProjection</code></a> to be used in SPARQL graph patterns.</p>
@@ -6213,7 +6198,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect3">
 <h4 id="_polyhedral_projections">Polyhedral Projections</h4>
 <aside class="example">
-<div class="title">Example 40. Polyhedral Projections</div>
+<div class="title">Example 39. Polyhedral Projections</div>
 <div class="content">
 <p class="paragraph">
 <p>Implementations shall allow the RDFS classes <a href="#_class_geosrsauthagraphprojection"><code>geosrs:AuthaGraphProjection</code></a>, <a href="#_class_geosrscahillkeyesprojection"><code>geosrs:CahillKeyesProjection</code></a>, <a href="#_class_geosrscollignonbutterflyprojection"><code>geosrs:CollignonButterflyProjection</code></a>, <a href="#_class_geosrsdodecahedralprojection"><code>geosrs:DodecahedralProjection</code></a>, <a href="#_class_geosrsdymaxionprojection"><code>geosrs:DymaxionProjection</code></a>, <a href="#_class_geosrsgnomonicbutterflyprojection"><code>geosrs:GnomonicButterflyProjection</code></a>, <a href="#_class_geosrsgnomoniccubedsphereprojection"><code>geosrs:GnomonicCubedSphereProjection</code></a>, <a href="#_class_geosrsgnomonicicosahedronprojection"><code>geosrs:GnomonicIcosahedronProjection</code></a>, <a href="#_class_geosrsguyouprojection"><code>geosrs:GuyouProjection</code></a>, <a href="#_class_geosrsicosahedralprojection"><code>geosrs:IcosahedralProjection</code></a>, <a href="#_class_geosrsleeprojection"><code>geosrs:LeeProjection</code></a>, <a href="#_class_geosrsmyrahedalprojection"><code>geosrs:MyrahedalProjection</code></a>, <a href="#_class_geosrsoctantprojection"><code>geosrs:OctantProjection</code></a>, <a href="#_class_geosrsquadrilateralizedsphericalcubeprojection"><code>geosrs:QuadrilateralizedSphericalCubeProjection</code></a>, <a href="#_class_geosrswatermanbutterflyprojection"><code>geosrs:WatermanButterflyProjection</code></a> to be used in SPARQL graph patterns.</p>
@@ -6524,7 +6509,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect3">
 <h4 id="_pseudo_azimuthal_projections">Pseudo Azimuthal Projections</h4>
 <aside class="example">
-<div class="title">Example 41. Pseudo Azimuthal Projections</div>
+<div class="title">Example 40. Pseudo Azimuthal Projections</div>
 <div class="content">
 <p class="paragraph">
 <p>Implementations shall allow the RDFS classes <a href="#_class_geosrsaitoffobliqueprojection"><code>geosrs:AitoffObliqueProjection</code></a>, <a href="#_class_geosrsaitoffprojection"><code>geosrs:AitoffProjection</code></a>, <a href="#_class_geosrshammerprojection"><code>geosrs:HammerProjection</code></a>, <a href="#_class_geosrsstrebe1995projection"><code>geosrs:Strebe1995Projection</code></a>, <a href="#_class_geosrswinkeltripelprojection"><code>geosrs:WinkelTripelProjection</code></a> to be used in SPARQL graph patterns.</p>
@@ -6639,7 +6624,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect3">
 <h4 id="_pseudo_conical_projections">Pseudo Conical Projections</h4>
 <aside class="example">
-<div class="title">Example 42. Pseudo Conical Projections</div>
+<div class="title">Example 41. Pseudo Conical Projections</div>
 <div class="content">
 <p class="paragraph">
 <p>Implementations shall allow the RDFS classes <a href="#_class_geosrsamericanpolyconicprojection"><code>geosrs:AmericanPolyconicProjection</code></a>, <a href="#_class_geosrsbonneprojection"><code>geosrs:BonneProjection</code></a>, <a href="#_class_geosrsbottomleyprojection"><code>geosrs:BottomleyProjection</code></a>, <a href="#_class_geosrsnicolosiglobularprojection"><code>geosrs:NicolosiGlobularProjection</code></a>, <a href="#_class_geosrsptolemyiiprojection"><code>geosrs:PtolemyIIProjection</code></a>, <a href="#_class_geosrswernerprojection"><code>geosrs:WernerProjection</code></a> to be used in SPARQL graph patterns.</p>
@@ -6665,7 +6650,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 </tr>
 <tr>
   <td class="tableblock halign-left valign-top"><p class="tableblock">Example</p></td>
-  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://opengeospatial.github.io/ontology-crs/data/ont/crs//proj/AmericanPolyconicProjection" target="_blank">geosrs:AmericanPolyconicProjection</a></p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://opengeospatial.github.io/ontology-crs/data/ont/crs//crs/operation/Brazil_Polyconic" target="_blank">geosrs:AmericanPolyconicProjection</a></p></td>
 </tr>
 </tbody>
 </table>
@@ -6774,7 +6759,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect3">
 <h4 id="_pseudo_cylindrical_projections">Pseudo Cylindrical Projections</h4>
 <aside class="example">
-<div class="title">Example 43. Pseudo Cylindrical Projections</div>
+<div class="title">Example 42. Pseudo Cylindrical Projections</div>
 <div class="content">
 <p class="paragraph">
 <p>Implementations shall allow the RDFS classes <a href="#_class_geosrsapianiiprojection"><code>geosrs:ApianIIProjection</code></a>, <a href="#_class_geosrsatlantisprojection"><code>geosrs:AtlantisProjection</code></a>, <a href="#_class_geosrsbaranyiiiiprojection"><code>geosrs:BaranyiIIIProjection</code></a>, <a href="#_class_geosrsbaranyiiiprojection"><code>geosrs:BaranyiIIProjection</code></a>, <a href="#_class_geosrsbaranyiiprojection"><code>geosrs:BaranyiIProjection</code></a>, <a href="#_class_geosrsbaranyiivprojection"><code>geosrs:BaranyiIVProjection</code></a>, <a href="#_class_geosrsboggseumorphicprojection"><code>geosrs:BoggsEumorphicProjection</code></a>, <a href="#_class_geosrsbromleyprojection"><code>geosrs:BromleyProjection</code></a>, <a href="#_class_geosrscabotprojection"><code>geosrs:CabotProjection</code></a>, <a href="#_class_geosrscollignonprojection"><code>geosrs:CollignonProjection</code></a>, <a href="#_class_geosrscrasterparabolicprojection"><code>geosrs:CrasterParabolicProjection</code></a>, <a href="#_class_geosrsdeakinminimumerrorprojection"><code>geosrs:DeakinMinimumErrorProjection</code></a>, <a href="#_class_geosrseckert1projection"><code>geosrs:Eckert1Projection</code></a>, <a href="#_class_geosrseckert2projection"><code>geosrs:Eckert2Projection</code></a>, <a href="#_class_geosrseckert3projection"><code>geosrs:Eckert3Projection</code></a>, <a href="#_class_geosrseckert4projection"><code>geosrs:Eckert4Projection</code></a>, <a href="#_class_geosrseckert5projection"><code>geosrs:Eckert5Projection</code></a>, <a href="#_class_geosrseckert6projection"><code>geosrs:Eckert6Projection</code></a>, <a href="#_class_geosrsequalearthprojection"><code>geosrs:EqualEarthProjection</code></a>, <a href="#_class_geosrsfaheyprojection"><code>geosrs:FaheyProjection</code></a>, <a href="#_class_geosrsfoucautprojection"><code>geosrs:FoucautProjection</code></a>, <a href="#_class_geosrsfoucautsinusoidalprojection"><code>geosrs:FoucautSinusoidalProjection</code></a>, <a href="#_class_geosrsfournieriiprojection"><code>geosrs:FournierIIProjection</code></a>, <a href="#_class_geosrsginzburgviiiprojection"><code>geosrs:GinzburgVIIIProjection</code></a>, <a href="#_class_geosrsgoodehomolosineprojection"><code>geosrs:GoodeHomolosineProjection</code></a>, <a href="#_class_geosrshealpixprojection"><code>geosrs:HEALPixProjection</code></a>, <a href="#_class_geosrshufnagelprojection"><code>geosrs:HufnagelProjection</code></a>, <a href="#_class_geosrskavrayskiy7projection"><code>geosrs:Kavrayskiy7Projection</code></a>, <a href="#_class_geosrsloximuthalprojection"><code>geosrs:LoximuthalProjection</code></a>, <a href="#_class_geosrsmayrprojection"><code>geosrs:MayrProjection</code></a>, <a href="#_class_geosrsmcbrydethomasflatpolarparabolicprojection"><code>geosrs:McBrydeThomasFlatPolarParabolicProjection</code></a>, <a href="#_class_geosrsmcbrydethomasflatpolarquarticprojection"><code>geosrs:McBrydeThomasFlatPolarQuarticProjection</code></a>, <a href="#_class_geosrsmcbrydethomasflatpolarsinusoidalprojection"><code>geosrs:McBrydeThomasFlatPolarSinusoidalProjection</code></a>, <a href="#_class_geosrsmcbrydethomasiiprojection"><code>geosrs:McBrydeThomasIIProjection</code></a>, <a href="#_class_geosrsmcbrydethomasiprojection"><code>geosrs:McBrydeThomasIProjection</code></a>, <a href="#_class_geosrsnaturalearth2projection"><code>geosrs:NaturalEarth2Projection</code></a>, <a href="#_class_geosrsnaturalearthprojection"><code>geosrs:NaturalEarthProjection</code></a>, <a href="#_class_geosrsnellhammerprojection"><code>geosrs:NellHammerProjection</code></a>, <a href="#_class_geosrsnellprojection"><code>geosrs:NellProjection</code></a>, <a href="#_class_geosrsorteliusovalprojection"><code>geosrs:OrteliusOvalProjection</code></a>, <a href="#_class_geosrsputninsp1projection"><code>geosrs:PutninsP1Projection</code></a>, <a href="#_class_geosrsputninsp2projection"><code>geosrs:PutninsP2Projection</code></a>, <a href="#_class_geosrsputninsp3projection"><code>geosrs:PutninsP3Projection</code></a>, <a href="#_class_geosrsputninsp5projection"><code>geosrs:PutninsP5Projection</code></a>, <a href="#_class_geosrsputninsp6projection"><code>geosrs:PutninsP6Projection</code></a>, <a href="#_class_geosrsquarticauthalicprojection"><code>geosrs:QuarticAuthalicProjection</code></a>, <a href="#_class_geosrsrobinsonprojection"><code>geosrs:RobinsonProjection</code></a>, <a href="#_class_geosrssinusoidalprojection"><code>geosrs:SinusoidalProjection</code></a>, <a href="#_class_geosrsthetimesprojection"><code>geosrs:TheTimesProjection</code></a>, <a href="#_class_geosrstoblerg1projection"><code>geosrs:ToblerG1Projection</code></a>, <a href="#_class_geosrstoblerhyperellipticalprojection"><code>geosrs:ToblerHyperellipticalProjection</code></a>, <a href="#_class_geosrswagneriiiprojection"><code>geosrs:WagnerIIIProjection</code></a>, <a href="#_class_geosrswagneriiprojection"><code>geosrs:WagnerIIProjection</code></a>, <a href="#_class_geosrswagneriprojection"><code>geosrs:WagnerIProjection</code></a>, <a href="#_class_geosrswagnerivprojection"><code>geosrs:WagnerIVProjection</code></a>, <a href="#_class_geosrswagnerviprojection"><code>geosrs:WagnerVIProjection</code></a>, <a href="#_class_geosrswagnervprojection"><code>geosrs:WagnerVProjection</code></a>, <a href="#_class_geosrswerenskioldiprojection"><code>geosrs:WerenskioldIProjection</code></a>, <a href="#_class_geosrsputninsp3projection_2"><code>geosrs:PutninsP3&#8217;Projection</code></a>, <a href="#_class_geosrsputninsp4projection"><code>geosrs:PutninsP4&#8217;Projection</code></a>, <a href="#_class_geosrsputninsp5projection_2"><code>geosrs:PutninsP5&#8217;Projection</code></a>, <a href="#_class_geosrsputninsp6projection_2"><code>geosrs:PutninsP6&#8217;Projection</code></a> to be used in SPARQL graph patterns.</p>
@@ -7164,7 +7149,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 </tr>
 <tr>
   <td class="tableblock halign-left valign-top"><p class="tableblock">Example</p></td>
-  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://opengeospatial.github.io/ontology-crs/data/ont/crs//proj/EqualEarthProjection" target="_blank">geosrs:EqualEarthProjection</a></p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://opengeospatial.github.io/ontology-crs/data/ont/crs//crs/operation/Equal_Earth_Asia-Pacific" target="_blank">geosrs:EqualEarthProjection</a></p></td>
 </tr>
 </tbody>
 </table>
@@ -8037,7 +8022,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect3">
 <h4 id="_stereographic_projections">Stereographic Projections</h4>
 <aside class="example">
-<div class="title">Example 44. Stereographic Projections</div>
+<div class="title">Example 43. Stereographic Projections</div>
 <div class="content">
 <p class="paragraph">
 <p>Implementations shall allow the RDFS classes <a href="#_class_geosrsmilleroblatedstereographicprojection"><code>geosrs:MillerOblatedStereographicProjection</code></a>, <a href="#_class_geosrsroussilheprojection"><code>geosrs:RoussilheProjection</code></a> to be used in SPARQL graph patterns.</p>
@@ -8094,7 +8079,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <p>This clause establishes the <strong>PLANET</strong> Requirements class, with IRI <code>/req/planet</code>, which has a corresponding Conformance Class, <strong>PLANET</strong>, with IRI <code>/conf/planet</code>.</p>
 </p>
 <aside class="example">
-<div class="title">Example 45. 12-planet_module.adoc Extension</div>
+<div class="title">Example 44. 12-planet_module.adoc Extension</div>
 <div class="content">
 <div class="dlist">
 <dl>
@@ -8109,7 +8094,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect3">
 <h4 id="_interstellar_body">Interstellar Body</h4>
 <aside class="example">
-<div class="title">Example 46. Interstellar Body</div>
+<div class="title">Example 45. Interstellar Body</div>
 <div class="content">
 <p class="paragraph">
 <p>Implementations shall allow the RDFS classes <a href="#_class_geosrsartificialsatellite"><code>geosrs:ArtificialSatellite</code></a>, <a href="#_class_geosrsasteroid"><code>geosrs:Asteroid</code></a>, <a href="#_class_geosrscomet"><code>geosrs:Comet</code></a>, <a href="#_class_geosrsdwarfplanet"><code>geosrs:DwarfPlanet</code></a>, <a href="#_class_geosrsinterstellarbody"><code>geosrs:InterstellarBody</code></a>, <a href="#_class_geosrsmoon"><code>geosrs:Moon</code></a>, <a href="#_class_geosrsnaturalsatellite"><code>geosrs:NaturalSatellite</code></a>, <a href="#_class_geosrsplanet"><code>geosrs:Planet</code></a>, <a href="#_class_geosrsplanetstatus"><code>geosrs:PlanetStatus</code></a>, <a href="#_class_geosrsplutoid"><code>geosrs:Plutoid</code></a>, <a href="#_class_geosrsstar"><code>geosrs:Star</code></a> to be used in SPARQL graph patterns.</p>
@@ -8302,7 +8287,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <p>This clause establishes common instances which are needed in CRS specifications as Requirement class <strong>INSTANCES</strong>, with IRI <code>/req/instances</code>, which has a corresponding Conformance Class, <strong>INSTANCES</strong>, with IRI <code>/conf/instances</code>.</p>
 </p>
 <aside class="example">
-<div class="title">Example 47. 13-instances.adoc Extension</div>
+<div class="title">Example 46. 13-instances.adoc Extension</div>
 <div class="content">
 <div class="dlist">
 <dl>
@@ -8321,7 +8306,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect3">
 <h4 id="_coordinate_system_axis">Coordinate System Axis</h4>
 <aside class="example">
-<div class="title">Example 48. Coordinate System Axis</div>
+<div class="title">Example 47. Coordinate System Axis</div>
 <div class="content">
 <p class="paragraph">
 <p>Implementations shall allow the RDFS classes <a href="#Class: geosrs:down"><code>geosrs:down</code></a>, <a href="#Class: geosrs:east"><code>geosrs:east</code></a>, <a href="#Class: geosrs:north"><code>geosrs:north</code></a>, <a href="#Class: geosrs:south"><code>geosrs:south</code></a>, <a href="#Class: geosrs:up"><code>geosrs:up</code></a>, <a href="#Class: geosrs:west"><code>geosrs:west</code></a> to be used in SPARQL graph patterns.</p>
@@ -8476,7 +8461,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect3">
 <h4 id="_spheroids">Spheroids</h4>
 <aside class="example">
-<div class="title">Example 49. Spheroids</div>
+<div class="title">Example 48. Spheroids</div>
 <div class="content">
 <p class="paragraph">
 <p>Implementations shall allow the RDFS classes <a href="#Class: geosrs:GRS1980"><code>geosrs:GRS1980</code></a>, <a href="#Class: geosrs:GRS67"><code>geosrs:GRS67</code></a>, <a href="#Class: geosrs:PZ90"><code>geosrs:PZ90</code></a>, <a href="#Class: geosrs:Airy1830"><code>geosrs:Airy1830</code></a>, <a href="#Class: geosrs:AiryModified1849"><code>geosrs:AiryModified1849</code></a>, <a href="#Class: geosrs:International1924"><code>geosrs:International1924</code></a>, <a href="#Class: geosrs:AustralianNationalSpheroid"><code>geosrs:AustralianNationalSpheroid</code></a>, <a href="#Class: geosrs:Everest1930"><code>geosrs:Everest1930</code></a>, <a href="#Class: geosrs:Clarke1866"><code>geosrs:Clarke1866</code></a>, <a href="#Class: geosrs:Plessis1817"><code>geosrs:Plessis1817</code></a>, <a href="#Class: geosrs:Danish1876"><code>geosrs:Danish1876</code></a>, <a href="#Class: geosrs:Struve1860"><code>geosrs:Struve1860</code></a>, <a href="#Class: geosrs:IAG1975"><code>geosrs:IAG1975</code></a>, <a href="#Class: geosrs:Clarke1858"><code>geosrs:Clarke1858</code></a>, <a href="#Class: geosrs:Clarke1880"><code>geosrs:Clarke1880</code></a>, <a href="#Class: geosrs:Helmert1906"><code>geosrs:Helmert1906</code></a>, <a href="#Class: geosrs:CGCS2000"><code>geosrs:CGCS2000</code></a>, <a href="#Class: geosrs:GSK-2011"><code>geosrs:GSK-2011</code></a>, <a href="#Class: geosrs:Zach1812"><code>geosrs:Zach1812</code></a>, <a href="#Class: geosrs:Clarke1880ARC"><code>geosrs:Clarke1880ARC</code></a>, <a href="#Class: geosrs:Clarke1880IGN"><code>geosrs:Clarke1880IGN</code></a>, <a href="#Class: geosrs:WGS66"><code>geosrs:WGS66</code></a>, <a href="#Class: geosrs:WGS72"><code>geosrs:WGS72</code></a>, <a href="#Class: geosrs:WGS84"><code>geosrs:WGS84</code></a>, <a href="#Class: geosrs:Krassowsky1940"><code>geosrs:Krassowsky1940</code></a> to be used in SPARQL graph patterns.</p>
@@ -9595,7 +9580,7 @@ Actual References:
 </section>
 <div id="footer">
 <div id="footer-text">
-Last updated 2025-08-10 21:25:57 UTC
+Last updated 2025-08-10 22:16:07 UTC
 </div>
 </div>
 </body>

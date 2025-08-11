@@ -265,6 +265,7 @@ def crsToTTL(ttl,curcrs,x,geodcounter,crsclass):
 		elif curcrs.datum.ellipsoid!=None:	
 			ttl.add("geosrsdatum:"+str(datumid)+" geosrs:ellipse \""+curcrs.datum.ellipsoid.name+"\" . \n")
 			examples["geosrs:ellipsoid"]=websitensshort+"/datum/"+str(datumid)
+			examples["geosrs:"+curcrs.datum.ellipsoid.name]=websitensshort+"/geod/"+str(curcrs.datum.ellipsoid.name)
 			spheroidscoll[curcrs.datum.ellipsoid.name]=True
 		if curcrs.prime_meridian!=None:
 			meridianid=str(curcrs.prime_meridian.name.replace(" ",""))

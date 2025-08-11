@@ -35,6 +35,7 @@ jobs:
          mv *.ttl docs/
          mv context docs/
          mv index.html docs/
+         mv examples.json docs/
          cd docs
          mkdir application
          pylode -o application/index.html -i application.ttl

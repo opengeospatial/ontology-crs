@@ -187,11 +187,11 @@ for file in os.listdir(directory):
                             if " " in row["SuperClass"]:
                                 for spl in row["SuperClass"].split(" "):
                                     gcore.add((URIRef(row["Concept"].replace(coreprefix+":",geocrsNS)),RDFS.subClassOf,URIRef(spl.replace("geosrs:", getNSForClass(spl,classToPrefix)))))
-                                    clsuri=row["Concept"].replace(coreprefix+":",geocrsNS)
+                                    clsuri=spl.replace("geosrs:", getNSForClass(spl,classToPrefix))
                                     adocdef+=clsuri+"["+clsuri[clsuri.rfind("/")+1:]+"] "
                             else:
                                 gcore.add((URIRef(row["Concept"].replace(coreprefix+":",geocrsNS)),RDFS.subClassOf,URIRef(row["SuperClass"].replace("geosrs:", getNSForClass(row["SuperClass"],classToPrefix)))))
-                                clsuri=row["Concept"].replace("geosrs:", getNSForClass(row["Concept"],classToPrefix))
+                                clsuri=row["SuperClass"].replace("geosrs:", getNSForClass(row["SuperClass"],classToPrefix))
                                 adocdef+=clsuri+"["+clsuri[clsuri.rfind("/")+1:]+"] "
                             adocdef+="\n\n"
                         if row["Concept"] in examples:
@@ -245,7 +245,7 @@ for file in os.listdir(directory):
                                     adocdef+=clsuri+"["+clsuri[clsuri.rfind("/")+1:]+"] "
                             else:
                                 g.add((URIRef(row["Concept"].replace(coreprefix+":",curns)),RDFS.subClassOf,URIRef(row["SuperClass"].replace("geosrs:", getNSForClass(row["SuperClass"],classToPrefix)))))
-                                clsuri=row["Concept"].replace(coreprefix+":",curns)
+                                clsuri=row["SuperClass"].replace("geosrs:", getNSForClass(row["SuperClass"],classToPrefix)
                                 adocdef+=clsuri+"["+clsuri[clsuri.rfind("/")+1:]+"] "
                             adocdef+="\n\n"
                         if row["Concept"] in examples:

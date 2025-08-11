@@ -149,7 +149,7 @@ for file in os.listdir(directory):
                     core=False
                     if "Core Class?" in row and row["Core Class?"]=="Core Ontology":
                         adocdef="===== Class: "+str(row["Concept"])+"\n\n."
-                        if "Description" in row:
+                        if "Description" in row and row["Description"]!="":
                             adocdef+=row["Description"]+"\n\n"
                         adocdef+=str(row["Concept"])+"\n[cols=\"1,1\"]\n|===\n"
                         adocdef+="|Type\n|http://www.w3.org/2002/07/owl#Class[owl:Class]\n\n"

@@ -152,7 +152,6 @@ for file in os.listdir(directory):
                         if "Description" in row:
                             adocdef+=row["Description"]+"\n\n"
                         adocdef+=str(row["Concept"])+"\n[cols=\"1,1\"]\n|===\n"
-                        adocdef+="|URI\n|"+row["Concept"].replace(coreprefix+":",curns+str(row["Core Property?"]).lower()+"/")+"\n\n"
                         adocdef+="|Type\n|http://www.w3.org/2002/07/owl#Class[owl:Class]\n\n"
                         adocdef+="|URI\n|"+str(row["Concept"].replace(coreprefix+":",curns))+"\n\n"
                         core=True

@@ -425,6 +425,7 @@ projections["krovak"]="geosrs:Krovak"
 projections["geocent"]="geosrs:Geocentric"
 projections["latlong"]="geosrs:LatLonProjection"
 projections["longlat"]="geosrs:LonLatProjection"
+projections["nell"]="geosrs:NellProjection"
 #projections["cc"]="geosrs:CylindricalProjection"
 ttl=set()
 ttlhead="@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n"

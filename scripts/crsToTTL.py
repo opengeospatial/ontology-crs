@@ -123,17 +123,20 @@ def crsToTTL(ttl,curcrs,x,geodcounter,crsclass):
 				ttl.add(geoid+" rdfs:label \""+curcrs.datum.ellipsoid.name+"\"@en . \n")
 				ttl.add(geoid+" geosrs:approximates geosrsisbody:Earth . \n")
 				examples["geosrs:Ellipsoid"]=websitensshort+"/geod/"+geoid.replace("geosrs:","")
+				examples[geoid]=websitensshort+"/geod/"+str(geoid)
 			elif curcrs.get_geod().sphere:
 				geoid="geosrsgeod:"+str(curcrs.datum.ellipsoid.name).replace(" ","_").replace("(","_").replace(")","_")
 				ttl.add(geoid+" rdf:type geosrs:Sphere . \n")
 				ttl.add(geoid+" rdfs:label \""+curcrs.datum.ellipsoid.name+"\"@en . \n")
 				ttl.add(geoid+" geosrs:approximates geosrsisbody:Earth . \n")
 				examples["geosrs:Sphere"]=websitensshort+"/geod/"+geoid.replace("geosrs:","")
+				examples[geoid]=websitensshort+"/geod/"+str(geoid)
 			else:
 				geoid="geosrsgeod:"+str(curcrs.datum.ellipsoid.name).replace(" ","_").replace("(","_").replace(")","_")
 				ttl.add(geoid+" rdf:type geosrs:Geoid . \n")
 				ttl.add(geoid+" rdfs:label \""+curcrs.datum.ellipsoid.name+"\"@en . \n")
 				ttl.add(geoid+" geosrs:approximates geosrsisbody:Earth . \n")
+				examples[geoid]=websitensshort+"/geod/"+str(geoid)
 		else:
 			ttl.add("geoepsg:"+epsgcode+" geosrs:ellipsoid geosrsgeod:"+str(geodcounter)+" . \n")
 			ttl.add("geosrsgeod:geod"+str(geodcounter)+" rdf:type geosrs:Geoid . \n")

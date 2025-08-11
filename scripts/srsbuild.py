@@ -296,7 +296,10 @@ for file in os.listdir(directory):
                 if "Concept" in row and row["Concept"]!="":
                     if "Core Property?" in row:
                         if row["Core Property?"]=="Core Ontology":
-                            adocdef="===== Property: "+str(row["Concept"])+"\n\n."+str(row["Concept"])+"\n[cols=\"1,1\"]\n|===\n"
+                            adocdef="===== Property: "+str(row["Concept"])+"\n\n."
+                            if "Description" in row:
+                                adocdef+=row["Description"]+"\n\n"
+                            adocdef+=str(row["Concept"])+"\n[cols=\"1,1\"]\n|===\n"
                             adocdef+="|URI\n|"+str(row["Concept"].replace(coreprefix+":",curns))+"\n\n"
                             core=True
                             prefixtoproperties["geosrs"].append(row["Concept"].replace(curprefix+":",curns).replace("geosrs:","").replace("geoprojection:",""))

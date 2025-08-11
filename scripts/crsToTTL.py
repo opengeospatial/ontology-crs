@@ -146,9 +146,15 @@ def crsToTTL(ttl,curcrs,x,geodcounter,crsclass):
 		ttl.add(geoid+" geosrs:eccentricity \""+str(curcrs.get_geod().es)+"\"^^xsd:double . \n")
 		examples["geosrs:eccentricity"]=websitensshort+"/geod/"+geoid	
 		ttl.add(geoid+" geosrs:isSphere \""+str(curcrs.get_geod().sphere)+"\"^^xsd:boolean . \n")
-		ttl.add(geoid+" geosrs:semiMajorAxis \""+str(curcrs.get_geod().a)+"\"^^xsd:string . \n")
+		if str(curcrs.get_geod().a).isnumeric():
+			ttl.add(geoid+" geosrs:semiMajorAxis \""+str(curcrs.get_geod().a)+"\"^^xsd:double . \n")
+		else:
+			ttl.add(geoid+" geosrs:semiMajorAxis \""+str(curcrs.get_geod().a)+"\"^^xsd:string . \n")
 		examples["geosrs:semiMajorAxis"]=websitensshort+"/geod/"+geoid	
-		ttl.add(geoid+" geosrs:semiMinorAxis \""+str(curcrs.get_geod().b)+"\"^^xsd:string . \n")
+		if str(curcrs.get_geod().a).isnumeric():
+			ttl.add(geoid+" geosrs:semiMinorAxis \""+str(curcrs.get_geod().b)+"\"^^xsd:double . \n")
+		else:
+			ttl.add(geoid+" geosrs:semiMinorAxis \""+str(curcrs.get_geod().b)+"\"^^xsd:string . \n")
 		examples["geosrs:semiMinorAxis"]=websitensshort+"/geod/"+geoid	
 		ttl.add(geoid+" geosrs:flatteningParameter \""+str(curcrs.get_geod().f)+"\"^^xsd:double . \n")
 		examples["geosrs:flatteningParameter"]=websitensshort+"/geod/"+geoid	

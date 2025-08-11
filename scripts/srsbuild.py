@@ -245,7 +245,7 @@ for file in os.listdir(directory):
                                     adocdef+=clsuri+"["+clsuri[clsuri.rfind("/")+1:]+"] "
                             else:
                                 g.add((URIRef(row["Concept"].replace(coreprefix+":",curns)),RDFS.subClassOf,URIRef(row["SuperClass"].replace("geosrs:", getNSForClass(row["SuperClass"],classToPrefix)))))
-                                clsuri=row["SuperClass"].replace("geosrs:", getNSForClass(row["SuperClass"],classToPrefix)
+                                clsuri=row["SuperClass"].replace("geosrs:", getNSForClass(row["SuperClass"],classToPrefix))
                                 adocdef+=clsuri+"["+clsuri[clsuri.rfind("/")+1:]+"] "
                             adocdef+="\n\n"
                         if row["Concept"] in examples:

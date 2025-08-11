@@ -176,7 +176,7 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 </clause>
 </clause>
 
-<clause id="_4b70dc6d-f5fa-0987-8468-10462418521a" obligation="normative">
+<clause id="_d72c9982-68be-02a3-c957-019e7430144c" obligation="normative">
 <title id="_044942ca-9796-b4a6-70f4-4ab0218662d2">Core</title>
 <p id="_80d68486-bf75-c09f-fb55-52b4a4a52b90" anchor="core">This clause establishes the <strong>Core</strong> Requirements class, with IRI <tt>/req/core</tt>, which has a corresponding Conformance Class, <strong>Core</strong>, with IRI <tt>/conf/core</tt>.</p>
 
@@ -271,7 +271,7 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 </clause>
 </clause>
 
-<clause id="_75e2f54c-c199-2713-13cd-ea1514aaf58c" obligation="normative">
+<clause id="_c2a386b5-a424-9f30-4b6b-a57692763756" obligation="normative">
 <title id="_a8e93d19-cb1b-1bf1-156e-4c00beab7d3f">Coordinate Reference System Properties</title>
 <requirement id="_158cc79d-68a2-a2ad-649c-231059be1a25" model="ogc" anchor="/req/Coordinate_Reference_System_Properties">
 <title>Coordinate Reference System Properties</title> 
@@ -458,9 +458,9 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 </table>
 </clause>
 
-<clause id="_74b86aa8-a367-eb41-4839-591757ae5880" obligation="normative">
+<clause id="_db43e767-a2dc-bdf7-73e3-5e3462306f7a" obligation="normative">
 <title id="_957664a8-3d28-6c95-b376-a0686a9a1dd3">Property: geosrs:EPSGcode</title>
-<table id="_853cc164-42a5-5bae-8510-0145f83db159"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<table id="_3018771f-976c-4894-20ec-7a754656abee"><colgroup><col width="50%"/><col width="50%"/></colgroup>
 <name id="_89a75827-a08a-1e13-e011-7a46705b8de6">geosrs:EPSGcode</name>
 <tbody><tr id="_7a3d5a83-bae4-58c1-950a-a54e976ca45a"><td id="_c2dbd90e-f626-1ae3-a64b-3d870ba9e3ab" valign="middle" align="left">URI</td>
 <td id="_dda67a58-005d-318b-73a8-aa42a18f3057" valign="middle" align="left"><link target="https://w3id.org/geosrs/srs/EPSGcode"/></td>
@@ -468,8 +468,8 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 <td id="_f4a84609-f342-f6b9-1e40-6add26f9133b" valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#DatatypeProperty">owl:DatatypeProperty</link></td>
 </tr><tr id="_a258030c-9369-debc-ec23-c0a1a1145f09"><td id="_70ebe963-e4d2-7dc9-990c-d80ca6b29bb5" valign="middle" align="left">Definition</td>
 <td id="_4c1d61af-173c-f576-6b46-0242831b8310" valign="middle" align="left">Identifier of this resource in the EPSG Geodetic Parameter Dataset.</td>
-</tr><tr id="_f9840ff8-ee59-12ca-37e0-47ce7b4d9c6c"><td id="_d82e8aa8-06c8-7432-606e-1488a6aac76b" valign="middle" align="left">Range</td>
-<td id="_19a866a4-ff5a-1fc3-a185-c7b296c57347" valign="middle" align="left">xsd:string[xsd:string]</td>
+</tr><tr id="_e431c2a9-878e-050e-ca5b-a435a46695e4"><td id="_d82e8aa8-06c8-7432-606e-1488a6aac76b" valign="middle" align="left">Range</td>
+<td id="_02ae532d-65d7-f2d1-6d52-6e7ba8e791bc" valign="middle" align="left"><link target="http://www.w3.org/2001/XMLSchema#string">xsd:string</link></td>
 </tr></tbody>
 </table>
 </clause>
@@ -1578,7 +1578,7 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 </clause>
 </clause>
 
-<clause id="_0019635b-fd7c-96d4-e3d8-0731d8f4e29b" obligation="normative">
+<clause id="_e7f4c05b-d7f7-1aed-5276-0fed661268a3" obligation="normative">
 <title id="_4ab3059e-d1fe-d0e6-e6e0-fef2aded1f5e">Datum Module</title>
 <p id="_6ee5f6b9-ecce-9491-cb59-687aeb3ad204" anchor="datum">This clause establishes the <strong>Datum</strong> Requirements class, with IRI <tt>/req/datum</tt>, which has a corresponding Conformance Class, <strong>Datum</strong>, with IRI <tt>/conf/datum</tt>.</p>
 
@@ -1781,16 +1781,16 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 </clause>
 </clause>
 
-<clause id="_b498a5bf-5cc9-6d20-00f9-6c880fda135f" obligation="normative">
+<clause id="_32cf0cf7-4d1a-46e2-0bd2-97469fb46b99" obligation="normative">
 <title id="_bf93b7db-acea-66ad-b6ed-943ac7afc963">Spheroid Properties</title>
 <requirement id="_67d53e2f-0f5a-5691-089b-58bf32e40f00" model="ogc" anchor="/req/Spheroid_Properties">
 <title>Spheroid Properties</title> 
 <identifier>/req/Spheroid_Properties</identifier><description><p id="_75a0ae12-aaba-28a9-7afd-48796e61fe51">Implementations shall allow the RDFS properties <eref bibitemid="Property_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>eccentricity</referenceFrom></locality></localityStack><display-text>geosrs:eccentricity</display-text></eref>, <eref bibitemid="Property_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>inverseFlattening</referenceFrom></locality></localityStack><display-text>geosrs:inverseFlattening</display-text></eref>, <eref bibitemid="Property_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>isSphere</referenceFrom></locality></localityStack><display-text>geosrs:isSphere</display-text></eref>, <eref bibitemid="Property_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>semiMajorAxis</referenceFrom></locality></localityStack><display-text>geosrs:semiMajorAxis</display-text></eref>, <eref bibitemid="Property_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>semiMinorAxis</referenceFrom></locality></localityStack><display-text>geosrs:semiMinorAxis</display-text></eref> to be used in SPARQL graph patterns.</p></description>
 </requirement>
 
-<clause id="_059b8228-4c2f-bc15-826f-3a373c9b5152" obligation="normative">
+<clause id="_99f0a3f8-e747-6336-1b0a-b6859775d914" obligation="normative">
 <title id="_7d5c1ed3-c638-c991-80bf-0592577d1405">Property: geosrs:eccentricity</title>
-<table id="_49fcba07-37ed-1d09-1eaa-9bec73f8c417"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<table id="_7401ca97-06d9-2504-3979-0e29be12a920"><colgroup><col width="50%"/><col width="50%"/></colgroup>
 <name id="_59968bd1-b1fa-a151-ccb5-84b2a32b33a4">geosrs:eccentricity</name>
 <tbody><tr id="_c98ecf94-bc66-4aa3-c64a-c7fc41e39854"><td id="_0e3200dd-ffbc-cf69-31d6-1547410efed3" valign="middle" align="left">URI</td>
 <td id="_60585141-5041-f98b-e1e7-17617149b3f7" valign="middle" align="left"><link target="https://w3id.org/geosrs/datum/eccentricity"/></td>
@@ -1798,8 +1798,8 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 <td id="_7d537712-dc6d-d03e-ce14-7a2598b9b7c8" valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#DatatypeProperty">owl:DatatypeProperty</link></td>
 </tr><tr id="_634f2b63-6738-f03d-02dc-f8ae1b047381"><td id="_179e388b-cbc3-079c-25f1-f37c4128b3c2" valign="middle" align="left">Definition</td>
 <td id="_afecbfae-e52e-2aca-965d-6c9055f82366" valign="middle" align="left">A measure of how much an ellipse deviates from a perfect circle.</td>
-</tr><tr id="_fe132f5f-e6eb-68bb-4d74-1269cefc2ff9"><td id="_81b0c7b1-7a9b-4e00-9e57-5d47677d779c" valign="middle" align="left">Range</td>
-<td id="_0a7ad827-a6e4-ca1f-3f55-aced1d28479a" valign="middle" align="left">xsd:double[xsd:double]</td>
+</tr><tr id="_ad86147d-14f5-db45-8968-0855feb191ef"><td id="_81b0c7b1-7a9b-4e00-9e57-5d47677d779c" valign="middle" align="left">Range</td>
+<td id="_bee81f94-6f56-d91a-c877-51524693db75" valign="middle" align="left"><link target="http://www.w3.org/2001/XMLSchema#double">xsd:double</link></td>
 </tr><tr id="_8e868f89-ad74-185a-31e3-d07dae73ebcf"><td id="_9aaf57b8-6b7e-4b8a-59e2-f50a991821c9" valign="middle" align="left">Domain</td>
 <td id="_99f74e83-e666-15b6-27e3-d43b99568977" valign="middle" align="left"><link target="https://w3id.org/geosrs/Ellipsoid">Ellipsoid</link></td>
 </tr><tr id="_d578e142-6008-46e0-dd64-2e7ef92bf4ed"><td id="_46b58b3e-ddfd-aff7-092c-8b0a865bf487" valign="middle" align="left">Example</td>
@@ -1808,9 +1808,9 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 </table>
 </clause>
 
-<clause id="_99483281-730b-55ea-ae94-d460db83e976" obligation="normative">
+<clause id="_f53ce6f8-f8a0-dbca-82bd-3e7d948a9189" obligation="normative">
 <title id="_311096bd-edc8-c050-1313-9d6e5b70a85b">Property: geosrs:inverseFlattening</title>
-<table id="_ba8d8670-411f-4cf4-4fbb-cead4a2a1d8a"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<table id="_c2a3ba58-eacb-aed3-9ec1-fe376d30851a"><colgroup><col width="50%"/><col width="50%"/></colgroup>
 <name id="_9838faee-1539-c23d-fb03-95630a9d28f6">geosrs:inverseFlattening</name>
 <tbody><tr id="_17959694-3105-fc5d-5445-788d83e4d2b3"><td id="_9d8842fa-a445-39cb-1bca-af9b79ff6b7e" valign="middle" align="left">URI</td>
 <td id="_67d0fe62-e492-ec1d-f80b-617dc03108e3" valign="middle" align="left"><link target="https://w3id.org/geosrs/datum/inverseFlattening"/></td>
@@ -1818,17 +1818,19 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 <td id="_9a58109d-6353-d936-d0de-59fa88e7e922" valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#DatatypeProperty">owl:DatatypeProperty</link></td>
 </tr><tr id="_fbeaee75-6f42-23d6-9aed-3bce156c7325"><td id="_919f1cfa-0807-f975-5c25-80e00a32fa16" valign="middle" align="left">Definition</td>
 <td id="_b4761677-b649-3d00-ae56-8848ee48acd9" valign="middle" align="left">Indicates the inverse flattening value of an ellipsoid, expressed as a number or a ratio (percentage rate, parts per million, etc.). Cf. ISO 19111:2007:2007-07, table 37, attribute inverse flattening</td>
-</tr><tr id="_bc54f664-a5d4-356e-29c5-d0d0c69ccc88"><td id="_0d160575-7004-dc2d-36ab-2fb9eccd358a" valign="middle" align="left">Range</td>
-<td id="_e39d1b4d-5a3f-34c1-c5a5-2d9711226a48" valign="middle" align="left">xsd:double[xsd:double]</td>
+</tr><tr id="_7d13478f-780d-a261-420e-aae441d7dbc0"><td id="_0d160575-7004-dc2d-36ab-2fb9eccd358a" valign="middle" align="left">Range</td>
+<td id="_d8fe8d3e-85b2-d91b-36fe-8afe8b816f43" valign="middle" align="left"><link target="http://www.w3.org/2001/XMLSchema#double">xsd:double</link></td>
 </tr><tr id="_94046a60-5fe4-025e-c93e-9a72adc8abf0"><td id="_47147d22-6a28-87c2-d914-7fee67dd8ce8" valign="middle" align="left">Domain</td>
 <td id="_3083c4ad-0b64-547b-c7bf-d759b697723d" valign="middle" align="left"><link target="https://w3id.org/geosrs/Ellipsoid">Ellipsoid</link></td>
+</tr><tr id="_5c6df969-f365-d189-9739-1f46a343f4c6"><td id="_f05f217b-6c17-99dd-9e7f-5819e19ef130" valign="middle" align="left">Example</td>
+<td id="_034891e9-bf98-9e48-db81-16aadbd0d0d4" valign="middle" align="left"><link target="https://opengeospatial.github.io/ontology-crs/data/ont/crs//geod/geosrsgeod:AiryModified1849">geosrs:inverseFlattening</link></td>
 </tr></tbody>
 </table>
 </clause>
 
-<clause id="_7e1e7725-0835-10e1-7d5b-7502fa911946" obligation="normative">
+<clause id="_818794cd-dd21-b519-a98c-b218240b6563" obligation="normative">
 <title id="_4c079ac5-f0b5-06d7-c929-750bd8c159ed">Property: geosrs:isSphere</title>
-<table id="_f6ee1003-8d08-38a7-a9b1-9b0322206202"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<table id="_131d221e-7bba-c62f-61c7-7438ebc5d90f"><colgroup><col width="50%"/><col width="50%"/></colgroup>
 <name id="_82bc08cc-9dee-039c-0fc6-0b6265432da2">geosrs:isSphere</name>
 <tbody><tr id="_b6224841-8925-b1de-2aca-d61d74053f4e"><td id="_0f9cae23-c848-c940-19e4-2cf3d0942886" valign="middle" align="left">URI</td>
 <td id="_d3e430ca-a84d-e1ee-7e6e-0e101098ad17" valign="middle" align="left"><link target="https://w3id.org/geosrs/datum/isSphere"/></td>
@@ -1836,17 +1838,17 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 <td id="_11e24b2c-4c78-ee3b-04a2-4397a590220b" valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#DatatypeProperty">owl:DatatypeProperty</link></td>
 </tr><tr id="_fa17f4c3-847f-6e89-448f-f830bd48c128"><td id="_e1863b40-96eb-e1e8-96e7-be444fd3cb0f" valign="middle" align="left">Definition</td>
 <td id="_25c27905-b8c8-50d4-338b-611c49ed1a4d" valign="middle" align="left">Indicates whether the ellipsoid is a sphere. Cf. ISO 19111:2007:2007-07, table 37, attribute ellipsoid=sphere indicator.</td>
-</tr><tr id="_5a568dc7-34b9-fdb2-1d53-7bb18a57bd04"><td id="_0458028b-3b8c-d3b6-834b-9d7ae3abcef1" valign="middle" align="left">Range</td>
-<td id="_a80bce5c-d9b4-c586-d729-728f0099727c" valign="middle" align="left">xsd:boolean[xsd:boolean]</td>
+</tr><tr id="_2b923785-277e-a6c0-0a7a-c81c2b0c0ae3"><td id="_0458028b-3b8c-d3b6-834b-9d7ae3abcef1" valign="middle" align="left">Range</td>
+<td id="_2e38d826-1bc8-b4e4-9f35-32f19a190330" valign="middle" align="left"><link target="http://www.w3.org/2001/XMLSchema#boolean">xsd:boolean</link></td>
 </tr><tr id="_d2db190f-3631-e332-a47f-bc5f38ee6910"><td id="_deba7745-4207-a24f-790a-ffcc5103fe6b" valign="middle" align="left">Domain</td>
 <td id="_beeb36b1-49b1-5ca2-1517-3617c687cbaf" valign="middle" align="left"><link target="https://w3id.org/geosrs/Ellipsoid">Ellipsoid</link></td>
 </tr></tbody>
 </table>
 </clause>
 
-<clause id="_2af329d1-675a-66fc-fd9a-252f9d77bcf6" obligation="normative">
+<clause id="_010425c6-457f-f72b-ac31-9cdb51decbe2" obligation="normative">
 <title id="_ea1bf7bd-75f1-6341-7658-be6633f968cf">Property: geosrs:semiMajorAxis</title>
-<table id="_4fc0352a-54df-7e97-70f4-0caaafc3178b"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<table id="_a7511905-f03d-08e8-4d59-a035a3f26387"><colgroup><col width="50%"/><col width="50%"/></colgroup>
 <name id="_af05c20a-0f9a-d04f-1237-a5848e74fa03">geosrs:semiMajorAxis</name>
 <tbody><tr id="_f518bb7b-a679-64af-6720-febd9e8f2c39"><td id="_5da81245-d65b-aeca-6df9-e7664084b687" valign="middle" align="left">URI</td>
 <td id="_8e2094d9-80d5-de42-01a5-4bcce4a8d393" valign="middle" align="left"><link target="https://w3id.org/geosrs/datum/semiMajorAxis"/></td>
@@ -1854,8 +1856,8 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 <td id="_552763a6-c867-2822-57ce-b4b6ba9ee829" valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#DatatypeProperty">owl:DatatypeProperty</link></td>
 </tr><tr id="_fb4fc703-987f-202e-c56d-83d8420f63e8"><td id="_8b6334bc-7faf-48fc-e53f-67ebf901457c" valign="middle" align="left">Definition</td>
 <td id="_98f4d679-b8e5-6e01-10d7-2380c20ade23" valign="middle" align="left">Indicates the length of the semi major axis of an ellipsoid. Cf. ISO 19111:2007:2007-07, table 36, attribute length of semi-major axis.</td>
-</tr><tr id="_5c65aae9-c35d-cec7-aafb-329237d6f28f"><td id="_0f73940f-36f4-4567-f9ea-079de2f60555" valign="middle" align="left">Range</td>
-<td id="_bd5d7a12-1450-122f-0033-71ab41a34d82" valign="middle" align="left">xsd:double[xsd:double]</td>
+</tr><tr id="_0bd9fe62-e3c7-6001-ceb3-2c4b69d44592"><td id="_0f73940f-36f4-4567-f9ea-079de2f60555" valign="middle" align="left">Range</td>
+<td id="_c68c1a31-2e09-311b-820c-fa1773947d9d" valign="middle" align="left"><link target="http://www.w3.org/2001/XMLSchema#double">xsd:double</link></td>
 </tr><tr id="_61412504-c343-9549-3bea-d7a1b82f752e"><td id="_e8e64b4c-7b36-3bb4-20bb-6b66371ee18e" valign="middle" align="left">Domain</td>
 <td id="_f7bb3e10-4eff-03c2-674d-7e05bd418dd0" valign="middle" align="left"><link target="https://w3id.org/geosrs/Ellipsoid">Ellipsoid</link></td>
 </tr><tr id="_f719c84b-448a-4c2d-2810-1903680ed0e2"><td id="_ec91d8ff-7b37-15b2-5319-1d51f9a3792e" valign="middle" align="left">Example</td>
@@ -1864,9 +1866,9 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 </table>
 </clause>
 
-<clause id="_1e495fab-9089-dc3c-bfcb-976db0149974" obligation="normative">
+<clause id="_c942badc-55ca-433c-3c73-2a6f0eb6a2a0" obligation="normative">
 <title id="_e5cea6bc-22be-04b2-f43c-58b3bd93740d">Property: geosrs:semiMinorAxis</title>
-<table id="_107121bb-9f24-580b-2816-30af2fb1d86e"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<table id="_11b3b188-100d-a962-ecbd-259e553cfffb"><colgroup><col width="50%"/><col width="50%"/></colgroup>
 <name id="_47c82c8b-860f-2d84-b020-0c21366a0bec">geosrs:semiMinorAxis</name>
 <tbody><tr id="_87dbc27e-6e56-d4c6-8164-e45813a46a04"><td id="_a126c4ba-da92-f13a-5c03-28af33a06809" valign="middle" align="left">URI</td>
 <td id="_bf9aae36-031b-644a-350a-2fe44bc19d40" valign="middle" align="left"><link target="https://w3id.org/geosrs/datum/semiMinorAxis"/></td>
@@ -1874,8 +1876,8 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 <td id="_c1cf1ef2-1f5e-e2a9-64f4-ba9ebc88942f" valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#DatatypeProperty">owl:DatatypeProperty</link></td>
 </tr><tr id="_b39d6814-de0c-f0b1-9bd4-37231d393425"><td id="_367c0e26-8400-b7fa-2a50-d5a7aa6f07c2" valign="middle" align="left">Definition</td>
 <td id="_108541d4-d8e6-c591-1add-6e23e8c5b900" valign="middle" align="left">Indicates the length of the semi minor axis of an ellipsoid. Cf. ISO 19111:2007:2007-07, table 37, attribute length of semi-minor axis.</td>
-</tr><tr id="_a8da1828-2451-9d31-5344-9a885ae0b13e"><td id="_68221c16-5041-2fc9-eef9-ff660bb0dbb0" valign="middle" align="left">Range</td>
-<td id="_a9a83ca6-1b78-7603-2b30-75450d0885e8" valign="middle" align="left">xsd:double[xsd:double]</td>
+</tr><tr id="_6c8db3e8-e955-79b1-16fb-e53ab206474f"><td id="_68221c16-5041-2fc9-eef9-ff660bb0dbb0" valign="middle" align="left">Range</td>
+<td id="_db2f8d5c-c6d1-aca5-b506-4bc9788f5f2b" valign="middle" align="left"><link target="http://www.w3.org/2001/XMLSchema#double">xsd:double</link></td>
 </tr><tr id="_45f078e5-2b1c-b434-e272-8e7db3d215c7"><td id="_e40cf19a-9cbb-944e-0466-b7585b7f2470" valign="middle" align="left">Domain</td>
 <td id="_a373ad32-d5f2-8fad-a1b5-32f5021367ab" valign="middle" align="left"><link target="https://w3id.org/geosrs/Ellipsoid">Ellipsoid</link></td>
 </tr><tr id="_d7a411c4-24bd-5941-a2ee-e5a27ecf22ea"><td id="_b201dfb1-3f03-c4a2-f3be-2402574871cb" valign="middle" align="left">Example</td>
@@ -5738,11 +5740,11 @@ Foster, I., Kesselman, C.. Morgan Kaufmann, San Francisco (1999).</formattedref>
 <bibitem anchor="Czajkowski01" id="_60ff1838-3cdf-6194-2c03-ee266d197a0a"><formattedref format="application/x-isodoc+xml"><em>Grid Information Services for Distributed Resource Sharing.</em> 
 Czajkowski, K., Fitzgerald, S., Foster, I., Kesselman, C. In: 10th IEEE International Symposium on High
 Performance Distributed Computing, pp. 181–184. IEEE Press, New York (2001)</formattedref><docidentifier>Grid Information Services for Distributed Resource Sharing</docidentifier></bibitem>
-</references><references id="_125a05f1-c1e6-44fd-40ba-a9f412336209" normative="false" obligation="informative">
+</references><references id="_98079d7a-2022-3248-eff4-431f7c46560f" normative="false" obligation="informative">
 <title id="_50ceb1e1-516f-2673-d73d-4f0c58b4d023">Bibliography</title>
 <note id="_fbd336b0-a344-3030-55c6-1975921a4963"><p id="_a4639bb5-dce4-2157-2d6a-6229500fcabe">The TC has approved Springer LNCS as the official document citation type. Springer LNCS is widely used in technical and computer science journals and other publications For citations in the text please use square brackets and consecutive numbers: [1], [2], [3] Actual References: [n] Journal: Author Surname, A.: Title. Publication Title. Volume number, Issue number, Pages Used (Year Published)</p>
-</note><bibitem id="_a8121f66-463f-9109-c807-00499d3aa1d1" type="standard" schema-version="v1.2.9" anchor="iso19142">
-  <fetched>2025-08-10</fetched>
+</note><bibitem id="_5d7baed6-c12a-7bcf-ab8e-c2b64a774492" type="standard" schema-version="v1.2.9" anchor="iso19142">
+  <fetched>2025-08-11</fetched>
   
 <title type="title-intro" format="text/plain" language="en" script="Latn">Geographic information</title>
 
@@ -5789,7 +5791,7 @@ Performance Distributed Computing, pp. 181–184. IEEE Press, New York (2001)</f
   </copyright>
   <relation type="instanceOf">
     <bibitem type="standard">
-      <fetched>2025-08-10</fetched>
+      <fetched>2025-08-11</fetched>
       
 <title type="title-intro" format="text/plain" language="en" script="Latn">Geographic information</title>
 

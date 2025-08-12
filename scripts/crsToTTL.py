@@ -113,7 +113,7 @@ def crsToTTL(ttl,curcrs,x,geodcounter,crsclass):
 			axisid=axis.name.replace(" ","_").replace("(","_").replace(")","_").replace("/","_").replace("'","_")+"_"+axis.unit_name.replace(" ","_").replace("(","_").replace(")","_").replace("/","_").replace("'","_")+"_"+axis.direction.replace(" ","_").replace("(","_").replace(")","_").replace("/","_").replace("'","_")
 			ttl.add("geoepsg:"+epsgcode+"_cs geosrs:axis geosrsaxis:"+axisid+" . \n")
 			ttl.add("geosrsaxis:"+axisid+" rdf:type geosrs:CoordinateSystemAxis . \n")
-			ttl.add("geocrsaxis:"+axisid+" geocrs:asSVG \""+str(csAxisAsSVG(axis))+"\"^^geocrs:svgLiteral . \n") 
+			ttl.add("geocrsaxis:"+axisid+" geosrs:asSVG \""+str(csAxisAsSVG(axis))+"\"^^geosrs:svgLiteral . \n") 
 			ttl.add("geosrsaxis:"+axisid+" geosrs:direction geosrs:"+axis.direction+" . \n")
 			examples["geosrs:axisDirection"]=websitensshort+"/cs/axis/"+str(axis.direction)
 			ttl.add("geosrsaxis:"+axisid+" geosrs:abbreviation \""+str(axis.abbrev).replace("\"","'")+"\"^^xsd:string . \n")				
@@ -193,7 +193,7 @@ def crsToTTL(ttl,curcrs,x,geodcounter,crsclass):
 			ttl.add(geoid+" geosrs:semiMinorAxis \""+str(curcrs.get_geod().b)+"\"^^xsd:string . \n")
 		examples["geosrs:semiMinorAxis"]=websitensshort+"/geod/"+geoid	
 		if curcrs.get_geod().a!=None and curcrs.get_geod().b!=None:
-			ttl.add(geoid+" geocrs:asSVG \""+str(geoidAsSVG(curcrs.get_geod().a,curcrs.get_geod().b))+"\" . \n")
+			ttl.add(geoid+" geosrs:asSVG \""+str(geoidAsSVG(curcrs.get_geod().a,curcrs.get_geod().b))+"\" . \n")
 		ttl.add(geoid+" geosrs:flatteningParameter \""+str(curcrs.get_geod().f)+"\"^^xsd:double . \n")
 		examples["geosrs:flatteningParameter"]=websitensshort+"/geod/"+geoid	
 		geodcounter+=1
@@ -325,7 +325,7 @@ def crsToTTL(ttl,curcrs,x,geodcounter,crsclass):
 			else:
 				ttl.add("geosrsmeridian:"+meridianid+" geosrs:unit \""+str(curcrs.prime_meridian.unit_name)+"\" . \n")
 			if curcrs.prime_meridian.unit_conversion_factor!=None:
-				ttl.add("geocrsmeridian:"+curcrs.prime_meridian.name.replace(" ","")+" geocrs:unitConversionFactor \""+str(curcrs.prime_meridian.unit_conversion_factor)+"\"^^xsd:double . \n")
+				ttl.add("geocrsmeridian:"+curcrs.prime_meridian.name.replace(" ","")+" geosrs:unitConversionFactor \""+str(curcrs.prime_meridian.unit_conversion_factor)+"\"^^xsd:double . \n")
 			if curcrs.prime_meridian.name in meridiansvg:
 				ttl.add("geocrsmeridian:"+curcrs.prime_meridian.name.replace(" ","")+" foaf:image \""+str(meridiansvg[curcrs.prime_meridian.name])+"\"^^xsd:anyURI . \n")
 			ttl.add("geosrsmeridian:"+meridianid+" geosrs:asWKT \""+str(curcrs.prime_meridian.to_wkt()).replace("\"","'").replace("\n","")+"\" . \n")
@@ -367,30 +367,30 @@ def parseSolarSystemSatellites(filename,ttlstring):
 			curname=row["Name"].replace(" ","_").replace("+","_").replace(":","_").replace("(","_").replace(")","_").replace("/","_").replace("*","_").replace("'","_").replace("~","_")
 			if curname=="":
 				continue
-			ttlstring.add("geocrsisbody:"+curname+" rdf:type geocrs:Moon .\n")
+			ttlstring.add("geocrsisbody:"+curname+" rdf:type geosrs:Moon .\n")
 			ttlstring.add("geocrsisbody:"+curname+" rdfs:label \""+str(row["Name"])+"\"@en .\n")
 			if str(row["radius"])!="":
-				ttlstring.add("geocrsisbody:"+curname+" geocrs:radius \""+str(row["radius"])+"\"^^xsd:double .\n")
+				ttlstring.add("geocrsisbody:"+curname+" geosrs:radius \""+str(row["radius"])+"\"^^xsd:double .\n")
 			if str(row["orbital_period"])!="":
-				ttlstring.add("geocrsgeod:"+curname+"_geoid geocrs:orbital_period geocrsgeod:"+curname+"_geoid_obperiod .\n")
+				ttlstring.add("geocrsgeod:"+curname+"_geoid geosrs:orbital_period geocrsgeod:"+curname+"_geoid_obperiod .\n")
 				ttlstring.add("geocrsgeod:"+curname+"_geoid_obperiod rdf:value \""+row["orbital_period"]+"\"^^xsd:double .\n")
 				ttlstring.add("geocrsgeod:"+curname+"_geoid om:hasUnit om:day .\n")
-			ttlstring.add("geocrsisbody:"+curname+" geocrs:planet_status geocrs:Confirmed .\n")
-			ttlstring.add("geocrs:Confirmed rdf:type geocrs:PlanetStatus .\n")
-			ttlstring.add("geocrs:Confirmed rdfs:label \"Confirmed\"@en .\n")
-			ttlstring.add("geocrsgeod:"+curname+"_geoid rdf:type geocrs:Sphere .\n")
+			ttlstring.add("geocrsisbody:"+curname+" geosrs:planet_status geosrs:Confirmed .\n")
+			ttlstring.add("geosrs:Confirmed rdf:type geosrs:PlanetStatus .\n")
+			ttlstring.add("geosrs:Confirmed rdfs:label \"Confirmed\"@en .\n")
+			ttlstring.add("geocrsgeod:"+curname+"_geoid rdf:type geosrs:Sphere .\n")
 			ttlstring.add("geocrsgeod:"+curname+"_geoid rdfs:label \"Geoid for "+str(row["Name"])+"\"@en .\n")
 			if str(row["semi_major_axis"])!="":
-				ttlstring.add("geocrsgeod:"+curname+"_geoid geocrs:semiMajorAxis geocrsgeod:"+curname+"_geoid_smj_axis .\n")
+				ttlstring.add("geocrsgeod:"+curname+"_geoid geosrs:semiMajorAxis geocrsgeod:"+curname+"_geoid_smj_axis .\n")
 				ttlstring.add("geocrsgeod:"+curname+"_geoid_smj_axis rdf:value  \""+row["semi_major_axis"]+"\"^^xsd:double .\n")
 				ttlstring.add("geocrsgeod:"+curname+"_geoid_smj_axis om:hasUnit  om:astronomicalUnit .\n")
-			ttlstring.add("geocrsgeod:"+curname+"_geoid geocrs:isApplicableTo geocrsisbody:"+curname+" .\n")
+			ttlstring.add("geocrsgeod:"+curname+"_geoid geosrs:isApplicableTo geocrsisbody:"+curname+" .\n")
 			if str(row["Parent"])!="":
 				starname=row["Parent"].replace(" ","_").replace("+","_").replace(":","_").replace("(","_").replace(")","_").replace("/","_").replace("*","_").replace("'","_")
 				if starname!="":
-					ttlstring.add("geocrsisbody:"+starname+" rdf:type geocrs:Planet .\n")
+					ttlstring.add("geocrsisbody:"+starname+" rdf:type geosrs:Planet .\n")
 					ttlstring.add("geocrsisbody:"+starname+" rdfs:label \""+str(row["Parent"])+"\"@en .\n")	
-					ttlstring.add("geocrsisbody:"+curname+" geocrs:satelliteOf geocrsisbody:"+starname+" .\n")					
+					ttlstring.add("geocrsisbody:"+curname+" geosrs:satelliteOf geocrsisbody:"+starname+" .\n")					
 
 
 def parseAdditionalPlanetarySpheroids(filename,ttlstring):
@@ -398,43 +398,43 @@ def parseAdditionalPlanetarySpheroids(filename,ttlstring):
 		csv_reader = csv.DictReader(csv_file)
 		for row in csv_reader:
 			curname=row["name"].replace(" ","_").replace("+","_").replace(":","_").replace("(","_").replace(")","_").replace("/","_").replace("*","_").replace("'","_")
-			ttlstring.add("geocrsisbody:"+curname+" rdf:type geocrs:Planet .\n")
+			ttlstring.add("geocrsisbody:"+curname+" rdf:type geosrs:Planet .\n")
 			ttlstring.add("geocrsisbody:"+curname+" rdfs:label \""+str(row["name"])+"\"@en .\n")
 			if str(row["discovered"])!="":
 				ttlstring.add("geocrsisbody:"+curname+" dc:date \""+str(row["discovered"])+"\"^^xsd:date .\n")
 			if str(row["mass"])!="":
-				ttlstring.add("geocrsisbody:"+curname+" geocrs:mass \""+str(row["mass"])+"\"^^xsd:double .\n")
+				ttlstring.add("geocrsisbody:"+curname+" geosrs:mass \""+str(row["mass"])+"\"^^xsd:double .\n")
 			if str(row["orbital_period"])!="":
-				ttlstring.add("geocrsisbody:"+curname+" geocrs:orbital_period \""+str(row["orbital_period"])+"\"^^xsd:double .\n")
+				ttlstring.add("geocrsisbody:"+curname+" geosrs:orbital_period \""+str(row["orbital_period"])+"\"^^xsd:double .\n")
 			if str(row["radius"])!="":
-				ttlstring.add("geocrsisbody:"+curname+" geocrs:radius geocrsisbody:"+curname+"_radius .\n")
+				ttlstring.add("geocrsisbody:"+curname+" geosrs:radius geocrsisbody:"+curname+"_radius .\n")
 				ttlstring.add("geocrsisbody:"+curname+"_radius rdf:value \""+str(row["radius"])+"\"^^xsd:double .\n")
 				ttlstring.add("geocrsisbody:"+curname+"_radius om:hasUnit om:astronomicalUnit .\n")
-			ttlstring.add("geocrsisbody:"+curname+" geocrs:planet_status geocrs:"+str(row["planet_status"])+" .\n")
-			ttlstring.add("geocrs:"+str(row["planet_status"])+" rdf:type geocrs:PlanetStatus .\n")
-			ttlstring.add("geocrs:"+str(row["planet_status"])+" rdfs:label \""+row["planet_status"]+"\"@en .\n")
-			ttlstring.add("geocrsgeod:"+curname+"_geoid rdf:type geocrs:Sphere .\n")
+			ttlstring.add("geocrsisbody:"+curname+" geosrs:planet_status geosrs:"+str(row["planet_status"])+" .\n")
+			ttlstring.add("geosrs:"+str(row["planet_status"])+" rdf:type geosrs:PlanetStatus .\n")
+			ttlstring.add("geosrs:"+str(row["planet_status"])+" rdfs:label \""+row["planet_status"]+"\"@en .\n")
+			ttlstring.add("geocrsgeod:"+curname+"_geoid rdf:type geosrs:Sphere .\n")
 			ttlstring.add("geocrsgeod:"+curname+"_geoid rdfs:label \"Geoid for "+str(row["name"])+"\"@en .\n")
 			if str(row["semi_major_axis"])!="":
-				ttlstring.add("geocrsgeod:"+curname+"_geoid geocrs:semiMajorAxis geocrsgeod:"+curname+"_geoid_smj_axis .\n")
+				ttlstring.add("geocrsgeod:"+curname+"_geoid geosrs:semiMajorAxis geocrsgeod:"+curname+"_geoid_smj_axis .\n")
 				ttlstring.add("geocrsgeod:"+curname+"_geoid_smj_axis rdf:value  \""+row["semi_major_axis"]+"\"^^xsd:double .\n")
 				ttlstring.add("geocrsgeod:"+curname+"_geoid_smj_axis om:hasUnit  om:astronomicalUnit .\n")
 			if str(row["eccentricity"])!="":
-				ttlstring.add("geocrsgeod:"+curname+"_geoid geocrs:eccentricity \""+row["eccentricity"]+"\"^^xsd:double .\n")
-			ttlstring.add("geocrsgeod:"+curname+"_geoid geocrs:approximates geocrsisbody:"+curname+" .\n")
+				ttlstring.add("geocrsgeod:"+curname+"_geoid geosrs:eccentricity \""+row["eccentricity"]+"\"^^xsd:double .\n")
+			ttlstring.add("geocrsgeod:"+curname+"_geoid geosrs:approximates geocrsisbody:"+curname+" .\n")
 			if str(row["star_name"])!="":
 				starname=row["star_name"].replace(" ","_").replace("+","_").replace(":","_").replace("(","_").replace(")","_").replace("/","_").replace("*","_").replace("'","_")
-				ttlstring.add("geocrsisbody:"+starname+" rdf:type geocrs:Star .\n")
+				ttlstring.add("geocrsisbody:"+starname+" rdf:type geosrs:Star .\n")
 				ttlstring.add("geocrsisbody:"+starname+" rdfs:label \""+str(row["star_name"])+"\"@en .\n")
 				if str(row["discovered"])!="":
 					ttlstring.add("geocrsisbody:"+starname+" dc:date \""+str(row["discovered"])+"\"^^xsd:date .\n")
 				if str(row["star_mass"])!="":
-					ttlstring.add("geocrsisbody:"+starname+" geocrs:mass \""+row["star_mass"]+"\"^^xsd:double .\n")
+					ttlstring.add("geocrsisbody:"+starname+" geosrs:mass \""+row["star_mass"]+"\"^^xsd:double .\n")
 				if str(row["star_radius"])!="":
-					ttlstring.add("geocrsisbody:"+starname+" geocrs:radius \""+row["star_radius"]+"\"^^xsd:double .\n")
-				ttlstring.add("geocrsisbody:"+curname+" geocrs:satelliteOf geocrsisbody:"+starname+" .\n")
+					ttlstring.add("geocrsisbody:"+starname+" geosrs:radius \""+row["star_radius"]+"\"^^xsd:double .\n")
+				ttlstring.add("geocrsisbody:"+curname+" geosrs:satelliteOf geocrsisbody:"+starname+" .\n")
 				if str(row["star_distance"])!="":
-					ttlstring.add("geocrsisbody:"+curname+" geocrs:starDistance \""+str(row["star_distance"])+"\"^^xsd:double .\n")
+					ttlstring.add("geocrsisbody:"+curname+" geosrs:starDistance \""+str(row["star_distance"])+"\"^^xsd:double .\n")
 		return ttlstring
 
 
@@ -477,25 +477,25 @@ meridiansvg={
     "Stockholm":"https://situx.github.io/proj4rdf/primemeridians/StockholmPrimeMeridian.svg"
 }
 scope={}
-scope["geodesy"]="geocrs:Geodesy"
-scope["topographic mapping"]="geocrs:TopographicMap"
-scope["spatial referencing"]="geocrs:SpatialReferencing"
-scope["engineering survey"]="geocrs:EngineeringSurvey"
-scope["satellite survey"]="geocrs:SatelliteSurvey"
-scope["satellite navigation"]="geocrs:SatelliteNavigation"
-scope["coastal hydrography"]="geocrs:CoastalHydrography"
-scope["offshore engineering"]="geocrs:OffshoreEngineering"
-scope["hydrography"]="geocrs:Hydrography"
-scope["mapping"]="geocrs:Mapping"
-scope["seismic survey"]="geocrs:SeismicSurvey"
-scope["remote sensing"]="geocrs:RemoteSensing"
-scope["oceanography"]="geocrs:Oceanography"
-scope["forestry"]="geocrs:Forestry"
-scope["drilling"]="geocrs:Drilling"
-scope["marine navigation"]="geocrs:MarineNavigation"
-scope["nautical charting"]="geocrs:NauticalChart"
-scope["oil and gas exploration"]="geocrs:OilAndGasExploration"
-scope["cadastre"]="geocrs:CadastreMap"
+scope["geodesy"]="geosrs:Geodesy"
+scope["topographic mapping"]="geosrs:TopographicMap"
+scope["spatial referencing"]="geosrs:SpatialReferencing"
+scope["engineering survey"]="geosrs:EngineeringSurvey"
+scope["satellite survey"]="geosrs:SatelliteSurvey"
+scope["satellite navigation"]="geosrs:SatelliteNavigation"
+scope["coastal hydrography"]="geosrs:CoastalHydrography"
+scope["offshore engineering"]="geosrs:OffshoreEngineering"
+scope["hydrography"]="geosrs:Hydrography"
+scope["mapping"]="geosrs:Mapping"
+scope["seismic survey"]="geosrs:SeismicSurvey"
+scope["remote sensing"]="geosrs:RemoteSensing"
+scope["oceanography"]="geosrs:Oceanography"
+scope["forestry"]="geosrs:Forestry"
+scope["drilling"]="geosrs:Drilling"
+scope["marine navigation"]="geosrs:MarineNavigation"
+scope["nautical charting"]="geosrs:NauticalChart"
+scope["oil and gas exploration"]="geosrs:OilAndGasExploration"
+scope["cadastre"]="geosrs:CadastreMap"
 coordinatesystem={}
 coordinatesystem["ellipsoidal"]="geosrs:EllipsoidalCoordinateSystem"
 coordinatesystem["cartesian"]="geosrs:CartesianCoordinateSystem"
@@ -575,129 +575,129 @@ spheroids["WGS84"]="geocrsgeod:WGS84"
 spheroids["WGS 84"]="geocrsgeod:WGS84"
 spheroids["Zach 1812"]="geocrsgeod:Zach1812"
 projections={}
-projections["adams_ws1"]="geocrs:AdamsWorldInASquareIProjection"
-projections["adams_ws2"]="geocrs:AdamsWorldInASquareIIProjection"
-projections["aea"]="geocrs:AlbersEqualAreaProjection"
-projections["aeqd"]= "geocrs:AzimuthalEquidistantProjection"
-projections["airy"]="geocrs:AiryProjection"
-projections["aitoff"]="geocrs:AitoffProjection"
-projections["poly"]="geocrs:AmericanPolyconicProjection"
-projections["apian"]="geocrs:ApianGlobularIProjection"
-projections["august"]= "geocrs:AugustEpicycloidalProjection"
-projections["bacon"]= "geocrs:BaconGlobularProjection"
-projections["bertin1953"]="geocrs:BertinProjection"
-projections["boggs"]="geocrs:BoggsEumorphicProjection"
-projections["bonne"]="geocrs:BonneProjection"
-projections["cass"]="geocrs:CassiniProjection"
-projections["cc"]="geocrs:CentralCylindricalProjection"
-projections["ccon"]="geocrs:CentralConicProjection"
-projections["cea"]="geocrs:CylindricalEqualArea"
-projections["chamb"]="geocrs:ChamberlinTrimetricProjection"
-projections["comill"]="geocrs:CompactMillerProjection"
-projections["col_urban"]="geocrs:ColombiaUrbanProjection"
-projections["crast"]="geocrs:CrasterParabolicProjection"
-projections["eck1"]="geocrs:Eckert1Projection"
-projections["eck2"]="geocrs:Eckert2Projection"
-projections["eck3"]="geocrs:Eckert3Projection"
-projections["eck4"]="geocrs:Eckert4Projection"
-projections["eck5"]="geocrs:Eckert5Projection"
-projections["eck6"]="geocrs:Eckert6Projection"
-projections["eqc"]="geocrs:EquidistantCylindricalProjection"
-projections["eqdc"]="geocrs:EquidistantConicProjection"
-projections["eqearth"]="geocrs:EqualEarthProjection"
-projections["collg"]="geocrs:CollignonProjection"
-projections["col_urban"]="geocrs:ColombiaUrbanProjection"
-projections["denoy"]="geocrs:DenoyerSemiEllipticalProjection"
-projections["fahey"]="geocrs:FaheyProjection"
-projections["fouc_s"]="geocrs:FoucautSinusoidalProjection"
-projections["gall"]="geocrs:GallStereographicProjection"
-projections["geocent"]="geocrs:Geocentric"
-projections["gins8"]="geocrs:GinzburgVIIIProjection"
-projections["gnom"]="geocrs:GnomonicProjection"
-projections["goode"]="geocrs:GoodeHomolosineProjection"
-projections["guyou"]="geocrs:GuyouProjection"
-projections["hatano"]="geocrs:HatanoAsymmetricalEqualAreaProjection"
-projections["healpix"]="geocrs:HEALPixProjection"
-projections["igh"]="geocrs:InterruptedGoodeHomolosineProjection"
-projections["igh_o"]="geocrs:InterruptedGoodeHomolosineOceanicViewProjection"
-projections["kav5"]="geocrs:PseudoCylindricalProjection"
-projections["kav7"]="geocrs:Kavrayskiy7Projection"
-projections["krovak"]="geocrs:Krovak"
-projections["laea"]="geocrs:LambertAzimuthalEqualArea"
-projections["lagrng"]="geocrs:LagrangeProjection"
-projections["larr"]="geocrs:LarriveeProjection"
-projections["lask"]="geocrs:LaskowskiProjection"
-projections["latlong"]="geocrs:LatLonProjection"
-projections["lcc"]="geocrs:LambertConformalConicProjection"
-projections["leac"]="geocrs:LambertEqualAreaConic"
-projections["labrd"]="geocrs:LabordeProjection"
-projections["longlat"]="geocrs:LonLatProjection"
-projections["loxim"]="geocrs:LoximuthalProjection"
-projections["mbt_s"]="geocrs:McBrydeThomasIProjection"
-projections["mbt_fps"]="geocrs:McBrydeThomasIIProjection"
-projections["mbtfpp"]="geocrs:McBrydeThomasFlatPolarParabolicProjection"
-projections["mbtfpq"]="geocrs:McBrydeThomasFlatPolarQuarticProjection"
-projections["mbtfps"]="geocrs:McBrydeThomasFlatPolarSinusoidalProjection"
-projections["merc"]="geocrs:MercatorProjection"
-projections["mill"]="geocrs:MillerProjection"
-projections["mil_os"]="geocrs:MillerOblatedStereographicProjection"
-projections["murd1"]="geocrs:MurdochIProjection"
-projections["murd2"]="geocrs:MurdochIIProjection"
-projections["murd3"]="geocrs:MurdochIIIProjection"
-projections["natearth"]="geocrs:NaturalEarthProjection"
-projections["natearth2"]="geocrs:NaturalEarth2Projection"
-projections["moll"]="geocrs:MollweideProjection"
-projections["nell"]="geocrs:PseudoCylindricalProjection"
-projections["nell_h"]="geocrs:NellHammerProjection"
-projections["nicol"]="geocrs:NicolosiGlobularProjection"
-projections["ocea"]="geocrs:ObliqueCylindricalEqualAreaProjection"
-projections["omerc"]="geocrs:ObliqueMercatorProjection"
-projections["sterea"]="geocrs:ObliqueStereographicProjection"
-projections["ocea"]="geocrs:ObliqueCylindricalEqualAreaProjection"
-projections["ortel"]="geocrs:OrteliusOvalProjection"
-projections["ortho"]="geocrs:OrthographicProjection"
-projections["patterson"]="geocrs:PattersonCylindricalProjection"
-projections["pconic"]="geocrs:PerspectiveConicProjection"
-projections["poly"]="geocrs:AmericanPolyconicProjection"
-projections["peirce_q"]="geocrs:PeirceQuincuncialProjection"
-projections["putp1"]="geocrs:PutninsP1Projection"
-projections["putp2"]="geocrs:PutninsP2Projection"
-projections["putp3"]="geocrs:PutninsP3Projection"
-projections["putp3p"]="geocrs:PutninsP3'Projection"
-projections["putp4"]="geocrs:PutninsP4Projection"
-projections["putp4p"]="geocrs:PutninsP4'Projection"
-projections["putp5"]="geocrs:PutninsP5Projection"
-projections["putp6"]="geocrs:PutninsP6Projection"
-projections["putp6p"]="geocrs:PutninsP6'Projection"
-projections["qua_aut"]="geocrs:QuarticAuthalicProjection"
-projections["qsc"]="QuadrilateralizedSphericalCubeProjection"
-projections["rpoly"]="geocrs:RectangularPolyconicProjection"
-projections["robin"]="geocrs:RobinsonProjection"
-projections["rouss"]="geocrs:RoussilheProjection"
-projections["rpoly"]="geocrs:RectangularPolyconicProjection"
-projections["stere"]="geocrs:StereographicProjection"
-projections["sinu"]="geocrs:SinusoidalProjection"
-projections["tcea"]="geocrs:TransverseCylindricalEqualAreaProjection"
-projections["tpeqd"]="geocrs:TwoPointEquidistantProjection"
-projections["times"]="geocrs:TheTimesProjection"
-projections["tmerc"]="geocrs:TransverseMercatorProjection"
-projections["utm"]="geocrs:UniversalTransverseMercatorProjection"
-projections["vandg"]="geocrs:VanDerGrintenIProjection"
-projections["vandg2"]="geocrs:VanDerGrintenIIProjection"
-projections["vandg3"]="geocrs:VanDerGrintenIIIProjection"
-projections["vandg4"]="geocrs:VanDerGrintenIVProjection"
-projections["vitk1"]="geocrs:VitkovskyIProjection"
-projections["wintri"]="geocrs:WinkelTripelProjection"
-projections["wag1"]="geocrs:WagnerIProjection"
-projections["wag2"]="geocrs:WagnerIIProjection"
-projections["wag3"]="geocrs:WagnerIIIProjection"
-projections["wag4"]="geocrs:WagnerIVProjection"
-projections["wag5"]="geocrs:WagnerVProjection"
-projections["wag6"]="geocrs:WagnerVIProjection"
-projections["wag7"]="geocrs:WagnerVIIProjection"
-projections["wag8"]="geocrs:WagnerVIIIProjection"
-projections["wag9"]="geocrs:WagnerIXProjection"
-projections["weren"]="geocrs:WerenskioldIProjection"
+projections["adams_ws1"]="geosrs:AdamsWorldInASquareIProjection"
+projections["adams_ws2"]="geosrs:AdamsWorldInASquareIIProjection"
+projections["aea"]="geosrs:AlbersEqualAreaProjection"
+projections["aeqd"]= "geosrs:AzimuthalEquidistantProjection"
+projections["airy"]="geosrs:AiryProjection"
+projections["aitoff"]="geosrs:AitoffProjection"
+projections["poly"]="geosrs:AmericanPolyconicProjection"
+projections["apian"]="geosrs:ApianGlobularIProjection"
+projections["august"]= "geosrs:AugustEpicycloidalProjection"
+projections["bacon"]= "geosrs:BaconGlobularProjection"
+projections["bertin1953"]="geosrs:BertinProjection"
+projections["boggs"]="geosrs:BoggsEumorphicProjection"
+projections["bonne"]="geosrs:BonneProjection"
+projections["cass"]="geosrs:CassiniProjection"
+projections["cc"]="geosrs:CentralCylindricalProjection"
+projections["ccon"]="geosrs:CentralConicProjection"
+projections["cea"]="geosrs:CylindricalEqualArea"
+projections["chamb"]="geosrs:ChamberlinTrimetricProjection"
+projections["comill"]="geosrs:CompactMillerProjection"
+projections["col_urban"]="geosrs:ColombiaUrbanProjection"
+projections["crast"]="geosrs:CrasterParabolicProjection"
+projections["eck1"]="geosrs:Eckert1Projection"
+projections["eck2"]="geosrs:Eckert2Projection"
+projections["eck3"]="geosrs:Eckert3Projection"
+projections["eck4"]="geosrs:Eckert4Projection"
+projections["eck5"]="geosrs:Eckert5Projection"
+projections["eck6"]="geosrs:Eckert6Projection"
+projections["eqc"]="geosrs:EquidistantCylindricalProjection"
+projections["eqdc"]="geosrs:EquidistantConicProjection"
+projections["eqearth"]="geosrs:EqualEarthProjection"
+projections["collg"]="geosrs:CollignonProjection"
+projections["col_urban"]="geosrs:ColombiaUrbanProjection"
+projections["denoy"]="geosrs:DenoyerSemiEllipticalProjection"
+projections["fahey"]="geosrs:FaheyProjection"
+projections["fouc_s"]="geosrs:FoucautSinusoidalProjection"
+projections["gall"]="geosrs:GallStereographicProjection"
+projections["geocent"]="geosrs:Geocentric"
+projections["gins8"]="geosrs:GinzburgVIIIProjection"
+projections["gnom"]="geosrs:GnomonicProjection"
+projections["goode"]="geosrs:GoodeHomolosineProjection"
+projections["guyou"]="geosrs:GuyouProjection"
+projections["hatano"]="geosrs:HatanoAsymmetricalEqualAreaProjection"
+projections["healpix"]="geosrs:HEALPixProjection"
+projections["igh"]="geosrs:InterruptedGoodeHomolosineProjection"
+projections["igh_o"]="geosrs:InterruptedGoodeHomolosineOceanicViewProjection"
+projections["kav5"]="geosrs:PseudoCylindricalProjection"
+projections["kav7"]="geosrs:Kavrayskiy7Projection"
+projections["krovak"]="geosrs:Krovak"
+projections["laea"]="geosrs:LambertAzimuthalEqualArea"
+projections["lagrng"]="geosrs:LagrangeProjection"
+projections["larr"]="geosrs:LarriveeProjection"
+projections["lask"]="geosrs:LaskowskiProjection"
+projections["latlong"]="geosrs:LatLonProjection"
+projections["lcc"]="geosrs:LambertConformalConicProjection"
+projections["leac"]="geosrs:LambertEqualAreaConic"
+projections["labrd"]="geosrs:LabordeProjection"
+projections["longlat"]="geosrs:LonLatProjection"
+projections["loxim"]="geosrs:LoximuthalProjection"
+projections["mbt_s"]="geosrs:McBrydeThomasIProjection"
+projections["mbt_fps"]="geosrs:McBrydeThomasIIProjection"
+projections["mbtfpp"]="geosrs:McBrydeThomasFlatPolarParabolicProjection"
+projections["mbtfpq"]="geosrs:McBrydeThomasFlatPolarQuarticProjection"
+projections["mbtfps"]="geosrs:McBrydeThomasFlatPolarSinusoidalProjection"
+projections["merc"]="geosrs:MercatorProjection"
+projections["mill"]="geosrs:MillerProjection"
+projections["mil_os"]="geosrs:MillerOblatedStereographicProjection"
+projections["murd1"]="geosrs:MurdochIProjection"
+projections["murd2"]="geosrs:MurdochIIProjection"
+projections["murd3"]="geosrs:MurdochIIIProjection"
+projections["natearth"]="geosrs:NaturalEarthProjection"
+projections["natearth2"]="geosrs:NaturalEarth2Projection"
+projections["moll"]="geosrs:MollweideProjection"
+projections["nell"]="geosrs:PseudoCylindricalProjection"
+projections["nell_h"]="geosrs:NellHammerProjection"
+projections["nicol"]="geosrs:NicolosiGlobularProjection"
+projections["ocea"]="geosrs:ObliqueCylindricalEqualAreaProjection"
+projections["omerc"]="geosrs:ObliqueMercatorProjection"
+projections["sterea"]="geosrs:ObliqueStereographicProjection"
+projections["ocea"]="geosrs:ObliqueCylindricalEqualAreaProjection"
+projections["ortel"]="geosrs:OrteliusOvalProjection"
+projections["ortho"]="geosrs:OrthographicProjection"
+projections["patterson"]="geosrs:PattersonCylindricalProjection"
+projections["pconic"]="geosrs:PerspectiveConicProjection"
+projections["poly"]="geosrs:AmericanPolyconicProjection"
+projections["peirce_q"]="geosrs:PeirceQuincuncialProjection"
+projections["putp1"]="geosrs:PutninsP1Projection"
+projections["putp2"]="geosrs:PutninsP2Projection"
+projections["putp3"]="geosrs:PutninsP3Projection"
+projections["putp3p"]="geosrs:PutninsP3'Projection"
+projections["putp4"]="geosrs:PutninsP4Projection"
+projections["putp4p"]="geosrs:PutninsP4'Projection"
+projections["putp5"]="geosrs:PutninsP5Projection"
+projections["putp6"]="geosrs:PutninsP6Projection"
+projections["putp6p"]="geosrs:PutninsP6'Projection"
+projections["qua_aut"]="geosrs:QuarticAuthalicProjection"
+projections["qsc"]="geosrs:QuadrilateralizedSphericalCubeProjection"
+projections["rpoly"]="geosrs:RectangularPolyconicProjection"
+projections["robin"]="geosrs:RobinsonProjection"
+projections["rouss"]="geosrs:RoussilheProjection"
+projections["rpoly"]="geosrs:RectangularPolyconicProjection"
+projections["stere"]="geosrs:StereographicProjection"
+projections["sinu"]="geosrs:SinusoidalProjection"
+projections["tcea"]="geosrs:TransverseCylindricalEqualAreaProjection"
+projections["tpeqd"]="geosrs:TwoPointEquidistantProjection"
+projections["times"]="geosrs:TheTimesProjection"
+projections["tmerc"]="geosrs:TransverseMercatorProjection"
+projections["utm"]="geosrs:UniversalTransverseMercatorProjection"
+projections["vandg"]="geosrs:VanDerGrintenIProjection"
+projections["vandg2"]="geosrs:VanDerGrintenIIProjection"
+projections["vandg3"]="geosrs:VanDerGrintenIIIProjection"
+projections["vandg4"]="geosrs:VanDerGrintenIVProjection"
+projections["vitk1"]="geosrs:VitkovskyIProjection"
+projections["wintri"]="geosrs:WinkelTripelProjection"
+projections["wag1"]="geosrs:WagnerIProjection"
+projections["wag2"]="geosrs:WagnerIIProjection"
+projections["wag3"]="geosrs:WagnerIIIProjection"
+projections["wag4"]="geosrs:WagnerIVProjection"
+projections["wag5"]="geosrs:WagnerVProjection"
+projections["wag6"]="geosrs:WagnerVIProjection"
+projections["wag7"]="geosrs:WagnerVIIProjection"
+projections["wag8"]="geosrs:WagnerVIIIProjection"
+projections["wag9"]="geosrs:WagnerIXProjection"
+projections["weren"]="geosrs:WerenskioldIProjection"
 ttl=set()
 ttlhead="@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n"
 ttlhead+="@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n"

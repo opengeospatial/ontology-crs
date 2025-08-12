@@ -247,6 +247,7 @@ def crsToTTL(ttl,curcrs,x,geodcounter,crsclass):
 					projectionscoll[prj]=True
 					if prj in proj4string:
 						ttl.add("geosrsoperation:"+str(coordoperationid)+" rdf:type "+projections[prj]+" . \n")
+						ttl.add(str(projections[prj])+" <http://xmlns.com/foaf/0.1/image> \"https://situx.github.io/proj4rdf/projections/"+str(projections[prj]).replace("geosrs:","")+".svg\"^^xsd:anyURI .")
 						examples[projections[prj]]=websitensshort+"/crs/operation/"+str(coordoperationid)
 						found=True
 						break

@@ -741,7 +741,7 @@ Together with several subtypes of coordnate reference system, these definitions 
 </tr>
 <tr>
   <td class="tableblock halign-left valign-top"><p class="tableblock">Range</p></td>
-  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs//proj4Literal">proj4Literal</a></p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/srs/proj4Literal">proj4Literal</a></p></td>
 </tr>
 <tr>
   <td class="tableblock halign-left valign-top"><p class="tableblock">Domain</p></td>
@@ -773,7 +773,7 @@ Together with several subtypes of coordnate reference system, these definitions 
 </tr>
 <tr>
   <td class="tableblock halign-left valign-top"><p class="tableblock">Range</p></td>
-  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs//projJSONLiteral">projJSONLiteral</a></p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/srs/projJSONLiteral">projJSONLiteral</a></p></td>
 </tr>
 <tr>
   <td class="tableblock halign-left valign-top"><p class="tableblock">Domain</p></td>
@@ -805,7 +805,7 @@ Together with several subtypes of coordnate reference system, these definitions 
 </tr>
 <tr>
   <td class="tableblock halign-left valign-top"><p class="tableblock">Range</p></td>
-  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs//wktLiteral">wktLiteral</a></p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/srs/wktLiteral">wktLiteral</a></p></td>
 </tr>
 <tr>
   <td class="tableblock halign-left valign-top"><p class="tableblock">Domain</p></td>
@@ -8343,6 +8343,10 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <dl>
 <dt class="hdlist1">requirement</dt>
 <dd>
+<p>/req/SRS_Literal_Types</p>
+</dd>
+<dt class="hdlist1">requirement</dt>
+<dd>
 <p>/req/Coordinate_System_Axis</p>
 </dd>
 <dt class="hdlist1">requirement</dt>
@@ -8509,9 +8513,104 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 </section>
 </section>
 <section class="sect3">
+<h4 id="_srs_literal_types">SRS Literal Types</h4>
+<aside class="example">
+<div class="title">Example 48. SRS Literal Types</div>
+<div class="content">
+<p class="paragraph">
+<p>Implementations shall allow the RDFS instances <a href="#_instance_geosrsproj4literal"><code>geosrs:proj4Literal</code></a>, <a href="#_instance_geosrsprojjsonliteral"><code>geosrs:projJSONLiteral</code></a>, <a href="#_instance_geosrswktliteral"><code>geosrs:wktLiteral</code></a> to be used in SPARQL graph patterns.</p>
+</p>
+</div>
+</aside>
+<section class="sect4">
+<h5 id="_instance_geosrsproj4literal">Instance: geosrs:proj4Literal</h5>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Table 337. geosrs:proj4Literal</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/proj4Literal">https://w3id.org/geosrs/proj4Literal</a></p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Type</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">rdf:Datatype[rdf:Datatype]</p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Definition</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">A literal which stores a proj4 String</p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Example</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://opengeospatial.github.io/ontology-crs/data/def/crs/EPSG/0//29903" target="_blank">geosrs:proj4Literal</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sect4">
+<h5 id="_instance_geosrsprojjsonliteral">Instance: geosrs:projJSONLiteral</h5>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Table 338. geosrs:projJSONLiteral</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/projJSONLiteral">https://w3id.org/geosrs/projJSONLiteral</a></p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Type</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">rdf:Dataype[rdf:Dataype]</p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Definition</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">A literal which stores a projection JSON (ProjJSON) String</p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Example</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://opengeospatial.github.io/ontology-crs/data/def/crs/EPSG/0//29903" target="_blank">geosrs:projJSONLiteral</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sect4">
+<h5 id="_instance_geosrswktliteral">Instance: geosrs:wktLiteral</h5>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Table 339. geosrs:wktLiteral</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/wktLiteral">https://w3id.org/geosrs/wktLiteral</a></p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Type</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">rdf:Datatype[rdf:Datatype]</p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Definition</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">A literal which stores a WKT for CRS String</p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Example</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://opengeospatial.github.io/ontology-crs/data/def/crs/EPSG/0//29903" target="_blank">geosrs:wktLiteral</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section class="sect3">
 <h4 id="_spheroids">Spheroids</h4>
 <aside class="example">
-<div class="title">Example 48. Spheroids</div>
+<div class="title">Example 49. Spheroids</div>
 <div class="content">
 <p class="paragraph">
 <p>Implementations shall allow the RDFS instances <a href="#_instance_geosrsgrs1980"><code>geosrs:GRS1980</code></a>, <a href="#_instance_geosrsgrs67"><code>geosrs:GRS67</code></a>, <a href="#_instance_geosrspz90"><code>geosrs:PZ90</code></a>, <a href="#_instance_geosrsairy1830"><code>geosrs:Airy1830</code></a>, <a href="#_instance_geosrsairymodified1849"><code>geosrs:AiryModified1849</code></a>, <a href="#_instance_geosrsinternational1924"><code>geosrs:International1924</code></a>, <a href="#_instance_geosrsaustraliannationalspheroid"><code>geosrs:AustralianNationalSpheroid</code></a>, <a href="#_instance_geosrseverest1930"><code>geosrs:Everest1930</code></a>, <a href="#_instance_geosrsclarke1866"><code>geosrs:Clarke1866</code></a>, <a href="#_instance_geosrsplessis1817"><code>geosrs:Plessis1817</code></a>, <a href="#_instance_geosrsdanish1876"><code>geosrs:Danish1876</code></a>, <a href="#_instance_geosrsstruve1860"><code>geosrs:Struve1860</code></a>, <a href="#_instance_geosrsiag1975"><code>geosrs:IAG1975</code></a>, <a href="#_instance_geosrsclarke1858"><code>geosrs:Clarke1858</code></a>, <a href="#_instance_geosrsclarke1880"><code>geosrs:Clarke1880</code></a>, <a href="#_instance_geosrshelmert1906"><code>geosrs:Helmert1906</code></a>, <a href="#_instance_geosrscgcs2000"><code>geosrs:CGCS2000</code></a>, <a href="#_instance_geosrsgsk_2011"><code>geosrs:GSK-2011</code></a>, <a href="#_instance_geosrszach1812"><code>geosrs:Zach1812</code></a>, <a href="#_instance_geosrsclarke1880arc"><code>geosrs:Clarke1880ARC</code></a>, <a href="#_instance_geosrsclarke1880ign"><code>geosrs:Clarke1880IGN</code></a>, <a href="#_instance_geosrswgs66"><code>geosrs:WGS66</code></a>, <a href="#_instance_geosrswgs72"><code>geosrs:WGS72</code></a>, <a href="#_instance_geosrswgs84"><code>geosrs:WGS84</code></a>, <a href="#_instance_geosrskrassowsky1940"><code>geosrs:Krassowsky1940</code></a> to be used in SPARQL graph patterns.</p>
@@ -8521,7 +8620,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_instance_geosrsgrs1980">Instance: geosrs:GRS1980</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 337. geosrs:GRS1980</caption>
+<caption class="title">Table 340. geosrs:GRS1980</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -8549,7 +8648,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_instance_geosrsgrs67">Instance: geosrs:GRS67</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 338. geosrs:GRS67</caption>
+<caption class="title">Table 341. geosrs:GRS67</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -8577,7 +8676,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_instance_geosrspz90">Instance: geosrs:PZ90</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 339. geosrs:PZ90</caption>
+<caption class="title">Table 342. geosrs:PZ90</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -8605,7 +8704,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_instance_geosrsairy1830">Instance: geosrs:Airy1830</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 340. geosrs:Airy1830</caption>
+<caption class="title">Table 343. geosrs:Airy1830</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -8633,7 +8732,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_instance_geosrsairymodified1849">Instance: geosrs:AiryModified1849</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 341. geosrs:AiryModified1849</caption>
+<caption class="title">Table 344. geosrs:AiryModified1849</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -8661,7 +8760,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_instance_geosrsinternational1924">Instance: geosrs:International1924</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 342. geosrs:International1924</caption>
+<caption class="title">Table 345. geosrs:International1924</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -8689,7 +8788,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_instance_geosrsaustraliannationalspheroid">Instance: geosrs:AustralianNationalSpheroid</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 343. geosrs:AustralianNationalSpheroid</caption>
+<caption class="title">Table 346. geosrs:AustralianNationalSpheroid</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -8717,7 +8816,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_instance_geosrseverest1930">Instance: geosrs:Everest1930</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 344. geosrs:Everest1930</caption>
+<caption class="title">Table 347. geosrs:Everest1930</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -8741,7 +8840,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_instance_geosrsclarke1866">Instance: geosrs:Clarke1866</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 345. geosrs:Clarke1866</caption>
+<caption class="title">Table 348. geosrs:Clarke1866</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -8769,7 +8868,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_instance_geosrsplessis1817">Instance: geosrs:Plessis1817</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 346. geosrs:Plessis1817</caption>
+<caption class="title">Table 349. geosrs:Plessis1817</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -8797,7 +8896,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_instance_geosrsdanish1876">Instance: geosrs:Danish1876</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 347. geosrs:Danish1876</caption>
+<caption class="title">Table 350. geosrs:Danish1876</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -8825,7 +8924,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_instance_geosrsstruve1860">Instance: geosrs:Struve1860</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 348. geosrs:Struve1860</caption>
+<caption class="title">Table 351. geosrs:Struve1860</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -8853,7 +8952,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_instance_geosrsiag1975">Instance: geosrs:IAG1975</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 349. geosrs:IAG1975</caption>
+<caption class="title">Table 352. geosrs:IAG1975</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -8881,7 +8980,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_instance_geosrsclarke1858">Instance: geosrs:Clarke1858</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 350. geosrs:Clarke1858</caption>
+<caption class="title">Table 353. geosrs:Clarke1858</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -8909,7 +9008,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_instance_geosrsclarke1880">Instance: geosrs:Clarke1880</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 351. geosrs:Clarke1880</caption>
+<caption class="title">Table 354. geosrs:Clarke1880</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -8937,7 +9036,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_instance_geosrshelmert1906">Instance: geosrs:Helmert1906</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 352. geosrs:Helmert1906</caption>
+<caption class="title">Table 355. geosrs:Helmert1906</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -8965,7 +9064,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_instance_geosrscgcs2000">Instance: geosrs:CGCS2000</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 353. geosrs:CGCS2000</caption>
+<caption class="title">Table 356. geosrs:CGCS2000</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -8993,7 +9092,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_instance_geosrsgsk_2011">Instance: geosrs:GSK-2011</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 354. geosrs:GSK-2011</caption>
+<caption class="title">Table 357. geosrs:GSK-2011</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -9017,7 +9116,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_instance_geosrszach1812">Instance: geosrs:Zach1812</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 355. geosrs:Zach1812</caption>
+<caption class="title">Table 358. geosrs:Zach1812</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -9045,7 +9144,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_instance_geosrsclarke1880arc">Instance: geosrs:Clarke1880ARC</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 356. geosrs:Clarke1880ARC</caption>
+<caption class="title">Table 359. geosrs:Clarke1880ARC</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -9073,7 +9172,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_instance_geosrsclarke1880ign">Instance: geosrs:Clarke1880IGN</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 357. geosrs:Clarke1880IGN</caption>
+<caption class="title">Table 360. geosrs:Clarke1880IGN</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -9101,7 +9200,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_instance_geosrswgs66">Instance: geosrs:WGS66</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 358. geosrs:WGS66</caption>
+<caption class="title">Table 361. geosrs:WGS66</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -9125,7 +9224,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_instance_geosrswgs72">Instance: geosrs:WGS72</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 359. geosrs:WGS72</caption>
+<caption class="title">Table 362. geosrs:WGS72</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -9153,7 +9252,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_instance_geosrswgs84">Instance: geosrs:WGS84</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 360. geosrs:WGS84</caption>
+<caption class="title">Table 363. geosrs:WGS84</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -9181,7 +9280,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect4">
 <h5 id="_instance_geosrskrassowsky1940">Instance: geosrs:Krassowsky1940</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 361. geosrs:Krassowsky1940</caption>
+<caption class="title">Table 364. geosrs:Krassowsky1940</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -9217,7 +9316,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <p>The prefixes used for the ontologies mapped to in all following sections are given in the following table.</p>
 </p>
 <table class="tableblock frame-none grid-none spread">
-<caption class="title">Table 362. Alignment: Namespaces</caption>
+<caption class="title">Table 365. Alignment: Namespaces</caption>
 <colgroup>
 <col style="width: 14.2857%;">
 <col style="width: 85.7143%;">
@@ -9260,7 +9359,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect2">
 <h3 id="_ign_ontology">IGN Ontology</h3>
 <table class="tableblock frame-all grid-all">
-<caption class="title">Table 363. Alignment: IGN Ontology</caption>
+<caption class="title">Table 366. Alignment: IGN Ontology</caption>
 <colgroup>
 <col>
 <col>
@@ -9462,7 +9561,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect2">
 <h3 id="_iso19111_ontology">ISO19111 Ontology</h3>
 <table class="tableblock frame-all grid-all">
-<caption class="title">Table 364. Alignment: ISO19111 Ontology</caption>
+<caption class="title">Table 367. Alignment: ISO19111 Ontology</caption>
 <colgroup>
 <col>
 <col>
@@ -9562,7 +9661,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <section class="sect2">
 <h3 id="_ifc_ontology">IFC Ontology</h3>
 <table class="tableblock frame-all grid-all">
-<caption class="title">Table 365. Alignment: IFC Ontology</caption>
+<caption class="title">Table 368. Alignment: IFC Ontology</caption>
 <colgroup>
 <col>
 <col>
@@ -9718,7 +9817,7 @@ Actual References:
 </section>
 <div id="footer">
 <div id="footer-text">
-Last updated 2025-08-12 19:29:35 UTC
+Last updated 2025-08-12 19:50:04 UTC
 </div>
 </div>
 </body>

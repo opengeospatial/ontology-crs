@@ -9,19 +9,19 @@
 <geocrs:asProj4> a owl:DatatypeProperty ;
     rdfs:label "PROJ4 string"@en ;
     rdfs:domain geosrs_srs:CRS ;
-    rdfs:range <https://w3id.org/geosrs//proj4Literal> ;
+    rdfs:range geosrs_srs:proj4Literal ;
     skos:definition "PROJ4 string defining a CRS. Note: this paradigm is ambiguous and presently considered outdated."@en .
 
 <geocrs:asProjJSON> a owl:DatatypeProperty ;
     rdfs:label "PROJ JSON definition"@en ;
     rdfs:domain geosrs_srs:CRS ;
-    rdfs:range <https://w3id.org/geosrs//projJSONLiteral> ;
+    rdfs:range geosrs_srs:projJSONLiteral ;
     skos:definition "CRS definition encoded as a JSON object interpretable by PROJ4."@en .
 
 <geocrs:asWKT> a owl:DatatypeProperty ;
     rdfs:label "WKT definition"@en ;
     rdfs:domain geosrs_srs:CRS ;
-    rdfs:range <https://w3id.org/geosrs//wktLiteral> ;
+    rdfs:range geosrs_srs:wktLiteral ;
     skos:definition "CRS definition encoded according to the Well Known Text structure. Cf. ISO 19162:2019. "@en .
 
 geosrs_srs:AxesList a owl:Class ;
@@ -177,6 +177,21 @@ geosrs_srs:SpatioParametricCompoundCRS a owl:Class ;
     rdfs:label "Spatio Parametric Compound Coordinate Reference System"@en ;
     rdfs:subClassOf geosrs_srs:CompoundCRS ;
     skos:definition "A spatio-parametric coordinate reference system is a compound CRS in which one component is a geographic 2D, projected 2D or engineering 2D CRS, supplemented by a parametric CRS to create a three-dimensional CRS"@en .
+
+geosrs_srs:proj4Literal a owl:NamedIndividual,
+        <rdf:Datatype> ;
+    rdfs:label "Proj4 Literal"@en ;
+    skos:definition "A literal which stores a proj4 String"@en .
+
+geosrs_srs:projJSONLiteral a owl:NamedIndividual,
+        <rdf:Dataype> ;
+    rdfs:label "ProJJSON Literal"@en ;
+    skos:definition "A literal which stores a projection JSON (ProjJSON) String"@en .
+
+geosrs_srs:wktLiteral a owl:NamedIndividual,
+        <rdf:Datatype> ;
+    rdfs:label "WKT Literal"@en ;
+    skos:definition "A literal which stores a WKT for CRS String"@en .
 
 geosrs_srs:CompoundCRS a owl:Class ;
     rdfs:label "Compound Coordinate Reference System"@en ;

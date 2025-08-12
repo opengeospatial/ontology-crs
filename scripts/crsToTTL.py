@@ -302,13 +302,19 @@ def crsToTTL(ttl,curcrs,x,geodcounter,crsclass):
 		ttl.add("geoepsg:"+epsgcode+" geosrs:utm_zone \""+str(curcrs.utm_zone)+"\"^^xsd:string . \n")	
 	try:
 		if curcrs.to_proj4()!=None:
-			ttl.add("geoepsg:"+epsgcode+" geosrs:asProj4 \""+curcrs.to_proj4().strip().replace("\"","'")+"\"^^xsd:string . \n")
+			ttl.add("geoepsg:"+epsgcode+" geosrs:asProj4 \""+curcrs.to_proj4().strip().replace("\"","'")+"\"^^geosrs:proj4Literal . \n")
+			examples["geosrs:asProj4"]=websitens+"/"+str(epsgcode)	
+			examples["geosrs:proj4Literal"]=websitens+"/"+str(epsgcode)
 	except:
 		print("error")
 	if curcrs.to_json()!=None:
-		ttl.add("geoepsg:"+epsgcode+" geosrs:asProjJSON \""+curcrs.to_json().strip().replace("\"","'")+"\"^^xsd:string . \n")		
+		ttl.add("geoepsg:"+epsgcode+" geosrs:asProjJSON \""+curcrs.to_json().strip().replace("\"","'")+"\"^^geosrs:projJSONLiteral . \n")
+		examples["geosrs:asProjJSON"]=websitens+"/"+str(epsgcode)	
+		examples["geosrs:projJSONLiteral"]=websitens+"/"+str(epsgcode)		
 	if wkt!="":
 		ttl.add("geoepsg:"+epsgcode+" geosrs:asWKT \""+wkt+"\"^^geosrs:wktLiteral . \n")
+		examples["geosrs:asWKT"]=websitens+"/"+str(epsgcode)	
+		examples["geosrs:wktLiteral"]=websitens+"/"+str(epsgcode)
 	ttl.add("geoepsg:"+epsgcode+" geosrs:epsgCode \"EPSG:"+epsgcode+"\"^^xsd:string . \n")		
 	#i+=1
 

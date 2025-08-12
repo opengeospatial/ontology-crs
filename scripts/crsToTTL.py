@@ -146,6 +146,7 @@ def crsToTTL(ttl,curcrs,x,geodcounter,crsclass):
 		ttl.add(geoid+" geosrs:eccentricity \""+str(curcrs.get_geod().es)+"\"^^xsd:double . \n")
 		examples["geosrs:eccentricity"]=websitensshort+"/geod/"+geoid	
 		ttl.add(geoid+" geosrs:isSphere \""+str(curcrs.get_geod().sphere)+"\"^^xsd:boolean . \n")
+		examples["geosrs:isSphere"]=websitensshort+"/geod/"+geoid	
 		if str(curcrs.get_geod().a).isnumeric():
 			ttl.add(geoid+" geosrs:semiMajorAxis \""+str(curcrs.get_geod().a)+"\"^^xsd:double . \n")
 		else:
@@ -252,6 +253,7 @@ def crsToTTL(ttl,curcrs,x,geodcounter,crsclass):
 					if scp.lower().strip().replace(".","") in scope:
 						ttl.add("geosrsdatum:"+str(datumid)+" geosrs:usage "+scope[scp.lower().strip().replace(".","")]+" . \n")
 						ttl.add(scope[scp.lower().strip().replace(".","")]+" rdfs:subClassOf geosrs:SRSApplication . \n")
+						examples[scope[scp.lower().strip().replace(".","")]]=websitensshort+"/datum/"+str(datumid)
 					else:
 						ttl.add("geosrsdatum:"+str(datumid)+" geosrs:usage \""+str(curcrs.datum.scope)+"\"^^xsd:string . \n")
 			#print(str(curcrs.datum.scope))

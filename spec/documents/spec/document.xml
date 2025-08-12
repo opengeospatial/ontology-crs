@@ -1667,7 +1667,7 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 </tr><tr id="_adb3d4c7-ec66-1059-d6ea-2bdf884f8eef"><td id="_f317eb89-334f-f030-e610-7a09d548a72e" valign="middle" align="left">Domain</td>
 <td id="_13a6ed5a-bdb8-bc47-ba48-76b18d11903e" valign="middle" align="left"><link target="https://w3id.org/geosrs/Datum">Datum</link></td>
 </tr><tr id="_7ce91657-2417-0be7-7628-b3c4a975f9c0"><td id="_4c31dac8-cce5-11dc-18d5-e8d18e06dd1c" valign="middle" align="left">Example</td>
-<td id="_a021e508-d7f1-ab0c-38a9-4d9c07eb6d92" valign="middle" align="left"><link target="https://opengeospatial.github.io/ontology-crs/data/ont/crs//datum/Timbalai_1948">geosrs:ellipsoid</link></td>
+<td id="_a021e508-d7f1-ab0c-38a9-4d9c07eb6d92" valign="middle" align="left"><link target="https://opengeospatial.github.io/ontology-crs/data/ont/crs//datum/Schwarzeck">geosrs:ellipsoid</link></td>
 </tr></tbody>
 </table>
 </clause>
@@ -1807,7 +1807,7 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 </tr><tr id="_8e868f89-ad74-185a-31e3-d07dae73ebcf"><td id="_9aaf57b8-6b7e-4b8a-59e2-f50a991821c9" valign="middle" align="left">Domain</td>
 <td id="_99f74e83-e666-15b6-27e3-d43b99568977" valign="middle" align="left"><link target="https://w3id.org/geosrs/Ellipsoid">Ellipsoid</link></td>
 </tr><tr id="_d578e142-6008-46e0-dd64-2e7ef92bf4ed"><td id="_46b58b3e-ddfd-aff7-092c-8b0a865bf487" valign="middle" align="left">Example</td>
-<td id="_df65626e-8a0c-9ce8-8f4b-9a56a5273764" valign="middle" align="left"><link target="https://opengeospatial.github.io/ontology-crs/data/ont/crs//geod/geosrs:AiryModified1849">geosrs:eccentricity</link></td>
+<td id="_df65626e-8a0c-9ce8-8f4b-9a56a5273764" valign="middle" align="left"><link target="https://opengeospatial.github.io/ontology-crs/data/ont/crs//geod/geosrsgeod:AiryModified1849">geosrs:eccentricity</link></td>
 </tr></tbody>
 </table>
 </clause>
@@ -1827,7 +1827,7 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 </tr><tr id="_94046a60-5fe4-025e-c93e-9a72adc8abf0"><td id="_47147d22-6a28-87c2-d914-7fee67dd8ce8" valign="middle" align="left">Domain</td>
 <td id="_3083c4ad-0b64-547b-c7bf-d759b697723d" valign="middle" align="left"><link target="https://w3id.org/geosrs/Ellipsoid">Ellipsoid</link></td>
 </tr><tr id="_5c6df969-f365-d189-9739-1f46a343f4c6"><td id="_f05f217b-6c17-99dd-9e7f-5819e19ef130" valign="middle" align="left">Example</td>
-<td id="_034891e9-bf98-9e48-db81-16aadbd0d0d4" valign="middle" align="left"><link target="https://opengeospatial.github.io/ontology-crs/data/ont/crs//geod/geosrs:AiryModified1849">geosrs:inverseFlattening</link></td>
+<td id="_034891e9-bf98-9e48-db81-16aadbd0d0d4" valign="middle" align="left"><link target="https://opengeospatial.github.io/ontology-crs/data/ont/crs//geod/geosrsgeod:AiryModified1849">geosrs:inverseFlattening</link></td>
 </tr></tbody>
 </table>
 </clause>
@@ -1847,7 +1847,7 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 </tr><tr id="_d2db190f-3631-e332-a47f-bc5f38ee6910"><td id="_deba7745-4207-a24f-790a-ffcc5103fe6b" valign="middle" align="left">Domain</td>
 <td id="_beeb36b1-49b1-5ca2-1517-3617c687cbaf" valign="middle" align="left"><link target="https://w3id.org/geosrs/Ellipsoid">Ellipsoid</link></td>
 </tr><tr id="_434ff6d0-d461-1ec8-1439-fa1e2ab9e5ca"><td id="_37ef6f29-9946-81b3-41dd-91caa07eb307" valign="middle" align="left">Example</td>
-<td id="_d2588e0e-f88a-f770-b5e1-ed4af60887a3" valign="middle" align="left"><link target="https://opengeospatial.github.io/ontology-crs/data/ont/crs//geod/geosrs:AiryModified1849">geosrs:isSphere</link></td>
+<td id="_d2588e0e-f88a-f770-b5e1-ed4af60887a3" valign="middle" align="left"><link target="https://opengeospatial.github.io/ontology-crs/data/ont/crs//geod/geosrsgeod:AiryModified1849">geosrs:isSphere</link></td>
 </tr></tbody>
 </table>
 </clause>
@@ -1867,7 +1867,7 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 </tr><tr id="_61412504-c343-9549-3bea-d7a1b82f752e"><td id="_e8e64b4c-7b36-3bb4-20bb-6b66371ee18e" valign="middle" align="left">Domain</td>
 <td id="_f7bb3e10-4eff-03c2-674d-7e05bd418dd0" valign="middle" align="left"><link target="https://w3id.org/geosrs/Ellipsoid">Ellipsoid</link></td>
 </tr><tr id="_f719c84b-448a-4c2d-2810-1903680ed0e2"><td id="_ec91d8ff-7b37-15b2-5319-1d51f9a3792e" valign="middle" align="left">Example</td>
-<td id="_3f031a7d-6315-5e34-5d3e-58965ec27eb7" valign="middle" align="left"><link target="https://opengeospatial.github.io/ontology-crs/data/ont/crs//geod/geosrs:AiryModified1849">geosrs:semiMajorAxis</link></td>
+<td id="_3f031a7d-6315-5e34-5d3e-58965ec27eb7" valign="middle" align="left"><link target="https://opengeospatial.github.io/ontology-crs/data/ont/crs//geod/geosrsgeod:AiryModified1849">geosrs:semiMajorAxis</link></td>
 </tr></tbody>
 </table>
 </clause>
@@ -1887,7 +1887,7 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 </tr><tr id="_45f078e5-2b1c-b434-e272-8e7db3d215c7"><td id="_e40cf19a-9cbb-944e-0466-b7585b7f2470" valign="middle" align="left">Domain</td>
 <td id="_a373ad32-d5f2-8fad-a1b5-32f5021367ab" valign="middle" align="left"><link target="https://w3id.org/geosrs/Ellipsoid">Ellipsoid</link></td>
 </tr><tr id="_d7a411c4-24bd-5941-a2ee-e5a27ecf22ea"><td id="_b201dfb1-3f03-c4a2-f3be-2402574871cb" valign="middle" align="left">Example</td>
-<td id="_1088cc43-dec6-e972-ba03-ede4c7b321e1" valign="middle" align="left"><link target="https://opengeospatial.github.io/ontology-crs/data/ont/crs//geod/geosrs:AiryModified1849">geosrs:semiMinorAxis</link></td>
+<td id="_1088cc43-dec6-e972-ba03-ede4c7b321e1" valign="middle" align="left"><link target="https://opengeospatial.github.io/ontology-crs/data/ont/crs//geod/geosrsgeod:AiryModified1849">geosrs:semiMinorAxis</link></td>
 </tr></tbody>
 </table>
 </clause>
@@ -5176,7 +5176,7 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 </tr><tr id="_8ae121cc-129d-09bd-2737-796866c07f27"><td id="_de93d749-dfc0-595c-6cbf-6ca61c63ca53" valign="middle" align="left">Definition</td>
 <td id="_208f2fe1-c2c7-a432-2991-cebf00c47f56" valign="middle" align="left">GRS 1980 Ellipsoid</td>
 </tr><tr id="_e5f767ab-839b-d132-3510-5c0f34712ca2"><td id="_da7ea611-1564-4a90-6f08-49b6c7c15cd9" valign="middle" align="left">Example</td>
-<td id="_1e997228-c400-16b5-0c83-c57bcd4dc37a" valign="middle" align="left"><link target="https://opengeospatial.github.io/ontology-crs/data/ont/crs//geod/GRS1980">geosrs:GRS1980</link></td>
+<td id="_1e997228-c400-16b5-0c83-c57bcd4dc37a" valign="middle" align="left"><link target="https://opengeospatial.github.io/ontology-crs/data/ont/crs//geod/geosrsgeod:GRS1980">geosrs:GRS1980</link></td>
 </tr></tbody>
 </table>
 </clause>
@@ -5192,7 +5192,7 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 </tr><tr id="_1ab2406a-6aa5-402a-199f-4d0a0f925d46"><td id="_0f89ac25-97b0-b02a-b107-2b472db060db" valign="middle" align="left">Definition</td>
 <td id="_206d520f-f1f0-9f85-715c-92824b4237be" valign="middle" align="left">GRS 67 Ellipsoid</td>
 </tr><tr id="_acacb8e0-4cc8-21be-09a8-94c85248cca1"><td id="_bff0a2f5-1da4-3d2a-6db7-de7b25d72712" valign="middle" align="left">Example</td>
-<td id="_b1502994-358e-edce-6670-8e9c03922123" valign="middle" align="left"><link target="https://opengeospatial.github.io/ontology-crs/data/ont/crs//geod/GRS67">geosrs:GRS67</link></td>
+<td id="_b1502994-358e-edce-6670-8e9c03922123" valign="middle" align="left"><link target="https://opengeospatial.github.io/ontology-crs/data/ont/crs//geod/geosrsgeod:GRS67">geosrs:GRS67</link></td>
 </tr></tbody>
 </table>
 </clause>
@@ -5208,7 +5208,7 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 </tr><tr id="_5041e639-5853-4136-f5d9-870108be7fd1"><td id="_b83eaa60-900e-96b6-b542-edb150004440" valign="middle" align="left">Definition</td>
 <td id="_85e00e3c-bce8-f5c5-57fa-f3f674df954b" valign="middle" align="left">PZ 90 Ellipsoid</td>
 </tr><tr id="_f39cf401-7e31-25e2-53fa-da4d7dd7a944"><td id="_d128f9d7-117e-e6ef-6d27-b9059532a32f" valign="middle" align="left">Example</td>
-<td id="_551604c0-edee-b516-8925-a9663907689a" valign="middle" align="left"><link target="https://opengeospatial.github.io/ontology-crs/data/ont/crs//geod/PZ90">geosrs:PZ90</link></td>
+<td id="_551604c0-edee-b516-8925-a9663907689a" valign="middle" align="left"><link target="https://opengeospatial.github.io/ontology-crs/data/ont/crs//geod/geosrsgeod:PZ90">geosrs:PZ90</link></td>
 </tr></tbody>
 </table>
 </clause>
@@ -5224,7 +5224,7 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 </tr><tr id="_0a7204a5-89cf-e7c8-736d-d6a5f4c84024"><td id="_20ba96d4-5aef-db08-e076-fd75ef476420" valign="middle" align="left">Definition</td>
 <td id="_1f1d1901-fab1-4cc9-2ca6-7fb203774e23" valign="middle" align="left">Airy 1830 Ellipsoid</td>
 </tr><tr id="_33489631-5f45-a977-c62b-d26bc40b21d9"><td id="_0bd31f78-b773-7cdf-4bd2-434c7b5c4c01" valign="middle" align="left">Example</td>
-<td id="_8743412d-81db-6576-eebc-fff00d5bf9c7" valign="middle" align="left"><link target="https://opengeospatial.github.io/ontology-crs/data/ont/crs//geod/Airy1830">geosrs:Airy1830</link></td>
+<td id="_8743412d-81db-6576-eebc-fff00d5bf9c7" valign="middle" align="left"><link target="https://opengeospatial.github.io/ontology-crs/data/ont/crs//geod/geosrsgeod:Airy1830">geosrs:Airy1830</link></td>
 </tr></tbody>
 </table>
 </clause>
@@ -5240,7 +5240,7 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 </tr><tr id="_f3a644c1-2aad-ced9-09ce-ded98906f7e6"><td id="_b0a994c7-fec6-d7d8-f303-7c09ce21bc0d" valign="middle" align="left">Definition</td>
 <td id="_b4ec6c4f-735e-20fb-98fe-2b0792e891be" valign="middle" align="left">Airy 1849 Modified Ellipsoid</td>
 </tr><tr id="_89362526-ff45-481b-ff23-adce65384f6d"><td id="_f0e648de-691d-4d6e-6393-8ce8f8cb825c" valign="middle" align="left">Example</td>
-<td id="_ee45b40a-c8b5-a9c9-8390-63f1deb6113e" valign="middle" align="left"><link target="https://opengeospatial.github.io/ontology-crs/data/ont/crs//geod/AiryModified1849">geosrs:AiryModified1849</link></td>
+<td id="_ee45b40a-c8b5-a9c9-8390-63f1deb6113e" valign="middle" align="left"><link target="https://opengeospatial.github.io/ontology-crs/data/ont/crs//geod/geosrsgeod:AiryModified1849">geosrs:AiryModified1849</link></td>
 </tr></tbody>
 </table>
 </clause>
@@ -5256,7 +5256,7 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 </tr><tr id="_a85ab75a-0973-79d7-5e1e-518c8fdcb0a0"><td id="_86557836-c8d5-be96-9c81-8408b008edbc" valign="middle" align="left">Definition</td>
 <td id="_4e9ee840-a9db-753b-be14-21d3bc5e9eaa" valign="middle" align="left">International 1924 Ellipsoid</td>
 </tr><tr id="_c018c22e-4714-19b2-4468-325b95588bda"><td id="_de05fd2e-8af2-e87f-0432-904194208f2d" valign="middle" align="left">Example</td>
-<td id="_44d8c5a4-67a2-558d-e751-9e72c4c35c69" valign="middle" align="left"><link target="https://opengeospatial.github.io/ontology-crs/data/ont/crs//geod/International1924">geosrs:International1924</link></td>
+<td id="_44d8c5a4-67a2-558d-e751-9e72c4c35c69" valign="middle" align="left"><link target="https://opengeospatial.github.io/ontology-crs/data/ont/crs//geod/geosrsgeod:International1924">geosrs:International1924</link></td>
 </tr></tbody>
 </table>
 </clause>
@@ -5272,7 +5272,7 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 </tr><tr id="_1c80f07a-5df3-1282-ac30-8faba4c16c59"><td id="_138a32f2-e113-cb0e-fad0-2aaf5ac87efa" valign="middle" align="left">Definition</td>
 <td id="_1d523ae0-c06b-8b1a-374b-6d1184a59074" valign="middle" align="left">Australian National Spheroid</td>
 </tr><tr id="_8443d5fe-8cd7-ba48-4879-b52b46cfa64d"><td id="_b9bd3688-25f9-f062-043c-a924128eeab6" valign="middle" align="left">Example</td>
-<td id="_d6a53359-6282-1047-83eb-f00625c5e34c" valign="middle" align="left"><link target="https://opengeospatial.github.io/ontology-crs/data/ont/crs//geod/AustralianNationalSpheroid">geosrs:AustralianNationalSpheroid</link></td>
+<td id="_d6a53359-6282-1047-83eb-f00625c5e34c" valign="middle" align="left"><link target="https://opengeospatial.github.io/ontology-crs/data/ont/crs//geod/geosrsgeod:AustralianNationalSpheroid">geosrs:AustralianNationalSpheroid</link></td>
 </tr></tbody>
 </table>
 </clause>
@@ -5302,7 +5302,7 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 </tr><tr id="_2cff035c-4d5f-4fe3-28da-c9661bf2d696"><td id="_3dbb6039-8d13-d9f5-3662-2bcfb8fd7dad" valign="middle" align="left">Definition</td>
 <td id="_cc06f9f8-76c2-500e-cb43-eb1f7b85f0cc" valign="middle" align="left">Clarke 1866 Spheroid</td>
 </tr><tr id="_b0ab2430-1216-bc0b-90e5-2c5afc079a93"><td id="_c784a2a4-a7b5-fb67-8dc5-1540dfe4c5b2" valign="middle" align="left">Example</td>
-<td id="_fa628bf1-4067-fefb-58f7-2c59116ba48c" valign="middle" align="left"><link target="https://opengeospatial.github.io/ontology-crs/data/ont/crs//geod/Clarke1866">geosrs:Clarke1866</link></td>
+<td id="_fa628bf1-4067-fefb-58f7-2c59116ba48c" valign="middle" align="left"><link target="https://opengeospatial.github.io/ontology-crs/data/ont/crs//geod/geosrsgeod:Clarke1866">geosrs:Clarke1866</link></td>
 </tr></tbody>
 </table>
 </clause>
@@ -5318,7 +5318,7 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 </tr><tr id="_8eaf73cf-6b59-a394-6f1b-e8bcd392461f"><td id="_db7bee47-5f2a-d67f-d3fc-ca2f63e2ce04" valign="middle" align="left">Definition</td>
 <td id="_4e43132f-31da-9746-c318-44699ecbe329" valign="middle" align="left">Plessis 1817 Spheroid</td>
 </tr><tr id="_19e8b709-2faa-0d11-85ea-5b197783af20"><td id="_ee24d9c4-ce5f-0bf7-bbe5-e2afa2960dd8" valign="middle" align="left">Example</td>
-<td id="_873b2abb-f707-aa84-86a5-c45dfaf069d1" valign="middle" align="left"><link target="https://opengeospatial.github.io/ontology-crs/data/ont/crs//geod/Plessis1817">geosrs:Plessis1817</link></td>
+<td id="_873b2abb-f707-aa84-86a5-c45dfaf069d1" valign="middle" align="left"><link target="https://opengeospatial.github.io/ontology-crs/data/ont/crs//geod/geosrsgeod:Plessis1817">geosrs:Plessis1817</link></td>
 </tr></tbody>
 </table>
 </clause>
@@ -5334,7 +5334,7 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 </tr><tr id="_4f55479a-14bd-b887-06b4-8df6f213c494"><td id="_e8c6e1b4-9d2f-4af0-0264-5b7d203f5356" valign="middle" align="left">Definition</td>
 <td id="_04813fcc-6648-c4a5-ab94-9de583b2058f" valign="middle" align="left">Danish 1876 Spheroid</td>
 </tr><tr id="_b9ba741f-9bff-103f-2124-5625f338fae8"><td id="_fcd13527-f4e2-63c6-5b03-f5719d072dc8" valign="middle" align="left">Example</td>
-<td id="_ad23a58d-8564-db13-00cc-f8a84bb61309" valign="middle" align="left"><link target="https://opengeospatial.github.io/ontology-crs/data/ont/crs//geod/Danish1876">geosrs:Danish1876</link></td>
+<td id="_ad23a58d-8564-db13-00cc-f8a84bb61309" valign="middle" align="left"><link target="https://opengeospatial.github.io/ontology-crs/data/ont/crs//geod/geosrsgeod:Danish1876">geosrs:Danish1876</link></td>
 </tr></tbody>
 </table>
 </clause>
@@ -5350,7 +5350,7 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 </tr><tr id="_c8ff3111-9177-2512-1866-1d8b21d2b99f"><td id="_f5f7430b-dc20-9242-c812-8c6cb51a52e4" valign="middle" align="left">Definition</td>
 <td id="_79971c40-a631-6a3d-fd9a-e0067f053316" valign="middle" align="left">Struve 1860 Spheroid</td>
 </tr><tr id="_38935569-1b9e-b6a1-9b9a-85bd2620d4bf"><td id="_1237922b-5ba3-a4bd-0c10-75facb163dee" valign="middle" align="left">Example</td>
-<td id="_f27a4ea2-ce6e-234c-0314-2245b6d8a85c" valign="middle" align="left"><link target="https://opengeospatial.github.io/ontology-crs/data/ont/crs//geod/Struve1860">geosrs:Struve1860</link></td>
+<td id="_f27a4ea2-ce6e-234c-0314-2245b6d8a85c" valign="middle" align="left"><link target="https://opengeospatial.github.io/ontology-crs/data/ont/crs//geod/geosrsgeod:Struve1860">geosrs:Struve1860</link></td>
 </tr></tbody>
 </table>
 </clause>
@@ -5366,7 +5366,7 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 </tr><tr id="_0fc1b4f6-2598-4e67-a672-2f815e6f9975"><td id="_9984ae79-2a36-28e7-77f0-29d316afe94b" valign="middle" align="left">Definition</td>
 <td id="_265ec4ab-1ba9-f0e7-c33d-79bf2c0c3201" valign="middle" align="left">IAG 1975 Spheroid</td>
 </tr><tr id="_302906cc-c650-b591-7899-ebbe6657ff34"><td id="_cccb9f75-795f-7478-0767-87cde2b843c8" valign="middle" align="left">Example</td>
-<td id="_de7982f1-e692-d208-1820-4409e0158cb9" valign="middle" align="left"><link target="https://opengeospatial.github.io/ontology-crs/data/ont/crs//geod/IAG1975">geosrs:IAG1975</link></td>
+<td id="_de7982f1-e692-d208-1820-4409e0158cb9" valign="middle" align="left"><link target="https://opengeospatial.github.io/ontology-crs/data/ont/crs//geod/geosrsgeod:IAG1975">geosrs:IAG1975</link></td>
 </tr></tbody>
 </table>
 </clause>
@@ -5382,7 +5382,7 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 </tr><tr id="_7abecf26-3f8b-eb47-b664-5c8bcfc33488"><td id="_daa7f0a2-4189-8304-53c7-077958229bda" valign="middle" align="left">Definition</td>
 <td id="_78fe6e31-d89c-0c52-40ee-7264444571e2" valign="middle" align="left">Clarke 1858 Spheroid</td>
 </tr><tr id="_0f64fff7-9080-387b-283f-c49b2171a3e6"><td id="_6fee069f-b2c3-43b6-2377-84ab43407977" valign="middle" align="left">Example</td>
-<td id="_c4682bb9-4906-09f6-ebd8-eb9555ddd564" valign="middle" align="left"><link target="https://opengeospatial.github.io/ontology-crs/data/ont/crs//geod/Clarke1858">geosrs:Clarke1858</link></td>
+<td id="_c4682bb9-4906-09f6-ebd8-eb9555ddd564" valign="middle" align="left"><link target="https://opengeospatial.github.io/ontology-crs/data/ont/crs//geod/geosrsgeod:Clarke1858">geosrs:Clarke1858</link></td>
 </tr></tbody>
 </table>
 </clause>
@@ -5398,7 +5398,7 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 </tr><tr id="_c0baed86-1e32-6d60-2f65-86531cce23c3"><td id="_cb0e024d-bae5-6ef9-de5f-21f4583918c2" valign="middle" align="left">Definition</td>
 <td id="_116722ba-4e20-9505-a09d-6e959bed9628" valign="middle" align="left">Clarke 1880 Spheroid</td>
 </tr><tr id="_541b0b42-2b5e-7ac3-3fc7-b86f4a19eb21"><td id="_79cc5cd9-2dea-aca0-0427-b7b343ec46fc" valign="middle" align="left">Example</td>
-<td id="_19d29948-1649-8f55-c4dd-6a352d230bf0" valign="middle" align="left"><link target="https://opengeospatial.github.io/ontology-crs/data/ont/crs//geod/Clarke1880">geosrs:Clarke1880</link></td>
+<td id="_19d29948-1649-8f55-c4dd-6a352d230bf0" valign="middle" align="left"><link target="https://opengeospatial.github.io/ontology-crs/data/ont/crs//geod/geosrsgeod:Clarke1880">geosrs:Clarke1880</link></td>
 </tr></tbody>
 </table>
 </clause>
@@ -5414,7 +5414,7 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 </tr><tr id="_15d014be-9317-0f81-550d-93c5827771cc"><td id="_1eb3b37d-8534-9a6e-86a3-11b1b1b848c3" valign="middle" align="left">Definition</td>
 <td id="_c79b5a0a-88c6-8d5c-5181-434682e2a595" valign="middle" align="left">Helmert 1906 Spheroid</td>
 </tr><tr id="_42c79df7-73c1-310a-fdd3-4351e9dd2a3c"><td id="_bd25bc41-2ecf-b0ae-5465-0cb33d28b8ff" valign="middle" align="left">Example</td>
-<td id="_ff38b1a7-55c3-982c-d2e4-cc77bc88e9c4" valign="middle" align="left"><link target="https://opengeospatial.github.io/ontology-crs/data/ont/crs//geod/Helmert1906">geosrs:Helmert1906</link></td>
+<td id="_ff38b1a7-55c3-982c-d2e4-cc77bc88e9c4" valign="middle" align="left"><link target="https://opengeospatial.github.io/ontology-crs/data/ont/crs//geod/geosrsgeod:Helmert1906">geosrs:Helmert1906</link></td>
 </tr></tbody>
 </table>
 </clause>
@@ -5430,7 +5430,7 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 </tr><tr id="_afb5a7c3-4fde-7fdc-8f4c-71ab2e752da3"><td id="_d98d45da-d5e2-7f67-f335-e0b68a173b99" valign="middle" align="left">Definition</td>
 <td id="_93b5c0d7-b50c-00b2-5f0c-1d83106e112a" valign="middle" align="left">CGCS2000 Spheroid</td>
 </tr><tr id="_895d56a9-b8f9-06b2-709d-b43f9921d6a7"><td id="_e8b324cb-72ca-0a3a-8b3e-a7e5e0a3e877" valign="middle" align="left">Example</td>
-<td id="_d85462a2-1dfa-2bed-92dc-1c9bdb2332e2" valign="middle" align="left"><link target="https://opengeospatial.github.io/ontology-crs/data/ont/crs//geod/CGCS2000">geosrs:CGCS2000</link></td>
+<td id="_d85462a2-1dfa-2bed-92dc-1c9bdb2332e2" valign="middle" align="left"><link target="https://opengeospatial.github.io/ontology-crs/data/ont/crs//geod/geosrsgeod:CGCS2000">geosrs:CGCS2000</link></td>
 </tr></tbody>
 </table>
 </clause>
@@ -5460,7 +5460,7 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 </tr><tr id="_db0dcf29-889c-a8e7-6a7d-585a75603079"><td id="_4aa71762-1e2a-a21a-1f2e-fd2aa8965029" valign="middle" align="left">Definition</td>
 <td id="_9cd35ba8-2107-0b6a-3075-e65a973c6a56" valign="middle" align="left">Zach 1812 Spheroid</td>
 </tr><tr id="_d608aa6a-97a3-1bc1-8f52-3d4e81d77bdb"><td id="_a5558c9b-34c9-eb06-3c3f-e5ea292dd6d6" valign="middle" align="left">Example</td>
-<td id="_96b1d686-630f-936a-1d3b-326e80247927" valign="middle" align="left"><link target="https://opengeospatial.github.io/ontology-crs/data/ont/crs//geod/Zach1812">geosrs:Zach1812</link></td>
+<td id="_96b1d686-630f-936a-1d3b-326e80247927" valign="middle" align="left"><link target="https://opengeospatial.github.io/ontology-crs/data/ont/crs//geod/geosrsgeod:Zach1812">geosrs:Zach1812</link></td>
 </tr></tbody>
 </table>
 </clause>
@@ -5476,7 +5476,7 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 </tr><tr id="_2e7f388f-a8de-d832-518f-0bd92efa776d"><td id="_46d8cb57-1ac8-e099-14f9-03a779c2079e" valign="middle" align="left">Definition</td>
 <td id="_4b68bbc8-74f3-50b6-4cd4-7e1060cf327e" valign="middle" align="left">Clarke 1880 (Arc) Spheroid</td>
 </tr><tr id="_3667c3f4-819d-2f29-a959-df6903ff40a3"><td id="_7f5a6d7f-a4eb-5546-edeb-3b05f33edfbc" valign="middle" align="left">Example</td>
-<td id="_c4ffd332-3c27-ac37-c9f2-bfe8d9113e51" valign="middle" align="left"><link target="https://opengeospatial.github.io/ontology-crs/data/ont/crs//geod/Clarke1880ARC">geosrs:Clarke1880ARC</link></td>
+<td id="_c4ffd332-3c27-ac37-c9f2-bfe8d9113e51" valign="middle" align="left"><link target="https://opengeospatial.github.io/ontology-crs/data/ont/crs//geod/geosrsgeod:Clarke1880ARC">geosrs:Clarke1880ARC</link></td>
 </tr></tbody>
 </table>
 </clause>
@@ -5492,7 +5492,7 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 </tr><tr id="_fff68c75-7136-39d5-cb38-f3757a3d85ee"><td id="_c457770c-76d0-6e37-2914-f1a0f1a4e1e1" valign="middle" align="left">Definition</td>
 <td id="_93a40c71-2654-a0c2-29f8-d6fcd9746f93" valign="middle" align="left">Clarke 1880 (Ing) Spheroid</td>
 </tr><tr id="_fbf0609b-b971-dede-a2d8-85b78e321965"><td id="_e0dfd4a1-1063-f215-7534-bfdeea39631b" valign="middle" align="left">Example</td>
-<td id="_3429af43-df0c-298d-b1ca-b511aaa25d52" valign="middle" align="left"><link target="https://opengeospatial.github.io/ontology-crs/data/ont/crs//geod/Clarke1880IGN">geosrs:Clarke1880IGN</link></td>
+<td id="_3429af43-df0c-298d-b1ca-b511aaa25d52" valign="middle" align="left"><link target="https://opengeospatial.github.io/ontology-crs/data/ont/crs//geod/geosrsgeod:Clarke1880IGN">geosrs:Clarke1880IGN</link></td>
 </tr></tbody>
 </table>
 </clause>
@@ -5522,7 +5522,7 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 </tr><tr id="_bb12de5f-a6dd-897c-8121-2a78278b37a4"><td id="_ea65023e-d87e-062c-19e1-f01aab838558" valign="middle" align="left">Definition</td>
 <td id="_2c498e53-4114-7c2d-76b0-894abe4d0caa" valign="middle" align="left">WGS 72 Spheroid</td>
 </tr><tr id="_9423fed3-ee2a-a58a-3608-414814907375"><td id="_c2414ff9-0126-279e-6624-be5d133f534e" valign="middle" align="left">Example</td>
-<td id="_4d6ae27c-4678-7d8a-734f-364d8469946c" valign="middle" align="left"><link target="https://opengeospatial.github.io/ontology-crs/data/ont/crs//geod/WGS72">geosrs:WGS72</link></td>
+<td id="_4d6ae27c-4678-7d8a-734f-364d8469946c" valign="middle" align="left"><link target="https://opengeospatial.github.io/ontology-crs/data/ont/crs//geod/geosrsgeod:WGS72">geosrs:WGS72</link></td>
 </tr></tbody>
 </table>
 </clause>
@@ -5538,7 +5538,7 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 </tr><tr id="_da8a2706-a726-c256-6ca8-d800fc82d524"><td id="_132e1fcd-418b-b479-e786-2c2614fb039d" valign="middle" align="left">Definition</td>
 <td id="_cf1c8d83-c16e-a61c-3de3-3914ec4aa85c" valign="middle" align="left">WGS 84 Spheroid</td>
 </tr><tr id="_4e20b9dd-c1d2-8594-8fcb-70052a526955"><td id="_39597607-5652-74be-5c92-2636ca9ae5ac" valign="middle" align="left">Example</td>
-<td id="_e0c1c659-0586-9f74-222b-d183bf3bcf4e" valign="middle" align="left"><link target="https://opengeospatial.github.io/ontology-crs/data/ont/crs//geod/WGS84">geosrs:WGS84</link></td>
+<td id="_e0c1c659-0586-9f74-222b-d183bf3bcf4e" valign="middle" align="left"><link target="https://opengeospatial.github.io/ontology-crs/data/ont/crs//geod/geosrsgeod:WGS84">geosrs:WGS84</link></td>
 </tr></tbody>
 </table>
 </clause>
@@ -5554,7 +5554,7 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 </tr><tr id="_1f58fbe2-6eb8-1768-7f79-5ec4bfff4630"><td id="_a2050594-8652-5567-8c7f-5dd4b4f86ee8" valign="middle" align="left">Definition</td>
 <td id="_416021a4-4b13-f7ed-eb6a-75ca0a18f256" valign="middle" align="left">Krassowsky 1940 Spheroid</td>
 </tr><tr id="_ea159af0-f894-7264-458b-f610c6be41b3"><td id="_95837b57-88ff-64e2-4837-6a8eeaa9f6f4" valign="middle" align="left">Example</td>
-<td id="_3e64c258-c790-864f-92c3-edba2f8bad7e" valign="middle" align="left"><link target="https://opengeospatial.github.io/ontology-crs/data/ont/crs//geod/Krassowsky1940">geosrs:Krassowsky1940</link></td>
+<td id="_3e64c258-c790-864f-92c3-edba2f8bad7e" valign="middle" align="left"><link target="https://opengeospatial.github.io/ontology-crs/data/ont/crs//geod/geosrsgeod:Krassowsky1940">geosrs:Krassowsky1940</link></td>
 </tr></tbody>
 </table>
 </clause>

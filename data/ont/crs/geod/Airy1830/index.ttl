@@ -11,6 +11,7 @@
     void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
     skos:definition "+a=6377563.396 +f=0.0033408506414970294"^^xsd:string ;
     ns1:approximates <http://www.opengis.net/ont/crs/isbody/Earth> ;
+    ns1:asSVG "<svg viewBox='0 0 12755136.792 12712523.81847457' height='250' width='400'><ellipse cx='6377563.396' cy='6356256.909237285' rx='6377563.396' ry='6356256.909237285'/></svg>" ;
     ns1:eccentricity 6.67054e-03 ;
     ns1:flatteningParameter 3.340851e-03 ;
     ns1:inverse_flattening 2.99325e+02 ;

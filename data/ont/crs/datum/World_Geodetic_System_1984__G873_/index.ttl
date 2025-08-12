@@ -8,7 +8,7 @@
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Datum: World Geodetic System 1984 (G873)"@en ;
     void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
-    ns1:ellipse ns1:WGS84 ;
+    ns1:ellipse <http://www.opengis.net/ont/crs/geod/WGS84> ;
     ns1:primeMeridian <http://www.opengis.net/ont/crs/primeMeridian/Greenwich> ;
     ns1:scope "Geodesy. Navigation and positioning using GPS satellite system."^^xsd:string .
 

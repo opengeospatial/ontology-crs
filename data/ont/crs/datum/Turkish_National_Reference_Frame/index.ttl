@@ -8,7 +8,7 @@
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Datum: Turkish National Reference Frame"@en ;
     void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
-    ns1:ellipse ns1:GRS1980 ;
+    ns1:ellipse <http://www.opengis.net/ont/crs/geod/GRS1980> ;
     ns1:primeMeridian <http://www.opengis.net/ont/crs/primeMeridian/Greenwich> ;
     ns1:scope "Geodesy."^^xsd:string .
 

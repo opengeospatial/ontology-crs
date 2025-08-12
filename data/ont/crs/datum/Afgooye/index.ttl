@@ -8,7 +8,7 @@
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Datum: Afgooye"@en ;
     void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
-    ns1:ellipse ns1:Krassowsky1940 ;
+    ns1:ellipse <http://www.opengis.net/ont/crs/geod/Krassowsky1940> ;
     ns1:primeMeridian <http://www.opengis.net/ont/crs/primeMeridian/Greenwich> ;
     ns1:scope "Topographic mapping."^^xsd:string .
 

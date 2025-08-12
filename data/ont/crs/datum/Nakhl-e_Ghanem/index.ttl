@@ -8,7 +8,7 @@
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Datum: Nakhl-e Ghanem"@en ;
     void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
-    ns1:ellipse ns1:WGS84 ;
+    ns1:ellipse <http://www.opengis.net/ont/crs/geod/WGS84> ;
     ns1:primeMeridian <http://www.opengis.net/ont/crs/primeMeridian/Greenwich> ;
     ns1:scope "Engineering survey for onshore facilities for South Pars phase 11 and Pars LNG."^^xsd:string .
 

@@ -8,7 +8,7 @@
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Datum: Not specified (based on Everest 1830 Modified ellipsoid)"@en ;
     void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
-    ns1:ellipse ns1:Everest1830Modified ;
+    ns1:ellipse <http://www.opengis.net/ont/crs/geod/Everest1830Modified> ;
     ns1:primeMeridian <http://www.opengis.net/ont/crs/primeMeridian/Greenwich> ;
     ns1:scope "Not a valid datum."^^xsd:string .
 

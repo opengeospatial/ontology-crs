@@ -40,13 +40,13 @@
     ns1:averageSubjectIRILength 52 ;
     ns1:datatypes 0 ;
     ns1:distinctBlankNodes 0 ;
-    ns1:distinctIRIReferences 106759 ;
+    ns1:distinctIRIReferences 106793 ;
     ns1:distinctLiterals 0 ;
-    ns1:distinctRDFNodes 106759 ;
+    ns1:distinctRDFNodes 106793 ;
     ns1:languages 0 ;
     ns1:propertyClasses 0 ;
     dc:language <http://www.lexvo.org/page/iso639-1/en> ;
-    dcterms:modified "2025-08-12T21:35:05"^^xsd:dateTime ;
+    dcterms:modified "2025-08-12T22:19:23"^^xsd:dateTime ;
     dcterms:subject <http://dbpedia.org/resource/Location>,
         <http://dbpedia.org/resource/OGC_GeoSPARQL>,
         <http://dbpedia.org/resource/Time>,
@@ -99,9 +99,9 @@
         <http://www.opengis.net/geoepsg_dataset_VerticalReferenceFrame> ;
     void:classes 42 ;
     void:dataDump <https://opengeospatial.github.io/ontology-crs/data//index.ttl> ;
-    void:distinctObjects 81537 ;
-    void:distinctSubjects 25144 ;
-    void:entities 25076 ;
+    void:distinctObjects 81554 ;
+    void:distinctSubjects 25161 ;
+    void:entities 25110 ;
     void:feature <http://www.w3.org/ns/formats/RDFa>,
         <http://www.w3.org/ns/formats/Turtle> ;
     void:properties 78 ;
@@ -183,7 +183,7 @@
         <http://www.opengis.net/geoepsg_dataset_unit_conversion_factor>,
         <http://www.opengis.net/geoepsg_dataset_usage>,
         <http://www.opengis.net/geoepsg_dataset_utm_zone> ;
-    void:triples 313779 ;
+    void:triples 313860 ;
     void:uriSpace "http://www.opengis.net/"^^xsd:string ;
     void:vocabulary ns1:,
         dcam:,

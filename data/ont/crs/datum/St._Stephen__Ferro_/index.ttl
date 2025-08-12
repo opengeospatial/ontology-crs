@@ -8,7 +8,7 @@
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Datum: St. Stephen (Ferro)"@en ;
     void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
-    ns1:ellipse ns1:Zach1812 ;
+    ns1:ellipse <http://www.opengis.net/ont/crs/geod/Zach1812> ;
     ns1:primeMeridian <http://www.opengis.net/ont/crs/primeMeridian/Ferro> ;
     ns1:scope "Cadastre."^^xsd:string .
 

@@ -1,3 +1,4 @@
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix ns1: <https://w3id.org/geosrs/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -9,6 +10,7 @@
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Peru central zone: Transverse Mercator"@en ;
     void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
+    foaf:image "https://situx.github.io/proj4rdf/projections/MercatorProjection.svg"^^xsd:anyURI ;
     ns1:accuracy -1e+00 ;
     ns1:area_of_use <http://www.opengis.net/ont/crs/areaofuse/Peru_central_zone_area_of_use> ;
     ns1:asProj4 "+proj=pipeline +step +proj=axisswap +order=2,1 +step +proj=unitconvert +xy_in=deg +xy_out=rad +step +proj=tmerc +lat_0=-9.5 +lon_0=-76 +k=0.99932994 +x_0=720000 +y_0=1039979.159 +ellps=intl" ;

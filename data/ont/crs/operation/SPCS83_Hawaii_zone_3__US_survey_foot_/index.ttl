@@ -1,3 +1,4 @@
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix ns1: <https://w3id.org/geosrs/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -10,6 +11,7 @@
     rdfs:label "SPCS83 Hawaii zone 3 (US survey foot): Transverse Mercator"@en ;
     void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
     rdfs:comment "Used by City and County of Honolulu. Not recognised by Federal authorities because there is no State law defining grid unit. For equivalent metric Federal definition see code 15133."^^xsd:string ;
+    foaf:image "https://situx.github.io/proj4rdf/projections/MercatorProjection.svg"^^xsd:anyURI ;
     ns1:accuracy -1e+00 ;
     ns1:area_of_use <http://www.opengis.net/ont/crs/areaofuse/SPCS83_Hawaii_zone_3__US_survey_foot__area_of_use> ;
     ns1:asProj4 "+proj=pipeline +step +proj=axisswap +order=2,1 +step +proj=unitconvert +xy_in=deg +xy_out=rad +step +proj=tmerc +lat_0=21.1666666666667 +lon_0=-158 +k=0.99999 +x_0=500000.00001016 +y_0=0 +ellps=GRS80 +step +proj=unitconvert +xy_in=m +xy_out=us-ft" ;

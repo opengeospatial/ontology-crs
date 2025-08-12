@@ -1,3 +1,4 @@
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix ns1: <https://w3id.org/geosrs/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -10,6 +11,7 @@
     rdfs:label "3-degree Gauss-Kruger zone 45: Transverse Mercator"@en ;
     void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
     rdfs:comment "Also found with zone truncated from false easting: see Gauss-Kruger cm 135E (code 16323). Original transformation by Gauss-Kruger formula."^^xsd:string ;
+    foaf:image "https://situx.github.io/proj4rdf/projections/MercatorProjection.svg"^^xsd:anyURI ;
     ns1:accuracy -1e+00 ;
     ns1:area_of_use <http://www.opengis.net/ont/crs/areaofuse/3-degree_Gauss-Kruger_zone_45_area_of_use> ;
     ns1:asProj4 "+proj=pipeline +step +proj=axisswap +order=2,1 +step +proj=unitconvert +xy_in=deg +xy_out=rad +step +proj=tmerc +lat_0=0 +lon_0=135 +k=1 +x_0=45500000 +y_0=0 +ellps=GRS80 +step +proj=axisswap +order=2,1",

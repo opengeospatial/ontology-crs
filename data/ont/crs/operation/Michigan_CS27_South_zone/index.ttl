@@ -1,3 +1,4 @@
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix ns1: <https://w3id.org/geosrs/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -10,6 +11,7 @@
     rdfs:label "Michigan CS27 South zone: Lambert Conic Conformal (2SP Michigan)"@en,
         "Michigan CS27 South zone: Lambert Conic Conformal (2SP)"@en ;
     void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
+    foaf:image "https://situx.github.io/proj4rdf/projections/CentralCylindricalProjection.svg"^^xsd:anyURI ;
     ns1:accuracy -1e+00 ;
     ns1:area_of_use <http://www.opengis.net/ont/crs/areaofuse/Michigan_CS27_South_zone_area_of_use> ;
     ns1:asProj4 "+proj=pipeline +step +proj=axisswap +order=2,1 +step +proj=unitconvert +xy_in=deg +xy_out=rad +step +proj=lcc +lat_0=41.5 +lon_0=-84.3333333333333 +lat_1=42.1 +lat_2=43.6666666666667 +x_0=609601.219202438 +y_0=0 +a=6378450.0475489 +b=6356826.62148844 +step +proj=unitconvert +xy_in=m +xy_out=us-ft",

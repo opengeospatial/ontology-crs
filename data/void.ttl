@@ -643,7 +643,7 @@ doap: a voaf:Vocabulary ;
 <http://www.opengis.net/geoepsg_dataset_image> a void:Dataset ;
     rdfs:label "Property Partition: image"@en ;
     void:property foaf:image ;
-    void:triples 30 .
+    void:triples 2272 .
 
 <http://www.opengis.net/geoepsg_dataset_includesSRS> a void:Dataset ;
     rdfs:label "Property Partition: includesSRS"@en ;
@@ -1026,7 +1026,7 @@ skos: a voaf:Vocabulary ;
     vext:languages 0 ;
     vext:propertyClasses 0 ;
     dc:language <http://www.lexvo.org/page/iso639-1/en> ;
-    dcterms:modified "2025-08-12T22:19:23"^^xsd:dateTime ;
+    dcterms:modified "2025-08-12T23:16:49"^^xsd:dateTime ;
     dcterms:subject <http://dbpedia.org/resource/Location>,
         <http://dbpedia.org/resource/OGC_GeoSPARQL>,
         <http://dbpedia.org/resource/Time>,
@@ -1163,7 +1163,7 @@ skos: a voaf:Vocabulary ;
         <http://www.opengis.net/geoepsg_dataset_unit_conversion_factor>,
         <http://www.opengis.net/geoepsg_dataset_usage>,
         <http://www.opengis.net/geoepsg_dataset_utm_zone> ;
-    void:triples 313860 ;
+    void:triples 316102 ;
     void:uriSpace "http://www.opengis.net/"^^xsd:string ;
     void:vocabulary vext:,
         dcam:,

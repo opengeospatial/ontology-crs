@@ -1,3 +1,4 @@
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix ns1: <https://w3id.org/geosrs/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -9,6 +10,7 @@
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Iowa regional zone 1 Spencer: Lambert Conic Conformal (1SP)"@en ;
     void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
+    foaf:image "https://situx.github.io/proj4rdf/projections/CentralCylindricalProjection.svg"^^xsd:anyURI ;
     ns1:accuracy -1e+00 ;
     ns1:area_of_use <http://www.opengis.net/ont/crs/areaofuse/Iowa_regional_zone_1_Spencer_area_of_use> ;
     ns1:asProj4 "+proj=pipeline +step +proj=axisswap +order=2,1 +step +proj=unitconvert +xy_in=deg +xy_out=rad +step +proj=lcc +lat_1=43.2 +lat_0=43.2 +lon_0=-95.25 +k_0=1.000052 +x_0=3505207.01041402 +y_0=2926085.8521717 +ellps=GRS80 +step +proj=unitconvert +xy_in=m +xy_out=us-ft" ;

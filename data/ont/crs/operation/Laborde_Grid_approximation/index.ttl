@@ -1,3 +1,4 @@
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix ns1: <https://w3id.org/geosrs/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -10,6 +11,7 @@
     rdfs:label "Laborde Grid approximation: Hotine Oblique Mercator (variant B)"@en ;
     void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
     rdfs:comment "Longitude is referenced to the Paris meridian. The conversion method is a good approximation (better than 5cm) to original formula (see proj code 19861) within a few hundred km of origin, but farther away the approximation may be no better than 1m."^^xsd:string ;
+    foaf:image "https://situx.github.io/proj4rdf/projections/LonLatProjection.svg"^^xsd:anyURI ;
     ns1:accuracy -1e+00 ;
     ns1:angleFromRectifiedToSkewGrid 2.1e+01 ;
     ns1:area_of_use <http://www.opengis.net/ont/crs/areaofuse/Laborde_Grid_approximation_area_of_use> ;

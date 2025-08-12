@@ -1,3 +1,4 @@
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix ns1: <https://w3id.org/geosrs/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -10,6 +11,7 @@
     rdfs:label "Swiss Oblique Mercator 1903C (Greenwich): Hotine Oblique Mercator (variant B)"@en ;
     void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
     rdfs:comment "Greenwich-based equivalent of LV03C, proj code 19923."^^xsd:string ;
+    foaf:image "https://situx.github.io/proj4rdf/projections/MercatorProjection.svg"^^xsd:anyURI ;
     ns1:accuracy -1e+00 ;
     ns1:angleFromRectifiedToSkewGrid 9e+01 ;
     ns1:area_of_use <http://www.opengis.net/ont/crs/areaofuse/Swiss_Oblique_Mercator_1903C__Greenwich__area_of_use> ;

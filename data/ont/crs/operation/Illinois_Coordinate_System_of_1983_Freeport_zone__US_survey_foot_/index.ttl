@@ -1,3 +1,4 @@
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix ns1: <https://w3id.org/geosrs/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -10,6 +11,7 @@
     rdfs:label "Illinois Coordinate System of 1983 Freeport zone (US survey foot): Lambert Conic Conformal (1SP)"@en ;
     void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
     rdfs:comment "Part of the ICS83 33-zone system. Longitude of origin also given by information source as 270°03'E. State law defines grid unit as US survey foot. No equivalent metric definition."^^xsd:string ;
+    foaf:image "https://situx.github.io/proj4rdf/projections/CentralCylindricalProjection.svg"^^xsd:anyURI ;
     ns1:accuracy -1e+00 ;
     ns1:area_of_use <http://www.opengis.net/ont/crs/areaofuse/Illinois_Coordinate_System_of_1983_Freeport_zone__US_survey_foot__area_of_use> ;
     ns1:asProj4 "+proj=pipeline +step +proj=axisswap +order=2,1 +step +proj=unitconvert +xy_in=deg +xy_out=rad +step +proj=lcc +lat_1=42.2 +lat_0=42.2 +lon_0=-89.95 +k_0=1.000029 +x_0=549860.2997206 +y_0=230124.460248921 +ellps=GRS80 +step +proj=unitconvert +xy_in=m +xy_out=us-ft +step +proj=axisswap +order=2,1" ;

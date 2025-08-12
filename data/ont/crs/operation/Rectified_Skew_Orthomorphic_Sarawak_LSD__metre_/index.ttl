@@ -1,3 +1,4 @@
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix ns1: <https://w3id.org/geosrs/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -10,6 +11,7 @@
     rdfs:label "Rectified Skew Orthomorphic Sarawak LSD (metre): Hotine Oblique Mercator (variant A)"@en ;
     void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
     rdfs:comment "Used by the Sarawak Land and Survey Department. Conversion 19958 but using Hotine Oblique Mercator (variant A) and with FE increased by 2,000,000 m and FN by 5,000,000 m. If using variant B method (code 9815) FE = 2590476.871 m and FN = 5442857.653 m."^^xsd:string ;
+    foaf:image "https://situx.github.io/proj4rdf/projections/MercatorProjection.svg"^^xsd:anyURI ;
     ns1:accuracy -1e+00 ;
     ns1:angleFromRectifiedToSkewGrid 5.31301e+01 ;
     ns1:area_of_use <http://www.opengis.net/ont/crs/areaofuse/Rectified_Skew_Orthomorphic_Sarawak_LSD__metre__area_of_use> ;

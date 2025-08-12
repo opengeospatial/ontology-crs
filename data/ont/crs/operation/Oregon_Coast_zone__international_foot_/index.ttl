@@ -1,3 +1,4 @@
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix ns1: <https://w3id.org/geosrs/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -10,6 +11,7 @@
     rdfs:label "Oregon Coast zone (international foot): Hotine Oblique Mercator (variant A)"@en ;
     void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
     rdfs:comment "If using Hotine Oblique Mercator (variant B) method (code 9815), Ec=442071.300 ft, Nc=1211086.049 ft. See code 6769 for equivalent metric definition."^^xsd:string ;
+    foaf:image "https://situx.github.io/proj4rdf/projections/MercatorProjection.svg"^^xsd:anyURI ;
     ns1:accuracy -1e+00 ;
     ns1:angleFromRectifiedToSkewGrid 5e+00 ;
     ns1:area_of_use <http://www.opengis.net/ont/crs/areaofuse/Oregon_Coast_zone__international_foot__area_of_use> ;

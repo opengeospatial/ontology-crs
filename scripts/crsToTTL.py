@@ -306,7 +306,7 @@ def crsToTTL(ttl,curcrs,x,geodcounter,crsclass):
 				ttl.add(spheroidid+" rdfs:comment \""+str(curcrs.datum.ellipsoid.remarks)+"\"^^xsd:string .\n")
 			ttl.add(spheroidid+" geosrs:is_semi_minor_computed \""+str(curcrs.datum.ellipsoid.is_semi_minor_computed).lower()+"\"^^xsd:boolean .\n")
 			examples["geosrs:Spheroid"]=websitensshort+"/geod/"+str(spheroidid)
-			examples[spheroidid.replace("geosrsgeod:","geosrs:")]=websitensshort+"/geod/"+str(spheroidid.replace("geosrsgeod:",""))
+			examples[spheroidid.replace("geosrsgeod:","geosrs:")]=websitensshort+"/geod/"+str(spheroidid.replace("geosrs:",""))
 		elif curcrs.datum.ellipsoid!=None:	
 			ttl.add("geosrsdatum:"+str(datumid)+" geosrs:ellipse \""+curcrs.datum.ellipsoid.name+"\" . \n")
 			examples["geosrs:ellipsoid"]=websitensshort+"/datum/"+str(datumid)

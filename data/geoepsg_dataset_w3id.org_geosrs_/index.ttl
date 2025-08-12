@@ -9,10 +9,12 @@
     rdfs:label "Linkset: geoepsg_dataset - geosrs:"@en ;
     void:linkPredicate rdf:type,
         <https://w3id.org/geosrs/direction>,
+        <https://w3id.org/geosrs/ellipse>,
         <https://w3id.org/geosrs/usage> ;
     void:objectsTarget <https://w3id.org/geosrs/> ;
     void:subjectsTarget <http://www.opengis.net/geoepsg_dataset> ;
     void:triples 56,
-        968,
-        31075 .
+        575,
+        969,
+        31045 .
 

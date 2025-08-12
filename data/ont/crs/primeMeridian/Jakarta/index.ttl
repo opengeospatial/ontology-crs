@@ -1,3 +1,4 @@
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix ns1: <https://w3id.org/geosrs/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix void: <http://rdfs.org/ns/void#> .
@@ -8,8 +9,10 @@
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Jakarta"@en ;
     void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
+    foaf:image "https://situx.github.io/proj4rdf/primemeridians/JakartaPrimeMeridian.svg"^^xsd:anyURI ;
     ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'PrimeMeridian','name':'Jakarta','longitude':106.807719444444,'id':{'authority':'EPSG','code':8908}}" ;
     ns1:asWKT "PRIMEM['Jakarta',106.807719444444,ANGLEUNIT['degree',0.0174532925199433],ID['EPSG',8908]]" ;
     ns1:longitude 1.068077e+02 ;
-    ns1:unit <http://www.ontology-of-units-of-measure.org/resource/om-2/om:degree> .
+    ns1:unit <http://www.ontology-of-units-of-measure.org/resource/om-2/om:degree> ;
+    ns1:unitConversionFactor 1.745329e-02 .
 

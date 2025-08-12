@@ -6,11 +6,12 @@
 <http://www.opengis.net/ont/crs/cs/axis/Depth_US_survey_foot_down> a <http://www.w3.org/ns/ldp#Resource>,
         ns1:CoordinateSystemAxis,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
-    rdfs:label "Depth (US survey foot)"@en ;
+    rdfs:label "Depth (om:foot-USSurvey)"@en ;
     void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
     ns1:abbreviation "D"^^xsd:string ;
+    ns1:asSVG "<svg width='400' height='100' viewbox='0 0 275 100'><defs><marker id='arrowhead' markerWidth='10' markerHeight='7' refX='0' refY='2' orient='auto'><polygon points='0 0, 4 2, 0 4' /></marker></defs><line x1='20' y1='50' x2='200' y2='50' stroke='gray' stroke-width='5' marker-end='url(#arrowhead)'></line><text x='30' y='70' class='small'>D: Depth (om:foot-USSurvey) (down)</text></svg>"^^ns1:svgLiteral ;
     ns1:direction ns1:down ;
-    ns1:unit "US survey foot" ;
+    ns1:unit <http://www.ontology-of-units-of-measure.org/resource/om-2/foot-USSurvey> ;
     ns1:unit_auth_code "EPSG"^^xsd:string ;
     ns1:unit_code "9003"^^xsd:string ;
     ns1:unit_conversion_factor 3.048006e-01 .

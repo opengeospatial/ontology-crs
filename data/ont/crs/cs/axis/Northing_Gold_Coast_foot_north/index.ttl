@@ -9,6 +9,7 @@
     rdfs:label "Northing (Gold Coast foot)"@en ;
     void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
     ns1:abbreviation "N"^^xsd:string ;
+    ns1:asSVG "<svg width='400' height='100' viewbox='0 0 275 100'><defs><marker id='arrowhead' markerWidth='10' markerHeight='7' refX='0' refY='2' orient='auto'><polygon points='0 0, 4 2, 0 4' /></marker></defs><line x1='20' y1='50' x2='200' y2='50' stroke='gray' stroke-width='5' marker-end='url(#arrowhead)'></line><text x='30' y='70' class='small'>N: Northing (Gold Coast foot) (north)</text></svg>"^^ns1:svgLiteral ;
     ns1:direction ns1:north ;
     ns1:unit "Gold Coast foot" ;
     ns1:unit_auth_code "EPSG"^^xsd:string ;

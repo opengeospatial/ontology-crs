@@ -5,7 +5,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <http://www.opengis.net/ont/crs/operation/RT90_zone_7.5_gon_V_emulation> a <http://www.w3.org/ns/ldp#Resource>,
-        ns1:TransverseMercatorProjection,
+        ns1:MercatorProjection,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "RT90 zone 7.5 gon V emulation: Transverse Mercator"@en ;
     void:inDataset <http://www.opengis.net/geoepsg_dataset> ;

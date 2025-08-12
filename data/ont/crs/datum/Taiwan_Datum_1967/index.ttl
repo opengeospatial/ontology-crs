@@ -8,7 +8,7 @@
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Datum: Taiwan Datum 1967"@en ;
     void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
-    ns1:ellipse <http://www.opengis.net/ont/crs/geod/GRS67Modified> ;
+    ns1:ellipse ns1:GRS67Modified ;
     ns1:primeMeridian <http://www.opengis.net/ont/crs/primeMeridian/Greenwich> ;
     ns1:scope "Geodesy, cadastre, engineering survey, topographic mapping."^^xsd:string ;
     ns1:usage ns1:CadastreMap,

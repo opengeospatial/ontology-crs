@@ -1,0 +1,19 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+
+<http://www.opengis.net/AzimuthalEquidistantProjection_collection> a skos:Collection,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
+    rdfs:label "AzimuthalEquidistantProjection Instances Collection"@en ;
+    void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
+    rdfs:member <http://www.opengis.net/ont/crs/operation/Equi7_projection_-_Africa>,
+        <http://www.opengis.net/ont/crs/operation/Equi7_projection_-_Antarctica>,
+        <http://www.opengis.net/ont/crs/operation/Equi7_projection_-_Asia>,
+        <http://www.opengis.net/ont/crs/operation/Equi7_projection_-_Europe>,
+        <http://www.opengis.net/ont/crs/operation/Equi7_projection_-_North_America>,
+        <http://www.opengis.net/ont/crs/operation/Equi7_projection_-_Oceania>,
+        <http://www.opengis.net/ont/crs/operation/Equi7_projection_-_South_America>,
+        <http://www.opengis.net/ont/crs/operation/Guam_SPCS>,
+        <http://www.opengis.net/ont/crs/operation/Yap_Islands> .
+

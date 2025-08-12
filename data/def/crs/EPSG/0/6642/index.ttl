@@ -12,8 +12,8 @@
     rdfs:label "VIVD09 height"@en ;
     void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
     ns1:area_of_use <http://www.opengis.net/def/crs/EPSG/0/6642_area_of_use> ;
-    ns1:asProj4 "+vunits=m +no_defs +type=crs"^^xsd:string ;
-    ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'VerticalCRS','name':'VIVD09 height','datum':{'type':'VerticalReferenceFrame','name':'Virgin Islands Vertical Datum of 2009'},'coordinate_system':{'subtype':'vertical','axis':[{'name':'Gravity-related height','abbreviation':'H','direction':'up','unit':'metre'}]},'scope':'Geodesy, engineering survey, topographic mapping.','area':'US Virgin Islands - onshore - St Croix, St John, and St Thomas.','bbox':{'south_latitude':17.62,'west_longitude':-65.09,'north_latitude':18.44,'east_longitude':-64.51},'id':{'authority':'EPSG','code':6642}}"^^xsd:string ;
+    ns1:asProj4 "+vunits=m +no_defs +type=crs"^^ns1:proj4Literal ;
+    ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'VerticalCRS','name':'VIVD09 height','datum':{'type':'VerticalReferenceFrame','name':'Virgin Islands Vertical Datum of 2009'},'coordinate_system':{'subtype':'vertical','axis':[{'name':'Gravity-related height','abbreviation':'H','direction':'up','unit':'metre'}]},'scope':'Geodesy, engineering survey, topographic mapping.','area':'US Virgin Islands - onshore - St Croix, St John, and St Thomas.','bbox':{'south_latitude':17.62,'west_longitude':-65.09,'north_latitude':18.44,'east_longitude':-64.51},'id':{'authority':'EPSG','code':6642}}"^^ns1:projJSONLiteral ;
     ns1:asWKT "VERTCRS['VIVD09 height',VDATUM['Virgin Islands Vertical Datum of 2009'],CS[vertical,1],AXIS['gravity-related height (H)',up,LENGTHUNIT['metre',1]],USAGE[SCOPE['Geodesy, engineering survey, topographic mapping.'],AREA['US Virgin Islands - onshore - St Croix, St John, and St Thomas.'],BBOX[17.62,-65.09,18.44,-64.51]],ID['EPSG',6642]]"^^ns1:wktLiteral ;
     ns1:coordinateSystem <http://www.opengis.net/def/crs/EPSG/0/6642_cs> ;
     ns1:datum <http://www.opengis.net/ont/crs/datum/Virgin_Islands_Vertical_Datum_of_2009> ;

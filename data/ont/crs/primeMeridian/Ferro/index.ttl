@@ -1,3 +1,4 @@
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix ns1: <https://w3id.org/geosrs/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix void: <http://rdfs.org/ns/void#> .
@@ -8,8 +9,10 @@
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Ferro"@en ;
     void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
+    foaf:image "https://situx.github.io/proj4rdf/primemeridians/FerroPrimeMeridian.svg"^^xsd:anyURI ;
     ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'PrimeMeridian','name':'Ferro','longitude':-17.6666666666667,'id':{'authority':'EPSG','code':8909}}" ;
     ns1:asWKT "PRIMEM['Ferro',-17.6666666666667,ANGLEUNIT['degree',0.0174532925199433],ID['EPSG',8909]]" ;
     ns1:longitude -1.766667e+01 ;
-    ns1:unit <http://www.ontology-of-units-of-measure.org/resource/om-2/om:degree> .
+    ns1:unit <http://www.ontology-of-units-of-measure.org/resource/om-2/om:degree> ;
+    ns1:unitConversionFactor 1.745329e-02 .
 

@@ -12,8 +12,8 @@
     rdfs:label "Ibiza height"@en ;
     void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
     ns1:area_of_use <http://www.opengis.net/def/crs/EPSG/0/9394_area_of_use> ;
-    ns1:asProj4 "+vunits=m +no_defs +type=crs"^^xsd:string ;
-    ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'VerticalCRS','name':'Ibiza height','datum':{'type':'VerticalReferenceFrame','name':'Ibiza'},'coordinate_system':{'subtype':'vertical','axis':[{'name':'Gravity-related height','abbreviation':'H','direction':'up','unit':'metre'}]},'scope':'Geodesy, engineering survey, topographic mapping.','area':'Spain - Balearic Islands - Ibiza - onshore.','bbox':{'south_latitude':38.77,'west_longitude':1.12,'north_latitude':39.17,'east_longitude':1.68},'id':{'authority':'EPSG','code':9394}}"^^xsd:string ;
+    ns1:asProj4 "+vunits=m +no_defs +type=crs"^^ns1:proj4Literal ;
+    ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'VerticalCRS','name':'Ibiza height','datum':{'type':'VerticalReferenceFrame','name':'Ibiza'},'coordinate_system':{'subtype':'vertical','axis':[{'name':'Gravity-related height','abbreviation':'H','direction':'up','unit':'metre'}]},'scope':'Geodesy, engineering survey, topographic mapping.','area':'Spain - Balearic Islands - Ibiza - onshore.','bbox':{'south_latitude':38.77,'west_longitude':1.12,'north_latitude':39.17,'east_longitude':1.68},'id':{'authority':'EPSG','code':9394}}"^^ns1:projJSONLiteral ;
     ns1:asWKT "VERTCRS['Ibiza height',VDATUM['Ibiza'],CS[vertical,1],AXIS['gravity-related height (H)',up,LENGTHUNIT['metre',1]],USAGE[SCOPE['Geodesy, engineering survey, topographic mapping.'],AREA['Spain - Balearic Islands - Ibiza - onshore.'],BBOX[38.77,1.12,39.17,1.68]],ID['EPSG',9394]]"^^ns1:wktLiteral ;
     ns1:coordinateSystem <http://www.opengis.net/def/crs/EPSG/0/9394_cs> ;
     ns1:datum <http://www.opengis.net/ont/crs/datum/Ibiza> ;

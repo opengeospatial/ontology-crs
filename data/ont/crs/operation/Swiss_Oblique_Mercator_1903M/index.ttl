@@ -5,7 +5,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <http://www.opengis.net/ont/crs/operation/Swiss_Oblique_Mercator_1903M> a <http://www.w3.org/ns/ldp#Resource>,
-        ns1:ObliqueMercatorProjection,
+        ns1:MercatorProjection,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Swiss Oblique Mercator 1903M: Hotine Oblique Mercator (variant B)"@en ;
     void:inDataset <http://www.opengis.net/geoepsg_dataset> ;

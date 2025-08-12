@@ -12,8 +12,8 @@
     rdfs:label "LAT depth"@en ;
     void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
     ns1:area_of_use <http://www.opengis.net/def/crs/EPSG/0/5861_area_of_use> ;
-    ns1:asProj4 "+vunits=m +no_defs +type=crs"^^xsd:string ;
-    ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'VerticalCRS','name':'LAT depth','datum':{'type':'VerticalReferenceFrame','name':'Lowest Astronomical Tide'},'coordinate_system':{'subtype':'vertical','axis':[{'name':'Depth','abbreviation':'D','direction':'down','unit':'metre'}]},'scope':'Hydrography and nautical charting.','area':'World.','bbox':{'south_latitude':-90,'west_longitude':-180,'north_latitude':90,'east_longitude':180},'id':{'authority':'EPSG','code':5861}}"^^xsd:string ;
+    ns1:asProj4 "+vunits=m +no_defs +type=crs"^^ns1:proj4Literal ;
+    ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'VerticalCRS','name':'LAT depth','datum':{'type':'VerticalReferenceFrame','name':'Lowest Astronomical Tide'},'coordinate_system':{'subtype':'vertical','axis':[{'name':'Depth','abbreviation':'D','direction':'down','unit':'metre'}]},'scope':'Hydrography and nautical charting.','area':'World.','bbox':{'south_latitude':-90,'west_longitude':-180,'north_latitude':90,'east_longitude':180},'id':{'authority':'EPSG','code':5861}}"^^ns1:projJSONLiteral ;
     ns1:asWKT "VERTCRS['LAT depth',VDATUM['Lowest Astronomical Tide'],CS[vertical,1],AXIS['depth (D)',down,LENGTHUNIT['metre',1]],USAGE[SCOPE['Hydrography and nautical charting.'],AREA['World.'],BBOX[-90,-180,90,180]],ID['EPSG',5861]]"^^ns1:wktLiteral ;
     ns1:coordinateSystem <http://www.opengis.net/def/crs/EPSG/0/5861_cs> ;
     ns1:datum <http://www.opengis.net/ont/crs/datum/Lowest_Astronomical_Tide> ;

@@ -5,7 +5,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <http://www.opengis.net/ont/crs/operation/Pima_County_zone_4_Mt._Lemmon__ft_> a <http://www.w3.org/ns/ldp#Resource>,
-        ns1:LambertConformalConicProjection,
+        ns1:CentralCylindricalProjection,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Pima County zone 4 Mt. Lemmon (ft): Lambert Conic Conformal (1SP)"@en ;
     void:inDataset <http://www.opengis.net/geoepsg_dataset> ;

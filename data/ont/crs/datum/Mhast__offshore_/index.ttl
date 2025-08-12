@@ -8,7 +8,7 @@
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Datum: Mhast (offshore)"@en ;
     void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
-    ns1:ellipse <http://www.opengis.net/ont/crs/geod/International1924> ;
+    ns1:ellipse ns1:International1924 ;
     ns1:primeMeridian <http://www.opengis.net/ont/crs/primeMeridian/Greenwich> ;
     ns1:scope "Oil and gas exploration and production."^^xsd:string .
 

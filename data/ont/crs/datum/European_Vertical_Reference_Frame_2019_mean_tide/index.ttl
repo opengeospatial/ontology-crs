@@ -9,5 +9,6 @@
     rdfs:label "Datum: European Vertical Reference Frame 2019 mean tide"@en ;
     void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
     ns1:scope "Geodesy (GNSS), oceanography."^^xsd:string ;
-    ns1:usage "Geodesy (GNSS), oceanography."^^xsd:string .
+    ns1:usage ns1:Oceanography,
+        "Geodesy (GNSS), oceanography."^^xsd:string .
 

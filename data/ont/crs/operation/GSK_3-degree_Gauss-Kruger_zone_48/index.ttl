@@ -5,7 +5,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <http://www.opengis.net/ont/crs/operation/GSK_3-degree_Gauss-Kruger_zone_48> a <http://www.w3.org/ns/ldp#Resource>,
-        ns1:TransverseMercatorProjection,
+        ns1:MercatorProjection,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "GSK 3-degree Gauss-Kruger zone 48: Transverse Mercator"@en ;
     void:inDataset <http://www.opengis.net/geoepsg_dataset> ;

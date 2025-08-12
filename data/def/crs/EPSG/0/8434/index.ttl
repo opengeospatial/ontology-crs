@@ -12,8 +12,8 @@
     rdfs:label "Macao height"@en ;
     void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
     ns1:area_of_use <http://www.opengis.net/def/crs/EPSG/0/8434_area_of_use> ;
-    ns1:asProj4 "+vunits=m +no_defs +type=crs"^^xsd:string ;
-    ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'VerticalCRS','name':'Macao height','datum':{'type':'VerticalReferenceFrame','name':'Macao Height Datum'},'coordinate_system':{'subtype':'vertical','axis':[{'name':'Gravity-related height','abbreviation':'H','direction':'up','unit':'metre'}]},'scope':'Geodesy, engineering survey, topographic mapping.','area':'China - Macao - onshore and offshore.','bbox':{'south_latitude':22.06,'west_longitude':113.52,'north_latitude':22.23,'east_longitude':113.68},'id':{'authority':'EPSG','code':8434}}"^^xsd:string ;
+    ns1:asProj4 "+vunits=m +no_defs +type=crs"^^ns1:proj4Literal ;
+    ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'VerticalCRS','name':'Macao height','datum':{'type':'VerticalReferenceFrame','name':'Macao Height Datum'},'coordinate_system':{'subtype':'vertical','axis':[{'name':'Gravity-related height','abbreviation':'H','direction':'up','unit':'metre'}]},'scope':'Geodesy, engineering survey, topographic mapping.','area':'China - Macao - onshore and offshore.','bbox':{'south_latitude':22.06,'west_longitude':113.52,'north_latitude':22.23,'east_longitude':113.68},'id':{'authority':'EPSG','code':8434}}"^^ns1:projJSONLiteral ;
     ns1:asWKT "VERTCRS['Macao height',VDATUM['Macao Height Datum'],CS[vertical,1],AXIS['gravity-related height (H)',up,LENGTHUNIT['metre',1]],USAGE[SCOPE['Geodesy, engineering survey, topographic mapping.'],AREA['China - Macao - onshore and offshore.'],BBOX[22.06,113.52,22.23,113.68]],ID['EPSG',8434]]"^^ns1:wktLiteral ;
     ns1:coordinateSystem <http://www.opengis.net/def/crs/EPSG/0/8434_cs> ;
     ns1:datum <http://www.opengis.net/ont/crs/datum/Macao_Height_Datum> ;

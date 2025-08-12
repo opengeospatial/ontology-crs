@@ -12,8 +12,8 @@
     rdfs:label "NVD 1992 height"@en ;
     void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
     ns1:area_of_use <http://www.opengis.net/def/crs/EPSG/0/9681_area_of_use> ;
-    ns1:asProj4 "+vunits=m +no_defs +type=crs"^^xsd:string ;
-    ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'VerticalCRS','name':'NVD 1992 height','datum':{'type':'VerticalReferenceFrame','name':'National Vertical Datum 1992'},'coordinate_system':{'subtype':'vertical','axis':[{'name':'Gravity-related height','abbreviation':'H','direction':'up','unit':'metre'}]},'scope':'Geodesy, cadastre, engineering survey, topographic mapping.','area':'Bangladesh - onshore.','bbox':{'south_latitude':20.52,'west_longitude':88.01,'north_latitude':26.64,'east_longitude':92.67},'id':{'authority':'EPSG','code':9681}}"^^xsd:string ;
+    ns1:asProj4 "+vunits=m +no_defs +type=crs"^^ns1:proj4Literal ;
+    ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'VerticalCRS','name':'NVD 1992 height','datum':{'type':'VerticalReferenceFrame','name':'National Vertical Datum 1992'},'coordinate_system':{'subtype':'vertical','axis':[{'name':'Gravity-related height','abbreviation':'H','direction':'up','unit':'metre'}]},'scope':'Geodesy, cadastre, engineering survey, topographic mapping.','area':'Bangladesh - onshore.','bbox':{'south_latitude':20.52,'west_longitude':88.01,'north_latitude':26.64,'east_longitude':92.67},'id':{'authority':'EPSG','code':9681}}"^^ns1:projJSONLiteral ;
     ns1:asWKT "VERTCRS['NVD 1992 height',VDATUM['National Vertical Datum 1992'],CS[vertical,1],AXIS['gravity-related height (H)',up,LENGTHUNIT['metre',1]],USAGE[SCOPE['Geodesy, cadastre, engineering survey, topographic mapping.'],AREA['Bangladesh - onshore.'],BBOX[20.52,88.01,26.64,92.67]],ID['EPSG',9681]]"^^ns1:wktLiteral ;
     ns1:coordinateSystem <http://www.opengis.net/def/crs/EPSG/0/9681_cs> ;
     ns1:datum <http://www.opengis.net/ont/crs/datum/National_Vertical_Datum_1992> ;

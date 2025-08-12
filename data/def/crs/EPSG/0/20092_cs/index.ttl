@@ -9,6 +9,7 @@
     rdfs:label "EPSG:20092 CS: cartesian" ;
     void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
     ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'CoordinateSystem','subtype':'Cartesian','axis':[{'name':'Northing','abbreviation':'X','direction':'north','unit':'metre'},{'name':'Easting','abbreviation':'Y','direction':'east','unit':'metre'}],'id':{'authority':'EPSG','code':4530}}" ;
+    ns1:asSVG "<svg width='400' height='250' viewbox='0 0 375 220'><defs><marker id='arrowhead' markerWidth='10' markerHeight='7' refX='0' refY='2' orient='auto'><polygon points='0 0, 4 2, 0 4' /></marker></defs><line x1='20' y1='200' x2='200' y2='200' stroke='red' stroke-width='5' marker-end='url(#arrowhead)'></line><text x='110' y='220' class='small'>X: Northing (om:metre) (north)</text><line x1='20' y1='200' x2='20' y2='20' stroke='green' stroke-width='5' marker-end='url(#arrowhead)'></line><text x='35' y='20' class='small'>Y: Easting (om:metre) (east)</text></svg>"^^ns1:svgLiteral ;
     ns1:asWKT "CS[Cartesian,2],AXIS['northing (X)',north,ORDER[1],LENGTHUNIT['metre',1,ID['EPSG',9001]]],AXIS['easting (Y)',east,ORDER[2],LENGTHUNIT['metre',1,ID['EPSG',9001]]]" ;
     ns1:axis <http://www.opengis.net/ont/crs/cs/axis/Easting_metre_east>,
         <http://www.opengis.net/ont/crs/cs/axis/Northing_metre_north> .

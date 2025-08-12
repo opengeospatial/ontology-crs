@@ -5,7 +5,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <http://www.opengis.net/ont/crs/operation/Alberta_3-degree_TM_reference_meridian_114_W> a <http://www.w3.org/ns/ldp#Resource>,
-        ns1:TransverseMercatorProjection,
+        ns1:MercatorProjection,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Alberta 3-degree TM reference meridian 114 W: Transverse Mercator"@en ;
     void:inDataset <http://www.opengis.net/geoepsg_dataset> ;

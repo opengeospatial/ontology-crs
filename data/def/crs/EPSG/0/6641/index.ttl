@@ -12,8 +12,8 @@
     rdfs:label "PRVD02 height"@en ;
     void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
     ns1:area_of_use <http://www.opengis.net/def/crs/EPSG/0/6641_area_of_use> ;
-    ns1:asProj4 "+vunits=m +no_defs +type=crs"^^xsd:string ;
-    ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'VerticalCRS','name':'PRVD02 height','datum':{'type':'VerticalReferenceFrame','name':'Puerto Rico Vertical Datum of 2002'},'coordinate_system':{'subtype':'vertical','axis':[{'name':'Gravity-related height','abbreviation':'H','direction':'up','unit':'metre'}]},'scope':'Geodesy, engineering survey, topographic mapping.','area':'Puerto Rico - onshore.','bbox':{'south_latitude':17.87,'west_longitude':-67.97,'north_latitude':18.57,'east_longitude':-65.19},'id':{'authority':'EPSG','code':6641}}"^^xsd:string ;
+    ns1:asProj4 "+vunits=m +no_defs +type=crs"^^ns1:proj4Literal ;
+    ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'VerticalCRS','name':'PRVD02 height','datum':{'type':'VerticalReferenceFrame','name':'Puerto Rico Vertical Datum of 2002'},'coordinate_system':{'subtype':'vertical','axis':[{'name':'Gravity-related height','abbreviation':'H','direction':'up','unit':'metre'}]},'scope':'Geodesy, engineering survey, topographic mapping.','area':'Puerto Rico - onshore.','bbox':{'south_latitude':17.87,'west_longitude':-67.97,'north_latitude':18.57,'east_longitude':-65.19},'id':{'authority':'EPSG','code':6641}}"^^ns1:projJSONLiteral ;
     ns1:asWKT "VERTCRS['PRVD02 height',VDATUM['Puerto Rico Vertical Datum of 2002'],CS[vertical,1],AXIS['gravity-related height (H)',up,LENGTHUNIT['metre',1]],USAGE[SCOPE['Geodesy, engineering survey, topographic mapping.'],AREA['Puerto Rico - onshore.'],BBOX[17.87,-67.97,18.57,-65.19]],ID['EPSG',6641]]"^^ns1:wktLiteral ;
     ns1:coordinateSystem <http://www.opengis.net/def/crs/EPSG/0/6641_cs> ;
     ns1:datum <http://www.opengis.net/ont/crs/datum/Puerto_Rico_Vertical_Datum_of_2002> ;

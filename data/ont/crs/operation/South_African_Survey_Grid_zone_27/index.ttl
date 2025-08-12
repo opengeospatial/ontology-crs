@@ -5,7 +5,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <http://www.opengis.net/ont/crs/operation/South_African_Survey_Grid_zone_27> a <http://www.w3.org/ns/ldp#Resource>,
-        ns1:TransverseMercatorProjection,
+        ns1:MercatorProjection,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "South African Survey Grid zone 27: Transverse Mercator (South Orientated)"@en ;
     void:inDataset <http://www.opengis.net/geoepsg_dataset> ;

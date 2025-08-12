@@ -12,8 +12,8 @@
     rdfs:label "Cais da Madalena height"@en ;
     void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
     ns1:area_of_use <http://www.opengis.net/def/crs/EPSG/0/6182_area_of_use> ;
-    ns1:asProj4 "+vunits=m +no_defs +type=crs"^^xsd:string ;
-    ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'VerticalCRS','name':'Cais da Madalena height','datum':{'type':'VerticalReferenceFrame','name':'Cais da Madalena'},'coordinate_system':{'subtype':'vertical','axis':[{'name':'Gravity-related height','abbreviation':'H','direction':'up','unit':'metre'}]},'scope':'Geodesy, engineering survey, topographic mapping.','area':'Portugal - central Azores - Pico island onshore.','bbox':{'south_latitude':38.32,'west_longitude':-28.61,'north_latitude':38.61,'east_longitude':-27.98},'id':{'authority':'EPSG','code':6182}}"^^xsd:string ;
+    ns1:asProj4 "+vunits=m +no_defs +type=crs"^^ns1:proj4Literal ;
+    ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'VerticalCRS','name':'Cais da Madalena height','datum':{'type':'VerticalReferenceFrame','name':'Cais da Madalena'},'coordinate_system':{'subtype':'vertical','axis':[{'name':'Gravity-related height','abbreviation':'H','direction':'up','unit':'metre'}]},'scope':'Geodesy, engineering survey, topographic mapping.','area':'Portugal - central Azores - Pico island onshore.','bbox':{'south_latitude':38.32,'west_longitude':-28.61,'north_latitude':38.61,'east_longitude':-27.98},'id':{'authority':'EPSG','code':6182}}"^^ns1:projJSONLiteral ;
     ns1:asWKT "VERTCRS['Cais da Madalena height',VDATUM['Cais da Madalena'],CS[vertical,1],AXIS['gravity-related height (H)',up,LENGTHUNIT['metre',1]],USAGE[SCOPE['Geodesy, engineering survey, topographic mapping.'],AREA['Portugal - central Azores - Pico island onshore.'],BBOX[38.32,-28.61,38.61,-27.98]],ID['EPSG',6182]]"^^ns1:wktLiteral ;
     ns1:coordinateSystem <http://www.opengis.net/def/crs/EPSG/0/6182_cs> ;
     ns1:datum <http://www.opengis.net/ont/crs/datum/Cais_da_Madalena> ;

@@ -8,7 +8,7 @@
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Datum: Guam 1963"@en ;
     void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
-    ns1:ellipse <http://www.opengis.net/ont/crs/geod/Clarke1866> ;
+    ns1:ellipse ns1:Clarke1866 ;
     ns1:primeMeridian <http://www.opengis.net/ont/crs/primeMeridian/Greenwich> ;
     ns1:scope "Topographic mapping."^^xsd:string .
 

@@ -8,6 +8,7 @@
     rdfs:label "EPSG:8051 CS: vertical" ;
     void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
     ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'CoordinateSystem','subtype':'vertical','axis':[{'name':'Depth','abbreviation':'D','direction':'down','unit':{'type':'LinearUnit','name':'foot','conversion_factor':0.3048}}],'id':{'authority':'EPSG','code':6495}}" ;
+    ns1:asSVG "<svg width='400' height='250' viewbox='0 0 375 220'><defs><marker id='arrowhead' markerWidth='10' markerHeight='7' refX='0' refY='2' orient='auto'><polygon points='0 0, 4 2, 0 4' /></marker></defs><line x1='20' y1='200' x2='200' y2='200' stroke='red' stroke-width='5' marker-end='url(#arrowhead)'></line><text x='110' y='220' class='small'>D: Depth (om:foot-International) (down)</text></svg>"^^ns1:svgLiteral ;
     ns1:asWKT "CS[vertical,1],AXIS['depth (D)',down,LENGTHUNIT['foot',0.3048,ID['EPSG',9002]]]" ;
     ns1:axis <http://www.opengis.net/ont/crs/cs/axis/Depth_foot_down> .
 

@@ -12,8 +12,8 @@
     rdfs:label "La Gomera height"@en ;
     void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
     ns1:area_of_use <http://www.opengis.net/def/crs/EPSG/0/9399_area_of_use> ;
-    ns1:asProj4 "+vunits=m +no_defs +type=crs"^^xsd:string ;
-    ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'VerticalCRS','name':'La Gomera height','datum':{'type':'VerticalReferenceFrame','name':'La Gomera'},'coordinate_system':{'subtype':'vertical','axis':[{'name':'Gravity-related height','abbreviation':'H','direction':'up','unit':'metre'}]},'scope':'Geodesy, engineering survey, topographic mapping.','area':'Spain - Canary Islands - La Gomera onshore.','bbox':{'south_latitude':27.95,'west_longitude':-17.39,'north_latitude':28.26,'east_longitude':-17.03},'id':{'authority':'EPSG','code':9399}}"^^xsd:string ;
+    ns1:asProj4 "+vunits=m +no_defs +type=crs"^^ns1:proj4Literal ;
+    ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'VerticalCRS','name':'La Gomera height','datum':{'type':'VerticalReferenceFrame','name':'La Gomera'},'coordinate_system':{'subtype':'vertical','axis':[{'name':'Gravity-related height','abbreviation':'H','direction':'up','unit':'metre'}]},'scope':'Geodesy, engineering survey, topographic mapping.','area':'Spain - Canary Islands - La Gomera onshore.','bbox':{'south_latitude':27.95,'west_longitude':-17.39,'north_latitude':28.26,'east_longitude':-17.03},'id':{'authority':'EPSG','code':9399}}"^^ns1:projJSONLiteral ;
     ns1:asWKT "VERTCRS['La Gomera height',VDATUM['La Gomera'],CS[vertical,1],AXIS['gravity-related height (H)',up,LENGTHUNIT['metre',1]],USAGE[SCOPE['Geodesy, engineering survey, topographic mapping.'],AREA['Spain - Canary Islands - La Gomera onshore.'],BBOX[27.95,-17.39,28.26,-17.03]],ID['EPSG',9399]]"^^ns1:wktLiteral ;
     ns1:coordinateSystem <http://www.opengis.net/def/crs/EPSG/0/9399_cs> ;
     ns1:datum <http://www.opengis.net/ont/crs/datum/La_Gomera> ;

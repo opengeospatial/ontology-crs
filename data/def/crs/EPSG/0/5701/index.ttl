@@ -12,8 +12,8 @@
     rdfs:label "ODN height"@en ;
     void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
     ns1:area_of_use <http://www.opengis.net/def/crs/EPSG/0/5701_area_of_use> ;
-    ns1:asProj4 "+vunits=m +no_defs +type=crs"^^xsd:string ;
-    ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'VerticalCRS','name':'ODN height','datum':{'type':'VerticalReferenceFrame','name':'Ordnance Datum Newlyn'},'coordinate_system':{'subtype':'vertical','axis':[{'name':'Gravity-related height','abbreviation':'H','direction':'up','unit':'metre'}]},'scope':'Geodesy, engineering survey.','area':'United Kingdom (UK) - Great Britain onshore - England and Wales - mainland; Scotland - mainland and Inner Hebrides.','bbox':{'south_latitude':49.93,'west_longitude':-7.06,'north_latitude':58.71,'east_longitude':1.8},'id':{'authority':'EPSG','code':5701}}"^^xsd:string ;
+    ns1:asProj4 "+vunits=m +no_defs +type=crs"^^ns1:proj4Literal ;
+    ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'VerticalCRS','name':'ODN height','datum':{'type':'VerticalReferenceFrame','name':'Ordnance Datum Newlyn'},'coordinate_system':{'subtype':'vertical','axis':[{'name':'Gravity-related height','abbreviation':'H','direction':'up','unit':'metre'}]},'scope':'Geodesy, engineering survey.','area':'United Kingdom (UK) - Great Britain onshore - England and Wales - mainland; Scotland - mainland and Inner Hebrides.','bbox':{'south_latitude':49.93,'west_longitude':-7.06,'north_latitude':58.71,'east_longitude':1.8},'id':{'authority':'EPSG','code':5701}}"^^ns1:projJSONLiteral ;
     ns1:asWKT "VERTCRS['ODN height',VDATUM['Ordnance Datum Newlyn'],CS[vertical,1],AXIS['gravity-related height (H)',up,LENGTHUNIT['metre',1]],USAGE[SCOPE['Geodesy, engineering survey.'],AREA['United Kingdom (UK) - Great Britain onshore - England and Wales - mainland; Scotland - mainland and Inner Hebrides.'],BBOX[49.93,-7.06,58.71,1.8]],ID['EPSG',5701]]"^^ns1:wktLiteral ;
     ns1:coordinateSystem <http://www.opengis.net/def/crs/EPSG/0/5701_cs> ;
     ns1:datum <http://www.opengis.net/ont/crs/datum/Ordnance_Datum_Newlyn> ;

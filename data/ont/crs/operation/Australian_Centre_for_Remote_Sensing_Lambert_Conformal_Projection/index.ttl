@@ -5,7 +5,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <http://www.opengis.net/ont/crs/operation/Australian_Centre_for_Remote_Sensing_Lambert_Conformal_Projection> a <http://www.w3.org/ns/ldp#Resource>,
-        ns1:LambertConformalConicProjection,
+        ns1:CentralCylindricalProjection,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Australian Centre for Remote Sensing Lambert Conformal Projection: Lambert Conic Conformal (2SP)"@en ;
     void:inDataset <http://www.opengis.net/geoepsg_dataset> ;

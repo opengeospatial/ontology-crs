@@ -5,7 +5,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <http://www.opengis.net/ont/crs/operation/Rectified_Skew_Orthomorphic_Borneo_Grid__foot_> a <http://www.w3.org/ns/ldp#Resource>,
-        ns1:ObliqueMercatorProjection,
+        ns1:MercatorProjection,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Rectified Skew Orthomorphic Borneo Grid (foot): Hotine Oblique Mercator (variant B)"@en ;
     void:inDataset <http://www.opengis.net/geoepsg_dataset> ;

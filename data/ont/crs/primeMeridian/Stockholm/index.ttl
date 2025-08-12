@@ -1,3 +1,4 @@
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix ns1: <https://w3id.org/geosrs/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix void: <http://rdfs.org/ns/void#> .
@@ -8,8 +9,10 @@
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Stockholm"@en ;
     void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
+    foaf:image "https://situx.github.io/proj4rdf/primemeridians/StockholmPrimeMeridian.svg"^^xsd:anyURI ;
     ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'PrimeMeridian','name':'Stockholm','longitude':18.0582777777778,'id':{'authority':'EPSG','code':8911}}" ;
     ns1:asWKT "PRIMEM['Stockholm',18.0582777777778,ANGLEUNIT['degree',0.0174532925199433],ID['EPSG',8911]]" ;
     ns1:longitude 1.805828e+01 ;
-    ns1:unit <http://www.ontology-of-units-of-measure.org/resource/om-2/om:degree> .
+    ns1:unit <http://www.ontology-of-units-of-measure.org/resource/om-2/om:degree> ;
+    ns1:unitConversionFactor 1.745329e-02 .
 

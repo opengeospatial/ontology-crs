@@ -8,7 +8,7 @@
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Datum: Ordnance Survey of Great Britain 1936"@en ;
     void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
-    ns1:ellipse <http://www.opengis.net/ont/crs/geod/Airy1830> ;
+    ns1:ellipse ns1:Airy1830 ;
     ns1:primeMeridian <http://www.opengis.net/ont/crs/primeMeridian/Greenwich> ;
     ns1:scope "Topographic mapping."^^xsd:string .
 

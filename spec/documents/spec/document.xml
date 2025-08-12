@@ -2570,7 +2570,7 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 </tr><tr id="_95b16be8-87ec-9cec-ae8b-da4c2e97364b"><td id="_e584f270-ff27-408e-8223-74aafe419fc9" valign="middle" align="left">Super-classes</td>
 <td id="_ff005b5a-e547-7e03-64b6-10d3ddedd4db" valign="middle" align="left"><link target="https://w3id.org/geosrs/projection/ConformalProjection">ConformalProjection</link></td>
 </tr><tr id="_0c56d415-dc19-bea4-40ab-23b12e6e6146"><td id="_b5e2ca78-1076-fb32-b5d7-ceac602c6d7d" valign="middle" align="left">Example</td>
-<td id="_22292962-b4ba-4abf-d44f-fc47e7ff746d" valign="middle" align="left"><link target="https://opengeospatial.github.io/ontology-crs/data/ont/crs//crs/operation/IBCSO_Polar_Stereographic">geosrs:StereographicProjection</link></td>
+<td id="_22292962-b4ba-4abf-d44f-fc47e7ff746d" valign="middle" align="left"><link target="https://opengeospatial.github.io/ontology-crs/data/ont/crs//operation/IBCSO_Polar_Stereographic">geosrs:StereographicProjection</link></td>
 </tr></tbody>
 </table>
 </clause>
@@ -2628,7 +2628,7 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 </tr><tr id="_4a940b27-e626-e48a-3800-f3f025a9d9b4"><td id="_eb1a1b78-24fc-8e16-4b08-928d4495e8d1" valign="middle" align="left">Super-classes</td>
 <td id="_6648d8ed-087d-eacc-7cf6-dd66bbce6d1b" valign="middle" align="left"><link target="https://w3id.org/geosrs/projection/ConicalProjection">ConicalProjection</link></td>
 </tr><tr id="_c27468b1-9ce0-925a-52ed-ae5d1c283317"><td id="_67adebd4-b9fc-1aa5-245c-0bf3300e4bf8" valign="middle" align="left">Example</td>
-<td id="_c8ae96ce-1de7-856b-f61d-525fadd5bd0a" valign="middle" align="left"><link target="https://opengeospatial.github.io/ontology-crs/data/ont/crs//crs/operation/Krovak_East_North__Greenwich_">geosrs:Krovak</link></td>
+<td id="_c8ae96ce-1de7-856b-f61d-525fadd5bd0a" valign="middle" align="left"><link target="https://opengeospatial.github.io/ontology-crs/data/ont/crs//operation/Krovak_East_North__Greenwich_">geosrs:Krovak</link></td>
 </tr></tbody>
 </table>
 </clause>
@@ -2782,7 +2782,7 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 </tr><tr id="_00b8002e-dcd7-e2f9-8bac-141bf4af1062"><td id="_92bd3ab9-906e-b67a-6adc-5a9445d83fee" valign="middle" align="left">Super-classes</td>
 <td id="_373723ea-cb8b-2322-65de-6419ee4aa033" valign="middle" align="left"><link target="https://w3id.org/geosrs/projection/CylindricalProjection">CylindricalProjection</link></td>
 </tr><tr id="_839b1fcd-ddf4-c486-46ff-7d133bc6ad12"><td id="_72a46b33-4601-9b5f-ac4b-151a899be033" valign="middle" align="left">Example</td>
-<td id="_ba71dd1e-b4ca-a76c-ddb9-5de264df2430" valign="middle" align="left"><link target="https://opengeospatial.github.io/ontology-crs/data/ont/crs//crs/operation/Laborde_Grid">geosrs:LabordeProjection</link></td>
+<td id="_ba71dd1e-b4ca-a76c-ddb9-5de264df2430" valign="middle" align="left"><link target="https://opengeospatial.github.io/ontology-crs/data/ont/crs//operation/Laborde_Grid">geosrs:LabordeProjection</link></td>
 </tr></tbody>
 </table>
 </clause>
@@ -2796,7 +2796,7 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 </tr><tr id="_17f42676-e5bb-9697-3a48-595465b4ed37"><td id="_3b11278c-6994-2f7c-c627-b41b03b8530c" valign="middle" align="left">Super-classes</td>
 <td id="_c5082174-1e87-4f48-81ae-3ff2a1919c5c" valign="middle" align="left"><link target="https://w3id.org/geosrs/projection/CylindricalProjection">CylindricalProjection</link></td>
 </tr><tr id="_a8038e13-2495-edc9-6e3e-392ab9aab02a"><td id="_13196576-5ea7-5110-f436-ee67e8b6cee3" valign="middle" align="left">Example</td>
-<td id="_31112041-ecd0-ebe9-71ef-5c98b08e0d13" valign="middle" align="left"><link target="https://opengeospatial.github.io/ontology-crs/data/ont/crs//crs/operation/Irish_Grid">geosrs:MercatorProjection</link></td>
+<td id="_31112041-ecd0-ebe9-71ef-5c98b08e0d13" valign="middle" align="left"><link target="https://opengeospatial.github.io/ontology-crs/data/ont/crs//operation/Irish_Grid">geosrs:MercatorProjection</link></td>
 </tr></tbody>
 </table>
 </clause>
@@ -2902,7 +2902,7 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 </tr><tr id="_b16ade7c-054b-25bb-b4b0-7d0e386a8463"><td id="_862370c3-9bc7-53a5-a2d3-58ff5a8d210a" valign="middle" align="left">Super-classes</td>
 <td id="_6141650e-e252-b64c-bb9e-348df2fc1cf6" valign="middle" align="left"><link target="https://w3id.org/geosrs/projection/EqualAreaProjection">EqualAreaProjection</link></td>
 </tr><tr id="_be5b41d5-8dda-bdea-07c4-9275a8a62fb8"><td id="_6429e27f-fea4-7301-3d87-285c9a292aa8" valign="middle" align="left">Example</td>
-<td id="_6e447dfc-fc4d-f554-2e7b-bdde509e43d8" valign="middle" align="left"><link target="https://opengeospatial.github.io/ontology-crs/data/ont/crs//crs/operation/Iceland_Lambert_Azimuthal_Equal_Area">geosrs:AlbersEqualAreaProjection</link></td>
+<td id="_6e447dfc-fc4d-f554-2e7b-bdde509e43d8" valign="middle" align="left"><link target="https://opengeospatial.github.io/ontology-crs/data/ont/crs//operation/Iceland_Lambert_Azimuthal_Equal_Area">geosrs:AlbersEqualAreaProjection</link></td>
 </tr></tbody>
 </table>
 </clause>
@@ -2928,7 +2928,7 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 </tr><tr id="_d0bc11f3-e88e-1662-6ee0-6aef2066b46b"><td id="_e9cec155-fd77-06e0-08f1-2407fc5eb6d7" valign="middle" align="left">Super-classes</td>
 <td id="_ca65ed34-2ef8-3fb8-6acb-a605ef6f9a5d" valign="middle" align="left"><link target="https://w3id.org/geosrs/projection/EqualAreaProjection">EqualAreaProjection</link></td>
 </tr><tr id="_238651b5-3ed3-52df-f962-9a24f18fd52b"><td id="_7220ab87-1b7e-a647-8c8c-857097b324d8" valign="middle" align="left">Example</td>
-<td id="_279a4a91-1411-3864-c2c4-a361514fa096" valign="middle" align="left"><link target="https://opengeospatial.github.io/ontology-crs/data/ont/crs//crs/operation/US_NSIDC_EASE-Grid_2.0_Global">geosrs:CylindricalEqualArea</link></td>
+<td id="_279a4a91-1411-3864-c2c4-a361514fa096" valign="middle" align="left"><link target="https://opengeospatial.github.io/ontology-crs/data/ont/crs//operation/US_NSIDC_EASE-Grid_2.0_Global">geosrs:CylindricalEqualArea</link></td>
 </tr></tbody>
 </table>
 </clause>
@@ -3010,7 +3010,7 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 </tr><tr id="_017498a1-cfc6-5b41-c241-85a9d349ffc5"><td id="_60a68561-d357-a6fa-0b09-91f193a179d1" valign="middle" align="left">Super-classes</td>
 <td id="_fb1ee108-b03a-5ade-ec0f-facbc65460d7" valign="middle" align="left"><link target="https://w3id.org/geosrs/projection/EquidistantProjection">EquidistantProjection</link></td>
 </tr><tr id="_669a3581-377c-e303-30f2-7337810c44ec"><td id="_dbfa2c48-f8a0-26c9-7487-a2c04d196f73" valign="middle" align="left">Example</td>
-<td id="_78cb6276-a0f7-cc9f-98c0-9df66951d94c" valign="middle" align="left"><link target="https://opengeospatial.github.io/ontology-crs/data/ont/crs//crs/operation/Equi7_projection_-_South_America">geosrs:AzimuthalEquidistantProjection</link></td>
+<td id="_78cb6276-a0f7-cc9f-98c0-9df66951d94c" valign="middle" align="left"><link target="https://opengeospatial.github.io/ontology-crs/data/ont/crs//operation/Equi7_projection_-_South_America">geosrs:AzimuthalEquidistantProjection</link></td>
 </tr></tbody>
 </table>
 </clause>
@@ -3038,7 +3038,7 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 </tr><tr id="_0450a7de-e003-4136-2c54-d3aba8bc563d"><td id="_2b46e649-fc85-911b-842a-0402df98bb61" valign="middle" align="left">Super-classes</td>
 <td id="_7e463066-020a-9987-face-5330177f51da" valign="middle" align="left"><link target="https://w3id.org/geosrs/projection/EquidistantProjection">EquidistantProjection</link></td>
 </tr><tr id="_8f93840a-a6b1-62cb-76b4-24379f2d106a"><td id="_c1d55df0-164b-08fa-d100-0f7af275caa6" valign="middle" align="left">Example</td>
-<td id="_331fca56-8a0c-bd70-65cd-2b44d78c4004" valign="middle" align="left"><link target="https://opengeospatial.github.io/ontology-crs/data/ont/crs//crs/operation/Israeli_CS">geosrs:CassiniProjection</link></td>
+<td id="_331fca56-8a0c-bd70-65cd-2b44d78c4004" valign="middle" align="left"><link target="https://opengeospatial.github.io/ontology-crs/data/ont/crs//operation/Israeli_CS">geosrs:CassiniProjection</link></td>
 </tr></tbody>
 </table>
 </clause>
@@ -3064,7 +3064,7 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 </tr><tr id="_825873c8-c972-009f-7d48-a608b9e8447e"><td id="_7a783098-c287-805a-f0a4-bfff8be22a2c" valign="middle" align="left">Super-classes</td>
 <td id="_1d3f930b-dd26-e1dd-3ee0-167f52d1aee9" valign="middle" align="left"><link target="https://w3id.org/geosrs/projection/EquidistantProjection">EquidistantProjection</link></td>
 </tr><tr id="_ee66b3c5-fb7b-f178-aee6-5083e5b6d4b6"><td id="_e393ad54-b362-5471-cf25-a0525fd8dbc5" valign="middle" align="left">Example</td>
-<td id="_ed9a25a5-258b-2e6c-14ca-0b8477cfb4d9" valign="middle" align="left"><link target="https://opengeospatial.github.io/ontology-crs/data/ont/crs//crs/operation/World_Equidistant_Cylindrical__Sphere_">geosrs:EquidistantCylindricalProjection</link></td>
+<td id="_ed9a25a5-258b-2e6c-14ca-0b8477cfb4d9" valign="middle" align="left"><link target="https://opengeospatial.github.io/ontology-crs/data/ont/crs//operation/World_Equidistant_Cylindrical__Sphere_">geosrs:EquidistantCylindricalProjection</link></td>
 </tr></tbody>
 </table>
 </clause>
@@ -3380,7 +3380,7 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 </tr><tr id="_a33e884b-cbcf-260e-7f3e-063edcde23a8"><td id="_7e8e2fa5-7654-75ed-3225-cbc503e6b045" valign="middle" align="left">Super-classes</td>
 <td id="_7c0d5500-15a0-f668-6933-b77f2a6108d4" valign="middle" align="left"><link target="https://w3id.org/geosrs/projection/MinimumErrorProjection">MinimumErrorProjection</link></td>
 </tr><tr id="_6ed69330-4d05-75ac-b482-8ef21bfdc39e"><td id="_9874a33e-1584-3a26-a20e-0693cb30ba7e" valign="middle" align="left">Example</td>
-<td id="_efd9251c-0fc3-0004-12f8-65b13927fa3d" valign="middle" align="left"><link target="https://opengeospatial.github.io/ontology-crs/data/ont/crs//crs/operation/Irish_National_Grid">geosrs:AiryProjection</link></td>
+<td id="_efd9251c-0fc3-0004-12f8-65b13927fa3d" valign="middle" align="left"><link target="https://opengeospatial.github.io/ontology-crs/data/ont/crs//operation/Irish_National_Grid">geosrs:AiryProjection</link></td>
 </tr></tbody>
 </table>
 </clause>
@@ -3402,7 +3402,7 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 </tr><tr id="_293096fc-fc14-90de-0778-37b7a4bec97c"><td id="_321735c9-6ebf-23b6-0b7e-b53b66d70899" valign="middle" align="left">Super-classes</td>
 <td id="_c657607b-b0d4-3e76-63b8-3dc5b4918dbd" valign="middle" align="left"><link target="https://w3id.org/geosrs/projection/PerspectiveProjection">PerspectiveProjection</link></td>
 </tr><tr id="_e864381a-c75c-a6f3-fb90-46f8d1e8e4a5"><td id="_c7429f01-d0c8-9b32-5569-d5c74f5a8cab" valign="middle" align="left">Example</td>
-<td id="_bc39f8ff-92c1-93ab-4f0c-e2d4d35e3862" valign="middle" align="left"><link target="https://opengeospatial.github.io/ontology-crs/data/ont/crs//crs/operation/Lambert_Corse">geosrs:CentralCylindricalProjection</link></td>
+<td id="_bc39f8ff-92c1-93ab-4f0c-e2d4d35e3862" valign="middle" align="left"><link target="https://opengeospatial.github.io/ontology-crs/data/ont/crs//operation/Lambert_Corse">geosrs:CentralCylindricalProjection</link></td>
 </tr></tbody>
 </table>
 </clause>
@@ -4002,7 +4002,7 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 </tr><tr id="_b260837b-8da8-4ff8-9c6e-dae9d0c07ba1"><td id="_7995a06f-8989-b345-afc2-87b621ce353f" valign="middle" align="left">Super-classes</td>
 <td id="_23fa235e-1197-4189-f4d5-4e68fe0b4d2f" valign="middle" align="left"><link target="https://w3id.org/geosrs/projection/PseudoConicalProjection">PseudoConicalProjection</link></td>
 </tr><tr id="_8d4c80b2-6733-2126-7d89-f71c3bd69e8e"><td id="_ed7f13d0-affe-9cc7-3580-5aa106e0d2b8" valign="middle" align="left">Example</td>
-<td id="_b4df611d-e4c1-1804-df52-d9f2d97ca51f" valign="middle" align="left"><link target="https://opengeospatial.github.io/ontology-crs/data/ont/crs//crs/operation/Brazil_Polyconic">geosrs:AmericanPolyconicProjection</link></td>
+<td id="_b4df611d-e4c1-1804-df52-d9f2d97ca51f" valign="middle" align="left"><link target="https://opengeospatial.github.io/ontology-crs/data/ont/crs//operation/Brazil_Polyconic">geosrs:AmericanPolyconicProjection</link></td>
 </tr></tbody>
 </table>
 </clause>
@@ -4302,7 +4302,7 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 </tr><tr id="_0b7d883e-084e-bb70-89aa-442092681f3c"><td id="_4c13a97f-b108-b9ef-05be-5b5d335c5235" valign="middle" align="left">Super-classes</td>
 <td id="_37aa5bb5-8dda-9993-131d-66ec57a34364" valign="middle" align="left"><link target="https://w3id.org/geosrs/projection/PseudoCylindricalProjection">PseudoCylindricalProjection</link></td>
 </tr><tr id="_b694b81e-30d2-5ee5-373b-cd4365189bd1"><td id="_af4296cd-c8a9-803d-0541-494998a0cb0f" valign="middle" align="left">Example</td>
-<td id="_2e4539b0-71fb-9688-d16d-acb795612716" valign="middle" align="left"><link target="https://opengeospatial.github.io/ontology-crs/data/ont/crs//crs/operation/Equal_Earth_Asia-Pacific">geosrs:EqualEarthProjection</link></td>
+<td id="_2e4539b0-71fb-9688-d16d-acb795612716" valign="middle" align="left"><link target="https://opengeospatial.github.io/ontology-crs/data/ont/crs//operation/Equal_Earth_Asia-Pacific">geosrs:EqualEarthProjection</link></td>
 </tr></tbody>
 </table>
 </clause>

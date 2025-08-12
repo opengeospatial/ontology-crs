@@ -1,0 +1,11 @@
+@prefix geosrs: <https://w3id.org/geosrs/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+geosrs:datatypeprop a owl:Ontology ;
+    rdfs:label "SRS Ontology: Geosrs_datatypeprop"@en ;
+    vann:preferredNamespacePrefix "geosrs_datatypeprop"^^xsd:string ;
+    vann:preferredNamespaceUri "https://w3id.org/geosrs/"^^xsd:anyURI .
+

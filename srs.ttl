@@ -9,19 +9,19 @@
 <geocrs:asProj4> a owl:DatatypeProperty ;
     rdfs:label "PROJ4 string"@en ;
     rdfs:domain geosrs_srs:CRS ;
-    rdfs:range geosrs:proj4Literal ;
+    rdfs:range <https://w3id.org/geosrs//proj4Literal> ;
     skos:definition "PROJ4 string defining a CRS. Note: this paradigm is ambiguous and presently considered outdated."@en .
 
 <geocrs:asProjJSON> a owl:DatatypeProperty ;
     rdfs:label "PROJ JSON definition"@en ;
     rdfs:domain geosrs_srs:CRS ;
-    rdfs:range geosrs:projJSONLiteral ;
+    rdfs:range <https://w3id.org/geosrs//projJSONLiteral> ;
     skos:definition "CRS definition encoded as a JSON object interpretable by PROJ4."@en .
 
 <geocrs:asWKT> a owl:DatatypeProperty ;
     rdfs:label "WKT definition"@en ;
     rdfs:domain geosrs_srs:CRS ;
-    rdfs:range geosrs:wktLiteral ;
+    rdfs:range <https://w3id.org/geosrs//wktLiteral> ;
     skos:definition "CRS definition encoded according to the Well Known Text structure. Cf. ISO 19162:2019. "@en .
 
 geosrs_srs:AxesList a owl:Class ;

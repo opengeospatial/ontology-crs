@@ -415,7 +415,7 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 </tr><tr id="_b0f6d801-51fb-dcb8-2587-0733136907a8"><td id="_787ee3ee-ee40-f991-8942-e11ccc9fcd52" valign="middle" align="left">Definition</td>
 <td id="_3388b8ea-32a0-5bf0-8c12-4754c0e82230" valign="middle" align="left">PROJ4 string defining a CRS. Note: this paradigm is ambiguous and presently considered outdated.</td>
 </tr><tr id="_f855c51d-4b48-d0b0-b340-8deca3987f04"><td id="_344e37a7-8e8b-f089-e96e-9cb3048302ae" valign="middle" align="left">Range</td>
-<td id="_944957c4-ae3e-987b-6904-7fe009ec27cd" valign="middle" align="left"><link target="https://w3id.org/geosrs/proj4Literal">proj4Literal</link></td>
+<td id="_944957c4-ae3e-987b-6904-7fe009ec27cd" valign="middle" align="left"><link target="https://w3id.org/geosrs//proj4Literal">proj4Literal</link></td>
 </tr><tr id="_d8892d37-def9-e56b-1971-b9826f7d9901"><td id="_abc8ca2f-c549-7e01-f1d4-a8a095ac1220" valign="middle" align="left">Domain</td>
 <td id="_faad1fde-ff26-681b-6c63-b2fd37b042ff" valign="middle" align="left"><link target="https://w3id.org/geosrs/srs/CRS">CRS</link></td>
 </tr></tbody>
@@ -433,7 +433,7 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 </tr><tr id="_d6e59fdb-bf54-58e2-2155-91f367e667e7"><td id="_bf3ed8c7-c93e-2c38-38f4-8b5f8c7bb9d3" valign="middle" align="left">Definition</td>
 <td id="_0aa597b6-ae21-3a21-5f14-34c9a4c0d393" valign="middle" align="left">CRS definition encoded as a JSON object interpretable by PROJ4.</td>
 </tr><tr id="_1b49f222-325e-1d73-bd41-a18be1d8a4af"><td id="_43a6d21f-f7fc-ac40-1390-51be896164fb" valign="middle" align="left">Range</td>
-<td id="_534e6d48-0db5-47bb-758e-c67e65dbf36c" valign="middle" align="left"><link target="https://w3id.org/geosrs/projJSONLiteral">projJSONLiteral</link></td>
+<td id="_534e6d48-0db5-47bb-758e-c67e65dbf36c" valign="middle" align="left"><link target="https://w3id.org/geosrs//projJSONLiteral">projJSONLiteral</link></td>
 </tr><tr id="_6cfd61ed-b7d8-cbef-fa93-15b75435e637"><td id="_e58e6be0-0624-c192-4e89-2c7b4da819db" valign="middle" align="left">Domain</td>
 <td id="_6424c56c-6552-08b2-f7b1-80c445af715d" valign="middle" align="left"><link target="https://w3id.org/geosrs/srs/CRS">CRS</link></td>
 </tr></tbody>
@@ -451,7 +451,7 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 </tr><tr id="_54de0a66-f2c0-a2c8-2adf-faa5dcc07624"><td id="_1bafc0e9-b50e-f684-1c13-28e9d829a895" valign="middle" align="left">Definition</td>
 <td id="_e58cb0a1-8e77-ae57-899a-2a986542c0a0" valign="middle" align="left">CRS definition encoded according to the Well Known Text structure. Cf. ISO 19162:2019.</td>
 </tr><tr id="_db89a6df-61e1-95a8-138b-81c8a105f06f"><td id="_3ebf42ce-d066-d501-1fdc-55aa0842e6e9" valign="middle" align="left">Range</td>
-<td id="_c4cd1c08-4c8b-40d2-0159-43c3c34dc698" valign="middle" align="left"><link target="https://w3id.org/geosrs/wktLiteral">wktLiteral</link></td>
+<td id="_c4cd1c08-4c8b-40d2-0159-43c3c34dc698" valign="middle" align="left"><link target="https://w3id.org/geosrs//wktLiteral">wktLiteral</link></td>
 </tr><tr id="_179b7f4a-bd96-9b09-663c-6f9268c199cf"><td id="_f98cb6f6-e881-967e-f565-1e0002914b2b" valign="middle" align="left">Domain</td>
 <td id="_439a73be-c951-f57c-9c17-0b3cc7e5ce9e" valign="middle" align="left"><link target="https://w3id.org/geosrs/srs/CRS">CRS</link></td>
 </tr></tbody>
@@ -1582,7 +1582,7 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 </clause>
 </clause>
 
-<clause id="_cb89cbd8-7043-ae14-66d7-4eee77165dd2" obligation="normative">
+<clause id="_f3ae21e1-d3cd-9c1a-a778-1c8e7786c261" obligation="normative">
 <title id="_4ab3059e-d1fe-d0e6-e6e0-fef2aded1f5e">Datum Module</title>
 <p id="_6ee5f6b9-ecce-9491-cb59-687aeb3ad204" anchor="datum">This clause establishes the <strong>Datum</strong> Requirements class, with IRI <tt>/req/datum</tt>, which has a corresponding Conformance Class, <strong>Datum</strong>, with IRI <tt>/conf/datum</tt>.</p>
 
@@ -1785,7 +1785,7 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 </clause>
 </clause>
 
-<clause id="_32cf0cf7-4d1a-46e2-0bd2-97469fb46b99" obligation="normative">
+<clause id="_cbb758a5-5460-8ec0-4594-31c96e0ca761" obligation="normative">
 <title id="_bf93b7db-acea-66ad-b6ed-943ac7afc963">Spheroid Properties</title>
 <requirement id="_67d53e2f-0f5a-5691-089b-58bf32e40f00" model="ogc" anchor="/req/Spheroid_Properties">
 <title>Spheroid Properties</title> 
@@ -1832,9 +1832,9 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 </table>
 </clause>
 
-<clause id="_818794cd-dd21-b519-a98c-b218240b6563" obligation="normative">
+<clause id="_96863b2c-2c6b-8ed6-2b1e-2a962f0a6de4" obligation="normative">
 <title id="_4c079ac5-f0b5-06d7-c929-750bd8c159ed">Property: geosrs:isSphere</title>
-<table id="_131d221e-7bba-c62f-61c7-7438ebc5d90f"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<table id="_860b555c-b82f-54e6-8ec7-fcb2adcaed10"><colgroup><col width="50%"/><col width="50%"/></colgroup>
 <name id="_82bc08cc-9dee-039c-0fc6-0b6265432da2">geosrs:isSphere</name>
 <tbody><tr id="_b6224841-8925-b1de-2aca-d61d74053f4e"><td id="_0f9cae23-c848-c940-19e4-2cf3d0942886" valign="middle" align="left">URI</td>
 <td id="_d3e430ca-a84d-e1ee-7e6e-0e101098ad17" valign="middle" align="left"><link target="https://w3id.org/geosrs/datum/isSphere"/></td>
@@ -1846,6 +1846,8 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 <td id="_2e38d826-1bc8-b4e4-9f35-32f19a190330" valign="middle" align="left"><link target="http://www.w3.org/2001/XMLSchema#boolean">xsd:boolean</link></td>
 </tr><tr id="_d2db190f-3631-e332-a47f-bc5f38ee6910"><td id="_deba7745-4207-a24f-790a-ffcc5103fe6b" valign="middle" align="left">Domain</td>
 <td id="_beeb36b1-49b1-5ca2-1517-3617c687cbaf" valign="middle" align="left"><link target="https://w3id.org/geosrs/Ellipsoid">Ellipsoid</link></td>
+</tr><tr id="_434ff6d0-d461-1ec8-1439-fa1e2ab9e5ca"><td id="_37ef6f29-9946-81b3-41dd-91caa07eb307" valign="middle" align="left">Example</td>
+<td id="_d2588e0e-f88a-f770-b5e1-ed4af60887a3" valign="middle" align="left"><link target="https://opengeospatial.github.io/ontology-crs/data/ont/crs//geod/geosrsgeod:AiryModified1849">geosrs:isSphere</link></td>
 </tr></tbody>
 </table>
 </clause>
@@ -1912,7 +1914,7 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 </clause>
 </clause>
 
-<clause id="_64143be1-d35a-0674-feb9-ab0376b11a17" obligation="normative">
+<clause id="_47aa2fd6-5c09-5d70-9f75-28275287253a" obligation="normative">
 <title id="_362ffd38-b955-6b68-f644-f06083e26a0b">SRS Application Module</title>
 <p id="_047a18b5-9d8f-6535-bf46-b142878c4ba0" anchor="srsapp">This clause establishes the <strong>SRSAPP</strong> Requirements class, with IRI <tt>/req/srsapp</tt>, which has a corresponding Conformance Class, <strong>SRSAPP</strong>, with IRI <tt>/conf/srsapp</tt>.</p>
 
@@ -1928,16 +1930,16 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 </dl></description>
 </requirement>
 
-<clause id="_741e8eea-175c-fcf0-e113-f86e66b0d82a" obligation="normative">
+<clause id="_01923058-bdda-694f-cfd3-01e101741038" obligation="normative">
 <title id="_fea63f65-26d3-c53c-0984-214e302f7301">Map Types</title>
 <requirement id="_a93a3c90-6235-e3a6-3cc9-6ed6dd8a5676" model="ogc" anchor="/req/Map_Types">
 <title>Map Types</title> 
 <identifier>/req/Map_Types</identifier><description><p id="_221dcf42-688b-cfa9-5094-a1006bcc9071">Implementations shall allow the RDFS classes <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>CadastreMap</referenceFrom></locality></localityStack><display-text>geosrs:CadastreMap</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>NauticalChart</referenceFrom></locality></localityStack><display-text>geosrs:NauticalChart</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>ThematicMap</referenceFrom></locality></localityStack><display-text>geosrs:ThematicMap</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>TopographicMap</referenceFrom></locality></localityStack><display-text>geosrs:TopographicMap</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>WeatherMap</referenceFrom></locality></localityStack><display-text>geosrs:WeatherMap</display-text></eref> to be used in SPARQL graph patterns.</p></description>
 </requirement>
 
-<clause id="_d707cb66-c61f-8fb1-f6a5-fcccb8128058" obligation="normative">
+<clause id="_e20569be-4c4a-35c4-21f3-3acbad99e3db" obligation="normative">
 <title id="_67cc9832-6ed5-db3a-75a2-ad77565b5a7c">Class: geosrs:CadastreMap</title>
-<table id="_70cb5f8d-e70f-21a0-9f65-5990858b8d1b"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<table id="_afae986b-4b0d-ddea-6883-0b6588af679c"><colgroup><col width="50%"/><col width="50%"/></colgroup>
 <name id="_75d9e717-61a0-9b2f-e619-7ced2cd8efcf">geosrs:CadastreMap</name>
 <tbody><tr id="_c45e3c32-919d-7044-348d-65ed255350b7"><td id="_132c144f-f313-35e9-a482-085b2c980c01" valign="middle" align="left">URI</td>
 <td id="_202134e6-4a1b-fa9d-d926-6eec1bd1a7eb" valign="middle" align="left"><link target="https://w3id.org/geosrs/application/CadastreMap"/></td>
@@ -1945,6 +1947,8 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 <td id="_115246e1-ec61-c6e4-081d-cdf79a35b3f2" valign="middle" align="left">A map displaying a cadastre.</td>
 </tr><tr id="_2148425f-494a-e6c1-b7b5-0841d43d96a9"><td id="_3f50f07e-7d56-f126-0b72-378320409767" valign="middle" align="left">Super-classes</td>
 <td id="_bc83ac9d-3a6c-a93f-0edd-42eac85b595c" valign="middle" align="left"><link target="https://w3id.org/geosrs/application/SRSApplication">SRSApplication</link></td>
+</tr><tr id="_cae97909-7339-727f-04a7-d19b41f67140"><td id="_91986569-556e-d4db-988c-0a2863fc7b41" valign="middle" align="left">Example</td>
+<td id="_b54779d3-8e67-3a75-5a7c-d4ad4e869ad1" valign="middle" align="left"><link target="https://opengeospatial.github.io/ontology-crs/data/ont/crs//datum/Amersfoort">geosrs:CadastreMap</link></td>
 </tr></tbody>
 </table>
 </clause>
@@ -1977,9 +1981,9 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 </table>
 </clause>
 
-<clause id="_ac579667-fe53-8a5b-d715-b421098eb47e" obligation="normative">
+<clause id="_9c8ad3c6-75a9-a109-23c3-d36f3a3a8796" obligation="normative">
 <title id="_ce10cf88-0b2a-a9bf-36d7-9d057dfcff1c">Class: geosrs:TopographicMap</title>
-<table id="_e48f3dd9-3308-954e-c4e8-2669e8810f3b"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<table id="_f64ff624-249c-d823-1ab4-41802ae2ab17"><colgroup><col width="50%"/><col width="50%"/></colgroup>
 <name id="_cff6a37e-8ecf-9bad-3fec-4e511538f73c">geosrs:TopographicMap</name>
 <tbody><tr id="_9cb5c157-7811-b311-260d-01535815c8f8"><td id="_d366a7f5-13a3-fb7b-9dea-3c1186e9f9d3" valign="middle" align="left">URI</td>
 <td id="_0c7cfa10-a8d2-8521-28b6-78a67c8188fc" valign="middle" align="left"><link target="https://w3id.org/geosrs/application/TopographicMap"/></td>
@@ -1987,6 +1991,8 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 <td id="_b8325fd5-a453-5bfa-ec6c-a8c35e824357" valign="middle" align="left">A type of map characterized by large-scale detail and quantitative representation of relief.</td>
 </tr><tr id="_41abe0f1-31c3-395d-6e4a-30cf2fbc1b92"><td id="_4efab12e-8548-9850-722a-3461f61d6b95" valign="middle" align="left">Super-classes</td>
 <td id="_2ffb45fd-60dd-610c-aad9-b47fc79a9414" valign="middle" align="left"><link target="https://w3id.org/geosrs/application/SRSApplication">SRSApplication</link></td>
+</tr><tr id="_49c8d8ed-1a24-d2a7-a176-2dc044778697"><td id="_a922fdf2-f8ce-52dc-3643-139d2e214647" valign="middle" align="left">Example</td>
+<td id="_fe50780f-7d15-bc7c-5b7c-75d48e640fe0" valign="middle" align="left"><link target="https://opengeospatial.github.io/ontology-crs/data/ont/crs//datum/Geodetic_Datum_of_1965">geosrs:TopographicMap</link></td>
 </tr></tbody>
 </table>
 </clause>
@@ -2006,7 +2012,7 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 </clause>
 </clause>
 
-<clause id="_1a48a8b4-28ea-c1e7-c9ae-8581b6a336b6" obligation="normative">
+<clause id="_ff51fd1f-0755-ed0d-7be9-2b857cfc225e" obligation="normative">
 <title id="_a2380aa5-53bb-5efc-8950-2b3e7038a7ab">SRS Application Types</title>
 <requirement id="_28866f02-67ad-230b-c5c1-c887314713e8" model="ogc" anchor="/req/SRS_Application_Types">
 <title>SRS Application Types</title> 
@@ -2037,14 +2043,16 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 </table>
 </clause>
 
-<clause id="_e5149e4a-8e41-084a-fcad-bf0e0ae9a556" obligation="normative">
+<clause id="_dab7166b-5e29-8f93-1c06-2b85575b7800" obligation="normative">
 <title id="_8d685417-169e-1644-b6e8-00e04beaac23">Class: geosrs:EngineeringSurvey</title>
-<table id="_d99feea4-8751-135f-763a-4356d1bf0280"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<table id="_baa13fd0-1e45-9320-16f2-1edf7750936a"><colgroup><col width="50%"/><col width="50%"/></colgroup>
 <name id="_26ff6019-df39-7825-547b-37b0cbae7f67">geosrs:EngineeringSurvey</name>
 <tbody><tr id="_c31a720b-740f-fa9a-9795-0abf7d61c369"><td id="_ef845b6b-daf9-60b5-92a9-2fe4a6cd41d7" valign="middle" align="left">URI</td>
 <td id="_901b0b19-d484-d553-c363-691ae5488ccd" valign="middle" align="left"><link target="https://w3id.org/geosrs/application/EngineeringSurvey"/></td>
 </tr><tr id="_588d3add-eb1c-9155-bbbb-5ab0caf9a73c"><td id="_9b59c644-650d-45b7-9cb5-7c78eaf05721" valign="middle" align="left">Super-classes</td>
 <td id="_5f60b54a-31b6-b8a7-9443-1228c46f8b05" valign="middle" align="left"><link target="https://w3id.org/geosrs/application/SRSApplication">SRSApplication</link></td>
+</tr><tr id="_d6329b8c-e714-39a7-498f-81fb5ba8b162"><td id="_78230114-e1de-38ed-eb95-7b706dbcd9cd" valign="middle" align="left">Example</td>
+<td id="_0ed843ac-e08d-03f9-33cf-1fe5aba5c75e" valign="middle" align="left"><link target="https://opengeospatial.github.io/ontology-crs/data/ont/crs//datum/Geodetic_Datum_of_1965">geosrs:EngineeringSurvey</link></td>
 </tr></tbody>
 </table>
 </clause>
@@ -2073,50 +2081,58 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 </table>
 </clause>
 
-<clause id="_2ec8a433-bbdc-6552-de3f-3ef0becbc32c" obligation="normative">
+<clause id="_275c81dc-c9fc-d3fa-e619-5f6df2e4b59a" obligation="normative">
 <title id="_f380f239-2a17-995b-9eb1-7fd0ed2dea0b">Class: geosrs:CoastalHydrography</title>
-<table id="_2c472e35-fe71-30bc-9a4d-ed05141b332a"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<table id="_3cb9c8ad-fbc8-94b6-76f7-f2b8d87ea8c0"><colgroup><col width="50%"/><col width="50%"/></colgroup>
 <name id="_5123bc21-1aea-020d-7297-15c2eab43e20">geosrs:CoastalHydrography</name>
 <tbody><tr id="_3ba8c180-b9ae-f67b-095f-6ee807e43383"><td id="_06be6e59-24b2-8714-6908-4a7862a3ab01" valign="middle" align="left">URI</td>
 <td id="_ff475a88-0112-5a99-1926-8ae30c423238" valign="middle" align="left"><link target="https://w3id.org/geosrs/application/CoastalHydrography"/></td>
 </tr><tr id="_66a056e6-d3ff-620e-2687-e62d9d64bee1"><td id="_24e958b1-4f99-8baa-63cc-167a253f1812" valign="middle" align="left">Super-classes</td>
 <td id="_d2a2f8fe-7ba2-3d50-0adb-1b9530d1d9b6" valign="middle" align="left"><link target="https://w3id.org/geosrs/application/SRSApplication">SRSApplication</link></td>
+</tr><tr id="_9f7eab29-9cec-317e-cdc5-5e9355dc90e0"><td id="_c4a9684c-7a13-0bcd-66cb-846b1cfc2431" valign="middle" align="left">Example</td>
+<td id="_df3b7c7a-a9d0-cbed-ebf4-4dcaa13b5d88" valign="middle" align="left"><link target="https://opengeospatial.github.io/ontology-crs/data/ont/crs//datum/Camacupa_1948">geosrs:CoastalHydrography</link></td>
 </tr></tbody>
 </table>
 </clause>
 
-<clause id="_3de6dc67-c5b8-56c7-7db5-dfc391f12093" obligation="normative">
+<clause id="_4e81a453-3d21-4aad-3888-2333c75ecf39" obligation="normative">
 <title id="_e63b8297-18bd-aa5c-19d0-4cfbc7ac0639">Class: geosrs:OffshoreEngineering</title>
-<table id="_e9cbf074-622e-6a62-1804-8d321aecb477"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<table id="_8e6ec861-b50c-4c4e-9f84-579ef5323026"><colgroup><col width="50%"/><col width="50%"/></colgroup>
 <name id="_d531dbda-5a91-1961-b793-1919a948636f">geosrs:OffshoreEngineering</name>
 <tbody><tr id="_ee3a9637-22e5-d82f-c93f-364ab41eee1f"><td id="_eec06d20-f045-0cf1-75f8-98ed9228a707" valign="middle" align="left">URI</td>
 <td id="_f327f3f9-fd11-d2f7-ff63-5ed8fffe4fa2" valign="middle" align="left"><link target="https://w3id.org/geosrs/application/OffshoreEngineering"/></td>
 </tr><tr id="_d2c35069-f7b9-1f94-9c78-96a316efaacd"><td id="_97af5bd7-c01e-e43f-fb4a-39d4e556e5dc" valign="middle" align="left">Super-classes</td>
 <td id="_aa140d19-8c18-c928-6595-3f3293f87c9e" valign="middle" align="left"><link target="https://w3id.org/geosrs/application/SRSApplication">SRSApplication</link></td>
+</tr><tr id="_ca532b75-2983-5fec-5d4a-bac4e0850b27"><td id="_5072cc73-2547-a5cb-918c-cbecc2555cd4" valign="middle" align="left">Example</td>
+<td id="_ecd3a92b-18a8-99cf-3ca8-e4d3f2599165" valign="middle" align="left"><link target="https://opengeospatial.github.io/ontology-crs/data/ont/crs//datum/Mean_Sea_Level_Netherlands">geosrs:OffshoreEngineering</link></td>
 </tr></tbody>
 </table>
 </clause>
 
-<clause id="_e261bec9-3d68-4db7-2928-45cdb6f8801d" obligation="normative">
+<clause id="_e89ad7cd-df91-e8c2-dbbb-f245630caa08" obligation="normative">
 <title id="_78abf6fa-ad79-ef67-5364-083217d44edd">Class: geosrs:Hydrography</title>
-<table id="_2df432d7-c4c8-1ed5-f173-765090754a8c"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<table id="_6af1ca19-522a-208d-c7b0-fbf753bf4c82"><colgroup><col width="50%"/><col width="50%"/></colgroup>
 <name id="_828c3479-798d-2c90-26fb-b2aab797063c">geosrs:Hydrography</name>
 <tbody><tr id="_b545513c-c9d1-0ad6-7292-06ce9d871623"><td id="_23273b9a-9754-1f06-6c5d-008daa57e0c5" valign="middle" align="left">URI</td>
 <td id="_64e6b69a-b8b9-2a9f-3d94-78f958481589" valign="middle" align="left"><link target="https://w3id.org/geosrs/application/Hydrography"/></td>
 </tr><tr id="_6e6e45db-91a6-d42c-8d0d-e4f537df9b8a"><td id="_616a9e26-e6ca-8a63-1a86-02f91e821039" valign="middle" align="left">Super-classes</td>
 <td id="_734a8e9a-05e4-e644-b433-b5a3409f8b41" valign="middle" align="left"><link target="https://w3id.org/geosrs/application/SRSApplication">SRSApplication</link></td>
+</tr><tr id="_a785a657-30f6-7eb5-98af-10c0219dee44"><td id="_47285f85-45fe-756d-6739-e8ba6d988df7" valign="middle" align="left">Example</td>
+<td id="_162497d5-9f94-42d6-3054-7279261267e0" valign="middle" align="left"><link target="https://opengeospatial.github.io/ontology-crs/data/ont/crs//datum/Australian_Vertical_Working_Surface">geosrs:Hydrography</link></td>
 </tr></tbody>
 </table>
 </clause>
 
-<clause id="_1ee9a4de-de5c-405b-f7a0-b64d756ad053" obligation="normative">
+<clause id="_18923cec-16f4-79b3-1fd6-47158041afbc" obligation="normative">
 <title id="_69c18008-9481-64ce-b710-2a0add80c8f1">Class: geosrs:Drilling</title>
-<table id="_bd25c9bb-e7c8-d4a8-1e8d-f7c9932f8a0d"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<table id="_064f1694-1c63-e12c-021c-64de836f4c0e"><colgroup><col width="50%"/><col width="50%"/></colgroup>
 <name id="_b1459f9d-a22f-3f0c-d553-9436bb92d1d3">geosrs:Drilling</name>
 <tbody><tr id="_aa3715ea-4ed6-7a1c-0636-12902016a087"><td id="_c304e360-81da-7a44-8e9a-78b8f875b553" valign="middle" align="left">URI</td>
 <td id="_b18c8d45-e747-7121-b562-2942980a4274" valign="middle" align="left"><link target="https://w3id.org/geosrs/application/Drilling"/></td>
 </tr><tr id="_76cfc1c4-d15a-40fe-a53c-e000cdab23b0"><td id="_8d0a73bb-83d3-9dab-a4d7-a16b637598d5" valign="middle" align="left">Super-classes</td>
 <td id="_e45b40d3-3a38-0a77-f75d-fd8c5a1e9669" valign="middle" align="left"><link target="https://w3id.org/geosrs/application/SRSApplication">SRSApplication</link></td>
+</tr><tr id="_f953135e-09ba-1c7a-cc2c-f2f8384275b7"><td id="_9bb79c1d-8e5c-9085-8493-733e3776c28b" valign="middle" align="left">Example</td>
+<td id="_327bc38e-a594-d4c4-8e3e-5fd165042dac" valign="middle" align="left"><link target="https://opengeospatial.github.io/ontology-crs/data/ont/crs//datum/Mean_Sea_Level_Netherlands">geosrs:Drilling</link></td>
 </tr></tbody>
 </table>
 </clause>
@@ -5788,11 +5804,11 @@ Foster, I., Kesselman, C.. Morgan Kaufmann, San Francisco (1999).</formattedref>
 <bibitem anchor="Czajkowski01" id="_60ff1838-3cdf-6194-2c03-ee266d197a0a"><formattedref format="application/x-isodoc+xml"><em>Grid Information Services for Distributed Resource Sharing.</em> 
 Czajkowski, K., Fitzgerald, S., Foster, I., Kesselman, C. In: 10th IEEE International Symposium on High
 Performance Distributed Computing, pp. 181–184. IEEE Press, New York (2001)</formattedref><docidentifier>Grid Information Services for Distributed Resource Sharing</docidentifier></bibitem>
-</references><references id="_98079d7a-2022-3248-eff4-431f7c46560f" normative="false" obligation="informative">
+</references><references id="_f5baabc7-f7e0-5d87-fb4c-2f79f4a7120f" normative="false" obligation="informative">
 <title id="_50ceb1e1-516f-2673-d73d-4f0c58b4d023">Bibliography</title>
 <note id="_fbd336b0-a344-3030-55c6-1975921a4963"><p id="_a4639bb5-dce4-2157-2d6a-6229500fcabe">The TC has approved Springer LNCS as the official document citation type. Springer LNCS is widely used in technical and computer science journals and other publications For citations in the text please use square brackets and consecutive numbers: [1], [2], [3] Actual References: [n] Journal: Author Surname, A.: Title. Publication Title. Volume number, Issue number, Pages Used (Year Published)</p>
-</note><bibitem id="_5d7baed6-c12a-7bcf-ab8e-c2b64a774492" type="standard" schema-version="v1.2.9" anchor="iso19142">
-  <fetched>2025-08-11</fetched>
+</note><bibitem id="_57bd88bc-00ad-38a6-54ee-feef00d549b2" type="standard" schema-version="v1.2.9" anchor="iso19142">
+  <fetched>2025-08-12</fetched>
   
 <title type="title-intro" format="text/plain" language="en" script="Latn">Geographic information</title>
 
@@ -5839,7 +5855,7 @@ Performance Distributed Computing, pp. 181–184. IEEE Press, New York (2001)</f
   </copyright>
   <relation type="instanceOf">
     <bibitem type="standard">
-      <fetched>2025-08-11</fetched>
+      <fetched>2025-08-12</fetched>
       
 <title type="title-intro" format="text/plain" language="en" script="Latn">Geographic information</title>
 

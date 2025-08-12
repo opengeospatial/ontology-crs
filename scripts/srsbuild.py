@@ -148,7 +148,10 @@ for file in os.listdir(directory):
                 if "Concept" in row and row["Concept"]!="":
                     core=False
                     if "Core Class?" in row and row["Core Class?"]=="Core Ontology":
-                        adocdef="===== Class: "+str(row["Concept"])+"\n\n."+str(row["Concept"])+"\n[cols=\"1,1\"]\n|===\n"
+                        adocdef="===== Class: "+str(row["Concept"])+"\n\n"
+                        if "Description" in row and row["Description"]!="":
+                            adocdef+=row["Description"]+"\n\n"
+                        adocdef+="."+str(row["Concept"])+"\n[cols=\"1,1\"]\n|===\n"
                         adocdef+="|Type\n|http://www.w3.org/2002/07/owl#Class[owl:Class]\n\n"
                         adocdef+="|URI\n|"+str(row["Concept"].replace(coreprefix+":",curns))+"\n\n"
                         core=True
@@ -187,11 +190,11 @@ for file in os.listdir(directory):
                             if " " in row["SuperClass"]:
                                 for spl in row["SuperClass"].split(" "):
                                     gcore.add((URIRef(row["Concept"].replace(coreprefix+":",geocrsNS)),RDFS.subClassOf,URIRef(spl.replace("geosrs:", getNSForClass(spl,classToPrefix)))))
-                                    clsuri=row["Concept"].replace(coreprefix+":",geocrsNS)
+                                    clsuri=spl.replace("geosrs:", getNSForClass(spl,classToPrefix))
                                     adocdef+=clsuri+"["+clsuri[clsuri.rfind("/")+1:]+"] "
                             else:
                                 gcore.add((URIRef(row["Concept"].replace(coreprefix+":",geocrsNS)),RDFS.subClassOf,URIRef(row["SuperClass"].replace("geosrs:", getNSForClass(row["SuperClass"],classToPrefix)))))
-                                clsuri=row["Concept"].replace("geosrs:", getNSForClass(row["Concept"],classToPrefix))
+                                clsuri=row["SuperClass"].replace("geosrs:", getNSForClass(row["SuperClass"],classToPrefix))
                                 adocdef+=clsuri+"["+clsuri[clsuri.rfind("/")+1:]+"] "
                             adocdef+="\n\n"
                         if row["Concept"] in examples:
@@ -205,7 +208,10 @@ for file in os.listdir(directory):
                         moduleToAdoc["06-core.adoc"][row["Concept"].replace(coreprefix+":",geocrsNS)]=adocdef+"|===\n\n"
                     else:
                         g.add((URIRef(row["Concept"].replace(coreprefix+":",curns)),RDF.type,OWL.Class))
-                        adocdef="===== Class: "+str(row["Concept"])+"\n\n."+str(row["Concept"])+"\n[cols=\"1,1\"]\n|===\n"
+                        adocdef="===== Class: "+str(row["Concept"])+"\n\n"
+                        if "Description" in row and row["Description"]!="":
+                            adocdef+=row["Description"]+"\n\n"
+                        adocdef+="."+str(row["Concept"])+"\n[cols=\"1,1\"]\n|===\n"
                         adocdef+="|URI\n|"+str(row["Concept"].replace(coreprefix+":",curns))+"[]\n\n"
                         prefixtoclasses[curprefix].append(row["Concept"].replace(curprefix+":",curns).replace("geosrs:","").replace("geoprojection:",""))
                         classToPrefix[row["Concept"]]={"prefix":curprefix, "ns":curns}
@@ -245,7 +251,7 @@ for file in os.listdir(directory):
                                     adocdef+=clsuri+"["+clsuri[clsuri.rfind("/")+1:]+"] "
                             else:
                                 g.add((URIRef(row["Concept"].replace(coreprefix+":",curns)),RDFS.subClassOf,URIRef(row["SuperClass"].replace("geosrs:", getNSForClass(row["SuperClass"],classToPrefix)))))
-                                clsuri=row["Concept"].replace(coreprefix+":",curns)
+                                clsuri=row["SuperClass"].replace("geosrs:", getNSForClass(row["SuperClass"],classToPrefix))
                                 adocdef+=clsuri+"["+clsuri[clsuri.rfind("/")+1:]+"] "
                             adocdef+="\n\n"
                         if row["Concept"] in examples:
@@ -296,7 +302,10 @@ for file in os.listdir(directory):
                 if "Concept" in row and row["Concept"]!="":
                     if "Core Property?" in row:
                         if row["Core Property?"]=="Core Ontology":
-                            adocdef="===== Property: "+str(row["Concept"])+"\n\n."+str(row["Concept"])+"\n[cols=\"1,1\"]\n|===\n"
+                            adocdef="===== Property: "+str(row["Concept"])+"\n\n"
+                            if "Description" in row and row["Description"]!="":
+                                adocdef+=row["Description"]+"\n\n"
+                            adocdef+="."+str(row["Concept"])+"\n[cols=\"1,1\"]\n|===\n"
                             adocdef+="|URI\n|"+str(row["Concept"].replace(coreprefix+":",curns))+"\n\n"
                             core=True
                             prefixtoproperties["geosrs"].append(row["Concept"].replace(curprefix+":",curns).replace("geosrs:","").replace("geoprojection:",""))
@@ -354,7 +363,10 @@ for file in os.listdir(directory):
                             moduleToAdoc["06-core.adoc"][row["Concept"].replace(coreprefix+":","")]=adocdef+"|===\n\n"
                         else:
                             if row["Core Property?"].lower() in exont:
-                                adocdef="===== Property: "+str(row["Concept"])+"\n\n."+str(row["Concept"])+"\n[cols=\"1,1\"]\n|===\n"
+                                adocdef="===== Property: "+str(row["Concept"])+"\n\n"
+                                if "Description" in row and row["Description"]!="":
+                                    adocdef+=row["Description"]+"\n\n"
+                                adocdef+="."+str(row["Concept"])+"\n[cols=\"1,1\"]\n|===\n"
                                 adocdef+="|URI\n|"+row["Concept"].replace(coreprefix+":",curns+str(row["Core Property?"]).lower()+"/")+"\n\n"
                                 if row["Core Property?"]!="":
                                     prefixtoproperties[row["Core Property?"]].append(row["Concept"].replace(coreprefix+":",curns+str(row["Core Property?"]).lower()+"/").replace("geosrs:","").replace("geoprojection:",""))
@@ -432,7 +444,10 @@ for file in os.listdir(directory):
                 if "Concept" in row and row["Concept"]!="":
                     if "Module" in row:
                         if row["Module"]=="Core Ontology":
-                            adocdef="===== Instance: "+str(row["Concept"])+"\n\n."+str(row["Concept"])+"\n[cols=\"1,1\"]\n|===\n"
+                            adocdef="===== Instance: "+str(row["Concept"])+"\n\n"
+                            if "Description" in row and row["Description"]!="":
+                                adocdef+=row["Description"]+"\n\n"
+                            adocdef+="."+str(row["Concept"])+"\n[cols=\"1,1\"]\n|===\n"
                             adocdef+="|URI\n|"+str(row["Concept"].replace(coreprefix+":",curns))+"\n\n"
                             core=True
                             prefixtoproperties["geosrs"].append(row["Concept"].replace(coreprefix+":",geocrsNS).replace("geoprojection:",""))
@@ -468,7 +483,10 @@ for file in os.listdir(directory):
                                     ldcontext["@context"][row["OGCJSON"]]=row["Concept"].replace("geosrs:", getPrefixForClass(row["Concept"],classToPrefix)+":")
                             moduleToAdoc["13-instances.adoc"][row["Concept"].replace(coreprefix+":","")]=adocdef+"|===\n\n"
                         else:
-                            adocdef="===== Instance: "+str(row["Concept"])+"\n\n."+str(row["Concept"])+"\n[cols=\"1,1\"]\n|===\n"
+                            adocdef="===== Instance: "+str(row["Concept"])+"\n\n"
+                            if "Description" in row and row["Description"]!="":
+                                adocdef+=row["Description"]+"\n\n"
+                            adocdef+="."+str(row["Concept"])+"\n[cols=\"1,1\"]\n|===\n"
                             adocdef+="|URI\n|"+str(row["Concept"].replace(coreprefix+":",curns))+"\n\n"
                             if row["Module"].lower() in exont:
                                 if row["Module"]!="":

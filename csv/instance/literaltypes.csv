@@ -1,0 +1,4 @@
+Concept,Type,Label,Definition,Requirement,Comment,ISO 19111,IGN 2019,Proj4RDF,GeoSPARQL,PROJJSON,OGCJSON,Module,IGN Definition,ISO Definition
+geosrs:proj4Literal,rdf:Datatype,Proj4 Literal,A literal which stores a proj4 String,SRS Literal Types,,,,,,,,SRS,,
+geosrs:projJSONLiteral,rdf:Dataype,ProJJSON Literal,A literal which stores a projection JSON (ProjJSON) String,SRS Literal Types,,,,,,,,SRS,,
+geosrs:wktLiteral,rdf:Datatype,WKT Literal,A literal which stores a WKT for CRS String,SRS Literal Types,,,,,,,,SRS,,

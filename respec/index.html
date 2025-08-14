@@ -9739,29 +9739,40 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 </div>
 </section>
 <section class="sect1">
-<h2 id="_json_ld_context">Appendix C: JSON-LD Context</h2>
+<h2 id="_application_examples">Appendix C: Application Examples</h2>
 <div class="sectionbody">
 <h3 class="discrete" id="_overview_3">Overview</h3>
-<section class="sect2">
-<h3 id="_compatibility_to_projjson">Compatibility to PROJJSON</h3>
-
-</section>
-<section class="sect2">
-<h3 id="_compatibility_to_ogcjson">Compatibility to OGCJSON</h3>
-
-</section>
-</div>
-</section>
-<section class="sect1">
-<h2 id="_application_examples">Appendix D: Application Examples</h2>
-<div class="sectionbody">
-<h3 class="discrete" id="_overview_4">Overview</h3>
 <section class="sect2">
 <h3 id="_minimum_example">Minimum Example</h3>
 
 </section>
 <section class="sect2">
 <h3 id="_elaborate_example">Elaborate Example</h3>
+
+</section>
+</div>
+</section>
+<section class="sect1">
+<h2 id="_json_ld_context">Appendix D: JSON-LD Context</h2>
+<div class="sectionbody">
+<h3 class="discrete" id="_overview_4">Overview</h3>
+<section class="sect2">
+<h3 id="_compatibility_to_projjson">Compatibility to PROJJSON</h3>
+<p class="paragraph">
+<p><a href="https://proj.org/en/stable/specifications/projjson.html">PROJSON</a> is an established format to share geospatial data which has emerge from the PROJ library and encodes the WKT encoding of coordiante references systems.
+By adding a JSON-LD context to the PROJJSON standard we achieve an immediate compatibility with an established standard simply by extending it by one simple statement.</p>
+</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code>{&#x000A;    "@context": "https://opengeospatial.github.io/ontology-crs/context/geosrs-context.json",&#x000A;    "$schema": "https://proj.org/schemas/v0.7/projjson.schema.json",&#x000A;    ...&#x000A;}</code></pre>
+</div>
+</div>
+<p class="paragraph">
+<p>We provide examples of application of this JSON-LD context with the distribution of this standard.</p>
+</p>
+</section>
+<section class="sect2">
+<h3 id="_compatibility_to_ogcjson">Compatibility to OGCJSON</h3>
 
 </section>
 </div>
@@ -9853,7 +9864,7 @@ Actual References:
 </section>
 <div id="footer">
 <div id="footer-text">
-Last updated 2025-08-14 11:20:42 UTC
+Last updated 2025-08-14 12:58:47 UTC
 </div>
 </div>
 </body>

@@ -5838,25 +5838,35 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 </clause>
 </annex><annex id="_18ae072c-c00a-3745-6afc-d7247662e03f" obligation="informative">
 <title id="_84acf16b-6635-bd57-8fba-dc327d017cc6">SHACL Shapes</title>
-<floating-title id="_007f0895-6055-0586-9ec2-6c44b1ed796c" depth="2" type="floating-title">Overview</floating-title></annex><annex id="_e4d1eb18-196d-831b-51a1-9a57fe7f6977" obligation="informative">
-<title id="_7cb2b22a-9e68-61c5-c929-f57ee83026d6">JSON-LD Context</title>
+<floating-title id="_007f0895-6055-0586-9ec2-6c44b1ed796c" depth="2" type="floating-title">Overview</floating-title></annex><annex id="_97fbbf58-5195-5c5c-9931-5cd21405e549" obligation="informative">
+<title id="_d0d58c33-1abd-e21c-d6ca-7af005a3bccd">Application Examples</title>
 <floating-title id="_2e1e93d4-a76e-4318-c6c8-bc1034df4ab7" depth="2" type="floating-title">Overview</floating-title>
-<clause id="_fa04e647-ef53-6345-780f-c590788de261" obligation="informative">
-<title id="_a9d33a8a-e155-1ab0-c754-9d1b76aac877">Compatibility to PROJJSON</title>
+<clause id="_7a99aa8b-cd06-16d7-09b3-e1a2f82ff955" obligation="informative">
+<title id="_2a977eec-f780-f41c-14eb-3a0d7fde3f2f">Minimum Example</title>
 </clause>
 
-<clause id="_4fe427d3-dd5d-1965-bcd2-4e270799f6a4" obligation="informative">
-<title id="_75fbb0cd-1fa8-d41f-c59e-1464ff6ebf78">Compatibility to OGCJSON</title>
+<clause id="_bad23b5a-4704-ba4b-3c8f-4e7827b95f73" obligation="informative">
+<title id="_6aeb9c3f-fb5c-bf65-b9dc-39696ac04269">Elaborate Example</title>
 </clause>
-</annex><annex id="_af52cd34-c107-661a-2cf8-2dbd7ba3a336" obligation="informative">
-<title id="_114f2a3a-254b-47b9-7141-24cd9a8c15a0">Application Examples</title>
+</annex><annex id="_3062d236-6f5d-b70d-fcd4-2cf12d321c49" obligation="informative">
+<title id="_9f78cf63-01e2-3b0c-9857-edbcf01e635b">JSON-LD Context</title>
 <floating-title id="_ba73eec6-8dc2-cb09-926b-80707f39c68b" depth="2" type="floating-title">Overview</floating-title>
-<clause id="_c605084b-e836-70da-a9f6-291d2d645a02" obligation="informative">
-<title id="_dbcbc5ba-9fb5-0699-bf8a-40f4bfdbf159">Minimum Example</title>
+<clause id="_483c511d-a57e-2d56-ead2-8733165181b3" obligation="informative">
+<title id="_35f1ed5a-926b-698c-5a01-b5b61a189752">Compatibility to PROJJSON</title>
+<p id="_59aa66db-bfe4-53f3-c52c-4032084f57a2"><link target="https://proj.org/en/stable/specifications/projjson.html">PROJSON</link> is an established format to share geospatial data which has emerge from the PROJ library and encodes the WKT encoding of coordiante references systems. By adding a JSON-LD context to the PROJJSON standard we achieve an immediate compatibility with an established standard simply by extending it by one simple statement.</p>
+
+<sourcecode id="_67dea084-8175-aa1d-89c3-9aa081db0e10"><body>{
+    "@context": "https://opengeospatial.github.io/ontology-crs/context/geosrs-context.json",
+    "$schema": "https://proj.org/schemas/v0.7/projjson.schema.json",
+    ...
+}</body></sourcecode>
+
+
+<p id="_d963bb4e-f4e3-80fb-a2a5-27836e98702d">We provide examples of application of this JSON-LD context with the distribution of this standard.</p>
 </clause>
 
-<clause id="_35bf66b8-5567-5a60-6946-9907fa28668e" obligation="informative">
-<title id="_fd1449b5-d582-0365-e543-5ff9f2f13e80">Elaborate Example</title>
+<clause id="_851a10cd-15d5-b24f-2de1-a527eac9517b" obligation="informative">
+<title id="_0f6a22e8-67a7-343c-7da9-b68c5b186e24">Compatibility to OGCJSON</title>
 </clause>
 </annex><annex id="_f22ab12d-f67e-c087-7cb6-62169dfea778" obligation="informative">
 <title id="_8e37f8b5-bd48-da12-758e-1483e3a043a1">Revision History</title>

@@ -26,9 +26,9 @@
                             geosrs:semiMajorAxis 6378388 ] ] ] ;
     geosrs:conversion [ rdfs:label "UTM zone 32N" ;
             geosrs:method [ rdfs:label "Transverse Mercator" ] ;
-            geosrs:operationParameter [ rdfs:label "False easting" ;
-                    om:hasUnit om:metre ;
-                    rdf:value 500000 ],
+            geosrs:operationParameter [ rdfs:label "Scale factor at natural origin" ;
+                    om:hasUnit om:unity ;
+                    rdf:value 9.996e-01 ],
                 [ rdfs:label "False northing" ;
                     om:hasUnit om:metre ;
                     rdf:value 0 ],
@@ -38,9 +38,9 @@
                 [ rdfs:label "Longitude of natural origin" ;
                     om:hasUnit om:degree ;
                     rdf:value 9 ],
-                [ rdfs:label "Scale factor at natural origin" ;
-                    om:hasUnit om:unity ;
-                    rdf:value 9.996e-01 ] ] ;
+                [ rdfs:label "False easting" ;
+                    om:hasUnit om:metre ;
+                    rdf:value 500000 ] ] ;
     geosrs:coordinateSystem [ a geosrs:CartesianCoordinateSystem ;
             geosrs:axis [ rdfs:label "Northing" ;
                     om:hasUnit om:metre ;

@@ -5848,8 +5848,10 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 <clause id="_bad23b5a-4704-ba4b-3c8f-4e7827b95f73" obligation="informative">
 <title id="_6aeb9c3f-fb5c-bf65-b9dc-39696ac04269">Elaborate Example</title>
 </clause>
-</annex><annex id="_3062d236-6f5d-b70d-fcd4-2cf12d321c49" obligation="informative">
+</annex><annex id="_b56cfecb-b77e-ce7a-7cdf-47f1da1ae971" obligation="informative">
 <title id="_9f78cf63-01e2-3b0c-9857-edbcf01e635b">JSON-LD Context</title>
+<p id="_b08d7cc8-19a0-e2bf-2886-2504f813f739">We provide JSON-LD contexts to be compatible with other JSON-based formats which provide coordinate reference system data.</p>
+
 <floating-title id="_ba73eec6-8dc2-cb09-926b-80707f39c68b" depth="2" type="floating-title">Overview</floating-title>
 <clause id="_483c511d-a57e-2d56-ead2-8733165181b3" obligation="informative">
 <title id="_35f1ed5a-926b-698c-5a01-b5b61a189752">Compatibility to PROJJSON</title>
@@ -5865,8 +5867,9 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 <p id="_d963bb4e-f4e3-80fb-a2a5-27836e98702d">We provide examples of application of this JSON-LD context with the distribution of this standard.</p>
 </clause>
 
-<clause id="_851a10cd-15d5-b24f-2de1-a527eac9517b" obligation="informative">
+<clause id="_805d2267-c9f2-69df-be8d-1f7a675a831a" obligation="informative">
 <title id="_0f6a22e8-67a7-343c-7da9-b68c5b186e24">Compatibility to OGCJSON</title>
+<p id="_39f3aea5-102e-a9d6-3fb1-410438d263cc">The OGC CRS working groups is aiming towards the creation of their own JSON format for CRS. The JSON-LD context we provide aims to be compatible with both PROJJSON and OGCJSON.</p>
 </clause>
 </annex><annex id="_f22ab12d-f67e-c087-7cb6-62169dfea778" obligation="informative">
 <title id="_8e37f8b5-bd48-da12-758e-1483e3a043a1">Revision History</title>

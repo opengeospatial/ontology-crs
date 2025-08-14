@@ -1,10 +1,30 @@
 
+
+
 [appendix,obligation=informative]
-== Application Examples
+== JSON-LD Context
 
 [discrete]
 === Overview
 
-=== Minimum Example
+=== Compatibility to PROJJSON
 
-=== Elaborate Example
+https://proj.org/en/stable/specifications/projjson.html[PROJSON] is an established format to share geospatial data which has emerge from the PROJ library and encodes the WKT encoding of coordiante references systems.
+By adding a JSON-LD context to the PROJJSON standard we achieve an immediate compatibility with an established standard simply by extending it by one simple statement.
+
+[source]
+----
+{
+    "@context": "https://opengeospatial.github.io/ontology-crs/context/geosrs-context.json",
+    "$schema": "https://proj.org/schemas/v0.7/projjson.schema.json",
+    ...
+}
+----
+
+We provide examples of application of this JSON-LD context with the distribution of this standard.
+
+=== Compatibility to OGCJSON
+
+
+
+

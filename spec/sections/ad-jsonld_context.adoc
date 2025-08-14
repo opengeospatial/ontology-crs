@@ -4,6 +4,8 @@
 [appendix,obligation=informative]
 == JSON-LD Context
 
+We provide JSON-LD contexts to be compatible with other JSON-based formats which provide coordinate reference system data.
+
 [discrete]
 === Overview
 
@@ -24,6 +26,9 @@ By adding a JSON-LD context to the PROJJSON standard we achieve an immediate com
 We provide examples of application of this JSON-LD context with the distribution of this standard.
 
 === Compatibility to OGCJSON
+
+The OGC CRS working groups is aiming towards the creation of their own JSON format for CRS.
+The JSON-LD context we provide aims to be compatible with both PROJJSON and OGCJSON.
 
 
 

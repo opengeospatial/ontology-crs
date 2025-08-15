@@ -694,7 +694,7 @@ for ad in moduleToAdoc:
 		reqs=moduleToRequirements[ad]
 		#print(reqs)
 		if len(reqs)>0:
-			rqid=str(ad)[str(ad).find("-")+1:]+.replace(".adoc","").replace("_module","")
+			rqid=str(ad)[str(ad).find("-")+1:].replace(".adoc","").replace("_module","")
 			f.write("[requirements_class,identifier=\"/req/"+str(rqid)"\",subject=\"Implementation Specification\"]\n."+str(ad)+" Extension\n\n====\n")
 			for req in moduleToRequirements[ad]:
 				f.write("requirement:: /req/"+str(rqid)+"/"+str(req).replace(" ","_")+"\n")

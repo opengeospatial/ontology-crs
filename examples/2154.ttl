@@ -22,13 +22,13 @@
             geosrs:coordinateSystem [ a geosrs:EllipsoidalCoordinateSystem ;
                     rdfs:label "Ellipsoidal 2D CS. Axes: latitude, longitude. Orientations: north, east. UoM: degreeOpen" ;
                     geosrs:axis [ a geosrs:CoordinateSystemAxis ;
-                            rdfs:label "Geodetic latitude" ;
-                            om:hasUnit om:degree ;
-                            geosrs:axisDirection geosrs_cs:north ],
-                        [ a geosrs:CoordinateSystemAxis ;
                             rdfs:label "Geodetic longitude" ;
                             om:hasUnit om:degree ;
-                            geosrs:axisDirection geosrs_cs:east ] ] ;
+                            geosrs:axisDirection geosrs_cs:east ],
+                        [ a geosrs:CoordinateSystemAxis ;
+                            rdfs:label "Geodetic latitude" ;
+                            om:hasUnit om:degree ;
+                            geosrs:axisDirection geosrs_cs:north ] ] ;
             geosrs:datum [ a geosrs:GeodeticDatum ;
                     rdfs:label "Reseau Geodesique Francais 1993 v1" ;
                     geosrs:ellipsoid [ a geosrs:Ellipsoid ;
@@ -42,41 +42,35 @@
     geosrs:coordinateSystem [ a geosrs:CartesianCoordinateSystem ;
             rdfs:label "Cartesian 2D CS. Axes: easting, northing (X,Y). Orientations: east, north. UoM: m" ;
             geosrs:axis [ a geosrs:CoordinateSystemAxis ;
-                    rdfs:label "Northing" ;
-                    om:hasUnit om:metre ;
-                    geosrs:axisDirection geosrs_cs:north ],
-                [ a geosrs:CoordinateSystemAxis ;
                     rdfs:label "Easting" ;
                     om:hasUnit om:metre ;
-                    geosrs:axisDirection geosrs_cs:east ] ] ;
+                    geosrs:axisDirection geosrs_cs:east ],
+                [ a geosrs:CoordinateSystemAxis ;
+                    rdfs:label "Northing" ;
+                    om:hasUnit om:metre ;
+                    geosrs:axisDirection geosrs_cs:north ] ] ;
     geosrs:derivingConversion [ a geosrs:Conversion ;
             rdfs:label "Lambert-93" ;
             geosrs:method [ a geosrs:OperationMethod ;
                     rdfs:label "Lambert Conic Conformal (2SP)" ] ;
             geosrs:parameter [ a geosrs:OperationParameterValue ;
-                    geosrs:parameter [ rdf:value [ om:hasUnit om:degree ;
-                                    rdf:value 3 ] ],
-                        [ a geosrs:OperationParameter ;
-                            rdfs:label "Longitude of false origin" ;
-                            dc:identifier "EPSG:8822" ] ],
+                    geosrs:parameter [ a geosrs:OperationParameter ;
+                            rdfs:label "Latitude of false origin" ;
+                            dc:identifier "EPSG:8821" ],
+                        [ rdf:value [ om:hasUnit om:degree ;
+                                    rdf:value 4.65e+01 ] ] ],
                 [ a geosrs:OperationParameterValue ;
                     geosrs:parameter [ a geosrs:OperationParameter ;
-                            rdfs:label "Latitude of 2nd standard parallel" ;
-                            dc:identifier "EPSG:8824" ],
+                            rdfs:label "Longitude of false origin" ;
+                            dc:identifier "EPSG:8822" ],
                         [ rdf:value [ om:hasUnit om:degree ;
-                                    rdf:value 44 ] ] ],
+                                    rdf:value 3 ] ] ],
                 [ a geosrs:OperationParameterValue ;
-                    geosrs:parameter [ rdf:value [ om:hasUnit om:metre ;
-                                    rdf:value 700000 ] ],
-                        [ a geosrs:OperationParameter ;
-                            rdfs:label "Easting at false origin" ;
-                            dc:identifier "EPSG:8826" ] ],
-                [ a geosrs:OperationParameterValue ;
-                    geosrs:parameter [ rdf:value [ om:hasUnit om:degree ;
-                                    rdf:value 4.65e+01 ] ],
-                        [ a geosrs:OperationParameter ;
-                            rdfs:label "Latitude of false origin" ;
-                            dc:identifier "EPSG:8821" ] ],
+                    geosrs:parameter [ a geosrs:OperationParameter ;
+                            rdfs:label "Latitude of 1st standard parallel" ;
+                            dc:identifier "EPSG:8823" ],
+                        [ rdf:value [ om:hasUnit om:degree ;
+                                    rdf:value 49 ] ] ],
                 [ a geosrs:OperationParameterValue ;
                     geosrs:parameter [ a geosrs:OperationParameter ;
                             rdfs:label "Northing at false origin" ;
@@ -84,11 +78,17 @@
                         [ rdf:value [ om:hasUnit om:metre ;
                                     rdf:value 6600000 ] ] ],
                 [ a geosrs:OperationParameterValue ;
+                    geosrs:parameter [ rdf:value [ om:hasUnit om:metre ;
+                                    rdf:value 700000 ] ],
+                        [ a geosrs:OperationParameter ;
+                            rdfs:label "Easting at false origin" ;
+                            dc:identifier "EPSG:8826" ] ],
+                [ a geosrs:OperationParameterValue ;
                     geosrs:parameter [ a geosrs:OperationParameter ;
-                            rdfs:label "Latitude of 1st standard parallel" ;
-                            dc:identifier "EPSG:8823" ],
+                            rdfs:label "Latitude of 2nd standard parallel" ;
+                            dc:identifier "EPSG:8824" ],
                         [ rdf:value [ om:hasUnit om:degree ;
-                                    rdf:value 49 ] ] ] ] ;
+                                    rdf:value 44 ] ] ] ] ;
     geosrs:domainOfValidity [ a geosrs_srs:AreaOfUse ;
             skos:scopeNote "Engineering survey, topographic mapping." ;
             geosrs:domainOfValidity [ geo:hasBoundingBox [ a geosrs:GeographicBoundingBox ] ] ] .

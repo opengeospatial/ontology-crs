@@ -5576,13 +5576,15 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 
 
 
-</sections><annex id="_c8330d96-7af6-2598-f72c-60fa1f3f45d4" obligation="normative">
+</sections><annex id="_3938ce2b-5e94-e536-f3ae-9f949af73093" obligation="normative">
 <title id="_470614e0-369e-cd47-ac8c-e0c157b1a785">Abstract Test Suite</title>
 <floating-title id="_6c4825b5-5b33-43be-8438-e76319911fee" depth="2" type="floating-title">A.0. Overview</floating-title>
-<p id="_9b50ea30-51c1-09e4-2492-039aaaa61290">This Annex lists tests for the Conformance Classes defined in the main body sections of this Specification with links to their Requirements and test purpose method and type. Conformance classes may be used to signify the compatibility of a given implementation to parts of the CRS Ontology standard. They may be stated as part of a SPARQL 1.1 Service Description  <xref target="SPARQLSERVDESC"/> .</p>
+<p id="_16daab4f-cb08-5779-b859-00ddd97ce3a2">This Annex lists tests for the Conformance Classes defined in the main body sections of this Specification with links to their Requirements and test purpose method and type. Conformance classes may be used to signify the compatibility of a given implementation to parts of the CRS Ontology standard. They may be stated as part of a SPARQL 1.1 Service Description  <xref target="SPARQLSERVDESC"/> .</p>
 
-<clause id="_c41c6998-e948-5053-1462-192bf737c2c2" obligation="normative">
-<title id="_463f25b2-5388-a615-eb27-c2f1187c143b">Conformance Class: Core.adoc</title>
+<p id="_c2efafba-b42c-e51a-9416-363cf14b6cb3"><eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>CoordinateSystem</referenceFrom></locality></localityStack><display-text>geosrs:CoordinateSystem</display-text></eref></p>
+
+<clause id="_5c282ef2-c660-78ea-8d2a-aec798ec8e0c" obligation="normative">
+<title id="_0c4d7a8f-310f-150f-2910-890355e0075f">Conformance Class: Core</title>
 <requirement id="_9e6a3e37-58d4-3ed1-d97b-33e5708818c4" model="ogc" type="conformanceclass" anchor="/conf/06-core.adoc">
 <title>06-core.adoc</title>
 <identifier>/conf/06-core.adoc</identifier><classification><tag>target</tag><value>/req/06-core.adoc</value></classification><requirement id="_86b4e55a-97b9-c5c5-14f1-ff412f561618" model="ogc" type="abstracttest"> <identifier>/conf/core/Coordinate_Reference_System_Parameters</identifier></requirement><requirement id="_2bcdd3b6-1238-4259-898a-df4d457b1bf1" model="ogc" type="abstracttest"> <identifier>/conf/core/Coordinate_Reference_System_Types</identifier></requirement><requirement id="_eb422834-f5d5-fd76-7924-57f735753f7b" model="ogc" type="abstracttest"> <identifier>/conf/core/Coordinate_Reference_System_Properties</identifier></requirement>
@@ -5619,8 +5621,8 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 </clause>
 </clause>
 
-<clause id="_3209c43c-a869-7f61-3cd7-abb121c0372a" obligation="normative">
-<title id="_90459ea6-d56c-6f48-65a8-df72d467bd74">Conformance Class: Co_module.adoc</title>
+<clause id="_cfcfa3d5-67e2-9a60-9740-9cd1759f1eb8" obligation="normative">
+<title id="_6006bbd9-3ca7-814d-91ca-9d8db08e8532">Conformance Class: Co</title>
 <requirement id="_f8d29870-e20f-c1f4-eb6c-34b75ca8a246" model="ogc" type="conformanceclass" anchor="/conf/07-co_module.adoc">
 <title>07-co_module.adoc</title>
 <identifier>/conf/07-co_module.adoc</identifier><classification><tag>target</tag><value>/req/07-co_module.adoc</value></classification><requirement id="_8ccb9ab8-025f-f539-dece-b88af5dcd886" model="ogc" type="abstracttest"> <identifier>/conf/core/Coordinate_Operation_Methods</identifier></requirement><requirement id="_7575e1ce-d684-42ff-7a84-9a1e2098c9e8" model="ogc" type="abstracttest"> <identifier>/conf/core/Coordinate_Operation_Parameters</identifier></requirement><requirement id="_3ff5960c-35e4-d649-d2d1-3a5da6594d84" model="ogc" type="abstracttest"> <identifier>/conf/core/Coordinate_Operation_Categories</identifier></requirement><requirement id="_b0115b7e-7558-c5f5-e0ef-c3a4991fc744" model="ogc" type="abstracttest"> <identifier>/conf/core/Coordinate_Operation_Properties</identifier></requirement>
@@ -5667,8 +5669,8 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 </clause>
 </clause>
 
-<clause id="_33c5ca6c-9735-104c-def2-bd6df9aab97c" obligation="normative">
-<title id="_730bba00-911f-1f41-5b82-df9b05cd0b69">Conformance Class: Cs_module.adoc</title>
+<clause id="_925ec5a9-3010-a089-f00e-5e4bae06be49" obligation="normative">
+<title id="_e850e8b9-6613-1ff8-e652-bad27a106987">Conformance Class: Cs</title>
 <requirement id="_d0d071c3-cc81-d55d-c25d-119305dba49d" model="ogc" type="conformanceclass" anchor="/conf/08-cs_module.adoc">
 <title>08-cs_module.adoc</title>
 <identifier>/conf/08-cs_module.adoc</identifier><classification><tag>target</tag><value>/req/08-cs_module.adoc</value></classification><requirement id="_3986fc39-c803-321a-2fcc-5a77ef62034b" model="ogc" type="abstracttest"> <identifier>/conf/core/Temporal_Coordinate_Systems</identifier></requirement><requirement id="_fe9b3359-9ed8-3c67-d9d5-dcad9c79ada8" model="ogc" type="abstracttest"> <identifier>/conf/core/3D_Coordinate_Systems</identifier></requirement><requirement id="_71651c4d-e970-6d6c-aaab-f58f55de25ce" model="ogc" type="abstracttest"> <identifier>/conf/core/Coordinate_System_Types</identifier></requirement><requirement id="_8e76d657-c383-8af7-d7c6-afc8c6aa10b0" model="ogc" type="abstracttest"> <identifier>/conf/core/Celestial_Coordinate_Systems</identifier></requirement><requirement id="_17b5dd30-68e1-c63c-9d41-c492273bb31f" model="ogc" type="abstracttest"> <identifier>/conf/core/Coordinate_System_Components</identifier></requirement><requirement id="_91c33958-12f9-c5ca-e3f2-dfb58e3ed62a" model="ogc" type="abstracttest"> <identifier>/conf/core/Coordinate_System_Properties</identifier></requirement>
@@ -5735,8 +5737,8 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 </clause>
 </clause>
 
-<clause id="_3d5d2185-7515-65ec-8e5a-a41c4c015ac4" obligation="normative">
-<title id="_cfef8cda-ff84-5bef-6acf-79938b019aa0">Conformance Class: Datum_module.adoc</title>
+<clause id="_1c3e2219-ff28-7e7f-54c2-01ff7707b64c" obligation="normative">
+<title id="_1f92bcb5-40dc-622c-3026-cb24313ccb48">Conformance Class: Datum</title>
 <requirement id="_5df734a8-a168-3e3f-f83a-70e085c89894" model="ogc" type="conformanceclass" anchor="/conf/09-datum_module.adoc">
 <title>09-datum_module.adoc</title>
 <identifier>/conf/09-datum_module.adoc</identifier><classification><tag>target</tag><value>/req/09-datum_module.adoc</value></classification><requirement id="_69faf0f4-fc05-82c6-e780-216fe8df4062" model="ogc" type="abstracttest"> <identifier>/conf/core/Datum_Types</identifier></requirement><requirement id="_0a6d50fe-721e-5c08-c671-79159cb3ce96" model="ogc" type="abstracttest"> <identifier>/conf/core/Datum_Parameters</identifier></requirement><requirement id="_a227125e-7ba8-1380-d356-0172ea719778" model="ogc" type="abstracttest"> <identifier>/conf/core/Spheroid_Types</identifier></requirement><requirement id="_31f34a48-c0dc-3e46-ad4d-e7e2ef8833ae" model="ogc" type="abstracttest"> <identifier>/conf/core/Datum_Properties</identifier></requirement><requirement id="_7746ba52-e915-6b21-dea8-6528590ad42f" model="ogc" type="abstracttest"> <identifier>/conf/core/Spheroid_Properties</identifier></requirement>
@@ -5793,8 +5795,8 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 </clause>
 </clause>
 
-<clause id="_e452c421-c9b6-3406-9595-cef87b9b82a0" obligation="normative">
-<title id="_fe9a208c-10ff-0fdd-c33a-3d50f8740a63">Conformance Class: Srsapplication_module.adoc</title>
+<clause id="_a70c3053-5e4c-3fa0-bf7b-db6f3e4febb3" obligation="normative">
+<title id="_a9f35038-0ab7-0727-522c-20e45a81166b">Conformance Class: Srsapplication</title>
 <requirement id="_85e6dc64-2c2d-6405-1ac4-ab0bdee8d10d" model="ogc" type="conformanceclass" anchor="/conf/10-srsapplication_module.adoc">
 <title>10-srsapplication_module.adoc</title>
 <identifier>/conf/10-srsapplication_module.adoc</identifier><classification><tag>target</tag><value>/req/10-srsapplication_module.adoc</value></classification><requirement id="_007d8cb3-4af9-7f92-ec99-038c76d22d4b" model="ogc" type="abstracttest"> <identifier>/conf/core/SRS_Application_Types</identifier></requirement><requirement id="_7f78b4b6-c993-34cd-3120-5c0e0761cc79" model="ogc" type="abstracttest"> <identifier>/conf/core/Map_Types</identifier></requirement>
@@ -5821,8 +5823,8 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 </clause>
 </clause>
 
-<clause id="_cd97c4a0-80bb-cd6f-ca35-1e69ed337708" obligation="normative">
-<title id="_5406f09c-14eb-ed55-d234-521cc72f587a">Conformance Class: Projections_module.adoc</title>
+<clause id="_f8e134f9-4ade-fe51-5727-01edbf73e7d3" obligation="normative">
+<title id="_78211eca-fe2f-a078-cc67-141ea5977258">Conformance Class: Projections</title>
 <requirement id="_f14cc0b0-c991-61fa-d195-02af338ddbe4" model="ogc" type="conformanceclass" anchor="/conf/11-projections_module.adoc">
 <title>11-projections_module.adoc</title>
 <identifier>/conf/11-projections_module.adoc</identifier><classification><tag>target</tag><value>/req/11-projections_module.adoc</value></classification><requirement id="_ed27a384-187a-601a-e39b-c4da0c62e738" model="ogc" type="abstracttest"> <identifier>/conf/core/Lenticular_Projections</identifier></requirement><requirement id="_ed809014-9c14-a8ea-a187-c8dad6aabab3" model="ogc" type="abstracttest"> <identifier>/conf/core/Conformal_Projections</identifier></requirement><requirement id="_7a4f304a-7ad6-7e5f-9b25-d344cb53f5f7" model="ogc" type="abstracttest"> <identifier>/conf/core/Minimum_Error_Projections</identifier></requirement><requirement id="_914ea770-07ba-5283-5d40-189e4eaa2f2d" model="ogc" type="abstracttest"> <identifier>/conf/core/Pseudo_Azimuthal_Projections</identifier></requirement><requirement id="_fa2f8e63-049f-a75d-ebfb-8a9ade4daa58" model="ogc" type="abstracttest"> <identifier>/conf/core/Equal_Area_Projections</identifier></requirement><requirement id="_3238452a-1a02-ddb3-7e22-193cc8805368" model="ogc" type="abstracttest"> <identifier>/conf/core/Pseudo_Conical_Projections</identifier></requirement><requirement id="_f7dcc666-a1e4-9071-03a0-c4fe64593604" model="ogc" type="abstracttest"> <identifier>/conf/core/Globular_Projections</identifier></requirement><requirement id="_cbc0adf1-ef69-b05f-85d3-9673fed43e9e" model="ogc" type="abstracttest"> <identifier>/conf/core/Pseudo_Cylindrical_Projections</identifier></requirement><requirement id="_ae7a0559-5def-278c-f528-7cd3206d996f" model="ogc" type="abstracttest"> <identifier>/conf/core/Cylindrical_Projections</identifier></requirement><requirement id="_25efa02d-917c-9cad-534a-254822795c4a" model="ogc" type="abstracttest"> <identifier>/conf/core/Compromise_Projections</identifier></requirement><requirement id="_519576be-8369-298b-006e-e57385378751" model="ogc" type="abstracttest"> <identifier>/conf/core/Polyhedral_Projections</identifier></requirement><requirement id="_012dfa30-78df-8632-0d20-de5b9dbb9b5a" model="ogc" type="abstracttest"> <identifier>/conf/core/Equidistant_Projections</identifier></requirement><requirement id="_740940eb-ad39-906c-4557-66f2b4d22b0d" model="ogc" type="abstracttest"> <identifier>/conf/core/Conical_Projections</identifier></requirement><requirement id="_2d8c894f-93a1-dcc4-28d4-e2d92cc29402" model="ogc" type="abstracttest"> <identifier>/conf/core/Azimuthal_Projections</identifier></requirement><requirement id="_6de3f144-6815-d40f-5c15-de20c9c24201" model="ogc" type="abstracttest"> <identifier>/conf/core/Perspective_Projections</identifier></requirement><requirement id="_3bb73069-3e44-f702-3f95-543fd5595aab" model="ogc" type="abstracttest"> <identifier>/conf/core/Polyconic_Projections</identifier></requirement><requirement id="_2967cca4-5726-99d6-5180-bab2f732c75f" model="ogc" type="abstracttest"> <identifier>/conf/core/Stereographic_Projections</identifier></requirement>
@@ -5999,8 +6001,8 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 </clause>
 </clause>
 
-<clause id="_72febe8b-c95a-7b57-6ad2-c11632902185" obligation="normative">
-<title id="_29d79705-fb79-ac8c-a99b-b54cf19ad626">Conformance Class: Planet_module.adoc</title>
+<clause id="_a7a477a2-48de-d6e0-e813-d495712d7907" obligation="normative">
+<title id="_49a27591-880a-65a8-a568-ef56075e8e4d">Conformance Class: Planet</title>
 <requirement id="_d579861c-babf-7247-8e0e-0babd746bdce" model="ogc" type="conformanceclass" anchor="/conf/12-planet_module.adoc">
 <title>12-planet_module.adoc</title>
 <identifier>/conf/12-planet_module.adoc</identifier><classification><tag>target</tag><value>/req/12-planet_module.adoc</value></classification><requirement id="_4609508f-06ff-9291-65df-e9f6e5138289" model="ogc" type="abstracttest"> <identifier>/conf/core/Interstellar_Body</identifier></requirement>
@@ -6017,8 +6019,8 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 </clause>
 </clause>
 
-<clause id="_ea670b74-5154-b3f8-3a06-3029642834a1" obligation="normative">
-<title id="_a9da74be-8b54-cf22-5590-2bbd9c8ffbd7">Conformance Class: Instances.adoc</title>
+<clause id="_0ed39149-541e-dc51-5df2-2bebf48d164b" obligation="normative">
+<title id="_686f91a2-4643-947b-6af8-f404b9917614">Conformance Class: Instances</title>
 <requirement id="_93358465-9cfb-bf7b-b718-fefc96f8c410" model="ogc" type="conformanceclass" anchor="/conf/13-instances.adoc">
 <title>13-instances.adoc</title>
 <identifier>/conf/13-instances.adoc</identifier><classification><tag>target</tag><value>/req/13-instances.adoc</value></classification><requirement id="_da3237c0-2ffc-e4b7-f364-10557882a7ad" model="ogc" type="abstracttest"> <identifier>/conf/core/SRS_Literal_Types</identifier></requirement><requirement id="_b69b9eab-5916-bca5-02aa-fa0e3941a8d0" model="ogc" type="abstracttest"> <identifier>/conf/core/Coordinate_System_Axis</identifier></requirement><requirement id="_d00ba15b-448b-58da-bcf5-094e2969b6d4" model="ogc" type="abstracttest"> <identifier>/conf/core/Spheroids</identifier></requirement>

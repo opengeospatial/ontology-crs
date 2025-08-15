@@ -591,7 +591,15 @@ with open("spec/sections/aa-abstract_test_suite.adoc", 'r',encoding="utf-8") as 
     atestsuitedoc=f.read()
 
 for mod in moduleToRequirements:
+    atestsuitedoc+="=== Conformance Class: "+str(mod)+"\n\n"
+    atestsuitedoc+="[conformance_class,identifier=/conf/"+str(mod)+"]\n"
+    atestsuitedoc+="."+str(mod)+"\n\n====\n\n[%metadata]\n\n"
+    atestsuitedoc+="target:: /req/"+mod+"\n\n"
     for req in moduleToRequirements[mod]:
+        atestsuitedoc+="abstract-test:: /conf/core/"+str(req).replace(" ","_")+"\n\n"
+    atestsuitedoc+="====\n\n"
+    for req in moduleToRequirements[mod]:
+        atestsuitedoc+="==== "+str(req)+"\n\n"
         atestsuitedoc+=ctesttemplate
             .replace("{{entities}}",str(moduleToRequirements[mod][req]))
             .replace("{{target}}","/req/"+str(mod)+"/"+req.replace(" ","_"))

@@ -591,7 +591,7 @@ with open("spec/sections/aa-abstract_test_suite.adoc", 'r',encoding="utf-8") as 
     atestsuitedoc=f.read()
 
 for mod in moduleToRequirements:
-    atestsuitedoc+="=== Conformance Class: "+str(mod)+"\n\n"
+    atestsuitedoc+="=== Conformance Class: "+str(mod.replace(".doc")[mod.rfind("-")+1:]).capitalize()+"\n\n"
     atestsuitedoc+="[conformance_class,identifier=/conf/"+str(mod)+"]\n"
     atestsuitedoc+="."+str(mod)+"\n\n====\n\n[%metadata]\n\n"
     atestsuitedoc+="target:: /req/"+mod+"\n\n"
@@ -668,7 +668,7 @@ for ad in moduleToAdoc:
 		reqs=moduleToRequirements[ad]
 		#print(reqs)
 		if len(reqs)>0:
-			f.write("[requirements_class,identifier=\"/req/"+str(ad)+"\",subject=\"Implementation Specification\"]\n."+str(ad)+" Extension\n\n====\n")
+			f.write("[requirements_class,identifier=\"/req/"+str(ad).replace(".adoc","")[str(ad).find("-")+1:]+"\",subject=\"Implementation Specification\"]\n."+str(ad)+" Extension\n\n====\n")
 			for req in moduleToRequirements[ad]:
 				f.write("requirement:: /req/"+str(req).replace(" ","_")+"\n")
 			f.write("====\n")

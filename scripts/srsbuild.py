@@ -35,6 +35,19 @@ ldcontext={"@context":{"rdfs":"http://www.w3.org/2000/01/rdf-schema#","rdf":"htt
             }
 }
 
+
+ctesttemplate="""
+[abstract_test,identifier="{{testid}}",conformance-class="{{confclass}}"]
+====
+[%metadata]
+target:: {{target}}
+test-purpose:: Check conformance with this requirement
+test-method:: Verify that queries involving {{entities}} return the correct result on a test dataset.
+test-method-type:: Capabilities
+reference:: {{entities}}
+====
+"""
+
 with open('examples.json', 'r') as file:
     examples = json.load(file)
 

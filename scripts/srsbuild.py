@@ -603,27 +603,28 @@ with open("spec/sections/aa-abstract_test_suite.adoc", 'r',encoding="utf-8") as 
     atestsuitedoc=f.read()
 
 for mod in moduleToRequirements:
-    requirementsttl.add((URIRef(reqns+mod),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef("http://www.opengis.net/def/spec-element/ConformanceClass")))
-    requirementsttl.add((URIRef(reqns+mod),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef("http://www.w3.org/2004/02/skos/core#Collection")))
+    rqid=str(mod)[str(mod).find("-")+1:]+.replace(".adoc","").replace("_module","")
+    requirementsttl.add((URIRef(reqns+str(rqid)),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef("http://www.opengis.net/def/spec-element/ConformanceClass")))
+    requirementsttl.add((URIRef(reqns+str(rqid)),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef("http://www.w3.org/2004/02/skos/core#Collection")))
     atestsuitedoc+="=== Conformance Class: "+str(mod[mod.rfind("-")+1:].replace(".adoc","").replace("_module","")).capitalize()+"\n\n"
-    atestsuitedoc+="[conformance_class,identifier=/conf/"+str(mod)+"]\n"
+    atestsuitedoc+="[conformance_class,identifier=/conf/"+str(rqid)+"]\n"
     atestsuitedoc+="."+str(mod)+"\n\n====\n\n[%metadata]\n\n"
-    atestsuitedoc+="target:: /req/"+mod+"\n\n"
+    atestsuitedoc+="target:: /req/"+str(rqid)+"\n\n"
     for req in moduleToRequirements[mod]:
-        atestsuitedoc+="abstract-test:: /conf/"+str(mod)+"/"+str(req).replace(" ","_")+"\n\n"
+        atestsuitedoc+="abstract-test:: /conf/"+str(rqid)+"/"+str(req).replace(" ","_")+"\n\n"
         requirementsttl.add((URIRef(reqns+mod),URIRef("http://www.w3.org/2004/02/skos/member"),URIRef(reqns+"/conf/"+str(mod)+"/"+str(req).replace(" ","_"))))
     atestsuitedoc+="====\n\n"
     for req in moduleToRequirements[mod]:
         atestsuitedoc+="==== "+str(req)+"\n\n"
-        requirementsttl.add((URIRef(reqns+"/req/"+str(mod)+"/"+str(req).replace(" ","_")),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef("http://www.opengis.net/def/spec-element/Requirement")))
-        requirementsttl.add((URIRef(reqns+"/req/"+str(mod)+"/"+str(req).replace(" ","_")),URIRef("http://www.w3.org/2004/02/skos/prefLabel"),Literal(str(req))))
-        requirementsttl.add((URIRef(reqns+"/conf/"+str(mod)+"/"+str(req).replace(" ","_")),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef("http://www.opengis.net/def/spec-element/ConformanceTest")))
-        requirementsttl.add((URIRef(reqns+"/conf/"+str(mod)+"/"+str(req).replace(" ","_")),URIRef("http://www.opengis.net/def/spec-element/testType"),URIRef("http://www.opengis.net/def/spec-element/Capabilities")))
-        requirementsttl.add((URIRef(reqns+"/conf/"+str(mod)+"/"+str(req).replace(" ","_")),URIRef("http://www.w3.org/2000/01/rdf-schema#seeAlso"),URIRef(reqns+"/req/"+str(mod)+"/"+str(req).replace(" ","_"))))
-        requirementsttl.add((URIRef(reqns+"/conf/"+str(mod)+"/"+str(req).replace(" ","_")),URIRef("http://www.w3.org/2004/02/skos/prefLabel"),Literal(str(req))))
-        requirementsttl.add((URIRef(reqns+"/conf/"+str(mod)+"/"+str(req).replace(" ","_")),URIRef("http://www.w3.org/2004/02/skos/definition"),Literal("check conformance with this requirement")))
-        requirementsttl.add((URIRef(reqns+"/conf/"+str(mod)+"/"+str(req).replace(" ","_")),URIRef("http://www.w3.org/2004/02/skos/prefLabel"),Literal(str(req))))
-        atestsuitedoc+=ctesttemplate.replace("{{entities}}",formatListAsLinks(moduleToRequirements[mod][req],"Propert" not in mod)).replace("{{target}}","/req/"+str(mod)+"/"+req.replace(" ","_")).replace("{{testid}}","/conf/"+str(mod)+"/"+req.replace(" ","_")).replace("{{confclass}}","/conf/"+str(mod))+"\n\n"
+        requirementsttl.add((URIRef(reqns+"/req/"+str(rqid)+"/"+str(req).replace(" ","_")),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef("http://www.opengis.net/def/spec-element/Requirement")))
+        requirementsttl.add((URIRef(reqns+"/req/"+str(rqid)+"/"+str(req).replace(" ","_")),URIRef("http://www.w3.org/2004/02/skos/prefLabel"),Literal(str(req))))
+        requirementsttl.add((URIRef(reqns+"/conf/"+str(rqid)+"/"+str(req).replace(" ","_")),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef("http://www.opengis.net/def/spec-element/ConformanceTest")))
+        requirementsttl.add((URIRef(reqns+"/conf/"+str(rqid)+"/"+str(req).replace(" ","_")),URIRef("http://www.opengis.net/def/spec-element/testType"),URIRef("http://www.opengis.net/def/spec-element/Capabilities")))
+        requirementsttl.add((URIRef(reqns+"/conf/"+str(rqid)+"/"+str(req).replace(" ","_")),URIRef("http://www.w3.org/2000/01/rdf-schema#seeAlso"),URIRef(reqns+"/req/"+str(rqid)+"/"+str(req).replace(" ","_"))))
+        requirementsttl.add((URIRef(reqns+"/conf/"+str(rqid)+"/"+str(req).replace(" ","_")),URIRef("http://www.w3.org/2004/02/skos/prefLabel"),Literal(str(req))))
+        requirementsttl.add((URIRef(reqns+"/conf/"+str(rqid)+"/"+str(req).replace(" ","_")),URIRef("http://www.w3.org/2004/02/skos/definition"),Literal("check conformance with this requirement")))
+        requirementsttl.add((URIRef(reqns+"/conf/"+str(rqid)+"/"+str(req).replace(" ","_")),URIRef("http://www.w3.org/2004/02/skos/prefLabel"),Literal(str(req))))
+        atestsuitedoc+=ctesttemplate.replace("{{entities}}",formatListAsLinks(moduleToRequirements[mod][req],"Propert" not in mod)).replace("{{target}}","/req/"+str(rqid)+"/"+req.replace(" ","_")).replace("{{testid}}","/conf/"+str(rqid)+"/"+req.replace(" ","_")).replace("{{confclass}}","/conf/"+str(rqid))+"\n\n"
 
 with open("spec/sections/aa-abstract_test_suite.adoc", 'w',encoding="utf-8") as f:
     f.write(atestsuitedoc)
@@ -693,9 +694,10 @@ for ad in moduleToAdoc:
 		reqs=moduleToRequirements[ad]
 		#print(reqs)
 		if len(reqs)>0:
-			f.write("[requirements_class,identifier=\"/req/"+str(ad).replace(".adoc","")[str(ad).find("-")+1:]+"\",subject=\"Implementation Specification\"]\n."+str(ad)+" Extension\n\n====\n")
+            rqid=str(ad)[str(ad).find("-")+1:]+.replace(".adoc","").replace("_module","")
+			f.write("[requirements_class,identifier=\"/req/"+str(rqid)"\",subject=\"Implementation Specification\"]\n."+str(ad)+" Extension\n\n====\n")
 			for req in moduleToRequirements[ad]:
-				f.write("requirement:: /req/"+str(ad).replace(".adoc","")[str(ad).find("-")+1:]+"/"+str(req).replace(" ","_")+"\n")
+				f.write("requirement:: /req/"+str(rqid)+"/"+str(req).replace(" ","_")+"\n")
 			f.write("====\n")
 			for req in sorted(moduleToRequirements[ad].keys()):
 				if "Property" in req or "Properties" in req:
@@ -720,7 +722,7 @@ for ad in moduleToAdoc:
 				if len(moduleToRequirements[ad][req])>0:
 					reqtext=reqtext.replace(", <<"+str(last), " and <<"+str(last))
 				reqtext+=" to be used in SPARQL graph patterns."
-				f.write("==== "+str(req)+"\n\n[requirement,identifier=\"/req/"+str(ad).replace(".adoc","")[str(ad).find("-")+1:]+"/"+str(req).replace(" ","_")+"\"]\n\n."+str(req)+"\n====\n"+str(reqtext)+"\n====\n\n")
+				f.write("==== "+str(req)+"\n\n[requirement,identifier=\"/req/"+str(rqid)+"/"+str(req).replace(" ","_")+"\"]\n\n."+str(req)+"\n====\n"+str(reqtext)+"\n====\n\n")
 				print(str(ad)+" - "+str(req))
 				print(moduleToRequirements[ad][req])
 				if req in reqToDesc:

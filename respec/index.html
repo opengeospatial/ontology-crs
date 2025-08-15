@@ -9387,19 +9387,1566 @@ They may be stated as part of a SPARQL 1.1 Service Description <a href="#SPARQLS
 </dd>
 <dt class="hdlist1">reference</dt>
 <dd>
-<p><a href="#sparql-protocol">[sparql-protocol]</a></p>
+<p><a href="#sparql-protocol">[sparql-protocol]</a>
+======= Conformance Class: 06-core.adoc</p>
 </dd>
 </dl>
 </div>
 </div>
 </aside>
-</section>
-</section>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">target</dt>
+<dd>
+<p>/req/06-core.adoc</p>
+</dd>
+<dt class="hdlist1">abstract-test</dt>
+<dd>
+<p>/conf/core/Coordinate_Reference_System_Parameters</p>
+</dd>
+<dt class="hdlist1">abstract-test</dt>
+<dd>
+<p>/conf/core/Coordinate_Reference_System_Types</p>
+</dd>
+<dt class="hdlist1">abstract-test</dt>
+<dd>
+<p>/conf/core/Coordinate_Reference_System_Properties</p>
+</dd>
+</dl>
 </div>
-</section>
-<section class="sect1">
-<h2 id="_alignments">Appendix B: Alignments</h2>
-<div class="sectionbody">
+<aside class="example">
+<div class="content">
+<p class="paragraph">
+<p>==== Coordinate Reference System Parameters</p>
+</p>
+</div>
+</aside>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">target</dt>
+<dd>
+<p>/req/06-core.adoc/Coordinate_Reference_System_Parameters</p>
+</dd>
+<dt class="hdlist1">test-purpose</dt>
+<dd>
+<p>Check conformance with this requirement</p>
+</dd>
+<dt class="hdlist1">test-method</dt>
+<dd>
+<p>Verify that queries involving ['geosrs:AreaOfUse', 'geosrs:Extent', 'geosrs:GeographicBoundingBox', 'geosrs:AxesList', 'geosrs:SingleCRSList'] return the correct result on a test dataset.</p>
+</dd>
+<dt class="hdlist1">test-method-type</dt>
+<dd>
+<p>Capabilities</p>
+</dd>
+<dt class="hdlist1">reference</dt>
+<dd>
+<p>['geosrs:AreaOfUse', 'geosrs:Extent', 'geosrs:GeographicBoundingBox', 'geosrs:AxesList', 'geosrs:SingleCRSList']</p>
+</dd>
+</dl>
+</div>
+<aside class="example">
+<div class="content">
+<p class="paragraph">
+<p>==== Coordinate Reference System Types</p>
+</p>
+</div>
+</aside>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">target</dt>
+<dd>
+<p>/req/06-core.adoc/Coordinate_Reference_System_Types</p>
+</dd>
+<dt class="hdlist1">test-purpose</dt>
+<dd>
+<p>Check conformance with this requirement</p>
+</dd>
+<dt class="hdlist1">test-method</dt>
+<dd>
+<p>Verify that queries involving ['geosrs:BoundCRS', 'geosrs:CompoundCRS', 'geosrs:CRS', 'geosrs:EngineeringCRS', 'geosrs:GeocentricCRS', 'geosrs:GeodeticCRS', 'geosrs:GeographicCRS', 'geosrs:ParametricCRS', 'geosrs:ProjectedCRS', 'geosrs:SelenographicCRS', 'geosrs:ReferenceSystem', 'geosrs:SingleCRS', 'geosrs:SpatialReferenceSystem', 'geosrs:SpatioParametricCompoundCRS', 'geosrs:SpatioParametricTemporalCompoundCRS', 'geosrs:SpatioTemporalCompoundCRS', 'geosrs:StaticCRS', 'geosrs:TemporalCRS', 'geosrs:VerticalCRS'] return the correct result on a test dataset.</p>
+</dd>
+<dt class="hdlist1">test-method-type</dt>
+<dd>
+<p>Capabilities</p>
+</dd>
+<dt class="hdlist1">reference</dt>
+<dd>
+<p>['geosrs:BoundCRS', 'geosrs:CompoundCRS', 'geosrs:CRS', 'geosrs:EngineeringCRS', 'geosrs:GeocentricCRS', 'geosrs:GeodeticCRS', 'geosrs:GeographicCRS', 'geosrs:ParametricCRS', 'geosrs:ProjectedCRS', 'geosrs:SelenographicCRS', 'geosrs:ReferenceSystem', 'geosrs:SingleCRS', 'geosrs:SpatialReferenceSystem', 'geosrs:SpatioParametricCompoundCRS', 'geosrs:SpatioParametricTemporalCompoundCRS', 'geosrs:SpatioTemporalCompoundCRS', 'geosrs:StaticCRS', 'geosrs:TemporalCRS', 'geosrs:VerticalCRS']</p>
+</dd>
+</dl>
+</div>
+<aside class="example">
+<div class="content">
+<p class="paragraph">
+<p>==== Coordinate Reference System Properties</p>
+</p>
+</div>
+</aside>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">target</dt>
+<dd>
+<p>/req/06-core.adoc/Coordinate_Reference_System_Properties</p>
+</dd>
+<dt class="hdlist1">test-purpose</dt>
+<dd>
+<p>Check conformance with this requirement</p>
+</dd>
+<dt class="hdlist1">test-method</dt>
+<dd>
+<p>Verify that queries involving ['geosrs:baseCRS', 'geosrs:conversion', 'geosrs:coordinateSystem', 'geosrs:datum', 'geosrs:datumEnsemble', 'geosrs:domainOfValidity', 'geosrs:method', 'geocrs:asProj4', 'geocrs:asProjJSON', 'geocrs:asWKT', 'geosrs:EPSGcode'] return the correct result on a test dataset.</p>
+</dd>
+<dt class="hdlist1">test-method-type</dt>
+<dd>
+<p>Capabilities</p>
+</dd>
+<dt class="hdlist1">reference</dt>
+<dd>
+<p>['geosrs:baseCRS', 'geosrs:conversion', 'geosrs:coordinateSystem', 'geosrs:datum', 'geosrs:datumEnsemble', 'geosrs:domainOfValidity', 'geosrs:method', 'geocrs:asProj4', 'geocrs:asProjJSON', 'geocrs:asWKT', 'geosrs:EPSGcode']</p>
+</dd>
+</dl>
+</div>
+<aside class="example">
+<div class="content">
+<p class="paragraph">
+<p>=== Conformance Class: 07-co_module.adoc</p>
+</p>
+</div>
+</aside>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">target</dt>
+<dd>
+<p>/req/07-co_module.adoc</p>
+</dd>
+<dt class="hdlist1">abstract-test</dt>
+<dd>
+<p>/conf/core/Coordinate_Operation_Methods</p>
+</dd>
+<dt class="hdlist1">abstract-test</dt>
+<dd>
+<p>/conf/core/Coordinate_Operation_Parameters</p>
+</dd>
+<dt class="hdlist1">abstract-test</dt>
+<dd>
+<p>/conf/core/Coordinate_Operation_Categories</p>
+</dd>
+<dt class="hdlist1">abstract-test</dt>
+<dd>
+<p>/conf/core/Coordinate_Operation_Properties</p>
+</dd>
+</dl>
+</div>
+<aside class="example">
+<div class="content">
+<p class="paragraph">
+<p>==== Coordinate Operation Methods</p>
+</p>
+</div>
+</aside>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">target</dt>
+<dd>
+<p>/req/07-co_module.adoc/Coordinate_Operation_Methods</p>
+</dd>
+<dt class="hdlist1">test-purpose</dt>
+<dd>
+<p>Check conformance with this requirement</p>
+</dd>
+<dt class="hdlist1">test-method</dt>
+<dd>
+<p>Verify that queries involving ['geosrs:CoordinateOperation', 'geosrs:PassThroughOperation', 'geosrs:ConcatenatedOperation', 'geosrs:SingleOperation', 'geosrs:Transformation', 'geosrs:Conversion', 'geosrs:PointMotionOperation', 'geosrs:OperationMethod'] return the correct result on a test dataset.</p>
+</dd>
+<dt class="hdlist1">test-method-type</dt>
+<dd>
+<p>Capabilities</p>
+</dd>
+<dt class="hdlist1">reference</dt>
+<dd>
+<p>['geosrs:CoordinateOperation', 'geosrs:PassThroughOperation', 'geosrs:ConcatenatedOperation', 'geosrs:SingleOperation', 'geosrs:Transformation', 'geosrs:Conversion', 'geosrs:PointMotionOperation', 'geosrs:OperationMethod']</p>
+</dd>
+</dl>
+</div>
+<aside class="example">
+<div class="content">
+<p class="paragraph">
+<p>==== Coordinate Operation Parameters</p>
+</p>
+</div>
+</aside>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">target</dt>
+<dd>
+<p>/req/07-co_module.adoc/Coordinate_Operation_Parameters</p>
+</dd>
+<dt class="hdlist1">test-purpose</dt>
+<dd>
+<p>Check conformance with this requirement</p>
+</dd>
+<dt class="hdlist1">test-method</dt>
+<dd>
+<p>Verify that queries involving ['geosrs:GeneralOperationParameter', 'geosrs:OperationParameterGroup', 'geosrs:OperationParameter', 'geosrs:GeneralParameterValue', 'geosrs:ParameterValueGroup', 'geosrs:OperationParameterValue'] return the correct result on a test dataset.</p>
+</dd>
+<dt class="hdlist1">test-method-type</dt>
+<dd>
+<p>Capabilities</p>
+</dd>
+<dt class="hdlist1">reference</dt>
+<dd>
+<p>['geosrs:GeneralOperationParameter', 'geosrs:OperationParameterGroup', 'geosrs:OperationParameter', 'geosrs:GeneralParameterValue', 'geosrs:ParameterValueGroup', 'geosrs:OperationParameterValue']</p>
+</dd>
+</dl>
+</div>
+<aside class="example">
+<div class="content">
+<p class="paragraph">
+<p>==== Coordinate Operation Categories</p>
+</p>
+</div>
+</aside>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">target</dt>
+<dd>
+<p>/req/07-co_module.adoc/Coordinate_Operation_Categories</p>
+</dd>
+<dt class="hdlist1">test-purpose</dt>
+<dd>
+<p>Check conformance with this requirement</p>
+</dd>
+<dt class="hdlist1">test-method</dt>
+<dd>
+<p>Verify that queries involving ['geosrs:GeographicObject', 'geosrs:RegisterOperations', 'geosrs:ScaleOperation', 'geosrs:RotationOperation', 'geosrs:IdentityOperation', 'geosrs:ShearOperation', 'geosrs:TranslationOperation', 'geosrs:AffineTransformationOperation', 'geocrs:CoordinateTransformationOperation'] return the correct result on a test dataset.</p>
+</dd>
+<dt class="hdlist1">test-method-type</dt>
+<dd>
+<p>Capabilities</p>
+</dd>
+<dt class="hdlist1">reference</dt>
+<dd>
+<p>['geosrs:GeographicObject', 'geosrs:RegisterOperations', 'geosrs:ScaleOperation', 'geosrs:RotationOperation', 'geosrs:IdentityOperation', 'geosrs:ShearOperation', 'geosrs:TranslationOperation', 'geosrs:AffineTransformationOperation', 'geocrs:CoordinateTransformationOperation']</p>
+</dd>
+</dl>
+</div>
+<aside class="example">
+<div class="content">
+<p class="paragraph">
+<p>==== Coordinate Operation Properties</p>
+</p>
+</div>
+</aside>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">target</dt>
+<dd>
+<p>/req/07-co_module.adoc/Coordinate_Operation_Properties</p>
+</dd>
+<dt class="hdlist1">test-purpose</dt>
+<dd>
+<p>Check conformance with this requirement</p>
+</dd>
+<dt class="hdlist1">test-method</dt>
+<dd>
+<p>Verify that queries involving ['geosrs:derivingConversion', 'geosrs:parameter', 'geosrs:sourceCRS', 'geosrs:targetCRS'] return the correct result on a test dataset.</p>
+</dd>
+<dt class="hdlist1">test-method-type</dt>
+<dd>
+<p>Capabilities</p>
+</dd>
+<dt class="hdlist1">reference</dt>
+<dd>
+<p>['geosrs:derivingConversion', 'geosrs:parameter', 'geosrs:sourceCRS', 'geosrs:targetCRS']</p>
+</dd>
+</dl>
+</div>
+<aside class="example">
+<div class="content">
+<p class="paragraph">
+<p>=== Conformance Class: 08-cs_module.adoc</p>
+</p>
+</div>
+</aside>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">target</dt>
+<dd>
+<p>/req/08-cs_module.adoc</p>
+</dd>
+<dt class="hdlist1">abstract-test</dt>
+<dd>
+<p>/conf/core/Temporal_Coordinate_Systems</p>
+</dd>
+<dt class="hdlist1">abstract-test</dt>
+<dd>
+<p>/conf/core/3D_Coordinate_Systems</p>
+</dd>
+<dt class="hdlist1">abstract-test</dt>
+<dd>
+<p>/conf/core/Coordinate_System_Types</p>
+</dd>
+<dt class="hdlist1">abstract-test</dt>
+<dd>
+<p>/conf/core/Celestial_Coordinate_Systems</p>
+</dd>
+<dt class="hdlist1">abstract-test</dt>
+<dd>
+<p>/conf/core/Coordinate_System_Components</p>
+</dd>
+<dt class="hdlist1">abstract-test</dt>
+<dd>
+<p>/conf/core/Coordinate_System_Properties</p>
+</dd>
+</dl>
+</div>
+<aside class="example">
+<div class="content">
+<p class="paragraph">
+<p>==== Temporal Coordinate Systems</p>
+</p>
+</div>
+</aside>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">target</dt>
+<dd>
+<p>/req/08-cs_module.adoc/Temporal_Coordinate_Systems</p>
+</dd>
+<dt class="hdlist1">test-purpose</dt>
+<dd>
+<p>Check conformance with this requirement</p>
+</dd>
+<dt class="hdlist1">test-method</dt>
+<dd>
+<p>Verify that queries involving ['geosrs:1DCoordinateSystem', 'geosrs:DateTimeTemporalCoordinateSystem', 'geosrs:TemporalCountCoordinateSystem', 'geosrs:TemporalCoordinateSystem', 'geosrs:TemporalMeasureCoordinateSystem'] return the correct result on a test dataset.</p>
+</dd>
+<dt class="hdlist1">test-method-type</dt>
+<dd>
+<p>Capabilities</p>
+</dd>
+<dt class="hdlist1">reference</dt>
+<dd>
+<p>['geosrs:1DCoordinateSystem', 'geosrs:DateTimeTemporalCoordinateSystem', 'geosrs:TemporalCountCoordinateSystem', 'geosrs:TemporalCoordinateSystem', 'geosrs:TemporalMeasureCoordinateSystem']</p>
+</dd>
+</dl>
+</div>
+<aside class="example">
+<div class="content">
+<p class="paragraph">
+<p>==== 3D Coordinate Systems</p>
+</p>
+</div>
+</aside>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">target</dt>
+<dd>
+<p>/req/08-cs_module.adoc/3D_Coordinate_Systems</p>
+</dd>
+<dt class="hdlist1">test-purpose</dt>
+<dd>
+<p>Check conformance with this requirement</p>
+</dd>
+<dt class="hdlist1">test-method</dt>
+<dd>
+<p>Verify that queries involving ['geosrs:3DCoordinateSystem', 'geosrs:ConicalCoordinateSystem', 'geosrs:CylindricalCoordinateSystem', 'geosrs:EllipsoidalCoordinateSystem', 'geosrs:SphericalCoordinateSystem'] return the correct result on a test dataset.</p>
+</dd>
+<dt class="hdlist1">test-method-type</dt>
+<dd>
+<p>Capabilities</p>
+</dd>
+<dt class="hdlist1">reference</dt>
+<dd>
+<p>['geosrs:3DCoordinateSystem', 'geosrs:ConicalCoordinateSystem', 'geosrs:CylindricalCoordinateSystem', 'geosrs:EllipsoidalCoordinateSystem', 'geosrs:SphericalCoordinateSystem']</p>
+</dd>
+</dl>
+</div>
+<aside class="example">
+<div class="content">
+<p class="paragraph">
+<p>==== Coordinate System Types</p>
+</p>
+</div>
+</aside>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">target</dt>
+<dd>
+<p>/req/08-cs_module.adoc/Coordinate_System_Types</p>
+</dd>
+<dt class="hdlist1">test-purpose</dt>
+<dd>
+<p>Check conformance with this requirement</p>
+</dd>
+<dt class="hdlist1">test-method</dt>
+<dd>
+<p>Verify that queries involving ['geosrs:CoordinateSystem', 'geosrs:AffineCoordinateSystem', 'geosrs:BarycentricCoordinateSystem', 'geosrs:CartesianCoordinateSystem', 'geosrs:CurvilinearCoordinateSystem', 'geosrs:EngineeringCoordinateSystem', 'geosrs:GeodeticCoordinateSystem', 'geosrs:GeographicalCoordinateSystem', 'geosrs:GridCoordinateSystem', 'geosrs:HexagonalCoordinateSystem', 'geosrs:LocalCoordinateSystem', 'geosrs:ObliqueCoordinateSystem', 'geosrs:OrdinalCoordinateSystem', 'geosrs:OrthogonalCoordinateSystem', 'geosrs:ParametricCoordinateSystem', 'geosrs:PlanarCoordinateSystem', 'geosrs:PolarCoordinateSystem', 'geosrs:VerticalCoordinateSystem'] return the correct result on a test dataset.</p>
+</dd>
+<dt class="hdlist1">test-method-type</dt>
+<dd>
+<p>Capabilities</p>
+</dd>
+<dt class="hdlist1">reference</dt>
+<dd>
+<p>['geosrs:CoordinateSystem', 'geosrs:AffineCoordinateSystem', 'geosrs:BarycentricCoordinateSystem', 'geosrs:CartesianCoordinateSystem', 'geosrs:CurvilinearCoordinateSystem', 'geosrs:EngineeringCoordinateSystem', 'geosrs:GeodeticCoordinateSystem', 'geosrs:GeographicalCoordinateSystem', 'geosrs:GridCoordinateSystem', 'geosrs:HexagonalCoordinateSystem', 'geosrs:LocalCoordinateSystem', 'geosrs:ObliqueCoordinateSystem', 'geosrs:OrdinalCoordinateSystem', 'geosrs:OrthogonalCoordinateSystem', 'geosrs:ParametricCoordinateSystem', 'geosrs:PlanarCoordinateSystem', 'geosrs:PolarCoordinateSystem', 'geosrs:VerticalCoordinateSystem']</p>
+</dd>
+</dl>
+</div>
+<aside class="example">
+<div class="content">
+<p class="paragraph">
+<p>==== Celestial Coordinate Systems</p>
+</p>
+</div>
+</aside>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">target</dt>
+<dd>
+<p>/req/08-cs_module.adoc/Celestial_Coordinate_Systems</p>
+</dd>
+<dt class="hdlist1">test-purpose</dt>
+<dd>
+<p>Check conformance with this requirement</p>
+</dd>
+<dt class="hdlist1">test-method</dt>
+<dd>
+<p>Verify that queries involving ['geosrs:CelestialCoordinateSystem', 'geosrs:EclipticCoordinateSystem', 'geosrs:EquatorialCoordinateSystem', 'geosrs:GalacticCoordinateSystem', 'geosrs:HorizontalCoordinateSystem', 'geosrs:PerifocalCoordinateSystem', 'geosrs:SuperGalacticCS'] return the correct result on a test dataset.</p>
+</dd>
+<dt class="hdlist1">test-method-type</dt>
+<dd>
+<p>Capabilities</p>
+</dd>
+<dt class="hdlist1">reference</dt>
+<dd>
+<p>['geosrs:CelestialCoordinateSystem', 'geosrs:EclipticCoordinateSystem', 'geosrs:EquatorialCoordinateSystem', 'geosrs:GalacticCoordinateSystem', 'geosrs:HorizontalCoordinateSystem', 'geosrs:PerifocalCoordinateSystem', 'geosrs:SuperGalacticCS']</p>
+</dd>
+</dl>
+</div>
+<aside class="example">
+<div class="content">
+<p class="paragraph">
+<p>==== Coordinate System Components</p>
+</p>
+</div>
+</aside>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">target</dt>
+<dd>
+<p>/req/08-cs_module.adoc/Coordinate_System_Components</p>
+</dd>
+<dt class="hdlist1">test-purpose</dt>
+<dd>
+<p>Check conformance with this requirement</p>
+</dd>
+<dt class="hdlist1">test-method</dt>
+<dd>
+<p>Verify that queries involving ['geosrs:CoordinateSystemAxis'] return the correct result on a test dataset.</p>
+</dd>
+<dt class="hdlist1">test-method-type</dt>
+<dd>
+<p>Capabilities</p>
+</dd>
+<dt class="hdlist1">reference</dt>
+<dd>
+<p>['geosrs:CoordinateSystemAxis']</p>
+</dd>
+</dl>
+</div>
+<aside class="example">
+<div class="content">
+<p class="paragraph">
+<p>==== Coordinate System Properties</p>
+</p>
+</div>
+</aside>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">target</dt>
+<dd>
+<p>/req/08-cs_module.adoc/Coordinate_System_Properties</p>
+</dd>
+<dt class="hdlist1">test-purpose</dt>
+<dd>
+<p>Check conformance with this requirement</p>
+</dd>
+<dt class="hdlist1">test-method</dt>
+<dd>
+<p>Verify that queries involving ['geosrs:axis', 'geosrs:axisDirection'] return the correct result on a test dataset.</p>
+</dd>
+<dt class="hdlist1">test-method-type</dt>
+<dd>
+<p>Capabilities</p>
+</dd>
+<dt class="hdlist1">reference</dt>
+<dd>
+<p>['geosrs:axis', 'geosrs:axisDirection']</p>
+</dd>
+</dl>
+</div>
+<aside class="example">
+<div class="content">
+<p class="paragraph">
+<p>=== Conformance Class: 09-datum_module.adoc</p>
+</p>
+</div>
+</aside>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">target</dt>
+<dd>
+<p>/req/09-datum_module.adoc</p>
+</dd>
+<dt class="hdlist1">abstract-test</dt>
+<dd>
+<p>/conf/core/Datum_Types</p>
+</dd>
+<dt class="hdlist1">abstract-test</dt>
+<dd>
+<p>/conf/core/Datum_Parameters</p>
+</dd>
+<dt class="hdlist1">abstract-test</dt>
+<dd>
+<p>/conf/core/Spheroid_Types</p>
+</dd>
+<dt class="hdlist1">abstract-test</dt>
+<dd>
+<p>/conf/core/Datum_Properties</p>
+</dd>
+<dt class="hdlist1">abstract-test</dt>
+<dd>
+<p>/conf/core/Spheroid_Properties</p>
+</dd>
+</dl>
+</div>
+<aside class="example">
+<div class="content">
+<p class="paragraph">
+<p>==== Datum Types</p>
+</p>
+</div>
+</aside>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">target</dt>
+<dd>
+<p>/req/09-datum_module.adoc/Datum_Types</p>
+</dd>
+<dt class="hdlist1">test-purpose</dt>
+<dd>
+<p>Check conformance with this requirement</p>
+</dd>
+<dt class="hdlist1">test-method</dt>
+<dd>
+<p>Verify that queries involving ['geosrs:Datum', 'geosrs:GeodeticDatum', 'geosrs:DynamicGeodeticReferenceFrame', 'geosrs:VerticalDatum', 'geosrs:DynamicVerticalDatum', 'geosrs:ParametricDatum', 'geosrs:EngineeringDatum', 'geosrs:TemporalDatum', 'geosrs:DatumEnsemble'] return the correct result on a test dataset.</p>
+</dd>
+<dt class="hdlist1">test-method-type</dt>
+<dd>
+<p>Capabilities</p>
+</dd>
+<dt class="hdlist1">reference</dt>
+<dd>
+<p>['geosrs:Datum', 'geosrs:GeodeticDatum', 'geosrs:DynamicGeodeticReferenceFrame', 'geosrs:VerticalDatum', 'geosrs:DynamicVerticalDatum', 'geosrs:ParametricDatum', 'geosrs:EngineeringDatum', 'geosrs:TemporalDatum', 'geosrs:DatumEnsemble']</p>
+</dd>
+</dl>
+</div>
+<aside class="example">
+<div class="content">
+<p class="paragraph">
+<p>==== Datum Parameters</p>
+</p>
+</div>
+</aside>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">target</dt>
+<dd>
+<p>/req/09-datum_module.adoc/Datum_Parameters</p>
+</dd>
+<dt class="hdlist1">test-purpose</dt>
+<dd>
+<p>Check conformance with this requirement</p>
+</dd>
+<dt class="hdlist1">test-method</dt>
+<dd>
+<p>Verify that queries involving ['geosrs:PrimeMeridian', 'geosrs:DefiningParameter'] return the correct result on a test dataset.</p>
+</dd>
+<dt class="hdlist1">test-method-type</dt>
+<dd>
+<p>Capabilities</p>
+</dd>
+<dt class="hdlist1">reference</dt>
+<dd>
+<p>['geosrs:PrimeMeridian', 'geosrs:DefiningParameter']</p>
+</dd>
+</dl>
+</div>
+<aside class="example">
+<div class="content">
+<p class="paragraph">
+<p>==== Spheroid Types</p>
+</p>
+</div>
+</aside>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">target</dt>
+<dd>
+<p>/req/09-datum_module.adoc/Spheroid_Types</p>
+</dd>
+<dt class="hdlist1">test-purpose</dt>
+<dd>
+<p>Check conformance with this requirement</p>
+</dd>
+<dt class="hdlist1">test-method</dt>
+<dd>
+<p>Verify that queries involving ['geosrs:Ellipsoid', 'geosrs:TriaxialEllipsoid'] return the correct result on a test dataset.</p>
+</dd>
+<dt class="hdlist1">test-method-type</dt>
+<dd>
+<p>Capabilities</p>
+</dd>
+<dt class="hdlist1">reference</dt>
+<dd>
+<p>['geosrs:Ellipsoid', 'geosrs:TriaxialEllipsoid']</p>
+</dd>
+</dl>
+</div>
+<aside class="example">
+<div class="content">
+<p class="paragraph">
+<p>==== Datum Properties</p>
+</p>
+</div>
+</aside>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">target</dt>
+<dd>
+<p>/req/09-datum_module.adoc/Datum_Properties</p>
+</dd>
+<dt class="hdlist1">test-purpose</dt>
+<dd>
+<p>Check conformance with this requirement</p>
+</dd>
+<dt class="hdlist1">test-method</dt>
+<dd>
+<p>Verify that queries involving ['geosrs:datumDefiningParameter', 'geosrs:ellipsoid', 'geosrs:primeMeridian'] return the correct result on a test dataset.</p>
+</dd>
+<dt class="hdlist1">test-method-type</dt>
+<dd>
+<p>Capabilities</p>
+</dd>
+<dt class="hdlist1">reference</dt>
+<dd>
+<p>['geosrs:datumDefiningParameter', 'geosrs:ellipsoid', 'geosrs:primeMeridian']</p>
+</dd>
+</dl>
+</div>
+<aside class="example">
+<div class="content">
+<p class="paragraph">
+<p>==== Spheroid Properties</p>
+</p>
+</div>
+</aside>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">target</dt>
+<dd>
+<p>/req/09-datum_module.adoc/Spheroid_Properties</p>
+</dd>
+<dt class="hdlist1">test-purpose</dt>
+<dd>
+<p>Check conformance with this requirement</p>
+</dd>
+<dt class="hdlist1">test-method</dt>
+<dd>
+<p>Verify that queries involving ['geosrs:eccentricity', 'geosrs:inverseFlattening', 'geosrs:isSphere', 'geosrs:semiMajorAxis', 'geosrs:semiMinorAxis'] return the correct result on a test dataset.</p>
+</dd>
+<dt class="hdlist1">test-method-type</dt>
+<dd>
+<p>Capabilities</p>
+</dd>
+<dt class="hdlist1">reference</dt>
+<dd>
+<p>['geosrs:eccentricity', 'geosrs:inverseFlattening', 'geosrs:isSphere', 'geosrs:semiMajorAxis', 'geosrs:semiMinorAxis']</p>
+</dd>
+</dl>
+</div>
+<aside class="example">
+<div class="content">
+<p class="paragraph">
+<p>=== Conformance Class: 10-srsapplication_module.adoc</p>
+</p>
+</div>
+</aside>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">target</dt>
+<dd>
+<p>/req/10-srsapplication_module.adoc</p>
+</dd>
+<dt class="hdlist1">abstract-test</dt>
+<dd>
+<p>/conf/core/SRS_Application_Types</p>
+</dd>
+<dt class="hdlist1">abstract-test</dt>
+<dd>
+<p>/conf/core/Map_Types</p>
+</dd>
+</dl>
+</div>
+<aside class="example">
+<div class="content">
+<p class="paragraph">
+<p>==== SRS Application Types</p>
+</p>
+</div>
+</aside>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">target</dt>
+<dd>
+<p>/req/10-srsapplication_module.adoc/SRS_Application_Types</p>
+</dd>
+<dt class="hdlist1">test-purpose</dt>
+<dd>
+<p>Check conformance with this requirement</p>
+</dd>
+<dt class="hdlist1">test-method</dt>
+<dd>
+<p>Verify that queries involving ['geosrs:SRSApplication', 'geosrs:SpatialReferencing', 'geosrs:EngineeringSurvey', 'geosrs:SatelliteSurvey', 'geosrs:SatelliteNavigation', 'geosrs:CoastalHydrography', 'geosrs:OffshoreEngineering', 'geosrs:Hydrography', 'geosrs:Drilling', 'geosrs:OilAndGasExploration'] return the correct result on a test dataset.</p>
+</dd>
+<dt class="hdlist1">test-method-type</dt>
+<dd>
+<p>Capabilities</p>
+</dd>
+<dt class="hdlist1">reference</dt>
+<dd>
+<p>['geosrs:SRSApplication', 'geosrs:SpatialReferencing', 'geosrs:EngineeringSurvey', 'geosrs:SatelliteSurvey', 'geosrs:SatelliteNavigation', 'geosrs:CoastalHydrography', 'geosrs:OffshoreEngineering', 'geosrs:Hydrography', 'geosrs:Drilling', 'geosrs:OilAndGasExploration']</p>
+</dd>
+</dl>
+</div>
+<aside class="example">
+<div class="content">
+<p class="paragraph">
+<p>==== Map Types</p>
+</p>
+</div>
+</aside>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">target</dt>
+<dd>
+<p>/req/10-srsapplication_module.adoc/Map_Types</p>
+</dd>
+<dt class="hdlist1">test-purpose</dt>
+<dd>
+<p>Check conformance with this requirement</p>
+</dd>
+<dt class="hdlist1">test-method</dt>
+<dd>
+<p>Verify that queries involving ['geosrs:CadastreMap', 'geosrs:NauticalChart', 'geosrs:ThematicMap', 'geosrs:TopographicMap', 'geosrs:WeatherMap'] return the correct result on a test dataset.</p>
+</dd>
+<dt class="hdlist1">test-method-type</dt>
+<dd>
+<p>Capabilities</p>
+</dd>
+<dt class="hdlist1">reference</dt>
+<dd>
+<p>['geosrs:CadastreMap', 'geosrs:NauticalChart', 'geosrs:ThematicMap', 'geosrs:TopographicMap', 'geosrs:WeatherMap']</p>
+</dd>
+</dl>
+</div>
+<aside class="example">
+<div class="content">
+<p class="paragraph">
+<p>=== Conformance Class: 11-projections_module.adoc</p>
+</p>
+</div>
+</aside>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">target</dt>
+<dd>
+<p>/req/11-projections_module.adoc</p>
+</dd>
+<dt class="hdlist1">abstract-test</dt>
+<dd>
+<p>/conf/core/Lenticular_Projections</p>
+</dd>
+<dt class="hdlist1">abstract-test</dt>
+<dd>
+<p>/conf/core/Conformal_Projections</p>
+</dd>
+<dt class="hdlist1">abstract-test</dt>
+<dd>
+<p>/conf/core/Minimum_Error_Projections</p>
+</dd>
+<dt class="hdlist1">abstract-test</dt>
+<dd>
+<p>/conf/core/Pseudo_Azimuthal_Projections</p>
+</dd>
+<dt class="hdlist1">abstract-test</dt>
+<dd>
+<p>/conf/core/Equal_Area_Projections</p>
+</dd>
+<dt class="hdlist1">abstract-test</dt>
+<dd>
+<p>/conf/core/Pseudo_Conical_Projections</p>
+</dd>
+<dt class="hdlist1">abstract-test</dt>
+<dd>
+<p>/conf/core/Globular_Projections</p>
+</dd>
+<dt class="hdlist1">abstract-test</dt>
+<dd>
+<p>/conf/core/Pseudo_Cylindrical_Projections</p>
+</dd>
+<dt class="hdlist1">abstract-test</dt>
+<dd>
+<p>/conf/core/Cylindrical_Projections</p>
+</dd>
+<dt class="hdlist1">abstract-test</dt>
+<dd>
+<p>/conf/core/Compromise_Projections</p>
+</dd>
+<dt class="hdlist1">abstract-test</dt>
+<dd>
+<p>/conf/core/Polyhedral_Projections</p>
+</dd>
+<dt class="hdlist1">abstract-test</dt>
+<dd>
+<p>/conf/core/Equidistant_Projections</p>
+</dd>
+<dt class="hdlist1">abstract-test</dt>
+<dd>
+<p>/conf/core/Conical_Projections</p>
+</dd>
+<dt class="hdlist1">abstract-test</dt>
+<dd>
+<p>/conf/core/Azimuthal_Projections</p>
+</dd>
+<dt class="hdlist1">abstract-test</dt>
+<dd>
+<p>/conf/core/Perspective_Projections</p>
+</dd>
+<dt class="hdlist1">abstract-test</dt>
+<dd>
+<p>/conf/core/Polyconic_Projections</p>
+</dd>
+<dt class="hdlist1">abstract-test</dt>
+<dd>
+<p>/conf/core/Stereographic_Projections</p>
+</dd>
+</dl>
+</div>
+<aside class="example">
+<div class="content">
+<p class="paragraph">
+<p>==== Lenticular Projections</p>
+</p>
+</div>
+</aside>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">target</dt>
+<dd>
+<p>/req/11-projections_module.adoc/Lenticular_Projections</p>
+</dd>
+<dt class="hdlist1">test-purpose</dt>
+<dd>
+<p>Check conformance with this requirement</p>
+</dd>
+<dt class="hdlist1">test-method</dt>
+<dd>
+<p>Verify that queries involving ['geosrs:A4Projection', 'geosrs:BriesemeisterProjection', 'geosrs:CiricIProjection', 'geosrs:CupolaProjection', 'geosrs:DedistortProjection', 'geosrs:DietrichKitadaProjection', 'geosrs:FranculaIIIProjection', 'geosrs:FranculaIVProjection', 'geosrs:FranculaIXProjection', 'geosrs:FranculaVIIIProjection', 'geosrs:FranculaVProjection', 'geosrs:FranculaXIIIProjection', 'geosrs:FranculaXIIProjection', 'geosrs:FranculaXIVProjection', 'geosrs:HamusoidalProjection', 'geosrs:KissProjection'] return the correct result on a test dataset.</p>
+</dd>
+<dt class="hdlist1">test-method-type</dt>
+<dd>
+<p>Capabilities</p>
+</dd>
+<dt class="hdlist1">reference</dt>
+<dd>
+<p>['geosrs:A4Projection', 'geosrs:BriesemeisterProjection', 'geosrs:CiricIProjection', 'geosrs:CupolaProjection', 'geosrs:DedistortProjection', 'geosrs:DietrichKitadaProjection', 'geosrs:FranculaIIIProjection', 'geosrs:FranculaIVProjection', 'geosrs:FranculaIXProjection', 'geosrs:FranculaVIIIProjection', 'geosrs:FranculaVProjection', 'geosrs:FranculaXIIIProjection', 'geosrs:FranculaXIIProjection', 'geosrs:FranculaXIVProjection', 'geosrs:HamusoidalProjection', 'geosrs:KissProjection']</p>
+</dd>
+</dl>
+</div>
+<aside class="example">
+<div class="content">
+<p class="paragraph">
+<p>==== Conformal Projections</p>
+</p>
+</div>
+</aside>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">target</dt>
+<dd>
+<p>/req/11-projections_module.adoc/Conformal_Projections</p>
+</dd>
+<dt class="hdlist1">test-purpose</dt>
+<dd>
+<p>Check conformance with this requirement</p>
+</dd>
+<dt class="hdlist1">test-method</dt>
+<dd>
+<p>Verify that queries involving ['geosrs:AdamsProjection', 'geosrs:AdamsWorldInASquareIIProjection', 'geosrs:AdamsWorldInASquareIProjection', 'geosrs:AugustEpicycloidalProjection', 'geosrs:CoxConformalProjection', 'geosrs:EisenlohrProjection', 'geosrs:GS50Projection', 'geosrs:PeirceQuincuncialProjection', 'geosrs:StereographicProjection'] return the correct result on a test dataset.</p>
+</dd>
+<dt class="hdlist1">test-method-type</dt>
+<dd>
+<p>Capabilities</p>
+</dd>
+<dt class="hdlist1">reference</dt>
+<dd>
+<p>['geosrs:AdamsProjection', 'geosrs:AdamsWorldInASquareIIProjection', 'geosrs:AdamsWorldInASquareIProjection', 'geosrs:AugustEpicycloidalProjection', 'geosrs:CoxConformalProjection', 'geosrs:EisenlohrProjection', 'geosrs:GS50Projection', 'geosrs:PeirceQuincuncialProjection', 'geosrs:StereographicProjection']</p>
+</dd>
+</dl>
+</div>
+<aside class="example">
+<div class="content">
+<p class="paragraph">
+<p>==== Minimum Error Projections</p>
+</p>
+</div>
+</aside>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">target</dt>
+<dd>
+<p>/req/11-projections_module.adoc/Minimum_Error_Projections</p>
+</dd>
+<dt class="hdlist1">test-purpose</dt>
+<dd>
+<p>Check conformance with this requirement</p>
+</dd>
+<dt class="hdlist1">test-method</dt>
+<dd>
+<p>Verify that queries involving ['geosrs:AiryProjection'] return the correct result on a test dataset.</p>
+</dd>
+<dt class="hdlist1">test-method-type</dt>
+<dd>
+<p>Capabilities</p>
+</dd>
+<dt class="hdlist1">reference</dt>
+<dd>
+<p>['geosrs:AiryProjection']</p>
+</dd>
+</dl>
+</div>
+<aside class="example">
+<div class="content">
+<p class="paragraph">
+<p>==== Pseudo Azimuthal Projections</p>
+</p>
+</div>
+</aside>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">target</dt>
+<dd>
+<p>/req/11-projections_module.adoc/Pseudo_Azimuthal_Projections</p>
+</dd>
+<dt class="hdlist1">test-purpose</dt>
+<dd>
+<p>Check conformance with this requirement</p>
+</dd>
+<dt class="hdlist1">test-method</dt>
+<dd>
+<p>Verify that queries involving ['geosrs:AitoffObliqueProjection', 'geosrs:AitoffProjection', 'geosrs:HammerProjection', 'geosrs:Strebe1995Projection', 'geosrs:WinkelTripelProjection'] return the correct result on a test dataset.</p>
+</dd>
+<dt class="hdlist1">test-method-type</dt>
+<dd>
+<p>Capabilities</p>
+</dd>
+<dt class="hdlist1">reference</dt>
+<dd>
+<p>['geosrs:AitoffObliqueProjection', 'geosrs:AitoffProjection', 'geosrs:HammerProjection', 'geosrs:Strebe1995Projection', 'geosrs:WinkelTripelProjection']</p>
+</dd>
+</dl>
+</div>
+<aside class="example">
+<div class="content">
+<p class="paragraph">
+<p>==== Equal Area Projections</p>
+</p>
+</div>
+</aside>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">target</dt>
+<dd>
+<p>/req/11-projections_module.adoc/Equal_Area_Projections</p>
+</dd>
+<dt class="hdlist1">test-purpose</dt>
+<dd>
+<p>Check conformance with this requirement</p>
+</dd>
+<dt class="hdlist1">test-method</dt>
+<dd>
+<p>Verify that queries involving ['geosrs:AlbersEqualAreaProjection', 'geosrs:AzimuthalEqualAreaProjection', 'geosrs:CylindricalEqualArea', 'geosrs:GallPetersProjection', 'geosrs:HoboDyerProjection', 'geosrs:LambertAzimuthalEqualArea', 'geosrs:TrystanEdwardsProjection', 'geosrs:WiechelProjection'] return the correct result on a test dataset.</p>
+</dd>
+<dt class="hdlist1">test-method-type</dt>
+<dd>
+<p>Capabilities</p>
+</dd>
+<dt class="hdlist1">reference</dt>
+<dd>
+<p>['geosrs:AlbersEqualAreaProjection', 'geosrs:AzimuthalEqualAreaProjection', 'geosrs:CylindricalEqualArea', 'geosrs:GallPetersProjection', 'geosrs:HoboDyerProjection', 'geosrs:LambertAzimuthalEqualArea', 'geosrs:TrystanEdwardsProjection', 'geosrs:WiechelProjection']</p>
+</dd>
+</dl>
+</div>
+<aside class="example">
+<div class="content">
+<p class="paragraph">
+<p>==== Pseudo Conical Projections</p>
+</p>
+</div>
+</aside>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">target</dt>
+<dd>
+<p>/req/11-projections_module.adoc/Pseudo_Conical_Projections</p>
+</dd>
+<dt class="hdlist1">test-purpose</dt>
+<dd>
+<p>Check conformance with this requirement</p>
+</dd>
+<dt class="hdlist1">test-method</dt>
+<dd>
+<p>Verify that queries involving ['geosrs:AmericanPolyconicProjection', 'geosrs:BonneProjection', 'geosrs:BottomleyProjection', 'geosrs:NicolosiGlobularProjection', 'geosrs:PtolemyIIProjection', 'geosrs:WernerProjection'] return the correct result on a test dataset.</p>
+</dd>
+<dt class="hdlist1">test-method-type</dt>
+<dd>
+<p>Capabilities</p>
+</dd>
+<dt class="hdlist1">reference</dt>
+<dd>
+<p>['geosrs:AmericanPolyconicProjection', 'geosrs:BonneProjection', 'geosrs:BottomleyProjection', 'geosrs:NicolosiGlobularProjection', 'geosrs:PtolemyIIProjection', 'geosrs:WernerProjection']</p>
+</dd>
+</dl>
+</div>
+<aside class="example">
+<div class="content">
+<p class="paragraph">
+<p>==== Globular Projections</p>
+</p>
+</div>
+</aside>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">target</dt>
+<dd>
+<p>/req/11-projections_module.adoc/Globular_Projections</p>
+</dd>
+<dt class="hdlist1">test-purpose</dt>
+<dd>
+<p>Check conformance with this requirement</p>
+</dd>
+<dt class="hdlist1">test-method</dt>
+<dd>
+<p>Verify that queries involving ['geosrs:ApianGlobularIProjection', 'geosrs:BaconGlobularProjection', 'geosrs:FournierGlobularIProjection'] return the correct result on a test dataset.</p>
+</dd>
+<dt class="hdlist1">test-method-type</dt>
+<dd>
+<p>Capabilities</p>
+</dd>
+<dt class="hdlist1">reference</dt>
+<dd>
+<p>['geosrs:ApianGlobularIProjection', 'geosrs:BaconGlobularProjection', 'geosrs:FournierGlobularIProjection']</p>
+</dd>
+</dl>
+</div>
+<aside class="example">
+<div class="content">
+<p class="paragraph">
+<p>==== Pseudo Cylindrical Projections</p>
+</p>
+</div>
+</aside>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">target</dt>
+<dd>
+<p>/req/11-projections_module.adoc/Pseudo_Cylindrical_Projections</p>
+</dd>
+<dt class="hdlist1">test-purpose</dt>
+<dd>
+<p>Check conformance with this requirement</p>
+</dd>
+<dt class="hdlist1">test-method</dt>
+<dd>
+<p>Verify that queries involving ['geosrs:ApianIIProjection', 'geosrs:AtlantisProjection', 'geosrs:BaranyiIIIProjection', 'geosrs:BaranyiIIProjection', 'geosrs:BaranyiIProjection', 'geosrs:BaranyiIVProjection', 'geosrs:BoggsEumorphicProjection', 'geosrs:BromleyProjection', 'geosrs:CabotProjection', 'geosrs:CollignonProjection', 'geosrs:CrasterParabolicProjection', 'geosrs:DeakinMinimumErrorProjection', 'geosrs:Eckert1Projection', 'geosrs:Eckert2Projection', 'geosrs:Eckert3Projection', 'geosrs:Eckert4Projection', 'geosrs:Eckert5Projection', 'geosrs:Eckert6Projection', 'geosrs:EqualEarthProjection', 'geosrs:FaheyProjection', 'geosrs:FoucautProjection', 'geosrs:FoucautSinusoidalProjection', 'geosrs:FournierIIProjection', 'geosrs:GinzburgVIIIProjection', 'geosrs:GoodeHomolosineProjection', 'geosrs:HEALPixProjection', 'geosrs:HufnagelProjection', 'geosrs:Kavrayskiy7Projection', 'geosrs:LoximuthalProjection', 'geosrs:MayrProjection', 'geosrs:McBrydeThomasFlatPolarParabolicProjection', 'geosrs:McBrydeThomasFlatPolarQuarticProjection', 'geosrs:McBrydeThomasFlatPolarSinusoidalProjection', 'geosrs:McBrydeThomasIIProjection', 'geosrs:McBrydeThomasIProjection', 'geosrs:NaturalEarth2Projection', 'geosrs:NaturalEarthProjection', 'geosrs:NellHammerProjection', 'geosrs:NellProjection', 'geosrs:OrteliusOvalProjection', 'geosrs:PutninsP1Projection', 'geosrs:PutninsP2Projection', 'geosrs:PutninsP3Projection', 'geosrs:PutninsP5Projection', 'geosrs:PutninsP6Projection', 'geosrs:QuarticAuthalicProjection', 'geosrs:RobinsonProjection', 'geosrs:SinusoidalProjection', 'geosrs:TheTimesProjection', 'geosrs:ToblerG1Projection', 'geosrs:ToblerHyperellipticalProjection', 'geosrs:WagnerIIIProjection', 'geosrs:WagnerIIProjection', 'geosrs:WagnerIProjection', 'geosrs:WagnerIVProjection', 'geosrs:WagnerVIProjection', 'geosrs:WagnerVProjection', 'geosrs:WerenskioldIProjection', "geosrs:PutninsP3&#8217;Projection", "geosrs:PutninsP4&#8217;Projection", "geosrs:PutninsP5&#8217;Projection", "geosrs:PutninsP6&#8217;Projection"] return the correct result on a test dataset.</p>
+</dd>
+<dt class="hdlist1">test-method-type</dt>
+<dd>
+<p>Capabilities</p>
+</dd>
+<dt class="hdlist1">reference</dt>
+<dd>
+<p>['geosrs:ApianIIProjection', 'geosrs:AtlantisProjection', 'geosrs:BaranyiIIIProjection', 'geosrs:BaranyiIIProjection', 'geosrs:BaranyiIProjection', 'geosrs:BaranyiIVProjection', 'geosrs:BoggsEumorphicProjection', 'geosrs:BromleyProjection', 'geosrs:CabotProjection', 'geosrs:CollignonProjection', 'geosrs:CrasterParabolicProjection', 'geosrs:DeakinMinimumErrorProjection', 'geosrs:Eckert1Projection', 'geosrs:Eckert2Projection', 'geosrs:Eckert3Projection', 'geosrs:Eckert4Projection', 'geosrs:Eckert5Projection', 'geosrs:Eckert6Projection', 'geosrs:EqualEarthProjection', 'geosrs:FaheyProjection', 'geosrs:FoucautProjection', 'geosrs:FoucautSinusoidalProjection', 'geosrs:FournierIIProjection', 'geosrs:GinzburgVIIIProjection', 'geosrs:GoodeHomolosineProjection', 'geosrs:HEALPixProjection', 'geosrs:HufnagelProjection', 'geosrs:Kavrayskiy7Projection', 'geosrs:LoximuthalProjection', 'geosrs:MayrProjection', 'geosrs:McBrydeThomasFlatPolarParabolicProjection', 'geosrs:McBrydeThomasFlatPolarQuarticProjection', 'geosrs:McBrydeThomasFlatPolarSinusoidalProjection', 'geosrs:McBrydeThomasIIProjection', 'geosrs:McBrydeThomasIProjection', 'geosrs:NaturalEarth2Projection', 'geosrs:NaturalEarthProjection', 'geosrs:NellHammerProjection', 'geosrs:NellProjection', 'geosrs:OrteliusOvalProjection', 'geosrs:PutninsP1Projection', 'geosrs:PutninsP2Projection', 'geosrs:PutninsP3Projection', 'geosrs:PutninsP5Projection', 'geosrs:PutninsP6Projection', 'geosrs:QuarticAuthalicProjection', 'geosrs:RobinsonProjection', 'geosrs:SinusoidalProjection', 'geosrs:TheTimesProjection', 'geosrs:ToblerG1Projection', 'geosrs:ToblerHyperellipticalProjection', 'geosrs:WagnerIIIProjection', 'geosrs:WagnerIIProjection', 'geosrs:WagnerIProjection', 'geosrs:WagnerIVProjection', 'geosrs:WagnerVIProjection', 'geosrs:WagnerVProjection', 'geosrs:WerenskioldIProjection', "geosrs:PutninsP3&#8217;Projection", "geosrs:PutninsP4&#8217;Projection", "geosrs:PutninsP5&#8217;Projection", "geosrs:PutninsP6&#8217;Projection"]</p>
+</dd>
+</dl>
+</div>
+<aside class="example">
+<div class="content">
+<p class="paragraph">
+<p>==== Cylindrical Projections</p>
+</p>
+</div>
+</aside>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">target</dt>
+<dd>
+<p>/req/11-projections_module.adoc/Cylindrical_Projections</p>
+</dd>
+<dt class="hdlist1">test-purpose</dt>
+<dd>
+<p>Check conformance with this requirement</p>
+</dd>
+<dt class="hdlist1">test-method</dt>
+<dd>
+<p>Verify that queries involving ['geosrs:ArdenCloseProjection', 'geosrs:BraunPerspectiveProjection', 'geosrs:CompactMillerProjection', 'geosrs:CylindricalStereographicProjection', 'geosrs:KarchenkoShabanovaProjection', 'geosrs:LabordeProjection', 'geosrs:MercatorProjection', 'geosrs:MillerProjection', 'geosrs:PattersonCylindricalProjection', 'geosrs:PavlovProjection', 'geosrs:ToblerCylindricalIIProjection', 'geosrs:ToblerCylindricalIProjection', 'geosrs:UrmayevIIIProjection', 'geosrs:WebMercatorProjection'] return the correct result on a test dataset.</p>
+</dd>
+<dt class="hdlist1">test-method-type</dt>
+<dd>
+<p>Capabilities</p>
+</dd>
+<dt class="hdlist1">reference</dt>
+<dd>
+<p>['geosrs:ArdenCloseProjection', 'geosrs:BraunPerspectiveProjection', 'geosrs:CompactMillerProjection', 'geosrs:CylindricalStereographicProjection', 'geosrs:KarchenkoShabanovaProjection', 'geosrs:LabordeProjection', 'geosrs:MercatorProjection', 'geosrs:MillerProjection', 'geosrs:PattersonCylindricalProjection', 'geosrs:PavlovProjection', 'geosrs:ToblerCylindricalIIProjection', 'geosrs:ToblerCylindricalIProjection', 'geosrs:UrmayevIIIProjection', 'geosrs:WebMercatorProjection']</p>
+</dd>
+</dl>
+</div>
+<aside class="example">
+<div class="content">
+<p class="paragraph">
+<p>==== Compromise Projections</p>
+</p>
+</div>
+</aside>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">target</dt>
+<dd>
+<p>/req/11-projections_module.adoc/Compromise_Projections</p>
+</dd>
+<dt class="hdlist1">test-purpose</dt>
+<dd>
+<p>Check conformance with this requirement</p>
+</dd>
+<dt class="hdlist1">test-method</dt>
+<dd>
+<p>Verify that queries involving ['geosrs:ArmadilloProjection', 'geosrs:BakerDinomicProjection', 'geosrs:BertinProjection', 'geosrs:ChamberlinTrimetricProjection', 'geosrs:DenoyerSemiEllipticalProjection', 'geosrs:FairgrieveProjection', 'geosrs:LarriveeProjection', 'geosrs:PetermannStarProjection', 'geosrs:SpilhausOceanicProjection', 'geosrs:VanDerGrintenIIIProjection', 'geosrs:WinkelIIProjection', 'geosrs:WinkelIProjection', 'geosrs:WinkelSnyderProjection'] return the correct result on a test dataset.</p>
+</dd>
+<dt class="hdlist1">test-method-type</dt>
+<dd>
+<p>Capabilities</p>
+</dd>
+<dt class="hdlist1">reference</dt>
+<dd>
+<p>['geosrs:ArmadilloProjection', 'geosrs:BakerDinomicProjection', 'geosrs:BertinProjection', 'geosrs:ChamberlinTrimetricProjection', 'geosrs:DenoyerSemiEllipticalProjection', 'geosrs:FairgrieveProjection', 'geosrs:LarriveeProjection', 'geosrs:PetermannStarProjection', 'geosrs:SpilhausOceanicProjection', 'geosrs:VanDerGrintenIIIProjection', 'geosrs:WinkelIIProjection', 'geosrs:WinkelIProjection', 'geosrs:WinkelSnyderProjection']</p>
+</dd>
+</dl>
+</div>
+<aside class="example">
+<div class="content">
+<p class="paragraph">
+<p>==== Polyhedral Projections</p>
+</p>
+</div>
+</aside>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">target</dt>
+<dd>
+<p>/req/11-projections_module.adoc/Polyhedral_Projections</p>
+</dd>
+<dt class="hdlist1">test-purpose</dt>
+<dd>
+<p>Check conformance with this requirement</p>
+</dd>
+<dt class="hdlist1">test-method</dt>
+<dd>
+<p>Verify that queries involving ['geosrs:AuthaGraphProjection', 'geosrs:CahillKeyesProjection', 'geosrs:CollignonButterflyProjection', 'geosrs:DodecahedralProjection', 'geosrs:DymaxionProjection', 'geosrs:GnomonicButterflyProjection', 'geosrs:GnomonicCubedSphereProjection', 'geosrs:GnomonicIcosahedronProjection', 'geosrs:GuyouProjection', 'geosrs:IcosahedralProjection', 'geosrs:LeeProjection', 'geosrs:MyrahedalProjection', 'geosrs:OctantProjection', 'geosrs:QuadrilateralizedSphericalCubeProjection', 'geosrs:WatermanButterflyProjection'] return the correct result on a test dataset.</p>
+</dd>
+<dt class="hdlist1">test-method-type</dt>
+<dd>
+<p>Capabilities</p>
+</dd>
+<dt class="hdlist1">reference</dt>
+<dd>
+<p>['geosrs:AuthaGraphProjection', 'geosrs:CahillKeyesProjection', 'geosrs:CollignonButterflyProjection', 'geosrs:DodecahedralProjection', 'geosrs:DymaxionProjection', 'geosrs:GnomonicButterflyProjection', 'geosrs:GnomonicCubedSphereProjection', 'geosrs:GnomonicIcosahedronProjection', 'geosrs:GuyouProjection', 'geosrs:IcosahedralProjection', 'geosrs:LeeProjection', 'geosrs:MyrahedalProjection', 'geosrs:OctantProjection', 'geosrs:QuadrilateralizedSphericalCubeProjection', 'geosrs:WatermanButterflyProjection']</p>
+</dd>
+</dl>
+</div>
+<aside class="example">
+<div class="content">
+<p class="paragraph">
+<p>==== Equidistant Projections</p>
+</p>
+</div>
+</aside>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">target</dt>
+<dd>
+<p>/req/11-projections_module.adoc/Equidistant_Projections</p>
+</dd>
+<dt class="hdlist1">test-purpose</dt>
+<dd>
+<p>Check conformance with this requirement</p>
+</dd>
+<dt class="hdlist1">test-method</dt>
+<dd>
+<p>Verify that queries involving ['geosrs:AzimuthalEquidistantProjection', 'geosrs:BerghausStarProjection', 'geosrs:CassiniProjection', 'geosrs:EquidistantConicProjection', 'geosrs:EquidistantCylindricalProjection', 'geosrs:EquirectangularProjection', 'geosrs:ObliquePlateCarreeProjection', 'geosrs:PlateCarreeProjection', 'geosrs:TwoPointEquidistantProjection'] return the correct result on a test dataset.</p>
+</dd>
+<dt class="hdlist1">test-method-type</dt>
+<dd>
+<p>Capabilities</p>
+</dd>
+<dt class="hdlist1">reference</dt>
+<dd>
+<p>['geosrs:AzimuthalEquidistantProjection', 'geosrs:BerghausStarProjection', 'geosrs:CassiniProjection', 'geosrs:EquidistantConicProjection', 'geosrs:EquidistantCylindricalProjection', 'geosrs:EquirectangularProjection', 'geosrs:ObliquePlateCarreeProjection', 'geosrs:PlateCarreeProjection', 'geosrs:TwoPointEquidistantProjection']</p>
+</dd>
+</dl>
+</div>
+<aside class="example">
+<div class="content">
+<p class="paragraph">
+<p>==== Conical Projections</p>
+</p>
+</div>
+</aside>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">target</dt>
+<dd>
+<p>/req/11-projections_module.adoc/Conical_Projections</p>
+</dd>
+<dt class="hdlist1">test-purpose</dt>
+<dd>
+<p>Check conformance with this requirement</p>
+</dd>
+<dt class="hdlist1">test-method</dt>
+<dd>
+<p>Verify that queries involving ['geosrs:BipolarObliqueConicConformalProjection', 'geosrs:CentralConicProjection', 'geosrs:HerschelConformalConicProjection', 'geosrs:Krovak', 'geosrs:LambertConformalConicProjection', 'geosrs:MurdochIIIProjection', 'geosrs:MurdochIIProjection', 'geosrs:MurdochIProjection', 'geosrs:SchjerningIProjection', 'geosrs:VitkovskyIProjection'] return the correct result on a test dataset.</p>
+</dd>
+<dt class="hdlist1">test-method-type</dt>
+<dd>
+<p>Capabilities</p>
+</dd>
+<dt class="hdlist1">reference</dt>
+<dd>
+<p>['geosrs:BipolarObliqueConicConformalProjection', 'geosrs:CentralConicProjection', 'geosrs:HerschelConformalConicProjection', 'geosrs:Krovak', 'geosrs:LambertConformalConicProjection', 'geosrs:MurdochIIIProjection', 'geosrs:MurdochIIProjection', 'geosrs:MurdochIProjection', 'geosrs:SchjerningIProjection', 'geosrs:VitkovskyIProjection']</p>
+</dd>
+</dl>
+</div>
+<aside class="example">
+<div class="content">
+<p class="paragraph">
+<p>==== Azimuthal Projections</p>
+</p>
+</div>
+</aside>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">target</dt>
+<dd>
+<p>/req/11-projections_module.adoc/Azimuthal_Projections</p>
+</dd>
+<dt class="hdlist1">test-purpose</dt>
+<dd>
+<p>Check conformance with this requirement</p>
+</dd>
+<dt class="hdlist1">test-method</dt>
+<dd>
+<p>Verify that queries involving ['geosrs:BreusingGeometricProjection', 'geosrs:BreusingHarmonicProjection', 'geosrs:GinzburgIIProjection', 'geosrs:GinzburgIProjection', 'geosrs:GnomonicProjection', 'geosrs:JamesAzimuthalProjection'] return the correct result on a test dataset.</p>
+</dd>
+<dt class="hdlist1">test-method-type</dt>
+<dd>
+<p>Capabilities</p>
+</dd>
+<dt class="hdlist1">reference</dt>
+<dd>
+<p>['geosrs:BreusingGeometricProjection', 'geosrs:BreusingHarmonicProjection', 'geosrs:GinzburgIIProjection', 'geosrs:GinzburgIProjection', 'geosrs:GnomonicProjection', 'geosrs:JamesAzimuthalProjection']</p>
+</dd>
+</dl>
+</div>
+<aside class="example">
+<div class="content">
+<p class="paragraph">
+<p>==== Perspective Projections</p>
+</p>
+</div>
+</aside>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">target</dt>
+<dd>
+<p>/req/11-projections_module.adoc/Perspective_Projections</p>
+</dd>
+<dt class="hdlist1">test-purpose</dt>
+<dd>
+<p>Check conformance with this requirement</p>
+</dd>
+<dt class="hdlist1">test-method</dt>
+<dd>
+<p>Verify that queries involving ['geosrs:CentralCylindricalProjection', 'geosrs:GeneralVerticalPerspectiveProjection', 'geosrs:GilbertTwoWorldPerspectiveProjection', 'geosrs:LaHireProjection', 'geosrs:LorgnaProjection', 'geosrs:LowryProjection', 'geosrs:OrthographicProjection', 'geosrs:PerspectiveConicProjection', 'geosrs:TiltedPerspectiveProjection', 'geosrs:VerticalPerspectiveProjection'] return the correct result on a test dataset.</p>
+</dd>
+<dt class="hdlist1">test-method-type</dt>
+<dd>
+<p>Capabilities</p>
+</dd>
+<dt class="hdlist1">reference</dt>
+<dd>
+<p>['geosrs:CentralCylindricalProjection', 'geosrs:GeneralVerticalPerspectiveProjection', 'geosrs:GilbertTwoWorldPerspectiveProjection', 'geosrs:LaHireProjection', 'geosrs:LorgnaProjection', 'geosrs:LowryProjection', 'geosrs:OrthographicProjection', 'geosrs:PerspectiveConicProjection', 'geosrs:TiltedPerspectiveProjection', 'geosrs:VerticalPerspectiveProjection']</p>
+</dd>
+</dl>
+</div>
+<aside class="example">
+<div class="content">
+<p class="paragraph">
+<p>==== Polyconic Projections</p>
+</p>
+</div>
+</aside>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">target</dt>
+<dd>
+<p>/req/11-projections_module.adoc/Polyconic_Projections</p>
+</dd>
+<dt class="hdlist1">test-purpose</dt>
+<dd>
+<p>Check conformance with this requirement</p>
+</dd>
+<dt class="hdlist1">test-method</dt>
+<dd>
+<p>Verify that queries involving ['geosrs:GinzburgIVProjection', 'geosrs:GinzburgIXProjection', 'geosrs:GinzburgVIProjection', 'geosrs:GinzburgVProjection', 'geosrs:GottWagnerProjection', 'geosrs:HillEucyclicProjection', 'geosrs:LagrangeProjection', 'geosrs:LaskowskiProjection', 'geosrs:RectangularPolyconicProjection', 'geosrs:StabiusWernerIIIProjection', 'geosrs:StabiusWernerIProjection', 'geosrs:VanDerGrintenIIProjection', 'geosrs:VanDerGrintenIProjection', 'geosrs:VanDerGrintenIVProjection', 'geosrs:WagnerIXProjection', 'geosrs:WagnerVIIIProjection', 'geosrs:WagnerVIIProjection'] return the correct result on a test dataset.</p>
+</dd>
+<dt class="hdlist1">test-method-type</dt>
+<dd>
+<p>Capabilities</p>
+</dd>
+<dt class="hdlist1">reference</dt>
+<dd>
+<p>['geosrs:GinzburgIVProjection', 'geosrs:GinzburgIXProjection', 'geosrs:GinzburgVIProjection', 'geosrs:GinzburgVProjection', 'geosrs:GottWagnerProjection', 'geosrs:HillEucyclicProjection', 'geosrs:LagrangeProjection', 'geosrs:LaskowskiProjection', 'geosrs:RectangularPolyconicProjection', 'geosrs:StabiusWernerIIIProjection', 'geosrs:StabiusWernerIProjection', 'geosrs:VanDerGrintenIIProjection', 'geosrs:VanDerGrintenIProjection', 'geosrs:VanDerGrintenIVProjection', 'geosrs:WagnerIXProjection', 'geosrs:WagnerVIIIProjection', 'geosrs:WagnerVIIProjection']</p>
+</dd>
+</dl>
+</div>
+<aside class="example">
+<div class="content">
+<p class="paragraph">
+<p>==== Stereographic Projections</p>
+</p>
+</div>
+</aside>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">target</dt>
+<dd>
+<p>/req/11-projections_module.adoc/Stereographic_Projections</p>
+</dd>
+<dt class="hdlist1">test-purpose</dt>
+<dd>
+<p>Check conformance with this requirement</p>
+</dd>
+<dt class="hdlist1">test-method</dt>
+<dd>
+<p>Verify that queries involving ['geosrs:MillerOblatedStereographicProjection', 'geosrs:RoussilheProjection'] return the correct result on a test dataset.</p>
+</dd>
+<dt class="hdlist1">test-method-type</dt>
+<dd>
+<p>Capabilities</p>
+</dd>
+<dt class="hdlist1">reference</dt>
+<dd>
+<p>['geosrs:MillerOblatedStereographicProjection', 'geosrs:RoussilheProjection']</p>
+</dd>
+</dl>
+</div>
+<aside class="example">
+<div class="content">
+<p class="paragraph">
+<p>=== Conformance Class: 12-planet_module.adoc</p>
+</p>
+</div>
+</aside>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">target</dt>
+<dd>
+<p>/req/12-planet_module.adoc</p>
+</dd>
+<dt class="hdlist1">abstract-test</dt>
+<dd>
+<p>/conf/core/Interstellar_Body</p>
+</dd>
+</dl>
+</div>
+<aside class="example">
+<div class="content">
+<p class="paragraph">
+<p>==== Interstellar Body</p>
+</p>
+</div>
+</aside>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">target</dt>
+<dd>
+<p>/req/12-planet_module.adoc/Interstellar_Body</p>
+</dd>
+<dt class="hdlist1">test-purpose</dt>
+<dd>
+<p>Check conformance with this requirement</p>
+</dd>
+<dt class="hdlist1">test-method</dt>
+<dd>
+<p>Verify that queries involving ['geosrs:ArtificialSatellite', 'geosrs:Asteroid', 'geosrs:Comet', 'geosrs:DwarfPlanet', 'geosrs:InterstellarBody', 'geosrs:Moon', 'geosrs:NaturalSatellite', 'geosrs:Planet', 'geosrs:PlanetStatus', 'geosrs:Plutoid', 'geosrs:Star'] return the correct result on a test dataset.</p>
+</dd>
+<dt class="hdlist1">test-method-type</dt>
+<dd>
+<p>Capabilities</p>
+</dd>
+<dt class="hdlist1">reference</dt>
+<dd>
+<p>['geosrs:ArtificialSatellite', 'geosrs:Asteroid', 'geosrs:Comet', 'geosrs:DwarfPlanet', 'geosrs:InterstellarBody', 'geosrs:Moon', 'geosrs:NaturalSatellite', 'geosrs:Planet', 'geosrs:PlanetStatus', 'geosrs:Plutoid', 'geosrs:Star']</p>
+</dd>
+</dl>
+</div>
+<aside class="example">
+<div class="content">
+<p class="paragraph">
+<p>=== Conformance Class: 13-instances.adoc</p>
+</p>
+</div>
+</aside>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">target</dt>
+<dd>
+<p>/req/13-instances.adoc</p>
+</dd>
+<dt class="hdlist1">abstract-test</dt>
+<dd>
+<p>/conf/core/SRS_Literal_Types</p>
+</dd>
+<dt class="hdlist1">abstract-test</dt>
+<dd>
+<p>/conf/core/Coordinate_System_Axis</p>
+</dd>
+<dt class="hdlist1">abstract-test</dt>
+<dd>
+<p>/conf/core/Spheroids</p>
+</dd>
+</dl>
+</div>
+<aside class="example">
+<div class="content">
+<p class="paragraph">
+<p>==== SRS Literal Types</p>
+</p>
+</div>
+</aside>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">target</dt>
+<dd>
+<p>/req/13-instances.adoc/SRS_Literal_Types</p>
+</dd>
+<dt class="hdlist1">test-purpose</dt>
+<dd>
+<p>Check conformance with this requirement</p>
+</dd>
+<dt class="hdlist1">test-method</dt>
+<dd>
+<p>Verify that queries involving ['geosrs:proj4Literal', 'geosrs:projJSONLiteral', 'geosrs:wktLiteral'] return the correct result on a test dataset.</p>
+</dd>
+<dt class="hdlist1">test-method-type</dt>
+<dd>
+<p>Capabilities</p>
+</dd>
+<dt class="hdlist1">reference</dt>
+<dd>
+<p>['geosrs:proj4Literal', 'geosrs:projJSONLiteral', 'geosrs:wktLiteral']</p>
+</dd>
+</dl>
+</div>
+<aside class="example">
+<div class="content">
+<p class="paragraph">
+<p>==== Coordinate System Axis</p>
+</p>
+</div>
+</aside>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">target</dt>
+<dd>
+<p>/req/13-instances.adoc/Coordinate_System_Axis</p>
+</dd>
+<dt class="hdlist1">test-purpose</dt>
+<dd>
+<p>Check conformance with this requirement</p>
+</dd>
+<dt class="hdlist1">test-method</dt>
+<dd>
+<p>Verify that queries involving ['geosrs:down', 'geosrs:east', 'geosrs:north', 'geosrs:south', 'geosrs:up', 'geosrs:west'] return the correct result on a test dataset.</p>
+</dd>
+<dt class="hdlist1">test-method-type</dt>
+<dd>
+<p>Capabilities</p>
+</dd>
+<dt class="hdlist1">reference</dt>
+<dd>
+<p>['geosrs:down', 'geosrs:east', 'geosrs:north', 'geosrs:south', 'geosrs:up', 'geosrs:west']</p>
+</dd>
+</dl>
+</div>
+<aside class="example">
+<div class="content">
+<p class="paragraph">
+<p>==== Spheroids</p>
+</p>
+</div>
+</aside>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">target</dt>
+<dd>
+<p>/req/13-instances.adoc/Spheroids</p>
+</dd>
+<dt class="hdlist1">test-purpose</dt>
+<dd>
+<p>Check conformance with this requirement</p>
+</dd>
+<dt class="hdlist1">test-method</dt>
+<dd>
+<p>Verify that queries involving ['geosrs:GRS1980', 'geosrs:GRS67', 'geosrs:PZ90', 'geosrs:Airy1830', 'geosrs:AiryModified1849', 'geosrs:International1924', 'geosrs:AustralianNationalSpheroid', 'geosrs:Everest1930', 'geosrs:Clarke1866', 'geosrs:Plessis1817', 'geosrs:Danish1876', 'geosrs:Struve1860', 'geosrs:IAG1975', 'geosrs:Clarke1858', 'geosrs:Clarke1880', 'geosrs:Helmert1906', 'geosrs:CGCS2000', 'geosrs:GSK-2011', 'geosrs:Zach1812', 'geosrs:Clarke1880ARC', 'geosrs:Clarke1880IGN', 'geosrs:WGS66', 'geosrs:WGS72', 'geosrs:WGS84', 'geosrs:Krassowsky1940'] return the correct result on a test dataset.</p>
+</dd>
+<dt class="hdlist1">test-method-type</dt>
+<dd>
+<p>Capabilities</p>
+</dd>
+<dt class="hdlist1">reference</dt>
+<dd>
+<p>['geosrs:GRS1980', 'geosrs:GRS67', 'geosrs:PZ90', 'geosrs:Airy1830', 'geosrs:AiryModified1849', 'geosrs:International1924', 'geosrs:AustralianNationalSpheroid', 'geosrs:Everest1930', 'geosrs:Clarke1866', 'geosrs:Plessis1817', 'geosrs:Danish1876', 'geosrs:Struve1860', 'geosrs:IAG1975', 'geosrs:Clarke1858', 'geosrs:Clarke1880', 'geosrs:Helmert1906', 'geosrs:CGCS2000', 'geosrs:GSK-2011', 'geosrs:Zach1812', 'geosrs:Clarke1880ARC', 'geosrs:Clarke1880IGN', 'geosrs:WGS66', 'geosrs:WGS72', 'geosrs:WGS84', 'geosrs:Krassowsky1940']</p>
+</dd>
+</dl>
+</div>
+<aside class="example">
+<div class="content">
+<p class="paragraph">
+<p>== Alignments</p>
+</p>
 <h3 class="discrete" id="_overview">Overview</h3>
 <p class="paragraph">
 <p>The prefixes used for the ontologies mapped to in all following sections are given in the following table.</p>
@@ -9445,8 +10992,9 @@ They may be stated as part of a SPARQL 1.1 Service Description <a href="#SPARQLS
 </tr>
 </tbody>
 </table>
-<section class="sect2">
-<h3 id="_ign_ontology">IGN Ontology</h3>
+<p class="paragraph">
+<p>=== IGN Ontology</p>
+</p>
 <table class="tableblock frame-all grid-all">
 <caption class="title">Table 366. Alignment: IGN Ontology</caption>
 <colgroup>
@@ -9646,9 +11194,9 @@ They may be stated as part of a SPARQL 1.1 Service Description <a href="#SPARQLS
 </tr>
 </tbody>
 </table>
-</section>
-<section class="sect2">
-<h3 id="_iso19111_ontology">ISO19111 Ontology</h3>
+<p class="paragraph">
+<p>=== ISO19111 Ontology</p>
+</p>
 <table class="tableblock frame-all grid-all">
 <caption class="title">Table 367. Alignment: ISO19111 Ontology</caption>
 <colgroup>
@@ -9746,9 +11294,9 @@ They may be stated as part of a SPARQL 1.1 Service Description <a href="#SPARQLS
 </tr>
 </tbody>
 </table>
-</section>
-<section class="sect2">
-<h3 id="_ifc_ontology">IFC Ontology</h3>
+<p class="paragraph">
+<p>=== IFC Ontology</p>
+</p>
 <table class="tableblock frame-all grid-all">
 <caption class="title">Table 368. Alignment: IFC Ontology</caption>
 <colgroup>
@@ -9810,38 +11358,30 @@ They may be stated as part of a SPARQL 1.1 Service Description <a href="#SPARQLS
 </tr>
 </tbody>
 </table>
-</section>
-</div>
-</section>
-<section class="sect1">
-<h2 id="_shacl_shapes">Appendix C: SHACL Shapes</h2>
-<div class="sectionbody">
+<p class="paragraph">
+<p>== SHACL Shapes</p>
+</p>
 <h3 class="discrete" id="_overview_2">Overview</h3>
-</div>
-</section>
-<section class="sect1">
-<h2 id="_application_examples">Appendix D: Application Examples</h2>
-<div class="sectionbody">
+<p class="paragraph">
+<p>== Application Examples</p>
+</p>
 <h3 class="discrete" id="_overview_3">Overview</h3>
-<section class="sect2">
-<h3 id="_minimum_example">Minimum Example</h3>
-
-</section>
-<section class="sect2">
-<h3 id="_elaborate_example">Elaborate Example</h3>
-
-</section>
-</div>
-</section>
-<section class="sect1">
-<h2 id="_json_ld_context">Appendix E: JSON-LD Context</h2>
-<div class="sectionbody">
+<p class="paragraph">
+<p>=== Minimum Example</p>
+</p>
+<p class="paragraph">
+<p>=== Elaborate Example</p>
+</p>
+<p class="paragraph">
+<p>== JSON-LD Context</p>
+</p>
 <p class="paragraph">
 <p>We provide JSON-LD contexts to be compatible with other JSON-based formats which provide coordinate reference system data.</p>
 </p>
 <h3 class="discrete" id="_overview_4">Overview</h3>
-<section class="sect2">
-<h3 id="_compatibility_to_projjson">Compatibility to PROJJSON</h3>
+<p class="paragraph">
+<p>=== Compatibility to PROJJSON</p>
+</p>
 <p class="paragraph">
 <p><a href="https://proj.org/en/stable/specifications/projjson.html">PROJSON</a> is an established format to share geospatial data which has emerge from the PROJ library and encodes the WKT encoding of coordiante references systems.
 By adding a JSON-LD context to the PROJJSON standard we achieve an immediate compatibility with an established standard simply by extending it by one simple statement.</p>
@@ -9854,19 +11394,16 @@ By adding a JSON-LD context to the PROJJSON standard we achieve an immediate com
 <p class="paragraph">
 <p>We provide examples of application of this JSON-LD context with the distribution of this standard.</p>
 </p>
-</section>
-<section class="sect2">
-<h3 id="_compatibility_to_ogcjson">Compatibility to OGCJSON</h3>
+<p class="paragraph">
+<p>=== Compatibility to OGCJSON</p>
+</p>
 <p class="paragraph">
 <p>The OGC CRS working group is aiming towards the creation of their own JSON format for CRS.
 The JSON-LD context we provide aims to be compatible with both PROJJSON and OGCJSON.</p>
 </p>
-</section>
-</div>
-</section>
-<section class="sect1">
-<h2 id="_revision_history">Appendix F: Revision History</h2>
-<div class="sectionbody">
+<p class="paragraph">
+<p>== Revision History</p>
+</p>
 <table class="tableblock frame-all grid-all" style="width: 90%;">
 <colgroup>
 <col style="width: 20%;">
@@ -9894,19 +11431,11 @@ The JSON-LD context we provide aims to be compatible with both PROJJSON and OGCJ
 </tr>
 </tbody>
 </table>
+<p class="paragraph">
+<p>== Bibliography</p>
+</p>
 </div>
-</section>
-<section class="sect1">
-<h2 id="_bibliography">Bibliography</h2>
-<div class="sectionbody">
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<div class="title"></div>
-</td>
-<td class="content">
-<div class="title">Example Bibliography (Delete this note).</div>
+</aside>
 <p class="paragraph">
 <p>The TC has approved Springer LNCS as the official document citation type.
 Springer LNCS is widely used in technical and computer science journals and other publications
@@ -9915,43 +11444,45 @@ Actual References:
 [n] Journal: Author Surname, A.: Title. Publication Title. Volume number, Issue number, Pages Used (Year Published)
 [n] Web: Author Surname, A.: Title, <a class="bare" href="http://Website-Url">http://Website-Url</a></p>
 </p>
-</td>
-</tr>
-</table>
-</div>
-<div class="ulist bibliography">
-<ul class="bibliography">
+<aside class="example">
+<div class="content">
+<div class="ulist">
+<ul>
 <li>
-<p><a></a>[], Ben-Kiki, O., Evans, C., Ingy döt Net: <strong>YAML Ain’t Markup Language,</strong> <a class="bare" href="https://yaml.org/">https://yaml.org/</a></p>
+<p>[<a></a>], Ben-Kiki, O., Evans, C., Ingy döt Net: <strong>YAML Ain’t Markup Language,</strong> <a class="bare" href="https://yaml.org/">https://yaml.org/</a></p>
 </li>
 <li>
-<p><a></a>[], Berners-Lee, T., Fielding, R., Masinter, L.: <strong>IETF RFC 3986 - Uniform Resource Identifier (URI): Generic Syntax,</strong> <a class="bare" href="http://tools.ietf.org/rfc/rfc3986.txt">http://tools.ietf.org/rfc/rfc3986.txt</a></p>
+<p>[<a></a>], Berners-Lee, T., Fielding, R., Masinter, L.: <strong>IETF RFC 3986 - Uniform Resource Identifier (URI): Generic Syntax,</strong> <a class="bare" href="http://tools.ietf.org/rfc/rfc3986.txt">http://tools.ietf.org/rfc/rfc3986.txt</a></p>
 </li>
 <li>
-<p><a></a>[], IANA: <strong>Link Relation Types,</strong> <a class="bare" href="https://www.iana.org/assignments/link-relations/link-relations.xml">https://www.iana.org/assignments/link-relations/link-relations.xml</a></p>
+<p>[<a></a>], IANA: <strong>Link Relation Types,</strong> <a class="bare" href="https://www.iana.org/assignments/link-relations/link-relations.xml">https://www.iana.org/assignments/link-relations/link-relations.xml</a></p>
 </li>
 <li>
-<p><a></a>[], ISO: <strong>ISO 19142:2010 - Geographic information - Web Feature Service</strong> <a class="bare" href="https://www.iso.org/standard/42136.html">https://www.iso.org/standard/42136.html</a></p>
+<p>[<a></a>], ISO: <strong>ISO 19142:2010 - Geographic information - Web Feature Service</strong> <a class="bare" href="https://www.iso.org/standard/42136.html">https://www.iso.org/standard/42136.html</a></p>
 </li>
 <li>
-<p><a></a>[], OGC: <strong>Web Feature Service 2.0,</strong> <a class="bare" href="http://docs.opengeospatial.org/is/09-025r2/09-025r2.html">http://docs.opengeospatial.org/is/09-025r2/09-025r2.html</a></p>
+<p>[<a></a>], OGC: <strong>Web Feature Service 2.0,</strong> <a class="bare" href="http://docs.opengeospatial.org/is/09-025r2/09-025r2.html">http://docs.opengeospatial.org/is/09-025r2/09-025r2.html</a></p>
 </li>
 <li>
-<p><a></a>[], W3C/OGC: <strong>Spatial Data on the Web Best Practices,</strong> W3C Working Group Note 28 September 2017, <a class="bare" href="https://www.w3.org/TR/sdw-bp/">https://www.w3.org/TR/sdw-bp/</a></p>
+<p>[<a></a>], W3C/OGC: <strong>Spatial Data on the Web Best Practices,</strong> W3C Working Group Note 28 September 2017, <a class="bare" href="https://www.w3.org/TR/sdw-bp/">https://www.w3.org/TR/sdw-bp/</a></p>
 </li>
 <li>
-<p><a></a>[], W3C: <strong>Data on the Web Best Practices,</strong> W3C Recommendation 31 January 2017, <a class="bare" href="https://www.w3.org/TR/dwbp/">https://www.w3.org/TR/dwbp/</a></p>
+<p>[<a></a>], W3C: <strong>Data on the Web Best Practices,</strong> W3C Recommendation 31 January 2017, <a class="bare" href="https://www.w3.org/TR/dwbp/">https://www.w3.org/TR/dwbp/</a></p>
 </li>
 <li>
-<p><a></a>[], W3C: <strong>Data Catalog Vocabulary,</strong> W3C Recommendation 16 January 2014, <a class="bare" href="https://www.w3.org/TR/vocab-dcat/">https://www.w3.org/TR/vocab-dcat/</a></p>
+<p>[<a></a>], W3C: <strong>Data Catalog Vocabulary,</strong> W3C Recommendation 16 January 2014, <a class="bare" href="https://www.w3.org/TR/vocab-dcat/">https://www.w3.org/TR/vocab-dcat/</a></p>
 </li>
 </ul>
 </div>
 </div>
+</aside>
+</section>
+</section>
+</div>
 </section>
 <div id="footer">
 <div id="footer-text">
-Last updated 2025-08-15 13:40:00 UTC
+Last updated 2025-08-15 15:58:03 UTC
 </div>
 </div>
 </body>

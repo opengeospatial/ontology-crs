@@ -22,6 +22,8 @@ def formatListAsLinks(thelist,classOrProperty):
             reslist+="<<Property: "+str(item)+",`"+str(item)+"`>> "
     return reslist
 
+reqns="https://opengeospatial.github.io/ontology-crs/"
+
 exont={}
 
 ldcontext={"@context":{"rdfs":"http://www.w3.org/2000/01/rdf-schema#","rdf":"http://www.w3.org/1999/02/22-rdf-syntax-ns#",
@@ -44,6 +46,7 @@ ldcontext={"@context":{"rdfs":"http://www.w3.org/2000/01/rdf-schema#","rdf":"htt
             }
 }
 
+requirementsttl=Graph()
 
 ctesttemplate="""
 [abstract_test,identifier="{{testid}}",conformance-class="{{confclass}}"]
@@ -600,19 +603,32 @@ with open("spec/sections/aa-abstract_test_suite.adoc", 'r',encoding="utf-8") as 
     atestsuitedoc=f.read()
 
 for mod in moduleToRequirements:
+    requirementsttl.add((URIRef(reqns+mod),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef("http://www.opengis.net/def/spec-element/ConformanceClass")))
+    requirementsttl.add((URIRef(reqns+mod),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef("http://www.w3.org/2004/02/skos/core#Collection")))
     atestsuitedoc+="=== Conformance Class: "+str(mod[mod.rfind("-")+1:].replace(".adoc","").replace("_module","")).capitalize()+"\n\n"
     atestsuitedoc+="[conformance_class,identifier=/conf/"+str(mod)+"]\n"
     atestsuitedoc+="."+str(mod)+"\n\n====\n\n[%metadata]\n\n"
     atestsuitedoc+="target:: /req/"+mod+"\n\n"
     for req in moduleToRequirements[mod]:
-        atestsuitedoc+="abstract-test:: /conf/core/"+str(req).replace(" ","_")+"\n\n"
+        atestsuitedoc+="abstract-test:: /conf/"+str(mod)+"/"+str(req).replace(" ","_")+"\n\n"
+        requirementsttl.add((URIRef(reqns+mod),URIRef("http://www.w3.org/2004/02/skos/member"),URIRef(reqns+"/conf/"+str(mod)+"/"+str(req).replace(" ","_"))))
     atestsuitedoc+="====\n\n"
     for req in moduleToRequirements[mod]:
         atestsuitedoc+="==== "+str(req)+"\n\n"
+        requirementsttl.add((URIRef(reqns+"/req/"+str(mod)+"/"+str(req).replace(" ","_")),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef("http://www.opengis.net/def/spec-element/Requirement")))
+        requirementsttl.add((URIRef(reqns+"/req/"+str(mod)+"/"+str(req).replace(" ","_")),URIRef("http://www.w3.org/2004/02/skos/prefLabel"),Literal(str(req))))
+        requirementsttl.add((URIRef(reqns+"/conf/"+str(mod)+"/"+str(req).replace(" ","_")),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef("http://www.opengis.net/def/spec-element/ConformanceTest")))
+        requirementsttl.add((URIRef(reqns+"/conf/"+str(mod)+"/"+str(req).replace(" ","_")),URIRef("http://www.opengis.net/def/spec-element/testType"),URIRef("http://www.opengis.net/def/spec-element/Capabilities")))
+        requirementsttl.add((URIRef(reqns+"/conf/"+str(mod)+"/"+str(req).replace(" ","_")),URIRef("http://www.w3.org/2000/01/rdf-schema#seeAlso"),URIRef(reqns+"/req/"+str(mod)+"/"+str(req).replace(" ","_")))
+        requirementsttl.add((URIRef(reqns+"/conf/"+str(mod)+"/"+str(req).replace(" ","_")),URIRef("http://www.w3.org/2004/02/skos/prefLabel"),Literal(str(req))))
+        requirementsttl.add((URIRef(reqns+"/conf/"+str(mod)+"/"+str(req).replace(" ","_")),URIRef("http://www.w3.org/2004/02/skos/definition"),Literal("check conformance with this requirement")))
+        requirementsttl.add((URIRef(reqns+"/conf/"+str(mod)+"/"+str(req).replace(" ","_")),URIRef("http://www.w3.org/2004/02/skos/prefLabel"),Literal(str(req))))
         atestsuitedoc+=ctesttemplate.replace("{{entities}}",formatListAsLinks(moduleToRequirements[mod][req],"Propert" not in mod)).replace("{{target}}","/req/"+str(mod)+"/"+req.replace(" ","_")).replace("{{testid}}","/conf/"+str(mod)+"/"+req.replace(" ","_")).replace("{{confclass}}","/conf/"+str(mod))+"\n\n"
 
 with open("spec/sections/aa-abstract_test_suite.adoc", 'w',encoding="utf-8") as f:
     f.write(atestsuitedoc)
+
+requirementsttl.serialize("requirements.ttl",format="ttl")
 
 #TODO: Generate conformance classes from exisiting requirements and link them
 

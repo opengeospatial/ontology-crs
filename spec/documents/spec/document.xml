@@ -5576,12 +5576,10 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 
 
 
-</sections><annex id="_3938ce2b-5e94-e536-f3ae-9f949af73093" obligation="normative">
+</sections><annex id="_1fd2e49b-9b3a-4347-b6a6-996913119edf" obligation="normative">
 <title id="_470614e0-369e-cd47-ac8c-e0c157b1a785">Abstract Test Suite</title>
 <floating-title id="_6c4825b5-5b33-43be-8438-e76319911fee" depth="2" type="floating-title">A.0. Overview</floating-title>
-<p id="_16daab4f-cb08-5779-b859-00ddd97ce3a2">This Annex lists tests for the Conformance Classes defined in the main body sections of this Specification with links to their Requirements and test purpose method and type. Conformance classes may be used to signify the compatibility of a given implementation to parts of the CRS Ontology standard. They may be stated as part of a SPARQL 1.1 Service Description  <xref target="SPARQLSERVDESC"/> .</p>
-
-<p id="_c2efafba-b42c-e51a-9416-363cf14b6cb3"><eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>CoordinateSystem</referenceFrom></locality></localityStack><display-text>geosrs:CoordinateSystem</display-text></eref></p>
+<p id="_9b50ea30-51c1-09e4-2492-039aaaa61290">This Annex lists tests for the Conformance Classes defined in the main body sections of this Specification with links to their Requirements and test purpose method and type. Conformance classes may be used to signify the compatibility of a given implementation to parts of the CRS Ontology standard. They may be stated as part of a SPARQL 1.1 Service Description  <xref target="SPARQLSERVDESC"/> .</p>
 
 <clause id="_5c282ef2-c660-78ea-8d2a-aec798ec8e0c" obligation="normative">
 <title id="_0c4d7a8f-310f-150f-2910-890355e0075f">Conformance Class: Core</title>

@@ -582,10 +582,10 @@ for prefix in alignmentadoc:
         alignments+=prefixdict[aligns]
     alignments+="|===\n\n"
 
-with open("spec/sections/aa-alignments.adoc", 'r',encoding="utf-8") as f:
+with open("spec/sections/ab-alignments.adoc", 'r',encoding="utf-8") as f:
     alignmentdoc=f.read()
 
-with open("spec/sections/aa-alignments.adoc", 'w',encoding="utf-8") as f:
+with open("spec/sections/ab-alignments.adoc", 'w',encoding="utf-8") as f:
     f.write(alignmentdoc[0:alignmentdoc.find("=== IGN CRS Ontology")]+alignments)
 
 galigns.serialize(destination="alignments.ttl")

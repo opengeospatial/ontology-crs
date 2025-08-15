@@ -10,28 +10,3 @@ Conformance classes may be used to signify the compatibility of a given implemen
 They may be stated as part of a SPARQL 1.1 Service Description <<SPARQLSERVDESC>> .
 
 
-=== Conformance Class: Core
-
-[conformance_class,identifier="/conf/core"]
-.Core
-====
-[%metadata]
-target:: /req/core
-abstract-test:: /conf/core/coordinate_reference_system_types
-abstract-test:: /conf/core/3d_coordinate_systems
-abstract-test:: /conf/core/celestial_coordinate_systems
-abstract-test:: /conf/core/temporal_coordinate_systems
-abstract-test:: /conf/core/coordinate_system_components
-====
-
-==== SPARQL
-
-[abstract_test,identifier="/conf/core/sparql-protocol",conformance-class="/conf/core"]
-====
-[%metadata]
-target:: /req/core/sparql-protocol
-test-purpose:: Check conformance with this requirement
-test-method:: Verify that the implementation accepts SPARQL queries and returns the correct results in the correct format, according to the SPARQL Query Language for RDF, the SPARQL Protocol for RDF and SPARQL Query Results XML Format W3C specifications.
-test-method-type:: Capabilities
-reference:: <<sparql-protocol>>
-====

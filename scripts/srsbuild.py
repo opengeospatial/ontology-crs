@@ -585,6 +585,14 @@ for file in os.listdir(directory):
     else:
         continue
 
+#Generate Conformance Classes
+
+with open("spec/sections/aa-abstract_test_suite.adoc", 'r',encoding="utf-8") as f:
+    atestsuitedoc=f.read()
+
+#TODO: Generate conformance classes from exisiting requirements and link them
+
+
 # Generate alignments
 
 alignments=""

@@ -853,6 +853,9 @@ Together with several subtypes of coordnate reference system, these definitions 
 </p>
 </div>
 </aside>
+<p class="paragraph">
+<p>Coordinate reference systems are typed according to their area of application, e.g. Geodetic vs. Engineering vs. TemporalCRS and by their ability to contain further</p>
+</p>
 <section class="sect4">
 <h5 id="_class_geosrsboundcrs">Class: geosrs:BoundCRS</h5>
 <table class="tableblock frame-all grid-all spread">
@@ -9317,7 +9320,85 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 </div>
 </section>
 <section class="sect1">
-<h2 id="_alignments">Appendix A: Alignments</h2>
+<h2 id="_abstract_test_suite">Appendix A: Abstract Test Suite</h2>
+<div class="sectionbody">
+<h3 class="discrete" id="_a_0_overview">A.0. Overview</h3>
+<p class="paragraph">
+<p>This Annex lists tests for the Conformance Classes defined in the main body sections of this Specification with links to their Requirements and test purpose method and type.
+Conformance classes may be used to signify the compatibility of a given implementation to parts of the CRS Ontology standard.
+They may be stated as part of a SPARQL 1.1 Service Description <a href="#SPARQLSERVDESC">[SPARQLSERVDESC]</a> .</p>
+</p>
+<section class="sect2">
+<h3 id="_conformance_class_core">Conformance Class: Core</h3>
+<aside class="example">
+<div class="title">Example 50. Core</div>
+<div class="content">
+<div class="dlist">
+<dl>
+<dt class="hdlist1">target</dt>
+<dd>
+<p>/req/core</p>
+</dd>
+<dt class="hdlist1">abstract-test</dt>
+<dd>
+<p>/conf/core/coordinate_reference_system_types</p>
+</dd>
+<dt class="hdlist1">abstract-test</dt>
+<dd>
+<p>/conf/core/3d_coordinate_systems</p>
+</dd>
+<dt class="hdlist1">abstract-test</dt>
+<dd>
+<p>/conf/core/celestial_coordinate_systems</p>
+</dd>
+<dt class="hdlist1">abstract-test</dt>
+<dd>
+<p>/conf/core/temporal_coordinate_systems</p>
+</dd>
+<dt class="hdlist1">abstract-test</dt>
+<dd>
+<p>/conf/core/coordinate_system_components</p>
+</dd>
+</dl>
+</div>
+</div>
+</aside>
+<section class="sect3">
+<h4 id="_sparql">SPARQL</h4>
+<aside class="example">
+<div class="content">
+<div class="dlist">
+<dl>
+<dt class="hdlist1">target</dt>
+<dd>
+<p>/req/core/sparql-protocol</p>
+</dd>
+<dt class="hdlist1">test-purpose</dt>
+<dd>
+<p>Check conformance with this requirement</p>
+</dd>
+<dt class="hdlist1">test-method</dt>
+<dd>
+<p>Verify that the implementation accepts SPARQL queries and returns the correct results in the correct format, according to the SPARQL Query Language for RDF, the SPARQL Protocol for RDF and SPARQL Query Results XML Format W3C specifications.</p>
+</dd>
+<dt class="hdlist1">test-method-type</dt>
+<dd>
+<p>Capabilities</p>
+</dd>
+<dt class="hdlist1">reference</dt>
+<dd>
+<p><a href="#sparql-protocol">[sparql-protocol]</a></p>
+</dd>
+</dl>
+</div>
+</div>
+</aside>
+</section>
+</section>
+</div>
+</section>
+<section class="sect1">
+<h2 id="_alignments">Appendix B: Alignments</h2>
 <div class="sectionbody">
 <h3 class="discrete" id="_overview">Overview</h3>
 <p class="paragraph">
@@ -9733,13 +9814,13 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 </div>
 </section>
 <section class="sect1">
-<h2 id="_shacl_shapes">Appendix B: SHACL Shapes</h2>
+<h2 id="_shacl_shapes">Appendix C: SHACL Shapes</h2>
 <div class="sectionbody">
 <h3 class="discrete" id="_overview_2">Overview</h3>
 </div>
 </section>
 <section class="sect1">
-<h2 id="_application_examples">Appendix C: Application Examples</h2>
+<h2 id="_application_examples">Appendix D: Application Examples</h2>
 <div class="sectionbody">
 <h3 class="discrete" id="_overview_3">Overview</h3>
 <section class="sect2">
@@ -9753,7 +9834,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 </div>
 </section>
 <section class="sect1">
-<h2 id="_json_ld_context">Appendix D: JSON-LD Context</h2>
+<h2 id="_json_ld_context">Appendix E: JSON-LD Context</h2>
 <div class="sectionbody">
 <p class="paragraph">
 <p>We provide JSON-LD contexts to be compatible with other JSON-based formats which provide coordinate reference system data.</p>
@@ -9777,14 +9858,14 @@ By adding a JSON-LD context to the PROJJSON standard we achieve an immediate com
 <section class="sect2">
 <h3 id="_compatibility_to_ogcjson">Compatibility to OGCJSON</h3>
 <p class="paragraph">
-<p>The OGC CRS working groups is aiming towards the creation of their own JSON format for CRS.
+<p>The OGC CRS working group is aiming towards the creation of their own JSON format for CRS.
 The JSON-LD context we provide aims to be compatible with both PROJJSON and OGCJSON.</p>
 </p>
 </section>
 </div>
 </section>
 <section class="sect1">
-<h2 id="_revision_history">Appendix E: Revision History</h2>
+<h2 id="_revision_history">Appendix F: Revision History</h2>
 <div class="sectionbody">
 <table class="tableblock frame-all grid-all" style="width: 90%;">
 <colgroup>
@@ -9870,7 +9951,7 @@ Actual References:
 </section>
 <div id="footer">
 <div id="footer-text">
-Last updated 2025-08-14 13:34:57 UTC
+Last updated 2025-08-15 13:40:00 UTC
 </div>
 </div>
 </body>

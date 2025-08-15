@@ -17,9 +17,9 @@ def formatListAsLinks(thelist,classOrProperty):
     reslist=""
     for item in thelist:
         if classOrProperty:
-            reslist+="<<Class: "+str(item)+">>"
+            reslist+="<<Class: "+str(item)+">> "
         else:
-            reslist+="<<Property: "+str(item)+">>"
+            reslist+="<<Property: "+str(item)+">> "
     return reslist
 
 exont={}

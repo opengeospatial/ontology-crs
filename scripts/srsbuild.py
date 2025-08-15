@@ -592,7 +592,11 @@ with open("spec/sections/aa-abstract_test_suite.adoc", 'r',encoding="utf-8") as 
 
 for mod in moduleToRequirements:
     for req in moduleToRequirements[mod]:
-        atestsuitedoc+=ctesttemplate.replace("{{entities}}",str(moduleToRequirements[mod][req]))
+        atestsuitedoc+=ctesttemplate
+            .replace("{{entities}}",str(moduleToRequirements[mod][req]))
+            .replace("{{target}}","/req/"+str(mod)+"/"+req.replace(" ","_"))
+            .replace("{{testid}}","/conf/"+str(mod)+"/"+req.replace(" ","_"))
+            .replace("{{confclass}}","/conf/"+str(mod))
 
 with open("spec/sections/aa-abstract_test_suite.adoc", 'w',encoding="utf-8") as f:
     f.write(atestsuitedoc)

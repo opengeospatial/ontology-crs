@@ -592,7 +592,7 @@ with open("spec/sections/aa-abstract_test_suite.adoc", 'r',encoding="utf-8") as 
 
 for mod in moduleToRequirements:
     for req in moduleToRequirements[mod]:
-        atestsuitedoc+=ctesttemplate.replace("{{entities}}",moduleToRequirements[req])
+        atestsuitedoc+=ctesttemplate.replace("{{entities}}",moduleToRequirements[mod][req])
 
 with open("spec/sections/aa-abstract_test_suite.adoc", 'w',encoding="utf-8") as f:
     f.write(atestsuitedoc)

@@ -600,7 +600,7 @@ with open("spec/sections/aa-abstract_test_suite.adoc", 'r',encoding="utf-8") as 
     atestsuitedoc=f.read()
 
 for mod in moduleToRequirements:
-    atestsuitedoc+="=== Conformance Class: "+str(mod.replace(".adoc","").replace("_module","")[mod.rfind("-")+1:]).capitalize()+"\n\n"
+    atestsuitedoc+="=== Conformance Class: "+str(mod[mod.rfind("-")+1:].replace(".adoc","").replace("_module","")).capitalize()+"\n\n"
     atestsuitedoc+="[conformance_class,identifier=/conf/"+str(mod)+"]\n"
     atestsuitedoc+="."+str(mod)+"\n\n====\n\n[%metadata]\n\n"
     atestsuitedoc+="target:: /req/"+mod+"\n\n"

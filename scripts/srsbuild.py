@@ -13,6 +13,15 @@ closetag="}}"
 def convertCamelToSnake(strr):
  return pattern.sub('_', strr).lower()
 
+def formatListAsLinks(thelist,classOrProperty):
+    reslist=""
+    for item in thelist:
+        if classOrProperty:
+            reslist+="<<Class: "+str(item)+">>"
+        else:
+            reslist+="<<Property: "+str(item)+">>"
+    return reslist
+
 exont={}
 
 ldcontext={"@context":{"rdfs":"http://www.w3.org/2000/01/rdf-schema#","rdf":"http://www.w3.org/1999/02/22-rdf-syntax-ns#",
@@ -591,7 +600,7 @@ with open("spec/sections/aa-abstract_test_suite.adoc", 'r',encoding="utf-8") as 
     atestsuitedoc=f.read()
 
 for mod in moduleToRequirements:
-    atestsuitedoc+="=== Conformance Class: "+str(mod.replace(".doc")[mod.rfind("-")+1:]).capitalize()+"\n\n"
+    atestsuitedoc+="=== Conformance Class: "+str(mod.replace(".doc","")[mod.rfind("-")+1:]).capitalize()+"\n\n"
     atestsuitedoc+="[conformance_class,identifier=/conf/"+str(mod)+"]\n"
     atestsuitedoc+="."+str(mod)+"\n\n====\n\n[%metadata]\n\n"
     atestsuitedoc+="target:: /req/"+mod+"\n\n"
@@ -600,7 +609,7 @@ for mod in moduleToRequirements:
     atestsuitedoc+="====\n\n"
     for req in moduleToRequirements[mod]:
         atestsuitedoc+="==== "+str(req)+"\n\n"
-        atestsuitedoc+=ctesttemplate.replace("{{entities}}",str(moduleToRequirements[mod][req])).replace("{{target}}","/req/"+str(mod)+"/"+req.replace(" ","_")).replace("{{testid}}","/conf/"+str(mod)+"/"+req.replace(" ","_")).replace("{{confclass}}","/conf/"+str(mod))+"\n\n"
+        atestsuitedoc+=ctesttemplate.replace("{{entities}}",formatListAsLinks(moduleToRequirements[mod][req]))).replace("{{target}}","/req/"+str(mod)+"/"+req.replace(" ","_")).replace("{{testid}}","/conf/"+str(mod)+"/"+req.replace(" ","_")).replace("{{confclass}}","/conf/"+str(mod))+"\n\n"
 
 with open("spec/sections/aa-abstract_test_suite.adoc", 'w',encoding="utf-8") as f:
     f.write(atestsuitedoc)

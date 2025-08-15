@@ -590,6 +590,13 @@ for file in os.listdir(directory):
 with open("spec/sections/aa-abstract_test_suite.adoc", 'r',encoding="utf-8") as f:
     atestsuitedoc=f.read()
 
+for mod in moduleToRequirements:
+    for req in moduleToRequirements[mod]:
+        atestsuitedoc+=ctesttemplate.replace("{{entities}}",moduleToRequirements[req])
+
+with open("spec/sections/aa-abstract_test_suite.adoc", 'w',encoding="utf-8") as f:
+    f.write(atestsuitedoc)
+
 #TODO: Generate conformance classes from exisiting requirements and link them
 
 

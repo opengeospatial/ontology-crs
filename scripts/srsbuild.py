@@ -619,7 +619,7 @@ for mod in moduleToRequirements:
         requirementsttl.add((URIRef(reqns+"/req/"+str(mod)+"/"+str(req).replace(" ","_")),URIRef("http://www.w3.org/2004/02/skos/prefLabel"),Literal(str(req))))
         requirementsttl.add((URIRef(reqns+"/conf/"+str(mod)+"/"+str(req).replace(" ","_")),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef("http://www.opengis.net/def/spec-element/ConformanceTest")))
         requirementsttl.add((URIRef(reqns+"/conf/"+str(mod)+"/"+str(req).replace(" ","_")),URIRef("http://www.opengis.net/def/spec-element/testType"),URIRef("http://www.opengis.net/def/spec-element/Capabilities")))
-        requirementsttl.add((URIRef(reqns+"/conf/"+str(mod)+"/"+str(req).replace(" ","_")),URIRef("http://www.w3.org/2000/01/rdf-schema#seeAlso"),URIRef(reqns+"/req/"+str(mod)+"/"+str(req).replace(" ","_")))
+        requirementsttl.add((URIRef(reqns+"/conf/"+str(mod)+"/"+str(req).replace(" ","_")),URIRef("http://www.w3.org/2000/01/rdf-schema#seeAlso"),URIRef(reqns+"/req/"+str(mod)+"/"+str(req).replace(" ","_"))))
         requirementsttl.add((URIRef(reqns+"/conf/"+str(mod)+"/"+str(req).replace(" ","_")),URIRef("http://www.w3.org/2004/02/skos/prefLabel"),Literal(str(req))))
         requirementsttl.add((URIRef(reqns+"/conf/"+str(mod)+"/"+str(req).replace(" ","_")),URIRef("http://www.w3.org/2004/02/skos/definition"),Literal("check conformance with this requirement")))
         requirementsttl.add((URIRef(reqns+"/conf/"+str(mod)+"/"+str(req).replace(" ","_")),URIRef("http://www.w3.org/2004/02/skos/prefLabel"),Literal(str(req))))

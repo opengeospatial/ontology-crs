@@ -695,7 +695,7 @@ for ad in moduleToAdoc:
 		if len(reqs)>0:
 			f.write("[requirements_class,identifier=\"/req/"+str(ad).replace(".adoc","")[str(ad).find("-")+1:]+"\",subject=\"Implementation Specification\"]\n."+str(ad)+" Extension\n\n====\n")
 			for req in moduleToRequirements[ad]:
-				f.write("requirement:: /req/"+str(req).replace(" ","_")+"\n")
+				f.write("requirement:: /req/"+str(ad).replace(".adoc","")[str(ad).find("-")+1:]+"/"+str(req).replace(" ","_")+"\n")
 			f.write("====\n")
 			for req in sorted(moduleToRequirements[ad].keys()):
 				if "Property" in req or "Properties" in req:
@@ -720,7 +720,7 @@ for ad in moduleToAdoc:
 				if len(moduleToRequirements[ad][req])>0:
 					reqtext=reqtext.replace(", <<"+str(last), " and <<"+str(last))
 				reqtext+=" to be used in SPARQL graph patterns."
-				f.write("==== "+str(req)+"\n\n[requirement,identifier=\"/req/"+str(req).replace(" ","_")+"\"]\n\n."+str(req)+"\n====\n"+str(reqtext)+"\n====\n\n")
+				f.write("==== "+str(req)+"\n\n[requirement,identifier=\"/req/"+str(ad).replace(".adoc","")[str(ad).find("-")+1:]+"/"+str(req).replace(" ","_")+"\"]\n\n."+str(req)+"\n====\n"+str(reqtext)+"\n====\n\n")
 				print(str(ad)+" - "+str(req))
 				print(moduleToRequirements[ad][req])
 				if req in reqToDesc:

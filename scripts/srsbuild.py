@@ -603,7 +603,7 @@ with open("spec/sections/aa-abstract_test_suite.adoc", 'r',encoding="utf-8") as 
     atestsuitedoc=f.read()
 
 for mod in moduleToRequirements:
-    rqid=str(mod)[str(mod).find("-")+1:]+.replace(".adoc","").replace("_module","")
+    rqid=str(mod)[str(mod).find("-")+1:].replace(".adoc","").replace("_module","")
     requirementsttl.add((URIRef(reqns+str(rqid)),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef("http://www.opengis.net/def/spec-element/ConformanceClass")))
     requirementsttl.add((URIRef(reqns+str(rqid)),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef("http://www.w3.org/2004/02/skos/core#Collection")))
     atestsuitedoc+="=== Conformance Class: "+str(mod[mod.rfind("-")+1:].replace(".adoc","").replace("_module","")).capitalize()+"\n\n"

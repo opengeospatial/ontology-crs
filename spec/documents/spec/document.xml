@@ -6323,28 +6323,200 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 </tr></tbody>
 </table>
 </clause>
-</annex><annex id="_8853d7f0-9544-1a9a-7aab-a4e4461449be" obligation="informative">
+</annex><annex id="_eb8728d0-ec75-6c2e-a8e4-b8cfb05d59ae" obligation="informative">
 <title id="_8dd35ff6-f41c-83ae-58df-a3465fa8defb">SHACL Shapes</title>
 <floating-title id="_2e1e93d4-a76e-4318-c6c8-bc1034df4ab7" depth="2" type="floating-title">Overview</floating-title>
-<clause id="_2b77c77b-8b8e-7791-a41a-4e1d455f821a" obligation="informative">
-<title id="_93b72c7f-013d-2c44-24f5-7b413538fe41">SHACL Shapes: Datum</title>
-<table id="_8cda70d7-89a2-6465-7bb5-24262e700d1d">
-<name id="_7694e88c-a460-7f89-e28a-69205e9fc5b7">Datum</name>
-<thead><tr id="_8176f248-06a1-c540-e41b-23310a50dddb"><th id="_db4f8427-7d60-a022-02c9-d0eacce1973b" valign="middle" align="left">Label</th>
-<th id="_f8d0a4b7-e59a-7233-7cc2-fc96b9994766" valign="middle" align="left">TargetNode</th>
-<th id="_d9d2cb4c-ea52-5e97-fc99-692fe70edfb1" valign="middle" align="left">Property</th>
-<th id="_79a5db46-279b-f433-90e0-e2961687a958" valign="middle" align="left">Class</th>
-<th id="_a88beb20-38cf-9557-9226-13f401627984" valign="middle" align="left">MinCount</th>
-<th id="_1d1ea20e-5dc7-ba1d-fb38-7800f5a79785" valign="middle" align="left">MaxCount</th>
-<th id="_5571abe4-d4b8-2731-9ebb-4bac7b8c01b0" valign="middle" align="left">Comment</th>
+<clause id="_d411aae9-fea7-0fcd-a5b8-e4602c939cb8" obligation="informative">
+<title id="_a986e643-0eef-fbec-790e-b99044c29493">SHACL Shapes: Cs</title>
+<table id="_b328b410-b5c1-332c-24ae-e7bd3ac0ace1">
+<name id="_bd4d94a8-1064-4178-4466-6348f7e93162">Cs</name>
+<thead><tr id="_2df30484-e5c1-1ee2-fbb2-fcb4a5c43572"><th id="_ce37facd-1cda-d2b9-edb0-4d592ae02421" valign="middle" align="left">Label</th>
+<th id="_d477d23d-8e1a-a0f0-9d44-eca16e15f45d" valign="middle" align="left">TargetNode</th>
+<th id="_7d8b252e-0985-b10f-f370-9c275b9d6202" valign="middle" align="left">Property</th>
+<th id="_ad8be100-be10-5f28-d013-16c800775fd5" valign="middle" align="left">Class</th>
+<th id="_d9161a4f-26b3-7a8c-77a8-04dff3d1d666" valign="middle" align="left">MinCount</th>
+<th id="_eb241a0d-43b8-7a0f-2f71-66abc8220d04" valign="middle" align="left">MaxCount</th>
+<th id="_d64bd14b-b34a-a2ea-3b43-39213d32e8c1" valign="middle" align="left">Comment</th>
 </tr></thead>
-<tbody><tr id="_f93aa778-d43a-824c-a56f-6a8284b5d8f3"><td id="_7ced2767-483d-e8de-d880-825c7488cc30" valign="middle" align="left">Shape S1</td>
-<td id="_54623f78-4701-301f-e36b-3f5ad4fca78f" valign="middle" align="left">geosrs:ParametricDatum</td>
-<td id="_323c5b7c-2b60-6abe-268d-6b4e9d2d151b" valign="middle" align="left">geosrs:definingParameter</td>
-<td id="_8e35a04f-a240-1157-9b27-3306c68d7f5a" valign="middle" align="left">geosrs:DefiningParameter</td>
-<td id="_b0e58688-6810-f729-f49a-623a118a16cb" valign="middle" align="left">1</td>
-<td id="_0820e41e-df47-0d94-3976-f7846c49e2cb" valign="middle" align="left">-</td>
-<td id="_bac0c153-5a9d-d9a2-0e2e-8f1f5dd43d89" valign="middle" align="left">A parametric datum should have at least one defining parameter</td>
+<tbody><tr id="_8697b1d6-0779-b029-a4cf-34117070536d"><td id="_e456acff-09ef-f94f-d48f-35091d7a97e2" valign="middle" align="left">Shape S1</td>
+<td id="_89995270-e830-899b-291f-2fb22202245c" valign="middle" align="left">geosrs:3DCoordinateSystem</td>
+<td id="_9603fda8-fa4b-36d2-cade-1a55504f6ca1" valign="middle" align="left">geosrs:axis</td>
+<td id="_cf3b5f99-ed55-814f-5741-eba127e890a1" valign="middle" align="left">geosrs:CoordinateSystemAxis</td>
+<td id="_53f050ab-db61-5e8a-8c64-333d4a3e5e85" valign="middle" align="left">3</td>
+<td id="_89a1e819-98c4-7a02-e458-85559360b30f" valign="middle" align="left">-</td>
+<td id="_5bc015b7-922f-9568-6be3-f80e4c81dfed" valign="middle" align="left">A 3D coordinate system should have at least three axis</td>
+</tr><tr id="_14668d47-32fd-26b5-27d6-5c0b03600666"><td id="_7892e7c6-ad42-c380-1c24-138b454cc34e" valign="middle" align="left">Shape S2</td>
+<td id="_61f15ef0-eb28-7027-34a1-4b681fab36e1" valign="middle" align="left">geosrs:ConicalCoordinateSystem</td>
+<td id="_67ec5e19-8808-a5ea-be82-83860ec72f3b" valign="middle" align="left">geosrs:axis</td>
+<td id="_9d40c38e-0240-b539-da1d-12048c45c334" valign="middle" align="left">geosrs:CoordinateSystemAxis</td>
+<td id="_54cf6e49-0a12-868c-ba7c-3223b5b502e0" valign="middle" align="left">3</td>
+<td id="_cff79fc4-0784-1955-dd90-02f062df5d93" valign="middle" align="left">-</td>
+<td id="_ab9a3493-5f75-224a-7d3a-f6c33997f81d" valign="middle" align="left">A conical coordinate system should have at least three axis</td>
+</tr><tr id="_83d6f67e-593e-0dc2-943f-0dbbff548d69"><td id="_4ae452ad-f813-e325-cc86-231ac105ad83" valign="middle" align="left">Shape S3</td>
+<td id="_5a944c64-fda7-e21b-a99f-d8b1ecfd54c6" valign="middle" align="left">geosrs:CoordinateSystem</td>
+<td id="_e1eaf4b3-233d-5e90-d5fd-b1a6ae3730aa" valign="middle" align="left">geosrs:axis</td>
+<td id="_c0321ac3-48cf-0eb1-c997-b7dbd06cc6f5" valign="middle" align="left">geosrs:CoordinateSystemAxis</td>
+<td id="_36f83387-997f-0487-f47b-86017b81ad45" valign="middle" align="left">1</td>
+<td id="_8ac63653-9b2e-7bc5-2cf7-1f55ef5e185f" valign="middle" align="left">-</td>
+<td id="_888d01b2-942f-7de9-de45-30f2dd364f1c" valign="middle" align="left">A coordinate system should have at least one axis</td>
+</tr><tr id="_49195a9f-0b6a-b6c8-1a71-5fd2d7d3a01a"><td id="_9da43f3d-e483-edcb-5678-1955f1b8abcb" valign="middle" align="left">Shape S4</td>
+<td id="_600e5ad4-080f-50c6-d91d-dc4f74b1669d" valign="middle" align="left">geosrs:CoordinateSystemAxis</td>
+<td id="_75ea5011-3b9e-7042-c34e-3fb2a0fcef48" valign="middle" align="left">geosrs:axisDirection</td>
+<td id="_8a6745dc-be82-d119-f94f-39fe3fe0ab6e" valign="middle" align="left">geosrs:AxisDirection</td>
+<td id="_9a92fb2f-9208-ce8a-e818-dc500d186ccb" valign="middle" align="left">1</td>
+<td id="_0a247898-9474-4dfd-b258-635981806326" valign="middle" align="left">1</td>
+<td id="_14b45256-a4f2-761d-1e6b-078ab1dad623" valign="middle" align="left">A coordinate system axis should have exactly one axis direction</td>
+</tr><tr id="_5c8b6d5b-bf54-778c-4173-747ef706478e"><td id="_a777d226-9511-63d6-9fab-92b364944c2c" valign="middle" align="left">Shape S5</td>
+<td id="_5b015d34-0fc6-f293-5711-8f91bb9b6f9a" valign="middle" align="left">geosrs:CylindricalCoordinateSystem</td>
+<td id="_5a3f14f7-992c-0586-c855-b1bbca0f7b14" valign="middle" align="left">geosrs:axis</td>
+<td id="_55110565-ff47-56d1-480b-c271aa74c693" valign="middle" align="left">geosrs:CoordinateSystemAxis</td>
+<td id="_ab4cad7b-4975-dbc2-ee20-f157cb039515" valign="middle" align="left">3</td>
+<td id="_bfa9662e-4b69-1f4e-4e93-5a6fb77653ca" valign="middle" align="left">-</td>
+<td id="_6a835d91-e84d-50ee-b39b-79de3e047c55" valign="middle" align="left">A cylindrical coordinate system should have at least three axis</td>
+</tr><tr id="_6e97cda4-4ab2-0a98-270a-363450b557bd"><td id="_18f172ba-0065-d33e-7c0e-7c476fd10d82" valign="middle" align="left">Shape S6</td>
+<td id="_d81f6243-8ed5-ba14-5d1b-93cb4ef494bb" valign="middle" align="left">geosrs:PlanarCoordinateSystem</td>
+<td id="_d869a41c-8e8b-4293-24d8-4e0c710c7ccc" valign="middle" align="left">geosrs:axis</td>
+<td id="_d0a6155b-7317-702d-14b0-79ca75920da0" valign="middle" align="left">geosrs:CoordinateSystemAxis</td>
+<td id="_6ea25f06-918b-77f6-4740-83bddcda4dfb" valign="middle" align="left">2</td>
+<td id="_28f018b7-3bd2-0e2f-b1ae-e666cd2285cd" valign="middle" align="left">-</td>
+<td id="_9e5082b8-6f75-088d-01bc-a0b945cb65aa" valign="middle" align="left">A cylindrical coordinate system should have at least two axis</td>
+</tr><tr id="_490baa1a-ab4a-2e02-75da-39500fa012fd"><td id="_abf4b4b5-75c0-3b12-d066-84474866235d" valign="middle" align="left">Shape S7</td>
+<td id="_b44e0187-6a27-1ac9-eb3b-abc6abf31435" valign="middle" align="left">geosrs:TemporalCoordinateSystem</td>
+<td id="_5d20f213-8c90-0efe-c7e5-103ffcaab3c1" valign="middle" align="left">geosrs:axis</td>
+<td id="_c8401b88-4e3f-eb31-ea62-2aebebcf6416" valign="middle" align="left">geosrs:CoordinateSystemAxis</td>
+<td id="_959a8a45-6297-571d-a3e0-074efe4e4982" valign="middle" align="left">1</td>
+<td id="_d1680d0e-73e6-0854-f702-32b26c40be4c" valign="middle" align="left">1</td>
+<td id="_bf1c0a67-9ffd-3500-1301-f2002c67f7b4" valign="middle" align="left">A temporal coordinate system should have exactly one axis</td>
+</tr></tbody>
+</table>
+</clause>
+
+<clause id="_f5a9d6fb-9fa6-1a00-a36e-d43ab51e4ecf" obligation="informative">
+<title id="_fcee1d88-f034-15cb-916f-ff1b1f42050b">SHACL Shapes: Core</title>
+<table id="_556181d2-ea1b-8d96-b1fa-b93268e5479d">
+<name id="_676dbef4-462a-fc7f-75f0-dff47d42b7bb">Core</name>
+<thead><tr id="_49d8c562-4427-dfb1-a91a-b7094a693db6"><th id="_6b09499e-0743-5569-8361-bae75616f667" valign="middle" align="left">Label</th>
+<th id="_182220ae-048f-d616-ef39-27ed1a83dd1d" valign="middle" align="left">TargetNode</th>
+<th id="_1833fd0d-054d-5779-8458-fccd1bda0264" valign="middle" align="left">Property</th>
+<th id="_4c620a78-c129-254d-aeac-cebf8dca752b" valign="middle" align="left">Class</th>
+<th id="_88927161-8afa-f2bc-b6de-69a1aff144fb" valign="middle" align="left">MinCount</th>
+<th id="_c6ccc5a4-ee15-97fa-3a45-1fdbc14695e2" valign="middle" align="left">MaxCount</th>
+<th id="_4fca0f6d-9b95-1a5d-988f-6f5cd84d2ef9" valign="middle" align="left">Comment</th>
+</tr></thead>
+<tbody><tr id="_8e1c2ed5-8b62-bd16-2403-d811d5122056"><td id="_f4dccfce-619b-58ec-9b1b-1edb9e7a5e1f" valign="middle" align="left">Shape S1</td>
+<td id="_7dc64f1b-cff5-99f2-128e-f5075e15f8a1" valign="middle" align="left">geosrs:CRS</td>
+<td id="_3e7f93ff-1f9f-8a90-e619-b87ef72b8038" valign="middle" align="left">geosrs:coordinateSystem</td>
+<td id="_5a3937fe-68c7-1e75-2dd1-2cde709970aa" valign="middle" align="left">geosrs:CoordinateSystem</td>
+<td id="_f2c419fd-669d-4db7-822f-992e586643fc" valign="middle" align="left">1</td>
+<td id="_e434062d-2ba4-fdbf-3bca-960c132d0d98" valign="middle" align="left">1</td>
+<td id="_eacb07c2-c84a-036f-91f2-b44004127915" valign="middle" align="left">A coordinate reference system should have exactly one coordinate system</td>
+</tr><tr id="_fd65be9a-3c89-8639-ad34-d94e53209785"><td id="_ac79d38b-b717-9186-e2fd-a0964a2b89a0" valign="middle" align="left">Shape S2</td>
+<td id="_1bc7e3fa-f1a5-85f9-40c0-22b6c286a91d" valign="middle" align="left">geosrs:CRS</td>
+<td id="_c657160a-41ec-54a0-7b91-1d38bd7fcf9d" valign="middle" align="left">geosrs:domainOfValidity</td>
+<td id="_75bc4228-aeff-fcbf-e0cb-a0b14076ce9f" valign="middle" align="left">geosrs:AreaOfUse</td>
+<td id="_b8da021e-f655-0b2c-7bcf-5df8e3c40b9f" valign="middle" align="left">1</td>
+<td id="_7fde69b2-6d3b-7b8a-8232-875c42328497" valign="middle" align="left">-</td>
+<td id="_830416fd-53cd-0b4e-5a9e-6da864275094" valign="middle" align="left">A coordinate reference system should have at least one area of use</td>
+</tr><tr id="_f754ef0e-5727-720b-9b0c-e685c1c061ee"><td id="_26dabd08-410d-1c86-c684-b1aac5c0bcd1" valign="middle" align="left">Shape S3</td>
+<td id="_bfe676ee-62d0-8350-bfdd-1e51967fdc3f" valign="middle" align="left">geosrs:CRS</td>
+<td id="_38637805-29ce-e06a-f48d-7646aa5681f5" valign="middle" align="left">geosrs:datum</td>
+<td id="_bf162cc6-3dbe-30c8-d0ca-a9f10c70b311" valign="middle" align="left">geosrs:Datum</td>
+<td id="_a419b789-baff-a696-0f83-512699c0bfb5" valign="middle" align="left">1</td>
+<td id="_cdee534f-9ed3-b79f-263f-f89c58050de5" valign="middle" align="left">1</td>
+<td id="_962ba017-1c11-af80-a23f-31c02b43c7e5" valign="middle" align="left">A coordinate reference system should have exactly one datum</td>
+</tr><tr id="_887b14db-ad02-dae5-2025-75e659aa9f35"><td id="_be4fe552-c9ea-4ae4-e50e-b4e37a57ec1f" valign="middle" align="left">Shape S4</td>
+<td id="_a8dea191-7668-66c7-1d03-e8732e6177e3" valign="middle" align="left">geosrs:CRS</td>
+<td id="_9ba42fcb-435d-a366-3c15-3df20f49509e" valign="middle" align="left">geosrs:datumEnsemble</td>
+<td id="_7fbec55f-e645-281c-eacc-b19515e3247f" valign="middle" align="left">geosrs:DatumEnsemble</td>
+<td id="_abbf45ca-7de7-2d79-5870-0de0a48f45ed" valign="middle" align="left">1</td>
+<td id="_a0dec24f-d1f5-ea34-8006-18281a230775" valign="middle" align="left">1</td>
+<td id="_14856e7a-2250-e8e3-b053-e868544124aa" valign="middle" align="left">A coordinate reference system may have exactly one datum ensemble</td>
+</tr><tr id="_2d29b10a-f634-d1b2-0440-1d0062eaf71a"><td id="_e8ce6353-b828-fdf3-bd62-5e103a2bb222" valign="middle" align="left">Shape S5</td>
+<td id="_5ea4b731-1fde-8eca-1019-59162ddcbfbb" valign="middle" align="left">geosrs:CompoundCRS</td>
+<td id="_f9a4c08d-c4c5-1283-87e6-c93b5a7ed343" valign="middle" align="left">geosrs:includesSRS</td>
+<td id="_8e32813d-b2eb-7de2-b222-ffb7927db856" valign="middle" align="left">geosrs:SingleCRS</td>
+<td id="_9a21fad8-7bfa-5800-3f7f-3f3d9e73a6c1" valign="middle" align="left">1</td>
+<td id="_20567219-bdd5-3241-f689-da43e39f7592" valign="middle" align="left">-</td>
+<td id="_c57ca3c1-35d8-57b4-7bf0-cae1b9395b94" valign="middle" align="left">A compound coordinate reference system should consist of at least one single coordinate reference system</td>
+</tr><tr id="_3df77c7f-615c-bb15-d09d-ecda146754e0"><td id="_8ef6f416-b0e0-c01e-05e7-5263bfb1d610" valign="middle" align="left">Shape S6</td>
+<td id="_4b120c33-f203-1788-7df4-05e4ffae312d" valign="middle" align="left">geosrs:GeodeticCRS</td>
+<td id="_8efd3567-7b52-4821-cf7f-84babd29b665" valign="middle" align="left">geosrs:coordinateSystem</td>
+<td id="_43f80c4c-dd84-6d27-1ebc-dac242878a49" valign="middle" align="left">geosrs:GeodeticCoordinateSystem</td>
+<td id="_c4610f36-dce9-8389-ec4a-4166b9a50814" valign="middle" align="left">1</td>
+<td id="_d9c6f8ef-9f90-fcbb-eb24-1691c40c12be" valign="middle" align="left">1</td>
+<td id="_28201115-013a-3cec-c2ad-42f126de92b7" valign="middle" align="left">A geodetic coordinate reference system should have exactly one geodetic coordinate system</td>
+</tr><tr id="_23135422-e59b-696c-45b8-49f6580e64e1"><td id="_1ad342d8-4afc-2008-c6bb-f96885c8f185" valign="middle" align="left">Shape S7</td>
+<td id="_8854776a-75f4-2d89-1694-68e7d4802052" valign="middle" align="left">geosrs:GeographicCRS</td>
+<td id="_17245a8e-23bb-f12a-910e-a55461fafede" valign="middle" align="left">geosrs:datum</td>
+<td id="_7e9cc884-ecb9-d6f7-2bff-ca3252f0347f" valign="middle" align="left">geosrs:GeodeticDatum</td>
+<td id="_30a431f8-9bb6-0488-b8f8-0345f437488f" valign="middle" align="left">1</td>
+<td id="_a48eb841-3b7d-24af-0499-0db66e3bf4f5" valign="middle" align="left">1</td>
+<td id="_64ac7ace-8eda-4736-35c2-22d188c0adfa" valign="middle" align="left">A geographic coordinate reference system should have exactly one geodetic datum</td>
+</tr><tr id="_2cfad4ef-50bc-fcc2-e4c4-0670c4a2f4ff"><td id="_2a3de674-68cb-2388-957d-996d1edf98f7" valign="middle" align="left">Shape S8</td>
+<td id="_5ce86245-428f-1631-51e7-086e49a73407" valign="middle" align="left">geosrs:GeographicCRS</td>
+<td id="_580be672-f9e6-c36d-4389-844737ad0459" valign="middle" align="left">geosrs:coordinateSystem</td>
+<td id="_9afbe44d-f9a2-f42d-eb09-e106cd13b566" valign="middle" align="left">geosrs:EllipsoidalCoordinateSystem</td>
+<td id="_bec21346-1f85-5f2e-0e4e-a945297abbc5" valign="middle" align="left">1</td>
+<td id="_015ca402-2136-ee04-2339-4a24e5edc5b1" valign="middle" align="left">1</td>
+<td id="_71e6e83c-5eec-2001-8fda-b8b9e16b4f79" valign="middle" align="left">A geographic coordinate reference system should have exactly one ellipsoidal coordinate system</td>
+</tr><tr id="_d2fb9618-45a8-43f5-e451-8dc687771aa3"><td id="_f8c6e353-6836-e297-2d50-77fd4db60109" valign="middle" align="left">Shape S9</td>
+<td id="_ec21f1ef-f8c6-1bbf-e27d-b427089843a0" valign="middle" align="left">geosrs:ParametricCRS</td>
+<td id="_ce7d56e0-a393-81d6-1889-3a5a86bde025" valign="middle" align="left">geosrs:datum</td>
+<td id="_47f6aa24-db3b-1bbd-b9aa-4e991d1d8771" valign="middle" align="left">geosrs:ParametricDatum</td>
+<td id="_75f78abb-30cc-118b-0040-8913fc78c0a4" valign="middle" align="left">1</td>
+<td id="_3bbe9d7d-8a36-b293-0b37-405aea43d730" valign="middle" align="left">1</td>
+<td id="_b299b898-c075-1a4e-8975-2351a99c964c" valign="middle" align="left">A parametric coordinate reference system should have exactly one parametric datum</td>
+</tr><tr id="_5f3f79c6-cc8d-cc91-f52d-23f496be5d68"><td id="_91d9d0d5-33f5-f246-9215-30dabbb6359a" valign="middle" align="left">Shape S10</td>
+<td id="_5c64cef0-1a05-33b8-23f6-df92912cfe55" valign="middle" align="left">geosrs:ProjectedCRS</td>
+<td id="_1423fbe9-88d9-e72a-da14-17f97c420c8a" valign="middle" align="left">geosrs:conversion</td>
+<td id="_34389eb9-e86c-43bb-b0d7-1dbbe02bc31a" valign="middle" align="left">geosrs:Conversion</td>
+<td id="_e48c9016-47ba-ad0c-da42-17f0b0544528" valign="middle" align="left">1</td>
+<td id="_e1ae990e-16b2-253c-ca55-bd8efb560a57" valign="middle" align="left">-</td>
+<td id="_ac6e8fda-90ae-f52c-62b5-2f556047193d" valign="middle" align="left">A projected coordinate reference system should have at least one conversion</td>
+</tr><tr id="_24578211-888c-aa8d-f145-a73aa0abce49"><td id="_2fca3e26-c043-b4a4-5f07-6ef324713028" valign="middle" align="left">Shape S11</td>
+<td id="_f1425f8b-60f9-ceb7-9e6a-1d7e0b5b121d" valign="middle" align="left">geosrs:SingleCRS</td>
+<td id="_6e347b38-ac6a-eaaa-4355-89c3e8e40f89" valign="middle" align="left">geosrs:coordinateSystem</td>
+<td id="_dde9c8ac-091e-4f04-b935-0ffe5d96133d" valign="middle" align="left">geosrs:CoordinateSystem</td>
+<td id="_161173f7-3bb3-6e7b-5f46-adab20bae8a7" valign="middle" align="left">1</td>
+<td id="_437d658b-85d3-8259-ca6d-c3f3e2296d60" valign="middle" align="left">1</td>
+<td id="_c670f172-8822-d8ab-2768-011b18b1d56f" valign="middle" align="left">A single coordinate reference system should have exactly one coordinate system</td>
+</tr><tr id="_670a0e0c-0034-f52b-5995-d342a9a36a60"><td id="_510f5b79-51bf-752a-9ef0-8c0986356c02" valign="middle" align="left">Shape S12</td>
+<td id="_3b381501-2b72-9c5b-add0-33b62ab2165d" valign="middle" align="left">geosrs:SingleCRS</td>
+<td id="_0ac7afa8-5d53-f690-7238-a2ca99fc921b" valign="middle" align="left">geosrs:datum</td>
+<td id="_9eb83b59-11b5-1347-126a-6c92efafb917" valign="middle" align="left">geosrs:Datum</td>
+<td id="_3edc68e3-7f14-64ac-9373-bda7f5e8e57e" valign="middle" align="left">1</td>
+<td id="_32b9b978-1989-13d8-c06f-01cf07fb3223" valign="middle" align="left">1</td>
+<td id="_f104818e-8717-6680-9d5b-30b78fa38d9a" valign="middle" align="left">A single coordinate reference system should have exactly one datum</td>
+</tr><tr id="_1a5ec4c2-eecd-ccfc-cd88-096deba446f5"><td id="_9c1bc866-9504-bd99-9eac-0d901386533a" valign="middle" align="left">Shape S13</td>
+<td id="_dd03e222-d082-ce8a-494b-145870d5cdf3" valign="middle" align="left">geosrs:TemporalCRS</td>
+<td id="_8d8ea582-b5ae-7abb-5ee2-0ae5cb9a433c" valign="middle" align="left">geosrs:datum</td>
+<td id="_e3abf1d0-2d6b-c670-7393-b31763987c89" valign="middle" align="left">geosrs:TemporalDatum</td>
+<td id="_8180d79e-c820-320d-e029-90ba5c15bbab" valign="middle" align="left">1</td>
+<td id="_3f9c5f42-0c6a-90e5-4192-b82cd5a00910" valign="middle" align="left">1</td>
+<td id="_27a28a85-7394-e849-5051-73d846341883" valign="middle" align="left">A projected coordinate reference system should have exactly one temporal datum</td>
+</tr></tbody>
+</table>
+</clause>
+
+<clause id="_3d17841f-fa7c-ed30-d082-2075acb0f7bd" obligation="informative">
+<title id="_1141696a-6130-ab6b-a4fb-6ba6585dc865">SHACL Shapes: Datum</title>
+<table id="_04141e89-023a-5344-b7aa-996e089aa5aa">
+<name id="_cca17f01-53be-4aaf-4bcb-079958fc4750">Datum</name>
+<thead><tr id="_b99e0039-6edf-df1b-b5c0-6bb7a3673494"><th id="_4501a8e7-5c3a-ba97-7044-cd739f74ba59" valign="middle" align="left">Label</th>
+<th id="_b0248e34-8ba5-460f-41ea-c0219a495ed3" valign="middle" align="left">TargetNode</th>
+<th id="_81351ea4-1f1f-f249-653f-9ce43e9da4d0" valign="middle" align="left">Property</th>
+<th id="_8e1f1583-e329-c731-6d13-4a3177081745" valign="middle" align="left">Class</th>
+<th id="_edae8f3a-792c-b0bb-9296-97fd8ad974dc" valign="middle" align="left">MinCount</th>
+<th id="_541bef88-3702-5c30-f6bb-e0eb580f3d71" valign="middle" align="left">MaxCount</th>
+<th id="_39c78d70-10d2-d7f9-ba13-13e5d032d2a9" valign="middle" align="left">Comment</th>
+</tr></thead>
+<tbody><tr id="_a4f91719-0633-d1c9-610c-1c38e1f8bf1e"><td id="_26c4505f-4cdf-84a8-100d-81ac95810b3f" valign="middle" align="left">Shape S1</td>
+<td id="_d57d6c55-96f3-6703-ade4-8b9ce058ea19" valign="middle" align="left">geosrs:ParametricDatum</td>
+<td id="_7a1f3be9-5685-69ee-078a-a123fac71603" valign="middle" align="left">geosrs:definingParameter</td>
+<td id="_65758a49-81a9-9874-9bec-efd9896d4699" valign="middle" align="left">geosrs:DefiningParameter</td>
+<td id="_cbf87556-87a8-6bd3-6ea0-486194d15185" valign="middle" align="left">1</td>
+<td id="_47e31678-4a3a-fd6c-0e8c-e95540c2822f" valign="middle" align="left">-</td>
+<td id="_211894c4-a0fe-4d87-4e5b-a7a1a3c2cf47" valign="middle" align="left">A parametric datum should have at least one defining parameter</td>
 </tr></tbody>
 </table>
 </clause>

@@ -99,7 +99,7 @@ def convertCSVToSHACLAndADoc():
             with open(abspath+filename, newline='') as csvfile:
                 reader = csv.DictReader(csvfile)
                 adocdef="===== SHACL Rules: "+str(file)+"\n\n"
-                adocdef+="."+str(file)+"\n[cols=\"1,6\"]\n|===\n"
+                adocdef+="."+str(file)+"\n[cols=\"6*\"]\n|===\n"
                 adocdef+="|TargetNode|Property|Class|MinCount|MaxCount|Comment\n\n"
                 for row in reader:
                     if "Concept" in row and row["Concept"]!="":
@@ -108,28 +108,28 @@ def convertCSVToSHACLAndADoc():
                         shaclres.add((URIRef(shapeuri),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef("http://www.w3.org/ns/shacl#NodeShape")))
                         shaclres.add((URIRef(shapeuri),URIRef("http://www.w3.org/ns/shacl#targetNode"),URIRef(row["Concept"].replace("geosrs:","https://w3id.org/geosrs/"))))
                         shaclres.add((URIRef(shapeuri),URIRef("http://www.w3.org/ns/shacl#property"),URIRef(shapepropuri)))
-                        adocdef+="|"+str(row["Concept"])+"\n\n"
-                        adocdef+="|"+str(row["Property"])+"\n\n"
+                        adocdef+="|"+str(row["Concept"])+" "
+                        adocdef+="|"+str(row["Property"])+" "
                         if "Class" in row and row["Class"]!="":
-                            adocdef+="|"+str(row["Class"])+"\n\n"
+                            adocdef+="|"+str(row["Class"])+" "
                             shaclres.add((URIRef(shapepropuri),URIRef("http://www.w3.org/ns/shacl#class"),URIRef(str(row["Class"]).replace("geosrs:","https://w3id.org/geosrs/"))))
                         else:
-                            adocdef+="| -\n\n"
+                            adocdef+="| - "
                         if "MinCount" in row and row["MinCount"]!="":
-                            adocdef+="|"+str(row["MinCount"])+"\n\n"
+                            adocdef+="|"+str(row["MinCount"])+" "
                             shaclres.add((URIRef(shapepropuri),URIRef("http://www.w3.org/ns/shacl#minCount"),Literal(int(str(row["MinCount"])),datatype=XSD.integer)))
                         else:
-                            adocdef+="| -\n\n"
+                            adocdef+="| - "
                         if "MaxCount" in row and row["MaxCount"]!="":
-                            adocdef+="|"+str(row["MaxCount"])+"\n\n"
+                            adocdef+="|"+str(row["MaxCount"])+" "
                             shaclres.add((URIRef(shapepropuri),URIRef("http://www.w3.org/ns/shacl#maxCount"),Literal(int(str(row["MaxCount"])),datatype=XSD.integer)))
                         else:
-                            adocdef+="| -\n\n"
+                            adocdef+="| - "
                         if "Comment" in row and row["Comment"]!="":
-                            adocdef+="|"+str(row["Comment"])+"\n\n"
+                            adocdef+="|"+str(row["Comment"])+" "
                             shaclres.add((URIRef(shapepropuri),URIRef("http://www.w3.org/2000/01/rdf-schema#comment"),Literal(str(row["Comment"]),lang="en")))
                         else:
-                            adocdef+="| -\n\n"
+                            adocdef+="| - "
                         adocdef+="\n\n"
     with open("spec/sections/ac-shacl_shapes.adoc", 'r',encoding="utf-8") as f:
         ashaclshapes=f.read()

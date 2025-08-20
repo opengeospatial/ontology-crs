@@ -100,7 +100,7 @@ def convertCSVToSHACLAndADoc():
             with open(abspath+filename, newline='') as csvfile:
                 reader = csv.DictReader(csvfile)
                 adocdef="===== SHACL Shapes: "+str(filename).replace(".csv","")+"\n\n"
-                adocdef+="."+str(filename).replace(".csv","")+"\n[cols=\"6*\"]\n|===\n"
+                adocdef+="."+str(filename).replace(".csv","")+"\n[cols=\"7*\"]\n|===\n"
                 adocdef+="|Label|TargetNode|Property|Class|MinCount|MaxCount|Comment\n\n"
                 for row in reader:
                     if "Concept" in row and row["Concept"]!="":

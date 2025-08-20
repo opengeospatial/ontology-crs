@@ -99,7 +99,7 @@ def convertCSVToSHACLAndADoc():
             with open(abspath+filename, newline='') as csvfile:
                 reader = csv.DictReader(csvfile)
                 adocdef="===== SHACL Rules: "+str(file)+"\n\n"
-                adocdef+="."+str(row["Concept"])+"\n[cols=\"1,6\"]\n|===\n"
+                adocdef+="."+str(file)+"\n[cols=\"1,6\"]\n|===\n"
                 adocdef+="|TargetNode|Property|Class|MinCount|MaxCount|Comment\n\n"
                 for row in reader:
                     if "Concept" in row and row["Concept"]!="":

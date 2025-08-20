@@ -5573,14 +5573,6 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 
 
 
-
-
-
-
-
-
-
-
 </sections><annex id="_5a4a8dc8-15ea-e4cd-9531-1928e9e8aa51" obligation="normative">
 <title id="_470614e0-369e-cd47-ac8c-e0c157b1a785">Abstract Test Suite</title>
 <floating-title id="_6c4825b5-5b33-43be-8438-e76319911fee" depth="2" type="floating-title">A.0. Overview</floating-title>
@@ -6323,56 +6315,35 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 </tr></tbody>
 </table>
 </clause>
-</annex><annex id="_1e3b3407-f5bf-cb85-1af9-1f89731dcb24" obligation="informative">
+</annex><annex id="_97c49a82-ffe2-1f92-cfd6-2143f085586d" obligation="informative">
 <title id="_8dd35ff6-f41c-83ae-58df-a3465fa8defb">SHACL Shapes</title>
-<floating-title id="_2e1e93d4-a76e-4318-c6c8-bc1034df4ab7" depth="2" type="floating-title">Overview</floating-title></annex><annex id="_af52cd34-c107-661a-2cf8-2dbd7ba3a336" obligation="informative">
-<title id="_114f2a3a-254b-47b9-7141-24cd9a8c15a0">Application Examples</title>
-<floating-title id="_ba73eec6-8dc2-cb09-926b-80707f39c68b" depth="2" type="floating-title">Overview</floating-title>
-<clause id="_c605084b-e836-70da-a9f6-291d2d645a02" obligation="informative">
-<title id="_dbcbc5ba-9fb5-0699-bf8a-40f4bfdbf159">Minimum Example</title>
-</clause>
-
-<clause id="_35bf66b8-5567-5a60-6946-9907fa28668e" obligation="informative">
-<title id="_fd1449b5-d582-0365-e543-5ff9f2f13e80">Elaborate Example</title>
-</clause>
-</annex><annex id="_fac9f23a-8dd7-c3ae-a9c2-0fa33f9c7807" obligation="informative">
-<title id="_69fdff38-6317-70b2-d407-1637d3df1051">JSON-LD Context</title>
-<p id="_c8028951-a52b-9421-dd9d-dd015d333280">We provide JSON-LD contexts to be compatible with other JSON-based formats which provide coordinate reference system data.</p>
-
-<floating-title id="_3d15275c-919c-d1ba-27ea-114eebd6f241" depth="2" type="floating-title">Overview</floating-title>
-<clause id="_ca2457c8-233f-b3b2-8647-903c690cd616" obligation="informative">
-<title id="_458b7a6c-44ee-694a-92fe-3db2afe11905">Compatibility to PROJJSON</title>
-<p id="_b87489a7-a6a0-2abf-e9a5-ab52cc95dba2"><link target="https://proj.org/en/stable/specifications/projjson.html">PROJSON</link> is an established format to share geospatial data which has emerge from the PROJ library and encodes the WKT encoding of coordiante references systems. By adding a JSON-LD context to the PROJJSON standard we achieve an immediate compatibility with an established standard simply by extending it by one simple statement.</p>
-
-<sourcecode id="_d8ae13d0-3a9b-7562-0e1e-9eab36ac21c2"><body>{
-    "@context": "https://opengeospatial.github.io/ontology-crs/context/geosrs-context.json",
-    "$schema": "https://proj.org/schemas/v0.7/projjson.schema.json",
-    ...
-}</body></sourcecode>
-
-
-<p id="_8194a40f-94eb-f0c9-f24c-e39e2e61e669">We provide examples of application of this JSON-LD context with the distribution of this standard.</p>
-</clause>
-
-<clause id="_96aea623-f831-a562-5288-ee9a70628d2b" obligation="informative">
-<title id="_3f1ec114-5bf8-9810-152c-75160207c0b4">Compatibility to OGCJSON</title>
-<p id="_5c831ee1-ff1f-cb52-fbc9-2ced57a403bf">The OGC CRS working group is aiming towards the creation of their own JSON format for CRS. The JSON-LD context we provide aims to be compatible with both PROJJSON and OGCJSON.</p>
-</clause>
-</annex><annex id="_0eacf1da-0d8e-89ef-d30d-181589f822e4" obligation="informative">
-<title id="_51ca9699-bd46-742c-98bf-01b12e01660c">Revision History</title>
-<table id="_44738962-548b-b34c-c0a2-2c90d296c9cf" unnumbered="true" width="90%"><thead><tr id="_9ab76d2b-5043-d4e2-a704-d9c73b538d64"><th id="_f03e08d4-b632-6e4d-163c-6f3a70bd58e2" valign="middle" align="left">Date</th>
-<th id="_7283f4ba-c4b8-e291-32f3-a50f790e55c7" valign="middle" align="left">Release</th>
-<th id="_693c65c1-7673-7d32-6a2a-01abba98886f" valign="middle" align="left">Author</th>
-<th id="_8d59a309-a4d4-9606-f67f-905190cfc466" valign="middle" align="left">Primary clauses modified</th>
-<th id="_f4aadf92-4ec1-c55d-ad5d-928ac4a3d7fa" valign="middle" align="left">Description</th>
+<floating-title id="_2e1e93d4-a76e-4318-c6c8-bc1034df4ab7" depth="2" type="floating-title">Overview</floating-title>
+<clause id="_a6ef2c48-4f3e-201a-c11d-bbb9d1daa8d1" obligation="informative">
+<title id="_8fa5bbb0-4d2e-484c-4e7d-7a56c1773188">SHACL Rules: b’core.csv’</title>
+<table id="_a03e2a5e-6aa4-821b-d5d3-b42ea254a41e"><colgroup><col width="14.2857%"/><col width="85.7143%"/></colgroup>
+<name id="_e263e448-bdb4-a399-ae1e-5b9f7966e565">b’core.csv’</name>
+<thead><tr id="_8e7d9e98-fee4-8dbb-fb91-d28449451cbf"><th id="_e8d4e1cf-83cf-a4b3-d33b-20fe5c17df02" valign="middle" align="left">TargetNode</th>
+<th id="_94e53c84-fdd7-5cb3-82ac-2c80a428ca4f" valign="middle" align="left">Property</th>
 </tr></thead>
-<tbody><tr id="_1511996a-65de-cc8f-57e0-62fbbb5460b8"><td id="_ddbbbc18-6617-bb6c-3563-65278d6124e4" valign="middle" align="left">2016-04-28</td>
-<td id="_3db9d40a-cba8-62ea-d12c-9c5124c4ed03" valign="middle" align="left">0.1</td>
-<td id="_28289355-a2d6-ec37-d13c-593a955b41e4" valign="middle" align="left">G. Editor</td>
-<td id="_175e0418-1a61-03d0-40bf-ccc9556b01f4" valign="middle" align="left">all</td>
-<td id="_7823857a-e2a1-59cc-fe64-90f0ea3f1a00" valign="middle" align="left">initial version</td>
+<tbody><tr id="_ca3c5c3e-0089-0201-1d28-de158bfef08b"><td id="_07235dd5-cc69-6623-eac3-41ca993a0341" valign="middle" align="left">Class</td>
+<td id="_29c737a2-37dd-adcc-7c1f-837615656254" valign="middle" align="left">MinCount</td>
+</tr><tr id="_9c191def-a338-9f4f-b621-1f983ff1d8a0"><td id="_84d9ceff-aac3-3776-d8dd-df81218e99eb" valign="middle" align="left">MaxCount</td>
+<td id="_02ee0970-949a-f80a-73b8-b8ec920d294a" valign="middle" align="left">Comment</td>
+</tr><tr id="_2627f5eb-0dc2-4dd0-128c-60cad1463c56"><td id="_4eaff3c6-0f0d-0c56-9922-f742cf4f39f7" valign="middle" align="left">geosrs:CoordinateSystem</td>
+<td id="_a2f5b310-4795-b3aa-e6c3-77d1f5d567d6" valign="middle" align="left">geosrs:axis</td>
+</tr><tr id="_0b84b93f-e210-6537-87c3-99464aec6aa1"><td id="_55f797ee-4e33-c36b-8444-8f48ff271bcf" valign="middle" align="left">geosrs:Axis</td>
+<td id="_86630951-2991-3b5a-81f5-b1658b6bb03a" valign="middle" align="left">1</td>
+</tr><tr id="_448542f3-3e91-417e-195a-34dcd72f0f62"><td id="_97b0a242-88c7-a517-680b-466ab3320683" valign="middle" align="left">-</td>
+<td id="_092058b2-f40d-6bc7-d9b0-6832d81f3799" valign="middle" align="left">A coordinate system should have at least one axis    [appendix,obligation=informative] == Application Examples  [discrete] === Overview  === Minimum Example  === Elaborate Example    [appendix,obligation=informative] == JSON-LD Context  We provide JSON-LD contexts to be compatible with other JSON-based formats which provide coordinate reference system data.  [discrete] === Overview  === Compatibility to PROJJSON  <link target="https://proj.org/en/stable/specifications/projjson.html">PROJSON</link> is an established format to share geospatial data which has emerge from the PROJ library and encodes the WKT encoding of coordiante references systems. By adding a JSON-LD context to the PROJJSON standard we achieve an immediate compatibility with an established standard simply by extending it by one simple statement.  [source] —— {     “@context”: “https://opengeospatial.github.io/ontology-crs/context/geosrs-context.json”,     “$schema”: “https://proj.org/schemas/v0.7/projjson.schema.json”,     …​ } ——  We provide examples of application of this JSON-LD context with the distribution of this standard.  === Compatibility to OGCJSON  The OGC CRS working group is aiming towards the creation of their own JSON format for CRS. The JSON-LD context we provide aims to be compatible with both PROJJSON and OGCJSON.      //// Revision History should be the last annex before the Bibliography Bibliography should be the last annex ////  [appendix,obligation=”informative”] == Revision History  [%unnumbered] [width=”90%”,options=”header”]</td>
 </tr></tbody>
 </table>
+
+<p id="_539d648e-7b42-fea3-7a3c-6a5a72b652c4">|Date |Release |Author | Primary clauses modified |Description |2016-04-28 |0.1 |G. Editor |all |initial version</p>
+
+<table id="_e71d45fa-1e54-73d7-35ff-edac52c607dd"><tbody><tr id="_00b55387-9dc5-1f94-9679-77cc80448c21"><td id="_07b290b1-3f7a-94e7-ea61-07a602f02599" valign="middle" align="left">[bibliography] == Bibliography  [NOTE] .Example Bibliography (Delete this note). ==== The TC has approved Springer LNCS as the official document citation type. Springer LNCS is widely used in technical and computer science journals and other publications For citations in the text please use square brackets and consecutive numbers: [1], [2], [3] Actual References: [n] Journal: Author Surname, A.: Title. Publication Title. Volume number, Issue number, Pages Used (Year Published) [n] Web: Author Surname, A.: Title,  <link target="http://Website-Url"/> ====   * [<bookmark id="_984c1c0a-b911-c0ad-b804-f3362f117408" anchor="yaml"/>], Ben-Kiki, O., Evans, C., Ingy döt Net: <strong>YAML Ain’t Markup Language,</strong> <link target="https://yaml.org/"/>  * [<bookmark id="_df052fde-25eb-6a55-1795-3f128570b2ab" anchor="rfc3986"/>], Berners-Lee, T., Fielding, R., Masinter, L.: <strong>IETF RFC 3986 — Uniform Resource Identifier (URI): Generic Syntax,</strong> <link target="http://tools.ietf.org/rfc/rfc3986.txt"/>  * [<bookmark id="_ed31f648-466d-2898-bed2-83bc390594db" anchor="link_relations"/>], IANA: <strong>Link Relation Types,</strong> <link target="https://www.iana.org/assignments/link-relations/link-relations.xml"/>  * [<bookmark id="_c15584c0-5f28-f84c-cc5e-f5baa5d1664e" anchor="iso19142"/>], ISO: <strong>ISO 19142:2010 — Geographic information — Web Feature Service</strong> <link target="https://www.iso.org/standard/42136.html"/>  * [<bookmark id="_e25869c0-a1c2-0ba1-d1a0-d857501a071c" anchor="wfs20"/>], OGC: <strong>Web Feature Service 2.0,</strong> <link target="http://docs.opengeospatial.org/is/09-025r2/09-025r2.html"/>  * [<bookmark id="_89ee1951-8011-0680-f45b-d136b0a3efde" anchor="spatial_data_wbp"/>], W3C/OGC: <strong>Spatial Data on the Web Best Practices,</strong> W3C Working Group Note 28 September 2017, <link target="https://www.w3.org/TR/sdw-bp/"/>  * [<bookmark id="_6ec0ef15-dc70-8a2f-183a-d713b41a0327" anchor="dwbp"/>], W3C: <strong>Data on the Web Best Practices,</strong> W3C Recommendation 31 January 2017, <link target="https://www.w3.org/TR/dwbp/"/>  * [<bookmark id="_a60576f1-eab9-598f-178b-04721ca0d0a1" anchor="dcat"/>], W3C: <strong>Data Catalog Vocabulary,</strong> W3C Recommendation 16 January 2014, <link target="https://www.w3.org/TR/vocab-dcat/"/> * [<bookmark id="_783f435c-4f39-5aa0-b1a8-e2761637b2b6" anchor="ijgi11020117"/>]</td>
+</tr></tbody>
+</table>
+</clause>
 </annex><bibliography><references id="_c696bf79-5c3e-223a-90bf-e2acc2516d40" normative="true" obligation="informative">
 <title id="_270c5ee6-077e-f285-ff95-287984a30140">Normative references</title><p id="_49996d2b-65c1-916b-9bbf-42b933aa0025">The following documents are referred to in the text in such a way that some or all of their content constitutes requirements of this document. For dated references, only the edition cited applies. For undated references, the latest edition of the referenced document (including any amendments) applies.</p>
 
@@ -6391,253 +6362,19 @@ Foster, I., Kesselman, C.. Morgan Kaufmann, San Francisco (1999).</formattedref>
 <bibitem anchor="Czajkowski01" id="_60ff1838-3cdf-6194-2c03-ee266d197a0a"><formattedref format="application/x-isodoc+xml"><em>Grid Information Services for Distributed Resource Sharing.</em> 
 Czajkowski, K., Fitzgerald, S., Foster, I., Kesselman, C. In: 10th IEEE International Symposium on High
 Performance Distributed Computing, pp. 181–184. IEEE Press, New York (2001)</formattedref><docidentifier>Grid Information Services for Distributed Resource Sharing</docidentifier></bibitem>
-</references><references id="_3ac60201-689c-27e8-f7e3-515801dcff8f" normative="false" obligation="informative">
-<title id="_50ceb1e1-516f-2673-d73d-4f0c58b4d023">Bibliography</title>
-<note id="_fbd336b0-a344-3030-55c6-1975921a4963"><p id="_a4639bb5-dce4-2157-2d6a-6229500fcabe">The TC has approved Springer LNCS as the official document citation type. Springer LNCS is widely used in technical and computer science journals and other publications For citations in the text please use square brackets and consecutive numbers: [1], [2], [3] Actual References: [n] Journal: Author Surname, A.: Title. Publication Title. Volume number, Issue number, Pages Used (Year Published)</p>
-</note><bibitem id="_875bc0f2-a906-739c-5060-63052baa2bdb" type="standard" schema-version="v1.2.9" anchor="iso19142">
-  <fetched>2025-08-20</fetched>
-  
-<title type="title-intro" format="text/plain" language="en" script="Latn">Geographic information</title>
-
-  
-<title type="title-main" format="text/plain" language="en" script="Latn">Web Feature Service</title>
-
-  
-<title type="main" format="text/plain" language="en" script="Latn">Geographic information — Web Feature Service</title>
-
-  <uri type="src">https://www.iso.org/standard/42136.html</uri>
-  <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:42136:en</uri>
-  <uri type="rss">https://www.iso.org/contents/data/standard/04/21/42136.detail.rss</uri>
-  <docidentifier type="ISO" primary="true">ISO 19142</docidentifier>
-  <docidentifier type="iso-reference">ISO 19142(E)</docidentifier>
-  <docidentifier type="URN">urn:iso:std:iso:19142:stage-90.93</docidentifier>
-  <docnumber>19142</docnumber>
-  <contributor>
-    <role type="publisher"/>
-    <organization>
-      
-<name>International Organization for Standardization</name>
-
-      <abbreviation>ISO</abbreviation>
-      <uri>www.iso.org</uri>
-    </organization>
-  </contributor>
-  <edition>1</edition>
-  <language>en</language>
-  <language>fr</language>
-  <script>Latn</script>
-  <status>
-    <stage>90</stage>
-    <substage>93</substage>
-  </status>
-  <copyright>
-    <from>2010</from>
-    <owner>
-      <organization>
-        
-<name>ISO</name>
-
-      </organization>
-    </owner>
-  </copyright>
-  <relation type="instanceOf">
-    <bibitem type="standard">
-      <fetched>2025-08-20</fetched>
-      
-<title type="title-intro" format="text/plain" language="en" script="Latn">Geographic information</title>
-
-      
-<title type="title-main" format="text/plain" language="en" script="Latn">Web Feature Service</title>
-
-      
-<title type="main" format="text/plain" language="en" script="Latn">Geographic information — Web Feature Service</title>
-
-      <uri type="src">https://www.iso.org/standard/42136.html</uri>
-      <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:42136:en</uri>
-      <uri type="rss">https://www.iso.org/contents/data/standard/04/21/42136.detail.rss</uri>
-      <docidentifier type="ISO" primary="true">ISO 19142:2010</docidentifier>
-      <docidentifier type="iso-reference">ISO 19142:2010(E)</docidentifier>
-      <docidentifier type="URN">urn:iso:std:iso:19142:stage-90.93</docidentifier>
-      <docnumber>19142</docnumber>
-      <date type="published">
-        <on>2010-12</on>
-      </date>
-      <contributor>
-        <role type="publisher"/>
-        <organization>
-          
-<name>International Organization for Standardization</name>
-
-          <abbreviation>ISO</abbreviation>
-          <uri>www.iso.org</uri>
-        </organization>
-      </contributor>
-      <edition>1</edition>
-      <language>en</language>
-      <language>fr</language>
-      <script>Latn</script>
-      <abstract format="text/plain" language="en" script="Latn">ISO 19142:2010 specifies the behaviour of a web feature service that provides transactions on and access to geographic features in a manner independent of the underlying data store. It specifies discovery operations, query operations, locking operations, transaction operations and operations to manage stored parameterized query expressions.</abstract>
-      <status>
-        <stage>90</stage>
-        <substage>93</substage>
-      </status>
-      <copyright>
-        <from>2010</from>
-        <owner>
-          <organization>
-            
-<name>ISO</name>
-
-          </organization>
-        </owner>
-      </copyright>
-      <place>Geneva</place>
-    </bibitem>
-
-  </relation>
-  <place>Geneva</place>
-</bibitem><bibitem anchor="dcat" id="_c5a8b02b-e6cb-3ada-5e56-873feaab0ce2">
-  <formattedref format="application/x-isodoc+xml">W3C: <strong>Data Catalog Vocabulary,</strong> W3C Recommendation 16 January 2014, <link target="https://www.w3.org/TR/vocab-dcat/"/></formattedref>
-  <docidentifier>DCAT</docidentifier>
-  
-</bibitem><bibitem anchor="link_relations" id="_a0fcce40-d82a-8d43-7d35-5be2114d7422">
-  <formattedref format="application/x-isodoc+xml">IANA: <strong>Link Relation Types,</strong> <link target="https://www.iana.org/assignments/link-relations/link-relations.xml"/></formattedref>
-  <docidentifier>Link Relation Types</docidentifier>
-  
-</bibitem><bibitem anchor="spatial_data_wbp" id="_03817c9f-0800-5ec7-1032-a4f91db03c8e">
-  <formattedref format="application/x-isodoc+xml">W3C/OGC: <strong>Spatial Data on the Web Best Practices,</strong> W3C Working Group Note 28 September 2017, <link target="https://www.w3.org/TR/sdw-bp/"/></formattedref>
-  <docidentifier>SDWBP</docidentifier>
-  
-</bibitem><bibitem anchor="dwbp" id="_2d8d4b6a-825b-35e3-a12f-b0ea671f6998">
-  <formattedref format="application/x-isodoc+xml">W3C: <strong>Data on the Web Best Practices,</strong> W3C Recommendation 31 January 2017, <link target="https://www.w3.org/TR/dwbp/"/></formattedref>
-  <docidentifier>WBP</docidentifier>
-  
-</bibitem><bibitem anchor="yaml" id="_9a05db92-5f6f-6b90-ac22-4d626e4dd2ed">
-  <formattedref format="application/x-isodoc+xml">Ben-Kiki, O., Evans, C., Ingy döt Net: <strong>YAML Ain’t Markup Language,</strong> <link target="https://yaml.org/"/></formattedref>
-  <docidentifier>YAML</docidentifier>
-  
-</bibitem><bibitem anchor="wfs20" id="_922be033-2459-d5ad-f54e-a51dbdc6f9fb">
-  <formattedref format="application/x-isodoc+xml">OGC: <strong>Web Feature Service 2.0,</strong> <link target="http://docs.opengeospatial.org/is/09-025r2/09-025r2.html"/></formattedref>
-  <docidentifier>WFS 2.0</docidentifier>
-  <docnumber>2.0</docnumber>
-</bibitem><bibitem anchor="rfc3986" id="_161b355f-397f-da22-493d-45a2a62fcd3c">
-  <formattedref format="application/x-isodoc+xml">Berners-Lee, T., Fielding, R., Masinter, L.: <strong>IETF RFC 3986 — Uniform Resource Identifier (URI): Generic Syntax,</strong> <link target="http://tools.ietf.org/rfc/rfc3986.txt"/></formattedref>
-  <docidentifier>RFC3986</docidentifier>
-  <docnumber>3986</docnumber>
-</bibitem><bibitem id="_45ee2bac-c890-70cf-a3d1-a933ba1f3d8b" type="article" schema-version="v1.2.9" anchor="ijgi11020117">
-  <fetched>2025-08-20</fetched>
-  
-<title type="main" format="text/plain" script="Latn">GeoSPARQL 1.1: Motivations, Details and Applications of the Decadal Update to the Most Important Geospatial LOD Standard</title>
-
-  <uri type="DOI">https://doi.org/10.3390/ijgi11020117</uri>
-  <uri type="src">https://www.mdpi.com/2220-9964/11/2/117</uri>
-  <docidentifier type="DOI" primary="true">10.3390/ijgi11020117</docidentifier>
-  <docidentifier type="issn.electronic">2220-9964</docidentifier>
-  <date type="issued">
-    <on>2022-02-07</on>
-  </date>
-  <date type="published">
-    <on>2022-02-07</on>
-  </date>
-  <contributor>
-    <role type="author"/>
-    <person>
-      
-<name>          <forename language="en" script="Latn">Nicholas J.</forename>          <surname language="en" script="Latn">Car</surname>       </name>
-
-      <affiliation>
-        <organization>
-          
-<name>SURROUND Australia Pty Ltd., Canberra 2600, Australia</name>
-
-        </organization>
-      </affiliation>
-      <affiliation>
-        <organization>
-          
-<name>College of Engineering and Computer Science, Australian National University, Canberra 2600, Australia</name>
-
-        </organization>
-      </affiliation>
-    </person>
-  </contributor>
-  <contributor>
-    <role type="author"/>
-    <person>
-      
-<name>          <forename language="en" script="Latn">Timo</forename>          <surname language="en" script="Latn">Homburg</surname>       </name>
-
-      <affiliation>
-        <organization>
-          
-<name>i3mainz–Institute for Spatial Information &amp; Surveying Technology, Mainz University of Applied Sciences, 55128 Mainz, Germany</name>
-
-        </organization>
-      </affiliation>
-      <identifier type="orcid">https://orcid.org/0000-0002-9499-5840</identifier>
-    </person>
-  </contributor>
-  <contributor>
-    <role type="publisher"/>
-    <organization>
-      
-<name>MDPI AG</name>
-
-    </organization>
-  </contributor>
-  <abstract format="text/html" language="en" script="Latn">
-    <p id="_c58d457a-ebb9-85b6-da16-c448187b0391">In 2012, the Open Geospatial Consortium published GeoSPARQL defining “an RDF/OWL ontology for [spatial] information”, “SPARQL extension functions” for performing spatial operations on RDF data and “RIF rules” defining entailments to be drawn from graph pattern matching. In the 8+ years since its publication, GeoSPARQL has become the most important spatial Semantic Web standard, as judged by references to it in other Semantic Web standards and its wide use for Semantic Web data. An update to GeoSPARQL was proposed in 2019 to deliver a version 1.1 with a charter to: handle outstanding change requests and source new ones from the user community and to “better present” the standard, that is to better link all the standard’s parts and better document and exemplify elements. Expected updates included new geometry representations, alignments to other ontologies, handling of new spatial referencing systems, and new artifact presentation. This paper describes motivating change requests and actual resultant updates in the candidate version 1.1 of the standard alongside reference implementations and usage examples. We also describe the theory behind particular updates, initial implementations of many parts of the standard, and our expectations for GeoSPARQL 1.1’s use.</p>
-
-  </abstract>
-  <relation type="hasDraft">
-    <bibitem>
-      
-<title type="main" format="text/plain" script="Latn">GeoSPARQL 1.1: An Almost Decadal Update to the Most Important Geospatial LOD Standard</title>
-
-      <docidentifier type="DOI">10.20944/preprints202111.0179.v1</docidentifier>
-    </bibitem>
-
-  </relation>
-  <series>
-    
-<title format="text/plain">ISPRS International Journal of Geo-Information</title>
-
-  </series>
-  <extent>
-    <locality type="volume">
-      <referenceFrom>11</referenceFrom>
-    </locality>
-    <locality type="issue">
-      <referenceFrom>2</referenceFrom>
-    </locality>
-    <locality type="page">
-      <referenceFrom>117</referenceFrom>
-    </locality>
-  </extent>
-</bibitem>
-
-
-
-
-
-
-
-
-
-
-</references><references hidden="true" normative="false"><bibitem anchor="Class_ geosrs" id="_f181fb2d-2052-d431-fcb8-f53730d1b40e" type="internal">
+</references><references hidden="true" normative="false"><bibitem anchor="Class_ geosrs" id="_7ddb9865-de6e-67e6-fad5-f7b5769ea0e8" type="internal">
 <docidentifier type="repository">Class/ geosrs</docidentifier>
 </bibitem>
-<bibitem anchor="Class_ geocrs" id="_8f1b8834-879a-a595-c405-840ad10e6897" type="internal">
+<bibitem anchor="Class_ geocrs" id="_16c4a072-ce56-a6dd-d705-45fb937a1627" type="internal">
 <docidentifier type="repository">Class/ geocrs</docidentifier>
 </bibitem>
-</references><references hidden="true" normative="false"><bibitem anchor="Property_ geosrs" id="_ef2fa4f4-87c6-6c3f-1752-0c9c7e015223" type="internal">
+</references><references hidden="true" normative="false"><bibitem anchor="Property_ geosrs" id="_f3b3ca7e-6524-208d-513b-10e7891473d2" type="internal">
 <docidentifier type="repository">Property/ geosrs</docidentifier>
 </bibitem>
-<bibitem anchor="Property_ geocrs" id="_8c8050bb-15cf-bf3f-31a1-b7e9ccd417ac" type="internal">
+<bibitem anchor="Property_ geocrs" id="_0d813c9c-d493-a215-78bf-bce1829e0ebf" type="internal">
 <docidentifier type="repository">Property/ geocrs</docidentifier>
 </bibitem>
-</references><references hidden="true" normative="false"><bibitem anchor="Instance_ geosrs" id="_0724fb76-a8ce-03b4-c276-0d2f633e3d07" type="internal">
+</references><references hidden="true" normative="false"><bibitem anchor="Instance_ geosrs" id="_db59da71-51cb-f8f9-bd02-04d7701c1635" type="internal">
 <docidentifier type="repository">Instance/ geosrs</docidentifier>
 </bibitem>
 </references></bibliography>

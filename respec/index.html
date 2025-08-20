@@ -11313,144 +11313,117 @@ They may be stated as part of a SPARQL 1.1 Service Description <a href="#SPARQLS
 <h2 id="_shacl_shapes">Appendix C: SHACL Shapes</h2>
 <div class="sectionbody">
 <h3 class="discrete" id="_overview_2">Overview</h3>
-</div>
-</section>
-<section class="sect1">
-<h2 id="_application_examples">Appendix D: Application Examples</h2>
-<div class="sectionbody">
-<h3 class="discrete" id="_overview_3">Overview</h3>
-<section class="sect2">
-<h3 id="_minimum_example">Minimum Example</h3>
-
-</section>
-<section class="sect2">
-<h3 id="_elaborate_example">Elaborate Example</h3>
-
-</section>
-</div>
-</section>
-<section class="sect1">
-<h2 id="_json_ld_context">Appendix E: JSON-LD Context</h2>
-<div class="sectionbody">
-<p class="paragraph">
-<p>We provide JSON-LD contexts to be compatible with other JSON-based formats which provide coordinate reference system data.</p>
-</p>
-<h3 class="discrete" id="_overview_4">Overview</h3>
-<section class="sect2">
-<h3 id="_compatibility_to_projjson">Compatibility to PROJJSON</h3>
-<p class="paragraph">
-<p><a href="https://proj.org/en/stable/specifications/projjson.html">PROJSON</a> is an established format to share geospatial data which has emerge from the PROJ library and encodes the WKT encoding of coordiante references systems.
-By adding a JSON-LD context to the PROJJSON standard we achieve an immediate compatibility with an established standard simply by extending it by one simple statement.</p>
-</p>
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code>{&#x000A;    "@context": "https://opengeospatial.github.io/ontology-crs/context/geosrs-context.json",&#x000A;    "$schema": "https://proj.org/schemas/v0.7/projjson.schema.json",&#x000A;    ...&#x000A;}</code></pre>
-</div>
-</div>
-<p class="paragraph">
-<p>We provide examples of application of this JSON-LD context with the distribution of this standard.</p>
-</p>
-</section>
-<section class="sect2">
-<h3 id="_compatibility_to_ogcjson">Compatibility to OGCJSON</h3>
-<p class="paragraph">
-<p>The OGC CRS working group is aiming towards the creation of their own JSON format for CRS.
-The JSON-LD context we provide aims to be compatible with both PROJJSON and OGCJSON.</p>
-</p>
-</section>
-</div>
-</section>
-<section class="sect1">
-<h2 id="_revision_history">Appendix F: Revision History</h2>
-<div class="sectionbody">
-<table class="tableblock frame-all grid-all" style="width: 90%;">
+<section class="sect4">
+<h5 id="_shacl_rules_bcore_csv">SHACL Rules: b&#8217;core.csv'</h5>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Table 369. b&#8217;core.csv'</caption>
 <colgroup>
-<col style="width: 20%;">
-<col style="width: 20%;">
-<col style="width: 20%;">
-<col style="width: 20%;">
-<col style="width: 20%;">
+<col style="width: 14.2857%;">
+<col style="width: 85.7143%;">
 </colgroup>
 <thead>
 <tr>
-  <th class="tableblock halign-left valign-top">Date</th>
-  <th class="tableblock halign-left valign-top">Release</th>
-  <th class="tableblock halign-left valign-top">Author</th>
-  <th class="tableblock halign-left valign-top">Primary clauses modified</th>
-  <th class="tableblock halign-left valign-top">Description</th>
+  <th class="tableblock halign-left valign-top">TargetNode</th>
+  <th class="tableblock halign-left valign-top">Property</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td class="tableblock halign-left valign-top"><p class="tableblock">2016-04-28</p></td>
-  <td class="tableblock halign-left valign-top"><p class="tableblock">0.1</p></td>
-  <td class="tableblock halign-left valign-top"><p class="tableblock">G. Editor</p></td>
-  <td class="tableblock halign-left valign-top"><p class="tableblock">all</p></td>
-  <td class="tableblock halign-left valign-top"><p class="tableblock">initial version</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Class</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">MinCount</p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">MaxCount</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Comment</p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">geosrs:CoordinateSystem</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">geosrs:axis</p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">geosrs:Axis</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">A coordinate system should have at least one axis</p>
+  <p class="tableblock">[appendix,obligation=informative]
+  == Application Examples</p>
+  <p class="tableblock">[discrete]
+  === Overview</p>
+  <p class="tableblock">=== Minimum Example</p>
+  <p class="tableblock">=== Elaborate Example</p>
+  <p class="tableblock">[appendix,obligation=informative]
+  == JSON-LD Context</p>
+  <p class="tableblock">We provide JSON-LD contexts to be compatible with other JSON-based formats which provide coordinate reference system data.</p>
+  <p class="tableblock">[discrete]
+  === Overview</p>
+  <p class="tableblock">=== Compatibility to PROJJSON</p>
+  <p class="tableblock"><a href="https://proj.org/en/stable/specifications/projjson.html">PROJSON</a> is an established format to share geospatial data which has emerge from the PROJ library and encodes the WKT encoding of coordiante references systems.
+  By adding a JSON-LD context to the PROJJSON standard we achieve an immediate compatibility with an established standard simply by extending it by one simple statement.</p>
+  <p class="tableblock">[source]
+  ----
+  {
+      "@context": "https://opengeospatial.github.io/ontology-crs/context/geosrs-context.json",
+      "$schema": "https://proj.org/schemas/v0.7/projjson.schema.json",
+      &#8230;&#8203;
+  }
+  ----</p>
+  <p class="tableblock">We provide examples of application of this JSON-LD context with the distribution of this standard.</p>
+  <p class="tableblock">=== Compatibility to OGCJSON</p>
+  <p class="tableblock">The OGC CRS working group is aiming towards the creation of their own JSON format for CRS.
+  The JSON-LD context we provide aims to be compatible with both PROJJSON and OGCJSON.</p>
+  <p class="tableblock">////
+  Revision History should be the last annex before the Bibliography
+  Bibliography should be the last annex
+  ////</p>
+  <p class="tableblock">[appendix,obligation="informative"]
+  == Revision History</p>
+  <p class="tableblock">[%unnumbered]
+  [width="90%",options="header"]</p></td>
 </tr>
 </tbody>
 </table>
-</div>
-</section>
-<section class="sect1">
-<h2 id="_bibliography">Bibliography</h2>
-<div class="sectionbody">
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<div class="title"></div>
-</td>
-<td class="content">
-<div class="title">Example Bibliography (Delete this note).</div>
 <p class="paragraph">
-<p>The TC has approved Springer LNCS as the official document citation type.
-Springer LNCS is widely used in technical and computer science journals and other publications
-For citations in the text please use square brackets and consecutive numbers: [1], [2], [3]
-Actual References:
-[n] Journal: Author Surname, A.: Title. Publication Title. Volume number, Issue number, Pages Used (Year Published)
-[n] Web: Author Surname, A.: Title, <a class="bare" href="http://Website-Url">http://Website-Url</a></p>
+<p>|Date |Release |Author | Primary clauses modified |Description
+|2016-04-28 |0.1 |G. Editor |all |initial version</p>
 </p>
-</td>
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 100%;">
+</colgroup>
+<tbody>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">[bibliography]
+  == Bibliography</p>
+  <p class="tableblock">[NOTE]
+  .Example Bibliography (Delete this note).
+  ====
+  The TC has approved Springer LNCS as the official document citation type.
+  Springer LNCS is widely used in technical and computer science journals and other publications
+  For citations in the text please use square brackets and consecutive numbers: [1], [2], [3]
+  Actual References:
+  [n] Journal: Author Surname, A.: Title. Publication Title. Volume number, Issue number, Pages Used (Year Published)
+  [n] Web: Author Surname, A.: Title, <a class="bare" href="http://Website-Url">http://Website-Url</a>
+  ====</p>
+  <p class="tableblock">* [<a></a>], Ben-Kiki, O., Evans, C., Ingy döt Net: <strong>YAML Ain’t Markup Language,</strong> <a class="bare" href="https://yaml.org/">https://yaml.org/</a></p>
+  <p class="tableblock">* [<a></a>], Berners-Lee, T., Fielding, R., Masinter, L.: <strong>IETF RFC 3986 - Uniform Resource Identifier (URI): Generic Syntax,</strong> <a class="bare" href="http://tools.ietf.org/rfc/rfc3986.txt">http://tools.ietf.org/rfc/rfc3986.txt</a></p>
+  <p class="tableblock">* [<a></a>], IANA: <strong>Link Relation Types,</strong> <a class="bare" href="https://www.iana.org/assignments/link-relations/link-relations.xml">https://www.iana.org/assignments/link-relations/link-relations.xml</a></p>
+  <p class="tableblock">* [<a></a>], ISO: <strong>ISO 19142:2010 - Geographic information - Web Feature Service</strong> <a class="bare" href="https://www.iso.org/standard/42136.html">https://www.iso.org/standard/42136.html</a></p>
+  <p class="tableblock">* [<a></a>], OGC: <strong>Web Feature Service 2.0,</strong> <a class="bare" href="http://docs.opengeospatial.org/is/09-025r2/09-025r2.html">http://docs.opengeospatial.org/is/09-025r2/09-025r2.html</a></p>
+  <p class="tableblock">* [<a></a>], W3C/OGC: <strong>Spatial Data on the Web Best Practices,</strong> W3C Working Group Note 28 September 2017, <a class="bare" href="https://www.w3.org/TR/sdw-bp/">https://www.w3.org/TR/sdw-bp/</a></p>
+  <p class="tableblock">* [<a></a>], W3C: <strong>Data on the Web Best Practices,</strong> W3C Recommendation 31 January 2017, <a class="bare" href="https://www.w3.org/TR/dwbp/">https://www.w3.org/TR/dwbp/</a></p>
+  <p class="tableblock">* [<a></a>], W3C: <strong>Data Catalog Vocabulary,</strong> W3C Recommendation 16 January 2014, <a class="bare" href="https://www.w3.org/TR/vocab-dcat/">https://www.w3.org/TR/vocab-dcat/</a>
+  * [<a></a>]</p></td>
 </tr>
+</tbody>
 </table>
-</div>
-<div class="ulist bibliography">
-<ul class="bibliography">
-<li>
-<p><a></a>[], Ben-Kiki, O., Evans, C., Ingy döt Net: <strong>YAML Ain’t Markup Language,</strong> <a class="bare" href="https://yaml.org/">https://yaml.org/</a></p>
-</li>
-<li>
-<p><a></a>[], Berners-Lee, T., Fielding, R., Masinter, L.: <strong>IETF RFC 3986 - Uniform Resource Identifier (URI): Generic Syntax,</strong> <a class="bare" href="http://tools.ietf.org/rfc/rfc3986.txt">http://tools.ietf.org/rfc/rfc3986.txt</a></p>
-</li>
-<li>
-<p><a></a>[], IANA: <strong>Link Relation Types,</strong> <a class="bare" href="https://www.iana.org/assignments/link-relations/link-relations.xml">https://www.iana.org/assignments/link-relations/link-relations.xml</a></p>
-</li>
-<li>
-<p><a></a>[], ISO: <strong>ISO 19142:2010 - Geographic information - Web Feature Service</strong> <a class="bare" href="https://www.iso.org/standard/42136.html">https://www.iso.org/standard/42136.html</a></p>
-</li>
-<li>
-<p><a></a>[], OGC: <strong>Web Feature Service 2.0,</strong> <a class="bare" href="http://docs.opengeospatial.org/is/09-025r2/09-025r2.html">http://docs.opengeospatial.org/is/09-025r2/09-025r2.html</a></p>
-</li>
-<li>
-<p><a></a>[], W3C/OGC: <strong>Spatial Data on the Web Best Practices,</strong> W3C Working Group Note 28 September 2017, <a class="bare" href="https://www.w3.org/TR/sdw-bp/">https://www.w3.org/TR/sdw-bp/</a></p>
-</li>
-<li>
-<p><a></a>[], W3C: <strong>Data on the Web Best Practices,</strong> W3C Recommendation 31 January 2017, <a class="bare" href="https://www.w3.org/TR/dwbp/">https://www.w3.org/TR/dwbp/</a></p>
-</li>
-<li>
-<p><a></a>[], W3C: <strong>Data Catalog Vocabulary,</strong> W3C Recommendation 16 January 2014, <a class="bare" href="https://www.w3.org/TR/vocab-dcat/">https://www.w3.org/TR/vocab-dcat/</a></p>
-</li>
-<li>
-<p><a></a>[]</p>
-</li>
-</ul>
-</div>
+</section>
 </div>
 </section>
 <div id="footer">
 <div id="footer-text">
-Last updated 2025-08-20 12:17:42 UTC
+Last updated 2025-08-20 14:10:12 UTC
 </div>
 </div>
 </body>

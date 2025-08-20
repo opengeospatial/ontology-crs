@@ -26,24 +26,24 @@
                             geosrs:semiMajorAxis 6378137 ] ] ] ;
     geosrs:conversion [ rdfs:label "Lambert-93" ;
             geosrs:method [ rdfs:label "Lambert Conic Conformal (2SP)" ] ;
-            geosrs:operationParameter [ rdfs:label "Latitude of 2nd standard parallel" ;
-                    om:hasUnit om:degree ;
-                    rdf:value 44 ],
-                [ rdfs:label "Latitude of false origin" ;
-                    om:hasUnit om:degree ;
-                    rdf:value 4.65e+01 ],
-                [ rdfs:label "Longitude of false origin" ;
-                    om:hasUnit om:degree ;
-                    rdf:value 3 ],
+            geosrs:operationParameter [ rdfs:label "Northing at false origin" ;
+                    om:hasUnit om:metre ;
+                    rdf:value 6600000 ],
                 [ rdfs:label "Latitude of 1st standard parallel" ;
                     om:hasUnit om:degree ;
                     rdf:value 49 ],
+                [ rdfs:label "Longitude of false origin" ;
+                    om:hasUnit om:degree ;
+                    rdf:value 3 ],
                 [ rdfs:label "Easting at false origin" ;
                     om:hasUnit om:metre ;
                     rdf:value 700000 ],
-                [ rdfs:label "Northing at false origin" ;
-                    om:hasUnit om:metre ;
-                    rdf:value 6600000 ] ] ;
+                [ rdfs:label "Latitude of false origin" ;
+                    om:hasUnit om:degree ;
+                    rdf:value 4.65e+01 ],
+                [ rdfs:label "Latitude of 2nd standard parallel" ;
+                    om:hasUnit om:degree ;
+                    rdf:value 44 ] ] ;
     geosrs:coordinateSystem [ a geosrs:CartesianCoordinateSystem ;
             geosrs:axis [ rdfs:label "Northing" ;
                     om:hasUnit om:metre ;

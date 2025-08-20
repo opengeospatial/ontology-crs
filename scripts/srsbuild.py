@@ -98,8 +98,8 @@ def convertCSVToSHACLAndADoc():
         if filename.endswith(".csv"):
             with open(abspath+filename, newline='') as csvfile:
                 reader = csv.DictReader(csvfile)
-                adocdef="===== SHACL Rules: "+str(file)+"\n\n"
-                adocdef+="."+str(file)+"\n[cols=\"6*\"]\n|===\n"
+                adocdef="===== SHACL Shapes: "+str(filename).replace(".csv","")+"\n\n"
+                adocdef+="."+str(filemae).replace(".csv","")+"\n[cols=\"6*\"]\n|===\n"
                 adocdef+="|TargetNode|Property|Class|MinCount|MaxCount|Comment\n\n"
                 for row in reader:
                     if "Concept" in row and row["Concept"]!="":
@@ -131,6 +131,7 @@ def convertCSVToSHACLAndADoc():
                         else:
                             adocdef+="| - "
                         adocdef+="\n\n"
+                adocdef+="|===\n\n
     with open("spec/sections/ac-shacl_shapes.adoc", 'r',encoding="utf-8") as f:
         ashaclshapes=f.read()
     with open("spec/sections/ac-shacl_shapes.adoc", 'w',encoding="utf-8") as f:

@@ -1,3 +1,11 @@
 Concept,Property,Class,MinCount,MaxCount,Comment
+geosrs:3DCoordinateSystem,geosrs:axis,geosrs:CoordinateSystemAxis,3,,"A 3D coordinate system should have at least three axis"
+geosrs:CRS,geosrs:coordinateSystem,geosrs:CoordinateSystem,1,1,"A coordinate reference system should have exactly one coordinate system"
+geosrs:CRS,geosrs:domainOfValidity,geosrs:AreaOfUse,1,,"A coordinate reference system should have at least one area of use"
+geosrs:CRS,geosrs:datum,geosrs:Datum,1,1,"A coordinate reference system should have exactly one datum"
+geosrs:CRS,geosrs:datumEnsemble,geosrs:DatumEnsemble,1,1,"A coordinate reference system may have exactly one datum ensemble"
 geosrs:CoordinateSystem,geosrs:axis,geosrs:CoordinateSystemAxis,1,,"A coordinate system should have at least one axis"
-geosrs:CoordinateSystemAxis,geosrs:axisDirection,,1,1,"A coordinate system axis should have excatly one axis direction"
+geosrs:CoordinateSystemAxis,geosrs:axisDirection,geosrs:AxisDirection,1,1,"A coordinate system axis should have exactly one axis direction"
+geosrs:GeodeticCRS,geosrs:coordinateSystem,geosrs:GeodeticCoordinateSystem,1,,"A geodetic coordinate reference system should have exactly one geodetic coordinate system"
+geosrs:ProjectedCRS,geosrs:conversion,geosrs:Conversion,1,,"A projected coordinate reference system should have at least one conversion"
+geosrs:TemporalCoordinateSystem,geosrs:axis,geosrs:CoordinateSystemAxis,1,1,"A temporal coordinate system should have exactly one axis"

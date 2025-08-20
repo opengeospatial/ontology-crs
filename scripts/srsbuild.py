@@ -95,19 +95,22 @@ def convertCSVToSHACLAndADoc():
 
     for file in os.listdir(directory):
         filename = os.fsdecode(file)
+        shapecounter=1
         if filename.endswith(".csv"):
             with open(abspath+filename, newline='') as csvfile:
                 reader = csv.DictReader(csvfile)
                 adocdef="===== SHACL Shapes: "+str(filename).replace(".csv","")+"\n\n"
-                adocdef+="."+str(filemae).replace(".csv","")+"\n[cols=\"6*\"]\n|===\n"
-                adocdef+="|TargetNode|Property|Class|MinCount|MaxCount|Comment\n\n"
+                adocdef+="."+str(filename).replace(".csv","")+"\n[cols=\"6*\"]\n|===\n"
+                adocdef+="|Label|TargetNode|Property|Class|MinCount|MaxCount|Comment\n\n"
                 for row in reader:
                     if "Concept" in row and row["Concept"]!="":
                         shapeuri=row["Concept"].replace("geosrs:","https://w3id.org/geosrs/")+"Shape"
                         shapepropuri=row["Concept"].replace("geosrs:","https://w3id.org/geosrs/")+"Shape_Property"
                         shaclres.add((URIRef(shapeuri),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef("http://www.w3.org/ns/shacl#NodeShape")))
+                        shaclres.add((URIRef(shapeuri),URIRef("http://www.w3.org/2000/01/rdf-schema#label"),Literal("CRS Ontology Shape S"+str(shapecounter),lang="en")))
                         shaclres.add((URIRef(shapeuri),URIRef("http://www.w3.org/ns/shacl#targetNode"),URIRef(row["Concept"].replace("geosrs:","https://w3id.org/geosrs/"))))
                         shaclres.add((URIRef(shapeuri),URIRef("http://www.w3.org/ns/shacl#property"),URIRef(shapepropuri)))
+                        adocdef+="|Shape S"+str(shapecounter)+" "
                         adocdef+="|"+str(row["Concept"])+" "
                         adocdef+="|"+str(row["Property"])+" "
                         if "Class" in row and row["Class"]!="":
@@ -131,6 +134,7 @@ def convertCSVToSHACLAndADoc():
                         else:
                             adocdef+="| - "
                         adocdef+="\n\n"
+                    shapecounter+=1
                 adocdef+="|===\n\n"
     with open("spec/sections/ac-shacl_shapes.adoc", 'r',encoding="utf-8") as f:
         ashaclshapes=f.read()

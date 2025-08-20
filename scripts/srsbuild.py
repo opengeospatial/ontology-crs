@@ -105,7 +105,7 @@ def convertCSVToSHACLAndADoc():
                     if "Concept" in row and row["Concept"]!="":
                         shapeuri=row["Concept"].replace("geosrs:","https://w3id.org/geosrs/")+"Shape"
                         shapepropuri=row["Concept"].replace("geosrs:","https://w3id.org/geosrs/")+"Shape_Property"
-                        shaclres.add((URIRef(shapeuri),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef("http://www.w3.org/ns/shacl#NodeShape"))))
+                        shaclres.add((URIRef(shapeuri),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef("http://www.w3.org/ns/shacl#NodeShape")))
                         shaclres.add((URIRef(shapeuri),URIRef("http://www.w3.org/ns/shacl#targetNode"),URIRef(row["Concept"].replace("geosrs:","https://w3id.org/geosrs/"))))
                         shaclres.add((URIRef(shapeuri),URIRef("http://www.w3.org/ns/shacl#property"),URIRef(shapepropuri)))
                         adocdef+="|"+str(row["Concept"])+"\n\n"

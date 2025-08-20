@@ -3,11 +3,21 @@
 @prefix sh: <http://www.w3.org/ns/shacl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+geosrs:CoordinateSystemAxisShape a sh:NodeShape ;
+    rdfs:label "CRS Ontology Shape S2"@en ;
+    sh:property geosrs:CoordinateSystemAxisShape_Property ;
+    sh:targetNode geosrs:CoordinateSystemAxis .
+
 geosrs:CoordinateSystemShape a sh:NodeShape ;
+    rdfs:label "CRS Ontology Shape S1"@en ;
     sh:property geosrs:CoordinateSystemShape_Property ;
     sh:targetNode geosrs:CoordinateSystem .
 
+geosrs:CoordinateSystemAxisShape_Property rdfs:comment "A coordinate system axis should have excatly one axis direction"@en ;
+    sh:maxCount 1 ;
+    sh:minCount 1 .
+
 geosrs:CoordinateSystemShape_Property rdfs:comment "A coordinate system should have at least one axis"@en ;
-    sh:class geosrs:Axis ;
+    sh:class geosrs:CoordinateSystemAxis ;
     sh:minCount 1 .
 

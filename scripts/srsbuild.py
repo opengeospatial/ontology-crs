@@ -131,7 +131,7 @@ def convertCSVToSHACLAndADoc():
                         else:
                             adocdef+="| - "
                         adocdef+="\n\n"
-                adocdef+="|===\n\n
+                adocdef+="|===\n\n"
     with open("spec/sections/ac-shacl_shapes.adoc", 'r',encoding="utf-8") as f:
         ashaclshapes=f.read()
     with open("spec/sections/ac-shacl_shapes.adoc", 'w',encoding="utf-8") as f:

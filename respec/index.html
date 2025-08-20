@@ -11340,6 +11340,51 @@ They may be stated as part of a SPARQL 1.1 Service Description <a href="#SPARQLS
 <tbody>
 <tr>
   <td class="tableblock halign-left valign-top"><p class="tableblock">Shape S1</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">geosrs:3DCoordinateSystem</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">geosrs:axis</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">geosrs:CoordinateSystemAxis</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">A 3D coordinate system should have at least three axis</p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Shape S2</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">geosrs:CRS</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">geosrs:coordinateSystem</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">geosrs:CoordinateSystem</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">A coordinate reference system should have exactly one coordinate system</p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Shape S3</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">geosrs:CRS</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">geosrs:domainOfValidity</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">geosrs:AreaOfUse</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">A coordinate reference system should have at least one area of use</p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Shape S4</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">geosrs:CRS</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">geosrs:datum</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">geosrs:Datum</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">A coordinate reference system should have exactly one datum</p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Shape S5</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">geosrs:CRS</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">geosrs:datumEnsemble</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">geosrs:DatumEnsemble</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">A coordinate reference system may have exactly one datum ensemble</p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Shape S6</p></td>
   <td class="tableblock halign-left valign-top"><p class="tableblock">geosrs:CoordinateSystem</p></td>
   <td class="tableblock halign-left valign-top"><p class="tableblock">geosrs:axis</p></td>
   <td class="tableblock halign-left valign-top"><p class="tableblock">geosrs:CoordinateSystemAxis</p></td>
@@ -11348,13 +11393,40 @@ They may be stated as part of a SPARQL 1.1 Service Description <a href="#SPARQLS
   <td class="tableblock halign-left valign-top"><p class="tableblock">A coordinate system should have at least one axis</p></td>
 </tr>
 <tr>
-  <td class="tableblock halign-left valign-top"><p class="tableblock">Shape S2</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Shape S7</p></td>
   <td class="tableblock halign-left valign-top"><p class="tableblock">geosrs:CoordinateSystemAxis</p></td>
   <td class="tableblock halign-left valign-top"><p class="tableblock">geosrs:axisDirection</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">geosrs:AxisDirection</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">A coordinate system axis should have exactly one axis direction</p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Shape S8</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">geosrs:GeodeticCRS</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">geosrs:coordinateSystem</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">geosrs:GeodeticCoordinateSystem</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
   <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">A geodetic coordinate reference system should have exactly one geodetic coordinate system</p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Shape S9</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">geosrs:ProjectedCRS</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">geosrs:conversion</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">geosrs:Conversion</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">A projected coordinate reference system should have at least one conversion</p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Shape S10</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">geosrs:TemporalCoordinateSystem</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">geosrs:axis</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">geosrs:CoordinateSystemAxis</p></td>
   <td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
   <td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
-  <td class="tableblock halign-left valign-top"><p class="tableblock">A coordinate system axis should have excatly one axis direction</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">A temporal coordinate system should have exactly one axis</p></td>
 </tr>
 </tbody>
 </table>
@@ -11496,7 +11568,7 @@ Actual References:
 </section>
 <div id="footer">
 <div id="footer-text">
-Last updated 2025-08-20 15:40:03 UTC
+Last updated 2025-08-20 16:39:59 UTC
 </div>
 </div>
 </body>

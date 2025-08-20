@@ -3,21 +3,78 @@
 @prefix sh: <http://www.w3.org/ns/shacl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+geosrs:3DCoordinateSystemShape a sh:NodeShape ;
+    rdfs:label "CRS Ontology Shape S1"@en ;
+    sh:property geosrs:3DCoordinateSystemShape_Property ;
+    sh:targetNode geosrs:3DCoordinateSystem .
+
+geosrs:CRSShape a sh:NodeShape ;
+    rdfs:label "CRS Ontology Shape S2"@en,
+        "CRS Ontology Shape S3"@en,
+        "CRS Ontology Shape S4"@en,
+        "CRS Ontology Shape S5"@en ;
+    sh:property geosrs:CRSShape_Property ;
+    sh:targetNode geosrs:CRS .
+
 geosrs:CoordinateSystemAxisShape a sh:NodeShape ;
-    rdfs:label "CRS Ontology Shape S2"@en ;
+    rdfs:label "CRS Ontology Shape S7"@en ;
     sh:property geosrs:CoordinateSystemAxisShape_Property ;
     sh:targetNode geosrs:CoordinateSystemAxis .
 
 geosrs:CoordinateSystemShape a sh:NodeShape ;
-    rdfs:label "CRS Ontology Shape S1"@en ;
+    rdfs:label "CRS Ontology Shape S6"@en ;
     sh:property geosrs:CoordinateSystemShape_Property ;
     sh:targetNode geosrs:CoordinateSystem .
 
-geosrs:CoordinateSystemAxisShape_Property rdfs:comment "A coordinate system axis should have excatly one axis direction"@en ;
+geosrs:GeodeticCRSShape a sh:NodeShape ;
+    rdfs:label "CRS Ontology Shape S8"@en ;
+    sh:property geosrs:GeodeticCRSShape_Property ;
+    sh:targetNode geosrs:GeodeticCRS .
+
+geosrs:ProjectedCRSShape a sh:NodeShape ;
+    rdfs:label "CRS Ontology Shape S9"@en ;
+    sh:property geosrs:ProjectedCRSShape_Property ;
+    sh:targetNode geosrs:ProjectedCRS .
+
+geosrs:TemporalCoordinateSystemShape a sh:NodeShape ;
+    rdfs:label "CRS Ontology Shape S10"@en ;
+    sh:property geosrs:TemporalCoordinateSystemShape_Property ;
+    sh:targetNode geosrs:TemporalCoordinateSystem .
+
+geosrs:3DCoordinateSystemShape_Property rdfs:comment "A 3D coordinate system should have at least three axis"@en ;
+    sh:class geosrs:CoordinateSystemAxis ;
+    sh:minCount 3 .
+
+geosrs:CRSShape_Property rdfs:comment "A coordinate reference system may have exactly one datum ensemble"@en,
+        "A coordinate reference system should have at least one area of use"@en,
+        "A coordinate reference system should have exactly one coordinate system"@en,
+        "A coordinate reference system should have exactly one datum"@en ;
+    sh:class geosrs:AreaOfUse,
+        geosrs:CoordinateSystem,
+        geosrs:Datum,
+        geosrs:DatumEnsemble ;
+    sh:maxCount 1 ;
+    sh:minCount 1 .
+
+geosrs:CoordinateSystemAxisShape_Property rdfs:comment "A coordinate system axis should have exactly one axis direction"@en ;
+    sh:class geosrs:AxisDirection ;
     sh:maxCount 1 ;
     sh:minCount 1 .
 
 geosrs:CoordinateSystemShape_Property rdfs:comment "A coordinate system should have at least one axis"@en ;
     sh:class geosrs:CoordinateSystemAxis ;
+    sh:minCount 1 .
+
+geosrs:GeodeticCRSShape_Property rdfs:comment "A geodetic coordinate reference system should have exactly one geodetic coordinate system"@en ;
+    sh:class geosrs:GeodeticCoordinateSystem ;
+    sh:minCount 1 .
+
+geosrs:ProjectedCRSShape_Property rdfs:comment "A projected coordinate reference system should have at least one conversion"@en ;
+    sh:class geosrs:Conversion ;
+    sh:minCount 1 .
+
+geosrs:TemporalCoordinateSystemShape_Property rdfs:comment "A temporal coordinate system should have exactly one axis"@en ;
+    sh:class geosrs:CoordinateSystemAxis ;
+    sh:maxCount 1 ;
     sh:minCount 1 .
 

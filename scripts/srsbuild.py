@@ -96,7 +96,7 @@ def convertCSVToSHACLAndADoc():
     for file in os.listdir(directory):
         filename = os.fsdecode(file)
         if filename.endswith(".csv"):
-            with open(csvpath, newline='') as csvfile:
+            with open(abspath+filename, newline='') as csvfile:
                 reader = csv.DictReader(csvfile)
                 adocdef="===== SHACL Rules: "+str(file)+"\n\n"
                 adocdef+="."+str(row["Concept"])+"\n[cols=\"1,6\"]\n|===\n"

@@ -1,0 +1,8 @@
+Concept,Property,Class,MinCount,MaxCount,Comment
+geosrs:3DCoordinateSystem,geosrs:axis,geosrs:CoordinateSystemAxis,3,,"A 3D coordinate system should have at least three axis"
+geosrs:ConicalCoordinateSystem,geosrs:axis,geosrs:CoordinateSystemAxis,3,,"A conical coordinate system should have at least three axis"
+geosrs:CoordinateSystem,geosrs:axis,geosrs:CoordinateSystemAxis,1,,"A coordinate system should have at least one axis"
+geosrs:CoordinateSystemAxis,geosrs:axisDirection,geosrs:AxisDirection,1,1,"A coordinate system axis should have exactly one axis direction"
+geosrs:CylindricalCoordinateSystem,geosrs:axis,geosrs:CoordinateSystemAxis,3,,"A cylindrical coordinate system should have at least three axis"
+geosrs:PlanarCoordinateSystem,geosrs:axis,geosrs:CoordinateSystemAxis,2,,"A cylindrical coordinate system should have at least two axis"
+geosrs:TemporalCoordinateSystem,geosrs:axis,geosrs:CoordinateSystemAxis,1,1,"A temporal coordinate system should have exactly one axis"

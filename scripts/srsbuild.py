@@ -99,7 +99,7 @@ def convertCSVToSHACLAndADoc():
         if filename.endswith(".csv"):
             with open(abspath+filename, newline='') as csvfile:
                 reader = csv.DictReader(csvfile)
-                adocdef="===== SHACL Shapes: "+str(filename).replace(".csv","").capitalize()+"\n\n"
+                adocdef+="===== SHACL Shapes: "+str(filename).replace(".csv","").capitalize()+"\n\n"
                 adocdef+="."+str(filename).replace(".csv","").capitalize()+"\n[cols=\"7*\"]\n|===\n"
                 adocdef+="|Label|TargetNode|Property|Class|MinCount|MaxCount|Comment\n\n"
                 for row in reader:

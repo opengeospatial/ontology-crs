@@ -176,9 +176,9 @@ def generateAlignments():
     for file in os.listdir(directory):
         filename = os.fsdecode(file)
         if filename.endswith(".json"):
-        gr = Graph()
-        gr.parse(location=abspath+filename, format='json-ld')
-        gr.serialize(destination=abspath+filename.replace(".json",".ttl"), format='turtle')
+            gr = Graph()
+            gr.parse(location=abspath+filename, format='json-ld')
+            gr.serialize(destination=abspath+filename.replace(".json",".ttl"), format='turtle')
 
 
 def convertCamelToSnake(strr):

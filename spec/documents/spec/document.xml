@@ -6323,16 +6323,16 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 </tr></tbody>
 </table>
 </clause>
-</annex><annex id="_d12e3eac-c082-6bd4-acbc-7a3927c468cb" obligation="informative">
+</annex><annex id="_9de5b097-2441-8520-cb11-21a1f1c3dcd8" obligation="informative">
 <title id="_8dd35ff6-f41c-83ae-58df-a3465fa8defb">SHACL Shapes</title>
 <p id="_c680c9aa-8b84-d49f-95ce-9621f0b3e984">This section introduces SHACL shapes which can be used to verify graphs encoded using the vocabulary defined in this specification.</p>
 
 <floating-title id="_2e1e93d4-a76e-4318-c6c8-bc1034df4ab7" depth="2" type="floating-title">Overview</floating-title>
 <p id="_d5c3f150-68ff-eaac-2e6a-46801f7f6ef6">SHACL shapes in this specification are subdivided by the same module designations as used previously. In order to verify a graph a single validation file of SHACL shapes is provided alongside this specification.</p>
 
-<clause id="_d411aae9-fea7-0fcd-a5b8-e4602c939cb8" obligation="informative">
+<clause id="_be2fc2b7-450b-1ad9-558b-847b371081ab" obligation="informative">
 <title id="_a986e643-0eef-fbec-790e-b99044c29493">SHACL Shapes: Cs</title>
-<table id="_b328b410-b5c1-332c-24ae-e7bd3ac0ace1">
+<table id="_50428048-4832-187b-c5d9-2623f07ca47f">
 <name id="_bd4d94a8-1064-4178-4466-6348f7e93162">Cs</name>
 <thead><tr id="_2df30484-e5c1-1ee2-fbb2-fcb4a5c43572"><th id="_ce37facd-1cda-d2b9-edb0-4d592ae02421" valign="middle" align="left">Label</th>
 <th id="_d477d23d-8e1a-a0f0-9d44-eca16e15f45d" valign="middle" align="left">TargetNode</th>
@@ -6377,13 +6377,13 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 <td id="_ab4cad7b-4975-dbc2-ee20-f157cb039515" valign="middle" align="left">3</td>
 <td id="_bfa9662e-4b69-1f4e-4e93-5a6fb77653ca" valign="middle" align="left">-</td>
 <td id="_6a835d91-e84d-50ee-b39b-79de3e047c55" valign="middle" align="left">A cylindrical coordinate system should have at least three axis</td>
-</tr><tr id="_6e97cda4-4ab2-0a98-270a-363450b557bd"><td id="_18f172ba-0065-d33e-7c0e-7c476fd10d82" valign="middle" align="left">Shape S6</td>
+</tr><tr id="_85f1d4ba-e82a-ddcf-e08e-744e52963fef"><td id="_18f172ba-0065-d33e-7c0e-7c476fd10d82" valign="middle" align="left">Shape S6</td>
 <td id="_d81f6243-8ed5-ba14-5d1b-93cb4ef494bb" valign="middle" align="left">geosrs:PlanarCoordinateSystem</td>
 <td id="_d869a41c-8e8b-4293-24d8-4e0c710c7ccc" valign="middle" align="left">geosrs:axis</td>
 <td id="_d0a6155b-7317-702d-14b0-79ca75920da0" valign="middle" align="left">geosrs:CoordinateSystemAxis</td>
 <td id="_6ea25f06-918b-77f6-4740-83bddcda4dfb" valign="middle" align="left">2</td>
 <td id="_28f018b7-3bd2-0e2f-b1ae-e666cd2285cd" valign="middle" align="left">-</td>
-<td id="_9e5082b8-6f75-088d-01bc-a0b945cb65aa" valign="middle" align="left">A cylindrical coordinate system should have at least two axis</td>
+<td id="_97405553-d427-5261-4c75-2f69d542605c" valign="middle" align="left">A planar coordinate system should have at least two axis</td>
 </tr><tr id="_490baa1a-ab4a-2e02-75da-39500fa012fd"><td id="_abf4b4b5-75c0-3b12-d066-84474866235d" valign="middle" align="left">Shape S7</td>
 <td id="_b44e0187-6a27-1ac9-eb3b-abc6abf31435" valign="middle" align="left">geosrs:TemporalCoordinateSystem</td>
 <td id="_5d20f213-8c90-0efe-c7e5-103ffcaab3c1" valign="middle" align="left">geosrs:axis</td>

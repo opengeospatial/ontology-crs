@@ -145,7 +145,7 @@ geosrs:ParametricDatumShape_Property rdfs:comment "A parametric datum should hav
     sh:class geosrs:DefiningParameter ;
     sh:minCount 1 .
 
-geosrs:PlanarCoordinateSystemShape_Property rdfs:comment "A cylindrical coordinate system should have at least two axis"@en ;
+geosrs:PlanarCoordinateSystemShape_Property rdfs:comment "A planar coordinate system should have at least two axis"@en ;
     sh:class geosrs:CoordinateSystemAxis ;
     sh:minCount 2 .
 

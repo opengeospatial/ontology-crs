@@ -8354,15 +8354,15 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <dl>
 <dt class="hdlist1">requirement</dt>
 <dd>
-<p>/req/instances/SRS_Literal_Types</p>
-</dd>
-<dt class="hdlist1">requirement</dt>
-<dd>
 <p>/req/instances/Coordinate_System_Axis</p>
 </dd>
 <dt class="hdlist1">requirement</dt>
 <dd>
 <p>/req/instances/Spheroids</p>
+</dd>
+<dt class="hdlist1">requirement</dt>
+<dd>
+<p>/req/instances/SRS_Literal_Types</p>
 </dd>
 </dl>
 </div>
@@ -10783,51 +10783,20 @@ They may be stated as part of a SPARQL 1.1 Service Description <a href="#SPARQLS
 </dd>
 <dt class="hdlist1">abstract-test</dt>
 <dd>
-<p>/conf/instances/SRS_Literal_Types</p>
-</dd>
-<dt class="hdlist1">abstract-test</dt>
-<dd>
 <p>/conf/instances/Coordinate_System_Axis</p>
 </dd>
 <dt class="hdlist1">abstract-test</dt>
 <dd>
 <p>/conf/instances/Spheroids</p>
 </dd>
-</dl>
-</div>
-</div>
-</aside>
-<section class="sect3">
-<h4 id="_srs_literal_types_2">SRS Literal Types</h4>
-<aside class="example">
-<div class="content">
-<div class="dlist">
-<dl>
-<dt class="hdlist1">target</dt>
+<dt class="hdlist1">abstract-test</dt>
 <dd>
-<p>/req/instances/SRS_Literal_Types</p>
-</dd>
-<dt class="hdlist1">test-purpose</dt>
-<dd>
-<p>Check conformance with this requirement</p>
-</dd>
-<dt class="hdlist1">test-method</dt>
-<dd>
-<p>Verify that queries involving <a href="#Class: geosrs:proj4Literal"><code>geosrs:proj4Literal</code></a> <a href="#Class: geosrs:projJSONLiteral"><code>geosrs:projJSONLiteral</code></a> <a href="#Class: geosrs:wktLiteral"><code>geosrs:wktLiteral</code></a>  return the correct result on a test dataset.</p>
-</dd>
-<dt class="hdlist1">test-method-type</dt>
-<dd>
-<p>Capabilities</p>
-</dd>
-<dt class="hdlist1">reference</dt>
-<dd>
-<p><a href="#Class: geosrs:proj4Literal"><code>geosrs:proj4Literal</code></a> <a href="#Class: geosrs:projJSONLiteral"><code>geosrs:projJSONLiteral</code></a> <a href="#Class: geosrs:wktLiteral"><code>geosrs:wktLiteral</code></a></p>
+<p>/conf/instances/SRS_Literal_Types</p>
 </dd>
 </dl>
 </div>
 </div>
 </aside>
-</section>
 <section class="sect3">
 <h4 id="_coordinate_system_axis_2">Coordinate System Axis</h4>
 <aside class="example">
@@ -10884,6 +10853,37 @@ They may be stated as part of a SPARQL 1.1 Service Description <a href="#SPARQLS
 <dt class="hdlist1">reference</dt>
 <dd>
 <p><a href="#Class: geosrs:GRS1980"><code>geosrs:GRS1980</code></a> <a href="#Class: geosrs:GRS67"><code>geosrs:GRS67</code></a> <a href="#Class: geosrs:PZ90"><code>geosrs:PZ90</code></a> <a href="#Class: geosrs:Airy1830"><code>geosrs:Airy1830</code></a> <a href="#Class: geosrs:AiryModified1849"><code>geosrs:AiryModified1849</code></a> <a href="#Class: geosrs:International1924"><code>geosrs:International1924</code></a> <a href="#Class: geosrs:AustralianNationalSpheroid"><code>geosrs:AustralianNationalSpheroid</code></a> <a href="#Class: geosrs:Everest1930"><code>geosrs:Everest1930</code></a> <a href="#Class: geosrs:Clarke1866"><code>geosrs:Clarke1866</code></a> <a href="#Class: geosrs:Plessis1817"><code>geosrs:Plessis1817</code></a> <a href="#Class: geosrs:Danish1876"><code>geosrs:Danish1876</code></a> <a href="#Class: geosrs:Struve1860"><code>geosrs:Struve1860</code></a> <a href="#Class: geosrs:IAG1975"><code>geosrs:IAG1975</code></a> <a href="#Class: geosrs:Clarke1858"><code>geosrs:Clarke1858</code></a> <a href="#Class: geosrs:Clarke1880"><code>geosrs:Clarke1880</code></a> <a href="#Class: geosrs:Helmert1906"><code>geosrs:Helmert1906</code></a> <a href="#Class: geosrs:CGCS2000"><code>geosrs:CGCS2000</code></a> <a href="#Class: geosrs:GSK-2011"><code>geosrs:GSK-2011</code></a> <a href="#Class: geosrs:Zach1812"><code>geosrs:Zach1812</code></a> <a href="#Class: geosrs:Clarke1880ARC"><code>geosrs:Clarke1880ARC</code></a> <a href="#Class: geosrs:Clarke1880IGN"><code>geosrs:Clarke1880IGN</code></a> <a href="#Class: geosrs:WGS66"><code>geosrs:WGS66</code></a> <a href="#Class: geosrs:WGS72"><code>geosrs:WGS72</code></a> <a href="#Class: geosrs:WGS84"><code>geosrs:WGS84</code></a> <a href="#Class: geosrs:Krassowsky1940"><code>geosrs:Krassowsky1940</code></a></p>
+</dd>
+</dl>
+</div>
+</div>
+</aside>
+</section>
+<section class="sect3">
+<h4 id="_srs_literal_types_2">SRS Literal Types</h4>
+<aside class="example">
+<div class="content">
+<div class="dlist">
+<dl>
+<dt class="hdlist1">target</dt>
+<dd>
+<p>/req/instances/SRS_Literal_Types</p>
+</dd>
+<dt class="hdlist1">test-purpose</dt>
+<dd>
+<p>Check conformance with this requirement</p>
+</dd>
+<dt class="hdlist1">test-method</dt>
+<dd>
+<p>Verify that queries involving <a href="#Class: geosrs:proj4Literal"><code>geosrs:proj4Literal</code></a> <a href="#Class: geosrs:projJSONLiteral"><code>geosrs:projJSONLiteral</code></a> <a href="#Class: geosrs:wktLiteral"><code>geosrs:wktLiteral</code></a>  return the correct result on a test dataset.</p>
+</dd>
+<dt class="hdlist1">test-method-type</dt>
+<dd>
+<p>Capabilities</p>
+</dd>
+<dt class="hdlist1">reference</dt>
+<dd>
+<p><a href="#Class: geosrs:proj4Literal"><code>geosrs:proj4Literal</code></a> <a href="#Class: geosrs:projJSONLiteral"><code>geosrs:projJSONLiteral</code></a> <a href="#Class: geosrs:wktLiteral"><code>geosrs:wktLiteral</code></a></p>
 </dd>
 </dl>
 </div>
@@ -11321,100 +11321,9 @@ They may be stated as part of a SPARQL 1.1 Service Description <a href="#SPARQLS
 In order to verify a graph a single validation file of SHACL shapes is provided alongside this specification.</p>
 </p>
 <section class="sect4">
-<h5 id="_shacl_shapes_cs">SHACL Shapes: Cs</h5>
-<table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 369. Cs</caption>
-<colgroup>
-<col style="width: 14.2857%;">
-<col style="width: 14.2857%;">
-<col style="width: 14.2857%;">
-<col style="width: 14.2857%;">
-<col style="width: 14.2857%;">
-<col style="width: 14.2857%;">
-<col style="width: 14.2858%;">
-</colgroup>
-<thead>
-<tr>
-  <th class="tableblock halign-left valign-top">Label</th>
-  <th class="tableblock halign-left valign-top">TargetNode</th>
-  <th class="tableblock halign-left valign-top">Property</th>
-  <th class="tableblock halign-left valign-top">Class</th>
-  <th class="tableblock halign-left valign-top">MinCount</th>
-  <th class="tableblock halign-left valign-top">MaxCount</th>
-  <th class="tableblock halign-left valign-top">Comment</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td class="tableblock halign-left valign-top"><p class="tableblock">Shape S1</p></td>
-  <td class="tableblock halign-left valign-top"><p class="tableblock">geosrs:3DCoordinateSystem</p></td>
-  <td class="tableblock halign-left valign-top"><p class="tableblock">geosrs:axis</p></td>
-  <td class="tableblock halign-left valign-top"><p class="tableblock">geosrs:CoordinateSystemAxis</p></td>
-  <td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
-  <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
-  <td class="tableblock halign-left valign-top"><p class="tableblock">A 3D coordinate system should have at least three axis</p></td>
-</tr>
-<tr>
-  <td class="tableblock halign-left valign-top"><p class="tableblock">Shape S2</p></td>
-  <td class="tableblock halign-left valign-top"><p class="tableblock">geosrs:ConicalCoordinateSystem</p></td>
-  <td class="tableblock halign-left valign-top"><p class="tableblock">geosrs:axis</p></td>
-  <td class="tableblock halign-left valign-top"><p class="tableblock">geosrs:CoordinateSystemAxis</p></td>
-  <td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
-  <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
-  <td class="tableblock halign-left valign-top"><p class="tableblock">A conical coordinate system should have at least three axis</p></td>
-</tr>
-<tr>
-  <td class="tableblock halign-left valign-top"><p class="tableblock">Shape S3</p></td>
-  <td class="tableblock halign-left valign-top"><p class="tableblock">geosrs:CoordinateSystem</p></td>
-  <td class="tableblock halign-left valign-top"><p class="tableblock">geosrs:axis</p></td>
-  <td class="tableblock halign-left valign-top"><p class="tableblock">geosrs:CoordinateSystemAxis</p></td>
-  <td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
-  <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
-  <td class="tableblock halign-left valign-top"><p class="tableblock">A coordinate system should have at least one axis</p></td>
-</tr>
-<tr>
-  <td class="tableblock halign-left valign-top"><p class="tableblock">Shape S4</p></td>
-  <td class="tableblock halign-left valign-top"><p class="tableblock">geosrs:CoordinateSystemAxis</p></td>
-  <td class="tableblock halign-left valign-top"><p class="tableblock">geosrs:axisDirection</p></td>
-  <td class="tableblock halign-left valign-top"><p class="tableblock">geosrs:AxisDirection</p></td>
-  <td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
-  <td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
-  <td class="tableblock halign-left valign-top"><p class="tableblock">A coordinate system axis should have exactly one axis direction</p></td>
-</tr>
-<tr>
-  <td class="tableblock halign-left valign-top"><p class="tableblock">Shape S5</p></td>
-  <td class="tableblock halign-left valign-top"><p class="tableblock">geosrs:CylindricalCoordinateSystem</p></td>
-  <td class="tableblock halign-left valign-top"><p class="tableblock">geosrs:axis</p></td>
-  <td class="tableblock halign-left valign-top"><p class="tableblock">geosrs:CoordinateSystemAxis</p></td>
-  <td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
-  <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
-  <td class="tableblock halign-left valign-top"><p class="tableblock">A cylindrical coordinate system should have at least three axis</p></td>
-</tr>
-<tr>
-  <td class="tableblock halign-left valign-top"><p class="tableblock">Shape S6</p></td>
-  <td class="tableblock halign-left valign-top"><p class="tableblock">geosrs:PlanarCoordinateSystem</p></td>
-  <td class="tableblock halign-left valign-top"><p class="tableblock">geosrs:axis</p></td>
-  <td class="tableblock halign-left valign-top"><p class="tableblock">geosrs:CoordinateSystemAxis</p></td>
-  <td class="tableblock halign-left valign-top"><p class="tableblock">2</p></td>
-  <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
-  <td class="tableblock halign-left valign-top"><p class="tableblock">A planar coordinate system should have at least two axis</p></td>
-</tr>
-<tr>
-  <td class="tableblock halign-left valign-top"><p class="tableblock">Shape S7</p></td>
-  <td class="tableblock halign-left valign-top"><p class="tableblock">geosrs:TemporalCoordinateSystem</p></td>
-  <td class="tableblock halign-left valign-top"><p class="tableblock">geosrs:axis</p></td>
-  <td class="tableblock halign-left valign-top"><p class="tableblock">geosrs:CoordinateSystemAxis</p></td>
-  <td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
-  <td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
-  <td class="tableblock halign-left valign-top"><p class="tableblock">A temporal coordinate system should have exactly one axis</p></td>
-</tr>
-</tbody>
-</table>
-</section>
-<section class="sect4">
 <h5 id="_shacl_shapes_core">SHACL Shapes: Core</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 370. Core</caption>
+<caption class="title">Table 369. Core</caption>
 <colgroup>
 <col style="width: 14.2857%;">
 <col style="width: 14.2857%;">
@@ -11559,7 +11468,7 @@ In order to verify a graph a single validation file of SHACL shapes is provided 
 <section class="sect4">
 <h5 id="_shacl_shapes_datum">SHACL Shapes: Datum</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 371. Datum</caption>
+<caption class="title">Table 370. Datum</caption>
 <colgroup>
 <col style="width: 14.2857%;">
 <col style="width: 14.2857%;">
@@ -11589,6 +11498,124 @@ In order to verify a graph a single validation file of SHACL shapes is provided 
   <td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
   <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
   <td class="tableblock halign-left valign-top"><p class="tableblock">A parametric datum should have at least one defining parameter</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sect4">
+<h5 id="_shacl_shapes_cs">SHACL Shapes: Cs</h5>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Table 371. Cs</caption>
+<colgroup>
+<col style="width: 14.2857%;">
+<col style="width: 14.2857%;">
+<col style="width: 14.2857%;">
+<col style="width: 14.2857%;">
+<col style="width: 14.2857%;">
+<col style="width: 14.2857%;">
+<col style="width: 14.2858%;">
+</colgroup>
+<thead>
+<tr>
+  <th class="tableblock halign-left valign-top">Label</th>
+  <th class="tableblock halign-left valign-top">TargetNode</th>
+  <th class="tableblock halign-left valign-top">Property</th>
+  <th class="tableblock halign-left valign-top">Class</th>
+  <th class="tableblock halign-left valign-top">MinCount</th>
+  <th class="tableblock halign-left valign-top">MaxCount</th>
+  <th class="tableblock halign-left valign-top">Comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Shape S1</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">geosrs:3DCoordinateSystem</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">geosrs:axis</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">geosrs:CoordinateSystemAxis</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">A 3D coordinate system should have at least three axis</p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Shape S2</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">geosrs:ConicalCoordinateSystem</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">geosrs:axis</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">geosrs:CoordinateSystemAxis</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">A conical coordinate system should have at least three axis</p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Shape S3</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">geosrs:CoordinateSystem</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">geosrs:axis</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">geosrs:CoordinateSystemAxis</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">A coordinate system should have at least one axis</p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Shape S4</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">geosrs:CoordinateSystemAxis</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">geosrs:axisDirection</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">geosrs:AxisDirection</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">A coordinate system axis should have exactly one axis direction</p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Shape S5</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">geosrs:CylindricalCoordinateSystem</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">geosrs:axis</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">geosrs:CoordinateSystemAxis</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">A cylindrical coordinate system should have at least three axis</p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Shape S6</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">geosrs:DateTimeTemporalCoordinateSystem</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">geosrs:axis</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">geosrs:CoordinateSystemAxis</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">A date time temporal coordinate system should have exactly one axis</p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Shape S7</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">geosrs:PlanarCoordinateSystem</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">geosrs:axis</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">geosrs:CoordinateSystemAxis</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">2</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">A planar coordinate system should have at least two axis</p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Shape S8</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">geosrs:TemporalCoordinateSystem</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">geosrs:axis</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">geosrs:CoordinateSystemAxis</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">A temporal coordinate system should have exactly one axis</p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Shape S9</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">geosrs:TemporalCountCoordinateSystem</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">geosrs:axis</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">geosrs:CoordinateSystemAxis</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">A temporal count coordinate system should have exactly one axis</p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Shape S10</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">geosrs:TemporalMeasureCoordinateSystem</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">geosrs:axis</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">geosrs:CoordinateSystemAxis</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">A temporal measure coordinate system should have exactly one axis</p></td>
 </tr>
 </tbody>
 </table>
@@ -11730,7 +11757,7 @@ Actual References:
 </section>
 <div id="footer">
 <div id="footer-text">
-Last updated 2025-08-20 21:08:52 UTC
+Last updated 2025-09-02 18:32:13 UTC
 </div>
 </div>
 </body>

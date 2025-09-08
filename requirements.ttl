@@ -213,6 +213,12 @@
     ns1:definition "check conformance with this requirement" ;
     ns1:prefLabel "Polyhedral Projections" .
 
+<https://opengeospatial.github.io/ontology-crs//conf/projections/Projection> a ns2:ConformanceTest ;
+    ns2:testType ns2:Capabilities ;
+    rdfs:seeAlso <https://opengeospatial.github.io/ontology-crs//req/projections/Projection> ;
+    ns1:definition "check conformance with this requirement" ;
+    ns1:prefLabel "Projection" .
+
 <https://opengeospatial.github.io/ontology-crs//conf/projections/Pseudo_Azimuthal_Projections> a ns2:ConformanceTest ;
     ns2:testType ns2:Capabilities ;
     rdfs:seeAlso <https://opengeospatial.github.io/ontology-crs//req/projections/Pseudo_Azimuthal_Projections> ;
@@ -287,6 +293,7 @@
         <https://opengeospatial.github.io/ontology-crs//conf/11-projections_module.adoc/Perspective_Projections>,
         <https://opengeospatial.github.io/ontology-crs//conf/11-projections_module.adoc/Polyconic_Projections>,
         <https://opengeospatial.github.io/ontology-crs//conf/11-projections_module.adoc/Polyhedral_Projections>,
+        <https://opengeospatial.github.io/ontology-crs//conf/11-projections_module.adoc/Projection>,
         <https://opengeospatial.github.io/ontology-crs//conf/11-projections_module.adoc/Pseudo_Azimuthal_Projections>,
         <https://opengeospatial.github.io/ontology-crs//conf/11-projections_module.adoc/Pseudo_Conical_Projections>,
         <https://opengeospatial.github.io/ontology-crs//conf/11-projections_module.adoc/Pseudo_Cylindrical_Projections>,
@@ -426,6 +433,9 @@
 
 <https://opengeospatial.github.io/ontology-crs//req/projections/Polyhedral_Projections> a ns2:Requirement ;
     ns1:prefLabel "Polyhedral Projections" .
+
+<https://opengeospatial.github.io/ontology-crs//req/projections/Projection> a ns2:Requirement ;
+    ns1:prefLabel "Projection" .
 
 <https://opengeospatial.github.io/ontology-crs//req/projections/Pseudo_Azimuthal_Projections> a ns2:Requirement ;
     ns1:prefLabel "Pseudo Azimuthal Projections" .

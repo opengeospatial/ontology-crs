@@ -210,7 +210,7 @@ geosrs:PlateCarreeProjection,geosrs:EquidistantProjection,,Equidistant Projectio
 geosrs:PoleLineProjection,,,,Pole Line Projection,,,,geocrs:PoleLineProjection,,,Extension
 geosrs:PolyconicProjection,,,,Polyconic Projection,,,,geocrs:PolyconicProjection,,,Extension
 geosrs:PolyhedralProjection,,,,Polyhedral Projection,,,,geocrs:PolyhedralProjection,,,Extension
-geosrs:Projection,geosrs:Conversion,,,Projection,,,,geocrs:Projection,,,Extension
+geosrs:Projection,geosrs:Conversion,,Projection,Projection,,,,geocrs:Projection,,,Extension
 geosrs:PseudoAzimuthalProjection,,,,Pseudo-Azimuthal Projection,,,,geocrs:PseudoAzimuthalProjection,,,Extension
 geosrs:PseudoConicalProjection,,,,Pseudo-Conical Projection,,,,geocrs:PseudoConicalProjection,,,Extension
 geosrs:PseudoCylindricalProjection,,,,Pseudo-Cylindrical Projection,,,,geocrs:PseudoCylindricalProjection,,,Extension
@@ -280,3 +280,4 @@ geosrs:PutninsP4'Projection,geosrs:PseudoCylindricalProjection,,Pseudo Cylindric
 geosrs:PutninsP5'Projection,geosrs:PseudoCylindricalProjection,,Pseudo Cylindrical Projections,PutninsP5'Projection,,,,geocrs:ProjectionOntology#PutninsP5'Projection,,,Extension
 geosrs:PutninsP6'Projection,geosrs:PseudoCylindricalProjection,,Pseudo Cylindrical Projections,PutninsP6'Projection,,,,geocrs:ProjectionOntology#PutninsP6'Projection,,,Extension
 geosrs:MollweideWagnerProjection,,,,Mollweide Wagner Projection,,,,geocrs:MollweideWagnerProjection,,,Extension
+

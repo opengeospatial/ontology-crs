@@ -833,9 +833,24 @@ geosrs_projection:SinusoidalProjection a owl:Class ;
     rdfs:label "Sinusoidal Projection"@en ;
     rdfs:subClassOf geosrs_projection:PseudoCylindricalProjection .
 
+geosrs_projection:SliceAndDiceVertexGreatCircle a owl:Class ;
+    rdfs:label "Vertex-oriented Great Circle version of the Slice & Dice method"@en ;
+    rdfs:subClassOf geosrs_projection:EqualAreaProjection ;
+    skos:definition "The Vertex-oriented Great Circle version of the equa-area projection method defined for polyhedral globes by van Leeuwen and Strebe. van Leeuwen, D., & Strebe, D. (2006). A “Slice-and-Dice” Approach to Area Equivalence in Polyhedral Map Projections. Cartography and Geographic Information Science, 33(4), 269–286."@en .
+
+geosrs_projection:SlideAndDiceParallelSmallCircle a owl:Class ;
+    rdfs:label "Parallel Small Circle version of the Slice & Dice method"@en ;
+    rdfs:subClassOf geosrs_projection:EqualAreaProjection ;
+    skos:definition "The Parallel Small Circle version of the equa-area projection method defined for polyhedral globes by van Leeuwen and Strebe. van Leeuwen, D., & Strebe, D. (2006). A “Slice-and-Dice” Approach to Area Equivalence in Polyhedral Map Projections. Cartography and Geographic Information Science, 33(4), 269–286."@en .
+
 geosrs_projection:SmythEqualSurfaceProjection a owl:Class ;
     rdfs:label "Smyth Equal Surface Projection"@en ;
     rdfs:subClassOf geosrs_projection:CylindricalEqualArea .
+
+geosrs_projection:SnyderEqualArea a owl:Class ;
+    rdfs:label "Snyder Equal Area Projection"@en ;
+    rdfs:subClassOf geosrs_projection:EqualAreaProjection ;
+    skos:definition "Equal area projection for polyhedral globes, used frequently in Discrete Global Grid Systems. Snyder, J.P. (1992). \"An Equal-Area Map Projection for Polyhedral Globes\". Cartographica. 29 (1): 10–21"@en .
 
 geosrs_projection:SpaceObliqueMercatorProjection a owl:Class ;
     rdfs:label "Space Oblique Mercator Projection"@en .
@@ -1074,14 +1089,14 @@ geosrs_projection:ConformalProjection a owl:Class ;
 geosrs_projection:ConicalProjection a owl:Class ;
     rdfs:label "Conical Projection"@en .
 
-geosrs_projection:EqualAreaProjection a owl:Class ;
-    rdfs:label "Equal Area Projection"@en .
-
 geosrs_projection:PerspectiveProjection a owl:Class ;
     rdfs:label "Perspective Projection"@en .
 
 geosrs_projection:CompromiseProjection a owl:Class ;
     rdfs:label "Compromise Projection"@en .
+
+geosrs_projection:EqualAreaProjection a owl:Class ;
+    rdfs:label "Equal Area Projection"@en .
 
 geosrs_projection:CylindricalProjection a owl:Class ;
     rdfs:label "Cylindrical Projection"@en .

@@ -135,6 +135,12 @@
     ns1:definition "check conformance with this requirement" ;
     ns1:prefLabel "Interstellar Body" .
 
+<https://opengeospatial.github.io/ontology-crs//conf/projections/Archaic_Projections> a ns2:ConformanceTest ;
+    ns2:testType ns2:Capabilities ;
+    rdfs:seeAlso <https://opengeospatial.github.io/ontology-crs//req/projections/Archaic_Projections> ;
+    ns1:definition "check conformance with this requirement" ;
+    ns1:prefLabel "Archaic Projections" .
+
 <https://opengeospatial.github.io/ontology-crs//conf/projections/Azimuthal_Projections> a ns2:ConformanceTest ;
     ns2:testType ns2:Capabilities ;
     rdfs:seeAlso <https://opengeospatial.github.io/ontology-crs//req/projections/Azimuthal_Projections> ;
@@ -280,7 +286,8 @@
 <https://opengeospatial.github.io/ontology-crs/10-srsapplication_module.adoc> ns1:member <https://opengeospatial.github.io/ontology-crs//conf/10-srsapplication_module.adoc/Map_Types>,
         <https://opengeospatial.github.io/ontology-crs//conf/10-srsapplication_module.adoc/SRS_Application_Types> .
 
-<https://opengeospatial.github.io/ontology-crs/11-projections_module.adoc> ns1:member <https://opengeospatial.github.io/ontology-crs//conf/11-projections_module.adoc/Azimuthal_Projections>,
+<https://opengeospatial.github.io/ontology-crs/11-projections_module.adoc> ns1:member <https://opengeospatial.github.io/ontology-crs//conf/11-projections_module.adoc/Archaic_Projections>,
+        <https://opengeospatial.github.io/ontology-crs//conf/11-projections_module.adoc/Azimuthal_Projections>,
         <https://opengeospatial.github.io/ontology-crs//conf/11-projections_module.adoc/Compromise_Projections>,
         <https://opengeospatial.github.io/ontology-crs//conf/11-projections_module.adoc/Conformal_Projections>,
         <https://opengeospatial.github.io/ontology-crs//conf/11-projections_module.adoc/Conical_Projections>,
@@ -394,6 +401,9 @@
 
 <https://opengeospatial.github.io/ontology-crs//req/planet/Interstellar_Body> a ns2:Requirement ;
     ns1:prefLabel "Interstellar Body" .
+
+<https://opengeospatial.github.io/ontology-crs//req/projections/Archaic_Projections> a ns2:Requirement ;
+    ns1:prefLabel "Archaic Projections" .
 
 <https://opengeospatial.github.io/ontology-crs//req/projections/Azimuthal_Projections> a ns2:Requirement ;
     ns1:prefLabel "Azimuthal Projections" .

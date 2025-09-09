@@ -1,0 +1,15 @@
+Concept,Property,Class,MinCount,MaxCount,Comment
+geosrs:CRS,geosrs:coordinateSystem,geosrs:CoordinateSystem,1,1,"A coordinate reference system should have exactly one coordinate system"
+geosrs:CRS,geosrs:domainOfValidity,geosrs:AreaOfUse,1,,"A coordinate reference system should have at least one area of use"
+geosrs:CRS,geosrs:datum,geosrs:Datum,1,1,"A coordinate reference system should have exactly one datum"
+geosrs:CRS,geosrs:datumEnsemble,geosrs:DatumEnsemble,1,1,"A coordinate reference system may have exactly one datum ensemble"
+geosrs:CompoundCRS,geosrs:includesSRS,geosrs:SingleCRS,1,,"A compound coordinate reference system should consist of at least one single coordinate reference system"
+geosrs:GeodeticCRS,geosrs:coordinateSystem,geosrs:GeodeticCoordinateSystem,1,1,"A geodetic coordinate reference system should have exactly one geodetic coordinate system"
+geosrs:GeographicCRS,geosrs:datum,geosrs:GeodeticDatum,1,1,"A geographic coordinate reference system should have exactly one geodetic datum"
+geosrs:GeographicCRS,geosrs:coordinateSystem,geosrs:EllipsoidalCoordinateSystem,1,1,"A geographic coordinate reference system should have exactly one ellipsoidal coordinate system"
+geosrs:ParametricCRS,geosrs:datum,geosrs:ParametricDatum,1,1,"A parametric coordinate reference system should have exactly one parametric datum"
+geosrs:ProjectedCRS,geosrs:conversion,geosrs:Conversion,1,,"A projected coordinate reference system should have at least one conversion"
+geosrs:SingleCRS,geosrs:coordinateSystem,geosrs:CoordinateSystem,1,1,"A single coordinate reference system should have exactly one coordinate system"
+geosrs:SingleCRS,geosrs:datum,geosrs:Datum,1,1,"A single coordinate reference system should have exactly one datum"
+geosrs:TemporalCRS,geosrs:datum,geosrs:TemporalDatum,1,1,"A projected coordinate reference system should have exactly one temporal datum"
+

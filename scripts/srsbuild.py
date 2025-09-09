@@ -10,8 +10,7 @@ pattern = re.compile(r'(?<!^)(?=[A-Z])')
 opentag="{{"
 closetag="}}"
 
-def convertCamelToSnake(strr):
- return pattern.sub('_', strr).lower()
+reqns="https://opengeospatial.github.io/ontology-crs/"
 
 exont={}
 
@@ -34,6 +33,20 @@ ldcontext={"@context":{"rdfs":"http://www.w3.org/2000/01/rdf-schema#","rdf":"htt
                        "unit":{"@id":"om:hasUnit","@type":"@vocab"}
             }
 }
+
+requirementsttl=Graph()
+
+ctesttemplate="""
+[abstract_test,identifier="{{testid}}",conformance-class="{{confclass}}"]
+====
+[%metadata]
+target:: {{target}}
+test-purpose:: Check conformance with this requirement
+test-method:: Verify that queries involving {{entities}} return the correct result on a test dataset.
+test-method-type:: Capabilities
+reference:: {{entities}}
+====
+"""
 
 with open('examples.json', 'r') as file:
     examples = json.load(file)
@@ -68,6 +81,123 @@ gcore.add((URIRef("https://w3id.org/geosrs"),VANN.preferredNamespaceUri,Literal(
 geocrsNS="https://w3id.org/geosrs/"
 coreprefix="geosrs"
 
+def convertCSVToSHACLAndADoc():
+    adocdef=""
+    shaclres=Graph()
+    shaclres.bind("geosrs", "https://w3id.org/geosrs/") 
+    shaclres.bind("sh","http://www.w3.org/ns/shacl#")
+    shaclres.bind("rdf","<http://www.w3.org/1999/02/22-rdf-syntax-ns#")
+
+    dirname = os.path.dirname(__file__)
+    abspath = os.path.join(dirname, '../csv/shacl/')
+
+    directory = os.fsencode(abspath)
+
+    for file in os.listdir(directory):
+        filename = os.fsdecode(file)
+        shapecounter=1
+        if filename.endswith(".csv"):
+            with open(abspath+filename, newline='') as csvfile:
+                reader = csv.DictReader(csvfile)
+                adocdef+="===== SHACL Shapes: "+str(filename).replace(".csv","").capitalize()+"\n\n"
+                adocdef+="."+str(filename).replace(".csv","").capitalize()+"\n[cols=\"7*\"]\n|===\n"
+                adocdef+="|Label|TargetNode|Property|Class|MinCount|MaxCount|Comment\n\n"
+                for row in reader:
+                    if "Concept" in row and row["Concept"]!="":
+                        shapeuri=row["Concept"].replace("geosrs:","https://w3id.org/geosrs/")+"Shape"
+                        shapepropuri=row["Concept"].replace("geosrs:","https://w3id.org/geosrs/")+"Shape_Property"
+                        shaclres.add((URIRef(shapeuri),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef("http://www.w3.org/ns/shacl#NodeShape")))
+                        shaclres.add((URIRef(shapeuri),URIRef("http://www.w3.org/2000/01/rdf-schema#label"),Literal("CRS Ontology Shape S"+str(shapecounter),lang="en")))
+                        shaclres.add((URIRef(shapeuri),URIRef("http://www.w3.org/ns/shacl#targetNode"),URIRef(row["Concept"].replace("geosrs:","https://w3id.org/geosrs/"))))
+                        shaclres.add((URIRef(shapeuri),URIRef("http://www.w3.org/ns/shacl#property"),URIRef(shapepropuri)))
+                        adocdef+="|Shape S"+str(shapecounter)+" "
+                        adocdef+="|"+str(row["Concept"])+" "
+                        adocdef+="|"+str(row["Property"])+" "
+                        if "Class" in row and row["Class"]!="":
+                            adocdef+="|"+str(row["Class"])+" "
+                            shaclres.add((URIRef(shapepropuri),URIRef("http://www.w3.org/ns/shacl#class"),URIRef(str(row["Class"]).replace("geosrs:","https://w3id.org/geosrs/"))))
+                        else:
+                            adocdef+="| - "
+                        if "MinCount" in row and row["MinCount"]!="":
+                            adocdef+="|"+str(row["MinCount"])+" "
+                            shaclres.add((URIRef(shapepropuri),URIRef("http://www.w3.org/ns/shacl#minCount"),Literal(int(str(row["MinCount"])),datatype=XSD.integer)))
+                        else:
+                            adocdef+="| - "
+                        if "MaxCount" in row and row["MaxCount"]!="":
+                            adocdef+="|"+str(row["MaxCount"])+" "
+                            shaclres.add((URIRef(shapepropuri),URIRef("http://www.w3.org/ns/shacl#maxCount"),Literal(int(str(row["MaxCount"])),datatype=XSD.integer)))
+                        else:
+                            adocdef+="| - "
+                        if "Comment" in row and row["Comment"]!="":
+                            adocdef+="|"+str(row["Comment"])+" "
+                            shaclres.add((URIRef(shapepropuri),URIRef("http://www.w3.org/2000/01/rdf-schema#comment"),Literal(str(row["Comment"]),lang="en")))
+                        else:
+                            adocdef+="| - "
+                        adocdef+="\n\n"
+                    shapecounter+=1
+                adocdef+="|===\n\n"
+    with open("spec/sections/ac-shacl_shapes.adoc", 'r',encoding="utf-8") as f:
+        ashaclshapes=f.read()
+    with open("spec/sections/ac-shacl_shapes.adoc", 'w',encoding="utf-8") as f:
+        f.write(ashaclshapes)
+        f.write(adocdef)
+    
+    shaclres.serialize("rules.ttl",format="ttl")
+
+
+def generateAlignments():
+    alignments=""
+    for prefix in alignmentadoc:
+        alignments+="=== "+str(prefix).upper()+" Ontology\n\n.Alignment: "+str(prefix).upper()+" Ontology\n[%autowidth]\n|===\n| From Element | Mapping relation | To Element | Notes\n\n"
+        prefixdict=alignmentadoc[prefix]
+        for aligns in sorted(prefixdict.keys()):
+            alignments+=prefixdict[aligns]
+        alignments+="|===\n\n"
+
+    with open("spec/sections/ab-alignments.adoc", 'r',encoding="utf-8") as f:
+        alignmentdoc=f.read()
+
+    with open("spec/sections/ab-alignments.adoc", 'w',encoding="utf-8") as f:
+        f.write(alignmentdoc[0:alignmentdoc.find("=== IGN CRS Ontology")]+alignments)
+
+    galigns.serialize(destination="alignments.ttl")
+
+    for pref in prefixtoclasses:
+        if pref!="geosrs_srs":
+            ldcontext["@context"][pref]=geocrsNS[:-1]+"/"+pref.replace("geosrs_","")+"/"
+        for cls in prefixtoclasses[pref]:
+            ldcontext["@context"][cls[cls.rfind('/')+1:]]=pref.replace("geosrs_srs","geosrs")+":"+cls[cls.rfind('/')+1:]
+        if pref in prefixtoproperties:
+            for cls in prefixtoproperties[pref]:
+                ldcontext["@context"][convertCamelToSnake(cls[cls.rfind('/')+1:])]=pref.replace("geosrs_srs","geosrs")+":"+cls[cls.rfind('/')+1:]
+    #print(prefixtoproperties)
+    os.mkdir("context")
+    with open('context/geosrs-context.json', 'w',encoding="utf-8") as f:
+        json.dump(ldcontext, f,indent=2,sort_keys=True)
+
+    dirname = os.path.dirname(__file__)
+    abspath = os.path.join(dirname, '../examples/')
+    directory = os.fsencode(abspath)  
+    for file in os.listdir(directory):
+        filename = os.fsdecode(file)
+        if filename.endswith(".json"):
+            gr = Graph()
+            gr.parse(location=abspath+filename, format='json-ld')
+            gr.serialize(destination=abspath+filename.replace(".json",".ttl"), format='turtle')
+
+
+def convertCamelToSnake(strr):
+ return pattern.sub('_', strr).lower()
+
+def formatListAsLinks(thelist,classOrProperty):
+    reslist=""
+    for item in thelist:
+        if classOrProperty:
+            reslist+="<<Class: "+str(item)+",`"+str(item)+"`>> "
+        else:
+            reslist+="<<Property: "+str(item)+",`"+str(item)+"`>> "
+    return reslist
+
 def getPrefixForClass(cls,prefixmap):
     if cls in prefixmap:
         return prefixmap[cls]["prefix"]
@@ -96,6 +226,15 @@ for file in os.listdir(directory):
                         classToPrefix[row["Concept"]]={"prefix":coreprefix, "ns":geocrsNS}
                     else:
                         classToPrefix[row["Concept"]]={"prefix":curprefix, "ns":curns}
+
+dirname = os.path.dirname(__file__)
+abspath = os.path.join(dirname, '../csv/reqToDescription.csv')
+
+reqToDesc={}
+with open(abspath, mode ='r')as file:
+  csvFile = csv.reader(file)
+  for lines in csvFile:
+    reqToDesc[lines[0]]=lines[1]
 
 dirname = os.path.dirname(__file__)
 abspath = os.path.join(dirname, '../csv/instance/')
@@ -563,8 +702,46 @@ for file in os.listdir(directory):
     else:
         continue
 
-# Generate alignments
+#Generate Conformance Classes
 
+with open("spec/sections/aa-abstract_test_suite.adoc", 'r',encoding="utf-8") as f:
+    atestsuitedoc=f.read()
+
+for mod in moduleToRequirements:
+    rqid=str(mod)[str(mod).find("-")+1:].replace(".adoc","").replace("_module","")
+    requirementsttl.add((URIRef(reqns+str(rqid)),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef("http://www.opengis.net/def/spec-element/ConformanceClass")))
+    requirementsttl.add((URIRef(reqns+str(rqid)),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef("http://www.w3.org/2004/02/skos/core#Collection")))
+    atestsuitedoc+="=== Conformance Class: "+str(mod[mod.rfind("-")+1:].replace(".adoc","").replace("_module","")).capitalize()+"\n\n"
+    atestsuitedoc+="[conformance_class,identifier=/conf/"+str(rqid)+"]\n"
+    atestsuitedoc+="."+str(mod)+"\n\n====\n\n[%metadata]\n\n"
+    atestsuitedoc+="target:: /req/"+str(rqid)+"\n\n"
+    for req in moduleToRequirements[mod]:
+        atestsuitedoc+="abstract-test:: /conf/"+str(rqid)+"/"+str(req).replace(" ","_")+"\n\n"
+        requirementsttl.add((URIRef(reqns+mod),URIRef("http://www.w3.org/2004/02/skos/member"),URIRef(reqns+"/conf/"+str(mod)+"/"+str(req).replace(" ","_"))))
+    atestsuitedoc+="====\n\n"
+    for req in moduleToRequirements[mod]:
+        atestsuitedoc+="==== "+str(req)+"\n\n"
+        requirementsttl.add((URIRef(reqns+"/req/"+str(rqid)+"/"+str(req).replace(" ","_")),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef("http://www.opengis.net/def/spec-element/Requirement")))
+        requirementsttl.add((URIRef(reqns+"/req/"+str(rqid)+"/"+str(req).replace(" ","_")),URIRef("http://www.w3.org/2004/02/skos/prefLabel"),Literal(str(req))))
+        requirementsttl.add((URIRef(reqns+"/conf/"+str(rqid)+"/"+str(req).replace(" ","_")),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef("http://www.opengis.net/def/spec-element/ConformanceTest")))
+        requirementsttl.add((URIRef(reqns+"/conf/"+str(rqid)+"/"+str(req).replace(" ","_")),URIRef("http://www.opengis.net/def/spec-element/testType"),URIRef("http://www.opengis.net/def/spec-element/Capabilities")))
+        requirementsttl.add((URIRef(reqns+"/conf/"+str(rqid)+"/"+str(req).replace(" ","_")),URIRef("http://www.w3.org/2000/01/rdf-schema#seeAlso"),URIRef(reqns+"/req/"+str(rqid)+"/"+str(req).replace(" ","_"))))
+        requirementsttl.add((URIRef(reqns+"/conf/"+str(rqid)+"/"+str(req).replace(" ","_")),URIRef("http://www.w3.org/2004/02/skos/prefLabel"),Literal(str(req))))
+        requirementsttl.add((URIRef(reqns+"/conf/"+str(rqid)+"/"+str(req).replace(" ","_")),URIRef("http://www.w3.org/2004/02/skos/definition"),Literal("check conformance with this requirement")))
+        requirementsttl.add((URIRef(reqns+"/conf/"+str(rqid)+"/"+str(req).replace(" ","_")),URIRef("http://www.w3.org/2004/02/skos/prefLabel"),Literal(str(req))))
+        atestsuitedoc+=ctesttemplate.replace("{{entities}}",formatListAsLinks(moduleToRequirements[mod][req],"Propert" not in mod)).replace("{{target}}","/req/"+str(rqid)+"/"+req.replace(" ","_")).replace("{{testid}}","/conf/"+str(rqid)+"/"+req.replace(" ","_")).replace("{{confclass}}","/conf/"+str(rqid))+"\n\n"
+
+with open("spec/sections/aa-abstract_test_suite.adoc", 'w',encoding="utf-8") as f:
+    f.write(atestsuitedoc)
+
+requirementsttl.serialize("requirements.ttl",format="ttl")
+
+
+
+
+# Generate alignments
+generateAlignments()
+"""
 alignments=""
 for prefix in alignmentadoc:
     alignments+="=== "+str(prefix).upper()+" Ontology\n\n.Alignment: "+str(prefix).upper()+" Ontology\n[%autowidth]\n|===\n| From Element | Mapping relation | To Element | Notes\n\n"
@@ -573,10 +750,10 @@ for prefix in alignmentadoc:
         alignments+=prefixdict[aligns]
     alignments+="|===\n\n"
 
-with open("spec/sections/aa-alignments.adoc", 'r',encoding="utf-8") as f:
+with open("spec/sections/ab-alignments.adoc", 'r',encoding="utf-8") as f:
     alignmentdoc=f.read()
 
-with open("spec/sections/aa-alignments.adoc", 'w',encoding="utf-8") as f:
+with open("spec/sections/ab-alignments.adoc", 'w',encoding="utf-8") as f:
     f.write(alignmentdoc[0:alignmentdoc.find("=== IGN CRS Ontology")]+alignments)
 
 galigns.serialize(destination="alignments.ttl")
@@ -605,6 +782,8 @@ for file in os.listdir(directory):
        gr.serialize(destination=abspath+filename.replace(".json",".ttl"), format='turtle')
 
 #print(moduleToAdoc)
+"""
+convertCSVToSHACLAndADoc()
 
 # Generate modspec elements
 
@@ -623,9 +802,10 @@ for ad in moduleToAdoc:
 		reqs=moduleToRequirements[ad]
 		#print(reqs)
 		if len(reqs)>0:
-			f.write("[requirements_class,identifier=\"/req/"+str(ad)+"\",subject=\"Implementation Specification\"]\n."+str(ad)+" Extension\n\n====\n")
+			rqid=str(ad)[str(ad).find("-")+1:].replace(".adoc","").replace("_module","")
+			f.write("[requirements_class,identifier=\"/req/"+str(rqid)+"\",subject=\"Implementation Specification\"]\n."+str(ad)+" Extension\n\n====\n")
 			for req in moduleToRequirements[ad]:
-				f.write("requirement:: /req/"+str(req).replace(" ","_")+"\n")
+				f.write("requirement:: /req/"+str(rqid)+"/"+str(req).replace(" ","_")+"\n")
 			f.write("====\n")
 			for req in sorted(moduleToRequirements[ad].keys()):
 				if "Property" in req or "Properties" in req:
@@ -650,9 +830,11 @@ for ad in moduleToAdoc:
 				if len(moduleToRequirements[ad][req])>0:
 					reqtext=reqtext.replace(", <<"+str(last), " and <<"+str(last))
 				reqtext+=" to be used in SPARQL graph patterns."
-				f.write("==== "+str(req)+"\n\n[requirement,identifier=\"/req/"+str(req).replace(" ","_")+"\"]\n\n."+str(req)+"\n====\n"+str(reqtext)+"\n====\n\n")
+				f.write("==== "+str(req)+"\n\n[requirement,identifier=\"/req/"+str(rqid)+"/"+str(req).replace(" ","_")+"\"]\n\n."+str(req)+"\n====\n"+str(reqtext)+"\n====\n\n")
 				print(str(ad)+" - "+str(req))
 				print(moduleToRequirements[ad][req])
+				if req in reqToDesc:
+					f.write(reqToDesc[req]+"\n\n")
 				for cls in moduleToRequirements[ad][req]:
 					print(str(req)+" - "+str(cls)+" "+cls.replace("geosrs:","")+" "+str(cls.replace("geosrs:","") in moduleToAdoc[ad]))
 					if cls.replace("geosrs:","") in moduleToAdoc[ad]:

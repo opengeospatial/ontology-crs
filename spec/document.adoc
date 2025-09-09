@@ -13,6 +13,7 @@
 :external-id: http://www.opengis.net/docs/CS/3DTiles/1.0
 :comment: ### Internal reference number; mandatory
 :docnumber: 18-053r2
+:relaton-data-source: bibliography.bib
 :comment: ### Date on which the standard was updated; mandatory
 :received-date: 2018-06-04
 :comment: ### Date on which the standard was approved by the issuing authority; mandatory
@@ -66,10 +67,11 @@ include::sections/13-instances.adoc[]
 Annexes
 (add annex files as needed)
 ////
-include::sections/aa-alignments.adoc[]
-include::sections/ab-shacl_shapes.adoc[]
-include::sections/ac-application_examples.adoc[]
-include::sections/ad-jsonld_context.adoc[]
+include::sections/aa-abstract_test_suite.adoc[]
+include::sections/ab-alignments.adoc[]
+include::sections/ac-shacl_shapes.adoc[]
+include::sections/ad-application_examples.adoc[]
+include::sections/ae-jsonld_context.adoc[]
 
 ////
 Revision History should be the last annex before the Bibliography

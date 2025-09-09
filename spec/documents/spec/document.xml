@@ -2158,7 +2158,7 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 </clause>
 </clause>
 
-<clause id="_831fee2d-86e8-e1ef-8272-81ded51863af" obligation="normative">
+<clause id="_9aaa11b7-1ce6-f55e-1be8-ce1fe639100e" obligation="normative">
 <title id="_245aa830-e9da-5127-2b5b-89bba3e2d371">Projections Module</title>
 <p id="_acbf12f6-604e-d105-25c5-e2c0592c55c6" anchor="proj">This clause establishes the <strong>PROJ</strong> Requirements class, with IRI <tt>/req/proj</tt>, which has a corresponding Conformance Class, <strong>PROJ</strong>, with IRI <tt>/conf/proj</tt>.</p>
 
@@ -2896,11 +2896,11 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 </clause>
 </clause>
 
-<clause id="_955e4ad5-cb40-0bf6-16d6-9a2174c8f3e6" obligation="normative">
+<clause id="_f797cfe4-7305-ab3e-e90e-7dbc8872770b" obligation="normative">
 <title id="_5567df16-de69-9b12-7cc4-c01ef58562ca">Equal Area Projections</title>
-<requirement id="_9e6d8ed0-24ba-095a-c37c-db6e410b3bd6" model="ogc" anchor="/req/projections/Equal_Area_Projections">
+<requirement id="_02c83d00-d513-f2ce-5816-3e38c5da7f1c" model="ogc" anchor="/req/projections/Equal_Area_Projections">
 <title>Equal Area Projections</title> 
-<identifier>/req/projections/Equal_Area_Projections</identifier><description><p id="_71897aa8-e990-0a6a-294a-56f25f8d5933">Implementations shall allow the RDFS classes <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>AlbersEqualAreaProjection</referenceFrom></locality></localityStack><display-text>geosrs:AlbersEqualAreaProjection</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>AzimuthalEqualAreaProjection</referenceFrom></locality></localityStack><display-text>geosrs:AzimuthalEqualAreaProjection</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>CylindricalEqualArea</referenceFrom></locality></localityStack><display-text>geosrs:CylindricalEqualArea</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>GallPetersProjection</referenceFrom></locality></localityStack><display-text>geosrs:GallPetersProjection</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>HoboDyerProjection</referenceFrom></locality></localityStack><display-text>geosrs:HoboDyerProjection</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>LambertAzimuthalEqualArea</referenceFrom></locality></localityStack><display-text>geosrs:LambertAzimuthalEqualArea</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>TrystanEdwardsProjection</referenceFrom></locality></localityStack><display-text>geosrs:TrystanEdwardsProjection</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>WiechelProjection</referenceFrom></locality></localityStack><display-text>geosrs:WiechelProjection</display-text></eref> to be used in SPARQL graph patterns.</p></description>
+<identifier>/req/projections/Equal_Area_Projections</identifier><description><p id="_fc9af45c-1672-2a5b-3084-b6c4abb1c69c">Implementations shall allow the RDFS classes <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>AlbersEqualAreaProjection</referenceFrom></locality></localityStack><display-text>geosrs:AlbersEqualAreaProjection</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>AzimuthalEqualAreaProjection</referenceFrom></locality></localityStack><display-text>geosrs:AzimuthalEqualAreaProjection</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>CylindricalEqualArea</referenceFrom></locality></localityStack><display-text>geosrs:CylindricalEqualArea</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>GallPetersProjection</referenceFrom></locality></localityStack><display-text>geosrs:GallPetersProjection</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>HoboDyerProjection</referenceFrom></locality></localityStack><display-text>geosrs:HoboDyerProjection</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>LambertAzimuthalEqualArea</referenceFrom></locality></localityStack><display-text>geosrs:LambertAzimuthalEqualArea</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>SlideAndDiceParallelSmallCircle</referenceFrom></locality></localityStack><display-text>geosrs:SlideAndDiceParallelSmallCircle</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>SliceAndDiceVertexGreatCircle</referenceFrom></locality></localityStack><display-text>geosrs:SliceAndDiceVertexGreatCircle</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>SnyderEqualArea</referenceFrom></locality></localityStack><display-text>geosrs:SnyderEqualArea</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>TrystanEdwardsProjection</referenceFrom></locality></localityStack><display-text>geosrs:TrystanEdwardsProjection</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>WiechelProjection</referenceFrom></locality></localityStack><display-text>geosrs:WiechelProjection</display-text></eref> to be used in SPARQL graph patterns.</p></description>
 </requirement>
 
 <clause id="_91443080-910b-4939-5b56-5715999c56fd" obligation="normative">
@@ -2979,26 +2979,68 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 </table>
 </clause>
 
-<clause id="_9cfe816b-c833-623a-19c0-dfeb2076771e" obligation="normative">
-<title id="_9eca4abf-a52c-fd2f-ca40-a69d3ac35870">Class: geosrs:TrystanEdwardsProjection</title>
-<table id="_1bc90e19-e4c6-715c-47e9-1edd73d1e809"><colgroup><col width="50%"/><col width="50%"/></colgroup>
-<name id="_110c649e-083f-0a7d-f65b-4a5c392933ce">geosrs:TrystanEdwardsProjection</name>
+<clause id="_5edcf4d7-b816-d596-84bb-78d5e82bfa7a" obligation="normative">
+<title id="_354e6c75-a0dc-53c9-fef2-844251dc0f72">Class: geosrs:SlideAndDiceParallelSmallCircle</title>
+<table id="_735d5192-1fec-444e-35e9-f45d1ec23f15"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<name id="_4f1b9a38-8818-76ce-d1be-43255fedca39">geosrs:SlideAndDiceParallelSmallCircle</name>
 <tbody><tr id="_8503ea63-547e-1683-7640-f28b9b306479"><td id="_3dd9d23d-983e-c32e-e1c1-372e2b8f6dde" valign="middle" align="left">URI</td>
-<td id="_2b57010f-7a10-c31e-d8d5-75e00a4aaf36" valign="middle" align="left"><link target="https://w3id.org/geosrs/projection/TrystanEdwardsProjection"/></td>
-</tr><tr id="_76ad2604-3200-11d7-f2d9-b2c1c1994627"><td id="_a58bb0d0-d52c-f4c6-43b3-e3bad8dbfa21" valign="middle" align="left">Super-classes</td>
-<td id="_1c977774-6d66-ce37-957f-b98dff367c63" valign="middle" align="left"><link target="https://w3id.org/geosrs/projection/EqualAreaProjection">EqualAreaProjection</link></td>
+<td id="_2b57010f-7a10-c31e-d8d5-75e00a4aaf36" valign="middle" align="left"><link target="https://w3id.org/geosrs/projection/SlideAndDiceParallelSmallCircle"/></td>
+</tr><tr id="_fb5c39a0-53aa-a8ba-9191-cf43dc3dfadf"><td id="_5a03b064-878c-04f2-fcbf-75999bd899c6" valign="middle" align="left">Definition</td>
+<td id="_f5781461-ef41-b857-c50a-1adcd8bf74d8" valign="middle" align="left">The Parallel Small Circle version of the equa-area projection method defined for polyhedral globes by van Leeuwen and Strebe. van Leeuwen, D., &amp; Strebe, D. (2006). A “Slice-and-Dice” Approach to Area Equivalence in Polyhedral Map Projections. Cartography and Geographic Information Science, 33(4), 269–286.</td>
+</tr><tr id="_b8f0bfde-8855-52ce-78e2-75aa7afa927f"><td id="_f256627d-5617-6349-53f0-546f4331e2bc" valign="middle" align="left">Super-classes</td>
+<td id="_beccc038-cab9-14af-c01d-b7d6ddc8ccc3" valign="middle" align="left"><link target="https://w3id.org/geosrs/projection/EqualAreaProjection">EqualAreaProjection</link></td>
 </tr></tbody>
 </table>
 </clause>
 
-<clause id="_75f268ef-0029-d729-d311-584a3534b758" obligation="normative">
-<title id="_7c65963b-5fa6-599f-13d0-1e7429ba5d2e">Class: geosrs:WiechelProjection</title>
-<table id="_b6b80808-528f-642d-3e93-fc17aba9e3cd"><colgroup><col width="50%"/><col width="50%"/></colgroup>
-<name id="_7b139fa6-a19d-f28c-75d3-22e7dec06ad1">geosrs:WiechelProjection</name>
+<clause id="_0cfd103e-cfe5-ce24-dc26-8d88cc28eed3" obligation="normative">
+<title id="_c03dee5b-b8af-747a-684f-bd636789ce1d">Class: geosrs:SliceAndDiceVertexGreatCircle</title>
+<table id="_b0587832-7b88-c103-a3c0-5b8e467ddcca"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<name id="_f422d0e0-5883-fee0-e22f-1c582e2d7ab4">geosrs:SliceAndDiceVertexGreatCircle</name>
 <tbody><tr id="_937af154-e80b-c130-ede2-b2acf056e0c0"><td id="_a8962b9a-d4cd-0626-5afb-84c07ddf35d2" valign="middle" align="left">URI</td>
-<td id="_52c21e07-66e6-400e-ae27-89e2339dbed4" valign="middle" align="left"><link target="https://w3id.org/geosrs/projection/WiechelProjection"/></td>
-</tr><tr id="_c88fae13-4e9b-a503-73b4-b0ee3191261a"><td id="_f595fcd6-ba72-5153-6172-201b3181bd9d" valign="middle" align="left">Super-classes</td>
-<td id="_3492cf69-2362-9388-1845-cce2b0e7f51f" valign="middle" align="left"><link target="https://w3id.org/geosrs/projection/EqualAreaProjection">EqualAreaProjection</link></td>
+<td id="_52c21e07-66e6-400e-ae27-89e2339dbed4" valign="middle" align="left"><link target="https://w3id.org/geosrs/projection/SliceAndDiceVertexGreatCircle"/></td>
+</tr><tr id="_9ff5da08-b52d-d01e-0de6-0f4d91a1665f"><td id="_23c50276-cfb2-e1b2-2180-b9edb13b94c9" valign="middle" align="left">Definition</td>
+<td id="_8ea34cf7-c840-7c26-adc8-f30222c43aae" valign="middle" align="left">The Vertex-oriented Great Circle version of the equa-area projection method defined for polyhedral globes by van Leeuwen and Strebe. van Leeuwen, D., &amp; Strebe, D. (2006). A “Slice-and-Dice” Approach to Area Equivalence in Polyhedral Map Projections. Cartography and Geographic Information Science, 33(4), 269–286.</td>
+</tr><tr id="_e0763764-eeee-3799-c089-927ac45bc3c1"><td id="_388def05-437d-1c23-d486-96c40d38f423" valign="middle" align="left">Super-classes</td>
+<td id="_716705d7-6856-3f88-4b78-216cdef37ce9" valign="middle" align="left"><link target="https://w3id.org/geosrs/projection/EqualAreaProjection">EqualAreaProjection</link></td>
+</tr></tbody>
+</table>
+</clause>
+
+<clause id="_91c50f05-87b9-6eeb-1fe0-bca0f18a3751" obligation="normative">
+<title id="_af15c03c-a1c5-fac4-42d6-161bf38a6945">Class: geosrs:SnyderEqualArea</title>
+<table id="_e2a8a80a-d4a1-d6bc-60c3-5800477267d2"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<name id="_cd92c178-1265-acea-a8cb-55b59a1a1811">geosrs:SnyderEqualArea</name>
+<tbody><tr id="_9f276494-200c-b4cf-fde7-aad0c6b3447b"><td id="_a4d3b576-3b0a-7a68-0965-ad0d8251b6dc" valign="middle" align="left">URI</td>
+<td id="_20980f99-be11-b7df-c35d-2e5fa7c7da97" valign="middle" align="left"><link target="https://w3id.org/geosrs/projection/SnyderEqualArea"/></td>
+</tr><tr id="_6773f751-2911-487c-a47c-22d6b2934f5e"><td id="_c975d180-c573-a637-c9ca-5a15125dca0c" valign="middle" align="left">Definition</td>
+<td id="_cc20eb59-f175-1ce0-e864-d141f137acd6" valign="middle" align="left">Equal area projection for polyhedral globes, used frequently in Discrete Global Grid Systems. Snyder, J.P. (1992). “An Equal-Area Map Projection for Polyhedral Globes”. Cartographica. 29 (1): 10–21</td>
+</tr><tr id="_c886eb30-1aad-af95-e532-17b46e73c635"><td id="_f99acdb8-b931-d474-6ef8-7fd9b9636da1" valign="middle" align="left">Super-classes</td>
+<td id="_b1bbcc7e-b92d-f6db-31e0-0567b008c50c" valign="middle" align="left"><link target="https://w3id.org/geosrs/projection/EqualAreaProjection">EqualAreaProjection</link></td>
+</tr></tbody>
+</table>
+</clause>
+
+<clause id="_da33735b-8ef4-a5bd-b75c-33c9c0d15ae8" obligation="normative">
+<title id="_9475034f-3665-d478-b475-d44d19280671">Class: geosrs:TrystanEdwardsProjection</title>
+<table id="_96388d7b-5170-81ae-c6ee-643e9e4b36a6"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<name id="_32184608-5592-28b9-9f58-63c6bf0a29ea">geosrs:TrystanEdwardsProjection</name>
+<tbody><tr id="_5a0acc63-0ede-f8b0-32a3-e7263ca7bb82"><td id="_b5c97b25-3bd7-9a55-f4bb-f3914be7135f" valign="middle" align="left">URI</td>
+<td id="_bc884160-745d-3cbb-af2b-a4f4afb12d4e" valign="middle" align="left"><link target="https://w3id.org/geosrs/projection/TrystanEdwardsProjection"/></td>
+</tr><tr id="_da5f4a50-d2fa-78c0-f09a-5542fe1d7979"><td id="_bc7ee118-fb0e-5abb-e370-9fad96ab7c9c" valign="middle" align="left">Super-classes</td>
+<td id="_3e789f6a-9fe2-7567-77b3-c6190276db09" valign="middle" align="left"><link target="https://w3id.org/geosrs/projection/EqualAreaProjection">EqualAreaProjection</link></td>
+</tr></tbody>
+</table>
+</clause>
+
+<clause id="_37bed9f6-7d0e-d318-fa24-324d2c9f05f7" obligation="normative">
+<title id="_f7a1af22-9ffa-2e44-d7cb-648e3953e250">Class: geosrs:WiechelProjection</title>
+<table id="_c167cb26-de8f-9226-c1c1-2ce643b375a7"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<name id="_86196aea-fff6-5288-1749-4aa1c54bbb30">geosrs:WiechelProjection</name>
+<tbody><tr id="_a2d15662-7a59-e580-2d6f-ea659d2333db"><td id="_75af2ad4-ff7b-e602-f189-8ac2b14bf076" valign="middle" align="left">URI</td>
+<td id="_88a82ecc-4c23-ce3b-0032-cff38849a043" valign="middle" align="left"><link target="https://w3id.org/geosrs/projection/WiechelProjection"/></td>
+</tr><tr id="_f0cfd12e-5500-9b45-74e2-e5b725c5d3dc"><td id="_9b31c8b3-0c83-b0ea-06b6-daf61acfa5d0" valign="middle" align="left">Super-classes</td>
+<td id="_b8d1f074-905c-04f8-07ad-168ba6edbef6" valign="middle" align="left"><link target="https://w3id.org/geosrs/projection/EqualAreaProjection">EqualAreaProjection</link></td>
 </tr></tbody>
 </table>
 </clause>
@@ -5604,7 +5646,7 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 
 
 
-</sections><annex id="_aaa21993-3520-c437-29e2-dd3fbf4f81d0" obligation="normative">
+</sections><annex id="_c5667a76-51d9-a04a-7e5c-870177532b4c" obligation="normative">
 <title id="_470614e0-369e-cd47-ac8c-e0c157b1a785">Abstract Test Suite</title>
 <floating-title id="_6c4825b5-5b33-43be-8438-e76319911fee" depth="2" type="floating-title">A.0. Overview</floating-title>
 <p id="_9b50ea30-51c1-09e4-2492-039aaaa61290">This Annex lists tests for the Conformance Classes defined in the main body sections of this Specification with links to their Requirements and test purpose method and type. Conformance classes may be used to signify the compatibility of a given implementation to parts of the CRS Ontology standard. They may be stated as part of a SPARQL 1.1 Service Description  <xref target="SPARQLSERVDESC"/> .</p>
@@ -5849,7 +5891,7 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 </clause>
 </clause>
 
-<clause id="_661ab6d9-6103-203c-bd6c-dcd5508f13c2" obligation="normative">
+<clause id="_984a902f-ad21-4c31-7523-b32b47b17110" obligation="normative">
 <title id="_78211eca-fe2f-a078-cc67-141ea5977258">Conformance Class: Projections</title>
 <requirement id="_0e99b221-a0d8-c4c8-3cdb-84adf0b0b766" model="ogc" type="conformanceclass" anchor="/conf/projections">
 <title>11-projections_module.adoc</title>
@@ -5896,12 +5938,12 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 </requirement>
 </clause>
 
-<clause id="_46dca8eb-3cff-ebc7-4881-ca7ce97e3f0a" obligation="normative">
+<clause id="_dba98614-6d3e-63f4-bf1f-d3061de6467e" obligation="normative">
 <title id="_fbf61c0a-8892-e6e4-6fee-ee1ea95ef004">Equal Area Projections</title>
-<requirement id="_e67a9118-a9bc-8689-fc48-286867cfa7a8" model="ogc" type="abstracttest" anchor="/conf/projections/Equal_Area_Projections"> <identifier>/conf/projections/Equal_Area_Projections</identifier><classification><tag>target</tag><value>/req/projections/Equal_Area_Projections</value></classification><component id="_526575b7-efcd-e2b5-a599-447b4559bc0b" class="test-purpose"><p id="_28865e38-9c86-68c1-ba94-ab6b983b2482">Check conformance with this requirement</p>
-</component><component id="_8616b074-e95d-9908-7f02-8fc126e52e97" class="test-method"><p id="_511a4af0-451d-29d4-9952-d2227d3ccd7f">Verify that queries involving <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>AlbersEqualAreaProjection</referenceFrom></locality></localityStack><display-text>geosrs:AlbersEqualAreaProjection</display-text></eref> <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>AzimuthalEqualAreaProjection</referenceFrom></locality></localityStack><display-text>geosrs:AzimuthalEqualAreaProjection</display-text></eref> <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>CylindricalEqualArea</referenceFrom></locality></localityStack><display-text>geosrs:CylindricalEqualArea</display-text></eref> <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>GallPetersProjection</referenceFrom></locality></localityStack><display-text>geosrs:GallPetersProjection</display-text></eref> <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>HoboDyerProjection</referenceFrom></locality></localityStack><display-text>geosrs:HoboDyerProjection</display-text></eref> <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>LambertAzimuthalEqualArea</referenceFrom></locality></localityStack><display-text>geosrs:LambertAzimuthalEqualArea</display-text></eref> <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>TrystanEdwardsProjection</referenceFrom></locality></localityStack><display-text>geosrs:TrystanEdwardsProjection</display-text></eref> <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>WiechelProjection</referenceFrom></locality></localityStack><display-text>geosrs:WiechelProjection</display-text></eref>  return the correct result on a test dataset.</p>
+<requirement id="_953d1ea4-271c-7e9f-9b63-6eefd8830f4a" model="ogc" type="abstracttest" anchor="/conf/projections/Equal_Area_Projections"> <identifier>/conf/projections/Equal_Area_Projections</identifier><classification><tag>target</tag><value>/req/projections/Equal_Area_Projections</value></classification><component id="_526575b7-efcd-e2b5-a599-447b4559bc0b" class="test-purpose"><p id="_28865e38-9c86-68c1-ba94-ab6b983b2482">Check conformance with this requirement</p>
+</component><component id="_a9b950b5-fd92-2185-5716-b7c0aa41541a" class="test-method"><p id="_bfde285e-093e-1008-f6ac-807169c6eb26">Verify that queries involving <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>AlbersEqualAreaProjection</referenceFrom></locality></localityStack><display-text>geosrs:AlbersEqualAreaProjection</display-text></eref> <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>AzimuthalEqualAreaProjection</referenceFrom></locality></localityStack><display-text>geosrs:AzimuthalEqualAreaProjection</display-text></eref> <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>CylindricalEqualArea</referenceFrom></locality></localityStack><display-text>geosrs:CylindricalEqualArea</display-text></eref> <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>GallPetersProjection</referenceFrom></locality></localityStack><display-text>geosrs:GallPetersProjection</display-text></eref> <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>HoboDyerProjection</referenceFrom></locality></localityStack><display-text>geosrs:HoboDyerProjection</display-text></eref> <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>LambertAzimuthalEqualArea</referenceFrom></locality></localityStack><display-text>geosrs:LambertAzimuthalEqualArea</display-text></eref> <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>SlideAndDiceParallelSmallCircle</referenceFrom></locality></localityStack><display-text>geosrs:SlideAndDiceParallelSmallCircle</display-text></eref> <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>SliceAndDiceVertexGreatCircle</referenceFrom></locality></localityStack><display-text>geosrs:SliceAndDiceVertexGreatCircle</display-text></eref> <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>SnyderEqualArea</referenceFrom></locality></localityStack><display-text>geosrs:SnyderEqualArea</display-text></eref> <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>TrystanEdwardsProjection</referenceFrom></locality></localityStack><display-text>geosrs:TrystanEdwardsProjection</display-text></eref> <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>WiechelProjection</referenceFrom></locality></localityStack><display-text>geosrs:WiechelProjection</display-text></eref>  return the correct result on a test dataset.</p>
 </component><component id="_7d44ea23-2482-a899-e09d-06fd015e12db" class="test-method-type"><p id="_0c87f4e5-6319-c73c-f48e-2ab7c7386c57">Capabilities</p>
-</component><component id="_dc492b4f-2fa1-cf62-9fcf-c04c0b683c62" class="reference"><p id="_565ea0d5-1e16-1d1e-93d8-aed0115ee3d1"><eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>AlbersEqualAreaProjection</referenceFrom></locality></localityStack><display-text>geosrs:AlbersEqualAreaProjection</display-text></eref> <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>AzimuthalEqualAreaProjection</referenceFrom></locality></localityStack><display-text>geosrs:AzimuthalEqualAreaProjection</display-text></eref> <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>CylindricalEqualArea</referenceFrom></locality></localityStack><display-text>geosrs:CylindricalEqualArea</display-text></eref> <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>GallPetersProjection</referenceFrom></locality></localityStack><display-text>geosrs:GallPetersProjection</display-text></eref> <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>HoboDyerProjection</referenceFrom></locality></localityStack><display-text>geosrs:HoboDyerProjection</display-text></eref> <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>LambertAzimuthalEqualArea</referenceFrom></locality></localityStack><display-text>geosrs:LambertAzimuthalEqualArea</display-text></eref> <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>TrystanEdwardsProjection</referenceFrom></locality></localityStack><display-text>geosrs:TrystanEdwardsProjection</display-text></eref> <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>WiechelProjection</referenceFrom></locality></localityStack><display-text>geosrs:WiechelProjection</display-text></eref></p>
+</component><component id="_a1d7d85e-9cb0-fae9-8873-542e7de09df9" class="reference"><p id="_f1f2412a-d387-7250-d074-b653e5214340"><eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>AlbersEqualAreaProjection</referenceFrom></locality></localityStack><display-text>geosrs:AlbersEqualAreaProjection</display-text></eref> <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>AzimuthalEqualAreaProjection</referenceFrom></locality></localityStack><display-text>geosrs:AzimuthalEqualAreaProjection</display-text></eref> <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>CylindricalEqualArea</referenceFrom></locality></localityStack><display-text>geosrs:CylindricalEqualArea</display-text></eref> <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>GallPetersProjection</referenceFrom></locality></localityStack><display-text>geosrs:GallPetersProjection</display-text></eref> <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>HoboDyerProjection</referenceFrom></locality></localityStack><display-text>geosrs:HoboDyerProjection</display-text></eref> <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>LambertAzimuthalEqualArea</referenceFrom></locality></localityStack><display-text>geosrs:LambertAzimuthalEqualArea</display-text></eref> <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>SlideAndDiceParallelSmallCircle</referenceFrom></locality></localityStack><display-text>geosrs:SlideAndDiceParallelSmallCircle</display-text></eref> <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>SliceAndDiceVertexGreatCircle</referenceFrom></locality></localityStack><display-text>geosrs:SliceAndDiceVertexGreatCircle</display-text></eref> <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>SnyderEqualArea</referenceFrom></locality></localityStack><display-text>geosrs:SnyderEqualArea</display-text></eref> <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>TrystanEdwardsProjection</referenceFrom></locality></localityStack><display-text>geosrs:TrystanEdwardsProjection</display-text></eref> <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>WiechelProjection</referenceFrom></locality></localityStack><display-text>geosrs:WiechelProjection</display-text></eref></p>
 </component>
 </requirement>
 </clause>
@@ -6644,11 +6686,11 @@ Foster, I., Kesselman, C.. Morgan Kaufmann, San Francisco (1999).</formattedref>
 <bibitem anchor="Czajkowski01" id="_60ff1838-3cdf-6194-2c03-ee266d197a0a"><formattedref format="application/x-isodoc+xml"><em>Grid Information Services for Distributed Resource Sharing.</em> 
 Czajkowski, K., Fitzgerald, S., Foster, I., Kesselman, C. In: 10th IEEE International Symposium on High
 Performance Distributed Computing, pp. 181–184. IEEE Press, New York (2001)</formattedref><docidentifier>Grid Information Services for Distributed Resource Sharing</docidentifier></bibitem>
-</references><references id="_d5319ce3-531b-cbcc-5282-1b8cad9a0c5c" normative="false" obligation="informative">
+</references><references id="_120a818a-bc32-c048-285c-17b2297f8ae8" normative="false" obligation="informative">
 <title id="_50ceb1e1-516f-2673-d73d-4f0c58b4d023">Bibliography</title>
 <note id="_fbd336b0-a344-3030-55c6-1975921a4963"><p id="_a4639bb5-dce4-2157-2d6a-6229500fcabe">The TC has approved Springer LNCS as the official document citation type. Springer LNCS is widely used in technical and computer science journals and other publications For citations in the text please use square brackets and consecutive numbers: [1], [2], [3] Actual References: [n] Journal: Author Surname, A.: Title. Publication Title. Volume number, Issue number, Pages Used (Year Published)</p>
-</note><bibitem id="_295298fb-3cfd-7bd7-2745-4cba2d90aa03" type="standard" schema-version="v1.2.9" anchor="iso19142">
-  <fetched>2025-09-08</fetched>
+</note><bibitem id="_a2aa70c0-7198-e02a-174a-74b3333c033b" type="standard" schema-version="v1.2.9" anchor="iso19142">
+  <fetched>2025-09-09</fetched>
   
 <title type="title-intro" format="text/plain" language="en" script="Latn">Geographic information</title>
 
@@ -6695,7 +6737,7 @@ Performance Distributed Computing, pp. 181–184. IEEE Press, New York (2001)</f
   </copyright>
   <relation type="instanceOf">
     <bibitem type="standard">
-      <fetched>2025-09-08</fetched>
+      <fetched>2025-09-09</fetched>
       
 <title type="title-intro" format="text/plain" language="en" script="Latn">Geographic information</title>
 
@@ -6777,8 +6819,8 @@ Performance Distributed Computing, pp. 181–184. IEEE Press, New York (2001)</f
   <formattedref format="application/x-isodoc+xml">Berners-Lee, T., Fielding, R., Masinter, L.: <strong>IETF RFC 3986 — Uniform Resource Identifier (URI): Generic Syntax,</strong> <link target="http://tools.ietf.org/rfc/rfc3986.txt"/></formattedref>
   <docidentifier>RFC3986</docidentifier>
   <docnumber>3986</docnumber>
-</bibitem><bibitem id="_89d7eaa5-87f7-c631-6de9-d00253e0b3fb" type="article" schema-version="v1.2.9" anchor="ijgi11020117">
-  <fetched>2025-09-08</fetched>
+</bibitem><bibitem id="_c5ef4043-40e5-3905-7cfd-64d4c47f470e" type="article" schema-version="v1.2.9" anchor="ijgi11020117">
+  <fetched>2025-09-09</fetched>
   
 <title type="main" format="text/plain" script="Latn">GeoSPARQL 1.1: Motivations, Details and Applications of the Decadal Update to the Most Important Geospatial LOD Standard</title>
 

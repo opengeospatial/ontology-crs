@@ -42,12 +42,12 @@
                     om:hasUnit om:degree ;
                     rdf:value 9 ] ] ;
     geosrs:coordinateSystem [ a geosrs:CartesianCoordinateSystem ;
-            geosrs:axis [ rdfs:label "Easting" ;
-                    om:hasUnit om:metre ;
-                    skos:altLabel "E" ;
-                    geosrs:axisDirection geosrs_cs:east ],
-                [ rdfs:label "Northing" ;
+            geosrs:axis [ rdfs:label "Northing" ;
                     om:hasUnit om:metre ;
                     skos:altLabel "N" ;
-                    geosrs:axisDirection geosrs_cs:north ] ] .
+                    geosrs:axisDirection geosrs_cs:north ],
+                [ rdfs:label "Easting" ;
+                    om:hasUnit om:metre ;
+                    skos:altLabel "E" ;
+                    geosrs:axisDirection geosrs_cs:east ] ] .
 

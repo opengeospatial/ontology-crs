@@ -11,7 +11,7 @@
     void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
     foaf:image "https://situx.github.io/proj4rdf/primemeridians/RomePrimeMeridian.svg"^^xsd:anyURI ;
     ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'PrimeMeridian','name':'Rome','longitude':12.4523333333333,'id':{'authority':'EPSG','code':8906}}" ;
-    ns1:asWKT "PRIMEM['Rome',12.4523333333333,ANGLEUNIT['degree',0.0174532925199433],ID['EPSG',8906]]" ;
+    ns1:asWKT "PRIMEM['Rome',12.4523333333333,ANGLEUNIT['degree',0.0174532925199433],ID['EPSG',8906]]"^^ns1:wktLiteral ;
     ns1:longitude 1.245233e+01 ;
     ns1:unit <http://www.ontology-of-units-of-measure.org/resource/om-2/om:degree> ;
     ns1:unitConversionFactor 1.745329e-02 .

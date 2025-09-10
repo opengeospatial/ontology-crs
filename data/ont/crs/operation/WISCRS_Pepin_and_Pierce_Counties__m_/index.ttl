@@ -1,5 +1,4 @@
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
-@prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix ns1: <https://w3id.org/geosrs/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix void: <http://rdfs.org/ns/void#> .
@@ -16,7 +15,7 @@
     ns1:area_of_use <http://www.opengis.net/ont/crs/areaofuse/WISCRS_Pepin_and_Pierce_Counties__m__area_of_use> ;
     ns1:asProj4 "+proj=pipeline +step +proj=axisswap +order=2,1 +step +proj=unitconvert +xy_in=deg +xy_out=rad +step +proj=lcc +lat_1=44.6361488719444 +lat_0=44.6361488719444 +lon_0=-92.2277777777778 +k_0=1.0000362977 +x_0=167640.3354 +y_0=86033.0876 +ellps=GRS80" ;
     ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'Conversion','name':'WISCRS Pepin and Pierce Counties (m)','method':{'name':'Lambert Conic Conformal (1SP)','id':{'authority':'EPSG','code':9801}},'parameters':[{'name':'Latitude of natural origin','value':44.6361488719444,'unit':'degree','id':{'authority':'EPSG','code':8801}},{'name':'Longitude of natural origin','value':-92.2277777777778,'unit':'degree','id':{'authority':'EPSG','code':8802}},{'name':'Scale factor at natural origin','value':1.0000362977,'unit':'unity','id':{'authority':'EPSG','code':8805}},{'name':'False easting','value':167640.3354,'unit':'metre','id':{'authority':'EPSG','code':8806}},{'name':'False northing','value':86033.0876,'unit':'metre','id':{'authority':'EPSG','code':8807}}],'id':{'authority':'EPSG','code':7464}}" ;
-    ns1:asWKT "CONVERSION['WISCRS Pepin and Pierce Counties (m)',METHOD['Lambert Conic Conformal (1SP)',ID['EPSG',9801]],PARAMETER['Latitude of natural origin',44.6361488719444,ANGLEUNIT['degree',0.0174532925199433],ID['EPSG',8801]],PARAMETER['Longitude of natural origin',-92.2277777777778,ANGLEUNIT['degree',0.0174532925199433],ID['EPSG',8802]],PARAMETER['Scale factor at natural origin',1.0000362977,SCALEUNIT['unity',1],ID['EPSG',8805]],PARAMETER['False easting',167640.3354,LENGTHUNIT['metre',1],ID['EPSG',8806]],PARAMETER['False northing',86033.0876,LENGTHUNIT['metre',1],ID['EPSG',8807]],ID['EPSG',7464]]"^^geo:wktLiteral ;
+    ns1:asWKT "CONVERSION['WISCRS Pepin and Pierce Counties (m)',METHOD['Lambert Conic Conformal (1SP)',ID['EPSG',9801]],PARAMETER['Latitude of natural origin',44.6361488719444,ANGLEUNIT['degree',0.0174532925199433],ID['EPSG',8801]],PARAMETER['Longitude of natural origin',-92.2277777777778,ANGLEUNIT['degree',0.0174532925199433],ID['EPSG',8802]],PARAMETER['Scale factor at natural origin',1.0000362977,SCALEUNIT['unity',1],ID['EPSG',8805]],PARAMETER['False easting',167640.3354,LENGTHUNIT['metre',1],ID['EPSG',8806]],PARAMETER['False northing',86033.0876,LENGTHUNIT['metre',1],ID['EPSG',8807]],ID['EPSG',7464]]"^^ns1:wktLiteral ;
     ns1:falseEasting 1.676403e+05 ;
     ns1:falseNorthing 8.603309e+04 ;
     ns1:has_ballpark_transformation false ;

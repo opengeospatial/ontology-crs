@@ -1,4 +1,3 @@
-@prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix ns1: <https://w3id.org/geosrs/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix void: <http://rdfs.org/ns/void#> .
@@ -14,7 +13,7 @@
     ns1:area_of_use <http://www.opengis.net/ont/crs/areaofuse/Levant_Zone_area_of_use> ;
     ns1:asProj4 "None" ;
     ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'Conversion','name':'Levant Zone','method':{'name':'Lambert Conic Near-Conformal','id':{'authority':'EPSG','code':9817}},'parameters':[{'name':'Latitude of natural origin','value':34.65,'unit':'degree','id':{'authority':'EPSG','code':8801}},{'name':'Longitude of natural origin','value':37.35,'unit':'degree','id':{'authority':'EPSG','code':8802}},{'name':'Scale factor at natural origin','value':0.9996256,'unit':'unity','id':{'authority':'EPSG','code':8805}},{'name':'False easting','value':300000,'unit':'metre','id':{'authority':'EPSG','code':8806}},{'name':'False northing','value':300000,'unit':'metre','id':{'authority':'EPSG','code':8807}}],'id':{'authority':'EPSG','code':19940}}" ;
-    ns1:asWKT "CONVERSION['Levant Zone',METHOD['Lambert Conic Near-Conformal',ID['EPSG',9817]],PARAMETER['Latitude of natural origin',34.65,ANGLEUNIT['degree',0.0174532925199433],ID['EPSG',8801]],PARAMETER['Longitude of natural origin',37.35,ANGLEUNIT['degree',0.0174532925199433],ID['EPSG',8802]],PARAMETER['Scale factor at natural origin',0.9996256,SCALEUNIT['unity',1],ID['EPSG',8805]],PARAMETER['False easting',300000,LENGTHUNIT['metre',1],ID['EPSG',8806]],PARAMETER['False northing',300000,LENGTHUNIT['metre',1],ID['EPSG',8807]],ID['EPSG',19940]]"^^geo:wktLiteral ;
+    ns1:asWKT "CONVERSION['Levant Zone',METHOD['Lambert Conic Near-Conformal',ID['EPSG',9817]],PARAMETER['Latitude of natural origin',34.65,ANGLEUNIT['degree',0.0174532925199433],ID['EPSG',8801]],PARAMETER['Longitude of natural origin',37.35,ANGLEUNIT['degree',0.0174532925199433],ID['EPSG',8802]],PARAMETER['Scale factor at natural origin',0.9996256,SCALEUNIT['unity',1],ID['EPSG',8805]],PARAMETER['False easting',300000,LENGTHUNIT['metre',1],ID['EPSG',8806]],PARAMETER['False northing',300000,LENGTHUNIT['metre',1],ID['EPSG',8807]],ID['EPSG',19940]]"^^ns1:wktLiteral ;
     ns1:falseEasting 3e+05 ;
     ns1:falseNorthing 3e+05 ;
     ns1:has_ballpark_transformation false ;

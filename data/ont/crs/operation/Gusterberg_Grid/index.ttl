@@ -1,5 +1,4 @@
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
-@prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix ns1: <https://w3id.org/geosrs/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix void: <http://rdfs.org/ns/void#> .
@@ -16,7 +15,7 @@
     ns1:area_of_use <http://www.opengis.net/ont/crs/areaofuse/Gusterberg_Grid_area_of_use> ;
     ns1:asProj4 "+proj=pipeline +step +proj=axisswap +order=2,1 +step +proj=unitconvert +xy_in=deg +xy_out=rad +step +inv +proj=longlat +a=6376045 +rf=310 +pm=ferro +step +proj=cass +lat_0=48.0384638888889 +lon_0=31.8041805555556 +x_0=0 +y_0=0 +a=6376045 +rf=310 +pm=ferro +step +proj=axisswap +order=-2,-1" ;
     ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'Conversion','name':'Gusterberg Grid','method':{'name':'Cassini-Soldner','id':{'authority':'EPSG','code':9806}},'parameters':[{'name':'Latitude of natural origin','value':48.0384638888889,'unit':'degree','id':{'authority':'EPSG','code':8801}},{'name':'Longitude of natural origin','value':31.8041805555556,'unit':'degree','id':{'authority':'EPSG','code':8802}},{'name':'False easting','value':0,'unit':'metre','id':{'authority':'EPSG','code':8806}},{'name':'False northing','value':0,'unit':'metre','id':{'authority':'EPSG','code':8807}}],'id':{'authority':'EPSG','code':8040}}" ;
-    ns1:asWKT "CONVERSION['Gusterberg Grid',METHOD['Cassini-Soldner',ID['EPSG',9806]],PARAMETER['Latitude of natural origin',48.0384638888889,ANGLEUNIT['degree',0.0174532925199433],ID['EPSG',8801]],PARAMETER['Longitude of natural origin',31.8041805555556,ANGLEUNIT['degree',0.0174532925199433],ID['EPSG',8802]],PARAMETER['False easting',0,LENGTHUNIT['metre',1],ID['EPSG',8806]],PARAMETER['False northing',0,LENGTHUNIT['metre',1],ID['EPSG',8807]],ID['EPSG',8040]]"^^geo:wktLiteral ;
+    ns1:asWKT "CONVERSION['Gusterberg Grid',METHOD['Cassini-Soldner',ID['EPSG',9806]],PARAMETER['Latitude of natural origin',48.0384638888889,ANGLEUNIT['degree',0.0174532925199433],ID['EPSG',8801]],PARAMETER['Longitude of natural origin',31.8041805555556,ANGLEUNIT['degree',0.0174532925199433],ID['EPSG',8802]],PARAMETER['False easting',0,LENGTHUNIT['metre',1],ID['EPSG',8806]],PARAMETER['False northing',0,LENGTHUNIT['metre',1],ID['EPSG',8807]],ID['EPSG',8040]]"^^ns1:wktLiteral ;
     ns1:falseEasting 0e+00 ;
     ns1:falseNorthing 0e+00 ;
     ns1:has_ballpark_transformation false ;

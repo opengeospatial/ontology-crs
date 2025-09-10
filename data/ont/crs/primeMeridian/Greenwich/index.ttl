@@ -11,7 +11,7 @@
     void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
     foaf:image "https://situx.github.io/proj4rdf/primemeridians/GreenwichPrimeMeridian.svg"^^xsd:anyURI ;
     ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'PrimeMeridian','name':'Greenwich','longitude':0,'id':{'authority':'EPSG','code':8901}}" ;
-    ns1:asWKT "PRIMEM['Greenwich',0,ANGLEUNIT['degree',0.0174532925199433],ID['EPSG',8901]]" ;
+    ns1:asWKT "PRIMEM['Greenwich',0,ANGLEUNIT['degree',0.0174532925199433],ID['EPSG',8901]]"^^ns1:wktLiteral ;
     ns1:longitude 0e+00 ;
     ns1:unit <http://www.ontology-of-units-of-measure.org/resource/om-2/om:degree> ;
     ns1:unitConversionFactor 1.745329e-02 .

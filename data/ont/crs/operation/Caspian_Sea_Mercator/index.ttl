@@ -1,5 +1,4 @@
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
-@prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix ns1: <https://w3id.org/geosrs/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix void: <http://rdfs.org/ns/void#> .
@@ -15,7 +14,7 @@
     ns1:area_of_use <http://www.opengis.net/ont/crs/areaofuse/Caspian_Sea_Mercator_area_of_use> ;
     ns1:asProj4 "+proj=pipeline +step +proj=axisswap +order=2,1 +step +proj=unitconvert +xy_in=deg +xy_out=rad +step +proj=merc +lat_ts=42 +lon_0=51 +x_0=0 +y_0=0 +ellps=krass +step +proj=axisswap +order=2,1" ;
     ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'Conversion','name':'Caspian Sea Mercator','method':{'name':'Mercator (variant B)','id':{'authority':'EPSG','code':9805}},'parameters':[{'name':'Latitude of 1st standard parallel','value':42,'unit':'degree','id':{'authority':'EPSG','code':8823}},{'name':'Longitude of natural origin','value':51,'unit':'degree','id':{'authority':'EPSG','code':8802}},{'name':'False easting','value':0,'unit':'metre','id':{'authority':'EPSG','code':8806}},{'name':'False northing','value':0,'unit':'metre','id':{'authority':'EPSG','code':8807}}],'id':{'authority':'EPSG','code':19884}}" ;
-    ns1:asWKT "CONVERSION['Caspian Sea Mercator',METHOD['Mercator (variant B)',ID['EPSG',9805]],PARAMETER['Latitude of 1st standard parallel',42,ANGLEUNIT['degree',0.0174532925199433],ID['EPSG',8823]],PARAMETER['Longitude of natural origin',51,ANGLEUNIT['degree',0.0174532925199433],ID['EPSG',8802]],PARAMETER['False easting',0,LENGTHUNIT['metre',1],ID['EPSG',8806]],PARAMETER['False northing',0,LENGTHUNIT['metre',1],ID['EPSG',8807]],ID['EPSG',19884]]"^^geo:wktLiteral ;
+    ns1:asWKT "CONVERSION['Caspian Sea Mercator',METHOD['Mercator (variant B)',ID['EPSG',9805]],PARAMETER['Latitude of 1st standard parallel',42,ANGLEUNIT['degree',0.0174532925199433],ID['EPSG',8823]],PARAMETER['Longitude of natural origin',51,ANGLEUNIT['degree',0.0174532925199433],ID['EPSG',8802]],PARAMETER['False easting',0,LENGTHUNIT['metre',1],ID['EPSG',8806]],PARAMETER['False northing',0,LENGTHUNIT['metre',1],ID['EPSG',8807]],ID['EPSG',19884]]"^^ns1:wktLiteral ;
     ns1:falseEasting 0e+00 ;
     ns1:falseNorthing 0e+00 ;
     ns1:has_ballpark_transformation false ;

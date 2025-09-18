@@ -7430,16 +7430,16 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 </tr></tbody>
 </table>
 </clause>
-</annex><annex id="_8e69fc11-7ccc-d760-7740-b001ed4b87d8" obligation="informative">
+</annex><annex id="_34cd7fd4-1c32-f108-2e7d-4f1b6784bd89" obligation="informative">
 <title id="_8dd35ff6-f41c-83ae-58df-a3465fa8defb">SHACL Shapes</title>
 <p id="_c680c9aa-8b84-d49f-95ce-9621f0b3e984">This section introduces SHACL shapes which can be used to verify graphs encoded using the vocabulary defined in this specification.</p>
 
 <floating-title id="_2e1e93d4-a76e-4318-c6c8-bc1034df4ab7" depth="2" type="floating-title">Overview</floating-title>
 <p id="_d5c3f150-68ff-eaac-2e6a-46801f7f6ef6">SHACL shapes in this specification are subdivided by the same module designations as used previously. In order to verify a graph a single validation file of SHACL shapes is provided alongside this specification.</p>
 
-<clause id="_8bacb5cd-43d6-8fd8-71de-9a00161de184" obligation="informative">
+<clause id="_f0fa7f0b-559b-b54b-7241-0dbc211c463e" obligation="informative">
 <title id="_9a0e911f-c5a0-0e8f-1eb3-d4f9ef8b1256">SHACL Shapes: Core</title>
-<table id="_9bcf2ae6-360f-1381-b050-4bd9c0baa13e">
+<table id="_45527325-22c8-9f09-4f48-440e8bbc7159">
 <name id="_58b39019-5f38-1fd3-dc61-a9396cbd2d73">Core</name>
 <thead><tr id="_2df30484-e5c1-1ee2-fbb2-fcb4a5c43572"><th id="_ce37facd-1cda-d2b9-edb0-4d592ae02421" valign="middle" align="left">Label</th>
 <th id="_d477d23d-8e1a-a0f0-9d44-eca16e15f45d" valign="middle" align="left">TargetNode</th>
@@ -7463,18 +7463,18 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 <td id="_ac1bb55b-a300-ac18-c82d-49e42b97e46c" valign="middle" align="left">1</td>
 <td id="_cff79fc4-0784-1955-dd90-02f062df5d93" valign="middle" align="left">-</td>
 <td id="_6acac330-1f45-bc34-985f-aa69da6902b5" valign="middle" align="left">A coordinate reference system should have at least one area of use</td>
-</tr><tr id="_0d1cd33d-a944-5f94-3015-6f73eff199bb"><td id="_4ae452ad-f813-e325-cc86-231ac105ad83" valign="middle" align="left">Shape S3</td>
+</tr><tr id="_4e33b855-21fa-f85a-f747-cf000aee7153"><td id="_4ae452ad-f813-e325-cc86-231ac105ad83" valign="middle" align="left">Shape S3</td>
 <td id="_139ebffb-0c01-60fb-739f-2f3f70690f7a" valign="middle" align="left">geosrs:CRS</td>
 <td id="_70be993d-2e97-7be9-72fc-ca9d5e01c348" valign="middle" align="left">geosrs:datum</td>
 <td id="_9ba1ff95-69c8-cc50-2526-86706e161f3e" valign="middle" align="left">geosrs:Datum</td>
-<td id="_36f83387-997f-0487-f47b-86017b81ad45" valign="middle" align="left">1</td>
+<td id="_c8cbdba8-0e1d-7399-a1a6-6482f4bb3e4e" valign="middle" align="left">-</td>
 <td id="_e938bb15-c1bc-ed52-e350-4401922e4b53" valign="middle" align="left">1</td>
 <td id="_b21dd757-f532-9808-068d-9d6b0f45b242" valign="middle" align="left">A coordinate reference system should have exactly one datum</td>
-</tr><tr id="_f6e7c729-ebf4-cfcf-cf64-86ec144129e3"><td id="_9da43f3d-e483-edcb-5678-1955f1b8abcb" valign="middle" align="left">Shape S4</td>
+</tr><tr id="_eb73be71-20b6-9ce0-227d-cc6cfe5fe7b9"><td id="_9da43f3d-e483-edcb-5678-1955f1b8abcb" valign="middle" align="left">Shape S4</td>
 <td id="_0d79d859-c01f-f7a6-dfbe-ac3c6f47a36c" valign="middle" align="left">geosrs:CRS</td>
 <td id="_91fe9b10-d6e5-3395-0692-a9e53a75aa39" valign="middle" align="left">geosrs:datumEnsemble</td>
 <td id="_8cec13ef-aa0a-6931-1c45-b4001973da76" valign="middle" align="left">geosrs:DatumEnsemble</td>
-<td id="_9a92fb2f-9208-ce8a-e818-dc500d186ccb" valign="middle" align="left">1</td>
+<td id="_76f9c20e-db53-d2b1-41da-55919ca60a38" valign="middle" align="left">-</td>
 <td id="_0a247898-9474-4dfd-b258-635981806326" valign="middle" align="left">1</td>
 <td id="_80ac4da4-d7d3-cb26-fdc4-8f085a032dec" valign="middle" align="left">A coordinate reference system may have exactly one datum ensemble</td>
 </tr><tr id="_d7b6030f-45e2-30ba-fc14-10c07d893bac"><td id="_a777d226-9511-63d6-9fab-92b364944c2c" valign="middle" align="left">Shape S5</td>
@@ -7567,9 +7567,9 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 </table>
 </clause>
 
-<clause id="_c87b7ca9-0dde-9f28-c8e2-483b7b94b518" obligation="informative">
+<clause id="_a82d5aae-020d-9ce6-5e6d-1af7d4e1403c" obligation="informative">
 <title id="_a0eb8f7d-275f-b43e-c8f1-ea640f6fdbbf">SHACL Shapes: Cs</title>
-<table id="_857baf6d-8435-06b7-751d-c108e3d3513d">
+<table id="_ab1fe9bd-cab2-ce62-9339-e1f407cbaaec">
 <name id="_b3e6631c-2694-f9d3-38c4-777cf38b1804">Cs</name>
 <thead><tr id="_b99e0039-6edf-df1b-b5c0-6bb7a3673494"><th id="_4501a8e7-5c3a-ba97-7044-cd739f74ba59" valign="middle" align="left">Label</th>
 <th id="_b0248e34-8ba5-460f-41ea-c0219a495ed3" valign="middle" align="left">TargetNode</th>
@@ -7579,20 +7579,20 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 <th id="_541bef88-3702-5c30-f6bb-e0eb580f3d71" valign="middle" align="left">MaxCount</th>
 <th id="_39c78d70-10d2-d7f9-ba13-13e5d032d2a9" valign="middle" align="left">Comment</th>
 </tr></thead>
-<tbody><tr id="_e37677e5-469c-bf74-dbb3-89821ba8424e"><td id="_66e31511-c2f7-1ac4-c95d-79b64ac5afcc" valign="middle" align="left">Shape S1</td>
+<tbody><tr id="_24d803f4-40a9-8761-9914-34c6c8f99db7"><td id="_66e31511-c2f7-1ac4-c95d-79b64ac5afcc" valign="middle" align="left">Shape S1</td>
 <td id="_3c3d597a-72b7-19ac-e0fa-e7c74a37de68" valign="middle" align="left">geosrs:3DCoordinateSystem</td>
 <td id="_9d5ac611-db3f-4fde-e91a-41c1230df9c8" valign="middle" align="left">geosrs:axis</td>
 <td id="_05b01933-2711-c827-beff-2f5a308d65f2" valign="middle" align="left">geosrs:CoordinateSystemAxis</td>
 <td id="_fb20104f-d1f9-8806-fba9-93413c08425b" valign="middle" align="left">3</td>
 <td id="_8c20c49d-5e4b-ea19-443b-44431a99aec5" valign="middle" align="left">-</td>
-<td id="_bdffae27-92ad-d582-36d9-ea8c49d7a1f5" valign="middle" align="left">A 3D coordinate system should have at least three axis</td>
-</tr><tr id="_4510a016-bb23-20be-0d6b-c63c90f198f8"><td id="_82db4ec7-3af7-2952-e746-9ad839b69576" valign="middle" align="left">Shape S2</td>
+<td id="_a1bae7ac-5460-ed76-03c5-87e2dd98d602" valign="middle" align="left">A 3D coordinate system should have at least three axes</td>
+</tr><tr id="_72df6ca7-ec45-1d02-2f01-308ea09fb1aa"><td id="_82db4ec7-3af7-2952-e746-9ad839b69576" valign="middle" align="left">Shape S2</td>
 <td id="_209de16f-40d5-d108-e483-e9bb7fb314f1" valign="middle" align="left">geosrs:ConicalCoordinateSystem</td>
 <td id="_2f52d61a-8e90-2e60-7dfa-3b3201fc4475" valign="middle" align="left">geosrs:axis</td>
 <td id="_681cc047-9d0e-ff1e-1b8d-ce2d3cf47f34" valign="middle" align="left">geosrs:CoordinateSystemAxis</td>
 <td id="_125faf1f-4fd6-da81-3fc7-2ca4c583f8cb" valign="middle" align="left">3</td>
 <td id="_cfd82e26-822b-d7cd-c5c9-d50342523c59" valign="middle" align="left">-</td>
-<td id="_37481cc9-5111-65ae-2f81-6bef6e8cd844" valign="middle" align="left">A conical coordinate system should have at least three axis</td>
+<td id="_25d9de3a-5d2e-6788-0df1-b3b9299d35c6" valign="middle" align="left">A conical coordinate system should have at least three axes</td>
 </tr><tr id="_f51ae6f7-fedb-58f3-856c-7927a139a0a2"><td id="_a45f99ad-d5f2-d527-c0e7-c58aa53a0703" valign="middle" align="left">Shape S3</td>
 <td id="_a7bc1bde-fd07-cf62-802d-ef3867a54401" valign="middle" align="left">geosrs:CoordinateSystem</td>
 <td id="_e9183f7b-fa79-aa91-6535-6b75e0ed03d0" valign="middle" align="left">geosrs:axis</td>
@@ -7607,13 +7607,13 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 <td id="_3a20f2c8-42c0-a6d9-86fa-893c29913c1a" valign="middle" align="left">1</td>
 <td id="_bbd3fd27-db27-935b-e8f6-8eb758d67c4d" valign="middle" align="left">1</td>
 <td id="_5fe86090-2694-cd3e-0bf5-6cb480f03cdc" valign="middle" align="left">A coordinate system axis should have exactly one axis direction</td>
-</tr><tr id="_c2d21c32-a55a-5487-7f11-15e451d3501e"><td id="_3fe17c71-d897-d5d5-62a6-ca75eb79081c" valign="middle" align="left">Shape S5</td>
+</tr><tr id="_845d38f7-df9f-c8fc-5dad-ead994bf2552"><td id="_3fe17c71-d897-d5d5-62a6-ca75eb79081c" valign="middle" align="left">Shape S5</td>
 <td id="_8311ee47-c242-d6d3-bb32-dc6c3b9ae788" valign="middle" align="left">geosrs:CylindricalCoordinateSystem</td>
 <td id="_04cb40fb-c09a-8393-f11c-da099be949af" valign="middle" align="left">geosrs:axis</td>
 <td id="_48d65563-1f25-1546-a5cd-e8b182be6e87" valign="middle" align="left">geosrs:CoordinateSystemAxis</td>
 <td id="_617f6431-e3bd-34c6-50af-93522fca38e8" valign="middle" align="left">3</td>
 <td id="_0195b52e-ef77-81c1-4992-07ec83328844" valign="middle" align="left">-</td>
-<td id="_8e326cb7-0144-db2f-47c8-66af9d532be3" valign="middle" align="left">A cylindrical coordinate system should have at least three axis</td>
+<td id="_5f5c9d2d-6c63-cac6-6d5e-a6319656ee75" valign="middle" align="left">A cylindrical coordinate system should have at least three axes</td>
 </tr><tr id="_e69d990a-0284-eb19-0f6d-4dee51612831"><td id="_010a2914-848f-9066-2d7e-ca9fb52f6a2e" valign="middle" align="left">Shape S6</td>
 <td id="_6acc1272-0647-f79c-1f3f-6e1f29458584" valign="middle" align="left">geosrs:DateTimeTemporalCoordinateSystem</td>
 <td id="_55b130f6-7b9b-9b4f-73f3-a9fa7f23304a" valign="middle" align="left">geosrs:axis</td>
@@ -7621,13 +7621,13 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 <td id="_ced2da28-f84d-929b-c455-53d86576b066" valign="middle" align="left">1</td>
 <td id="_b796a724-2a48-d43e-4b2a-db2461d29f66" valign="middle" align="left">1</td>
 <td id="_3bc03210-2cd6-a645-8522-ba776a22a3ab" valign="middle" align="left">A date time temporal coordinate system should have exactly one axis</td>
-</tr><tr id="_e95eb9ce-56b2-a4ee-1523-104e1b3686cf"><td id="_815e49de-c0a0-16b4-b3ea-602ab38749e1" valign="middle" align="left">Shape S7</td>
+</tr><tr id="_57113929-3d20-5f55-2510-506ec20b5930"><td id="_815e49de-c0a0-16b4-b3ea-602ab38749e1" valign="middle" align="left">Shape S7</td>
 <td id="_878dc9dd-1a90-d22c-d4fb-3f58ad6b5229" valign="middle" align="left">geosrs:PlanarCoordinateSystem</td>
 <td id="_3596d775-9a8e-ba12-1d70-4d5764f370d5" valign="middle" align="left">geosrs:axis</td>
 <td id="_fe094734-7e6f-92d2-1dce-b56c55ee936c" valign="middle" align="left">geosrs:CoordinateSystemAxis</td>
 <td id="_b060db8a-34a4-7a8e-7c57-6e18878636ab" valign="middle" align="left">2</td>
 <td id="_ac805fb8-d2e9-86a7-486b-3788c726ce73" valign="middle" align="left">-</td>
-<td id="_05760f0d-de0e-723d-5ddf-4c6207b10ace" valign="middle" align="left">A planar coordinate system should have at least two axis</td>
+<td id="_ddf7e7fe-0fc4-3734-d2de-f036def26535" valign="middle" align="left">A planar coordinate system should have at least two axes</td>
 </tr><tr id="_a0c02a9d-234c-9628-699d-7c4618a38ac8"><td id="_9fbeec16-6966-9256-c4b5-5b91e43718f9" valign="middle" align="left">Shape S8</td>
 <td id="_ce81cf06-8964-3a23-ebaf-f73872243499" valign="middle" align="left">geosrs:TemporalCoordinateSystem</td>
 <td id="_d4ba3e21-0cd2-5874-b36f-067451530463" valign="middle" align="left">geosrs:axis</td>
@@ -7718,11 +7718,11 @@ Foster, I., Kesselman, C.. Morgan Kaufmann, San Francisco (1999).</formattedref>
 <bibitem anchor="Czajkowski01" id="_60ff1838-3cdf-6194-2c03-ee266d197a0a"><formattedref format="application/x-isodoc+xml"><em>Grid Information Services for Distributed Resource Sharing.</em> 
 Czajkowski, K., Fitzgerald, S., Foster, I., Kesselman, C. In: 10th IEEE International Symposium on High
 Performance Distributed Computing, pp. 181–184. IEEE Press, New York (2001)</formattedref><docidentifier>Grid Information Services for Distributed Resource Sharing</docidentifier></bibitem>
-</references><references id="_1d727d93-3118-3321-639e-6cfbe056bf27" normative="false" obligation="informative">
+</references><references id="_bbc600fd-48d2-9d0e-c3e6-59c3b4153a5f" normative="false" obligation="informative">
 <title id="_50ceb1e1-516f-2673-d73d-4f0c58b4d023">Bibliography</title>
 <note id="_fbd336b0-a344-3030-55c6-1975921a4963"><p id="_a4639bb5-dce4-2157-2d6a-6229500fcabe">The TC has approved Springer LNCS as the official document citation type. Springer LNCS is widely used in technical and computer science journals and other publications For citations in the text please use square brackets and consecutive numbers: [1], [2], [3] Actual References: [n] Journal: Author Surname, A.: Title. Publication Title. Volume number, Issue number, Pages Used (Year Published)</p>
-</note><bibitem id="_a4b1273d-39a9-832e-fc0f-5253cdb48a10" type="standard" schema-version="v1.2.9" anchor="iso19142">
-  <fetched>2025-09-17</fetched>
+</note><bibitem id="_5d4036db-984c-d50b-22a5-34a9aa7cc1d7" type="standard" schema-version="v1.2.9" anchor="iso19142">
+  <fetched>2025-09-18</fetched>
   
 <title type="title-intro" format="text/plain" language="en" script="Latn">Geographic information</title>
 
@@ -7769,7 +7769,7 @@ Performance Distributed Computing, pp. 181–184. IEEE Press, New York (2001)</f
   </copyright>
   <relation type="instanceOf">
     <bibitem type="standard">
-      <fetched>2025-09-17</fetched>
+      <fetched>2025-09-18</fetched>
       
 <title type="title-intro" format="text/plain" language="en" script="Latn">Geographic information</title>
 
@@ -7851,8 +7851,8 @@ Performance Distributed Computing, pp. 181–184. IEEE Press, New York (2001)</f
   <formattedref format="application/x-isodoc+xml">Berners-Lee, T., Fielding, R., Masinter, L.: <strong>IETF RFC 3986 — Uniform Resource Identifier (URI): Generic Syntax,</strong> <link target="http://tools.ietf.org/rfc/rfc3986.txt"/></formattedref>
   <docidentifier>RFC3986</docidentifier>
   <docnumber>3986</docnumber>
-</bibitem><bibitem id="_356b8c41-f845-4558-668a-323a5064d3dc" type="article" schema-version="v1.2.9" anchor="ijgi11020117">
-  <fetched>2025-09-17</fetched>
+</bibitem><bibitem id="_a260ffb6-7ca9-6e86-7d7d-6c361c905ddc" type="article" schema-version="v1.2.9" anchor="ijgi11020117">
+  <fetched>2025-09-18</fetched>
   
 <title type="main" format="text/plain" script="Latn">GeoSPARQL 1.1: Motivations, Details and Applications of the Decadal Update to the Most Important Geospatial LOD Standard</title>
 

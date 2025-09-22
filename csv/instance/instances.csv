@@ -2,7 +2,7 @@ Concept,Type,Label,Definition,Requirement,Comment,ISO 19111,IGN 2019,Proj4RDF,Ge
 geosrs:Down,geosrs:AxisDirection,Down,Downwards axis direction,Coordinate System Axis,,,,geocrsaxis:down,,down,down,CS,,
 geosrs:East,geosrs:AxisDirection,East,east axis direction,Coordinate System Axis,,,,geocrsaxis:east,,east,east,CS,,
 geosrs:GeocentricX,geosrs:AxisDirection,Geocentric X,,Coordinate System Axis,,,,geocrsaxis:geocentricX,Coordinate System Axis,,,,CS,,
-geosrs:DeocentricY,geosrs:AxisDirection,Geocentric Y,,Coordinate System Axis,,,,geocrsaxis:geocentricY,Coordinate System Axis,,,,CS,,
+geosrs:GeocentricY,geosrs:AxisDirection,Geocentric Y,,Coordinate System Axis,,,,geocrsaxis:geocentricY,Coordinate System Axis,,,,CS,,
 geosrs:GeocentricZ,geosrs:AxisDirection,Geocentric Z,,Coordinate System Axis,,,,geocrsaxis:geocentricZ,Coordinate System Axis,,,,CS,,
 geosrs:North,geosrs:AxisDirection,North,North axis direction,Coordinate System Axis,,,,geocrsaxis:north,,north,north,CS,,
 geosrs:South,geosrs:AxisDirection,South,South axis direction,Coordinate System Axis,,,,geocrsaxis:south,,south,south,CS,,

@@ -103,7 +103,7 @@ geosrs:TemporalMeasureCoordinateSystemShape a sh:NodeShape ;
     sh:property geosrs:TemporalMeasureCoordinateSystemShape_Property ;
     sh:targetNode geosrs:TemporalMeasureCoordinateSystem .
 
-geosrs:3DCoordinateSystemShape_Property rdfs:comment "A 3D coordinate system should have at least three axes"@en ;
+geosrs:3DCoordinateSystemShape_Property rdfs:comment "A 3D coordinate system should have at least three axis"@en ;
     sh:class geosrs:CoordinateSystemAxis ;
     sh:minCount 3 .
 
@@ -122,7 +122,7 @@ geosrs:CompoundCRSShape_Property rdfs:comment "A compound coordinate reference s
     sh:class geosrs:SingleCRS ;
     sh:minCount 1 .
 
-geosrs:ConicalCoordinateSystemShape_Property rdfs:comment "A conical coordinate system should have at least three axes"@en ;
+geosrs:ConicalCoordinateSystemShape_Property rdfs:comment "A conical coordinate system should have at least three axis"@en ;
     sh:class geosrs:CoordinateSystemAxis ;
     sh:minCount 3 .
 
@@ -135,7 +135,7 @@ geosrs:CoordinateSystemShape_Property rdfs:comment "A coordinate system should h
     sh:class geosrs:CoordinateSystemAxis ;
     sh:minCount 1 .
 
-geosrs:CylindricalCoordinateSystemShape_Property rdfs:comment "A cylindrical coordinate system should have at least three axes"@en ;
+geosrs:CylindricalCoordinateSystemShape_Property rdfs:comment "A cylindrical coordinate system should have at least three axis"@en ;
     sh:class geosrs:CoordinateSystemAxis ;
     sh:minCount 3 .
 
@@ -165,7 +165,7 @@ geosrs:ParametricDatumShape_Property rdfs:comment "A parametric datum should hav
     sh:class geosrs:DefiningParameter ;
     sh:minCount 1 .
 
-geosrs:PlanarCoordinateSystemShape_Property rdfs:comment "A planar coordinate system should have at least two axes"@en ;
+geosrs:PlanarCoordinateSystemShape_Property rdfs:comment "A planar coordinate system should have at least two axis"@en ;
     sh:class geosrs:CoordinateSystemAxis ;
     sh:minCount 2 .
 

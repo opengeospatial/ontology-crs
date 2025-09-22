@@ -581,9 +581,9 @@
       "@id": "geosrs:domainOfValidity",
       "@type": "@vocab"
     },
-    "down": "geosrs_cs:down",
+    "down": "geosrs_cs:Down",
     "drilling": "geosrs_application:Drilling",
-    "east": "geosrs_cs:east",
+    "east": "geosrs_cs:East",
     "eccentricity": "geosrs:eccentricity",
     "ellipsoid": {
       "@context": {
@@ -650,7 +650,7 @@
     "nautical": "geosrs_application:NauticalChart",
     "navigation": "geosrs_application:SatelliteNavigation",
     "nicol": "geosrs_projection:NicolosiGlobularProjection",
-    "north": "geosrs_cs:north",
+    "north": "geosrs_cs:North",
     "offshore": "geosrs_application:OffshoreEngineering",
     "oil": "geosrs_application:OilAndGasExploration",
     "om": "http://www.ontology-of-units-of-measure.org/resource/om-2/",
@@ -716,7 +716,7 @@
       "@id": "geosrs:sourceCRS",
       "@type": "@vocab"
     },
-    "south": "geosrs_cs:south",
+    "south": "geosrs_cs:South",
     "spatial": "geosrs_application:SpatialReferencing",
     "stere": "geosrs_projection:StereographicProjection",
     "sterea": "geosrs_projection:ObliqueStereographicProjection",
@@ -755,10 +755,10 @@
       "@id": "om:hasUnit",
       "@type": "@vocab"
     },
-    "up": "geosrs_cs:up",
+    "up": "geosrs_cs:Up",
     "utm": "geosrs_projection:UniversalTransverseMercatorProjection",
     "value": "rdf:value",
     "vertical": "geosrs:VerticalCoordinateSystem",
-    "west": "geosrs_cs:west"
+    "west": "geosrs_cs:West"
   }
 }

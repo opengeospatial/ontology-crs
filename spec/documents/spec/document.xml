@@ -5236,7 +5236,7 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 </clause>
 </clause>
 
-<clause id="_aa1917d0-9858-f42a-964f-1aa12fda7933" obligation="normative">
+<clause id="_f7d2551f-d2d8-bd9c-0141-a0f08b477437" obligation="normative">
 <title id="_26d72318-298d-cf07-efaf-b55a89d8900e">Planet Module</title>
 <p id="_e351fdf5-e84c-1445-1c85-d64e0fe0cf5e" anchor="planet">This clause establishes the <strong>PLANET</strong> Requirements class, with IRI <tt>/req/planet</tt>, which has a corresponding Conformance Class, <strong>PLANET</strong>, with IRI <tt>/conf/planet</tt>.</p>
 
@@ -5249,47 +5249,39 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 </dl></description>
 </requirement>
 
-<clause id="_b10d80a3-8f39-e6b2-31ff-98cddb99c64b" obligation="normative">
+<clause id="_8e67617f-ed9b-f952-b905-aadf337a6a2b" obligation="normative">
 <title id="_9ad6f733-95d9-7e5b-fcc3-9377029944f2">Interstellar Body</title>
-<requirement id="_14db760d-3b4c-7d54-fbea-7e71b100bf01" model="ogc" anchor="/req/planet/Interstellar_Body">
+<requirement id="_65e27569-e1ac-4c7b-bc16-3ce44138694e" model="ogc" anchor="/req/planet/Interstellar_Body">
 <title>Interstellar Body</title> 
-<identifier>/req/planet/Interstellar_Body</identifier><description><p id="_ca0ece5c-bb7c-a18d-df33-1615cd44fe8f">Implementations shall allow the RDFS classes <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>ArtificialSatellite</referenceFrom></locality></localityStack><display-text>geosrs:ArtificialSatellite</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>Asteroid</referenceFrom></locality></localityStack><display-text>geosrs:Asteroid</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>Comet</referenceFrom></locality></localityStack><display-text>geosrs:Comet</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>DwarfPlanet</referenceFrom></locality></localityStack><display-text>geosrs:DwarfPlanet</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>InterstellarBody</referenceFrom></locality></localityStack><display-text>geosrs:InterstellarBody</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>Moon</referenceFrom></locality></localityStack><display-text>geosrs:Moon</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>NaturalSatellite</referenceFrom></locality></localityStack><display-text>geosrs:NaturalSatellite</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>Planet</referenceFrom></locality></localityStack><display-text>geosrs:Planet</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>PlanetStatus</referenceFrom></locality></localityStack><display-text>geosrs:PlanetStatus</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>Plutoid</referenceFrom></locality></localityStack><display-text>geosrs:Plutoid</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>Star</referenceFrom></locality></localityStack><display-text>geosrs:Star</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>Satellite</referenceFrom></locality></localityStack><display-text>geosrs:Satellite</display-text></eref> to be used in SPARQL graph patterns.</p></description>
+<identifier>/req/planet/Interstellar_Body</identifier><description><p id="_2c9a923d-6e18-9e49-d627-81c82edfc392">Implementations shall allow the RDFS classes <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>ArtificialSatellite</referenceFrom></locality></localityStack><display-text>geosrs:ArtificialSatellite</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>Asteroid</referenceFrom></locality></localityStack><display-text>geosrs:Asteroid</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>Comet</referenceFrom></locality></localityStack><display-text>geosrs:Comet</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>DwarfPlanet</referenceFrom></locality></localityStack><display-text>geosrs:DwarfPlanet</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>InterstellarBody</referenceFrom></locality></localityStack><display-text>geosrs:InterstellarBody</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>Moon</referenceFrom></locality></localityStack><display-text>geosrs:Moon</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>NaturalSatellite</referenceFrom></locality></localityStack><display-text>geosrs:NaturalSatellite</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>Planet</referenceFrom></locality></localityStack><display-text>geosrs:Planet</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>PlanetStatus</referenceFrom></locality></localityStack><display-text>geosrs:PlanetStatus</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>Plutoid</referenceFrom></locality></localityStack><display-text>geosrs:Plutoid</display-text></eref>, <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>Star</referenceFrom></locality></localityStack><display-text>geosrs:Star</display-text></eref> to be used in SPARQL graph patterns.</p></description>
 </requirement>
 
-<clause id="_31e99b1f-c28a-2320-67d2-7a33fef51635" obligation="normative">
+<clause id="_95b1d593-d994-1d91-33ad-12a2f6e45451" obligation="normative">
 <title id="_55233919-617b-66fd-0b68-4ab08848f4fc">Class: geosrs:ArtificialSatellite</title>
-<table id="_f8522133-4fd2-b525-d069-a3b689730e80"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<table id="_88f9ef98-749f-918f-dfa7-8e5952fd09ad"><colgroup><col width="50%"/><col width="50%"/></colgroup>
 <name id="_4f688f6e-f8f2-3063-dc71-37bfa696f8d5">geosrs:ArtificialSatellite</name>
-<tbody><tr id="_08279641-4e54-b323-1d8d-1375d2323d97"><td id="_1735567f-b6b0-4a39-92da-be476644ea06" valign="middle" align="left">URI</td>
-<td id="_d47c83b2-f180-dcca-6a19-aba1fc62fe0e" valign="middle" align="left"><link target="https://w3id.org/geosrs/planet/ArtificialSatellite"/></td>
-</tr><tr id="_efbea86c-0326-65b5-d862-3c2edd2ffbd1"><td id="_3a375b7c-f54c-b311-d29f-9001bc6c5c6b" valign="middle" align="left">Super-classes</td>
-<td id="_2063d94e-c02a-0e9b-1f61-ca13f7f31d89" valign="middle" align="left"><link target="https://w3id.org/geosrs/planet/Satellite">Satellite</link></td>
+<tbody><tr id="_f6313fa4-99ad-667c-9e2c-526b0a1b8afa"><td id="_fa9d6011-7c00-3f6f-a707-a05e4787f024" valign="middle" align="left">URI</td>
+<td id="_07e30797-1fb4-2c6d-9063-95ef83865084" valign="middle" align="left"><link target="https://w3id.org/geosrs/planet/ArtificialSatellite"/></td>
 </tr></tbody>
 </table>
 </clause>
 
-<clause id="_e6ecb7be-080e-51e9-791f-899f917249a9" obligation="normative">
+<clause id="_ace13faa-b6c9-4f88-cb36-03d2a29be8d8" obligation="normative">
 <title id="_dbe730e7-4c52-f04d-cf86-006e24f001ca">Class: geosrs:Asteroid</title>
-<table id="_fe8427da-c449-a88b-5d36-510dc48dad13"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<table id="_87eb0fd6-ecd3-d74d-bc89-982e80f463fb"><colgroup><col width="50%"/><col width="50%"/></colgroup>
 <name id="_fb013356-5119-3c3d-a740-66ed053a3d1d">geosrs:Asteroid</name>
-<tbody><tr id="_5675db26-3119-35d9-776e-c28803ee196e"><td id="_dda5e6bd-698b-d2b1-7060-2f8725f4f605" valign="middle" align="left">URI</td>
-<td id="_7a0ab653-521c-a023-0168-2fcf0202012e" valign="middle" align="left"><link target="https://w3id.org/geosrs/planet/Asteroid"/></td>
-</tr><tr id="_bb994740-181e-48a0-889e-4e3e8ec91094"><td id="_b49abf7a-3ad3-ea70-ac11-dcc7984566ac" valign="middle" align="left">Definition</td>
-<td id="_49510d02-34bb-2045-fd7a-fb5e2eeef649" valign="middle" align="left">Asteroid, any of a host of small bodies, about 1,000 km (600 miles) or less in diameter, that orbit the Sun primarily between the orbits of Mars and Jupiter in a nearly flat ring called the asteroid belt (source:https://www.britannica.com/science/asteroid) </td>
-</tr><tr id="_e4b144ce-1ebe-8093-1a36-302332a0ab6e"><td id="_005418dc-a35f-3caf-0659-95af2ee9d2d8" valign="middle" align="left">Super-classes</td>
-<td id="_22052658-c9b4-e504-fa1d-266523d9ab71" valign="middle" align="left"><link target="https://w3id.org/geosrs/planet/InterstellarBody">InterstellarBody</link></td>
+<tbody><tr id="_f5de0437-683d-810c-dc8b-1af16221614a"><td id="_27e69ba9-2414-a5e0-187f-939f7a6a5d01" valign="middle" align="left">URI</td>
+<td id="_9f29c5c2-f4b7-bab7-2707-3879ba2c4d3b" valign="middle" align="left"><link target="https://w3id.org/geosrs/planet/Asteroid"/></td>
 </tr></tbody>
 </table>
 </clause>
 
-<clause id="_2b7b9bda-b27c-6248-75f1-69b87ffa6573" obligation="normative">
+<clause id="_d7808041-57df-239a-73e1-cdd40e6b8568" obligation="normative">
 <title id="_e8a8abcd-0516-47df-a9d9-88a40685d0b4">Class: geosrs:Comet</title>
-<table id="_489789ab-4468-cdaa-0c3d-b6a3deaba4d1"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<table id="_98eba3f6-ec40-8574-b1de-77eb0196e94e"><colgroup><col width="50%"/><col width="50%"/></colgroup>
 <name id="_c2c6a295-d675-1b86-15c6-89de7349e924">geosrs:Comet</name>
-<tbody><tr id="_271ed9a2-e02b-6dec-08e4-ab9b653f8813"><td id="_a0c57516-58f8-e0e0-5b20-a281518a7b99" valign="middle" align="left">URI</td>
-<td id="_c44f5330-757f-b02d-ae10-593cfa505b17" valign="middle" align="left"><link target="https://w3id.org/geosrs/planet/Comet"/></td>
-</tr><tr id="_47007c4e-d0eb-2515-9ac5-7330ce3b68d1"><td id="_76c2b4e2-c5b2-dd7d-79dd-753b2ae4cff2" valign="middle" align="left">Super-classes</td>
-<td id="_47c1dc87-c535-7bb3-ca12-8ab95ea20ed8" valign="middle" align="left"><link target="https://w3id.org/geosrs/planet/InterstellarBody">InterstellarBody</link></td>
+<tbody><tr id="_19af4dcc-4784-3920-ee9a-0a216b1d18c4"><td id="_c4e9e42a-4b6a-e93a-1422-a4bc3a5178f9" valign="middle" align="left">URI</td>
+<td id="_4584858d-00b4-94c8-b459-03ddde9d0686" valign="middle" align="left"><link target="https://w3id.org/geosrs/planet/Comet"/></td>
 </tr></tbody>
 </table>
 </clause>
@@ -5314,38 +5306,32 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 </table>
 </clause>
 
-<clause id="_c1a76cca-b472-4349-9281-6608f11d7b6b" obligation="normative">
+<clause id="_6d12cfcf-972a-b95f-8f0a-57ac1542b826" obligation="normative">
 <title id="_ff3627a9-120c-1b13-bb5c-27210116f43d">Class: geosrs:Moon</title>
-<table id="_afc31f09-4e8d-ec0e-0c05-41f96f0f1894"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<table id="_b80dc832-f4e0-97b8-5e5a-68fb6b1f42a0"><colgroup><col width="50%"/><col width="50%"/></colgroup>
 <name id="_e6169de2-4184-fe3e-c5de-a6bcb4ae7379">geosrs:Moon</name>
-<tbody><tr id="_e4957a24-e2a7-a1c1-99bd-e6b746d8244b"><td id="_931ea1dc-586c-64c8-6360-64ecf26adfa4" valign="middle" align="left">URI</td>
-<td id="_0684ec1f-c2f2-3060-8162-8edc965df9d7" valign="middle" align="left"><link target="https://w3id.org/geosrs/planet/Moon"/></td>
-</tr><tr id="_82d841f8-ca7a-ba9b-98d6-1ae4a6c6d414"><td id="_df4f8dd2-99a5-7b14-d2b9-824873852696" valign="middle" align="left">Super-classes</td>
-<td id="_9dcbc997-e7f5-9ff5-d4e3-29d4c8d52fcb" valign="middle" align="left"><link target="https://w3id.org/geosrs/planet/InterstellarBody">InterstellarBody</link></td>
+<tbody><tr id="_89b997d2-da07-c32d-4a66-f25e7f7d1846"><td id="_a9f553e8-e888-45fa-1e14-d6228516ac03" valign="middle" align="left">URI</td>
+<td id="_17805d1d-bfc4-91ff-9fdf-89426d19353b" valign="middle" align="left"><link target="https://w3id.org/geosrs/planet/Moon"/></td>
 </tr></tbody>
 </table>
 </clause>
 
-<clause id="_60851234-2b2b-9db2-909b-733f5f51fa13" obligation="normative">
+<clause id="_e178c194-2dc4-9d7e-4b70-61fc9e51f0c7" obligation="normative">
 <title id="_a8124002-a086-3954-0753-c10077a28a1c">Class: geosrs:NaturalSatellite</title>
-<table id="_b8ba1315-a410-b459-6d13-e3527f2972a9"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<table id="_c8a18a63-a6df-8ee1-d095-f12267103b10"><colgroup><col width="50%"/><col width="50%"/></colgroup>
 <name id="_44ac0214-f5cb-bff7-fb9b-dda4d9475219">geosrs:NaturalSatellite</name>
-<tbody><tr id="_5858538f-ec82-94a2-d06a-c79a59e3b167"><td id="_be7ce9b3-1527-5478-6ea6-8fc8a207268c" valign="middle" align="left">URI</td>
-<td id="_7c9fa121-c84f-ddde-c6bb-aaac06cd61ac" valign="middle" align="left"><link target="https://w3id.org/geosrs/planet/NaturalSatellite"/></td>
-</tr><tr id="_d7fe28f9-4429-ed53-29d9-07afe315358b"><td id="_d881e683-228b-bc6c-f9b7-03e63714fdda" valign="middle" align="left">Super-classes</td>
-<td id="_ce3dc212-8d28-fdda-eda6-b8333c75b74d" valign="middle" align="left"><link target="https://w3id.org/geosrs/planet/Satellite">Satellite</link></td>
+<tbody><tr id="_12c2420b-bcc8-b1c3-b54b-8949342e7aad"><td id="_f468a0eb-0733-ad50-5ed6-23941c08f646" valign="middle" align="left">URI</td>
+<td id="_f0b04727-170c-bbbd-dd1e-d28ce5c816e6" valign="middle" align="left"><link target="https://w3id.org/geosrs/planet/NaturalSatellite"/></td>
 </tr></tbody>
 </table>
 </clause>
 
-<clause id="_d2863acb-3516-887b-1e3e-93823739d2c6" obligation="normative">
+<clause id="_a7d90214-2e14-1a83-96ea-20ae965ea644" obligation="normative">
 <title id="_faebb898-fe25-517c-daa8-4249540cafe6">Class: geosrs:Planet</title>
-<table id="_510e449f-a2e2-72fe-f90d-c58bd8b859f8"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<table id="_15113bd3-0e82-3cf9-82b6-af1084e682c2"><colgroup><col width="50%"/><col width="50%"/></colgroup>
 <name id="_63dd5a43-b4e1-cd37-861e-7972a7d1c576">geosrs:Planet</name>
-<tbody><tr id="_6e8507d6-4153-c2fc-de7c-c818653558f4"><td id="_e84e5313-4ad3-1fe4-5b8e-2ffbda7b26ec" valign="middle" align="left">URI</td>
-<td id="_2ff3dbe5-9976-8240-6b0e-b6b2ceb8da6c" valign="middle" align="left"><link target="https://w3id.org/geosrs/planet/Planet"/></td>
-</tr><tr id="_835e26ad-ea1c-b363-35cc-c436e8bf3051"><td id="_81bc1c7a-e42e-08af-acd0-e79279fb024b" valign="middle" align="left">Super-classes</td>
-<td id="_d6be0760-4135-d92c-0d48-02b95b96015b" valign="middle" align="left"><link target="https://w3id.org/geosrs/planet/InterstellarBody">InterstellarBody</link></td>
+<tbody><tr id="_4b1f5a4d-be93-1d8f-713f-a65c9179744b"><td id="_8877b8f7-7582-d883-84b9-0c42669135e6" valign="middle" align="left">URI</td>
+<td id="_830833ab-3acb-67b5-03a8-1ef61cc43285" valign="middle" align="left"><link target="https://w3id.org/geosrs/planet/Planet"/></td>
 </tr></tbody>
 </table>
 </clause>
@@ -5370,24 +5356,12 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 </table>
 </clause>
 
-<clause id="_0bbba490-8326-5ecf-d47a-c4070ac2c6cb" obligation="normative">
+<clause id="_acd42a1e-ce39-ddf9-90c3-f497347f7dad" obligation="normative">
 <title id="_1208f606-cf10-12e3-ccf6-1634a954e7d6">Class: geosrs:Star</title>
-<table id="_49ab2b07-9ca2-84bf-9bd0-a4a5ab6ddd7a"><colgroup><col width="50%"/><col width="50%"/></colgroup>
+<table id="_c2bb610f-9a6f-060a-b48b-7d5c87a15628"><colgroup><col width="50%"/><col width="50%"/></colgroup>
 <name id="_b3d421f2-8c39-3f70-f11e-33f62f5b07ad">geosrs:Star</name>
-<tbody><tr id="_54f52277-bb98-078a-696d-64ead46b4c41"><td id="_17447abf-e139-0813-0ade-4abcac1aec48" valign="middle" align="left">URI</td>
-<td id="_db1a0e96-8cef-c2cf-27cf-15376dbaafb5" valign="middle" align="left"><link target="https://w3id.org/geosrs/planet/Star"/></td>
-</tr><tr id="_20a5fa47-1d9f-fb51-689f-4a75d484764a"><td id="_ffd552d6-e65b-eb01-fed7-c9dbfffd5598" valign="middle" align="left">Super-classes</td>
-<td id="_e73982a6-fd93-c810-98c7-76158709b6f1" valign="middle" align="left"><link target="https://w3id.org/geosrs/planet/InterstellarBody">InterstellarBody</link></td>
-</tr></tbody>
-</table>
-</clause>
-
-<clause id="_73446a55-1439-5c82-e222-04a59207f1c2" obligation="normative">
-<title id="_c6362542-67aa-3ea3-2eb7-9e8d206ca085">Class: geosrs:Satellite</title>
-<table id="_c088e1ab-2173-e60e-be44-43d7fde23dca"><colgroup><col width="50%"/><col width="50%"/></colgroup>
-<name id="_ea3e18f8-68bc-262b-0ae2-4160f8dc04b4">geosrs:Satellite</name>
-<tbody><tr id="_6175c416-ffe0-1ef7-e59b-125a0708d6cb"><td id="_b41e4f81-4128-a587-979c-f7d98aab93c0" valign="middle" align="left">URI</td>
-<td id="_e3b1c3de-1227-9460-f691-e91d507a4a0d" valign="middle" align="left"><link target="https://w3id.org/geosrs/planet/Satellite"/></td>
+<tbody><tr id="_535d963a-5f09-0786-7348-15928d11a40e"><td id="_82fe14b6-46d6-4324-b2fe-a88f1d8b8017" valign="middle" align="left">URI</td>
+<td id="_f2382c45-aea2-04ef-153c-38e431177c7a" valign="middle" align="left"><link target="https://w3id.org/geosrs/planet/Star"/></td>
 </tr></tbody>
 </table>
 </clause>
@@ -5977,7 +5951,7 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 
 
 
-</sections><annex id="_f8fcd248-2915-26c8-31cb-416423254076" obligation="normative">
+</sections><annex id="_10315bbc-6304-5c5d-0303-c6708e4f610c" obligation="normative">
 <title id="_470614e0-369e-cd47-ac8c-e0c157b1a785">Abstract Test Suite</title>
 <floating-title id="_6c4825b5-5b33-43be-8438-e76319911fee" depth="2" type="floating-title">A.0. Overview</floating-title>
 <p id="_9b50ea30-51c1-09e4-2492-039aaaa61290">This Annex lists tests for the Conformance Classes defined in the main body sections of this Specification with links to their Requirements and test purpose method and type. Conformance classes may be used to signify the compatibility of a given implementation to parts of the CRS Ontology standard. They may be stated as part of a SPARQL 1.1 Service Description  <xref target="SPARQLSERVDESC"/> .</p>
@@ -6420,19 +6394,19 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 </clause>
 </clause>
 
-<clause id="_c3cf785e-3f85-8363-262c-f833a8b6ee01" obligation="normative">
+<clause id="_29820abf-5349-e7ba-6fb0-ceb7d15c7771" obligation="normative">
 <title id="_49a27591-880a-65a8-a568-ef56075e8e4d">Conformance Class: Planet</title>
 <requirement id="_5aee18c6-2171-6081-8c62-0e06c2bc8645" model="ogc" type="conformanceclass" anchor="/conf/planet">
 <title>12-planet_module.adoc</title>
 <identifier>/conf/planet</identifier><classification><tag>target</tag><value>/req/planet</value></classification><requirement id="_dffbb28e-d824-cd73-89b0-115d1d93f6bd" model="ogc" type="abstracttest"> <identifier>/conf/planet/Interstellar_Body</identifier></requirement>
 </requirement>
 
-<clause id="_4d942e6c-fd64-dec3-9428-74165fef34cb" obligation="normative">
+<clause id="_dd48f057-2190-b25e-8fc1-06ea74e4044e" obligation="normative">
 <title id="_ab1d6bb3-9173-9ca0-74be-bdfa60a7237c">Interstellar Body</title>
-<requirement id="_86c6054e-a046-2496-4070-95dcfbe432e6" model="ogc" type="abstracttest" anchor="/conf/planet/Interstellar_Body"> <identifier>/conf/planet/Interstellar_Body</identifier><classification><tag>target</tag><value>/req/planet/Interstellar_Body</value></classification><component id="_6a9034ec-bec0-d678-be54-cabb8cbf39c7" class="test-purpose"><p id="_b29c7a45-819d-1cdf-a5c4-2d89e4baf3bb">Check conformance with this requirement</p>
-</component><component id="_5236f863-f07f-def6-cf99-970d2d36935b" class="test-method"><p id="_91a87152-3269-f2df-49cc-0a447e969977">Verify that queries involving <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>ArtificialSatellite</referenceFrom></locality></localityStack><display-text>geosrs:ArtificialSatellite</display-text></eref> <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>Asteroid</referenceFrom></locality></localityStack><display-text>geosrs:Asteroid</display-text></eref> <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>Comet</referenceFrom></locality></localityStack><display-text>geosrs:Comet</display-text></eref> <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>DwarfPlanet</referenceFrom></locality></localityStack><display-text>geosrs:DwarfPlanet</display-text></eref> <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>InterstellarBody</referenceFrom></locality></localityStack><display-text>geosrs:InterstellarBody</display-text></eref> <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>Moon</referenceFrom></locality></localityStack><display-text>geosrs:Moon</display-text></eref> <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>NaturalSatellite</referenceFrom></locality></localityStack><display-text>geosrs:NaturalSatellite</display-text></eref> <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>Planet</referenceFrom></locality></localityStack><display-text>geosrs:Planet</display-text></eref> <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>PlanetStatus</referenceFrom></locality></localityStack><display-text>geosrs:PlanetStatus</display-text></eref> <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>Plutoid</referenceFrom></locality></localityStack><display-text>geosrs:Plutoid</display-text></eref> <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>Star</referenceFrom></locality></localityStack><display-text>geosrs:Star</display-text></eref> <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>Satellite</referenceFrom></locality></localityStack><display-text>geosrs:Satellite</display-text></eref>  return the correct result on a test dataset.</p>
+<requirement id="_36428560-63e3-b62d-4425-a185bdf4763f" model="ogc" type="abstracttest" anchor="/conf/planet/Interstellar_Body"> <identifier>/conf/planet/Interstellar_Body</identifier><classification><tag>target</tag><value>/req/planet/Interstellar_Body</value></classification><component id="_6a9034ec-bec0-d678-be54-cabb8cbf39c7" class="test-purpose"><p id="_b29c7a45-819d-1cdf-a5c4-2d89e4baf3bb">Check conformance with this requirement</p>
+</component><component id="_ae3d891b-aae9-4948-bc8a-0682c4ee1c70" class="test-method"><p id="_609167be-176e-c725-9600-5f21ee9cf505">Verify that queries involving <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>ArtificialSatellite</referenceFrom></locality></localityStack><display-text>geosrs:ArtificialSatellite</display-text></eref> <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>Asteroid</referenceFrom></locality></localityStack><display-text>geosrs:Asteroid</display-text></eref> <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>Comet</referenceFrom></locality></localityStack><display-text>geosrs:Comet</display-text></eref> <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>DwarfPlanet</referenceFrom></locality></localityStack><display-text>geosrs:DwarfPlanet</display-text></eref> <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>InterstellarBody</referenceFrom></locality></localityStack><display-text>geosrs:InterstellarBody</display-text></eref> <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>Moon</referenceFrom></locality></localityStack><display-text>geosrs:Moon</display-text></eref> <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>NaturalSatellite</referenceFrom></locality></localityStack><display-text>geosrs:NaturalSatellite</display-text></eref> <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>Planet</referenceFrom></locality></localityStack><display-text>geosrs:Planet</display-text></eref> <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>PlanetStatus</referenceFrom></locality></localityStack><display-text>geosrs:PlanetStatus</display-text></eref> <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>Plutoid</referenceFrom></locality></localityStack><display-text>geosrs:Plutoid</display-text></eref> <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>Star</referenceFrom></locality></localityStack><display-text>geosrs:Star</display-text></eref>  return the correct result on a test dataset.</p>
 </component><component id="_a70594cc-420c-5e50-43ba-65331bd08539" class="test-method-type"><p id="_80130081-93ab-e8d6-529d-bb5a4fb7c8e8">Capabilities</p>
-</component><component id="_8341488d-be17-6aa4-13fc-0ec4a68aebaf" class="reference"><p id="_10333174-8084-d6a0-95d8-d23213b06af2"><eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>ArtificialSatellite</referenceFrom></locality></localityStack><display-text>geosrs:ArtificialSatellite</display-text></eref> <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>Asteroid</referenceFrom></locality></localityStack><display-text>geosrs:Asteroid</display-text></eref> <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>Comet</referenceFrom></locality></localityStack><display-text>geosrs:Comet</display-text></eref> <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>DwarfPlanet</referenceFrom></locality></localityStack><display-text>geosrs:DwarfPlanet</display-text></eref> <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>InterstellarBody</referenceFrom></locality></localityStack><display-text>geosrs:InterstellarBody</display-text></eref> <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>Moon</referenceFrom></locality></localityStack><display-text>geosrs:Moon</display-text></eref> <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>NaturalSatellite</referenceFrom></locality></localityStack><display-text>geosrs:NaturalSatellite</display-text></eref> <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>Planet</referenceFrom></locality></localityStack><display-text>geosrs:Planet</display-text></eref> <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>PlanetStatus</referenceFrom></locality></localityStack><display-text>geosrs:PlanetStatus</display-text></eref> <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>Plutoid</referenceFrom></locality></localityStack><display-text>geosrs:Plutoid</display-text></eref> <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>Star</referenceFrom></locality></localityStack><display-text>geosrs:Star</display-text></eref> <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>Satellite</referenceFrom></locality></localityStack><display-text>geosrs:Satellite</display-text></eref></p>
+</component><component id="_3259c99e-9d02-c8c8-9a1c-1cf37b63a22a" class="reference"><p id="_22104976-4e32-026d-bf47-75bdfb89f499"><eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>ArtificialSatellite</referenceFrom></locality></localityStack><display-text>geosrs:ArtificialSatellite</display-text></eref> <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>Asteroid</referenceFrom></locality></localityStack><display-text>geosrs:Asteroid</display-text></eref> <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>Comet</referenceFrom></locality></localityStack><display-text>geosrs:Comet</display-text></eref> <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>DwarfPlanet</referenceFrom></locality></localityStack><display-text>geosrs:DwarfPlanet</display-text></eref> <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>InterstellarBody</referenceFrom></locality></localityStack><display-text>geosrs:InterstellarBody</display-text></eref> <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>Moon</referenceFrom></locality></localityStack><display-text>geosrs:Moon</display-text></eref> <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>NaturalSatellite</referenceFrom></locality></localityStack><display-text>geosrs:NaturalSatellite</display-text></eref> <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>Planet</referenceFrom></locality></localityStack><display-text>geosrs:Planet</display-text></eref> <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>PlanetStatus</referenceFrom></locality></localityStack><display-text>geosrs:PlanetStatus</display-text></eref> <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>Plutoid</referenceFrom></locality></localityStack><display-text>geosrs:Plutoid</display-text></eref> <eref bibitemid="Class_ geosrs" citeas=""><localityStack><locality type="anchor"><referenceFrom>Star</referenceFrom></locality></localityStack><display-text>geosrs:Star</display-text></eref></p>
 </component>
 </requirement>
 </clause>
@@ -7456,16 +7430,16 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 </tr></tbody>
 </table>
 </clause>
-</annex><annex id="_8e69fc11-7ccc-d760-7740-b001ed4b87d8" obligation="informative">
+</annex><annex id="_34cd7fd4-1c32-f108-2e7d-4f1b6784bd89" obligation="informative">
 <title id="_8dd35ff6-f41c-83ae-58df-a3465fa8defb">SHACL Shapes</title>
 <p id="_c680c9aa-8b84-d49f-95ce-9621f0b3e984">This section introduces SHACL shapes which can be used to verify graphs encoded using the vocabulary defined in this specification.</p>
 
 <floating-title id="_2e1e93d4-a76e-4318-c6c8-bc1034df4ab7" depth="2" type="floating-title">Overview</floating-title>
 <p id="_d5c3f150-68ff-eaac-2e6a-46801f7f6ef6">SHACL shapes in this specification are subdivided by the same module designations as used previously. In order to verify a graph a single validation file of SHACL shapes is provided alongside this specification.</p>
 
-<clause id="_8bacb5cd-43d6-8fd8-71de-9a00161de184" obligation="informative">
+<clause id="_f0fa7f0b-559b-b54b-7241-0dbc211c463e" obligation="informative">
 <title id="_9a0e911f-c5a0-0e8f-1eb3-d4f9ef8b1256">SHACL Shapes: Core</title>
-<table id="_9bcf2ae6-360f-1381-b050-4bd9c0baa13e">
+<table id="_45527325-22c8-9f09-4f48-440e8bbc7159">
 <name id="_58b39019-5f38-1fd3-dc61-a9396cbd2d73">Core</name>
 <thead><tr id="_2df30484-e5c1-1ee2-fbb2-fcb4a5c43572"><th id="_ce37facd-1cda-d2b9-edb0-4d592ae02421" valign="middle" align="left">Label</th>
 <th id="_d477d23d-8e1a-a0f0-9d44-eca16e15f45d" valign="middle" align="left">TargetNode</th>
@@ -7489,18 +7463,18 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 <td id="_ac1bb55b-a300-ac18-c82d-49e42b97e46c" valign="middle" align="left">1</td>
 <td id="_cff79fc4-0784-1955-dd90-02f062df5d93" valign="middle" align="left">-</td>
 <td id="_6acac330-1f45-bc34-985f-aa69da6902b5" valign="middle" align="left">A coordinate reference system should have at least one area of use</td>
-</tr><tr id="_0d1cd33d-a944-5f94-3015-6f73eff199bb"><td id="_4ae452ad-f813-e325-cc86-231ac105ad83" valign="middle" align="left">Shape S3</td>
+</tr><tr id="_4e33b855-21fa-f85a-f747-cf000aee7153"><td id="_4ae452ad-f813-e325-cc86-231ac105ad83" valign="middle" align="left">Shape S3</td>
 <td id="_139ebffb-0c01-60fb-739f-2f3f70690f7a" valign="middle" align="left">geosrs:CRS</td>
 <td id="_70be993d-2e97-7be9-72fc-ca9d5e01c348" valign="middle" align="left">geosrs:datum</td>
 <td id="_9ba1ff95-69c8-cc50-2526-86706e161f3e" valign="middle" align="left">geosrs:Datum</td>
-<td id="_36f83387-997f-0487-f47b-86017b81ad45" valign="middle" align="left">1</td>
+<td id="_c8cbdba8-0e1d-7399-a1a6-6482f4bb3e4e" valign="middle" align="left">-</td>
 <td id="_e938bb15-c1bc-ed52-e350-4401922e4b53" valign="middle" align="left">1</td>
 <td id="_b21dd757-f532-9808-068d-9d6b0f45b242" valign="middle" align="left">A coordinate reference system should have exactly one datum</td>
-</tr><tr id="_f6e7c729-ebf4-cfcf-cf64-86ec144129e3"><td id="_9da43f3d-e483-edcb-5678-1955f1b8abcb" valign="middle" align="left">Shape S4</td>
+</tr><tr id="_eb73be71-20b6-9ce0-227d-cc6cfe5fe7b9"><td id="_9da43f3d-e483-edcb-5678-1955f1b8abcb" valign="middle" align="left">Shape S4</td>
 <td id="_0d79d859-c01f-f7a6-dfbe-ac3c6f47a36c" valign="middle" align="left">geosrs:CRS</td>
 <td id="_91fe9b10-d6e5-3395-0692-a9e53a75aa39" valign="middle" align="left">geosrs:datumEnsemble</td>
 <td id="_8cec13ef-aa0a-6931-1c45-b4001973da76" valign="middle" align="left">geosrs:DatumEnsemble</td>
-<td id="_9a92fb2f-9208-ce8a-e818-dc500d186ccb" valign="middle" align="left">1</td>
+<td id="_76f9c20e-db53-d2b1-41da-55919ca60a38" valign="middle" align="left">-</td>
 <td id="_0a247898-9474-4dfd-b258-635981806326" valign="middle" align="left">1</td>
 <td id="_80ac4da4-d7d3-cb26-fdc4-8f085a032dec" valign="middle" align="left">A coordinate reference system may have exactly one datum ensemble</td>
 </tr><tr id="_d7b6030f-45e2-30ba-fc14-10c07d893bac"><td id="_a777d226-9511-63d6-9fab-92b364944c2c" valign="middle" align="left">Shape S5</td>
@@ -7593,9 +7567,9 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 </table>
 </clause>
 
-<clause id="_c87b7ca9-0dde-9f28-c8e2-483b7b94b518" obligation="informative">
+<clause id="_a82d5aae-020d-9ce6-5e6d-1af7d4e1403c" obligation="informative">
 <title id="_a0eb8f7d-275f-b43e-c8f1-ea640f6fdbbf">SHACL Shapes: Cs</title>
-<table id="_857baf6d-8435-06b7-751d-c108e3d3513d">
+<table id="_ab1fe9bd-cab2-ce62-9339-e1f407cbaaec">
 <name id="_b3e6631c-2694-f9d3-38c4-777cf38b1804">Cs</name>
 <thead><tr id="_b99e0039-6edf-df1b-b5c0-6bb7a3673494"><th id="_4501a8e7-5c3a-ba97-7044-cd739f74ba59" valign="middle" align="left">Label</th>
 <th id="_b0248e34-8ba5-460f-41ea-c0219a495ed3" valign="middle" align="left">TargetNode</th>
@@ -7605,20 +7579,20 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 <th id="_541bef88-3702-5c30-f6bb-e0eb580f3d71" valign="middle" align="left">MaxCount</th>
 <th id="_39c78d70-10d2-d7f9-ba13-13e5d032d2a9" valign="middle" align="left">Comment</th>
 </tr></thead>
-<tbody><tr id="_e37677e5-469c-bf74-dbb3-89821ba8424e"><td id="_66e31511-c2f7-1ac4-c95d-79b64ac5afcc" valign="middle" align="left">Shape S1</td>
+<tbody><tr id="_24d803f4-40a9-8761-9914-34c6c8f99db7"><td id="_66e31511-c2f7-1ac4-c95d-79b64ac5afcc" valign="middle" align="left">Shape S1</td>
 <td id="_3c3d597a-72b7-19ac-e0fa-e7c74a37de68" valign="middle" align="left">geosrs:3DCoordinateSystem</td>
 <td id="_9d5ac611-db3f-4fde-e91a-41c1230df9c8" valign="middle" align="left">geosrs:axis</td>
 <td id="_05b01933-2711-c827-beff-2f5a308d65f2" valign="middle" align="left">geosrs:CoordinateSystemAxis</td>
 <td id="_fb20104f-d1f9-8806-fba9-93413c08425b" valign="middle" align="left">3</td>
 <td id="_8c20c49d-5e4b-ea19-443b-44431a99aec5" valign="middle" align="left">-</td>
-<td id="_bdffae27-92ad-d582-36d9-ea8c49d7a1f5" valign="middle" align="left">A 3D coordinate system should have at least three axis</td>
-</tr><tr id="_4510a016-bb23-20be-0d6b-c63c90f198f8"><td id="_82db4ec7-3af7-2952-e746-9ad839b69576" valign="middle" align="left">Shape S2</td>
+<td id="_a1bae7ac-5460-ed76-03c5-87e2dd98d602" valign="middle" align="left">A 3D coordinate system should have at least three axes</td>
+</tr><tr id="_72df6ca7-ec45-1d02-2f01-308ea09fb1aa"><td id="_82db4ec7-3af7-2952-e746-9ad839b69576" valign="middle" align="left">Shape S2</td>
 <td id="_209de16f-40d5-d108-e483-e9bb7fb314f1" valign="middle" align="left">geosrs:ConicalCoordinateSystem</td>
 <td id="_2f52d61a-8e90-2e60-7dfa-3b3201fc4475" valign="middle" align="left">geosrs:axis</td>
 <td id="_681cc047-9d0e-ff1e-1b8d-ce2d3cf47f34" valign="middle" align="left">geosrs:CoordinateSystemAxis</td>
 <td id="_125faf1f-4fd6-da81-3fc7-2ca4c583f8cb" valign="middle" align="left">3</td>
 <td id="_cfd82e26-822b-d7cd-c5c9-d50342523c59" valign="middle" align="left">-</td>
-<td id="_37481cc9-5111-65ae-2f81-6bef6e8cd844" valign="middle" align="left">A conical coordinate system should have at least three axis</td>
+<td id="_25d9de3a-5d2e-6788-0df1-b3b9299d35c6" valign="middle" align="left">A conical coordinate system should have at least three axes</td>
 </tr><tr id="_f51ae6f7-fedb-58f3-856c-7927a139a0a2"><td id="_a45f99ad-d5f2-d527-c0e7-c58aa53a0703" valign="middle" align="left">Shape S3</td>
 <td id="_a7bc1bde-fd07-cf62-802d-ef3867a54401" valign="middle" align="left">geosrs:CoordinateSystem</td>
 <td id="_e9183f7b-fa79-aa91-6535-6b75e0ed03d0" valign="middle" align="left">geosrs:axis</td>
@@ -7633,13 +7607,13 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 <td id="_3a20f2c8-42c0-a6d9-86fa-893c29913c1a" valign="middle" align="left">1</td>
 <td id="_bbd3fd27-db27-935b-e8f6-8eb758d67c4d" valign="middle" align="left">1</td>
 <td id="_5fe86090-2694-cd3e-0bf5-6cb480f03cdc" valign="middle" align="left">A coordinate system axis should have exactly one axis direction</td>
-</tr><tr id="_c2d21c32-a55a-5487-7f11-15e451d3501e"><td id="_3fe17c71-d897-d5d5-62a6-ca75eb79081c" valign="middle" align="left">Shape S5</td>
+</tr><tr id="_845d38f7-df9f-c8fc-5dad-ead994bf2552"><td id="_3fe17c71-d897-d5d5-62a6-ca75eb79081c" valign="middle" align="left">Shape S5</td>
 <td id="_8311ee47-c242-d6d3-bb32-dc6c3b9ae788" valign="middle" align="left">geosrs:CylindricalCoordinateSystem</td>
 <td id="_04cb40fb-c09a-8393-f11c-da099be949af" valign="middle" align="left">geosrs:axis</td>
 <td id="_48d65563-1f25-1546-a5cd-e8b182be6e87" valign="middle" align="left">geosrs:CoordinateSystemAxis</td>
 <td id="_617f6431-e3bd-34c6-50af-93522fca38e8" valign="middle" align="left">3</td>
 <td id="_0195b52e-ef77-81c1-4992-07ec83328844" valign="middle" align="left">-</td>
-<td id="_8e326cb7-0144-db2f-47c8-66af9d532be3" valign="middle" align="left">A cylindrical coordinate system should have at least three axis</td>
+<td id="_5f5c9d2d-6c63-cac6-6d5e-a6319656ee75" valign="middle" align="left">A cylindrical coordinate system should have at least three axes</td>
 </tr><tr id="_e69d990a-0284-eb19-0f6d-4dee51612831"><td id="_010a2914-848f-9066-2d7e-ca9fb52f6a2e" valign="middle" align="left">Shape S6</td>
 <td id="_6acc1272-0647-f79c-1f3f-6e1f29458584" valign="middle" align="left">geosrs:DateTimeTemporalCoordinateSystem</td>
 <td id="_55b130f6-7b9b-9b4f-73f3-a9fa7f23304a" valign="middle" align="left">geosrs:axis</td>
@@ -7647,13 +7621,13 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 <td id="_ced2da28-f84d-929b-c455-53d86576b066" valign="middle" align="left">1</td>
 <td id="_b796a724-2a48-d43e-4b2a-db2461d29f66" valign="middle" align="left">1</td>
 <td id="_3bc03210-2cd6-a645-8522-ba776a22a3ab" valign="middle" align="left">A date time temporal coordinate system should have exactly one axis</td>
-</tr><tr id="_e95eb9ce-56b2-a4ee-1523-104e1b3686cf"><td id="_815e49de-c0a0-16b4-b3ea-602ab38749e1" valign="middle" align="left">Shape S7</td>
+</tr><tr id="_57113929-3d20-5f55-2510-506ec20b5930"><td id="_815e49de-c0a0-16b4-b3ea-602ab38749e1" valign="middle" align="left">Shape S7</td>
 <td id="_878dc9dd-1a90-d22c-d4fb-3f58ad6b5229" valign="middle" align="left">geosrs:PlanarCoordinateSystem</td>
 <td id="_3596d775-9a8e-ba12-1d70-4d5764f370d5" valign="middle" align="left">geosrs:axis</td>
 <td id="_fe094734-7e6f-92d2-1dce-b56c55ee936c" valign="middle" align="left">geosrs:CoordinateSystemAxis</td>
 <td id="_b060db8a-34a4-7a8e-7c57-6e18878636ab" valign="middle" align="left">2</td>
 <td id="_ac805fb8-d2e9-86a7-486b-3788c726ce73" valign="middle" align="left">-</td>
-<td id="_05760f0d-de0e-723d-5ddf-4c6207b10ace" valign="middle" align="left">A planar coordinate system should have at least two axis</td>
+<td id="_ddf7e7fe-0fc4-3734-d2de-f036def26535" valign="middle" align="left">A planar coordinate system should have at least two axes</td>
 </tr><tr id="_a0c02a9d-234c-9628-699d-7c4618a38ac8"><td id="_9fbeec16-6966-9256-c4b5-5b91e43718f9" valign="middle" align="left">Shape S8</td>
 <td id="_ce81cf06-8964-3a23-ebaf-f73872243499" valign="middle" align="left">geosrs:TemporalCoordinateSystem</td>
 <td id="_d4ba3e21-0cd2-5874-b36f-067451530463" valign="middle" align="left">geosrs:axis</td>
@@ -7744,11 +7718,11 @@ Foster, I., Kesselman, C.. Morgan Kaufmann, San Francisco (1999).</formattedref>
 <bibitem anchor="Czajkowski01" id="_60ff1838-3cdf-6194-2c03-ee266d197a0a"><formattedref format="application/x-isodoc+xml"><em>Grid Information Services for Distributed Resource Sharing.</em> 
 Czajkowski, K., Fitzgerald, S., Foster, I., Kesselman, C. In: 10th IEEE International Symposium on High
 Performance Distributed Computing, pp. 181–184. IEEE Press, New York (2001)</formattedref><docidentifier>Grid Information Services for Distributed Resource Sharing</docidentifier></bibitem>
-</references><references id="_8af47e6a-c068-5c22-56ef-bbc15f27ae91" normative="false" obligation="informative">
+</references><references id="_91bad85d-08ac-3cb4-2f1c-8415edff6320" normative="false" obligation="informative">
 <title id="_50ceb1e1-516f-2673-d73d-4f0c58b4d023">Bibliography</title>
 <note id="_fbd336b0-a344-3030-55c6-1975921a4963"><p id="_a4639bb5-dce4-2157-2d6a-6229500fcabe">The TC has approved Springer LNCS as the official document citation type. Springer LNCS is widely used in technical and computer science journals and other publications For citations in the text please use square brackets and consecutive numbers: [1], [2], [3] Actual References: [n] Journal: Author Surname, A.: Title. Publication Title. Volume number, Issue number, Pages Used (Year Published)</p>
-</note><bibitem id="_9e51d62c-61b3-0b42-00cb-bcb19cb6881d" type="standard" schema-version="v1.2.9" anchor="iso19142">
-  <fetched>2025-09-22</fetched>
+</note><bibitem id="_b24b5341-09bc-c50b-b7b4-14725c8e56b7" type="standard" schema-version="v1.2.9" anchor="iso19142">
+  <fetched>2025-09-24</fetched>
   
 <title type="title-intro" format="text/plain" language="en" script="Latn">Geographic information</title>
 
@@ -7795,7 +7769,7 @@ Performance Distributed Computing, pp. 181–184. IEEE Press, New York (2001)</f
   </copyright>
   <relation type="instanceOf">
     <bibitem type="standard">
-      <fetched>2025-09-22</fetched>
+      <fetched>2025-09-24</fetched>
       
 <title type="title-intro" format="text/plain" language="en" script="Latn">Geographic information</title>
 
@@ -7877,8 +7851,8 @@ Performance Distributed Computing, pp. 181–184. IEEE Press, New York (2001)</f
   <formattedref format="application/x-isodoc+xml">Berners-Lee, T., Fielding, R., Masinter, L.: <strong>IETF RFC 3986 — Uniform Resource Identifier (URI): Generic Syntax,</strong> <link target="http://tools.ietf.org/rfc/rfc3986.txt"/></formattedref>
   <docidentifier>RFC3986</docidentifier>
   <docnumber>3986</docnumber>
-</bibitem><bibitem id="_ba2c397f-60dd-36ad-ecf2-33880d2abe75" type="article" schema-version="v1.2.9" anchor="ijgi11020117">
-  <fetched>2025-09-22</fetched>
+</bibitem><bibitem id="_69cbd56b-247c-666e-e09a-e78260313ef1" type="article" schema-version="v1.2.9" anchor="ijgi11020117">
+  <fetched>2025-09-24</fetched>
   
 <title type="main" format="text/plain" script="Latn">GeoSPARQL 1.1: Motivations, Details and Applications of the Decadal Update to the Most Important Geospatial LOD Standard</title>
 

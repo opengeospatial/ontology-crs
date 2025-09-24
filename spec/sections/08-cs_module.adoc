@@ -5,5 +5,7 @@
 
 This clause establishes the *CS* Requirements class, with IRI `/req/cs`, which has a corresponding Conformance Class, *CS*, with IRI `/conf/cs`.
 
+image::cs.png[]
+
 The coordinate system module introduces different types of coordinate systems which are dinstinguished in geospatial science and applications.
 Coordinate systems are distinguished by their area of use, i.e planetary or interstellar and by their multidimensionality.

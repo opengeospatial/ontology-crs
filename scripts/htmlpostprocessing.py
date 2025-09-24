@@ -14,10 +14,11 @@ directory = os.fsencode(abspath)
 imglist = os.listdir(directory)
 for img in imglist:
     print(img)
-    filename= os.fsdecode(img)
-    basename=filename[0:filename.rfind('.')]
-    print("Exists? "+basename+"/index.html")
-    if os.path.exists(basename+"/index.html"):
-        replaceTextInFile(basename+"/index.html","<div style=\"width:500px; height:50px; background-color: lightgrey; border:solid 2px grey; padding:10px;margin-bottom:5px; text-align:center;\">Pictures say 1,000 words</div>","<div style=\"background-color: lightgrey; border:solid 2px grey; padding:10px;margin-bottom:5px; text-align:center;\"><img src=\"../images/"+filename+"\"/></div>")
+    if img.endswith(".png"):
+        filename= os.fsdecode(img)
+        basename=filename[0:filename.rfind('.')]
+        print("Exists? "+basename+"/index.html")
+        if os.path.exists(basename+"/index.html"):
+            replaceTextInFile(basename+"/index.html","<div style=\"width:500px; height:50px; background-color: lightgrey; border:solid 2px grey; padding:10px;margin-bottom:5px; text-align:center;\">Pictures say 1,000 words</div>","<div style=\"background-color: lightgrey; border:solid 2px grey; padding:10px;margin-bottom:5px; text-align:center;\"><img src=\"../images/"+filename+"\"/></div>")
     
     

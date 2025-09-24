@@ -156,11 +156,6 @@ geosrs:cscs a owl:Ontology ;
     vann:preferredNamespacePrefix "geosrs_cs"^^xsd:string ;
     vann:preferredNamespaceUri "https://w3id.org/geosrs/cs/"^^xsd:anyURI .
 
-geosrs_cs:1DCoordinateSystem a owl:Class ;
-    rdfs:label "1D Coordinate System"@en ;
-    rdfs:subClassOf geosrs:CoordinateSystem ;
-    skos:definition "Non-repeating sequence of coordinate system axes that spans a given coordinate space in one dimension"@en .
-
 geosrs_cs:GeodeticCoordinateSystem a owl:Class ;
     rdfs:label "Geodetic Coordinate System"@en ;
     rdfs:subClassOf geosrs:CoordinateSystem ;
@@ -176,15 +171,24 @@ geosrs_cs:OrthogonalCoordinateSystem a owl:Class ;
     rdfs:subClassOf geosrs_cs:CurvilinearCoordinateSystem ;
     skos:definition "A orthogonal coordinate system is a system of curvilinear coordinates in which each family of surfaces intersects the others at right angles."@en .
 
-geosrs_cs:CurvilinearCoordinateSystem a owl:Class ;
-    rdfs:label "Curvilinear Coordinate System"@en ;
+geosrs_cs:1DCoordinateSystem a owl:Class ;
+    rdfs:label "1D Coordinate System"@en ;
     rdfs:subClassOf geosrs:CoordinateSystem ;
-    skos:definition "A coordinate system for the Euclidean space in which the coordinate lines may be curved"@en .
+    skos:definition "Non-repeating sequence of coordinate system axes that spans a given coordinate space in one dimension"@en .
 
 geosrs_cs:3DCoordinateSystem a owl:Class ;
     rdfs:label "3D Coordinate System"@en ;
     rdfs:subClassOf geosrs:CoordinateSystem ;
+    owl:disjointWith <georsr:GeodedicCoordinateSystem>,
+        geosrs_cs:1DCoordinateSystem,
+        geosrs_cs:CelestialCoordinateSystem,
+        geosrs_cs:CurvilinearCoordinateSystem ;
     skos:definition "Non-repeating sequence of coordinate system axes that spans a given coordinate space in three dimensions"@en .
+
+geosrs_cs:CurvilinearCoordinateSystem a owl:Class ;
+    rdfs:label "Curvilinear Coordinate System"@en ;
+    rdfs:subClassOf geosrs:CoordinateSystem ;
+    skos:definition "A coordinate system for the Euclidean space in which the coordinate lines may be curved"@en .
 
 geosrs_cs:TemporalCoordinateSystem a owl:Class ;
     rdfs:label "Temporal Coordinate System"@en ;

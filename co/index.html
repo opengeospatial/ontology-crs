@@ -239,9 +239,9 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
   <section id="classes">
     <h2>Classes <span style="float:right; font-size:smaller;"><a href="">&uparrow;</a></span></h2>
     <ul class="hlist">
+      <li><a href="geocrs:CoordinateTransformationOperation">geocrs:CoordinateTransformationOperation</a></li>
       <li><a href="#AffineTransformationOperation">Affine Transformation Operation</a></li>
       <li><a href="#CoordinateOperation">Coordinate Operation</a></li>
-      <li><a href="#CoordinateTransformationOperation">Coordinate Transformation Operation</a></li>
       <li><a href="#GeographicObject">Geographic Object</a></li>
       <li><a href="#IdentityOperation">Identity Operation</a></li>
       <li><a href="#OperationParameterGroup">Operation Parameter Group</a></li>
@@ -254,6 +254,30 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
       <li><a href="#ShearOperation">Shear Operation</a></li>
       <li><a href="#TranslationOperation">Translation Operation</a></li>
     </ul>
+    <div class="entity class" id="CoordinateTransformationOperation">
+        <h3>
+          Coordinate Transformation Operation<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#CoordinateTransformationOperation" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>geocrs:CoordinateTransformationOperation</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>Coordinate operation in which the two coordinate reference systems are based on different datums.</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Super-classes</th>
+                <td>
+                    <a href="https://w3id.org/geosrs/SingleOperation">geosrs:SingleOperation</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
     <div class="entity class" id="AffineTransformationOperation">
         <h3>
           Affine Transformation Operation<sup title="class" class="sup-c">c</sup>
@@ -273,17 +297,17 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             <tr>
                 <th>Super-classes</th>
                 <td>
+                    <a href="https://w3id.org/geosrs/CoordinateTransformationOperation">geosrs:CoordinateTransformationOperation</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="file:///home/runner/work/ontology-crs/ontology-crs/docs/co.ttl">file:///home/runner/work/ontology-crs/ontology-crs/docs/co.ttl</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#CoordinateTransformationOperation">Coordinate Transformation Operation</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>Sub-classes</th>
                 <td>
-                    <a href="#IdentityOperation">Identity Operation</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="#ShearOperation">Shear Operation</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="#RotationOperation">Rotation Operation</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="#ScaleOperation">Scale Operation</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#IdentityOperation">Identity Operation</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="#TranslationOperation">Translation Operation</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
@@ -313,36 +337,6 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             </tr>
         </table>
     </div>
-    <div class="entity class" id="CoordinateTransformationOperation">
-        <h3>
-          Coordinate Transformation Operation<sup title="class" class="sup-c">c</sup>
-          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#CoordinateTransformationOperation" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
-        </h3>
-        <table>
-            <tr>
-                <th>URI</th>
-                <td><code>https://w3id.org/geosrs/co/CoordinateTransformationOperation</code></td>
-            </tr>
-            <tr>
-                <th>Description</th>
-                <td>
-                    <p>Coordinate operation in which the two coordinate reference systems are based on different datums.</p>
-                </td>
-            </tr>
-            <tr>
-                <th>Super-classes</th>
-                <td>
-                    <a href="https://w3id.org/geosrs/SingleOperation">geosrs:SingleOperation</a><sup class="sup-c" title="class">c</sup><br/>
-                </td>
-            </tr>
-            <tr>
-                <th>Sub-classes</th>
-                <td>
-                    <a href="#AffineTransformationOperation">Affine Transformation Operation</a><sup class="sup-c" title="class">c</sup><br/>
-                </td>
-            </tr>
-        </table>
-    </div>
     <div class="entity class" id="GeographicObject">
         <h3>
           Geographic Object<sup title="class" class="sup-c">c</sup>
@@ -362,7 +356,7 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="http://def.isotc211.org/iso19107/2003/Geometry">http://def.isotc211.org/iso19107/2003/Geometry</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="iso19107:Geometry">iso19107:Geometry</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>

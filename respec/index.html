@@ -1364,7 +1364,7 @@ Together with several subtypes of coordnate reference system, these definitions 
 <div class="title">Example 6. Coordinate Operation Categories</div>
 <div class="content">
 <p class="paragraph">
-<p>Implementations shall allow the RDFS classes <a href="#_class_geosrsgeographicobject"><code>geosrs:GeographicObject</code></a>, <a href="#_class_geosrsregisteroperations"><code>geosrs:RegisterOperations</code></a>, <a href="#_class_geosrsscaleoperation"><code>geosrs:ScaleOperation</code></a>, <a href="#_class_geosrsrotationoperation"><code>geosrs:RotationOperation</code></a>, <a href="#_class_geosrsidentityoperation"><code>geosrs:IdentityOperation</code></a>, <a href="#_class_geosrsshearoperation"><code>geosrs:ShearOperation</code></a>, <a href="#_class_geosrstranslationoperation"><code>geosrs:TranslationOperation</code></a>, <a href="#_class_geosrsaffinetransformationoperation"><code>geosrs:AffineTransformationOperation</code></a>, <a href="#_class_geosrscoordinatetransformationoperation"><code>geosrs:CoordinateTransformationOperation</code></a> to be used in SPARQL graph patterns.</p>
+<p>Implementations shall allow the RDFS classes <a href="#_class_geosrsgeographicobject"><code>geosrs:GeographicObject</code></a>, <a href="#_class_geosrsregisteroperations"><code>geosrs:RegisterOperations</code></a>, <a href="#_class_geosrsscaleoperation"><code>geosrs:ScaleOperation</code></a>, <a href="#_class_geosrsrotationoperation"><code>geosrs:RotationOperation</code></a>, <a href="#_class_geosrsidentityoperation"><code>geosrs:IdentityOperation</code></a>, <a href="#_class_geosrsshearoperation"><code>geosrs:ShearOperation</code></a>, <a href="#_class_geosrstranslationoperation"><code>geosrs:TranslationOperation</code></a>, <a href="#_class_geosrsaffinetransformationoperation"><code>geosrs:AffineTransformationOperation</code></a>, <a href="#_class_geocrscoordinatetransformationoperation"><code>geocrs:CoordinateTransformationOperation</code></a> to be used in SPARQL graph patterns.</p>
 </p>
 </div>
 </aside>
@@ -1387,7 +1387,7 @@ Together with several subtypes of coordnate reference system, these definitions 
 </tr>
 <tr>
   <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
-  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://def.isotc211.org/iso19107/2003/Geometry">Geometry</a></p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">iso19107:Geometry[iso19107:Geometry]</p></td>
 </tr>
 </tbody>
 </table>
@@ -1551,15 +1551,15 @@ Together with several subtypes of coordnate reference system, these definitions 
 </tr>
 <tr>
   <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
-  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/co/CoordinateTransformationOperation">CoordinateTransformationOperation</a> []</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/CoordinateTransformationOperation">CoordinateTransformationOperation</a> []</p></td>
 </tr>
 </tbody>
 </table>
 </section>
 <section class="sect4">
-<h5 id="_class_geosrscoordinatetransformationoperation">Class: geosrs:CoordinateTransformationOperation</h5>
+<h5 id="_class_geocrscoordinatetransformationoperation">Class: geocrs:CoordinateTransformationOperation</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 44. geosrs:CoordinateTransformationOperation</caption>
+<caption class="title">Table 44. geocrs:CoordinateTransformationOperation</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -1567,7 +1567,7 @@ Together with several subtypes of coordnate reference system, these definitions 
 <tbody>
 <tr>
   <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
-  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/co/CoordinateTransformationOperation">https://w3id.org/geosrs/co/CoordinateTransformationOperation</a></p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">geocrs:CoordinateTransformationOperation[]</p></td>
 </tr>
 <tr>
   <td class="tableblock halign-left valign-top"><p class="tableblock">Definition</p></td>
@@ -1874,6 +1874,11 @@ Together with several subtypes of coordnate reference system, these definitions 
 <p class="paragraph" id="cs">
 <p>This clause establishes the <strong>CS</strong> Requirements class, with IRI <code>/req/cs</code>, which has a corresponding Conformance Class, <strong>CS</strong>, with IRI <code>/conf/cs</code>.</p>
 </p>
+<div class="imageblock">
+<div class="content">
+<img alt="cs" src="figures/cs.png">
+</div>
+</div>
 <p class="paragraph">
 <p>The coordinate system module introduces different types of coordinate systems which are dinstinguished in geospatial science and applications.
 Coordinate systems are distinguished by their area of use, i.e planetary or interstellar and by their multidimensionality.</p>
@@ -10164,7 +10169,7 @@ They may be stated as part of a SPARQL 1.1 Service Description <a href="#SPARQLS
 </dd>
 <dt class="hdlist1">test-method</dt>
 <dd>
-<p>Verify that queries involving <a href="#_class_geosrsgeographicobject"><code>geosrs:GeographicObject</code></a> <a href="#_class_geosrsregisteroperations"><code>geosrs:RegisterOperations</code></a> <a href="#_class_geosrsscaleoperation"><code>geosrs:ScaleOperation</code></a> <a href="#_class_geosrsrotationoperation"><code>geosrs:RotationOperation</code></a> <a href="#_class_geosrsidentityoperation"><code>geosrs:IdentityOperation</code></a> <a href="#_class_geosrsshearoperation"><code>geosrs:ShearOperation</code></a> <a href="#_class_geosrstranslationoperation"><code>geosrs:TranslationOperation</code></a> <a href="#_class_geosrsaffinetransformationoperation"><code>geosrs:AffineTransformationOperation</code></a> <a href="#_class_geosrscoordinatetransformationoperation"><code>geosrs:CoordinateTransformationOperation</code></a>  return the correct result on a test dataset.</p>
+<p>Verify that queries involving <a href="#_class_geosrsgeographicobject"><code>geosrs:GeographicObject</code></a> <a href="#_class_geosrsregisteroperations"><code>geosrs:RegisterOperations</code></a> <a href="#_class_geosrsscaleoperation"><code>geosrs:ScaleOperation</code></a> <a href="#_class_geosrsrotationoperation"><code>geosrs:RotationOperation</code></a> <a href="#_class_geosrsidentityoperation"><code>geosrs:IdentityOperation</code></a> <a href="#_class_geosrsshearoperation"><code>geosrs:ShearOperation</code></a> <a href="#_class_geosrstranslationoperation"><code>geosrs:TranslationOperation</code></a> <a href="#_class_geosrsaffinetransformationoperation"><code>geosrs:AffineTransformationOperation</code></a> <a href="#_class_geocrscoordinatetransformationoperation"><code>geocrs:CoordinateTransformationOperation</code></a>  return the correct result on a test dataset.</p>
 </dd>
 <dt class="hdlist1">test-method-type</dt>
 <dd>
@@ -10172,7 +10177,7 @@ They may be stated as part of a SPARQL 1.1 Service Description <a href="#SPARQLS
 </dd>
 <dt class="hdlist1">reference</dt>
 <dd>
-<p><a href="#_class_geosrsgeographicobject"><code>geosrs:GeographicObject</code></a> <a href="#_class_geosrsregisteroperations"><code>geosrs:RegisterOperations</code></a> <a href="#_class_geosrsscaleoperation"><code>geosrs:ScaleOperation</code></a> <a href="#_class_geosrsrotationoperation"><code>geosrs:RotationOperation</code></a> <a href="#_class_geosrsidentityoperation"><code>geosrs:IdentityOperation</code></a> <a href="#_class_geosrsshearoperation"><code>geosrs:ShearOperation</code></a> <a href="#_class_geosrstranslationoperation"><code>geosrs:TranslationOperation</code></a> <a href="#_class_geosrsaffinetransformationoperation"><code>geosrs:AffineTransformationOperation</code></a> <a href="#_class_geosrscoordinatetransformationoperation"><code>geosrs:CoordinateTransformationOperation</code></a></p>
+<p><a href="#_class_geosrsgeographicobject"><code>geosrs:GeographicObject</code></a> <a href="#_class_geosrsregisteroperations"><code>geosrs:RegisterOperations</code></a> <a href="#_class_geosrsscaleoperation"><code>geosrs:ScaleOperation</code></a> <a href="#_class_geosrsrotationoperation"><code>geosrs:RotationOperation</code></a> <a href="#_class_geosrsidentityoperation"><code>geosrs:IdentityOperation</code></a> <a href="#_class_geosrsshearoperation"><code>geosrs:ShearOperation</code></a> <a href="#_class_geosrstranslationoperation"><code>geosrs:TranslationOperation</code></a> <a href="#_class_geosrsaffinetransformationoperation"><code>geosrs:AffineTransformationOperation</code></a> <a href="#_class_geocrscoordinatetransformationoperation"><code>geocrs:CoordinateTransformationOperation</code></a></p>
 </dd>
 </dl>
 </div>
@@ -13531,7 +13536,7 @@ Actual References:
 </section>
 <div id="footer">
 <div id="footer-text">
-Last updated 2025-09-24 15:49:12 UTC
+Last updated 2025-09-24 15:56:31 UTC
 </div>
 </div>
 </body>

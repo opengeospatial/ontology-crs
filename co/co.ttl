@@ -6,6 +6,11 @@
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+<geocrs:CoordinateTransformationOperation> a owl:Class ;
+    rdfs:label "Coordinate Transformation Operation"@en ;
+    rdfs:subClassOf geosrs:SingleOperation ;
+    skos:definition "Coordinate operation in which the two coordinate reference systems are based on different datums."@en .
+
 geosrs_co:ConcatenatedOperation a owl:Class ;
     rdfs:label "Coordinate Operation"@en ;
     rdfs:subClassOf geosrs:CoordinateOperation ;
@@ -13,7 +18,7 @@ geosrs_co:ConcatenatedOperation a owl:Class ;
 
 geosrs_co:GeographicObject a owl:Class ;
     rdfs:label "Geographic Object"@en ;
-    rdfs:subClassOf <http://def.isotc211.org/iso19107/2003/Geometry#Geometry> ;
+    rdfs:subClassOf <iso19107:Geometry> ;
     skos:definition "Identifier of a geographic feature of which the coordinates are used as operation parameters."@en .
 
 geosrs_co:IdentityOperation a owl:Class ;
@@ -94,14 +99,9 @@ geosrs:coco a owl:Ontology ;
     vann:preferredNamespacePrefix "geosrs_co"^^xsd:string ;
     vann:preferredNamespaceUri "https://w3id.org/geosrs/co/"^^xsd:anyURI .
 
-geosrs_co:CoordinateTransformationOperation a owl:Class ;
-    rdfs:label "Coordinate Transformation Operation"@en ;
-    rdfs:subClassOf geosrs:SingleOperation ;
-    skos:definition "Coordinate operation in which the two coordinate reference systems are based on different datums."@en .
-
 geosrs_co:AffineTransformationOperation a owl:Class ;
     rdfs:label "Affine Transformation Operation"@en ;
     rdfs:subClassOf <>,
-        geosrs_co:CoordinateTransformationOperation ;
+        geosrs:CoordinateTransformationOperation ;
     skos:definition "Affine coordinate transformation operation"@en .
 

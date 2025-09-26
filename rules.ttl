@@ -103,100 +103,100 @@ geosrs:TemporalMeasureCoordinateSystemShape a sh:NodeShape ;
     sh:property geosrs:TemporalMeasureCoordinateSystemShape_Property ;
     sh:targetNode geosrs:TemporalMeasureCoordinateSystem .
 
-geosrs:3DCoordinateSystemShape_Property sh:class geosrs:CoordinateSystemAxis ;
-    sh:message "A 3D coordinate system should have at least three axes"@en ;
+geosrs:3DCoordinateSystemShape_Property rdfs:comment "A 3D coordinate system should have at least three axis"@en ;
+    sh:class geosrs:CoordinateSystemAxis ;
     sh:minCount 3 .
 
-geosrs:CRSShape_Property sh:class geosrs:AreaOfUse,
+geosrs:CRSShape_Property rdfs:comment "A coordinate reference system may have exactly one datum ensemble"@en,
+        "A coordinate reference system should have at least one area of use"@en,
+        "A coordinate reference system should have exactly one coordinate system"@en,
+        "A coordinate reference system should have exactly one datum"@en ;
+    sh:class geosrs:AreaOfUse,
         geosrs:CoordinateSystem,
         geosrs:Datum,
         geosrs:DatumEnsemble ;
     sh:maxCount 1 ;
-    sh:message "A coordinate reference system may have exactly one datum ensemble"@en,
-        "A coordinate reference system should have at least one area of use"@en,
-        "A coordinate reference system should have exactly one coordinate system"@en,
-        "A coordinate reference system should have exactly one datum"@en ;
     sh:minCount 1 .
 
-geosrs:CompoundCRSShape_Property sh:class geosrs:SingleCRS ;
-    sh:message "A compound coordinate reference system should consist of at least one single coordinate reference system"@en ;
+geosrs:CompoundCRSShape_Property rdfs:comment "A compound coordinate reference system should consist of at least one single coordinate reference system"@en ;
+    sh:class geosrs:SingleCRS ;
     sh:minCount 1 .
 
-geosrs:ConicalCoordinateSystemShape_Property sh:class geosrs:CoordinateSystemAxis ;
-    sh:message "A conical coordinate system should have at least three axes"@en ;
+geosrs:ConicalCoordinateSystemShape_Property rdfs:comment "A conical coordinate system should have at least three axis"@en ;
+    sh:class geosrs:CoordinateSystemAxis ;
     sh:minCount 3 .
 
-geosrs:CoordinateSystemAxisShape_Property sh:class geosrs:AxisDirection ;
+geosrs:CoordinateSystemAxisShape_Property rdfs:comment "A coordinate system axis should have exactly one axis direction"@en ;
+    sh:class geosrs:AxisDirection ;
     sh:maxCount 1 ;
-    sh:message "A coordinate system axis should have exactly one axis direction"@en ;
     sh:minCount 1 .
 
-geosrs:CoordinateSystemShape_Property sh:class geosrs:CoordinateSystemAxis ;
-    sh:message "A coordinate system should have at least one axis"@en ;
+geosrs:CoordinateSystemShape_Property rdfs:comment "A coordinate system should have at least one axis"@en ;
+    sh:class geosrs:CoordinateSystemAxis ;
     sh:minCount 1 .
 
-geosrs:CylindricalCoordinateSystemShape_Property sh:class geosrs:CoordinateSystemAxis ;
-    sh:message "A cylindrical coordinate system should have at least three axes"@en ;
+geosrs:CylindricalCoordinateSystemShape_Property rdfs:comment "A cylindrical coordinate system should have at least three axis"@en ;
+    sh:class geosrs:CoordinateSystemAxis ;
     sh:minCount 3 .
 
-geosrs:DateTimeTemporalCoordinateSystemShape_Property sh:class geosrs:CoordinateSystemAxis ;
+geosrs:DateTimeTemporalCoordinateSystemShape_Property rdfs:comment "A date time temporal coordinate system should have exactly one axis"@en ;
+    sh:class geosrs:CoordinateSystemAxis ;
     sh:maxCount 1 ;
-    sh:message "A date time temporal coordinate system should have exactly one axis"@en ;
     sh:minCount 1 .
 
-geosrs:GeodeticCRSShape_Property sh:class geosrs:GeodeticCoordinateSystem ;
+geosrs:GeodeticCRSShape_Property rdfs:comment "A geodetic coordinate reference system should have exactly one geodetic coordinate system"@en ;
+    sh:class geosrs:GeodeticCoordinateSystem ;
     sh:maxCount 1 ;
-    sh:message "A geodetic coordinate reference system should have exactly one geodetic coordinate system"@en ;
     sh:minCount 1 .
 
-geosrs:GeographicCRSShape_Property sh:class geosrs:EllipsoidalCoordinateSystem,
+geosrs:GeographicCRSShape_Property rdfs:comment "A geographic coordinate reference system should have exactly one ellipsoidal coordinate system"@en,
+        "A geographic coordinate reference system should have exactly one geodetic datum"@en ;
+    sh:class geosrs:EllipsoidalCoordinateSystem,
         geosrs:GeodeticDatum ;
     sh:maxCount 1 ;
-    sh:message "A geographic coordinate reference system should have exactly one ellipsoidal coordinate system"@en,
-        "A geographic coordinate reference system should have exactly one geodetic datum"@en ;
     sh:minCount 1 .
 
-geosrs:ParametricCRSShape_Property sh:class geosrs:ParametricDatum ;
+geosrs:ParametricCRSShape_Property rdfs:comment "A parametric coordinate reference system should have exactly one parametric datum"@en ;
+    sh:class geosrs:ParametricDatum ;
     sh:maxCount 1 ;
-    sh:message "A parametric coordinate reference system should have exactly one parametric datum"@en ;
     sh:minCount 1 .
 
-geosrs:ParametricDatumShape_Property sh:class geosrs:DefiningParameter ;
-    sh:message "A parametric datum should have at least one defining parameter"@en ;
+geosrs:ParametricDatumShape_Property rdfs:comment "A parametric datum should have at least one defining parameter"@en ;
+    sh:class geosrs:DefiningParameter ;
     sh:minCount 1 .
 
-geosrs:PlanarCoordinateSystemShape_Property sh:class geosrs:CoordinateSystemAxis ;
-    sh:message "A planar coordinate system should have at least two axes"@en ;
+geosrs:PlanarCoordinateSystemShape_Property rdfs:comment "A planar coordinate system should have at least two axis"@en ;
+    sh:class geosrs:CoordinateSystemAxis ;
     sh:minCount 2 .
 
-geosrs:ProjectedCRSShape_Property sh:class geosrs:Conversion ;
-    sh:message "A projected coordinate reference system should have at least one conversion"@en ;
+geosrs:ProjectedCRSShape_Property rdfs:comment "A projected coordinate reference system should have at least one conversion"@en ;
+    sh:class geosrs:Conversion ;
     sh:minCount 1 .
 
-geosrs:SingleCRSShape_Property sh:class geosrs:CoordinateSystem,
+geosrs:SingleCRSShape_Property rdfs:comment "A single coordinate reference system should have exactly one coordinate system"@en,
+        "A single coordinate reference system should have exactly one datum"@en ;
+    sh:class geosrs:CoordinateSystem,
         geosrs:Datum ;
     sh:maxCount 1 ;
-    sh:message "A single coordinate reference system should have exactly one coordinate system"@en,
-        "A single coordinate reference system should have exactly one datum"@en ;
     sh:minCount 1 .
 
-geosrs:TemporalCRSShape_Property sh:class geosrs:TemporalDatum ;
+geosrs:TemporalCRSShape_Property rdfs:comment "A projected coordinate reference system should have exactly one temporal datum"@en ;
+    sh:class geosrs:TemporalDatum ;
     sh:maxCount 1 ;
-    sh:message "A projected coordinate reference system should have exactly one temporal datum"@en ;
     sh:minCount 1 .
 
-geosrs:TemporalCoordinateSystemShape_Property sh:class geosrs:CoordinateSystemAxis ;
+geosrs:TemporalCoordinateSystemShape_Property rdfs:comment "A temporal coordinate system should have exactly one axis"@en ;
+    sh:class geosrs:CoordinateSystemAxis ;
     sh:maxCount 1 ;
-    sh:message "A temporal coordinate system should have exactly one axis"@en ;
     sh:minCount 1 .
 
-geosrs:TemporalCountCoordinateSystemShape_Property sh:class geosrs:CoordinateSystemAxis ;
+geosrs:TemporalCountCoordinateSystemShape_Property rdfs:comment "A temporal count coordinate system should have exactly one axis"@en ;
+    sh:class geosrs:CoordinateSystemAxis ;
     sh:maxCount 1 ;
-    sh:message "A temporal count coordinate system should have exactly one axis"@en ;
     sh:minCount 1 .
 
-geosrs:TemporalMeasureCoordinateSystemShape_Property sh:class geosrs:CoordinateSystemAxis ;
+geosrs:TemporalMeasureCoordinateSystemShape_Property rdfs:comment "A temporal measure coordinate system should have exactly one axis"@en ;
+    sh:class geosrs:CoordinateSystemAxis ;
     sh:maxCount 1 ;
-    sh:message "A temporal measure coordinate system should have exactly one axis"@en ;
     sh:minCount 1 .
 

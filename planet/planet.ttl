@@ -2,37 +2,32 @@
 @prefix geosrs_planet: <https://w3id.org/geosrs/planet/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 geosrs_planet:ArtificialSatellite a owl:Class ;
-    rdfs:label "Artificial Satellite"@en ;
-    rdfs:subClassOf geosrs_planet:Satellite .
+    rdfs:label "Artificial Satellite"@en .
 
 geosrs_planet:Asteroid a owl:Class ;
-    rdfs:label "Asteroid"@en ;
-    rdfs:subClassOf geosrs_planet:InterstellarBody ;
-    skos:definition "Asteroid, any of a host of small bodies, about 1000 km (600 miles) or less in diameter, that orbit the Sun primarily between the orbits of Mars and Jupiter in a nearly flat ring called the asteroid belt (source:https://www.britannica.com/science/asteroid) "@en .
+    rdfs:label "Asteroid"@en .
 
 geosrs_planet:Comet a owl:Class ;
-    rdfs:label "Comet"@en ;
-    rdfs:subClassOf geosrs_planet:InterstellarBody .
+    rdfs:label "Comet"@en .
 
 geosrs_planet:DwarfPlanet a owl:Class ;
     rdfs:label "Dwarf Planet"@en .
 
+geosrs_planet:InterstellarBody a owl:Class ;
+    rdfs:label "Interstellar Body"@en .
+
 geosrs_planet:Moon a owl:Class ;
-    rdfs:label "Moon"@en ;
-    rdfs:subClassOf geosrs_planet:InterstellarBody .
+    rdfs:label "Moon"@en .
 
 geosrs_planet:NaturalSatellite a owl:Class ;
-    rdfs:label "Natural Satellite"@en ;
-    rdfs:subClassOf geosrs_planet:Satellite .
+    rdfs:label "Natural Satellite"@en .
 
 geosrs_planet:Planet a owl:Class ;
-    rdfs:label "Planet"@en ;
-    rdfs:subClassOf geosrs_planet:InterstellarBody .
+    rdfs:label "Planet"@en .
 
 geosrs_planet:PlanetStatus a owl:Class ;
     rdfs:label "Planet Status"@en .
@@ -41,17 +36,10 @@ geosrs_planet:Plutoid a owl:Class ;
     rdfs:label "Plutoid"@en .
 
 geosrs_planet:Star a owl:Class ;
-    rdfs:label "Star"@en ;
-    rdfs:subClassOf geosrs_planet:InterstellarBody .
+    rdfs:label "Star"@en .
 
 geosrs:planetplanet a owl:Ontology ;
     rdfs:label "SRS Ontology: Geosrs_planet"@en ;
     vann:preferredNamespacePrefix "geosrs_planet"^^xsd:string ;
     vann:preferredNamespaceUri "https://w3id.org/geosrs/planet/"^^xsd:anyURI .
-
-geosrs_planet:Satellite a owl:Class ;
-    rdfs:label "Satellite"@en .
-
-geosrs_planet:InterstellarBody a owl:Class ;
-    rdfs:label "Interstellar Body"@en .
 

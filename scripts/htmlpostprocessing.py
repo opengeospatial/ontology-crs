@@ -17,6 +17,8 @@ def addExamplesToPyLode(examples,filepath,basename=""):
         filedata = file.read()
     for exx in examples:
         ex=exx.replace("geosrs:","https://w3id.org/geosrs/srs/"+basename)
+        print(ex)
+        print(exx)
         if basename=="projection":
             filedata=filedata.replace("<code>"+exx+"</code></td>","<code>"+exx+"</code></td></tr><tr><th>Example</th><td><a target=\"_blank\" href=\""+examples[exx]+"\">"+ex+"</a></td></tr><tr><th>Image</th><td><img src=\"https://raw.githubusercontent.com/situx/proj4rdf/refs/heads/main/resources/projection/"+ex[ex.rfind("/")+1]+".svg\" width=\"50%\"/></td>")
         else:

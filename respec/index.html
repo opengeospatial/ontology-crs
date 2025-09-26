@@ -1364,7 +1364,7 @@ Together with several subtypes of coordnate reference system, these definitions 
 <div class="title">Example 6. Coordinate Operation Categories</div>
 <div class="content">
 <p class="paragraph">
-<p>Implementations shall allow the RDFS classes <a href="#_class_geosrsgeographicobject"><code>geosrs:GeographicObject</code></a>, <a href="#_class_geosrsregisteroperations"><code>geosrs:RegisterOperations</code></a>, <a href="#_class_geosrsscaleoperation"><code>geosrs:ScaleOperation</code></a>, <a href="#_class_geosrsrotationoperation"><code>geosrs:RotationOperation</code></a>, <a href="#_class_geosrsidentityoperation"><code>geosrs:IdentityOperation</code></a>, <a href="#_class_geosrsshearoperation"><code>geosrs:ShearOperation</code></a>, <a href="#_class_geosrstranslationoperation"><code>geosrs:TranslationOperation</code></a>, <a href="#_class_geosrsaffinetransformationoperation"><code>geosrs:AffineTransformationOperation</code></a>, <a href="#_class_geocrscoordinatetransformationoperation"><code>geocrs:CoordinateTransformationOperation</code></a> to be used in SPARQL graph patterns.</p>
+<p>Implementations shall allow the RDFS classes <a href="#_class_geosrsgeographicobject"><code>geosrs:GeographicObject</code></a>, <a href="#_class_geosrsregisteroperations"><code>geosrs:RegisterOperations</code></a>, <a href="#_class_geosrsscaleoperation"><code>geosrs:ScaleOperation</code></a>, <a href="#_class_geosrsrotationoperation"><code>geosrs:RotationOperation</code></a>, <a href="#_class_geosrsidentityoperation"><code>geosrs:IdentityOperation</code></a>, <a href="#_class_geosrsshearoperation"><code>geosrs:ShearOperation</code></a>, <a href="#_class_geosrstranslationoperation"><code>geosrs:TranslationOperation</code></a>, <a href="#_class_geosrsaffinetransformationoperation"><code>geosrs:AffineTransformationOperation</code></a>, <a href="#_class_geosrscoordinatetransformationoperation"><code>geosrs:CoordinateTransformationOperation</code></a> to be used in SPARQL graph patterns.</p>
 </p>
 </div>
 </aside>
@@ -1387,7 +1387,7 @@ Together with several subtypes of coordnate reference system, these definitions 
 </tr>
 <tr>
   <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
-  <td class="tableblock halign-left valign-top"><p class="tableblock">iso19107:Geometry[iso19107:Geometry]</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://def.isotc211.org/iso19107/2003/Geometry#Geometry">Geometry#Geometry</a></p></td>
 </tr>
 </tbody>
 </table>
@@ -1551,15 +1551,15 @@ Together with several subtypes of coordnate reference system, these definitions 
 </tr>
 <tr>
   <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
-  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/CoordinateTransformationOperation">CoordinateTransformationOperation</a> []</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/co/CoordinateTransformationOperation">CoordinateTransformationOperation</a> []</p></td>
 </tr>
 </tbody>
 </table>
 </section>
 <section class="sect4">
-<h5 id="_class_geocrscoordinatetransformationoperation">Class: geocrs:CoordinateTransformationOperation</h5>
+<h5 id="_class_geosrscoordinatetransformationoperation">Class: geosrs:CoordinateTransformationOperation</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 44. geocrs:CoordinateTransformationOperation</caption>
+<caption class="title">Table 44. geosrs:CoordinateTransformationOperation</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -1567,7 +1567,7 @@ Together with several subtypes of coordnate reference system, these definitions 
 <tbody>
 <tr>
   <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
-  <td class="tableblock halign-left valign-top"><p class="tableblock">geocrs:CoordinateTransformationOperation[]</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/co/CoordinateTransformationOperation">https://w3id.org/geosrs/co/CoordinateTransformationOperation</a></p></td>
 </tr>
 <tr>
   <td class="tableblock halign-left valign-top"><p class="tableblock">Definition</p></td>
@@ -1874,6 +1874,11 @@ Together with several subtypes of coordnate reference system, these definitions 
 <p class="paragraph" id="cs">
 <p>This clause establishes the <strong>CS</strong> Requirements class, with IRI <code>/req/cs</code>, which has a corresponding Conformance Class, <strong>CS</strong>, with IRI <code>/conf/cs</code>.</p>
 </p>
+<div class="imageblock">
+<div class="content">
+<img alt="cs" src="figures/cs.png">
+</div>
+</div>
 <p class="paragraph">
 <p>The coordinate system module introduces different types of coordinate systems which are dinstinguished in geospatial science and applications.
 Coordinate systems are distinguished by their area of use, i.e planetary or interstellar and by their multidimensionality.</p>
@@ -3476,6 +3481,10 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
   <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/application/SpatialReferencing">https://w3id.org/geosrs/application/SpatialReferencing</a></p></td>
 </tr>
 <tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Definition</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Spatial referencing is the process of assigning real-world coordinates to data so that it can be located on the Earth’s surface and used in a geographic information system (GIS).</p></td>
+</tr>
+<tr>
   <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
   <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/application/SRSApplication">SRSApplication</a></p></td>
 </tr>
@@ -3494,6 +3503,10 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <tr>
   <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
   <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/application/EngineeringSurvey">https://w3id.org/geosrs/application/EngineeringSurvey</a></p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Definition</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">An engineering survey is the branch of surveying that provides the precise measurements and data needed to plan, build, and maintain engineering and infrastructure projects.</p></td>
 </tr>
 <tr>
   <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
@@ -3520,6 +3533,10 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
   <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/application/SatelliteSurvey">https://w3id.org/geosrs/application/SatelliteSurvey</a></p></td>
 </tr>
 <tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Definition</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">A remote sensing survey conducted from Earth-orbiting satellites, collecting imagery and other data without direct ground contact.</p></td>
+</tr>
+<tr>
   <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
   <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/application/SRSApplication">SRSApplication</a></p></td>
 </tr>
@@ -3538,6 +3555,10 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <tr>
   <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
   <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/application/SatelliteNavigation">https://w3id.org/geosrs/application/SatelliteNavigation</a></p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Definition</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Satellite navigation is a system that uses satellites to provide autonomous geo-spatial positioning. It allows small electronic receivers to determine their location (longitude, latitude, and altitude) to high precision using time signals transmitted along a line of sight by radio from satellites.</p></td>
 </tr>
 <tr>
   <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
@@ -3560,8 +3581,12 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
   <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/application/CoastalHydrography">https://w3id.org/geosrs/application/CoastalHydrography</a></p></td>
 </tr>
 <tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Definition</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Hydrographic surveying &amp; monitoring focused on nearshore waters, where navigation safety and coastal change are most critical.</p></td>
+</tr>
+<tr>
   <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
-  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/application/SRSApplication">SRSApplication</a></p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/application/Hydrography">Hydrography</a></p></td>
 </tr>
 <tr>
   <td class="tableblock halign-left valign-top"><p class="tableblock">Example</p></td>
@@ -3582,6 +3607,10 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <tr>
   <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
   <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/application/OffshoreEngineering">https://w3id.org/geosrs/application/OffshoreEngineering</a></p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Definition</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Offshore engineering (also called ocean engineering or marine engineering in some contexts) is the branch of engineering concerned with the design, construction, installation, and maintenance of structures and systems in the ocean environment, such as oil and gas platforms, subsea pipelines, and renewable energy facilities.</p></td>
 </tr>
 <tr>
   <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
@@ -3608,6 +3637,10 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
   <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/application/Hydrography">https://w3id.org/geosrs/application/Hydrography</a></p></td>
 </tr>
 <tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Definition</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Hydrography is the branch of applied sciences which deals with the measurement and description of the physical features of oceans, seas, coastal areas, lakes, and rivers, as well as the prediction of their change over time, for the primary purpose of safety of navigation and in support of all other marine activities, including economic development, security and defense, scientific research, and environmental protection.</p></td>
+</tr>
+<tr>
   <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
   <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/application/SRSApplication">SRSApplication</a></p></td>
 </tr>
@@ -3632,6 +3665,10 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
   <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/application/Drilling">https://w3id.org/geosrs/application/Drilling</a></p></td>
 </tr>
 <tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Definition</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Drilling is the process of creating holes in the ground (or other solid materials) using specialized tools, widely applied in energy, construction, mining, and manufacturing.</p></td>
+</tr>
+<tr>
   <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
   <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/application/SRSApplication">SRSApplication</a></p></td>
 </tr>
@@ -3654,6 +3691,10 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <tr>
   <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
   <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/application/OilAndGasExploration">https://w3id.org/geosrs/application/OilAndGasExploration</a></p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Definition</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Oil and natural gas exploration is the search for underground or underwater reservoirs containing hydrocarbons, using geological and geophysical methods, followed by drilling to confirm and produce them.</p></td>
 </tr>
 <tr>
   <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
@@ -8803,7 +8844,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 </tr>
 <tr>
   <td class="tableblock halign-left valign-top"><p class="tableblock">Definition</p></td>
-  <td class="tableblock halign-left valign-top"><p class="tableblock">Asteroid, any of a host of small bodies, about 1 000 km (600 miles) or less in diameter, that orbit the Sun primarily between the orbits of Mars and Jupiter in a nearly flat ring called the asteroid belt (source:https://www.britannica.com/science/asteroid) </p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Asteroid, any of a host of small bodies, about 1000 km (600 miles) or less in diameter, that orbit the Sun primarily between the orbits of Mars and Jupiter in a nearly flat ring called the asteroid belt (source:https://www.britannica.com/science/asteroid) </p></td>
 </tr>
 <tr>
   <td class="tableblock halign-left valign-top"><p class="tableblock">Super-classes</p></td>
@@ -9028,14 +9069,14 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <div class="title">Example 49. Coordinate System Axis</div>
 <div class="content">
 <p class="paragraph">
-<p>Implementations shall allow the RDFS instances <a href="#_instance_geosrsdown"><code>geosrs:down</code></a>, <a href="#_instance_geosrseast"><code>geosrs:east</code></a>, <a href="#_instance_geosrsnorth"><code>geosrs:north</code></a>, <a href="#_instance_geosrssouth"><code>geosrs:south</code></a>, <a href="#_instance_geosrsup"><code>geosrs:up</code></a>, <a href="#_instance_geosrswest"><code>geosrs:west</code></a> to be used in SPARQL graph patterns.</p>
+<p>Implementations shall allow the RDFS instances <a href="#_instance_geosrsdown"><code>geosrs:Down</code></a>, <a href="#_instance_geosrseast"><code>geosrs:East</code></a>, <a href="#_instance_geosrsnorth"><code>geosrs:North</code></a>, <a href="#_instance_geosrssouth"><code>geosrs:South</code></a>, <a href="#_instance_geosrsup"><code>geosrs:Up</code></a>, <a href="#_instance_geosrswest"><code>geosrs:West</code></a> to be used in SPARQL graph patterns.</p>
 </p>
 </div>
 </aside>
 <section class="sect4">
-<h5 id="_instance_geosrsdown">Instance: geosrs:down</h5>
+<h5 id="_instance_geosrsdown">Instance: geosrs:Down</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 362. geosrs:down</caption>
+<caption class="title">Table 362. geosrs:Down</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -9043,7 +9084,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <tbody>
 <tr>
   <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
-  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/down">https://w3id.org/geosrs/down</a></p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/Down">https://w3id.org/geosrs/Down</a></p></td>
 </tr>
 <tr>
   <td class="tableblock halign-left valign-top"><p class="tableblock">Type</p></td>
@@ -9057,9 +9098,9 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 </table>
 </section>
 <section class="sect4">
-<h5 id="_instance_geosrseast">Instance: geosrs:east</h5>
+<h5 id="_instance_geosrseast">Instance: geosrs:East</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 363. geosrs:east</caption>
+<caption class="title">Table 363. geosrs:East</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -9067,7 +9108,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <tbody>
 <tr>
   <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
-  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/east">https://w3id.org/geosrs/east</a></p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/East">https://w3id.org/geosrs/East</a></p></td>
 </tr>
 <tr>
   <td class="tableblock halign-left valign-top"><p class="tableblock">Type</p></td>
@@ -9081,9 +9122,9 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 </table>
 </section>
 <section class="sect4">
-<h5 id="_instance_geosrsnorth">Instance: geosrs:north</h5>
+<h5 id="_instance_geosrsnorth">Instance: geosrs:North</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 364. geosrs:north</caption>
+<caption class="title">Table 364. geosrs:North</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -9091,7 +9132,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <tbody>
 <tr>
   <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
-  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/north">https://w3id.org/geosrs/north</a></p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/North">https://w3id.org/geosrs/North</a></p></td>
 </tr>
 <tr>
   <td class="tableblock halign-left valign-top"><p class="tableblock">Type</p></td>
@@ -9105,9 +9146,9 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 </table>
 </section>
 <section class="sect4">
-<h5 id="_instance_geosrssouth">Instance: geosrs:south</h5>
+<h5 id="_instance_geosrssouth">Instance: geosrs:South</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 365. geosrs:south</caption>
+<caption class="title">Table 365. geosrs:South</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -9115,7 +9156,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <tbody>
 <tr>
   <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
-  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/south">https://w3id.org/geosrs/south</a></p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/South">https://w3id.org/geosrs/South</a></p></td>
 </tr>
 <tr>
   <td class="tableblock halign-left valign-top"><p class="tableblock">Type</p></td>
@@ -9129,9 +9170,9 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 </table>
 </section>
 <section class="sect4">
-<h5 id="_instance_geosrsup">Instance: geosrs:up</h5>
+<h5 id="_instance_geosrsup">Instance: geosrs:Up</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 366. geosrs:up</caption>
+<caption class="title">Table 366. geosrs:Up</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -9139,7 +9180,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <tbody>
 <tr>
   <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
-  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/up">https://w3id.org/geosrs/up</a></p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/Up">https://w3id.org/geosrs/Up</a></p></td>
 </tr>
 <tr>
   <td class="tableblock halign-left valign-top"><p class="tableblock">Type</p></td>
@@ -9153,9 +9194,9 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 </table>
 </section>
 <section class="sect4">
-<h5 id="_instance_geosrswest">Instance: geosrs:west</h5>
+<h5 id="_instance_geosrswest">Instance: geosrs:West</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 367. geosrs:west</caption>
+<caption class="title">Table 367. geosrs:West</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -9163,7 +9204,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <tbody>
 <tr>
   <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
-  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/west">https://w3id.org/geosrs/west</a></p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/West">https://w3id.org/geosrs/West</a></p></td>
 </tr>
 <tr>
   <td class="tableblock halign-left valign-top"><p class="tableblock">Type</p></td>
@@ -10212,7 +10253,7 @@ They may be stated as part of a SPARQL 1.1 Service Description <a href="#SPARQLS
 </dd>
 <dt class="hdlist1">test-method</dt>
 <dd>
-<p>Verify that queries involving <a href="#_class_geosrsgeographicobject"><code>geosrs:GeographicObject</code></a> <a href="#_class_geosrsregisteroperations"><code>geosrs:RegisterOperations</code></a> <a href="#_class_geosrsscaleoperation"><code>geosrs:ScaleOperation</code></a> <a href="#_class_geosrsrotationoperation"><code>geosrs:RotationOperation</code></a> <a href="#_class_geosrsidentityoperation"><code>geosrs:IdentityOperation</code></a> <a href="#_class_geosrsshearoperation"><code>geosrs:ShearOperation</code></a> <a href="#_class_geosrstranslationoperation"><code>geosrs:TranslationOperation</code></a> <a href="#_class_geosrsaffinetransformationoperation"><code>geosrs:AffineTransformationOperation</code></a> <a href="#_class_geocrscoordinatetransformationoperation"><code>geocrs:CoordinateTransformationOperation</code></a>  return the correct result on a test dataset.</p>
+<p>Verify that queries involving <a href="#_class_geosrsgeographicobject"><code>geosrs:GeographicObject</code></a> <a href="#_class_geosrsregisteroperations"><code>geosrs:RegisterOperations</code></a> <a href="#_class_geosrsscaleoperation"><code>geosrs:ScaleOperation</code></a> <a href="#_class_geosrsrotationoperation"><code>geosrs:RotationOperation</code></a> <a href="#_class_geosrsidentityoperation"><code>geosrs:IdentityOperation</code></a> <a href="#_class_geosrsshearoperation"><code>geosrs:ShearOperation</code></a> <a href="#_class_geosrstranslationoperation"><code>geosrs:TranslationOperation</code></a> <a href="#_class_geosrsaffinetransformationoperation"><code>geosrs:AffineTransformationOperation</code></a> <a href="#_class_geosrscoordinatetransformationoperation"><code>geosrs:CoordinateTransformationOperation</code></a>  return the correct result on a test dataset.</p>
 </dd>
 <dt class="hdlist1">test-method-type</dt>
 <dd>
@@ -10220,7 +10261,7 @@ They may be stated as part of a SPARQL 1.1 Service Description <a href="#SPARQLS
 </dd>
 <dt class="hdlist1">reference</dt>
 <dd>
-<p><a href="#_class_geosrsgeographicobject"><code>geosrs:GeographicObject</code></a> <a href="#_class_geosrsregisteroperations"><code>geosrs:RegisterOperations</code></a> <a href="#_class_geosrsscaleoperation"><code>geosrs:ScaleOperation</code></a> <a href="#_class_geosrsrotationoperation"><code>geosrs:RotationOperation</code></a> <a href="#_class_geosrsidentityoperation"><code>geosrs:IdentityOperation</code></a> <a href="#_class_geosrsshearoperation"><code>geosrs:ShearOperation</code></a> <a href="#_class_geosrstranslationoperation"><code>geosrs:TranslationOperation</code></a> <a href="#_class_geosrsaffinetransformationoperation"><code>geosrs:AffineTransformationOperation</code></a> <a href="#_class_geocrscoordinatetransformationoperation"><code>geocrs:CoordinateTransformationOperation</code></a></p>
+<p><a href="#_class_geosrsgeographicobject"><code>geosrs:GeographicObject</code></a> <a href="#_class_geosrsregisteroperations"><code>geosrs:RegisterOperations</code></a> <a href="#_class_geosrsscaleoperation"><code>geosrs:ScaleOperation</code></a> <a href="#_class_geosrsrotationoperation"><code>geosrs:RotationOperation</code></a> <a href="#_class_geosrsidentityoperation"><code>geosrs:IdentityOperation</code></a> <a href="#_class_geosrsshearoperation"><code>geosrs:ShearOperation</code></a> <a href="#_class_geosrstranslationoperation"><code>geosrs:TranslationOperation</code></a> <a href="#_class_geosrsaffinetransformationoperation"><code>geosrs:AffineTransformationOperation</code></a> <a href="#_class_geosrscoordinatetransformationoperation"><code>geosrs:CoordinateTransformationOperation</code></a></p>
 </dd>
 </dl>
 </div>
@@ -11537,7 +11578,7 @@ They may be stated as part of a SPARQL 1.1 Service Description <a href="#SPARQLS
 </dd>
 <dt class="hdlist1">test-method</dt>
 <dd>
-<p>Verify that queries involving <a href="#Class: geosrs:down"><code>geosrs:down</code></a> <a href="#Class: geosrs:east"><code>geosrs:east</code></a> <a href="#Class: geosrs:north"><code>geosrs:north</code></a> <a href="#Class: geosrs:south"><code>geosrs:south</code></a> <a href="#Class: geosrs:up"><code>geosrs:up</code></a> <a href="#Class: geosrs:west"><code>geosrs:west</code></a>  return the correct result on a test dataset.</p>
+<p>Verify that queries involving <a href="#Class: geosrs:Down"><code>geosrs:Down</code></a> <a href="#Class: geosrs:East"><code>geosrs:East</code></a> <a href="#Class: geosrs:North"><code>geosrs:North</code></a> <a href="#Class: geosrs:South"><code>geosrs:South</code></a> <a href="#Class: geosrs:Up"><code>geosrs:Up</code></a> <a href="#Class: geosrs:West"><code>geosrs:West</code></a>  return the correct result on a test dataset.</p>
 </dd>
 <dt class="hdlist1">test-method-type</dt>
 <dd>
@@ -11545,7 +11586,7 @@ They may be stated as part of a SPARQL 1.1 Service Description <a href="#SPARQLS
 </dd>
 <dt class="hdlist1">reference</dt>
 <dd>
-<p><a href="#Class: geosrs:down"><code>geosrs:down</code></a> <a href="#Class: geosrs:east"><code>geosrs:east</code></a> <a href="#Class: geosrs:north"><code>geosrs:north</code></a> <a href="#Class: geosrs:south"><code>geosrs:south</code></a> <a href="#Class: geosrs:up"><code>geosrs:up</code></a> <a href="#Class: geosrs:west"><code>geosrs:west</code></a></p>
+<p><a href="#Class: geosrs:Down"><code>geosrs:Down</code></a> <a href="#Class: geosrs:East"><code>geosrs:East</code></a> <a href="#Class: geosrs:North"><code>geosrs:North</code></a> <a href="#Class: geosrs:South"><code>geosrs:South</code></a> <a href="#Class: geosrs:Up"><code>geosrs:Up</code></a> <a href="#Class: geosrs:West"><code>geosrs:West</code></a></p>
 </dd>
 </dl>
 </div>
@@ -13190,7 +13231,7 @@ In order to verify a graph a single validation file of SHACL shapes is provided 
   <td class="tableblock halign-left valign-top"><p class="tableblock">geosrs:CRS</p></td>
   <td class="tableblock halign-left valign-top"><p class="tableblock">geosrs:datum</p></td>
   <td class="tableblock halign-left valign-top"><p class="tableblock">geosrs:Datum</p></td>
-  <td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
   <td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
   <td class="tableblock halign-left valign-top"><p class="tableblock">A coordinate reference system should have exactly one datum</p></td>
 </tr>
@@ -13199,7 +13240,7 @@ In order to verify a graph a single validation file of SHACL shapes is provided 
   <td class="tableblock halign-left valign-top"><p class="tableblock">geosrs:CRS</p></td>
   <td class="tableblock halign-left valign-top"><p class="tableblock">geosrs:datumEnsemble</p></td>
   <td class="tableblock halign-left valign-top"><p class="tableblock">geosrs:DatumEnsemble</p></td>
-  <td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
   <td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
   <td class="tableblock halign-left valign-top"><p class="tableblock">A coordinate reference system may have exactly one datum ensemble</p></td>
 </tr>
@@ -13356,7 +13397,7 @@ In order to verify a graph a single validation file of SHACL shapes is provided 
   <td class="tableblock halign-left valign-top"><p class="tableblock">geosrs:CoordinateSystemAxis</p></td>
   <td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
   <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
-  <td class="tableblock halign-left valign-top"><p class="tableblock">A 3D coordinate system should have at least three axis</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">A 3D coordinate system should have at least three axes</p></td>
 </tr>
 <tr>
   <td class="tableblock halign-left valign-top"><p class="tableblock">Shape S2</p></td>
@@ -13365,7 +13406,7 @@ In order to verify a graph a single validation file of SHACL shapes is provided 
   <td class="tableblock halign-left valign-top"><p class="tableblock">geosrs:CoordinateSystemAxis</p></td>
   <td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
   <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
-  <td class="tableblock halign-left valign-top"><p class="tableblock">A conical coordinate system should have at least three axis</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">A conical coordinate system should have at least three axes</p></td>
 </tr>
 <tr>
   <td class="tableblock halign-left valign-top"><p class="tableblock">Shape S3</p></td>
@@ -13392,7 +13433,7 @@ In order to verify a graph a single validation file of SHACL shapes is provided 
   <td class="tableblock halign-left valign-top"><p class="tableblock">geosrs:CoordinateSystemAxis</p></td>
   <td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
   <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
-  <td class="tableblock halign-left valign-top"><p class="tableblock">A cylindrical coordinate system should have at least three axis</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">A cylindrical coordinate system should have at least three axes</p></td>
 </tr>
 <tr>
   <td class="tableblock halign-left valign-top"><p class="tableblock">Shape S6</p></td>
@@ -13410,7 +13451,7 @@ In order to verify a graph a single validation file of SHACL shapes is provided 
   <td class="tableblock halign-left valign-top"><p class="tableblock">geosrs:CoordinateSystemAxis</p></td>
   <td class="tableblock halign-left valign-top"><p class="tableblock">2</p></td>
   <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
-  <td class="tableblock halign-left valign-top"><p class="tableblock">A planar coordinate system should have at least two axis</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">A planar coordinate system should have at least two axes</p></td>
 </tr>
 <tr>
   <td class="tableblock halign-left valign-top"><p class="tableblock">Shape S8</p></td>
@@ -13579,7 +13620,7 @@ Actual References:
 </section>
 <div id="footer">
 <div id="footer-text">
-Last updated 2025-09-26 13:17:08 UTC
+Last updated 2025-09-26 13:21:58 UTC
 </div>
 </div>
 </body>

@@ -13,7 +13,7 @@ geosrs_planet:ArtificialSatellite a owl:Class ;
 geosrs_planet:Asteroid a owl:Class ;
     rdfs:label "Asteroid"@en ;
     rdfs:subClassOf geosrs_planet:InterstellarBody ;
-    skos:definition "Asteroid, any of a host of small bodies, about 1 000 km (600 miles) or less in diameter, that orbit the Sun primarily between the orbits of Mars and Jupiter in a nearly flat ring called the asteroid belt (source:https://www.britannica.com/science/asteroid) "@en .
+    skos:definition "Asteroid, any of a host of small bodies, about 1000 km (600 miles) or less in diameter, that orbit the Sun primarily between the orbits of Mars and Jupiter in a nearly flat ring called the asteroid belt (source:https://www.britannica.com/science/asteroid) "@en .
 
 geosrs_planet:Comet a owl:Class ;
     rdfs:label "Comet"@en ;

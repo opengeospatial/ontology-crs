@@ -130,7 +130,7 @@ def convertCSVToSHACLAndADoc():
                             adocdef+="| - "
                         if "Comment" in row and row["Comment"]!="":
                             adocdef+="|"+str(row["Comment"])+" "
-                            shaclres.add((URIRef(shapepropuri),URIRef("http://www.w3.org/2000/01/rdf-schema#comment"),Literal(str(row["Comment"]),lang="en")))
+                            shaclres.add((URIRef(shapepropuri),URIRef("http://www.w3.org/ns/shacl#message"),Literal(str(row["Comment"]),lang="en")))
                         else:
                             adocdef+="| - "
                         adocdef+="\n\n"

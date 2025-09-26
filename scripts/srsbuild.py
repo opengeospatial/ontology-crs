@@ -741,48 +741,7 @@ requirementsttl.serialize("requirements.ttl",format="ttl")
 
 # Generate alignments
 generateAlignments()
-"""
-alignments=""
-for prefix in alignmentadoc:
-    alignments+="=== "+str(prefix).upper()+" Ontology\n\n.Alignment: "+str(prefix).upper()+" Ontology\n[%autowidth]\n|===\n| From Element | Mapping relation | To Element | Notes\n\n"
-    prefixdict=alignmentadoc[prefix]
-    for aligns in sorted(prefixdict.keys()):
-        alignments+=prefixdict[aligns]
-    alignments+="|===\n\n"
 
-with open("spec/sections/ab-alignments.adoc", 'r',encoding="utf-8") as f:
-    alignmentdoc=f.read()
-
-with open("spec/sections/ab-alignments.adoc", 'w',encoding="utf-8") as f:
-    f.write(alignmentdoc[0:alignmentdoc.find("=== IGN CRS Ontology")]+alignments)
-
-galigns.serialize(destination="alignments.ttl")
-
-for pref in prefixtoclasses:
-    if pref!="geosrs_srs":
-        ldcontext["@context"][pref]=geocrsNS[:-1]+"/"+pref.replace("geosrs_","")+"/"
-    for cls in prefixtoclasses[pref]:
-        ldcontext["@context"][cls[cls.rfind('/')+1:]]=pref.replace("geosrs_srs","geosrs")+":"+cls[cls.rfind('/')+1:]
-    if pref in prefixtoproperties:
-        for cls in prefixtoproperties[pref]:
-            ldcontext["@context"][convertCamelToSnake(cls[cls.rfind('/')+1:])]=pref.replace("geosrs_srs","geosrs")+":"+cls[cls.rfind('/')+1:]
-#print(prefixtoproperties)
-os.mkdir("context")
-with open('context/geosrs-context.json', 'w',encoding="utf-8") as f:
-    json.dump(ldcontext, f,indent=2,sort_keys=True)
-
-dirname = os.path.dirname(__file__)
-abspath = os.path.join(dirname, '../examples/')
-directory = os.fsencode(abspath)  
-for file in os.listdir(directory):
-    filename = os.fsdecode(file)
-    if filename.endswith(".json"):
-       gr = Graph()
-       gr.parse(location=abspath+filename, format='json-ld')
-       gr.serialize(destination=abspath+filename.replace(".json",".ttl"), format='turtle')
-
-#print(moduleToAdoc)
-"""
 convertCSVToSHACLAndADoc()
 
 # Generate modspec elements

@@ -18,9 +18,9 @@ def addExamplesToPyLode(examples,filepath,basename=""):
     for exx in examples:
         ex=exx.replace("geosrs:","https://w3id.org/geosrs/srs/"+basename)
         if basename=="projection":
-            filedata=filedata.replace("<code>"+ex+"</code></td></tr>","<code>"+ex+"</code></td></tr><tr><th>Example</th><td><a href=\""+examples[ex]+"\">"+ex+"</a></td></tr><tr><th>Image</th><td><img src=\"https://raw.githubusercontent.com/situx/proj4rdf/refs/heads/main/resources/projection/"+ex[ex.rfinf("/")+1]+".svg\" width=\"50%\"/></td></tr>")
+            filedata=filedata.replace("<code>"+ex+"</code></td></tr>","<code>"+ex+"</code></td></tr><tr><th>Example</th><td><a href=\""+examples[exx]+"\">"+ex+"</a></td></tr><tr><th>Image</th><td><img src=\"https://raw.githubusercontent.com/situx/proj4rdf/refs/heads/main/resources/projection/"+ex[ex.rfinf("/")+1]+".svg\" width=\"50%\"/></td></tr>")
         else:
-            filedata=filedata.replace("<code>"+ex+"</code></td></tr>","<code>"+ex+"</code></td></tr><tr><th>Example</th><td><a href=\""+examples[ex]+"\">"+ex+"</a></td></tr>")
+            filedata=filedata.replace("<code>"+ex+"</code></td></tr>","<code>"+ex+"</code></td></tr><tr><th>Example</th><td><a href=\""+examples[exx]+"\">"+ex+"</a></td></tr>")
     with open(filepath, 'w') as file:
         file.write(filedata)
 

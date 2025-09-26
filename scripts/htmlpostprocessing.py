@@ -19,14 +19,14 @@ def addExamplesToPyLode(examples,filepath,basename=""):
         ex=exx.replace("geosrs:","https://w3id.org/geosrs/"+basename+"/").replace("geosrsgeod:","https://w3id.org/geosrs/"+basename+"/")
         #print(ex)
         #print(exx)
-        if exx in filedata:
-            print("FOUND: "+str(exx))
-        if "<code>"+exx+"</code></td>" in filedata:
-            print("FOUND: <code>"+exx+"</code></td>")
+        if ex in filedata:
+            print("FOUND: "+str(ex))
+        if "<code>"+ex+"</code></td>" in filedata:
+            print("FOUND: <code>"+ex+"</code></td>")
         if basename=="projection":
-            filedata=filedata.replace("<code>"+exx+"</code></td>","<code>"+exx+"</code></td></tr><tr><th>Example</th><td><a target=\"_blank\" href=\""+examples[exx]+"\">"+ex+"</a></td></tr><tr><th>Image</th><td><img src=\"https://raw.githubusercontent.com/situx/proj4rdf/refs/heads/main/resources/projection/"+ex[ex.rfind("/")+1]+".svg\" width=\"50%\"/></td>")
+            filedata=filedata.replace("<code>"+ex+"</code></td>","<code>"+ex+"</code></td></tr><tr><th>Example</th><td><a target=\"_blank\" href=\""+examples[exx]+"\">"+ex+"</a></td></tr><tr><th>Image</th><td><img src=\"https://raw.githubusercontent.com/situx/proj4rdf/refs/heads/main/resources/projection/"+ex[ex.rfind("/")+1]+".svg\" width=\"50%\"/></td>")
         else:
-            filedata=filedata.replace("<code>"+exx+"</code></td>","<code>"+exx+"</code></td></tr><tr><th>Example</th><td><a target=\"_blank\" href=\""+examples[exx]+"\">"+ex+"</a></td>")
+            filedata=filedata.replace("<code>"+ex+"</code></td>","<code>"+ex+"</code></td></tr><tr><th>Example</th><td><a target=\"_blank\" href=\""+examples[exx]+"\">"+ex+"</a></td>")
     with open(filepath, 'w') as file:
         file.write(filedata)
 

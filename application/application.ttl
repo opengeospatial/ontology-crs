@@ -6,71 +6,85 @@
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-geosrs_application:CadastreMap a owl:Class ;
-    rdfs:label "Cadastre Map"@en ;
-    rdfs:subClassOf geosrs_application:SRSApplication ;
-    skos:definition "A map displaying a cadastre."@en .
-
 geosrs_application:CoastalHydrography a owl:Class ;
     rdfs:label "coastal hydrography"@en ;
-    rdfs:subClassOf geosrs_application:SRSApplication .
+    rdfs:subClassOf geosrs_application:Hydrography ;
+    skos:definition "Hydrographic surveying & monitoring focused on nearshore waters, where navigation safety and coastal change are most critical."@en .
 
 geosrs_application:Drilling a owl:Class ;
     rdfs:label "drilling"@en ;
-    rdfs:subClassOf geosrs_application:SRSApplication .
+    rdfs:subClassOf geosrs_application:SRSApplication ;
+    skos:definition "Drilling is the process of creating holes in the ground (or other solid materials) using specialized tools, widely applied in energy, construction, mining, and manufacturing."@en .
 
 geosrs_application:EngineeringSurvey a owl:Class ;
     rdfs:label "engineering survey"@en ;
-    rdfs:subClassOf geosrs_application:SRSApplication .
-
-geosrs_application:Hydrography a owl:Class ;
-    rdfs:label "hydrography"@en ;
-    rdfs:subClassOf geosrs_application:SRSApplication .
+    rdfs:subClassOf geosrs_application:SRSApplication ;
+    skos:definition "An engineering survey is the branch of surveying that provides the precise measurements and data needed to plan, build, and maintain engineering and infrastructure projects."@en .
 
 geosrs_application:NauticalChart a owl:Class ;
     rdfs:label "Nautical Chart"@en ;
     rdfs:subClassOf geosrs_application:SRSApplication ;
+    owl:disjointWith geosrs_application:CadastreMap ;
     skos:definition "A graphic representation of a sea area and adjacent coastal regions."@en .
 
 geosrs_application:OffshoreEngineering a owl:Class ;
     rdfs:label "offshore engineering"@en ;
-    rdfs:subClassOf geosrs_application:SRSApplication .
+    rdfs:subClassOf geosrs_application:SRSApplication ;
+    skos:definition "Offshore engineering (also called ocean engineering or marine engineering in some contexts) is the branch of engineering concerned with the design, construction, installation, and maintenance of structures and systems in the ocean environment, such as oil and gas platforms, subsea pipelines, and renewable energy facilities."@en .
 
 geosrs_application:OilAndGasExploration a owl:Class ;
     rdfs:label "oil and gas exploration"@en ;
-    rdfs:subClassOf geosrs_application:SRSApplication .
+    rdfs:subClassOf geosrs_application:SRSApplication ;
+    skos:definition "Oil and natural gas exploration is the search for underground or underwater reservoirs containing hydrocarbons, using geological and geophysical methods, followed by drilling to confirm and produce them."@en .
 
 geosrs_application:SatelliteNavigation a owl:Class ;
     rdfs:label "satellite navigation"@en ;
-    rdfs:subClassOf geosrs_application:SRSApplication .
+    rdfs:subClassOf geosrs_application:SRSApplication ;
+    skos:definition "Satellite navigation is a system that uses satellites to provide autonomous geo-spatial positioning. It allows small electronic receivers to determine their location (longitude, latitude, and altitude) to high precision using time signals transmitted along a line of sight by radio from satellites."@en .
 
 geosrs_application:SatelliteSurvey a owl:Class ;
     rdfs:label "satellite survey"@en ;
-    rdfs:subClassOf geosrs_application:SRSApplication .
+    rdfs:subClassOf geosrs_application:SRSApplication ;
+    skos:definition "A remote sensing survey conducted from Earth-orbiting satellites, collecting imagery and other data without direct ground contact."@en .
 
 geosrs_application:SpatialReferencing a owl:Class ;
     rdfs:label "Spatial Referencing"@en ;
-    rdfs:subClassOf geosrs_application:SRSApplication .
-
-geosrs_application:ThematicMap a owl:Class ;
-    rdfs:label "Thematic Map"@en ;
     rdfs:subClassOf geosrs_application:SRSApplication ;
-    skos:definition "A map used to highlight a specific phenomenon."@en .
+    skos:definition "Spatial referencing is the process of assigning real-world coordinates to data so that it can be located on the Earth’s surface and used in a geographic information system (GIS)."@en .
 
 geosrs_application:TopographicMap a owl:Class ;
     rdfs:label "Topographic Map"@en ;
     rdfs:subClassOf geosrs_application:SRSApplication ;
+    owl:disjointWith geosrs_application:ThematicMap ;
     skos:definition "A type of map characterized by large-scale detail and quantitative representation of relief."@en .
-
-geosrs_application:WeatherMap a owl:Class ;
-    rdfs:label "Weather Map"@en ;
-    rdfs:subClassOf geosrs_application:SRSApplication ;
-    skos:definition "A map for showing the local direction in which weather systems are moving."@en .
 
 geosrs:applicationapplication a owl:Ontology ;
     rdfs:label "SRS Ontology: Geosrs_application"@en ;
     vann:preferredNamespacePrefix "geosrs_application"^^xsd:string ;
     vann:preferredNamespaceUri "https://w3id.org/geosrs/application/"^^xsd:anyURI .
+
+geosrs_application:CadastreMap a owl:Class ;
+    rdfs:label "Cadastre Map"@en ;
+    rdfs:subClassOf geosrs_application:SRSApplication ;
+    owl:disjointWith geosrs_application:WeatherMap ;
+    skos:definition "A map displaying a cadastre."@en .
+
+geosrs_application:Hydrography a owl:Class ;
+    rdfs:label "hydrography"@en ;
+    rdfs:subClassOf geosrs_application:SRSApplication ;
+    skos:definition "Hydrography is the branch of applied sciences which deals with the measurement and description of the physical features of oceans, seas, coastal areas, lakes, and rivers, as well as the prediction of their change over time, for the primary purpose of safety of navigation and in support of all other marine activities, including economic development, security and defense, scientific research, and environmental protection."@en .
+
+geosrs_application:ThematicMap a owl:Class ;
+    rdfs:label "Thematic Map"@en ;
+    rdfs:subClassOf geosrs_application:SRSApplication ;
+    owl:disjointWith geosrs_application:WeatherMap ;
+    skos:definition "A map used to highlight a specific phenomenon."@en .
+
+geosrs_application:WeatherMap a owl:Class ;
+    rdfs:label "Weather Map"@en ;
+    rdfs:subClassOf geosrs_application:SRSApplication ;
+    owl:disjointWith geosrs_application:ThematicMap ;
+    skos:definition "A map for showing the local direction in which weather systems are moving."@en .
 
 geosrs_application:SRSApplication a owl:Class ;
     rdfs:label "SRS Application"@en ;

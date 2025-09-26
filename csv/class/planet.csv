@@ -1,6 +1,6 @@
 Concept,SuperClass,DisjointClass,Label,Definition,Requirement,ISO 19111,IGN 2019,Proj4RDF,GeoSPARQL,Core Class?
 geosrs:ArtificialSatellite,geosrs:Satellite,,Artificial Satellite,,Interstellar Body,,,geocrs:ArtificialSatellite,,Astronomy
-geosrs:Asteroid,geosrs:InterstellarBody,,Asteroid,"Asteroid, any of a host of small bodies, about 1,000 km (600 miles) or less in diameter, that orbit the Sun primarily between the orbits of Mars and Jupiter in a nearly flat ring called the asteroid belt (source:https://www.britannica.com/science/asteroid) ",Interstellar Body,,,geocrs:Asteroid,,Astronomy
+geosrs:Asteroid,geosrs:InterstellarBody,,Asteroid,"Asteroid, any of a host of small bodies, about 1 000 km (600 miles) or less in diameter, that orbit the Sun primarily between the orbits of Mars and Jupiter in a nearly flat ring called the asteroid belt (source:https://www.britannica.com/science/asteroid) ",Interstellar Body,,,geocrs:Asteroid,,Astronomy
 geosrs:Comet,geosrs:InterstellarBody,,Comet,,Interstellar Body,,,geocrs:Comet,,Astronomy
 geosrs:DwarfPlanet,,,Dwarf Planet,,Interstellar Body,,,geocrs:DwarfPlanet,,Astronomy
 geosrs:InterstellarBody,,,Interstellar Body,,Interstellar Body,,,geocrs:InterstellarBody,,Astronomy

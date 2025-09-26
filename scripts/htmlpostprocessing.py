@@ -16,7 +16,7 @@ def addExamplesToPyLode(examples,filepath,basename=""):
     with open(filepath, 'r') as file:
         filedata = file.read()
     for exx in examples:
-        ex=exx.replace("geosrs:","https://w3id.org/geosrs/srs/"+basename)
+        ex=exx.replace("geosrs:","https://w3id.org/geosrs/srs/"+basename+"/")
         print(ex)
         print(exx)
         if basename=="projection":

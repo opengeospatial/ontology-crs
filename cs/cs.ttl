@@ -31,6 +31,16 @@ geosrs_cs:DateTimeTemporalCoordinateSystem a owl:Class ;
     rdfs:subClassOf geosrs_cs:TemporalCoordinateSystem ;
     skos:definition "One-dimensional coordinate system used to record time in dateTime representation as defined in ISO 8601."@en .
 
+geosrs_cs:Down a owl:NamedIndividual,
+        geosrs:AxisDirection ;
+    rdfs:label "Down"@en ;
+    skos:definition "Downwards axis direction"@en .
+
+geosrs_cs:East a owl:NamedIndividual,
+        geosrs:AxisDirection ;
+    rdfs:label "East"@en ;
+    skos:definition "east axis direction"@en .
+
 geosrs_cs:EclipticCoordinateSystem a owl:Class ;
     rdfs:label "Ecliptic Coordinate System"@en ;
     rdfs:subClassOf geosrs_cs:CelestialCoordinateSystem ;
@@ -73,6 +83,11 @@ geosrs_cs:LocalCoordinateSystem a owl:Class ;
     rdfs:subClassOf geosrs:CoordinateSystem ;
     skos:definition "Coordinate system with a point of local reference."@en .
 
+geosrs_cs:North a owl:NamedIndividual,
+        geosrs:AxisDirection ;
+    rdfs:label "North"@en ;
+    skos:definition "North axis direction"@en .
+
 geosrs_cs:ObliqueCoordinateSystem a owl:Class ;
     rdfs:label "Oblique Coordinate System"@en ;
     rdfs:subClassOf geosrs:CoordinateSystem ;
@@ -93,6 +108,11 @@ geosrs_cs:SkewCoordinateSystem a owl:Class ;
     rdfs:subClassOf geosrs_cs:CurvilinearCoordinateSystem ;
     skos:definition "A skew coordinate system is a system of curvilinear coordinates in which each family of surfaces intersects the others at angles other than right angles."@en .
 
+geosrs_cs:South a owl:NamedIndividual,
+        geosrs:AxisDirection ;
+    rdfs:label "South"@en ;
+    skos:definition "South axis direction"@en .
+
 geosrs_cs:SuperGalacticCS a owl:Class ;
     rdfs:label "Super Galactic Coordinate System"@en ;
     rdfs:subClassOf geosrs_cs:3DCoordinateSystem,
@@ -109,6 +129,16 @@ geosrs_cs:TemporalMeasureCoordinateSystem a owl:Class ;
     rdfs:subClassOf geosrs_cs:TemporalCoordinateSystem ;
     skos:definition "One-dimensional coordinate system used to record a time as a real number."@en .
 
+geosrs_cs:Up a owl:NamedIndividual,
+        geosrs:AxisDirection ;
+    rdfs:label "Up"@en ;
+    skos:definition "Up axis direction"@en .
+
+geosrs_cs:West a owl:NamedIndividual,
+        geosrs:AxisDirection ;
+    rdfs:label "West"@en ;
+    skos:definition "West axis direction"@en .
+
 geosrs_cs:axis a owl:ObjectProperty ;
     rdfs:label "Axis"@en ;
     rdfs:domain geosrs:CoordinateSystem ;
@@ -120,36 +150,6 @@ geosrs_cs:axisDirection a owl:ObjectProperty ;
     rdfs:domain geosrs:Axis ;
     rdfs:range geosrs:AxisDirection ;
     skos:definition "The direction of an axis. Cf. ISO 19111:2007:2007-07, table 27, attribute coordinate system axis direction."@en .
-
-geosrs_cs:down a owl:NamedIndividual,
-        geosrs:AxisDirection ;
-    rdfs:label "Down"@en ;
-    skos:definition "Downwards axis direction"@en .
-
-geosrs_cs:east a owl:NamedIndividual,
-        geosrs:AxisDirection ;
-    rdfs:label "East"@en ;
-    skos:definition "east axis direction"@en .
-
-geosrs_cs:north a owl:NamedIndividual,
-        geosrs:AxisDirection ;
-    rdfs:label "North"@en ;
-    skos:definition "North axis direction"@en .
-
-geosrs_cs:south a owl:NamedIndividual,
-        geosrs:AxisDirection ;
-    rdfs:label "South"@en ;
-    skos:definition "South axis direction"@en .
-
-geosrs_cs:up a owl:NamedIndividual,
-        geosrs:AxisDirection ;
-    rdfs:label "Up"@en ;
-    skos:definition "Up axis direction"@en .
-
-geosrs_cs:west a owl:NamedIndividual,
-        geosrs:AxisDirection ;
-    rdfs:label "West"@en ;
-    skos:definition "West axis direction"@en .
 
 geosrs:cscs a owl:Ontology ;
     rdfs:label "SRS Ontology: Geosrs_cs"@en ;

@@ -490,14 +490,138 @@ Together with several subtypes of coordnate reference system, these definitions 
 <div class="title">Example 3. Coordinate Reference System Properties</div>
 <div class="content">
 <p class="paragraph">
-<p>Implementations shall allow the RDFS properties <a href="#_property_geosrsbasecrs"><code>geosrs:baseCRS</code></a>, <a href="#_property_geosrsconversion"><code>geosrs:conversion</code></a>, <a href="#_property_geosrscoordinatesystem"><code>geosrs:coordinateSystem</code></a>, <a href="#_property_geosrsdatum"><code>geosrs:datum</code></a>, <a href="#_property_geosrsdatumensemble"><code>geosrs:datumEnsemble</code></a>, <a href="#_property_geosrsdomainofvalidity"><code>geosrs:domainOfValidity</code></a>, <a href="#_property_geosrsmethod"><code>geosrs:method</code></a>, <a href="#_property_geocrsasproj4"><code>geocrs:asProj4</code></a>, <a href="#_property_geocrsasprojjson"><code>geocrs:asProjJSON</code></a>, <a href="#_property_geocrsaswkt"><code>geocrs:asWKT</code></a>, <a href="#_property_geosrsepsgcode"><code>geosrs:EPSGcode</code></a> to be used in SPARQL graph patterns.</p>
+<p>Implementations shall allow the RDFS properties <a href="#_property_geocrsasproj4"><code>geocrs:asProj4</code></a>, <a href="#_property_geocrsasprojjson"><code>geocrs:asProjJSON</code></a>, <a href="#_property_geocrsaswkt"><code>geocrs:asWKT</code></a>, <a href="#_property_geosrsepsgcode"><code>geosrs:EPSGcode</code></a>, <a href="#_property_geosrsbasecrs"><code>geosrs:baseCRS</code></a>, <a href="#_property_geosrsconversion"><code>geosrs:conversion</code></a>, <a href="#_property_geosrscoordinatesystem"><code>geosrs:coordinateSystem</code></a>, <a href="#_property_geosrsdatum"><code>geosrs:datum</code></a>, <a href="#_property_geosrsdatumensemble"><code>geosrs:datumEnsemble</code></a>, <a href="#_property_geosrsdomainofvalidity"><code>geosrs:domainOfValidity</code></a>, <a href="#_property_geosrsmethod"><code>geosrs:method</code></a> to be used in SPARQL graph patterns.</p>
 </p>
 </div>
 </aside>
 <section class="sect4">
+<h5 id="_property_geocrsasproj4">Property: geocrs:asProj4</h5>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Table 6. geocrs:asProj4</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">geocrs:asProj4</p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Type</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://www.w3.org/2002/07/owl#DatatypeProperty">owl:DatatypeProperty</a></p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Definition</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">PROJ4 string defining a CRS. Note: this paradigm is ambiguous and presently considered outdated.</p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Range</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/srs/proj4Literal">proj4Literal</a></p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Domain</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/srs/CRS">CRS</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sect4">
+<h5 id="_property_geocrsasprojjson">Property: geocrs:asProjJSON</h5>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Table 7. geocrs:asProjJSON</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">geocrs:asProjJSON</p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Type</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://www.w3.org/2002/07/owl#DatatypeProperty">owl:DatatypeProperty</a></p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Definition</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">CRS definition encoded as a JSON object interpretable by PROJ4.</p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Range</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/srs/projJSONLiteral">projJSONLiteral</a></p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Domain</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/srs/CRS">CRS</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sect4">
+<h5 id="_property_geocrsaswkt">Property: geocrs:asWKT</h5>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Table 8. geocrs:asWKT</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">geocrs:asWKT</p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Type</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://www.w3.org/2002/07/owl#DatatypeProperty">owl:DatatypeProperty</a></p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Definition</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">CRS definition encoded according to the Well Known Text structure. Cf. ISO 19162:2019.</p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Range</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/srs/wktLiteral">wktLiteral</a></p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Domain</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/srs/CRS">CRS</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sect4">
+<h5 id="_property_geosrsepsgcode">Property: geosrs:EPSGcode</h5>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Table 9. geosrs:EPSGcode</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/srs/EPSGcode">https://w3id.org/geosrs/srs/EPSGcode</a></p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Type</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://www.w3.org/2002/07/owl#DatatypeProperty">owl:DatatypeProperty</a></p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Definition</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Identifier of this resource in the EPSG Geodetic Parameter Dataset.</p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Range</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://www.w3.org/2001/XMLSchema#string">xsd:string</a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="sect4">
 <h5 id="_property_geosrsbasecrs">Property: geosrs:baseCRS</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 6. geosrs:baseCRS</caption>
+<caption class="title">Table 10. geosrs:baseCRS</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -529,7 +653,7 @@ Together with several subtypes of coordnate reference system, these definitions 
 <section class="sect4">
 <h5 id="_property_geosrsconversion">Property: geosrs:conversion</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 7. geosrs:conversion</caption>
+<caption class="title">Table 11. geosrs:conversion</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -561,7 +685,7 @@ Together with several subtypes of coordnate reference system, these definitions 
 <section class="sect4">
 <h5 id="_property_geosrscoordinatesystem">Property: geosrs:coordinateSystem</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 8. geosrs:coordinateSystem</caption>
+<caption class="title">Table 12. geosrs:coordinateSystem</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -597,7 +721,7 @@ Together with several subtypes of coordnate reference system, these definitions 
 <section class="sect4">
 <h5 id="_property_geosrsdatum">Property: geosrs:datum</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 9. geosrs:datum</caption>
+<caption class="title">Table 13. geosrs:datum</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -629,7 +753,7 @@ Together with several subtypes of coordnate reference system, these definitions 
 <section class="sect4">
 <h5 id="_property_geosrsdatumensemble">Property: geosrs:datumEnsemble</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 10. geosrs:datumEnsemble</caption>
+<caption class="title">Table 14. geosrs:datumEnsemble</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -661,7 +785,7 @@ Together with several subtypes of coordnate reference system, these definitions 
 <section class="sect4">
 <h5 id="_property_geosrsdomainofvalidity">Property: geosrs:domainOfValidity</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 11. geosrs:domainOfValidity</caption>
+<caption class="title">Table 15. geosrs:domainOfValidity</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -693,7 +817,7 @@ Together with several subtypes of coordnate reference system, these definitions 
 <section class="sect4">
 <h5 id="_property_geosrsmethod">Property: geosrs:method</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 12. geosrs:method</caption>
+<caption class="title">Table 16. geosrs:method</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -714,130 +838,6 @@ Together with several subtypes of coordnate reference system, these definitions 
 <tr>
   <td class="tableblock halign-left valign-top"><p class="tableblock">Domain</p></td>
   <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/srs/CRS">CRS</a></p></td>
-</tr>
-</tbody>
-</table>
-</section>
-<section class="sect4">
-<h5 id="_property_geocrsasproj4">Property: geocrs:asProj4</h5>
-<table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 13. geocrs:asProj4</caption>
-<colgroup>
-<col style="width: 50%;">
-<col style="width: 50%;">
-</colgroup>
-<tbody>
-<tr>
-  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
-  <td class="tableblock halign-left valign-top"><p class="tableblock">geocrs:asProj4</p></td>
-</tr>
-<tr>
-  <td class="tableblock halign-left valign-top"><p class="tableblock">Type</p></td>
-  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://www.w3.org/2002/07/owl#DatatypeProperty">owl:DatatypeProperty</a></p></td>
-</tr>
-<tr>
-  <td class="tableblock halign-left valign-top"><p class="tableblock">Definition</p></td>
-  <td class="tableblock halign-left valign-top"><p class="tableblock">PROJ4 string defining a CRS. Note: this paradigm is ambiguous and presently considered outdated.</p></td>
-</tr>
-<tr>
-  <td class="tableblock halign-left valign-top"><p class="tableblock">Range</p></td>
-  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/srs/proj4Literal">proj4Literal</a></p></td>
-</tr>
-<tr>
-  <td class="tableblock halign-left valign-top"><p class="tableblock">Domain</p></td>
-  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/srs/CRS">CRS</a></p></td>
-</tr>
-</tbody>
-</table>
-</section>
-<section class="sect4">
-<h5 id="_property_geocrsasprojjson">Property: geocrs:asProjJSON</h5>
-<table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 14. geocrs:asProjJSON</caption>
-<colgroup>
-<col style="width: 50%;">
-<col style="width: 50%;">
-</colgroup>
-<tbody>
-<tr>
-  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
-  <td class="tableblock halign-left valign-top"><p class="tableblock">geocrs:asProjJSON</p></td>
-</tr>
-<tr>
-  <td class="tableblock halign-left valign-top"><p class="tableblock">Type</p></td>
-  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://www.w3.org/2002/07/owl#DatatypeProperty">owl:DatatypeProperty</a></p></td>
-</tr>
-<tr>
-  <td class="tableblock halign-left valign-top"><p class="tableblock">Definition</p></td>
-  <td class="tableblock halign-left valign-top"><p class="tableblock">CRS definition encoded as a JSON object interpretable by PROJ4.</p></td>
-</tr>
-<tr>
-  <td class="tableblock halign-left valign-top"><p class="tableblock">Range</p></td>
-  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/srs/projJSONLiteral">projJSONLiteral</a></p></td>
-</tr>
-<tr>
-  <td class="tableblock halign-left valign-top"><p class="tableblock">Domain</p></td>
-  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/srs/CRS">CRS</a></p></td>
-</tr>
-</tbody>
-</table>
-</section>
-<section class="sect4">
-<h5 id="_property_geocrsaswkt">Property: geocrs:asWKT</h5>
-<table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 15. geocrs:asWKT</caption>
-<colgroup>
-<col style="width: 50%;">
-<col style="width: 50%;">
-</colgroup>
-<tbody>
-<tr>
-  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
-  <td class="tableblock halign-left valign-top"><p class="tableblock">geocrs:asWKT</p></td>
-</tr>
-<tr>
-  <td class="tableblock halign-left valign-top"><p class="tableblock">Type</p></td>
-  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://www.w3.org/2002/07/owl#DatatypeProperty">owl:DatatypeProperty</a></p></td>
-</tr>
-<tr>
-  <td class="tableblock halign-left valign-top"><p class="tableblock">Definition</p></td>
-  <td class="tableblock halign-left valign-top"><p class="tableblock">CRS definition encoded according to the Well Known Text structure. Cf. ISO 19162:2019.</p></td>
-</tr>
-<tr>
-  <td class="tableblock halign-left valign-top"><p class="tableblock">Range</p></td>
-  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/srs/wktLiteral">wktLiteral</a></p></td>
-</tr>
-<tr>
-  <td class="tableblock halign-left valign-top"><p class="tableblock">Domain</p></td>
-  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://w3id.org/geosrs/srs/CRS">CRS</a></p></td>
-</tr>
-</tbody>
-</table>
-</section>
-<section class="sect4">
-<h5 id="_property_geosrsepsgcode">Property: geosrs:EPSGcode</h5>
-<table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 16. geosrs:EPSGcode</caption>
-<colgroup>
-<col style="width: 50%;">
-<col style="width: 50%;">
-</colgroup>
-<tbody>
-<tr>
-  <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
-  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/srs/EPSGcode">https://w3id.org/geosrs/srs/EPSGcode</a></p></td>
-</tr>
-<tr>
-  <td class="tableblock halign-left valign-top"><p class="tableblock">Type</p></td>
-  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://www.w3.org/2002/07/owl#DatatypeProperty">owl:DatatypeProperty</a></p></td>
-</tr>
-<tr>
-  <td class="tableblock halign-left valign-top"><p class="tableblock">Definition</p></td>
-  <td class="tableblock halign-left valign-top"><p class="tableblock">Identifier of this resource in the EPSG Geodetic Parameter Dataset.</p></td>
-</tr>
-<tr>
-  <td class="tableblock halign-left valign-top"><p class="tableblock">Range</p></td>
-  <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://www.w3.org/2001/XMLSchema#string">xsd:string</a></p></td>
 </tr>
 </tbody>
 </table>
@@ -2739,11 +2739,11 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 </dd>
 <dt class="hdlist1">requirement</dt>
 <dd>
-<p>/req/datum/Datum_Properties</p>
+<p>/req/datum/Spheroid_Properties</p>
 </dd>
 <dt class="hdlist1">requirement</dt>
 <dd>
-<p>/req/datum/Spheroid_Properties</p>
+<p>/req/datum/Datum_Properties</p>
 </dd>
 </dl>
 </div>
@@ -8985,14 +8985,14 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <div class="title">Example 49. Coordinate System Axis</div>
 <div class="content">
 <p class="paragraph">
-<p>Implementations shall allow the RDFS instances <a href="#_instance_geosrsdown"><code>geosrs:down</code></a>, <a href="#_instance_geosrseast"><code>geosrs:east</code></a>, <a href="#_instance_geosrsnorth"><code>geosrs:north</code></a>, <a href="#_instance_geosrssouth"><code>geosrs:south</code></a>, <a href="#_instance_geosrsup"><code>geosrs:up</code></a>, <a href="#_instance_geosrswest"><code>geosrs:west</code></a> to be used in SPARQL graph patterns.</p>
+<p>Implementations shall allow the RDFS instances <a href="#_instance_geosrsdown"><code>geosrs:Down</code></a>, <a href="#_instance_geosrseast"><code>geosrs:East</code></a>, <a href="#_instance_geosrsnorth"><code>geosrs:North</code></a>, <a href="#_instance_geosrssouth"><code>geosrs:South</code></a>, <a href="#_instance_geosrsup"><code>geosrs:Up</code></a>, <a href="#_instance_geosrswest"><code>geosrs:West</code></a> to be used in SPARQL graph patterns.</p>
 </p>
 </div>
 </aside>
 <section class="sect4">
-<h5 id="_instance_geosrsdown">Instance: geosrs:down</h5>
+<h5 id="_instance_geosrsdown">Instance: geosrs:Down</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 361. geosrs:down</caption>
+<caption class="title">Table 361. geosrs:Down</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -9000,7 +9000,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <tbody>
 <tr>
   <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
-  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/down">https://w3id.org/geosrs/down</a></p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/Down">https://w3id.org/geosrs/Down</a></p></td>
 </tr>
 <tr>
   <td class="tableblock halign-left valign-top"><p class="tableblock">Type</p></td>
@@ -9014,9 +9014,9 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 </table>
 </section>
 <section class="sect4">
-<h5 id="_instance_geosrseast">Instance: geosrs:east</h5>
+<h5 id="_instance_geosrseast">Instance: geosrs:East</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 362. geosrs:east</caption>
+<caption class="title">Table 362. geosrs:East</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -9024,7 +9024,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <tbody>
 <tr>
   <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
-  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/east">https://w3id.org/geosrs/east</a></p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/East">https://w3id.org/geosrs/East</a></p></td>
 </tr>
 <tr>
   <td class="tableblock halign-left valign-top"><p class="tableblock">Type</p></td>
@@ -9038,9 +9038,9 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 </table>
 </section>
 <section class="sect4">
-<h5 id="_instance_geosrsnorth">Instance: geosrs:north</h5>
+<h5 id="_instance_geosrsnorth">Instance: geosrs:North</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 363. geosrs:north</caption>
+<caption class="title">Table 363. geosrs:North</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -9048,7 +9048,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <tbody>
 <tr>
   <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
-  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/north">https://w3id.org/geosrs/north</a></p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/North">https://w3id.org/geosrs/North</a></p></td>
 </tr>
 <tr>
   <td class="tableblock halign-left valign-top"><p class="tableblock">Type</p></td>
@@ -9062,9 +9062,9 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 </table>
 </section>
 <section class="sect4">
-<h5 id="_instance_geosrssouth">Instance: geosrs:south</h5>
+<h5 id="_instance_geosrssouth">Instance: geosrs:South</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 364. geosrs:south</caption>
+<caption class="title">Table 364. geosrs:South</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -9072,7 +9072,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <tbody>
 <tr>
   <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
-  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/south">https://w3id.org/geosrs/south</a></p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/South">https://w3id.org/geosrs/South</a></p></td>
 </tr>
 <tr>
   <td class="tableblock halign-left valign-top"><p class="tableblock">Type</p></td>
@@ -9086,9 +9086,9 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 </table>
 </section>
 <section class="sect4">
-<h5 id="_instance_geosrsup">Instance: geosrs:up</h5>
+<h5 id="_instance_geosrsup">Instance: geosrs:Up</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 365. geosrs:up</caption>
+<caption class="title">Table 365. geosrs:Up</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -9096,7 +9096,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <tbody>
 <tr>
   <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
-  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/up">https://w3id.org/geosrs/up</a></p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/Up">https://w3id.org/geosrs/Up</a></p></td>
 </tr>
 <tr>
   <td class="tableblock halign-left valign-top"><p class="tableblock">Type</p></td>
@@ -9110,9 +9110,9 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 </table>
 </section>
 <section class="sect4">
-<h5 id="_instance_geosrswest">Instance: geosrs:west</h5>
+<h5 id="_instance_geosrswest">Instance: geosrs:West</h5>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 366. geosrs:west</caption>
+<caption class="title">Table 366. geosrs:West</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -9120,7 +9120,7 @@ Coordinate systems are distinguished by their area of use, i.e planetary or inte
 <tbody>
 <tr>
   <td class="tableblock halign-left valign-top"><p class="tableblock">URI</p></td>
-  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/west">https://w3id.org/geosrs/west</a></p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://w3id.org/geosrs/West">https://w3id.org/geosrs/West</a></p></td>
 </tr>
 <tr>
   <td class="tableblock halign-left valign-top"><p class="tableblock">Type</p></td>
@@ -10044,7 +10044,7 @@ They may be stated as part of a SPARQL 1.1 Service Description <a href="#SPARQLS
 </dd>
 <dt class="hdlist1">test-method</dt>
 <dd>
-<p>Verify that queries involving <a href="#Class: geosrs:baseCRS"><code>geosrs:baseCRS</code></a> <a href="#Class: geosrs:conversion"><code>geosrs:conversion</code></a> <a href="#Class: geosrs:coordinateSystem"><code>geosrs:coordinateSystem</code></a> <a href="#Class: geosrs:datum"><code>geosrs:datum</code></a> <a href="#Class: geosrs:datumEnsemble"><code>geosrs:datumEnsemble</code></a> <a href="#Class: geosrs:domainOfValidity"><code>geosrs:domainOfValidity</code></a> <a href="#Class: geosrs:method"><code>geosrs:method</code></a> <a href="#Class: geocrs:asProj4"><code>geocrs:asProj4</code></a> <a href="#Class: geocrs:asProjJSON"><code>geocrs:asProjJSON</code></a> <a href="#Class: geocrs:asWKT"><code>geocrs:asWKT</code></a> <a href="#Class: geosrs:EPSGcode"><code>geosrs:EPSGcode</code></a>  return the correct result on a test dataset.</p>
+<p>Verify that queries involving <a href="#Class: geocrs:asProj4"><code>geocrs:asProj4</code></a> <a href="#Class: geocrs:asProjJSON"><code>geocrs:asProjJSON</code></a> <a href="#Class: geocrs:asWKT"><code>geocrs:asWKT</code></a> <a href="#Class: geosrs:EPSGcode"><code>geosrs:EPSGcode</code></a> <a href="#Class: geosrs:baseCRS"><code>geosrs:baseCRS</code></a> <a href="#Class: geosrs:conversion"><code>geosrs:conversion</code></a> <a href="#Class: geosrs:coordinateSystem"><code>geosrs:coordinateSystem</code></a> <a href="#Class: geosrs:datum"><code>geosrs:datum</code></a> <a href="#Class: geosrs:datumEnsemble"><code>geosrs:datumEnsemble</code></a> <a href="#Class: geosrs:domainOfValidity"><code>geosrs:domainOfValidity</code></a> <a href="#Class: geosrs:method"><code>geosrs:method</code></a>  return the correct result on a test dataset.</p>
 </dd>
 <dt class="hdlist1">test-method-type</dt>
 <dd>
@@ -10052,7 +10052,7 @@ They may be stated as part of a SPARQL 1.1 Service Description <a href="#SPARQLS
 </dd>
 <dt class="hdlist1">reference</dt>
 <dd>
-<p><a href="#Class: geosrs:baseCRS"><code>geosrs:baseCRS</code></a> <a href="#Class: geosrs:conversion"><code>geosrs:conversion</code></a> <a href="#Class: geosrs:coordinateSystem"><code>geosrs:coordinateSystem</code></a> <a href="#Class: geosrs:datum"><code>geosrs:datum</code></a> <a href="#Class: geosrs:datumEnsemble"><code>geosrs:datumEnsemble</code></a> <a href="#Class: geosrs:domainOfValidity"><code>geosrs:domainOfValidity</code></a> <a href="#Class: geosrs:method"><code>geosrs:method</code></a> <a href="#Class: geocrs:asProj4"><code>geocrs:asProj4</code></a> <a href="#Class: geocrs:asProjJSON"><code>geocrs:asProjJSON</code></a> <a href="#Class: geocrs:asWKT"><code>geocrs:asWKT</code></a> <a href="#Class: geosrs:EPSGcode"><code>geosrs:EPSGcode</code></a></p>
+<p><a href="#Class: geocrs:asProj4"><code>geocrs:asProj4</code></a> <a href="#Class: geocrs:asProjJSON"><code>geocrs:asProjJSON</code></a> <a href="#Class: geocrs:asWKT"><code>geocrs:asWKT</code></a> <a href="#Class: geosrs:EPSGcode"><code>geosrs:EPSGcode</code></a> <a href="#Class: geosrs:baseCRS"><code>geosrs:baseCRS</code></a> <a href="#Class: geosrs:conversion"><code>geosrs:conversion</code></a> <a href="#Class: geosrs:coordinateSystem"><code>geosrs:coordinateSystem</code></a> <a href="#Class: geosrs:datum"><code>geosrs:datum</code></a> <a href="#Class: geosrs:datumEnsemble"><code>geosrs:datumEnsemble</code></a> <a href="#Class: geosrs:domainOfValidity"><code>geosrs:domainOfValidity</code></a> <a href="#Class: geosrs:method"><code>geosrs:method</code></a></p>
 </dd>
 </dl>
 </div>
@@ -10467,11 +10467,11 @@ They may be stated as part of a SPARQL 1.1 Service Description <a href="#SPARQLS
 </dd>
 <dt class="hdlist1">abstract-test</dt>
 <dd>
-<p>/conf/datum/Datum_Properties</p>
+<p>/conf/datum/Spheroid_Properties</p>
 </dd>
 <dt class="hdlist1">abstract-test</dt>
 <dd>
-<p>/conf/datum/Spheroid_Properties</p>
+<p>/conf/datum/Datum_Properties</p>
 </dd>
 </dl>
 </div>
@@ -10571,37 +10571,6 @@ They may be stated as part of a SPARQL 1.1 Service Description <a href="#SPARQLS
 </aside>
 </section>
 <section class="sect3">
-<h4 id="_datum_properties_2">Datum Properties</h4>
-<aside class="example">
-<div class="content">
-<div class="dlist">
-<dl>
-<dt class="hdlist1">target</dt>
-<dd>
-<p>/req/datum/Datum_Properties</p>
-</dd>
-<dt class="hdlist1">test-purpose</dt>
-<dd>
-<p>Check conformance with this requirement</p>
-</dd>
-<dt class="hdlist1">test-method</dt>
-<dd>
-<p>Verify that queries involving <a href="#Class: geosrs:datumDefiningParameter"><code>geosrs:datumDefiningParameter</code></a> <a href="#Class: geosrs:ellipsoid"><code>geosrs:ellipsoid</code></a> <a href="#Class: geosrs:primeMeridian"><code>geosrs:primeMeridian</code></a>  return the correct result on a test dataset.</p>
-</dd>
-<dt class="hdlist1">test-method-type</dt>
-<dd>
-<p>Capabilities</p>
-</dd>
-<dt class="hdlist1">reference</dt>
-<dd>
-<p><a href="#Class: geosrs:datumDefiningParameter"><code>geosrs:datumDefiningParameter</code></a> <a href="#Class: geosrs:ellipsoid"><code>geosrs:ellipsoid</code></a> <a href="#Class: geosrs:primeMeridian"><code>geosrs:primeMeridian</code></a></p>
-</dd>
-</dl>
-</div>
-</div>
-</aside>
-</section>
-<section class="sect3">
 <h4 id="_spheroid_properties_2">Spheroid Properties</h4>
 <aside class="example">
 <div class="content">
@@ -10626,6 +10595,37 @@ They may be stated as part of a SPARQL 1.1 Service Description <a href="#SPARQLS
 <dt class="hdlist1">reference</dt>
 <dd>
 <p><a href="#Class: geosrs:eccentricity"><code>geosrs:eccentricity</code></a> <a href="#Class: geosrs:inverseFlattening"><code>geosrs:inverseFlattening</code></a> <a href="#Class: geosrs:isSphere"><code>geosrs:isSphere</code></a> <a href="#Class: geosrs:semiMajorAxis"><code>geosrs:semiMajorAxis</code></a> <a href="#Class: geosrs:semiMinorAxis"><code>geosrs:semiMinorAxis</code></a></p>
+</dd>
+</dl>
+</div>
+</div>
+</aside>
+</section>
+<section class="sect3">
+<h4 id="_datum_properties_2">Datum Properties</h4>
+<aside class="example">
+<div class="content">
+<div class="dlist">
+<dl>
+<dt class="hdlist1">target</dt>
+<dd>
+<p>/req/datum/Datum_Properties</p>
+</dd>
+<dt class="hdlist1">test-purpose</dt>
+<dd>
+<p>Check conformance with this requirement</p>
+</dd>
+<dt class="hdlist1">test-method</dt>
+<dd>
+<p>Verify that queries involving <a href="#Class: geosrs:datumDefiningParameter"><code>geosrs:datumDefiningParameter</code></a> <a href="#Class: geosrs:ellipsoid"><code>geosrs:ellipsoid</code></a> <a href="#Class: geosrs:primeMeridian"><code>geosrs:primeMeridian</code></a>  return the correct result on a test dataset.</p>
+</dd>
+<dt class="hdlist1">test-method-type</dt>
+<dd>
+<p>Capabilities</p>
+</dd>
+<dt class="hdlist1">reference</dt>
+<dd>
+<p><a href="#Class: geosrs:datumDefiningParameter"><code>geosrs:datumDefiningParameter</code></a> <a href="#Class: geosrs:ellipsoid"><code>geosrs:ellipsoid</code></a> <a href="#Class: geosrs:primeMeridian"><code>geosrs:primeMeridian</code></a></p>
 </dd>
 </dl>
 </div>
@@ -11494,7 +11494,7 @@ They may be stated as part of a SPARQL 1.1 Service Description <a href="#SPARQLS
 </dd>
 <dt class="hdlist1">test-method</dt>
 <dd>
-<p>Verify that queries involving <a href="#Class: geosrs:down"><code>geosrs:down</code></a> <a href="#Class: geosrs:east"><code>geosrs:east</code></a> <a href="#Class: geosrs:north"><code>geosrs:north</code></a> <a href="#Class: geosrs:south"><code>geosrs:south</code></a> <a href="#Class: geosrs:up"><code>geosrs:up</code></a> <a href="#Class: geosrs:west"><code>geosrs:west</code></a>  return the correct result on a test dataset.</p>
+<p>Verify that queries involving <a href="#Class: geosrs:Down"><code>geosrs:Down</code></a> <a href="#Class: geosrs:East"><code>geosrs:East</code></a> <a href="#Class: geosrs:North"><code>geosrs:North</code></a> <a href="#Class: geosrs:South"><code>geosrs:South</code></a> <a href="#Class: geosrs:Up"><code>geosrs:Up</code></a> <a href="#Class: geosrs:West"><code>geosrs:West</code></a>  return the correct result on a test dataset.</p>
 </dd>
 <dt class="hdlist1">test-method-type</dt>
 <dd>
@@ -11502,7 +11502,7 @@ They may be stated as part of a SPARQL 1.1 Service Description <a href="#SPARQLS
 </dd>
 <dt class="hdlist1">reference</dt>
 <dd>
-<p><a href="#Class: geosrs:down"><code>geosrs:down</code></a> <a href="#Class: geosrs:east"><code>geosrs:east</code></a> <a href="#Class: geosrs:north"><code>geosrs:north</code></a> <a href="#Class: geosrs:south"><code>geosrs:south</code></a> <a href="#Class: geosrs:up"><code>geosrs:up</code></a> <a href="#Class: geosrs:west"><code>geosrs:west</code></a></p>
+<p><a href="#Class: geosrs:Down"><code>geosrs:Down</code></a> <a href="#Class: geosrs:East"><code>geosrs:East</code></a> <a href="#Class: geosrs:North"><code>geosrs:North</code></a> <a href="#Class: geosrs:South"><code>geosrs:South</code></a> <a href="#Class: geosrs:Up"><code>geosrs:Up</code></a> <a href="#Class: geosrs:West"><code>geosrs:West</code></a></p>
 </dd>
 </dl>
 </div>
@@ -13536,7 +13536,7 @@ Actual References:
 </section>
 <div id="footer">
 <div id="footer-text">
-Last updated 2025-09-24 17:42:46 UTC
+Last updated 2025-09-26 13:16:21 UTC
 </div>
 </div>
 </body>

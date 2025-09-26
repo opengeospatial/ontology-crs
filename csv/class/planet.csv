@@ -1,12 +1,13 @@
 Concept,SuperClass,DisjointClass,Label,Definition,Requirement,ISO 19111,IGN 2019,Proj4RDF,GeoSPARQL,Core Class?
-geosrs:ArtificialSatellite,,,Artificial Satellite,,Interstellar Body,,,geocrs:ArtificialSatellite,,Astronomy
-geosrs:Asteroid,,,Asteroid,,Interstellar Body,,,geocrs:Asteroid,,Astronomy
-geosrs:Comet,,,Comet,,Interstellar Body,,,geocrs:Comet,,Astronomy
+geosrs:ArtificialSatellite,geosrs:Satellite,,Artificial Satellite,,Interstellar Body,,,geocrs:ArtificialSatellite,,Astronomy
+geosrs:Asteroid,geosrs:InterstellarBody,,Asteroid,"Asteroid, any of a host of small bodies, about 1000 km (600 miles) or less in diameter, that orbit the Sun primarily between the orbits of Mars and Jupiter in a nearly flat ring called the asteroid belt (source:https://www.britannica.com/science/asteroid) ",Interstellar Body,,,geocrs:Asteroid,,Astronomy
+geosrs:Comet,geosrs:InterstellarBody,,Comet,,Interstellar Body,,,geocrs:Comet,,Astronomy
 geosrs:DwarfPlanet,,,Dwarf Planet,,Interstellar Body,,,geocrs:DwarfPlanet,,Astronomy
 geosrs:InterstellarBody,,,Interstellar Body,,Interstellar Body,,,geocrs:InterstellarBody,,Astronomy
-geosrs:Moon,,,Moon,,Interstellar Body,,,geocrs:Moon,,Astronomy
-geosrs:NaturalSatellite,,,Natural Satellite,,Interstellar Body,,,geocrs:NaturalSatellite,,Astronomy
-geosrs:Planet,,,Planet,,Interstellar Body,,,geocrs:Planet,,Astronomy
+geosrs:Moon,geosrs:InterstellarBody,,Moon,,Interstellar Body,,,geocrs:Moon,,Astronomy
+geosrs:NaturalSatellite,geosrs:Satellite,,Natural Satellite,,Interstellar Body,,,geocrs:NaturalSatellite,,Astronomy
+geosrs:Planet,geosrs:InterstellarBody,,Planet,,Interstellar Body,,,geocrs:Planet,,Astronomy
 geosrs:PlanetStatus,,,Planet Status,,Interstellar Body,,,geocrs:PlanetStatus,,Astronomy
 geosrs:Plutoid,,,Plutoid,,Interstellar Body,,,geocrs:Plutoid,,Astronomy
-geosrs:Star,,,Star,,Interstellar Body,,,geocrs:Star,,Astronomy
+geosrs:Star,geosrs:InterstellarBody,,Star,,Interstellar Body,,,geocrs:Star,,Astronomy
+geosrs:Satellite,,,Satellite,,Interstellar Body,,,,,Astronomy

@@ -99,7 +99,6 @@
     "CoordinateOperation": "geosrs:CoordinateOperation",
     "CoordinateSystem": "geosrs:CoordinateSystem",
     "CoordinateSystemAxis": "geosrs:CoordinateSystemAxis",
-    "CoordinateTransformationOperation": "geosrs_co:CoordinateTransformationOperation",
     "CordiformProjection": "geosrs_projection:CordiformProjection",
     "CoxConformalProjection": "geosrs_projection:CoxConformalProjection",
     "CraigRetroazimuthalProjection": "geosrs_projection:CraigRetroazimuthalProjection",
@@ -365,6 +364,7 @@
     "RotationOperation": "geosrs_co:RotationOperation",
     "RoussilheProjection": "geosrs_projection:RoussilheProjection",
     "SRSApplication": "geosrs_application:SRSApplication",
+    "Satellite": "geosrs_planet:Satellite",
     "SatelliteNavigation": "geosrs_application:SatelliteNavigation",
     "SatelliteSurvey": "geosrs_application:SatelliteSurvey",
     "ScaleOperation": "geosrs_co:ScaleOperation",
@@ -582,9 +582,9 @@
       "@id": "geosrs:domainOfValidity",
       "@type": "@vocab"
     },
-    "down": "geosrs_cs:Down",
+    "down": "geosrs_cs:down",
     "drilling": "geosrs_application:Drilling",
-    "east": "geosrs_cs:East",
+    "east": "geosrs_cs:east",
     "eccentricity": "geosrs:eccentricity",
     "ellipsoid": {
       "@context": {
@@ -605,6 +605,7 @@
     "exploration": "geosrs_application:OilAndGasExploration",
     "gas": "geosrs_application:OilAndGasExploration",
     "geo": "http://www.opengis.net/ont/geosparql#",
+    "geocrs:CoordinateTransformationOperation": "geosrs_co:geocrs:CoordinateTransformationOperation",
     "geographicElement": "geo:hasBoundingBox",
     "geosrs": "https://w3id.org/geosrs/geosrs/",
     "geosrs_application": "https://w3id.org/geosrs/application/",
@@ -650,7 +651,7 @@
     "nautical": "geosrs_application:NauticalChart",
     "navigation": "geosrs_application:SatelliteNavigation",
     "nicol": "geosrs_projection:NicolosiGlobularProjection",
-    "north": "geosrs_cs:North",
+    "north": "geosrs_cs:north",
     "offshore": "geosrs_application:OffshoreEngineering",
     "oil": "geosrs_application:OilAndGasExploration",
     "om": "http://www.ontology-of-units-of-measure.org/resource/om-2/",
@@ -716,7 +717,7 @@
       "@id": "geosrs:sourceCRS",
       "@type": "@vocab"
     },
-    "south": "geosrs_cs:South",
+    "south": "geosrs_cs:south",
     "spatial": "geosrs_application:SpatialReferencing",
     "stere": "geosrs_projection:StereographicProjection",
     "sterea": "geosrs_projection:ObliqueStereographicProjection",
@@ -755,10 +756,10 @@
       "@id": "om:hasUnit",
       "@type": "@vocab"
     },
-    "up": "geosrs_cs:Up",
+    "up": "geosrs_cs:up",
     "utm": "geosrs_projection:UniversalTransverseMercatorProjection",
     "value": "rdf:value",
     "vertical": "geosrs:VerticalCoordinateSystem",
-    "west": "geosrs_cs:West"
+    "west": "geosrs_cs:west"
   }
 }

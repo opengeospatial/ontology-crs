@@ -440,7 +440,7 @@ for file in os.listdir(directory):
                 #print(row)
                 if "Concept" in row and row["Concept"]!="":
                     if "Core Property?" in row:
-                        if row["Core Property?"]=="Core Ontology":
+                        if row["Core Property?"]=="Core Ontology" or row["Core Property?"]=="SRS":
                             adocdef="===== Property: "+str(row["Concept"])+"\n\n"
                             if "Description" in row and row["Description"]!="":
                                 adocdef+=row["Description"]+"\n\n"

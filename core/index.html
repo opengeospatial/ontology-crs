@@ -224,6 +224,8 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
     <h2>Table of Contents</h2>
     <ol>
         <li><a href="#classes">Classes</a></li>
+        <li><a href="#objectproperties">Object Properties</a></li>
+        <li><a href="#datatypeproperties">Datatype Properties</a></li>
         <li><a href="#namespaces">Namespaces</a></li>
         <li><a href="#legend">Legend</a></li>
     </ol>
@@ -243,7 +245,7 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
       <li><a href="#CoordinateOperation">Coordinate Operation</a></li>
       <li><a href="#CoordinateSystem">Coordinate System</a></li>
       <li><a href="#CoordinateSystemAxis">Coordinate System Axis</a></li>
-      <li><a href="#Datum">Datum</a></li>
+      <li><a href="#Datum1">Datum</a></li>
       <li><a href="#Ellipsoid">Ellipsoid</a></li>
       <li><a href="#EllipsoidalCoordinateSystem">Ellipsoidal Coordinate System</a></li>
       <li><a href="#GeneralOperationParameter">General Operation Parameter</a></li>
@@ -315,6 +317,12 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
                     <a href="#Transformation">Transformation</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
+            <tr>
+                <th>In range of</th>
+                <td>
+                    <a href="#Definedbyconversion">Defined by conversion</a><sup class="sup-op" title="object property">op</sup><br/>
+                </td>
+            </tr>
         </table>
     </div>
     <div class="entity class" id="CoordinateOperation">
@@ -342,8 +350,14 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             <tr>
                 <th>Sub-classes</th>
                 <td>
-                    <a href="#Conversion">Conversion</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="#SingleOperation">Single Operation</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#Conversion">Conversion</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+            <tr>
+                <th>In range of</th>
+                <td>
+                    <a href="#Method">Method</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
         </table>
@@ -367,8 +381,14 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             <tr>
                 <th>Sub-classes</th>
                 <td>
-                    <a href="#OrdinalCoordinateSystem">Ordinal Coordinate System</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="#VerticalCoordinateSystem">Vertical Coordinate System</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#OrdinalCoordinateSystem">Ordinal Coordinate System</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+            <tr>
+                <th>In range of</th>
+                <td>
+                    <a href="#Coordinatesystem">Coordinate system</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
         </table>
@@ -391,10 +411,10 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             </tr>
         </table>
     </div>
-    <div class="entity class" id="Datum">
+    <div class="entity class" id="Datum1">
         <h3>
           Datum<sup title="class" class="sup-c">c</sup>
-          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#Datum" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#Datum1" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
         </h3>
         <table>
             <tr>
@@ -411,6 +431,12 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
                 <th>Sub-classes</th>
                 <td>
                     <a href="#VerticalDatum">Vertical Datum</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+            <tr>
+                <th>In range of</th>
+                <td>
+                    <a href="#Datum">Datum</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
         </table>
@@ -818,12 +844,342 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="#Datum">Datum</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#Datum1">Datum</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
     </div>
 </section>
+<section id="objectproperties">
+    <h2>Object Properties <span style="float:right; font-size:smaller;"><a href="">&uparrow;</a></span></h2>
+    <ul class="hlist">
+        <li><a href="#BaseCRS">Base CRS</a></li>
+        <li><a href="#Definedbyconversion">Defined by conversion</a></li>
+        <li><a href="#Coordinatesystem">Coordinate system</a></li>
+        <li><a href="#Datum">Datum</a></li>
+        <li><a href="#DatumEnsemble">Datum Ensemble</a></li>
+        <li><a href="#Domainofvalidity">Domain of validity</a></li>
+        <li><a href="#Method">Method</a></li>
+    </ul>
+    <div class="entity property" id="BaseCRS">
+        <h3>Base CRS<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#BaseCRS" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://w3id.org/geosrs/baseCRS</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>The geodetic coordinate reference system on which a projected coordinate reference system is based. Cf. ISO 19111:2007:2007-07, table 11, association role baseCRS.</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Domain(s)</th>
+                <td>
+                    <a href="https://w3id.org/geosrs/srs/ProjectedCRS">https://w3id.org/geosrs/srs/ProjectedCRS</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+            <tr>
+                <th>Range(s)</th>
+                <td>
+                    <a href="https://w3id.org/geosrs/srs/GeodeticCRS">https://w3id.org/geosrs/srs/GeodeticCRS</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity property" id="Definedbyconversion">
+        <h3>Defined by conversion<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#Definedbyconversion" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://w3id.org/geosrs/conversion</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>The conversion used to define a projected coordinate reference system. Cf. ISO 19111:2007:2007-07, table 7, named association Definition.</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Domain(s)</th>
+                <td>
+                    <a href="https://w3id.org/geosrs/srs/CRS">https://w3id.org/geosrs/srs/CRS</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+            <tr>
+                <th>Range(s)</th>
+                <td>
+                    <a href="https://w3id.org/geosrs/Conversion">geosrs:Conversion</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity property" id="Coordinatesystem">
+        <h3>Coordinate system<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#Coordinatesystem" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://w3id.org/geosrs/coordinateSystem</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>The property relates a coordinate reference system to its coordinate system</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Domain(s)</th>
+                <td>
+                    <a href="https://w3id.org/geosrs/srs/CRS">https://w3id.org/geosrs/srs/CRS</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+            <tr>
+                <th>Range(s)</th>
+                <td>
+                    <a href="https://w3id.org/geosrs/CoordinateSystem">geosrs:CoordinateSystem</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity property" id="Datum">
+        <h3>Datum<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#Datum" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://w3id.org/geosrs/datum</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>The property relates a coordinate reference system to a datum</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Domain(s)</th>
+                <td>
+                    <a href="https://w3id.org/geosrs/srs/CRS">https://w3id.org/geosrs/srs/CRS</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+            <tr>
+                <th>Range(s)</th>
+                <td>
+                    <a href="https://w3id.org/geosrs/Datum">geosrs:Datum</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity property" id="DatumEnsemble">
+        <h3>Datum Ensemble<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#DatumEnsemble" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://w3id.org/geosrs/datumEnsemble</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>Indicates a single CRS referring to a collection of one or more datums (Datum Ensemble)</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Domain(s)</th>
+                <td>
+                    <a href="https://w3id.org/geosrs/srs/SingleCRS">https://w3id.org/geosrs/srs/SingleCRS</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+            <tr>
+                <th>Range(s)</th>
+                <td>
+                    <a href="https://w3id.org/geosrs/datum/DatumEnsemble">https://w3id.org/geosrs/datum/DatumEnsemble</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity property" id="Domainofvalidity">
+        <h3>Domain of validity<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#Domainofvalidity" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://w3id.org/geosrs/domainOfValidity</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>Geographic area or time interval in which the referring object is valid. Cf. ISO 19111:2007:2007-07, tables 4, 33 and 42, attribute domainOfValidity.</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Domain(s)</th>
+                <td>
+                    <a href="https://w3id.org/geosrs/srs/CRS">https://w3id.org/geosrs/srs/CRS</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+            <tr>
+                <th>Range(s)</th>
+                <td>
+                    <a href="https://w3id.org/geosrs/srs/AreaOfUse">https://w3id.org/geosrs/srs/AreaOfUse</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity property" id="Method">
+        <h3>Method<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#Method" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://w3id.org/geosrs/method</code></td>
+            </tr>
+            <tr>
+                <th>Domain(s)</th>
+                <td>
+                    <a href="https://w3id.org/geosrs/srs/CRS">https://w3id.org/geosrs/srs/CRS</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+            <tr>
+                <th>Range(s)</th>
+                <td>
+                    <a href="https://w3id.org/geosrs/CoordinateOperation">geosrs:CoordinateOperation</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+        </table>
+    </div>
+</section>
+
+<section id="datatypeproperties">
+    <h2>Datatype Properties <span style="float:right; font-size:smaller;"><a href="">&uparrow;</a></span></h2>
+    <ul class="hlist">
+        <li><a href="#PROJ4string">PROJ4 string</a></li>
+        <li><a href="#PROJJSONdefinition">PROJ JSON definition</a></li>
+        <li><a href="#WKTdefinition">WKT definition</a></li>
+        <li><a href="#EPSGcode">EPSG code</a></li>
+    </ul>
+    <div class="entity property" id="PROJ4string">
+        <h3>PROJ4 string<sup title="datatype property" class="sup-dp">dp</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#PROJ4string" title="fragment link to here">#</a>&nbsp;<a href="#datatypeproperties" title="Datatype Properties Index">DPs</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>geocrs:asProj4</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>PROJ4 string defining a CRS. Note: this paradigm is ambiguous and presently considered outdated.</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Domain(s)</th>
+                <td>
+                    <a href="https://w3id.org/geosrs/srs/CRS">https://w3id.org/geosrs/srs/CRS</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+            <tr>
+                <th>Range(s)</th>
+                <td>
+                    <a href="https://w3id.org/geosrs/srs/proj4Literal">https://w3id.org/geosrs/srs/proj4Literal</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity property" id="PROJJSONdefinition">
+        <h3>PROJ JSON definition<sup title="datatype property" class="sup-dp">dp</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#PROJJSONdefinition" title="fragment link to here">#</a>&nbsp;<a href="#datatypeproperties" title="Datatype Properties Index">DPs</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>geocrs:asProjJSON</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>CRS definition encoded as a JSON object interpretable by PROJ4.</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Domain(s)</th>
+                <td>
+                    <a href="https://w3id.org/geosrs/srs/CRS">https://w3id.org/geosrs/srs/CRS</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+            <tr>
+                <th>Range(s)</th>
+                <td>
+                    <a href="https://w3id.org/geosrs/srs/projJSONLiteral">https://w3id.org/geosrs/srs/projJSONLiteral</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity property" id="WKTdefinition">
+        <h3>WKT definition<sup title="datatype property" class="sup-dp">dp</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#WKTdefinition" title="fragment link to here">#</a>&nbsp;<a href="#datatypeproperties" title="Datatype Properties Index">DPs</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>geocrs:asWKT</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>CRS definition encoded according to the Well Known Text structure. Cf. ISO 19162:2019. </p>
+                </td>
+            </tr>
+            <tr>
+                <th>Domain(s)</th>
+                <td>
+                    <a href="https://w3id.org/geosrs/srs/CRS">https://w3id.org/geosrs/srs/CRS</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+            <tr>
+                <th>Range(s)</th>
+                <td>
+                    <a href="https://w3id.org/geosrs/srs/wktLiteral">https://w3id.org/geosrs/srs/wktLiteral</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity property" id="EPSGcode">
+        <h3>EPSG code<sup title="datatype property" class="sup-dp">dp</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#EPSGcode" title="fragment link to here">#</a>&nbsp;<a href="#datatypeproperties" title="Datatype Properties Index">DPs</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://w3id.org/geosrs/EPSGcode</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>Identifier of this resource in the EPSG Geodetic Parameter Dataset.</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Range(s)</th>
+                <td>
+                    <a href="xsd:string">xsd:string</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+        </table>
+    </div>
+</section>
+
   
   <section id="namespaces">
     <h2>Namespaces <span style="float:right; font-size:smaller;"><a href="">&uparrow;</a></span></h2>

@@ -492,6 +492,7 @@
       "@id": "geosrs:baseCRS",
       "@type": "@vocab"
     },
+    "base_c_r_s": "geosrs:baseCRS",
     "base_crs": {
       "@context": {
         "@id": "baseCRS"
@@ -510,13 +511,7 @@
     "coastal": "geosrs_application:CoastalHydrography",
     "col_urban": "geosrs_projection:ColombiaUrbanProjection",
     "collg": "geosrs_projection:CollignonProjection",
-    "conversion": {
-      "@context": {
-        "@id": "conversion"
-      },
-      "@id": "geosrs:conversion",
-      "@type": "@vocab"
-    },
+    "conversion": "geosrs:conversion",
     "coordinateSystem": {
       "@context": {
         "@id": "coordinateSystem"
@@ -524,20 +519,8 @@
       "@id": "geosrs:coordinateSystem",
       "@type": "@vocab"
     },
-    "coordinate_system": {
-      "@context": {
-        "@id": "coordinateSystem"
-      },
-      "@id": "geosrs:coordinateSystem",
-      "@type": "@vocab"
-    },
-    "datum": {
-      "@context": {
-        "@id": "datum"
-      },
-      "@id": "geosrs:datum",
-      "@type": "@vocab"
-    },
+    "coordinate_system": "geosrs:coordinateSystem",
+    "datum": "geosrs:datum",
     "datumEnsemble": {
       "@context": {
         "@id": "datumEnsemble"
@@ -545,13 +528,7 @@
       "@id": "geosrs:datumEnsemble",
       "@type": "@vocab"
     },
-    "datum_ensemble": {
-      "@context": {
-        "@id": "datumEnsemble"
-      },
-      "@id": "geosrs:datumEnsemble",
-      "@type": "@vocab"
-    },
+    "datum_ensemble": "geosrs:datumEnsemble",
     "dc": "http://purl.org/dc/elements/1.1/",
     "deg": "om:degree",
     "degree": "om:degree",
@@ -583,8 +560,10 @@
       "@id": "geosrs:domainOfValidity",
       "@type": "@vocab"
     },
+    "domain_of_validity": "geosrs:domainOfValidity",
     "down": "geosrs_cs:Down",
     "drilling": "geosrs_application:Drilling",
+    "e_p_s_gcode": "geosrs:EPSGcode",
     "east": "geosrs_cs:East",
     "eccentricity": "geosrs:eccentricity",
     "ellipsoid": {
@@ -606,6 +585,9 @@
     "exploration": "geosrs_application:OilAndGasExploration",
     "gas": "geosrs_application:OilAndGasExploration",
     "geo": "http://www.opengis.net/ont/geosparql#",
+    "geocrs:as_proj4": "geosrs:geocrs:asProj4",
+    "geocrs:as_proj_j_s_o_n": "geosrs:geocrs:asProjJSON",
+    "geocrs:as_w_k_t": "geosrs:geocrs:asWKT",
     "geographicElement": "geo:hasBoundingBox",
     "geosrs": "https://w3id.org/geosrs/geosrs/",
     "geosrs_application": "https://w3id.org/geosrs/application/",
@@ -635,13 +617,7 @@
     "m": "om:metre",
     "mapping": "geosrs_application:TopographicMap",
     "merc": "geosrs_projection:MercatorProjection",
-    "method": {
-      "@context": {
-        "@id": "method"
-      },
-      "@id": "geosrs:method",
-      "@type": "@vocab"
-    },
+    "method": "geosrs:method",
     "metre": "om:metre",
     "mill": "geosrs_projection:MillerProjection",
     "millimetre": "om:millimetre",

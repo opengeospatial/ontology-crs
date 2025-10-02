@@ -5,6 +5,24 @@
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+<geocrs:asProj4> a owl:DatatypeProperty ;
+    rdfs:label "PROJ4 string"@en ;
+    rdfs:domain <https://w3id.org/geosrs/srs/CRS> ;
+    rdfs:range <https://w3id.org/geosrs/srs/proj4Literal> ;
+    skos:definition "PROJ4 string defining a CRS. Note: this paradigm is ambiguous and presently considered outdated."@en .
+
+<geocrs:asProjJSON> a owl:DatatypeProperty ;
+    rdfs:label "PROJ JSON definition"@en ;
+    rdfs:domain <https://w3id.org/geosrs/srs/CRS> ;
+    rdfs:range <https://w3id.org/geosrs/srs/projJSONLiteral> ;
+    skos:definition "CRS definition encoded as a JSON object interpretable by PROJ4."@en .
+
+<geocrs:asWKT> a owl:DatatypeProperty ;
+    rdfs:label "WKT definition"@en ;
+    rdfs:domain <https://w3id.org/geosrs/srs/CRS> ;
+    rdfs:range <https://w3id.org/geosrs/srs/wktLiteral> ;
+    skos:definition "CRS definition encoded according to the Well Known Text structure. Cf. ISO 19162:2019. "@en .
+
 <https://w3id.org/geosrs> a owl:Ontology ;
     rdfs:label "SRS Ontology"@en ;
     vann:preferredNamespacePrefix "geosrs"^^xsd:string ;
@@ -18,6 +36,11 @@ geosrs:CartesianCoordinateSystem a owl:Class ;
 geosrs:CoordinateSystemAxis a owl:Class ;
     rdfs:label "Coordinate System Axis"@en ;
     skos:definition "Axis relative to which a coordinate of a point is specified in a coordinate system. See ISO 19111:2007:2007-07, part 9.3, table 27 and annex B.2.2."@en .
+
+geosrs:EPSGcode a owl:DatatypeProperty ;
+    rdfs:label "EPSG code"@en ;
+    rdfs:range <xsd:string> ;
+    skos:definition "Identifier of this resource in the EPSG Geodetic Parameter Dataset."@en .
 
 geosrs:Ellipsoid a owl:Class ;
     rdfs:label "Ellipsoid"@en ;
@@ -86,14 +109,46 @@ geosrs:VerticalDatum a owl:Class ;
     rdfs:subClassOf geosrs:Datum ;
     skos:definition "Datum describing the relation of gravity-related heights or depths to the Earth. Cf. ISO 19111:2007:2007-07, table 41 and annex B.3.3."@en .
 
-geosrs:Conversion a owl:Class ;
-    rdfs:label "Conversion"@en ;
-    rdfs:subClassOf geosrs:CoordinateOperation ;
-    skos:definition "Coordinate operation in which both coordinate reference systems are based on the same datum. Cf. ISO 19111:2007:2007-07, table 45 and annex B.4.2."@en .
+geosrs:baseCRS a owl:ObjectProperty ;
+    rdfs:label "Base CRS"@en ;
+    rdfs:domain <https://w3id.org/geosrs/srs/ProjectedCRS> ;
+    rdfs:range <https://w3id.org/geosrs/srs/GeodeticCRS> ;
+    skos:definition "The geodetic coordinate reference system on which a projected coordinate reference system is based. Cf. ISO 19111:2007:2007-07, table 11, association role baseCRS."@en .
 
-geosrs:Datum a owl:Class ;
+geosrs:conversion a owl:ObjectProperty ;
+    rdfs:label "Defined by conversion"@en ;
+    rdfs:domain <https://w3id.org/geosrs/srs/CRS> ;
+    rdfs:range geosrs:Conversion ;
+    skos:definition "The conversion used to define a projected coordinate reference system. Cf. ISO 19111:2007:2007-07, table 7, named association Definition."@en .
+
+geosrs:coordinateSystem a owl:ObjectProperty ;
+    rdfs:label "Coordinate system"@en ;
+    rdfs:domain <https://w3id.org/geosrs/srs/CRS> ;
+    rdfs:range geosrs:CoordinateSystem ;
+    skos:definition "The property relates a coordinate reference system to its coordinate system"@en .
+
+geosrs:datum a owl:ObjectProperty ;
     rdfs:label "Datum"@en ;
-    skos:definition "Parameter or set of parameters that define the position of the origin, the scale and the orientation of a coordinate system. Cf. ISO 19111:2007:2007-07, part 10.1, table 33 and annex B.3."@en .
+    rdfs:domain <https://w3id.org/geosrs/srs/CRS> ;
+    rdfs:range geosrs:Datum ;
+    skos:definition "The property relates a coordinate reference system to a datum"@en .
+
+geosrs:datumEnsemble a owl:ObjectProperty ;
+    rdfs:label "Datum Ensemble"@en ;
+    rdfs:domain <https://w3id.org/geosrs/srs/SingleCRS> ;
+    rdfs:range <https://w3id.org/geosrs/datum/DatumEnsemble> ;
+    skos:definition "Indicates a single CRS referring to a collection of one or more datums (Datum Ensemble)"@en .
+
+geosrs:domainOfValidity a owl:ObjectProperty ;
+    rdfs:label "Domain of validity"@en ;
+    rdfs:domain <https://w3id.org/geosrs/srs/CRS> ;
+    rdfs:range <https://w3id.org/geosrs/srs/AreaOfUse> ;
+    skos:definition "Geographic area or time interval in which the referring object is valid. Cf. ISO 19111:2007:2007-07, tables 4, 33 and 42, attribute domainOfValidity."@en .
+
+geosrs:method a owl:ObjectProperty ;
+    rdfs:label "Method"@en ;
+    rdfs:domain <https://w3id.org/geosrs/srs/CRS> ;
+    rdfs:range geosrs:CoordinateOperation .
 
 geosrs:GeneralOperationParameter a owl:Class ;
     rdfs:label "General Operation Parameter"@en ;
@@ -111,6 +166,15 @@ geosrs:OrdinalCoordinateSystem a owl:Class ;
     rdfs:label "Ordinal Coordinate System"@en ;
     rdfs:subClassOf geosrs:CoordinateSystem ;
     skos:definition "n-dimensional coordinate system in which every axis uses integers."@en .
+
+geosrs:Conversion a owl:Class ;
+    rdfs:label "Conversion"@en ;
+    rdfs:subClassOf geosrs:CoordinateOperation ;
+    skos:definition "Coordinate operation in which both coordinate reference systems are based on the same datum. Cf. ISO 19111:2007:2007-07, table 45 and annex B.4.2."@en .
+
+geosrs:Datum a owl:Class ;
+    rdfs:label "Datum"@en ;
+    skos:definition "Parameter or set of parameters that define the position of the origin, the scale and the orientation of a coordinate system. Cf. ISO 19111:2007:2007-07, part 10.1, table 33 and annex B.3."@en .
 
 geosrs:CoordinateOperation a owl:Class ;
     rdfs:label "Coordinate Operation"@en ;

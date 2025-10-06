@@ -1,5 +1,5 @@
 Concept,Property,Class,MinCount,MaxCount,Comment
-geosrs:1DCoordinateSystem,geosrs:axis,geosrs:CoordinateSystemAxis,1,,"A 1D coordinate system should have at least one axes"
+geosrs:1DCoordinateSystem,geosrs:axis,geosrs:CoordinateSystemAxis,1,1,"A 1D coordinate system should have exactly one axis"
 geosrs:3DCoordinateSystem,geosrs:axis,geosrs:CoordinateSystemAxis,3,,"A 3D coordinate system should have at least three axes"
 geosrs:ConicalCoordinateSystem,geosrs:axis,geosrs:CoordinateSystemAxis,3,,"A conical coordinate system should have at least three axes"
 geosrs:CoordinateSystem,geosrs:axis,geosrs:CoordinateSystemAxis,1,,"A coordinate system should have at least one axis"
@@ -10,5 +10,6 @@ geosrs:PlanarCoordinateSystem,geosrs:axis,geosrs:CoordinateSystemAxis,2,,"A plan
 geosrs:TemporalCoordinateSystem,geosrs:axis,geosrs:CoordinateSystemAxis,1,1,"A temporal coordinate system should have exactly one axis"
 geosrs:TemporalCountCoordinateSystem,geosrs:axis,geosrs:CoordinateSystemAxis,1,1,"A temporal count coordinate system should have exactly one axis"
 geosrs:TemporalMeasureCoordinateSystem,geosrs:axis,geosrs:CoordinateSystemAxis,1,1,"A temporal measure coordinate system should have exactly one axis"
+
 
 

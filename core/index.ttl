@@ -57,6 +57,7 @@ geosrs:GeodeticDatum a owl:Class ;
 
 geosrs:LinearCoordinateSystem a owl:Class ;
     rdfs:label "Linear Coordinate System"@en ;
+    rdfs:subClassOf geosrs:CoordinateSystem ;
     skos:definition "One-dimensional coordinate system in which a linear feature forms the axis."@en .
 
 geosrs:OperationParameter a owl:Class ;

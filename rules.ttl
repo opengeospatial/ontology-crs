@@ -3,8 +3,13 @@
 @prefix sh: <http://www.w3.org/ns/shacl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-geosrs:3DCoordinateSystemShape a sh:NodeShape ;
+geosrs:1DCoordinateSystemShape a sh:NodeShape ;
     rdfs:label "CRS Ontology Shape S1"@en ;
+    sh:property geosrs:1DCoordinateSystemShape_Property ;
+    sh:targetNode geosrs:1DCoordinateSystem .
+
+geosrs:3DCoordinateSystemShape a sh:NodeShape ;
+    rdfs:label "CRS Ontology Shape S2"@en ;
     sh:property geosrs:3DCoordinateSystemShape_Property ;
     sh:targetNode geosrs:3DCoordinateSystem .
 
@@ -22,27 +27,27 @@ geosrs:CompoundCRSShape a sh:NodeShape ;
     sh:targetNode geosrs:CompoundCRS .
 
 geosrs:ConicalCoordinateSystemShape a sh:NodeShape ;
-    rdfs:label "CRS Ontology Shape S2"@en ;
+    rdfs:label "CRS Ontology Shape S3"@en ;
     sh:property geosrs:ConicalCoordinateSystemShape_Property ;
     sh:targetNode geosrs:ConicalCoordinateSystem .
 
 geosrs:CoordinateSystemAxisShape a sh:NodeShape ;
-    rdfs:label "CRS Ontology Shape S4"@en ;
+    rdfs:label "CRS Ontology Shape S5"@en ;
     sh:property geosrs:CoordinateSystemAxisShape_Property ;
     sh:targetNode geosrs:CoordinateSystemAxis .
 
 geosrs:CoordinateSystemShape a sh:NodeShape ;
-    rdfs:label "CRS Ontology Shape S3"@en ;
+    rdfs:label "CRS Ontology Shape S4"@en ;
     sh:property geosrs:CoordinateSystemShape_Property ;
     sh:targetNode geosrs:CoordinateSystem .
 
 geosrs:CylindricalCoordinateSystemShape a sh:NodeShape ;
-    rdfs:label "CRS Ontology Shape S5"@en ;
+    rdfs:label "CRS Ontology Shape S6"@en ;
     sh:property geosrs:CylindricalCoordinateSystemShape_Property ;
     sh:targetNode geosrs:CylindricalCoordinateSystem .
 
 geosrs:DateTimeTemporalCoordinateSystemShape a sh:NodeShape ;
-    rdfs:label "CRS Ontology Shape S6"@en ;
+    rdfs:label "CRS Ontology Shape S7"@en ;
     sh:property geosrs:DateTimeTemporalCoordinateSystemShape_Property ;
     sh:targetNode geosrs:DateTimeTemporalCoordinateSystem .
 
@@ -68,7 +73,7 @@ geosrs:ParametricDatumShape a sh:NodeShape ;
     sh:targetNode geosrs:ParametricDatum .
 
 geosrs:PlanarCoordinateSystemShape a sh:NodeShape ;
-    rdfs:label "CRS Ontology Shape S7"@en ;
+    rdfs:label "CRS Ontology Shape S8"@en ;
     sh:property geosrs:PlanarCoordinateSystemShape_Property ;
     sh:targetNode geosrs:PlanarCoordinateSystem .
 
@@ -89,19 +94,24 @@ geosrs:TemporalCRSShape a sh:NodeShape ;
     sh:targetNode geosrs:TemporalCRS .
 
 geosrs:TemporalCoordinateSystemShape a sh:NodeShape ;
-    rdfs:label "CRS Ontology Shape S8"@en ;
+    rdfs:label "CRS Ontology Shape S9"@en ;
     sh:property geosrs:TemporalCoordinateSystemShape_Property ;
     sh:targetNode geosrs:TemporalCoordinateSystem .
 
 geosrs:TemporalCountCoordinateSystemShape a sh:NodeShape ;
-    rdfs:label "CRS Ontology Shape S9"@en ;
+    rdfs:label "CRS Ontology Shape S10"@en ;
     sh:property geosrs:TemporalCountCoordinateSystemShape_Property ;
     sh:targetNode geosrs:TemporalCountCoordinateSystem .
 
 geosrs:TemporalMeasureCoordinateSystemShape a sh:NodeShape ;
-    rdfs:label "CRS Ontology Shape S10"@en ;
+    rdfs:label "CRS Ontology Shape S11"@en ;
     sh:property geosrs:TemporalMeasureCoordinateSystemShape_Property ;
     sh:targetNode geosrs:TemporalMeasureCoordinateSystem .
+
+geosrs:1DCoordinateSystemShape_Property sh:class geosrs:CoordinateSystemAxis ;
+    sh:maxCount 1 ;
+    sh:message "A 1D coordinate system should have exactly one axis"@en ;
+    sh:minCount 1 .
 
 geosrs:3DCoordinateSystemShape_Property sh:class geosrs:CoordinateSystemAxis ;
     sh:message "A 3D coordinate system should have at least three axes"@en ;

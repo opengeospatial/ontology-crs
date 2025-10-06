@@ -4,6 +4,7 @@ geosrs:3DCoordinateSystem,geosrs:axis,geosrs:CoordinateSystemAxis,3,,"A 3D coord
 geosrs:ConicalCoordinateSystem,geosrs:axis,geosrs:CoordinateSystemAxis,3,,"A conical coordinate system should have at least three axes"
 geosrs:CoordinateSystem,geosrs:axis,geosrs:CoordinateSystemAxis,1,,"A coordinate system should have at least one axis"
 geosrs:CoordinateSystemAxis,geosrs:axisDirection,geosrs:AxisDirection,1,1,"A coordinate system axis should have exactly one axis direction"
+geosrs:CurvilinearCoordinateSystem,geosrs:axis,geosrs:CoordinateSystemAxis,3,,"A curvilinear coordinate system is defined in Euclidean space and should therefore have at least three axes"
 geosrs:CylindricalCoordinateSystem,geosrs:axis,geosrs:CoordinateSystemAxis,3,,"A cylindrical coordinate system should have at least three axes"
 geosrs:DateTimeTemporalCoordinateSystem,geosrs:axis,geosrs:CoordinateSystemAxis,1,1,"A date time temporal coordinate system should have exactly one axis"
 geosrs:PlanarCoordinateSystem,geosrs:axis,geosrs:CoordinateSystemAxis,2,,"A planar coordinate system should have at least two axes"

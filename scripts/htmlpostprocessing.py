@@ -152,7 +152,7 @@ def addExamplesToPyLode(examples,filepath,basename=""):
         filedata = file.read()
     for img in images:
         imguri="https://w3id.org/geosrs/projection/"+img
-        filedata=filedata.replace("<code>"+ex+"</code></td>","<code>"+ex+"</code></td></tr><tr><th>Image</th><td><img src=\"https://raw.githubusercontent.com/situx/proj4rdf/refs/heads/main/resources/projection/"+img+"\" width=\"50%\"/></td>")
+        filedata=filedata.replace("<code>"+img.replace(".svg","")+"</code></td>","<code>"+img.replace(".svg","")+"</code></td></tr><tr><th>Image</th><td><img src=\"https://raw.githubusercontent.com/situx/proj4rdf/refs/heads/main/resources/projection/"+img+"\" width=\"50%\"/></td>")
     for exx in examples:
         ex=exx.replace("geosrs:","https://w3id.org/geosrs/"+basename+"/").replace("geosrsgeod:","https://w3id.org/geosrs/"+basename+"/")
         filedata=filedata.replace("<code>"+ex+"</code></td>","<code>"+ex+"</code></td></tr><tr><th>Example</th><td><a target=\"_blank\" href=\""+examples[exx].replace("geosrsgeod:","")+"\">[Link]</a></td>")

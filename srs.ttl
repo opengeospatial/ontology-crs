@@ -8,6 +8,7 @@
 
 geosrs_srs:AreaOfUse a owl:Class ;
     rdfs:label "Area of use"@en ;
+    rdfs:subClassOf <geo:Feature> ;
     skos:definition "Area within which a coordinate operation may be used."@en .
 
 geosrs_srs:AxesList a owl:Class ;

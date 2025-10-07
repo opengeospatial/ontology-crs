@@ -49,18 +49,31 @@
 
 // Clauses
 include::sections/00-preface.adoc[]
+
 include::sections/01-scope.adoc[]
+
 include::sections/02-conformance.adoc[]
+
 include::sections/03-references.adoc[]
+
 include::sections/04-terms_and_definitions.adoc[]
+
 include::sections/05-conventions.adoc[]
+
 include::sections/06-core.adoc[]
+
 include::sections/07-co_module.adoc[]
+
 include::sections/08-cs_module.adoc[]
+
 include::sections/09-datum_module.adoc[]
+
 include::sections/10-srsapplication_module.adoc[]
+
 include::sections/11-projections_module.adoc[]
+
 include::sections/12-planet_module.adoc[]
+
 include::sections/13-instances.adoc[]
 
 ////
@@ -68,9 +81,13 @@ Annexes
 (add annex files as needed)
 ////
 include::sections/aa-abstract_test_suite.adoc[]
+
 include::sections/ab-alignments.adoc[]
+
 include::sections/ac-shacl_shapes.adoc[]
+
 include::sections/ad-application_examples.adoc[]
+
 include::sections/ae-jsonld_context.adoc[]
 
 ////
@@ -78,4 +95,5 @@ Revision History should be the last annex before the Bibliography
 Bibliography should be the last annex
 ////
 include::sections/ah-history.adoc[]
+
 include::sections/az-bibliography.adoc[]

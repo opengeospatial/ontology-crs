@@ -7600,7 +7600,7 @@ Foster, I., Kesselman, C.. Morgan Kaufmann, San Francisco (1999).</formattedref>
 <bibitem anchor="Czajkowski01" id="_60ff1838-3cdf-6194-2c03-ee266d197a0a"><formattedref format="application/x-isodoc+xml"><em>Grid Information Services for Distributed Resource Sharing.</em> 
 Czajkowski, K., Fitzgerald, S., Foster, I., Kesselman, C. In: 10th IEEE International Symposium on High
 Performance Distributed Computing, pp. 181–184. IEEE Press, New York (2001)</formattedref><docidentifier>Grid Information Services for Distributed Resource Sharing</docidentifier></bibitem>
-</references><references id="_b2791c6a-0475-ecca-137e-fb64fe4a7a57" normative="false" obligation="informative">
+</references><references id="_f3c71cb8-4f07-273a-71f7-5a3f414ce9e9" normative="false" obligation="informative">
 <title id="_50ceb1e1-516f-2673-d73d-4f0c58b4d023">Bibliography</title>
 <note id="_fbd336b0-a344-3030-55c6-1975921a4963"><p id="_a4639bb5-dce4-2157-2d6a-6229500fcabe">The TC has approved Springer LNCS as the official document citation type. Springer LNCS is widely used in technical and computer science journals and other publications For citations in the text please use square brackets and consecutive numbers: [1], [2], [3] Actual References: [n] Journal: Author Surname, A.: Title. Publication Title. Volume number, Issue number, Pages Used (Year Published)</p>
 </note><bibitem id="_1306135a-68c6-f078-86b9-c321c0426d7b" type="standard" schema-version="v1.2.9" anchor="iso19142">
@@ -7733,57 +7733,65 @@ Performance Distributed Computing, pp. 181–184. IEEE Press, New York (2001)</f
   <formattedref format="application/x-isodoc+xml">Berners-Lee, T., Fielding, R., Masinter, L.: <strong>IETF RFC 3986 — Uniform Resource Identifier (URI): Generic Syntax,</strong> <link target="http://tools.ietf.org/rfc/rfc3986.txt"/></formattedref>
   <docidentifier>RFC3986</docidentifier>
   <docnumber>3986</docnumber>
-</bibitem><bibitem id="_fab831ee-2ee5-e09a-3a16-35f71b8d41e4" type="article" schema-version="v1.2.9" anchor="ijgi11020117">
+</bibitem><bibitem id="_98863dd3-a590-a7d1-a3f7-c7857d6c04a2" type="article" schema-version="v1.2.9" anchor="ijgi13010025">
   <fetched>2025-10-07</fetched>
   
-<title type="main" format="text/plain" script="Latn">GeoSPARQL 1.1: Motivations, Details and Applications of the Decadal Update to the Most Important Geospatial LOD Standard</title>
+<title type="main" format="text/plain" script="Latn">Extension of RCC*-9 to Complex and Three-Dimensional Features and Its Reasoning System</title>
 
-  <uri type="DOI">https://doi.org/10.3390/ijgi11020117</uri>
-  <uri type="src">https://www.mdpi.com/2220-9964/11/2/117</uri>
-  <docidentifier type="DOI" primary="true">10.3390/ijgi11020117</docidentifier>
+  <uri type="DOI">https://doi.org/10.3390/ijgi13010025</uri>
+  <uri type="src">https://www.mdpi.com/2220-9964/13/1/25</uri>
+  <docidentifier type="DOI" primary="true">10.3390/ijgi13010025</docidentifier>
   <docidentifier type="issn.electronic">2220-9964</docidentifier>
   <date type="issued">
-    <on>2022-02-07</on>
+    <on>2024-01-10</on>
   </date>
   <date type="published">
-    <on>2022-02-07</on>
+    <on>2024-01-10</on>
   </date>
   <contributor>
     <role type="author"/>
     <person>
       
-<name>          <forename language="en" script="Latn">Nicholas J.</forename>          <surname language="en" script="Latn">Car</surname>       </name>
+<name>          <forename language="en" script="Latn">Eliseo</forename>          <surname language="en" script="Latn">Clementini</surname>       </name>
 
       <affiliation>
         <organization>
           
-<name>SURROUND Australia Pty Ltd., Canberra 2600, Australia</name>
+<name>Department of Industrial and Information Engineering and Economics, University of L’Aquila, 67100 L’Aquila, Italy</name>
 
         </organization>
       </affiliation>
-      <affiliation>
-        <organization>
-          
-<name>College of Engineering and Computer Science, Australian National University, Canberra 2600, Australia</name>
-
-        </organization>
-      </affiliation>
+      <identifier type="orcid">https://orcid.org/0000-0002-3057-7105</identifier>
     </person>
   </contributor>
   <contributor>
     <role type="author"/>
     <person>
       
-<name>          <forename language="en" script="Latn">Timo</forename>          <surname language="en" script="Latn">Homburg</surname>       </name>
+<name>          <forename language="en" script="Latn">Anthony G.</forename>          <surname language="en" script="Latn">Cohn</surname>       </name>
 
       <affiliation>
         <organization>
           
-<name>i3mainz–Institute for Spatial Information &amp; Surveying Technology, Mainz University of Applied Sciences, 55128 Mainz, Germany</name>
+<name>School of Computing, University of Leeds, Leeds LS2 9JT, UK</name>
 
         </organization>
       </affiliation>
-      <identifier type="orcid">https://orcid.org/0000-0002-9499-5840</identifier>
+      <affiliation>
+        <organization>
+          
+<name>The Alan Turing Institute, London NW1 2DB, UK</name>
+
+        </organization>
+      </affiliation>
+      <affiliation>
+        <organization>
+          
+<name>Department of Computer Science and Technology, Tongji University, Shanghai 200065, China</name>
+
+        </organization>
+      </affiliation>
+      <identifier type="orcid">https://orcid.org/0000-0002-7652-8907</identifier>
     </person>
   </contributor>
   <contributor>
@@ -7794,19 +7802,18 @@ Performance Distributed Computing, pp. 181–184. IEEE Press, New York (2001)</f
 
     </organization>
   </contributor>
+  <contributor>
+    <role type="enabler"/>
+    <organization>
+      
+<name>Economic and Social Research Council (ESRC)</name>
+
+    </organization>
+  </contributor>
   <abstract format="text/html" language="en" script="Latn">
-    <p id="_c58d457a-ebb9-85b6-da16-c448187b0391">In 2012, the Open Geospatial Consortium published GeoSPARQL defining “an RDF/OWL ontology for [spatial] information”, “SPARQL extension functions” for performing spatial operations on RDF data and “RIF rules” defining entailments to be drawn from graph pattern matching. In the 8+ years since its publication, GeoSPARQL has become the most important spatial Semantic Web standard, as judged by references to it in other Semantic Web standards and its wide use for Semantic Web data. An update to GeoSPARQL was proposed in 2019 to deliver a version 1.1 with a charter to: handle outstanding change requests and source new ones from the user community and to “better present” the standard, that is to better link all the standard’s parts and better document and exemplify elements. Expected updates included new geometry representations, alignments to other ontologies, handling of new spatial referencing systems, and new artifact presentation. This paper describes motivating change requests and actual resultant updates in the candidate version 1.1 of the standard alongside reference implementations and usage examples. We also describe the theory behind particular updates, initial implementations of many parts of the standard, and our expectations for GeoSPARQL 1.1’s use.</p>
+    <p id="_0300a355-bb4a-9efb-d3c7-a6108404e3ce">RCC*-9 is a mereotopological qualitative spatial calculus for simple lines and regions. RCC*-9 can be easily expressed in other existing models for topological relations and thus can be viewed as a candidate for being a “bridge” model among various approaches. In this paper, we present a revised and extended version of RCC*-9, which can handle non-simple geometric features, such as multipolygons, multipolylines, and multipoints, and 3D features, such as polyhedrons and lower-dimensional features embedded in R3. We also run experiments to compute RCC*-9 relations among very large random datasets of spatial features to demonstrate the JEPD properties of the calculus and also to compute the composition tables for spatial reasoning with the calculus.</p>
 
   </abstract>
-  <relation type="hasDraft">
-    <bibitem>
-      
-<title type="main" format="text/plain" script="Latn">GeoSPARQL 1.1: An Almost Decadal Update to the Most Important Geospatial LOD Standard</title>
-
-      <docidentifier type="DOI">10.20944/preprints202111.0179.v1</docidentifier>
-    </bibitem>
-
-  </relation>
   <series>
     
 <title format="text/plain">ISPRS International Journal of Geo-Information</title>
@@ -7814,13 +7821,13 @@ Performance Distributed Computing, pp. 181–184. IEEE Press, New York (2001)</f
   </series>
   <extent>
     <locality type="volume">
-      <referenceFrom>11</referenceFrom>
+      <referenceFrom>13</referenceFrom>
     </locality>
     <locality type="issue">
-      <referenceFrom>2</referenceFrom>
+      <referenceFrom>1</referenceFrom>
     </locality>
     <locality type="page">
-      <referenceFrom>117</referenceFrom>
+      <referenceFrom>25</referenceFrom>
     </locality>
   </extent>
 </bibitem>

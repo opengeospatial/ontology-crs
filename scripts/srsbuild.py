@@ -66,11 +66,13 @@ galigns.bind("ign","http://data.ign.fr/def/ignf#")
 galigns.bind("ifc","https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL/")  
 galigns.bind("iso19111","http://def.isotc211.org/iso19112/2019/SpatialReferencingByGeographicIdentifier#")   
 galigns.bind("geosrs", "https://w3id.org/geosrs/")  
+galigns.bind("sf","http://www.opengis.net/ont/sf#")
 galigns.add((URIRef("https://w3id.org/geosrs/alignments/"),RDF.type,OWL.Ontology))
 galigns.add((URIRef("https://w3id.org/geosrs/alignments/"),RDFS.label,Literal("SRS Ontology Alignments",lang="en")))
 
 gcore = Graph()
 gcore.bind("geosrs", "https://w3id.org/geosrs/") 
+gcore.bind("sf","http://www.opengis.net/ont/sf#")
 gcore.bind("skos","http://www.w3.org/2004/02/skos/core#")
 
 gcore.add((URIRef("https://w3id.org/geosrs"),RDF.type,OWL.Ontology))
@@ -86,6 +88,7 @@ def convertCSVToSHACLAndADoc():
     shaclres=Graph()
     shaclres.bind("geosrs", "https://w3id.org/geosrs/") 
     shaclres.bind("sh","http://www.w3.org/ns/shacl#")
+	shaclres.bind("sf","http://www.opengis.net/ont/sf#")
     shaclres.bind("rdf","<http://www.w3.org/1999/02/22-rdf-syntax-ns#")
 
     dirname = os.path.dirname(__file__)
@@ -271,6 +274,7 @@ for file in os.listdir(directory):
     curprefix="geosrs_"+filename.replace(".csv","")
     curns="https://w3id.org/geosrs/"+filename.replace(".csv","")+"/"
     g.bind(curprefix,curns) 
+	g.bind("sf","http://www.opengis.net/ont/sf#")
     ldcontext["@context"][curprefix]=curns
     g.bind("skos","http://www.w3.org/2004/02/skos/core#")
     g.bind(curprefix,curns)
@@ -423,6 +427,7 @@ for file in os.listdir(directory):
     ldcontext["@context"][curprefix]=curns
     g.bind("geosrs", "https://w3id.org/geosrs/") 
     g.bind("skos","http://www.w3.org/2004/02/skos/core#")
+	g.bind("sf","http://www.opengis.net/ont/sf#")
 
 
     g.add((URIRef("https://w3id.org/geosrs/"+filename.replace(".csv","")),RDF.type,OWL.Ontology))

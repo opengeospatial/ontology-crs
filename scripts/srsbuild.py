@@ -88,7 +88,7 @@ def convertCSVToSHACLAndADoc():
     shaclres=Graph()
     shaclres.bind("geosrs", "https://w3id.org/geosrs/") 
     shaclres.bind("sh","http://www.w3.org/ns/shacl#")
-	shaclres.bind("sf","http://www.opengis.net/ont/sf#")
+    shaclres.bind("sf","http://www.opengis.net/ont/sf#")
     shaclres.bind("rdf","<http://www.w3.org/1999/02/22-rdf-syntax-ns#")
 
     dirname = os.path.dirname(__file__)

@@ -274,7 +274,7 @@ for file in os.listdir(directory):
     curprefix="geosrs_"+filename.replace(".csv","")
     curns="https://w3id.org/geosrs/"+filename.replace(".csv","")+"/"
     g.bind(curprefix,curns) 
-	g.bind("sf","http://www.opengis.net/ont/sf#")
+    g.bind("sf","http://www.opengis.net/ont/sf#")
     ldcontext["@context"][curprefix]=curns
     g.bind("skos","http://www.w3.org/2004/02/skos/core#")
     g.bind(curprefix,curns)
@@ -427,7 +427,7 @@ for file in os.listdir(directory):
     ldcontext["@context"][curprefix]=curns
     g.bind("geosrs", "https://w3id.org/geosrs/") 
     g.bind("skos","http://www.w3.org/2004/02/skos/core#")
-	g.bind("sf","http://www.opengis.net/ont/sf#")
+    g.bind("sf","http://www.opengis.net/ont/sf#")
 
 
     g.add((URIRef("https://w3id.org/geosrs/"+filename.replace(".csv","")),RDF.type,OWL.Ontology))

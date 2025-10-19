@@ -1,0 +1,11 @@
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+
+<http://www.opengis.net/def/crs/EPSG/0/8030_area_of_use_bbox> a <http://www.opengis.net/ont/sf#Polygon>,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
+    rdfs:label "Australia - Western Australia - Margaret River area onshore below 200m AHD. BBOX"@en ;
+    void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
+    geo:asWKT "POLYGON((114.96 -34.42, 115.24 -34.42, 115.24 -33.51, 114.96 -33.51, 114.96 -34.42))"^^geo:wktLiteral .
+

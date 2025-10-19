@@ -11,12 +11,12 @@
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Bora Bora SAU 2001 height"@en ;
     void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
-    ns1:area_of_use <http://www.opengis.net/def/crs/EPSG/0/5607_area_of_use> ;
     ns1:asProj4 "+vunits=m +no_defs +type=crs"^^ns1:proj4Literal ;
     ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'VerticalCRS','name':'Bora Bora SAU 2001 height','datum':{'type':'VerticalReferenceFrame','name':'Bora Bora SAU 2001'},'coordinate_system':{'subtype':'vertical','axis':[{'name':'Gravity-related height','abbreviation':'H','direction':'up','unit':'metre'}]},'scope':'Geodesy, engineering survey, topographic mapping.','area':'French Polynesia - Society Islands - Bora Bora.','bbox':{'south_latitude':-16.62,'west_longitude':-151.86,'north_latitude':-16.39,'east_longitude':-151.61},'id':{'authority':'EPSG','code':5607}}"^^ns1:projJSONLiteral ;
     ns1:asWKT "VERTCRS['Bora Bora SAU 2001 height',VDATUM['Bora Bora SAU 2001'],CS[vertical,1],AXIS['gravity-related height (H)',up,LENGTHUNIT['metre',1]],USAGE[SCOPE['Geodesy, engineering survey, topographic mapping.'],AREA['French Polynesia - Society Islands - Bora Bora.'],BBOX[-16.62,-151.86,-16.39,-151.61]],ID['EPSG',5607]]"^^ns1:wktLiteral ;
     ns1:coordinateSystem <http://www.opengis.net/def/crs/EPSG/0/5607_cs> ;
     ns1:datum <http://www.opengis.net/ont/crs/datum/Bora_Bora_SAU_2001> ;
+    ns1:domainOfValidity <http://www.opengis.net/def/crs/EPSG/0/5607_area_of_use> ;
     ns1:epsgCode "EPSG:5607"^^xsd:string ;
     ns1:isApplicableTo <http://www.opengis.net/ont/crs/isbody/Earth> ;
     ns1:isBound false ;

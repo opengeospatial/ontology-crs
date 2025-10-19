@@ -1,0 +1,11 @@
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+
+<http://www.opengis.net/def/crs/EPSG/0/5922_area_of_use_bbox> a <http://www.opengis.net/ont/sf#Polygon>,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
+    rdfs:label "Arctic - 87°N to 75°N, approximately 84°W to approximately 6°E. May be extended westwards or eastwards within the latitude limits. BBOX"@en ;
+    void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
+    geo:asWKT "POLYGON((-84.0 75.0, 6.01 75.0, 6.01 87.01, -84.0 87.01, -84.0 75.0))"^^geo:wktLiteral .
+

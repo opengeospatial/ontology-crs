@@ -1,0 +1,11 @@
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+
+<http://www.opengis.net/def/crs/EPSG/0/8540_area_of_use_bbox> a <http://www.opengis.net/ont/sf#Polygon>,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
+    rdfs:label "United States (USA) - Kansas - counties of Allen; Anderson; Bourbon; Cherokee; Crawford; Franklin; Labette; Linn; Miami; Neosho. BBOX"@en ;
+    void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
+    geo:asWKT "POLYGON((-95.53 36.99, -94.6 36.99, -94.6 38.74, -95.53 38.74, -95.53 36.99))"^^geo:wktLiteral .
+

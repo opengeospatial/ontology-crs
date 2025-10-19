@@ -1,12 +1,11 @@
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
-@prefix ns1: <https://w3id.org/geosrs/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix void: <http://rdfs.org/ns/void#> .
 
 <http://www.opengis.net/def/crs/EPSG/0/2255_area_of_use> a <http://www.w3.org/ns/ldp#Resource>,
-        ns1:AreaOfUse,
+        <https://w3id.org/geosrs/AreaOfUse>,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "United States (USA) - Mississippi - counties of Adams; Amite; Bolivar; Carroll; Claiborne; Coahoma; Copiah; De Soto; Franklin; Grenada; Hinds; Holmes; Humphreys; Issaquena; Jefferson; Jefferson Davis; Lawrence; Leflore; Lincoln; Madison; Marion; Montgomery; Panola; Pike; Quitman; Rankin; Sharkey; Simpson; Sunflower; Tallahatchie; Tate; Tunica; Walthall; Warren; Washington; Wilkinson; Yalobusha; Yazoo."@en ;
     void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
-    ns1:extent "<http://www.opengis.net/def/crs/OGC/1.3/CRS84> POLYGON ((-89.37 31, -89.37 35.01, -91.65 35.01, -91.65 31, -89.37 31))"^^geo:wktLiteral .
+    geo:hasBoundingBox <http://www.opengis.net/def/crs/EPSG/0/2255_area_of_use_bbox> .
 

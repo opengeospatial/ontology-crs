@@ -1,0 +1,11 @@
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+
+<http://www.opengis.net/def/crs/EPSG/0/3746_area_of_use_bbox> a <http://www.opengis.net/ont/sf#Polygon>,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
+    rdfs:label "United States (USA) - between 90°W and 84°W - onshore - Alabama; Arkansas; Florida; Georgia; Indiana; Illinois; Kentucky; Louisiana; Michigan; Minnesota; Mississippi; Missouri; North Carolina; Ohio; Tennessee; Wisconsin. BBOX"@en ;
+    void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
+    geo:asWKT "POLYGON((-90.0 28.85, -83.99 28.85, -83.99 48.32, -90.0 48.32, -90.0 28.85))"^^geo:wktLiteral .
+

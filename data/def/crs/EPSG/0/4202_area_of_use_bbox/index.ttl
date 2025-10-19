@@ -1,0 +1,11 @@
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+
+<http://www.opengis.net/def/crs/EPSG/0/4202_area_of_use_bbox> a <http://www.opengis.net/ont/sf#Polygon>,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
+    rdfs:label "Australia - onshore and offshore. Papua New Guinea - onshore. BBOX"@en ;
+    void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
+    geo:asWKT "POLYGON((109.23 -47.2, 163.2 -47.2, 163.2 -1.3, 109.23 -1.3, 109.23 -47.2))"^^geo:wktLiteral .
+

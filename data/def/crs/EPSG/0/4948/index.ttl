@@ -11,12 +11,12 @@
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "LKS-92"@en ;
     void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
-    ns1:area_of_use <http://www.opengis.net/def/crs/EPSG/0/4948_area_of_use> ;
     ns1:asProj4 "+proj=geocent +ellps=GRS80 +units=m +no_defs +type=crs"^^ns1:proj4Literal ;
     ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'GeodeticCRS','name':'LKS-92','datum':{'type':'GeodeticReferenceFrame','name':'Latvian geodetic coordinate system 1992','ellipsoid':{'name':'GRS 1980','semi_major_axis':6378137,'inverse_flattening':298.257222101}},'coordinate_system':{'subtype':'Cartesian','axis':[{'name':'Geocentric X','abbreviation':'X','direction':'geocentricX','unit':'metre'},{'name':'Geocentric Y','abbreviation':'Y','direction':'geocentricY','unit':'metre'},{'name':'Geocentric Z','abbreviation':'Z','direction':'geocentricZ','unit':'metre'}]},'scope':'Geodesy.','area':'Latvia - onshore and offshore.','bbox':{'south_latitude':55.67,'west_longitude':19.06,'north_latitude':58.09,'east_longitude':28.24},'id':{'authority':'EPSG','code':4948}}"^^ns1:projJSONLiteral ;
     ns1:asWKT "GEODCRS['LKS-92',DATUM['Latvian geodetic coordinate system 1992',ELLIPSOID['GRS 1980',6378137,298.257222101,LENGTHUNIT['metre',1]]],PRIMEM['Greenwich',0,ANGLEUNIT['degree',0.0174532925199433]],CS[Cartesian,3],AXIS['(X)',geocentricX,ORDER[1],LENGTHUNIT['metre',1]],AXIS['(Y)',geocentricY,ORDER[2],LENGTHUNIT['metre',1]],AXIS['(Z)',geocentricZ,ORDER[3],LENGTHUNIT['metre',1]],USAGE[SCOPE['Geodesy.'],AREA['Latvia - onshore and offshore.'],BBOX[55.67,19.06,58.09,28.24]],ID['EPSG',4948]]"^^ns1:wktLiteral ;
     ns1:coordinateSystem <http://www.opengis.net/def/crs/EPSG/0/4948_cs> ;
     ns1:datum <http://www.opengis.net/ont/crs/datum/Latvian_geodetic_coordinate_system_1992> ;
+    ns1:domainOfValidity <http://www.opengis.net/def/crs/EPSG/0/4948_area_of_use> ;
     ns1:epsgCode "EPSG:4948"^^xsd:string ;
     ns1:isApplicableTo <http://www.opengis.net/ont/crs/isbody/Earth> ;
     ns1:isBound false ;

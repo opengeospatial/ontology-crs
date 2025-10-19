@@ -11,12 +11,12 @@
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Maupiti 83"@en ;
     void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
-    ns1:area_of_use <http://www.opengis.net/def/crs/EPSG/0/4692_area_of_use> ;
     ns1:asProj4 "+proj=longlat +ellps=intl +no_defs +type=crs"^^ns1:proj4Literal ;
     ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'GeographicCRS','name':'Maupiti 83','datum':{'type':'GeodeticReferenceFrame','name':'Maupiti 83','ellipsoid':{'name':'International 1924','semi_major_axis':6378388,'inverse_flattening':297}},'coordinate_system':{'subtype':'ellipsoidal','axis':[{'name':'Geodetic latitude','abbreviation':'Lat','direction':'north','unit':'degree'},{'name':'Geodetic longitude','abbreviation':'Lon','direction':'east','unit':'degree'}]},'scope':'Hydrography, topographic mapping.','area':'French Polynesia - Society Islands - Maupiti.','bbox':{'south_latitude':-16.57,'west_longitude':-152.39,'north_latitude':-16.34,'east_longitude':-152.14},'id':{'authority':'EPSG','code':4692}}"^^ns1:projJSONLiteral ;
     ns1:asWKT "GEOGCRS['Maupiti 83',DATUM['Maupiti 83',ELLIPSOID['International 1924',6378388,297,LENGTHUNIT['metre',1]]],PRIMEM['Greenwich',0,ANGLEUNIT['degree',0.0174532925199433]],CS[ellipsoidal,2],AXIS['geodetic latitude (Lat)',north,ORDER[1],ANGLEUNIT['degree',0.0174532925199433]],AXIS['geodetic longitude (Lon)',east,ORDER[2],ANGLEUNIT['degree',0.0174532925199433]],USAGE[SCOPE['Hydrography, topographic mapping.'],AREA['French Polynesia - Society Islands - Maupiti.'],BBOX[-16.57,-152.39,-16.34,-152.14]],ID['EPSG',4692]]"^^ns1:wktLiteral ;
     ns1:coordinateSystem <http://www.opengis.net/def/crs/EPSG/0/4692_cs> ;
     ns1:datum <http://www.opengis.net/ont/crs/datum/Maupiti_83> ;
+    ns1:domainOfValidity <http://www.opengis.net/def/crs/EPSG/0/4692_area_of_use> ;
     ns1:epsgCode "EPSG:4692"^^xsd:string ;
     ns1:isApplicableTo <http://www.opengis.net/ont/crs/isbody/Earth> ;
     ns1:isBound false ;

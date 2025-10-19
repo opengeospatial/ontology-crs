@@ -11,12 +11,12 @@
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Gran Canaria height"@en ;
     void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
-    ns1:area_of_use <http://www.opengis.net/def/crs/EPSG/0/9397_area_of_use> ;
     ns1:asProj4 "+vunits=m +no_defs +type=crs"^^ns1:proj4Literal ;
     ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'VerticalCRS','name':'Gran Canaria height','datum':{'type':'VerticalReferenceFrame','name':'Gran Canaria'},'coordinate_system':{'subtype':'vertical','axis':[{'name':'Gravity-related height','abbreviation':'H','direction':'up','unit':'metre'}]},'scope':'Geodesy, engineering survey, topographic mapping.','area':'Spain - Canary Islands - Gran Canaria onshore.','bbox':{'south_latitude':27.68,'west_longitude':-15.88,'north_latitude':28.23,'east_longitude':-15.31},'id':{'authority':'EPSG','code':9397}}"^^ns1:projJSONLiteral ;
     ns1:asWKT "VERTCRS['Gran Canaria height',VDATUM['Gran Canaria'],CS[vertical,1],AXIS['gravity-related height (H)',up,LENGTHUNIT['metre',1]],USAGE[SCOPE['Geodesy, engineering survey, topographic mapping.'],AREA['Spain - Canary Islands - Gran Canaria onshore.'],BBOX[27.68,-15.88,28.23,-15.31]],ID['EPSG',9397]]"^^ns1:wktLiteral ;
     ns1:coordinateSystem <http://www.opengis.net/def/crs/EPSG/0/9397_cs> ;
     ns1:datum <http://www.opengis.net/ont/crs/datum/Gran_Canaria> ;
+    ns1:domainOfValidity <http://www.opengis.net/def/crs/EPSG/0/9397_area_of_use> ;
     ns1:epsgCode "EPSG:9397"^^xsd:string ;
     ns1:isApplicableTo <http://www.opengis.net/ont/crs/isbody/Earth> ;
     ns1:isBound false ;

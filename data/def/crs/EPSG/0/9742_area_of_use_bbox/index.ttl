@@ -1,0 +1,11 @@
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+
+<http://www.opengis.net/def/crs/EPSG/0/9742_area_of_use_bbox> a <http://www.opengis.net/ont/sf#Polygon>,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
+    rdfs:label "United Kingdom (UK) - on or related to the complex of rail routes in the East of Scotland, incorporating the route from Tweedbank through the Borders to Edinburgh; the line from Edinburgh to Aberdeen; routes via Kirkaldy and Cowdenbeath; and routes via Leuchars and Perth to Dundee.  BBOX"@en ;
+    void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
+    geo:asWKT "POLYGON((-3.56 55.55, -1.94 55.55, -1.94 57.21, -3.56 57.21, -3.56 55.55))"^^geo:wktLiteral .
+

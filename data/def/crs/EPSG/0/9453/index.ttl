@@ -11,12 +11,12 @@
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "GBK19-IRF"@en ;
     void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
-    ns1:area_of_use <http://www.opengis.net/def/crs/EPSG/0/9453_area_of_use> ;
     ns1:asProj4 "+proj=longlat +ellps=GRS80 +no_defs +type=crs"^^ns1:proj4Literal ;
     ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'GeographicCRS','name':'GBK19-IRF','datum':{'type':'GeodeticReferenceFrame','name':'GBK19 Intermediate Reference Frame','ellipsoid':{'name':'GRS 1980','semi_major_axis':6378137,'inverse_flattening':298.257222101}},'coordinate_system':{'subtype':'ellipsoidal','axis':[{'name':'Geodetic latitude','abbreviation':'Lat','direction':'north','unit':'degree'},{'name':'Geodetic longitude','abbreviation':'Lon','direction':'east','unit':'degree'}]},'scope':'Engineering survey and topographic mapping for railway applications.','area':'United Kingdom (UK) - on or related to the rail route from Glasgow to Kilmarnock via Barrhead and the branch to East Kilbride.','bbox':{'south_latitude':55.55,'west_longitude':-4.65,'north_latitude':55.95,'east_longitude':-4.05},'id':{'authority':'EPSG','code':9453}}"^^ns1:projJSONLiteral ;
     ns1:asWKT "GEOGCRS['GBK19-IRF',DATUM['GBK19 Intermediate Reference Frame',ELLIPSOID['GRS 1980',6378137,298.257222101,LENGTHUNIT['metre',1]]],PRIMEM['Greenwich',0,ANGLEUNIT['degree',0.0174532925199433]],CS[ellipsoidal,2],AXIS['geodetic latitude (Lat)',north,ORDER[1],ANGLEUNIT['degree',0.0174532925199433]],AXIS['geodetic longitude (Lon)',east,ORDER[2],ANGLEUNIT['degree',0.0174532925199433]],USAGE[SCOPE['Engineering survey and topographic mapping for railway applications.'],AREA['United Kingdom (UK) - on or related to the rail route from Glasgow to Kilmarnock via Barrhead and the branch to East Kilbride.'],BBOX[55.55,-4.65,55.95,-4.05]],ID['EPSG',9453]]"^^ns1:wktLiteral ;
     ns1:coordinateSystem <http://www.opengis.net/def/crs/EPSG/0/9453_cs> ;
     ns1:datum <http://www.opengis.net/ont/crs/datum/GBK19_Intermediate_Reference_Frame> ;
+    ns1:domainOfValidity <http://www.opengis.net/def/crs/EPSG/0/9453_area_of_use> ;
     ns1:epsgCode "EPSG:9453"^^xsd:string ;
     ns1:isApplicableTo <http://www.opengis.net/ont/crs/isbody/Earth> ;
     ns1:isBound false ;

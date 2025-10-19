@@ -11,12 +11,12 @@
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Moznet (3D)"@en ;
     void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
-    ns1:area_of_use <http://www.opengis.net/def/crs/EPSG/0/4357_area_of_use> ;
     ns1:asProj4 "+proj=longlat +ellps=WGS84 +no_defs +type=crs"^^ns1:proj4Literal ;
     ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'GeographicCRS','name':'Moznet (3D)','datum':{'type':'GeodeticReferenceFrame','name':'Moznet (ITRF94)','ellipsoid':{'name':'WGS 84','semi_major_axis':6378137,'inverse_flattening':298.257223563}},'coordinate_system':{'subtype':'ellipsoidal','axis':[{'name':'Geodetic latitude','abbreviation':'Lat','direction':'north','unit':{'type':'AngularUnit','name':'degree minute second hemisphere','conversion_factor':0.0174532925199433}},{'name':'Geodetic longitude','abbreviation':'Long','direction':'east','unit':{'type':'AngularUnit','name':'degree minute second hemisphere','conversion_factor':0.0174532925199433}},{'name':'Ellipsoidal height','abbreviation':'h','direction':'up','unit':'metre'}]},'scope':'Geodesy.','area':'Mozambique - onshore and offshore.','bbox':{'south_latitude':-27.71,'west_longitude':30.21,'north_latitude':-10.09,'east_longitude':43.03},'id':{'authority':'EPSG','code':4357}}"^^ns1:projJSONLiteral ;
     ns1:asWKT "GEOGCRS['Moznet (3D)',DATUM['Moznet (ITRF94)',ELLIPSOID['WGS 84',6378137,298.257223563,LENGTHUNIT['metre',1]]],PRIMEM['Greenwich',0,ANGLEUNIT['degree',0.0174532925199433]],CS[ellipsoidal,3],AXIS['geodetic latitude (Lat)',north,ORDER[1],ANGLEUNIT['degree minute second hemisphere',0.0174532925199433]],AXIS['geodetic longitude (Long)',east,ORDER[2],ANGLEUNIT['degree minute second hemisphere',0.0174532925199433]],AXIS['ellipsoidal height (h)',up,ORDER[3],LENGTHUNIT['metre',1]],USAGE[SCOPE['Geodesy.'],AREA['Mozambique - onshore and offshore.'],BBOX[-27.71,30.21,-10.09,43.03]],ID['EPSG',4357]]"^^ns1:wktLiteral ;
     ns1:coordinateSystem <http://www.opengis.net/def/crs/EPSG/0/4357_cs> ;
     ns1:datum <http://www.opengis.net/ont/crs/datum/Moznet__ITRF94_> ;
+    ns1:domainOfValidity <http://www.opengis.net/def/crs/EPSG/0/4357_area_of_use> ;
     ns1:epsgCode "EPSG:4357"^^xsd:string ;
     ns1:isApplicableTo <http://www.opengis.net/ont/crs/isbody/Earth> ;
     ns1:isBound false ;

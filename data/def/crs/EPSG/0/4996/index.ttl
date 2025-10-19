@@ -11,12 +11,12 @@
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "MAGNA-SIRGAS"@en ;
     void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
-    ns1:area_of_use <http://www.opengis.net/def/crs/EPSG/0/4996_area_of_use> ;
     ns1:asProj4 "+proj=geocent +ellps=GRS80 +units=m +no_defs +type=crs"^^ns1:proj4Literal ;
     ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'GeodeticCRS','name':'MAGNA-SIRGAS','datum':{'type':'GeodeticReferenceFrame','name':'Marco Geocentrico Nacional de Referencia','ellipsoid':{'name':'GRS 1980','semi_major_axis':6378137,'inverse_flattening':298.257222101}},'coordinate_system':{'subtype':'Cartesian','axis':[{'name':'Geocentric X','abbreviation':'X','direction':'geocentricX','unit':'metre'},{'name':'Geocentric Y','abbreviation':'Y','direction':'geocentricY','unit':'metre'},{'name':'Geocentric Z','abbreviation':'Z','direction':'geocentricZ','unit':'metre'}]},'scope':'Geodesy.','area':'Colombia - onshore and offshore. Includes San Andres y Providencia, Malpelo Islands, Roncador Bank, Serrana Bank and Serranilla Bank.','bbox':{'south_latitude':-4.23,'west_longitude':-84.77,'north_latitude':15.51,'east_longitude':-66.87},'id':{'authority':'EPSG','code':4996}}"^^ns1:projJSONLiteral ;
     ns1:asWKT "GEODCRS['MAGNA-SIRGAS',DATUM['Marco Geocentrico Nacional de Referencia',ELLIPSOID['GRS 1980',6378137,298.257222101,LENGTHUNIT['metre',1]]],PRIMEM['Greenwich',0,ANGLEUNIT['degree',0.0174532925199433]],CS[Cartesian,3],AXIS['(X)',geocentricX,ORDER[1],LENGTHUNIT['metre',1]],AXIS['(Y)',geocentricY,ORDER[2],LENGTHUNIT['metre',1]],AXIS['(Z)',geocentricZ,ORDER[3],LENGTHUNIT['metre',1]],USAGE[SCOPE['Geodesy.'],AREA['Colombia - onshore and offshore. Includes San Andres y Providencia, Malpelo Islands, Roncador Bank, Serrana Bank and Serranilla Bank.'],BBOX[-4.23,-84.77,15.51,-66.87]],ID['EPSG',4996]]"^^ns1:wktLiteral ;
     ns1:coordinateSystem <http://www.opengis.net/def/crs/EPSG/0/4996_cs> ;
     ns1:datum <http://www.opengis.net/ont/crs/datum/Marco_Geocentrico_Nacional_de_Referencia> ;
+    ns1:domainOfValidity <http://www.opengis.net/def/crs/EPSG/0/4996_area_of_use> ;
     ns1:epsgCode "EPSG:4996"^^xsd:string ;
     ns1:isApplicableTo <http://www.opengis.net/ont/crs/isbody/Earth> ;
     ns1:isBound false ;

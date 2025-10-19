@@ -1,4 +1,5 @@
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix ns1: <https://w3id.org/geosrs/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix void: <http://rdfs.org/ns/void#> .
@@ -14,7 +15,7 @@
     ns1:area_of_use <http://www.opengis.net/ont/crs/areaofuse/Santa_Marta_urban_grid_area_of_use> ;
     ns1:asProj4 "+proj=pipeline +step +proj=axisswap +order=2,1 +step +proj=unitconvert +xy_in=deg +xy_out=rad +step +proj=col_urban +lat_0=11.2196430555556 +lon_0=-74.2250052777778 +x_0=983892.409 +y_0=1732533.518 +h_0=29 +ellps=GRS80 +step +proj=axisswap +order=2,1" ;
     ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'Conversion','name':'Santa Marta urban grid','method':{'name':'Colombia Urban','id':{'authority':'EPSG','code':1052}},'parameters':[{'name':'Latitude of natural origin','value':11.2196430555556,'unit':'degree','id':{'authority':'EPSG','code':8801}},{'name':'Longitude of natural origin','value':-74.2250052777778,'unit':'degree','id':{'authority':'EPSG','code':8802}},{'name':'False easting','value':983892.409,'unit':'metre','id':{'authority':'EPSG','code':8806}},{'name':'False northing','value':1732533.518,'unit':'metre','id':{'authority':'EPSG','code':8807}},{'name':'Projection plane origin height','value':29,'unit':'metre','id':{'authority':'EPSG','code':1039}}],'id':{'authority':'EPSG','code':6238}}" ;
-    ns1:asWKT "CONVERSION['Santa Marta urban grid',METHOD['Colombia Urban',ID['EPSG',1052]],PARAMETER['Latitude of natural origin',11.2196430555556,ANGLEUNIT['degree',0.0174532925199433],ID['EPSG',8801]],PARAMETER['Longitude of natural origin',-74.2250052777778,ANGLEUNIT['degree',0.0174532925199433],ID['EPSG',8802]],PARAMETER['False easting',983892.409,LENGTHUNIT['metre',1],ID['EPSG',8806]],PARAMETER['False northing',1732533.518,LENGTHUNIT['metre',1],ID['EPSG',8807]],PARAMETER['Projection plane origin height',29,LENGTHUNIT['metre',1],ID['EPSG',1039]],ID['EPSG',6238]]"^^ns1:wktLiteral ;
+    ns1:asWKT "CONVERSION['Santa Marta urban grid',METHOD['Colombia Urban',ID['EPSG',1052]],PARAMETER['Latitude of natural origin',11.2196430555556,ANGLEUNIT['degree',0.0174532925199433],ID['EPSG',8801]],PARAMETER['Longitude of natural origin',-74.2250052777778,ANGLEUNIT['degree',0.0174532925199433],ID['EPSG',8802]],PARAMETER['False easting',983892.409,LENGTHUNIT['metre',1],ID['EPSG',8806]],PARAMETER['False northing',1732533.518,LENGTHUNIT['metre',1],ID['EPSG',8807]],PARAMETER['Projection plane origin height',29,LENGTHUNIT['metre',1],ID['EPSG',1039]],ID['EPSG',6238]]"^^geo:wktLiteral ;
     ns1:falseEasting 9.838924e+05 ;
     ns1:falseNorthing 1.732534e+06 ;
     ns1:has_ballpark_transformation false ;

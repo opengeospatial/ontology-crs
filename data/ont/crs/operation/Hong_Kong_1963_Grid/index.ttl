@@ -1,4 +1,5 @@
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix ns1: <https://w3id.org/geosrs/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix void: <http://rdfs.org/ns/void#> .
@@ -16,7 +17,7 @@
     ns1:asProj4 "+proj=pipeline +step +proj=axisswap +order=2,1 +step +proj=unitconvert +xy_in=deg +xy_out=rad +step +proj=cass +lat_0=22.3121333333333 +lon_0=114.178555555556 +x_0=40243.5777560424 +y_0=19069.9335151258 +a=6378293.64520876 +b=6356617.98767984 +step +proj=axisswap +order=2,1",
         "+proj=pipeline +step +proj=axisswap +order=2,1 +step +proj=unitconvert +xy_in=deg +xy_out=rad +step +proj=cass +lat_0=22.3121333333333 +lon_0=114.178555555556 +x_0=40243.5777560424 +y_0=19069.9335151258 +a=6378293.64520876 +b=6356617.98767984 +step +proj=unitconvert +xy_in=m +xy_out=0.3047972654 +step +proj=axisswap +order=2,1" ;
     ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'Conversion','name':'Hong Kong 1963 Grid','method':{'name':'Cassini-Soldner','id':{'authority':'EPSG','code':9806}},'parameters':[{'name':'Latitude of natural origin','value':22.3121333333333,'unit':'degree','id':{'authority':'EPSG','code':8801}},{'name':'Longitude of natural origin','value':114.178555555556,'unit':'degree','id':{'authority':'EPSG','code':8802}},{'name':'False easting','value':132033.92,'unit':{'type':'LinearUnit','name':'Clarke's foot','conversion_factor':0.3047972654},'id':{'authority':'EPSG','code':8806}},{'name':'False northing','value':62565.96,'unit':{'type':'LinearUnit','name':'Clarke's foot','conversion_factor':0.3047972654},'id':{'authority':'EPSG','code':8807}}],'id':{'authority':'EPSG','code':19896}}" ;
-    ns1:asWKT "CONVERSION['Hong Kong 1963 Grid',METHOD['Cassini-Soldner',ID['EPSG',9806]],PARAMETER['Latitude of natural origin',22.3121333333333,ANGLEUNIT['degree',0.0174532925199433],ID['EPSG',8801]],PARAMETER['Longitude of natural origin',114.178555555556,ANGLEUNIT['degree',0.0174532925199433],ID['EPSG',8802]],PARAMETER['False easting',132033.92,LENGTHUNIT['Clarke's foot',0.3047972654],ID['EPSG',8806]],PARAMETER['False northing',62565.96,LENGTHUNIT['Clarke's foot',0.3047972654],ID['EPSG',8807]],ID['EPSG',19896]]"^^ns1:wktLiteral ;
+    ns1:asWKT "CONVERSION['Hong Kong 1963 Grid',METHOD['Cassini-Soldner',ID['EPSG',9806]],PARAMETER['Latitude of natural origin',22.3121333333333,ANGLEUNIT['degree',0.0174532925199433],ID['EPSG',8801]],PARAMETER['Longitude of natural origin',114.178555555556,ANGLEUNIT['degree',0.0174532925199433],ID['EPSG',8802]],PARAMETER['False easting',132033.92,LENGTHUNIT['Clarke's foot',0.3047972654],ID['EPSG',8806]],PARAMETER['False northing',62565.96,LENGTHUNIT['Clarke's foot',0.3047972654],ID['EPSG',8807]],ID['EPSG',19896]]"^^geo:wktLiteral ;
     ns1:falseEasting 1.320339e+05 ;
     ns1:falseNorthing 6.256596e+04 ;
     ns1:has_ballpark_transformation false ;

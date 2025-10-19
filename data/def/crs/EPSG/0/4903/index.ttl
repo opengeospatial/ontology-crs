@@ -11,12 +11,12 @@
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Madrid 1870 (Madrid)"@en ;
     void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
-    ns1:area_of_use <http://www.opengis.net/def/crs/EPSG/0/4903_area_of_use> ;
     ns1:asProj4 "+proj=longlat +a=6378298.3 +rf=294.73 +pm=-3.687375 +no_defs +type=crs"^^ns1:proj4Literal ;
     ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'GeographicCRS','name':'Madrid 1870 (Madrid)','datum':{'type':'GeodeticReferenceFrame','name':'Madrid 1870 (Madrid)','ellipsoid':{'name':'Struve 1860','semi_major_axis':6378298.3,'inverse_flattening':294.73},'prime_meridian':{'name':'Madrid','longitude':-3.687375}},'coordinate_system':{'subtype':'ellipsoidal','axis':[{'name':'Geodetic latitude','abbreviation':'Lat','direction':'north','unit':'degree'},{'name':'Geodetic longitude','abbreviation':'Lon','direction':'east','unit':'degree'}]},'scope':'Geodesy.','area':'Spain - mainland onshore.','bbox':{'south_latitude':35.95,'west_longitude':-9.37,'north_latitude':43.82,'east_longitude':3.39},'id':{'authority':'EPSG','code':4903}}"^^ns1:projJSONLiteral ;
     ns1:asWKT "GEOGCRS['Madrid 1870 (Madrid)',DATUM['Madrid 1870 (Madrid)',ELLIPSOID['Struve 1860',6378298.3,294.73,LENGTHUNIT['metre',1]]],PRIMEM['Madrid',-3.687375,ANGLEUNIT['degree',0.0174532925199433]],CS[ellipsoidal,2],AXIS['geodetic latitude (Lat)',north,ORDER[1],ANGLEUNIT['degree',0.0174532925199433]],AXIS['geodetic longitude (Lon)',east,ORDER[2],ANGLEUNIT['degree',0.0174532925199433]],USAGE[SCOPE['Geodesy.'],AREA['Spain - mainland onshore.'],BBOX[35.95,-9.37,43.82,3.39]],ID['EPSG',4903]]"^^ns1:wktLiteral ;
     ns1:coordinateSystem <http://www.opengis.net/def/crs/EPSG/0/4903_cs> ;
     ns1:datum <http://www.opengis.net/ont/crs/datum/Madrid_1870__Madrid_> ;
+    ns1:domainOfValidity <http://www.opengis.net/def/crs/EPSG/0/4903_area_of_use> ;
     ns1:epsgCode "EPSG:4903"^^xsd:string ;
     ns1:isApplicableTo <http://www.opengis.net/ont/crs/isbody/Earth> ;
     ns1:isBound false ;

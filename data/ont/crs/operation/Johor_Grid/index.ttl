@@ -1,4 +1,5 @@
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix ns1: <https://w3id.org/geosrs/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix void: <http://rdfs.org/ns/void#> .
@@ -15,7 +16,7 @@
     ns1:area_of_use <http://www.opengis.net/ont/crs/areaofuse/Johor_Grid_area_of_use> ;
     ns1:asProj4 "+proj=pipeline +step +proj=axisswap +order=2,1 +step +proj=unitconvert +xy_in=deg +xy_out=rad +step +proj=cass +lat_0=2.12167974444444 +lon_0=103.427936236111 +x_0=-14810.562 +y_0=8758.32 +ellps=GRS80" ;
     ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'Conversion','name':'Johor Grid','method':{'name':'Cassini-Soldner','id':{'authority':'EPSG','code':9806}},'parameters':[{'name':'Latitude of natural origin','value':2.12167974444444,'unit':'degree','id':{'authority':'EPSG','code':8801}},{'name':'Longitude of natural origin','value':103.427936236111,'unit':'degree','id':{'authority':'EPSG','code':8802}},{'name':'False easting','value':-14810.562,'unit':'metre','id':{'authority':'EPSG','code':8806}},{'name':'False northing','value':8758.32,'unit':'metre','id':{'authority':'EPSG','code':8807}}],'id':{'authority':'EPSG','code':19893}}" ;
-    ns1:asWKT "CONVERSION['Johor Grid',METHOD['Cassini-Soldner',ID['EPSG',9806]],PARAMETER['Latitude of natural origin',2.12167974444444,ANGLEUNIT['degree',0.0174532925199433],ID['EPSG',8801]],PARAMETER['Longitude of natural origin',103.427936236111,ANGLEUNIT['degree',0.0174532925199433],ID['EPSG',8802]],PARAMETER['False easting',-14810.562,LENGTHUNIT['metre',1],ID['EPSG',8806]],PARAMETER['False northing',8758.32,LENGTHUNIT['metre',1],ID['EPSG',8807]],ID['EPSG',19893]]"^^ns1:wktLiteral ;
+    ns1:asWKT "CONVERSION['Johor Grid',METHOD['Cassini-Soldner',ID['EPSG',9806]],PARAMETER['Latitude of natural origin',2.12167974444444,ANGLEUNIT['degree',0.0174532925199433],ID['EPSG',8801]],PARAMETER['Longitude of natural origin',103.427936236111,ANGLEUNIT['degree',0.0174532925199433],ID['EPSG',8802]],PARAMETER['False easting',-14810.562,LENGTHUNIT['metre',1],ID['EPSG',8806]],PARAMETER['False northing',8758.32,LENGTHUNIT['metre',1],ID['EPSG',8807]],ID['EPSG',19893]]"^^geo:wktLiteral ;
     ns1:falseEasting -1.481056e+04 ;
     ns1:falseNorthing 8.75832e+03 ;
     ns1:has_ballpark_transformation false ;

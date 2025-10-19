@@ -11,12 +11,12 @@
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Kumul 34 height"@en ;
     void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
-    ns1:area_of_use <http://www.opengis.net/def/crs/EPSG/0/7651_area_of_use> ;
     ns1:asProj4 "+vunits=m +no_defs +type=crs"^^ns1:proj4Literal ;
     ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'VerticalCRS','name':'Kumul 34 height','datum':{'type':'VerticalReferenceFrame','name':'Kumul 34'},'coordinate_system':{'subtype':'vertical','axis':[{'name':'Gravity-related height','abbreviation':'H','direction':'up','unit':'metre'}]},'scope':'Engineering survey.','area':'Papua New Guinea - Papuan fold and thrust belt.','bbox':{'south_latitude':-8.28,'west_longitude':142.24,'north_latitude':-5.59,'east_longitude':144.75},'id':{'authority':'EPSG','code':7651}}"^^ns1:projJSONLiteral ;
     ns1:asWKT "VERTCRS['Kumul 34 height',VDATUM['Kumul 34'],CS[vertical,1],AXIS['gravity-related height (H)',up,LENGTHUNIT['metre',1]],USAGE[SCOPE['Engineering survey.'],AREA['Papua New Guinea - Papuan fold and thrust belt.'],BBOX[-8.28,142.24,-5.59,144.75]],ID['EPSG',7651]]"^^ns1:wktLiteral ;
     ns1:coordinateSystem <http://www.opengis.net/def/crs/EPSG/0/7651_cs> ;
     ns1:datum <http://www.opengis.net/ont/crs/datum/Kumul_34> ;
+    ns1:domainOfValidity <http://www.opengis.net/def/crs/EPSG/0/7651_area_of_use> ;
     ns1:epsgCode "EPSG:7651"^^xsd:string ;
     ns1:isApplicableTo <http://www.opengis.net/ont/crs/isbody/Earth> ;
     ns1:isBound false ;

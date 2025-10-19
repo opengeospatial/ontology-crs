@@ -1,4 +1,5 @@
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix ns1: <https://w3id.org/geosrs/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix void: <http://rdfs.org/ns/void#> .
@@ -15,7 +16,7 @@
     ns1:area_of_use <http://www.opengis.net/ont/crs/areaofuse/MRH21-TM_area_of_use> ;
     ns1:asProj4 "+proj=pipeline +step +proj=axisswap +order=2,1 +step +proj=unitconvert +xy_in=deg +xy_out=rad +step +proj=tmerc +lat_0=52.3 +lon_0=-1.8 +k=1 +x_0=227286.9881 +y_0=265751.2874 +ellps=GRS80" ;
     ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'Conversion','name':'MRH21-TM','method':{'name':'Transverse Mercator','id':{'authority':'EPSG','code':9807}},'parameters':[{'name':'Latitude of natural origin','value':52.3,'unit':'degree','id':{'authority':'EPSG','code':8801}},{'name':'Longitude of natural origin','value':-1.8,'unit':'degree','id':{'authority':'EPSG','code':8802}},{'name':'Scale factor at natural origin','value':1,'unit':'unity','id':{'authority':'EPSG','code':8805}},{'name':'False easting','value':227286.9881,'unit':'metre','id':{'authority':'EPSG','code':8806}},{'name':'False northing','value':265751.2874,'unit':'metre','id':{'authority':'EPSG','code':8807}}],'id':{'authority':'EPSG','code':9868}}" ;
-    ns1:asWKT "CONVERSION['MRH21-TM',METHOD['Transverse Mercator',ID['EPSG',9807]],PARAMETER['Latitude of natural origin',52.3,ANGLEUNIT['degree',0.0174532925199433],ID['EPSG',8801]],PARAMETER['Longitude of natural origin',-1.8,ANGLEUNIT['degree',0.0174532925199433],ID['EPSG',8802]],PARAMETER['Scale factor at natural origin',1,SCALEUNIT['unity',1],ID['EPSG',8805]],PARAMETER['False easting',227286.9881,LENGTHUNIT['metre',1],ID['EPSG',8806]],PARAMETER['False northing',265751.2874,LENGTHUNIT['metre',1],ID['EPSG',8807]],ID['EPSG',9868]]"^^ns1:wktLiteral ;
+    ns1:asWKT "CONVERSION['MRH21-TM',METHOD['Transverse Mercator',ID['EPSG',9807]],PARAMETER['Latitude of natural origin',52.3,ANGLEUNIT['degree',0.0174532925199433],ID['EPSG',8801]],PARAMETER['Longitude of natural origin',-1.8,ANGLEUNIT['degree',0.0174532925199433],ID['EPSG',8802]],PARAMETER['Scale factor at natural origin',1,SCALEUNIT['unity',1],ID['EPSG',8805]],PARAMETER['False easting',227286.9881,LENGTHUNIT['metre',1],ID['EPSG',8806]],PARAMETER['False northing',265751.2874,LENGTHUNIT['metre',1],ID['EPSG',8807]],ID['EPSG',9868]]"^^geo:wktLiteral ;
     ns1:falseEasting 2.27287e+05 ;
     ns1:falseNorthing 2.657513e+05 ;
     ns1:has_ballpark_transformation false ;

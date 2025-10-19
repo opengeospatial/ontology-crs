@@ -8,8 +8,10 @@
         <http://www.w3.org/ns/ldp#Resource>,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Linkset: geoepsg_dataset - skos:"@en ;
-    void:linkPredicate rdf:type ;
+    void:linkPredicate rdf:type,
+        rdfs:subClassOf ;
     void:objectsTarget skos: ;
     void:subjectsTarget <http://www.opengis.net/geoepsg_dataset> ;
-    void:triples 41 .
+    void:triples 1,
+        41 .
 

@@ -73,7 +73,8 @@
 
 <http://www.opengis.net/geo_geoepsg_dataset_occ> a voaf:DatasetOccurrence ;
     rdfs:label "Occurrences of vocabulary http://www.opengis.net/ont/geosparql# in geoepsg_dataset" ;
-    voaf:inDataset <http://www.opengis.net/geoepsg_dataset> .
+    voaf:inDataset <http://www.opengis.net/geoepsg_dataset> ;
+    voaf:occurrences 4 .
 
 <http://www.opengis.net/geoepsg_dataset_w3id.org_geosrs_> a void:Linkset ;
     rdfs:label "Linkset: geoepsg_dataset - geosrs:"@en ;
@@ -102,10 +103,12 @@
 
 <http://www.opengis.net/geoepsg_dataset_www.w3.org_2004_02_skos_core_> a void:Linkset ;
     rdfs:label "Linkset: geoepsg_dataset - skos:"@en ;
-    void:linkPredicate rdf:type ;
+    void:linkPredicate rdf:type,
+        rdfs:subClassOf ;
     void:objectsTarget skos: ;
     void:subjectsTarget <http://www.opengis.net/geoepsg_dataset> ;
-    void:triples 41 .
+    void:triples 1,
+        41 .
 
 <http://www.opengis.net/geoepsg_dataset_www.w3.org_ns_prov-o_> a void:Linkset ;
     rdfs:label "Linkset: geoepsg_dataset - prov1:"@en ;
@@ -158,7 +161,7 @@
 <http://www.opengis.net/skos_geoepsg_dataset_occ> a voaf:DatasetOccurrence ;
     rdfs:label "Occurrences of vocabulary http://www.w3.org/2004/02/skos/core# in geoepsg_dataset" ;
     voaf:inDataset <http://www.opengis.net/geoepsg_dataset> ;
-    voaf:occurrences 82 .
+    voaf:occurrences 84 .
 
 <http://www.opengis.net/sosa_geoepsg_dataset_occ> a voaf:DatasetOccurrence ;
     rdfs:label "Occurrences of vocabulary http://www.w3.org/ns/sosa/ in geoepsg_dataset" ;
@@ -406,6 +409,11 @@ doap: a voaf:Vocabulary ;
     void:class <https://w3id.org/geosrs/Geoid> ;
     void:entities 14 .
 
+<http://www.opengis.net/geoepsg_dataset_GeometryCollection> a void:Dataset ;
+    rdfs:label "Class Partition: GeometryCollection"@en ;
+    void:class geo:GeometryCollection ;
+    void:entities 1 .
+
 <http://www.opengis.net/geoepsg_dataset_Krovak> a void:Dataset ;
     rdfs:label "Class Partition: Krovak"@en ;
     void:class <https://w3id.org/geosrs/Krovak> ;
@@ -436,6 +444,11 @@ doap: a voaf:Vocabulary ;
     void:class <https://w3id.org/geosrs/PlanarCoordinateSystem> ;
     void:entities 5531 .
 
+<http://www.opengis.net/geoepsg_dataset_Polygon> a void:Dataset ;
+    rdfs:label "Class Partition: Polygon"@en ;
+    void:class <http://www.opengis.net/ont/sf#Polygon> ;
+    void:entities 6654 .
+
 <http://www.opengis.net/geoepsg_dataset_PrimeMeridian> a void:Dataset ;
     rdfs:label "Class Partition: PrimeMeridian"@en ;
     void:class <https://w3id.org/geosrs/PrimeMeridian> ;
@@ -445,6 +458,10 @@ doap: a voaf:Vocabulary ;
     rdfs:label "Class Partition: ProjectedCRS"@en ;
     void:class <https://w3id.org/geosrs/ProjectedCRS> ;
     void:entities 4909 .
+
+<http://www.opengis.net/geoepsg_dataset_SpatialObjectCollection> a void:Dataset ;
+    rdfs:label "Class Partition: SpatialObjectCollection"@en ;
+    void:class geo:SpatialObjectCollection .
 
 <http://www.opengis.net/geoepsg_dataset_Sphere> a void:Dataset ;
     rdfs:label "Class Partition: Sphere"@en ;
@@ -503,7 +520,7 @@ doap: a voaf:Vocabulary ;
 <http://www.opengis.net/geoepsg_dataset_area_of_use> a void:Dataset ;
     rdfs:label "Property Partition: area_of_use"@en ;
     void:property <https://w3id.org/geosrs/area_of_use> ;
-    void:triples 8916 .
+    void:triples 2262 .
 
 <http://www.opengis.net/geoepsg_dataset_asProj4> a void:Dataset ;
     rdfs:label "Property Partition: asProj4"@en ;
@@ -522,8 +539,10 @@ doap: a voaf:Vocabulary ;
 
 <http://www.opengis.net/geoepsg_dataset_asWKT> a void:Dataset ;
     rdfs:label "Property Partition: asWKT"@en ;
-    void:property <https://w3id.org/geosrs/asWKT> ;
-    void:triples 15243 .
+    void:property geo:asWKT,
+        <https://w3id.org/geosrs/asWKT> ;
+    void:triples 6654,
+        15243 .
 
 <http://www.opengis.net/geoepsg_dataset_axis> a void:Dataset ;
     rdfs:label "Property Partition: axis"@en ;
@@ -545,9 +564,9 @@ doap: a voaf:Vocabulary ;
     void:property rdfs:comment ;
     void:triples 1624 .
 
-<http://www.opengis.net/geoepsg_dataset_conversion> a void:Dataset ;
-    rdfs:label "Property Partition: conversion"@en ;
-    void:property <https://w3id.org/geosrs/conversion> ;
+<http://www.opengis.net/geoepsg_dataset_coordinateOperation> a void:Dataset ;
+    rdfs:label "Property Partition: coordinateOperation"@en ;
+    void:property <https://w3id.org/geosrs/coordinateOperation> ;
     void:triples 4909 .
 
 <http://www.opengis.net/geoepsg_dataset_coordinateSystem> a void:Dataset ;
@@ -579,6 +598,11 @@ doap: a voaf:Vocabulary ;
     rdfs:label "Property Partition: domain"@en ;
     void:property rdfs:domain ;
     void:triples 25 .
+
+<http://www.opengis.net/geoepsg_dataset_domainOfValidity> a void:Dataset ;
+    rdfs:label "Property Partition: domainOfValidity"@en ;
+    void:property <https://w3id.org/geosrs/domainOfValidity> ;
+    void:triples 6654 .
 
 <http://www.opengis.net/geoepsg_dataset_eastingAtFalseOrigin> a void:Dataset ;
     rdfs:label "Property Partition: eastingAtFalseOrigin"@en ;
@@ -618,7 +642,7 @@ doap: a voaf:Vocabulary ;
 <http://www.opengis.net/geoepsg_dataset_extent> a void:Dataset ;
     rdfs:label "Property Partition: extent"@en ;
     void:property <https://w3id.org/geosrs/extent> ;
-    void:triples 8919 .
+    void:triples 2265 .
 
 <http://www.opengis.net/geoepsg_dataset_falseEasting> a void:Dataset ;
     rdfs:label "Property Partition: falseEasting"@en ;
@@ -634,6 +658,11 @@ doap: a voaf:Vocabulary ;
     rdfs:label "Property Partition: flatteningParameter"@en ;
     void:property <https://w3id.org/geosrs/flatteningParameter> ;
     void:triples 53 .
+
+<http://www.opengis.net/geoepsg_dataset_hasBoundingBox> a void:Dataset ;
+    rdfs:label "Property Partition: hasBoundingBox"@en ;
+    void:property geo:hasBoundingBox ;
+    void:triples 6654 .
 
 <http://www.opengis.net/geoepsg_dataset_has_ballpark_transformation> a void:Dataset ;
     rdfs:label "Property Partition: has_ballpark_transformation"@en ;
@@ -698,7 +727,7 @@ doap: a voaf:Vocabulary ;
 <http://www.opengis.net/geoepsg_dataset_label> a void:Dataset ;
     rdfs:label "Property Partition: label"@en ;
     void:property rdfs:label ;
-    void:triples 25134 .
+    void:triples 31789 .
 
 <http://www.opengis.net/geoepsg_dataset_latitudeOf1StStandardParallel> a void:Dataset ;
     rdfs:label "Property Partition: latitudeOf1StStandardParallel"@en ;
@@ -763,7 +792,7 @@ doap: a voaf:Vocabulary ;
 <http://www.opengis.net/geoepsg_dataset_member> a void:Dataset ;
     rdfs:label "Property Partition: member"@en ;
     void:property rdfs:member ;
-    void:triples 44386 .
+    void:triples 51040 .
 
 <http://www.opengis.net/geoepsg_dataset_method_name> a void:Dataset ;
     rdfs:label "Property Partition: method_name"@en ;
@@ -833,12 +862,12 @@ doap: a voaf:Vocabulary ;
 <http://www.opengis.net/geoepsg_dataset_subClassOf> a void:Dataset ;
     rdfs:label "Property Partition: subClassOf"@en ;
     void:property rdfs:subClassOf ;
-    void:triples 9 .
+    void:triples 11 .
 
 <http://www.opengis.net/geoepsg_dataset_type> a void:Dataset ;
     rdfs:label "Property Partition: type"@en ;
     void:property rdf:type ;
-    void:triples 44453 .
+    void:triples 51108 .
 
 <http://www.opengis.net/geoepsg_dataset_unit> a void:Dataset ;
     rdfs:label "Property Partition: unit"@en ;
@@ -1015,18 +1044,18 @@ skos: a voaf:Vocabulary ;
         adms:Asset ;
     rdfs:label "geoepsg_dataset"@en ;
     vext:averageLiteralLength 0 ;
-    vext:averageObjectIRILength 130 ;
+    vext:averageObjectIRILength 122 ;
     vext:averagePropertyIRILength 40 ;
-    vext:averageSubjectIRILength 52 ;
+    vext:averageSubjectIRILength 53 ;
     vext:datatypes 0 ;
     vext:distinctBlankNodes 0 ;
-    vext:distinctIRIReferences 106793 ;
+    vext:distinctIRIReferences 123919 ;
     vext:distinctLiterals 0 ;
-    vext:distinctRDFNodes 106793 ;
+    vext:distinctRDFNodes 123919 ;
     vext:languages 0 ;
     vext:propertyClasses 0 ;
     dc:language <http://www.lexvo.org/page/iso639-1/en> ;
-    dcterms:modified "2025-10-17T17:32:15"^^xsd:dateTime ;
+    dcterms:modified "2025-10-19T21:11:07"^^xsd:dateTime ;
     dcterms:subject <http://dbpedia.org/resource/Location>,
         <http://dbpedia.org/resource/OGC_GeoSPARQL>,
         <http://dbpedia.org/resource/Time>,
@@ -1062,14 +1091,17 @@ skos: a voaf:Vocabulary ;
         <http://www.opengis.net/geoepsg_dataset_GeodeticReferenceFrame>,
         <http://www.opengis.net/geoepsg_dataset_GeographicCRS>,
         <http://www.opengis.net/geoepsg_dataset_Geoid>,
+        <http://www.opengis.net/geoepsg_dataset_GeometryCollection>,
         <http://www.opengis.net/geoepsg_dataset_Krovak>,
         <http://www.opengis.net/geoepsg_dataset_LabordeProjection>,
         <http://www.opengis.net/geoepsg_dataset_LonLatProjection>,
         <http://www.opengis.net/geoepsg_dataset_MercatorProjection>,
         <http://www.opengis.net/geoepsg_dataset_ObliqueStereographicProjection>,
         <http://www.opengis.net/geoepsg_dataset_PlanarCoordinateSystem>,
+        <http://www.opengis.net/geoepsg_dataset_Polygon>,
         <http://www.opengis.net/geoepsg_dataset_PrimeMeridian>,
         <http://www.opengis.net/geoepsg_dataset_ProjectedCRS>,
+        <http://www.opengis.net/geoepsg_dataset_SpatialObjectCollection>,
         <http://www.opengis.net/geoepsg_dataset_Sphere>,
         <http://www.opengis.net/geoepsg_dataset_StereographicProjection>,
         <http://www.opengis.net/geoepsg_dataset_Unit>,
@@ -1077,14 +1109,14 @@ skos: a voaf:Vocabulary ;
         <http://www.opengis.net/geoepsg_dataset_VerticalCRS>,
         <http://www.opengis.net/geoepsg_dataset_VerticalCoordinateSystem>,
         <http://www.opengis.net/geoepsg_dataset_VerticalReferenceFrame> ;
-    void:classes 42 ;
+    void:classes 45 ;
     void:dataDump <https://opengeospatial.github.io/ontology-crs/data//index.ttl> ;
-    void:distinctObjects 81554 ;
-    void:distinctSubjects 25161 ;
-    void:entities 25110 ;
+    void:distinctObjects 92020 ;
+    void:distinctSubjects 31818 ;
+    void:entities 31767 ;
     void:feature <http://www.w3.org/ns/formats/RDFa>,
         <http://www.w3.org/ns/formats/Turtle> ;
-    void:properties 78 ;
+    void:properties 81 ;
     void:propertyPartition <http://www.opengis.net/geoepsg_dataset_abbreviation>,
         <http://www.opengis.net/geoepsg_dataset_accuracy>,
         <http://www.opengis.net/geoepsg_dataset_angleFromRectifiedToSkewGrid>,
@@ -1098,12 +1130,13 @@ skos: a voaf:Vocabulary ;
         <http://www.opengis.net/geoepsg_dataset_azimuthAtProjectionCentre>,
         <http://www.opengis.net/geoepsg_dataset_co-LatitudeOfConeAxis>,
         <http://www.opengis.net/geoepsg_dataset_comment>,
-        <http://www.opengis.net/geoepsg_dataset_conversion>,
+        <http://www.opengis.net/geoepsg_dataset_coordinateOperation>,
         <http://www.opengis.net/geoepsg_dataset_coordinateSystem>,
         <http://www.opengis.net/geoepsg_dataset_datum>,
         <http://www.opengis.net/geoepsg_dataset_definition>,
         <http://www.opengis.net/geoepsg_dataset_direction>,
         <http://www.opengis.net/geoepsg_dataset_domain>,
+        <http://www.opengis.net/geoepsg_dataset_domainOfValidity>,
         <http://www.opengis.net/geoepsg_dataset_eastingAtFalseOrigin>,
         <http://www.opengis.net/geoepsg_dataset_eastingAtProjectionCentre>,
         <http://www.opengis.net/geoepsg_dataset_eccentricity>,
@@ -1115,6 +1148,7 @@ skos: a voaf:Vocabulary ;
         <http://www.opengis.net/geoepsg_dataset_falseEasting>,
         <http://www.opengis.net/geoepsg_dataset_falseNorthing>,
         <http://www.opengis.net/geoepsg_dataset_flatteningParameter>,
+        <http://www.opengis.net/geoepsg_dataset_hasBoundingBox>,
         <http://www.opengis.net/geoepsg_dataset_has_ballpark_transformation>,
         <http://www.opengis.net/geoepsg_dataset_image>,
         <http://www.opengis.net/geoepsg_dataset_includesSRS>,
@@ -1163,7 +1197,7 @@ skos: a voaf:Vocabulary ;
         <http://www.opengis.net/geoepsg_dataset_unit_conversion_factor>,
         <http://www.opengis.net/geoepsg_dataset_usage>,
         <http://www.opengis.net/geoepsg_dataset_utm_zone> ;
-    void:triples 316102 ;
+    void:triples 349379 ;
     void:uriSpace "http://www.opengis.net/"^^xsd:string ;
     void:vocabulary vext:,
         dcam:,

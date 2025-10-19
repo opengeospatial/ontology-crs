@@ -11,12 +11,12 @@
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Baltic 1982 height"@en ;
     void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
-    ns1:area_of_use <http://www.opengis.net/def/crs/EPSG/0/5786_area_of_use> ;
     ns1:asProj4 "+vunits=m +no_defs +type=crs"^^ns1:proj4Literal ;
     ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'VerticalCRS','name':'Baltic 1982 height','datum':{'type':'VerticalReferenceFrame','name':'Baltic 1982'},'coordinate_system':{'subtype':'vertical','axis':[{'name':'Gravity-related height','abbreviation':'H','direction':'up','unit':'metre'}]},'scope':'Geodesy, engineering survey, topographic mapping.','area':'Bulgaria - onshore.','bbox':{'south_latitude':41.24,'west_longitude':22.36,'north_latitude':44.23,'east_longitude':28.68},'id':{'authority':'EPSG','code':5786}}"^^ns1:projJSONLiteral ;
     ns1:asWKT "VERTCRS['Baltic 1982 height',VDATUM['Baltic 1982'],CS[vertical,1],AXIS['gravity-related height (H)',up,LENGTHUNIT['metre',1]],USAGE[SCOPE['Geodesy, engineering survey, topographic mapping.'],AREA['Bulgaria - onshore.'],BBOX[41.24,22.36,44.23,28.68]],ID['EPSG',5786]]"^^ns1:wktLiteral ;
     ns1:coordinateSystem <http://www.opengis.net/def/crs/EPSG/0/5786_cs> ;
     ns1:datum <http://www.opengis.net/ont/crs/datum/Baltic_1982> ;
+    ns1:domainOfValidity <http://www.opengis.net/def/crs/EPSG/0/5786_area_of_use> ;
     ns1:epsgCode "EPSG:5786"^^xsd:string ;
     ns1:isApplicableTo <http://www.opengis.net/ont/crs/isbody/Earth> ;
     ns1:isBound false ;

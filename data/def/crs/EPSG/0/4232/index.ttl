@@ -11,12 +11,12 @@
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Fahud"@en ;
     void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
-    ns1:area_of_use <http://www.opengis.net/def/crs/EPSG/0/4232_area_of_use> ;
     ns1:asProj4 "+proj=longlat +a=6378249.145 +rf=293.465 +no_defs +type=crs"^^ns1:proj4Literal ;
     ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'GeographicCRS','name':'Fahud','datum':{'type':'GeodeticReferenceFrame','name':'Fahud','ellipsoid':{'name':'Clarke 1880 (RGS)','semi_major_axis':6378249.145,'inverse_flattening':293.465}},'coordinate_system':{'subtype':'ellipsoidal','axis':[{'name':'Geodetic latitude','abbreviation':'Lat','direction':'north','unit':'degree'},{'name':'Geodetic longitude','abbreviation':'Lon','direction':'east','unit':'degree'}]},'scope':'Geodesy.','area':'Oman - mainland onshore.','bbox':{'south_latitude':16.59,'west_longitude':51.99,'north_latitude':26.42,'east_longitude':59.91},'id':{'authority':'EPSG','code':4232}}"^^ns1:projJSONLiteral ;
     ns1:asWKT "GEOGCRS['Fahud',DATUM['Fahud',ELLIPSOID['Clarke 1880 (RGS)',6378249.145,293.465,LENGTHUNIT['metre',1]]],PRIMEM['Greenwich',0,ANGLEUNIT['degree',0.0174532925199433]],CS[ellipsoidal,2],AXIS['geodetic latitude (Lat)',north,ORDER[1],ANGLEUNIT['degree',0.0174532925199433]],AXIS['geodetic longitude (Lon)',east,ORDER[2],ANGLEUNIT['degree',0.0174532925199433]],USAGE[SCOPE['Geodesy.'],AREA['Oman - mainland onshore.'],BBOX[16.59,51.99,26.42,59.91]],ID['EPSG',4232]]"^^ns1:wktLiteral ;
     ns1:coordinateSystem <http://www.opengis.net/def/crs/EPSG/0/4232_cs> ;
     ns1:datum <http://www.opengis.net/ont/crs/datum/Fahud> ;
+    ns1:domainOfValidity <http://www.opengis.net/def/crs/EPSG/0/4232_area_of_use> ;
     ns1:epsgCode "EPSG:4232"^^xsd:string ;
     ns1:isApplicableTo <http://www.opengis.net/ont/crs/isbody/Earth> ;
     ns1:isBound false ;

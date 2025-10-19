@@ -11,12 +11,12 @@
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "SAD69"@en ;
     void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
-    ns1:area_of_use <http://www.opengis.net/def/crs/EPSG/0/4618_area_of_use> ;
     ns1:asProj4 "+proj=longlat +ellps=aust_SA +no_defs +type=crs"^^ns1:proj4Literal ;
     ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'GeographicCRS','name':'SAD69','datum':{'type':'GeodeticReferenceFrame','name':'South American Datum 1969','ellipsoid':{'name':'GRS 1967 Modified','semi_major_axis':6378160,'inverse_flattening':298.25}},'coordinate_system':{'subtype':'ellipsoidal','axis':[{'name':'Geodetic latitude','abbreviation':'Lat','direction':'north','unit':'degree'},{'name':'Geodetic longitude','abbreviation':'Lon','direction':'east','unit':'degree'}]},'scope':'Geodesy.','area':'Brazil - onshore and offshore. In rest of South America - onshore north of approximately 45°S and Tierra del Fuego.','bbox':{'south_latitude':-55.96,'west_longitude':-91.72,'north_latitude':12.52,'east_longitude':-25.28},'id':{'authority':'EPSG','code':4618}}"^^ns1:projJSONLiteral ;
     ns1:asWKT "GEOGCRS['SAD69',DATUM['South American Datum 1969',ELLIPSOID['GRS 1967 Modified',6378160,298.25,LENGTHUNIT['metre',1]]],PRIMEM['Greenwich',0,ANGLEUNIT['degree',0.0174532925199433]],CS[ellipsoidal,2],AXIS['geodetic latitude (Lat)',north,ORDER[1],ANGLEUNIT['degree',0.0174532925199433]],AXIS['geodetic longitude (Lon)',east,ORDER[2],ANGLEUNIT['degree',0.0174532925199433]],USAGE[SCOPE['Geodesy.'],AREA['Brazil - onshore and offshore. In rest of South America - onshore north of approximately 45°S and Tierra del Fuego.'],BBOX[-55.96,-91.72,12.52,-25.28]],ID['EPSG',4618]]"^^ns1:wktLiteral ;
     ns1:coordinateSystem <http://www.opengis.net/def/crs/EPSG/0/4618_cs> ;
     ns1:datum <http://www.opengis.net/ont/crs/datum/South_American_Datum_1969> ;
+    ns1:domainOfValidity <http://www.opengis.net/def/crs/EPSG/0/4618_area_of_use> ;
     ns1:epsgCode "EPSG:4618"^^xsd:string ;
     ns1:isApplicableTo <http://www.opengis.net/ont/crs/isbody/Earth> ;
     ns1:isBound false ;

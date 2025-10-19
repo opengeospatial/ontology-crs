@@ -11,12 +11,12 @@
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "NAD83(CSRS)v2"@en ;
     void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
-    ns1:area_of_use <http://www.opengis.net/def/crs/EPSG/0/8237_area_of_use> ;
     ns1:asProj4 "+proj=longlat +ellps=GRS80 +no_defs +type=crs"^^ns1:proj4Literal ;
     ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'GeographicCRS','name':'NAD83(CSRS)v2','datum':{'type':'GeodeticReferenceFrame','name':'North American Datum of 1983 (CSRS) version 2','anchor_epoch':1997,'ellipsoid':{'name':'GRS 1980','semi_major_axis':6378137,'inverse_flattening':298.257222101}},'coordinate_system':{'subtype':'ellipsoidal','axis':[{'name':'Geodetic latitude','abbreviation':'Lat','direction':'north','unit':'degree'},{'name':'Geodetic longitude','abbreviation':'Lon','direction':'east','unit':'degree'}]},'scope':'Horizontal component of 3D system.','area':'Canada - onshore and offshore - Alberta; British Columbia; Manitoba; New Brunswick; Newfoundland and Labrador; Northwest Territories; Nova Scotia; Nunavut; Ontario; Prince Edward Island; Quebec; Saskatchewan; Yukon.','bbox':{'south_latitude':38.21,'west_longitude':-141.01,'north_latitude':86.46,'east_longitude':-40.73},'id':{'authority':'EPSG','code':8237}}"^^ns1:projJSONLiteral ;
     ns1:asWKT "GEOGCRS['NAD83(CSRS)v2',DATUM['North American Datum of 1983 (CSRS) version 2',ELLIPSOID['GRS 1980',6378137,298.257222101,LENGTHUNIT['metre',1]],ANCHOREPOCH[1997]],PRIMEM['Greenwich',0,ANGLEUNIT['degree',0.0174532925199433]],CS[ellipsoidal,2],AXIS['geodetic latitude (Lat)',north,ORDER[1],ANGLEUNIT['degree',0.0174532925199433]],AXIS['geodetic longitude (Lon)',east,ORDER[2],ANGLEUNIT['degree',0.0174532925199433]],USAGE[SCOPE['Horizontal component of 3D system.'],AREA['Canada - onshore and offshore - Alberta; British Columbia; Manitoba; New Brunswick; Newfoundland and Labrador; Northwest Territories; Nova Scotia; Nunavut; Ontario; Prince Edward Island; Quebec; Saskatchewan; Yukon.'],BBOX[38.21,-141.01,86.46,-40.73]],ID['EPSG',8237]]"^^ns1:wktLiteral ;
     ns1:coordinateSystem <http://www.opengis.net/def/crs/EPSG/0/8237_cs> ;
     ns1:datum <http://www.opengis.net/ont/crs/datum/North_American_Datum_of_1983__CSRS__version_2> ;
+    ns1:domainOfValidity <http://www.opengis.net/def/crs/EPSG/0/8237_area_of_use> ;
     ns1:epsgCode "EPSG:8237"^^xsd:string ;
     ns1:isApplicableTo <http://www.opengis.net/ont/crs/isbody/Earth> ;
     ns1:isBound false ;

@@ -11,12 +11,12 @@
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "WGS 84 (G1150)"@en ;
     void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
-    ns1:area_of_use <http://www.opengis.net/def/crs/EPSG/0/7660_area_of_use> ;
     ns1:asProj4 "+proj=geocent +ellps=WGS84 +units=m +no_defs +type=crs"^^ns1:proj4Literal ;
     ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'GeodeticCRS','name':'WGS 84 (G1150)','datum':{'type':'DynamicGeodeticReferenceFrame','name':'World Geodetic System 1984 (G1150)','frame_reference_epoch':2001,'ellipsoid':{'name':'WGS 84','semi_major_axis':6378137,'inverse_flattening':298.257223563}},'coordinate_system':{'subtype':'Cartesian','axis':[{'name':'Geocentric X','abbreviation':'X','direction':'geocentricX','unit':'metre'},{'name':'Geocentric Y','abbreviation':'Y','direction':'geocentricY','unit':'metre'},{'name':'Geocentric Z','abbreviation':'Z','direction':'geocentricZ','unit':'metre'}]},'scope':'Geodesy. Navigation and positioning using GPS satellite system.','area':'World.','bbox':{'south_latitude':-90,'west_longitude':-180,'north_latitude':90,'east_longitude':180},'id':{'authority':'EPSG','code':7660}}"^^ns1:projJSONLiteral ;
     ns1:asWKT "GEODCRS['WGS 84 (G1150)',DYNAMIC[FRAMEEPOCH[2001]],DATUM['World Geodetic System 1984 (G1150)',ELLIPSOID['WGS 84',6378137,298.257223563,LENGTHUNIT['metre',1]]],PRIMEM['Greenwich',0,ANGLEUNIT['degree',0.0174532925199433]],CS[Cartesian,3],AXIS['(X)',geocentricX,ORDER[1],LENGTHUNIT['metre',1]],AXIS['(Y)',geocentricY,ORDER[2],LENGTHUNIT['metre',1]],AXIS['(Z)',geocentricZ,ORDER[3],LENGTHUNIT['metre',1]],USAGE[SCOPE['Geodesy. Navigation and positioning using GPS satellite system.'],AREA['World.'],BBOX[-90,-180,90,180]],ID['EPSG',7660]]"^^ns1:wktLiteral ;
     ns1:coordinateSystem <http://www.opengis.net/def/crs/EPSG/0/7660_cs> ;
     ns1:datum <http://www.opengis.net/ont/crs/datum/World_Geodetic_System_1984__G1150_> ;
+    ns1:domainOfValidity <http://www.opengis.net/def/crs/EPSG/0/7660_area_of_use> ;
     ns1:epsgCode "EPSG:7660"^^xsd:string ;
     ns1:isApplicableTo <http://www.opengis.net/ont/crs/isbody/Earth> ;
     ns1:isBound false ;

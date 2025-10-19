@@ -11,12 +11,12 @@
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Ostend height"@en ;
     void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
-    ns1:area_of_use <http://www.opengis.net/def/crs/EPSG/0/5710_area_of_use> ;
     ns1:asProj4 "+vunits=m +no_defs +type=crs"^^ns1:proj4Literal ;
     ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'VerticalCRS','name':'Ostend height','datum':{'type':'VerticalReferenceFrame','name':'Ostend'},'coordinate_system':{'subtype':'vertical','axis':[{'name':'Gravity-related height','abbreviation':'H','direction':'up','unit':'metre'}]},'scope':'Geodesy, engineering survey.','area':'Belgium - onshore.','bbox':{'south_latitude':49.5,'west_longitude':2.5,'north_latitude':51.51,'east_longitude':6.4},'id':{'authority':'EPSG','code':5710}}"^^ns1:projJSONLiteral ;
     ns1:asWKT "VERTCRS['Ostend height',VDATUM['Ostend'],CS[vertical,1],AXIS['gravity-related height (H)',up,LENGTHUNIT['metre',1]],USAGE[SCOPE['Geodesy, engineering survey.'],AREA['Belgium - onshore.'],BBOX[49.5,2.5,51.51,6.4]],ID['EPSG',5710]]"^^ns1:wktLiteral ;
     ns1:coordinateSystem <http://www.opengis.net/def/crs/EPSG/0/5710_cs> ;
     ns1:datum <http://www.opengis.net/ont/crs/datum/Ostend> ;
+    ns1:domainOfValidity <http://www.opengis.net/def/crs/EPSG/0/5710_area_of_use> ;
     ns1:epsgCode "EPSG:5710"^^xsd:string ;
     ns1:isApplicableTo <http://www.opengis.net/ont/crs/isbody/Earth> ;
     ns1:isBound false ;

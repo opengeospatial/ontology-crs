@@ -1,0 +1,11 @@
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+
+<http://www.opengis.net/def/crs/EPSG/0/3832_area_of_use_bbox> a <http://www.opengis.net/ont/sf#Polygon>,
+        <http://www.w3.org/ns/ldp#Resource>,
+        <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
+    rdfs:label "Pacific Ocean - American Samoa, Antarctica, Australia, Brunei Darussalam, Cambodia, Canada, Chile, China, China - Hong Kong, China - Macao, Cook Islands, Ecuador, Fiji, French Polynesia, Guam, Indonesia, Japan, Kiribati, Democratic People's Republic of Korea (North Korea), Republic of Korea (South Korea), Malaysia, Marshall Islands, Federated States of Micronesia, Nauru, New Caledonia, New Zealand, Niue, Norfolk Island, Northern Mariana Islands, Palau, Panama, Papua New Guinea (PNG), Peru, Philippines, Pitcairn, Russian Federation, Samoa, Singapore, Solomon Islands, Taiwan, Thailand, Tokelau, Tonga, Tuvalu, United States (USA), United States Minor Outlying Islands, Vanuatu, Venezuela, Vietnam, Wallis and Futuna. BBOX"@en ;
+    void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
+    geo:asWKT "POLYGON((98.69 -60.0, -68.0 -60.0, -68.0 66.67, 98.69 66.67, 98.69 -60.0))"^^geo:wktLiteral .
+

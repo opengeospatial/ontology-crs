@@ -1,12 +1,11 @@
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
-@prefix ns1: <https://w3id.org/geosrs/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix void: <http://rdfs.org/ns/void#> .
 
 <http://www.opengis.net/def/crs/EPSG/0/6461_area_of_use> a <http://www.w3.org/ns/ldp#Resource>,
-        ns1:AreaOfUse,
+        <https://w3id.org/geosrs/AreaOfUse>,
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "United States (USA) - Indiana - counties of Benton; Boone; Carroll; Clay; Clinton; Crawford; Daviess; Dubois; Fountain; Gibson; Greene; Hendricks; Jasper; Knox; La Porte; Lake; Lawrence; Martin; Monroe; Montgomery; Morgan; Newton; Orange; Owen; Parke; Perry; Pike; Porter; Posey; Pulaski; Putnam; Spencer; Starke; Sullivan; Tippecanoe; Vanderburgh; Vermillion; Vigo; Warren; Warrick; White."@en ;
     void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
-    ns1:extent "<http://www.opengis.net/def/crs/OGC/1.3/CRS84> POLYGON ((-86.24 37.77, -86.24 41.77, -88.1 41.77, -88.1 37.77, -86.24 37.77))"^^geo:wktLiteral .
+    geo:hasBoundingBox <http://www.opengis.net/def/crs/EPSG/0/6461_area_of_use_bbox> .
 

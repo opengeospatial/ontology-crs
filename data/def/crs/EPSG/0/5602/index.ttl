@@ -11,12 +11,12 @@
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Moorea SAU 1981 height"@en ;
     void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
-    ns1:area_of_use <http://www.opengis.net/def/crs/EPSG/0/5602_area_of_use> ;
     ns1:asProj4 "+vunits=m +no_defs +type=crs"^^ns1:proj4Literal ;
     ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'VerticalCRS','name':'Moorea SAU 1981 height','datum':{'type':'VerticalReferenceFrame','name':'Moorea SAU 1981'},'coordinate_system':{'subtype':'vertical','axis':[{'name':'Gravity-related height','abbreviation':'H','direction':'up','unit':'metre'}]},'scope':'Geodesy, engineering survey, topographic mapping.','area':'French Polynesia - Society Islands - Moorea.','bbox':{'south_latitude':-17.63,'west_longitude':-150,'north_latitude':-17.41,'east_longitude':-149.73},'id':{'authority':'EPSG','code':5602}}"^^ns1:projJSONLiteral ;
     ns1:asWKT "VERTCRS['Moorea SAU 1981 height',VDATUM['Moorea SAU 1981'],CS[vertical,1],AXIS['gravity-related height (H)',up,LENGTHUNIT['metre',1]],USAGE[SCOPE['Geodesy, engineering survey, topographic mapping.'],AREA['French Polynesia - Society Islands - Moorea.'],BBOX[-17.63,-150,-17.41,-149.73]],ID['EPSG',5602]]"^^ns1:wktLiteral ;
     ns1:coordinateSystem <http://www.opengis.net/def/crs/EPSG/0/5602_cs> ;
     ns1:datum <http://www.opengis.net/ont/crs/datum/Moorea_SAU_1981> ;
+    ns1:domainOfValidity <http://www.opengis.net/def/crs/EPSG/0/5602_area_of_use> ;
     ns1:epsgCode "EPSG:5602"^^xsd:string ;
     ns1:isApplicableTo <http://www.opengis.net/ont/crs/isbody/Earth> ;
     ns1:isBound false ;

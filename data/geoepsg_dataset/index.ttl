@@ -35,18 +35,18 @@
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "geoepsg_dataset"@en ;
     ns1:averageLiteralLength 0 ;
-    ns1:averageObjectIRILength 130 ;
+    ns1:averageObjectIRILength 122 ;
     ns1:averagePropertyIRILength 40 ;
-    ns1:averageSubjectIRILength 52 ;
+    ns1:averageSubjectIRILength 53 ;
     ns1:datatypes 0 ;
     ns1:distinctBlankNodes 0 ;
-    ns1:distinctIRIReferences 106793 ;
+    ns1:distinctIRIReferences 123919 ;
     ns1:distinctLiterals 0 ;
-    ns1:distinctRDFNodes 106793 ;
+    ns1:distinctRDFNodes 123919 ;
     ns1:languages 0 ;
     ns1:propertyClasses 0 ;
     dc:language <http://www.lexvo.org/page/iso639-1/en> ;
-    dcterms:modified "2025-10-17T17:32:15"^^xsd:dateTime ;
+    dcterms:modified "2025-10-19T21:11:07"^^xsd:dateTime ;
     dcterms:subject <http://dbpedia.org/resource/Location>,
         <http://dbpedia.org/resource/OGC_GeoSPARQL>,
         <http://dbpedia.org/resource/Time>,
@@ -82,14 +82,17 @@
         <http://www.opengis.net/geoepsg_dataset_GeodeticReferenceFrame>,
         <http://www.opengis.net/geoepsg_dataset_GeographicCRS>,
         <http://www.opengis.net/geoepsg_dataset_Geoid>,
+        <http://www.opengis.net/geoepsg_dataset_GeometryCollection>,
         <http://www.opengis.net/geoepsg_dataset_Krovak>,
         <http://www.opengis.net/geoepsg_dataset_LabordeProjection>,
         <http://www.opengis.net/geoepsg_dataset_LonLatProjection>,
         <http://www.opengis.net/geoepsg_dataset_MercatorProjection>,
         <http://www.opengis.net/geoepsg_dataset_ObliqueStereographicProjection>,
         <http://www.opengis.net/geoepsg_dataset_PlanarCoordinateSystem>,
+        <http://www.opengis.net/geoepsg_dataset_Polygon>,
         <http://www.opengis.net/geoepsg_dataset_PrimeMeridian>,
         <http://www.opengis.net/geoepsg_dataset_ProjectedCRS>,
+        <http://www.opengis.net/geoepsg_dataset_SpatialObjectCollection>,
         <http://www.opengis.net/geoepsg_dataset_Sphere>,
         <http://www.opengis.net/geoepsg_dataset_StereographicProjection>,
         <http://www.opengis.net/geoepsg_dataset_Unit>,
@@ -97,14 +100,14 @@
         <http://www.opengis.net/geoepsg_dataset_VerticalCRS>,
         <http://www.opengis.net/geoepsg_dataset_VerticalCoordinateSystem>,
         <http://www.opengis.net/geoepsg_dataset_VerticalReferenceFrame> ;
-    void:classes 42 ;
+    void:classes 45 ;
     void:dataDump <https://opengeospatial.github.io/ontology-crs/data//index.ttl> ;
-    void:distinctObjects 81554 ;
-    void:distinctSubjects 25161 ;
-    void:entities 25110 ;
+    void:distinctObjects 92020 ;
+    void:distinctSubjects 31818 ;
+    void:entities 31767 ;
     void:feature <http://www.w3.org/ns/formats/RDFa>,
         <http://www.w3.org/ns/formats/Turtle> ;
-    void:properties 78 ;
+    void:properties 81 ;
     void:propertyPartition <http://www.opengis.net/geoepsg_dataset_abbreviation>,
         <http://www.opengis.net/geoepsg_dataset_accuracy>,
         <http://www.opengis.net/geoepsg_dataset_angleFromRectifiedToSkewGrid>,
@@ -118,12 +121,13 @@
         <http://www.opengis.net/geoepsg_dataset_azimuthAtProjectionCentre>,
         <http://www.opengis.net/geoepsg_dataset_co-LatitudeOfConeAxis>,
         <http://www.opengis.net/geoepsg_dataset_comment>,
-        <http://www.opengis.net/geoepsg_dataset_conversion>,
+        <http://www.opengis.net/geoepsg_dataset_coordinateOperation>,
         <http://www.opengis.net/geoepsg_dataset_coordinateSystem>,
         <http://www.opengis.net/geoepsg_dataset_datum>,
         <http://www.opengis.net/geoepsg_dataset_definition>,
         <http://www.opengis.net/geoepsg_dataset_direction>,
         <http://www.opengis.net/geoepsg_dataset_domain>,
+        <http://www.opengis.net/geoepsg_dataset_domainOfValidity>,
         <http://www.opengis.net/geoepsg_dataset_eastingAtFalseOrigin>,
         <http://www.opengis.net/geoepsg_dataset_eastingAtProjectionCentre>,
         <http://www.opengis.net/geoepsg_dataset_eccentricity>,
@@ -135,6 +139,7 @@
         <http://www.opengis.net/geoepsg_dataset_falseEasting>,
         <http://www.opengis.net/geoepsg_dataset_falseNorthing>,
         <http://www.opengis.net/geoepsg_dataset_flatteningParameter>,
+        <http://www.opengis.net/geoepsg_dataset_hasBoundingBox>,
         <http://www.opengis.net/geoepsg_dataset_has_ballpark_transformation>,
         <http://www.opengis.net/geoepsg_dataset_image>,
         <http://www.opengis.net/geoepsg_dataset_includesSRS>,
@@ -183,7 +188,7 @@
         <http://www.opengis.net/geoepsg_dataset_unit_conversion_factor>,
         <http://www.opengis.net/geoepsg_dataset_usage>,
         <http://www.opengis.net/geoepsg_dataset_utm_zone> ;
-    void:triples 316102 ;
+    void:triples 349379 ;
     void:uriSpace "http://www.opengis.net/"^^xsd:string ;
     void:vocabulary ns1:,
         dcam:,

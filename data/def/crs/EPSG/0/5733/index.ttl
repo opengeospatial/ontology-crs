@@ -11,12 +11,12 @@
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "DNN height"@en ;
     void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
-    ns1:area_of_use <http://www.opengis.net/def/crs/EPSG/0/5733_area_of_use> ;
     ns1:asProj4 "+vunits=m +no_defs +type=crs"^^ns1:proj4Literal ;
     ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'VerticalCRS','name':'DNN height','datum':{'type':'VerticalReferenceFrame','name':'Dansk Normal Nul'},'coordinate_system':{'subtype':'vertical','axis':[{'name':'Gravity-related height','abbreviation':'H','direction':'up','unit':'metre'}]},'scope':'Engineering survey, topographic mapping.','area':'Denmark - onshore.','bbox':{'south_latitude':54.5,'west_longitude':7.98,'north_latitude':57.81,'east_longitude':15.28},'id':{'authority':'EPSG','code':5733}}"^^ns1:projJSONLiteral ;
     ns1:asWKT "VERTCRS['DNN height',VDATUM['Dansk Normal Nul'],CS[vertical,1],AXIS['gravity-related height (H)',up,LENGTHUNIT['metre',1]],USAGE[SCOPE['Engineering survey, topographic mapping.'],AREA['Denmark - onshore.'],BBOX[54.5,7.98,57.81,15.28]],ID['EPSG',5733]]"^^ns1:wktLiteral ;
     ns1:coordinateSystem <http://www.opengis.net/def/crs/EPSG/0/5733_cs> ;
     ns1:datum <http://www.opengis.net/ont/crs/datum/Dansk_Normal_Nul> ;
+    ns1:domainOfValidity <http://www.opengis.net/def/crs/EPSG/0/5733_area_of_use> ;
     ns1:epsgCode "EPSG:5733"^^xsd:string ;
     ns1:isApplicableTo <http://www.opengis.net/ont/crs/isbody/Earth> ;
     ns1:isBound false ;

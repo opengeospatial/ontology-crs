@@ -11,12 +11,12 @@
         <https://www.iana.org/assignments/media-types/text/turtle#Resource> ;
     rdfs:label "Kalianpur 1975"@en ;
     void:inDataset <http://www.opengis.net/geoepsg_dataset> ;
-    ns1:area_of_use <http://www.opengis.net/def/crs/EPSG/0/4146_area_of_use> ;
     ns1:asProj4 "+proj=longlat +a=6377299.151 +rf=300.8017255 +no_defs +type=crs"^^ns1:proj4Literal ;
     ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'GeographicCRS','name':'Kalianpur 1975','datum':{'type':'GeodeticReferenceFrame','name':'Kalianpur 1975','ellipsoid':{'name':'Everest 1830 (1975 Definition)','semi_major_axis':6377299.151,'inverse_flattening':300.8017255}},'coordinate_system':{'subtype':'ellipsoidal','axis':[{'name':'Geodetic latitude','abbreviation':'Lat','direction':'north','unit':'degree'},{'name':'Geodetic longitude','abbreviation':'Lon','direction':'east','unit':'degree'}]},'scope':'Geodesy.','area':'India - mainland onshore.','bbox':{'south_latitude':8.02,'west_longitude':68.13,'north_latitude':35.51,'east_longitude':97.42},'id':{'authority':'EPSG','code':4146}}"^^ns1:projJSONLiteral ;
     ns1:asWKT "GEOGCRS['Kalianpur 1975',DATUM['Kalianpur 1975',ELLIPSOID['Everest 1830 (1975 Definition)',6377299.151,300.8017255,LENGTHUNIT['metre',1]]],PRIMEM['Greenwich',0,ANGLEUNIT['degree',0.0174532925199433]],CS[ellipsoidal,2],AXIS['geodetic latitude (Lat)',north,ORDER[1],ANGLEUNIT['degree',0.0174532925199433]],AXIS['geodetic longitude (Lon)',east,ORDER[2],ANGLEUNIT['degree',0.0174532925199433]],USAGE[SCOPE['Geodesy.'],AREA['India - mainland onshore.'],BBOX[8.02,68.13,35.51,97.42]],ID['EPSG',4146]]"^^ns1:wktLiteral ;
     ns1:coordinateSystem <http://www.opengis.net/def/crs/EPSG/0/4146_cs> ;
     ns1:datum <http://www.opengis.net/ont/crs/datum/Kalianpur_1975> ;
+    ns1:domainOfValidity <http://www.opengis.net/def/crs/EPSG/0/4146_area_of_use> ;
     ns1:epsgCode "EPSG:4146"^^xsd:string ;
     ns1:isApplicableTo <http://www.opengis.net/ont/crs/isbody/Earth> ;
     ns1:isBound false ;

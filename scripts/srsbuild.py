@@ -66,11 +66,13 @@ galigns.bind("ign","http://data.ign.fr/def/ignf#")
 galigns.bind("ifc","https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL/")  
 galigns.bind("iso19111","http://def.isotc211.org/iso19112/2019/SpatialReferencingByGeographicIdentifier#")   
 galigns.bind("geosrs", "https://w3id.org/geosrs/")  
+galigns.bind("sf","http://www.opengis.net/ont/sf#")
 galigns.add((URIRef("https://w3id.org/geosrs/alignments/"),RDF.type,OWL.Ontology))
 galigns.add((URIRef("https://w3id.org/geosrs/alignments/"),RDFS.label,Literal("SRS Ontology Alignments",lang="en")))
 
 gcore = Graph()
 gcore.bind("geosrs", "https://w3id.org/geosrs/") 
+gcore.bind("sf","http://www.opengis.net/ont/sf#")
 gcore.bind("skos","http://www.w3.org/2004/02/skos/core#")
 
 gcore.add((URIRef("https://w3id.org/geosrs"),RDF.type,OWL.Ontology))
@@ -86,6 +88,7 @@ def convertCSVToSHACLAndADoc():
     shaclres=Graph()
     shaclres.bind("geosrs", "https://w3id.org/geosrs/") 
     shaclres.bind("sh","http://www.w3.org/ns/shacl#")
+    shaclres.bind("sf","http://www.opengis.net/ont/sf#")
     shaclres.bind("rdf","<http://www.w3.org/1999/02/22-rdf-syntax-ns#")
 
     dirname = os.path.dirname(__file__)
@@ -130,7 +133,7 @@ def convertCSVToSHACLAndADoc():
                             adocdef+="| - "
                         if "Comment" in row and row["Comment"]!="":
                             adocdef+="|"+str(row["Comment"])+" "
-                            shaclres.add((URIRef(shapepropuri),URIRef("http://www.w3.org/2000/01/rdf-schema#comment"),Literal(str(row["Comment"]),lang="en")))
+                            shaclres.add((URIRef(shapepropuri),URIRef("http://www.w3.org/ns/shacl#message"),Literal(str(row["Comment"]),lang="en")))
                         else:
                             adocdef+="| - "
                         adocdef+="\n\n"
@@ -271,6 +274,7 @@ for file in os.listdir(directory):
     curprefix="geosrs_"+filename.replace(".csv","")
     curns="https://w3id.org/geosrs/"+filename.replace(".csv","")+"/"
     g.bind(curprefix,curns) 
+    g.bind("sf","http://www.opengis.net/ont/sf#")
     ldcontext["@context"][curprefix]=curns
     g.bind("skos","http://www.w3.org/2004/02/skos/core#")
     g.bind(curprefix,curns)
@@ -423,6 +427,7 @@ for file in os.listdir(directory):
     ldcontext["@context"][curprefix]=curns
     g.bind("geosrs", "https://w3id.org/geosrs/") 
     g.bind("skos","http://www.w3.org/2004/02/skos/core#")
+    g.bind("sf","http://www.opengis.net/ont/sf#")
 
 
     g.add((URIRef("https://w3id.org/geosrs/"+filename.replace(".csv","")),RDF.type,OWL.Ontology))
@@ -440,7 +445,7 @@ for file in os.listdir(directory):
                 #print(row)
                 if "Concept" in row and row["Concept"]!="":
                     if "Core Property?" in row:
-                        if row["Core Property?"]=="Core Ontology":
+                        if row["Core Property?"]=="Core Ontology" or row["Core Property?"]=="SRS":
                             adocdef="===== Property: "+str(row["Concept"])+"\n\n"
                             if "Description" in row and row["Description"]!="":
                                 adocdef+=row["Description"]+"\n\n"
@@ -741,48 +746,7 @@ requirementsttl.serialize("requirements.ttl",format="ttl")
 
 # Generate alignments
 generateAlignments()
-"""
-alignments=""
-for prefix in alignmentadoc:
-    alignments+="=== "+str(prefix).upper()+" Ontology\n\n.Alignment: "+str(prefix).upper()+" Ontology\n[%autowidth]\n|===\n| From Element | Mapping relation | To Element | Notes\n\n"
-    prefixdict=alignmentadoc[prefix]
-    for aligns in sorted(prefixdict.keys()):
-        alignments+=prefixdict[aligns]
-    alignments+="|===\n\n"
 
-with open("spec/sections/ab-alignments.adoc", 'r',encoding="utf-8") as f:
-    alignmentdoc=f.read()
-
-with open("spec/sections/ab-alignments.adoc", 'w',encoding="utf-8") as f:
-    f.write(alignmentdoc[0:alignmentdoc.find("=== IGN CRS Ontology")]+alignments)
-
-galigns.serialize(destination="alignments.ttl")
-
-for pref in prefixtoclasses:
-    if pref!="geosrs_srs":
-        ldcontext["@context"][pref]=geocrsNS[:-1]+"/"+pref.replace("geosrs_","")+"/"
-    for cls in prefixtoclasses[pref]:
-        ldcontext["@context"][cls[cls.rfind('/')+1:]]=pref.replace("geosrs_srs","geosrs")+":"+cls[cls.rfind('/')+1:]
-    if pref in prefixtoproperties:
-        for cls in prefixtoproperties[pref]:
-            ldcontext["@context"][convertCamelToSnake(cls[cls.rfind('/')+1:])]=pref.replace("geosrs_srs","geosrs")+":"+cls[cls.rfind('/')+1:]
-#print(prefixtoproperties)
-os.mkdir("context")
-with open('context/geosrs-context.json', 'w',encoding="utf-8") as f:
-    json.dump(ldcontext, f,indent=2,sort_keys=True)
-
-dirname = os.path.dirname(__file__)
-abspath = os.path.join(dirname, '../examples/')
-directory = os.fsencode(abspath)  
-for file in os.listdir(directory):
-    filename = os.fsdecode(file)
-    if filename.endswith(".json"):
-       gr = Graph()
-       gr.parse(location=abspath+filename, format='json-ld')
-       gr.serialize(destination=abspath+filename.replace(".json",".ttl"), format='turtle')
-
-#print(moduleToAdoc)
-"""
 convertCSVToSHACLAndADoc()
 
 # Generate modspec elements

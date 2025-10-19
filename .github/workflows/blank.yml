@@ -1,6 +1,9 @@
 name: Ontology Documentation CI
 
-on: [push]
+on: 
+  push: 
+      branches: 
+          - master 
 
 jobs:  
   

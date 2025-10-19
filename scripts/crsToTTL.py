@@ -142,11 +142,13 @@ def crsToTTL(ttl,curcrs,x,geodcounter,crsclass):
 		ttl.add("geoepsg:"+epsgcode+" geosrs:targetCRS geoepsg:"+str(curcrs.target_crs.to_epsg())+" . \n")
 		examples["geosrs:targetCRS"]=websitens+"/"+epsgcode	
 	if curcrs.area_of_use!=None:
-		ttl.add("geoepsg:"+epsgcode+" geosrs:area_of_use geoepsg:"+epsgcode+"_area_of_use . \n")
+		ttl.add("geoepsg:"+epsgcode+" geosrs:domainOfValidity geoepsg:"+epsgcode+"_area_of_use . \n")
 		ttl.add("geoepsg:"+epsgcode+"_area_of_use"+" rdf:type geosrs:AreaOfUse .\n")
 		ttl.add("geoepsg:"+epsgcode+"_area_of_use"+" rdfs:label \""+str(curcrs.area_of_use.name).replace("\"","'")+"\"@en .\n")
-		b = box(curcrs.area_of_use.west, curcrs.area_of_use.south, curcrs.area_of_use.east, curcrs.area_of_use.north)
-		ttl.add("geoepsg:"+epsgcode+"_area_of_use"+" geosrs:extent   \"<http://www.opengis.net/def/crs/OGC/1.3/CRS84> "+str(b.wkt)+"\"^^geo:wktLiteral . \n")
+		ttl.add("geoepsg:"+epsgcode+"_area_of_use"+" geo:hasBoundingBox geoepsg:"+epsgcode+"_area_of_use_bbox .\n")
+		ttl.add("geoepsg:"+epsgcode+"_area_of_use_bbox rdfs:label \""+str(curcrs.area_of_use.name).replace("\"","'")+" BBOX\"@en .\n")
+		ttl.add("geoepsg:"+epsgcode+"_area_of_use_bbox rdf:type sf:Polygon .\n")
+		ttl.add("geoepsg:"+epsgcode+"_area_of_use_bbox geo:asWKT \"POLYGON(("+str(curcrs.area_of_use.west)+" "+str(curcrs.area_of_use.south)+", "+str(curcrs.area_of_use.east)+" "+str(curcrs.area_of_use.south)+", "+str(curcrs.area_of_use.east)+" "+str(curcrs.area_of_use.north)+", "+str(curcrs.area_of_use.west)+" "+str(curcrs.area_of_use.north)+", "+str(curcrs.area_of_use.west)+" "+str(curcrs.area_of_use.south)+"))\"^^geo:wktLiteral .\n")
 		examples["geosrs:AreaOfUse"]=websitensshort+"/areaofuse/"+epsgcode+"_area_of_use"	
 		#\"ENVELOPE("+str(curcrs.area_of_use.west)+" "+str(curcrs.area_of_use.south)+","+str(curcrs.area_of_use.east)+" "+str(curcrs.area_of_use.north)+")\"^^geo:wktLiteral . \n")
 	if curcrs.get_geod()!=None:
@@ -712,6 +714,7 @@ ttlhead+="@prefix foaf: <http://xmlns.com/foaf/0.1/>.\n"
 ttlhead+="@prefix geoepsg: <http://www.opengis.net/def/crs/EPSG/0/> .\n"
 ttlhead+="@prefix geo: <http://www.opengis.net/ont/geosparql#> .\n"
 ttlhead+="@prefix geosrs: <https://w3id.org/geosrs/> .\n"
+ttlhead+="@prefix sf: <http://www.opengis.net/ont/sf#> .\n"
 ttlhead+="@prefix geosrsdatum: <http://www.opengis.net/ont/crs/datum/> .\n"
 ttlhead+="@prefix geosrsisbody: <http://www.opengis.net/ont/crs/isbody/> .\n"
 ttlhead+="@prefix geosrsgrid: <http://www.opengis.net/ont/crs/grid/> .\n"

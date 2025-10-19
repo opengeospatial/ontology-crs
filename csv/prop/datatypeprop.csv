@@ -1,8 +1,8 @@
 Concept,Domain,Range,Requirement,Label,Definition,Comment,ISO 19111,IGN 2019,Proj4RDF,GeoSPARQL,PROJJSON,OGCJSON,Core Property?,IGN Definition,ISO Definition
-,,,,Axis abbreviation,"The abbreviation used to identify an axis. Cf. ISO 19111:2007:2007-07, table 27, attribute coordinate system axis abbreviation.",,,ign:axisAbbrev,geocrs:abbreviation,,,axisAbbrev,,,"The abbreviation used to identify an axis. Cf. ISO 19111:2007:2007-07, table 27, attribute coordinate system axis abbreviation."
+,,,,Axis abbreviation,"The abbreviation used to identify an axis. Cf. ISO 19111:2007:2007-07, table 27, attribute coordinate system axis abbreviation.",,,ign:axisAbbrev,geocrs:abbreviation,,,axisAbbrev,,"The abbreviation used to identify an axis. Cf. ISO 19111:2007:2007-07, table 27, attribute coordinate system axis abbreviation.","The abbreviation used to identify an axis. Cf. ISO 19111:2007:2007-07, table 27, attribute coordinate system axis abbreviation."
 geocrs:asProj4,geosrs:CRS,geosrs:proj4Literal,Coordinate Reference System Properties,PROJ4 string,PROJ4 string defining a CRS. Note: this paradigm is ambiguous and presently considered outdated.,,,,geocrs:asProj4,,,,SRS,,
 geocrs:asProjJSON,geosrs:CRS,geosrs:projJSONLiteral,Coordinate Reference System Properties,PROJ JSON definition,CRS definition encoded as a JSON object interpretable by PROJ4.,,,,geocrs:asProjJSON,,,,SRS,,
-geocrs:asWKT,geosrs:CRS,geosrs:wktLiteral,Coordinate Reference System Properties,WKT definition,CRS definition encoded according to the Well Known Text structure. Cf. ISO 19162:2019. ,,,,geocrs:asWKT,gsp:asWKT,,,SRS,,
+geocrs:asWKT,geosrs:CRS,geosrs:wktLiteral,Coordinate Reference System Properties,WKT definition,"CRS definition encoded according to the Well Known Text structure. Cf. ISO 19162:2019. ",,,,geocrs:asWKT,gsp:asWKT,,,SRS,,
 ,,,,Anchor definition,,,iso19111:anchorDefinition,,,,,,,,
 ,,,,Code space,"Rule or authority for a code, name, term or category.",,,ign:codeSpace,,,,,,,"Rule or authority for a code, name, term or category."
 ,,,,Coordinate Epoch,,,,,geocrs:coordinateEpoch,,,,,,

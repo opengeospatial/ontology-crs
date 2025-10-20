@@ -466,6 +466,9 @@
       "@id": "geosrs:domainOfValidity",
       "@type": "@vocab"
     },
+    "as_proj4": "geosrs:asProj4",
+    "as_proj_j_s_o_n": "geosrs:asProjJSON",
+    "as_w_k_t": "geosrs:asWKT",
     "aust_SA": "geosrs_datum:AustralianNationalSpheroid",
     "axis": {
       "@context": {
@@ -585,9 +588,6 @@
     "exploration": "geosrs_application:OilAndGasExploration",
     "gas": "geosrs_application:OilAndGasExploration",
     "geo": "http://www.opengis.net/ont/geosparql#",
-    "geocrs:as_proj4": "geosrs:geocrs:asProj4",
-    "geocrs:as_proj_j_s_o_n": "geosrs:geocrs:asProjJSON",
-    "geocrs:as_w_k_t": "geosrs:geocrs:asWKT",
     "geographicElement": "geo:hasBoundingBox",
     "geosrs": "https://w3id.org/geosrs/geosrs/",
     "geosrs_application": "https://w3id.org/geosrs/application/",

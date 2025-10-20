@@ -5,24 +5,6 @@
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<geocrs:asProj4> a owl:DatatypeProperty ;
-    rdfs:label "PROJ4 string"@en ;
-    rdfs:domain <https://w3id.org/geosrs/srs/CRS> ;
-    rdfs:range <https://w3id.org/geosrs/srs/proj4Literal> ;
-    skos:definition "PROJ4 string defining a CRS. Note: this paradigm is ambiguous and presently considered outdated."@en .
-
-<geocrs:asProjJSON> a owl:DatatypeProperty ;
-    rdfs:label "PROJ JSON definition"@en ;
-    rdfs:domain <https://w3id.org/geosrs/srs/CRS> ;
-    rdfs:range <https://w3id.org/geosrs/srs/projJSONLiteral> ;
-    skos:definition "CRS definition encoded as a JSON object interpretable by PROJ4."@en .
-
-<geocrs:asWKT> a owl:DatatypeProperty ;
-    rdfs:label "WKT definition"@en ;
-    rdfs:domain <https://w3id.org/geosrs/srs/CRS> ;
-    rdfs:range <https://w3id.org/geosrs/srs/wktLiteral> ;
-    skos:definition "CRS definition encoded according to the Well Known Text structure. Cf. ISO 19162:2019. "@en .
-
 <https://w3id.org/geosrs> a owl:Ontology ;
     rdfs:label "SRS Ontology"@en ;
     vann:preferredNamespacePrefix "geosrs"^^xsd:string ;
@@ -87,6 +69,7 @@ geosrs:PrimeMeridian a owl:Class ;
 geosrs:SingleOperation a owl:Class ;
     rdfs:label "Single Operation"@en ;
     rdfs:subClassOf geosrs:CoordinateOperation ;
+    owl:disjointWith <https://w3id.org/geosrs/co/ConcatenatedOperation> ;
     skos:definition "A non concatenated coordinate operation. Cf. ISO 19111:2007:2007-07, table 43."@en .
 
 geosrs:SphericalCoordinateSystem a owl:Class ;
@@ -109,6 +92,24 @@ geosrs:VerticalDatum a owl:Class ;
     rdfs:label "Vertical Datum"@en ;
     rdfs:subClassOf geosrs:Datum ;
     skos:definition "Datum describing the relation of gravity-related heights or depths to the Earth. Cf. ISO 19111:2007:2007-07, table 41 and annex B.3.3."@en .
+
+geosrs:asProj4 a owl:DatatypeProperty ;
+    rdfs:label "PROJ4 string"@en ;
+    rdfs:domain <https://w3id.org/geosrs/srs/CRS> ;
+    rdfs:range <https://w3id.org/geosrs/srs/proj4Literal> ;
+    skos:definition "PROJ4 string defining a CRS. Note: this paradigm is ambiguous and presently considered outdated."@en .
+
+geosrs:asProjJSON a owl:DatatypeProperty ;
+    rdfs:label "PROJ JSON definition"@en ;
+    rdfs:domain <https://w3id.org/geosrs/srs/CRS> ;
+    rdfs:range <https://w3id.org/geosrs/srs/projJSONLiteral> ;
+    skos:definition "CRS definition encoded as a JSON object interpretable by PROJ4."@en .
+
+geosrs:asWKT a owl:DatatypeProperty ;
+    rdfs:label "WKT definition"@en ;
+    rdfs:domain <https://w3id.org/geosrs/srs/CRS> ;
+    rdfs:range <https://w3id.org/geosrs/srs/wktLiteral> ;
+    skos:definition "CRS definition encoded according to the Well Known Text structure. Cf. ISO 19162:2019. "@en .
 
 geosrs:baseCRS a owl:ObjectProperty ;
     rdfs:label "Base CRS"@en ;

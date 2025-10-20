@@ -350,8 +350,8 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             <tr>
                 <th>Sub-classes</th>
                 <td>
-                    <a href="#SingleOperation">Single Operation</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="#Conversion">Conversion</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#SingleOperation">Single Operation</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
@@ -381,9 +381,9 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             <tr>
                 <th>Sub-classes</th>
                 <td>
-                    <a href="#LinearCoordinateSystem">Linear Coordinate System</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="#VerticalCoordinateSystem">Vertical Coordinate System</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="#OrdinalCoordinateSystem">Ordinal Coordinate System</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#LinearCoordinateSystem">Linear Coordinate System</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
@@ -1070,11 +1070,34 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
 <section id="datatypeproperties">
     <h2>Datatype Properties <span style="float:right; font-size:smaller;"><a href="">&uparrow;</a></span></h2>
     <ul class="hlist">
+        <li><a href="#EPSGcode">EPSG code</a></li>
         <li><a href="#PROJ4string">PROJ4 string</a></li>
         <li><a href="#PROJJSONdefinition">PROJ JSON definition</a></li>
         <li><a href="#WKTdefinition">WKT definition</a></li>
-        <li><a href="#EPSGcode">EPSG code</a></li>
     </ul>
+    <div class="entity property" id="EPSGcode">
+        <h3>EPSG code<sup title="datatype property" class="sup-dp">dp</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#EPSGcode" title="fragment link to here">#</a>&nbsp;<a href="#datatypeproperties" title="Datatype Properties Index">DPs</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://w3id.org/geosrs/EPSGcode</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>Identifier of this resource in the EPSG Geodetic Parameter Dataset.</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Range(s)</th>
+                <td>
+                    <a href="xsd:string">xsd:string</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+        </table>
+    </div>
     <div class="entity property" id="PROJ4string">
         <h3>PROJ4 string<sup title="datatype property" class="sup-dp">dp</sup><span style="float:right; margin-right:10px; font-size:smaller;">
             <a href="#PROJ4string" title="fragment link to here">#</a>&nbsp;<a href="#datatypeproperties" title="Datatype Properties Index">DPs</a></span>
@@ -1082,7 +1105,7 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
         <table>
             <tr>
                 <th>URI</th>
-                <td><code>geocrs:asProj4</code></td>
+                <td><code>https://w3id.org/geosrs/asProj4</code></td>
             </tr>
             <tr>
                 <th>Description</th>
@@ -1111,7 +1134,7 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
         <table>
             <tr>
                 <th>URI</th>
-                <td><code>geocrs:asProjJSON</code></td>
+                <td><code>https://w3id.org/geosrs/asProjJSON</code></td>
             </tr>
             <tr>
                 <th>Description</th>
@@ -1140,7 +1163,7 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
         <table>
             <tr>
                 <th>URI</th>
-                <td><code>geocrs:asWKT</code></td>
+                <td><code>https://w3id.org/geosrs/asWKT</code></td>
             </tr>
             <tr>
                 <th>Description</th>
@@ -1158,29 +1181,6 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
                 <th>Range(s)</th>
                 <td>
                     <a href="https://w3id.org/geosrs/srs/wktLiteral">https://w3id.org/geosrs/srs/wktLiteral</a><sup class="sup-c" title="class">c</sup>
-                </td>
-            </tr>
-        </table>
-    </div>
-    <div class="entity property" id="EPSGcode">
-        <h3>EPSG code<sup title="datatype property" class="sup-dp">dp</sup><span style="float:right; margin-right:10px; font-size:smaller;">
-            <a href="#EPSGcode" title="fragment link to here">#</a>&nbsp;<a href="#datatypeproperties" title="Datatype Properties Index">DPs</a></span>
-        </h3>
-        <table>
-            <tr>
-                <th>URI</th>
-                <td><code>https://w3id.org/geosrs/EPSGcode</code></td>
-            </tr>
-            <tr>
-                <th>Description</th>
-                <td>
-                    <p>Identifier of this resource in the EPSG Geodetic Parameter Dataset.</p>
-                </td>
-            </tr>
-            <tr>
-                <th>Range(s)</th>
-                <td>
-                    <a href="xsd:string">xsd:string</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
         </table>

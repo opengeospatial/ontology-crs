@@ -7,7 +7,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 geosrs_co:ConcatenatedOperation a owl:Class ;
-    rdfs:label "Coordinate Operation"@en ;
+    rdfs:label "Concatenated Operation"@en ;
     rdfs:subClassOf geosrs:CoordinateOperation ;
     skos:definition "Ordered sequence of two or more single coordinate operations. Note: The sequence of coordinate operations is constrained by the requirement that the source coordinate reference system of step (n + 1) shall be the same as the target coordinate reference system of step (n). The source coordinate reference system of the first step and the target coordinate reference system of the last step are the source and target coordinate reference system associated with the concatenated coordinate operation. For a concatenated coordinate operation sequence of n coordinate operations:     source CRS (concatenated coordinate operation) .eq. source CRS (coordinate operation step 1)     target CRS (coordinate operation step i) .eq. source CRS (coordinate operation step i + 1); i .eq. 1 ...(n - 1)     target CRS (concatenated coordinate operation) .eq. target CRS (coordinate operation step n) Instead of a forward coordinate operation, an inverse coordinate operation may be used for one or more of the coordinate operation steps mentioned above, if the inverse coordinate operation is uniquely defined by the forward coordinate operation method."@en .
 
@@ -39,6 +39,7 @@ geosrs_co:PassThroughOperation a owl:Class ;
 geosrs_co:PointMotionOperation a owl:Class ;
     rdfs:label "Point Motion Operation"@en ;
     rdfs:subClassOf geosrs:SingleOperation ;
+    owl:disjointWith geosrs:SingleOperation ;
     skos:definition "Mathematical operation that decribes the change of coordinate values within one coordinate reference system due to the motion of the point between one coordinate epoch and another coordinate epoch Note: In this document the motion is due to tectonic plate movement or deformation."@en .
 
 geosrs_co:RegisterOperations a owl:Class ;

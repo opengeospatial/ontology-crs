@@ -2,8 +2,15 @@ from rdflib import Graph, URIRef, Literal
 from rdflib.namespace import RDF, RDFS, OWL, SKOS, VANN, XSD
 import csv
 import os
+import sys
 import re
 import json
+
+# Ensure script is run from the repository root directory
+if not os.path.exists('csv') or not os.path.exists('spec'):
+    print("Error: This script must be run from the repository root directory.")
+    print("Usage: python3 scripts/srsbuild.py")
+    sys.exit(1)
 
 pattern = re.compile(r'(?<!^)(?=[A-Z])')
 
@@ -48,8 +55,11 @@ reference:: {{entities}}
 ====
 """
 
-with open('examples.json', 'r') as file:
-    examples = json.load(file)
+try:
+    with open('examples.json', 'r') as file:
+        examples = json.load(file)
+except FileNotFoundError:
+    examples = {}
 
 alignmentadoc={"ign":{},"iso19111":{},"ifc":{}}
 moduleToRequirements={"06-core.adoc":{},"07-co_module.adoc":{},"08-cs_module.adoc":{},"09-datum_module.adoc":{},"10-srsapplication_module.adoc":{},"11-projections_module.adoc":{},"12-planet_module.adoc":{},"13-instances.adoc":{}}
@@ -89,7 +99,7 @@ def convertCSVToSHACLAndADoc():
     shaclres.bind("geosrs", "https://w3id.org/geosrs/") 
     shaclres.bind("sh","http://www.w3.org/ns/shacl#")
     shaclres.bind("sf","http://www.opengis.net/ont/sf#")
-    shaclres.bind("rdf","<http://www.w3.org/1999/02/22-rdf-syntax-ns#")
+    shaclres.bind("rdf","http://www.w3.org/1999/02/22-rdf-syntax-ns#")
 
     dirname = os.path.dirname(__file__)
     abspath = os.path.join(dirname, '../csv/shacl/')
@@ -174,7 +184,7 @@ def generateAlignments():
             for cls in prefixtoproperties[pref]:
                 ldcontext["@context"][convertCamelToSnake(cls[cls.rfind('/')+1:])]=pref.replace("geosrs_srs","geosrs")+":"+cls[cls.rfind('/')+1:]
     #print(prefixtoproperties)
-    os.mkdir("context")
+    os.makedirs("context", exist_ok=True)
     with open('context/geosrs-context.json', 'w',encoding="utf-8") as f:
         json.dump(ldcontext, f,indent=2,sort_keys=True)
 

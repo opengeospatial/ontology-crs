@@ -11,3 +11,240 @@ SHACL shapes in this specification are subdivided by the same module designation
 In order to verify a graph a single validation file of SHACL shapes is provided alongside this specification.
 
 
+===== SHACL Shapes: Cs
+
+.Cs
+[cols="7*"]
+|===
+|Label|TargetNode|Property|Class|MinCount|MaxCount|Comment
+
+|Shape S1 |geosrs:1DCoordinateSystem |geosrs:axis |geosrs:CoordinateSystemAxis |1 |1 |A 1D coordinate system should have exactly one axis 
+
+|Shape S2 |geosrs:3DCoordinateSystem |geosrs:axis |geosrs:CoordinateSystemAxis |3 | - |A 3D coordinate system should have at least three axes 
+
+|Shape S3 |geosrs:ConicalCoordinateSystem |geosrs:axis |geosrs:CoordinateSystemAxis |3 | - |A conical coordinate system should have at least three axes 
+
+|Shape S4 |geosrs:CoordinateSystem |geosrs:axis |geosrs:CoordinateSystemAxis |1 | - |A coordinate system should have at least one axis 
+
+|Shape S5 |geosrs:CoordinateSystemAxis |geosrs:axisDirection |geosrs:AxisDirection |1 |1 |A coordinate system axis should have exactly one axis direction 
+
+|Shape S6 |geosrs:CurvilinearCoordinateSystem |geosrs:axis |geosrs:CoordinateSystemAxis |3 | - |A curvilinear coordinate system is defined in Euclidean space and should therefore have at least three axes 
+
+|Shape S7 |geosrs:CylindricalCoordinateSystem |geosrs:axis |geosrs:CoordinateSystemAxis |3 | - |A cylindrical coordinate system should have at least three axes 
+
+|Shape S8 |geosrs:DateTimeTemporalCoordinateSystem |geosrs:axis |geosrs:CoordinateSystemAxis |1 |1 |A date time temporal coordinate system should have exactly one axis 
+
+|Shape S9 |geosrs:PlanarCoordinateSystem |geosrs:axis |geosrs:CoordinateSystemAxis |2 | - |A planar coordinate system should have at least two axes 
+
+|Shape S10 |geosrs:TemporalCoordinateSystem |geosrs:axis |geosrs:CoordinateSystemAxis |1 |1 |A temporal coordinate system should have exactly one axis 
+
+|Shape S11 |geosrs:TemporalCountCoordinateSystem |geosrs:axis |geosrs:CoordinateSystemAxis |1 |1 |A temporal count coordinate system should have exactly one axis 
+
+|Shape S12 |geosrs:TemporalMeasureCoordinateSystem |geosrs:axis |geosrs:CoordinateSystemAxis |1 |1 |A temporal measure coordinate system should have exactly one axis 
+
+|===
+
+===== SHACL Shapes: Core
+
+.Core
+[cols="7*"]
+|===
+|Label|TargetNode|Property|Class|MinCount|MaxCount|Comment
+
+|Shape S1 |geosrs:CRS |geosrs:coordinateSystem |geosrs:CoordinateSystem |1 |1 |A coordinate reference system should have exactly one coordinate system 
+
+|Shape S2 |geosrs:CRS |geosrs:domainOfValidity |geosrs:AreaOfUse |1 | - |A coordinate reference system should have at least one area of use 
+
+|Shape S3 |geosrs:CRS |geosrs:datum |geosrs:Datum | - |1 |A coordinate reference system should have exactly one datum 
+
+|Shape S4 |geosrs:CRS |geosrs:datumEnsemble |geosrs:DatumEnsemble | - |1 |A coordinate reference system may have exactly one datum ensemble 
+
+|Shape S5 |geosrs:CompoundCRS |geosrs:includesSRS |geosrs:SingleCRS |1 | - |A compound coordinate reference system should consist of at least one single coordinate reference system 
+
+|Shape S6 |geosrs:GeodeticCRS |geosrs:coordinateSystem |geosrs:GeodeticCoordinateSystem |1 |1 |A geodetic coordinate reference system should have exactly one geodetic coordinate system 
+
+|Shape S7 |geosrs:GeographicCRS |geosrs:datum |geosrs:GeodeticDatum |1 |1 |A geographic coordinate reference system should have exactly one geodetic datum 
+
+|Shape S8 |geosrs:GeographicCRS |geosrs:coordinateSystem |geosrs:EllipsoidalCoordinateSystem |1 |1 |A geographic coordinate reference system should have exactly one ellipsoidal coordinate system 
+
+|Shape S9 |geosrs:ParametricCRS |geosrs:datum |geosrs:ParametricDatum |1 |1 |A parametric coordinate reference system should have exactly one parametric datum 
+
+|Shape S10 |geosrs:ProjectedCRS |geosrs:conversion |geosrs:Conversion |1 | - |A projected coordinate reference system should have at least one conversion 
+
+|Shape S11 |geosrs:SingleCRS |geosrs:coordinateSystem |geosrs:CoordinateSystem |1 |1 |A single coordinate reference system should have exactly one coordinate system 
+
+|Shape S12 |geosrs:SingleCRS |geosrs:datum |geosrs:Datum |1 |1 |A single coordinate reference system should have exactly one datum 
+
+|Shape S13 |geosrs:TemporalCRS |geosrs:datum |geosrs:TemporalDatum |1 |1 |A projected coordinate reference system should have exactly one temporal datum 
+
+|===
+
+===== SHACL Shapes: Datum
+
+.Datum
+[cols="7*"]
+|===
+|Label|TargetNode|Property|Class|MinCount|MaxCount|Comment
+
+|Shape S1 |geosrs:ParametricDatum |geosrs:definingParameter |geosrs:DefiningParameter |1 | - |A parametric datum should have at least one defining parameter 
+
+|===
+
+===== SHACL Shapes: Cs
+
+.Cs
+[cols="7*"]
+|===
+|Label|TargetNode|Property|Class|MinCount|MaxCount|Comment
+
+|Shape S1 |geosrs:1DCoordinateSystem |geosrs:axis |geosrs:CoordinateSystemAxis |1 |1 |A 1D coordinate system should have exactly one axis 
+
+|Shape S2 |geosrs:3DCoordinateSystem |geosrs:axis |geosrs:CoordinateSystemAxis |3 | - |A 3D coordinate system should have at least three axes 
+
+|Shape S3 |geosrs:ConicalCoordinateSystem |geosrs:axis |geosrs:CoordinateSystemAxis |3 | - |A conical coordinate system should have at least three axes 
+
+|Shape S4 |geosrs:CoordinateSystem |geosrs:axis |geosrs:CoordinateSystemAxis |1 | - |A coordinate system should have at least one axis 
+
+|Shape S5 |geosrs:CoordinateSystemAxis |geosrs:axisDirection |geosrs:AxisDirection |1 |1 |A coordinate system axis should have exactly one axis direction 
+
+|Shape S6 |geosrs:CurvilinearCoordinateSystem |geosrs:axis |geosrs:CoordinateSystemAxis |3 | - |A curvilinear coordinate system is defined in Euclidean space and should therefore have at least three axes 
+
+|Shape S7 |geosrs:CylindricalCoordinateSystem |geosrs:axis |geosrs:CoordinateSystemAxis |3 | - |A cylindrical coordinate system should have at least three axes 
+
+|Shape S8 |geosrs:DateTimeTemporalCoordinateSystem |geosrs:axis |geosrs:CoordinateSystemAxis |1 |1 |A date time temporal coordinate system should have exactly one axis 
+
+|Shape S9 |geosrs:PlanarCoordinateSystem |geosrs:axis |geosrs:CoordinateSystemAxis |2 | - |A planar coordinate system should have at least two axes 
+
+|Shape S10 |geosrs:TemporalCoordinateSystem |geosrs:axis |geosrs:CoordinateSystemAxis |1 |1 |A temporal coordinate system should have exactly one axis 
+
+|Shape S11 |geosrs:TemporalCountCoordinateSystem |geosrs:axis |geosrs:CoordinateSystemAxis |1 |1 |A temporal count coordinate system should have exactly one axis 
+
+|Shape S12 |geosrs:TemporalMeasureCoordinateSystem |geosrs:axis |geosrs:CoordinateSystemAxis |1 |1 |A temporal measure coordinate system should have exactly one axis 
+
+|===
+
+===== SHACL Shapes: Core
+
+.Core
+[cols="7*"]
+|===
+|Label|TargetNode|Property|Class|MinCount|MaxCount|Comment
+
+|Shape S1 |geosrs:CRS |geosrs:coordinateSystem |geosrs:CoordinateSystem |1 |1 |A coordinate reference system should have exactly one coordinate system 
+
+|Shape S2 |geosrs:CRS |geosrs:domainOfValidity |geosrs:AreaOfUse |1 | - |A coordinate reference system should have at least one area of use 
+
+|Shape S3 |geosrs:CRS |geosrs:datum |geosrs:Datum | - |1 |A coordinate reference system should have exactly one datum 
+
+|Shape S4 |geosrs:CRS |geosrs:datumEnsemble |geosrs:DatumEnsemble | - |1 |A coordinate reference system may have exactly one datum ensemble 
+
+|Shape S5 |geosrs:CompoundCRS |geosrs:includesSRS |geosrs:SingleCRS |1 | - |A compound coordinate reference system should consist of at least one single coordinate reference system 
+
+|Shape S6 |geosrs:GeodeticCRS |geosrs:coordinateSystem |geosrs:GeodeticCoordinateSystem |1 |1 |A geodetic coordinate reference system should have exactly one geodetic coordinate system 
+
+|Shape S7 |geosrs:GeographicCRS |geosrs:datum |geosrs:GeodeticDatum |1 |1 |A geographic coordinate reference system should have exactly one geodetic datum 
+
+|Shape S8 |geosrs:GeographicCRS |geosrs:coordinateSystem |geosrs:EllipsoidalCoordinateSystem |1 |1 |A geographic coordinate reference system should have exactly one ellipsoidal coordinate system 
+
+|Shape S9 |geosrs:ParametricCRS |geosrs:datum |geosrs:ParametricDatum |1 |1 |A parametric coordinate reference system should have exactly one parametric datum 
+
+|Shape S10 |geosrs:ProjectedCRS |geosrs:conversion |geosrs:Conversion |1 | - |A projected coordinate reference system should have at least one conversion 
+
+|Shape S11 |geosrs:SingleCRS |geosrs:coordinateSystem |geosrs:CoordinateSystem |1 |1 |A single coordinate reference system should have exactly one coordinate system 
+
+|Shape S12 |geosrs:SingleCRS |geosrs:datum |geosrs:Datum |1 |1 |A single coordinate reference system should have exactly one datum 
+
+|Shape S13 |geosrs:TemporalCRS |geosrs:datum |geosrs:TemporalDatum |1 |1 |A projected coordinate reference system should have exactly one temporal datum 
+
+|===
+
+===== SHACL Shapes: Datum
+
+.Datum
+[cols="7*"]
+|===
+|Label|TargetNode|Property|Class|MinCount|MaxCount|Comment
+
+|Shape S1 |geosrs:ParametricDatum |geosrs:definingParameter |geosrs:DefiningParameter |1 | - |A parametric datum should have at least one defining parameter 
+
+|===
+
+===== SHACL Shapes: Cs
+
+.Cs
+[cols="7*"]
+|===
+|Label|TargetNode|Property|Class|MinCount|MaxCount|Comment
+
+|Shape S1 |geosrs:1DCoordinateSystem |geosrs:axis |geosrs:CoordinateSystemAxis |1 |1 |A 1D coordinate system should have exactly one axis 
+
+|Shape S2 |geosrs:3DCoordinateSystem |geosrs:axis |geosrs:CoordinateSystemAxis |3 | - |A 3D coordinate system should have at least three axes 
+
+|Shape S3 |geosrs:ConicalCoordinateSystem |geosrs:axis |geosrs:CoordinateSystemAxis |3 | - |A conical coordinate system should have at least three axes 
+
+|Shape S4 |geosrs:CoordinateSystem |geosrs:axis |geosrs:CoordinateSystemAxis |1 | - |A coordinate system should have at least one axis 
+
+|Shape S5 |geosrs:CoordinateSystemAxis |geosrs:axisDirection |geosrs:AxisDirection |1 |1 |A coordinate system axis should have exactly one axis direction 
+
+|Shape S6 |geosrs:CurvilinearCoordinateSystem |geosrs:axis |geosrs:CoordinateSystemAxis |3 | - |A curvilinear coordinate system is defined in Euclidean space and should therefore have at least three axes 
+
+|Shape S7 |geosrs:CylindricalCoordinateSystem |geosrs:axis |geosrs:CoordinateSystemAxis |3 | - |A cylindrical coordinate system should have at least three axes 
+
+|Shape S8 |geosrs:DateTimeTemporalCoordinateSystem |geosrs:axis |geosrs:CoordinateSystemAxis |1 |1 |A date time temporal coordinate system should have exactly one axis 
+
+|Shape S9 |geosrs:PlanarCoordinateSystem |geosrs:axis |geosrs:CoordinateSystemAxis |2 | - |A planar coordinate system should have at least two axes 
+
+|Shape S10 |geosrs:TemporalCoordinateSystem |geosrs:axis |geosrs:CoordinateSystemAxis |1 |1 |A temporal coordinate system should have exactly one axis 
+
+|Shape S11 |geosrs:TemporalCountCoordinateSystem |geosrs:axis |geosrs:CoordinateSystemAxis |1 |1 |A temporal count coordinate system should have exactly one axis 
+
+|Shape S12 |geosrs:TemporalMeasureCoordinateSystem |geosrs:axis |geosrs:CoordinateSystemAxis |1 |1 |A temporal measure coordinate system should have exactly one axis 
+
+|===
+
+===== SHACL Shapes: Core
+
+.Core
+[cols="7*"]
+|===
+|Label|TargetNode|Property|Class|MinCount|MaxCount|Comment
+
+|Shape S1 |geosrs:CRS |geosrs:coordinateSystem |geosrs:CoordinateSystem |1 |1 |A coordinate reference system should have exactly one coordinate system 
+
+|Shape S2 |geosrs:CRS |geosrs:domainOfValidity |geosrs:AreaOfUse |1 | - |A coordinate reference system should have at least one area of use 
+
+|Shape S3 |geosrs:CRS |geosrs:datum |geosrs:Datum | - |1 |A coordinate reference system should have exactly one datum 
+
+|Shape S4 |geosrs:CRS |geosrs:datumEnsemble |geosrs:DatumEnsemble | - |1 |A coordinate reference system may have exactly one datum ensemble 
+
+|Shape S5 |geosrs:CompoundCRS |geosrs:includesSRS |geosrs:SingleCRS |1 | - |A compound coordinate reference system should consist of at least one single coordinate reference system 
+
+|Shape S6 |geosrs:GeodeticCRS |geosrs:coordinateSystem |geosrs:GeodeticCoordinateSystem |1 |1 |A geodetic coordinate reference system should have exactly one geodetic coordinate system 
+
+|Shape S7 |geosrs:GeographicCRS |geosrs:datum |geosrs:GeodeticDatum |1 |1 |A geographic coordinate reference system should have exactly one geodetic datum 
+
+|Shape S8 |geosrs:GeographicCRS |geosrs:coordinateSystem |geosrs:EllipsoidalCoordinateSystem |1 |1 |A geographic coordinate reference system should have exactly one ellipsoidal coordinate system 
+
+|Shape S9 |geosrs:ParametricCRS |geosrs:datum |geosrs:ParametricDatum |1 |1 |A parametric coordinate reference system should have exactly one parametric datum 
+
+|Shape S10 |geosrs:ProjectedCRS |geosrs:conversion |geosrs:Conversion |1 | - |A projected coordinate reference system should have at least one conversion 
+
+|Shape S11 |geosrs:SingleCRS |geosrs:coordinateSystem |geosrs:CoordinateSystem |1 |1 |A single coordinate reference system should have exactly one coordinate system 
+
+|Shape S12 |geosrs:SingleCRS |geosrs:datum |geosrs:Datum |1 |1 |A single coordinate reference system should have exactly one datum 
+
+|Shape S13 |geosrs:TemporalCRS |geosrs:datum |geosrs:TemporalDatum |1 |1 |A projected coordinate reference system should have exactly one temporal datum 
+
+|===
+
+===== SHACL Shapes: Datum
+
+.Datum
+[cols="7*"]
+|===
+|Label|TargetNode|Property|Class|MinCount|MaxCount|Comment
+
+|Shape S1 |geosrs:ParametricDatum |geosrs:definingParameter |geosrs:DefiningParameter |1 | - |A parametric datum should have at least one defining parameter 
+
+|===
+

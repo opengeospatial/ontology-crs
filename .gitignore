@@ -1,2 +1,22 @@
 *.swp
 ~lock*
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Generated ontology files (root directory)
+/*.ttl
+/context/
+
+# Generated ontology files in scripts directory
+scripts/*.ttl
+
+# Generated spec class files
+spec/sections/*_classes.adoc
+
+# Build outputs
+/examples/*.ttl

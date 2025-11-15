@@ -34,7 +34,7 @@ good number of slots. Target date: beginning on the second half of 2025.
 
 7. CRS registry. Convince the OGC to host a CRS registry, ideally
 containing the full Proj database converted to RDF with PRoj4RDF.
-Target date: second half of 2025.
+Target date: **second half of 2025**.
 
 8. Maintenance. Develop a maintenance plan for the registry, possibly
 in coordination with the proj-data stewards. Possibly needs some

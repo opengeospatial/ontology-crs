@@ -1,0 +1,9 @@
+# Requirements for ontology-crs scripts
+# Install with: pip install -r requirements.txt
+
+# Required for srsbuild.py
+rdflib>=6.0.0
+
+# Required for crsToTTL.py (optional - only needed for CRS conversion)
+pyproj>=3.0.0
+shapely>=1.8.0

@@ -5809,6 +5809,16 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 
 
 
+
+
+
+
+
+
+
+
+
+
 </sections><annex id="_1ffe9073-e330-56ad-2072-cbd3fb2f8bad" obligation="normative">
 <title id="_470614e0-369e-cd47-ac8c-e0c157b1a785">Abstract Test Suite</title>
 <floating-title id="_6c4825b5-5b33-43be-8438-e76319911fee" depth="2" type="floating-title">A.0. Overview</floating-title>
@@ -6307,7 +6317,7 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 </requirement>
 </clause>
 </clause>
-</annex><annex id="_2355c65b-70ad-7184-883f-619ab7783816" obligation="informative">
+</annex><annex id="_1ca1181e-1670-93eb-1b73-a5acdf5e7ae1" obligation="informative">
 <title id="_b9d29aec-19b5-5eda-4826-c57aa7f4b803">Alignments</title>
 <floating-title id="_007f0895-6055-0586-9ec2-6c44b1ed796c" depth="2" type="floating-title">Overview</floating-title>
 <p id="_1c57e2af-70fd-4202-a1ce-7b6d97972f1f">The prefixes used for the ontologies mapped to in all following sections are given in the following table.</p>
@@ -6531,240 +6541,330 @@ Special attention is given to the compatibility of the CRS Ontology vocabulary t
 </table>
 </clause>
 
-<clause id="_edb3510b-6ed1-0720-6d04-485ec06bd197" obligation="informative">
+<clause id="_03018c90-cb1b-7b06-97f0-0e867df4a8c3" obligation="informative">
 <title id="_41bd5187-bd65-fef7-ee44-0b62d943e7c5">IFC Ontology</title>
-<table id="_eeb85246-9d2a-e60f-3b7d-e014031725bb">
-<name id="_906817e7-8246-3ab7-d66e-22bcdfd2588d">Alignment: IFC Ontology</name>
-<thead><tr id="_9121a362-f35c-4800-63ab-438b383fa394"><th id="_80fab73c-815e-621c-0ee0-7bbe1d5e0ede" valign="middle" align="left">From Element</th>
-<th id="_fbc39f1a-8a75-097c-4980-829081e0fe24" valign="middle" align="left">Mapping relation</th>
-<th id="_0b8cb0af-005b-9597-fa2d-086e69329463" valign="middle" align="left">To Element</th>
-<th id="_d192a74e-a248-7009-c943-07fb9174323f" valign="middle" align="left">Notes</th>
+<table id="_d210751d-4494-c822-8c7c-6085fa838ace">
+<name id="_ee24dea0-791e-730e-3e3f-93501b179897">Alignment: IFC Ontology</name>
+<thead><tr id="_eb5e31d1-26dc-0f0e-f0e1-f20ef97d8002"><th id="_04d78299-ba9f-68a3-e70a-dbe1b99fe19d" valign="middle" align="left">From Element</th>
+<th id="_9f3473e8-59ab-5d11-dc77-314ded083675" valign="middle" align="left">Mapping relation</th>
+<th id="_0c585d7d-c541-cdc7-64a5-0113c68ea794" valign="middle" align="left">To Element</th>
+<th id="_7dd948c7-aed3-055e-0c7d-43eb3edf9a38" valign="middle" align="left">Notes</th>
 </tr></thead>
-<tbody><tr id="_35997c19-94c7-a5b4-0575-43f7c73cbe0e"><td id="_6f4ee700-48e3-b886-0bc2-1569665910c8" valign="middle" align="left"><link target="https://w3id.org/geosrs/AxisDirection">geosrs:AxisDirection</link></td>
-<td id="_4b9f51c2-5e22-eb3a-72df-77e9738dc5c1" valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#equivalentClass">owl:equivalentClass</link></td>
-<td id="_bd67a9ce-8032-5231-4909-f91a2f6ca5e5" valign="middle" align="left"><link target="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL/IfcDirection">ifc:IfcDirection</link></td>
-<td id="_a2c04809-a9aa-9762-9347-d77f15645c6b" valign="middle" align="left">-</td>
-</tr><tr id="_918f52df-f889-c086-84e3-8c222832ecb9"><td id="_3feaa0d0-b4b1-32b5-3689-63f899cda503" valign="middle" align="left"><link target="https://w3id.org/geosrs/CRS">geosrs:CRS</link></td>
-<td id="_86ce22e6-2825-53f4-3992-abe8b6fe51f6" valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#equivalentClass">owl:equivalentClass</link></td>
-<td id="_5e4ecc56-1760-0fcc-1014-f7933ca2c2fb" valign="middle" align="left"><link target="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL/IfcCoordinateReferenceSystem">ifc:IfcCoordinateReferenceSystem</link></td>
-<td id="_ddf2b93f-8612-2589-9a93-84749690f2f1" valign="middle" align="left">-</td>
-</tr><tr id="_a98fdc54-a994-3984-d709-6abb44938eea"><td id="_3bf638f3-ab5a-3217-3302-e4932b4ffea5" valign="middle" align="left"><link target="https://w3id.org/geosrs/CoordinateOperation">geosrs:CoordinateOperation</link></td>
-<td id="_23046e3d-6cc5-0e55-9d1b-495a0d04f9f5" valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#equivalentClass">owl:equivalentClass</link></td>
-<td id="_6e6ed70d-6587-e3f3-bb94-d7cab9fbb0ff" valign="middle" align="left"><link target="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL/IfcCoordinateOperation">ifc:IfcCoordinateOperation</link></td>
-<td id="_427f6d33-bf86-8253-1986-2e4cbbcaf013" valign="middle" align="left">-</td>
-</tr><tr id="_027bb7e2-1527-20fe-f3e8-afd26e7b6ba7"><td id="_eeafaff9-e145-9f24-c8f1-b2ff3246ea27" valign="middle" align="left"><link target="https://w3id.org/geosrs/ProjectedCRS">geosrs:ProjectedCRS</link></td>
-<td id="_3aa286d3-ba78-6d0f-9fce-feb5598fa2ed" valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#equivalentClass">owl:equivalentClass</link></td>
-<td id="_583b03a0-7398-9f6c-22f7-7cb4848e4e4d" valign="middle" align="left"><link target="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL/IfcProjectedCRS">ifc:IfcProjectedCRS</link></td>
-<td id="_1cdb2f52-11ab-9286-e3e3-04ba95db3cac" valign="middle" align="left">-</td>
-</tr><tr id="_ffe0820c-3f66-2b9e-8193-8718f8b37236"><td id="_286d5dfc-33fc-8d37-c400-4917aeb5ec4b" valign="middle" align="left"><link target="https://w3id.org/geosrs/axis">geosrs:axis</link></td>
-<td id="_b36eed8c-0e60-e1ac-625c-be95a548a82a" valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#equivalentProperty">owl:equivalentProperty</link></td>
-<td id="_1a3da0d3-3762-ffdf-42f8-9be123c02476" valign="middle" align="left"><link target="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL/axis_IfcAxis1Placement">ifc:axis_IfcAxis1Placement</link></td>
-<td id="_e8a08c3c-8b3a-ad2f-42e8-3ad1a1dbbfc1" valign="middle" align="left">-</td>
-</tr><tr id="_cd409a62-928d-5436-ec65-f62f29d17425"><td id="_3d6d676d-1b23-f2a9-8ba1-4c4799bb2e3d" valign="middle" align="left"><link target="https://w3id.org/geosrs/sourceCRS">geosrs:sourceCRS</link></td>
-<td id="_62213fd9-67db-db6b-ca76-8ecfbbb9514c" valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#equivalentProperty">owl:equivalentProperty</link></td>
-<td id="_b1679c54-cd9a-8d1f-08c5-3b00cddac524" valign="middle" align="left"><link target="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL/sourceCRS">ifc:sourceCRS</link></td>
-<td id="_859cf1e6-f60e-f572-57f5-c6858e38a6d6" valign="middle" align="left">-</td>
-</tr><tr id="_5776bf6f-0fd9-cc4f-d158-06b6b2cb7315"><td id="_da300885-10b1-b7bb-6869-db28e2331a18" valign="middle" align="left"><link target="https://w3id.org/geosrs/targetCRS">geosrs:targetCRS</link></td>
-<td id="_4a8b4767-83e5-8377-3089-24417896eb51" valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#equivalentProperty">owl:equivalentProperty</link></td>
-<td id="_0bc8152b-880a-6977-647a-1a7a792d521c" valign="middle" align="left"><link target="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL/targetCRS">ifc:targetCRS</link></td>
-<td id="_c06fb2b8-0c97-d9cf-e079-d4dd207ccaa8" valign="middle" align="left">- === IGN Ontology  .Alignment: IGN Ontology [%autowidth]</td>
-</tr></tbody>
-</table>
-
-<p id="_05844580-fda3-e2cd-f522-5227ac945732">| From Element | Mapping relation | To Element | Notes</p>
-
-<p id="_542fa519-6c72-7a69-8d56-0dbfa99181d5">|https://w3id.org/geosrs/CoordinateSystem[geosrs:CoordinateSystem] |http://www.w3.org/2002/07/owl#equivalentClass[owl:equivalentClass] |http://data.ign.fr/def/ignf#CoordinateSystem[ign:CoordinateSystem] | -</p>
-
-<p id="_cd3ae181-4f7c-8e61-713b-05fe8d6457e9">|https://w3id.org/geosrs/Datum[geosrs:Datum] |http://www.w3.org/2002/07/owl#equivalentClass[owl:equivalentClass] |http://data.ign.fr/def/ignf#Datum[ign:Datum] | -</p>
-
-<p id="_0f0f7c54-9e7c-8570-e836-4593adba9582">|https://w3id.org/geosrs/Ellipsoid[geosrs:Ellipsoid] |http://www.w3.org/2002/07/owl#equivalentClass[owl:equivalentClass] |http://data.ign.fr/def/ignf#Ellipsoid[ign:Ellipsoid] | -</p>
-
-<p id="_9610cb0f-63f2-553e-43b9-796ea1d52ff0">|https://w3id.org/geosrs/co/Conversion[geosrs:Conversion] |http://www.w3.org/2002/07/owl#equivalentClass[owl:equivalentClass] |http://data.ign.fr/def/ignf#Conversion[ign:Conversion] | -</p>
-
-<p id="_6d73a494-e3b3-1cf8-ebdb-3120f73a7365">|https://w3id.org/geosrs/co/CoordinateOperation[geosrs:CoordinateOperation] |http://www.w3.org/2002/07/owl#equivalentClass[owl:equivalentClass] |http://data.ign.fr/def/ignf#CoordinateOperation[ign:CoordinateOperation] | -</p>
-
-<p id="_42316147-a6b9-f3c0-4c6f-6158862d6e76">|https://w3id.org/geosrs/co/OperationMethod[geosrs:OperationMethod] |http://www.w3.org/2002/07/owl#equivalentClass[owl:equivalentClass] |http://data.ign.fr/def/ignf#OperationMethod[ign:OperationMethod] | -</p>
-
-<p id="_261e29a7-1c25-299a-45ca-7ef7c6d32f77">|https://w3id.org/geosrs/co/OperationParameter[geosrs:OperationParameter] |http://www.w3.org/2002/07/owl#equivalentClass[owl:equivalentClass] |http://data.ign.fr/def/ignf#OperationParameter[ign:OperationParameter] | -</p>
-
-<p id="_900613a2-b32c-5203-cbc5-cb2bc587e335">|https://w3id.org/geosrs/co/OperationParameterValue[geosrs:OperationParameterValue] |http://www.w3.org/2002/07/owl#equivalentClass[owl:equivalentClass] |http://data.ign.fr/def/ignf#OperationParameterValue[ign:OperationParameterValue] | -</p>
-
-<p id="_0353037e-696d-0678-560a-ae34b26b0884">|https://w3id.org/geosrs/co/SingleOperation[geosrs:SingleOperation] |http://www.w3.org/2002/07/owl#equivalentClass[owl:equivalentClass] |http://data.ign.fr/def/ignf#SingleOperation[ign:SingleOperation] | -</p>
-
-<p id="_59991eca-b7bd-c0f1-de7e-ec521f43a7df">|https://w3id.org/geosrs/co/Transformation[geosrs:Transformation] |http://www.w3.org/2002/07/owl#equivalentClass[owl:equivalentClass] |http://data.ign.fr/def/ignf#Transformation[ign:Transformation] | -</p>
-
-<p id="_3a9274e8-1d1d-c570-bdfd-54014aa442a0">|https://w3id.org/geosrs/cs/CartesianCoordinateSystem[geosrs:CartesianCoordinateSystem] |http://www.w3.org/2002/07/owl#equivalentClass[owl:equivalentClass] |http://data.ign.fr/def/ignf#CartesianCS[ign:CartesianCS] | -</p>
-
-<p id="_4ecda9a7-6564-a795-c9c2-cabf79a99b3f">|https://w3id.org/geosrs/cs/CoordinateSystem[geosrs:CoordinateSystem] |http://www.w3.org/2002/07/owl#equivalentClass[owl:equivalentClass] |http://data.ign.fr/def/ignf#CoordinateSystem[ign:CoordinateSystem] | -</p>
-
-<p id="_bfc1399a-3bf8-07c2-c09b-21dc8f279e2b">|https://w3id.org/geosrs/cs/CoordinateSystemAxis[geosrs:CoordinateSystemAxis] |http://www.w3.org/2002/07/owl#equivalentClass[owl:equivalentClass] |http://data.ign.fr/def/ignf#CoordinateSystemAxis[ign:CoordinateSystemAxis] | -</p>
-
-<p id="_77689be9-1a58-be1c-d248-6886fecd0d2c">|https://w3id.org/geosrs/cs/EllipsoidalCoordinateSystem[geosrs:EllipsoidalCoordinateSystem] |http://www.w3.org/2002/07/owl#equivalentClass[owl:equivalentClass] |http://data.ign.fr/def/ignf#EllipsoidalCS[ign:EllipsoidalCS] | -</p>
-
-<p id="_df0e83c8-1f06-88ac-a574-b36fa9dc5e1b">|https://w3id.org/geosrs/cs/VerticalCoordinateSystem[geosrs:VerticalCoordinateSystem] |http://www.w3.org/2002/07/owl#equivalentClass[owl:equivalentClass] |http://data.ign.fr/def/ignf#VerticalCS[ign:VerticalCS] | -</p>
-
-<p id="_5dfb0db5-a96b-015a-1c97-fd8952890af1">|https://w3id.org/geosrs/datum/Datum[geosrs:Datum] |http://www.w3.org/2002/07/owl#equivalentClass[owl:equivalentClass] |http://data.ign.fr/def/ignf#Datum[ign:Datum] | -</p>
-
-<p id="_60f1b958-2523-24f7-cef8-ae7289c412d3">|https://w3id.org/geosrs/datum/Ellipsoid[geosrs:Ellipsoid] |http://www.w3.org/2002/07/owl#equivalentClass[owl:equivalentClass] |http://data.ign.fr/def/ignf#Ellipsoid[ign:Ellipsoid] | -</p>
-
-<p id="_b0b95cc5-80c9-ae8c-609a-0afa5fed7a2b">|https://w3id.org/geosrs/datum/GeodeticDatum[geosrs:GeodeticDatum] |http://www.w3.org/2002/07/owl#equivalentClass[owl:equivalentClass] |http://data.ign.fr/def/ignf#GeodeticDatum[ign:GeodeticDatum] | -</p>
-
-<p id="_a93c30b5-b511-5975-9f91-357fc601ae33">|https://w3id.org/geosrs/datum/PrimeMeridian[geosrs:PrimeMeridian] |http://www.w3.org/2002/07/owl#equivalentClass[owl:equivalentClass] |http://data.ign.fr/def/ignf#PrimeMeridian[ign:PrimeMeridian] | -</p>
-
-<p id="_54d848a6-f811-66cb-405c-61fb9b2bcb59">|https://w3id.org/geosrs/datum/VerticalDatum[geosrs:VerticalDatum] |http://www.w3.org/2002/07/owl#equivalentClass[owl:equivalentClass] |http://data.ign.fr/def/ignf#VerticalDatum[ign:VerticalDatum] | -</p>
-
-<p id="_417827c0-7ce2-4df8-1f66-5f924ad3cefb">|https://w3id.org/geosrs/srs/AxesList[geosrs:AxesList] |http://www.w3.org/2002/07/owl#equivalentClass[owl:equivalentClass] |http://data.ign.fr/def/ignf#AxesList[ign:AxesList] | -</p>
-
-<p id="_e5f88ebc-dc7f-d0ab-6730-81ce98529bcf">|https://w3id.org/geosrs/srs/CRS[geosrs:CRS] |http://www.w3.org/2002/07/owl#equivalentClass[owl:equivalentClass] |http://data.ign.fr/def/ignf#CRS[ign:CRS] | -</p>
-
-<p id="_1078eb3a-1dbf-61fe-ab38-65f8f2a7ee0e">|https://w3id.org/geosrs/srs/CompoundCRS[geosrs:CompoundCRS] |http://www.w3.org/2002/07/owl#equivalentClass[owl:equivalentClass] |http://data.ign.fr/def/ignf#CompoundCRS[ign:CompoundCRS] | -</p>
-
-<p id="_18341780-037b-933f-0c3e-43f3658a9797">|https://w3id.org/geosrs/srs/Extent[geosrs:Extent] |http://www.w3.org/2002/07/owl#equivalentClass[owl:equivalentClass] |http://data.ign.fr/def/ignf#Extent[ign:Extent] | -</p>
-
-<p id="_c60fc371-1e4c-7dc6-cc11-632c49f9b124">|https://w3id.org/geosrs/srs/GeodeticCRS[geosrs:GeodeticCRS] |http://www.w3.org/2002/07/owl#equivalentClass[owl:equivalentClass] |http://data.ign.fr/def/ignf#GeodeticCRS[ign:GeodeticCRS] | -</p>
-
-<p id="_bb0f4cfc-e62f-a8c0-a64d-86ba285ea976">|https://w3id.org/geosrs/srs/GeographicBoundingBox[geosrs:GeographicBoundingBox] |http://www.w3.org/2002/07/owl#equivalentClass[owl:equivalentClass] |http://data.ign.fr/def/ignf#GeographicBoundingBox[ign:GeographicBoundingBox] | -</p>
-
-<p id="_de53235f-4034-228b-e519-c6416080aacd">|https://w3id.org/geosrs/srs/ProjectedCRS[geosrs:ProjectedCRS] |http://www.w3.org/2002/07/owl#equivalentClass[owl:equivalentClass] |http://data.ign.fr/def/ignf#ProjectedCRS[ign:ProjectedCRS] | -</p>
-
-<p id="_53b2d627-bba2-b06b-b61c-577bafd50aa0">|https://w3id.org/geosrs/srs/SingleCRS[geosrs:SingleCRS] |http://www.w3.org/2002/07/owl#equivalentClass[owl:equivalentClass] |http://data.ign.fr/def/ignf#SingleCRS[ign:SingleCRS] | -</p>
-
-<p id="_be640361-bb3c-2a7b-422b-521c699f9777">|https://w3id.org/geosrs/srs/SingleCRSList[geosrs:SingleCRSList] |http://www.w3.org/2002/07/owl#equivalentClass[owl:equivalentClass] |http://data.ign.fr/def/ignf#SingleCRSList[ign:SingleCRSList] | -</p>
-
-<p id="_53d45631-e2a8-063a-78a3-087333f74e89">|https://w3id.org/geosrs/srs/VerticalCRS[geosrs:VerticalCRS] |http://www.w3.org/2002/07/owl#equivalentClass[owl:equivalentClass] |http://data.ign.fr/def/ignf#VerticalCRS[ign:VerticalCRS] | -</p>
-
-<table id="_76974426-01f1-5b5d-3ed5-a5680c3dbb12"><tbody><tr id="_e9af060a-f10e-9d9c-5d68-24a27b8ac851"><td id="_bb545122-904e-b5f7-9543-55d12d498328" valign="middle" align="left">=== ISO19111 Ontology  .Alignment: ISO19111 Ontology [%autowidth]</td>
-</tr></tbody>
-</table>
-
-<p id="_b39c6847-7643-a386-c3cb-e77bdbbfe186">| From Element | Mapping relation | To Element | Notes</p>
-
-<p id="_160e14e9-ad56-2da7-e380-646053408ec4">|https://w3id.org/geosrs/CoordinateSystem[geosrs:CoordinateSystem] |http://www.w3.org/2002/07/owl#equivalentClass[owl:equivalentClass] |http://def.isotc211.org/iso19112/2019/SpatialReferencingByGeographicIdentifier#CoordinateSystem[iso19111:CoordinateSystem] | -</p>
-
-<p id="_58fe9c25-68ab-e924-6545-3f50c9a39709">|https://w3id.org/geosrs/Datum[geosrs:Datum] |http://www.w3.org/2002/07/owl#equivalentClass[owl:equivalentClass] |http://def.isotc211.org/iso19112/2019/SpatialReferencingByGeographicIdentifier#Datum[iso19111:Datum] | -</p>
-
-<p id="_04246420-67ab-17f1-877c-d4b4c4a9c30b">|https://w3id.org/geosrs/Ellipsoid[geosrs:Ellipsoid] |http://www.w3.org/2002/07/owl#equivalentClass[owl:equivalentClass] |http://def.isotc211.org/iso19112/2019/SpatialReferencingByGeographicIdentifier#Ellipsoid[iso19111:Ellipsoid] | -</p>
-
-<p id="_97fde086-3d4a-f7c6-114d-8db54efd6a03">|https://w3id.org/geosrs/srs/CRS[geosrs:CRS] |http://www.w3.org/2002/07/owl#equivalentClass[owl:equivalentClass] |http://def.isotc211.org/iso19112/2019/SpatialReferencingByGeographicIdentifier#CRS[iso19111:CRS] | -</p>
-
-<p id="_c9e8580a-8254-0034-ceac-34e65318340a">|https://w3id.org/geosrs/srs/CompoundCRS[geosrs:CompoundCRS] |http://www.w3.org/2002/07/owl#equivalentClass[owl:equivalentClass] |http://def.isotc211.org/iso19112/2019/SpatialReferencingByGeographicIdentifier#CompoundCRS[iso19111:CompoundCRS] | -</p>
-
-<p id="_4747dd57-90dc-41cd-7ce4-4b2049641275">|https://w3id.org/geosrs/srs/EngineeringCRS[geosrs:EngineeringCRS] |http://www.w3.org/2002/07/owl#equivalentClass[owl:equivalentClass] |http://def.isotc211.org/iso19112/2019/SpatialReferencingByGeographicIdentifier#EngineeringCRS[iso19111:EngineeringCRS] | -</p>
-
-<p id="_b079e32c-0dd7-daf4-79b9-3010d91b4b1f">|https://w3id.org/geosrs/srs/GeodeticCRS[geosrs:GeodeticCRS] |http://www.w3.org/2002/07/owl#equivalentClass[owl:equivalentClass] |http://def.isotc211.org/iso19112/2019/SpatialReferencingByGeographicIdentifier#GeodeticCRS[iso19111:GeodeticCRS] | -</p>
-
-<p id="_c43a2b08-424f-a130-b14d-a1f1892e9f0c">|https://w3id.org/geosrs/srs/GeographicCRS[geosrs:GeographicCRS] |http://www.w3.org/2002/07/owl#equivalentClass[owl:equivalentClass] |http://def.isotc211.org/iso19112/2019/SpatialReferencingByGeographicIdentifier#GeographicCRS[iso19111:GeographicCRS] | -</p>
-
-<p id="_b4a8f35d-9392-4376-b529-794799e26872">|https://w3id.org/geosrs/srs/ParametricCRS[geosrs:ParametricCRS] |http://www.w3.org/2002/07/owl#equivalentClass[owl:equivalentClass] |http://def.isotc211.org/iso19112/2019/SpatialReferencingByGeographicIdentifier#ParametricCRS[iso19111:ParametricCRS] | -</p>
-
-<p id="_4777e05b-2e76-5c8b-4be3-74b5b9e82b26">|https://w3id.org/geosrs/srs/ProjectedCRS[geosrs:ProjectedCRS] |http://www.w3.org/2002/07/owl#equivalentClass[owl:equivalentClass] |http://def.isotc211.org/iso19112/2019/SpatialReferencingByGeographicIdentifier#ProjectedCRS[iso19111:ProjectedCRS] | -</p>
-
-<p id="_d67ddca5-d8d1-796d-837a-3d8d73571be8">|https://w3id.org/geosrs/srs/SingleCRS[geosrs:SingleCRS] |http://www.w3.org/2002/07/owl#equivalentClass[owl:equivalentClass] |http://def.isotc211.org/iso19112/2019/SpatialReferencingByGeographicIdentifier#SingleCRS[iso19111:SingleCRS] | -</p>
-
-<p id="_cc8c84ba-db7d-1953-3ff8-8254215bdd8d">|https://w3id.org/geosrs/srs/TemporalCRS[geosrs:TemporalCRS] |http://www.w3.org/2002/07/owl#equivalentClass[owl:equivalentClass] |http://def.isotc211.org/iso19112/2019/SpatialReferencingByGeographicIdentifier#TemporalCRS[iso19111:TemporalCRS] | -</p>
-
-<p id="_687a285f-cb84-21f6-da06-2c7bceb24d87">|https://w3id.org/geosrs/srs/VerticalCRS[geosrs:VerticalCRS] |http://www.w3.org/2002/07/owl#equivalentClass[owl:equivalentClass] |http://def.isotc211.org/iso19112/2019/SpatialReferencingByGeographicIdentifier#VerticalCRS[iso19111:VerticalCRS] | -</p>
-
-<table id="_52fe53ef-d5c2-a37c-0838-749b2844248a"><tbody><tr id="_1fa1762c-879f-2c98-5b0d-c9aba88b27b1"><td id="_14c2a46a-9d51-10ad-2947-6d98998c1ce5" valign="middle" align="left">=== IFC Ontology  .Alignment: IFC Ontology [%autowidth]</td>
-</tr></tbody>
-</table>
-
-<p id="_182f4ce2-432b-6843-5787-098237ebf7b0">| From Element | Mapping relation | To Element | Notes</p>
-
-<p id="_31fcc720-3e6d-dec7-1e7e-7454dfb60612">|https://w3id.org/geosrs/AxisDirection[geosrs:AxisDirection] |http://www.w3.org/2002/07/owl#equivalentClass[owl:equivalentClass] |https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL/IfcDirection[ifc:IfcDirection] | -</p>
-
-<p id="_c8b85c86-28cb-ca70-9a1f-7b306238cfdc">|https://w3id.org/geosrs/CRS[geosrs:CRS] |http://www.w3.org/2002/07/owl#equivalentClass[owl:equivalentClass] |https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL/IfcCoordinateReferenceSystem[ifc:IfcCoordinateReferenceSystem] | -</p>
-
-<p id="_dc7d342a-f79a-8d23-135d-a529932524bf">|https://w3id.org/geosrs/CoordinateOperation[geosrs:CoordinateOperation] |http://www.w3.org/2002/07/owl#equivalentClass[owl:equivalentClass] |https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL/IfcCoordinateOperation[ifc:IfcCoordinateOperation] | -</p>
-
-<p id="_5e224939-06d9-b0b7-9740-3c7da523ae8c">|https://w3id.org/geosrs/ProjectedCRS[geosrs:ProjectedCRS] |http://www.w3.org/2002/07/owl#equivalentClass[owl:equivalentClass] |https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL/IfcProjectedCRS[ifc:IfcProjectedCRS] | -</p>
-
-<p id="_e44900c5-ad1b-a174-064e-cee890b4a7c6">|https://w3id.org/geosrs/axis[geosrs:axis] |http://www.w3.org/2002/07/owl#equivalentProperty[owl:equivalentProperty] |https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL/axis_IfcAxis1Placement[ifc:axis_IfcAxis1Placement] | -</p>
-
-<p id="_234609ad-e788-fc7e-e6af-0d84c699c8c6">|https://w3id.org/geosrs/sourceCRS[geosrs:sourceCRS] |http://www.w3.org/2002/07/owl#equivalentProperty[owl:equivalentProperty] |https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL/sourceCRS[ifc:sourceCRS] | -</p>
-
-<p id="_1272d613-90fa-be2d-41c3-972fdbedc786">|https://w3id.org/geosrs/targetCRS[geosrs:targetCRS] |http://www.w3.org/2002/07/owl#equivalentProperty[owl:equivalentProperty] |https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL/targetCRS[ifc:targetCRS] | -</p>
-
-<table id="_20a4ed00-238e-c5d6-ed51-3ead84202d8e"><tbody><tr id="_c7c44610-ff3b-5168-d59c-d7f35495f21a"><td id="_dce37fc5-fffe-1006-803c-4353bc76d289" valign="middle" align="left">[appendix,obligation=informative] == SHACL Shapes  This section introduces SHACL shapes which can be used to verify graphs encoded using the vocabulary defined in this specification.  [discrete] === Overview  SHACL shapes in this specification are subdivided by the same module designations as used previously. In order to verify a graph a single validation file of SHACL shapes is provided alongside this specification.  ===== SHACL Shapes: Core  .Core [cols=”7*”]</td>
-</tr></tbody>
-</table>
-
-<p id="_563415ca-af2c-6f25-06bf-e7b900a76a6c">|Label|TargetNode|Property|Class|MinCount|MaxCount|Comment</p>
-
-<p id="_9777d6bd-9fa1-c51d-adbc-2dfb17188189">|Shape S1 |geosrs:CRS |geosrs:coordinateSystem |geosrs:CoordinateSystem |1 |1 |A coordinate reference system should have exactly one coordinate system</p>
-
-<p id="_281438a3-50c8-9232-a87d-a90e1a9cbd92">|Shape S2 |geosrs:CRS |geosrs:domainOfValidity |geosrs:AreaOfUse |1 | — |A coordinate reference system should have at least one area of use</p>
-
-<p id="_6e6ca17c-0952-c865-eb04-e982eeb9ff41">|Shape S3 |geosrs:CRS |geosrs:datum |geosrs:Datum | — |1 |A coordinate reference system should have exactly one datum</p>
-
-<p id="_dede8582-0d29-2113-6c4d-59c7c4bcda18">|Shape S4 |geosrs:CRS |geosrs:datumEnsemble |geosrs:DatumEnsemble | — |1 |A coordinate reference system may have exactly one datum ensemble</p>
-
-<p id="_9aefffea-c943-0c52-e015-a3f492374871">|Shape S5 |geosrs:CompoundCRS |geosrs:includesSRS |geosrs:SingleCRS |1 | — |A compound coordinate reference system should consist of at least one single coordinate reference system</p>
-
-<p id="_aa196ce9-16d0-7b62-1073-44320e5e2eac">|Shape S6 |geosrs:GeodeticCRS |geosrs:coordinateSystem |geosrs:GeodeticCoordinateSystem |1 |1 |A geodetic coordinate reference system should have exactly one geodetic coordinate system</p>
-
-<p id="_0a17c141-1ea9-f745-b383-7cfa870f4e87">|Shape S7 |geosrs:GeographicCRS |geosrs:datum |geosrs:GeodeticDatum |1 |1 |A geographic coordinate reference system should have exactly one geodetic datum</p>
-
-<p id="_def19c8f-0787-81b4-6357-7a1b58c2b5a1">|Shape S8 |geosrs:GeographicCRS |geosrs:coordinateSystem |geosrs:EllipsoidalCoordinateSystem |1 |1 |A geographic coordinate reference system should have exactly one ellipsoidal coordinate system</p>
-
-<p id="_d1254c45-d6be-9c48-dcb7-b9b2480b8057">|Shape S9 |geosrs:ParametricCRS |geosrs:datum |geosrs:ParametricDatum |1 |1 |A parametric coordinate reference system should have exactly one parametric datum</p>
-
-<p id="_5d8f31f1-73be-cc53-8cc9-363a917e3e4e">|Shape S10 |geosrs:ProjectedCRS |geosrs:conversion |geosrs:Conversion |1 | — |A projected coordinate reference system should have at least one conversion</p>
-
-<p id="_ff9c8114-972b-53a4-e90c-01126ee170bf">|Shape S11 |geosrs:SingleCRS |geosrs:coordinateSystem |geosrs:CoordinateSystem |1 |1 |A single coordinate reference system should have exactly one coordinate system</p>
-
-<p id="_017dfb87-7e03-4e35-66df-9d64b29ac56b">|Shape S12 |geosrs:SingleCRS |geosrs:datum |geosrs:Datum |1 |1 |A single coordinate reference system should have exactly one datum</p>
-
-<p id="_4193b010-a6b5-d291-aee7-fb03de01a119">|Shape S13 |geosrs:TemporalCRS |geosrs:datum |geosrs:TemporalDatum |1 |1 |A projected coordinate reference system should have exactly one temporal datum</p>
-
-<table id="_1a7f0ef6-ccb5-fb45-f42a-b43b944fcfe4"><tbody><tr id="_68d05b9f-5a08-f7ee-15d4-1dc3b79e2a69"><td id="_0e89e6ba-9853-e7ee-64e5-3266f1612c66" valign="middle" align="left">===== SHACL Shapes: Datum  .Datum [cols=”7*”]</td>
-</tr></tbody>
-</table>
-
-<p id="_47ece1af-f569-3835-907c-3ebd507a9ebf">|Label|TargetNode|Property|Class|MinCount|MaxCount|Comment</p>
-
-<p id="_4a33dc41-1f70-cdce-4d7f-b03cbaf109d2">|Shape S1 |geosrs:ParametricDatum |geosrs:definingParameter |geosrs:DefiningParameter |1 | — |A parametric datum should have at least one defining parameter</p>
-
-<table id="_18e21f13-7d44-92d2-5e03-9a436fe4e616"><tbody><tr id="_7ac7e747-7f12-cf00-dc44-9ab21ec4bfbc"><td id="_6169b07e-332e-3559-f200-40c37d7b2adb" valign="middle" align="left">===== SHACL Shapes: Cs  .Cs [cols=”7*”]</td>
-</tr></tbody>
-</table>
-
-<p id="_d2f67e6a-d343-ccfe-bce2-55c918d78ec5">|Label|TargetNode|Property|Class|MinCount|MaxCount|Comment</p>
-
-<p id="_2559b83f-05c1-8efe-bd0e-7297822c3509">|Shape S1 |geosrs:1DCoordinateSystem |geosrs:axis |geosrs:CoordinateSystemAxis |1 |1 |A 1D coordinate system should have exactly one axis</p>
-
-<p id="_3a8272e9-f07b-af33-f476-ac92c357d1f3">|Shape S2 |geosrs:3DCoordinateSystem |geosrs:axis |geosrs:CoordinateSystemAxis |3 | — |A 3D coordinate system should have at least three axes</p>
-
-<p id="_fa812f24-f8a4-df33-1ebb-5660b6a12aa1">|Shape S3 |geosrs:ConicalCoordinateSystem |geosrs:axis |geosrs:CoordinateSystemAxis |3 | — |A conical coordinate system should have at least three axes</p>
-
-<p id="_cd59a4b1-63ad-6d64-f835-438c784ff1a5">|Shape S4 |geosrs:CoordinateSystem |geosrs:axis |geosrs:CoordinateSystemAxis |1 | — |A coordinate system should have at least one axis</p>
-
-<p id="_3e61741c-1b51-8eb1-c0d1-1f930e0de354">|Shape S5 |geosrs:CoordinateSystemAxis |geosrs:axisDirection |geosrs:AxisDirection |1 |1 |A coordinate system axis should have exactly one axis direction</p>
-
-<p id="_8bc252f7-d6e1-2dc0-99eb-af7870a75374">|Shape S6 |geosrs:CurvilinearCoordinateSystem |geosrs:axis |geosrs:CoordinateSystemAxis |3 | — |A curvilinear coordinate system is defined in Euclidean space and should therefore have at least three axes</p>
-
-<p id="_57a80dc7-a1ff-932e-6ad8-f1aeacd18848">|Shape S7 |geosrs:CylindricalCoordinateSystem |geosrs:axis |geosrs:CoordinateSystemAxis |3 | — |A cylindrical coordinate system should have at least three axes</p>
-
-<p id="_c315b25c-2603-3978-fd02-9c0d1a6c14b1">|Shape S8 |geosrs:DateTimeTemporalCoordinateSystem |geosrs:axis |geosrs:CoordinateSystemAxis |1 |1 |A date time temporal coordinate system should have exactly one axis</p>
-
-<p id="_ef8efac5-ad94-ead2-313e-ad92543af26b">|Shape S9 |geosrs:PlanarCoordinateSystem |geosrs:axis |geosrs:CoordinateSystemAxis |2 | — |A planar coordinate system should have at least two axes</p>
-
-<p id="_f5cf91b2-1669-8669-54da-8676f422d7c9">|Shape S10 |geosrs:TemporalCoordinateSystem |geosrs:axis |geosrs:CoordinateSystemAxis |1 |1 |A temporal coordinate system should have exactly one axis</p>
-
-<p id="_d19bddb5-5ca2-df5c-dbd5-dec40be7ec84">|Shape S11 |geosrs:TemporalCountCoordinateSystem |geosrs:axis |geosrs:CoordinateSystemAxis |1 |1 |A temporal count coordinate system should have exactly one axis</p>
-
-<p id="_213c763e-6dbb-cdc0-f131-242cc78d2a52">|Shape S12 |geosrs:TemporalMeasureCoordinateSystem |geosrs:axis |geosrs:CoordinateSystemAxis |1 |1 |A temporal measure coordinate system should have exactly one axis</p>
-
-<table id="_258cf0ed-758a-8469-2810-439067b19f3a"><tbody><tr id="_d534a885-49ef-2547-bfc2-8f61d193a1a6"><td id="_d6d5e819-8edd-b9b8-0fe0-1bd3aec37e98" valign="middle" align="left">[appendix,obligation=informative] == Application Examples  [discrete] === Overview  === Minimum Example  === Elaborate Example     [appendix,obligation=informative] == JSON-LD Context  We provide JSON-LD contexts to be compatible with other JSON-based formats which provide coordinate reference system data.  [discrete] === Overview  === Compatibility to PROJJSON  <link target="https://proj.org/en/stable/specifications/projjson.html">PROJSON</link> is an established format to share geospatial data which has emerge from the PROJ library and encodes the WKT encoding of coordiante references systems. By adding a JSON-LD context to the PROJJSON standard we achieve an immediate compatibility with an established standard simply by extending it by one simple statement.  [source] —— {     “@context”: “https://opengeospatial.github.io/ontology-crs/context/geosrs-context.json”,     “$schema”: “https://proj.org/schemas/v0.7/projjson.schema.json”,     …​ } ——  We provide examples of application of this JSON-LD context with the distribution of this standard.  === Compatibility to OGCJSON  The OGC CRS working group is aiming towards the creation of their own JSON format for CRS. The JSON-LD context we provide aims to be compatible with both PROJJSON and OGCJSON.      //// Revision History should be the last annex before the Bibliography Bibliography should be the last annex ////  [appendix,obligation=”informative”] == Revision History  [%unnumbered] [width=”90%”,options=”header”]</td>
-</tr></tbody>
-</table>
-
-<p id="_14b19bac-1aac-b5b0-ce07-c7695c3d1bde">|Date |Release |Author | Primary clauses modified |Description |2016-04-28 |0.1 |G. Editor |all |initial version</p>
-
-<table id="_ca2c3bae-4f6c-828d-d824-39ed3faaec32"><tbody><tr id="_64199de6-1f74-085c-210f-9bca53c55227"><td id="_07f65271-0f55-9e8e-3143-fefca5309282" valign="middle" align="left">[bibliography] == Bibliography  [NOTE] .Example Bibliography (Delete this note). ==== The TC has approved Springer LNCS as the official document citation type. Springer LNCS is widely used in technical and computer science journals and other publications For citations in the text please use square brackets and consecutive numbers: [1], [2], [3] Actual References: [n] Journal: Author Surname, A.: Title. Publication Title. Volume number, Issue number, Pages Used (Year Published) [n] Web: Author Surname, A.: Title,  <link target="http://Website-Url"/> ====   * [<bookmark id="_e4501d1f-12eb-f121-ce9a-88ada43758f5" anchor="yaml"/>], Ben-Kiki, O., Evans, C., Ingy döt Net: <strong>YAML Ain’t Markup Language,</strong> <link target="https://yaml.org/"/>  * [<bookmark id="_ce35b3ef-ff26-8088-fffa-7d132177748d" anchor="rfc3986"/>], Berners-Lee, T., Fielding, R., Masinter, L.: <strong>IETF RFC 3986 — Uniform Resource Identifier (URI): Generic Syntax,</strong> <link target="http://tools.ietf.org/rfc/rfc3986.txt"/>  * [<bookmark id="_0dd6bb96-c0b6-a6f2-4584-58689e2027fa" anchor="link_relations"/>], IANA: <strong>Link Relation Types,</strong> <link target="https://www.iana.org/assignments/link-relations/link-relations.xml"/>  * [<bookmark id="_207529f7-bb8a-bfb1-9db7-1e851dc54e16" anchor="iso19142"/>], ISO: <strong>ISO 19142:2010 — Geographic information — Web Feature Service</strong> <link target="https://www.iso.org/standard/42136.html"/>  * [<bookmark id="_efafaa9a-a52c-6bb6-d482-0e7653456a61" anchor="wfs20"/>], OGC: <strong>Web Feature Service 2.0,</strong> <link target="http://docs.opengeospatial.org/is/09-025r2/09-025r2.html"/>  * [<bookmark id="_c314b2bf-cc38-ef28-8f51-7e15e496198a" anchor="spatial_data_wbp"/>], W3C/OGC: <strong>Spatial Data on the Web Best Practices,</strong> W3C Working Group Note 28 September 2017, <link target="https://www.w3.org/TR/sdw-bp/"/>  * [<bookmark id="_c49f2083-43c2-559d-a182-e0f9a04af9fb" anchor="dwbp"/>], W3C: <strong>Data on the Web Best Practices,</strong> W3C Recommendation 31 January 2017, <link target="https://www.w3.org/TR/dwbp/"/>  * [<bookmark id="_7c95eae8-f31e-b33c-1e26-7cd201a76310" anchor="dcat"/>], W3C: <strong>Data Catalog Vocabulary,</strong> W3C Recommendation 16 January 2014, <link target="https://www.w3.org/TR/vocab-dcat/"/> * [<bookmark id="_92016ca3-1252-b6d2-fd88-9899e3c731cc" anchor="ijgi13010025"/>]</td>
+<tbody><tr id="_210f5010-fe7c-87df-a86d-c0781da57464"><td id="_f7331635-88c3-87af-bb80-4d13926e54dc" valign="middle" align="left"><link target="https://w3id.org/geosrs/AxisDirection">geosrs:AxisDirection</link></td>
+<td id="_9883fa5f-ff16-d632-2ef3-0866322144b6" valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#equivalentClass">owl:equivalentClass</link></td>
+<td id="_f9f5f7ae-cb12-d5f4-c749-953dce09846b" valign="middle" align="left"><link target="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL/IfcDirection">ifc:IfcDirection</link></td>
+<td id="_7c3e1682-5a14-29c0-f4ad-302e60c6eb0e" valign="middle" align="left">-</td>
+</tr><tr id="_11ee4188-9246-a19c-4d8a-4caacb82d32d"><td id="_f952f9e6-4a4f-e86f-e1b3-a57e57e4481d" valign="middle" align="left"><link target="https://w3id.org/geosrs/CRS">geosrs:CRS</link></td>
+<td id="_d8a8cae5-1619-2519-7c8a-0a5cb090f1e5" valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#equivalentClass">owl:equivalentClass</link></td>
+<td id="_314370f5-4917-ab77-1615-5ad875aa32dd" valign="middle" align="left"><link target="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL/IfcCoordinateReferenceSystem">ifc:IfcCoordinateReferenceSystem</link></td>
+<td id="_cf3f6305-4fac-60f9-6b4c-0860fd6f9bcf" valign="middle" align="left">-</td>
+</tr><tr id="_b5577199-504c-ecde-7202-245ff79800ce"><td id="_2dc51b91-a388-2f44-1956-07bd4822ea8f" valign="middle" align="left"><link target="https://w3id.org/geosrs/CoordinateOperation">geosrs:CoordinateOperation</link></td>
+<td id="_02e3e63c-2d86-45bc-36e0-c81723dbdfd5" valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#equivalentClass">owl:equivalentClass</link></td>
+<td id="_0051ee62-0333-676f-9f3a-3c2330b52bf9" valign="middle" align="left"><link target="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL/IfcCoordinateOperation">ifc:IfcCoordinateOperation</link></td>
+<td id="_693bfec8-0276-b690-ee45-67ba40e53583" valign="middle" align="left">-</td>
+</tr><tr id="_d4b62b6e-93bd-ea3d-6707-113d5aa606dc"><td id="_2fa3b862-4cd0-0fc9-a0c6-95e6a703b13b" valign="middle" align="left"><link target="https://w3id.org/geosrs/ProjectedCRS">geosrs:ProjectedCRS</link></td>
+<td id="_8ab3a72d-f4fd-ebb7-9625-ba09a7ed6e02" valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#equivalentClass">owl:equivalentClass</link></td>
+<td id="_656ee3a5-2ee2-3494-97f6-6e34703fe120" valign="middle" align="left"><link target="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL/IfcProjectedCRS">ifc:IfcProjectedCRS</link></td>
+<td id="_6741af39-93aa-0f4f-c193-7e5d89b3604f" valign="middle" align="left">-</td>
+</tr><tr id="_163ce656-c9d7-9411-779c-870b1dfb6943"><td id="_ae5ce89c-d59d-54bf-a631-82c79809cb5d" valign="middle" align="left"><link target="https://w3id.org/geosrs/axis">geosrs:axis</link></td>
+<td id="_0c5eb5ec-10ad-3865-68d2-4f0970960588" valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#equivalentProperty">owl:equivalentProperty</link></td>
+<td id="_df2057e2-992b-4aa7-9ee2-9c8a01a6fb6c" valign="middle" align="left"><link target="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL/axis_IfcAxis1Placement">ifc:axis_IfcAxis1Placement</link></td>
+<td id="_9b661aa0-0b65-9f9c-0f96-206fdf310699" valign="middle" align="left">-</td>
+</tr><tr id="_ac95b288-1184-329a-9150-e57dabc124fd"><td id="_f6fc34ce-ef9a-a803-11a4-4182d155dff0" valign="middle" align="left"><link target="https://w3id.org/geosrs/sourceCRS">geosrs:sourceCRS</link></td>
+<td id="_f4e41a30-410e-a54e-a738-ab3b2b448b87" valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#equivalentProperty">owl:equivalentProperty</link></td>
+<td id="_87f46b57-aa2b-a94e-4d96-c99bda2230fa" valign="middle" align="left"><link target="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL/sourceCRS">ifc:sourceCRS</link></td>
+<td id="_e9db2615-2044-593a-1c20-3cf6dc30b887" valign="middle" align="left">-</td>
+</tr><tr id="_2434b53e-e23c-828d-aad8-c869aa27746f"><td id="_3e65d76c-895f-8e0c-af55-8565e546edac" valign="middle" align="left"><link target="https://w3id.org/geosrs/targetCRS">geosrs:targetCRS</link></td>
+<td id="_03c796e7-ccd4-7b05-4027-13221429c7ca" valign="middle" align="left"><link target="http://www.w3.org/2002/07/owl#equivalentProperty">owl:equivalentProperty</link></td>
+<td id="_2be39a25-723b-927c-4922-c9331ce017da" valign="middle" align="left"><link target="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL/targetCRS">ifc:targetCRS</link></td>
+<td id="_29abc8cc-a960-d52b-9834-d04cc2e72f35" valign="middle" align="left">-</td>
 </tr></tbody>
 </table>
 </clause>
+</annex><annex id="_35103824-88a8-11d7-b2fa-4aeefc0c4845" obligation="informative">
+<title id="_8dd35ff6-f41c-83ae-58df-a3465fa8defb">SHACL Shapes</title>
+<p id="_c680c9aa-8b84-d49f-95ce-9621f0b3e984">This section introduces SHACL shapes which can be used to verify graphs encoded using the vocabulary defined in this specification.</p>
+
+<floating-title id="_2e1e93d4-a76e-4318-c6c8-bc1034df4ab7" depth="2" type="floating-title">Overview</floating-title>
+<p id="_d5c3f150-68ff-eaac-2e6a-46801f7f6ef6">SHACL shapes in this specification are subdivided by the same module designations as used previously. In order to verify a graph a single validation file of SHACL shapes is provided alongside this specification.</p>
+
+<clause id="_f0fa7f0b-559b-b54b-7241-0dbc211c463e" obligation="informative">
+<title id="_9a0e911f-c5a0-0e8f-1eb3-d4f9ef8b1256">SHACL Shapes: Core</title>
+<table id="_45527325-22c8-9f09-4f48-440e8bbc7159">
+<name id="_58b39019-5f38-1fd3-dc61-a9396cbd2d73">Core</name>
+<thead><tr id="_2df30484-e5c1-1ee2-fbb2-fcb4a5c43572"><th id="_ce37facd-1cda-d2b9-edb0-4d592ae02421" valign="middle" align="left">Label</th>
+<th id="_d477d23d-8e1a-a0f0-9d44-eca16e15f45d" valign="middle" align="left">TargetNode</th>
+<th id="_7d8b252e-0985-b10f-f370-9c275b9d6202" valign="middle" align="left">Property</th>
+<th id="_ad8be100-be10-5f28-d013-16c800775fd5" valign="middle" align="left">Class</th>
+<th id="_d9161a4f-26b3-7a8c-77a8-04dff3d1d666" valign="middle" align="left">MinCount</th>
+<th id="_eb241a0d-43b8-7a0f-2f71-66abc8220d04" valign="middle" align="left">MaxCount</th>
+<th id="_d64bd14b-b34a-a2ea-3b43-39213d32e8c1" valign="middle" align="left">Comment</th>
+</tr></thead>
+<tbody><tr id="_851918ea-bf8d-3415-8840-20994dfbc7a8"><td id="_e456acff-09ef-f94f-d48f-35091d7a97e2" valign="middle" align="left">Shape S1</td>
+<td id="_2b8a4cad-ba29-e241-aab5-87f3154d0f80" valign="middle" align="left">geosrs:CRS</td>
+<td id="_16cf6451-08a7-aa3e-ea03-42182ec71009" valign="middle" align="left">geosrs:coordinateSystem</td>
+<td id="_51db6238-c005-21c2-1f6d-78445d2df3ad" valign="middle" align="left">geosrs:CoordinateSystem</td>
+<td id="_b786142b-ad54-06be-0327-33a7004defb5" valign="middle" align="left">1</td>
+<td id="_78ff73ea-1b71-149e-574e-f469285888ba" valign="middle" align="left">1</td>
+<td id="_994eaa27-ab2a-9ac8-0005-795204727ef2" valign="middle" align="left">A coordinate reference system should have exactly one coordinate system</td>
+</tr><tr id="_36e46761-ee69-4b74-2fe5-0681249f4f1f"><td id="_7892e7c6-ad42-c380-1c24-138b454cc34e" valign="middle" align="left">Shape S2</td>
+<td id="_ac6f90a8-c66e-8b30-52c5-47c4be97a377" valign="middle" align="left">geosrs:CRS</td>
+<td id="_3163f6e4-007b-c25c-9d97-581165a4f404" valign="middle" align="left">geosrs:domainOfValidity</td>
+<td id="_89b194c4-c2ed-6aa6-4b10-305e03652e36" valign="middle" align="left">geosrs:AreaOfUse</td>
+<td id="_ac1bb55b-a300-ac18-c82d-49e42b97e46c" valign="middle" align="left">1</td>
+<td id="_cff79fc4-0784-1955-dd90-02f062df5d93" valign="middle" align="left">-</td>
+<td id="_6acac330-1f45-bc34-985f-aa69da6902b5" valign="middle" align="left">A coordinate reference system should have at least one area of use</td>
+</tr><tr id="_4e33b855-21fa-f85a-f747-cf000aee7153"><td id="_4ae452ad-f813-e325-cc86-231ac105ad83" valign="middle" align="left">Shape S3</td>
+<td id="_139ebffb-0c01-60fb-739f-2f3f70690f7a" valign="middle" align="left">geosrs:CRS</td>
+<td id="_70be993d-2e97-7be9-72fc-ca9d5e01c348" valign="middle" align="left">geosrs:datum</td>
+<td id="_9ba1ff95-69c8-cc50-2526-86706e161f3e" valign="middle" align="left">geosrs:Datum</td>
+<td id="_c8cbdba8-0e1d-7399-a1a6-6482f4bb3e4e" valign="middle" align="left">-</td>
+<td id="_e938bb15-c1bc-ed52-e350-4401922e4b53" valign="middle" align="left">1</td>
+<td id="_b21dd757-f532-9808-068d-9d6b0f45b242" valign="middle" align="left">A coordinate reference system should have exactly one datum</td>
+</tr><tr id="_eb73be71-20b6-9ce0-227d-cc6cfe5fe7b9"><td id="_9da43f3d-e483-edcb-5678-1955f1b8abcb" valign="middle" align="left">Shape S4</td>
+<td id="_0d79d859-c01f-f7a6-dfbe-ac3c6f47a36c" valign="middle" align="left">geosrs:CRS</td>
+<td id="_91fe9b10-d6e5-3395-0692-a9e53a75aa39" valign="middle" align="left">geosrs:datumEnsemble</td>
+<td id="_8cec13ef-aa0a-6931-1c45-b4001973da76" valign="middle" align="left">geosrs:DatumEnsemble</td>
+<td id="_76f9c20e-db53-d2b1-41da-55919ca60a38" valign="middle" align="left">-</td>
+<td id="_0a247898-9474-4dfd-b258-635981806326" valign="middle" align="left">1</td>
+<td id="_80ac4da4-d7d3-cb26-fdc4-8f085a032dec" valign="middle" align="left">A coordinate reference system may have exactly one datum ensemble</td>
+</tr><tr id="_d7b6030f-45e2-30ba-fc14-10c07d893bac"><td id="_a777d226-9511-63d6-9fab-92b364944c2c" valign="middle" align="left">Shape S5</td>
+<td id="_470ce4ab-295b-ce54-927a-a529967eb26f" valign="middle" align="left">geosrs:CompoundCRS</td>
+<td id="_a2ca7acd-7949-67db-6592-3266f222de8e" valign="middle" align="left">geosrs:includesSRS</td>
+<td id="_2a932681-38e2-c111-c095-b183e99b25ae" valign="middle" align="left">geosrs:SingleCRS</td>
+<td id="_c99e2856-8dfb-6a5b-18d2-1a184e6c082f" valign="middle" align="left">1</td>
+<td id="_bfa9662e-4b69-1f4e-4e93-5a6fb77653ca" valign="middle" align="left">-</td>
+<td id="_05e54784-821f-74e0-ab5b-b421969815f1" valign="middle" align="left">A compound coordinate reference system should consist of at least one single coordinate reference system</td>
+</tr><tr id="_376d5601-1155-f40b-4957-c0014434788e"><td id="_18f172ba-0065-d33e-7c0e-7c476fd10d82" valign="middle" align="left">Shape S6</td>
+<td id="_607cca9b-6668-6782-0ed0-3d9e7bbf3af5" valign="middle" align="left">geosrs:GeodeticCRS</td>
+<td id="_56e98062-f352-26ec-9997-063ef7098e8e" valign="middle" align="left">geosrs:coordinateSystem</td>
+<td id="_69c2554a-6c98-2f19-c31c-7c358c5225b8" valign="middle" align="left">geosrs:GeodeticCoordinateSystem</td>
+<td id="_785cf530-71f5-d40a-f11d-b26fe95eb4b0" valign="middle" align="left">1</td>
+<td id="_b045202e-eede-4c3a-0820-20bcdca76a92" valign="middle" align="left">1</td>
+<td id="_4dfe89c4-5eaa-b74a-5190-c8a5aa2d3629" valign="middle" align="left">A geodetic coordinate reference system should have exactly one geodetic coordinate system</td>
+</tr><tr id="_fb699e02-ab9e-aad0-d021-68f16e28454b"><td id="_abf4b4b5-75c0-3b12-d066-84474866235d" valign="middle" align="left">Shape S7</td>
+<td id="_e80aa0f4-a1f6-d738-bda5-1ac50692c1ef" valign="middle" align="left">geosrs:GeographicCRS</td>
+<td id="_6167de33-ecc5-cab7-aa01-f007bf619dad" valign="middle" align="left">geosrs:datum</td>
+<td id="_04eb63d2-f28c-7b03-e1e7-4e29d78b4a31" valign="middle" align="left">geosrs:GeodeticDatum</td>
+<td id="_959a8a45-6297-571d-a3e0-074efe4e4982" valign="middle" align="left">1</td>
+<td id="_d1680d0e-73e6-0854-f702-32b26c40be4c" valign="middle" align="left">1</td>
+<td id="_bdb6ca59-93aa-a57f-4a8b-cda4e21d6917" valign="middle" align="left">A geographic coordinate reference system should have exactly one geodetic datum</td>
+</tr><tr id="_6f06dfb6-c194-4986-0e91-9ece3542c06e"><td id="_1a3d6949-a67e-7734-3ce9-2eb1eb432329" valign="middle" align="left">Shape S8</td>
+<td id="_40c2a416-d15f-a9b2-0fda-394e681b98d3" valign="middle" align="left">geosrs:GeographicCRS</td>
+<td id="_9f576a41-11ce-f9c9-e2b2-5ae1f7fedc4c" valign="middle" align="left">geosrs:coordinateSystem</td>
+<td id="_b971c319-3ab2-f1c9-3e61-44e521a083fa" valign="middle" align="left">geosrs:EllipsoidalCoordinateSystem</td>
+<td id="_a9700659-015f-b2ff-9f5d-280fca56142f" valign="middle" align="left">1</td>
+<td id="_b5c57554-7343-8397-33f3-6d3cecfa6d96" valign="middle" align="left">1</td>
+<td id="_43c768f3-d893-b71a-c6b4-f0d99efbb78d" valign="middle" align="left">A geographic coordinate reference system should have exactly one ellipsoidal coordinate system</td>
+</tr><tr id="_bbc7753f-edaf-6ddf-fee7-9e5d70b94629"><td id="_e3209e2d-5664-905d-0393-5700099fda67" valign="middle" align="left">Shape S9</td>
+<td id="_acd879a0-95c1-397e-e067-45359fb97164" valign="middle" align="left">geosrs:ParametricCRS</td>
+<td id="_144d5605-adc2-1bee-2c93-1cd3a79ac535" valign="middle" align="left">geosrs:datum</td>
+<td id="_dfe28b15-6ed6-bd42-c7a6-157877aac3a6" valign="middle" align="left">geosrs:ParametricDatum</td>
+<td id="_a44a1085-2c76-1b5c-6fdb-db521a32b545" valign="middle" align="left">1</td>
+<td id="_b69b3526-91a5-b21d-f28d-5b8d507cafe3" valign="middle" align="left">1</td>
+<td id="_f9576e2c-4452-cb9a-5861-1c706e4a1de0" valign="middle" align="left">A parametric coordinate reference system should have exactly one parametric datum</td>
+</tr><tr id="_ba3330bf-08fe-ec5e-8bd2-65bdfa68f928"><td id="_46c279cd-ac7c-27cb-8f5f-1be35949cd50" valign="middle" align="left">Shape S10</td>
+<td id="_73e33990-514a-825f-4c66-7a0f86894f80" valign="middle" align="left">geosrs:ProjectedCRS</td>
+<td id="_c4eb4f04-3ca6-4624-ff68-8c1ae91a3329" valign="middle" align="left">geosrs:conversion</td>
+<td id="_23972243-eb66-8d99-21d3-48e964e87289" valign="middle" align="left">geosrs:Conversion</td>
+<td id="_1e145cb8-a756-e147-a771-5703d3ddabcb" valign="middle" align="left">1</td>
+<td id="_17ea9096-585c-cf84-f829-1bbb280b9c5e" valign="middle" align="left">-</td>
+<td id="_76492f76-9946-1812-1144-acc38fd8c466" valign="middle" align="left">A projected coordinate reference system should have at least one conversion</td>
+</tr><tr id="_83c2faa9-aa8b-edcc-ffc3-d8aa621f8781"><td id="_72dfb395-6a82-6573-7c41-d3cc5f5a9e8f" valign="middle" align="left">Shape S11</td>
+<td id="_53ac2b58-8150-c1bc-4edb-eb8817a97a1c" valign="middle" align="left">geosrs:SingleCRS</td>
+<td id="_45d5d903-cf7d-df63-d869-b0e497d4e002" valign="middle" align="left">geosrs:coordinateSystem</td>
+<td id="_f64635e2-4269-a0c7-5841-e6166bb5bdc6" valign="middle" align="left">geosrs:CoordinateSystem</td>
+<td id="_3a90d172-8d47-8280-236c-c1a2e1dde302" valign="middle" align="left">1</td>
+<td id="_ddd7247e-920f-73b2-7c17-920a8860bd6a" valign="middle" align="left">1</td>
+<td id="_ba5bbe25-b5ce-12ce-bdcf-5516613158f4" valign="middle" align="left">A single coordinate reference system should have exactly one coordinate system</td>
+</tr><tr id="_e9028007-a9cd-9b8f-316a-50e2c5d41b39"><td id="_8ed26ccc-6934-20db-e64c-559cddf04b50" valign="middle" align="left">Shape S12</td>
+<td id="_cf2c8652-6e76-fcdc-ef16-596c8aa8c6ec" valign="middle" align="left">geosrs:SingleCRS</td>
+<td id="_b8cdf242-e28b-314d-2589-d62eb0f197b4" valign="middle" align="left">geosrs:datum</td>
+<td id="_d72082fb-796e-e416-9371-a4ad716d7e3c" valign="middle" align="left">geosrs:Datum</td>
+<td id="_0b2a7810-1912-fef2-3481-b2ba20433441" valign="middle" align="left">1</td>
+<td id="_60db3d98-29bd-ab5c-31ab-b25dbd6c3bdb" valign="middle" align="left">1</td>
+<td id="_14e076d3-1d69-93e4-bb8c-1d59b94e419d" valign="middle" align="left">A single coordinate reference system should have exactly one datum</td>
+</tr><tr id="_cf4573bb-a93b-bc1b-ee87-07321cdcfec3"><td id="_a12d0cae-94e1-19d5-f506-1ca13ea0f7c9" valign="middle" align="left">Shape S13</td>
+<td id="_6914dbf3-4d02-b945-690e-78755723dc71" valign="middle" align="left">geosrs:TemporalCRS</td>
+<td id="_e9eb903e-f9ef-733d-2a91-389a4496743d" valign="middle" align="left">geosrs:datum</td>
+<td id="_cabfae8b-1fe2-3023-4215-642c7a488b63" valign="middle" align="left">geosrs:TemporalDatum</td>
+<td id="_b22ce6ac-cfa0-6d39-9c17-5285849adf9c" valign="middle" align="left">1</td>
+<td id="_b67ac505-690e-d25c-3430-1611d4da069a" valign="middle" align="left">1</td>
+<td id="_078b9e8b-7355-8abd-f13a-e4acf3e61d91" valign="middle" align="left">A projected coordinate reference system should have exactly one temporal datum</td>
+</tr></tbody>
+</table>
+</clause>
+
+<clause id="_c153358e-84ad-2ca3-d0e7-77919900d0d6" obligation="informative">
+<title id="_908da6cf-3528-dc3f-0d6c-b78b982a91c8">SHACL Shapes: Datum</title>
+<table id="_77b84dce-dae9-c8b4-9b48-fca64baeb01f">
+<name id="_ecfe9b14-3cd0-6cdb-1b3b-2e2d883112ca">Datum</name>
+<thead><tr id="_49d8c562-4427-dfb1-a91a-b7094a693db6"><th id="_6b09499e-0743-5569-8361-bae75616f667" valign="middle" align="left">Label</th>
+<th id="_182220ae-048f-d616-ef39-27ed1a83dd1d" valign="middle" align="left">TargetNode</th>
+<th id="_1833fd0d-054d-5779-8458-fccd1bda0264" valign="middle" align="left">Property</th>
+<th id="_4c620a78-c129-254d-aeac-cebf8dca752b" valign="middle" align="left">Class</th>
+<th id="_88927161-8afa-f2bc-b6de-69a1aff144fb" valign="middle" align="left">MinCount</th>
+<th id="_c6ccc5a4-ee15-97fa-3a45-1fdbc14695e2" valign="middle" align="left">MaxCount</th>
+<th id="_4fca0f6d-9b95-1a5d-988f-6f5cd84d2ef9" valign="middle" align="left">Comment</th>
+</tr></thead>
+<tbody><tr id="_a9126759-4ae4-0245-0222-c5c390778d22"><td id="_1e053656-9325-9859-1f22-7ad99d66a0f6" valign="middle" align="left">Shape S1</td>
+<td id="_1e489fbe-18e1-408c-cd3a-2d2ef400ecd5" valign="middle" align="left">geosrs:ParametricDatum</td>
+<td id="_b9233f79-b59e-ab90-8d08-96504e30ed03" valign="middle" align="left">geosrs:definingParameter</td>
+<td id="_423ecc98-fc03-0185-ce72-05ced6efca6d" valign="middle" align="left">geosrs:DefiningParameter</td>
+<td id="_a86218a5-5b28-c007-e088-1d712e9213ff" valign="middle" align="left">1</td>
+<td id="_544e1e3c-01d0-e6fe-50b8-09ad8c225c60" valign="middle" align="left">-</td>
+<td id="_880060eb-fe49-22ce-160a-526ff22a24dc" valign="middle" align="left">A parametric datum should have at least one defining parameter</td>
+</tr></tbody>
+</table>
+</clause>
+
+<clause id="_28ede62b-4ed2-2a4c-20b2-7fe48e973d99" obligation="informative">
+<title id="_a0eb8f7d-275f-b43e-c8f1-ea640f6fdbbf">SHACL Shapes: Cs</title>
+<table id="_9b59948f-3212-01c9-275a-467c1ae4a4df">
+<name id="_b3e6631c-2694-f9d3-38c4-777cf38b1804">Cs</name>
+<thead><tr id="_b99e0039-6edf-df1b-b5c0-6bb7a3673494"><th id="_4501a8e7-5c3a-ba97-7044-cd739f74ba59" valign="middle" align="left">Label</th>
+<th id="_b0248e34-8ba5-460f-41ea-c0219a495ed3" valign="middle" align="left">TargetNode</th>
+<th id="_81351ea4-1f1f-f249-653f-9ce43e9da4d0" valign="middle" align="left">Property</th>
+<th id="_8e1f1583-e329-c731-6d13-4a3177081745" valign="middle" align="left">Class</th>
+<th id="_edae8f3a-792c-b0bb-9296-97fd8ad974dc" valign="middle" align="left">MinCount</th>
+<th id="_541bef88-3702-5c30-f6bb-e0eb580f3d71" valign="middle" align="left">MaxCount</th>
+<th id="_39c78d70-10d2-d7f9-ba13-13e5d032d2a9" valign="middle" align="left">Comment</th>
+</tr></thead>
+<tbody><tr id="_60341e68-2ab6-9d07-db01-33470819a4a1"><td id="_66e31511-c2f7-1ac4-c95d-79b64ac5afcc" valign="middle" align="left">Shape S1</td>
+<td id="_f8609c70-2db5-aeb4-479c-7629b0d1b5f0" valign="middle" align="left">geosrs:1DCoordinateSystem</td>
+<td id="_9d5ac611-db3f-4fde-e91a-41c1230df9c8" valign="middle" align="left">geosrs:axis</td>
+<td id="_05b01933-2711-c827-beff-2f5a308d65f2" valign="middle" align="left">geosrs:CoordinateSystemAxis</td>
+<td id="_0ab11ff0-7c5a-eb80-9ce6-6700d527f03f" valign="middle" align="left">1</td>
+<td id="_0da0809f-0b8e-a854-b870-8b033d878236" valign="middle" align="left">1</td>
+<td id="_530d137c-ddef-4d0f-af34-17262021024b" valign="middle" align="left">A 1D coordinate system should have exactly one axis</td>
+</tr><tr id="_8f0b7a93-3e52-d9a0-3ab3-ccc73d4a0895"><td id="_82db4ec7-3af7-2952-e746-9ad839b69576" valign="middle" align="left">Shape S2</td>
+<td id="_c3cc5950-059a-0140-bcce-94788f8c64f5" valign="middle" align="left">geosrs:3DCoordinateSystem</td>
+<td id="_2f52d61a-8e90-2e60-7dfa-3b3201fc4475" valign="middle" align="left">geosrs:axis</td>
+<td id="_681cc047-9d0e-ff1e-1b8d-ce2d3cf47f34" valign="middle" align="left">geosrs:CoordinateSystemAxis</td>
+<td id="_125faf1f-4fd6-da81-3fc7-2ca4c583f8cb" valign="middle" align="left">3</td>
+<td id="_cfd82e26-822b-d7cd-c5c9-d50342523c59" valign="middle" align="left">-</td>
+<td id="_c99ae008-e5c8-3d21-736d-5f328a5d57fe" valign="middle" align="left">A 3D coordinate system should have at least three axes</td>
+</tr><tr id="_1063b8c1-497a-77c6-cbf0-e959779fba8a"><td id="_a45f99ad-d5f2-d527-c0e7-c58aa53a0703" valign="middle" align="left">Shape S3</td>
+<td id="_3613916a-309f-6aaa-b78c-c79163a7de93" valign="middle" align="left">geosrs:ConicalCoordinateSystem</td>
+<td id="_e9183f7b-fa79-aa91-6535-6b75e0ed03d0" valign="middle" align="left">geosrs:axis</td>
+<td id="_10b56a59-40da-0500-e9b6-8e735e0711e1" valign="middle" align="left">geosrs:CoordinateSystemAxis</td>
+<td id="_6fb1ccf6-95f2-1099-2110-2c3ce6c16c04" valign="middle" align="left">3</td>
+<td id="_6023a10b-02c0-7fb7-1d85-f2a48d9b6e11" valign="middle" align="left">-</td>
+<td id="_6c889090-b8c0-d9ee-8a54-16c58608ebd8" valign="middle" align="left">A conical coordinate system should have at least three axes</td>
+</tr><tr id="_691a3f34-1d8f-24b9-adc8-be3b048a5198"><td id="_4746d833-4877-7e51-57bc-d9362d26fa7d" valign="middle" align="left">Shape S4</td>
+<td id="_3d2f101a-17a7-4926-b2fc-8b241387a646" valign="middle" align="left">geosrs:CoordinateSystem</td>
+<td id="_fe3982df-a99d-1e70-7429-0cf055c0694a" valign="middle" align="left">geosrs:axis</td>
+<td id="_a37e7d5d-968f-91d9-93cc-4b5b8bdd96ad" valign="middle" align="left">geosrs:CoordinateSystemAxis</td>
+<td id="_3a20f2c8-42c0-a6d9-86fa-893c29913c1a" valign="middle" align="left">1</td>
+<td id="_4d62ad74-175a-baef-aec7-5d2640bb0a89" valign="middle" align="left">-</td>
+<td id="_7b67b119-5def-be67-2e75-4880c0529e33" valign="middle" align="left">A coordinate system should have at least one axis</td>
+</tr><tr id="_37d5c542-7f35-ef5f-6fd9-1bca763195b0"><td id="_3fe17c71-d897-d5d5-62a6-ca75eb79081c" valign="middle" align="left">Shape S5</td>
+<td id="_8be85284-3fcb-77e4-7533-05b85bc2a77f" valign="middle" align="left">geosrs:CoordinateSystemAxis</td>
+<td id="_47378294-0f87-65a8-acb0-6aca4ea68b4d" valign="middle" align="left">geosrs:axisDirection</td>
+<td id="_b718502f-a911-09ff-8add-3345d62755d9" valign="middle" align="left">geosrs:AxisDirection</td>
+<td id="_3c5333e8-674d-9df4-e87d-ca6367507828" valign="middle" align="left">1</td>
+<td id="_b34c78f9-4165-7cb8-d516-143e500c563b" valign="middle" align="left">1</td>
+<td id="_d1d22057-4d39-a43b-b59a-f54bcabb546d" valign="middle" align="left">A coordinate system axis should have exactly one axis direction</td>
+</tr><tr id="_9565d68b-fb21-9312-f63d-c6f07a48f43a"><td id="_010a2914-848f-9066-2d7e-ca9fb52f6a2e" valign="middle" align="left">Shape S6</td>
+<td id="_feb3a1da-a1a3-1156-ae43-13aff271c0a1" valign="middle" align="left">geosrs:CurvilinearCoordinateSystem</td>
+<td id="_55b130f6-7b9b-9b4f-73f3-a9fa7f23304a" valign="middle" align="left">geosrs:axis</td>
+<td id="_fdf799d6-8ee2-df1b-2cef-fdf8d80e47f4" valign="middle" align="left">geosrs:CoordinateSystemAxis</td>
+<td id="_5aab70e8-1deb-fe16-6a95-8171b5db85ba" valign="middle" align="left">3</td>
+<td id="_d191ef94-e3a4-12d7-4d66-41661e3de6ab" valign="middle" align="left">-</td>
+<td id="_e15b992e-622c-c9c2-7372-c00eccdce703" valign="middle" align="left">A curvilinear coordinate system is defined in Euclidean space and should therefore have at least three axes</td>
+</tr><tr id="_0dc8b1b5-7327-f1da-ae64-ee5d61ee1502"><td id="_815e49de-c0a0-16b4-b3ea-602ab38749e1" valign="middle" align="left">Shape S7</td>
+<td id="_bcac7f79-e1f8-1d88-dd30-14db306b7ac1" valign="middle" align="left">geosrs:CylindricalCoordinateSystem</td>
+<td id="_3596d775-9a8e-ba12-1d70-4d5764f370d5" valign="middle" align="left">geosrs:axis</td>
+<td id="_fe094734-7e6f-92d2-1dce-b56c55ee936c" valign="middle" align="left">geosrs:CoordinateSystemAxis</td>
+<td id="_6ff8112b-3040-eae3-378e-01bbcdf52e41" valign="middle" align="left">3</td>
+<td id="_ac805fb8-d2e9-86a7-486b-3788c726ce73" valign="middle" align="left">-</td>
+<td id="_350fc1a6-f166-2a16-e73e-4af7aa7df982" valign="middle" align="left">A cylindrical coordinate system should have at least three axes</td>
+</tr><tr id="_bef11965-9efe-e5f7-3de9-4692fe22f862"><td id="_9fbeec16-6966-9256-c4b5-5b91e43718f9" valign="middle" align="left">Shape S8</td>
+<td id="_a50a9e8a-b4b1-0d01-4798-dfe023c2a1e3" valign="middle" align="left">geosrs:DateTimeTemporalCoordinateSystem</td>
+<td id="_d4ba3e21-0cd2-5874-b36f-067451530463" valign="middle" align="left">geosrs:axis</td>
+<td id="_1ac4fce0-bbcc-5e99-4a12-1f3180fce773" valign="middle" align="left">geosrs:CoordinateSystemAxis</td>
+<td id="_0e8c4f46-75d3-3925-ed91-e1a46c650d23" valign="middle" align="left">1</td>
+<td id="_dc826c13-2b1a-19de-044b-bb8998cb9edc" valign="middle" align="left">1</td>
+<td id="_0352e8f8-cbbb-8640-5dd2-2ccc0a943463" valign="middle" align="left">A date time temporal coordinate system should have exactly one axis</td>
+</tr><tr id="_2ac321f4-dd82-2310-503f-891bef6aa7b0"><td id="_879077f7-efd5-03e8-40e7-5af62df4a958" valign="middle" align="left">Shape S9</td>
+<td id="_df1ec6d4-5475-5b60-ce00-8935a2f76b59" valign="middle" align="left">geosrs:PlanarCoordinateSystem</td>
+<td id="_bb5de657-07b8-8a60-1eda-67a7b9059d35" valign="middle" align="left">geosrs:axis</td>
+<td id="_4cd16c33-2728-8072-00a0-919613f64fb5" valign="middle" align="left">geosrs:CoordinateSystemAxis</td>
+<td id="_9c610d00-0c68-6906-2cb2-e44fc615d8cd" valign="middle" align="left">2</td>
+<td id="_ece9ccfa-3e64-0b16-7ef0-7c5fb92fed82" valign="middle" align="left">-</td>
+<td id="_c31c2b0d-21da-fc12-2b3f-321828214370" valign="middle" align="left">A planar coordinate system should have at least two axes</td>
+</tr><tr id="_95da7b40-dade-02c1-d3f9-bd8199a868ad"><td id="_e8b08248-6ac6-ca94-65f9-06590f42910d" valign="middle" align="left">Shape S10</td>
+<td id="_1525f50b-f241-9321-8e02-834db7d94c17" valign="middle" align="left">geosrs:TemporalCoordinateSystem</td>
+<td id="_1654262e-9e0c-8dc9-f7c1-9e447e9c5f36" valign="middle" align="left">geosrs:axis</td>
+<td id="_460236ea-73c1-e52b-0263-a94d3040fa92" valign="middle" align="left">geosrs:CoordinateSystemAxis</td>
+<td id="_cff102a6-d59c-b985-fba9-d187f0a416e2" valign="middle" align="left">1</td>
+<td id="_715ca714-fb5a-abbe-a24f-652e7d0fce02" valign="middle" align="left">1</td>
+<td id="_59aeb770-9b04-0e3d-60d1-2570a7f863ca" valign="middle" align="left">A temporal coordinate system should have exactly one axis</td>
+</tr><tr id="_de83d7fc-e6fb-931c-728f-f8dfdae66f00"><td id="_21568a6c-b24a-5121-d6e4-c2acde472a0b" valign="middle" align="left">Shape S11</td>
+<td id="_84f63d7c-0ae0-376a-e8fd-2bb27c1b1457" valign="middle" align="left">geosrs:TemporalCountCoordinateSystem</td>
+<td id="_e5240d10-d8e1-9e21-9510-3a9e4cdd662f" valign="middle" align="left">geosrs:axis</td>
+<td id="_b059e944-b83b-db95-9ea9-e13389bc5388" valign="middle" align="left">geosrs:CoordinateSystemAxis</td>
+<td id="_408046b5-2072-c9a9-967b-79ee770d30e3" valign="middle" align="left">1</td>
+<td id="_95e1e260-5580-20f4-44ad-84d1e50a1ac5" valign="middle" align="left">1</td>
+<td id="_f5ee5731-6315-a6dd-befb-32de015229eb" valign="middle" align="left">A temporal count coordinate system should have exactly one axis</td>
+</tr><tr id="_5e3e06c5-ec07-f301-5a5e-d26ae00c435a"><td id="_e1004122-5a81-8927-e587-3058f8d7d957" valign="middle" align="left">Shape S12</td>
+<td id="_8f33d160-dc01-be73-f606-28afafe5cf2a" valign="middle" align="left">geosrs:TemporalMeasureCoordinateSystem</td>
+<td id="_bc596383-f9df-b312-ca42-ac50f16111e5" valign="middle" align="left">geosrs:axis</td>
+<td id="_0ad5771b-4d86-3b5b-b93f-cfff5ce2ae23" valign="middle" align="left">geosrs:CoordinateSystemAxis</td>
+<td id="_fbeb48cb-6a49-099c-5e57-9e277c66c72c" valign="middle" align="left">1</td>
+<td id="_048b0940-6235-e137-251f-c39430e2fd13" valign="middle" align="left">1</td>
+<td id="_9873f4d7-9553-fd1b-e4db-b0661c4aeec1" valign="middle" align="left">A temporal measure coordinate system should have exactly one axis</td>
+</tr></tbody>
+</table>
+</clause>
+</annex><annex id="_af52cd34-c107-661a-2cf8-2dbd7ba3a336" obligation="informative">
+<title id="_114f2a3a-254b-47b9-7141-24cd9a8c15a0">Application Examples</title>
+<floating-title id="_ba73eec6-8dc2-cb09-926b-80707f39c68b" depth="2" type="floating-title">Overview</floating-title>
+<clause id="_c605084b-e836-70da-a9f6-291d2d645a02" obligation="informative">
+<title id="_dbcbc5ba-9fb5-0699-bf8a-40f4bfdbf159">Minimum Example</title>
+</clause>
+
+<clause id="_35bf66b8-5567-5a60-6946-9907fa28668e" obligation="informative">
+<title id="_fd1449b5-d582-0365-e543-5ff9f2f13e80">Elaborate Example</title>
+</clause>
+</annex><annex id="_fac9f23a-8dd7-c3ae-a9c2-0fa33f9c7807" obligation="informative">
+<title id="_69fdff38-6317-70b2-d407-1637d3df1051">JSON-LD Context</title>
+<p id="_c8028951-a52b-9421-dd9d-dd015d333280">We provide JSON-LD contexts to be compatible with other JSON-based formats which provide coordinate reference system data.</p>
+
+<floating-title id="_3d15275c-919c-d1ba-27ea-114eebd6f241" depth="2" type="floating-title">Overview</floating-title>
+<clause id="_ca2457c8-233f-b3b2-8647-903c690cd616" obligation="informative">
+<title id="_458b7a6c-44ee-694a-92fe-3db2afe11905">Compatibility to PROJJSON</title>
+<p id="_b87489a7-a6a0-2abf-e9a5-ab52cc95dba2"><link target="https://proj.org/en/stable/specifications/projjson.html">PROJSON</link> is an established format to share geospatial data which has emerge from the PROJ library and encodes the WKT encoding of coordiante references systems. By adding a JSON-LD context to the PROJJSON standard we achieve an immediate compatibility with an established standard simply by extending it by one simple statement.</p>
+
+<sourcecode id="_d8ae13d0-3a9b-7562-0e1e-9eab36ac21c2"><body>{
+    "@context": "https://opengeospatial.github.io/ontology-crs/context/geosrs-context.json",
+    "$schema": "https://proj.org/schemas/v0.7/projjson.schema.json",
+    ...
+}</body></sourcecode>
+
+
+<p id="_8194a40f-94eb-f0c9-f24c-e39e2e61e669">We provide examples of application of this JSON-LD context with the distribution of this standard.</p>
+</clause>
+
+<clause id="_96aea623-f831-a562-5288-ee9a70628d2b" obligation="informative">
+<title id="_3f1ec114-5bf8-9810-152c-75160207c0b4">Compatibility to OGCJSON</title>
+<p id="_5c831ee1-ff1f-cb52-fbc9-2ced57a403bf">The OGC CRS working group is aiming towards the creation of their own JSON format for CRS. The JSON-LD context we provide aims to be compatible with both PROJJSON and OGCJSON.</p>
+</clause>
+</annex><annex id="_0eacf1da-0d8e-89ef-d30d-181589f822e4" obligation="informative">
+<title id="_51ca9699-bd46-742c-98bf-01b12e01660c">Revision History</title>
+<table id="_44738962-548b-b34c-c0a2-2c90d296c9cf" unnumbered="true" width="90%"><thead><tr id="_9ab76d2b-5043-d4e2-a704-d9c73b538d64"><th id="_f03e08d4-b632-6e4d-163c-6f3a70bd58e2" valign="middle" align="left">Date</th>
+<th id="_7283f4ba-c4b8-e291-32f3-a50f790e55c7" valign="middle" align="left">Release</th>
+<th id="_693c65c1-7673-7d32-6a2a-01abba98886f" valign="middle" align="left">Author</th>
+<th id="_8d59a309-a4d4-9606-f67f-905190cfc466" valign="middle" align="left">Primary clauses modified</th>
+<th id="_f4aadf92-4ec1-c55d-ad5d-928ac4a3d7fa" valign="middle" align="left">Description</th>
+</tr></thead>
+<tbody><tr id="_1511996a-65de-cc8f-57e0-62fbbb5460b8"><td id="_ddbbbc18-6617-bb6c-3563-65278d6124e4" valign="middle" align="left">2016-04-28</td>
+<td id="_3db9d40a-cba8-62ea-d12c-9c5124c4ed03" valign="middle" align="left">0.1</td>
+<td id="_28289355-a2d6-ec37-d13c-593a955b41e4" valign="middle" align="left">G. Editor</td>
+<td id="_175e0418-1a61-03d0-40bf-ccc9556b01f4" valign="middle" align="left">all</td>
+<td id="_7823857a-e2a1-59cc-fe64-90f0ea3f1a00" valign="middle" align="left">initial version</td>
+</tr></tbody>
+</table>
 </annex><bibliography><references id="_390789b0-507c-9c1b-430e-6dc3e739d1be" normative="true" obligation="informative">
 <title id="_270c5ee6-077e-f285-ff95-287984a30140">Normative references</title><p id="_49996d2b-65c1-916b-9bbf-42b933aa0025">The following documents are referred to in the text in such a way that some or all of their content constitutes requirements of this document. For dated references, only the edition cited applies. For undated references, the latest edition of the referenced document (including any amendments) applies.</p>
 
@@ -6783,13 +6883,263 @@ Foster, I., Kesselman, C.. Morgan Kaufmann, San Francisco (1999).</formattedref>
 <bibitem anchor="Czajkowski01" id="_d10a2f27-fdb9-47f9-0b51-a5612b7b4d31"><formattedref format="application/x-isodoc+xml"><em>Grid Information Services for Distributed Resource Sharing.</em> 
 Czajkowski, K., Fitzgerald, S., Foster, I., Kesselman, C. In: 10th IEEE International Symposium on High
 Performance Distributed Computing, pp. 181–184. IEEE Press, New York (2001)</formattedref><docidentifier>Grid Information Services for Distributed Resource Sharing</docidentifier><language>en</language><script>Latn</script></bibitem>
-</references><references hidden="true" normative="false"><bibitem anchor="Class_ geosrs" id="_8f84ddd0-2649-ac8c-624a-3716548247ee" type="internal">
+</references><references id="_4528dc12-c031-fa85-0e79-cc9c448a76de" normative="false" obligation="informative">
+<title id="_50ceb1e1-516f-2673-d73d-4f0c58b4d023">Bibliography</title>
+<note id="_fbd336b0-a344-3030-55c6-1975921a4963"><p id="_a4639bb5-dce4-2157-2d6a-6229500fcabe">The TC has approved Springer LNCS as the official document citation type. Springer LNCS is widely used in technical and computer science journals and other publications For citations in the text please use square brackets and consecutive numbers: [1], [2], [3] Actual References: [n] Journal: Author Surname, A.: Title. Publication Title. Volume number, Issue number, Pages Used (Year Published)</p>
+</note><bibitem id="_c54a4206-2d46-6919-d76e-74686992e8b3" type="standard" schema-version="v1.2.9" anchor="iso19142">
+  <fetched>2025-11-24</fetched>
+  
+<title type="title-intro" format="text/plain" language="en" script="Latn">Geographic information</title>
+
+  
+<title type="title-main" format="text/plain" language="en" script="Latn">Web Feature Service</title>
+
+  
+<title type="main" format="text/plain" language="en" script="Latn">Geographic information — Web Feature Service</title>
+
+  <uri type="src">https://www.iso.org/standard/42136.html</uri>
+  <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:42136:en</uri>
+  <uri type="rss">https://www.iso.org/contents/data/standard/04/21/42136.detail.rss</uri>
+  <docidentifier type="ISO" primary="true">ISO 19142</docidentifier>
+  <docidentifier type="iso-reference">ISO 19142(E)</docidentifier>
+  <docidentifier type="URN">urn:iso:std:iso:19142:stage-90.93</docidentifier>
+  <docnumber>19142</docnumber>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      
+<name>International Organization for Standardization</name>
+
+      <abbreviation>ISO</abbreviation>
+      <uri>www.iso.org</uri>
+    </organization>
+  </contributor>
+  <edition>1</edition>
+  <language>en</language>
+  <language>fr</language>
+  <script>Latn</script>
+  <status>
+    <stage>90</stage>
+    <substage>93</substage>
+  </status>
+  <copyright>
+    <from>2010</from>
+    <owner>
+      <organization>
+        
+<name>ISO</name>
+
+      </organization>
+    </owner>
+  </copyright>
+  <relation type="instanceOf">
+    <bibitem type="standard">
+      <fetched>2025-11-24</fetched>
+      
+<title type="title-intro" format="text/plain" language="en" script="Latn">Geographic information</title>
+
+      
+<title type="title-main" format="text/plain" language="en" script="Latn">Web Feature Service</title>
+
+      
+<title type="main" format="text/plain" language="en" script="Latn">Geographic information — Web Feature Service</title>
+
+      <uri type="src">https://www.iso.org/standard/42136.html</uri>
+      <uri type="obp">https://www.iso.org/obp/ui/en/#!iso:std:42136:en</uri>
+      <uri type="rss">https://www.iso.org/contents/data/standard/04/21/42136.detail.rss</uri>
+      <docidentifier type="ISO" primary="true">ISO 19142:2010</docidentifier>
+      <docidentifier type="iso-reference">ISO 19142:2010(E)</docidentifier>
+      <docidentifier type="URN">urn:iso:std:iso:19142:stage-90.93</docidentifier>
+      <docnumber>19142</docnumber>
+      <date type="published">
+        <on>2010-12</on>
+      </date>
+      <contributor>
+        <role type="publisher"/>
+        <organization>
+          
+<name>International Organization for Standardization</name>
+
+          <abbreviation>ISO</abbreviation>
+          <uri>www.iso.org</uri>
+        </organization>
+      </contributor>
+      <edition>1</edition>
+      <language>en</language>
+      <language>fr</language>
+      <script>Latn</script>
+      <abstract format="text/plain" language="en" script="Latn">ISO 19142:2010 specifies the behaviour of a web feature service that provides transactions on and access to geographic features in a manner independent of the underlying data store. It specifies discovery operations, query operations, locking operations, transaction operations and operations to manage stored parameterized query expressions.</abstract>
+      <status>
+        <stage>90</stage>
+        <substage>93</substage>
+      </status>
+      <copyright>
+        <from>2010</from>
+        <owner>
+          <organization>
+            
+<name>ISO</name>
+
+          </organization>
+        </owner>
+      </copyright>
+      <place>Geneva</place>
+    </bibitem>
+
+  </relation>
+  <place>Geneva</place>
+</bibitem><bibitem anchor="dcat" id="_001d5e2e-f83e-867c-816d-523cf112316f">
+  <formattedref format="application/x-isodoc+xml">W3C: <strong>Data Catalog Vocabulary,</strong> W3C Recommendation 16 January 2014, <link target="https://www.w3.org/TR/vocab-dcat/"/></formattedref>
+  <docidentifier>DCAT</docidentifier>
+  <language>en</language>
+  <script>Latn</script>
+</bibitem><bibitem anchor="link_relations" id="_ecde8fcd-b751-6a0a-b3c7-1ca1c362ba9c">
+  <formattedref format="application/x-isodoc+xml">IANA: <strong>Link Relation Types,</strong> <link target="https://www.iana.org/assignments/link-relations/link-relations.xml"/></formattedref>
+  <docidentifier>Link Relation Types</docidentifier>
+  <language>en</language>
+  <script>Latn</script>
+</bibitem><bibitem anchor="spatial_data_wbp" id="_8565f8fa-120a-97bb-478b-4b52213ee4f0">
+  <formattedref format="application/x-isodoc+xml">W3C/OGC: <strong>Spatial Data on the Web Best Practices,</strong> W3C Working Group Note 28 September 2017, <link target="https://www.w3.org/TR/sdw-bp/"/></formattedref>
+  <docidentifier>SDWBP</docidentifier>
+  <language>en</language>
+  <script>Latn</script>
+</bibitem><bibitem anchor="dwbp" id="_7e05bc28-b17d-324d-6c1f-b339cef4517f">
+  <formattedref format="application/x-isodoc+xml">W3C: <strong>Data on the Web Best Practices,</strong> W3C Recommendation 31 January 2017, <link target="https://www.w3.org/TR/dwbp/"/></formattedref>
+  <docidentifier>WBP</docidentifier>
+  <language>en</language>
+  <script>Latn</script>
+</bibitem><bibitem anchor="yaml" id="_9b45f531-7510-2d45-eb7e-6689fb3a3f72">
+  <formattedref format="application/x-isodoc+xml">Ben-Kiki, O., Evans, C., Ingy döt Net: <strong>YAML Ain’t Markup Language,</strong> <link target="https://yaml.org/"/></formattedref>
+  <docidentifier>YAML</docidentifier>
+  <language>en</language>
+  <script>Latn</script>
+</bibitem><bibitem anchor="wfs20" id="_daa70712-0bca-c1e2-a390-9f8957a0ca4a">
+  <formattedref format="application/x-isodoc+xml">OGC: <strong>Web Feature Service 2.0,</strong> <link target="http://docs.opengeospatial.org/is/09-025r2/09-025r2.html"/></formattedref>
+  <docidentifier>WFS 2.0</docidentifier>
+  <docnumber>2.0</docnumber>
+  <language>en</language>
+  <script>Latn</script>
+</bibitem><bibitem anchor="rfc3986" id="_8de251e8-c38b-418c-7784-ce5a5868c2a7">
+  <formattedref format="application/x-isodoc+xml">Berners-Lee, T., Fielding, R., Masinter, L.: <strong>IETF RFC 3986 — Uniform Resource Identifier (URI): Generic Syntax,</strong> <link target="http://tools.ietf.org/rfc/rfc3986.txt"/></formattedref>
+  <docidentifier>RFC3986</docidentifier>
+  <docnumber>3986</docnumber>
+  <language>en</language>
+  <script>Latn</script>
+</bibitem><bibitem id="_8cca49d3-b86f-e263-a53b-af52da0f2ef0" type="article" schema-version="v1.2.9" anchor="ijgi13010025">
+  <fetched>2025-11-24</fetched>
+  
+<title type="main" format="text/plain" script="Latn">Extension of RCC*-9 to Complex and Three-Dimensional Features and Its Reasoning System</title>
+
+  <uri type="DOI">https://doi.org/10.3390/ijgi13010025</uri>
+  <uri type="src">https://www.mdpi.com/2220-9964/13/1/25</uri>
+  <docidentifier type="DOI" primary="true">10.3390/ijgi13010025</docidentifier>
+  <docidentifier type="issn.electronic">2220-9964</docidentifier>
+  <date type="issued">
+    <on>2024-01-10</on>
+  </date>
+  <date type="published">
+    <on>2024-01-10</on>
+  </date>
+  <contributor>
+    <role type="author"/>
+    <person>
+      
+<name>          <forename language="en" script="Latn">Eliseo</forename>          <surname language="en" script="Latn">Clementini</surname>       </name>
+
+      <affiliation>
+        <organization>
+          
+<name>Department of Industrial and Information Engineering and Economics, University of L’Aquila, 67100 L’Aquila, Italy</name>
+
+        </organization>
+      </affiliation>
+      <identifier type="orcid">https://orcid.org/0000-0002-3057-7105</identifier>
+    </person>
+  </contributor>
+  <contributor>
+    <role type="author"/>
+    <person>
+      
+<name>          <forename language="en" script="Latn">Anthony G.</forename>          <surname language="en" script="Latn">Cohn</surname>       </name>
+
+      <affiliation>
+        <organization>
+          
+<name>School of Computing, University of Leeds, Leeds LS2 9JT, UK</name>
+
+        </organization>
+      </affiliation>
+      <affiliation>
+        <organization>
+          
+<name>The Alan Turing Institute, London NW1 2DB, UK</name>
+
+        </organization>
+      </affiliation>
+      <affiliation>
+        <organization>
+          
+<name>Department of Computer Science and Technology, Tongji University, Shanghai 200065, China</name>
+
+        </organization>
+      </affiliation>
+      <identifier type="orcid">https://orcid.org/0000-0002-7652-8907</identifier>
+    </person>
+  </contributor>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      
+<name>MDPI AG</name>
+
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="enabler"/>
+    <organization>
+      
+<name>Economic and Social Research Council (ESRC)</name>
+
+    </organization>
+  </contributor><language>en</language><script>Latn</script>
+  <abstract format="text/html" language="en" script="Latn">
+    <p id="_0300a355-bb4a-9efb-d3c7-a6108404e3ce">RCC*-9 is a mereotopological qualitative spatial calculus for simple lines and regions. RCC*-9 can be easily expressed in other existing models for topological relations and thus can be viewed as a candidate for being a “bridge” model among various approaches. In this paper, we present a revised and extended version of RCC*-9, which can handle non-simple geometric features, such as multipolygons, multipolylines, and multipoints, and 3D features, such as polyhedrons and lower-dimensional features embedded in R3. We also run experiments to compute RCC*-9 relations among very large random datasets of spatial features to demonstrate the JEPD properties of the calculus and also to compute the composition tables for spatial reasoning with the calculus.</p>
+
+  </abstract>
+  <series>
+    
+<title format="text/plain">ISPRS International Journal of Geo-Information</title>
+
+  </series>
+  <extent>
+    <locality type="volume">
+      <referenceFrom>13</referenceFrom>
+    </locality>
+    <locality type="issue">
+      <referenceFrom>1</referenceFrom>
+    </locality>
+    <locality type="page">
+      <referenceFrom>25</referenceFrom>
+    </locality>
+  </extent>
+</bibitem>
+
+
+
+
+
+
+
+
+
+
+</references><references hidden="true" normative="false"><bibitem anchor="Class_ geosrs" id="_d3b77142-9cd8-b788-1e93-355cf1bd6948" type="internal">
 <docidentifier type="repository">Class/ geosrs</docidentifier>
 </bibitem>
-</references><references hidden="true" normative="false"><bibitem anchor="Property_ geosrs" id="_4945d1af-999e-323b-41a2-c67996be78eb" type="internal">
+</references><references hidden="true" normative="false"><bibitem anchor="Property_ geosrs" id="_41953152-471a-353c-ca46-5ccca0e46ab2" type="internal">
 <docidentifier type="repository">Property/ geosrs</docidentifier>
 </bibitem>
-</references><references hidden="true" normative="false"><bibitem anchor="Instance_ geosrs" id="_db59da71-51cb-f8f9-bd02-04d7701c1635" type="internal">
+</references><references hidden="true" normative="false"><bibitem anchor="Instance_ geosrs" id="_0724fb76-a8ce-03b4-c276-0d2f633e3d07" type="internal">
 <docidentifier type="repository">Instance/ geosrs</docidentifier>
 </bibitem>
 </references></bibliography>

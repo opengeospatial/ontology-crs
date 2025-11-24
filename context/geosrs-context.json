@@ -425,7 +425,7 @@
     "VanDerGrintenIIProjection": "geosrs_projection:VanDerGrintenIIProjection",
     "VanDerGrintenIProjection": "geosrs_projection:VanDerGrintenIProjection",
     "VanDerGrintenIVProjection": "geosrs_projection:VanDerGrintenIVProjection",
-    "Vertical": "geosrs_srs:VerticalCRS",
+    "Vertical": "geosrs_datum:DynamicVerticalDatum",
     "VerticalCRS": "geosrs:VerticalCRS",
     "VerticalCoordinateSystem": "geosrs:VerticalCoordinateSystem",
     "VerticalDatum": "geosrs:VerticalDatum",

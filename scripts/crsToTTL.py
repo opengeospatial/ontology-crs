@@ -792,7 +792,7 @@ mapp=pyproj.list.get_proj_operations_map()
 if args.input is None:
     if args.all is not None:
         print("Convert All")
-        convertAll()
+        convertAll(ttlhead,ttl)
     else:
         parser.print_help()
         print("You did not specify an input file to convert. Exiting program...")

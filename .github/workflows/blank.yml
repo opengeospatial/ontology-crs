@@ -29,7 +29,7 @@ jobs:
          sudo gem install haml -v 5.2.2
     - name: Create Ontology Documentation 🔧
       run: |
-         python3 scripts/crsToTTL.py
+         python3 scripts/crsToTTL.py -a
          python3 scripts/srsbuild.py
          python scripts/processbibtex.py
          mkdir docs

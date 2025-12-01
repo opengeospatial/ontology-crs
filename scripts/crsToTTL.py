@@ -791,7 +791,7 @@ print(args)
 mapp=pyproj.list.get_proj_operations_map()
 if args.input is None:
     if args.all is not None:
-		print("Convert All")
+        print("Convert All")
         convertAll()
     else:
         parser.print_help()

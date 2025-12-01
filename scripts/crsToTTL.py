@@ -800,7 +800,16 @@ else:
     if str(args.input).startswith("EPSG"):
         curcrs=CRS.from_epsg(int(str(args.input).replace("EPSG:","")))
         #print(curcrs.area_of_use)
-    if args.outputformat=="wkt":
+	elif str(args.input).endswith("wkt"):
+		with open(args.input,"r") as f:
+			curcrs=CRS.from_wkt(f.read())
+	elif str(args.input).endswith("proj"):
+		with open(args.input,"r") as f:
+			curcrs=CRS.from_proj4(f.read())
+    elif str(args.input).endswith("json"):
+		with open(args.input,"r") as f:
+			curcrs=CRS.from_json(f.read())
+	if args.outputformat=="wkt":
         thewkt=curcrs.to_wkt()
         f = open(str(args.input).replace(":","_")+".wkt", "a")
         f.write(thewkt)

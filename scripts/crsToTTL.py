@@ -809,7 +809,7 @@ else:
     elif str(args.input).endswith("json"):
         with open(args.input,"r") as f:
             curcrs=CRS.from_json(f.read())
-	if args.outputformat=="wkt":
+    if args.outputformat=="wkt":
         thewkt=curcrs.to_wkt()
         f = open(str(args.input).replace(":","_")+".wkt", "a")
         f.write(thewkt)

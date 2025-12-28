@@ -4,8 +4,8 @@ prefixes:
   mynamespace: https://w3id.org/example-data-srs#
 ## List of examples
 examples:
-- title: SRS Ontology Planet Module Example
+- title: SRS Ontology Coordinate Operation Module Example
 
   snippets:
     - language: ttl
-      ref: examples/planet.ttl
+      ref: examples/co.ttl

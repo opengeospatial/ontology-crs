@@ -496,7 +496,7 @@ def crsToTTL(ttl,curcrs,x,geodcounter,crsclass):
 		ttl.add("geosrsoperation:"+str(coordoperationid)+" geosrs:method_name \""+str(curcrs.coordinate_operation.method_name)+"\" . \n")
 		ttl.add("geosrsoperation:"+str(coordoperationid)+" geosrs:asProj4 \""+str(curcrs.coordinate_operation.to_proj4()).strip().replace("\"","'").replace("\n","")+"\" . \n")
 		ttl.add("geosrsoperation:"+str(coordoperationid)+" geosrs:asProjJSON \""+str(curcrs.coordinate_operation.to_json()).strip().replace("\"","'").replace("\n","")+"\" . \n")
-		ttl.add("geosrsoperation:"+str(coordoperationid)+" geosrs:asWKT \""+str(curcrs.coordinate_operation.to_wkt()).replace("\"","'").replace("\n","")+"\"^^geo:wktLiteral . \n")
+		ttl.add("geosrsoperation:"+str(coordoperationid)+" geosrs:asWKT \""+str(curcrs.coordinate_operation.to_wkt()).replace("\"","'").replace("\n","")+"\"^^geosrs:wktLiteral . \n")
 		if curcrs.coordinate_operation.scope!=None:
 			ttl.add("geosrsoperation:"+str(coordoperationid)+" geosrs:scope \""+str(curcrs.coordinate_operation.scope).replace("\"","'")+"\"^^xsd:string . \n")
 		if curcrs.coordinate_operation.remarks!=None:

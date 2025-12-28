@@ -1,0 +1,6 @@
+@prefix geosrs_cs:<https://w3id.org/geosrs/cs/> .
+@prefix exsrs:   <https://w3id.org/example-data-srs#> .
+
+exsrs:ecs rdf:type geosrs_cs:geosrs:EllipsoidalCoordinateSystem .
+
+

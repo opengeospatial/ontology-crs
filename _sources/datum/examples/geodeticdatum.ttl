@@ -5,8 +5,8 @@
 
 exsrs:mydatum rdf:type geosrs:GeodeticDatum ;
               rdfs:label "European Datum 1950" ;
-              geosrs:ellipsoid exsrs:myellipsoid .
+              geosrs_datum:ellipsoid exsrs:myellipsoid .
 exsrs:myellipsoid rdf:type geosrs_datum:Ellipsoid ;
                   rdfs:label "International 1924" ;
-                  geosrs:inverseFlattening 297 ;
-                  geosrs:semiMajorAxis 6378388 .
+                  geosrs_datum:inverseFlattening 297 ;
+                  geosrs_datum:semiMajorAxis 6378388 .

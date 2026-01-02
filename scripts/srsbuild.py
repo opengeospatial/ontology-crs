@@ -113,7 +113,7 @@ def convertCSVToSHACLAndADoc():
             with open(abspath+filename, newline='') as csvfile:
                 reader = csv.DictReader(csvfile)
                 adocdef+="===== SHACL Shapes: "+str(filename).replace(".csv","").capitalize()+"\n\n"
-                adocdef+="."+str(filename).replace(".csv","").capitalize()+"\n[cols=\"7*\"]\n|===\n"
+                adocdef+="."+str(filename).replace(".csv","").capitalize()+"\n[cols=\"7*\",options=\"unnumbered\"]\n|===\n"
                 adocdef+="|Label|TargetNode|Property|Class|MinCount|MaxCount|Comment\n\n"
                 for row in reader:
                     if "Concept" in row and row["Concept"]!="":
@@ -304,7 +304,7 @@ for file in os.listdir(directory):
                         adocdef="===== Class: "+str(row["Concept"])+"\n\n"
                         if "Description" in row and row["Description"]!="":
                             adocdef+=row["Description"]+"\n\n"
-                        adocdef+="."+str(row["Concept"])+"\n[cols=\"1,1\"]\n|===\n"
+                        adocdef+="."+str(row["Concept"])+"\n[cols=\"1,1\",options=\"unnumbered\"]\n|===\n"
                         adocdef+="|Type\n|http://www.w3.org/2002/07/owl#Class[owl:Class]\n\n"
                         adocdef+="|URI\n|"+str(row["Concept"].replace(coreprefix+":",curns))+"\n\n"
                         core=True
@@ -364,7 +364,7 @@ for file in os.listdir(directory):
                         adocdef="===== Class: "+str(row["Concept"])+"\n\n"
                         if "Description" in row and row["Description"]!="":
                             adocdef+=row["Description"]+"\n\n"
-                        adocdef+="."+str(row["Concept"])+"\n[cols=\"1,1\"]\n|===\n"
+                        adocdef+="."+str(row["Concept"])+"\n[cols=\"1,1\",options=\"unnumbered\"]\n|===\n"
                         adocdef+="|URI\n|"+str(row["Concept"].replace(coreprefix+":",curns))+"[]\n\n"
                         prefixtoclasses[curprefix].append(row["Concept"].replace(curprefix+":",curns).replace("geosrs:","").replace("geoprojection:",""))
                         classToPrefix[row["Concept"]]={"prefix":curprefix, "ns":curns}
@@ -459,7 +459,7 @@ for file in os.listdir(directory):
                             adocdef="===== Property: "+str(row["Concept"])+"\n\n"
                             if "Description" in row and row["Description"]!="":
                                 adocdef+=row["Description"]+"\n\n"
-                            adocdef+="."+str(row["Concept"])+"\n[cols=\"1,1\"]\n|===\n"
+                            adocdef+="."+str(row["Concept"])+"\n[cols=\"1,1\",options=\"unnumbered\"]\n|===\n"
                             adocdef+="|URI\n|"+str(row["Concept"].replace(coreprefix+":",curns))+"\n\n"
                             core=True
                             prefixtoproperties["geosrs"].append(row["Concept"].replace(curprefix+":",curns).replace("geosrs:","").replace("geoprojection:",""))
@@ -520,7 +520,7 @@ for file in os.listdir(directory):
                                 adocdef="===== Property: "+str(row["Concept"])+"\n\n"
                                 if "Description" in row and row["Description"]!="":
                                     adocdef+=row["Description"]+"\n\n"
-                                adocdef+="."+str(row["Concept"])+"\n[cols=\"1,1\"]\n|===\n"
+                                adocdef+="."+str(row["Concept"])+"\n[cols=\"1,1\",options=\"unnumbered\"]\n|===\n"
                                 adocdef+="|URI\n|"+row["Concept"].replace(coreprefix+":",curns+str(row["Core Property?"]).lower()+"/")+"\n\n"
                                 if row["Core Property?"]!="":
                                     prefixtoproperties[row["Core Property?"]].append(row["Concept"].replace(coreprefix+":",curns+str(row["Core Property?"]).lower()+"/").replace("geosrs:","").replace("geoprojection:",""))
@@ -601,7 +601,7 @@ for file in os.listdir(directory):
                             adocdef="===== Instance: "+str(row["Concept"])+"\n\n"
                             if "Description" in row and row["Description"]!="":
                                 adocdef+=row["Description"]+"\n\n"
-                            adocdef+="."+str(row["Concept"])+"\n[cols=\"1,1\"]\n|===\n"
+                            adocdef+="."+str(row["Concept"])+"\n[cols=\"1,1\",options=\"unnumbered\"]\n|===\n"
                             adocdef+="|URI\n|"+str(row["Concept"].replace(coreprefix+":",curns))+"\n\n"
                             core=True
                             prefixtoproperties["geosrs"].append(row["Concept"].replace(coreprefix+":",geocrsNS).replace("geoprojection:",""))
@@ -640,7 +640,7 @@ for file in os.listdir(directory):
                             adocdef="===== Instance: "+str(row["Concept"])+"\n\n"
                             if "Description" in row and row["Description"]!="":
                                 adocdef+=row["Description"]+"\n\n"
-                            adocdef+="."+str(row["Concept"])+"\n[cols=\"1,1\"]\n|===\n"
+                            adocdef+="."+str(row["Concept"])+"\n[cols=\"1,1\",options=\"unnumbered\"]\n|===\n"
                             adocdef+="|URI\n|"+str(row["Concept"].replace(coreprefix+":",curns))+"\n\n"
                             if row["Module"].lower() in exont:
                                 if row["Module"]!="":

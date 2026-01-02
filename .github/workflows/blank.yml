@@ -31,54 +31,39 @@ jobs:
       run: |
          python3 scripts/crsToTTL.py -a all
          python3 scripts/srsbuild.py
-         python scripts/processbibtex.py
-         mkdir docs
-         mkdir docs/spec
-         mkdir docs/respec
+         python3 scripts/processbibtex.py
+         mkdir -p docs/{spec,respec,application,alignments,core,co,cs,datum,projection,planet,examples,images}
          metanorma site generate --agree-to-terms -o docs/spec/
          asciidoctor spec/document.adoc --trace -T spec/templates/html5/ -o docs/respec/index.html
-         mv *.ttl docs/
-         mv context docs/
-         mv index.html docs/
-         mv examples.json docs/
+         mv *.ttl context index.html examples.json docs/
          cd docs
-         mkdir application
          pylode -o application/index.html -i application.ttl
          cp application.ttl _sources/app/ontology.ttl
          mv application.ttl application/
-         mkdir alignments
          pylode -o alignments/index.html -i alignments.ttl
          mv alignments.ttl alignments/
-         mkdir core
          cp index.ttl _sources/srs/ontology.ttl
          mv index.ttl core/
          cd core
          pylode -o index.html -i index.ttl
          cd ..
-         mkdir co
          pylode -o co/index.html -i co.ttl
          cp co.ttl _sources/co/ontology.ttl
          mv co.ttl co/
-         mkdir cs
          pylode -o cs/index.html -i cs.ttl
          cp cs.ttl _sources/cs/ontology.ttl
          mv cs.ttl cs/
-         mkdir datum
          pylode -o datum/index.html -i datum.ttl
          cp datum.ttl _sources/datum/ontology.ttl
          mv datum.ttl datum/
-         mkdir planet
          pylode -o planet/index.html -i planet.ttl
          cp planet.ttl _sources/planet/ontology.ttl
          mv planet.ttl planet/
-         mkdir projection
          pylode -o projection/index.html -i projection.ttl
          cp projection.ttl _sources/projection/ontology.ttl
          mv projection.ttl projection/
          rm objprop.ttl datatypeprop.ttl 
-         mkdir examples
          cp ../examples/* examples/
-         mkdir images
          cp ../images/* images/
          python3 ../scripts/htmlpostprocessing.py
     - name: Deploy 🚀

@@ -6,7 +6,7 @@ At present, we're simply working on documenting the benefits of a CRS ontology, 
       
 ## Definitions       
 **spatial reference system:** A spatial reference system (SRS) is a system for establishing spatial position. A spatial reference system can use geographic identifiers (place names, for example), coordinates (in which case it is a coordinate reference system), or identifiers with structured geometry (in which case it is a discrete global grid system). 
-
+ 
 **coordinate system:** A coordinate system is a set of mathematical rules for specifying how coordinates are to be assigned to points.
  
 **datum:**      

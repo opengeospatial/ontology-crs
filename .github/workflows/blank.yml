@@ -47,7 +47,7 @@ jobs:
          pylode -o index.html -i index.ttl
          cd ..
          pylode -o co/index.html -i co.ttl
-         python ../scripts/classtreedoc.py --input index.html
+         python ../scripts/classtreedoc.py --input index.html --output content.html
          mv co.ttl co/
          pylode -o cs/index.html -i cs.ttl
          mv cs.ttl cs/

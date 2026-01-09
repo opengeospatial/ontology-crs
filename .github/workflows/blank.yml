@@ -50,11 +50,15 @@ jobs:
          pylode -o co/index.html -i co.ttl
          cp co.ttl _sources/co/ontology.ttl
          mv co.ttl co/
+         mkdir _sources/co/tests/
+         touch co_rules.ttl && cp co_rules.ttl _sources/co/tests/shapes.shacl
          pylode -o cs/index.html -i cs.ttl
          cp cs.ttl _sources/cs/ontology.ttl
          mv cs.ttl cs/
          pylode -o datum/index.html -i datum.ttl
          cp datum.ttl _sources/datum/ontology.ttl
+         mkdir _sources/datum/tests/
+         touch datum_rules.ttl && cp datum_rules.ttl _sources/datum/tests/shapes.shacl
          mv datum.ttl datum/
          pylode -o planet/index.html -i planet.ttl
          cp planet.ttl _sources/planet/ontology.ttl

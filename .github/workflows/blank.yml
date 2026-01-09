@@ -30,10 +30,10 @@ jobs:
     - name: Create Ontology Documentation 🔧
       run: |
          python3 scripts/crsToTTL.py -a all
+         mkdir -p docs/{spec,respec,application,alignments,core,co,cs,datum,projection,planet,examples,images}
          python3 scripts/srsbuild.py
          python3 scripts/processbibtex.py
          wget -P scripts/ https://raw.githubusercontent.com/situx/widoco_classtree/refs/heads/master/classtreedoc.py
-         mkdir -p docs/{spec,respec,application,alignments,core,co,cs,datum,projection,planet,examples,images}
          metanorma site generate --agree-to-terms -o docs/spec/
          asciidoctor spec/document.adoc --trace -T spec/templates/html5/ -o docs/respec/index.html
          mv *.ttl context index.html examples.json docs/

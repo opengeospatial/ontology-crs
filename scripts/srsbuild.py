@@ -162,8 +162,8 @@ def convertCSVToSHACLAndADoc():
                         adocdef+="\n\n"
                     shapecounter+=1
                 adocdef+="|===\n\n"
-            os.makedirs(str(filename[0:filename.rfind(".")]),exist_ok=True)
-            curshaclres.serialize(str(filename[0:filename.rfind(".")])+"_rules.ttl",format="ttl")
+            #os.makedirs(str(filename[0:filename.rfind(".")]),exist_ok=True)
+            curshaclres.serialize("docs/"+str(filename[0:filename.rfind(".")]+"/"+str(filename[0:filename.rfind(".")])+"/"+str(filename[0:filename.rfind(".")])+"_rules.ttl",format="ttl")
     with open("spec/sections/ac-shacl_shapes.adoc", 'r',encoding="utf-8") as f:
         ashaclshapes=f.read()
     with open("spec/sections/ac-shacl_shapes.adoc", 'w',encoding="utf-8") as f:

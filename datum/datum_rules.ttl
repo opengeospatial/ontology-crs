@@ -1,0 +1,14 @@
+@prefix geosrs: <https://w3id.org/geosrs/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+geosrs:ParametricDatumShape a sh:NodeShape ;
+    rdfs:label "CRS Ontology Shape S1"@en ;
+    sh:property geosrs:ParametricDatumShape_Property ;
+    sh:targetNode geosrs:ParametricDatum .
+
+geosrs:ParametricDatumShape_Property sh:class geosrs:DefiningParameter ;
+    sh:message "A parametric datum should have at least one defining parameter"@en ;
+    sh:minCount 1 .
+

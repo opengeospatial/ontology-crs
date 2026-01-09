@@ -110,10 +110,15 @@ def convertCSVToSHACLAndADoc():
         filename = os.fsdecode(file)
         shapecounter=1
         if filename.endswith(".csv"):
+            curshaclres=Graph()
+            curshaclres.bind("geosrs", "https://w3id.org/geosrs/") 
+            curshaclres.bind("sh","http://www.w3.org/ns/shacl#")
+            curshaclres.bind("sf","http://www.opengis.net/ont/sf#")
+            curshaclres.bind("rdf","http://www.w3.org/1999/02/22-rdf-syntax-ns#")
             with open(abspath+filename, newline='') as csvfile:
                 reader = csv.DictReader(csvfile)
                 adocdef+="===== SHACL Shapes: "+str(filename).replace(".csv","").capitalize()+"\n\n"
-                adocdef+="."+str(filename).replace(".csv","").capitalize()+"\n[cols=\"7*\",options=\"unnumbered\"]\n|===\n"
+                adocdef+="."+str(filename).replace(".csv","").capitalize()+"\n[cols=\"7*\"]\n|===\n"
                 adocdef+="|Label|TargetNode|Property|Class|MinCount|MaxCount|Comment\n\n"
                 for row in reader:
                     if "Concept" in row and row["Concept"]!="":
@@ -123,32 +128,41 @@ def convertCSVToSHACLAndADoc():
                         shaclres.add((URIRef(shapeuri),URIRef("http://www.w3.org/2000/01/rdf-schema#label"),Literal("CRS Ontology Shape S"+str(shapecounter),lang="en")))
                         shaclres.add((URIRef(shapeuri),URIRef("http://www.w3.org/ns/shacl#targetNode"),URIRef(row["Concept"].replace("geosrs:","https://w3id.org/geosrs/"))))
                         shaclres.add((URIRef(shapeuri),URIRef("http://www.w3.org/ns/shacl#property"),URIRef(shapepropuri)))
+                        curshaclres.add((URIRef(shapeuri),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef("http://www.w3.org/ns/shacl#NodeShape")))
+                        curshaclres.add((URIRef(shapeuri),URIRef("http://www.w3.org/2000/01/rdf-schema#label"),Literal("CRS Ontology Shape S"+str(shapecounter),lang="en")))
+                        curshaclres.add((URIRef(shapeuri),URIRef("http://www.w3.org/ns/shacl#targetNode"),URIRef(row["Concept"].replace("geosrs:","https://w3id.org/geosrs/"))))
+                        curshaclres.add((URIRef(shapeuri),URIRef("http://www.w3.org/ns/shacl#property"),URIRef(shapepropuri)))
                         adocdef+="|Shape S"+str(shapecounter)+" "
                         adocdef+="|"+str(row["Concept"])+" "
                         adocdef+="|"+str(row["Property"])+" "
                         if "Class" in row and row["Class"]!="":
                             adocdef+="|"+str(row["Class"])+" "
                             shaclres.add((URIRef(shapepropuri),URIRef("http://www.w3.org/ns/shacl#class"),URIRef(str(row["Class"]).replace("geosrs:","https://w3id.org/geosrs/"))))
+                            curshaclres.add((URIRef(shapepropuri),URIRef("http://www.w3.org/ns/shacl#class"),URIRef(str(row["Class"]).replace("geosrs:","https://w3id.org/geosrs/"))))
                         else:
                             adocdef+="| - "
                         if "MinCount" in row and row["MinCount"]!="":
                             adocdef+="|"+str(row["MinCount"])+" "
                             shaclres.add((URIRef(shapepropuri),URIRef("http://www.w3.org/ns/shacl#minCount"),Literal(int(str(row["MinCount"])),datatype=XSD.integer)))
+                            curshaclres.add((URIRef(shapepropuri),URIRef("http://www.w3.org/ns/shacl#minCount"),Literal(int(str(row["MinCount"])),datatype=XSD.integer)))
                         else:
                             adocdef+="| - "
                         if "MaxCount" in row and row["MaxCount"]!="":
                             adocdef+="|"+str(row["MaxCount"])+" "
                             shaclres.add((URIRef(shapepropuri),URIRef("http://www.w3.org/ns/shacl#maxCount"),Literal(int(str(row["MaxCount"])),datatype=XSD.integer)))
+                            curshaclres.add((URIRef(shapepropuri),URIRef("http://www.w3.org/ns/shacl#maxCount"),Literal(int(str(row["MaxCount"])),datatype=XSD.integer)))
                         else:
                             adocdef+="| - "
                         if "Comment" in row and row["Comment"]!="":
                             adocdef+="|"+str(row["Comment"])+" "
                             shaclres.add((URIRef(shapepropuri),URIRef("http://www.w3.org/ns/shacl#message"),Literal(str(row["Comment"]),lang="en")))
+                            curshaclres.add((URIRef(shapepropuri),URIRef("http://www.w3.org/ns/shacl#message"),Literal(str(row["Comment"]),lang="en")))
                         else:
                             adocdef+="| - "
                         adocdef+="\n\n"
                     shapecounter+=1
                 adocdef+="|===\n\n"
+            curshaclres.serialize(str(filename[0:filename.rfind(".")])+"/"+str(filename[0:filename.rfind(".")])+"_rules.ttl",format="ttl"
     with open("spec/sections/ac-shacl_shapes.adoc", 'r',encoding="utf-8") as f:
         ashaclshapes=f.read()
     with open("spec/sections/ac-shacl_shapes.adoc", 'w',encoding="utf-8") as f:
@@ -304,7 +318,7 @@ for file in os.listdir(directory):
                         adocdef="===== Class: "+str(row["Concept"])+"\n\n"
                         if "Description" in row and row["Description"]!="":
                             adocdef+=row["Description"]+"\n\n"
-                        adocdef+="."+str(row["Concept"])+"\n[cols=\"1,1\",options=\"unnumbered\"]\n|===\n"
+                        adocdef+="."+str(row["Concept"])+"\n[cols=\"1,1\"]\n|===\n"
                         adocdef+="|Type\n|http://www.w3.org/2002/07/owl#Class[owl:Class]\n\n"
                         adocdef+="|URI\n|"+str(row["Concept"].replace(coreprefix+":",curns))+"\n\n"
                         core=True
@@ -364,7 +378,7 @@ for file in os.listdir(directory):
                         adocdef="===== Class: "+str(row["Concept"])+"\n\n"
                         if "Description" in row and row["Description"]!="":
                             adocdef+=row["Description"]+"\n\n"
-                        adocdef+="."+str(row["Concept"])+"\n[cols=\"1,1\",options=\"unnumbered\"]\n|===\n"
+                        adocdef+="."+str(row["Concept"])+"\n[cols=\"1,1\"]\n|===\n"
                         adocdef+="|URI\n|"+str(row["Concept"].replace(coreprefix+":",curns))+"[]\n\n"
                         prefixtoclasses[curprefix].append(row["Concept"].replace(curprefix+":",curns).replace("geosrs:","").replace("geoprojection:",""))
                         classToPrefix[row["Concept"]]={"prefix":curprefix, "ns":curns}
@@ -459,7 +473,7 @@ for file in os.listdir(directory):
                             adocdef="===== Property: "+str(row["Concept"])+"\n\n"
                             if "Description" in row and row["Description"]!="":
                                 adocdef+=row["Description"]+"\n\n"
-                            adocdef+="."+str(row["Concept"])+"\n[cols=\"1,1\",options=\"unnumbered\"]\n|===\n"
+                            adocdef+="."+str(row["Concept"])+"\n[cols=\"1,1\"]\n|===\n"
                             adocdef+="|URI\n|"+str(row["Concept"].replace(coreprefix+":",curns))+"\n\n"
                             core=True
                             prefixtoproperties["geosrs"].append(row["Concept"].replace(curprefix+":",curns).replace("geosrs:","").replace("geoprojection:",""))
@@ -520,7 +534,7 @@ for file in os.listdir(directory):
                                 adocdef="===== Property: "+str(row["Concept"])+"\n\n"
                                 if "Description" in row and row["Description"]!="":
                                     adocdef+=row["Description"]+"\n\n"
-                                adocdef+="."+str(row["Concept"])+"\n[cols=\"1,1\",options=\"unnumbered\"]\n|===\n"
+                                adocdef+="."+str(row["Concept"])+"\n[cols=\"1,1\"]\n|===\n"
                                 adocdef+="|URI\n|"+row["Concept"].replace(coreprefix+":",curns+str(row["Core Property?"]).lower()+"/")+"\n\n"
                                 if row["Core Property?"]!="":
                                     prefixtoproperties[row["Core Property?"]].append(row["Concept"].replace(coreprefix+":",curns+str(row["Core Property?"]).lower()+"/").replace("geosrs:","").replace("geoprojection:",""))
@@ -601,7 +615,7 @@ for file in os.listdir(directory):
                             adocdef="===== Instance: "+str(row["Concept"])+"\n\n"
                             if "Description" in row and row["Description"]!="":
                                 adocdef+=row["Description"]+"\n\n"
-                            adocdef+="."+str(row["Concept"])+"\n[cols=\"1,1\",options=\"unnumbered\"]\n|===\n"
+                            adocdef+="."+str(row["Concept"])+"\n[cols=\"1,1\"]\n|===\n"
                             adocdef+="|URI\n|"+str(row["Concept"].replace(coreprefix+":",curns))+"\n\n"
                             core=True
                             prefixtoproperties["geosrs"].append(row["Concept"].replace(coreprefix+":",geocrsNS).replace("geoprojection:",""))
@@ -640,7 +654,7 @@ for file in os.listdir(directory):
                             adocdef="===== Instance: "+str(row["Concept"])+"\n\n"
                             if "Description" in row and row["Description"]!="":
                                 adocdef+=row["Description"]+"\n\n"
-                            adocdef+="."+str(row["Concept"])+"\n[cols=\"1,1\",options=\"unnumbered\"]\n|===\n"
+                            adocdef+="."+str(row["Concept"])+"\n[cols=\"1,1\"]\n|===\n"
                             adocdef+="|URI\n|"+str(row["Concept"].replace(coreprefix+":",curns))+"\n\n"
                             if row["Module"].lower() in exont:
                                 if row["Module"]!="":

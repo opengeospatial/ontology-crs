@@ -32,6 +32,7 @@ jobs:
          python3 scripts/crsToTTL.py -a all
          python3 scripts/srsbuild.py
          python3 scripts/processbibtex.py
+         wget -P scripts/ https://raw.githubusercontent.com/situx/widoco_classtree/refs/heads/master/classtreedoc.py
          mkdir -p docs/{spec,respec,application,alignments,core,co,cs,datum,projection,planet,examples,images}
          metanorma site generate --agree-to-terms -o docs/spec/
          asciidoctor spec/document.adoc --trace -T spec/templates/html5/ -o docs/respec/index.html
@@ -46,6 +47,7 @@ jobs:
          pylode -o index.html -i index.ttl
          cd ..
          pylode -o co/index.html -i co.ttl
+         python ../scripts/classtreedoc.py --input index.html --output index.html
          mv co.ttl co/
          pylode -o cs/index.html -i cs.ttl
          mv cs.ttl cs/

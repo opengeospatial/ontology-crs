@@ -1,0 +1,314 @@
+{
+  "modified": "2026-01-12T23:26:09.806477",
+  "tooling": {
+    "bblocks-postprocess": {
+      "commitId": "\"975c18d033f68051d0afbaddb045f4af6d0880ee",
+      "shortCommitId": "\"975c18",
+      "date": "2026-01-07T14:34:55+00:00\""
+    }
+  },
+  "gitRepository": "https://github.com/opengeospatial/ontology-crs",
+  "gitHubRepository": "https://github.com/opengeospatial/ontology-crs/blob/master/",
+  "name": "workspace",
+  "baseURL": "https://opengeospatial.github.io/ontology-crs/",
+  "viewerURL": "https://opengeospatial.github.io/ontology-crs/",
+  "validationReport": "https://opengeospatial.github.io/ontology-crs/build/tests/report.html",
+  "validationReportJson": "https://opengeospatial.github.io/ontology-crs/build/tests/report.json",
+  "bblocks": [
+    {
+      "itemIdentifier": "ogc.app",
+      "$schema": "metaschema.yaml",
+      "name": "SRS Ontology - Application module",
+      "highlighted": true,
+      "abstract": "A building block defining SRS Ontology Application Module",
+      "status": "under-development",
+      "dateTimeAddition": "2023-04-05T00:00:00Z",
+      "itemClass": "model",
+      "register": "geosrs",
+      "version": "0.1",
+      "dateOfLastChange": "2026-01-12",
+      "sources": [
+        {
+          "title": "Sample source document",
+          "link": "https://example.com/sources/1"
+        }
+      ],
+      "maturity": "mature",
+      "scope": "unstable",
+      "tags": [
+        "geosrs"
+      ],
+      "shaclShapes": {},
+      "sourceFiles": "https://opengeospatial.github.io/ontology-crs/_sources/app/",
+      "rdfData": [],
+      "validationPassed": true,
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://opengeospatial.github.io/ontology-crs/build/generateddocs/markdown/app/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://opengeospatial.github.io/ontology-crs/build/generateddocs/json-full/app/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://opengeospatial.github.io/ontology-crs/bblock/ogc.app"
+        }
+      }
+    },
+    {
+      "itemIdentifier": "ogc.co",
+      "$schema": "metaschema.yaml",
+      "name": "SRS Ontology - Coordinate Operation module",
+      "highlighted": true,
+      "abstract": "A building block defining SRS Ontology Coordinate Operation Module",
+      "status": "under-development",
+      "dateTimeAddition": "2023-04-05T00:00:00Z",
+      "itemClass": "model",
+      "register": "geosrs",
+      "version": "0.1",
+      "dateOfLastChange": "2026-01-12",
+      "sources": [
+        {
+          "title": "Sample source document",
+          "link": "https://example.com/sources/1"
+        }
+      ],
+      "maturity": "mature",
+      "scope": "unstable",
+      "tags": [
+        "geosrs"
+      ],
+      "shaclShapes": {},
+      "sourceFiles": "https://opengeospatial.github.io/ontology-crs/_sources/co/",
+      "rdfData": [],
+      "validationPassed": true,
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://opengeospatial.github.io/ontology-crs/build/generateddocs/markdown/co/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://opengeospatial.github.io/ontology-crs/build/generateddocs/json-full/co/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://opengeospatial.github.io/ontology-crs/bblock/ogc.co"
+        }
+      }
+    },
+    {
+      "itemIdentifier": "ogc.cs",
+      "$schema": "metaschema.yaml",
+      "name": "SRS Ontology - Coordinate System module",
+      "highlighted": true,
+      "abstract": "A building block defining SRS Ontology Coordinate System Module",
+      "status": "under-development",
+      "dateTimeAddition": "2023-04-05T00:00:00Z",
+      "itemClass": "model",
+      "register": "geosrs",
+      "version": "0.1",
+      "dateOfLastChange": "2026-01-12",
+      "sources": [
+        {
+          "title": "Sample source document",
+          "link": "https://example.com/sources/1"
+        }
+      ],
+      "maturity": "mature",
+      "scope": "unstable",
+      "tags": [
+        "geosrs"
+      ],
+      "shaclShapes": {},
+      "sourceFiles": "https://opengeospatial.github.io/ontology-crs/_sources/cs/",
+      "rdfData": [],
+      "validationPassed": true,
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://opengeospatial.github.io/ontology-crs/build/generateddocs/markdown/cs/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://opengeospatial.github.io/ontology-crs/build/generateddocs/json-full/cs/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://opengeospatial.github.io/ontology-crs/bblock/ogc.cs"
+        }
+      }
+    },
+    {
+      "itemIdentifier": "ogc.datum",
+      "$schema": "metaschema.yaml",
+      "name": "SRS Ontology - Datum module",
+      "highlighted": true,
+      "abstract": "A building block defining SRS Ontology Datum Module",
+      "status": "under-development",
+      "dateTimeAddition": "2023-04-05T00:00:00Z",
+      "itemClass": "model",
+      "register": "geosrs",
+      "version": "0.1",
+      "dateOfLastChange": "2026-01-12",
+      "sources": [
+        {
+          "title": "Sample source document",
+          "link": "https://example.com/sources/1"
+        }
+      ],
+      "maturity": "mature",
+      "scope": "unstable",
+      "tags": [
+        "geosrs"
+      ],
+      "shaclShapes": {},
+      "sourceFiles": "https://opengeospatial.github.io/ontology-crs/_sources/datum/",
+      "rdfData": [],
+      "validationPassed": true,
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://opengeospatial.github.io/ontology-crs/build/generateddocs/markdown/datum/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://opengeospatial.github.io/ontology-crs/build/generateddocs/json-full/datum/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://opengeospatial.github.io/ontology-crs/bblock/ogc.datum"
+        }
+      }
+    },
+    {
+      "itemIdentifier": "ogc.planet",
+      "$schema": "metaschema.yaml",
+      "name": "SRS Ontology - Planet module",
+      "highlighted": true,
+      "abstract": "A building block defining SRS Ontology Planet Module",
+      "status": "under-development",
+      "dateTimeAddition": "2023-04-05T00:00:00Z",
+      "itemClass": "model",
+      "register": "geosrs",
+      "version": "0.1",
+      "dateOfLastChange": "2026-01-12",
+      "sources": [
+        {
+          "title": "Sample source document",
+          "link": "https://example.com/sources/1"
+        }
+      ],
+      "maturity": "mature",
+      "scope": "unstable",
+      "tags": [
+        "geosrs"
+      ],
+      "shaclShapes": {},
+      "sourceFiles": "https://opengeospatial.github.io/ontology-crs/_sources/planet/",
+      "rdfData": [],
+      "validationPassed": true,
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://opengeospatial.github.io/ontology-crs/build/generateddocs/markdown/planet/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://opengeospatial.github.io/ontology-crs/build/generateddocs/json-full/planet/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://opengeospatial.github.io/ontology-crs/bblock/ogc.planet"
+        }
+      }
+    },
+    {
+      "itemIdentifier": "ogc.projection",
+      "$schema": "metaschema.yaml",
+      "name": "SRS Ontology - Projection module",
+      "highlighted": true,
+      "abstract": "A building block defining SRS Ontology Projection Module",
+      "status": "under-development",
+      "dateTimeAddition": "2023-04-05T00:00:00Z",
+      "itemClass": "model",
+      "register": "geosrs",
+      "version": "0.1",
+      "dateOfLastChange": "2026-01-12",
+      "sources": [
+        {
+          "title": "Sample source document",
+          "link": "https://example.com/sources/1"
+        }
+      ],
+      "maturity": "mature",
+      "scope": "unstable",
+      "tags": [
+        "geosrs"
+      ],
+      "shaclShapes": {},
+      "sourceFiles": "https://opengeospatial.github.io/ontology-crs/_sources/projection/",
+      "rdfData": [],
+      "validationPassed": true,
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://opengeospatial.github.io/ontology-crs/build/generateddocs/markdown/projection/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://opengeospatial.github.io/ontology-crs/build/generateddocs/json-full/projection/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://opengeospatial.github.io/ontology-crs/bblock/ogc.projection"
+        }
+      }
+    },
+    {
+      "itemIdentifier": "ogc.srs",
+      "$schema": "metaschema.yaml",
+      "name": "SRS Core Ontology",
+      "highlighted": true,
+      "abstract": "A building block defining the SRS Core Ontology",
+      "status": "under-development",
+      "dateTimeAddition": "2023-04-05T00:00:00Z",
+      "itemClass": "model",
+      "register": "geosrs",
+      "version": "0.1",
+      "dateOfLastChange": "2026-01-12",
+      "sources": [
+        {
+          "title": "Sample source document",
+          "link": "https://example.com/sources/1"
+        }
+      ],
+      "maturity": "mature",
+      "scope": "unstable",
+      "tags": [
+        "geosrs"
+      ],
+      "shaclShapes": {},
+      "sourceFiles": "https://opengeospatial.github.io/ontology-crs/_sources/srs/",
+      "rdfData": [],
+      "validationPassed": true,
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://opengeospatial.github.io/ontology-crs/build/generateddocs/markdown/srs/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://opengeospatial.github.io/ontology-crs/build/generateddocs/json-full/srs/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://opengeospatial.github.io/ontology-crs/bblock/ogc.srs"
+        }
+      }
+    }
+  ],
+  "remoteCacheDir": "https://opengeospatial.github.io/ontology-crs/build/annotated/_cache"
+}

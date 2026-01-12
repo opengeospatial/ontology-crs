@@ -1,0 +1,34 @@
+
+
+{
+  "itemIdentifier": "ogc.projection",
+  "$schema": "metaschema.yaml",
+  "name": "SRS Ontology - Projection module",
+  "highlighted": true,
+  "abstract": "A building block defining SRS Ontology Projection Module",
+  "status": "under-development",
+  "dateTimeAddition": "2023-04-05T00:00:00Z",
+  "itemClass": "model",
+  "register": "geosrs",
+  "version": "0.1",
+  "dateOfLastChange": "2026-01-12",
+  "sources": [
+    {
+      "title": "Sample source document",
+      "link": "https://example.com/sources/1"
+    }
+  ],
+  "maturity": "mature",
+  "scope": "unstable",
+  "tags": [
+    "geosrs"
+  ],
+  "shaclShapes": {},
+  "sourceFiles": "https://opengeospatial.github.io/ontology-crs/_sources/projection/",
+  "rdfData": [],
+  "validationPassed": true,
+  "description": "## SRS Ontology Coordinate System Module\n\nThis module describes how to model a projection system using the SRS ontology vocabulary.\n\nProjection classes and properties are described under the namespace https://w3id.org/geosrs/projection/\n\n![SRS Ontology Projection Module](assets/projection.png)\n\n\n\n",
+  "annotatedSchema": null,
+  "gitRepository": "https://github.com/opengeospatial/ontology-crs",
+  "gitPath": "_sources/projection"
+}

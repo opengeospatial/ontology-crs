@@ -1,0 +1,34 @@
+
+
+{
+  "itemIdentifier": "ogc.co",
+  "$schema": "metaschema.yaml",
+  "name": "SRS Ontology - Coordinate Operation module",
+  "highlighted": true,
+  "abstract": "A building block defining SRS Ontology Coordinate Operation Module",
+  "status": "under-development",
+  "dateTimeAddition": "2023-04-05T00:00:00Z",
+  "itemClass": "model",
+  "register": "geosrs",
+  "version": "0.1",
+  "dateOfLastChange": "2026-01-12",
+  "sources": [
+    {
+      "title": "Sample source document",
+      "link": "https://example.com/sources/1"
+    }
+  ],
+  "maturity": "mature",
+  "scope": "unstable",
+  "tags": [
+    "geosrs"
+  ],
+  "shaclShapes": {},
+  "sourceFiles": "https://opengeospatial.github.io/ontology-crs/_sources/co/",
+  "rdfData": [],
+  "validationPassed": true,
+  "description": "## SRS Ontology Coordinate Operation Module\n\nThis module describes how to model a planetary entity using the SRS ontology vocabulary.\n\nCoordinate Operation classes and properties are described under the namespace https://w3id.org/geosrs/co/\n\n![SRS Ontology Coordinate Operation Module](assets/co.png)",
+  "annotatedSchema": null,
+  "gitRepository": "https://github.com/opengeospatial/ontology-crs",
+  "gitPath": "_sources/co"
+}

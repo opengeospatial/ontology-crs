@@ -1,0 +1,108 @@
+{
+  "summary": {
+    "total": 7,
+    "passed": 7,
+    "failed": 0,
+    "result": true
+  },
+  "bblocks": {
+    "ogc.app": {
+      "title": "Validation report for ogc.app - SRS Ontology - Application module",
+      "bblockName": "SRS Ontology - Application module",
+      "bblockId": "ogc.app",
+      "generated": "2026-01-12T23:26:09.951635+00:00",
+      "result": true,
+      "items": [],
+      "globalErrors": {},
+      "counts": {
+        "total": 0,
+        "passed": 0,
+        "failed": 0
+      }
+    },
+    "ogc.co": {
+      "title": "Validation report for ogc.co - SRS Ontology - Coordinate Operation module",
+      "bblockName": "SRS Ontology - Coordinate Operation module",
+      "bblockId": "ogc.co",
+      "generated": "2026-01-12T23:26:09.954976+00:00",
+      "result": true,
+      "items": [],
+      "globalErrors": {},
+      "counts": {
+        "total": 0,
+        "passed": 0,
+        "failed": 0
+      }
+    },
+    "ogc.cs": {
+      "title": "Validation report for ogc.cs - SRS Ontology - Coordinate System module",
+      "bblockName": "SRS Ontology - Coordinate System module",
+      "bblockId": "ogc.cs",
+      "generated": "2026-01-12T23:26:09.958302+00:00",
+      "result": true,
+      "items": [],
+      "globalErrors": {},
+      "counts": {
+        "total": 0,
+        "passed": 0,
+        "failed": 0
+      }
+    },
+    "ogc.datum": {
+      "title": "Validation report for ogc.datum - SRS Ontology - Datum module",
+      "bblockName": "SRS Ontology - Datum module",
+      "bblockId": "ogc.datum",
+      "generated": "2026-01-12T23:26:09.961617+00:00",
+      "result": true,
+      "items": [],
+      "globalErrors": {},
+      "counts": {
+        "total": 0,
+        "passed": 0,
+        "failed": 0
+      }
+    },
+    "ogc.planet": {
+      "title": "Validation report for ogc.planet - SRS Ontology - Planet module",
+      "bblockName": "SRS Ontology - Planet module",
+      "bblockId": "ogc.planet",
+      "generated": "2026-01-12T23:26:09.964947+00:00",
+      "result": true,
+      "items": [],
+      "globalErrors": {},
+      "counts": {
+        "total": 0,
+        "passed": 0,
+        "failed": 0
+      }
+    },
+    "ogc.projection": {
+      "title": "Validation report for ogc.projection - SRS Ontology - Projection module",
+      "bblockName": "SRS Ontology - Projection module",
+      "bblockId": "ogc.projection",
+      "generated": "2026-01-12T23:26:09.968677+00:00",
+      "result": true,
+      "items": [],
+      "globalErrors": {},
+      "counts": {
+        "total": 0,
+        "passed": 0,
+        "failed": 0
+      }
+    },
+    "ogc.srs": {
+      "title": "Validation report for ogc.srs - SRS Core Ontology",
+      "bblockName": "SRS Core Ontology",
+      "bblockId": "ogc.srs",
+      "generated": "2026-01-12T23:26:09.972075+00:00",
+      "result": true,
+      "items": [],
+      "globalErrors": {},
+      "counts": {
+        "total": 0,
+        "passed": 0,
+        "failed": 0
+      }
+    }
+  }
+}

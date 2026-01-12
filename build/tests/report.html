@@ -1,0 +1,241 @@
+
+
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Building Blocks validation report</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <style>
+            .entry-message {
+                white-space: pre-wrap;
+                font-size: 80%;
+                line-height: 1.1;
+            }
+            *[data-bs-toggle] .caret {
+                display: inline-block;
+                transform: rotate(90deg);
+                transition: transform 0.25s;
+            }
+            *[data-bs-toggle].collapsed .caret {
+                transform: rotate(0deg);
+            }
+            .highlighted {
+                animation: highlight-border 3500ms ease-out;
+            }
+            .highlighted h2 button {
+                animation: highlight 3500ms ease-out;
+            }
+            @keyframes highlight {
+                0% {
+                    background: #ffff90;
+                }
+                100% {
+                    background: var(--bs-accordion-active-bg);
+                }
+            }
+            @keyframes highlight-border {
+                0% {
+                    border-color: red;
+                    border-width: 2px;
+                }
+                100% {
+                    border-color: var(--bs-accordion-border-color);
+                    border-width: var(--bs-accordion-border-width);
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1 class="title">Building blocks validation report</h1>
+            <small class="datetime">Generated at 2026-01-12T23:26:09.985827+00:00</small>
+                <p class="summary fw-semibold text-success">
+                    Number of passing building blocks: 7 / 7 (100%)
+                </p>
+            <div class="text-end small" id="expand-collapse">
+                <a href="#" class="expand-all">Expand all</a>
+                <a href="#" class="collapse-all">Collapse all</a>
+            </div>
+                <div class="accordion mt-2" id="bblock-reports">
+                        <div class="accordion-item bblock-report" data-bblock-id="ogc.app" id="bblock-ogc.app">
+                            <h2 class="accordion-header bblock-title">
+                                <button class="accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#bblock-collapse-ogc\.app">
+                                    <div class="flex-fill">
+                                        SRS Ontology - Application module
+                                        <small class="ms-2 bblock-id">ogc.app</small>
+                                    </div>
+
+                                    <span class="badge text-bg-success me-2">
+                                            Passed
+                                            (no tests)
+                                    </span>
+                                </button>
+                            </h2>
+                            <div class="accordion-collapse collapse " id="bblock-collapse-ogc.app">
+                                <div class="accordion-body">
+                                        <div class="alert alert-info mb-0">No tests were found for this building block.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item bblock-report" data-bblock-id="ogc.co" id="bblock-ogc.co">
+                            <h2 class="accordion-header bblock-title">
+                                <button class="accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#bblock-collapse-ogc\.co">
+                                    <div class="flex-fill">
+                                        SRS Ontology - Coordinate Operation module
+                                        <small class="ms-2 bblock-id">ogc.co</small>
+                                    </div>
+
+                                    <span class="badge text-bg-success me-2">
+                                            Passed
+                                            (no tests)
+                                    </span>
+                                </button>
+                            </h2>
+                            <div class="accordion-collapse collapse " id="bblock-collapse-ogc.co">
+                                <div class="accordion-body">
+                                        <div class="alert alert-info mb-0">No tests were found for this building block.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item bblock-report" data-bblock-id="ogc.cs" id="bblock-ogc.cs">
+                            <h2 class="accordion-header bblock-title">
+                                <button class="accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#bblock-collapse-ogc\.cs">
+                                    <div class="flex-fill">
+                                        SRS Ontology - Coordinate System module
+                                        <small class="ms-2 bblock-id">ogc.cs</small>
+                                    </div>
+
+                                    <span class="badge text-bg-success me-2">
+                                            Passed
+                                            (no tests)
+                                    </span>
+                                </button>
+                            </h2>
+                            <div class="accordion-collapse collapse " id="bblock-collapse-ogc.cs">
+                                <div class="accordion-body">
+                                        <div class="alert alert-info mb-0">No tests were found for this building block.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item bblock-report" data-bblock-id="ogc.datum" id="bblock-ogc.datum">
+                            <h2 class="accordion-header bblock-title">
+                                <button class="accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#bblock-collapse-ogc\.datum">
+                                    <div class="flex-fill">
+                                        SRS Ontology - Datum module
+                                        <small class="ms-2 bblock-id">ogc.datum</small>
+                                    </div>
+
+                                    <span class="badge text-bg-success me-2">
+                                            Passed
+                                            (no tests)
+                                    </span>
+                                </button>
+                            </h2>
+                            <div class="accordion-collapse collapse " id="bblock-collapse-ogc.datum">
+                                <div class="accordion-body">
+                                        <div class="alert alert-info mb-0">No tests were found for this building block.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item bblock-report" data-bblock-id="ogc.planet" id="bblock-ogc.planet">
+                            <h2 class="accordion-header bblock-title">
+                                <button class="accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#bblock-collapse-ogc\.planet">
+                                    <div class="flex-fill">
+                                        SRS Ontology - Planet module
+                                        <small class="ms-2 bblock-id">ogc.planet</small>
+                                    </div>
+
+                                    <span class="badge text-bg-success me-2">
+                                            Passed
+                                            (no tests)
+                                    </span>
+                                </button>
+                            </h2>
+                            <div class="accordion-collapse collapse " id="bblock-collapse-ogc.planet">
+                                <div class="accordion-body">
+                                        <div class="alert alert-info mb-0">No tests were found for this building block.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item bblock-report" data-bblock-id="ogc.projection" id="bblock-ogc.projection">
+                            <h2 class="accordion-header bblock-title">
+                                <button class="accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#bblock-collapse-ogc\.projection">
+                                    <div class="flex-fill">
+                                        SRS Ontology - Projection module
+                                        <small class="ms-2 bblock-id">ogc.projection</small>
+                                    </div>
+
+                                    <span class="badge text-bg-success me-2">
+                                            Passed
+                                            (no tests)
+                                    </span>
+                                </button>
+                            </h2>
+                            <div class="accordion-collapse collapse " id="bblock-collapse-ogc.projection">
+                                <div class="accordion-body">
+                                        <div class="alert alert-info mb-0">No tests were found for this building block.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item bblock-report" data-bblock-id="ogc.srs" id="bblock-ogc.srs">
+                            <h2 class="accordion-header bblock-title">
+                                <button class="accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#bblock-collapse-ogc\.srs">
+                                    <div class="flex-fill">
+                                        SRS Core Ontology
+                                        <small class="ms-2 bblock-id">ogc.srs</small>
+                                    </div>
+
+                                    <span class="badge text-bg-success me-2">
+                                            Passed
+                                            (no tests)
+                                    </span>
+                                </button>
+                            </h2>
+                            <div class="accordion-collapse collapse " id="bblock-collapse-ogc.srs">
+                                <div class="accordion-body">
+                                        <div class="alert alert-info mb-0">No tests were found for this building block.</div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        <script type="text/javascript">
+            window.addEventListener('load', () => {
+                const accordionEntries = [...document.querySelectorAll('#bblock-reports .accordion-collapse')];
+                document.querySelector('#expand-collapse').addEventListener('click', ev => {
+                    ev.preventDefault();
+                    if (ev.target.matches('.expand-all')) {
+                        accordionEntries.forEach(e => e.classList.add('show'));
+                    } else if (ev.target.matches('.collapse-all')) {
+                        accordionEntries.forEach(e => e.classList.remove('show'));
+                    }
+                });
+                if (location.hash.startsWith('#bblock-')) {
+                    const highlight = document.querySelector(location.hash.replaceAll('.', '\\.'));
+                    if (highlight) {
+                        highlight.querySelector('.accordion-collapse').classList.add('show');
+                        highlight.classList.add('highlighted');
+                    }
+                }
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,13 @@
+$schema: https://raw.githubusercontent.com/opengeospatial/bblocks-postprocess/refs/heads/master/ogc/bblocks/schemas/examples.schema.yaml
+## Prefixes for examples
+prefixes:
+  mynamespace: https://w3id.org/example-data-srs#
+## List of examples
+examples:
+- title: Example
+
+  snippets:
+    - language: ttl
+      ref: examples/ellipsoidal2d.ttl
+    - language: ttl
+      ref: examples/cartesian2d.ttl

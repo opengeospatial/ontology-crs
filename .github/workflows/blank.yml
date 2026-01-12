@@ -30,9 +30,10 @@ jobs:
     - name: Create Ontology Documentation 🔧
       run: |
          python3 scripts/crsToTTL.py -a all
+         mkdir -p docs/{spec,respec,application,alignments,core,co,cs,datum,projection,planet,examples,images}
          python3 scripts/srsbuild.py
          python3 scripts/processbibtex.py
-         mkdir -p docs/{spec,respec,application,alignments,core,co,cs,datum,projection,planet,examples,images}
+         wget -P scripts/ https://raw.githubusercontent.com/situx/widoco_classtree/refs/heads/master/classtreedoc.py
          metanorma site generate --agree-to-terms -o docs/spec/
          asciidoctor spec/document.adoc --trace -T spec/templates/html5/ -o docs/respec/index.html
          mv *.ttl context index.html examples.json docs/
@@ -49,6 +50,7 @@ jobs:
          cd ..
          pylode -o co/index.html -i co.ttl
          cp co.ttl _sources/co/ontology.ttl
+         python ../scripts/classtreedoc.py --input co/index.html --output co/content.html
          mv co.ttl co/
          mkdir _sources/co/tests/
          touch co_rules.ttl && cp co_rules.ttl _sources/co/tests/shapes.shacl

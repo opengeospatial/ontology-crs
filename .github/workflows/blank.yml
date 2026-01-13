@@ -39,7 +39,7 @@ jobs:
          mv *.ttl context index.html examples.json docs/
          cd docs
          pylode -o application/index.html -i application.ttl
-         cp application.ttl _sources/app/ontology.ttl
+         cp application.ttl ../_sources/app/ontology.ttl
          mv application.ttl application/
          pylode -o alignments/index.html -i alignments.ttl
          mv alignments.ttl alignments/

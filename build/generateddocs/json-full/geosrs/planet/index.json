@@ -1,0 +1,34 @@
+
+
+{
+  "itemIdentifier": "ogc.geosrs.planet",
+  "$schema": "metaschema.yaml",
+  "name": "SRS Ontology - Planet module",
+  "highlighted": true,
+  "abstract": "A building block defining SRS Ontology Planet Module",
+  "status": "under-development",
+  "dateTimeAddition": "2023-04-05T00:00:00Z",
+  "itemClass": "model",
+  "register": "geosrs",
+  "version": "0.1",
+  "dateOfLastChange": "2026-01-13",
+  "sources": [
+    {
+      "title": "Sample source document",
+      "link": "https://example.com/sources/1"
+    }
+  ],
+  "maturity": "mature",
+  "scope": "unstable",
+  "tags": [
+    "geosrs"
+  ],
+  "shaclShapes": {},
+  "sourceFiles": "https://opengeospatial.github.io/ontology-crs/_sources/planet/",
+  "rdfData": [],
+  "validationPassed": true,
+  "description": "## SRS Ontology Planet Module\n\nThis module describes how to model a planetary entity using the SRS ontology vocabulary.\n\nPlanet classes and properties are described under the namespace https://w3id.org/geosrs/planet/\n\n![SRS Ontology Planet Module](assets/planet.png)",
+  "annotatedSchema": null,
+  "gitRepository": "https://github.com/opengeospatial/ontology-crs",
+  "gitPath": "_sources/planet"
+}

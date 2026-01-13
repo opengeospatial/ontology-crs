@@ -6,11 +6,11 @@
     "result": true
   },
   "bblocks": {
-    "ogc.app": {
-      "title": "Validation report for ogc.app - SRS Ontology - Application module",
+    "ogc.geosrs.app": {
+      "title": "Validation report for ogc.geosrs.app - SRS Ontology - Application module",
       "bblockName": "SRS Ontology - Application module",
-      "bblockId": "ogc.app",
-      "generated": "2026-01-13T09:06:05.692315+00:00",
+      "bblockId": "ogc.geosrs.app",
+      "generated": "2026-01-13T09:26:11.545857+00:00",
       "result": true,
       "items": [],
       "globalErrors": {},
@@ -20,11 +20,11 @@
         "failed": 0
       }
     },
-    "ogc.co": {
-      "title": "Validation report for ogc.co - SRS Ontology - Coordinate Operation module",
+    "ogc.geosrs.co": {
+      "title": "Validation report for ogc.geosrs.co - SRS Ontology - Coordinate Operation module",
       "bblockName": "SRS Ontology - Coordinate Operation module",
-      "bblockId": "ogc.co",
-      "generated": "2026-01-13T09:06:05.696127+00:00",
+      "bblockId": "ogc.geosrs.co",
+      "generated": "2026-01-13T09:26:11.549468+00:00",
       "result": true,
       "items": [],
       "globalErrors": {},
@@ -34,11 +34,11 @@
         "failed": 0
       }
     },
-    "ogc.cs": {
-      "title": "Validation report for ogc.cs - SRS Ontology - Coordinate System module",
+    "ogc.geosrs.cs": {
+      "title": "Validation report for ogc.geosrs.cs - SRS Ontology - Coordinate System module",
       "bblockName": "SRS Ontology - Coordinate System module",
-      "bblockId": "ogc.cs",
-      "generated": "2026-01-13T09:06:05.700106+00:00",
+      "bblockId": "ogc.geosrs.cs",
+      "generated": "2026-01-13T09:26:11.553046+00:00",
       "result": true,
       "items": [],
       "globalErrors": {},
@@ -48,11 +48,11 @@
         "failed": 0
       }
     },
-    "ogc.datum": {
-      "title": "Validation report for ogc.datum - SRS Ontology - Datum module",
+    "ogc.geosrs.datum": {
+      "title": "Validation report for ogc.geosrs.datum - SRS Ontology - Datum module",
       "bblockName": "SRS Ontology - Datum module",
-      "bblockId": "ogc.datum",
-      "generated": "2026-01-13T09:06:05.703815+00:00",
+      "bblockId": "ogc.geosrs.datum",
+      "generated": "2026-01-13T09:26:11.556425+00:00",
       "result": true,
       "items": [],
       "globalErrors": {},
@@ -62,11 +62,11 @@
         "failed": 0
       }
     },
-    "ogc.planet": {
-      "title": "Validation report for ogc.planet - SRS Ontology - Planet module",
+    "ogc.geosrs.planet": {
+      "title": "Validation report for ogc.geosrs.planet - SRS Ontology - Planet module",
       "bblockName": "SRS Ontology - Planet module",
-      "bblockId": "ogc.planet",
-      "generated": "2026-01-13T09:06:05.707534+00:00",
+      "bblockId": "ogc.geosrs.planet",
+      "generated": "2026-01-13T09:26:11.559867+00:00",
       "result": true,
       "items": [],
       "globalErrors": {},
@@ -76,11 +76,11 @@
         "failed": 0
       }
     },
-    "ogc.projection": {
-      "title": "Validation report for ogc.projection - SRS Ontology - Projection module",
+    "ogc.geosrs.projection": {
+      "title": "Validation report for ogc.geosrs.projection - SRS Ontology - Projection module",
       "bblockName": "SRS Ontology - Projection module",
-      "bblockId": "ogc.projection",
-      "generated": "2026-01-13T09:06:05.711845+00:00",
+      "bblockId": "ogc.geosrs.projection",
+      "generated": "2026-01-13T09:26:11.563415+00:00",
       "result": true,
       "items": [],
       "globalErrors": {},
@@ -90,11 +90,11 @@
         "failed": 0
       }
     },
-    "ogc.srs": {
-      "title": "Validation report for ogc.srs - SRS Core Ontology",
+    "ogc.geosrs.srs": {
+      "title": "Validation report for ogc.geosrs.srs - SRS Core Ontology",
       "bblockName": "SRS Core Ontology",
-      "bblockId": "ogc.srs",
-      "generated": "2026-01-13T09:06:05.715377+00:00",
+      "bblockId": "ogc.geosrs.srs",
+      "generated": "2026-01-13T09:26:11.566868+00:00",
       "result": true,
       "items": [],
       "globalErrors": {},

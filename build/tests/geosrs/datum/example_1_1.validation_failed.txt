@@ -1,0 +1,11 @@
+Validation report for ogc.geosrs.datum - SRS Ontology - Datum module
+Generated 2026-01-13T13:41:19.249665+00:00
+=== Turtle ===
+Prefixes are defined for mynamespace
+
+** Validation error **
+at line 7 of <>:
+Bad syntax (Prefix "geosrs:" not bound) at ^ in:
+"...b'tps://w3id.org/example-data-srs#> .\n\nexsrs:mydatum rdf:type '^b'geosrs:GeodeticDatum ;\n              rdfs:label "European Da'..."
+=== End Turtle ===
+

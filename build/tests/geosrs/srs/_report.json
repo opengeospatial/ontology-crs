@@ -2,13 +2,43 @@
   "title": "Validation report for ogc.geosrs.srs - SRS Core Ontology",
   "bblockName": "SRS Core Ontology",
   "bblockId": "ogc.geosrs.srs",
-  "generated": "2026-01-13T10:22:25.365202+00:00",
-  "result": true,
-  "items": [],
+  "generated": "2026-01-13T13:41:19.264279+00:00",
+  "result": false,
+  "items": [
+    {
+      "source": {
+        "type": "EXAMPLE",
+        "requireFail": false,
+        "filename": "build/tests/geosrs/srs/example_1_1.ttl",
+        "url": "https://opengeospatial.github.io/ontology-crs/build/tests/geosrs/srs/example_1_1.ttl",
+        "exampleIndex": 1,
+        "snippetIndex": 1,
+        "language": "text/turtle"
+      },
+      "result": false,
+      "sections": [
+        {
+          "name": "TURTLE",
+          "title": "Turtle",
+          "entries": [
+            {
+              "isError": false,
+              "message": "Prefixes are defined for mynamespace"
+            },
+            {
+              "exception": "BadSyntax",
+              "isError": true,
+              "message": "at line 9 of <>:\nBad syntax (Prefix \"ns1:\" not bound) at ^ in:\n\"...b'proj=utm +zone=32 +ellps=intl +units=m +no_defs +type=crs\"^^'^b'ns1:proj4Literal ;\\n    geosrs:asProjJSON \"{\\'$schema\\':\\'https:'...\""
+            }
+          ]
+        }
+      ]
+    }
+  ],
   "globalErrors": {},
   "counts": {
-    "total": 0,
+    "total": 1,
     "passed": 0,
-    "failed": 0
+    "failed": 1
   }
 }

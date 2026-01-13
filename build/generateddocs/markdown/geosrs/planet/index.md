@@ -16,6 +16,25 @@ This module describes how to model a planetary entity using the SRS ontology voc
 Planet classes and properties are described under the namespace https://w3id.org/geosrs/planet/
 
 ![SRS Ontology Planet Module](assets/planet.png)
+## Examples
+
+### SRS Ontology Planet Module Example
+#### ttl
+```ttl
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix geosrs_planet:<https://w3id.org/geosrs/planet/> .
+@prefix geosrs:<https://w3id.org/geosrs/srs/> .
+@prefix exsrs: <https://w3id.org/example-data-srs#> .
+
+exsrs:mysrs rdf:type geosrs:CRS .
+            geosrs_planet:isApplicableTo exsrs:myplanet .
+
+exsrs:myplanet rdf:type geosrs_planet:Planet ;
+               rdfs:label "My planet" .
+
+```
+
 ## Sources
 
 * [Sample source document](https://example.com/sources/1)

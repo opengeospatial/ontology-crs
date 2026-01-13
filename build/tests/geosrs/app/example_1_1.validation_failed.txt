@@ -1,0 +1,44 @@
+Validation report for ogc.geosrs.app - SRS Ontology - Application module
+Generated 2026-01-13T13:41:19.234712+00:00
+=== Turtle ===
+Prefixes are defined for mynamespace
+=== End Turtle ===
+
+=== Unknown errors ===
+
+** Validation error **
+Traceback (most recent call last):
+,  File "/src/ogc/bblocks/validate.py", line 198, in _validate_resource
+    result = validator.validate(filename, output_filename, report,
+,  File "/src/ogc/bblocks/validation/rdf.py", line 316, in validate
+    graph = self._load_graph(filename, output_filename, report,
+,  File "/src/ogc/bblocks/validation/rdf.py", line 285, in _load_graph
+    graph = Graph().parse(data=contents, format=rdf_format)
+,  File "/venv/lib/python3.10/site-packages/rdflib/graph.py", line 1494, in parse
+    parser.parse(source, self, **args)
+,  File "/venv/lib/python3.10/site-packages/rdflib/plugins/parsers/notation3.py", line 2021, in parse
+    p.loadStream(stream)
+,  File "/venv/lib/python3.10/site-packages/rdflib/plugins/parsers/notation3.py", line 479, in loadStream
+    return self.loadBuf(stream.read())  # Not ideal
+,  File "/venv/lib/python3.10/site-packages/rdflib/plugins/parsers/notation3.py", line 485, in loadBuf
+    self.feed(buf)
+,  File "/venv/lib/python3.10/site-packages/rdflib/plugins/parsers/notation3.py", line 511, in feed
+    i = self.directiveOrStatement(s, j)
+,  File "/venv/lib/python3.10/site-packages/rdflib/plugins/parsers/notation3.py", line 530, in directiveOrStatement
+    j = self.statement(argstr, i)
+,  File "/venv/lib/python3.10/site-packages/rdflib/plugins/parsers/notation3.py", line 778, in statement
+    j = self.property_list(argstr, i, r[0])
+,  File "/venv/lib/python3.10/site-packages/rdflib/plugins/parsers/notation3.py", line 1135, in property_list
+    j = self.verb(argstr, i, v)
+,  File "/venv/lib/python3.10/site-packages/rdflib/plugins/parsers/notation3.py", line 863, in verb
+    j = self.prop(argstr, i, r)
+,  File "/venv/lib/python3.10/site-packages/rdflib/plugins/parsers/notation3.py", line 874, in prop
+    return self.item(argstr, i, res)
+,  File "/venv/lib/python3.10/site-packages/rdflib/plugins/parsers/notation3.py", line 877, in item
+    return self.path(argstr, i, res)
+,  File "/venv/lib/python3.10/site-packages/rdflib/plugins/parsers/notation3.py", line 888, in path
+    while argstr[j] in {"!", "^"}:  # no spaces, must follow exactly (?)
+,IndexError: string index out of range
+
+=== End Unknown errors ===
+

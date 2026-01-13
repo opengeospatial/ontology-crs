@@ -19,6 +19,7 @@ jobs:
     uses: opengeospatial/bblocks-postprocess/.github/workflows/validate-and-process.yml@master
     with:
       skip-pages: true
+      viewer_path: "bblocks"
     secrets:
       sparql_username: ${{ secrets.sparql_username }}
       sparql_password: ${{ secrets.sparql_password }}

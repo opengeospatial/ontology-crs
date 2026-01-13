@@ -10,18 +10,18 @@
 
 <https://opengeospatial.github.io/ontology-crs/build/bblocks.ttl> a prov:Entity ;
     dct:format "text/turtle" ;
-    prov:wasAttributedTo _:Na317fe93b060406cb8d8c7d18663ef2e ;
+    prov:wasAttributedTo _:N5562ba132a614a019d153197d3ad10dc ;
     prov:wasGeneratedBy [ a prov:Activity ;
-            prov:endedAtTime "2026-01-12T23:26:10.065881"^^xsd:dateTime ;
-            prov:startedAtTime "2026-01-12T23:26:09.986661"^^xsd:dateTime ;
+            prov:endedAtTime "2026-01-13T09:06:05.813375"^^xsd:dateTime ;
+            prov:startedAtTime "2026-01-13T09:06:05.731073"^^xsd:dateTime ;
             prov:used [ a prov:Entity ;
                     dct:format "application/json" ;
-                    dct:hasVersion "git:d2ee9f0771127e88875b8d6ec2d2c9c231d9b9fd" ;
+                    dct:hasVersion "git:4d636486c9382a93a7eb4bae642f6f61253622ed" ;
                     rdfs:seeAlso <https://opengeospatial.github.io/ontology-crs/build/register.json> ],
                 [ a prov:Entity ;
                     dct:format "application/yaml" ;
                     rdfs:seeAlso <file:///src/ogc/bblocks/register-context.yaml> ] ;
-            prov:wasAssociatedWith _:Na317fe93b060406cb8d8c7d18663ef2e ] .
+            prov:wasAssociatedWith _:N5562ba132a614a019d153197d3ad10dc ] .
 
 <bblocks://ogc.app> a skos:Concept,
         dcat:Dataset,
@@ -29,14 +29,14 @@
     rdfs:label "SRS Ontology - Application module" ;
     dct:abstract "A building block defining SRS Ontology Application Module"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2023-04-05T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/html" ;
+    dct:description [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://opengeospatial.github.io/ontology-crs/build/generateddocs/json-full/app/index.json> ],
+        [ dct:format "text/html" ;
             rdfs:isDefinedBy <https://opengeospatial.github.io/ontology-crs/bblock/ogc.app> ],
         [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy <https://opengeospatial.github.io/ontology-crs/build/generateddocs/markdown/app/index.md> ],
-        [ dct:format "application/json" ;
-            rdfs:isDefinedBy <https://opengeospatial.github.io/ontology-crs/build/generateddocs/json-full/app/index.json> ] ;
+            rdfs:isDefinedBy <https://opengeospatial.github.io/ontology-crs/build/generateddocs/markdown/app/index.md> ] ;
     dct:hasVersion "0.1" ;
-    dct:modified "2026-01-12"^^xsd:date ;
+    dct:modified "2026-01-13"^^xsd:date ;
     dct:source <https://example.com/sources/1> ;
     skos:inScheme <https://opengeospatial.github.io/ontology-crs/> ;
     skos:prefLabel "SRS Ontology - Application module" ;
@@ -52,14 +52,14 @@
     rdfs:label "SRS Ontology - Coordinate Operation module" ;
     dct:abstract "A building block defining SRS Ontology Coordinate Operation Module"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2023-04-05T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/markdown" ;
+    dct:description [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://opengeospatial.github.io/ontology-crs/build/generateddocs/json-full/co/index.json> ],
+        [ dct:format "text/markdown" ;
             rdfs:isDefinedBy <https://opengeospatial.github.io/ontology-crs/build/generateddocs/markdown/co/index.md> ],
         [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://opengeospatial.github.io/ontology-crs/bblock/ogc.co> ],
-        [ dct:format "application/json" ;
-            rdfs:isDefinedBy <https://opengeospatial.github.io/ontology-crs/build/generateddocs/json-full/co/index.json> ] ;
+            rdfs:isDefinedBy <https://opengeospatial.github.io/ontology-crs/bblock/ogc.co> ] ;
     dct:hasVersion "0.1" ;
-    dct:modified "2026-01-12"^^xsd:date ;
+    dct:modified "2026-01-13"^^xsd:date ;
     dct:source <https://example.com/sources/1> ;
     skos:inScheme <https://opengeospatial.github.io/ontology-crs/> ;
     skos:prefLabel "SRS Ontology - Coordinate Operation module" ;
@@ -77,12 +77,12 @@
     dct:created "2023-04-05T00:00:00+00:00"^^xsd:dateTime ;
     dct:description [ dct:format "text/html" ;
             rdfs:isDefinedBy <https://opengeospatial.github.io/ontology-crs/bblock/ogc.cs> ],
-        [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy <https://opengeospatial.github.io/ontology-crs/build/generateddocs/markdown/cs/index.md> ],
         [ dct:format "application/json" ;
-            rdfs:isDefinedBy <https://opengeospatial.github.io/ontology-crs/build/generateddocs/json-full/cs/index.json> ] ;
+            rdfs:isDefinedBy <https://opengeospatial.github.io/ontology-crs/build/generateddocs/json-full/cs/index.json> ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://opengeospatial.github.io/ontology-crs/build/generateddocs/markdown/cs/index.md> ] ;
     dct:hasVersion "0.1" ;
-    dct:modified "2026-01-12"^^xsd:date ;
+    dct:modified "2026-01-13"^^xsd:date ;
     dct:source <https://example.com/sources/1> ;
     skos:inScheme <https://opengeospatial.github.io/ontology-crs/> ;
     skos:prefLabel "SRS Ontology - Coordinate System module" ;
@@ -105,7 +105,7 @@
         [ dct:format "text/markdown" ;
             rdfs:isDefinedBy <https://opengeospatial.github.io/ontology-crs/build/generateddocs/markdown/datum/index.md> ] ;
     dct:hasVersion "0.1" ;
-    dct:modified "2026-01-12"^^xsd:date ;
+    dct:modified "2026-01-13"^^xsd:date ;
     dct:source <https://example.com/sources/1> ;
     skos:inScheme <https://opengeospatial.github.io/ontology-crs/> ;
     skos:prefLabel "SRS Ontology - Datum module" ;
@@ -128,7 +128,7 @@
         [ dct:format "text/html" ;
             rdfs:isDefinedBy <https://opengeospatial.github.io/ontology-crs/bblock/ogc.planet> ] ;
     dct:hasVersion "0.1" ;
-    dct:modified "2026-01-12"^^xsd:date ;
+    dct:modified "2026-01-13"^^xsd:date ;
     dct:source <https://example.com/sources/1> ;
     skos:inScheme <https://opengeospatial.github.io/ontology-crs/> ;
     skos:prefLabel "SRS Ontology - Planet module" ;
@@ -144,14 +144,14 @@
     rdfs:label "SRS Ontology - Projection module" ;
     dct:abstract "A building block defining SRS Ontology Projection Module"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2023-04-05T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "application/json" ;
-            rdfs:isDefinedBy <https://opengeospatial.github.io/ontology-crs/build/generateddocs/json-full/projection/index.json> ],
-        [ dct:format "text/markdown" ;
+    dct:description [ dct:format "text/markdown" ;
             rdfs:isDefinedBy <https://opengeospatial.github.io/ontology-crs/build/generateddocs/markdown/projection/index.md> ],
         [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://opengeospatial.github.io/ontology-crs/bblock/ogc.projection> ] ;
+            rdfs:isDefinedBy <https://opengeospatial.github.io/ontology-crs/bblock/ogc.projection> ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://opengeospatial.github.io/ontology-crs/build/generateddocs/json-full/projection/index.json> ] ;
     dct:hasVersion "0.1" ;
-    dct:modified "2026-01-12"^^xsd:date ;
+    dct:modified "2026-01-13"^^xsd:date ;
     dct:source <https://example.com/sources/1> ;
     skos:inScheme <https://opengeospatial.github.io/ontology-crs/> ;
     skos:prefLabel "SRS Ontology - Projection module" ;
@@ -167,14 +167,14 @@
     rdfs:label "SRS Core Ontology" ;
     dct:abstract "A building block defining the SRS Core Ontology"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2023-04-05T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://opengeospatial.github.io/ontology-crs/bblock/ogc.srs> ],
-        [ dct:format "application/json" ;
+    dct:description [ dct:format "application/json" ;
             rdfs:isDefinedBy <https://opengeospatial.github.io/ontology-crs/build/generateddocs/json-full/srs/index.json> ],
         [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy <https://opengeospatial.github.io/ontology-crs/build/generateddocs/markdown/srs/index.md> ] ;
+            rdfs:isDefinedBy <https://opengeospatial.github.io/ontology-crs/build/generateddocs/markdown/srs/index.md> ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://opengeospatial.github.io/ontology-crs/bblock/ogc.srs> ] ;
     dct:hasVersion "0.1" ;
-    dct:modified "2026-01-12"^^xsd:date ;
+    dct:modified "2026-01-13"^^xsd:date ;
     dct:source <https://example.com/sources/1> ;
     skos:inScheme <https://opengeospatial.github.io/ontology-crs/> ;
     skos:prefLabel "SRS Core Ontology" ;
@@ -189,7 +189,7 @@
 <https://opengeospatial.github.io/ontology-crs/> a skos:ConceptScheme,
         dcat:Catalog ;
     rdfs:label "Building Blocks - workspace" ;
-    dct:modified "2026-01-12T23:26:09.806477"^^xsd:dateTime ;
+    dct:modified "2026-01-13T09:06:05.542230"^^xsd:dateTime ;
     skos:hasTopConcept <bblocks://ogc.app>,
         <bblocks://ogc.co>,
         <bblocks://ogc.cs>,
@@ -201,7 +201,7 @@
     foaf:homepage <https://opengeospatial.github.io/ontology-crs/> ;
     bblocks:hasValidationReport <https://opengeospatial.github.io/ontology-crs/build/tests/report.html> .
 
-_:Na317fe93b060406cb8d8c7d18663ef2e a prov:Agent,
+_:N5562ba132a614a019d153197d3ad10dc a prov:Agent,
         schema:SoftwareApplication ;
     rdfs:label "OGC-NA tools" ;
     dct:hasVersion "0.5.12" ;

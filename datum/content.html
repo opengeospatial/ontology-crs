@@ -1,0 +1,1403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>SRS Ontology: Geosrs_datum</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAC40lEQVRYhe2UT0hUQRzHp6Iss1B3VZKIDbbdfW9mnoi4f3zzjkJQeOgS0SEIb1EWBGGlLLu460zQPQM1unUIIjA6rfpm6ZAhHjoIRVQUFUlEbG+euTsdXG1d3VL3bVD4g+9h+L35fT/8fvN7ADgY9aHY5fpIvK82HO9ysu66wxWOzbkjcekKx0a2ALYA/n2AGi3a6ArFezcidziecQygNhhrcUficjP6PwBqtGijKxy/thnVBePHywYoDsFhl53GV8SEcsTx4usCMLUewTVpc23BNvEzm6Neyf1+KcG2vwqwUjgrOJq2JmHftwmkVBRGTvncFodnbI7vChO/FRznCmHsNM7aHM9Yk7Df5iqsLMw9sMNOK2g+jS4IEz0UJv4iuJZb2RltWnB4UZqH6ioGAgAAGe5vtiZhtzDx7OoRadLmeM7m6IRjhnLMW2Vx1bA5GhAmnhIcz6/xNj4Ujsky8UspwfayjDPjsF2Y6L7N8Vzx/BfP+KPg6LbgSqd8DnfJW2CnbaLhfH5ephpqygJYvQU4Z3P82TLRsDDhUTnmrSq+Y3N0Mg+Xldy/zwEAnLMWZ3pHpNExmfLs/t0dOdVcbT0JeKxUwFP2VljjqiE47Jp53LTXNxhsUZjerTByXWX6VZWRs/4bIQ2ACv+UAomgDzLCISNZxAxZKMhIDjLy1JfsaK+I+eGBUBNk5E2x8RogX/PdcDZUqieWTSh5D6nOVKqfhoycUmlHFFIyu5RXqf7AcQDISCpv/tqbMBqK883RtmpISRoxQyJKPgGn3wNk5NEigDFa6hslqV/Kj+FdBQD0bshIDlKSLlVcoWQo36UhR80BAMB73lulMn0EMpJTqD6qJiOt3mho/8GbkT2BZNgDB/V+RI0fkOrT3kRIVQbaDizJm2hdNbINBxwk5xAj3yEjuV9rZ1iIkgxixkLBA83mz8uCjLwoGwAx0vOnFSy5mtR4VTaAQvVORMnwZgSpzkrV/QmdE2tKe46+MQAAAABJRU5ErkJggg==">
+    <link rel="icon" type="image/png" sizes="16x16" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABhklEQVQ4jbWPzStEURjG3yQLirlGKUnKFO45Z+SjmXvnnmthQcpCoVhYmD/AwmJiI3OvZuZc2U3UlKU0/gAslMw9JgvhHxAr2fko7r0jHSsl+TgbTz2Lt5731/MASEiJW9ONml2QyX6rsGalmnT74v8BDf12hxJfpV8d1uwNKUBYszabdFv84L8B9X0rESVmmUup2fme0cVhJWaZHw4NWL1Sew
+EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ9Hn31OgoATL+CkLDGB5H1OKj4nFd/FBxUXJ0UZNb4edw/6nLyJXaj5FeCVyPLNIVmYK8TG1IwWb16L1gEACAFV90ftoT8bdOX0EeyY99gxBXZMgRz6qGb1KantAACI0UvE6F5XJqEjpsdURouI0Vt5gGOUkUNnPu7ObGIIMfNaGqDmjDRi9FZldF1lRgYzeqUyeoiY4ag5Iy3RgOYRM8+/M2bG8efsO4hGrpmJseyMAAAAAElFTkSuQmCC">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    
+    <style>
+        #pylode {
+            position: fixed;
+            top: 130px;
+            left: -60px;
+            font-size: small;
+            transform: rotate(-90deg);
+            color: grey;
+        }
+        #pylode a {
+            font-size: 2em;
+            font-weight: bold;
+            text-decoration: none;
+            color: #005A9C;
+        }
+        #pylode a:hover {
+            color: #333;
+        }
+
+        .cardinality {
+            font-style: italic;
+            color: #aa00aa;
+        }
+
+        dt {
+            font-weight: bold;
+            padding: 5px 0 5px 0;
+        }
+
+        ul.hlist {
+            list-style-type: none;
+            border: 1px solid navy;
+            padding:5px;
+            background-color: #F4FFFF;
+        }
+
+        ul.hierarchy {
+            border: 1px solid navy;
+            padding: 5px 25px 5px 25px;
+            background-color: #F4FFFF;
+        }
+
+
+        ul.hlist li {
+            display: inline;
+            margin-right: 10px;
+        }
+
+        .entity {
+            border: 1px solid navy;
+            margin:5px 0 5px 0;
+            padding: 5px;
+        }
+
+        .entity th {
+            width: 150px;
+            vertical-align: top;
+        }
+
+        .entity th,
+        .entity td {
+            padding-bottom: 20px;
+        }
+
+        .entity table th {
+            text-align: left;
+        }
+
+        section#overview img {
+            max-width: 1000px;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            text-align: left
+        }
+        h1, h2, h3 {
+            color: #005A9C; background: white
+        }
+        h1 {
+            font: 170% sans-serif;
+            line-height: 110%;
+        }
+        h2 {
+            font: 140% sans-serif;
+            margin-top:40px;
+        }
+        h3 {
+            font: 120% sans-serif;
+            margin-top: 3px;
+            padding-bottom: 5px;
+            border-bottom: 1px solid navy;
+        }
+        h4 { font: bold 100% sans-serif }
+        h5 { font: italic 100% sans-serif }
+        h6 { font: small-caps 100% sans-serif }
+
+
+        body {
+            padding: 2em 70px 2em 70px;
+            margin: 0;
+            font-family: sans-serif;
+            color: black;
+            background: white;
+            background-position: top left;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            text-align: justify;
+        }
+
+        section {
+            max-width: 1500px;
+        }
+
+        .figure {
+            margin-bottom: 20px;
+        }
+
+        :link { color: #00C; background: transparent }
+        :visited { color: #609; background: transparent }
+        a:active { color: #C00; background: transparent }
+
+        .sup-c,
+        .sup-op,
+        .sup-fp,
+        .sup-dp,
+        .sup-ap,
+        .sup-p,
+        .sup-ni,
+        .sup-con,
+        .sup-col {
+            cursor:help;
+            margin-left: 3px;
+        }
+
+        .sup-c {
+            color:orange;
+        }
+
+        .sup-op {
+            color:navy;
+        }
+
+        .sup-fp {
+            color:lightskyblue;
+        }
+
+        .sup-dp {
+            color:green;
+        }
+
+        .sup-ap {
+            color:darkred;
+        }
+
+        .sup-p {
+            color:black;
+        }
+
+        .sup-ni {
+            color:brown;
+        }
+
+        .sup-con {
+            color:orange;
+        }
+
+        .sup-col {
+            color:darkred;
+        }
+
+        code {
+            font-size: large;
+            color: darkred;
+        }
+
+        /* less prominent links for properties */
+        .proplink {
+            color: #336;
+            text-decoration: none;
+        }
+    </style>
+    
+    <script type="application/ld+json">
+      [
+  {
+    "@id": "https://w3id.org/geosrs/datumdatum",
+    "@type": [
+      "https://schema.org/DefinedTermSet"
+    ],
+    "https://schema.org/name": [
+      {
+        "@value": "SRS Ontology: Geosrs_datum"
+      }
+    ]
+  }
+]
+    </script>
+</head>
+<body>
+  <div id="pylode">made by <a href="http://github.com/rdflib/pyLODE">
+    <span style="color:#329545;">p</span><span style="color:#f9cb33;">y</span>LODE</a>
+    <span style="font-size:smaller;">2.13.2</span>
+  </div>
+  <h1>SRS Ontology: Geosrs_datum</h1>
+<section id="metadata">
+    <h2 style="display:none;">Metadata</h2>
+    <dl>
+        <dt>URI</dt>
+        <dd><code>https://w3id.org/geosrs/datumdatum</code></dd>
+        <dt>Ontology RDF</dt>
+        <dd><a href="datum.ttl">RDF (turtle)</a></dd>
+    </dl>
+</section>
+<section id="toc">
+    <h2>Table of Contents</h2>
+    <ol>
+        <li><a href="#classes">Classes</a></li>
+        <li><a href="#objectproperties">Object Properties</a></li>
+        <li><a href="#datatypeproperties">Datatype Properties</a></li>
+        <li><a href="#namedindividuals">Named Individuals</a></li>
+        <li><a href="#namespaces">Namespaces</a></li>
+        <li><a href="#legend">Legend</a></li>
+    </ol>
+</section>
+<section id="overview">
+    <h2>Overview</h2>
+    <div class="figure">
+        <div style="width:500px; height:50px; background-color: lightgrey; border:solid 2px grey; padding:10px;margin-bottom:5px; text-align:center;">Pictures say 1,000 words</div>
+        <div class="caption"><strong>Figure 1:</strong> Ontology overview</div>
+    </div>
+</section>
+  <section id="classes">
+    <h2>Classes <span style="float:right; font-size:smaller;"><a href="">&uparrow;</a></span></h2>
+    <ul class="hlist">
+      <li><a href="#DatumEnsemble">Datum Ensemble</a></li>
+      <li><a href="#DefiningParameter">Defining Parameter</a></li>
+      <li><a href="#DynamicGeodeticReferenceFrame">Dynamic Geodetic Reference Frame</a></li>
+      <li><a href="#DynamicVerticalDatum">Dynamic Vertical Datum</a></li>
+      <li><a href="#EngineeringDatum">Engineering Datum</a></li>
+      <li><a href="#ParametricDatum">Parametric Datum</a></li>
+      <li><a href="#TemporalDatum">Temporal Datum</a></li>
+      <li><a href="#TriaxialEllipsoid">Triaxial Ellipsoid</a></li>
+    </ul>
+    <div class="entity class" id="DatumEnsemble">
+        <h3>
+          Datum Ensemble<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#DatumEnsemble" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://w3id.org/geosrs/datum/DatumEnsemble</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>A collection of two or more datums (or if geodetic or vertical, a collection of two or more reference frames) that are realizations of one Conventional Reference System and which for all but the highest accuracy requirements may be considered to be insignificantly different from each other. Note: Within the datum ensemble every frame or datum is constrained to be a realization of the same reference system. Cf. ISO 19111:2019
+Geographic information — Referencing by coordinates.</p>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="DefiningParameter">
+        <h3>
+          Defining Parameter<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#DefiningParameter" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://w3id.org/geosrs/datum/DefiningParameter</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>Parameter value, an ordered sequence of values, or a reference to a file of parameter values that define a paramtric datum. Cf. ISO 19111:2019 Geographic information — Referencing by coordinates.</p>
+                </td>
+            </tr>
+            <tr>
+                <th>In range of</th>
+                <td>
+                    <a href="#Datumdefiningparameter">Datum defining parameter</a><sup class="sup-op" title="object property">op</sup><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="DynamicGeodeticReferenceFrame">
+        <h3>
+          Dynamic Geodetic Reference Frame<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#DynamicGeodeticReferenceFrame" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://w3id.org/geosrs/datum/DynamicGeodeticReferenceFrame</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>Geodetic reference frame in which some of the parameters describe time evolution of defining station coordinatesExample: defining station coordinates having linear velocities to account for crustal motion.</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Super-classes</th>
+                <td>
+                    <a href="https://w3id.org/geosrs/GeodeticDatum">geosrs:GeodeticDatum</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="DynamicVerticalDatum">
+        <h3>
+          Dynamic Vertical Datum<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#DynamicVerticalDatum" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://w3id.org/geosrs/datum/DynamicVerticalDatum</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>Vertical reference frame in which some of the defining parameters have time dependencyExample: Defining station heights have velocity to account for post-glacial isostatic rebound motion. Cf. ISO 19111:2019 Geographic information — Referencing by coordinates.</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Super-classes</th>
+                <td>
+                    <a href="https://w3id.org/geosrs/VerticalDatum">geosrs:VerticalDatum</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="EngineeringDatum">
+        <h3>
+          Engineering Datum<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#EngineeringDatum" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://w3id.org/geosrs/datum/EngineeringDatum</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>Definition of the origin and orientation of an engineering coordinate reference systemNote: The origin can be fixed with respect to the Earth (such as a defined point at a construction site), or be a defined point on a moving vehicle (such as on a ship or satellite), or a defined point of an image. Cf. ISO 19111:2019 Geographic information — Referencing by coordinates.</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Super-classes</th>
+                <td>
+                    <a href="https://w3id.org/geosrs/Datum">geosrs:Datum</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="ParametricDatum">
+        <h3>
+          Parametric Datum<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#ParametricDatum" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://w3id.org/geosrs/datum/ParametricDatum</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>Textual description and/or a set of parameters identifying a particular reference surface used as the origin of a parametric coordinate system, including its position with respect to the Earth. Cf. ISO 19111:2019 Geographic information — Referencing by coordinates.</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Super-classes</th>
+                <td>
+                    <a href="https://w3id.org/geosrs/Datum">geosrs:Datum</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+            <tr>
+                <th>In domain of</th>
+                <td>
+                    <a href="#Datumdefiningparameter">Datum defining parameter</a><sup class="sup-op" title="object property">op</sup><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="TemporalDatum">
+        <h3>
+          Temporal Datum<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#TemporalDatum" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://w3id.org/geosrs/datum/TemporalDatum</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>Definition of the relationship of a temporal coordinate system to an objectNote: The object is normally time on the Earth. Cf. ISO 19111:2019 Geographic information — Referencing by coordinates.</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Super-classes</th>
+                <td>
+                    <a href="https://w3id.org/geosrs/Datum">geosrs:Datum</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="TriaxialEllipsoid">
+        <h3>
+          Triaxial Ellipsoid<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#TriaxialEllipsoid" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://w3id.org/geosrs/datum/TriaxialEllipsoid</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>Surface of an analytic ellipsoid defined by three axes of different length. Also referred as scalene ellipsoid.</p>
+                </td>
+            </tr>
+        </table>
+    </div>
+</section>
+<section id="objectproperties">
+    <h2>Object Properties <span style="float:right; font-size:smaller;"><a href="">&uparrow;</a></span></h2>
+    <ul class="hlist">
+        <li><a href="#Datumdefiningparameter">Datum defining parameter</a></li>
+        <li><a href="#Ellipsoid">Ellipsoid</a></li>
+        <li><a href="#Primemeridian">Prime meridian</a></li>
+    </ul>
+    <div class="entity property" id="Datumdefiningparameter">
+        <h3>Datum defining parameter<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#Datumdefiningparameter" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://w3id.org/geosrs/datum/datumDefiningParameter</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>Parameter used to define the parametric datum</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Domain(s)</th>
+                <td>
+                    <a href="#ParametricDatum">Parametric Datum</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+            <tr>
+                <th>Range(s)</th>
+                <td>
+                    <a href="https://w3id.org/geosrs/datum/DefiningParameter">geosrs_datum:DefiningParameter</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity property" id="Ellipsoid">
+        <h3>Ellipsoid<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#Ellipsoid" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://w3id.org/geosrs/datum/ellipsoid</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>The properties relates a datum to its ellipsoid definition</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Domain(s)</th>
+                <td>
+                    <a href="https://w3id.org/geosrs/Datum">geosrs:Datum</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+            <tr>
+                <th>Range(s)</th>
+                <td>
+                    <a href="https://w3id.org/geosrs/Ellipsoid">geosrs:Ellipsoid</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity property" id="Primemeridian">
+        <h3>Prime meridian<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#Primemeridian" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://w3id.org/geosrs/datum/primeMeridian</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>The prime meridian used by a geodetic datum. Cf. ISO 19111:2007:2007-07, table 34, association role primeMeridian.</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Domain(s)</th>
+                <td>
+                    <a href="https://w3id.org/geosrs/Datum">geosrs:Datum</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+            <tr>
+                <th>Range(s)</th>
+                <td>
+                    <a href="https://w3id.org/geosrs/PrimeMeridian">geosrs:PrimeMeridian</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+        </table>
+    </div>
+</section>
+
+<section id="datatypeproperties">
+    <h2>Datatype Properties <span style="float:right; font-size:smaller;"><a href="">&uparrow;</a></span></h2>
+    <ul class="hlist">
+        <li><a href="#Eccentricity">Eccentricity</a></li>
+        <li><a href="#inverseflattening">inverse flattening</a></li>
+        <li><a href="#Isasphere">Is a sphere</a></li>
+        <li><a href="#semimajoraxis">semi major axis</a></li>
+        <li><a href="#semiminoraxis">semi minor axis</a></li>
+    </ul>
+    <div class="entity property" id="Eccentricity">
+        <h3>Eccentricity<sup title="datatype property" class="sup-dp">dp</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#Eccentricity" title="fragment link to here">#</a>&nbsp;<a href="#datatypeproperties" title="Datatype Properties Index">DPs</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://w3id.org/geosrs/datum/eccentricity</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>A measure of how much an ellipse deviates from a perfect circle.</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Domain(s)</th>
+                <td>
+                    <a href="https://w3id.org/geosrs/Ellipsoid">geosrs:Ellipsoid</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+            <tr>
+                <th>Range(s)</th>
+                <td>
+                    <a href="xsd:double">xsd:double</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity property" id="inverseflattening">
+        <h3>inverse flattening<sup title="datatype property" class="sup-dp">dp</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#inverseflattening" title="fragment link to here">#</a>&nbsp;<a href="#datatypeproperties" title="Datatype Properties Index">DPs</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://w3id.org/geosrs/datum/inverseFlattening</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>Indicates the inverse flattening value of an ellipsoid, expressed as a number or a ratio (percentage rate, parts per million, etc.). Cf. ISO 19111:2007:2007-07, table 37, attribute inverse flattening</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Domain(s)</th>
+                <td>
+                    <a href="https://w3id.org/geosrs/Ellipsoid">geosrs:Ellipsoid</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+            <tr>
+                <th>Range(s)</th>
+                <td>
+                    <a href="xsd:double">xsd:double</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity property" id="Isasphere">
+        <h3>Is a sphere<sup title="datatype property" class="sup-dp">dp</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#Isasphere" title="fragment link to here">#</a>&nbsp;<a href="#datatypeproperties" title="Datatype Properties Index">DPs</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://w3id.org/geosrs/datum/isSphere</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>Indicates whether the ellipsoid is a sphere. Cf. ISO 19111:2007:2007-07, table 37, attribute ellipsoid=sphere indicator.</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Domain(s)</th>
+                <td>
+                    <a href="https://w3id.org/geosrs/Ellipsoid">geosrs:Ellipsoid</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+            <tr>
+                <th>Range(s)</th>
+                <td>
+                    <a href="xsd:boolean">xsd:boolean</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity property" id="semimajoraxis">
+        <h3>semi major axis<sup title="datatype property" class="sup-dp">dp</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#semimajoraxis" title="fragment link to here">#</a>&nbsp;<a href="#datatypeproperties" title="Datatype Properties Index">DPs</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://w3id.org/geosrs/datum/semiMajorAxis</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>Indicates the length of the semi major axis of an ellipsoid. Cf. ISO 19111:2007:2007-07, table 36, attribute length of semi-major axis.</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Domain(s)</th>
+                <td>
+                    <a href="https://w3id.org/geosrs/Ellipsoid">geosrs:Ellipsoid</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+            <tr>
+                <th>Range(s)</th>
+                <td>
+                    <a href="xsd:double">xsd:double</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity property" id="semiminoraxis">
+        <h3>semi minor axis<sup title="datatype property" class="sup-dp">dp</sup><span style="float:right; margin-right:10px; font-size:smaller;">
+            <a href="#semiminoraxis" title="fragment link to here">#</a>&nbsp;<a href="#datatypeproperties" title="Datatype Properties Index">DPs</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://w3id.org/geosrs/datum/semiMinorAxis</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>Indicates the length of the semi minor axis of an ellipsoid. Cf. ISO 19111:2007:2007-07, table 37, attribute length of semi-minor axis.</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Domain(s)</th>
+                <td>
+                    <a href="https://w3id.org/geosrs/Ellipsoid">geosrs:Ellipsoid</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+            <tr>
+                <th>Range(s)</th>
+                <td>
+                    <a href="xsd:double">xsd:double</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+        </table>
+    </div>
+</section>
+
+  
+    <section id="namedindividuals">
+        <h2>Named Individuals <span style="float:right; font-size:smaller;"><a href="">&uparrow;</a></span></h2>
+        <ul class="hlist">
+            <li><a href="#Airy1830">Airy 1830</a></li>
+            <li><a href="#AriyModified1849">Ariy Modified 1849</a></li>
+            <li><a href="#AustralianNationalSpheroid">Australian National Spheroid</a></li>
+            <li><a href="#CGCS2000">CGCS2000</a></li>
+            <li><a href="#Clarke1858">Clarke 1858</a></li>
+            <li><a href="#Clarke1866">Clarke 1866</a></li>
+            <li><a href="#Clarke1880">Clarke 1880</a></li>
+            <li><a href="#Clarke1880(Arc)">Clarke 1880 (Arc)</a></li>
+            <li><a href="#Clarke1880(Ign)">Clarke 1880 (Ign)</a></li>
+            <li><a href="#Danish1876">Danish 1876</a></li>
+            <li><a href="#Everest1930">Everest 1930</a></li>
+            <li><a href="#GRS1980">GRS 1980</a></li>
+            <li><a href="#GRS67">GRS 67</a></li>
+            <li><a href="#GSK-2011">GSK-2011</a></li>
+            <li><a href="#Helmert1906">Helmert 1906</a></li>
+            <li><a href="#IAG1975">IAG 1975</a></li>
+            <li><a href="#International1924">International 1924</a></li>
+            <li><a href="#Krassowsky1940">Krassowsky 1940</a></li>
+            <li><a href="#PS90">PS 90</a></li>
+            <li><a href="#Plessis1817">Plessis 1817</a></li>
+            <li><a href="#Struve1860">Struve 1860</a></li>
+            <li><a href="#WGS66">WGS 66</a></li>
+            <li><a href="#WGS72">WGS 72</a></li>
+            <li><a href="#WGS84">WGS 84</a></li>
+            <li><a href="#Zach1812">Zach 1812</a></li>
+        </ul>
+            <div class="entity named_individual" id="Airy1830">
+        <h3>Airy 1830<sup title="named individual" class="sup-ni">ni</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td>
+                  <code>
+                      https://w3id.org/geosrs/datum/Airy1830
+                  
+                  </code>
+                </td>
+            </tr>
+            <dt>Class(es)</dt>
+            <dd>
+                <a href="https://w3id.org/geosrs/Ellipsoid">geosrs:Ellipsoid</a><br/>
+            </dd>
+            <tr>
+                <th>Description</th>
+                <td>
+                    Airy 1830 Ellipsoid
+                </td>
+            </tr>
+        </table>
+    </div>
+            <div class="entity named_individual" id="AriyModified1849">
+        <h3>Ariy Modified 1849<sup title="named individual" class="sup-ni">ni</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td>
+                  <code>
+                      https://w3id.org/geosrs/datum/AiryModified1849
+                  
+                  </code>
+                </td>
+            </tr>
+            <dt>Class(es)</dt>
+            <dd>
+                <a href="https://w3id.org/geosrs/Ellipsoid">geosrs:Ellipsoid</a><br/>
+            </dd>
+            <tr>
+                <th>Description</th>
+                <td>
+                    Airy 1849 Modified Ellipsoid
+                </td>
+            </tr>
+        </table>
+    </div>
+            <div class="entity named_individual" id="AustralianNationalSpheroid">
+        <h3>Australian National Spheroid<sup title="named individual" class="sup-ni">ni</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td>
+                  <code>
+                      https://w3id.org/geosrs/datum/AustralianNationalSpheroid
+                  
+                  </code>
+                </td>
+            </tr>
+            <dt>Class(es)</dt>
+            <dd>
+                <a href="https://w3id.org/geosrs/Ellipsoid">geosrs:Ellipsoid</a><br/>
+            </dd>
+            <tr>
+                <th>Description</th>
+                <td>
+                    Australian National Spheroid
+                </td>
+            </tr>
+        </table>
+    </div>
+            <div class="entity named_individual" id="CGCS2000">
+        <h3>CGCS2000<sup title="named individual" class="sup-ni">ni</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td>
+                  <code>
+                      https://w3id.org/geosrs/datum/CGCS2000
+                  
+                  </code>
+                </td>
+            </tr>
+            <dt>Class(es)</dt>
+            <dd>
+                <a href="https://w3id.org/geosrs/Ellipsoid">geosrs:Ellipsoid</a><br/>
+            </dd>
+            <tr>
+                <th>Description</th>
+                <td>
+                    CGCS2000 Spheroid
+                </td>
+            </tr>
+        </table>
+    </div>
+            <div class="entity named_individual" id="Clarke1858">
+        <h3>Clarke 1858<sup title="named individual" class="sup-ni">ni</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td>
+                  <code>
+                      https://w3id.org/geosrs/datum/Clarke1858
+                  
+                  </code>
+                </td>
+            </tr>
+            <dt>Class(es)</dt>
+            <dd>
+                <a href="https://w3id.org/geosrs/Ellipsoid">geosrs:Ellipsoid</a><br/>
+            </dd>
+            <tr>
+                <th>Description</th>
+                <td>
+                    Clarke 1858 Spheroid
+                </td>
+            </tr>
+        </table>
+    </div>
+            <div class="entity named_individual" id="Clarke1866">
+        <h3>Clarke 1866<sup title="named individual" class="sup-ni">ni</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td>
+                  <code>
+                      https://w3id.org/geosrs/datum/Clarke1866
+                  
+                  </code>
+                </td>
+            </tr>
+            <dt>Class(es)</dt>
+            <dd>
+                <a href="https://w3id.org/geosrs/Ellipsoid">geosrs:Ellipsoid</a><br/>
+            </dd>
+            <tr>
+                <th>Description</th>
+                <td>
+                    Clarke 1866 Spheroid
+                </td>
+            </tr>
+        </table>
+    </div>
+            <div class="entity named_individual" id="Clarke1880">
+        <h3>Clarke 1880<sup title="named individual" class="sup-ni">ni</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td>
+                  <code>
+                      https://w3id.org/geosrs/datum/Clarke1880
+                  
+                  </code>
+                </td>
+            </tr>
+            <dt>Class(es)</dt>
+            <dd>
+                <a href="https://w3id.org/geosrs/Ellipsoid">geosrs:Ellipsoid</a><br/>
+            </dd>
+            <tr>
+                <th>Description</th>
+                <td>
+                    Clarke 1880 Spheroid
+                </td>
+            </tr>
+        </table>
+    </div>
+            <div class="entity named_individual" id="Clarke1880(Arc)">
+        <h3>Clarke 1880 (Arc)<sup title="named individual" class="sup-ni">ni</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td>
+                  <code>
+                      https://w3id.org/geosrs/datum/Clarke1880ARC
+                  
+                  </code>
+                </td>
+            </tr>
+            <dt>Class(es)</dt>
+            <dd>
+                <a href="https://w3id.org/geosrs/Ellipsoid">geosrs:Ellipsoid</a><br/>
+            </dd>
+            <tr>
+                <th>Description</th>
+                <td>
+                    Clarke 1880 (Arc) Spheroid
+                </td>
+            </tr>
+        </table>
+    </div>
+            <div class="entity named_individual" id="Clarke1880(Ign)">
+        <h3>Clarke 1880 (Ign)<sup title="named individual" class="sup-ni">ni</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td>
+                  <code>
+                      https://w3id.org/geosrs/datum/Clarke1880IGN
+                  
+                  </code>
+                </td>
+            </tr>
+            <dt>Class(es)</dt>
+            <dd>
+                <a href="https://w3id.org/geosrs/Ellipsoid">geosrs:Ellipsoid</a><br/>
+            </dd>
+            <tr>
+                <th>Description</th>
+                <td>
+                    Clarke 1880 (Ing) Spheroid
+                </td>
+            </tr>
+        </table>
+    </div>
+            <div class="entity named_individual" id="Danish1876">
+        <h3>Danish 1876<sup title="named individual" class="sup-ni">ni</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td>
+                  <code>
+                      https://w3id.org/geosrs/datum/Danish1876
+                  
+                  </code>
+                </td>
+            </tr>
+            <dt>Class(es)</dt>
+            <dd>
+                <a href="https://w3id.org/geosrs/Ellipsoid">geosrs:Ellipsoid</a><br/>
+            </dd>
+            <tr>
+                <th>Description</th>
+                <td>
+                    Danish 1876 Spheroid
+                </td>
+            </tr>
+        </table>
+    </div>
+            <div class="entity named_individual" id="Everest1930">
+        <h3>Everest 1930<sup title="named individual" class="sup-ni">ni</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td>
+                  <code>
+                      https://w3id.org/geosrs/datum/Everest1930
+                  
+                  </code>
+                </td>
+            </tr>
+            <dt>Class(es)</dt>
+            <dd>
+                <a href="https://w3id.org/geosrs/Ellipsoid">geosrs:Ellipsoid</a><br/>
+            </dd>
+            <tr>
+                <th>Description</th>
+                <td>
+                    Everest 1930 Spheroid
+                </td>
+            </tr>
+        </table>
+    </div>
+            <div class="entity named_individual" id="GRS1980">
+        <h3>GRS 1980<sup title="named individual" class="sup-ni">ni</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td>
+                  <code>
+                      https://w3id.org/geosrs/datum/GRS1980
+                  
+                  </code>
+                </td>
+            </tr>
+            <dt>Class(es)</dt>
+            <dd>
+                <a href="https://w3id.org/geosrs/Ellipsoid">geosrs:Ellipsoid</a><br/>
+            </dd>
+            <tr>
+                <th>Description</th>
+                <td>
+                    GRS 1980 Ellipsoid
+                </td>
+            </tr>
+        </table>
+    </div>
+            <div class="entity named_individual" id="GRS67">
+        <h3>GRS 67<sup title="named individual" class="sup-ni">ni</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td>
+                  <code>
+                      https://w3id.org/geosrs/datum/GRS67
+                  
+                  </code>
+                </td>
+            </tr>
+            <dt>Class(es)</dt>
+            <dd>
+                <a href="https://w3id.org/geosrs/Ellipsoid">geosrs:Ellipsoid</a><br/>
+            </dd>
+            <tr>
+                <th>Description</th>
+                <td>
+                    GRS 67 Ellipsoid
+                </td>
+            </tr>
+        </table>
+    </div>
+            <div class="entity named_individual" id="GSK-2011">
+        <h3>GSK-2011<sup title="named individual" class="sup-ni">ni</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td>
+                  <code>
+                      https://w3id.org/geosrs/datum/GSK-2011
+                  
+                  </code>
+                </td>
+            </tr>
+            <dt>Class(es)</dt>
+            <dd>
+                <a href="https://w3id.org/geosrs/Ellipsoid">geosrs:Ellipsoid</a><br/>
+            </dd>
+            <tr>
+                <th>Description</th>
+                <td>
+                    GSK-2011 Spheroid
+                </td>
+            </tr>
+        </table>
+    </div>
+            <div class="entity named_individual" id="Helmert1906">
+        <h3>Helmert 1906<sup title="named individual" class="sup-ni">ni</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td>
+                  <code>
+                      https://w3id.org/geosrs/datum/Helmert1906
+                  
+                  </code>
+                </td>
+            </tr>
+            <dt>Class(es)</dt>
+            <dd>
+                <a href="https://w3id.org/geosrs/Ellipsoid">geosrs:Ellipsoid</a><br/>
+            </dd>
+            <tr>
+                <th>Description</th>
+                <td>
+                    Helmert 1906 Spheroid
+                </td>
+            </tr>
+        </table>
+    </div>
+            <div class="entity named_individual" id="IAG1975">
+        <h3>IAG 1975<sup title="named individual" class="sup-ni">ni</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td>
+                  <code>
+                      https://w3id.org/geosrs/datum/IAG1975
+                  
+                  </code>
+                </td>
+            </tr>
+            <dt>Class(es)</dt>
+            <dd>
+                <a href="https://w3id.org/geosrs/Ellipsoid">geosrs:Ellipsoid</a><br/>
+            </dd>
+            <tr>
+                <th>Description</th>
+                <td>
+                    IAG 1975 Spheroid
+                </td>
+            </tr>
+        </table>
+    </div>
+            <div class="entity named_individual" id="International1924">
+        <h3>International 1924<sup title="named individual" class="sup-ni">ni</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td>
+                  <code>
+                      https://w3id.org/geosrs/datum/International1924
+                  
+                  </code>
+                </td>
+            </tr>
+            <dt>Class(es)</dt>
+            <dd>
+                <a href="https://w3id.org/geosrs/Ellipsoid">geosrs:Ellipsoid</a><br/>
+            </dd>
+            <tr>
+                <th>Description</th>
+                <td>
+                    International 1924 Ellipsoid
+                </td>
+            </tr>
+        </table>
+    </div>
+            <div class="entity named_individual" id="Krassowsky1940">
+        <h3>Krassowsky 1940<sup title="named individual" class="sup-ni">ni</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td>
+                  <code>
+                      https://w3id.org/geosrs/datum/Krassowsky1940
+                  
+                  </code>
+                </td>
+            </tr>
+            <dt>Class(es)</dt>
+            <dd>
+                <a href="https://w3id.org/geosrs/Ellipsoid">geosrs:Ellipsoid</a><br/>
+            </dd>
+            <tr>
+                <th>Description</th>
+                <td>
+                    Krassowsky 1940 Spheroid
+                </td>
+            </tr>
+        </table>
+    </div>
+            <div class="entity named_individual" id="PS90">
+        <h3>PS 90<sup title="named individual" class="sup-ni">ni</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td>
+                  <code>
+                      https://w3id.org/geosrs/datum/PZ90
+                  
+                  </code>
+                </td>
+            </tr>
+            <dt>Class(es)</dt>
+            <dd>
+                <a href="https://w3id.org/geosrs/Ellipsoid">geosrs:Ellipsoid</a><br/>
+            </dd>
+            <tr>
+                <th>Description</th>
+                <td>
+                    PZ 90 Ellipsoid
+                </td>
+            </tr>
+        </table>
+    </div>
+            <div class="entity named_individual" id="Plessis1817">
+        <h3>Plessis 1817<sup title="named individual" class="sup-ni">ni</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td>
+                  <code>
+                      https://w3id.org/geosrs/datum/Plessis1817
+                  
+                  </code>
+                </td>
+            </tr>
+            <dt>Class(es)</dt>
+            <dd>
+                <a href="https://w3id.org/geosrs/Ellipsoid">geosrs:Ellipsoid</a><br/>
+            </dd>
+            <tr>
+                <th>Description</th>
+                <td>
+                    Plessis 1817 Spheroid
+                </td>
+            </tr>
+        </table>
+    </div>
+            <div class="entity named_individual" id="Struve1860">
+        <h3>Struve 1860<sup title="named individual" class="sup-ni">ni</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td>
+                  <code>
+                      https://w3id.org/geosrs/datum/Struve1860
+                  
+                  </code>
+                </td>
+            </tr>
+            <dt>Class(es)</dt>
+            <dd>
+                <a href="https://w3id.org/geosrs/Ellipsoid">geosrs:Ellipsoid</a><br/>
+            </dd>
+            <tr>
+                <th>Description</th>
+                <td>
+                    Struve 1860 Spheroid
+                </td>
+            </tr>
+        </table>
+    </div>
+            <div class="entity named_individual" id="WGS66">
+        <h3>WGS 66<sup title="named individual" class="sup-ni">ni</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td>
+                  <code>
+                      https://w3id.org/geosrs/datum/WGS66
+                  
+                  </code>
+                </td>
+            </tr>
+            <dt>Class(es)</dt>
+            <dd>
+                <a href="https://w3id.org/geosrs/Ellipsoid">geosrs:Ellipsoid</a><br/>
+            </dd>
+            <tr>
+                <th>Description</th>
+                <td>
+                    WGS 66 Spheroid
+                </td>
+            </tr>
+        </table>
+    </div>
+            <div class="entity named_individual" id="WGS72">
+        <h3>WGS 72<sup title="named individual" class="sup-ni">ni</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td>
+                  <code>
+                      https://w3id.org/geosrs/datum/WGS72
+                  
+                  </code>
+                </td>
+            </tr>
+            <dt>Class(es)</dt>
+            <dd>
+                <a href="https://w3id.org/geosrs/Ellipsoid">geosrs:Ellipsoid</a><br/>
+            </dd>
+            <tr>
+                <th>Description</th>
+                <td>
+                    WGS 72 Spheroid
+                </td>
+            </tr>
+        </table>
+    </div>
+            <div class="entity named_individual" id="WGS84">
+        <h3>WGS 84<sup title="named individual" class="sup-ni">ni</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td>
+                  <code>
+                      https://w3id.org/geosrs/datum/WGS84
+                  
+                  </code>
+                </td>
+            </tr>
+            <dt>Class(es)</dt>
+            <dd>
+                <a href="https://w3id.org/geosrs/Ellipsoid">geosrs:Ellipsoid</a><br/>
+            </dd>
+            <tr>
+                <th>Description</th>
+                <td>
+                    WGS 84 Spheroid
+                </td>
+            </tr>
+        </table>
+    </div>
+            <div class="entity named_individual" id="Zach1812">
+        <h3>Zach 1812<sup title="named individual" class="sup-ni">ni</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td>
+                  <code>
+                      https://w3id.org/geosrs/datum/Zach1812
+                  
+                  </code>
+                </td>
+            </tr>
+            <dt>Class(es)</dt>
+            <dd>
+                <a href="https://w3id.org/geosrs/Ellipsoid">geosrs:Ellipsoid</a><br/>
+            </dd>
+            <tr>
+                <th>Description</th>
+                <td>
+                    Zach 1812 Spheroid
+                </td>
+            </tr>
+        </table>
+    </div>
+    </section>
+
+  <section id="namespaces">
+    <h2>Namespaces <span style="float:right; font-size:smaller;"><a href="">&uparrow;</a></span></h2>
+    <dl>
+        <dt>default (geosrs_datum)</dt>
+        <dd><code>https://w3id.org/geosrs/datum/</code></dd>
+        <dt>brick</dt>
+        <dd><code>https://brickschema.org/schema/Brick#</code></dd>
+        <dt>csvw</dt>
+        <dd><code>http://www.w3.org/ns/csvw#</code></dd>
+        <dt>dc</dt>
+        <dd><code>http://purl.org/dc/elements/1.1/</code></dd>
+        <dt>dcam</dt>
+        <dd><code>http://purl.org/dc/dcam/</code></dd>
+        <dt>dcat</dt>
+        <dd><code>http://www.w3.org/ns/dcat#</code></dd>
+        <dt>dcmitype</dt>
+        <dd><code>http://purl.org/dc/dcmitype/</code></dd>
+        <dt>dcterms</dt>
+        <dd><code>http://purl.org/dc/terms/</code></dd>
+        <dt>doap</dt>
+        <dd><code>http://usefulinc.com/ns/doap#</code></dd>
+        <dt>foaf</dt>
+        <dd><code>http://xmlns.com/foaf/0.1/</code></dd>
+        <dt>geo</dt>
+        <dd><code>http://www.opengis.net/ont/geosparql#</code></dd>
+        <dt>geosrs</dt>
+        <dd><code>https://w3id.org/geosrs/</code></dd>
+        <dt>odrl</dt>
+        <dd><code>http://www.w3.org/ns/odrl/2/</code></dd>
+        <dt>org</dt>
+        <dd><code>http://www.w3.org/ns/org#</code></dd>
+        <dt>owl</dt>
+        <dd><code>http://www.w3.org/2002/07/owl#</code></dd>
+        <dt>prof</dt>
+        <dd><code>http://www.w3.org/ns/dx/prof/</code></dd>
+        <dt>prov</dt>
+        <dd><code>http://www.w3.org/ns/prov#</code></dd>
+        <dt>qb</dt>
+        <dd><code>http://purl.org/linked-data/cube#</code></dd>
+        <dt>rdf</dt>
+        <dd><code>http://www.w3.org/1999/02/22-rdf-syntax-ns#</code></dd>
+        <dt>rdfs</dt>
+        <dd><code>http://www.w3.org/2000/01/rdf-schema#</code></dd>
+        <dt>sdo</dt>
+        <dd><code>https://schema.org/</code></dd>
+        <dt>sh</dt>
+        <dd><code>http://www.w3.org/ns/shacl#</code></dd>
+        <dt>skos</dt>
+        <dd><code>http://www.w3.org/2004/02/skos/core#</code></dd>
+        <dt>sosa</dt>
+        <dd><code>http://www.w3.org/ns/sosa/</code></dd>
+        <dt>ssn</dt>
+        <dd><code>http://www.w3.org/ns/ssn/</code></dd>
+        <dt>time</dt>
+        <dd><code>http://www.w3.org/2006/time#</code></dd>
+        <dt>vann</dt>
+        <dd><code>http://purl.org/vocab/vann/</code></dd>
+        <dt>void</dt>
+        <dd><code>http://rdfs.org/ns/void#</code></dd>
+        <dt>wgs</dt>
+        <dd><code>https://www.w3.org/2003/01/geo/wgs84_pos#</code></dd>
+        <dt>xsd</dt>
+        <dd><code>http://www.w3.org/2001/XMLSchema#</code></dd>
+    </dl>
+</section>
+  <section id="legend">
+      <h2>Legend</h2>
+      <table class="entity">
+          <tr><td><sup class="sup-c" title="Classes">c</sup></td><td>Classes</td></tr>
+          <tr><td><sup class="sup-op" title="Object Properties">op</sup></td><td>Object Properties</td></tr>
+          <tr><td><sup class="sup-fp" title="Functional Properties">fp</sup></td><td>Functional Properties</td></tr>
+          <tr><td><sup class="sup-dp" title="Data Properties">dp</sup></td><td>Data Properties</td></tr>
+          <tr><td><sup class="sup-ap" title="Annotation Properties">ap</sup></td><td>Annotation Properties</td></tr>
+          <tr><td><sup class="sup-p" title="Properties">p</sup></td><td>Properties</td></tr>
+          <tr><td><sup class="sup-ni" title="Named Individuals">ni</sup></td><td>Named Individuals</td></tr>
+      </table>
+  </section>
+</body>
+</html>

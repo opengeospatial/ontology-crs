@@ -1,543 +1,169 @@
-<!DOCTYPE html>
-<html lang="en">
+
+<html>
 <head>
-    <title>SRS Ontology: Geosrs_planet</title>
-    <link rel="icon" type="image/png" sizes="32x32" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAC40lEQVRYhe2UT0hUQRzHp6Iss1B3VZKIDbbdfW9mnoi4f3zzjkJQeOgS0SEIb1EWBGGlLLu460zQPQM1unUIIjA6rfpm6ZAhHjoIRVQUFUlEbG+euTsdXG1d3VL3bVD4g+9h+L35fT/8fvN7ADgY9aHY5fpIvK82HO9ysu66wxWOzbkjcekKx0a2ALYA/n2AGi3a6ArFezcidziecQygNhhrcUficjP6PwBqtGijKxy/thnVBePHywYoDsFhl53GV8SEcsTx4usCMLUewTVpc23BNvEzm6Neyf1+KcG2vwqwUjgrOJq2JmHftwmkVBRGTvncFodnbI7vChO/FRznCmHsNM7aHM9Yk7Df5iqsLMw9sMNOK2g+jS4IEz0UJv4iuJZb2RltWnB4UZqH6ioGAgAAGe5vtiZhtzDx7OoRadLmeM7m6IRjhnLMW2Vx1bA5GhAmnhIcz6/xNj4Ujsky8UspwfayjDPjsF2Y6L7N8Vzx/BfP+KPg6LbgSqd8DnfJW2CnbaLhfH5ephpqygJYvQU4Z3P82TLRsDDhUTnmrSq+Y3N0Mg+Xldy/zwEAnLMWZ3pHpNExmfLs/t0dOdVcbT0JeKxUwFP2VljjqiE47Jp53LTXNxhsUZjerTByXWX6VZWRs/4bIQ2ACv+UAomgDzLCISNZxAxZKMhIDjLy1JfsaK+I+eGBUBNk5E2x8RogX/PdcDZUqieWTSh5D6nOVKqfhoycUmlHFFIyu5RXqf7AcQDISCpv/tqbMBqK883RtmpISRoxQyJKPgGn3wNk5NEigDFa6hslqV/Kj+FdBQD0bshIDlKSLlVcoWQo36UhR80BAMB73lulMn0EMpJTqD6qJiOt3mho/8GbkT2BZNgDB/V+RI0fkOrT3kRIVQbaDizJm2hdNbINBxwk5xAj3yEjuV9rZ1iIkgxixkLBA83mz8uCjLwoGwAx0vOnFSy5mtR4VTaAQvVORMnwZgSpzkrV/QmdE2tKe46+MQAAAABJRU5ErkJggg==">
-    <link rel="icon" type="image/png" sizes="16x16" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABhklEQVQ4jbWPzStEURjG3yQLirlGKUnKFO45Z+SjmXvnnmthQcpCoVhYmD/AwmJiI3OvZuZc2U3UlKU0/gAslMw9JgvhHxAr2fko7r0jHSsl+TgbTz2Lt5731/MASEiJW9ONml2QyX6rsGalmnT74v8BDf12hxJfpV8d1uwNKUBYszabdFv84L8B9X0rESVmmUup2fme0cVhJWaZHw4NWL1Sew
-EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ9Hn31OgoATL+CkLDGB5H1OKj4nFd/FBxUXJ0UZNb4edw/6nLyJXaj5FeCVyPLNIVmYK8TG1IwWb16L1gEACAFV90ftoT8bdOX0EeyY99gxBXZMgRz6qGb1KantAACI0UvE6F5XJqEjpsdURouI0Vt5gGOUkUNnPu7ObGIIMfNaGqDmjDRi9FZldF1lRgYzeqUyeoiY4ag5Iy3RgOYRM8+/M2bG8efsO4hGrpmJseyMAAAAAElFTkSuQmCC">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    
-    <style>
-        #pylode {
-            position: fixed;
-            top: 130px;
-            left: -60px;
-            font-size: small;
-            transform: rotate(-90deg);
-            color: grey;
-        }
-        #pylode a {
-            font-size: 2em;
-            font-weight: bold;
-            text-decoration: none;
-            color: #005A9C;
-        }
-        #pylode a:hover {
-            color: #333;
-        }
-
-        .cardinality {
-            font-style: italic;
-            color: #aa00aa;
-        }
-
-        dt {
-            font-weight: bold;
-            padding: 5px 0 5px 0;
-        }
-
-        ul.hlist {
-            list-style-type: none;
-            border: 1px solid navy;
-            padding:5px;
-            background-color: #F4FFFF;
-        }
-
-        ul.hierarchy {
-            border: 1px solid navy;
-            padding: 5px 25px 5px 25px;
-            background-color: #F4FFFF;
-        }
-
-
-        ul.hlist li {
-            display: inline;
-            margin-right: 10px;
-        }
-
-        .entity {
-            border: 1px solid navy;
-            margin:5px 0 5px 0;
-            padding: 5px;
-        }
-
-        .entity th {
-            width: 150px;
-            vertical-align: top;
-        }
-
-        .entity th,
-        .entity td {
-            padding-bottom: 20px;
-        }
-
-        .entity table th {
-            text-align: left;
-        }
-
-        section#overview img {
-            max-width: 1000px;
-        }
-
-        h1, h2, h3, h4, h5, h6 {
-            text-align: left
-        }
-        h1, h2, h3 {
-            color: #005A9C; background: white
-        }
-        h1 {
-            font: 170% sans-serif;
-            line-height: 110%;
-        }
-        h2 {
-            font: 140% sans-serif;
-            margin-top:40px;
-        }
-        h3 {
-            font: 120% sans-serif;
-            margin-top: 3px;
-            padding-bottom: 5px;
-            border-bottom: 1px solid navy;
-        }
-        h4 { font: bold 100% sans-serif }
-        h5 { font: italic 100% sans-serif }
-        h6 { font: small-caps 100% sans-serif }
-
-
-        body {
-            padding: 2em 70px 2em 70px;
-            margin: 0;
-            font-family: sans-serif;
-            color: black;
-            background: white;
-            background-position: top left;
-            background-attachment: fixed;
-            background-repeat: no-repeat;
-            text-align: justify;
-        }
-
-        section {
-            max-width: 1500px;
-        }
-
-        .figure {
-            margin-bottom: 20px;
-        }
-
-        :link { color: #00C; background: transparent }
-        :visited { color: #609; background: transparent }
-        a:active { color: #C00; background: transparent }
-
-        .sup-c,
-        .sup-op,
-        .sup-fp,
-        .sup-dp,
-        .sup-ap,
-        .sup-p,
-        .sup-ni,
-        .sup-con,
-        .sup-col {
-            cursor:help;
-            margin-left: 3px;
-        }
-
-        .sup-c {
-            color:orange;
-        }
-
-        .sup-op {
-            color:navy;
-        }
-
-        .sup-fp {
-            color:lightskyblue;
-        }
-
-        .sup-dp {
-            color:green;
-        }
-
-        .sup-ap {
-            color:darkred;
-        }
-
-        .sup-p {
-            color:black;
-        }
-
-        .sup-ni {
-            color:brown;
-        }
-
-        .sup-con {
-            color:orange;
-        }
-
-        .sup-col {
-            color:darkred;
-        }
-
-        code {
-            font-size: large;
-            color: darkred;
-        }
-
-        /* less prominent links for properties */
-        .proplink {
-            color: #336;
-            text-decoration: none;
-        }
-    </style>
-    
-    <script type="application/ld+json">
-      [
-  {
-    "@id": "https://w3id.org/geosrs/planetplanet",
-    "@type": [
-      "https://schema.org/DefinedTermSet"
-    ],
-    "https://schema.org/name": [
-      {
-        "@value": "SRS Ontology: Geosrs_planet"
-      }
-    ]
-  }
-]
-    </script>
+<title>Widoco Classtree {{title}}</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.3.9/jstree.min.js"></script>
+<script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"/>
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.2.1/themes/default/style.min.css" />
+ <style>
+ html {
+    position: relative;
+    min-height: 100%;
+}
+.fill { 
+	max-height: 95%;
+    min-height: 95%;
+    height: 95%;
+}
+</style>
 </head>
 <body>
-  <div id="pylode">made by <a href="http://github.com/rdflib/pyLODE">
-    <span style="color:#329545;">p</span><span style="color:#f9cb33;">y</span>LODE</a>
-    <span style="font-size:smaller;">2.13.2</span>
-  </div>
-  <h1>SRS Ontology: Geosrs_planet</h1>
-<section id="metadata">
-    <h2 style="display:none;">Metadata</h2>
-    <dl>
-        <dt>URI</dt>
-        <dd><code>https://w3id.org/geosrs/planetplanet</code></dd>
-        <dt>Ontology RDF</dt>
-        <dd><a href="planet.ttl">RDF (turtle)</a></dd>
-    </dl>
-</section>
-<section id="toc">
-    <h2>Table of Contents</h2>
-    <ol>
-        <li><a href="#classes">Classes</a></li>
-        <li><a href="#namespaces">Namespaces</a></li>
-        <li><a href="#legend">Legend</a></li>
-    </ol>
-</section>
-<section id="overview">
-    <h2>Overview</h2>
-    <div class="figure">
-        <div style="background-color: lightgrey; border:solid 2px grey; padding:10px;margin-bottom:5px; text-align:center;"><img src="../images/planet.png"/></div>
-        <div class="caption"><strong>Figure 1:</strong> Ontology overview</div>
-    </div>
-</section>
-  <section id="classes">
-    <h2>Classes <span style="float:right; font-size:smaller;"><a href="">&uparrow;</a></span></h2>
-    <ul class="hlist">
-      <li><a href="#ArtificialSatellite">Artificial Satellite</a></li>
-      <li><a href="#Asteroid">Asteroid</a></li>
-      <li><a href="#Comet">Comet</a></li>
-      <li><a href="#DwarfPlanet">Dwarf Planet</a></li>
-      <li><a href="#InterstellarBody">Interstellar Body</a></li>
-      <li><a href="#Moon">Moon</a></li>
-      <li><a href="#NaturalSatellite">Natural Satellite</a></li>
-      <li><a href="#Planet">Planet</a></li>
-      <li><a href="#PlanetStatus">Planet Status</a></li>
-      <li><a href="#Plutoid">Plutoid</a></li>
-      <li><a href="#Satellite">Satellite</a></li>
-      <li><a href="#Star">Star</a></li>
-    </ul>
-    <div class="entity class" id="ArtificialSatellite">
-        <h3>
-          Artificial Satellite<sup title="class" class="sup-c">c</sup>
-          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#ArtificialSatellite" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
-        </h3>
-        <table>
-            <tr>
-                <th>URI</th>
-                <td><code>https://w3id.org/geosrs/planet/ArtificialSatellite</code></td>
-            </tr>
-            <tr>
-                <th>Super-classes</th>
-                <td>
-                    <a href="#Satellite">Satellite</a><sup class="sup-c" title="class">c</sup><br/>
-                </td>
-            </tr>
-        </table>
-    </div>
-    <div class="entity class" id="Asteroid">
-        <h3>
-          Asteroid<sup title="class" class="sup-c">c</sup>
-          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#Asteroid" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
-        </h3>
-        <table>
-            <tr>
-                <th>URI</th>
-                <td><code>https://w3id.org/geosrs/planet/Asteroid</code></td>
-            </tr>
-            <tr>
-                <th>Description</th>
-                <td>
-                    <p>Asteroid, any of a host of small bodies, about 1000 km (600 miles) or less in diameter, that orbit the Sun primarily between the orbits of Mars and Jupiter in a nearly flat ring called the asteroid belt (source:https://www.britannica.com/science/asteroid) </p>
-                </td>
-            </tr>
-            <tr>
-                <th>Super-classes</th>
-                <td>
-                    <a href="#InterstellarBody">Interstellar Body</a><sup class="sup-c" title="class">c</sup><br/>
-                </td>
-            </tr>
-        </table>
-    </div>
-    <div class="entity class" id="Comet">
-        <h3>
-          Comet<sup title="class" class="sup-c">c</sup>
-          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#Comet" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
-        </h3>
-        <table>
-            <tr>
-                <th>URI</th>
-                <td><code>https://w3id.org/geosrs/planet/Comet</code></td>
-            </tr>
-            <tr>
-                <th>Super-classes</th>
-                <td>
-                    <a href="#InterstellarBody">Interstellar Body</a><sup class="sup-c" title="class">c</sup><br/>
-                </td>
-            </tr>
-        </table>
-    </div>
-    <div class="entity class" id="DwarfPlanet">
-        <h3>
-          Dwarf Planet<sup title="class" class="sup-c">c</sup>
-          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#DwarfPlanet" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
-        </h3>
-        <table>
-            <tr>
-                <th>URI</th>
-                <td><code>https://w3id.org/geosrs/planet/DwarfPlanet</code></td>
-            </tr>
-        </table>
-    </div>
-    <div class="entity class" id="InterstellarBody">
-        <h3>
-          Interstellar Body<sup title="class" class="sup-c">c</sup>
-          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#InterstellarBody" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
-        </h3>
-        <table>
-            <tr>
-                <th>URI</th>
-                <td><code>https://w3id.org/geosrs/planet/InterstellarBody</code></td>
-            </tr>
-            <tr>
-                <th>Sub-classes</th>
-                <td>
-                    <a href="#Moon">Moon</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#Asteroid">Asteroid</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#Planet">Planet</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#Star">Star</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#Comet">Comet</a><sup class="sup-c" title="class">c</sup><br/>
-                </td>
-            </tr>
-        </table>
-    </div>
-    <div class="entity class" id="Moon">
-        <h3>
-          Moon<sup title="class" class="sup-c">c</sup>
-          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#Moon" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
-        </h3>
-        <table>
-            <tr>
-                <th>URI</th>
-                <td><code>https://w3id.org/geosrs/planet/Moon</code></td>
-            </tr>
-            <tr>
-                <th>Super-classes</th>
-                <td>
-                    <a href="#InterstellarBody">Interstellar Body</a><sup class="sup-c" title="class">c</sup><br/>
-                </td>
-            </tr>
-        </table>
-    </div>
-    <div class="entity class" id="NaturalSatellite">
-        <h3>
-          Natural Satellite<sup title="class" class="sup-c">c</sup>
-          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#NaturalSatellite" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
-        </h3>
-        <table>
-            <tr>
-                <th>URI</th>
-                <td><code>https://w3id.org/geosrs/planet/NaturalSatellite</code></td>
-            </tr>
-            <tr>
-                <th>Super-classes</th>
-                <td>
-                    <a href="#Satellite">Satellite</a><sup class="sup-c" title="class">c</sup><br/>
-                </td>
-            </tr>
-        </table>
-    </div>
-    <div class="entity class" id="Planet">
-        <h3>
-          Planet<sup title="class" class="sup-c">c</sup>
-          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#Planet" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
-        </h3>
-        <table>
-            <tr>
-                <th>URI</th>
-                <td><code>https://w3id.org/geosrs/planet/Planet</code></td>
-            </tr>
-            <tr>
-                <th>Super-classes</th>
-                <td>
-                    <a href="#InterstellarBody">Interstellar Body</a><sup class="sup-c" title="class">c</sup><br/>
-                </td>
-            </tr>
-        </table>
-    </div>
-    <div class="entity class" id="PlanetStatus">
-        <h3>
-          Planet Status<sup title="class" class="sup-c">c</sup>
-          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#PlanetStatus" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
-        </h3>
-        <table>
-            <tr>
-                <th>URI</th>
-                <td><code>https://w3id.org/geosrs/planet/PlanetStatus</code></td>
-            </tr>
-        </table>
-    </div>
-    <div class="entity class" id="Plutoid">
-        <h3>
-          Plutoid<sup title="class" class="sup-c">c</sup>
-          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#Plutoid" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
-        </h3>
-        <table>
-            <tr>
-                <th>URI</th>
-                <td><code>https://w3id.org/geosrs/planet/Plutoid</code></td>
-            </tr>
-        </table>
-    </div>
-    <div class="entity class" id="Satellite">
-        <h3>
-          Satellite<sup title="class" class="sup-c">c</sup>
-          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#Satellite" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
-        </h3>
-        <table>
-            <tr>
-                <th>URI</th>
-                <td><code>https://w3id.org/geosrs/planet/Satellite</code></td>
-            </tr>
-            <tr>
-                <th>Sub-classes</th>
-                <td>
-                    <a href="#ArtificialSatellite">Artificial Satellite</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#NaturalSatellite">Natural Satellite</a><sup class="sup-c" title="class">c</sup><br/>
-                </td>
-            </tr>
-        </table>
-    </div>
-    <div class="entity class" id="Star">
-        <h3>
-          Star<sup title="class" class="sup-c">c</sup>
-          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#Star" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
-        </h3>
-        <table>
-            <tr>
-                <th>URI</th>
-                <td><code>https://w3id.org/geosrs/planet/Star</code></td>
-            </tr>
-            <tr>
-                <th>Super-classes</th>
-                <td>
-                    <a href="#InterstellarBody">Interstellar Body</a><sup class="sup-c" title="class">c</sup><br/>
-                </td>
-            </tr>
-        </table>
-    </div>
-</section>
-  
-  <section id="namespaces">
-    <h2>Namespaces <span style="float:right; font-size:smaller;"><a href="">&uparrow;</a></span></h2>
-    <dl>
-        <dt>default (geosrs_planet)</dt>
-        <dd><code>https://w3id.org/geosrs/planet/</code></dd>
-        <dt>brick</dt>
-        <dd><code>https://brickschema.org/schema/Brick#</code></dd>
-        <dt>csvw</dt>
-        <dd><code>http://www.w3.org/ns/csvw#</code></dd>
-        <dt>dc</dt>
-        <dd><code>http://purl.org/dc/elements/1.1/</code></dd>
-        <dt>dcam</dt>
-        <dd><code>http://purl.org/dc/dcam/</code></dd>
-        <dt>dcat</dt>
-        <dd><code>http://www.w3.org/ns/dcat#</code></dd>
-        <dt>dcmitype</dt>
-        <dd><code>http://purl.org/dc/dcmitype/</code></dd>
-        <dt>dcterms</dt>
-        <dd><code>http://purl.org/dc/terms/</code></dd>
-        <dt>doap</dt>
-        <dd><code>http://usefulinc.com/ns/doap#</code></dd>
-        <dt>foaf</dt>
-        <dd><code>http://xmlns.com/foaf/0.1/</code></dd>
-        <dt>geo</dt>
-        <dd><code>http://www.opengis.net/ont/geosparql#</code></dd>
-        <dt>geosrs</dt>
-        <dd><code>https://w3id.org/geosrs/</code></dd>
-        <dt>odrl</dt>
-        <dd><code>http://www.w3.org/ns/odrl/2/</code></dd>
-        <dt>org</dt>
-        <dd><code>http://www.w3.org/ns/org#</code></dd>
-        <dt>owl</dt>
-        <dd><code>http://www.w3.org/2002/07/owl#</code></dd>
-        <dt>prof</dt>
-        <dd><code>http://www.w3.org/ns/dx/prof/</code></dd>
-        <dt>prov</dt>
-        <dd><code>http://www.w3.org/ns/prov#</code></dd>
-        <dt>qb</dt>
-        <dd><code>http://purl.org/linked-data/cube#</code></dd>
-        <dt>rdf</dt>
-        <dd><code>http://www.w3.org/1999/02/22-rdf-syntax-ns#</code></dd>
-        <dt>rdfs</dt>
-        <dd><code>http://www.w3.org/2000/01/rdf-schema#</code></dd>
-        <dt>sdo</dt>
-        <dd><code>https://schema.org/</code></dd>
-        <dt>sh</dt>
-        <dd><code>http://www.w3.org/ns/shacl#</code></dd>
-        <dt>skos</dt>
-        <dd><code>http://www.w3.org/2004/02/skos/core#</code></dd>
-        <dt>sosa</dt>
-        <dd><code>http://www.w3.org/ns/sosa/</code></dd>
-        <dt>ssn</dt>
-        <dd><code>http://www.w3.org/ns/ssn/</code></dd>
-        <dt>time</dt>
-        <dd><code>http://www.w3.org/2006/time#</code></dd>
-        <dt>vann</dt>
-        <dd><code>http://purl.org/vocab/vann/</code></dd>
-        <dt>void</dt>
-        <dd><code>http://rdfs.org/ns/void#</code></dd>
-        <dt>wgs</dt>
-        <dd><code>https://www.w3.org/2003/01/geo/wgs84_pos#</code></dd>
-        <dt>xsd</dt>
-        <dd><code>http://www.w3.org/2001/XMLSchema#</code></dd>
-    </dl>
-</section>
-  <section id="legend">
-      <h2>Legend</h2>
-      <table class="entity">
-          <tr><td><sup class="sup-c" title="Classes">c</sup></td><td>Classes</td></tr>
-          <tr><td><sup class="sup-op" title="Object Properties">op</sup></td><td>Object Properties</td></tr>
-          <tr><td><sup class="sup-fp" title="Functional Properties">fp</sup></td><td>Functional Properties</td></tr>
-          <tr><td><sup class="sup-dp" title="Data Properties">dp</sup></td><td>Data Properties</td></tr>
-          <tr><td><sup class="sup-ap" title="Annotation Properties">ap</sup></td><td>Annotation Properties</td></tr>
-          <tr><td><sup class="sup-p" title="Properties">p</sup></td><td>Properties</td></tr>
-          <tr><td><sup class="sup-ni" title="Named Individuals">ni</sup></td><td>Named Individuals</td></tr>
-      </table>
-  </section>
+<header id="header">
+<h1 align="center">OntologyView</h1>
+</header>
+<div class="container-fluid fill" role="main"><div class="row fill">
+<div class="col-sm-4 fill">
+Search Classes: <input id="search-input" class="search-input" />
+<br /><fieldset id="classesinds"><input id="classes" type="radio" name="classesinds" checked="checked"/>Classes&nbsp;<input type="radio" name="classesinds" id="individuals"/>Individuals</fieldset><br/>
+<div id="jstree_demo_div" class="overflow-auto" style="height:44%">Loading tree...</div>
+<div id="jstree_demo_div1" class="overflow-auto" style="height:44%;display:none" >Loading tree...</div>
+<hr/>
+Search Properties: <input id="search-input2" class="search-input" />
+<br />
+<fieldset id="properties">
+<input id="objprop" name="properties" type="radio" checked="checked"/>ObjectProperties&nbsp;<input type="radio" name="properties" id="dataprop"/>DatatypeProperties<!--&nbsp;<input name="properties" type="radio" id="annoprop"/>AnnotationProperties--></fieldset><br/>
+<div id="jstree_demo_div2" class="overflow-auto" style="height:44%" style="visibility:hidden">Loading tree...</div>
+<div id="jstree_demo_div3" class="overflow-auto" style="height:44%;display:none">Loading tree...</div>
+<div id="jstree_demo_div4" class="overflow-auto" style="height:44%;display:none">Loading tree...</div>
+</div>
+<div class="col-sm-8" style="min-height:100%;height:100%">
+<iframe width="100%" height="100%" id="ontview" src="content.html">
+</iframe>
+</div></div></div>
+<!--
+<button onClick="genclassTree()">
+Generate Class Tree</button>-->
+<footer id="footer">
+</footer>
 </body>
+<script src="classtree.js"></script>
+<script>
+function goToId(id) {
+    if(id.includes("#")){
+		var iframe = document.getElementById("ontview").contentWindow.location.hash=id.substring(id.lastIndexOf('#')+1);
+	}else if(id.startsWith("http")){
+		var iframe = document.getElementById("ontview").contentWindow.location.hash=id.substring(id.lastIndexOf('/')+1);
+	}else{
+		var iframe = document.getElementById("ontview").contentWindow.location.hash=id;
+	}
+}
+function genclassTree(){
+	$('#jstree_demo_div').jstree(generateClassTree(["class"],"has super-classes",true));
+	$('#jstree_demo_div1').jstree(generateClassTree(["named individual"],"belongs to",false));
+	$('#jstree_demo_div2').jstree(generateClassTree(["object property"],"has super-properties",false));
+	$('#jstree_demo_div3').jstree(generateClassTree(["data property","datatype property"],"has super-properties",false));
+	//$('#jstree_demo_div4').jstree(generateClassTree(["annotation property"],""));
+	$('#annoprop').click(function() {
+        $('#jstree_demo_div2').hide();
+        $('#jstree_demo_div3').hide();
+        $('#jstree_demo_div4').show();
+        $( "#search-input2").unbind( "keyup" );
+        $("#search-input2").keyup(function () {
+            var searchString = $(this).val();
+            $('#jstree_demo_div4').jstree('search', searchString);
+        });
+    });
+    $('#dataprop').click(function() {
+        $('#jstree_demo_div2').hide();
+        $('#jstree_demo_div3').show();
+        $('#jstree_demo_div4').hide();
+        $( "#search-input2").unbind( "keyup" );
+        $("#search-input2").keyup(function () {
+            var searchString = $(this).val();
+            $('#jstree_demo_div3').jstree('search', searchString);
+        });
+    });
+    $('#objprop').click(function() {
+        $('#jstree_demo_div2').show();
+        $('#jstree_demo_div3').hide();
+        $('#jstree_demo_div4').hide();
+        $( "#search-input2").unbind( "keyup" );
+        $("#search-input2").keyup(function () {
+            var searchString = $(this).val();
+            $('#jstree_demo_div2').jstree('search', searchString);
+        });
+    });
+    $('#classes').click(function() {
+        $('#jstree_demo_div').show();
+        $('#jstree_demo_div1').hide();
+        $( "#search-input").unbind( "keyup" );
+        $("#search-input").keyup(function () {
+            var searchString = $(this).val();
+            $('#jstree_demo_div').jstree('search', searchString);
+        });
+    });
+    $('#individuals').click(function() {
+        $('#jstree_demo_div').hide();
+        $('#jstree_demo_div1').show();
+        $( "#search-input").unbind( "keyup" );
+        $("#search-input").keyup(function () {
+            var searchString = $(this).val();
+            $('#jstree_demo_div1').jstree('search', searchString);
+        });
+    });
+    $("#jstree_demo_div").on(
+        "select_node.jstree", function(evt, data){
+			//console.log(data)
+			//console.log(data.node.id)
+			goToId(data.node.id)
+            //selected node object: data.node;
+        }
+	);
+	$("#jstree_demo_div1").on(
+        "select_node.jstree", function(evt, data){
+			//console.log(data)
+			//console.log(data.node.id)
+			goToId(data.node.id)
+            //selected node object: data.node;
+        }
+	);
+	$("#jstree_demo_div2").on(
+        "select_node.jstree", function(evt, data){
+			//console.log(data)
+			//console.log(data.node.id)
+			goToId(data.node.id)
+            //selected node object: data.node;
+        }
+	);
+		$("#jstree_demo_div3").on(
+        "select_node.jstree", function(evt, data){
+			//console.log(data)
+			//console.log(data.node.id)
+			goToId(data.node.id)
+            //selected node object: data.node;
+        }
+	);
+		$("#jstree_demo_div4").on(
+        "select_node.jstree", function(evt, data){
+			//console.log(data)
+			//console.log(data.node.id)
+			goToId(data.node.id)
+            //selected node object: data.node;
+        }
+	);
+}
+$('#ontview').on('load', function(){genclassTree()});
+ $("#search-input").keyup(function () {
+      var searchString = $(this).val();
+     $('#jstree_demo_div').jstree('search', searchString);
+ });
+  $("#search-input2").keyup(function () {
+      var searchString = $(this).val();
+     $('#jstree_demo_div2').jstree('search', searchString);
+ });
+</script>
 </html>

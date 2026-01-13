@@ -17,6 +17,8 @@ jobs:
     if: github.run_number != 1
     name: Validate and process
     uses: opengeospatial/bblocks-postprocess/.github/workflows/validate-and-process.yml@master
+    with:
+      skip-pages: true
     secrets:
       sparql_username: ${{ secrets.sparql_username }}
       sparql_password: ${{ secrets.sparql_password }}

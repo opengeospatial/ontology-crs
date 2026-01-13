@@ -56,17 +56,21 @@ jobs:
          touch co_rules.ttl && cp co_rules.ttl ../_sources/co/tests/shapes.shacl
          pylode -o cs/index.html -i cs.ttl
          cp cs.ttl ../_sources/cs/ontology.ttl
+         python ../scripts/classtreedoc.py --input cs/index.html --output cs/content.html
          mv cs.ttl cs/
          pylode -o datum/index.html -i datum.ttl
          cp datum.ttl ../_sources/datum/ontology.ttl
+         python ../scripts/classtreedoc.py --input datum/index.html --output datum/content.html
          mkdir ../_sources/datum/tests/
          touch datum_rules.ttl && cp datum_rules.ttl ../_sources/datum/tests/shapes.shacl
          mv datum.ttl datum/
          pylode -o planet/index.html -i planet.ttl
          cp planet.ttl ../_sources/planet/ontology.ttl
+         python ../scripts/classtreedoc.py --input planet/index.html --output planet/content.html
          mv planet.ttl planet/
          pylode -o projection/index.html -i projection.ttl
          cp projection.ttl ../_sources/projection/ontology.ttl
+         python ../scripts/classtreedoc.py --input projection/index.html --output projection/content.html
          mv projection.ttl projection/
          rm objprop.ttl datatypeprop.ttl 
          cp ../examples/* examples/

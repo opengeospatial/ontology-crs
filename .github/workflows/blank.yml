@@ -78,6 +78,20 @@ jobs:
          BRANCH: gh-pages
          FOLDER: docs/
          clean: false
+
+  validate-and-process:
+    # Avoid running the workflow on template clone
+    needs: build
+    if: github.run_number != 1
+    name: Validate and process
+    uses: opengeospatial/bblocks-postprocess/.github/workflows/validate-and-process.yml@master
+    with:
+      skip-pages: true
+      viewer_path: "bblocks"
+    secrets:
+      sparql_username: ${{ secrets.sparql_username }}
+      sparql_password: ${{ secrets.sparql_password }}
+  
   ontdoc: 
   # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     needs: build

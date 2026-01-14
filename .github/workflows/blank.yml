@@ -83,7 +83,7 @@ jobs:
          FOLDER: docs/
          clean: false
 
-validate-and-process:
+  validate-and-process:
     # Avoid running the workflow on template clone
     if: github.run_number != 1
     name: Validate and process
@@ -119,10 +119,6 @@ validate-and-process:
         # Restore state
         git checkout $CURRENT_BRANCH
         git reset --soft HEAD~1
-
-secrets:
-    sparql_username: ${{ secrets.sparql_username }}
-    sparql_password: ${{ secrets.sparql_password }}
   
   ontdoc: 
   # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it

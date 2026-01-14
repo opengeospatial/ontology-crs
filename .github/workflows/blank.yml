@@ -91,7 +91,7 @@ jobs:
     uses: opengeospatial/bblocks-postprocess/.github/workflows/validate-and-process.yml@master
     with:
       skip-pages: true
-      viewer_path: my-bblocks-viewer/
+      viewer_path: bblocks/
       before_pages: |
         CURRENT_BRANCH=$(git rev-parse --abbrev-ref HEAD)
         TARGET_BRANCH=gh-pages

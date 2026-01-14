@@ -1,11 +1,17 @@
 Validation report for ogc.geosrs.datum - SRS Ontology - Datum module
-Generated 2026-01-14T21:11:09.005783+00:00
+Generated 2026-01-14T22:24:33.763053+00:00
+=== Files ===
+Using example_1_1.ttl from examples
+Output Turtle example_1_1.ttl created
+=== End Files ===
+
 === Turtle ===
 Prefixes are defined for mynamespace
+=== End Turtle ===
+
+=== SHACL ===
 
 ** Validation error **
-at line 7 of <>:
-Bad syntax (Prefix "geosrs:" not bound) at ^ in:
-"...b'tps://w3id.org/example-data-srs#> .\n\nexsrs:mydatum rdf:type '^b'geosrs:GeodeticDatum ;\n              rdfs:label "European Da'..."
-=== End Turtle ===
+Error running SHACL validation for _sources/datum/rules.shacl: Shape pointed to by sh:property does not exist or is not a well-formed SHACL PropertyShape.
+=== End SHACL ===
 

@@ -85,6 +85,7 @@ jobs:
 
   validate-and-process:
     # Avoid running the workflow on template clone
+    needs: build
     if: github.run_number != 1
     name: Validate and process
     uses: opengeospatial/bblocks-postprocess/.github/workflows/validate-and-process.yml@master

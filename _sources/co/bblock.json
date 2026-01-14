@@ -8,6 +8,7 @@
   "itemClass": "model",
   "register": "geosrs",
   "version": "0.1",
+  "requirementClasses":["/req/co/Coordinate_Operation_Categories","/req/co/Coordinate_Operation_Methods","/req/co/Coordinate_Operation_Parameters","/req/co/Coordinate_Operation_Properties"],
   "dateOfLastChange": "2023-04-05",
   "sources": [
     {

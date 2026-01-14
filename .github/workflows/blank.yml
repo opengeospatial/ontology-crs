@@ -95,7 +95,7 @@ jobs:
       before_pages: |
         CURRENT_BRANCH=$(git rev-parse --abbrev-ref HEAD)
         TARGET_BRANCH=gh-pages
-        POSTPROCESS_FILES="build my-bblocks-viewer/index.html my-bblocks-viewer/config.js"
+        POSTPROCESS_FILES="build bblocks/index.html bblocks/config.js"
         
         # Postprocess files
         git add ${POSTPROCESS_FILES}

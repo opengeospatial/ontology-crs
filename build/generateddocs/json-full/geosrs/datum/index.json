@@ -10,6 +10,13 @@
   "dateTimeAddition": "2023-04-05T00:00:00Z",
   "itemClass": "model",
   "register": "geosrs",
+  "requirementClasses": [
+    "/req/datum/Datum_Parameters",
+    "/req/datum/Datum_Properties",
+    "/req/datum/Datum_Types",
+    "/req/datum/Spheroid_Properties",
+    "/req/datum/Spheroid_Types"
+  ],
   "version": "0.1",
   "dateOfLastChange": "2026-01-14",
   "sources": [

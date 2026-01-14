@@ -1,0 +1,366 @@
+{
+  "summary": {
+    "total": 7,
+    "passed": 1,
+    "failed": 6,
+    "result": false
+  },
+  "bblocks": {
+    "ogc.geosrs.app": {
+      "title": "Validation report for ogc.geosrs.app - SRS Ontology - Application module",
+      "bblockName": "SRS Ontology - Application module",
+      "bblockId": "ogc.geosrs.app",
+      "generated": "2026-01-14T21:11:08.991183+00:00",
+      "result": false,
+      "items": [
+        {
+          "source": {
+            "type": "EXAMPLE",
+            "requireFail": false,
+            "filename": "build/tests/geosrs/app/example_1_1.ttl",
+            "url": "https://opengeospatial.github.io/ontology-crs/build/tests/geosrs/app/example_1_1.ttl",
+            "exampleIndex": 1,
+            "snippetIndex": 1,
+            "language": "text/turtle"
+          },
+          "result": false,
+          "sections": [
+            {
+              "name": "TURTLE",
+              "title": "Turtle",
+              "entries": [
+                {
+                  "isError": false,
+                  "message": "Prefixes are defined for mynamespace"
+                }
+              ]
+            },
+            {
+              "name": "UNKNOWN",
+              "title": "Unknown errors",
+              "entries": [
+                {
+                  "exception": "IndexError",
+                  "isError": true,
+                  "message": "Traceback (most recent call last):\n,  File \"/src/ogc/bblocks/validate.py\", line 198, in _validate_resource\n    result = validator.validate(filename, output_filename, report,\n,  File \"/src/ogc/bblocks/validation/rdf.py\", line 316, in validate\n    graph = self._load_graph(filename, output_filename, report,\n,  File \"/src/ogc/bblocks/validation/rdf.py\", line 285, in _load_graph\n    graph = Graph().parse(data=contents, format=rdf_format)\n,  File \"/venv/lib/python3.10/site-packages/rdflib/graph.py\", line 1494, in parse\n    parser.parse(source, self, **args)\n,  File \"/venv/lib/python3.10/site-packages/rdflib/plugins/parsers/notation3.py\", line 2021, in parse\n    p.loadStream(stream)\n,  File \"/venv/lib/python3.10/site-packages/rdflib/plugins/parsers/notation3.py\", line 479, in loadStream\n    return self.loadBuf(stream.read())  # Not ideal\n,  File \"/venv/lib/python3.10/site-packages/rdflib/plugins/parsers/notation3.py\", line 485, in loadBuf\n    self.feed(buf)\n,  File \"/venv/lib/python3.10/site-packages/rdflib/plugins/parsers/notation3.py\", line 511, in feed\n    i = self.directiveOrStatement(s, j)\n,  File \"/venv/lib/python3.10/site-packages/rdflib/plugins/parsers/notation3.py\", line 530, in directiveOrStatement\n    j = self.statement(argstr, i)\n,  File \"/venv/lib/python3.10/site-packages/rdflib/plugins/parsers/notation3.py\", line 778, in statement\n    j = self.property_list(argstr, i, r[0])\n,  File \"/venv/lib/python3.10/site-packages/rdflib/plugins/parsers/notation3.py\", line 1135, in property_list\n    j = self.verb(argstr, i, v)\n,  File \"/venv/lib/python3.10/site-packages/rdflib/plugins/parsers/notation3.py\", line 863, in verb\n    j = self.prop(argstr, i, r)\n,  File \"/venv/lib/python3.10/site-packages/rdflib/plugins/parsers/notation3.py\", line 874, in prop\n    return self.item(argstr, i, res)\n,  File \"/venv/lib/python3.10/site-packages/rdflib/plugins/parsers/notation3.py\", line 877, in item\n    return self.path(argstr, i, res)\n,  File \"/venv/lib/python3.10/site-packages/rdflib/plugins/parsers/notation3.py\", line 888, in path\n    while argstr[j] in {\"!\", \"^\"}:  # no spaces, must follow exactly (?)\n,IndexError: string index out of range\n"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "globalErrors": {},
+      "counts": {
+        "total": 1,
+        "passed": 0,
+        "failed": 1
+      }
+    },
+    "ogc.geosrs.co": {
+      "title": "Validation report for ogc.geosrs.co - SRS Ontology - Coordinate Operation module",
+      "bblockName": "SRS Ontology - Coordinate Operation module",
+      "bblockId": "ogc.geosrs.co",
+      "generated": "2026-01-14T21:11:08.995833+00:00",
+      "result": false,
+      "items": [
+        {
+          "source": {
+            "type": "EXAMPLE",
+            "requireFail": false,
+            "filename": "build/tests/geosrs/co/example_1_1.ttl",
+            "url": "https://opengeospatial.github.io/ontology-crs/build/tests/geosrs/co/example_1_1.ttl",
+            "exampleIndex": 1,
+            "snippetIndex": 1,
+            "language": "text/turtle"
+          },
+          "result": false,
+          "sections": [
+            {
+              "name": "TURTLE",
+              "title": "Turtle",
+              "entries": [
+                {
+                  "isError": false,
+                  "message": "Prefixes are defined for mynamespace"
+                },
+                {
+                  "exception": "BadSyntax",
+                  "isError": true,
+                  "message": "at line 12 of <>:\nBad syntax (objectList expected) at ^ in:\n\"...b'p://www.opengis.net/ont/crs/operation/UTM_zone_32N> rdf:type'^b' geosrs_co:UniversalTransverseMercatorProjection, ;\\n    rdfs'...\""
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "globalErrors": {},
+      "counts": {
+        "total": 1,
+        "passed": 0,
+        "failed": 1
+      }
+    },
+    "ogc.geosrs.cs": {
+      "title": "Validation report for ogc.geosrs.cs - SRS Ontology - Coordinate System module",
+      "bblockName": "SRS Ontology - Coordinate System module",
+      "bblockId": "ogc.geosrs.cs",
+      "generated": "2026-01-14T21:11:09.001345+00:00",
+      "result": false,
+      "items": [
+        {
+          "source": {
+            "type": "EXAMPLE",
+            "requireFail": false,
+            "filename": "build/tests/geosrs/cs/example_1_1.ttl",
+            "url": "https://opengeospatial.github.io/ontology-crs/build/tests/geosrs/cs/example_1_1.ttl",
+            "exampleIndex": 1,
+            "snippetIndex": 1,
+            "language": "text/turtle"
+          },
+          "result": false,
+          "sections": [
+            {
+              "name": "TURTLE",
+              "title": "Turtle",
+              "entries": [
+                {
+                  "isError": false,
+                  "message": "Prefixes are defined for mynamespace"
+                },
+                {
+                  "exception": "BadSyntax",
+                  "isError": true,
+                  "message": "at line 11 of <>:\nBad syntax (objectList expected) at ^ in:\n\"...b'tem with two axis\".\\n          geosrs_cs:axis exsrs:ecs_axis1'^b', exsrs:ecs_axis2 .\\nexsrs:ecs_axis1 rdf:type geosrs_cs:Axis '...\""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "source": {
+            "type": "EXAMPLE",
+            "requireFail": false,
+            "filename": "build/tests/geosrs/cs/example_1_2.ttl",
+            "url": "https://opengeospatial.github.io/ontology-crs/build/tests/geosrs/cs/example_1_2.ttl",
+            "exampleIndex": 1,
+            "snippetIndex": 2,
+            "language": "text/turtle"
+          },
+          "result": false,
+          "sections": [
+            {
+              "name": "TURTLE",
+              "title": "Turtle",
+              "entries": [
+                {
+                  "isError": false,
+                  "message": "Prefixes are defined for mynamespace"
+                },
+                {
+                  "exception": "BadSyntax",
+                  "isError": true,
+                  "message": "at line 10 of <>:\nBad syntax (objectList expected) at ^ in:\n\"...b'm with two axis\".\\n           geosrs_cs:axis exsrs:ecsc_axis1'^b', exsrs:excsc_axis2 .\\nexsrs:ecsc_axis1 rdf:type geosrs_cs:Ax'...\""
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "globalErrors": {},
+      "counts": {
+        "total": 2,
+        "passed": 0,
+        "failed": 2
+      }
+    },
+    "ogc.geosrs.datum": {
+      "title": "Validation report for ogc.geosrs.datum - SRS Ontology - Datum module",
+      "bblockName": "SRS Ontology - Datum module",
+      "bblockId": "ogc.geosrs.datum",
+      "generated": "2026-01-14T21:11:09.005838+00:00",
+      "result": false,
+      "items": [
+        {
+          "source": {
+            "type": "EXAMPLE",
+            "requireFail": false,
+            "filename": "build/tests/geosrs/datum/example_1_1.ttl",
+            "url": "https://opengeospatial.github.io/ontology-crs/build/tests/geosrs/datum/example_1_1.ttl",
+            "exampleIndex": 1,
+            "snippetIndex": 1,
+            "language": "text/turtle"
+          },
+          "result": false,
+          "sections": [
+            {
+              "name": "TURTLE",
+              "title": "Turtle",
+              "entries": [
+                {
+                  "isError": false,
+                  "message": "Prefixes are defined for mynamespace"
+                },
+                {
+                  "exception": "BadSyntax",
+                  "isError": true,
+                  "message": "at line 7 of <>:\nBad syntax (Prefix \"geosrs:\" not bound) at ^ in:\n\"...b'tps://w3id.org/example-data-srs#> .\\n\\nexsrs:mydatum rdf:type '^b'geosrs:GeodeticDatum ;\\n              rdfs:label \"European Da'...\""
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "globalErrors": {},
+      "counts": {
+        "total": 1,
+        "passed": 0,
+        "failed": 1
+      }
+    },
+    "ogc.geosrs.planet": {
+      "title": "Validation report for ogc.geosrs.planet - SRS Ontology - Planet module",
+      "bblockName": "SRS Ontology - Planet module",
+      "bblockId": "ogc.geosrs.planet",
+      "generated": "2026-01-14T21:11:09.010167+00:00",
+      "result": false,
+      "items": [
+        {
+          "source": {
+            "type": "EXAMPLE",
+            "requireFail": false,
+            "filename": "build/tests/geosrs/planet/example_1_1.ttl",
+            "url": "https://opengeospatial.github.io/ontology-crs/build/tests/geosrs/planet/example_1_1.ttl",
+            "exampleIndex": 1,
+            "snippetIndex": 1,
+            "language": "text/turtle"
+          },
+          "result": false,
+          "sections": [
+            {
+              "name": "TURTLE",
+              "title": "Turtle",
+              "entries": [
+                {
+                  "isError": false,
+                  "message": "Prefixes are defined for mynamespace"
+                },
+                {
+                  "exception": "BadSyntax",
+                  "isError": true,
+                  "message": "at line 9 of <>:\nBad syntax (objectList expected) at ^ in:\n\"...b'RS .\\n            geosrs_planet:isApplicableTo exsrs:myplanet'^b' .\\n\\nexsrs:myplanet rdf:type geosrs_planet:Planet ;\\n         '...\""
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "globalErrors": {},
+      "counts": {
+        "total": 1,
+        "passed": 0,
+        "failed": 1
+      }
+    },
+    "ogc.geosrs.projection": {
+      "title": "Validation report for ogc.geosrs.projection - SRS Ontology - Projection module",
+      "bblockName": "SRS Ontology - Projection module",
+      "bblockId": "ogc.geosrs.projection",
+      "generated": "2026-01-14T21:11:09.015946+00:00",
+      "result": true,
+      "items": [
+        {
+          "source": {
+            "type": "EXAMPLE",
+            "requireFail": false,
+            "filename": "build/tests/geosrs/projection/example_1_1.ttl",
+            "url": "https://opengeospatial.github.io/ontology-crs/build/tests/geosrs/projection/example_1_1.ttl",
+            "exampleIndex": 1,
+            "snippetIndex": 1,
+            "language": "text/turtle"
+          },
+          "result": true,
+          "sections": [
+            {
+              "name": "FILES",
+              "title": "Files",
+              "entries": [
+                {
+                  "isError": false,
+                  "message": "Using example_1_1.ttl from examples"
+                },
+                {
+                  "op": "ttl-create",
+                  "empty": false,
+                  "filename": "example_1_1.ttl",
+                  "size": 3,
+                  "isError": false,
+                  "message": "Output Turtle example_1_1.ttl created"
+                }
+              ]
+            },
+            {
+              "name": "TURTLE",
+              "title": "Turtle",
+              "entries": [
+                {
+                  "isError": false,
+                  "message": "Prefixes are defined for mynamespace"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "globalErrors": {},
+      "counts": {
+        "total": 1,
+        "passed": 1,
+        "failed": 0
+      }
+    },
+    "ogc.geosrs.srs": {
+      "title": "Validation report for ogc.geosrs.srs - SRS Core Ontology",
+      "bblockName": "SRS Core Ontology",
+      "bblockId": "ogc.geosrs.srs",
+      "generated": "2026-01-14T21:11:09.020497+00:00",
+      "result": false,
+      "items": [
+        {
+          "source": {
+            "type": "EXAMPLE",
+            "requireFail": false,
+            "filename": "build/tests/geosrs/srs/example_1_1.ttl",
+            "url": "https://opengeospatial.github.io/ontology-crs/build/tests/geosrs/srs/example_1_1.ttl",
+            "exampleIndex": 1,
+            "snippetIndex": 1,
+            "language": "text/turtle"
+          },
+          "result": false,
+          "sections": [
+            {
+              "name": "TURTLE",
+              "title": "Turtle",
+              "entries": [
+                {
+                  "isError": false,
+                  "message": "Prefixes are defined for mynamespace"
+                },
+                {
+                  "exception": "BadSyntax",
+                  "isError": true,
+                  "message": "at line 9 of <>:\nBad syntax (Prefix \"ns1:\" not bound) at ^ in:\n\"...b'proj=utm +zone=32 +ellps=intl +units=m +no_defs +type=crs\"^^'^b'ns1:proj4Literal ;\\n    geosrs:asProjJSON \"{\\'$schema\\':\\'https:'...\""
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "globalErrors": {},
+      "counts": {
+        "total": 1,
+        "passed": 0,
+        "failed": 1
+      }
+    }
+  }
+}

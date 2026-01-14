@@ -1,0 +1,49 @@
+
+# SRS Ontology - Projection module (Model)
+
+`ogc.geosrs.projection` *v0.1*
+
+A building block defining SRS Ontology Projection Module
+
+[*Status*](http://www.opengis.net/def/status): Under development
+
+## Description
+
+## SRS Ontology Coordinate System Module
+
+This module describes how to model a projection system using the SRS ontology vocabulary.
+
+Projection classes and properties are described under the namespace https://w3id.org/geosrs/projection/
+
+![SRS Ontology Projection Module](assets/projection.png)
+
+
+
+
+## Examples
+
+### SRS Ontology Projection Module Example
+#### ttl
+```ttl
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix geosrs_proj:<https://w3id.org/geosrs/projection/> .
+@prefix geosrs:<https://w3id.org/geosrs/> .
+@prefix exsrs: <https://w3id.org/example-data-srs#> .
+
+exsrs:mysrs rdf:type geosrs:GeodeticCRS ;
+            geosrs:conversion exsrs:myproj .
+exsrs:myproj rdf:type geosrs_proj:Projection .
+```
+
+## Sources
+
+* [Sample source document](https://example.com/sources/1)
+
+# For developers
+
+The source code for this Building Block can be found in the following repository:
+
+* URL: [https://github.com/opengeospatial/ontology-crs](https://github.com/opengeospatial/ontology-crs)
+* Path: `_sources/projection`
+

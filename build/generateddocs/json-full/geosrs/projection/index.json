@@ -1,0 +1,54 @@
+
+
+{
+  "itemIdentifier": "ogc.geosrs.projection",
+  "$schema": "metaschema.yaml",
+  "name": "SRS Ontology - Projection module",
+  "highlighted": true,
+  "abstract": "A building block defining SRS Ontology Projection Module",
+  "status": "under-development",
+  "dateTimeAddition": "2023-04-05T00:00:00Z",
+  "itemClass": "model",
+  "register": "geosrs",
+  "version": "0.1",
+  "dateOfLastChange": "2026-01-14",
+  "sources": [
+    {
+      "title": "Sample source document",
+      "link": "https://example.com/sources/1"
+    }
+  ],
+  "maturity": "mature",
+  "scope": "unstable",
+  "tags": [
+    "geosrs"
+  ],
+  "shaclShapes": {},
+  "sourceFiles": "https://opengeospatial.github.io/ontology-crs/_sources/projection/",
+  "rdfData": [],
+  "validationPassed": true,
+  "testOutputs": "https://github.com/opengeospatial/ontology-crs/blob/master/build/tests/geosrs/projection/",
+  "description": "## SRS Ontology Coordinate System Module\n\nThis module describes how to model a projection system using the SRS ontology vocabulary.\n\nProjection classes and properties are described under the namespace https://w3id.org/geosrs/projection/\n\n![SRS Ontology Projection Module](assets/projection.png)\n\n\n\n",
+  "examples": [
+    {
+      "title": "SRS Ontology Projection Module Example",
+      "snippets": [
+        {
+          "language": "ttl",
+          "ref": "examples/projection.ttl",
+          "code": "@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix geosrs_proj:<https://w3id.org/geosrs/projection/> .\n@prefix geosrs:<https://w3id.org/geosrs/> .\n@prefix exsrs: <https://w3id.org/example-data-srs#> .\n\nexsrs:mysrs rdf:type geosrs:GeodeticCRS ;\n            geosrs:conversion exsrs:myproj .\nexsrs:myproj rdf:type geosrs_proj:Projection .",
+          "url": "https://opengeospatial.github.io/ontology-crs/build/tests/geosrs/projection/example_1_1.ttl"
+        }
+      ],
+      "prefixes": {
+        "mynamespace": "https://w3id.org/example-data-srs#"
+      }
+    }
+  ],
+  "examplePrefixes": {
+    "mynamespace": "https://w3id.org/example-data-srs#"
+  },
+  "annotatedSchema": null,
+  "gitRepository": "https://github.com/opengeospatial/ontology-crs",
+  "gitPath": "_sources/projection"
+}

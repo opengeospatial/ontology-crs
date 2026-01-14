@@ -1,0 +1,11 @@
+Validation report for ogc.geosrs.co - SRS Ontology - Coordinate Operation module
+Generated 2026-01-14T21:11:08.995786+00:00
+=== Turtle ===
+Prefixes are defined for mynamespace
+
+** Validation error **
+at line 12 of <>:
+Bad syntax (objectList expected) at ^ in:
+"...b'p://www.opengis.net/ont/crs/operation/UTM_zone_32N> rdf:type'^b' geosrs_co:UniversalTransverseMercatorProjection, ;\n    rdfs'..."
+=== End Turtle ===
+

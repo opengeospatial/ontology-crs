@@ -1,0 +1,11 @@
+Validation report for ogc.geosrs.planet - SRS Ontology - Planet module
+Generated 2026-01-14T21:11:09.010124+00:00
+=== Turtle ===
+Prefixes are defined for mynamespace
+
+** Validation error **
+at line 9 of <>:
+Bad syntax (objectList expected) at ^ in:
+"...b'RS .\n            geosrs_planet:isApplicableTo exsrs:myplanet'^b' .\n\nexsrs:myplanet rdf:type geosrs_planet:Planet ;\n         '..."
+=== End Turtle ===
+

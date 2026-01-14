@@ -1,0 +1,502 @@
+
+
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Building Blocks validation report</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <style>
+            .entry-message {
+                white-space: pre-wrap;
+                font-size: 80%;
+                line-height: 1.1;
+            }
+            *[data-bs-toggle] .caret {
+                display: inline-block;
+                transform: rotate(90deg);
+                transition: transform 0.25s;
+            }
+            *[data-bs-toggle].collapsed .caret {
+                transform: rotate(0deg);
+            }
+            .highlighted {
+                animation: highlight-border 3500ms ease-out;
+            }
+            .highlighted h2 button {
+                animation: highlight 3500ms ease-out;
+            }
+            @keyframes highlight {
+                0% {
+                    background: #ffff90;
+                }
+                100% {
+                    background: var(--bs-accordion-active-bg);
+                }
+            }
+            @keyframes highlight-border {
+                0% {
+                    border-color: red;
+                    border-width: 2px;
+                }
+                100% {
+                    border-color: var(--bs-accordion-border-color);
+                    border-width: var(--bs-accordion-border-width);
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1 class="title">Building blocks validation report</h1>
+            <small class="datetime">Generated at 2026-01-14T21:11:09.033496+00:00</small>
+                <p class="summary fw-semibold text-danger">
+                    Number of passing building blocks: 1 / 7 (14.29%)
+                </p>
+            <div class="text-end small" id="expand-collapse">
+                <a href="#" class="expand-all">Expand all</a>
+                <a href="#" class="collapse-all">Collapse all</a>
+            </div>
+                <div class="accordion mt-2" id="bblock-reports">
+                        <div class="accordion-item bblock-report" data-bblock-id="ogc.geosrs.app" id="bblock-ogc.geosrs.app">
+                            <h2 class="accordion-header bblock-title">
+                                <button class="accordion-button " type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#bblock-collapse-ogc\.geosrs\.app">
+                                    <div class="flex-fill">
+                                        SRS Ontology - Application module
+                                        <small class="ms-2 bblock-id">ogc.geosrs.app</small>
+                                    </div>
+
+                                    <span class="badge text-bg-danger me-2">
+                                            Tests Failed
+                                            (0% passed)
+                                    </span>
+                                </button>
+                            </h2>
+                            <div class="accordion-collapse collapse show" id="bblock-collapse-ogc.geosrs.app">
+                                <div class="accordion-body">
+                                        <p class="summary fw-semibold text-danger">
+                                            Test passed: 0 / 1
+                                        </p>
+                                        <div class="card mb-2 validation-item ">
+                                            <div class="card-body">
+                                                <div class="card-title mb-0">
+                                                    <button type="button" class="btn btn-sm btn-primary collapsed"
+                                                            data-bs-toggle="collapse" data-bs-target="#uid-1"
+                                                            aria-expanded="false" aria-controls="uid-1"
+                                                            style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                                                        <i class="bi bi-caret-right-fill caret"></i>
+                                                        Details
+                                                    </button>
+                                                    <a href="geosrs/app/example_1_1.ttl" target="_blank">example_1_1.ttl</a>
+                                                    <span class="badge bg-secondary example">Example</span>
+                                                    <div class="float-end">
+                                                            <span class="badge text-bg-danger me-2">Failed</span>
+                                                    </div>
+                                                </div>
+                                                <div class="card-text mt-2 validation-text collapse" id="uid-1">
+                                                    <div class="validation-text-inner">
+                                                                    <div class="font-monospace subsection-title mt-2">Turtle</div>
+                                                                    <div class="font-monospace entry-message section-turtle ">Prefixes are defined for mynamespace</div>
+                                                                    <div class="font-monospace subsection-title mt-2">Unknown errors</div>
+                                                                    <div class="font-monospace entry-message section-unknown text-danger">Traceback (most recent call last):
+,  File &quot;/src/ogc/bblocks/validate.py&quot;, line 198, in _validate_resource
+    result = validator.validate(filename, output_filename, report,
+,  File &quot;/src/ogc/bblocks/validation/rdf.py&quot;, line 316, in validate
+    graph = self._load_graph(filename, output_filename, report,
+,  File &quot;/src/ogc/bblocks/validation/rdf.py&quot;, line 285, in _load_graph
+    graph = Graph().parse(data=contents, format=rdf_format)
+,  File &quot;/venv/lib/python3.10/site-packages/rdflib/graph.py&quot;, line 1494, in parse
+    parser.parse(source, self, **args)
+,  File &quot;/venv/lib/python3.10/site-packages/rdflib/plugins/parsers/notation3.py&quot;, line 2021, in parse
+    p.loadStream(stream)
+,  File &quot;/venv/lib/python3.10/site-packages/rdflib/plugins/parsers/notation3.py&quot;, line 479, in loadStream
+    return self.loadBuf(stream.read())  # Not ideal
+,  File &quot;/venv/lib/python3.10/site-packages/rdflib/plugins/parsers/notation3.py&quot;, line 485, in loadBuf
+    self.feed(buf)
+,  File &quot;/venv/lib/python3.10/site-packages/rdflib/plugins/parsers/notation3.py&quot;, line 511, in feed
+    i = self.directiveOrStatement(s, j)
+,  File &quot;/venv/lib/python3.10/site-packages/rdflib/plugins/parsers/notation3.py&quot;, line 530, in directiveOrStatement
+    j = self.statement(argstr, i)
+,  File &quot;/venv/lib/python3.10/site-packages/rdflib/plugins/parsers/notation3.py&quot;, line 778, in statement
+    j = self.property_list(argstr, i, r[0])
+,  File &quot;/venv/lib/python3.10/site-packages/rdflib/plugins/parsers/notation3.py&quot;, line 1135, in property_list
+    j = self.verb(argstr, i, v)
+,  File &quot;/venv/lib/python3.10/site-packages/rdflib/plugins/parsers/notation3.py&quot;, line 863, in verb
+    j = self.prop(argstr, i, r)
+,  File &quot;/venv/lib/python3.10/site-packages/rdflib/plugins/parsers/notation3.py&quot;, line 874, in prop
+    return self.item(argstr, i, res)
+,  File &quot;/venv/lib/python3.10/site-packages/rdflib/plugins/parsers/notation3.py&quot;, line 877, in item
+    return self.path(argstr, i, res)
+,  File &quot;/venv/lib/python3.10/site-packages/rdflib/plugins/parsers/notation3.py&quot;, line 888, in path
+    while argstr[j] in {&quot;!&quot;, &quot;^&quot;}:  # no spaces, must follow exactly (?)
+,IndexError: string index out of range
+</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item bblock-report" data-bblock-id="ogc.geosrs.co" id="bblock-ogc.geosrs.co">
+                            <h2 class="accordion-header bblock-title">
+                                <button class="accordion-button " type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#bblock-collapse-ogc\.geosrs\.co">
+                                    <div class="flex-fill">
+                                        SRS Ontology - Coordinate Operation module
+                                        <small class="ms-2 bblock-id">ogc.geosrs.co</small>
+                                    </div>
+
+                                    <span class="badge text-bg-danger me-2">
+                                            Tests Failed
+                                            (0% passed)
+                                    </span>
+                                </button>
+                            </h2>
+                            <div class="accordion-collapse collapse show" id="bblock-collapse-ogc.geosrs.co">
+                                <div class="accordion-body">
+                                        <p class="summary fw-semibold text-danger">
+                                            Test passed: 0 / 1
+                                        </p>
+                                        <div class="card mb-2 validation-item ">
+                                            <div class="card-body">
+                                                <div class="card-title mb-0">
+                                                    <button type="button" class="btn btn-sm btn-primary collapsed"
+                                                            data-bs-toggle="collapse" data-bs-target="#uid-2"
+                                                            aria-expanded="false" aria-controls="uid-2"
+                                                            style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                                                        <i class="bi bi-caret-right-fill caret"></i>
+                                                        Details
+                                                    </button>
+                                                    <a href="geosrs/co/example_1_1.ttl" target="_blank">example_1_1.ttl</a>
+                                                    <span class="badge bg-secondary example">Example</span>
+                                                    <div class="float-end">
+                                                            <span class="badge text-bg-danger me-2">Failed</span>
+                                                    </div>
+                                                </div>
+                                                <div class="card-text mt-2 validation-text collapse" id="uid-2">
+                                                    <div class="validation-text-inner">
+                                                                    <div class="font-monospace subsection-title mt-2">Turtle</div>
+                                                                    <div class="font-monospace entry-message section-turtle ">Prefixes are defined for mynamespace</div>
+                                                                    <div class="font-monospace entry-message section-turtle text-danger">at line 12 of &lt;&gt;:
+Bad syntax (objectList expected) at ^ in:
+&quot;...b&#x27;p://www.opengis.net/ont/crs/operation/UTM_zone_32N&gt; rdf:type&#x27;^b&#x27; geosrs_co:UniversalTransverseMercatorProjection, ;\n    rdfs&#x27;...&quot;</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item bblock-report" data-bblock-id="ogc.geosrs.cs" id="bblock-ogc.geosrs.cs">
+                            <h2 class="accordion-header bblock-title">
+                                <button class="accordion-button " type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#bblock-collapse-ogc\.geosrs\.cs">
+                                    <div class="flex-fill">
+                                        SRS Ontology - Coordinate System module
+                                        <small class="ms-2 bblock-id">ogc.geosrs.cs</small>
+                                    </div>
+
+                                    <span class="badge text-bg-danger me-2">
+                                            Tests Failed
+                                            (0% passed)
+                                    </span>
+                                </button>
+                            </h2>
+                            <div class="accordion-collapse collapse show" id="bblock-collapse-ogc.geosrs.cs">
+                                <div class="accordion-body">
+                                        <p class="summary fw-semibold text-danger">
+                                            Test passed: 0 / 2
+                                        </p>
+                                        <div class="card mb-2 validation-item ">
+                                            <div class="card-body">
+                                                <div class="card-title mb-0">
+                                                    <button type="button" class="btn btn-sm btn-primary collapsed"
+                                                            data-bs-toggle="collapse" data-bs-target="#uid-3"
+                                                            aria-expanded="false" aria-controls="uid-3"
+                                                            style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                                                        <i class="bi bi-caret-right-fill caret"></i>
+                                                        Details
+                                                    </button>
+                                                    <a href="geosrs/cs/example_1_1.ttl" target="_blank">example_1_1.ttl</a>
+                                                    <span class="badge bg-secondary example">Example</span>
+                                                    <div class="float-end">
+                                                            <span class="badge text-bg-danger me-2">Failed</span>
+                                                    </div>
+                                                </div>
+                                                <div class="card-text mt-2 validation-text collapse" id="uid-3">
+                                                    <div class="validation-text-inner">
+                                                                    <div class="font-monospace subsection-title mt-2">Turtle</div>
+                                                                    <div class="font-monospace entry-message section-turtle ">Prefixes are defined for mynamespace</div>
+                                                                    <div class="font-monospace entry-message section-turtle text-danger">at line 11 of &lt;&gt;:
+Bad syntax (objectList expected) at ^ in:
+&quot;...b&#x27;tem with two axis&quot;.\n          geosrs_cs:axis exsrs:ecs_axis1&#x27;^b&#x27;, exsrs:ecs_axis2 .\nexsrs:ecs_axis1 rdf:type geosrs_cs:Axis &#x27;...&quot;</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card mb-2 validation-item ">
+                                            <div class="card-body">
+                                                <div class="card-title mb-0">
+                                                    <button type="button" class="btn btn-sm btn-primary collapsed"
+                                                            data-bs-toggle="collapse" data-bs-target="#uid-4"
+                                                            aria-expanded="false" aria-controls="uid-4"
+                                                            style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                                                        <i class="bi bi-caret-right-fill caret"></i>
+                                                        Details
+                                                    </button>
+                                                    <a href="geosrs/cs/example_1_2.ttl" target="_blank">example_1_2.ttl</a>
+                                                    <span class="badge bg-secondary example">Example</span>
+                                                    <div class="float-end">
+                                                            <span class="badge text-bg-danger me-2">Failed</span>
+                                                    </div>
+                                                </div>
+                                                <div class="card-text mt-2 validation-text collapse" id="uid-4">
+                                                    <div class="validation-text-inner">
+                                                                    <div class="font-monospace subsection-title mt-2">Turtle</div>
+                                                                    <div class="font-monospace entry-message section-turtle ">Prefixes are defined for mynamespace</div>
+                                                                    <div class="font-monospace entry-message section-turtle text-danger">at line 10 of &lt;&gt;:
+Bad syntax (objectList expected) at ^ in:
+&quot;...b&#x27;m with two axis&quot;.\n           geosrs_cs:axis exsrs:ecsc_axis1&#x27;^b&#x27;, exsrs:excsc_axis2 .\nexsrs:ecsc_axis1 rdf:type geosrs_cs:Ax&#x27;...&quot;</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item bblock-report" data-bblock-id="ogc.geosrs.datum" id="bblock-ogc.geosrs.datum">
+                            <h2 class="accordion-header bblock-title">
+                                <button class="accordion-button " type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#bblock-collapse-ogc\.geosrs\.datum">
+                                    <div class="flex-fill">
+                                        SRS Ontology - Datum module
+                                        <small class="ms-2 bblock-id">ogc.geosrs.datum</small>
+                                    </div>
+
+                                    <span class="badge text-bg-danger me-2">
+                                            Tests Failed
+                                            (0% passed)
+                                    </span>
+                                </button>
+                            </h2>
+                            <div class="accordion-collapse collapse show" id="bblock-collapse-ogc.geosrs.datum">
+                                <div class="accordion-body">
+                                        <p class="summary fw-semibold text-danger">
+                                            Test passed: 0 / 1
+                                        </p>
+                                        <div class="card mb-2 validation-item ">
+                                            <div class="card-body">
+                                                <div class="card-title mb-0">
+                                                    <button type="button" class="btn btn-sm btn-primary collapsed"
+                                                            data-bs-toggle="collapse" data-bs-target="#uid-5"
+                                                            aria-expanded="false" aria-controls="uid-5"
+                                                            style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                                                        <i class="bi bi-caret-right-fill caret"></i>
+                                                        Details
+                                                    </button>
+                                                    <a href="geosrs/datum/example_1_1.ttl" target="_blank">example_1_1.ttl</a>
+                                                    <span class="badge bg-secondary example">Example</span>
+                                                    <div class="float-end">
+                                                            <span class="badge text-bg-danger me-2">Failed</span>
+                                                    </div>
+                                                </div>
+                                                <div class="card-text mt-2 validation-text collapse" id="uid-5">
+                                                    <div class="validation-text-inner">
+                                                                    <div class="font-monospace subsection-title mt-2">Turtle</div>
+                                                                    <div class="font-monospace entry-message section-turtle ">Prefixes are defined for mynamespace</div>
+                                                                    <div class="font-monospace entry-message section-turtle text-danger">at line 7 of &lt;&gt;:
+Bad syntax (Prefix &quot;geosrs:&quot; not bound) at ^ in:
+&quot;...b&#x27;tps://w3id.org/example-data-srs#&gt; .\n\nexsrs:mydatum rdf:type &#x27;^b&#x27;geosrs:GeodeticDatum ;\n              rdfs:label &quot;European Da&#x27;...&quot;</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item bblock-report" data-bblock-id="ogc.geosrs.planet" id="bblock-ogc.geosrs.planet">
+                            <h2 class="accordion-header bblock-title">
+                                <button class="accordion-button " type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#bblock-collapse-ogc\.geosrs\.planet">
+                                    <div class="flex-fill">
+                                        SRS Ontology - Planet module
+                                        <small class="ms-2 bblock-id">ogc.geosrs.planet</small>
+                                    </div>
+
+                                    <span class="badge text-bg-danger me-2">
+                                            Tests Failed
+                                            (0% passed)
+                                    </span>
+                                </button>
+                            </h2>
+                            <div class="accordion-collapse collapse show" id="bblock-collapse-ogc.geosrs.planet">
+                                <div class="accordion-body">
+                                        <p class="summary fw-semibold text-danger">
+                                            Test passed: 0 / 1
+                                        </p>
+                                        <div class="card mb-2 validation-item ">
+                                            <div class="card-body">
+                                                <div class="card-title mb-0">
+                                                    <button type="button" class="btn btn-sm btn-primary collapsed"
+                                                            data-bs-toggle="collapse" data-bs-target="#uid-6"
+                                                            aria-expanded="false" aria-controls="uid-6"
+                                                            style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                                                        <i class="bi bi-caret-right-fill caret"></i>
+                                                        Details
+                                                    </button>
+                                                    <a href="geosrs/planet/example_1_1.ttl" target="_blank">example_1_1.ttl</a>
+                                                    <span class="badge bg-secondary example">Example</span>
+                                                    <div class="float-end">
+                                                            <span class="badge text-bg-danger me-2">Failed</span>
+                                                    </div>
+                                                </div>
+                                                <div class="card-text mt-2 validation-text collapse" id="uid-6">
+                                                    <div class="validation-text-inner">
+                                                                    <div class="font-monospace subsection-title mt-2">Turtle</div>
+                                                                    <div class="font-monospace entry-message section-turtle ">Prefixes are defined for mynamespace</div>
+                                                                    <div class="font-monospace entry-message section-turtle text-danger">at line 9 of &lt;&gt;:
+Bad syntax (objectList expected) at ^ in:
+&quot;...b&#x27;RS .\n            geosrs_planet:isApplicableTo exsrs:myplanet&#x27;^b&#x27; .\n\nexsrs:myplanet rdf:type geosrs_planet:Planet ;\n         &#x27;...&quot;</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item bblock-report" data-bblock-id="ogc.geosrs.projection" id="bblock-ogc.geosrs.projection">
+                            <h2 class="accordion-header bblock-title">
+                                <button class="accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#bblock-collapse-ogc\.geosrs\.projection">
+                                    <div class="flex-fill">
+                                        SRS Ontology - Projection module
+                                        <small class="ms-2 bblock-id">ogc.geosrs.projection</small>
+                                    </div>
+
+                                    <span class="badge text-bg-success me-2">
+                                            Passed
+                                            (100% passed)
+                                    </span>
+                                </button>
+                            </h2>
+                            <div class="accordion-collapse collapse " id="bblock-collapse-ogc.geosrs.projection">
+                                <div class="accordion-body">
+                                        <p class="summary fw-semibold text-success">
+                                            Test passed: 1 / 1
+                                        </p>
+                                        <div class="card mb-2 validation-item ">
+                                            <div class="card-body">
+                                                <div class="card-title mb-0">
+                                                    <button type="button" class="btn btn-sm btn-primary collapsed"
+                                                            data-bs-toggle="collapse" data-bs-target="#uid-7"
+                                                            aria-expanded="false" aria-controls="uid-7"
+                                                            style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                                                        <i class="bi bi-caret-right-fill caret"></i>
+                                                        Details
+                                                    </button>
+                                                    <a href="geosrs/projection/example_1_1.ttl" target="_blank">example_1_1.ttl</a>
+                                                    <span class="badge bg-secondary example">Example</span>
+                                                    <div class="float-end">
+                                                            <span class="badge text-bg-success me-2">Passed</span>
+                                                    </div>
+                                                </div>
+                                                <div class="card-text mt-2 validation-text collapse" id="uid-7">
+                                                    <div class="validation-text-inner">
+                                                                    <div class="font-monospace subsection-title mt-2">Files</div>
+                                                                    <div class="font-monospace entry-message section-files ">Using example_1_1.ttl from examples</div>
+                                                                    <div class="font-monospace entry-message section-files ">Output Turtle example_1_1.ttl created</div>
+                                                                    <div class="font-monospace subsection-title mt-2">Turtle</div>
+                                                                    <div class="font-monospace entry-message section-turtle ">Prefixes are defined for mynamespace</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item bblock-report" data-bblock-id="ogc.geosrs.srs" id="bblock-ogc.geosrs.srs">
+                            <h2 class="accordion-header bblock-title">
+                                <button class="accordion-button " type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#bblock-collapse-ogc\.geosrs\.srs">
+                                    <div class="flex-fill">
+                                        SRS Core Ontology
+                                        <small class="ms-2 bblock-id">ogc.geosrs.srs</small>
+                                    </div>
+
+                                    <span class="badge text-bg-danger me-2">
+                                            Tests Failed
+                                            (0% passed)
+                                    </span>
+                                </button>
+                            </h2>
+                            <div class="accordion-collapse collapse show" id="bblock-collapse-ogc.geosrs.srs">
+                                <div class="accordion-body">
+                                        <p class="summary fw-semibold text-danger">
+                                            Test passed: 0 / 1
+                                        </p>
+                                        <div class="card mb-2 validation-item ">
+                                            <div class="card-body">
+                                                <div class="card-title mb-0">
+                                                    <button type="button" class="btn btn-sm btn-primary collapsed"
+                                                            data-bs-toggle="collapse" data-bs-target="#uid-8"
+                                                            aria-expanded="false" aria-controls="uid-8"
+                                                            style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                                                        <i class="bi bi-caret-right-fill caret"></i>
+                                                        Details
+                                                    </button>
+                                                    <a href="geosrs/srs/example_1_1.ttl" target="_blank">example_1_1.ttl</a>
+                                                    <span class="badge bg-secondary example">Example</span>
+                                                    <div class="float-end">
+                                                            <span class="badge text-bg-danger me-2">Failed</span>
+                                                    </div>
+                                                </div>
+                                                <div class="card-text mt-2 validation-text collapse" id="uid-8">
+                                                    <div class="validation-text-inner">
+                                                                    <div class="font-monospace subsection-title mt-2">Turtle</div>
+                                                                    <div class="font-monospace entry-message section-turtle ">Prefixes are defined for mynamespace</div>
+                                                                    <div class="font-monospace entry-message section-turtle text-danger">at line 9 of &lt;&gt;:
+Bad syntax (Prefix &quot;ns1:&quot; not bound) at ^ in:
+&quot;...b&#x27;proj=utm +zone=32 +ellps=intl +units=m +no_defs +type=crs&quot;^^&#x27;^b&#x27;ns1:proj4Literal ;\n    geosrs:asProjJSON &quot;{\&#x27;$schema\&#x27;:\&#x27;https:&#x27;...&quot;</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        <script type="text/javascript">
+            window.addEventListener('load', () => {
+                const accordionEntries = [...document.querySelectorAll('#bblock-reports .accordion-collapse')];
+                document.querySelector('#expand-collapse').addEventListener('click', ev => {
+                    ev.preventDefault();
+                    if (ev.target.matches('.expand-all')) {
+                        accordionEntries.forEach(e => e.classList.add('show'));
+                    } else if (ev.target.matches('.collapse-all')) {
+                        accordionEntries.forEach(e => e.classList.remove('show'));
+                    }
+                });
+                if (location.hash.startsWith('#bblock-')) {
+                    const highlight = document.querySelector(location.hash.replaceAll('.', '\\.'));
+                    if (highlight) {
+                        highlight.querySelector('.accordion-collapse').classList.add('show');
+                        highlight.classList.add('highlighted');
+                    }
+                }
+            });
+        </script>
+    </body>
+</html>

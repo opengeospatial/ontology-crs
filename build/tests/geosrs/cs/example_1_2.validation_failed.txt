@@ -1,0 +1,11 @@
+Validation report for ogc.geosrs.cs - SRS Ontology - Coordinate System module
+Generated 2026-01-14T21:11:09.001305+00:00
+=== Turtle ===
+Prefixes are defined for mynamespace
+
+** Validation error **
+at line 10 of <>:
+Bad syntax (objectList expected) at ^ in:
+"...b'm with two axis".\n           geosrs_cs:axis exsrs:ecsc_axis1'^b', exsrs:excsc_axis2 .\nexsrs:ecsc_axis1 rdf:type geosrs_cs:Ax'..."
+=== End Turtle ===
+

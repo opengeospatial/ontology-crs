@@ -1,0 +1,44 @@
+{
+  "title": "Validation report for ogc.geosrs.datum - SRS Ontology - Datum module",
+  "bblockName": "SRS Ontology - Datum module",
+  "bblockId": "ogc.geosrs.datum",
+  "generated": "2026-01-14T21:11:09.005838+00:00",
+  "result": false,
+  "items": [
+    {
+      "source": {
+        "type": "EXAMPLE",
+        "requireFail": false,
+        "filename": "build/tests/geosrs/datum/example_1_1.ttl",
+        "url": "https://opengeospatial.github.io/ontology-crs/build/tests/geosrs/datum/example_1_1.ttl",
+        "exampleIndex": 1,
+        "snippetIndex": 1,
+        "language": "text/turtle"
+      },
+      "result": false,
+      "sections": [
+        {
+          "name": "TURTLE",
+          "title": "Turtle",
+          "entries": [
+            {
+              "isError": false,
+              "message": "Prefixes are defined for mynamespace"
+            },
+            {
+              "exception": "BadSyntax",
+              "isError": true,
+              "message": "at line 7 of <>:\nBad syntax (Prefix \"geosrs:\" not bound) at ^ in:\n\"...b'tps://w3id.org/example-data-srs#> .\\n\\nexsrs:mydatum rdf:type '^b'geosrs:GeodeticDatum ;\\n              rdfs:label \"European Da'...\""
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "globalErrors": {},
+  "counts": {
+    "total": 1,
+    "passed": 0,
+    "failed": 1
+  }
+}

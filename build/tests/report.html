@@ -51,9 +51,9 @@
     <body>
         <div class="container">
             <h1 class="title">Building blocks validation report</h1>
-            <small class="datetime">Generated at 2026-01-14T21:11:09.033496+00:00</small>
+            <small class="datetime">Generated at 2026-01-14T22:24:33.791370+00:00</small>
                 <p class="summary fw-semibold text-danger">
-                    Number of passing building blocks: 1 / 7 (14.29%)
+                    Number of passing building blocks: 2 / 7 (28.57%)
                 </p>
             <div class="text-end small" id="expand-collapse">
                 <a href="#" class="expand-all">Expand all</a>
@@ -214,6 +214,19 @@ Bad syntax (objectList expected) at ^ in:
                                         <p class="summary fw-semibold text-danger">
                                             Test passed: 0 / 2
                                         </p>
+                                        <div class="card mb-2 global-validation-item validation-item">
+                                            <div class="card-body">
+                                                <div class="card-title">
+                                                    Building block global validation errors
+                                                    <div class="float-end">
+                                                        <span class="badge text-bg-danger me-2">Failed</span>
+                                                    </div>
+                                                </div>
+                                                <div class="card-text text-danger">
+                                                        <div class="font-monospace entry-message section-shacl">Error running SHACL validation for _sources/cs/rules.shacl: Shape pointed to by sh:property does not exist or is not a well-formed SHACL PropertyShape.</div>
+                                                </div>
+                                            </div>
+                                        </div>
                                         <div class="card mb-2 validation-item ">
                                             <div class="card-body">
                                                 <div class="card-title mb-0">
@@ -232,11 +245,12 @@ Bad syntax (objectList expected) at ^ in:
                                                 </div>
                                                 <div class="card-text mt-2 validation-text collapse" id="uid-3">
                                                     <div class="validation-text-inner">
+                                                            <div class="font-monospace entry-message text-danger">Note: Test failed because there are global validation errors.</div>
                                                                     <div class="font-monospace subsection-title mt-2">Turtle</div>
                                                                     <div class="font-monospace entry-message section-turtle ">Prefixes are defined for mynamespace</div>
-                                                                    <div class="font-monospace entry-message section-turtle text-danger">at line 11 of &lt;&gt;:
-Bad syntax (objectList expected) at ^ in:
-&quot;...b&#x27;tem with two axis&quot;.\n          geosrs_cs:axis exsrs:ecs_axis1&#x27;^b&#x27;, exsrs:ecs_axis2 .\nexsrs:ecs_axis1 rdf:type geosrs_cs:Axis &#x27;...&quot;</div>
+                                                                    <div class="font-monospace entry-message section-turtle text-danger">at line 25 of &lt;&gt;:
+Bad syntax (EOF found after object) at ^ in:
+&quot;b&#x27;@prefix mynamespace: &lt;https://w3id.org/example-data-srs#&gt; .\n@prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; .\n@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .\n@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .\n@prefix om: &lt;http://www.ontology-of-units-of-measure.org/resource/om-2/&gt; .\n@prefix geosrs_cs:&lt;https://w3id.org/geosrs/cs/&gt; .\n@prefix exsrs: &lt;https://w3id.org/example-data-srs#&gt; .\n\nexsrs:ecs rdf:type geosrs_cs:geosrs:EllipsoidalCoordinateSystem ;\n          rdfs:label &quot;My example EllipsoidalCoordinateSystem with two axis&quot;;\n          geosrs_cs:axis exsrs:ecs_axis1, exsrs:ecs_axis2 .\nexsrs:ecs_axis1 rdf:type geosrs_cs:Axis ;\n                rdfs:label &quot;Geodetic latitude&quot; ;\n                om:hasUnit om:degree ;\n                skos:altLabel &quot;Lat&quot; ;\n                geosrs_cs:axisDirection geosrs_cs:North .\nexsrs:ecs_axis2 rdf:type geosrs_cs:Axis ;\n                rdfs:label &quot;Geodetic longitude&quot; ;\n                om:hasUnit om:degree ;\n                skos:altLabel &quot;Lon&quot; ;\n                geosrs_cs:axisDirection geosrs_cs:East \n\n\n&#x27;^b&#x27;&#x27;...&quot;</div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -259,11 +273,12 @@ Bad syntax (objectList expected) at ^ in:
                                                 </div>
                                                 <div class="card-text mt-2 validation-text collapse" id="uid-4">
                                                     <div class="validation-text-inner">
+                                                            <div class="font-monospace entry-message text-danger">Note: Test failed because there are global validation errors.</div>
+                                                                    <div class="font-monospace subsection-title mt-2">Files</div>
+                                                                    <div class="font-monospace entry-message section-files ">Using example_1_2.ttl from examples</div>
+                                                                    <div class="font-monospace entry-message section-files ">Output Turtle example_1_2.ttl created</div>
                                                                     <div class="font-monospace subsection-title mt-2">Turtle</div>
                                                                     <div class="font-monospace entry-message section-turtle ">Prefixes are defined for mynamespace</div>
-                                                                    <div class="font-monospace entry-message section-turtle text-danger">at line 10 of &lt;&gt;:
-Bad syntax (objectList expected) at ^ in:
-&quot;...b&#x27;m with two axis&quot;.\n           geosrs_cs:axis exsrs:ecsc_axis1&#x27;^b&#x27;, exsrs:excsc_axis2 .\nexsrs:ecsc_axis1 rdf:type geosrs_cs:Ax&#x27;...&quot;</div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -292,6 +307,19 @@ Bad syntax (objectList expected) at ^ in:
                                         <p class="summary fw-semibold text-danger">
                                             Test passed: 0 / 1
                                         </p>
+                                        <div class="card mb-2 global-validation-item validation-item">
+                                            <div class="card-body">
+                                                <div class="card-title">
+                                                    Building block global validation errors
+                                                    <div class="float-end">
+                                                        <span class="badge text-bg-danger me-2">Failed</span>
+                                                    </div>
+                                                </div>
+                                                <div class="card-text text-danger">
+                                                        <div class="font-monospace entry-message section-shacl">Error running SHACL validation for _sources/datum/rules.shacl: Shape pointed to by sh:property does not exist or is not a well-formed SHACL PropertyShape.</div>
+                                                </div>
+                                            </div>
+                                        </div>
                                         <div class="card mb-2 validation-item ">
                                             <div class="card-body">
                                                 <div class="card-title mb-0">
@@ -310,11 +338,12 @@ Bad syntax (objectList expected) at ^ in:
                                                 </div>
                                                 <div class="card-text mt-2 validation-text collapse" id="uid-5">
                                                     <div class="validation-text-inner">
+                                                            <div class="font-monospace entry-message text-danger">Note: Test failed because there are global validation errors.</div>
+                                                                    <div class="font-monospace subsection-title mt-2">Files</div>
+                                                                    <div class="font-monospace entry-message section-files ">Using example_1_1.ttl from examples</div>
+                                                                    <div class="font-monospace entry-message section-files ">Output Turtle example_1_1.ttl created</div>
                                                                     <div class="font-monospace subsection-title mt-2">Turtle</div>
                                                                     <div class="font-monospace entry-message section-turtle ">Prefixes are defined for mynamespace</div>
-                                                                    <div class="font-monospace entry-message section-turtle text-danger">at line 7 of &lt;&gt;:
-Bad syntax (Prefix &quot;geosrs:&quot; not bound) at ^ in:
-&quot;...b&#x27;tps://w3id.org/example-data-srs#&gt; .\n\nexsrs:mydatum rdf:type &#x27;^b&#x27;geosrs:GeodeticDatum ;\n              rdfs:label &quot;European Da&#x27;...&quot;</div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -324,7 +353,7 @@ Bad syntax (Prefix &quot;geosrs:&quot; not bound) at ^ in:
                         </div>
                         <div class="accordion-item bblock-report" data-bblock-id="ogc.geosrs.planet" id="bblock-ogc.geosrs.planet">
                             <h2 class="accordion-header bblock-title">
-                                <button class="accordion-button " type="button"
+                                <button class="accordion-button collapsed" type="button"
                                     data-bs-toggle="collapse"
                                     data-bs-target="#bblock-collapse-ogc\.geosrs\.planet">
                                     <div class="flex-fill">
@@ -332,16 +361,16 @@ Bad syntax (Prefix &quot;geosrs:&quot; not bound) at ^ in:
                                         <small class="ms-2 bblock-id">ogc.geosrs.planet</small>
                                     </div>
 
-                                    <span class="badge text-bg-danger me-2">
-                                            Tests Failed
-                                            (0% passed)
+                                    <span class="badge text-bg-success me-2">
+                                            Passed
+                                            (100% passed)
                                     </span>
                                 </button>
                             </h2>
-                            <div class="accordion-collapse collapse show" id="bblock-collapse-ogc.geosrs.planet">
+                            <div class="accordion-collapse collapse " id="bblock-collapse-ogc.geosrs.planet">
                                 <div class="accordion-body">
-                                        <p class="summary fw-semibold text-danger">
-                                            Test passed: 0 / 1
+                                        <p class="summary fw-semibold text-success">
+                                            Test passed: 1 / 1
                                         </p>
                                         <div class="card mb-2 validation-item ">
                                             <div class="card-body">
@@ -356,16 +385,16 @@ Bad syntax (Prefix &quot;geosrs:&quot; not bound) at ^ in:
                                                     <a href="geosrs/planet/example_1_1.ttl" target="_blank">example_1_1.ttl</a>
                                                     <span class="badge bg-secondary example">Example</span>
                                                     <div class="float-end">
-                                                            <span class="badge text-bg-danger me-2">Failed</span>
+                                                            <span class="badge text-bg-success me-2">Passed</span>
                                                     </div>
                                                 </div>
                                                 <div class="card-text mt-2 validation-text collapse" id="uid-6">
                                                     <div class="validation-text-inner">
+                                                                    <div class="font-monospace subsection-title mt-2">Files</div>
+                                                                    <div class="font-monospace entry-message section-files ">Using example_1_1.ttl from examples</div>
+                                                                    <div class="font-monospace entry-message section-files ">Output Turtle example_1_1.ttl created</div>
                                                                     <div class="font-monospace subsection-title mt-2">Turtle</div>
                                                                     <div class="font-monospace entry-message section-turtle ">Prefixes are defined for mynamespace</div>
-                                                                    <div class="font-monospace entry-message section-turtle text-danger">at line 9 of &lt;&gt;:
-Bad syntax (objectList expected) at ^ in:
-&quot;...b&#x27;RS .\n            geosrs_planet:isApplicableTo exsrs:myplanet&#x27;^b&#x27; .\n\nexsrs:myplanet rdf:type geosrs_planet:Planet ;\n         &#x27;...&quot;</div>
                                                     </div>
                                                 </div>
                                             </div>

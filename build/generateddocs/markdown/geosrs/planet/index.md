@@ -27,7 +27,7 @@ Planet classes and properties are described under the namespace https://w3id.org
 @prefix geosrs:<https://w3id.org/geosrs/srs/> .
 @prefix exsrs: <https://w3id.org/example-data-srs#> .
 
-exsrs:mysrs rdf:type geosrs:CRS .
+exsrs:mysrs rdf:type geosrs:CRS ;
             geosrs_planet:isApplicableTo exsrs:myplanet .
 
 exsrs:myplanet rdf:type geosrs_planet:Planet ;

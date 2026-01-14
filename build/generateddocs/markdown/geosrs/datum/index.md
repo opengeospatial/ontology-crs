@@ -26,13 +26,14 @@ Datum classes and properties are described under the namespace https://w3id.org/
 @prefix geosrs_datum:<https://w3id.org/geosrs/datum/> .
 @prefix exsrs: <https://w3id.org/example-data-srs#> .
 
-exsrs:mydatum rdf:type geosrs:GeodeticDatum ;
+exsrs:mydatum rdf:type geosrs_datum:GeodeticDatum ;
               rdfs:label "European Datum 1950" ;
               geosrs_datum:ellipsoid exsrs:myellipsoid .
 exsrs:myellipsoid rdf:type geosrs_datum:Ellipsoid ;
                   rdfs:label "International 1924" ;
                   geosrs_datum:inverseFlattening 297 ;
                   geosrs_datum:semiMajorAxis 6378388 .
+
 ```
 
 ## Sources

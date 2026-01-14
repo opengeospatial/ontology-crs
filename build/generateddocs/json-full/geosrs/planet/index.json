@@ -24,9 +24,10 @@
     "geosrs"
   ],
   "shaclShapes": {},
+  "ontology": "https://opengeospatial.github.io/ontology-crs/build/annotated/geosrs/planet/ontology.ttl",
   "sourceFiles": "https://opengeospatial.github.io/ontology-crs/_sources/planet/",
   "rdfData": [],
-  "validationPassed": false,
+  "validationPassed": true,
   "testOutputs": "https://github.com/opengeospatial/ontology-crs/blob/master/build/tests/geosrs/planet/",
   "description": "## SRS Ontology Planet Module\n\nThis module describes how to model a planetary entity using the SRS ontology vocabulary.\n\nPlanet classes and properties are described under the namespace https://w3id.org/geosrs/planet/\n\n![SRS Ontology Planet Module](assets/planet.png)",
   "examples": [
@@ -36,7 +37,7 @@
         {
           "language": "ttl",
           "ref": "examples/planet.ttl",
-          "code": "@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix geosrs_planet:<https://w3id.org/geosrs/planet/> .\n@prefix geosrs:<https://w3id.org/geosrs/srs/> .\n@prefix exsrs: <https://w3id.org/example-data-srs#> .\n\nexsrs:mysrs rdf:type geosrs:CRS .\n            geosrs_planet:isApplicableTo exsrs:myplanet .\n\nexsrs:myplanet rdf:type geosrs_planet:Planet ;\n               rdfs:label \"My planet\" .\n",
+          "code": "@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix geosrs_planet:<https://w3id.org/geosrs/planet/> .\n@prefix geosrs:<https://w3id.org/geosrs/srs/> .\n@prefix exsrs: <https://w3id.org/example-data-srs#> .\n\nexsrs:mysrs rdf:type geosrs:CRS ;\n            geosrs_planet:isApplicableTo exsrs:myplanet .\n\nexsrs:myplanet rdf:type geosrs_planet:Planet ;\n               rdfs:label \"My planet\" .\n",
           "url": "https://opengeospatial.github.io/ontology-crs/build/tests/geosrs/planet/example_1_1.ttl"
         }
       ],

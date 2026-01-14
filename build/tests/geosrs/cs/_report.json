@@ -2,7 +2,7 @@
   "title": "Validation report for ogc.geosrs.cs - SRS Ontology - Coordinate System module",
   "bblockName": "SRS Ontology - Coordinate System module",
   "bblockId": "ogc.geosrs.cs",
-  "generated": "2026-01-14T21:11:09.001345+00:00",
+  "generated": "2026-01-14T22:24:33.756292+00:00",
   "result": false,
   "items": [
     {
@@ -28,7 +28,7 @@
             {
               "exception": "BadSyntax",
               "isError": true,
-              "message": "at line 11 of <>:\nBad syntax (objectList expected) at ^ in:\n\"...b'tem with two axis\".\\n          geosrs_cs:axis exsrs:ecs_axis1'^b', exsrs:ecs_axis2 .\\nexsrs:ecs_axis1 rdf:type geosrs_cs:Axis '...\""
+              "message": "at line 25 of <>:\nBad syntax (EOF found after object) at ^ in:\n\"b'@prefix mynamespace: <https://w3id.org/example-data-srs#> .\\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\\n@prefix skos: <http://www.w3.org/2004/02/skos/core#> .\\n@prefix om: <http://www.ontology-of-units-of-measure.org/resource/om-2/> .\\n@prefix geosrs_cs:<https://w3id.org/geosrs/cs/> .\\n@prefix exsrs: <https://w3id.org/example-data-srs#> .\\n\\nexsrs:ecs rdf:type geosrs_cs:geosrs:EllipsoidalCoordinateSystem ;\\n          rdfs:label \"My example EllipsoidalCoordinateSystem with two axis\";\\n          geosrs_cs:axis exsrs:ecs_axis1, exsrs:ecs_axis2 .\\nexsrs:ecs_axis1 rdf:type geosrs_cs:Axis ;\\n                rdfs:label \"Geodetic latitude\" ;\\n                om:hasUnit om:degree ;\\n                skos:altLabel \"Lat\" ;\\n                geosrs_cs:axisDirection geosrs_cs:North .\\nexsrs:ecs_axis2 rdf:type geosrs_cs:Axis ;\\n                rdfs:label \"Geodetic longitude\" ;\\n                om:hasUnit om:degree ;\\n                skos:altLabel \"Lon\" ;\\n                geosrs_cs:axisDirection geosrs_cs:East \\n\\n\\n'^b''...\""
             }
           ]
         }
@@ -47,24 +47,50 @@
       "result": false,
       "sections": [
         {
+          "name": "FILES",
+          "title": "Files",
+          "entries": [
+            {
+              "isError": false,
+              "message": "Using example_1_2.ttl from examples"
+            },
+            {
+              "op": "ttl-create",
+              "empty": false,
+              "filename": "example_1_2.ttl",
+              "size": 14,
+              "isError": false,
+              "message": "Output Turtle example_1_2.ttl created"
+            }
+          ]
+        },
+        {
           "name": "TURTLE",
           "title": "Turtle",
           "entries": [
             {
               "isError": false,
               "message": "Prefixes are defined for mynamespace"
-            },
-            {
-              "exception": "BadSyntax",
-              "isError": true,
-              "message": "at line 10 of <>:\nBad syntax (objectList expected) at ^ in:\n\"...b'm with two axis\".\\n           geosrs_cs:axis exsrs:ecsc_axis1'^b', exsrs:excsc_axis2 .\\nexsrs:ecsc_axis1 rdf:type geosrs_cs:Ax'...\""
             }
           ]
+        },
+        {
+          "name": "SHACL",
+          "title": "SHACL",
+          "entries": []
         }
       ]
     }
   ],
-  "globalErrors": {},
+  "globalErrors": {
+    "SHACL": {
+      "exception": "ReportableRuntimeError",
+      "errorMessage": "Shape pointed to by sh:property does not exist or is not a well-formed SHACL PropertyShape.",
+      "shaclFile": "_sources/cs/rules.shacl",
+      "isError": true,
+      "message": "Error running SHACL validation for _sources/cs/rules.shacl: Shape pointed to by sh:property does not exist or is not a well-formed SHACL PropertyShape."
+    }
+  },
   "counts": {
     "total": 2,
     "passed": 0,

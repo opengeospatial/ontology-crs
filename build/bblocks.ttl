@@ -8,7 +8,9 @@
 @prefix prof: <http://www.w3.org/ns/dx/prof/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix role: <http://www.w3.org/ns/dx/prof/role/> .
 @prefix schema: <https://schema.org/> .
+@prefix shacl: <https://www.w3.org/TR/shacl/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -18,12 +20,12 @@
     rdfs:label "SRS Ontology - Application module" ;
     dct:abstract "A building block defining SRS Ontology Application Module"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2023-04-05T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "application/json" ;
-            rdfs:isDefinedBy <https://opengeospatial.github.io/ontology-crs/build/generateddocs/json-full/geosrs/app/index.json> ],
-        [ dct:format "text/markdown" ;
+    dct:description [ dct:format "text/markdown" ;
             rdfs:isDefinedBy <https://opengeospatial.github.io/ontology-crs/build/generateddocs/markdown/geosrs/app/index.md> ],
         [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://opengeospatial.github.io/ontology-crs/my-bblocks-viewer/bblock/ogc.geosrs.app> ] ;
+            rdfs:isDefinedBy <https://opengeospatial.github.io/ontology-crs/my-bblocks-viewer/bblock/ogc.geosrs.app> ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://opengeospatial.github.io/ontology-crs/build/generateddocs/json-full/geosrs/app/index.json> ] ;
     dct:hasVersion "0.1" ;
     dct:modified "2026-01-14"^^xsd:date ;
     dct:source <https://example.com/sources/1> ;
@@ -41,12 +43,12 @@
     rdfs:label "SRS Ontology - Coordinate Operation module" ;
     dct:abstract "A building block defining SRS Ontology Coordinate Operation Module"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2023-04-05T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy <https://opengeospatial.github.io/ontology-crs/build/generateddocs/markdown/geosrs/co/index.md> ],
+    dct:description [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://opengeospatial.github.io/ontology-crs/build/generateddocs/json-full/geosrs/co/index.json> ],
         [ dct:format "text/html" ;
             rdfs:isDefinedBy <https://opengeospatial.github.io/ontology-crs/my-bblocks-viewer/bblock/ogc.geosrs.co> ],
-        [ dct:format "application/json" ;
-            rdfs:isDefinedBy <https://opengeospatial.github.io/ontology-crs/build/generateddocs/json-full/geosrs/co/index.json> ] ;
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://opengeospatial.github.io/ontology-crs/build/generateddocs/markdown/geosrs/co/index.md> ] ;
     dct:hasVersion "0.1" ;
     dct:modified "2026-01-14"^^xsd:date ;
     dct:source <https://example.com/sources/1> ;
@@ -54,52 +56,10 @@
     skos:prefLabel "SRS Ontology - Coordinate Operation module" ;
     skos:topConceptOf <https://opengeospatial.github.io/ontology-crs/> ;
     dcat:keyword "geosrs" ;
-    bblocks:scope <http://www.opengis.net/def/bblocks/scope/unstable> ;
-    bblocks:status <http://www.opengis.net/def/status/under-development> ;
-    bblocks:validationPassed false .
-
-<bblocks://ogc.geosrs.cs> a skos:Concept,
-        dcat:Dataset,
-        bblocks:Model ;
-    rdfs:label "SRS Ontology - Coordinate System module" ;
-    dct:abstract "A building block defining SRS Ontology Coordinate System Module"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
-    dct:created "2023-04-05T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "application/json" ;
-            rdfs:isDefinedBy <https://opengeospatial.github.io/ontology-crs/build/generateddocs/json-full/geosrs/cs/index.json> ],
-        [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy <https://opengeospatial.github.io/ontology-crs/build/generateddocs/markdown/geosrs/cs/index.md> ],
-        [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://opengeospatial.github.io/ontology-crs/my-bblocks-viewer/bblock/ogc.geosrs.cs> ] ;
-    dct:hasVersion "0.1" ;
-    dct:modified "2026-01-14"^^xsd:date ;
-    dct:source <https://example.com/sources/1> ;
-    skos:inScheme <https://opengeospatial.github.io/ontology-crs/> ;
-    skos:prefLabel "SRS Ontology - Coordinate System module" ;
-    skos:topConceptOf <https://opengeospatial.github.io/ontology-crs/> ;
-    dcat:keyword "geosrs" ;
-    bblocks:scope <http://www.opengis.net/def/bblocks/scope/unstable> ;
-    bblocks:status <http://www.opengis.net/def/status/under-development> ;
-    bblocks:validationPassed false .
-
-<bblocks://ogc.geosrs.datum> a skos:Concept,
-        dcat:Dataset,
-        bblocks:Model ;
-    rdfs:label "SRS Ontology - Datum module" ;
-    dct:abstract "A building block defining SRS Ontology Datum Module"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
-    dct:created "2023-04-05T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "application/json" ;
-            rdfs:isDefinedBy <https://opengeospatial.github.io/ontology-crs/build/generateddocs/json-full/geosrs/datum/index.json> ],
-        [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://opengeospatial.github.io/ontology-crs/my-bblocks-viewer/bblock/ogc.geosrs.datum> ],
-        [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy <https://opengeospatial.github.io/ontology-crs/build/generateddocs/markdown/geosrs/datum/index.md> ] ;
-    dct:hasVersion "0.1" ;
-    dct:modified "2026-01-14"^^xsd:date ;
-    dct:source <https://example.com/sources/1> ;
-    skos:inScheme <https://opengeospatial.github.io/ontology-crs/> ;
-    skos:prefLabel "SRS Ontology - Datum module" ;
-    skos:topConceptOf <https://opengeospatial.github.io/ontology-crs/> ;
-    dcat:keyword "geosrs" ;
+    prof:hasResource [ dct:conformsTo owl:Ontology ;
+            dct:format "text/turtle" ;
+            prof:hasArtifact <https://opengeospatial.github.io/ontology-crs/build/annotated/geosrs/co/ontology.ttl> ;
+            prof:hasRole role:specification ] ;
     bblocks:scope <http://www.opengis.net/def/bblocks/scope/unstable> ;
     bblocks:status <http://www.opengis.net/def/status/under-development> ;
     bblocks:validationPassed false .
@@ -123,9 +83,13 @@
     skos:prefLabel "SRS Ontology - Planet module" ;
     skos:topConceptOf <https://opengeospatial.github.io/ontology-crs/> ;
     dcat:keyword "geosrs" ;
+    prof:hasResource [ dct:conformsTo owl:Ontology ;
+            dct:format "text/turtle" ;
+            prof:hasArtifact <https://opengeospatial.github.io/ontology-crs/build/annotated/geosrs/planet/ontology.ttl> ;
+            prof:hasRole role:specification ] ;
     bblocks:scope <http://www.opengis.net/def/bblocks/scope/unstable> ;
     bblocks:status <http://www.opengis.net/def/status/under-development> ;
-    bblocks:validationPassed false .
+    bblocks:validationPassed true .
 
 <bblocks://ogc.geosrs.projection> a skos:Concept,
         dcat:Dataset,
@@ -133,12 +97,12 @@
     rdfs:label "SRS Ontology - Projection module" ;
     dct:abstract "A building block defining SRS Ontology Projection Module"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2023-04-05T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "application/json" ;
+    dct:description [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://opengeospatial.github.io/ontology-crs/my-bblocks-viewer/bblock/ogc.geosrs.projection> ],
+        [ dct:format "application/json" ;
             rdfs:isDefinedBy <https://opengeospatial.github.io/ontology-crs/build/generateddocs/json-full/geosrs/projection/index.json> ],
         [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy <https://opengeospatial.github.io/ontology-crs/build/generateddocs/markdown/geosrs/projection/index.md> ],
-        [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://opengeospatial.github.io/ontology-crs/my-bblocks-viewer/bblock/ogc.geosrs.projection> ] ;
+            rdfs:isDefinedBy <https://opengeospatial.github.io/ontology-crs/build/generateddocs/markdown/geosrs/projection/index.md> ] ;
     dct:hasVersion "0.1" ;
     dct:modified "2026-01-14"^^xsd:date ;
     dct:source <https://example.com/sources/1> ;
@@ -146,9 +110,92 @@
     skos:prefLabel "SRS Ontology - Projection module" ;
     skos:topConceptOf <https://opengeospatial.github.io/ontology-crs/> ;
     dcat:keyword "geosrs" ;
+    prof:hasResource [ dct:conformsTo owl:Ontology ;
+            dct:format "text/turtle" ;
+            prof:hasArtifact <https://opengeospatial.github.io/ontology-crs/build/annotated/geosrs/projection/ontology.ttl> ;
+            prof:hasRole role:specification ] ;
     bblocks:scope <http://www.opengis.net/def/bblocks/scope/unstable> ;
     bblocks:status <http://www.opengis.net/def/status/under-development> ;
     bblocks:validationPassed true .
+
+<https://opengeospatial.github.io/ontology-crs/build/bblocks.ttl> a prov:Entity ;
+    dct:format "text/turtle" ;
+    prov:wasAttributedTo _:N01ac86f3430944ff81dc903516bf55ec ;
+    prov:wasGeneratedBy [ a prov:Activity ;
+            prov:endedAtTime "2026-01-14T22:24:33.983488"^^xsd:dateTime ;
+            prov:startedAtTime "2026-01-14T22:24:33.793064"^^xsd:dateTime ;
+            prov:used [ a prov:Entity ;
+                    dct:format "application/yaml" ;
+                    rdfs:seeAlso <file:///src/ogc/bblocks/register-context.yaml> ],
+                [ a prov:Entity ;
+                    dct:format "application/json" ;
+                    dct:hasVersion "git:8c38b6af0e542be04e2329466ed1f8f650475659" ;
+                    rdfs:seeAlso <https://opengeospatial.github.io/ontology-crs/build/register.json> ] ;
+            prov:wasAssociatedWith _:N01ac86f3430944ff81dc903516bf55ec ] .
+
+<bblocks://ogc.geosrs.cs> a skos:Concept,
+        dcat:Dataset,
+        bblocks:Model ;
+    rdfs:label "SRS Ontology - Coordinate System module" ;
+    dct:abstract "A building block defining SRS Ontology Coordinate System Module"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:created "2023-04-05T00:00:00+00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://opengeospatial.github.io/ontology-crs/build/generateddocs/json-full/geosrs/cs/index.json> ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://opengeospatial.github.io/ontology-crs/my-bblocks-viewer/bblock/ogc.geosrs.cs> ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://opengeospatial.github.io/ontology-crs/build/generateddocs/markdown/geosrs/cs/index.md> ] ;
+    dct:hasVersion "0.1" ;
+    dct:modified "2026-01-14"^^xsd:date ;
+    dct:source <https://example.com/sources/1> ;
+    skos:inScheme <https://opengeospatial.github.io/ontology-crs/> ;
+    skos:prefLabel "SRS Ontology - Coordinate System module" ;
+    skos:topConceptOf <https://opengeospatial.github.io/ontology-crs/> ;
+    dcat:keyword "geosrs" ;
+    prof:hasResource [ dct:conformsTo owl:Ontology ;
+            dct:format "text/turtle" ;
+            prof:hasArtifact <https://opengeospatial.github.io/ontology-crs/build/annotated/geosrs/cs/ontology.ttl> ;
+            prof:hasRole role:specification ],
+        [ dct:conformsTo shacl: ;
+            dct:format "text/turtle" ;
+            rdfs:seeAlso <bblocks://ogc.geosrs.cs> ;
+            prof:hasArtifact <https://opengeospatial.github.io/ontology-crs/_sources/cs/rules.shacl> ;
+            prof:hasRole role:validation ] ;
+    bblocks:scope <http://www.opengis.net/def/bblocks/scope/unstable> ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> ;
+    bblocks:validationPassed false .
+
+<bblocks://ogc.geosrs.datum> a skos:Concept,
+        dcat:Dataset,
+        bblocks:Model ;
+    rdfs:label "SRS Ontology - Datum module" ;
+    dct:abstract "A building block defining SRS Ontology Datum Module"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:created "2023-04-05T00:00:00+00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://opengeospatial.github.io/ontology-crs/build/generateddocs/json-full/geosrs/datum/index.json> ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://opengeospatial.github.io/ontology-crs/build/generateddocs/markdown/geosrs/datum/index.md> ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://opengeospatial.github.io/ontology-crs/my-bblocks-viewer/bblock/ogc.geosrs.datum> ] ;
+    dct:hasVersion "0.1" ;
+    dct:modified "2026-01-14"^^xsd:date ;
+    dct:source <https://example.com/sources/1> ;
+    skos:inScheme <https://opengeospatial.github.io/ontology-crs/> ;
+    skos:prefLabel "SRS Ontology - Datum module" ;
+    skos:topConceptOf <https://opengeospatial.github.io/ontology-crs/> ;
+    dcat:keyword "geosrs" ;
+    prof:hasResource [ dct:conformsTo owl:Ontology ;
+            dct:format "text/turtle" ;
+            prof:hasArtifact <https://opengeospatial.github.io/ontology-crs/build/annotated/geosrs/datum/ontology.ttl> ;
+            prof:hasRole role:specification ],
+        [ dct:conformsTo shacl: ;
+            dct:format "text/turtle" ;
+            rdfs:seeAlso <bblocks://ogc.geosrs.datum> ;
+            prof:hasArtifact <https://opengeospatial.github.io/ontology-crs/_sources/datum/rules.shacl> ;
+            prof:hasRole role:validation ] ;
+    bblocks:scope <http://www.opengis.net/def/bblocks/scope/unstable> ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> ;
+    bblocks:validationPassed false .
 
 <bblocks://ogc.geosrs.srs> a skos:Concept,
         dcat:Dataset,
@@ -158,10 +205,10 @@
     dct:created "2023-04-05T00:00:00+00:00"^^xsd:dateTime ;
     dct:description [ dct:format "text/markdown" ;
             rdfs:isDefinedBy <https://opengeospatial.github.io/ontology-crs/build/generateddocs/markdown/geosrs/srs/index.md> ],
-        [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://opengeospatial.github.io/ontology-crs/my-bblocks-viewer/bblock/ogc.geosrs.srs> ],
         [ dct:format "application/json" ;
-            rdfs:isDefinedBy <https://opengeospatial.github.io/ontology-crs/build/generateddocs/json-full/geosrs/srs/index.json> ] ;
+            rdfs:isDefinedBy <https://opengeospatial.github.io/ontology-crs/build/generateddocs/json-full/geosrs/srs/index.json> ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://opengeospatial.github.io/ontology-crs/my-bblocks-viewer/bblock/ogc.geosrs.srs> ] ;
     dct:hasVersion "0.1" ;
     dct:modified "2026-01-14"^^xsd:date ;
     dct:source <https://example.com/sources/1> ;
@@ -169,24 +216,18 @@
     skos:prefLabel "SRS Core Ontology" ;
     skos:topConceptOf <https://opengeospatial.github.io/ontology-crs/> ;
     dcat:keyword "geosrs" ;
+    prof:hasResource [ dct:conformsTo owl:Ontology ;
+            dct:format "text/turtle" ;
+            prof:hasArtifact <https://opengeospatial.github.io/ontology-crs/build/annotated/geosrs/srs/ontology.ttl> ;
+            prof:hasRole role:specification ],
+        [ dct:conformsTo shacl: ;
+            dct:format "text/turtle" ;
+            rdfs:seeAlso <bblocks://ogc.geosrs.srs> ;
+            prof:hasArtifact <https://opengeospatial.github.io/ontology-crs/_sources/srs/rules.shacl> ;
+            prof:hasRole role:validation ] ;
     bblocks:scope <http://www.opengis.net/def/bblocks/scope/unstable> ;
     bblocks:status <http://www.opengis.net/def/status/under-development> ;
     bblocks:validationPassed false .
-
-<https://opengeospatial.github.io/ontology-crs/build/bblocks.ttl> a prov:Entity ;
-    dct:format "text/turtle" ;
-    prov:wasAttributedTo _:N7ac8525dcb9449d5a10f1353b2c0f699 ;
-    prov:wasGeneratedBy [ a prov:Activity ;
-            prov:endedAtTime "2026-01-14T21:11:09.228804"^^xsd:dateTime ;
-            prov:startedAtTime "2026-01-14T21:11:09.035270"^^xsd:dateTime ;
-            prov:used [ a prov:Entity ;
-                    dct:format "application/json" ;
-                    dct:hasVersion "git:06a6ce1d30185dacb9ceb0732560ed48c9b3adae" ;
-                    rdfs:seeAlso <https://opengeospatial.github.io/ontology-crs/build/register.json> ],
-                [ a prov:Entity ;
-                    dct:format "application/yaml" ;
-                    rdfs:seeAlso <file:///src/ogc/bblocks/register-context.yaml> ] ;
-            prov:wasAssociatedWith _:N7ac8525dcb9449d5a10f1353b2c0f699 ] .
 
 <https://example.com/sources/1> rdfs:label "Sample source document" .
 
@@ -202,7 +243,7 @@ Each fragment allows for transparent and validatable use of JSON-LD contexts to 
 
  Each building block allows for examples transformed to RDF, which in turn allows for the use of SHACL rules to enforce the semantics of the GeoSPARQL specifications.
 """^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
-    dct:modified "2026-01-14T21:11:08.744178"^^xsd:dateTime ;
+    dct:modified "2026-01-14T22:24:33.343436"^^xsd:dateTime ;
     owl:imports <https://opengeospatial.github.io/bblocks/register.json> ;
     skos:hasTopConcept <bblocks://ogc.geosrs.app>,
         <bblocks://ogc.geosrs.co>,
@@ -212,14 +253,14 @@ Each fragment allows for transparent and validatable use of JSON-LD contexts to 
         <bblocks://ogc.geosrs.projection>,
         <bblocks://ogc.geosrs.srs> ;
     skos:prefLabel "Building Blocks - SRS Ontology" ;
-    prof:hasResource [ rdfs:label "This Building Blocks Register in RDF Turtle format" ;
-            dct:type "text/turtle" ;
-            ns2:relation <http://www.iana.org/assignments/relation/self> ;
-            ns1:hasTarget <https://opengeospatial.github.io/ontology-crs/build/bblocks.ttl> ],
-        [ rdfs:label "This Building Blocks Register in JSON-LD format" ;
+    prof:hasResource [ rdfs:label "This Building Blocks Register in JSON-LD format" ;
             dct:type "application/ld+json" ;
             ns2:relation <http://www.iana.org/assignments/relation/self> ;
             ns1:hasTarget <https://opengeospatial.github.io/ontology-crs/build/bblocks.jsonld> ],
+        [ rdfs:label "This Building Blocks Register in RDF Turtle format" ;
+            dct:type "text/turtle" ;
+            ns2:relation <http://www.iana.org/assignments/relation/self> ;
+            ns1:hasTarget <https://opengeospatial.github.io/ontology-crs/build/bblocks.ttl> ],
         [ rdfs:label "This Building Blocks Register in JSON format" ;
             dct:type "application/json" ;
             ns2:relation <http://www.iana.org/assignments/relation/self> ;
@@ -227,7 +268,7 @@ Each fragment allows for transparent and validatable use of JSON-LD contexts to 
     foaf:homepage <https://opengeospatial.github.io/ontology-crs/my-bblocks-viewer/> ;
     bblocks:hasValidationReport <https://opengeospatial.github.io/ontology-crs/build/tests/report.html> .
 
-_:N7ac8525dcb9449d5a10f1353b2c0f699 a prov:Agent,
+_:N01ac86f3430944ff81dc903516bf55ec a prov:Agent,
         schema:SoftwareApplication ;
     rdfs:label "OGC-NA tools" ;
     dct:hasVersion "0.5.14" ;

@@ -2,8 +2,8 @@
   "title": "Validation report for ogc.geosrs.planet - SRS Ontology - Planet module",
   "bblockName": "SRS Ontology - Planet module",
   "bblockId": "ogc.geosrs.planet",
-  "generated": "2026-01-14T21:11:09.010167+00:00",
-  "result": false,
+  "generated": "2026-01-14T22:24:33.767789+00:00",
+  "result": true,
   "items": [
     {
       "source": {
@@ -15,8 +15,26 @@
         "snippetIndex": 1,
         "language": "text/turtle"
       },
-      "result": false,
+      "result": true,
       "sections": [
+        {
+          "name": "FILES",
+          "title": "Files",
+          "entries": [
+            {
+              "isError": false,
+              "message": "Using example_1_1.ttl from examples"
+            },
+            {
+              "op": "ttl-create",
+              "empty": false,
+              "filename": "example_1_1.ttl",
+              "size": 4,
+              "isError": false,
+              "message": "Output Turtle example_1_1.ttl created"
+            }
+          ]
+        },
         {
           "name": "TURTLE",
           "title": "Turtle",
@@ -24,11 +42,6 @@
             {
               "isError": false,
               "message": "Prefixes are defined for mynamespace"
-            },
-            {
-              "exception": "BadSyntax",
-              "isError": true,
-              "message": "at line 9 of <>:\nBad syntax (objectList expected) at ^ in:\n\"...b'RS .\\n            geosrs_planet:isApplicableTo exsrs:myplanet'^b' .\\n\\nexsrs:myplanet rdf:type geosrs_planet:Planet ;\\n         '...\""
             }
           ]
         }
@@ -38,7 +51,7 @@
   "globalErrors": {},
   "counts": {
     "total": 1,
-    "passed": 0,
-    "failed": 1
+    "passed": 1,
+    "failed": 0
   }
 }

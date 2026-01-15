@@ -2,7 +2,7 @@
   "title": "Validation report for ogc.geosrs.cs - SRS Ontology - Coordinate System module",
   "bblockName": "SRS Ontology - Coordinate System module",
   "bblockId": "ogc.geosrs.cs",
-  "generated": "2026-01-15T09:42:30.232025+00:00",
+  "generated": "2026-01-15T10:30:59.688028+00:00",
   "result": false,
   "items": [
     {
@@ -18,17 +18,110 @@
       "result": false,
       "sections": [
         {
+          "name": "FILES",
+          "title": "Files",
+          "entries": [
+            {
+              "isError": false,
+              "message": "Using example_1_1.ttl from examples"
+            },
+            {
+              "op": "ttl-create",
+              "empty": false,
+              "filename": "example_1_1.ttl",
+              "size": 14,
+              "isError": false,
+              "message": "Output Turtle example_1_1.ttl created"
+            }
+          ]
+        },
+        {
           "name": "TURTLE",
           "title": "Turtle",
           "entries": [
             {
               "isError": false,
               "message": "Prefixes are defined for mynamespace"
+            }
+          ]
+        },
+        {
+          "name": "SHACL",
+          "title": "SHACL",
+          "entries": [
+            {
+              "op": "shacl-report",
+              "shaclFile": "_sources/cs/rules.shacl",
+              "graph": "@prefix geosrs: <https://w3id.org/geosrs/> .\n@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms false ;\n    sh:result [ a sh:ValidationResult ;\n            sh:focusNode geosrs:CurvilinearCoordinateSystem ;\n            sh:resultMessage \"A curvilinear coordinate system is defined in Euclidean space and should therefore have at least three axes\"@en ;\n            sh:resultPath geosrs:axis ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;\n            sh:sourceShape geosrs:CurvilinearCoordinateSystemShape_Property ],\n        [ a sh:ValidationResult ;\n            sh:focusNode geosrs:CylindricalCoordinateSystem ;\n            sh:resultMessage \"A cylindrical coordinate system should have at least three axes\"@en ;\n            sh:resultPath geosrs:axis ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;\n            sh:sourceShape geosrs:CylindricalCoordinateSystemShape_Property ],\n        [ a sh:ValidationResult ;\n            sh:focusNode geosrs:TemporalCoordinateSystem ;\n            sh:resultMessage \"A temporal coordinate system should have exactly one axis\"@en ;\n            sh:resultPath geosrs:axis ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;\n            sh:sourceShape geosrs:TemporalCoordinateSystemShape_Property ],\n        [ a sh:ValidationResult ;\n            sh:focusNode geosrs:CoordinateSystem ;\n            sh:resultMessage \"A coordinate system should have at least one axis\"@en ;\n            sh:resultPath geosrs:axis ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;\n            sh:sourceShape geosrs:CoordinateSystemShape_Property ],\n        [ a sh:ValidationResult ;\n            sh:focusNode geosrs:CoordinateSystemAxis ;\n            sh:resultMessage \"A coordinate system axis should have exactly one axis direction\"@en ;\n            sh:resultPath geosrs:axisDirection ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;\n            sh:sourceShape geosrs:CoordinateSystemAxisShape_Property ],\n        [ a sh:ValidationResult ;\n            sh:focusNode geosrs:TemporalCountCoordinateSystem ;\n            sh:resultMessage \"A temporal count coordinate system should have exactly one axis\"@en ;\n            sh:resultPath geosrs:axis ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;\n            sh:sourceShape geosrs:TemporalCountCoordinateSystemShape_Property ],\n        [ a sh:ValidationResult ;\n            sh:focusNode geosrs:PlanarCoordinateSystem ;\n            sh:resultMessage \"A planar coordinate system should have at least two axes\"@en ;\n            sh:resultPath geosrs:axis ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;\n            sh:sourceShape geosrs:PlanarCoordinateSystemShape_Property ],\n        [ a sh:ValidationResult ;\n            sh:focusNode geosrs:3DCoordinateSystem ;\n            sh:resultMessage \"A 3D coordinate system should have at least three axes\"@en ;\n            sh:resultPath geosrs:axis ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;\n            sh:sourceShape geosrs:3DCoordinateSystemShape_Property ],\n        [ a sh:ValidationResult ;\n            sh:focusNode geosrs:ConicalCoordinateSystem ;\n            sh:resultMessage \"A conical coordinate system should have at least three axes\"@en ;\n            sh:resultPath geosrs:axis ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;\n            sh:sourceShape geosrs:ConicalCoordinateSystemShape_Property ],\n        [ a sh:ValidationResult ;\n            sh:focusNode geosrs:DateTimeTemporalCoordinateSystem ;\n            sh:resultMessage \"A date time temporal coordinate system should have exactly one axis\"@en ;\n            sh:resultPath geosrs:axis ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;\n            sh:sourceShape geosrs:DateTimeTemporalCoordinateSystemShape_Property ],\n        [ a sh:ValidationResult ;\n            sh:focusNode geosrs:1DCoordinateSystem ;\n            sh:resultMessage \"A 1D coordinate system should have exactly one axis\"@en ;\n            sh:resultPath geosrs:axis ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;\n            sh:sourceShape geosrs:1DCoordinateSystemShape_Property ],\n        [ a sh:ValidationResult ;\n            sh:focusNode geosrs:TemporalMeasureCoordinateSystem ;\n            sh:resultMessage \"A temporal measure coordinate system should have exactly one axis\"@en ;\n            sh:resultPath geosrs:axis ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;\n            sh:sourceShape geosrs:TemporalMeasureCoordinateSystemShape_Property ] .\n\n",
+              "isError": true,
+              "message": "Validation result for _sources/cs/rules.shacl:\n  Validation Report\n  Conforms: False\n  Results (12):\n  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):\n  \tSeverity: sh:Violation\n  \tSource Shape: geosrs:ConicalCoordinateSystemShape_Property\n  \tFocus Node: <https://w3id.org/geosrs/ConicalCoordinateSystem>\n  \tResult Path: geosrs:axis\n  \tMessage: A conical coordinate system should have at least three axes\n  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):\n  \tSeverity: sh:Violation\n  \tSource Shape: geosrs:CurvilinearCoordinateSystemShape_Property\n  \tFocus Node: <https://w3id.org/geosrs/CurvilinearCoordinateSystem>\n  \tResult Path: geosrs:axis\n  \tMessage: A curvilinear coordinate system is defined in Euclidean space and should therefore have at least three axes\n  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):\n  \tSeverity: sh:Violation\n  \tSource Shape: geosrs:DateTimeTemporalCoordinateSystemShape_Property\n  \tFocus Node: <https://w3id.org/geosrs/DateTimeTemporalCoordinateSystem>\n  \tResult Path: geosrs:axis\n  \tMessage: A date time temporal coordinate system should have exactly one axis\n  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):\n  \tSeverity: sh:Violation\n  \tSource Shape: geosrs:CylindricalCoordinateSystemShape_Property\n  \tFocus Node: <https://w3id.org/geosrs/CylindricalCoordinateSystem>\n  \tResult Path: geosrs:axis\n  \tMessage: A cylindrical coordinate system should have at least three axes\n  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):\n  \tSeverity: sh:Violation\n  \tSource Shape: geosrs:CoordinateSystemShape_Property\n  \tFocus Node: <https://w3id.org/geosrs/CoordinateSystem>\n  \tResult Path: geosrs:axis\n  \tMessage: A coordinate system should have at least one axis\n  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):\n  \tSeverity: sh:Violation\n  \tSource Shape: geosrs:3DCoordinateSystemShape_Property\n  \tFocus Node: <https://w3id.org/geosrs/3DCoordinateSystem>\n  \tResult Path: geosrs:axis\n  \tMessage: A 3D coordinate system should have at least three axes\n  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):\n  \tSeverity: sh:Violation\n  \tSource Shape: geosrs:PlanarCoordinateSystemShape_Property\n  \tFocus Node: <https://w3id.org/geosrs/PlanarCoordinateSystem>\n  \tResult Path: geosrs:axis\n  \tMessage: A planar coordinate system should have at least two axes\n  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):\n  \tSeverity: sh:Violation\n  \tSource Shape: geosrs:TemporalCoordinateSystemShape_Property\n  \tFocus Node: <https://w3id.org/geosrs/TemporalCoordinateSystem>\n  \tResult Path: geosrs:axis\n  \tMessage: A temporal coordinate system should have exactly one axis\n  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):\n  \tSeverity: sh:Violation\n  \tSource Shape: geosrs:TemporalMeasureCoordinateSystemShape_Property\n  \tFocus Node: <https://w3id.org/geosrs/TemporalMeasureCoordinateSystem>\n  \tResult Path: geosrs:axis\n  \tMessage: A temporal measure coordinate system should have exactly one axis\n  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):\n  \tSeverity: sh:Violation\n  \tSource Shape: geosrs:CoordinateSystemAxisShape_Property\n  \tFocus Node: <https://w3id.org/geosrs/CoordinateSystemAxis>\n  \tResult Path: geosrs:axisDirection\n  \tMessage: A coordinate system axis should have exactly one axis direction\n  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):\n  \tSeverity: sh:Violation\n  \tSource Shape: geosrs:1DCoordinateSystemShape_Property\n  \tFocus Node: <https://w3id.org/geosrs/1DCoordinateSystem>\n  \tResult Path: geosrs:axis\n  \tMessage: A 1D coordinate system should have exactly one axis\n  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):\n  \tSeverity: sh:Violation\n  \tSource Shape: geosrs:TemporalCountCoordinateSystemShape_Property\n  \tFocus Node: <https://w3id.org/geosrs/TemporalCountCoordinateSystem>\n  \tResult Path: geosrs:axis\n  \tMessage: A temporal count coordinate system should have exactly one axis\n  "
             },
             {
-              "exception": "BadSyntax",
-              "isError": true,
-              "message": "at line 25 of <>:\nBad syntax (EOF found after object) at ^ in:\n\"b'@prefix mynamespace: <https://w3id.org/example-data-srs#> .\\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\\n@prefix skos: <http://www.w3.org/2004/02/skos/core#> .\\n@prefix om: <http://www.ontology-of-units-of-measure.org/resource/om-2/> .\\n@prefix geosrs_cs:<https://w3id.org/geosrs/cs/> .\\n@prefix exsrs: <https://w3id.org/example-data-srs#> .\\n\\nexsrs:ecs rdf:type geosrs_cs:geosrs:EllipsoidalCoordinateSystem ;\\n          rdfs:label \"My example EllipsoidalCoordinateSystem with two axis\";\\n          geosrs_cs:axis exsrs:ecs_axis1, exsrs:ecs_axis2 .\\nexsrs:ecs_axis1 rdf:type geosrs_cs:Axis ;\\n                rdfs:label \"Geodetic latitude\" ;\\n                om:hasUnit om:degree ;\\n                skos:altLabel \"Lat\" ;\\n                geosrs_cs:axisDirection geosrs_cs:North .\\nexsrs:ecs_axis2 rdf:type geosrs_cs:Axis ;\\n                rdfs:label \"Geodetic longitude\" ;\\n                om:hasUnit om:degree ;\\n                skos:altLabel \"Lon\" ;\\n                geosrs_cs:axisDirection geosrs_cs:East \\n\\n\\n'^b''...\""
+              "shaclFile": "_sources/cs/rules.shacl",
+              "focusNodes": {
+                "geosrs:ConicalCoordinateSystemShape": {
+                  "nodes": [
+                    "<https://w3id.org/geosrs/ConicalCoordinateSystem>"
+                  ]
+                },
+                "geosrs:CurvilinearCoordinateSystemShape": {
+                  "nodes": [
+                    "<https://w3id.org/geosrs/CurvilinearCoordinateSystem>"
+                  ]
+                },
+                "geosrs:DateTimeTemporalCoordinateSystemShape": {
+                  "nodes": [
+                    "<https://w3id.org/geosrs/DateTimeTemporalCoordinateSystem>"
+                  ]
+                },
+                "geosrs:CylindricalCoordinateSystemShape": {
+                  "nodes": [
+                    "<https://w3id.org/geosrs/CylindricalCoordinateSystem>"
+                  ]
+                },
+                "geosrs:CoordinateSystemShape": {
+                  "nodes": [
+                    "<https://w3id.org/geosrs/CoordinateSystem>"
+                  ]
+                },
+                "geosrs:3DCoordinateSystemShape": {
+                  "nodes": [
+                    "<https://w3id.org/geosrs/3DCoordinateSystem>"
+                  ]
+                },
+                "geosrs:PlanarCoordinateSystemShape": {
+                  "nodes": [
+                    "<https://w3id.org/geosrs/PlanarCoordinateSystem>"
+                  ]
+                },
+                "geosrs:TemporalCoordinateSystemShape": {
+                  "nodes": [
+                    "<https://w3id.org/geosrs/TemporalCoordinateSystem>"
+                  ]
+                },
+                "geosrs:TemporalMeasureCoordinateSystemShape": {
+                  "nodes": [
+                    "<https://w3id.org/geosrs/TemporalMeasureCoordinateSystem>"
+                  ]
+                },
+                "geosrs:CoordinateSystemAxisShape": {
+                  "nodes": [
+                    "<https://w3id.org/geosrs/CoordinateSystemAxis>"
+                  ]
+                },
+                "geosrs:1DCoordinateSystemShape": {
+                  "nodes": [
+                    "<https://w3id.org/geosrs/1DCoordinateSystem>"
+                  ]
+                },
+                "geosrs:TemporalCountCoordinateSystemShape": {
+                  "nodes": [
+                    "<https://w3id.org/geosrs/TemporalCountCoordinateSystem>"
+                  ]
+                }
+              },
+              "isError": false,
+              "message": "Focus nodes for _sources/cs/rules.shacl:\n - Shape geosrs:ConicalCoordinateSystemShape: <https://w3id.org/geosrs/ConicalCoordinateSystem>\n - Shape geosrs:CurvilinearCoordinateSystemShape: <https://w3id.org/geosrs/CurvilinearCoordinateSystem>\n - Shape geosrs:DateTimeTemporalCoordinateSystemShape: <https://w3id.org/geosrs/DateTimeTemporalCoordinateSystem>\n - Shape geosrs:CylindricalCoordinateSystemShape: <https://w3id.org/geosrs/CylindricalCoordinateSystem>\n - Shape geosrs:CoordinateSystemShape: <https://w3id.org/geosrs/CoordinateSystem>\n - Shape geosrs:3DCoordinateSystemShape: <https://w3id.org/geosrs/3DCoordinateSystem>\n - Shape geosrs:PlanarCoordinateSystemShape: <https://w3id.org/geosrs/PlanarCoordinateSystem>\n - Shape geosrs:TemporalCoordinateSystemShape: <https://w3id.org/geosrs/TemporalCoordinateSystem>\n - Shape geosrs:TemporalMeasureCoordinateSystemShape: <https://w3id.org/geosrs/TemporalMeasureCoordinateSystem>\n - Shape geosrs:CoordinateSystemAxisShape: <https://w3id.org/geosrs/CoordinateSystemAxis>\n - Shape geosrs:1DCoordinateSystemShape: <https://w3id.org/geosrs/1DCoordinateSystem>\n - Shape geosrs:TemporalCountCoordinateSystemShape: <https://w3id.org/geosrs/TemporalCountCoordinateSystem>\n"
             }
           ]
         }
@@ -81,31 +174,31 @@
             {
               "op": "shacl-report",
               "shaclFile": "_sources/cs/rules.shacl",
-              "graph": "@prefix geosrs: <https://w3id.org/geosrs/> .\n@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms false ;\n    sh:result [ a sh:ValidationResult ;\n            sh:focusNode geosrs:PlanarCoordinateSystem ;\n            sh:resultMessage \"A planar coordinate system should have at least two axes\"@en ;\n            sh:resultPath geosrs:axis ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;\n            sh:sourceShape geosrs:PlanarCoordinateSystemShape_Property ],\n        [ a sh:ValidationResult ;\n            sh:focusNode geosrs:1DCoordinateSystem ;\n            sh:resultMessage \"A 1D coordinate system should have exactly one axis\"@en ;\n            sh:resultPath geosrs:axis ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;\n            sh:sourceShape geosrs:1DCoordinateSystemShape_Property ],\n        [ a sh:ValidationResult ;\n            sh:focusNode geosrs:TemporalMeasureCoordinateSystem ;\n            sh:resultMessage \"A temporal measure coordinate system should have exactly one axis\"@en ;\n            sh:resultPath geosrs:axis ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;\n            sh:sourceShape geosrs:TemporalMeasureCoordinateSystemShape_Property ],\n        [ a sh:ValidationResult ;\n            sh:focusNode geosrs:CoordinateSystemAxis ;\n            sh:resultMessage \"A coordinate system axis should have exactly one axis direction\"@en ;\n            sh:resultPath geosrs:axisDirection ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;\n            sh:sourceShape geosrs:CoordinateSystemAxisShape_Property ],\n        [ a sh:ValidationResult ;\n            sh:focusNode geosrs:TemporalCoordinateSystem ;\n            sh:resultMessage \"A temporal coordinate system should have exactly one axis\"@en ;\n            sh:resultPath geosrs:axis ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;\n            sh:sourceShape geosrs:TemporalCoordinateSystemShape_Property ],\n        [ a sh:ValidationResult ;\n            sh:focusNode geosrs:CylindricalCoordinateSystem ;\n            sh:resultMessage \"A cylindrical coordinate system should have at least three axes\"@en ;\n            sh:resultPath geosrs:axis ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;\n            sh:sourceShape geosrs:CylindricalCoordinateSystemShape_Property ],\n        [ a sh:ValidationResult ;\n            sh:focusNode geosrs:TemporalCountCoordinateSystem ;\n            sh:resultMessage \"A temporal count coordinate system should have exactly one axis\"@en ;\n            sh:resultPath geosrs:axis ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;\n            sh:sourceShape geosrs:TemporalCountCoordinateSystemShape_Property ],\n        [ a sh:ValidationResult ;\n            sh:focusNode geosrs:CurvilinearCoordinateSystem ;\n            sh:resultMessage \"A curvilinear coordinate system is defined in Euclidean space and should therefore have at least three axes\"@en ;\n            sh:resultPath geosrs:axis ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;\n            sh:sourceShape geosrs:CurvilinearCoordinateSystemShape_Property ],\n        [ a sh:ValidationResult ;\n            sh:focusNode geosrs:CoordinateSystem ;\n            sh:resultMessage \"A coordinate system should have at least one axis\"@en ;\n            sh:resultPath geosrs:axis ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;\n            sh:sourceShape geosrs:CoordinateSystemShape_Property ],\n        [ a sh:ValidationResult ;\n            sh:focusNode geosrs:DateTimeTemporalCoordinateSystem ;\n            sh:resultMessage \"A date time temporal coordinate system should have exactly one axis\"@en ;\n            sh:resultPath geosrs:axis ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;\n            sh:sourceShape geosrs:DateTimeTemporalCoordinateSystemShape_Property ],\n        [ a sh:ValidationResult ;\n            sh:focusNode geosrs:ConicalCoordinateSystem ;\n            sh:resultMessage \"A conical coordinate system should have at least three axes\"@en ;\n            sh:resultPath geosrs:axis ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;\n            sh:sourceShape geosrs:ConicalCoordinateSystemShape_Property ],\n        [ a sh:ValidationResult ;\n            sh:focusNode geosrs:3DCoordinateSystem ;\n            sh:resultMessage \"A 3D coordinate system should have at least three axes\"@en ;\n            sh:resultPath geosrs:axis ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;\n            sh:sourceShape geosrs:3DCoordinateSystemShape_Property ] .\n\n",
+              "graph": "@prefix geosrs: <https://w3id.org/geosrs/> .\n@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms false ;\n    sh:result [ a sh:ValidationResult ;\n            sh:focusNode geosrs:1DCoordinateSystem ;\n            sh:resultMessage \"A 1D coordinate system should have exactly one axis\"@en ;\n            sh:resultPath geosrs:axis ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;\n            sh:sourceShape geosrs:1DCoordinateSystemShape_Property ],\n        [ a sh:ValidationResult ;\n            sh:focusNode geosrs:TemporalCountCoordinateSystem ;\n            sh:resultMessage \"A temporal count coordinate system should have exactly one axis\"@en ;\n            sh:resultPath geosrs:axis ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;\n            sh:sourceShape geosrs:TemporalCountCoordinateSystemShape_Property ],\n        [ a sh:ValidationResult ;\n            sh:focusNode geosrs:TemporalCoordinateSystem ;\n            sh:resultMessage \"A temporal coordinate system should have exactly one axis\"@en ;\n            sh:resultPath geosrs:axis ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;\n            sh:sourceShape geosrs:TemporalCoordinateSystemShape_Property ],\n        [ a sh:ValidationResult ;\n            sh:focusNode geosrs:DateTimeTemporalCoordinateSystem ;\n            sh:resultMessage \"A date time temporal coordinate system should have exactly one axis\"@en ;\n            sh:resultPath geosrs:axis ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;\n            sh:sourceShape geosrs:DateTimeTemporalCoordinateSystemShape_Property ],\n        [ a sh:ValidationResult ;\n            sh:focusNode geosrs:PlanarCoordinateSystem ;\n            sh:resultMessage \"A planar coordinate system should have at least two axes\"@en ;\n            sh:resultPath geosrs:axis ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;\n            sh:sourceShape geosrs:PlanarCoordinateSystemShape_Property ],\n        [ a sh:ValidationResult ;\n            sh:focusNode geosrs:CurvilinearCoordinateSystem ;\n            sh:resultMessage \"A curvilinear coordinate system is defined in Euclidean space and should therefore have at least three axes\"@en ;\n            sh:resultPath geosrs:axis ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;\n            sh:sourceShape geosrs:CurvilinearCoordinateSystemShape_Property ],\n        [ a sh:ValidationResult ;\n            sh:focusNode geosrs:CoordinateSystemAxis ;\n            sh:resultMessage \"A coordinate system axis should have exactly one axis direction\"@en ;\n            sh:resultPath geosrs:axisDirection ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;\n            sh:sourceShape geosrs:CoordinateSystemAxisShape_Property ],\n        [ a sh:ValidationResult ;\n            sh:focusNode geosrs:CylindricalCoordinateSystem ;\n            sh:resultMessage \"A cylindrical coordinate system should have at least three axes\"@en ;\n            sh:resultPath geosrs:axis ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;\n            sh:sourceShape geosrs:CylindricalCoordinateSystemShape_Property ],\n        [ a sh:ValidationResult ;\n            sh:focusNode geosrs:ConicalCoordinateSystem ;\n            sh:resultMessage \"A conical coordinate system should have at least three axes\"@en ;\n            sh:resultPath geosrs:axis ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;\n            sh:sourceShape geosrs:ConicalCoordinateSystemShape_Property ],\n        [ a sh:ValidationResult ;\n            sh:focusNode geosrs:3DCoordinateSystem ;\n            sh:resultMessage \"A 3D coordinate system should have at least three axes\"@en ;\n            sh:resultPath geosrs:axis ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;\n            sh:sourceShape geosrs:3DCoordinateSystemShape_Property ],\n        [ a sh:ValidationResult ;\n            sh:focusNode geosrs:TemporalMeasureCoordinateSystem ;\n            sh:resultMessage \"A temporal measure coordinate system should have exactly one axis\"@en ;\n            sh:resultPath geosrs:axis ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;\n            sh:sourceShape geosrs:TemporalMeasureCoordinateSystemShape_Property ],\n        [ a sh:ValidationResult ;\n            sh:focusNode geosrs:CoordinateSystem ;\n            sh:resultMessage \"A coordinate system should have at least one axis\"@en ;\n            sh:resultPath geosrs:axis ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;\n            sh:sourceShape geosrs:CoordinateSystemShape_Property ] .\n\n",
               "isError": true,
-              "message": "Validation result for _sources/cs/rules.shacl:\n  Validation Report\n  Conforms: False\n  Results (12):\n  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):\n  \tSeverity: sh:Violation\n  \tSource Shape: geosrs:DateTimeTemporalCoordinateSystemShape_Property\n  \tFocus Node: <https://w3id.org/geosrs/DateTimeTemporalCoordinateSystem>\n  \tResult Path: geosrs:axis\n  \tMessage: A date time temporal coordinate system should have exactly one axis\n  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):\n  \tSeverity: sh:Violation\n  \tSource Shape: geosrs:TemporalCountCoordinateSystemShape_Property\n  \tFocus Node: <https://w3id.org/geosrs/TemporalCountCoordinateSystem>\n  \tResult Path: geosrs:axis\n  \tMessage: A temporal count coordinate system should have exactly one axis\n  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):\n  \tSeverity: sh:Violation\n  \tSource Shape: geosrs:TemporalMeasureCoordinateSystemShape_Property\n  \tFocus Node: <https://w3id.org/geosrs/TemporalMeasureCoordinateSystem>\n  \tResult Path: geosrs:axis\n  \tMessage: A temporal measure coordinate system should have exactly one axis\n  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):\n  \tSeverity: sh:Violation\n  \tSource Shape: geosrs:1DCoordinateSystemShape_Property\n  \tFocus Node: <https://w3id.org/geosrs/1DCoordinateSystem>\n  \tResult Path: geosrs:axis\n  \tMessage: A 1D coordinate system should have exactly one axis\n  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):\n  \tSeverity: sh:Violation\n  \tSource Shape: geosrs:CoordinateSystemShape_Property\n  \tFocus Node: <https://w3id.org/geosrs/CoordinateSystem>\n  \tResult Path: geosrs:axis\n  \tMessage: A coordinate system should have at least one axis\n  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):\n  \tSeverity: sh:Violation\n  \tSource Shape: geosrs:3DCoordinateSystemShape_Property\n  \tFocus Node: <https://w3id.org/geosrs/3DCoordinateSystem>\n  \tResult Path: geosrs:axis\n  \tMessage: A 3D coordinate system should have at least three axes\n  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):\n  \tSeverity: sh:Violation\n  \tSource Shape: geosrs:CurvilinearCoordinateSystemShape_Property\n  \tFocus Node: <https://w3id.org/geosrs/CurvilinearCoordinateSystem>\n  \tResult Path: geosrs:axis\n  \tMessage: A curvilinear coordinate system is defined in Euclidean space and should therefore have at least three axes\n  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):\n  \tSeverity: sh:Violation\n  \tSource Shape: geosrs:CylindricalCoordinateSystemShape_Property\n  \tFocus Node: <https://w3id.org/geosrs/CylindricalCoordinateSystem>\n  \tResult Path: geosrs:axis\n  \tMessage: A cylindrical coordinate system should have at least three axes\n  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):\n  \tSeverity: sh:Violation\n  \tSource Shape: geosrs:ConicalCoordinateSystemShape_Property\n  \tFocus Node: <https://w3id.org/geosrs/ConicalCoordinateSystem>\n  \tResult Path: geosrs:axis\n  \tMessage: A conical coordinate system should have at least three axes\n  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):\n  \tSeverity: sh:Violation\n  \tSource Shape: geosrs:PlanarCoordinateSystemShape_Property\n  \tFocus Node: <https://w3id.org/geosrs/PlanarCoordinateSystem>\n  \tResult Path: geosrs:axis\n  \tMessage: A planar coordinate system should have at least two axes\n  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):\n  \tSeverity: sh:Violation\n  \tSource Shape: geosrs:CoordinateSystemAxisShape_Property\n  \tFocus Node: <https://w3id.org/geosrs/CoordinateSystemAxis>\n  \tResult Path: geosrs:axisDirection\n  \tMessage: A coordinate system axis should have exactly one axis direction\n  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):\n  \tSeverity: sh:Violation\n  \tSource Shape: geosrs:TemporalCoordinateSystemShape_Property\n  \tFocus Node: <https://w3id.org/geosrs/TemporalCoordinateSystem>\n  \tResult Path: geosrs:axis\n  \tMessage: A temporal coordinate system should have exactly one axis\n  "
+              "message": "Validation result for _sources/cs/rules.shacl:\n  Validation Report\n  Conforms: False\n  Results (12):\n  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):\n  \tSeverity: sh:Violation\n  \tSource Shape: geosrs:ConicalCoordinateSystemShape_Property\n  \tFocus Node: <https://w3id.org/geosrs/ConicalCoordinateSystem>\n  \tResult Path: geosrs:axis\n  \tMessage: A conical coordinate system should have at least three axes\n  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):\n  \tSeverity: sh:Violation\n  \tSource Shape: geosrs:CurvilinearCoordinateSystemShape_Property\n  \tFocus Node: <https://w3id.org/geosrs/CurvilinearCoordinateSystem>\n  \tResult Path: geosrs:axis\n  \tMessage: A curvilinear coordinate system is defined in Euclidean space and should therefore have at least three axes\n  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):\n  \tSeverity: sh:Violation\n  \tSource Shape: geosrs:DateTimeTemporalCoordinateSystemShape_Property\n  \tFocus Node: <https://w3id.org/geosrs/DateTimeTemporalCoordinateSystem>\n  \tResult Path: geosrs:axis\n  \tMessage: A date time temporal coordinate system should have exactly one axis\n  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):\n  \tSeverity: sh:Violation\n  \tSource Shape: geosrs:CylindricalCoordinateSystemShape_Property\n  \tFocus Node: <https://w3id.org/geosrs/CylindricalCoordinateSystem>\n  \tResult Path: geosrs:axis\n  \tMessage: A cylindrical coordinate system should have at least three axes\n  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):\n  \tSeverity: sh:Violation\n  \tSource Shape: geosrs:CoordinateSystemShape_Property\n  \tFocus Node: <https://w3id.org/geosrs/CoordinateSystem>\n  \tResult Path: geosrs:axis\n  \tMessage: A coordinate system should have at least one axis\n  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):\n  \tSeverity: sh:Violation\n  \tSource Shape: geosrs:3DCoordinateSystemShape_Property\n  \tFocus Node: <https://w3id.org/geosrs/3DCoordinateSystem>\n  \tResult Path: geosrs:axis\n  \tMessage: A 3D coordinate system should have at least three axes\n  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):\n  \tSeverity: sh:Violation\n  \tSource Shape: geosrs:PlanarCoordinateSystemShape_Property\n  \tFocus Node: <https://w3id.org/geosrs/PlanarCoordinateSystem>\n  \tResult Path: geosrs:axis\n  \tMessage: A planar coordinate system should have at least two axes\n  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):\n  \tSeverity: sh:Violation\n  \tSource Shape: geosrs:TemporalCoordinateSystemShape_Property\n  \tFocus Node: <https://w3id.org/geosrs/TemporalCoordinateSystem>\n  \tResult Path: geosrs:axis\n  \tMessage: A temporal coordinate system should have exactly one axis\n  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):\n  \tSeverity: sh:Violation\n  \tSource Shape: geosrs:TemporalMeasureCoordinateSystemShape_Property\n  \tFocus Node: <https://w3id.org/geosrs/TemporalMeasureCoordinateSystem>\n  \tResult Path: geosrs:axis\n  \tMessage: A temporal measure coordinate system should have exactly one axis\n  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):\n  \tSeverity: sh:Violation\n  \tSource Shape: geosrs:CoordinateSystemAxisShape_Property\n  \tFocus Node: <https://w3id.org/geosrs/CoordinateSystemAxis>\n  \tResult Path: geosrs:axisDirection\n  \tMessage: A coordinate system axis should have exactly one axis direction\n  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):\n  \tSeverity: sh:Violation\n  \tSource Shape: geosrs:1DCoordinateSystemShape_Property\n  \tFocus Node: <https://w3id.org/geosrs/1DCoordinateSystem>\n  \tResult Path: geosrs:axis\n  \tMessage: A 1D coordinate system should have exactly one axis\n  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):\n  \tSeverity: sh:Violation\n  \tSource Shape: geosrs:TemporalCountCoordinateSystemShape_Property\n  \tFocus Node: <https://w3id.org/geosrs/TemporalCountCoordinateSystem>\n  \tResult Path: geosrs:axis\n  \tMessage: A temporal count coordinate system should have exactly one axis\n  "
             },
             {
               "shaclFile": "_sources/cs/rules.shacl",
               "focusNodes": {
+                "geosrs:ConicalCoordinateSystemShape": {
+                  "nodes": [
+                    "<https://w3id.org/geosrs/ConicalCoordinateSystem>"
+                  ]
+                },
+                "geosrs:CurvilinearCoordinateSystemShape": {
+                  "nodes": [
+                    "<https://w3id.org/geosrs/CurvilinearCoordinateSystem>"
+                  ]
+                },
                 "geosrs:DateTimeTemporalCoordinateSystemShape": {
                   "nodes": [
                     "<https://w3id.org/geosrs/DateTimeTemporalCoordinateSystem>"
                   ]
                 },
-                "geosrs:TemporalCountCoordinateSystemShape": {
+                "geosrs:CylindricalCoordinateSystemShape": {
                   "nodes": [
-                    "<https://w3id.org/geosrs/TemporalCountCoordinateSystem>"
-                  ]
-                },
-                "geosrs:TemporalMeasureCoordinateSystemShape": {
-                  "nodes": [
-                    "<https://w3id.org/geosrs/TemporalMeasureCoordinateSystem>"
-                  ]
-                },
-                "geosrs:1DCoordinateSystemShape": {
-                  "nodes": [
-                    "<https://w3id.org/geosrs/1DCoordinateSystem>"
+                    "<https://w3id.org/geosrs/CylindricalCoordinateSystem>"
                   ]
                 },
                 "geosrs:CoordinateSystemShape": {
@@ -118,24 +211,19 @@
                     "<https://w3id.org/geosrs/3DCoordinateSystem>"
                   ]
                 },
-                "geosrs:CurvilinearCoordinateSystemShape": {
-                  "nodes": [
-                    "<https://w3id.org/geosrs/CurvilinearCoordinateSystem>"
-                  ]
-                },
-                "geosrs:CylindricalCoordinateSystemShape": {
-                  "nodes": [
-                    "<https://w3id.org/geosrs/CylindricalCoordinateSystem>"
-                  ]
-                },
-                "geosrs:ConicalCoordinateSystemShape": {
-                  "nodes": [
-                    "<https://w3id.org/geosrs/ConicalCoordinateSystem>"
-                  ]
-                },
                 "geosrs:PlanarCoordinateSystemShape": {
                   "nodes": [
                     "<https://w3id.org/geosrs/PlanarCoordinateSystem>"
+                  ]
+                },
+                "geosrs:TemporalCoordinateSystemShape": {
+                  "nodes": [
+                    "<https://w3id.org/geosrs/TemporalCoordinateSystem>"
+                  ]
+                },
+                "geosrs:TemporalMeasureCoordinateSystemShape": {
+                  "nodes": [
+                    "<https://w3id.org/geosrs/TemporalMeasureCoordinateSystem>"
                   ]
                 },
                 "geosrs:CoordinateSystemAxisShape": {
@@ -143,14 +231,19 @@
                     "<https://w3id.org/geosrs/CoordinateSystemAxis>"
                   ]
                 },
-                "geosrs:TemporalCoordinateSystemShape": {
+                "geosrs:1DCoordinateSystemShape": {
                   "nodes": [
-                    "<https://w3id.org/geosrs/TemporalCoordinateSystem>"
+                    "<https://w3id.org/geosrs/1DCoordinateSystem>"
+                  ]
+                },
+                "geosrs:TemporalCountCoordinateSystemShape": {
+                  "nodes": [
+                    "<https://w3id.org/geosrs/TemporalCountCoordinateSystem>"
                   ]
                 }
               },
               "isError": false,
-              "message": "Focus nodes for _sources/cs/rules.shacl:\n - Shape geosrs:DateTimeTemporalCoordinateSystemShape: <https://w3id.org/geosrs/DateTimeTemporalCoordinateSystem>\n - Shape geosrs:TemporalCountCoordinateSystemShape: <https://w3id.org/geosrs/TemporalCountCoordinateSystem>\n - Shape geosrs:TemporalMeasureCoordinateSystemShape: <https://w3id.org/geosrs/TemporalMeasureCoordinateSystem>\n - Shape geosrs:1DCoordinateSystemShape: <https://w3id.org/geosrs/1DCoordinateSystem>\n - Shape geosrs:CoordinateSystemShape: <https://w3id.org/geosrs/CoordinateSystem>\n - Shape geosrs:3DCoordinateSystemShape: <https://w3id.org/geosrs/3DCoordinateSystem>\n - Shape geosrs:CurvilinearCoordinateSystemShape: <https://w3id.org/geosrs/CurvilinearCoordinateSystem>\n - Shape geosrs:CylindricalCoordinateSystemShape: <https://w3id.org/geosrs/CylindricalCoordinateSystem>\n - Shape geosrs:ConicalCoordinateSystemShape: <https://w3id.org/geosrs/ConicalCoordinateSystem>\n - Shape geosrs:PlanarCoordinateSystemShape: <https://w3id.org/geosrs/PlanarCoordinateSystem>\n - Shape geosrs:CoordinateSystemAxisShape: <https://w3id.org/geosrs/CoordinateSystemAxis>\n - Shape geosrs:TemporalCoordinateSystemShape: <https://w3id.org/geosrs/TemporalCoordinateSystem>\n"
+              "message": "Focus nodes for _sources/cs/rules.shacl:\n - Shape geosrs:ConicalCoordinateSystemShape: <https://w3id.org/geosrs/ConicalCoordinateSystem>\n - Shape geosrs:CurvilinearCoordinateSystemShape: <https://w3id.org/geosrs/CurvilinearCoordinateSystem>\n - Shape geosrs:DateTimeTemporalCoordinateSystemShape: <https://w3id.org/geosrs/DateTimeTemporalCoordinateSystem>\n - Shape geosrs:CylindricalCoordinateSystemShape: <https://w3id.org/geosrs/CylindricalCoordinateSystem>\n - Shape geosrs:CoordinateSystemShape: <https://w3id.org/geosrs/CoordinateSystem>\n - Shape geosrs:3DCoordinateSystemShape: <https://w3id.org/geosrs/3DCoordinateSystem>\n - Shape geosrs:PlanarCoordinateSystemShape: <https://w3id.org/geosrs/PlanarCoordinateSystem>\n - Shape geosrs:TemporalCoordinateSystemShape: <https://w3id.org/geosrs/TemporalCoordinateSystem>\n - Shape geosrs:TemporalMeasureCoordinateSystemShape: <https://w3id.org/geosrs/TemporalMeasureCoordinateSystem>\n - Shape geosrs:CoordinateSystemAxisShape: <https://w3id.org/geosrs/CoordinateSystemAxis>\n - Shape geosrs:1DCoordinateSystemShape: <https://w3id.org/geosrs/1DCoordinateSystem>\n - Shape geosrs:TemporalCountCoordinateSystemShape: <https://w3id.org/geosrs/TemporalCountCoordinateSystem>\n"
             }
           ]
         }

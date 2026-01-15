@@ -2,8 +2,8 @@
   "title": "Validation report for ogc.geosrs.app - SRS Ontology - Application module",
   "bblockName": "SRS Ontology - Application module",
   "bblockId": "ogc.geosrs.app",
-  "generated": "2026-01-15T09:42:30.203371+00:00",
-  "result": false,
+  "generated": "2026-01-15T10:30:59.646627+00:00",
+  "result": true,
   "items": [
     {
       "source": {
@@ -15,8 +15,26 @@
         "snippetIndex": 1,
         "language": "text/turtle"
       },
-      "result": false,
+      "result": true,
       "sections": [
+        {
+          "name": "FILES",
+          "title": "Files",
+          "entries": [
+            {
+              "isError": false,
+              "message": "Using example_1_1.ttl from examples"
+            },
+            {
+              "op": "ttl-create",
+              "empty": false,
+              "filename": "example_1_1.ttl",
+              "size": 3,
+              "isError": false,
+              "message": "Output Turtle example_1_1.ttl created"
+            }
+          ]
+        },
         {
           "name": "TURTLE",
           "title": "Turtle",
@@ -26,17 +44,6 @@
               "message": "Prefixes are defined for mynamespace"
             }
           ]
-        },
-        {
-          "name": "UNKNOWN",
-          "title": "Unknown errors",
-          "entries": [
-            {
-              "exception": "IndexError",
-              "isError": true,
-              "message": "Traceback (most recent call last):\n,  File \"/src/ogc/bblocks/validate.py\", line 198, in _validate_resource\n    result = validator.validate(filename, output_filename, report,\n,  File \"/src/ogc/bblocks/validation/rdf.py\", line 316, in validate\n    graph = self._load_graph(filename, output_filename, report,\n,  File \"/src/ogc/bblocks/validation/rdf.py\", line 285, in _load_graph\n    graph = Graph().parse(data=contents, format=rdf_format)\n,  File \"/venv/lib/python3.10/site-packages/rdflib/graph.py\", line 1494, in parse\n    parser.parse(source, self, **args)\n,  File \"/venv/lib/python3.10/site-packages/rdflib/plugins/parsers/notation3.py\", line 2021, in parse\n    p.loadStream(stream)\n,  File \"/venv/lib/python3.10/site-packages/rdflib/plugins/parsers/notation3.py\", line 479, in loadStream\n    return self.loadBuf(stream.read())  # Not ideal\n,  File \"/venv/lib/python3.10/site-packages/rdflib/plugins/parsers/notation3.py\", line 485, in loadBuf\n    self.feed(buf)\n,  File \"/venv/lib/python3.10/site-packages/rdflib/plugins/parsers/notation3.py\", line 511, in feed\n    i = self.directiveOrStatement(s, j)\n,  File \"/venv/lib/python3.10/site-packages/rdflib/plugins/parsers/notation3.py\", line 530, in directiveOrStatement\n    j = self.statement(argstr, i)\n,  File \"/venv/lib/python3.10/site-packages/rdflib/plugins/parsers/notation3.py\", line 778, in statement\n    j = self.property_list(argstr, i, r[0])\n,  File \"/venv/lib/python3.10/site-packages/rdflib/plugins/parsers/notation3.py\", line 1135, in property_list\n    j = self.verb(argstr, i, v)\n,  File \"/venv/lib/python3.10/site-packages/rdflib/plugins/parsers/notation3.py\", line 863, in verb\n    j = self.prop(argstr, i, r)\n,  File \"/venv/lib/python3.10/site-packages/rdflib/plugins/parsers/notation3.py\", line 874, in prop\n    return self.item(argstr, i, res)\n,  File \"/venv/lib/python3.10/site-packages/rdflib/plugins/parsers/notation3.py\", line 877, in item\n    return self.path(argstr, i, res)\n,  File \"/venv/lib/python3.10/site-packages/rdflib/plugins/parsers/notation3.py\", line 888, in path\n    while argstr[j] in {\"!\", \"^\"}:  # no spaces, must follow exactly (?)\n,IndexError: string index out of range\n"
-            }
-          ]
         }
       ]
     }
@@ -44,7 +51,7 @@
   "globalErrors": {},
   "counts": {
     "total": 1,
-    "passed": 0,
-    "failed": 1
+    "passed": 1,
+    "failed": 0
   }
 }

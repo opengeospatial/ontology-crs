@@ -1,11 +1,18 @@
 Validation report for ogc.geosrs.srs - SRS Core Ontology
-Generated 2026-01-15T10:30:59.716430+00:00
+Generated 2026-01-15T10:53:49.510997+00:00
+=== Files ===
+Using example_1_1.ttl from examples
+Output Turtle example_1_1.ttl created
+=== End Files ===
+
 === Turtle ===
 Prefixes are defined for mynamespace
+=== End Turtle ===
+
+=== SHACL ===
 
 ** Validation error **
-at line 9 of <>:
-Bad syntax (Prefix "ns1:" not bound) at ^ in:
-"...b'proj=utm +zone=32 +ellps=intl +units=m +no_defs +type=crs"^^'^b'ns1:proj4Literal ;\n    geosrs:asProjJSON "{\'$schema\':\'https:'..."
-=== End Turtle ===
+Error running SHACL validation for _sources/srs/rules.shacl: A shape defined as a PropertyShape cannot have more than one 'sh:path' predicate.
+For reference, see https://www.w3.org/TR/shacl/#property-shapes
+=== End SHACL ===
 

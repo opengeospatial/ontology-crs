@@ -2,7 +2,7 @@
   "title": "Validation report for ogc.geosrs.srs - SRS Core Ontology",
   "bblockName": "SRS Core Ontology",
   "bblockId": "ogc.geosrs.srs",
-  "generated": "2026-01-15T10:30:59.716474+00:00",
+  "generated": "2026-01-15T10:53:49.511044+00:00",
   "result": false,
   "items": [
     {
@@ -18,24 +18,50 @@
       "result": false,
       "sections": [
         {
+          "name": "FILES",
+          "title": "Files",
+          "entries": [
+            {
+              "isError": false,
+              "message": "Using example_1_1.ttl from examples"
+            },
+            {
+              "op": "ttl-create",
+              "empty": false,
+              "filename": "example_1_1.ttl",
+              "size": 11,
+              "isError": false,
+              "message": "Output Turtle example_1_1.ttl created"
+            }
+          ]
+        },
+        {
           "name": "TURTLE",
           "title": "Turtle",
           "entries": [
             {
               "isError": false,
               "message": "Prefixes are defined for mynamespace"
-            },
-            {
-              "exception": "BadSyntax",
-              "isError": true,
-              "message": "at line 9 of <>:\nBad syntax (Prefix \"ns1:\" not bound) at ^ in:\n\"...b'proj=utm +zone=32 +ellps=intl +units=m +no_defs +type=crs\"^^'^b'ns1:proj4Literal ;\\n    geosrs:asProjJSON \"{\\'$schema\\':\\'https:'...\""
             }
           ]
+        },
+        {
+          "name": "SHACL",
+          "title": "SHACL",
+          "entries": []
         }
       ]
     }
   ],
-  "globalErrors": {},
+  "globalErrors": {
+    "SHACL": {
+      "exception": "ShapeLoadError",
+      "errorMessage": "A shape defined as a PropertyShape cannot have more than one 'sh:path' predicate.\nFor reference, see https://www.w3.org/TR/shacl/#property-shapes",
+      "shaclFile": "_sources/srs/rules.shacl",
+      "isError": true,
+      "message": "Error running SHACL validation for _sources/srs/rules.shacl: A shape defined as a PropertyShape cannot have more than one 'sh:path' predicate.\nFor reference, see https://www.w3.org/TR/shacl/#property-shapes"
+    }
+  },
   "counts": {
     "total": 1,
     "passed": 0,

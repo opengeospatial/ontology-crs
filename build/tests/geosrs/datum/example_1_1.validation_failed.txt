@@ -1,5 +1,5 @@
 Validation report for ogc.geosrs.datum - SRS Ontology - Datum module
-Generated 2026-01-15T09:02:18.298951+00:00
+Generated 2026-01-15T09:42:30.241789+00:00
 === Files ===
 Using example_1_1.ttl from examples
 Output Turtle example_1_1.ttl created
@@ -12,6 +12,19 @@ Prefixes are defined for mynamespace
 === SHACL ===
 
 ** Validation error **
-Error running SHACL validation for _sources/datum/rules.shacl: Shape pointed to by sh:property does not exist or is not a well-formed SHACL PropertyShape.
+Validation result for _sources/datum/rules.shacl:
+  Validation Report
+  Conforms: False
+  Results (1):
+  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+  	Severity: sh:Violation
+  	Source Shape: geosrs:ParametricDatumShape_Property
+  	Focus Node: <https://w3id.org/geosrs/ParametricDatum>
+  	Result Path: geosrs:definingParameter
+  	Message: A parametric datum should have at least one defining parameter
+  
+Focus nodes for _sources/datum/rules.shacl:
+ - Shape geosrs:ParametricDatumShape: <https://w3id.org/geosrs/ParametricDatum>
+
 === End SHACL ===
 

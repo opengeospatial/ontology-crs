@@ -26,7 +26,11 @@ SRS Application classes and properties are described under the namespace https:/
 @prefix geosrs_app:<https://w3id.org/geosrs/application/> .
 @prefix exsrs: <https://w3id.org/example-data-srs#> .
 
-exsrs:mysrs geosrs_app:
+exsrs:mysrsapp rdf:type geosrs_app:Hydrology .
+exsrs:mysrsapp rdfs:label "watering my garden"@en .
+
+exsrs:mysrs geosrs_app:usage exsrs:mysrsapp .
+
 ```
 
 ## Sources

@@ -44,7 +44,7 @@ exsrs:ecs_axis2 rdf:type geosrs_cs:Axis ;
                 rdfs:label "Geodetic longitude" ;
                 om:hasUnit om:degree ;
                 skos:altLabel "Lon" ;
-                geosrs_cs:axisDirection geosrs_cs:East 
+                geosrs_cs:axisDirection geosrs_cs:East .
 
 
 

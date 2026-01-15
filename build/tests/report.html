@@ -51,9 +51,9 @@
     <body>
         <div class="container">
             <h1 class="title">Building blocks validation report</h1>
-            <small class="datetime">Generated at 2026-01-15T09:42:30.276355+00:00</small>
+            <small class="datetime">Generated at 2026-01-15T10:30:59.730890+00:00</small>
                 <p class="summary fw-semibold text-danger">
-                    Number of passing building blocks: 2 / 7 (28.57%)
+                    Number of passing building blocks: 4 / 7 (57.14%)
                 </p>
             <div class="text-end small" id="expand-collapse">
                 <a href="#" class="expand-all">Expand all</a>
@@ -62,7 +62,7 @@
                 <div class="accordion mt-2" id="bblock-reports">
                         <div class="accordion-item bblock-report" data-bblock-id="ogc.geosrs.app" id="bblock-ogc.geosrs.app">
                             <h2 class="accordion-header bblock-title">
-                                <button class="accordion-button " type="button"
+                                <button class="accordion-button collapsed" type="button"
                                     data-bs-toggle="collapse"
                                     data-bs-target="#bblock-collapse-ogc\.geosrs\.app">
                                     <div class="flex-fill">
@@ -70,16 +70,16 @@
                                         <small class="ms-2 bblock-id">ogc.geosrs.app</small>
                                     </div>
 
-                                    <span class="badge text-bg-danger me-2">
-                                            Tests Failed
-                                            (0% passed)
+                                    <span class="badge text-bg-success me-2">
+                                            Passed
+                                            (100% passed)
                                     </span>
                                 </button>
                             </h2>
-                            <div class="accordion-collapse collapse show" id="bblock-collapse-ogc.geosrs.app">
+                            <div class="accordion-collapse collapse " id="bblock-collapse-ogc.geosrs.app">
                                 <div class="accordion-body">
-                                        <p class="summary fw-semibold text-danger">
-                                            Test passed: 0 / 1
+                                        <p class="summary fw-semibold text-success">
+                                            Test passed: 1 / 1
                                         </p>
                                         <div class="card mb-2 validation-item ">
                                             <div class="card-body">
@@ -94,47 +94,16 @@
                                                     <a href="geosrs/app/example_1_1.ttl" target="_blank">example_1_1.ttl</a>
                                                     <span class="badge bg-secondary example">Example</span>
                                                     <div class="float-end">
-                                                            <span class="badge text-bg-danger me-2">Failed</span>
+                                                            <span class="badge text-bg-success me-2">Passed</span>
                                                     </div>
                                                 </div>
                                                 <div class="card-text mt-2 validation-text collapse" id="uid-1">
                                                     <div class="validation-text-inner">
+                                                                    <div class="font-monospace subsection-title mt-2">Files</div>
+                                                                    <div class="font-monospace entry-message section-files ">Using example_1_1.ttl from examples</div>
+                                                                    <div class="font-monospace entry-message section-files ">Output Turtle example_1_1.ttl created</div>
                                                                     <div class="font-monospace subsection-title mt-2">Turtle</div>
                                                                     <div class="font-monospace entry-message section-turtle ">Prefixes are defined for mynamespace</div>
-                                                                    <div class="font-monospace subsection-title mt-2">Unknown errors</div>
-                                                                    <div class="font-monospace entry-message section-unknown text-danger">Traceback (most recent call last):
-,  File &quot;/src/ogc/bblocks/validate.py&quot;, line 198, in _validate_resource
-    result = validator.validate(filename, output_filename, report,
-,  File &quot;/src/ogc/bblocks/validation/rdf.py&quot;, line 316, in validate
-    graph = self._load_graph(filename, output_filename, report,
-,  File &quot;/src/ogc/bblocks/validation/rdf.py&quot;, line 285, in _load_graph
-    graph = Graph().parse(data=contents, format=rdf_format)
-,  File &quot;/venv/lib/python3.10/site-packages/rdflib/graph.py&quot;, line 1494, in parse
-    parser.parse(source, self, **args)
-,  File &quot;/venv/lib/python3.10/site-packages/rdflib/plugins/parsers/notation3.py&quot;, line 2021, in parse
-    p.loadStream(stream)
-,  File &quot;/venv/lib/python3.10/site-packages/rdflib/plugins/parsers/notation3.py&quot;, line 479, in loadStream
-    return self.loadBuf(stream.read())  # Not ideal
-,  File &quot;/venv/lib/python3.10/site-packages/rdflib/plugins/parsers/notation3.py&quot;, line 485, in loadBuf
-    self.feed(buf)
-,  File &quot;/venv/lib/python3.10/site-packages/rdflib/plugins/parsers/notation3.py&quot;, line 511, in feed
-    i = self.directiveOrStatement(s, j)
-,  File &quot;/venv/lib/python3.10/site-packages/rdflib/plugins/parsers/notation3.py&quot;, line 530, in directiveOrStatement
-    j = self.statement(argstr, i)
-,  File &quot;/venv/lib/python3.10/site-packages/rdflib/plugins/parsers/notation3.py&quot;, line 778, in statement
-    j = self.property_list(argstr, i, r[0])
-,  File &quot;/venv/lib/python3.10/site-packages/rdflib/plugins/parsers/notation3.py&quot;, line 1135, in property_list
-    j = self.verb(argstr, i, v)
-,  File &quot;/venv/lib/python3.10/site-packages/rdflib/plugins/parsers/notation3.py&quot;, line 863, in verb
-    j = self.prop(argstr, i, r)
-,  File &quot;/venv/lib/python3.10/site-packages/rdflib/plugins/parsers/notation3.py&quot;, line 874, in prop
-    return self.item(argstr, i, res)
-,  File &quot;/venv/lib/python3.10/site-packages/rdflib/plugins/parsers/notation3.py&quot;, line 877, in item
-    return self.path(argstr, i, res)
-,  File &quot;/venv/lib/python3.10/site-packages/rdflib/plugins/parsers/notation3.py&quot;, line 888, in path
-    while argstr[j] in {&quot;!&quot;, &quot;^&quot;}:  # no spaces, must follow exactly (?)
-,IndexError: string index out of range
-</div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -144,7 +113,7 @@
                         </div>
                         <div class="accordion-item bblock-report" data-bblock-id="ogc.geosrs.co" id="bblock-ogc.geosrs.co">
                             <h2 class="accordion-header bblock-title">
-                                <button class="accordion-button " type="button"
+                                <button class="accordion-button collapsed" type="button"
                                     data-bs-toggle="collapse"
                                     data-bs-target="#bblock-collapse-ogc\.geosrs\.co">
                                     <div class="flex-fill">
@@ -152,16 +121,16 @@
                                         <small class="ms-2 bblock-id">ogc.geosrs.co</small>
                                     </div>
 
-                                    <span class="badge text-bg-danger me-2">
-                                            Tests Failed
-                                            (0% passed)
+                                    <span class="badge text-bg-success me-2">
+                                            Passed
+                                            (100% passed)
                                     </span>
                                 </button>
                             </h2>
-                            <div class="accordion-collapse collapse show" id="bblock-collapse-ogc.geosrs.co">
+                            <div class="accordion-collapse collapse " id="bblock-collapse-ogc.geosrs.co">
                                 <div class="accordion-body">
-                                        <p class="summary fw-semibold text-danger">
-                                            Test passed: 0 / 1
+                                        <p class="summary fw-semibold text-success">
+                                            Test passed: 1 / 1
                                         </p>
                                         <div class="card mb-2 validation-item ">
                                             <div class="card-body">
@@ -176,16 +145,16 @@
                                                     <a href="geosrs/co/example_1_1.ttl" target="_blank">example_1_1.ttl</a>
                                                     <span class="badge bg-secondary example">Example</span>
                                                     <div class="float-end">
-                                                            <span class="badge text-bg-danger me-2">Failed</span>
+                                                            <span class="badge text-bg-success me-2">Passed</span>
                                                     </div>
                                                 </div>
                                                 <div class="card-text mt-2 validation-text collapse" id="uid-2">
                                                     <div class="validation-text-inner">
+                                                                    <div class="font-monospace subsection-title mt-2">Files</div>
+                                                                    <div class="font-monospace entry-message section-files ">Using example_1_1.ttl from examples</div>
+                                                                    <div class="font-monospace entry-message section-files ">Output Turtle example_1_1.ttl created</div>
                                                                     <div class="font-monospace subsection-title mt-2">Turtle</div>
                                                                     <div class="font-monospace entry-message section-turtle ">Prefixes are defined for mynamespace</div>
-                                                                    <div class="font-monospace entry-message section-turtle text-danger">at line 12 of &lt;&gt;:
-Bad syntax (objectList expected) at ^ in:
-&quot;...b&#x27;p://www.opengis.net/ont/crs/operation/UTM_zone_32N&gt; rdf:type&#x27;^b&#x27; geosrs_co:UniversalTransverseMercatorProjection, ;\n    rdfs&#x27;...&quot;</div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -232,11 +201,103 @@ Bad syntax (objectList expected) at ^ in:
                                                 </div>
                                                 <div class="card-text mt-2 validation-text collapse" id="uid-3">
                                                     <div class="validation-text-inner">
+                                                                    <div class="font-monospace subsection-title mt-2">Files</div>
+                                                                    <div class="font-monospace entry-message section-files ">Using example_1_1.ttl from examples</div>
+                                                                    <div class="font-monospace entry-message section-files ">Output Turtle example_1_1.ttl created</div>
                                                                     <div class="font-monospace subsection-title mt-2">Turtle</div>
                                                                     <div class="font-monospace entry-message section-turtle ">Prefixes are defined for mynamespace</div>
-                                                                    <div class="font-monospace entry-message section-turtle text-danger">at line 25 of &lt;&gt;:
-Bad syntax (EOF found after object) at ^ in:
-&quot;b&#x27;@prefix mynamespace: &lt;https://w3id.org/example-data-srs#&gt; .\n@prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; .\n@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .\n@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .\n@prefix om: &lt;http://www.ontology-of-units-of-measure.org/resource/om-2/&gt; .\n@prefix geosrs_cs:&lt;https://w3id.org/geosrs/cs/&gt; .\n@prefix exsrs: &lt;https://w3id.org/example-data-srs#&gt; .\n\nexsrs:ecs rdf:type geosrs_cs:geosrs:EllipsoidalCoordinateSystem ;\n          rdfs:label &quot;My example EllipsoidalCoordinateSystem with two axis&quot;;\n          geosrs_cs:axis exsrs:ecs_axis1, exsrs:ecs_axis2 .\nexsrs:ecs_axis1 rdf:type geosrs_cs:Axis ;\n                rdfs:label &quot;Geodetic latitude&quot; ;\n                om:hasUnit om:degree ;\n                skos:altLabel &quot;Lat&quot; ;\n                geosrs_cs:axisDirection geosrs_cs:North .\nexsrs:ecs_axis2 rdf:type geosrs_cs:Axis ;\n                rdfs:label &quot;Geodetic longitude&quot; ;\n                om:hasUnit om:degree ;\n                skos:altLabel &quot;Lon&quot; ;\n                geosrs_cs:axisDirection geosrs_cs:East \n\n\n&#x27;^b&#x27;&#x27;...&quot;</div>
+                                                                    <div class="font-monospace subsection-title mt-2">SHACL</div>
+                                                                    <div class="font-monospace entry-message section-shacl text-danger">Validation result for _sources/cs/rules.shacl:
+  Validation Report
+  Conforms: False
+  Results (12):
+  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+  	Severity: sh:Violation
+  	Source Shape: geosrs:ConicalCoordinateSystemShape_Property
+  	Focus Node: &lt;https://w3id.org/geosrs/ConicalCoordinateSystem&gt;
+  	Result Path: geosrs:axis
+  	Message: A conical coordinate system should have at least three axes
+  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+  	Severity: sh:Violation
+  	Source Shape: geosrs:CurvilinearCoordinateSystemShape_Property
+  	Focus Node: &lt;https://w3id.org/geosrs/CurvilinearCoordinateSystem&gt;
+  	Result Path: geosrs:axis
+  	Message: A curvilinear coordinate system is defined in Euclidean space and should therefore have at least three axes
+  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+  	Severity: sh:Violation
+  	Source Shape: geosrs:DateTimeTemporalCoordinateSystemShape_Property
+  	Focus Node: &lt;https://w3id.org/geosrs/DateTimeTemporalCoordinateSystem&gt;
+  	Result Path: geosrs:axis
+  	Message: A date time temporal coordinate system should have exactly one axis
+  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+  	Severity: sh:Violation
+  	Source Shape: geosrs:CylindricalCoordinateSystemShape_Property
+  	Focus Node: &lt;https://w3id.org/geosrs/CylindricalCoordinateSystem&gt;
+  	Result Path: geosrs:axis
+  	Message: A cylindrical coordinate system should have at least three axes
+  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+  	Severity: sh:Violation
+  	Source Shape: geosrs:CoordinateSystemShape_Property
+  	Focus Node: &lt;https://w3id.org/geosrs/CoordinateSystem&gt;
+  	Result Path: geosrs:axis
+  	Message: A coordinate system should have at least one axis
+  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+  	Severity: sh:Violation
+  	Source Shape: geosrs:3DCoordinateSystemShape_Property
+  	Focus Node: &lt;https://w3id.org/geosrs/3DCoordinateSystem&gt;
+  	Result Path: geosrs:axis
+  	Message: A 3D coordinate system should have at least three axes
+  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+  	Severity: sh:Violation
+  	Source Shape: geosrs:PlanarCoordinateSystemShape_Property
+  	Focus Node: &lt;https://w3id.org/geosrs/PlanarCoordinateSystem&gt;
+  	Result Path: geosrs:axis
+  	Message: A planar coordinate system should have at least two axes
+  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+  	Severity: sh:Violation
+  	Source Shape: geosrs:TemporalCoordinateSystemShape_Property
+  	Focus Node: &lt;https://w3id.org/geosrs/TemporalCoordinateSystem&gt;
+  	Result Path: geosrs:axis
+  	Message: A temporal coordinate system should have exactly one axis
+  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+  	Severity: sh:Violation
+  	Source Shape: geosrs:TemporalMeasureCoordinateSystemShape_Property
+  	Focus Node: &lt;https://w3id.org/geosrs/TemporalMeasureCoordinateSystem&gt;
+  	Result Path: geosrs:axis
+  	Message: A temporal measure coordinate system should have exactly one axis
+  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+  	Severity: sh:Violation
+  	Source Shape: geosrs:CoordinateSystemAxisShape_Property
+  	Focus Node: &lt;https://w3id.org/geosrs/CoordinateSystemAxis&gt;
+  	Result Path: geosrs:axisDirection
+  	Message: A coordinate system axis should have exactly one axis direction
+  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+  	Severity: sh:Violation
+  	Source Shape: geosrs:1DCoordinateSystemShape_Property
+  	Focus Node: &lt;https://w3id.org/geosrs/1DCoordinateSystem&gt;
+  	Result Path: geosrs:axis
+  	Message: A 1D coordinate system should have exactly one axis
+  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+  	Severity: sh:Violation
+  	Source Shape: geosrs:TemporalCountCoordinateSystemShape_Property
+  	Focus Node: &lt;https://w3id.org/geosrs/TemporalCountCoordinateSystem&gt;
+  	Result Path: geosrs:axis
+  	Message: A temporal count coordinate system should have exactly one axis
+  </div>
+                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/cs/rules.shacl:
+ - Shape geosrs:ConicalCoordinateSystemShape: &lt;https://w3id.org/geosrs/ConicalCoordinateSystem&gt;
+ - Shape geosrs:CurvilinearCoordinateSystemShape: &lt;https://w3id.org/geosrs/CurvilinearCoordinateSystem&gt;
+ - Shape geosrs:DateTimeTemporalCoordinateSystemShape: &lt;https://w3id.org/geosrs/DateTimeTemporalCoordinateSystem&gt;
+ - Shape geosrs:CylindricalCoordinateSystemShape: &lt;https://w3id.org/geosrs/CylindricalCoordinateSystem&gt;
+ - Shape geosrs:CoordinateSystemShape: &lt;https://w3id.org/geosrs/CoordinateSystem&gt;
+ - Shape geosrs:3DCoordinateSystemShape: &lt;https://w3id.org/geosrs/3DCoordinateSystem&gt;
+ - Shape geosrs:PlanarCoordinateSystemShape: &lt;https://w3id.org/geosrs/PlanarCoordinateSystem&gt;
+ - Shape geosrs:TemporalCoordinateSystemShape: &lt;https://w3id.org/geosrs/TemporalCoordinateSystem&gt;
+ - Shape geosrs:TemporalMeasureCoordinateSystemShape: &lt;https://w3id.org/geosrs/TemporalMeasureCoordinateSystem&gt;
+ - Shape geosrs:CoordinateSystemAxisShape: &lt;https://w3id.org/geosrs/CoordinateSystemAxis&gt;
+ - Shape geosrs:1DCoordinateSystemShape: &lt;https://w3id.org/geosrs/1DCoordinateSystem&gt;
+ - Shape geosrs:TemporalCountCoordinateSystemShape: &lt;https://w3id.org/geosrs/TemporalCountCoordinateSystem&gt;
+</div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -271,28 +332,28 @@ Bad syntax (EOF found after object) at ^ in:
   Results (12):
   Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
   	Severity: sh:Violation
+  	Source Shape: geosrs:ConicalCoordinateSystemShape_Property
+  	Focus Node: &lt;https://w3id.org/geosrs/ConicalCoordinateSystem&gt;
+  	Result Path: geosrs:axis
+  	Message: A conical coordinate system should have at least three axes
+  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+  	Severity: sh:Violation
+  	Source Shape: geosrs:CurvilinearCoordinateSystemShape_Property
+  	Focus Node: &lt;https://w3id.org/geosrs/CurvilinearCoordinateSystem&gt;
+  	Result Path: geosrs:axis
+  	Message: A curvilinear coordinate system is defined in Euclidean space and should therefore have at least three axes
+  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+  	Severity: sh:Violation
   	Source Shape: geosrs:DateTimeTemporalCoordinateSystemShape_Property
   	Focus Node: &lt;https://w3id.org/geosrs/DateTimeTemporalCoordinateSystem&gt;
   	Result Path: geosrs:axis
   	Message: A date time temporal coordinate system should have exactly one axis
   Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
   	Severity: sh:Violation
-  	Source Shape: geosrs:TemporalCountCoordinateSystemShape_Property
-  	Focus Node: &lt;https://w3id.org/geosrs/TemporalCountCoordinateSystem&gt;
+  	Source Shape: geosrs:CylindricalCoordinateSystemShape_Property
+  	Focus Node: &lt;https://w3id.org/geosrs/CylindricalCoordinateSystem&gt;
   	Result Path: geosrs:axis
-  	Message: A temporal count coordinate system should have exactly one axis
-  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
-  	Severity: sh:Violation
-  	Source Shape: geosrs:TemporalMeasureCoordinateSystemShape_Property
-  	Focus Node: &lt;https://w3id.org/geosrs/TemporalMeasureCoordinateSystem&gt;
-  	Result Path: geosrs:axis
-  	Message: A temporal measure coordinate system should have exactly one axis
-  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
-  	Severity: sh:Violation
-  	Source Shape: geosrs:1DCoordinateSystemShape_Property
-  	Focus Node: &lt;https://w3id.org/geosrs/1DCoordinateSystem&gt;
-  	Result Path: geosrs:axis
-  	Message: A 1D coordinate system should have exactly one axis
+  	Message: A cylindrical coordinate system should have at least three axes
   Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
   	Severity: sh:Violation
   	Source Shape: geosrs:CoordinateSystemShape_Property
@@ -307,28 +368,22 @@ Bad syntax (EOF found after object) at ^ in:
   	Message: A 3D coordinate system should have at least three axes
   Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
   	Severity: sh:Violation
-  	Source Shape: geosrs:CurvilinearCoordinateSystemShape_Property
-  	Focus Node: &lt;https://w3id.org/geosrs/CurvilinearCoordinateSystem&gt;
-  	Result Path: geosrs:axis
-  	Message: A curvilinear coordinate system is defined in Euclidean space and should therefore have at least three axes
-  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
-  	Severity: sh:Violation
-  	Source Shape: geosrs:CylindricalCoordinateSystemShape_Property
-  	Focus Node: &lt;https://w3id.org/geosrs/CylindricalCoordinateSystem&gt;
-  	Result Path: geosrs:axis
-  	Message: A cylindrical coordinate system should have at least three axes
-  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
-  	Severity: sh:Violation
-  	Source Shape: geosrs:ConicalCoordinateSystemShape_Property
-  	Focus Node: &lt;https://w3id.org/geosrs/ConicalCoordinateSystem&gt;
-  	Result Path: geosrs:axis
-  	Message: A conical coordinate system should have at least three axes
-  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
-  	Severity: sh:Violation
   	Source Shape: geosrs:PlanarCoordinateSystemShape_Property
   	Focus Node: &lt;https://w3id.org/geosrs/PlanarCoordinateSystem&gt;
   	Result Path: geosrs:axis
   	Message: A planar coordinate system should have at least two axes
+  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+  	Severity: sh:Violation
+  	Source Shape: geosrs:TemporalCoordinateSystemShape_Property
+  	Focus Node: &lt;https://w3id.org/geosrs/TemporalCoordinateSystem&gt;
+  	Result Path: geosrs:axis
+  	Message: A temporal coordinate system should have exactly one axis
+  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+  	Severity: sh:Violation
+  	Source Shape: geosrs:TemporalMeasureCoordinateSystemShape_Property
+  	Focus Node: &lt;https://w3id.org/geosrs/TemporalMeasureCoordinateSystem&gt;
+  	Result Path: geosrs:axis
+  	Message: A temporal measure coordinate system should have exactly one axis
   Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
   	Severity: sh:Violation
   	Source Shape: geosrs:CoordinateSystemAxisShape_Property
@@ -337,24 +392,30 @@ Bad syntax (EOF found after object) at ^ in:
   	Message: A coordinate system axis should have exactly one axis direction
   Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
   	Severity: sh:Violation
-  	Source Shape: geosrs:TemporalCoordinateSystemShape_Property
-  	Focus Node: &lt;https://w3id.org/geosrs/TemporalCoordinateSystem&gt;
+  	Source Shape: geosrs:1DCoordinateSystemShape_Property
+  	Focus Node: &lt;https://w3id.org/geosrs/1DCoordinateSystem&gt;
   	Result Path: geosrs:axis
-  	Message: A temporal coordinate system should have exactly one axis
+  	Message: A 1D coordinate system should have exactly one axis
+  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+  	Severity: sh:Violation
+  	Source Shape: geosrs:TemporalCountCoordinateSystemShape_Property
+  	Focus Node: &lt;https://w3id.org/geosrs/TemporalCountCoordinateSystem&gt;
+  	Result Path: geosrs:axis
+  	Message: A temporal count coordinate system should have exactly one axis
   </div>
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/cs/rules.shacl:
+ - Shape geosrs:ConicalCoordinateSystemShape: &lt;https://w3id.org/geosrs/ConicalCoordinateSystem&gt;
+ - Shape geosrs:CurvilinearCoordinateSystemShape: &lt;https://w3id.org/geosrs/CurvilinearCoordinateSystem&gt;
  - Shape geosrs:DateTimeTemporalCoordinateSystemShape: &lt;https://w3id.org/geosrs/DateTimeTemporalCoordinateSystem&gt;
- - Shape geosrs:TemporalCountCoordinateSystemShape: &lt;https://w3id.org/geosrs/TemporalCountCoordinateSystem&gt;
- - Shape geosrs:TemporalMeasureCoordinateSystemShape: &lt;https://w3id.org/geosrs/TemporalMeasureCoordinateSystem&gt;
- - Shape geosrs:1DCoordinateSystemShape: &lt;https://w3id.org/geosrs/1DCoordinateSystem&gt;
+ - Shape geosrs:CylindricalCoordinateSystemShape: &lt;https://w3id.org/geosrs/CylindricalCoordinateSystem&gt;
  - Shape geosrs:CoordinateSystemShape: &lt;https://w3id.org/geosrs/CoordinateSystem&gt;
  - Shape geosrs:3DCoordinateSystemShape: &lt;https://w3id.org/geosrs/3DCoordinateSystem&gt;
- - Shape geosrs:CurvilinearCoordinateSystemShape: &lt;https://w3id.org/geosrs/CurvilinearCoordinateSystem&gt;
- - Shape geosrs:CylindricalCoordinateSystemShape: &lt;https://w3id.org/geosrs/CylindricalCoordinateSystem&gt;
- - Shape geosrs:ConicalCoordinateSystemShape: &lt;https://w3id.org/geosrs/ConicalCoordinateSystem&gt;
  - Shape geosrs:PlanarCoordinateSystemShape: &lt;https://w3id.org/geosrs/PlanarCoordinateSystem&gt;
- - Shape geosrs:CoordinateSystemAxisShape: &lt;https://w3id.org/geosrs/CoordinateSystemAxis&gt;
  - Shape geosrs:TemporalCoordinateSystemShape: &lt;https://w3id.org/geosrs/TemporalCoordinateSystem&gt;
+ - Shape geosrs:TemporalMeasureCoordinateSystemShape: &lt;https://w3id.org/geosrs/TemporalMeasureCoordinateSystem&gt;
+ - Shape geosrs:CoordinateSystemAxisShape: &lt;https://w3id.org/geosrs/CoordinateSystemAxis&gt;
+ - Shape geosrs:1DCoordinateSystemShape: &lt;https://w3id.org/geosrs/1DCoordinateSystem&gt;
+ - Shape geosrs:TemporalCountCoordinateSystemShape: &lt;https://w3id.org/geosrs/TemporalCountCoordinateSystem&gt;
 </div>
                                                     </div>
                                                 </div>

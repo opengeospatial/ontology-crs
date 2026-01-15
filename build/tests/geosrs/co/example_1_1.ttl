@@ -1,14 +1,8 @@
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix geosrs_co:<https://w3id.org/geosrs/co/> .
-@prefix exsrs: <https://w3id.org/example-data-srs#> .
-
-@prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix geosrs: <https://w3id.org/geosrs/> .
+@prefix geosrs_co: <https://w3id.org/geosrs/co/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://www.opengis.net/ont/crs/operation/UTM_zone_32N> rdf:type geosrs_co:UniversalTransverseMercatorProjection, ;
+<http://www.opengis.net/ont/crs/operation/UTM_zone_32N> a geosrs_co:UniversalTransverseMercatorProjection ;
     rdfs:label "UTM zone 32N: Transverse Mercator"@en ;
     geosrs:area_of_use <http://www.opengis.net/ont/crs/areaofuse/UTM_zone_32N_area_of_use> ;
     geosrs:asProj4 "+proj=pipeline +step +proj=axisswap +order=2,1 +step +proj=unitconvert +xy_in=deg +xy_out=rad +step +proj=utm +zone=32 +a=6378249.145 +rf=293.465",

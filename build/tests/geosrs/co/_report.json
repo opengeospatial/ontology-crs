@@ -2,8 +2,8 @@
   "title": "Validation report for ogc.geosrs.co - SRS Ontology - Coordinate Operation module",
   "bblockName": "SRS Ontology - Coordinate Operation module",
   "bblockId": "ogc.geosrs.co",
-  "generated": "2026-01-15T09:42:30.208230+00:00",
-  "result": false,
+  "generated": "2026-01-15T10:30:59.652959+00:00",
+  "result": true,
   "items": [
     {
       "source": {
@@ -15,8 +15,26 @@
         "snippetIndex": 1,
         "language": "text/turtle"
       },
-      "result": false,
+      "result": true,
       "sections": [
+        {
+          "name": "FILES",
+          "title": "Files",
+          "entries": [
+            {
+              "isError": false,
+              "message": "Using example_1_1.ttl from examples"
+            },
+            {
+              "op": "ttl-create",
+              "empty": false,
+              "filename": "example_1_1.ttl",
+              "size": 10,
+              "isError": false,
+              "message": "Output Turtle example_1_1.ttl created"
+            }
+          ]
+        },
         {
           "name": "TURTLE",
           "title": "Turtle",
@@ -24,11 +42,6 @@
             {
               "isError": false,
               "message": "Prefixes are defined for mynamespace"
-            },
-            {
-              "exception": "BadSyntax",
-              "isError": true,
-              "message": "at line 12 of <>:\nBad syntax (objectList expected) at ^ in:\n\"...b'p://www.opengis.net/ont/crs/operation/UTM_zone_32N> rdf:type'^b' geosrs_co:UniversalTransverseMercatorProjection, ;\\n    rdfs'...\""
             }
           ]
         }
@@ -38,7 +51,7 @@
   "globalErrors": {},
   "counts": {
     "total": 1,
-    "passed": 0,
-    "failed": 1
+    "passed": 1,
+    "failed": 0
   }
 }

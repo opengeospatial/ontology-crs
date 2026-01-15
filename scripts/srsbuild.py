@@ -128,14 +128,14 @@ def convertCSVToSHACLAndADoc():
                         shaclres.add((URIRef(shapeuri),URIRef("http://www.w3.org/2000/01/rdf-schema#label"),Literal("CRS Ontology Shape S"+str(shapecounter),lang="en")))
                         shaclres.add((URIRef(shapeuri),URIRef("http://www.w3.org/ns/shacl#targetNode"),URIRef(row["Concept"].replace("geosrs:","https://w3id.org/geosrs/"))))
                         shaclres.add((URIRef(shapeuri),URIRef("http://www.w3.org/ns/shacl#property"),URIRef(shapepropuri)))
-						shaclres.add((URIRef(shapepropuri),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef("http://www.w3.org/ns/shacl#PropertyShape")))
-						shaclres.add((URIRef(shapepropuri),URIRef("http://www.w3.org/ns/shacl#path"),URIRef(str(row["Property"]).replace("geosrs:","https://w3id.org/geosrs/"))))
+                        shaclres.add((URIRef(shapepropuri),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef("http://www.w3.org/ns/shacl#PropertyShape")))
+                        shaclres.add((URIRef(shapepropuri),URIRef("http://www.w3.org/ns/shacl#path"),URIRef(str(row["Property"]).replace("geosrs:","https://w3id.org/geosrs/"))))
                         curshaclres.add((URIRef(shapeuri),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef("http://www.w3.org/ns/shacl#NodeShape")))
                         curshaclres.add((URIRef(shapeuri),URIRef("http://www.w3.org/2000/01/rdf-schema#label"),Literal("CRS Ontology Shape S"+str(shapecounter),lang="en")))
                         curshaclres.add((URIRef(shapeuri),URIRef("http://www.w3.org/ns/shacl#targetNode"),URIRef(row["Concept"].replace("geosrs:","https://w3id.org/geosrs/"))))
                         curshaclres.add((URIRef(shapeuri),URIRef("http://www.w3.org/ns/shacl#property"),URIRef(shapepropuri)))
-						curshaclres.add((URIRef(shapepropuri),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef("http://www.w3.org/ns/shacl#PropertyShape")))
-						curshaclres.add((URIRef(shapepropuri),URIRef("http://www.w3.org/ns/shacl#path"),URIRef(str(row["Property"]).replace("geosrs:","https://w3id.org/geosrs/"))))
+                        curshaclres.add((URIRef(shapepropuri),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef("http://www.w3.org/ns/shacl#PropertyShape")))
+                        curshaclres.add((URIRef(shapepropuri),URIRef("http://www.w3.org/ns/shacl#path"),URIRef(str(row["Property"]).replace("geosrs:","https://w3id.org/geosrs/"))))
                         adocdef+="|Shape S"+str(shapecounter)+" "
                         adocdef+="|"+str(row["Concept"])+" "
                         adocdef+="|"+str(row["Property"])+" "

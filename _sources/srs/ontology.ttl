@@ -1,0 +1,188 @@
+@prefix geosrs: <https://w3id.org/geosrs/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/geosrs> a owl:Ontology ;
+    rdfs:label "SRS Ontology"@en ;
+    vann:preferredNamespacePrefix "geosrs"^^xsd:string ;
+    vann:preferredNamespaceUri "https://w3id.org/geosrs/"^^xsd:anyURI .
+
+geosrs:CartesianCoordinateSystem a owl:Class ;
+    rdfs:label "Cartesian Coordinate System"@en ;
+    rdfs:subClassOf <https://w3id.org/geosrs/srs/SingleCRS> ;
+    skos:definition "Coordinate system which gives the position of points relative to n mutually perpendicular axes. Cf. ISO 19111:2007:2007-07, tables 15 and 18."@en .
+
+geosrs:CoordinateSystemAxis a owl:Class ;
+    rdfs:label "Coordinate System Axis"@en ;
+    skos:definition "Axis relative to which a coordinate of a point is specified in a coordinate system. See ISO 19111:2007:2007-07, part 9.3, table 27 and annex B.2.2."@en .
+
+geosrs:EPSGcode a owl:DatatypeProperty ;
+    rdfs:label "EPSG code"@en ;
+    rdfs:range <xsd:string> ;
+    skos:definition "Identifier of this resource in the EPSG Geodetic Parameter Dataset."@en .
+
+geosrs:Ellipsoid a owl:Class ;
+    rdfs:label "Ellipsoid"@en ;
+    skos:definition "Surface formed by the rotation of an ellipse about its minor axis, defined by a semi-major axis and a flattening parameter and fairly geocentric. NB : It is a mathematical model of the geoid, i.e. the Earth without its relief. Many geodetic ellipsoids exist. Cf. ISO 19111:2007:2007-07, part 10.2.2, table 36 and annex B.3.2.3."@en .
+
+geosrs:EllipsoidalCoordinateSystem a owl:Class ;
+    rdfs:label "Ellipsoidal Coordinate System"@en ;
+    rdfs:subClassOf <https://w3id.org/geosrs/cs/OrthogonalCoordinateSystem> ;
+    skos:definition "Coordinate system which gives the position is specified by geodetic latitude, geodetic longitude and (in the three-dimensional case) ellipsoidal height. Cf. ISO 19111:2007:2007-07, tables 15 and 20."@en .
+
+geosrs:GeodeticDatum a owl:Class ;
+    rdfs:label "Geodetic Datum"@en ;
+    skos:definition "Datum describing the relation of a two- or three-dimensional coordinate system to the Earth. Cf. ISO 19111:2007:2007-07, part 10.2, table 34 and annex B.3.2."@en .
+
+geosrs:LinearCoordinateSystem a owl:Class ;
+    rdfs:label "Linear Coordinate System"@en ;
+    rdfs:subClassOf geosrs:CoordinateSystem ;
+    skos:definition "One-dimensional coordinate system in which a linear feature forms the axis."@en .
+
+geosrs:OperationParameter a owl:Class ;
+    rdfs:label "Operation Parameter"@en ;
+    rdfs:subClassOf geosrs:GeneralOperationParameter ;
+    skos:definition "Parameter used by a method to perform an operation on coordinates. Note: Most parameter values are numeric, but other types of parameter values are possible. See ISO 19111:2007:2007-07, table 52 and annex B.4.5."@en .
+
+geosrs:OperationParameterValue a owl:Class ;
+    rdfs:label "Operation Parameter Value"@en ;
+    rdfs:subClassOf geosrs:GeneralParameterValue ;
+    skos:definition "Value of a parameter used by a method to perform an operation on coordinates. See ISO 19111:2007:2007-07, table 55."@en .
+
+geosrs:ParametricCoordinateSystem a owl:Class ;
+    rdfs:label "Parametric Coordinate System"@en ;
+    rdfs:subClassOf <https://w3id.org/geosrs/cs/1DCoordinateSystem> ;
+    skos:definition "One-dimensional coordinate system where the axis units are parameter values which are not inherently spatial."@en .
+
+geosrs:PolarCoordinateSystem a owl:Class ;
+    rdfs:label "Polar Coordinate System"@en ;
+    rdfs:subClassOf <https://w3id.org/geosrs/cs/PlanarCoordinateSystem> ;
+    skos:definition "Two-dimensional coordinate system in Euclidean space in which position is specified by one distance coordinate and one angular coordinate."@en .
+
+geosrs:PrimeMeridian a owl:Class ;
+    rdfs:label "Prime meridian"@en ;
+    skos:definition "Meridian from which the longitudes of other meridians are quantified. Cf. ISO 19111:2007:2007-07, part 10.2.1, table 35 and annex B.3.2.2."@en .
+
+geosrs:SingleOperation a owl:Class ;
+    rdfs:label "Single Operation"@en ;
+    rdfs:subClassOf geosrs:CoordinateOperation ;
+    owl:disjointWith <https://w3id.org/geosrs/co/ConcatenatedOperation> ;
+    skos:definition "A non concatenated coordinate operation. Cf. ISO 19111:2007:2007-07, table 43."@en .
+
+geosrs:SphericalCoordinateSystem a owl:Class ;
+    rdfs:label "Spherical Coordinate System"@en ;
+    rdfs:subClassOf <https://w3id.org/geosrs/cs/3DCoordinateSystem> ;
+    skos:definition "Three-dimensional coordinate system in Euclidean space with one distance measured from the origin and two angular coordinates"@en .
+
+geosrs:Transformation a owl:Class ;
+    rdfs:label "Transformation"@en ;
+    rdfs:subClassOf geosrs:Conversion ;
+    skos:definition "Coordinate operation in which the two coordinate reference systems are based on different datums. Cf. ISO 19111:2007:2007-07, table 44."@en .
+
+geosrs:VerticalCoordinateSystem a owl:Class ;
+    rdfs:label "Vertical Coordinate System"@en ;
+    rdfs:subClassOf geosrs:CoordinateSystem ;
+    owl:disjointWith geosrs:OrdinalCoordinateSystem ;
+    skos:definition "One-dimensional coordinate system used for gravity related height or depth measurements. Cf. ISO 19111:2007:2007-07, tables 15 and 25."@en .
+
+geosrs:VerticalDatum a owl:Class ;
+    rdfs:label "Vertical Datum"@en ;
+    rdfs:subClassOf geosrs:Datum ;
+    skos:definition "Datum describing the relation of gravity-related heights or depths to the Earth. Cf. ISO 19111:2007:2007-07, table 41 and annex B.3.3."@en .
+
+geosrs:asProj4 a owl:DatatypeProperty ;
+    rdfs:label "PROJ4 string"@en ;
+    rdfs:domain <https://w3id.org/geosrs/srs/CRS> ;
+    rdfs:range <https://w3id.org/geosrs/srs/proj4Literal> ;
+    skos:definition "PROJ4 string defining a CRS. Note: this paradigm is ambiguous and presently considered outdated."@en .
+
+geosrs:asProjJSON a owl:DatatypeProperty ;
+    rdfs:label "PROJ JSON definition"@en ;
+    rdfs:domain <https://w3id.org/geosrs/srs/CRS> ;
+    rdfs:range <https://w3id.org/geosrs/srs/projJSONLiteral> ;
+    skos:definition "CRS definition encoded as a JSON object interpretable by PROJ4."@en .
+
+geosrs:asWKT a owl:DatatypeProperty ;
+    rdfs:label "WKT definition"@en ;
+    rdfs:domain <https://w3id.org/geosrs/srs/CRS> ;
+    rdfs:range <https://w3id.org/geosrs/srs/wktLiteral> ;
+    skos:definition "CRS definition encoded according to the Well Known Text structure. Cf. ISO 19162:2019. "@en .
+
+geosrs:baseCRS a owl:ObjectProperty ;
+    rdfs:label "Base CRS"@en ;
+    rdfs:domain <https://w3id.org/geosrs/srs/ProjectedCRS> ;
+    rdfs:range <https://w3id.org/geosrs/srs/GeodeticCRS> ;
+    skos:definition "The geodetic coordinate reference system on which a projected coordinate reference system is based. Cf. ISO 19111:2007:2007-07, table 11, association role baseCRS."@en .
+
+geosrs:conversion a owl:ObjectProperty ;
+    rdfs:label "Defined by conversion"@en ;
+    rdfs:domain <https://w3id.org/geosrs/srs/CRS> ;
+    rdfs:range geosrs:Conversion ;
+    skos:definition "The conversion used to define a projected coordinate reference system. Cf. ISO 19111:2007:2007-07, table 7, named association Definition."@en .
+
+geosrs:coordinateSystem a owl:ObjectProperty ;
+    rdfs:label "Coordinate system"@en ;
+    rdfs:domain <https://w3id.org/geosrs/srs/CRS> ;
+    rdfs:range geosrs:CoordinateSystem ;
+    skos:definition "The property relates a coordinate reference system to its coordinate system"@en .
+
+geosrs:datum a owl:ObjectProperty ;
+    rdfs:label "Datum"@en ;
+    rdfs:domain <https://w3id.org/geosrs/srs/CRS> ;
+    rdfs:range geosrs:Datum ;
+    skos:definition "The property relates a coordinate reference system to a datum"@en .
+
+geosrs:datumEnsemble a owl:ObjectProperty ;
+    rdfs:label "Datum Ensemble"@en ;
+    rdfs:domain <https://w3id.org/geosrs/srs/SingleCRS> ;
+    rdfs:range <https://w3id.org/geosrs/datum/DatumEnsemble> ;
+    skos:definition "Indicates a single CRS referring to a collection of one or more datums (Datum Ensemble)"@en .
+
+geosrs:domainOfValidity a owl:ObjectProperty ;
+    rdfs:label "Domain of validity"@en ;
+    rdfs:domain <https://w3id.org/geosrs/srs/CRS> ;
+    rdfs:range <https://w3id.org/geosrs/srs/AreaOfUse> ;
+    skos:definition "Geographic area or time interval in which the referring object is valid. Cf. ISO 19111:2007:2007-07, tables 4, 33 and 42, attribute domainOfValidity."@en .
+
+geosrs:method a owl:ObjectProperty ;
+    rdfs:label "Method"@en ;
+    rdfs:domain <https://w3id.org/geosrs/srs/CRS> ;
+    rdfs:range geosrs:CoordinateOperation .
+
+geosrs:GeneralOperationParameter a owl:Class ;
+    rdfs:label "General Operation Parameter"@en ;
+    skos:definition "Definition of a parameter or group of parameters used by a coordinate operation method."@en .
+
+geosrs:GeneralParameterValue a owl:Class ;
+    rdfs:label "General Parameter Value"@en ;
+    skos:definition "Parameter value or group of parameter values"@en .
+
+geosrs:OperationMethod a owl:Class ;
+    rdfs:label "Operation Method"@en ;
+    skos:definition "Method used to perform an operation on coordinates. See ISO 19111:2007:2007-07, table 48 and annex B.4.5."@en .
+
+geosrs:OrdinalCoordinateSystem a owl:Class ;
+    rdfs:label "Ordinal Coordinate System"@en ;
+    rdfs:subClassOf geosrs:CoordinateSystem ;
+    skos:definition "n-dimensional coordinate system in which every axis uses integers."@en .
+
+geosrs:Conversion a owl:Class ;
+    rdfs:label "Conversion"@en ;
+    rdfs:subClassOf geosrs:CoordinateOperation ;
+    skos:definition "Coordinate operation in which both coordinate reference systems are based on the same datum. Cf. ISO 19111:2007:2007-07, table 45 and annex B.4.2."@en .
+
+geosrs:Datum a owl:Class ;
+    rdfs:label "Datum"@en ;
+    skos:definition "Parameter or set of parameters that define the position of the origin, the scale and the orientation of a coordinate system. Cf. ISO 19111:2007:2007-07, part 10.1, table 33 and annex B.3."@en .
+
+geosrs:CoordinateOperation a owl:Class ;
+    rdfs:label "Coordinate Operation"@en ;
+    rdfs:subClassOf geosrs:OperationMethod ;
+    skos:definition "Mathematical operation on coordinates, based on one-to-one relationship, that changes coordinates from one coordinate reference system to another. Cf. ISO 19111:2007:2007-07, part 11.1, table 42 and annex B.4."@en .
+
+geosrs:CoordinateSystem a owl:Class ;
+    rdfs:label "Coordinate System"@en ;
+    skos:definition "Set of axes that spans a given coordinate space and of mathematical rules for specifying how coordinates are to be assigned to points. Cf. ISO 19111:2007:2007-07, part 9.2, table 17 and annex B.2."@en .

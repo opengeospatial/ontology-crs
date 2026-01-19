@@ -1,0 +1,11 @@
+$schema: https://raw.githubusercontent.com/opengeospatial/bblocks-postprocess/refs/heads/master/ogc/bblocks/schemas/examples.schema.yaml
+## Prefixes for examples
+prefixes:
+  mynamespace: https://w3id.org/example-data-srs#
+## List of examples
+examples:
+- title: SRS Ontology Datum Module Example
+
+  snippets:
+    - language: ttl
+      ref: examples/geodeticdatum.ttl

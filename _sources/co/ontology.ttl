@@ -1,0 +1,107 @@
+@prefix geosrs: <https://w3id.org/geosrs/> .
+@prefix geosrs_co: <https://w3id.org/geosrs/co/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+geosrs_co:ConcatenatedOperation a owl:Class ;
+    rdfs:label "Concatenated Operation"@en ;
+    rdfs:subClassOf geosrs:CoordinateOperation ;
+    skos:definition "Ordered sequence of two or more single coordinate operations. Note: The sequence of coordinate operations is constrained by the requirement that the source coordinate reference system of step (n + 1) shall be the same as the target coordinate reference system of step (n). The source coordinate reference system of the first step and the target coordinate reference system of the last step are the source and target coordinate reference system associated with the concatenated coordinate operation. For a concatenated coordinate operation sequence of n coordinate operations:     source CRS (concatenated coordinate operation) .eq. source CRS (coordinate operation step 1)     target CRS (coordinate operation step i) .eq. source CRS (coordinate operation step i + 1); i .eq. 1 ...(n - 1)     target CRS (concatenated coordinate operation) .eq. target CRS (coordinate operation step n) Instead of a forward coordinate operation, an inverse coordinate operation may be used for one or more of the coordinate operation steps mentioned above, if the inverse coordinate operation is uniquely defined by the forward coordinate operation method."@en .
+
+geosrs_co:GeographicObject a owl:Class ;
+    rdfs:label "Geographic Object"@en ;
+    rdfs:subClassOf <http://def.isotc211.org/iso19107/2003/Geometry#Geometry> ;
+    skos:definition "Identifier of a geographic feature of which the coordinates are used as operation parameters."@en .
+
+geosrs_co:IdentityOperation a owl:Class ;
+    rdfs:label "Identity Operation"@en ;
+    rdfs:subClassOf geosrs_co:AffineTransformationOperation ;
+    skos:definition "Identity transformation operation"@en .
+
+geosrs_co:OperationParameterGroup a owl:Class ;
+    rdfs:label "Operation Parameter Group"@en ;
+    rdfs:subClassOf geosrs:GeneralOperationParameter ;
+    skos:definition "Definition of a group of related parameters used by a coordinate operation method."@en .
+
+geosrs_co:ParameterValueGroup a owl:Class ;
+    rdfs:label "Parameter Value Group"@en ;
+    rdfs:subClassOf geosrs:GeneralParameterValue ;
+    skos:definition "Group of related parameter values. Note: The same group can be repeated more than once in a coordinate operation or higher level ParameterValueGroup, if those instances contain different values of one or more ParameterValues which suitably distinguish among those groups."@en .
+
+geosrs_co:PassThroughOperation a owl:Class ;
+    rdfs:label "Pass Through Operation"@en ;
+    rdfs:subClassOf geosrs:CoordinateOperation ;
+    skos:definition "Specification of a subset of coordinate tuples that is subject to a coordinate operation"@en .
+
+geosrs_co:PointMotionOperation a owl:Class ;
+    rdfs:label "Point Motion Operation"@en ;
+    rdfs:subClassOf geosrs:SingleOperation ;
+    owl:disjointWith geosrs:SingleOperation ;
+    skos:definition "Mathematical operation that decribes the change of coordinate values within one coordinate reference system due to the motion of the point between one coordinate epoch and another coordinate epoch Note: In this document the motion is due to tectonic plate movement or deformation."@en .
+
+geosrs_co:RegisterOperations a owl:Class ;
+    rdfs:label "Register Operations"@en ;
+    skos:definition "Operations supported in the Coordinate Operations package."@en .
+
+geosrs_co:RotationOperation a owl:Class ;
+    rdfs:label "Rotation Operation"@en ;
+    rdfs:subClassOf geosrs_co:AffineTransformationOperation ;
+    skos:definition "Rotation transformation operation"@en .
+
+geosrs_co:ScaleOperation a owl:Class ;
+    rdfs:label "Scale Operation"@en ;
+    rdfs:subClassOf geosrs_co:AffineTransformationOperation ;
+    skos:definition "Scale transformation operation"@en .
+
+geosrs_co:ShearOperation a owl:Class ;
+    rdfs:label "Shear Operation"@en ;
+    rdfs:subClassOf geosrs_co:AffineTransformationOperation ;
+    skos:definition "Shear transformation operation"@en .
+
+geosrs_co:TranslationOperation a owl:Class ;
+    rdfs:label "Translation Operation"@en ;
+    rdfs:subClassOf geosrs_co:AffineTransformationOperation ;
+    skos:definition "Translation transformation operation"@en .
+
+geosrs_co:derivingConversion a owl:ObjectProperty ;
+    rdfs:label "Deriving conversion"@en ;
+    rdfs:domain geosrs:DerivedCRS ;
+    rdfs:range geosrs:Conversion ;
+    skos:definition "Relates a derived CRS to a conversion"@en .
+
+geosrs_co:parameter a owl:ObjectProperty ;
+    rdfs:label "Parameter"@en ;
+    rdfs:domain geosrs:Conversion ;
+    rdfs:range geosrs:OperationParameter ;
+    skos:definition "Value of the datum-defining parameter"@en .
+
+geosrs_co:sourceCRS a owl:ObjectProperty ;
+    rdfs:label "Source CRS"@en ;
+    rdfs:domain geosrs:CoordinateOperation ;
+    rdfs:range <https://w3id.org/geosrs/srs/CRS> ;
+    skos:definition "The coordinate reference system associated to the data used as input of a given operation. Cf. ISO 19111:2007:2007-07, table 42, named association Source."@en .
+
+geosrs_co:targetCRS a owl:ObjectProperty ;
+    rdfs:label "Target CRS"@en ;
+    rdfs:domain geosrs:CoordinateOperation ;
+    rdfs:range <https://w3id.org/geosrs/srs/CRS> ;
+    skos:definition "The coordinate reference system associated to the data obtained as output of a given operation. Cf. ISO 19111:2007:2007-07, table 42, named association Target."@en .
+
+geosrs:coco a owl:Ontology ;
+    rdfs:label "SRS Ontology: Geosrs_co"@en ;
+    vann:preferredNamespacePrefix "geosrs_co"^^xsd:string ;
+    vann:preferredNamespaceUri "https://w3id.org/geosrs/co/"^^xsd:anyURI .
+
+geosrs_co:CoordinateTransformationOperation a owl:Class ;
+    rdfs:label "Coordinate Transformation Operation"@en ;
+    rdfs:subClassOf geosrs:SingleOperation ;
+    skos:definition "Coordinate operation in which the two coordinate reference systems are based on different datums."@en .
+
+geosrs_co:AffineTransformationOperation a owl:Class ;
+    rdfs:label "Affine Transformation Operation"@en ;
+    rdfs:subClassOf <>,
+        geosrs_co:CoordinateTransformationOperation ;
+    skos:definition "Affine coordinate transformation operation"@en .

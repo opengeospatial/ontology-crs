@@ -1,0 +1,9 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix geosrs_app:<https://w3id.org/geosrs/application/> .
+@prefix exsrs: <https://w3id.org/example-data-srs#> .
+
+exsrs:mysrsapp rdf:type geosrs_app:Hydrology .
+exsrs:mysrsapp rdfs:label "watering my garden"@en .
+
+exsrs:mysrs geosrs_app:usage exsrs:mysrsapp .

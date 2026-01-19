@@ -1,0 +1,42 @@
+  {
+  "$schema": "metaschema.yaml",
+  "name": "SRS Ontology - Projection module",
+  "highlighted": true,
+  "abstract": "A building block defining SRS Ontology Projection Module",
+  "status": "under-development",
+  "dateTimeAddition": "2023-04-05T00:00:00Z",
+  "itemClass": "model",
+  "register": "geosrs",
+  "requirementClasses":[
+    "/req/projections/Archaic_Projections",
+    "/req/projections/Azimuthal_Projections",
+    "/req/projections/Compromise_Projections",
+    "/req/projections/Conformal_Projections",
+    "/req/projections/Conical_Projections",
+    "/req/projections/Cylindrical_Projections",
+    "/req/projections/Equal_Area_Projections",
+    "/req/projections/Equidistant_Projections",
+    "/req/projections/Globular_Projections",
+    "/req/projections/Lenticular_Projections",
+    "/req/projections/Minimum_Error_Projections",
+    "/req/projections/Perspective_Projections",
+    "/req/projections/Polyconic_Projections",
+    "/req/projections/Polyhedral_Projections",
+    "/req/projections/Projection",
+    "/req/projections/Pseudo_Azimuthal_Projections",
+    "/req/projections/Pseudo_Conical_Projections",
+    "/req/projections/Pseudo_Cylindrical_Projections",
+    "/req/projections/Stereographic_Projections"
+  ],
+  "version": "0.1",
+  "dateOfLastChange": "2023-04-05",
+  "sources": [
+    {
+      "title": "Sample source document",
+      "link": "https://example.com/sources/1"
+    }
+  ],
+  "maturity": "mature",
+  "scope": "unstable",
+  "tags": ["geosrs"]
+}

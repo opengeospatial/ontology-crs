@@ -2,7 +2,7 @@
   "title": "Validation report for ogc.geosrs.planet - SRS Ontology - Planet module",
   "bblockName": "SRS Ontology - Planet module",
   "bblockId": "ogc.geosrs.planet",
-  "generated": "2026-01-15T10:53:49.495108+00:00",
+  "generated": "2026-01-19T14:44:15.123023+00:00",
   "result": true,
   "items": [
     {
@@ -23,7 +23,7 @@
           "entries": [
             {
               "isError": false,
-              "message": "Using example_1_1.ttl from examples"
+              "message": "Using examples/planet.ttl from examples"
             },
             {
               "op": "ttl-create",

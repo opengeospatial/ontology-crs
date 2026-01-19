@@ -60,11 +60,11 @@
                         [ rdf:value [ om:hasUnit om:degree ;
                                     rdf:value 4.65e+01 ] ] ],
                 [ a geosrs:OperationParameterValue ;
-                    geosrs:parameter [ a geosrs:OperationParameter ;
-                            rdfs:label "Easting at false origin" ;
-                            dc:identifier "EPSG:8826" ],
-                        [ rdf:value [ om:hasUnit om:metre ;
-                                    rdf:value 700000 ] ] ],
+                    geosrs:parameter [ rdf:value [ om:hasUnit om:degree ;
+                                    rdf:value 3 ] ],
+                        [ a geosrs:OperationParameter ;
+                            rdfs:label "Longitude of false origin" ;
+                            dc:identifier "EPSG:8822" ] ],
                 [ a geosrs:OperationParameterValue ;
                     geosrs:parameter [ a geosrs:OperationParameter ;
                             rdfs:label "Northing at false origin" ;
@@ -85,10 +85,10 @@
                                     rdf:value 49 ] ] ],
                 [ a geosrs:OperationParameterValue ;
                     geosrs:parameter [ a geosrs:OperationParameter ;
-                            rdfs:label "Longitude of false origin" ;
-                            dc:identifier "EPSG:8822" ],
-                        [ rdf:value [ om:hasUnit om:degree ;
-                                    rdf:value 3 ] ] ] ] ;
+                            rdfs:label "Easting at false origin" ;
+                            dc:identifier "EPSG:8826" ],
+                        [ rdf:value [ om:hasUnit om:metre ;
+                                    rdf:value 700000 ] ] ] ] ;
     geosrs:domainOfValidity [ a geosrs_srs:AreaOfUse ;
             skos:scopeNote "Engineering survey, topographic mapping." ;
             geosrs:domainOfValidity [ geo:hasBoundingBox [ a geosrs:GeographicBoundingBox ] ] ] .

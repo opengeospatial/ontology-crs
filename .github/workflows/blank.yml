@@ -38,6 +38,7 @@ jobs:
          asciidoctor spec/document.adoc --trace -T spec/templates/html5/ -o docs/respec/index.html
          mv *.ttl context index.html examples.json docs/
          cd docs
+         touch .nojekyll
          pylode -o application/index.html -i application.ttl
          cp application.ttl ../_sources/app/ontology.ttl
          mv application.ttl application/

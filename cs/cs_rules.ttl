@@ -3,138 +3,138 @@
 @prefix sh: <http://www.w3.org/ns/shacl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-geosrs:1DCoordinateSystemShape a sh:NodeShape ;
+<https://w3id.org/geosrs/1DCoordinateSystem_geosrs:axis_Shape> a sh:NodeShape ;
     rdfs:label "CRS Ontology Shape S1"@en ;
-    sh:property geosrs:1DCoordinateSystemShape_Property ;
+    sh:property <https://w3id.org/geosrs/1DCoordinateSystem_geosrs:axis_Shape_Property> ;
     sh:targetNode geosrs:1DCoordinateSystem .
 
-geosrs:3DCoordinateSystemShape a sh:NodeShape ;
+<https://w3id.org/geosrs/3DCoordinateSystem_geosrs:axis_Shape> a sh:NodeShape ;
     rdfs:label "CRS Ontology Shape S2"@en ;
-    sh:property geosrs:3DCoordinateSystemShape_Property ;
+    sh:property <https://w3id.org/geosrs/3DCoordinateSystem_geosrs:axis_Shape_Property> ;
     sh:targetNode geosrs:3DCoordinateSystem .
 
-geosrs:ConicalCoordinateSystemShape a sh:NodeShape ;
+<https://w3id.org/geosrs/ConicalCoordinateSystem_geosrs:axis_Shape> a sh:NodeShape ;
     rdfs:label "CRS Ontology Shape S3"@en ;
-    sh:property geosrs:ConicalCoordinateSystemShape_Property ;
+    sh:property <https://w3id.org/geosrs/ConicalCoordinateSystem_geosrs:axis_Shape_Property> ;
     sh:targetNode geosrs:ConicalCoordinateSystem .
 
-geosrs:CoordinateSystemAxisShape a sh:NodeShape ;
+<https://w3id.org/geosrs/CoordinateSystemAxis_geosrs:axisDirection_Shape> a sh:NodeShape ;
     rdfs:label "CRS Ontology Shape S5"@en ;
-    sh:property geosrs:CoordinateSystemAxisShape_Property ;
+    sh:property <https://w3id.org/geosrs/CoordinateSystemAxis_geosrs:axisDirection_Shape_Property> ;
     sh:targetNode geosrs:CoordinateSystemAxis .
 
-geosrs:CoordinateSystemShape a sh:NodeShape ;
+<https://w3id.org/geosrs/CoordinateSystem_geosrs:axis_Shape> a sh:NodeShape ;
     rdfs:label "CRS Ontology Shape S4"@en ;
-    sh:property geosrs:CoordinateSystemShape_Property ;
+    sh:property <https://w3id.org/geosrs/CoordinateSystem_geosrs:axis_Shape_Property> ;
     sh:targetNode geosrs:CoordinateSystem .
 
-geosrs:CurvilinearCoordinateSystemShape a sh:NodeShape ;
+<https://w3id.org/geosrs/CurvilinearCoordinateSystem_geosrs:axis_Shape> a sh:NodeShape ;
     rdfs:label "CRS Ontology Shape S6"@en ;
-    sh:property geosrs:CurvilinearCoordinateSystemShape_Property ;
+    sh:property <https://w3id.org/geosrs/CurvilinearCoordinateSystem_geosrs:axis_Shape_Property> ;
     sh:targetNode geosrs:CurvilinearCoordinateSystem .
 
-geosrs:CylindricalCoordinateSystemShape a sh:NodeShape ;
+<https://w3id.org/geosrs/CylindricalCoordinateSystem_geosrs:axis_Shape> a sh:NodeShape ;
     rdfs:label "CRS Ontology Shape S7"@en ;
-    sh:property geosrs:CylindricalCoordinateSystemShape_Property ;
+    sh:property <https://w3id.org/geosrs/CylindricalCoordinateSystem_geosrs:axis_Shape_Property> ;
     sh:targetNode geosrs:CylindricalCoordinateSystem .
 
-geosrs:DateTimeTemporalCoordinateSystemShape a sh:NodeShape ;
+<https://w3id.org/geosrs/DateTimeTemporalCoordinateSystem_geosrs:axis_Shape> a sh:NodeShape ;
     rdfs:label "CRS Ontology Shape S8"@en ;
-    sh:property geosrs:DateTimeTemporalCoordinateSystemShape_Property ;
+    sh:property <https://w3id.org/geosrs/DateTimeTemporalCoordinateSystem_geosrs:axis_Shape_Property> ;
     sh:targetNode geosrs:DateTimeTemporalCoordinateSystem .
 
-geosrs:PlanarCoordinateSystemShape a sh:NodeShape ;
+<https://w3id.org/geosrs/PlanarCoordinateSystem_geosrs:axis_Shape> a sh:NodeShape ;
     rdfs:label "CRS Ontology Shape S9"@en ;
-    sh:property geosrs:PlanarCoordinateSystemShape_Property ;
+    sh:property <https://w3id.org/geosrs/PlanarCoordinateSystem_geosrs:axis_Shape_Property> ;
     sh:targetNode geosrs:PlanarCoordinateSystem .
 
-geosrs:TemporalCoordinateSystemShape a sh:NodeShape ;
+<https://w3id.org/geosrs/TemporalCoordinateSystem_geosrs:axis_Shape> a sh:NodeShape ;
     rdfs:label "CRS Ontology Shape S10"@en ;
-    sh:property geosrs:TemporalCoordinateSystemShape_Property ;
+    sh:property <https://w3id.org/geosrs/TemporalCoordinateSystem_geosrs:axis_Shape_Property> ;
     sh:targetNode geosrs:TemporalCoordinateSystem .
 
-geosrs:TemporalCountCoordinateSystemShape a sh:NodeShape ;
+<https://w3id.org/geosrs/TemporalCountCoordinateSystem_geosrs:axis_Shape> a sh:NodeShape ;
     rdfs:label "CRS Ontology Shape S11"@en ;
-    sh:property geosrs:TemporalCountCoordinateSystemShape_Property ;
+    sh:property <https://w3id.org/geosrs/TemporalCountCoordinateSystem_geosrs:axis_Shape_Property> ;
     sh:targetNode geosrs:TemporalCountCoordinateSystem .
 
-geosrs:TemporalMeasureCoordinateSystemShape a sh:NodeShape ;
+<https://w3id.org/geosrs/TemporalMeasureCoordinateSystem_geosrs:axis_Shape> a sh:NodeShape ;
     rdfs:label "CRS Ontology Shape S12"@en ;
-    sh:property geosrs:TemporalMeasureCoordinateSystemShape_Property ;
+    sh:property <https://w3id.org/geosrs/TemporalMeasureCoordinateSystem_geosrs:axis_Shape_Property> ;
     sh:targetNode geosrs:TemporalMeasureCoordinateSystem .
 
-geosrs:1DCoordinateSystemShape_Property a sh:PropertyShape ;
+<https://w3id.org/geosrs/1DCoordinateSystem_geosrs:axis_Shape_Property> a sh:PropertyShape ;
     sh:class geosrs:CoordinateSystemAxis ;
     sh:maxCount 1 ;
     sh:message "A 1D coordinate system should have exactly one axis"@en ;
     sh:minCount 1 ;
     sh:path geosrs:axis .
 
-geosrs:3DCoordinateSystemShape_Property a sh:PropertyShape ;
+<https://w3id.org/geosrs/3DCoordinateSystem_geosrs:axis_Shape_Property> a sh:PropertyShape ;
     sh:class geosrs:CoordinateSystemAxis ;
     sh:message "A 3D coordinate system should have at least three axes"@en ;
     sh:minCount 3 ;
     sh:path geosrs:axis .
 
-geosrs:ConicalCoordinateSystemShape_Property a sh:PropertyShape ;
+<https://w3id.org/geosrs/ConicalCoordinateSystem_geosrs:axis_Shape_Property> a sh:PropertyShape ;
     sh:class geosrs:CoordinateSystemAxis ;
     sh:message "A conical coordinate system should have at least three axes"@en ;
     sh:minCount 3 ;
     sh:path geosrs:axis .
 
-geosrs:CoordinateSystemAxisShape_Property a sh:PropertyShape ;
+<https://w3id.org/geosrs/CoordinateSystemAxis_geosrs:axisDirection_Shape_Property> a sh:PropertyShape ;
     sh:class geosrs:AxisDirection ;
     sh:maxCount 1 ;
     sh:message "A coordinate system axis should have exactly one axis direction"@en ;
     sh:minCount 1 ;
     sh:path geosrs:axisDirection .
 
-geosrs:CoordinateSystemShape_Property a sh:PropertyShape ;
+<https://w3id.org/geosrs/CoordinateSystem_geosrs:axis_Shape_Property> a sh:PropertyShape ;
     sh:class geosrs:CoordinateSystemAxis ;
     sh:message "A coordinate system should have at least one axis"@en ;
     sh:minCount 1 ;
     sh:path geosrs:axis .
 
-geosrs:CurvilinearCoordinateSystemShape_Property a sh:PropertyShape ;
+<https://w3id.org/geosrs/CurvilinearCoordinateSystem_geosrs:axis_Shape_Property> a sh:PropertyShape ;
     sh:class geosrs:CoordinateSystemAxis ;
     sh:message "A curvilinear coordinate system is defined in Euclidean space and should therefore have at least three axes"@en ;
     sh:minCount 3 ;
     sh:path geosrs:axis .
 
-geosrs:CylindricalCoordinateSystemShape_Property a sh:PropertyShape ;
+<https://w3id.org/geosrs/CylindricalCoordinateSystem_geosrs:axis_Shape_Property> a sh:PropertyShape ;
     sh:class geosrs:CoordinateSystemAxis ;
     sh:message "A cylindrical coordinate system should have at least three axes"@en ;
     sh:minCount 3 ;
     sh:path geosrs:axis .
 
-geosrs:DateTimeTemporalCoordinateSystemShape_Property a sh:PropertyShape ;
+<https://w3id.org/geosrs/DateTimeTemporalCoordinateSystem_geosrs:axis_Shape_Property> a sh:PropertyShape ;
     sh:class geosrs:CoordinateSystemAxis ;
     sh:maxCount 1 ;
     sh:message "A date time temporal coordinate system should have exactly one axis"@en ;
     sh:minCount 1 ;
     sh:path geosrs:axis .
 
-geosrs:PlanarCoordinateSystemShape_Property a sh:PropertyShape ;
+<https://w3id.org/geosrs/PlanarCoordinateSystem_geosrs:axis_Shape_Property> a sh:PropertyShape ;
     sh:class geosrs:CoordinateSystemAxis ;
     sh:message "A planar coordinate system should have at least two axes"@en ;
     sh:minCount 2 ;
     sh:path geosrs:axis .
 
-geosrs:TemporalCoordinateSystemShape_Property a sh:PropertyShape ;
+<https://w3id.org/geosrs/TemporalCoordinateSystem_geosrs:axis_Shape_Property> a sh:PropertyShape ;
     sh:class geosrs:CoordinateSystemAxis ;
     sh:maxCount 1 ;
     sh:message "A temporal coordinate system should have exactly one axis"@en ;
     sh:minCount 1 ;
     sh:path geosrs:axis .
 
-geosrs:TemporalCountCoordinateSystemShape_Property a sh:PropertyShape ;
+<https://w3id.org/geosrs/TemporalCountCoordinateSystem_geosrs:axis_Shape_Property> a sh:PropertyShape ;
     sh:class geosrs:CoordinateSystemAxis ;
     sh:maxCount 1 ;
     sh:message "A temporal count coordinate system should have exactly one axis"@en ;
     sh:minCount 1 ;
     sh:path geosrs:axis .
 
-geosrs:TemporalMeasureCoordinateSystemShape_Property a sh:PropertyShape ;
+<https://w3id.org/geosrs/TemporalMeasureCoordinateSystem_geosrs:axis_Shape_Property> a sh:PropertyShape ;
     sh:class geosrs:CoordinateSystemAxis ;
     sh:maxCount 1 ;
     sh:message "A temporal measure coordinate system should have exactly one axis"@en ;

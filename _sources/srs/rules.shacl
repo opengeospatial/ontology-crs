@@ -3,114 +3,151 @@
 @prefix sh: <http://www.w3.org/ns/shacl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-geosrs:CRSShape a sh:NodeShape ;
-    rdfs:label "CRS Ontology Shape S1"@en,
-        "CRS Ontology Shape S2"@en,
-        "CRS Ontology Shape S3"@en,
-        "CRS Ontology Shape S4"@en ;
-    sh:property geosrs:CRSShape_Property ;
+geosrs:CRS_coordinateSystem_Shape a sh:NodeShape ;
+    rdfs:label "CRS Ontology Shape S1"@en ;
+    sh:property geosrs:CRS_coordinateSystem_Shape_Property ;
     sh:targetNode geosrs:CRS .
 
-geosrs:CompoundCRSShape a sh:NodeShape ;
+geosrs:CRS_datumEnsemble_Shape a sh:NodeShape ;
+    rdfs:label "CRS Ontology Shape S4"@en ;
+    sh:property geosrs:CRS_datumEnsemble_Shape_Property ;
+    sh:targetNode geosrs:CRS .
+
+geosrs:CRS_datum_Shape a sh:NodeShape ;
+    rdfs:label "CRS Ontology Shape S3"@en ;
+    sh:property geosrs:CRS_datum_Shape_Property ;
+    sh:targetNode geosrs:CRS .
+
+geosrs:CRS_domainOfValidity_Shape a sh:NodeShape ;
+    rdfs:label "CRS Ontology Shape S2"@en ;
+    sh:property geosrs:CRS_domainOfValidity_Shape_Property ;
+    sh:targetNode geosrs:CRS .
+
+geosrs:CompoundCRS_includesSRS_Shape a sh:NodeShape ;
     rdfs:label "CRS Ontology Shape S5"@en ;
-    sh:property geosrs:CompoundCRSShape_Property ;
+    sh:property geosrs:CompoundCRS_includesSRS_Shape_Property ;
     sh:targetNode geosrs:CompoundCRS .
 
-geosrs:GeodeticCRSShape a sh:NodeShape ;
+geosrs:GeodeticCRS_coordinateSystem_Shape a sh:NodeShape ;
     rdfs:label "CRS Ontology Shape S6"@en ;
-    sh:property geosrs:GeodeticCRSShape_Property ;
+    sh:property geosrs:GeodeticCRS_coordinateSystem_Shape_Property ;
     sh:targetNode geosrs:GeodeticCRS .
 
-geosrs:GeographicCRSShape a sh:NodeShape ;
-    rdfs:label "CRS Ontology Shape S7"@en,
-        "CRS Ontology Shape S8"@en ;
-    sh:property geosrs:GeographicCRSShape_Property ;
+geosrs:GeographicCRS_coordinateSystem_Shape a sh:NodeShape ;
+    rdfs:label "CRS Ontology Shape S8"@en ;
+    sh:property geosrs:GeographicCRS_coordinateSystem_Shape_Property ;
     sh:targetNode geosrs:GeographicCRS .
 
-geosrs:ParametricCRSShape a sh:NodeShape ;
+geosrs:GeographicCRS_datum_Shape a sh:NodeShape ;
+    rdfs:label "CRS Ontology Shape S7"@en ;
+    sh:property geosrs:GeographicCRS_datum_Shape_Property ;
+    sh:targetNode geosrs:GeographicCRS .
+
+geosrs:ParametricCRS_datum_Shape a sh:NodeShape ;
     rdfs:label "CRS Ontology Shape S9"@en ;
-    sh:property geosrs:ParametricCRSShape_Property ;
+    sh:property geosrs:ParametricCRS_datum_Shape_Property ;
     sh:targetNode geosrs:ParametricCRS .
 
-geosrs:ProjectedCRSShape a sh:NodeShape ;
+geosrs:ProjectedCRS_conversion_Shape a sh:NodeShape ;
     rdfs:label "CRS Ontology Shape S10"@en ;
-    sh:property geosrs:ProjectedCRSShape_Property ;
+    sh:property geosrs:ProjectedCRS_conversion_Shape_Property ;
     sh:targetNode geosrs:ProjectedCRS .
 
-geosrs:SingleCRSShape a sh:NodeShape ;
-    rdfs:label "CRS Ontology Shape S11"@en,
-        "CRS Ontology Shape S12"@en ;
-    sh:property geosrs:SingleCRSShape_Property ;
+geosrs:SingleCRS_coordinateSystem_Shape a sh:NodeShape ;
+    rdfs:label "CRS Ontology Shape S11"@en ;
+    sh:property geosrs:SingleCRS_coordinateSystem_Shape_Property ;
     sh:targetNode geosrs:SingleCRS .
 
-geosrs:TemporalCRSShape a sh:NodeShape ;
+geosrs:SingleCRS_datum_Shape a sh:NodeShape ;
+    rdfs:label "CRS Ontology Shape S12"@en ;
+    sh:property geosrs:SingleCRS_datum_Shape_Property ;
+    sh:targetNode geosrs:SingleCRS .
+
+geosrs:TemporalCRS_datum_Shape a sh:NodeShape ;
     rdfs:label "CRS Ontology Shape S13"@en ;
-    sh:property geosrs:TemporalCRSShape_Property ;
+    sh:property geosrs:TemporalCRS_datum_Shape_Property ;
     sh:targetNode geosrs:TemporalCRS .
 
-geosrs:CRSShape_Property a sh:PropertyShape ;
-    sh:class geosrs:AreaOfUse,
-        geosrs:CoordinateSystem,
-        geosrs:Datum,
-        geosrs:DatumEnsemble ;
+geosrs:CRS_coordinateSystem_Shape_Property a sh:PropertyShape ;
+    sh:class geosrs:CoordinateSystem ;
     sh:maxCount 1 ;
-    sh:message "A coordinate reference system may have exactly one datum ensemble"@en,
-        "A coordinate reference system should have at least one area of use"@en,
-        "A coordinate reference system should have exactly one coordinate system"@en,
-        "A coordinate reference system should have exactly one datum"@en ;
+    sh:message "A coordinate reference system should have exactly one coordinate system"@en ;
     sh:minCount 1 ;
-    sh:path geosrs:coordinateSystem,
-        geosrs:datum,
-        geosrs:datumEnsemble,
-        geosrs:domainOfValidity .
+    sh:path geosrs:coordinateSystem .
 
-geosrs:CompoundCRSShape_Property a sh:PropertyShape ;
+geosrs:CRS_datumEnsemble_Shape_Property a sh:PropertyShape ;
+    sh:class geosrs:DatumEnsemble ;
+    sh:maxCount 1 ;
+    sh:message "A coordinate reference system may have exactly one datum ensemble"@en ;
+    sh:path geosrs:datumEnsemble .
+
+geosrs:CRS_datum_Shape_Property a sh:PropertyShape ;
+    sh:class geosrs:Datum ;
+    sh:maxCount 1 ;
+    sh:message "A coordinate reference system should have exactly one datum"@en ;
+    sh:path geosrs:datum .
+
+geosrs:CRS_domainOfValidity_Shape_Property a sh:PropertyShape ;
+    sh:class geosrs:AreaOfUse ;
+    sh:message "A coordinate reference system should have at least one area of use"@en ;
+    sh:minCount 1 ;
+    sh:path geosrs:domainOfValidity .
+
+geosrs:CompoundCRS_includesSRS_Shape_Property a sh:PropertyShape ;
     sh:class geosrs:SingleCRS ;
     sh:message "A compound coordinate reference system should consist of at least one single coordinate reference system"@en ;
     sh:minCount 1 ;
     sh:path geosrs:includesSRS .
 
-geosrs:GeodeticCRSShape_Property a sh:PropertyShape ;
+geosrs:GeodeticCRS_coordinateSystem_Shape_Property a sh:PropertyShape ;
     sh:class geosrs:GeodeticCoordinateSystem ;
     sh:maxCount 1 ;
     sh:message "A geodetic coordinate reference system should have exactly one geodetic coordinate system"@en ;
     sh:minCount 1 ;
     sh:path geosrs:coordinateSystem .
 
-geosrs:GeographicCRSShape_Property a sh:PropertyShape ;
-    sh:class geosrs:EllipsoidalCoordinateSystem,
-        geosrs:GeodeticDatum ;
+geosrs:GeographicCRS_coordinateSystem_Shape_Property a sh:PropertyShape ;
+    sh:class geosrs:EllipsoidalCoordinateSystem ;
     sh:maxCount 1 ;
-    sh:message "A geographic coordinate reference system should have exactly one ellipsoidal coordinate system"@en,
-        "A geographic coordinate reference system should have exactly one geodetic datum"@en ;
+    sh:message "A geographic coordinate reference system should have exactly one ellipsoidal coordinate system"@en ;
     sh:minCount 1 ;
-    sh:path geosrs:coordinateSystem,
-        geosrs:datum .
+    sh:path geosrs:coordinateSystem .
 
-geosrs:ParametricCRSShape_Property a sh:PropertyShape ;
+geosrs:GeographicCRS_datum_Shape_Property a sh:PropertyShape ;
+    sh:class geosrs:GeodeticDatum ;
+    sh:maxCount 1 ;
+    sh:message "A geographic coordinate reference system should have exactly one geodetic datum"@en ;
+    sh:minCount 1 ;
+    sh:path geosrs:datum .
+
+geosrs:ParametricCRS_datum_Shape_Property a sh:PropertyShape ;
     sh:class geosrs:ParametricDatum ;
     sh:maxCount 1 ;
     sh:message "A parametric coordinate reference system should have exactly one parametric datum"@en ;
     sh:minCount 1 ;
     sh:path geosrs:datum .
 
-geosrs:ProjectedCRSShape_Property a sh:PropertyShape ;
+geosrs:ProjectedCRS_conversion_Shape_Property a sh:PropertyShape ;
     sh:class geosrs:Conversion ;
     sh:message "A projected coordinate reference system should have at least one conversion"@en ;
     sh:minCount 1 ;
     sh:path geosrs:conversion .
 
-geosrs:SingleCRSShape_Property a sh:PropertyShape ;
-    sh:class geosrs:CoordinateSystem,
-        geosrs:Datum ;
+geosrs:SingleCRS_coordinateSystem_Shape_Property a sh:PropertyShape ;
+    sh:class geosrs:CoordinateSystem ;
     sh:maxCount 1 ;
-    sh:message "A single coordinate reference system should have exactly one coordinate system"@en,
-        "A single coordinate reference system should have exactly one datum"@en ;
+    sh:message "A single coordinate reference system should have exactly one coordinate system"@en ;
     sh:minCount 1 ;
-    sh:path geosrs:coordinateSystem,
-        geosrs:datum .
+    sh:path geosrs:coordinateSystem .
 
-geosrs:TemporalCRSShape_Property a sh:PropertyShape ;
+geosrs:SingleCRS_datum_Shape_Property a sh:PropertyShape ;
+    sh:class geosrs:Datum ;
+    sh:maxCount 1 ;
+    sh:message "A single coordinate reference system should have exactly one datum"@en ;
+    sh:minCount 1 ;
+    sh:path geosrs:datum .
+
+geosrs:TemporalCRS_datum_Shape_Property a sh:PropertyShape ;
     sh:class geosrs:TemporalDatum ;
     sh:maxCount 1 ;
     sh:message "A projected coordinate reference system should have exactly one temporal datum"@en ;

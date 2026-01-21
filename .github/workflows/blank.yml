@@ -52,27 +52,27 @@ jobs:
          cd ..
          pylode -o co/index.html -i co.ttl
          cp co.ttl ../_sources/co/ontology.ttl
-         python ../scripts/classtreedoc.py --input co/index.html --output co/content.html
+         python ../scripts/classtreedoc.py --input co/index.html --output co/content.html --title "Coordinate Operation Module"
          mv co.ttl co/
          mkdir ../_sources/co/tests/
          touch co_rules.ttl && cp co_rules.ttl ../_sources/co/tests/shapes.shacl
          pylode -o cs/index.html -i cs.ttl
          cp cs.ttl ../_sources/cs/ontology.ttl
-         python ../scripts/classtreedoc.py --input cs/index.html --output cs/content.html
+         python ../scripts/classtreedoc.py --input cs/index.html --output cs/content.html  --title "Coordinate System Module"
          mv cs.ttl cs/
          pylode -o datum/index.html -i datum.ttl
          cp datum.ttl ../_sources/datum/ontology.ttl
-         python ../scripts/classtreedoc.py --input datum/index.html --output datum/content.html
+         python ../scripts/classtreedoc.py --input datum/index.html --output datum/content.html --title "Datum Module"
          mkdir ../_sources/datum/tests/
          touch datum_rules.ttl && cp datum_rules.ttl ../_sources/datum/tests/shapes.shacl
          mv datum.ttl datum/
          pylode -o planet/index.html -i planet.ttl
          cp planet.ttl ../_sources/planet/ontology.ttl
-         python ../scripts/classtreedoc.py --input planet/index.html --output planet/content.html
+         python ../scripts/classtreedoc.py --input planet/index.html --output planet/content.html --title "Planet Module"
          mv planet.ttl planet/
          pylode -o projection/index.html -i projection.ttl
          cp projection.ttl ../_sources/projection/ontology.ttl
-         python ../scripts/classtreedoc.py --input projection/index.html --output projection/content.html
+         python ../scripts/classtreedoc.py --input projection/index.html --output projection/content.html --title "Projection Module"
          mv projection.ttl projection/
          rm objprop.ttl datatypeprop.ttl 
          cp ../examples/* examples/

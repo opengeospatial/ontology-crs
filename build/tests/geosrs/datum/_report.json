@@ -2,7 +2,7 @@
   "title": "Validation report for ogc.geosrs.datum - SRS Ontology - Datum module",
   "bblockName": "SRS Ontology - Datum module",
   "bblockId": "ogc.geosrs.datum",
-  "generated": "2026-01-21T11:40:16.701447+00:00",
+  "generated": "2026-01-21T12:32:34.451162+00:00",
   "result": false,
   "items": [
     {
@@ -52,21 +52,21 @@
             {
               "op": "shacl-report",
               "shaclFile": "_sources/datum/rules.shacl",
-              "graph": "@prefix geosrs: <https://w3id.org/geosrs/> .\n@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms false ;\n    sh:result [ a sh:ValidationResult ;\n            sh:focusNode geosrs:ParametricDatum ;\n            sh:resultMessage \"A parametric datum should have at least one defining parameter\"@en ;\n            sh:resultPath geosrs:definingParameter ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;\n            sh:sourceShape geosrs:ParametricDatumShape_Property ] .\n\n",
+              "graph": "@prefix geosrs: <https://w3id.org/geosrs/> .\n@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms false ;\n    sh:result [ a sh:ValidationResult ;\n            sh:focusNode geosrs:ParametricDatum ;\n            sh:resultMessage \"A parametric datum should have at least one defining parameter\"@en ;\n            sh:resultPath geosrs:definingParameter ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;\n            sh:sourceShape geosrs:ParametricDatum_definingParameter_Shape_Property ] .\n\n",
               "isError": true,
-              "message": "Validation result for _sources/datum/rules.shacl:\n  Validation Report\n  Conforms: False\n  Results (1):\n  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):\n  \tSeverity: sh:Violation\n  \tSource Shape: geosrs:ParametricDatumShape_Property\n  \tFocus Node: <https://w3id.org/geosrs/ParametricDatum>\n  \tResult Path: geosrs:definingParameter\n  \tMessage: A parametric datum should have at least one defining parameter\n  "
+              "message": "Validation result for _sources/datum/rules.shacl:\n  Validation Report\n  Conforms: False\n  Results (1):\n  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):\n  \tSeverity: sh:Violation\n  \tSource Shape: geosrs:ParametricDatum_definingParameter_Shape_Property\n  \tFocus Node: <https://w3id.org/geosrs/ParametricDatum>\n  \tResult Path: geosrs:definingParameter\n  \tMessage: A parametric datum should have at least one defining parameter\n  "
             },
             {
               "shaclFile": "_sources/datum/rules.shacl",
               "focusNodes": {
-                "geosrs:ParametricDatumShape": {
+                "geosrs:ParametricDatum_definingParameter_Shape": {
                   "nodes": [
                     "<https://w3id.org/geosrs/ParametricDatum>"
                   ]
                 }
               },
               "isError": false,
-              "message": "Focus nodes for _sources/datum/rules.shacl:\n - Shape geosrs:ParametricDatumShape: <https://w3id.org/geosrs/ParametricDatum>\n"
+              "message": "Focus nodes for _sources/datum/rules.shacl:\n - Shape geosrs:ParametricDatum_definingParameter_Shape: <https://w3id.org/geosrs/ParametricDatum>\n"
             }
           ]
         }

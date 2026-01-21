@@ -39,7 +39,6 @@ jobs:
          mv *.ttl context index.html examples.json docs/
          cd docs
          touch .nojekyll
-         touch 404.html
          pylode -o application/index.html -i application.ttl
          cp application.ttl ../_sources/app/ontology.ttl
          mv application.ttl application/

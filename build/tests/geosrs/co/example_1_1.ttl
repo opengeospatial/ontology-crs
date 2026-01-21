@@ -1,5 +1,5 @@
 @prefix geosrs: <https://w3id.org/geosrs/> .
-@prefix geosrs_co: <https://w3id.org/geosrs/co/> .
+@prefix geosrs_co: <https://w3id.org/geosrs/co#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
 <http://www.opengis.net/ont/crs/operation/UTM_zone_32N> a geosrs_co:UniversalTransverseMercatorProjection ;

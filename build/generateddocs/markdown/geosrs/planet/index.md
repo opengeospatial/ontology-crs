@@ -23,7 +23,7 @@ Planet classes and properties are described under the namespace https://w3id.org
 ```ttl
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix geosrs_planet:<https://w3id.org/geosrs/planet/> .
+@prefix geosrs_planet:<https://w3id.org/geosrs/planet#> .
 @prefix geosrs:<https://w3id.org/geosrs/srs/> .
 @prefix exsrs: <https://w3id.org/example-data-srs#> .
 

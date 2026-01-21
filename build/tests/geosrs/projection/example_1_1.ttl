@@ -1,6 +1,6 @@
 @prefix exsrs: <https://w3id.org/example-data-srs#> .
 @prefix geosrs: <https://w3id.org/geosrs/> .
-@prefix geosrs_proj: <https://w3id.org/geosrs/projection/> .
+@prefix geosrs_proj: <https://w3id.org/geosrs/projection#> .
 
 exsrs:mysrs a geosrs:GeodeticCRS ;
     geosrs:conversion exsrs:myproj .

@@ -18,7 +18,7 @@
     "/req/datum/Spheroid_Types"
   ],
   "version": "0.1",
-  "dateOfLastChange": "2026-01-20",
+  "dateOfLastChange": "2026-01-21",
   "sources": [
     {
       "title": "Sample source document",
@@ -48,7 +48,7 @@
         {
           "language": "ttl",
           "ref": "examples/geodeticdatum.ttl",
-          "code": "@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix geosrs_datum:<https://w3id.org/geosrs/datum/> .\n@prefix exsrs: <https://w3id.org/example-data-srs#> .\n\nexsrs:mydatum rdf:type geosrs_datum:GeodeticDatum ;\n              rdfs:label \"European Datum 1950\" ;\n              geosrs_datum:ellipsoid exsrs:myellipsoid .\nexsrs:myellipsoid rdf:type geosrs_datum:Ellipsoid ;\n                  rdfs:label \"International 1924\" ;\n                  geosrs_datum:inverseFlattening 297 ;\n                  geosrs_datum:semiMajorAxis 6378388 .\n",
+          "code": "@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix geosrs_datum:<https://w3id.org/geosrs/datum#> .\n@prefix exsrs: <https://w3id.org/example-data-srs#> .\n\nexsrs:mydatum rdf:type geosrs_datum:GeodeticDatum ;\n              rdfs:label \"European Datum 1950\" ;\n              geosrs_datum:ellipsoid exsrs:myellipsoid .\nexsrs:myellipsoid rdf:type geosrs_datum:Ellipsoid ;\n                  rdfs:label \"International 1924\" ;\n                  geosrs_datum:inverseFlattening 297 ;\n                  geosrs_datum:semiMajorAxis 6378388 .\n",
           "url": "https://opengeospatial.github.io/ontology-crs/build/tests/geosrs/datum/example_1_1.ttl"
         }
       ],

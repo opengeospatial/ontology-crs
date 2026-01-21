@@ -1,5 +1,5 @@
 @prefix geosrs: <https://w3id.org/geosrs/> .
-@prefix geosrs_projection: <https://w3id.org/geosrs/projection/> .
+@prefix geosrs_projection: <https://w3id.org/geosrs/projection#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
@@ -781,28 +781,12 @@ geosrs_projection:PutninsP2Projection a owl:Class ;
     rdfs:label "Putnins P2 Projection"@en ;
     rdfs:subClassOf geosrs_projection:PseudoCylindricalProjection .
 
-<https://w3id.org/geosrs/projection/PutninsP3'Projection> a owl:Class ;
-    rdfs:label "PutninsP3'Projection"@en ;
-    rdfs:subClassOf geosrs_projection:PseudoCylindricalProjection .
-
 geosrs_projection:PutninsP3Projection a owl:Class ;
     rdfs:label "Putnins P3 Projection"@en ;
     rdfs:subClassOf geosrs_projection:PseudoCylindricalProjection .
 
-<https://w3id.org/geosrs/projection/PutninsP4'Projection> a owl:Class ;
-    rdfs:label "PutninsP4'Projection"@en ;
-    rdfs:subClassOf geosrs_projection:PseudoCylindricalProjection .
-
-<https://w3id.org/geosrs/projection/PutninsP5'Projection> a owl:Class ;
-    rdfs:label "PutninsP5'Projection"@en ;
-    rdfs:subClassOf geosrs_projection:PseudoCylindricalProjection .
-
 geosrs_projection:PutninsP5Projection a owl:Class ;
     rdfs:label "Putnins P5 Projection"@en ;
-    rdfs:subClassOf geosrs_projection:PseudoCylindricalProjection .
-
-<https://w3id.org/geosrs/projection/PutninsP6'Projection> a owl:Class ;
-    rdfs:label "PutninsP6'Projection"@en ;
     rdfs:subClassOf geosrs_projection:PseudoCylindricalProjection .
 
 geosrs_projection:PutninsP6Projection a owl:Class ;
@@ -1014,6 +998,22 @@ geosrs_projection:WinkelIProjection a owl:Class ;
 geosrs_projection:WinkelSnyderProjection a owl:Class ;
     rdfs:label "Winkel Snyder Projection"@en ;
     rdfs:subClassOf geosrs_projection:CompromiseProjection .
+
+<https://w3id.org/geosrs/projection/PutninsP3'Projection> a owl:Class ;
+    rdfs:label "PutninsP3'Projection"@en ;
+    rdfs:subClassOf geosrs_projection:PseudoCylindricalProjection .
+
+<https://w3id.org/geosrs/projection/PutninsP4'Projection> a owl:Class ;
+    rdfs:label "PutninsP4'Projection"@en ;
+    rdfs:subClassOf geosrs_projection:PseudoCylindricalProjection .
+
+<https://w3id.org/geosrs/projection/PutninsP5'Projection> a owl:Class ;
+    rdfs:label "PutninsP5'Projection"@en ;
+    rdfs:subClassOf geosrs_projection:PseudoCylindricalProjection .
+
+<https://w3id.org/geosrs/projection/PutninsP6'Projection> a owl:Class ;
+    rdfs:label "PutninsP6'Projection"@en ;
+    rdfs:subClassOf geosrs_projection:PseudoCylindricalProjection .
 
 geosrs:projectionprojection a owl:Ontology ;
     rdfs:label "SRS Ontology: Geosrs_projection"@en ;

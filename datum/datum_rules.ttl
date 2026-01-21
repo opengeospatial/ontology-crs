@@ -3,12 +3,12 @@
 @prefix sh: <http://www.w3.org/ns/shacl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://w3id.org/geosrs/ParametricDatum_geosrs:definingParameter_Shape> a sh:NodeShape ;
+geosrs:ParametricDatum_definingParameter_Shape a sh:NodeShape ;
     rdfs:label "CRS Ontology Shape S1"@en ;
-    sh:property <https://w3id.org/geosrs/ParametricDatum_geosrs:definingParameter_Shape_Property> ;
+    sh:property geosrs:ParametricDatum_definingParameter_Shape_Property ;
     sh:targetNode geosrs:ParametricDatum .
 
-<https://w3id.org/geosrs/ParametricDatum_geosrs:definingParameter_Shape_Property> a sh:PropertyShape ;
+geosrs:ParametricDatum_definingParameter_Shape_Property a sh:PropertyShape ;
     sh:class geosrs:DefiningParameter ;
     sh:message "A parametric datum should have at least one defining parameter"@en ;
     sh:minCount 1 ;

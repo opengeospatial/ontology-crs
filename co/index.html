@@ -23,7 +23,7 @@
 </head>
 <body>
 <header id="header">
-<h1 align="center">OntologyView</h1>
+<h1 align="center">Coordinate Operation Module</h1>
 </header>
 <div class="container-fluid fill" role="main"><div class="row fill">
 <div class="col-sm-4 fill">
@@ -156,7 +156,13 @@ function genclassTree(){
         }
 	);
 }
-$('#ontview').on('load', function(){genclassTree()});
+$('#ontview').on('load', function(){
+	genclassTree();
+	const anchor = window.location.hash;
+	if(anchor!=null && anchor!=""){
+		goToId(anchor)
+	}
+});
  $("#search-input").keyup(function () {
       var searchString = $(this).val();
      $('#jstree_demo_div').jstree('search', searchString);
@@ -165,5 +171,6 @@ $('#ontview').on('load', function(){genclassTree()});
       var searchString = $(this).val();
      $('#jstree_demo_div2').jstree('search', searchString);
  });
+ 
 </script>
 </html>

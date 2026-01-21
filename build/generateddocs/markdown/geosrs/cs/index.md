@@ -29,7 +29,7 @@ Coordinate system classes and properties are described under the namespace https
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix om: <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
-@prefix geosrs_cs:<https://w3id.org/geosrs/cs/> .
+@prefix geosrs_cs:<https://w3id.org/geosrs/cs#> .
 @prefix exsrs: <https://w3id.org/example-data-srs#> .
 
 exsrs:ecs rdf:type geosrs_cs:geosrs:EllipsoidalCoordinateSystem ;
@@ -57,7 +57,7 @@ exsrs:ecs_axis2 rdf:type geosrs_cs:Axis ;
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix om: <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
-@prefix geosrs_cs:<https://w3id.org/geosrs/cs/> .
+@prefix geosrs_cs:<https://w3id.org/geosrs/cs#> .
 @prefix exsrs: <https://w3id.org/example-data-srs#> .
 exsrs:ecsc rdf:type geosrs_cs:CartesianCoordinateSystem ;
            rdfs:label "My example cartesian coordinate system with two axis";

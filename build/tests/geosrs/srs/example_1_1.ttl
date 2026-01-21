@@ -1,4 +1,4 @@
-@prefix geosrs: <https://w3id.org/geosrs/srs/> .
+@prefix geosrs: <https://w3id.org/geosrs/srs#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
 <http://www.opengis.net/def/crs/EPSG/0/23032> a geosrs:ProjectedCRS ;

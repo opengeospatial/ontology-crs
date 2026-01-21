@@ -23,7 +23,7 @@ Coordinate Operation classes and properties are described under the namespace ht
 ```ttl
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix geosrs_co:<https://w3id.org/geosrs/co/> .
+@prefix geosrs_co:<https://w3id.org/geosrs/co#> .
 @prefix exsrs: <https://w3id.org/example-data-srs#> .
 
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .

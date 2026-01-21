@@ -23,7 +23,7 @@ Classes and properties are described under the namespace https://w3id.org/geosrs
 ```ttl
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix geosrs:<https://w3id.org/geosrs/srs/> .
+@prefix geosrs:<https://w3id.org/geosrs/srs#> .
 @prefix exsrs: <https://w3id.org/example-data-srs#> .
 
 <http://www.opengis.net/def/crs/EPSG/0/23032> rdf:type geosrs:ProjectedCRS ;

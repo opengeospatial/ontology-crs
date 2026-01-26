@@ -1,8 +1,10 @@
 # CRS Ontology  
       
 ## Introduction     
-This repository is used to work toward the development of an official OGC web ontology for coordinate reference systems (CRS). 
-At present, we're simply working on documenting the benefits of a CRS ontology, but we're hoping that more will come as people determine value in the work.
+
+This effort is an exploratory joint venture between the [Spacio-temporal Data on the Web Working Group](https://www.w3.org/groups/wg/sdw/) (SDWWG) of the W3C and the [GeoSemantics DWG](https://github.com/opengeospatial/geosemantics-dwg) of the OGC. It is meant to provide a workable Semantic Web counterpart to the [ISO:19111](https://www.iso.org/standard/74039.html) domain model. The ultimate goal is to attain a web ontology for coordinate reference systems (CRS), approved both by the OGC and the W3C. 
+
+If successful the resulting web ontology will provide a unified and machine readable medium to both express coordinate systems and formally catalogue them on the Web. In simple terms, it will mean both an improvement on JSON representation formats and on popular indexes like the EPSG.
        
 ## Definitions        
 **spatial reference system:** A spatial reference system (SRS) is a system for establishing spatial position. A spatial reference system can use geographic identifiers (place names, for example), coordinates (in which case it is a coordinate reference system), or identifiers with structured geometry (in which case it is a discrete global grid system). 

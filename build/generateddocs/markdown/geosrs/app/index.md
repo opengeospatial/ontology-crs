@@ -35,7 +35,7 @@ exsrs:mysrs geosrs_app:usage exsrs:mysrsapp .
 
 ## Sources
 
-* [Sample source document](https://example.com/sources/1)
+* [Spec Section](https://opengeospatial.github.io/ontology-crs/spec/documents/spec/document.html#srsapplication)
 
 # For developers
 

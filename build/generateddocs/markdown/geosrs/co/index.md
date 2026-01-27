@@ -47,7 +47,7 @@ Coordinate Operation classes and properties are described under the namespace ht
 
 ## Sources
 
-* [Sample source document](https://example.com/sources/1)
+* [Spec Section](https://opengeospatial.github.io/ontology-crs/spec/documents/spec/document.html#co)
 
 # For developers
 

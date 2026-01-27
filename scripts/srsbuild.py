@@ -321,7 +321,7 @@ for file in os.listdir(directory):
                 if "Concept" in row and row["Concept"]!="":
                     core=False
                     if "Core Class?" in row and row["Core Class?"]=="Core Ontology":
-                        adocdef="===== Class: "+str(row["Concept"])+"\n\n"
+                        adocdef="[[class_"+str(row["Concept"]).replace(" ","_")+"]]\n\n===== Class: "+str(row["Concept"])+"\n\n"
                         if "Description" in row and row["Description"]!="":
                             adocdef+=row["Description"]+"\n\n"
                         adocdef+="."+str(row["Concept"])+"\n[cols=\"1,1\"]\n|===\n"
@@ -381,7 +381,7 @@ for file in os.listdir(directory):
                         moduleToAdoc["06-core.adoc"][row["Concept"].replace(coreprefix+":",geocrsNS)]=adocdef+"|===\n\n"
                     else:
                         g.add((URIRef(row["Concept"].replace(coreprefix+":",curns)),RDF.type,OWL.Class))
-                        adocdef="===== Class: "+str(row["Concept"])+"\n\n"
+                        adocdef="[[class_"+str(row["Concept"]).replace(" ","_")+"]]\n\n===== Class: "+str(row["Concept"])+"\n\n"
                         if "Description" in row and row["Description"]!="":
                             adocdef+=row["Description"]+"\n\n"
                         adocdef+="."+str(row["Concept"])+"\n[cols=\"1,1\"]\n|===\n"
@@ -476,7 +476,7 @@ for file in os.listdir(directory):
                 if "Concept" in row and row["Concept"]!="":
                     if "Core Property?" in row:
                         if row["Core Property?"]=="Core Ontology" or row["Core Property?"]=="SRS":
-                            adocdef="===== Property: "+str(row["Concept"])+"\n\n"
+                            adocdef="[[property_"+str(row["Concept"]).replace(" ","_")+"]]\n\n===== Property: "+str(row["Concept"])+"\n\n"
                             if "Description" in row and row["Description"]!="":
                                 adocdef+=row["Description"]+"\n\n"
                             adocdef+="."+str(row["Concept"])+"\n[cols=\"1,1\"]\n|===\n"
@@ -537,7 +537,7 @@ for file in os.listdir(directory):
                             moduleToAdoc["06-core.adoc"][row["Concept"].replace(coreprefix+":","")]=adocdef+"|===\n\n"
                         else:
                             if row["Core Property?"].lower() in exont:
-                                adocdef="===== Property: "+str(row["Concept"])+"\n\n"
+                                adocdef="[[property_"+str(row["Concept"]).replace(" ","_")+"]]\n\n===== Property: "+str(row["Concept"])+"\n\n"
                                 if "Description" in row and row["Description"]!="":
                                     adocdef+=row["Description"]+"\n\n"
                                 adocdef+="."+str(row["Concept"])+"\n[cols=\"1,1\"]\n|===\n"
@@ -618,7 +618,7 @@ for file in os.listdir(directory):
                 if "Concept" in row and row["Concept"]!="":
                     if "Module" in row:
                         if row["Module"]=="Core Ontology":
-                            adocdef="===== Instance: "+str(row["Concept"])+"\n\n"
+                            adocdef="[[instance_"+str(row["Concept"]).replace(" ","_")+"]]\n\n===== Instance: "+str(row["Concept"])+"\n\n"
                             if "Description" in row and row["Description"]!="":
                                 adocdef+=row["Description"]+"\n\n"
                             adocdef+="."+str(row["Concept"])+"\n[cols=\"1,1\"]\n|===\n"
@@ -657,7 +657,7 @@ for file in os.listdir(directory):
                                     ldcontext["@context"][row["OGCJSON"]]=row["Concept"].replace("geosrs:", getPrefixForClass(row["Concept"],classToPrefix)+":")
                             moduleToAdoc["13-instances.adoc"][row["Concept"].replace(coreprefix+":","")]=adocdef+"|===\n\n"
                         else:
-                            adocdef="===== Instance: "+str(row["Concept"])+"\n\n"
+                            adocdef="[[instance_"+str(row["Concept"]).replace(" ","_")+"]]\n\n===== Instance: "+str(row["Concept"])+"\n\n"
                             if "Description" in row and row["Description"]!="":
                                 adocdef+=row["Description"]+"\n\n"
                             adocdef+="."+str(row["Concept"])+"\n[cols=\"1,1\"]\n|===\n"

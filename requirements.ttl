@@ -1,292 +1,292 @@
-@prefix ns1: <http://www.opengis.net/def/spec-element/> .
-@prefix ns2: <http://www.w3.org/2004/02/skos/> .
+@prefix ns1: <http://www.w3.org/2004/02/skos/> .
+@prefix ns2: <http://www.opengis.net/def/spec-element/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 
-<https://opengeospatial.github.io/ontology-crs//conf/co/Coordinate_Operation_Categories> a ns1:ConformanceTest ;
-    ns1:testType ns1:Capabilities ;
+<https://opengeospatial.github.io/ontology-crs//conf/co/Coordinate_Operation_Categories> a ns2:ConformanceTest ;
+    ns2:testType ns2:Capabilities ;
     rdfs:seeAlso <https://opengeospatial.github.io/ontology-crs//req/co/Coordinate_Operation_Categories> ;
-    ns2:definition "check conformance with this requirement" ;
-    ns2:prefLabel "Coordinate Operation Categories" .
+    ns1:definition "check conformance with this requirement" ;
+    ns1:prefLabel "Coordinate Operation Categories" .
 
-<https://opengeospatial.github.io/ontology-crs//conf/co/Coordinate_Operation_Methods> a ns1:ConformanceTest ;
-    ns1:testType ns1:Capabilities ;
+<https://opengeospatial.github.io/ontology-crs//conf/co/Coordinate_Operation_Methods> a ns2:ConformanceTest ;
+    ns2:testType ns2:Capabilities ;
     rdfs:seeAlso <https://opengeospatial.github.io/ontology-crs//req/co/Coordinate_Operation_Methods> ;
-    ns2:definition "check conformance with this requirement" ;
-    ns2:prefLabel "Coordinate Operation Methods" .
+    ns1:definition "check conformance with this requirement" ;
+    ns1:prefLabel "Coordinate Operation Methods" .
 
-<https://opengeospatial.github.io/ontology-crs//conf/co/Coordinate_Operation_Parameters> a ns1:ConformanceTest ;
-    ns1:testType ns1:Capabilities ;
+<https://opengeospatial.github.io/ontology-crs//conf/co/Coordinate_Operation_Parameters> a ns2:ConformanceTest ;
+    ns2:testType ns2:Capabilities ;
     rdfs:seeAlso <https://opengeospatial.github.io/ontology-crs//req/co/Coordinate_Operation_Parameters> ;
-    ns2:definition "check conformance with this requirement" ;
-    ns2:prefLabel "Coordinate Operation Parameters" .
+    ns1:definition "check conformance with this requirement" ;
+    ns1:prefLabel "Coordinate Operation Parameters" .
 
-<https://opengeospatial.github.io/ontology-crs//conf/co/Coordinate_Operation_Properties> a ns1:ConformanceTest ;
-    ns1:testType ns1:Capabilities ;
+<https://opengeospatial.github.io/ontology-crs//conf/co/Coordinate_Operation_Properties> a ns2:ConformanceTest ;
+    ns2:testType ns2:Capabilities ;
     rdfs:seeAlso <https://opengeospatial.github.io/ontology-crs//req/co/Coordinate_Operation_Properties> ;
-    ns2:definition "check conformance with this requirement" ;
-    ns2:prefLabel "Coordinate Operation Properties" .
+    ns1:definition "check conformance with this requirement" ;
+    ns1:prefLabel "Coordinate Operation Properties" .
 
-<https://opengeospatial.github.io/ontology-crs//conf/core/Coordinate_Reference_System_Parameters> a ns1:ConformanceTest ;
-    ns1:testType ns1:Capabilities ;
+<https://opengeospatial.github.io/ontology-crs//conf/core/Coordinate_Reference_System_Parameters> a ns2:ConformanceTest ;
+    ns2:testType ns2:Capabilities ;
     rdfs:seeAlso <https://opengeospatial.github.io/ontology-crs//req/core/Coordinate_Reference_System_Parameters> ;
-    ns2:definition "check conformance with this requirement" ;
-    ns2:prefLabel "Coordinate Reference System Parameters" .
+    ns1:definition "check conformance with this requirement" ;
+    ns1:prefLabel "Coordinate Reference System Parameters" .
 
-<https://opengeospatial.github.io/ontology-crs//conf/core/Coordinate_Reference_System_Properties> a ns1:ConformanceTest ;
-    ns1:testType ns1:Capabilities ;
+<https://opengeospatial.github.io/ontology-crs//conf/core/Coordinate_Reference_System_Properties> a ns2:ConformanceTest ;
+    ns2:testType ns2:Capabilities ;
     rdfs:seeAlso <https://opengeospatial.github.io/ontology-crs//req/core/Coordinate_Reference_System_Properties> ;
-    ns2:definition "check conformance with this requirement" ;
-    ns2:prefLabel "Coordinate Reference System Properties" .
+    ns1:definition "check conformance with this requirement" ;
+    ns1:prefLabel "Coordinate Reference System Properties" .
 
-<https://opengeospatial.github.io/ontology-crs//conf/core/Coordinate_Reference_System_Types> a ns1:ConformanceTest ;
-    ns1:testType ns1:Capabilities ;
+<https://opengeospatial.github.io/ontology-crs//conf/core/Coordinate_Reference_System_Types> a ns2:ConformanceTest ;
+    ns2:testType ns2:Capabilities ;
     rdfs:seeAlso <https://opengeospatial.github.io/ontology-crs//req/core/Coordinate_Reference_System_Types> ;
-    ns2:definition "check conformance with this requirement" ;
-    ns2:prefLabel "Coordinate Reference System Types" .
+    ns1:definition "check conformance with this requirement" ;
+    ns1:prefLabel "Coordinate Reference System Types" .
 
-<https://opengeospatial.github.io/ontology-crs//conf/cs/3D_Coordinate_Systems> a ns1:ConformanceTest ;
-    ns1:testType ns1:Capabilities ;
+<https://opengeospatial.github.io/ontology-crs//conf/cs/3D_Coordinate_Systems> a ns2:ConformanceTest ;
+    ns2:testType ns2:Capabilities ;
     rdfs:seeAlso <https://opengeospatial.github.io/ontology-crs//req/cs/3D_Coordinate_Systems> ;
-    ns2:definition "check conformance with this requirement" ;
-    ns2:prefLabel "3D Coordinate Systems" .
+    ns1:definition "check conformance with this requirement" ;
+    ns1:prefLabel "3D Coordinate Systems" .
 
-<https://opengeospatial.github.io/ontology-crs//conf/cs/Celestial_Coordinate_Systems> a ns1:ConformanceTest ;
-    ns1:testType ns1:Capabilities ;
+<https://opengeospatial.github.io/ontology-crs//conf/cs/Celestial_Coordinate_Systems> a ns2:ConformanceTest ;
+    ns2:testType ns2:Capabilities ;
     rdfs:seeAlso <https://opengeospatial.github.io/ontology-crs//req/cs/Celestial_Coordinate_Systems> ;
-    ns2:definition "check conformance with this requirement" ;
-    ns2:prefLabel "Celestial Coordinate Systems" .
+    ns1:definition "check conformance with this requirement" ;
+    ns1:prefLabel "Celestial Coordinate Systems" .
 
-<https://opengeospatial.github.io/ontology-crs//conf/cs/Coordinate_System_Components> a ns1:ConformanceTest ;
-    ns1:testType ns1:Capabilities ;
+<https://opengeospatial.github.io/ontology-crs//conf/cs/Coordinate_System_Components> a ns2:ConformanceTest ;
+    ns2:testType ns2:Capabilities ;
     rdfs:seeAlso <https://opengeospatial.github.io/ontology-crs//req/cs/Coordinate_System_Components> ;
-    ns2:definition "check conformance with this requirement" ;
-    ns2:prefLabel "Coordinate System Components" .
+    ns1:definition "check conformance with this requirement" ;
+    ns1:prefLabel "Coordinate System Components" .
 
-<https://opengeospatial.github.io/ontology-crs//conf/cs/Coordinate_System_Properties> a ns1:ConformanceTest ;
-    ns1:testType ns1:Capabilities ;
+<https://opengeospatial.github.io/ontology-crs//conf/cs/Coordinate_System_Properties> a ns2:ConformanceTest ;
+    ns2:testType ns2:Capabilities ;
     rdfs:seeAlso <https://opengeospatial.github.io/ontology-crs//req/cs/Coordinate_System_Properties> ;
-    ns2:definition "check conformance with this requirement" ;
-    ns2:prefLabel "Coordinate System Properties" .
+    ns1:definition "check conformance with this requirement" ;
+    ns1:prefLabel "Coordinate System Properties" .
 
-<https://opengeospatial.github.io/ontology-crs//conf/cs/Coordinate_System_Types> a ns1:ConformanceTest ;
-    ns1:testType ns1:Capabilities ;
+<https://opengeospatial.github.io/ontology-crs//conf/cs/Coordinate_System_Types> a ns2:ConformanceTest ;
+    ns2:testType ns2:Capabilities ;
     rdfs:seeAlso <https://opengeospatial.github.io/ontology-crs//req/cs/Coordinate_System_Types> ;
-    ns2:definition "check conformance with this requirement" ;
-    ns2:prefLabel "Coordinate System Types" .
+    ns1:definition "check conformance with this requirement" ;
+    ns1:prefLabel "Coordinate System Types" .
 
-<https://opengeospatial.github.io/ontology-crs//conf/cs/Temporal_Coordinate_Systems> a ns1:ConformanceTest ;
-    ns1:testType ns1:Capabilities ;
+<https://opengeospatial.github.io/ontology-crs//conf/cs/Temporal_Coordinate_Systems> a ns2:ConformanceTest ;
+    ns2:testType ns2:Capabilities ;
     rdfs:seeAlso <https://opengeospatial.github.io/ontology-crs//req/cs/Temporal_Coordinate_Systems> ;
-    ns2:definition "check conformance with this requirement" ;
-    ns2:prefLabel "Temporal Coordinate Systems" .
+    ns1:definition "check conformance with this requirement" ;
+    ns1:prefLabel "Temporal Coordinate Systems" .
 
-<https://opengeospatial.github.io/ontology-crs//conf/datum/Datum_Parameters> a ns1:ConformanceTest ;
-    ns1:testType ns1:Capabilities ;
+<https://opengeospatial.github.io/ontology-crs//conf/datum/Datum_Parameters> a ns2:ConformanceTest ;
+    ns2:testType ns2:Capabilities ;
     rdfs:seeAlso <https://opengeospatial.github.io/ontology-crs//req/datum/Datum_Parameters> ;
-    ns2:definition "check conformance with this requirement" ;
-    ns2:prefLabel "Datum Parameters" .
+    ns1:definition "check conformance with this requirement" ;
+    ns1:prefLabel "Datum Parameters" .
 
-<https://opengeospatial.github.io/ontology-crs//conf/datum/Datum_Properties> a ns1:ConformanceTest ;
-    ns1:testType ns1:Capabilities ;
+<https://opengeospatial.github.io/ontology-crs//conf/datum/Datum_Properties> a ns2:ConformanceTest ;
+    ns2:testType ns2:Capabilities ;
     rdfs:seeAlso <https://opengeospatial.github.io/ontology-crs//req/datum/Datum_Properties> ;
-    ns2:definition "check conformance with this requirement" ;
-    ns2:prefLabel "Datum Properties" .
+    ns1:definition "check conformance with this requirement" ;
+    ns1:prefLabel "Datum Properties" .
 
-<https://opengeospatial.github.io/ontology-crs//conf/datum/Datum_Types> a ns1:ConformanceTest ;
-    ns1:testType ns1:Capabilities ;
+<https://opengeospatial.github.io/ontology-crs//conf/datum/Datum_Types> a ns2:ConformanceTest ;
+    ns2:testType ns2:Capabilities ;
     rdfs:seeAlso <https://opengeospatial.github.io/ontology-crs//req/datum/Datum_Types> ;
-    ns2:definition "check conformance with this requirement" ;
-    ns2:prefLabel "Datum Types" .
+    ns1:definition "check conformance with this requirement" ;
+    ns1:prefLabel "Datum Types" .
 
-<https://opengeospatial.github.io/ontology-crs//conf/datum/Spheroid_Properties> a ns1:ConformanceTest ;
-    ns1:testType ns1:Capabilities ;
+<https://opengeospatial.github.io/ontology-crs//conf/datum/Spheroid_Properties> a ns2:ConformanceTest ;
+    ns2:testType ns2:Capabilities ;
     rdfs:seeAlso <https://opengeospatial.github.io/ontology-crs//req/datum/Spheroid_Properties> ;
-    ns2:definition "check conformance with this requirement" ;
-    ns2:prefLabel "Spheroid Properties" .
+    ns1:definition "check conformance with this requirement" ;
+    ns1:prefLabel "Spheroid Properties" .
 
-<https://opengeospatial.github.io/ontology-crs//conf/datum/Spheroid_Types> a ns1:ConformanceTest ;
-    ns1:testType ns1:Capabilities ;
+<https://opengeospatial.github.io/ontology-crs//conf/datum/Spheroid_Types> a ns2:ConformanceTest ;
+    ns2:testType ns2:Capabilities ;
     rdfs:seeAlso <https://opengeospatial.github.io/ontology-crs//req/datum/Spheroid_Types> ;
-    ns2:definition "check conformance with this requirement" ;
-    ns2:prefLabel "Spheroid Types" .
+    ns1:definition "check conformance with this requirement" ;
+    ns1:prefLabel "Spheroid Types" .
 
-<https://opengeospatial.github.io/ontology-crs//conf/instances/Coordinate_System_Axis> a ns1:ConformanceTest ;
-    ns1:testType ns1:Capabilities ;
+<https://opengeospatial.github.io/ontology-crs//conf/instances/Coordinate_System_Axis> a ns2:ConformanceTest ;
+    ns2:testType ns2:Capabilities ;
     rdfs:seeAlso <https://opengeospatial.github.io/ontology-crs//req/instances/Coordinate_System_Axis> ;
-    ns2:definition "check conformance with this requirement" ;
-    ns2:prefLabel "Coordinate System Axis" .
+    ns1:definition "check conformance with this requirement" ;
+    ns1:prefLabel "Coordinate System Axis" .
 
-<https://opengeospatial.github.io/ontology-crs//conf/instances/SRS_Literal_Types> a ns1:ConformanceTest ;
-    ns1:testType ns1:Capabilities ;
+<https://opengeospatial.github.io/ontology-crs//conf/instances/SRS_Literal_Types> a ns2:ConformanceTest ;
+    ns2:testType ns2:Capabilities ;
     rdfs:seeAlso <https://opengeospatial.github.io/ontology-crs//req/instances/SRS_Literal_Types> ;
-    ns2:definition "check conformance with this requirement" ;
-    ns2:prefLabel "SRS Literal Types" .
+    ns1:definition "check conformance with this requirement" ;
+    ns1:prefLabel "SRS Literal Types" .
 
-<https://opengeospatial.github.io/ontology-crs//conf/instances/Spheroids> a ns1:ConformanceTest ;
-    ns1:testType ns1:Capabilities ;
+<https://opengeospatial.github.io/ontology-crs//conf/instances/Spheroids> a ns2:ConformanceTest ;
+    ns2:testType ns2:Capabilities ;
     rdfs:seeAlso <https://opengeospatial.github.io/ontology-crs//req/instances/Spheroids> ;
-    ns2:definition "check conformance with this requirement" ;
-    ns2:prefLabel "Spheroids" .
+    ns1:definition "check conformance with this requirement" ;
+    ns1:prefLabel "Spheroids" .
 
-<https://opengeospatial.github.io/ontology-crs//conf/planet/Interstellar_Body> a ns1:ConformanceTest ;
-    ns1:testType ns1:Capabilities ;
+<https://opengeospatial.github.io/ontology-crs//conf/planet/Interstellar_Body> a ns2:ConformanceTest ;
+    ns2:testType ns2:Capabilities ;
     rdfs:seeAlso <https://opengeospatial.github.io/ontology-crs//req/planet/Interstellar_Body> ;
-    ns2:definition "check conformance with this requirement" ;
-    ns2:prefLabel "Interstellar Body" .
+    ns1:definition "check conformance with this requirement" ;
+    ns1:prefLabel "Interstellar Body" .
 
-<https://opengeospatial.github.io/ontology-crs//conf/projections/Archaic_Projections> a ns1:ConformanceTest ;
-    ns1:testType ns1:Capabilities ;
+<https://opengeospatial.github.io/ontology-crs//conf/projections/Archaic_Projections> a ns2:ConformanceTest ;
+    ns2:testType ns2:Capabilities ;
     rdfs:seeAlso <https://opengeospatial.github.io/ontology-crs//req/projections/Archaic_Projections> ;
-    ns2:definition "check conformance with this requirement" ;
-    ns2:prefLabel "Archaic Projections" .
+    ns1:definition "check conformance with this requirement" ;
+    ns1:prefLabel "Archaic Projections" .
 
-<https://opengeospatial.github.io/ontology-crs//conf/projections/Azimuthal_Projections> a ns1:ConformanceTest ;
-    ns1:testType ns1:Capabilities ;
+<https://opengeospatial.github.io/ontology-crs//conf/projections/Azimuthal_Projections> a ns2:ConformanceTest ;
+    ns2:testType ns2:Capabilities ;
     rdfs:seeAlso <https://opengeospatial.github.io/ontology-crs//req/projections/Azimuthal_Projections> ;
-    ns2:definition "check conformance with this requirement" ;
-    ns2:prefLabel "Azimuthal Projections" .
+    ns1:definition "check conformance with this requirement" ;
+    ns1:prefLabel "Azimuthal Projections" .
 
-<https://opengeospatial.github.io/ontology-crs//conf/projections/Compromise_Projections> a ns1:ConformanceTest ;
-    ns1:testType ns1:Capabilities ;
+<https://opengeospatial.github.io/ontology-crs//conf/projections/Compromise_Projections> a ns2:ConformanceTest ;
+    ns2:testType ns2:Capabilities ;
     rdfs:seeAlso <https://opengeospatial.github.io/ontology-crs//req/projections/Compromise_Projections> ;
-    ns2:definition "check conformance with this requirement" ;
-    ns2:prefLabel "Compromise Projections" .
+    ns1:definition "check conformance with this requirement" ;
+    ns1:prefLabel "Compromise Projections" .
 
-<https://opengeospatial.github.io/ontology-crs//conf/projections/Conformal_Projections> a ns1:ConformanceTest ;
-    ns1:testType ns1:Capabilities ;
+<https://opengeospatial.github.io/ontology-crs//conf/projections/Conformal_Projections> a ns2:ConformanceTest ;
+    ns2:testType ns2:Capabilities ;
     rdfs:seeAlso <https://opengeospatial.github.io/ontology-crs//req/projections/Conformal_Projections> ;
-    ns2:definition "check conformance with this requirement" ;
-    ns2:prefLabel "Conformal Projections" .
+    ns1:definition "check conformance with this requirement" ;
+    ns1:prefLabel "Conformal Projections" .
 
-<https://opengeospatial.github.io/ontology-crs//conf/projections/Conical_Projections> a ns1:ConformanceTest ;
-    ns1:testType ns1:Capabilities ;
+<https://opengeospatial.github.io/ontology-crs//conf/projections/Conical_Projections> a ns2:ConformanceTest ;
+    ns2:testType ns2:Capabilities ;
     rdfs:seeAlso <https://opengeospatial.github.io/ontology-crs//req/projections/Conical_Projections> ;
-    ns2:definition "check conformance with this requirement" ;
-    ns2:prefLabel "Conical Projections" .
+    ns1:definition "check conformance with this requirement" ;
+    ns1:prefLabel "Conical Projections" .
 
-<https://opengeospatial.github.io/ontology-crs//conf/projections/Cylindrical_Projections> a ns1:ConformanceTest ;
-    ns1:testType ns1:Capabilities ;
+<https://opengeospatial.github.io/ontology-crs//conf/projections/Cylindrical_Projections> a ns2:ConformanceTest ;
+    ns2:testType ns2:Capabilities ;
     rdfs:seeAlso <https://opengeospatial.github.io/ontology-crs//req/projections/Cylindrical_Projections> ;
-    ns2:definition "check conformance with this requirement" ;
-    ns2:prefLabel "Cylindrical Projections" .
+    ns1:definition "check conformance with this requirement" ;
+    ns1:prefLabel "Cylindrical Projections" .
 
-<https://opengeospatial.github.io/ontology-crs//conf/projections/Equal_Area_Projections> a ns1:ConformanceTest ;
-    ns1:testType ns1:Capabilities ;
+<https://opengeospatial.github.io/ontology-crs//conf/projections/Equal_Area_Projections> a ns2:ConformanceTest ;
+    ns2:testType ns2:Capabilities ;
     rdfs:seeAlso <https://opengeospatial.github.io/ontology-crs//req/projections/Equal_Area_Projections> ;
-    ns2:definition "check conformance with this requirement" ;
-    ns2:prefLabel "Equal Area Projections" .
+    ns1:definition "check conformance with this requirement" ;
+    ns1:prefLabel "Equal Area Projections" .
 
-<https://opengeospatial.github.io/ontology-crs//conf/projections/Equidistant_Projections> a ns1:ConformanceTest ;
-    ns1:testType ns1:Capabilities ;
+<https://opengeospatial.github.io/ontology-crs//conf/projections/Equidistant_Projections> a ns2:ConformanceTest ;
+    ns2:testType ns2:Capabilities ;
     rdfs:seeAlso <https://opengeospatial.github.io/ontology-crs//req/projections/Equidistant_Projections> ;
-    ns2:definition "check conformance with this requirement" ;
-    ns2:prefLabel "Equidistant Projections" .
+    ns1:definition "check conformance with this requirement" ;
+    ns1:prefLabel "Equidistant Projections" .
 
-<https://opengeospatial.github.io/ontology-crs//conf/projections/Globular_Projections> a ns1:ConformanceTest ;
-    ns1:testType ns1:Capabilities ;
+<https://opengeospatial.github.io/ontology-crs//conf/projections/Globular_Projections> a ns2:ConformanceTest ;
+    ns2:testType ns2:Capabilities ;
     rdfs:seeAlso <https://opengeospatial.github.io/ontology-crs//req/projections/Globular_Projections> ;
-    ns2:definition "check conformance with this requirement" ;
-    ns2:prefLabel "Globular Projections" .
+    ns1:definition "check conformance with this requirement" ;
+    ns1:prefLabel "Globular Projections" .
 
-<https://opengeospatial.github.io/ontology-crs//conf/projections/Lenticular_Projections> a ns1:ConformanceTest ;
-    ns1:testType ns1:Capabilities ;
+<https://opengeospatial.github.io/ontology-crs//conf/projections/Lenticular_Projections> a ns2:ConformanceTest ;
+    ns2:testType ns2:Capabilities ;
     rdfs:seeAlso <https://opengeospatial.github.io/ontology-crs//req/projections/Lenticular_Projections> ;
-    ns2:definition "check conformance with this requirement" ;
-    ns2:prefLabel "Lenticular Projections" .
+    ns1:definition "check conformance with this requirement" ;
+    ns1:prefLabel "Lenticular Projections" .
 
-<https://opengeospatial.github.io/ontology-crs//conf/projections/Minimum_Error_Projections> a ns1:ConformanceTest ;
-    ns1:testType ns1:Capabilities ;
+<https://opengeospatial.github.io/ontology-crs//conf/projections/Minimum_Error_Projections> a ns2:ConformanceTest ;
+    ns2:testType ns2:Capabilities ;
     rdfs:seeAlso <https://opengeospatial.github.io/ontology-crs//req/projections/Minimum_Error_Projections> ;
-    ns2:definition "check conformance with this requirement" ;
-    ns2:prefLabel "Minimum Error Projections" .
+    ns1:definition "check conformance with this requirement" ;
+    ns1:prefLabel "Minimum Error Projections" .
 
-<https://opengeospatial.github.io/ontology-crs//conf/projections/Perspective_Projections> a ns1:ConformanceTest ;
-    ns1:testType ns1:Capabilities ;
+<https://opengeospatial.github.io/ontology-crs//conf/projections/Perspective_Projections> a ns2:ConformanceTest ;
+    ns2:testType ns2:Capabilities ;
     rdfs:seeAlso <https://opengeospatial.github.io/ontology-crs//req/projections/Perspective_Projections> ;
-    ns2:definition "check conformance with this requirement" ;
-    ns2:prefLabel "Perspective Projections" .
+    ns1:definition "check conformance with this requirement" ;
+    ns1:prefLabel "Perspective Projections" .
 
-<https://opengeospatial.github.io/ontology-crs//conf/projections/Polyconic_Projections> a ns1:ConformanceTest ;
-    ns1:testType ns1:Capabilities ;
+<https://opengeospatial.github.io/ontology-crs//conf/projections/Polyconic_Projections> a ns2:ConformanceTest ;
+    ns2:testType ns2:Capabilities ;
     rdfs:seeAlso <https://opengeospatial.github.io/ontology-crs//req/projections/Polyconic_Projections> ;
-    ns2:definition "check conformance with this requirement" ;
-    ns2:prefLabel "Polyconic Projections" .
+    ns1:definition "check conformance with this requirement" ;
+    ns1:prefLabel "Polyconic Projections" .
 
-<https://opengeospatial.github.io/ontology-crs//conf/projections/Polyhedral_Projections> a ns1:ConformanceTest ;
-    ns1:testType ns1:Capabilities ;
+<https://opengeospatial.github.io/ontology-crs//conf/projections/Polyhedral_Projections> a ns2:ConformanceTest ;
+    ns2:testType ns2:Capabilities ;
     rdfs:seeAlso <https://opengeospatial.github.io/ontology-crs//req/projections/Polyhedral_Projections> ;
-    ns2:definition "check conformance with this requirement" ;
-    ns2:prefLabel "Polyhedral Projections" .
+    ns1:definition "check conformance with this requirement" ;
+    ns1:prefLabel "Polyhedral Projections" .
 
-<https://opengeospatial.github.io/ontology-crs//conf/projections/Projection> a ns1:ConformanceTest ;
-    ns1:testType ns1:Capabilities ;
+<https://opengeospatial.github.io/ontology-crs//conf/projections/Projection> a ns2:ConformanceTest ;
+    ns2:testType ns2:Capabilities ;
     rdfs:seeAlso <https://opengeospatial.github.io/ontology-crs//req/projections/Projection> ;
-    ns2:definition "check conformance with this requirement" ;
-    ns2:prefLabel "Projection" .
+    ns1:definition "check conformance with this requirement" ;
+    ns1:prefLabel "Projection" .
 
-<https://opengeospatial.github.io/ontology-crs//conf/projections/Pseudo_Azimuthal_Projections> a ns1:ConformanceTest ;
-    ns1:testType ns1:Capabilities ;
+<https://opengeospatial.github.io/ontology-crs//conf/projections/Pseudo_Azimuthal_Projections> a ns2:ConformanceTest ;
+    ns2:testType ns2:Capabilities ;
     rdfs:seeAlso <https://opengeospatial.github.io/ontology-crs//req/projections/Pseudo_Azimuthal_Projections> ;
-    ns2:definition "check conformance with this requirement" ;
-    ns2:prefLabel "Pseudo Azimuthal Projections" .
+    ns1:definition "check conformance with this requirement" ;
+    ns1:prefLabel "Pseudo Azimuthal Projections" .
 
-<https://opengeospatial.github.io/ontology-crs//conf/projections/Pseudo_Conical_Projections> a ns1:ConformanceTest ;
-    ns1:testType ns1:Capabilities ;
+<https://opengeospatial.github.io/ontology-crs//conf/projections/Pseudo_Conical_Projections> a ns2:ConformanceTest ;
+    ns2:testType ns2:Capabilities ;
     rdfs:seeAlso <https://opengeospatial.github.io/ontology-crs//req/projections/Pseudo_Conical_Projections> ;
-    ns2:definition "check conformance with this requirement" ;
-    ns2:prefLabel "Pseudo Conical Projections" .
+    ns1:definition "check conformance with this requirement" ;
+    ns1:prefLabel "Pseudo Conical Projections" .
 
-<https://opengeospatial.github.io/ontology-crs//conf/projections/Pseudo_Cylindrical_Projections> a ns1:ConformanceTest ;
-    ns1:testType ns1:Capabilities ;
+<https://opengeospatial.github.io/ontology-crs//conf/projections/Pseudo_Cylindrical_Projections> a ns2:ConformanceTest ;
+    ns2:testType ns2:Capabilities ;
     rdfs:seeAlso <https://opengeospatial.github.io/ontology-crs//req/projections/Pseudo_Cylindrical_Projections> ;
-    ns2:definition "check conformance with this requirement" ;
-    ns2:prefLabel "Pseudo Cylindrical Projections" .
+    ns1:definition "check conformance with this requirement" ;
+    ns1:prefLabel "Pseudo Cylindrical Projections" .
 
-<https://opengeospatial.github.io/ontology-crs//conf/projections/Stereographic_Projections> a ns1:ConformanceTest ;
-    ns1:testType ns1:Capabilities ;
+<https://opengeospatial.github.io/ontology-crs//conf/projections/Stereographic_Projections> a ns2:ConformanceTest ;
+    ns2:testType ns2:Capabilities ;
     rdfs:seeAlso <https://opengeospatial.github.io/ontology-crs//req/projections/Stereographic_Projections> ;
-    ns2:definition "check conformance with this requirement" ;
-    ns2:prefLabel "Stereographic Projections" .
+    ns1:definition "check conformance with this requirement" ;
+    ns1:prefLabel "Stereographic Projections" .
 
-<https://opengeospatial.github.io/ontology-crs//conf/srsapplication/Map_Types> a ns1:ConformanceTest ;
-    ns1:testType ns1:Capabilities ;
+<https://opengeospatial.github.io/ontology-crs//conf/srsapplication/Map_Types> a ns2:ConformanceTest ;
+    ns2:testType ns2:Capabilities ;
     rdfs:seeAlso <https://opengeospatial.github.io/ontology-crs//req/srsapplication/Map_Types> ;
-    ns2:definition "check conformance with this requirement" ;
-    ns2:prefLabel "Map Types" .
+    ns1:definition "check conformance with this requirement" ;
+    ns1:prefLabel "Map Types" .
 
-<https://opengeospatial.github.io/ontology-crs//conf/srsapplication/SRS_Application_Types> a ns1:ConformanceTest ;
-    ns1:testType ns1:Capabilities ;
+<https://opengeospatial.github.io/ontology-crs//conf/srsapplication/SRS_Application_Types> a ns2:ConformanceTest ;
+    ns2:testType ns2:Capabilities ;
     rdfs:seeAlso <https://opengeospatial.github.io/ontology-crs//req/srsapplication/SRS_Application_Types> ;
-    ns2:definition "check conformance with this requirement" ;
-    ns2:prefLabel "SRS Application Types" .
+    ns1:definition "check conformance with this requirement" ;
+    ns1:prefLabel "SRS Application Types" .
 
-<https://opengeospatial.github.io/ontology-crs/06-core.adoc> ns2:member <https://opengeospatial.github.io/ontology-crs//conf/06-core.adoc/Coordinate_Reference_System_Parameters>,
+<https://opengeospatial.github.io/ontology-crs/06-core.adoc> ns1:member <https://opengeospatial.github.io/ontology-crs//conf/06-core.adoc/Coordinate_Reference_System_Parameters>,
         <https://opengeospatial.github.io/ontology-crs//conf/06-core.adoc/Coordinate_Reference_System_Properties>,
         <https://opengeospatial.github.io/ontology-crs//conf/06-core.adoc/Coordinate_Reference_System_Types> .
 
-<https://opengeospatial.github.io/ontology-crs/07-co_module.adoc> ns2:member <https://opengeospatial.github.io/ontology-crs//conf/07-co_module.adoc/Coordinate_Operation_Categories>,
+<https://opengeospatial.github.io/ontology-crs/07-co_module.adoc> ns1:member <https://opengeospatial.github.io/ontology-crs//conf/07-co_module.adoc/Coordinate_Operation_Categories>,
         <https://opengeospatial.github.io/ontology-crs//conf/07-co_module.adoc/Coordinate_Operation_Methods>,
         <https://opengeospatial.github.io/ontology-crs//conf/07-co_module.adoc/Coordinate_Operation_Parameters>,
         <https://opengeospatial.github.io/ontology-crs//conf/07-co_module.adoc/Coordinate_Operation_Properties> .
 
-<https://opengeospatial.github.io/ontology-crs/08-cs_module.adoc> ns2:member <https://opengeospatial.github.io/ontology-crs//conf/08-cs_module.adoc/3D_Coordinate_Systems>,
+<https://opengeospatial.github.io/ontology-crs/08-cs_module.adoc> ns1:member <https://opengeospatial.github.io/ontology-crs//conf/08-cs_module.adoc/3D_Coordinate_Systems>,
         <https://opengeospatial.github.io/ontology-crs//conf/08-cs_module.adoc/Celestial_Coordinate_Systems>,
         <https://opengeospatial.github.io/ontology-crs//conf/08-cs_module.adoc/Coordinate_System_Components>,
         <https://opengeospatial.github.io/ontology-crs//conf/08-cs_module.adoc/Coordinate_System_Properties>,
         <https://opengeospatial.github.io/ontology-crs//conf/08-cs_module.adoc/Coordinate_System_Types>,
         <https://opengeospatial.github.io/ontology-crs//conf/08-cs_module.adoc/Temporal_Coordinate_Systems> .
 
-<https://opengeospatial.github.io/ontology-crs/09-datum_module.adoc> ns2:member <https://opengeospatial.github.io/ontology-crs//conf/09-datum_module.adoc/Datum_Parameters>,
+<https://opengeospatial.github.io/ontology-crs/09-datum_module.adoc> ns1:member <https://opengeospatial.github.io/ontology-crs//conf/09-datum_module.adoc/Datum_Parameters>,
         <https://opengeospatial.github.io/ontology-crs//conf/09-datum_module.adoc/Datum_Properties>,
         <https://opengeospatial.github.io/ontology-crs//conf/09-datum_module.adoc/Datum_Types>,
         <https://opengeospatial.github.io/ontology-crs//conf/09-datum_module.adoc/Spheroid_Properties>,
         <https://opengeospatial.github.io/ontology-crs//conf/09-datum_module.adoc/Spheroid_Types> .
 
-<https://opengeospatial.github.io/ontology-crs/10-srsapplication_module.adoc> ns2:member <https://opengeospatial.github.io/ontology-crs//conf/10-srsapplication_module.adoc/Map_Types>,
+<https://opengeospatial.github.io/ontology-crs/10-srsapplication_module.adoc> ns1:member <https://opengeospatial.github.io/ontology-crs//conf/10-srsapplication_module.adoc/Map_Types>,
         <https://opengeospatial.github.io/ontology-crs//conf/10-srsapplication_module.adoc/SRS_Application_Types> .
 
-<https://opengeospatial.github.io/ontology-crs/11-projections_module.adoc> ns2:member <https://opengeospatial.github.io/ontology-crs//conf/11-projections_module.adoc/Archaic_Projections>,
+<https://opengeospatial.github.io/ontology-crs/11-projections_module.adoc> ns1:member <https://opengeospatial.github.io/ontology-crs//conf/11-projections_module.adoc/Archaic_Projections>,
         <https://opengeospatial.github.io/ontology-crs//conf/11-projections_module.adoc/Azimuthal_Projections>,
         <https://opengeospatial.github.io/ontology-crs//conf/11-projections_module.adoc/Compromise_Projections>,
         <https://opengeospatial.github.io/ontology-crs//conf/11-projections_module.adoc/Conformal_Projections>,
@@ -306,162 +306,162 @@
         <https://opengeospatial.github.io/ontology-crs//conf/11-projections_module.adoc/Pseudo_Cylindrical_Projections>,
         <https://opengeospatial.github.io/ontology-crs//conf/11-projections_module.adoc/Stereographic_Projections> .
 
-<https://opengeospatial.github.io/ontology-crs/12-planet_module.adoc> ns2:member <https://opengeospatial.github.io/ontology-crs//conf/12-planet_module.adoc/Interstellar_Body> .
+<https://opengeospatial.github.io/ontology-crs/12-planet_module.adoc> ns1:member <https://opengeospatial.github.io/ontology-crs//conf/12-planet_module.adoc/Interstellar_Body> .
 
-<https://opengeospatial.github.io/ontology-crs/13-instances.adoc> ns2:member <https://opengeospatial.github.io/ontology-crs//conf/13-instances.adoc/Coordinate_System_Axis>,
+<https://opengeospatial.github.io/ontology-crs/13-instances.adoc> ns1:member <https://opengeospatial.github.io/ontology-crs//conf/13-instances.adoc/Coordinate_System_Axis>,
         <https://opengeospatial.github.io/ontology-crs//conf/13-instances.adoc/SRS_Literal_Types>,
         <https://opengeospatial.github.io/ontology-crs//conf/13-instances.adoc/Spheroids> .
 
-<https://opengeospatial.github.io/ontology-crs/co> a ns1:ConformanceClass,
+<https://opengeospatial.github.io/ontology-crs/co> a ns2:ConformanceClass,
         skos:Collection .
 
-<https://opengeospatial.github.io/ontology-crs/core> a ns1:ConformanceClass,
+<https://opengeospatial.github.io/ontology-crs/core> a ns2:ConformanceClass,
         skos:Collection .
 
-<https://opengeospatial.github.io/ontology-crs/cs> a ns1:ConformanceClass,
+<https://opengeospatial.github.io/ontology-crs/cs> a ns2:ConformanceClass,
         skos:Collection .
 
-<https://opengeospatial.github.io/ontology-crs/datum> a ns1:ConformanceClass,
+<https://opengeospatial.github.io/ontology-crs/datum> a ns2:ConformanceClass,
         skos:Collection .
 
-<https://opengeospatial.github.io/ontology-crs/instances> a ns1:ConformanceClass,
+<https://opengeospatial.github.io/ontology-crs/instances> a ns2:ConformanceClass,
         skos:Collection .
 
-<https://opengeospatial.github.io/ontology-crs/planet> a ns1:ConformanceClass,
+<https://opengeospatial.github.io/ontology-crs/planet> a ns2:ConformanceClass,
         skos:Collection .
 
-<https://opengeospatial.github.io/ontology-crs/projections> a ns1:ConformanceClass,
+<https://opengeospatial.github.io/ontology-crs/projections> a ns2:ConformanceClass,
         skos:Collection .
 
-<https://opengeospatial.github.io/ontology-crs/srsapplication> a ns1:ConformanceClass,
+<https://opengeospatial.github.io/ontology-crs/srsapplication> a ns2:ConformanceClass,
         skos:Collection .
 
-<https://opengeospatial.github.io/ontology-crs//req/co/Coordinate_Operation_Categories> a ns1:Requirement ;
-    ns2:prefLabel "Coordinate Operation Categories" .
+<https://opengeospatial.github.io/ontology-crs//req/co/Coordinate_Operation_Categories> a ns2:Requirement ;
+    ns1:prefLabel "Coordinate Operation Categories" .
 
-<https://opengeospatial.github.io/ontology-crs//req/co/Coordinate_Operation_Methods> a ns1:Requirement ;
-    ns2:prefLabel "Coordinate Operation Methods" .
+<https://opengeospatial.github.io/ontology-crs//req/co/Coordinate_Operation_Methods> a ns2:Requirement ;
+    ns1:prefLabel "Coordinate Operation Methods" .
 
-<https://opengeospatial.github.io/ontology-crs//req/co/Coordinate_Operation_Parameters> a ns1:Requirement ;
-    ns2:prefLabel "Coordinate Operation Parameters" .
+<https://opengeospatial.github.io/ontology-crs//req/co/Coordinate_Operation_Parameters> a ns2:Requirement ;
+    ns1:prefLabel "Coordinate Operation Parameters" .
 
-<https://opengeospatial.github.io/ontology-crs//req/co/Coordinate_Operation_Properties> a ns1:Requirement ;
-    ns2:prefLabel "Coordinate Operation Properties" .
+<https://opengeospatial.github.io/ontology-crs//req/co/Coordinate_Operation_Properties> a ns2:Requirement ;
+    ns1:prefLabel "Coordinate Operation Properties" .
 
-<https://opengeospatial.github.io/ontology-crs//req/core/Coordinate_Reference_System_Parameters> a ns1:Requirement ;
-    ns2:prefLabel "Coordinate Reference System Parameters" .
+<https://opengeospatial.github.io/ontology-crs//req/core/Coordinate_Reference_System_Parameters> a ns2:Requirement ;
+    ns1:prefLabel "Coordinate Reference System Parameters" .
 
-<https://opengeospatial.github.io/ontology-crs//req/core/Coordinate_Reference_System_Properties> a ns1:Requirement ;
-    ns2:prefLabel "Coordinate Reference System Properties" .
+<https://opengeospatial.github.io/ontology-crs//req/core/Coordinate_Reference_System_Properties> a ns2:Requirement ;
+    ns1:prefLabel "Coordinate Reference System Properties" .
 
-<https://opengeospatial.github.io/ontology-crs//req/core/Coordinate_Reference_System_Types> a ns1:Requirement ;
-    ns2:prefLabel "Coordinate Reference System Types" .
+<https://opengeospatial.github.io/ontology-crs//req/core/Coordinate_Reference_System_Types> a ns2:Requirement ;
+    ns1:prefLabel "Coordinate Reference System Types" .
 
-<https://opengeospatial.github.io/ontology-crs//req/cs/3D_Coordinate_Systems> a ns1:Requirement ;
-    ns2:prefLabel "3D Coordinate Systems" .
+<https://opengeospatial.github.io/ontology-crs//req/cs/3D_Coordinate_Systems> a ns2:Requirement ;
+    ns1:prefLabel "3D Coordinate Systems" .
 
-<https://opengeospatial.github.io/ontology-crs//req/cs/Celestial_Coordinate_Systems> a ns1:Requirement ;
-    ns2:prefLabel "Celestial Coordinate Systems" .
+<https://opengeospatial.github.io/ontology-crs//req/cs/Celestial_Coordinate_Systems> a ns2:Requirement ;
+    ns1:prefLabel "Celestial Coordinate Systems" .
 
-<https://opengeospatial.github.io/ontology-crs//req/cs/Coordinate_System_Components> a ns1:Requirement ;
-    ns2:prefLabel "Coordinate System Components" .
+<https://opengeospatial.github.io/ontology-crs//req/cs/Coordinate_System_Components> a ns2:Requirement ;
+    ns1:prefLabel "Coordinate System Components" .
 
-<https://opengeospatial.github.io/ontology-crs//req/cs/Coordinate_System_Properties> a ns1:Requirement ;
-    ns2:prefLabel "Coordinate System Properties" .
+<https://opengeospatial.github.io/ontology-crs//req/cs/Coordinate_System_Properties> a ns2:Requirement ;
+    ns1:prefLabel "Coordinate System Properties" .
 
-<https://opengeospatial.github.io/ontology-crs//req/cs/Coordinate_System_Types> a ns1:Requirement ;
-    ns2:prefLabel "Coordinate System Types" .
+<https://opengeospatial.github.io/ontology-crs//req/cs/Coordinate_System_Types> a ns2:Requirement ;
+    ns1:prefLabel "Coordinate System Types" .
 
-<https://opengeospatial.github.io/ontology-crs//req/cs/Temporal_Coordinate_Systems> a ns1:Requirement ;
-    ns2:prefLabel "Temporal Coordinate Systems" .
+<https://opengeospatial.github.io/ontology-crs//req/cs/Temporal_Coordinate_Systems> a ns2:Requirement ;
+    ns1:prefLabel "Temporal Coordinate Systems" .
 
-<https://opengeospatial.github.io/ontology-crs//req/datum/Datum_Parameters> a ns1:Requirement ;
-    ns2:prefLabel "Datum Parameters" .
+<https://opengeospatial.github.io/ontology-crs//req/datum/Datum_Parameters> a ns2:Requirement ;
+    ns1:prefLabel "Datum Parameters" .
 
-<https://opengeospatial.github.io/ontology-crs//req/datum/Datum_Properties> a ns1:Requirement ;
-    ns2:prefLabel "Datum Properties" .
+<https://opengeospatial.github.io/ontology-crs//req/datum/Datum_Properties> a ns2:Requirement ;
+    ns1:prefLabel "Datum Properties" .
 
-<https://opengeospatial.github.io/ontology-crs//req/datum/Datum_Types> a ns1:Requirement ;
-    ns2:prefLabel "Datum Types" .
+<https://opengeospatial.github.io/ontology-crs//req/datum/Datum_Types> a ns2:Requirement ;
+    ns1:prefLabel "Datum Types" .
 
-<https://opengeospatial.github.io/ontology-crs//req/datum/Spheroid_Properties> a ns1:Requirement ;
-    ns2:prefLabel "Spheroid Properties" .
+<https://opengeospatial.github.io/ontology-crs//req/datum/Spheroid_Properties> a ns2:Requirement ;
+    ns1:prefLabel "Spheroid Properties" .
 
-<https://opengeospatial.github.io/ontology-crs//req/datum/Spheroid_Types> a ns1:Requirement ;
-    ns2:prefLabel "Spheroid Types" .
+<https://opengeospatial.github.io/ontology-crs//req/datum/Spheroid_Types> a ns2:Requirement ;
+    ns1:prefLabel "Spheroid Types" .
 
-<https://opengeospatial.github.io/ontology-crs//req/instances/Coordinate_System_Axis> a ns1:Requirement ;
-    ns2:prefLabel "Coordinate System Axis" .
+<https://opengeospatial.github.io/ontology-crs//req/instances/Coordinate_System_Axis> a ns2:Requirement ;
+    ns1:prefLabel "Coordinate System Axis" .
 
-<https://opengeospatial.github.io/ontology-crs//req/instances/SRS_Literal_Types> a ns1:Requirement ;
-    ns2:prefLabel "SRS Literal Types" .
+<https://opengeospatial.github.io/ontology-crs//req/instances/SRS_Literal_Types> a ns2:Requirement ;
+    ns1:prefLabel "SRS Literal Types" .
 
-<https://opengeospatial.github.io/ontology-crs//req/instances/Spheroids> a ns1:Requirement ;
-    ns2:prefLabel "Spheroids" .
+<https://opengeospatial.github.io/ontology-crs//req/instances/Spheroids> a ns2:Requirement ;
+    ns1:prefLabel "Spheroids" .
 
-<https://opengeospatial.github.io/ontology-crs//req/planet/Interstellar_Body> a ns1:Requirement ;
-    ns2:prefLabel "Interstellar Body" .
+<https://opengeospatial.github.io/ontology-crs//req/planet/Interstellar_Body> a ns2:Requirement ;
+    ns1:prefLabel "Interstellar Body" .
 
-<https://opengeospatial.github.io/ontology-crs//req/projections/Archaic_Projections> a ns1:Requirement ;
-    ns2:prefLabel "Archaic Projections" .
+<https://opengeospatial.github.io/ontology-crs//req/projections/Archaic_Projections> a ns2:Requirement ;
+    ns1:prefLabel "Archaic Projections" .
 
-<https://opengeospatial.github.io/ontology-crs//req/projections/Azimuthal_Projections> a ns1:Requirement ;
-    ns2:prefLabel "Azimuthal Projections" .
+<https://opengeospatial.github.io/ontology-crs//req/projections/Azimuthal_Projections> a ns2:Requirement ;
+    ns1:prefLabel "Azimuthal Projections" .
 
-<https://opengeospatial.github.io/ontology-crs//req/projections/Compromise_Projections> a ns1:Requirement ;
-    ns2:prefLabel "Compromise Projections" .
+<https://opengeospatial.github.io/ontology-crs//req/projections/Compromise_Projections> a ns2:Requirement ;
+    ns1:prefLabel "Compromise Projections" .
 
-<https://opengeospatial.github.io/ontology-crs//req/projections/Conformal_Projections> a ns1:Requirement ;
-    ns2:prefLabel "Conformal Projections" .
+<https://opengeospatial.github.io/ontology-crs//req/projections/Conformal_Projections> a ns2:Requirement ;
+    ns1:prefLabel "Conformal Projections" .
 
-<https://opengeospatial.github.io/ontology-crs//req/projections/Conical_Projections> a ns1:Requirement ;
-    ns2:prefLabel "Conical Projections" .
+<https://opengeospatial.github.io/ontology-crs//req/projections/Conical_Projections> a ns2:Requirement ;
+    ns1:prefLabel "Conical Projections" .
 
-<https://opengeospatial.github.io/ontology-crs//req/projections/Cylindrical_Projections> a ns1:Requirement ;
-    ns2:prefLabel "Cylindrical Projections" .
+<https://opengeospatial.github.io/ontology-crs//req/projections/Cylindrical_Projections> a ns2:Requirement ;
+    ns1:prefLabel "Cylindrical Projections" .
 
-<https://opengeospatial.github.io/ontology-crs//req/projections/Equal_Area_Projections> a ns1:Requirement ;
-    ns2:prefLabel "Equal Area Projections" .
+<https://opengeospatial.github.io/ontology-crs//req/projections/Equal_Area_Projections> a ns2:Requirement ;
+    ns1:prefLabel "Equal Area Projections" .
 
-<https://opengeospatial.github.io/ontology-crs//req/projections/Equidistant_Projections> a ns1:Requirement ;
-    ns2:prefLabel "Equidistant Projections" .
+<https://opengeospatial.github.io/ontology-crs//req/projections/Equidistant_Projections> a ns2:Requirement ;
+    ns1:prefLabel "Equidistant Projections" .
 
-<https://opengeospatial.github.io/ontology-crs//req/projections/Globular_Projections> a ns1:Requirement ;
-    ns2:prefLabel "Globular Projections" .
+<https://opengeospatial.github.io/ontology-crs//req/projections/Globular_Projections> a ns2:Requirement ;
+    ns1:prefLabel "Globular Projections" .
 
-<https://opengeospatial.github.io/ontology-crs//req/projections/Lenticular_Projections> a ns1:Requirement ;
-    ns2:prefLabel "Lenticular Projections" .
+<https://opengeospatial.github.io/ontology-crs//req/projections/Lenticular_Projections> a ns2:Requirement ;
+    ns1:prefLabel "Lenticular Projections" .
 
-<https://opengeospatial.github.io/ontology-crs//req/projections/Minimum_Error_Projections> a ns1:Requirement ;
-    ns2:prefLabel "Minimum Error Projections" .
+<https://opengeospatial.github.io/ontology-crs//req/projections/Minimum_Error_Projections> a ns2:Requirement ;
+    ns1:prefLabel "Minimum Error Projections" .
 
-<https://opengeospatial.github.io/ontology-crs//req/projections/Perspective_Projections> a ns1:Requirement ;
-    ns2:prefLabel "Perspective Projections" .
+<https://opengeospatial.github.io/ontology-crs//req/projections/Perspective_Projections> a ns2:Requirement ;
+    ns1:prefLabel "Perspective Projections" .
 
-<https://opengeospatial.github.io/ontology-crs//req/projections/Polyconic_Projections> a ns1:Requirement ;
-    ns2:prefLabel "Polyconic Projections" .
+<https://opengeospatial.github.io/ontology-crs//req/projections/Polyconic_Projections> a ns2:Requirement ;
+    ns1:prefLabel "Polyconic Projections" .
 
-<https://opengeospatial.github.io/ontology-crs//req/projections/Polyhedral_Projections> a ns1:Requirement ;
-    ns2:prefLabel "Polyhedral Projections" .
+<https://opengeospatial.github.io/ontology-crs//req/projections/Polyhedral_Projections> a ns2:Requirement ;
+    ns1:prefLabel "Polyhedral Projections" .
 
-<https://opengeospatial.github.io/ontology-crs//req/projections/Projection> a ns1:Requirement ;
-    ns2:prefLabel "Projection" .
+<https://opengeospatial.github.io/ontology-crs//req/projections/Projection> a ns2:Requirement ;
+    ns1:prefLabel "Projection" .
 
-<https://opengeospatial.github.io/ontology-crs//req/projections/Pseudo_Azimuthal_Projections> a ns1:Requirement ;
-    ns2:prefLabel "Pseudo Azimuthal Projections" .
+<https://opengeospatial.github.io/ontology-crs//req/projections/Pseudo_Azimuthal_Projections> a ns2:Requirement ;
+    ns1:prefLabel "Pseudo Azimuthal Projections" .
 
-<https://opengeospatial.github.io/ontology-crs//req/projections/Pseudo_Conical_Projections> a ns1:Requirement ;
-    ns2:prefLabel "Pseudo Conical Projections" .
+<https://opengeospatial.github.io/ontology-crs//req/projections/Pseudo_Conical_Projections> a ns2:Requirement ;
+    ns1:prefLabel "Pseudo Conical Projections" .
 
-<https://opengeospatial.github.io/ontology-crs//req/projections/Pseudo_Cylindrical_Projections> a ns1:Requirement ;
-    ns2:prefLabel "Pseudo Cylindrical Projections" .
+<https://opengeospatial.github.io/ontology-crs//req/projections/Pseudo_Cylindrical_Projections> a ns2:Requirement ;
+    ns1:prefLabel "Pseudo Cylindrical Projections" .
 
-<https://opengeospatial.github.io/ontology-crs//req/projections/Stereographic_Projections> a ns1:Requirement ;
-    ns2:prefLabel "Stereographic Projections" .
+<https://opengeospatial.github.io/ontology-crs//req/projections/Stereographic_Projections> a ns2:Requirement ;
+    ns1:prefLabel "Stereographic Projections" .
 
-<https://opengeospatial.github.io/ontology-crs//req/srsapplication/Map_Types> a ns1:Requirement ;
-    ns2:prefLabel "Map Types" .
+<https://opengeospatial.github.io/ontology-crs//req/srsapplication/Map_Types> a ns2:Requirement ;
+    ns1:prefLabel "Map Types" .
 
-<https://opengeospatial.github.io/ontology-crs//req/srsapplication/SRS_Application_Types> a ns1:Requirement ;
-    ns2:prefLabel "SRS Application Types" .
+<https://opengeospatial.github.io/ontology-crs//req/srsapplication/SRS_Application_Types> a ns2:Requirement ;
+    ns1:prefLabel "SRS Application Types" .
 

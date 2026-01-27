@@ -791,7 +791,7 @@ for ad in moduleToAdoc:
 	with open("spec/sections/"+ad,"w") as file:
 		file.write(content)             
 	with open("spec/sections/"+ad.replace(".adoc","_classes.adoc"), 'w',encoding="utf-8") as f:
-		print(ad)
+		#print(ad)
 		#print(moduleToRequirements[ad])
 		reqs=moduleToRequirements[ad]
 		#print(reqs)
@@ -824,13 +824,13 @@ for ad in moduleToAdoc:
 				if len(moduleToRequirements[ad][req])>0:
 					reqtext=reqtext.replace(", <<"+str(last), " and <<"+str(last))
 				reqtext+=" to be used in SPARQL graph patterns."
-				f.write("[["+str(req)+"]]\n\n==== "+str(req)+"\n\n[requirement,identifier=\"/req/"+str(rqid)+"/"+str(req).replace(" ","_")+"\"]\n\n."+str(req)+"\n====\n"+str(reqtext)+"\n====\n\n")
-				print(str(ad)+" - "+str(req))
-				print(moduleToRequirements[ad][req])
+				f.write("[["+str(req).replace(" ","_")+"]]\n\n==== "+str(req)+"\n\n[requirement,identifier=\"/req/"+str(rqid)+"/"+str(req).replace(" ","_")+"\"]\n\n."+str(req)+"\n====\n"+str(reqtext)+"\n====\n\n")
+				#print(str(ad)+" - "+str(req))
+				#print(moduleToRequirements[ad][req])
 				if req in reqToDesc:
 					f.write(reqToDesc[req]+"\n\n")
 				for cls in moduleToRequirements[ad][req]:
-					print(str(req)+" - "+str(cls)+" "+cls.replace("geosrs:","")+" "+str(cls.replace("geosrs:","") in moduleToAdoc[ad]))
+					#print(str(req)+" - "+str(cls)+" "+cls.replace("geosrs:","")+" "+str(cls.replace("geosrs:","") in moduleToAdoc[ad]))
 					if cls.replace("geosrs:","") in moduleToAdoc[ad]:
 						f.write(moduleToAdoc[ad][cls.replace("geosrs:","")]) 
 doc=""

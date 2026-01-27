@@ -77,7 +77,7 @@ exsrs:ecsc_axis2 rdf:type geosrs_cs:Axis ;
 
 ## Sources
 
-* [Sample source document](https://example.com/sources/1)
+* [Spec Section](https://opengeospatial.github.io/ontology-crs/spec/documents/spec/document.html#cs)
 
 # For developers
 

@@ -1,5 +1,5 @@
 Validation report for ogc.geosrs.srs - SRS Core Ontology
-Generated 2026-01-27T15:32:07.663907+00:00
+Generated 2026-01-28T08:45:52.757079+00:00
 === Files ===
 Using examples/srs.ttl from examples
 Output Turtle example_1_1.ttl created
@@ -18,22 +18,16 @@ Validation result for _sources/srs/rules.shacl:
   Results (11):
   Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
   	Severity: sh:Violation
-  	Source Shape: geosrs:GeographicCRS_datum_Shape_Property
-  	Focus Node: <https://w3id.org/geosrs/GeographicCRS>
-  	Result Path: geosrs:datum
-  	Message: A geographic coordinate reference system should have exactly one geodetic datum
-  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
-  	Severity: sh:Violation
   	Source Shape: geosrs:TemporalCRS_datum_Shape_Property
   	Focus Node: <https://w3id.org/geosrs/TemporalCRS>
   	Result Path: geosrs:datum
   	Message: A projected coordinate reference system should have exactly one temporal datum
   Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
   	Severity: sh:Violation
-  	Source Shape: geosrs:GeodeticCRS_coordinateSystem_Shape_Property
-  	Focus Node: <https://w3id.org/geosrs/GeodeticCRS>
-  	Result Path: geosrs:coordinateSystem
-  	Message: A geodetic coordinate reference system should have exactly one geodetic coordinate system
+  	Source Shape: geosrs:ParametricCRS_datum_Shape_Property
+  	Focus Node: <https://w3id.org/geosrs/ParametricCRS>
+  	Result Path: geosrs:datum
+  	Message: A parametric coordinate reference system should have exactly one parametric datum
   Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
   	Severity: sh:Violation
   	Source Shape: geosrs:ProjectedCRS_conversion_Shape_Property
@@ -48,22 +42,22 @@ Validation result for _sources/srs/rules.shacl:
   	Message: A single coordinate reference system should have exactly one datum
   Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
   	Severity: sh:Violation
-  	Source Shape: geosrs:CRS_coordinateSystem_Shape_Property
-  	Focus Node: <https://w3id.org/geosrs/CRS>
-  	Result Path: geosrs:coordinateSystem
-  	Message: A coordinate reference system should have exactly one coordinate system
-  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
-  	Severity: sh:Violation
   	Source Shape: geosrs:GeographicCRS_coordinateSystem_Shape_Property
   	Focus Node: <https://w3id.org/geosrs/GeographicCRS>
   	Result Path: geosrs:coordinateSystem
   	Message: A geographic coordinate reference system should have exactly one ellipsoidal coordinate system
   Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
   	Severity: sh:Violation
-  	Source Shape: geosrs:CRS_domainOfValidity_Shape_Property
+  	Source Shape: geosrs:CRS_coordinateSystem_Shape_Property
   	Focus Node: <https://w3id.org/geosrs/CRS>
-  	Result Path: geosrs:domainOfValidity
-  	Message: A coordinate reference system should have at least one area of use
+  	Result Path: geosrs:coordinateSystem
+  	Message: A coordinate reference system should have exactly one coordinate system
+  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+  	Severity: sh:Violation
+  	Source Shape: geosrs:GeographicCRS_datum_Shape_Property
+  	Focus Node: <https://w3id.org/geosrs/GeographicCRS>
+  	Result Path: geosrs:datum
+  	Message: A geographic coordinate reference system should have exactly one geodetic datum
   Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
   	Severity: sh:Violation
   	Source Shape: geosrs:SingleCRS_coordinateSystem_Shape_Property
@@ -72,31 +66,37 @@ Validation result for _sources/srs/rules.shacl:
   	Message: A single coordinate reference system should have exactly one coordinate system
   Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
   	Severity: sh:Violation
-  	Source Shape: geosrs:ParametricCRS_datum_Shape_Property
-  	Focus Node: <https://w3id.org/geosrs/ParametricCRS>
-  	Result Path: geosrs:datum
-  	Message: A parametric coordinate reference system should have exactly one parametric datum
+  	Source Shape: geosrs:GeodeticCRS_coordinateSystem_Shape_Property
+  	Focus Node: <https://w3id.org/geosrs/GeodeticCRS>
+  	Result Path: geosrs:coordinateSystem
+  	Message: A geodetic coordinate reference system should have exactly one geodetic coordinate system
   Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
   	Severity: sh:Violation
   	Source Shape: geosrs:CompoundCRS_includesSRS_Shape_Property
   	Focus Node: <https://w3id.org/geosrs/CompoundCRS>
   	Result Path: geosrs:includesSRS
   	Message: A compound coordinate reference system should consist of at least one single coordinate reference system
+  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+  	Severity: sh:Violation
+  	Source Shape: geosrs:CRS_domainOfValidity_Shape_Property
+  	Focus Node: <https://w3id.org/geosrs/CRS>
+  	Result Path: geosrs:domainOfValidity
+  	Message: A coordinate reference system should have at least one area of use
   
 Focus nodes for _sources/srs/rules.shacl:
- - Shape geosrs:GeographicCRS_datum_Shape: <https://w3id.org/geosrs/GeographicCRS>
  - Shape geosrs:TemporalCRS_datum_Shape: <https://w3id.org/geosrs/TemporalCRS>
- - Shape geosrs:GeodeticCRS_coordinateSystem_Shape: <https://w3id.org/geosrs/GeodeticCRS>
- - Shape geosrs:ProjectedCRS_conversion_Shape: <https://w3id.org/geosrs/ProjectedCRS>
- - Shape geosrs:CRS_datumEnsemble_Shape: <https://w3id.org/geosrs/CRS>
- - Shape geosrs:SingleCRS_datum_Shape: <https://w3id.org/geosrs/SingleCRS>
- - Shape geosrs:CRS_coordinateSystem_Shape: <https://w3id.org/geosrs/CRS>
- - Shape geosrs:GeographicCRS_coordinateSystem_Shape: <https://w3id.org/geosrs/GeographicCRS>
  - Shape geosrs:CRS_datum_Shape: <https://w3id.org/geosrs/CRS>
- - Shape geosrs:CRS_domainOfValidity_Shape: <https://w3id.org/geosrs/CRS>
- - Shape geosrs:SingleCRS_coordinateSystem_Shape: <https://w3id.org/geosrs/SingleCRS>
  - Shape geosrs:ParametricCRS_datum_Shape: <https://w3id.org/geosrs/ParametricCRS>
+ - Shape geosrs:ProjectedCRS_conversion_Shape: <https://w3id.org/geosrs/ProjectedCRS>
+ - Shape geosrs:SingleCRS_datum_Shape: <https://w3id.org/geosrs/SingleCRS>
+ - Shape geosrs:GeographicCRS_coordinateSystem_Shape: <https://w3id.org/geosrs/GeographicCRS>
+ - Shape geosrs:CRS_datumEnsemble_Shape: <https://w3id.org/geosrs/CRS>
+ - Shape geosrs:CRS_coordinateSystem_Shape: <https://w3id.org/geosrs/CRS>
+ - Shape geosrs:GeographicCRS_datum_Shape: <https://w3id.org/geosrs/GeographicCRS>
+ - Shape geosrs:SingleCRS_coordinateSystem_Shape: <https://w3id.org/geosrs/SingleCRS>
+ - Shape geosrs:GeodeticCRS_coordinateSystem_Shape: <https://w3id.org/geosrs/GeodeticCRS>
  - Shape geosrs:CompoundCRS_includesSRS_Shape: <https://w3id.org/geosrs/CompoundCRS>
+ - Shape geosrs:CRS_domainOfValidity_Shape: <https://w3id.org/geosrs/CRS>
 
 === End SHACL ===
 

@@ -824,7 +824,7 @@ for ad in moduleToAdoc:
 				if len(moduleToRequirements[ad][req])>0:
 					reqtext=reqtext.replace(", <<"+str(last), " and <<"+str(last))
 				reqtext+=" to be used in SPARQL graph patterns."
-				f.write("[["+str(req).replace(" ","_")+"]]\n\n==== "+str(req)+"\n\n[requirement,identifier=\"/req/"+str(rqid)+"/"+str(req).replace(" ","_")+"\"]\n\n."+str(req)+"\n====\n"+str(reqtext)+"\n====\n\n")
+				f.write("[["+str(req).replace(" ","_")+"]]\n==== "+str(req)+"\n\n[requirement,identifier=\"/req/"+str(rqid)+"/"+str(req).replace(" ","_")+"\"]\n\n."+str(req)+"\n====\n"+str(reqtext)+"\n====\n\n")
 				#print(str(ad)+" - "+str(req))
 				#print(moduleToRequirements[ad][req])
 				if req in reqToDesc:

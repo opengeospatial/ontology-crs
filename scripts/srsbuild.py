@@ -746,7 +746,7 @@ for mod in moduleToRequirements:
     rqid=str(mod)[str(mod).find("-")+1:].replace(".adoc","").replace("_module","")
     requirementsttl.add((URIRef(reqns+str(rqid)),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef("http://www.opengis.net/def/spec-element/ConformanceClass")))
     requirementsttl.add((URIRef(reqns+str(rqid)),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef("http://www.w3.org/2004/02/skos/core#Collection")))
-    atestsuitedoc+="=== Conformance Class: "+str(mod[mod.rfind("-")+1:].replace(".adoc","").replace("_module","")).capitalize()+"\n\n"
+    atestsuitedoc+="[[conf_"+str(mod[mod.rfind("-")+1:].replace(".adoc","").replace("_module","")).capitalize()+"]]\n=== Conformance Class: "+str(mod[mod.rfind("-")+1:].replace(".adoc","").replace("_module","")).capitalize()+"\n\n"
     atestsuitedoc+="[conformance_class,identifier=/conf/"+str(rqid)+"]\n"
     atestsuitedoc+="."+str(mod)+"\n\n====\n\n[%metadata]\n\n"
     atestsuitedoc+="target:: /req/"+str(rqid)+"\n\n"

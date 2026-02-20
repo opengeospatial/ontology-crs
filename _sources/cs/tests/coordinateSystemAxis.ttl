@@ -5,7 +5,7 @@
 @prefix geosrs_cs:<https://w3id.org/geosrs/cs#> .
 @prefix exsrs: <https://w3id.org/example-data-srs#> .
 
-exsrs:ecsc rdf:type geosrs_cs:CartesianCoordinateSystem ;
+exsrs:ecsc rdf:type geosrs_cs:CoordinateSystem ;
            rdfs:label "My example cartesian coordinate system with two axis";
            geosrs_cs:axis exsrs:ecsc_axis1, exsrs:excsc_axis2 .
 exsrs:ecsc_axis1 rdf:type geosrs_cs:Axis ;

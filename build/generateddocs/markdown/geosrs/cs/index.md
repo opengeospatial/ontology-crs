@@ -59,6 +59,7 @@ exsrs:ecs_axis2 rdf:type geosrs_cs:Axis ;
 @prefix om: <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
 @prefix geosrs_cs:<https://w3id.org/geosrs/cs#> .
 @prefix exsrs: <https://w3id.org/example-data-srs#> .
+
 exsrs:ecsc rdf:type geosrs_cs:CartesianCoordinateSystem ;
            rdfs:label "My example cartesian coordinate system with two axis";
            geosrs_cs:axis exsrs:ecsc_axis1, exsrs:excsc_axis2 .

@@ -6,4 +6,4 @@
 @prefix exsrs: <https://w3id.org/example-data-srs#> .
 
 exsrs:ecsc rdf:type geosrs_cs:CoordinateSystem ;
-           rdfs:label "My example cartesian coordinate system with no axis";
+           rdfs:label "My example cartesian coordinate system with no axis" .

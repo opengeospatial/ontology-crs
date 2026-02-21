@@ -1,0 +1,21 @@
+Validation report for ogc.geosrs.datum - SRS Ontology - Datum module
+Generated 2026-02-21T01:03:13.782511+00:00
+=== Files ===
+Using examples/geodeticdatum.ttl from examples
+Output Turtle example_1_1.ttl created
+=== End Files ===
+
+=== Turtle ===
+Prefixes are defined for mynamespace
+=== End Turtle ===
+
+=== SHACL ===
+Validation result for _sources/datum/rules.shacl:
+  Validation Report
+  Conforms: True
+  
+Focus nodes for _sources/datum/rules.shacl:
+ - Shape geosrs:ParametricDatum_definingParameter_Shape: *none*
+
+=== End SHACL ===
+

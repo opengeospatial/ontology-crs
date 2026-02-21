@@ -6,62 +6,62 @@
 geosrs:1DCoordinateSystem_axis_Shape a sh:NodeShape ;
     rdfs:label "CRS Ontology Shape S1"@en ;
     sh:property geosrs:1DCoordinateSystem_axis_Shape_Property ;
-    sh:targetNode geosrs:1DCoordinateSystem .
+    sh:targetClass geosrs:1DCoordinateSystem .
 
 geosrs:3DCoordinateSystem_axis_Shape a sh:NodeShape ;
     rdfs:label "CRS Ontology Shape S2"@en ;
     sh:property geosrs:3DCoordinateSystem_axis_Shape_Property ;
-    sh:targetNode geosrs:3DCoordinateSystem .
+    sh:targetClass geosrs:3DCoordinateSystem .
 
 geosrs:ConicalCoordinateSystem_axis_Shape a sh:NodeShape ;
     rdfs:label "CRS Ontology Shape S3"@en ;
     sh:property geosrs:ConicalCoordinateSystem_axis_Shape_Property ;
-    sh:targetNode geosrs:ConicalCoordinateSystem .
+    sh:targetClass geosrs:ConicalCoordinateSystem .
 
 geosrs:CoordinateSystemAxis_axisDirection_Shape a sh:NodeShape ;
     rdfs:label "CRS Ontology Shape S5"@en ;
     sh:property geosrs:CoordinateSystemAxis_axisDirection_Shape_Property ;
-    sh:targetNode geosrs:CoordinateSystemAxis .
+    sh:targetClass geosrs:CoordinateSystemAxis .
 
 geosrs:CoordinateSystem_axis_Shape a sh:NodeShape ;
     rdfs:label "CRS Ontology Shape S4"@en ;
     sh:property geosrs:CoordinateSystem_axis_Shape_Property ;
-    sh:targetNode geosrs:CoordinateSystem .
+    sh:targetClass geosrs:CoordinateSystem .
 
 geosrs:CurvilinearCoordinateSystem_axis_Shape a sh:NodeShape ;
     rdfs:label "CRS Ontology Shape S6"@en ;
     sh:property geosrs:CurvilinearCoordinateSystem_axis_Shape_Property ;
-    sh:targetNode geosrs:CurvilinearCoordinateSystem .
+    sh:targetClass geosrs:CurvilinearCoordinateSystem .
 
 geosrs:CylindricalCoordinateSystem_axis_Shape a sh:NodeShape ;
     rdfs:label "CRS Ontology Shape S7"@en ;
     sh:property geosrs:CylindricalCoordinateSystem_axis_Shape_Property ;
-    sh:targetNode geosrs:CylindricalCoordinateSystem .
+    sh:targetClass geosrs:CylindricalCoordinateSystem .
 
 geosrs:DateTimeTemporalCoordinateSystem_axis_Shape a sh:NodeShape ;
     rdfs:label "CRS Ontology Shape S8"@en ;
     sh:property geosrs:DateTimeTemporalCoordinateSystem_axis_Shape_Property ;
-    sh:targetNode geosrs:DateTimeTemporalCoordinateSystem .
+    sh:targetClass geosrs:DateTimeTemporalCoordinateSystem .
 
 geosrs:PlanarCoordinateSystem_axis_Shape a sh:NodeShape ;
     rdfs:label "CRS Ontology Shape S9"@en ;
     sh:property geosrs:PlanarCoordinateSystem_axis_Shape_Property ;
-    sh:targetNode geosrs:PlanarCoordinateSystem .
+    sh:targetClass geosrs:PlanarCoordinateSystem .
 
 geosrs:TemporalCoordinateSystem_axis_Shape a sh:NodeShape ;
     rdfs:label "CRS Ontology Shape S10"@en ;
     sh:property geosrs:TemporalCoordinateSystem_axis_Shape_Property ;
-    sh:targetNode geosrs:TemporalCoordinateSystem .
+    sh:targetClass geosrs:TemporalCoordinateSystem .
 
 geosrs:TemporalCountCoordinateSystem_axis_Shape a sh:NodeShape ;
     rdfs:label "CRS Ontology Shape S11"@en ;
     sh:property geosrs:TemporalCountCoordinateSystem_axis_Shape_Property ;
-    sh:targetNode geosrs:TemporalCountCoordinateSystem .
+    sh:targetClass geosrs:TemporalCountCoordinateSystem .
 
 geosrs:TemporalMeasureCoordinateSystem_axis_Shape a sh:NodeShape ;
     rdfs:label "CRS Ontology Shape S12"@en ;
     sh:property geosrs:TemporalMeasureCoordinateSystem_axis_Shape_Property ;
-    sh:targetNode geosrs:TemporalMeasureCoordinateSystem .
+    sh:targetClass geosrs:TemporalMeasureCoordinateSystem .
 
 geosrs:1DCoordinateSystem_axis_Shape_Property a sh:PropertyShape ;
     sh:class geosrs:CoordinateSystemAxis ;

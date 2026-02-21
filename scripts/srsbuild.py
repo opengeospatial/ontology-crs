@@ -105,11 +105,12 @@ def convertCSVToSHACLAndADoc():
     abspath = os.path.join(dirname, '../csv/shacl/')
 
     directory = os.fsencode(abspath)
-
+    
     for file in os.listdir(directory):
         filename = os.fsdecode(file)
         shapecounter=1
         if filename.endswith(".csv"):
+            curns="https://w3id.org/geosrs/"+filename.replace(".csv","").replace("core","")+"/"
             curshaclres=Graph()
             curshaclres.bind("geosrs", "https://w3id.org/geosrs/") 
             curshaclres.bind("sh","http://www.w3.org/ns/shacl#")
@@ -127,23 +128,23 @@ def convertCSVToSHACLAndADoc():
                         shapepropuri=row["Concept"].replace("geosrs:","https://w3id.org/geosrs/")+"_"+str(row["Property"].replace("geosrs:",""))+"_Shape_Property"
                         shaclres.add((URIRef(shapeuri),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef("http://www.w3.org/ns/shacl#NodeShape")))
                         shaclres.add((URIRef(shapeuri),URIRef("http://www.w3.org/2000/01/rdf-schema#label"),Literal("CRS Ontology Shape S"+str(shapecounter),lang="en")))
-                        shaclres.add((URIRef(shapeuri),URIRef("http://www.w3.org/ns/shacl#targetClass"),URIRef(row["Concept"].replace("geosrs:","https://w3id.org/geosrs/"))))
+                        shaclres.add((URIRef(shapeuri),URIRef("http://www.w3.org/ns/shacl#targetClass"),URIRef(row["Concept"].replace("geosrs:",curns))))
                         shaclres.add((URIRef(shapeuri),URIRef("http://www.w3.org/ns/shacl#property"),URIRef(shapepropuri)))
                         shaclres.add((URIRef(shapepropuri),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef("http://www.w3.org/ns/shacl#PropertyShape")))
-                        shaclres.add((URIRef(shapepropuri),URIRef("http://www.w3.org/ns/shacl#path"),URIRef(str(row["Property"]).replace("geosrs:","https://w3id.org/geosrs/"))))
+                        shaclres.add((URIRef(shapepropuri),URIRef("http://www.w3.org/ns/shacl#path"),URIRef(str(row["Property"]).replace("geosrs:",curns))))
                         curshaclres.add((URIRef(shapeuri),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef("http://www.w3.org/ns/shacl#NodeShape")))
                         curshaclres.add((URIRef(shapeuri),URIRef("http://www.w3.org/2000/01/rdf-schema#label"),Literal("CRS Ontology Shape S"+str(shapecounter),lang="en")))
-                        curshaclres.add((URIRef(shapeuri),URIRef("http://www.w3.org/ns/shacl#targetClass"),URIRef(row["Concept"].replace("geosrs:","https://w3id.org/geosrs/"))))
+                        curshaclres.add((URIRef(shapeuri),URIRef("http://www.w3.org/ns/shacl#targetClass"),URIRef(row["Concept"].replace("geosrs:",curns))))
                         curshaclres.add((URIRef(shapeuri),URIRef("http://www.w3.org/ns/shacl#property"),URIRef(shapepropuri)))
                         curshaclres.add((URIRef(shapepropuri),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef("http://www.w3.org/ns/shacl#PropertyShape")))
-                        curshaclres.add((URIRef(shapepropuri),URIRef("http://www.w3.org/ns/shacl#path"),URIRef(str(row["Property"]).replace("geosrs:","https://w3id.org/geosrs/"))))
+                        curshaclres.add((URIRef(shapepropuri),URIRef("http://www.w3.org/ns/shacl#path"),URIRef(str(row["Property"]).replace("geosrs:",curns))))
                         adocdef+="|Shape S"+str(shapecounter)+" "
                         adocdef+="|"+str(row["Concept"])+" "
                         adocdef+="|"+str(row["Property"])+" "
                         if "Class" in row and row["Class"]!="":
                             adocdef+="|"+str(row["Class"])+" "
-                            shaclres.add((URIRef(shapepropuri),URIRef("http://www.w3.org/ns/shacl#class"),URIRef(str(row["Class"]).replace("geosrs:","https://w3id.org/geosrs/"))))
-                            curshaclres.add((URIRef(shapepropuri),URIRef("http://www.w3.org/ns/shacl#class"),URIRef(str(row["Class"]).replace("geosrs:","https://w3id.org/geosrs/"))))
+                            shaclres.add((URIRef(shapepropuri),URIRef("http://www.w3.org/ns/shacl#class"),URIRef(str(row["Class"]).replace("geosrs:",curns))))
+                            curshaclres.add((URIRef(shapepropuri),URIRef("http://www.w3.org/ns/shacl#class"),URIRef(str(row["Class"]).replace("geosrs:",curns))))
                         else:
                             adocdef+="| - "
                         if "MinCount" in row and row["MinCount"]!="":

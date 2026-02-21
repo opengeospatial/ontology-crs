@@ -6,67 +6,67 @@
 geosrs:CRS_coordinateSystem_Shape a sh:NodeShape ;
     rdfs:label "CRS Ontology Shape S1"@en ;
     sh:property geosrs:CRS_coordinateSystem_Shape_Property ;
-    sh:targetNode geosrs:CRS .
+    sh:targetClass geosrs:CRS .
 
 geosrs:CRS_datumEnsemble_Shape a sh:NodeShape ;
     rdfs:label "CRS Ontology Shape S4"@en ;
     sh:property geosrs:CRS_datumEnsemble_Shape_Property ;
-    sh:targetNode geosrs:CRS .
+    sh:targetClass geosrs:CRS .
 
 geosrs:CRS_datum_Shape a sh:NodeShape ;
     rdfs:label "CRS Ontology Shape S3"@en ;
     sh:property geosrs:CRS_datum_Shape_Property ;
-    sh:targetNode geosrs:CRS .
+    sh:targetClass geosrs:CRS .
 
 geosrs:CRS_domainOfValidity_Shape a sh:NodeShape ;
     rdfs:label "CRS Ontology Shape S2"@en ;
     sh:property geosrs:CRS_domainOfValidity_Shape_Property ;
-    sh:targetNode geosrs:CRS .
+    sh:targetClass geosrs:CRS .
 
 geosrs:CompoundCRS_includesSRS_Shape a sh:NodeShape ;
     rdfs:label "CRS Ontology Shape S5"@en ;
     sh:property geosrs:CompoundCRS_includesSRS_Shape_Property ;
-    sh:targetNode geosrs:CompoundCRS .
+    sh:targetClass geosrs:CompoundCRS .
 
 geosrs:GeodeticCRS_coordinateSystem_Shape a sh:NodeShape ;
     rdfs:label "CRS Ontology Shape S6"@en ;
     sh:property geosrs:GeodeticCRS_coordinateSystem_Shape_Property ;
-    sh:targetNode geosrs:GeodeticCRS .
+    sh:targetClass geosrs:GeodeticCRS .
 
 geosrs:GeographicCRS_coordinateSystem_Shape a sh:NodeShape ;
     rdfs:label "CRS Ontology Shape S8"@en ;
     sh:property geosrs:GeographicCRS_coordinateSystem_Shape_Property ;
-    sh:targetNode geosrs:GeographicCRS .
+    sh:targetClass geosrs:GeographicCRS .
 
 geosrs:GeographicCRS_datum_Shape a sh:NodeShape ;
     rdfs:label "CRS Ontology Shape S7"@en ;
     sh:property geosrs:GeographicCRS_datum_Shape_Property ;
-    sh:targetNode geosrs:GeographicCRS .
+    sh:targetClass geosrs:GeographicCRS .
 
 geosrs:ParametricCRS_datum_Shape a sh:NodeShape ;
     rdfs:label "CRS Ontology Shape S9"@en ;
     sh:property geosrs:ParametricCRS_datum_Shape_Property ;
-    sh:targetNode geosrs:ParametricCRS .
+    sh:targetClass geosrs:ParametricCRS .
 
 geosrs:ProjectedCRS_conversion_Shape a sh:NodeShape ;
     rdfs:label "CRS Ontology Shape S10"@en ;
     sh:property geosrs:ProjectedCRS_conversion_Shape_Property ;
-    sh:targetNode geosrs:ProjectedCRS .
+    sh:targetClass geosrs:ProjectedCRS .
 
 geosrs:SingleCRS_coordinateSystem_Shape a sh:NodeShape ;
     rdfs:label "CRS Ontology Shape S11"@en ;
     sh:property geosrs:SingleCRS_coordinateSystem_Shape_Property ;
-    sh:targetNode geosrs:SingleCRS .
+    sh:targetClass geosrs:SingleCRS .
 
 geosrs:SingleCRS_datum_Shape a sh:NodeShape ;
     rdfs:label "CRS Ontology Shape S12"@en ;
     sh:property geosrs:SingleCRS_datum_Shape_Property ;
-    sh:targetNode geosrs:SingleCRS .
+    sh:targetClass geosrs:SingleCRS .
 
 geosrs:TemporalCRS_datum_Shape a sh:NodeShape ;
     rdfs:label "CRS Ontology Shape S13"@en ;
     sh:property geosrs:TemporalCRS_datum_Shape_Property ;
-    sh:targetNode geosrs:TemporalCRS .
+    sh:targetClass geosrs:TemporalCRS .
 
 geosrs:CRS_coordinateSystem_Shape_Property a sh:PropertyShape ;
     sh:class geosrs:CoordinateSystem ;

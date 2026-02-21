@@ -6,7 +6,7 @@
 geosrs:ParametricDatum_definingParameter_Shape a sh:NodeShape ;
     rdfs:label "CRS Ontology Shape S1"@en ;
     sh:property geosrs:ParametricDatum_definingParameter_Shape_Property ;
-    sh:targetNode geosrs:ParametricDatum .
+    sh:targetClass geosrs:ParametricDatum .
 
 geosrs:ParametricDatum_definingParameter_Shape_Property a sh:PropertyShape ;
     sh:class geosrs:DefiningParameter ;

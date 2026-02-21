@@ -1,0 +1,14 @@
+Validation report for ogc.geosrs.cs - SRS Ontology - Coordinate System module
+Generated 2026-02-21T00:01:56.270696+00:00
+=== General ===
+Test was expected to fail and it did.
+=== End General ===
+
+=== Turtle ===
+
+** Validation error **
+at line 9 of <>:
+Bad syntax (EOF found when expected verb in property list) at ^ in:
+"...b'label "My example cartesian coordinate system with no axis";'^b''"
+=== End Turtle ===
+

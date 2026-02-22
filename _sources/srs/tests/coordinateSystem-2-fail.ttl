@@ -1,0 +1,12 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix geosrs:<https://w3id.org/geosrs/srs#> .
+@prefix exsrs: <https://w3id.org/example-data-srs#> .
+
+<http://www.opengis.net/def/crs/EPSG/0/23032> rdf:type geosrs:ProjectedCRS ;
+    rdfs:label "ED50 / UTM zone 32N"@en ;
+    geosrs:coordinateOperation <http://www.opengis.net/ont/crs/operation/UTM_zone_32N> ;
+    geosrs:coordinateSystem <http://www.opengis.net/def/crs/EPSG/0/23032_cs>, exsrs:mycs ;
+    geosrs:domainOfValidity <http://www.opengis.net/def/crs/EPSG/0/23032_area_of_use> ;
+    geosrs:datum <http://www.opengis.net/ont/crs/datum/European_Datum_1950> .
+

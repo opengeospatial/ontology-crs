@@ -1,0 +1,14 @@
+Validation report for ogc.geosrs.srs - SRS Core Ontology
+Generated 2026-02-22T01:27:43.577623+00:00
+=== General ===
+Test was expected to fail and it did.
+=== End General ===
+
+=== Turtle ===
+
+** Validation error **
+at line 13 of <>:
+Bad syntax (Prefix "geosrs_cs:" not bound) at ^ in:
+"...b'\n\n<http://www.opengis.net/def/crs/EPSG/0/23032_cs> rdf:type '^b'geosrs_cs:CoordinateSystem .\nexsrs:mycs rdf:type geosrs_cs:C'..."
+=== End Turtle ===
+

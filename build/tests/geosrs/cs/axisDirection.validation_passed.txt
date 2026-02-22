@@ -1,13 +1,8 @@
 Validation report for ogc.geosrs.cs - SRS Ontology - Coordinate System module
-Generated 2026-02-22T01:27:43.535936+00:00
+Generated 2026-02-22T01:27:43.513867+00:00
 === Files ===
-Using examples/cartesian2d.ttl from examples
-Output Turtle example_1_2.ttl created
+Using axisDirection.ttl from test resources
 === End Files ===
-
-=== Turtle ===
-Prefixes are defined for mynamespace
-=== End Turtle ===
 
 === SHACL ===
 Validation result for _sources/cs/rules.shacl:
@@ -24,7 +19,7 @@ Focus nodes for _sources/cs/rules.shacl:
  - Shape geosrs:3DCoordinateSystem_axis_Shape: *none*
  - Shape geosrs:PlanarCoordinateSystem_axis_Shape: *none*
  - Shape geosrs:DateTimeTemporalCoordinateSystem_axis_Shape: *none*
- - Shape geosrs:CoordinateSystemAxis_axisDirection_Shape: *none*
+ - Shape geosrs:CoordinateSystemAxis_axisDirection_Shape: exsrs:myAxis
  - Shape geosrs:TemporalCoordinateSystem_axis_Shape: *none*
  - Shape geosrs:CylindricalCoordinateSystem_axis_Shape: *none*
 

@@ -508,7 +508,7 @@ for file in os.listdir(directory):
                                 gcore.add((URIRef(row["Concept"].replace(coreprefix+":",geocrsNS)),SKOS.definition,Literal(row["Definition"],lang="en")))
                                 adocdef+="|Definition\n|"+str(row["Definition"])+"\n\n"
                             if "Range" in row and row["Range"]!="":
-                                gcore.add((URIRef(row["Concept"].replace(coreprefix+":",geocrsNS)),RDFS.range,URIRef(row["Range"].replace("geosrs:", getNSForClass(row["Range"],classToPrefix)))))
+                                gcore.add((URIRef(row["Concept"].replace(coreprefix+":",geocrsNS)),RDFS.range,URIRef(row["Range"].replace("geosrs:", getNSForClass(row["Range"],classToPrefix).replace("xsd:","http://www.w3.org/2001/XMLSchema#")))))
                                 propref=row["Range"].replace("geosrs:", getNSForClass(row["Range"],classToPrefix))
                                 adocdef+="|Range\n|"+propref.replace("xsd:","http://www.w3.org/2001/XMLSchema#")+"["+propref[propref.rfind("/")+1:]+"]\n\n"
                             if "Domain" in row and row["Domain"]!="":
@@ -571,7 +571,7 @@ for file in os.listdir(directory):
                                     exont[row["Core Property?"].lower()].add((URIRef(row["Concept"].replace(coreprefix+":",curns+str(row["Core Property?"]).lower()+"/")),SKOS.definition,Literal(row["Definition"],lang="en")))
                                     adocdef+="|Definition\n|"+str(row["Definition"])+"\n\n"
                                 if "Range" in row and row["Range"]!="":
-                                    exont[row["Core Property?"].lower()].add((URIRef(row["Concept"].replace(coreprefix+":",curns+str(row["Core Property?"]).lower()+"/")),RDFS.range,URIRef(row["Range"].replace("geosrs:",getNSForClass(row["Range"],classToPrefix)))))
+                                    exont[row["Core Property?"].lower()].add((URIRef(row["Concept"].replace(coreprefix+":",curns+str(row["Core Property?"]).lower()+"/")),RDFS.range,URIRef(row["Range"].replace("geosrs:",getNSForClass(row["Range"],classToPrefix).replace("xsd:","http://www.w3.org/2001/XMLSchema#")))))
                                     propref=row["Range"].replace("geosrs:", getNSForClass(row["Range"],classToPrefix))
                                     adocdef+="|Range\n|"+propref.replace("xsd:","http://www.w3.org/2001/XMLSchema#")+"["+propref[propref.rfind("/")+1:]+"]\n\n"
                                 if "Domain" in row and row["Domain"]!="":

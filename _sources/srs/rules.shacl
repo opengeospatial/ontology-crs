@@ -1,6 +1,7 @@
 @prefix geosrs: <https://w3id.org/geosrs/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix geosrs_cs:<https://w3id.org/geosrs/cs#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 geosrs:CRS_coordinateSystem_Shape a sh:NodeShape ;
@@ -69,7 +70,7 @@ geosrs:TemporalCRS_datum_Shape a sh:NodeShape ;
     sh:targetClass geosrs:TemporalCRS .
 
 geosrs:CRS_coordinateSystem_Shape_Property a sh:PropertyShape ;
-    sh:class geosrs:CoordinateSystem ;
+    sh:class geosrs_cs:CoordinateSystem ;
     sh:maxCount 1 ;
     sh:message "A coordinate reference system should have exactly one coordinate system"@en ;
     sh:minCount 1 ;

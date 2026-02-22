@@ -51,7 +51,7 @@
     <body>
         <div class="container">
             <h1 class="title">Building blocks validation report</h1>
-            <small class="datetime">Generated at 2026-02-22T00:55:27.256561+00:00</small>
+            <small class="datetime">Generated at 2026-02-22T01:27:43.602629+00:00</small>
                 <p class="summary fw-semibold text-danger">
                     Number of passing building blocks: 5 / 7 (71.43%)
                 </p>
@@ -174,14 +174,14 @@
 
                                     <span class="badge text-bg-danger me-2">
                                             Tests Failed
-                                            (60% passed)
+                                            (80% passed)
                                     </span>
                                 </button>
                             </h2>
                             <div class="accordion-collapse collapse show" id="bblock-collapse-ogc.geosrs.cs">
                                 <div class="accordion-body">
                                         <p class="summary fw-semibold text-danger">
-                                            Test passed: 3 / 5
+                                            Test passed: 4 / 5
                                         </p>
                                         <div class="card mb-2 validation-item ">
                                             <div class="card-body">
@@ -209,18 +209,18 @@
   Conforms: True
   </div>
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/cs/rules.shacl:
- - Shape geosrs:CoordinateSystemAxis_axisDirection_Shape: exsrs:ecsc_axis1
- - Shape geosrs:CurvilinearCoordinateSystem_axis_Shape: *none*
- - Shape geosrs:CylindricalCoordinateSystem_axis_Shape: *none*
- - Shape geosrs:TemporalCountCoordinateSystem_axis_Shape: *none*
- - Shape geosrs:CoordinateSystem_axis_Shape: *none*
- - Shape geosrs:PlanarCoordinateSystem_axis_Shape: *none*
- - Shape geosrs:TemporalMeasureCoordinateSystem_axis_Shape: *none*
  - Shape geosrs:ConicalCoordinateSystem_axis_Shape: *none*
- - Shape geosrs:DateTimeTemporalCoordinateSystem_axis_Shape: *none*
- - Shape geosrs:3DCoordinateSystem_axis_Shape: *none*
- - Shape geosrs:TemporalCoordinateSystem_axis_Shape: *none*
  - Shape geosrs:1DCoordinateSystem_axis_Shape: exsrs:ecsc
+ - Shape geosrs:CoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:CurvilinearCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:TemporalCountCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:TemporalMeasureCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:3DCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:PlanarCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:DateTimeTemporalCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:CoordinateSystemAxis_axisDirection_Shape: exsrs:ecsc_axis1
+ - Shape geosrs:TemporalCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:CylindricalCoordinateSystem_axis_Shape: *none*
 </div>
                                                     </div>
                                                 </div>
@@ -239,7 +239,7 @@
                                                     <a href="../../_sources/cs/tests/axisDirection.ttl" target="_blank">axisDirection.ttl</a>
                                                     <span class="badge bg-secondary test_resource">Test resource</span>
                                                     <div class="float-end">
-                                                            <span class="badge text-bg-danger me-2">Failed</span>
+                                                            <span class="badge text-bg-success me-2">Passed</span>
                                                     </div>
                                                 </div>
                                                 <div class="card-text mt-2 validation-text collapse" id="uid-4">
@@ -247,31 +247,23 @@
                                                                     <div class="font-monospace subsection-title mt-2">Files</div>
                                                                     <div class="font-monospace entry-message section-files ">Using axisDirection.ttl from test resources</div>
                                                                     <div class="font-monospace subsection-title mt-2">SHACL</div>
-                                                                    <div class="font-monospace entry-message section-shacl text-danger">Validation result for _sources/cs/rules.shacl:
+                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for _sources/cs/rules.shacl:
   Validation Report
-  Conforms: False
-  Results (1):
-  Constraint Violation in ClassConstraintComponent (http://www.w3.org/ns/shacl#ClassConstraintComponent):
-  	Severity: sh:Violation
-  	Source Shape: geosrs:CoordinateSystemAxis_axisDirection_Shape_Property
-  	Focus Node: exsrs:myAxis
-  	Value Node: geosrs_cs:North
-  	Result Path: geosrs_cs:axisDirection
-  	Message: A coordinate system axis should have exactly one axis direction
+  Conforms: True
   </div>
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/cs/rules.shacl:
- - Shape geosrs:CoordinateSystemAxis_axisDirection_Shape: exsrs:myAxis
- - Shape geosrs:CurvilinearCoordinateSystem_axis_Shape: *none*
- - Shape geosrs:CylindricalCoordinateSystem_axis_Shape: *none*
- - Shape geosrs:TemporalCountCoordinateSystem_axis_Shape: *none*
- - Shape geosrs:CoordinateSystem_axis_Shape: *none*
- - Shape geosrs:PlanarCoordinateSystem_axis_Shape: *none*
- - Shape geosrs:TemporalMeasureCoordinateSystem_axis_Shape: *none*
  - Shape geosrs:ConicalCoordinateSystem_axis_Shape: *none*
- - Shape geosrs:DateTimeTemporalCoordinateSystem_axis_Shape: *none*
- - Shape geosrs:3DCoordinateSystem_axis_Shape: *none*
- - Shape geosrs:TemporalCoordinateSystem_axis_Shape: *none*
  - Shape geosrs:1DCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:CoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:CurvilinearCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:TemporalCountCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:TemporalMeasureCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:3DCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:PlanarCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:DateTimeTemporalCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:CoordinateSystemAxis_axisDirection_Shape: exsrs:myAxis
+ - Shape geosrs:TemporalCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:CylindricalCoordinateSystem_axis_Shape: *none*
 </div>
                                                     </div>
                                                 </div>
@@ -301,7 +293,7 @@
                                                                     <div class="font-monospace entry-message section-shacl text-danger">Validation result for _sources/cs/rules.shacl:
   Validation Report
   Conforms: False
-  Results (2):
+  Results (1):
   Constraint Violation in ClassConstraintComponent (http://www.w3.org/ns/shacl#ClassConstraintComponent):
   	Severity: sh:Violation
   	Source Shape: geosrs:CoordinateSystem_axis_Shape_Property
@@ -309,27 +301,20 @@
   	Value Node: exsrs:excsc_axis2
   	Result Path: geosrs_cs:axis
   	Message: A coordinate system should have at least one axis
-  Constraint Violation in ClassConstraintComponent (http://www.w3.org/ns/shacl#ClassConstraintComponent):
-  	Severity: sh:Violation
-  	Source Shape: geosrs:CoordinateSystem_axis_Shape_Property
-  	Focus Node: exsrs:ecsc
-  	Value Node: exsrs:ecsc_axis1
-  	Result Path: geosrs_cs:axis
-  	Message: A coordinate system should have at least one axis
   </div>
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/cs/rules.shacl:
- - Shape geosrs:CoordinateSystemAxis_axisDirection_Shape: exsrs:ecsc_axis2,exsrs:ecsc_axis1
- - Shape geosrs:CurvilinearCoordinateSystem_axis_Shape: *none*
- - Shape geosrs:CylindricalCoordinateSystem_axis_Shape: *none*
- - Shape geosrs:TemporalCountCoordinateSystem_axis_Shape: *none*
- - Shape geosrs:CoordinateSystem_axis_Shape: exsrs:ecsc
- - Shape geosrs:PlanarCoordinateSystem_axis_Shape: *none*
- - Shape geosrs:TemporalMeasureCoordinateSystem_axis_Shape: *none*
  - Shape geosrs:ConicalCoordinateSystem_axis_Shape: *none*
- - Shape geosrs:DateTimeTemporalCoordinateSystem_axis_Shape: *none*
- - Shape geosrs:3DCoordinateSystem_axis_Shape: *none*
- - Shape geosrs:TemporalCoordinateSystem_axis_Shape: *none*
  - Shape geosrs:1DCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:CoordinateSystem_axis_Shape: exsrs:ecsc
+ - Shape geosrs:CurvilinearCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:TemporalCountCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:TemporalMeasureCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:3DCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:PlanarCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:DateTimeTemporalCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:CoordinateSystemAxis_axisDirection_Shape: exsrs:ecsc_axis1,exsrs:ecsc_axis2
+ - Shape geosrs:TemporalCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:CylindricalCoordinateSystem_axis_Shape: *none*
 </div>
                                                     </div>
                                                 </div>
@@ -364,18 +349,18 @@
   Conforms: True
   </div>
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/cs/rules.shacl:
- - Shape geosrs:CoordinateSystemAxis_axisDirection_Shape: *none*
- - Shape geosrs:CurvilinearCoordinateSystem_axis_Shape: *none*
- - Shape geosrs:CylindricalCoordinateSystem_axis_Shape: *none*
- - Shape geosrs:TemporalCountCoordinateSystem_axis_Shape: *none*
- - Shape geosrs:CoordinateSystem_axis_Shape: *none*
- - Shape geosrs:PlanarCoordinateSystem_axis_Shape: *none*
- - Shape geosrs:TemporalMeasureCoordinateSystem_axis_Shape: *none*
  - Shape geosrs:ConicalCoordinateSystem_axis_Shape: *none*
- - Shape geosrs:DateTimeTemporalCoordinateSystem_axis_Shape: *none*
- - Shape geosrs:3DCoordinateSystem_axis_Shape: *none*
- - Shape geosrs:TemporalCoordinateSystem_axis_Shape: *none*
  - Shape geosrs:1DCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:CoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:CurvilinearCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:TemporalCountCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:TemporalMeasureCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:3DCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:PlanarCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:DateTimeTemporalCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:CoordinateSystemAxis_axisDirection_Shape: *none*
+ - Shape geosrs:TemporalCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:CylindricalCoordinateSystem_axis_Shape: *none*
 </div>
                                                     </div>
                                                 </div>
@@ -410,18 +395,18 @@
   Conforms: True
   </div>
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/cs/rules.shacl:
- - Shape geosrs:CoordinateSystemAxis_axisDirection_Shape: *none*
- - Shape geosrs:CurvilinearCoordinateSystem_axis_Shape: *none*
- - Shape geosrs:CylindricalCoordinateSystem_axis_Shape: *none*
- - Shape geosrs:TemporalCountCoordinateSystem_axis_Shape: *none*
- - Shape geosrs:CoordinateSystem_axis_Shape: *none*
- - Shape geosrs:PlanarCoordinateSystem_axis_Shape: *none*
- - Shape geosrs:TemporalMeasureCoordinateSystem_axis_Shape: *none*
  - Shape geosrs:ConicalCoordinateSystem_axis_Shape: *none*
- - Shape geosrs:DateTimeTemporalCoordinateSystem_axis_Shape: *none*
- - Shape geosrs:3DCoordinateSystem_axis_Shape: *none*
- - Shape geosrs:TemporalCoordinateSystem_axis_Shape: *none*
  - Shape geosrs:1DCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:CoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:CurvilinearCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:TemporalCountCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:TemporalMeasureCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:3DCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:PlanarCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:DateTimeTemporalCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:CoordinateSystemAxis_axisDirection_Shape: *none*
+ - Shape geosrs:TemporalCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:CylindricalCoordinateSystem_axis_Shape: *none*
 </div>
                                                     </div>
                                                 </div>
@@ -603,14 +588,14 @@
 
                                     <span class="badge text-bg-danger me-2">
                                             Tests Failed
-                                            (50% passed)
+                                            (66.67% passed)
                                     </span>
                                 </button>
                             </h2>
                             <div class="accordion-collapse collapse show" id="bblock-collapse-ogc.geosrs.srs">
                                 <div class="accordion-body">
                                         <p class="summary fw-semibold text-danger">
-                                            Test passed: 2 / 4
+                                            Test passed: 4 / 6
                                         </p>
                                         <div class="card mb-2 validation-item require-fail">
                                             <div class="card-body">
@@ -622,7 +607,7 @@
                                                         <i class="bi bi-caret-right-fill caret"></i>
                                                         Details
                                                     </button>
-                                                    <a href="../../_sources/srs/tests/coordinateSystem-1-fail.ttl" target="_blank">coordinateSystem-1-fail.ttl</a>
+                                                    <a href="../../_sources/srs/tests/areaOfUse-fail.ttl" target="_blank">areaOfUse-fail.ttl</a>
                                                     <span class="badge bg-secondary test_resource">Test resource</span>
                                                         <span class="badge text-bg-info">Requires fail</span>
                                                     <div class="float-end">
@@ -630,6 +615,97 @@
                                                     </div>
                                                 </div>
                                                 <div class="card-text mt-2 validation-text collapse" id="uid-11">
+                                                    <div class="validation-text-inner">
+                                                                    <div class="font-monospace subsection-title mt-2">General</div>
+                                                                    <div class="font-monospace entry-message section-general text-danger">Test was expected to fail but it did not.</div>
+                                                                    <div class="font-monospace subsection-title mt-2">Files</div>
+                                                                    <div class="font-monospace entry-message section-files ">Using areaOfUse-fail.ttl from test resources</div>
+                                                                    <div class="font-monospace subsection-title mt-2">SHACL</div>
+                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for _sources/srs/rules.shacl:
+  Validation Report
+  Conforms: True
+  </div>
+                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/srs/rules.shacl:
+ - Shape geosrs:SingleCRS_coordinateSystem_Shape: *none*
+ - Shape geosrs:CRS_datum_Shape: *none*
+ - Shape geosrs:GeodeticCRS_coordinateSystem_Shape: *none*
+ - Shape geosrs:CRS_datumEnsemble_Shape: *none*
+ - Shape geosrs:GeographicCRS_datum_Shape: *none*
+ - Shape geosrs:ParametricCRS_datum_Shape: *none*
+ - Shape geosrs:CRS_domainOfValidity_Shape: *none*
+ - Shape geosrs:SingleCRS_datum_Shape: *none*
+ - Shape geosrs:TemporalCRS_datum_Shape: *none*
+ - Shape geosrs:CRS_coordinateSystem_Shape: *none*
+ - Shape geosrs:GeographicCRS_coordinateSystem_Shape: *none*
+ - Shape geosrs:ProjectedCRS_conversion_Shape: *none*
+ - Shape geosrs:CompoundCRS_includesSRS_Shape: *none*
+</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card mb-2 validation-item ">
+                                            <div class="card-body">
+                                                <div class="card-title mb-0">
+                                                    <button type="button" class="btn btn-sm btn-primary collapsed"
+                                                            data-bs-toggle="collapse" data-bs-target="#uid-12"
+                                                            aria-expanded="false" aria-controls="uid-12"
+                                                            style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                                                        <i class="bi bi-caret-right-fill caret"></i>
+                                                        Details
+                                                    </button>
+                                                    <a href="../../_sources/srs/tests/areaOfUse.ttl" target="_blank">areaOfUse.ttl</a>
+                                                    <span class="badge bg-secondary test_resource">Test resource</span>
+                                                    <div class="float-end">
+                                                            <span class="badge text-bg-success me-2">Passed</span>
+                                                    </div>
+                                                </div>
+                                                <div class="card-text mt-2 validation-text collapse" id="uid-12">
+                                                    <div class="validation-text-inner">
+                                                                    <div class="font-monospace subsection-title mt-2">Files</div>
+                                                                    <div class="font-monospace entry-message section-files ">Using areaOfUse.ttl from test resources</div>
+                                                                    <div class="font-monospace subsection-title mt-2">SHACL</div>
+                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for _sources/srs/rules.shacl:
+  Validation Report
+  Conforms: True
+  </div>
+                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/srs/rules.shacl:
+ - Shape geosrs:SingleCRS_coordinateSystem_Shape: *none*
+ - Shape geosrs:CRS_datum_Shape: *none*
+ - Shape geosrs:GeodeticCRS_coordinateSystem_Shape: *none*
+ - Shape geosrs:CRS_datumEnsemble_Shape: *none*
+ - Shape geosrs:GeographicCRS_datum_Shape: *none*
+ - Shape geosrs:ParametricCRS_datum_Shape: *none*
+ - Shape geosrs:CRS_domainOfValidity_Shape: *none*
+ - Shape geosrs:SingleCRS_datum_Shape: *none*
+ - Shape geosrs:TemporalCRS_datum_Shape: *none*
+ - Shape geosrs:CRS_coordinateSystem_Shape: *none*
+ - Shape geosrs:GeographicCRS_coordinateSystem_Shape: *none*
+ - Shape geosrs:ProjectedCRS_conversion_Shape: *none*
+ - Shape geosrs:CompoundCRS_includesSRS_Shape: *none*
+</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card mb-2 validation-item require-fail">
+                                            <div class="card-body">
+                                                <div class="card-title mb-0">
+                                                    <button type="button" class="btn btn-sm btn-primary collapsed"
+                                                            data-bs-toggle="collapse" data-bs-target="#uid-13"
+                                                            aria-expanded="false" aria-controls="uid-13"
+                                                            style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                                                        <i class="bi bi-caret-right-fill caret"></i>
+                                                        Details
+                                                    </button>
+                                                    <a href="../../_sources/srs/tests/coordinateSystem-1-fail.ttl" target="_blank">coordinateSystem-1-fail.ttl</a>
+                                                    <span class="badge bg-secondary test_resource">Test resource</span>
+                                                        <span class="badge text-bg-info">Requires fail</span>
+                                                    <div class="float-end">
+                                                            <span class="badge text-bg-danger me-2">Failed</span>
+                                                    </div>
+                                                </div>
+                                                <div class="card-text mt-2 validation-text collapse" id="uid-13">
                                                     <div class="validation-text-inner">
                                                                     <div class="font-monospace subsection-title mt-2">General</div>
                                                                     <div class="font-monospace entry-message section-general text-danger">Test was expected to fail but it did not.</div>
@@ -642,18 +718,18 @@
   </div>
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/srs/rules.shacl:
  - Shape geosrs:SingleCRS_coordinateSystem_Shape: *none*
- - Shape geosrs:GeographicCRS_coordinateSystem_Shape: *none*
- - Shape geosrs:SingleCRS_datum_Shape: *none*
- - Shape geosrs:GeographicCRS_datum_Shape: *none*
- - Shape geosrs:ProjectedCRS_conversion_Shape: *none*
  - Shape geosrs:CRS_datum_Shape: *none*
  - Shape geosrs:GeodeticCRS_coordinateSystem_Shape: *none*
- - Shape geosrs:TemporalCRS_datum_Shape: *none*
- - Shape geosrs:ParametricCRS_datum_Shape: *none*
- - Shape geosrs:CompoundCRS_includesSRS_Shape: *none*
- - Shape geosrs:CRS_domainOfValidity_Shape: *none*
- - Shape geosrs:CRS_coordinateSystem_Shape: *none*
  - Shape geosrs:CRS_datumEnsemble_Shape: *none*
+ - Shape geosrs:GeographicCRS_datum_Shape: *none*
+ - Shape geosrs:ParametricCRS_datum_Shape: *none*
+ - Shape geosrs:CRS_domainOfValidity_Shape: *none*
+ - Shape geosrs:SingleCRS_datum_Shape: *none*
+ - Shape geosrs:TemporalCRS_datum_Shape: *none*
+ - Shape geosrs:CRS_coordinateSystem_Shape: *none*
+ - Shape geosrs:GeographicCRS_coordinateSystem_Shape: *none*
+ - Shape geosrs:ProjectedCRS_conversion_Shape: *none*
+ - Shape geosrs:CompoundCRS_includesSRS_Shape: *none*
 </div>
                                                     </div>
                                                 </div>
@@ -663,8 +739,8 @@
                                             <div class="card-body">
                                                 <div class="card-title mb-0">
                                                     <button type="button" class="btn btn-sm btn-primary collapsed"
-                                                            data-bs-toggle="collapse" data-bs-target="#uid-12"
-                                                            aria-expanded="false" aria-controls="uid-12"
+                                                            data-bs-toggle="collapse" data-bs-target="#uid-14"
+                                                            aria-expanded="false" aria-controls="uid-14"
                                                             style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
                                                         <i class="bi bi-caret-right-fill caret"></i>
                                                         Details
@@ -673,35 +749,17 @@
                                                     <span class="badge bg-secondary test_resource">Test resource</span>
                                                         <span class="badge text-bg-info">Requires fail</span>
                                                     <div class="float-end">
-                                                            <span class="badge text-bg-danger me-2">Failed</span>
+                                                            <span class="badge text-bg-success me-2">Passed</span>
                                                     </div>
                                                 </div>
-                                                <div class="card-text mt-2 validation-text collapse" id="uid-12">
+                                                <div class="card-text mt-2 validation-text collapse" id="uid-14">
                                                     <div class="validation-text-inner">
                                                                     <div class="font-monospace subsection-title mt-2">General</div>
-                                                                    <div class="font-monospace entry-message section-general text-danger">Test was expected to fail but it did not.</div>
-                                                                    <div class="font-monospace subsection-title mt-2">Files</div>
-                                                                    <div class="font-monospace entry-message section-files ">Using coordinateSystem-2-fail.ttl from test resources</div>
-                                                                    <div class="font-monospace subsection-title mt-2">SHACL</div>
-                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for _sources/srs/rules.shacl:
-  Validation Report
-  Conforms: True
-  </div>
-                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/srs/rules.shacl:
- - Shape geosrs:SingleCRS_coordinateSystem_Shape: *none*
- - Shape geosrs:GeographicCRS_coordinateSystem_Shape: *none*
- - Shape geosrs:SingleCRS_datum_Shape: *none*
- - Shape geosrs:GeographicCRS_datum_Shape: *none*
- - Shape geosrs:ProjectedCRS_conversion_Shape: *none*
- - Shape geosrs:CRS_datum_Shape: *none*
- - Shape geosrs:GeodeticCRS_coordinateSystem_Shape: *none*
- - Shape geosrs:TemporalCRS_datum_Shape: *none*
- - Shape geosrs:ParametricCRS_datum_Shape: *none*
- - Shape geosrs:CompoundCRS_includesSRS_Shape: *none*
- - Shape geosrs:CRS_domainOfValidity_Shape: *none*
- - Shape geosrs:CRS_coordinateSystem_Shape: *none*
- - Shape geosrs:CRS_datumEnsemble_Shape: *none*
-</div>
+                                                                    <div class="font-monospace entry-message section-general ">Test was expected to fail and it did.</div>
+                                                                    <div class="font-monospace subsection-title mt-2">Turtle</div>
+                                                                    <div class="font-monospace entry-message section-turtle text-danger">at line 13 of &lt;&gt;:
+Bad syntax (Prefix &quot;geosrs_cs:&quot; not bound) at ^ in:
+&quot;...b&#x27;\n\n&lt;http://www.opengis.net/def/crs/EPSG/0/23032_cs&gt; rdf:type &#x27;^b&#x27;geosrs_cs:CoordinateSystem .\nexsrs:mycs rdf:type geosrs_cs:C&#x27;...&quot;</div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -710,8 +768,8 @@
                                             <div class="card-body">
                                                 <div class="card-title mb-0">
                                                     <button type="button" class="btn btn-sm btn-primary collapsed"
-                                                            data-bs-toggle="collapse" data-bs-target="#uid-13"
-                                                            aria-expanded="false" aria-controls="uid-13"
+                                                            data-bs-toggle="collapse" data-bs-target="#uid-15"
+                                                            aria-expanded="false" aria-controls="uid-15"
                                                             style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
                                                         <i class="bi bi-caret-right-fill caret"></i>
                                                         Details
@@ -722,7 +780,7 @@
                                                             <span class="badge text-bg-success me-2">Passed</span>
                                                     </div>
                                                 </div>
-                                                <div class="card-text mt-2 validation-text collapse" id="uid-13">
+                                                <div class="card-text mt-2 validation-text collapse" id="uid-15">
                                                     <div class="validation-text-inner">
                                                                     <div class="font-monospace subsection-title mt-2">Files</div>
                                                                     <div class="font-monospace entry-message section-files ">Using coordinateSystem.ttl from test resources</div>
@@ -733,18 +791,18 @@
   </div>
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/srs/rules.shacl:
  - Shape geosrs:SingleCRS_coordinateSystem_Shape: *none*
- - Shape geosrs:GeographicCRS_coordinateSystem_Shape: *none*
- - Shape geosrs:SingleCRS_datum_Shape: *none*
- - Shape geosrs:GeographicCRS_datum_Shape: *none*
- - Shape geosrs:ProjectedCRS_conversion_Shape: *none*
  - Shape geosrs:CRS_datum_Shape: *none*
  - Shape geosrs:GeodeticCRS_coordinateSystem_Shape: *none*
- - Shape geosrs:TemporalCRS_datum_Shape: *none*
- - Shape geosrs:ParametricCRS_datum_Shape: *none*
- - Shape geosrs:CompoundCRS_includesSRS_Shape: *none*
- - Shape geosrs:CRS_domainOfValidity_Shape: *none*
- - Shape geosrs:CRS_coordinateSystem_Shape: *none*
  - Shape geosrs:CRS_datumEnsemble_Shape: *none*
+ - Shape geosrs:GeographicCRS_datum_Shape: *none*
+ - Shape geosrs:ParametricCRS_datum_Shape: *none*
+ - Shape geosrs:CRS_domainOfValidity_Shape: *none*
+ - Shape geosrs:SingleCRS_datum_Shape: *none*
+ - Shape geosrs:TemporalCRS_datum_Shape: *none*
+ - Shape geosrs:CRS_coordinateSystem_Shape: *none*
+ - Shape geosrs:GeographicCRS_coordinateSystem_Shape: *none*
+ - Shape geosrs:ProjectedCRS_conversion_Shape: *none*
+ - Shape geosrs:CompoundCRS_includesSRS_Shape: *none*
 </div>
                                                     </div>
                                                 </div>
@@ -754,8 +812,8 @@
                                             <div class="card-body">
                                                 <div class="card-title mb-0">
                                                     <button type="button" class="btn btn-sm btn-primary collapsed"
-                                                            data-bs-toggle="collapse" data-bs-target="#uid-14"
-                                                            aria-expanded="false" aria-controls="uid-14"
+                                                            data-bs-toggle="collapse" data-bs-target="#uid-16"
+                                                            aria-expanded="false" aria-controls="uid-16"
                                                             style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
                                                         <i class="bi bi-caret-right-fill caret"></i>
                                                         Details
@@ -766,7 +824,7 @@
                                                             <span class="badge text-bg-success me-2">Passed</span>
                                                     </div>
                                                 </div>
-                                                <div class="card-text mt-2 validation-text collapse" id="uid-14">
+                                                <div class="card-text mt-2 validation-text collapse" id="uid-16">
                                                     <div class="validation-text-inner">
                                                                     <div class="font-monospace subsection-title mt-2">Files</div>
                                                                     <div class="font-monospace entry-message section-files ">Using examples/srs.ttl from examples</div>
@@ -780,18 +838,18 @@
   </div>
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/srs/rules.shacl:
  - Shape geosrs:SingleCRS_coordinateSystem_Shape: *none*
- - Shape geosrs:GeographicCRS_coordinateSystem_Shape: *none*
- - Shape geosrs:SingleCRS_datum_Shape: *none*
- - Shape geosrs:GeographicCRS_datum_Shape: *none*
- - Shape geosrs:ProjectedCRS_conversion_Shape: *none*
  - Shape geosrs:CRS_datum_Shape: *none*
  - Shape geosrs:GeodeticCRS_coordinateSystem_Shape: *none*
- - Shape geosrs:TemporalCRS_datum_Shape: *none*
- - Shape geosrs:ParametricCRS_datum_Shape: *none*
- - Shape geosrs:CompoundCRS_includesSRS_Shape: *none*
- - Shape geosrs:CRS_domainOfValidity_Shape: *none*
- - Shape geosrs:CRS_coordinateSystem_Shape: *none*
  - Shape geosrs:CRS_datumEnsemble_Shape: *none*
+ - Shape geosrs:GeographicCRS_datum_Shape: *none*
+ - Shape geosrs:ParametricCRS_datum_Shape: *none*
+ - Shape geosrs:CRS_domainOfValidity_Shape: *none*
+ - Shape geosrs:SingleCRS_datum_Shape: *none*
+ - Shape geosrs:TemporalCRS_datum_Shape: *none*
+ - Shape geosrs:CRS_coordinateSystem_Shape: *none*
+ - Shape geosrs:GeographicCRS_coordinateSystem_Shape: *none*
+ - Shape geosrs:ProjectedCRS_conversion_Shape: *none*
+ - Shape geosrs:CompoundCRS_includesSRS_Shape: *none*
 </div>
                                                     </div>
                                                 </div>

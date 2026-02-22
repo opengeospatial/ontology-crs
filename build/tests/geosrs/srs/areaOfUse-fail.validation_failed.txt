@@ -1,7 +1,13 @@
 Validation report for ogc.geosrs.srs - SRS Core Ontology
-Generated 2026-02-22T01:27:43.581784+00:00
+Generated 2026-02-22T01:27:43.567328+00:00
+=== General ===
+
+** Validation error **
+Test was expected to fail but it did not.
+=== End General ===
+
 === Files ===
-Using coordinateSystem.ttl from test resources
+Using areaOfUse-fail.ttl from test resources
 === End Files ===
 
 === SHACL ===

@@ -374,7 +374,7 @@ for file in os.listdir(directory):
                         print(os.getcwd())
                         print("Exists? spec/figures/classes/"+str(row["Concept"].replace("geosrs:",""))+".svg"+" - "+str(os.path.exists("spec/figures/classes/"+str(row["Concept"].replace("geosrs:",""))+".svg")))
                         if os.path.exists(str(os.getcwd())+"/spec/figures/classes/"+str(row["Concept"].replace("geosrs:",""))+".svg"):
-                            adocdef+="|Image\n|image:{classes/"+str(row["Concept"].replace("geosrs:",""))+"}["+str(row["Concept"].replace("geosrs:",""))+" Image]\n\n"
+                            adocdef+="|Image\n|image:{classes/"+str(row["Concept"].replace("geosrs:",""))+".svg}["+str(row["Concept"].replace("geosrs:",""))+" Image]\n\n"
                         if row["Concept"] in examples:
                             adocdef+="|Example\n|"+examples[row["Concept"]]+"["+row["Concept"]+",window=_blank]\n\n"
                         if "DisjointClass" in row and row["DisjointClass"]!="":
@@ -435,7 +435,7 @@ for file in os.listdir(directory):
                         print(os.getcwd())
                         print("Exists? spec/figures/classes/"+str(row["Concept"].replace("geosrs:",""))+".svg"+" - "+str(os.path.exists("spec/figures/classes/"+str(row["Concept"].replace("geosrs:",""))+".svg")))
                         if os.path.exists(str(os.getcwd())+"/spec/figures/classes/"+str(row["Concept"].replace("geosrs:",""))+".svg"):
-                            adocdef+="|Image\n|image:{classes/"+str(row["Concept"].replace("geosrs:",""))+"}["+str(row["Concept"].replace("geosrs:",""))+" Image]\n\n"
+                            adocdef+="|Image\n|image:{classes/"+str(row["Concept"].replace("geosrs:",""))+".svg}["+str(row["Concept"].replace("geosrs:",""))+" Image]\n\n"
                         if row["Concept"] in examples:
                             adocdef+="|Example\n|"+examples[row["Concept"]]+"["+row["Concept"]+",window=_blank]\n\n"
                         if "DisjointClass" in row and row["DisjointClass"]!="":
@@ -516,7 +516,7 @@ for file in os.listdir(directory):
                                 propref=row["Domain"].replace("geosrs:",getNSForClass(row["Domain"],classToPrefix))
                                 adocdef+="|Domain\n|"+propref+"["+propref[propref.rfind("/")+1:]+"]\n\n"
                             if os.path.exists("spec/figures/classes/"+str(row["Concept"].replace("geosrs:",""))+".svg"):
-                                adocdef+="|Image\n|image:{classes/"+str(row["Concept"].replace("geosrs:",""))+"}["+str(row["Concept"].replace("geosrs:",""))+" Image]\n\n"
+                                adocdef+="|Image\n|image:{classes/"+str(row["Concept"].replace("geosrs:",""))+".svg}["+str(row["Concept"].replace("geosrs:",""))+" Image]\n\n"
                             if row["Concept"] in examples:
                                 adocdef+="|Example\n|"+examples[row["Concept"]]+"["+row["Concept"]+",window=_blank]\n\n"
                             if "PROJJSON" in row and row["PROJJSON"]!="":
@@ -579,7 +579,7 @@ for file in os.listdir(directory):
                                     propref=row["Domain"].replace("geosrs:",getNSForClass(row["Domain"],classToPrefix))
                                     adocdef+="|Domain\n|"+propref+"["+propref[propref.rfind("/")+1:]+"]\n\n"
                                 if os.path.exists("spec/figures/classes/"+str(row["Concept"].replace("geosrs:",""))+".svg"):
-                                    adocdef+="|Image\n|image:{classes/"+str(row["Concept"].replace("geosrs:",""))+"}["+str(row["Concept"].replace("geosrs:",""))+" Image]\n\n"
+                                    adocdef+="|Image\n|image:{classes/"+str(row["Concept"].replace("geosrs:",""))+".svg}["+str(row["Concept"].replace("geosrs:",""))+" Image]\n\n"
                                 if row["Concept"] in examples:
                                     adocdef+="|Example\n|"+examples[row["Concept"]]+"["+row["Concept"]+",window=_blank]\n\n"
                                 if "PROJJSON" in row and row["PROJJSON"]!="":
@@ -655,7 +655,7 @@ for file in os.listdir(directory):
                                     moduleToRequirements[prefixToModule["instances"]][row["Requirement"]]=[]
                                 moduleToRequirements[prefixToModule["instances"]][row["Requirement"]].append(row["Concept"])
                             if os.path.exists("spec/figures/classes/"+str(row["Concept"].replace("geosrs:",""))+".svg"):
-                                adocdef+="|Image\n|image:{classes/"+str(row["Concept"].replace("geosrs:",""))+"}["+str(row["Concept"].replace("geosrs:",""))+" Image]\n\n"
+                                adocdef+="|Image\n|image:{classes/"+str(row["Concept"].replace("geosrs:",""))+".svg}["+str(row["Concept"].replace("geosrs:",""))+" Image]\n\n"
                             if row["Concept"] in examples:
                                     adocdef+="|Example\n|"+examples[row["Concept"]]+"["+row["Concept"]+",window=_blank]\n\n"
                             if "PROJJSON" in row and row["PROJJSON"]!="":
@@ -697,7 +697,7 @@ for file in os.listdir(directory):
                                         moduleToRequirements[prefixToModule["instances"]][row["Requirement"]]=[]
                                     moduleToRequirements[prefixToModule["instances"]][row["Requirement"]].append(row["Concept"])
                                 if os.path.exists("spec/figures/classes/"+str(row["Concept"].replace("geosrs:",""))+".svg"):
-                                    adocdef+="|Image\n|image:{classes/"+str(row["Concept"].replace("geosrs:",""))+"}["+str(row["Concept"].replace("geosrs:",""))+" Image]\n\n"
+                                    adocdef+="|Image\n|image:{classes/"+str(row["Concept"].replace("geosrs:",""))+".svg}["+str(row["Concept"].replace("geosrs:",""))+" Image]\n\n"
                                 if row["Concept"] in examples:
                                     adocdef+="|Example\n|"+examples[row["Concept"]]+"["+row["Concept"]+",window=_blank]\n\n"
                                 if "PROJJSON" in row and row["PROJJSON"]!="":

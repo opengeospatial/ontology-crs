@@ -371,8 +371,9 @@ for file in os.listdir(directory):
                                 clsuri=row["SuperClass"].replace("geosrs:", getNSForClass(row["SuperClass"],classToPrefix))
                                 adocdef+=clsuri+"["+clsuri[clsuri.rfind("/")+1:]+"] "
                             adocdef+="\n\n"
+                        print(os.getcwd())
                         print("Exists? spec/figures/classes/"+str(row["Concept"].replace("srs:",""))+".svg"+" - "+str(os.path.exists("spec/figures/classes/"+str(row["Concept"].replace("srs:",""))+".svg")))
-                        if os.path.exists("spec/figures/classes/"+str(row["Concept"].replace("srs:",""))+".svg"):
+                        if os.path.exists(str(os.getcwd())+"/spec/figures/classes/"+str(row["Concept"].replace("srs:",""))+".svg"):
                             adocdef+="|Image\n|image:{classes/"+str(row["Concept"].replace("srs:",""))+"}["+str(row["Concept"].replace("srs:",""))+" Image]\n\n"
                         if row["Concept"] in examples:
                             adocdef+="|Example\n|"+examples[row["Concept"]]+"["+row["Concept"]+",window=_blank]\n\n"
@@ -431,8 +432,9 @@ for file in os.listdir(directory):
                                 clsuri=row["SuperClass"].replace("geosrs:", getNSForClass(row["SuperClass"],classToPrefix))
                                 adocdef+=clsuri+"["+clsuri[clsuri.rfind("/")+1:]+"] "
                             adocdef+="\n\n"
+                        print(os.getcwd())
                         print("Exists? spec/figures/classes/"+str(row["Concept"].replace("srs:",""))+".svg"+" - "+str(os.path.exists("spec/figures/classes/"+str(row["Concept"].replace("srs:",""))+".svg")))
-                        if os.path.exists("spec/figures/classes/"+str(row["Concept"].replace("srs:",""))+".svg"):
+                        if os.path.exists(str(os.getcwd())+"/spec/figures/classes/"+str(row["Concept"].replace("srs:",""))+".svg"):
                             adocdef+="|Image\n|image:{classes/"+str(row["Concept"].replace("srs:",""))+"}["+str(row["Concept"].replace("srs:",""))+" Image]\n\n"
                         if row["Concept"] in examples:
                             adocdef+="|Example\n|"+examples[row["Concept"]]+"["+row["Concept"]+",window=_blank]\n\n"

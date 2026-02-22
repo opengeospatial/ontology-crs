@@ -6,11 +6,11 @@
 geosrs:ParametricDatum_definingParameter_Shape a sh:NodeShape ;
     rdfs:label "CRS Ontology Shape S1"@en ;
     sh:property geosrs:ParametricDatum_definingParameter_Shape_Property ;
-    sh:targetClass geosrs:ParametricDatum .
+    sh:targetClass <https://w3id.org/geosrs/datum/ParametricDatum> .
 
 geosrs:ParametricDatum_definingParameter_Shape_Property a sh:PropertyShape ;
-    sh:class geosrs:DefiningParameter ;
+    sh:class <https://w3id.org/geosrs/datum/DefiningParameter> ;
     sh:message "A parametric datum should have at least one defining parameter"@en ;
     sh:minCount 1 ;
-    sh:path geosrs:definingParameter .
+    sh:path <https://w3id.org/geosrs/datum/definingParameter> .
 

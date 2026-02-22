@@ -11986,6 +11986,60 @@ In order to verify a graph a single validation file of SHACL shapes is provided 
   <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
   <td class="tableblock halign-left valign-top"><p class="tableblock">A parametric datum should have at least one defining parameter</p></td>
 </tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Shape S2</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">geosrs:Datum</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">geosrs:ellipsoid</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">geosrs:Ellipsoid</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">A datum should have exactly one Ellipsoid definition</p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Shape S3</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">geosrs:Datum</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">geosrs:primeMeridian</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">geosrs:PrimeMeridian</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">A datum should have at most one PrimeMeridian definition</p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Shape S4</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">geosrs:Ellipsoid</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">geosrs:semiMajorAxis</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">xsd:double</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">An ellipsoid should have only one semiMajorAxis description</p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Shape S5</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">geosrs:Ellipsoid</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">geosrs:semiMinorAxis</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">xsd:double</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">An ellipsoid should have only one semiMinorAxis description</p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Shape S6</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">geosrs:Ellipsoid</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">geosrs:eccentricity</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">xsd:double</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">An ellipsoid should have only one eccentricity description</p></td>
+</tr>
+<tr>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">Shape S7</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">geosrs:Ellipsoid</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">geosrs:inverseFlattening</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">xsd:double</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+  <td class="tableblock halign-left valign-top"><p class="tableblock">An ellipsoid should have only one inverseFlattening description</p></td>
+</tr>
 </tbody>
 </table>
 </section>
@@ -12262,7 +12316,7 @@ Actual References:
 </section>
 <div id="footer">
 <div id="footer-text">
-Last updated 2026-02-22 01:50:44 UTC
+Last updated 2026-02-22 12:29:37 UTC
 </div>
 </div>
 </body>

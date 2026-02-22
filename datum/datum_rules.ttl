@@ -3,10 +3,78 @@
 @prefix sh: <http://www.w3.org/ns/shacl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+geosrs:Datum_ellipsoid_Shape a sh:NodeShape ;
+    rdfs:label "CRS Ontology Shape S2"@en ;
+    sh:property geosrs:Datum_ellipsoid_Shape_Property ;
+    sh:targetClass <https://w3id.org/geosrs/datum/Datum> .
+
+geosrs:Datum_primeMeridian_Shape a sh:NodeShape ;
+    rdfs:label "CRS Ontology Shape S3"@en ;
+    sh:property geosrs:Datum_primeMeridian_Shape_Property ;
+    sh:targetClass <https://w3id.org/geosrs/datum/Datum> .
+
+geosrs:Ellipsoid_eccentricity_Shape a sh:NodeShape ;
+    rdfs:label "CRS Ontology Shape S6"@en ;
+    sh:property geosrs:Ellipsoid_eccentricity_Shape_Property ;
+    sh:targetClass <https://w3id.org/geosrs/datum/Ellipsoid> .
+
+geosrs:Ellipsoid_inverseFlattening_Shape a sh:NodeShape ;
+    rdfs:label "CRS Ontology Shape S7"@en ;
+    sh:property geosrs:Ellipsoid_inverseFlattening_Shape_Property ;
+    sh:targetClass <https://w3id.org/geosrs/datum/Ellipsoid> .
+
+geosrs:Ellipsoid_semiMajorAxis_Shape a sh:NodeShape ;
+    rdfs:label "CRS Ontology Shape S4"@en ;
+    sh:property geosrs:Ellipsoid_semiMajorAxis_Shape_Property ;
+    sh:targetClass <https://w3id.org/geosrs/datum/Ellipsoid> .
+
+geosrs:Ellipsoid_semiMinorAxis_Shape a sh:NodeShape ;
+    rdfs:label "CRS Ontology Shape S5"@en ;
+    sh:property geosrs:Ellipsoid_semiMinorAxis_Shape_Property ;
+    sh:targetClass <https://w3id.org/geosrs/datum/Ellipsoid> .
+
 geosrs:ParametricDatum_definingParameter_Shape a sh:NodeShape ;
     rdfs:label "CRS Ontology Shape S1"@en ;
     sh:property geosrs:ParametricDatum_definingParameter_Shape_Property ;
     sh:targetClass <https://w3id.org/geosrs/datum/ParametricDatum> .
+
+geosrs:Datum_ellipsoid_Shape_Property a sh:PropertyShape ;
+    sh:class <https://w3id.org/geosrs/datum/Ellipsoid> ;
+    sh:maxCount 1 ;
+    sh:message "A datum should have exactly one Ellipsoid definition"@en ;
+    sh:minCount 1 ;
+    sh:path <https://w3id.org/geosrs/datum/ellipsoid> .
+
+geosrs:Datum_primeMeridian_Shape_Property a sh:PropertyShape ;
+    sh:class <https://w3id.org/geosrs/datum/PrimeMeridian> ;
+    sh:maxCount 1 ;
+    sh:message "A datum should have at most one PrimeMeridian definition"@en ;
+    sh:minCount 1 ;
+    sh:path <https://w3id.org/geosrs/datum/primeMeridian> .
+
+geosrs:Ellipsoid_eccentricity_Shape_Property a sh:PropertyShape ;
+    sh:class <xsd:double> ;
+    sh:maxCount 1 ;
+    sh:message "An ellipsoid should have only one eccentricity description"@en ;
+    sh:path <https://w3id.org/geosrs/datum/eccentricity> .
+
+geosrs:Ellipsoid_inverseFlattening_Shape_Property a sh:PropertyShape ;
+    sh:class <xsd:double> ;
+    sh:maxCount 1 ;
+    sh:message "An ellipsoid should have only one inverseFlattening description"@en ;
+    sh:path <https://w3id.org/geosrs/datum/inverseFlattening> .
+
+geosrs:Ellipsoid_semiMajorAxis_Shape_Property a sh:PropertyShape ;
+    sh:class <xsd:double> ;
+    sh:maxCount 1 ;
+    sh:message "An ellipsoid should have only one semiMajorAxis description"@en ;
+    sh:path <https://w3id.org/geosrs/datum/semiMajorAxis> .
+
+geosrs:Ellipsoid_semiMinorAxis_Shape_Property a sh:PropertyShape ;
+    sh:class <xsd:double> ;
+    sh:maxCount 1 ;
+    sh:message "An ellipsoid should have only one semiMinorAxis description"@en ;
+    sh:path <https://w3id.org/geosrs/datum/semiMinorAxis> .
 
 geosrs:ParametricDatum_definingParameter_Shape_Property a sh:PropertyShape ;
     sh:class <https://w3id.org/geosrs/datum/DefiningParameter> ;

@@ -62,6 +62,18 @@ geosrs_cs:GalacticCoordinateSystem a owl:Class ;
         geosrs_cs:CelestialCoordinateSystem ;
     skos:definition "A coordinate system with the Sun as its center, the primary direction aligned with the approximate center of the Milky Way Galaxy, and the fundamental plane parallel to an approximation of the galactic plane but offset to its north."@en .
 
+geosrs_cs:GeocentricX a owl:NamedIndividual,
+        geosrs:AxisDirection ;
+    rdfs:label "Geocentric X"@en .
+
+geosrs_cs:GeocentricY a owl:NamedIndividual,
+        geosrs:AxisDirection ;
+    rdfs:label "Geocentric Y"@en .
+
+geosrs_cs:GeocentricZ a owl:NamedIndividual,
+        geosrs:AxisDirection ;
+    rdfs:label "Geocentric Z"@en .
+
 geosrs_cs:GeographicalCoordinateSystem a owl:Class ;
     rdfs:label "Geographic Coordinate System"@en ;
     rdfs:subClassOf geosrs:SphericalCoordinateSystem,

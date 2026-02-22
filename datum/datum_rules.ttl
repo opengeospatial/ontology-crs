@@ -53,25 +53,25 @@ geosrs:Datum_primeMeridian_Shape_Property a sh:PropertyShape ;
     sh:path <https://w3id.org/geosrs/datum/primeMeridian> .
 
 geosrs:Ellipsoid_eccentricity_Shape_Property a sh:PropertyShape ;
-    sh:class <xsd:double> ;
+    sh:class xsd:double ;
     sh:maxCount 1 ;
     sh:message "An ellipsoid should have only one eccentricity description"@en ;
     sh:path <https://w3id.org/geosrs/datum/eccentricity> .
 
 geosrs:Ellipsoid_inverseFlattening_Shape_Property a sh:PropertyShape ;
-    sh:class <xsd:double> ;
+    sh:class xsd:double ;
     sh:maxCount 1 ;
     sh:message "An ellipsoid should have only one inverseFlattening description"@en ;
     sh:path <https://w3id.org/geosrs/datum/inverseFlattening> .
 
 geosrs:Ellipsoid_semiMajorAxis_Shape_Property a sh:PropertyShape ;
-    sh:class <xsd:double> ;
+    sh:class xsd:double ;
     sh:maxCount 1 ;
     sh:message "An ellipsoid should have only one semiMajorAxis description"@en ;
     sh:path <https://w3id.org/geosrs/datum/semiMajorAxis> .
 
 geosrs:Ellipsoid_semiMinorAxis_Shape_Property a sh:PropertyShape ;
-    sh:class <xsd:double> ;
+    sh:class xsd:double ;
     sh:maxCount 1 ;
     sh:message "An ellipsoid should have only one semiMinorAxis description"@en ;
     sh:path <https://w3id.org/geosrs/datum/semiMinorAxis> .

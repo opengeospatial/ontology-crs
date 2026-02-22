@@ -16,10 +16,30 @@ geosrs_datum:AiryModified1849 a owl:NamedIndividual,
     rdfs:label "Ariy Modified 1849"@en ;
     skos:definition "Airy 1849 Modified Ellipsoid"@en .
 
+geosrs_datum:AthensPrimeMeridian a owl:NamedIndividual,
+        geosrs:PrimeMeridian ;
+    rdfs:label "Athens Prime Meridian"@en ;
+    skos:definition "The prime meridian of earth going through Athens"@en .
+
 geosrs_datum:AustralianNationalSpheroid a owl:NamedIndividual,
         geosrs:Ellipsoid ;
     rdfs:label "Australian National Spheroid"@en ;
     skos:definition "Australian National Spheroid"@en .
+
+geosrs_datum:BernPrimeMeridian a owl:NamedIndividual,
+        geosrs:PrimeMeridian ;
+    rdfs:label "Bern Prime Meridian"@en ;
+    skos:definition "The prime meridian of earth going through Bern"@en .
+
+geosrs_datum:BogotaPrimeMeridian a owl:NamedIndividual,
+        geosrs:PrimeMeridian ;
+    rdfs:label "Bogota Prime Meridian"@en ;
+    skos:definition "The prime meridian of earth going through Bogota"@en .
+
+geosrs_datum:BrusselsPrimeMeridian a owl:NamedIndividual,
+        geosrs:PrimeMeridian ;
+    rdfs:label "Brussels Prime Meridian"@en ;
+    skos:definition "The prime meridian of earth going through Brussels"@en .
 
 geosrs_datum:CGCS2000 a owl:NamedIndividual,
         geosrs:Ellipsoid ;
@@ -81,6 +101,11 @@ geosrs_datum:Everest1930 a owl:NamedIndividual,
     rdfs:label "Everest 1930"@en ;
     skos:definition "Everest 1930 Spheroid"@en .
 
+geosrs_datum:FerroPrimeMeridian a owl:NamedIndividual,
+        geosrs:PrimeMeridian ;
+    rdfs:label "Ferro Prime Meridian"@en ;
+    skos:definition "The prime meridian of earth going through Ferro"@en .
+
 geosrs_datum:GRS1980 a owl:NamedIndividual,
         geosrs:Ellipsoid ;
     rdfs:label "GRS 1980"@en ;
@@ -95,6 +120,11 @@ geosrs_datum:GSK-2011 a owl:NamedIndividual,
         geosrs:Ellipsoid ;
     rdfs:label "GSK-2011"@en ;
     skos:definition "GSK-2011 Spheroid"@en .
+
+geosrs_datum:GreenwichPrimeMeridian a owl:NamedIndividual,
+        geosrs:PrimeMeridian ;
+    rdfs:label "Greenwich Prime Meridian"@en ;
+    skos:definition "The prime meridian of earth going through Greenwich"@en .
 
 geosrs_datum:Helmert1906 a owl:NamedIndividual,
         geosrs:Ellipsoid ;
@@ -111,20 +141,60 @@ geosrs_datum:International1924 a owl:NamedIndividual,
     rdfs:label "International 1924"@en ;
     skos:definition "International 1924 Ellipsoid"@en .
 
+geosrs_datum:JakartaPrimeMeridian a owl:NamedIndividual,
+        geosrs:PrimeMeridian ;
+    rdfs:label "Jakarta Prime Meridian"@en ;
+    skos:definition "The prime meridian of earth going through Jakarta"@en .
+
 geosrs_datum:Krassowsky1940 a owl:NamedIndividual,
         geosrs:Ellipsoid ;
     rdfs:label "Krassowsky 1940"@en ;
     skos:definition "Krassowsky 1940 Spheroid"@en .
+
+geosrs_datum:LisbonPrimeMeridian a owl:NamedIndividual,
+        geosrs:PrimeMeridian ;
+    rdfs:label "Lisbon Prime Meridian"@en ;
+    skos:definition "The prime meridian of earth going through Lisbon"@en .
+
+geosrs_datum:MadridPrimeMeridian a owl:NamedIndividual,
+        geosrs:PrimeMeridian ;
+    rdfs:label "Madrid Prime Meridian"@en ;
+    skos:definition "The prime meridian of earth going through Madrid"@en .
+
+geosrs_datum:OsloPrimeMeridian a owl:NamedIndividual,
+        geosrs:PrimeMeridian ;
+    rdfs:label "Oslo Prime Meridian"@en ;
+    skos:definition "The prime meridian of earth going through Oslo"@en .
 
 geosrs_datum:PZ90 a owl:NamedIndividual,
         geosrs:Ellipsoid ;
     rdfs:label "PS 90"@en ;
     skos:definition "PZ 90 Ellipsoid"@en .
 
+geosrs_datum:ParisPrimeMeridian a owl:NamedIndividual,
+        geosrs:PrimeMeridian ;
+    rdfs:label "Paris Prime Meridian"@en ;
+    skos:definition "The prime meridian of earth going through Paris"@en .
+
+geosrs_datum:ParisRGSPrimeMeridian a owl:NamedIndividual,
+        geosrs:PrimeMeridian ;
+    rdfs:label "Paris RGS Prime Meridian"@en ;
+    skos:definition "The prime meridian of earth going through Paris RGS"@en .
+
 geosrs_datum:Plessis1817 a owl:NamedIndividual,
         geosrs:Ellipsoid ;
     rdfs:label "Plessis 1817"@en ;
     skos:definition "Plessis 1817 Spheroid"@en .
+
+geosrs_datum:RomePrimeMeridian a owl:NamedIndividual,
+        geosrs:PrimeMeridian ;
+    rdfs:label "Rome Prime Meridian"@en ;
+    skos:definition "The prime meridian of earth going through Rome"@en .
+
+geosrs_datum:StockholmPrimeMeridian a owl:NamedIndividual,
+        geosrs:PrimeMeridian ;
+    rdfs:label "Stockholm Prime Meridian"@en ;
+    skos:definition "The prime meridian of earth going through Stockholm"@en .
 
 geosrs_datum:Struve1860 a owl:NamedIndividual,
         geosrs:Ellipsoid ;

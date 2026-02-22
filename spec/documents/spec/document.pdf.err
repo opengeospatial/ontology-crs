@@ -1,3 +1,213 @@
+Image not available. URI: file:////home/runner/work/ontology-crs/ontology-crs/docs/spec/documents/spec/_tmp_images_20b2b2ec-3582-4ce7-93c5-ad0e53f2661f/34ff6bf5-8111-4c1e-8b37-2366aa85f584.octet-stream. Reason: org.apache.xmlgraphics.image.loader.ImageException: The file format is not supported. No ImagePreloader found for file:////home/runner/work/ontology-crs/ontology-crs/docs/spec/documents/spec/_tmp_images_20b2b2ec-3582-4ce7-93c5-ad0e53f2661f/34ff6bf5-8111-4c1e-8b37-2366aa85f584.octet-stream (See position 2333:512)
+org.apache.xmlgraphics.image.loader.ImageException: The file format is not supported. No ImagePreloader found for file:////home/runner/work/ontology-crs/ontology-crs/docs/spec/documents/spec/_tmp_images_20b2b2ec-3582-4ce7-93c5-ad0e53f2661f/34ff6bf5-8111-4c1e-8b37-2366aa85f584.octet-stream
+	at org.apache.xmlgraphics.image.loader.ImageManager.preloadImage(ImageManager.java:181)
+	at org.apache.xmlgraphics.image.loader.cache.ImageCache.needImageInfo(ImageCache.java:127)
+	at org.apache.xmlgraphics.image.loader.ImageManager.getImageInfo(ImageManager.java:123)
+	at org.apache.fop.fo.flow.ExternalGraphic.bind(ExternalGraphic.java:81)
+	at org.apache.fop.fo.FObj.processNode(FObj.java:131)
+	at org.apache.fop.fo.FOTreeBuilder$MainFOHandler.startElement(FOTreeBuilder.java:321)
+	at org.apache.fop.fo.FOTreeBuilder$2.run(FOTreeBuilder.java:185)
+	at org.apache.fop.fo.FOTreeBuilder$2.run(FOTreeBuilder.java:182)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:319)
+	at org.apache.fop.fo.FOTreeBuilder.startElement(FOTreeBuilder.java:181)
+	at org.apache.xalan.transformer.TransformerIdentityImpl.startElement(TransformerIdentityImpl.java:1120)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.startElement(AbstractSAXParser.java:518)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractXMLDocumentParser.emptyElement(AbstractXMLDocumentParser.java:183)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.scanStartElement(XMLNSDocumentScannerImpl.java:353)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2726)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:605)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:114)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:542)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:889)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:825)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1224)
+	at org.apache.xalan.transformer.TransformerIdentityImpl.transform(TransformerIdentityImpl.java:519)
+	at org.metanorma.fop.PDFGenerator.runFOP(PDFGenerator.java:681)
+	at org.metanorma.fop.PDFGenerator.convertmn2pdf(PDFGenerator.java:507)
+	at org.metanorma.fop.PDFGenerator.process(PDFGenerator.java:336)
+	at org.metanorma.fop.mn2pdf.main(mn2pdf.java:349)
+
+Image not available. URI: file:////home/runner/work/ontology-crs/ontology-crs/docs/spec/documents/spec/_tmp_images_20b2b2ec-3582-4ce7-93c5-ad0e53f2661f/62a8a0eb-10c5-4aad-922c-3d04582a743e.octet-stream. Reason: org.apache.xmlgraphics.image.loader.ImageException: The file format is not supported. No ImagePreloader found for file:////home/runner/work/ontology-crs/ontology-crs/docs/spec/documents/spec/_tmp_images_20b2b2ec-3582-4ce7-93c5-ad0e53f2661f/62a8a0eb-10c5-4aad-922c-3d04582a743e.octet-stream (See position 2544:521)
+org.apache.xmlgraphics.image.loader.ImageException: The file format is not supported. No ImagePreloader found for file:////home/runner/work/ontology-crs/ontology-crs/docs/spec/documents/spec/_tmp_images_20b2b2ec-3582-4ce7-93c5-ad0e53f2661f/62a8a0eb-10c5-4aad-922c-3d04582a743e.octet-stream
+	at org.apache.xmlgraphics.image.loader.ImageManager.preloadImage(ImageManager.java:181)
+	at org.apache.xmlgraphics.image.loader.cache.ImageCache.needImageInfo(ImageCache.java:127)
+	at org.apache.xmlgraphics.image.loader.ImageManager.getImageInfo(ImageManager.java:123)
+	at org.apache.fop.fo.flow.ExternalGraphic.bind(ExternalGraphic.java:81)
+	at org.apache.fop.fo.FObj.processNode(FObj.java:131)
+	at org.apache.fop.fo.FOTreeBuilder$MainFOHandler.startElement(FOTreeBuilder.java:321)
+	at org.apache.fop.fo.FOTreeBuilder$2.run(FOTreeBuilder.java:185)
+	at org.apache.fop.fo.FOTreeBuilder$2.run(FOTreeBuilder.java:182)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:319)
+	at org.apache.fop.fo.FOTreeBuilder.startElement(FOTreeBuilder.java:181)
+	at org.apache.xalan.transformer.TransformerIdentityImpl.startElement(TransformerIdentityImpl.java:1120)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.startElement(AbstractSAXParser.java:518)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractXMLDocumentParser.emptyElement(AbstractXMLDocumentParser.java:183)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.scanStartElement(XMLNSDocumentScannerImpl.java:353)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2726)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:605)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:114)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:542)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:889)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:825)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1224)
+	at org.apache.xalan.transformer.TransformerIdentityImpl.transform(TransformerIdentityImpl.java:519)
+	at org.metanorma.fop.PDFGenerator.runFOP(PDFGenerator.java:681)
+	at org.metanorma.fop.PDFGenerator.convertmn2pdf(PDFGenerator.java:507)
+	at org.metanorma.fop.PDFGenerator.process(PDFGenerator.java:336)
+	at org.metanorma.fop.mn2pdf.main(mn2pdf.java:349)
+
+Image not available. URI: file:////home/runner/work/ontology-crs/ontology-crs/docs/spec/documents/spec/_tmp_images_20b2b2ec-3582-4ce7-93c5-ad0e53f2661f/cc244404-b003-4926-8bbc-948b9fcf5c88.octet-stream. Reason: org.apache.xmlgraphics.image.loader.ImageException: The file format is not supported. No ImagePreloader found for file:////home/runner/work/ontology-crs/ontology-crs/docs/spec/documents/spec/_tmp_images_20b2b2ec-3582-4ce7-93c5-ad0e53f2661f/cc244404-b003-4926-8bbc-948b9fcf5c88.octet-stream (See position 3035:518)
+org.apache.xmlgraphics.image.loader.ImageException: The file format is not supported. No ImagePreloader found for file:////home/runner/work/ontology-crs/ontology-crs/docs/spec/documents/spec/_tmp_images_20b2b2ec-3582-4ce7-93c5-ad0e53f2661f/cc244404-b003-4926-8bbc-948b9fcf5c88.octet-stream
+	at org.apache.xmlgraphics.image.loader.ImageManager.preloadImage(ImageManager.java:181)
+	at org.apache.xmlgraphics.image.loader.cache.ImageCache.needImageInfo(ImageCache.java:127)
+	at org.apache.xmlgraphics.image.loader.ImageManager.getImageInfo(ImageManager.java:123)
+	at org.apache.fop.fo.flow.ExternalGraphic.bind(ExternalGraphic.java:81)
+	at org.apache.fop.fo.FObj.processNode(FObj.java:131)
+	at org.apache.fop.fo.FOTreeBuilder$MainFOHandler.startElement(FOTreeBuilder.java:321)
+	at org.apache.fop.fo.FOTreeBuilder$2.run(FOTreeBuilder.java:185)
+	at org.apache.fop.fo.FOTreeBuilder$2.run(FOTreeBuilder.java:182)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:319)
+	at org.apache.fop.fo.FOTreeBuilder.startElement(FOTreeBuilder.java:181)
+	at org.apache.xalan.transformer.TransformerIdentityImpl.startElement(TransformerIdentityImpl.java:1120)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.startElement(AbstractSAXParser.java:518)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractXMLDocumentParser.emptyElement(AbstractXMLDocumentParser.java:183)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.scanStartElement(XMLNSDocumentScannerImpl.java:353)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2726)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:605)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:114)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:542)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:889)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:825)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1224)
+	at org.apache.xalan.transformer.TransformerIdentityImpl.transform(TransformerIdentityImpl.java:519)
+	at org.metanorma.fop.PDFGenerator.runFOP(PDFGenerator.java:681)
+	at org.metanorma.fop.PDFGenerator.convertmn2pdf(PDFGenerator.java:507)
+	at org.metanorma.fop.PDFGenerator.process(PDFGenerator.java:336)
+	at org.metanorma.fop.mn2pdf.main(mn2pdf.java:349)
+
+Image not available. URI: file:////home/runner/work/ontology-crs/ontology-crs/docs/spec/documents/spec/_tmp_images_20b2b2ec-3582-4ce7-93c5-ad0e53f2661f/36f2d041-3fe1-407e-a7cc-0c51dad8cc9d.octet-stream. Reason: org.apache.xmlgraphics.image.loader.ImageException: The file format is not supported. No ImagePreloader found for file:////home/runner/work/ontology-crs/ontology-crs/docs/spec/documents/spec/_tmp_images_20b2b2ec-3582-4ce7-93c5-ad0e53f2661f/36f2d041-3fe1-407e-a7cc-0c51dad8cc9d.octet-stream (See position 3051:521)
+org.apache.xmlgraphics.image.loader.ImageException: The file format is not supported. No ImagePreloader found for file:////home/runner/work/ontology-crs/ontology-crs/docs/spec/documents/spec/_tmp_images_20b2b2ec-3582-4ce7-93c5-ad0e53f2661f/36f2d041-3fe1-407e-a7cc-0c51dad8cc9d.octet-stream
+	at org.apache.xmlgraphics.image.loader.ImageManager.preloadImage(ImageManager.java:181)
+	at org.apache.xmlgraphics.image.loader.cache.ImageCache.needImageInfo(ImageCache.java:127)
+	at org.apache.xmlgraphics.image.loader.ImageManager.getImageInfo(ImageManager.java:123)
+	at org.apache.fop.fo.flow.ExternalGraphic.bind(ExternalGraphic.java:81)
+	at org.apache.fop.fo.FObj.processNode(FObj.java:131)
+	at org.apache.fop.fo.FOTreeBuilder$MainFOHandler.startElement(FOTreeBuilder.java:321)
+	at org.apache.fop.fo.FOTreeBuilder$2.run(FOTreeBuilder.java:185)
+	at org.apache.fop.fo.FOTreeBuilder$2.run(FOTreeBuilder.java:182)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:319)
+	at org.apache.fop.fo.FOTreeBuilder.startElement(FOTreeBuilder.java:181)
+	at org.apache.xalan.transformer.TransformerIdentityImpl.startElement(TransformerIdentityImpl.java:1120)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.startElement(AbstractSAXParser.java:518)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractXMLDocumentParser.emptyElement(AbstractXMLDocumentParser.java:183)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.scanStartElement(XMLNSDocumentScannerImpl.java:353)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2726)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:605)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:114)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:542)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:889)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:825)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1224)
+	at org.apache.xalan.transformer.TransformerIdentityImpl.transform(TransformerIdentityImpl.java:519)
+	at org.metanorma.fop.PDFGenerator.runFOP(PDFGenerator.java:681)
+	at org.metanorma.fop.PDFGenerator.convertmn2pdf(PDFGenerator.java:507)
+	at org.metanorma.fop.PDFGenerator.process(PDFGenerator.java:336)
+	at org.metanorma.fop.mn2pdf.main(mn2pdf.java:349)
+
+Image not available. URI: file:////home/runner/work/ontology-crs/ontology-crs/docs/spec/documents/spec/_tmp_images_20b2b2ec-3582-4ce7-93c5-ad0e53f2661f/a167c894-446d-4281-9d4e-05026a235445.octet-stream. Reason: org.apache.xmlgraphics.image.loader.ImageException: The file format is not supported. No ImagePreloader found for file:////home/runner/work/ontology-crs/ontology-crs/docs/spec/documents/spec/_tmp_images_20b2b2ec-3582-4ce7-93c5-ad0e53f2661f/a167c894-446d-4281-9d4e-05026a235445.octet-stream (See position 3663:507)
+org.apache.xmlgraphics.image.loader.ImageException: The file format is not supported. No ImagePreloader found for file:////home/runner/work/ontology-crs/ontology-crs/docs/spec/documents/spec/_tmp_images_20b2b2ec-3582-4ce7-93c5-ad0e53f2661f/a167c894-446d-4281-9d4e-05026a235445.octet-stream
+	at org.apache.xmlgraphics.image.loader.ImageManager.preloadImage(ImageManager.java:181)
+	at org.apache.xmlgraphics.image.loader.cache.ImageCache.needImageInfo(ImageCache.java:127)
+	at org.apache.xmlgraphics.image.loader.ImageManager.getImageInfo(ImageManager.java:123)
+	at org.apache.fop.fo.flow.ExternalGraphic.bind(ExternalGraphic.java:81)
+	at org.apache.fop.fo.FObj.processNode(FObj.java:131)
+	at org.apache.fop.fo.FOTreeBuilder$MainFOHandler.startElement(FOTreeBuilder.java:321)
+	at org.apache.fop.fo.FOTreeBuilder$2.run(FOTreeBuilder.java:185)
+	at org.apache.fop.fo.FOTreeBuilder$2.run(FOTreeBuilder.java:182)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:319)
+	at org.apache.fop.fo.FOTreeBuilder.startElement(FOTreeBuilder.java:181)
+	at org.apache.xalan.transformer.TransformerIdentityImpl.startElement(TransformerIdentityImpl.java:1120)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.startElement(AbstractSAXParser.java:518)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractXMLDocumentParser.emptyElement(AbstractXMLDocumentParser.java:183)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.scanStartElement(XMLNSDocumentScannerImpl.java:353)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2726)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:605)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:114)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:542)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:889)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:825)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1224)
+	at org.apache.xalan.transformer.TransformerIdentityImpl.transform(TransformerIdentityImpl.java:519)
+	at org.metanorma.fop.PDFGenerator.runFOP(PDFGenerator.java:681)
+	at org.metanorma.fop.PDFGenerator.convertmn2pdf(PDFGenerator.java:507)
+	at org.metanorma.fop.PDFGenerator.process(PDFGenerator.java:336)
+	at org.metanorma.fop.mn2pdf.main(mn2pdf.java:349)
+
+Image not available. URI: file:////home/runner/work/ontology-crs/ontology-crs/docs/spec/documents/spec/_tmp_images_20b2b2ec-3582-4ce7-93c5-ad0e53f2661f/8dc100e5-8967-4772-b43b-c02fb07ba0f7.octet-stream. Reason: org.apache.xmlgraphics.image.loader.ImageException: The file format is not supported. No ImagePreloader found for file:////home/runner/work/ontology-crs/ontology-crs/docs/spec/documents/spec/_tmp_images_20b2b2ec-3582-4ce7-93c5-ad0e53f2661f/8dc100e5-8967-4772-b43b-c02fb07ba0f7.octet-stream (See position 4304:509)
+org.apache.xmlgraphics.image.loader.ImageException: The file format is not supported. No ImagePreloader found for file:////home/runner/work/ontology-crs/ontology-crs/docs/spec/documents/spec/_tmp_images_20b2b2ec-3582-4ce7-93c5-ad0e53f2661f/8dc100e5-8967-4772-b43b-c02fb07ba0f7.octet-stream
+	at org.apache.xmlgraphics.image.loader.ImageManager.preloadImage(ImageManager.java:181)
+	at org.apache.xmlgraphics.image.loader.cache.ImageCache.needImageInfo(ImageCache.java:127)
+	at org.apache.xmlgraphics.image.loader.ImageManager.getImageInfo(ImageManager.java:123)
+	at org.apache.fop.fo.flow.ExternalGraphic.bind(ExternalGraphic.java:81)
+	at org.apache.fop.fo.FObj.processNode(FObj.java:131)
+	at org.apache.fop.fo.FOTreeBuilder$MainFOHandler.startElement(FOTreeBuilder.java:321)
+	at org.apache.fop.fo.FOTreeBuilder$2.run(FOTreeBuilder.java:185)
+	at org.apache.fop.fo.FOTreeBuilder$2.run(FOTreeBuilder.java:182)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:319)
+	at org.apache.fop.fo.FOTreeBuilder.startElement(FOTreeBuilder.java:181)
+	at org.apache.xalan.transformer.TransformerIdentityImpl.startElement(TransformerIdentityImpl.java:1120)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.startElement(AbstractSAXParser.java:518)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractXMLDocumentParser.emptyElement(AbstractXMLDocumentParser.java:183)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.scanStartElement(XMLNSDocumentScannerImpl.java:353)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2726)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:605)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:114)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:542)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:889)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:825)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1224)
+	at org.apache.xalan.transformer.TransformerIdentityImpl.transform(TransformerIdentityImpl.java:519)
+	at org.metanorma.fop.PDFGenerator.runFOP(PDFGenerator.java:681)
+	at org.metanorma.fop.PDFGenerator.convertmn2pdf(PDFGenerator.java:507)
+	at org.metanorma.fop.PDFGenerator.process(PDFGenerator.java:336)
+	at org.metanorma.fop.mn2pdf.main(mn2pdf.java:349)
+
+Image not available. URI: file:////home/runner/work/ontology-crs/ontology-crs/docs/spec/documents/spec/_tmp_images_20b2b2ec-3582-4ce7-93c5-ad0e53f2661f/c1bfc859-2c76-41b2-9480-e1006a5287f1.octet-stream. Reason: org.apache.xmlgraphics.image.loader.ImageException: The file format is not supported. No ImagePreloader found for file:////home/runner/work/ontology-crs/ontology-crs/docs/spec/documents/spec/_tmp_images_20b2b2ec-3582-4ce7-93c5-ad0e53f2661f/c1bfc859-2c76-41b2-9480-e1006a5287f1.octet-stream (See position 4510:511)
+org.apache.xmlgraphics.image.loader.ImageException: The file format is not supported. No ImagePreloader found for file:////home/runner/work/ontology-crs/ontology-crs/docs/spec/documents/spec/_tmp_images_20b2b2ec-3582-4ce7-93c5-ad0e53f2661f/c1bfc859-2c76-41b2-9480-e1006a5287f1.octet-stream
+	at org.apache.xmlgraphics.image.loader.ImageManager.preloadImage(ImageManager.java:181)
+	at org.apache.xmlgraphics.image.loader.cache.ImageCache.needImageInfo(ImageCache.java:127)
+	at org.apache.xmlgraphics.image.loader.ImageManager.getImageInfo(ImageManager.java:123)
+	at org.apache.fop.fo.flow.ExternalGraphic.bind(ExternalGraphic.java:81)
+	at org.apache.fop.fo.FObj.processNode(FObj.java:131)
+	at org.apache.fop.fo.FOTreeBuilder$MainFOHandler.startElement(FOTreeBuilder.java:321)
+	at org.apache.fop.fo.FOTreeBuilder$2.run(FOTreeBuilder.java:185)
+	at org.apache.fop.fo.FOTreeBuilder$2.run(FOTreeBuilder.java:182)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:319)
+	at org.apache.fop.fo.FOTreeBuilder.startElement(FOTreeBuilder.java:181)
+	at org.apache.xalan.transformer.TransformerIdentityImpl.startElement(TransformerIdentityImpl.java:1120)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.startElement(AbstractSAXParser.java:518)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractXMLDocumentParser.emptyElement(AbstractXMLDocumentParser.java:183)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.scanStartElement(XMLNSDocumentScannerImpl.java:353)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2726)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:605)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:114)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:542)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:889)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:825)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1224)
+	at org.apache.xalan.transformer.TransformerIdentityImpl.transform(TransformerIdentityImpl.java:519)
+	at org.metanorma.fop.PDFGenerator.runFOP(PDFGenerator.java:681)
+	at org.metanorma.fop.PDFGenerator.convertmn2pdf(PDFGenerator.java:507)
+	at org.metanorma.fop.PDFGenerator.process(PDFGenerator.java:336)
+	at org.metanorma.fop.mn2pdf.main(mn2pdf.java:349)
+
 Bookmarks: Unresolved ID reference "_007f0895-6055-0586-9ec2-6c44b1ed796c" found.
 Bookmarks: Unresolved ID reference "_6c4825b5-5b33-43be-8438-e76319911fee" found.
 Bookmarks: Unresolved ID reference "_3d15275c-919c-d1ba-27ea-114eebd6f241" found.
@@ -11,25 +221,25 @@ Page v: Unresolved ID reference "_ba73eec6-8dc2-cb09-926b-80707f39c68b" found.
 Page 26: Unresolved ID reference "Class__geosrs" found.
 Page 27: Unresolved ID reference "Class__geosrs" found.
 Page 28: Unresolved ID reference "Class__geosrs" found.
-Page 34: Unresolved ID reference "Class__geosrs" found.
+Page 33: Unresolved ID reference "Class__geosrs" found.
+Page 37: Unresolved ID reference "Class__geosrs" found.
 Page 38: Unresolved ID reference "Class__geosrs" found.
-Page 39: Unresolved ID reference "Class__geosrs" found.
-Page 48: Unresolved ID reference "Class__geosrs" found.
-Page 50: Unresolved ID reference "Class__geosrs" found.
-Page 55: Unresolved ID reference "Class__geosrs" found.
-Page 132: Unresolved ID reference "Class__geosrs" found.
-Page 182: Unresolved ID reference "SPARQLSERVDESC" found.
+Page 47: Unresolved ID reference "Class__geosrs" found.
+Page 49: Unresolved ID reference "Class__geosrs" found.
+Page 53: Unresolved ID reference "Class__geosrs" found.
+Page 125: Unresolved ID reference "Class__geosrs" found.
+Page 174: Unresolved ID reference "SPARQLSERVDESC" found.
+Page 176: Unresolved ID reference "Class__geosrs" found.
+Page 177: Unresolved ID reference "Class__geosrs" found.
+Page 178: Unresolved ID reference "Class__geosrs" found.
+Page 180: Unresolved ID reference "Class__geosrs" found.
+Page 181: Unresolved ID reference "Class__geosrs" found.
+Page 182: Unresolved ID reference "Class__geosrs" found.
+Page 183: Unresolved ID reference "Class__geosrs" found.
 Page 184: Unresolved ID reference "Class__geosrs" found.
 Page 185: Unresolved ID reference "Class__geosrs" found.
-Page 186: Unresolved ID reference "Class__geosrs" found.
-Page 188: Unresolved ID reference "Class__geosrs" found.
-Page 189: Unresolved ID reference "Class__geosrs" found.
-Page 190: Unresolved ID reference "Class__geosrs" found.
-Page 191: Unresolved ID reference "Class__geosrs" found.
 Page 192: Unresolved ID reference "Class__geosrs" found.
-Page 193: Unresolved ID reference "Class__geosrs" found.
 Page 200: Unresolved ID reference "Class__geosrs" found.
-Page 208: Unresolved ID reference "Class__geosrs" found.
-Page 209: Unresolved ID reference "Class__geosrs" found.
-Page 210: Unresolved ID reference "Class__geosrs" found.
+Page 201: Unresolved ID reference "Class__geosrs" found.
+Page 202: Unresolved ID reference "Class__geosrs" found.
 7 link targets could not be fully resolved and now points to the top of the page or are dysfunctional.

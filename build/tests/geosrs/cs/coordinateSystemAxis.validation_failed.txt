@@ -1,5 +1,5 @@
 Validation report for ogc.geosrs.cs - SRS Ontology - Coordinate System module
-Generated 2026-02-21T01:30:37.485997+00:00
+Generated 2026-02-22T00:00:56.969099+00:00
 === Files ===
 Using coordinateSystemAxis.ttl from test resources
 === End Files ===
@@ -10,27 +10,35 @@ Using coordinateSystemAxis.ttl from test resources
 Validation result for _sources/cs/rules.shacl:
   Validation Report
   Conforms: False
-  Results (1):
-  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+  Results (2):
+  Constraint Violation in ClassConstraintComponent (http://www.w3.org/ns/shacl#ClassConstraintComponent):
   	Severity: sh:Violation
   	Source Shape: geosrs:CoordinateSystem_axis_Shape_Property
   	Focus Node: exsrs:ecsc
-  	Result Path: geosrs:axis
+  	Value Node: exsrs:ecsc_axis1
+  	Result Path: geosrs_cs:axis
+  	Message: A coordinate system should have at least one axis
+  Constraint Violation in ClassConstraintComponent (http://www.w3.org/ns/shacl#ClassConstraintComponent):
+  	Severity: sh:Violation
+  	Source Shape: geosrs:CoordinateSystem_axis_Shape_Property
+  	Focus Node: exsrs:ecsc
+  	Value Node: exsrs:excsc_axis2
+  	Result Path: geosrs_cs:axis
   	Message: A coordinate system should have at least one axis
   
 Focus nodes for _sources/cs/rules.shacl:
- - Shape geosrs:1DCoordinateSystem_axis_Shape: *none*
- - Shape geosrs:CoordinateSystemAxis_axisDirection_Shape: *none*
- - Shape geosrs:3DCoordinateSystem_axis_Shape: *none*
- - Shape geosrs:CurvilinearCoordinateSystem_axis_Shape: *none*
- - Shape geosrs:TemporalCoordinateSystem_axis_Shape: *none*
- - Shape geosrs:ConicalCoordinateSystem_axis_Shape: *none*
- - Shape geosrs:TemporalCountCoordinateSystem_axis_Shape: *none*
- - Shape geosrs:PlanarCoordinateSystem_axis_Shape: *none*
- - Shape geosrs:CylindricalCoordinateSystem_axis_Shape: *none*
  - Shape geosrs:CoordinateSystem_axis_Shape: exsrs:ecsc
- - Shape geosrs:DateTimeTemporalCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:1DCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:TemporalCoordinateSystem_axis_Shape: *none*
  - Shape geosrs:TemporalMeasureCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:ConicalCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:CylindricalCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:CurvilinearCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:DateTimeTemporalCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:PlanarCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:TemporalCountCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:3DCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:CoordinateSystemAxis_axisDirection_Shape: *none*
 
 === End SHACL ===
 

@@ -18,3 +18,6 @@ exsrs:ecsc_axis2 rdf:type geosrs_cs:CoordinateSystemAxis ;
                  om:hasUnit om:metre ;
                  skos:altLabel "E" ;
                  geosrs_cs:axisDirection geosrs_cs:East .
+
+geosrs_cs:North rdf:type geosrs_cs:AxisDirection  .
+geosrs_cs:East rdf:type geosrs_cs:AxisDirection  .

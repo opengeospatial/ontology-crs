@@ -1,5 +1,5 @@
 Validation report for ogc.geosrs.cs - SRS Ontology - Coordinate System module
-Generated 2026-02-22T00:33:48.961414+00:00
+Generated 2026-02-22T00:55:27.177378+00:00
 === Files ===
 Using coordinateSystemAxis.ttl from test resources
 === End Files ===
@@ -10,14 +10,7 @@ Using coordinateSystemAxis.ttl from test resources
 Validation result for _sources/cs/rules.shacl:
   Validation Report
   Conforms: False
-  Results (4):
-  Constraint Violation in ClassConstraintComponent (http://www.w3.org/ns/shacl#ClassConstraintComponent):
-  	Severity: sh:Violation
-  	Source Shape: geosrs:CoordinateSystem_axis_Shape_Property
-  	Focus Node: exsrs:ecsc
-  	Value Node: exsrs:ecsc_axis1
-  	Result Path: geosrs_cs:axis
-  	Message: A coordinate system should have at least one axis
+  Results (2):
   Constraint Violation in ClassConstraintComponent (http://www.w3.org/ns/shacl#ClassConstraintComponent):
   	Severity: sh:Violation
   	Source Shape: geosrs:CoordinateSystem_axis_Shape_Property
@@ -27,32 +20,25 @@ Validation result for _sources/cs/rules.shacl:
   	Message: A coordinate system should have at least one axis
   Constraint Violation in ClassConstraintComponent (http://www.w3.org/ns/shacl#ClassConstraintComponent):
   	Severity: sh:Violation
-  	Source Shape: geosrs:CoordinateSystemAxis_axisDirection_Shape_Property
-  	Focus Node: exsrs:ecsc_axis1
-  	Value Node: geosrs_cs:North
-  	Result Path: geosrs_cs:axisDirection
-  	Message: A coordinate system axis should have exactly one axis direction
-  Constraint Violation in ClassConstraintComponent (http://www.w3.org/ns/shacl#ClassConstraintComponent):
-  	Severity: sh:Violation
-  	Source Shape: geosrs:CoordinateSystemAxis_axisDirection_Shape_Property
-  	Focus Node: exsrs:ecsc_axis2
-  	Value Node: geosrs_cs:East
-  	Result Path: geosrs_cs:axisDirection
-  	Message: A coordinate system axis should have exactly one axis direction
+  	Source Shape: geosrs:CoordinateSystem_axis_Shape_Property
+  	Focus Node: exsrs:ecsc
+  	Value Node: exsrs:ecsc_axis1
+  	Result Path: geosrs_cs:axis
+  	Message: A coordinate system should have at least one axis
   
 Focus nodes for _sources/cs/rules.shacl:
- - Shape geosrs:1DCoordinateSystem_axis_Shape: *none*
- - Shape geosrs:PlanarCoordinateSystem_axis_Shape: *none*
- - Shape geosrs:CoordinateSystem_axis_Shape: exsrs:ecsc
- - Shape geosrs:TemporalCoordinateSystem_axis_Shape: *none*
- - Shape geosrs:CoordinateSystemAxis_axisDirection_Shape: exsrs:ecsc_axis1,exsrs:ecsc_axis2
- - Shape geosrs:TemporalCountCoordinateSystem_axis_Shape: *none*
- - Shape geosrs:ConicalCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:CoordinateSystemAxis_axisDirection_Shape: exsrs:ecsc_axis2,exsrs:ecsc_axis1
  - Shape geosrs:CurvilinearCoordinateSystem_axis_Shape: *none*
  - Shape geosrs:CylindricalCoordinateSystem_axis_Shape: *none*
- - Shape geosrs:DateTimeTemporalCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:TemporalCountCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:CoordinateSystem_axis_Shape: exsrs:ecsc
+ - Shape geosrs:PlanarCoordinateSystem_axis_Shape: *none*
  - Shape geosrs:TemporalMeasureCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:ConicalCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:DateTimeTemporalCoordinateSystem_axis_Shape: *none*
  - Shape geosrs:3DCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:TemporalCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:1DCoordinateSystem_axis_Shape: *none*
 
 === End SHACL ===
 

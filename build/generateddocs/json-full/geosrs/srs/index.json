@@ -31,7 +31,7 @@
   "ontology": "https://opengeospatial.github.io/ontology-crs/build/annotated/geosrs/srs/ontology.ttl",
   "sourceFiles": "https://opengeospatial.github.io/ontology-crs/_sources/srs/",
   "rdfData": [],
-  "validationPassed": true,
+  "validationPassed": false,
   "testOutputs": "https://github.com/opengeospatial/ontology-crs/blob/master/build/tests/geosrs/srs/",
   "description": "## SRS Ontology Core Module\n\nThis module describes how to use the SRS ontology core vocabulary.\n\nClasses and properties are described under the namespace https://w3id.org/geosrs/srs/\n\n![SRS Ontology Core Module](assets/core.png)",
   "examples": [

@@ -1,26 +1,16 @@
 Validation report for ogc.geosrs.cs - SRS Ontology - Coordinate System module
-Generated 2026-02-22T00:55:27.165538+00:00
+Generated 2026-02-22T00:55:27.149170+00:00
 === Files ===
-Using axisDirection.ttl from test resources
+Using 1dcs.ttl from test resources
 === End Files ===
 
 === SHACL ===
-
-** Validation error **
 Validation result for _sources/cs/rules.shacl:
   Validation Report
-  Conforms: False
-  Results (1):
-  Constraint Violation in ClassConstraintComponent (http://www.w3.org/ns/shacl#ClassConstraintComponent):
-  	Severity: sh:Violation
-  	Source Shape: geosrs:CoordinateSystemAxis_axisDirection_Shape_Property
-  	Focus Node: exsrs:myAxis
-  	Value Node: geosrs_cs:North
-  	Result Path: geosrs_cs:axisDirection
-  	Message: A coordinate system axis should have exactly one axis direction
+  Conforms: True
   
 Focus nodes for _sources/cs/rules.shacl:
- - Shape geosrs:CoordinateSystemAxis_axisDirection_Shape: exsrs:myAxis
+ - Shape geosrs:CoordinateSystemAxis_axisDirection_Shape: exsrs:ecsc_axis1
  - Shape geosrs:CurvilinearCoordinateSystem_axis_Shape: *none*
  - Shape geosrs:CylindricalCoordinateSystem_axis_Shape: *none*
  - Shape geosrs:TemporalCountCoordinateSystem_axis_Shape: *none*
@@ -31,7 +21,7 @@ Focus nodes for _sources/cs/rules.shacl:
  - Shape geosrs:DateTimeTemporalCoordinateSystem_axis_Shape: *none*
  - Shape geosrs:3DCoordinateSystem_axis_Shape: *none*
  - Shape geosrs:TemporalCoordinateSystem_axis_Shape: *none*
- - Shape geosrs:1DCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:1DCoordinateSystem_axis_Shape: exsrs:ecsc
 
 === End SHACL ===
 

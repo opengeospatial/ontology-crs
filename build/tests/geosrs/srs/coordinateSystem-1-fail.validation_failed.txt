@@ -1,13 +1,14 @@
 Validation report for ogc.geosrs.srs - SRS Core Ontology
-Generated 2026-02-22T00:55:27.240118+00:00
-=== Files ===
-Using examples/srs.ttl from examples
-Output Turtle example_1_1.ttl created
-=== End Files ===
+Generated 2026-02-22T00:55:27.224156+00:00
+=== General ===
 
-=== Turtle ===
-Prefixes are defined for mynamespace
-=== End Turtle ===
+** Validation error **
+Test was expected to fail but it did not.
+=== End General ===
+
+=== Files ===
+Using coordinateSystem-1-fail.ttl from test resources
+=== End Files ===
 
 === SHACL ===
 Validation result for _sources/srs/rules.shacl:

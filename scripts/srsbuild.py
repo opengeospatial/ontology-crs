@@ -143,8 +143,8 @@ def convertCSVToSHACLAndADoc():
                         adocdef+="|"+str(row["Property"])+" "
                         if "Class" in row and row["Class"]!="":
                             adocdef+="|"+str(row["Class"])+" "
-                            shaclres.add((URIRef(shapepropuri),URIRef("http://www.w3.org/ns/shacl#class"),URIRef(str(row["Class"]).replace("geosrs:",curns))))
-                            curshaclres.add((URIRef(shapepropuri),URIRef("http://www.w3.org/ns/shacl#class"),URIRef(str(row["Class"]).replace("geosrs:",curns))))
+                            shaclres.add((URIRef(shapepropuri),URIRef("http://www.w3.org/ns/shacl#class"),URIRef(str(row["Class"]).replace("geosrs:",curns).replace("xsd:","http://www.w3.org/2001/XMLSchema#"))))
+                            curshaclres.add((URIRef(shapepropuri),URIRef("http://www.w3.org/ns/shacl#class"),URIRef(str(row["Class"]).replace("geosrs:",curns).replace("xsd:","http://www.w3.org/2001/XMLSchema#"))))
                         else:
                             adocdef+="| - "
                         if "MinCount" in row and row["MinCount"]!="":

@@ -10,3 +10,5 @@ exsrs:myAxis rdf:type geosrs_cs:CoordinateSystemAxis ;
         om:hasUnit om:metre ;
         skos:altLabel "N" ;
         geosrs_cs:axisDirection geosrs_cs:North .
+
+geosrs_cs:North rdf:type geosrs_cs:AxisDirection  .

@@ -371,6 +371,8 @@ for file in os.listdir(directory):
                                 clsuri=row["SuperClass"].replace("geosrs:", getNSForClass(row["SuperClass"],classToPrefix))
                                 adocdef+=clsuri+"["+clsuri[clsuri.rfind("/")+1:]+"] "
                             adocdef+="\n\n"
+                        if os.path.exists("spec/figures/classes/"+str(row["Concept"].replace("srs:",""))):
+                            adocdef+="|Image\n|image:{classes/"+str(row["Concept"].replace("srs:",""))+"}["+str(row["Concept"].replace("srs:",""))+" Image]\n\n"
                         if row["Concept"] in examples:
                             adocdef+="|Example\n|"+examples[row["Concept"]]+"["+row["Concept"]+",window=_blank]\n\n"
                         if "DisjointClass" in row and row["DisjointClass"]!="":
@@ -428,6 +430,8 @@ for file in os.listdir(directory):
                                 clsuri=row["SuperClass"].replace("geosrs:", getNSForClass(row["SuperClass"],classToPrefix))
                                 adocdef+=clsuri+"["+clsuri[clsuri.rfind("/")+1:]+"] "
                             adocdef+="\n\n"
+                        if os.path.exists("spec/figures/classes/"+str(row["Concept"].replace("srs:",""))):
+                            adocdef+="|Image\n|image:{classes/"+str(row["Concept"].replace("srs:",""))+"}["+str(row["Concept"].replace("srs:",""))+" Image]\n\n"
                         if row["Concept"] in examples:
                             adocdef+="|Example\n|"+examples[row["Concept"]]+"["+row["Concept"]+",window=_blank]\n\n"
                         if "DisjointClass" in row and row["DisjointClass"]!="":
@@ -507,6 +511,8 @@ for file in os.listdir(directory):
                                 gcore.add((URIRef(row["Concept"].replace(coreprefix+":",geocrsNS)),RDFS.domain,URIRef(row["Domain"].replace("geosrs:",getNSForClass(row["Domain"],classToPrefix)))))
                                 propref=row["Domain"].replace("geosrs:",getNSForClass(row["Domain"],classToPrefix))
                                 adocdef+="|Domain\n|"+propref+"["+propref[propref.rfind("/")+1:]+"]\n\n"
+                            if os.path.exists("spec/figures/classes/"+str(row["Concept"].replace("srs:",""))):
+                                adocdef+="|Image\n|image:{classes/"+str(row["Concept"].replace("srs:",""))+"}["+str(row["Concept"].replace("srs:",""))+" Image]\n\n"
                             if row["Concept"] in examples:
                                 adocdef+="|Example\n|"+examples[row["Concept"]]+"["+row["Concept"]+",window=_blank]\n\n"
                             if "PROJJSON" in row and row["PROJJSON"]!="":
@@ -568,6 +574,8 @@ for file in os.listdir(directory):
                                     exont[row["Core Property?"].lower()].add((URIRef(row["Concept"].replace(coreprefix+":",curns+str(row["Core Property?"]).lower()+"/")),RDFS.domain,URIRef(row["Domain"].replace("geosrs:",getNSForClass(row["Domain"],classToPrefix)))))
                                     propref=row["Domain"].replace("geosrs:",getNSForClass(row["Domain"],classToPrefix))
                                     adocdef+="|Domain\n|"+propref+"["+propref[propref.rfind("/")+1:]+"]\n\n"
+                                if os.path.exists("spec/figures/classes/"+str(row["Concept"].replace("srs:",""))):
+                                    adocdef+="|Image\n|image:{classes/"+str(row["Concept"].replace("srs:",""))+"}["+str(row["Concept"].replace("srs:",""))+" Image]\n\n"
                                 if row["Concept"] in examples:
                                     adocdef+="|Example\n|"+examples[row["Concept"]]+"["+row["Concept"]+",window=_blank]\n\n"
                                 if "PROJJSON" in row and row["PROJJSON"]!="":
@@ -642,6 +650,8 @@ for file in os.listdir(directory):
                                 if row["Requirement"] not in moduleToRequirements[prefixToModule["instances"]]:
                                     moduleToRequirements[prefixToModule["instances"]][row["Requirement"]]=[]
                                 moduleToRequirements[prefixToModule["instances"]][row["Requirement"]].append(row["Concept"])
+                            if os.path.exists("spec/figures/classes/"+str(row["Concept"].replace("srs:",""))):
+                                adocdef+="|Image\n|image:{classes/"+str(row["Concept"].replace("srs:",""))+"}["+str(row["Concept"].replace("srs:",""))+" Image]\n\n"
                             if row["Concept"] in examples:
                                     adocdef+="|Example\n|"+examples[row["Concept"]]+"["+row["Concept"]+",window=_blank]\n\n"
                             if "PROJJSON" in row and row["PROJJSON"]!="":
@@ -682,6 +692,8 @@ for file in os.listdir(directory):
                                     if row["Requirement"] not in moduleToRequirements[prefixToModule["instances"]]:
                                         moduleToRequirements[prefixToModule["instances"]][row["Requirement"]]=[]
                                     moduleToRequirements[prefixToModule["instances"]][row["Requirement"]].append(row["Concept"])
+                                if os.path.exists("spec/figures/classes/"+str(row["Concept"].replace("srs:",""))):
+                                    adocdef+="|Image\n|image:{classes/"+str(row["Concept"].replace("srs:",""))+"}["+str(row["Concept"].replace("srs:",""))+" Image]\n\n"
                                 if row["Concept"] in examples:
                                     adocdef+="|Example\n|"+examples[row["Concept"]]+"["+row["Concept"]+",window=_blank]\n\n"
                                 if "PROJJSON" in row and row["PROJJSON"]!="":

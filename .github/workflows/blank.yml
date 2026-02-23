@@ -53,7 +53,7 @@ jobs:
          cp co.ttl ../_sources/co/ontology.ttl
          python ../scripts/classtreedoc.py --input co/index.html --output co/content.html --title "Coordinate Operation Module"
          mv co.ttl co/
-         mkdir ../_sources/co/tests/
+         #mkdir ../_sources/co/tests/
          touch co_rules.ttl && cp co_rules.ttl ../_sources/co/tests/shapes.shacl
          pylode -o cs/index.html -i cs.ttl
          cp cs.ttl ../_sources/cs/ontology.ttl
@@ -62,7 +62,7 @@ jobs:
          pylode -o datum/index.html -i datum.ttl
          cp datum.ttl ../_sources/datum/ontology.ttl
          python ../scripts/classtreedoc.py --input datum/index.html --output datum/content.html --title "Datum Module"
-         mkdir ../_sources/datum/tests/
+         #mkdir ../_sources/datum/tests/
          touch datum_rules.ttl && cp datum_rules.ttl ../_sources/datum/tests/shapes.shacl
          mv datum.ttl datum/
          pylode -o planet/index.html -i planet.ttl

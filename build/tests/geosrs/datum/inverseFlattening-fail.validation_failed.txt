@@ -1,13 +1,14 @@
 Validation report for ogc.geosrs.datum - SRS Ontology - Datum module
-Generated 2026-02-23T01:31:11.655498+00:00
-=== Files ===
-Using examples/geodeticdatum.ttl from examples
-Output Turtle example_1_1.ttl created
-=== End Files ===
+Generated 2026-02-23T01:31:11.640203+00:00
+=== General ===
 
-=== Turtle ===
-Prefixes are defined for mynamespace
-=== End Turtle ===
+** Validation error **
+Test was expected to fail but it did not.
+=== End General ===
+
+=== Files ===
+Using inverseFlattening-fail.ttl from test resources
+=== End Files ===
 
 === SHACL ===
 Validation result for _sources/datum/rules.shacl:

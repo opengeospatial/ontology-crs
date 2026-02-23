@@ -18,7 +18,7 @@
     "/req/datum/Spheroid_Types"
   ],
   "version": "0.1",
-  "dateOfLastChange": "2026-02-22",
+  "dateOfLastChange": "2026-02-23",
   "sources": [
     {
       "title": "Spec Section",
@@ -38,7 +38,7 @@
   "ontology": "https://opengeospatial.github.io/ontology-crs/build/annotated/geosrs/datum/ontology.ttl",
   "sourceFiles": "https://opengeospatial.github.io/ontology-crs/_sources/datum/",
   "rdfData": [],
-  "validationPassed": true,
+  "validationPassed": false,
   "testOutputs": "https://github.com/opengeospatial/ontology-crs/blob/master/build/tests/geosrs/datum/",
   "description": "## SRS Ontology Datum Module\n\nThis module describes how to model a datum using the SRS ontology vocabulary.\n\nDatum classes and properties are described under the namespace https://w3id.org/geosrs/datum/\n\n![SRS Ontology Datum Module](assets/datum.png)",
   "examples": [

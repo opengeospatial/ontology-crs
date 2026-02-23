@@ -191,7 +191,7 @@ geosrs_cs:1DCoordinateSystem a owl:Class ;
 geosrs_cs:3DCoordinateSystem a owl:Class ;
     rdfs:label "3D Coordinate System"@en ;
     rdfs:subClassOf geosrs:CoordinateSystem ;
-    owl:disjointWith <georsr:GeodedicCoordinateSystem>,
+    owl:disjointWith geosrs:GeodedicCoordinateSystem,
         geosrs_cs:1DCoordinateSystem,
         geosrs_cs:CelestialCoordinateSystem,
         geosrs_cs:CurvilinearCoordinateSystem ;

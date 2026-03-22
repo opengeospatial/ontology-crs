@@ -46,12 +46,25 @@
                     border-width: var(--bs-accordion-border-width);
                 }
             }
+            .anchor {
+                color: black;
+                opacity: 0;
+                text-decoration: none;
+                margin-left: 0.5em;
+                margin-right: 0.5em;
+            }
+            .anchor-container:hover .anchor {
+                opacity: 60%;
+            }
+            .anchor-container:hover .anchor:hover {
+                opacity: 100%;
+            }
         </style>
     </head>
     <body>
         <div class="container">
             <h1 class="title">Building blocks validation report</h1>
-            <small class="datetime">Generated at 2026-02-23T01:31:11.723030+00:00</small>
+            <small class="datetime">Generated at 2026-03-22T23:14:33.416973+00:00</small>
                 <p class="summary fw-semibold text-danger">
                     Number of passing building blocks: 4 / 7 (57.14%)
                 </p>
@@ -61,13 +74,14 @@
             </div>
                 <div class="accordion mt-2" id="bblock-reports">
                         <div class="accordion-item bblock-report" data-bblock-id="ogc.geosrs.app" id="bblock-ogc.geosrs.app">
-                            <h2 class="accordion-header bblock-title">
+                            <h2 class="accordion-header bblock-title anchor-container">
                                 <button class="accordion-button collapsed" type="button"
                                     data-bs-toggle="collapse"
                                     data-bs-target="#bblock-collapse-ogc\.geosrs\.app">
                                     <div class="flex-fill">
                                         SRS Ontology - Application module
                                         <small class="ms-2 bblock-id">ogc.geosrs.app</small>
+                                        <a class="anchor" href="#bblock-ogc.geosrs.app">¶</a>
                                     </div>
 
                                     <span class="badge text-bg-success me-2">
@@ -81,9 +95,9 @@
                                         <p class="summary fw-semibold text-success">
                                             Test passed: 1 / 1
                                         </p>
-                                        <div class="card mb-2 validation-item ">
+                                        <div class="card mb-2 validation-item " id="item-ogc.geosrs.app-1">
                                             <div class="card-body">
-                                                <div class="card-title mb-0">
+                                                <div class="card-title mb-0 anchor-container">
                                                     <button type="button" class="btn btn-sm btn-primary collapsed"
                                                             data-bs-toggle="collapse" data-bs-target="#uid-1"
                                                             aria-expanded="false" aria-controls="uid-1"
@@ -93,6 +107,7 @@
                                                     </button>
                                                     <a href="geosrs/app/example_1_1.ttl" target="_blank">example_1_1.ttl</a>
                                                     <span class="badge bg-secondary example">Example</span>
+                                                    <a class="anchor" href="#item-ogc.geosrs.app-1">¶</a>
                                                     <div class="float-end">
                                                             <span class="badge text-bg-success me-2">Passed</span>
                                                     </div>
@@ -112,13 +127,14 @@
                             </div>
                         </div>
                         <div class="accordion-item bblock-report" data-bblock-id="ogc.geosrs.co" id="bblock-ogc.geosrs.co">
-                            <h2 class="accordion-header bblock-title">
+                            <h2 class="accordion-header bblock-title anchor-container">
                                 <button class="accordion-button collapsed" type="button"
                                     data-bs-toggle="collapse"
                                     data-bs-target="#bblock-collapse-ogc\.geosrs\.co">
                                     <div class="flex-fill">
                                         SRS Ontology - Coordinate Operation module
                                         <small class="ms-2 bblock-id">ogc.geosrs.co</small>
+                                        <a class="anchor" href="#bblock-ogc.geosrs.co">¶</a>
                                     </div>
 
                                     <span class="badge text-bg-success me-2">
@@ -132,9 +148,9 @@
                                         <p class="summary fw-semibold text-success">
                                             Test passed: 1 / 1
                                         </p>
-                                        <div class="card mb-2 validation-item ">
+                                        <div class="card mb-2 validation-item " id="item-ogc.geosrs.co-1">
                                             <div class="card-body">
-                                                <div class="card-title mb-0">
+                                                <div class="card-title mb-0 anchor-container">
                                                     <button type="button" class="btn btn-sm btn-primary collapsed"
                                                             data-bs-toggle="collapse" data-bs-target="#uid-2"
                                                             aria-expanded="false" aria-controls="uid-2"
@@ -144,6 +160,7 @@
                                                     </button>
                                                     <a href="geosrs/co/example_1_1.ttl" target="_blank">example_1_1.ttl</a>
                                                     <span class="badge bg-secondary example">Example</span>
+                                                    <a class="anchor" href="#item-ogc.geosrs.co-1">¶</a>
                                                     <div class="float-end">
                                                             <span class="badge text-bg-success me-2">Passed</span>
                                                     </div>
@@ -163,13 +180,14 @@
                             </div>
                         </div>
                         <div class="accordion-item bblock-report" data-bblock-id="ogc.geosrs.cs" id="bblock-ogc.geosrs.cs">
-                            <h2 class="accordion-header bblock-title">
+                            <h2 class="accordion-header bblock-title anchor-container">
                                 <button class="accordion-button " type="button"
                                     data-bs-toggle="collapse"
                                     data-bs-target="#bblock-collapse-ogc\.geosrs\.cs">
                                     <div class="flex-fill">
                                         SRS Ontology - Coordinate System module
                                         <small class="ms-2 bblock-id">ogc.geosrs.cs</small>
+                                        <a class="anchor" href="#bblock-ogc.geosrs.cs">¶</a>
                                     </div>
 
                                     <span class="badge text-bg-danger me-2">
@@ -183,9 +201,9 @@
                                         <p class="summary fw-semibold text-danger">
                                             Test passed: 4 / 5
                                         </p>
-                                        <div class="card mb-2 validation-item ">
+                                        <div class="card mb-2 validation-item " id="item-ogc.geosrs.cs-1">
                                             <div class="card-body">
-                                                <div class="card-title mb-0">
+                                                <div class="card-title mb-0 anchor-container">
                                                     <button type="button" class="btn btn-sm btn-primary collapsed"
                                                             data-bs-toggle="collapse" data-bs-target="#uid-3"
                                                             aria-expanded="false" aria-controls="uid-3"
@@ -195,6 +213,7 @@
                                                     </button>
                                                     <a href="../../_sources/cs/tests/1dcs.ttl" target="_blank">1dcs.ttl</a>
                                                     <span class="badge bg-secondary test_resource">Test resource</span>
+                                                    <a class="anchor" href="#item-ogc.geosrs.cs-1">¶</a>
                                                     <div class="float-end">
                                                             <span class="badge text-bg-success me-2">Passed</span>
                                                     </div>
@@ -209,26 +228,26 @@
   Conforms: True
   </div>
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/cs/rules.shacl:
- - Shape geosrs:TemporalCountCoordinateSystem_axis_Shape: *none*
- - Shape geosrs:TemporalCoordinateSystem_axis_Shape: *none*
- - Shape geosrs:3DCoordinateSystem_axis_Shape: *none*
  - Shape geosrs:1DCoordinateSystem_axis_Shape: exsrs:ecsc
- - Shape geosrs:CylindricalCoordinateSystem_axis_Shape: *none*
- - Shape geosrs:CoordinateSystemAxis_axisDirection_Shape: exsrs:ecsc_axis1
- - Shape geosrs:TemporalMeasureCoordinateSystem_axis_Shape: *none*
  - Shape geosrs:CoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:TemporalCoordinateSystem_axis_Shape: *none*
  - Shape geosrs:CurvilinearCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:TemporalMeasureCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:CoordinateSystemAxis_axisDirection_Shape: exsrs:ecsc_axis1
+ - Shape geosrs:TemporalCountCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:3DCoordinateSystem_axis_Shape: *none*
  - Shape geosrs:DateTimeTemporalCoordinateSystem_axis_Shape: *none*
- - Shape geosrs:PlanarCoordinateSystem_axis_Shape: *none*
  - Shape geosrs:ConicalCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:PlanarCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:CylindricalCoordinateSystem_axis_Shape: *none*
 </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="card mb-2 validation-item ">
+                                        <div class="card mb-2 validation-item " id="item-ogc.geosrs.cs-2">
                                             <div class="card-body">
-                                                <div class="card-title mb-0">
+                                                <div class="card-title mb-0 anchor-container">
                                                     <button type="button" class="btn btn-sm btn-primary collapsed"
                                                             data-bs-toggle="collapse" data-bs-target="#uid-4"
                                                             aria-expanded="false" aria-controls="uid-4"
@@ -238,6 +257,7 @@
                                                     </button>
                                                     <a href="../../_sources/cs/tests/axisDirection.ttl" target="_blank">axisDirection.ttl</a>
                                                     <span class="badge bg-secondary test_resource">Test resource</span>
+                                                    <a class="anchor" href="#item-ogc.geosrs.cs-2">¶</a>
                                                     <div class="float-end">
                                                             <span class="badge text-bg-success me-2">Passed</span>
                                                     </div>
@@ -252,26 +272,26 @@
   Conforms: True
   </div>
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/cs/rules.shacl:
- - Shape geosrs:TemporalCountCoordinateSystem_axis_Shape: *none*
- - Shape geosrs:TemporalCoordinateSystem_axis_Shape: *none*
- - Shape geosrs:3DCoordinateSystem_axis_Shape: *none*
  - Shape geosrs:1DCoordinateSystem_axis_Shape: *none*
- - Shape geosrs:CylindricalCoordinateSystem_axis_Shape: *none*
- - Shape geosrs:CoordinateSystemAxis_axisDirection_Shape: exsrs:myAxis
- - Shape geosrs:TemporalMeasureCoordinateSystem_axis_Shape: *none*
  - Shape geosrs:CoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:TemporalCoordinateSystem_axis_Shape: *none*
  - Shape geosrs:CurvilinearCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:TemporalMeasureCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:CoordinateSystemAxis_axisDirection_Shape: exsrs:myAxis
+ - Shape geosrs:TemporalCountCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:3DCoordinateSystem_axis_Shape: *none*
  - Shape geosrs:DateTimeTemporalCoordinateSystem_axis_Shape: *none*
- - Shape geosrs:PlanarCoordinateSystem_axis_Shape: *none*
  - Shape geosrs:ConicalCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:PlanarCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:CylindricalCoordinateSystem_axis_Shape: *none*
 </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="card mb-2 validation-item ">
+                                        <div class="card mb-2 validation-item " id="item-ogc.geosrs.cs-3">
                                             <div class="card-body">
-                                                <div class="card-title mb-0">
+                                                <div class="card-title mb-0 anchor-container">
                                                     <button type="button" class="btn btn-sm btn-primary collapsed"
                                                             data-bs-toggle="collapse" data-bs-target="#uid-5"
                                                             aria-expanded="false" aria-controls="uid-5"
@@ -281,6 +301,7 @@
                                                     </button>
                                                     <a href="../../_sources/cs/tests/coordinateSystemAxis.ttl" target="_blank">coordinateSystemAxis.ttl</a>
                                                     <span class="badge bg-secondary test_resource">Test resource</span>
+                                                    <a class="anchor" href="#item-ogc.geosrs.cs-3">¶</a>
                                                     <div class="float-end">
                                                             <span class="badge text-bg-danger me-2">Failed</span>
                                                     </div>
@@ -303,26 +324,26 @@
   	Message: A coordinate system should have at least one axis
   </div>
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/cs/rules.shacl:
- - Shape geosrs:TemporalCountCoordinateSystem_axis_Shape: *none*
- - Shape geosrs:TemporalCoordinateSystem_axis_Shape: *none*
- - Shape geosrs:3DCoordinateSystem_axis_Shape: *none*
  - Shape geosrs:1DCoordinateSystem_axis_Shape: *none*
- - Shape geosrs:CylindricalCoordinateSystem_axis_Shape: *none*
- - Shape geosrs:CoordinateSystemAxis_axisDirection_Shape: exsrs:ecsc_axis2,exsrs:ecsc_axis1
- - Shape geosrs:TemporalMeasureCoordinateSystem_axis_Shape: *none*
  - Shape geosrs:CoordinateSystem_axis_Shape: exsrs:ecsc
+ - Shape geosrs:TemporalCoordinateSystem_axis_Shape: *none*
  - Shape geosrs:CurvilinearCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:TemporalMeasureCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:CoordinateSystemAxis_axisDirection_Shape: exsrs:ecsc_axis1,exsrs:ecsc_axis2
+ - Shape geosrs:TemporalCountCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:3DCoordinateSystem_axis_Shape: *none*
  - Shape geosrs:DateTimeTemporalCoordinateSystem_axis_Shape: *none*
- - Shape geosrs:PlanarCoordinateSystem_axis_Shape: *none*
  - Shape geosrs:ConicalCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:PlanarCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:CylindricalCoordinateSystem_axis_Shape: *none*
 </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="card mb-2 validation-item ">
+                                        <div class="card mb-2 validation-item " id="item-ogc.geosrs.cs-4">
                                             <div class="card-body">
-                                                <div class="card-title mb-0">
+                                                <div class="card-title mb-0 anchor-container">
                                                     <button type="button" class="btn btn-sm btn-primary collapsed"
                                                             data-bs-toggle="collapse" data-bs-target="#uid-6"
                                                             aria-expanded="false" aria-controls="uid-6"
@@ -332,6 +353,7 @@
                                                     </button>
                                                     <a href="geosrs/cs/example_1_1.ttl" target="_blank">example_1_1.ttl</a>
                                                     <span class="badge bg-secondary example">Example</span>
+                                                    <a class="anchor" href="#item-ogc.geosrs.cs-4">¶</a>
                                                     <div class="float-end">
                                                             <span class="badge text-bg-success me-2">Passed</span>
                                                     </div>
@@ -349,26 +371,26 @@
   Conforms: True
   </div>
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/cs/rules.shacl:
- - Shape geosrs:TemporalCountCoordinateSystem_axis_Shape: *none*
- - Shape geosrs:TemporalCoordinateSystem_axis_Shape: *none*
- - Shape geosrs:3DCoordinateSystem_axis_Shape: *none*
  - Shape geosrs:1DCoordinateSystem_axis_Shape: *none*
- - Shape geosrs:CylindricalCoordinateSystem_axis_Shape: *none*
- - Shape geosrs:CoordinateSystemAxis_axisDirection_Shape: *none*
- - Shape geosrs:TemporalMeasureCoordinateSystem_axis_Shape: *none*
  - Shape geosrs:CoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:TemporalCoordinateSystem_axis_Shape: *none*
  - Shape geosrs:CurvilinearCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:TemporalMeasureCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:CoordinateSystemAxis_axisDirection_Shape: *none*
+ - Shape geosrs:TemporalCountCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:3DCoordinateSystem_axis_Shape: *none*
  - Shape geosrs:DateTimeTemporalCoordinateSystem_axis_Shape: *none*
- - Shape geosrs:PlanarCoordinateSystem_axis_Shape: *none*
  - Shape geosrs:ConicalCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:PlanarCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:CylindricalCoordinateSystem_axis_Shape: *none*
 </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="card mb-2 validation-item ">
+                                        <div class="card mb-2 validation-item " id="item-ogc.geosrs.cs-5">
                                             <div class="card-body">
-                                                <div class="card-title mb-0">
+                                                <div class="card-title mb-0 anchor-container">
                                                     <button type="button" class="btn btn-sm btn-primary collapsed"
                                                             data-bs-toggle="collapse" data-bs-target="#uid-7"
                                                             aria-expanded="false" aria-controls="uid-7"
@@ -378,6 +400,7 @@
                                                     </button>
                                                     <a href="geosrs/cs/example_1_2.ttl" target="_blank">example_1_2.ttl</a>
                                                     <span class="badge bg-secondary example">Example</span>
+                                                    <a class="anchor" href="#item-ogc.geosrs.cs-5">¶</a>
                                                     <div class="float-end">
                                                             <span class="badge text-bg-success me-2">Passed</span>
                                                     </div>
@@ -395,18 +418,18 @@
   Conforms: True
   </div>
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/cs/rules.shacl:
- - Shape geosrs:TemporalCountCoordinateSystem_axis_Shape: *none*
- - Shape geosrs:TemporalCoordinateSystem_axis_Shape: *none*
- - Shape geosrs:3DCoordinateSystem_axis_Shape: *none*
  - Shape geosrs:1DCoordinateSystem_axis_Shape: *none*
- - Shape geosrs:CylindricalCoordinateSystem_axis_Shape: *none*
- - Shape geosrs:CoordinateSystemAxis_axisDirection_Shape: *none*
- - Shape geosrs:TemporalMeasureCoordinateSystem_axis_Shape: *none*
  - Shape geosrs:CoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:TemporalCoordinateSystem_axis_Shape: *none*
  - Shape geosrs:CurvilinearCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:TemporalMeasureCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:CoordinateSystemAxis_axisDirection_Shape: *none*
+ - Shape geosrs:TemporalCountCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:3DCoordinateSystem_axis_Shape: *none*
  - Shape geosrs:DateTimeTemporalCoordinateSystem_axis_Shape: *none*
- - Shape geosrs:PlanarCoordinateSystem_axis_Shape: *none*
  - Shape geosrs:ConicalCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:PlanarCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:CylindricalCoordinateSystem_axis_Shape: *none*
 </div>
                                                     </div>
                                                 </div>
@@ -416,13 +439,14 @@
                             </div>
                         </div>
                         <div class="accordion-item bblock-report" data-bblock-id="ogc.geosrs.datum" id="bblock-ogc.geosrs.datum">
-                            <h2 class="accordion-header bblock-title">
+                            <h2 class="accordion-header bblock-title anchor-container">
                                 <button class="accordion-button " type="button"
                                     data-bs-toggle="collapse"
                                     data-bs-target="#bblock-collapse-ogc\.geosrs\.datum">
                                     <div class="flex-fill">
                                         SRS Ontology - Datum module
                                         <small class="ms-2 bblock-id">ogc.geosrs.datum</small>
+                                        <a class="anchor" href="#bblock-ogc.geosrs.datum">¶</a>
                                     </div>
 
                                     <span class="badge text-bg-danger me-2">
@@ -436,9 +460,9 @@
                                         <p class="summary fw-semibold text-danger">
                                             Test passed: 3 / 5
                                         </p>
-                                        <div class="card mb-2 validation-item require-fail">
+                                        <div class="card mb-2 validation-item require-fail" id="item-ogc.geosrs.datum-1">
                                             <div class="card-body">
-                                                <div class="card-title mb-0">
+                                                <div class="card-title mb-0 anchor-container">
                                                     <button type="button" class="btn btn-sm btn-primary collapsed"
                                                             data-bs-toggle="collapse" data-bs-target="#uid-8"
                                                             aria-expanded="false" aria-controls="uid-8"
@@ -449,6 +473,7 @@
                                                     <a href="../../_sources/datum/tests/inverseFlattening-fail.ttl" target="_blank">inverseFlattening-fail.ttl</a>
                                                     <span class="badge bg-secondary test_resource">Test resource</span>
                                                         <span class="badge text-bg-info">Requires fail</span>
+                                                    <a class="anchor" href="#item-ogc.geosrs.datum-1">¶</a>
                                                     <div class="float-end">
                                                             <span class="badge text-bg-danger me-2">Failed</span>
                                                     </div>
@@ -465,21 +490,21 @@
   Conforms: True
   </div>
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/datum/rules.shacl:
- - Shape geosrs:Datum_primeMeridian_Shape: *none*
- - Shape geosrs:Ellipsoid_eccentricity_Shape: *none*
  - Shape geosrs:Ellipsoid_inverseFlattening_Shape: *none*
  - Shape geosrs:ParametricDatum_definingParameter_Shape: *none*
  - Shape geosrs:Ellipsoid_semiMinorAxis_Shape: *none*
- - Shape geosrs:Datum_ellipsoid_Shape: *none*
  - Shape geosrs:Ellipsoid_semiMajorAxis_Shape: *none*
+ - Shape geosrs:Datum_primeMeridian_Shape: *none*
+ - Shape geosrs:Ellipsoid_eccentricity_Shape: *none*
+ - Shape geosrs:Datum_ellipsoid_Shape: *none*
 </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="card mb-2 validation-item ">
+                                        <div class="card mb-2 validation-item " id="item-ogc.geosrs.datum-2">
                                             <div class="card-body">
-                                                <div class="card-title mb-0">
+                                                <div class="card-title mb-0 anchor-container">
                                                     <button type="button" class="btn btn-sm btn-primary collapsed"
                                                             data-bs-toggle="collapse" data-bs-target="#uid-9"
                                                             aria-expanded="false" aria-controls="uid-9"
@@ -489,6 +514,7 @@
                                                     </button>
                                                     <a href="../../_sources/datum/tests/inverseFlattening.ttl" target="_blank">inverseFlattening.ttl</a>
                                                     <span class="badge bg-secondary test_resource">Test resource</span>
+                                                    <a class="anchor" href="#item-ogc.geosrs.datum-2">¶</a>
                                                     <div class="float-end">
                                                             <span class="badge text-bg-success me-2">Passed</span>
                                                     </div>
@@ -503,21 +529,21 @@
   Conforms: True
   </div>
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/datum/rules.shacl:
- - Shape geosrs:Datum_primeMeridian_Shape: *none*
- - Shape geosrs:Ellipsoid_eccentricity_Shape: *none*
  - Shape geosrs:Ellipsoid_inverseFlattening_Shape: *none*
  - Shape geosrs:ParametricDatum_definingParameter_Shape: *none*
  - Shape geosrs:Ellipsoid_semiMinorAxis_Shape: *none*
- - Shape geosrs:Datum_ellipsoid_Shape: *none*
  - Shape geosrs:Ellipsoid_semiMajorAxis_Shape: *none*
+ - Shape geosrs:Datum_primeMeridian_Shape: *none*
+ - Shape geosrs:Ellipsoid_eccentricity_Shape: *none*
+ - Shape geosrs:Datum_ellipsoid_Shape: *none*
 </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="card mb-2 validation-item require-fail">
+                                        <div class="card mb-2 validation-item require-fail" id="item-ogc.geosrs.datum-3">
                                             <div class="card-body">
-                                                <div class="card-title mb-0">
+                                                <div class="card-title mb-0 anchor-container">
                                                     <button type="button" class="btn btn-sm btn-primary collapsed"
                                                             data-bs-toggle="collapse" data-bs-target="#uid-10"
                                                             aria-expanded="false" aria-controls="uid-10"
@@ -528,6 +554,7 @@
                                                     <a href="../../_sources/datum/tests/semiMajorAxis-fail.ttl" target="_blank">semiMajorAxis-fail.ttl</a>
                                                     <span class="badge bg-secondary test_resource">Test resource</span>
                                                         <span class="badge text-bg-info">Requires fail</span>
+                                                    <a class="anchor" href="#item-ogc.geosrs.datum-3">¶</a>
                                                     <div class="float-end">
                                                             <span class="badge text-bg-danger me-2">Failed</span>
                                                     </div>
@@ -544,21 +571,21 @@
   Conforms: True
   </div>
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/datum/rules.shacl:
- - Shape geosrs:Datum_primeMeridian_Shape: *none*
- - Shape geosrs:Ellipsoid_eccentricity_Shape: *none*
  - Shape geosrs:Ellipsoid_inverseFlattening_Shape: *none*
  - Shape geosrs:ParametricDatum_definingParameter_Shape: *none*
  - Shape geosrs:Ellipsoid_semiMinorAxis_Shape: *none*
- - Shape geosrs:Datum_ellipsoid_Shape: *none*
  - Shape geosrs:Ellipsoid_semiMajorAxis_Shape: *none*
+ - Shape geosrs:Datum_primeMeridian_Shape: *none*
+ - Shape geosrs:Ellipsoid_eccentricity_Shape: *none*
+ - Shape geosrs:Datum_ellipsoid_Shape: *none*
 </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="card mb-2 validation-item ">
+                                        <div class="card mb-2 validation-item " id="item-ogc.geosrs.datum-4">
                                             <div class="card-body">
-                                                <div class="card-title mb-0">
+                                                <div class="card-title mb-0 anchor-container">
                                                     <button type="button" class="btn btn-sm btn-primary collapsed"
                                                             data-bs-toggle="collapse" data-bs-target="#uid-11"
                                                             aria-expanded="false" aria-controls="uid-11"
@@ -568,6 +595,7 @@
                                                     </button>
                                                     <a href="../../_sources/datum/tests/semiMajorAxis.ttl" target="_blank">semiMajorAxis.ttl</a>
                                                     <span class="badge bg-secondary test_resource">Test resource</span>
+                                                    <a class="anchor" href="#item-ogc.geosrs.datum-4">¶</a>
                                                     <div class="float-end">
                                                             <span class="badge text-bg-success me-2">Passed</span>
                                                     </div>
@@ -582,21 +610,21 @@
   Conforms: True
   </div>
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/datum/rules.shacl:
- - Shape geosrs:Datum_primeMeridian_Shape: *none*
- - Shape geosrs:Ellipsoid_eccentricity_Shape: *none*
  - Shape geosrs:Ellipsoid_inverseFlattening_Shape: *none*
  - Shape geosrs:ParametricDatum_definingParameter_Shape: *none*
  - Shape geosrs:Ellipsoid_semiMinorAxis_Shape: *none*
- - Shape geosrs:Datum_ellipsoid_Shape: *none*
  - Shape geosrs:Ellipsoid_semiMajorAxis_Shape: *none*
+ - Shape geosrs:Datum_primeMeridian_Shape: *none*
+ - Shape geosrs:Ellipsoid_eccentricity_Shape: *none*
+ - Shape geosrs:Datum_ellipsoid_Shape: *none*
 </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="card mb-2 validation-item ">
+                                        <div class="card mb-2 validation-item " id="item-ogc.geosrs.datum-5">
                                             <div class="card-body">
-                                                <div class="card-title mb-0">
+                                                <div class="card-title mb-0 anchor-container">
                                                     <button type="button" class="btn btn-sm btn-primary collapsed"
                                                             data-bs-toggle="collapse" data-bs-target="#uid-12"
                                                             aria-expanded="false" aria-controls="uid-12"
@@ -606,6 +634,7 @@
                                                     </button>
                                                     <a href="geosrs/datum/example_1_1.ttl" target="_blank">example_1_1.ttl</a>
                                                     <span class="badge bg-secondary example">Example</span>
+                                                    <a class="anchor" href="#item-ogc.geosrs.datum-5">¶</a>
                                                     <div class="float-end">
                                                             <span class="badge text-bg-success me-2">Passed</span>
                                                     </div>
@@ -623,13 +652,13 @@
   Conforms: True
   </div>
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/datum/rules.shacl:
- - Shape geosrs:Datum_primeMeridian_Shape: *none*
- - Shape geosrs:Ellipsoid_eccentricity_Shape: *none*
  - Shape geosrs:Ellipsoid_inverseFlattening_Shape: *none*
  - Shape geosrs:ParametricDatum_definingParameter_Shape: *none*
  - Shape geosrs:Ellipsoid_semiMinorAxis_Shape: *none*
- - Shape geosrs:Datum_ellipsoid_Shape: *none*
  - Shape geosrs:Ellipsoid_semiMajorAxis_Shape: *none*
+ - Shape geosrs:Datum_primeMeridian_Shape: *none*
+ - Shape geosrs:Ellipsoid_eccentricity_Shape: *none*
+ - Shape geosrs:Datum_ellipsoid_Shape: *none*
 </div>
                                                     </div>
                                                 </div>
@@ -639,13 +668,14 @@
                             </div>
                         </div>
                         <div class="accordion-item bblock-report" data-bblock-id="ogc.geosrs.planet" id="bblock-ogc.geosrs.planet">
-                            <h2 class="accordion-header bblock-title">
+                            <h2 class="accordion-header bblock-title anchor-container">
                                 <button class="accordion-button collapsed" type="button"
                                     data-bs-toggle="collapse"
                                     data-bs-target="#bblock-collapse-ogc\.geosrs\.planet">
                                     <div class="flex-fill">
                                         SRS Ontology - Planet module
                                         <small class="ms-2 bblock-id">ogc.geosrs.planet</small>
+                                        <a class="anchor" href="#bblock-ogc.geosrs.planet">¶</a>
                                     </div>
 
                                     <span class="badge text-bg-success me-2">
@@ -659,9 +689,9 @@
                                         <p class="summary fw-semibold text-success">
                                             Test passed: 1 / 1
                                         </p>
-                                        <div class="card mb-2 validation-item ">
+                                        <div class="card mb-2 validation-item " id="item-ogc.geosrs.planet-1">
                                             <div class="card-body">
-                                                <div class="card-title mb-0">
+                                                <div class="card-title mb-0 anchor-container">
                                                     <button type="button" class="btn btn-sm btn-primary collapsed"
                                                             data-bs-toggle="collapse" data-bs-target="#uid-13"
                                                             aria-expanded="false" aria-controls="uid-13"
@@ -671,6 +701,7 @@
                                                     </button>
                                                     <a href="geosrs/planet/example_1_1.ttl" target="_blank">example_1_1.ttl</a>
                                                     <span class="badge bg-secondary example">Example</span>
+                                                    <a class="anchor" href="#item-ogc.geosrs.planet-1">¶</a>
                                                     <div class="float-end">
                                                             <span class="badge text-bg-success me-2">Passed</span>
                                                     </div>
@@ -690,13 +721,14 @@
                             </div>
                         </div>
                         <div class="accordion-item bblock-report" data-bblock-id="ogc.geosrs.projection" id="bblock-ogc.geosrs.projection">
-                            <h2 class="accordion-header bblock-title">
+                            <h2 class="accordion-header bblock-title anchor-container">
                                 <button class="accordion-button collapsed" type="button"
                                     data-bs-toggle="collapse"
                                     data-bs-target="#bblock-collapse-ogc\.geosrs\.projection">
                                     <div class="flex-fill">
                                         SRS Ontology - Projection module
                                         <small class="ms-2 bblock-id">ogc.geosrs.projection</small>
+                                        <a class="anchor" href="#bblock-ogc.geosrs.projection">¶</a>
                                     </div>
 
                                     <span class="badge text-bg-success me-2">
@@ -710,9 +742,9 @@
                                         <p class="summary fw-semibold text-success">
                                             Test passed: 1 / 1
                                         </p>
-                                        <div class="card mb-2 validation-item ">
+                                        <div class="card mb-2 validation-item " id="item-ogc.geosrs.projection-1">
                                             <div class="card-body">
-                                                <div class="card-title mb-0">
+                                                <div class="card-title mb-0 anchor-container">
                                                     <button type="button" class="btn btn-sm btn-primary collapsed"
                                                             data-bs-toggle="collapse" data-bs-target="#uid-14"
                                                             aria-expanded="false" aria-controls="uid-14"
@@ -722,6 +754,7 @@
                                                     </button>
                                                     <a href="geosrs/projection/example_1_1.ttl" target="_blank">example_1_1.ttl</a>
                                                     <span class="badge bg-secondary example">Example</span>
+                                                    <a class="anchor" href="#item-ogc.geosrs.projection-1">¶</a>
                                                     <div class="float-end">
                                                             <span class="badge text-bg-success me-2">Passed</span>
                                                     </div>
@@ -741,13 +774,14 @@
                             </div>
                         </div>
                         <div class="accordion-item bblock-report" data-bblock-id="ogc.geosrs.srs" id="bblock-ogc.geosrs.srs">
-                            <h2 class="accordion-header bblock-title">
+                            <h2 class="accordion-header bblock-title anchor-container">
                                 <button class="accordion-button " type="button"
                                     data-bs-toggle="collapse"
                                     data-bs-target="#bblock-collapse-ogc\.geosrs\.srs">
                                     <div class="flex-fill">
                                         SRS Core Ontology
                                         <small class="ms-2 bblock-id">ogc.geosrs.srs</small>
+                                        <a class="anchor" href="#bblock-ogc.geosrs.srs">¶</a>
                                     </div>
 
                                     <span class="badge text-bg-danger me-2">
@@ -761,9 +795,9 @@
                                         <p class="summary fw-semibold text-danger">
                                             Test passed: 3 / 6
                                         </p>
-                                        <div class="card mb-2 validation-item require-fail">
+                                        <div class="card mb-2 validation-item require-fail" id="item-ogc.geosrs.srs-1">
                                             <div class="card-body">
-                                                <div class="card-title mb-0">
+                                                <div class="card-title mb-0 anchor-container">
                                                     <button type="button" class="btn btn-sm btn-primary collapsed"
                                                             data-bs-toggle="collapse" data-bs-target="#uid-15"
                                                             aria-expanded="false" aria-controls="uid-15"
@@ -774,6 +808,7 @@
                                                     <a href="../../_sources/srs/tests/areaOfUse-fail.ttl" target="_blank">areaOfUse-fail.ttl</a>
                                                     <span class="badge bg-secondary test_resource">Test resource</span>
                                                         <span class="badge text-bg-info">Requires fail</span>
+                                                    <a class="anchor" href="#item-ogc.geosrs.srs-1">¶</a>
                                                     <div class="float-end">
                                                             <span class="badge text-bg-danger me-2">Failed</span>
                                                     </div>
@@ -790,27 +825,27 @@
   Conforms: True
   </div>
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/srs/rules.shacl:
- - Shape geosrs:CRS_datumEnsemble_Shape: *none*
- - Shape geosrs:SingleCRS_datum_Shape: *none*
- - Shape geosrs:CompoundCRS_includesSRS_Shape: *none*
- - Shape geosrs:GeographicCRS_coordinateSystem_Shape: *none*
- - Shape geosrs:ProjectedCRS_conversion_Shape: *none*
- - Shape geosrs:TemporalCRS_datum_Shape: *none*
- - Shape geosrs:ParametricCRS_datum_Shape: *none*
- - Shape geosrs:SingleCRS_coordinateSystem_Shape: *none*
- - Shape geosrs:GeographicCRS_datum_Shape: *none*
- - Shape geosrs:GeodeticCRS_coordinateSystem_Shape: *none*
- - Shape geosrs:CRS_datum_Shape: *none*
- - Shape geosrs:CRS_domainOfValidity_Shape: *none*
  - Shape geosrs:CRS_coordinateSystem_Shape: *none*
+ - Shape geosrs:CompoundCRS_includesSRS_Shape: *none*
+ - Shape geosrs:ProjectedCRS_conversion_Shape: *none*
+ - Shape geosrs:SingleCRS_datum_Shape: *none*
+ - Shape geosrs:SingleCRS_coordinateSystem_Shape: *none*
+ - Shape geosrs:ParametricCRS_datum_Shape: *none*
+ - Shape geosrs:CRS_domainOfValidity_Shape: *none*
+ - Shape geosrs:CRS_datum_Shape: *none*
+ - Shape geosrs:CRS_datumEnsemble_Shape: *none*
+ - Shape geosrs:GeodeticCRS_coordinateSystem_Shape: *none*
+ - Shape geosrs:TemporalCRS_datum_Shape: *none*
+ - Shape geosrs:GeographicCRS_coordinateSystem_Shape: *none*
+ - Shape geosrs:GeographicCRS_datum_Shape: *none*
 </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="card mb-2 validation-item ">
+                                        <div class="card mb-2 validation-item " id="item-ogc.geosrs.srs-2">
                                             <div class="card-body">
-                                                <div class="card-title mb-0">
+                                                <div class="card-title mb-0 anchor-container">
                                                     <button type="button" class="btn btn-sm btn-primary collapsed"
                                                             data-bs-toggle="collapse" data-bs-target="#uid-16"
                                                             aria-expanded="false" aria-controls="uid-16"
@@ -820,6 +855,7 @@
                                                     </button>
                                                     <a href="../../_sources/srs/tests/areaOfUse.ttl" target="_blank">areaOfUse.ttl</a>
                                                     <span class="badge bg-secondary test_resource">Test resource</span>
+                                                    <a class="anchor" href="#item-ogc.geosrs.srs-2">¶</a>
                                                     <div class="float-end">
                                                             <span class="badge text-bg-success me-2">Passed</span>
                                                     </div>
@@ -834,27 +870,27 @@
   Conforms: True
   </div>
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/srs/rules.shacl:
- - Shape geosrs:CRS_datumEnsemble_Shape: *none*
- - Shape geosrs:SingleCRS_datum_Shape: *none*
- - Shape geosrs:CompoundCRS_includesSRS_Shape: *none*
- - Shape geosrs:GeographicCRS_coordinateSystem_Shape: *none*
- - Shape geosrs:ProjectedCRS_conversion_Shape: *none*
- - Shape geosrs:TemporalCRS_datum_Shape: *none*
- - Shape geosrs:ParametricCRS_datum_Shape: *none*
- - Shape geosrs:SingleCRS_coordinateSystem_Shape: *none*
- - Shape geosrs:GeographicCRS_datum_Shape: *none*
- - Shape geosrs:GeodeticCRS_coordinateSystem_Shape: *none*
- - Shape geosrs:CRS_datum_Shape: *none*
- - Shape geosrs:CRS_domainOfValidity_Shape: *none*
  - Shape geosrs:CRS_coordinateSystem_Shape: *none*
+ - Shape geosrs:CompoundCRS_includesSRS_Shape: *none*
+ - Shape geosrs:ProjectedCRS_conversion_Shape: *none*
+ - Shape geosrs:SingleCRS_datum_Shape: *none*
+ - Shape geosrs:SingleCRS_coordinateSystem_Shape: *none*
+ - Shape geosrs:ParametricCRS_datum_Shape: *none*
+ - Shape geosrs:CRS_domainOfValidity_Shape: *none*
+ - Shape geosrs:CRS_datum_Shape: *none*
+ - Shape geosrs:CRS_datumEnsemble_Shape: *none*
+ - Shape geosrs:GeodeticCRS_coordinateSystem_Shape: *none*
+ - Shape geosrs:TemporalCRS_datum_Shape: *none*
+ - Shape geosrs:GeographicCRS_coordinateSystem_Shape: *none*
+ - Shape geosrs:GeographicCRS_datum_Shape: *none*
 </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="card mb-2 validation-item require-fail">
+                                        <div class="card mb-2 validation-item require-fail" id="item-ogc.geosrs.srs-3">
                                             <div class="card-body">
-                                                <div class="card-title mb-0">
+                                                <div class="card-title mb-0 anchor-container">
                                                     <button type="button" class="btn btn-sm btn-primary collapsed"
                                                             data-bs-toggle="collapse" data-bs-target="#uid-17"
                                                             aria-expanded="false" aria-controls="uid-17"
@@ -865,6 +901,7 @@
                                                     <a href="../../_sources/srs/tests/coordinateSystem-1-fail.ttl" target="_blank">coordinateSystem-1-fail.ttl</a>
                                                     <span class="badge bg-secondary test_resource">Test resource</span>
                                                         <span class="badge text-bg-info">Requires fail</span>
+                                                    <a class="anchor" href="#item-ogc.geosrs.srs-3">¶</a>
                                                     <div class="float-end">
                                                             <span class="badge text-bg-danger me-2">Failed</span>
                                                     </div>
@@ -881,27 +918,27 @@
   Conforms: True
   </div>
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/srs/rules.shacl:
- - Shape geosrs:CRS_datumEnsemble_Shape: *none*
- - Shape geosrs:SingleCRS_datum_Shape: *none*
- - Shape geosrs:CompoundCRS_includesSRS_Shape: *none*
- - Shape geosrs:GeographicCRS_coordinateSystem_Shape: *none*
- - Shape geosrs:ProjectedCRS_conversion_Shape: *none*
- - Shape geosrs:TemporalCRS_datum_Shape: *none*
- - Shape geosrs:ParametricCRS_datum_Shape: *none*
- - Shape geosrs:SingleCRS_coordinateSystem_Shape: *none*
- - Shape geosrs:GeographicCRS_datum_Shape: *none*
- - Shape geosrs:GeodeticCRS_coordinateSystem_Shape: *none*
- - Shape geosrs:CRS_datum_Shape: *none*
- - Shape geosrs:CRS_domainOfValidity_Shape: *none*
  - Shape geosrs:CRS_coordinateSystem_Shape: *none*
+ - Shape geosrs:CompoundCRS_includesSRS_Shape: *none*
+ - Shape geosrs:ProjectedCRS_conversion_Shape: *none*
+ - Shape geosrs:SingleCRS_datum_Shape: *none*
+ - Shape geosrs:SingleCRS_coordinateSystem_Shape: *none*
+ - Shape geosrs:ParametricCRS_datum_Shape: *none*
+ - Shape geosrs:CRS_domainOfValidity_Shape: *none*
+ - Shape geosrs:CRS_datum_Shape: *none*
+ - Shape geosrs:CRS_datumEnsemble_Shape: *none*
+ - Shape geosrs:GeodeticCRS_coordinateSystem_Shape: *none*
+ - Shape geosrs:TemporalCRS_datum_Shape: *none*
+ - Shape geosrs:GeographicCRS_coordinateSystem_Shape: *none*
+ - Shape geosrs:GeographicCRS_datum_Shape: *none*
 </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="card mb-2 validation-item require-fail">
+                                        <div class="card mb-2 validation-item require-fail" id="item-ogc.geosrs.srs-4">
                                             <div class="card-body">
-                                                <div class="card-title mb-0">
+                                                <div class="card-title mb-0 anchor-container">
                                                     <button type="button" class="btn btn-sm btn-primary collapsed"
                                                             data-bs-toggle="collapse" data-bs-target="#uid-18"
                                                             aria-expanded="false" aria-controls="uid-18"
@@ -912,6 +949,7 @@
                                                     <a href="../../_sources/srs/tests/coordinateSystem-2-fail.ttl" target="_blank">coordinateSystem-2-fail.ttl</a>
                                                     <span class="badge bg-secondary test_resource">Test resource</span>
                                                         <span class="badge text-bg-info">Requires fail</span>
+                                                    <a class="anchor" href="#item-ogc.geosrs.srs-4">¶</a>
                                                     <div class="float-end">
                                                             <span class="badge text-bg-danger me-2">Failed</span>
                                                     </div>
@@ -928,27 +966,27 @@
   Conforms: True
   </div>
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/srs/rules.shacl:
- - Shape geosrs:CRS_datumEnsemble_Shape: *none*
- - Shape geosrs:SingleCRS_datum_Shape: *none*
- - Shape geosrs:CompoundCRS_includesSRS_Shape: *none*
- - Shape geosrs:GeographicCRS_coordinateSystem_Shape: *none*
- - Shape geosrs:ProjectedCRS_conversion_Shape: *none*
- - Shape geosrs:TemporalCRS_datum_Shape: *none*
- - Shape geosrs:ParametricCRS_datum_Shape: *none*
- - Shape geosrs:SingleCRS_coordinateSystem_Shape: *none*
- - Shape geosrs:GeographicCRS_datum_Shape: *none*
- - Shape geosrs:GeodeticCRS_coordinateSystem_Shape: *none*
- - Shape geosrs:CRS_datum_Shape: *none*
- - Shape geosrs:CRS_domainOfValidity_Shape: *none*
  - Shape geosrs:CRS_coordinateSystem_Shape: *none*
+ - Shape geosrs:CompoundCRS_includesSRS_Shape: *none*
+ - Shape geosrs:ProjectedCRS_conversion_Shape: *none*
+ - Shape geosrs:SingleCRS_datum_Shape: *none*
+ - Shape geosrs:SingleCRS_coordinateSystem_Shape: *none*
+ - Shape geosrs:ParametricCRS_datum_Shape: *none*
+ - Shape geosrs:CRS_domainOfValidity_Shape: *none*
+ - Shape geosrs:CRS_datum_Shape: *none*
+ - Shape geosrs:CRS_datumEnsemble_Shape: *none*
+ - Shape geosrs:GeodeticCRS_coordinateSystem_Shape: *none*
+ - Shape geosrs:TemporalCRS_datum_Shape: *none*
+ - Shape geosrs:GeographicCRS_coordinateSystem_Shape: *none*
+ - Shape geosrs:GeographicCRS_datum_Shape: *none*
 </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="card mb-2 validation-item ">
+                                        <div class="card mb-2 validation-item " id="item-ogc.geosrs.srs-5">
                                             <div class="card-body">
-                                                <div class="card-title mb-0">
+                                                <div class="card-title mb-0 anchor-container">
                                                     <button type="button" class="btn btn-sm btn-primary collapsed"
                                                             data-bs-toggle="collapse" data-bs-target="#uid-19"
                                                             aria-expanded="false" aria-controls="uid-19"
@@ -958,6 +996,7 @@
                                                     </button>
                                                     <a href="../../_sources/srs/tests/coordinateSystem.ttl" target="_blank">coordinateSystem.ttl</a>
                                                     <span class="badge bg-secondary test_resource">Test resource</span>
+                                                    <a class="anchor" href="#item-ogc.geosrs.srs-5">¶</a>
                                                     <div class="float-end">
                                                             <span class="badge text-bg-success me-2">Passed</span>
                                                     </div>
@@ -972,27 +1011,27 @@
   Conforms: True
   </div>
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/srs/rules.shacl:
- - Shape geosrs:CRS_datumEnsemble_Shape: *none*
- - Shape geosrs:SingleCRS_datum_Shape: *none*
- - Shape geosrs:CompoundCRS_includesSRS_Shape: *none*
- - Shape geosrs:GeographicCRS_coordinateSystem_Shape: *none*
- - Shape geosrs:ProjectedCRS_conversion_Shape: *none*
- - Shape geosrs:TemporalCRS_datum_Shape: *none*
- - Shape geosrs:ParametricCRS_datum_Shape: *none*
- - Shape geosrs:SingleCRS_coordinateSystem_Shape: *none*
- - Shape geosrs:GeographicCRS_datum_Shape: *none*
- - Shape geosrs:GeodeticCRS_coordinateSystem_Shape: *none*
- - Shape geosrs:CRS_datum_Shape: *none*
- - Shape geosrs:CRS_domainOfValidity_Shape: *none*
  - Shape geosrs:CRS_coordinateSystem_Shape: *none*
+ - Shape geosrs:CompoundCRS_includesSRS_Shape: *none*
+ - Shape geosrs:ProjectedCRS_conversion_Shape: *none*
+ - Shape geosrs:SingleCRS_datum_Shape: *none*
+ - Shape geosrs:SingleCRS_coordinateSystem_Shape: *none*
+ - Shape geosrs:ParametricCRS_datum_Shape: *none*
+ - Shape geosrs:CRS_domainOfValidity_Shape: *none*
+ - Shape geosrs:CRS_datum_Shape: *none*
+ - Shape geosrs:CRS_datumEnsemble_Shape: *none*
+ - Shape geosrs:GeodeticCRS_coordinateSystem_Shape: *none*
+ - Shape geosrs:TemporalCRS_datum_Shape: *none*
+ - Shape geosrs:GeographicCRS_coordinateSystem_Shape: *none*
+ - Shape geosrs:GeographicCRS_datum_Shape: *none*
 </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="card mb-2 validation-item ">
+                                        <div class="card mb-2 validation-item " id="item-ogc.geosrs.srs-6">
                                             <div class="card-body">
-                                                <div class="card-title mb-0">
+                                                <div class="card-title mb-0 anchor-container">
                                                     <button type="button" class="btn btn-sm btn-primary collapsed"
                                                             data-bs-toggle="collapse" data-bs-target="#uid-20"
                                                             aria-expanded="false" aria-controls="uid-20"
@@ -1002,6 +1041,7 @@
                                                     </button>
                                                     <a href="geosrs/srs/example_1_1.ttl" target="_blank">example_1_1.ttl</a>
                                                     <span class="badge bg-secondary example">Example</span>
+                                                    <a class="anchor" href="#item-ogc.geosrs.srs-6">¶</a>
                                                     <div class="float-end">
                                                             <span class="badge text-bg-success me-2">Passed</span>
                                                     </div>
@@ -1019,19 +1059,19 @@
   Conforms: True
   </div>
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/srs/rules.shacl:
- - Shape geosrs:CRS_datumEnsemble_Shape: *none*
- - Shape geosrs:SingleCRS_datum_Shape: *none*
- - Shape geosrs:CompoundCRS_includesSRS_Shape: *none*
- - Shape geosrs:GeographicCRS_coordinateSystem_Shape: *none*
- - Shape geosrs:ProjectedCRS_conversion_Shape: *none*
- - Shape geosrs:TemporalCRS_datum_Shape: *none*
- - Shape geosrs:ParametricCRS_datum_Shape: *none*
- - Shape geosrs:SingleCRS_coordinateSystem_Shape: *none*
- - Shape geosrs:GeographicCRS_datum_Shape: *none*
- - Shape geosrs:GeodeticCRS_coordinateSystem_Shape: *none*
- - Shape geosrs:CRS_datum_Shape: *none*
- - Shape geosrs:CRS_domainOfValidity_Shape: *none*
  - Shape geosrs:CRS_coordinateSystem_Shape: *none*
+ - Shape geosrs:CompoundCRS_includesSRS_Shape: *none*
+ - Shape geosrs:ProjectedCRS_conversion_Shape: *none*
+ - Shape geosrs:SingleCRS_datum_Shape: *none*
+ - Shape geosrs:SingleCRS_coordinateSystem_Shape: *none*
+ - Shape geosrs:ParametricCRS_datum_Shape: *none*
+ - Shape geosrs:CRS_domainOfValidity_Shape: *none*
+ - Shape geosrs:CRS_datum_Shape: *none*
+ - Shape geosrs:CRS_datumEnsemble_Shape: *none*
+ - Shape geosrs:GeodeticCRS_coordinateSystem_Shape: *none*
+ - Shape geosrs:TemporalCRS_datum_Shape: *none*
+ - Shape geosrs:GeographicCRS_coordinateSystem_Shape: *none*
+ - Shape geosrs:GeographicCRS_datum_Shape: *none*
 </div>
                                                     </div>
                                                 </div>
@@ -1054,13 +1094,20 @@
                         accordionEntries.forEach(e => e.classList.remove('show'));
                     }
                 });
-                if (location.hash.startsWith('#bblock-')) {
+                if (/^#(bblock|item)-/.test(location.hash)) {
                     const highlight = document.querySelector(location.hash.replaceAll('.', '\\.'));
                     if (highlight) {
-                        highlight.querySelector('.accordion-collapse').classList.add('show');
+                        highlight.closest('.accordion-collapse').classList.add('show');
                         highlight.classList.add('highlighted');
                     }
                 }
+                document.addEventListener('click', ev => {
+                    if (!ev.target.classList.contains('anchor') || !ev.target.href) {
+                      return;
+                    }
+                    ev.stopPropagation();
+                    navigator?.clipboard?.writeText(ev.target.href);
+                });
             });
         </script>
     </body>

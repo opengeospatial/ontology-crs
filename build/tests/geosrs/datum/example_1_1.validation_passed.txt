@@ -1,5 +1,5 @@
 Validation report for ogc.geosrs.datum - SRS Ontology - Datum module
-Generated 2026-02-23T01:31:11.655498+00:00
+Generated 2026-03-22T23:14:33.343884+00:00
 === Files ===
 Using examples/geodeticdatum.ttl from examples
 Output Turtle example_1_1.ttl created
@@ -15,13 +15,13 @@ Validation result for _sources/datum/rules.shacl:
   Conforms: True
   
 Focus nodes for _sources/datum/rules.shacl:
- - Shape geosrs:Datum_primeMeridian_Shape: *none*
- - Shape geosrs:Ellipsoid_eccentricity_Shape: *none*
  - Shape geosrs:Ellipsoid_inverseFlattening_Shape: *none*
  - Shape geosrs:ParametricDatum_definingParameter_Shape: *none*
  - Shape geosrs:Ellipsoid_semiMinorAxis_Shape: *none*
- - Shape geosrs:Datum_ellipsoid_Shape: *none*
  - Shape geosrs:Ellipsoid_semiMajorAxis_Shape: *none*
+ - Shape geosrs:Datum_primeMeridian_Shape: *none*
+ - Shape geosrs:Ellipsoid_eccentricity_Shape: *none*
+ - Shape geosrs:Datum_ellipsoid_Shape: *none*
 
 === End SHACL ===
 

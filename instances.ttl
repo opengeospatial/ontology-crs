@@ -4,8 +4,8 @@
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-geosrs:objprop a owl:Ontology ;
-    rdfs:label "SRS Ontology: Geosrs_objprop"@en ;
-    vann:preferredNamespacePrefix "geosrs_objprop"^^xsd:string ;
+geosrs:datatypeprop a owl:Ontology ;
+    rdfs:label "SRS Ontology: Geosrs_datatypeprop"@en ;
+    vann:preferredNamespacePrefix "geosrs_datatypeprop"^^xsd:string ;
     vann:preferredNamespaceUri "https://w3id.org/geosrs/"^^xsd:anyURI .
 

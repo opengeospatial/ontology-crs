@@ -18,7 +18,7 @@
     "/req/datum/Spheroid_Types"
   ],
   "version": "0.1",
-  "dateOfLastChange": "2026-03-22",
+  "dateOfLastChange": "2026-05-11",
   "sources": [
     {
       "title": "Spec Section",
@@ -37,7 +37,6 @@
   },
   "ontology": "https://opengeospatial.github.io/ontology-crs/build/annotated/geosrs/datum/ontology.ttl",
   "sourceFiles": "https://opengeospatial.github.io/ontology-crs/_sources/datum/",
-  "rdfData": [],
   "validationPassed": false,
   "testOutputs": "https://github.com/opengeospatial/ontology-crs/blob/master/build/tests/geosrs/datum/",
   "description": "## SRS Ontology Datum Module\n\nThis module describes how to model a datum using the SRS ontology vocabulary.\n\nDatum classes and properties are described under the namespace https://w3id.org/geosrs/datum/\n\n![SRS Ontology Datum Module](assets/datum.png)",
@@ -47,7 +46,7 @@
       "snippets": [
         {
           "language": "ttl",
-          "ref": "examples/geodeticdatum.ttl",
+          "ref": "https://opengeospatial.github.io/ontology-crs/_sources/datum/examples/geodeticdatum.ttl",
           "code": "@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix geosrs_datum:<https://w3id.org/geosrs/datum#> .\n@prefix exsrs: <https://w3id.org/example-data-srs#> .\n\nexsrs:mydatum rdf:type geosrs_datum:GeodeticDatum ;\n              rdfs:label \"European Datum 1950\" ;\n              geosrs_datum:ellipsoid exsrs:myellipsoid .\nexsrs:myellipsoid rdf:type geosrs_datum:Ellipsoid ;\n                  rdfs:label \"International 1924\" ;\n                  geosrs_datum:inverseFlattening 297 ;\n                  geosrs_datum:semiMajorAxis 6378388 .\n",
           "url": "https://opengeospatial.github.io/ontology-crs/build/tests/geosrs/datum/example_1_1.ttl"
         }

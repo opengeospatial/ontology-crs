@@ -2,7 +2,7 @@
   "title": "Validation report for ogc.geosrs.datum - SRS Ontology - Datum module",
   "bblockName": "SRS Ontology - Datum module",
   "bblockId": "ogc.geosrs.datum",
-  "generated": "2026-03-22T23:14:33.343935+00:00",
+  "generated": "2026-05-11T12:37:41.225841+00:00",
   "result": false,
   "items": [
     {
@@ -50,16 +50,10 @@
             {
               "shaclFile": "_sources/datum/rules.shacl",
               "focusNodes": {
-                "geosrs:Ellipsoid_inverseFlattening_Shape": {
-                  "nodes": []
-                },
-                "geosrs:ParametricDatum_definingParameter_Shape": {
-                  "nodes": []
-                },
-                "geosrs:Ellipsoid_semiMinorAxis_Shape": {
-                  "nodes": []
-                },
                 "geosrs:Ellipsoid_semiMajorAxis_Shape": {
+                  "nodes": []
+                },
+                "geosrs:Ellipsoid_inverseFlattening_Shape": {
                   "nodes": []
                 },
                 "geosrs:Datum_primeMeridian_Shape": {
@@ -70,10 +64,16 @@
                 },
                 "geosrs:Datum_ellipsoid_Shape": {
                   "nodes": []
+                },
+                "geosrs:ParametricDatum_definingParameter_Shape": {
+                  "nodes": []
+                },
+                "geosrs:Ellipsoid_semiMinorAxis_Shape": {
+                  "nodes": []
                 }
               },
               "isError": false,
-              "message": "Focus nodes for _sources/datum/rules.shacl:\n - Shape geosrs:Ellipsoid_inverseFlattening_Shape: *none*\n - Shape geosrs:ParametricDatum_definingParameter_Shape: *none*\n - Shape geosrs:Ellipsoid_semiMinorAxis_Shape: *none*\n - Shape geosrs:Ellipsoid_semiMajorAxis_Shape: *none*\n - Shape geosrs:Datum_primeMeridian_Shape: *none*\n - Shape geosrs:Ellipsoid_eccentricity_Shape: *none*\n - Shape geosrs:Datum_ellipsoid_Shape: *none*\n"
+              "message": "Focus nodes for _sources/datum/rules.shacl:\n - Shape geosrs:Ellipsoid_semiMajorAxis_Shape: *none*\n - Shape geosrs:Ellipsoid_inverseFlattening_Shape: *none*\n - Shape geosrs:Datum_primeMeridian_Shape: *none*\n - Shape geosrs:Ellipsoid_eccentricity_Shape: *none*\n - Shape geosrs:Datum_ellipsoid_Shape: *none*\n - Shape geosrs:ParametricDatum_definingParameter_Shape: *none*\n - Shape geosrs:Ellipsoid_semiMinorAxis_Shape: *none*\n"
             }
           ]
         }
@@ -113,16 +113,10 @@
             {
               "shaclFile": "_sources/datum/rules.shacl",
               "focusNodes": {
-                "geosrs:Ellipsoid_inverseFlattening_Shape": {
-                  "nodes": []
-                },
-                "geosrs:ParametricDatum_definingParameter_Shape": {
-                  "nodes": []
-                },
-                "geosrs:Ellipsoid_semiMinorAxis_Shape": {
-                  "nodes": []
-                },
                 "geosrs:Ellipsoid_semiMajorAxis_Shape": {
+                  "nodes": []
+                },
+                "geosrs:Ellipsoid_inverseFlattening_Shape": {
                   "nodes": []
                 },
                 "geosrs:Datum_primeMeridian_Shape": {
@@ -133,10 +127,16 @@
                 },
                 "geosrs:Datum_ellipsoid_Shape": {
                   "nodes": []
+                },
+                "geosrs:ParametricDatum_definingParameter_Shape": {
+                  "nodes": []
+                },
+                "geosrs:Ellipsoid_semiMinorAxis_Shape": {
+                  "nodes": []
                 }
               },
               "isError": false,
-              "message": "Focus nodes for _sources/datum/rules.shacl:\n - Shape geosrs:Ellipsoid_inverseFlattening_Shape: *none*\n - Shape geosrs:ParametricDatum_definingParameter_Shape: *none*\n - Shape geosrs:Ellipsoid_semiMinorAxis_Shape: *none*\n - Shape geosrs:Ellipsoid_semiMajorAxis_Shape: *none*\n - Shape geosrs:Datum_primeMeridian_Shape: *none*\n - Shape geosrs:Ellipsoid_eccentricity_Shape: *none*\n - Shape geosrs:Datum_ellipsoid_Shape: *none*\n"
+              "message": "Focus nodes for _sources/datum/rules.shacl:\n - Shape geosrs:Ellipsoid_semiMajorAxis_Shape: *none*\n - Shape geosrs:Ellipsoid_inverseFlattening_Shape: *none*\n - Shape geosrs:Datum_primeMeridian_Shape: *none*\n - Shape geosrs:Ellipsoid_eccentricity_Shape: *none*\n - Shape geosrs:Datum_ellipsoid_Shape: *none*\n - Shape geosrs:ParametricDatum_definingParameter_Shape: *none*\n - Shape geosrs:Ellipsoid_semiMinorAxis_Shape: *none*\n"
             }
           ]
         }
@@ -187,16 +187,10 @@
             {
               "shaclFile": "_sources/datum/rules.shacl",
               "focusNodes": {
-                "geosrs:Ellipsoid_inverseFlattening_Shape": {
-                  "nodes": []
-                },
-                "geosrs:ParametricDatum_definingParameter_Shape": {
-                  "nodes": []
-                },
-                "geosrs:Ellipsoid_semiMinorAxis_Shape": {
-                  "nodes": []
-                },
                 "geosrs:Ellipsoid_semiMajorAxis_Shape": {
+                  "nodes": []
+                },
+                "geosrs:Ellipsoid_inverseFlattening_Shape": {
                   "nodes": []
                 },
                 "geosrs:Datum_primeMeridian_Shape": {
@@ -207,10 +201,16 @@
                 },
                 "geosrs:Datum_ellipsoid_Shape": {
                   "nodes": []
+                },
+                "geosrs:ParametricDatum_definingParameter_Shape": {
+                  "nodes": []
+                },
+                "geosrs:Ellipsoid_semiMinorAxis_Shape": {
+                  "nodes": []
                 }
               },
               "isError": false,
-              "message": "Focus nodes for _sources/datum/rules.shacl:\n - Shape geosrs:Ellipsoid_inverseFlattening_Shape: *none*\n - Shape geosrs:ParametricDatum_definingParameter_Shape: *none*\n - Shape geosrs:Ellipsoid_semiMinorAxis_Shape: *none*\n - Shape geosrs:Ellipsoid_semiMajorAxis_Shape: *none*\n - Shape geosrs:Datum_primeMeridian_Shape: *none*\n - Shape geosrs:Ellipsoid_eccentricity_Shape: *none*\n - Shape geosrs:Datum_ellipsoid_Shape: *none*\n"
+              "message": "Focus nodes for _sources/datum/rules.shacl:\n - Shape geosrs:Ellipsoid_semiMajorAxis_Shape: *none*\n - Shape geosrs:Ellipsoid_inverseFlattening_Shape: *none*\n - Shape geosrs:Datum_primeMeridian_Shape: *none*\n - Shape geosrs:Ellipsoid_eccentricity_Shape: *none*\n - Shape geosrs:Datum_ellipsoid_Shape: *none*\n - Shape geosrs:ParametricDatum_definingParameter_Shape: *none*\n - Shape geosrs:Ellipsoid_semiMinorAxis_Shape: *none*\n"
             }
           ]
         }
@@ -250,16 +250,10 @@
             {
               "shaclFile": "_sources/datum/rules.shacl",
               "focusNodes": {
-                "geosrs:Ellipsoid_inverseFlattening_Shape": {
-                  "nodes": []
-                },
-                "geosrs:ParametricDatum_definingParameter_Shape": {
-                  "nodes": []
-                },
-                "geosrs:Ellipsoid_semiMinorAxis_Shape": {
-                  "nodes": []
-                },
                 "geosrs:Ellipsoid_semiMajorAxis_Shape": {
+                  "nodes": []
+                },
+                "geosrs:Ellipsoid_inverseFlattening_Shape": {
                   "nodes": []
                 },
                 "geosrs:Datum_primeMeridian_Shape": {
@@ -270,10 +264,16 @@
                 },
                 "geosrs:Datum_ellipsoid_Shape": {
                   "nodes": []
+                },
+                "geosrs:ParametricDatum_definingParameter_Shape": {
+                  "nodes": []
+                },
+                "geosrs:Ellipsoid_semiMinorAxis_Shape": {
+                  "nodes": []
                 }
               },
               "isError": false,
-              "message": "Focus nodes for _sources/datum/rules.shacl:\n - Shape geosrs:Ellipsoid_inverseFlattening_Shape: *none*\n - Shape geosrs:ParametricDatum_definingParameter_Shape: *none*\n - Shape geosrs:Ellipsoid_semiMinorAxis_Shape: *none*\n - Shape geosrs:Ellipsoid_semiMajorAxis_Shape: *none*\n - Shape geosrs:Datum_primeMeridian_Shape: *none*\n - Shape geosrs:Ellipsoid_eccentricity_Shape: *none*\n - Shape geosrs:Datum_ellipsoid_Shape: *none*\n"
+              "message": "Focus nodes for _sources/datum/rules.shacl:\n - Shape geosrs:Ellipsoid_semiMajorAxis_Shape: *none*\n - Shape geosrs:Ellipsoid_inverseFlattening_Shape: *none*\n - Shape geosrs:Datum_primeMeridian_Shape: *none*\n - Shape geosrs:Ellipsoid_eccentricity_Shape: *none*\n - Shape geosrs:Datum_ellipsoid_Shape: *none*\n - Shape geosrs:ParametricDatum_definingParameter_Shape: *none*\n - Shape geosrs:Ellipsoid_semiMinorAxis_Shape: *none*\n"
             }
           ]
         }
@@ -333,16 +333,10 @@
             {
               "shaclFile": "_sources/datum/rules.shacl",
               "focusNodes": {
-                "geosrs:Ellipsoid_inverseFlattening_Shape": {
-                  "nodes": []
-                },
-                "geosrs:ParametricDatum_definingParameter_Shape": {
-                  "nodes": []
-                },
-                "geosrs:Ellipsoid_semiMinorAxis_Shape": {
-                  "nodes": []
-                },
                 "geosrs:Ellipsoid_semiMajorAxis_Shape": {
+                  "nodes": []
+                },
+                "geosrs:Ellipsoid_inverseFlattening_Shape": {
                   "nodes": []
                 },
                 "geosrs:Datum_primeMeridian_Shape": {
@@ -353,10 +347,16 @@
                 },
                 "geosrs:Datum_ellipsoid_Shape": {
                   "nodes": []
+                },
+                "geosrs:ParametricDatum_definingParameter_Shape": {
+                  "nodes": []
+                },
+                "geosrs:Ellipsoid_semiMinorAxis_Shape": {
+                  "nodes": []
                 }
               },
               "isError": false,
-              "message": "Focus nodes for _sources/datum/rules.shacl:\n - Shape geosrs:Ellipsoid_inverseFlattening_Shape: *none*\n - Shape geosrs:ParametricDatum_definingParameter_Shape: *none*\n - Shape geosrs:Ellipsoid_semiMinorAxis_Shape: *none*\n - Shape geosrs:Ellipsoid_semiMajorAxis_Shape: *none*\n - Shape geosrs:Datum_primeMeridian_Shape: *none*\n - Shape geosrs:Ellipsoid_eccentricity_Shape: *none*\n - Shape geosrs:Datum_ellipsoid_Shape: *none*\n"
+              "message": "Focus nodes for _sources/datum/rules.shacl:\n - Shape geosrs:Ellipsoid_semiMajorAxis_Shape: *none*\n - Shape geosrs:Ellipsoid_inverseFlattening_Shape: *none*\n - Shape geosrs:Datum_primeMeridian_Shape: *none*\n - Shape geosrs:Ellipsoid_eccentricity_Shape: *none*\n - Shape geosrs:Datum_ellipsoid_Shape: *none*\n - Shape geosrs:ParametricDatum_definingParameter_Shape: *none*\n - Shape geosrs:Ellipsoid_semiMinorAxis_Shape: *none*\n"
             }
           ]
         }

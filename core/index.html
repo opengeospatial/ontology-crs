@@ -1,1267 +1,176 @@
-<!DOCTYPE html>
-<html lang="en">
+
+<html>
 <head>
-    <title>SRS Ontology</title>
-    <link rel="icon" type="image/png" sizes="32x32" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAC40lEQVRYhe2UT0hUQRzHp6Iss1B3VZKIDbbdfW9mnoi4f3zzjkJQeOgS0SEIb1EWBGGlLLu460zQPQM1unUIIjA6rfpm6ZAhHjoIRVQUFUlEbG+euTsdXG1d3VL3bVD4g+9h+L35fT/8fvN7ADgY9aHY5fpIvK82HO9ysu66wxWOzbkjcekKx0a2ALYA/n2AGi3a6ArFezcidziecQygNhhrcUficjP6PwBqtGijKxy/thnVBePHywYoDsFhl53GV8SEcsTx4usCMLUewTVpc23BNvEzm6Neyf1+KcG2vwqwUjgrOJq2JmHftwmkVBRGTvncFodnbI7vChO/FRznCmHsNM7aHM9Yk7Df5iqsLMw9sMNOK2g+jS4IEz0UJv4iuJZb2RltWnB4UZqH6ioGAgAAGe5vtiZhtzDx7OoRadLmeM7m6IRjhnLMW2Vx1bA5GhAmnhIcz6/xNj4Ujsky8UspwfayjDPjsF2Y6L7N8Vzx/BfP+KPg6LbgSqd8DnfJW2CnbaLhfH5ephpqygJYvQU4Z3P82TLRsDDhUTnmrSq+Y3N0Mg+Xldy/zwEAnLMWZ3pHpNExmfLs/t0dOdVcbT0JeKxUwFP2VljjqiE47Jp53LTXNxhsUZjerTByXWX6VZWRs/4bIQ2ACv+UAomgDzLCISNZxAxZKMhIDjLy1JfsaK+I+eGBUBNk5E2x8RogX/PdcDZUqieWTSh5D6nOVKqfhoycUmlHFFIyu5RXqf7AcQDISCpv/tqbMBqK883RtmpISRoxQyJKPgGn3wNk5NEigDFa6hslqV/Kj+FdBQD0bshIDlKSLlVcoWQo36UhR80BAMB73lulMn0EMpJTqD6qJiOt3mho/8GbkT2BZNgDB/V+RI0fkOrT3kRIVQbaDizJm2hdNbINBxwk5xAj3yEjuV9rZ1iIkgxixkLBA83mz8uCjLwoGwAx0vOnFSy5mtR4VTaAQvVORMnwZgSpzkrV/QmdE2tKe46+MQAAAABJRU5ErkJggg==">
-    <link rel="icon" type="image/png" sizes="16x16" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABhklEQVQ4jbWPzStEURjG3yQLirlGKUnKFO45Z+SjmXvnnmthQcpCoVhYmD/AwmJiI3OvZuZc2U3UlKU0/gAslMw9JgvhHxAr2fko7r0jHSsl+TgbTz2Lt5731/MASEiJW9ONml2QyX6rsGalmnT74v8BDf12hxJfpV8d1uwNKUBYszabdFv84L8B9X0rESVmmUup2fme0cVhJWaZHw4NWL1Sew
-EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ9Hn31OgoATL+CkLDGB5H1OKj4nFd/FBxUXJ0UZNb4edw/6nLyJXaj5FeCVyPLNIVmYK8TG1IwWb16L1gEACAFV90ftoT8bdOX0EeyY99gxBXZMgRz6qGb1KantAACI0UvE6F5XJqEjpsdURouI0Vt5gGOUkUNnPu7ObGIIMfNaGqDmjDRi9FZldF1lRgYzeqUyeoiY4ag5Iy3RgOYRM8+/M2bG8efsO4hGrpmJseyMAAAAAElFTkSuQmCC">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    
-    <style>
-        #pylode {
-            position: fixed;
-            top: 130px;
-            left: -60px;
-            font-size: small;
-            transform: rotate(-90deg);
-            color: grey;
-        }
-        #pylode a {
-            font-size: 2em;
-            font-weight: bold;
-            text-decoration: none;
-            color: #005A9C;
-        }
-        #pylode a:hover {
-            color: #333;
-        }
-
-        .cardinality {
-            font-style: italic;
-            color: #aa00aa;
-        }
-
-        dt {
-            font-weight: bold;
-            padding: 5px 0 5px 0;
-        }
-
-        ul.hlist {
-            list-style-type: none;
-            border: 1px solid navy;
-            padding:5px;
-            background-color: #F4FFFF;
-        }
-
-        ul.hierarchy {
-            border: 1px solid navy;
-            padding: 5px 25px 5px 25px;
-            background-color: #F4FFFF;
-        }
-
-
-        ul.hlist li {
-            display: inline;
-            margin-right: 10px;
-        }
-
-        .entity {
-            border: 1px solid navy;
-            margin:5px 0 5px 0;
-            padding: 5px;
-        }
-
-        .entity th {
-            width: 150px;
-            vertical-align: top;
-        }
-
-        .entity th,
-        .entity td {
-            padding-bottom: 20px;
-        }
-
-        .entity table th {
-            text-align: left;
-        }
-
-        section#overview img {
-            max-width: 1000px;
-        }
-
-        h1, h2, h3, h4, h5, h6 {
-            text-align: left
-        }
-        h1, h2, h3 {
-            color: #005A9C; background: white
-        }
-        h1 {
-            font: 170% sans-serif;
-            line-height: 110%;
-        }
-        h2 {
-            font: 140% sans-serif;
-            margin-top:40px;
-        }
-        h3 {
-            font: 120% sans-serif;
-            margin-top: 3px;
-            padding-bottom: 5px;
-            border-bottom: 1px solid navy;
-        }
-        h4 { font: bold 100% sans-serif }
-        h5 { font: italic 100% sans-serif }
-        h6 { font: small-caps 100% sans-serif }
-
-
-        body {
-            padding: 2em 70px 2em 70px;
-            margin: 0;
-            font-family: sans-serif;
-            color: black;
-            background: white;
-            background-position: top left;
-            background-attachment: fixed;
-            background-repeat: no-repeat;
-            text-align: justify;
-        }
-
-        section {
-            max-width: 1500px;
-        }
-
-        .figure {
-            margin-bottom: 20px;
-        }
-
-        :link { color: #00C; background: transparent }
-        :visited { color: #609; background: transparent }
-        a:active { color: #C00; background: transparent }
-
-        .sup-c,
-        .sup-op,
-        .sup-fp,
-        .sup-dp,
-        .sup-ap,
-        .sup-p,
-        .sup-ni,
-        .sup-con,
-        .sup-col {
-            cursor:help;
-            margin-left: 3px;
-        }
-
-        .sup-c {
-            color:orange;
-        }
-
-        .sup-op {
-            color:navy;
-        }
-
-        .sup-fp {
-            color:lightskyblue;
-        }
-
-        .sup-dp {
-            color:green;
-        }
-
-        .sup-ap {
-            color:darkred;
-        }
-
-        .sup-p {
-            color:black;
-        }
-
-        .sup-ni {
-            color:brown;
-        }
-
-        .sup-con {
-            color:orange;
-        }
-
-        .sup-col {
-            color:darkred;
-        }
-
-        code {
-            font-size: large;
-            color: darkred;
-        }
-
-        /* less prominent links for properties */
-        .proplink {
-            color: #336;
-            text-decoration: none;
-        }
-    </style>
-    
-    <script type="application/ld+json">
-      [
-  {
-    "@id": "https://w3id.org/geosrs",
-    "@type": [
-      "https://schema.org/DefinedTermSet"
-    ],
-    "https://schema.org/name": [
-      {
-        "@value": "SRS Ontology"
-      }
-    ]
-  }
-]
-    </script>
+<title>Widoco Classtree {{title}}</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.3.9/jstree.min.js"></script>
+<script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"/>
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.2.1/themes/default/style.min.css" />
+ <style>
+ html {
+    position: relative;
+    min-height: 100%;
+}
+.fill { 
+	max-height: 95%;
+    min-height: 95%;
+    height: 95%;
+}
+</style>
 </head>
 <body>
-  <div id="pylode">made by <a href="http://github.com/rdflib/pyLODE">
-    <span style="color:#329545;">p</span><span style="color:#f9cb33;">y</span>LODE</a>
-    <span style="font-size:smaller;">2.13.2</span>
-  </div>
-  <h1>SRS Ontology</h1>
-<section id="metadata">
-    <h2 style="display:none;">Metadata</h2>
-    <dl>
-        <dt>URI</dt>
-        <dd><code>https://w3id.org/geosrs</code></dd>
-        <dt>Ontology RDF</dt>
-        <dd><a href="index.ttl">RDF (turtle)</a></dd>
-    </dl>
-</section>
-<section id="toc">
-    <h2>Table of Contents</h2>
-    <ol>
-        <li><a href="#classes">Classes</a></li>
-        <li><a href="#objectproperties">Object Properties</a></li>
-        <li><a href="#datatypeproperties">Datatype Properties</a></li>
-        <li><a href="#namespaces">Namespaces</a></li>
-        <li><a href="#legend">Legend</a></li>
-    </ol>
-</section>
-<section id="overview">
-    <h2>Overview</h2>
-    <div class="figure">
-        <div style="background-color: lightgrey; border:solid 2px grey; padding:10px;margin-bottom:5px; text-align:center;"><img src="../images/core.png"/></div>
-        <div class="caption"><strong>Figure 1:</strong> Ontology overview</div>
-    </div>
-</section>
-  <section id="classes">
-    <h2>Classes <span style="float:right; font-size:smaller;"><a href="">&uparrow;</a></span></h2>
-    <ul class="hlist">
-      <li><a href="#CartesianCoordinateSystem">Cartesian Coordinate System</a></li>
-      <li><a href="#Conversion">Conversion</a></li>
-      <li><a href="#CoordinateOperation">Coordinate Operation</a></li>
-      <li><a href="#CoordinateSystem">Coordinate System</a></li>
-      <li><a href="#CoordinateSystemAxis">Coordinate System Axis</a></li>
-      <li><a href="#Datum1">Datum</a></li>
-      <li><a href="#Ellipsoid">Ellipsoid</a></li>
-      <li><a href="#EllipsoidalCoordinateSystem">Ellipsoidal Coordinate System</a></li>
-      <li><a href="#GeneralOperationParameter">General Operation Parameter</a></li>
-      <li><a href="#GeneralParameterValue">General Parameter Value</a></li>
-      <li><a href="#GeodeticDatum">Geodetic Datum</a></li>
-      <li><a href="#LinearCoordinateSystem">Linear Coordinate System</a></li>
-      <li><a href="#OperationMethod">Operation Method</a></li>
-      <li><a href="#OperationParameter">Operation Parameter</a></li>
-      <li><a href="#OperationParameterValue">Operation Parameter Value</a></li>
-      <li><a href="#OrdinalCoordinateSystem">Ordinal Coordinate System</a></li>
-      <li><a href="#ParametricCoordinateSystem">Parametric Coordinate System</a></li>
-      <li><a href="#PolarCoordinateSystem">Polar Coordinate System</a></li>
-      <li><a href="#Primemeridian">Prime meridian</a></li>
-      <li><a href="#SingleOperation">Single Operation</a></li>
-      <li><a href="#SphericalCoordinateSystem">Spherical Coordinate System</a></li>
-      <li><a href="#Transformation">Transformation</a></li>
-      <li><a href="#VerticalCoordinateSystem">Vertical Coordinate System</a></li>
-      <li><a href="#VerticalDatum">Vertical Datum</a></li>
-    </ul>
-    <div class="entity class" id="CartesianCoordinateSystem">
-        <h3>
-          Cartesian Coordinate System<sup title="class" class="sup-c">c</sup>
-          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#CartesianCoordinateSystem" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
-        </h3>
-        <table>
-            <tr>
-                <th>URI</th>
-                <td><code>https://w3id.org/geosrs/CartesianCoordinateSystem</code></td>
-            </tr>
-            <tr>
-                <th>Description</th>
-                <td>
-                    <p>Coordinate system which gives the position of points relative to n mutually perpendicular axes. Cf. ISO 19111:2007:2007-07, tables 15 and 18.</p>
-                </td>
-            </tr>
-            <tr>
-                <th>Super-classes</th>
-                <td>
-                    <a href="https://w3id.org/geosrs/srs/SingleCRS">https://w3id.org/geosrs/srs/SingleCRS</a><sup class="sup-c" title="class">c</sup><br/>
-                </td>
-            </tr>
-        </table>
-    </div>
-    <div class="entity class" id="Conversion">
-        <h3>
-          Conversion<sup title="class" class="sup-c">c</sup>
-          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#Conversion" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
-        </h3>
-        <table>
-            <tr>
-                <th>URI</th>
-                <td><code>https://w3id.org/geosrs/Conversion</code></td>
-            </tr>
-            <tr>
-                <th>Description</th>
-                <td>
-                    <p>Coordinate operation in which both coordinate reference systems are based on the same datum. Cf. ISO 19111:2007:2007-07, table 45 and annex B.4.2.</p>
-                </td>
-            </tr>
-            <tr>
-                <th>Super-classes</th>
-                <td>
-                    <a href="#CoordinateOperation">Coordinate Operation</a><sup class="sup-c" title="class">c</sup><br/>
-                </td>
-            </tr>
-            <tr>
-                <th>Sub-classes</th>
-                <td>
-                    <a href="#Transformation">Transformation</a><sup class="sup-c" title="class">c</sup><br/>
-                </td>
-            </tr>
-            <tr>
-                <th>In range of</th>
-                <td>
-                    <a href="#Definedbyconversion">Defined by conversion</a><sup class="sup-op" title="object property">op</sup><br/>
-                </td>
-            </tr>
-        </table>
-    </div>
-    <div class="entity class" id="CoordinateOperation">
-        <h3>
-          Coordinate Operation<sup title="class" class="sup-c">c</sup>
-          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#CoordinateOperation" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
-        </h3>
-        <table>
-            <tr>
-                <th>URI</th>
-                <td><code>https://w3id.org/geosrs/CoordinateOperation</code></td>
-            </tr>
-            <tr>
-                <th>Description</th>
-                <td>
-                    <p>Mathematical operation on coordinates, based on one-to-one relationship, that changes coordinates from one coordinate reference system to another. Cf. ISO 19111:2007:2007-07, part 11.1, table 42 and annex B.4.</p>
-                </td>
-            </tr>
-            <tr>
-                <th>Super-classes</th>
-                <td>
-                    <a href="#OperationMethod">Operation Method</a><sup class="sup-c" title="class">c</sup><br/>
-                </td>
-            </tr>
-            <tr>
-                <th>Sub-classes</th>
-                <td>
-                    <a href="#SingleOperation">Single Operation</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#Conversion">Conversion</a><sup class="sup-c" title="class">c</sup><br/>
-                </td>
-            </tr>
-            <tr>
-                <th>In range of</th>
-                <td>
-                    <a href="#Method">Method</a><sup class="sup-op" title="object property">op</sup><br/>
-                </td>
-            </tr>
-        </table>
-    </div>
-    <div class="entity class" id="CoordinateSystem">
-        <h3>
-          Coordinate System<sup title="class" class="sup-c">c</sup>
-          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#CoordinateSystem" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
-        </h3>
-        <table>
-            <tr>
-                <th>URI</th>
-                <td><code>https://w3id.org/geosrs/CoordinateSystem</code></td>
-            </tr>
-            <tr>
-                <th>Description</th>
-                <td>
-                    <p>Set of axes that spans a given coordinate space and of mathematical rules for specifying how coordinates are to be assigned to points. Cf. ISO 19111:2007:2007-07, part 9.2, table 17 and annex B.2.</p>
-                </td>
-            </tr>
-            <tr>
-                <th>Sub-classes</th>
-                <td>
-                    <a href="#LinearCoordinateSystem">Linear Coordinate System</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#VerticalCoordinateSystem">Vertical Coordinate System</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#OrdinalCoordinateSystem">Ordinal Coordinate System</a><sup class="sup-c" title="class">c</sup><br/>
-                </td>
-            </tr>
-            <tr>
-                <th>In range of</th>
-                <td>
-                    <a href="#Coordinatesystem">Coordinate system</a><sup class="sup-op" title="object property">op</sup><br/>
-                </td>
-            </tr>
-        </table>
-    </div>
-    <div class="entity class" id="CoordinateSystemAxis">
-        <h3>
-          Coordinate System Axis<sup title="class" class="sup-c">c</sup>
-          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#CoordinateSystemAxis" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
-        </h3>
-        <table>
-            <tr>
-                <th>URI</th>
-                <td><code>https://w3id.org/geosrs/CoordinateSystemAxis</code></td>
-            </tr>
-            <tr>
-                <th>Description</th>
-                <td>
-                    <p>Axis relative to which a coordinate of a point is specified in a coordinate system. See ISO 19111:2007:2007-07, part 9.3, table 27 and annex B.2.2.</p>
-                </td>
-            </tr>
-        </table>
-    </div>
-    <div class="entity class" id="Datum1">
-        <h3>
-          Datum<sup title="class" class="sup-c">c</sup>
-          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#Datum1" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
-        </h3>
-        <table>
-            <tr>
-                <th>URI</th>
-                <td><code>https://w3id.org/geosrs/Datum</code></td>
-            </tr>
-            <tr>
-                <th>Description</th>
-                <td>
-                    <p>Parameter or set of parameters that define the position of the origin, the scale and the orientation of a coordinate system. Cf. ISO 19111:2007:2007-07, part 10.1, table 33 and annex B.3.</p>
-                </td>
-            </tr>
-            <tr>
-                <th>Sub-classes</th>
-                <td>
-                    <a href="#VerticalDatum">Vertical Datum</a><sup class="sup-c" title="class">c</sup><br/>
-                </td>
-            </tr>
-            <tr>
-                <th>In range of</th>
-                <td>
-                    <a href="#Datum">Datum</a><sup class="sup-op" title="object property">op</sup><br/>
-                </td>
-            </tr>
-        </table>
-    </div>
-    <div class="entity class" id="Ellipsoid">
-        <h3>
-          Ellipsoid<sup title="class" class="sup-c">c</sup>
-          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#Ellipsoid" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
-        </h3>
-        <table>
-            <tr>
-                <th>URI</th>
-                <td><code>https://w3id.org/geosrs/Ellipsoid</code></td>
-            </tr>
-            <tr>
-                <th>Description</th>
-                <td>
-                    <p>Surface formed by the rotation of an ellipse about its minor axis, defined by a semi-major axis and a flattening parameter and fairly geocentric. NB : It is a mathematical model of the geoid, i.e. the Earth without its relief. Many geodetic ellipsoids exist. Cf. ISO 19111:2007:2007-07, part 10.2.2, table 36 and annex B.3.2.3.</p>
-                </td>
-            </tr>
-        </table>
-    </div>
-    <div class="entity class" id="EllipsoidalCoordinateSystem">
-        <h3>
-          Ellipsoidal Coordinate System<sup title="class" class="sup-c">c</sup>
-          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#EllipsoidalCoordinateSystem" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
-        </h3>
-        <table>
-            <tr>
-                <th>URI</th>
-                <td><code>https://w3id.org/geosrs/EllipsoidalCoordinateSystem</code></td>
-            </tr>
-            <tr>
-                <th>Description</th>
-                <td>
-                    <p>Coordinate system which gives the position is specified by geodetic latitude, geodetic longitude and (in the three-dimensional case) ellipsoidal height. Cf. ISO 19111:2007:2007-07, tables 15 and 20.</p>
-                </td>
-            </tr>
-            <tr>
-                <th>Super-classes</th>
-                <td>
-                    <a href="https://w3id.org/geosrs/cs/OrthogonalCoordinateSystem">https://w3id.org/geosrs/cs/OrthogonalCoordinateSystem</a><sup class="sup-c" title="class">c</sup><br/>
-                </td>
-            </tr>
-        </table>
-    </div>
-    <div class="entity class" id="GeneralOperationParameter">
-        <h3>
-          General Operation Parameter<sup title="class" class="sup-c">c</sup>
-          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#GeneralOperationParameter" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
-        </h3>
-        <table>
-            <tr>
-                <th>URI</th>
-                <td><code>https://w3id.org/geosrs/GeneralOperationParameter</code></td>
-            </tr>
-            <tr>
-                <th>Description</th>
-                <td>
-                    <p>Definition of a parameter or group of parameters used by a coordinate operation method.</p>
-                </td>
-            </tr>
-            <tr>
-                <th>Sub-classes</th>
-                <td>
-                    <a href="#OperationParameter">Operation Parameter</a><sup class="sup-c" title="class">c</sup><br/>
-                </td>
-            </tr>
-        </table>
-    </div>
-    <div class="entity class" id="GeneralParameterValue">
-        <h3>
-          General Parameter Value<sup title="class" class="sup-c">c</sup>
-          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#GeneralParameterValue" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
-        </h3>
-        <table>
-            <tr>
-                <th>URI</th>
-                <td><code>https://w3id.org/geosrs/GeneralParameterValue</code></td>
-            </tr>
-            <tr>
-                <th>Description</th>
-                <td>
-                    <p>Parameter value or group of parameter values</p>
-                </td>
-            </tr>
-            <tr>
-                <th>Sub-classes</th>
-                <td>
-                    <a href="#OperationParameterValue">Operation Parameter Value</a><sup class="sup-c" title="class">c</sup><br/>
-                </td>
-            </tr>
-        </table>
-    </div>
-    <div class="entity class" id="GeodeticDatum">
-        <h3>
-          Geodetic Datum<sup title="class" class="sup-c">c</sup>
-          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#GeodeticDatum" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
-        </h3>
-        <table>
-            <tr>
-                <th>URI</th>
-                <td><code>https://w3id.org/geosrs/GeodeticDatum</code></td>
-            </tr>
-            <tr>
-                <th>Description</th>
-                <td>
-                    <p>Datum describing the relation of a two- or three-dimensional coordinate system to the Earth. Cf. ISO 19111:2007:2007-07, part 10.2, table 34 and annex B.3.2.</p>
-                </td>
-            </tr>
-        </table>
-    </div>
-    <div class="entity class" id="LinearCoordinateSystem">
-        <h3>
-          Linear Coordinate System<sup title="class" class="sup-c">c</sup>
-          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#LinearCoordinateSystem" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
-        </h3>
-        <table>
-            <tr>
-                <th>URI</th>
-                <td><code>https://w3id.org/geosrs/LinearCoordinateSystem</code></td>
-            </tr>
-            <tr>
-                <th>Description</th>
-                <td>
-                    <p>One-dimensional coordinate system in which a linear feature forms the axis.</p>
-                </td>
-            </tr>
-            <tr>
-                <th>Super-classes</th>
-                <td>
-                    <a href="#CoordinateSystem">Coordinate System</a><sup class="sup-c" title="class">c</sup><br/>
-                </td>
-            </tr>
-        </table>
-    </div>
-    <div class="entity class" id="OperationMethod">
-        <h3>
-          Operation Method<sup title="class" class="sup-c">c</sup>
-          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#OperationMethod" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
-        </h3>
-        <table>
-            <tr>
-                <th>URI</th>
-                <td><code>https://w3id.org/geosrs/OperationMethod</code></td>
-            </tr>
-            <tr>
-                <th>Description</th>
-                <td>
-                    <p>Method used to perform an operation on coordinates. See ISO 19111:2007:2007-07, table 48 and annex B.4.5.</p>
-                </td>
-            </tr>
-            <tr>
-                <th>Sub-classes</th>
-                <td>
-                    <a href="#CoordinateOperation">Coordinate Operation</a><sup class="sup-c" title="class">c</sup><br/>
-                </td>
-            </tr>
-        </table>
-    </div>
-    <div class="entity class" id="OperationParameter">
-        <h3>
-          Operation Parameter<sup title="class" class="sup-c">c</sup>
-          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#OperationParameter" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
-        </h3>
-        <table>
-            <tr>
-                <th>URI</th>
-                <td><code>https://w3id.org/geosrs/OperationParameter</code></td>
-            </tr>
-            <tr>
-                <th>Description</th>
-                <td>
-                    <p>Parameter used by a method to perform an operation on coordinates. Note: Most parameter values are numeric, but other types of parameter values are possible. See ISO 19111:2007:2007-07, table 52 and annex B.4.5.</p>
-                </td>
-            </tr>
-            <tr>
-                <th>Super-classes</th>
-                <td>
-                    <a href="#GeneralOperationParameter">General Operation Parameter</a><sup class="sup-c" title="class">c</sup><br/>
-                </td>
-            </tr>
-        </table>
-    </div>
-    <div class="entity class" id="OperationParameterValue">
-        <h3>
-          Operation Parameter Value<sup title="class" class="sup-c">c</sup>
-          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#OperationParameterValue" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
-        </h3>
-        <table>
-            <tr>
-                <th>URI</th>
-                <td><code>https://w3id.org/geosrs/OperationParameterValue</code></td>
-            </tr>
-            <tr>
-                <th>Description</th>
-                <td>
-                    <p>Value of a parameter used by a method to perform an operation on coordinates. See ISO 19111:2007:2007-07, table 55.</p>
-                </td>
-            </tr>
-            <tr>
-                <th>Super-classes</th>
-                <td>
-                    <a href="#GeneralParameterValue">General Parameter Value</a><sup class="sup-c" title="class">c</sup><br/>
-                </td>
-            </tr>
-        </table>
-    </div>
-    <div class="entity class" id="OrdinalCoordinateSystem">
-        <h3>
-          Ordinal Coordinate System<sup title="class" class="sup-c">c</sup>
-          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#OrdinalCoordinateSystem" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
-        </h3>
-        <table>
-            <tr>
-                <th>URI</th>
-                <td><code>https://w3id.org/geosrs/OrdinalCoordinateSystem</code></td>
-            </tr>
-            <tr>
-                <th>Description</th>
-                <td>
-                    <p>n-dimensional coordinate system in which every axis uses integers.</p>
-                </td>
-            </tr>
-            <tr>
-                <th>Super-classes</th>
-                <td>
-                    <a href="#CoordinateSystem">Coordinate System</a><sup class="sup-c" title="class">c</sup><br/>
-                </td>
-            </tr>
-        </table>
-    </div>
-    <div class="entity class" id="ParametricCoordinateSystem">
-        <h3>
-          Parametric Coordinate System<sup title="class" class="sup-c">c</sup>
-          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#ParametricCoordinateSystem" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
-        </h3>
-        <table>
-            <tr>
-                <th>URI</th>
-                <td><code>https://w3id.org/geosrs/ParametricCoordinateSystem</code></td>
-            </tr>
-            <tr>
-                <th>Description</th>
-                <td>
-                    <p>One-dimensional coordinate system where the axis units are parameter values which are not inherently spatial.</p>
-                </td>
-            </tr>
-            <tr>
-                <th>Super-classes</th>
-                <td>
-                    <a href="https://w3id.org/geosrs/cs/1DCoordinateSystem">https://w3id.org/geosrs/cs/1DCoordinateSystem</a><sup class="sup-c" title="class">c</sup><br/>
-                </td>
-            </tr>
-        </table>
-    </div>
-    <div class="entity class" id="PolarCoordinateSystem">
-        <h3>
-          Polar Coordinate System<sup title="class" class="sup-c">c</sup>
-          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#PolarCoordinateSystem" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
-        </h3>
-        <table>
-            <tr>
-                <th>URI</th>
-                <td><code>https://w3id.org/geosrs/PolarCoordinateSystem</code></td>
-            </tr>
-            <tr>
-                <th>Description</th>
-                <td>
-                    <p>Two-dimensional coordinate system in Euclidean space in which position is specified by one distance coordinate and one angular coordinate.</p>
-                </td>
-            </tr>
-            <tr>
-                <th>Super-classes</th>
-                <td>
-                    <a href="https://w3id.org/geosrs/cs/PlanarCoordinateSystem">https://w3id.org/geosrs/cs/PlanarCoordinateSystem</a><sup class="sup-c" title="class">c</sup><br/>
-                </td>
-            </tr>
-        </table>
-    </div>
-    <div class="entity class" id="Primemeridian">
-        <h3>
-          Prime meridian<sup title="class" class="sup-c">c</sup>
-          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#Primemeridian" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
-        </h3>
-        <table>
-            <tr>
-                <th>URI</th>
-                <td><code>https://w3id.org/geosrs/PrimeMeridian</code></td>
-            </tr>
-            <tr>
-                <th>Description</th>
-                <td>
-                    <p>Meridian from which the longitudes of other meridians are quantified. Cf. ISO 19111:2007:2007-07, part 10.2.1, table 35 and annex B.3.2.2.</p>
-                </td>
-            </tr>
-        </table>
-    </div>
-    <div class="entity class" id="SingleOperation">
-        <h3>
-          Single Operation<sup title="class" class="sup-c">c</sup>
-          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#SingleOperation" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
-        </h3>
-        <table>
-            <tr>
-                <th>URI</th>
-                <td><code>https://w3id.org/geosrs/SingleOperation</code></td>
-            </tr>
-            <tr>
-                <th>Description</th>
-                <td>
-                    <p>A non concatenated coordinate operation. Cf. ISO 19111:2007:2007-07, table 43.</p>
-                </td>
-            </tr>
-            <tr>
-                <th>Super-classes</th>
-                <td>
-                    <a href="#CoordinateOperation">Coordinate Operation</a><sup class="sup-c" title="class">c</sup><br/>
-                </td>
-            </tr>
-        </table>
-    </div>
-    <div class="entity class" id="SphericalCoordinateSystem">
-        <h3>
-          Spherical Coordinate System<sup title="class" class="sup-c">c</sup>
-          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#SphericalCoordinateSystem" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
-        </h3>
-        <table>
-            <tr>
-                <th>URI</th>
-                <td><code>https://w3id.org/geosrs/SphericalCoordinateSystem</code></td>
-            </tr>
-            <tr>
-                <th>Description</th>
-                <td>
-                    <p>Three-dimensional coordinate system in Euclidean space with one distance measured from the origin and two angular coordinates</p>
-                </td>
-            </tr>
-            <tr>
-                <th>Super-classes</th>
-                <td>
-                    <a href="https://w3id.org/geosrs/cs/3DCoordinateSystem">https://w3id.org/geosrs/cs/3DCoordinateSystem</a><sup class="sup-c" title="class">c</sup><br/>
-                </td>
-            </tr>
-        </table>
-    </div>
-    <div class="entity class" id="Transformation">
-        <h3>
-          Transformation<sup title="class" class="sup-c">c</sup>
-          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#Transformation" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
-        </h3>
-        <table>
-            <tr>
-                <th>URI</th>
-                <td><code>https://w3id.org/geosrs/Transformation</code></td>
-            </tr>
-            <tr>
-                <th>Description</th>
-                <td>
-                    <p>Coordinate operation in which the two coordinate reference systems are based on different datums. Cf. ISO 19111:2007:2007-07, table 44.</p>
-                </td>
-            </tr>
-            <tr>
-                <th>Super-classes</th>
-                <td>
-                    <a href="#Conversion">Conversion</a><sup class="sup-c" title="class">c</sup><br/>
-                </td>
-            </tr>
-        </table>
-    </div>
-    <div class="entity class" id="VerticalCoordinateSystem">
-        <h3>
-          Vertical Coordinate System<sup title="class" class="sup-c">c</sup>
-          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#VerticalCoordinateSystem" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
-        </h3>
-        <table>
-            <tr>
-                <th>URI</th>
-                <td><code>https://w3id.org/geosrs/VerticalCoordinateSystem</code></td>
-            </tr>
-            <tr>
-                <th>Description</th>
-                <td>
-                    <p>One-dimensional coordinate system used for gravity related height or depth measurements. Cf. ISO 19111:2007:2007-07, tables 15 and 25.</p>
-                </td>
-            </tr>
-            <tr>
-                <th>Super-classes</th>
-                <td>
-                    <a href="#CoordinateSystem">Coordinate System</a><sup class="sup-c" title="class">c</sup><br/>
-                </td>
-            </tr>
-        </table>
-    </div>
-    <div class="entity class" id="VerticalDatum">
-        <h3>
-          Vertical Datum<sup title="class" class="sup-c">c</sup>
-          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#VerticalDatum" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
-        </h3>
-        <table>
-            <tr>
-                <th>URI</th>
-                <td><code>https://w3id.org/geosrs/VerticalDatum</code></td>
-            </tr>
-            <tr>
-                <th>Description</th>
-                <td>
-                    <p>Datum describing the relation of gravity-related heights or depths to the Earth. Cf. ISO 19111:2007:2007-07, table 41 and annex B.3.3.</p>
-                </td>
-            </tr>
-            <tr>
-                <th>Super-classes</th>
-                <td>
-                    <a href="#Datum1">Datum</a><sup class="sup-c" title="class">c</sup><br/>
-                </td>
-            </tr>
-        </table>
-    </div>
-</section>
-<section id="objectproperties">
-    <h2>Object Properties <span style="float:right; font-size:smaller;"><a href="">&uparrow;</a></span></h2>
-    <ul class="hlist">
-        <li><a href="#BaseCRS">Base CRS</a></li>
-        <li><a href="#Definedbyconversion">Defined by conversion</a></li>
-        <li><a href="#Coordinatesystem">Coordinate system</a></li>
-        <li><a href="#Datum">Datum</a></li>
-        <li><a href="#DatumEnsemble">Datum Ensemble</a></li>
-        <li><a href="#Domainofvalidity">Domain of validity</a></li>
-        <li><a href="#Method">Method</a></li>
-    </ul>
-    <div class="entity property" id="BaseCRS">
-        <h3>Base CRS<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
-            <a href="#BaseCRS" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
-        </h3>
-        <table>
-            <tr>
-                <th>URI</th>
-                <td><code>https://w3id.org/geosrs/baseCRS</code></td>
-            </tr>
-            <tr>
-                <th>Description</th>
-                <td>
-                    <p>The geodetic coordinate reference system on which a projected coordinate reference system is based. Cf. ISO 19111:2007:2007-07, table 11, association role baseCRS.</p>
-                </td>
-            </tr>
-            <tr>
-                <th>Domain(s)</th>
-                <td>
-                    <a href="https://w3id.org/geosrs/srs/ProjectedCRS">https://w3id.org/geosrs/srs/ProjectedCRS</a><sup class="sup-c" title="class">c</sup>
-                </td>
-            </tr>
-            <tr>
-                <th>Range(s)</th>
-                <td>
-                    <a href="https://w3id.org/geosrs/srs/GeodeticCRS">https://w3id.org/geosrs/srs/GeodeticCRS</a><sup class="sup-c" title="class">c</sup>
-                </td>
-            </tr>
-        </table>
-    </div>
-    <div class="entity property" id="Definedbyconversion">
-        <h3>Defined by conversion<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
-            <a href="#Definedbyconversion" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
-        </h3>
-        <table>
-            <tr>
-                <th>URI</th>
-                <td><code>https://w3id.org/geosrs/conversion</code></td>
-            </tr>
-            <tr>
-                <th>Description</th>
-                <td>
-                    <p>The conversion used to define a projected coordinate reference system. Cf. ISO 19111:2007:2007-07, table 7, named association Definition.</p>
-                </td>
-            </tr>
-            <tr>
-                <th>Domain(s)</th>
-                <td>
-                    <a href="https://w3id.org/geosrs/srs/CRS">https://w3id.org/geosrs/srs/CRS</a><sup class="sup-c" title="class">c</sup>
-                </td>
-            </tr>
-            <tr>
-                <th>Range(s)</th>
-                <td>
-                    <a href="https://w3id.org/geosrs/Conversion">geosrs:Conversion</a><sup class="sup-c" title="class">c</sup>
-                </td>
-            </tr>
-        </table>
-    </div>
-    <div class="entity property" id="Coordinatesystem">
-        <h3>Coordinate system<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
-            <a href="#Coordinatesystem" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
-        </h3>
-        <table>
-            <tr>
-                <th>URI</th>
-                <td><code>https://w3id.org/geosrs/coordinateSystem</code></td>
-            </tr>
-            <tr>
-                <th>Description</th>
-                <td>
-                    <p>The property relates a coordinate reference system to its coordinate system</p>
-                </td>
-            </tr>
-            <tr>
-                <th>Domain(s)</th>
-                <td>
-                    <a href="https://w3id.org/geosrs/srs/CRS">https://w3id.org/geosrs/srs/CRS</a><sup class="sup-c" title="class">c</sup>
-                </td>
-            </tr>
-            <tr>
-                <th>Range(s)</th>
-                <td>
-                    <a href="https://w3id.org/geosrs/CoordinateSystem">geosrs:CoordinateSystem</a><sup class="sup-c" title="class">c</sup>
-                </td>
-            </tr>
-        </table>
-    </div>
-    <div class="entity property" id="Datum">
-        <h3>Datum<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
-            <a href="#Datum" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
-        </h3>
-        <table>
-            <tr>
-                <th>URI</th>
-                <td><code>https://w3id.org/geosrs/datum</code></td>
-            </tr>
-            <tr>
-                <th>Description</th>
-                <td>
-                    <p>The property relates a coordinate reference system to a datum</p>
-                </td>
-            </tr>
-            <tr>
-                <th>Domain(s)</th>
-                <td>
-                    <a href="https://w3id.org/geosrs/srs/CRS">https://w3id.org/geosrs/srs/CRS</a><sup class="sup-c" title="class">c</sup>
-                </td>
-            </tr>
-            <tr>
-                <th>Range(s)</th>
-                <td>
-                    <a href="https://w3id.org/geosrs/Datum">geosrs:Datum</a><sup class="sup-c" title="class">c</sup>
-                </td>
-            </tr>
-        </table>
-    </div>
-    <div class="entity property" id="DatumEnsemble">
-        <h3>Datum Ensemble<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
-            <a href="#DatumEnsemble" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
-        </h3>
-        <table>
-            <tr>
-                <th>URI</th>
-                <td><code>https://w3id.org/geosrs/datumEnsemble</code></td>
-            </tr>
-            <tr>
-                <th>Description</th>
-                <td>
-                    <p>Indicates a single CRS referring to a collection of one or more datums (Datum Ensemble)</p>
-                </td>
-            </tr>
-            <tr>
-                <th>Domain(s)</th>
-                <td>
-                    <a href="https://w3id.org/geosrs/srs/SingleCRS">https://w3id.org/geosrs/srs/SingleCRS</a><sup class="sup-c" title="class">c</sup>
-                </td>
-            </tr>
-            <tr>
-                <th>Range(s)</th>
-                <td>
-                    <a href="https://w3id.org/geosrs/datum/DatumEnsemble">https://w3id.org/geosrs/datum/DatumEnsemble</a><sup class="sup-c" title="class">c</sup>
-                </td>
-            </tr>
-        </table>
-    </div>
-    <div class="entity property" id="Domainofvalidity">
-        <h3>Domain of validity<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
-            <a href="#Domainofvalidity" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
-        </h3>
-        <table>
-            <tr>
-                <th>URI</th>
-                <td><code>https://w3id.org/geosrs/domainOfValidity</code></td>
-            </tr>
-            <tr>
-                <th>Description</th>
-                <td>
-                    <p>Geographic area or time interval in which the referring object is valid. Cf. ISO 19111:2007:2007-07, tables 4, 33 and 42, attribute domainOfValidity.</p>
-                </td>
-            </tr>
-            <tr>
-                <th>Domain(s)</th>
-                <td>
-                    <a href="https://w3id.org/geosrs/srs/CRS">https://w3id.org/geosrs/srs/CRS</a><sup class="sup-c" title="class">c</sup>
-                </td>
-            </tr>
-            <tr>
-                <th>Range(s)</th>
-                <td>
-                    <a href="https://w3id.org/geosrs/srs/AreaOfUse">https://w3id.org/geosrs/srs/AreaOfUse</a><sup class="sup-c" title="class">c</sup>
-                </td>
-            </tr>
-        </table>
-    </div>
-    <div class="entity property" id="Method">
-        <h3>Method<sup title="object property" class="sup-op">op</sup><span style="float:right; margin-right:10px; font-size:smaller;">
-            <a href="#Method" title="fragment link to here">#</a>&nbsp;<a href="#objectproperties" title="Object Properties Index">OPs</a></span>
-        </h3>
-        <table>
-            <tr>
-                <th>URI</th>
-                <td><code>https://w3id.org/geosrs/method</code></td>
-            </tr>
-            <tr>
-                <th>Domain(s)</th>
-                <td>
-                    <a href="https://w3id.org/geosrs/srs/CRS">https://w3id.org/geosrs/srs/CRS</a><sup class="sup-c" title="class">c</sup>
-                </td>
-            </tr>
-            <tr>
-                <th>Range(s)</th>
-                <td>
-                    <a href="https://w3id.org/geosrs/CoordinateOperation">geosrs:CoordinateOperation</a><sup class="sup-c" title="class">c</sup>
-                </td>
-            </tr>
-        </table>
-    </div>
-</section>
-
-<section id="datatypeproperties">
-    <h2>Datatype Properties <span style="float:right; font-size:smaller;"><a href="">&uparrow;</a></span></h2>
-    <ul class="hlist">
-        <li><a href="#EPSGcode">EPSG code</a></li>
-        <li><a href="#PROJ4string">PROJ4 string</a></li>
-        <li><a href="#PROJJSONdefinition">PROJ JSON definition</a></li>
-        <li><a href="#WKTdefinition">WKT definition</a></li>
-    </ul>
-    <div class="entity property" id="EPSGcode">
-        <h3>EPSG code<sup title="datatype property" class="sup-dp">dp</sup><span style="float:right; margin-right:10px; font-size:smaller;">
-            <a href="#EPSGcode" title="fragment link to here">#</a>&nbsp;<a href="#datatypeproperties" title="Datatype Properties Index">DPs</a></span>
-        </h3>
-        <table>
-            <tr>
-                <th>URI</th>
-                <td><code>https://w3id.org/geosrs/EPSGcode</code></td>
-            </tr>
-            <tr>
-                <th>Description</th>
-                <td>
-                    <p>Identifier of this resource in the EPSG Geodetic Parameter Dataset.</p>
-                </td>
-            </tr>
-            <tr>
-                <th>Range(s)</th>
-                <td>
-                    <a href="xsd:string">xsd:string</a><sup class="sup-c" title="class">c</sup>
-                </td>
-            </tr>
-        </table>
-    </div>
-    <div class="entity property" id="PROJ4string">
-        <h3>PROJ4 string<sup title="datatype property" class="sup-dp">dp</sup><span style="float:right; margin-right:10px; font-size:smaller;">
-            <a href="#PROJ4string" title="fragment link to here">#</a>&nbsp;<a href="#datatypeproperties" title="Datatype Properties Index">DPs</a></span>
-        </h3>
-        <table>
-            <tr>
-                <th>URI</th>
-                <td><code>https://w3id.org/geosrs/asProj4</code></td>
-            </tr>
-            <tr>
-                <th>Description</th>
-                <td>
-                    <p>PROJ4 string defining a CRS. Note: this paradigm is ambiguous and presently considered outdated.</p>
-                </td>
-            </tr>
-            <tr>
-                <th>Domain(s)</th>
-                <td>
-                    <a href="https://w3id.org/geosrs/srs/CRS">https://w3id.org/geosrs/srs/CRS</a><sup class="sup-c" title="class">c</sup>
-                </td>
-            </tr>
-            <tr>
-                <th>Range(s)</th>
-                <td>
-                    <a href="https://w3id.org/geosrs/srs/proj4Literal">https://w3id.org/geosrs/srs/proj4Literal</a><sup class="sup-c" title="class">c</sup>
-                </td>
-            </tr>
-        </table>
-    </div>
-    <div class="entity property" id="PROJJSONdefinition">
-        <h3>PROJ JSON definition<sup title="datatype property" class="sup-dp">dp</sup><span style="float:right; margin-right:10px; font-size:smaller;">
-            <a href="#PROJJSONdefinition" title="fragment link to here">#</a>&nbsp;<a href="#datatypeproperties" title="Datatype Properties Index">DPs</a></span>
-        </h3>
-        <table>
-            <tr>
-                <th>URI</th>
-                <td><code>https://w3id.org/geosrs/asProjJSON</code></td>
-            </tr>
-            <tr>
-                <th>Description</th>
-                <td>
-                    <p>CRS definition encoded as a JSON object interpretable by PROJ4.</p>
-                </td>
-            </tr>
-            <tr>
-                <th>Domain(s)</th>
-                <td>
-                    <a href="https://w3id.org/geosrs/srs/CRS">https://w3id.org/geosrs/srs/CRS</a><sup class="sup-c" title="class">c</sup>
-                </td>
-            </tr>
-            <tr>
-                <th>Range(s)</th>
-                <td>
-                    <a href="https://w3id.org/geosrs/srs/projJSONLiteral">https://w3id.org/geosrs/srs/projJSONLiteral</a><sup class="sup-c" title="class">c</sup>
-                </td>
-            </tr>
-        </table>
-    </div>
-    <div class="entity property" id="WKTdefinition">
-        <h3>WKT definition<sup title="datatype property" class="sup-dp">dp</sup><span style="float:right; margin-right:10px; font-size:smaller;">
-            <a href="#WKTdefinition" title="fragment link to here">#</a>&nbsp;<a href="#datatypeproperties" title="Datatype Properties Index">DPs</a></span>
-        </h3>
-        <table>
-            <tr>
-                <th>URI</th>
-                <td><code>https://w3id.org/geosrs/asWKT</code></td>
-            </tr>
-            <tr>
-                <th>Description</th>
-                <td>
-                    <p>CRS definition encoded according to the Well Known Text structure. Cf. ISO 19162:2019. </p>
-                </td>
-            </tr>
-            <tr>
-                <th>Domain(s)</th>
-                <td>
-                    <a href="https://w3id.org/geosrs/srs/CRS">https://w3id.org/geosrs/srs/CRS</a><sup class="sup-c" title="class">c</sup>
-                </td>
-            </tr>
-            <tr>
-                <th>Range(s)</th>
-                <td>
-                    <a href="https://w3id.org/geosrs/srs/wktLiteral">https://w3id.org/geosrs/srs/wktLiteral</a><sup class="sup-c" title="class">c</sup>
-                </td>
-            </tr>
-        </table>
-    </div>
-</section>
-
-  
-  <section id="namespaces">
-    <h2>Namespaces <span style="float:right; font-size:smaller;"><a href="">&uparrow;</a></span></h2>
-    <dl>
-        <dt>default (geosrs)</dt>
-        <dd><code>https://w3id.org/geosrs/</code></dd>
-        <dt>brick</dt>
-        <dd><code>https://brickschema.org/schema/Brick#</code></dd>
-        <dt>csvw</dt>
-        <dd><code>http://www.w3.org/ns/csvw#</code></dd>
-        <dt>dc</dt>
-        <dd><code>http://purl.org/dc/elements/1.1/</code></dd>
-        <dt>dcam</dt>
-        <dd><code>http://purl.org/dc/dcam/</code></dd>
-        <dt>dcat</dt>
-        <dd><code>http://www.w3.org/ns/dcat#</code></dd>
-        <dt>dcmitype</dt>
-        <dd><code>http://purl.org/dc/dcmitype/</code></dd>
-        <dt>dcterms</dt>
-        <dd><code>http://purl.org/dc/terms/</code></dd>
-        <dt>doap</dt>
-        <dd><code>http://usefulinc.com/ns/doap#</code></dd>
-        <dt>foaf</dt>
-        <dd><code>http://xmlns.com/foaf/0.1/</code></dd>
-        <dt>geo</dt>
-        <dd><code>http://www.opengis.net/ont/geosparql#</code></dd>
-        <dt>odrl</dt>
-        <dd><code>http://www.w3.org/ns/odrl/2/</code></dd>
-        <dt>org</dt>
-        <dd><code>http://www.w3.org/ns/org#</code></dd>
-        <dt>owl</dt>
-        <dd><code>http://www.w3.org/2002/07/owl#</code></dd>
-        <dt>prof</dt>
-        <dd><code>http://www.w3.org/ns/dx/prof/</code></dd>
-        <dt>prov</dt>
-        <dd><code>http://www.w3.org/ns/prov#</code></dd>
-        <dt>qb</dt>
-        <dd><code>http://purl.org/linked-data/cube#</code></dd>
-        <dt>rdf</dt>
-        <dd><code>http://www.w3.org/1999/02/22-rdf-syntax-ns#</code></dd>
-        <dt>rdfs</dt>
-        <dd><code>http://www.w3.org/2000/01/rdf-schema#</code></dd>
-        <dt>sdo</dt>
-        <dd><code>https://schema.org/</code></dd>
-        <dt>sh</dt>
-        <dd><code>http://www.w3.org/ns/shacl#</code></dd>
-        <dt>skos</dt>
-        <dd><code>http://www.w3.org/2004/02/skos/core#</code></dd>
-        <dt>sosa</dt>
-        <dd><code>http://www.w3.org/ns/sosa/</code></dd>
-        <dt>ssn</dt>
-        <dd><code>http://www.w3.org/ns/ssn/</code></dd>
-        <dt>time</dt>
-        <dd><code>http://www.w3.org/2006/time#</code></dd>
-        <dt>vann</dt>
-        <dd><code>http://purl.org/vocab/vann/</code></dd>
-        <dt>void</dt>
-        <dd><code>http://rdfs.org/ns/void#</code></dd>
-        <dt>wgs</dt>
-        <dd><code>https://www.w3.org/2003/01/geo/wgs84_pos#</code></dd>
-        <dt>xsd</dt>
-        <dd><code>http://www.w3.org/2001/XMLSchema#</code></dd>
-    </dl>
-</section>
-  <section id="legend">
-      <h2>Legend</h2>
-      <table class="entity">
-          <tr><td><sup class="sup-c" title="Classes">c</sup></td><td>Classes</td></tr>
-          <tr><td><sup class="sup-op" title="Object Properties">op</sup></td><td>Object Properties</td></tr>
-          <tr><td><sup class="sup-fp" title="Functional Properties">fp</sup></td><td>Functional Properties</td></tr>
-          <tr><td><sup class="sup-dp" title="Data Properties">dp</sup></td><td>Data Properties</td></tr>
-          <tr><td><sup class="sup-ap" title="Annotation Properties">ap</sup></td><td>Annotation Properties</td></tr>
-          <tr><td><sup class="sup-p" title="Properties">p</sup></td><td>Properties</td></tr>
-          <tr><td><sup class="sup-ni" title="Named Individuals">ni</sup></td><td>Named Individuals</td></tr>
-      </table>
-  </section>
+<header id="header">
+<h1 align="center">Core Module</h1>
+</header>
+<div class="container-fluid fill" role="main"><div class="row fill">
+<div class="col-sm-3 fill">
+Search Classes: <input id="search-input" class="search-input" />
+<br /><fieldset id="classesinds"><input id="classes" type="radio" name="classesinds" checked="checked"/>Classes&nbsp;<input type="radio" name="classesinds" id="individuals"/>Individuals</fieldset><br/>
+<div id="jstree_demo_div" class="overflow-auto" style="height:44%">Loading tree...</div>
+<div id="jstree_demo_div1" class="overflow-auto" style="height:44%;display:none" >Loading tree...</div>
+<hr/>
+Search Properties: <input id="search-input2" class="search-input" />
+<br />
+<fieldset id="properties">
+<input id="objprop" name="properties" type="radio" checked="checked"/>ObjectProperties&nbsp;<input type="radio" name="properties" id="dataprop"/>DatatypeProperties<!--&nbsp;<input name="properties" type="radio" id="annoprop"/>AnnotationProperties--></fieldset><br/>
+<div id="jstree_demo_div2" class="overflow-auto" style="height:44%" style="visibility:hidden">Loading tree...</div>
+<div id="jstree_demo_div3" class="overflow-auto" style="height:44%;display:none">Loading tree...</div>
+<div id="jstree_demo_div4" class="overflow-auto" style="height:44%;display:none">Loading tree...</div>
+</div>
+<div class="col-sm-9" style="min-height:100%;height:100%">
+<iframe width="100%" height="100%" id="ontview" src="content.html">
+</iframe>
+</div></div></div>
+<!--
+<button onClick="genclassTree()">
+Generate Class Tree</button>-->
+<footer id="footer">
+</footer>
 </body>
+<script src="classtree.js"></script>
+<script>
+function goToId(id) {
+    if(id.includes("#")){
+		var iframe = document.getElementById("ontview").contentWindow.location.hash=id.substring(id.lastIndexOf('#')+1);
+	}else if(id.startsWith("http")){
+		var iframe = document.getElementById("ontview").contentWindow.location.hash=id.substring(id.lastIndexOf('/')+1);
+	}else{
+		var iframe = document.getElementById("ontview").contentWindow.location.hash=id;
+	}
+}
+function genclassTree(){
+	$('#jstree_demo_div').jstree(generateClassTree(["class"],"has super-classes",true));
+	$('#jstree_demo_div1').jstree(generateClassTree(["named individual"],"belongs to",false));
+	$('#jstree_demo_div2').jstree(generateClassTree(["object property"],"has super-properties",false));
+	$('#jstree_demo_div3').jstree(generateClassTree(["data property","datatype property"],"has super-properties",false));
+	//$('#jstree_demo_div4').jstree(generateClassTree(["annotation property"],""));
+	$('#annoprop').click(function() {
+        $('#jstree_demo_div2').hide();
+        $('#jstree_demo_div3').hide();
+        $('#jstree_demo_div4').show();
+        $( "#search-input2").unbind( "keyup" );
+        $("#search-input2").keyup(function () {
+            var searchString = $(this).val();
+            $('#jstree_demo_div4').jstree('search', searchString);
+        });
+    });
+    $('#dataprop').click(function() {
+        $('#jstree_demo_div2').hide();
+        $('#jstree_demo_div3').show();
+        $('#jstree_demo_div4').hide();
+        $( "#search-input2").unbind( "keyup" );
+        $("#search-input2").keyup(function () {
+            var searchString = $(this).val();
+            $('#jstree_demo_div3').jstree('search', searchString);
+        });
+    });
+    $('#objprop').click(function() {
+        $('#jstree_demo_div2').show();
+        $('#jstree_demo_div3').hide();
+        $('#jstree_demo_div4').hide();
+        $( "#search-input2").unbind( "keyup" );
+        $("#search-input2").keyup(function () {
+            var searchString = $(this).val();
+            $('#jstree_demo_div2').jstree('search', searchString);
+        });
+    });
+    $('#classes').click(function() {
+        $('#jstree_demo_div').show();
+        $('#jstree_demo_div1').hide();
+        $( "#search-input").unbind( "keyup" );
+        $("#search-input").keyup(function () {
+            var searchString = $(this).val();
+            $('#jstree_demo_div').jstree('search', searchString);
+        });
+    });
+    $('#individuals').click(function() {
+        $('#jstree_demo_div').hide();
+        $('#jstree_demo_div1').show();
+        $( "#search-input").unbind( "keyup" );
+        $("#search-input").keyup(function () {
+            var searchString = $(this).val();
+            $('#jstree_demo_div1').jstree('search', searchString);
+        });
+    });
+    $("#jstree_demo_div").on(
+        "select_node.jstree", function(evt, data){
+			//console.log(data)
+			//console.log(data.node.id)
+			goToId(data.node.id)
+            //selected node object: data.node;
+        }
+	);
+	$("#jstree_demo_div1").on(
+        "select_node.jstree", function(evt, data){
+			//console.log(data)
+			//console.log(data.node.id)
+			goToId(data.node.id)
+            //selected node object: data.node;
+        }
+	);
+	$("#jstree_demo_div2").on(
+        "select_node.jstree", function(evt, data){
+			//console.log(data)
+			//console.log(data.node.id)
+			goToId(data.node.id)
+            //selected node object: data.node;
+        }
+	);
+		$("#jstree_demo_div3").on(
+        "select_node.jstree", function(evt, data){
+			//console.log(data)
+			//console.log(data.node.id)
+			goToId(data.node.id)
+            //selected node object: data.node;
+        }
+	);
+		$("#jstree_demo_div4").on(
+        "select_node.jstree", function(evt, data){
+			//console.log(data)
+			//console.log(data.node.id)
+			goToId(data.node.id)
+            //selected node object: data.node;
+        }
+	);
+}
+$('#ontview').on('load', function(){
+	genclassTree();
+	const anchor = window.location.hash;
+	if(anchor!=null && anchor!=""){
+		goToId(anchor)
+	}
+});
+ $("#search-input").keyup(function () {
+      var searchString = $(this).val();
+     $('#jstree_demo_div').jstree('search', searchString);
+ });
+  $("#search-input2").keyup(function () {
+      var searchString = $(this).val();
+     $('#jstree_demo_div2').jstree('search', searchString);
+ });
+ 
+</script>
 </html>

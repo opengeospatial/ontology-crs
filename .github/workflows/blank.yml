@@ -49,6 +49,7 @@ jobs:
          cd core
          pylode -o index.html -i index.ttl
          cd ..
+         python ../scripts/classtreedoc.py --input core/index.html --output core/content.html --title "Core Module"
          pylode -o co/index.html -i co.ttl
          cp co.ttl ../_sources/co/ontology.ttl
          python ../scripts/classtreedoc.py --input co/index.html --output co/content.html --title "Coordinate Operation Module"

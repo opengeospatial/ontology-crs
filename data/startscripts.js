@@ -1113,7 +1113,9 @@ function initThreeJS(domelement,verts,meshurls) {
                     color: 0xffffff,
                     flatShading: true,
                     vertexColors: THREE.VertexColors,
-                    wireframe: false
+                    wireframe: false,
+  					emissive: new THREE.Color(1, 1, 1),
+  					emissiveIntensity: 0.8
                 });
                 const mesh = new THREE.Mesh(object, material);
                 objects.add(mesh);

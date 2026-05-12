@@ -105,16 +105,18 @@ def convertCSVToSHACLAndADoc():
     abspath = os.path.join(dirname, '../csv/shacl/')
 
     directory = os.fsencode(abspath)
-
+    
     for file in os.listdir(directory):
         filename = os.fsdecode(file)
         shapecounter=1
         if filename.endswith(".csv"):
+            curns="https://w3id.org/geosrs/"+filename.replace(".csv","").replace("core","")+"/"
             curshaclres=Graph()
             curshaclres.bind("geosrs", "https://w3id.org/geosrs/") 
             curshaclres.bind("sh","http://www.w3.org/ns/shacl#")
             curshaclres.bind("sf","http://www.opengis.net/ont/sf#")
             curshaclres.bind("rdf","http://www.w3.org/1999/02/22-rdf-syntax-ns#")
+            alreadyprocessed=set()
             with open(abspath+filename, newline='') as csvfile:
                 reader = csv.DictReader(csvfile)
                 adocdef+="===== SHACL Shapes: "+str(filename).replace(".csv","").capitalize()+"\n\n"
@@ -122,23 +124,27 @@ def convertCSVToSHACLAndADoc():
                 adocdef+="|Label|TargetNode|Property|Class|MinCount|MaxCount|Comment\n\n"
                 for row in reader:
                     if "Concept" in row and row["Concept"]!="":
-                        shapeuri=row["Concept"].replace("geosrs:","https://w3id.org/geosrs/")+"Shape"
-                        shapepropuri=row["Concept"].replace("geosrs:","https://w3id.org/geosrs/")+"Shape_Property"
+                        shapeuri=row["Concept"].replace("geosrs:","https://w3id.org/geosrs/")+"_"+str(row["Property"].replace("geosrs:",""))+"_Shape"
+                        shapepropuri=row["Concept"].replace("geosrs:","https://w3id.org/geosrs/")+"_"+str(row["Property"].replace("geosrs:",""))+"_Shape_Property"
                         shaclres.add((URIRef(shapeuri),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef("http://www.w3.org/ns/shacl#NodeShape")))
                         shaclres.add((URIRef(shapeuri),URIRef("http://www.w3.org/2000/01/rdf-schema#label"),Literal("CRS Ontology Shape S"+str(shapecounter),lang="en")))
-                        shaclres.add((URIRef(shapeuri),URIRef("http://www.w3.org/ns/shacl#targetNode"),URIRef(row["Concept"].replace("geosrs:","https://w3id.org/geosrs/"))))
+                        shaclres.add((URIRef(shapeuri),URIRef("http://www.w3.org/ns/shacl#targetClass"),URIRef(row["Concept"].replace("geosrs:",curns))))
                         shaclres.add((URIRef(shapeuri),URIRef("http://www.w3.org/ns/shacl#property"),URIRef(shapepropuri)))
+                        shaclres.add((URIRef(shapepropuri),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef("http://www.w3.org/ns/shacl#PropertyShape")))
+                        shaclres.add((URIRef(shapepropuri),URIRef("http://www.w3.org/ns/shacl#path"),URIRef(str(row["Property"]).replace("geosrs:",curns))))
                         curshaclres.add((URIRef(shapeuri),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef("http://www.w3.org/ns/shacl#NodeShape")))
                         curshaclres.add((URIRef(shapeuri),URIRef("http://www.w3.org/2000/01/rdf-schema#label"),Literal("CRS Ontology Shape S"+str(shapecounter),lang="en")))
-                        curshaclres.add((URIRef(shapeuri),URIRef("http://www.w3.org/ns/shacl#targetNode"),URIRef(row["Concept"].replace("geosrs:","https://w3id.org/geosrs/"))))
+                        curshaclres.add((URIRef(shapeuri),URIRef("http://www.w3.org/ns/shacl#targetClass"),URIRef(row["Concept"].replace("geosrs:",curns))))
                         curshaclres.add((URIRef(shapeuri),URIRef("http://www.w3.org/ns/shacl#property"),URIRef(shapepropuri)))
+                        curshaclres.add((URIRef(shapepropuri),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef("http://www.w3.org/ns/shacl#PropertyShape")))
+                        curshaclres.add((URIRef(shapepropuri),URIRef("http://www.w3.org/ns/shacl#path"),URIRef(str(row["Property"]).replace("geosrs:",curns))))
                         adocdef+="|Shape S"+str(shapecounter)+" "
                         adocdef+="|"+str(row["Concept"])+" "
                         adocdef+="|"+str(row["Property"])+" "
                         if "Class" in row and row["Class"]!="":
                             adocdef+="|"+str(row["Class"])+" "
-                            shaclres.add((URIRef(shapepropuri),URIRef("http://www.w3.org/ns/shacl#class"),URIRef(str(row["Class"]).replace("geosrs:","https://w3id.org/geosrs/"))))
-                            curshaclres.add((URIRef(shapepropuri),URIRef("http://www.w3.org/ns/shacl#class"),URIRef(str(row["Class"]).replace("geosrs:","https://w3id.org/geosrs/"))))
+                            shaclres.add((URIRef(shapepropuri),URIRef("http://www.w3.org/ns/shacl#class"),URIRef(str(row["Class"]).replace("geosrs:",curns).replace("xsd:","http://www.w3.org/2001/XMLSchema#"))))
+                            curshaclres.add((URIRef(shapepropuri),URIRef("http://www.w3.org/ns/shacl#class"),URIRef(str(row["Class"]).replace("geosrs:",curns).replace("xsd:","http://www.w3.org/2001/XMLSchema#"))))
                         else:
                             adocdef+="| - "
                         if "MinCount" in row and row["MinCount"]!="":
@@ -162,8 +168,8 @@ def convertCSVToSHACLAndADoc():
                         adocdef+="\n\n"
                     shapecounter+=1
                 adocdef+="|===\n\n"
-            os.makedirs(str(filename[0:filename.rfind(".")]),exist_ok=True)
-            curshaclres.serialize(str(filename[0:filename.rfind(".")])+"/"+str(filename[0:filename.rfind(".")])+"_rules.ttl",format="ttl")
+            #os.makedirs(str(filename[0:filename.rfind(".")]),exist_ok=True)
+            curshaclres.serialize("docs/"+str(filename[0:filename.rfind(".")])+"/"+str(filename[0:filename.rfind(".")])+"_rules.ttl",format="ttl")
     with open("spec/sections/ac-shacl_shapes.adoc", 'r',encoding="utf-8") as f:
         ashaclshapes=f.read()
     with open("spec/sections/ac-shacl_shapes.adoc", 'w',encoding="utf-8") as f:
@@ -316,10 +322,10 @@ for file in os.listdir(directory):
                 if "Concept" in row and row["Concept"]!="":
                     core=False
                     if "Core Class?" in row and row["Core Class?"]=="Core Ontology":
-                        adocdef="===== Class: "+str(row["Concept"])+"\n\n"
+                        adocdef="[[class_"+str(row["Concept"]).replace(" ","_")+"]]\n\n===== Class: "+str(row["Concept"])+"\n\n"
                         if "Description" in row and row["Description"]!="":
                             adocdef+=row["Description"]+"\n\n"
-                        adocdef+="."+str(row["Concept"])+"\n[cols=\"1,1\"]\n|===\n"
+                        adocdef+="."+str(row["Concept"])+"\n[cols=\"1,10\"]\n|===\n"
                         adocdef+="|Type\n|http://www.w3.org/2002/07/owl#Class[owl:Class]\n\n"
                         adocdef+="|URI\n|"+str(row["Concept"].replace(coreprefix+":",curns))+"\n\n"
                         core=True
@@ -365,6 +371,10 @@ for file in os.listdir(directory):
                                 clsuri=row["SuperClass"].replace("geosrs:", getNSForClass(row["SuperClass"],classToPrefix))
                                 adocdef+=clsuri+"["+clsuri[clsuri.rfind("/")+1:]+"] "
                             adocdef+="\n\n"
+                        print(os.getcwd())
+                        print("Exists? spec/figures/classes/"+str(row["Concept"].replace("geosrs:",""))+".png"+" - "+str(os.path.exists("spec/figures/classes/"+str(row["Concept"].replace("geosrs:",""))+".png")))
+                        if os.path.exists(str(os.getcwd())+"/spec/figures/classes/"+str(row["Concept"].replace("geosrs:",""))+".png"):
+                            adocdef+="|Image\n|image:classes/"+str(row["Concept"].replace("geosrs:",""))+".png["+str(row["Concept"].replace("geosrs:",""))+" Image]\n\n"
                         if row["Concept"] in examples:
                             adocdef+="|Example\n|"+examples[row["Concept"]]+"["+row["Concept"]+",window=_blank]\n\n"
                         if "DisjointClass" in row and row["DisjointClass"]!="":
@@ -376,10 +386,10 @@ for file in os.listdir(directory):
                         moduleToAdoc["06-core.adoc"][row["Concept"].replace(coreprefix+":",geocrsNS)]=adocdef+"|===\n\n"
                     else:
                         g.add((URIRef(row["Concept"].replace(coreprefix+":",curns)),RDF.type,OWL.Class))
-                        adocdef="===== Class: "+str(row["Concept"])+"\n\n"
+                        adocdef="[[class_"+str(row["Concept"]).replace(" ","_")+"]]\n\n===== Class: "+str(row["Concept"])+"\n\n"
                         if "Description" in row and row["Description"]!="":
                             adocdef+=row["Description"]+"\n\n"
-                        adocdef+="."+str(row["Concept"])+"\n[cols=\"1,1\"]\n|===\n"
+                        adocdef+="."+str(row["Concept"])+"\n[cols=\"1,10\"]\n|===\n"
                         adocdef+="|URI\n|"+str(row["Concept"].replace(coreprefix+":",curns))+"[]\n\n"
                         prefixtoclasses[curprefix].append(row["Concept"].replace(curprefix+":",curns).replace("geosrs:","").replace("geoprojection:",""))
                         classToPrefix[row["Concept"]]={"prefix":curprefix, "ns":curns}
@@ -422,6 +432,10 @@ for file in os.listdir(directory):
                                 clsuri=row["SuperClass"].replace("geosrs:", getNSForClass(row["SuperClass"],classToPrefix))
                                 adocdef+=clsuri+"["+clsuri[clsuri.rfind("/")+1:]+"] "
                             adocdef+="\n\n"
+                        print(os.getcwd())
+                        print("Exists? spec/figures/classes/"+str(row["Concept"].replace("geosrs:",""))+".png"+" - "+str(os.path.exists("spec/figures/classes/"+str(row["Concept"].replace("geosrs:",""))+".png")))
+                        if os.path.exists(str(os.getcwd())+"/spec/figures/classes/"+str(row["Concept"].replace("geosrs:",""))+".png"):
+                            adocdef+="|Image\n|image:classes/"+str(row["Concept"].replace("geosrs:",""))+".png["+str(row["Concept"].replace("geosrs:",""))+" Image]\n\n"
                         if row["Concept"] in examples:
                             adocdef+="|Example\n|"+examples[row["Concept"]]+"["+row["Concept"]+",window=_blank]\n\n"
                         if "DisjointClass" in row and row["DisjointClass"]!="":
@@ -471,10 +485,10 @@ for file in os.listdir(directory):
                 if "Concept" in row and row["Concept"]!="":
                     if "Core Property?" in row:
                         if row["Core Property?"]=="Core Ontology" or row["Core Property?"]=="SRS":
-                            adocdef="===== Property: "+str(row["Concept"])+"\n\n"
+                            adocdef="[[property_"+str(row["Concept"]).replace(" ","_")+"]]\n\n===== Property: "+str(row["Concept"])+"\n\n"
                             if "Description" in row and row["Description"]!="":
                                 adocdef+=row["Description"]+"\n\n"
-                            adocdef+="."+str(row["Concept"])+"\n[cols=\"1,1\"]\n|===\n"
+                            adocdef+="."+str(row["Concept"])+"\n[cols=\"1,10\"]\n|===\n"
                             adocdef+="|URI\n|"+str(row["Concept"].replace(coreprefix+":",curns))+"\n\n"
                             core=True
                             prefixtoproperties["geosrs"].append(row["Concept"].replace(curprefix+":",curns).replace("geosrs:","").replace("geoprojection:",""))
@@ -494,13 +508,15 @@ for file in os.listdir(directory):
                                 gcore.add((URIRef(row["Concept"].replace(coreprefix+":",geocrsNS)),SKOS.definition,Literal(row["Definition"],lang="en")))
                                 adocdef+="|Definition\n|"+str(row["Definition"])+"\n\n"
                             if "Range" in row and row["Range"]!="":
-                                gcore.add((URIRef(row["Concept"].replace(coreprefix+":",geocrsNS)),RDFS.range,URIRef(row["Range"].replace("geosrs:", getNSForClass(row["Range"],classToPrefix)))))
+                                gcore.add((URIRef(row["Concept"].replace(coreprefix+":",geocrsNS)),RDFS.range,URIRef(row["Range"].replace("geosrs:", getNSForClass(row["Range"],classToPrefix).replace("xsd:","http://www.w3.org/2001/XMLSchema#")))))
                                 propref=row["Range"].replace("geosrs:", getNSForClass(row["Range"],classToPrefix))
                                 adocdef+="|Range\n|"+propref.replace("xsd:","http://www.w3.org/2001/XMLSchema#")+"["+propref[propref.rfind("/")+1:]+"]\n\n"
                             if "Domain" in row and row["Domain"]!="":
                                 gcore.add((URIRef(row["Concept"].replace(coreprefix+":",geocrsNS)),RDFS.domain,URIRef(row["Domain"].replace("geosrs:",getNSForClass(row["Domain"],classToPrefix)))))
                                 propref=row["Domain"].replace("geosrs:",getNSForClass(row["Domain"],classToPrefix))
                                 adocdef+="|Domain\n|"+propref+"["+propref[propref.rfind("/")+1:]+"]\n\n"
+                            if os.path.exists("spec/figures/classes/"+str(row["Concept"].replace("geosrs:",""))+".png"):
+                                adocdef+="|Image\n|image:classes/"+str(row["Concept"].replace("geosrs:",""))+".png["+str(row["Concept"].replace("geosrs:",""))+" Image]\n\n"
                             if row["Concept"] in examples:
                                 adocdef+="|Example\n|"+examples[row["Concept"]]+"["+row["Concept"]+",window=_blank]\n\n"
                             if "PROJJSON" in row and row["PROJJSON"]!="":
@@ -532,10 +548,10 @@ for file in os.listdir(directory):
                             moduleToAdoc["06-core.adoc"][row["Concept"].replace(coreprefix+":","")]=adocdef+"|===\n\n"
                         else:
                             if row["Core Property?"].lower() in exont:
-                                adocdef="===== Property: "+str(row["Concept"])+"\n\n"
+                                adocdef="[[property_"+str(row["Concept"]).replace(" ","_")+"]]\n\n===== Property: "+str(row["Concept"])+"\n\n"
                                 if "Description" in row and row["Description"]!="":
                                     adocdef+=row["Description"]+"\n\n"
-                                adocdef+="."+str(row["Concept"])+"\n[cols=\"1,1\"]\n|===\n"
+                                adocdef+="."+str(row["Concept"])+"\n[cols=\"1,10\"]\n|===\n"
                                 adocdef+="|URI\n|"+row["Concept"].replace(coreprefix+":",curns+str(row["Core Property?"]).lower()+"/")+"\n\n"
                                 if row["Core Property?"]!="":
                                     prefixtoproperties[row["Core Property?"]].append(row["Concept"].replace(coreprefix+":",curns+str(row["Core Property?"]).lower()+"/").replace("geosrs:","").replace("geoprojection:",""))
@@ -555,13 +571,15 @@ for file in os.listdir(directory):
                                     exont[row["Core Property?"].lower()].add((URIRef(row["Concept"].replace(coreprefix+":",curns+str(row["Core Property?"]).lower()+"/")),SKOS.definition,Literal(row["Definition"],lang="en")))
                                     adocdef+="|Definition\n|"+str(row["Definition"])+"\n\n"
                                 if "Range" in row and row["Range"]!="":
-                                    exont[row["Core Property?"].lower()].add((URIRef(row["Concept"].replace(coreprefix+":",curns+str(row["Core Property?"]).lower()+"/")),RDFS.range,URIRef(row["Range"].replace("geosrs:",getNSForClass(row["Range"],classToPrefix)))))
+                                    exont[row["Core Property?"].lower()].add((URIRef(row["Concept"].replace(coreprefix+":",curns+str(row["Core Property?"]).lower()+"/")),RDFS.range,URIRef(row["Range"].replace("geosrs:",getNSForClass(row["Range"],classToPrefix).replace("xsd:","http://www.w3.org/2001/XMLSchema#")))))
                                     propref=row["Range"].replace("geosrs:", getNSForClass(row["Range"],classToPrefix))
                                     adocdef+="|Range\n|"+propref.replace("xsd:","http://www.w3.org/2001/XMLSchema#")+"["+propref[propref.rfind("/")+1:]+"]\n\n"
                                 if "Domain" in row and row["Domain"]!="":
                                     exont[row["Core Property?"].lower()].add((URIRef(row["Concept"].replace(coreprefix+":",curns+str(row["Core Property?"]).lower()+"/")),RDFS.domain,URIRef(row["Domain"].replace("geosrs:",getNSForClass(row["Domain"],classToPrefix)))))
                                     propref=row["Domain"].replace("geosrs:",getNSForClass(row["Domain"],classToPrefix))
                                     adocdef+="|Domain\n|"+propref+"["+propref[propref.rfind("/")+1:]+"]\n\n"
+                                if os.path.exists("spec/figures/classes/"+str(row["Concept"].replace("geosrs:",""))+".png"):
+                                    adocdef+="|Image\n|image:classes/"+str(row["Concept"].replace("geosrs:",""))+".png["+str(row["Concept"].replace("geosrs:",""))+" Image]\n\n"
                                 if row["Concept"] in examples:
                                     adocdef+="|Example\n|"+examples[row["Concept"]]+"["+row["Concept"]+",window=_blank]\n\n"
                                 if "PROJJSON" in row and row["PROJJSON"]!="":
@@ -613,10 +631,10 @@ for file in os.listdir(directory):
                 if "Concept" in row and row["Concept"]!="":
                     if "Module" in row:
                         if row["Module"]=="Core Ontology":
-                            adocdef="===== Instance: "+str(row["Concept"])+"\n\n"
+                            adocdef="[[instance_"+str(row["Concept"]).replace(" ","_")+"]]\n\n===== Instance: "+str(row["Concept"])+"\n\n"
                             if "Description" in row and row["Description"]!="":
                                 adocdef+=row["Description"]+"\n\n"
-                            adocdef+="."+str(row["Concept"])+"\n[cols=\"1,1\"]\n|===\n"
+                            adocdef+="."+str(row["Concept"])+"\n[cols=\"1,10\"]\n|===\n"
                             adocdef+="|URI\n|"+str(row["Concept"].replace(coreprefix+":",curns))+"\n\n"
                             core=True
                             prefixtoproperties["geosrs"].append(row["Concept"].replace(coreprefix+":",geocrsNS).replace("geoprojection:",""))
@@ -636,6 +654,8 @@ for file in os.listdir(directory):
                                 if row["Requirement"] not in moduleToRequirements[prefixToModule["instances"]]:
                                     moduleToRequirements[prefixToModule["instances"]][row["Requirement"]]=[]
                                 moduleToRequirements[prefixToModule["instances"]][row["Requirement"]].append(row["Concept"])
+                            if os.path.exists("spec/figures/classes/"+str(row["Concept"].replace("geosrs:",""))+".png"):
+                                adocdef+="|Image\n|image:classes/"+str(row["Concept"].replace("geosrs:",""))+".png["+str(row["Concept"].replace("geosrs:",""))+" Image]\n\n"
                             if row["Concept"] in examples:
                                     adocdef+="|Example\n|"+examples[row["Concept"]]+"["+row["Concept"]+",window=_blank]\n\n"
                             if "PROJJSON" in row and row["PROJJSON"]!="":
@@ -652,10 +672,10 @@ for file in os.listdir(directory):
                                     ldcontext["@context"][row["OGCJSON"]]=row["Concept"].replace("geosrs:", getPrefixForClass(row["Concept"],classToPrefix)+":")
                             moduleToAdoc["13-instances.adoc"][row["Concept"].replace(coreprefix+":","")]=adocdef+"|===\n\n"
                         else:
-                            adocdef="===== Instance: "+str(row["Concept"])+"\n\n"
+                            adocdef="[[instance_"+str(row["Concept"]).replace(" ","_")+"]]\n\n===== Instance: "+str(row["Concept"])+"\n\n"
                             if "Description" in row and row["Description"]!="":
                                 adocdef+=row["Description"]+"\n\n"
-                            adocdef+="."+str(row["Concept"])+"\n[cols=\"1,1\"]\n|===\n"
+                            adocdef+="."+str(row["Concept"])+"\n[cols=\"1,10\"]\n|===\n"
                             adocdef+="|URI\n|"+str(row["Concept"].replace(coreprefix+":",curns))+"\n\n"
                             if row["Module"].lower() in exont:
                                 if row["Module"]!="":
@@ -676,6 +696,8 @@ for file in os.listdir(directory):
                                     if row["Requirement"] not in moduleToRequirements[prefixToModule["instances"]]:
                                         moduleToRequirements[prefixToModule["instances"]][row["Requirement"]]=[]
                                     moduleToRequirements[prefixToModule["instances"]][row["Requirement"]].append(row["Concept"])
+                                if os.path.exists("spec/figures/classes/"+str(row["Concept"].replace("geosrs:",""))+".png"):
+                                    adocdef+="|Image\n|image:classes/"+str(row["Concept"].replace("geosrs:",""))+".png["+str(row["Concept"].replace("geosrs:",""))+" Image]\n\n"
                                 if row["Concept"] in examples:
                                     adocdef+="|Example\n|"+examples[row["Concept"]]+"["+row["Concept"]+",window=_blank]\n\n"
                                 if "PROJJSON" in row and row["PROJJSON"]!="":
@@ -741,7 +763,7 @@ for mod in moduleToRequirements:
     rqid=str(mod)[str(mod).find("-")+1:].replace(".adoc","").replace("_module","")
     requirementsttl.add((URIRef(reqns+str(rqid)),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef("http://www.opengis.net/def/spec-element/ConformanceClass")))
     requirementsttl.add((URIRef(reqns+str(rqid)),URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef("http://www.w3.org/2004/02/skos/core#Collection")))
-    atestsuitedoc+="=== Conformance Class: "+str(mod[mod.rfind("-")+1:].replace(".adoc","").replace("_module","")).capitalize()+"\n\n"
+    atestsuitedoc+="[[conf_"+str(mod[mod.rfind("-")+1:].replace(".adoc","").replace("_module","")).capitalize()+"]]\n=== Conformance Class: "+str(mod[mod.rfind("-")+1:].replace(".adoc","").replace("_module","")).capitalize()+"\n\n"
     atestsuitedoc+="[conformance_class,identifier=/conf/"+str(rqid)+"]\n"
     atestsuitedoc+="."+str(mod)+"\n\n====\n\n[%metadata]\n\n"
     atestsuitedoc+="target:: /req/"+str(rqid)+"\n\n"
@@ -786,7 +808,7 @@ for ad in moduleToAdoc:
 	with open("spec/sections/"+ad,"w") as file:
 		file.write(content)             
 	with open("spec/sections/"+ad.replace(".adoc","_classes.adoc"), 'w',encoding="utf-8") as f:
-		print(ad)
+		#print(ad)
 		#print(moduleToRequirements[ad])
 		reqs=moduleToRequirements[ad]
 		#print(reqs)
@@ -819,13 +841,13 @@ for ad in moduleToAdoc:
 				if len(moduleToRequirements[ad][req])>0:
 					reqtext=reqtext.replace(", <<"+str(last), " and <<"+str(last))
 				reqtext+=" to be used in SPARQL graph patterns."
-				f.write("==== "+str(req)+"\n\n[requirement,identifier=\"/req/"+str(rqid)+"/"+str(req).replace(" ","_")+"\"]\n\n."+str(req)+"\n====\n"+str(reqtext)+"\n====\n\n")
-				print(str(ad)+" - "+str(req))
-				print(moduleToRequirements[ad][req])
+				f.write("[["+str(req).replace(" ","_")+"]]\n==== "+str(req)+"\n\n[requirement,identifier=\"/req/"+str(rqid)+"/"+str(req).replace(" ","_")+"\"]\n\n."+str(req)+"\n====\n"+str(reqtext)+"\n====\n\n")
+				#print(str(ad)+" - "+str(req))
+				#print(moduleToRequirements[ad][req])
 				if req in reqToDesc:
 					f.write(reqToDesc[req]+"\n\n")
 				for cls in moduleToRequirements[ad][req]:
-					print(str(req)+" - "+str(cls)+" "+cls.replace("geosrs:","")+" "+str(cls.replace("geosrs:","") in moduleToAdoc[ad]))
+					#print(str(req)+" - "+str(cls)+" "+cls.replace("geosrs:","")+" "+str(cls.replace("geosrs:","") in moduleToAdoc[ad]))
 					if cls.replace("geosrs:","") in moduleToAdoc[ad]:
 						f.write(moduleToAdoc[ad][cls.replace("geosrs:","")]) 
 doc=""

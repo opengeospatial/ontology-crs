@@ -173,10 +173,14 @@ for img in imglist:
     if str(filename).endswith(".png"):
         basename=filename[0:filename.rfind('.')]
         print("Exists? "+basename+"/index.html")
-        if os.path.exists(basename+"/index.html"):
+        if os.path.exists(basename+"/content.html"):
+            replaceTextInFile(basename+"/content.html","<div style=\"width:500px; height:50px; background-color: lightgrey; border:solid 2px grey; padding:10px;margin-bottom:5px; text-align:center;\">Pictures say 1,000 words</div>","<div style=\"background-color: lightgrey; border:solid 2px grey; padding:10px;margin-bottom:5px; text-align:center;\"><img src=\"../images/"+filename+"\"/></div>")
+        elif os.path.exists(basename+"/index.html"):
             replaceTextInFile(basename+"/index.html","<div style=\"width:500px; height:50px; background-color: lightgrey; border:solid 2px grey; padding:10px;margin-bottom:5px; text-align:center;\">Pictures say 1,000 words</div>","<div style=\"background-color: lightgrey; border:solid 2px grey; padding:10px;margin-bottom:5px; text-align:center;\"><img src=\"../images/"+filename+"\"/></div>")
 
 for mod in modules:
-    if os.path.exists(mod+"/index.html"):
+    if os.path.exists(mod+"/content.html"):
+        addExamplesToPyLode(examples,mod+"/content.html",mod) 
+    elif os.path.exists(mod+"/index.html"):
         addExamplesToPyLode(examples,mod+"/index.html",mod)    
     

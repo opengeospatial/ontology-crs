@@ -1,0 +1,27 @@
+Validation report for ogc.geosrs.cs - SRS Ontology - Coordinate System module
+Generated 2026-05-11T12:37:41.161670+00:00
+=== Files ===
+Using 1dcs.ttl from test resources
+=== End Files ===
+
+=== SHACL ===
+Validation result for _sources/cs/rules.shacl:
+  Validation Report
+  Conforms: True
+  
+Focus nodes for _sources/cs/rules.shacl:
+ - Shape geosrs:TemporalCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:PlanarCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:TemporalMeasureCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:CylindricalCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:ConicalCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:CoordinateSystemAxis_axisDirection_Shape: exsrs:ecsc_axis1
+ - Shape geosrs:DateTimeTemporalCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:3DCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:CoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:CurvilinearCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:TemporalCountCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:1DCoordinateSystem_axis_Shape: exsrs:ecsc
+
+=== End SHACL ===
+

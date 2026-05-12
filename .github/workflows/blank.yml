@@ -24,38 +24,55 @@ jobs:
          sudo apt-get install python3 python3-setuptools python3-pip python3-dev  -y
          sudo pip3 install wheel pylode==2.13.2 pyproj shapely
          sudo pip3 install --pre bibtexparser
-         sudo apt-get install asciidoctor
-         sudo gem install tilt thread_safe concurrent-ruby
+         sudo apt-get install asciidoctor -y
+         sudo gem install tilt thread_safe concurrent-ruby slim
          sudo gem install haml -v 5.2.2
     - name: Create Ontology Documentation 🔧
       run: |
          python3 scripts/crsToTTL.py -a all
+         mkdir -p docs/{spec,respec,application,alignments,core,co,cs,datum,projection,planet,examples,images}
          python3 scripts/srsbuild.py
          python3 scripts/processbibtex.py
          wget -P scripts/ https://raw.githubusercontent.com/situx/widoco_classtree/refs/heads/master/classtreedoc.py
-         mkdir -p docs/{spec,respec,application,alignments,core,co,cs,datum,projection,planet,examples,images}
          metanorma site generate --agree-to-terms -o docs/spec/
-         asciidoctor spec/document.adoc --trace -T spec/templates/html5/ -o docs/respec/index.html
+         asciidoctor spec/document.adoc --trace -T spec/templates/slimhtml5/ -o docs/respec/index.html
          mv *.ttl context index.html examples.json docs/
          cd docs
+         touch .nojekyll
          pylode -o application/index.html -i application.ttl
+         cp application.ttl ../_sources/app/ontology.ttl
          mv application.ttl application/
          pylode -o alignments/index.html -i alignments.ttl
          mv alignments.ttl alignments/
+         cp index.ttl ../_sources/srs/ontology.ttl
          mv index.ttl core/
          cd core
          pylode -o index.html -i index.ttl
          cd ..
+         python ../scripts/classtreedoc.py --input core/index.html --output core/content.html --title "Core Module"
          pylode -o co/index.html -i co.ttl
-         python ../scripts/classtreedoc.py --input co/index.html --output co/content.html
+         cp co.ttl ../_sources/co/ontology.ttl
+         python ../scripts/classtreedoc.py --input co/index.html --output co/content.html --title "Coordinate Operation Module"
          mv co.ttl co/
+         #mkdir ../_sources/co/tests/
+         touch co_rules.ttl && cp co_rules.ttl ../_sources/co/shapes.shacl
          pylode -o cs/index.html -i cs.ttl
+         cp cs.ttl ../_sources/cs/ontology.ttl
+         python ../scripts/classtreedoc.py --input cs/index.html --output cs/content.html  --title "Coordinate System Module"
          mv cs.ttl cs/
          pylode -o datum/index.html -i datum.ttl
+         cp datum.ttl ../_sources/datum/ontology.ttl
+         python ../scripts/classtreedoc.py --input datum/index.html --output datum/content.html --title "Datum Module"
+         #mkdir ../_sources/datum/tests/
+         touch datum_rules.ttl && cp datum_rules.ttl ../_sources/datum/shapes.shacl
          mv datum.ttl datum/
          pylode -o planet/index.html -i planet.ttl
+         cp planet.ttl ../_sources/planet/ontology.ttl
+         python ../scripts/classtreedoc.py --input planet/index.html --output planet/content.html --title "Planet Module"
          mv planet.ttl planet/
          pylode -o projection/index.html -i projection.ttl
+         cp projection.ttl ../_sources/projection/ontology.ttl
+         python ../scripts/classtreedoc.py --input projection/index.html --output projection/content.html --title "Projection Module"
          mv projection.ttl projection/
          rm objprop.ttl datatypeprop.ttl 
          cp ../examples/* examples/
@@ -67,6 +84,45 @@ jobs:
          BRANCH: gh-pages
          FOLDER: docs/
          clean: false
+
+  validate-and-process:
+    # Avoid running the workflow on template clone
+    needs: build
+    if: github.run_number != 1
+    name: Validate and process
+    uses: opengeospatial/bblocks-postprocess/.github/workflows/validate-and-process.yml@master
+    with:
+      skip-pages: true
+      viewer_path: bblocks/
+      before_pages: |
+        CURRENT_BRANCH=$(git rev-parse --abbrev-ref HEAD)
+        TARGET_BRANCH=gh-pages
+        POSTPROCESS_FILES="build _sources/ bblocks/index.html bblocks/config.js"
+        
+        # Postprocess files
+        git add ${POSTPROCESS_FILES}
+        
+        # Save current changes
+        git commit -m "temp commit for push to ${TARGET_BRANCH}" --no-verify
+        
+        # Fetch target branch
+        git fetch origin ${TARGET_BRANCH}:${TARGET_BRANCH} || true
+        git checkout ${TARGET_BRANCH} || git checkout -b ${TARGET_BRANCH}
+        
+        # Apply changes
+        git checkout $CURRENT_BRANCH -- ${POSTPROCESS_FILES}
+        
+        # Commit and push changes
+        git config user.name "github-actions[bot]"
+        git config user.email "github-actions[bot]@users.noreply.github.com"
+        git add ${POSTPROCESS_FILES}
+        git commit -m "Update directories from $CURRENT_BRANCH"
+        git push origin ${TARGET_BRANCH}
+        
+        # Restore state
+        git checkout $CURRENT_BRANCH
+        git reset --soft HEAD~1
+  
   ontdoc: 
   # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     needs: build

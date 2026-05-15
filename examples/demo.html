@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>Ontology CRS Conversion Tool JS</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/proj4js/2.19.10/proj4.min.js"></script>
+    <body>
+        <h1>Ontology CRS Conversion Tool JS</h1>
+    <select id="crs" onchange="crstoRDF()">
+        <option value="EPSG:4326" selected="selected">EPSG:4326</option>
+        <option value="EPSG:25832" selected="selected">EPSG:25832</option>
+    </select>
+    <script>
+        resultns="https://opengeospatial.github.io/ontology-crs/data/def/crs/EPSG/0/"
+        function crstoRDF(){
+            var FOAF = "http://xmlns.com/foaf/0.1/"
+            var CRSCORE = "https://w3id.org/geosrs/"
+			var RDF = "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+			var RDFS = "http://www.w3.org/2000/01/rdf-schema#"
+			var OWL = "http://www.w3.org/2002/07/owl#"
+			var DC = "http://purl.org/dc/elements/1.1/"
+			var XSD = "http://www.w3.org/TR/2004/REC-xmlschema-2-20041028/#dt-"
+            let projcode=document.getElementById('crs').value;
+            console.log(projcode)
+            console.log(proj4)
+            const theproj=proj4.Proj(projcode);
+            console.log(theproj)
+            const ttlset=new Set();
+            crsuri=resultns+projcode.replace("EPSG:","")
+            ttlset.add("<"+crsuri+"> <"+RDF+"type> <"+CRSCORE+"CRS> .")
+            ttlset.add("<"+crsuri+"> <"+RDFS+"label> \""+theproj.title+"\"@en .")
+            console.log(ttlset)
+            console.log(Array.from(ttlset).join('\n'))
+
+        }
+    </script>
+    </body>
+</html>

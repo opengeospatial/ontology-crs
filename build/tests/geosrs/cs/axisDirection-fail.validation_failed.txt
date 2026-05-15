@@ -1,7 +1,13 @@
 Validation report for ogc.geosrs.cs - SRS Ontology - Coordinate System module
-Generated 2026-05-15T10:17:48.650635+00:00
+Generated 2026-05-15T10:17:48.646925+00:00
+=== General ===
+
+** Validation error **
+Test was expected to fail but it did not.
+=== End General ===
+
 === Files ===
-Using axisDirection.ttl from test resources
+Using axisDirection-fail.ttl from test resources
 === End Files ===
 
 === SHACL ===
@@ -15,7 +21,7 @@ Focus nodes for _sources/cs/rules.shacl:
  - Shape geosrs:CurvilinearCoordinateSystem_axis_Shape: *none*
  - Shape geosrs:3DCoordinateSystem_axis_Shape: *none*
  - Shape geosrs:DateTimeTemporalCoordinateSystem_axis_Shape: *none*
- - Shape geosrs:CoordinateSystemAxis_axisDirection_Shape: exsrs:myAxis
+ - Shape geosrs:CoordinateSystemAxis_axisDirection_Shape: *none*
  - Shape geosrs:CoordinateSystem_axis_Shape: *none*
  - Shape geosrs:TemporalCoordinateSystem_axis_Shape: *none*
  - Shape geosrs:1DCoordinateSystem_axis_Shape: *none*

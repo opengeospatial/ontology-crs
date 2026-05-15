@@ -5,10 +5,7 @@
 @prefix geosrs_cs:<https://w3id.org/geosrs/cs#> .
 @prefix exsrs: <https://w3id.org/example-data-srs#> .
 
-exsrs:myAxis rdf:type geosrs_cs:CoordinateSystemAxis ;
-        rdfs:label "Northing" ;
-        om:hasUnit om:metre ;
-        skos:altLabel "N" ;
-        geosrs_cs:axisDirection geosrs_cs:North .
-
-geosrs_cs:North rdf:type geosrs_cs:AxisDirection  .
+exsrs:ecsc_axis1 rdf:type geosrs_cs:Axis ;
+                 rdfs:label "Northing" ;
+                 om:hasUnit om:metre ;
+                 skos:altLabel "N" .

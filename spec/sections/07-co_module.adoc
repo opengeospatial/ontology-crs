@@ -1,11 +1,25 @@
 [[co]]
 == Coordinate Operation Module
 
-
-
 This clause establishes the *Co* Requirements class, with IRI `/req/co`, which has a corresponding Conformance Class, *Co*, with IRI `/conf/co`.
 
 image::co.png[]
+
+Coordinate operations are mathematical methods that transform coordinates from one reference system to another. There are four main families: `geosrs:PassThroughOperation`, `geosrs:ConcatenatedOperation`, `geosrs:SingleOperation` and `geosrs:Conversion`. 
+
+A concatenated operation is a sequence of single operations, all applied on the same reference system. In contrast, a single operation is a non-concatenated method, transforming coordinates in a single step.
+
+A Conversion operation translates coordinates between two reference systems defined on the same datum. In its turn, a Transformation translates coordinates between reference systems defined on different datums. A conversion tends to be a direct mathematical function with no uncertainty associated. A transformation is often defined on non-finite methods and implies a relevant uncertainty in its result.
+
+The `geosrs:CoordinateTransformationClass` is further specialised by the `geosrs:AffineTransformation`, in its turn encapsulating comon operations of this kind:  
+- Scale
+- Rotation
+- Identity
+- Shear
+- Translation
+
+
+
 
 
 

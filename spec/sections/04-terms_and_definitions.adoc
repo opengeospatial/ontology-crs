@@ -6,13 +6,17 @@ Note that the initial notice about terms ("This document uses the terms defined 
 is inserted automatically by Metanorma using the agreed standardised language, and you should not enter it here.
 ////
 
-*Spatial Reference System* (SRS) - a system for establishing spatial positioning. A spatial reference system can use geographic identifiers (place names, for example), coordinates (in which case it is a coordinate reference system), or identifiers with structured geometry (in which case it is a discrete global grid system).
+[Spatial Reference System] 
+A system for establishing spatial positioning. A spatial reference system can use geographic identifiers (place names, for example), coordinates (in which case it is a coordinate reference system), or identifiers with structured geometry (in which case it is a discrete global grid system). Abbreviated to SRS.
 
-*Coordinate System* - a set of mathematical rules for specifying how coordinates are to be assigned to points.
+[Coordinate System] 
+A set of mathematical rules for specifying how coordinates are to be assigned to points.
 
-*Datum* - a parameter, or set of parameters, that define the position of the origin, the scale, and the orientation of a coordinate system.
+[Datum] 
+A parameter, or set of parameters, that define the position of the origin, the scale, and the orientation of a coordinate system.
 
-*Coordinate Reference System* (CRS) - a coordinate system that is related to an object by a datum.
+[Coordinate Reference System] 
+A coordinate system that is related to an object by a datum. Abbreviated to CRS.
 
 
 === example term

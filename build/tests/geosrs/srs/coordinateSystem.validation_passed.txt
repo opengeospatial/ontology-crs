@@ -1,5 +1,5 @@
 Validation report for ogc.geosrs.srs - SRS Core Ontology
-Generated 2026-05-25T16:18:54.131328+00:00
+Generated 2026-05-25T16:28:00.769675+00:00
 === Files ===
 Using coordinateSystem.ttl from test resources
 === End Files ===
@@ -10,19 +10,19 @@ Validation result for _sources/srs/rules.shacl:
   Conforms: True
   
 Focus nodes for _sources/srs/rules.shacl:
- - Shape geosrs:GeographicCRS_coordinateSystem_Shape: *none*
  - Shape geosrs:SingleCRS_coordinateSystem_Shape: *none*
- - Shape geosrs:CRS_datumEnsemble_Shape: *none*
- - Shape geosrs:CRS_datum_Shape: *none*
- - Shape geosrs:ProjectedCRS_conversion_Shape: *none*
- - Shape geosrs:ParametricCRS_datum_Shape: *none*
- - Shape geosrs:CompoundCRS_includesSRS_Shape: *none*
- - Shape geosrs:CRS_coordinateSystem_Shape: *none*
- - Shape geosrs:GeodeticCRS_coordinateSystem_Shape: *none*
- - Shape geosrs:CRS_domainOfValidity_Shape: *none*
+ - Shape geosrs:SingleCRS_datum_Shape: *none*
+ - Shape geosrs:GeographicCRS_coordinateSystem_Shape: *none*
  - Shape geosrs:GeographicCRS_datum_Shape: *none*
  - Shape geosrs:TemporalCRS_datum_Shape: *none*
- - Shape geosrs:SingleCRS_datum_Shape: *none*
+ - Shape geosrs:CRS_datum_Shape: *none*
+ - Shape geosrs:CRS_domainOfValidity_Shape: *none*
+ - Shape geosrs:CRS_coordinateSystem_Shape: *none*
+ - Shape geosrs:CRS_datumEnsemble_Shape: *none*
+ - Shape geosrs:ParametricCRS_datum_Shape: *none*
+ - Shape geosrs:ProjectedCRS_conversion_Shape: *none*
+ - Shape geosrs:GeodeticCRS_coordinateSystem_Shape: *none*
+ - Shape geosrs:CompoundCRS_includesSRS_Shape: *none*
 
 === End SHACL ===
 

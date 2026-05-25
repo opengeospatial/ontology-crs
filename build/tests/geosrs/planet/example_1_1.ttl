@@ -1,0 +1,11 @@
+@prefix exsrs: <https://w3id.org/example-data-srs#> .
+@prefix geosrs: <https://w3id.org/geosrs/srs/> .
+@prefix geosrs_planet: <https://w3id.org/geosrs/planet#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+exsrs:mysrs a geosrs:CRS ;
+    geosrs_planet:isApplicableTo exsrs:myplanet .
+
+exsrs:myplanet a geosrs_planet:Planet ;
+    rdfs:label "My planet" .
+

@@ -1,0 +1,545 @@
+{
+  "title": "Validation report for ogc.geosrs.cs - SRS Ontology - Coordinate System module",
+  "bblockName": "SRS Ontology - Coordinate System module",
+  "bblockId": "ogc.geosrs.cs",
+  "generated": "2026-05-15T10:17:48.669081+00:00",
+  "result": false,
+  "items": [
+    {
+      "source": {
+        "type": "TEST_RESOURCE",
+        "requireFail": false,
+        "filename": "_sources/cs/tests/1dcs.ttl",
+        "url": "https://opengeospatial.github.io/ontology-crs/_sources/cs/tests/1dcs.ttl",
+        "language": "ttl"
+      },
+      "result": true,
+      "sections": [
+        {
+          "name": "FILES",
+          "title": "Files",
+          "entries": [
+            {
+              "isError": false,
+              "message": "Using 1dcs.ttl from test resources"
+            }
+          ]
+        },
+        {
+          "name": "SHACL",
+          "title": "SHACL",
+          "entries": [
+            {
+              "op": "shacl-report",
+              "shaclFile": "_sources/cs/rules.shacl",
+              "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
+              "isError": false,
+              "message": "Validation result for _sources/cs/rules.shacl:\n  Validation Report\n  Conforms: True\n  "
+            },
+            {
+              "shaclFile": "_sources/cs/rules.shacl",
+              "focusNodes": {
+                "geosrs:CylindricalCoordinateSystem_axis_Shape": {
+                  "nodes": []
+                },
+                "geosrs:TemporalCountCoordinateSystem_axis_Shape": {
+                  "nodes": []
+                },
+                "geosrs:CurvilinearCoordinateSystem_axis_Shape": {
+                  "nodes": []
+                },
+                "geosrs:3DCoordinateSystem_axis_Shape": {
+                  "nodes": []
+                },
+                "geosrs:DateTimeTemporalCoordinateSystem_axis_Shape": {
+                  "nodes": []
+                },
+                "geosrs:CoordinateSystemAxis_axisDirection_Shape": {
+                  "nodes": [
+                    "exsrs:ecsc_axis1"
+                  ]
+                },
+                "geosrs:CoordinateSystem_axis_Shape": {
+                  "nodes": []
+                },
+                "geosrs:TemporalCoordinateSystem_axis_Shape": {
+                  "nodes": []
+                },
+                "geosrs:1DCoordinateSystem_axis_Shape": {
+                  "nodes": [
+                    "exsrs:ecsc"
+                  ]
+                },
+                "geosrs:PlanarCoordinateSystem_axis_Shape": {
+                  "nodes": []
+                },
+                "geosrs:ConicalCoordinateSystem_axis_Shape": {
+                  "nodes": []
+                },
+                "geosrs:TemporalMeasureCoordinateSystem_axis_Shape": {
+                  "nodes": []
+                }
+              },
+              "isError": false,
+              "message": "Focus nodes for _sources/cs/rules.shacl:\n - Shape geosrs:CylindricalCoordinateSystem_axis_Shape: *none*\n - Shape geosrs:TemporalCountCoordinateSystem_axis_Shape: *none*\n - Shape geosrs:CurvilinearCoordinateSystem_axis_Shape: *none*\n - Shape geosrs:3DCoordinateSystem_axis_Shape: *none*\n - Shape geosrs:DateTimeTemporalCoordinateSystem_axis_Shape: *none*\n - Shape geosrs:CoordinateSystemAxis_axisDirection_Shape: exsrs:ecsc_axis1\n - Shape geosrs:CoordinateSystem_axis_Shape: *none*\n - Shape geosrs:TemporalCoordinateSystem_axis_Shape: *none*\n - Shape geosrs:1DCoordinateSystem_axis_Shape: exsrs:ecsc\n - Shape geosrs:PlanarCoordinateSystem_axis_Shape: *none*\n - Shape geosrs:ConicalCoordinateSystem_axis_Shape: *none*\n - Shape geosrs:TemporalMeasureCoordinateSystem_axis_Shape: *none*\n"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": {
+        "type": "TEST_RESOURCE",
+        "requireFail": true,
+        "filename": "_sources/cs/tests/axisDirection-fail.ttl",
+        "url": "https://opengeospatial.github.io/ontology-crs/_sources/cs/tests/axisDirection-fail.ttl",
+        "language": "ttl"
+      },
+      "result": false,
+      "sections": [
+        {
+          "name": "GENERAL",
+          "title": "General",
+          "entries": [
+            {
+              "op": "require-fail",
+              "isError": true,
+              "message": "Test was expected to fail but it did not."
+            }
+          ]
+        },
+        {
+          "name": "FILES",
+          "title": "Files",
+          "entries": [
+            {
+              "isError": false,
+              "message": "Using axisDirection-fail.ttl from test resources"
+            }
+          ]
+        },
+        {
+          "name": "SHACL",
+          "title": "SHACL",
+          "entries": [
+            {
+              "op": "shacl-report",
+              "shaclFile": "_sources/cs/rules.shacl",
+              "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
+              "isError": false,
+              "message": "Validation result for _sources/cs/rules.shacl:\n  Validation Report\n  Conforms: True\n  "
+            },
+            {
+              "shaclFile": "_sources/cs/rules.shacl",
+              "focusNodes": {
+                "geosrs:CylindricalCoordinateSystem_axis_Shape": {
+                  "nodes": []
+                },
+                "geosrs:TemporalCountCoordinateSystem_axis_Shape": {
+                  "nodes": []
+                },
+                "geosrs:CurvilinearCoordinateSystem_axis_Shape": {
+                  "nodes": []
+                },
+                "geosrs:3DCoordinateSystem_axis_Shape": {
+                  "nodes": []
+                },
+                "geosrs:DateTimeTemporalCoordinateSystem_axis_Shape": {
+                  "nodes": []
+                },
+                "geosrs:CoordinateSystemAxis_axisDirection_Shape": {
+                  "nodes": []
+                },
+                "geosrs:CoordinateSystem_axis_Shape": {
+                  "nodes": []
+                },
+                "geosrs:TemporalCoordinateSystem_axis_Shape": {
+                  "nodes": []
+                },
+                "geosrs:1DCoordinateSystem_axis_Shape": {
+                  "nodes": []
+                },
+                "geosrs:PlanarCoordinateSystem_axis_Shape": {
+                  "nodes": []
+                },
+                "geosrs:ConicalCoordinateSystem_axis_Shape": {
+                  "nodes": []
+                },
+                "geosrs:TemporalMeasureCoordinateSystem_axis_Shape": {
+                  "nodes": []
+                }
+              },
+              "isError": false,
+              "message": "Focus nodes for _sources/cs/rules.shacl:\n - Shape geosrs:CylindricalCoordinateSystem_axis_Shape: *none*\n - Shape geosrs:TemporalCountCoordinateSystem_axis_Shape: *none*\n - Shape geosrs:CurvilinearCoordinateSystem_axis_Shape: *none*\n - Shape geosrs:3DCoordinateSystem_axis_Shape: *none*\n - Shape geosrs:DateTimeTemporalCoordinateSystem_axis_Shape: *none*\n - Shape geosrs:CoordinateSystemAxis_axisDirection_Shape: *none*\n - Shape geosrs:CoordinateSystem_axis_Shape: *none*\n - Shape geosrs:TemporalCoordinateSystem_axis_Shape: *none*\n - Shape geosrs:1DCoordinateSystem_axis_Shape: *none*\n - Shape geosrs:PlanarCoordinateSystem_axis_Shape: *none*\n - Shape geosrs:ConicalCoordinateSystem_axis_Shape: *none*\n - Shape geosrs:TemporalMeasureCoordinateSystem_axis_Shape: *none*\n"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": {
+        "type": "TEST_RESOURCE",
+        "requireFail": false,
+        "filename": "_sources/cs/tests/axisDirection.ttl",
+        "url": "https://opengeospatial.github.io/ontology-crs/_sources/cs/tests/axisDirection.ttl",
+        "language": "ttl"
+      },
+      "result": true,
+      "sections": [
+        {
+          "name": "FILES",
+          "title": "Files",
+          "entries": [
+            {
+              "isError": false,
+              "message": "Using axisDirection.ttl from test resources"
+            }
+          ]
+        },
+        {
+          "name": "SHACL",
+          "title": "SHACL",
+          "entries": [
+            {
+              "op": "shacl-report",
+              "shaclFile": "_sources/cs/rules.shacl",
+              "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
+              "isError": false,
+              "message": "Validation result for _sources/cs/rules.shacl:\n  Validation Report\n  Conforms: True\n  "
+            },
+            {
+              "shaclFile": "_sources/cs/rules.shacl",
+              "focusNodes": {
+                "geosrs:CylindricalCoordinateSystem_axis_Shape": {
+                  "nodes": []
+                },
+                "geosrs:TemporalCountCoordinateSystem_axis_Shape": {
+                  "nodes": []
+                },
+                "geosrs:CurvilinearCoordinateSystem_axis_Shape": {
+                  "nodes": []
+                },
+                "geosrs:3DCoordinateSystem_axis_Shape": {
+                  "nodes": []
+                },
+                "geosrs:DateTimeTemporalCoordinateSystem_axis_Shape": {
+                  "nodes": []
+                },
+                "geosrs:CoordinateSystemAxis_axisDirection_Shape": {
+                  "nodes": [
+                    "exsrs:myAxis"
+                  ]
+                },
+                "geosrs:CoordinateSystem_axis_Shape": {
+                  "nodes": []
+                },
+                "geosrs:TemporalCoordinateSystem_axis_Shape": {
+                  "nodes": []
+                },
+                "geosrs:1DCoordinateSystem_axis_Shape": {
+                  "nodes": []
+                },
+                "geosrs:PlanarCoordinateSystem_axis_Shape": {
+                  "nodes": []
+                },
+                "geosrs:ConicalCoordinateSystem_axis_Shape": {
+                  "nodes": []
+                },
+                "geosrs:TemporalMeasureCoordinateSystem_axis_Shape": {
+                  "nodes": []
+                }
+              },
+              "isError": false,
+              "message": "Focus nodes for _sources/cs/rules.shacl:\n - Shape geosrs:CylindricalCoordinateSystem_axis_Shape: *none*\n - Shape geosrs:TemporalCountCoordinateSystem_axis_Shape: *none*\n - Shape geosrs:CurvilinearCoordinateSystem_axis_Shape: *none*\n - Shape geosrs:3DCoordinateSystem_axis_Shape: *none*\n - Shape geosrs:DateTimeTemporalCoordinateSystem_axis_Shape: *none*\n - Shape geosrs:CoordinateSystemAxis_axisDirection_Shape: exsrs:myAxis\n - Shape geosrs:CoordinateSystem_axis_Shape: *none*\n - Shape geosrs:TemporalCoordinateSystem_axis_Shape: *none*\n - Shape geosrs:1DCoordinateSystem_axis_Shape: *none*\n - Shape geosrs:PlanarCoordinateSystem_axis_Shape: *none*\n - Shape geosrs:ConicalCoordinateSystem_axis_Shape: *none*\n - Shape geosrs:TemporalMeasureCoordinateSystem_axis_Shape: *none*\n"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": {
+        "type": "TEST_RESOURCE",
+        "requireFail": false,
+        "filename": "_sources/cs/tests/coordinateSystemAxis.ttl",
+        "url": "https://opengeospatial.github.io/ontology-crs/_sources/cs/tests/coordinateSystemAxis.ttl",
+        "language": "ttl"
+      },
+      "result": false,
+      "sections": [
+        {
+          "name": "FILES",
+          "title": "Files",
+          "entries": [
+            {
+              "isError": false,
+              "message": "Using coordinateSystemAxis.ttl from test resources"
+            }
+          ]
+        },
+        {
+          "name": "SHACL",
+          "title": "SHACL",
+          "entries": [
+            {
+              "op": "shacl-report",
+              "shaclFile": "_sources/cs/rules.shacl",
+              "graph": "@prefix geosrs: <https://w3id.org/geosrs/> .\n@prefix geosrs_cs: <https://w3id.org/geosrs/cs#> .\n@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms false ;\n    sh:result [ a sh:ValidationResult ;\n            sh:focusNode <https://w3id.org/example-data-srs#ecsc> ;\n            sh:resultMessage \"A coordinate system should have at least one axis\"@en ;\n            sh:resultPath geosrs_cs:axis ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:ClassConstraintComponent ;\n            sh:sourceShape geosrs:CoordinateSystem_axis_Shape_Property ;\n            sh:value <https://w3id.org/example-data-srs#excsc_axis2> ] .\n\n",
+              "isError": true,
+              "message": "Validation result for _sources/cs/rules.shacl:\n  Validation Report\n  Conforms: False\n  Results (1):\n  Constraint Violation in ClassConstraintComponent (http://www.w3.org/ns/shacl#ClassConstraintComponent):\n  \tSeverity: sh:Violation\n  \tSource Shape: geosrs:CoordinateSystem_axis_Shape_Property\n  \tFocus Node: exsrs:ecsc\n  \tValue Node: exsrs:excsc_axis2\n  \tResult Path: geosrs_cs:axis\n  \tMessage: A coordinate system should have at least one axis\n  "
+            },
+            {
+              "shaclFile": "_sources/cs/rules.shacl",
+              "focusNodes": {
+                "geosrs:CylindricalCoordinateSystem_axis_Shape": {
+                  "nodes": []
+                },
+                "geosrs:TemporalCountCoordinateSystem_axis_Shape": {
+                  "nodes": []
+                },
+                "geosrs:CurvilinearCoordinateSystem_axis_Shape": {
+                  "nodes": []
+                },
+                "geosrs:3DCoordinateSystem_axis_Shape": {
+                  "nodes": []
+                },
+                "geosrs:DateTimeTemporalCoordinateSystem_axis_Shape": {
+                  "nodes": []
+                },
+                "geosrs:CoordinateSystemAxis_axisDirection_Shape": {
+                  "nodes": [
+                    "exsrs:ecsc_axis1",
+                    "exsrs:ecsc_axis2"
+                  ]
+                },
+                "geosrs:CoordinateSystem_axis_Shape": {
+                  "nodes": [
+                    "exsrs:ecsc"
+                  ]
+                },
+                "geosrs:TemporalCoordinateSystem_axis_Shape": {
+                  "nodes": []
+                },
+                "geosrs:1DCoordinateSystem_axis_Shape": {
+                  "nodes": []
+                },
+                "geosrs:PlanarCoordinateSystem_axis_Shape": {
+                  "nodes": []
+                },
+                "geosrs:ConicalCoordinateSystem_axis_Shape": {
+                  "nodes": []
+                },
+                "geosrs:TemporalMeasureCoordinateSystem_axis_Shape": {
+                  "nodes": []
+                }
+              },
+              "isError": false,
+              "message": "Focus nodes for _sources/cs/rules.shacl:\n - Shape geosrs:CylindricalCoordinateSystem_axis_Shape: *none*\n - Shape geosrs:TemporalCountCoordinateSystem_axis_Shape: *none*\n - Shape geosrs:CurvilinearCoordinateSystem_axis_Shape: *none*\n - Shape geosrs:3DCoordinateSystem_axis_Shape: *none*\n - Shape geosrs:DateTimeTemporalCoordinateSystem_axis_Shape: *none*\n - Shape geosrs:CoordinateSystemAxis_axisDirection_Shape: exsrs:ecsc_axis1,exsrs:ecsc_axis2\n - Shape geosrs:CoordinateSystem_axis_Shape: exsrs:ecsc\n - Shape geosrs:TemporalCoordinateSystem_axis_Shape: *none*\n - Shape geosrs:1DCoordinateSystem_axis_Shape: *none*\n - Shape geosrs:PlanarCoordinateSystem_axis_Shape: *none*\n - Shape geosrs:ConicalCoordinateSystem_axis_Shape: *none*\n - Shape geosrs:TemporalMeasureCoordinateSystem_axis_Shape: *none*\n"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": {
+        "type": "EXAMPLE",
+        "requireFail": false,
+        "filename": "build/tests/geosrs/cs/example_1_1.ttl",
+        "url": "https://opengeospatial.github.io/ontology-crs/build/tests/geosrs/cs/example_1_1.ttl",
+        "exampleIndex": 1,
+        "snippetIndex": 1,
+        "language": "text/turtle"
+      },
+      "result": true,
+      "sections": [
+        {
+          "name": "FILES",
+          "title": "Files",
+          "entries": [
+            {
+              "isError": false,
+              "message": "Using examples/ellipsoidal2d.ttl from examples"
+            },
+            {
+              "op": "ttl-create",
+              "empty": false,
+              "filename": "example_1_1.ttl",
+              "size": 14,
+              "isError": false,
+              "message": "Output Turtle example_1_1.ttl created"
+            }
+          ]
+        },
+        {
+          "name": "TURTLE",
+          "title": "Turtle",
+          "entries": [
+            {
+              "isError": false,
+              "message": "Prefixes are defined for mynamespace"
+            }
+          ]
+        },
+        {
+          "name": "SHACL",
+          "title": "SHACL",
+          "entries": [
+            {
+              "op": "shacl-report",
+              "shaclFile": "_sources/cs/rules.shacl",
+              "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
+              "isError": false,
+              "message": "Validation result for _sources/cs/rules.shacl:\n  Validation Report\n  Conforms: True\n  "
+            },
+            {
+              "shaclFile": "_sources/cs/rules.shacl",
+              "focusNodes": {
+                "geosrs:CylindricalCoordinateSystem_axis_Shape": {
+                  "nodes": []
+                },
+                "geosrs:TemporalCountCoordinateSystem_axis_Shape": {
+                  "nodes": []
+                },
+                "geosrs:CurvilinearCoordinateSystem_axis_Shape": {
+                  "nodes": []
+                },
+                "geosrs:3DCoordinateSystem_axis_Shape": {
+                  "nodes": []
+                },
+                "geosrs:DateTimeTemporalCoordinateSystem_axis_Shape": {
+                  "nodes": []
+                },
+                "geosrs:CoordinateSystemAxis_axisDirection_Shape": {
+                  "nodes": []
+                },
+                "geosrs:CoordinateSystem_axis_Shape": {
+                  "nodes": []
+                },
+                "geosrs:TemporalCoordinateSystem_axis_Shape": {
+                  "nodes": []
+                },
+                "geosrs:1DCoordinateSystem_axis_Shape": {
+                  "nodes": []
+                },
+                "geosrs:PlanarCoordinateSystem_axis_Shape": {
+                  "nodes": []
+                },
+                "geosrs:ConicalCoordinateSystem_axis_Shape": {
+                  "nodes": []
+                },
+                "geosrs:TemporalMeasureCoordinateSystem_axis_Shape": {
+                  "nodes": []
+                }
+              },
+              "isError": false,
+              "message": "Focus nodes for _sources/cs/rules.shacl:\n - Shape geosrs:CylindricalCoordinateSystem_axis_Shape: *none*\n - Shape geosrs:TemporalCountCoordinateSystem_axis_Shape: *none*\n - Shape geosrs:CurvilinearCoordinateSystem_axis_Shape: *none*\n - Shape geosrs:3DCoordinateSystem_axis_Shape: *none*\n - Shape geosrs:DateTimeTemporalCoordinateSystem_axis_Shape: *none*\n - Shape geosrs:CoordinateSystemAxis_axisDirection_Shape: *none*\n - Shape geosrs:CoordinateSystem_axis_Shape: *none*\n - Shape geosrs:TemporalCoordinateSystem_axis_Shape: *none*\n - Shape geosrs:1DCoordinateSystem_axis_Shape: *none*\n - Shape geosrs:PlanarCoordinateSystem_axis_Shape: *none*\n - Shape geosrs:ConicalCoordinateSystem_axis_Shape: *none*\n - Shape geosrs:TemporalMeasureCoordinateSystem_axis_Shape: *none*\n"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": {
+        "type": "EXAMPLE",
+        "requireFail": false,
+        "filename": "build/tests/geosrs/cs/example_1_2.ttl",
+        "url": "https://opengeospatial.github.io/ontology-crs/build/tests/geosrs/cs/example_1_2.ttl",
+        "exampleIndex": 1,
+        "snippetIndex": 2,
+        "language": "text/turtle"
+      },
+      "result": true,
+      "sections": [
+        {
+          "name": "FILES",
+          "title": "Files",
+          "entries": [
+            {
+              "isError": false,
+              "message": "Using examples/cartesian2d.ttl from examples"
+            },
+            {
+              "op": "ttl-create",
+              "empty": false,
+              "filename": "example_1_2.ttl",
+              "size": 14,
+              "isError": false,
+              "message": "Output Turtle example_1_2.ttl created"
+            }
+          ]
+        },
+        {
+          "name": "TURTLE",
+          "title": "Turtle",
+          "entries": [
+            {
+              "isError": false,
+              "message": "Prefixes are defined for mynamespace"
+            }
+          ]
+        },
+        {
+          "name": "SHACL",
+          "title": "SHACL",
+          "entries": [
+            {
+              "op": "shacl-report",
+              "shaclFile": "_sources/cs/rules.shacl",
+              "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
+              "isError": false,
+              "message": "Validation result for _sources/cs/rules.shacl:\n  Validation Report\n  Conforms: True\n  "
+            },
+            {
+              "shaclFile": "_sources/cs/rules.shacl",
+              "focusNodes": {
+                "geosrs:CylindricalCoordinateSystem_axis_Shape": {
+                  "nodes": []
+                },
+                "geosrs:TemporalCountCoordinateSystem_axis_Shape": {
+                  "nodes": []
+                },
+                "geosrs:CurvilinearCoordinateSystem_axis_Shape": {
+                  "nodes": []
+                },
+                "geosrs:3DCoordinateSystem_axis_Shape": {
+                  "nodes": []
+                },
+                "geosrs:DateTimeTemporalCoordinateSystem_axis_Shape": {
+                  "nodes": []
+                },
+                "geosrs:CoordinateSystemAxis_axisDirection_Shape": {
+                  "nodes": []
+                },
+                "geosrs:CoordinateSystem_axis_Shape": {
+                  "nodes": []
+                },
+                "geosrs:TemporalCoordinateSystem_axis_Shape": {
+                  "nodes": []
+                },
+                "geosrs:1DCoordinateSystem_axis_Shape": {
+                  "nodes": []
+                },
+                "geosrs:PlanarCoordinateSystem_axis_Shape": {
+                  "nodes": []
+                },
+                "geosrs:ConicalCoordinateSystem_axis_Shape": {
+                  "nodes": []
+                },
+                "geosrs:TemporalMeasureCoordinateSystem_axis_Shape": {
+                  "nodes": []
+                }
+              },
+              "isError": false,
+              "message": "Focus nodes for _sources/cs/rules.shacl:\n - Shape geosrs:CylindricalCoordinateSystem_axis_Shape: *none*\n - Shape geosrs:TemporalCountCoordinateSystem_axis_Shape: *none*\n - Shape geosrs:CurvilinearCoordinateSystem_axis_Shape: *none*\n - Shape geosrs:3DCoordinateSystem_axis_Shape: *none*\n - Shape geosrs:DateTimeTemporalCoordinateSystem_axis_Shape: *none*\n - Shape geosrs:CoordinateSystemAxis_axisDirection_Shape: *none*\n - Shape geosrs:CoordinateSystem_axis_Shape: *none*\n - Shape geosrs:TemporalCoordinateSystem_axis_Shape: *none*\n - Shape geosrs:1DCoordinateSystem_axis_Shape: *none*\n - Shape geosrs:PlanarCoordinateSystem_axis_Shape: *none*\n - Shape geosrs:ConicalCoordinateSystem_axis_Shape: *none*\n - Shape geosrs:TemporalMeasureCoordinateSystem_axis_Shape: *none*\n"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "globalErrors": {},
+  "counts": {
+    "total": 6,
+    "passed": 4,
+    "failed": 2
+  }
+}

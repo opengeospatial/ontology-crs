@@ -1,2 +1,9 @@
 Concept,Property,Class,MinCount,MaxCount,Comment
+
 geosrs:ParametricDatum,geosrs:definingParameter,geosrs:DefiningParameter,1,,"A parametric datum should have at least one defining parameter"
+geosrs:Datum,geosrs:ellipsoid,geosrs:Ellipsoid,1,1,"A datum should have exactly one Ellipsoid definition"
+geosrs:Datum,geosrs:primeMeridian,geosrs:PrimeMeridian,1,1,"A datum should have at most one PrimeMeridian definition"
+geosrs:Ellipsoid,geosrs:semiMajorAxis,xsd:double,,1,"An ellipsoid should have only one semiMajorAxis description"
+geosrs:Ellipsoid,geosrs:semiMinorAxis,xsd:double,,1,"An ellipsoid should have only one semiMinorAxis description"
+geosrs:Ellipsoid,geosrs:eccentricity,xsd:double,,1,"An ellipsoid should have only one eccentricity description"
+geosrs:Ellipsoid,geosrs:inverseFlattening,xsd:double,,1,"An ellipsoid should have only one inverseFlattening description"

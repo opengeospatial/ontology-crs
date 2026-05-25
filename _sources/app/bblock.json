@@ -1,0 +1,21 @@
+  {
+  "$schema": "metaschema.yaml",
+  "name": "SRS Ontology - Application module",
+  "highlighted": true,
+  "abstract": "A building block defining SRS Ontology Application Module",
+  "status": "under-development",
+  "dateTimeAddition": "2023-04-05T00:00:00Z",
+  "itemClass": "model",
+  "register": "geosrs",
+  "version": "0.1",
+  "dateOfLastChange": "2023-04-05",
+  "sources": [
+    {
+      "title": "Spec Section",
+      "link": "https://opengeospatial.github.io/ontology-crs/spec/documents/spec/document.html#srsapplication"
+    }
+  ],
+  "maturity": "mature",
+  "scope": "unstable",
+  "tags": ["geosrs"]
+}

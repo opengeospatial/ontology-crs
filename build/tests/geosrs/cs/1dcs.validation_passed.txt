@@ -1,5 +1,5 @@
 Validation report for ogc.geosrs.cs - SRS Ontology - Coordinate System module
-Generated 2026-05-15T10:17:48.634776+00:00
+Generated 2026-05-25T16:18:54.019029+00:00
 === Files ===
 Using 1dcs.ttl from test resources
 === End Files ===
@@ -10,18 +10,18 @@ Validation result for _sources/cs/rules.shacl:
   Conforms: True
   
 Focus nodes for _sources/cs/rules.shacl:
- - Shape geosrs:CylindricalCoordinateSystem_axis_Shape: *none*
- - Shape geosrs:TemporalCountCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:1DCoordinateSystem_axis_Shape: exsrs:ecsc
+ - Shape geosrs:CoordinateSystem_axis_Shape: *none*
  - Shape geosrs:CurvilinearCoordinateSystem_axis_Shape: *none*
- - Shape geosrs:3DCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:TemporalMeasureCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:TemporalCountCoordinateSystem_axis_Shape: *none*
  - Shape geosrs:DateTimeTemporalCoordinateSystem_axis_Shape: *none*
  - Shape geosrs:CoordinateSystemAxis_axisDirection_Shape: exsrs:ecsc_axis1
- - Shape geosrs:CoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:3DCoordinateSystem_axis_Shape: *none*
  - Shape geosrs:TemporalCoordinateSystem_axis_Shape: *none*
- - Shape geosrs:1DCoordinateSystem_axis_Shape: exsrs:ecsc
+ - Shape geosrs:CylindricalCoordinateSystem_axis_Shape: *none*
  - Shape geosrs:PlanarCoordinateSystem_axis_Shape: *none*
  - Shape geosrs:ConicalCoordinateSystem_axis_Shape: *none*
- - Shape geosrs:TemporalMeasureCoordinateSystem_axis_Shape: *none*
 
 === End SHACL ===
 

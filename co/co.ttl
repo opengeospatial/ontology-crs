@@ -34,7 +34,7 @@ geosrs_co:ParameterValueGroup a owl:Class ;
 geosrs_co:PassThroughOperation a owl:Class ;
     rdfs:label "Pass Through Operation"@en ;
     rdfs:subClassOf geosrs:CoordinateOperation ;
-    skos:definition "Specification of a subset of coordinate tuples that is subject to a coordinate operation"@en .
+    skos:definition "A pass-through coordinate operation specifies that a subset of a coordinate tuple is subject to a specific coordinate operation."@en .
 
 geosrs_co:PointMotionOperation a owl:Class ;
     rdfs:label "Point Motion Operation"@en ;

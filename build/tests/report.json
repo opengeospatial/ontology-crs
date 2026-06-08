@@ -10,7 +10,7 @@
       "title": "Validation report for ogc.geosrs.app - SRS Ontology - Application module",
       "bblockName": "SRS Ontology - Application module",
       "bblockId": "ogc.geosrs.app",
-      "generated": "2026-05-11T12:37:41.130398+00:00",
+      "generated": "2026-05-25T16:28:00.621572+00:00",
       "result": true,
       "items": [
         {
@@ -67,7 +67,7 @@
       "title": "Validation report for ogc.geosrs.co - SRS Ontology - Coordinate Operation module",
       "bblockName": "SRS Ontology - Coordinate Operation module",
       "bblockId": "ogc.geosrs.co",
-      "generated": "2026-05-11T12:37:41.136122+00:00",
+      "generated": "2026-05-25T16:28:00.627515+00:00",
       "result": true,
       "items": [
         {
@@ -124,7 +124,7 @@
       "title": "Validation report for ogc.geosrs.cs - SRS Ontology - Coordinate System module",
       "bblockName": "SRS Ontology - Coordinate System module",
       "bblockId": "ogc.geosrs.cs",
-      "generated": "2026-05-11T12:37:41.200161+00:00",
+      "generated": "2026-05-25T16:28:00.699176+00:00",
       "result": false,
       "items": [
         {
@@ -161,19 +161,33 @@
                 {
                   "shaclFile": "_sources/cs/rules.shacl",
                   "focusNodes": {
+                    "geosrs:ConicalCoordinateSystem_axis_Shape": {
+                      "nodes": []
+                    },
                     "geosrs:TemporalCoordinateSystem_axis_Shape": {
                       "nodes": []
                     },
-                    "geosrs:PlanarCoordinateSystem_axis_Shape": {
-                      "nodes": []
-                    },
-                    "geosrs:TemporalMeasureCoordinateSystem_axis_Shape": {
+                    "geosrs:CurvilinearCoordinateSystem_axis_Shape": {
                       "nodes": []
                     },
                     "geosrs:CylindricalCoordinateSystem_axis_Shape": {
                       "nodes": []
                     },
-                    "geosrs:ConicalCoordinateSystem_axis_Shape": {
+                    "geosrs:CoordinateSystem_axis_Shape": {
+                      "nodes": []
+                    },
+                    "geosrs:3DCoordinateSystem_axis_Shape": {
+                      "nodes": []
+                    },
+                    "geosrs:PlanarCoordinateSystem_axis_Shape": {
+                      "nodes": []
+                    },
+                    "geosrs:1DCoordinateSystem_axis_Shape": {
+                      "nodes": [
+                        "exsrs:ecsc"
+                      ]
+                    },
+                    "geosrs:TemporalMeasureCoordinateSystem_axis_Shape": {
                       "nodes": []
                     },
                     "geosrs:CoordinateSystemAxis_axisDirection_Shape": {
@@ -181,29 +195,104 @@
                         "exsrs:ecsc_axis1"
                       ]
                     },
+                    "geosrs:TemporalCountCoordinateSystem_axis_Shape": {
+                      "nodes": []
+                    },
                     "geosrs:DateTimeTemporalCoordinateSystem_axis_Shape": {
                       "nodes": []
-                    },
-                    "geosrs:3DCoordinateSystem_axis_Shape": {
+                    }
+                  },
+                  "isError": false,
+                  "message": "Focus nodes for _sources/cs/rules.shacl:\n - Shape geosrs:ConicalCoordinateSystem_axis_Shape: *none*\n - Shape geosrs:TemporalCoordinateSystem_axis_Shape: *none*\n - Shape geosrs:CurvilinearCoordinateSystem_axis_Shape: *none*\n - Shape geosrs:CylindricalCoordinateSystem_axis_Shape: *none*\n - Shape geosrs:CoordinateSystem_axis_Shape: *none*\n - Shape geosrs:3DCoordinateSystem_axis_Shape: *none*\n - Shape geosrs:PlanarCoordinateSystem_axis_Shape: *none*\n - Shape geosrs:1DCoordinateSystem_axis_Shape: exsrs:ecsc\n - Shape geosrs:TemporalMeasureCoordinateSystem_axis_Shape: *none*\n - Shape geosrs:CoordinateSystemAxis_axisDirection_Shape: exsrs:ecsc_axis1\n - Shape geosrs:TemporalCountCoordinateSystem_axis_Shape: *none*\n - Shape geosrs:DateTimeTemporalCoordinateSystem_axis_Shape: *none*\n"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "source": {
+            "type": "TEST_RESOURCE",
+            "requireFail": true,
+            "filename": "_sources/cs/tests/axisDirection-fail.ttl",
+            "url": "https://opengeospatial.github.io/ontology-crs/_sources/cs/tests/axisDirection-fail.ttl",
+            "language": "ttl"
+          },
+          "result": false,
+          "sections": [
+            {
+              "name": "GENERAL",
+              "title": "General",
+              "entries": [
+                {
+                  "op": "require-fail",
+                  "isError": true,
+                  "message": "Test was expected to fail but it did not."
+                }
+              ]
+            },
+            {
+              "name": "FILES",
+              "title": "Files",
+              "entries": [
+                {
+                  "isError": false,
+                  "message": "Using axisDirection-fail.ttl from test resources"
+                }
+              ]
+            },
+            {
+              "name": "SHACL",
+              "title": "SHACL",
+              "entries": [
+                {
+                  "op": "shacl-report",
+                  "shaclFile": "_sources/cs/rules.shacl",
+                  "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
+                  "isError": false,
+                  "message": "Validation result for _sources/cs/rules.shacl:\n  Validation Report\n  Conforms: True\n  "
+                },
+                {
+                  "shaclFile": "_sources/cs/rules.shacl",
+                  "focusNodes": {
+                    "geosrs:ConicalCoordinateSystem_axis_Shape": {
                       "nodes": []
                     },
-                    "geosrs:CoordinateSystem_axis_Shape": {
+                    "geosrs:TemporalCoordinateSystem_axis_Shape": {
                       "nodes": []
                     },
                     "geosrs:CurvilinearCoordinateSystem_axis_Shape": {
                       "nodes": []
                     },
-                    "geosrs:TemporalCountCoordinateSystem_axis_Shape": {
+                    "geosrs:CylindricalCoordinateSystem_axis_Shape": {
+                      "nodes": []
+                    },
+                    "geosrs:CoordinateSystem_axis_Shape": {
+                      "nodes": []
+                    },
+                    "geosrs:3DCoordinateSystem_axis_Shape": {
+                      "nodes": []
+                    },
+                    "geosrs:PlanarCoordinateSystem_axis_Shape": {
                       "nodes": []
                     },
                     "geosrs:1DCoordinateSystem_axis_Shape": {
-                      "nodes": [
-                        "exsrs:ecsc"
-                      ]
+                      "nodes": []
+                    },
+                    "geosrs:TemporalMeasureCoordinateSystem_axis_Shape": {
+                      "nodes": []
+                    },
+                    "geosrs:CoordinateSystemAxis_axisDirection_Shape": {
+                      "nodes": []
+                    },
+                    "geosrs:TemporalCountCoordinateSystem_axis_Shape": {
+                      "nodes": []
+                    },
+                    "geosrs:DateTimeTemporalCoordinateSystem_axis_Shape": {
+                      "nodes": []
                     }
                   },
                   "isError": false,
-                  "message": "Focus nodes for _sources/cs/rules.shacl:\n - Shape geosrs:TemporalCoordinateSystem_axis_Shape: *none*\n - Shape geosrs:PlanarCoordinateSystem_axis_Shape: *none*\n - Shape geosrs:TemporalMeasureCoordinateSystem_axis_Shape: *none*\n - Shape geosrs:CylindricalCoordinateSystem_axis_Shape: *none*\n - Shape geosrs:ConicalCoordinateSystem_axis_Shape: *none*\n - Shape geosrs:CoordinateSystemAxis_axisDirection_Shape: exsrs:ecsc_axis1\n - Shape geosrs:DateTimeTemporalCoordinateSystem_axis_Shape: *none*\n - Shape geosrs:3DCoordinateSystem_axis_Shape: *none*\n - Shape geosrs:CoordinateSystem_axis_Shape: *none*\n - Shape geosrs:CurvilinearCoordinateSystem_axis_Shape: *none*\n - Shape geosrs:TemporalCountCoordinateSystem_axis_Shape: *none*\n - Shape geosrs:1DCoordinateSystem_axis_Shape: exsrs:ecsc\n"
+                  "message": "Focus nodes for _sources/cs/rules.shacl:\n - Shape geosrs:ConicalCoordinateSystem_axis_Shape: *none*\n - Shape geosrs:TemporalCoordinateSystem_axis_Shape: *none*\n - Shape geosrs:CurvilinearCoordinateSystem_axis_Shape: *none*\n - Shape geosrs:CylindricalCoordinateSystem_axis_Shape: *none*\n - Shape geosrs:CoordinateSystem_axis_Shape: *none*\n - Shape geosrs:3DCoordinateSystem_axis_Shape: *none*\n - Shape geosrs:PlanarCoordinateSystem_axis_Shape: *none*\n - Shape geosrs:1DCoordinateSystem_axis_Shape: *none*\n - Shape geosrs:TemporalMeasureCoordinateSystem_axis_Shape: *none*\n - Shape geosrs:CoordinateSystemAxis_axisDirection_Shape: *none*\n - Shape geosrs:TemporalCountCoordinateSystem_axis_Shape: *none*\n - Shape geosrs:DateTimeTemporalCoordinateSystem_axis_Shape: *none*\n"
                 }
               ]
             }
@@ -243,19 +332,31 @@
                 {
                   "shaclFile": "_sources/cs/rules.shacl",
                   "focusNodes": {
+                    "geosrs:ConicalCoordinateSystem_axis_Shape": {
+                      "nodes": []
+                    },
                     "geosrs:TemporalCoordinateSystem_axis_Shape": {
                       "nodes": []
                     },
-                    "geosrs:PlanarCoordinateSystem_axis_Shape": {
-                      "nodes": []
-                    },
-                    "geosrs:TemporalMeasureCoordinateSystem_axis_Shape": {
+                    "geosrs:CurvilinearCoordinateSystem_axis_Shape": {
                       "nodes": []
                     },
                     "geosrs:CylindricalCoordinateSystem_axis_Shape": {
                       "nodes": []
                     },
-                    "geosrs:ConicalCoordinateSystem_axis_Shape": {
+                    "geosrs:CoordinateSystem_axis_Shape": {
+                      "nodes": []
+                    },
+                    "geosrs:3DCoordinateSystem_axis_Shape": {
+                      "nodes": []
+                    },
+                    "geosrs:PlanarCoordinateSystem_axis_Shape": {
+                      "nodes": []
+                    },
+                    "geosrs:1DCoordinateSystem_axis_Shape": {
+                      "nodes": []
+                    },
+                    "geosrs:TemporalMeasureCoordinateSystem_axis_Shape": {
                       "nodes": []
                     },
                     "geosrs:CoordinateSystemAxis_axisDirection_Shape": {
@@ -263,27 +364,15 @@
                         "exsrs:myAxis"
                       ]
                     },
-                    "geosrs:DateTimeTemporalCoordinateSystem_axis_Shape": {
-                      "nodes": []
-                    },
-                    "geosrs:3DCoordinateSystem_axis_Shape": {
-                      "nodes": []
-                    },
-                    "geosrs:CoordinateSystem_axis_Shape": {
-                      "nodes": []
-                    },
-                    "geosrs:CurvilinearCoordinateSystem_axis_Shape": {
-                      "nodes": []
-                    },
                     "geosrs:TemporalCountCoordinateSystem_axis_Shape": {
                       "nodes": []
                     },
-                    "geosrs:1DCoordinateSystem_axis_Shape": {
+                    "geosrs:DateTimeTemporalCoordinateSystem_axis_Shape": {
                       "nodes": []
                     }
                   },
                   "isError": false,
-                  "message": "Focus nodes for _sources/cs/rules.shacl:\n - Shape geosrs:TemporalCoordinateSystem_axis_Shape: *none*\n - Shape geosrs:PlanarCoordinateSystem_axis_Shape: *none*\n - Shape geosrs:TemporalMeasureCoordinateSystem_axis_Shape: *none*\n - Shape geosrs:CylindricalCoordinateSystem_axis_Shape: *none*\n - Shape geosrs:ConicalCoordinateSystem_axis_Shape: *none*\n - Shape geosrs:CoordinateSystemAxis_axisDirection_Shape: exsrs:myAxis\n - Shape geosrs:DateTimeTemporalCoordinateSystem_axis_Shape: *none*\n - Shape geosrs:3DCoordinateSystem_axis_Shape: *none*\n - Shape geosrs:CoordinateSystem_axis_Shape: *none*\n - Shape geosrs:CurvilinearCoordinateSystem_axis_Shape: *none*\n - Shape geosrs:TemporalCountCoordinateSystem_axis_Shape: *none*\n - Shape geosrs:1DCoordinateSystem_axis_Shape: *none*\n"
+                  "message": "Focus nodes for _sources/cs/rules.shacl:\n - Shape geosrs:ConicalCoordinateSystem_axis_Shape: *none*\n - Shape geosrs:TemporalCoordinateSystem_axis_Shape: *none*\n - Shape geosrs:CurvilinearCoordinateSystem_axis_Shape: *none*\n - Shape geosrs:CylindricalCoordinateSystem_axis_Shape: *none*\n - Shape geosrs:CoordinateSystem_axis_Shape: *none*\n - Shape geosrs:3DCoordinateSystem_axis_Shape: *none*\n - Shape geosrs:PlanarCoordinateSystem_axis_Shape: *none*\n - Shape geosrs:1DCoordinateSystem_axis_Shape: *none*\n - Shape geosrs:TemporalMeasureCoordinateSystem_axis_Shape: *none*\n - Shape geosrs:CoordinateSystemAxis_axisDirection_Shape: exsrs:myAxis\n - Shape geosrs:TemporalCountCoordinateSystem_axis_Shape: *none*\n - Shape geosrs:DateTimeTemporalCoordinateSystem_axis_Shape: *none*\n"
                 }
               ]
             }
@@ -323,19 +412,33 @@
                 {
                   "shaclFile": "_sources/cs/rules.shacl",
                   "focusNodes": {
+                    "geosrs:ConicalCoordinateSystem_axis_Shape": {
+                      "nodes": []
+                    },
                     "geosrs:TemporalCoordinateSystem_axis_Shape": {
                       "nodes": []
                     },
-                    "geosrs:PlanarCoordinateSystem_axis_Shape": {
-                      "nodes": []
-                    },
-                    "geosrs:TemporalMeasureCoordinateSystem_axis_Shape": {
+                    "geosrs:CurvilinearCoordinateSystem_axis_Shape": {
                       "nodes": []
                     },
                     "geosrs:CylindricalCoordinateSystem_axis_Shape": {
                       "nodes": []
                     },
-                    "geosrs:ConicalCoordinateSystem_axis_Shape": {
+                    "geosrs:CoordinateSystem_axis_Shape": {
+                      "nodes": [
+                        "exsrs:ecsc"
+                      ]
+                    },
+                    "geosrs:3DCoordinateSystem_axis_Shape": {
+                      "nodes": []
+                    },
+                    "geosrs:PlanarCoordinateSystem_axis_Shape": {
+                      "nodes": []
+                    },
+                    "geosrs:1DCoordinateSystem_axis_Shape": {
+                      "nodes": []
+                    },
+                    "geosrs:TemporalMeasureCoordinateSystem_axis_Shape": {
                       "nodes": []
                     },
                     "geosrs:CoordinateSystemAxis_axisDirection_Shape": {
@@ -344,29 +447,15 @@
                         "exsrs:ecsc_axis1"
                       ]
                     },
-                    "geosrs:DateTimeTemporalCoordinateSystem_axis_Shape": {
-                      "nodes": []
-                    },
-                    "geosrs:3DCoordinateSystem_axis_Shape": {
-                      "nodes": []
-                    },
-                    "geosrs:CoordinateSystem_axis_Shape": {
-                      "nodes": [
-                        "exsrs:ecsc"
-                      ]
-                    },
-                    "geosrs:CurvilinearCoordinateSystem_axis_Shape": {
-                      "nodes": []
-                    },
                     "geosrs:TemporalCountCoordinateSystem_axis_Shape": {
                       "nodes": []
                     },
-                    "geosrs:1DCoordinateSystem_axis_Shape": {
+                    "geosrs:DateTimeTemporalCoordinateSystem_axis_Shape": {
                       "nodes": []
                     }
                   },
                   "isError": false,
-                  "message": "Focus nodes for _sources/cs/rules.shacl:\n - Shape geosrs:TemporalCoordinateSystem_axis_Shape: *none*\n - Shape geosrs:PlanarCoordinateSystem_axis_Shape: *none*\n - Shape geosrs:TemporalMeasureCoordinateSystem_axis_Shape: *none*\n - Shape geosrs:CylindricalCoordinateSystem_axis_Shape: *none*\n - Shape geosrs:ConicalCoordinateSystem_axis_Shape: *none*\n - Shape geosrs:CoordinateSystemAxis_axisDirection_Shape: exsrs:ecsc_axis2,exsrs:ecsc_axis1\n - Shape geosrs:DateTimeTemporalCoordinateSystem_axis_Shape: *none*\n - Shape geosrs:3DCoordinateSystem_axis_Shape: *none*\n - Shape geosrs:CoordinateSystem_axis_Shape: exsrs:ecsc\n - Shape geosrs:CurvilinearCoordinateSystem_axis_Shape: *none*\n - Shape geosrs:TemporalCountCoordinateSystem_axis_Shape: *none*\n - Shape geosrs:1DCoordinateSystem_axis_Shape: *none*\n"
+                  "message": "Focus nodes for _sources/cs/rules.shacl:\n - Shape geosrs:ConicalCoordinateSystem_axis_Shape: *none*\n - Shape geosrs:TemporalCoordinateSystem_axis_Shape: *none*\n - Shape geosrs:CurvilinearCoordinateSystem_axis_Shape: *none*\n - Shape geosrs:CylindricalCoordinateSystem_axis_Shape: *none*\n - Shape geosrs:CoordinateSystem_axis_Shape: exsrs:ecsc\n - Shape geosrs:3DCoordinateSystem_axis_Shape: *none*\n - Shape geosrs:PlanarCoordinateSystem_axis_Shape: *none*\n - Shape geosrs:1DCoordinateSystem_axis_Shape: *none*\n - Shape geosrs:TemporalMeasureCoordinateSystem_axis_Shape: *none*\n - Shape geosrs:CoordinateSystemAxis_axisDirection_Shape: exsrs:ecsc_axis2,exsrs:ecsc_axis1\n - Shape geosrs:TemporalCountCoordinateSystem_axis_Shape: *none*\n - Shape geosrs:DateTimeTemporalCoordinateSystem_axis_Shape: *none*\n"
                 }
               ]
             }
@@ -426,45 +515,45 @@
                 {
                   "shaclFile": "_sources/cs/rules.shacl",
                   "focusNodes": {
-                    "geosrs:TemporalCoordinateSystem_axis_Shape": {
-                      "nodes": []
-                    },
-                    "geosrs:PlanarCoordinateSystem_axis_Shape": {
-                      "nodes": []
-                    },
-                    "geosrs:TemporalMeasureCoordinateSystem_axis_Shape": {
-                      "nodes": []
-                    },
-                    "geosrs:CylindricalCoordinateSystem_axis_Shape": {
-                      "nodes": []
-                    },
                     "geosrs:ConicalCoordinateSystem_axis_Shape": {
                       "nodes": []
                     },
-                    "geosrs:CoordinateSystemAxis_axisDirection_Shape": {
-                      "nodes": []
-                    },
-                    "geosrs:DateTimeTemporalCoordinateSystem_axis_Shape": {
-                      "nodes": []
-                    },
-                    "geosrs:3DCoordinateSystem_axis_Shape": {
-                      "nodes": []
-                    },
-                    "geosrs:CoordinateSystem_axis_Shape": {
+                    "geosrs:TemporalCoordinateSystem_axis_Shape": {
                       "nodes": []
                     },
                     "geosrs:CurvilinearCoordinateSystem_axis_Shape": {
                       "nodes": []
                     },
-                    "geosrs:TemporalCountCoordinateSystem_axis_Shape": {
+                    "geosrs:CylindricalCoordinateSystem_axis_Shape": {
+                      "nodes": []
+                    },
+                    "geosrs:CoordinateSystem_axis_Shape": {
+                      "nodes": []
+                    },
+                    "geosrs:3DCoordinateSystem_axis_Shape": {
+                      "nodes": []
+                    },
+                    "geosrs:PlanarCoordinateSystem_axis_Shape": {
                       "nodes": []
                     },
                     "geosrs:1DCoordinateSystem_axis_Shape": {
                       "nodes": []
+                    },
+                    "geosrs:TemporalMeasureCoordinateSystem_axis_Shape": {
+                      "nodes": []
+                    },
+                    "geosrs:CoordinateSystemAxis_axisDirection_Shape": {
+                      "nodes": []
+                    },
+                    "geosrs:TemporalCountCoordinateSystem_axis_Shape": {
+                      "nodes": []
+                    },
+                    "geosrs:DateTimeTemporalCoordinateSystem_axis_Shape": {
+                      "nodes": []
                     }
                   },
                   "isError": false,
-                  "message": "Focus nodes for _sources/cs/rules.shacl:\n - Shape geosrs:TemporalCoordinateSystem_axis_Shape: *none*\n - Shape geosrs:PlanarCoordinateSystem_axis_Shape: *none*\n - Shape geosrs:TemporalMeasureCoordinateSystem_axis_Shape: *none*\n - Shape geosrs:CylindricalCoordinateSystem_axis_Shape: *none*\n - Shape geosrs:ConicalCoordinateSystem_axis_Shape: *none*\n - Shape geosrs:CoordinateSystemAxis_axisDirection_Shape: *none*\n - Shape geosrs:DateTimeTemporalCoordinateSystem_axis_Shape: *none*\n - Shape geosrs:3DCoordinateSystem_axis_Shape: *none*\n - Shape geosrs:CoordinateSystem_axis_Shape: *none*\n - Shape geosrs:CurvilinearCoordinateSystem_axis_Shape: *none*\n - Shape geosrs:TemporalCountCoordinateSystem_axis_Shape: *none*\n - Shape geosrs:1DCoordinateSystem_axis_Shape: *none*\n"
+                  "message": "Focus nodes for _sources/cs/rules.shacl:\n - Shape geosrs:ConicalCoordinateSystem_axis_Shape: *none*\n - Shape geosrs:TemporalCoordinateSystem_axis_Shape: *none*\n - Shape geosrs:CurvilinearCoordinateSystem_axis_Shape: *none*\n - Shape geosrs:CylindricalCoordinateSystem_axis_Shape: *none*\n - Shape geosrs:CoordinateSystem_axis_Shape: *none*\n - Shape geosrs:3DCoordinateSystem_axis_Shape: *none*\n - Shape geosrs:PlanarCoordinateSystem_axis_Shape: *none*\n - Shape geosrs:1DCoordinateSystem_axis_Shape: *none*\n - Shape geosrs:TemporalMeasureCoordinateSystem_axis_Shape: *none*\n - Shape geosrs:CoordinateSystemAxis_axisDirection_Shape: *none*\n - Shape geosrs:TemporalCountCoordinateSystem_axis_Shape: *none*\n - Shape geosrs:DateTimeTemporalCoordinateSystem_axis_Shape: *none*\n"
                 }
               ]
             }
@@ -524,45 +613,45 @@
                 {
                   "shaclFile": "_sources/cs/rules.shacl",
                   "focusNodes": {
-                    "geosrs:TemporalCoordinateSystem_axis_Shape": {
-                      "nodes": []
-                    },
-                    "geosrs:PlanarCoordinateSystem_axis_Shape": {
-                      "nodes": []
-                    },
-                    "geosrs:TemporalMeasureCoordinateSystem_axis_Shape": {
-                      "nodes": []
-                    },
-                    "geosrs:CylindricalCoordinateSystem_axis_Shape": {
-                      "nodes": []
-                    },
                     "geosrs:ConicalCoordinateSystem_axis_Shape": {
                       "nodes": []
                     },
-                    "geosrs:CoordinateSystemAxis_axisDirection_Shape": {
-                      "nodes": []
-                    },
-                    "geosrs:DateTimeTemporalCoordinateSystem_axis_Shape": {
-                      "nodes": []
-                    },
-                    "geosrs:3DCoordinateSystem_axis_Shape": {
-                      "nodes": []
-                    },
-                    "geosrs:CoordinateSystem_axis_Shape": {
+                    "geosrs:TemporalCoordinateSystem_axis_Shape": {
                       "nodes": []
                     },
                     "geosrs:CurvilinearCoordinateSystem_axis_Shape": {
                       "nodes": []
                     },
-                    "geosrs:TemporalCountCoordinateSystem_axis_Shape": {
+                    "geosrs:CylindricalCoordinateSystem_axis_Shape": {
+                      "nodes": []
+                    },
+                    "geosrs:CoordinateSystem_axis_Shape": {
+                      "nodes": []
+                    },
+                    "geosrs:3DCoordinateSystem_axis_Shape": {
+                      "nodes": []
+                    },
+                    "geosrs:PlanarCoordinateSystem_axis_Shape": {
                       "nodes": []
                     },
                     "geosrs:1DCoordinateSystem_axis_Shape": {
                       "nodes": []
+                    },
+                    "geosrs:TemporalMeasureCoordinateSystem_axis_Shape": {
+                      "nodes": []
+                    },
+                    "geosrs:CoordinateSystemAxis_axisDirection_Shape": {
+                      "nodes": []
+                    },
+                    "geosrs:TemporalCountCoordinateSystem_axis_Shape": {
+                      "nodes": []
+                    },
+                    "geosrs:DateTimeTemporalCoordinateSystem_axis_Shape": {
+                      "nodes": []
                     }
                   },
                   "isError": false,
-                  "message": "Focus nodes for _sources/cs/rules.shacl:\n - Shape geosrs:TemporalCoordinateSystem_axis_Shape: *none*\n - Shape geosrs:PlanarCoordinateSystem_axis_Shape: *none*\n - Shape geosrs:TemporalMeasureCoordinateSystem_axis_Shape: *none*\n - Shape geosrs:CylindricalCoordinateSystem_axis_Shape: *none*\n - Shape geosrs:ConicalCoordinateSystem_axis_Shape: *none*\n - Shape geosrs:CoordinateSystemAxis_axisDirection_Shape: *none*\n - Shape geosrs:DateTimeTemporalCoordinateSystem_axis_Shape: *none*\n - Shape geosrs:3DCoordinateSystem_axis_Shape: *none*\n - Shape geosrs:CoordinateSystem_axis_Shape: *none*\n - Shape geosrs:CurvilinearCoordinateSystem_axis_Shape: *none*\n - Shape geosrs:TemporalCountCoordinateSystem_axis_Shape: *none*\n - Shape geosrs:1DCoordinateSystem_axis_Shape: *none*\n"
+                  "message": "Focus nodes for _sources/cs/rules.shacl:\n - Shape geosrs:ConicalCoordinateSystem_axis_Shape: *none*\n - Shape geosrs:TemporalCoordinateSystem_axis_Shape: *none*\n - Shape geosrs:CurvilinearCoordinateSystem_axis_Shape: *none*\n - Shape geosrs:CylindricalCoordinateSystem_axis_Shape: *none*\n - Shape geosrs:CoordinateSystem_axis_Shape: *none*\n - Shape geosrs:3DCoordinateSystem_axis_Shape: *none*\n - Shape geosrs:PlanarCoordinateSystem_axis_Shape: *none*\n - Shape geosrs:1DCoordinateSystem_axis_Shape: *none*\n - Shape geosrs:TemporalMeasureCoordinateSystem_axis_Shape: *none*\n - Shape geosrs:CoordinateSystemAxis_axisDirection_Shape: *none*\n - Shape geosrs:TemporalCountCoordinateSystem_axis_Shape: *none*\n - Shape geosrs:DateTimeTemporalCoordinateSystem_axis_Shape: *none*\n"
                 }
               ]
             }
@@ -571,16 +660,16 @@
       ],
       "globalErrors": {},
       "counts": {
-        "total": 5,
+        "total": 6,
         "passed": 4,
-        "failed": 1
+        "failed": 2
       }
     },
     "ogc.geosrs.datum": {
       "title": "Validation report for ogc.geosrs.datum - SRS Ontology - Datum module",
       "bblockName": "SRS Ontology - Datum module",
       "bblockId": "ogc.geosrs.datum",
-      "generated": "2026-05-11T12:37:41.225841+00:00",
+      "generated": "2026-05-25T16:28:00.726110+00:00",
       "result": false,
       "items": [
         {
@@ -628,16 +717,7 @@
                 {
                   "shaclFile": "_sources/datum/rules.shacl",
                   "focusNodes": {
-                    "geosrs:Ellipsoid_semiMajorAxis_Shape": {
-                      "nodes": []
-                    },
                     "geosrs:Ellipsoid_inverseFlattening_Shape": {
-                      "nodes": []
-                    },
-                    "geosrs:Datum_primeMeridian_Shape": {
-                      "nodes": []
-                    },
-                    "geosrs:Ellipsoid_eccentricity_Shape": {
                       "nodes": []
                     },
                     "geosrs:Datum_ellipsoid_Shape": {
@@ -646,12 +726,21 @@
                     "geosrs:ParametricDatum_definingParameter_Shape": {
                       "nodes": []
                     },
+                    "geosrs:Datum_primeMeridian_Shape": {
+                      "nodes": []
+                    },
+                    "geosrs:Ellipsoid_eccentricity_Shape": {
+                      "nodes": []
+                    },
                     "geosrs:Ellipsoid_semiMinorAxis_Shape": {
+                      "nodes": []
+                    },
+                    "geosrs:Ellipsoid_semiMajorAxis_Shape": {
                       "nodes": []
                     }
                   },
                   "isError": false,
-                  "message": "Focus nodes for _sources/datum/rules.shacl:\n - Shape geosrs:Ellipsoid_semiMajorAxis_Shape: *none*\n - Shape geosrs:Ellipsoid_inverseFlattening_Shape: *none*\n - Shape geosrs:Datum_primeMeridian_Shape: *none*\n - Shape geosrs:Ellipsoid_eccentricity_Shape: *none*\n - Shape geosrs:Datum_ellipsoid_Shape: *none*\n - Shape geosrs:ParametricDatum_definingParameter_Shape: *none*\n - Shape geosrs:Ellipsoid_semiMinorAxis_Shape: *none*\n"
+                  "message": "Focus nodes for _sources/datum/rules.shacl:\n - Shape geosrs:Ellipsoid_inverseFlattening_Shape: *none*\n - Shape geosrs:Datum_ellipsoid_Shape: *none*\n - Shape geosrs:ParametricDatum_definingParameter_Shape: *none*\n - Shape geosrs:Datum_primeMeridian_Shape: *none*\n - Shape geosrs:Ellipsoid_eccentricity_Shape: *none*\n - Shape geosrs:Ellipsoid_semiMinorAxis_Shape: *none*\n - Shape geosrs:Ellipsoid_semiMajorAxis_Shape: *none*\n"
                 }
               ]
             }
@@ -691,16 +780,7 @@
                 {
                   "shaclFile": "_sources/datum/rules.shacl",
                   "focusNodes": {
-                    "geosrs:Ellipsoid_semiMajorAxis_Shape": {
-                      "nodes": []
-                    },
                     "geosrs:Ellipsoid_inverseFlattening_Shape": {
-                      "nodes": []
-                    },
-                    "geosrs:Datum_primeMeridian_Shape": {
-                      "nodes": []
-                    },
-                    "geosrs:Ellipsoid_eccentricity_Shape": {
                       "nodes": []
                     },
                     "geosrs:Datum_ellipsoid_Shape": {
@@ -709,12 +789,21 @@
                     "geosrs:ParametricDatum_definingParameter_Shape": {
                       "nodes": []
                     },
+                    "geosrs:Datum_primeMeridian_Shape": {
+                      "nodes": []
+                    },
+                    "geosrs:Ellipsoid_eccentricity_Shape": {
+                      "nodes": []
+                    },
                     "geosrs:Ellipsoid_semiMinorAxis_Shape": {
+                      "nodes": []
+                    },
+                    "geosrs:Ellipsoid_semiMajorAxis_Shape": {
                       "nodes": []
                     }
                   },
                   "isError": false,
-                  "message": "Focus nodes for _sources/datum/rules.shacl:\n - Shape geosrs:Ellipsoid_semiMajorAxis_Shape: *none*\n - Shape geosrs:Ellipsoid_inverseFlattening_Shape: *none*\n - Shape geosrs:Datum_primeMeridian_Shape: *none*\n - Shape geosrs:Ellipsoid_eccentricity_Shape: *none*\n - Shape geosrs:Datum_ellipsoid_Shape: *none*\n - Shape geosrs:ParametricDatum_definingParameter_Shape: *none*\n - Shape geosrs:Ellipsoid_semiMinorAxis_Shape: *none*\n"
+                  "message": "Focus nodes for _sources/datum/rules.shacl:\n - Shape geosrs:Ellipsoid_inverseFlattening_Shape: *none*\n - Shape geosrs:Datum_ellipsoid_Shape: *none*\n - Shape geosrs:ParametricDatum_definingParameter_Shape: *none*\n - Shape geosrs:Datum_primeMeridian_Shape: *none*\n - Shape geosrs:Ellipsoid_eccentricity_Shape: *none*\n - Shape geosrs:Ellipsoid_semiMinorAxis_Shape: *none*\n - Shape geosrs:Ellipsoid_semiMajorAxis_Shape: *none*\n"
                 }
               ]
             }
@@ -765,16 +854,7 @@
                 {
                   "shaclFile": "_sources/datum/rules.shacl",
                   "focusNodes": {
-                    "geosrs:Ellipsoid_semiMajorAxis_Shape": {
-                      "nodes": []
-                    },
                     "geosrs:Ellipsoid_inverseFlattening_Shape": {
-                      "nodes": []
-                    },
-                    "geosrs:Datum_primeMeridian_Shape": {
-                      "nodes": []
-                    },
-                    "geosrs:Ellipsoid_eccentricity_Shape": {
                       "nodes": []
                     },
                     "geosrs:Datum_ellipsoid_Shape": {
@@ -783,12 +863,21 @@
                     "geosrs:ParametricDatum_definingParameter_Shape": {
                       "nodes": []
                     },
+                    "geosrs:Datum_primeMeridian_Shape": {
+                      "nodes": []
+                    },
+                    "geosrs:Ellipsoid_eccentricity_Shape": {
+                      "nodes": []
+                    },
                     "geosrs:Ellipsoid_semiMinorAxis_Shape": {
+                      "nodes": []
+                    },
+                    "geosrs:Ellipsoid_semiMajorAxis_Shape": {
                       "nodes": []
                     }
                   },
                   "isError": false,
-                  "message": "Focus nodes for _sources/datum/rules.shacl:\n - Shape geosrs:Ellipsoid_semiMajorAxis_Shape: *none*\n - Shape geosrs:Ellipsoid_inverseFlattening_Shape: *none*\n - Shape geosrs:Datum_primeMeridian_Shape: *none*\n - Shape geosrs:Ellipsoid_eccentricity_Shape: *none*\n - Shape geosrs:Datum_ellipsoid_Shape: *none*\n - Shape geosrs:ParametricDatum_definingParameter_Shape: *none*\n - Shape geosrs:Ellipsoid_semiMinorAxis_Shape: *none*\n"
+                  "message": "Focus nodes for _sources/datum/rules.shacl:\n - Shape geosrs:Ellipsoid_inverseFlattening_Shape: *none*\n - Shape geosrs:Datum_ellipsoid_Shape: *none*\n - Shape geosrs:ParametricDatum_definingParameter_Shape: *none*\n - Shape geosrs:Datum_primeMeridian_Shape: *none*\n - Shape geosrs:Ellipsoid_eccentricity_Shape: *none*\n - Shape geosrs:Ellipsoid_semiMinorAxis_Shape: *none*\n - Shape geosrs:Ellipsoid_semiMajorAxis_Shape: *none*\n"
                 }
               ]
             }
@@ -828,16 +917,7 @@
                 {
                   "shaclFile": "_sources/datum/rules.shacl",
                   "focusNodes": {
-                    "geosrs:Ellipsoid_semiMajorAxis_Shape": {
-                      "nodes": []
-                    },
                     "geosrs:Ellipsoid_inverseFlattening_Shape": {
-                      "nodes": []
-                    },
-                    "geosrs:Datum_primeMeridian_Shape": {
-                      "nodes": []
-                    },
-                    "geosrs:Ellipsoid_eccentricity_Shape": {
                       "nodes": []
                     },
                     "geosrs:Datum_ellipsoid_Shape": {
@@ -846,12 +926,21 @@
                     "geosrs:ParametricDatum_definingParameter_Shape": {
                       "nodes": []
                     },
+                    "geosrs:Datum_primeMeridian_Shape": {
+                      "nodes": []
+                    },
+                    "geosrs:Ellipsoid_eccentricity_Shape": {
+                      "nodes": []
+                    },
                     "geosrs:Ellipsoid_semiMinorAxis_Shape": {
+                      "nodes": []
+                    },
+                    "geosrs:Ellipsoid_semiMajorAxis_Shape": {
                       "nodes": []
                     }
                   },
                   "isError": false,
-                  "message": "Focus nodes for _sources/datum/rules.shacl:\n - Shape geosrs:Ellipsoid_semiMajorAxis_Shape: *none*\n - Shape geosrs:Ellipsoid_inverseFlattening_Shape: *none*\n - Shape geosrs:Datum_primeMeridian_Shape: *none*\n - Shape geosrs:Ellipsoid_eccentricity_Shape: *none*\n - Shape geosrs:Datum_ellipsoid_Shape: *none*\n - Shape geosrs:ParametricDatum_definingParameter_Shape: *none*\n - Shape geosrs:Ellipsoid_semiMinorAxis_Shape: *none*\n"
+                  "message": "Focus nodes for _sources/datum/rules.shacl:\n - Shape geosrs:Ellipsoid_inverseFlattening_Shape: *none*\n - Shape geosrs:Datum_ellipsoid_Shape: *none*\n - Shape geosrs:ParametricDatum_definingParameter_Shape: *none*\n - Shape geosrs:Datum_primeMeridian_Shape: *none*\n - Shape geosrs:Ellipsoid_eccentricity_Shape: *none*\n - Shape geosrs:Ellipsoid_semiMinorAxis_Shape: *none*\n - Shape geosrs:Ellipsoid_semiMajorAxis_Shape: *none*\n"
                 }
               ]
             }
@@ -911,16 +1000,7 @@
                 {
                   "shaclFile": "_sources/datum/rules.shacl",
                   "focusNodes": {
-                    "geosrs:Ellipsoid_semiMajorAxis_Shape": {
-                      "nodes": []
-                    },
                     "geosrs:Ellipsoid_inverseFlattening_Shape": {
-                      "nodes": []
-                    },
-                    "geosrs:Datum_primeMeridian_Shape": {
-                      "nodes": []
-                    },
-                    "geosrs:Ellipsoid_eccentricity_Shape": {
                       "nodes": []
                     },
                     "geosrs:Datum_ellipsoid_Shape": {
@@ -929,12 +1009,21 @@
                     "geosrs:ParametricDatum_definingParameter_Shape": {
                       "nodes": []
                     },
+                    "geosrs:Datum_primeMeridian_Shape": {
+                      "nodes": []
+                    },
+                    "geosrs:Ellipsoid_eccentricity_Shape": {
+                      "nodes": []
+                    },
                     "geosrs:Ellipsoid_semiMinorAxis_Shape": {
+                      "nodes": []
+                    },
+                    "geosrs:Ellipsoid_semiMajorAxis_Shape": {
                       "nodes": []
                     }
                   },
                   "isError": false,
-                  "message": "Focus nodes for _sources/datum/rules.shacl:\n - Shape geosrs:Ellipsoid_semiMajorAxis_Shape: *none*\n - Shape geosrs:Ellipsoid_inverseFlattening_Shape: *none*\n - Shape geosrs:Datum_primeMeridian_Shape: *none*\n - Shape geosrs:Ellipsoid_eccentricity_Shape: *none*\n - Shape geosrs:Datum_ellipsoid_Shape: *none*\n - Shape geosrs:ParametricDatum_definingParameter_Shape: *none*\n - Shape geosrs:Ellipsoid_semiMinorAxis_Shape: *none*\n"
+                  "message": "Focus nodes for _sources/datum/rules.shacl:\n - Shape geosrs:Ellipsoid_inverseFlattening_Shape: *none*\n - Shape geosrs:Datum_ellipsoid_Shape: *none*\n - Shape geosrs:ParametricDatum_definingParameter_Shape: *none*\n - Shape geosrs:Datum_primeMeridian_Shape: *none*\n - Shape geosrs:Ellipsoid_eccentricity_Shape: *none*\n - Shape geosrs:Ellipsoid_semiMinorAxis_Shape: *none*\n - Shape geosrs:Ellipsoid_semiMajorAxis_Shape: *none*\n"
                 }
               ]
             }
@@ -952,7 +1041,7 @@
       "title": "Validation report for ogc.geosrs.planet - SRS Ontology - Planet module",
       "bblockName": "SRS Ontology - Planet module",
       "bblockId": "ogc.geosrs.planet",
-      "generated": "2026-05-11T12:37:41.231350+00:00",
+      "generated": "2026-05-25T16:28:00.731609+00:00",
       "result": true,
       "items": [
         {
@@ -1009,7 +1098,7 @@
       "title": "Validation report for ogc.geosrs.projection - SRS Ontology - Projection module",
       "bblockName": "SRS Ontology - Projection module",
       "bblockId": "ogc.geosrs.projection",
-      "generated": "2026-05-11T12:37:41.236083+00:00",
+      "generated": "2026-05-25T16:28:00.736225+00:00",
       "result": true,
       "items": [
         {
@@ -1066,7 +1155,7 @@
       "title": "Validation report for ogc.geosrs.srs - SRS Core Ontology",
       "bblockName": "SRS Core Ontology",
       "bblockId": "ogc.geosrs.srs",
-      "generated": "2026-05-11T12:37:41.274616+00:00",
+      "generated": "2026-05-25T16:28:00.776367+00:00",
       "result": false,
       "items": [
         {
@@ -1114,48 +1203,48 @@
                 {
                   "shaclFile": "_sources/srs/rules.shacl",
                   "focusNodes": {
-                    "geosrs:GeographicCRS_datum_Shape": {
-                      "nodes": []
-                    },
-                    "geosrs:ParametricCRS_datum_Shape": {
-                      "nodes": []
-                    },
-                    "geosrs:CRS_datumEnsemble_Shape": {
-                      "nodes": []
-                    },
-                    "geosrs:CompoundCRS_includesSRS_Shape": {
-                      "nodes": []
-                    },
-                    "geosrs:CRS_domainOfValidity_Shape": {
+                    "geosrs:SingleCRS_coordinateSystem_Shape": {
                       "nodes": []
                     },
                     "geosrs:SingleCRS_datum_Shape": {
                       "nodes": []
                     },
-                    "geosrs:GeodeticCRS_coordinateSystem_Shape": {
+                    "geosrs:GeographicCRS_coordinateSystem_Shape": {
                       "nodes": []
                     },
-                    "geosrs:CRS_coordinateSystem_Shape": {
-                      "nodes": []
-                    },
-                    "geosrs:SingleCRS_coordinateSystem_Shape": {
+                    "geosrs:GeographicCRS_datum_Shape": {
                       "nodes": []
                     },
                     "geosrs:TemporalCRS_datum_Shape": {
                       "nodes": []
                     },
-                    "geosrs:ProjectedCRS_conversion_Shape": {
-                      "nodes": []
-                    },
                     "geosrs:CRS_datum_Shape": {
                       "nodes": []
                     },
-                    "geosrs:GeographicCRS_coordinateSystem_Shape": {
+                    "geosrs:CRS_domainOfValidity_Shape": {
+                      "nodes": []
+                    },
+                    "geosrs:CRS_coordinateSystem_Shape": {
+                      "nodes": []
+                    },
+                    "geosrs:CRS_datumEnsemble_Shape": {
+                      "nodes": []
+                    },
+                    "geosrs:ParametricCRS_datum_Shape": {
+                      "nodes": []
+                    },
+                    "geosrs:ProjectedCRS_conversion_Shape": {
+                      "nodes": []
+                    },
+                    "geosrs:GeodeticCRS_coordinateSystem_Shape": {
+                      "nodes": []
+                    },
+                    "geosrs:CompoundCRS_includesSRS_Shape": {
                       "nodes": []
                     }
                   },
                   "isError": false,
-                  "message": "Focus nodes for _sources/srs/rules.shacl:\n - Shape geosrs:GeographicCRS_datum_Shape: *none*\n - Shape geosrs:ParametricCRS_datum_Shape: *none*\n - Shape geosrs:CRS_datumEnsemble_Shape: *none*\n - Shape geosrs:CompoundCRS_includesSRS_Shape: *none*\n - Shape geosrs:CRS_domainOfValidity_Shape: *none*\n - Shape geosrs:SingleCRS_datum_Shape: *none*\n - Shape geosrs:GeodeticCRS_coordinateSystem_Shape: *none*\n - Shape geosrs:CRS_coordinateSystem_Shape: *none*\n - Shape geosrs:SingleCRS_coordinateSystem_Shape: *none*\n - Shape geosrs:TemporalCRS_datum_Shape: *none*\n - Shape geosrs:ProjectedCRS_conversion_Shape: *none*\n - Shape geosrs:CRS_datum_Shape: *none*\n - Shape geosrs:GeographicCRS_coordinateSystem_Shape: *none*\n"
+                  "message": "Focus nodes for _sources/srs/rules.shacl:\n - Shape geosrs:SingleCRS_coordinateSystem_Shape: *none*\n - Shape geosrs:SingleCRS_datum_Shape: *none*\n - Shape geosrs:GeographicCRS_coordinateSystem_Shape: *none*\n - Shape geosrs:GeographicCRS_datum_Shape: *none*\n - Shape geosrs:TemporalCRS_datum_Shape: *none*\n - Shape geosrs:CRS_datum_Shape: *none*\n - Shape geosrs:CRS_domainOfValidity_Shape: *none*\n - Shape geosrs:CRS_coordinateSystem_Shape: *none*\n - Shape geosrs:CRS_datumEnsemble_Shape: *none*\n - Shape geosrs:ParametricCRS_datum_Shape: *none*\n - Shape geosrs:ProjectedCRS_conversion_Shape: *none*\n - Shape geosrs:GeodeticCRS_coordinateSystem_Shape: *none*\n - Shape geosrs:CompoundCRS_includesSRS_Shape: *none*\n"
                 }
               ]
             }
@@ -1195,48 +1284,48 @@
                 {
                   "shaclFile": "_sources/srs/rules.shacl",
                   "focusNodes": {
-                    "geosrs:GeographicCRS_datum_Shape": {
-                      "nodes": []
-                    },
-                    "geosrs:ParametricCRS_datum_Shape": {
-                      "nodes": []
-                    },
-                    "geosrs:CRS_datumEnsemble_Shape": {
-                      "nodes": []
-                    },
-                    "geosrs:CompoundCRS_includesSRS_Shape": {
-                      "nodes": []
-                    },
-                    "geosrs:CRS_domainOfValidity_Shape": {
+                    "geosrs:SingleCRS_coordinateSystem_Shape": {
                       "nodes": []
                     },
                     "geosrs:SingleCRS_datum_Shape": {
                       "nodes": []
                     },
-                    "geosrs:GeodeticCRS_coordinateSystem_Shape": {
+                    "geosrs:GeographicCRS_coordinateSystem_Shape": {
                       "nodes": []
                     },
-                    "geosrs:CRS_coordinateSystem_Shape": {
-                      "nodes": []
-                    },
-                    "geosrs:SingleCRS_coordinateSystem_Shape": {
+                    "geosrs:GeographicCRS_datum_Shape": {
                       "nodes": []
                     },
                     "geosrs:TemporalCRS_datum_Shape": {
                       "nodes": []
                     },
-                    "geosrs:ProjectedCRS_conversion_Shape": {
-                      "nodes": []
-                    },
                     "geosrs:CRS_datum_Shape": {
                       "nodes": []
                     },
-                    "geosrs:GeographicCRS_coordinateSystem_Shape": {
+                    "geosrs:CRS_domainOfValidity_Shape": {
+                      "nodes": []
+                    },
+                    "geosrs:CRS_coordinateSystem_Shape": {
+                      "nodes": []
+                    },
+                    "geosrs:CRS_datumEnsemble_Shape": {
+                      "nodes": []
+                    },
+                    "geosrs:ParametricCRS_datum_Shape": {
+                      "nodes": []
+                    },
+                    "geosrs:ProjectedCRS_conversion_Shape": {
+                      "nodes": []
+                    },
+                    "geosrs:GeodeticCRS_coordinateSystem_Shape": {
+                      "nodes": []
+                    },
+                    "geosrs:CompoundCRS_includesSRS_Shape": {
                       "nodes": []
                     }
                   },
                   "isError": false,
-                  "message": "Focus nodes for _sources/srs/rules.shacl:\n - Shape geosrs:GeographicCRS_datum_Shape: *none*\n - Shape geosrs:ParametricCRS_datum_Shape: *none*\n - Shape geosrs:CRS_datumEnsemble_Shape: *none*\n - Shape geosrs:CompoundCRS_includesSRS_Shape: *none*\n - Shape geosrs:CRS_domainOfValidity_Shape: *none*\n - Shape geosrs:SingleCRS_datum_Shape: *none*\n - Shape geosrs:GeodeticCRS_coordinateSystem_Shape: *none*\n - Shape geosrs:CRS_coordinateSystem_Shape: *none*\n - Shape geosrs:SingleCRS_coordinateSystem_Shape: *none*\n - Shape geosrs:TemporalCRS_datum_Shape: *none*\n - Shape geosrs:ProjectedCRS_conversion_Shape: *none*\n - Shape geosrs:CRS_datum_Shape: *none*\n - Shape geosrs:GeographicCRS_coordinateSystem_Shape: *none*\n"
+                  "message": "Focus nodes for _sources/srs/rules.shacl:\n - Shape geosrs:SingleCRS_coordinateSystem_Shape: *none*\n - Shape geosrs:SingleCRS_datum_Shape: *none*\n - Shape geosrs:GeographicCRS_coordinateSystem_Shape: *none*\n - Shape geosrs:GeographicCRS_datum_Shape: *none*\n - Shape geosrs:TemporalCRS_datum_Shape: *none*\n - Shape geosrs:CRS_datum_Shape: *none*\n - Shape geosrs:CRS_domainOfValidity_Shape: *none*\n - Shape geosrs:CRS_coordinateSystem_Shape: *none*\n - Shape geosrs:CRS_datumEnsemble_Shape: *none*\n - Shape geosrs:ParametricCRS_datum_Shape: *none*\n - Shape geosrs:ProjectedCRS_conversion_Shape: *none*\n - Shape geosrs:GeodeticCRS_coordinateSystem_Shape: *none*\n - Shape geosrs:CompoundCRS_includesSRS_Shape: *none*\n"
                 }
               ]
             }
@@ -1287,48 +1376,48 @@
                 {
                   "shaclFile": "_sources/srs/rules.shacl",
                   "focusNodes": {
-                    "geosrs:GeographicCRS_datum_Shape": {
-                      "nodes": []
-                    },
-                    "geosrs:ParametricCRS_datum_Shape": {
-                      "nodes": []
-                    },
-                    "geosrs:CRS_datumEnsemble_Shape": {
-                      "nodes": []
-                    },
-                    "geosrs:CompoundCRS_includesSRS_Shape": {
-                      "nodes": []
-                    },
-                    "geosrs:CRS_domainOfValidity_Shape": {
+                    "geosrs:SingleCRS_coordinateSystem_Shape": {
                       "nodes": []
                     },
                     "geosrs:SingleCRS_datum_Shape": {
                       "nodes": []
                     },
-                    "geosrs:GeodeticCRS_coordinateSystem_Shape": {
+                    "geosrs:GeographicCRS_coordinateSystem_Shape": {
                       "nodes": []
                     },
-                    "geosrs:CRS_coordinateSystem_Shape": {
-                      "nodes": []
-                    },
-                    "geosrs:SingleCRS_coordinateSystem_Shape": {
+                    "geosrs:GeographicCRS_datum_Shape": {
                       "nodes": []
                     },
                     "geosrs:TemporalCRS_datum_Shape": {
                       "nodes": []
                     },
-                    "geosrs:ProjectedCRS_conversion_Shape": {
-                      "nodes": []
-                    },
                     "geosrs:CRS_datum_Shape": {
                       "nodes": []
                     },
-                    "geosrs:GeographicCRS_coordinateSystem_Shape": {
+                    "geosrs:CRS_domainOfValidity_Shape": {
+                      "nodes": []
+                    },
+                    "geosrs:CRS_coordinateSystem_Shape": {
+                      "nodes": []
+                    },
+                    "geosrs:CRS_datumEnsemble_Shape": {
+                      "nodes": []
+                    },
+                    "geosrs:ParametricCRS_datum_Shape": {
+                      "nodes": []
+                    },
+                    "geosrs:ProjectedCRS_conversion_Shape": {
+                      "nodes": []
+                    },
+                    "geosrs:GeodeticCRS_coordinateSystem_Shape": {
+                      "nodes": []
+                    },
+                    "geosrs:CompoundCRS_includesSRS_Shape": {
                       "nodes": []
                     }
                   },
                   "isError": false,
-                  "message": "Focus nodes for _sources/srs/rules.shacl:\n - Shape geosrs:GeographicCRS_datum_Shape: *none*\n - Shape geosrs:ParametricCRS_datum_Shape: *none*\n - Shape geosrs:CRS_datumEnsemble_Shape: *none*\n - Shape geosrs:CompoundCRS_includesSRS_Shape: *none*\n - Shape geosrs:CRS_domainOfValidity_Shape: *none*\n - Shape geosrs:SingleCRS_datum_Shape: *none*\n - Shape geosrs:GeodeticCRS_coordinateSystem_Shape: *none*\n - Shape geosrs:CRS_coordinateSystem_Shape: *none*\n - Shape geosrs:SingleCRS_coordinateSystem_Shape: *none*\n - Shape geosrs:TemporalCRS_datum_Shape: *none*\n - Shape geosrs:ProjectedCRS_conversion_Shape: *none*\n - Shape geosrs:CRS_datum_Shape: *none*\n - Shape geosrs:GeographicCRS_coordinateSystem_Shape: *none*\n"
+                  "message": "Focus nodes for _sources/srs/rules.shacl:\n - Shape geosrs:SingleCRS_coordinateSystem_Shape: *none*\n - Shape geosrs:SingleCRS_datum_Shape: *none*\n - Shape geosrs:GeographicCRS_coordinateSystem_Shape: *none*\n - Shape geosrs:GeographicCRS_datum_Shape: *none*\n - Shape geosrs:TemporalCRS_datum_Shape: *none*\n - Shape geosrs:CRS_datum_Shape: *none*\n - Shape geosrs:CRS_domainOfValidity_Shape: *none*\n - Shape geosrs:CRS_coordinateSystem_Shape: *none*\n - Shape geosrs:CRS_datumEnsemble_Shape: *none*\n - Shape geosrs:ParametricCRS_datum_Shape: *none*\n - Shape geosrs:ProjectedCRS_conversion_Shape: *none*\n - Shape geosrs:GeodeticCRS_coordinateSystem_Shape: *none*\n - Shape geosrs:CompoundCRS_includesSRS_Shape: *none*\n"
                 }
               ]
             }
@@ -1379,48 +1468,48 @@
                 {
                   "shaclFile": "_sources/srs/rules.shacl",
                   "focusNodes": {
-                    "geosrs:GeographicCRS_datum_Shape": {
-                      "nodes": []
-                    },
-                    "geosrs:ParametricCRS_datum_Shape": {
-                      "nodes": []
-                    },
-                    "geosrs:CRS_datumEnsemble_Shape": {
-                      "nodes": []
-                    },
-                    "geosrs:CompoundCRS_includesSRS_Shape": {
-                      "nodes": []
-                    },
-                    "geosrs:CRS_domainOfValidity_Shape": {
+                    "geosrs:SingleCRS_coordinateSystem_Shape": {
                       "nodes": []
                     },
                     "geosrs:SingleCRS_datum_Shape": {
                       "nodes": []
                     },
-                    "geosrs:GeodeticCRS_coordinateSystem_Shape": {
+                    "geosrs:GeographicCRS_coordinateSystem_Shape": {
                       "nodes": []
                     },
-                    "geosrs:CRS_coordinateSystem_Shape": {
-                      "nodes": []
-                    },
-                    "geosrs:SingleCRS_coordinateSystem_Shape": {
+                    "geosrs:GeographicCRS_datum_Shape": {
                       "nodes": []
                     },
                     "geosrs:TemporalCRS_datum_Shape": {
                       "nodes": []
                     },
-                    "geosrs:ProjectedCRS_conversion_Shape": {
-                      "nodes": []
-                    },
                     "geosrs:CRS_datum_Shape": {
                       "nodes": []
                     },
-                    "geosrs:GeographicCRS_coordinateSystem_Shape": {
+                    "geosrs:CRS_domainOfValidity_Shape": {
+                      "nodes": []
+                    },
+                    "geosrs:CRS_coordinateSystem_Shape": {
+                      "nodes": []
+                    },
+                    "geosrs:CRS_datumEnsemble_Shape": {
+                      "nodes": []
+                    },
+                    "geosrs:ParametricCRS_datum_Shape": {
+                      "nodes": []
+                    },
+                    "geosrs:ProjectedCRS_conversion_Shape": {
+                      "nodes": []
+                    },
+                    "geosrs:GeodeticCRS_coordinateSystem_Shape": {
+                      "nodes": []
+                    },
+                    "geosrs:CompoundCRS_includesSRS_Shape": {
                       "nodes": []
                     }
                   },
                   "isError": false,
-                  "message": "Focus nodes for _sources/srs/rules.shacl:\n - Shape geosrs:GeographicCRS_datum_Shape: *none*\n - Shape geosrs:ParametricCRS_datum_Shape: *none*\n - Shape geosrs:CRS_datumEnsemble_Shape: *none*\n - Shape geosrs:CompoundCRS_includesSRS_Shape: *none*\n - Shape geosrs:CRS_domainOfValidity_Shape: *none*\n - Shape geosrs:SingleCRS_datum_Shape: *none*\n - Shape geosrs:GeodeticCRS_coordinateSystem_Shape: *none*\n - Shape geosrs:CRS_coordinateSystem_Shape: *none*\n - Shape geosrs:SingleCRS_coordinateSystem_Shape: *none*\n - Shape geosrs:TemporalCRS_datum_Shape: *none*\n - Shape geosrs:ProjectedCRS_conversion_Shape: *none*\n - Shape geosrs:CRS_datum_Shape: *none*\n - Shape geosrs:GeographicCRS_coordinateSystem_Shape: *none*\n"
+                  "message": "Focus nodes for _sources/srs/rules.shacl:\n - Shape geosrs:SingleCRS_coordinateSystem_Shape: *none*\n - Shape geosrs:SingleCRS_datum_Shape: *none*\n - Shape geosrs:GeographicCRS_coordinateSystem_Shape: *none*\n - Shape geosrs:GeographicCRS_datum_Shape: *none*\n - Shape geosrs:TemporalCRS_datum_Shape: *none*\n - Shape geosrs:CRS_datum_Shape: *none*\n - Shape geosrs:CRS_domainOfValidity_Shape: *none*\n - Shape geosrs:CRS_coordinateSystem_Shape: *none*\n - Shape geosrs:CRS_datumEnsemble_Shape: *none*\n - Shape geosrs:ParametricCRS_datum_Shape: *none*\n - Shape geosrs:ProjectedCRS_conversion_Shape: *none*\n - Shape geosrs:GeodeticCRS_coordinateSystem_Shape: *none*\n - Shape geosrs:CompoundCRS_includesSRS_Shape: *none*\n"
                 }
               ]
             }
@@ -1460,48 +1549,48 @@
                 {
                   "shaclFile": "_sources/srs/rules.shacl",
                   "focusNodes": {
-                    "geosrs:GeographicCRS_datum_Shape": {
-                      "nodes": []
-                    },
-                    "geosrs:ParametricCRS_datum_Shape": {
-                      "nodes": []
-                    },
-                    "geosrs:CRS_datumEnsemble_Shape": {
-                      "nodes": []
-                    },
-                    "geosrs:CompoundCRS_includesSRS_Shape": {
-                      "nodes": []
-                    },
-                    "geosrs:CRS_domainOfValidity_Shape": {
+                    "geosrs:SingleCRS_coordinateSystem_Shape": {
                       "nodes": []
                     },
                     "geosrs:SingleCRS_datum_Shape": {
                       "nodes": []
                     },
-                    "geosrs:GeodeticCRS_coordinateSystem_Shape": {
+                    "geosrs:GeographicCRS_coordinateSystem_Shape": {
                       "nodes": []
                     },
-                    "geosrs:CRS_coordinateSystem_Shape": {
-                      "nodes": []
-                    },
-                    "geosrs:SingleCRS_coordinateSystem_Shape": {
+                    "geosrs:GeographicCRS_datum_Shape": {
                       "nodes": []
                     },
                     "geosrs:TemporalCRS_datum_Shape": {
                       "nodes": []
                     },
-                    "geosrs:ProjectedCRS_conversion_Shape": {
-                      "nodes": []
-                    },
                     "geosrs:CRS_datum_Shape": {
                       "nodes": []
                     },
-                    "geosrs:GeographicCRS_coordinateSystem_Shape": {
+                    "geosrs:CRS_domainOfValidity_Shape": {
+                      "nodes": []
+                    },
+                    "geosrs:CRS_coordinateSystem_Shape": {
+                      "nodes": []
+                    },
+                    "geosrs:CRS_datumEnsemble_Shape": {
+                      "nodes": []
+                    },
+                    "geosrs:ParametricCRS_datum_Shape": {
+                      "nodes": []
+                    },
+                    "geosrs:ProjectedCRS_conversion_Shape": {
+                      "nodes": []
+                    },
+                    "geosrs:GeodeticCRS_coordinateSystem_Shape": {
+                      "nodes": []
+                    },
+                    "geosrs:CompoundCRS_includesSRS_Shape": {
                       "nodes": []
                     }
                   },
                   "isError": false,
-                  "message": "Focus nodes for _sources/srs/rules.shacl:\n - Shape geosrs:GeographicCRS_datum_Shape: *none*\n - Shape geosrs:ParametricCRS_datum_Shape: *none*\n - Shape geosrs:CRS_datumEnsemble_Shape: *none*\n - Shape geosrs:CompoundCRS_includesSRS_Shape: *none*\n - Shape geosrs:CRS_domainOfValidity_Shape: *none*\n - Shape geosrs:SingleCRS_datum_Shape: *none*\n - Shape geosrs:GeodeticCRS_coordinateSystem_Shape: *none*\n - Shape geosrs:CRS_coordinateSystem_Shape: *none*\n - Shape geosrs:SingleCRS_coordinateSystem_Shape: *none*\n - Shape geosrs:TemporalCRS_datum_Shape: *none*\n - Shape geosrs:ProjectedCRS_conversion_Shape: *none*\n - Shape geosrs:CRS_datum_Shape: *none*\n - Shape geosrs:GeographicCRS_coordinateSystem_Shape: *none*\n"
+                  "message": "Focus nodes for _sources/srs/rules.shacl:\n - Shape geosrs:SingleCRS_coordinateSystem_Shape: *none*\n - Shape geosrs:SingleCRS_datum_Shape: *none*\n - Shape geosrs:GeographicCRS_coordinateSystem_Shape: *none*\n - Shape geosrs:GeographicCRS_datum_Shape: *none*\n - Shape geosrs:TemporalCRS_datum_Shape: *none*\n - Shape geosrs:CRS_datum_Shape: *none*\n - Shape geosrs:CRS_domainOfValidity_Shape: *none*\n - Shape geosrs:CRS_coordinateSystem_Shape: *none*\n - Shape geosrs:CRS_datumEnsemble_Shape: *none*\n - Shape geosrs:ParametricCRS_datum_Shape: *none*\n - Shape geosrs:ProjectedCRS_conversion_Shape: *none*\n - Shape geosrs:GeodeticCRS_coordinateSystem_Shape: *none*\n - Shape geosrs:CompoundCRS_includesSRS_Shape: *none*\n"
                 }
               ]
             }
@@ -1561,48 +1650,48 @@
                 {
                   "shaclFile": "_sources/srs/rules.shacl",
                   "focusNodes": {
-                    "geosrs:GeographicCRS_datum_Shape": {
-                      "nodes": []
-                    },
-                    "geosrs:ParametricCRS_datum_Shape": {
-                      "nodes": []
-                    },
-                    "geosrs:CRS_datumEnsemble_Shape": {
-                      "nodes": []
-                    },
-                    "geosrs:CompoundCRS_includesSRS_Shape": {
-                      "nodes": []
-                    },
-                    "geosrs:CRS_domainOfValidity_Shape": {
+                    "geosrs:SingleCRS_coordinateSystem_Shape": {
                       "nodes": []
                     },
                     "geosrs:SingleCRS_datum_Shape": {
                       "nodes": []
                     },
-                    "geosrs:GeodeticCRS_coordinateSystem_Shape": {
+                    "geosrs:GeographicCRS_coordinateSystem_Shape": {
                       "nodes": []
                     },
-                    "geosrs:CRS_coordinateSystem_Shape": {
-                      "nodes": []
-                    },
-                    "geosrs:SingleCRS_coordinateSystem_Shape": {
+                    "geosrs:GeographicCRS_datum_Shape": {
                       "nodes": []
                     },
                     "geosrs:TemporalCRS_datum_Shape": {
                       "nodes": []
                     },
-                    "geosrs:ProjectedCRS_conversion_Shape": {
-                      "nodes": []
-                    },
                     "geosrs:CRS_datum_Shape": {
                       "nodes": []
                     },
-                    "geosrs:GeographicCRS_coordinateSystem_Shape": {
+                    "geosrs:CRS_domainOfValidity_Shape": {
+                      "nodes": []
+                    },
+                    "geosrs:CRS_coordinateSystem_Shape": {
+                      "nodes": []
+                    },
+                    "geosrs:CRS_datumEnsemble_Shape": {
+                      "nodes": []
+                    },
+                    "geosrs:ParametricCRS_datum_Shape": {
+                      "nodes": []
+                    },
+                    "geosrs:ProjectedCRS_conversion_Shape": {
+                      "nodes": []
+                    },
+                    "geosrs:GeodeticCRS_coordinateSystem_Shape": {
+                      "nodes": []
+                    },
+                    "geosrs:CompoundCRS_includesSRS_Shape": {
                       "nodes": []
                     }
                   },
                   "isError": false,
-                  "message": "Focus nodes for _sources/srs/rules.shacl:\n - Shape geosrs:GeographicCRS_datum_Shape: *none*\n - Shape geosrs:ParametricCRS_datum_Shape: *none*\n - Shape geosrs:CRS_datumEnsemble_Shape: *none*\n - Shape geosrs:CompoundCRS_includesSRS_Shape: *none*\n - Shape geosrs:CRS_domainOfValidity_Shape: *none*\n - Shape geosrs:SingleCRS_datum_Shape: *none*\n - Shape geosrs:GeodeticCRS_coordinateSystem_Shape: *none*\n - Shape geosrs:CRS_coordinateSystem_Shape: *none*\n - Shape geosrs:SingleCRS_coordinateSystem_Shape: *none*\n - Shape geosrs:TemporalCRS_datum_Shape: *none*\n - Shape geosrs:ProjectedCRS_conversion_Shape: *none*\n - Shape geosrs:CRS_datum_Shape: *none*\n - Shape geosrs:GeographicCRS_coordinateSystem_Shape: *none*\n"
+                  "message": "Focus nodes for _sources/srs/rules.shacl:\n - Shape geosrs:SingleCRS_coordinateSystem_Shape: *none*\n - Shape geosrs:SingleCRS_datum_Shape: *none*\n - Shape geosrs:GeographicCRS_coordinateSystem_Shape: *none*\n - Shape geosrs:GeographicCRS_datum_Shape: *none*\n - Shape geosrs:TemporalCRS_datum_Shape: *none*\n - Shape geosrs:CRS_datum_Shape: *none*\n - Shape geosrs:CRS_domainOfValidity_Shape: *none*\n - Shape geosrs:CRS_coordinateSystem_Shape: *none*\n - Shape geosrs:CRS_datumEnsemble_Shape: *none*\n - Shape geosrs:ParametricCRS_datum_Shape: *none*\n - Shape geosrs:ProjectedCRS_conversion_Shape: *none*\n - Shape geosrs:GeodeticCRS_coordinateSystem_Shape: *none*\n - Shape geosrs:CompoundCRS_includesSRS_Shape: *none*\n"
                 }
               ]
             }

@@ -11,7 +11,7 @@
   "itemClass": "model",
   "register": "geosrs",
   "version": "0.1",
-  "dateOfLastChange": "2026-05-11",
+  "dateOfLastChange": "2023-04-05",
   "sources": [
     {
       "title": "Spec Section",
@@ -36,8 +36,8 @@
         {
           "language": "ttl",
           "ref": "https://opengeospatial.github.io/ontology-crs/_sources/planet/examples/planet.ttl",
-          "code": "@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix geosrs_planet:<https://w3id.org/geosrs/planet#> .\n@prefix geosrs:<https://w3id.org/geosrs/srs/> .\n@prefix exsrs: <https://w3id.org/example-data-srs#> .\n\nexsrs:mysrs rdf:type geosrs:CRS ;\n            geosrs_planet:isApplicableTo exsrs:myplanet .\n\nexsrs:myplanet rdf:type geosrs_planet:Planet ;\n               rdfs:label \"My planet\" .\n",
-          "url": "https://opengeospatial.github.io/ontology-crs/build/tests/geosrs/planet/example_1_1.ttl"
+          "url": "https://opengeospatial.github.io/ontology-crs/build/tests/geosrs/planet/example_1_1.ttl",
+          "code": "@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix geosrs_planet:<https://w3id.org/geosrs/planet#> .\n@prefix geosrs:<https://w3id.org/geosrs/srs/> .\n@prefix exsrs: <https://w3id.org/example-data-srs#> .\n\nexsrs:mysrs rdf:type geosrs:CRS ;\n            geosrs_planet:isApplicableTo exsrs:myplanet .\n\nexsrs:myplanet rdf:type geosrs_planet:Planet ;\n               rdfs:label \"My planet\" .\n"
         }
       ],
       "prefixes": {

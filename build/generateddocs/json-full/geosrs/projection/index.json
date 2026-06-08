@@ -32,7 +32,7 @@
     "/req/projections/Stereographic_Projections"
   ],
   "version": "0.1",
-  "dateOfLastChange": "2026-05-15",
+  "dateOfLastChange": "2023-04-05",
   "sources": [
     {
       "title": "Spec Section",
@@ -57,8 +57,8 @@
         {
           "language": "ttl",
           "ref": "https://opengeospatial.github.io/ontology-crs/_sources/projection/examples/projection.ttl",
-          "code": "@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix geosrs_proj:<https://w3id.org/geosrs/projection#> .\n@prefix geosrs:<https://w3id.org/geosrs/> .\n@prefix exsrs: <https://w3id.org/example-data-srs#> .\n\nexsrs:mysrs rdf:type geosrs:GeodeticCRS ;\n            geosrs:conversion exsrs:myproj .\nexsrs:myproj rdf:type geosrs_proj:Projection .",
-          "url": "https://opengeospatial.github.io/ontology-crs/build/tests/geosrs/projection/example_1_1.ttl"
+          "url": "https://opengeospatial.github.io/ontology-crs/build/tests/geosrs/projection/example_1_1.ttl",
+          "code": "@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix geosrs_proj:<https://w3id.org/geosrs/projection#> .\n@prefix geosrs:<https://w3id.org/geosrs/> .\n@prefix exsrs: <https://w3id.org/example-data-srs#> .\n\nexsrs:mysrs rdf:type geosrs:GeodeticCRS ;\n            geosrs:conversion exsrs:myproj .\nexsrs:myproj rdf:type geosrs_proj:Projection ."
         }
       ],
       "prefixes": {

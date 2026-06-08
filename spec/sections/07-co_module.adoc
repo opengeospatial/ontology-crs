@@ -11,7 +11,7 @@ A concatenated operation is a sequence of single operations, all applied on the 
 
 A Conversion operation translates coordinates between two reference systems defined on the same datum. In its turn, a Transformation translates coordinates between reference systems defined on different datums. A conversion tends to be a direct mathematical function with no uncertainty associated. A transformation is often defined on non-finite methods and implies a relevant uncertainty in its result.
 
-The `geosrs:CoordinateTransformationClass` is further specialised by the `geosrs:AffineTransformation`, in its turn encapsulating comon operations of this kind:  
+The `geosrs:CoordinateTransformationClass` is further specialised by the `geosrs:AffineTransformation`, in its turn encapsulating common operations of this kind:  
 - Scale
 - Rotation
 - Identity

@@ -96,7 +96,6 @@ geosrs:coco a owl:Ontology ;
 
 geosrs_co:AffineTransformationOperation a owl:Class ;
     rdfs:label "Affine Transformation Operation"@en ;
-    rdfs:subClassOf <>,
-        geosrs:CoordinateTransformationOperation ;
+    rdfs:subClassOf geosrs:Transformation ;
     skos:definition "Affine coordinate transformation operation"@en .
 

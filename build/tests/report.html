@@ -64,7 +64,7 @@
     <body>
         <div class="container">
             <h1 class="title">Building blocks validation report</h1>
-            <small class="datetime">Generated at 2026-05-25T16:28:00.798962+00:00</small>
+            <small class="datetime">Generated at 2026-06-08T16:11:29.616723+00:00</small>
                 <p class="summary fw-semibold text-danger">
                     Number of passing building blocks: 4 / 7 (57.14%)
                 </p>
@@ -115,9 +115,14 @@
                                                 <div class="card-text mt-2 validation-text collapse" id="uid-1">
                                                     <div class="validation-text-inner">
                                                                     <div class="font-monospace subsection-title mt-2">Files</div>
+                                                                
+                                                                    
                                                                     <div class="font-monospace entry-message section-files ">Using examples/application.ttl from examples</div>
+                                                                    
                                                                     <div class="font-monospace entry-message section-files ">Output Turtle example_1_1.ttl created</div>
                                                                     <div class="font-monospace subsection-title mt-2">Turtle</div>
+                                                                
+                                                                    
                                                                     <div class="font-monospace entry-message section-turtle ">Prefixes are defined for mynamespace</div>
                                                     </div>
                                                 </div>
@@ -168,9 +173,14 @@
                                                 <div class="card-text mt-2 validation-text collapse" id="uid-2">
                                                     <div class="validation-text-inner">
                                                                     <div class="font-monospace subsection-title mt-2">Files</div>
+                                                                
+                                                                    
                                                                     <div class="font-monospace entry-message section-files ">Using examples/co.ttl from examples</div>
+                                                                    
                                                                     <div class="font-monospace entry-message section-files ">Output Turtle example_1_1.ttl created</div>
                                                                     <div class="font-monospace subsection-title mt-2">Turtle</div>
+                                                                
+                                                                    
                                                                     <div class="font-monospace entry-message section-turtle ">Prefixes are defined for mynamespace</div>
                                                     </div>
                                                 </div>
@@ -221,25 +231,30 @@
                                                 <div class="card-text mt-2 validation-text collapse" id="uid-3">
                                                     <div class="validation-text-inner">
                                                                     <div class="font-monospace subsection-title mt-2">Files</div>
+                                                                
+                                                                    
                                                                     <div class="font-monospace entry-message section-files ">Using 1dcs.ttl from test resources</div>
                                                                     <div class="font-monospace subsection-title mt-2">SHACL</div>
+                                                                
+                                                                    
                                                                     <div class="font-monospace entry-message section-shacl ">Validation result for _sources/cs/rules.shacl:
   Validation Report
   Conforms: True
   </div>
+                                                                    
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/cs/rules.shacl:
- - Shape geosrs:ConicalCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:DateTimeTemporalCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:PlanarCoordinateSystem_axis_Shape: *none*
  - Shape geosrs:TemporalCoordinateSystem_axis_Shape: *none*
- - Shape geosrs:CurvilinearCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:CoordinateSystemAxis_axisDirection_Shape: exsrs:ecsc_axis1
+ - Shape geosrs:TemporalMeasureCoordinateSystem_axis_Shape: *none*
  - Shape geosrs:CylindricalCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:1DCoordinateSystem_axis_Shape: exsrs:ecsc
+ - Shape geosrs:ConicalCoordinateSystem_axis_Shape: *none*
  - Shape geosrs:CoordinateSystem_axis_Shape: *none*
  - Shape geosrs:3DCoordinateSystem_axis_Shape: *none*
- - Shape geosrs:PlanarCoordinateSystem_axis_Shape: *none*
- - Shape geosrs:1DCoordinateSystem_axis_Shape: exsrs:ecsc
- - Shape geosrs:TemporalMeasureCoordinateSystem_axis_Shape: *none*
- - Shape geosrs:CoordinateSystemAxis_axisDirection_Shape: exsrs:ecsc_axis1
+ - Shape geosrs:CurvilinearCoordinateSystem_axis_Shape: *none*
  - Shape geosrs:TemporalCountCoordinateSystem_axis_Shape: *none*
- - Shape geosrs:DateTimeTemporalCoordinateSystem_axis_Shape: *none*
 </div>
                                                     </div>
                                                 </div>
@@ -266,27 +281,34 @@
                                                 <div class="card-text mt-2 validation-text collapse" id="uid-4">
                                                     <div class="validation-text-inner">
                                                                     <div class="font-monospace subsection-title mt-2">General</div>
+                                                                
+                                                                    
                                                                     <div class="font-monospace entry-message section-general text-danger">Test was expected to fail but it did not.</div>
                                                                     <div class="font-monospace subsection-title mt-2">Files</div>
+                                                                
+                                                                    
                                                                     <div class="font-monospace entry-message section-files ">Using axisDirection-fail.ttl from test resources</div>
                                                                     <div class="font-monospace subsection-title mt-2">SHACL</div>
+                                                                
+                                                                    
                                                                     <div class="font-monospace entry-message section-shacl ">Validation result for _sources/cs/rules.shacl:
   Validation Report
   Conforms: True
   </div>
+                                                                    
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/cs/rules.shacl:
- - Shape geosrs:ConicalCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:DateTimeTemporalCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:PlanarCoordinateSystem_axis_Shape: *none*
  - Shape geosrs:TemporalCoordinateSystem_axis_Shape: *none*
- - Shape geosrs:CurvilinearCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:CoordinateSystemAxis_axisDirection_Shape: *none*
+ - Shape geosrs:TemporalMeasureCoordinateSystem_axis_Shape: *none*
  - Shape geosrs:CylindricalCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:1DCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:ConicalCoordinateSystem_axis_Shape: *none*
  - Shape geosrs:CoordinateSystem_axis_Shape: *none*
  - Shape geosrs:3DCoordinateSystem_axis_Shape: *none*
- - Shape geosrs:PlanarCoordinateSystem_axis_Shape: *none*
- - Shape geosrs:1DCoordinateSystem_axis_Shape: *none*
- - Shape geosrs:TemporalMeasureCoordinateSystem_axis_Shape: *none*
- - Shape geosrs:CoordinateSystemAxis_axisDirection_Shape: *none*
+ - Shape geosrs:CurvilinearCoordinateSystem_axis_Shape: *none*
  - Shape geosrs:TemporalCountCoordinateSystem_axis_Shape: *none*
- - Shape geosrs:DateTimeTemporalCoordinateSystem_axis_Shape: *none*
 </div>
                                                     </div>
                                                 </div>
@@ -312,25 +334,30 @@
                                                 <div class="card-text mt-2 validation-text collapse" id="uid-5">
                                                     <div class="validation-text-inner">
                                                                     <div class="font-monospace subsection-title mt-2">Files</div>
+                                                                
+                                                                    
                                                                     <div class="font-monospace entry-message section-files ">Using axisDirection.ttl from test resources</div>
                                                                     <div class="font-monospace subsection-title mt-2">SHACL</div>
+                                                                
+                                                                    
                                                                     <div class="font-monospace entry-message section-shacl ">Validation result for _sources/cs/rules.shacl:
   Validation Report
   Conforms: True
   </div>
+                                                                    
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/cs/rules.shacl:
- - Shape geosrs:ConicalCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:DateTimeTemporalCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:PlanarCoordinateSystem_axis_Shape: *none*
  - Shape geosrs:TemporalCoordinateSystem_axis_Shape: *none*
- - Shape geosrs:CurvilinearCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:CoordinateSystemAxis_axisDirection_Shape: exsrs:myAxis
+ - Shape geosrs:TemporalMeasureCoordinateSystem_axis_Shape: *none*
  - Shape geosrs:CylindricalCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:1DCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:ConicalCoordinateSystem_axis_Shape: *none*
  - Shape geosrs:CoordinateSystem_axis_Shape: *none*
  - Shape geosrs:3DCoordinateSystem_axis_Shape: *none*
- - Shape geosrs:PlanarCoordinateSystem_axis_Shape: *none*
- - Shape geosrs:1DCoordinateSystem_axis_Shape: *none*
- - Shape geosrs:TemporalMeasureCoordinateSystem_axis_Shape: *none*
- - Shape geosrs:CoordinateSystemAxis_axisDirection_Shape: exsrs:myAxis
+ - Shape geosrs:CurvilinearCoordinateSystem_axis_Shape: *none*
  - Shape geosrs:TemporalCountCoordinateSystem_axis_Shape: *none*
- - Shape geosrs:DateTimeTemporalCoordinateSystem_axis_Shape: *none*
 </div>
                                                     </div>
                                                 </div>
@@ -356,8 +383,12 @@
                                                 <div class="card-text mt-2 validation-text collapse" id="uid-6">
                                                     <div class="validation-text-inner">
                                                                     <div class="font-monospace subsection-title mt-2">Files</div>
+                                                                
+                                                                    
                                                                     <div class="font-monospace entry-message section-files ">Using coordinateSystemAxis.ttl from test resources</div>
                                                                     <div class="font-monospace subsection-title mt-2">SHACL</div>
+                                                                
+                                                                    
                                                                     <div class="font-monospace entry-message section-shacl text-danger">Validation result for _sources/cs/rules.shacl:
   Validation Report
   Conforms: False
@@ -370,19 +401,20 @@
   	Result Path: geosrs_cs:axis
   	Message: A coordinate system should have at least one axis
   </div>
+                                                                    
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/cs/rules.shacl:
- - Shape geosrs:ConicalCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:DateTimeTemporalCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:PlanarCoordinateSystem_axis_Shape: *none*
  - Shape geosrs:TemporalCoordinateSystem_axis_Shape: *none*
- - Shape geosrs:CurvilinearCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:CoordinateSystemAxis_axisDirection_Shape: exsrs:ecsc_axis1,exsrs:ecsc_axis2
+ - Shape geosrs:TemporalMeasureCoordinateSystem_axis_Shape: *none*
  - Shape geosrs:CylindricalCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:1DCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:ConicalCoordinateSystem_axis_Shape: *none*
  - Shape geosrs:CoordinateSystem_axis_Shape: exsrs:ecsc
  - Shape geosrs:3DCoordinateSystem_axis_Shape: *none*
- - Shape geosrs:PlanarCoordinateSystem_axis_Shape: *none*
- - Shape geosrs:1DCoordinateSystem_axis_Shape: *none*
- - Shape geosrs:TemporalMeasureCoordinateSystem_axis_Shape: *none*
- - Shape geosrs:CoordinateSystemAxis_axisDirection_Shape: exsrs:ecsc_axis2,exsrs:ecsc_axis1
+ - Shape geosrs:CurvilinearCoordinateSystem_axis_Shape: *none*
  - Shape geosrs:TemporalCountCoordinateSystem_axis_Shape: *none*
- - Shape geosrs:DateTimeTemporalCoordinateSystem_axis_Shape: *none*
 </div>
                                                     </div>
                                                 </div>
@@ -408,28 +440,36 @@
                                                 <div class="card-text mt-2 validation-text collapse" id="uid-7">
                                                     <div class="validation-text-inner">
                                                                     <div class="font-monospace subsection-title mt-2">Files</div>
+                                                                
+                                                                    
                                                                     <div class="font-monospace entry-message section-files ">Using examples/ellipsoidal2d.ttl from examples</div>
+                                                                    
                                                                     <div class="font-monospace entry-message section-files ">Output Turtle example_1_1.ttl created</div>
                                                                     <div class="font-monospace subsection-title mt-2">Turtle</div>
+                                                                
+                                                                    
                                                                     <div class="font-monospace entry-message section-turtle ">Prefixes are defined for mynamespace</div>
                                                                     <div class="font-monospace subsection-title mt-2">SHACL</div>
+                                                                
+                                                                    
                                                                     <div class="font-monospace entry-message section-shacl ">Validation result for _sources/cs/rules.shacl:
   Validation Report
   Conforms: True
   </div>
+                                                                    
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/cs/rules.shacl:
- - Shape geosrs:ConicalCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:DateTimeTemporalCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:PlanarCoordinateSystem_axis_Shape: *none*
  - Shape geosrs:TemporalCoordinateSystem_axis_Shape: *none*
- - Shape geosrs:CurvilinearCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:CoordinateSystemAxis_axisDirection_Shape: *none*
+ - Shape geosrs:TemporalMeasureCoordinateSystem_axis_Shape: *none*
  - Shape geosrs:CylindricalCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:1DCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:ConicalCoordinateSystem_axis_Shape: *none*
  - Shape geosrs:CoordinateSystem_axis_Shape: *none*
  - Shape geosrs:3DCoordinateSystem_axis_Shape: *none*
- - Shape geosrs:PlanarCoordinateSystem_axis_Shape: *none*
- - Shape geosrs:1DCoordinateSystem_axis_Shape: *none*
- - Shape geosrs:TemporalMeasureCoordinateSystem_axis_Shape: *none*
- - Shape geosrs:CoordinateSystemAxis_axisDirection_Shape: *none*
+ - Shape geosrs:CurvilinearCoordinateSystem_axis_Shape: *none*
  - Shape geosrs:TemporalCountCoordinateSystem_axis_Shape: *none*
- - Shape geosrs:DateTimeTemporalCoordinateSystem_axis_Shape: *none*
 </div>
                                                     </div>
                                                 </div>
@@ -455,28 +495,36 @@
                                                 <div class="card-text mt-2 validation-text collapse" id="uid-8">
                                                     <div class="validation-text-inner">
                                                                     <div class="font-monospace subsection-title mt-2">Files</div>
+                                                                
+                                                                    
                                                                     <div class="font-monospace entry-message section-files ">Using examples/cartesian2d.ttl from examples</div>
+                                                                    
                                                                     <div class="font-monospace entry-message section-files ">Output Turtle example_1_2.ttl created</div>
                                                                     <div class="font-monospace subsection-title mt-2">Turtle</div>
+                                                                
+                                                                    
                                                                     <div class="font-monospace entry-message section-turtle ">Prefixes are defined for mynamespace</div>
                                                                     <div class="font-monospace subsection-title mt-2">SHACL</div>
+                                                                
+                                                                    
                                                                     <div class="font-monospace entry-message section-shacl ">Validation result for _sources/cs/rules.shacl:
   Validation Report
   Conforms: True
   </div>
+                                                                    
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/cs/rules.shacl:
- - Shape geosrs:ConicalCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:DateTimeTemporalCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:PlanarCoordinateSystem_axis_Shape: *none*
  - Shape geosrs:TemporalCoordinateSystem_axis_Shape: *none*
- - Shape geosrs:CurvilinearCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:CoordinateSystemAxis_axisDirection_Shape: *none*
+ - Shape geosrs:TemporalMeasureCoordinateSystem_axis_Shape: *none*
  - Shape geosrs:CylindricalCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:1DCoordinateSystem_axis_Shape: *none*
+ - Shape geosrs:ConicalCoordinateSystem_axis_Shape: *none*
  - Shape geosrs:CoordinateSystem_axis_Shape: *none*
  - Shape geosrs:3DCoordinateSystem_axis_Shape: *none*
- - Shape geosrs:PlanarCoordinateSystem_axis_Shape: *none*
- - Shape geosrs:1DCoordinateSystem_axis_Shape: *none*
- - Shape geosrs:TemporalMeasureCoordinateSystem_axis_Shape: *none*
- - Shape geosrs:CoordinateSystemAxis_axisDirection_Shape: *none*
+ - Shape geosrs:CurvilinearCoordinateSystem_axis_Shape: *none*
  - Shape geosrs:TemporalCountCoordinateSystem_axis_Shape: *none*
- - Shape geosrs:DateTimeTemporalCoordinateSystem_axis_Shape: *none*
 </div>
                                                     </div>
                                                 </div>
@@ -528,22 +576,29 @@
                                                 <div class="card-text mt-2 validation-text collapse" id="uid-9">
                                                     <div class="validation-text-inner">
                                                                     <div class="font-monospace subsection-title mt-2">General</div>
+                                                                
+                                                                    
                                                                     <div class="font-monospace entry-message section-general text-danger">Test was expected to fail but it did not.</div>
                                                                     <div class="font-monospace subsection-title mt-2">Files</div>
+                                                                
+                                                                    
                                                                     <div class="font-monospace entry-message section-files ">Using inverseFlattening-fail.ttl from test resources</div>
                                                                     <div class="font-monospace subsection-title mt-2">SHACL</div>
+                                                                
+                                                                    
                                                                     <div class="font-monospace entry-message section-shacl ">Validation result for _sources/datum/rules.shacl:
   Validation Report
   Conforms: True
   </div>
+                                                                    
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/datum/rules.shacl:
- - Shape geosrs:Ellipsoid_inverseFlattening_Shape: *none*
- - Shape geosrs:Datum_ellipsoid_Shape: *none*
- - Shape geosrs:ParametricDatum_definingParameter_Shape: *none*
- - Shape geosrs:Datum_primeMeridian_Shape: *none*
- - Shape geosrs:Ellipsoid_eccentricity_Shape: *none*
- - Shape geosrs:Ellipsoid_semiMinorAxis_Shape: *none*
  - Shape geosrs:Ellipsoid_semiMajorAxis_Shape: *none*
+ - Shape geosrs:Datum_ellipsoid_Shape: *none*
+ - Shape geosrs:Ellipsoid_semiMinorAxis_Shape: *none*
+ - Shape geosrs:ParametricDatum_definingParameter_Shape: *none*
+ - Shape geosrs:Ellipsoid_eccentricity_Shape: *none*
+ - Shape geosrs:Datum_primeMeridian_Shape: *none*
+ - Shape geosrs:Ellipsoid_inverseFlattening_Shape: *none*
 </div>
                                                     </div>
                                                 </div>
@@ -569,20 +624,25 @@
                                                 <div class="card-text mt-2 validation-text collapse" id="uid-10">
                                                     <div class="validation-text-inner">
                                                                     <div class="font-monospace subsection-title mt-2">Files</div>
+                                                                
+                                                                    
                                                                     <div class="font-monospace entry-message section-files ">Using inverseFlattening.ttl from test resources</div>
                                                                     <div class="font-monospace subsection-title mt-2">SHACL</div>
+                                                                
+                                                                    
                                                                     <div class="font-monospace entry-message section-shacl ">Validation result for _sources/datum/rules.shacl:
   Validation Report
   Conforms: True
   </div>
+                                                                    
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/datum/rules.shacl:
- - Shape geosrs:Ellipsoid_inverseFlattening_Shape: *none*
- - Shape geosrs:Datum_ellipsoid_Shape: *none*
- - Shape geosrs:ParametricDatum_definingParameter_Shape: *none*
- - Shape geosrs:Datum_primeMeridian_Shape: *none*
- - Shape geosrs:Ellipsoid_eccentricity_Shape: *none*
- - Shape geosrs:Ellipsoid_semiMinorAxis_Shape: *none*
  - Shape geosrs:Ellipsoid_semiMajorAxis_Shape: *none*
+ - Shape geosrs:Datum_ellipsoid_Shape: *none*
+ - Shape geosrs:Ellipsoid_semiMinorAxis_Shape: *none*
+ - Shape geosrs:ParametricDatum_definingParameter_Shape: *none*
+ - Shape geosrs:Ellipsoid_eccentricity_Shape: *none*
+ - Shape geosrs:Datum_primeMeridian_Shape: *none*
+ - Shape geosrs:Ellipsoid_inverseFlattening_Shape: *none*
 </div>
                                                     </div>
                                                 </div>
@@ -609,22 +669,29 @@
                                                 <div class="card-text mt-2 validation-text collapse" id="uid-11">
                                                     <div class="validation-text-inner">
                                                                     <div class="font-monospace subsection-title mt-2">General</div>
+                                                                
+                                                                    
                                                                     <div class="font-monospace entry-message section-general text-danger">Test was expected to fail but it did not.</div>
                                                                     <div class="font-monospace subsection-title mt-2">Files</div>
+                                                                
+                                                                    
                                                                     <div class="font-monospace entry-message section-files ">Using semiMajorAxis-fail.ttl from test resources</div>
                                                                     <div class="font-monospace subsection-title mt-2">SHACL</div>
+                                                                
+                                                                    
                                                                     <div class="font-monospace entry-message section-shacl ">Validation result for _sources/datum/rules.shacl:
   Validation Report
   Conforms: True
   </div>
+                                                                    
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/datum/rules.shacl:
- - Shape geosrs:Ellipsoid_inverseFlattening_Shape: *none*
- - Shape geosrs:Datum_ellipsoid_Shape: *none*
- - Shape geosrs:ParametricDatum_definingParameter_Shape: *none*
- - Shape geosrs:Datum_primeMeridian_Shape: *none*
- - Shape geosrs:Ellipsoid_eccentricity_Shape: *none*
- - Shape geosrs:Ellipsoid_semiMinorAxis_Shape: *none*
  - Shape geosrs:Ellipsoid_semiMajorAxis_Shape: *none*
+ - Shape geosrs:Datum_ellipsoid_Shape: *none*
+ - Shape geosrs:Ellipsoid_semiMinorAxis_Shape: *none*
+ - Shape geosrs:ParametricDatum_definingParameter_Shape: *none*
+ - Shape geosrs:Ellipsoid_eccentricity_Shape: *none*
+ - Shape geosrs:Datum_primeMeridian_Shape: *none*
+ - Shape geosrs:Ellipsoid_inverseFlattening_Shape: *none*
 </div>
                                                     </div>
                                                 </div>
@@ -650,20 +717,25 @@
                                                 <div class="card-text mt-2 validation-text collapse" id="uid-12">
                                                     <div class="validation-text-inner">
                                                                     <div class="font-monospace subsection-title mt-2">Files</div>
+                                                                
+                                                                    
                                                                     <div class="font-monospace entry-message section-files ">Using semiMajorAxis.ttl from test resources</div>
                                                                     <div class="font-monospace subsection-title mt-2">SHACL</div>
+                                                                
+                                                                    
                                                                     <div class="font-monospace entry-message section-shacl ">Validation result for _sources/datum/rules.shacl:
   Validation Report
   Conforms: True
   </div>
+                                                                    
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/datum/rules.shacl:
- - Shape geosrs:Ellipsoid_inverseFlattening_Shape: *none*
- - Shape geosrs:Datum_ellipsoid_Shape: *none*
- - Shape geosrs:ParametricDatum_definingParameter_Shape: *none*
- - Shape geosrs:Datum_primeMeridian_Shape: *none*
- - Shape geosrs:Ellipsoid_eccentricity_Shape: *none*
- - Shape geosrs:Ellipsoid_semiMinorAxis_Shape: *none*
  - Shape geosrs:Ellipsoid_semiMajorAxis_Shape: *none*
+ - Shape geosrs:Datum_ellipsoid_Shape: *none*
+ - Shape geosrs:Ellipsoid_semiMinorAxis_Shape: *none*
+ - Shape geosrs:ParametricDatum_definingParameter_Shape: *none*
+ - Shape geosrs:Ellipsoid_eccentricity_Shape: *none*
+ - Shape geosrs:Datum_primeMeridian_Shape: *none*
+ - Shape geosrs:Ellipsoid_inverseFlattening_Shape: *none*
 </div>
                                                     </div>
                                                 </div>
@@ -689,23 +761,31 @@
                                                 <div class="card-text mt-2 validation-text collapse" id="uid-13">
                                                     <div class="validation-text-inner">
                                                                     <div class="font-monospace subsection-title mt-2">Files</div>
+                                                                
+                                                                    
                                                                     <div class="font-monospace entry-message section-files ">Using examples/geodeticdatum.ttl from examples</div>
+                                                                    
                                                                     <div class="font-monospace entry-message section-files ">Output Turtle example_1_1.ttl created</div>
                                                                     <div class="font-monospace subsection-title mt-2">Turtle</div>
+                                                                
+                                                                    
                                                                     <div class="font-monospace entry-message section-turtle ">Prefixes are defined for mynamespace</div>
                                                                     <div class="font-monospace subsection-title mt-2">SHACL</div>
+                                                                
+                                                                    
                                                                     <div class="font-monospace entry-message section-shacl ">Validation result for _sources/datum/rules.shacl:
   Validation Report
   Conforms: True
   </div>
+                                                                    
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/datum/rules.shacl:
- - Shape geosrs:Ellipsoid_inverseFlattening_Shape: *none*
- - Shape geosrs:Datum_ellipsoid_Shape: *none*
- - Shape geosrs:ParametricDatum_definingParameter_Shape: *none*
- - Shape geosrs:Datum_primeMeridian_Shape: *none*
- - Shape geosrs:Ellipsoid_eccentricity_Shape: *none*
- - Shape geosrs:Ellipsoid_semiMinorAxis_Shape: *none*
  - Shape geosrs:Ellipsoid_semiMajorAxis_Shape: *none*
+ - Shape geosrs:Datum_ellipsoid_Shape: *none*
+ - Shape geosrs:Ellipsoid_semiMinorAxis_Shape: *none*
+ - Shape geosrs:ParametricDatum_definingParameter_Shape: *none*
+ - Shape geosrs:Ellipsoid_eccentricity_Shape: *none*
+ - Shape geosrs:Datum_primeMeridian_Shape: *none*
+ - Shape geosrs:Ellipsoid_inverseFlattening_Shape: *none*
 </div>
                                                     </div>
                                                 </div>
@@ -756,9 +836,14 @@
                                                 <div class="card-text mt-2 validation-text collapse" id="uid-14">
                                                     <div class="validation-text-inner">
                                                                     <div class="font-monospace subsection-title mt-2">Files</div>
+                                                                
+                                                                    
                                                                     <div class="font-monospace entry-message section-files ">Using examples/planet.ttl from examples</div>
+                                                                    
                                                                     <div class="font-monospace entry-message section-files ">Output Turtle example_1_1.ttl created</div>
                                                                     <div class="font-monospace subsection-title mt-2">Turtle</div>
+                                                                
+                                                                    
                                                                     <div class="font-monospace entry-message section-turtle ">Prefixes are defined for mynamespace</div>
                                                     </div>
                                                 </div>
@@ -809,9 +894,14 @@
                                                 <div class="card-text mt-2 validation-text collapse" id="uid-15">
                                                     <div class="validation-text-inner">
                                                                     <div class="font-monospace subsection-title mt-2">Files</div>
+                                                                
+                                                                    
                                                                     <div class="font-monospace entry-message section-files ">Using examples/projection.ttl from examples</div>
+                                                                    
                                                                     <div class="font-monospace entry-message section-files ">Output Turtle example_1_1.ttl created</div>
                                                                     <div class="font-monospace subsection-title mt-2">Turtle</div>
+                                                                
+                                                                    
                                                                     <div class="font-monospace entry-message section-turtle ">Prefixes are defined for mynamespace</div>
                                                     </div>
                                                 </div>
@@ -863,28 +953,35 @@
                                                 <div class="card-text mt-2 validation-text collapse" id="uid-16">
                                                     <div class="validation-text-inner">
                                                                     <div class="font-monospace subsection-title mt-2">General</div>
+                                                                
+                                                                    
                                                                     <div class="font-monospace entry-message section-general text-danger">Test was expected to fail but it did not.</div>
                                                                     <div class="font-monospace subsection-title mt-2">Files</div>
+                                                                
+                                                                    
                                                                     <div class="font-monospace entry-message section-files ">Using areaOfUse-fail.ttl from test resources</div>
                                                                     <div class="font-monospace subsection-title mt-2">SHACL</div>
+                                                                
+                                                                    
                                                                     <div class="font-monospace entry-message section-shacl ">Validation result for _sources/srs/rules.shacl:
   Validation Report
   Conforms: True
   </div>
+                                                                    
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/srs/rules.shacl:
- - Shape geosrs:SingleCRS_coordinateSystem_Shape: *none*
- - Shape geosrs:SingleCRS_datum_Shape: *none*
- - Shape geosrs:GeographicCRS_coordinateSystem_Shape: *none*
- - Shape geosrs:GeographicCRS_datum_Shape: *none*
- - Shape geosrs:TemporalCRS_datum_Shape: *none*
- - Shape geosrs:CRS_datum_Shape: *none*
- - Shape geosrs:CRS_domainOfValidity_Shape: *none*
- - Shape geosrs:CRS_coordinateSystem_Shape: *none*
- - Shape geosrs:CRS_datumEnsemble_Shape: *none*
- - Shape geosrs:ParametricCRS_datum_Shape: *none*
  - Shape geosrs:ProjectedCRS_conversion_Shape: *none*
+ - Shape geosrs:CRS_coordinateSystem_Shape: *none*
+ - Shape geosrs:CRS_datum_Shape: *none*
+ - Shape geosrs:SingleCRS_datum_Shape: *none*
  - Shape geosrs:GeodeticCRS_coordinateSystem_Shape: *none*
+ - Shape geosrs:GeographicCRS_coordinateSystem_Shape: *none*
+ - Shape geosrs:CRS_datumEnsemble_Shape: *none*
  - Shape geosrs:CompoundCRS_includesSRS_Shape: *none*
+ - Shape geosrs:CRS_domainOfValidity_Shape: *none*
+ - Shape geosrs:GeographicCRS_datum_Shape: *none*
+ - Shape geosrs:SingleCRS_coordinateSystem_Shape: *none*
+ - Shape geosrs:TemporalCRS_datum_Shape: *none*
+ - Shape geosrs:ParametricCRS_datum_Shape: *none*
 </div>
                                                     </div>
                                                 </div>
@@ -910,26 +1007,31 @@
                                                 <div class="card-text mt-2 validation-text collapse" id="uid-17">
                                                     <div class="validation-text-inner">
                                                                     <div class="font-monospace subsection-title mt-2">Files</div>
+                                                                
+                                                                    
                                                                     <div class="font-monospace entry-message section-files ">Using areaOfUse.ttl from test resources</div>
                                                                     <div class="font-monospace subsection-title mt-2">SHACL</div>
+                                                                
+                                                                    
                                                                     <div class="font-monospace entry-message section-shacl ">Validation result for _sources/srs/rules.shacl:
   Validation Report
   Conforms: True
   </div>
+                                                                    
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/srs/rules.shacl:
- - Shape geosrs:SingleCRS_coordinateSystem_Shape: *none*
- - Shape geosrs:SingleCRS_datum_Shape: *none*
- - Shape geosrs:GeographicCRS_coordinateSystem_Shape: *none*
- - Shape geosrs:GeographicCRS_datum_Shape: *none*
- - Shape geosrs:TemporalCRS_datum_Shape: *none*
- - Shape geosrs:CRS_datum_Shape: *none*
- - Shape geosrs:CRS_domainOfValidity_Shape: *none*
- - Shape geosrs:CRS_coordinateSystem_Shape: *none*
- - Shape geosrs:CRS_datumEnsemble_Shape: *none*
- - Shape geosrs:ParametricCRS_datum_Shape: *none*
  - Shape geosrs:ProjectedCRS_conversion_Shape: *none*
+ - Shape geosrs:CRS_coordinateSystem_Shape: *none*
+ - Shape geosrs:CRS_datum_Shape: *none*
+ - Shape geosrs:SingleCRS_datum_Shape: *none*
  - Shape geosrs:GeodeticCRS_coordinateSystem_Shape: *none*
+ - Shape geosrs:GeographicCRS_coordinateSystem_Shape: *none*
+ - Shape geosrs:CRS_datumEnsemble_Shape: *none*
  - Shape geosrs:CompoundCRS_includesSRS_Shape: *none*
+ - Shape geosrs:CRS_domainOfValidity_Shape: *none*
+ - Shape geosrs:GeographicCRS_datum_Shape: *none*
+ - Shape geosrs:SingleCRS_coordinateSystem_Shape: *none*
+ - Shape geosrs:TemporalCRS_datum_Shape: *none*
+ - Shape geosrs:ParametricCRS_datum_Shape: *none*
 </div>
                                                     </div>
                                                 </div>
@@ -956,28 +1058,35 @@
                                                 <div class="card-text mt-2 validation-text collapse" id="uid-18">
                                                     <div class="validation-text-inner">
                                                                     <div class="font-monospace subsection-title mt-2">General</div>
+                                                                
+                                                                    
                                                                     <div class="font-monospace entry-message section-general text-danger">Test was expected to fail but it did not.</div>
                                                                     <div class="font-monospace subsection-title mt-2">Files</div>
+                                                                
+                                                                    
                                                                     <div class="font-monospace entry-message section-files ">Using coordinateSystem-1-fail.ttl from test resources</div>
                                                                     <div class="font-monospace subsection-title mt-2">SHACL</div>
+                                                                
+                                                                    
                                                                     <div class="font-monospace entry-message section-shacl ">Validation result for _sources/srs/rules.shacl:
   Validation Report
   Conforms: True
   </div>
+                                                                    
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/srs/rules.shacl:
- - Shape geosrs:SingleCRS_coordinateSystem_Shape: *none*
- - Shape geosrs:SingleCRS_datum_Shape: *none*
- - Shape geosrs:GeographicCRS_coordinateSystem_Shape: *none*
- - Shape geosrs:GeographicCRS_datum_Shape: *none*
- - Shape geosrs:TemporalCRS_datum_Shape: *none*
- - Shape geosrs:CRS_datum_Shape: *none*
- - Shape geosrs:CRS_domainOfValidity_Shape: *none*
- - Shape geosrs:CRS_coordinateSystem_Shape: *none*
- - Shape geosrs:CRS_datumEnsemble_Shape: *none*
- - Shape geosrs:ParametricCRS_datum_Shape: *none*
  - Shape geosrs:ProjectedCRS_conversion_Shape: *none*
+ - Shape geosrs:CRS_coordinateSystem_Shape: *none*
+ - Shape geosrs:CRS_datum_Shape: *none*
+ - Shape geosrs:SingleCRS_datum_Shape: *none*
  - Shape geosrs:GeodeticCRS_coordinateSystem_Shape: *none*
+ - Shape geosrs:GeographicCRS_coordinateSystem_Shape: *none*
+ - Shape geosrs:CRS_datumEnsemble_Shape: *none*
  - Shape geosrs:CompoundCRS_includesSRS_Shape: *none*
+ - Shape geosrs:CRS_domainOfValidity_Shape: *none*
+ - Shape geosrs:GeographicCRS_datum_Shape: *none*
+ - Shape geosrs:SingleCRS_coordinateSystem_Shape: *none*
+ - Shape geosrs:TemporalCRS_datum_Shape: *none*
+ - Shape geosrs:ParametricCRS_datum_Shape: *none*
 </div>
                                                     </div>
                                                 </div>
@@ -1004,28 +1113,35 @@
                                                 <div class="card-text mt-2 validation-text collapse" id="uid-19">
                                                     <div class="validation-text-inner">
                                                                     <div class="font-monospace subsection-title mt-2">General</div>
+                                                                
+                                                                    
                                                                     <div class="font-monospace entry-message section-general text-danger">Test was expected to fail but it did not.</div>
                                                                     <div class="font-monospace subsection-title mt-2">Files</div>
+                                                                
+                                                                    
                                                                     <div class="font-monospace entry-message section-files ">Using coordinateSystem-2-fail.ttl from test resources</div>
                                                                     <div class="font-monospace subsection-title mt-2">SHACL</div>
+                                                                
+                                                                    
                                                                     <div class="font-monospace entry-message section-shacl ">Validation result for _sources/srs/rules.shacl:
   Validation Report
   Conforms: True
   </div>
+                                                                    
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/srs/rules.shacl:
- - Shape geosrs:SingleCRS_coordinateSystem_Shape: *none*
- - Shape geosrs:SingleCRS_datum_Shape: *none*
- - Shape geosrs:GeographicCRS_coordinateSystem_Shape: *none*
- - Shape geosrs:GeographicCRS_datum_Shape: *none*
- - Shape geosrs:TemporalCRS_datum_Shape: *none*
- - Shape geosrs:CRS_datum_Shape: *none*
- - Shape geosrs:CRS_domainOfValidity_Shape: *none*
- - Shape geosrs:CRS_coordinateSystem_Shape: *none*
- - Shape geosrs:CRS_datumEnsemble_Shape: *none*
- - Shape geosrs:ParametricCRS_datum_Shape: *none*
  - Shape geosrs:ProjectedCRS_conversion_Shape: *none*
+ - Shape geosrs:CRS_coordinateSystem_Shape: *none*
+ - Shape geosrs:CRS_datum_Shape: *none*
+ - Shape geosrs:SingleCRS_datum_Shape: *none*
  - Shape geosrs:GeodeticCRS_coordinateSystem_Shape: *none*
+ - Shape geosrs:GeographicCRS_coordinateSystem_Shape: *none*
+ - Shape geosrs:CRS_datumEnsemble_Shape: *none*
  - Shape geosrs:CompoundCRS_includesSRS_Shape: *none*
+ - Shape geosrs:CRS_domainOfValidity_Shape: *none*
+ - Shape geosrs:GeographicCRS_datum_Shape: *none*
+ - Shape geosrs:SingleCRS_coordinateSystem_Shape: *none*
+ - Shape geosrs:TemporalCRS_datum_Shape: *none*
+ - Shape geosrs:ParametricCRS_datum_Shape: *none*
 </div>
                                                     </div>
                                                 </div>
@@ -1051,26 +1167,31 @@
                                                 <div class="card-text mt-2 validation-text collapse" id="uid-20">
                                                     <div class="validation-text-inner">
                                                                     <div class="font-monospace subsection-title mt-2">Files</div>
+                                                                
+                                                                    
                                                                     <div class="font-monospace entry-message section-files ">Using coordinateSystem.ttl from test resources</div>
                                                                     <div class="font-monospace subsection-title mt-2">SHACL</div>
+                                                                
+                                                                    
                                                                     <div class="font-monospace entry-message section-shacl ">Validation result for _sources/srs/rules.shacl:
   Validation Report
   Conforms: True
   </div>
+                                                                    
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/srs/rules.shacl:
- - Shape geosrs:SingleCRS_coordinateSystem_Shape: *none*
- - Shape geosrs:SingleCRS_datum_Shape: *none*
- - Shape geosrs:GeographicCRS_coordinateSystem_Shape: *none*
- - Shape geosrs:GeographicCRS_datum_Shape: *none*
- - Shape geosrs:TemporalCRS_datum_Shape: *none*
- - Shape geosrs:CRS_datum_Shape: *none*
- - Shape geosrs:CRS_domainOfValidity_Shape: *none*
- - Shape geosrs:CRS_coordinateSystem_Shape: *none*
- - Shape geosrs:CRS_datumEnsemble_Shape: *none*
- - Shape geosrs:ParametricCRS_datum_Shape: *none*
  - Shape geosrs:ProjectedCRS_conversion_Shape: *none*
+ - Shape geosrs:CRS_coordinateSystem_Shape: *none*
+ - Shape geosrs:CRS_datum_Shape: *none*
+ - Shape geosrs:SingleCRS_datum_Shape: *none*
  - Shape geosrs:GeodeticCRS_coordinateSystem_Shape: *none*
+ - Shape geosrs:GeographicCRS_coordinateSystem_Shape: *none*
+ - Shape geosrs:CRS_datumEnsemble_Shape: *none*
  - Shape geosrs:CompoundCRS_includesSRS_Shape: *none*
+ - Shape geosrs:CRS_domainOfValidity_Shape: *none*
+ - Shape geosrs:GeographicCRS_datum_Shape: *none*
+ - Shape geosrs:SingleCRS_coordinateSystem_Shape: *none*
+ - Shape geosrs:TemporalCRS_datum_Shape: *none*
+ - Shape geosrs:ParametricCRS_datum_Shape: *none*
 </div>
                                                     </div>
                                                 </div>
@@ -1096,29 +1217,37 @@
                                                 <div class="card-text mt-2 validation-text collapse" id="uid-21">
                                                     <div class="validation-text-inner">
                                                                     <div class="font-monospace subsection-title mt-2">Files</div>
+                                                                
+                                                                    
                                                                     <div class="font-monospace entry-message section-files ">Using examples/srs.ttl from examples</div>
+                                                                    
                                                                     <div class="font-monospace entry-message section-files ">Output Turtle example_1_1.ttl created</div>
                                                                     <div class="font-monospace subsection-title mt-2">Turtle</div>
+                                                                
+                                                                    
                                                                     <div class="font-monospace entry-message section-turtle ">Prefixes are defined for mynamespace</div>
                                                                     <div class="font-monospace subsection-title mt-2">SHACL</div>
+                                                                
+                                                                    
                                                                     <div class="font-monospace entry-message section-shacl ">Validation result for _sources/srs/rules.shacl:
   Validation Report
   Conforms: True
   </div>
+                                                                    
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/srs/rules.shacl:
- - Shape geosrs:SingleCRS_coordinateSystem_Shape: *none*
- - Shape geosrs:SingleCRS_datum_Shape: *none*
- - Shape geosrs:GeographicCRS_coordinateSystem_Shape: *none*
- - Shape geosrs:GeographicCRS_datum_Shape: *none*
- - Shape geosrs:TemporalCRS_datum_Shape: *none*
- - Shape geosrs:CRS_datum_Shape: *none*
- - Shape geosrs:CRS_domainOfValidity_Shape: *none*
- - Shape geosrs:CRS_coordinateSystem_Shape: *none*
- - Shape geosrs:CRS_datumEnsemble_Shape: *none*
- - Shape geosrs:ParametricCRS_datum_Shape: *none*
  - Shape geosrs:ProjectedCRS_conversion_Shape: *none*
+ - Shape geosrs:CRS_coordinateSystem_Shape: *none*
+ - Shape geosrs:CRS_datum_Shape: *none*
+ - Shape geosrs:SingleCRS_datum_Shape: *none*
  - Shape geosrs:GeodeticCRS_coordinateSystem_Shape: *none*
+ - Shape geosrs:GeographicCRS_coordinateSystem_Shape: *none*
+ - Shape geosrs:CRS_datumEnsemble_Shape: *none*
  - Shape geosrs:CompoundCRS_includesSRS_Shape: *none*
+ - Shape geosrs:CRS_domainOfValidity_Shape: *none*
+ - Shape geosrs:GeographicCRS_datum_Shape: *none*
+ - Shape geosrs:SingleCRS_coordinateSystem_Shape: *none*
+ - Shape geosrs:TemporalCRS_datum_Shape: *none*
+ - Shape geosrs:ParametricCRS_datum_Shape: *none*
 </div>
                                                     </div>
                                                 </div>

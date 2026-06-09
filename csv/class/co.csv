@@ -31,4 +31,4 @@ geosrs:RotationOperation,geosrs:AffineTransformationOperation,,Coordinate Operat
 geosrs:IdentityOperation,geosrs:AffineTransformationOperation,,Coordinate Operation Categories,Identity Operation,Identity transformation operation,,,geocrs:IdentityOperation,,,,Extension,,,
 geosrs:ShearOperation,geosrs:AffineTransformationOperation,,Coordinate Operation Categories,Shear Operation,Shear transformation operation,,,geocrs:ShearOperation,,,,Extension,,,
 geosrs:TranslationOperation,geosrs:AffineTransformationOperation,,Coordinate Operation Categories,Translation Operation,Translation transformation operation,,,geocrs:TranslationOperation,,,,Extension,,,
-geosrs:AffineTransformationOperation,geosrs:CoordinateTransformationOperation ,,Coordinate Operation Categories,Affine Transformation Operation,Affine coordinate transformation operation,,,geocrs:AffineTransformationOperation,,,,Extension,,,
+geosrs:AffineTransformationOperation,geosrs:Transformation,,Coordinate Operation Categories,Affine Transformation Operation,Affine coordinate transformation operation,,,geocrs:AffineTransformationOperation,,,,Extension,,,

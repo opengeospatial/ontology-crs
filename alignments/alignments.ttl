@@ -41,15 +41,15 @@ geosrs:axis owl:equivalentProperty ifc:axis_IfcAxis1Placement .
 
 <https://w3id.org/geosrs/co/Transformation> owl:equivalentClass ign:Transformation .
 
-<https://w3id.org/geosrs/cs/CartesianCoordinateSystem> owl:equivalentClass ign:CartesianCS .
+<https://w3id.org/geosrs/cs/CartesianCS> owl:equivalentClass ign:CartesianCS .
 
 <https://w3id.org/geosrs/cs/CoordinateSystem> owl:equivalentClass ign:CoordinateSystem .
 
 <https://w3id.org/geosrs/cs/CoordinateSystemAxis> owl:equivalentClass ign:CoordinateSystemAxis .
 
-<https://w3id.org/geosrs/cs/EllipsoidalCoordinateSystem> owl:equivalentClass ign:EllipsoidalCS .
+<https://w3id.org/geosrs/cs/EllipsoidalCS> owl:equivalentClass ign:EllipsoidalCS .
 
-<https://w3id.org/geosrs/cs/VerticalCoordinateSystem> owl:equivalentClass ign:VerticalCS .
+<https://w3id.org/geosrs/cs/VerticalCS> owl:equivalentClass ign:VerticalCS .
 
 <https://w3id.org/geosrs/datum/Datum> owl:equivalentClass ign:Datum .
 

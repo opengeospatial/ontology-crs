@@ -8,7 +8,7 @@ Some of the definitions are extended in specialized modules related to the Core 
 
 image::core.png[]
 
-From a base class `SpatialReferenceSystem` a class for a coordinate reference systems is sub-typed. `CoordinateReferenceSystem` is the superclass of all spatial reference systems describing locations using coorindates. The latter are described using a `Datum` and a `CoordinateSystem` definition with at least one instance of `CoordinateAxis`.
+From a base class `SpatialReferenceSystem,`, a class for a coordinate reference system is subtyped. `CoordinateReferenceSystem` is the superclass of all spatial reference systems describing locations using coordinates. The latter are described using a `Datum` and a `CoordinateSystem` definition with at least one instance of `CoordinateAxis`.
 Together with several subtypes of `CoordinateReferenceSystem`, these definitions complete the Core module.
 
 

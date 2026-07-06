@@ -1,0 +1,57 @@
+---
+title: Coordinate System Module
+---
+classDiagram
+
+    namespace Core {
+        class CoordinateSystem
+        class CartesianCoordinateSystem
+        class EllipsoidalCoordinateSystem
+        class LinearCoordinateSystem
+        class OrdinalCoordinateSystem
+        class ParametricCoordinateSystem
+        class PolarCoordinateSystem
+        class SphericalCoordinateSystem
+        class VerticalCoordinateSystem
+    }
+
+    CoordinateSystem <|-- 1DCoordinateSystem
+    CoordinateSystem <|-- 3DCoordinateSystem
+    CoordinateSystem <|-- AffineCoordinateSystem
+    CoordinateSystem <|-- BarycentricCoordinateSystem
+    SingleCRS <|-- CartesianCoordinateSystem
+    CoordinateSystem <|-- CelestialCoordinateSystem
+    OrthogonalCoordinateSystem <|-- ConicalCoordinateSystem
+    CoordinateSystem <|-- CurvilinearCoordinateSystem
+    3DCoordinateSystem <|-- CylindricalCoordinateSystem
+    CelestialCoordinateSystem <|-- EclipticCoordinateSystem
+    OrthogonalCoordinateSystem <|-- EllipsoidalCoordinateSystem
+    CoordinateSystem <|-- EngineeringCoordinateSystem
+    CelestialCoordinateSystem <|-- EquatorialCoordinateSystem
+    CelestialCoordinateSystem  <|-- GalacticCoordinateSystem
+    3DCoordinateSystem <|-- GalacticCoordinateSystem
+    CoordinateSystem <|-- GeodeticCoordinateSystem
+    SphericalCoordinateSystem <|-- GeographicalCoordinateSystem
+    GeodeticCoordinateSystem <|-- GeographicalCoordinateSystem
+    CoordinateSystem <|-- GridCoordinateSystem
+    GridCoordinateSystem <|-- HexagonalCoordinateSystem
+    CelestialCoordinateSystem <|-- HorizontalCoordinateSystem
+    CoordinateSystem <|-- LinearCoordinateSystem
+    CoordinateSystem <|-- LocalCoordinateSystem
+    CoordinateSystem <|-- ObliqueCoordinateSystem
+    CoordinateSystem <|-- OrdinalCoordinateSystem
+    CurvilinearCoordinateSystem <|-- OrthogonalCoordinateSystem
+    1DCoordinateSystem <|-- ParametricCoordinateSystem
+    CelestialCoordinateSystem <|-- PerifocalCoordinateSystem
+    CoordinateSystem <|-- PlanarCoordinateSystem
+    PlanarCoordinateSystem <|-- PolarCoordinateSystem
+    CurvilinearCoordinateSystem <|-- SkewCoordinateSystem
+    3DCoordinateSystem <|-- SphericalCoordinateSystem
+    TemporalCoordinateSystem <|-- DateTimeTemporalCoordinateSystem
+    TemporalCoordinateSystem <|-- TemporalCountCoordinateSystem
+    1DCoordinateSystem <|-- TemporalCoordinateSystem
+    TemporalCoordinateSystem <|-- TemporalMeasureCoordinateSystem
+    CelestialCoordinateSystem  <|-- SuperGalacticCS
+    3DCoordinateSystem <|-- SuperGalacticCS
+    CoordinateSystem <|-- VerticalCoordinateSystem
+

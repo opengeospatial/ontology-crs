@@ -12,7 +12,7 @@
 
 geosrs:CartesianCS a owl:Class ;
     rdfs:label "Cartesian Coordinate System"@en ;
-    rdfs:subClassOf <https://w3id.org/geosrs/srs/SingleCRS> ;
+    rdfs:subClassOf geosrs:CoordinateSystem ;
     skos:definition "Coordinate system which gives the position of points relative to n mutually perpendicular axes. Cf. ISO 19111:2007:2007-07, tables 15 and 18."@en .
 
 geosrs:CoordinateSystemAxis a owl:Class ;

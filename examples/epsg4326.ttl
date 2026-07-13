@@ -8,7 +8,7 @@
 [] a geosrs:GeographicCRS ;
     rdfs:label "WGS 84" ;
     skos:scopeNote "Horizontal component of 3D system." ;
-    geosrs:coordinateSystem [ a geosrs:EllipsoidalCoordinateSystem ;
+    geosrs:coordinateSystem [ a geosrs:EllipsoidalCS ;
             geosrs:axis [ rdfs:label "Geodetic latitude" ;
                     om:hasUnit om:degree ;
                     skos:altLabel "Lat" ;

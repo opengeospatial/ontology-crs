@@ -10,6 +10,17 @@
 <name>technical</name>
 </subdivision><abbreviation>OGC</abbreviation></organization></contributor><contributor><role type="publisher"/><organization>
 <name>Open Geospatial Consortium</name>
-<abbreviation>OGC</abbreviation></organization></contributor><edition>1.0</edition><language>en</language><script>Latn</script><status><stage>approved</stage></status><copyright><from>2026</from><owner><organization>
+<abbreviation>OGC</abbreviation></organization></contributor><edition>1.0</edition><language>en</language><script>Latn</script><abstract><p>The Spatial Reference Systems (SRS) web ontology results from a joint effort between the Spacio-temporal Data on the Web Working Group (SDWWG) of the W3C and the GeoSemantics DWG of the OGC. It is meant to provide a workable Semantic Web counterpart to the [ISO:19111]() domain model, allowing for the full expression of reference systems with RDF.</p>
+
+<p>The ultimate goal is to attain a web ontology for coordinate reference systems (CRS), approved both by the OGC and the W3C.</p>
+
+<p>The namespace for the core terms is <link target="http://www.w3.org/ns/geosrs/"/>.</p>
+
+<p>The suggested prefix for the SRS ontology namespace is geosrs.</p>
+
+<p>The SRS ontology graph containing the core definitions is available at <link target="http://www.w3.org/ns/geosrs/"/>.</p>
+
+<p>The SRS ontology graph with the full axiomatization of the core terms is available at <link target="http://www.w3.org/ns/geosrs/"/>.</p>
+</abstract><status><stage>approved</stage></status><copyright><from>2026</from><owner><organization>
 <name>Open Geospatial Consortium</name>
 <abbreviation>OGC</abbreviation></organization></owner></copyright><keyword>keyword_1</keyword><keyword>keyword_2</keyword><keyword>keyword_3</keyword><keyword>etc.</keyword><ext><doctype>community-standard</doctype><flavor>ogc</flavor></ext></bibdata>

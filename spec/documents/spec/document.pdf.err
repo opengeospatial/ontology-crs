@@ -1,5 +1,5 @@
-Image not available. URI: file:////home/runner/work/ontology-crs/ontology-crs/docs/spec/documents/spec/_tmp_images_1e111880-b4fa-49cf-8f0e-47f5754b9063/0bbd4886-b081-42d5-a357-da21ebee078a.octet-stream. Reason: org.apache.xmlgraphics.image.loader.ImageException: The file format is not supported. No ImagePreloader found for file:////home/runner/work/ontology-crs/ontology-crs/docs/spec/documents/spec/_tmp_images_1e111880-b4fa-49cf-8f0e-47f5754b9063/0bbd4886-b081-42d5-a357-da21ebee078a.octet-stream (See position 2321:512)
-org.apache.xmlgraphics.image.loader.ImageException: The file format is not supported. No ImagePreloader found for file:////home/runner/work/ontology-crs/ontology-crs/docs/spec/documents/spec/_tmp_images_1e111880-b4fa-49cf-8f0e-47f5754b9063/0bbd4886-b081-42d5-a357-da21ebee078a.octet-stream
+Image not available. URI: file:////home/runner/work/ontology-crs/ontology-crs/docs/spec/documents/spec/_tmp_images_28fb36f4-9d32-4cb2-8a95-b36f3a2ba1a1/2f585d6d-e5db-41a7-aa7b-3628ff6d0ae7.octet-stream. Reason: org.apache.xmlgraphics.image.loader.ImageException: The file format is not supported. No ImagePreloader found for file:////home/runner/work/ontology-crs/ontology-crs/docs/spec/documents/spec/_tmp_images_28fb36f4-9d32-4cb2-8a95-b36f3a2ba1a1/2f585d6d-e5db-41a7-aa7b-3628ff6d0ae7.octet-stream (See position 2348:512)
+org.apache.xmlgraphics.image.loader.ImageException: The file format is not supported. No ImagePreloader found for file:////home/runner/work/ontology-crs/ontology-crs/docs/spec/documents/spec/_tmp_images_28fb36f4-9d32-4cb2-8a95-b36f3a2ba1a1/2f585d6d-e5db-41a7-aa7b-3628ff6d0ae7.octet-stream
 	at org.apache.xmlgraphics.image.loader.ImageManager.preloadImage(ImageManager.java:181)
 	at org.apache.xmlgraphics.image.loader.cache.ImageCache.needImageInfo(ImageCache.java:127)
 	at org.apache.xmlgraphics.image.loader.ImageManager.getImageInfo(ImageManager.java:123)
@@ -28,8 +28,8 @@ org.apache.xmlgraphics.image.loader.ImageException: The file format is not suppo
 	at org.metanorma.fop.PDFGenerator.process(PDFGenerator.java:336)
 	at org.metanorma.fop.mn2pdf.main(mn2pdf.java:349)
 
-Image not available. URI: file:////home/runner/work/ontology-crs/ontology-crs/docs/spec/documents/spec/_tmp_images_1e111880-b4fa-49cf-8f0e-47f5754b9063/1b360bfa-16a3-4e4f-85ef-43de33aa3a40.octet-stream. Reason: org.apache.xmlgraphics.image.loader.ImageException: The file format is not supported. No ImagePreloader found for file:////home/runner/work/ontology-crs/ontology-crs/docs/spec/documents/spec/_tmp_images_1e111880-b4fa-49cf-8f0e-47f5754b9063/1b360bfa-16a3-4e4f-85ef-43de33aa3a40.octet-stream (See position 2536:521)
-org.apache.xmlgraphics.image.loader.ImageException: The file format is not supported. No ImagePreloader found for file:////home/runner/work/ontology-crs/ontology-crs/docs/spec/documents/spec/_tmp_images_1e111880-b4fa-49cf-8f0e-47f5754b9063/1b360bfa-16a3-4e4f-85ef-43de33aa3a40.octet-stream
+Image not available. URI: file:////home/runner/work/ontology-crs/ontology-crs/docs/spec/documents/spec/_tmp_images_28fb36f4-9d32-4cb2-8a95-b36f3a2ba1a1/52c90850-d42a-41d2-9386-590f3cb830a7.octet-stream. Reason: org.apache.xmlgraphics.image.loader.ImageException: The file format is not supported. No ImagePreloader found for file:////home/runner/work/ontology-crs/ontology-crs/docs/spec/documents/spec/_tmp_images_28fb36f4-9d32-4cb2-8a95-b36f3a2ba1a1/52c90850-d42a-41d2-9386-590f3cb830a7.octet-stream (See position 2563:521)
+org.apache.xmlgraphics.image.loader.ImageException: The file format is not supported. No ImagePreloader found for file:////home/runner/work/ontology-crs/ontology-crs/docs/spec/documents/spec/_tmp_images_28fb36f4-9d32-4cb2-8a95-b36f3a2ba1a1/52c90850-d42a-41d2-9386-590f3cb830a7.octet-stream
 	at org.apache.xmlgraphics.image.loader.ImageManager.preloadImage(ImageManager.java:181)
 	at org.apache.xmlgraphics.image.loader.cache.ImageCache.needImageInfo(ImageCache.java:127)
 	at org.apache.xmlgraphics.image.loader.ImageManager.getImageInfo(ImageManager.java:123)
@@ -58,8 +58,8 @@ org.apache.xmlgraphics.image.loader.ImageException: The file format is not suppo
 	at org.metanorma.fop.PDFGenerator.process(PDFGenerator.java:336)
 	at org.metanorma.fop.mn2pdf.main(mn2pdf.java:349)
 
-Image not available. URI: file:////home/runner/work/ontology-crs/ontology-crs/docs/spec/documents/spec/_tmp_images_1e111880-b4fa-49cf-8f0e-47f5754b9063/a09df8fd-ec3e-43eb-960a-01bbcd45a463.octet-stream. Reason: org.apache.xmlgraphics.image.loader.ImageException: The file format is not supported. No ImagePreloader found for file:////home/runner/work/ontology-crs/ontology-crs/docs/spec/documents/spec/_tmp_images_1e111880-b4fa-49cf-8f0e-47f5754b9063/a09df8fd-ec3e-43eb-960a-01bbcd45a463.octet-stream (See position 3041:518)
-org.apache.xmlgraphics.image.loader.ImageException: The file format is not supported. No ImagePreloader found for file:////home/runner/work/ontology-crs/ontology-crs/docs/spec/documents/spec/_tmp_images_1e111880-b4fa-49cf-8f0e-47f5754b9063/a09df8fd-ec3e-43eb-960a-01bbcd45a463.octet-stream
+Image not available. URI: file:////home/runner/work/ontology-crs/ontology-crs/docs/spec/documents/spec/_tmp_images_28fb36f4-9d32-4cb2-8a95-b36f3a2ba1a1/36a48d86-f759-46c5-a3bd-141f63a30be2.octet-stream. Reason: org.apache.xmlgraphics.image.loader.ImageException: The file format is not supported. No ImagePreloader found for file:////home/runner/work/ontology-crs/ontology-crs/docs/spec/documents/spec/_tmp_images_28fb36f4-9d32-4cb2-8a95-b36f3a2ba1a1/36a48d86-f759-46c5-a3bd-141f63a30be2.octet-stream (See position 3068:518)
+org.apache.xmlgraphics.image.loader.ImageException: The file format is not supported. No ImagePreloader found for file:////home/runner/work/ontology-crs/ontology-crs/docs/spec/documents/spec/_tmp_images_28fb36f4-9d32-4cb2-8a95-b36f3a2ba1a1/36a48d86-f759-46c5-a3bd-141f63a30be2.octet-stream
 	at org.apache.xmlgraphics.image.loader.ImageManager.preloadImage(ImageManager.java:181)
 	at org.apache.xmlgraphics.image.loader.cache.ImageCache.needImageInfo(ImageCache.java:127)
 	at org.apache.xmlgraphics.image.loader.ImageManager.getImageInfo(ImageManager.java:123)
@@ -88,8 +88,8 @@ org.apache.xmlgraphics.image.loader.ImageException: The file format is not suppo
 	at org.metanorma.fop.PDFGenerator.process(PDFGenerator.java:336)
 	at org.metanorma.fop.mn2pdf.main(mn2pdf.java:349)
 
-Image not available. URI: file:////home/runner/work/ontology-crs/ontology-crs/docs/spec/documents/spec/_tmp_images_1e111880-b4fa-49cf-8f0e-47f5754b9063/79883424-2efc-4704-aee7-20ea3b61b17b.octet-stream. Reason: org.apache.xmlgraphics.image.loader.ImageException: The file format is not supported. No ImagePreloader found for file:////home/runner/work/ontology-crs/ontology-crs/docs/spec/documents/spec/_tmp_images_1e111880-b4fa-49cf-8f0e-47f5754b9063/79883424-2efc-4704-aee7-20ea3b61b17b.octet-stream (See position 3057:521)
-org.apache.xmlgraphics.image.loader.ImageException: The file format is not supported. No ImagePreloader found for file:////home/runner/work/ontology-crs/ontology-crs/docs/spec/documents/spec/_tmp_images_1e111880-b4fa-49cf-8f0e-47f5754b9063/79883424-2efc-4704-aee7-20ea3b61b17b.octet-stream
+Image not available. URI: file:////home/runner/work/ontology-crs/ontology-crs/docs/spec/documents/spec/_tmp_images_28fb36f4-9d32-4cb2-8a95-b36f3a2ba1a1/31da6dd2-3356-48c9-a03c-a3f2499ba82d.octet-stream. Reason: org.apache.xmlgraphics.image.loader.ImageException: The file format is not supported. No ImagePreloader found for file:////home/runner/work/ontology-crs/ontology-crs/docs/spec/documents/spec/_tmp_images_28fb36f4-9d32-4cb2-8a95-b36f3a2ba1a1/31da6dd2-3356-48c9-a03c-a3f2499ba82d.octet-stream (See position 3084:521)
+org.apache.xmlgraphics.image.loader.ImageException: The file format is not supported. No ImagePreloader found for file:////home/runner/work/ontology-crs/ontology-crs/docs/spec/documents/spec/_tmp_images_28fb36f4-9d32-4cb2-8a95-b36f3a2ba1a1/31da6dd2-3356-48c9-a03c-a3f2499ba82d.octet-stream
 	at org.apache.xmlgraphics.image.loader.ImageManager.preloadImage(ImageManager.java:181)
 	at org.apache.xmlgraphics.image.loader.cache.ImageCache.needImageInfo(ImageCache.java:127)
 	at org.apache.xmlgraphics.image.loader.ImageManager.getImageInfo(ImageManager.java:123)
@@ -118,8 +118,8 @@ org.apache.xmlgraphics.image.loader.ImageException: The file format is not suppo
 	at org.metanorma.fop.PDFGenerator.process(PDFGenerator.java:336)
 	at org.metanorma.fop.mn2pdf.main(mn2pdf.java:349)
 
-Image not available. URI: file:////home/runner/work/ontology-crs/ontology-crs/docs/spec/documents/spec/_tmp_images_1e111880-b4fa-49cf-8f0e-47f5754b9063/378d6877-cabf-4d4d-b1e9-804bcf4f056f.octet-stream. Reason: org.apache.xmlgraphics.image.loader.ImageException: The file format is not supported. No ImagePreloader found for file:////home/runner/work/ontology-crs/ontology-crs/docs/spec/documents/spec/_tmp_images_1e111880-b4fa-49cf-8f0e-47f5754b9063/378d6877-cabf-4d4d-b1e9-804bcf4f056f.octet-stream (See position 3683:507)
-org.apache.xmlgraphics.image.loader.ImageException: The file format is not supported. No ImagePreloader found for file:////home/runner/work/ontology-crs/ontology-crs/docs/spec/documents/spec/_tmp_images_1e111880-b4fa-49cf-8f0e-47f5754b9063/378d6877-cabf-4d4d-b1e9-804bcf4f056f.octet-stream
+Image not available. URI: file:////home/runner/work/ontology-crs/ontology-crs/docs/spec/documents/spec/_tmp_images_28fb36f4-9d32-4cb2-8a95-b36f3a2ba1a1/541d3e51-0d54-4085-9890-a4709a13c3c4.octet-stream. Reason: org.apache.xmlgraphics.image.loader.ImageException: The file format is not supported. No ImagePreloader found for file:////home/runner/work/ontology-crs/ontology-crs/docs/spec/documents/spec/_tmp_images_28fb36f4-9d32-4cb2-8a95-b36f3a2ba1a1/541d3e51-0d54-4085-9890-a4709a13c3c4.octet-stream (See position 3710:507)
+org.apache.xmlgraphics.image.loader.ImageException: The file format is not supported. No ImagePreloader found for file:////home/runner/work/ontology-crs/ontology-crs/docs/spec/documents/spec/_tmp_images_28fb36f4-9d32-4cb2-8a95-b36f3a2ba1a1/541d3e51-0d54-4085-9890-a4709a13c3c4.octet-stream
 	at org.apache.xmlgraphics.image.loader.ImageManager.preloadImage(ImageManager.java:181)
 	at org.apache.xmlgraphics.image.loader.cache.ImageCache.needImageInfo(ImageCache.java:127)
 	at org.apache.xmlgraphics.image.loader.ImageManager.getImageInfo(ImageManager.java:123)
@@ -148,8 +148,8 @@ org.apache.xmlgraphics.image.loader.ImageException: The file format is not suppo
 	at org.metanorma.fop.PDFGenerator.process(PDFGenerator.java:336)
 	at org.metanorma.fop.mn2pdf.main(mn2pdf.java:349)
 
-Image not available. URI: file:////home/runner/work/ontology-crs/ontology-crs/docs/spec/documents/spec/_tmp_images_1e111880-b4fa-49cf-8f0e-47f5754b9063/dd3a9720-2c00-4406-8598-b1c1e1834056.octet-stream. Reason: org.apache.xmlgraphics.image.loader.ImageException: The file format is not supported. No ImagePreloader found for file:////home/runner/work/ontology-crs/ontology-crs/docs/spec/documents/spec/_tmp_images_1e111880-b4fa-49cf-8f0e-47f5754b9063/dd3a9720-2c00-4406-8598-b1c1e1834056.octet-stream (See position 4368:509)
-org.apache.xmlgraphics.image.loader.ImageException: The file format is not supported. No ImagePreloader found for file:////home/runner/work/ontology-crs/ontology-crs/docs/spec/documents/spec/_tmp_images_1e111880-b4fa-49cf-8f0e-47f5754b9063/dd3a9720-2c00-4406-8598-b1c1e1834056.octet-stream
+Image not available. URI: file:////home/runner/work/ontology-crs/ontology-crs/docs/spec/documents/spec/_tmp_images_28fb36f4-9d32-4cb2-8a95-b36f3a2ba1a1/78347c6c-fe9e-4167-8383-29da7934dfa1.octet-stream. Reason: org.apache.xmlgraphics.image.loader.ImageException: The file format is not supported. No ImagePreloader found for file:////home/runner/work/ontology-crs/ontology-crs/docs/spec/documents/spec/_tmp_images_28fb36f4-9d32-4cb2-8a95-b36f3a2ba1a1/78347c6c-fe9e-4167-8383-29da7934dfa1.octet-stream (See position 4395:509)
+org.apache.xmlgraphics.image.loader.ImageException: The file format is not supported. No ImagePreloader found for file:////home/runner/work/ontology-crs/ontology-crs/docs/spec/documents/spec/_tmp_images_28fb36f4-9d32-4cb2-8a95-b36f3a2ba1a1/78347c6c-fe9e-4167-8383-29da7934dfa1.octet-stream
 	at org.apache.xmlgraphics.image.loader.ImageManager.preloadImage(ImageManager.java:181)
 	at org.apache.xmlgraphics.image.loader.cache.ImageCache.needImageInfo(ImageCache.java:127)
 	at org.apache.xmlgraphics.image.loader.ImageManager.getImageInfo(ImageManager.java:123)
@@ -178,8 +178,8 @@ org.apache.xmlgraphics.image.loader.ImageException: The file format is not suppo
 	at org.metanorma.fop.PDFGenerator.process(PDFGenerator.java:336)
 	at org.metanorma.fop.mn2pdf.main(mn2pdf.java:349)
 
-Image not available. URI: file:////home/runner/work/ontology-crs/ontology-crs/docs/spec/documents/spec/_tmp_images_1e111880-b4fa-49cf-8f0e-47f5754b9063/c1a01ddd-cdba-4f83-bb57-482bc2d94c94.octet-stream. Reason: org.apache.xmlgraphics.image.loader.ImageException: The file format is not supported. No ImagePreloader found for file:////home/runner/work/ontology-crs/ontology-crs/docs/spec/documents/spec/_tmp_images_1e111880-b4fa-49cf-8f0e-47f5754b9063/c1a01ddd-cdba-4f83-bb57-482bc2d94c94.octet-stream (See position 4582:511)
-org.apache.xmlgraphics.image.loader.ImageException: The file format is not supported. No ImagePreloader found for file:////home/runner/work/ontology-crs/ontology-crs/docs/spec/documents/spec/_tmp_images_1e111880-b4fa-49cf-8f0e-47f5754b9063/c1a01ddd-cdba-4f83-bb57-482bc2d94c94.octet-stream
+Image not available. URI: file:////home/runner/work/ontology-crs/ontology-crs/docs/spec/documents/spec/_tmp_images_28fb36f4-9d32-4cb2-8a95-b36f3a2ba1a1/efd8aee6-b75f-4ce3-96a3-353378602679.octet-stream. Reason: org.apache.xmlgraphics.image.loader.ImageException: The file format is not supported. No ImagePreloader found for file:////home/runner/work/ontology-crs/ontology-crs/docs/spec/documents/spec/_tmp_images_28fb36f4-9d32-4cb2-8a95-b36f3a2ba1a1/efd8aee6-b75f-4ce3-96a3-353378602679.octet-stream (See position 4609:511)
+org.apache.xmlgraphics.image.loader.ImageException: The file format is not supported. No ImagePreloader found for file:////home/runner/work/ontology-crs/ontology-crs/docs/spec/documents/spec/_tmp_images_28fb36f4-9d32-4cb2-8a95-b36f3a2ba1a1/efd8aee6-b75f-4ce3-96a3-353378602679.octet-stream
 	at org.apache.xmlgraphics.image.loader.ImageManager.preloadImage(ImageManager.java:181)
 	at org.apache.xmlgraphics.image.loader.cache.ImageCache.needImageInfo(ImageCache.java:127)
 	at org.apache.xmlgraphics.image.loader.ImageManager.getImageInfo(ImageManager.java:123)
@@ -218,27 +218,27 @@ Page v: Unresolved ID reference "_3d15275c-919c-d1ba-27ea-114eebd6f241" found.
 Page v: Unresolved ID reference "_2e1e93d4-a76e-4318-c6c8-bc1034df4ab7" found.
 Page v: Unresolved ID reference "_007f0895-6055-0586-9ec2-6c44b1ed796c" found.
 Page v: Unresolved ID reference "_ba73eec6-8dc2-cb09-926b-80707f39c68b" found.
-Page 26: Unresolved ID reference "Class__geosrs" found.
+Page 27: Unresolved ID reference "Class__geosrs" found.
 Page 28: Unresolved ID reference "Class__geosrs" found.
 Page 33: Unresolved ID reference "Class__geosrs" found.
 Page 37: Unresolved ID reference "Class__geosrs" found.
 Page 38: Unresolved ID reference "Class__geosrs" found.
-Page 47: Unresolved ID reference "Class__geosrs" found.
-Page 49: Unresolved ID reference "Class__geosrs" found.
-Page 53: Unresolved ID reference "Class__geosrs" found.
-Page 155: Unresolved ID reference "Class__geosrs" found.
-Page 219: Unresolved ID reference "SPARQLSERVDESC" found.
+Page 46: Unresolved ID reference "Class__geosrs" found.
+Page 48: Unresolved ID reference "Class__geosrs" found.
+Page 52: Unresolved ID reference "Class__geosrs" found.
+Page 154: Unresolved ID reference "Class__geosrs" found.
+Page 218: Unresolved ID reference "SPARQLSERVDESC" found.
+Page 220: Unresolved ID reference "Class__geosrs" found.
 Page 221: Unresolved ID reference "Class__geosrs" found.
 Page 222: Unresolved ID reference "Class__geosrs" found.
-Page 223: Unresolved ID reference "Class__geosrs" found.
+Page 224: Unresolved ID reference "Class__geosrs" found.
 Page 225: Unresolved ID reference "Class__geosrs" found.
 Page 226: Unresolved ID reference "Class__geosrs" found.
 Page 227: Unresolved ID reference "Class__geosrs" found.
 Page 228: Unresolved ID reference "Class__geosrs" found.
-Page 229: Unresolved ID reference "Class__geosrs" found.
-Page 230: Unresolved ID reference "Class__geosrs" found.
-Page 237: Unresolved ID reference "Class__geosrs" found.
+Page 235: Unresolved ID reference "Class__geosrs" found.
+Page 236: Unresolved ID reference "Class__geosrs" found.
+Page 244: Unresolved ID reference "Class__geosrs" found.
 Page 245: Unresolved ID reference "Class__geosrs" found.
 Page 246: Unresolved ID reference "Class__geosrs" found.
-Page 247: Unresolved ID reference "Class__geosrs" found.
 7 link targets could not be fully resolved and now points to the top of the page or are dysfunctional.

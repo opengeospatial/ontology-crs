@@ -55,6 +55,17 @@ technical
   <edition>1.0</edition>
   <language>en</language>
   <script>Latn</script>
+  <abstract>&lt;p&gt;The Spatial Reference Systems (SRS) web ontology results from a joint effort between the Spacio-temporal Data on the Web Working Group (SDWWG) of the W3C and the GeoSemantics DWG of the OGC. It is meant to provide a workable Semantic Web counterpart to the [ISO:19111]() domain model, allowing for the full expression of reference systems with RDF.&lt;/p&gt;
+
+&lt;p&gt;The ultimate goal is to attain a web ontology for coordinate reference systems (CRS), approved both by the OGC and the W3C.&lt;/p&gt;
+
+&lt;p&gt;The namespace for the core terms is &lt;link target="http://www.w3.org/ns/geosrs/"/&gt;.&lt;/p&gt;
+
+&lt;p&gt;The suggested prefix for the SRS ontology namespace is geosrs.&lt;/p&gt;
+
+&lt;p&gt;The SRS ontology graph containing the core definitions is available at &lt;link target="http://www.w3.org/ns/geosrs/"/&gt;.&lt;/p&gt;
+
+&lt;p&gt;The SRS ontology graph with the full axiomatization of the core terms is available at &lt;link target="http://www.w3.org/ns/geosrs/"/&gt;.&lt;/p&gt;</abstract>
   <status>
     <stage>approved</stage>
   </status>

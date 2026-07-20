@@ -1,6 +1,6 @@
 # CRS Ontology  
       
-## Introduction     
+## Introduction      
 
 This effort is an exploratory joint venture between the [Spacio-temporal Data on the Web Working Group](https://www.w3.org/groups/wg/sdw/) (SDWWG) of the W3C and the [GeoSemantics DWG](https://github.com/opengeospatial/geosemantics-dwg) of the OGC. It is meant to provide a workable Semantic Web counterpart to the [ISO:19111](https://www.iso.org/standard/74039.html) domain model. The ultimate goal is to attain a web ontology for coordinate reference systems (CRS), approved both by the OGC and the W3C. 
 

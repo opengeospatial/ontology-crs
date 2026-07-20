@@ -6,6 +6,11 @@
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+geosrs_co:AffineOperation a owl:Class ;
+    rdfs:label "Affine Operation"@en ;
+    rdfs:subClassOf geosrs:Conversion ;
+    skos:definition "A linear (or first-order) operation relating two 2D Cartesian coordinate systems through a rotation, a scale change in xx and yy directions, followed by a translation. It can be expressed as a function with 6 parameters: one rotation angle (a), two scale factors, a scale factor in the xx-direction (sx) and a scale factor in the yy-direction (sy), and two origin shifts (xo, yo)."@en .
+
 geosrs_co:ConcatenatedOperation a owl:Class ;
     rdfs:label "Concatenated Operation"@en ;
     rdfs:subClassOf geosrs:CoordinateOperation ;
@@ -18,7 +23,7 @@ geosrs_co:GeographicObject a owl:Class ;
 
 geosrs_co:IdentityOperation a owl:Class ;
     rdfs:label "Identity Operation"@en ;
-    rdfs:subClassOf geosrs_co:AffineTransformationOperation ;
+    rdfs:subClassOf geosrs:AffineTransformationOperation ;
     skos:definition "Identity transformation operation"@en .
 
 geosrs_co:OperationParameterGroup a owl:Class ;
@@ -47,22 +52,22 @@ geosrs_co:RegisterOperations a owl:Class ;
 
 geosrs_co:RotationOperation a owl:Class ;
     rdfs:label "Rotation Operation"@en ;
-    rdfs:subClassOf geosrs_co:AffineTransformationOperation ;
+    rdfs:subClassOf geosrs:AffineTransformationOperation ;
     skos:definition "Rotation transformation operation"@en .
 
 geosrs_co:ScaleOperation a owl:Class ;
     rdfs:label "Scale Operation"@en ;
-    rdfs:subClassOf geosrs_co:AffineTransformationOperation ;
+    rdfs:subClassOf geosrs:AffineTransformationOperation ;
     skos:definition "Scale transformation operation"@en .
 
 geosrs_co:ShearOperation a owl:Class ;
     rdfs:label "Shear Operation"@en ;
-    rdfs:subClassOf geosrs_co:AffineTransformationOperation ;
+    rdfs:subClassOf geosrs:AffineTransformationOperation ;
     skos:definition "Shear transformation operation"@en .
 
 geosrs_co:TranslationOperation a owl:Class ;
     rdfs:label "Translation Operation"@en ;
-    rdfs:subClassOf geosrs_co:AffineTransformationOperation ;
+    rdfs:subClassOf geosrs:AffineTransformationOperation ;
     skos:definition "Translation transformation operation"@en .
 
 geosrs_co:derivingConversion a owl:ObjectProperty ;
@@ -93,9 +98,4 @@ geosrs:coco a owl:Ontology ;
     rdfs:label "SRS Ontology: Geosrs_co"@en ;
     vann:preferredNamespacePrefix "geosrs_co"^^xsd:string ;
     vann:preferredNamespaceUri "https://w3id.org/geosrs/co/"^^xsd:anyURI .
-
-geosrs_co:AffineTransformationOperation a owl:Class ;
-    rdfs:label "Affine Transformation Operation"@en ;
-    rdfs:subClassOf geosrs:Transformation ;
-    skos:definition "Affine coordinate transformation operation"@en .
 

@@ -10,7 +10,7 @@
     vann:preferredNamespacePrefix "geosrs"^^xsd:string ;
     vann:preferredNamespaceUri "https://w3id.org/geosrs/"^^xsd:anyURI .
 
-geosrs:CartesianCS a owl:Class ;
+geosrs:CartesianCoordinateSystem a owl:Class ;
     rdfs:label "Cartesian Coordinate System"@en ;
     rdfs:subClassOf geosrs:CoordinateSystem ;
     skos:definition "Coordinate system which gives the position of points relative to n mutually perpendicular axes. Cf. ISO 19111:2007:2007-07, tables 15 and 18."@en .
@@ -28,16 +28,11 @@ geosrs:Ellipsoid a owl:Class ;
     rdfs:label "Ellipsoid"@en ;
     skos:definition "Surface formed by the rotation of an ellipse about its minor axis, defined by a semi-major axis and a flattening parameter and fairly geocentric. NB : It is a mathematical model of the geoid, i.e. the Earth without its relief. Many geodetic ellipsoids exist. Cf. ISO 19111:2007:2007-07, part 10.2.2, table 36 and annex B.3.2.3."@en .
 
-geosrs:EllipsoidalCS a owl:Class ;
-    rdfs:label "Ellipsoidal Coordinate System"@en ;
-    rdfs:subClassOf <https://w3id.org/geosrs/cs/OrthogonalCS> ;
-    skos:definition "Coordinate system which gives the position is specified by geodetic latitude, geodetic longitude and (in the three-dimensional case) ellipsoidal height. Cf. ISO 19111:2007:2007-07, tables 15 and 20."@en .
-
 geosrs:GeodeticDatum a owl:Class ;
     rdfs:label "Geodetic Datum"@en ;
     skos:definition "Datum describing the relation of a two- or three-dimensional coordinate system to the Earth. Cf. ISO 19111:2007:2007-07, part 10.2, table 34 and annex B.3.2."@en .
 
-geosrs:LinearCS a owl:Class ;
+geosrs:LinearCoordinateSystem a owl:Class ;
     rdfs:label "Linear Coordinate System"@en ;
     rdfs:subClassOf geosrs:CoordinateSystem ;
     skos:definition "One-dimensional coordinate system in which a linear feature forms the axis."@en .
@@ -52,28 +47,13 @@ geosrs:OperationParameterValue a owl:Class ;
     rdfs:subClassOf geosrs:GeneralParameterValue ;
     skos:definition "Value of a parameter used by a method to perform an operation on coordinates. See ISO 19111:2007:2007-07, table 55."@en .
 
-geosrs:OrdinalCS a owl:Class ;
-    rdfs:label "Ordinal Coordinate System"@en ;
-    rdfs:subClassOf geosrs:CoordinateSystem ;
-    skos:definition "n-dimensional coordinate system in which every axis uses integers."@en .
-
-geosrs:ParametricCS a owl:Class ;
-    rdfs:label "Parametric Coordinate System"@en ;
-    rdfs:subClassOf <https://w3id.org/geosrs/cs/1DCS> ;
-    skos:definition "One-dimensional coordinate system where the axis units are parameter values which are not inherently spatial."@en .
-
-geosrs:PolarCS a owl:Class ;
-    rdfs:label "Polar Coordinate System"@en ;
-    rdfs:subClassOf <https://w3id.org/geosrs/cs/PlanarCS> ;
-    skos:definition "Two-dimensional coordinate system in Euclidean space in which position is specified by one distance coordinate and one angular coordinate."@en .
-
 geosrs:PrimeMeridian a owl:Class ;
     rdfs:label "Prime meridian"@en ;
     skos:definition "Meridian from which the longitudes of other meridians are quantified. Cf. ISO 19111:2007:2007-07, part 10.2.1, table 35 and annex B.3.2.2."@en .
 
-geosrs:SphericalCS a owl:Class ;
+geosrs:SphericalCoordinateSystem a owl:Class ;
     rdfs:label "Spherical Coordinate System"@en ;
-    rdfs:subClassOf <https://w3id.org/geosrs/cs/3DCS> ;
+    rdfs:subClassOf geosrs:3DCoordinateSystem ;
     skos:definition "Three-dimensional coordinate system in Euclidean space with one distance measured from the origin and two angular coordinates"@en .
 
 geosrs:Transformation a owl:Class ;
@@ -82,7 +62,7 @@ geosrs:Transformation a owl:Class ;
     owl:disjointWith geosrs:Conversion ;
     skos:definition "Coordinate operation in which the two coordinate reference systems are based on different datums. Cf. ISO 19111:2007:2007-07, table 44."@en .
 
-geosrs:VerticalCS a owl:Class ;
+geosrs:VerticalCoordinateSystem a owl:Class ;
     rdfs:label "Vertical Coordinate System"@en ;
     rdfs:subClassOf geosrs:CoordinateSystem ;
     owl:disjointWith geosrs:OrdinalCoordinateSystem ;
@@ -163,6 +143,11 @@ geosrs:GeneralParameterValue a owl:Class ;
 geosrs:OperationMethod a owl:Class ;
     rdfs:label "Operation Method"@en ;
     skos:definition "Method used to perform an operation on coordinates. See ISO 19111:2007:2007-07, table 48 and annex B.4.5."@en .
+
+geosrs:OrdinalCoordinateSystem a owl:Class ;
+    rdfs:label "Ordinal Coordinate System"@en ;
+    rdfs:subClassOf geosrs:CoordinateSystem ;
+    skos:definition "n-dimensional coordinate system in which every axis uses integers."@en .
 
 geosrs:Conversion a owl:Class ;
     rdfs:label "Conversion"@en ;

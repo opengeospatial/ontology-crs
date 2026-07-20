@@ -247,7 +247,6 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
       <li><a href="#CoordinateSystemAxis">Coordinate System Axis</a></li>
       <li><a href="#Datum1">Datum</a></li>
       <li><a href="#Ellipsoid">Ellipsoid</a></li>
-      <li><a href="#EllipsoidalCoordinateSystem">Ellipsoidal Coordinate System</a></li>
       <li><a href="#GeneralOperationParameter">General Operation Parameter</a></li>
       <li><a href="#GeneralParameterValue">General Parameter Value</a></li>
       <li><a href="#GeodeticDatum">Geodetic Datum</a></li>
@@ -256,8 +255,6 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
       <li><a href="#OperationParameter">Operation Parameter</a></li>
       <li><a href="#OperationParameterValue">Operation Parameter Value</a></li>
       <li><a href="#OrdinalCoordinateSystem">Ordinal Coordinate System</a></li>
-      <li><a href="#ParametricCoordinateSystem">Parametric Coordinate System</a></li>
-      <li><a href="#PolarCoordinateSystem">Polar Coordinate System</a></li>
       <li><a href="#Primemeridian">Prime meridian</a></li>
       <li><a href="#SingleOperation">Single Operation</a></li>
       <li><a href="#SphericalCoordinateSystem">Spherical Coordinate System</a></li>
@@ -273,7 +270,7 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
         <table>
             <tr>
                 <th>URI</th>
-                <td><code>https://w3id.org/geosrs/CartesianCS</code></td>
+                <td><code>https://w3id.org/geosrs/CartesianCoordinateSystem</code></td>
             </tr>
             <tr>
                 <th>Description</th>
@@ -374,9 +371,9 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             <tr>
                 <th>Sub-classes</th>
                 <td>
+                    <a href="#LinearCoordinateSystem">Linear Coordinate System</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="#VerticalCoordinateSystem">Vertical Coordinate System</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="#OrdinalCoordinateSystem">Ordinal Coordinate System</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#LinearCoordinateSystem">Linear Coordinate System</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="#CartesianCoordinateSystem">Cartesian Coordinate System</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
@@ -450,30 +447,6 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
                 <th>Description</th>
                 <td>
                     <p>Surface formed by the rotation of an ellipse about its minor axis, defined by a semi-major axis and a flattening parameter and fairly geocentric. NB : It is a mathematical model of the geoid, i.e. the Earth without its relief. Many geodetic ellipsoids exist. Cf. ISO 19111:2007:2007-07, part 10.2.2, table 36 and annex B.3.2.3.</p>
-                </td>
-            </tr>
-        </table>
-    </div>
-    <div class="entity class" id="EllipsoidalCoordinateSystem">
-        <h3>
-          Ellipsoidal Coordinate System<sup title="class" class="sup-c">c</sup>
-          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#EllipsoidalCoordinateSystem" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
-        </h3>
-        <table>
-            <tr>
-                <th>URI</th>
-                <td><code>https://w3id.org/geosrs/EllipsoidalCS</code></td>
-            </tr>
-            <tr>
-                <th>Description</th>
-                <td>
-                    <p>Coordinate system which gives the position is specified by geodetic latitude, geodetic longitude and (in the three-dimensional case) ellipsoidal height. Cf. ISO 19111:2007:2007-07, tables 15 and 20.</p>
-                </td>
-            </tr>
-            <tr>
-                <th>Super-classes</th>
-                <td>
-                    <a href="https://w3id.org/geosrs/cs/OrthogonalCS">https://w3id.org/geosrs/cs/OrthogonalCS</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -552,7 +525,7 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
         <table>
             <tr>
                 <th>URI</th>
-                <td><code>https://w3id.org/geosrs/LinearCS</code></td>
+                <td><code>https://w3id.org/geosrs/LinearCoordinateSystem</code></td>
             </tr>
             <tr>
                 <th>Description</th>
@@ -648,7 +621,7 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
         <table>
             <tr>
                 <th>URI</th>
-                <td><code>https://w3id.org/geosrs/OrdinalCS</code></td>
+                <td><code>https://w3id.org/geosrs/OrdinalCoordinateSystem</code></td>
             </tr>
             <tr>
                 <th>Description</th>
@@ -660,54 +633,6 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
                 <th>Super-classes</th>
                 <td>
                     <a href="#CoordinateSystem">Coordinate System</a><sup class="sup-c" title="class">c</sup><br/>
-                </td>
-            </tr>
-        </table>
-    </div>
-    <div class="entity class" id="ParametricCoordinateSystem">
-        <h3>
-          Parametric Coordinate System<sup title="class" class="sup-c">c</sup>
-          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#ParametricCoordinateSystem" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
-        </h3>
-        <table>
-            <tr>
-                <th>URI</th>
-                <td><code>https://w3id.org/geosrs/ParametricCS</code></td>
-            </tr>
-            <tr>
-                <th>Description</th>
-                <td>
-                    <p>One-dimensional coordinate system where the axis units are parameter values which are not inherently spatial.</p>
-                </td>
-            </tr>
-            <tr>
-                <th>Super-classes</th>
-                <td>
-                    <a href="https://w3id.org/geosrs/cs/1DCS">https://w3id.org/geosrs/cs/1DCS</a><sup class="sup-c" title="class">c</sup><br/>
-                </td>
-            </tr>
-        </table>
-    </div>
-    <div class="entity class" id="PolarCoordinateSystem">
-        <h3>
-          Polar Coordinate System<sup title="class" class="sup-c">c</sup>
-          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#PolarCoordinateSystem" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
-        </h3>
-        <table>
-            <tr>
-                <th>URI</th>
-                <td><code>https://w3id.org/geosrs/PolarCS</code></td>
-            </tr>
-            <tr>
-                <th>Description</th>
-                <td>
-                    <p>Two-dimensional coordinate system in Euclidean space in which position is specified by one distance coordinate and one angular coordinate.</p>
-                </td>
-            </tr>
-            <tr>
-                <th>Super-classes</th>
-                <td>
-                    <a href="https://w3id.org/geosrs/cs/PlanarCS">https://w3id.org/geosrs/cs/PlanarCS</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -755,8 +680,8 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             <tr>
                 <th>Sub-classes</th>
                 <td>
-                    <a href="#Transformation">Transformation</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="#Conversion">Conversion</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#Transformation">Transformation</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -769,7 +694,7 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
         <table>
             <tr>
                 <th>URI</th>
-                <td><code>https://w3id.org/geosrs/SphericalCS</code></td>
+                <td><code>https://w3id.org/geosrs/SphericalCoordinateSystem</code></td>
             </tr>
             <tr>
                 <th>Description</th>
@@ -780,7 +705,7 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="https://w3id.org/geosrs/cs/3DCS">https://w3id.org/geosrs/cs/3DCS</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="https://w3id.org/geosrs/3DCoordinateSystem">geosrs:3DCoordinateSystem</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -817,7 +742,7 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
         <table>
             <tr>
                 <th>URI</th>
-                <td><code>https://w3id.org/geosrs/VerticalCS</code></td>
+                <td><code>https://w3id.org/geosrs/VerticalCoordinateSystem</code></td>
             </tr>
             <tr>
                 <th>Description</th>

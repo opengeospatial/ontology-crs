@@ -53,7 +53,7 @@ geosrs:PrimeMeridian a owl:Class ;
 
 geosrs:SphericalCoordinateSystem a owl:Class ;
     rdfs:label "Spherical Coordinate System"@en ;
-    rdfs:subClassOf geosrs:3DCoordinateSystem ;
+    rdfs:subClassOf geosrs:CoordinateSystem ;
     skos:definition "Three-dimensional coordinate system in Euclidean space with one distance measured from the origin and two angular coordinates"@en .
 
 geosrs:Transformation a owl:Class ;

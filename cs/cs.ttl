@@ -23,7 +23,7 @@ geosrs_cs:ConicalCoordinateSystem a owl:Class ;
 
 geosrs_cs:CylindricalCoordinateSystem a owl:Class ;
     rdfs:label "Cylindrical Coordinate System"@en ;
-    rdfs:subClassOf geosrs:3DCoordinateSystem ;
+    rdfs:subClassOf geosrs:CoordinateSystem ;
     skos:definition "Three-dimensional coordinate system in Euclidean space in which position is specified by two linear coordinates and one angular coordinate"@en .
 
 geosrs_cs:DateTimeTemporalCoordinateSystem a owl:Class ;
@@ -63,8 +63,7 @@ geosrs_cs:EquatorialCoordinateSystem a owl:Class ;
 
 geosrs_cs:GalacticCoordinateSystem a owl:Class ;
     rdfs:label "Galactic Coordinate System"@en ;
-    rdfs:subClassOf geosrs:3DCoordinateSystem,
-        geosrs_cs:CelestialCoordinateSystem ;
+    rdfs:subClassOf geosrs_cs:CelestialCoordinateSystem ;
     skos:definition "A coordinate system with the Sun as its center, the primary direction aligned with the approximate center of the Milky Way Galaxy, and the fundamental plane parallel to an approximation of the galactic plane but offset to its north."@en .
 
 geosrs_cs:GeocentricX a owl:NamedIndividual,
@@ -112,7 +111,7 @@ geosrs_cs:ObliqueCoordinateSystem a owl:Class ;
 
 geosrs_cs:ParametricCoordinateSystem a owl:Class ;
     rdfs:label "Parametric Coordinate System"@en ;
-    rdfs:subClassOf geosrs:1DCoordinateSystem ;
+    rdfs:subClassOf geosrs:CoordinateSystem ;
     skos:definition "One-dimensional coordinate system where the axis units are parameter values which are not inherently spatial."@en .
 
 geosrs_cs:PerifocalCoordinateSystem a owl:Class ;

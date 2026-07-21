@@ -803,8 +803,8 @@ convertCSVToSHACLAndADoc()
 
 for ad in moduleToAdoc:
 	content=""
-    print(ad)
-    print(moduleToAdoc[ad])
+	print(ad)
+	print(moduleToAdoc[ad])
 	with open("spec/sections/"+ad,"r") as file:
 		content=file.read()
 	for tag in re.findall(opentag+"(.+?)"+closetag,content): 

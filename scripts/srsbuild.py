@@ -453,7 +453,7 @@ for file in os.listdir(directory):
     else:
         continue
 
-
+print(moduleToAdoc["06-core.adoc"])
 #print(prefixtoclasses)
 #print(classToPrefix)
 dirname = os.path.dirname(__file__)

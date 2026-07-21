@@ -504,9 +504,9 @@ for file in os.listdir(directory):
                             if "Label" in row and row["Label"]!="":
                                 gcore.add((URIRef(row["Concept"].replace(coreprefix+":",geocrsNS)),RDFS.label,Literal(row["Label"],lang="en")))
                             if "Requirement" in row and row["Requirement"]!="" and str(row["Core Property?"]).lower() in prefixToModule:
-                                if row["Requirement"] not in moduleToRequirements[prefixToModule[nsprefix]] :
-                                    moduleToRequirements[prefixToModule[str(row["Core Property?"]).lower()]][row["Requirement"]]=[]
-                                moduleToRequirements[prefixToModule[str(row["Core Property?"]).lower()]][row["Requirement"]].append(row["Concept"])
+                                if row["Requirement"] not in moduleToRequirements["06-core.adoc"] :
+                                    moduleToRequirements["06-core.adoc"][row["Requirement"]]=[]
+                                moduleToRequirements["06-core.adoc"][row["Requirement"]].append(row["Concept"])
                             if "Definition" in row and row["Definition"]!="":
                                 gcore.add((URIRef(row["Concept"].replace(coreprefix+":",geocrsNS)),SKOS.definition,Literal(row["Definition"],lang="en")))
                                 adocdef+="|Definition\n|"+str(row["Definition"])+"\n\n"

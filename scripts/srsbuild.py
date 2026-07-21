@@ -374,8 +374,8 @@ for file in os.listdir(directory):
                                 clsuri=row["SuperClass"].replace("geosrs:", getNSForClass(row["SuperClass"],classToPrefix))
                                 adocdef+=clsuri+"["+clsuri[clsuri.rfind("/")+1:]+"] "
                             adocdef+="\n\n"
-                        print(os.getcwd())
-                        print("Exists? spec/figures/classes/"+str(row["Concept"].replace("geosrs:",""))+".png"+" - "+str(os.path.exists("spec/figures/classes/"+str(row["Concept"].replace("geosrs:",""))+".png")))
+                        #print(os.getcwd())
+                        #print("Exists? spec/figures/classes/"+str(row["Concept"].replace("geosrs:",""))+".png"+" - "+str(os.path.exists("spec/figures/classes/"+str(row["Concept"].replace("geosrs:",""))+".png")))
                         if os.path.exists(str(os.getcwd())+"/spec/figures/classes/"+str(row["Concept"].replace("geosrs:",""))+".png"):
                             adocdef+="|Image\n|image:classes/"+str(row["Concept"].replace("geosrs:",""))+".png["+str(row["Concept"].replace("geosrs:",""))+" Image]\n\n"
                         if row["Concept"] in examples:

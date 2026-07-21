@@ -322,6 +322,7 @@ for file in os.listdir(directory):
                 if "Concept" in row and row["Concept"]!="":
                     core=False
                     if "Core Class?" in row and row["Core Class?"]=="Core Ontology":
+                        print("To Core: "+str(row["Concept"]))
                         adocdef="[[class_"+str(row["Concept"]).replace(" ","_")+"]]\n\n===== Class: "+str(row["Concept"])+"\n\n"
                         if "Description" in row and row["Description"]!="":
                             adocdef+=row["Description"]+"\n\n"

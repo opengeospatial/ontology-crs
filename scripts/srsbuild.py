@@ -322,9 +322,9 @@ for file in os.listdir(directory):
             for row in reader:
                 if "Concept" in row and row["Concept"]!="":
                     core=False
-                    print("CurConcept: "+str(row["Concept"]))
+                    #print("CurConcept: "+str(row["Concept"]))
                     if "Core Class?" in row and row["Core Class?"]=="Core Ontology":
-                        print("To Core: "+str(row["Concept"]))
+                        #print("To Core: "+str(row["Concept"]))
                         adocdef="[[class_"+str(row["Concept"]).replace(" ","_")+"]]\n\n===== Class: "+str(row["Concept"])+"\n\n"
                         if "Description" in row and row["Description"]!="":
                             adocdef+=row["Description"]+"\n\n"
@@ -339,8 +339,8 @@ for file in os.listdir(directory):
                             gcore.add((URIRef(row["Concept"].replace(coreprefix+":",geocrsNS)),RDFS.label,Literal(row["Label"],lang="en")))
                         if "Requirement" in row and row["Requirement"]!="":
                             if row["Requirement"] not in moduleToRequirements["06-core.adoc"]:
-                                moduleToRequirements["06-core.adoc"][row["Requirement"]]=[]
-                            moduleToRequirements["06-core.adoc"][row["Requirement"]].append(row["Concept"])
+                                moduleToRequirements["06-core.adoc"][row["Requirement"]+"_core"]=[]
+                            moduleToRequirements["06-core.adoc"][row["Requirement"]+"_core"].append(row["Concept"])
                         if "Definition" in row and row["Definition"]!="":
                             gcore.add((URIRef(row["Concept"].replace(coreprefix+":",geocrsNS)),SKOS.definition,Literal(row["Definition"],lang="en")))
                             adocdef+="|Definition\n|"+str(row["Definition"])+"\n"

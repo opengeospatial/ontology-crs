@@ -800,7 +800,7 @@ generateAlignments()
 convertCSVToSHACLAndADoc()
 
 # Generate modspec elements
-
+print(moduleToAdoc)
 for ad in moduleToAdoc:
 	content=""
 	print(ad)

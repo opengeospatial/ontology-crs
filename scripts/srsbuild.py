@@ -315,12 +315,14 @@ for file in os.listdir(directory):
     g.add((URIRef("https://w3id.org/geosrs/"+filename.replace(".csv","")+filename.replace(".csv","")),RDFS.label,Literal("SRS Ontology: "+curprefix.capitalize(),lang="en")))
     g.add((URIRef("https://w3id.org/geosrs/"+filename.replace(".csv","")+filename.replace(".csv","")),VANN.preferredNamespacePrefix,Literal(curprefix,datatype=XSD.string)))
     g.add((URIRef("https://w3id.org/geosrs/"+filename.replace(".csv","")+filename.replace(".csv","")),VANN.preferredNamespaceUri,Literal("https://w3id.org/geosrs/"+filename.replace(".csv","")+"/",datatype=XSD.anyURI)))
+    print("Processing classes: "+str(filename))
     if filename.endswith(".csv"): 
         with open(abspath+filename, newline='') as csvfile:
             reader = csv.DictReader(csvfile)
             for row in reader:
                 if "Concept" in row and row["Concept"]!="":
                     core=False
+                    print("CurConcept: "+str(row["Concept"]))
                     if "Core Class?" in row and row["Core Class?"]=="Core Ontology":
                         print("To Core: "+str(row["Concept"]))
                         adocdef="[[class_"+str(row["Concept"]).replace(" ","_")+"]]\n\n===== Class: "+str(row["Concept"])+"\n\n"

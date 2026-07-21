@@ -27,12 +27,6 @@
     ns1:definition "check conformance with this requirement" ;
     ns1:prefLabel "Coordinate Operation Properties" .
 
-<https://opengeospatial.github.io/ontology-crs//conf/core/> a ns2:ConformanceTest ;
-    ns2:testType ns2:Capabilities ;
-    rdfs:seeAlso <https://opengeospatial.github.io/ontology-crs//req/core/> ;
-    ns1:definition "check conformance with this requirement" ;
-    ns1:prefLabel "" .
-
 <https://opengeospatial.github.io/ontology-crs//conf/core/Coordinate_Reference_System_Parameters> a ns2:ConformanceTest ;
     ns2:testType ns2:Capabilities ;
     rdfs:seeAlso <https://opengeospatial.github.io/ontology-crs//req/core/Coordinate_Reference_System_Parameters> ;
@@ -62,6 +56,12 @@
     rdfs:seeAlso <https://opengeospatial.github.io/ontology-crs//req/cs/Celestial_Coordinate_Systems> ;
     ns1:definition "check conformance with this requirement" ;
     ns1:prefLabel "Celestial Coordinate Systems" .
+
+<https://opengeospatial.github.io/ontology-crs//conf/cs/Coordinate_System_Components> a ns2:ConformanceTest ;
+    ns2:testType ns2:Capabilities ;
+    rdfs:seeAlso <https://opengeospatial.github.io/ontology-crs//req/cs/Coordinate_System_Components> ;
+    ns1:definition "check conformance with this requirement" ;
+    ns1:prefLabel "Coordinate System Components" .
 
 <https://opengeospatial.github.io/ontology-crs//conf/cs/Coordinate_System_Properties> a ns2:ConformanceTest ;
     ns2:testType ns2:Capabilities ;
@@ -267,8 +267,7 @@
     ns1:definition "check conformance with this requirement" ;
     ns1:prefLabel "SRS Application Types" .
 
-<https://opengeospatial.github.io/ontology-crs/06-core.adoc> ns1:member <https://opengeospatial.github.io/ontology-crs//conf/06-core.adoc/>,
-        <https://opengeospatial.github.io/ontology-crs//conf/06-core.adoc/Coordinate_Reference_System_Parameters>,
+<https://opengeospatial.github.io/ontology-crs/06-core.adoc> ns1:member <https://opengeospatial.github.io/ontology-crs//conf/06-core.adoc/Coordinate_Reference_System_Parameters>,
         <https://opengeospatial.github.io/ontology-crs//conf/06-core.adoc/Coordinate_Reference_System_Properties>,
         <https://opengeospatial.github.io/ontology-crs//conf/06-core.adoc/Coordinate_Reference_System_Types> .
 
@@ -279,6 +278,7 @@
 
 <https://opengeospatial.github.io/ontology-crs/08-cs_module.adoc> ns1:member <https://opengeospatial.github.io/ontology-crs//conf/08-cs_module.adoc/3D_Coordinate_Systems>,
         <https://opengeospatial.github.io/ontology-crs//conf/08-cs_module.adoc/Celestial_Coordinate_Systems>,
+        <https://opengeospatial.github.io/ontology-crs//conf/08-cs_module.adoc/Coordinate_System_Components>,
         <https://opengeospatial.github.io/ontology-crs//conf/08-cs_module.adoc/Coordinate_System_Properties>,
         <https://opengeospatial.github.io/ontology-crs//conf/08-cs_module.adoc/Coordinate_System_Types>,
         <https://opengeospatial.github.io/ontology-crs//conf/08-cs_module.adoc/Temporal_Coordinate_Systems> .
@@ -355,9 +355,6 @@
 <https://opengeospatial.github.io/ontology-crs//req/co/Coordinate_Operation_Properties> a ns2:Requirement ;
     ns1:prefLabel "Coordinate Operation Properties" .
 
-<https://opengeospatial.github.io/ontology-crs//req/core/> a ns2:Requirement ;
-    ns1:prefLabel "" .
-
 <https://opengeospatial.github.io/ontology-crs//req/core/Coordinate_Reference_System_Parameters> a ns2:Requirement ;
     ns1:prefLabel "Coordinate Reference System Parameters" .
 
@@ -372,6 +369,9 @@
 
 <https://opengeospatial.github.io/ontology-crs//req/cs/Celestial_Coordinate_Systems> a ns2:Requirement ;
     ns1:prefLabel "Celestial Coordinate Systems" .
+
+<https://opengeospatial.github.io/ontology-crs//req/cs/Coordinate_System_Components> a ns2:Requirement ;
+    ns1:prefLabel "Coordinate System Components" .
 
 <https://opengeospatial.github.io/ontology-crs//req/cs/Coordinate_System_Properties> a ns2:Requirement ;
     ns1:prefLabel "Coordinate System Properties" .

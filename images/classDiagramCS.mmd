@@ -1,0 +1,51 @@
+---
+title: Coordinate System Module
+---
+classDiagram
+
+    namespace Core {
+        class CoordinateSystem
+        class CartesianCS
+        class EllipsoidalCS
+        class LinearCS
+        class OrdinalCS
+        class SphericalCS
+        class VerticalCS
+    }
+
+    CoordinateSystem <|-- AffineCS
+    CoordinateSystem <|-- BarycentricCS
+    CoordinateSystem <|-- CartesianCS
+    CoordinateSystem <|-- CelestialCS
+    OrthogonalCS <|-- ConicalCS
+    CoordinateSystem <|-- CurvilinearCS
+    CoordinateSystem <|-- CylindricalCS
+    CelestialCS <|-- EclipticCS
+    OrthogonalCS <|-- EllipsoidalCS
+    CoordinateSystem <|-- EngineeringCS
+    CelestialCS <|-- EquatorialCS
+    CelestialCS  <|-- GalacticCS
+    CoordinateSystem <|-- GeodeticCS
+    SphericalCS <|-- GeographicalCS
+    GeodeticCS <|-- GeographicalCS
+    CoordinateSystem <|-- GridCS
+    GridCS <|-- HexagonalCS
+    CelestialCS <|-- HorizontalCS
+    CoordinateSystem <|-- LinearCS
+    CoordinateSystem <|-- LocalCS
+    CoordinateSystem <|-- ObliqueCS
+    CoordinateSystem <|-- OrdinalCS
+    CurvilinearCS <|-- OrthogonalCS
+    CoordinateSystem <|-- ParametricCS
+    CelestialCS <|-- PerifocalCS
+    CoordinateSystem <|-- PlanarCS
+    PlanarCS <|-- PolarCS
+    CurvilinearCS <|-- SkewCS
+    CoordinateSystem <|-- SphericalCS
+    TemporalCS <|-- DateTimeTemporalCS
+    TemporalCS <|-- TemporalCountCS
+    CoordinateSystem <|-- TemporalCS
+    TemporalCS <|-- TemporalMeasureCS
+    CelestialCS  <|-- SuperGalacticCS
+    CoordinateSystem <|-- VerticalCS
+

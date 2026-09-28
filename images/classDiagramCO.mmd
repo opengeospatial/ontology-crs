@@ -1,0 +1,46 @@
+---
+title: Coordinate Operation Module
+---
+classDiagram
+
+    namespace Core {
+      class CoordinateOperation
+      class SingleOperation
+      class Transformation
+      class Conversion
+      class OperationMethod
+      class GeneralOperationParameter
+      class OperationParameter
+      class GeneralParameterValue
+      class OperationParameterValue
+    }
+
+
+CoordinateOperation --|> 	OperationMethod
+PassThroughOperation --|> 	CoordinateOperation
+ConcatenatedOperation --|> 	CoordinateOperation
+SingleOperation --|> 	CoordinateOperation
+Transformation --|> 	SingleOperation
+Conversion --|> 	SingleOperation
+PointMotionOperation --|> 	SingleOperation
+
+class OperationMethod		
+class GeneralOperationParameter	
+class GeneralParameterValue	
+
+OperationParameterGroup --|> 	GeneralOperationParameter
+OperationParameter --|> 	GeneralOperationParameter
+ParameterValueGroup --|> 	GeneralParameterValue
+OperationParameterValue --|> 	GeneralParameterValue
+		
+GeographicObject --|>	iso19101:Geometry
+
+class RegisterOperations	
+
+ScaleOperation --|> 	AffineTransformationOperation
+RotationOperation --|> 	AffineTransformationOperation
+IdentityOperation --|> 	AffineTransformationOperation
+ShearOperation --|> 	AffineTransformationOperation
+TranslationOperation --|> 	AffineTransformationOperation
+AffineOperation --|> 	Conversion
+

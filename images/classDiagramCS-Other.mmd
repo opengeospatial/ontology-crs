@@ -1,0 +1,22 @@
+---
+title: Coordinate System Module - Other classes
+---
+classDiagram
+
+    namespace Core {
+        class CoordinateSystem
+        class EllipsoidalCS
+    }
+
+    CoordinateSystem <|-- GridCS
+    GridCS <|-- HexagonalCS
+    CoordinateSystem <|-- EngineeringCS
+    CoordinateSystem <|-- CurvilinearCS
+    CurvilinearCS <|-- OrthogonalCS
+    CurvilinearCS <|-- SkewCS
+    OrthogonalCS <|-- EllipsoidalCS
+    OrthogonalCS <|-- ConicalCS
+    CoordinateSystem <|-- AffineCS
+    CoordinateSystem <|-- BarycentricCS
+
+

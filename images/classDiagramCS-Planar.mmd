@@ -1,0 +1,33 @@
+---
+title: Coordinate System Module - PlanarCS
+---
+classDiagram
+
+    namespace Core {
+        class CoordinateSystem
+        class CartesianCS
+        class EllipsoidalCS
+        class LinearCS
+        class OrdinalCS
+        class ParametricCS
+        class PolarCS
+        class SphericalCS
+        class VerticalCS
+    }
+
+    CoordinateSystem <|-- LinearCS
+    CoordinateSystem <|-- OrdinalCS
+    CoordinateSystem <|-- VerticalCS
+    PlanarCS <|-- PolarCS
+    1DCS <|-- ParametricCS
+    3DCS <|-- SphericalCS
+    SingleCRS <|-- CartesianCS
+    OrthogonalCS <|-- EllipsoidalCS
+
+    CoordinateSystem <|-- LocalCS
+    CoordinateSystem <|-- ObliqueCS
+    CoordinateSystem <|-- PlanarCS
+    CoordinateSystem <|-- GeodeticCS
+    SphericalCS <|-- GeographicalCS
+    GeodeticCS <|-- GeographicalCS
+

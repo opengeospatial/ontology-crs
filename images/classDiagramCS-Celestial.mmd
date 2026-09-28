@@ -1,0 +1,20 @@
+---
+title: Coordinate System Module - Celestial classes
+---
+classDiagram
+
+    namespace Core {
+        class CoordinateSystem
+    }
+
+    CelestialCS <|-- EquatorialCS
+    CelestialCS  <|-- GalacticCS
+    CoordinateSystem <|-- CelestialCS
+    CelestialCS <|-- EclipticCS
+    CelestialCS <|-- HorizontalCS
+    CelestialCS <|-- PerifocalCS
+    CelestialCS  <|-- SuperGalacticCS
+    3DCS <|-- GalacticCS
+    3DCS <|-- SuperGalacticCS
+
+
